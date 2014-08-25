@@ -20,8 +20,7 @@ Then run the commands to build and run the docker image.
     docker build -t my-gcc-app .
     docker run -it --rm --name my-running-app my-gcc-app ./myapp
 
-
-## Compile your app inside the docker
+## Compile your app inside the docker container.
 
 It is not always appropriate to run your app inside a container. In instances where you only want to compile inside the docker instance, you can do something along the lines of the following.
 
