@@ -24,6 +24,22 @@ For more about Redis Persistence, see [http://redis.io/topics/persistence](http:
 ## ... or via `redis-cli`
     docker run -it --link some-redis:redis --rm redis sh -c 'exec redis-cli -h "$REDIS_PORT_6379_TCP_ADDR" -p "$REDIS_PORT_6379_TCP_PORT"'
 
+## Additionally, If you want to use your own redis.conf ...
+
+You can create your own Dockerfile that adds a redis.conf from the context into /data/, like so.
+
+    FROM redis
+    redis.conf /data/
+    CMD [ "redis-server", "/data/redis.conf" ]
+
+Alternatively, you can specify something along the same lines with `docker run` options.
+
+    ocker run --volumes-from datacontainer --name myredis redis
+
+Using this method means that there is no need for you to have a Dockerfile for your redis container.
+
+
+
 # Issues and Contributing
 
 We are always thrilled to receive pull requests, and do our best to process them as fast as possible. Not sure if that typo is worth a pull request? Do it! We will appreciate it.
