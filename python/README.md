@@ -5,24 +5,34 @@ Python is a widely used general-purpose, high-level programming language. Its de
 
 # How to use this image
 
-## 1. create a `Dockerfile` in your python app project
-    FROM python:3
-    ADD . /usr/src/app
-    WORKDIR /usr/src/app
-    CMD ["python3", "./your-daemon-or-script.py"]
+## Create a `Dockerfile` in your python app project.
 
-or (if you need caveman Python):
+    FROM python:3
+    ADD . /usr/src/myapp
+    WORKDIR /usr/src/myapp
+    CMD [ "python", "./your-daemon-or-script.py" ]
+
+or (if you need to use Python 2):
 
     FROM python:2
-    ADD . /usr/src/app
-    WORKDIR /usr/src/app
-    CMD ["python2", "./your-daemon-or-script.py"]
+    ADD . /usr/src/myapp
+    WORKDIR /usr/src/myapp
+    CMD [ "python", "./your-daemon-or-script.py" ]
 
-## 2. build the python app image
-    docker build -t my-python-app .
+Then build and run the docker image.
 
-## 3. start the python app container
-    docker run -it --name some-python-app my-python-app
+    docker build -t my-python-app
+    docker run -it --rm --name my-running-app my-python-app
+
+## Run a single python script.
+
+For many single file projects, it may not be convenient to write a `Dockerfile` for your project. In such cases, you can run a python script by using the python docker image directly.
+
+    docker run -it --rm --name my-running-script -v $(pwd):/usr/src/myapp -w /usr/src/myapp python:3 python your-daemon-or-script.py
+
+or (again, if you need to use Python 2):
+
+    docker run -it --rm --name my-running-script -v $(pwd):/usr/src/myapp -w /usr/src/myapp python:2 python your-daemon-or-script.py
 
 # Issues and Contributing
 
