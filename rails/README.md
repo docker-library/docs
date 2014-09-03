@@ -8,7 +8,7 @@ Ruby on Rails, often simply referred to as Rails, is an open source web applicat
 
 ## 1. create a `Dockerfile` in your rails app project
 
-    FROM rails
+    FROM rails:onbuild
 
 Put this file in the root of your app, next to the `Gemfile`.
 
