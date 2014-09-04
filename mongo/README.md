@@ -19,14 +19,14 @@ This image includes `EXPOSE 27017` (the mongo port), so standard container linki
 ## ... or via `mongo`
     docker run -it --link some-mongo:mongo --rm mongo sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
 
-# Issues and Contributing
+# User Feedback
+
+## Issues
 
 If you have any questions about the image, please contact us through a [GitHub issue](https://github.com/docker-library/mongo/issues) or in the IRC channel `#docker-library` on [Freenode](https://freenode.net).
 
-If you want to contribute, we are always thrilled to receive pull requests, and do our best to process them as fast as possible. Not sure if that typo is worth a pull request? Do it! We will appreciate it.
+## Contributing
 
-If your pull request is not accepted on the first try, don't be discouraged! If there's a problem with the implementation, hopefully you received feedback on what to improve.
+If you want to contribute new features or updates, we are always thrilled to receive pull requests, and do our best to process them as fast as possible.
 
 We recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/mongo/issues) before starting to code - especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give feedback on your design, and maybe point out if someone else is working on the same thing.
-
-Any significant improvement should be documented as a GitHub issue before anybody starts working on it. Please take a moment to check that an issue doesn't already exist documenting your bug report or improvement proposal. If it does, it never hurts to add a quick "+1" or "I have this problem too". This will help prioritize the most common problems and requests.
