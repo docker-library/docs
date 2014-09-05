@@ -45,7 +45,7 @@ Then run the commands to build and run the docker image.
 
 If you don't want to include a `Dockerfile` in your project, then it is sufficient to do the following.
 
-    docker run -it --rm --name my-apache-php-app -v $(pwd):/var/www/html php:5.6-cli
+    docker run -it --rm --name my-apache-php-app -v $(pwd):/var/www/html php:5.6-apache
 
 # User Feedback
 
