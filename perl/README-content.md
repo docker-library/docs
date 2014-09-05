@@ -1,5 +1,5 @@
 # What is Perl?
-Perl is a family of high-level, general-purpose, interpreted, dynamic programming language.
+Perl is a family of high-level, general-purpose, interpreted, dynamic programming language. The Perl languages borrow freatures from other programming languages including C, shell scripting (sh), AWK, and sed.
 
 > [wikipedia.org/wiki/Perl](https://en.wikipedia.org/wiki/Perl)
 

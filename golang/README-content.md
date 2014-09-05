@@ -5,7 +5,7 @@ Go, also called golang, is a programming language initially developed at Google 
 
 # How to use this image
 
-## Start a go instance running in your app
+## Start a go instance running in your app.
 
 For this image, the most straight-forward use is to use a golang container as both the build environment as well as the runtime environment. In your Dockerfile, you can do something along the lines of the following will compile and run your project.
 

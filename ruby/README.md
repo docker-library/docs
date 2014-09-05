@@ -7,7 +7,8 @@ According to its authors, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, a
 
 # How to use this image
 
-## 1. create a `Dockerfile` in your ruby app project
+## Create a `Dockerfile` in your ruby app project
+
     FROM ruby
     CMD ["./your-daemon-or-script.rb"]
 
@@ -15,11 +16,16 @@ Put this file in the root of your app, next to the `Gemfile`.
 
 This image includes multiple `ONBUILD` triggers so that should be all that you need to bootstrap most applications.  The build will `ADD . /usr/src/app` and `RUN bundle install`.
 
-## 2. build the ruby app image
-    docker build -t my-ruby-app .
+Then build and run the ruby image.
 
-## 3. start the ruby app container
-    docker run -it --name some-ruby-app my-ruby-app
+    docker build -t my-ruby-app .
+    docker run -it --name my-running-script my-ruby-app
+
+## Run a single ruby script
+
+For many single file projects, it may not be convenient to write a `Dockerfile` for your project. In such cases, you can run a ruby script by using the ruby docker image directly.
+
+    docker run -it --rm --name my-running-script -v $(pwd):/usr/src/myapp -w /usr/src/myapp ruby ruby your-daemon-or-script.rb
 
 # Issues and Contributing
 
