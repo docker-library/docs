@@ -18,7 +18,7 @@ For this image, the most straight-forward use is to use a golang container as bo
 Then run and build the docker image.
 
     docker build -t my-golang-app
-    docker run -it --rm --name my-running-app my-golang-app ./myapp
+    docker run -it --rm --name my-running-app my-golang-app
 
 ## Compile your app inside the docker container.
 

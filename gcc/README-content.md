@@ -12,13 +12,13 @@ For this image, the most straight-forward use is to use a gcc container as both 
     FROM gcc
     ADD . /usr/src/myapp
     WORKDIR /usr/src/myapp
-    RUN gcc -o executable main.c
-    CMD ["./executable"]
+    RUN gcc -o myapp main.c
+    CMD ["./myapp"]
 
 Then run the commands to build and run the docker image.
 
     docker build -t my-gcc-app .
-    docker run -it --rm --name my-running-app my-gcc-app ./myapp
+    docker run -it --rm --name my-running-app my-gcc-app
 
 ## Compile your app inside the docker container.
 
@@ -28,4 +28,4 @@ It is not always appropriate to run your app inside a container. In instances wh
 
 This will add your current directory as a volume to the comtainer, set the working directory to the volume, and run the command `gcc -o myapp myapp.c` which will tell gcc to compile the code in myapp.c and output the executable to myapp. Alternatively, if you have a make file, you can instead run the make command inside your container.
 
-    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp make
+    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp gcc make
