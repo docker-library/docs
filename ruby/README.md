@@ -9,7 +9,7 @@ According to its authors, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, a
 
 ## Create a `Dockerfile` in your ruby app project
 
-    FROM ruby
+    FROM ruby:onbuild
     CMD ["./your-daemon-or-script.rb"]
 
 Put this file in the root of your app, next to the `Gemfile`.
