@@ -28,3 +28,18 @@ It is not always appropriate to run your app inside a container. In instances wh
 This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `go build` which will tell go to compile the project in the working directory and output the executable to myapp. Alternatively, if you have a make file, you can instead run the make command inside your container.
 
     docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp golang:1.3 make
+
+## Cross-compile your app inside the docker container.
+
+If you need to compile your application for a platform other than `linux/amd64` (like `windows/386`, for example), the provided `cross` tags can be used to accomplish this with minimal friction:
+
+    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp -e GOOS=windows -e GOARCH=386 golang:1.3-cross go build -v
+
+Alternatively, build for multiple platforms at once:
+
+    docker run --rm -it -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp golang:1.3-cross bash
+    $ for GOOS in darwin linux; do
+    >   for GOARCH in 386 amd64; do
+    >     go build -v -o myapp-$GOOS-$GOARCH
+    >   done
+    > done
