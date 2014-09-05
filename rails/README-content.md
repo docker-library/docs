@@ -6,23 +6,19 @@ Ruby on Rails, often simply referred to as Rails, is an open source web applicat
 
 # How to use this image
 
-## 1. create a `Dockerfile` in your rails app project
-
+## Create a `Dockerfile` in your rails app project
     FROM rails:onbuild
 
 Put this file in the root of your app, next to the `Gemfile`.
 
-This image includes multiple `ONBUILD` triggers so that should be all that you need for most applications.  The build will `ADD . /usr/src/app`, `RUN bundle install`, `EXPOSE 3000`, and set the default command to `rails server`.
+This image includes multiple `ONBUILD` triggers so that should be all that you need for most applications. The build will `ADD . /usr/src/app`, `RUN bundle install`, `EXPOSE 3000`, and set the default command to `rails server`.
 
-## 2. build the rails app image
+Then build and run the docker image.
 
     docker build -t my-rails-app .
-
-## 3. start the rails app container
-
     docker run --name some-rails-app -d my-rails-app
 
-Then hit `http://container-ip:3000` in a browser. On the other hand, if you need access outside the host on port 8080:
+Test it by visiting `http://container-ip:3000` in a browser. On the other hand, if you need access outside the host on port 8080:
 
     docker run --name some-rails-app -p 8080:3000 -d my-rails-app
 

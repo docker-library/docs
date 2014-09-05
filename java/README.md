@@ -25,11 +25,11 @@ Then run the commands to build and run the docker image.
 
 It is not always appropriate to run your app inside a container. In instances where you only want to compile inside the docker instance, you can do something along the lines of the following.
 
-    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp java javac Main.java
+    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp java:7 javac Main.java
 
 This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `javac Main.java` which will tell java to compile the code in Main.java and output the java class file to Main.class. Alternatively, if you have a make file, you can instead run the make command inside your container.
 
-    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp java make
+    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp java:7 make
 
 # User Feedback
 

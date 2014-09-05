@@ -9,19 +9,24 @@ Node.js internally uses the Google V8 JavaScript engine to execute code, and a l
 
 # How to use this image
 
-    FROM node
+## Create a `Dockerfile` in your nodejs app project.
 
-    ADD . /usr/src/app
-    WORKDIR /usr/src/app
-
-    # install your application's dependencies
-    RUN npm install
-
+    FROM node:0.10.31-onbuild
     # replace this with your application's default port
     EXPOSE 8888
-
     # replace this with your main "server" script file
     CMD [ "node", "server.js" ]
+
+Then build and run the docker image.
+
+    docker build -t my-nodejs-app
+    docker run -it --rm --name my-running-app my-nodejs-app
+
+## Run a single nodejs script
+
+For many single file projects, it may not be convenient to write a `Dockerfile` for your project. In such cases, you can run a nodejs script by using the nodejs docker image directly.
+
+    docker run -it --rm --name my-running-script -v $(pwd):/usr/src/myapp -w /usr/src/myapp node:0.10.31 node your-daemon-or-script.rb
 
 # User Feedback
 

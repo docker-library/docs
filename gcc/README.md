@@ -9,7 +9,7 @@ The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Proje
 
 For this image, the most straight-forward use is to use a gcc container as both the build environment as well as the runtime environment. In your Dockerfile, you can do something along the lines of the following will compile and run your project.
 
-    FROM gcc
+    FROM gcc:4.9
     ADD . /usr/src/myapp
     WORKDIR /usr/src/myapp
     RUN gcc -o myapp main.c
@@ -24,11 +24,11 @@ Then run the commands to build and run the docker image.
 
 It is not always appropriate to run your app inside a container. In instances where you only want to compile inside the docker instance, you can do something along the lines of the following.
 
-    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp gcc gcc -o myapp myapp.c
+    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp gcc:4.9 gcc -o myapp myapp.c
 
-This will add your current directory as a volume to the comtainer, set the working directory to the volume, and run the command `gcc -o myapp myapp.c` which will tell gcc to compile the code in myapp.c and output the executable to myapp. Alternatively, if you have a make file, you can instead run the make command inside your container.
+This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `gcc -o myapp myapp.c` which will tell gcc to compile the code in myapp.c and output the executable to myapp. Alternatively, if you have a make file, you can instead run the make command inside your container.
 
-    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp gcc make
+    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp gcc:4.9 make
 
 # User Feedback
 
