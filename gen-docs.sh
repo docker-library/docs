@@ -10,6 +10,14 @@ fi
 repos=( "${repos[@]%/}" )
 
 for repo in "${repos[@]}"; do
+	case "$repo" in
+		perl)
+			gitRepo="https://github.com/Perl/docker-perl"
+			;;
+		*)
+			gitRepo="https://github.com/docker-library/$repo"
+			;;
+	esac
 	if [ -e "$repo/README-content.md" ]; then
 		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null |  sed 's/[\/&]/\\&/g' || true)"
 		if [ "$mailingList" ]; then
@@ -22,7 +30,10 @@ for repo in "${repos[@]}"; do
 			echo "cat $repo/README-content.md README-footer.md > $repo/README.md"
 			cat "$repo/README-content.md" "README-footer.md" > "$repo/README.md"
 			set -x
-			sed -ri 's/\s*%%MAILING_LIST%%\s*/'"$mailingList"'/g; s/%%REPO%%/'"$repo"'/g' "$repo/README.md"
+			sed -ri '
+				s/\s*%%MAILING_LIST%%\s*/'"$mailingList"'/g;
+				s!%%REPO%%!'"$gitRepo"'!g;
+			' "$repo/README.md"
 		)
 	else
 		echo "skipping $repo: repo/README-content.md"

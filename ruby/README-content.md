@@ -25,4 +25,4 @@ Then build and run the ruby image.
 
 For many single file projects, it may not be convenient to write a `Dockerfile` for your project. In such cases, you can run a ruby script by using the ruby docker image directly.
 
-    docker run -it --rm --name my-running-script -v $(pwd):/usr/src/myapp -w /usr/src/myapp ruby:2.1.2 ruby your-daemon-or-script.rb
+    docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp ruby:2.1.2 ruby your-daemon-or-script.rb
