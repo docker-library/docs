@@ -22,4 +22,4 @@ Then build and run the docker image.
 
 For many single file projects, it may not be convenient to write a `Dockerfile` for your project. In such cases, you can run a hylang script by using the hylang docker image directly.
 
-    docker run -it --rm --name my-running-script -v $(pwd):/usr/src/myapp -w /usr/src/myapp hylang:0.10.0 hy your-daemon-or-script.py
+    docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp hylang:0.10.0 hy your-daemon-or-script.py

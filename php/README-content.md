@@ -25,7 +25,7 @@ Then run the commands to build and run the docker image.
 
 For many single file projects, it may not be convenient to write a `Dockerfile` for your project. In such cases, you can run a php script by using the php docker image directly.
 
-    docker run -it --rm --name my-running-script -v $(pwd):/usr/src/myapp -w /usr/src/myapp php:5.6-cli php your-script.php
+    docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp php:5.6-cli php your-script.php
 
 ## With Apache
 
@@ -45,4 +45,4 @@ Then run the commands to build and run the docker image.
 
 If you don't want to include a `Dockerfile` in your project, then it is sufficient to do the following.
 
-    docker run -it --rm --name my-apache-php-app -v $(pwd):/var/www/html php:5.6-apache
+    docker run -it --rm --name my-apache-php-app -v "$(pwd)":/var/www/html php:5.6-apache

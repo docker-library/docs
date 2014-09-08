@@ -28,4 +28,4 @@ The image assumes that your application has a file named [`package.json`](https:
 
 For many single file projects, it may not be convenient to write a `Dockerfile` for your project. In such cases, you can run a nodejs script by using the nodejs docker image directly.
 
-    docker run -it --rm --name my-running-script -v $(pwd):/usr/src/myapp -w /usr/src/myapp node:0.10.31 node your-daemon-or-script.js
+    docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp node:0.10.31 node your-daemon-or-script.js
