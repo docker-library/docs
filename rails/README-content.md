@@ -1,4 +1,4 @@
-# What is Ruby on Rails
+# What is Ruby on Rails?
 
 Ruby on Rails, often simply referred to as Rails, is an open source web application framework which runs via the Ruby programming language. It is a full-stack framework: it allows creating pages and applications that gather information from the web server, talk to or query the database, and render templates out of the box. As a result, Rails features a routing system that is independent of the web server.
 
