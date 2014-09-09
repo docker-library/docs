@@ -10,6 +10,9 @@ fi
 repos=( "${repos[@]%/}" )
 
 for repo in "${repos[@]}"; do
+	if [ -x "$repo/update.sh" ]; then
+		( set -x; "$repo/update.sh" )
+	fi
 	case "$repo" in
 		perl)
 			gitRepo='https://github.com/Perl/docker-perl'
