@@ -33,8 +33,9 @@ for repo in "${repos[@]}"; do
 		fi
 		
 		(
-			echo "cat $repo/README-content.md README-footer.md > $repo/README.md"
-			cat "$repo/README-content.md" "README-footer.md" > "$repo/README.md"
+			echo "{ ./generate-dockerfile-links-partial.sh $repo && cat $repo/README-content.md README-footer.md; } > $repo/README.md"
+			./generate-dockerfile-links-partial.sh "$repo" > $repo/README.md
+			cat "$repo/README-content.md" "README-footer.md" >> "$repo/README.md"
 			set -x
 			sed -ri '
 				s/\s*%%MAILING_LIST%%\s*/'"$mailingList"'/g;
