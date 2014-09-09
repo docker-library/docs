@@ -1,3 +1,9 @@
+# Tags and `Dockerfile` links
+
+- [6b32, 6](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/6/Dockerfile)
+- [7u65, 7, latest](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/7/Dockerfile)
+- [8u20, 8](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/8/Dockerfile)
+
 # What is Java?
 
 Java is a concurrent, class-based, object-oriented language specifically designed to have as few implementation dependencies as possible. It is intended to allow application developers to "write once, run anywhere", meaning that code that runs on one platform does not need to be recompiled to run on another.

@@ -1,3 +1,7 @@
+# Tags and `Dockerfile` links
+
+- [latest, 0, 0.10, 0.10.0](https://github.com/hylang/hy/blob/1265f546d1fbcfa9c62b51f3e455c0709be7acc8/Dockerfile)
+
 # What is hylang?
 
 Hy (alternately, Hylang) is a dialect of the Lisp programming language designed to interoperate with Python by translating expressions into Python's abstract syntax tree (AST). Similar to Clojure's mapping of s-expressions onto the JVM, Hy is meant to operate as a transparent Lisp front end to Python's abstract syntax. Hy also allows for Python libraries (include the standard library) to be imported and accessed alongside Hy code with a compilation step, converting the data structure of both into Python's AST.

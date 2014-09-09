@@ -1,3 +1,15 @@
+# Tags and `Dockerfile` links
+
+- [2.6.17, 2.6](https://github.com/docker-library/redis/blob/02d9cd887a4e0d50db4bb085eab7235115a6fe4a/2.6.17/Dockerfile)
+- [2.8.10](https://github.com/docker-library/redis/blob/ffb29617e5dcfe71adf67842d18063c410beede7/2.8.10/Dockerfile)
+- [2.8.11](https://github.com/docker-library/redis/blob/ffb29617e5dcfe71adf67842d18063c410beede7/2.8.11/Dockerfile)
+- [2.8.12](https://github.com/docker-library/redis/blob/ffb29617e5dcfe71adf67842d18063c410beede7/2.8.12/Dockerfile)
+- [2.8.13, 2.8, latest](https://github.com/docker-library/redis/blob/d0665bb1bbddd4cc035dbc1fc774695fa534d648/2.8.13/Dockerfile)
+- [2.8.6](https://github.com/docker-library/redis/blob/ffb29617e5dcfe71adf67842d18063c410beede7/2.8.6/Dockerfile)
+- [2.8.7](https://github.com/docker-library/redis/blob/ffb29617e5dcfe71adf67842d18063c410beede7/2.8.7/Dockerfile)
+- [2.8.8](https://github.com/docker-library/redis/blob/ffb29617e5dcfe71adf67842d18063c410beede7/2.8.8/Dockerfile)
+- [2.8.9](https://github.com/docker-library/redis/blob/ffb29617e5dcfe71adf67842d18063c410beede7/2.8.9/Dockerfile)
+
 # What is Redis?
 Redis is an open-source, networked, in-memory, key-value data store with optional durability. It is written in ANSI C. The development of Redis has been sponsored by Pivotal since May 2013; before that, it was sponsored by VMware. According to the monthly ranking by DB-Engines.com, Redis is the most popular key-value store. The name Redis means REmote DIctionary Server.
 

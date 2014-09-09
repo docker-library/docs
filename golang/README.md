@@ -1,3 +1,21 @@
+# Tags and `Dockerfile` links
+
+- [1.2](https://github.com/docker-library/golang/blob/887b0816c9480f83eb715350a32b6a3b4d331b1b/1.2/Dockerfile)
+- [1.2-onbuild](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.2/onbuild/Dockerfile)
+- [1.2-cross](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.2/cross/Dockerfile)
+- [1.2.1](https://github.com/docker-library/golang/blob/887b0816c9480f83eb715350a32b6a3b4d331b1b/1.2.1/Dockerfile)
+- [1.2.1-onbuild](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.2.1/onbuild/Dockerfile)
+- [1.2.1-cross](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.2.1/cross/Dockerfile)
+- [1.2.2](https://github.com/docker-library/golang/blob/887b0816c9480f83eb715350a32b6a3b4d331b1b/1.2.2/Dockerfile)
+- [1.2.2-onbuild](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.2.2/onbuild/Dockerfile)
+- [1.2.2-cross](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.2.2/cross/Dockerfile)
+- [1.3](https://github.com/docker-library/golang/blob/887b0816c9480f83eb715350a32b6a3b4d331b1b/1.3/Dockerfile)
+- [1.3-onbuild](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.3/onbuild/Dockerfile)
+- [1.3-cross](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.3/cross/Dockerfile)
+- [1.3.1, 1, latest](https://github.com/docker-library/golang/blob/887b0816c9480f83eb715350a32b6a3b4d331b1b/1.3.1/Dockerfile)
+- [1.3.1-onbuild, 1-onbuild, onbuild](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.3.1/onbuild/Dockerfile)
+- [1.3.1-cross, 1-cross, cross](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.3.1/cross/Dockerfile)
+
 # What is Go?
 Go, also called golang, is a programming language initially developed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson. It is a statically-typed language with syntax loosely derived from that of C, adding garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
 

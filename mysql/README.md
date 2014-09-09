@@ -1,3 +1,8 @@
+# Tags and `Dockerfile` links
+
+- [5.6.20, 5.6, 5, latest](https://github.com/docker-library/docker-mysql/blob/8f83313be73c8c294109d038aa2f921f6886b21c/5.6/Dockerfile)
+- [5.7.4-m14, 5.7.4, 5.7](https://github.com/docker-library/docker-mysql/blob/8f83313be73c8c294109d038aa2f921f6886b21c/5.7/Dockerfile)
+
 # What is MySQL?
 
 MySQL is (as of March 2014) the world's second most widely used open-source relational database management system (RDBMS). It is named after co-founder Michael Widenius's daughter, My. The SQL phrase stands for Structured Query Language.

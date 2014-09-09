@@ -1,3 +1,12 @@
+# Tags and `Dockerfile` links
+
+- [8.4.22, 8.4, 8](https://github.com/docker-library/postgres/blob/d74b69598c835fe15eac39a26b5c61058f99c3db/8.4/Dockerfile)
+- [9.0.18, 9.0](https://github.com/docker-library/postgres/blob/d74b69598c835fe15eac39a26b5c61058f99c3db/9.0/Dockerfile)
+- [9.1.14, 9.1](https://github.com/docker-library/postgres/blob/d74b69598c835fe15eac39a26b5c61058f99c3db/9.1/Dockerfile)
+- [9.2.9, 9.2](https://github.com/docker-library/postgres/blob/d74b69598c835fe15eac39a26b5c61058f99c3db/9.2/Dockerfile)
+- [9.3.5, 9.3, 9, latest](https://github.com/docker-library/postgres/blob/d74b69598c835fe15eac39a26b5c61058f99c3db/9.3/Dockerfile)
+- [9.4-beta2, 9.4](https://github.com/docker-library/postgres/blob/d74b69598c835fe15eac39a26b5c61058f99c3db/9.4/Dockerfile)
+
 # What is PostgreSQL?
 PostgreSQL, often simply "Postgres", is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance. As a database server, its primary function is to store data, securely and supporting best practices, and retrieve it later, as requested by other software applications, be it those on the same computer or those running on another computer across a network (including the Internet). It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. Recent versions also provide replication of the database itself for security and scalability.
 

@@ -1,3 +1,9 @@
+# Tags and `Dockerfile` links
+
+- [12.04.5, 12.04, precise](https://github.com/tianon/docker-brew-ubuntu-core/blob/febe569d532a47c28da4a460eea5331b8dd5f564/precise/Dockerfile)
+- [14.04.1, 14.04, trusty, latest](https://github.com/tianon/docker-brew-ubuntu-core/blob/febe569d532a47c28da4a460eea5331b8dd5f564/trusty/Dockerfile)
+- [14.10, utopic](https://github.com/tianon/docker-brew-ubuntu-core/blob/febe569d532a47c28da4a460eea5331b8dd5f564/utopic/Dockerfile)
+
 **Built with [Stackbrew](https://github.com/dotcloud/stackbrew/) from [github.com/dotcloud/stackbrew/blob/master/library/ubuntu](https://github.com/dotcloud/stackbrew/blob/master/library/ubuntu)**
 
 As of April 18 2014 these images are based on the official Ubuntu Minimal packages. They are pretty barebones. See the links under 'installed packages' to find which packages are installed. 

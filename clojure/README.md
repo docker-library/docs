@@ -1,3 +1,7 @@
+# Tags and `Dockerfile` links
+
+- [latest](https://github.com/Quantisan/docker-clojure/blob/30ed1b891ea059a33ca56f04ecf6f467bbbd2362/Dockerfile)
+
 What is Clojure?
 
 Clojure is a dialect of the Lisp programming language created by Rich Hickey. Clojure is a general-purpose programming language with an emphasis on functional programming. It runs on the Java Virtual Machine, Common Langauge Runtime, and JavaScript engines. Like other Lisps, Clojure treats code as data and has a macro system.

@@ -1,3 +1,8 @@
+# Tags and `Dockerfile` links
+
+- [2.7.8, 2.7, 2](https://github.com/docker-library/docker-python/blob/2542eef0945385430d2b5b0899b01ca26bd40ef7/2/Dockerfile)
+- [3.4.1, 3.4, 3, latest](https://github.com/docker-library/docker-python/blob/2542eef0945385430d2b5b0899b01ca26bd40ef7/3/Dockerfile)
+
 # What is Python?
 
 Python is a widely used general-purpose, high-level programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C. The language provides constructs intended to enable clear programs on both a small and large scale.

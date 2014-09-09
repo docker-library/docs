@@ -1,3 +1,10 @@
+# Tags and `Dockerfile` links
+
+- [latest, 5, 5.20, 5.20.0](https://github.com/perl/docker-perl/blob/r20140804.0/5.020.000-64bit/Dockerfile)
+- [5.18, 5.18.2](https://github.com/perl/docker-perl/blob/r20140804.0/5.018.002-64bit/Dockerfile)
+- [latest-threaded, 5-threaded, 5.20-threaded, 5.20.0-threaded](https://github.com/perl/docker-perl/blob/r20140804.0/5.020.000-64bit,threaded/Dockerfile)
+- [5.18-threaded, 5.18.2-threaded](https://github.com/perl/docker-perl/blob/r20140804.0/5.018.002-64bit,threaded/Dockerfile)
+
 # What is Perl?
 Perl is a family of high-level, general-purpose, interpreted, dynamic programming language. The Perl languages borrow freatures from other programming languages including C, shell scripting (sh), AWK, and sed.
 

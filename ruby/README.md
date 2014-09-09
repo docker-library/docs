@@ -1,3 +1,10 @@
+# Tags and `Dockerfile` links
+
+- [1.9.3-p547, 1.9.3, 1.9, 1](https://github.com/docker-library/ruby/blob/4938a7b4b5b62c90b5d387c9c286fd7749d9499e/1.9/Dockerfile)
+- [1.9.3-p547-onbuild, 1.9.3-onbuild, 1.9-onbuild, 1-onbuild](https://github.com/docker-library/ruby/blob/4938a7b4b5b62c90b5d387c9c286fd7749d9499e/1.9/onbuild/Dockerfile)
+- [2.1.2, 2.1, 2, latest](https://github.com/docker-library/ruby/blob/950a673e59df846608f624ee55321d36ba1f89ba/2.1/Dockerfile)
+- [2.1.2-onbuild, 2.1-onbuild, 2-onbuild, onbuild](https://github.com/docker-library/ruby/blob/950a673e59df846608f624ee55321d36ba1f89ba/2.1/onbuild/Dockerfile)
+
 # What is Ruby?
 
 Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan.
