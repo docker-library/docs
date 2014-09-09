@@ -20,6 +20,9 @@ for repo in "${repos[@]}"; do
 		hylang)
 			gitRepo='https://github.com/hylang/hy'
 			;;
+		clojure)
+			gitRepo='https://github.com/Quantisan/docker-clojure'
+			;;
 		*)
 			gitRepo="https://github.com/docker-library/$repo"
 			;;
