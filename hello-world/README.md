@@ -1,4 +1,6 @@
-$ docker run hello-world
+# Example output
+
+    $ docker run hello-world
     Hello from Docker.
     This message shows that your installation appears to be working correctly.
     
@@ -16,10 +18,10 @@ $ docker run hello-world
     
     For more examples and ideas, visit:
      http://docs.docker.com/userguide/
-
+    
     $ docker images hello-world
-    REPOSITORY      TAG             IMAGE ID        CREATED         VIRTUAL SIZE
-    hello-world     latest          565a9d68a73f    26 hours ago    922 B
+    REPOSITORY   TAG     IMAGE ID      VIRTUAL SIZE
+    hello-world  latest  565a9d68a73f  922 B
 
 # User Feedback
 
