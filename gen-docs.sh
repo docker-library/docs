@@ -12,7 +12,10 @@ repos=( "${repos[@]%/}" )
 for repo in "${repos[@]}"; do
 	case "$repo" in
 		perl)
-			gitRepo="https://github.com/Perl/docker-perl"
+			gitRepo='https://github.com/Perl/docker-perl'
+			;;
+		hylang)
+			gitRepo='https://github.com/hylang/hy'
 			;;
 		*)
 			gitRepo="https://github.com/docker-library/$repo"
