@@ -37,3 +37,11 @@ Then build and run the image.
 
     docker build -t my-clojure-app .
     docker run -it --rm --name my-running-app my-clojure-app
+
+## Compile your Lein/Clojure project into a jar from within the container.
+
+If you have an existing Lein/Clojure project, it's fairly straightforward to compile your project into a jar from a container.
+
+    docker run -it --rm -v "$(pwd)":/usr/src/app -w /usr/src/app clojure lein uberjar
+
+This will build your project into a jar file located in your project's target/uberjar directory for you to use.
