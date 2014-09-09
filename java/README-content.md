@@ -1,3 +1,5 @@
+# What is Java?
+
 Java is a concurrent, class-based, object-oriented language specifically designed to have as few implementation dependencies as possible. It is intended to allow application developers to "write once, run anywhere", meaning that code that runs on one platform does not need to be recompiled to run on another.
 
 Java is a registered trademark of Oracle and/or its affiliates.
