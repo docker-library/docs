@@ -1,7 +1,7 @@
 # Tags and `Dockerfile` links
 
-- [jessie, latest](https://github.com/docker-library/docker-buildpack-deps/blob/c75f8bc5aac9e1f0c7bc4d262038247e6777e204/jessie/Dockerfile)
-- [wheezy](https://github.com/docker-library/docker-buildpack-deps/blob/c75f8bc5aac9e1f0c7bc4d262038247e6777e204/wheezy/Dockerfile)
+- [`jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/docker-library/docker-buildpack-deps/blob/c75f8bc5aac9e1f0c7bc4d262038247e6777e204/jessie/Dockerfile)
+- [`wheezy` (*wheezy/Dockerfile*)](https://github.com/docker-library/docker-buildpack-deps/blob/c75f8bc5aac9e1f0c7bc4d262038247e6777e204/wheezy/Dockerfile)
 
 # What is buildpack-deps?
 

@@ -19,11 +19,11 @@ for line in "${lines[@]}"; do
 	tag="${line%%: *}"
 	repoDir="${line#*: }"
 	if [ -z "${repoDirTags[$repoDir]}" ]; then
-		repoDirTags["$repoDir"]="$tag"
 		repoDirs+=( "$repoDir" )
 	else
-		repoDirTags["$repoDir"]+=', '"$tag"
+		repoDirTags["$repoDir"]+=', '
 	fi
+	repoDirTags["$repoDir"]+='`'"$tag"'`'
 done
 
 echo '# Tags and `Dockerfile` links'
@@ -54,7 +54,7 @@ for repoDir in "${repoDirs[@]}"; do
 	
 	url="https://$gitUrl/blob/$commit/${dir}Dockerfile"
 	
-	echo '- ['"${repoDirTags["$repoDir"]}"']('"$url"')'
+	echo '- ['"${repoDirTags["$repoDir"]}"' (*'"${dir}Dockerfile"'*)]('"$url"')'
 done
 
 echo

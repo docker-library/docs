@@ -1,9 +1,9 @@
 # Tags and `Dockerfile` links
 
-- [2.2.7, 2.2](https://github.com/docker-library/mongo/blob/274cd39430c54babaec47225f5d2e77c8952d8d0/2.2/Dockerfile)
-- [2.4.10, 2.4](https://github.com/docker-library/mongo/blob/274cd39430c54babaec47225f5d2e77c8952d8d0/2.4/Dockerfile)
-- [2.6.4, 2.6, 2, latest](https://github.com/docker-library/mongo/blob/274cd39430c54babaec47225f5d2e77c8952d8d0/2.6/Dockerfile)
-- [2.7.5, 2.7](https://github.com/docker-library/mongo/blob/274cd39430c54babaec47225f5d2e77c8952d8d0/2.7/Dockerfile)
+- [`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/274cd39430c54babaec47225f5d2e77c8952d8d0/2.2/Dockerfile)
+- [`2.4.10`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/274cd39430c54babaec47225f5d2e77c8952d8d0/2.4/Dockerfile)
+- [`2.6.4`, `2.6`, `2`, `latest` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/274cd39430c54babaec47225f5d2e77c8952d8d0/2.6/Dockerfile)
+- [`2.7.5`, `2.7` (*2.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/274cd39430c54babaec47225f5d2e77c8952d8d0/2.7/Dockerfile)
 
 # What is MongoDB?
 

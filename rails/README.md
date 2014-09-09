@@ -1,7 +1,7 @@
 # Tags and `Dockerfile` links
 
-- [4.1.5, 4.1, 4, latest](https://github.com/docker-library/rails/blob/2f86b2e73f46be25d780575f0b6e9ad03b60880e/Dockerfile)
-- [onbuild](https://github.com/docker-library/rails/blob/7bb6ade7f97129cc58967d7d0ae17f4b62ae52eb/onbuild/Dockerfile)
+- [`4.1.5`, `4.1`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/2f86b2e73f46be25d780575f0b6e9ad03b60880e/Dockerfile)
+- [`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/7bb6ade7f97129cc58967d7d0ae17f4b62ae52eb/onbuild/Dockerfile)
 
 # What is Ruby on Rails?
 

@@ -1,6 +1,6 @@
 # Tags and `Dockerfile` links
 
-- [latest, 0, 0.10, 0.10.0](https://github.com/hylang/hy/blob/1265f546d1fbcfa9c62b51f3e455c0709be7acc8/Dockerfile)
+- [`latest`, `0`, `0.10`, `0.10.0` (*Dockerfile*)](https://github.com/hylang/hy/blob/1265f546d1fbcfa9c62b51f3e455c0709be7acc8/Dockerfile)
 
 # What is hylang?
 

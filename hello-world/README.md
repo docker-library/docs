@@ -1,6 +1,6 @@
 # Tags and `Dockerfile` links
 
-- [latest](https://github.com/docker-library/hello-world/blob/b7a78b7ccca62cc478919b101f3ab1334899df2b/Dockerfile)
+- [`latest` (*Dockerfile*)](https://github.com/docker-library/hello-world/blob/b7a78b7ccca62cc478919b101f3ab1334899df2b/Dockerfile)
 
 # Example output
 

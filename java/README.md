@@ -1,8 +1,8 @@
 # Tags and `Dockerfile` links
 
-- [6b32, 6](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/6/Dockerfile)
-- [7u65, 7, latest](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/7/Dockerfile)
-- [8u20, 8](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/8/Dockerfile)
+- [`6b32`, `6` (*6/Dockerfile*)](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/6/Dockerfile)
+- [`7u65`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/7/Dockerfile)
+- [`8u20`, `8` (*8/Dockerfile*)](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/8/Dockerfile)
 
 # What is Java?
 

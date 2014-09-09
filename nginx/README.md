@@ -1,6 +1,6 @@
 # Tags and `Dockerfile` links
 
-- [latest, 1, 1.7, 1.7.1](https://github.com/docker-library/nginx/blob/d2c7eee53b81ae70f4eb9e3348575b35df136c95/Dockerfile)
+- [`latest`, `1`, `1.7`, `1.7.1` (*Dockerfile*)](https://github.com/docker-library/nginx/blob/d2c7eee53b81ae70f4eb9e3348575b35df136c95/Dockerfile)
 
 # What is Nginx?
 

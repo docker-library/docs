@@ -1,13 +1,13 @@
 # Tags and `Dockerfile` links
 
-- [5.3.29-cli, 5.3-cli](https://github.com/docker-library/php/blob/3904b176167a07c8828b9a1b5b9a3ea55bd9f21d/5.3/Dockerfile)
-- [5.3.29-apache, 5.3-apache](https://github.com/docker-library/php/blob/6b54c7fa3f42f0eaade30c1bbb05d5fc2c0b39c2/5.3/apache/Dockerfile)
-- [5.4.32-cli, 5.4-cli](https://github.com/docker-library/php/blob/3904b176167a07c8828b9a1b5b9a3ea55bd9f21d/5.4/Dockerfile)
-- [5.4.32-apache, 5.4-apache](https://github.com/docker-library/php/blob/6b54c7fa3f42f0eaade30c1bbb05d5fc2c0b39c2/5.4/apache/Dockerfile)
-- [5.5.16-cli, 5.5-cli](https://github.com/docker-library/php/blob/3904b176167a07c8828b9a1b5b9a3ea55bd9f21d/5.5/Dockerfile)
-- [5.5.16-apache, 5.5-apache](https://github.com/docker-library/php/blob/6b54c7fa3f42f0eaade30c1bbb05d5fc2c0b39c2/5.5/apache/Dockerfile)
-- [5.6.0-cli, 5.6-cli, 5-cli, latest](https://github.com/docker-library/php/blob/3904b176167a07c8828b9a1b5b9a3ea55bd9f21d/5.6/Dockerfile)
-- [5.6.0-apache, 5.6-apache, 5-apache, apache](https://github.com/docker-library/php/blob/6b54c7fa3f42f0eaade30c1bbb05d5fc2c0b39c2/5.6/apache/Dockerfile)
+- [`5.3.29-cli`, `5.3-cli` (*5.3/Dockerfile*)](https://github.com/docker-library/php/blob/3904b176167a07c8828b9a1b5b9a3ea55bd9f21d/5.3/Dockerfile)
+- [`5.3.29-apache`, `5.3-apache` (*5.3/apache/Dockerfile*)](https://github.com/docker-library/php/blob/6b54c7fa3f42f0eaade30c1bbb05d5fc2c0b39c2/5.3/apache/Dockerfile)
+- [`5.4.32-cli`, `5.4-cli` (*5.4/Dockerfile*)](https://github.com/docker-library/php/blob/3904b176167a07c8828b9a1b5b9a3ea55bd9f21d/5.4/Dockerfile)
+- [`5.4.32-apache`, `5.4-apache` (*5.4/apache/Dockerfile*)](https://github.com/docker-library/php/blob/6b54c7fa3f42f0eaade30c1bbb05d5fc2c0b39c2/5.4/apache/Dockerfile)
+- [`5.5.16-cli`, `5.5-cli` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/3904b176167a07c8828b9a1b5b9a3ea55bd9f21d/5.5/Dockerfile)
+- [`5.5.16-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/6b54c7fa3f42f0eaade30c1bbb05d5fc2c0b39c2/5.5/apache/Dockerfile)
+- [`5.6.0-cli`, `5.6-cli`, `5-cli`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/3904b176167a07c8828b9a1b5b9a3ea55bd9f21d/5.6/Dockerfile)
+- [`5.6.0-apache`, `5.6-apache`, `5-apache`, `apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/6b54c7fa3f42f0eaade30c1bbb05d5fc2c0b39c2/5.6/apache/Dockerfile)
 
 # What is PHP?
 PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. As of January 2013, PHP was installed on more than 240 million websites and 2.1 million web servers.

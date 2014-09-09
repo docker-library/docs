@@ -1,6 +1,6 @@
 # Tags and `Dockerfile` links
 
-- [latest, 4.9, 4.9.0](https://github.com/docker-library/gcc/blob/d01197b5d86db660263e13a659c86ce3531207a9/Dockerfile)
+- [`latest`, `4.9`, `4.9.0` (*Dockerfile*)](https://github.com/docker-library/gcc/blob/d01197b5d86db660263e13a659c86ce3531207a9/Dockerfile)
 
 # What is gcc?
 The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Project supporting various programming languages. GCC is a key component of the GNU toolchain. The Free Software Foundation (FSF) distributes GCC under the GNU General Public License (GNU GPL). GCC has played an important role in the growth of free software, as both a tool and an example.
