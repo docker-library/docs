@@ -8,12 +8,12 @@ Clojure is a dialect of the Lisp programming language created by Rich Hickey. Cl
 
 ## Start a Lein/Clojure instance running in your app.
 
-As the most common way to use Clojure is in conjunction with lein, the Clojure image assumes you are doing so. The most straight-forward way of using this image is adding a Dockerfile to an already existing Lein/Clojure project.
+As the most common way to use Clojure is in conjunction with [lein](http://leiningen.org/), the Clojure image assumes you are doing so. The most straight-forward way of using this image is adding a Dockerfile to an already existing Lein/Clojure project.
 
     FROM clojure
     COPY . /usr/src/app
     WORKDIR /usr/src/app
-    CMD lein run
+    CMD ["lein", "run"]
 
 Then run the commands to build and run the image.
 
