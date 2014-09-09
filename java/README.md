@@ -16,7 +16,7 @@ For this image, the most straight-forward use is to use a java container as both
     ADD . /usr/src/myapp
     WORKDIR /usr/src/myapp
     RUN javac Main.java
-    CMD ["java Main"]
+    CMD ["java", "Main"]
 
 Then run the commands to build and run the docker image.
 
