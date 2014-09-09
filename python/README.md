@@ -8,14 +8,14 @@ Python is a widely used general-purpose, high-level programming language. Its de
 ## Create a `Dockerfile` in your python app project.
 
     FROM python:3
-    ADD . /usr/src/myapp
+    COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     CMD [ "python", "./your-daemon-or-script.py" ]
 
 or (if you need to use Python 2):
 
     FROM python:2
-    ADD . /usr/src/myapp
+    COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     CMD [ "python", "./your-daemon-or-script.py" ]
 

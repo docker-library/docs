@@ -10,7 +10,7 @@ The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Proje
 For this image, the most straight-forward use is to use a gcc container as both the build environment as well as the runtime environment. In your Dockerfile, you can do something along the lines of the following will compile and run your project.
 
     FROM gcc:4.9
-    ADD . /usr/src/myapp
+    COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     RUN gcc -o myapp main.c
     CMD ["./myapp"]

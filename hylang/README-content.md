@@ -9,7 +9,7 @@ Hy (alternately, Hylang) is a dialect of the Lisp programming language designed 
 ## Create a `Dockerfile` in your hylang project.
 
     FROM hylang:0.10.0
-    ADD . /usr/src/myapp
+    COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     CMD [ "hy", "./your-daemon-or-script.hy" ]
 

@@ -14,7 +14,7 @@ According to its authors, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, a
 
 Put this file in the root of your app, next to the `Gemfile`.
 
-This image includes multiple `ONBUILD` triggers so that should be all that you need to bootstrap most applications.  The build will `ADD . /usr/src/app` and `RUN bundle install`.
+This image includes multiple `ONBUILD` triggers so that should be all that you need to bootstrap most applications.  The build will `COPY . /usr/src/app` and `RUN bundle install`.
 
 Then build and run the ruby image.
 

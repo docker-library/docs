@@ -13,7 +13,7 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary content (which is a much cleaner solution than the bind mount above):
 
     FROM nginx
-    ADD static-html-directory /usr/local/nginx/html
+    COPY static-html-directory /usr/local/nginx/html
 
 Place this file in the same directory as your directory of content ("static-html-directory"), run `docker build -t some-content-nginx .`, then start your container:
 
@@ -40,7 +40,7 @@ If you wish to adapt the default configuration, use something like the following
 As above, this can also be accomplished more cleanly using a simple `Dockerfile`:
 
     FROM nginx
-    ADD nginx.conf /etc/nginx.conf
+    COPY nginx.conf /etc/nginx.conf
 
 Then, build with `docker build -t some-custom-nginx .` and run:
 

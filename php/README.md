@@ -12,7 +12,7 @@ In the case that you have a PHP project run through the command line interface, 
 ### Create a `Dockerfile` in your php project.
 
     FROM php:5.6-cli
-    ADD . /usr/src/myapp
+    COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     CMD [ "php", "./your-script.php" ]
 
@@ -34,7 +34,7 @@ In the more common case, you will probably want to run PHP in conjunction with A
 ### Create a `Dockerfile` in your php project.
 
     FROM php:5.6-apache
-    ADD . /var/www/html
+    COPY . /var/www/html
 
 Then run the commands to build and run the docker image.
 

@@ -8,7 +8,7 @@ Perl is a family of high-level, general-purpose, interpreted, dynamic programmin
 ## Create a `Dockerfile` in your perl app project.
 
     FROM perl:5.20
-    ADD . /usr/src/myapp
+    COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     CMD [ "perl", "./your-daemon-or-script.pl" ]
 

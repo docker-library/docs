@@ -11,7 +11,7 @@ Ruby on Rails, often simply referred to as Rails, is an open source web applicat
 
 Put this file in the root of your app, next to the `Gemfile`.
 
-This image includes multiple `ONBUILD` triggers so that should be all that you need for most applications. The build will `ADD . /usr/src/app`, `RUN bundle install`, `EXPOSE 3000`, and set the default command to `rails server`.
+This image includes multiple `ONBUILD` triggers so that should be all that you need for most applications. The build will `COPY . /usr/src/app`, `RUN bundle install`, `EXPOSE 3000`, and set the default command to `rails server`.
 
 Then build and run the docker image.
 

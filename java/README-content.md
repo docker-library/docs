@@ -13,7 +13,7 @@ Java is a registered trademark of Oracle and/or its affiliates.
 For this image, the most straight-forward use is to use a java container as both the build environment as well as the runtime environment. In your Dockerfile, you can do something along the lines of the following will compile and run your project.
 
     FROM java:7
-    ADD . /usr/src/myapp
+    COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     RUN javac Main.java
     CMD ["java", "Main"]
