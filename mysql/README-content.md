@@ -4,6 +4,8 @@ MySQL is (as of March 2014) the world's second most widely used open-source rela
 
 MySQL is a popular choice of database for use in web applications, and is a central component of the widely used LAMP open source web application software stack (and other 'AMP' stacks). LAMP is an acronym for "Linux, Apache, MySQL, Perl/PHP/Python." Free-software-open source projects that require a full-featured database management system often use MySQL.
 
+Oracle Corporation and/or affiliates own the copyright and trademark for MySQL.
+
 > [wikipedia.org/wiki/MySQL](https://en.wikipedia.org/wiki/MySQL)
 
 # How to use this image
