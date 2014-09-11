@@ -32,10 +32,17 @@ This image includes `EXPOSE 5432` (the postgres port), so standard container lin
 
 ## Issues
 
-If you have any questions about the image, please contact us on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or through a [GitHub issue](https://github.com/docker-library/postgres/issues) or in the IRC channel `#docker-library` on [Freenode](https://freenode.net).
+If you have any problems with, or questions about this image, please contact us
+ on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or through a [GitHub issue](https://github.com/docker-library/postgres/issues) or via the IRC channel
+`#docker-library` on [Freenode](https://freenode.net).
 
 ## Contributing
 
-If you want to contribute new features or updates, we are always thrilled to receive pull requests, and do our best to process them as fast as possible.
+You are invited to contribute new features, fixes, or updates, large or small; we are
+always thrilled to receive pull requests, and do our best to process them as fast as
+we can.
 
-We recommend discussing your plans on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or through a [GitHub issue](https://github.com/docker-library/postgres/issues) before starting to code - especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give feedback on your design, and maybe point out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or through a
+[GitHub issue](https://github.com/docker-library/postgres/issues), especially for more ambitious contributions. This gives
+other contributors a chance to point you in the right direction, give you feedback on
+your design, and help you find out if someone else is working on the same thing.
