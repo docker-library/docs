@@ -14,9 +14,9 @@ released four major stable releases in June 2011, in May 2012, in May 2013 and i
 
 # Tags and `Dockerfile` links
 
-- [`4`, `4.1`, `latest` (*4/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob9ad4315783020dd00217575a30e03968f599dc87/master/4/Dockerfile)
-- [`3` (*3/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/e958236c79b58d342f7e039545d42f8948ab4fb3/master/3/Dockerfile)
-- [`cauldron` (*cauldron/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/04f12cb57b40ca8aa99e532a4cf8650166974f9e/master/cauldron/Dockerfile/)
+- [`4`, `4.1`, `latest` (*4/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/master/4/Dockerfile)
+- [`3` (*3/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/master/3/Dockerfile)
+- [`cauldron` (*cauldron/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/master/cauldron/Dockerfile/)
 
 
 **Built with [Stackbrew](https://github.com/dotcloud/stackbrew/) from [github.com/dotcloud/stackbrew/blob/master/library/mageia](https://github.com/dotcloud/stackbrew/blob/master/library/mageia)**
