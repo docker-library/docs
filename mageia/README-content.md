@@ -1,6 +1,6 @@
 # Tags and `Dockerfile` links
 
-- [`4`, `4.1`, `latest` (*4/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/master/4/Dockerfile)
+- [`4`, `latest` (*4/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/master/4/Dockerfile)
 - [`3` (*3/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/master/3/Dockerfile)
 - [`cauldron` (*cauldron/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/master/cauldron/Dockerfile/)
 
