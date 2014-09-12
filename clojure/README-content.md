@@ -4,7 +4,7 @@
 
 What is Clojure?
 
-Clojure is a dialect of the Lisp programming language created by Rich Hickey. It is
+Clojure is a dialect of the Lisp programming language. It is
 a general-purpose programming language with an emphasis on functional programming. It
 runs on the Java Virtual Machine, Common Langauge Runtime, and JavaScript engines. Like
 other Lisps, Clojure treats code as data and has a macro system.
@@ -17,7 +17,7 @@ other Lisps, Clojure treats code as data and has a macro system.
 
 Since the most common way to use Clojure is in conjunction with
 [lein](http://leiningen.org/), this image assumes that's how you'll be working. The most
-straightforward way to use this image is to add a Dockerfile to an existing
+straightforward way to use this image is to add a `Dockerfile` to an existing
 Lein/Clojure project.
 
     FROM clojure
@@ -30,10 +30,10 @@ Then, run these commands to build and run the image.
     docker build -t my-clojure-app .
     docker run -it --rm --name my-running-app my-clojure-app
 
-While the above is the most straightforward example of a Dockerfile, it does have some
+While the above is the most straightforward example of a `Dockerfile`, it does have some
 drawbacks. The `lein run` command will download your dependencies, compile the project,
 and then run it. That's a lot of work, all of which you may not want done every time you
-run the image. To get around this, we can download the dependencies and compile the
+run the image. To get around this, you can download the dependencies and compile the
 project ahead of time. This will significantly reduce startup time when you run your
 image.
 
@@ -46,7 +46,7 @@ image.
     RUN mv "$(lein uberjar | sed -n 's/^Created \(.*standalone\.jar\)/\1/p')" app-standalone.jar
     CMD ["java", "-jar", "app-standalone.jar"]
 
-Writing the Dockerfile this way will download the dependencies (and cache them, so they
+Writing the `Dockerfile` this way will download the dependencies (and cache them, so they
 are only re-downloaded when the dependencies change) and then compile them into a
 standalone jar ahead of time rather than each time the image is run.
 
