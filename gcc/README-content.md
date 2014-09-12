@@ -1,5 +1,9 @@
 # What is gcc?
-The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Project supporting various programming languages. GCC is a key component of the GNU toolchain. The Free Software Foundation (FSF) distributes GCC under the GNU General Public License (GNU GPL). GCC has played an important role in the growth of free software, as both a tool and an example.
+The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Project that
+supports various programming languages. GCC is a key component of the GNU toolchain. The
+Free Software Foundation (FSF) distributes GCC under the GNU General Public License (GNU
+GPL). GCC has played an important role in the growth of free software, as both a tool and
+an example.
 
 > [wikipedia.org/wiki/GNU_Compiler_Collection](https://en.wikipedia.org/wiki/GNU_Compiler_Collection)
 
@@ -7,7 +11,9 @@ The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Proje
 
 ## Start a gcc instance running your app.
 
-For this image, the most straight-forward use is to use a gcc container as both the build environment as well as the runtime environment. In your Dockerfile, you can do something along the lines of the following will compile and run your project.
+The most straightforward way to use this image is to use a gcc container as both the
+build and runtime environment. In your `Dockerfile`, writing something along the lines of
+the following will compile and run your project.
 
     FROM gcc:4.9
     COPY . /usr/src/myapp
@@ -15,17 +21,21 @@ For this image, the most straight-forward use is to use a gcc container as both 
     RUN gcc -o myapp main.c
     CMD ["./myapp"]
 
-Then run the commands to build and run the docker image.
+Then, build and run the Docker image:
 
     docker build -t my-gcc-app .
     docker run -it --rm --name my-running-app my-gcc-app
 
 ## Compile your app inside the docker container.
 
-It is not always appropriate to run your app inside a container. In instances where you only want to compile inside the docker instance, you can do something along the lines of the following.
+There may be occasions wehere it is not appropriate to run your app inside a container.To
+compile but not run your app inside the Docker instance, you can write something like:.
 
     docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp gcc:4.9 gcc -o myapp myapp.c
 
-This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `gcc -o myapp myapp.c` which will tell gcc to compile the code in myapp.c and output the executable to myapp. Alternatively, if you have a make file, you can instead run the make command inside your container.
+This will add your current directory, as a volume, to the container, set the working
+directory to the volume, and run the command `gcc -o myapp myapp.c.` This tells gcc to
+compile the code in `myapp.c` and output the executable to myapp. Alternatively, if you
+have a make file, you can instead run the make command inside your container.
 
     docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp gcc:4.9 make
