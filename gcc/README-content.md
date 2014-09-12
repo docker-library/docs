@@ -26,16 +26,16 @@ Then, build and run the Docker image:
     docker build -t my-gcc-app .
     docker run -it --rm --name my-running-app my-gcc-app
 
-## Compile your app inside the docker container.
+## Compile your app inside the Docker container.
 
-There may be occasions wehere it is not appropriate to run your app inside a container.To
-compile but not run your app inside the Docker instance, you can write something like:.
+There may be occasions where it is not appropriate to run your app inside a container. To
+compile, but not run your app inside the Docker instance, you can write something like:
 
     docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp gcc:4.9 gcc -o myapp myapp.c
 
 This will add your current directory, as a volume, to the container, set the working
 directory to the volume, and run the command `gcc -o myapp myapp.c.` This tells gcc to
 compile the code in `myapp.c` and output the executable to myapp. Alternatively, if you
-have a make file, you can instead run the make command inside your container.
+have a make file, you can instead run the `make` command inside your container.
 
     docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp gcc:4.9 make
