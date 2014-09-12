@@ -1,41 +1,54 @@
 # What is Go?
-Go, also called golang, is a programming language initially developed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson. It is a statically-typed language with syntax loosely derived from that of C, adding garbage collection, type safety, some dynamic-typing capabilities, additional built-in types such as variable-length arrays and key-value maps, and a large standard library.
+
+Go, a.k.a., golang, is a programming language first developed at Google. It is a
+statically-typed language with syntax loosely derived from C, but with additional
+features such as garbage collection, type safety, some dynamic-typing capabilities,
+additional built-in types (e.g., variable-length arrays and key-value maps), and a large
+standard library.
 
 > [wikipedia.org/wiki/Go_(programming_language)](http://en.wikipedia.org/wiki/Go_(programming_language))
 
 # How to use this image
 
-## Start a go instance running in your app.
+## Start a go instance in your app.
 
-For this image, the most straight-forward use is to use a golang container as both the build environment as well as the runtime environment. In your Dockerfile, you can do something along the lines of the following will compile and run your project.
+The most straightforward way to use this image is to use a golang container as both the
+build and runtime environment.  In your `Dockerfile`, writing something along the lines
+of the following will compile and run your project.
 
     FROM golang:1.3-onbuild
     CMD ["./myapp"]
 
-This image includes multiple `ONBUILD` triggers so that should be all that you need for most applications. The build will `COPY . /usr/src/app`, `RUN go get -d -v`, and `RUN go build -v`.
+This image includes multiple `ONBUILD` triggers which should cover most applications. The
+build will `COPY . /usr/src/app`, `RUN go get -d -v`, and `RUN go build -v`.
 
-Then run and build the docker image.
+You can then run and build the Docker image.
 
     docker build -t my-golang-app
     docker run -it --rm --name my-running-app my-golang-app
 
-## Compile your app inside the docker container.
+## Compile your app inside the Docker container.
 
-It is not always appropriate to run your app inside a container. In instances where you only want to compile inside the docker instance, you can do something along the lines of the following.
+There may be occasions where it is not appropriate to run your app inside a container. To
+compile, but not run your app inside the Docker instance, you can write something like:
 
     docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp golang:1.3 go build -v
 
-This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `go build` which will tell go to compile the project in the working directory and output the executable to myapp. Alternatively, if you have a make file, you can instead run the make command inside your container.
+This will add your current directory as a volume to the container, set the working
+directory to the volume, and run the command `go build` which will tell go to compile the
+project in the working directory and output the executable to myapp. Alternatively, if
+you have a make file, you can run the `make` command inside your container.
 
     docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp golang:1.3 make
 
 ## Cross-compile your app inside the docker container.
 
-If you need to compile your application for a platform other than `linux/amd64` (like `windows/386`, for example), the provided `cross` tags can be used to accomplish this with minimal friction:
+If you need to compile your application for a platform other than `linux/amd64` (such as
+`windows/386`), this can be easily accomplished with the provided `cross` tags:
 
     docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp -e GOOS=windows -e GOARCH=386 golang:1.3-cross go build -v
 
-Alternatively, build for multiple platforms at once:
+Alternatively, you can build for multiple platforms at once:
 
     docker run --rm -it -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp golang:1.3-cross bash
     $ for GOOS in darwin linux; do
