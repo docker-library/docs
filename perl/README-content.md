@@ -8,7 +8,7 @@ C, shell scripting (sh), AWK, and sed.
 
 # How to use this image
 
-## Create a `Dockerfile` in your perl app project.
+## Create a `Dockerfile` in your Perl app project.
 
     FROM perl:5.20
     COPY . /usr/src/myapp
@@ -20,10 +20,10 @@ Then, build and run the Docker image.
     docker build -t my-perl-app
     docker run -it --rm --name my-running-app my-perl-app
 
-## Run a single perl script.
+## Run a single Perl script.
 
 For many simple, single file projects, you may find it inconvenient to write a complete
-`Dockerfile`. In such cases, you can run a perl script by using the perl Docker image
+`Dockerfile`. In such cases, you can run a Perl script by using the Perl Docker image
 directly.
 
     docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp perl:5.20 perl your-daemon-or-script.pl
