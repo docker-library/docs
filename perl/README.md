@@ -6,27 +6,32 @@
 - [`5.18-threaded`, `5.18.2-threaded` (*5.018.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140804.0/5.018.002-64bit,threaded/Dockerfile)
 
 # What is Perl?
-Perl is a family of high-level, general-purpose, interpreted, dynamic programming language. The Perl languages borrow freatures from other programming languages including C, shell scripting (sh), AWK, and sed.
+
+Perl is a high-level, general-purpose, interpreted, dynamic programming
+language. The Perl language borrows features from other programming languages,
+including C, shell scripting (sh), AWK, and sed.
 
 > [wikipedia.org/wiki/Perl](https://en.wikipedia.org/wiki/Perl)
 
 # How to use this image
 
-## Create a `Dockerfile` in your perl app project.
+## Create a `Dockerfile` in your Perl app project
 
     FROM perl:5.20
     COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     CMD [ "perl", "./your-daemon-or-script.pl" ]
 
-Then build and run the docker image.
+Then, build and run the Docker image:
 
     docker build -t my-perl-app
     docker run -it --rm --name my-running-app my-perl-app
 
-## Run a single perl script.
+## Run a single Perl script
 
-For many single file projects, it may not be convenient to write a `Dockerfile` for your project. In such cases, you can run a perl script by using the perl docker image directly.
+For many simple, single file projects, you may find it inconvenient to write a
+complete `Dockerfile`. In such cases, you can run a Perl script by using the
+Perl Docker image directly:
 
     docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp perl:5.20 perl your-daemon-or-script.pl
 
@@ -35,16 +40,17 @@ For many single file projects, it may not be convenient to write a `Dockerfile` 
 ## Issues
 
 If you have any problems with, or questions about this image, please contact us
- through a [GitHub issue](https://github.com/Perl/docker-perl/issues) or via the IRC channel
-`#docker-library` on [Freenode](https://freenode.net).
+ through a [GitHub issue](https://github.com/Perl/docker-perl/issues) or via the IRC
+channel `#docker-library` on [Freenode](https://freenode.net).
 
 ## Contributing
 
-You are invited to contribute new features, fixes, or updates, large or small; we are
-always thrilled to receive pull requests, and do our best to process them as fast as
-we can.
+You are invited to contribute new features, fixes, or updates, large or small;
+we are always thrilled to receive pull requests, and do our best to process them
+as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a
-[GitHub issue](https://github.com/Perl/docker-perl/issues), especially for more ambitious contributions. This gives
-other contributors a chance to point you in the right direction, give you feedback on
-your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans 
+through a [GitHub issue](https://github.com/Perl/docker-perl/issues), especially for more ambitious
+contributions. This gives other contributors a chance to point you in the right
+direction, give you feedback on your design, and help you find out if someone
+else is working on the same thing.
