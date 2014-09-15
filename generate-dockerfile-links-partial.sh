@@ -26,9 +26,6 @@ for line in "${lines[@]}"; do
 	repoDirTags["$repoDir"]+='`'"$tag"'`'
 done
 
-echo '# Tags and `Dockerfile` links'
-echo
-
 for repoDir in "${repoDirs[@]}"; do
 	if [[ "$repoDir" != *github.com* ]]; then
 		# skip non-github.com for now

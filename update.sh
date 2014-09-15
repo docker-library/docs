@@ -9,6 +9,16 @@ if [ ${#repos[@]} -eq 0 ]; then
 fi
 repos=( "${repos[@]%/}" )
 
+replace_field() {
+	repo="$1"
+	field="$2"
+	content="$3"
+	extraSed="${4:-}"
+	sed_escaped_value="$(echo "$content" | sed 's/[\/&]/\\&/g')"
+	sed_escaped_value="${sed_escaped_value//$'\n'/\\n}"
+	sed -ri "s/${extraSed}%%${field}%%${extraSed}/$sed_escaped_value/g" "$repo/README.md"
+}
+
 for repo in "${repos[@]}"; do
 	if [ -x "$repo/update.sh" ]; then
 		( set -x; "$repo/update.sh" )
@@ -28,24 +38,29 @@ for repo in "${repos[@]}"; do
 			;;
 	esac
 	if [ -e "$repo/README-content.md" ]; then
-		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null |  sed 's/[\/&]/\\&/g' || true)"
+		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null || true)"
 		if [ "$mailingList" ]; then
 			mailingList=" $mailingList "
 		else
 			mailingList=' '
 		fi
 		
-		(
-			echo "{ ./generate-dockerfile-links-partial.sh $repo && cat $repo/README-content.md README-footer.md; } > $repo/README.md"
-			./generate-dockerfile-links-partial.sh "$repo" > $repo/README.md
-			cat "$repo/README-content.md" "README-footer.md" >> "$repo/README.md"
-			set -x
-			sed -ri '
-				s/\s*%%MAILING_LIST%%\s*/'"$mailingList"'/g;
-				s!%%REPO%%!'"$gitRepo"'!g;
-			' "$repo/README.md"
-		)
+		cp -v README-template.md "$repo/README.md"
+		
+		echo '  TAGS => ./generate-dockerfile-links-partial.sh'
+		replace_field "$repo" 'TAGS' "$(./generate-dockerfile-links-partial.sh "$repo")"
+		
+		echo '  CONTENT => '"$repo"'/README-content.md'
+		replace_field "$repo" 'CONTENT' "$(cat "$repo/README-content.md")"
+		
+		echo '  MAILING_LIST => "'"$mailingList"'"'
+		replace_field "$repo" 'MAILING_LIST' "$mailingList" '\s*'
+		
+		echo '  REPO => "'"$gitRepo"'"'
+		replace_field "$repo" 'REPO' "$gitRepo"
+		
+		echo
 	else
-		echo "skipping $repo: repo/README-content.md"
+		echo >&2 "skipping $repo: missing repo/README-content.md"
 	fi
 done
