@@ -50,8 +50,6 @@ Alternatively, you can specify something along the same lines with `docker run` 
 
 Using this method means that there is no need for you to have a Dockerfile for your redis container.
 
-
-
 # User Feedback
 
 ## Issues
