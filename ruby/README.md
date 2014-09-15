@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`1.9.3-p547`, `1.9.3`, `1.9`, `1` (*1.9/Dockerfile*)](https://github.com/docker-library/ruby/blob/2701609004b336feff4e88e73ef32e8700d1c668/1.9/Dockerfile)
 - [`1.9.3-p547-onbuild`, `1.9.3-onbuild`, `1.9-onbuild`, `1-onbuild` (*1.9/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/4938a7b4b5b62c90b5d387c9c286fd7749d9499e/1.9/onbuild/Dockerfile)

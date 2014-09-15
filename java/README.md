@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`6b32`, `6` (*6/Dockerfile*)](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/6/Dockerfile)
 - [`7u65`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/docker-java/blob/6cc25ee35281099423e521713f710d2549209600/7/Dockerfile)

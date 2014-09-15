@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`4.1.6`, `4.1`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/1e82b979cfb2f9b5e057bb8a9970038f46aa3d88/Dockerfile)
 - [`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/7bb6ade7f97129cc58967d7d0ae17f4b62ae52eb/onbuild/Dockerfile)

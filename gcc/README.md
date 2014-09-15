@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`4.6.4`, `4.6` (*4.6/Dockerfile*)](https://github.com/docker-library/gcc/blob/ba6f069df8e6c838d0465b09215e96f8d5d65269/4.6/Dockerfile)
 - [`4.7.4`, `4.7` (*4.7/Dockerfile*)](https://github.com/docker-library/gcc/blob/ba6f069df8e6c838d0465b09215e96f8d5d65269/4.7/Dockerfile)

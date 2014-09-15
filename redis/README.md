@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`2.6.17`, `2.6` (*2.6.17/Dockerfile*)](https://github.com/docker-library/redis/blob/02d9cd887a4e0d50db4bb085eab7235115a6fe4a/2.6.17/Dockerfile)
 - [`2.8.10` (*2.8.10/Dockerfile*)](https://github.com/docker-library/redis/blob/ffb29617e5dcfe71adf67842d18063c410beede7/2.8.10/Dockerfile)

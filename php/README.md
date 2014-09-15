@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`5.3.29-cli`, `5.3-cli` (*5.3/Dockerfile*)](https://github.com/docker-library/php/blob/e19f15271b1cbe9d3e5c9f0c552beca9579f0677/5.3/Dockerfile)
 - [`5.3.29-apache`, `5.3-apache` (*5.3/apache/Dockerfile*)](https://github.com/docker-library/php/blob/e19f15271b1cbe9d3e5c9f0c552beca9579f0677/5.3/apache/Dockerfile)

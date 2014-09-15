@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`1.2` (*1.2/Dockerfile*)](https://github.com/docker-library/golang/blob/887b0816c9480f83eb715350a32b6a3b4d331b1b/1.2/Dockerfile)
 - [`1.2-onbuild` (*1.2/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/40bd84e4bcc278281595174a60e7b4451d972dee/1.2/onbuild/Dockerfile)

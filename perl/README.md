@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`latest`, `5`, `5.20`, `5.20.0` (*5.020.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140804.0/5.020.000-64bit/Dockerfile)
 - [`5.18`, `5.18.2` (*5.018.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140804.0/5.018.002-64bit/Dockerfile)
