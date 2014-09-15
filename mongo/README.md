@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/274cd39430c54babaec47225f5d2e77c8952d8d0/2.2/Dockerfile)
 - [`2.4.10`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/274cd39430c54babaec47225f5d2e77c8952d8d0/2.4/Dockerfile)

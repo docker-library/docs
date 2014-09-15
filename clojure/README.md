@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`latest` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/30ed1b891ea059a33ca56f04ecf6f467bbbd2362/Dockerfile)
 

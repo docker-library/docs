@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`2.7.8`, `2.7`, `2` (*2/Dockerfile*)](https://github.com/docker-library/python/blob/660bda5ddf057e5cbcd130a75dd4ae935eba4e8d/2/Dockerfile)
 - [`2.7.8-onbuild`, `2.7-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/660bda5ddf057e5cbcd130a75dd4ae935eba4e8d/2/onbuild/Dockerfile)

@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`3.9.2`, `3.9`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/wordpress/blob/69c6d14ae81392b39d1ded401da617ece7c10c5b/Dockerfile)
 

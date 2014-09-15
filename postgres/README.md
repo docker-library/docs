@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`8.4.22`, `8.4`, `8` (*8.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/d74b69598c835fe15eac39a26b5c61058f99c3db/8.4/Dockerfile)
 - [`9.0.18`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/d74b69598c835fe15eac39a26b5c61058f99c3db/9.0/Dockerfile)

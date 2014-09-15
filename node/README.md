@@ -1,4 +1,4 @@
-# Tags and `Dockerfile` links
+# Supported tags and respective `Dockerfile` links
 
 - [`0.10.31`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/docker-library/node/blob/9cb7597ec2e5e4885e29bff9b2ab0a9cfb9c6b83/0.10/Dockerfile)
 - [`0.10.31-onbuild`, `0.10-onbuild`, `0-onbuild`, `onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/9cb7597ec2e5e4885e29bff9b2ab0a9cfb9c6b83/0.10/onbuild/Dockerfile)
