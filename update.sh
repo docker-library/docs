@@ -44,6 +44,10 @@ for repo in "${repos[@]}"; do
 		else
 			mailingList=' '
 		fi
+		license="$(cat "$repo/license.md" 2>/dev/null || true)"
+		if [ "$license" ]; then
+			license=$'\n\n''# License'$'\n\n'"$license"
+		fi
 		
 		cp -v README-template.md "$repo/README.md"
 		
@@ -52,6 +56,9 @@ for repo in "${repos[@]}"; do
 		
 		echo '  CONTENT => '"$repo"'/README-content.md'
 		replace_field "$repo" 'CONTENT' "$(cat "$repo/README-content.md")"
+		
+		echo '  LICENSE => '"$repo"'/license.md'
+		replace_field "$repo" 'LICENSE' "$license"
 		
 		echo '  MAILING_LIST => "'"$mailingList"'"'
 		replace_field "$repo" 'MAILING_LIST' "$mailingList" '\s*'

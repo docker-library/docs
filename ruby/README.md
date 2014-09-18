@@ -41,6 +41,11 @@ Ruby Docker image directly:
 
     docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp ruby:2.1.2 ruby your-daemon-or-script.rb
 
+# License
+
+View [license information](https://www.ruby-lang.org/en/about/license.txt)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues

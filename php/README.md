@@ -70,6 +70,11 @@ do the following:
 
     docker run -it --rm --name my-apache-php-app -v "$(pwd)":/var/www/html php:5.6-apache
 
+# License
+
+View [license information](http://php.net/license/)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues

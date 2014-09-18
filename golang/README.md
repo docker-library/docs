@@ -79,6 +79,11 @@ Alternatively, you can build for multiple platforms at once:
     >   done
     > done
 
+# License
+
+View [license information](http://golang.org/LICENSE)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues

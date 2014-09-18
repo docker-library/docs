@@ -36,6 +36,11 @@ Docker image directly:
 
     docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp hylang:0.10 hy your-daemon-or-script.hy
 
+# License
+
+View [license information](https://github.com/hylang/hy/blob/master/LICENSE)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues

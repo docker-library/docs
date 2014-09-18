@@ -2,7 +2,7 @@
 
 %%TAGS%%
 
-%%CONTENT%%
+%%CONTENT%%%%LICENSE%%
 
 # User Feedback
 
