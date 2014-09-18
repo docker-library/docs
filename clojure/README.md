@@ -63,6 +63,11 @@ compile your project into a jar from a container:
 This will build your project into a jar file located in your project's
 `target/uberjar` directory.
 
+# License
+
+View [license information](http://clojure.org/license)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues

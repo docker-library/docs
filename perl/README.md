@@ -35,6 +35,11 @@ Perl Docker image directly:
 
     docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp perl:5.20 perl your-daemon-or-script.pl
 
+# License
+
+View [license information](http://dev.perl.org/licenses/)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues
