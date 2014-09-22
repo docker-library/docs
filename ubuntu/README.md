@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`12.04.5`, `12.04`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/febe569d532a47c28da4a460eea5331b8dd5f564/precise/Dockerfile)
-- [`14.04.1`, `14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/febe569d532a47c28da4a460eea5331b8dd5f564/trusty/Dockerfile)
-- [`14.10`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/febe569d532a47c28da4a460eea5331b8dd5f564/utopic/Dockerfile)
+- [`12.04.5`, `12.04`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/811c96513afedfb7bf47f73613984462ac8e5354/precise/Dockerfile)
+- [`14.04.1`, `14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/811c96513afedfb7bf47f73613984462ac8e5354/trusty/Dockerfile)
+- [`14.10`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/811c96513afedfb7bf47f73613984462ac8e5354/utopic/Dockerfile)
 
 **Built with [Stackbrew](https://github.com/dotcloud/stackbrew/) from [github.com/dotcloud/stackbrew/blob/master/library/ubuntu](https://github.com/dotcloud/stackbrew/blob/master/library/ubuntu)**
 
