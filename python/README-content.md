@@ -23,7 +23,10 @@ or (if you need to use Python 2):
     FROM python:2-onbuild
     CMD [ "python", "./your-daemon-or-script.py" ]
 
-These images include multiple `ONBUILD` triggers which should be all you need to bootstrap most applications. The build will `COPY` a `requirements.txt` file, `RUN pip install` on said file, and then copy the current directory into `/usr/src/app`.
+These images include multiple `ONBUILD` triggers, which should be all you need
+to bootstrap most applications. The build will `COPY` a `requirements.txt` file,
+`RUN pip install` on said file, and then copy the current directory into
+`/usr/src/app`.
 
 You can then build and run the Docker image:
 
