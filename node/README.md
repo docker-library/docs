@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`0.10.31`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/docker-library/node/blob/9cb7597ec2e5e4885e29bff9b2ab0a9cfb9c6b83/0.10/Dockerfile)
-- [`0.10.31-onbuild`, `0.10-onbuild`, `0-onbuild`, `onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/9cb7597ec2e5e4885e29bff9b2ab0a9cfb9c6b83/0.10/onbuild/Dockerfile)
+- [`0.10.32`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/docker-library/node/blob/913a225f2fda34d6a811fac1466e4f09f075fcf6/0.10/Dockerfile)
+- [`0.10.32-onbuild`, `0.10-onbuild`, `0-onbuild`, `onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/913a225f2fda34d6a811fac1466e4f09f075fcf6/0.10/onbuild/Dockerfile)
 - [`0.11.13`, `0.11` (*0.11/Dockerfile*)](https://github.com/docker-library/node/blob/d017d679e92e84a810c580cdb29fcdbba23c2bb9/0.11/Dockerfile)
 - [`0.11.13-onbuild`, `0.11-onbuild` (*0.11/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/d017d679e92e84a810c580cdb29fcdbba23c2bb9/0.11/onbuild/Dockerfile)
 - [`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/docker-library/node/blob/d017d679e92e84a810c580cdb29fcdbba23c2bb9/0.8/Dockerfile)

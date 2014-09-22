@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`5.3.29-cli`, `5.3-cli` (*5.3/Dockerfile*)](https://github.com/docker-library/php/blob/e19f15271b1cbe9d3e5c9f0c552beca9579f0677/5.3/Dockerfile)
-- [`5.3.29-apache`, `5.3-apache` (*5.3/apache/Dockerfile*)](https://github.com/docker-library/php/blob/e19f15271b1cbe9d3e5c9f0c552beca9579f0677/5.3/apache/Dockerfile)
-- [`5.4.32-cli`, `5.4-cli` (*5.4/Dockerfile*)](https://github.com/docker-library/php/blob/e19f15271b1cbe9d3e5c9f0c552beca9579f0677/5.4/Dockerfile)
-- [`5.4.32-apache`, `5.4-apache` (*5.4/apache/Dockerfile*)](https://github.com/docker-library/php/blob/e19f15271b1cbe9d3e5c9f0c552beca9579f0677/5.4/apache/Dockerfile)
-- [`5.5.16-cli`, `5.5-cli` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/e19f15271b1cbe9d3e5c9f0c552beca9579f0677/5.5/Dockerfile)
-- [`5.5.16-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/e19f15271b1cbe9d3e5c9f0c552beca9579f0677/5.5/apache/Dockerfile)
-- [`5.6.0-cli`, `5.6-cli`, `5-cli`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/e19f15271b1cbe9d3e5c9f0c552beca9579f0677/5.6/Dockerfile)
-- [`5.6.0-apache`, `5.6-apache`, `5-apache`, `apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/e19f15271b1cbe9d3e5c9f0c552beca9579f0677/5.6/apache/Dockerfile)
+- [`5.3.29-cli`, `5.3-cli` (*5.3/Dockerfile*)](https://github.com/docker-library/php/blob/7819c242fd0521684b31ff0b33707132ca1bd9c6/5.3/Dockerfile)
+- [`5.3.29-apache`, `5.3-apache` (*5.3/apache/Dockerfile*)](https://github.com/docker-library/php/blob/7819c242fd0521684b31ff0b33707132ca1bd9c6/5.3/apache/Dockerfile)
+- [`5.4.33-cli`, `5.4-cli` (*5.4/Dockerfile*)](https://github.com/docker-library/php/blob/fbac56b1889188f9dd5d124a0fefca7aa1058aa2/5.4/Dockerfile)
+- [`5.4.33-apache`, `5.4-apache` (*5.4/apache/Dockerfile*)](https://github.com/docker-library/php/blob/fbac56b1889188f9dd5d124a0fefca7aa1058aa2/5.4/apache/Dockerfile)
+- [`5.5.17-cli`, `5.5-cli` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/fbac56b1889188f9dd5d124a0fefca7aa1058aa2/5.5/Dockerfile)
+- [`5.5.17-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/fbac56b1889188f9dd5d124a0fefca7aa1058aa2/5.5/apache/Dockerfile)
+- [`5.6.0-cli`, `5.6-cli`, `5-cli`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/7819c242fd0521684b31ff0b33707132ca1bd9c6/5.6/Dockerfile)
+- [`5.6.0-apache`, `5.6-apache`, `5-apache`, `apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/7819c242fd0521684b31ff0b33707132ca1bd9c6/5.6/apache/Dockerfile)
 
 # What is PHP?
 
