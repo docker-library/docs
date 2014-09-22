@@ -16,8 +16,8 @@ repoDirs=()
 declare -A repoDirTags=()
 
 for line in "${lines[@]}"; do
-	tag="${line%%: *}"
-	repoDir="${line#*: }"
+	tag="$(echo "$line" | awk -F ': +' '{ print $1 }')"
+	repoDir="$(echo "$line" | awk -F ': +' '{ print $2 }')"
 	if [ -z "${repoDirTags[$repoDir]}" ]; then
 		repoDirs+=( "$repoDir" )
 	else
