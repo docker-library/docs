@@ -37,7 +37,7 @@ for repo in "${repos[@]}"; do
 			gitRepo="https://github.com/docker-library/$repo"
 			;;
 	esac
-	if [ -e "$repo/README-content.md" ]; then
+	if [ -e "$repo/content.md" ]; then
 		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null || true)"
 		if [ "$mailingList" ]; then
 			mailingList=" $mailingList "
@@ -54,8 +54,8 @@ for repo in "${repos[@]}"; do
 		echo '  TAGS => ./generate-dockerfile-links-partial.sh'
 		replace_field "$repo" 'TAGS' "$(./generate-dockerfile-links-partial.sh "$repo")"
 		
-		echo '  CONTENT => '"$repo"'/README-content.md'
-		replace_field "$repo" 'CONTENT' "$(cat "$repo/README-content.md")"
+		echo '  CONTENT => '"$repo"'/content.md'
+		replace_field "$repo" 'CONTENT' "$(cat "$repo/content.md")"
 		
 		echo '  LICENSE => '"$repo"'/license.md'
 		replace_field "$repo" 'LICENSE' "$license"
@@ -68,6 +68,6 @@ for repo in "${repos[@]}"; do
 		
 		echo
 	else
-		echo >&2 "skipping $repo: missing repo/README-content.md"
+		echo >&2 "skipping $repo: missing repo/content.md"
 	fi
 done
