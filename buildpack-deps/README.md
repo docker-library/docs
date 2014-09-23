@@ -12,6 +12,17 @@ things like Ruby Gems, PyPI modules, etc. For example, `buildpack-deps` would
 let you do a `bundle install` in an arbitrary application directory without
 knowing beforehand that `ssl.h` is required to build a dependent module.
 
+# How to use this image
+
+This stack is designed to be the foundation of a language-stack image.
+
+<!-- TODO: add an example -->
+
+# License
+
+View [license information](https://www.debian.org/social_contract#guidelines)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues

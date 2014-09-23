@@ -54,6 +54,10 @@ or (again, if you need to use Python 2):
 
     docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp python:2 python your-daemon-or-script.py
 
+# License
+
+View license information for [Python 2](https://docs.python.org/2/license.html#)and [Python 3](https://docs.python.org/3/license.html#) software contained in this image.
+
 # User Feedback
 
 ## Issues

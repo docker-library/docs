@@ -39,6 +39,11 @@ need access outside the host, on port 8080:
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a
 browser.
 
+# License
+
+View [license information](https://github.com/rails/rails#license)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues
