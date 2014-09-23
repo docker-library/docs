@@ -3,7 +3,7 @@ set -e
 
 docker pull hello-world &> /dev/null
 
-exec > "$(dirname "$(readlink -f "$BASH_SOURCE")")/README-content.md"
+exec > "$(dirname "$(readlink -f "$BASH_SOURCE")")/content.md"
 
 echo '# Example output'
 echo
