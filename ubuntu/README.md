@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`12.04.5`, `12.04`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/811c96513afedfb7bf47f73613984462ac8e5354/precise/Dockerfile)
-- [`14.04.1`, `14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/811c96513afedfb7bf47f73613984462ac8e5354/trusty/Dockerfile)
-- [`14.10`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/811c96513afedfb7bf47f73613984462ac8e5354/utopic/Dockerfile)
+- [`12.04.5`, `12.04`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/dd046d19e123c7849e691c7f66848029b46fe47e/precise/Dockerfile)
+- [`14.04.1`, `14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/dd046d19e123c7849e691c7f66848029b46fe47e/trusty/Dockerfile)
+- [`14.10`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/dd046d19e123c7849e691c7f66848029b46fe47e/utopic/Dockerfile)
 
 **Built with [Stackbrew](https://github.com/dotcloud/stackbrew/) from [github.com/dotcloud/stackbrew/blob/master/library/ubuntu](https://github.com/dotcloud/stackbrew/blob/master/library/ubuntu)**
 
@@ -86,7 +86,7 @@ If you run into any problems with this image, please check (and potentially file
 ## Issues
 
 If you have any problems with, or questions about this image, please contact us
- through a [GitHub issue](https://github.com/docker-library/ubuntu/issues) or via the IRC
+ through a [GitHub issue](https://github.com/tianon/docker-brew-ubuntu-core/issues) or via the IRC
 channel `#docker-library` on [Freenode](https://freenode.net).
 
 ## Contributing
@@ -96,7 +96,7 @@ we are always thrilled to receive pull requests, and do our best to process them
 as fast as we can.
 
 Before you start to code, we recommend discussing your plans 
-through a [GitHub issue](https://github.com/docker-library/ubuntu/issues), especially for more ambitious
+through a [GitHub issue](https://github.com/tianon/docker-brew-ubuntu-core/issues), especially for more ambitious
 contributions. This gives other contributors a chance to point you in the right
 direction, give you feedback on your design, and help you find out if someone
 else is working on the same thing.
