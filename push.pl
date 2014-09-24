@@ -1,11 +1,12 @@
 #!/usr/bin/perl -w
 use strict;
 use warnings;
+use open ':encoding(utf8)';
 
 use File::Temp;
 use Getopt::Long;
 use Mojo::UserAgent;
-use Mojo::Util qw(slurp spurt trim);
+use Mojo::Util qw(decode encode slurp spurt trim);
 use Term::ReadKey;
 
 my $username;
@@ -112,19 +113,19 @@ if ($error->size) {
 }
 
 while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
+	$repo =~ s!/+$!!;
 	$repo = '/_/' . $repo unless $repo =~ m!/!;
 	$repo = '/' . $repo unless $repo =~ m!^/!;
-	$repo =~ s!/+$!!;
 	
 	my $repoName = $repo;
 	$repoName =~ s!^.*/!!; # 'hylang', 'perl', etc
 	
 	my $shortFile = $repoName . '/README-short.txt';
-	my $short = slurp $shortFile or die 'missing ' . $shortFile;
+	my $short = slurp $shortFile or warn 'missing ' . $shortFile;
 	$short = trim $short;
 	
 	my $longFile = $repoName . '/README.md';
-	my $long = slurp $longFile or die 'missing ' . $longFile;
+	my $long = slurp $longFile or warn 'missing ' . $longFile;
 	$long = trim $long;
 	
 	my $repoUrl = 'https://registry.hub.docker.com' . $repo . '/settings/';
@@ -141,17 +142,17 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	if ($hubShort ne $short) {
 		my $file = File::Temp->new(SUFFIX => '.txt');
 		my $filename = $file->filename;
-		spurt $hubShort . "\n", $filename;
+		spurt encode('UTF-8', $hubShort . "\n"), $filename;
 		system('vimdiff', $filename, $shortFile) == 0 or die "vimdiff on $filename and $shortFile failed";
-		$hubShort = trim(slurp($filename));
+		$hubShort = trim(decode('UTF-8', slurp($filename)));
 	}
 	
 	if ($hubLong ne $long) {
 		my $file = File::Temp->new(SUFFIX => '.md');
 		my $filename = $file->filename;
-		spurt $hubLong . "\n", $filename;
+		spurt encode('UTF-8', $hubLong . "\n"), $filename;
 		system('vimdiff', $filename, $longFile) == 0 or die "vimdiff on $filename and $longFile failed";
-		$hubLong = trim(slurp($filename));
+		$hubLong = trim(decode('UTF-8', slurp($filename)));
 	}
 	
 	say 'no change to ' . $repoName . '; skipping' and next if $settingsBits->{description} eq $hubShort and $settingsBits->{full_description} eq $hubLong;
