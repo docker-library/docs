@@ -1,6 +1,7 @@
 # What is JRuby?
 
-JRuby (http://www.jruby.org) is an implementation of Ruby (http://www.ruby-lang.org) on the JVM.
+JRuby (http://www.jruby.org) is an implementation of Ruby
+(http://www.ruby-lang.org) on the JVM.
 
 Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source
 programming language. According to its authors, Ruby was influenced by Perl,
