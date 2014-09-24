@@ -19,31 +19,46 @@ replace_field() {
 	sed -ri "s/${extraSed}%%${field}%%${extraSed}/$sed_escaped_value/g" "$repo/README.md"
 }
 
+declare -A otherRepos=(
+	[busybox]='https://github.com/jpetazzo/docker-busybox'
+	[centos]='https://github.com/CentOS/sig-cloud-instance-images'
+	[cirros]='https://github.com/ewindisch/docker-cirros'
+	[clojure]='https://github.com/Quantisan/docker-clojure'
+	[crux]='https://github.com/therealprologic/docker-crux'
+	[debian]='https://github.com/tianon/docker-brew-debian'
+	[docker-dev]='https://github.com/docker/docker'
+	[fedora]='https://github.com/lsm5/docker-brew-fedora'
+	[hipache]='https://github.com/dotcloud/hipache'
+	[hylang]='https://github.com/hylang/hy'
+	[jenkins]='https://github.com/cloudbees/jenkins-ci.org-docker'
+	[jruby]='https://github.com/cpuguy83/docker-jruby'
+	[neurodebian]='https://github.com/neurodebian/dockerfiles'
+	[opensuse]='https://github.com/openSUSE/docker-containers-build'
+	[perl]='https://github.com/Perl/docker-perl'
+	[registry]='https://github.com/docker/docker-registry'
+	[ubuntu-debootstrap]='https://github.com/tianon/docker-brew-ubuntu-debootstrap'
+	[ubuntu-upstart]='https://github.com/tianon/dockerfiles'
+	[ubuntu]='https://github.com/tianon/docker-brew-ubuntu-core'
+)
+
 for repo in "${repos[@]}"; do
 	if [ -x "$repo/update.sh" ]; then
 		( set -x; "$repo/update.sh" )
 	fi
-	case "$repo" in
-		perl)
-			gitRepo='https://github.com/Perl/docker-perl'
-			;;
-		hylang)
-			gitRepo='https://github.com/hylang/hy'
-			;;
-		clojure)
-			gitRepo='https://github.com/Quantisan/docker-clojure'
-			;;
-		*)
-			gitRepo="https://github.com/docker-library/$repo"
-			;;
-	esac
+	
 	if [ -e "$repo/content.md" ]; then
+		gitRepo="${otherRepos[$repo]}"
+		if [ -z "$gitRepo" ]; then
+			gitRepo="https://github.com/docker-library/$repo"
+		fi
+		
 		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null || true)"
 		if [ "$mailingList" ]; then
 			mailingList=" $mailingList "
 		else
 			mailingList=' '
 		fi
+		
 		license="$(cat "$repo/license.md" 2>/dev/null || true)"
 		if [ "$license" ]; then
 			license=$'\n\n''# License'$'\n\n'"$license"
