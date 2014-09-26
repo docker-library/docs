@@ -10,6 +10,8 @@ the data structure of both into Python's AST.
 
 > [wikipedia.org/wiki/Hy](https://en.wikipedia.org/wiki/Hy)
 
+%%LOGO%%
+
 # How to use this image
 
 ## Create a `Dockerfile` in your Hy project

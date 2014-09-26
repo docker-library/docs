@@ -7,6 +7,8 @@ other Lisps, Clojure treats code as data and has a macro system.
 
 > [wikipedia.org/wiki/Clojure](http://en.wikipedia.org/wiki/Clojure)
 
+%%LOGO%%
+
 # How to use this image
 
 ## Start a Lein/Clojure instance in your app

@@ -11,6 +11,8 @@ Windows 2000 and later.
 
 > [wikipedia.org/wiki/Python_(programming_language)](https://en.wikipedia.org/wiki/Python_(programming_language))
 
+%%LOGO%%
+
 # How to use this image
 
 ## Create a `Dockerfile` in your Python app project

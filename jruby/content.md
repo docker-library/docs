@@ -16,6 +16,8 @@ Ruby that you already know and love.
 With JRuby you are able to take advantage of real native threads, enhanced
 garbage collection, and even import and use java libraries.
 
+%%LOGO%%
+
 # How to use this image
 
 ## Create a `Dockerfile` in your Ruby app project

@@ -8,6 +8,8 @@ key-value maps), and a large standard library.
 
 > [wikipedia.org/wiki/Go_(programming_language)](http://en.wikipedia.org/wiki/Go_(programming_language))
 
+%%LOGO%%
+
 # How to use this image
 
 ## Start a Go instance in your app

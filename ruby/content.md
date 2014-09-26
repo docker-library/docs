@@ -8,6 +8,8 @@ type system and automatic memory management.
 
 > [wikipedia.org/wiki/Ruby_(programming_language)](https://en.wikipedia.org/wiki/Ruby_(programming_language))
 
+%%LOGO%%
+
 # How to use this image
 
 ## Create a `Dockerfile` in your Ruby app project

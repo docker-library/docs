@@ -6,15 +6,20 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 
 > [wikipedia.org/wiki/MongoDB](https://en.wikipedia.org/wiki/MongoDB)
 
+%%LOGO%%
+
 # How to use this image
 
 ## start a mongo instance
+
     docker run --name some-mongo -d mongo
 
 This image includes `EXPOSE 27017` (the mongo port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
 
 ## connect to it from an application
+
     docker run --name some-app --link some-mongo:mongo -d application-that-uses-mongo
 
 ## ... or via `mongo`
+
     docker run -it --link some-mongo:mongo --rm mongo sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'

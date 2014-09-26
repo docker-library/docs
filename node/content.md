@@ -18,6 +18,8 @@ software such as Apache.
 
 > [wikipedia.org/wiki/Node.js](https://en.wikipedia.org/wiki/Node.js)
 
+%%LOGO%%
+
 # How to use this image
 
 ## Create a `Dockerfile` in your Node.js app project
