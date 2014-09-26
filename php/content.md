@@ -9,6 +9,8 @@ interface (CGI).
 
 > [wikipedia.org/wiki/PHP](http://en.wikipedia.org/wiki/PHP)
 
+%%LOGO%%
+
 # How to use this image.
 
 ## With Command Line

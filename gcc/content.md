@@ -8,6 +8,8 @@ growth of free software, as both a tool and an example.
 
 > [wikipedia.org/wiki/GNU_Compiler_Collection](https://en.wikipedia.org/wiki/GNU_Compiler_Collection)
 
+%%LOGO%%
+
 # How to use this image
 
 ## Start a GCC instance running your app

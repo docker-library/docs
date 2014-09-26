@@ -6,6 +6,8 @@ including C, shell scripting (sh), AWK, and sed.
 
 > [wikipedia.org/wiki/Perl](https://en.wikipedia.org/wiki/Perl)
 
+%%LOGO%%
+
 # How to use this image
 
 ## Create a `Dockerfile` in your Perl app project

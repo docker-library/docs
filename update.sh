@@ -65,6 +65,11 @@ for repo in "${repos[@]}"; do
 			license=$'\n\n''# License'$'\n\n'"$license"
 		fi
 		
+		logo=
+		if [ -e "$repo/logo.png" ]; then
+			logo="![logo](https://raw.githubusercontent.com/docker-library/docs/master/$repo/logo.png)"
+		fi
+		
 		cp -v README-template.md "$repo/README.md"
 		
 		echo '  TAGS => ./generate-dockerfile-links-partial.sh'
@@ -72,6 +77,10 @@ for repo in "${repos[@]}"; do
 		
 		echo '  CONTENT => '"$repo"'/content.md'
 		replace_field "$repo" 'CONTENT' "$(cat "$repo/content.md")"
+		
+		# has to be after CONTENT because it's contained in content.md
+		echo "  LOGO => $logo"
+		replace_field "$repo" 'LOGO' "$logo" '\s*'
 		
 		echo '  LICENSE => '"$repo"'/license.md'
 		replace_field "$repo" 'LICENSE' "$license"

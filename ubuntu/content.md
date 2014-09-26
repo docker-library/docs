@@ -61,16 +61,3 @@ As of April 18 2014 these images are based on the official Ubuntu Minimal packag
     deb-src http://archive.ubuntu.com/ubuntu/ precise-security main restricted
     deb http://archive.ubuntu.com/ubuntu/ precise-security universe
     deb-src http://archive.ubuntu.com/ubuntu/ precise-security universe
-
-## Issues
-
-If you run into any problems with this image, please check (and potentially file new) [issues on the tianon/docker-brew-ubuntu-core repo](https://github.com/tianon/docker-brew-ubuntu-core/issues), which is the source for this image.
-
-## Installed packages
-
-* [lucid (10.04) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
-* [precise (12.04) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
-* [quantal (12.10) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
-* [raring (13.04) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
-* [saucy (13.10) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
-* [trusty (14.04) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
