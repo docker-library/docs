@@ -15,6 +15,8 @@ Java is a registered trademark of Oracle and/or its affiliates.
 
 > [wikipedia.org/wiki/Java_(programming_language)](http://en.wikipedia.org/wiki/Java_(programming_language))
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/java/logo.png)
+
 # How to use this image
 
 ## Start a Java instance in your app

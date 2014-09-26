@@ -15,6 +15,8 @@ growth of free software, as both a tool and an example.
 
 > [wikipedia.org/wiki/GNU_Compiler_Collection](https://en.wikipedia.org/wiki/GNU_Compiler_Collection)
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/gcc/logo.png)
+
 # How to use this image
 
 ## Start a GCC instance running your app

@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `5`, `5.20`, `5.20.0` (*5.020.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140804.0/5.020.000-64bit/Dockerfile)
-- [`5.18`, `5.18.2` (*5.018.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140804.0/5.018.002-64bit/Dockerfile)
-- [`latest-threaded`, `5-threaded`, `5.20-threaded`, `5.20.0-threaded` (*5.020.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140804.0/5.020.000-64bit,threaded/Dockerfile)
-- [`5.18-threaded`, `5.18.2-threaded` (*5.018.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140804.0/5.018.002-64bit,threaded/Dockerfile)
+- [`latest`, `5`, `5.20`, `5.20.1` (*5.020.001-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140922.0/5.020.001-64bit/Dockerfile)
+- [`5.18`, `5.18.2` (*5.018.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140922.0/5.018.002-64bit/Dockerfile)
+- [`latest-threaded`, `5-threaded`, `5.20-threaded`, `5.20.1-threaded` (*5.020.001-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140922.0/5.020.001-64bit,threaded/Dockerfile)
+- [`5.18-threaded`, `5.18.2-threaded` (*5.018.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20140922.0/5.018.002-64bit,threaded/Dockerfile)
 
 # What is Perl?
 
@@ -12,6 +12,8 @@ language. The Perl language borrows features from other programming languages,
 including C, shell scripting (sh), AWK, and sed.
 
 > [wikipedia.org/wiki/Perl](https://en.wikipedia.org/wiki/Perl)
+
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/perl/logo.png)
 
 # How to use this image
 

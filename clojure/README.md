@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/30ed1b891ea059a33ca56f04ecf6f467bbbd2362/Dockerfile)
+- [`latest`, `lein-2.5.0` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/27d0141c22bedbf78b908bf5bebd6629fc10a491/Dockerfile)
+- [`lein-2.4.3` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/30ed1b891ea059a33ca56f04ecf6f467bbbd2362/Dockerfile)
 
 # What is Clojure?
 
@@ -10,6 +11,8 @@ Java Virtual Machine, Common Langauge Runtime, and JavaScript engines. Like
 other Lisps, Clojure treats code as data and has a macro system.
 
 > [wikipedia.org/wiki/Clojure](http://en.wikipedia.org/wiki/Clojure)
+
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/clojure/logo.png)
 
 # How to use this image
 

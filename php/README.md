@@ -20,6 +20,8 @@ interface (CGI).
 
 > [wikipedia.org/wiki/PHP](http://en.wikipedia.org/wiki/PHP)
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/php/logo.png)
+
 # How to use this image.
 
 ## With Command Line

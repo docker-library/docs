@@ -8,6 +8,8 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 
 > [wikipedia.org/wiki/Nginx](https://en.wikipedia.org/wiki/Nginx)
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/nginx/logo.png)
+
 # How to use this image
 
 ## hosting some simple static content

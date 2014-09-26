@@ -14,6 +14,8 @@ the web server.
 
 > [wikipedia.org/wiki/Ruby_on_Rails](https://en.wikipedia.org/wiki/Ruby_on_Rails)
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/rails/logo.png)
+
 # How to use this image
 
 ## Create a `Dockerfile` in your Rails app project

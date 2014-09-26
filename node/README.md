@@ -27,6 +27,8 @@ software such as Apache.
 
 > [wikipedia.org/wiki/Node.js](https://en.wikipedia.org/wiki/Node.js)
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/node/logo.png)
+
 # How to use this image
 
 ## Create a `Dockerfile` in your Node.js app project

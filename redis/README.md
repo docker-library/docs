@@ -11,13 +11,17 @@
 - [`2.8.9` (*2.8.9/Dockerfile*)](https://github.com/docker-library/redis/blob/ffb29617e5dcfe71adf67842d18063c410beede7/2.8.9/Dockerfile)
 
 # What is Redis?
+
 Redis is an open-source, networked, in-memory, key-value data store with optional durability. It is written in ANSI C. The development of Redis has been sponsored by Pivotal since May 2013; before that, it was sponsored by VMware. According to the monthly ranking by DB-Engines.com, Redis is the most popular key-value store. The name Redis means REmote DIctionary Server.
 
 > [wikipedia.org/wiki/Redis](https://en.wikipedia.org/wiki/Redis)
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/redis/logo.png)
+
 # How to use this image
 
 ## start a redis instance
+
     docker run --name some-redis -d redis
 
 This image includes `EXPOSE 6379` (the redis port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
@@ -31,9 +35,11 @@ If persistence is enabled, data is stored in the `VOLUME /data`, which can be us
 For more about Redis Persistence, see [http://redis.io/topics/persistence](http://redis.io/topics/persistence).
 
 ## connect to it from an application
+
     docker run --name some-app --link some-redis:redis -d application-that-uses-redis
 
 ## ... or via `redis-cli`
+
     docker run -it --link some-redis:redis --rm redis sh -c 'exec redis-cli -h "$REDIS_PORT_6379_TCP_ADDR" -p "$REDIS_PORT_6379_TCP_PORT"'
 
 ## Additionally, If you want to use your own redis.conf ...

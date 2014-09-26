@@ -14,6 +14,8 @@ the data structure of both into Python's AST.
 
 > [wikipedia.org/wiki/Hy](https://en.wikipedia.org/wiki/Hy)
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/hylang/logo.png)
+
 # How to use this image
 
 ## Create a `Dockerfile` in your Hy project

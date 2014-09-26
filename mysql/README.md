@@ -13,6 +13,8 @@ Oracle Corporation and/or affiliates own the copyright and trademark for MySQL.
 
 > [wikipedia.org/wiki/MySQL](https://en.wikipedia.org/wiki/MySQL)
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png)
+
 # How to use this image
 
 ## start a mysql instance

@@ -20,6 +20,8 @@ Windows 2000 and later.
 
 > [wikipedia.org/wiki/Python_(programming_language)](https://en.wikipedia.org/wiki/Python_(programming_language))
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/python/logo.png)
+
 # How to use this image
 
 ## Create a `Dockerfile` in your Python app project

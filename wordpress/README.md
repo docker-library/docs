@@ -3,9 +3,12 @@
 - [`4.0.0`, `4.0`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/wordpress/blob/aee00669e7c43f435f021cb02871bffd63d5677a/Dockerfile)
 
 # What is WordPress?
+
 WordPress is a free and open source blogging tool and a content management system (CMS) based on PHP and MySQL, which runs on a web hosting service. Features include a plugin architecture and a template system. WordPress is used by more than 22.0% of the top 10 million websites as of August 2013. WordPress is the most popular blogging system in use on the Web, at more than 60 million websites. The most popular languages used are English, Spanish and Bahasa Indonesia.
 
 > [wikipedia.org/wiki/WordPress](https://en.wikipedia.org/wiki/WordPress)
+
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/wordpress/logo.png)
 
 # How to use this image
 

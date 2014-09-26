@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`12.04.5`, `12.04`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/dd046d19e123c7849e691c7f66848029b46fe47e/precise/Dockerfile)
-- [`14.04.1`, `14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/dd046d19e123c7849e691c7f66848029b46fe47e/trusty/Dockerfile)
-- [`14.10`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/dd046d19e123c7849e691c7f66848029b46fe47e/utopic/Dockerfile)
+- [`12.04.5`, `12.04`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/2b105575647a7e2030ff344d427c3920b89e17a9/precise/Dockerfile)
+- [`14.04.1`, `14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/2b105575647a7e2030ff344d427c3920b89e17a9/trusty/Dockerfile)
+- [`14.10`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/2b105575647a7e2030ff344d427c3920b89e17a9/utopic/Dockerfile)
 
 **Built with [Stackbrew](https://github.com/dotcloud/stackbrew/) from [github.com/dotcloud/stackbrew/blob/master/library/ubuntu](https://github.com/dotcloud/stackbrew/blob/master/library/ubuntu)**
 
@@ -67,19 +67,6 @@ As of April 18 2014 these images are based on the official Ubuntu Minimal packag
     deb-src http://archive.ubuntu.com/ubuntu/ precise-security main restricted
     deb http://archive.ubuntu.com/ubuntu/ precise-security universe
     deb-src http://archive.ubuntu.com/ubuntu/ precise-security universe
-
-## Issues
-
-If you run into any problems with this image, please check (and potentially file new) [issues on the tianon/docker-brew-ubuntu-core repo](https://github.com/tianon/docker-brew-ubuntu-core/issues), which is the source for this image.
-
-## Installed packages
-
-* [lucid (10.04) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
-* [precise (12.04) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
-* [quantal (12.10) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
-* [raring (13.04) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
-* [saucy (13.10) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
-* [trusty (14.04) minimal](http://packages.ubuntu.com/trusty/ubuntu-minimal)
 
 # User Feedback
 
