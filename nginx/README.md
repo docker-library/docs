@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `1`, `1.7`, `1.7.1` (*Dockerfile*)](https://github.com/docker-library/nginx/blob/d2c7eee53b81ae70f4eb9e3348575b35df136c95/Dockerfile)
+- [`latest`, `1`, `1.7`, `1.7.5` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3713a0157083eb4776e71f5a5aef4b2a5bc03ab1/Dockerfile)
 
 # What is Nginx?
 
@@ -12,12 +12,12 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 
 ## hosting some simple static content
 
-    docker run --name some-nginx -v /some/content:/usr/local/nginx/html:ro -d nginx
+    docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary content (which is a much cleaner solution than the bind mount above):
 
     FROM nginx
-    COPY static-html-directory /usr/local/nginx/html
+    COPY static-html-directory /usr/share/nginx/html
 
 Place this file in the same directory as your directory of content ("static-html-directory"), run `docker build -t some-content-nginx .`, then start your container:
 
@@ -31,7 +31,7 @@ Then you can hit `http://localhost:8080` or `http://host-ip:8080` in your browse
 
 ## complex configuration
 
-    docker run --name some-nginx -v /some/nginx.conf:/etc/nginx.conf:ro -d nginx
+    docker run --name some-nginx -v /some/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
 
 For information on the syntax of the Nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
 
@@ -39,12 +39,12 @@ Be sure to include `daemon off;` in your custom configuration to ensure that Ngi
 
 If you wish to adapt the default configuration, use something like the following to copy it from a running Nginx container:
 
-    docker cp some-nginx:/etc/nginx.conf /some/nginx.conf
+    docker cp some-nginx:/etc/nginx/nginx.conf /some/nginx.conf
 
 As above, this can also be accomplished more cleanly using a simple `Dockerfile`:
 
     FROM nginx
-    COPY nginx.conf /etc/nginx.conf
+    COPY nginx.conf /etc/nginx/nginx.conf
 
 Then, build with `docker build -t some-custom-nginx .` and run:
 
@@ -55,7 +55,7 @@ Then, build with `docker build -t some-custom-nginx .` and run:
 ## Issues
 
 If you have any problems with, or questions about this image, please contact us
- through a [GitHub issue](https://github.com/docker-library/nginx/issues) or via the IRC
+ through a [GitHub issue](https://github.com/nginxinc/docker-nginx/issues) or via the IRC
 channel `#docker-library` on [Freenode](https://freenode.net).
 
 ## Contributing
@@ -65,7 +65,7 @@ we are always thrilled to receive pull requests, and do our best to process them
 as fast as we can.
 
 Before you start to code, we recommend discussing your plans 
-through a [GitHub issue](https://github.com/docker-library/nginx/issues), especially for more ambitious
+through a [GitHub issue](https://github.com/nginxinc/docker-nginx/issues), especially for more ambitious
 contributions. This gives other contributors a chance to point you in the right
 direction, give you feedback on your design, and help you find out if someone
 else is working on the same thing.
