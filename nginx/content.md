@@ -8,12 +8,12 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 
 ## hosting some simple static content
 
-    docker run --name some-nginx -v /some/content:/usr/local/nginx/html:ro -d nginx
+    docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary content (which is a much cleaner solution than the bind mount above):
 
     FROM nginx
-    COPY static-html-directory /usr/local/nginx/html
+    COPY static-html-directory /usr/share/nginx/html
 
 Place this file in the same directory as your directory of content ("static-html-directory"), run `docker build -t some-content-nginx .`, then start your container:
 
