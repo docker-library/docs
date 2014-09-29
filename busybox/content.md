@@ -13,6 +13,8 @@ embedded system.
 
 > [wikipedia.org/wiki/BusyBox](https://en.wikipedia.org/wiki/BusyBox)
 
+%%LOGO%%
+
 # How to use this image
 
 ## Run BusyBox shell

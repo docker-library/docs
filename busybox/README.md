@@ -20,6 +20,8 @@ embedded system.
 
 > [wikipedia.org/wiki/BusyBox](https://en.wikipedia.org/wiki/BusyBox)
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/busybox/logo.png)
+
 # How to use this image
 
 ## Run BusyBox shell
