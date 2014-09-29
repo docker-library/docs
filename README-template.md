@@ -8,9 +8,11 @@
 
 ## Issues
 
-If you have any problems with, or questions about this image, please contact us
-%%MAILING_LIST%% through a [GitHub issue](%%REPO%%/issues) or via the IRC
-channel `#docker-library` on [Freenode](https://freenode.net).
+If you have any problems with or questions about this image, please contact us
+%%MAILING_LIST%% through a [GitHub issue](%%REPO%%/issues).
+
+You can also reach many of the official image maintainers via the
+`#docker-library` IRC channel on [Freenode](https://freenode.net).
 
 ## Contributing
 
