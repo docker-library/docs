@@ -53,9 +53,11 @@ to `Main.class`.
 
 ## Issues
 
-If you have any problems with, or questions about this image, please contact us
- through a [GitHub issue](https://github.com/docker-library/java/issues) or via the IRC
-channel `#docker-library` on [Freenode](https://freenode.net).
+If you have any problems with or questions about this image, please contact us
+ through a [GitHub issue](https://github.com/docker-library/java/issues).
+
+You can also reach many of the official image maintainers via the
+`#docker-library` IRC channel on [Freenode](https://freenode.net).
 
 ## Contributing
 

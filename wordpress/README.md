@@ -33,9 +33,11 @@ Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browse
 
 ## Issues
 
-If you have any problems with, or questions about this image, please contact us
- through a [GitHub issue](https://github.com/docker-library/wordpress/issues) or via the IRC
-channel `#docker-library` on [Freenode](https://freenode.net).
+If you have any problems with or questions about this image, please contact us
+ through a [GitHub issue](https://github.com/docker-library/wordpress/issues).
+
+You can also reach many of the official image maintainers via the
+`#docker-library` IRC channel on [Freenode](https://freenode.net).
 
 ## Contributing
 

@@ -64,9 +64,11 @@ View license information for [Python 2](https://docs.python.org/2/license.html#)
 
 ## Issues
 
-If you have any problems with, or questions about this image, please contact us
- through a [GitHub issue](https://github.com/docker-library/python/issues) or via the IRC
-channel `#docker-library` on [Freenode](https://freenode.net).
+If you have any problems with or questions about this image, please contact us
+ through a [GitHub issue](https://github.com/docker-library/python/issues).
+
+You can also reach many of the official image maintainers via the
+`#docker-library` IRC channel on [Freenode](https://freenode.net).
 
 ## Contributing
 
