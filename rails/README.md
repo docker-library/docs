@@ -41,6 +41,14 @@ need access outside the host, on port 8080:
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a
 browser.
 
+### Generate a `Gemfile.lock`
+
+The `onbuid` tag expects a `Gemfile.lock` in your app directory. This `docker
+run` will help you generate one. Run it in the root of your app, next to the
+`Gemfile`:
+
+    docker run --rm -v "$(pwd)":/usr/src/app -w /usr/src/app ruby:2.1.2 bundle install --system
+
 # License
 
 View [license information](https://github.com/rails/rails#license)
