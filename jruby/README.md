@@ -1,7 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`1.7`, `1.7.15`, `latest` (*1.7/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/9d4071a485dc1e0688dabaa7b6baaf679180d55b/1.7/Dockerfile)
-- [`1.7-onbuild`, `1.7.15-onbuild`, `onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/53d1d6ec2bc99ef884d60aa756861234710f2bbc/1.7/onbuild/Dockerfile)
+- [`1.7`, `1.7.16`, `latest` (*1.7/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/10eae9359611104c013e82206104b40f20fac377/1.7/Dockerfile)
+- [`dev` (*9000/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/10eae9359611104c013e82206104b40f20fac377/9000/Dockerfile)
+- [`1.7-onbuild`, `1.7.16-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/10eae9359611104c013e82206104b40f20fac377/1.7/onbuild/Dockerfile)
 
 # What is JRuby?
 
