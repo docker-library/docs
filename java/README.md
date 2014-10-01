@@ -49,6 +49,11 @@ working directory to the volume, and run the command `javac Main.java` which
 will tell Java to compile the code in `Main.java` and output the Java class file
 to `Main.class`.
 
+# License
+
+View [license information](http://openjdk.java.net/legal/gplv2+ce.html)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues

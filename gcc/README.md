@@ -52,6 +52,11 @@ command inside your container:
 
     docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp gcc:4.9 make
 
+# License
+
+View [license information](https://gcc.gnu.org/viewcvs/gcc/trunk/gcc/COPYING3?view=markup)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues
