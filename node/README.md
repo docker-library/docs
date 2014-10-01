@@ -57,6 +57,11 @@ Node.js Docker image directly:
 
     docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp node:0.10 node your-daemon-or-script.js
 
+# License
+
+View [license information](https://github.com/joyent/node/blob/master/LICENSE)
+for the software contained in this image.
+
 # User Feedback
 
 ## Issues
