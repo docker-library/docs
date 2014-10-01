@@ -31,6 +31,22 @@ This image includes `EXPOSE 3306` (the mysql port), so standard container linkin
 
     docker run -it --link some-mysql:mysql --rm mysql sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
 
+## Environment Variables
+
+The MySQL image uses several environment variables which are easy to miss. While not all the variables are required, they may significantly aid you in using the image.
+
+### `MYSQL_ROOT_PASSWORD`
+
+This is the one environment variable that is required for you to use the MySQL image. This environment variable should be what you want to set the root password for MySQL to. In the above example, it is being set to "mysecretpassword".
+
+### `MYSQL_USER`, `MYSQL_PASSWORD`
+
+These optional environment variables are used in conjunction to set both a MySQL user and password, which will subsequently be granted all permissions for the database. Note that if you only have one of these two environment variables, then neither will actually do anything - these two are meant to be used in conjunction with one another.
+
+### `MYSQL_DATABASE`
+
+This optional environment variable denotes the name of a database to create. If a user/password was supplied (via the `MYSQL_USER` and `MYSQL_PASSWORD` environment variables) then that user account will be granted (`GRANT ALL`) with the access to this database.
+
 # User Feedback
 
 ## Issues
