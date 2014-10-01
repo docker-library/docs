@@ -1,0 +1,1 @@
+Official Mageia base image
