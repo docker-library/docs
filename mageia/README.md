@@ -1,6 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-
+- [`latest`, `4` (*4/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/603a75ec98dfd7c26ed85108b309d4e5f39ded91/4/Dockerfile)
+- [`cauldron` (*cauldron/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/603a75ec98dfd7c26ed85108b309d4e5f39ded91/cauldron/Dockerfile)
+- [`3` (*3/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/603a75ec98dfd7c26ed85108b309d4e5f39ded91/3/Dockerfile)
 
 # What is Mageia?
 
