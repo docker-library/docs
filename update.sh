@@ -32,6 +32,7 @@ declare -A otherRepos=(
 	[hylang]='https://github.com/hylang/hy'
 	[jenkins]='https://github.com/cloudbees/jenkins-ci.org-docker'
 	[jruby]='https://github.com/cpuguy83/docker-jruby'
+	[mageia]='https://github.com/juanluisbaptiste/docker-brew-mageia'
 	[neurodebian]='https://github.com/neurodebian/dockerfiles'
 	[nginx]='https://github.com/nginxinc/docker-nginx'
 	[opensuse]='https://github.com/openSUSE/docker-containers-build'
