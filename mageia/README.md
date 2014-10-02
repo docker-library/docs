@@ -12,6 +12,8 @@ supported by [a nonprofit
 organisation](https://www.mageia.org/en/about/#mageia.org) of elected
 contributors.
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/mageia/logo.png)
+
 Our mission: to build great tools for people.
 
 Further than just delivering a secure, stable and sustainable operating system,

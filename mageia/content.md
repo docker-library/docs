@@ -6,6 +6,8 @@ supported by [a nonprofit
 organisation](https://www.mageia.org/en/about/#mageia.org) of elected
 contributors.
 
+%%LOGO%%
+
 Our mission: to build great tools for people.
 
 Further than just delivering a secure, stable and sustainable operating system,
