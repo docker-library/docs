@@ -15,12 +15,12 @@
 - [`1.3.1` (*1.3.1/Dockerfile*)](https://github.com/docker-library/golang/blob/435956495be76fd3c756240b7d147f507d36b22b/1.3.1/Dockerfile)
 - [`1.3.1-onbuild` (*1.3.1/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/9ff2ccca569f9525b023080540f1bb55f6b59d7f/1.3.1/onbuild/Dockerfile)
 - [`1.3.1-cross` (*1.3.1/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/8055f75d6b50483fb570b96cbcf10edf2fbde749/1.3.1/cross/Dockerfile)
-- [`1.3.2`, `1.3`, `1`, `latest` (*1.3.2/Dockerfile*)](https://github.com/docker-library/golang/blob/83d3f38479896f8fe550300d6fd58134246bf071/1.3.2/Dockerfile)
-- [`1.3.2-onbuild`, `1.3-onbuild`, `1-onbuild`, `onbuild` (*1.3.2/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/83d3f38479896f8fe550300d6fd58134246bf071/1.3.2/onbuild/Dockerfile)
-- [`1.3.2-cross`, `1.3-cross`, `1-cross`, `cross` (*1.3.2/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/83d3f38479896f8fe550300d6fd58134246bf071/1.3.2/cross/Dockerfile)
-- [`1.3.3` (*1.3.3/Dockerfile*)](https://github.com/docker-library/golang/blob/30f0b1517c8df30f74ad9dde46cac0cfffb2c2b9/1.3.3/Dockerfile)
-- [`1.3.3-onbuild` (*1.3.3/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/30f0b1517c8df30f74ad9dde46cac0cfffb2c2b9/1.3.3/onbuild/Dockerfile)
-- [`1.3.3-cross` (*1.3.3/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/30f0b1517c8df30f74ad9dde46cac0cfffb2c2b9/1.3.3/cross/Dockerfile)
+- [`1.3.2` (*1.3.2/Dockerfile*)](https://github.com/docker-library/golang/blob/83d3f38479896f8fe550300d6fd58134246bf071/1.3.2/Dockerfile)
+- [`1.3.2-onbuild` (*1.3.2/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/83d3f38479896f8fe550300d6fd58134246bf071/1.3.2/onbuild/Dockerfile)
+- [`1.3.2-cross` (*1.3.2/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/83d3f38479896f8fe550300d6fd58134246bf071/1.3.2/cross/Dockerfile)
+- [`1.3.3`, `1.3`, `1`, `latest` (*1.3.3/Dockerfile*)](https://github.com/docker-library/golang/blob/30f0b1517c8df30f74ad9dde46cac0cfffb2c2b9/1.3.3/Dockerfile)
+- [`1.3.3-onbuild`, `1.3-onbuild`, `1-onbuild`, `onbuild` (*1.3.3/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/30f0b1517c8df30f74ad9dde46cac0cfffb2c2b9/1.3.3/onbuild/Dockerfile)
+- [`1.3.3-cross`, `1.3-cross`, `1-cross`, `cross` (*1.3.3/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/30f0b1517c8df30f74ad9dde46cac0cfffb2c2b9/1.3.3/cross/Dockerfile)
 
 # What is Go?
 
