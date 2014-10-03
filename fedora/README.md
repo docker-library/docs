@@ -10,6 +10,8 @@ This image serves as the semi-official Fedora image (will be updated by a more
 up to date version along with fedora rel-eng approval to make it fully
 official).
 
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/fedora/logo.png)
+
 The `fedora:latest` tag will always point to the latest stable release (which
 is, at the time of this writing, `fedora:20`). The stable release is also tagged
 with the release code name (`fedora:heisenbug`). Fedora 21 and later won't have
