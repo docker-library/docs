@@ -36,8 +36,8 @@ This is the one environment variable that is required for you to use the MySQL i
 
 ### `MYSQL_USER`, `MYSQL_PASSWORD`
 
-These optional environment variables are used in conjunction to set both a MySQL user and password, which will subsequently be granted all permissions for the database. Note that if you only have one of these two environment variables, then neither will actually do anything - these two are meant to be used in conjunction with one another.
+These optional environment variables are used in conjunction to set both a MySQL user and password, which will subsequently be granted all permissions for the database specified by the optional `MYSQL_DATABASE` variable. Note that if you only have one of these two environment variables, then neither will actually do anything - these two are meant to be used in conjunction with one another.
 
 ### `MYSQL_DATABASE`
 
-This optional environment variable denotes the name of a database to create. If a user/password was supplied (via the `MYSQL_USER` and `MYSQL_PASSWORD` environment variables) then that user account will be granted (`GRANT ALL`) with the access to this database.
+This optional environment variable denotes the name of a database to create. If a user/password was supplied (via the `MYSQL_USER` and `MYSQL_PASSWORD` environment variables) then that user account will be granted (`GRANT ALL`) access to this database.
