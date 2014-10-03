@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`5.6.20`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/docker-mysql/blob/7461a52b43f06839a4d8723ae8841f4cb616b3d0/5.6/Dockerfile)
-- [`5.7.4-m14`, `5.7.4`, `5.7` (*5.7/Dockerfile*)](https://github.com/docker-library/docker-mysql/blob/7461a52b43f06839a4d8723ae8841f4cb616b3d0/5.7/Dockerfile)
+- [`5.6.21`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/docker-mysql/blob/8abf4685a211529d8e5bd08f7b58502f5c84b439/5.6/Dockerfile)
+- [`5.7.5-m15`, `5.7.5`, `5.7` (*5.7/Dockerfile*)](https://github.com/docker-library/docker-mysql/blob/8abf4685a211529d8e5bd08f7b58502f5c84b439/5.7/Dockerfile)
 
 # What is MySQL?
 
@@ -41,11 +41,11 @@ This is the one environment variable that is required for you to use the MySQL i
 
 ### `MYSQL_USER`, `MYSQL_PASSWORD`
 
-These optional environment variables are used in conjunction to set both a MySQL user and password, which will subsequently be granted all permissions for the database. Note that if you only have one of these two environment variables, then neither will actually do anything - these two are meant to be used in conjunction with one another.
+These optional environment variables are used in conjunction to set both a MySQL user and password, which will subsequently be granted all permissions for the database specified by the optional `MYSQL_DATABASE` variable. Note that if you only have one of these two environment variables, then neither will actually do anything - these two are meant to be used in conjunction with one another.
 
 ### `MYSQL_DATABASE`
 
-This optional environment variable denotes the name of a database to create. If a user/password was supplied (via the `MYSQL_USER` and `MYSQL_PASSWORD` environment variables) then that user account will be granted (`GRANT ALL`) with the access to this database.
+This optional environment variable denotes the name of a database to create. If a user/password was supplied (via the `MYSQL_USER` and `MYSQL_PASSWORD` environment variables) then that user account will be granted (`GRANT ALL`) access to this database.
 
 # User Feedback
 
