@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `1`, `1.7`, `1.7.5` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/3713a0157083eb4776e71f5a5aef4b2a5bc03ab1/Dockerfile)
+- [`latest`, `1`, `1.7`, `1.7.6` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/64ce8e442caea8b78ff5ebc144a527fc3f6d6d8b/Dockerfile)
 
 # What is Nginx?
 
