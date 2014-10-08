@@ -1,1 +1,1 @@
-MongoDB is a document database that provides high performance, high availability, and easy scalability.
+MongoDB document databases provide high availability and easy scalability.

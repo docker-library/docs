@@ -1,1 +1,1 @@
-PHP is a server-side scripting language designed for web development, but which can also be used as a general-purpose programming language.
+While designed for web development, the PHP scripting language also provides general-purpose use.

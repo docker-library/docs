@@ -1,1 +1,1 @@
-WordPress started as just a blogging system, but has evolved to be used as full content management system and so much more through thousands of plugins, widgets, and themes.
+The WordPress rich content management system can utilize plugins, widgets, and themes.

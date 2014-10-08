@@ -1,1 +1,1 @@
-Ruby on Rails is an open-source application framework written in Ruby. It emphasizes best practices such as convention over configuration, active record pattern, and the model-view-controller pattern.
+Rails is an open-source web application framework written in Ruby.
