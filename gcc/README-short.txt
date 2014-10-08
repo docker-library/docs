@@ -1,1 +1,1 @@
-The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Project that supports various programming languages.
+The GNU Compiler Collection is a compiling system that supports several languages.
