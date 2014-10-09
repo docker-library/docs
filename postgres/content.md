@@ -24,3 +24,7 @@ This image includes `EXPOSE 5432` (the postgres port), so standard container lin
 ## ... or via `psql`
 
     docker run -it --link some-postgres:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres'
+
+# How to extend this image
+
+If you would like to do additional initialization in an image derived from this one, add a `*.sh` script under `/docker-entrypoint-initdb.d` (creating the directory if necessary). After the entrypoint calls `initdb` to create the default `postgres` user and database, it will source any `*.sh` script found in that directory to do further initialization before starting the service. If you need to execute SQL commands as part of your initialization, the use of Postgres'' [single user mode](http://www.postgresql.org/docs/9.3/static/app-postgres.html#AEN90580) is highly recommended.
