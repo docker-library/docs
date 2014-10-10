@@ -19,7 +19,7 @@ This is the official CentOS image, and will be updated on a regular schedule or
 as needed for emergency fixes.
 
 The `centos:latest` tag will always point to the most recent version currently
-available, and `centos:6` will point to the latest version of the CentOS 6 tree.
+available, and `centos:centos6` will point to the latest version of the CentOS 6 tree.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/centos/logo.png)
 
