@@ -162,4 +162,8 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	
 	$repoTx = $ua->post($repoUrl => { Referer => $repoUrl } => form => $settingsBits);
 	die 'post to ' . $repoUrl . ' failed' unless $repoTx->success;
+	
+	if (my $alert = $repoTx->res->dom('.alert-error')) {
+		die 'update to ' . $repoUrl . ' failed:' . "\n" . $alert->all_text;
+	}
 }
