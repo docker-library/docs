@@ -1,18 +1,18 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`2.6.17`, `2.6` (*2.6.17/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.6.17/Dockerfile)
-- [`2.8.10` (*2.8.10/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.10/Dockerfile)
-- [`2.8.11` (*2.8.11/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.11/Dockerfile)
-- [`2.8.12` (*2.8.12/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.12/Dockerfile)
-- [`2.8.13` (*2.8.13/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.13/Dockerfile)
-- [`2.8.14` (*2.8.14/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.14/Dockerfile)
-- [`2.8.15` (*2.8.15/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.15/Dockerfile)
-- [`2.8.16` (*2.8.16/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.16/Dockerfile)
-- [`2.8.17`, `2.8`, `latest` (*2.8.17/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.17/Dockerfile)
-- [`2.8.6` (*2.8.6/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.6/Dockerfile)
-- [`2.8.7` (*2.8.7/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.7/Dockerfile)
-- [`2.8.8` (*2.8.8/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.8/Dockerfile)
-- [`2.8.9` (*2.8.9/Dockerfile*)](https://github.com/docker-library/redis/blob/d9ec31cfa11cfaa9bf3db6b26a59b8b7402f81dc/2.8.9/Dockerfile)
+- [`2.6.17`, `2.6` (*2.6.17/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.6.17/Dockerfile)
+- [`2.8.10` (*2.8.10/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.10/Dockerfile)
+- [`2.8.11` (*2.8.11/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.11/Dockerfile)
+- [`2.8.12` (*2.8.12/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.12/Dockerfile)
+- [`2.8.13` (*2.8.13/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.13/Dockerfile)
+- [`2.8.14` (*2.8.14/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.14/Dockerfile)
+- [`2.8.15` (*2.8.15/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.15/Dockerfile)
+- [`2.8.16` (*2.8.16/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.16/Dockerfile)
+- [`2.8.17`, `2.8`, `latest` (*2.8.17/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.17/Dockerfile)
+- [`2.8.6` (*2.8.6/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.6/Dockerfile)
+- [`2.8.7` (*2.8.7/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.7/Dockerfile)
+- [`2.8.8` (*2.8.8/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.8/Dockerfile)
+- [`2.8.9` (*2.8.9/Dockerfile*)](https://github.com/docker-library/redis/blob/99c172e82ed81af441e13dd48dda2729e19493bc/2.8.9/Dockerfile)
 
 # What is Redis?
 
