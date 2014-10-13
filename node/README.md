@@ -1,11 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`0.10.32`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/docker-library/node/blob/495f43c34ba06ed9fffa1ac59a763ac450b52ee1/0.10/Dockerfile)
+- [`0.10.32`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/docker-library/node/blob/824c3161f9a7fa393cb60582edbbd713a0d08ceb/0.10/Dockerfile)
 - [`0.10.32-onbuild`, `0.10-onbuild`, `0-onbuild`, `onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/ac05e7f96c477223f0d2da1817e84403363a65e8/0.10/onbuild/Dockerfile)
-- [`0.11.14`, `0.11` (*0.11/Dockerfile*)](https://github.com/docker-library/node/blob/495f43c34ba06ed9fffa1ac59a763ac450b52ee1/0.11/Dockerfile)
+- [`0.10.32-slim`, `0.10-slim`, `0-slim`, `slim` (*0.10/slim/Dockerfile*)](https://github.com/docker-library/node/blob/824c3161f9a7fa393cb60582edbbd713a0d08ceb/0.10/slim/Dockerfile)
+- [`0.11.14`, `0.11` (*0.11/Dockerfile*)](https://github.com/docker-library/node/blob/824c3161f9a7fa393cb60582edbbd713a0d08ceb/0.11/Dockerfile)
 - [`0.11.14-onbuild`, `0.11-onbuild` (*0.11/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/ac05e7f96c477223f0d2da1817e84403363a65e8/0.11/onbuild/Dockerfile)
-- [`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/docker-library/node/blob/4acda49c86a7e024c29f882a6d7f4bbc6c2e412c/0.8/Dockerfile)
+- [`0.11.14-slim`, `0.11-slim` (*0.11/slim/Dockerfile*)](https://github.com/docker-library/node/blob/824c3161f9a7fa393cb60582edbbd713a0d08ceb/0.11/slim/Dockerfile)
+- [`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/docker-library/node/blob/824c3161f9a7fa393cb60582edbbd713a0d08ceb/0.8/Dockerfile)
 - [`0.8.28-onbuild`, `0.8-onbuild` (*0.8/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/ac05e7f96c477223f0d2da1817e84403363a65e8/0.8/onbuild/Dockerfile)
+- [`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/docker-library/node/blob/824c3161f9a7fa393cb60582edbbd713a0d08ceb/0.8/slim/Dockerfile)
 
 # What is Node.js?
 
