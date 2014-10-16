@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`8.4.22`, `8.4`, `8` (*8.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/33b8046b5f68b465a3c04fcc428e8923bcb7cd12/8.4/Dockerfile)
-- [`9.0.18`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/33b8046b5f68b465a3c04fcc428e8923bcb7cd12/9.0/Dockerfile)
-- [`9.1.14`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/33b8046b5f68b465a3c04fcc428e8923bcb7cd12/9.1/Dockerfile)
-- [`9.2.9`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/33b8046b5f68b465a3c04fcc428e8923bcb7cd12/9.2/Dockerfile)
-- [`9.3.5`, `9.3`, `9`, `latest` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/33b8046b5f68b465a3c04fcc428e8923bcb7cd12/9.3/Dockerfile)
-- [`9.4-beta2`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/94aee2022d2014230fad3d054c048678137281d1/9.4/Dockerfile)
+- [`8.4.22`, `8.4`, `8` (*8.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/4603177ae330d135dea953b42aec28fe1eef514e/8.4/Dockerfile)
+- [`9.0.18`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/4603177ae330d135dea953b42aec28fe1eef514e/9.0/Dockerfile)
+- [`9.1.14`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/4603177ae330d135dea953b42aec28fe1eef514e/9.1/Dockerfile)
+- [`9.2.9`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/4603177ae330d135dea953b42aec28fe1eef514e/9.2/Dockerfile)
+- [`9.3.5`, `9.3`, `9`, `latest` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/4603177ae330d135dea953b42aec28fe1eef514e/9.3/Dockerfile)
+- [`9.4-beta3`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/69a30d9e6f12c57296b11d3511127210466f0197/9.4/Dockerfile)
 
 # What is PostgreSQL?
 

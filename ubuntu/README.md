@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`12.04.5`, `12.04`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/ec15aea17b31eda47dc22f0c6ebbfebbe6094c1f/precise/Dockerfile)
-- [`14.04.1`, `14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/ec15aea17b31eda47dc22f0c6ebbfebbe6094c1f/trusty/Dockerfile)
-- [`14.10`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/ec15aea17b31eda47dc22f0c6ebbfebbe6094c1f/utopic/Dockerfile)
+- [`12.04.5`, `12.04`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a138de6460b4fc33daf947b85fc3d902cca7ff77/precise/Dockerfile)
+- [`14.04.1`, `14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a138de6460b4fc33daf947b85fc3d902cca7ff77/trusty/Dockerfile)
+- [`14.10`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a138de6460b4fc33daf947b85fc3d902cca7ff77/utopic/Dockerfile)
 
 # Ubuntu
 
