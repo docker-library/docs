@@ -24,6 +24,7 @@ declare -A otherRepos=(
 	[centos]='https://github.com/CentOS/sig-cloud-instance-images'
 	[cirros]='https://github.com/ewindisch/docker-cirros'
 	[clojure]='https://github.com/Quantisan/docker-clojure'
+	[crate]='https://github.com/crate/docker-crate'
 	[crux]='https://github.com/therealprologic/docker-crux'
 	[debian]='https://github.com/tianon/docker-brew-debian'
 	[docker-dev]='https://github.com/docker/docker'
@@ -61,6 +62,8 @@ for repo in "${repos[@]}"; do
 			mailingList=' '
 		fi
 		
+		userFeedback="$(cat "$repo/user-feedback.md" 2>/dev/null || cat 'user-feedback.md')"
+		
 		license="$(cat "$repo/license.md" 2>/dev/null || true)"
 		if [ "$license" ]; then
 			license=$'\n\n''# License'$'\n\n'"$license"
@@ -85,6 +88,9 @@ for repo in "${repos[@]}"; do
 		
 		echo '  LICENSE => '"$repo"'/license.md'
 		replace_field "$repo" 'LICENSE' "$license"
+		
+		echo '  USER_FEEDBACK => '"$repo"'/user-feedback.md'
+		replace_field "$repo" 'USER_FEEDBACK' "$userFeedback"
 		
 		echo '  MAILING_LIST => "'"$mailingList"'"'
 		replace_field "$repo" 'MAILING_LIST' "$mailingList" '\s*'
