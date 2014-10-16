@@ -10,6 +10,12 @@
 - [`0.8.28-onbuild`, `0.8-onbuild` (*0.8/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/ac05e7f96c477223f0d2da1817e84403363a65e8/0.8/onbuild/Dockerfile)
 - [`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/docker-library/node/blob/824c3161f9a7fa393cb60582edbbd713a0d08ceb/0.8/slim/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Node.js?
 
 Node.js is a software platform for scalable server-side and networking

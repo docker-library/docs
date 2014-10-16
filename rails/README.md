@@ -3,6 +3,12 @@
 - [`4.1.6`, `4.1`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/7e32ae82ec83b21bffe89ae2b13fb4ad6ca60435/Dockerfile)
 - [`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/7e32ae82ec83b21bffe89ae2b13fb4ad6ca60435/onbuild/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Ruby on Rails?
 
 Ruby on Rails or, simply, Rails is an open source web application framework

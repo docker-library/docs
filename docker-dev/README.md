@@ -3,6 +3,12 @@
 - [`latest`, `v1.2.0`, `v1.2` (*Dockerfile*)](https://github.com/docker/docker/blob/v1.2.0/Dockerfile)
 - [`v1.0.1`, `v1.0` (*Dockerfile*)](https://github.com/docker/docker/blob/v1.0.1/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Docker?
 
 Docker is an open-source project that automates the deployment of applications

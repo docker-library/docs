@@ -4,6 +4,12 @@
 - [`dev` (*9000/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/10eae9359611104c013e82206104b40f20fac377/9000/Dockerfile)
 - [`1.7-onbuild`, `1.7.16-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/10eae9359611104c013e82206104b40f20fac377/1.7/onbuild/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is JRuby?
 
 JRuby (http://www.jruby.org) is an implementation of Ruby

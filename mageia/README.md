@@ -4,6 +4,12 @@
 - [`cauldron` (*cauldron/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/603a75ec98dfd7c26ed85108b309d4e5f39ded91/cauldron/Dockerfile)
 - [`3` (*3/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/603a75ec98dfd7c26ed85108b309d4e5f39ded91/3/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/mageia`)](https://github.com/docker-library/official-images/blob/master/library/mageia)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Mageia?
 
 [Mageia](http://www.mageia.org) is a GNU/Linux-based, Free Software operating

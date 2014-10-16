@@ -4,6 +4,12 @@
 - [`centos6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/8717e33ea5432ecb33d7ecefe8452a973715d037/docker/Dockerfile)
 - [`centos5` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/2e5a9c4e8b7191b393822e4b9e98820db5638a77/docker/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/centos`)](https://github.com/docker-library/official-images/blob/master/library/centos)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # CentOS
 
 CentOS (abbreviated from Community Enterprise Operating System) is a Linux

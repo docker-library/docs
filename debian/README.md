@@ -11,6 +11,12 @@
 - [`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/8c304e884f4b5b418dfdae524099ca6081a9c09a/debian/rc-buggy/Dockerfile)
 - [`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/8c304e884f4b5b418dfdae524099ca6081a9c09a/debian/experimental/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/debian`)](https://github.com/docker-library/official-images/blob/master/library/debian)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Debian?
 
 Debian is an operating system which is composed primarily of free and

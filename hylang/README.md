@@ -2,6 +2,12 @@
 
 - [`latest`, `0`, `0.10`, `0.10.1` (*Dockerfile*)](https://github.com/hylang/hy/blob/0.10.1/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/hylang`)](https://github.com/docker-library/official-images/blob/master/library/hylang)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Hy?
 
 Hy (a.k.a., Hylang) is a dialect of the Lisp programming language designed to

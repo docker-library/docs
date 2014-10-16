@@ -7,6 +7,12 @@
 - [`9.3.5`, `9.3`, `9`, `latest` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/4603177ae330d135dea953b42aec28fe1eef514e/9.3/Dockerfile)
 - [`9.4-beta3`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/69a30d9e6f12c57296b11d3511127210466f0197/9.4/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is PostgreSQL?
 
 PostgreSQL, often simply "Postgres", is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance. As a database server, its primary function is to store data, securely and supporting best practices, and retrieve it later, as requested by other software applications, be it those on the same computer or those running on another computer across a network (including the Internet). It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. Recent versions also provide replication of the database itself for security and scalability.

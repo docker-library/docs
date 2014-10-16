@@ -8,6 +8,12 @@
 - [`jessie`, `nd80` (*dockerfiles/jessie/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/6ee7033cb630b4a72fa3a4a56ad6046405efacdf/dockerfiles/jessie/Dockerfile)
 - [`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/6ee7033cb630b4a72fa3a4a56ad6046405efacdf/dockerfiles/sid/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is NeuroDebian?
 
 NeuroDebian provides a large collection of popular neuroscience research

@@ -4,6 +4,12 @@
 - [`21` (*Dockerfile*)](https://github.com/lsm5/docker-brew-fedora/blob/897d815f95a4c31d839050b73bf6e87ae1647848/Dockerfile)
 - [`rawhide` (*Dockerfile*)](https://github.com/lsm5/docker-brew-fedora/blob/c713b5ab5373e80f8e2cecc52390ff7328922417/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/fedora`)](https://github.com/docker-library/official-images/blob/master/library/fedora)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # Fedora
 
 This image serves as the semi-official Fedora image (will be updated by a more

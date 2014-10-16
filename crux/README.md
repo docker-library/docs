@@ -2,6 +2,12 @@
 
 - [`latest`, `3.0` (*Dockerfile*)](https://github.com/therealprologic/docker-crux/blob/9ed6ecae582c58138cbb0c1f95eaa5c620f0fc7e/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/crux`)](https://github.com/docker-library/official-images/blob/master/library/crux)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is CRUX?
 
 CRUX is a lightweight Linux distribution for the x86-64 architecture targeted at

@@ -5,6 +5,12 @@
 - [`ubuntu-12.04` (*Dockerfile*)](https://github.com/jpetazzo/docker-busybox/blob/4f6cb64c3b3255c58021dc75100da0088796a108/Dockerfile)
 - [`ubuntu-14.04` (*Dockerfile*)](https://github.com/jpetazzo/docker-busybox/blob/ca435164f45c40d761fad9ef9b5a76a6ba0d5f1a/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/busybox`)](https://github.com/docker-library/official-images/blob/master/library/busybox)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is BusyBox? The Swiss Army Knife of Embedded Linux
 
 At about 2.5 Mb in size, [BusyBox](http://www.busybox.net/) is a very good

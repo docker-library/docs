@@ -4,6 +4,12 @@
 - [`14.04.1`, `14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a138de6460b4fc33daf947b85fc3d902cca7ff77/trusty/Dockerfile)
 - [`14.10`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/a138de6460b4fc33daf947b85fc3d902cca7ff77/utopic/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # Ubuntu
 
 ## sources.list

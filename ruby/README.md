@@ -7,6 +7,12 @@
 - [`2.1.3`, `2.1`, `2`, `latest` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/50295f3a139273601b5f2df29060ee2788f067d3/2.1/Dockerfile)
 - [`2.1.3-onbuild`, `2.1-onbuild`, `2-onbuild`, `onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/50295f3a139273601b5f2df29060ee2788f067d3/2.1/onbuild/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Ruby?
 
 Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source

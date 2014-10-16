@@ -4,6 +4,12 @@
 - [`14.04`, `trusty`, `latest` (*sbin-init/ubuntu/upstart/14.04/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/4d24a12b54b75b3e0904d8a285900d88d3326361/sbin-init/ubuntu/upstart/14.04/Dockerfile)
 - [`14.10`, `utopic` (*sbin-init/ubuntu/upstart/14.10/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/4d24a12b54b75b3e0904d8a285900d88d3326361/sbin-init/ubuntu/upstart/14.10/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/ubuntu-upstart`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-upstart)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Upstart?
 
 Upstart is an event-based replacement for the traditional init daemon – the

@@ -3,6 +3,12 @@
 - [`latest`, `1.565.3` (*Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/b2b442e360cf92317326fa4e325a81ab1f11a422/Dockerfile)
 - [`weekly`, `1.583` (*Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/f969422940ce4b2cd0bbbdcf31ea96fa2485e86c/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # Jenkins
 
 The Jenkins Continuous Integration and Delivery server.
