@@ -4,6 +4,12 @@
 - [`0.6.9` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.6.9-fixed/Dockerfile)
 - [`0.7.3` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.7.3/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # Docker Registry
 
 See comprehensive documentation on our [GitHub

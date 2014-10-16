@@ -7,6 +7,12 @@
 - [`3.4.2`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/python/blob/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/Dockerfile)
 - [`3.4.2-onbuild`, `3.4-onbuild`, `3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/onbuild/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Python?
 
 Python is an interpreted, interactive, object-oriented, open-source programming

@@ -5,6 +5,12 @@
 - [`4.8.3`, `4.8` (*4.8/Dockerfile*)](https://github.com/docker-library/gcc/blob/ba6f069df8e6c838d0465b09215e96f8d5d65269/4.8/Dockerfile)
 - [`4.9.1`, `4.9`, `latest` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/ba6f069df8e6c838d0465b09215e96f8d5d65269/4.9/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is GCC?
 
 The GNU Compiler Collection (GCC) is a compiler system produced by the GNU

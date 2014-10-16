@@ -7,6 +7,12 @@
 - [`5.6.1-cli`, `5.6-cli`, `5-cli`, `cli`, `5.6.1`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/524908779e1de87ab8fbd50f544c798782d8fc06/5.6/Dockerfile)
 - [`5.6.1-apache`, `5.6-apache`, `5-apache`, `apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/524908779e1de87ab8fbd50f544c798782d8fc06/5.6/apache/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is PHP?
 
 PHP is a server-side scripting language designed for web development, but which

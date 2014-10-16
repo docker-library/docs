@@ -8,6 +8,12 @@
 - [`1.3.3-cross`, `1.3-cross`, `1-cross`, `cross` (*1.3/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/4d4b14164e50c089a09b9364697749dc7f764824/1.3/cross/Dockerfile)
 - [`1.3.3-wheezy`, `1.3-wheezy`, `1-wheezy`, `wheezy` (*1.3/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/af4e450a47a99f9a4f56225cdf598f552907d946/1.3/wheezy/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Go?
 
 Go (a.k.a., Golang) is a programming language first developed at Google. It is a

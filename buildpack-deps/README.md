@@ -3,6 +3,12 @@
 - [`jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/docker-library/docker-buildpack-deps/blob/cbff5f1a5a38e09caff59a7138b1d4520e24f54a/jessie/Dockerfile)
 - [`wheezy` (*wheezy/Dockerfile*)](https://github.com/docker-library/docker-buildpack-deps/blob/cbff5f1a5a38e09caff59a7138b1d4520e24f54a/wheezy/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is `buildpack-deps`?
 
 In spirit, `buildpack-deps` is similar to [Heroku's stack

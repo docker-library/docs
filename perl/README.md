@@ -5,6 +5,12 @@
 - [`latest-threaded`, `5-threaded`, `5.20-threaded`, `5.20.1-threaded` (*5.020.001-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20141003.0/5.020.001-64bit,threaded/Dockerfile)
 - [`5.18-threaded`, `5.18.4-threaded` (*5.018.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20141003.0/5.018.004-64bit,threaded/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/perl`)](https://github.com/docker-library/official-images/blob/master/library/perl)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Perl?
 
 Perl is a high-level, general-purpose, interpreted, dynamic programming

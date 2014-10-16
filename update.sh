@@ -89,8 +89,11 @@ for repo in "${repos[@]}"; do
 		echo '  MAILING_LIST => "'"$mailingList"'"'
 		replace_field "$repo" 'MAILING_LIST' "$mailingList" '\s*'
 		
-		echo '  REPO => "'"$gitRepo"'"'
-		replace_field "$repo" 'REPO' "$gitRepo"
+		echo '  REPO => "'"$repo"'"'
+		replace_field "$repo" 'REPO' "$repo"
+		
+		echo '  GITHUB_REPO => "'"$gitRepo"'"'
+		replace_field "$repo" 'GITHUB_REPO' "$gitRepo"
 		
 		echo
 	else

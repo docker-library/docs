@@ -2,6 +2,12 @@
 
 - [`latest`, `0.3.0` (*Dockerfile*)](https://github.com/ewindisch/docker-cirros/blob/1cded459668e8b9dbf4ef976c94c05add9bbd8e9/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/cirros`)](https://github.com/docker-library/official-images/blob/master/library/cirros)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is CirrOS?
 
 CirrOS is a Tiny OS that specializes in running on a cloud.

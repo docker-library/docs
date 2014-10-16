@@ -2,6 +2,12 @@
 
 - [`latest` (*Dockerfile*)](https://github.com/docker-library/hello-world/blob/b7a78b7ccca62cc478919b101f3ab1334899df2b/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/hello-world`)](https://github.com/docker-library/official-images/blob/master/library/hello-world)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # Example output
 
     $ docker run hello-world

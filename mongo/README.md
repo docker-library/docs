@@ -5,6 +5,12 @@
 - [`2.6.5`, `2.6`, `2`, `latest` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/bebabb72a2785d7b78309bf6be6c82bab882574b/2.6/Dockerfile)
 - [`2.7.7`, `2.7` (*2.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/2881be3e0d85b3600bda8d45050a2ceb3f7bb12b/2.7/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is MongoDB?
 
 MongoDB (from "humongous") is a cross-platform document-oriented database. Classified as a NoSQL database, MongoDB eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas (MongoDB calls the format BSON), making the integration of data in certain types of applications easier and faster. Released under a combination of the GNU Affero General Public License and the Apache License, MongoDB is free and open-source software.

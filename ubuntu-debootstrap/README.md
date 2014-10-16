@@ -6,6 +6,12 @@
 - [`14.10`, `utopic` (*14.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/f5662c420fe19351030b3fab6580cf69528fbf24/14.10/Dockerfile)
 - [`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/f5662c420fe19351030b3fab6580cf69528fbf24/devel/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/ubuntu-debootstrap`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-debootstrap)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # `ubuntu-debootstrap`
 
 This image is the result of running `debootstrap --variant=minbase` against the

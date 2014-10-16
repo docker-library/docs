@@ -7,6 +7,12 @@
 - [`openjdk-8u40-jdk`, `openjdk-8u40`, `openjdk-8-jdk`, `openjdk-8`, `8u40-jdk`, `8u40`, `8-jdk`, `8` (*openjdk-8-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/9b3b7ed1bdd754fa61b5dd86c0bcd3e3400c6a33/openjdk-8-jdk/Dockerfile)
 - [`openjdk-8u40-jre`, `openjdk-8-jre`, `8u40-jre`, `8-jre` (*openjdk-8-jre/Dockerfile*)](https://github.com/docker-library/java/blob/bcf0fea5a62cb2a75015e2dc2ce05bbc89afcd7d/openjdk-8-jre/Dockerfile)
 
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
 # What is Java?
 
 Java is a concurrent, class-based, object-oriented language specifically
