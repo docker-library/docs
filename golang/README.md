@@ -37,7 +37,7 @@ the lines of the following will compile and run your project:
     FROM golang:1.3.1-onbuild
 
 This image includes multiple `ONBUILD` triggers which should cover most
-applications. The build will `COPY . /usr/src/app`, `RUN go get -d -v` and `RUN
+applications. The build will `COPY . /usr/src/app`, `RUN go get -d -v`, and `RUN
 go install -v`.
 
 This image also includes the `CMD ["app"]` instruction which is the default command 
