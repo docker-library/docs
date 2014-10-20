@@ -5,7 +5,7 @@
 
 For more information about this image and its history, please see the [relevant
 manifest file
-(`library/hipache`)](https://github.com/docker-library/official-images/blob/master/library/hipache)
+(`library/php-zendserver`)](https://github.com/docker-library/official-images/blob/master/library/php-zendserver)
 in the [`docker-library/official-images` GitHub
 repo](https://github.com/docker-library/official-images).
 
