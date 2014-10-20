@@ -14,7 +14,7 @@ Crate is an Elastic SQL Data Store. Distributed by design, Crate makes
 centralized database servers obsolete. Realtime non-blocking SQL engine with
 full blown search. Highly available, massively scalable yet simple to use.
 
->[Crate](https:/crate.io/)
+> [Crate](https:/crate.io/)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/crate/logo.png)
 
