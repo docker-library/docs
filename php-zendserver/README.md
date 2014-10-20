@@ -1,3 +1,15 @@
+# Supported tags and respective `Dockerfile` links
+
+- [`latest`, `5.5` (*Dockerfile*)](https://github.com/zendtech/php-zendserver/blob/master/5.5/Dockerfile)
+- [`5.4` (*Dockerfile*)](https://github.com/zendtech/php-zendserver/blob/master/5.4/Dockerfile)
+
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/hipache`)](https://github.com/docker-library/official-images/blob/master/library/hipache)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
+
+
 What is Zend Server?
 ==================
 
