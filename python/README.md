@@ -2,8 +2,8 @@
 
 - [`2.7.8`, `2.7`, `2` (*2.7/Dockerfile*)](https://github.com/docker-library/python/blob/dbe3e241f4c3263a81a888896f5126861807b3db/2.7/Dockerfile)
 - [`2.7.8-onbuild`, `2.7-onbuild`, `2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/a30ed3056ee58ca3df4fd5b51e3d30849dcb7e32/2.7/onbuild/Dockerfile)
-- [`3.3.5`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/python/blob/5da3b09cc56f1a431c912dcb1dc1d72efbd17409/3.3/Dockerfile)
-- [`3.3.5-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/a30ed3056ee58ca3df4fd5b51e3d30849dcb7e32/3.3/onbuild/Dockerfile)
+- [`3.3.6`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/python/blob/8dfe392dff2ffdda90672857e027ff3ee142f9ff/3.3/Dockerfile)
+- [`3.3.6-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/8dfe392dff2ffdda90672857e027ff3ee142f9ff/3.3/onbuild/Dockerfile)
 - [`3.4.2`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/python/blob/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/Dockerfile)
 - [`3.4.2-onbuild`, `3.4-onbuild`, `3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/e236058d5c3601af1d38ba27b4fe217c5d678c02/3.4/onbuild/Dockerfile)
 
