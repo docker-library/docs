@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`10.04.4`, `10.04`, `lucid` (*10.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/f5662c420fe19351030b3fab6580cf69528fbf24/10.04/Dockerfile)
-- [`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/f5662c420fe19351030b3fab6580cf69528fbf24/12.04/Dockerfile)
-- [`14.04.1`, `14.04`, `trusty`, `latest` (*14.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/f5662c420fe19351030b3fab6580cf69528fbf24/14.04/Dockerfile)
-- [`14.10`, `utopic` (*14.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/f5662c420fe19351030b3fab6580cf69528fbf24/14.10/Dockerfile)
-- [`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/f5662c420fe19351030b3fab6580cf69528fbf24/devel/Dockerfile)
+- [`10.04.4`, `10.04`, `lucid` (*10.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/914295f4d57271f13bb4a4f3c02f01320ce139c1/10.04/Dockerfile)
+- [`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/914295f4d57271f13bb4a4f3c02f01320ce139c1/12.04/Dockerfile)
+- [`14.04.1`, `14.04`, `trusty`, `latest` (*14.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/914295f4d57271f13bb4a4f3c02f01320ce139c1/14.04/Dockerfile)
+- [`14.10`, `utopic` (*14.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/914295f4d57271f13bb4a4f3c02f01320ce139c1/14.10/Dockerfile)
+- [`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/914295f4d57271f13bb4a4f3c02f01320ce139c1/devel/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
