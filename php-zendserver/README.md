@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `5.5` (*Dockerfile*)](https://github.com/zendtech/php-zendserver/blob/master/5.5/Dockerfile)
-- [`5.4` (*Dockerfile*)](https://github.com/zendtech/php-zendserver/blob/master/5.4/Dockerfile)
+- [`latest`, `7.0-php5.5`, `5.5` (*Dockerfile*)](https://github.com/zendtech/php-zendserver/blob/master/7.0/5.5/Dockerfile)
+- [`5.4`, `7.0-php5.4 (*Dockerfile*)](https://github.com/zendtech/php-zendserver/blob/master/7.0/5.4/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
