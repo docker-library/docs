@@ -25,7 +25,7 @@ applications. The build will `COPY . /usr/src/app`, `RUN go get -d -v`, and `RUN
 go install -v`.
 
 This image also includes the `CMD ["app"]` instruction which is the default command 
-when running the image.
+when running the image without arguments.
 
 You can then build and run the Docker image:
 
