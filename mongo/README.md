@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 - [`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/2881be3e0d85b3600bda8d45050a2ceb3f7bb12b/2.2/Dockerfile)
-- [`2.4.11`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/2881be3e0d85b3600bda8d45050a2ceb3f7bb12b/2.4/Dockerfile)
+- [`2.4.12`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/6fcf234e0bd9b50cfbac267ccb451cb8500c8dfc/2.4/Dockerfile)
 - [`2.6.5`, `2.6`, `2`, `latest` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/bebabb72a2785d7b78309bf6be6c82bab882574b/2.6/Dockerfile)
 - [`2.7.7`, `2.7` (*2.7/Dockerfile*)](https://github.com/docker-library/mongo/blob/2881be3e0d85b3600bda8d45050a2ceb3f7bb12b/2.7/Dockerfile)
 
@@ -13,9 +13,21 @@ repo](https://github.com/docker-library/official-images).
 
 # What is MongoDB?
 
-MongoDB (from "humongous") is a cross-platform document-oriented database. Classified as a NoSQL database, MongoDB eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas (MongoDB calls the format BSON), making the integration of data in certain types of applications easier and faster. Released under a combination of the GNU Affero General Public License and the Apache License, MongoDB is free and open-source software.
+MongoDB (from "humongous") is a cross-platform document-oriented database.
+Classified as a NoSQL database, MongoDB eschews the traditional table-based
+relational database structure in favor of JSON-like documents with dynamic
+schemas (MongoDB calls the format BSON), making the integration of data in
+certain types of applications easier and faster. Released under a combination of
+the GNU Affero General Public License and the Apache License, MongoDB is free
+and open-source software.
 
-First developed by the software company 10gen (now MongoDB Inc.) in October 2007 as a component of a planned platform as a service product, the company shifted to an open source development model in 2009, with 10gen offering commercial support and other services. Since then, MongoDB has been adopted as backend software by a number of major websites and services, including Craigslist, eBay, Foursquare, SourceForge, Viacom, and the New York Times, among others. MongoDB is the most popular NoSQL database system.
+First developed by the software company 10gen (now MongoDB Inc.) in October 2007
+as a component of a planned platform as a service product, the company shifted
+to an open source development model in 2009, with 10gen offering commercial
+support and other services. Since then, MongoDB has been adopted as backend
+software by a number of major websites and services, including Craigslist, eBay,
+Foursquare, SourceForge, Viacom, and the New York Times, among others. MongoDB
+is the most popular NoSQL database system.
 
 > [wikipedia.org/wiki/MongoDB](https://en.wikipedia.org/wiki/MongoDB)
 
@@ -27,7 +39,9 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 
     docker run --name some-mongo -d mongo
 
-This image includes `EXPOSE 27017` (the mongo port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
+This image includes `EXPOSE 27017` (the mongo port), so standard container
+linking will make it automatically available to the linked containers (as the
+following examples illustrate).
 
 ## connect to it from an application
 
