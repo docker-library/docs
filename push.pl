@@ -1,6 +1,7 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 use strict;
 use warnings;
+use 5.010;
 use open ':encoding(utf8)';
 
 use File::Temp;
@@ -163,7 +164,9 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	$repoTx = $ua->post($repoUrl => { Referer => $repoUrl } => form => $settingsBits);
 	die 'post to ' . $repoUrl . ' failed' unless $repoTx->success;
 	
-	if (my $alert = $repoTx->res->dom('.alert-error')) {
-		die 'update to ' . $repoUrl . ' failed:' . "\n" . $alert->all_text;
+	my $alert = $repoTx->res->dom('.alert-error');
+	if ($alert->size) {
+		my $text = trim $alert->pluck('all_text');
+		die 'update to ' . $repoUrl . ' failed:' . "\n" . $text if $text;
 	}
 }
