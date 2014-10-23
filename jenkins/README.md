@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `1.565.3` (*Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/b2b442e360cf92317326fa4e325a81ab1f11a422/Dockerfile)
-- [`weekly`, `1.583` (*Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/f969422940ce4b2cd0bbbdcf31ea96fa2485e86c/Dockerfile)
+- [`latest`, `1.565.3` (*Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/f744bdb73fbfc701a52105460511284a470bcfb8/Dockerfile)
+- [`weekly`, `1.585` (*Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/f4fff43208976e7c1b01e422512522d48338267a/Dockerfile)
+- [`1.584` (*Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/1d0405229b5f25ff52b5930a56488470ce386efc/Dockerfile)
+- [`1.583` (*Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/f969422940ce4b2cd0bbbdcf31ea96fa2485e86c/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
