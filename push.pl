@@ -123,11 +123,11 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	
 	my $shortFile = $repoName . '/README-short.txt';
 	my $short = slurp $shortFile or warn 'missing ' . $shortFile;
-	$short = trim $short;
+	$short = trim(decode('UTF-8', $short));
 	
 	my $longFile = $repoName . '/README.md';
 	my $long = slurp $longFile or warn 'missing ' . $longFile;
-	$long = trim $long;
+	$long = trim(decode('UTF-8', $long));
 	
 	my $repoUrl = 'https://registry.hub.docker.com' . $repo . '/settings/';
 	my $repoTx = $ua->get($repoUrl);
