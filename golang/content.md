@@ -19,15 +19,17 @@ the build and runtime environment. In your `Dockerfile`, writing something along
 the lines of the following will compile and run your project:
 
     FROM golang:1.3.1-onbuild
-    CMD ["./myapp"]
 
 This image includes multiple `ONBUILD` triggers which should cover most
 applications. The build will `COPY . /usr/src/app`, `RUN go get -d -v`, and `RUN
-go build -v`.
+go install -v`.
 
-You can then run and build the Docker image:
+This image also includes the `CMD ["app"]` instruction which is the default command 
+when running the image without arguments.
 
-    docker build -t my-golang-app
+You can then build and run the Docker image:
+
+    docker build -t my-golang-app .
     docker run -it --rm --name my-running-app my-golang-app
 
 ## Compile your app inside the Docker container
