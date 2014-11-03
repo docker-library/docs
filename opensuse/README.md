@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `13.1`, `bottle` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/fc6453ff4ce5d67ed77aad572acbf311214b41dc/docker/Dockerfile)
+- [`latest`, `13.2` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/4a69fad7e0ce58bca406092938bd295c3c885858/docker/Dockerfile)
+- [`13.1`, `bottle` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/fc6453ff4ce5d67ed77aad572acbf311214b41dc/docker/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
