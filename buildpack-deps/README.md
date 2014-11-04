@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/docker-library/docker-buildpack-deps/blob/cbff5f1a5a38e09caff59a7138b1d4520e24f54a/jessie/Dockerfile)
-- [`wheezy` (*wheezy/Dockerfile*)](https://github.com/docker-library/docker-buildpack-deps/blob/cbff5f1a5a38e09caff59a7138b1d4520e24f54a/wheezy/Dockerfile)
+- [`jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/docker-library/docker-buildpack-deps/blob/a201b127ddf29f47738a9fd04b2f004eb41b009f/jessie/Dockerfile)
+- [`wheezy` (*wheezy/Dockerfile*)](https://github.com/docker-library/docker-buildpack-deps/blob/a201b127ddf29f47738a9fd04b2f004eb41b009f/wheezy/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file

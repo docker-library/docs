@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `centos7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/af7a1b9f8f30744360a10fe44c53a1591bef26f9/docker/Dockerfile)
-- [`centos6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/8717e33ea5432ecb33d7ecefe8452a973715d037/docker/Dockerfile)
-- [`centos5` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/2e5a9c4e8b7191b393822e4b9e98820db5638a77/docker/Dockerfile)
+- [`latest`, `centos7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/b28be06c817337e83103afa179965ac47dcc5e7c/docker/Dockerfile)
+- [`centos6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/d22f4c466eeba45c1593b5d13d8636ff23bdf062/docker/Dockerfile)
+- [`centos5` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/f8d27d6f2581846042f303cf5a318f42588d515d/docker/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file

@@ -3,7 +3,7 @@
 - [`4.6.4`, `4.6` (*4.6/Dockerfile*)](https://github.com/docker-library/gcc/blob/ba6f069df8e6c838d0465b09215e96f8d5d65269/4.6/Dockerfile)
 - [`4.7.4`, `4.7` (*4.7/Dockerfile*)](https://github.com/docker-library/gcc/blob/ba6f069df8e6c838d0465b09215e96f8d5d65269/4.7/Dockerfile)
 - [`4.8.3`, `4.8` (*4.8/Dockerfile*)](https://github.com/docker-library/gcc/blob/ba6f069df8e6c838d0465b09215e96f8d5d65269/4.8/Dockerfile)
-- [`4.9.1`, `4.9`, `latest` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/ba6f069df8e6c838d0465b09215e96f8d5d65269/4.9/Dockerfile)
+- [`4.9.2`, `4.9`, `latest` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/af77dacbf20f2346a98978d0102db0da0670ea76/4.9/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
