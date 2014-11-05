@@ -62,12 +62,23 @@ the Apache web server.
 ### Create a `Dockerfile` in your PHP project
 
     FROM php:5.6-apache
-    COPY . /var/www/html
+    COPY src/ /var/www/html/
 
-Then, run the commands to build and run the Docker image:
+Where `src/` is the directory containing all your php code. Then, run the commands to build and run the Docker image:
 
     docker build -t my-php-app .
     docker run -it --rm --name my-running-app my-php-app
+
+We recommend that you add a custom `php.ini` configuration. `COPY` it into
+`/usr/local/lib` by adding one more line to the Dockerfile above and running the
+same commands to build and run:
+
+    FROM php:5.6-apache
+    COPY config/php.ini /usr/local/lib/
+    COPY src/ /var/www/html/
+
+Where `src/` is the directory containing all your php code and `config/`
+contains your `php.ini` file.
 
 ### Without a `Dockerfile`
 
