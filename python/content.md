@@ -32,7 +32,7 @@ to bootstrap most applications. The build will `COPY` a `requirements.txt` file,
 
 You can then build and run the Docker image:
 
-    docker build -t my-python-app
+    docker build -t my-python-app .
     docker run -it --rm --name my-running-app my-python-app
 
 ## Run a single Python script
