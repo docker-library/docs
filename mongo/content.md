@@ -37,3 +37,8 @@ following examples illustrate).
 ## ... or via `mongo`
 
     docker run -it --link some-mongo:mongo --rm mongo sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
+
+## Configuration
+
+See the [official docs](http://docs.mongodb.org/manual/) for infomation on using
+and configuring MongoDB for things like replica sets and sharding.

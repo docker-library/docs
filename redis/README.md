@@ -78,6 +78,11 @@ options.
 Using this method means that there is no need for you to have a Dockerfile for
 your redis container.
 
+# License
+
+View [license information](http://redis.io/topics/license) for the software
+contained in this image.
+
 # User Feedback
 
 ## Issues
