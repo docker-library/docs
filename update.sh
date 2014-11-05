@@ -34,6 +34,7 @@ declare -A otherRepos=(
 	[jenkins]='https://github.com/cloudbees/jenkins-ci.org-docker'
 	[jruby]='https://github.com/cpuguy83/docker-jruby'
 	[mageia]='https://github.com/juanluisbaptiste/docker-brew-mageia'
+	[maven]='https://github.com/carlossg/docker-maven'
 	[mono]='https://github.com/mono/docker'
 	[neurodebian]='https://github.com/neurodebian/dockerfiles'
 	[nginx]='https://github.com/nginxinc/docker-nginx'
