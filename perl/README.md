@@ -32,7 +32,7 @@ including C, shell scripting (sh), AWK, and sed.
 
 Then, build and run the Docker image:
 
-    docker build -t my-perl-app
+    docker build -t my-perl-app .
     docker run -it --rm --name my-running-app my-perl-app
 
 ## Run a single Perl script
