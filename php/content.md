@@ -78,8 +78,8 @@ A number of commonly-used PHP extensions are compiled with this image. Many are
 linked statically into the `php` binary, but some must be loaded as a shared
 extensions.
 
-Shared extensions can be loaded by adding a `extension=_EXTNAME_.so` statement
-to `php.ini` or by using `-dextension=_EXTNAME_.so` on the command line.
+Shared extensions can be loaded by adding a `extension=EXTNAME.so` statement
+to `php.ini` or by using `-dextension=EXTNAME.so` on the command line.
 
 The following extensions are included in this image:
 
