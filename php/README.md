@@ -87,26 +87,28 @@ do the following:
 
     docker run -it --rm --name my-apache-php-app -v "$(pwd)":/var/www/html php:5.6-apache
 
-# PHP Extensions
+## PHP Extensions
 
 A number of commonly-used PHP extensions are compiled with this image. Many are
 linked statically into the `php` binary, but some must be loaded as a shared
 extensions.
 
 Shared extensions can be loaded by adding an `extension=EXTNAME.so` statement
-to `php.ini` or by using `-dextension=EXTNAME.so` on the command line.
+to `php.ini` or by using `-dextension=EXTNAME.so` on the command line. Many of
+these extensions require installing additional packages to add their associated
+external library. Those packages are listed in the table below, where applicable.
 
-The following extensions are included in this image:
-
-* [curl](http://php.net/manual/en/book.curl.php)
-* [gd](http://php.net/manual/en/book.image.php)
-* [mysql](http://php.net/manual/en/book.mysql.php)
-* [mysqli](http://php.net/manual/en/book.mysqli.php)
-* [openssl](http://php.net/manual/en/book.openssl.php)
-* [pdo-mysql](http://php.net/manual/en/ref.pdo-mysql.php)
-* [readline](http://php.net/manual/en/book.readline.php)
-* [soap](http://php.net/manual/en/book.soap.php) (_shared_)
-* [zlib](http://php.net/manual/en/book.zlib.php)
+| Extension | Shared/Static | Additional Packages |
+|-----------|---------------|-------------------|
+| [curl](http://php.net/manual/en/book.curl.php) | static | |
+| [gd](http://php.net/manual/en/book.image.php) | static | |
+| [mysql](http://php.net/manual/en/book.mysql.php) | static | |
+| [mysqli](http://php.net/manual/en/book.mysqli.php) | static | |
+| [openssl](http://php.net/manual/en/book.openssl.php) | static | |
+| [pdo-mysql](http://php.net/manual/en/ref.pdo-mysql.php) | static | |
+| [readline](http://php.net/manual/en/book.readline.php) | static | |
+| [soap](http://php.net/manual/en/book.soap.php) | shared | |
+| [zlib](http://php.net/manual/en/book.zlib.php) | static | |
 
 # License
 
