@@ -87,6 +87,27 @@ do the following:
 
     docker run -it --rm --name my-apache-php-app -v "$(pwd)":/var/www/html php:5.6-apache
 
+# PHP Extensions
+
+A number of commonly-used PHP extensions are compiled with this image. Many are
+linked statically into the `php` binary, but some must be loaded as a shared
+extensions.
+
+Shared extensions can be loaded by adding a `extension=_EXTNAME_.so` statement
+to `php.ini` or by using `-dextension=_EXTNAME_.so` on the command line.
+
+The following extensions are included in this image:
+
+* [curl](http://php.net/manual/en/book.curl.php)
+* [gd](http://php.net/manual/en/book.image.php)
+* [mysql](http://php.net/manual/en/book.mysql.php)
+* [mysqli](http://php.net/manual/en/book.mysqli.php)
+* [openssl](http://php.net/manual/en/book.openssl.php)
+* [pdo-mysql](http://php.net/manual/en/ref.pdo-mysql.php)
+* [readline](http://php.net/manual/en/book.readline.php)
+* [soap](http://php.net/manual/en/book.soap.php) (_shared_)
+* [zlib](http://php.net/manual/en/book.zlib.php)
+
 # License
 
 View [license information](http://php.net/license/)
