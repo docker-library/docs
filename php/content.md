@@ -83,14 +83,14 @@ to `php.ini` or by using `-dextension=EXTNAME.so` on the command line. Many of
 these extensions require installing additional packages to add their associated
 external library. Those packages are listed in the table below, where applicable.
 
-| Extension | Shared/Static | Additional Packages |
-|-----------|---------------|-------------------|
-| [curl](http://php.net/manual/en/book.curl.php) | static | |
-| [gd](http://php.net/manual/en/book.image.php) | static | |
-| [mysql](http://php.net/manual/en/book.mysql.php) | static | |
-| [mysqli](http://php.net/manual/en/book.mysqli.php) | static | |
-| [openssl](http://php.net/manual/en/book.openssl.php) | static | |
-| [pdo-mysql](http://php.net/manual/en/ref.pdo-mysql.php) | static | |
-| [readline](http://php.net/manual/en/book.readline.php) | static | |
-| [soap](http://php.net/manual/en/book.soap.php) | shared | |
-| [zlib](http://php.net/manual/en/book.zlib.php) | static | |
+| Extension | Build type | Configuration | Additional packages |
+|-----------|:----------:|---------------|-------------------|
+| [curl](http://php.net/manual/en/book.curl.php) | static | | |
+| [gd](http://php.net/manual/en/book.image.php) | static | | |
+| [mysql](http://php.net/manual/en/book.mysql.php) | static | | |
+| [mysqli](http://php.net/manual/en/book.mysqli.php) | static | | |
+| [openssl](http://php.net/manual/en/book.openssl.php) | static | | |
+| [pdo-mysql](http://php.net/manual/en/ref.pdo-mysql.php) | static | | |
+| [readline](http://php.net/manual/en/book.readline.php) | static | | |
+| [soap](http://php.net/manual/en/book.soap.php) | shared | `extension=soap.so` | |
+| [zlib](http://php.net/manual/en/book.zlib.php) | static | | |
