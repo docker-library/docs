@@ -12,40 +12,32 @@ A large number of production-quality Haskell libraries are available from [Hacka
 
 This image ships a minimal Haskell toolchain with the following packages:
 
-| package         | version    |
-|-----------------|------------|
-| `alex`          | `3.1.3`    |
-| `cabal-install` | `1.20.0.3` |
-| `happy`         | `1.19.4`   |
-| `ghc`           | `7.8.3`    |
-
+* `ghc` 7.8.3
+* `alex` 3.1.3
+* `cabal-install` 1.20.0.3
+* `happy` 1.19.4
 
 ## Usage
 
 * Start an interactive interpreter session with `ghci`:
 
-```
     $ docker run -it --rm haskell:7.8
     GHCi, version 7.8.3: http://www.haskell.org/ghc/  :? for help
     Loading package ghc-prim ... linking ... done.
     Loading package integer-gmp ... linking ... done.
     Loading package base ... linking ... done.
     Prelude>
-```
 
 * Dockerize a [Hackage](http://hackage.haskell.org) app with a Dockerfile inheriting from the base image:
 
-```
     FROM haskell:7.8
     RUN cabal update && cabal install MazesOfMonad
     VOLUME /root/.MazesOfMonad
     ENTRYPOINT ["/root/.cabal/bin/mazesofmonad"]
-```
 
 * Iteratively develop then ship a Haskell app with a Dockerfile utilizing the
 build cache:
 
-```
     FROM haskell:7.8
 
     RUN cabal update
@@ -67,7 +59,6 @@ build cache:
     # Default Command for Container
     WORKDIR /opt/server
     CMD ["snap-example"]
-```
 
 ## Examples
 
