@@ -1,1 +1,1 @@
-R is a free software environment for statistical computing and graphics. 
+R is a system for statistical computation and graphics. 
