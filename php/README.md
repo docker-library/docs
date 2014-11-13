@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`5.4.34-cli`, `5.4-cli`, `5.4.34`, `5.4` (*5.4/Dockerfile*)](https://github.com/docker-library/php/blob/c1fe2a2c01a6fd31fc9c03315939229ab06a80e5/5.4/Dockerfile)
-- [`5.4.34-apache`, `5.4-apache` (*5.4/apache/Dockerfile*)](https://github.com/docker-library/php/blob/c1fe2a2c01a6fd31fc9c03315939229ab06a80e5/5.4/apache/Dockerfile)
-- [`5.5.18-cli`, `5.5-cli`, `5.5.18`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/c1fe2a2c01a6fd31fc9c03315939229ab06a80e5/5.5/Dockerfile)
-- [`5.5.18-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/c1fe2a2c01a6fd31fc9c03315939229ab06a80e5/5.5/apache/Dockerfile)
-- [`5.6.2-cli`, `5.6-cli`, `5-cli`, `cli`, `5.6.2`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/c1fe2a2c01a6fd31fc9c03315939229ab06a80e5/5.6/Dockerfile)
-- [`5.6.2-apache`, `5.6-apache`, `5-apache`, `apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/c1fe2a2c01a6fd31fc9c03315939229ab06a80e5/5.6/apache/Dockerfile)
+- [`5.4.34-cli`, `5.4-cli`, `5.4.34`, `5.4` (*5.4/Dockerfile*)](https://github.com/docker-library/php/blob/b2e1b8e2a37db419ae1244b9f63456b86f666ffe/5.4/Dockerfile)
+- [`5.4.34-apache`, `5.4-apache` (*5.4/apache/Dockerfile*)](https://github.com/docker-library/php/blob/b2e1b8e2a37db419ae1244b9f63456b86f666ffe/5.4/apache/Dockerfile)
+- [`5.5.18-cli`, `5.5-cli`, `5.5.18`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/b2e1b8e2a37db419ae1244b9f63456b86f666ffe/5.5/Dockerfile)
+- [`5.5.18-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/b2e1b8e2a37db419ae1244b9f63456b86f666ffe/5.5/apache/Dockerfile)
+- [`5.6.2-cli`, `5.6-cli`, `5-cli`, `cli`, `5.6.2`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/b2e1b8e2a37db419ae1244b9f63456b86f666ffe/5.6/Dockerfile)
+- [`5.6.2-apache`, `5.6-apache`, `5-apache`, `apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/b2e1b8e2a37db419ae1244b9f63456b86f666ffe/5.6/apache/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
