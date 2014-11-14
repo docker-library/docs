@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`1.9.3-p550`, `1.9.3`, `1.9`, `1` (*1.9/Dockerfile*)](https://github.com/docker-library/ruby/blob/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/1.9/Dockerfile)
-- [`1.9.3-p550-onbuild`, `1.9.3-onbuild`, `1.9-onbuild`, `1-onbuild` (*1.9/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/1.9/onbuild/Dockerfile)
-- [`2.0.0-p594`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/ruby/blob/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/2.0/Dockerfile)
-- [`2.0.0-p594-onbuild`, `2.0.0-onbuild`, `2.0-onbuild` (*2.0/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/2.0/onbuild/Dockerfile)
-- [`2.1.4`, `2.1`, `2`, `latest` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/2.1/Dockerfile)
-- [`2.1.4-onbuild`, `2.1-onbuild`, `2-onbuild`, `onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/59efe8f7291ffddf5c8b3f8b6f784ad80905f34c/2.1/onbuild/Dockerfile)
+- [`1.9.3-p551`, `1.9.3`, `1.9`, `1` (*1.9/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/1.9/Dockerfile)
+- [`1.9.3-p551-onbuild`, `1.9.3-onbuild`, `1.9-onbuild`, `1-onbuild` (*1.9/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/1.9/onbuild/Dockerfile)
+- [`2.0.0-p598`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/2.0/Dockerfile)
+- [`2.0.0-p598-onbuild`, `2.0.0-onbuild`, `2.0-onbuild` (*2.0/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/2.0/onbuild/Dockerfile)
+- [`2.1.5`, `2.1`, `2`, `latest` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/2.1/Dockerfile)
+- [`2.1.5-onbuild`, `2.1-onbuild`, `2-onbuild`, `onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/2.1/onbuild/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
