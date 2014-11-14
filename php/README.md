@@ -90,6 +90,29 @@ do the following:
 
     docker run -it --rm --name my-apache-php-app -v "$(pwd)":/var/www/html php:5.6-apache
 
+## PHP Extensions
+
+A number of commonly-used PHP extensions are compiled with this image. Many are
+linked statically into the `php` binary, but some must be loaded as a shared
+extensions.
+
+Shared extensions can be loaded by adding an `extension=EXTNAME.so` statement
+to `php.ini` or by using `-dextension=EXTNAME.so` on the command line. Many of
+these extensions require installing additional packages to add their associated
+external library. Those packages are listed in the table below, where applicable.
+
+| Extension | Build type | Configuration | Additional packages |
+|-----------|:----------:|---------------|-------------------|
+| [curl](http://php.net/manual/en/book.curl.php) | static | | |
+| [gd](http://php.net/manual/en/book.image.php) | static | | |
+| [mysql](http://php.net/manual/en/book.mysql.php) | static | | |
+| [mysqli](http://php.net/manual/en/book.mysqli.php) | static | | |
+| [openssl](http://php.net/manual/en/book.openssl.php) | static | | |
+| [pdo-mysql](http://php.net/manual/en/ref.pdo-mysql.php) | static | | |
+| [readline](http://php.net/manual/en/book.readline.php) | static | | |
+| [soap](http://php.net/manual/en/book.soap.php) | shared | `extension=soap.so` | |
+| [zlib](http://php.net/manual/en/book.zlib.php) | static | | |
+
 # License
 
 View [license information](http://php.net/license/)
