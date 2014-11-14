@@ -64,18 +64,25 @@ sub get_form_bits {
 	
 	my $ret = {};
 	
-	$form->find('input, select, textarea')->grep(sub {
+	$form->find('input, textarea')->grep(sub {
 		!$_->match('input[type=submit], input[type=reset], input[type=button]')
 		&& defined($_->attr('name'))
 	})->each(sub {
 		my $e = shift;
 		my $name = $e->attr('name');
-		$ret->{$name} = '' . $e->val;
 		
+		my $val;
 		if ($e->type eq 'textarea') {
-			$ret->{$name} = trim($ret->{$name});
-			$ret->{$name} =~ s!\r\n|\r!\n!g;
+			$val = $e->text;
 		}
+		else {
+			$val = $e->attr('value');
+		}
+		
+		$val = trim('' . $val);
+		$val =~ s!\r\n|\r!\n!g;
+		
+		$ret->{$name} = $val;
 	});
 	
 	return $ret;
