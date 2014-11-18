@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `0.45`, `0.45.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/0.45.4/Dockerfile)
+- [`latest`, `0.45`, `0.45.5` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/0.45.5/Dockerfile)
 - [`0.44`, `0.44.8` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/0.44.8/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
