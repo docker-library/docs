@@ -32,25 +32,44 @@ graphical user interfaces are available for use with R.
 
 # How to use this image
 
-## Start an R instance
+## Interactive R ##
 
-The most straightforward way to use this image is to use a container as both
-the build and runtime environment. In your `Dockerfile`, writing something along
-the lines of the following will compile and run your project:
+Launch R directly for interactive work:
+
+    docker run -ti --rm r-base /usr/bin/R
+
+## Batch mode ##
+
+Link the working directory to run R batch commands. We recommend specifying a non-root user when linking a volume to the container to avoid permission changes, as illustrated here:
+
+    docker run -ti --rm -v $(pwd):/home/docker -w /home/docker -u docker r-base R CMD check .
+
+Alternatively, just run a bash session on the container first.  This allows a user to run batch commands and also edit and run scripts:
+
+    docker run -ti --rm r-base /usr/bin/bash
+    vim.tiny myscript.R
+
+Write the script in the container, exit `vim` and run `Rscript`
+
+    Rscript myscript.R
+
+
+## Dockerfiles ##
+
+Use `r-base` as a base for your own Dockerfiles. For instance, something along the lines of the following will compile and run your project:
 
     FROM r-base:latest
     COPY . /usr/local/src/myscripts
     WORKDIR /usr/local/src/myscripts
     CMD ["Rscript -e myscript.R"]
 
-Then, build and run the Docker image:
+Build your image with the command:
 
-    docker build -t my-r-app .
-<!-- is building really a number one use case? I think most user just want to launch -->    
-    docker run -it --rm --name my-running-app my-r-app
+    docker build -t myscript /path/to/Dockerfile
 
-Lauch R directory for interactive work:
+Running this container with no command will execute the script. Alternatively, a user could run this container in interactive or batch mode as described above, instead of linking volumes.
 
-    docker run -ti --rm rocker/r-base /usr/bin/R
 
+
+Further documentation and example use cases can be found at the [rocker-org](https://github.com/rocker-org/rocker/wiki) project wiki.
 
