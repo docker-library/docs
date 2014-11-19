@@ -26,6 +26,7 @@ declare -A otherRepos=(
 	[clojure]='https://github.com/Quantisan/docker-clojure'
 	[crate]='https://github.com/crate/docker-crate'
 	[crux]='https://github.com/therealprologic/docker-crux'
+	[datadog]='https://github.com/DataDog/docker-dd-agent'
 	[debian]='https://github.com/tianon/docker-brew-debian'
 	[docker-dev]='https://github.com/docker/docker'
 	[fedora]='https://github.com/lsm5/docker-brew-fedora'
