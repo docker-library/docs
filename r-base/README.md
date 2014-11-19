@@ -1,12 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`3.1.1` (*3.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/ba6f069df8e6c838d0465b09215e96f8d5d65269/4.6/Dockerfile)
+- [`3.1.2` (*3.1.2/Dockerfile*)](https://github.com/rocker-org/rocker/blob/105fca2b42051c5cd0894da31839c99a9b7de320/debian/r-base/Dockerfile)
 
 For more information about this image and its history, please see the
-[relevant manifest file (`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base)
-in the
-[`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
-<!-- DE: Do we have such a manifest file ? -->
+[relevant manifest file (`library/r-base`)](https://github.com/rocker-org/official-images/blob/master/library/r-base)
+and the 
+[`rocker-org/rocker` GitHub repo](https://github.com/rocker-org/rocker).
 
 
 # What is R?
