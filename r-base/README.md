@@ -45,7 +45,7 @@ graphical user interfaces are available for use with R.
 
 Launch R directly for interactive work:
 
-    docker run -ti --rm r-base /usr/bin/R
+    docker run -ti --rm r-base
 
 ## Batch mode ##
 

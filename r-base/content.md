@@ -1,7 +1,5 @@
 # What is R?
 
-# What is R?
-
 R is a system for statistical computation and graphics. It consists of a
 language plus a run-time environment with graphics, a debugger, access to
 certain system functions, and the ability to run programs stored in script
@@ -36,7 +34,7 @@ graphical user interfaces are available for use with R.
 
 Launch R directly for interactive work:
 
-    docker run -ti --rm r-base /usr/bin/R
+    docker run -ti --rm r-base
 
 ## Batch mode ##
 
