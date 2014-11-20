@@ -62,3 +62,11 @@ This optional environment variable denotes the name of a database to create. If
 a user/password was supplied (via the `MYSQL_USER` and `MYSQL_PASSWORD`
 environment variables) then that user account will be granted (`GRANT ALL`)
 access to this database.
+
+# Caveats
+
+If there is no database when `mysql` starts in a container, then `mysql` will
+create the default database for you. While this is the expected behavior of
+`mysql`, this means that it will not accept incoming connections during that
+time. This may cause issues when using automation tools, such as `fig`, that
+start several containers simultaneously.
