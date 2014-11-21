@@ -32,7 +32,7 @@ Oracle.
 
 ## start a postgres instance
 
-    docker run --name some-postgres -d postgres
+    docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
 
 This image includes `EXPOSE 5432` (the postgres port), so standard container
 linking will make it automatically available to the linked containers. The
@@ -49,6 +49,26 @@ default `postgres` user and database are created in the entrypoint with
 ## ... or via `psql`
 
     docker run -it --link some-postgres:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres'
+
+## Environment Variables
+
+The PostgreSQL image uses several environment variables which are easy to miss.
+While none of the variables are required, they may significantly aid you in
+using the image.
+
+### `POSTGRES_PASSWORD`
+
+This environment variable is recommend for you to use the PostgreSQL image. This
+environment variable sets the superuser password for PostgreSQL. The default
+superuser is defined by the `POSTGRES_USER` environment variable. In the above
+example, it is being set to "mysecretpassword".
+
+### `POSTGRES_USER`
+
+This optional environment variable is used in conjunction with
+`POSTGRES_PASSWORD` to set a user and its password. This varible will create the
+specified user with superuser power and a database with the same name. If it is
+not specified, then the default user of `postgres` will be used.
 
 # How to extend this image
 
