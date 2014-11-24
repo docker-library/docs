@@ -66,7 +66,11 @@ These optional environment variables are used in conjunction to set both a MySQL
 user and password, which will subsequently be granted all permissions for the
 database specified by the optional `MYSQL_DATABASE` variable. Note that if you
 only have one of these two environment variables, then neither will actually do
-anything - these two are meant to be used in conjunction with one another.
+anything - these two are meant to be used in conjunction with one another. When
+these variables are used, it will create a new user with the given password in
+the MySQL database - there is no need to specify `MYSQL_USER` with `root`, as
+the `root` user already exists in the default MySQL and the password is
+controlled by `MYSQL_ROOT_PASSWORD`.
 
 ### `MYSQL_DATABASE`
 
