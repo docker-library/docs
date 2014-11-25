@@ -34,7 +34,7 @@ garbage collection, and even import and use java libraries.
 
 ## Create a `Dockerfile` in your Ruby app project
 
-    FROM jruby:.1.7.15-onbuild
+    FROM jruby:1.7-onbuild
     CMD ["./your-daemon-or-script.rb"]
 
 Put this file in the root of your app, next to the `Gemfile`.
@@ -54,7 +54,7 @@ The `onbuid` tag expects a `Gemfile.lock` in your app directory. This `docker
 run` will help you generate one. Run it in the root of your app, next to the
 `Gemfile`:
 
-    docker run --rm -v "$(pwd)":/usr/src/app -w /usr/src/app jruby:1.7.15 bundle install --system
+    docker run --rm -v "$(pwd)":/usr/src/app -w /usr/src/app jruby:1.7 bundle install --system
 
 ## Run a single Ruby script
 
@@ -62,7 +62,7 @@ For many simple, single file projects, you may find it inconvenient to write a
 complete `Dockerfile`. In such cases, you can run a Ruby script by using the
 Ruby Docker image directly:
 
-    docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp jruby:1.7.15 jruby your-daemon-or-script.rb
+    docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp jruby:1.7 jruby your-daemon-or-script.rb
 
 # License
 
