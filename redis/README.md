@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`2.6.17`, `2.6` (*2.6/Dockerfile*)](https://github.com/docker-library/redis/blob/9e5054fef2e6d1fdd7035ecb4ed0ae68e10bd6d6/2.6/Dockerfile)
-- [`2.8.17`, `2.8`, `2`, `latest` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/9e5054fef2e6d1fdd7035ecb4ed0ae68e10bd6d6/2.8/Dockerfile)
+- [`2.6.17`, `2.6` (*2.6/Dockerfile*)](https://github.com/docker-library/redis/blob/109323988b7663bceaf4a01c3353f8934dfc002e/2.6/Dockerfile)
+- [`2.8.17`, `2.8`, `2`, `latest` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/109323988b7663bceaf4a01c3353f8934dfc002e/2.8/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
