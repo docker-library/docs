@@ -39,7 +39,7 @@ BusyBox system.
 
 ## Create a `Dockerfile` for a binary
 
-    FROM busybox:buildroot-2014.02
+    FROM busybox
     COPY ./my-static-binary /my-static-binary
     CMD ["/my-static-binary"]
 
