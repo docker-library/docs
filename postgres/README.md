@@ -97,6 +97,39 @@ Postgres'' [single user
 mode](http://www.postgresql.org/docs/9.3/static/app-postgres.html#AEN90580) is
 highly recommended.
 
+## Example use of this image
+
+Dockerfile
+```
+FROM postgres:8.4.22
+MAINTAINER Leonard Seymore <leonardseymore@gmail.com>
+
+ENV POSTGRES_USERNAME postgres
+ENV POSTGRES_PASSWORD postgres
+ENV USERNAME mydb_username
+ENV PASSWORD mydb_password
+ENV DATABASE mydb_name
+ENV SCHEMA mydb_schema_name
+ENV PGPASSWORD $PASSWORD
+
+ADD scripts /docker-entrypoint-initdb.d
+```
+
+Example initialization script (init.sh) in scripts directory
+```
+#!/bin/bash
+
+echo "Running custom init script"
+
+gosu postgres postgres --single <<- EOSQL
+    create user $USERNAME with password '$PASSWORD' nocreateuser nocreatedb;
+    create database $DATABASE with owner=$USERNAME;
+    create schema $SCHEMA AUTHORIZATION $USERNAME;
+EOSQL
+
+echo "Custom init script complete."
+```
+
 # Caveats
 
 If there is no database when `postgres` starts in a container, then `postgres` will
