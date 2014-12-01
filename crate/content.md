@@ -41,21 +41,24 @@ For example, setting the heap size:
 
 ## Multicast
 
-Crate uses multicast for node discovery by default. However, Docker does only support multicast on the same
-host. This means that nodes that are started on the same host will discover each other automatically,
-but nodes that are started on different hosts need unicast enabled.
+Crate uses multicast for node discovery by default. However, Docker does only
+support multicast on the same host. This means that nodes that are started on
+the same host will discover each other automatically, but nodes that are started
+on different hosts need unicast enabled.
 
-You can enable unicast in your custom ``crate.yml``.
-See also: [Crate Multi Node Setup](https://crate.io/docs/en/latest/best_practice/multi_node_setup.html).
+You can enable unicast in your custom `crate.yml`.
+See also: [Crate Multi Node
+Setup](https://crate.io/docs/en/latest/best_practice/multi_node_setup.html).
 
-Due to its architecture, Crate publishes the host it runs on for discovery within the cluster. Since
-the address of the host inside the docker container differs from the actual host the docker image is
-running on, you need to tell Crate to publish the address of the docker host for discovery.
+Due to its architecture, Crate publishes the host it runs on for discovery
+within the cluster. Since the address of the host inside the docker container
+differs from the actual host the docker image is running on, you need to tell
+Crate to publish the address of the docker host for discovery.
 
     docker run -d -p 4200:4200 -p 4300:4300 crate crate -Des.network.publish_host=host1.example.com:
 
-If you change the transport port from the default ``4300`` to something else, you also need to pass
-the publish port to Crate.
+If you change the transport port from the default `4300` to something else,
+you also need to pass the publish port to Crate.
 
     docker run -d -p 4200:4200 -p 4321:4300 crate crate -Des.transport.publish_port=4321
 

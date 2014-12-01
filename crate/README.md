@@ -15,7 +15,7 @@ Crate is an Elastic SQL Data Store. Distributed by design, Crate makes
 centralized database servers obsolete. Realtime non-blocking SQL engine with
 full blown search. Highly available, massively scalable yet simple to use.
 
-> [Crate](https:/crate.io/)
+[Crate](https:/crate.io/)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/crate/logo.png)
 
@@ -57,8 +57,40 @@ support multicast on the same host. This means that nodes that are started on
 the same host will discover each other automatically, but nodes that are started
 on different hosts need unicast enabled.
 
-You can enable unicast in your custom `crate.yml`. See also: [Using Crate Data
-in a Multi Node Setup](https://crate.io/blog/using-crate-in-multinode-setup/).
+You can enable unicast in your custom `crate.yml`.
+See also: [Crate Multi Node
+Setup](https://crate.io/docs/en/latest/best_practice/multi_node_setup.html).
+
+Due to its architecture, Crate publishes the host it runs on for discovery
+within the cluster. Since the address of the host inside the docker container
+differs from the actual host the docker image is running on, you need to tell
+Crate to publish the address of the docker host for discovery.
+
+    docker run -d -p 4200:4200 -p 4300:4300 crate crate -Des.network.publish_host=host1.example.com:
+
+If you change the transport port from the default `4300` to something else,
+you also need to pass the publish port to Crate.
+
+    docker run -d -p 4200:4200 -p 4321:4300 crate crate -Des.transport.publish_port=4321
+
+### Example Usage in a Multinode Setup
+
+    HOSTS='crate1.example.com:4300,crate2.example.com:4300,crate3.example.com:4300'
+    HOST=crate1.example.com
+    docker run -d \
+        -p 4200:4200 \
+        -p 4300:4300 \
+        --name node1 \
+        --volume /mnt/data:/data \
+        --env CRATE_HEAP_SIZE=8g \
+        crate:latest \
+        crate -Des.cluster.name=cratecluster \
+              -Des.node.name=crate1 \
+              -Des.transport.publish_port=4300 \
+              -Des.network.publish_host=$HOST \
+              -Des.multicast.enabled=false \
+              -Des.discovery.zen.ping.unicast.hosts=$HOSTS \
+              -Des.discovery.zen.minimum_master_nodes=2
 
 # License
 
