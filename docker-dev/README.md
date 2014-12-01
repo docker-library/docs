@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`1.3.1`, `1.3`, `1`, `latest` (*Dockerfile*)](https://github.com/docker/docker/blob/v1.3.1/Dockerfile)
+- [`1.3.2`, `1.3`, `1`, `latest` (*Dockerfile*)](https://github.com/docker/docker/blob/v1.3.2/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
