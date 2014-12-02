@@ -38,11 +38,14 @@ Launch R directly for interactive work:
 
 ## Batch mode ##
 
-Link the working directory to run R batch commands. We recommend specifying a non-root user when linking a volume to the container to avoid permission changes, as illustrated here:
+Link the working directory to run R batch commands. We recommend specifying a
+non-root user when linking a volume to the container to avoid permission
+changes, as illustrated here:
 
     docker run -ti --rm -v $(pwd):/home/docker -w /home/docker -u docker r-base R CMD check .
 
-Alternatively, just run a bash session on the container first.  This allows a user to run batch commands and also edit and run scripts:
+Alternatively, just run a bash session on the container first.  This allows a
+user to run batch commands and also edit and run scripts:
 
     docker run -ti --rm r-base /usr/bin/bash
     vim.tiny myscript.R
@@ -51,10 +54,10 @@ Write the script in the container, exit `vim` and run `Rscript`
 
     Rscript myscript.R
 
-
 ## Dockerfiles ##
 
-Use `r-base` as a base for your own Dockerfiles. For instance, something along the lines of the following will compile and run your project:
+Use `r-base` as a base for your own Dockerfiles. For instance, something along
+the lines of the following will compile and run your project:
 
     FROM r-base:latest
     COPY . /usr/local/src/myscripts
@@ -65,9 +68,9 @@ Build your image with the command:
 
     docker build -t myscript /path/to/Dockerfile
 
-Running this container with no command will execute the script. Alternatively, a user could run this container in interactive or batch mode as described above, instead of linking volumes.
+Running this container with no command will execute the script. Alternatively, a
+user could run this container in interactive or batch mode as described above,
+instead of linking volumes.
 
-
-
-Further documentation and example use cases can be found at the [rocker-org](https://github.com/rocker-org/rocker/wiki) project wiki.
-
+Further documentation and example use cases can be found at the
+[rocker-org](https://github.com/rocker-org/rocker/wiki) project wiki.

@@ -3,7 +3,8 @@
 If you have any problems with or questions about this image, please contact us
 %%MAILING_LIST%% through a [GitHub issue](%%GITHUB_REPO%%/issues).
 
-You can also reach us by email via email at `rocker-maintainers@eddelbuettel.com`.
+You can also reach us by email via email at
+`rocker-maintainers@eddelbuettel.com`.
 
 ## Contributing
 
