@@ -1,2 +1,2 @@
-View [the GPL 2 license information](https://github.com/rocker-org/rocker/blob/master/LICENSE)
-for the software contained in this image.
+View [R-project license information](http://www.r-project.org/Licenses/) for the software contained in this image.
+

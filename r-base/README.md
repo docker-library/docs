@@ -69,7 +69,7 @@ Use `r-base` as a base for your own Dockerfiles. For instance, something along t
     FROM r-base:latest
     COPY . /usr/local/src/myscripts
     WORKDIR /usr/local/src/myscripts
-    CMD ["Rscript -e myscript.R"]
+    CMD ["Rscript", "myscript.R"]
 
 Build your image with the command:
 
@@ -82,8 +82,7 @@ Further documentation and example use cases can be found at the [rocker-org](htt
 
 # License
 
-View [GPL 2 license information](https://github.com/rocker-org/rocker/blob/master/LICENSE)
-for the software contained in this image.
+View [R-project license information](http://www.r-project.org/Licenses/) for the software contained in this image.
 
 # User Feedback
 
