@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`3.1.2` (*3.1.2/Dockerfile*)](https://github.com/rocker-org/rocker/blob/105fca2b42051c5cd0894da31839c99a9b7de320/debian/r-base/Dockerfile)
+- [`latest`, `3.1.2` (*debian/r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/105fca2b42051c5cd0894da31839c99a9b7de320/debian/r-base/Dockerfile)
 
-For more information about this image and its history, please see the
-[relevant manifest file (`library/r-base`)](https://github.com/rocker-org/official-images/blob/master/library/r-base)
-and the 
-[`rocker-org/rocker` GitHub repo](https://github.com/rocker-org/rocker).
-
+For more information about this image and its history, please see the [relevant
+manifest file
+(`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base)
+in the [`docker-library/official-images` GitHub
+repo](https://github.com/docker-library/official-images).
 
 # What is R?
 
@@ -77,8 +77,9 @@ Build your image with the command:
 
 Running this container with no command will execute the script. Alternatively, a user could run this container in interactive or batch mode as described above, instead of linking volumes.
 
-Further documentation and example use cases can be found at the [rocker-org](https://github.com/rocker-org/rocker/wiki) project wiki.
 
+
+Further documentation and example use cases can be found at the [rocker-org](https://github.com/rocker-org/rocker/wiki) project wiki.
 
 # License
 
@@ -88,11 +89,10 @@ View [R-project license information](http://www.r-project.org/Licenses/) for the
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact
-us through a [GitHub issue](https://github.com/rocker-org/rocker/issues).
+If you have any problems with or questions about this image, please contact us
+ through a [GitHub issue](https://github.com/rocker-org/rocker/issues).
 
 You can also reach us by email via email at `rocker-maintainers@eddelbuettel.com`.
-
 
 ## Contributing
 
@@ -100,8 +100,8 @@ You are invited to contribute new features, fixes, or updates, large or small;
 we are always thrilled to receive pull requests, and do our best to process them
 as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a
-[GitHub issue](https://github.com/rocker-org/rocker/issues), especially for
-more ambitious contributions. This gives other contributors a chance to point
-you in the right direction, give you feedback on your design, and help you
-find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans 
+through a [GitHub issue](https://github.com/rocker-org/rocker/issues), especially for more ambitious
+contributions. This gives other contributors a chance to point you in the right
+direction, give you feedback on your design, and help you find out if someone
+else is working on the same thing.

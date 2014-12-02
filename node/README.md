@@ -1,14 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`0.10.33`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/docker-library/node/blob/57dd55534374b98309c13cd19e00691f5479ddf0/0.10/Dockerfile)
+- [`0.10.33`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/docker-library/node/blob/675db6a4622efcbe03c48ed5f1f420aef4de2781/0.10/Dockerfile)
 - [`0.10.33-onbuild`, `0.10-onbuild`, `0-onbuild`, `onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/806873187edbff36d7fc294a62131f4f28fa681a/0.10/onbuild/Dockerfile)
-- [`0.10.33-slim`, `0.10-slim`, `0-slim`, `slim` (*0.10/slim/Dockerfile*)](https://github.com/docker-library/node/blob/57dd55534374b98309c13cd19e00691f5479ddf0/0.10/slim/Dockerfile)
-- [`0.11.14`, `0.11` (*0.11/Dockerfile*)](https://github.com/docker-library/node/blob/57dd55534374b98309c13cd19e00691f5479ddf0/0.11/Dockerfile)
+- [`0.10.33-slim`, `0.10-slim`, `0-slim`, `slim` (*0.10/slim/Dockerfile*)](https://github.com/docker-library/node/blob/675db6a4622efcbe03c48ed5f1f420aef4de2781/0.10/slim/Dockerfile)
+- [`0.11.14`, `0.11` (*0.11/Dockerfile*)](https://github.com/docker-library/node/blob/675db6a4622efcbe03c48ed5f1f420aef4de2781/0.11/Dockerfile)
 - [`0.11.14-onbuild`, `0.11-onbuild` (*0.11/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/ac05e7f96c477223f0d2da1817e84403363a65e8/0.11/onbuild/Dockerfile)
-- [`0.11.14-slim`, `0.11-slim` (*0.11/slim/Dockerfile*)](https://github.com/docker-library/node/blob/57dd55534374b98309c13cd19e00691f5479ddf0/0.11/slim/Dockerfile)
-- [`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/docker-library/node/blob/57dd55534374b98309c13cd19e00691f5479ddf0/0.8/Dockerfile)
+- [`0.11.14-slim`, `0.11-slim` (*0.11/slim/Dockerfile*)](https://github.com/docker-library/node/blob/675db6a4622efcbe03c48ed5f1f420aef4de2781/0.11/slim/Dockerfile)
+- [`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/docker-library/node/blob/675db6a4622efcbe03c48ed5f1f420aef4de2781/0.8/Dockerfile)
 - [`0.8.28-onbuild`, `0.8-onbuild` (*0.8/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/ac05e7f96c477223f0d2da1817e84403363a65e8/0.8/onbuild/Dockerfile)
-- [`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/docker-library/node/blob/57dd55534374b98309c13cd19e00691f5479ddf0/0.8/slim/Dockerfile)
+- [`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/docker-library/node/blob/675db6a4622efcbe03c48ed5f1f420aef4de2781/0.8/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file

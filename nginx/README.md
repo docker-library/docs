@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `1`, `1.7`, `1.7.7` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/66d3b5a0ece894c213c16af5753bc52be9ebb1e6/Dockerfile)
+- [`latest`, `1`, `1.7`, `1.7.8` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/04d0c5754673d6880b91e94c3cebaa767d9a1af7/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
