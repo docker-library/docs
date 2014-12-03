@@ -45,15 +45,19 @@ This is used to generate a simple `README.md` to put in the image's repo.
 Argument is the name of the image, like `golang` and it then outputs the readme
 to standard out.
 
+## `README-template.md` and `user-feedback.md`
+
+These files are the templates used in building the `<image name>/README.md`
+file, in combination with the individual image's files.
+
 ## folder `<image name>`
 
 This is where all the partial and generated files for a given image reside, (ex:
 `golang/`).
 
-## `README-template.md` and `user-feedback.md`
+## `<image name>/README.md`
 
-These files are the templates used in building the `<image name>/README.md`
-file, in combination with the individual image's files.
+This file is generated using `update.sh`.
 
 ## `<image name>/content.md`
 
