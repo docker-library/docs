@@ -67,6 +67,18 @@ a user/password was supplied (via the `MYSQL_USER` and `MYSQL_PASSWORD`
 environment variables) then that user account will be granted (`GRANT ALL`)
 access to this database.
 
+## Executing Additional Scripts
+
+You can add additional scripts to be included in the `--init-file` by placing
+the `*.sql` scripts in the  `/docker-entrypoint-initdb.d` directory in your
+docker container. There are limitations to the `--init-file` listed on the
+[mysql documentation](http://dev.mysql.com/doc/refman/5.0/en/server-options.html#option_mysqld_init-file).
+An example script may look like this:
+
+    CREATE USER 'foo'@'%' IDENTIFIED BY 'foo';
+    CREATE DATABASE foobar;
+    GRANT ALL on foobar.* to 'foo'@'%';
+
 # Caveats
 
 If there is no database when `mysql` starts in a container, then `mysql` will
