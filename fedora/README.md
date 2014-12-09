@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `20`, `heisenbug` (*Dockerfile*)](https://github.com/lsm5/docker-brew-fedora/blob/f0e71344fcf117e2c2ea8e6aadd7ef16112835f9/Dockerfile)
-- [`21` (*Dockerfile*)](https://github.com/lsm5/docker-brew-fedora/blob/606897f6b35f4e77b4b386135128385018a7412c/Dockerfile)
-- [`rawhide` (*Dockerfile*)](https://github.com/lsm5/docker-brew-fedora/blob/c713b5ab5373e80f8e2cecc52390ff7328922417/Dockerfile)
+- [`latest`, `21` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/b252b53a976a0e908805d59fb7250e8d5072f4e8/Dockerfile)
+- [`20`, `heisenbug` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/58a9aeac899b94e6ea1b1cbe6853b9b134c7ebc5/Dockerfile)
+- [`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/8b025821f5bc795f9af6023be0e96b5b227a756a/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
@@ -12,24 +12,23 @@ repo](https://github.com/docker-library/official-images).
 
 # Fedora
 
-This image serves as the semi-official Fedora image (will be updated by a more
-up to date version along with fedora rel-eng approval to make it fully
-official).
+This image serves as the `official Fedora image` for `Fedora 21` and as a
+semi-official image for Fedora 20 (heisenbug) and rawhide.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/fedora/logo.png)
 
-The `fedora:latest` tag will always point to the latest stable release (which
-is, at the time of this writing, `fedora:20`). The stable release is also tagged
-with the release code name (`fedora:heisenbug`). Fedora 21 and later won't have
-a release code name.
+The `fedora:latest` tag will always point to the latest stable
+release, currently [Fedora 21](https://getfedora.org/). `fedora:latest` is
+now the same as `fedora:21`.
 
-The `fedora:rawhide` tag will always point to the rawhide branch.
+Fedora rawhide is available via `fedora:rawhide` and Fedora 20 via
+`fedora:20` and `fedora:heisenbug`.
 
 The metalink `http://mirrors.fedoraproject.org` is used to automatically select
 a mirror site (both for building the image as well as for the yum repos in the
 container image).
 
-    $ docker run fedora:20 cat /etc/yum.repos.d/fedora.repo | grep metalink
+    $ docker run fedora cat /etc/yum.repos.d/fedora.repo | grep metalink
     metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&arch=$basearch
     metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&arch=$basearch
     metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&arch=$basearch
