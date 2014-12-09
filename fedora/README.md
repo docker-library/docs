@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
 - [`latest`, `21` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/b252b53a976a0e908805d59fb7250e8d5072f4e8/Dockerfile)
-- [`20`, `heisenbug` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/58a9aeac899b94e6ea1b1cbe6853b9b134c7ebc5/Dockerfile)
 - [`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/8b025821f5bc795f9af6023be0e96b5b227a756a/Dockerfile)
+- [`20`, `heisenbug` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/58a9aeac899b94e6ea1b1cbe6853b9b134c7ebc5/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
