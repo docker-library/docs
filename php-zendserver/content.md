@@ -16,7 +16,7 @@ http://files.zend.com/help/Zend-Server/zend-server.htm#getting_started.htm
 
 PHP-ZendServer
 ==============
-This is a cluster-enabled version of a Dockerized Zend Server 7.0 container.
+This is a cluster-enabled version of a Dockerized Zend Server 8.0 container.
 With Zend Server on Docker, you'll get your PHP applications up and running on a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the new and innovative new technology - Z-Ray. Z-Ray gives developers unprecedented visibility into their code by tracking and displaying in a toolbar live and detailed info on how the various elements constructing their page are performing.
 
 Usage
@@ -27,8 +27,8 @@ Zend Server is shared on [Docker-Hub] as **php-zendserver**.
 
         $ docker run php-zendserver
 
-- You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;'  to the 'docker run' command. Availible PHP version are 5.4 & 5.5 (5.5 is the default) and Zend Server 7
-(for example: php-zendserver:7.0-php5.4).
+- You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;'  to the 'docker run' command. Availible PHP version are 5.5 & 5.6 (5.5 is the default) and Zend Server 8 or 7
+(for example: php-zendserver:8.0-php5.6).
 
 - To start a Zend Server cluster, execute the following command for each cluster node:
 
