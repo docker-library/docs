@@ -43,13 +43,13 @@ changed and the link is thus broken.
 
 Restarting a PostgreSQL server does not affect the created databases.
 
-## Enter the container of an Odoo instance (e.g. to install the latest version of Odoo):
+## Enter the container of an Odoo instance (e.g. to install the latest version of Odoo)
 	
 	docker exec -it odoo bash
 	# apt-get update
 	# apt-get install odoo
 
-## Running multiple Odoo instances
+## Run multiple Odoo instances
 	
 	docker run -p 127.0.0.1:8070:8069 --name odoo2 --link db:db -t odoo
 	docker run -p 127.0.0.1:8071:8069 --name odoo3 --link db:db -t odoo
@@ -58,3 +58,18 @@ Please note that for plain use of mails and reports functionalities, when the
 host and container ports differ (e.g. 8070 and 8069), one has to set, 
 in Odoo, Settings->Parameters->System Parameters (requires technical features), 
 web.base.url to the container port (e.g. 127.0.0.1:8069).
+
+## Access an existing database with a new Odoo instance
+Suppose you created a database from an Odoo instance named old-odoo, and you 
+want to access this database from a new Odoo instance named new-odoo, e.g. 
+because you've just downloaded a newer Odoo image.
+
+By default, Odoo 8.0 uses a filestore (located at /var/lib/odoo/.local/share/Odoo/filestore/) 
+for attachments. You should restore this filestore in your new Odoo instance by
+running
+
+	docker run --volumes-from old-odoo -p 127.0.0.1:8070:8069 --name new-odoo --link db:db -t odoo
+
+You can also simply prevent Odoo from using the filestore by setting the system
+parameter `ir_attachment.location` to `db-storage` in Settings->Parameters->System 
+Parameters (requires technical features).
