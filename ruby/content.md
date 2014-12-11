@@ -34,7 +34,7 @@ The `onbuid` tag expects a `Gemfile.lock` in your app directory. This `docker
 run` will help you generate one. Run it in the root of your app, next to the
 `Gemfile`:
 
-    docker run --rm -v "$(pwd)":/usr/src/app -w /usr/src/app ruby:2.1 bundle install --system
+    docker run --rm -v "$(pwd)":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
 
 ## Run a single Ruby script
 
