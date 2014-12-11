@@ -82,6 +82,10 @@ To specify a pre-purchased license use the following env vars:
 - ZEND_LICENSE_KEY
 - ZEND_LICENSE_ORDER
 
+Set Zend Server to production mode by setting the following env var to "true".
+By default Zend Server is set to "development mode" with Z-Ray enabled:
+- ZS_PRODUCTION
+
 ### Minimal Requirements
 
 - Each Zend Server Docker container requires 1GB of availible memory.
