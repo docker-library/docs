@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`2.7.8`, `2.7`, `2` (*2.7/Dockerfile*)](https://github.com/docker-library/python/blob/fa713180402eeb7bf782d484c510b6c32418b45f/2.7/Dockerfile)
-- [`2.7.8-onbuild`, `2.7-onbuild`, `2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/a30ed3056ee58ca3df4fd5b51e3d30849dcb7e32/2.7/onbuild/Dockerfile)
-- [`2.7.8-slim`, `2.7-slim`, `2-slim` (*2.7/slim/Dockerfile*)](https://github.com/docker-library/python/blob/c0c674911c50ca3e21ba5379541f70c1b42685b4/2.7/slim/Dockerfile)
-- [`2.7.8-wheezy`, `2.7-wheezy`, `2-wheezy` (*2.7/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/57be1a3fd72a87419aea35d6aacc873e9de9d447/2.7/wheezy/Dockerfile)
+- [`2.7.9`, `2.7`, `2` (*2.7/Dockerfile*)](https://github.com/docker-library/python/blob/d550e292eec57e83af58e05410243d387d6483a8/2.7/Dockerfile)
+- [`2.7.9-onbuild`, `2.7-onbuild`, `2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/d550e292eec57e83af58e05410243d387d6483a8/2.7/onbuild/Dockerfile)
+- [`2.7.9-slim`, `2.7-slim`, `2-slim` (*2.7/slim/Dockerfile*)](https://github.com/docker-library/python/blob/d550e292eec57e83af58e05410243d387d6483a8/2.7/slim/Dockerfile)
+- [`2.7.9-wheezy`, `2.7-wheezy`, `2-wheezy` (*2.7/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/57be1a3fd72a87419aea35d6aacc873e9de9d447/2.7/wheezy/Dockerfile)
 - [`3.3.6`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/python/blob/fa713180402eeb7bf782d484c510b6c32418b45f/3.3/Dockerfile)
 - [`3.3.6-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/8dfe392dff2ffdda90672857e027ff3ee142f9ff/3.3/onbuild/Dockerfile)
 - [`3.3.6-slim`, `3.3-slim` (*3.3/slim/Dockerfile*)](https://github.com/docker-library/python/blob/c0c674911c50ca3e21ba5379541f70c1b42685b4/3.3/slim/Dockerfile)
