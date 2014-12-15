@@ -12,4 +12,4 @@ repo](https://github.com/docker-library/official-images).
 
 # User Feedback
 
-%%USER_FEEDBACK%%
+%%USER-FEEDBACK%%

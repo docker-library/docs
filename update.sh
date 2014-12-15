@@ -93,17 +93,17 @@ for repo in "${repos[@]}"; do
 		echo '  LICENSE => '"$repo"'/license.md'
 		replace_field "$repo" 'LICENSE' "$license"
 		
-		echo '  USER_FEEDBACK => '"$repo"'/user-feedback.md'
-		replace_field "$repo" 'USER_FEEDBACK' "$userFeedback"
+		echo '  USER-FEEDBACK => '"$repo"'/user-feedback.md'
+		replace_field "$repo" 'USER-FEEDBACK' "$userFeedback"
 		
-		echo '  MAILING_LIST => "'"$mailingList"'"'
-		replace_field "$repo" 'MAILING_LIST' "$mailingList" '\s*'
+		echo '  MAILING-LIST => "'"$mailingList"'"'
+		replace_field "$repo" 'MAILING-LIST' "$mailingList" '\s*'
 		
 		echo '  REPO => "'"$repo"'"'
 		replace_field "$repo" 'REPO' "$repo"
 		
-		echo '  GITHUB_REPO => "'"$gitRepo"'"'
-		replace_field "$repo" 'GITHUB_REPO' "$gitRepo"
+		echo '  GITHUB-REPO => "'"$gitRepo"'"'
+		replace_field "$repo" 'GITHUB-REPO' "$gitRepo"
 		
 		echo
 	else
