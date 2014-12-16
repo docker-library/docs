@@ -10,6 +10,10 @@ repo](https://github.com/docker-library/official-images).
 
 %%CONTENT%%%%LICENSE%%
 
+# Docker Version Support
+
+%%DOCKER-VERSIONS%%
+
 # User Feedback
 
 %%USER-FEEDBACK%%

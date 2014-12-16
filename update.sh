@@ -48,6 +48,8 @@ declare -A otherRepos=(
 	[ubuntu]='https://github.com/tianon/docker-brew-ubuntu-core'
 )
 
+dockerLatest="$(curl -sSL 'https://get.docker.com/latest')"
+
 for repo in "${repos[@]}"; do
 	if [ -x "$repo/update.sh" ]; then
 		( set -x; "$repo/update.sh" )
@@ -65,6 +67,8 @@ for repo in "${repos[@]}"; do
 		else
 			mailingList=' '
 		fi
+		
+		dockerVersions="$(cat "$repo/docker-versions.md" 2>/dev/null || cat 'docker-versions.md')"
 		
 		userFeedback="$(cat "$repo/user-feedback.md" 2>/dev/null || cat 'user-feedback.md')"
 		
@@ -90,13 +94,19 @@ for repo in "${repos[@]}"; do
 		echo "  LOGO => $logo"
 		replace_field "$repo" 'LOGO' "$logo" '\s*'
 		
+		echo '  DOCKER-VERSIONS => '"$repo"'/docker-versions.md'
+		replace_field "$repo" 'DOCKER-VERSIONS' "$dockerVersions"
+		
+		echo '  DOCKER-LATEST => "'"$dockerLatest"'"'
+		replace_field "$repo" 'DOCKER-LATEST' "$dockerLatest"
+		
 		echo '  LICENSE => '"$repo"'/license.md'
 		replace_field "$repo" 'LICENSE' "$license"
 		
 		echo '  USER-FEEDBACK => '"$repo"'/user-feedback.md'
 		replace_field "$repo" 'USER-FEEDBACK' "$userFeedback"
 		
-		echo '  MAILING-LIST => "'"$mailingList"'"'
+		echo '  MAILING-LIST => '"$repo"'/mailing-list.md'
 		replace_field "$repo" 'MAILING-LIST' "$mailingList" '\s*'
 		
 		echo '  REPO => "'"$repo"'"'
