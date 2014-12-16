@@ -51,6 +51,12 @@ everyone as possible, regardless of location.
     deb http://http.debian.net/debian wheezy-updates main
     deb http://security.debian.org/ wheezy/updates main
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

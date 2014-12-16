@@ -112,6 +112,12 @@ and includes software licensed under the
 [Glasgow Haskell Compiler License](https://www.haskell.org/ghc/license)
 (BSD-style).
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

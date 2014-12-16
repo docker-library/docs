@@ -47,6 +47,12 @@ container's IP, standard port mappings can be used:
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a
 browser.
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

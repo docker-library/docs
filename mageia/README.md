@@ -56,6 +56,12 @@ All images install the following packages:
 * locales
 * locales-en
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

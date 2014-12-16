@@ -63,6 +63,12 @@ command inside your container:
 View [license information](https://gcc.gnu.org/viewcvs/gcc/trunk/gcc/COPYING3?view=markup)
 for the software contained in this image.
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

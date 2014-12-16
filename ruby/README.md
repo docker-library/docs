@@ -64,6 +64,12 @@ Ruby Docker image directly:
 View [license information](https://www.ruby-lang.org/en/about/license.txt)
 for the software contained in this image.
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

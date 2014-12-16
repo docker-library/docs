@@ -60,6 +60,12 @@ run` will help you generate one. Run it in the root of your app, next to the
 View [license information](https://github.com/rails/rails#license)
 for the software contained in this image.
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

@@ -29,6 +29,12 @@ available, and `centos:centos6` will point to the latest version of the CentOS 6
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/centos/logo.png)
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

@@ -39,6 +39,12 @@ docker run \
 NOTE: The container will try to allocate the port 5000. If the port is already
 taken, find out which container is already using it by running `docker ps`.
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

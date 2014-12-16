@@ -87,6 +87,12 @@ create the default database for you. While this is the expected behavior of
 time. This may cause issues when using automation tools, such as `fig`, that
 start several containers simultaneously.
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

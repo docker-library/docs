@@ -62,6 +62,12 @@ This Docker Image is licensed with the Expat License. See the [Mono Project
 licensing FAQ](http://www.mono-project.com/docs/faq/licensing/) for details on
 how Mono and associated libraries are licensed.
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 Please report issues on the [GitHub project](https://github.com/mono/docker).

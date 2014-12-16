@@ -83,6 +83,12 @@ and then "docker pull" the image again - and you will have the latest LTS - you
 can then start up with -v pointing to that data (/var/jenkins_home) and
 everything will be as you left it.
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

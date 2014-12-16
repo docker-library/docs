@@ -90,6 +90,12 @@ Further documentation and example use cases can be found at the
 View [R-project license information](http://www.r-project.org/Licenses/) for the
 software contained in this image.
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

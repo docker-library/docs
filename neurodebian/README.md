@@ -51,6 +51,12 @@ NeuroDebian APT file is installed under
     deb http://neuro.debian.net/debian data main
     #deb-src http://neuro.debian.net/debian-devel wheezy main
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 ## Issues

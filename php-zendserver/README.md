@@ -103,6 +103,12 @@ To specify a pre-purchased license use the following env vars:
 
 [Zend Technologies Ltd.](https://www.zend.com/topics/License-EULA-2010-09-2.pdf)
 
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
 # User Feedback
 
 Think we’ve missed something? Let us know at: http://www.zend.com/en/support-center

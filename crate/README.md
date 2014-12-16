@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `0.45`, `0.45.5` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/0.45.5/Dockerfile)
+- [`latest`, `0.45`, `0.45.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/0.45.6/Dockerfile)
 - [`0.44`, `0.44.8` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/0.44.8/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
@@ -97,6 +97,12 @@ you also need to pass the publish port to Crate.
 View [license
 information](https://github.com/crate/crate/blob/master/LICENSE.txt) for the
 software contained in this image.
+
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.4.1.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 # User Feedback
 
