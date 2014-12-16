@@ -51,6 +51,7 @@ declare -A otherRepos=(
 	[ubuntu-debootstrap]='https://github.com/tianon/docker-brew-ubuntu-debootstrap'
 	[ubuntu-upstart]='https://github.com/tianon/dockerfiles'
 	[ubuntu]='https://github.com/tianon/docker-brew-ubuntu-core'
+	[websphere-liberty]='https://github.com/WASdev/ci.docker'
 )
 
 dockerLatest="$(curl -sSL 'https://get.docker.com/latest')"
