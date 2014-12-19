@@ -1,6 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
-
+- [`2-2.4.0`, `2-2.4`, `2-2`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/b205b0255a3816166e4a91fc28521e25e9875485/2/Dockerfile)
+- [`2-2.4.0-slim`, `2-2.4-slim`, `2-2-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/b205b0255a3816166e4a91fc28521e25e9875485/2/slim/Dockerfile)
+- [`3-2.4.0`, `3-2.4`, `3-2`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/b205b0255a3816166e4a91fc28521e25e9875485/3/Dockerfile)
+- [`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/b205b0255a3816166e4a91fc28521e25e9875485/3/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
