@@ -12,5 +12,3 @@ knowing beforehand that `ssl.h` is required to build a dependent module.
 # How to use this image
 
 This stack is designed to be the foundation of a language-stack image.
-
-<!-- TODO: add an example -->

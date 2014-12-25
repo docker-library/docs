@@ -26,8 +26,6 @@ knowing beforehand that `ssl.h` is required to build a dependent module.
 
 This stack is designed to be the foundation of a language-stack image.
 
-<!-- TODO: add an example -->
-
 # License
 
 View [license information](https://www.debian.org/social_contract#guidelines)
