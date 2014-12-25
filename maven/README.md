@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`3.2-jdk-6`, `3-jdk-6` (*jdk-6/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/2f22e2b/jdk-6/Dockerfile)
-- [`3.2-jdk-6-onbuild`, `3-jdk-6-onbuild` (*jdk-6/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/2f22e2b/jdk-6/onbuild/Dockerfile)
-- [`3.2-jdk-7`, `3-jdk-7`, `3.2`, `3`, `latest` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/2f22e2b/jdk-7/Dockerfile)
-- [`3.2-jdk-7-onbuild`, `3-jdk-7-onbuild`, `3.2-onbuild`, `3-onbuild`, `latest-onbuild` (*jdk-7/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/2f22e2b/jdk-7/onbuild/Dockerfile)
-- [`3.2-jdk-8`, `3-jdk-8` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/2f22e2b/jdk-8/Dockerfile)
-- [`3.2-jdk-8-onbuild`, `3-jdk-8-onbuild` (*jdk-8/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/2f22e2b/jdk-8/onbuild/Dockerfile)
+- [`3.2.5-jdk-6`, `3.2-jdk-6`, `3-jdk-6` (*jdk-6/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/84b934b2349c83b4ebda7f668b71ba53e60e9c83/jdk-6/Dockerfile)
+- [`3.2.5-jdk-6-onbuild`, `3.2-jdk-6-onbuild`, `3-jdk-6-onbuild` (*jdk-6/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/b022df671b603a9100ed9e75803ae32f753826a4/jdk-6/onbuild/Dockerfile)
+- [`3.2.5-jdk-7`, `3.2.5`, `3.2-jdk-7`, `3.2`, `3-jdk-7`, `3`, `latest` (*jdk-7/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/84b934b2349c83b4ebda7f668b71ba53e60e9c83/jdk-7/Dockerfile)
+- [`3.2.5-jdk-7-onbuild`, `3.2.5-onbuild`, `3.2-jdk-7-onbuild`, `3.2-onbuild`, `3-jdk-7-onbuild`, `3-onbuild`, `onbuild` (*jdk-7/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/b022df671b603a9100ed9e75803ae32f753826a4/jdk-7/onbuild/Dockerfile)
+- [`3.2.5-jdk-8`, `3.2-jdk-8`, `3-jdk-8` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/84b934b2349c83b4ebda7f668b71ba53e60e9c83/jdk-8/Dockerfile)
+- [`3.2.5-jdk-8-onbuild`, `3.2-jdk-8-onbuild`, `3-jdk-8-onbuild` (*jdk-8/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/b022df671b603a9100ed9e75803ae32f753826a4/jdk-8/onbuild/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
