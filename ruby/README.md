@@ -6,12 +6,12 @@
 - [`2.0.0-p598`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/ruby/blob/28f8a1a4ab78ffe868a03bdf6281b7db9db7fbca/2.0/Dockerfile)
 - [`2.0.0-p598-onbuild`, `2.0.0-onbuild`, `2.0-onbuild` (*2.0/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/2.0/onbuild/Dockerfile)
 - [`2.0.0-p598-wheezy`, `2.0.0-wheezy`, `2.0-wheezy` (*2.0/wheezy/Dockerfile*)](https://github.com/docker-library/ruby/blob/28f8a1a4ab78ffe868a03bdf6281b7db9db7fbca/2.0/wheezy/Dockerfile)
-- [`2.1.5`, `2.1`, `2`, `latest` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/7d72919217b5d99d085d485d57fad273a2a644b8/2.1/Dockerfile)
-- [`2.1.5-onbuild`, `2.1-onbuild`, `2-onbuild`, `onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/2.1/onbuild/Dockerfile)
-- [`2.1.5-wheezy`, `2.1-wheezy`, `2-wheezy`, `wheezy` (*2.1/wheezy/Dockerfile*)](https://github.com/docker-library/ruby/blob/7d72919217b5d99d085d485d57fad273a2a644b8/2.1/wheezy/Dockerfile)
-- [`2.2.0-rc1`, `2.2.0`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/ruby/blob/991bdc9cfbf6b1f1bc93dbcc9fc24d3507192afb/2.2/Dockerfile)
-- [`2.2.0-rc1-onbuild`, `2.2.0-onbuild`, `2.2-onbuild` (*2.2/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/991bdc9cfbf6b1f1bc93dbcc9fc24d3507192afb/2.2/onbuild/Dockerfile)
-- [`2.2.0-rc1-wheezy`, `2.2.0-wheezy`, `2.2-wheezy` (*2.2/wheezy/Dockerfile*)](https://github.com/docker-library/ruby/blob/991bdc9cfbf6b1f1bc93dbcc9fc24d3507192afb/2.2/wheezy/Dockerfile)
+- [`2.1.5`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/7d72919217b5d99d085d485d57fad273a2a644b8/2.1/Dockerfile)
+- [`2.1.5-onbuild`, `2.1-onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/2.1/onbuild/Dockerfile)
+- [`2.1.5-wheezy`, `2.1-wheezy` (*2.1/wheezy/Dockerfile*)](https://github.com/docker-library/ruby/blob/7d72919217b5d99d085d485d57fad273a2a644b8/2.1/wheezy/Dockerfile)
+- [`2.2.0`, `2.2`, `2`, `latest` (*2.2/Dockerfile*)](https://github.com/docker-library/ruby/blob/b7fefd2fa79882da90feb0718430680c77c5fa8b/2.2/Dockerfile)
+- [`2.2.0-onbuild`, `2.2-onbuild`, `2-onbuild`, `onbuild` (*2.2/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/b7fefd2fa79882da90feb0718430680c77c5fa8b/2.2/onbuild/Dockerfile)
+- [`2.2.0-wheezy`, `2.2-wheezy`, `2-wheezy`, `wheezy` (*2.2/wheezy/Dockerfile*)](https://github.com/docker-library/ruby/blob/b7fefd2fa79882da90feb0718430680c77c5fa8b/2.2/wheezy/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
