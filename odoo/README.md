@@ -53,8 +53,11 @@ changed and the link is thus broken.
 
 Restarting a PostgreSQL server does not affect the created databases.
 
-## Enter the container of an Odoo instance (e.g. to install the latest version of Odoo)
-	
+## Install the latest version of Odoo
+The Odoo package is built every night to include latest functionalities and improvements.
+To install the latest version of Odoo, enter the container of your Odoo instance
+and update your version of Odoo using `apt-get`.
+
 	docker exec -it odoo bash
 	# apt-get update
 	# apt-get install odoo
