@@ -44,6 +44,14 @@ need access outside the host, on `http://localhost:8080` with the following comm
 
     docker run --name some-django-app -p 8080:8080 -d my-django-app
 
+## Without a `Dockerfile`
+
+Of course, if you don't want to take advantage of magical and convenient
+`ONBUILD` triggers, you can always just use `docker run` directly to avoid
+having to add a `Dockerfile` to your project.
+
+    docker run --name some-django-app -v "$(pwd)":/usr/src/app -p 8080:8080 -d django bash -c "pip install -r requirements.txt && python manage.py runserver"
+
 # License
 
 View [license information](https://github.com/django/django/blob/master/LICENSE)
