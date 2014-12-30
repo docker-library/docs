@@ -26,7 +26,7 @@ emphasis on reusability and "pluggability" of components.
 
 ## Create a `Dockerfile` in your Django app project
 
-    FROM python:onbuild
+    FROM django:onbuild
 
 Put this file in the root of your app, next to the `requirements.txt`.
 
