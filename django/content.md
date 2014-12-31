@@ -37,4 +37,4 @@ Of course, if you don't want to take advantage of magical and convenient
 `ONBUILD` triggers, you can always just use `docker run` directly to avoid
 having to add a `Dockerfile` to your project.
 
-    docker run --name some-django-app -v "$(pwd)":/usr/src/app -p 8080:8080 -d django bash -c "pip install -r requirements.txt && python manage.py runserver"
+    docker run --name some-django-app -v "$(pwd)":/usr/src/app -w /usr/src/app -p 8080:8080 -d django bash -c "pip install -r requirements.txt && python manage.py runserver"
