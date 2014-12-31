@@ -14,8 +14,8 @@ The following Oracle Linux images are available:
 
 Version | Image Tag | Aliases
 ------- | :---------: | :-------
-[Oracle Linux 6.6](https://github.com/oracle/docker-images/blob/master/OracleLinux/6.6/Dockerfile) | oraclelinux:6.6 | oraclelinux:6.latest
-[Oracle Linux 7.0](https://github.com/oracle/docker-images/blob/master/OracleLinux/7.0/Dockerfile) | oraclelinux:7.0 | oraclelinux:7.latest, oraclelinux:latest
+[Oracle Linux 6.6](https://github.com/oracle/docker-images/blob/master/OracleLinux/6.6/Dockerfile) | oraclelinux:6.6 | oraclelinux:6
+[Oracle Linux 7.0](https://github.com/oracle/docker-images/blob/master/OracleLinux/7.0/Dockerfile) | oraclelinux:7.0 | oraclelinux:7, oraclelinux:latest
 
 All images ship pre-configured to install security errata, bugfixes and package updates from the Oracle Public Yum Server at [http://public-yum.oracle.com](http://public-yum.oracle.com).
 
