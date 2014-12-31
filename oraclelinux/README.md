@@ -13,10 +13,15 @@ The Oracle Linux images are intended for use in the **FROM** field of an applica
 The following Oracle Linux images are available:
 
 Version | Image Tag | Aliases
-------- | :---------: | :-------:
+------- | :---------: | :-------
 [Oracle Linux 6.5](https://github.com/oracle/docker-images/blob/master/OracleLinux/6.5/Dockerfile) | oraclelinux:6.5 | -
 [Oracle Linux 6.6](https://github.com/oracle/docker-images/blob/master/OracleLinux/6.6/Dockerfile) | oraclelinux:6.6 | oraclelinux:6.latest
-[Oracle Linux 7.0](https://github.com/oracle/docker-images/blob/master/OracleLinux/7.0/Dockerfile) | oraclelinux:7.0 | oraclelinux:7.latest
+[Oracle Linux 7.0](https://github.com/oracle/docker-images/blob/master/OracleLinux/7.0/Dockerfile) | oraclelinux:7.0 | oraclelinux:7.latest, oraclelinux:latest
+
+**NOTE:** Older Oracle Linux versions are provided for reference purposes only and may ship with with known vulnerabilities. Oracle _strongly_
+recommends only using the latest versions for production purposes.
+
+All images ship pre-configured to install security errata, bugfixes and package updates from the Oracle Public Yum Server at [http://public-yum.oracle.com](http://public-yum.oracle.com).
 
 # License
 Oracle Linux is released under the GPLv2. See the ```LICENSE``` file in this repository for more information.
