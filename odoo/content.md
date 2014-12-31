@@ -21,9 +21,6 @@ This image requires a running PostgreSQL server.
 
 	docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres
 
-Setting POSTGRES\_USER and POSTGRES\_PASSWORD to odoo is required for the Odoo 
-image to use the Postgres server.
-
 ## Start an Odoo instance
 
 	docker run -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo
