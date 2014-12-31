@@ -65,6 +65,27 @@ same commands to build and run:
 Where `src/` is the directory containing all your php code and `config/`
 contains your `php.ini` file.
 
+### How to install more PHP extensions
+
+We provide a convenient script named `docker-php-ext-install`, you can use it to
+easily install PHP extension.
+
+For example, if you want to have a PHP container with `gd` and `mcrypt` 
+extensions, you can write your own Dockerfile like this:
+
+    FROM php:5.5.19-fpm
+    # Install modules
+    RUN apt-get update && apt-get install -y \
+        apt-utils re2c g++ \
+        zlib1g zlib1g-dbg zlib1g-dev zlibc \
+        libpng12-0 libpng12-dev libpng3 \
+        libjpeg9 libjpeg9-dbg libjpeg9-dev \
+        libmcrypt-dev libmcrypt4 mcrypt \
+        && docker-php-ext-install gd mcrypt
+    CMD ["php-fpm"]
+
+Remember, you must install dependencies for your extensions manually.
+
 ### Without a `Dockerfile`
 
 If you don't want to include a `Dockerfile` in your project, it is sufficient to
