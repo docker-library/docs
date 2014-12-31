@@ -19,17 +19,17 @@ Put this file in the root of your app, next to the `requirements.txt`.
 
 This image includes multiple `ONBUILD` triggers which should cover most
 applications. The build will `COPY . /usr/src/app`, `RUN pip install`,
-`EXPOSE 8080`, and set the default command to `python manage.py runserver`.
+`EXPOSE 8000`, and set the default command to `python manage.py runserver`.
 
 You can then build and run the Docker image:
 
     docker build -t my-django-app .
     docker run --name some-django-app -d my-django-app
 
-You can test it by visiting `http://container-ip:8080` in a browser or, if you
-need access outside the host, on `http://localhost:8080` with the following command:
+You can test it by visiting `http://container-ip:8000` in a browser or, if you
+need access outside the host, on `http://localhost:8000` with the following command:
 
-    docker run --name some-django-app -p 8080:8080 -d my-django-app
+    docker run --name some-django-app -p 8000:8000 -d my-django-app
 
 ## Without a `Dockerfile`
 
@@ -37,4 +37,13 @@ Of course, if you don't want to take advantage of magical and convenient
 `ONBUILD` triggers, you can always just use `docker run` directly to avoid
 having to add a `Dockerfile` to your project.
 
-    docker run --name some-django-app -v "$(pwd)":/usr/src/app -w /usr/src/app -p 8080:8080 -d django bash -c "pip install -r requirements.txt && python manage.py runserver"
+    docker run --name some-django-app -v "$(pwd)":/usr/src/app -w /usr/src/app -p 8000:8000 -d django bash -c "pip install -r requirements.txt && python manage.py runserver 0.0.0.0:8000"
+
+## Bootstrap a new Django Application
+
+If you want to generate the scaffolding for a new Django project, you can do the
+following:
+
+    docker run -it --rm --user "$(id -u)" -v "$(pwd)":/usr/src/app -w /usr/src/app django django-admin.py startproject mysite
+
+This will create a sub-directory named `mysite` inside your current directory.
