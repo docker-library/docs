@@ -44,6 +44,6 @@ having to add a `Dockerfile` to your project.
 If you want to generate the scaffolding for a new Django project, you can do the
 following:
 
-    docker run -it --rm --user "$(id -u)" -v "$(pwd)":/usr/src/app -w /usr/src/app django django-admin.py startproject mysite
+    docker run -it --rm --user "$(id -u):$(id -g)" -v "$(pwd)":/usr/src/app -w /usr/src/app django django-admin.py startproject mysite
 
 This will create a sub-directory named `mysite` inside your current directory.
