@@ -1,11 +1,27 @@
 # Oracle Linux
 
-This serves as the official Oracle Linux images for both Oracle Linux 6 and 7.
-Customers with Oracle Linux Support are eligible to log support requests for
-Docker containers running these images.
+%%LOGO%%
 
-The `oraclelinux:latest` tag points to the latest stable release, currently
-Oracle Linux 7. The latest Oracle Linux 6 release is available at `oraclelinux:6`.
+Oracle Linux is an open-source operating system available under the GNU General
+Public License (GPLv2). Suitable for general purpose or Oracle workloads, it 
+benefits from rigorous testing of more than 128,000 hours per day with real-
+world workloads and includes unique innovations such as Ksplice for zero-
+downtime kernel patching, DTrace for real-time diagnostics, the powerful Btrfs 
+file system, and more.
 
-The images are automatically configured to install updates from the Oracle
-Public Yum Server at http://public-yum.oracle.com.
+## How to use these images
+
+The Oracle Linux images are intended for use in the **FROM** field of an 
+application's ```Dockerfile```. For example, to use Oracle Linux 6 as the 
+base of an image, specify ```FROM oraclelinux:6```.
+
+## Official Resources
+* [Learn more about Oracle Linux] (http://oracle.com/linux)
+* [Unbreakable Linux Network] (https://linux.oracle.com)
+* [Oracle Public Yum] (http://public-yum.oracle.com)
+
+## Social media resources
+* [Twitter] (https://twitter.com/ORCL_Linux)
+* [Facebook] (https://www.facebook.com/OracleLinux)
+* [YouTube] (https://www.youtube.com/user/OracleLinuxChannel)
+* [Blog] (http://blogs.oracle.com/linux)

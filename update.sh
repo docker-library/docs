@@ -40,6 +40,7 @@ declare -A otherRepos=(
 	[neurodebian]='https://github.com/neurodebian/dockerfiles'
 	[nginx]='https://github.com/nginxinc/docker-nginx'
 	[opensuse]='https://github.com/openSUSE/docker-containers-build'
+        [oraclelinux]='https://github.com/oracle/docker-images'
 	[perl]='https://github.com/Perl/docker-perl'
 	[registry]='https://github.com/docker/docker-registry'
 	[r-base]='https://github.com/rocker-org/rocker'
