@@ -23,15 +23,17 @@ file system, and more.
 ## How to use these images
 
 The Oracle Linux images are intended for use in the **FROM** field of an 
-application's ```Dockerfile```. For example, to use Oracle Linux 6 as the 
-base of an image, specify ```FROM oraclelinux:6```.
+application's `Dockerfile`. For example, to use Oracle Linux 6 as the 
+base of an image, specify `FROM oraclelinux:6`.
 
 ## Official Resources
+
 * [Learn more about Oracle Linux] (http://oracle.com/linux)
 * [Unbreakable Linux Network] (https://linux.oracle.com)
 * [Oracle Public Yum] (http://public-yum.oracle.com)
 
 ## Social media resources
+
 * [Twitter] (https://twitter.com/ORCL_Linux)
 * [Facebook] (https://www.facebook.com/OracleLinux)
 * [YouTube] (https://www.youtube.com/user/OracleLinuxChannel)
@@ -51,6 +53,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 # User Feedback
 
 ## Customer Support
+
 Oracle provides support to Oracle Linux subscription customers via the 
 [My Oracle Support] (https://support.oracle.com) portal. The Oracle Linux 
 Docker images are covered by Oracle Linux Basic and Premier support 
@@ -63,7 +66,7 @@ For Oracle Linux users without a paid support subscription, the following resour
 are available:
 
 * The [Oracle Linux Forum] (https://community.oracle.com/community/server_%26_storage_systems/linux/oracle_linux) on the [Oracle Technology Network Community] (https://community.oracle.com/welcome).
-* The ```#oraclelinux``` IRC channel on Freenode.
+* The `#oraclelinux` IRC channel on Freenode.
 
 ## Contributing
 
