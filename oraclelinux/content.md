@@ -12,15 +12,17 @@ file system, and more.
 ## How to use these images
 
 The Oracle Linux images are intended for use in the **FROM** field of an 
-application's ```Dockerfile```. For example, to use Oracle Linux 6 as the 
-base of an image, specify ```FROM oraclelinux:6```.
+application's `Dockerfile`. For example, to use Oracle Linux 6 as the 
+base of an image, specify `FROM oraclelinux:6`.
 
 ## Official Resources
+
 * [Learn more about Oracle Linux] (http://oracle.com/linux)
 * [Unbreakable Linux Network] (https://linux.oracle.com)
 * [Oracle Public Yum] (http://public-yum.oracle.com)
 
 ## Social media resources
+
 * [Twitter] (https://twitter.com/ORCL_Linux)
 * [Facebook] (https://www.facebook.com/OracleLinux)
 * [YouTube] (https://www.youtube.com/user/OracleLinuxChannel)
