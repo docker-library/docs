@@ -59,6 +59,14 @@ and update your version of Odoo using `apt-get`.
 	# apt-get update
 	# apt-get install odoo
 
+## Run Odoo with a custom configuration
+
+The default configuration file for the server (located at `/etc/odoo/openerp-server.conf`)
+can be overriden at startup using volumes. Suppose you have a custom configuration
+at `/path/to/config/openerp-server.conf`, then
+
+	docker run -v /path/to/config:/etc/odoo -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo
+
 ## Run multiple Odoo instances
 	
 	docker run -p 127.0.0.1:8070:8069 --name odoo2 --link db:db -t odoo
