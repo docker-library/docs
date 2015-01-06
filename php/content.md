@@ -70,13 +70,14 @@ contains your `php.ini` file.
 We provide a convenient script named `docker-php-ext-install`, you can use it to
 easily install PHP extension.
 
-For example, if you want to have a PHP container with `gd` and `mcrypt` 
-extensions, you can write your own Dockerfile like this:
+For example, if you want to have a PHP-FPM image with `gd` and `mcrypt` 
+extensions, you can inheriting the base image that you like, and write your own 
+Dockerfile like this:
 
     FROM php:5.5.19-fpm
     # Install modules
     RUN apt-get update && apt-get install -y \
-        apt-utils re2c g++ \
+        apt-utils re2c \
         zlib1g zlib1g-dbg zlib1g-dev zlibc \
         libpng12-0 libpng12-dev libpng3 \
         libjpeg9 libjpeg9-dbg libjpeg9-dev \
