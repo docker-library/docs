@@ -40,15 +40,6 @@ changed and the link is thus broken.
 
 Restarting a PostgreSQL server does not affect the created databases.
 
-## Install the latest version of Odoo
-The Odoo package is built every night to include latest functionalities and improvements.
-To install the latest version of Odoo, enter the container of your Odoo instance
-and update your version of Odoo using `apt-get`.
-
-	docker exec -it odoo bash
-	# apt-get update
-	# apt-get install odoo
-
 ## Run Odoo with a custom configuration
 
 The default configuration file for the server (located at `/etc/odoo/openerp-server.conf`)
@@ -67,7 +58,7 @@ host and container ports differ (e.g. 8070 and 8069), one has to set,
 in Odoo, Settings->Parameters->System Parameters (requires technical features), 
 web.base.url to the container port (e.g. 127.0.0.1:8069).
 
-## Access an existing database with a new Odoo instance
+# How to upgrade this image
 Suppose you created a database from an Odoo instance named old-odoo, and you 
 want to access this database from a new Odoo instance named new-odoo, e.g. 
 because you've just downloaded a newer Odoo image.
