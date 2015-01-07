@@ -72,7 +72,7 @@ easily install PHP extension.
 
 For example, if you want to have a PHP-FPM image with `gd` and `mcrypt` 
 extensions, you can inheriting the base image that you like, and write your own 
-Dockerfile like this:
+`Dockerfile` like this:
 
     FROM php:5.5.19-fpm
     # Install modules
