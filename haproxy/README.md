@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 - [`1.4.25`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/40cd6587e7da3d247ab2e9fede5021f30a1e773e/1.4/Dockerfile)
-- [`1.5.9`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/40cd6587e7da3d247ab2e9fede5021f30a1e773e/1.5/Dockerfile)
+- [`1.5.10`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/424fd7e5b610dcea31ffb0f945c2a0da3b6740d3/1.5/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
