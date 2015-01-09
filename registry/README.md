@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `0.9.0` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.9.0/Dockerfile)
+- [`latest`, `0.9.1` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.9.1/Dockerfile)
 - [`0.8.1` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.8.1/Dockerfile)
 
 For more information about this image and its history, please see the [relevant

@@ -31,7 +31,8 @@
 - [`1.577` (*1.577/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.577/Dockerfile)
 - [`1.578` (*1.578/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.578/Dockerfile)
 - [`1.579` (*1.579/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.579/Dockerfile)
-- [`1.580.1`, `latest` (*1.580.1/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.580.1/Dockerfile)
+- [`1.580.1` (*1.580.1/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.580.1/Dockerfile)
+- [`1.580.2`, `latest` (*1.580.2/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/c39540d22e2a9c20e691cbdc4c9c54aee77be357/1.580.2/Dockerfile)
 - [`1.580` (*1.580/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.580/Dockerfile)
 - [`1.581` (*1.581/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.581/Dockerfile)
 - [`1.582` (*1.582/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.582/Dockerfile)
@@ -44,7 +45,11 @@
 - [`1.589` (*1.589/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.589/Dockerfile)
 - [`1.590` (*1.590/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.590/Dockerfile)
 - [`1.591` (*1.591/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.591/Dockerfile)
-- [`1.592`, `weekly` (*1.592/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.592/Dockerfile)
+- [`1.592` (*1.592/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/40c3e3f46939b9f9dcf8d46e62fa7daa80485588/1.592/Dockerfile)
+- [`1.593` (*1.593/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/c39540d22e2a9c20e691cbdc4c9c54aee77be357/1.593/Dockerfile)
+- [`1.594` (*1.594/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/c39540d22e2a9c20e691cbdc4c9c54aee77be357/1.594/Dockerfile)
+- [`1.595` (*1.595/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/c39540d22e2a9c20e691cbdc4c9c54aee77be357/1.595/Dockerfile)
+- [`1.596`, `weekly` (*1.596/Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/c39540d22e2a9c20e691cbdc4c9c54aee77be357/1.596/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
