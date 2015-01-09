@@ -44,3 +44,18 @@ configuration in as `/usr/local/apache2/conf/httpd.conf`.
 
     FROM httpd:2.4
     COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
+
+#### SSL/HTTPS
+
+If you want to run your web traffic over SSL, the simplest setup is to `COPY` or
+mount (`-v`) your `server.crt` and `server.key` into `/usr/local/apache2/conf/`
+and then customize the `/usr/local/apache2/conf/httpd.conf` by removing the
+comment from the line with `#Include conf/extra/httpd-ssl.conf`.  This config
+file will use the certificate files previously added and tell the daemon to also
+listen on port 443. Be sure to also add something like `-p 443:443` to your
+`docker run` to forward the https port.
+
+The previous steps should work well for development, but we recommend
+customizing your conf files for production, see
+[httpd.apache.org](https://httpd.apache.org/docs/2.2/ssl/ssl_faq.html) for more
+information about SSL setup.
