@@ -27,7 +27,7 @@ Zend Server is shared on [Docker-Hub] as **php-zendserver**.
 
         $ docker run php-zendserver
 
-- You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;'  to the 'docker run' command. Availible PHP version are 5.5 & 5.6 (5.5 is the default) and Zend Server 8 or 7
+- You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;'  to the 'docker run' command. Availible PHP version are 5.5 & 5.6 (5.6 is the default) and Zend Server 8 or 7
 (for example: php-zendserver:8.0-php5.6).
 
 - To start a Zend Server cluster, execute the following command for each cluster node:
@@ -63,6 +63,13 @@ For clustered instances:
 Please note, that when running multiple instances only one instance can be bound to a port.
 If you are running a cluster, either assign a port redirect to one node only, or assign a different port to each container.
 
+#### Adding application files
+Application files can be automatically pulled from a Git repo by setting the **GIT_URL** env var to the repo's URL. 
+Alternatively, if building an image from Dockerfile, place the app files in the "app/" folder.
+
+The files will be copied to the containers /var/www/html folder and defined in Zend Server as the default app.
+An example index.html file is included. this feature is available in Zend Server 8 and above.
+
 #### Env variables
 Env variables are passed in the run command with the "-e" switch.
 
@@ -70,6 +77,9 @@ Env variables are passed in the run command with the "-e" switch.
 
 To specify a pre-defined admin password for Zend Server use:
 - ZS_ADMIN_PASSWORD
+
+Automatically Deploy an app from Git URL:
+- GIT_URL 
 
 MySQL vars for clustered ops. *ALL* are required for the node to properly join a cluster:
 -  MYSQL_HOSTNAME - ip or hostname of MySQL database
