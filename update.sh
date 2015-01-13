@@ -39,6 +39,7 @@ declare -A otherRepos=(
 	[mono]='https://github.com/mono/docker'
 	[neurodebian]='https://github.com/neurodebian/dockerfiles'
 	[nginx]='https://github.com/nginxinc/docker-nginx'
+	[node]='https://github.com/joyent/docker-node'
 	[odoo]='https://github.com/odoo/docker'
 	[opensuse]='https://github.com/openSUSE/docker-containers-build'
 	[oraclelinux]='https://github.com/oracle/docker-images'
