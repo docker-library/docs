@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/0c90527ef908add1f125406a81519f9626d982d3/8.0/Dockerfile)
+- [`8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/3a6e42c7a7698196dd42dc7c4b5782ab50885f89/8.0/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
