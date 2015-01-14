@@ -14,7 +14,7 @@ echo
 	echo
 	echo '$ docker images hello-world'
 	docker images hello-world | awk -F'  +' '{ print $1"\t"$2"\t"$3"\t"$5 }' | column -t -s$'\t'
-} | sed 's/^/    /'
+} | sed 's/^/    /;s/ +$//'
 
 echo
 echo '%%LOGO%%'
