@@ -31,7 +31,7 @@ R is a GNU project. The source code for the R software environment is written
 primarily in C, Fortran, and R. R is freely available under the GNU General
 Public License, and pre-compiled binary versions are provided for various
 operating systems. R uses a command line interface; however, several
-graphical user interfaces are available for use with R. 
+graphical user interfaces are available for use with R.
 
 > [R FAQ](http://cran.r-project.org/doc/FAQ/R-FAQ.html#What-is-R_003f)
 > [wikipedia.org/wiki/R_(programming_language)](http://en.wikipedia.org/wiki/R_(programming_language))
@@ -112,7 +112,7 @@ You are invited to contribute new features, fixes, or updates, large or small;
 we are always thrilled to receive pull requests, and do our best to process them
 as fast as we can.
 
-Before you start to code, we recommend discussing your plans 
+Before you start to code, we recommend discussing your plans
 through a [GitHub issue](https://github.com/rocker-org/rocker/issues), especially for more ambitious
 contributions. This gives other contributors a chance to point you in the right
 direction, give you feedback on your design, and help you find out if someone

@@ -16,19 +16,19 @@ repo](https://github.com/docker-library/official-images).
 ## sources.list
 
     $ docker run ubuntu:14.04 grep -v '^#' /etc/apt/sources.list
-    
+
     deb http://archive.ubuntu.com/ubuntu/ trusty main restricted
     deb-src http://archive.ubuntu.com/ubuntu/ trusty main restricted
-    
+
     deb http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted
     deb-src http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted
-    
+
     deb http://archive.ubuntu.com/ubuntu/ trusty universe
     deb-src http://archive.ubuntu.com/ubuntu/ trusty universe
     deb http://archive.ubuntu.com/ubuntu/ trusty-updates universe
     deb-src http://archive.ubuntu.com/ubuntu/ trusty-updates universe
-    
-    
+
+
     deb http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
     deb-src http://archive.ubuntu.com/ubuntu/ trusty-security main restricted
     deb http://archive.ubuntu.com/ubuntu/ trusty-security universe
@@ -37,19 +37,19 @@ repo](https://github.com/docker-library/official-images).
 -
 
     $ docker run ubuntu:12.04 cat /etc/apt/sources.list
-    
+
     deb http://archive.ubuntu.com/ubuntu/ precise main restricted
     deb-src http://archive.ubuntu.com/ubuntu/ precise main restricted
-    
+
     deb http://archive.ubuntu.com/ubuntu/ precise-updates main restricted
     deb-src http://archive.ubuntu.com/ubuntu/ precise-updates main restricted
-    
+
     deb http://archive.ubuntu.com/ubuntu/ precise universe
     deb-src http://archive.ubuntu.com/ubuntu/ precise universe
     deb http://archive.ubuntu.com/ubuntu/ precise-updates universe
     deb-src http://archive.ubuntu.com/ubuntu/ precise-updates universe
-    
-    
+
+
     deb http://archive.ubuntu.com/ubuntu/ precise-security main restricted
     deb-src http://archive.ubuntu.com/ubuntu/ precise-security main restricted
     deb http://archive.ubuntu.com/ubuntu/ precise-security universe
@@ -77,7 +77,7 @@ You are invited to contribute new features, fixes, or updates, large or small;
 we are always thrilled to receive pull requests, and do our best to process them
 as fast as we can.
 
-Before you start to code, we recommend discussing your plans 
+Before you start to code, we recommend discussing your plans
 through a [GitHub issue](https://github.com/tianon/docker-brew-ubuntu-core/issues), especially for more ambitious
 contributions. This gives other contributors a chance to point you in the right
 direction, give you feedback on your design, and help you find out if someone

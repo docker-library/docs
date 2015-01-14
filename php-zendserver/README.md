@@ -12,7 +12,7 @@ repo](https://github.com/docker-library/official-images).
 What is Zend Server?
 ==================
 
-Zend Server is the integrated application platform for PHP mobile and web apps. 
+Zend Server is the integrated application platform for PHP mobile and web apps.
 Zend Server provides you with a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the all-new Z-Ray.
 ###Boost your Development with Z-Ray
 Using Zend Server Z-Ray is akin to wearing X-Ray goggles, effortlessly giving developers deep insight into how their code is running as they are developing it – all without having to change any of their habits or workflow. With Z-Ray, developers can immediately understand the impact of their code changes, enabling them to both improve quality and solve issues long before their code reaches production. In addition to the obvious benefits of this ‘Left Shifting’ – better performance, fewer production issues and faster recovery times – using Z-Ray is also downright fun!

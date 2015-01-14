@@ -31,7 +31,7 @@ for repoDir in "${repoDirs[@]}"; do
 		# skip non-github.com for now
 		continue
 	fi
-	
+
 	# split out some data
 	gitUrl="${repoDir%%@*}"
 	commitDir="${repoDir#*@}"
@@ -40,7 +40,7 @@ for repoDir in "${repoDirs[@]}"; do
 	if [ "$dir" = "$commitDir" ]; then
 		dir=''
 	fi
-	
+
 	# sanitize some data
 	gitUrl="${gitUrl#git://}"
 	gitUrl="${gitUrl%/}"
@@ -48,9 +48,9 @@ for repoDir in "${repoDirs[@]}"; do
 	dir="${dir#/}"
 	dir="${dir%/}"
 	[ -z "$dir" ] || dir="$dir/"
-	
+
 	url="https://$gitUrl/blob/$commit/${dir}Dockerfile"
-	
+
 	echo '- ['"${repoDirTags["$repoDir"]}"' (*'"${dir}Dockerfile"'*)]('"$url"')'
 done
 
