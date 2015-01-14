@@ -65,13 +65,6 @@ for repo in "${repos[@]}"; do
 			gitRepo="https://github.com/docker-library/$repo"
 		fi
 
-		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null || true)"
-		if [ "$mailingList" ]; then
-			mailingList=" $mailingList "
-		else
-			mailingList=' '
-		fi
-
 		dockerVersions="$(cat "$repo/docker-versions.md" 2>/dev/null || cat 'docker-versions.md')"
 
 		userFeedback="$(cat "$repo/user-feedback.md" 2>/dev/null || cat 'user-feedback.md')"
@@ -109,9 +102,6 @@ for repo in "${repos[@]}"; do
 
 		echo '  USER-FEEDBACK => '"$repo"'/user-feedback.md'
 		replace_field "$repo" 'USER-FEEDBACK' "$userFeedback"
-
-		echo '  MAILING-LIST => '"$repo"'/mailing-list.md'
-		replace_field "$repo" 'MAILING-LIST' "$mailingList" '\s*'
 
 		echo '  REPO => "'"$repo"'"'
 		replace_field "$repo" 'REPO' "$repo"
