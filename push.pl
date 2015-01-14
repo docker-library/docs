@@ -61,16 +61,16 @@ Mojo::Util::monkey_patch 'Mojo::UserAgent::CookieJar', find => sub {
 
 sub get_form_bits {
 	my $form = shift;
-	
+
 	my $ret = {};
-	
+
 	$form->find('input, textarea')->grep(sub {
 		!$_->match('input[type=submit], input[type=reset], input[type=button]')
 		&& defined($_->attr('name'))
 	})->each(sub {
 		my $e = shift;
 		my $name = $e->attr('name');
-		
+
 		my $val;
 		if ($e->type eq 'textarea') {
 			$val = $e->text;
@@ -78,13 +78,13 @@ sub get_form_bits {
 		else {
 			$val = $e->attr('value');
 		}
-		
+
 		$val = trim('' . $val);
 		$val =~ s!\r\n|\r!\n!g;
-		
+
 		$ret->{$name} = $val;
 	});
-	
+
 	return $ret;
 }
 
@@ -124,29 +124,29 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	$repo =~ s!/+$!!;
 	$repo = '/_/' . $repo unless $repo =~ m!/!;
 	$repo = '/' . $repo unless $repo =~ m!^/!;
-	
+
 	my $repoName = $repo;
 	$repoName =~ s!^.*/!!; # 'hylang', 'perl', etc
-	
+
 	my $shortFile = $repoName . '/README-short.txt';
 	my $short = slurp $shortFile or warn 'missing ' . $shortFile;
 	$short = trim(decode('UTF-8', $short));
-	
+
 	my $longFile = $repoName . '/README.md';
 	my $long = slurp $longFile or warn 'missing ' . $longFile;
 	$long = trim(decode('UTF-8', $long));
-	
+
 	my $repoUrl = 'https://registry.hub.docker.com' . $repo . '/settings/';
 	my $repoTx = $ua->get($repoUrl);
 	die 'failed to get: ' . $repoUrl unless $repoTx->success;
-	
+
 	my $settingsForm = $repoTx->res->dom('form[name="repository_settings"]')->first;
 	die 'failed to find form on ' . $repoUrl unless $settingsForm;
 	my $settingsBits = get_form_bits($settingsForm);
-	
+
 	my $hubShort = $settingsBits->{description};
 	my $hubLong = $settingsBits->{full_description};
-	
+
 	if ($hubShort ne $short) {
 		my $file = File::Temp->new(SUFFIX => '.txt');
 		my $filename = $file->filename;
@@ -154,7 +154,7 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 		system('vimdiff', $filename, $shortFile) == 0 or die "vimdiff on $filename and $shortFile failed";
 		$hubShort = trim(decode('UTF-8', slurp($filename)));
 	}
-	
+
 	if ($hubLong ne $long) {
 		my $file = File::Temp->new(SUFFIX => '.md');
 		my $filename = $file->filename;
@@ -162,15 +162,15 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 		system('vimdiff', $filename, $longFile) == 0 or die "vimdiff on $filename and $longFile failed";
 		$hubLong = trim(decode('UTF-8', slurp($filename)));
 	}
-	
+
 	say 'no change to ' . $repoName . '; skipping' and next if $settingsBits->{description} eq $hubShort and $settingsBits->{full_description} eq $hubLong;
-	
+
 	$settingsBits->{description} = $hubShort;
 	$settingsBits->{full_description} = $hubLong;
-	
+
 	$repoTx = $ua->post($repoUrl => { Referer => $repoUrl } => form => $settingsBits);
 	die 'post to ' . $repoUrl . ' failed' unless $repoTx->success;
-	
+
 	my $alert = $repoTx->res->dom('.alert-error');
 	if ($alert->size) {
 		my $text = trim $alert->pluck('all_text');

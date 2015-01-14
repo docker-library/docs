@@ -21,7 +21,7 @@ R is a GNU project. The source code for the R software environment is written
 primarily in C, Fortran, and R. R is freely available under the GNU General
 Public License, and pre-compiled binary versions are provided for various
 operating systems. R uses a command line interface; however, several
-graphical user interfaces are available for use with R. 
+graphical user interfaces are available for use with R.
 
 > [R FAQ](http://cran.r-project.org/doc/FAQ/R-FAQ.html#What-is-R_003f)
 > [wikipedia.org/wiki/R_(programming_language)](http://en.wikipedia.org/wiki/R_(programming_language))

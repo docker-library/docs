@@ -93,7 +93,7 @@ jenkins_home) at any time.
 If your volume is inside a container - you can use `docker cp
 $ID:/var/jenkins_home` command to extract the data.
 
-## Attaching build executors 
+## Attaching build executors
 
 You can run builds on the master (out of the box) buf if you want to attach
 build slave servers: make sure you map the port: `-p 50000:50000` - which will
@@ -133,7 +133,7 @@ You are invited to contribute new features, fixes, or updates, large or small;
 we are always thrilled to receive pull requests, and do our best to process them
 as fast as we can.
 
-Before you start to code, we recommend discussing your plans 
+Before you start to code, we recommend discussing your plans
 through a [GitHub issue](https://github.com/cloudbees/jenkins-ci.org-docker/issues), especially for more ambitious
 contributions. This gives other contributors a chance to point you in the right
 direction, give you feedback on your design, and help you find out if someone

@@ -58,67 +58,57 @@ for repo in "${repos[@]}"; do
 	if [ -x "$repo/update.sh" ]; then
 		( set -x; "$repo/update.sh" )
 	fi
-	
+
 	if [ -e "$repo/content.md" ]; then
 		gitRepo="${otherRepos[$repo]}"
 		if [ -z "$gitRepo" ]; then
 			gitRepo="https://github.com/docker-library/$repo"
 		fi
-		
-		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null || true)"
-		if [ "$mailingList" ]; then
-			mailingList=" $mailingList "
-		else
-			mailingList=' '
-		fi
-		
+
 		dockerVersions="$(cat "$repo/docker-versions.md" 2>/dev/null || cat 'docker-versions.md')"
-		
+
 		userFeedback="$(cat "$repo/user-feedback.md" 2>/dev/null || cat 'user-feedback.md')"
-		
+
 		license="$(cat "$repo/license.md" 2>/dev/null || true)"
 		if [ "$license" ]; then
 			license=$'\n\n''# License'$'\n\n'"$license"
 		fi
-		
+
 		logo=
 		if [ -e "$repo/logo.png" ]; then
 			logo="![logo](https://raw.githubusercontent.com/docker-library/docs/master/$repo/logo.png)"
 		fi
-		
+
 		cp -v README-template.md "$repo/README.md"
-		
+
 		echo '  TAGS => ./generate-dockerfile-links-partial.sh'
 		replace_field "$repo" 'TAGS' "$(./generate-dockerfile-links-partial.sh "$repo")"
-		
+
 		echo '  CONTENT => '"$repo"'/content.md'
 		replace_field "$repo" 'CONTENT' "$(cat "$repo/content.md")"
-		
+
 		# has to be after CONTENT because it's contained in content.md
 		echo "  LOGO => $logo"
 		replace_field "$repo" 'LOGO' "$logo" '\s*'
-		
+
 		echo '  DOCKER-VERSIONS => '"$repo"'/docker-versions.md'
 		replace_field "$repo" 'DOCKER-VERSIONS' "$dockerVersions"
-		
+
 		echo '  DOCKER-LATEST => "'"$dockerLatest"'"'
 		replace_field "$repo" 'DOCKER-LATEST' "$dockerLatest"
-		
+
 		echo '  LICENSE => '"$repo"'/license.md'
 		replace_field "$repo" 'LICENSE' "$license"
-		
+
 		echo '  USER-FEEDBACK => '"$repo"'/user-feedback.md'
 		replace_field "$repo" 'USER-FEEDBACK' "$userFeedback"
-		
-		echo '  MAILING-LIST => '"$repo"'/mailing-list.md'
-		replace_field "$repo" 'MAILING-LIST' "$mailingList" '\s*'
-		
+
 		echo '  REPO => "'"$repo"'"'
 		replace_field "$repo" 'REPO' "$repo"
-		
+
 		echo '  GITHUB-REPO => "'"$gitRepo"'"'
 		replace_field "$repo" 'GITHUB-REPO' "$gitRepo"
-		
+
 		echo
 	else
 		echo >&2 "skipping $repo: missing repo/content.md"

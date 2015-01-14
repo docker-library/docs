@@ -13,7 +13,7 @@ repo](https://github.com/docker-library/official-images).
     $ docker run hello-world
     Hello from Docker.
     This message shows that your installation appears to be working correctly.
-    
+
     To generate this message, Docker took the following steps:
      1. The Docker client contacted the Docker daemon.
      2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
@@ -22,13 +22,13 @@ repo](https://github.com/docker-library/official-images).
         executable that produces the output you are currently reading.
      4. The Docker daemon streamed that output to the Docker client, which sent it
         to your terminal.
-    
+
     To try something more ambitious, you can run an Ubuntu container with:
      $ docker run -it ubuntu bash
-    
+
     For more examples and ideas, visit:
      http://docs.docker.com/userguide/
-    
+
     $ docker images hello-world
     REPOSITORY   TAG     IMAGE ID      VIRTUAL SIZE
     hello-world  latest  e45a5af57b00  910 B
@@ -57,7 +57,7 @@ You are invited to contribute new features, fixes, or updates, large or small;
 we are always thrilled to receive pull requests, and do our best to process them
 as fast as we can.
 
-Before you start to code, we recommend discussing your plans 
+Before you start to code, we recommend discussing your plans
 through a [GitHub issue](https://github.com/docker-library/hello-world/issues), especially for more ambitious
 contributions. This gives other contributors a chance to point you in the right
 direction, give you feedback on your design, and help you find out if someone

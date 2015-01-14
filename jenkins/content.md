@@ -34,7 +34,7 @@ jenkins_home) at any time.
 If your volume is inside a container - you can use `docker cp
 $ID:/var/jenkins_home` command to extract the data.
 
-## Attaching build executors 
+## Attaching build executors
 
 You can run builds on the master (out of the box) buf if you want to attach
 build slave servers: make sure you map the port: `-p 50000:50000` - which will
