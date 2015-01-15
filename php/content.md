@@ -67,25 +67,24 @@ contains your `php.ini` file.
 
 ### How to install more PHP extensions
 
-We provide a convenient script named `docker-php-ext-install`, you can use it to
+We provide two convenient scripts named `docker-php-ext-configure` and `docker-php-ext-install`, you can use them to
 easily install PHP extension.
 
-For example, if you want to have a PHP-FPM image with `gd` and `mcrypt` 
+For example, if you want to have a PHP-FPM image with `iconv`, `mcrypt` and `gd` 
 extensions, you can inheriting the base image that you like, and write your own 
 `Dockerfile` like this:
 
-    FROM php:5.5.19-fpm
+    FROM php:5.5-fpm
     # Install modules
     RUN apt-get update && apt-get install -y \
-        apt-utils re2c \
-        zlib1g zlib1g-dbg zlib1g-dev zlibc \
-        libpng12-0 libpng12-dev libpng3 \
-        libjpeg9 libjpeg9-dbg libjpeg9-dev \
-        libmcrypt-dev libmcrypt4 mcrypt \
-        && docker-php-ext-install gd mcrypt
+        libmcrypt-dev libpng12-dev libfreetype6-dev libjpeg62-turbo-dev \
+        && docker-php-ext-install iconv mcrypt \
+        && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-gd-dir=/usr/include/ \
+        && docker-php-ext-install gd
     CMD ["php-fpm"]
 
-Remember, you must install dependencies for your extensions manually.
+Remember, you must install dependencies for your extensions manually. If an extension needs custom `configure` arguments,
+you can use the `docker-php-ext-configure` script like this example.
 
 ### Without a `Dockerfile`
 
