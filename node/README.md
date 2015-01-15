@@ -1,14 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`0.10.35`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/docker-library/node/blob/a672ac6b898963aae94f25c5fb5cb64efd6c1ba4/0.10/Dockerfile)
-- [`0.10.35-onbuild`, `0.10-onbuild`, `0-onbuild`, `onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/c91ccfb473556858d42a2ae32ebe24d8263690a4/0.10/onbuild/Dockerfile)
-- [`0.10.35-slim`, `0.10-slim`, `0-slim`, `slim` (*0.10/slim/Dockerfile*)](https://github.com/docker-library/node/blob/a672ac6b898963aae94f25c5fb5cb64efd6c1ba4/0.10/slim/Dockerfile)
-- [`0.11.14`, `0.11` (*0.11/Dockerfile*)](https://github.com/docker-library/node/blob/a672ac6b898963aae94f25c5fb5cb64efd6c1ba4/0.11/Dockerfile)
-- [`0.11.14-onbuild`, `0.11-onbuild` (*0.11/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/ac05e7f96c477223f0d2da1817e84403363a65e8/0.11/onbuild/Dockerfile)
-- [`0.11.14-slim`, `0.11-slim` (*0.11/slim/Dockerfile*)](https://github.com/docker-library/node/blob/a672ac6b898963aae94f25c5fb5cb64efd6c1ba4/0.11/slim/Dockerfile)
-- [`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/docker-library/node/blob/a672ac6b898963aae94f25c5fb5cb64efd6c1ba4/0.8/Dockerfile)
-- [`0.8.28-onbuild`, `0.8-onbuild` (*0.8/onbuild/Dockerfile*)](https://github.com/docker-library/node/blob/ac05e7f96c477223f0d2da1817e84403363a65e8/0.8/onbuild/Dockerfile)
-- [`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/docker-library/node/blob/a672ac6b898963aae94f25c5fb5cb64efd6c1ba4/0.8/slim/Dockerfile)
+- [`0.10.35`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/joyent/docker-node/blob/21e69d768f26da8aade316a573673a2bf5bfeab7/0.10/Dockerfile)
+- [`0.10.35-onbuild`, `0.10-onbuild`, `0-onbuild`, `onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/21e69d768f26da8aade316a573673a2bf5bfeab7/0.10/onbuild/Dockerfile)
+- [`0.10.35-slim`, `0.10-slim`, `0-slim`, `slim` (*0.10/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/21e69d768f26da8aade316a573673a2bf5bfeab7/0.10/slim/Dockerfile)
+- [`0.11.14`, `0.11` (*0.11/Dockerfile*)](https://github.com/joyent/docker-node/blob/21e69d768f26da8aade316a573673a2bf5bfeab7/0.11/Dockerfile)
+- [`0.11.14-onbuild`, `0.11-onbuild` (*0.11/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/21e69d768f26da8aade316a573673a2bf5bfeab7/0.11/onbuild/Dockerfile)
+- [`0.11.14-slim`, `0.11-slim` (*0.11/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/21e69d768f26da8aade316a573673a2bf5bfeab7/0.11/slim/Dockerfile)
+- [`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/joyent/docker-node/blob/21e69d768f26da8aade316a573673a2bf5bfeab7/0.8/Dockerfile)
+- [`0.8.28-onbuild`, `0.8-onbuild` (*0.8/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/21e69d768f26da8aade316a573673a2bf5bfeab7/0.8/onbuild/Dockerfile)
+- [`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/21e69d768f26da8aade316a573673a2bf5bfeab7/0.8/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
@@ -82,7 +82,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 ## Issues
 
 If you have any problems with or questions about this image, please contact us
- through a [GitHub issue](https://github.com/docker-library/node/issues).
+ through a [GitHub issue](https://github.com/joyent/docker-node/issues).
 
 You can also reach many of the official image maintainers via the
 `#docker-library` IRC channel on [Freenode](https://freenode.net).
@@ -94,7 +94,7 @@ we are always thrilled to receive pull requests, and do our best to process them
 as fast as we can.
 
 Before you start to code, we recommend discussing your plans 
-through a [GitHub issue](https://github.com/docker-library/node/issues), especially for more ambitious
+through a [GitHub issue](https://github.com/joyent/docker-node/issues), especially for more ambitious
 contributions. This gives other contributors a chance to point you in the right
 direction, give you feedback on your design, and help you find out if someone
 else is working on the same thing.
