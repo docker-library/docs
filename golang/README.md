@@ -4,10 +4,10 @@
 - [`1.3.3-onbuild`, `1.3-onbuild` (*1.3/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/4d4b14164e50c089a09b9364697749dc7f764824/1.3/onbuild/Dockerfile)
 - [`1.3.3-cross`, `1.3-cross` (*1.3/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/acc4ed5ba8dfad17bd484ac858950bc6a6f9acde/1.3/cross/Dockerfile)
 - [`1.3.3-wheezy`, `1.3-wheezy` (*1.3/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/b13bdad8632705cd56f887ffe7320076b1b56754/1.3/wheezy/Dockerfile)
-- [`1.4.0`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/docker-library/golang/blob/dc0571dad14fc6ca163dbab21b88e51b3031b84c/1.4/Dockerfile)
-- [`1.4.0-onbuild`, `1.4-onbuild`, `1-onbuild`, `onbuild` (*1.4/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/dc0571dad14fc6ca163dbab21b88e51b3031b84c/1.4/onbuild/Dockerfile)
-- [`1.4.0-cross`, `1.4-cross`, `1-cross`, `cross` (*1.4/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/dc0571dad14fc6ca163dbab21b88e51b3031b84c/1.4/cross/Dockerfile)
-- [`1.4.0-wheezy`, `1.4-wheezy`, `1-wheezy`, `wheezy` (*1.4/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/dc0571dad14fc6ca163dbab21b88e51b3031b84c/1.4/wheezy/Dockerfile)
+- [`1.4.1`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/docker-library/golang/blob/c1baf037d71331eb0b8d4c70cff4c29cf124c5e0/1.4/Dockerfile)
+- [`1.4.1-onbuild`, `1.4-onbuild`, `1-onbuild`, `onbuild` (*1.4/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/c1baf037d71331eb0b8d4c70cff4c29cf124c5e0/1.4/onbuild/Dockerfile)
+- [`1.4.1-cross`, `1.4-cross`, `1-cross`, `cross` (*1.4/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/c1baf037d71331eb0b8d4c70cff4c29cf124c5e0/1.4/cross/Dockerfile)
+- [`1.4.1-wheezy`, `1.4-wheezy`, `1-wheezy`, `wheezy` (*1.4/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/c1baf037d71331eb0b8d4c70cff4c29cf124c5e0/1.4/wheezy/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
