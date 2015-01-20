@@ -1,6 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-
+- [`1.0.3`, `1.0`, `1`, `latest` (*1.0/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/6c86bcac232ec45efae098143559b1e037799338/1.0/Dockerfile)
+- [`1.0.3-onbuild`, `1.0-onbuild`, `1-onbuild`, `onbuild` (*1.0/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/6c86bcac232ec45efae098143559b1e037799338/1.0/onbuild/Dockerfile)
+- [`1.0.3-slim`, `1.0-slim`, `1-slim`, `slim` (*1.0/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/6c86bcac232ec45efae098143559b1e037799338/1.0/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
@@ -9,13 +11,14 @@ in the [`docker-library/official-images` GitHub
 repo](https://github.com/docker-library/official-images).
 
 ## What is io.js?
-*from [iojs.org/faq.html](https://iojs.org/faq.html)*
 
 io.js is a JavaScript platform built on Chrome's V8 runtime. This project began as a fork of Joyent's Node.js™ and is compatible with the npm ecosystem.
 
 Why? io.js aims to provide faster and predictable release cycles. It currently merges in the latest language, API and performance improvements to V8 while also updating libuv and other base libraries.
 
 This project aims to continue development of io.js under an "open governance model" as opposed to corporate stewardship.
+
+> [iojs.org/faq.html](https://iojs.org/faq.html)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/iojs/logo.png)
 
@@ -26,7 +29,7 @@ If you want to distribute your application on the docker registry, create a `Doc
 ```
 FROM iojs:onbuild
 
-# Expose the ports that your app uses. In Example:
+# Expose the ports that your app uses. For example:
 EXPOSE 8080
 ```
 

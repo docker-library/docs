@@ -1,11 +1,12 @@
 ## What is io.js?
-*from [iojs.org/faq.html](https://iojs.org/faq.html)*
 
 io.js is a JavaScript platform built on Chrome's V8 runtime. This project began as a fork of Joyent's Node.js™ and is compatible with the npm ecosystem.
 
 Why? io.js aims to provide faster and predictable release cycles. It currently merges in the latest language, API and performance improvements to V8 while also updating libuv and other base libraries.
 
 This project aims to continue development of io.js under an "open governance model" as opposed to corporate stewardship.
+
+> [iojs.org/faq.html](https://iojs.org/faq.html)
 
 %%LOGO%%
 
@@ -16,7 +17,7 @@ If you want to distribute your application on the docker registry, create a `Doc
 ```
 FROM iojs:onbuild
 
-# Expose the ports that your app uses. In Example:
+# Expose the ports that your app uses. For example:
 EXPOSE 8080
 ```
 
