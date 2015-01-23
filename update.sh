@@ -33,6 +33,7 @@ declare -A otherRepos=(
 	[hipache]='https://github.com/dotcloud/hipache'
 	[hylang]='https://github.com/hylang/hy'
 	[iojs]='https://github.com/iojs/docker-iojs'
+	[irssi]='https://github.com/jfrazelle/irssi'
 	[jenkins]='https://github.com/cloudbees/jenkins-ci.org-docker'
 	[jruby]='https://github.com/cpuguy83/docker-jruby'
 	[mageia]='https://github.com/juanluisbaptiste/docker-brew-mageia'
