@@ -20,6 +20,7 @@ replace_field() {
 }
 
 declare -A otherRepos=(
+	[biicode]='https://github.com/biicode/docker-biicode'
 	[busybox]='https://github.com/jpetazzo/docker-busybox'
 	[centos]='https://github.com/CentOS/sig-cloud-instance-images'
 	[cirros]='https://github.com/ewindisch/docker-cirros'
