@@ -74,7 +74,7 @@ For example, if you want to have a PHP-FPM image with `iconv`, `mcrypt` and `gd`
 extensions, you can inheriting the base image that you like, and write your own 
 `Dockerfile` like this:
 
-    FROM php:5.5-fpm
+    FROM php:5.6-fpm
     # Install modules
     RUN apt-get update && apt-get install -y \
         libmcrypt-dev libpng12-dev libfreetype6-dev libjpeg62-turbo-dev \
