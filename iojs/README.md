@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`1.0.3`, `1.0`, `1`, `latest` (*1.0/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/6c86bcac232ec45efae098143559b1e037799338/1.0/Dockerfile)
-- [`1.0.3-onbuild`, `1.0-onbuild`, `1-onbuild`, `onbuild` (*1.0/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/6c86bcac232ec45efae098143559b1e037799338/1.0/onbuild/Dockerfile)
-- [`1.0.3-slim`, `1.0-slim`, `1-slim`, `slim` (*1.0/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/6c86bcac232ec45efae098143559b1e037799338/1.0/slim/Dockerfile)
+- [`1.0.4`, `1.0`, `1`, `latest` (*1.0/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/39ab80a90ff9addd935d3acf1f5bc3eff49d6ffc/1.0/Dockerfile)
+- [`1.0.4-onbuild`, `1.0-onbuild`, `1-onbuild`, `onbuild` (*1.0/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/39ab80a90ff9addd935d3acf1f5bc3eff49d6ffc/1.0/onbuild/Dockerfile)
+- [`1.0.4-slim`, `1.0-slim`, `1-slim`, `slim` (*1.0/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/39ab80a90ff9addd935d3acf1f5bc3eff49d6ffc/1.0/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
