@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`0.10.35`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/joyent/docker-node/blob/ab7e765e3d0f8bb0fefa333faae90f8ea6b72677/0.10/Dockerfile)
-- [`0.10.35-onbuild`, `0.10-onbuild`, `0-onbuild`, `onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/4c84bad6279fe3f76cd0046f4d42eea90eb5818a/0.10/onbuild/Dockerfile)
-- [`0.10.35-slim`, `0.10-slim`, `0-slim`, `slim` (*0.10/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/ab7e765e3d0f8bb0fefa333faae90f8ea6b72677/0.10/slim/Dockerfile)
+- [`0.10.36`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/joyent/docker-node/blob/d23f190e500e91ecc636878a079ff971b29eab3e/0.10/Dockerfile)
+- [`0.10.36-onbuild`, `0.10-onbuild`, `0-onbuild`, `onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/d23f190e500e91ecc636878a079ff971b29eab3e/0.10/onbuild/Dockerfile)
+- [`0.10.36-slim`, `0.10-slim`, `0-slim`, `slim` (*0.10/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/d23f190e500e91ecc636878a079ff971b29eab3e/0.10/slim/Dockerfile)
 - [`0.11.15`, `0.11` (*0.11/Dockerfile*)](https://github.com/joyent/docker-node/blob/ab7e765e3d0f8bb0fefa333faae90f8ea6b72677/0.11/Dockerfile)
 - [`0.11.15-onbuild`, `0.11-onbuild` (*0.11/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/70edbe38678c0eb88bcc14866ad1589053b21cc2/0.11/onbuild/Dockerfile)
 - [`0.11.15-slim`, `0.11-slim` (*0.11/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/ab7e765e3d0f8bb0fefa333faae90f8ea6b72677/0.11/slim/Dockerfile)
