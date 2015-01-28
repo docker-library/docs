@@ -1,15 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`8.0`, `8`, `jessie` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e4d0c608272bb00e25576fadda837d6d0380c13e/jessie/Dockerfile)
-- [`oldstable` (*oldstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e4d0c608272bb00e25576fadda837d6d0380c13e/oldstable/Dockerfile)
-- [`sid` (*sid/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e4d0c608272bb00e25576fadda837d6d0380c13e/sid/Dockerfile)
-- [`6.0.10`, `6.0`, `6`, `squeeze` (*squeeze/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e4d0c608272bb00e25576fadda837d6d0380c13e/squeeze/Dockerfile)
-- [`stable` (*stable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e4d0c608272bb00e25576fadda837d6d0380c13e/stable/Dockerfile)
-- [`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e4d0c608272bb00e25576fadda837d6d0380c13e/testing/Dockerfile)
-- [`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e4d0c608272bb00e25576fadda837d6d0380c13e/unstable/Dockerfile)
-- [`7.8`, `7`, `wheezy`, `latest` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/e4d0c608272bb00e25576fadda837d6d0380c13e/wheezy/Dockerfile)
-- [`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/ec9497f2742ff8def990c10d214194de145b9319/debian/rc-buggy/Dockerfile)
-- [`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/ec9497f2742ff8def990c10d214194de145b9319/debian/experimental/Dockerfile)
+- [`8.0`, `8`, `jessie` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/jessie/Dockerfile)
+- [`oldstable` (*oldstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/1d9a53a1df978176649f87b064a006cfda1480f1/oldstable/Dockerfile)
+- [`sid` (*sid/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/sid/Dockerfile)
+- [`6.0.10`, `6.0`, `6`, `squeeze` (*squeeze/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/1d9a53a1df978176649f87b064a006cfda1480f1/squeeze/Dockerfile)
+- [`stable` (*stable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/stable/Dockerfile)
+- [`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/testing/Dockerfile)
+- [`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/unstable/Dockerfile)
+- [`7.8`, `7`, `wheezy`, `latest` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/wheezy/Dockerfile)
+- [`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/90d86ad63c4a06b7d04d14ad830381b876183b3c/debian/rc-buggy/Dockerfile)
+- [`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/90d86ad63c4a06b7d04d14ad830381b876183b3c/debian/experimental/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file

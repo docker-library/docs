@@ -81,7 +81,7 @@ example, it is being set to "mysecretpassword".
 ### `POSTGRES_USER`
 
 This optional environment variable is used in conjunction with
-`POSTGRES_PASSWORD` to set a user and its password. This varible will create the
+`POSTGRES_PASSWORD` to set a user and its password. This variable will create the
 specified user with superuser power and a database with the same name. If it is
 not specified, then the default user of `postgres` will be used.
 

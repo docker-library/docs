@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`10.04.4`, `10.04`, `lucid` (*10.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/67a4f1c8a6be130c4badbcdf5bd327e7b93233a8/10.04/Dockerfile)
-- [`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/67a4f1c8a6be130c4badbcdf5bd327e7b93233a8/12.04/Dockerfile)
-- [`14.04.1`, `14.04`, `trusty`, `latest` (*14.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/67a4f1c8a6be130c4badbcdf5bd327e7b93233a8/14.04/Dockerfile)
-- [`14.10`, `utopic` (*14.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/67a4f1c8a6be130c4badbcdf5bd327e7b93233a8/14.10/Dockerfile)
-- [`15.04`, `vivid` (*15.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/67a4f1c8a6be130c4badbcdf5bd327e7b93233a8/15.04/Dockerfile)
-- [`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/67a4f1c8a6be130c4badbcdf5bd327e7b93233a8/devel/Dockerfile)
+- [`10.04.4`, `10.04`, `lucid` (*10.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/66a8e048ccd22ac1ec226a3a547bbbbc9793c18b/10.04/Dockerfile)
+- [`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/66a8e048ccd22ac1ec226a3a547bbbbc9793c18b/12.04/Dockerfile)
+- [`14.04.1`, `14.04`, `trusty`, `latest` (*14.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/fbf8004623fb87b3e429655dddff7f0c1b48861f/14.04/Dockerfile)
+- [`14.10`, `utopic` (*14.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/fbf8004623fb87b3e429655dddff7f0c1b48861f/14.10/Dockerfile)
+- [`15.04`, `vivid` (*15.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/fbf8004623fb87b3e429655dddff7f0c1b48861f/15.04/Dockerfile)
+- [`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/fbf8004623fb87b3e429655dddff7f0c1b48861f/devel/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
