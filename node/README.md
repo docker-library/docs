@@ -1,14 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`0.10.36`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/joyent/docker-node/blob/d23f190e500e91ecc636878a079ff971b29eab3e/0.10/Dockerfile)
+- [`0.10.36`, `0.10`, `0`, `latest` (*0.10/Dockerfile*)](https://github.com/joyent/docker-node/blob/01fe973d3a61a13efda3e5775a191525491ca64b/0.10/Dockerfile)
 - [`0.10.36-onbuild`, `0.10-onbuild`, `0-onbuild`, `onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/d23f190e500e91ecc636878a079ff971b29eab3e/0.10/onbuild/Dockerfile)
-- [`0.10.36-slim`, `0.10-slim`, `0-slim`, `slim` (*0.10/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/d23f190e500e91ecc636878a079ff971b29eab3e/0.10/slim/Dockerfile)
-- [`0.11.15`, `0.11` (*0.11/Dockerfile*)](https://github.com/joyent/docker-node/blob/ab7e765e3d0f8bb0fefa333faae90f8ea6b72677/0.11/Dockerfile)
+- [`0.10.36-slim`, `0.10-slim`, `0-slim`, `slim` (*0.10/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/01fe973d3a61a13efda3e5775a191525491ca64b/0.10/slim/Dockerfile)
+- [`0.11.15`, `0.11` (*0.11/Dockerfile*)](https://github.com/joyent/docker-node/blob/181c14e55927b5eb3fc40c0a59af60eee8402734/0.11/Dockerfile)
 - [`0.11.15-onbuild`, `0.11-onbuild` (*0.11/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/70edbe38678c0eb88bcc14866ad1589053b21cc2/0.11/onbuild/Dockerfile)
-- [`0.11.15-slim`, `0.11-slim` (*0.11/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/ab7e765e3d0f8bb0fefa333faae90f8ea6b72677/0.11/slim/Dockerfile)
-- [`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/joyent/docker-node/blob/ab7e765e3d0f8bb0fefa333faae90f8ea6b72677/0.8/Dockerfile)
+- [`0.11.15-slim`, `0.11-slim` (*0.11/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/181c14e55927b5eb3fc40c0a59af60eee8402734/0.11/slim/Dockerfile)
+- [`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/joyent/docker-node/blob/181c14e55927b5eb3fc40c0a59af60eee8402734/0.8/Dockerfile)
 - [`0.8.28-onbuild`, `0.8-onbuild` (*0.8/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/0c2ff5172aabc30ce38303d9bb340ae3e94f3a91/0.8/onbuild/Dockerfile)
-- [`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/ab7e765e3d0f8bb0fefa333faae90f8ea6b72677/0.8/slim/Dockerfile)
+- [`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/181c14e55927b5eb3fc40c0a59af60eee8402734/0.8/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
