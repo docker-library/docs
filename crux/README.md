@@ -1,7 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
 - [`latest`, `3.1` (*Dockerfile*)](https://github.com/therealprologic/docker-crux/blob/46c53a82b42907e3954c792adb2f47e436b537ba/Dockerfile)
-- [`3.0` (*Dockerfile*)](https://github.com/therealprologic/docker-crux/blob/7442b34f3c47665067abb0e8f724868f2899fc22/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
