@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `3.1.2` (*debian/r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/105fca2b42051c5cd0894da31839c99a9b7de320/debian/r-base/Dockerfile)
+- [`latest`, `3.1.2` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/fa244c6a6010d41fca568d2469be681959a1f3c4/r-base/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
