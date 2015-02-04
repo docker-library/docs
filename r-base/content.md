@@ -21,7 +21,7 @@ R is a GNU project. The source code for the R software environment is written
 primarily in C, Fortran, and R. R is freely available under the GNU General
 Public License, and pre-compiled binary versions are provided for various
 operating systems. R uses a command line interface; however, several
-graphical user interfaces are available for use with R. 
+graphical user interfaces are available for use with R.
 
 > [R FAQ](http://cran.r-project.org/doc/FAQ/R-FAQ.html#What-is-R_003f)
 > [wikipedia.org/wiki/R_(programming_language)](http://en.wikipedia.org/wiki/R_(programming_language))
@@ -42,7 +42,7 @@ Link the working directory to run R batch commands. We recommend specifying a
 non-root user when linking a volume to the container to avoid permission
 changes, as illustrated here:
 
-    docker run -ti --rm -v $(pwd):/home/docker -w /home/docker -u docker r-base R CMD check .
+    docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker r-base R CMD check .
 
 Alternatively, just run a bash session on the container first.  This allows a
 user to run batch commands and also edit and run scripts:

@@ -28,4 +28,4 @@ For many simple, single file projects, you may find it inconvenient to write a
 complete `Dockerfile`. In such cases, you can run a Perl script by using the
 Perl Docker image directly:
 
-    docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp perl:5.20 perl your-daemon-or-script.pl
+    docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp perl:5.20 perl your-daemon-or-script.pl
