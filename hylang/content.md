@@ -32,4 +32,4 @@ For many simple, single file projects, you may find it inconvenient to write a
 complete `Dockerfile`. In such cases, you can run a Hy script by using the Hy
 Docker image directly:
 
-    docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp hylang:0.10 hy your-daemon-or-script.hy
+    docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp hylang:0.10 hy your-daemon-or-script.hy

@@ -37,13 +37,13 @@ Of course, if you don't want to take advantage of magical and convenient
 `ONBUILD` triggers, you can always just use `docker run` directly to avoid
 having to add a `Dockerfile` to your project.
 
-    docker run --name some-django-app -v "$(pwd)":/usr/src/app -w /usr/src/app -p 8000:8000 -d django bash -c "pip install -r requirements.txt && python manage.py runserver 0.0.0.0:8000"
+    docker run --name some-django-app -v "$PWD":/usr/src/app -w /usr/src/app -p 8000:8000 -d django bash -c "pip install -r requirements.txt && python manage.py runserver 0.0.0.0:8000"
 
 ## Bootstrap a new Django Application
 
 If you want to generate the scaffolding for a new Django project, you can do the
 following:
 
-    docker run -it --rm --user "$(id -u):$(id -g)" -v "$(pwd)":/usr/src/app -w /usr/src/app django django-admin.py startproject mysite
+    docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app django django-admin.py startproject mysite
 
 This will create a sub-directory named `mysite` inside your current directory.

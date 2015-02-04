@@ -16,7 +16,7 @@ will bind to all network interfaces available to the container (by default,
 RethinkDB only accepts connections from `localhost`).
 
 ```bash
-docker run --name some-rethink -v "$(pwd):/data" -d rethinkdb
+docker run --name some-rethink -v "$PWD:/data" -d rethinkdb
 ```
 
 ## Connect the instance to an application

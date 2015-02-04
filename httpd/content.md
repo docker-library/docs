@@ -35,7 +35,7 @@ Then, run the commands to build and run the Docker image:
 If you don't want to include a `Dockerfile` in your project, it is sufficient to
 do the following:
 
-    docker run -it --rm --name my-apache-app -v "$(pwd)":/usr/local/apache2/htdocs/ httpd:2.4
+    docker run -it --rm --name my-apache-app -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
 
 ### Configuration
 

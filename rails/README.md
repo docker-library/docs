@@ -53,14 +53,14 @@ The `onbuid` tag expects a `Gemfile.lock` in your app directory. This `docker
 run` will help you generate one. Run it in the root of your app, next to the
 `Gemfile`:
 
-    docker run --rm -v "$(pwd)":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
+    docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
 
 ## Bootstrap a new Rails application
 
 If you want to generate the scaffolding for a new Rails project, you can do the
 following:
 
-    docker run -it --rm --user "$(id -u):$(id -g)" -v "$(pwd)":/usr/src/app -w /usr/src/app rails rails new webapp
+    docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new webapp
 
 This will create a sub-directory named `webapp` inside your current directory.
 

@@ -36,7 +36,7 @@ For many simple, single file projects, you may find it inconvenient to write a
 complete `Dockerfile`. In such cases, you can run a PHP script by using the PHP
 Docker image directly:
 
-    docker run -it --rm --name my-running-script -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp php:5.6-cli php your-script.php
+    docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:5.6-cli php your-script.php
 
 ## With Apache
 
@@ -91,4 +91,4 @@ you can use the `docker-php-ext-configure` script like this example.
 If you don't want to include a `Dockerfile` in your project, it is sufficient to
 do the following:
 
-    docker run -it --rm --name my-apache-php-app -v "$(pwd)":/var/www/html php:5.6-apache
+    docker run -it --rm --name my-apache-php-app -v "$PWD":/var/www/html php:5.6-apache
