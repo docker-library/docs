@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+thisDir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
+
 repo="$1"
 if [ -z "$repo" ]; then
 	echo >&2 "usage: $0 repo"
@@ -14,6 +16,7 @@ unset IFS
 
 repoDirs=()
 declare -A repoDirTags=()
+declare -A repoDirFirstTag=()
 
 for line in "${lines[@]}"; do
 	tag="$(echo "$line" | awk -F ': +' '{ print $1 }')"
@@ -24,6 +27,9 @@ for line in "${lines[@]}"; do
 		repoDirTags["$repoDir"]+=', '
 	fi
 	repoDirTags["$repoDir"]+='`'"$tag"'`'
+	if [ -z "${repoDirFirstTag[$repoDir]}" ]; then
+		repoDirFirstTag["$repoDir"]="$tag"
+	fi
 done
 
 for repoDir in "${repoDirs[@]}"; do
@@ -51,7 +57,7 @@ for repoDir in "${repoDirs[@]}"; do
 	
 	url="https://$gitUrl/blob/$commit/${dir}Dockerfile"
 	
-	echo '- ['"${repoDirTags["$repoDir"]}"' (*'"${dir}Dockerfile"'*)]('"$url"')'
+	echo '- ['"${repoDirTags["$repoDir"]}"' (*'"${dir}Dockerfile"'*)]('"$url"') [VSize: '"$("$thisDir/get-image-data.sh" vsize "$repo" "${repoDirFirstTag["$repoDir"]}")"']'
 done
 
 echo
