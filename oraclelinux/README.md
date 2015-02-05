@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`7`, `7.0`, `latest` (*OracleLinux/7.0/Dockerfile*)](https://github.com/oracle/docker-images/blob/6657d15b4d2282674a2c8395f1e5c90364a3793b/OracleLinux/7.0/Dockerfile)
-- [`6`, `6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker-images/blob/6657d15b4d2282674a2c8395f1e5c90364a3793b/OracleLinux/6.6/Dockerfile)
+- [`7`, `7.0`, `latest` (*OracleLinux/7.0/Dockerfile*)](https://github.com/oracle/docker/blob/350a858aee60e763a69fd67c1eebeea434de2e2f/OracleLinux/7.0/Dockerfile)
+- [`6`, `6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker/blob/350a858aee60e763a69fd67c1eebeea434de2e2f/OracleLinux/6.6/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
