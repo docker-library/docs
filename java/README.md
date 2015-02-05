@@ -51,7 +51,7 @@ There may be occasions where it is not appropriate to run your app inside a
 container. To compile, but not run your app inside the Docker instance, you can
 write something like:
 
-    docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp java:7 javac Main.java
+    docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp java:7 javac Main.java
 
 This will add your current directory as a volume to the container, set the
 working directory to the volume, and run the command `javac Main.java` which

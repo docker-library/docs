@@ -48,6 +48,7 @@ declare -A otherRepos=(
 	[perl]='https://github.com/Perl/docker-perl'
 	[r-base]='https://github.com/rocker-org/rocker'
 	[registry]='https://github.com/docker/docker-registry'
+	[rethinkdb]='https://github.com/stuartpb/rethinkdb-dockerfiles'
 	[thrift]='https://github.com/ahawkins/docker-thrift'
 	[ubuntu-debootstrap]='https://github.com/tianon/docker-brew-ubuntu-debootstrap'
 	[ubuntu-upstart]='https://github.com/tianon/dockerfiles'
