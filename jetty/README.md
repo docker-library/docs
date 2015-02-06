@@ -68,7 +68,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 ## Issues
 
 If you have any problems with or questions about this image, please contact us
- through a [GitHub issue](https://github.com/docker-library/jetty/issues).
+ through a [GitHub issue](https://github.com/md5/docker-jetty/issues).
 
 You can also reach many of the official image maintainers via the
 `#docker-library` IRC channel on [Freenode](https://freenode.net).
@@ -80,7 +80,7 @@ we are always thrilled to receive pull requests, and do our best to process them
 as fast as we can.
 
 Before you start to code, we recommend discussing your plans 
-through a [GitHub issue](https://github.com/docker-library/jetty/issues), especially for more ambitious
+through a [GitHub issue](https://github.com/md5/docker-jetty/issues), especially for more ambitious
 contributions. This gives other contributors a chance to point you in the right
 direction, give you feedback on your design, and help you find out if someone
 else is working on the same thing.

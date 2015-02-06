@@ -35,6 +35,7 @@ declare -A otherRepos=(
 	[iojs]='https://github.com/iojs/docker-iojs'
 	[irssi]='https://github.com/jfrazelle/irssi'
 	[jenkins]='https://github.com/cloudbees/jenkins-ci.org-docker'
+	[jetty]='https://github.com/md5/docker-jetty'
 	[jruby]='https://github.com/cpuguy83/docker-jruby'
 	[mageia]='https://github.com/juanluisbaptiste/docker-brew-mageia'
 	[maven]='https://github.com/carlossg/docker-maven'
