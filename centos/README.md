@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`latest`, `centos7`, `7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/c7bfde2d0e3ed621ecfbf02aae7b50d4c912b0f1/docker/Dockerfile)
-- [`centos6`, `6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/684a5ab43827c8316810e5d2abe6ce60e2d68e6e/docker/Dockerfile)
-- [`centos5`, `5` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/b0178df16b85ccebaa1bcdbb0aa447f67a2df632/docker/Dockerfile)
-- [`centos7.0.1406`, `7.0.1406` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/30aa31e885e3378203d40e50cfd146b160b589dc/docker/Dockerfile)
-- [`centos6.6`, `6.6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/72a13cc9b85c6c500531d5f1e1dd86b8308a1cda/docker/Dockerfile)
-- [`centos5.11`, `5.11` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/e0f32850b2893baaa25efa9d98585f4c92aa83fb/docker/Dockerfile)
+- [`latest`, `centos7`, `7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/d2b1f36081f946ea48236d3e7069a10cc7216b46/docker/Dockerfile)
+- [`centos6`, `6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/01f3dc82f23069f0298c236e40e797b782b66f4f/docker/Dockerfile)
+- [`centos5`, `5` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/b60ba9719c49307c019be6be6fc9de66ea17cdb7/docker/Dockerfile)
+- [`centos7.0.1406`, `7.0.1406` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/78324d2ab4fa3a51af6f8684714897620c8187e2/docker/Dockerfile)
+- [`centos6.6`, `6.6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/093057200201be5b04f19ba68f5ec284d9e6629c/docker/Dockerfile)
+- [`centos5.11`, `5.11` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/c22c7dcaa7a852a15f9b97865ba1d93b04b0d5fb/docker/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
