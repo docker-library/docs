@@ -66,7 +66,7 @@ the following Dockerfile.
         ADD Sample1.war /opt/ibm/wlp/usr/servers/defaultServer/dropins/
         ENV LICENSE accept
 
-This can then be built and run as follows:
+    This can then be built and run as follows:
 
         docker build -t app .
         docker run -d -p 80:9080 -p 443:9443 app
