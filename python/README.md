@@ -70,7 +70,7 @@ or (again, if you need to use Python 2):
 
 # License
 
-View license information for [Python 2](https://docs.python.org/2/license.html#)and [Python 3](https://docs.python.org/3/license.html#) software contained in this image.
+View license information for [Python 2](https://docs.python.org/2/license.html) and [Python 3](https://docs.python.org/3/license.html).
 
 # Supported Docker versions
 
