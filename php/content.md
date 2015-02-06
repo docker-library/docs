@@ -55,7 +55,7 @@ Where `src/` is the directory containing all your php code. Then, run the comman
     docker run -it --rm --name my-running-app my-php-app
 
 We recommend that you add a custom `php.ini` configuration. `COPY` it into
-`/usr/local/lib` by adding one more line to the Dockerfile above and running the
+`/usr/local/etc/php` by adding one more line to the Dockerfile above and running the
 same commands to build and run:
 
     FROM php:5.6-apache
