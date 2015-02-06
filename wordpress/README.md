@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`4.1.0`, `4.1`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/wordpress/blob/58b35a6f212968a84cd260e96a43e6de6b607533/Dockerfile)
+- [`4.1.0`, `4.1`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/wordpress/blob/dc184cf9712bd66c1836e8ecf94987a742c29eed/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
