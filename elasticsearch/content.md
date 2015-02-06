@@ -4,6 +4,8 @@ Elasticsearch is a search server based on Lucene. It provides a distributed,
 multitenant-capable full-text search engine with a RESTful web interface and
 schema-free JSON documents.
 
+Elasticsearch is a registered trademark of Elasticsearch BV.
+
 > [wikipedia.org/wiki/Elasticsearch](https://en.wikipedia.org/wiki/Elasticsearch)
 
 %%LOGO%%
