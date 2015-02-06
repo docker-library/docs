@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
 - [`8.4.22`, `8.4`, `8` (*8.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/51e5166d69320581cb707d6fb102d3ba04803400/8.4/Dockerfile)
-- [`9.0.18`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/51e5166d69320581cb707d6fb102d3ba04803400/9.0/Dockerfile)
-- [`9.1.14`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/51e5166d69320581cb707d6fb102d3ba04803400/9.1/Dockerfile)
-- [`9.2.9`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/51e5166d69320581cb707d6fb102d3ba04803400/9.2/Dockerfile)
-- [`9.3.5`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/51e5166d69320581cb707d6fb102d3ba04803400/9.3/Dockerfile)
-- [`9.4.0`, `9.4`, `9`, `latest` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/51e5166d69320581cb707d6fb102d3ba04803400/9.4/Dockerfile)
+- [`9.0.19`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/baf80692b5ddd6a5b96876aed7d4b3046ced62ab/9.0/Dockerfile)
+- [`9.1.15`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/baf80692b5ddd6a5b96876aed7d4b3046ced62ab/9.1/Dockerfile)
+- [`9.2.10`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/baf80692b5ddd6a5b96876aed7d4b3046ced62ab/9.2/Dockerfile)
+- [`9.3.6`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/baf80692b5ddd6a5b96876aed7d4b3046ced62ab/9.3/Dockerfile)
+- [`9.4.1`, `9.4`, `9`, `latest` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/baf80692b5ddd6a5b96876aed7d4b3046ced62ab/9.4/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
