@@ -1,2 +1,1 @@
-View license information for [Elasticsearch](http://www.elasticsearch.org/guide/en/elasticsearch/hadoop/current/license.html) software contained in this image.
-
+Elasticsearch is a registered trademark of Elasticsearch BV. View license information for [Elasticsearch](https://github.com/elasticsearch/elasticsearch/blob/66b5ed86f7adede8102cd4d979b9f4924e5bd837/LICENSE.txt) software contained in this image.

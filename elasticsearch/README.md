@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-
+- [`1.3.7`, `1.3` (*1.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2fe2cb3aa293a0e75ebc1f72d27cf1aad73d21cb/1.3/Dockerfile)
+- [`1.4.2`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2fe2cb3aa293a0e75ebc1f72d27cf1aad73d21cb/1.4/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
@@ -42,7 +43,7 @@ in a mounted volume:
 
 # License
 
-View license information for [Elasticsearch](http://www.elasticsearch.org/guide/en/elasticsearch/hadoop/current/license.html) software contained in this image.
+Elasticsearch is a registered trademark of Elasticsearch BV. View license information for [Elasticsearch](https://github.com/elasticsearch/elasticsearch/blob/66b5ed86f7adede8102cd4d979b9f4924e5bd837/LICENSE.txt) software contained in this image.
 
 # Supported Docker versions
 
