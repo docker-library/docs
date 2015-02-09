@@ -57,9 +57,9 @@ You can then build and run the Docker image:
 ### Notes
 
 The image assumes that your application has a file named
-[`package.json`](https://www.npmjs.org/doc/json.html) listing its dependencies
+[`package.json`](https://docs.npmjs.com/files/package.json) listing its dependencies
 and defining its [start
-script](https://www.npmjs.org/doc/misc/npm-scripts.html#default-values).
+script](https://docs.npmjs.com/misc/scripts#default-values).
 
 ## Run a single Node.js script
 
