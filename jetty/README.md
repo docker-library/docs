@@ -1,6 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
-
+- [`7.6.16-jre7`, `7.6-jre7`, `7-jre7`, `7.6.16`, `7.6`, `7` (*7-jre7/Dockerfile*)](https://github.com/md5/docker-jetty/blob/74bdfc42759346f2c43f0faf7e7521f227a5e219/7-jre7/Dockerfile)
+- [`7.6.16-jre8`, `7.6-jre8`, `7-jre8` (*7-jre8/Dockerfile*)](https://github.com/md5/docker-jetty/blob/74bdfc42759346f2c43f0faf7e7521f227a5e219/7-jre8/Dockerfile)
+- [`8.1.16-jre7`, `8.1-jre7`, `8-jre7`, `8.1.16`, `8.1`, `8` (*8-jre7/Dockerfile*)](https://github.com/md5/docker-jetty/blob/74bdfc42759346f2c43f0faf7e7521f227a5e219/8-jre7/Dockerfile)
+- [`8.1.16-jre8`, `8.1-jre8`, `8-jre8` (*8-jre8/Dockerfile*)](https://github.com/md5/docker-jetty/blob/74bdfc42759346f2c43f0faf7e7521f227a5e219/8-jre8/Dockerfile)
+- [`9.2.7-jre7`, `9.2-jre7`, `9-jre7`, `jre7`, `9.2.7`, `9.2`, `9`, `latest` (*9-jre7/Dockerfile*)](https://github.com/md5/docker-jetty/blob/74bdfc42759346f2c43f0faf7e7521f227a5e219/9-jre7/Dockerfile)
+- [`9.2.7-jre8`, `9.2-jre8`, `9-jre8`, `jre8` (*9-jre8/Dockerfile*)](https://github.com/md5/docker-jetty/blob/74bdfc42759346f2c43f0faf7e7521f227a5e219/9-jre8/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
