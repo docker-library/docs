@@ -41,7 +41,7 @@ taken, find out which container is already using it by running `docker ps`.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.4.1.
+This image is officially supported on Docker version 1.5.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
