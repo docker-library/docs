@@ -23,19 +23,31 @@ reliable, predictable, and reproducible Linux environment.
 The `centos:latest` tag is always the most recent version currently
 available.
 
+## Rolling builds
+
 The CentOS Project offers regularly updated images for all active releases.
 These images will be updated monthly or as needed for emergency fixes. These
 rolling updates are tagged with the major version number only.
 For example: `docker pull centos:6` or `docker pull centos:7`
 
-Additionally, images that correspond to install media are also offered. These
-images DO NOT recieve updates as they are intended to match installation iso
-contents. If you choose to use these images it is highly recommended that you
-include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise
-address any potential security concerns. To use these images, please specify
-the minor version tag:
+## Minor tags
+
+Additionally, images with minor version tags that correspond to install media
+are also offered. **These images DO NOT recieve updates** as they are intended
+to match installation iso contents. If you choose to use these images it is
+highly recommended that you include `RUN yum -y update && yum clean all`
+in your Dockerfile, or otherwise address any potential security concerns.
+To use these images, please specify the minor version tag:
 
 For example: `docker pull centos:5.11` or `docker pull centos:6.6`
+
+# Package documentation
+
+By default, the CentOS containers are built using yum's `nodocs` option, which
+helps reduce the size of the image. If you install a package and discover
+files missing, please comment out the line `tsflags=nodocs` in `/etc/yum.conf`
+and reinstall your package.
+
 
 
 # Systemd integration
