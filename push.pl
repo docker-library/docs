@@ -4,6 +4,7 @@ use warnings;
 use 5.010;
 use open ':encoding(utf8)';
 
+use File::Basename qw(fileparse);
 use File::Temp;
 use Getopt::Long;
 use Mojo::UserAgent;
@@ -12,11 +13,9 @@ use Term::ReadKey;
 
 my $username;
 my $password;
-my $all;
 GetOptions(
 	'u|username=s' => \$username,
 	'p|password=s' => \$password,
-	'a|all' => \$all,
 ) or die 'bad args';
 
 die 'no repos specified' unless @ARGV;
@@ -88,6 +87,32 @@ sub get_form_bits {
 	return $ret;
 }
 
+sub prompt_for_edit {
+	my ($currentText, $proposedFile) = @_;
+	
+	my $proposedText = slurp $proposedFile or warn 'missing ' . $proposedFile;
+	$proposedText = trim(decode('UTF-8', $proposedText));
+	
+	if ($currentText eq '') {
+		# TODO decide if this should be a no-prompt-empty flag
+		return $proposedText;
+	}
+	
+	return $currentText if $currentText eq $proposedText;
+	
+	# TODO nice prompt like dispatch-conf
+	# unless ($prompt) {
+	# 	return $proposedText;
+	# }
+	
+	my @proposedFileBits = fileparse($proposedFile);
+	my $file = File::Temp->new(SUFFIX => $proposedFileBits[2]);
+	my $filename = $file->filename;
+	spurt encode('UTF-8', $currentText . "\n"), $filename;
+	system('vimdiff', $filename, $proposedFile) == 0 or die "vimdiff on $filename and $proposedFile failed";
+	return trim(decode('UTF-8', slurp($filename)));
+}
+
 my $login = $ua->get('https://registry.hub.docker.com/account/login/');
 die 'login failed' unless $login->success;
 
@@ -128,14 +153,6 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	my $repoName = $repo;
 	$repoName =~ s!^.*/!!; # 'hylang', 'perl', etc
 	
-	my $shortFile = $repoName . '/README-short.txt';
-	my $short = slurp $shortFile or warn 'missing ' . $shortFile;
-	$short = trim(decode('UTF-8', $short));
-	
-	my $longFile = $repoName . '/README.md';
-	my $long = slurp $longFile or warn 'missing ' . $longFile;
-	$long = trim(decode('UTF-8', $long));
-	
 	my $repoUrl = 'https://registry.hub.docker.com' . $repo . '/settings/';
 	my $repoTx = $ua->get($repoUrl);
 	die 'failed to get: ' . $repoUrl unless $repoTx->success;
@@ -144,29 +161,15 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	die 'failed to find form on ' . $repoUrl unless $settingsForm;
 	my $settingsBits = get_form_bits($settingsForm);
 	
-	my $hubShort = $settingsBits->{description};
-	my $hubLong = $settingsBits->{full_description};
-	
-	if ($hubShort ne $short) {
-		my $file = File::Temp->new(SUFFIX => '.txt');
-		my $filename = $file->filename;
-		spurt encode('UTF-8', $hubShort . "\n"), $filename;
-		system('vimdiff', $filename, $shortFile) == 0 or die "vimdiff on $filename and $shortFile failed";
-		$hubShort = trim(decode('UTF-8', slurp($filename)));
-	}
-	
-	if ($hubLong ne $long) {
-		my $file = File::Temp->new(SUFFIX => '.md');
-		my $filename = $file->filename;
-		spurt encode('UTF-8', $hubLong . "\n"), $filename;
-		system('vimdiff', $filename, $longFile) == 0 or die "vimdiff on $filename and $longFile failed";
-		$hubLong = trim(decode('UTF-8', slurp($filename)));
-	}
+	my $hubShort = prompt_for_edit($settingsBits->{description}, $repoName . '/README-short.txt');
+	my $hubLong = prompt_for_edit($settingsBits->{full_description}, $repoName . '/README.md');
 	
 	say 'no change to ' . $repoName . '; skipping' and next if $settingsBits->{description} eq $hubShort and $settingsBits->{full_description} eq $hubLong;
 	
 	$settingsBits->{description} = $hubShort;
 	$settingsBits->{full_description} = $hubLong;
+	
+	say 'updating ' . $repoName;
 	
 	$repoTx = $ua->post($repoUrl => { Referer => $repoUrl } => form => $settingsBits);
 	die 'post to ' . $repoUrl . ' failed' unless $repoTx->success;
