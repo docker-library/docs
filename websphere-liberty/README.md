@@ -8,7 +8,7 @@ manifest file
 in the [`docker-library/official-images` GitHub
 repo](https://github.com/docker-library/official-images).
 
-# Overview 
+# Overview
 
 This image contains IBM WebSphere Application Server for Developers Liberty
 Profile and the IBM Java Runtime Environment. For more information on WebSphere

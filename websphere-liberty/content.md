@@ -1,4 +1,4 @@
-# Overview 
+# Overview
 
 This image contains IBM WebSphere Application Server for Developers Liberty
 Profile and the IBM Java Runtime Environment. For more information on WebSphere

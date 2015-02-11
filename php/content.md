@@ -70,8 +70,8 @@ contains your `php.ini` file.
 We provide two convenient scripts named `docker-php-ext-configure` and `docker-php-ext-install`, you can use them to
 easily install PHP extension.
 
-For example, if you want to have a PHP-FPM image with `iconv`, `mcrypt` and `gd` 
-extensions, you can inheriting the base image that you like, and write your own 
+For example, if you want to have a PHP-FPM image with `iconv`, `mcrypt` and `gd`
+extensions, you can inheriting the base image that you like, and write your own
 `Dockerfile` like this:
 
     FROM php:5.5-fpm
