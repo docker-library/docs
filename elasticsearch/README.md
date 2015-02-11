@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`1.3.7`, `1.3` (*1.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2fe2cb3aa293a0e75ebc1f72d27cf1aad73d21cb/1.3/Dockerfile)
-- [`1.4.2`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/2fe2cb3aa293a0e75ebc1f72d27cf1aad73d21cb/1.4/Dockerfile)
+- [`1.3.8`, `1.3` (*1.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ed6fc6c6f26b38941199e135772c464f96dfd438/1.3/Dockerfile)
+- [`1.4.3`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ed6fc6c6f26b38941199e135772c464f96dfd438/1.4/Dockerfile)
 
 For more information about this image and its history, please see the [relevant
 manifest file
