@@ -51,7 +51,7 @@ for repoDir in "${repoDirs[@]}"; do
 	
 	url="https://$gitUrl/blob/$commit/${dir}Dockerfile"
 	
-	echo '- ['"${repoDirTags["$repoDir"]}"' (*'"${dir}Dockerfile"'*)]('"$url"')'
+	echo $'-\t['"${repoDirTags["$repoDir"]}"' (*'"${dir}Dockerfile"'*)]('"$url"')'
 done
 
 echo
