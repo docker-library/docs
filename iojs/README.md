@@ -1,14 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`1.2.0`, `1.2`, `1`, `latest` (*1.2/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/d8d0b8bf6cd41da8ad4bfc63e9a7b2b098868eae/1.2/Dockerfile)
-- [`1.2.0-onbuild`, `1.2-onbuild`, `1-onbuild`, `onbuild` (*1.2/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/d8d0b8bf6cd41da8ad4bfc63e9a7b2b098868eae/1.2/onbuild/Dockerfile)
-- [`1.2.0-slim`, `1.2-slim`, `1-slim`, `slim` (*1.2/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/d8d0b8bf6cd41da8ad4bfc63e9a7b2b098868eae/1.2/slim/Dockerfile)
+-	[`1.2.0`, `1.2`, `1`, `latest` (*1.2/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/d8d0b8bf6cd41da8ad4bfc63e9a7b2b098868eae/1.2/Dockerfile)
+-	[`1.2.0-onbuild`, `1.2-onbuild`, `1-onbuild`, `onbuild` (*1.2/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/d8d0b8bf6cd41da8ad4bfc63e9a7b2b098868eae/1.2/onbuild/Dockerfile)
+-	[`1.2.0-slim`, `1.2-slim`, `1-slim`, `slim` (*1.2/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/d8d0b8bf6cd41da8ad4bfc63e9a7b2b098868eae/1.2/slim/Dockerfile)
 
-For more information about this image and its history, please see the [relevant
-manifest file
-(`library/iojs`)](https://github.com/docker-library/official-images/blob/master/library/iojs)
-in the [`docker-library/official-images` GitHub
-repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/iojs`)](https://github.com/docker-library/official-images/blob/master/library/iojs) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 ## What is io.js?
 
@@ -26,31 +22,24 @@ This project aims to continue development of io.js under an "open governance mod
 
 If you want to distribute your application on the docker registry, create a `Dockerfile` in the root of application directory:
 
-```
-FROM iojs:onbuild
-
-# Expose the ports that your app uses. For example:
-EXPOSE 8080
-```
+	FROM iojs:onbuild
+	
+	# Expose the ports that your app uses. For example:
+	EXPOSE 8080
 
 Then simply run:
 
-```
-$ docker build -t iojs-app
-...
-$ docker run --rm -it iojs-app
-```
+	$ docker build -t iojs-app
+	...
+	$ docker run --rm -it iojs-app
 
 To run a single script, you can mount it in a volume under `/usr/src/app`. From the root of your application directory (assuming your script is named `index.js`):
 
-```
-$ docker run -v ${PWD}:/usr/src/app -w /usr/src/app --it --rm iojs iojs index.js
-```
+	$ docker run -v ${PWD}:/usr/src/app -w /usr/src/app --it --rm iojs iojs index.js
 
 # License
 
-View [license information](https://github.com/iojs/io.js/blob/master/LICENSE)
-for the software contained in this image.
+View [license information](https://github.com/iojs/io.js/blob/master/LICENSE) for the software contained in this image.
 
 # Supported Docker versions
 
@@ -62,20 +51,12 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us
- through a [GitHub issue](https://github.com/iojs/docker-iojs/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/iojs/docker-iojs/issues).
 
-You can also reach many of the official image maintainers via the
-`#docker-library` IRC channel on [Freenode](https://freenode.net).
+You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
 ## Contributing
 
-You are invited to contribute new features, fixes, or updates, large or small;
-we are always thrilled to receive pull requests, and do our best to process them
-as fast as we can.
+You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans 
-through a [GitHub issue](https://github.com/iojs/docker-iojs/issues), especially for more ambitious
-contributions. This gives other contributors a chance to point you in the right
-direction, give you feedback on your design, and help you find out if someone
-else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/iojs/docker-iojs/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

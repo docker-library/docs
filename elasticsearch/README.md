@@ -1,19 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`1.3.8`, `1.3` (*1.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ed6fc6c6f26b38941199e135772c464f96dfd438/1.3/Dockerfile)
-- [`1.4.3`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ed6fc6c6f26b38941199e135772c464f96dfd438/1.4/Dockerfile)
+-	[`1.3.8`, `1.3` (*1.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ed6fc6c6f26b38941199e135772c464f96dfd438/1.3/Dockerfile)
+-	[`1.4.3`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/ed6fc6c6f26b38941199e135772c464f96dfd438/1.4/Dockerfile)
 
-For more information about this image and its history, please see the [relevant
-manifest file
-(`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch)
-in the [`docker-library/official-images` GitHub
-repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Elasticsearch?
 
-Elasticsearch is a search server based on Lucene. It provides a distributed,
-multitenant-capable full-text search engine with a RESTful web interface and
-schema-free JSON documents.
+Elasticsearch is a search server based on Lucene. It provides a distributed, multitenant-capable full-text search engine with a RESTful web interface and schema-free JSON documents.
 
 Elasticsearch is a registered trademark of Elasticsearch BV.
 
@@ -25,23 +19,19 @@ Elasticsearch is a registered trademark of Elasticsearch BV.
 
 You can run the default `elasticsearch` command simply:
 
-    docker run -d elasticsearch
+	docker run -d elasticsearch
 
 You can also pass in additional flags to `elasticsearch`:
 
-    docker run -d elasticsearch elasticsearch -Des.node.name="TestNode"
+	docker run -d elasticsearch elasticsearch -Des.node.name="TestNode"
 
-This image comes with a default set of configuration files for `elasticsearch`,
-but if you want to provide your own set of configuration files, you can do so
-via a volume mounted at `/usr/share/elasticsearch/config`:
+This image comes with a default set of configuration files for `elasticsearch`, but if you want to provide your own set of configuration files, you can do so via a volume mounted at `/usr/share/elasticsearch/config`:
 
-    docker run -d -v "$PWD/config":/usr/share/elasticsearch/config elasticsearch
+	docker run -d -v "$PWD/config":/usr/share/elasticsearch/config elasticsearch
 
-This image is configured with a volume at `/usr/share/elasticsearch/data` to
-hold the persisted index data. Use that path if you would like to keep the data
-in a mounted volume:
+This image is configured with a volume at `/usr/share/elasticsearch/data` to hold the persisted index data. Use that path if you would like to keep the data in a mounted volume:
 
-    docker run -d -v "$PWD/esdata":/usr/share/elasticsearch/data elasticsearch
+	docker run -d -v "$PWD/esdata":/usr/share/elasticsearch/data elasticsearch
 
 # License
 
@@ -57,20 +47,12 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us
- through a [GitHub issue](https://github.com/docker-library/elasticsearch/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/elasticsearch/issues).
 
-You can also reach many of the official image maintainers via the
-`#docker-library` IRC channel on [Freenode](https://freenode.net).
+You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
 ## Contributing
 
-You are invited to contribute new features, fixes, or updates, large or small;
-we are always thrilled to receive pull requests, and do our best to process them
-as fast as we can.
+You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans 
-through a [GitHub issue](https://github.com/docker-library/elasticsearch/issues), especially for more ambitious
-contributions. This gives other contributors a chance to point you in the right
-direction, give you feedback on your design, and help you find out if someone
-else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/elasticsearch/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

@@ -1,29 +1,18 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`0.1.0-rc3`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/c0f8204b2a1bb34233cd2144df51a4de9572440c/Dockerfile)
+-	[`0.1.0-rc3`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/c0f8204b2a1bb34233cd2144df51a4de9572440c/Dockerfile)
 
-For more information about this image and its history, please see the [relevant
-manifest file
-(`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm)
-in the [`docker-library/official-images` GitHub
-repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # Swarm: a Docker-native clustering system
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/swarm/logo.png)
 
-`swarm` is a simple tool which controls a cluster of Docker hosts and exposes it
-as a single "virtual" host.
+`swarm` is a simple tool which controls a cluster of Docker hosts and exposes it as a single "virtual" host.
 
-`swarm` uses the standard Docker API as its frontend, which means any tool which
-speaks Docker can control swarm transparently: dokku, fig, krane, flynn, deis,
-docker-ui, shipyard, drone.io, Jenkins... and of course the Docker client itself.
+`swarm` uses the standard Docker API as its frontend, which means any tool which speaks Docker can control swarm transparently: dokku, fig, krane, flynn, deis, docker-ui, shipyard, drone.io, Jenkins... and of course the Docker client itself.
 
-Like the other Docker projects, `swarm` follows the "batteries included but removable"
-principle. It ships with a simple scheduling backend out of the box, and as initial
-development settles, an API will develop to enable pluggable backends. The goal is
-to provide a smooth out-of-box experience for simple use cases, and allow swapping
-in more powerful backends, like `Mesos`, for large scale production deployments.
+Like the other Docker projects, `swarm` follows the "batteries included but removable" principle. It ships with a simple scheduling backend out of the box, and as initial development settles, an API will develop to enable pluggable backends. The goal is to provide a smooth out-of-box experience for simple use cases, and allow swapping in more powerful backends, like `Mesos`, for large scale production deployments.
 
 # Example usage
 
@@ -52,36 +41,27 @@ $ docker run --rm swarm list token://<cluster_id>
 <node_ip:2375>
 ```
 
-See [here](https://github.com/docker/swarm/blob/master/discovery/README.md) for
-more information about other discovery services.
+See [here](https://github.com/docker/swarm/blob/master/discovery/README.md) for more information about other discovery services.
 
 ## Advanced Scheduling
 
-See [filters]
-(https://github.com/docker/swarm/blob/master/scheduler/filter/README.md) and
-[strategies]
-(https://github.com/docker/swarm/blob/master/scheduler/strategy/README.md)
-to learn more about advanced scheduling.
+See [filters](https://github.com/docker/swarm/blob/master/scheduler/filter/README.md) and [strategies](https://github.com/docker/swarm/blob/master/scheduler/strategy/README.md) to learn more about advanced scheduling.
 
 ## TLS
 
-Swarm supports TLS authentication between the CLI and Swarm but also between
-Swarm and the Docker nodes.
+Swarm supports TLS authentication between the CLI and Swarm but also between Swarm and the Docker nodes.
 
 In order to enable TLS, the same command line options as Docker can be specified:
 
 `swarm manage --tlsverify --tlscacert=<CACERT> --tlscert=<CERT> --tlskey=<KEY> [...]`
 
-Please refer to the [Docker documentation](https://docs.docker.com/articles/https/)
-for more information on how to set up TLS authentication on Docker and generating
-the certificates.
+Please refer to the [Docker documentation](https://docs.docker.com/articles/https/) for more information on how to set up TLS authentication on Docker and generating the certificates.
 
-Note that Swarm certificates must be generated with`extendedKeyUsage = clientAuth,serverAuth`.
+Note that Swarm certificates must be generated with `extendedKeyUsage = clientAuth,serverAuth`.
 
 # License
 
-View [license information](https://github.com/docker/swarm/blob/master/LICENSE)
-for the software contained in this image.
+View [license information](https://github.com/docker/swarm/blob/master/LICENSE) for the software contained in this image.
 
 # Supported Docker versions
 
@@ -93,20 +73,12 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us
- through a [GitHub issue](https://github.com/docker/swarm-library-image/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/swarm-library-image/issues).
 
-You can also reach many of the official image maintainers via the
-`#docker-library` IRC channel on [Freenode](https://freenode.net).
+You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
 ## Contributing
 
-You are invited to contribute new features, fixes, or updates, large or small;
-we are always thrilled to receive pull requests, and do our best to process them
-as fast as we can.
+You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans 
-through a [GitHub issue](https://github.com/docker/swarm-library-image/issues), especially for more ambitious
-contributions. This gives other contributors a chance to point you in the right
-direction, give you feedback on your design, and help you find out if someone
-else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker/swarm-library-image/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
