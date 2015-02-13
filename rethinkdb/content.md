@@ -1,9 +1,6 @@
 # What is RethinkDB?
 
-RethinkDB is an open-source, distributed database built to store JSON documents
-and effortlessly scale to multiple machines. It's easy to set up and learn and
-features a simple but powerful query language that supports table joins,
-groupings, aggregations, and functions.
+RethinkDB is an open-source, distributed database built to store JSON documents and effortlessly scale to multiple machines. It's easy to set up and learn and features a simple but powerful query language that supports table joins, groupings, aggregations, and functions.
 
 %%LOGO%%
 
@@ -11,9 +8,7 @@ groupings, aggregations, and functions.
 
 ## Start an instance with data mounted in the working directory
 
-The default CMD of the image is `rethinkdb --bind all`, so the RethinkDB daemon
-will bind to all network interfaces available to the container (by default,
-RethinkDB only accepts connections from `localhost`).
+The default CMD of the image is `rethinkdb --bind all`, so the RethinkDB daemon will bind to all network interfaces available to the container (by default, RethinkDB only accepts connections from `localhost`).
 
 ```bash
 docker run --name some-rethink -v "$PWD:/data" -d rethinkdb
@@ -50,5 +45,4 @@ kill $(lsof -t -i @localhost:8080 -sTCP:listen)
 
 ## Configuration
 
-See the [official docs](http://www.rethinkdb.com/docs/) for infomation on using
-and configuring a RethinkDB cluster.
+See the [official docs](http://www.rethinkdb.com/docs/) for infomation on using and configuring a RethinkDB cluster.

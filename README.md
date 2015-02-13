@@ -1,59 +1,47 @@
 # What is this?
 
-This repository contains the docs for each of the Docker official images.  See
-[docker-library/official-images](https://github.com/docker-library/official-images)
-for the configuration how the images are built.  To see all of the official
-images go to the
-[hub](https://registry.hub.docker.com/repos/stackbrew/?&s=alphabetical).
+This repository contains the docs for each of the Docker official images. See [docker-library/official-images](https://github.com/docker-library/official-images) for the configuration how the images are built. To see all of the official images go to the [hub](https://registry.hub.docker.com/repos/stackbrew/?&s=alphabetical).
+
+All Markdown files here are run through [tianon's fork of `markdownfmt`](https://github.com/tianon/markdownfmt) (only forked to add some smaller-diff preference and minor DockerHub-compatibility changes), and verified as formatted correctly via Travis-CI.
 
 # How do I add a new image's docs
 
-- create a folder for my image: `mkdir myimage`
-- create a `README-short.txt` (required, 100 char max)
-- create a `content.md` (required, 80 col wrap)
-- create a `license.md` (required, 80 col wrap)
-- add a `logo.png` (recommended)
-- edit `update.sh` as needed (see below)
-- run `./update.sh myimage` to generate `myimage/README.md`
+-	create a folder for my image: `mkdir myimage`
+-	create a `README-short.txt` (required, 100 char max)
+-	create a `content.md` (required)
+-	create a `license.md` (required)
+-	add a `logo.png` (recommended)
+-	edit `update.sh` as needed (see below)
+
+Optionally: (we run this periodically, especially before pushing updated descriptions)
+
+-	run `./update.sh myimage` to generate `myimage/README.md`
 
 # What are all these files?
 
 ## `update.sh`
 
-This is the main script used to generate the `README.md` files for each image.
-The generated file is committed along with the files used to generate it (see
-below on what customizations are available).  When a new image is added that is
-not under the `docker-library` namespace on GitHub, a new entry must be added to
-the `otherRepos` array in this script.  Accepted arguments are which image(s)
-you want to update and no arguments to update all of them.
+This is the main script used to generate the `README.md` files for each image. The generated file is committed along with the files used to generate it (see below on what customizations are available). When a new image is added that is not under the `docker-library` namespace on GitHub, a new entry must be added to the `otherRepos` array in this script. Accepted arguments are which image(s) you want to update and no arguments to update all of them.
 
 ## `push.pl`
 
-This is used by us to push the actual content of the READMEs to the Docker Hub
-as special access is required to modify the Hub description contents.
+This is used by us to push the actual content of the READMEs to the Docker Hub as special access is required to modify the Hub description contents.
 
 ## `generate-dockerfile-links-partial.sh`
 
-This script is used by `update.sh` to create the "Supported tags and respective
-`Dockerfile` links" section of each generated `README.md` from the information
-in the [official-images `library/`
-manifests](https://github.com/docker-library/official-images/tree/master/library).
+This script is used by `update.sh` to create the "Supported tags and respective `Dockerfile` links" section of each generated `README.md` from the information in the [official-images `library/` manifests](https://github.com/docker-library/official-images/tree/master/library).
 
 ## `generate-repo-stub-readme.sh`
 
-This is used to generate a simple `README.md` to put in the image's repo.
-Argument is the name of the image, like `golang` and it then outputs the readme
-to standard out.
+This is used to generate a simple `README.md` to put in the image's repo. Argument is the name of the image, like `golang` and it then outputs the readme to standard out.
 
 ## `README-template.md` and `user-feedback.md`
 
-These files are the templates used in building the `<image name>/README.md`
-file, in combination with the individual image's files.
+These files are the templates used in building the `<image name>/README.md` file, in combination with the individual image's files.
 
 ## folder `<image name>`
 
-This is where all the partial and generated files for a given image reside, (ex:
-`golang/`).
+This is where all the partial and generated files for a given image reside, (ex: `golang/`).
 
 ## `<image name>/README.md`
 
@@ -61,64 +49,47 @@ This file is generated using `update.sh`.
 
 ## `<image name>/content.md`
 
-This file contains the main content of your readme.  The basic parts you should
-have are a "What Is" section and a "How To" section.   See the doc on [Official
-Repos](https://docs.docker.com/docker-hub/official_repos/#a-long-description)
-for more information on long description.  The issues and contribution section
-is generated by the script but can be overridden.  The following is a basic
-layout:
+This file contains the main content of your image's long description. The basic parts you should have are a "What Is" section and a "How To" section. See the doc on [Official Repos](https://docs.docker.com/docker-hub/official_repos/#a-long-description) for more information on long description. The issues and contribution section is generated by the script but can be overridden. The following is a basic layout:
 
-    # What is XYZ?
-    
-    // about what the contained software is
-    
-    %%LOGO%%
-    
-    # How to use this image
-    
-    // descriptions and examples of common use cases for the image
-    // make use of subsections as necessary
+	# What is XYZ?
+	
+	// about what the contained software is
+	
+	%%LOGO%%
+	
+	# How to use this image
+	
+	// descriptions and examples of common use cases for the image
+	// make use of subsections as necessary
 
 ## `<image name>/README-short.txt`
 
-This is the short description for the docker hub, limited to 100 characters in a
-single line.
+This is the short description for the docker hub, limited to 100 characters in a single line.
 
 > Go (golang) is a general purpose, higher-level, imperative programming language.
 
 ## `<image name>/logo.png`
 
-Logo for the contained software.  Specifications can be found in the docs on
-[Official Repos](https://docs.docker.com/docker-hub/official_repos/#a-logo)
+Logo for the contained software. Specifications can be found in the docs on [Official Repos](https://docs.docker.com/docker-hub/official_repos/#a-logo)
 
 ## `<image name>/license.md`
 
-This file should contain a link to the license for the main software in the
-image, wrapped to 80 columns.  Here is an example for golang:
+This file should contain a link to the license for the main software in the image. Here is an example for `golang`:
 
-    View [license information](http://golang.org/LICENSE)
-    for the software contained in this image.
+	View [license information](http://golang.org/LICENSE) for the software contained in this image.
 
 ## `<image name>/user-feedback.md`
 
-This file is an optional override of the default `user-feedback.md` for those
-repositories with different issue and contributing policies.
+This file is an optional override of the default `user-feedback.md` for those repositories with different issue and contributing policies.
 
 ## `<image name>/mailing-list.md`
 
-This file is snippet that gets inserted into the user feedback section to
-provide and extra way to get help, like a mailing list.  Here is an example from
-the Postgres image:
+This file is snippet that gets inserted into the user feedback section to provide and extra way to get help, like a mailing list. Here is an example from the Postgres image:
 
-    on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or
+	on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or
 
 # Issues and Contributing
 
-If you would like to make a new Official Image, be sure to follow the
-[guidelines](https://docs.docker.com/docker-hub/official_repos/) and talk to
-partners@docker.com.
+If you would like to make a new Official Image, be sure to follow the [guidelines](https://docs.docker.com/docker-hub/official_repos/) and talk to partners@docker.com.
 
-Feel free to make a pull request for fixes and improvements to current
-documentation.  For questions or problems on this repo come talk to us via the
-`#docker-library` IRC channel on [Freenode](https://freenode.net) or open up an
-issue.
+Feel free to make a pull request for fixes and improvements to current documentation. For questions or problems on this repo come talk to us via the `#docker-library` IRC channel on [Freenode](https://freenode.net) or open up an issue.

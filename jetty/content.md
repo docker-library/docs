@@ -1,43 +1,30 @@
 # What is Jetty?
 
-Jetty is a pure Java-based HTTP (Web) server and Java Servlet container. While
-Web Servers are usually associated with serving documents to people, Jetty is
-now often used for machine to machine communications, usually within larger
-software frameworks. Jetty is developed as a free and open source project as
-part of the Eclipse Foundation. The web server is used in products such as
-Apache ActiveMQ, Alfresco, Apache Geronimo, Apache Maven, Apache
-Spark, Google App Engine, Eclipse, FUSE, Twitter's Streaming API and Zimbra.
-Jetty is also the server in open source projects such as Lift, Eucalyptus,
-Red5, Hadoop and I2P. Jetty supports the latest Java Servlet API (with JSP
-support) as well as protocols SPDY and WebSocket.
+Jetty is a pure Java-based HTTP (Web) server and Java Servlet container. While Web Servers are usually associated with serving documents to people, Jetty is now often used for machine to machine communications, usually within larger software frameworks. Jetty is developed as a free and open source project as part of the Eclipse Foundation. The web server is used in products such as Apache ActiveMQ, Alfresco, Apache Geronimo, Apache Maven, Apache Spark, Google App Engine, Eclipse, FUSE, Twitter's Streaming API and Zimbra. Jetty is also the server in open source projects such as Lift, Eucalyptus, Red5, Hadoop and I2P. Jetty supports the latest Java Servlet API (with JSP support) as well as protocols SPDY and WebSocket.
 
-> [wikipedia.org/wiki/Jetty_(web_server)](https://en.wikipedia.org/wiki/Jetty_(web_server))
+> [wikipedia.org/wiki/Jetty_(web_server)](https://en.wikipedia.org/wiki/Jetty_%28web_server%29)
 
-%%LOGO%%
-Logo &copy; Eclipse Foundation
+%%LOGO%% Logo &copy; Eclipse Foundation
 
 # How to use this image.
 
 Run the default Jetty server (`CMD ["jetty.sh", "run"]`):
 
-    docker run -d jetty:9
+	docker run -d jetty:9
 
-You can test it by visiting `http://container-ip:8080` in a browser or, if you
-need access outside the host, on port 8888:
+You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
-    docker run -d -p 8888:8080 jetty:9
+	docker run -d -p 8888:8080 jetty:9
 
-You can then go to `http://localhost:8888` or `http://host-ip:8888` in a
-browser.
+You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
 
 The default Jetty environment in the image is:
 
-    JETTY_HOME    =  /usr/local/jetty
-    JETTY_CONF    =  /usr/local/jetty/etc/jetty.conf
-    JETTY_STATE   =  /usr/local/jetty/jetty.state
-    JETTY_ARGS    =
-    JAVA_OPTIONS  =
-    TMPDIR        =  /tmp
+	JETTY_HOME    =  /usr/local/jetty
+	JETTY_CONF    =  /usr/local/jetty/etc/jetty.conf
+	JETTY_STATE   =  /usr/local/jetty/jetty.state
+	JETTY_ARGS    =
+	JAVA_OPTIONS  =
+	TMPDIR        =  /tmp
 
-Webapps can be [deployed](https://wiki.eclipse.org/Jetty/Howto/Deploy_Web_Applications)
-in `/usr/local/jetty/webapps`.
+Webapps can be [deployed](https://wiki.eclipse.org/Jetty/Howto/Deploy_Web_Applications) in `/usr/local/jetty/webapps`.

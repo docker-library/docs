@@ -1,29 +1,21 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`8.0`, `8`, `jessie` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/jessie/Dockerfile)
-- [`oldstable` (*oldstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/1d9a53a1df978176649f87b064a006cfda1480f1/oldstable/Dockerfile)
-- [`sid` (*sid/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/sid/Dockerfile)
-- [`6.0.10`, `6.0`, `6`, `squeeze` (*squeeze/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/1d9a53a1df978176649f87b064a006cfda1480f1/squeeze/Dockerfile)
-- [`stable` (*stable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/stable/Dockerfile)
-- [`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/testing/Dockerfile)
-- [`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/unstable/Dockerfile)
-- [`7.8`, `7`, `wheezy`, `latest` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/wheezy/Dockerfile)
-- [`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/90d86ad63c4a06b7d04d14ad830381b876183b3c/debian/rc-buggy/Dockerfile)
-- [`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/90d86ad63c4a06b7d04d14ad830381b876183b3c/debian/experimental/Dockerfile)
+-	[`8.0`, `8`, `jessie` (*jessie/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/jessie/Dockerfile)
+-	[`oldstable` (*oldstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/1d9a53a1df978176649f87b064a006cfda1480f1/oldstable/Dockerfile)
+-	[`sid` (*sid/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/sid/Dockerfile)
+-	[`6.0.10`, `6.0`, `6`, `squeeze` (*squeeze/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/1d9a53a1df978176649f87b064a006cfda1480f1/squeeze/Dockerfile)
+-	[`stable` (*stable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/stable/Dockerfile)
+-	[`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/testing/Dockerfile)
+-	[`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/unstable/Dockerfile)
+-	[`7.8`, `7`, `wheezy`, `latest` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b6b91ab925802aff7b832127c278aba23d88d3d1/wheezy/Dockerfile)
+-	[`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/90d86ad63c4a06b7d04d14ad830381b876183b3c/debian/rc-buggy/Dockerfile)
+-	[`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/90d86ad63c4a06b7d04d14ad830381b876183b3c/debian/experimental/Dockerfile)
 
-For more information about this image and its history, please see the [relevant
-manifest file
-(`library/debian`)](https://github.com/docker-library/official-images/blob/master/library/debian)
-in the [`docker-library/official-images` GitHub
-repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/debian`)](https://github.com/docker-library/official-images/blob/master/library/debian) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Debian?
 
-Debian is an operating system which is composed primarily of free and
-open-source software, most of which is under the GNU General Public License, and
-developed by a group of individuals known as the Debian project. Debian is one
-of the most popular Linux distributions for personal computers and network
-servers, and has been used as a base for several other Linux distributions.
+Debian is an operating system which is composed primarily of free and open-source software, most of which is under the GNU General Public License, and developed by a group of individuals known as the Debian project. Debian is one of the most popular Linux distributions for personal computers and network servers, and has been used as a base for several other Linux distributions.
 
 > [wikipedia.org/wiki/Debian](https://en.wikipedia.org/wiki/Debian)
 
@@ -31,25 +23,19 @@ servers, and has been used as a base for several other Linux distributions.
 
 # About this image
 
-The `debian:latest` tag will always point the latest stable release (which is,
-at the time of this writing, `debian:wheezy`).  Stable releases are also tagged
-with their version (ie, `debian:wheezy` is currently also the same as
-`debian:7.4`).
+The `debian:latest` tag will always point the latest stable release (which is, at the time of this writing, `debian:wheezy`). Stable releases are also tagged with their version (ie, `debian:wheezy` is currently also the same as `debian:7.4`).
 
-The rolling tags (`debian:stable`, `debian:testing`, etc) use the rolling suite
-names in their `/etc/apt/sources.list` file (ie, `deb
+The rolling tags (`debian:stable`, `debian:testing`, etc) use the rolling suite names in their `/etc/apt/sources.list` file (ie, `deb
 http://http.debian.net/debian testing main`).
 
 ## sources.list
 
-The mirror of choice for these images is
-[http.debian.net](http://http.debian.net) so that it's as close to optimal for
-everyone as possible, regardless of location.
+The mirror of choice for these images is [http.debian.net](http://http.debian.net) so that it's as close to optimal for everyone as possible, regardless of location.
 
-    $ docker run debian:wheezy cat /etc/apt/sources.list
-    deb http://http.debian.net/debian wheezy main
-    deb http://http.debian.net/debian wheezy-updates main
-    deb http://security.debian.org/ wheezy/updates main
+	$ docker run debian:wheezy cat /etc/apt/sources.list
+	deb http://http.debian.net/debian wheezy main
+	deb http://http.debian.net/debian wheezy-updates main
+	deb http://security.debian.org/ wheezy/updates main
 
 # Supported Docker versions
 
@@ -61,20 +47,12 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us
- through a [GitHub issue](https://github.com/tianon/docker-brew-debian/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/tianon/docker-brew-debian/issues).
 
-You can also reach many of the official image maintainers via the
-`#docker-library` IRC channel on [Freenode](https://freenode.net).
+You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
 ## Contributing
 
-You are invited to contribute new features, fixes, or updates, large or small;
-we are always thrilled to receive pull requests, and do our best to process them
-as fast as we can.
+You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans 
-through a [GitHub issue](https://github.com/tianon/docker-brew-debian/issues), especially for more ambitious
-contributions. This gives other contributors a chance to point you in the right
-direction, give you feedback on your design, and help you find out if someone
-else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/tianon/docker-brew-debian/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

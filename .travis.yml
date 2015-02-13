@@ -1,0 +1,15 @@
+language: go
+
+sudo: false
+
+install:
+  - mkdir -p "${GOPATH%%:*}/src/github.com/shurcooL/markdownfmt"
+  - git clone https://github.com/tianon/markdownfmt.git "${GOPATH%%:*}/src/github.com/shurcooL/markdownfmt"
+  - go get -v github.com/shurcooL/markdownfmt
+
+script:
+  - files="$(find -name '*.md' -print0 | xargs -0 markdownfmt -l)";
+    if [ "$files" ]; then
+      echo >&2 "$files";
+      exit 1;
+    fi
