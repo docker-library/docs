@@ -41,7 +41,7 @@ Mojo::Util::monkey_patch 'Mojo::UserAgent::CookieJar', find => sub {
 
 			# Check if cookie has expired
 			my $expires = $cookie->expires;
-			next if $expires && time > ($expires->epoch || 0);
+			next if $expires && time > ($expires || 0);
 			#push @$new, $cookie;
 
 			# Taste cookie
