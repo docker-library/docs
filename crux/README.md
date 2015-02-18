@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.1` (*Dockerfile*)](https://github.com/therealprologic/docker-crux/blob/46c53a82b42907e3954c792adb2f47e436b537ba/Dockerfile)
+-	[`latest`, `3.1` (*Dockerfile*)](https://github.com/therealprologic/docker-crux/blob/9eadd5114b45a8136b9d377ebf551eaacc76f89c/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/crux`)](https://github.com/docker-library/official-images/blob/master/library/crux) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

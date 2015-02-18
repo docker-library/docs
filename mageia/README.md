@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `4` (*4/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/603a75ec98dfd7c26ed85108b309d4e5f39ded91/4/Dockerfile)
--	[`cauldron` (*cauldron/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/603a75ec98dfd7c26ed85108b309d4e5f39ded91/cauldron/Dockerfile)
+-	[`latest`, `4` (*4/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/ed9534c591e9b03593e8111990395f77bbd256c0/4/Dockerfile)
+-	[`cauldron` (*cauldron/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/ed9534c591e9b03593e8111990395f77bbd256c0/cauldron/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/mageia`)](https://github.com/docker-library/official-images/blob/master/library/mageia) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
