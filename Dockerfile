@@ -1,7 +1,8 @@
 FROM perl:5.20
 
 # secure by default ♥ (thanks to sri!)
-ENV PERL_CPANM_OPT --verbose --mirror https://cpan.metacpan.org --mirror-only
+ENV PERL_CPANM_OPT --verbose --mirror https://cpan.metacpan.org
+# TODO find a way to make --mirror-only / SSL work with backpan too :(
 RUN cpanm Digest::SHA Module::Signature
 ENV PERL_CPANM_OPT $PERL_CPANM_OPT --verify
 
