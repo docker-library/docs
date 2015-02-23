@@ -1,0 +1,32 @@
+# Supported tags and respective `Dockerfile` links
+
+-	[`4.0-jdk7`, `4.0` (*4.0-jdk7/Dockerfile*)](https://github.com/aws/aws-eb-glassfish/blob/aafcfc5e812dfb9b998105d3ca9da1b7f10664e1/4.0-jdk7/Dockerfile)
+-	[`4.1-jdk8`, `4.1`, `latest` (*4.1-jdk8/Dockerfile*)](https://github.com/aws/aws-eb-glassfish/blob/aafcfc5e812dfb9b998105d3ca9da1b7f10664e1/4.1-jdk8/Dockerfile)
+
+For more information about this image and its history, please see the [relevant manifest file (`library/glassfish`)](https://github.com/docker-library/official-images/blob/master/library/glassfish) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+# GlassFish
+
+GlassFish is an open-source application server project started by Sun Microsystems for the Java EE platform and now sponsored by Oracle Corporation. The supported version is called Oracle GlassFish Server. GlassFish is free software, dual-licensed under two free software licences: the Common Development and Distribution License (CDDL) and the GNU General Public License (GPL) with the classpath exception.
+
+> [wikipedia.org/wiki/GlassFish](https://en.wikipedia.org/wiki/GlassFish)
+
+# Supported Docker versions
+
+This image is officially supported on Docker version 1.5.0.
+
+Support for older versions (down to 1.0) is provided on a best-effort basis.
+
+# User Feedback
+
+## Issues
+
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/glassfish/issues).
+
+You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
+
+## Contributing
+
+You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
+
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/glassfish/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
