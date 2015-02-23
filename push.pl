@@ -79,7 +79,7 @@ sub get_form_bits {
 			$val = $e->attr('value');
 		}
 		
-		$val = trim('' . $val);
+		$val = trim('' . ($val // ''));
 		$val =~ s!\r\n|\r!\n!g;
 		
 		$ret->{$name} = $val;
