@@ -25,19 +25,19 @@ Optionally: (we run this periodically, especially before pushing updated descrip
 
 This is the main script used to generate the `README.md` files for each image. The generated file is committed along with the files used to generate it (see below on what customizations are available). When a new image is added that is not under the `docker-library` namespace on GitHub, a new entry must be added to the `otherRepos` array in this script. Accepted arguments are which image(s) you want to update and no arguments to update all of them.
 
-## `push.pl`
-
-This is used by us to push the actual content of the READMEs to the Docker Hub as special access is required to modify the Hub description contents.
-
-## `generate-dockerfile-links-partial.sh`
-
-This script is used by `update.sh` to create the "Supported tags and respective `Dockerfile` links" section of each generated `README.md` from the information in the [official-images `library/` manifests](https://github.com/docker-library/official-images/tree/master/library).
-
 ## `generate-repo-stub-readme.sh`
 
 This is used to generate a simple `README.md` to put in the image's repo. Argument is the name of the image, like `golang` and it then outputs the readme to standard out.
 
-## `README-template.md` and `user-feedback.md`
+## `push.pl`
+
+This is used by us to push the actual content of the READMEs to the Docker Hub as special access is required to modify the Hub description contents.
+
+## `.template-helpers/generate-dockerfile-links-partial.sh`
+
+This script is used by `update.sh` to create the "Supported tags and respective `Dockerfile` links" section of each generated `README.md` from the information in the [official-images `library/` manifests](https://github.com/docker-library/official-images/tree/master/library).
+
+## `.template-helpers/template.md` and `.template-helpers/user-feedback.md`
 
 These files are the templates used in building the `<image name>/README.md` file, in combination with the individual image's files.
 
