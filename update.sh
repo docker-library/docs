@@ -101,6 +101,9 @@ for repo in "${repos[@]}"; do
 		echo '  CONTENT => '"$repo"'/content.md'
 		replace_field "$repo" 'CONTENT' "$(cat "$repo/content.md")"
 		
+		echo '  VARIANT => variant.sh'
+		replace_field "$repo" 'VARIANT' "$("$helperDir/variant.sh" "$repo")"
+		
 		# has to be after CONTENT because it's contained in content.md
 		echo "  LOGO => $logo"
 		replace_field "$repo" 'LOGO' "$logo" '\s*'
