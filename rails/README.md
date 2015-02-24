@@ -49,6 +49,18 @@ If you want to generate the scaffolding for a new Rails project, you can do the 
 
 This will create a sub-directory named `webapp` inside your current directory.
 
+# Image Variants
+
+The `rails` images come in many flavors, each designed for a specific use case.
+
+## `rails:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `rails:onbuild`
+
+This image makes building derivitative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM rails:onbuild` will be enough to create a stand-alone image for your project.
+
 # License
 
 View [license information](https://github.com/rails/rails#license) for the software contained in this image.
