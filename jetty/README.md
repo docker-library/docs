@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.2.8-jre7`, `9.2-jre7`, `9-jre7`, `jre7`, `9.2.8`, `9.2`, `9`, `latest` (*9-jre7/Dockerfile*)](https://github.com/md5/docker-jetty/blob/5e8676bbd4dfec391b2555fd6481e5cfcb0eb90d/9-jre7/Dockerfile)
--	[`9.2.8-jre8`, `9.2-jre8`, `9-jre8`, `jre8` (*9-jre8/Dockerfile*)](https://github.com/md5/docker-jetty/blob/5e8676bbd4dfec391b2555fd6481e5cfcb0eb90d/9-jre8/Dockerfile)
+-	[`9.2.9-jre7`, `9.2-jre7`, `9-jre7`, `jre7`, `9.2.9`, `9.2`, `9`, `latest` (*9-jre7/Dockerfile*)](https://github.com/md5/docker-jetty/blob/d36c03e677a70d00ea1be3965aafc09bb5cc6ceb/9-jre7/Dockerfile)
+-	[`9.2.9-jre8`, `9.2-jre8`, `9-jre8`, `jre8` (*9-jre8/Dockerfile*)](https://github.com/md5/docker-jetty/blob/d36c03e677a70d00ea1be3965aafc09bb5cc6ceb/9-jre8/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
