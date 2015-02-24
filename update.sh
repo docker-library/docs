@@ -2,6 +2,7 @@
 set -e
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
+helperDir='.template-helpers'
 
 repos=( "$@" )
 if [ ${#repos[@]} -eq 0 ]; then
@@ -78,9 +79,9 @@ for repo in "${repos[@]}"; do
 			mailingList=' '
 		fi
 		
-		dockerVersions="$(cat "$repo/docker-versions.md" 2>/dev/null || cat 'docker-versions.md')"
+		dockerVersions="$(cat "$repo/docker-versions.md" 2>/dev/null || cat "$helperDir/docker-versions.md")"
 		
-		userFeedback="$(cat "$repo/user-feedback.md" 2>/dev/null || cat 'user-feedback.md')"
+		userFeedback="$(cat "$repo/user-feedback.md" 2>/dev/null || cat "$helperDir/user-feedback.md")"
 		
 		license="$(cat "$repo/license.md" 2>/dev/null || true)"
 		if [ "$license" ]; then
@@ -92,10 +93,10 @@ for repo in "${repos[@]}"; do
 			logo="![logo](https://raw.githubusercontent.com/docker-library/docs/master/$repo/logo.png)"
 		fi
 		
-		cp -v README-template.md "$repo/README.md"
+		cp -v "$helperDir/template.md" "$repo/README.md"
 		
-		echo '  TAGS => ./generate-dockerfile-links-partial.sh'
-		replace_field "$repo" 'TAGS' "$(./generate-dockerfile-links-partial.sh "$repo")"
+		echo '  TAGS => generate-dockerfile-links-partial.sh'
+		replace_field "$repo" 'TAGS' "$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"
 		
 		echo '  CONTENT => '"$repo"'/content.md'
 		replace_field "$repo" 'CONTENT' "$(cat "$repo/content.md")"
