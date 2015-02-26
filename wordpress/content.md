@@ -30,3 +30,7 @@ If you'd like to use an external database instead of a linked `mysql` container,
 
 	docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
 	    -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress
+
+## %%COMPOSE%%
+
+Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
