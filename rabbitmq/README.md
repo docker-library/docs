@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.4`, `3.4`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/a8033b9187439fb065d198d0c67c40d78c169bc0/Dockerfile)
--	[`3.4.4-management`, `3.4-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/a8033b9187439fb065d198d0c67c40d78c169bc0/management/Dockerfile)
+-	[`3.4.4`, `3.4`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/2a908fca05c991099dd01f9f0fee3ee3d7bf2cdd/Dockerfile)
+-	[`3.4.4-management`, `3.4-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/2a908fca05c991099dd01f9f0fee3ee3d7bf2cdd/management/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
