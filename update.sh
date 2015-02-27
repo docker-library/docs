@@ -93,6 +93,13 @@ for repo in "${repos[@]}"; do
 			logo="![logo](https://raw.githubusercontent.com/docker-library/docs/master/$repo/logo.png)"
 		fi
 		
+		compose=
+		composeYml=
+		if [ -f "$repo/docker-compose.yml" ]; then
+			compose="$(cat "$repo/compose.md" 2>/dev/null || cat "$helperDir/compose.md")"
+			composeYml="$(sed 's/^/\t/' "$repo/docker-compose.yml")"
+		fi
+		
 		cp -v "$helperDir/template.md" "$repo/README.md"
 		
 		echo '  TAGS => generate-dockerfile-links-partial.sh'
@@ -104,6 +111,12 @@ for repo in "${repos[@]}"; do
 		# has to be after CONTENT because it's contained in content.md
 		echo "  LOGO => $logo"
 		replace_field "$repo" 'LOGO' "$logo" '\s*'
+		
+		echo '  COMPOSE => '"$repo"'/compose.md'
+		replace_field "$repo" 'COMPOSE' "$compose"
+		
+		echo '  COMPOSE-YML => '"$repo"'/docker-compose.yml'
+		replace_field "$repo" 'COMPOSE-YML' "$composeYml"
 		
 		echo '  DOCKER-VERSIONS => '"$repo"'/docker-versions.md'
 		replace_field "$repo" 'DOCKER-VERSIONS' "$dockerVersions"
