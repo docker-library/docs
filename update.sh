@@ -21,6 +21,7 @@ replace_field() {
 }
 
 declare -A otherRepos=(
+	[aerospike]='https://github.com/aerospike/aerospike-server.docker'
 	[busybox]='https://github.com/jpetazzo/docker-busybox'
 	[centos]='https://github.com/CentOS/sig-cloud-instance-images'
 	[cirros]='https://github.com/ewindisch/docker-cirros'
