@@ -1,28 +1,22 @@
-Official Nevergreen Docker image
-==================================
-
-## Overview & links
+# What is Nevergreen?
 
 This is the official nevergreen docker image. Nevergreen is a build monitor with attitude. It is awesome for two reasons:
 
-* Your builds should always be green. Nevergreen understands this and only shows you jobs that have failed or are building.
-* Nevergreen uses HTML localStorage. So the config is stored in your web browser. You only need to run it once to host hundreds of different build monitors.
+-	Your builds should always be green. Nevergreen understands this and only shows you jobs that have failed or are building.
+-	Nevergreen uses HTML localStorage. So the config is stored in your web browser. You only need to run it once to host hundreds of different build monitors.
 
-Check out full details at https://github.com/build-canaries/nevergreen
+> [Nevergreen](https://github.com/build-canaries/nevergreen)
 
-## Usage
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/nevergreen/logo.png)
 
-### Run the image with default PORT and AES_KEY (Only used if authentication required) 
+# How to use this image
 
-	docker run -d -p 5000:5000 nevergreen 
+## Run the image - With Authentication for CI
 
-### Run the image with different PORT and AES_KEY (Only if authentication required)
+	    docker run -d -p [host-port]:5000 -e "AES_KEY=your-key" nevergreen
 
-	docker run -d -p port-of-your-choice:5000 -e "AES_KEY"="your-key" nevergreen 
+## Run the image - Without Authentication for CI
 
-## Issues & contributions
+	    docker run -d -p [host-port]:5000 nevergreen
 
-We have a [development guide](https://github.com/build-canaries/nevergreen/blob/master/doc/contributing.md) to help you get started.
-
-If you would like to add a feature/fix a bug for us please create a pull request.
-
+This starts up nevergreen on http://localhost:[host-port\]
