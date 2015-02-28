@@ -23,7 +23,7 @@ The default Jetty environment in the image is:
 	JETTY_HOME    =  /usr/local/jetty
 	JETTY_BASE    =  /var/lib/jetty
 	JETTY_CONF    =  /usr/local/jetty/etc/jetty.conf
-	JETTY_STATE   =  /usr/local/jetty/jetty.state
+	JETTY_STATE   =  /var/lib/jetty/jetty.state
 	JETTY_ARGS    =
 	JAVA_OPTIONS  =
 	TMPDIR        =  /tmp
