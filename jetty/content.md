@@ -21,10 +21,19 @@ You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser
 The default Jetty environment in the image is:
 
 	JETTY_HOME    =  /usr/local/jetty
+	JETTY_BASE    =  /var/lib/jetty
 	JETTY_CONF    =  /usr/local/jetty/etc/jetty.conf
-	JETTY_STATE   =  /usr/local/jetty/jetty.state
+	JETTY_STATE   =  /var/lib/jetty/jetty.state
 	JETTY_ARGS    =
 	JAVA_OPTIONS  =
 	TMPDIR        =  /tmp
 
-Webapps can be [deployed](https://wiki.eclipse.org/Jetty/Howto/Deploy_Web_Applications) in `/usr/local/jetty/webapps`.
+Webapps can be [deployed](https://wiki.eclipse.org/Jetty/Howto/Deploy_Web_Applications) in `/var/lib/jetty/webapps`.
+
+# Security
+
+By default, this image starts as user `root` and uses Jetty's `setuid` module to drop privileges to user `jetty` after initialization. The `JETTY_BASE` directory at `/var/lib/jetty` is owned by `jetty:jetty` (uid 999, gid 999).
+
+If you would like the image to start immediately as user `jetty` instead of starting as `root`, you can start the container with `-u jetty`:
+
+	docker run -d -u jetty jetty:9
