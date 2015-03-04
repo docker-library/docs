@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `centos7`, `7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/d2b1f36081f946ea48236d3e7069a10cc7216b46/docker/Dockerfile)
--	[`centos6`, `6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/01f3dc82f23069f0298c236e40e797b782b66f4f/docker/Dockerfile)
--	[`centos5`, `5` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/b60ba9719c49307c019be6be6fc9de66ea17cdb7/docker/Dockerfile)
--	[`centos7.0.1406`, `7.0.1406` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/78324d2ab4fa3a51af6f8684714897620c8187e2/docker/Dockerfile)
--	[`centos6.6`, `6.6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/093057200201be5b04f19ba68f5ec284d9e6629c/docker/Dockerfile)
--	[`centos5.11`, `5.11` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/c22c7dcaa7a852a15f9b97865ba1d93b04b0d5fb/docker/Dockerfile)
+-	[`latest`, `centos7`, `7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/c25e39b145ff6fb7b886f144f444d3b745957b5f/docker/Dockerfile)
+-	[`centos6`, `6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/e83bb5bf3b38bda254b46908234999355265cd96/docker/Dockerfile)
+-	[`centos5`, `5` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/c8d1a81b0516bca0f20434be8d0fac4f7d58a04a/docker/Dockerfile)
+-	[`centos7.0.1406`, `7.0.1406` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/f1d1e0bd83baef08e257da50e6fb446e4dd1b90c/docker/Dockerfile)
+-	[`centos6.6`, `6.6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/8911843d9a6cc71aadd81e491f94618aded94f30/docker/Dockerfile)
+-	[`centos5.11`, `5.11` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/2d0554464ae19f4fd70d1b540c8968dbe872797b/docker/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/centos`)](https://github.com/docker-library/official-images/blob/master/library/centos) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
