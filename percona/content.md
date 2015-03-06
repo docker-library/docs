@@ -1,12 +1,10 @@
-# What is MySQL?
+# Percona Server
 
-MySQL is (as of March 2014) the world's second most widely used open-source relational database management system (RDBMS). It is named after co-founder Michael Widenius's daughter, My. The SQL phrase stands for Structured Query Language.
+Percona Server is a fork of the MySQL relational database management system created by Percona.
 
-MySQL is a popular choice of database for use in web applications, and is a central component of the widely used LAMP open source web application software stack (and other 'AMP' stacks). LAMP is an acronym for "Linux, Apache, MySQL, Perl/PHP/Python." Free-software-open source projects that require a full-featured database management system often use MySQL.
+It aims to retain close compatibility to the official MySQL releases, while focusing on performance and increased visibility into server operations. Also included in Percona Server is XtraDB, Percona's fork of the InnoDB Storage Engine.
 
-Oracle Corporation and/or affiliates own the copyright and trademark for MySQL.
-
-> [wikipedia.org/wiki/MySQL](https://en.wikipedia.org/wiki/MySQL)
+> [wikipedia.org/wiki/Percona_Server](https://en.wikipedia.org/wiki/Percona_Server)
 
 %%LOGO%%
 
@@ -20,6 +18,8 @@ This image includes `EXPOSE 3306` (the standard MySQL port), so container linkin
 
 ## connect to it from an application
 
+Since Percona Server is intended as a drop-in replacement for MySQL, it can be used with many applications.
+
 	docker run --name some-app --link some-%%REPO%%:mysql -d application-that-uses-mysql
 
 ## ... or via `mysql`
@@ -29,6 +29,8 @@ This image includes `EXPOSE 3306` (the standard MySQL port), so container linkin
 ## Environment Variables
 
 The `%%REPO%%` image uses several environment variables which are easy to miss. While not all the variables are required, they may significantly aid you in using the image.
+
+The variable names are prefixed with `MYSQL_` since the binary is `mysqld`, and since the intention is to be a drop-in replacement for MySQL, as mentioned above.
 
 ### `MYSQL_ROOT_PASSWORD`
 
