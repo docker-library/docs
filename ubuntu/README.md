@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20150212`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/50d175ca0b2820fcdb213455d46d1a47f11493cd/precise/Dockerfile)
--	[`14.04.2`, `14.04`, `trusty-20150218.1`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/50d175ca0b2820fcdb213455d46d1a47f11493cd/trusty/Dockerfile)
--	[`14.10`, `utopic-20150211`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/50d175ca0b2820fcdb213455d46d1a47f11493cd/utopic/Dockerfile)
--	[`15.04`, `vivid-20150218`, `vivid` (*vivid/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/50d175ca0b2820fcdb213455d46d1a47f11493cd/vivid/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20150228.11`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/d0f6462dc68f2719836c3c29bc5551b34140b1e2/precise/Dockerfile)
+-	[`14.04.2`, `14.04`, `trusty-20150228.11`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/d0f6462dc68f2719836c3c29bc5551b34140b1e2/trusty/Dockerfile)
+-	[`14.10`, `utopic-20150228.11`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/d0f6462dc68f2719836c3c29bc5551b34140b1e2/utopic/Dockerfile)
+-	[`15.04`, `vivid-20150309`, `vivid` (*vivid/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/d0f6462dc68f2719836c3c29bc5551b34140b1e2/vivid/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
