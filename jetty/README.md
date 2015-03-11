@@ -30,12 +30,20 @@ The default Jetty environment in the image is:
 	JETTY_HOME    =  /usr/local/jetty
 	JETTY_BASE    =  /var/lib/jetty
 	JETTY_CONF    =  /usr/local/jetty/etc/jetty.conf
-	JETTY_STATE   =  /var/lib/jetty/jetty.state
+	JETTY_STATE   =  /run/jetty/jetty.state
 	JETTY_ARGS    =
 	JAVA_OPTIONS  =
-	TMPDIR        =  /tmp
+	TMPDIR        =  /tmp/jetty
 
 Webapps can be [deployed](https://wiki.eclipse.org/Jetty/Howto/Deploy_Web_Applications) in `/var/lib/jetty/webapps`.
+
+## Read-only container
+
+To run `jetty` as a read-only container, have Docker create the `/tmp/jetty` and `/run/jetty` directories as volumes:
+
+	docker run -d --read-only -v /tmp/jetty -v /run/jetty jetty:9
+
+Since the container is read-only, you'll need to either mount in your webapps directory with `-v /path/to/my/webapps:/var/lib/jetty/webapps` or by populating `/var/lib/jetty/webapps` in a derived image.
 
 # Security
 
