@@ -43,12 +43,9 @@ The default configuration file for the server (located at `/etc/odoo/openerp-ser
 
 	docker run -v /path/to/config:/etc/odoo -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo
 
-Please use [this configuration template](https://github.com/odoo/docker/blob/master/8.0/openerp-server.conf)
-to write your custom configuration as we already set some arguments for running
-Odoo inside a Docker container.
+Please use [this configuration template](https://github.com/odoo/docker/blob/master/8.0/openerp-server.conf) to write your custom configuration as we already set some arguments for running Odoo inside a Docker container.
 
-You can also directly specify Odoo arguments inline. Those arguments must be
-given after the keyword `--` in the command-line, as follows
+You can also directly specify Odoo arguments inline. Those arguments must be given after the keyword `--` in the command-line, as follows
 
 	docker run -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo -- --dbfilter=odoo_db_.*
 
@@ -69,9 +66,7 @@ Please note that for plain use of mails and reports functionalities, when the ho
 
 Suppose you created a database from an Odoo instance named old-odoo, and you want to access this database from a new Odoo instance named new-odoo, e.g. because you've just downloaded a newer Odoo image.
 
-By default, Odoo 8.0 uses a filestore (located at /var/lib/odoo/filestore/)
-for attachments. You should restore this filestore in your new Odoo instance by
-running
+By default, Odoo 8.0 uses a filestore (located at /var/lib/odoo/filestore/) for attachments. You should restore this filestore in your new Odoo instance by running
 
 	docker run --volumes-from old-odoo -p 127.0.0.1:8070:8069 --name new-odoo --link db:db -t odoo
 
