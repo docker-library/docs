@@ -1,12 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`lucid`, `nd10.04` (*dockerfiles/lucid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/6ee7033cb630b4a72fa3a4a56ad6046405efacdf/dockerfiles/lucid/Dockerfile)
--	[`precise`, `nd12.04` (*dockerfiles/precise/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/6ee7033cb630b4a72fa3a4a56ad6046405efacdf/dockerfiles/precise/Dockerfile)
--	[`trusty`, `nd14.04` (*dockerfiles/trusty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/6ee7033cb630b4a72fa3a4a56ad6046405efacdf/dockerfiles/trusty/Dockerfile)
--	[`squeeze`, `nd60` (*dockerfiles/squeeze/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/6ee7033cb630b4a72fa3a4a56ad6046405efacdf/dockerfiles/squeeze/Dockerfile)
--	[`wheezy`, `nd70`, `latest` (*dockerfiles/wheezy/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/6ee7033cb630b4a72fa3a4a56ad6046405efacdf/dockerfiles/wheezy/Dockerfile)
--	[`jessie`, `nd80` (*dockerfiles/jessie/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/6ee7033cb630b4a72fa3a4a56ad6046405efacdf/dockerfiles/jessie/Dockerfile)
--	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/6ee7033cb630b4a72fa3a4a56ad6046405efacdf/dockerfiles/sid/Dockerfile)
+-	[`lucid`, `nd10.04` (*dockerfiles/lucid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/9e8423812776668cf8e3e9653da939e22c11af7a/dockerfiles/lucid/Dockerfile)
+-	[`precise`, `nd12.04` (*dockerfiles/precise/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/9e8423812776668cf8e3e9653da939e22c11af7a/dockerfiles/precise/Dockerfile)
+-	[`trusty`, `nd14.04` (*dockerfiles/trusty/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/9e8423812776668cf8e3e9653da939e22c11af7a/dockerfiles/trusty/Dockerfile)
+-	[`utopic`, `nd14.10` (*dockerfiles/utopic/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/9e8423812776668cf8e3e9653da939e22c11af7a/dockerfiles/utopic/Dockerfile)
+-	[`squeeze`, `nd60` (*dockerfiles/squeeze/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/9e8423812776668cf8e3e9653da939e22c11af7a/dockerfiles/squeeze/Dockerfile)
+-	[`wheezy`, `nd70`, `latest` (*dockerfiles/wheezy/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/9e8423812776668cf8e3e9653da939e22c11af7a/dockerfiles/wheezy/Dockerfile)
+-	[`jessie`, `nd80` (*dockerfiles/jessie/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/9e8423812776668cf8e3e9653da939e22c11af7a/dockerfiles/jessie/Dockerfile)
+-	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/9e8423812776668cf8e3e9653da939e22c11af7a/dockerfiles/sid/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
