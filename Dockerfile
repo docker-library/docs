@@ -4,7 +4,8 @@ FROM perl:5.20
 ENV PERL_CPANM_OPT --verbose --mirror https://cpan.metacpan.org
 # TODO find a way to make --mirror-only / SSL work with backpan too :(
 RUN cpanm Digest::SHA Module::Signature
-ENV PERL_CPANM_OPT $PERL_CPANM_OPT --verify
+# TODO find a way to make --verify work with backpan as well :'(
+#ENV PERL_CPANM_OPT $PERL_CPANM_OPT --verify
 
 # reinstall cpanm itself, for good measure
 RUN cpanm App::cpanminus
