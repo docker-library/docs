@@ -27,11 +27,13 @@ if [ "$text" ]; then
   latest=($(curl -sSL $url | sed -e 's/git:\/\/github.com\///' -e 's/@/ /' - | grep "latest"))
   dockerfile='https://raw.githubusercontent.com/'"${latest[1]}"'/'"${latest[2]}"'/'"${latest[3]}"'/Dockerfile'
   base_image=$(curl -sSL $dockerfile | sed 's/:/\t/' | nawk '/^FROM .*$/ { print $2 }')
+  # give a little space
+  echo
+  echo
   if [ "$base_image" = "buildpack-deps" ]; then
-    # give a little space
-    echo
-    echo
+    cat "$dir/variant-buildpacks.md"
+  else
     cat "$dir/variant.md"
-    echo "$text"
   fi
+  echo "$text"
 fi
