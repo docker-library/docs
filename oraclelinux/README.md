@@ -1,8 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7`, `7.0`, `latest` (*OracleLinux/7.0/Dockerfile*)](https://github.com/oracle/docker/blob/3e2a0898efc8538bddb20c2e01f46a67a0262d54/OracleLinux/7.0/Dockerfile)
--	[`6`, `6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker/blob/3e2a0898efc8538bddb20c2e01f46a67a0262d54/OracleLinux/6.6/Dockerfile)
--	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker/blob/3e2a0898efc8538bddb20c2e01f46a67a0262d54/OracleLinux/5.11/Dockerfile)
+-	[`latest`, `7`, `7.1` (*OracleLinux/7.1/Dockerfile*)](https://github.com/oracle/docker/blob/96b7a2c036d0cdd1386d11f35311af8a98541fde/OracleLinux/7.1/Dockerfile)
+-	[`7.0` (*OracleLinux/7.0/Dockerfile*)](https://github.com/oracle/docker/blob/96b7a2c036d0cdd1386d11f35311af8a98541fde/OracleLinux/7.0/Dockerfile)
+-	[`6`, `6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker/blob/96b7a2c036d0cdd1386d11f35311af8a98541fde/OracleLinux/6.6/Dockerfile)
+-	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker/blob/96b7a2c036d0cdd1386d11f35311af8a98541fde/OracleLinux/5.11/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/oraclelinux`)](https://github.com/docker-library/official-images/blob/master/library/oraclelinux) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -56,4 +57,4 @@ For Oracle Linux users without a paid support subscription, the following resour
 
 Oracle Linux customers with an active support subscription should follow the existing support procedures to suggest new features, fixes or updates to the Oracle Linux Docker images.
 
-For Oracle Linux users without a paid support subscription, please submit any new feature, fix or update suggestion via a [GitHub issue](https://github.com/oracle/docker-images/issues).
+For Oracle Linux users without a paid support subscription, please submit any new feature, fix or update suggestion via a [GitHub issue](https://github.com/oracle/docker/issues).
