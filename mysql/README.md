@@ -74,7 +74,7 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MySQL instance completely unprotected, allowing anyone to gain complete superuser access.
 
-## Notes, tips, gotchas
+## Notes, tips, caveats
 
 ### Where to Store Data
 
@@ -117,6 +117,10 @@ This will start a new MySQL container ``my-new-container-name`` where the MySQL 
 Note that users on systems with SELinux enabled may experience problems with this. The current workaround is to assign the relevant SELinux policy type to your new config file so that the container will be allowed to mount it:
 
      	  chcon -Rt svirt_sandbox_file_t /my/custom/config-file
+
+### Initialization time
+
+If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
 	  	
 ## Supported Docker versions
 
