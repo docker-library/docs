@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.10.0`, `3.10` (*3.10.0/Dockerfile*)](https://github.com/mono/docker/blob/2d7f8f39a10ab9fda43b33ba17f6985d1b2cd3d8/3.10.0/Dockerfile)
--	[`3.10.0-onbuild`, `3.10-onbuild` (*3.10.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/66226b17125b72685c2022e4fecaee2716b0fb3a/3.10.0/onbuild/Dockerfile)
--	[`3.12.0`, `3.12`, `3`, `latest` (*3.12.0/Dockerfile*)](https://github.com/mono/docker/blob/2d7f8f39a10ab9fda43b33ba17f6985d1b2cd3d8/3.12.0/Dockerfile)
--	[`3.12.0-onbuild`, `3.12-onbuild`, `3-onbuild`, `onbuild` (*3.12.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/66226b17125b72685c2022e4fecaee2716b0fb3a/3.12.0/onbuild/Dockerfile)
--	[`3.8.0`, `3.8` (*3.8.0/Dockerfile*)](https://github.com/mono/docker/blob/2d7f8f39a10ab9fda43b33ba17f6985d1b2cd3d8/3.8.0/Dockerfile)
--	[`3.8.0-onbuild`, `3.8-onbuild` (*3.8.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/66226b17125b72685c2022e4fecaee2716b0fb3a/3.8.0/onbuild/Dockerfile)
+-	[`3.10.0`, `3.10` (*3.10.0/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.10.0/Dockerfile)
+-	[`3.10.0-onbuild`, `3.10-onbuild` (*3.10.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.10.0/onbuild/Dockerfile)
+-	[`3.12.1`, `3.12.0`, `3.12`, `3`, `latest` (*3.12.0/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.12.0/Dockerfile)
+-	[`3.12.0-onbuild`, `3.12-onbuild`, `3-onbuild`, `onbuild` (*3.12.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.12.0/onbuild/Dockerfile)
+-	[`3.8.0`, `3.8` (*3.8.0/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.8.0/Dockerfile)
+-	[`3.8.0-onbuild`, `3.8-onbuild` (*3.8.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.8.0/onbuild/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

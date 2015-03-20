@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.22`, `1.4`, `1`, `latest` (*Dockerfile*)](https://github.com/docker-library/memcached/blob/5fb6459a1eb138dcd9cfcd5fa1aef62ee511d335/Dockerfile)
+-	[`1.4.22`, `1.4`, `1`, `latest` (*Dockerfile*)](https://github.com/docker-library/memcached/blob/02d67343c042b0bcf3479f64594b0e14d796434c/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/memcached`)](https://github.com/docker-library/official-images/blob/master/library/memcached) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

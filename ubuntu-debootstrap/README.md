@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`10.04.4`, `10.04`, `lucid` (*10.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/e4067ddd190ac935abb6eafa95d73221c1d31492/10.04/Dockerfile)
--	[`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/e4067ddd190ac935abb6eafa95d73221c1d31492/12.04/Dockerfile)
--	[`14.04.2`, `14.04`, `trusty`, `latest` (*14.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/e4067ddd190ac935abb6eafa95d73221c1d31492/14.04/Dockerfile)
--	[`14.10`, `utopic` (*14.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/e4067ddd190ac935abb6eafa95d73221c1d31492/14.10/Dockerfile)
--	[`15.04`, `vivid` (*15.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/e4067ddd190ac935abb6eafa95d73221c1d31492/15.04/Dockerfile)
--	[`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/e4067ddd190ac935abb6eafa95d73221c1d31492/devel/Dockerfile)
+-	[`10.04.4`, `10.04`, `lucid` (*10.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/665236ab3a0502f974c9c41d8b36475a06d7e2ce/10.04/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/665236ab3a0502f974c9c41d8b36475a06d7e2ce/12.04/Dockerfile)
+-	[`14.04.2`, `14.04`, `trusty`, `latest` (*14.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/665236ab3a0502f974c9c41d8b36475a06d7e2ce/14.04/Dockerfile)
+-	[`14.10`, `utopic` (*14.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/665236ab3a0502f974c9c41d8b36475a06d7e2ce/14.10/Dockerfile)
+-	[`15.04`, `vivid` (*15.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/665236ab3a0502f974c9c41d8b36475a06d7e2ce/15.04/Dockerfile)
+-	[`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/665236ab3a0502f974c9c41d8b36475a06d7e2ce/devel/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/ubuntu-debootstrap`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-debootstrap) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

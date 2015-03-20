@@ -2,13 +2,16 @@
 
 -	[`jessie-curl`, `curl` (*jessie/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/jessie/curl/Dockerfile)
 -	[`jessie-scm`, `scm` (*jessie/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/jessie/scm/Dockerfile)
--	[`jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/jessie/Dockerfile)
+-	[`jessie`, `latest` (*jessie/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/44070019e0c6c4f83461f2058d110cc418da09c4/jessie/Dockerfile)
 -	[`sid-curl` (*sid/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/sid/curl/Dockerfile)
 -	[`sid-scm` (*sid/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/sid/scm/Dockerfile)
--	[`sid` (*sid/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/sid/Dockerfile)
+-	[`sid` (*sid/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/44070019e0c6c4f83461f2058d110cc418da09c4/sid/Dockerfile)
+-	[`squeeze-curl` (*squeeze/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/f086230fb870874c39bd85f3ee65f86fd4ca8c97/squeeze/curl/Dockerfile)
+-	[`squeeze-scm` (*squeeze/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/f086230fb870874c39bd85f3ee65f86fd4ca8c97/squeeze/scm/Dockerfile)
+-	[`squeeze` (*squeeze/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/f086230fb870874c39bd85f3ee65f86fd4ca8c97/squeeze/Dockerfile)
 -	[`wheezy-curl` (*wheezy/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/wheezy/curl/Dockerfile)
 -	[`wheezy-scm` (*wheezy/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/wheezy/scm/Dockerfile)
--	[`wheezy` (*wheezy/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/wheezy/Dockerfile)
+-	[`wheezy` (*wheezy/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/44070019e0c6c4f83461f2058d110cc418da09c4/wheezy/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
