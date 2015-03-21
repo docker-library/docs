@@ -46,10 +46,10 @@ The `docker exec` command allows you to run commands inside a Docker container. 
 
 	docker exec -it some-mysql bash
 
-The MySQL Server log is located at `/var/log/mysql/error.log` inside the container, and the following command line from a shell inside the container will let you inspect it:
+The MySQL Server log is available through Docker's container log:
 
-	more /var/log/mysql/error.log
-    
+	docker logs some-mysql
+
 ## Using a custom MySQL configuration file
 
 The MySQL startup configuration is specified in the file `/etc/mysql/my.cnf`. If you want to customize this configuration for your own purposes, you can create your alternative configuration file in a directory on the host machine and then mount this file in the appropriate location inside the `mysql` container, effectively replacing the standard configuration file.
