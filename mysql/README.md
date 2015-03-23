@@ -2,7 +2,7 @@
 
 -	[`5.5.42`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/8ed790ab199eeef0f36ef0547ae28e5654cbef0d/5.5/Dockerfile)
 -	[`5.6.23`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/8ed790ab199eeef0f36ef0547ae28e5654cbef0d/5.6/Dockerfile)
--	[`5.7.5-m15`, `5.7.5`, `5.7` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/66f8feb4296894143ced202dd0042bc361096747/5.7/Dockerfile)
+-	[`5.7.6-m16`, `5.7.6`, `5.7` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/e0d58135e8c54a918037cfe9ea3077a3a088e0de/5.7/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
