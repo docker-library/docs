@@ -39,7 +39,7 @@ Run `docker-compose up`, wait for it to initialize completely, and visit `http:/
 
 This image does not provide any additional php-extensions or other libraries, even if they are required by several plugins. That is because there are so many plugins, requiring so many extensions and libraries, that the image will dramatically increase in size.
 
-If you need one or several extensions or libraries, the easiest was is to create your own image. Base it on the version of the official wordpress image you need and add the extensions you need. The 
+If you need one or several extensions or libraries, the easiest way is to create your own image. Base it on the version of the official wordpress image you need and add the extensions you need. The 
 [documentation of the php image](https://github.com/docker-library/docs/blob/master/php/README.md#how-to-install-more-php-extensions) shows how to accomplish that in detail.
 
 In order to keep your image with the extensions you require up to date, there are features of Docker Hub which help you:
