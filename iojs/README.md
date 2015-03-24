@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.1`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/2114895b8700565371f6557cd79d0356f8df199f/1.6/Dockerfile)
--	[`1.6.1-onbuild`, `1.6-onbuild`, `1-onbuild`, `onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/2114895b8700565371f6557cd79d0356f8df199f/1.6/onbuild/Dockerfile)
--	[`1.6.1-slim`, `1.6-slim`, `1-slim`, `slim` (*1.6/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/2114895b8700565371f6557cd79d0356f8df199f/1.6/slim/Dockerfile)
+-	[`1.6.2`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/c48cc2ebffcb191ef090f5addfd52162f0ad2de2/1.6/Dockerfile)
+-	[`1.6.2-onbuild`, `1.6-onbuild`, `1-onbuild`, `onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/c48cc2ebffcb191ef090f5addfd52162f0ad2de2/1.6/onbuild/Dockerfile)
+-	[`1.6.2-slim`, `1.6-slim`, `1-slim`, `slim` (*1.6/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/c48cc2ebffcb191ef090f5addfd52162f0ad2de2/1.6/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/iojs`)](https://github.com/docker-library/official-images/blob/master/library/iojs) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
