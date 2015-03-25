@@ -56,16 +56,16 @@ Example `docker-compose.yml` for `wordpress`:
 
 Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
 
-## Add additional libraries / extensions
+## Adding additional libraries / extensions
 
-This image does not provide any additional php-extensions or other libraries, even if they are required by several plugins. That is because there are so many plugins, requiring so many extensions and libraries, that the image will dramatically increase in size.
+This image does not provide any additional PHP extensions or other libraries, even if they are required by popular plugins. There are an infinite number of possible plugins, and they potentially require any extension PHP supports. Including every PHP extension that exists would dramatically increase the image size.
 
-If you need one or several extensions or libraries, the easiest way is to create your own image. Base it on the version of the official wordpress image you need and add the extensions you need. The [documentation of the php image](https://github.com/docker-library/docs/blob/master/php/README.md#how-to-install-more-php-extensions) shows how to accomplish that in detail.
+If you need additional PHP extensions, you'll need to create your own image `FROM` this one. The [documentation of the `php` image](https://github.com/docker-library/docs/blob/master/php/README.md#how-to-install-more-php-extensions) explains how to compile additional extensions.
 
-In order to keep your image with the extensions you require up to date, there are features of Docker Hub which help you:
+The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
--	[Automated Builds](https://docs.docker.com/docker-hub/builds/): Let Docker Hub automatically create a new image from your Dockerfile each time you push changes to it.
--	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links): Link your docker image to `library/wordpress` so it is automatically rebuild once the official wordpress image is rebuild.
+-	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
+-	[Repository Links](https://docs.docker.com/docker-hub/builds/#repository-links) can ensure that your image is also rebuilt any time `wordpress` is updated.
 
 # Supported Docker versions
 

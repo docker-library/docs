@@ -1,9 +1,5 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.3-p551`, `1.9.3`, `1.9`, `1` (*1.9/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f5d7ef4e2659596e007871db90b80b2f235b845/1.9/Dockerfile)
--	[`1.9.3-p551-onbuild`, `1.9.3-onbuild`, `1.9-onbuild`, `1-onbuild` (*1.9/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/1.9/onbuild/Dockerfile)
--	[`1.9.3-p551-slim`, `1.9.3-slim`, `1.9-slim`, `1-slim` (*1.9/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/8164fe030868a3fc680dc53277b9572feedf112a/1.9/slim/Dockerfile)
--	[`1.9.3-p551-wheezy`, `1.9.3-wheezy`, `1.9-wheezy`, `1-wheezy` (*1.9/wheezy/Dockerfile*)](https://github.com/docker-library/ruby/blob/8c8394eebfff558f3aa00780e09f73f04e8eca56/1.9/wheezy/Dockerfile)
 -	[`2.0.0-p643`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.0/Dockerfile)
 -	[`2.0.0-p643-onbuild`, `2.0.0-onbuild`, `2.0-onbuild` (*2.0/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.0/onbuild/Dockerfile)
 -	[`2.0.0-p643-slim`, `2.0.0-slim`, `2.0-slim` (*2.0/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.0/slim/Dockerfile)
