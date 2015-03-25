@@ -12,7 +12,7 @@ For more information and related downloads for MySQL Server and other MySQL prod
 
 Starting a MySQL instance is simple:
 
-docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%REPO%%:tag
+	docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%REPO%%:tag
 
 ... where `some-%%REPO%%` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MySQL root user and `tag` is the tag specifying the MySQL version you want. See the list above for relevant tags.
 
@@ -20,13 +20,13 @@ docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%REPO%%:
 
 This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
 
-docker run --name some-app --link some-%%REPO%%:mysql -d app-that-uses-mysql
+	docker run --name some-app --link some-%%REPO%%:mysql -d app-that-uses-mysql
 
 ## Connect to MySQL from the MySQL command line client
 
 The following command starts another MySQL container instance and runs the `mysql` command line client against your original MySQL container, allowing you to execute SQL statements against your database instance:
 
-docker run -it --link some-%%REPO%%:mysql --rm %%REPO%% sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+	docker run -it --link some-%%REPO%%:mysql --rm %%REPO%% sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
 
 ... where `some-%%REPO%%` is the name of your original MySQL Server container.
 
@@ -36,11 +36,11 @@ More information about the MySQL command line client can be found in the [MySQL 
 
 The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `%%REPO%%` container:
 
-docker exec -it some-%%REPO%% bash
+	docker exec -it some-%%REPO%% bash
 
 The MySQL Server log is available through Docker's container log:
 
-docker logs some-%%REPO%%
+	docker logs some-%%REPO%%
 
 ## Using a custom MySQL configuration file
 
@@ -48,17 +48,17 @@ The MySQL startup configuration is specified in the file `/etc/mysql/my.cnf`. If
 
 If you want to base your changes on the standard configuration file, start your `%%REPO` container in the standard way described above, then do:
 
-docker exec -it some-%%REPO%% cat /etc/mysql/my.cnf > /my/custom/config-file
+	docker exec -it some-%%REPO%% cat /etc/mysql/my.cnf > /my/custom/config-file
 
 ... where `/my/custom/config-file` is the path and name of the new configuration file. Then start a new `%%REPO%%` container like this:
 
-docker run --name new-conf-%%REPO%% -v /my/custom/config-file:/etc/mysql/my.cnf -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%REPO%%:tag
+	docker run --name new-conf-%%REPO%% -v /my/custom/config-file:/etc/mysql/my.cnf -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%REPO%%:tag
 
 This will start a new container `new-conf-%%REPO%%` where the MySQL instance uses the startup options specified in `/my/custom/config-file`.
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to your new config file so that the container will be allowed to mount it:
 
-chcon -Rt svirt_sandbox_file_t /my/custom/config-file
+	chcon -Rt svirt_sandbox_file_t /my/custom/config-file
 
 ## Environment Variables
 
@@ -102,7 +102,7 @@ The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
 
-chcon -Rt svirt_sandbox_file_t /my/own/datadir
+	chcon -Rt svirt_sandbox_file_t /my/own/datadir
 
 ## No connections until MySQL init completes
 
