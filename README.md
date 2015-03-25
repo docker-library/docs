@@ -18,6 +18,7 @@ All Markdown files here are run through [tianon's fork of `markdownfmt`](https:/
 Optionally: (we run this periodically, especially before pushing updated descriptions)
 
 -	run `./update.sh myimage` to generate `myimage/README.md`
+-	run `./markdownfmt.sh -l myimage` to verify whether format of your markdown files is compliant to markdownfmt. In case you see any file names, markdownfmt detected some issues, which might result in a failed build during continuous integration.
 
 # What are all these files?
 
