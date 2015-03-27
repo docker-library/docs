@@ -16,6 +16,8 @@ Docker is an open-source project that automates the deployment of applications i
 
 This image contains the building and testing environment of the Docker project itself, from which the official releases are made.
 
+If you are looking for an up-to-date development environment for doing development work on Docker's `master` branch, you should use [`dockercore/docker`](https://registry.hub.docker.com/u/dockercore/docker/) instead. It's an automated build of [`github.com/docker/docker`](https://github.com/docker/docker)'s `master` branch, and is maintained by the Docker core team.
+
 # Supported Docker versions
 
 This image is officially supported on Docker version 1.5.0.
