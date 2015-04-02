@@ -1,16 +1,16 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.0-p643`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.0/Dockerfile)
+-	[`2.0.0-p643`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/ruby/blob/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.0/Dockerfile)
 -	[`2.0.0-p643-onbuild`, `2.0.0-onbuild`, `2.0-onbuild` (*2.0/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.0/onbuild/Dockerfile)
--	[`2.0.0-p643-slim`, `2.0.0-slim`, `2.0-slim` (*2.0/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.0/slim/Dockerfile)
+-	[`2.0.0-p643-slim`, `2.0.0-slim`, `2.0-slim` (*2.0/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.0/slim/Dockerfile)
 -	[`2.0.0-p643-wheezy`, `2.0.0-wheezy`, `2.0-wheezy` (*2.0/wheezy/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.0/wheezy/Dockerfile)
--	[`2.1.5`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/1f5d7ef4e2659596e007871db90b80b2f235b845/2.1/Dockerfile)
+-	[`2.1.5`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/ruby/blob/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.1/Dockerfile)
 -	[`2.1.5-onbuild`, `2.1-onbuild` (*2.1/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/069e9f5f9aa4903f4a3cb4baf6325d08d9d366e6/2.1/onbuild/Dockerfile)
--	[`2.1.5-slim`, `2.1-slim` (*2.1/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/4a125ef1ad5c8d9d8a7560fcb86c9a7ed3c39dff/2.1/slim/Dockerfile)
+-	[`2.1.5-slim`, `2.1-slim` (*2.1/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.1/slim/Dockerfile)
 -	[`2.1.5-wheezy`, `2.1-wheezy` (*2.1/wheezy/Dockerfile*)](https://github.com/docker-library/ruby/blob/8c8394eebfff558f3aa00780e09f73f04e8eca56/2.1/wheezy/Dockerfile)
--	[`2.2.1`, `2.2`, `2`, `latest` (*2.2/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.2/Dockerfile)
+-	[`2.2.1`, `2.2`, `2`, `latest` (*2.2/Dockerfile*)](https://github.com/docker-library/ruby/blob/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.2/Dockerfile)
 -	[`2.2.1-onbuild`, `2.2-onbuild`, `2-onbuild`, `onbuild` (*2.2/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.2/onbuild/Dockerfile)
--	[`2.2.1-slim`, `2.2-slim`, `2-slim`, `slim` (*2.2/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.2/slim/Dockerfile)
+-	[`2.2.1-slim`, `2.2-slim`, `2-slim`, `slim` (*2.2/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/69582bf7de57fe358d4c3c7c23400aebaf626b92/2.2/slim/Dockerfile)
 -	[`2.2.1-wheezy`, `2.2-wheezy`, `2-wheezy`, `wheezy` (*2.2/wheezy/Dockerfile*)](https://github.com/docker-library/ruby/blob/90c4e3be58d565007c518d311d4bd05086a1638c/2.2/wheezy/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).

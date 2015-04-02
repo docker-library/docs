@@ -1,8 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `centos7`, `7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/c25e39b145ff6fb7b886f144f444d3b745957b5f/docker/Dockerfile)
+-	[`latest`, `centos7`, `7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/bfa76ddefb6cd4f4e743e0c03ee69d78b56ee406/docker/Dockerfile)
 -	[`centos6`, `6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/e83bb5bf3b38bda254b46908234999355265cd96/docker/Dockerfile)
 -	[`centos5`, `5` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/c8d1a81b0516bca0f20434be8d0fac4f7d58a04a/docker/Dockerfile)
+-	[`centos7.1.1503`, `7.1.1503` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/bc561dfdd671d612dbb9f92e7e17dd8009befc44/docker/Dockerfile)
 -	[`centos7.0.1406`, `7.0.1406` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/f1d1e0bd83baef08e257da50e6fb446e4dd1b90c/docker/Dockerfile)
 -	[`centos6.6`, `6.6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/8911843d9a6cc71aadd81e491f94618aded94f30/docker/Dockerfile)
 -	[`centos5.11`, `5.11` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/2d0554464ae19f4fd70d1b540c8968dbe872797b/docker/Dockerfile)
