@@ -32,6 +32,7 @@ declare -A otherRepos=(
 	[debian]='https://github.com/tianon/docker-brew-debian'
 	[docker-dev]='https://github.com/docker/docker'
 	[fedora]='https://github.com/lsm5/docker-brew-fedora'
+	[glassfish]='https://github.com/aws/aws-eb-glassfish'
 	[haskell]='https://github.com/darinmorrison/docker-haskell'
 	[hipache]='https://github.com/dotcloud/hipache'
 	[hylang]='https://github.com/hylang/hy'
