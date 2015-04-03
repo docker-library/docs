@@ -46,6 +46,18 @@ This Docker image is provided by Xamarin, for users of the Mono Project.
 
 Thanks to [Michael Friis](http://friism.com/) for his preliminary work.
 
+# Image Variants
+
+The `mono` images come in many flavors, each designed for a specific use case.
+
+## `mono:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `mono:onbuild`
+
+This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM mono:onbuild` will be enough to create a stand-alone image for your project.
+
 # License
 
 This Docker Image is licensed with the Expat License. See the [Mono Project licensing FAQ](http://www.mono-project.com/docs/faq/licensing/) for details on how Mono and associated libraries are licensed.

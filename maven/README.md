@@ -35,6 +35,18 @@ For many simple projects, you may find it inconvenient to write a complete `Dock
 
 	docker run -it --rm --name my-maven-project -v "$PWD":/usr/src/mymaven -w /usr/src/mymaven maven:3.2-jdk-7 mvn clean install
 
+# Image Variants
+
+The `maven` images come in many flavors, each designed for a specific use case.
+
+## `maven:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `maven:onbuild`
+
+This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM maven:onbuild` will be enough to create a stand-alone image for your project.
+
 # License
 
 View [license information](https://www.apache.org/licenses/) for the software contained in this image.
