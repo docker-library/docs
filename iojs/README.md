@@ -47,7 +47,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 ## `iojs:onbuild`
 
-This image makes building derivitative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM iojs:onbuild` will be enough to create a stand-alone image for your project.
+This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM iojs:onbuild` will be enough to create a stand-alone image for your project.
 
 ## `iojs:slim`
 
