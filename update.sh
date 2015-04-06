@@ -52,6 +52,7 @@ declare -A otherRepos=(
 	[oraclelinux]='https://github.com/oracle/docker'
 	[perl]='https://github.com/Perl/docker-perl'
 	[r-base]='https://github.com/rocker-org/rocker'
+	[rakudo]='https://github.com/perl6/docker'
 	[registry]='https://github.com/docker/docker-registry'
 	[rethinkdb]='https://github.com/stuartpb/rethinkdb-dockerfiles'
 	[swarm]='https://github.com/docker/swarm-library-image'
