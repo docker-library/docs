@@ -44,13 +44,13 @@ The MySQL Server log is available through Docker's container log:
 
 ## Using a custom MySQL configuration file
 
-The MySQL startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `%%REPO%%` container.
+The MySQL startup configuration is specified in the file `/etc/mysql/my.cnf`, and that file in turn includes any files found in the `/etc/mysql/conf.d` directory that end with `.cnf`. Settings in files in this directory will augment and/or override settings in `/etc/mysql/my.cnf`. If you want to use a customized MySQL configuration, you can create your alternative configuration file in a directory on the host machine and then mount that directory location as `/etc/mysql/conf.d` inside the `%%REPO%%` container.
 
-If `/my/custom/config-file` is the path and name of your custom configuration file, you can start your `%%REPO%%` container like this (note that only the directory path of the custom config file is used in this command):
+If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `%%REPO%%` container like this (note that only the directory path of the custom config file is used in this command):
 
 	docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%REPO%%:tag
 
-This will start a new container `some-%%REPO%%` where the MySQL instance uses the combined startup settings from `/etc/mysql/my.cnf` and `/etc/mysql/conf.d/config-file`, with settings from the latter taking precedence.
+This will start a new container `some-%%REPO%%` where the MySQL instance uses the combined startup settings from `/etc/mysql/my.cnf` and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to your new config file so that the container will be allowed to mount it:
 
