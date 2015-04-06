@@ -51,6 +51,14 @@ This optional environment variable is used in conjunction with `POSTGRES_PASSWOR
 
 If you would like to do additional initialization in an image derived from this one, add a `*.sh` script under `/docker-entrypoint-initdb.d` (creating the directory if necessary). After the entrypoint calls `initdb` to create the default `postgres` user and database, it will source any `*.sh` script found in that directory to do further initialization before starting the service. If you need to execute SQL commands as part of your initialization, the use of Postgres'' [single user mode](http://www.postgresql.org/docs/9.3/static/app-postgres.html#AEN90580) is highly recommended.
 
+You can also extend the image with a simple `Dockerfile` to set the locale. The folowing example will set the default locale to `de_DE.utf8`:
+
+	FROM postgres:9.4
+	RUN localedef -i de_DE -c -f UTF-8 -A /usr/share/locale/locale.alias de_DE.UTF-8
+	ENV LANG de_DE.utf8
+
+Since database initialization only happens on container startup, this allows us to set the language before it is created.
+
 # Caveats
 
 If there is no database when `postgres` starts in a container, then `postgres` will create the default database for you. While this is the expected behavior of `postgres`, this means that it will not accept incoming connections during that time. This may cause issues when using automation tools, such as `fig`, that start several containers simultaneously.
