@@ -1,11 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.15.1` (*jessie/1.15.1/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e6173d5dd74f8a778e09095bd684bbb3c9817d5c/jessie/1.15.1/Dockerfile)
--	[`1.15.2` (*jessie/1.15.2/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e6173d5dd74f8a778e09095bd684bbb3c9817d5c/jessie/1.15.2/Dockerfile)
--	[`1.15.3`, `1.15` (*jessie/1.15.3/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e6173d5dd74f8a778e09095bd684bbb3c9817d5c/jessie/1.15.3/Dockerfile)
--	[`1.16.0` (*jessie/1.16.0/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e6173d5dd74f8a778e09095bd684bbb3c9817d5c/jessie/1.16.0/Dockerfile)
--	[`1.16.1` (*jessie/1.16.1/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e6173d5dd74f8a778e09095bd684bbb3c9817d5c/jessie/1.16.1/Dockerfile)
--	[`1.16.2`, `1.16`, `1`, `latest` (*jessie/1.16.2/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/e6173d5dd74f8a778e09095bd684bbb3c9817d5c/jessie/1.16.2/Dockerfile)
+-	[`1.15.1` (*jessie/1.15.1/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/eb63b320ca55a792650ac0cab77847e985b9e245/jessie/1.15.1/Dockerfile)
+-	[`1.15.2` (*jessie/1.15.2/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/eb63b320ca55a792650ac0cab77847e985b9e245/jessie/1.15.2/Dockerfile)
+-	[`1.15.3`, `1.15` (*jessie/1.15.3/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/eb63b320ca55a792650ac0cab77847e985b9e245/jessie/1.15.3/Dockerfile)
+-	[`1.16.0` (*jessie/1.16.0/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/eb63b320ca55a792650ac0cab77847e985b9e245/jessie/1.16.0/Dockerfile)
+-	[`1.16.1` (*jessie/1.16.1/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/eb63b320ca55a792650ac0cab77847e985b9e245/jessie/1.16.1/Dockerfile)
+-	[`1.16.2` (*jessie/1.16.2/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/eb63b320ca55a792650ac0cab77847e985b9e245/jessie/1.16.2/Dockerfile)
+-	[`1.16.3`, `1.16`, `1`, `latest` (*jessie/1.16.3/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/eb63b320ca55a792650ac0cab77847e985b9e245/jessie/1.16.3/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
