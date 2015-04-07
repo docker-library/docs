@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.2.10`, `9.2`, `9`, `9.2.10-jre7`, `9.2-jre7`, `9-jre7`, `latest`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/md5/docker-jetty/blob/185c044adf7a3a4c56db3cf354e44d678343d0cd/9.2-jre7/Dockerfile)
--	[`9.2.10-jre8`, `9.2-jre8`, `9-jre8`, `jre8` (*9.2-jre8/Dockerfile*)](https://github.com/md5/docker-jetty/blob/0098b2821ec823bdb7ab04e55f9259ea47a9a4e0/9.2-jre8/Dockerfile)
--	[`9.3.0.M2`, `9.3.0.M2-jre7` (*9.3-jre7/Dockerfile*)](https://github.com/md5/docker-jetty/blob/9ba53126e90113aed256d7b5f095d1118b8e82e6/9.3-jre7/Dockerfile)
--	[`9.3.0.M2-jre8` (*9.3-jre8/Dockerfile*)](https://github.com/md5/docker-jetty/blob/0098b2821ec823bdb7ab04e55f9259ea47a9a4e0/9.3-jre8/Dockerfile)
+-	[`9.2.10`, `9.2`, `9`, `9.2.10-jre7`, `9.2-jre7`, `9-jre7`, `latest`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/185c044adf7a3a4c56db3cf354e44d678343d0cd/9.2-jre7/Dockerfile)
+-	[`9.2.10-jre8`, `9.2-jre8`, `9-jre8`, `jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/0098b2821ec823bdb7ab04e55f9259ea47a9a4e0/9.2-jre8/Dockerfile)
+-	[`9.3.0.M2`, `9.3.0.M2-jre7` (*9.3-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/9ba53126e90113aed256d7b5f095d1118b8e82e6/9.3-jre7/Dockerfile)
+-	[`9.3.0.M2-jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/0098b2821ec823bdb7ab04e55f9259ea47a9a4e0/9.3-jre8/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -69,7 +69,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/md5/docker-jetty/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/appropriate/docker-jetty/issues).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -77,4 +77,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/md5/docker-jetty/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/appropriate/docker-jetty/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
