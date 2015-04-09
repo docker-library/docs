@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `7.8` (*7.8/Dockerfile*)](https://github.com/darinmorrison/docker-haskell/blob/399ec9abffb3c86d6747d7ab5dc40556d6de9e4b/7.8/Dockerfile)
+-	[`7.10.1`, `7.10`, `7`, `latest` (*7.10/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/8ebd12bf273855afabc2d270b8c0a7aa233b0ea4/7.10/Dockerfile)
+-	[`7.8.4`, `7.8` (*7.8/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/8ebd12bf273855afabc2d270b8c0a7aa233b0ea4/7.8/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/haskell`)](https://github.com/docker-library/official-images/blob/master/library/haskell) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -80,6 +81,10 @@ This image is officially supported on Docker version 1.5.0.
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 # User Feedback
+
+## Documentation
+
+Documentation for this image is stored in the [`haskell` directory](https://github.com/docker-library/docs/tree/master/haskell) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 

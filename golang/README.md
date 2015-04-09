@@ -86,6 +86,10 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 # User Feedback
 
+## Documentation
+
+Documentation for this image is stored in the [`golang` directory](https://github.com/docker-library/docs/tree/master/golang) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+
 ## Issues
 
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/golang/issues).

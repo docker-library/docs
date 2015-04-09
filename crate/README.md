@@ -84,9 +84,13 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 # User Feedback
 
+## Documentation
+
+Documentation for this image is stored in the [`crate` directory](https://github.com/docker-library/docs/tree/master/crate) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+
 ## Issues
 
-If you have any problems with, or questions about this image, please contact us through a [GitHub issue](https://github.com/crate/docker-crate/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/crate/docker-crate/issues).
 
 If you have any questions or suggestions we would be very happy to help you. So, feel free to swing by our IRC channel `#crate` on [Freenode](http://freenode.net).
 

@@ -31,6 +31,10 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 # User Feedback
 
+## Documentation
+
+Documentation for this image is stored in the [`fedora` directory](https://github.com/docker-library/docs/tree/master/fedora) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+
 ## Issues
 
 If you have any problems with or questions about this image, please contact us by filing a bug on [Fedora's bugzilla page](https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora) (choose `docker-io` as component and include details about image problems in the description) or through a [GitHub issue](https://github.com/lsm5/docker-brew-fedora/issues).
