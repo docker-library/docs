@@ -19,7 +19,18 @@ RUN cpanm --notest IO::Socket::SSL
 
 RUN cpanm Term::ReadKey
 
-RUN apt-get update && apt-get install -y vim && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y git vim --no-install-recommends && rm -rf /var/lib/apt/lists/*
+
+ENV LANG C.UTF-8
+
+RUN git clone https://github.com/jtratner/vim-flavored-markdown.git ~/.vim
+RUN { \
+		echo 'scriptencoding utf-8'; \
+		echo 'syntax on'; \
+		echo 'filetype plugin indent on'; \
+		echo 'set list listchars=tab:»·,nbsp:_,extends:¬ noet ts=4 sw=4 nobackup noswapfile'; \
+		echo 'au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown'; \
+	} > ~/.vimrc
 
 COPY . /usr/src/docker-library-docs
 WORKDIR /usr/src/docker-library-docs
