@@ -10,22 +10,21 @@ A large number of production-quality Haskell libraries are available from [Hacka
 
 ## About this image
 
-This image ships a minimal Haskell toolchain with the following packages:
+This image ships a minimal Haskell toolchain with the following packages from the [hvr PPA](https://launchpad.net/~hvr/+archive/ubuntu/ghc):
 
 -	`ghc`
 -	`alex`
 -	`cabal-install`
 -	`happy`
 
+The most recent GHC release in the 7.8 series is also available, though no longer receiving updates from upstream, so users are encouraged to upgrade to 7.10.
+
 ## How to use this image
 
 Start an interactive interpreter session with `ghci`:
 
-	$ docker run -it --rm haskell:7.8
-	GHCi, version 7.8.3: http://www.haskell.org/ghc/  :? for help
-	Loading package ghc-prim ... linking ... done.
-	Loading package integer-gmp ... linking ... done.
-	Loading package base ... linking ... done.
+	$ docker run -it --rm haskell:7.10
+	GHCi, version 7.10.1: http://www.haskell.org/ghc/  :? for help
 	Prelude>
 
 Dockerize a [Hackage](http://hackage.haskell.org) app with a Dockerfile inheriting from the base image:
@@ -61,4 +60,4 @@ Iteratively develop then ship a Haskell app with a Dockerfile utilizing the buil
 
 ### Examples
 
-See the application snippet above in more detail in the [example snap application](https://github.com/darinmorrison/docker-haskell/tree/master/examples/7.8.3/snap).
+See the application snippet above in more detail in the [example snap application](https://github.com/freebroccolo/docker-haskell/tree/master/examples/7.8.3/snap).
