@@ -7,7 +7,7 @@ Oracle provides support to Oracle Linux subscription customers via the [My Oracl
 For Oracle Linux users without a paid support subscription, the following resources are available:
 
 -	The [Oracle Linux Forum](https://community.oracle.com/community/server_%26_storage_systems/linux/oracle_linux) on the [Oracle Technology Network Community](https://community.oracle.com/welcome).
--	The `#oraclelinux` IRC channel on Freenode.
+-	The `##oraclelinux` IRC channel on Freenode.
 
 ## Contributing
 
