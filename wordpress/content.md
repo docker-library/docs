@@ -31,7 +31,7 @@ If you'd like to use an external database instead of a linked `mysql` container,
 	docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
 	    -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress
 
-To get wordpress working with nginx will require a custom build of nginx to enable fpm support and exposing port 9000 (default fpm port for the wordpress build):
+To get wordpress working with nginx, will require a custom build of nginx to enable fpm support. You'll also need to expose port 9000 (default fpm port for the wordpress build):
 
 	docker run --name some-wordpress -p 9000:9000 --link some-mysql:mysql -d wordpress:fpm
 	
