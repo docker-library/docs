@@ -18,10 +18,11 @@ If you'd like to be able to access the instance from the host without the contai
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
-You can also point the image to your existing content on your host
+You can also point the image to your existing content on your host:
 
 	docker run --name some-ghost -v /path/to/ghost/blog:/var/lib/ghost ghost
 
-...or a data container
+Alternatively you can use a data container
 
+	docker create --name some-ghost-data -v /var/lib/ghost ghost /bin/true
 	docker run --name some-ghost --volumes-from some-ghost-data ghost
