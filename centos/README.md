@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `centos7`, `7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/ca032d398b91958a401ae426bd0312f688dccd4d/docker/Dockerfile)
+-	[`latest`, `centos7`, `7` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/d779d7567c6b3ae1b1b86d1049bab22e2a087c0f/docker/Dockerfile)
 -	[`centos6`, `6` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/e83bb5bf3b38bda254b46908234999355265cd96/docker/Dockerfile)
 -	[`centos5`, `5` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/c8d1a81b0516bca0f20434be8d0fac4f7d58a04a/docker/Dockerfile)
 -	[`centos7.1.1503`, `7.1.1503` (*docker/Dockerfile*)](https://github.com/CentOS/sig-cloud-instance-images/blob/bc561dfdd671d612dbb9f92e7e17dd8009befc44/docker/Dockerfile)
@@ -38,11 +38,35 @@ By default, the CentOS containers are built using yum's `nodocs` option, which h
 
 # Systemd integration
 
-Currently, systemd in CentOS 7 has been removed and replaced with a `fakesystemd` package for dependency resolution. This is due to systemd requiring the `CAP_SYS_ADMIN` capability, as well as being able to read the host's cgroups. If you wish to replace the fakesystemd package and use systemd normally, please follow the steps below.
+## New in 7
 
-## Dockerfile for systemd base image
+Currently the `:latest` and `:7` tags both contain systemd-container by default, instead of the previously distributed fakesystemd package. In order to use systemd-container, some minor changes to your Dockerfile are needed. You will need to specify volumes for `/run` and `/tmp` directories, as well as a `container` environment variable. From there, you simply need to change the default `CMD` value, and run the container with `/sys/fs/cgroup` mounted (read-only is fine). You no longer need to create a separate base container. Below is simple example to run httpd.
 
-	FROM centos:7
+### Example httpd Dockerfile for systemd-container
+
+	FROM centos:latest
+	MAINTAINER "you" <your@email.here>
+	RUN yum -y install httpd; yum clean all ; systemctl enable httpd.service
+	EXPOSE 80
+	VOLUME ["/run", "/tmp"]
+	ENV container docker
+	CMD ["/usr/sbin/init"]
+
+Build this image:
+
+	docker build --rm -t username/systemd-httpd
+
+Run the container:
+
+	docker run -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 username/systemd-httpd	
+
+## Legacy systemd solutions
+
+Originally systemd in CentOS 7 has been removed and replaced with a `fakesystemd` package for dependency resolution. This is due to systemd requiring the `CAP_SYS_ADMIN` capability, as well as being able to read the host's cgroups. If you are using the 7.0.1406 or 7.1.1503 tags and wish to replace the fakesystemd package and use systemd normally, please follow the steps below.
+
+### Dockerfile for legacy systemd base image
+
+	FROM centos:7.0.1406
 	MAINTAINER "you" <your@email.here>
 	ENV container docker
 	RUN yum -y swap -- remove fakesystemd -- install systemd systemd-libs
@@ -86,7 +110,7 @@ This container is running with systemd in a limited context, but it must always 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.5.0.
+This image is officially supported on Docker version 1.6.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
