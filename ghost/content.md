@@ -22,8 +22,7 @@ You can also point the image to your existing content on your host:
 
 	docker run --name some-ghost -v /path/to/ghost/blog:/var/lib/ghost ghost
 
-Alternatively you can use a data container that points to ```/var/lib/ghost```:
+Alternatively you can use a [data container](http://docs.docker.com/userguide/dockervolumes/) that has a volume that points to `/var/lib/ghost` and then reference it:
 
-	docker create --name some-ghost-data -v /var/lib/ghost ghost /bin/true
 	docker run --name some-ghost --volumes-from some-ghost-data ghost
 
