@@ -34,6 +34,8 @@ This image is configured with a volume at `/usr/share/elasticsearch/data` to hol
 
 	docker run -d -v "$PWD/esdata":/usr/share/elasticsearch/data elasticsearch
 
+This image includes `EXPOSE 9200 9300` ([default `http.port`](http://www.elastic.co/guide/en/elasticsearch/reference/1.5/modules-http.html)), so standard container linking will make it automatically available to the linked containers.
+
 # License
 
 View [license information](https://github.com/elasticsearch/elasticsearch/blob/66b5ed86f7adede8102cd4d979b9f4924e5bd837/LICENSE.txt) for the software contained in this image.
