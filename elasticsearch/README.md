@@ -33,7 +33,7 @@ This image comes with a default set of configuration files for `elasticsearch`, 
 This image is configured with a volume at `/usr/share/elasticsearch/data` to hold the persisted index data. Use that path if you would like to keep the data in a mounted volume:
 
 	docker run -d -v "$PWD/esdata":/usr/share/elasticsearch/data elasticsearch
-	
+
 This image includes `EXPOSE 9200 9300` ([default `http.port`](http://www.elastic.co/guide/en/elasticsearch/reference/1.5/modules-http.html)), so standard container linking will make it automatically available to the linked containers.
 
 # License
