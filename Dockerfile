@@ -1,5 +1,7 @@
 FROM perl:5.20
 
+RUN apt-get update && apt-get install -y git vim --no-install-recommends && rm -rf /var/lib/apt/lists/*
+
 # secure by default ♥ (thanks to sri!)
 ENV PERL_CPANM_OPT --verbose --mirror https://cpan.metacpan.org
 # TODO find a way to make --mirror-only / SSL work with backpan too :(
@@ -17,9 +19,7 @@ RUN cpanm IO::Socket::IP
 RUN cpanm --notest IO::Socket::SSL
 # the tests for IO::Socket::SSL like to hang... :(
 
-RUN cpanm Term::ReadKey
-
-RUN apt-get update && apt-get install -y git vim --no-install-recommends && rm -rf /var/lib/apt/lists/*
+RUN cpanm Term::UI
 
 ENV LANG C.UTF-8
 

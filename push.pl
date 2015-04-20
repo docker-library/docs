@@ -4,19 +4,20 @@ use warnings;
 use 5.010;
 use open ':encoding(utf8)';
 
+use File::Basename qw(fileparse);
 use File::Temp;
 use Getopt::Long;
 use Mojo::UserAgent;
 use Mojo::Util qw(decode encode slurp spurt trim);
-use Term::ReadKey;
+
+use Term::UI;
+use Term::ReadLine;
 
 my $username;
 my $password;
-my $all;
 GetOptions(
 	'u|username=s' => \$username,
 	'p|password=s' => \$password,
-	'a|all' => \$all,
 ) or die 'bad args';
 
 die 'no repos specified' unless @ARGV;
@@ -88,6 +89,41 @@ sub get_form_bits {
 	return $ret;
 }
 
+my $term = Term::ReadLine->new('docker-library-docs-push');
+
+sub prompt_for_edit {
+	my ($currentText, $proposedFile) = @_;
+	
+	my $proposedText = slurp $proposedFile or warn 'missing ' . $proposedFile;
+	$proposedText = trim(decode('UTF-8', $proposedText));
+	
+	return $currentText if $currentText eq $proposedText;
+	
+	my @proposedFileBits = fileparse($proposedFile, qr!\.[^.]*!);
+	my $file = File::Temp->new(SUFFIX => $proposedFileBits[2]);
+	my $filename = $file->filename;
+	spurt encode('UTF-8', $currentText . "\n"), $filename;
+	
+	system(qw(git --no-pager diff --no-index), $filename, $proposedFile);
+	
+	my $reply = $term->get_reply(
+		prompt => 'Apply changes?',
+		choices => [ qw( yes vimdiff no ) ],
+		default => 'yes',
+	);
+	
+	if ($reply eq 'yes') {
+		return $proposedText;
+	}
+	
+	if ($reply eq 'vimdiff') {
+		system('vimdiff', $filename, $proposedFile) == 0 or die "vimdiff on $filename and $proposedFile failed";
+		return trim(decode('UTF-8', slurp($filename)));
+	}
+	
+	return $currentText;
+}
+
 my $login = $ua->get('https://registry.hub.docker.com/account/login/');
 die 'login failed' unless $login->success;
 
@@ -95,19 +131,12 @@ my $loginForm = $login->res->dom('#form-login')->first;
 my $loginBits = get_form_bits($loginForm);
 
 unless (defined $username) {
-	print 'Hub Username: ';
-	$username = ReadLine 0;
-	chomp $username;
+	$username = $term->get_reply(prompt => 'Hub Username');
 }
 $loginBits->{username} = $username;
 
 unless (defined $password) {
-	print 'Hub Password: ';
-	ReadMode 2;
-	$password = ReadLine 0;
-	chomp $password;
-	ReadMode 0;
-	print "\n";
+	$password = $term->get_reply(prompt => 'Hub Password'); # TODO hide the input? O:)
 }
 $loginBits->{password} = $password;
 
@@ -128,14 +157,6 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	my $repoName = $repo;
 	$repoName =~ s!^.*/!!; # 'hylang', 'perl', etc
 	
-	my $shortFile = $repoName . '/README-short.txt';
-	my $short = slurp $shortFile or warn 'missing ' . $shortFile;
-	$short = trim(decode('UTF-8', $short));
-	
-	my $longFile = $repoName . '/README.md';
-	my $long = slurp $longFile or warn 'missing ' . $longFile;
-	$long = trim(decode('UTF-8', $long));
-	
 	my $repoUrl = 'https://registry.hub.docker.com' . $repo . '/settings/';
 	my $repoTx = $ua->get($repoUrl);
 	die 'failed to get: ' . $repoUrl unless $repoTx->success;
@@ -144,29 +165,15 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	die 'failed to find form on ' . $repoUrl unless $settingsForm;
 	my $settingsBits = get_form_bits($settingsForm);
 	
-	my $hubShort = $settingsBits->{description};
-	my $hubLong = $settingsBits->{full_description};
-	
-	if ($hubShort ne $short) {
-		my $file = File::Temp->new(SUFFIX => '.txt');
-		my $filename = $file->filename;
-		spurt encode('UTF-8', $hubShort . "\n"), $filename;
-		system('vimdiff', $filename, $shortFile) == 0 or die "vimdiff on $filename and $shortFile failed";
-		$hubShort = trim(decode('UTF-8', slurp($filename)));
-	}
-	
-	if ($hubLong ne $long) {
-		my $file = File::Temp->new(SUFFIX => '.md');
-		my $filename = $file->filename;
-		spurt encode('UTF-8', $hubLong . "\n"), $filename;
-		system('vimdiff', $filename, $longFile) == 0 or die "vimdiff on $filename and $longFile failed";
-		$hubLong = trim(decode('UTF-8', slurp($filename)));
-	}
+	my $hubShort = prompt_for_edit($settingsBits->{description}, $repoName . '/README-short.txt');
+	my $hubLong = prompt_for_edit($settingsBits->{full_description}, $repoName . '/README.md');
 	
 	say 'no change to ' . $repoName . '; skipping' and next if $settingsBits->{description} eq $hubShort and $settingsBits->{full_description} eq $hubLong;
 	
 	$settingsBits->{description} = $hubShort;
 	$settingsBits->{full_description} = $hubLong;
+	
+	say 'updating ' . $repoName;
 	
 	$repoTx = $ua->post($repoUrl => { Referer => $repoUrl } => form => $settingsBits);
 	die 'post to ' . $repoUrl . ' failed' unless $repoTx->success;
