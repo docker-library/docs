@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.4`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/9c1a577a0c177e4863eb873917169e3a394fbec8/1.6/Dockerfile)
--	[`1.6.4-onbuild`, `1.6-onbuild`, `1-onbuild`, `onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/b6550716eb111e4e5b497757adf5ea55f5a0d29d/1.6/onbuild/Dockerfile)
--	[`1.6.4-slim`, `1.6-slim`, `1-slim`, `slim` (*1.6/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/9c1a577a0c177e4863eb873917169e3a394fbec8/1.6/slim/Dockerfile)
+-	[`1.7.1`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/dc31c0b95945ca981495a2aa9def8c2db8864087/1.7/Dockerfile)
+-	[`1.7.1-onbuild`, `1.7-onbuild`, `1-onbuild`, `onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/dc31c0b95945ca981495a2aa9def8c2db8864087/1.7/onbuild/Dockerfile)
+-	[`1.7.1-slim`, `1.7-slim`, `1-slim`, `slim` (*1.7/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/dc31c0b95945ca981495a2aa9def8c2db8864087/1.7/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/iojs`)](https://github.com/docker-library/official-images/blob/master/library/iojs) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -35,7 +35,7 @@ Then simply run:
 
 To run a single script, you can mount it in a volume under `/usr/src/app`. From the root of your application directory (assuming your script is named `index.js`):
 
-	$ docker run -v ${PWD}:/usr/src/app -w /usr/src/app --it --rm iojs iojs index.js
+	$ docker run -v ${PWD}:/usr/src/app -w /usr/src/app -it --rm iojs iojs index.js
 
 # Image Variants
 
@@ -59,7 +59,7 @@ View [license information](https://github.com/iojs/io.js/blob/master/LICENSE) fo
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.5.0.
+This image is officially supported on Docker version 1.6.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 

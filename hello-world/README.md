@@ -27,13 +27,13 @@ For more information about this image and its history, please see the [relevant 
 	
 	$ docker images hello-world
 	REPOSITORY   TAG     IMAGE ID      VIRTUAL SIZE
-	hello-world  latest  e45a5af57b00  910 B
+	hello-world  latest  91c95931e552  910 B
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/hello-world/logo.png)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.5.0.
+This image is officially supported on Docker version 1.6.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 

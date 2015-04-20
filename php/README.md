@@ -1,14 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.39-cli`, `5.4-cli`, `5.4.39`, `5.4` (*5.4/Dockerfile*)](https://github.com/docker-library/php/blob/08bf31dfd492f02a2696c9a30eb85326b1570abd/5.4/Dockerfile)
--	[`5.4.39-apache`, `5.4-apache` (*5.4/apache/Dockerfile*)](https://github.com/docker-library/php/blob/08bf31dfd492f02a2696c9a30eb85326b1570abd/5.4/apache/Dockerfile)
--	[`5.4.39-fpm`, `5.4-fpm` (*5.4/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/08bf31dfd492f02a2696c9a30eb85326b1570abd/5.4/fpm/Dockerfile)
--	[`5.5.23-cli`, `5.5-cli`, `5.5.23`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/08bf31dfd492f02a2696c9a30eb85326b1570abd/5.5/Dockerfile)
--	[`5.5.23-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/08bf31dfd492f02a2696c9a30eb85326b1570abd/5.5/apache/Dockerfile)
--	[`5.5.23-fpm`, `5.5-fpm` (*5.5/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/08bf31dfd492f02a2696c9a30eb85326b1570abd/5.5/fpm/Dockerfile)
--	[`5.6.7-cli`, `5.6-cli`, `5-cli`, `cli`, `5.6.7`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/08bf31dfd492f02a2696c9a30eb85326b1570abd/5.6/Dockerfile)
--	[`5.6.7-apache`, `5.6-apache`, `5-apache`, `apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/08bf31dfd492f02a2696c9a30eb85326b1570abd/5.6/apache/Dockerfile)
--	[`5.6.7-fpm`, `5.6-fpm`, `5-fpm`, `fpm` (*5.6/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/08bf31dfd492f02a2696c9a30eb85326b1570abd/5.6/fpm/Dockerfile)
+-	[`5.4.39-cli`, `5.4-cli`, `5.4.39`, `5.4` (*5.4/Dockerfile*)](https://github.com/docker-library/php/blob/13112ed409335f211edbaf9b74db1c87b329b6d8/5.4/Dockerfile)
+-	[`5.4.39-apache`, `5.4-apache` (*5.4/apache/Dockerfile*)](https://github.com/docker-library/php/blob/13112ed409335f211edbaf9b74db1c87b329b6d8/5.4/apache/Dockerfile)
+-	[`5.4.39-fpm`, `5.4-fpm` (*5.4/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/13112ed409335f211edbaf9b74db1c87b329b6d8/5.4/fpm/Dockerfile)
+-	[`5.5.23-cli`, `5.5-cli`, `5.5.23`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/13112ed409335f211edbaf9b74db1c87b329b6d8/5.5/Dockerfile)
+-	[`5.5.23-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/13112ed409335f211edbaf9b74db1c87b329b6d8/5.5/apache/Dockerfile)
+-	[`5.5.23-fpm`, `5.5-fpm` (*5.5/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/13112ed409335f211edbaf9b74db1c87b329b6d8/5.5/fpm/Dockerfile)
+-	[`5.6.7-cli`, `5.6-cli`, `5-cli`, `cli`, `5.6.7`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/13112ed409335f211edbaf9b74db1c87b329b6d8/5.6/Dockerfile)
+-	[`5.6.7-apache`, `5.6-apache`, `5-apache`, `apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/13112ed409335f211edbaf9b74db1c87b329b6d8/5.6/apache/Dockerfile)
+-	[`5.6.7-fpm`, `5.6-fpm`, `5-fpm`, `fpm` (*5.6/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/13112ed409335f211edbaf9b74db1c87b329b6d8/5.6/fpm/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -98,7 +98,7 @@ View [license information](http://php.net/license/) for the software contained i
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.5.0.
+This image is officially supported on Docker version 1.6.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 

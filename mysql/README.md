@@ -2,7 +2,7 @@
 
 -	[`5.5.43`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/1f430aeee538aec3b51554ca9fc66955231b3563/5.5/Dockerfile)
 -	[`5.6.24`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/1f430aeee538aec3b51554ca9fc66955231b3563/5.6/Dockerfile)
--	[`5.7.6-m16`, `5.7.6`, `5.7` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/95a8d25a230dda44709b8942c46c63595b93b73a/5.7/Dockerfile)
+-	[`5.7.7-rc`, `5.7.7`, `5.7` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/837e11e42695aa5e9927b2418edaf7a666057c50/5.7/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -118,7 +118,7 @@ If you start your `mysql` container instance with a data directory that already 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.5.0.
+This image is officially supported on Docker version 1.6.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 

@@ -26,7 +26,7 @@ Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browse
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.5.0.
+This image is officially supported on Docker version 1.6.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 

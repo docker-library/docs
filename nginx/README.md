@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1`, `1.7`, `1.7.11` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/e9202a4795d84a85499fcd6cda58ddde4cf4079d/Dockerfile)
+-	[`latest`, `1`, `1.7`, `1.7.12` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/abd253dde5d627b151cd737ce953d6d01e6fdf4c/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -56,7 +56,7 @@ Then, build with `docker build -t some-custom-nginx .` and run:
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.5.0.
+This image is officially supported on Docker version 1.6.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 

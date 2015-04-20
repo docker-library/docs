@@ -2,7 +2,7 @@
 
 -	[`1.3.9`, `1.3` (*1.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/48be16b576157d74b38202f40ffbab04f02d668f/1.3/Dockerfile)
 -	[`1.4.4`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/48be16b576157d74b38202f40ffbab04f02d668f/1.4/Dockerfile)
--	[`1.5.0`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/caa1d539d66bbc6b9aec0c821460ae924197198c/1.5/Dockerfile)
+-	[`1.5.1`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/cec506d931f75619876292a47b9f9e8edd4ddc47/1.5/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -40,7 +40,7 @@ View [license information](https://github.com/elasticsearch/elasticsearch/blob/6
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.5.0.
+This image is officially supported on Docker version 1.6.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 

@@ -21,6 +21,6 @@
 	
 	$ docker images hello-world
 	REPOSITORY   TAG     IMAGE ID      VIRTUAL SIZE
-	hello-world  latest  e45a5af57b00  910 B
+	hello-world  latest  91c95931e552  910 B
 
 %%LOGO%%

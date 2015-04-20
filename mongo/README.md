@@ -3,7 +3,7 @@
 -	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/d9fb48dbdb0b9c35d35902429fe1a28527959f25/2.2/Dockerfile)
 -	[`2.4.13`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/ea56087e928b5d734bf7661384ebf3c432d70f28/2.4/Dockerfile)
 -	[`2.6.9`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/faab1fed954b4267168fd22b4bc534a62365e7a2/2.6/Dockerfile)
--	[`3.0.1`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/b1c4c5028bd10fe01ddd3fbcdb4b0828580c14e0/3.0/Dockerfile)
+-	[`3.0.2`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/39b64d5bffdb00d9b0b4a3d177ec66dcda12a6d6/3.0/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -43,7 +43,7 @@ View [license information](https://github.com/mongodb/mongo/blob/7c3cfac300cfcca
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.5.0.
+This image is officially supported on Docker version 1.6.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
