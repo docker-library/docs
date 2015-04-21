@@ -25,4 +25,3 @@ You can also point the image to your existing content on your host:
 Alternatively you can use a [data container](http://docs.docker.com/userguide/dockervolumes/) that has a volume that points to `/var/lib/ghost` and then reference it:
 
 	docker run --name some-ghost --volumes-from some-ghost-data ghost
-
