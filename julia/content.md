@@ -16,4 +16,4 @@ Starting the Julia REPL is as easy as the following:
 
 ## Run Julia script from your local directory inside container
 
-	docker run -it --rm -v $(pwd):/usr/myapp -w /usr/myapp julia julia script.jl arg1 arg2
+	docker run -it --rm -v "$PWD":/usr/myapp -w /usr/myapp julia julia script.jl arg1 arg2

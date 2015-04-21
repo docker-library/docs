@@ -18,4 +18,4 @@ If you need to run logstash with configuration provided on the commandline, you 
 
 If you need to run logstash with a configuration file, `logstash.conf`, that's located in your current directory, you can use the logstash image as follows:
 
-	docker run -it --rm -v $(pwd):/config-dir logstash logstash -f /config-dir/logstash.conf
+	docker run -it --rm -v "$PWD":/config-dir logstash logstash -f /config-dir/logstash.conf
