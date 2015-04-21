@@ -108,9 +108,14 @@ sub prompt_for_edit {
 	
 	my $reply = $term->get_reply(
 		prompt => 'Apply changes?',
-		choices => [ qw( yes vimdiff no ) ],
+		choices => [ qw( yes vimdiff no quit ) ],
 		default => 'yes',
 	);
+	
+	if ($reply eq 'quit') {
+		say 'quitting, as requested';
+		exit;
+	}
 	
 	if ($reply eq 'yes') {
 		return $proposedText;
