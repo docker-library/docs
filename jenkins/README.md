@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.596.2` (*Dockerfile*)](https://github.com/cloudbees/jenkins-ci.org-docker/blob/66dc63923438e70eaebd68da41bc7b9ea35ce2aa/Dockerfile)
+-	[`latest`, `1.596.2` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/8f909abee98247ad482efb6d21833e2054e3e9de/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
