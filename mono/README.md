@@ -2,10 +2,12 @@
 
 -	[`3.10.0`, `3.10` (*3.10.0/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.10.0/Dockerfile)
 -	[`3.10.0-onbuild`, `3.10-onbuild` (*3.10.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.10.0/onbuild/Dockerfile)
--	[`3.12.1`, `3.12.0`, `3.12`, `3`, `latest` (*3.12.0/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.12.0/Dockerfile)
--	[`3.12.0-onbuild`, `3.12-onbuild`, `3-onbuild`, `onbuild` (*3.12.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.12.0/onbuild/Dockerfile)
+-	[`3.12.1`, `3.12.0`, `3.12`, `3` (*3.12.0/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.12.0/Dockerfile)
+-	[`3.12.0-onbuild`, `3.12-onbuild`, `3-onbuild` (*3.12.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.12.0/onbuild/Dockerfile)
 -	[`3.8.0`, `3.8` (*3.8.0/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.8.0/Dockerfile)
 -	[`3.8.0-onbuild`, `3.8-onbuild` (*3.8.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/adc7a3ec47f7d590f75a4dec0203a2103daf8db0/3.8.0/onbuild/Dockerfile)
+-	[`4.0.1`, `4.0.0`, `4.0`, `4`, `latest` (*4.0.0/Dockerfile*)](https://github.com/mono/docker/blob/0d3556995aa47043059d60c42321e8ccaf173363/4.0.0/Dockerfile)
+-	[`4.0.0-onbuild`, `4.0-onbuild`, `4-onbuild`, `onbuild` (*4.0.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/0d3556995aa47043059d60c42321e8ccaf173363/4.0.0/onbuild/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
