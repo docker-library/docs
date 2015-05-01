@@ -1,10 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.6.4`, `4.6` (*4.6/Dockerfile*)](https://github.com/docker-library/gcc/blob/db7f7a49616ea18f46a0187572df9336cf893f95/4.6/Dockerfile)
--	[`4.7.4`, `4.7` (*4.7/Dockerfile*)](https://github.com/docker-library/gcc/blob/db7f7a49616ea18f46a0187572df9336cf893f95/4.7/Dockerfile)
--	[`4.8.4`, `4.8` (*4.8/Dockerfile*)](https://github.com/docker-library/gcc/blob/db7f7a49616ea18f46a0187572df9336cf893f95/4.8/Dockerfile)
--	[`4.9.2`, `4.9` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/db7f7a49616ea18f46a0187572df9336cf893f95/4.9/Dockerfile)
--	[`5.1.0`, `5.1`, `latest` (*5.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/89bf864ba7332ec37c07209d435908d7af853630/5.1/Dockerfile)
+-	[`4.7.4`, `4.7` (*4.7/Dockerfile*)](https://github.com/docker-library/gcc/blob/7ff08a9976fff760739628f7f0198e1593a4e930/4.7/Dockerfile)
+-	[`4.8.4`, `4.8` (*4.8/Dockerfile*)](https://github.com/docker-library/gcc/blob/7ff08a9976fff760739628f7f0198e1593a4e930/4.8/Dockerfile)
+-	[`4.9.2`, `4.9` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/7ff08a9976fff760739628f7f0198e1593a4e930/4.9/Dockerfile)
+-	[`5.1.0`, `5.1`, `latest` (*5.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/7ff08a9976fff760739628f7f0198e1593a4e930/5.1/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
