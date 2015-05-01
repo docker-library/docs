@@ -164,7 +164,7 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	
 	my $repoUrl = 'https://registry.hub.docker.com' . $repo . '/settings/';
 	my $repoTx = $ua->get($repoUrl);
-	die 'failed to get: ' . $repoUrl unless $repoTx->success;
+	warn 'failed to get: ' . $repoUrl and next unless $repoTx->success;
 	
 	my $settingsForm = $repoTx->res->dom('form[name="repository_settings"]')->first;
 	die 'failed to find form on ' . $repoUrl unless $settingsForm;
