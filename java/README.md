@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`openjdk-6b34-jdk`, `openjdk-6b34`, `openjdk-6-jdk`, `openjdk-6`, `6b34-jdk`, `6b34`, `6-jdk`, `6` (*openjdk-6-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/aac815a21ffd5690192e06202d6c065a49ed655f/openjdk-6-jdk/Dockerfile)
--	[`openjdk-6b34-jre`, `openjdk-6-jre`, `6b34-jre`, `6-jre` (*openjdk-6-jre/Dockerfile*)](https://github.com/docker-library/java/blob/aac815a21ffd5690192e06202d6c065a49ed655f/openjdk-6-jre/Dockerfile)
--	[`openjdk-7u75-jdk`, `openjdk-7u75`, `openjdk-7-jdk`, `openjdk-7`, `7u75-jdk`, `7u75`, `7-jdk`, `7`, `jdk`, `latest` (*openjdk-7-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/aac815a21ffd5690192e06202d6c065a49ed655f/openjdk-7-jdk/Dockerfile)
--	[`openjdk-7u75-jre`, `openjdk-7-jre`, `7u75-jre`, `7-jre`, `jre` (*openjdk-7-jre/Dockerfile*)](https://github.com/docker-library/java/blob/aac815a21ffd5690192e06202d6c065a49ed655f/openjdk-7-jre/Dockerfile)
+-	[`openjdk-6b35-jdk`, `openjdk-6b35`, `openjdk-6-jdk`, `openjdk-6`, `6b35-jdk`, `6b35`, `6-jdk`, `6` (*openjdk-6-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/318ba809c9f0e3c7095b363c5a31409ee6880208/openjdk-6-jdk/Dockerfile)
+-	[`openjdk-6b35-jre`, `openjdk-6-jre`, `6b35-jre`, `6-jre` (*openjdk-6-jre/Dockerfile*)](https://github.com/docker-library/java/blob/318ba809c9f0e3c7095b363c5a31409ee6880208/openjdk-6-jre/Dockerfile)
+-	[`openjdk-7u79-jdk`, `openjdk-7u79`, `openjdk-7-jdk`, `openjdk-7`, `7u79-jdk`, `7u79`, `7-jdk`, `7`, `jdk`, `latest` (*openjdk-7-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/318ba809c9f0e3c7095b363c5a31409ee6880208/openjdk-7-jdk/Dockerfile)
+-	[`openjdk-7u79-jre`, `openjdk-7-jre`, `7u79-jre`, `7-jre`, `jre` (*openjdk-7-jre/Dockerfile*)](https://github.com/docker-library/java/blob/318ba809c9f0e3c7095b363c5a31409ee6880208/openjdk-7-jre/Dockerfile)
 -	[`openjdk-8u45-jdk`, `openjdk-8u45`, `openjdk-8-jdk`, `openjdk-8`, `8u45-jdk`, `8u45`, `8-jdk`, `8` (*openjdk-8-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/d912163e5aa10f916be7ac40ac0de7e8a82c4547/openjdk-8-jdk/Dockerfile)
 -	[`openjdk-8u45-jre`, `openjdk-8-jre`, `8u45-jre`, `8-jre` (*openjdk-8-jre/Dockerfile*)](https://github.com/docker-library/java/blob/d912163e5aa10f916be7ac40ac0de7e8a82c4547/openjdk-8-jre/Dockerfile)
 

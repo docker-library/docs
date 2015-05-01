@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7`, `1.7.19`, `latest`, `1.7-jre`, `1.7.19-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3a9e548c1f080e9116c13a8d62bf01ebc2e2c629/1.7/jre/Dockerfile)
--	[`1.7-jdk`, `1.7.19-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3a9e548c1f080e9116c13a8d62bf01ebc2e2c629/1.7/jdk/Dockerfile)
--	[`1.7-onbuild`, `1.7.19-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3a9e548c1f080e9116c13a8d62bf01ebc2e2c629/1.7/onbuild/Dockerfile)
--	[`9.0.0.0`, `9.0.0.0-jre`, `9.0.0.0.pre1`, `9.0.0.0.pre1-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3a9e548c1f080e9116c13a8d62bf01ebc2e2c629/9000/jre/Dockerfile)
--	[`9.0.0.0-jdk`, `9.0.0.0.pre1-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3a9e548c1f080e9116c13a8d62bf01ebc2e2c629/9000/jdk/Dockerfile)
--	[`9.0.0.0-onbuild`, `9.0.0.0.pre1-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3a9e548c1f080e9116c13a8d62bf01ebc2e2c629/9000/onbuild/Dockerfile)
+-	[`1.7`, `1.7.19`, `latest`, `1.7-jre`, `1.7.19-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/0f5ca4efd34cedd56e7e2c7138f98c5e80402c6b/1.7/jre/Dockerfile)
+-	[`1.7-jdk`, `1.7.19-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/0f5ca4efd34cedd56e7e2c7138f98c5e80402c6b/1.7/jdk/Dockerfile)
+-	[`1.7-onbuild`, `1.7.19-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/0f5ca4efd34cedd56e7e2c7138f98c5e80402c6b/1.7/onbuild/Dockerfile)
+-	[`9.0.0.0`, `9.0.0.0-jre`, `9.0.0.0.pre2`, `9.0.0.0.pre2-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/0f5ca4efd34cedd56e7e2c7138f98c5e80402c6b/9000/jre/Dockerfile)
+-	[`9.0.0.0-jdk`, `9.0.0.0.pre2-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/0f5ca4efd34cedd56e7e2c7138f98c5e80402c6b/9000/jdk/Dockerfile)
+-	[`9.0.0.0-onbuild`, `9.0.0.0.pre2-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/0f5ca4efd34cedd56e7e2c7138f98c5e80402c6b/9000/onbuild/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
