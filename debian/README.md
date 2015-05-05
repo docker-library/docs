@@ -9,8 +9,8 @@
 -	[`testing` (*testing/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b637abe5e26f8b283a28d63cdc0413926ed54596/testing/Dockerfile)
 -	[`unstable` (*unstable/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b637abe5e26f8b283a28d63cdc0413926ed54596/unstable/Dockerfile)
 -	[`7.8`, `7`, `wheezy` (*wheezy/Dockerfile*)](https://github.com/tianon/docker-brew-debian/blob/b637abe5e26f8b283a28d63cdc0413926ed54596/wheezy/Dockerfile)
--	[`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/0b288b65558ebc0fb0d7b457294a8ae52d9b0609/debian/rc-buggy/Dockerfile)
--	[`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/0b288b65558ebc0fb0d7b457294a8ae52d9b0609/debian/experimental/Dockerfile)
+-	[`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/b957ce88af19e9b78f51750cfe54546e361fb9cc/debian/rc-buggy/Dockerfile)
+-	[`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/b957ce88af19e9b78f51750cfe54546e361fb9cc/debian/experimental/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/debian`)](https://github.com/docker-library/official-images/blob/master/library/debian) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
