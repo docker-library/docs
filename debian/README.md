@@ -40,7 +40,7 @@ The mirror of choice for these images is [http.debian.net](http://http.debian.ne
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.0.
+This image is officially supported on Docker version 1.6.1.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
