@@ -26,11 +26,35 @@ By default, the CentOS containers are built using yum's `nodocs` option, which h
 
 # Systemd integration
 
-Currently, systemd in CentOS 7 has been removed and replaced with a `fakesystemd` package for dependency resolution. This is due to systemd requiring the `CAP_SYS_ADMIN` capability, as well as being able to read the host's cgroups. If you wish to replace the fakesystemd package and use systemd normally, please follow the steps below.
+## New in 7
 
-## Dockerfile for systemd base image
+Currently the `:latest` and `:7` tags both contain systemd-container by default, instead of the previously distributed fakesystemd package. In order to use systemd-container, some minor changes to your Dockerfile are needed. You will need to specify volumes for `/run` and `/tmp` directories, as well as a `container` environment variable. From there, you simply need to change the default `CMD` value, and run the container with `/sys/fs/cgroup` mounted (read-only is fine). You no longer need to create a separate base container. Below is simple example to run httpd.
 
-	FROM centos:7
+### Example httpd Dockerfile for systemd-container
+
+	FROM centos:latest
+	MAINTAINER "you" <your@email.here>
+	RUN yum -y install httpd; yum clean all ; systemctl enable httpd.service
+	EXPOSE 80
+	VOLUME ["/run", "/tmp"]
+	ENV container docker
+	CMD ["/usr/sbin/init"]
+
+Build this image:
+
+	docker build --rm -t username/systemd-httpd
+
+Run the container:
+
+	docker run -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 username/systemd-httpd	
+
+## Legacy systemd solutions
+
+Originally systemd in CentOS 7 has been removed and replaced with a `fakesystemd` package for dependency resolution. This is due to systemd requiring the `CAP_SYS_ADMIN` capability, as well as being able to read the host's cgroups. If you are using the 7.0.1406 or 7.1.1503 tags and wish to replace the fakesystemd package and use systemd normally, please follow the steps below.
+
+### Dockerfile for legacy systemd base image
+
+	FROM centos:7.0.1406
 	MAINTAINER "you" <your@email.here>
 	ENV container docker
 	RUN yum -y swap -- remove fakesystemd -- install systemd systemd-libs
