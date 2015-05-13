@@ -45,10 +45,6 @@ If you wish to adapt the default configuration, use something like the following
 
 	docker cp some-nginx:/etc/nginx/nginx.conf /some/nginx.conf
 
-Then, build with `docker build -t some-custom-nginx .` and run:
-
-	docker run --name some-nginx -d some-custom-nginx
-
 # Supported Docker versions
 
 This image is officially supported on Docker version 1.6.1.
