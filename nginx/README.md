@@ -41,7 +41,7 @@ For information on the syntax of the Nginx configuration files, see [the officia
 
 Be sure to include `daemon off;` in your custom configuration to ensure that Nginx stays in the foreground so that Docker can track the process properly (otherwise your container will stop immediately after starting)!
 
-If you wish to adapt the default configuration, use something like the following to copy it from a running Nginx container:
+If you wish to adapt the default configuration, use something like the following to copy it from a running Nginx container to the host:
 
 	docker cp some-nginx:/etc/nginx/nginx.conf /some/nginx.conf
 
