@@ -45,11 +45,6 @@ If you wish to adapt the default configuration, use something like the following
 
 	docker cp some-nginx:/etc/nginx/nginx.conf /some/nginx.conf
 
-As above, this can also be accomplished more cleanly using a simple `Dockerfile`:
-
-	FROM nginx
-	COPY nginx.conf /etc/nginx/nginx.conf
-
 Then, build with `docker build -t some-custom-nginx .` and run:
 
 	docker run --name some-nginx -d some-custom-nginx
