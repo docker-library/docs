@@ -3,9 +3,9 @@
 -	[`1.8.1`, `1.8`, `1` (*1.8/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/4cf03be7e0b4abcd60a3a93947d9351c3b8b4be7/1.8/Dockerfile)
 -	[`1.8.1-onbuild`, `1.8-onbuild`, `1-onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/4cf03be7e0b4abcd60a3a93947d9351c3b8b4be7/1.8/onbuild/Dockerfile)
 -	[`1.8.1-slim`, `1.8-slim`, `1-slim` (*1.8/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/4cf03be7e0b4abcd60a3a93947d9351c3b8b4be7/1.8/slim/Dockerfile)
--	[`2.0.0`, `2.0`, `2`, `latest` (*2.0/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/a40aaf633751594a26ccdaa65b35a115d73f69a7/2.0/Dockerfile)
--	[`2.0.0-onbuild`, `2.0-onbuild`, `2-onbuild`, `onbuild` (*2.0/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/18d119c1876b4d7981b0009653ea40e85e46d8a1/2.0/onbuild/Dockerfile)
--	[`2.0.0-slim`, `2.0-slim`, `2-slim`, `slim` (*2.0/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/a40aaf633751594a26ccdaa65b35a115d73f69a7/2.0/slim/Dockerfile)
+-	[`2.0.1`, `2.0`, `2`, `latest` (*2.0/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/8caf041be35322d93ca81d214b5fc1160b348e67/2.0/Dockerfile)
+-	[`2.0.1-onbuild`, `2.0-onbuild`, `2-onbuild`, `onbuild` (*2.0/onbuild/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/8caf041be35322d93ca81d214b5fc1160b348e67/2.0/onbuild/Dockerfile)
+-	[`2.0.1-slim`, `2.0-slim`, `2-slim`, `slim` (*2.0/slim/Dockerfile*)](https://github.com/iojs/docker-iojs/blob/8caf041be35322d93ca81d214b5fc1160b348e67/2.0/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/iojs`)](https://github.com/docker-library/official-images/blob/master/library/iojs) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -62,7 +62,7 @@ View [license information](https://github.com/iojs/io.js/blob/master/LICENSE) fo
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
@@ -70,7 +70,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Documentation
 
-Documentation for this image is stored in the [`iojs/` directory](https://github.com/docker-library/docs/tree/master/iojs) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`iojs/` directory](https://github.com/docker-library/docs/tree/master/iojs) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 

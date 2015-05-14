@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.42`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/dc21e836f1e0ee8ca3edd8e8944c7ea6956e8465/5.5/Dockerfile)
--	[`5.6.23`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/dc21e836f1e0ee8ca3edd8e8944c7ea6956e8465/5.6/Dockerfile)
+-	[`5.5.43`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/cbac3e22c3a2f73548a2203070d755efd33581ba/5.5/Dockerfile)
+-	[`5.6.24`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/cbac3e22c3a2f73548a2203070d755efd33581ba/5.6/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -59,7 +59,7 @@ If there is no database initialized when the container starts, then a default da
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
@@ -67,7 +67,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Documentation
 
-Documentation for this image is stored in the [`percona/` directory](https://github.com/docker-library/docs/tree/master/percona) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`percona/` directory](https://github.com/docker-library/docs/tree/master/percona) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 

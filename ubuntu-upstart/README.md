@@ -16,7 +16,7 @@ Upstart is an event-based replacement for the traditional init daemon – the me
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 

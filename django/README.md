@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/d9d98f91189e5ec41df2ebfaedbbed3fa99448cd/2.7/Dockerfile)
+-	[`1.8.1-python2`, `1.8-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/949f40a74d6d46d93a745b0080df10c9e7ad1240/2.7/Dockerfile)
 -	[`python2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/a3ae98081865ff8aab7524c98318568c32828ed1/2.7/onbuild/Dockerfile)
--	[`1.8-python3`, `1.8`, `1-python3`, `1`, `python3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/d9d98f91189e5ec41df2ebfaedbbed3fa99448cd/3.4/Dockerfile)
+-	[`1.8.1-python3`, `1.8.1`, `1.8-python3`, `1.8`, `1-python3`, `1`, `python3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/949f40a74d6d46d93a745b0080df10c9e7ad1240/3.4/Dockerfile)
 -	[`python3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/bbafaaab189c626ae85dc7fae60b7c589e8783e6/3.4/onbuild/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
@@ -66,7 +66,7 @@ View [license information](https://github.com/django/django/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
@@ -74,7 +74,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Documentation
 
-Documentation for this image is stored in the [`django/` directory](https://github.com/docker-library/docs/tree/master/django) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`django/` directory](https://github.com/docker-library/docs/tree/master/django) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 

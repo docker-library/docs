@@ -4,8 +4,8 @@
 -	[`6.0.43-jre8`, `6.0-jre8`, `6-jre8` (*6-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1ac581da0dbef3f191cbb2d5fbfc4292e32bb0dd/6-jre8/Dockerfile)
 -	[`7.0.61-jre7`, `7.0-jre7`, `7-jre7`, `7.0.61`, `7.0`, `7` (*7-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/fa5fe9c4327c92a99fa2ae63ff876acc8e5389e5/7-jre7/Dockerfile)
 -	[`7.0.61-jre8`, `7.0-jre8`, `7-jre8` (*7-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/fa5fe9c4327c92a99fa2ae63ff876acc8e5389e5/7-jre8/Dockerfile)
--	[`8.0.21-jre7`, `8.0-jre7`, `8-jre7`, `jre7`, `8.0.21`, `8.0`, `8`, `latest` (*8-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1ac581da0dbef3f191cbb2d5fbfc4292e32bb0dd/8-jre7/Dockerfile)
--	[`8.0.21-jre8`, `8.0-jre8`, `8-jre8`, `jre8` (*8-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/1ac581da0dbef3f191cbb2d5fbfc4292e32bb0dd/8-jre8/Dockerfile)
+-	[`8.0.22-jre7`, `8.0-jre7`, `8-jre7`, `jre7`, `8.0.22`, `8.0`, `8`, `latest` (*8-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ef856d48e431a9b83730b5c14c0d9a84d70156a5/8-jre7/Dockerfile)
+-	[`8.0.22-jre8`, `8.0-jre8`, `8-jre8`, `jre8` (*8-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/ef856d48e431a9b83730b5c14c0d9a84d70156a5/8-jre8/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -53,7 +53,7 @@ View [license information](https://www.apache.org/licenses/LICENSE-2.0) for the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
@@ -61,7 +61,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Documentation
 
-Documentation for this image is stored in the [`tomcat/` directory](https://github.com/docker-library/docs/tree/master/tomcat) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`tomcat/` directory](https://github.com/docker-library/docs/tree/master/tomcat) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 

@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.3.7`, `0.3`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/a85d92cbc1396ed7ba6007108412bea518271676/Dockerfile)
+-	[`0.3.8`, `0.3`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/cfeffd777768134ae9671fd02807e1a48f268037/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/julia`)](https://github.com/docker-library/official-images/blob/master/library/julia) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -30,7 +30,7 @@ View [license information](http://julialang.org/) for the software contained in 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
@@ -38,7 +38,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Documentation
 
-Documentation for this image is stored in the [`julia/` directory](https://github.com/docker-library/docs/tree/master/julia) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`julia/` directory](https://github.com/docker-library/docs/tree/master/julia) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 

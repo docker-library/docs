@@ -2,7 +2,7 @@
 
 -	[`latest`, `0.9.1` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.9.1/Dockerfile)
 -	[`0.8.1` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.8.1/Dockerfile)
--	[`2`, `2.0`, `2.0.0` (*Dockerfile*)](https://github.com/docker/distribution/blob/62b70f951f30a711a8a81df1865d0afeeaaa0169/Dockerfile)
+-	[`2`, `2.0`, `2.0.1` (*Dockerfile*)](https://github.com/docker/distribution/blob/1341222284b3a6b4e77fb64571ad423ed58b0d34/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -33,7 +33,7 @@ NOTE: The container will try to allocate the port 5000. If the port is already t
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
@@ -41,7 +41,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Documentation
 
-Documentation for this image is stored in the [`registry/` directory](https://github.com/docker-library/docs/tree/master/registry) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`registry/` directory](https://github.com/docker-library/docs/tree/master/registry) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 

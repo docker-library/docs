@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.1-apache`, `4.2.1`, `4.2-apache`, `4.2`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f72c6758fd75fc9c4a4ca2c0baabcd92b90381b9/apache/Dockerfile)
--	[`4.2.1-fpm`, `4.2-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/f72c6758fd75fc9c4a4ca2c0baabcd92b90381b9/fpm/Dockerfile)
+-	[`4.2.2-apache`, `4.2.2`, `4.2-apache`, `4.2`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f/apache/Dockerfile)
+-	[`4.2.2-fpm`, `4.2-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/1420b4c44ba0cf13d2d1d1e41bbc3bc74e83ce9f/fpm/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -69,7 +69,7 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
@@ -77,7 +77,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Documentation
 
-Documentation for this image is stored in the [`wordpress/` directory](https://github.com/docker-library/docs/tree/master/wordpress) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`wordpress/` directory](https://github.com/docker-library/docs/tree/master/wordpress) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 

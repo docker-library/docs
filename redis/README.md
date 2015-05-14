@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.6.17`, `2.6` (*2.6/Dockerfile*)](https://github.com/docker-library/redis/blob/5a480f7c9f05822c31204a7197d209ef9db1a32c/2.6/Dockerfile)
--	[`2.8.19`, `2.8`, `2` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/5a480f7c9f05822c31204a7197d209ef9db1a32c/2.8/Dockerfile)
--	[`3.0.0`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/5a2cfe30d3ddb6c1786d603b746fe7e7aa8823ae/3.0/Dockerfile)
+-	[`2.8.20`, `2.8`, `2` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/3b5b408972da5d788a483dfcd0e49b99937e5fc2/2.8/Dockerfile)
+-	[`3.0.1`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/3b5b408972da5d788a483dfcd0e49b99937e5fc2/3.0/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/redis`)](https://github.com/docker-library/official-images/blob/master/library/redis) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -58,7 +58,7 @@ View [license information](http://redis.io/topics/license) for the software cont
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
@@ -66,7 +66,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Documentation
 
-Documentation for this image is stored in the [`redis/` directory](https://github.com/docker-library/docs/tree/master/redis) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`redis/` directory](https://github.com/docker-library/docs/tree/master/redis) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 

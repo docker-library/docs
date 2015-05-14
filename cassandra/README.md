@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.14`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/7651f5e4e134d802e57a07846842c11ddc929b88/2.0/Dockerfile)
--	[`2.1.5`, `2.1`, `latest` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/7651f5e4e134d802e57a07846842c11ddc929b88/2.1/Dockerfile)
+-	[`2.0.14`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/86059b706a4147b529774d2a954aec618407357c/2.0/Dockerfile)
+-	[`2.1.5`, `2.1`, `latest` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/86059b706a4147b529774d2a954aec618407357c/2.1/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -125,7 +125,7 @@ If there is no database initialized when the container starts, then a default da
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
@@ -133,7 +133,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Documentation
 
-Documentation for this image is stored in the [`cassandra/` directory](https://github.com/docker-library/docs/tree/master/cassandra) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`cassandra/` directory](https://github.com/docker-library/docs/tree/master/cassandra) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 

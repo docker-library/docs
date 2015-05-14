@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4.26`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/e06675f0670414932e659db5ba8f98f8a430a1d1/1.4/Dockerfile)
--	[`1.5.11`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/942dc7ef85fe823b72d5592a745519dac0138039/1.5/Dockerfile)
+-	[`1.5.12`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/5d81ba89af4cb970a3288f463c60bf9bcc8b9682/1.5/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -41,7 +41,7 @@ View [license information](http://www.haproxy.org/download/1.5/doc/LICENSE) for 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version 1.6.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
@@ -49,7 +49,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 ## Documentation
 
-Documentation for this image is stored in the [`haproxy/` directory](https://github.com/docker-library/docs/tree/master/haproxy) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
+Documentation for this image is stored in the [`haproxy/` directory](https://github.com/docker-library/docs/tree/master/haproxy) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
 ## Issues
 
