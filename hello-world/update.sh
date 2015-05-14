@@ -18,3 +18,10 @@ echo
 
 echo
 echo '%%LOGO%%'
+
+echo
+cat <<'EOF'
+# How is this image created?
+
+This image is a prime example of using the [`scratch`](https://registry.hub.docker.com/_/scratch/) image effectively. See [`hello.asm`](%%GITHUB-REPO%%/blob/master/hello.asm) in %%GITHUB-REPO%% for the source code of the `hello` binary included in this image.
+EOF
