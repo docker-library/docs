@@ -31,6 +31,10 @@ For more information about this image and its history, please see the [relevant 
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/hello-world/logo.png)
 
+# How is this image created?
+
+This image is a prime example of using the [`scratch`](https://registry.hub.docker.com/_/scratch/) image effectively. See [`hello.asm`](https://github.com/docker-library/hello-world/blob/master/hello.asm) in https://github.com/docker-library/hello-world for the source code of the `hello` binary included in this image.
+
 # Supported Docker versions
 
 This image is officially supported on Docker version 1.6.2.
