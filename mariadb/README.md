@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`10.0.17`, `10.0`, `10`, `latest` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/69caa8fb5920391ddf045e226ef7af6215d392d0/10.0/Dockerfile)
+-	[`10.0.19`, `10.0`, `10`, `latest` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/b26758f0cde0b55ec4087074c1279db215a18d69/10.0/Dockerfile)
 -	[`5.5.43`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/471e5cbdea21c3b080809ba3376990b12cf4da05/5.5/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).

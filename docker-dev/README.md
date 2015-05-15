@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.1`, `1.6`, `1` (*Dockerfile*)](https://github.com/docker/docker/blob/v1.6.1/Dockerfile)
+-	[`1.6.2`, `1.6`, `1` (*Dockerfile*)](https://github.com/docker/docker/blob/v1.6.2/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

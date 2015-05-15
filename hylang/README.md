@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0`, `0.10`, `0.10.1` (*Dockerfile*)](https://github.com/hylang/hy/blob/0.10.1/Dockerfile)
+-	[`latest`, `0`, `0.11`, `0.11.0` (*Dockerfile*)](https://github.com/hylang/hy/blob/0.11.0/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/hylang`)](https://github.com/docker-library/official-images/blob/master/library/hylang) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
