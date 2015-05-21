@@ -1,10 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/d73a8b79dc510277b98265ab30adbd1514b88593/12.04/Dockerfile)
--	[`14.04.2`, `14.04`, `trusty`, `latest` (*14.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/d73a8b79dc510277b98265ab30adbd1514b88593/14.04/Dockerfile)
--	[`14.10`, `utopic` (*14.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/d73a8b79dc510277b98265ab30adbd1514b88593/14.10/Dockerfile)
--	[`15.04`, `vivid` (*15.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/d73a8b79dc510277b98265ab30adbd1514b88593/15.04/Dockerfile)
--	[`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/d73a8b79dc510277b98265ab30adbd1514b88593/devel/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/5979d06b34b01f0eff76ab7b0219645297f0b360/12.04/Dockerfile)
+-	[`14.04.2`, `14.04`, `trusty`, `latest` (*14.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/5979d06b34b01f0eff76ab7b0219645297f0b360/14.04/Dockerfile)
+-	[`14.10`, `utopic` (*14.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/5979d06b34b01f0eff76ab7b0219645297f0b360/14.10/Dockerfile)
+-	[`15.04`, `vivid` (*15.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/5979d06b34b01f0eff76ab7b0219645297f0b360/15.04/Dockerfile)
+-	[`15.10`, `wily` (*15.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/5979d06b34b01f0eff76ab7b0219645297f0b360/15.10/Dockerfile)
+-	[`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/5979d06b34b01f0eff76ab7b0219645297f0b360/devel/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/ubuntu-debootstrap`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-debootstrap) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

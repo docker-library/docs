@@ -4,8 +4,8 @@
 -	[`openjdk-6b35-jre`, `openjdk-6-jre`, `6b35-jre`, `6-jre` (*openjdk-6-jre/Dockerfile*)](https://github.com/docker-library/java/blob/318ba809c9f0e3c7095b363c5a31409ee6880208/openjdk-6-jre/Dockerfile)
 -	[`openjdk-7u79-jdk`, `openjdk-7u79`, `openjdk-7-jdk`, `openjdk-7`, `7u79-jdk`, `7u79`, `7-jdk`, `7`, `jdk`, `latest` (*openjdk-7-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/318ba809c9f0e3c7095b363c5a31409ee6880208/openjdk-7-jdk/Dockerfile)
 -	[`openjdk-7u79-jre`, `openjdk-7-jre`, `7u79-jre`, `7-jre`, `jre` (*openjdk-7-jre/Dockerfile*)](https://github.com/docker-library/java/blob/318ba809c9f0e3c7095b363c5a31409ee6880208/openjdk-7-jre/Dockerfile)
--	[`openjdk-8u45-jdk`, `openjdk-8u45`, `openjdk-8-jdk`, `openjdk-8`, `8u45-jdk`, `8u45`, `8-jdk`, `8` (*openjdk-8-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/b4a3c296023e590e410f645ab83d3c11a30cf535/openjdk-8-jdk/Dockerfile)
--	[`openjdk-8u45-jre`, `openjdk-8-jre`, `8u45-jre`, `8-jre` (*openjdk-8-jre/Dockerfile*)](https://github.com/docker-library/java/blob/b4a3c296023e590e410f645ab83d3c11a30cf535/openjdk-8-jre/Dockerfile)
+-	[`openjdk-8u45-jdk`, `openjdk-8u45`, `openjdk-8-jdk`, `openjdk-8`, `8u45-jdk`, `8u45`, `8-jdk`, `8` (*openjdk-8-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/e740b6fad61854adfbdf553638d33f1c80176d79/openjdk-8-jdk/Dockerfile)
+-	[`openjdk-8u45-jre`, `openjdk-8-jre`, `8u45-jre`, `8-jre` (*openjdk-8-jre/Dockerfile*)](https://github.com/docker-library/java/blob/e740b6fad61854adfbdf553638d33f1c80176d79/openjdk-8-jre/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
