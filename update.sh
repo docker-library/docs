@@ -55,6 +55,7 @@ declare -A otherRepos=(
 	[rakudo]='https://github.com/perl6/docker'
 	[registry]='https://github.com/docker/docker-registry'
 	[rethinkdb]='https://github.com/stuartpb/rethinkdb-dockerfiles'
+	[sonarqube]='https://github.com/SonarSource/docker-sonarqube'
 	[swarm]='https://github.com/docker/swarm-library-image'
 	[thrift]='https://github.com/ahawkins/docker-thrift'
 	[ubuntu-debootstrap]='https://github.com/tianon/docker-brew-ubuntu-debootstrap'
