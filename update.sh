@@ -64,7 +64,7 @@ declare -A otherRepos=(
 	[websphere-liberty]='https://github.com/WASdev/ci.docker'
 )
 
-dockerLatest="$(curl -sSL 'https://get.docker.com/latest')"
+dockerLatest="$(curl -fsSL 'https://get.docker.com/latest')"
 
 for repo in "${repos[@]}"; do
 	if [ -x "$repo/update.sh" ]; then
