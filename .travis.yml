@@ -12,6 +12,8 @@ script:
     if [ "$files" ]; then
       echo >&2 "Need markdownfmt:";
       echo >&2 "$files";
+      echo >&2;
+      markdownfmt -d  "$files" >&2;
       exit 1;
     fi
   - failed='';
