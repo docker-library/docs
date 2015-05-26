@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2-2.5.1`, `2-2.5`, `2-2`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/6d72f0d0dfb0848f87a7f89e8401129dc3edd982/2/Dockerfile)
--	[`2-2.5.1-onbuild`, `2-2.5-onbuild`, `2-2-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/6d72f0d0dfb0848f87a7f89e8401129dc3edd982/2/onbuild/Dockerfile)
--	[`2-2.5.1-slim`, `2-2.5-slim`, `2-2-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/b205b0255a3816166e4a91fc28521e25e9875485/2/slim/Dockerfile)
--	[`3-2.4.0`, `3-2.4`, `3-2`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/0e9d197376519d7cc4cad52f378b7b289b524bad/3/Dockerfile)
--	[`3-2.4.0-onbuild`, `3-2.4-onbuild`, `3-2-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/0e9d197376519d7cc4cad52f378b7b289b524bad/3/onbuild/Dockerfile)
--	[`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/b205b0255a3816166e4a91fc28521e25e9875485/3/slim/Dockerfile)
+-	[`2-2.5.1`, `2-2.5`, `2-2`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/22b56eb4d32732147f6ce39745febd074f072ecf/2/Dockerfile)
+-	[`2-2.5.1-onbuild`, `2-2.5-onbuild`, `2-2-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
+-	[`2-2.5.1-slim`, `2-2.5-slim`, `2-2-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/22b56eb4d32732147f6ce39745febd074f072ecf/2/slim/Dockerfile)
+-	[`3-2.4.0`, `3-2.4`, `3-2`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/22b56eb4d32732147f6ce39745febd074f072ecf/3/Dockerfile)
+-	[`3-2.4.0-onbuild`, `3-2.4-onbuild`, `3-2-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
+-	[`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/22b56eb4d32732147f6ce39745febd074f072ecf/3/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
