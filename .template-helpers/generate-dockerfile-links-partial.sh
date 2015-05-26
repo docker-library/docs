@@ -9,7 +9,7 @@ if [ -z "$repo" ]; then
 fi
 
 IFS=$'\n'
-lines=( $(curl -sSL 'https://raw.githubusercontent.com/docker-library/official-images/master/library/'"$repo" | grep -vE '^$|^#') )
+lines=( $(curl -fsSL 'https://raw.githubusercontent.com/docker-library/official-images/master/library/'"$repo" | grep -vE '^$|^#') )
 unset IFS
 
 repoDirs=()
