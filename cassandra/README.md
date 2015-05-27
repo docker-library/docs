@@ -97,6 +97,16 @@ This variable sets the name of the cluster and must be the same for all nodes in
 
 This variable sets number of tokens for this node. It will set the [`num_tokens`](http://docs.datastax.com/en/cassandra/2.1/cassandra/configuration/configCassandra_yaml_r.html?scroll=reference_ds_qfg_n1r_1k__num_tokens) option of `cassandra.yaml`.
 
+### `CASSANDRA_DC`
+This variable sets the datacenter name of this node. It will set the [`dc`] option of `cassandra-rackdc.properties`.
+
+### `CASSANDRA_RACK`
+This variable sets the rack name of this node. It will set the [`rack`] option of `cassandra-rackdc.properties`.
+
+### `CASSANDRA_ENDPOINT_SNITCH`
+This variable sets the snitch implementation this node will use. It will set the [`endpoint_snitch`] option of `cassandra.yml`.
+
+
 # Caveats
 
 ## Where to Store Data
