@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1`, `1.9`, `1.9.0` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/2d9dbca5d2a916b90227863bb8f1a6458e5083c5/Dockerfile)
+-	[`latest`, `1`, `1.9`, `1.9.1` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/6ef443bc3e04a584955cbe960c70fc2e8b7a0156/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
