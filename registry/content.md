@@ -1,6 +1,8 @@
 # Docker Registry
 
-See comprehensive documentation on our [GitHub page](https://github.com/docker/docker-registry).
+The tags >= 2 refer to the [new registry](https://github.com/docker/distribution).
+
+Older tags refer to the [deprecated registry](https://github.com/docker/docker-registry).
 
 ## Run the Registry
 
