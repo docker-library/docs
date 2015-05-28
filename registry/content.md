@@ -6,12 +6,14 @@ Older tags refer to the [deprecated registry](https://github.com/docker/docker-r
 
 ## Run the Registry
 
-### Recommended: run the registry docker container
-
 -	install docker according to the [following instructions](http://docs.docker.io/installation/#installation)
--	run the registry: `docker run -p 5000:5000 registry`
 
-or
+### Run the registry docker container: Quick version
+
+-	run the registry: `docker run -p 5000:5000 -v <HOST_DIR>:/tmp/registry-dev registry`
+-	Modify your docker startup line/script: add "-H tcp://127.0.0.1:2375 -H unix:///var/run/docker.sock --insecure-registry <REGISTRY_HOSTNAME>:5000"
+
+### Recommended: run the registry docker container
 
 	docker run \
 	         -e SETTINGS_FLAVOR=s3 \
