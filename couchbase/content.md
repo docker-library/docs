@@ -11,7 +11,7 @@ For support, please visit the [Couchbase support forum](https://forums.couchbase
 # How to use this image: QuickStart
 
 ```
-docker run -d -p 8091:8091 couchbase/server
+docker run -d -p 8091:8091 couchbase
 ```
 
 At this point go to http://localhost:8091 from the host machine to see the Admin Console web UI.  More details and screenshots are given below in the **Single host, single container** section.
@@ -26,10 +26,15 @@ There are several deployment scenarios which this Docker image can easily suppor
 
 ## Volumes
 
-A Couchbase Server Docker container will write all persistent and node-specific data under the directory `/opt/couchbase/var`. We recommend mapping this directory to a directory on the host filesystem (using the `-v` option to `docker run`) for the following reasons:
+A Couchbase Server Docker container will write all persistent and node-specific data under the directory `/opt/couchbase/var`. As this directory is declared to be a Docker volume, it will be persisted outside the normal union filesystem. This results in improved performance. It also allows you to easily migrate to a container running an updated point release of Couchbase Server without losing your data with a process like this:
 
-* **Persistence** Storing `/opt/couchbase/var` outside the container allows you to delete the container and re-create it later. You can even update to a container running a later point release of Couchbase Server without losing your data.
-* **Performance** In a standard Docker environment using a union filesystem, leaving `/opt/couchbase/var` "inside" the container will result in some amount of performance degradation.
+```
+docker stop my-couchbase-container
+docker run -d --name my-new-couchbase-container --volumes-from my-couchbase-container ....
+docker rm my-couchbase-container
+```
+
+By default, the persisted location of the volume on your Docker host will be hidden away in a location managed by the Docker daemon. In order to control its location - in particular, to ensure that it is on a partition with sufficient disk space for your server - we recommend mapping the volume to a specific directory on the host filesystem using the `-v` option to `docker run`.
 
 All of the example commands below will assume you are using volumes mapped to host directories.
 
@@ -56,7 +61,7 @@ These ulimit settings are necessary when running under heavy load;  but if you a
 In order to set the ulimits in your container, you will need to run Couchbase Docker containers with the following additional `--ulimit` flags:
 
 ```
-docker run -d --ulimit nofile=40960:40960 --ulimit core=100000000:100000000 --ulimit memlock=100000000:100000000 couchbase/server
+docker run -d --ulimit nofile=40960:40960 --ulimit core=100000000:100000000 --ulimit memlock=100000000:100000000 couchbase
 ```
 
 Since `unlimited` is not supported as a value, it sets the core and memlock values to 100 GB.  If your system has more than 100 GB RAM, you will want to increase this value to match the available RAM on the system.
@@ -86,15 +91,17 @@ This is a quick way to try out Couchbase Server on your own machine with no inst
 **Start the container**
 
 ```
-docker run -d -v ~/couchbase:/opt/couchbase/var -p 8091:8091 couchbase/server
+docker run -d -v ~/couchbase:/opt/couchbase/var -p 8091:8091 --name my-couchbase-server couchbase
 ```
+
+We use the --name option to make it easier to refer to this running container in future.
 
 **Verify container start**
 
-The `docker run` command above will return a container id, eg, `1163fd8df`.  Use the container id to view the logs:
+Use the container name you specified (eg. `my-couchbase-server`) to view the logs:
 
 ```
-$ docker logs 1163fd8df
+$ docker logs my-couchbase-server
 Starting Couchbase Server -- Web UI available at http://<ip>:8091
 ```
 
@@ -148,9 +155,9 @@ You should run the SDK on the host and point it to `http://localhost:8091/pools`
 You can choose to mount `/opt/couchbase/var` from the host, however you *must give each container a separate host directory*.
 
 ```
-docker run -d -v ~/couchbase/node1:/opt/couchbase/var couchbase/server
-docker run -d -v ~/couchbase/node2:/opt/couchbase/var couchbase/server
-docker run -d -v ~/couchbase/node3:/opt/couchbase/var -p 8091:8091 couchbase/server
+docker run -d -v ~/couchbase/node1:/opt/couchbase/var couchbase
+docker run -d -v ~/couchbase/node2:/opt/couchbase/var couchbase
+docker run -d -v ~/couchbase/node3:/opt/couchbase/var -p 8091:8091 couchbase
 ```
 
 **Setting up your Couchbase cluster**
@@ -209,7 +216,7 @@ Using the `--net=host` flag will have the following effects:
 Start a container on *each host* via:
 
 ```
-docker run -d -v ~/couchbase:/opt/couchbase/var --net=host couchbase/server
+docker run -d -v ~/couchbase:/opt/couchbase/var --net=host couchbase
 ```
 
 To configure Couchbase Server:
@@ -241,18 +248,3 @@ To configure Couchbase Server:
 ## Cloud environments
 
 Although it is beyond the scope of this README, there is a [github wiki](https://github.com/couchbase/docker/wiki#container-specific-cloud-hosting-platforms) that contains guidance and instructions on how to run Couchbase Server Docker containers in various cloud environments. 
-
-
-# Licensing
-
-Couchbase Server comes in two editions:
-
-* [Community Edition](http://www.couchbase.com/community) -- free for unrestricted use.
-
-* [Enterprise Edition](http://www.couchbase.com/agreement/subscription) -- free for development, paid subscription required for production deployment.
-
-By default, the `latest` docker tag points to the latest Enterprise Edition, as does the `enterprise` docker tag.  If you want the Community Edition instead, you should add the `community` tag, which will point to the latest available Community Edition.
-
-```
-docker run couchbase/server:community
-```
