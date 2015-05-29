@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3.9`, `1.3` (*1.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/eb0f9ee6627079d45ca9a64cc30cff0f6dfe07a1/1.3/Dockerfile)
--	[`1.4.5`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/83fdaa617fc15a6363f08935190a7edd55ab35c0/1.4/Dockerfile)
--	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/83fdaa617fc15a6363f08935190a7edd55ab35c0/1.5/Dockerfile)
+-	[`1.3.9`, `1.3` (*1.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/0d458a654cf9f7b7199f4faf4a838e6928ee954e/1.3/Dockerfile)
+-	[`1.4.5`, `1.4`, `1`, `latest` (*1.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/0d458a654cf9f7b7199f4faf4a838e6928ee954e/1.4/Dockerfile)
+-	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/0d458a654cf9f7b7199f4faf4a838e6928ee954e/1.5/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
