@@ -25,11 +25,7 @@ For more information about this image and its history, please see the [relevant 
 
 
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/whalesay/logo.png)
-
-# How is this image created?
-
-This image is a prime example of using the [`scratch`](https://registry.hub.docker.com/_/scratch/) image effectively. See [`hello.asm`](https://github.com/docker-library/whalesay/blob/master/hello.asm) in https://github.com/docker-library/whalesay for the source code of the `hello` binary included in this image.
+![logo](logo.png)
 
 # Supported Docker versions
 
