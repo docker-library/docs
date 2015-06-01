@@ -15,9 +15,11 @@ use Term::ReadLine;
 
 my $username;
 my $password;
+my $batchmode;
 GetOptions(
 	'u|username=s' => \$username,
 	'p|password=s' => \$password,
+	'batchmode!' => \$batchmode,
 ) or die 'bad args';
 
 die 'no repos specified' unless @ARGV;
@@ -106,11 +108,17 @@ sub prompt_for_edit {
 	
 	system(qw(git --no-pager diff --no-index), $filename, $proposedFile);
 	
-	my $reply = $term->get_reply(
-		prompt => 'Apply changes?',
-		choices => [ qw( yes vimdiff no quit ) ],
-		default => 'yes',
-	);
+	my $reply;
+	if ($batchmode) {
+		$reply = 'yes';
+	}
+	else {
+		$reply = $term->get_reply(
+			prompt => 'Apply changes?',
+			choices => [ qw( yes vimdiff no quit ) ],
+			default => 'yes',
+		);
+	}
 	
 	if ($reply eq 'quit') {
 		say 'quitting, as requested';
