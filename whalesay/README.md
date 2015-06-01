@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*Dockerfile*)](https://github.com/moxiegirl/whalesay/blob/master/Dockerfile)
+[`latest` (*Dockerfile*)](https://github.com/moxiegirl/whalesay/blob/master/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/whalesay`)](https://github.com/docker-library/official-images/blob/master/library/whalesay) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -25,7 +25,7 @@ For more information about this image and its history, please see the [relevant 
 
 
 
-![logo](logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/whalesay/logo.png)
 
 # Supported Docker versions
 
