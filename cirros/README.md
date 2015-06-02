@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-
+-	[`latest`, `0.3.3` (*Dockerfile*)](https://github.com/ewindisch/docker-cirros/blob/5ef3f5024b0aa80553cc34be9eff6685cb31b458/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/cirros`)](https://github.com/docker-library/official-images/blob/master/library/cirros) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
