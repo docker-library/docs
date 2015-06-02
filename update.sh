@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -eo pipefail
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 helperDir='.template-helpers'
