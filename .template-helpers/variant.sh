@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -eo pipefail
 
 repo="$1"
 if [ -z "$repo" ]; then
