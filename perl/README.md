@@ -1,19 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.20`, `5.20.2` (*5.020.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.020.002-64bit/Dockerfile)
--	[`5.18`, `5.18.4` (*5.018.004-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.018.004-64bit/Dockerfile)
--	[`5.16`, `5.16.3` (*5.016.003-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.016.003-64bit/Dockerfile)
--	[`5.14`, `5.14.4` (*5.014.004-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.014.004-64bit/Dockerfile)
--	[`5.12`, `5.12.5` (*5.012.005-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.012.005-64bit/Dockerfile)
--	[`5.10`, `5.10.1` (*5.010.001-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.010.001-64bit/Dockerfile)
--	[`5.8`, `5.8.9` (*5.008.009-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.008.009-64bit/Dockerfile)
--	[`threaded`, `5-threaded`, `5.20-threaded`, `5.20.2-threaded` (*5.020.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.020.002-64bit,threaded/Dockerfile)
--	[`5.18-threaded`, `5.18.4-threaded` (*5.018.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.018.004-64bit,threaded/Dockerfile)
--	[`5.16-threaded`, `5.16.3-threaded` (*5.016.003-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.016.003-64bit,threaded/Dockerfile)
--	[`5.14-threaded`, `5.14.4-threaded` (*5.014.004-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.014.004-64bit,threaded/Dockerfile)
--	[`5.12-threaded`, `5.12.5-threaded` (*5.012.005-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.012.005-64bit,threaded/Dockerfile)
--	[`5.10-threaded`, `5.10.1-threaded` (*5.010.001-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.010.001-64bit,threaded/Dockerfile)
--	[`5.8-threaded`, `5.8.9-threaded` (*5.008.009-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150503.0/5.008.009-64bit,threaded/Dockerfile)
+-	[`latest`, `5`, `5.22`, `5.22.0` (*5.022.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150602.0/5.022.000-64bit/Dockerfile)
+-	[`5.20`, `5.20.2` (*5.020.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150602.0/5.020.002-64bit/Dockerfile)
+-	[`threaded`, `5-threaded`, `5.22-threaded`, `5.22.0-threaded` (*5.022.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150602.0/5.022.000-64bit,threaded/Dockerfile)
+-	[`5.20-threaded`, `5.20.2-threaded` (*5.020.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150602.0/5.020.002-64bit,threaded/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/perl`)](https://github.com/docker-library/official-images/blob/master/library/perl) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
