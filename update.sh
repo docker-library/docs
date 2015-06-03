@@ -56,6 +56,7 @@ declare -A otherRepos=(
 	[registry]='https://github.com/docker/docker-registry'
 	[rethinkdb]='https://github.com/stuartpb/rethinkdb-dockerfiles'
 	[sonarqube]='https://github.com/SonarSource/docker-sonarqube'
+	[ros]='https://github.com/osrf/docker_images'
 	[swarm]='https://github.com/docker/swarm-library-image'
 	[thrift]='https://github.com/ahawkins/docker-thrift'
 	[ubuntu-debootstrap]='https://github.com/tianon/docker-brew-ubuntu-debootstrap'
