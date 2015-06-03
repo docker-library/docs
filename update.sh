@@ -109,7 +109,9 @@ for repo in "${repos[@]}"; do
 		cp -v "$helperDir/template.md" "$repo/README.md"
 		
 		echo '  TAGS => generate-dockerfile-links-partial.sh'
-		replace_field "$repo" 'TAGS' "$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"
+		partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"
+		[ "$partial" ]
+		replace_field "$repo" 'TAGS' "$partial"
 		
 		echo '  CONTENT => '"$repo"'/content.md'
 		replace_field "$repo" 'CONTENT' "$(cat "$repo/content.md")"

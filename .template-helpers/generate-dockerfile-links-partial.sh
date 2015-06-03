@@ -12,6 +12,11 @@ IFS=$'\n'
 lines=( $(curl -fsSL 'https://raw.githubusercontent.com/docker-library/official-images/master/library/'"$repo" | grep -vE '^$|^#') )
 unset IFS
 
+if [ "${#lines[@]}" -eq 0 ]; then
+	echo >&2 "Failed to read manifest file for $repo"
+	exit 1
+fi
+
 repoDirs=()
 declare -A repoDirTags=()
 
