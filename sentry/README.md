@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.5.0`, `7.5`, `7`, `latest` (*Dockerfile*)](https://github.com/docker-library/sentry/blob/69b3007ea0b3b54c173342d6a0d91bdd7ed5f3e1/Dockerfile)
+-	[`7.5.3`, `7.5`, `7`, `latest` (*Dockerfile*)](https://github.com/docker-library/sentry/blob/64fdd27c9aaf27da23cd89a2bca73b523594f1f8/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
