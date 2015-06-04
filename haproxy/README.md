@@ -21,6 +21,8 @@ Please refer to [upstream's excellent (and comprehensive) documentation](https:/
 
 It is also worth checking out the [`examples/` directory from upstream](http://www.haproxy.org/git?p=haproxy-1.5.git;a=tree;f=examples).
 
+**Note: Do not configure haproxy to run in daemon mode or the docker container will exit immediately after launching.**
+
 ## Create a `Dockerfile`
 
 	FROM haproxy:1.5
