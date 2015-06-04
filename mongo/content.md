@@ -27,3 +27,29 @@ This image includes `EXPOSE 27017` (the mongo port), so standard container linki
 ## Configuration
 
 See the [official docs](http://docs.mongodb.org/manual/) for infomation on using and configuring MongoDB for things like replica sets and sharding.
+
+Just add the `--storageEngine` argument if you want to use the WiredTiger storage engine in MongoDB 3.0 and above without making a config file. Be sure to check the [docs](http://docs.mongodb.org/manual/release-notes/3.0-upgrade/#change-storage-engine-to-wiredtiger) on how to upgrade from older versions.
+
+	docker run --name some-mongo -d mongo --storageEngine=wiredTiger
+
+## Where to Store Data
+
+Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `%%REPO%%` images to familiarize themselves with the options available, including:
+
+-	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+
+**WARNING**: because MongoDB uses memory mapped files it is not possible to use it through vboxsf to your host ([vbox bug](https://www.virtualbox.org/ticket/819)).
+
+The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
+
+1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
+2.	Start your `%%REPO%%` container like this:
+
+	docker run --name some-%%REPO%% -v /my/own/datadir:/data/db -d %%REPO%%:tag
+
+The `-v /my/own/datadir:/data/db` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/data/db` inside the container, where MongoDB by default will write its data files.
+
+Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
+
+	chcon -Rt svirt_sandbox_file_t /my/own/datadir
