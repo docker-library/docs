@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`8.5.5`, `latest` (*websphere-liberty/8.5.5/developer/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/94085e885f7bf6025b68ae57de6b9aa9988fa9d8/websphere-liberty/8.5.5/developer/Dockerfile)
--	[`beta` (*websphere-liberty/beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/94085e885f7bf6025b68ae57de6b9aa9988fa9d8/websphere-liberty/beta/Dockerfile)
+-	[`beta` (*websphere-liberty/beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/d3b1899b701b8ad67ac1c0084b40678effc134cc/websphere-liberty/beta/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
