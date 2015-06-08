@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.48`, `0.48.7` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/0.48.7/Dockerfile)
--	[`0.47`, `0.47.9` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/0.47.9/Dockerfile)
+-	[`latest`, `0.49`, `0.49.2` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/0.49.2/Dockerfile)
+-	[`0.48`, `0.48.7` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/0.48.7/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
