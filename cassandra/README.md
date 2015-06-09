@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.0.15`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/a918a72ca6bfc1becaa0ba25e9720b83071d0f4c/2.0/Dockerfile)
--	[`2.1.5`, `2.1`, `latest` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/a918a72ca6bfc1becaa0ba25e9720b83071d0f4c/2.1/Dockerfile)
+-	[`2.1.6`, `2.1`, `latest` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/5280fcc3d55d651a037991d0a1982b95b8d02bcc/2.1/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
