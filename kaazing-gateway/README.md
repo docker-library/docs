@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.0.1.21`, (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/master/Dockerfile)
+-	[`latest`, `5.0.1.21` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/4eaf83bfb9bcecb136cbcd3f6ad6f6d0dcf2f20d/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -43,6 +43,10 @@ Then, build with `docker build -t some-custom-kaazing-gateway .` and run:
 
 	docker run --name some-kaazing-gateway -d some-custom-kaazing-gateway
 
+# License
+
+View [license information](https://github.com/kaazing/gateway/blob/master/LICENSE.txt) for the software contained in this image.
+
 # Supported Docker versions
 
 This image is officially supported on Docker version 1.6.2.
@@ -63,7 +67,6 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 ## Contributing
 
-You are invited to contribute new features, fixes, or updates, large or small. We are always thrilled to receive pull requests, and do our best to process them as fast as we can.
+You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
 Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/kaazing/gateway.docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
