@@ -36,4 +36,3 @@ As above, this can also be accomplished more cleanly using a simple `Dockerfile`
 Then, build with `docker build -t some-custom-kaazing-gateway .` and run:
 
 	docker run --name some-kaazing-gateway -d some-custom-kaazing-gateway
-
