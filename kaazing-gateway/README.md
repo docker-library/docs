@@ -16,7 +16,7 @@ The Kaazing Gateway is a network gateway created to provide a single access poin
 
 By default the gateway runs a WebSocket echo service similar to [websocket.org](https://www.websocket.org/echo.html).
 
-    docker run --name some-kaazing-gateway -h somehostname -d -p 8000:8000 kaazing-gateway
+	docker run --name some-kaazing-gateway -h somehostname -d -p 8000:8000 kaazing-gateway
 
 You should then be able to connect to ws://somehostname:8000 from the [WebSocket echo test](https://www.websocket.org/echo.html).
 
