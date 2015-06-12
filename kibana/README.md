@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1.0`, `4.1`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/kibana/blob/eef820b7b3f13fe82dadd0381ed1ca880cb6c90c/Dockerfile)
+-	[`4.1.0`, `4.1`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/kibana/blob/3d09dab632ca2919f554b7a40058e8806e58248f/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/kibana`)](https://github.com/docker-library/official-images/blob/master/library/kibana) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
