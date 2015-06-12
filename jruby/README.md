@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7`, `1.7.20`, `latest`, `1.7-jre`, `1.7.20-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/882f6121c19e90e158bc86645335f8762d26ff19/1.7/jre/Dockerfile)
--	[`1.7-jdk`, `1.7.20-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/882f6121c19e90e158bc86645335f8762d26ff19/1.7/jdk/Dockerfile)
--	[`1.7-onbuild`, `1.7.20-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/882f6121c19e90e158bc86645335f8762d26ff19/1.7/onbuild/Dockerfile)
+-	[`1.7`, `1.7.20`, `1.7.20.1`, `latest`, `1.7-jre`, `1.7.20-jre`, `1.7.20.1-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/a108cb09f3213b8230242bbace8880174f81a6f0/1.7/jre/Dockerfile)
+-	[`1.7-jdk`, `1.7.20-jdk`, `1.7.20.1-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/a108cb09f3213b8230242bbace8880174f81a6f0/1.7/jdk/Dockerfile)
+-	[`1.7-onbuild`, `1.7.20-onbuild`, `1.7.20.1-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/a108cb09f3213b8230242bbace8880174f81a6f0/1.7/onbuild/Dockerfile)
 -	[`9.0.0.0`, `9.0.0.0-jre`, `9.0.0.0.rc1`, `9.0.0.0.rc1-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/14113750316f06b2785a41b5bc3dd6b23510af6f/9000/jre/Dockerfile)
 -	[`9.0.0.0-jdk`, `9.0.0.0.rc1-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/14113750316f06b2785a41b5bc3dd6b23510af6f/9000/jdk/Dockerfile)
 -	[`9.0.0.0-onbuild`, `9.0.0.0.rc1-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/14113750316f06b2785a41b5bc3dd6b23510af6f/9000/onbuild/Dockerfile)
