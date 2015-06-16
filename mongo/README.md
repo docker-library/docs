@@ -3,7 +3,7 @@
 -	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/c9a1b066a0f35f679c2f8e1854a21e025867d938/2.2/Dockerfile)
 -	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/b7630a1644d934c4c4d57a121e2ca42a50e99c44/2.4/Dockerfile)
 -	[`2.6.10`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/b7d2dead92baec7c7f391966659815038d74aa61/2.6/Dockerfile)
--	[`3.0.3`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/65491bce9f2b6941dbde4ddaf16171dad5fe50d1/3.0/Dockerfile)
+-	[`3.0.4`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/ab203d1904c8621d64e20683610cc238fa0a628b/3.0/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
