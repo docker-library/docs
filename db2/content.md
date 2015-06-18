@@ -39,47 +39,36 @@ This docker image contained pre-deployed DB2 Express-C with the default DB2 inst
 ##1. Start a container
 
 ```shell
-docker run -it -p 50000:50000 -e DB2INST1_PASSWORD=db2inst1-pwd -e LICENSE=accept ibmcom/db2express-c:latest bash
+docker run --name db2expc -d -p 50000:50000 -e DB2INST1_PASSWORD=db2inst1-pwd -e LICENSE=accept db2express-c:latest -d
 ```
 
+* ```db2expc```, a container name created while starting Docker container.
 * ```-p 50000:50000``` exposes port ```50000``` to allow connections from the remote client.
 * By specifying ```-e DB2INST1_PASSWORD=db2inst1-pwd``` parameter, you set a password of your choice for the `db2inst1` user for the default DB2 instance.
 * By specifying ```-e LICENSE=accept``` parameter, you are accepting this [License](http://www-03.ibm.com/software/sla/sladb.nsf/displaylis/5DF1EE126832D3F185257DAB0064BEFA?OpenDocument)  to use the software contained in this image.
 
+##3. Note
 
-##2. Start DB2 and create sample DB
-Please switch to the default db2 instance user ```db2inst1``` to start DB2 instance and create a sample database if you want :
+###1) How to create sample DB
+Please start an interactive bash shell against a running container
+
+```shell
+docker exec -it db2expc  bash
+```
+
+* ```db2expc```, a container name created while starting Docker container
+
+Then, please switch to the default db2 instance user ```db2inst1``` to create a sample database if you want :
 
 ```shell
 $ su - db2inst1
-$ db2start
 $ db2sampl
 ```
 
 * The time of creating a sample database depends on your system performance, which may take several minutes.
 * You can create another database using ```db2 create db <dbname>``` command.
 
-
-##3. Note
-
-###1) Start as a daemon
-You can start a container as a daemon with DB2 services up/running : 
-
-```shell
-docker run -d -p 50000:50000 -e DB2INST1_PASSWORD=db2inst1-pwd -e LICENSE=accept  ibmcom/db2express-c:latest db2start
-```
-* ``` db2start```,  db2 services start automatically and remote client can connect to it at port ```50000```
-
-###2) Mount a volume
-While starting a Docker container, you can mount a volume from a directory on the Docker host like the following command :
-
-```shell
-docker run -it -p 50000:50000 -e DB2INST1_PASSWORD=db2inst1-pwd -e LICENSE=accept   -v  $(pwd):/share  ibmcom/db2express-c:latest bash
-```
-* ```/share```,  referring to mount point at "/share" in the Docker. 
-* ``` $(pwd)```,  the current directory on Docker host while running Docker command, which is mounted by Docker container. It can also be any existing directory on Docker host, like ```/tmp```, ```/opt```, etc.
-
-###3) DB2 is deployed in the Docker Engine in:
+###2) DB2 is deployed in the Docker Engine in:
 
 ```shell
  /opt/ibm/db2/V10.5
