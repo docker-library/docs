@@ -3,7 +3,7 @@
 
 # What is  IBM DB2 Express-C  ?
 
-``IBM DB2 Express-C```  is the no-charge community edition of DB2 server,  a simple, flexible, powerful, and reliable relational database server. It is easy to install, embed, deploy, and available for download, deployment, and redistribution at no charge
+```IBM DB2 Express-C```  is the no-charge community edition of DB2 server,  a simple, flexible, powerful, and reliable relational database server. It is easy to install, embed, deploy, and available for download, deployment, and redistribution at no charge
 
 * __Uses Time Travel Query__ to provide bi-temporal data management.
 * __Delivers an integrated tools environment__ with IBM Data Studio for easier management and development.
