@@ -20,11 +20,11 @@
 
 #Supported tags
 
-*  ```latest``` (```10.5.0.5-3.10.0``)
-*  ```10.5.0.5-3.10.0```,
+*  ```latest``` (```10.5.0.5``)
+*  ```10.5.0.5```,
 
-The supported tags stands for ```<db2 version> - <Linux kernel version of Docker Engine>```.
-DB2 Docker images can be deployed on a Docker Engine with any flavour of Linux , as long as it has the compatible ```kernel-3.10.0```, like ```CentOS 7``` respectively.
+The supported tags stands for ```<db2 version>```.
+DB2 Docker images can be deployed on a Docker Engine with any flavour of Linux , as long as it has the compatible ```kernel-3.10.0``` or later, like ```CentOS 7``` respectively.
 
 * Please make sure your Docker Engine has a compatible Linux kernel
 * Please use ```Docker 1.6.0 or later release``` on Ubuntu Docker Engine or Boot2Docker since there is a known issue with [aufs and direct io] (https://github.com/docker/docker/pull/10534)
