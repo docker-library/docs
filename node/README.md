@@ -1,17 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.10.38`, `0.10` (*0.10/Dockerfile*)](https://github.com/joyent/docker-node/blob/cb1434d434ca52b31e81452d887e76fc7b24cbef/0.10/Dockerfile)
--	[`0.10.38-onbuild`, `0.10-onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/1a414011089f16390800995f469f5f08446baf7f/0.10/onbuild/Dockerfile)
--	[`0.10.38-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/cb1434d434ca52b31e81452d887e76fc7b24cbef/0.10/slim/Dockerfile)
--	[`0.10.38-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/cb1434d434ca52b31e81452d887e76fc7b24cbef/0.10/wheezy/Dockerfile)
--	[`0.12.4`, `0.12`, `0`, `latest` (*0.12/Dockerfile*)](https://github.com/joyent/docker-node/blob/cb1434d434ca52b31e81452d887e76fc7b24cbef/0.12/Dockerfile)
--	[`0.12.4-onbuild`, `0.12-onbuild`, `0-onbuild`, `onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/428d5e69763aad1f2d8f17c883112850535e8290/0.12/onbuild/Dockerfile)
--	[`0.12.4-slim`, `0.12-slim`, `0-slim`, `slim` (*0.12/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/cb1434d434ca52b31e81452d887e76fc7b24cbef/0.12/slim/Dockerfile)
--	[`0.12.4-wheezy`, `0.12-wheezy`, `0-wheezy`, `wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/cb1434d434ca52b31e81452d887e76fc7b24cbef/0.12/wheezy/Dockerfile)
--	[`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/joyent/docker-node/blob/cb1434d434ca52b31e81452d887e76fc7b24cbef/0.8/Dockerfile)
+-	[`0.10.39`, `0.10` (*0.10/Dockerfile*)](https://github.com/joyent/docker-node/blob/95a86848466834d2170740c12c337f1145bb6d39/0.10/Dockerfile)
+-	[`0.10.39-onbuild`, `0.10-onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/95a86848466834d2170740c12c337f1145bb6d39/0.10/onbuild/Dockerfile)
+-	[`0.10.39-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/95a86848466834d2170740c12c337f1145bb6d39/0.10/slim/Dockerfile)
+-	[`0.10.39-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/95a86848466834d2170740c12c337f1145bb6d39/0.10/wheezy/Dockerfile)
+-	[`0.12.5`, `0.12`, `0`, `latest` (*0.12/Dockerfile*)](https://github.com/joyent/docker-node/blob/975349606a637b266d7ecf7eae3b009f59716e74/0.12/Dockerfile)
+-	[`0.12.5-onbuild`, `0.12-onbuild`, `0-onbuild`, `onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/975349606a637b266d7ecf7eae3b009f59716e74/0.12/onbuild/Dockerfile)
+-	[`0.12.5-slim`, `0.12-slim`, `0-slim`, `slim` (*0.12/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/975349606a637b266d7ecf7eae3b009f59716e74/0.12/slim/Dockerfile)
+-	[`0.12.5-wheezy`, `0.12-wheezy`, `0-wheezy`, `wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/975349606a637b266d7ecf7eae3b009f59716e74/0.12/wheezy/Dockerfile)
+-	[`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/joyent/docker-node/blob/95a86848466834d2170740c12c337f1145bb6d39/0.8/Dockerfile)
 -	[`0.8.28-onbuild`, `0.8-onbuild` (*0.8/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/0c2ff5172aabc30ce38303d9bb340ae3e94f3a91/0.8/onbuild/Dockerfile)
--	[`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/cb1434d434ca52b31e81452d887e76fc7b24cbef/0.8/slim/Dockerfile)
--	[`0.8.28-wheezy`, `0.8-wheezy` (*0.8/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/cb1434d434ca52b31e81452d887e76fc7b24cbef/0.8/wheezy/Dockerfile)
+-	[`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/95a86848466834d2170740c12c337f1145bb6d39/0.8/slim/Dockerfile)
+-	[`0.8.28-wheezy`, `0.8-wheezy` (*0.8/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/95a86848466834d2170740c12c337f1145bb6d39/0.8/wheezy/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
