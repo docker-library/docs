@@ -22,6 +22,7 @@ replace_field() {
 
 declare -A otherRepos=(
 	[aerospike]='https://github.com/aerospike/aerospike-server.docker'
+        [aerospike-tools]='https://github.com/aerospike/aerospike-tools.docker'
 	[alpine]='https://github.com/gliderlabs/docker-alpine'
 	[busybox]='https://github.com/jpetazzo/docker-busybox'
 	[centos]='https://github.com/CentOS/sig-cloud-instance-images'
