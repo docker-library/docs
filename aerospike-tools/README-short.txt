@@ -1,2 +1,2 @@
-Aerospike tools – Tools for the reliable, high performance, distributed database optimized for 
+Aerospie Tools for the reliable, high performance, distributed DB optimized for 
 flash and RAM.
