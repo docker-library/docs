@@ -1,22 +1,13 @@
-## Aerospike Tools Dockerfile
+# Aerospike Tools Dockerfile
 
-This repository contains the Dockerfile for [Aerospike Tools](http://www.aerospike.com/docs/tools/). 
+Aerospike is an open source distributed database. Aerospike is built on a "shared nothing" architecture designed to reliably store terabytes of data with automatic fail-over, replication and cross data-center synchronization.
 
-### Dependencies
+%%LOGO%%
 
-- [debian:7](https://registry.hub.docker.com/_/debian/)
+Documentation for Aerospike is available at [http://aerospike.com/docs](https://www.aerospike.com/docs).
 
-### Installation
+# Using this Image
 
-* Install [Docker](https://www.docker.io/).
-
-* Build an image from Dockerfile:
-
-```   
-docker build -t="aerospike/aerospike-tools" github.com/aerospike/aerospike-tools.docker
-```
-
-### Usage
 
 * The following will run `aerospike tools` with -h option to connect to a host.
 
@@ -64,26 +55,5 @@ docker run -ti --link aerospike:aerospike aerospike-tools asmonitor -e info
 
 
 Addtional info on using our tools can be found [here](http://www.aerospike.com/docs/tools/)
-
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 1.4.1.
-
-Support for older versions (down to 1.0) is provided on a best-effort basis.
-
-# User Feedback
-
-## Issues
-
-If you have any problems with or questions about this image, please contact us on the [Aerospike Forums](discuss.aerospike.com) or through a [GitHub issue](https://github.com/aerospike/aerospike-tools.docker/issues).
-
-
-## Contributing
-
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
-
-Before you start to code, we recommend discussing your plans on the [Aerospike Forums](discuss.aerospike.com) or through a [GitHub issue](https://github.com/aerospike/aerospike-tools.docker/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
-
 
 
