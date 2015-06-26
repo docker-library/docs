@@ -27,7 +27,7 @@ For more information about this image and its history, please see the [relevant 
 	
 	$ docker images hello-world
 	REPOSITORY   TAG     IMAGE ID      VIRTUAL SIZE
-	hello-world  build   52cfd8742dff  130.4 MB
+	hello-world  build   b448da95d884  130.4 MB
 	hello-world  latest  91c95931e552  910 B
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/hello-world/logo.png)
