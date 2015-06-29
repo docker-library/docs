@@ -38,10 +38,13 @@ If you do so, you can access to the portal on http://localhost:8080/bonita and l
 
 This docker image ensures to activate by default both static and dynamic authorization checks on REST API. To be coherent it also deactivates the HTTP API.
 
-	- REST API authorization
-	-   [Static authorization checking](http://documentation.bonitasoft.com/rest-api-authorization#static)
-	-   [Dynamic authorization checking](http://documentation.bonitasoft.com/rest-api-authorization#dynamic)
-	- [HTTP API](http://documentation.bonitasoft.com/rest-api-authorization#activate)
+-	REST API authorization
+
+	-	[Static authorization checking](http://documentation.bonitasoft.com/rest-api-authorization#static)
+
+	-	[Dynamic authorization checking](http://documentation.bonitasoft.com/rest-api-authorization#dynamic)
+
+-	[HTTP API](http://documentation.bonitasoft.com/rest-api-authorization#activate)
 
 But for specific needs you can override this behavior by setting HTTP_API to true and REST_API_DYN_AUTH_CHECKS to false :
 
