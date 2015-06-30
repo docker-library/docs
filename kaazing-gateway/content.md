@@ -2,7 +2,7 @@
 
 The Kaazing Gateway is a network gateway created to provide a single access point for real-time web based protocols that supports load balancing, clustering, and security management. It is designed to provide scalable and secure bidirectional event-based communication over the web; on every platform, browser, and device.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/kaazing-gateway/logo.png)
+%%LOGO%%
 
 # How to use this image
 
@@ -14,7 +14,7 @@ By default the gateway runs a WebSocket echo service similar to [websocket.org](
 
 You should then be able to connect to ws://somehostname:8000 from the [WebSocket echo test](https://www.websocket.org/echo.html).
 
-Note: this assumes that `somehostname` is resolvable from your browser, you may need to add and etc/hosts entry for `somehostname` on your `dockerhost ip`.
+Note: this assumes that `somehostname` is resolvable from your browser, you may need to add an etc/hosts entry for `somehostname` on your `dockerhost ip`.
 
 ## Custom Configuration
 
