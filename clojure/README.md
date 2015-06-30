@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `lein-2.5.1` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/1d04a60b0cccecbc3208dffa5fcf087ce8e6e65b/Dockerfile)
+-	[`latest`, `lein-2.5.1` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/6854a9966b9d6953e4a3a9547d670a0787b23ea8/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
