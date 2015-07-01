@@ -41,6 +41,7 @@ declare -A otherRepos=(
 	[jenkins]='https://github.com/cloudbees/jenkins-ci.org-docker'
 	[jetty]='https://github.com/appropriate/docker-jetty'
 	[jruby]='https://github.com/cpuguy83/docker-jruby'
+	[kaazing-gateway]='https://github.com/kaazing/gateway.docker'
 	[mageia]='https://github.com/juanluisbaptiste/docker-brew-mageia'
 	[maven]='https://github.com/carlossg/docker-maven'
 	[mono]='https://github.com/mono/docker'
