@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.0.1.21` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/4eaf83bfb9bcecb136cbcd3f6ad6f6d0dcf2f20d/Dockerfile)
+-	[`latest`, `5.0.1.21` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/9b1841177bb138799e4c65f21beb915e4653de3a/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -8,7 +8,7 @@ For more information about this image and its history, please see the [relevant 
 
 The Kaazing Gateway is a network gateway created to provide a single access point for real-time web based protocols that supports load balancing, clustering, and security management. It is designed to provide scalable and secure bidirectional event-based communication over the web; on every platform, browser, and device.
 
-%%LOGO%%
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/kaazing-gateway/logo.png)
 
 # How to use this image
 
@@ -49,7 +49,7 @@ View [license information](https://github.com/kaazing/gateway/blob/master/LICENS
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.6.2.
+This image is officially supported on Docker version 1.7.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
