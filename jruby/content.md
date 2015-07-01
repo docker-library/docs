@@ -19,8 +19,7 @@ JRuby leverages the robustness and speed of the JVM while providing the same Rub
 
 Put this file in the root of your app, next to the `Gemfile`.
 
-This image includes multiple `ONBUILD` triggers which should be all you need to bootstrap most applications. The build will `COPY . /usr/src/app` and `RUN
-bundle install`.
+This image includes multiple `ONBUILD` triggers which should be all you need to bootstrap most applications. The build will `COPY . /usr/src/app` and `RUN bundle install`.
 
 You can then build and run the Ruby image:
 
@@ -29,8 +28,7 @@ You can then build and run the Ruby image:
 
 ### Generate a `Gemfile.lock`
 
-The `onbuild` tag expects a `Gemfile.lock` in your app directory. This `docker
-run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
+The `onbuild` tag expects a `Gemfile.lock` in your app directory. This `docker run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
 
 	docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app jruby:1.7 bundle install --system
 
