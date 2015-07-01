@@ -40,7 +40,7 @@ You can then build and run the Ruby image:
 
 ### Generate a `Gemfile.lock`
 
-The `onbuid` tag expects a `Gemfile.lock` in your app directory. This `docker
+The `onbuild` tag expects a `Gemfile.lock` in your app directory. This `docker
 run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
 
 	docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app jruby:1.7 bundle install --system
