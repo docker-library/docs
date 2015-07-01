@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2015.03`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/4250489944483969ff68d94476bfd81e0a2170ce/Dockerfile)
+-	[`2015.03` (*Dockerfile*)](https://github.com/perl6/docker/blob/4250489944483969ff68d94476bfd81e0a2170ce/Dockerfile)
+-	[`2015.05`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/1590c9763cfeff123e6ab7991a49d4f3ba06661a/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
