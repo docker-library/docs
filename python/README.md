@@ -1,21 +1,21 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.7.10`, `2.7`, `2` (*2.7/Dockerfile*)](https://github.com/docker-library/python/blob/89890623a062f79d5dd6d8f5e1ecc6d823bff588/2.7/Dockerfile)
+-	[`2.7.10`, `2.7`, `2` (*2.7/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/2.7/Dockerfile)
 -	[`2.7.10-onbuild`, `2.7-onbuild`, `2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/7663560df7547e69d13b1b548675502f4e0917d1/2.7/onbuild/Dockerfile)
--	[`2.7.10-slim`, `2.7-slim`, `2-slim` (*2.7/slim/Dockerfile*)](https://github.com/docker-library/python/blob/89890623a062f79d5dd6d8f5e1ecc6d823bff588/2.7/slim/Dockerfile)
--	[`2.7.10-wheezy`, `2.7-wheezy`, `2-wheezy` (*2.7/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/7663560df7547e69d13b1b548675502f4e0917d1/2.7/wheezy/Dockerfile)
--	[`3.2.6`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/python/blob/89890623a062f79d5dd6d8f5e1ecc6d823bff588/3.2/Dockerfile)
+-	[`2.7.10-slim`, `2.7-slim`, `2-slim` (*2.7/slim/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/2.7/slim/Dockerfile)
+-	[`2.7.10-wheezy`, `2.7-wheezy`, `2-wheezy` (*2.7/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/2.7/wheezy/Dockerfile)
+-	[`3.2.6`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/3.2/Dockerfile)
 -	[`3.2.6-onbuild`, `3.2-onbuild` (*3.2/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/7663560df7547e69d13b1b548675502f4e0917d1/3.2/onbuild/Dockerfile)
--	[`3.2.6-slim`, `3.2-slim` (*3.2/slim/Dockerfile*)](https://github.com/docker-library/python/blob/89890623a062f79d5dd6d8f5e1ecc6d823bff588/3.2/slim/Dockerfile)
--	[`3.2.6-wheezy`, `3.2-wheezy` (*3.2/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/7663560df7547e69d13b1b548675502f4e0917d1/3.2/wheezy/Dockerfile)
--	[`3.3.6`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/python/blob/89890623a062f79d5dd6d8f5e1ecc6d823bff588/3.3/Dockerfile)
+-	[`3.2.6-slim`, `3.2-slim` (*3.2/slim/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/3.2/slim/Dockerfile)
+-	[`3.2.6-wheezy`, `3.2-wheezy` (*3.2/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/3.2/wheezy/Dockerfile)
+-	[`3.3.6`, `3.3` (*3.3/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/3.3/Dockerfile)
 -	[`3.3.6-onbuild`, `3.3-onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/7663560df7547e69d13b1b548675502f4e0917d1/3.3/onbuild/Dockerfile)
--	[`3.3.6-slim`, `3.3-slim` (*3.3/slim/Dockerfile*)](https://github.com/docker-library/python/blob/89890623a062f79d5dd6d8f5e1ecc6d823bff588/3.3/slim/Dockerfile)
--	[`3.3.6-wheezy`, `3.3-wheezy` (*3.3/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/7663560df7547e69d13b1b548675502f4e0917d1/3.3/wheezy/Dockerfile)
--	[`3.4.3`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/python/blob/89890623a062f79d5dd6d8f5e1ecc6d823bff588/3.4/Dockerfile)
+-	[`3.3.6-slim`, `3.3-slim` (*3.3/slim/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/3.3/slim/Dockerfile)
+-	[`3.3.6-wheezy`, `3.3-wheezy` (*3.3/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/3.3/wheezy/Dockerfile)
+-	[`3.4.3`, `3.4`, `3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/3.4/Dockerfile)
 -	[`3.4.3-onbuild`, `3.4-onbuild`, `3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/python/blob/7663560df7547e69d13b1b548675502f4e0917d1/3.4/onbuild/Dockerfile)
--	[`3.4.3-slim`, `3.4-slim`, `3-slim`, `slim` (*3.4/slim/Dockerfile*)](https://github.com/docker-library/python/blob/89890623a062f79d5dd6d8f5e1ecc6d823bff588/3.4/slim/Dockerfile)
--	[`3.4.3-wheezy`, `3.4-wheezy`, `3-wheezy`, `wheezy` (*3.4/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/7663560df7547e69d13b1b548675502f4e0917d1/3.4/wheezy/Dockerfile)
+-	[`3.4.3-slim`, `3.4-slim`, `3-slim`, `slim` (*3.4/slim/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/3.4/slim/Dockerfile)
+-	[`3.4.3-wheezy`, `3.4-wheezy`, `3-wheezy`, `wheezy` (*3.4/wheezy/Dockerfile*)](https://github.com/docker-library/python/blob/5fc2d82f706e338286f31908ef416afe7b5fba7b/3.4/wheezy/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

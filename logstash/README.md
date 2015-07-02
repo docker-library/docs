@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.5.1`, `1.5`, `latest` (*Dockerfile*)](https://github.com/docker-library/logstash/blob/0e8b123ab8a392d4f6aac8cbb02d2071af8f4271/Dockerfile)
+-	[`1.5.2`, `1.5`, `latest` (*Dockerfile*)](https://github.com/docker-library/logstash/blob/717e7ebdcd04755ecd710ff91ec88fc5217db6d6/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
