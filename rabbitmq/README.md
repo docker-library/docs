@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.3`, `3.5`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/97e1f49042fd2cf6153ddf7c17112f391558fd35/Dockerfile)
--	[`3.5.3-management`, `3.5-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/97e1f49042fd2cf6153ddf7c17112f391558fd35/management/Dockerfile)
+-	[`3.5.3`, `3.5`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/aae4d2b9773419a7421e413337068b32feb4995a/Dockerfile)
+-	[`3.5.3-management`, `3.5-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/aae4d2b9773419a7421e413337068b32feb4995a/management/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -17,32 +17,54 @@ RabbitMQ is open source message broker software (sometimes called message-orient
 
 ## Running the daemon
 
-One of the important things to note about RabbitMQ is that it stores data based on what it calls the "Node Name", which defaults to the hostname. What this means for usage in Docker is that we should either specify `-h`/`--hostname` or `-e RABBITMQ_NODENAME=...` explicitly for each daemon so that we don't get a random hostname and can keep track of our data:
+One of the important things to note about RabbitMQ is that it stores data based on what it calls the "Node Name", which defaults to the hostname. What this means for usage in Docker is that we should specify `-h`/`--hostname` explicitly for each daemon so that we don't get a random hostname and can keep track of our data:
 
-	docker run -d -e RABBITMQ_NODENAME=my-rabbit --name some-rabbit rabbitmq:3
+	docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3
 
 If you give that a minute, then do `docker logs some-rabbit`, you'll see in the output a block similar to:
 
-	=INFO REPORT==== 31-Dec-2014::23:21:09 ===
-	node           : my-rabbit@988c28b0eb2e
+	=INFO REPORT==== 6-Jul-2015::20:47:02 ===
+	node           : rabbit@my-rabbit
 	home dir       : /var/lib/rabbitmq
-	config file(s) : /etc/rabbitmq/rabbitmq.config (not found)
-	cookie hash    : IFQiLgiJ4goGJrdsLJvN7A==
-	log            : undefined
-	sasl log       : undefined
-	database dir   : /var/lib/rabbitmq/mnesia/my-rabbit
+	config file(s) : /etc/rabbitmq/rabbitmq.config
+	cookie hash    : UoNOcDhfxW9uoZ92wh6BjA==
+	log            : tty
+	sasl log       : tty
+	database dir   : /var/lib/rabbitmq/mnesia/rabbit@my-rabbit
 
-Note the `database dir` there, especially that it has my `RABBITMQ_NODENAME` appended to the end for the file storage. This image makes all of `/var/lib/rabbitmq` a volume by default.
+Note the `database dir` there, especially that it has my "Node Name" appended to the end for the file storage. This image makes all of `/var/lib/rabbitmq` a volume by default.
+
+### Erlang Cookie
+
+See the [RabbitMQ "Clustering Guide"](https://www.rabbitmq.com/clustering.html#erlang-cookie) for more information about cookies and why they're necessary.
+
+For setting a consistent cookie (especially useful for clustering but also for remote/cross-container administration via `rabbitmqctl`), use `RABBITMQ_ERLANG_COOKIE`:
+
+	docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' rabbitmq:3
+
+This can then be used from a separate instance to connect:
+
+	$ docker run -it --rm --link some-rabbit:my-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' rabbitmq:3 bash
+	root@f2a2d3d27c75:/# rabbitmqctl -n rabbit@my-rabbit list_users
+	Listing users ...
+	guest   [administrator]
+
+Alternatively, one can also use `RABBITMQ_NODENAME` to make repeated `rabbitmqctl` invocations simpler:
+
+	$ docker run -it --rm --link some-rabbit:my-rabbit -e RABBITMQ_ERLANG_COOKIE='secret cookie here' -e RABBITMQ_NODENAME=rabbit@my-rabbit rabbitmq:3 bash
+	root@f2a2d3d27c75:/# rabbitmqctl list_users
+	Listing users ...
+	guest   [administrator]
 
 ### Management Plugin
 
 There is a second set of tags provided with the [management plugin](https://www.rabbitmq.com/management.html) installed and enabled by default, which is available on the standard management port of 15672, with the default username and password of `guest` / `guest`:
 
-	docker run -d -e RABBITMQ_NODENAME=my-rabbit --name some-rabbit rabbitmq:3-management
+	docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3-management
 
 You can access it by visiting `http://container-ip:15672` in a browser or, if you need access outside the host, on port 8080:
 
-	docker run -d -e RABBITMQ_NODENAME=my-rabbit --name some-rabbit -p 8080:15672 rabbitmq:3-management
+	docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 rabbitmq:3-management
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
