@@ -10,32 +10,32 @@ RabbitMQ is open source message broker software (sometimes called message-orient
 
 ## Running the daemon
 
-One of the important things to note about RabbitMQ is that it stores data based on what it calls the "Node Name", which defaults to the hostname. What this means for usage in Docker is that we should either specify `-h`/`--hostname` or `-e RABBITMQ_NODENAME=...` explicitly for each daemon so that we don't get a random hostname and can keep track of our data:
+One of the important things to note about RabbitMQ is that it stores data based on what it calls the "Node Name", which defaults to the hostname. What this means for usage in Docker is that we should specify `-h`/`--hostname` explicitly for each daemon so that we don't get a random hostname and can keep track of our data:
 
-	docker run -d -e RABBITMQ_NODENAME=my-rabbit --name some-rabbit rabbitmq:3
+	docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3
 
 If you give that a minute, then do `docker logs some-rabbit`, you'll see in the output a block similar to:
 
-	=INFO REPORT==== 31-Dec-2014::23:21:09 ===
-	node           : my-rabbit@988c28b0eb2e
+	=INFO REPORT==== 6-Jul-2015::20:47:02 ===
+	node           : rabbit@my-rabbit
 	home dir       : /var/lib/rabbitmq
-	config file(s) : /etc/rabbitmq/rabbitmq.config (not found)
-	cookie hash    : IFQiLgiJ4goGJrdsLJvN7A==
-	log            : undefined
-	sasl log       : undefined
-	database dir   : /var/lib/rabbitmq/mnesia/my-rabbit
+	config file(s) : /etc/rabbitmq/rabbitmq.config
+	cookie hash    : UoNOcDhfxW9uoZ92wh6BjA==
+	log            : tty
+	sasl log       : tty
+	database dir   : /var/lib/rabbitmq/mnesia/rabbit@my-rabbit
 
-Note the `database dir` there, especially that it has my `RABBITMQ_NODENAME` appended to the end for the file storage. This image makes all of `/var/lib/rabbitmq` a volume by default.
+Note the `database dir` there, especially that it has my "Node Name" appended to the end for the file storage. This image makes all of `/var/lib/rabbitmq` a volume by default.
 
 ### Management Plugin
 
 There is a second set of tags provided with the [management plugin](https://www.rabbitmq.com/management.html) installed and enabled by default, which is available on the standard management port of 15672, with the default username and password of `guest` / `guest`:
 
-	docker run -d -e RABBITMQ_NODENAME=my-rabbit --name some-rabbit rabbitmq:3-management
+	docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3-management
 
 You can access it by visiting `http://container-ip:15672` in a browser or, if you need access outside the host, on port 8080:
 
-	docker run -d -e RABBITMQ_NODENAME=my-rabbit --name some-rabbit -p 8080:15672 rabbitmq:3-management
+	docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 rabbitmq:3-management
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
