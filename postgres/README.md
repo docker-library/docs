@@ -43,7 +43,7 @@ The PostgreSQL image uses several environment variables which are easy to miss. 
 
 ### `POSTGRES_PASSWORD`
 
-This environment variable is recommend for you to use the PostgreSQL image. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the `POSTGRES_USER` environment variable. In the above example, it is being set to "mysecretpassword".
+This environment variable is recommended for you to use the PostgreSQL image. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the `POSTGRES_USER` environment variable. In the above example, it is being set to "mysecretpassword".
 
 ### `POSTGRES_USER`
 
