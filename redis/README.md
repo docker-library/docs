@@ -48,7 +48,7 @@ You can create your own Dockerfile that adds a redis.conf from the context into 
 
 Alternatively, you can specify something along the same lines with `docker run` options.
 
-	docker run -v /myredis/conf/redis.conf:/usr/local/etc/redis/redis.conf --name myredis redis /usr/local/etc/redis/redis.conf
+	docker run -d /myredis/conf/redis.conf:/usr/local/etc/redis/redis.conf --name myredis redis redis-server /usr/local/etc/redis/redis.conf
 
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
 
