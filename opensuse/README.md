@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`13.2`, `harlequin`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/25fa2adb969481d23f71e23ab7ff0148ae4df0ef/docker/Dockerfile)
--	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/b3a02e025a99ecf124be4067e4ac94b2d5cf0ab3/docker/Dockerfile)
+-	[`13.2`, `harlequin`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/f3ec3b0d747c125729ab239d2c561f270adede06/docker/Dockerfile)
+-	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/04f0622f4ab30f81e4bee907302b023031aeab9f/docker/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/opensuse`)](https://github.com/docker-library/official-images/blob/master/library/opensuse) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

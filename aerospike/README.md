@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.12`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/b92075d0b0280b38ac7e2ea11dfe49c3903b83aa/Dockerfile)
+-	[`3.5.14`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/6595a46a6fe2d190191985b62ffccac53300dd53/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/aerospike`)](https://github.com/docker-library/official-images/blob/master/library/aerospike) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
