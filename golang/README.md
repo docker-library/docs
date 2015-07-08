@@ -8,6 +8,8 @@
 -	[`1.4.2-onbuild`, `1.4-onbuild`, `1-onbuild`, `onbuild` (*1.4/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/396f40c6188614c7acd6d8299a0ea71030a056a6/1.4/onbuild/Dockerfile)
 -	[`1.4.2-cross`, `1.4-cross`, `1-cross`, `cross` (*1.4/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/396f40c6188614c7acd6d8299a0ea71030a056a6/1.4/cross/Dockerfile)
 -	[`1.4.2-wheezy`, `1.4-wheezy`, `1-wheezy`, `wheezy` (*1.4/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/1a422afd7db928a821e97906ed27ed606e2f072a/1.4/wheezy/Dockerfile)
+-	[`1.5beta1`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/6ea1f29b1fe7e6b0b8eb89493ed5e06bac454654/1.5/Dockerfile)
+-	[`1.5beta1-onbuild`, `1.5-onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/6ea1f29b1fe7e6b0b8eb89493ed5e06bac454654/1.5/onbuild/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
