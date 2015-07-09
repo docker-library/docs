@@ -29,6 +29,10 @@ This image includes `EXPOSE 5601` ([default `port`](https://www.elastic.co/guide
 
 	docker run --name some-kibana --link some-elasticsearch:elasticsearch -p 5601:5601 -d kibana
 
+You can also provide the address of elasticsearch via `ELASTICSEARCH_URL` environnement variable:
+
+	docker run --name some-kibana -e ELASTICSEARCH_URL=http://some-elasticsearch:9200 -p 5601:5601 -d kibana
+
 Then, access it via `http://localhost:5601` or `http://host-ip:5601` in a browser.
 
 # License
