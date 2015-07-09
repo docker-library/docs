@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20150612`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/67accc07b2f77dbf00dc4e2d5b90c00abc225ec6/precise/Dockerfile)
--	[`14.04.2`, `14.04`, `trusty-20150612`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/67accc07b2f77dbf00dc4e2d5b90c00abc225ec6/trusty/Dockerfile)
--	[`14.10`, `utopic-20150612`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/67accc07b2f77dbf00dc4e2d5b90c00abc225ec6/utopic/Dockerfile)
--	[`15.04`, `vivid-20150611`, `vivid` (*vivid/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/67accc07b2f77dbf00dc4e2d5b90c00abc225ec6/vivid/Dockerfile)
--	[`15.10`, `wily-20150611`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/67accc07b2f77dbf00dc4e2d5b90c00abc225ec6/wily/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20150626`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/4f7764b8eb70271b6a736341e090699fe058a198/precise/Dockerfile)
+-	[`14.04.2`, `14.04`, `trusty-20150630`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/4f7764b8eb70271b6a736341e090699fe058a198/trusty/Dockerfile)
+-	[`14.10`, `utopic-20150625`, `utopic` (*utopic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/4f7764b8eb70271b6a736341e090699fe058a198/utopic/Dockerfile)
+-	[`15.04`, `vivid-20150611`, `vivid` (*vivid/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/4f7764b8eb70271b6a736341e090699fe058a198/vivid/Dockerfile)
+-	[`15.10`, `wily-20150708`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/4f7764b8eb70271b6a736341e090699fe058a198/wily/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
