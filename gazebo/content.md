@@ -37,6 +37,18 @@ The `gzserver` tags are built for small a footprint and simple configuration, as
 
 Gazebo uses the `~/.gazebo/` directory for storing logs, models and scene info, and is simply created if such does not already exist. These files you may wish to remain persistent through life cycles of containers, so that log records can be saved and archived, and large custom models imported and reused. To do this, the absolute directory of the `.gazebo` folder can be mounted to an external volume on the host, by default the container entry point uses the `root` user, so `/root/.gazebo/` would be the default path.
 
+For example, if one whishes to use there own `.gazebo` folder that already resisdes in there local home dirtory, with a username of `ubuntu`, we can simple launch the conainer with a few addintal volume arguments:
+
+	docker run -v "/home/ubuntu/.gazebo/:/root/.gazebo/" gazebo
+
+One thing to becareful about is that gzserver logs to a file named `gzserver-<port>`, where `<port>` is the port number that server is listening too. If you run and mount multiple containers using the same defult port and same host side directory, then they may colide when attemtimg to write to the same file. If you want to run multiple gzservers on the same docker host, then a bit more clever mounting, with shared volume of the model folder, but diffrent volumes for log folders, could be done instead.
+
+### Devices
+
+As of Gazebo verssion 5.0, physics simulation under a headless instances of gzserver works fine. Howerver some application may requare image rendering camera views and ray traces for other sensors types. For Gazebo, this still requares a running X server for rendering and capturing purposes. In addion, graphical hardware acceleration is also needed for any resonable realtime framerates. To this extent, mounting additinal graphic devices into container and linking a X server connection is quite feasable. But in the intrest of maintianing a genale and minimalistic image, as well as avoiding any unnesary X server vonerabilaties or driver specifics, we do not include such tags here the offical repo. You can however use this repo to build and cosomize your own images to fit your custome hardware configuration.
+
+Please view OSRF's Docker Hub orginisation profile for the onbuild Gazebo repo at [osrf/gazebo](https://registry.hub.docker.com/u/osrf/gazebo/) that includes helpful examples and demos using GPUs to enable server side rendering.
+
 # More Resources
 
 [Gazebosim.org](http://www.gazebosim.org/): Main Gazebo website  
