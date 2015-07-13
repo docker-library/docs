@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.2.0` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/849e42992a3ce5bf6f004bcbfc76605aff3f3c08/r-base/Dockerfile)
+-	[`3.2.1`, `latest` (*r-base/Dockerfile*)](https://github.com/rocker-org/rocker/blob/9f26417d0987d0b8517491270da0541aa9b754cc/r-base/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/r-base`)](https://github.com/docker-library/official-images/blob/master/library/r-base) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
