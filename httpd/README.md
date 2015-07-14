@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.2.29`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/63cd0ad57a12c76ff70d0f501f6c2f1580fa40f5/2.2/Dockerfile)
--	[`2.4.12`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/63cd0ad57a12c76ff70d0f501f6c2f1580fa40f5/2.4/Dockerfile)
+-	[`2.4.16`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/502ecf54a9db85f556028036973a9bce72eae8e8/2.4/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/httpd`)](https://github.com/docker-library/official-images/blob/master/library/httpd) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
