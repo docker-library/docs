@@ -17,13 +17,13 @@ Robot simulation is an essential tool in every roboticists’ toolbox. A well-de
 You can then build and run the Docker image:
 
 	docker build -t my-gazebo-app .
-	docker run -it --rm --name my-running-app my-gazebo-app
+	docker run -it -v="/tmp/.gazebo/:/root/.gazebo/" --name my-running-app my-gazebo-app
 
-## Specific use cases
+## Deployment use cases
 
 This dockerized image of Gazebo is intended to provide a simplified and consistent platform to build and deploy cloud based robotic simulations. Built from the [official Ubuntu image](https://registry.hub.docker.com/_/ubuntu/) and installed from Gazebo's official Debian packages, included are recent supported releases for quick access and download. This provides roboticist in research and industry an easy way to developed continuous integration & testing on training for autonomous actions and task planning, control dynamics and regions of stability, kinematic modeling and prototype characterization, localization and mapping algorithms, swarm behavior and networking, as well as general system integration and validation.
 
-Conducting such complex simulations with high validity remains computationally demanding, and often times outside the capacity of the modest local workstation. With the added complexity of the algorithm being benchmarked, we soon can exceed the capacity of even the most formidable servers. That is why a more distributed approach remains attractive for those who begin to encounter limitations of a centralized computing host. However, the added complication of building and maintaining a distributed testbed over a set of clusters has for while required more time and effort than many smaller labs and businesses would have deemed appropriate to implement.
+Conducting such complex simulations with high validity remains computationally demanding, and often times outside the capacity of a modest local workstation. With the added complexity of the algorithm being benchmarked, we soon can exceed the capacity of even the most formidable servers. This is why a more distributed approach remains attractive for those who begin to encounter limitations of a centralized computing host. However, the added complication of building and maintaining a distributed testbed over a set of clusters has for while required more time and effort than many smaller labs and businesses would have deemed appropriate to implement.
 
 Now with the advancements and standardization of software containers, roboticist are primed to acquire a host of improved developer tooling for building and shipping software. To help alleviate the growing pains and technical challenges of adopting new practices, we have focused on providing an official resource for using Gazebo with these new technologies.
 
@@ -31,7 +31,7 @@ Now with the advancements and standardization of software containers, roboticist
 
 ### Ports
 
-The `gzserver` tags are built for small a footprint and simple configuration, as they only include the required Gazebo dependencies. Using the command `docker run gazebo` will launch the latests release of `gzserver` inside a new container using via the `gzserver_entrypoint.sh` script. In addition, the standard messaging port `11345` is also exposed for client connections and messages API.
+The `gzserver` tags are built for small footprints and simple configuration, thus only include the required Gazebo dependencies. Using the command `docker run gazebo` will launch the latests release of `gzserver` inside a new container using via the `gzserver_entrypoint.sh` script. In addition, the standard messaging port `11345` is also exposed for client connections and messages API.
 
 ### Volumes
 
@@ -45,9 +45,59 @@ One thing to be careful about is that gzserver logs to a file named `gzserver-<p
 
 ### Devices
 
-As of Gazebo version 5.0, physics simulation under a headless instances of gzserver works fine. However some application may require image rendering camera views and ray traces for other sensors types. For Gazebo, this still requires a running X server for rendering and capturing purposes. In addition, graphical hardware acceleration is also needed for any reasonable realtime framerates. To this extent, mounting additional graphic devices into container and linking a X server connection is quite feasible. But in the interest of maintaining a gentle and minimalistic image, as well as avoiding any unnecessary X server vulnerabilities or driver specifics, we do not include such tags here the official repo. You can however use this repo to build and customize your own images to fit your hardware configuration.
+As of Gazebo version 5.0, physics simulation under a headless instances of gzserver works fine. However some application may require image rendering camera views and ray traces for other sensor modalities. For Gazebo, this requires a running X server for rendering and capturing scenes. In addition, graphical hardware acceleration is also needed for reasonable realtime framerates. To this extent, mounting additional graphic devices into container and linking a running X server is quite feasible. But in the interest of maintaining a general and minimalistic image, as well as avoiding any unnecessary X server vulnerabilities or driver specifics, we do not include such tags here the official repo. You can however use this repo to build and customize your own images to fit your hardware configuration.
 
 Please view OSRF's Docker Hub orginisation profile for the onbuild Gazebo repo at [osrf/gazebo](https://registry.hub.docker.com/u/osrf/gazebo/) that includes helpful examples and demos using GPUs to enable server side rendering.
+
+## Deployment example
+
+In this short example, we'll spin up a new container running gazebo server, connect to it using a local gazebo client, then spawn a double inverted pendulum and record the simulation for later playback.
+
+> First launch a gazebo server with a mounted volume for logging and name the container gazebo:
+
+	docker run -d -v="/tmp/.gazebo/:/root/.gazebo/" --name=gazebo gazebo
+
+> Now open a new bash session in the container using the same entrypoint to configure the environment. Then download the double_pendulum model and load it into the simulation.
+
+	docker exec -it gazebo bash
+	curl -o double_pendulum.sdf http://models.gazebosim.org/double_pendulum_with_base/model-1_4.sdf
+	gz model --model-name double_pendulum --spawn-file double_pendulum.sdf
+
+> To start recording the running simulation, simply use [`gz log`](http://www.gazebosim.org/tutorials?tut=log_filtering&cat=tools_utilities) to do so.
+
+	gz log --record 1
+
+> After a few seconds, go ahead and stop recording by disabling the same flag.
+
+	gz log --record 0
+
+> To introspect our logged recording, we can navigate to log directory and use `gz log` to open and examine the motion and joint state of the pendulum. This will allow you to step through the poses of the pendulum links.
+
+	cd ~/.gazebo/log/*/gzserver/
+	gz log --step --hz 10 --filter *.pose/*.pose --file state.log
+
+> If you have an equivalent release of Gazebo installed locally, you can connect to the gzserver inside the container using gzclient GUI by setting the address of the master URI to the containers public address.
+
+	export GAZEBO_MASTER_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' gazebo)
+	export GAZEBO_MASTER_URI=$GAZEBO_MASTER_IP:11345
+	gzclient --verbose
+
+> In the rendered OpenGL view with gzclient you should see the moving double pendulum created prior still oscillating. From here you can control or monitor state of the simulation using the graphical interface, add more pendulums, reset the world, make more logs, etc. To quit the simulation, close the gzclient window and stop the container.
+
+	docker stop gazebo
+	docker rm gazebo
+
+> Even though our old gazebo container has been removed, we can still see that our record log has been preserved in the host volume directory.
+
+	cd /tmp/.gazebo/log/
+	ls
+
+> Again, if you have an equivalent release of Gazebo installed on your locally, you can play back the simulation with gazebo by using the recorded log file.
+
+	export GAZEBO_MASTER_IP=127.0.0.1
+	export GAZEBO_MASTER_URI=$GAZEBO_MASTER_IP:11345
+	cd /tmp/.gazebo/log/*/gzserver/
+	gazebo --verbose --play state.log
 
 # More Resources
 
