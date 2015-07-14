@@ -36,7 +36,7 @@ View the [Oracle Linux End-User License Agreement](https://oss.oracle.com/ol6/EU
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.7.0.
+This image is officially supported on Docker version 1.7.1.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
