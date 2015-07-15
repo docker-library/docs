@@ -24,7 +24,7 @@ We need to [increase the packet size](http://documentation.bonitasoft.com/databa
 
 	mkdir -p ~/Documents/Docker/Volumes/custom_mysql
 	echo "[mysqld]" > ~/Documents/Docker/Volumes/custom_mysql/bonita.cnf
-	echo "max_allowed_packet=16M" > ~/Documents/Docker/Volumes/custom_mysql/bonita.cnf
+	echo "max_allowed_packet=16M" >> ~/Documents/Docker/Volumes/custom_mysql/bonita.cnf
 
 Then we can mount that directory location as /etc/mysql/conf.d inside the MySQL container :
 
