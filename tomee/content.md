@@ -20,6 +20,7 @@ Tomitribe provides commercial support, professional services and training for Ap
 All of Tomitribe developers are committers of TomEE and are influencers of the project's direction and development. We want to extend this influence to the people and companies that matter, users of TomEE. How? The Tomitribe Community Partnership Program.
 
 Below are some press releases that might be helpful:
+
 -	Tomitribe Announces Enterprise Service Support for Apache TomEE http://www.tomitribe.com/company/press/tomitribe_enterprise_service_support_for_apache_tomee_javaone_2013/
 -	Tomitribe Introduces Community Partnership Program Conference http://www.tomitribe.com/company/press/tomitribe-introduces-community-partnership-program-and-presents-java-ee-sessions-at-javaone-2014-conference/
 
