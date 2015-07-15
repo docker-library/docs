@@ -38,7 +38,19 @@ Now we can start our application container like this in order to link it to the 
 
 ### PostgreSQL
 
-	docker run --name mydbpostgres -e POSTGRES_PASSWORD=mysecretpassword -d bonitasoft/postgres
+We need to [set max_prepared_transactions to 100](http://documentation.bonitasoft.com/database-configuration-business-data-1) :
+
+	mkdir -p ~/Documents/Docker/Volumes/custom_postgres
+	echo '#!/bin/bash' > ~/Documents/Docker/Volumes/custom_postgres/bonita.sh
+	echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$/max_prepared_transactions = 100/" "$PGDATA"/postgresql.conf' >> ~/Documents/Docker/Volumes/custom_postgres/bonita.sh
+	chmod +x ~/Documents/Docker/Volumes/custom_postgres/bonita.sh
+
+Then we can mount that directory location as /docker-entrypoint-initdb.d inside the PostgreSQL container :
+
+	docker run --name mydbpostgres -v ~/Documents/Docker/Volumes/custom_postgres/:/docker-entrypoint-initdb.d -e POSTGRES_PASSWORD=mysecretpassword -d postgres:9.3
+
+See the [official PostgreSQL documentation](https://registry.hub.docker.com/_/postgres/) for more details.
+
 	docker run --name bonita_postgres --link mydbpostgres:postgres -d -p 8080:8080 bonita
 
 ## Modify default credentials
