@@ -20,7 +20,20 @@ You can access to the portal on http://localhost:8080/bonita and login using the
 
 ### MySQL
 
-	docker run --name mydbmysql -e MYSQL_ROOT_PASSWORD=mysecretpassword -d bonitasoft/mysql
+We need to [increase the packet size](http://documentation.bonitasoft.com/database-configuration-2#mysqlspec) set by default to 1M :
+
+	mkdir -p ~/Documents/Docker/Volumes/custom_mysql
+	echo "[mysqld]" > ~/Documents/Docker/Volumes/custom_mysql/bonita.cnf
+	echo "max_allowed_packet=16M" > ~/Documents/Docker/Volumes/custom_mysql/bonita.cnf
+
+Then we can mount that directory location as /etc/mysql/conf.d inside the MySQL container :
+
+	docker run --name mydbmysql -v ~/Documents/Docker/Volumes/custom_mysql/:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql:5.5
+
+See the [official MySQL documentation](https://registry.hub.docker.com/_/mysql/) for more details.
+
+Now we can start our application container like this in order to link it to the MySQL container :
+
 	docker run --name bonita_mysql --link mydbmysql:mysql -d -p 8080:8080 bonita
 
 ### PostgreSQL
