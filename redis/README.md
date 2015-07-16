@@ -1,8 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.17`, `2.6` (*2.6/Dockerfile*)](https://github.com/docker-library/redis/blob/5a480f7c9f05822c31204a7197d209ef9db1a32c/2.6/Dockerfile)
--	[`2.8.21`, `2.8`, `2` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/171071dacb7961cac8254627806f6c6faeeea278/2.8/Dockerfile)
--	[`3.0.2`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/171071dacb7961cac8254627806f6c6faeeea278/3.0/Dockerfile)
+-	[`2.6.17`, `2.6` (*2.6/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/2.6/Dockerfile)
+-	[`2.6.17-32bit`, `2.6-32bit` (*2.6/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/2.6/32bit/Dockerfile)
+-	[`2.8.21`, `2.8`, `2` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/2.8/Dockerfile)
+-	[`2.8.21-32bit`, `2.8-32bit`, `2-32bit` (*2.8/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/2.8/32bit/Dockerfile)
+-	[`3.0.2`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/3.0/Dockerfile)
+-	[`3.0.2-32bit`, `3.0-32bit`, `3-32bit`, `32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/3.0/32bit/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/redis`)](https://github.com/docker-library/official-images/blob/master/library/redis) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
