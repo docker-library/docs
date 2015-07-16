@@ -9,6 +9,7 @@ if [ -z "$repo" ]; then
 fi
 
 dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
+repoDir="$dir/../$repo"
 url='https://raw.githubusercontent.com/docker-library/official-images/master/library/'"$repo"
 
 IFS=$'\n'
@@ -17,11 +18,14 @@ unset IFS
 
 text=
 for tag in "${tags[@]}"; do
-	if [ -f "$dir/variant-${tag}.md" ]; then
-		text+=$'\n' # give a little space
-		# because parameter expansion eats the trailing newline
-		text+="$(<"$dir/variant-${tag}.md")"$'\n'
-	fi
+	for f in "$repoDir/variant-$tag.md" "$dir/variant-$tag.md"; do
+		if [ -f "$f" ]; then
+			text+=$'\n' # give a little space
+			# because parameter expansion eats the trailing newline
+			text+="$(<"$f")"$'\n'
+			break
+		fi
+	done
 done
 if [ "$text" ]; then
 	latest=($(curl -fsSL "$url" | grep "latest.*github.com" | sed -e 's!git://github.com/!!' -e 's/@/ /' -))
@@ -34,9 +38,10 @@ if [ "$text" ]; then
 	echo
 	echo
 	if [ "$baseImage" = "buildpack-deps" ]; then
-		cat "$dir/variant-buildpacks.md"
+		f='variant-buildpacks.md'
 	else
-		cat "$dir/variant.md"
+		f='variant.md'
 	fi
+	[ -f "$repoDir/$f" ] && cat "$repoDir/$f" || cat "$dir/$f"
 	echo "$text"
 fi
