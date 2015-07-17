@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.0`, `9.3`, `9`, `9.3.0-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/833fb99b9e49140dec67d2af3c6b51901c83bbce/9.3-jre8/Dockerfile)
+-	[`9.3.1`, `9.3`, `9`, `9.3.1-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c8cf3d52378ca0f3af76eb2219dece8eb7592724/9.3-jre8/Dockerfile)
 -	[`9.2.12`, `9.2`, `9.2.12-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/5a279411ea214c702a23cfa67085284ba5b1c90a/9.2-jre8/Dockerfile)
 -	[`9.2.12-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/5a279411ea214c702a23cfa67085284ba5b1c90a/9.2-jre7/Dockerfile)
 
