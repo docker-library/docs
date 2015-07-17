@@ -146,3 +146,21 @@ These variables are optional, used in conjunction to create users and databases 
 `DB_ADMIN_USER` if no value is provided, it's automatically set to `root` with MySQL or `postgres` with PostgreSQL.
 
 `DB_ADMIN_PASS` if no value is provided, it's automatically set using the value from the container linked : `MYSQL_ENV_MYSQL_ROOT_PASSWORD` or `POSTGRES_ENV_POSTGRES_PASSWORD`.
+
+# How to extend this image
+
+If you would like to do additional initialization, you can add a `*.sh` script under `/opt/custom-init.d`. The `startup.sh` file will source any `*.sh` script found in that directory to do further initialization before starting the service.
+
+For example, you can increase the log level :
+
+	mkdir -p ~/Documents/Docker/Volumes/custom_bonita
+	echo '#!/bin/bash' > ~/Documents/Docker/Volumes/custom_bonita/bonita.sh
+	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/conf/logging.properties' >> ~/Documents/Docker/Volumes/custom_bonita/bonita.sh
+	chmod +x ~/Documents/Docker/Volumes/custom_bonita/bonita.sh
+	
+	docker run --name bonita_custom -v ~/Documents/Docker/Volumes/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
+
+Note : there are several ways to check the `bonita` logs, one of them is
+
+	docker exec -ti bonita_custom /bin/bash
+	tail -f /opt/bonita/BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/logs/bonita.`date +%Y-%m-%d`.log
