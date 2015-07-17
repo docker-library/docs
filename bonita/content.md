@@ -59,6 +59,113 @@ See the [official PostgreSQL documentation](https://registry.hub.docker.com/_/po
 
 If you do so, you can access to the portal on http://localhost:8080/bonita and login using : tech_user / secret
 
+## Where to Store Data
+
+Most of the data are stored in database and can be stored outside the Bonita container as described above using PostgreSQL or MySQL container. However some data remains inside the Bonita Bundle. The [Bonita Home](http://documentation.bonitasoft.com/bonita-home-0) is a folder called `bonita` which contains configuration, working, and temporary folders and files. There are also logs file inside the `logs` folder.
+
+Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `%%REPO%%` images to familiarize themselves with the options available, including:
+
+-	Let Docker manage the storage of your data [by writing the files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+
+The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
+
+1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
+2.	Start your `%%REPO%%` container like this:
+
+	docker run --name some-%%REPO%% -v /my/own/datadir:/opt/bonita -d %%REPO%%:tag
+
+The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/opt/bonita` inside the container, where Bonita by default will deploy its Bundle and write its data files.
+
+Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
+
+	chcon -Rt svirt_sandbox_file_t /my/own/datadir
+
+## Migrate from an earlier version of Bonita BPM
+
+1.	First we need to stop the container to perform a backup
+
+	docker stop bonita_7.0.0_postgres
+
+2.	Check where your data are stored
+
+		docker inspect bonita_7.0.0_postgres | grep -A1 '"Volumes"'
+		"Volumes": {
+		"/opt/bonita": {}
+		--
+		"Volumes": {
+		"/opt/bonita": "/home/user/Documents/Docker/Volumes/bonita_7.0.0_postgres"
+
+3.	Copy data from the filesystem
+
+	cp -r ~/Documents/Docker/Volumes/bonita_7.0.0_postgres ~/Documents/Docker/Volumes/bonita_7.0.1_postgres
+
+4.	Retrieve the DB container IP
+
+		docker inspect --format '{{ .NetworkSettings.IPAddress }}' mydbpostgres
+		172.17.0.26
+
+5.	Dump the database
+
+		export PGPASSWORD=mysecretpassword
+		pg_dump -O -x -h 172.17.0.26 -U postgres bonitadb > /tmp/bonitadb.sql
+
+	Note that businessdb won't be updated with the migration tool but you may wan't to also backup/move it.
+
+6.	Load the dump
+
+		export PGPASSWORD=mysecretpassword
+		psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE USER newbonitauser WITH PASSWORD 'newbonitapass';"
+		psql -U postgres -h 172.17.0.26 -d postgres -c "CREATE DATABASE newbonitadb OWNER newbonitauser;"
+		export PGPASSWORD=newbonitapass
+		cat /tmp/bonitadb.sql | psql -U newbonitauser -h 172.17.0.26 newbonitadb
+
+7.	Retrieve the last migration tool and the target version of bonita bundle
+
+		cd ~/Documents/Docker/Volumes/bonita_7.0.1_postgres
+		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.0.0.zip
+		wget http://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.0.1-Tomcat-7.0.55.zip
+		unzip bonita-migration-distrib-2.0.0.zip -d bonita-migration-distrib-2.0.0
+		unzip BonitaBPMCommunity-7.0.1-Tomcat-7.0.55.zip
+
+8.	Move previous home into the new bundle
+
+		mv BonitaBPMCommunity-7.0.1-Tomcat-7.0.55/bonita/ BonitaBPMCommunity-7.0.1-Tomcat-7.0.55/bonita.orig
+		cp -r BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/bonita/ BonitaBPMCommunity-7.0.1-Tomcat-7.0.55/bonita/
+
+9.	Configure the migration tool
+
+		cd bonita-migration-distrib-2.0.0/
+
+	add jdbc driver
+
+		cp ../BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/lib/bonita/postgresql-9.3-1102.jdbc41.jar lib/
+
+	edit the migration tool config to point towards the copy of bonita home and db
+
+		vim Config.properties
+
+	For example :
+
+		bonita.home=/home/user/Documents/Docker/Volumes/bonita_7.0.1_postgres/BonitaBPMCommunity-7.0.1-Tomcat-7.0.55/bonita
+		# JDBC properties
+		## Postgres
+		db.vendor=postgres
+		db.url=jdbc:postgresql://172.17.0.26:5432/newbonitadb
+		db.driverClass=org.postgresql.Driver
+		db.user=newbonitauser
+		db.password=newbonitapass
+
+10.	Launch the migration :
+
+		./migration.sh
+
+11.	launch the new container pointing towards the copy of DB and filesystem :
+
+		docker run --name=bonita_7.0.1_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v ~/Documents/Docker/Volumes/bonita_7.0.1_postgres:/opt/bonita/ -d -p 8081:8080 bonita:7.0.1
+
+For more details regarding Bonita migration, see the [documentation](http://documentation.bonitasoft.com/migrate-earlier-version-bonita-bpm-0).
+
 ## Security
 
 This docker image ensures to activate by default both static and dynamic authorization checks on REST API. To be coherent it also deactivates the HTTP API.
