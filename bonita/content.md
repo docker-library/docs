@@ -85,7 +85,7 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 
 1.	First we need to stop the container to perform a backup
 
-	docker stop bonita_7.0.0_postgres
+		docker stop bonita_7.0.0_postgres
 
 2.	Check where your data are stored
 
@@ -98,7 +98,7 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 
 3.	Copy data from the filesystem
 
-	cp -r ~/Documents/Docker/Volumes/bonita_7.0.0_postgres ~/Documents/Docker/Volumes/bonita_7.0.1_postgres
+		cp -r ~/Documents/Docker/Volumes/bonita_7.0.0_postgres ~/Documents/Docker/Volumes/bonita_7.0.1_postgres
 
 4.	Retrieve the DB container IP
 
