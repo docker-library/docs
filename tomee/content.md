@@ -34,7 +34,6 @@ For example running Apache TomEE 1.7.2 with JRE 8 and Webprofile flavour will be
 
 	docker run -it --rm tomee:8-jre-1.7.2-webprofile
 
-
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
 	docker run -it --rm -p 8888:8080 tomee:<java-version>\-<tomeeversion>\-<flavour>
