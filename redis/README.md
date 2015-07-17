@@ -55,6 +55,10 @@ Alternatively, you can specify something along the same lines with `docker run` 
 
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
 
+## `32bit` variant
+
+This variant is *not* a 32bit image (and will not run on 32bit hardware), but includes Redis compiled as a 32bit binary, especially for users who need the decreased memory requirements associated with that. See ["Using 32 bit instances"](http://redis.io/topics/memory-optimization#using-32-bit-instances) in the Redis documentation for more information.
+
 # License
 
 View [license information](http://redis.io/topics/license) for the software contained in this image.
