@@ -59,7 +59,7 @@ See the [official PostgreSQL documentation](https://registry.hub.docker.com/_/po
 
 If you do so, you can access to the portal on http://localhost:8080/bonita and login using : tech_user / secret
 
-# Security
+## Security
 
 This docker image ensures to activate by default both static and dynamic authorization checks on REST API. To be coherent it also deactivates the HTTP API.
 
@@ -74,3 +74,75 @@ This docker image ensures to activate by default both static and dynamic authori
 But for specific needs you can override this behavior by setting HTTP_API to true and REST_API_DYN_AUTH_CHECKS to false :
 
 	docker run  -e HTTP_API=true -e REST_API_DYN_AUTH_CHECKS=false --name bonita -d -p 8080:8080 bonita
+
+## Environnement variables
+
+When you start the `bonita` image, you can adjust the configuration of the Bonita instance by passing one or more environment variables on the `docker run` command line.
+
+### `PLATFORM_PASSWORD`
+
+This environment variable [is recommended](http://documentation.bonitasoft.com/first-steps-after-setup-1#reset_pw) for you to use the Bonita image. This environment variable sets the platform administrator password for Bonita. If it is not specified, then the default password of `platform` will be used.
+
+### `PLATFORM_LOGIN`
+
+This optional environment variable is used in conjunction with `PLATFORM_PASSWORD` to define the username for the platform administrator. If it is not specified, then the default user of `platformAdmin` will be used.
+
+### `TENANT_PASSWORD`
+
+This environment variable [is recommended](http://documentation.bonitasoft.com/first-steps-after-setup-1#reset_pw) for you to use the Bonita image. This environment variable sets the tenant administrator password for Bonita. If it is not specified, then the default password of `install` will be used.
+
+### `TENANT_LOGIN`
+
+This optional environment variable is used in conjunction with `TENANT_PASSWORD` to define the username for the tenant administrator. If it is not specified, then the default user of `install` will be used.
+
+### `REST_API_DYN_AUTH_CHECKS`
+
+This optional environment variable is used to enable or not [dynamic authorization checking](http://documentation.bonitasoft.com/rest-api-authorization-0#dynamic) on Bonita REST API. The default value is true`, which will activate dynamic authorization checking.
+
+### `HTTP_API`
+
+This optional environment variable is used to enable or not Bonita HTTP API. The default value is `false`, which will deactivate the HTTP API.
+
+### `JAVA_OPTS`
+
+This optional environment variable is used to customize JAVA_OPTS. The default value is `-Xms1024m -Xmx1024m -XX:MaxPermSize=256m`.
+
+### `ENSURE_DB_CHECK_AND_CREATION`
+
+This optional environment variable is used to allow or not the SQL queries to automatically check and create the databases using the database adminstrator credentials. The default value is `true`.
+
+### `DB_VENDOR`
+
+This environment variable is automatically set to `postgres` or `mysql` if the bonita container is linked to a PostgreSQL or MySQL database using `--link`. The default value is `h2`. It can be overrided if you don't use the `--link` capability.
+
+### `DB_HOST`, `DB_PORT`
+
+These variables are optional, used in conjunction to configure the `bonita` image to reach the database instance. There are automatically set if `--link` is used to run the container.
+
+### `DB_NAME`, `DB_USER`, `DB_PASS`
+
+These variables are used in conjunction to create a new user, set that user's password and create the `bonita` database.
+
+`DB_NAME` default value is `bonitadb`.
+
+`DB_USER` default value is `bonitauser`.
+
+`DB_PASS` default value is `bonitapass`.
+
+### `BIZ_DB_NAME`, `BIZ_DB_USER`, `BIZ_DB_PASS`
+
+These variables are used in conjunction to create a new user, set that user's password and create the `bonita` [business database](http://documentation.bonitasoft.com/business-data-model#bdmanddb).
+
+`BIZ_DB_NAME` default value is `businessdb`.
+
+`BIZ_DB_USER` default value is `businessuser`.
+
+`BIZ_DB_PASS` default value is `businesspass`.
+
+### `DB_ADMIN_USER`, `DB_ADMIN_PASS`
+
+These variables are optional, used in conjunction to create users and databases through the administrator account used on the database instance.
+
+`DB_ADMIN_USER` if no value is provided, it's automatically set to `root` with MySQL or `postgres` with PostgreSQL.
+
+`DB_ADMIN_PASS` if no value is provided, it's automatically set using the value from the container linked : `MYSQL_ENV_MYSQL_ROOT_PASSWORD` or `POSTGRES_ENV_POSTGRES_PASSWORD`.
