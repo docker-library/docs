@@ -4,8 +4,8 @@
 -	[`2.6.17-32bit`, `2.6-32bit` (*2.6/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/2.6/32bit/Dockerfile)
 -	[`2.8.21`, `2.8`, `2` (*2.8/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/2.8/Dockerfile)
 -	[`2.8.21-32bit`, `2.8-32bit`, `2-32bit` (*2.8/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/2.8/32bit/Dockerfile)
--	[`3.0.2`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/3.0/Dockerfile)
--	[`3.0.2-32bit`, `3.0-32bit`, `3-32bit`, `32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/5e3f74f3edbbf8311b86e40e7ebe47f602981387/3.0/32bit/Dockerfile)
+-	[`3.0.3`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redis/blob/37efc31242c8415d4f2e6d84255af0c7b97567c5/3.0/Dockerfile)
+-	[`3.0.3-32bit`, `3.0-32bit`, `3-32bit`, `32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/37efc31242c8415d4f2e6d84255af0c7b97567c5/3.0/32bit/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/redis`)](https://github.com/docker-library/official-images/blob/master/library/redis) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
