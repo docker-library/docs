@@ -6,10 +6,18 @@ Celery is an open source asynchronous task queue/job queue based on distributed 
 
 # How to use this image
 
-## start a celery worker
+## start a celery worker (RabbitMQ Broker)
 
 	docker run --link some-rabbit:rabbit --name some-celery -d celery
 
-## check the status of a cluster
+### check the status of the cluster
 
 	docker run --link some-rabbit:rabbit --rm celery celery status
+
+## start a celery worker (Redis Broker)
+
+	docker run --link some-redis:redis -e CELERY_BROKER_URL=redis://redis --name some-celery -d celery
+
+### check the status of the cluster
+
+	docker run --link some-redis:redis -e CELERY_BROKER_URL=redis://redis --rm celery celery status
