@@ -39,6 +39,10 @@ This environment variable is recommended for you to use the PostgreSQL image. Th
 
 This optional environment variable is used in conjunction with `POSTGRES_PASSWORD` to set a user and its password. This variable will create the specified user with superuser power and a database with the same name. If it is not specified, then the default user of `postgres` will be used.
 
+### `PGDATA`
+
+This optional environment variable can be used to define another location - like a subdirectory - for the database files. The default is `/var/lib/postgresql/data`, but if the data volume you're using is a fs mountpoint (like with GCE persistent disks), Postgres `initdb` recommends a subdirectory (for example `/var/lib/postgresql/data/pgdata` ) be created to contain the data.
+
 # How to extend this image
 
 If you would like to do additional initialization in an image derived from this one, add a `*.sh` script under `/docker-entrypoint-initdb.d` (creating the directory if necessary). After the entrypoint calls `initdb` to create the default `postgres` user and database, it will source any `*.sh` script found in that directory to do further initialization before starting the service. If you need to execute SQL commands as part of your initialization, the use of Postgres'' [single user mode](http://www.postgresql.org/docs/9.3/static/app-postgres.html#AEN90580) is highly recommended.
