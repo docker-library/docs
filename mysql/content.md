@@ -78,6 +78,18 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MySQL instance completely unprotected, allowing anyone to gain complete superuser access.
 
+## Executing Additional Scripts
+
+You can add additional scripts to be included in the `--init-file` by placing
+the `*.sql` scripts in the  `/docker-entrypoint-initdb.d` directory in your
+docker container. There are limitations to the `--init-file` listed on the
+[mysql documentation](http://dev.mysql.com/doc/refman/5.0/en/server-options.html#option_mysqld_init-file).
+An example script may look like this:
+
+    CREATE USER 'foo'@'%' IDENTIFIED BY 'foo';
+    CREATE DATABASE foobar;
+    GRANT ALL on foobar.* to 'foo'@'%';
+
 # Caveats
 
 ## Where to Store Data
