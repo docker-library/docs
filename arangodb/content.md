@@ -63,12 +63,6 @@ If you want to expose the port to the outside world, run
 
 ArangoDB listen on port 8529 for request and the image includes `EXPOST 8529`. The `-p 8529:8529` exposes this port on the host.
 
-### Command line options
-
-In order to get a list of supported options, run
-
-	unix> docker run -e help=1 arangodb
-
 ## Persistent Data
 
 ArangoDB use the volume `/var/lib/arangodb` as database directory to store the collection data and the volume `/var/lib/arangodb-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
