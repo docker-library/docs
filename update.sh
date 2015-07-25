@@ -41,6 +41,7 @@ declare -A otherRepos=(
 	[irssi]='https://github.com/jfrazelle/irssi'
 	[jenkins]='https://github.com/cloudbees/jenkins-ci.org-docker'
 	[jetty]='https://github.com/appropriate/docker-jetty'
+	[joomla]='https://github.com/joomla/docker-joomla'
 	[jruby]='https://github.com/cpuguy83/docker-jruby'
 	[kaazing-gateway]='https://github.com/kaazing/gateway.docker'
 	[mageia]='https://github.com/juanluisbaptiste/docker-brew-mageia'
