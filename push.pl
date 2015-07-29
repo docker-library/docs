@@ -159,7 +159,7 @@ $login = $ua->post($login->req->url->to_abs => {
 die 'login failed' unless $login->success;
 my $error = $login->res->dom('.alert-error');
 if ($error->size) {
-	die $error->pluck('all_text')->join("\n") . "\n";
+	die $error->map(sub { $_->all_text })->join("\n") . "\n";
 }
 
 while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
@@ -193,7 +193,7 @@ while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
 	
 	my $alert = $repoTx->res->dom('.alert-error');
 	if ($alert->size) {
-		my $text = trim $alert->pluck('all_text');
+		my $text = trim $alert->map(sub { $_->all_text })->join("\n");
 		die 'update to ' . $repoUrl . ' failed:' . "\n" . $text if $text;
 	}
 }
