@@ -1,17 +1,17 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.10.40`, `0.10` (*0.10/Dockerfile*)](https://github.com/joyent/docker-node/blob/9c93908dfcdc140c14aa78cbb4830850bcf99012/0.10/Dockerfile)
+-	[`0.10.40`, `0.10` (*0.10/Dockerfile*)](https://github.com/joyent/docker-node/blob/840ec06882964c85ee8f41ab2d3e87c0a7adf2eb/0.10/Dockerfile)
 -	[`0.10.40-onbuild`, `0.10-onbuild` (*0.10/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/9c93908dfcdc140c14aa78cbb4830850bcf99012/0.10/onbuild/Dockerfile)
--	[`0.10.40-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/9c93908dfcdc140c14aa78cbb4830850bcf99012/0.10/slim/Dockerfile)
--	[`0.10.40-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/9c93908dfcdc140c14aa78cbb4830850bcf99012/0.10/wheezy/Dockerfile)
--	[`0.12.7`, `0.12`, `0`, `latest` (*0.12/Dockerfile*)](https://github.com/joyent/docker-node/blob/701976f243b4bd08bc0b70e0a452eaa187363372/0.12/Dockerfile)
+-	[`0.10.40-slim`, `0.10-slim` (*0.10/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/840ec06882964c85ee8f41ab2d3e87c0a7adf2eb/0.10/slim/Dockerfile)
+-	[`0.10.40-wheezy`, `0.10-wheezy` (*0.10/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/840ec06882964c85ee8f41ab2d3e87c0a7adf2eb/0.10/wheezy/Dockerfile)
+-	[`0.12.7`, `0.12`, `0`, `latest` (*0.12/Dockerfile*)](https://github.com/joyent/docker-node/blob/840ec06882964c85ee8f41ab2d3e87c0a7adf2eb/0.12/Dockerfile)
 -	[`0.12.7-onbuild`, `0.12-onbuild`, `0-onbuild`, `onbuild` (*0.12/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/701976f243b4bd08bc0b70e0a452eaa187363372/0.12/onbuild/Dockerfile)
--	[`0.12.7-slim`, `0.12-slim`, `0-slim`, `slim` (*0.12/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/701976f243b4bd08bc0b70e0a452eaa187363372/0.12/slim/Dockerfile)
--	[`0.12.7-wheezy`, `0.12-wheezy`, `0-wheezy`, `wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/701976f243b4bd08bc0b70e0a452eaa187363372/0.12/wheezy/Dockerfile)
--	[`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/joyent/docker-node/blob/3e0d2b62fa8524e05ef512564613863ee7f13255/0.8/Dockerfile)
+-	[`0.12.7-slim`, `0.12-slim`, `0-slim`, `slim` (*0.12/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/840ec06882964c85ee8f41ab2d3e87c0a7adf2eb/0.12/slim/Dockerfile)
+-	[`0.12.7-wheezy`, `0.12-wheezy`, `0-wheezy`, `wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/840ec06882964c85ee8f41ab2d3e87c0a7adf2eb/0.12/wheezy/Dockerfile)
+-	[`0.8.28`, `0.8` (*0.8/Dockerfile*)](https://github.com/joyent/docker-node/blob/840ec06882964c85ee8f41ab2d3e87c0a7adf2eb/0.8/Dockerfile)
 -	[`0.8.28-onbuild`, `0.8-onbuild` (*0.8/onbuild/Dockerfile*)](https://github.com/joyent/docker-node/blob/0c2ff5172aabc30ce38303d9bb340ae3e94f3a91/0.8/onbuild/Dockerfile)
--	[`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/3e0d2b62fa8524e05ef512564613863ee7f13255/0.8/slim/Dockerfile)
--	[`0.8.28-wheezy`, `0.8-wheezy` (*0.8/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/3e0d2b62fa8524e05ef512564613863ee7f13255/0.8/wheezy/Dockerfile)
+-	[`0.8.28-slim`, `0.8-slim` (*0.8/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/840ec06882964c85ee8f41ab2d3e87c0a7adf2eb/0.8/slim/Dockerfile)
+-	[`0.8.28-wheezy`, `0.8-wheezy` (*0.8/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/840ec06882964c85ee8f41ab2d3e87c0a7adf2eb/0.8/wheezy/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
