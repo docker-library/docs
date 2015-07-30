@@ -18,6 +18,8 @@ The image is designed to support a number of different usage patterns. The follo
 
 	Once the server has started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
 
+	Note: If you are using the boot2docker virtual machine on OS X or Windows, you'll need to get the IP of the virtual host using the command `boot2docker ip` instead of using localhost.
+
 2.	For greater flexibility over configuration, it is possible to mount an entire server configuration directory from the host and then specify the server name as a parameter to the run command. Note that this particular example server configuration only provides HTTP access.
 
 		docker run -e LICENSE=accept -d -p 80:9080 \
