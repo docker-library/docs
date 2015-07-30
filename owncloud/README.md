@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.6`, `6.0`, `6` (*6.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f89dd58b776970f9b3ed22ab8672e757813f0979/6.0/Dockerfile)
--	[`7.0.4`, `7.0`, `7` (*7.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f89dd58b776970f9b3ed22ab8672e757813f0979/7.0/Dockerfile)
+-	[`6.0.9`, `6.0`, `6` (*6.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/0d3751af4e930cf323c82cf884d9409ef6d40e9d/6.0/Dockerfile)
+-	[`7.0.7`, `7.0`, `7` (*7.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/0d3751af4e930cf323c82cf884d9409ef6d40e9d/7.0/Dockerfile)
 -	[`8.0.5`, `8.0` (*8.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f89dd58b776970f9b3ed22ab8672e757813f0979/8.0/Dockerfile)
 -	[`8.1.0`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f89dd58b776970f9b3ed22ab8672e757813f0979/8.1/Dockerfile)
 
