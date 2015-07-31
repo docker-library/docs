@@ -1,10 +1,10 @@
 # Overview
 
-This image contains IBM WebSphere Application Server for Developers Liberty Profile and the IBM Java Runtime Environment. For more information on WebSphere Application Server Liberty Profile, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
+This image contains IBM WebSphere Application Server for Developers Liberty Profile. For more information on WebSphere Application Server Liberty Profile, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site. Due to the current lack of geographic export controls on Docker Hub it has been necessary to remove the IBM JRE from this image. The image now builds on the Debian based `java:jre` OpenJRE official repository image. To build an Ubuntu image with the IBM JRE, use the Dockerfiles available in the [ibmjre](https://github.com/WASdev/ci.docker/tree/ibmjre/websphere-liberty/8.5.5) branch on GitHub.
 
 # Usage
 
-In order to use the image, it is necessary to accept the terms of the WebSphere Application Server for Developers and IBM JRE licenses. This is achieved by specifying the environment variable `LICENSE` equal to `accept` when running the image. You can also view the license terms by setting this variable to `view`. Failure to set the variable will result in the termination of the container with a usage statement.
+In order to use the image, it is necessary to accept the terms of the WebSphere Application Server for Developers license. This is achieved by specifying the environment variable `LICENSE` equal to `accept` when running the image. You can also view the license terms by setting this variable to `view`. Failure to set the variable will result in the termination of the container with a usage statement.
 
 The image is designed to support a number of different usage patterns. The following examples are based on the Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/resource/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza:
 
@@ -17,6 +17,8 @@ The image is designed to support a number of different usage patterns. The follo
 		    websphere-liberty
 
 	Once the server has started, you can browse to http://localhost/Sample1/SimpleServlet on the Docker host.
+
+	Note: If you are using the boot2docker virtual machine on OS X or Windows, you'll need to get the IP of the virtual host using the command `boot2docker ip` instead of using localhost.
 
 2.	For greater flexibility over configuration, it is possible to mount an entire server configuration directory from the host and then specify the server name as a parameter to the run command. Note that this particular example server configuration only provides HTTP access.
 
