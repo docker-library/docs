@@ -110,7 +110,7 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 		export PGPASSWORD=mysecretpassword
 		pg_dump -O -x -h 172.17.0.26 -U postgres bonitadb > /tmp/bonitadb.sql
 
-	Note that businessdb won't be updated with the migration tool but you may wan't to also backup/move it.
+	Note that businessdb won't be updated with the migration tool but you may want to also backup/move it.
 
 6.	Load the dump
 
