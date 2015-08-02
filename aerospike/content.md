@@ -68,3 +68,6 @@ Mesh networking requires setting up links between each node in the cluster. This
 
 1.	Define a configuration for each node in the cluster, as defined in [Network Heartbeat Configuration](http://www.aerospike.com/docs/operations/configure/network/heartbeat/#mesh-unicast-heartbeat).
 2.	Use `asinfo` to send the `tip` command, to make the node aware of another node, as defined in [tip command in asinfo](http://www.aerospike.com/docs/tools/asinfo/#tip).
+
+
+[//]: # (Latest version 3.5.15)
