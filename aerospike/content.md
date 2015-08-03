@@ -60,7 +60,7 @@ A full example:
 
 ## Clustering
 
-Aerospike recommends using multicast clustering whenever possible, however, we are currently working to figure out how to best support multicast via Docker. For the time being, it will be best to setup Mesh Clustering. We are open to pull-requests with proposals on how to implement multicast for our Dockerfile.
+Aerospike recommends using Mesh Clustering. Mesh uses TCP point to point connections for heartbeats. Each node in the cluster maintains a heartbeat connection to all other nodes. Please see [http://www.aerospike.com/docs/operations/configure/network/heartbeat/#mesh-unicast-heartbeat](http://www.aerospike.com/docs/operations/configure/network/heartbeat/#mesh-unicast-heartbeat)
 
 ### Mesh Clustering
 
