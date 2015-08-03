@@ -35,7 +35,7 @@ The available tags include supported distros along with a hierarchy tags based o
 - `robot`: basic install for robots  
 - `perception`: basic install for perception tasks
 
-The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub oginsanal profile [here](https://registry.hub.docker.com/u/osrf/ros). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
+The rest of the common meta-packages such as `desktop` and `desktop-full` are hosted on automatic build repos under OSRF's Docker Hub profile [here](https://registry.hub.docker.com/u/osrf/ros). These meta-packages include graphical dependencies and hook a host of other large packages such as X11, X server, etc. So in the interest of keep the official images lean and secure, the desktop packages are just be hosted with OSRF's profile.
 
 ### Volumes
 
@@ -51,7 +51,7 @@ Some application may require device access for acquiring images from connected c
 
 ### Networks
 
-The ROS runtime "graph" is a peer-to-peer network of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of data over topics, and storage of data on a Parameter Server. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details about [ROS NetworkSetup](http://wiki.ros.org/ROS/NetworkSetup) wik artical, or see the Deployment example below.
+The ROS runtime "graph" is a peer-to-peer network of processes (potentially distributed across machines) that are loosely coupled using the ROS communication infrastructure. ROS implements several different styles of communication, including synchronous RPC-style communication over services, asynchronous streaming of data over topics, and storage of data on a Parameter Server. To abide by the best practice of [one process per container](https://docs.docker.com/articles/dockerfile_best-practices/), Docker networks can be used to string together several running ROS processes. For further details about [ROS NetworkSetup](http://wiki.ros.org/ROS/NetworkSetup) wik article, or see the Deployment example below.
 
 ## Deployment example
 
