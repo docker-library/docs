@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.1`, `9.3`, `9`, `9.3.1-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/c8cf3d52378ca0f3af76eb2219dece8eb7592724/9.3-jre8/Dockerfile)
--	[`9.2.12`, `9.2`, `9.2.12-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/5a279411ea214c702a23cfa67085284ba5b1c90a/9.2-jre8/Dockerfile)
--	[`9.2.12-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/5a279411ea214c702a23cfa67085284ba5b1c90a/9.2-jre7/Dockerfile)
+-	[`9.3.2`, `9.3`, `9`, `9.3.2-jre8`, `9.3-jre8`, `9-jre8`, `latest`, `jre8` (*9.3-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/23013842cc95e6bc8b9ae1562a8712b6ecd57d10/9.3-jre8/Dockerfile)
+-	[`9.2.13`, `9.2`, `9.2.13-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/2e132c7023d13c14190ff71196a81d62008518b5/9.2-jre8/Dockerfile)
+-	[`9.2.13-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/2e132c7023d13c14190ff71196a81d62008518b5/9.2-jre7/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
