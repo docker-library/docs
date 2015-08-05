@@ -21,7 +21,10 @@ Note: Many configuration examples propose to put `daemon` into the `global` sect
 	FROM haproxy:1.5
 	COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
 
-Build and run:
+## Test the configuration file	
+	docker run -it --rm  --name my-running-haproxy -v /path/to/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro haproxy:1.5 haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
+	
+## Build and run
 
 	docker build -t my-haproxy .
 	docker run -d --name my-running-haproxy my-haproxy
