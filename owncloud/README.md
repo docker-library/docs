@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.9`, `6.0`, `6` (*6.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/0d3751af4e930cf323c82cf884d9409ef6d40e9d/6.0/Dockerfile)
--	[`7.0.7`, `7.0`, `7` (*7.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/0d3751af4e930cf323c82cf884d9409ef6d40e9d/7.0/Dockerfile)
--	[`8.0.5`, `8.0` (*8.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f89dd58b776970f9b3ed22ab8672e757813f0979/8.0/Dockerfile)
--	[`8.1.0`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/docker-library/owncloud/blob/f89dd58b776970f9b3ed22ab8672e757813f0979/8.1/Dockerfile)
+-	[`6.0.9`, `6.0`, `6` (*6.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/1ba39a1b6afe7fc0622f7668dafd87e51097c022/6.0/Dockerfile)
+-	[`7.0.7`, `7.0`, `7` (*7.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/1ba39a1b6afe7fc0622f7668dafd87e51097c022/7.0/Dockerfile)
+-	[`8.0.5`, `8.0` (*8.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/1ba39a1b6afe7fc0622f7668dafd87e51097c022/8.0/Dockerfile)
+-	[`8.1.0`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/docker-library/owncloud/blob/1ba39a1b6afe7fc0622f7668dafd87e51097c022/8.1/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
