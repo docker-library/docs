@@ -25,73 +25,29 @@ GetOptions(
 die 'no repos specified' unless @ARGV;
 
 my $ua = Mojo::UserAgent->new->max_redirects(10);
-
-# Mojo::UserAgent::CookieJar::find is destructive...
-# this is a nondestructive version that makes the login succeed on the Hub
-Mojo::Util::monkey_patch 'Mojo::UserAgent::CookieJar', find => sub {
-	my ($self, $url) = @_;
-
-	return unless my $domain = my $host = $url->ihost;
-	my $path = $url->path->to_abs_string;
-	my @found;
-	while ($domain =~ /[^.]+\.[^.]+|localhost$/) {
-		next unless my $old = $self->{jar}{$domain};
-
-		# Grab cookies
-		#my $new = $self->{jar}{$domain} = [];
-		for my $cookie (@$old) {
-			next unless $cookie->domain || $host eq $cookie->origin;
-
-			# Check if cookie has expired
-			my $expires = $cookie->expires;
-			next if $expires && time > ($expires || 0);
-			#push @$new, $cookie;
-
-			# Taste cookie
-			next if $cookie->secure && $url->protocol ne 'https';
-			next unless Mojo::UserAgent::CookieJar::_path($cookie->path, $path);
-			my $name  = $cookie->name;
-			my $value = $cookie->value;
-			push @found, Mojo::Cookie::Request->new(name => $name, value => $value);
-		}
-	}
-
-	# Remove another part
-	continue { $domain =~ s/^[^.]+\.?// }
-
-	return @found;
-};
-
-sub get_form_bits {
-	my $form = shift;
-	
-	my $ret = {};
-	
-	$form->find('input, textarea')->grep(sub {
-		!$_->match('input[type=submit], input[type=reset], input[type=button]')
-		&& defined($_->attr('name'))
-	})->each(sub {
-		my $e = shift;
-		my $name = $e->attr('name');
-		
-		my $val;
-		if ($e->type eq 'textarea') {
-			$val = $e->text;
-		}
-		else {
-			$val = $e->attr('value');
-		}
-		
-		$val = trim('' . ($val // ''));
-		$val =~ s!\r\n|\r!\n!g;
-		
-		$ret->{$name} = $val;
-	});
-	
-	return $ret;
-}
+$ua->transactor->name('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36');
 
 my $term = Term::ReadLine->new('docker-library-docs-push');
+unless (defined $username) {
+	$username = $term->get_reply(prompt => 'Hub Username');
+}
+unless (defined $password) {
+	$password = $term->get_reply(prompt => 'Hub Password'); # TODO hide the input? O:)
+}
+
+my $login = $ua->post('https://hub.docker.com/v2/users/login/' => {} => json => { username => $username, password => $password });
+die 'login failed' unless $login->success;
+
+my $token = $login->res->json->{token};
+
+my $attemptLogin = $ua->post('https://hub.docker.com/attempt-login/' => {} => json => { jwt => $token });
+die 'attempt-login failed' unless $attemptLogin->success;
+
+my $authorizationHeader = { Authorization => "JWT $token" };
+
+my $userData = $ua->get('https://hub.docker.com/v2/user/' => $authorizationHeader);
+die 'user failed' unless $userData->success;
+$userData = $userData->res->json;
 
 sub prompt_for_edit {
 	my ($currentText, $proposedFile) = @_;
@@ -137,63 +93,30 @@ sub prompt_for_edit {
 	return $currentText;
 }
 
-my $login = $ua->get('https://registry.hub.docker.com/account/login/');
-die 'login failed' unless $login->success;
-
-my $loginForm = $login->res->dom('#form-login')->first;
-my $loginBits = get_form_bits($loginForm);
-
-unless (defined $username) {
-	$username = $term->get_reply(prompt => 'Hub Username');
-}
-$loginBits->{username} = $username;
-
-unless (defined $password) {
-	$password = $term->get_reply(prompt => 'Hub Password'); # TODO hide the input? O:)
-}
-$loginBits->{password} = $password;
-
-$login = $ua->post($login->req->url->to_abs => {
-	Referer => $login->req->url->to_abs->to_string,
-} => form => $loginBits);
-die 'login failed' unless $login->success;
-my $error = $login->res->dom('.alert-error');
-if ($error->size) {
-	die $error->map(sub { $_->all_text })->join("\n") . "\n";
-}
-
-while (my $repo = shift) { # '/_/hylang', '/u/tianon/perl', etc
+while (my $repo = shift) { # '/library/hylang', '/tianon/perl', etc
 	$repo =~ s!/+$!!;
-	$repo = '/_/' . $repo unless $repo =~ m!/!;
+	$repo = '/library/' . $repo unless $repo =~ m!/!;
 	$repo = '/' . $repo unless $repo =~ m!^/!;
 	
 	my $repoName = $repo;
 	$repoName =~ s!^.*/!!; # 'hylang', 'perl', etc
 	
-	my $repoUrl = 'https://registry.hub.docker.com' . $repo . '/settings/';
-	my $repoTx = $ua->get($repoUrl);
+	my $repoUrl = 'https://hub.docker.com/v2/repositories' . $repo . '/';
+	my $repoTx = $ua->get($repoUrl => $authorizationHeader);
 	warn 'failed to get: ' . $repoUrl and next unless $repoTx->success;
 	
-	my $settingsForm = $repoTx->res->dom('form[name="repository_settings"]')->first;
-	die 'failed to find form on ' . $repoUrl unless $settingsForm;
-	my $settingsBits = get_form_bits($settingsForm);
+	my $repoDetails = $repoTx->res->json;
 	
-	my $hubShort = prompt_for_edit($settingsBits->{description}, $repoName . '/README-short.txt');
-	my $hubLong = prompt_for_edit($settingsBits->{full_description}, $repoName . '/README.md');
+	my $hubShort = prompt_for_edit($repoDetails->{description}, $repoName . '/README-short.txt');
+	my $hubLong = prompt_for_edit($repoDetails->{full_description}, $repoName . '/README.md');
 	
-	say 'no change to ' . $repoName . '; skipping' and next if $settingsBits->{description} eq $hubShort and $settingsBits->{full_description} eq $hubLong;
-	
-	$settingsBits->{description} = $hubShort;
-	$settingsBits->{full_description} = $hubLong;
+	say 'no change to ' . $repoName . '; skipping' and next if $repoDetails->{description} eq $hubShort and $repoDetails->{full_description} eq $hubLong;
 	
 	say 'updating ' . $repoName;
 	
-	$repoTx = $ua->post($repoUrl => { Referer => $repoUrl } => form => $settingsBits);
-	die 'post to ' . $repoUrl . ' failed' unless $repoTx->success;
-	
-	my $alert = $repoTx->res->dom('.alert-error');
-	if ($alert->size) {
-		my $text = trim $alert->map(sub { $_->all_text })->join("\n");
-		die 'update to ' . $repoUrl . ' failed:' . "\n" . $text if $text;
-	}
+	my $repoPatch = $ua->patch($repoUrl => $authorizationHeader => json => {
+			description => $hubShort,
+			full_description => $hubLong,
+		});
+	die 'patch to ' . $repoUrl . ' failed' unless $repoPatch->success;
 }
