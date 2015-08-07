@@ -1,1 +1,1 @@
-Hello World!
+Hello World! (an example of minimal Dockerization)
