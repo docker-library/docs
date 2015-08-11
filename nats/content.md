@@ -1,12 +1,10 @@
-[NATS](https://nats.io): A high-performance cloud native messaging system.
-==========================================================================
+# [NATS](https://nats.io): A high-performance cloud native messaging system.
 
 %%LOGO%%
 
 `nats` is a high performance server for the NATS Messaging System.
 
-Example usage
-=============
+# Example usage
 
 ```bash
 # Run a NATS server
@@ -44,8 +42,7 @@ $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:
 
 The server will load the configuration file below. Any command line flags can override these values.
 
-Default Configuration File
---------------------------
+## Default Configuration File
 
 ```conf
 # Client port of 4222 on all interfaces
@@ -75,8 +72,7 @@ cluster {
 }
 ```
 
-Commandline Options
--------------------
+## Commandline Options
 
 ```bash
 Server Options:
