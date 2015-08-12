@@ -2,7 +2,7 @@
 
 -	[`latest`, `0.9.1` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.9.1/Dockerfile)
 -	[`0.8.1` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.8.1/Dockerfile)
--	[`2`, `2.0`, `2.0.1` (*Dockerfile*)](https://github.com/docker/distribution/blob/1341222284b3a6b4e77fb64571ad423ed58b0d34/Dockerfile)
+-	[`2`, `2.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/d5ee820f89fc8ca7b66bd88f70554e89319808e0/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
