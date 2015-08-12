@@ -55,7 +55,7 @@ The ROS runtime "graph" is a peer-to-peer network of processes (potentially dist
 
 ## Deployment example
 
-**NOTE:** This requires at least version 1.8 of Docker for networking features.  
+**NOTE:** This requires the experimental version of Docker for future networking features.   
 If we want our all ROS nodes to easily talk to each other, we'll can use a virtual network to connect the separate containers. In this short example, we'll create a virtual network, spin up a new container running `roscore` advertised as the `master` service on the new network, then spawn a message publisher and subscriber process as services on the same network.
 
 ### Build image
