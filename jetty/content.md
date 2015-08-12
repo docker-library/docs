@@ -8,19 +8,19 @@ Jetty is a pure Java-based HTTP (Web) server and Java Servlet container. While W
 
 # How to use this image.
 
-Run the default Jetty server:
+To run the default Jetty server in the background, use the following command:
 
 ```console
 $ docker run -d %%REPO%%
 ```
 
-You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
+You can test it by visiting `http://container-ip:8080` or `https://container-ip:8443/` in a browser. To expose your Jetty server to outside requests, use a port mapping as follows:
 
 ```console
 $ docker run -d -p 8888:8080 %%REPO%%
 ```
 
-You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
+This will map port 8080 inside the container as port 80 on the host and container port 8443 as host port 443. You can then go to `http://host-ip` or `https://host-ip` in a browser.
 
 The default Jetty environment in the image is:
 
