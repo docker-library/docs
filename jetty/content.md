@@ -11,13 +11,13 @@ Jetty is a pure Java-based HTTP (Web) server and Java Servlet container. While W
 Run the default Jetty server:
 
 ```console
-$ docker run -d %%REPO%%:9
+$ docker run -d %%REPO%%
 ```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
 ```console
-$ docker run -d -p 8888:8080 %%REPO%%:9
+$ docker run -d -p 8888:8080 %%REPO%%
 ```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
@@ -39,19 +39,19 @@ For older EOL'd images based on Jetty 7 or Jetty 8, please follow the [legacy in
 The configuration of the Jetty server can be reported by running with the `--list-config` option:
 
 ```console
-$ docker run -d %%REPO%%:9 --list-config
+$ docker run -d %%REPO%% --list-config
 ```
 
 Configuration such as parameters and additional modules may also be passed in via the command line. For example:
 
 ```console
-$ docker run -d %%REPO%%:9 --modules=jmx jetty.threadPool.maxThreads=500
+$ docker run -d %%REPO%% --modules=jmx jetty.threadPool.maxThreads=500
 ```
 
 To update the server configuration in a derived Docker image, the `Dockerfile` may enable additional modules with `RUN` commands like:
 
 ```Dockerfile
-FROM jetty:9
+FROM jetty
 
 RUN java -jar "$JETTY_HOME/start.jar" --add-to-startd=jmx,stats
 ```
@@ -63,7 +63,7 @@ Modules may be configured in a `Dockerfile` by editing the properties in the cor
 To run `%%REPO%%` as a read-only container, have Docker create the `/tmp/jetty` and `/run/jetty` directories as volumes:
 
 ```console
-$ docker run -d --read-only -v /tmp/jetty -v /run/jetty %%REPO%%:9
+$ docker run -d --read-only -v /tmp/jetty -v /run/jetty %%REPO%%
 ```
 
 Since the container is read-only, you'll need to either mount in your webapps directory with `-v /path/to/my/webapps:/var/lib/jetty/webapps` or by populating `/var/lib/jetty/webapps` in a derived image.
@@ -75,5 +75,5 @@ By default, this image starts as user `root` and uses Jetty's `setuid` module to
 If you would like the image to start immediately as user `jetty` instead of starting as `root`, you can start the container with `-u jetty`:
 
 ```console
-$ docker run -d -u jetty %%REPO%%:9
+$ docker run -d -u jetty %%REPO%%
 ```
