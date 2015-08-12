@@ -22,6 +22,8 @@ $ docker run -d -p 8888:8080 %%REPO%%
 
 This will map port 8080 inside the container as port 80 on the host and container port 8443 as host port 443. You can then go to `http://host-ip` or `https://host-ip` in a browser.
 
+## Environment
+
 The default Jetty environment in the image is:
 
 	JETTY_HOME    =  /usr/local/jetty
