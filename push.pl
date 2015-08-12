@@ -13,6 +13,9 @@ use Mojo::Util qw(decode encode slurp spurt trim);
 use Term::UI;
 use Term::ReadLine;
 
+my $hubLengthLimit = 5000;
+my $githubBase = 'https://github.com/docker-library/docs/tree/master';
+
 my $username;
 my $password;
 my $batchmode;
@@ -50,10 +53,19 @@ die 'user failed' unless $userData->success;
 $userData = $userData->res->json;
 
 sub prompt_for_edit {
-	my ($currentText, $proposedFile) = @_;
+	my $currentText = shift;
+	my $proposedFile = shift;
+	my $lengthLimit = shift // 0;
 	
 	my $proposedText = slurp $proposedFile or warn 'missing ' . $proposedFile;
 	$proposedText = trim(decode('UTF-8', $proposedText));
+	
+	if ($lengthLimit > 0 && length($proposedText) > $lengthLimit) {
+		# TODO https://github.com/docker/hub-beta-feedback/issues/238
+		my $fullUrl = "$githubBase/$proposedFile";
+		my $note = "**Note:** the description for this image is longer than the Hub length limit of $lengthLimit, so has been trimmed.  The full description can be found at [$fullUrl]($fullUrl).  See [docker/hub-beta-feedback#238](https://github.com/docker/hub-beta-feedback/issues/238) for more information.\n\n";
+		$proposedText = $note . substr $proposedText, 0, ($lengthLimit - length($note));
+	}
 	
 	return $currentText if $currentText eq $proposedText;
 	
@@ -108,7 +120,7 @@ while (my $repo = shift) { # '/library/hylang', '/tianon/perl', etc
 	my $repoDetails = $repoTx->res->json;
 	
 	my $hubShort = prompt_for_edit($repoDetails->{description}, $repoName . '/README-short.txt');
-	my $hubLong = prompt_for_edit($repoDetails->{full_description}, $repoName . '/README.md');
+	my $hubLong = prompt_for_edit($repoDetails->{full_description}, $repoName . '/README.md', $hubLengthLimit);
 	
 	say 'no change to ' . $repoName . '; skipping' and next if $repoDetails->{description} eq $hubShort and $repoDetails->{full_description} eq $hubLong;
 	
