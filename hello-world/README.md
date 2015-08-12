@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest` (*Dockerfile*)](https://github.com/docker-library/hello-world/blob/897aa7529c3c3d9e9374fd16847dee50d720a7fd/Dockerfile)
+-	[`latest` (*Dockerfile*)](https://github.com/docker-library/hello-world/blob/22ecfe456f254d5babe6e413bed2de77cfaba047/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/hello-world`)](https://github.com/docker-library/official-images/blob/master/library/hello-world) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

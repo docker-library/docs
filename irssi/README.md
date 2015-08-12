@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.8.17`, `0.8`, `0`, `latest` (*Dockerfile*)](https://github.com/jfrazelle/irssi/blob/a6f457f7ed2a0fb5f32f7f0ee6794ac78a573d08/Dockerfile)
+-	[`0.8.17`, `0.8`, `0`, `latest` (*Dockerfile*)](https://github.com/jfrazelle/irssi/blob/18b53336a61b495c2f76f9a71d433de4792395c6/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/irssi`)](https://github.com/docker-library/official-images/blob/master/library/irssi) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
