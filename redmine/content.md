@@ -12,7 +12,9 @@ Redmine is a free and open source, web-based project management and issue tracki
 
 This is the simplest setup; just run redmine.
 
-	docker run -d --name some-redmine redmine
+```console
+$ docker run -d --name some-redmine redmine
+```
 
 > not for multi-user production use ([redmine wiki](http://www.redmine.org/projects/redmine/wiki/RedmineInstall#Supported-database-back-ends))
 
@@ -24,15 +26,21 @@ Running Redmine with a database server is the recommened way.
 
 	-	PostgreSQL
 
-			docker run -d --name some-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
+		```console
+		$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=redmine postgres
+		```
 
 	-	MySQL (replace `--link some-postgres:postgres` with `--link some-mysql:mysql` when running redmine)
 
-			docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=redmine mysql
+		```console
+		$ docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=redmine mysql
+		```
 
 2.	start redmine
 
-		docker run -d --name some-%%REPO%% --link some-postgres:postgres %%REPO%%
+	```console
+	$ docker run -d --name some-%%REPO%% --link some-postgres:postgres %%REPO%%
+	```
 
 ## Alternative Web Server
 
@@ -54,13 +62,17 @@ The Docker documentation is a good starting point for understanding the differen
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
 2.	Start your `%%REPO%%` container like this:
 
-		docker run -d --name some-%%REPO%% -v /my/own/datadir:/usr/src/redmine/files --link some-postgres:postgres %%REPO%%
+	```console
+	$ docker run -d --name some-%%REPO%% -v /my/own/datadir:/usr/src/redmine/files --link some-postgres:postgres %%REPO%%
+	```
 
 The `-v /my/own/datadir:/usr/src/redmine/files` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/usr/src/redmine/files` inside the container, where Redmine will store uploaded files.
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
 
-	chcon -Rt svirt_sandbox_file_t /my/own/datadir
+```console
+$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
+```
 
 ## Port Mapping
 

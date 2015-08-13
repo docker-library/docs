@@ -30,44 +30,54 @@ Currently, systemd in CentOS 7 has been removed and replaced with a `fakesystemd
 
 ## Dockerfile for systemd base image
 
-	FROM centos:7
-	MAINTAINER "you" <your@email.here>
-	ENV container docker
-	RUN yum -y swap -- remove fakesystemd -- install systemd systemd-libs
-	RUN yum -y update; yum clean all; \
-	(cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i ==
-	systemd-tmpfiles-setup.service ] || rm -f $i; done); \
-	rm -f /lib/systemd/system/multi-user.target.wants/*;\
-	rm -f /etc/systemd/system/*.wants/*;\
-	rm -f /lib/systemd/system/local-fs.target.wants/*; \
-	rm -f /lib/systemd/system/sockets.target.wants/*udev*; \
-	rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
-	rm -f /lib/systemd/system/basic.target.wants/*;\
-	rm -f /lib/systemd/system/anaconda.target.wants/*;
-	VOLUME [ "/sys/fs/cgroup" ]
-	CMD ["/usr/sbin/init"]
+```dockerfile
+FROM centos:7
+MAINTAINER "you" <your@email.here>
+ENV container docker
+RUN yum -y swap -- remove fakesystemd -- install systemd systemd-libs
+RUN yum -y update; yum clean all; \
+(cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i ==
+systemd-tmpfiles-setup.service ] || rm -f $i; done); \
+rm -f /lib/systemd/system/multi-user.target.wants/*;\
+rm -f /etc/systemd/system/*.wants/*;\
+rm -f /lib/systemd/system/local-fs.target.wants/*; \
+rm -f /lib/systemd/system/sockets.target.wants/*udev*; \
+rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
+rm -f /lib/systemd/system/basic.target.wants/*;\
+rm -f /lib/systemd/system/anaconda.target.wants/*;
+VOLUME [ "/sys/fs/cgroup" ]
+CMD ["/usr/sbin/init"]
+```
 
 This Dockerfile swaps out fakesystemd for the real package, but deletes a number of unit files which might cause issues. From here, you are ready to build your base image.
 
-	docker build --rm -t local/c7-systemd .
+```console
+$ docker build --rm -t local/c7-systemd .
+```
 
 ## Example systemd enabled app container
 
 In order to use the systemd enabled base container created above, you will need to create your `Dockerfile` similar to the one below.
 
-	FROM local/c7-systemd
-	RUN yum -y install httpd; yum clean all; systemctl enable httpd.service
-	EXPOSE 80
-	CMD ["/usr/sbin/init"]
+```dockerfile
+FROM local/c7-systemd
+RUN yum -y install httpd; yum clean all; systemctl enable httpd.service
+EXPOSE 80
+CMD ["/usr/sbin/init"]
+```
 
 Build this image:
 
-	docker build --rm -t local/c7-systemd-httpd
+```console
+$ docker build --rm -t local/c7-systemd-httpd
+```
 
 ## Running a systemd enabled app container
 
 In order to run a container with systemd, you will need to use the `--privileged` option mentioned earlier, as well as mounting the cgroups volumes from the host. Below is an example command that will run the systemd enabled httpd container created earlier.
 
-	docker run --privileged -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 local/c7-systemd-httpd
+```console
+$ docker run --privileged -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 local/c7-systemd-httpd
+```
 
 This container is running with systemd in a limited context, but it must always be run as a privileged container with the cgroups filesystem mounted.

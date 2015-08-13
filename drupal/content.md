@@ -10,11 +10,15 @@ Drupal is a free and open-source content-management framework written in PHP and
 
 The basic pattern for starting a `%%REPO%%` instance is:
 
-	docker run --name some-%%REPO%% -d %%REPO%%
+```console
+$ docker run --name some-%%REPO%% -d %%REPO%%
+```
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
-	docker run --name some-%%REPO%% -p 8080:80 -d %%REPO%%
+```console
+$ docker run --name some-%%REPO%% -p 8080:80 -d %%REPO%%
+```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
@@ -24,7 +28,9 @@ When first accessing the webserver provided by this image, it will go through a 
 
 ## MySQL
 
-	docker run --name some-%%REPO%% --link some-mysql:mysql -d %%REPO%%
+```console
+$ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%REPO%%
+```
 
 -	Database type: `MySQL, MariaDB, or equivalent`
 -	Database name/username/password: `<details for accessing your MySQL instance>` (`MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`; see environment variables in the description for [`mysql`](https://registry.hub.docker.com/_/mysql/))
@@ -32,7 +38,9 @@ When first accessing the webserver provided by this image, it will go through a 
 
 ## PostgreSQL
 
-	docker run --name some-%%REPO%% --link some-postgres:postgres -d %%REPO%%
+```console
+$ docker run --name some-%%REPO%% --link some-postgres:postgres -d %%REPO%%
+```
 
 -	Database type: `PostgreSQL`
 -	Database name/username/password: `<details for accessing your PostgreSQL instance>` (`POSTGRES_USER`, `POSTGRES_PASSWORD`; see environment variables in the description for [`postgres`](https://registry.hub.docker.com/_/postgres/))

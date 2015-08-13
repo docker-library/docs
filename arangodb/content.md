@@ -31,19 +31,25 @@ ArangoDB Documentation
 
 In order to start an ArangoDB instance run
 
-	unix> docker run -d --name arangodb-instance arangodb
+```console
+$ docker run -d --name arangodb-instance arangodb
+```
 
 Will create and launch the arangodb docker instance as background process. The Identifier of the process is printed - the plain text name will be *arangodb-instance* as you stated above. By default ArangoDB listen on port 8529 for request and the image includes `EXPOST 8529`. If you link an application container it is automatically available in the linked container. See the following examples.
 
 In order to get the IP arango listens on run:
 
-	docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instance
+```console
+$ docker inspect --format '{{ .NetworkSettings.IPAddress }}' arangodb-instance
+```
 
 ### Using the instance
 
 In order to use the running instance from an application, link the container
 
-	unix> docker run --name my-arangodb-app --link arangodb-instance:db-link arangodb
+```console
+$ docker run --name my-arangodb-app --link arangodb-instance:db-link arangodb
+```
 
 This will use the instance with the name `arangodb-instance` and link it into the application container. The application container will contain environment variables
 
@@ -59,7 +65,9 @@ These can be used to access the database.
 
 If you want to expose the port to the outside world, run
 
-	unix> docker run -p 8529:8529 -d arangodb
+```console
+$ docker run -p 8529:8529 -d arangodb
+```
 
 ArangoDB listen on port 8529 for request and the image includes `EXPOST 8529`. The `-p 8529:8529` exposes this port on the host.
 
@@ -73,10 +81,12 @@ A good explanation about persistence and docker container can be found here: [Do
 
 You can map the container's volumes to a directory on the host, so that the data is kept between runs of the container. This path `/tmp/arangodb` is in general not the correct place to store you persistent files - it is just an example!
 
-	unix> mkdir /tmp/arangodb
-	unix> docker run -p 8529:8529 -d \
-	          -v /tmp/arangodb:/var/lib/arangodb \
-	          arangodb
+```console
+$ mkdir /tmp/arangodb
+$ docker run -p 8529:8529 -d \
+          -v /tmp/arangodb:/var/lib/arangodb \
+          arangodb
+```
 
 This will use the `/tmp/arangodb` directory of the host as database directory for ArangoDB inside the container.
 
@@ -86,24 +96,34 @@ The ArangoDB startup configuration is specified in the file `/etc/arangodb/arang
 
 If `/my/custom/arangod.conf` is the path of your arangodb configuration file, you can start your `%%REPO%%` container like this:
 
-	docker run --name some-%%REPO%% -v /my/custom:/etc/arangodb -d %%REPO%%:tag
+```console
+$ docker run --name some-%%REPO%% -v /my/custom:/etc/arangodb -d %%REPO%%:tag
+```
 
 This will start a new container `some-%%REPO%%` where the ArangoDB instance uses the startup settings from your config file instead of the default one.
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to your new config file so that the container will be allowed to mount it:
 
-	chcon -Rt svirt_sandbox_file_t /my/custom
+```console
+$ chcon -Rt svirt_sandbox_file_t /my/custom
+```
 
 ### Using a data container
 
 Alternatively you can create a container holding the data.
 
-	unix> docker run -d --name arangodb-persist -v /var/lib/arangodb debian:8.0 true
+```console
+$ docker run -d --name arangodb-persist -v /var/lib/arangodb debian:8.0 true
+```
 
 And use this data container in your ArangoDB container.
 
-	unix> docker run --volumes-from arangodb-persist -p 8529:8529 arangodb
+```console
+$ docker run --volumes-from arangodb-persist -p 8529:8529 arangodb
+```
 
 If want to save a few bytes you can alternatively use [hello-world](https://registry.hub.docker.com/_/hello-world/), [busybox](https://registry.hub.docker.com/_/busybox/) or [alpine](https://registry.hub.docker.com/_/alpine/) for creating the volume only containers. For example:
 
-	unix> docker run -d --name arangodb-persist -v /var/lib/arangodb alpine alpine
+```console
+$ docker run -d --name arangodb-persist -v /var/lib/arangodb alpine alpine
+```

@@ -14,21 +14,27 @@ For PHP projects run through the command line interface (CLI), you can do the fo
 
 ### Create a `Dockerfile` in your PHP project
 
-	FROM php:5.6-cli
-	COPY . /usr/src/myapp
-	WORKDIR /usr/src/myapp
-	CMD [ "php", "./your-script.php" ]
+```dockerfile
+FROM php:5.6-cli
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
+CMD [ "php", "./your-script.php" ]
+```
 
 Then, run the commands to build and run the Docker image:
 
-	docker build -t my-php-app .
-	docker run -it --rm --name my-running-app my-php-app
+```console
+$ docker build -t my-php-app .
+$ docker run -it --rm --name my-running-app my-php-app
+```
 
 ### Run a single PHP script
 
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a PHP script by using the PHP Docker image directly:
 
-	docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:5.6-cli php your-script.php
+```console
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:5.6-cli php your-script.php
+```
 
 ## With Apache
 
@@ -36,19 +42,25 @@ More commonly, you will probably want to run PHP in conjunction with Apache http
 
 ### Create a `Dockerfile` in your PHP project
 
-	FROM php:5.6-apache
-	COPY src/ /var/www/html/
+```dockerfile
+FROM php:5.6-apache
+COPY src/ /var/www/html/
+```
 
 Where `src/` is the directory containing all your php code. Then, run the commands to build and run the Docker image:
 
-	docker build -t my-php-app .
-	docker run -it --rm --name my-running-app my-php-app
+```console
+$ docker build -t my-php-app .
+$ docker run -it --rm --name my-running-app my-php-app
+```
 
 We recommend that you add a custom `php.ini` configuration. `COPY` it into `/usr/local/etc/php` by adding one more line to the Dockerfile above and running the same commands to build and run:
 
-	FROM php:5.6-apache
-	COPY config/php.ini /usr/local/etc/php
-	COPY src/ /var/www/html/
+```dockerfile
+FROM php:5.6-apache
+COPY config/php.ini /usr/local/etc/php
+COPY src/ /var/www/html/
+```
 
 Where `src/` is the directory containing all your php code and `config/` contains your `php.ini` file.
 
@@ -58,17 +70,19 @@ We provide two convenient scripts named `docker-php-ext-configure` and `docker-p
 
 For example, if you want to have a PHP-FPM image with `iconv`, `mcrypt` and `gd` extensions, you can inherit the base image that you like, and write your own `Dockerfile` like this:
 
-	FROM php:5.6-fpm
-	# Install modules
-	RUN apt-get update && apt-get install -y \
-	        libfreetype6-dev \
-	        libjpeg62-turbo-dev \
-	        libmcrypt-dev \
-	        libpng12-dev \
-	    && docker-php-ext-install iconv mcrypt \
-	    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
-	    && docker-php-ext-install gd
-	CMD ["php-fpm"]
+```dockerfile
+FROM php:5.6-fpm
+# Install modules
+RUN apt-get update && apt-get install -y \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libmcrypt-dev \
+        libpng12-dev \
+    && docker-php-ext-install iconv mcrypt \
+    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+    && docker-php-ext-install gd
+CMD ["php-fpm"]
+```
 
 Remember, you must install dependencies for your extensions manually. If an extension needs custom `configure` arguments, you can use the `docker-php-ext-configure` script like this example.
 
@@ -76,4 +90,6 @@ Remember, you must install dependencies for your extensions manually. If an exte
 
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
-	docker run -it --rm --name my-apache-php-app -v "$PWD":/var/www/html php:5.6-apache
+```console
+$ docker run -it --rm --name my-apache-php-app -v "$PWD":/var/www/html php:5.6-apache
+```

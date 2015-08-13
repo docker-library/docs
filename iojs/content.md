@@ -14,17 +14,23 @@ This project aims to continue development of io.js under an "open governance mod
 
 If you want to distribute your application on the docker registry, create a `Dockerfile` in the root of application directory:
 
-	FROM iojs:onbuild
-	
-	# Expose the ports that your app uses. For example:
-	EXPOSE 8080
+```dockerfile
+FROM iojs:onbuild
+
+# Expose the ports that your app uses. For example:
+EXPOSE 8080
+```
 
 Then simply run:
 
-	$ docker build -t iojs-app
-	...
-	$ docker run --rm -it iojs-app
+```console
+$ docker build -t iojs-app
+...
+$ docker run --rm -it iojs-app
+```
 
 To run a single script, you can mount it in a volume under `/usr/src/app`. From the root of your application directory (assuming your script is named `index.js`):
 
-	$ docker run -v "$PWD":/usr/src/app -w /usr/src/app -it --rm iojs iojs index.js
+```console
+$ docker run -v "$PWD":/usr/src/app -w /usr/src/app -it --rm iojs iojs index.js
+```

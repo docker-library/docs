@@ -12,25 +12,35 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 
 1.	start a redis container
 
-		docker run -d --name some-redis redis
+	```console
+	$ docker run -d --name some-redis redis
+	```
 
 2.	start a database container:
 
 	-	Postgres (recommended by upstream):
 
-			docker run -d --name some-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=sentry postgres
+		```console
+		$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=sentry postgres
+		```
 
 	-	MySQL (later steps assume PostgreSQL, replace the `--link some-postgres:postres` with `--link some-mysql:mysql`):
 
-			docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=sentry mysql
+		```console
+		$ docker run -d --name some-mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=sentry mysql
+		```
 
 3.	now start up sentry server
 
-		docker run -d --name some-sentry --link some-redis:redis --link some-postgres:postgres sentry
+	```console
+	$ docker run -d --name some-sentry --link some-redis:redis --link some-postgres:postgres sentry
+	```
 
 4.	if this is a new database, you'll need to run `sentry upgrade`
 
-		docker run -it --rm --link some-postgres:postgres --link some-redis:redis sentry sentry upgrade
+	```console
+	$ docker run -it --rm --link some-postgres:postgres --link some-redis:redis sentry sentry upgrade
+	```
 
 	**Note: the `-it` is important as the initial upgrade will prompt to create an initial user and will fail without it**
 
@@ -38,13 +48,17 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 
 	-	using the celery image:
 
-			docker run -d --name celery-beat --link some-redis:redis  -e CELERY_BROKER_URL=redis://redis celery celery beat
-			docker run -d --name celery-worker1 --link some-redis:redis  -e CELERY_BROKER_URL=redis://redis celery
+		```console
+		$ docker run -d --name celery-beat --link some-redis:redis  -e CELERY_BROKER_URL=redis://redis celery celery beat
+		$ docker run -d --name celery-worker1 --link some-redis:redis  -e CELERY_BROKER_URL=redis://redis celery
+		```
 
 	-	using the celery bundled with sentry
 
-			docker run -d --name sentry-celery-beat --link some-redis:redis sentry sentry celery beat
-			docker run -d --name sentry-celery1 --link some-redis:redis sentry sentry celery worker
+		```console
+		$ docker run -d --name sentry-celery-beat --link some-redis:redis sentry sentry celery beat
+		$ docker run -d --name sentry-celery1 --link some-redis:redis sentry sentry celery worker
+		```
 
 ### port mapping
 
@@ -54,4 +68,6 @@ If you'd like to be able to access the instance from the host without the contai
 
 If you did not create a superuser during `sentry upgrade`, use the following to create one:
 
-	docker run -it --rm --link some-postgres:postgres sentry sentry createsuperuser
+```console
+$ docker run -it --rm --link some-postgres:postgres sentry sentry createsuperuser
+```

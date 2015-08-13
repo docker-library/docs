@@ -107,7 +107,7 @@ for repo in "${repos[@]}"; do
 		composeYml=
 		if [ -f "$repo/docker-compose.yml" ]; then
 			compose="$(cat "$repo/compose.md" 2>/dev/null || cat "$helperDir/compose.md")"
-			composeYml="$(sed 's/^/\t/' "$repo/docker-compose.yml")"
+			composeYml=$'```yaml\n'"$(cat "$repo/docker-compose.yml")"$'\n```'
 		fi
 		
 		cp -v "$helperDir/template.md" "$repo/README.md"

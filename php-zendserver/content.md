@@ -20,21 +20,29 @@ Zend Server is shared on [Docker-Hub](https://registry.hub.docker.com/_/php-zend
 
 -	To start a Zend Server cluster, execute the following command for each cluster node:
 
-		$ docker run -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend php-zendserver
+	```console
+	$ docker run -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend php-zendserver
+	```
 
 #### Launching the Container from Dockerfile
 
 -	From a local folder containing this repo's clone, execute the following command to generate the image. The **image-id** will be outputted:
 
-		$ docker build .
+	```console
+	$ docker build .
+	```
 
 -	To start a single Zend Server instance, execute:
 
-		$ docker run <image-id>
+	```console
+	$ docker run <image-id>
+	```
 
 -	To start a Zend Server cluster, execute the following command on each cluster node:
 
-		$ docker run -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend <image-id>
+	```console
+	$ docker run -e MYSQL_HOSTNAME=<db-ip> -e MYSQL_PORT=3306 -e MYSQL_USERNAME=<username> -e MYSQL_PASSWORD=<password> -e MYSQL_DBNAME=zend <image-id>
+	```
 
 #### Accessing Zend server
 

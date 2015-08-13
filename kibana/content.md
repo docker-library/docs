@@ -12,18 +12,26 @@ Kibana is a registered trademark of Elasticsearch BV.
 
 You can run the default `%%REPO%%` command simply:
 
-	docker run --link some-elasticsearch:elasticsearch -d %%REPO%%
+```console
+$ docker run --link some-elasticsearch:elasticsearch -d %%REPO%%
+```
 
 You can also pass in additional flags to `%%REPO%%`:
 
-	docker run --link some-elasticsearch:elasticsearch -d %%REPO%% --plugins /somewhere/else
+```console
+$ docker run --link some-elasticsearch:elasticsearch -d %%REPO%% --plugins /somewhere/else
+```
 
 This image includes `EXPOSE 5601` ([default `port`](https://www.elastic.co/guide/en/kibana/current/_setting_kibana_server_properties.html)). If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
-	docker run --name some-%%REPO%% --link some-elasticsearch:elasticsearch -p 5601:5601 -d %%REPO%%
+```console
+$ docker run --name some-%%REPO%% --link some-elasticsearch:elasticsearch -p 5601:5601 -d %%REPO%%
+```
 
 You can also provide the address of elasticsearch via `ELASTICSEARCH_URL` environnement variable:
 
-	docker run --name some-kibana -e ELASTICSEARCH_URL=http://some-elasticsearch:9200 -p 5601:5601 -d kibana
+```console
+$ docker run --name some-kibana -e ELASTICSEARCH_URL=http://some-elasticsearch:9200 -p 5601:5601 -d kibana
+```
 
 Then, access it via `http://localhost:5601` or `http://host-ip:5601` in a browser.

@@ -16,22 +16,28 @@ Be sure to also checkout the [awesome scripts](https://github.com/irssi/scripts.
 
 On a Linux system, build and launch a container named `my-running-irssi` like this:
 
-	docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
-	    -v $HOME/.irssi:/home/user/.irssi:ro \
-	    -v /etc/localtime:/etc/localtime:ro \
-	    irssi
+```console
+$ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
+    -v $HOME/.irssi:/home/user/.irssi:ro \
+    -v /etc/localtime:/etc/localtime:ro \
+    irssi
+```
 
 On a Mac OS X system, run the same image using:
 
-	docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
-	    -v $HOME/.irssi:/home/user/.irssi:ro \
-	    irssi
+```console
+$ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
+    -v $HOME/.irssi:/home/user/.irssi:ro \
+    irssi
+```
 
 You omit `/etc/localtime` on Mac OS X because `boot2docker` doesn't use this file.
 
 Of course, you can name your image anything you like. In Docker 1.5 you can also use the `--read-only` mount flag. For example, on Linux:
 
-	docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
-	    --read-only -v $HOME/.irssi:/home/user/.irssi \
-	    -v /etc/localtime:/etc/localtime \
-	    irssi
+```console
+$ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
+    --read-only -v $HOME/.irssi:/home/user/.irssi \
+    -v /etc/localtime:/etc/localtime \
+    irssi
+```

@@ -14,8 +14,10 @@ JRuby leverages the robustness and speed of the JVM while providing the same Rub
 
 ## Create a `Dockerfile` in your Ruby app project
 
-	FROM jruby:1.7-onbuild
-	CMD ["./your-daemon-or-script.rb"]
+```dockerfile
+FROM jruby:1.7-onbuild
+CMD ["./your-daemon-or-script.rb"]
+```
 
 Put this file in the root of your app, next to the `Gemfile`.
 
@@ -23,17 +25,23 @@ This image includes multiple `ONBUILD` triggers which should be all you need to 
 
 You can then build and run the Ruby image:
 
-	docker build -t my-ruby-app .
-	docker run -it --name my-running-script my-ruby-app
+```console
+$ docker build -t my-ruby-app .
+$ docker run -it --name my-running-script my-ruby-app
+```
 
 ### Generate a `Gemfile.lock`
 
 The `onbuild` tag expects a `Gemfile.lock` in your app directory. This `docker run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
 
-	docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app jruby:1.7 bundle install --system
+```console
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app jruby:1.7 bundle install --system
+```
 
 ## Run a single Ruby script
 
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Ruby script by using the Ruby Docker image directly:
 
-	docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp jruby:1.7 jruby your-daemon-or-script.rb
+```console
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp jruby:1.7 jruby your-daemon-or-script.rb
+```
