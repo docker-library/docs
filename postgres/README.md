@@ -23,7 +23,9 @@ PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant a
 
 ## start a postgres instance
 
-	docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+```console
+$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+```
 
 This image includes `EXPOSE 5432` (the postgres port), so standard container linking will make it automatically available to the linked containers. The default `postgres` user and database are created in the entrypoint with `initdb`.
 
@@ -32,11 +34,15 @@ This image includes `EXPOSE 5432` (the postgres port), so standard container lin
 
 ## connect to it from an application
 
-	docker run --name some-app --link some-postgres:postgres -d application-that-uses-postgres
+```console
+$ docker run --name some-app --link some-postgres:postgres -d application-that-uses-postgres
+```
 
 ## ... or via `psql`
 
-	docker run -it --link some-postgres:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres'
+```console
+$ docker run -it --link some-postgres:postgres --rm postgres sh -c 'exec psql -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" -U postgres'
+```
 
 ## Environment Variables
 
@@ -60,9 +66,11 @@ If you would like to do additional initialization in an image derived from this 
 
 You can also extend the image with a simple `Dockerfile` to set the locale. The following example will set the default locale to `de_DE.utf8`:
 
-	FROM postgres:9.4
-	RUN localedef -i de_DE -c -f UTF-8 -A /usr/share/locale/locale.alias de_DE.UTF-8
-	ENV LANG de_DE.utf8
+```dockerfile
+FROM postgres:9.4
+RUN localedef -i de_DE -c -f UTF-8 -A /usr/share/locale/locale.alias de_DE.UTF-8
+ENV LANG de_DE.utf8
+```
 
 Since database initialization only happens on container startup, this allows us to set the language before it is created.
 

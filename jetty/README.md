@@ -18,11 +18,15 @@ Jetty is a pure Java-based HTTP (Web) server and Java Servlet container. While W
 
 Run the default Jetty server (`CMD ["jetty.sh", "run"]`):
 
-	docker run -d jetty:9
+```console
+$ docker run -d jetty:9
+```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
-	docker run -d -p 8888:8080 jetty:9
+```console
+$ docker run -d -p 8888:8080 jetty:9
+```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
 
@@ -46,7 +50,9 @@ For older EOL'd images based on Jetty 7 or Jetty 8, please follow the [legacy in
 
 To run `jetty` as a read-only container, have Docker create the `/tmp/jetty` and `/run/jetty` directories as volumes:
 
-	docker run -d --read-only -v /tmp/jetty -v /run/jetty jetty:9
+```console
+$ docker run -d --read-only -v /tmp/jetty -v /run/jetty jetty:9
+```
 
 Since the container is read-only, you'll need to either mount in your webapps directory with `-v /path/to/my/webapps:/var/lib/jetty/webapps` or by populating `/var/lib/jetty/webapps` in a derived image.
 
@@ -56,7 +62,9 @@ By default, this image starts as user `root` and uses Jetty's `setuid` module to
 
 If you would like the image to start immediately as user `jetty` instead of starting as `root`, you can start the container with `-u jetty`:
 
-	docker run -d -u jetty jetty:9
+```console
+$ docker run -d -u jetty jetty:9
+```
 
 # License
 

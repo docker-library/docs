@@ -22,17 +22,23 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 
 ## start a mongo instance
 
-	docker run --name some-mongo -d mongo
+```console
+$ docker run --name some-mongo -d mongo
+```
 
 This image includes `EXPOSE 27017` (the mongo port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
 
 ## connect to it from an application
 
-	docker run --name some-app --link some-mongo:mongo -d application-that-uses-mongo
+```console
+$ docker run --name some-app --link some-mongo:mongo -d application-that-uses-mongo
+```
 
 ## ... or via `mongo`
 
-	docker run -it --link some-mongo:mongo --rm mongo sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
+```console
+$ docker run -it --link some-mongo:mongo --rm mongo sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
+```
 
 ## Configuration
 
@@ -40,7 +46,9 @@ See the [official docs](http://docs.mongodb.org/manual/) for infomation on using
 
 Just add the `--storageEngine` argument if you want to use the WiredTiger storage engine in MongoDB 3.0 and above without making a config file. Be sure to check the [docs](http://docs.mongodb.org/manual/release-notes/3.0-upgrade/#change-storage-engine-to-wiredtiger) on how to upgrade from older versions.
 
-	docker run --name some-mongo -d mongo --storageEngine=wiredTiger
+```console
+$ docker run --name some-mongo -d mongo --storageEngine=wiredTiger
+```
 
 ## Where to Store Data
 
@@ -56,13 +64,17 @@ The Docker documentation is a good starting point for understanding the differen
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
 2.	Start your `mongo` container like this:
 
-	docker run --name some-mongo -v /my/own/datadir:/data/db -d mongo:tag
+	```console
+	$ docker run --name some-mongo -v /my/own/datadir:/data/db -d mongo:tag
+	```
 
 The `-v /my/own/datadir:/data/db` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/data/db` inside the container, where MongoDB by default will write its data files.
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
 
-	chcon -Rt svirt_sandbox_file_t /my/own/datadir
+```console
+$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
+```
 
 # License
 

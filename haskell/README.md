@@ -30,40 +30,46 @@ The most recent GHC release in the 7.8 series is also available, though no longe
 
 Start an interactive interpreter session with `ghci`:
 
-	$ docker run -it --rm haskell:7.10
-	GHCi, version 7.10.1: http://www.haskell.org/ghc/  :? for help
-	Prelude>
+```console
+$ docker run -it --rm haskell:7.10
+GHCi, version 7.10.1: http://www.haskell.org/ghc/  :? for help
+Prelude>
+```
 
 Dockerize a [Hackage](http://hackage.haskell.org) app with a Dockerfile inheriting from the base image:
 
-	FROM haskell:7.8
-	RUN cabal update && cabal install MazesOfMonad
-	VOLUME /root/.MazesOfMonad
-	ENTRYPOINT ["/root/.cabal/bin/mazesofmonad"]
+```dockerfile
+FROM haskell:7.8
+RUN cabal update && cabal install MazesOfMonad
+VOLUME /root/.MazesOfMonad
+ENTRYPOINT ["/root/.cabal/bin/mazesofmonad"]
+```
 
 Iteratively develop then ship a Haskell app with a Dockerfile utilizing the build cache:
 
-	FROM haskell:7.8
-	
-	RUN cabal update
-	
-	# Add .cabal file
-	ADD ./server/snap-example.cabal /opt/server/snap-example.cabal
-	
-	# Docker will cache this command as a layer, freeing us up to
-	# modify source code without re-installing dependencies
-	RUN cd /opt/server && cabal install --only-dependencies -j4
-	
-	# Add and Install Application Code
-	ADD ./server /opt/server
-	RUN cd /opt/server && cabal install
-	
-	# Add installed cabal executables to PATH
-	ENV PATH /root/.cabal/bin:$PATH
-	
-	# Default Command for Container
-	WORKDIR /opt/server
-	CMD ["snap-example"]
+```dockerfile
+FROM haskell:7.8
+
+RUN cabal update
+
+# Add .cabal file
+ADD ./server/snap-example.cabal /opt/server/snap-example.cabal
+
+# Docker will cache this command as a layer, freeing us up to
+# modify source code without re-installing dependencies
+RUN cd /opt/server && cabal install --only-dependencies -j4
+
+# Add and Install Application Code
+ADD ./server /opt/server
+RUN cd /opt/server && cabal install
+
+# Add installed cabal executables to PATH
+ENV PATH /root/.cabal/bin:$PATH
+
+# Default Command for Container
+WORKDIR /opt/server
+CMD ["snap-example"]
+```
 
 ### Examples
 

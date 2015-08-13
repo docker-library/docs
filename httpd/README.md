@@ -19,26 +19,34 @@ This image only contains Apache httpd with the defaults from upstream. There is 
 
 ### Create a `Dockerfile` in your project
 
-	FROM httpd:2.4
-	COPY ./public-html/ /usr/local/apache2/htdocs/
+```dockerfile
+FROM httpd:2.4
+COPY ./public-html/ /usr/local/apache2/htdocs/
+```
 
 Then, run the commands to build and run the Docker image:
 
-	docker build -t my-apache2 .
-	docker run -it --rm --name my-running-app my-apache2
+```console
+$ docker build -t my-apache2 .
+$ docker run -it --rm --name my-running-app my-apache2
+```
 
 ### Without a `Dockerfile`
 
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
-	docker run -it --rm --name my-apache-app -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+```console
+$ docker run -it --rm --name my-apache-app -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+```
 
 ### Configuration
 
 To customize the configuration of the httpd server, just `COPY` your custom configuration in as `/usr/local/apache2/conf/httpd.conf`.
 
-	FROM httpd:2.4
-	COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
+```dockerfile
+FROM httpd:2.4
+COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
+```
 
 #### SSL/HTTPS
 

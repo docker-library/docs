@@ -19,7 +19,9 @@ It aims to retain close compatibility to the official MySQL releases, while focu
 
 ## start a `percona` server instance
 
-	docker run --name some-percona -e MYSQL_ROOT_PASSWORD=mysecretpassword -d percona
+```console
+$ docker run --name some-percona -e MYSQL_ROOT_PASSWORD=mysecretpassword -d percona
+```
 
 This image includes `EXPOSE 3306` (the standard MySQL port), so container linking will make it automatically available to the linked containers (as the following examples illustrate).
 
@@ -27,11 +29,15 @@ This image includes `EXPOSE 3306` (the standard MySQL port), so container linkin
 
 Since Percona Server is intended as a drop-in replacement for MySQL, it can be used with many applications.
 
-	docker run --name some-app --link some-percona:mysql -d application-that-uses-mysql
+```console
+$ docker run --name some-app --link some-percona:mysql -d application-that-uses-mysql
+```
 
 ## ... or via `mysql`
 
-	docker run -it --link some-percona:mysql --rm percona sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+```console
+$ docker run -it --link some-percona:mysql --rm percona sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+```
 
 ## Environment Variables
 

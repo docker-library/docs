@@ -15,7 +15,9 @@ WordPress is a free and open source blogging tool and a content management syste
 
 # How to use this image
 
-	docker run --name some-wordpress --link some-mysql:mysql -d wordpress
+```console
+$ docker run --name some-wordpress --link some-mysql:mysql -d wordpress
+```
 
 The following environment variables are also honored for configuring your WordPress instance:
 
@@ -29,30 +31,36 @@ If the `WORDPRESS_DB_NAME` specified does not already exist on the given MySQL s
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
-	docker run --name some-wordpress --link some-mysql:mysql -p 8080:80 -d wordpress
+```console
+$ docker run --name some-wordpress --link some-mysql:mysql -p 8080:80 -d wordpress
+```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
 If you'd like to use an external database instead of a linked `mysql` container, specify the hostname and port with `WORDPRESS_DB_HOST` along with the password in `WORDPRESS_DB_PASSWORD` and the username in `WORDPRESS_DB_USER` (if it is something other than `root`):
 
-	docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
-	    -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress
+```console
+$ docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
+    -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress
+```
 
 ## ... via [`docker-compose`](https://github.com/docker/compose)
 
 Example `docker-compose.yml` for `wordpress`:
 
-	wordpress:
-	  image: wordpress
-	  links:
-	    - db:mysql
-	  ports:
-	    - 8080:80
-	
-	db:
-	  image: mariadb
-	  environment:
-	    MYSQL_ROOT_PASSWORD: example
+```yaml
+wordpress:
+  image: wordpress
+  links:
+    - db:mysql
+  ports:
+    - 8080:80
+
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: example
+```
 
 Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
 

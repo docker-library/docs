@@ -16,7 +16,9 @@ The Kaazing Gateway is a network gateway created to provide a single access poin
 
 By default the gateway runs a WebSocket echo service similar to [websocket.org](https://www.websocket.org/echo.html).
 
-	docker run --name some-kaazing-gateway -h somehostname -d -p 8000:8000 kaazing-gateway
+```console
+$ docker run --name some-kaazing-gateway -h somehostname -d -p 8000:8000 kaazing-gateway
+```
 
 You should then be able to connect to ws://somehostname:8000 from the [WebSocket echo test](https://www.websocket.org/echo.html).
 
@@ -26,22 +28,30 @@ Note: this assumes that `somehostname` is resolvable from your browser, you may 
 
 To launch a container with a specific configuration you can do the following:
 
-	docker run --name some-kaazing-gateway -v /some/gateway-config.xml:/kaazing-gateway/conf/gateway-config.xml:ro -d kaazing-gateway
+```console
+$ docker run --name some-kaazing-gateway -v /some/gateway-config.xml:/kaazing-gateway/conf/gateway-config.xml:ro -d kaazing-gateway
+```
 
 For information on the syntax of the Kaazing Gateway configuration files, see [the official documentation](http://developer.kaazing.com/documentation/5.0/index.html) (specifically the [Configuration Guide](http://developer.kaazing.com/documentation/5.0/admin-reference/r_conf_elementindex.html)).
 
 If you wish to adapt the default Gateway configuration file, you can use a command such as the following to copy the file from a running Kaazing Gateway container:
 
-	docker cp some-kaazing:/conf/gateway-config-minimal.xml /some/gateway-config.xml
+```console
+$ docker cp some-kaazing:/conf/gateway-config-minimal.xml /some/gateway-config.xml
+```
 
 As above, this can also be accomplished more cleanly using a simple `Dockerfile`:
 
-	FROM kaazing-gateway
-	COPY gateway-config.xml /conf/gateway-config.xml
+```dockerfile
+FROM kaazing-gateway
+COPY gateway-config.xml /conf/gateway-config.xml
+```
 
 Then, build with `docker build -t some-custom-kaazing-gateway .` and run:
 
-	docker run --name some-kaazing-gateway -d some-custom-kaazing-gateway
+```console
+$ docker run --name some-kaazing-gateway -d some-custom-kaazing-gateway
+```
 
 # License
 

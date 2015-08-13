@@ -19,10 +19,12 @@ Fedora rawhide is available via `fedora:rawhide` and Fedora 20 via `fedora:20` a
 
 The metalink `http://mirrors.fedoraproject.org` is used to automatically select a mirror site (both for building the image as well as for the yum repos in the container image).
 
-	$ docker run fedora cat /etc/yum.repos.d/fedora.repo | grep metalink
-	metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&arch=$basearch
-	metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&arch=$basearch
-	metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&arch=$basearch
+```console
+$ docker run fedora cat /etc/yum.repos.d/fedora.repo | grep metalink
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&arch=$basearch
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&arch=$basearch
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&arch=$basearch
+```
 
 # Supported Docker versions
 
