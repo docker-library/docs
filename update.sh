@@ -59,6 +59,7 @@ declare -A otherRepos=(
 	[rakudo]='https://github.com/perl6/docker'
 	[registry]='https://github.com/docker/docker-registry'
 	[rethinkdb]='https://github.com/stuartpb/rethinkdb-dockerfiles'
+	[rocket.chat]='https://github.com/RocketChat/Docker.Official.Image'
 	[ros]='https://github.com/osrf/docker_images'
 	[sonarqube]='https://github.com/SonarSource/docker-sonarqube'
 	[swarm]='https://github.com/docker/swarm-library-image'
