@@ -101,6 +101,9 @@ for repo in "${repos[@]}"; do
 		logo=
 		if [ -e "$repo/logo.png" ]; then
 			logo="![logo](https://raw.githubusercontent.com/docker-library/docs/master/$repo/logo.png)"
+		elif [ -e "$repo/logo.svg" ]; then
+			# rawgit.com because: http://stackoverflow.com/a/16462143/433558
+			logo="![logo](https://rawgit.com/docker-library/docs/master/$repo/logo.svg)"
 		fi
 		
 		compose=
