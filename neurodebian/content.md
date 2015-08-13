@@ -18,7 +18,9 @@ The `neurodebian:latest` tag will always point the Neurodebian-enabled latest st
 
 NeuroDebian APT file is installed under `/etc/apt/sources.list.d/neurodebian.sources.list` and currently enables only `main` (DFSG-compliant) area of the archive:
 
-	> docker run neurodebian:latest cat /etc/apt/sources.list.d/neurodebian.sources.list
-	deb http://neuro.debian.net/debian wheezy main
-	deb http://neuro.debian.net/debian data main
-	#deb-src http://neuro.debian.net/debian-devel wheezy main
+```console
+$ docker run neurodebian:latest cat /etc/apt/sources.list.d/neurodebian.sources.list
+deb http://neuro.debian.net/debian wheezy main
+deb http://neuro.debian.net/debian data main
+#deb-src http://neuro.debian.net/debian-devel wheezy main
+```

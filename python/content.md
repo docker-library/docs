@@ -10,27 +10,37 @@ Python is an interpreted, interactive, object-oriented, open-source programming 
 
 ## Create a `Dockerfile` in your Python app project
 
-	FROM python:3-onbuild
-	CMD [ "python", "./your-daemon-or-script.py" ]
+```dockerfile
+FROM python:3-onbuild
+CMD [ "python", "./your-daemon-or-script.py" ]
+```
 
 or (if you need to use Python 2):
 
-	FROM python:2-onbuild
-	CMD [ "python", "./your-daemon-or-script.py" ]
+```dockerfile
+FROM python:2-onbuild
+CMD [ "python", "./your-daemon-or-script.py" ]
+```
 
 These images include multiple `ONBUILD` triggers, which should be all you need to bootstrap most applications. The build will `COPY` a `requirements.txt` file, `RUN pip install` on said file, and then copy the current directory into `/usr/src/app`.
 
 You can then build and run the Docker image:
 
-	docker build -t my-python-app .
-	docker run -it --rm --name my-running-app my-python-app
+```console
+$ docker build -t my-python-app .
+$ docker run -it --rm --name my-running-app my-python-app
+```
 
 ## Run a single Python script
 
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Python script by using the Python Docker image directly:
 
-	docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:3 python your-daemon-or-script.py
+```console
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:3 python your-daemon-or-script.py
+```
 
 or (again, if you need to use Python 2):
 
-	docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:2 python your-daemon-or-script.py
+```console
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:2 python your-daemon-or-script.py
+```

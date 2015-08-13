@@ -12,7 +12,9 @@ Apache Cassandra is an open source distributed database management system design
 
 Starting a Cassandra instance is simple:
 
-	docker run --name some-%%REPO%% -d %%REPO%%:tag
+```console
+$ docker run --name some-%%REPO%% -d %%REPO%%:tag
+```
 
 ... where `some-%%REPO%%` is the name you want to assign to your container and `tag` is the tag specifying the Cassandra version you want. See the list above for relevant tags.
 
@@ -20,13 +22,17 @@ Starting a Cassandra instance is simple:
 
 This image exposes the standard Cassandra ports (see the [Cassandra FAQ](https://wiki.apache.org/cassandra/FAQ#ports)), so container linking makes the Cassandra instance available to other application containers. Start your application container like this in order to link it to the Cassandra container:
 
-	docker run --name some-app --link some-%%REPO%%:%%REPO%% -d app-that-uses-cassandra
+```console
+$ docker run --name some-app --link some-%%REPO%%:%%REPO%% -d app-that-uses-cassandra
+```
 
 ## Make a cluster
 
 Using the environment variables documented below, there are two cluster scenarios: instances on the same machine and instances on separate machines. For the same machine, start the instance as described above. To start other instances, just tell each new node where the first is.
 
-	docker run --name some-%%REPO%%2 -d -e CASSANDRA_SEEDS="$(docker inspect --format='{{ .NetworkSettings.IPAddress }}' some-%%REPO%%)" %%REPO%%:tag
+```console
+$ docker run --name some-%%REPO%%2 -d -e CASSANDRA_SEEDS="$(docker inspect --format='{{ .NetworkSettings.IPAddress }}' some-%%REPO%%)" %%REPO%%:tag
+```
 
 ... where `some-%%REPO%%` is the name of your original Cassandra Server container, taking advantage of `docker inspect` to get the IP address of the other container.
 
@@ -34,21 +40,29 @@ For separate machines (ie, two VMs on a cloud provider), you need to tell Cassan
 
 Assuming the first machine's IP address is `10.42.42.42` and the second's is `10.43.43.43`, start the first with exposed gossip port:
 
-	docker run --name some-%%REPO%% -d -e CASSANDRA_BROADCAST_ADDRESS=10.42.42.42 -p 7000:7000 %%REPO%%:tag
+```console
+$ docker run --name some-%%REPO%% -d -e CASSANDRA_BROADCAST_ADDRESS=10.42.42.42 -p 7000:7000 %%REPO%%:tag
+```
 
 Then start a Cassandra container on the second machine, with the exposed gossip port and seed pointing to the first machine:
 
-	docker run --name some-%%REPO%% -d -e CASSANDRA_BROADCAST_ADDRESS=10.43.43.43 -p 7000:7000 -e CASSANDRA_SEEDS=10.42.42.42 %%REPO%%:tag
+```console
+$ docker run --name some-%%REPO%% -d -e CASSANDRA_BROADCAST_ADDRESS=10.43.43.43 -p 7000:7000 -e CASSANDRA_SEEDS=10.42.42.42 %%REPO%%:tag
+```
 
 ## Connect to Cassandra from `cqlsh`
 
 The following command starts another Cassandra container instance and runs `cqlsh` (Cassandra Query Language Shell) against your original Cassandra container, allowing you to execute CQL statements against your database instance:
 
-	docker run -it --link some-%%REPO%%:cassandra --rm %%REPO%% sh -c 'exec cqlsh "$CASSANDRA_PORT_9042_TCP_ADDR"'
+```console
+$ docker run -it --link some-%%REPO%%:cassandra --rm %%REPO%% sh -c 'exec cqlsh "$CASSANDRA_PORT_9042_TCP_ADDR"'
+```
 
 ... or (simplified to take advantage of the `/etc/hosts` entry Docker adds for linked containers):
 
-	docker run -it --link some-%%REPO%%:cassandra --rm %%REPO%% cqlsh cassandra
+```console
+$ docker run -it --link some-%%REPO%%:cassandra --rm %%REPO%% cqlsh cassandra
+```
 
 ... where `some-%%REPO%%` is the name of your original Cassandra Server container.
 
@@ -58,11 +72,15 @@ More information about the CQL can be found in the [Cassandra documentation](htt
 
 The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `%%REPO%%` container:
 
-	docker exec -it some-%%REPO%% bash
+```console
+$ docker exec -it some-%%REPO%% bash
+```
 
 The Cassandra Server log is available through Docker's container log:
 
-	docker logs some-%%REPO%%
+```console
+$ docker logs some-%%REPO%%
+```
 
 ## Environment Variables
 
@@ -116,13 +134,17 @@ The Docker documentation is a good starting point for understanding the differen
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
 2.	Start your `%%REPO%%` container like this:
 
-	docker run --name some-%%REPO%% -v /my/own/datadir:/var/lib/cassandra/data -d %%REPO%%:tag
+	```console
+	$ docker run --name some-%%REPO%% -v /my/own/datadir:/var/lib/cassandra/data -d %%REPO%%:tag
+	```
 
 The `-v /my/own/datadir:/var/lib/cassandra/data` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/cassandra/data` inside the container, where Cassandra by default will write its data files.
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
 
-	chcon -Rt svirt_sandbox_file_t /my/own/datadir
+```console
+$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
+```
 
 ## No connections until Cassandra init completes
 

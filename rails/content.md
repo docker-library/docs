@@ -10,7 +10,9 @@ Ruby on Rails or, simply, Rails is an open source web application framework whic
 
 ## Create a `Dockerfile` in your Rails app project
 
-	FROM rails:onbuild
+```dockerfile
+FROM rails:onbuild
+```
 
 Put this file in the root of your app, next to the `Gemfile`.
 
@@ -18,12 +20,16 @@ This image includes multiple `ONBUILD` triggers which should cover most applicat
 
 You can then build and run the Docker image:
 
-	docker build -t my-rails-app .
-	docker run --name some-rails-app -d my-rails-app
+```console
+$ docker build -t my-rails-app .
+$ docker run --name some-rails-app -d my-rails-app
+```
 
 You can test it by visiting `http://container-ip:3000` in a browser or, if you need access outside the host, on port 8080:
 
-	docker run --name some-rails-app -p 8080:3000 -d my-rails-app
+```console
+$ docker run --name some-rails-app -p 8080:3000 -d my-rails-app
+```
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
@@ -32,12 +38,16 @@ You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser
 The `onbuild` tag expects a `Gemfile.lock` in your app directory. This `docker
 run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
 
-	docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
+```console
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
+```
 
 ## Bootstrap a new Rails application
 
 If you want to generate the scaffolding for a new Rails project, you can do the following:
 
-	docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new webapp
+```console
+$ docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new webapp
+```
 
 This will create a sub-directory named `webapp` inside your current directory.

@@ -10,7 +10,9 @@ Documentation for Aerospike is available at [http://aerospike.com/docs](https://
 
 The following will run `asd` with all the exposed ports forward to the host machine.
 
-	docker run -d --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server
+```console
+$ docker run -d --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server
+```
 
 **NOTE** Although this is the simplest method to getting Aerospike up and running, but it is not the preferred method. To properly run the container, please specify an **custom configuration** with the **access-address** defined.
 
@@ -30,7 +32,9 @@ This will use tell `asd` to use the file in `/opt/aerospike/etc/aerospike.conf`,
 
 A full example:
 
-	docker run -d -v <DIRECTORY>:/opt/aerospike/etc --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server asd --foreground --config-file /opt/aerospike/etc/aerospike.conf
+```console
+$ docker run -d -v <DIRECTORY>:/opt/aerospike/etc --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server asd --foreground --config-file /opt/aerospike/etc/aerospike.conf
+```
 
 ## access-address Configuration
 
@@ -56,7 +60,9 @@ Where `<DIRECTORY>` is the path to a directory containing your data files.
 
 A full example:
 
-	docker run -d -v <DIRECTORY>:/opt/aerospike/data --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server
+```console
+$ docker run -d -v <DIRECTORY>:/opt/aerospike/data --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server
+```
 
 ## Clustering
 

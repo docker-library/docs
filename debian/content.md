@@ -17,7 +17,9 @@ http://httpredir.debian.org/debian testing main`).
 
 The mirror of choice for these images is [httpredir.debian.org](http://httpredir.debian.org) so that it's as close to optimal as possible, regardless of location or connection.
 
-	$ docker run debian:jessie cat /etc/apt/sources.list
-	deb http://httpredir.debian.org/debian jessie main
-	deb http://httpredir.debian.org/debian jessie-updates main
-	deb http://security.debian.org jessie/updates main
+```console
+$ docker run debian:jessie cat /etc/apt/sources.list
+deb http://httpredir.debian.org/debian jessie main
+deb http://httpredir.debian.org/debian jessie-updates main
+deb http://security.debian.org jessie/updates main
+```

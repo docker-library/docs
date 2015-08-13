@@ -10,18 +10,24 @@ Hy (a.k.a., Hylang) is a dialect of the Lisp programming language designed to in
 
 ## Create a `Dockerfile` in your Hy project
 
-	FROM hylang:0.10
-	COPY . /usr/src/myapp
-	WORKDIR /usr/src/myapp
-	CMD [ "hy", "./your-daemon-or-script.hy" ]
+```dockerfile
+FROM hylang:0.10
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
+CMD [ "hy", "./your-daemon-or-script.hy" ]
+```
 
 You can then build and run the Docker image:
 
-	docker build -t my-hylang-app
-	docker run -it --rm --name my-running-app my-hylang-app
+```console
+$ docker build -t my-hylang-app
+$ docker run -it --rm --name my-running-app my-hylang-app
+```
 
 ## Run a single Hy script
 
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Hy script by using the Hy Docker image directly:
 
-	docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp hylang:0.10 hy your-daemon-or-script.hy
+```console
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp hylang:0.10 hy your-daemon-or-script.hy
+```

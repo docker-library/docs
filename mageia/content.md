@@ -18,9 +18,11 @@ To date, Mageia:
 
 ## Create a Dockerfile for your container
 
-	FROM mageia:4
-	MAINTAINER  "Foo Bar" <foo@bar.com>
-	CMD [ "bash" ]
+```dockerfile
+FROM mageia:4
+MAINTAINER  "Foo Bar" <foo@bar.com>
+CMD [ "bash" ]
+```
 
 ## Installed packages
 

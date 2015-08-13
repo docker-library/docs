@@ -12,15 +12,19 @@ BusyBox combines tiny versions of many common UNIX utilities into a single small
 
 ## Run BusyBox shell
 
-	docker run -it --rm busybox
+```console
+$ docker run -it --rm busybox
+```
 
 This will drop you into an `sh` shell to allow you to do what you want inside a BusyBox system.
 
 ## Create a `Dockerfile` for a binary
 
-	FROM busybox
-	COPY ./my-static-binary /my-static-binary
-	CMD ["/my-static-binary"]
+```dockerfile
+FROM busybox
+COPY ./my-static-binary /my-static-binary
+CMD ["/my-static-binary"]
+```
 
 This `Dockerfile` will allow you to create a minimal image for your statically compiled binary. You will have to compile the binary in some other place like another container.
 

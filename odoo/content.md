@@ -12,18 +12,24 @@ This image requires a running PostgreSQL server.
 
 ## Start a PostgreSQL server
 
-	docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres
+```console
+$ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres
+```
 
 ## Start an Odoo instance
 
-	docker run -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo
+```console
+$ docker run -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo
+```
 
 The alias of the container running Postgres must be db for Odoo to be able to connect to the Postgres server.
 
 ## Stop and restart an Odoo instance
 
-	docker stop odoo
-	docker start -a odoo
+```console
+$ docker stop odoo
+$ docker start -a odoo
+```
 
 ## Stop and restart a PostgreSQL server
 
@@ -35,24 +41,32 @@ Restarting a PostgreSQL server does not affect the created databases.
 
 The default configuration file for the server (located at `/etc/odoo/openerp-server.conf`) can be overriden at startup using volumes. Suppose you have a custom configuration at `/path/to/config/openerp-server.conf`, then
 
-	docker run -v /path/to/config:/etc/odoo -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo
+```console
+$ docker run -v /path/to/config:/etc/odoo -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo
+```
 
 Please use [this configuration template](https://github.com/odoo/docker/blob/master/8.0/openerp-server.conf) to write your custom configuration as we already set some arguments for running Odoo inside a Docker container.
 
 You can also directly specify Odoo arguments inline. Those arguments must be given after the keyword `--` in the command-line, as follows
 
-	docker run -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo -- --dbfilter=odoo_db_.*
+```console
+$ docker run -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo -- --dbfilter=odoo_db_.*
+```
 
 ## Mount custom addons
 
 You can mount your own Odoo addons within the Odoo container, at `/mnt/extra-addons`
 
-	docker run -v /path/to/addons:/mnt/extra-addons -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo
+```console
+$ docker run -v /path/to/addons:/mnt/extra-addons -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo
+```
 
 ## Run multiple Odoo instances
 
-	docker run -p 127.0.0.1:8070:8069 --name odoo2 --link db:db -t odoo
-	docker run -p 127.0.0.1:8071:8069 --name odoo3 --link db:db -t odoo
+```console
+$ docker run -p 127.0.0.1:8070:8069 --name odoo2 --link db:db -t odoo
+$ docker run -p 127.0.0.1:8071:8069 --name odoo3 --link db:db -t odoo
+```
 
 Please note that for plain use of mails and reports functionalities, when the host and container ports differ (e.g. 8070 and 8069), one has to set, in Odoo, Settings->Parameters->System Parameters (requires technical features), web.base.url to the container port (e.g. 127.0.0.1:8069).
 
@@ -62,6 +76,8 @@ Suppose you created a database from an Odoo instance named old-odoo, and you wan
 
 By default, Odoo 8.0 uses a filestore (located at /var/lib/odoo/filestore/) for attachments. You should restore this filestore in your new Odoo instance by running
 
-	docker run --volumes-from old-odoo -p 127.0.0.1:8070:8069 --name new-odoo --link db:db -t odoo
+```console
+$ docker run --volumes-from old-odoo -p 127.0.0.1:8070:8069 --name new-odoo --link db:db -t odoo
+```
 
 You can also simply prevent Odoo from using the filestore by setting the system parameter `ir_attachment.location` to `db-storage` in Settings->Parameters->System Parameters (requires technical features).

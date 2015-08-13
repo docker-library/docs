@@ -8,7 +8,9 @@ Joomla is a free and open-source content management system (CMS) for publishing 
 
 # How to use this image
 
-	docker run --name some-%%REPO%% --link some-mysql:mysql -d %%REPO%%
+```console
+$ docker run --name some-%%REPO%% --link some-mysql:mysql -d %%REPO%%
+```
 
 The following environment variables are also honored for configuring your Joomla instance:
 
@@ -21,14 +23,18 @@ If the `JOOMLA_DB_NAME` specified does not already exist on the given MySQL serv
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
-	docker run --name some-%%REPO%% --link some-mysql:mysql -p 8080:80 -d %%REPO%%
+```console
+$ docker run --name some-%%REPO%% --link some-mysql:mysql -p 8080:80 -d %%REPO%%
+```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
 
 If you'd like to use an external database instead of a linked `mysql` container, specify the hostname and port with `JOOMLA_DB_HOST` along with the password in `JOOMLA_DB_PASSWORD` and the username in `JOOMLA_DB_USER` (if it is something other than `root`):
 
-	docker run --name some-%%REPO%% -e JOOMLA_DB_HOST=10.1.2.3:3306 \
-	    -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d %%REPO%%
+```console
+$ docker run --name some-%%REPO%% -e JOOMLA_DB_HOST=10.1.2.3:3306 \
+    -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d %%REPO%%
+```
 
 ## %%COMPOSE%%
 

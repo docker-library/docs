@@ -15,8 +15,10 @@ This image will run stand-alone Mono console apps.
 
 This example Dockerfile will run an executable called `TestingConsoleApp.exe`.
 
-	FROM mono:3.10-onbuild
-	CMD [ "mono",  "./TestingConsoleApp.exe" ]
+```dockerfile
+FROM mono:3.10-onbuild
+CMD [ "mono",  "./TestingConsoleApp.exe" ]
+```
 
 Place this file in the root of your app, next to the `.sln` solution file. Modify the exectuable name to match what you want to run.
 
@@ -24,8 +26,10 @@ This image includes `ONBUILD` triggers that adds your app source code to `/usr/s
 
 With the Dockerfile in place, you can build and run a Docker image with your app:
 
-	docker build -t my-app .
-	docker run my-app
+```console
+$ docker build -t my-app .
+$ docker run my-app
+```
 
 You should see any output from your app now.
 
