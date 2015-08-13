@@ -72,7 +72,7 @@ If there is no database when `postgres` starts in a container, then `postgres` w
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.0.
+This image is officially supported on Docker version 1.8.1.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
