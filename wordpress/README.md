@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.4-apache`, `4.2.4`, `4.2-apache`, `4.2`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/695385bc1bb1b3c930b114193786e5ae9a0b05a7/apache/Dockerfile)
--	[`4.2.4-fpm`, `4.2-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/695385bc1bb1b3c930b114193786e5ae9a0b05a7/fpm/Dockerfile)
+-	[`4.3.0-apache`, `4.3.0`, `4.3-apache`, `4.3`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/4f8894bb38d628e8105711d89363156e5706f2c3/apache/Dockerfile)
+-	[`4.3.0-fpm`, `4.3-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/4f8894bb38d628e8105711d89363156e5706f2c3/fpm/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
