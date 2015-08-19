@@ -1,5 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
+-	[`gzserver4` (*gazebo/gazebo4/gzserver4/Dockerfile*)](https://github.com/osrf/docker_images/blob/d2eb18bf4ecfdf9116ed0893da4aa25a9ea38ddb/gazebo/gazebo4/gzserver4/Dockerfile)
+-	[`libgazebo4` (*gazebo/gazebo4/libgazebo4/Dockerfile*)](https://github.com/osrf/docker_images/blob/d2eb18bf4ecfdf9116ed0893da4aa25a9ea38ddb/gazebo/gazebo4/libgazebo4/Dockerfile)
 -	[`gzserver5` (*gazebo/gazebo5/gzserver5/Dockerfile*)](https://github.com/osrf/docker_images/blob/c7e0ac67d507b13e8b676a3d648051997a871f6b/gazebo/gazebo5/gzserver5/Dockerfile)
 -	[`libgazebo5` (*gazebo/gazebo5/libgazebo5/Dockerfile*)](https://github.com/osrf/docker_images/blob/c7e0ac67d507b13e8b676a3d648051997a871f6b/gazebo/gazebo5/libgazebo5/Dockerfile)
 -	[`gzserver6` (*gazebo/gazebo6/gzserver6/Dockerfile*)](https://github.com/osrf/docker_images/blob/c7e0ac67d507b13e8b676a3d648051997a871f6b/gazebo/gazebo6/gzserver6/Dockerfile)
