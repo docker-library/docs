@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/93120c3d8c90fdcf5e08e984558fcc4a67d78072/12.04/Dockerfile)
--	[`14.04.2`, `14.04`, `trusty`, `latest` (*14.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/93120c3d8c90fdcf5e08e984558fcc4a67d78072/14.04/Dockerfile)
--	[`15.04`, `vivid` (*15.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/93120c3d8c90fdcf5e08e984558fcc4a67d78072/15.04/Dockerfile)
--	[`15.10`, `wily` (*15.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/93120c3d8c90fdcf5e08e984558fcc4a67d78072/15.10/Dockerfile)
--	[`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/93120c3d8c90fdcf5e08e984558fcc4a67d78072/devel/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/12.04/Dockerfile)
+-	[`14.04.3`, `14.04`, `trusty`, `latest` (*14.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/14.04/Dockerfile)
+-	[`15.04`, `vivid` (*15.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/15.04/Dockerfile)
+-	[`15.10`, `wily` (*15.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/15.10/Dockerfile)
+-	[`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/devel/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/ubuntu-debootstrap`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-debootstrap) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
