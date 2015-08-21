@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2-2.6.0`, `2-2.6`, `2-2`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/118eb35d46e15b7fcdbf86f753cd5f62cd2d045c/2/Dockerfile)
+-	[`2-2.6.0`, `2-2.6`, `2-2`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/e91faa125363042d9b385876182e70e28d5d460b/2/Dockerfile)
 -	[`2-2.6.0-onbuild`, `2-2.6-onbuild`, `2-2-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
--	[`2-2.6.0-slim`, `2-2.6-slim`, `2-2-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/118eb35d46e15b7fcdbf86f753cd5f62cd2d045c/2/slim/Dockerfile)
--	[`3-2.4.0`, `3-2.4`, `3-2`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/118eb35d46e15b7fcdbf86f753cd5f62cd2d045c/3/Dockerfile)
+-	[`2-2.6.0-slim`, `2-2.6-slim`, `2-2-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/e91faa125363042d9b385876182e70e28d5d460b/2/slim/Dockerfile)
+-	[`3-2.4.0`, `3-2.4`, `3-2`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/e91faa125363042d9b385876182e70e28d5d460b/3/Dockerfile)
 -	[`3-2.4.0-onbuild`, `3-2.4-onbuild`, `3-2-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
--	[`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/118eb35d46e15b7fcdbf86f753cd5f62cd2d045c/3/slim/Dockerfile)
+-	[`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/e91faa125363042d9b385876182e70e28d5d460b/3/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
