@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.22`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/a82c28e1c407ef5ddfc2a6014dac87bcc4955a26/9.0/Dockerfile)
--	[`9.1.18`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/a82c28e1c407ef5ddfc2a6014dac87bcc4955a26/9.1/Dockerfile)
--	[`9.2.13`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/a82c28e1c407ef5ddfc2a6014dac87bcc4955a26/9.2/Dockerfile)
--	[`9.3.9`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/a82c28e1c407ef5ddfc2a6014dac87bcc4955a26/9.3/Dockerfile)
--	[`9.4.4`, `9.4`, `9`, `latest` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/a82c28e1c407ef5ddfc2a6014dac87bcc4955a26/9.4/Dockerfile)
--	[`9.5-alpha2`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/7fed4298db2dc8fb86844a1a41c86f4356f5f45b/9.5/Dockerfile)
+-	[`9.0.22`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/7111ef75d67278b9fc5159d105121392ba953e89/9.0/Dockerfile)
+-	[`9.1.18`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/7111ef75d67278b9fc5159d105121392ba953e89/9.1/Dockerfile)
+-	[`9.2.13`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/7111ef75d67278b9fc5159d105121392ba953e89/9.2/Dockerfile)
+-	[`9.3.9`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/7111ef75d67278b9fc5159d105121392ba953e89/9.3/Dockerfile)
+-	[`9.4.4`, `9.4`, `9`, `latest` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/7111ef75d67278b9fc5159d105121392ba953e89/9.4/Dockerfile)
+-	[`9.5-alpha2`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/7111ef75d67278b9fc5159d105121392ba953e89/9.5/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
