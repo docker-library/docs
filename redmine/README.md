@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.6.6`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/redmine/blob/bcd0f77f268bb86dafd4afba0a0b36f478cf767f/2.6/Dockerfile)
--	[`2.6.6-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/2dfa232c7f591e9d458d10eb4a485f84cf33cf4d/2.6/passenger/Dockerfile)
+-	[`2.6.6-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/39d56044137528a841b176e9e5152f22df18f6e4/2.6/passenger/Dockerfile)
 -	[`3.0.4`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/bcd0f77f268bb86dafd4afba0a0b36f478cf767f/3.0/Dockerfile)
--	[`3.0.4-passenger`, `3.0-passenger`, `3-passenger`, `passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/2dfa232c7f591e9d458d10eb4a485f84cf33cf4d/3.0/passenger/Dockerfile)
+-	[`3.0.4-passenger`, `3.0-passenger`, `3-passenger`, `passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/39d56044137528a841b176e9e5152f22df18f6e4/3.0/passenger/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
