@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.4`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/59e0d88a686f727b15dda47db5323c3722e6d85a/Dockerfile)
+-	[`0.6.6`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/9909ce47584df326aa0089e4a1f71af89e5baea6/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/nats`)](https://github.com/docker-library/official-images/blob/master/library/nats) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
