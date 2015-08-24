@@ -21,11 +21,11 @@ For more information about this image and its history, please see the [relevant 
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main nats
-[1] 2015/08/08 02:18:59.240582 [INF] Starting gnatsd version 0.6.4
-[1] 2015/08/08 02:18:59.240694 [INF] Starting http monitor on port 8222
-[1] 2015/08/08 02:18:59.240708 [INF] Listening for route connections on 0.0.0.0:6222
-[1] 2015/08/08 02:18:59.240801 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2015/08/08 02:18:59.240823 [INF] gnatsd is ready
+[INF] Starting gnatsd version 0.6.6
+[INF] Starting http monitor on port 8222
+[INF] Listening for route connections on 0.0.0.0:6222
+[INF] Listening for client connections on 0.0.0.0:4222
+[INF] gnatsd is ready
 
 ...
 
@@ -34,23 +34,23 @@ $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:
 
 # If you want to verify the routes are connected, try
 $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[1] 2015/08/08 06:06:18.662453 [INF] Starting gnatsd version 0.6.4
-[1] 2015/08/08 06:06:18.662524 [INF] Starting http monitor on port 8222
-[1] 2015/08/08 06:06:18.662680 [INF] Listening for route connections on :6222
-[1] 2015/08/08 06:06:18.662807 [INF] Listening for client connections on 0.0.0.0:4222
-[1] 2015/08/08 06:06:18.662831 [INF] gnatsd is ready
-[1] 2015/08/08 06:06:18.662862 [DBG] Trying to connect to route on nats-main:6222
-[1] 2015/08/08 06:06:18.663579 [DBG] 172.17.0.52:6222 - rid:1 - Route connection created
-[1] 2015/08/08 06:06:18.663647 [DBG] 172.17.0.52:6222 - rid:1 - Route connect msg sent
-[1] 2015/08/08 06:06:18.664040 [DBG] 172.17.0.52:6222 - rid:1 - Registering remote route "ee35d227433a738c729f9422a59667bb"
-[1] 2015/08/08 06:06:18.664133 [DBG] 172.17.0.52:6222 - rid:1 - Route sent local subscriptions
+[INF] Starting gnatsd version 0.6.6
+[INF] Starting http monitor on port 8222
+[INF] Listening for route connections on :6222
+[INF] Listening for client connections on 0.0.0.0:4222
+[INF] gnatsd is ready
+[DBG] Trying to connect to route on nats-main:6222
+[DBG] 172.17.0.52:6222 - rid:1 - Route connection created
+[DBG] 172.17.0.52:6222 - rid:1 - Route connect msg sent
+[DBG] 172.17.0.52:6222 - rid:1 - Registering remote route "ee35d227433a738c729f9422a59667bb"
+[DBG] 172.17.0.52:6222 - rid:1 - Route sent local subscriptions
 ```
 
 The server will load the configuration file below. Any command line flags can override these values.
 
 ## Default Configuration File
 
-```conf
+```bash
 # Client port of 4222 on all interfaces
 port: 4222
 
