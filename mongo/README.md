@@ -47,7 +47,7 @@ See the [official docs](http://docs.mongodb.org/manual/) for infomation on using
 Just add the `--storageEngine` argument if you want to use the WiredTiger storage engine in MongoDB 3.0 and above without making a config file. Be sure to check the [docs](http://docs.mongodb.org/manual/release-notes/3.0-upgrade/#change-storage-engine-to-wiredtiger) on how to upgrade from older versions.
 
 ```console
-$ docker run --name some-mongo -d mongo --storageEngine=wiredTiger
+$ docker run --name some-mongo -d mongod --storageEngine wiredTiger
 ```
 
 ## Where to Store Data
