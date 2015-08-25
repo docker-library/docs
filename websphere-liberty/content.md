@@ -8,9 +8,11 @@ There are multiple images available in this repository. The image with the tag `
 
 The `kernel` image contains just the Liberty kernel and no additional runtime features. This image can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `installUtility` command to download those features from the online repository.
 
-	FROM websphere-liberty:kernel
-	COPY server.xml /opt/ibm/wlp/usr/servers/defaultServer/
-	RUN installUtility install --acceptLicense defaultServer
+```dockerfile
+FROM websphere-liberty:kernel
+COPY server.xml /opt/ibm/wlp/usr/servers/defaultServer/
+RUN installUtility install --acceptLicense defaultServer
+```
 
 The `common` image adds a set of features that are expected to be of use for a typical production scenario. These features are: `appSecurity-2.0`, `collectiveMember-1.0`, `localConnector-1.0`, `ldapRegistry-3.0`, `monitor-1.0`, `requestTiming-1.0`, `restConnector-1.0`, `sessionDatabase-1.0`, `ssl-1.0` and `webCache-1.0`. This image is the basis for the `webProfile6` and `webProfile7` images.
 
