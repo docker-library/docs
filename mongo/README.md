@@ -3,7 +3,7 @@
 -	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/c9a1b066a0f35f679c2f8e1854a21e025867d938/2.2/Dockerfile)
 -	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/b7630a1644d934c4c4d57a121e2ca42a50e99c44/2.4/Dockerfile)
 -	[`2.6.11`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/2fb5754a5ac0e4a65ff735433379d60f0b564312/2.6/Dockerfile)
--	[`3.0.5`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/9d8b9c61e8e3ccc8d256aa49905f4755cd6c236e/3.0/Dockerfile)
+-	[`3.0.6`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/d5aca073ca71a7023e0d4193bd14642c6950d454/3.0/Dockerfile)
 -	[`3.1.6`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/a1da445a507ca1acde631af6750e5b28c98bbc20/3.1/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
