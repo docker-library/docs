@@ -2,8 +2,8 @@
 
 -	[`6.0.44-jre7`, `6.0-jre7`, `6-jre7`, `6.0.44`, `6.0`, `6` (*6-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/3b05667011a600a2f46422dd533467eff8e7fecf/6-jre7/Dockerfile)
 -	[`6.0.44-jre8`, `6.0-jre8`, `6-jre8` (*6-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/3b05667011a600a2f46422dd533467eff8e7fecf/6-jre8/Dockerfile)
--	[`7.0.63-jre7`, `7.0-jre7`, `7-jre7`, `7.0.63`, `7.0`, `7` (*7-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/24e869945b9d9d3f02f979524b8caf989d08ed6c/7-jre7/Dockerfile)
--	[`7.0.63-jre8`, `7.0-jre8`, `7-jre8` (*7-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/24e869945b9d9d3f02f979524b8caf989d08ed6c/7-jre8/Dockerfile)
+-	[`7.0.64-jre7`, `7.0-jre7`, `7-jre7`, `7.0.64`, `7.0`, `7` (*7-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b81ffe88c0bb6d760b6ee7d9c056469d59e68311/7-jre7/Dockerfile)
+-	[`7.0.64-jre8`, `7.0-jre8`, `7-jre8` (*7-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b81ffe88c0bb6d760b6ee7d9c056469d59e68311/7-jre8/Dockerfile)
 -	[`8.0.26-jre7`, `8.0-jre7`, `8-jre7`, `jre7`, `8.0.26`, `8.0`, `8`, `latest` (*8-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/9afdd27634a5b847a3b7aa2d611ad5828659d228/8-jre7/Dockerfile)
 -	[`8.0.26-jre8`, `8.0-jre8`, `8-jre8`, `jre8` (*8-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/9afdd27634a5b847a3b7aa2d611ad5828659d228/8-jre8/Dockerfile)
 
