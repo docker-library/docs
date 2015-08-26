@@ -50,7 +50,7 @@ Please use [this configuration template](https://github.com/odoo/docker/blob/mas
 You can also directly specify Odoo arguments inline. Those arguments must be given after the keyword `--` in the command-line, as follows
 
 ```console
-$ docker run -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo -- --dbfilter=odoo_db_.*
+$ docker run -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo -- --db-filter=odoo_db_.*
 ```
 
 ## Mount custom addons
