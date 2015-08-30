@@ -37,19 +37,25 @@ For older EOL'd images based on Jetty 7 or Jetty 8, please follow the [legacy in
 ## Configuration
 
 The configuration of the Jetty server can be reported by running with the `--list-config` option:
+
 ```console
 $ docker run -d %%REPO%%:9 --list-config
 ```
+
 Configuration such as parameters and additional modules may also be passed in via the command line. For example:
+
 ```console
 $ docker run -d %%REPO%%:9 --modules=jmx jetty.threadPool.maxThreads=500
 ```
+
 To update the server configuration in a derived Docker image, the `Dockerfile` may
 enable additional modules with `RUN` commands like:
-```
+
+```Dockerfile
 WORKDIR $JETTY_BASE
 RUN java -jar "$JETTY_HOME/start.jar" --add-to-startd=jmx,stats
 ```
+
 Modules may be configured in a `Dockerfile` by editing the properties in the corresponding `/var/lib/jetty/start.d/*.mod` file or the module can be deactivated by removing that file.
 
 ## Read-only container
