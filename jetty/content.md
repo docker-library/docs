@@ -48,8 +48,7 @@ Configuration such as parameters and additional modules may also be passed in vi
 $ docker run -d %%REPO%%:9 --modules=jmx jetty.threadPool.maxThreads=500
 ```
 
-To update the server configuration in a derived Docker image, the `Dockerfile` may
-enable additional modules with `RUN` commands like:
+To update the server configuration in a derived Docker image, the `Dockerfile` may enable additional modules with `RUN` commands like:
 
 ```Dockerfile
 FROM jetty:9
