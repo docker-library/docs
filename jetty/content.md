@@ -52,7 +52,8 @@ To update the server configuration in a derived Docker image, the `Dockerfile` m
 enable additional modules with `RUN` commands like:
 
 ```Dockerfile
-WORKDIR $JETTY_BASE
+FROM jetty:9
+
 RUN java -jar "$JETTY_HOME/start.jar" --add-to-startd=jmx,stats
 ```
 
