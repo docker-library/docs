@@ -8,7 +8,7 @@ Jetty is a pure Java-based HTTP (Web) server and Java Servlet container. While W
 
 # How to use this image.
 
-Run the default Jetty server (`CMD ["jetty.sh", "run"]`):
+Run the default Jetty server:
 
 ```console
 $ docker run -d %%REPO%%:9
@@ -26,10 +26,6 @@ The default Jetty environment in the image is:
 
 	JETTY_HOME    =  /usr/local/jetty
 	JETTY_BASE    =  /var/lib/jetty
-	JETTY_CONF    =  /usr/local/jetty/etc/jetty.conf
-	JETTY_STATE   =  /run/jetty/jetty.state
-	JETTY_ARGS    =
-	JAVA_OPTIONS  =
 	TMPDIR        =  /tmp/jetty
 
 ## Deployment
@@ -37,6 +33,30 @@ The default Jetty environment in the image is:
 Webapps can be [deployed](https://www.eclipse.org/jetty/documentation/current/quickstart-deploying-webapps.html) under `/var/lib/jetty/webapps` in the usual ways (WAR file, exploded WAR directory, or context XML file). To deploy your application to the `/` context, use the name `ROOT.war`, the directory name `ROOT`, or the context file `ROOT.xml` (case insensitive).
 
 For older EOL'd images based on Jetty 7 or Jetty 8, please follow the [legacy instructions](https://wiki.eclipse.org/Jetty/Howto/Deploy_Web_Applications) on the Eclipse Wiki and deploy under `/usr/local/jetty/webapps` instead of `/var/lib/jetty/webapps`.
+
+## Configuration
+
+The configuration of the Jetty server can be reported by running with the `--list-config` option:
+
+```console
+$ docker run -d %%REPO%%:9 --list-config
+```
+
+Configuration such as parameters and additional modules may also be passed in via the command line. For example:
+
+```console
+$ docker run -d %%REPO%%:9 --modules=jmx jetty.threadPool.maxThreads=500
+```
+
+To update the server configuration in a derived Docker image, the `Dockerfile` may enable additional modules with `RUN` commands like:
+
+```Dockerfile
+FROM jetty:9
+
+RUN java -jar "$JETTY_HOME/start.jar" --add-to-startd=jmx,stats
+```
+
+Modules may be configured in a `Dockerfile` by editing the properties in the corresponding `/var/lib/jetty/start.d/*.mod` file or the module can be deactivated by removing that file.
 
 ## Read-only container
 
