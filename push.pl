@@ -13,7 +13,7 @@ use Mojo::Util qw(decode encode slurp spurt trim);
 use Term::UI;
 use Term::ReadLine;
 
-my $hubLengthLimit = 5000;
+my $hubLengthLimit = 25_000;
 my $githubBase = 'https://github.com/docker-library/docs/tree/master';
 
 my $username;
