@@ -2,7 +2,7 @@
 
 -	[`2.0.16`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ebbf1631a1d8fb4072bf61a0451a5f7b901e81ab/2.0/Dockerfile)
 -	[`2.1.9`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/c7d43443c2e80ee9edd0814c8e8332781f7d93ae/2.1/Dockerfile)
--	[`2.2.0`, `2.2`, `2`, `latest` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ebbf1631a1d8fb4072bf61a0451a5f7b901e81ab/2.2/Dockerfile)
+-	[`2.2.1`, `2.2`, `2`, `latest` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/f1324a4a0938e3eb9f6c40f2065694f4dd22f719/2.2/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
