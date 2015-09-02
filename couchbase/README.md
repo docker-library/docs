@@ -6,7 +6,7 @@
 -	[`2.5.2`, `enterprise-2.5.2` (*enterprise/couchbase-server/2.5.2/Dockerfile*)](https://github.com/couchbase/docker/blob/695e9dbe4f8928ec4b66a83568d3d583c8215b1e/enterprise/couchbase-server/2.5.2/Dockerfile)
 -	[`community-2.2.0` (*community/couchbase-server/2.2.0/Dockerfile*)](https://github.com/couchbase/docker/blob/695e9dbe4f8928ec4b66a83568d3d583c8215b1e/community/couchbase-server/2.2.0/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/couchbase`)](https://github.com/docker-library/official-images/blob/master/library/couchbase) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/couchbase`)](https://github.com/docker-library/official-images/blob/master/library/couchbase). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Couchbase Server?
 

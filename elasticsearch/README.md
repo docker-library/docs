@@ -7,7 +7,7 @@
 -	[`1.7.1`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/546a3d48ac776256ab4b78a7136cc57ef0e8ddab/1.7/Dockerfile)
 -	[`2.0.0-beta1`, `2.0.0`, `2.0`, `2` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/e9d0fcae535ef0f0c1b3612e805d326f464f32b2/2.0/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Elasticsearch?
 

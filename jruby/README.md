@@ -3,11 +3,11 @@
 -	[`1.7`, `1.7.22`, `latest`, `1.7-jre`, `1.7.22-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/1f289ddb5d77c41b9f096384bdc412efa76e3d63/1.7/jre/Dockerfile)
 -	[`1.7-jdk`, `1.7.22-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/1f289ddb5d77c41b9f096384bdc412efa76e3d63/1.7/jdk/Dockerfile)
 -	[`1.7-onbuild`, `1.7.22-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/1f289ddb5d77c41b9f096384bdc412efa76e3d63/1.7/onbuild/Dockerfile)
--	[`9.0.0.0`, `9.0.0.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/9d048db2e65af55daf6acfbc623f38f1979ff88a/9000/jre/Dockerfile)
--	[`9.0.0.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/9d048db2e65af55daf6acfbc623f38f1979ff88a/9000/jdk/Dockerfile)
--	[`9.0.0.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/9d048db2e65af55daf6acfbc623f38f1979ff88a/9000/onbuild/Dockerfile)
+-	[`9`, `9.0`, `9.0-jre`, `9.0.1`, `9.0.1-jre`, `9.0.1.0`, `9.0.1.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/06a356913b1be07f1349800e489e2d786db1fab1/9000/jre/Dockerfile)
+-	[`9.0-jdk`, `9.0.1-jdk`, `9.0.1.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/06a356913b1be07f1349800e489e2d786db1fab1/9000/jdk/Dockerfile)
+-	[`9-onbuild`, `9.0-onbuild`, `9.0.1-onbuild`, `9.0.1.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/06a356913b1be07f1349800e489e2d786db1fab1/9000/onbuild/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is JRuby?
 

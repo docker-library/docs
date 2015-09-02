@@ -3,7 +3,7 @@
 -	[`3.4.3-apache`, `3.4.3`, `3.4-apache`, `3.4`, `3-apache`, `apache`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/40426bb7634578f171c8cdef72bca6a11d26e571/apache/Dockerfile)
 -	[`3.4.3-fpm`, `3.4-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/40426bb7634578f171c8cdef72bca6a11d26e571/fpm/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Joomla?
 

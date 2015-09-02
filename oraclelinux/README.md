@@ -6,7 +6,7 @@
 -	[`6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker/blob/b7ebd0e94eb2abc4932a9e1d27cf1ba9645e0d5c/OracleLinux/6.6/Dockerfile)
 -	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker/blob/b7ebd0e94eb2abc4932a9e1d27cf1ba9645e0d5c/OracleLinux/5.11/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/oraclelinux`)](https://github.com/docker-library/official-images/blob/master/library/oraclelinux) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/oraclelinux`)](https://github.com/docker-library/official-images/blob/master/library/oraclelinux). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # Oracle Linux
 

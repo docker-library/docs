@@ -2,7 +2,7 @@
 
 -	[`latest`, `0.3.1` (*Dockerfile*)](https://github.com/dotcloud/hipache/blob/0.3.1/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/hipache`)](https://github.com/docker-library/official-images/blob/master/library/hipache) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/hipache`)](https://github.com/docker-library/official-images/blob/master/library/hipache). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Hipache?
 

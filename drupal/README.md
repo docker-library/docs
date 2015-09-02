@@ -3,7 +3,7 @@
 -	[`7.39`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/drupal/blob/91a45111ac40c3e1fc43ad914f7c4e141f84e4b2/7/Dockerfile)
 -	[`8.0.0-beta14`, `8.0.0`, `8.0`, `8` (*8/Dockerfile*)](https://github.com/docker-library/drupal/blob/dbf78461358a217af8118453abb5e06a554763bd/8/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Drupal?
 

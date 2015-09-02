@@ -5,7 +5,7 @@
 -	[`1.8.4-python3`, `1.8.4`, `1.8-python3`, `1.8`, `1-python3`, `1`, `python3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/7f61485084a9923389c17c08ac0b03bf8473d451/3.4/Dockerfile)
 -	[`python3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/a918e5b9ac643924bfd987700a89dc52abfb782a/3.4/onbuild/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Django?
 

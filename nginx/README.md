@@ -2,7 +2,7 @@
 
 -	[`latest`, `1`, `1.9`, `1.9.4` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/7f3ef0927ec619d20181e677c97f991df0d7d446/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Nginx?
 

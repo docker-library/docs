@@ -3,7 +3,7 @@
 -	[`3.5.4`, `3.5`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/bb91e64b5664a4ab5cd681b7501a2830edbe9ddf/Dockerfile)
 -	[`3.5.4-management`, `3.5-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/bb91e64b5664a4ab5cd681b7501a2830edbe9ddf/management/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is RabbitMQ?
 

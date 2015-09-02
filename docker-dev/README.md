@@ -2,7 +2,7 @@
 
 -	[`1.8.1`, `1.8`, `1` (*Dockerfile*)](https://github.com/docker/docker/blob/d12ea79c9de6d144ce6bc7ccfe41c507cca6fd35/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Docker?
 

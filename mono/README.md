@@ -9,7 +9,7 @@
 -	[`4.0.1`, `4.0.0`, `4.0`, `4`, `latest` (*4.0.0/Dockerfile*)](https://github.com/mono/docker/blob/0d3556995aa47043059d60c42321e8ccaf173363/4.0.0/Dockerfile)
 -	[`4.0.0-onbuild`, `4.0-onbuild`, `4-onbuild`, `onbuild` (*4.0.0/onbuild/Dockerfile*)](https://github.com/mono/docker/blob/0d3556995aa47043059d60c42321e8ccaf173363/4.0.0/onbuild/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/mono`)](https://github.com/docker-library/official-images/blob/master/library/mono). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Mono
 

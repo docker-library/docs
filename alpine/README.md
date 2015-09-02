@@ -6,7 +6,7 @@
 -	[`2.7` (*versions/library-2.7/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/b05051f894698f86133174ef1967ba9e4057ddf5/versions/library-2.7/Dockerfile)
 -	[`2.6` (*versions/library-2.6/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/a4928ccda5c1c3e4555c361d938cf0d393d4da06/versions/library-2.6/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/alpine`)](https://github.com/docker-library/official-images/blob/master/library/alpine) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/alpine`)](https://github.com/docker-library/official-images/blob/master/library/alpine). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Alpine Linux?
 

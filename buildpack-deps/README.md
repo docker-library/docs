@@ -25,7 +25,7 @@
 -	[`wily-scm` (*wily/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/4cd7279c3bbe2359e5e3798a267760a886422d6d/wily/scm/Dockerfile)
 -	[`wily` (*wily/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/ca0f463579583f030cb5c8eb2c8dac207709feb5/wily/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is `buildpack-deps`?
 

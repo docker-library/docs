@@ -3,7 +3,7 @@
 -	[`7.10.2`, `7.10`, `7`, `latest` (*7.10/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/da915d2dd59b7a9817606a2bb5d32d1d305bc1da/7.10/Dockerfile)
 -	[`7.8.4`, `7.8` (*7.8/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/da915d2dd59b7a9817606a2bb5d32d1d305bc1da/7.8/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/haskell`)](https://github.com/docker-library/official-images/blob/master/library/haskell) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/haskell`)](https://github.com/docker-library/official-images/blob/master/library/haskell). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Haskell?
 

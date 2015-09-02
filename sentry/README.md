@@ -2,7 +2,7 @@
 
 -	[`7.7.0`, `7.7`, `7`, `latest` (*Dockerfile*)](https://github.com/docker-library/sentry/blob/3115587c614e64c66419a26b4f7be6ac067e3a79/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Sentry?
 

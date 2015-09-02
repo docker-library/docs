@@ -15,7 +15,7 @@
 -	[`2.1.0` (*jessie/2.1.0/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/73d01fd11564b6ac09d288e0e916f9f8cd408134/jessie/2.1.0/Dockerfile)
 -	[`2.1.1`, `2.1`, `2`, `latest` (*jessie/2.1.1/Dockerfile*)](https://github.com/stuartpb/rethinkdb-dockerfiles/blob/73d01fd11564b6ac09d288e0e916f9f8cd408134/jessie/2.1.1/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is RethinkDB?
 

@@ -5,7 +5,7 @@
 -	[`3.0.4`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/bcd0f77f268bb86dafd4afba0a0b36f478cf767f/3.0/Dockerfile)
 -	[`3.0.4-passenger`, `3.0-passenger`, `3-passenger`, `passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/39d56044137528a841b176e9e5152f22df18f6e4/3.0/passenger/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Redmine?
 

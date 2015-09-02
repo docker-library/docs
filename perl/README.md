@@ -5,7 +5,7 @@
 -	[`threaded`, `5-threaded`, `5.22-threaded`, `5.22.0-threaded` (*5.022.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150602.0/5.022.000-64bit,threaded/Dockerfile)
 -	[`5.20-threaded`, `5.20.2-threaded` (*5.020.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150602.0/5.020.002-64bit,threaded/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/perl`)](https://github.com/docker-library/official-images/blob/master/library/perl) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/perl`)](https://github.com/docker-library/official-images/blob/master/library/perl). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Perl?
 

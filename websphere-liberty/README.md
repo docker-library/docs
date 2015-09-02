@@ -7,7 +7,7 @@
 -	[`javaee7`, `8.5.5.6-javaee7`, `8.5.5.6`, `8.5.5`, `latest` (*websphere-liberty/8.5.5/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c424138b69111e82fbacb08fb4f18913d2e977fd/websphere-liberty/8.5.5/developer/javaee7/Dockerfile)
 -	[`beta` (*websphere-liberty/beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c424138b69111e82fbacb08fb4f18913d2e977fd/websphere-liberty/beta/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # Overview
 

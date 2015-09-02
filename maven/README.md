@@ -5,7 +5,7 @@
 -	[`3.3.3-jdk-8`, `3.3.3`, `3.3-jdk-8`, `3.3`, `3-jdk-8`, `3`, `latest` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/882a21728d702dad08279afe6b6bf9fa4b8bfe18/jdk-8/Dockerfile)
 -	[`3.3.3-jdk-8-onbuild`, `3.3.3-onbuild`, `3.3-jdk-8-onbuild`, `3.3-onbuild`, `3-jdk-8-onbuild`, `3-onbuild`, `onbuild` (*jdk-8/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/b022df671b603a9100ed9e75803ae32f753826a4/jdk-8/onbuild/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/maven`)](https://github.com/docker-library/official-images/blob/master/library/maven) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/maven`)](https://github.com/docker-library/official-images/blob/master/library/maven). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Maven?
 

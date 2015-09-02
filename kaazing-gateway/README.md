@@ -2,7 +2,7 @@
 
 -	[`latest`, `5.0.1.21` (*Dockerfile*)](https://github.com/kaazing/gateway.docker/blob/9b1841177bb138799e4c65f21beb915e4653de3a/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/kaazing-gateway`)](https://github.com/docker-library/official-images/blob/master/library/kaazing-gateway). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is the KAAZING Gateway?
 

@@ -4,7 +4,7 @@
 -	[`9.2.13`, `9.2`, `9.2.13-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/8166bf5a7ac46194530d81e0281d0d729fb4b7a8/9.2-jre8/Dockerfile)
 -	[`9.2.13-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/8166bf5a7ac46194530d81e0281d0d729fb4b7a8/9.2-jre7/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Jetty?
 

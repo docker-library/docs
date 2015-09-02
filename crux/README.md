@@ -2,7 +2,7 @@
 
 -	[`latest`, `3.1` (*Dockerfile*)](https://github.com/prologic/docker-crux/blob/c614d61c53c05c02a43a34187fa1370db2c61524/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/crux`)](https://github.com/docker-library/official-images/blob/master/library/crux) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/crux`)](https://github.com/docker-library/official-images/blob/master/library/crux). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is CRUX?
 

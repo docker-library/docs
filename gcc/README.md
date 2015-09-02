@@ -5,7 +5,7 @@
 -	[`5.1.0`, `5.1` (*5.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/d7108b41b79e9cdfee2d59bcd84b8bb65ae424d5/5.1/Dockerfile)
 -	[`5.2.0`, `5.2`, `5`, `latest` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/8a59b9222b78e6089c59b9b551f5610178e24696/5.2/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is GCC?
 

@@ -3,7 +3,7 @@
 -	[`13.2`, `harlequin`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/f3c7e8aa49da4c10b3352d56c28d3cea6f3afefa/docker/Dockerfile)
 -	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/35541028a567a6b797487ec202eb2dc7d469a591/docker/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/opensuse`)](https://github.com/docker-library/official-images/blob/master/library/opensuse) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/opensuse`)](https://github.com/docker-library/official-images/blob/master/library/opensuse). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # openSUSE
 

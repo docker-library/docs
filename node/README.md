@@ -9,7 +9,7 @@
 -	[`0.12.7-slim`, `0.12-slim`, `0-slim`, `slim` (*0.12/slim/Dockerfile*)](https://github.com/joyent/docker-node/blob/d798690bdae91174715ac083e31198674f044b68/0.12/slim/Dockerfile)
 -	[`0.12.7-wheezy`, `0.12-wheezy`, `0-wheezy`, `wheezy` (*0.12/wheezy/Dockerfile*)](https://github.com/joyent/docker-node/blob/d798690bdae91174715ac083e31198674f044b68/0.12/wheezy/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Node.js?
 

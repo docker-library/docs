@@ -2,7 +2,7 @@
 
 -	[`2015.07`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/2d0512062ab5682f91ff4befb427550ea3ecd72d/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Rakudo Star?
 

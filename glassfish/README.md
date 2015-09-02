@@ -3,7 +3,7 @@
 -	[`4.0-jdk7`, `4.0` (*4.0-jdk7/Dockerfile*)](https://github.com/aws/aws-eb-glassfish/blob/aafcfc5e812dfb9b998105d3ca9da1b7f10664e1/4.0-jdk7/Dockerfile)
 -	[`4.1-jdk8`, `4.1`, `latest` (*4.1-jdk8/Dockerfile*)](https://github.com/aws/aws-eb-glassfish/blob/aafcfc5e812dfb9b998105d3ca9da1b7f10664e1/4.1-jdk8/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/glassfish`)](https://github.com/docker-library/official-images/blob/master/library/glassfish) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/glassfish`)](https://github.com/docker-library/official-images/blob/master/library/glassfish). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # GlassFish
 

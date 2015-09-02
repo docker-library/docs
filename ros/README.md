@@ -9,7 +9,7 @@
 -	[`jade-robot` (*ros/jade/jade-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d579b9325fd8546a29dfc064661b005cfbc9cf8b/ros/jade/jade-robot/Dockerfile)
 -	[`jade-perception` (*ros/jade/jade-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d579b9325fd8546a29dfc064661b005cfbc9cf8b/ros/jade/jade-perception/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is [ROS](http://www.ros.org/)?
 

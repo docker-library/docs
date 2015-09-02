@@ -10,7 +10,7 @@
 -	[`2.2.3-onbuild`, `2.2-onbuild`, `2-onbuild`, `onbuild` (*2.2/onbuild/Dockerfile*)](https://github.com/docker-library/ruby/blob/5d04363db6f7ae316ef7056063f020557db828e1/2.2/onbuild/Dockerfile)
 -	[`2.2.3-slim`, `2.2-slim`, `2-slim`, `slim` (*2.2/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/0cdec78d89e33750a4b796bd2c748f0d5a1ae654/2.2/slim/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Ruby?
 

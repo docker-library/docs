@@ -2,7 +2,7 @@
 
 -	[`3.5.15`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/72ffa717934d7b8b4a63a86537749cc43e42161a/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/aerospike`)](https://github.com/docker-library/official-images/blob/master/library/aerospike) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/aerospike`)](https://github.com/docker-library/official-images/blob/master/library/aerospike). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # Aerospike
 

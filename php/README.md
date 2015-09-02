@@ -13,7 +13,7 @@
 -	[`7.0.0RC1-apache`, `7.0-apache`, `7-apache` (*7.0/apache/Dockerfile*)](https://github.com/docker-library/php/blob/f5e091ac3815dce80ca496298e0cb94638844b10/7.0/apache/Dockerfile)
 -	[`7.0.0RC1-fpm`, `7.0-fpm`, `7-fpm` (*7.0/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/f5e091ac3815dce80ca496298e0cb94638844b10/7.0/fpm/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is PHP?
 

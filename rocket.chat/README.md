@@ -2,7 +2,7 @@
 
 -	[`0.4.0`, `0.4`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/607714350ff360aa5e0e493fd2cb6057684a980b/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/rocket.chat`)](https://github.com/docker-library/official-images/blob/master/library/rocket.chat) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/rocket.chat`)](https://github.com/docker-library/official-images/blob/master/library/rocket.chat). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # Rocket.Chat
 

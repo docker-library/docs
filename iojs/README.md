@@ -10,7 +10,7 @@
 -	[`3.2.0-onbuild`, `3.2-onbuild`, `3-onbuild`, `onbuild` (*3.2/onbuild/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/68a13ab0f190d079b484c67b9eb266ce999420b0/3.2/onbuild/Dockerfile)
 -	[`3.2.0-slim`, `3.2-slim`, `3-slim`, `slim` (*3.2/slim/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/68a13ab0f190d079b484c67b9eb266ce999420b0/3.2/slim/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/iojs`)](https://github.com/docker-library/official-images/blob/master/library/iojs) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/iojs`)](https://github.com/docker-library/official-images/blob/master/library/iojs). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 ## What is io.js?
 

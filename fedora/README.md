@@ -5,7 +5,7 @@
 -	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/6aa203badac7a03baf26ba0b06969d5d85305b00/Dockerfile)
 -	[`20`, `heisenbug` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/10ada29063147fde9e39190f4c2344b6e6e659e6/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/fedora`)](https://github.com/docker-library/official-images/blob/master/library/fedora) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/fedora`)](https://github.com/docker-library/official-images/blob/master/library/fedora). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # Fedora
 

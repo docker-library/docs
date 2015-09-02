@@ -10,7 +10,7 @@
 -	[`stretch`, `nd90` (*dockerfiles/stretch/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/stretch/Dockerfile)
 -	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/2872942a3d69d4ea732000c8fa29dd6ce0e32cc8/dockerfiles/sid/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is NeuroDebian?
 

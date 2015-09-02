@@ -7,7 +7,7 @@
 -	[`9.4.4`, `9.4`, `9`, `latest` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/cd294bf8dfdf4a74b2077aa6413fa579f9bf07de/9.4/Dockerfile)
 -	[`9.5-alpha2`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/cd294bf8dfdf4a74b2077aa6413fa579f9bf07de/9.5/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is PostgreSQL?
 

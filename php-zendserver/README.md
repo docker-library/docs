@@ -3,7 +3,7 @@
 -	[`5.5`, `7.0-php5.5`, `7.0`, `latest` (*7.0/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver/blob/bb3303d34a3e86a4bc9eb1d652c5cce6ad441a6e/7.0/5.5/Dockerfile)
 -	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver/blob/bb3303d34a3e86a4bc9eb1d652c5cce6ad441a6e/7.0/5.4/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/php-zendserver`)](https://github.com/docker-library/official-images/blob/master/library/php-zendserver) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/php-zendserver`)](https://github.com/docker-library/official-images/blob/master/library/php-zendserver). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Zend Server?
 

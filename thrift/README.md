@@ -2,7 +2,7 @@
 
 -	[`0.9`, `0.9.2`, `latest` (*0.9/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/61c3478ab828d3e610f192b442ac2a7221749c47/0.9/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/thrift`)](https://github.com/docker-library/official-images/blob/master/library/thrift) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/thrift`)](https://github.com/docker-library/official-images/blob/master/library/thrift). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What Is Thrift
 

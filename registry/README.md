@@ -4,7 +4,7 @@
 -	[`0.8.1` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.8.1/Dockerfile)
 -	[`2`, `2.1`, `2.1.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/0258654c749c96ca876b1d9ce456bee42b6794de/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # Docker Registry
 

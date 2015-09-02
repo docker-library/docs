@@ -7,7 +7,7 @@
 -	[`1.5.0`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/bcc3800fbed7f5116ff27ae82e0d881efd50aa69/1.5/Dockerfile)
 -	[`1.5.0-onbuild`, `1.5-onbuild`, `1-onbuild`, `onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang) in the [`docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see the [relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 # What is Go?
 
