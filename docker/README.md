@@ -31,6 +31,8 @@ $ docker run --privileged --name some-docker -d docker:1.8-dind
 
 This image includes `EXPOSE 2375` (the Docker port), so standard container linking will make it automatically available to the linked containers (as the following examples illustrate).
 
+Before running Docker-in-Docker, be sure to read through [Jérôme Petazzoni's excellent blog post on the subject](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/), where he outlines some of the pros and cons of doing so (and some nasty gotchas you might run into).
+
 ## connect to it from a second container
 
 ```console
