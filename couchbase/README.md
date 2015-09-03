@@ -1,10 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `3.0.3`, `enterprise-3.0.3` (*enterprise/couchbase-server/3.0.3/Dockerfile*)](https://github.com/couchbase/docker/blob/695e9dbe4f8928ec4b66a83568d3d583c8215b1e/enterprise/couchbase-server/3.0.3/Dockerfile)
--	[`3.0.2`, `enterprise-3.0.2` (*enterprise/couchbase-server/3.0.2/Dockerfile*)](https://github.com/couchbase/docker/blob/695e9dbe4f8928ec4b66a83568d3d583c8215b1e/enterprise/couchbase-server/3.0.2/Dockerfile)
--	[`community`, `community-3.0.1` (*community/couchbase-server/3.0.1/Dockerfile*)](https://github.com/couchbase/docker/blob/695e9dbe4f8928ec4b66a83568d3d583c8215b1e/community/couchbase-server/3.0.1/Dockerfile)
--	[`2.5.2`, `enterprise-2.5.2` (*enterprise/couchbase-server/2.5.2/Dockerfile*)](https://github.com/couchbase/docker/blob/695e9dbe4f8928ec4b66a83568d3d583c8215b1e/enterprise/couchbase-server/2.5.2/Dockerfile)
--	[`community-2.2.0` (*community/couchbase-server/2.2.0/Dockerfile*)](https://github.com/couchbase/docker/blob/695e9dbe4f8928ec4b66a83568d3d583c8215b1e/community/couchbase-server/2.2.0/Dockerfile)
+-	[`latest`, `enterprise`, `3.1.0`, `enterprise-3.1.0` (*enterprise/couchbase-server/3.1.0/Dockerfile*)](https://github.com/couchbase/docker/blob/dcf715fcfdc88225700ee76e437d1d4522ae150c/enterprise/couchbase-server/3.1.0/Dockerfile)
+-	[`3.0.3`, `enterprise-3.0.3` (*enterprise/couchbase-server/3.0.3/Dockerfile*)](https://github.com/couchbase/docker/blob/dcf715fcfdc88225700ee76e437d1d4522ae150c/enterprise/couchbase-server/3.0.3/Dockerfile)
+-	[`3.0.2`, `enterprise-3.0.2` (*enterprise/couchbase-server/3.0.2/Dockerfile*)](https://github.com/couchbase/docker/blob/dcf715fcfdc88225700ee76e437d1d4522ae150c/enterprise/couchbase-server/3.0.2/Dockerfile)
+-	[`community`, `community-3.0.1` (*community/couchbase-server/3.0.1/Dockerfile*)](https://github.com/couchbase/docker/blob/dcf715fcfdc88225700ee76e437d1d4522ae150c/community/couchbase-server/3.0.1/Dockerfile)
+-	[`2.5.2`, `enterprise-2.5.2` (*enterprise/couchbase-server/2.5.2/Dockerfile*)](https://github.com/couchbase/docker/blob/dcf715fcfdc88225700ee76e437d1d4522ae150c/enterprise/couchbase-server/2.5.2/Dockerfile)
+-	[`community-2.2.0` (*community/couchbase-server/2.2.0/Dockerfile*)](https://github.com/couchbase/docker/blob/dcf715fcfdc88225700ee76e437d1d4522ae150c/community/couchbase-server/2.2.0/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/couchbase`)](https://github.com/docker-library/official-images/blob/master/library/couchbase). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

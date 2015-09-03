@@ -3,7 +3,7 @@
 -	[`6.0.9`, `6.0`, `6` (*6.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/d691efbe821094e710340aa025ff98788a7464ed/6.0/Dockerfile)
 -	[`7.0.9`, `7.0`, `7` (*7.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/ddc40eb3f52bcff1ed638dd07ae9280bb96d0c11/7.0/Dockerfile)
 -	[`8.0.7`, `8.0` (*8.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/ddc40eb3f52bcff1ed638dd07ae9280bb96d0c11/8.0/Dockerfile)
--	[`8.1.2`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/docker-library/owncloud/blob/ddc40eb3f52bcff1ed638dd07ae9280bb96d0c11/8.1/Dockerfile)
+-	[`8.1.2`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/docker-library/owncloud/blob/b173a67ad37c18df3a8c9766a3cbff71fb985a0d/8.1/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
