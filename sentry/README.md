@@ -65,6 +65,13 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 		$ docker run -d --name sentry-celery-beat --link some-redis:redis sentry sentry celery beat
 		$ docker run -d --name sentry-celery1 --link some-redis:redis sentry sentry celery worker
 		```
+		
+	-	using the celery bundled with sentry and a database
+
+		```console
+		$ docker run -d --name sentry-celery-beat --link some-redis:redis --link some-postgres:postgres sentry sentry celery beat
+		$ docker run -d --name sentry-celery1 --link some-redis:redis --link some-postgres:postgres sentry sentry celery worker
+		```
 
 ### port mapping
 
