@@ -36,6 +36,12 @@ $ docker run --name some-%%REPO%%2 -d -e CASSANDRA_SEEDS="$(docker inspect --for
 
 ... where `some-%%REPO%%` is the name of your original Cassandra Server container, taking advantage of `docker inspect` to get the IP address of the other container.
 
+Or you may use the docker run --link option to tell the new node where the first is:
+
+```console
+$ docker run --name some-cassandra2 -d --link some-cassandra:cassandra cassandra:tag
+```
+
 For separate machines (ie, two VMs on a cloud provider), you need to tell Cassandra what IP address to advertise to the other nodes (since the address of the container is behind the docker bridge).
 
 Assuming the first machine's IP address is `10.42.42.42` and the second's is `10.43.43.43`, start the first with exposed gossip port:
