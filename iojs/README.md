@@ -1,14 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.4`, `1.8`, `1` (*1.8/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/0a5fc1175cdb1704b172c72f3d34d53f8310da31/1.8/Dockerfile)
--	[`1.8.4-onbuild`, `1.8-onbuild`, `1-onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/0a5fc1175cdb1704b172c72f3d34d53f8310da31/1.8/onbuild/Dockerfile)
--	[`1.8.4-slim`, `1.8-slim`, `1-slim` (*1.8/slim/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/0a5fc1175cdb1704b172c72f3d34d53f8310da31/1.8/slim/Dockerfile)
--	[`2.5.0`, `2.5`, `2` (*2.5/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/0a5fc1175cdb1704b172c72f3d34d53f8310da31/2.5/Dockerfile)
--	[`2.5.0-onbuild`, `2.5-onbuild`, `2-onbuild` (*2.5/onbuild/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/0a5fc1175cdb1704b172c72f3d34d53f8310da31/2.5/onbuild/Dockerfile)
--	[`2.5.0-slim`, `2.5-slim`, `2-slim` (*2.5/slim/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/0a5fc1175cdb1704b172c72f3d34d53f8310da31/2.5/slim/Dockerfile)
--	[`3.2.0`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/68a13ab0f190d079b484c67b9eb266ce999420b0/3.2/Dockerfile)
--	[`3.2.0-onbuild`, `3.2-onbuild`, `3-onbuild`, `onbuild` (*3.2/onbuild/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/68a13ab0f190d079b484c67b9eb266ce999420b0/3.2/onbuild/Dockerfile)
--	[`3.2.0-slim`, `3.2-slim`, `3-slim`, `slim` (*3.2/slim/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/68a13ab0f190d079b484c67b9eb266ce999420b0/3.2/slim/Dockerfile)
+-	[`1.8.4`, `1.8`, `1` (*1.8/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/54780958c85a399f6516a90d128cc49fc0ad96f8/1.8/Dockerfile)
+-	[`1.8.4-onbuild`, `1.8-onbuild`, `1-onbuild` (*1.8/onbuild/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/54780958c85a399f6516a90d128cc49fc0ad96f8/1.8/onbuild/Dockerfile)
+-	[`1.8.4-slim`, `1.8-slim`, `1-slim` (*1.8/slim/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/54780958c85a399f6516a90d128cc49fc0ad96f8/1.8/slim/Dockerfile)
+-	[`2.5.0`, `2.5`, `2` (*2.5/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/54780958c85a399f6516a90d128cc49fc0ad96f8/2.5/Dockerfile)
+-	[`2.5.0-onbuild`, `2.5-onbuild`, `2-onbuild` (*2.5/onbuild/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/54780958c85a399f6516a90d128cc49fc0ad96f8/2.5/onbuild/Dockerfile)
+-	[`2.5.0-slim`, `2.5-slim`, `2-slim` (*2.5/slim/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/54780958c85a399f6516a90d128cc49fc0ad96f8/2.5/slim/Dockerfile)
+-	[`3.3.0`, `3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/54780958c85a399f6516a90d128cc49fc0ad96f8/3.3/Dockerfile)
+-	[`3.3.0-onbuild`, `3.3-onbuild`, `3-onbuild`, `onbuild` (*3.3/onbuild/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/54780958c85a399f6516a90d128cc49fc0ad96f8/3.3/onbuild/Dockerfile)
+-	[`3.3.0-slim`, `3.3-slim`, `3-slim`, `slim` (*3.3/slim/Dockerfile*)](https://github.com/nodejs/docker-iojs/blob/54780958c85a399f6516a90d128cc49fc0ad96f8/3.3/slim/Dockerfile)
 
 For more information about this image and its history, please see the [relevant manifest file (`library/iojs`)](https://github.com/docker-library/official-images/blob/master/library/iojs). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
