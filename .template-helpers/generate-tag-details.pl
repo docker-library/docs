@@ -155,10 +155,11 @@ while (my $image = shift) {
 		blob_content_length => 0,
 	);
 	for my $i (0 .. $#{ $manifest->{fsLayers} }) {
+		my $v1 = Mojo::Util::encode 'UTF-8', $manifest->{history}[$i]{v1Compatibility};
 		my $data = get_layer_data(
 			$repo, undef,
 			$manifest->{fsLayers}[$i]{blobSum},
-			Mojo::JSON::decode_json($manifest->{history}[$i]{v1Compatibility}),
+			Mojo::JSON::decode_json($v1),
 		);
 		$parentChild{$data->{parent} // ''} = $data->{id};
 		$totals{$_} += $data->{$_} for keys %totals;
