@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.3-apache`, `3.4.3`, `3.4-apache`, `3.4`, `3-apache`, `apache`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/40426bb7634578f171c8cdef72bca6a11d26e571/apache/Dockerfile)
--	[`3.4.3-fpm`, `3.4-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/40426bb7634578f171c8cdef72bca6a11d26e571/fpm/Dockerfile)
+-	[`3.4.4-apache`, `3.4.4`, `3.4-apache`, `3.4`, `3-apache`, `apache`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/2d3bc88028d3f767b951fb5cd41d9d653ce6619d/apache/Dockerfile)
+-	[`3.4.4-fpm`, `3.4-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/2d3bc88028d3f767b951fb5cd41d9d653ce6619d/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
