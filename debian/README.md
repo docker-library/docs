@@ -16,7 +16,9 @@
 -	[`rc-buggy` (*debian/rc-buggy/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/698f86772367cf08c80396a1624b4d8fb59f94aa/debian/rc-buggy/Dockerfile)
 -	[`experimental` (*debian/experimental/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/698f86772367cf08c80396a1624b4d8fb59f94aa/debian/experimental/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/debian`)](https://github.com/docker-library/official-images/blob/master/library/debian). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/debian`)](https://github.com/docker-library/official-images/blob/master/library/debian). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `debian/tag-details.md` file](https://github.com/docker-library/docs/blob/master/debian/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Debian?
 

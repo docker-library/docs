@@ -2,7 +2,9 @@
 
 -	[`0.6.6`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/9909ce47584df326aa0089e4a1f71af89e5baea6/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/nats`)](https://github.com/docker-library/official-images/blob/master/library/nats). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/nats`)](https://github.com/docker-library/official-images/blob/master/library/nats). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nats/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nats/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # [NATS](https://nats.io): A high-performance cloud native messaging system.
 

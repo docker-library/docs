@@ -2,7 +2,9 @@
 
 -	[`3.1.18`, `3.1`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/celery/blob/a4173ea8c6afb21ce3d3fad90242274e4911f278/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/celery`)](https://github.com/docker-library/official-images/blob/master/library/celery). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/celery`)](https://github.com/docker-library/official-images/blob/master/library/celery). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `celery/tag-details.md` file](https://github.com/docker-library/docs/blob/master/celery/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # Celery
 

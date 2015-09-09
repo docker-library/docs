@@ -2,7 +2,9 @@
 
 -	[`0.4.0`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/1e058ce0f547491bb33255c8a58236e3bea26cb3/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `swarm/tag-details.md` file](https://github.com/docker-library/docs/blob/master/swarm/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # Swarm: a Docker-native clustering system
 

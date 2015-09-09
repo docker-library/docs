@@ -7,7 +7,9 @@
 -	[`8.0.26-jre7`, `8.0-jre7`, `8-jre7`, `jre7`, `8.0.26`, `8.0`, `8`, `latest` (*8-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/9afdd27634a5b847a3b7aa2d611ad5828659d228/8-jre7/Dockerfile)
 -	[`8.0.26-jre8`, `8.0-jre8`, `8-jre8`, `jre8` (*8-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/9afdd27634a5b847a3b7aa2d611ad5828659d228/8-jre8/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `tomcat/tag-details.md` file](https://github.com/docker-library/docs/blob/master/tomcat/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Tomcat?
 

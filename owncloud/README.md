@@ -5,7 +5,9 @@
 -	[`8.0.7`, `8.0` (*8.0/Dockerfile*)](https://github.com/docker-library/owncloud/blob/ddc40eb3f52bcff1ed638dd07ae9280bb96d0c11/8.0/Dockerfile)
 -	[`8.1.2`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/docker-library/owncloud/blob/b173a67ad37c18df3a8c9766a3cbff71fb985a0d/8.1/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `owncloud/tag-details.md` file](https://github.com/docker-library/docs/blob/master/owncloud/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is ownCloud?
 

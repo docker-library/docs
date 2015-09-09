@@ -4,7 +4,9 @@
 -	[`2.1.9`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/c7d43443c2e80ee9edd0814c8e8332781f7d93ae/2.1/Dockerfile)
 -	[`2.2.1`, `2.2`, `2`, `latest` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/f1324a4a0938e3eb9f6c40f2065694f4dd22f719/2.2/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `cassandra/tag-details.md` file](https://github.com/docker-library/docs/blob/master/cassandra/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Cassandra?
 

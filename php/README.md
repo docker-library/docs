@@ -13,7 +13,9 @@
 -	[`7.0.0RC2-apache`, `7.0-apache`, `7-apache` (*7.0/apache/Dockerfile*)](https://github.com/docker-library/php/blob/8c25cfb2c5773a02e98ad7488a65db5123d4f2f7/7.0/apache/Dockerfile)
 -	[`7.0.0RC2-fpm`, `7.0-fpm`, `7-fpm` (*7.0/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/8c25cfb2c5773a02e98ad7488a65db5123d4f2f7/7.0/fpm/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `php/tag-details.md` file](https://github.com/docker-library/docs/blob/master/php/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is PHP?
 

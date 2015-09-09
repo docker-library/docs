@@ -6,7 +6,9 @@
 -	[`3.0.6`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/d5aca073ca71a7023e0d4193bd14642c6950d454/3.0/Dockerfile)
 -	[`3.1.7`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/3e6585721fc78b156a5ce832cf9bb282bbf833ab/3.1/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mongo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mongo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is MongoDB?
 

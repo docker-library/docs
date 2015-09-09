@@ -10,7 +10,9 @@
 -	[`1.7.1-dind`, `1.7-dind` (*1.7/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/251cf235760a2ba6db1cf1ddc8ccb3d4da5ec99d/1.7/dind/Dockerfile)
 -	[`1.7.1-git`, `1.7-git` (*1.7/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a98e0c42a96497670c36f4b2dcad2bcc81f18f35/1.7/git/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `docker/tag-details.md` file](https://github.com/docker-library/docs/blob/master/docker/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Docker?
 

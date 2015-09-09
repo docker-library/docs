@@ -3,7 +3,9 @@
 -	[`latest`, `lein-2.5.2` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/d7a27ab87b06a04d6ee0d3366d23df7b514166ea/Dockerfile)
 -	[`onbuild`, `lein-2.5.2-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/d7a27ab87b06a04d6ee0d3366d23df7b514166ea/onbuild/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `clojure/tag-details.md` file](https://github.com/docker-library/docs/blob/master/clojure/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Clojure?
 

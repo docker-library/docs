@@ -3,7 +3,9 @@
 -	[`4.3.0-apache`, `4.3.0`, `4.3-apache`, `4.3`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/3447b0ea9c1eccf1e00feb8e2e70c311690763af/apache/Dockerfile)
 -	[`4.3.0-fpm`, `4.3-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/3447b0ea9c1eccf1e00feb8e2e70c311690763af/fpm/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `wordpress/tag-details.md` file](https://github.com/docker-library/docs/blob/master/wordpress/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is WordPress?
 

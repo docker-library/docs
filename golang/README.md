@@ -8,7 +8,9 @@
 -	[`1.5.0-onbuild`, `1.5-onbuild`, `1-onbuild`, `onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
 -	[`1.5.0-wheezy`, `1.5-wheezy`, `1-wheezy`, `wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/58111b7243e7fb03e20c93ec8f0946cbbf5e2fec/1.5/wheezy/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `golang/tag-details.md` file](https://github.com/docker-library/docs/blob/master/golang/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Go?
 

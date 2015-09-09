@@ -7,7 +7,9 @@
 -	[`9.0-jdk`, `9.0.1-jdk`, `9.0.1.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/06a356913b1be07f1349800e489e2d786db1fab1/9000/jdk/Dockerfile)
 -	[`9-onbuild`, `9.0-onbuild`, `9.0.1-onbuild`, `9.0.1.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/06a356913b1be07f1349800e489e2d786db1fab1/9000/onbuild/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jruby/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jruby/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is JRuby?
 

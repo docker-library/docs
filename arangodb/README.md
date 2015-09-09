@@ -3,7 +3,9 @@
 -	[`2.5.5`, `2.5` (*jessie/2.5.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/636cd874df38edd77a187c08e1803693b3d978d3/jessie/2.5.5/Dockerfile)
 -	[`2.6`, `2.6.7`, `latest` (*jessie/2.6.7/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/53d4b1bb96473099fcb4a93e6be59d975dbcb3ab/jessie/2.6.7/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/arangodb`)](https://github.com/docker-library/official-images/blob/master/library/arangodb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/arangodb`)](https://github.com/docker-library/official-images/blob/master/library/arangodb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `arangodb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/arangodb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is ArangoDB?
 

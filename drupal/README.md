@@ -3,7 +3,9 @@
 -	[`7.39`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/drupal/blob/91a45111ac40c3e1fc43ad914f7c4e141f84e4b2/7/Dockerfile)
 -	[`8.0.0-beta15`, `8.0.0`, `8.0`, `8` (*8/Dockerfile*)](https://github.com/docker-library/drupal/blob/c35c4c20f80f3585242161dced9755cfda9c334a/8/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `drupal/tag-details.md` file](https://github.com/docker-library/docs/blob/master/drupal/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Drupal?
 

@@ -2,7 +2,9 @@
 
 -	[`1.8.1`, `1.8`, `1` (*Dockerfile*)](https://github.com/docker/docker/blob/d12ea79c9de6d144ce6bc7ccfe41c507cca6fd35/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `docker-dev/tag-details.md` file](https://github.com/docker-library/docs/blob/master/docker-dev/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Docker?
 

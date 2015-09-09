@@ -6,7 +6,9 @@
 -	[`15.10`, `wily` (*15.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/15.10/Dockerfile)
 -	[`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/devel/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/ubuntu-debootstrap`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-debootstrap). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu-debootstrap`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-debootstrap). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ubuntu-debootstrap/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ubuntu-debootstrap/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # `ubuntu-debootstrap`
 

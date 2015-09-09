@@ -6,7 +6,9 @@
 -	[`6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker/blob/b7ebd0e94eb2abc4932a9e1d27cf1ba9645e0d5c/OracleLinux/6.6/Dockerfile)
 -	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker/blob/b7ebd0e94eb2abc4932a9e1d27cf1ba9645e0d5c/OracleLinux/5.11/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/oraclelinux`)](https://github.com/docker-library/official-images/blob/master/library/oraclelinux). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/oraclelinux`)](https://github.com/docker-library/official-images/blob/master/library/oraclelinux). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `oraclelinux/tag-details.md` file](https://github.com/docker-library/docs/blob/master/oraclelinux/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # Oracle Linux
 

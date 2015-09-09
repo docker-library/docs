@@ -4,7 +4,9 @@
 -	[`5.6.26`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/b3b265602da7c733c66582ac016a491d28b9b1f9/5.6/Dockerfile)
 -	[`5.7.8-rc`, `5.7.8`, `5.7` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/b3b265602da7c733c66582ac016a491d28b9b1f9/5.7/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mysql/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mysql/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png)
 

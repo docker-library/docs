@@ -2,7 +2,9 @@
 
 -	[`8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/0afa334549c20c2a00eb1b8f5540c2f35bd7cac4/8.0/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/odoo`)](https://github.com/docker-library/official-images/blob/master/library/odoo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/odoo`)](https://github.com/docker-library/official-images/blob/master/library/odoo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `odoo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/odoo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Odoo?
 

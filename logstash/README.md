@@ -3,7 +3,9 @@
 -	[`1.4.5-1-a2bacae`, `1.4.5-1`, `1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/29f240de10ac358dba1bed7e777ab35742029858/1.4/Dockerfile)
 -	[`1.5.4-1`, `1.5.4`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/722165120c05043a69c0482d7fecaff404428e51/1.5/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `logstash/tag-details.md` file](https://github.com/docker-library/docs/blob/master/logstash/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Logstash?
 

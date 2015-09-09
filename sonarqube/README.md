@@ -3,7 +3,9 @@
 -	[`latest`, `5.1.2` (*5.1.2/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/7f1d131f4371e432336d569b5a8fa8c06cfe7da8/5.1.2/Dockerfile)
 -	[`lts`, `4.5.4` (*4.5.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/83e2cbed37a8a6947b130958d0cb2ee7acd42d3a/4.5.4/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sonarqube/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sonarqube/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is SonarQube?
 

@@ -2,7 +2,9 @@
 
 -	[`0.9`, `0.9.2`, `latest` (*0.9/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/61c3478ab828d3e610f192b442ac2a7221749c47/0.9/Dockerfile)
 
-For more information about this image and its history, please see the [relevant manifest file (`library/thrift`)](https://github.com/docker-library/official-images/blob/master/library/thrift). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/thrift`)](https://github.com/docker-library/official-images/blob/master/library/thrift). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+
+For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `thrift/tag-details.md` file](https://github.com/docker-library/docs/blob/master/thrift/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What Is Thrift
 
