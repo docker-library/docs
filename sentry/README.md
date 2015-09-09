@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.7.0`, `7.7`, `7`, `latest` (*Dockerfile*)](https://github.com/docker-library/sentry/blob/3115587c614e64c66419a26b4f7be6ac067e3a79/Dockerfile)
+-	[`7.7.0`, `7.7`, `7`, `latest` (*Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/3115587c614e64c66419a26b4f7be6ac067e3a79/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -98,7 +98,7 @@ Documentation for this image is stored in the [`sentry/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/sentry/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -106,4 +106,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/sentry/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/getsentry/docker-sentry/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
