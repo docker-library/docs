@@ -11,6 +11,19 @@ die 'no images specified' unless @ARGV;
 my $ua = Mojo::UserAgent->new->max_redirects(10);
 $ua->transactor->name('Docker');
 
+my $maxRetries = 3;
+sub ua_req {
+	my $method = shift;
+	my $tries = $maxRetries;
+	my $tx;
+	do {
+		--$tries;
+		$tx = $ua->$method(@_);
+		return $tx if $tx->success;
+	} while ($tries > 0);
+	return $tx;
+}
+
 sub split_image_name {
 	my $image = shift;
 	if ($image =~ m{
@@ -54,7 +67,7 @@ sub get_token {
 		}
 	}
 	$url = $url->to_abs;
-	my $tokenTx = $ua->get($url);
+	my $tokenTx = ua_req(get => $url);
 	die "failed to fetch token for $repo" unless $tokenTx->success;
 	return $tokens{$repo} = $tokenTx->res->json->{token};
 }
@@ -68,7 +81,7 @@ sub get_manifest {
 	my $token = get_token($repo);
 	my $authorizationHeader = { Authorization => "Bearer $token" };
 
-	my $manifestTx = $ua->get("https://registry-1.docker.io/v2/$repo/manifests/$tag" => $authorizationHeader);
+	my $manifestTx = ua_req(get => "https://registry-1.docker.io/v2/$repo/manifests/$tag" => $authorizationHeader);
 	die "failed to get manifest for $image" unless $manifestTx->success;
 	return $manifests{$image} = $manifestTx->res->json;
 }
@@ -82,7 +95,7 @@ sub get_blob_headers {
 	my $token = get_token($repo);
 	my $authorizationHeader = { Authorization => "Bearer $token" };
 
-	my $headersTx = $ua->head("https://registry-1.docker.io/v2/$repo/blobs/$blob" => $authorizationHeader);
+	my $headersTx = ua_req(head => "https://registry-1.docker.io/v2/$repo/blobs/$blob" => $authorizationHeader);
 	die "failed to get headers for $key" unless $headersTx->success;
 	return $headers{$key} = $headersTx->res->headers;
 }
