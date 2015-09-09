@@ -18,10 +18,14 @@ repos=( "${repos[@]%/}" )
 script="$helperDir/generate-tag-details.pl"
 for repo in "${repos[@]}"; do
 	echo -n "$repo ... "
+	IFS=$'\n'
+	tags=( $(bashbrew list "$repo" 2>/dev/null || true) )
+	unset IFS
+	if [ "${#tags[@]}" -eq 0 ]; then
+		echo 'skipping'
+		continue
+	fi
 	{
-		IFS=$'\n'
-		tags=( $(bashbrew list "$repo") )
-		unset IFS
 		echo "<!-- THIS FILE IS GENERATED VIA '$script' -->"
 		echo
 		echo "# Tags of \`$repo\`"
