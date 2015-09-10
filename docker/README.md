@@ -1,11 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.2-rc1`, `1.8-rc`, `rc` (*1.8-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/6c4acc40ebc56a539fd33e7799187641dc1e27b0/1.8-rc/Dockerfile)
--	[`1.8.2-rc1-dind`, `1.8-rc-dind`, `rc-dind` (*1.8-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5c4db83ebdc26e4303fc3a6adf916367d440eea2/1.8-rc/dind/Dockerfile)
--	[`1.8.2-rc1-git`, `1.8-rc-git`, `rc-git` (*1.8-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/5c4db83ebdc26e4303fc3a6adf916367d440eea2/1.8-rc/git/Dockerfile)
--	[`1.8.1`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/docker/blob/6c4acc40ebc56a539fd33e7799187641dc1e27b0/1.8/Dockerfile)
--	[`1.8.1-dind`, `1.8-dind`, `1-dind`, `dind` (*1.8/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/251cf235760a2ba6db1cf1ddc8ccb3d4da5ec99d/1.8/dind/Dockerfile)
--	[`1.8.1-git`, `1.8-git`, `1-git`, `git` (*1.8/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a2614c9b94d3bae7d8d61a7cf4d56a42f6332104/1.8/git/Dockerfile)
+-	[`1.8.2`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/docker/blob/bb15fc25bbd4f51a880cf02f91eab447b1083b75/1.8/Dockerfile)
+-	[`1.8.2-dind`, `1.8-dind`, `1-dind`, `dind` (*1.8/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/251cf235760a2ba6db1cf1ddc8ccb3d4da5ec99d/1.8/dind/Dockerfile)
+-	[`1.8.2-git`, `1.8-git`, `1-git`, `git` (*1.8/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a2614c9b94d3bae7d8d61a7cf4d56a42f6332104/1.8/git/Dockerfile)
 -	[`1.7.1`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/docker/blob/6c4acc40ebc56a539fd33e7799187641dc1e27b0/1.7/Dockerfile)
 -	[`1.7.1-dind`, `1.7-dind` (*1.7/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/251cf235760a2ba6db1cf1ddc8ccb3d4da5ec99d/1.7/dind/Dockerfile)
 -	[`1.7.1-git`, `1.7-git` (*1.7/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a98e0c42a96497670c36f4b2dcad2bcc81f18f35/1.7/git/Dockerfile)

@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.1`, `1.8`, `1` (*Dockerfile*)](https://github.com/docker/docker/blob/d12ea79c9de6d144ce6bc7ccfe41c507cca6fd35/Dockerfile)
+-	[`1.8.2`, `1.8`, `1` (*Dockerfile*)](https://github.com/docker/docker/blob/0a8c2e3717cb3a6fe4e8cb10243cb06473052541/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
