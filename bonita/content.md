@@ -12,40 +12,40 @@ Bonita BPM is an open-source business process management and workflow suite crea
 
 	docker run --name bonita -d -p 8080:8080 bonita
 
-This will start a container running the [Tomcat Bundle](http://documentation.bonitasoft.com/tomcat-bundle-2) with Bonita BPM Engine + Portal. As you didn't specify any environment variables it's almost like if you have launched the Bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). It means that Bonita BPM uses a H2 database here.
+This will start a container running the [Tomcat Bundle](http://documentation.bonitasoft.com/tomcat-bundle-2) with Bonita BPM Engine + Bonita BPM Portal. With no environment variables specified, it's as like if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita BPM uses a H2 database here.
 
-You can access to the portal on http://localhost:8080/bonita and login using the default credentials : install / install
+You can access the Bonita BPM Portal on http://localhost:8080/bonita and login using the default credentials: install / install
 
 ## Link Bonita BPM to a database
 
 ### MySQL
 
-We need to [increase the packet size](http://documentation.bonitasoft.com/database-configuration-2#mysqlspec) set by default to 1M :
+[Increase the packet size](http://documentation.bonitasoft.com/database-configuration-2#mysqlspec) which is set by default to 1M:
 
 	mkdir -p ~/Documents/Docker/Volumes/custom_mysql
 	echo "[mysqld]" > ~/Documents/Docker/Volumes/custom_mysql/bonita.cnf
 	echo "max_allowed_packet=16M" >> ~/Documents/Docker/Volumes/custom_mysql/bonita.cnf
 
-Then we can mount that directory location as /etc/mysql/conf.d inside the MySQL container :
+Mount that directory location as /etc/mysql/conf.d inside the MySQL container:
 
 	docker run --name mydbmysql -v ~/Documents/Docker/Volumes/custom_mysql/:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql:5.5
 
 See the [official MySQL documentation](https://registry.hub.docker.com/_/mysql/) for more details.
 
-Now we can start our application container like this in order to link it to the MySQL container :
+Start your application container to link it to the MySQL container:
 
 	docker run --name bonita_mysql --link mydbmysql:mysql -d -p 8080:8080 bonita
 
 ### PostgreSQL
 
-We need to [set max_prepared_transactions to 100](http://documentation.bonitasoft.com/database-configuration-business-data-1) :
+[Set max_prepared_transactions to 100](http://documentation.bonitasoft.com/database-configuration-business-data-1):
 
 	mkdir -p ~/Documents/Docker/Volumes/custom_postgres
 	echo '#!/bin/bash' > ~/Documents/Docker/Volumes/custom_postgres/bonita.sh
 	echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$/max_prepared_transactions = 100/" "$PGDATA"/postgresql.conf' >> ~/Documents/Docker/Volumes/custom_postgres/bonita.sh
 	chmod +x ~/Documents/Docker/Volumes/custom_postgres/bonita.sh
 
-Then we can mount that directory location as /docker-entrypoint-initdb.d inside the PostgreSQL container :
+Mount that directory location as /docker-entrypoint-initdb.d inside the PostgreSQL container:
 
 	docker run --name mydbpostgres -v ~/Documents/Docker/Volumes/custom_postgres/:/docker-entrypoint-initdb.d -e POSTGRES_PASSWORD=mysecretpassword -d postgres:9.3
 
@@ -57,16 +57,16 @@ See the [official PostgreSQL documentation](https://registry.hub.docker.com/_/po
 
 	docker run --name=bonita -e "TENANT_LOGIN=tech_user" -e "TENANT_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 bonita
 
-If you do so, you can access to the portal on http://localhost:8080/bonita and login using : tech_user / secret
+Now you can access the Bonita BPM Portal on localhost:8080/bonita and login using: tech_user / secret
 
-## Where to Store Data
+## Where to store data
 
-Most of the data are stored in database and can be stored outside the Bonita container as described above using PostgreSQL or MySQL container. However some data remains inside the Bonita Bundle. The [Bonita Home](http://documentation.bonitasoft.com/bonita-home-0) is a folder called `bonita` which contains configuration, working, and temporary folders and files. There are also logs file inside the `logs` folder.
+Most of the data are stored in a database and can be stored outside the Bonita container as described above using the PostgreSQL or MySQL container. However, some data remains inside the Bonita bundle. Bonita Home is a folder, called `bonita`, which contains configuration, working, and temporary folders and files. There are also log files inside the `logs` folder.
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `%%REPO%%` images to familiarize themselves with the options available, including:
 
 -	Let Docker manage the storage of your data [by writing the files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -75,7 +75,7 @@ The Docker documentation is a good starting point for understanding the differen
 
 	docker run --name some-%%REPO%% -v /my/own/datadir:/opt/bonita -d %%REPO%%:tag
 
-The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/opt/bonita` inside the container, where Bonita by default will deploy its Bundle and write its data files.
+The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/opt/bonita` inside the container, where Bonita will deploy the bundle and write data files by default.
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
 
@@ -83,22 +83,27 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 
 ## Migrate from an earlier version of Bonita BPM
 
-1.	First we need to stop the container to perform a backup
+1.	Stop the container to perform a backup
 
 		docker stop bonita_7.0.0_postgres
 
 2.	Check where your data are stored
 
-		docker inspect bonita_7.0.0_postgres | grep -A1 '"Volumes"'
-		"Volumes": {
-		"/opt/bonita": {}
-		--
-		"Volumes": {
-		"/opt/bonita": "/home/user/Documents/Docker/Volumes/bonita_7.0.0_postgres"
+		docker inspect bonita_7.0.0_postgres
+		[...]
+		    "Mounts": [
+		        {
+		            "Source": "/home/user/Documents/Docker/Volumes/bonita_7.0.0_postgres",
+		            "Destination": "/opt/bonita",
+		            "Mode": "",
+		            "RW": true
+		        }
+		    ],
+		[...]
 
 3.	Copy data from the filesystem
 
-		cp -r ~/Documents/Docker/Volumes/bonita_7.0.0_postgres ~/Documents/Docker/Volumes/bonita_7.0.1_postgres
+		cp -r ~/Documents/Docker/Volumes/bonita_7.0.0_postgres ~/Documents/Docker/Volumes/bonita_7.0.3_postgres
 
 4.	Retrieve the DB container IP
 
@@ -120,24 +125,24 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 		export PGPASSWORD=newbonitapass
 		cat /tmp/bonitadb.sql | psql -U newbonitauser -h 172.17.0.26 newbonitadb
 
-7.	Retrieve the last migration tool and the target version of bonita bundle
+7.	Retrieve the last migration tool and the target version of the Bonita bundle
 
-		cd ~/Documents/Docker/Volumes/bonita_7.0.1_postgres
-		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.0.0.zip
-		wget http://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.0.1-Tomcat-7.0.55.zip
-		unzip bonita-migration-distrib-2.0.0.zip -d bonita-migration-distrib-2.0.0
-		unzip BonitaBPMCommunity-7.0.1-Tomcat-7.0.55.zip
+		cd ~/Documents/Docker/Volumes/bonita_7.0.3_postgres
+		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.2.0.zip
+		wget http://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.0.3-Tomcat-7.0.55.zip
+		unzip bonita-migration-distrib-2.2.0.zip -d bonita-migration-distrib-2.2.0
+		unzip BonitaBPMCommunity-7.0.3-Tomcat-7.0.55.zip
 
-8.	Move previous home into the new bundle
+8.	Move the previous Home into the new bundle
 
-		mv BonitaBPMCommunity-7.0.1-Tomcat-7.0.55/bonita/ BonitaBPMCommunity-7.0.1-Tomcat-7.0.55/bonita.orig
-		cp -r BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/bonita/ BonitaBPMCommunity-7.0.1-Tomcat-7.0.55/bonita/
+		mv BonitaBPMCommunity-7.0.3-Tomcat-7.0.55/bonita/ BonitaBPMCommunity-7.0.3-Tomcat-7.0.55/bonita.orig
+		cp -r BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/bonita/ BonitaBPMCommunity-7.0.3-Tomcat-7.0.55/bonita/
 
 9.	Configure the migration tool
 
-		cd bonita-migration-distrib-2.0.0/
+		cd bonita-migration-distrib-2.2.0/
 
-	add jdbc driver
+	add the jdbc driver
 
 		cp ../BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/lib/bonita/postgresql-9.3-1102.jdbc41.jar lib/
 
@@ -147,28 +152,26 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 
 	For example :
 
-		bonita.home=/home/user/Documents/Docker/Volumes/bonita_7.0.1_postgres/BonitaBPMCommunity-7.0.1-Tomcat-7.0.55/bonita
-		# JDBC properties
-		## Postgres
+		bonita.home=/home/user/Documents/Docker/Volumes/bonita_7.0.3_postgres/BonitaBPMCommunity-7.0.3-Tomcat-7.0.55/bonita
 		db.vendor=postgres
 		db.url=jdbc:postgresql://172.17.0.26:5432/newbonitadb
 		db.driverClass=org.postgresql.Driver
 		db.user=newbonitauser
 		db.password=newbonitapass
 
-10.	Launch the migration :
+10.	Launch the migration
 
 		./migration.sh
 
-11.	launch the new container pointing towards the copy of DB and filesystem :
+11.	Launch the new container pointing towards the copy of DB and filesystem
 
-		docker run --name=bonita_7.0.1_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v ~/Documents/Docker/Volumes/bonita_7.0.1_postgres:/opt/bonita/ -d -p 8081:8080 bonita:7.0.1
+		docker run --name=bonita_7.0.3_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v ~/Documents/Docker/Volumes/bonita_7.0.3_postgres:/opt/bonita/ -d -p 8081:8080 bonita:7.0.3
 
 For more details regarding Bonita migration, see the [documentation](http://documentation.bonitasoft.com/migrate-earlier-version-bonita-bpm-0).
 
 ## Security
 
-This docker image ensures to activate by default both static and dynamic authorization checks on REST API. To be coherent it also deactivates the HTTP API.
+This Docker image activates both static and dynamic authorization checks by default on REST API. To be consistent, it also deactivates the HTTP API.
 
 -	REST API authorization
 
@@ -178,37 +181,37 @@ This docker image ensures to activate by default both static and dynamic authori
 
 -	[HTTP API](http://documentation.bonitasoft.com/rest-api-authorization-0#activate)
 
-But for specific needs you can override this behavior by setting HTTP_API to true and REST_API_DYN_AUTH_CHECKS to false :
+For specific needs you can override this behavior by setting HTTP_API to true and REST_API_DYN_AUTH_CHECKS to false:
 
 	docker run  -e HTTP_API=true -e REST_API_DYN_AUTH_CHECKS=false --name bonita -d -p 8080:8080 bonita
 
-## Environnement variables
+## Environment variables
 
 When you start the `bonita` image, you can adjust the configuration of the Bonita instance by passing one or more environment variables on the `docker run` command line.
 
 ### `PLATFORM_PASSWORD`
 
-This environment variable [is recommended](http://documentation.bonitasoft.com/first-steps-after-setup-1#reset_pw) for you to use the Bonita image. This environment variable sets the platform administrator password for Bonita. If it is not specified, then the default password of `platform` will be used.
+This environment variable [is recommended](http://documentation.bonitasoft.com/first-steps-after-setup-1#reset_pw) for you to use the Bonita image. It sets the platform administrator password for Bonita. If it is not specified, the default password `platform` will be used.
 
 ### `PLATFORM_LOGIN`
 
-This optional environment variable is used in conjunction with `PLATFORM_PASSWORD` to define the username for the platform administrator. If it is not specified, then the default user of `platformAdmin` will be used.
+This optional environment variable is used in conjunction with `PLATFORM_PASSWORD` to define the username for the platform administrator. If it is not specified, the default user `platformAdmin` will be used.
 
 ### `TENANT_PASSWORD`
 
-This environment variable [is recommended](http://documentation.bonitasoft.com/first-steps-after-setup-1#reset_pw) for you to use the Bonita image. This environment variable sets the tenant administrator password for Bonita. If it is not specified, then the default password of `install` will be used.
+This environment variable [is recommended](http://documentation.bonitasoft.com/first-steps-after-setup-1#reset_pw) for you to use the Bonita image. It sets the tenant administrator password for Bonita. If it is not specified, the default password `install` will be used.
 
 ### `TENANT_LOGIN`
 
-This optional environment variable is used in conjunction with `TENANT_PASSWORD` to define the username for the tenant administrator. If it is not specified, then the default user of `install` will be used.
+This optional environment variable is used in conjunction with `TENANT_PASSWORD` to define the username for the tenant administrator. If it is not specified, the default user of `install` will be used.
 
 ### `REST_API_DYN_AUTH_CHECKS`
 
-This optional environment variable is used to enable or not [dynamic authorization checking](http://documentation.bonitasoft.com/rest-api-authorization-0#dynamic) on Bonita REST API. The default value is true`, which will activate dynamic authorization checking.
+This optional environment variable is used to enable/disable [dynamic authorization checking](http://documentation.bonitasoft.com/rest-api-authorization-0#dynamic) on Bonita REST API. The default value is `true`, which will activate dynamic authorization checking.
 
 ### `HTTP_API`
 
-This optional environment variable is used to enable or not Bonita HTTP API. The default value is `false`, which will deactivate the HTTP API.
+This optional environment variable is used to enable/disable the Bonita HTTP API. The default value is `false`, which will deactivate the HTTP API.
 
 ### `JAVA_OPTS`
 
@@ -216,11 +219,11 @@ This optional environment variable is used to customize JAVA_OPTS. The default v
 
 ### `ENSURE_DB_CHECK_AND_CREATION`
 
-This optional environment variable is used to allow or not the SQL queries to automatically check and create the databases using the database adminstrator credentials. The default value is `true`.
+This optional environment variable is used to allow/disallow the SQL queries to automatically check and create the databases using the database administrator credentials. The default value is `true`.
 
 ### `DB_VENDOR`
 
-This environment variable is automatically set to `postgres` or `mysql` if the bonita container is linked to a PostgreSQL or MySQL database using `--link`. The default value is `h2`. It can be overrided if you don't use the `--link` capability.
+This environment variable is automatically set to `postgres` or `mysql` if the Bonita container is linked to a PostgreSQL or MySQL database using `--link`. The default value is `h2`. It can be overridden if you don't use the `--link` capability.
 
 ### `DB_HOST`, `DB_PORT`
 
@@ -228,7 +231,7 @@ These variables are optional, used in conjunction to configure the `bonita` imag
 
 ### `DB_NAME`, `DB_USER`, `DB_PASS`
 
-These variables are used in conjunction to create a new user, set that user's password and create the `bonita` database.
+These variables are used in conjunction to create a new user, set that user's password, and create the `bonita` database.
 
 `DB_NAME` default value is `bonitadb`.
 
@@ -248,15 +251,15 @@ These variables are used in conjunction to create a new user, set that user's pa
 
 ### `DB_ADMIN_USER`, `DB_ADMIN_PASS`
 
-These variables are optional, used in conjunction to create users and databases through the administrator account used on the database instance.
+These variables are optional, and used in conjunction to create users and databases through the administrator account used on the database instance.
 
-`DB_ADMIN_USER` if no value is provided, it's automatically set to `root` with MySQL or `postgres` with PostgreSQL.
+`DB_ADMIN_USER` if no value is provided, this is automatically set to `root` with MySQL or `postgres` with PostgreSQL.
 
-`DB_ADMIN_PASS` if no value is provided, it's automatically set using the value from the container linked : `MYSQL_ENV_MYSQL_ROOT_PASSWORD` or `POSTGRES_ENV_POSTGRES_PASSWORD`.
+`DB_ADMIN_PASS` if no value is provided, this is automatically set using the value from the linked container: `MYSQL_ENV_MYSQL_ROOT_PASSWORD` or `POSTGRES_ENV_POSTGRES_PASSWORD`.
 
 # How to extend this image
 
-If you would like to do additional initialization, you can add a `*.sh` script under `/opt/custom-init.d`. The `startup.sh` file will source any `*.sh` script found in that directory to do further initialization before starting the service.
+If you would like to do additional initialization, you can add a `*.sh` script under `/opt/custom-init.d`. The `startup.sh` file will source any `*.sh` script found in this directory to do further initialization before starting the service.
 
 For example, you can increase the log level :
 
@@ -267,7 +270,7 @@ For example, you can increase the log level :
 	
 	docker run --name bonita_custom -v ~/Documents/Docker/Volumes/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
 
-Note : there are several ways to check the `bonita` logs, one of them is
+Note: There are several ways to check the `bonita` logs. One of them is
 
 	docker exec -ti bonita_custom /bin/bash
 	tail -f /opt/bonita/BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/logs/bonita.`date +%Y-%m-%d`.log
