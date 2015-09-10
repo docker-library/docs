@@ -55,7 +55,7 @@ All the data needed is in the /var/jenkins_home directory - so depending on how 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.8.2.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
