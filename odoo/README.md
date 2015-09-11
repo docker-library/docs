@@ -27,7 +27,7 @@ $ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgr
 ## Start an Odoo instance
 
 ```console
-$ docker run -p 127.0.0.1:8069:8069 --name odoo --link db:db -t odoo
+$ docker run -p 8069:8069 --name odoo --link db:db -t odoo
 ```
 
 The alias of the container running Postgres must be db for Odoo to be able to connect to the Postgres server.
