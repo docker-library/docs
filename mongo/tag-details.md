@@ -18,53 +18,53 @@
 
 ## `mongo:2.2.7`
 
--	Total Virtual Size: 238.4 MB (238406423 bytes)
--	Total v2 Content-Length: 100.7 MB (100733658 bytes)
+-	Total Virtual Size: 238.4 MB (238350362 bytes)
+-	Total v2 Content-Length: 100.7 MB (100718244 bytes)
 
 ### Layers (14)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -74,29 +74,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -106,43 +106,43 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `3f272e02562bb10c2d23fef0d32df4fd233063a8471d27eb6986e59e21fabb2a`
+#### `661756d9e8c0f39c5302fde95c601aa3e2662bdd5804ab6dddfc7c5ac6c6ac8a`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3AFEF01FE92B6927CC1EEC80F564179A36496327
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:06 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:30:35 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 94.5 KB (94518 bytes)
--	v2 Blob: `sha256:29f5bf256af95ba25b5c60eaa54bf67f6032eea624e30653526a1736afd3c4de`
--	v2 Content-Length: 90.0 KB (89960 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:39 GMT
+-	v2 Blob: `sha256:8cfb5fb7d9e3e197ba75b5343b0262985e89ade87ce071d0a9f98d4321940b0e`
+-	v2 Content-Length: 90.0 KB (89962 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:39 GMT
 
-#### `1f5cb94a9dd1311add93f359e9212c1907f3071f7631e0a8888e406d75564aed`
+#### `83b84f2f182faf27ddf7ee8ab18949fdcdd46f18a892d29180267d246ae41b8c`
 
 ```dockerfile
 ENV MONGO_VERSION=2.2.7
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:06 GMT
--	Parent Layer: `3f272e02562bb10c2d23fef0d32df4fd233063a8471d27eb6986e59e21fabb2a`
+-	Created: Wed, 09 Sep 2015 22:30:36 GMT
+-	Parent Layer: `661756d9e8c0f39c5302fde95c601aa3e2662bdd5804ab6dddfc7c5ac6c6ac8a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7ada69327b25ef8d081a2ef32d7231dfe012a8eaf94f649e1cc439d86c6a2cdc`
+#### `51016148e5b5392c7a6a1ca63d465b95461afd61defff1eb8b005b9c61995660`
 
 ```dockerfile
 RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSION.tgz" -o mongo.tgz \
@@ -152,78 +152,78 @@ RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSI
 	&& rm mongo.tgz*
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:17 GMT
--	Parent Layer: `1f5cb94a9dd1311add93f359e9212c1907f3071f7631e0a8888e406d75564aed`
+-	Created: Wed, 09 Sep 2015 22:30:45 GMT
+-	Parent Layer: `83b84f2f182faf27ddf7ee8ab18949fdcdd46f18a892d29180267d246ae41b8c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 138.2 MB (138247562 bytes)
--	v2 Blob: `sha256:c17a102f0479555dff4659b26f96b0b5efafcff115da7429235e113a750c1995`
--	v2 Content-Length: 56.7 MB (56720466 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:31 GMT
+-	v2 Blob: `sha256:5fd8e89040c41e46f316c0780ca5163431db20607fcc84e4ff1d7d160e30294e`
+-	v2 Content-Length: 56.7 MB (56720451 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:29 GMT
 
-#### `07e56ab73539ba907d1c48574508b856fa9875872eb91bf42c0bf661a2c1caed`
+#### `b4878a563cc486d0ae05d17843fb82345c419c090bbe9724bf6f7795061b27d9`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:18 GMT
--	Parent Layer: `7ada69327b25ef8d081a2ef32d7231dfe012a8eaf94f649e1cc439d86c6a2cdc`
+-	Created: Wed, 09 Sep 2015 22:30:48 GMT
+-	Parent Layer: `51016148e5b5392c7a6a1ca63d465b95461afd61defff1eb8b005b9c61995660`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0eeb5ff192278c41effc9ba7cfe43df43865c8dec7aee21dac6c86c6d6c8b7e2`
+#### `9c0cf55d8908f90be3f7c3dc0963a80917cf66297fbcd0b7876db0bc1bccfc51`
 
 ```dockerfile
 COPY file:a5f7939c865e1412dee58226774a2d3012aae8c7b4a695ae995fb0fa68357117 in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:18 GMT
--	Parent Layer: `07e56ab73539ba907d1c48574508b856fa9875872eb91bf42c0bf661a2c1caed`
+-	Created: Wed, 09 Sep 2015 22:30:49 GMT
+-	Parent Layer: `b4878a563cc486d0ae05d17843fb82345c419c090bbe9724bf6f7795061b27d9`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:8a77cd9c2154a154b81c98e3deb51fd822f7b27ad856229622f994cbf1c97c08`
 -	v2 Content-Length: 273.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:35:55 GMT
 
-#### `7efe280bb6ba060bd78012c8eec53f90f38d577609fe452ddb922893e0819de1`
+#### `e4f5ae9a30bd753d7799eb3c43c2b5b2133e84cecae4837f51da455f19b69a35`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:19 GMT
--	Parent Layer: `0eeb5ff192278c41effc9ba7cfe43df43865c8dec7aee21dac6c86c6d6c8b7e2`
+-	Created: Wed, 09 Sep 2015 22:30:50 GMT
+-	Parent Layer: `9c0cf55d8908f90be3f7c3dc0963a80917cf66297fbcd0b7876db0bc1bccfc51`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b726560da82a802020fdec46b9b1270efa80c836cb85310a23650e360eef056a`
+#### `5d6d9dfcd437eff6fc128717a89b54db73eca40747c7cda889435c2fb8f46545`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:19 GMT
--	Parent Layer: `7efe280bb6ba060bd78012c8eec53f90f38d577609fe452ddb922893e0819de1`
+-	Created: Wed, 09 Sep 2015 22:30:50 GMT
+-	Parent Layer: `e4f5ae9a30bd753d7799eb3c43c2b5b2133e84cecae4837f51da455f19b69a35`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e7192c491794dd42eddcaa5eaabfa8c31295c98ba48ff0587737540bae256dee`
+#### `7160ae004769c9d344368f62dae2cd0e28b796f09bde72e25481910f315e4c0e`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:20 GMT
--	Parent Layer: `b726560da82a802020fdec46b9b1270efa80c836cb85310a23650e360eef056a`
+-	Created: Wed, 09 Sep 2015 22:30:51 GMT
+-	Parent Layer: `5d6d9dfcd437eff6fc128717a89b54db73eca40747c7cda889435c2fb8f46545`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -232,53 +232,53 @@ CMD ["mongod"]
 
 ## `mongo:2.2`
 
--	Total Virtual Size: 238.4 MB (238406423 bytes)
--	Total v2 Content-Length: 100.7 MB (100733690 bytes)
+-	Total Virtual Size: 238.4 MB (238350362 bytes)
+-	Total v2 Content-Length: 100.7 MB (100718244 bytes)
 
 ### Layers (14)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -288,29 +288,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -320,43 +320,43 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `3f272e02562bb10c2d23fef0d32df4fd233063a8471d27eb6986e59e21fabb2a`
+#### `661756d9e8c0f39c5302fde95c601aa3e2662bdd5804ab6dddfc7c5ac6c6ac8a`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3AFEF01FE92B6927CC1EEC80F564179A36496327
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:06 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:30:35 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 94.5 KB (94518 bytes)
--	v2 Blob: `sha256:29f5bf256af95ba25b5c60eaa54bf67f6032eea624e30653526a1736afd3c4de`
--	v2 Content-Length: 90.0 KB (89960 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:39 GMT
+-	v2 Blob: `sha256:8cfb5fb7d9e3e197ba75b5343b0262985e89ade87ce071d0a9f98d4321940b0e`
+-	v2 Content-Length: 90.0 KB (89962 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:39 GMT
 
-#### `1f5cb94a9dd1311add93f359e9212c1907f3071f7631e0a8888e406d75564aed`
+#### `83b84f2f182faf27ddf7ee8ab18949fdcdd46f18a892d29180267d246ae41b8c`
 
 ```dockerfile
 ENV MONGO_VERSION=2.2.7
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:06 GMT
--	Parent Layer: `3f272e02562bb10c2d23fef0d32df4fd233063a8471d27eb6986e59e21fabb2a`
+-	Created: Wed, 09 Sep 2015 22:30:36 GMT
+-	Parent Layer: `661756d9e8c0f39c5302fde95c601aa3e2662bdd5804ab6dddfc7c5ac6c6ac8a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7ada69327b25ef8d081a2ef32d7231dfe012a8eaf94f649e1cc439d86c6a2cdc`
+#### `51016148e5b5392c7a6a1ca63d465b95461afd61defff1eb8b005b9c61995660`
 
 ```dockerfile
 RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSION.tgz" -o mongo.tgz \
@@ -366,78 +366,78 @@ RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSI
 	&& rm mongo.tgz*
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:17 GMT
--	Parent Layer: `1f5cb94a9dd1311add93f359e9212c1907f3071f7631e0a8888e406d75564aed`
+-	Created: Wed, 09 Sep 2015 22:30:45 GMT
+-	Parent Layer: `83b84f2f182faf27ddf7ee8ab18949fdcdd46f18a892d29180267d246ae41b8c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 138.2 MB (138247562 bytes)
--	v2 Blob: `sha256:c17a102f0479555dff4659b26f96b0b5efafcff115da7429235e113a750c1995`
--	v2 Content-Length: 56.7 MB (56720466 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:31 GMT
+-	v2 Blob: `sha256:5fd8e89040c41e46f316c0780ca5163431db20607fcc84e4ff1d7d160e30294e`
+-	v2 Content-Length: 56.7 MB (56720451 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:29 GMT
 
-#### `07e56ab73539ba907d1c48574508b856fa9875872eb91bf42c0bf661a2c1caed`
+#### `b4878a563cc486d0ae05d17843fb82345c419c090bbe9724bf6f7795061b27d9`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:18 GMT
--	Parent Layer: `7ada69327b25ef8d081a2ef32d7231dfe012a8eaf94f649e1cc439d86c6a2cdc`
+-	Created: Wed, 09 Sep 2015 22:30:48 GMT
+-	Parent Layer: `51016148e5b5392c7a6a1ca63d465b95461afd61defff1eb8b005b9c61995660`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0eeb5ff192278c41effc9ba7cfe43df43865c8dec7aee21dac6c86c6d6c8b7e2`
+#### `9c0cf55d8908f90be3f7c3dc0963a80917cf66297fbcd0b7876db0bc1bccfc51`
 
 ```dockerfile
 COPY file:a5f7939c865e1412dee58226774a2d3012aae8c7b4a695ae995fb0fa68357117 in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:18 GMT
--	Parent Layer: `07e56ab73539ba907d1c48574508b856fa9875872eb91bf42c0bf661a2c1caed`
+-	Created: Wed, 09 Sep 2015 22:30:49 GMT
+-	Parent Layer: `b4878a563cc486d0ae05d17843fb82345c419c090bbe9724bf6f7795061b27d9`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:8a77cd9c2154a154b81c98e3deb51fd822f7b27ad856229622f994cbf1c97c08`
 -	v2 Content-Length: 273.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:35:55 GMT
 
-#### `7efe280bb6ba060bd78012c8eec53f90f38d577609fe452ddb922893e0819de1`
+#### `e4f5ae9a30bd753d7799eb3c43c2b5b2133e84cecae4837f51da455f19b69a35`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:19 GMT
--	Parent Layer: `0eeb5ff192278c41effc9ba7cfe43df43865c8dec7aee21dac6c86c6d6c8b7e2`
+-	Created: Wed, 09 Sep 2015 22:30:50 GMT
+-	Parent Layer: `9c0cf55d8908f90be3f7c3dc0963a80917cf66297fbcd0b7876db0bc1bccfc51`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b726560da82a802020fdec46b9b1270efa80c836cb85310a23650e360eef056a`
+#### `5d6d9dfcd437eff6fc128717a89b54db73eca40747c7cda889435c2fb8f46545`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:19 GMT
--	Parent Layer: `7efe280bb6ba060bd78012c8eec53f90f38d577609fe452ddb922893e0819de1`
+-	Created: Wed, 09 Sep 2015 22:30:50 GMT
+-	Parent Layer: `e4f5ae9a30bd753d7799eb3c43c2b5b2133e84cecae4837f51da455f19b69a35`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e7192c491794dd42eddcaa5eaabfa8c31295c98ba48ff0587737540bae256dee`
+#### `7160ae004769c9d344368f62dae2cd0e28b796f09bde72e25481910f315e4c0e`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:20 GMT
--	Parent Layer: `b726560da82a802020fdec46b9b1270efa80c836cb85310a23650e360eef056a`
+-	Created: Wed, 09 Sep 2015 22:30:51 GMT
+-	Parent Layer: `5d6d9dfcd437eff6fc128717a89b54db73eca40747c7cda889435c2fb8f46545`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -446,53 +446,53 @@ CMD ["mongod"]
 
 ## `mongo:2.4.14`
 
--	Total Virtual Size: 344.0 MB (343998104 bytes)
--	Total v2 Content-Length: 139.9 MB (139944877 bytes)
+-	Total Virtual Size: 343.9 MB (343942043 bytes)
+-	Total v2 Content-Length: 139.9 MB (139929450 bytes)
 
 ### Layers (14)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -502,29 +502,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -534,43 +534,43 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `580621d646d845dbdfebcc4b0e70addb28f107fac89dc2a7ab76a934e13a1e5c`
+#### `9ea4c4e29507af7104d4dacf4e523fd31f66c2c0b5d627f4cb25f770c23f8eab`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CEA1E18DDA77EF4E67884FF2A6982D0160456C5A
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:07 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:32:26 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 94.5 KB (94518 bytes)
--	v2 Blob: `sha256:5036c8f5e5c00871d29b72d24c6afb9487e5aaadab8eb7b51bd9bc0baf99c0a7`
--	v2 Content-Length: 90.0 KB (89960 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:54:54 GMT
+-	v2 Blob: `sha256:9e3c77357351a0d50b9c43464b347b0d04b34486f12cc85958c6cc87ed35393c`
+-	v2 Content-Length: 90.0 KB (89964 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:15:55 GMT
 
-#### `bb62ad82e06b92ead88364f14352b40ef7ff34b392c1a8a86f10cb44856d2c69`
+#### `b32a7cf9385e732054509da7657c58d95403525c5e390d87b678955077c0fe28`
 
 ```dockerfile
 ENV MONGO_VERSION=2.4.14
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:07 GMT
--	Parent Layer: `580621d646d845dbdfebcc4b0e70addb28f107fac89dc2a7ab76a934e13a1e5c`
+-	Created: Wed, 09 Sep 2015 22:32:27 GMT
+-	Parent Layer: `9ea4c4e29507af7104d4dacf4e523fd31f66c2c0b5d627f4cb25f770c23f8eab`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `39b96a7414597b82347821483b98bfdcabef033353ad9b375337e2892dcb08a9`
+#### `fba5049418df1e4d33104e938e3139198fdf40a8d9a9c40862b694b770a349ce`
 
 ```dockerfile
 RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSION.tgz" -o mongo.tgz \
@@ -580,78 +580,78 @@ RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSI
 	&& rm mongo.tgz*
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:13 GMT
--	Parent Layer: `bb62ad82e06b92ead88364f14352b40ef7ff34b392c1a8a86f10cb44856d2c69`
+-	Created: Wed, 09 Sep 2015 22:32:43 GMT
+-	Parent Layer: `b32a7cf9385e732054509da7657c58d95403525c5e390d87b678955077c0fe28`
 -	Docker Version: 1.7.1
 -	Virtual Size: 243.8 MB (243839243 bytes)
--	v2 Blob: `sha256:eb39123ebea78073f8daa859efa3deafd96dc395d97fde0befa845bf079c2950`
--	v2 Content-Length: 95.9 MB (95931685 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:54:47 GMT
+-	v2 Blob: `sha256:7f8cc69745098db0db13a3e44f91b7fab5d183111bf1177a81f2b5764380c423`
+-	v2 Content-Length: 95.9 MB (95931655 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:15:43 GMT
 
-#### `169fa1294adf3c0ce61aabb31956deecf2c78292d31c85adfaa780a7b4e86875`
+#### `de9fca05b16af3b482bf71bc052ef818e3fdaf136d53452a01c4b6f5c402cbd6`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:14 GMT
--	Parent Layer: `39b96a7414597b82347821483b98bfdcabef033353ad9b375337e2892dcb08a9`
+-	Created: Wed, 09 Sep 2015 22:32:44 GMT
+-	Parent Layer: `fba5049418df1e4d33104e938e3139198fdf40a8d9a9c40862b694b770a349ce`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9ce0a71b6eee08802092a04eff0e3454eb1b6ad0fbefa352c23bb4b535fc9058`
+#### `10184019a2c05a13bf7e626c29d7dbe846a92c7aa3fd53a6b48ae387775b1531`
 
 ```dockerfile
 COPY file:a5f7939c865e1412dee58226774a2d3012aae8c7b4a695ae995fb0fa68357117 in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:15 GMT
--	Parent Layer: `169fa1294adf3c0ce61aabb31956deecf2c78292d31c85adfaa780a7b4e86875`
+-	Created: Wed, 09 Sep 2015 22:32:45 GMT
+-	Parent Layer: `de9fca05b16af3b482bf71bc052ef818e3fdaf136d53452a01c4b6f5c402cbd6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:8a77cd9c2154a154b81c98e3deb51fd822f7b27ad856229622f994cbf1c97c08`
 -	v2 Content-Length: 273.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:35:55 GMT
 
-#### `5588e51d3bd4aa88ec43c9b2e9327005a74ede8cbe6182527d15706b3ac3157f`
+#### `97d2e170f495992e1e162416a72b5e2233174f5e307f99a3a8021a2fb10a311f`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:15 GMT
--	Parent Layer: `9ce0a71b6eee08802092a04eff0e3454eb1b6ad0fbefa352c23bb4b535fc9058`
+-	Created: Wed, 09 Sep 2015 22:32:45 GMT
+-	Parent Layer: `10184019a2c05a13bf7e626c29d7dbe846a92c7aa3fd53a6b48ae387775b1531`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `04c2eb315ff533190a4835f11df4b57bd4926b38c1d336144f6fb602064405ee`
+#### `ea1d64b768b4ef7497bbf9d4c7839a33ec60742cca9228b801924ffe7b677f31`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:15 GMT
--	Parent Layer: `5588e51d3bd4aa88ec43c9b2e9327005a74ede8cbe6182527d15706b3ac3157f`
+-	Created: Wed, 09 Sep 2015 22:32:46 GMT
+-	Parent Layer: `97d2e170f495992e1e162416a72b5e2233174f5e307f99a3a8021a2fb10a311f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7f9480fb0527399278c2da06f510f1f438f20546558917541c5e40c3554fce7b`
+#### `e93298366e68f4d91a9e9d5a73788ba4c04eec3c9f86992a137660512e4230ce`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:16 GMT
--	Parent Layer: `04c2eb315ff533190a4835f11df4b57bd4926b38c1d336144f6fb602064405ee`
+-	Created: Wed, 09 Sep 2015 22:32:46 GMT
+-	Parent Layer: `ea1d64b768b4ef7497bbf9d4c7839a33ec60742cca9228b801924ffe7b677f31`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -660,53 +660,53 @@ CMD ["mongod"]
 
 ## `mongo:2.4`
 
--	Total Virtual Size: 344.0 MB (343998104 bytes)
--	Total v2 Content-Length: 139.9 MB (139944909 bytes)
+-	Total Virtual Size: 343.9 MB (343942043 bytes)
+-	Total v2 Content-Length: 139.9 MB (139929450 bytes)
 
 ### Layers (14)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -716,29 +716,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -748,43 +748,43 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `580621d646d845dbdfebcc4b0e70addb28f107fac89dc2a7ab76a934e13a1e5c`
+#### `9ea4c4e29507af7104d4dacf4e523fd31f66c2c0b5d627f4cb25f770c23f8eab`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CEA1E18DDA77EF4E67884FF2A6982D0160456C5A
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:07 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:32:26 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 94.5 KB (94518 bytes)
--	v2 Blob: `sha256:5036c8f5e5c00871d29b72d24c6afb9487e5aaadab8eb7b51bd9bc0baf99c0a7`
--	v2 Content-Length: 90.0 KB (89960 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:54:54 GMT
+-	v2 Blob: `sha256:9e3c77357351a0d50b9c43464b347b0d04b34486f12cc85958c6cc87ed35393c`
+-	v2 Content-Length: 90.0 KB (89964 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:15:55 GMT
 
-#### `bb62ad82e06b92ead88364f14352b40ef7ff34b392c1a8a86f10cb44856d2c69`
+#### `b32a7cf9385e732054509da7657c58d95403525c5e390d87b678955077c0fe28`
 
 ```dockerfile
 ENV MONGO_VERSION=2.4.14
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:07 GMT
--	Parent Layer: `580621d646d845dbdfebcc4b0e70addb28f107fac89dc2a7ab76a934e13a1e5c`
+-	Created: Wed, 09 Sep 2015 22:32:27 GMT
+-	Parent Layer: `9ea4c4e29507af7104d4dacf4e523fd31f66c2c0b5d627f4cb25f770c23f8eab`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `39b96a7414597b82347821483b98bfdcabef033353ad9b375337e2892dcb08a9`
+#### `fba5049418df1e4d33104e938e3139198fdf40a8d9a9c40862b694b770a349ce`
 
 ```dockerfile
 RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSION.tgz" -o mongo.tgz \
@@ -794,78 +794,78 @@ RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSI
 	&& rm mongo.tgz*
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:13 GMT
--	Parent Layer: `bb62ad82e06b92ead88364f14352b40ef7ff34b392c1a8a86f10cb44856d2c69`
+-	Created: Wed, 09 Sep 2015 22:32:43 GMT
+-	Parent Layer: `b32a7cf9385e732054509da7657c58d95403525c5e390d87b678955077c0fe28`
 -	Docker Version: 1.7.1
 -	Virtual Size: 243.8 MB (243839243 bytes)
--	v2 Blob: `sha256:eb39123ebea78073f8daa859efa3deafd96dc395d97fde0befa845bf079c2950`
--	v2 Content-Length: 95.9 MB (95931685 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:54:47 GMT
+-	v2 Blob: `sha256:7f8cc69745098db0db13a3e44f91b7fab5d183111bf1177a81f2b5764380c423`
+-	v2 Content-Length: 95.9 MB (95931655 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:15:43 GMT
 
-#### `169fa1294adf3c0ce61aabb31956deecf2c78292d31c85adfaa780a7b4e86875`
+#### `de9fca05b16af3b482bf71bc052ef818e3fdaf136d53452a01c4b6f5c402cbd6`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:14 GMT
--	Parent Layer: `39b96a7414597b82347821483b98bfdcabef033353ad9b375337e2892dcb08a9`
+-	Created: Wed, 09 Sep 2015 22:32:44 GMT
+-	Parent Layer: `fba5049418df1e4d33104e938e3139198fdf40a8d9a9c40862b694b770a349ce`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9ce0a71b6eee08802092a04eff0e3454eb1b6ad0fbefa352c23bb4b535fc9058`
+#### `10184019a2c05a13bf7e626c29d7dbe846a92c7aa3fd53a6b48ae387775b1531`
 
 ```dockerfile
 COPY file:a5f7939c865e1412dee58226774a2d3012aae8c7b4a695ae995fb0fa68357117 in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:15 GMT
--	Parent Layer: `169fa1294adf3c0ce61aabb31956deecf2c78292d31c85adfaa780a7b4e86875`
+-	Created: Wed, 09 Sep 2015 22:32:45 GMT
+-	Parent Layer: `de9fca05b16af3b482bf71bc052ef818e3fdaf136d53452a01c4b6f5c402cbd6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:8a77cd9c2154a154b81c98e3deb51fd822f7b27ad856229622f994cbf1c97c08`
 -	v2 Content-Length: 273.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:35:55 GMT
 
-#### `5588e51d3bd4aa88ec43c9b2e9327005a74ede8cbe6182527d15706b3ac3157f`
+#### `97d2e170f495992e1e162416a72b5e2233174f5e307f99a3a8021a2fb10a311f`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:15 GMT
--	Parent Layer: `9ce0a71b6eee08802092a04eff0e3454eb1b6ad0fbefa352c23bb4b535fc9058`
+-	Created: Wed, 09 Sep 2015 22:32:45 GMT
+-	Parent Layer: `10184019a2c05a13bf7e626c29d7dbe846a92c7aa3fd53a6b48ae387775b1531`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `04c2eb315ff533190a4835f11df4b57bd4926b38c1d336144f6fb602064405ee`
+#### `ea1d64b768b4ef7497bbf9d4c7839a33ec60742cca9228b801924ffe7b677f31`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:15 GMT
--	Parent Layer: `5588e51d3bd4aa88ec43c9b2e9327005a74ede8cbe6182527d15706b3ac3157f`
+-	Created: Wed, 09 Sep 2015 22:32:46 GMT
+-	Parent Layer: `97d2e170f495992e1e162416a72b5e2233174f5e307f99a3a8021a2fb10a311f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7f9480fb0527399278c2da06f510f1f438f20546558917541c5e40c3554fce7b`
+#### `e93298366e68f4d91a9e9d5a73788ba4c04eec3c9f86992a137660512e4230ce`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:55:16 GMT
--	Parent Layer: `04c2eb315ff533190a4835f11df4b57bd4926b38c1d336144f6fb602064405ee`
+-	Created: Wed, 09 Sep 2015 22:32:46 GMT
+-	Parent Layer: `ea1d64b768b4ef7497bbf9d4c7839a33ec60742cca9228b801924ffe7b677f31`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -874,53 +874,53 @@ CMD ["mongod"]
 
 ## `mongo:2.6.11`
 
--	Total Virtual Size: 392.4 MB (392371461 bytes)
--	Total v2 Content-Length: 160.4 MB (160352246 bytes)
+-	Total Virtual Size: 392.3 MB (392315400 bytes)
+-	Total v2 Content-Length: 160.3 MB (160336872 bytes)
 
 ### Layers (14)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -930,29 +930,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -962,43 +962,43 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `ea2696799a73b45229cc159ef0d002a490b393bbac1d00453aef51995275d448`
+#### `fb2788a3b3bfb0d65156522d92785c4f679ca346d4412d1b1dda81fe9765d4ac`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DFFA3DCF326E302C4787673A01C4E7FAAAB2461C
 ```
 
--	Created: Mon, 24 Aug 2015 18:56:02 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:34:05 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 94.5 KB (94518 bytes)
--	v2 Blob: `sha256:1c5f81b73d9de5f434cbe024c79036d13289e41520cec54ec7d8a28e1dd7b6ca`
--	v2 Content-Length: 90.0 KB (89961 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:59:09 GMT
+-	v2 Blob: `sha256:9cf8959c9228a361a507e2eb7f43073efeacebce571aeba088f0d98be791913f`
+-	v2 Content-Length: 90.0 KB (89964 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:19:27 GMT
 
-#### `37d1d672a441217c917f757acb5f393c604bf56ffaac4c1c3208cae38d057b3c`
+#### `1bf09d71cbe048387291d99d40417adc1ffc3ff87992240bce9714fdb50af638`
 
 ```dockerfile
 ENV MONGO_VERSION=2.6.11
 ```
 
--	Created: Mon, 24 Aug 2015 18:56:03 GMT
--	Parent Layer: `ea2696799a73b45229cc159ef0d002a490b393bbac1d00453aef51995275d448`
+-	Created: Wed, 09 Sep 2015 22:34:06 GMT
+-	Parent Layer: `fb2788a3b3bfb0d65156522d92785c4f679ca346d4412d1b1dda81fe9765d4ac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `df0339cae04c1f80d08c8692bb5630ac8a79c4f4db95952a327ac4365fba1be5`
+#### `aa4930c0fe546a56f98d4dc4c15282006f06db8980004e2c4422b037219519eb`
 
 ```dockerfile
 RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSION.tgz" -o mongo.tgz \
@@ -1008,78 +1008,78 @@ RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSI
 	&& rm mongo.tgz*
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:03 GMT
--	Parent Layer: `37d1d672a441217c917f757acb5f393c604bf56ffaac4c1c3208cae38d057b3c`
+-	Created: Wed, 09 Sep 2015 22:34:19 GMT
+-	Parent Layer: `1bf09d71cbe048387291d99d40417adc1ffc3ff87992240bce9714fdb50af638`
 -	Docker Version: 1.7.1
 -	Virtual Size: 292.2 MB (292212600 bytes)
--	v2 Blob: `sha256:45e57b1cb6b30c7fd08145420c88ea8a51bc034194934a1a4136a042da24275d`
--	v2 Content-Length: 116.3 MB (116339053 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:59:01 GMT
+-	v2 Blob: `sha256:2c0d39575a4a65d49bd6d85383026ba704655980b3aeb09b17828d041926ff62`
+-	v2 Content-Length: 116.3 MB (116339077 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:19:15 GMT
 
-#### `5d689d34dfb301b8c9680b1707a4b8846e91f76c112bcbd3e70c80662f2bc76b`
+#### `07300bbd65ad44a5ab9cb7058014b2ea71b633d27b854a0e2392aa90e9839a55`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:04 GMT
--	Parent Layer: `df0339cae04c1f80d08c8692bb5630ac8a79c4f4db95952a327ac4365fba1be5`
+-	Created: Wed, 09 Sep 2015 22:34:24 GMT
+-	Parent Layer: `aa4930c0fe546a56f98d4dc4c15282006f06db8980004e2c4422b037219519eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8c8fe47d34db8808a594506be51303aa8ced4a77113c1acbd6b0171a9ec42f3d`
+#### `1afac67d47a36e909b82457f335b452cf93584bf1ee06475fc86994987cba3cb`
 
 ```dockerfile
 COPY file:a5f7939c865e1412dee58226774a2d3012aae8c7b4a695ae995fb0fa68357117 in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:04 GMT
--	Parent Layer: `5d689d34dfb301b8c9680b1707a4b8846e91f76c112bcbd3e70c80662f2bc76b`
+-	Created: Wed, 09 Sep 2015 22:34:25 GMT
+-	Parent Layer: `07300bbd65ad44a5ab9cb7058014b2ea71b633d27b854a0e2392aa90e9839a55`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:8a77cd9c2154a154b81c98e3deb51fd822f7b27ad856229622f994cbf1c97c08`
 -	v2 Content-Length: 273.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:35:55 GMT
 
-#### `630f3f8e09d7a37c87bcae8d7f9becb542f045634a7bb650499d1381c81a69f8`
+#### `924677b535eaa085704679d67628b4f739714c592a4e771f5d60fb1521bb52d3`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:05 GMT
--	Parent Layer: `8c8fe47d34db8808a594506be51303aa8ced4a77113c1acbd6b0171a9ec42f3d`
+-	Created: Wed, 09 Sep 2015 22:34:25 GMT
+-	Parent Layer: `1afac67d47a36e909b82457f335b452cf93584bf1ee06475fc86994987cba3cb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b44fda05ff1cd68e67a90c9897eb5ffbc0db4484a2b533d17fe0a9be79a499a9`
+#### `724516edf611f892be1d341e2a06dfc4556ea924f3976c2574c3b71a8e1f975c`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:05 GMT
--	Parent Layer: `630f3f8e09d7a37c87bcae8d7f9becb542f045634a7bb650499d1381c81a69f8`
+-	Created: Wed, 09 Sep 2015 22:34:26 GMT
+-	Parent Layer: `924677b535eaa085704679d67628b4f739714c592a4e771f5d60fb1521bb52d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `178ba94614c23fba0ae28a9a1bf9da86bf90559c041d4cac1fe1191d693b050f`
+#### `d9f115788f6e3bb4cc66f81a6270743c43fe942033ed044c67608b0b65cc8411`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:06 GMT
--	Parent Layer: `b44fda05ff1cd68e67a90c9897eb5ffbc0db4484a2b533d17fe0a9be79a499a9`
+-	Created: Wed, 09 Sep 2015 22:34:27 GMT
+-	Parent Layer: `724516edf611f892be1d341e2a06dfc4556ea924f3976c2574c3b71a8e1f975c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1088,53 +1088,53 @@ CMD ["mongod"]
 
 ## `mongo:2.6`
 
--	Total Virtual Size: 392.4 MB (392371461 bytes)
--	Total v2 Content-Length: 160.4 MB (160352278 bytes)
+-	Total Virtual Size: 392.3 MB (392315400 bytes)
+-	Total v2 Content-Length: 160.3 MB (160336872 bytes)
 
 ### Layers (14)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -1144,29 +1144,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -1176,43 +1176,43 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `ea2696799a73b45229cc159ef0d002a490b393bbac1d00453aef51995275d448`
+#### `fb2788a3b3bfb0d65156522d92785c4f679ca346d4412d1b1dda81fe9765d4ac`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DFFA3DCF326E302C4787673A01C4E7FAAAB2461C
 ```
 
--	Created: Mon, 24 Aug 2015 18:56:02 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:34:05 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 94.5 KB (94518 bytes)
--	v2 Blob: `sha256:1c5f81b73d9de5f434cbe024c79036d13289e41520cec54ec7d8a28e1dd7b6ca`
--	v2 Content-Length: 90.0 KB (89961 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:59:09 GMT
+-	v2 Blob: `sha256:9cf8959c9228a361a507e2eb7f43073efeacebce571aeba088f0d98be791913f`
+-	v2 Content-Length: 90.0 KB (89964 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:19:27 GMT
 
-#### `37d1d672a441217c917f757acb5f393c604bf56ffaac4c1c3208cae38d057b3c`
+#### `1bf09d71cbe048387291d99d40417adc1ffc3ff87992240bce9714fdb50af638`
 
 ```dockerfile
 ENV MONGO_VERSION=2.6.11
 ```
 
--	Created: Mon, 24 Aug 2015 18:56:03 GMT
--	Parent Layer: `ea2696799a73b45229cc159ef0d002a490b393bbac1d00453aef51995275d448`
+-	Created: Wed, 09 Sep 2015 22:34:06 GMT
+-	Parent Layer: `fb2788a3b3bfb0d65156522d92785c4f679ca346d4412d1b1dda81fe9765d4ac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `df0339cae04c1f80d08c8692bb5630ac8a79c4f4db95952a327ac4365fba1be5`
+#### `aa4930c0fe546a56f98d4dc4c15282006f06db8980004e2c4422b037219519eb`
 
 ```dockerfile
 RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSION.tgz" -o mongo.tgz \
@@ -1222,78 +1222,78 @@ RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSI
 	&& rm mongo.tgz*
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:03 GMT
--	Parent Layer: `37d1d672a441217c917f757acb5f393c604bf56ffaac4c1c3208cae38d057b3c`
+-	Created: Wed, 09 Sep 2015 22:34:19 GMT
+-	Parent Layer: `1bf09d71cbe048387291d99d40417adc1ffc3ff87992240bce9714fdb50af638`
 -	Docker Version: 1.7.1
 -	Virtual Size: 292.2 MB (292212600 bytes)
--	v2 Blob: `sha256:45e57b1cb6b30c7fd08145420c88ea8a51bc034194934a1a4136a042da24275d`
--	v2 Content-Length: 116.3 MB (116339053 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:59:01 GMT
+-	v2 Blob: `sha256:2c0d39575a4a65d49bd6d85383026ba704655980b3aeb09b17828d041926ff62`
+-	v2 Content-Length: 116.3 MB (116339077 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:19:15 GMT
 
-#### `5d689d34dfb301b8c9680b1707a4b8846e91f76c112bcbd3e70c80662f2bc76b`
+#### `07300bbd65ad44a5ab9cb7058014b2ea71b633d27b854a0e2392aa90e9839a55`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:04 GMT
--	Parent Layer: `df0339cae04c1f80d08c8692bb5630ac8a79c4f4db95952a327ac4365fba1be5`
+-	Created: Wed, 09 Sep 2015 22:34:24 GMT
+-	Parent Layer: `aa4930c0fe546a56f98d4dc4c15282006f06db8980004e2c4422b037219519eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8c8fe47d34db8808a594506be51303aa8ced4a77113c1acbd6b0171a9ec42f3d`
+#### `1afac67d47a36e909b82457f335b452cf93584bf1ee06475fc86994987cba3cb`
 
 ```dockerfile
 COPY file:a5f7939c865e1412dee58226774a2d3012aae8c7b4a695ae995fb0fa68357117 in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:04 GMT
--	Parent Layer: `5d689d34dfb301b8c9680b1707a4b8846e91f76c112bcbd3e70c80662f2bc76b`
+-	Created: Wed, 09 Sep 2015 22:34:25 GMT
+-	Parent Layer: `07300bbd65ad44a5ab9cb7058014b2ea71b633d27b854a0e2392aa90e9839a55`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:8a77cd9c2154a154b81c98e3deb51fd822f7b27ad856229622f994cbf1c97c08`
 -	v2 Content-Length: 273.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:35:55 GMT
 
-#### `630f3f8e09d7a37c87bcae8d7f9becb542f045634a7bb650499d1381c81a69f8`
+#### `924677b535eaa085704679d67628b4f739714c592a4e771f5d60fb1521bb52d3`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:05 GMT
--	Parent Layer: `8c8fe47d34db8808a594506be51303aa8ced4a77113c1acbd6b0171a9ec42f3d`
+-	Created: Wed, 09 Sep 2015 22:34:25 GMT
+-	Parent Layer: `1afac67d47a36e909b82457f335b452cf93584bf1ee06475fc86994987cba3cb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b44fda05ff1cd68e67a90c9897eb5ffbc0db4484a2b533d17fe0a9be79a499a9`
+#### `724516edf611f892be1d341e2a06dfc4556ea924f3976c2574c3b71a8e1f975c`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:05 GMT
--	Parent Layer: `630f3f8e09d7a37c87bcae8d7f9becb542f045634a7bb650499d1381c81a69f8`
+-	Created: Wed, 09 Sep 2015 22:34:26 GMT
+-	Parent Layer: `924677b535eaa085704679d67628b4f739714c592a4e771f5d60fb1521bb52d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `178ba94614c23fba0ae28a9a1bf9da86bf90559c041d4cac1fe1191d693b050f`
+#### `d9f115788f6e3bb4cc66f81a6270743c43fe942033ed044c67608b0b65cc8411`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:06 GMT
--	Parent Layer: `b44fda05ff1cd68e67a90c9897eb5ffbc0db4484a2b533d17fe0a9be79a499a9`
+-	Created: Wed, 09 Sep 2015 22:34:27 GMT
+-	Parent Layer: `724516edf611f892be1d341e2a06dfc4556ea924f3976c2574c3b71a8e1f975c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1302,53 +1302,53 @@ CMD ["mongod"]
 
 ## `mongo:2`
 
--	Total Virtual Size: 392.4 MB (392371461 bytes)
--	Total v2 Content-Length: 160.4 MB (160352278 bytes)
+-	Total Virtual Size: 392.3 MB (392315400 bytes)
+-	Total v2 Content-Length: 160.3 MB (160336872 bytes)
 
 ### Layers (14)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -1358,29 +1358,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -1390,43 +1390,43 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `ea2696799a73b45229cc159ef0d002a490b393bbac1d00453aef51995275d448`
+#### `fb2788a3b3bfb0d65156522d92785c4f679ca346d4412d1b1dda81fe9765d4ac`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DFFA3DCF326E302C4787673A01C4E7FAAAB2461C
 ```
 
--	Created: Mon, 24 Aug 2015 18:56:02 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:34:05 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 94.5 KB (94518 bytes)
--	v2 Blob: `sha256:1c5f81b73d9de5f434cbe024c79036d13289e41520cec54ec7d8a28e1dd7b6ca`
--	v2 Content-Length: 90.0 KB (89961 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:59:09 GMT
+-	v2 Blob: `sha256:9cf8959c9228a361a507e2eb7f43073efeacebce571aeba088f0d98be791913f`
+-	v2 Content-Length: 90.0 KB (89964 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:19:27 GMT
 
-#### `37d1d672a441217c917f757acb5f393c604bf56ffaac4c1c3208cae38d057b3c`
+#### `1bf09d71cbe048387291d99d40417adc1ffc3ff87992240bce9714fdb50af638`
 
 ```dockerfile
 ENV MONGO_VERSION=2.6.11
 ```
 
--	Created: Mon, 24 Aug 2015 18:56:03 GMT
--	Parent Layer: `ea2696799a73b45229cc159ef0d002a490b393bbac1d00453aef51995275d448`
+-	Created: Wed, 09 Sep 2015 22:34:06 GMT
+-	Parent Layer: `fb2788a3b3bfb0d65156522d92785c4f679ca346d4412d1b1dda81fe9765d4ac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `df0339cae04c1f80d08c8692bb5630ac8a79c4f4db95952a327ac4365fba1be5`
+#### `aa4930c0fe546a56f98d4dc4c15282006f06db8980004e2c4422b037219519eb`
 
 ```dockerfile
 RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSION.tgz" -o mongo.tgz \
@@ -1436,78 +1436,78 @@ RUN curl -SL "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSI
 	&& rm mongo.tgz*
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:03 GMT
--	Parent Layer: `37d1d672a441217c917f757acb5f393c604bf56ffaac4c1c3208cae38d057b3c`
+-	Created: Wed, 09 Sep 2015 22:34:19 GMT
+-	Parent Layer: `1bf09d71cbe048387291d99d40417adc1ffc3ff87992240bce9714fdb50af638`
 -	Docker Version: 1.7.1
 -	Virtual Size: 292.2 MB (292212600 bytes)
--	v2 Blob: `sha256:45e57b1cb6b30c7fd08145420c88ea8a51bc034194934a1a4136a042da24275d`
--	v2 Content-Length: 116.3 MB (116339053 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:59:01 GMT
+-	v2 Blob: `sha256:2c0d39575a4a65d49bd6d85383026ba704655980b3aeb09b17828d041926ff62`
+-	v2 Content-Length: 116.3 MB (116339077 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:19:15 GMT
 
-#### `5d689d34dfb301b8c9680b1707a4b8846e91f76c112bcbd3e70c80662f2bc76b`
+#### `07300bbd65ad44a5ab9cb7058014b2ea71b633d27b854a0e2392aa90e9839a55`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:04 GMT
--	Parent Layer: `df0339cae04c1f80d08c8692bb5630ac8a79c4f4db95952a327ac4365fba1be5`
+-	Created: Wed, 09 Sep 2015 22:34:24 GMT
+-	Parent Layer: `aa4930c0fe546a56f98d4dc4c15282006f06db8980004e2c4422b037219519eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8c8fe47d34db8808a594506be51303aa8ced4a77113c1acbd6b0171a9ec42f3d`
+#### `1afac67d47a36e909b82457f335b452cf93584bf1ee06475fc86994987cba3cb`
 
 ```dockerfile
 COPY file:a5f7939c865e1412dee58226774a2d3012aae8c7b4a695ae995fb0fa68357117 in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:04 GMT
--	Parent Layer: `5d689d34dfb301b8c9680b1707a4b8846e91f76c112bcbd3e70c80662f2bc76b`
+-	Created: Wed, 09 Sep 2015 22:34:25 GMT
+-	Parent Layer: `07300bbd65ad44a5ab9cb7058014b2ea71b633d27b854a0e2392aa90e9839a55`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:8a77cd9c2154a154b81c98e3deb51fd822f7b27ad856229622f994cbf1c97c08`
 -	v2 Content-Length: 273.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:35:55 GMT
 
-#### `630f3f8e09d7a37c87bcae8d7f9becb542f045634a7bb650499d1381c81a69f8`
+#### `924677b535eaa085704679d67628b4f739714c592a4e771f5d60fb1521bb52d3`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:05 GMT
--	Parent Layer: `8c8fe47d34db8808a594506be51303aa8ced4a77113c1acbd6b0171a9ec42f3d`
+-	Created: Wed, 09 Sep 2015 22:34:25 GMT
+-	Parent Layer: `1afac67d47a36e909b82457f335b452cf93584bf1ee06475fc86994987cba3cb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b44fda05ff1cd68e67a90c9897eb5ffbc0db4484a2b533d17fe0a9be79a499a9`
+#### `724516edf611f892be1d341e2a06dfc4556ea924f3976c2574c3b71a8e1f975c`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:05 GMT
--	Parent Layer: `630f3f8e09d7a37c87bcae8d7f9becb542f045634a7bb650499d1381c81a69f8`
+-	Created: Wed, 09 Sep 2015 22:34:26 GMT
+-	Parent Layer: `924677b535eaa085704679d67628b4f739714c592a4e771f5d60fb1521bb52d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `178ba94614c23fba0ae28a9a1bf9da86bf90559c041d4cac1fe1191d693b050f`
+#### `d9f115788f6e3bb4cc66f81a6270743c43fe942033ed044c67608b0b65cc8411`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:57:06 GMT
--	Parent Layer: `b44fda05ff1cd68e67a90c9897eb5ffbc0db4484a2b533d17fe0a9be79a499a9`
+-	Created: Wed, 09 Sep 2015 22:34:27 GMT
+-	Parent Layer: `724516edf611f892be1d341e2a06dfc4556ea924f3976c2574c3b71a8e1f975c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1516,53 +1516,53 @@ CMD ["mongod"]
 
 ## `mongo:3.0.6`
 
--	Total Virtual Size: 260.8 MB (260770070 bytes)
--	Total v2 Content-Length: 95.5 MB (95472492 bytes)
+-	Total Virtual Size: 260.7 MB (260701925 bytes)
+-	Total v2 Content-Length: 95.5 MB (95456241 bytes)
 
 ### Layers (17)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -1572,29 +1572,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -1604,71 +1604,71 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `7a7fe147b503bf904b97e5280deedba1eba8511ea50ed2f95d5ecbfabb65e783`
+#### `5e7b428dddf7b930ffd00bd3b97dd5a5701fd6a828c0d76eec9359991aca0709`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 492EAFE8CD016A07919F1D2B9ECBEC467F0CEB10
 ```
 
--	Created: Mon, 24 Aug 2015 18:58:24 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:37:02 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 57.9 KB (57938 bytes)
--	v2 Blob: `sha256:5338b501454744fd817e092d42d1998d1fa19a41c8398897cc251a39990048b4`
--	v2 Content-Length: 29.8 KB (29816 bytes)
--	v2 Last-Modified: Tue, 25 Aug 2015 00:03:07 GMT
+-	v2 Blob: `sha256:3d8dd9aa505179104dbf934111afd9ef187ee7fc4ef601e4c482bb6a24c71374`
+-	v2 Content-Length: 29.8 KB (29817 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:35 GMT
 
-#### `1c33b6afec9c20466a6cf451876d4ac6dc80afd9b9ad4b94a32f3de42bc93cc4`
+#### `0dab801053d976ba19434dfa9c8effed3e3139b73dd1944023b04c68a79b698a`
 
 ```dockerfile
 ENV MONGO_MAJOR=3.0
 ```
 
--	Created: Mon, 24 Aug 2015 18:58:24 GMT
--	Parent Layer: `7a7fe147b503bf904b97e5280deedba1eba8511ea50ed2f95d5ecbfabb65e783`
+-	Created: Wed, 09 Sep 2015 22:37:02 GMT
+-	Parent Layer: `5e7b428dddf7b930ffd00bd3b97dd5a5701fd6a828c0d76eec9359991aca0709`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a96a8a2267427dc1ac3cab3c8756bf20259f1b9bcacb07d38ec60078d79a5f7a`
+#### `96de83c82d4ba19a972500f48036bfc36d3a4d166516934d0c4bd35cb448fd75`
 
 ```dockerfile
 ENV MONGO_VERSION=3.0.6
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:45 GMT
--	Parent Layer: `1c33b6afec9c20466a6cf451876d4ac6dc80afd9b9ad4b94a32f3de42bc93cc4`
+-	Created: Wed, 09 Sep 2015 22:37:03 GMT
+-	Parent Layer: `0dab801053d976ba19434dfa9c8effed3e3139b73dd1944023b04c68a79b698a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a9d05a25574860a2df7d0c93f78b2d4a364d90975ff3b9dc0d5be209a8d9c76b`
+#### `df59596772ab414edbf08cccabd666591543b6637193415b2ab8554fce03997e`
 
 ```dockerfile
 RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:46 GMT
--	Parent Layer: `a96a8a2267427dc1ac3cab3c8756bf20259f1b9bcacb07d38ec60078d79a5f7a`
+-	Created: Wed, 09 Sep 2015 22:37:05 GMT
+-	Parent Layer: `96de83c82d4ba19a972500f48036bfc36d3a4d166516934d0c4bd35cb448fd75`
 -	Docker Version: 1.7.1
 -	Virtual Size: 67.0 B
--	v2 Blob: `sha256:3554d823067f851f107be6d607f54306884f07d0ae6dca35da5377893c184a81`
--	v2 Content-Length: 225.0 B
--	v2 Last-Modified: Tue, 25 Aug 2015 00:03:02 GMT
+-	v2 Blob: `sha256:cf8149ed119fcb443fb49a9e65c90ee7b8a5f6dbcc2bd6733cdeeaf06e1cad56`
+-	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:21 GMT
 
-#### `47b97d88e7c10f8f5cdf013760fc226733e9e6a67ea30cda42f892c7fe6c5df5`
+#### `f48ad436057ab4baafa4b41f05f4f913fca7034f4df2fea78bab9992a9c6460c`
 
 ```dockerfile
 RUN set -x \
@@ -1684,92 +1684,92 @@ RUN set -x \
 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:01 GMT
--	Parent Layer: `a9d05a25574860a2df7d0c93f78b2d4a364d90975ff3b9dc0d5be209a8d9c76b`
+-	Created: Wed, 09 Sep 2015 22:37:13 GMT
+-	Parent Layer: `df59596772ab414edbf08cccabd666591543b6637193415b2ab8554fce03997e`
 -	Docker Version: 1.7.1
--	Virtual Size: 160.6 MB (160647722 bytes)
--	v2 Blob: `sha256:b2e3ad589b2d3a06543f003acd113d7ab4d44f6c8996934848f638c0499c4606`
--	v2 Content-Length: 51.5 MB (51519038 bytes)
--	v2 Last-Modified: Tue, 25 Aug 2015 00:02:59 GMT
+-	Virtual Size: 160.6 MB (160635638 bytes)
+-	v2 Blob: `sha256:7b41eaa82466385760041da6259b85f1bd00a3c21bfa4a93492d5bab40b5febb`
+-	v2 Content-Length: 51.5 MB (51518219 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:16 GMT
 
-#### `da1282b74c69107253f7151561c89a76f24453be821fbde9e3ee6f9a7aabddda`
+#### `c537910de5ccc7b95753714b42c1e5f84f3f5470f4d7f41def906c2a16541df6`
 
 ```dockerfile
 RUN mkdir -p /data/db && chown -R mongodb:mongodb /data/db
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:06 GMT
--	Parent Layer: `47b97d88e7c10f8f5cdf013760fc226733e9e6a67ea30cda42f892c7fe6c5df5`
+-	Created: Wed, 09 Sep 2015 22:37:17 GMT
+-	Parent Layer: `f48ad436057ab4baafa4b41f05f4f913fca7034f4df2fea78bab9992a9c6460c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:56be623fbc343d9a9174440ac132421ca1dec49cc1c6483b3bd5848a3f78bae9`
--	v2 Content-Length: 118.0 B
--	v2 Last-Modified: Tue, 25 Aug 2015 00:02:25 GMT
+-	v2 Blob: `sha256:33bf1a0f8d1c0a8e8f430b089f291a5d78578314772662e0f194c84974979979`
+-	v2 Content-Length: 117.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:22:44 GMT
 
-#### `5be44b60560caec4f02a3504918ee9a2ad8b6bba080bc245e0f0b84c34b9e99f`
+#### `ba53e9f50f185e0abba192ebd128c323304bb77536bfb4426718c0e2c45ee3be`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:06 GMT
--	Parent Layer: `da1282b74c69107253f7151561c89a76f24453be821fbde9e3ee6f9a7aabddda`
+-	Created: Wed, 09 Sep 2015 22:37:18 GMT
+-	Parent Layer: `c537910de5ccc7b95753714b42c1e5f84f3f5470f4d7f41def906c2a16541df6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4bb5fb2209a8011e8a35b69877f2e8ac70ec0bdf7b77e932d0790d3b164db841`
+#### `f3b2b8cf226c2fb3c4a71358b0de76aee189420a2a77c51a0001fb9b14e6d69b`
 
 ```dockerfile
 COPY file:ef2883b33ed7ba0cc18a5fb8a4f047a24c012e9d220218243da32cc8c8fe954e in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:07 GMT
--	Parent Layer: `5be44b60560caec4f02a3504918ee9a2ad8b6bba080bc245e0f0b84c34b9e99f`
+-	Created: Wed, 09 Sep 2015 22:37:19 GMT
+-	Parent Layer: `ba53e9f50f185e0abba192ebd128c323304bb77536bfb4426718c0e2c45ee3be`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:c185104550a90a870f46b57467797f10ab2fe95c3bdb00ee63f189c14fe6b7ee`
 -	v2 Content-Length: 272.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:48:51 GMT
 
-#### `b688139b30d06bd656b27b82447c2ea008be68b38df9a7e98d1e74fdb1a4bbb7`
+#### `ebd34b5e9c37e7e43f9d0fa946800eecb21ddf4519fe7cbfd7154bd9cff32422`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:08 GMT
--	Parent Layer: `4bb5fb2209a8011e8a35b69877f2e8ac70ec0bdf7b77e932d0790d3b164db841`
+-	Created: Wed, 09 Sep 2015 22:37:19 GMT
+-	Parent Layer: `f3b2b8cf226c2fb3c4a71358b0de76aee189420a2a77c51a0001fb9b14e6d69b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0b9dde0d3ed61d23728e0045c7d26aca9ca16adf78714ec8397b86739d29d8f1`
+#### `341d04fd3d27d7c422184ee9cf96a7469ba2f03269bfd329798bd8e83e68318e`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:09 GMT
--	Parent Layer: `b688139b30d06bd656b27b82447c2ea008be68b38df9a7e98d1e74fdb1a4bbb7`
+-	Created: Wed, 09 Sep 2015 22:37:20 GMT
+-	Parent Layer: `ebd34b5e9c37e7e43f9d0fa946800eecb21ddf4519fe7cbfd7154bd9cff32422`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5c9464760d54612edf1df762d13207117aa4480b2174d9c23962c44afaa4d808`
+#### `278372cb22b2b0600fc6a488481af7b375575728c12bf599f040205fa6115b3d`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:10 GMT
--	Parent Layer: `0b9dde0d3ed61d23728e0045c7d26aca9ca16adf78714ec8397b86739d29d8f1`
+-	Created: Wed, 09 Sep 2015 22:37:21 GMT
+-	Parent Layer: `341d04fd3d27d7c422184ee9cf96a7469ba2f03269bfd329798bd8e83e68318e`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1778,53 +1778,53 @@ CMD ["mongod"]
 
 ## `mongo:3.0`
 
--	Total Virtual Size: 260.8 MB (260770070 bytes)
--	Total v2 Content-Length: 95.5 MB (95472492 bytes)
+-	Total Virtual Size: 260.7 MB (260701925 bytes)
+-	Total v2 Content-Length: 95.5 MB (95456241 bytes)
 
 ### Layers (17)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -1834,29 +1834,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -1866,71 +1866,71 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `7a7fe147b503bf904b97e5280deedba1eba8511ea50ed2f95d5ecbfabb65e783`
+#### `5e7b428dddf7b930ffd00bd3b97dd5a5701fd6a828c0d76eec9359991aca0709`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 492EAFE8CD016A07919F1D2B9ECBEC467F0CEB10
 ```
 
--	Created: Mon, 24 Aug 2015 18:58:24 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:37:02 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 57.9 KB (57938 bytes)
--	v2 Blob: `sha256:5338b501454744fd817e092d42d1998d1fa19a41c8398897cc251a39990048b4`
--	v2 Content-Length: 29.8 KB (29816 bytes)
--	v2 Last-Modified: Tue, 25 Aug 2015 00:03:07 GMT
+-	v2 Blob: `sha256:3d8dd9aa505179104dbf934111afd9ef187ee7fc4ef601e4c482bb6a24c71374`
+-	v2 Content-Length: 29.8 KB (29817 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:35 GMT
 
-#### `1c33b6afec9c20466a6cf451876d4ac6dc80afd9b9ad4b94a32f3de42bc93cc4`
+#### `0dab801053d976ba19434dfa9c8effed3e3139b73dd1944023b04c68a79b698a`
 
 ```dockerfile
 ENV MONGO_MAJOR=3.0
 ```
 
--	Created: Mon, 24 Aug 2015 18:58:24 GMT
--	Parent Layer: `7a7fe147b503bf904b97e5280deedba1eba8511ea50ed2f95d5ecbfabb65e783`
+-	Created: Wed, 09 Sep 2015 22:37:02 GMT
+-	Parent Layer: `5e7b428dddf7b930ffd00bd3b97dd5a5701fd6a828c0d76eec9359991aca0709`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a96a8a2267427dc1ac3cab3c8756bf20259f1b9bcacb07d38ec60078d79a5f7a`
+#### `96de83c82d4ba19a972500f48036bfc36d3a4d166516934d0c4bd35cb448fd75`
 
 ```dockerfile
 ENV MONGO_VERSION=3.0.6
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:45 GMT
--	Parent Layer: `1c33b6afec9c20466a6cf451876d4ac6dc80afd9b9ad4b94a32f3de42bc93cc4`
+-	Created: Wed, 09 Sep 2015 22:37:03 GMT
+-	Parent Layer: `0dab801053d976ba19434dfa9c8effed3e3139b73dd1944023b04c68a79b698a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a9d05a25574860a2df7d0c93f78b2d4a364d90975ff3b9dc0d5be209a8d9c76b`
+#### `df59596772ab414edbf08cccabd666591543b6637193415b2ab8554fce03997e`
 
 ```dockerfile
 RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:46 GMT
--	Parent Layer: `a96a8a2267427dc1ac3cab3c8756bf20259f1b9bcacb07d38ec60078d79a5f7a`
+-	Created: Wed, 09 Sep 2015 22:37:05 GMT
+-	Parent Layer: `96de83c82d4ba19a972500f48036bfc36d3a4d166516934d0c4bd35cb448fd75`
 -	Docker Version: 1.7.1
 -	Virtual Size: 67.0 B
--	v2 Blob: `sha256:3554d823067f851f107be6d607f54306884f07d0ae6dca35da5377893c184a81`
--	v2 Content-Length: 225.0 B
--	v2 Last-Modified: Tue, 25 Aug 2015 00:03:02 GMT
+-	v2 Blob: `sha256:cf8149ed119fcb443fb49a9e65c90ee7b8a5f6dbcc2bd6733cdeeaf06e1cad56`
+-	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:21 GMT
 
-#### `47b97d88e7c10f8f5cdf013760fc226733e9e6a67ea30cda42f892c7fe6c5df5`
+#### `f48ad436057ab4baafa4b41f05f4f913fca7034f4df2fea78bab9992a9c6460c`
 
 ```dockerfile
 RUN set -x \
@@ -1946,92 +1946,92 @@ RUN set -x \
 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:01 GMT
--	Parent Layer: `a9d05a25574860a2df7d0c93f78b2d4a364d90975ff3b9dc0d5be209a8d9c76b`
+-	Created: Wed, 09 Sep 2015 22:37:13 GMT
+-	Parent Layer: `df59596772ab414edbf08cccabd666591543b6637193415b2ab8554fce03997e`
 -	Docker Version: 1.7.1
--	Virtual Size: 160.6 MB (160647722 bytes)
--	v2 Blob: `sha256:b2e3ad589b2d3a06543f003acd113d7ab4d44f6c8996934848f638c0499c4606`
--	v2 Content-Length: 51.5 MB (51519038 bytes)
--	v2 Last-Modified: Tue, 25 Aug 2015 00:02:59 GMT
+-	Virtual Size: 160.6 MB (160635638 bytes)
+-	v2 Blob: `sha256:7b41eaa82466385760041da6259b85f1bd00a3c21bfa4a93492d5bab40b5febb`
+-	v2 Content-Length: 51.5 MB (51518219 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:16 GMT
 
-#### `da1282b74c69107253f7151561c89a76f24453be821fbde9e3ee6f9a7aabddda`
+#### `c537910de5ccc7b95753714b42c1e5f84f3f5470f4d7f41def906c2a16541df6`
 
 ```dockerfile
 RUN mkdir -p /data/db && chown -R mongodb:mongodb /data/db
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:06 GMT
--	Parent Layer: `47b97d88e7c10f8f5cdf013760fc226733e9e6a67ea30cda42f892c7fe6c5df5`
+-	Created: Wed, 09 Sep 2015 22:37:17 GMT
+-	Parent Layer: `f48ad436057ab4baafa4b41f05f4f913fca7034f4df2fea78bab9992a9c6460c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:56be623fbc343d9a9174440ac132421ca1dec49cc1c6483b3bd5848a3f78bae9`
--	v2 Content-Length: 118.0 B
--	v2 Last-Modified: Tue, 25 Aug 2015 00:02:25 GMT
+-	v2 Blob: `sha256:33bf1a0f8d1c0a8e8f430b089f291a5d78578314772662e0f194c84974979979`
+-	v2 Content-Length: 117.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:22:44 GMT
 
-#### `5be44b60560caec4f02a3504918ee9a2ad8b6bba080bc245e0f0b84c34b9e99f`
+#### `ba53e9f50f185e0abba192ebd128c323304bb77536bfb4426718c0e2c45ee3be`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:06 GMT
--	Parent Layer: `da1282b74c69107253f7151561c89a76f24453be821fbde9e3ee6f9a7aabddda`
+-	Created: Wed, 09 Sep 2015 22:37:18 GMT
+-	Parent Layer: `c537910de5ccc7b95753714b42c1e5f84f3f5470f4d7f41def906c2a16541df6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4bb5fb2209a8011e8a35b69877f2e8ac70ec0bdf7b77e932d0790d3b164db841`
+#### `f3b2b8cf226c2fb3c4a71358b0de76aee189420a2a77c51a0001fb9b14e6d69b`
 
 ```dockerfile
 COPY file:ef2883b33ed7ba0cc18a5fb8a4f047a24c012e9d220218243da32cc8c8fe954e in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:07 GMT
--	Parent Layer: `5be44b60560caec4f02a3504918ee9a2ad8b6bba080bc245e0f0b84c34b9e99f`
+-	Created: Wed, 09 Sep 2015 22:37:19 GMT
+-	Parent Layer: `ba53e9f50f185e0abba192ebd128c323304bb77536bfb4426718c0e2c45ee3be`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:c185104550a90a870f46b57467797f10ab2fe95c3bdb00ee63f189c14fe6b7ee`
 -	v2 Content-Length: 272.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:48:51 GMT
 
-#### `b688139b30d06bd656b27b82447c2ea008be68b38df9a7e98d1e74fdb1a4bbb7`
+#### `ebd34b5e9c37e7e43f9d0fa946800eecb21ddf4519fe7cbfd7154bd9cff32422`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:08 GMT
--	Parent Layer: `4bb5fb2209a8011e8a35b69877f2e8ac70ec0bdf7b77e932d0790d3b164db841`
+-	Created: Wed, 09 Sep 2015 22:37:19 GMT
+-	Parent Layer: `f3b2b8cf226c2fb3c4a71358b0de76aee189420a2a77c51a0001fb9b14e6d69b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0b9dde0d3ed61d23728e0045c7d26aca9ca16adf78714ec8397b86739d29d8f1`
+#### `341d04fd3d27d7c422184ee9cf96a7469ba2f03269bfd329798bd8e83e68318e`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:09 GMT
--	Parent Layer: `b688139b30d06bd656b27b82447c2ea008be68b38df9a7e98d1e74fdb1a4bbb7`
+-	Created: Wed, 09 Sep 2015 22:37:20 GMT
+-	Parent Layer: `ebd34b5e9c37e7e43f9d0fa946800eecb21ddf4519fe7cbfd7154bd9cff32422`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5c9464760d54612edf1df762d13207117aa4480b2174d9c23962c44afaa4d808`
+#### `278372cb22b2b0600fc6a488481af7b375575728c12bf599f040205fa6115b3d`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:10 GMT
--	Parent Layer: `0b9dde0d3ed61d23728e0045c7d26aca9ca16adf78714ec8397b86739d29d8f1`
+-	Created: Wed, 09 Sep 2015 22:37:21 GMT
+-	Parent Layer: `341d04fd3d27d7c422184ee9cf96a7469ba2f03269bfd329798bd8e83e68318e`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2040,53 +2040,53 @@ CMD ["mongod"]
 
 ## `mongo:3`
 
--	Total Virtual Size: 260.8 MB (260770070 bytes)
--	Total v2 Content-Length: 95.5 MB (95472492 bytes)
+-	Total Virtual Size: 260.7 MB (260701925 bytes)
+-	Total v2 Content-Length: 95.5 MB (95456241 bytes)
 
 ### Layers (17)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -2096,29 +2096,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -2128,71 +2128,71 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `7a7fe147b503bf904b97e5280deedba1eba8511ea50ed2f95d5ecbfabb65e783`
+#### `5e7b428dddf7b930ffd00bd3b97dd5a5701fd6a828c0d76eec9359991aca0709`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 492EAFE8CD016A07919F1D2B9ECBEC467F0CEB10
 ```
 
--	Created: Mon, 24 Aug 2015 18:58:24 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:37:02 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 57.9 KB (57938 bytes)
--	v2 Blob: `sha256:5338b501454744fd817e092d42d1998d1fa19a41c8398897cc251a39990048b4`
--	v2 Content-Length: 29.8 KB (29816 bytes)
--	v2 Last-Modified: Tue, 25 Aug 2015 00:03:07 GMT
+-	v2 Blob: `sha256:3d8dd9aa505179104dbf934111afd9ef187ee7fc4ef601e4c482bb6a24c71374`
+-	v2 Content-Length: 29.8 KB (29817 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:35 GMT
 
-#### `1c33b6afec9c20466a6cf451876d4ac6dc80afd9b9ad4b94a32f3de42bc93cc4`
+#### `0dab801053d976ba19434dfa9c8effed3e3139b73dd1944023b04c68a79b698a`
 
 ```dockerfile
 ENV MONGO_MAJOR=3.0
 ```
 
--	Created: Mon, 24 Aug 2015 18:58:24 GMT
--	Parent Layer: `7a7fe147b503bf904b97e5280deedba1eba8511ea50ed2f95d5ecbfabb65e783`
+-	Created: Wed, 09 Sep 2015 22:37:02 GMT
+-	Parent Layer: `5e7b428dddf7b930ffd00bd3b97dd5a5701fd6a828c0d76eec9359991aca0709`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a96a8a2267427dc1ac3cab3c8756bf20259f1b9bcacb07d38ec60078d79a5f7a`
+#### `96de83c82d4ba19a972500f48036bfc36d3a4d166516934d0c4bd35cb448fd75`
 
 ```dockerfile
 ENV MONGO_VERSION=3.0.6
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:45 GMT
--	Parent Layer: `1c33b6afec9c20466a6cf451876d4ac6dc80afd9b9ad4b94a32f3de42bc93cc4`
+-	Created: Wed, 09 Sep 2015 22:37:03 GMT
+-	Parent Layer: `0dab801053d976ba19434dfa9c8effed3e3139b73dd1944023b04c68a79b698a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a9d05a25574860a2df7d0c93f78b2d4a364d90975ff3b9dc0d5be209a8d9c76b`
+#### `df59596772ab414edbf08cccabd666591543b6637193415b2ab8554fce03997e`
 
 ```dockerfile
 RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:46 GMT
--	Parent Layer: `a96a8a2267427dc1ac3cab3c8756bf20259f1b9bcacb07d38ec60078d79a5f7a`
+-	Created: Wed, 09 Sep 2015 22:37:05 GMT
+-	Parent Layer: `96de83c82d4ba19a972500f48036bfc36d3a4d166516934d0c4bd35cb448fd75`
 -	Docker Version: 1.7.1
 -	Virtual Size: 67.0 B
--	v2 Blob: `sha256:3554d823067f851f107be6d607f54306884f07d0ae6dca35da5377893c184a81`
--	v2 Content-Length: 225.0 B
--	v2 Last-Modified: Tue, 25 Aug 2015 00:03:02 GMT
+-	v2 Blob: `sha256:cf8149ed119fcb443fb49a9e65c90ee7b8a5f6dbcc2bd6733cdeeaf06e1cad56`
+-	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:21 GMT
 
-#### `47b97d88e7c10f8f5cdf013760fc226733e9e6a67ea30cda42f892c7fe6c5df5`
+#### `f48ad436057ab4baafa4b41f05f4f913fca7034f4df2fea78bab9992a9c6460c`
 
 ```dockerfile
 RUN set -x \
@@ -2208,92 +2208,92 @@ RUN set -x \
 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:01 GMT
--	Parent Layer: `a9d05a25574860a2df7d0c93f78b2d4a364d90975ff3b9dc0d5be209a8d9c76b`
+-	Created: Wed, 09 Sep 2015 22:37:13 GMT
+-	Parent Layer: `df59596772ab414edbf08cccabd666591543b6637193415b2ab8554fce03997e`
 -	Docker Version: 1.7.1
--	Virtual Size: 160.6 MB (160647722 bytes)
--	v2 Blob: `sha256:b2e3ad589b2d3a06543f003acd113d7ab4d44f6c8996934848f638c0499c4606`
--	v2 Content-Length: 51.5 MB (51519038 bytes)
--	v2 Last-Modified: Tue, 25 Aug 2015 00:02:59 GMT
+-	Virtual Size: 160.6 MB (160635638 bytes)
+-	v2 Blob: `sha256:7b41eaa82466385760041da6259b85f1bd00a3c21bfa4a93492d5bab40b5febb`
+-	v2 Content-Length: 51.5 MB (51518219 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:16 GMT
 
-#### `da1282b74c69107253f7151561c89a76f24453be821fbde9e3ee6f9a7aabddda`
+#### `c537910de5ccc7b95753714b42c1e5f84f3f5470f4d7f41def906c2a16541df6`
 
 ```dockerfile
 RUN mkdir -p /data/db && chown -R mongodb:mongodb /data/db
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:06 GMT
--	Parent Layer: `47b97d88e7c10f8f5cdf013760fc226733e9e6a67ea30cda42f892c7fe6c5df5`
+-	Created: Wed, 09 Sep 2015 22:37:17 GMT
+-	Parent Layer: `f48ad436057ab4baafa4b41f05f4f913fca7034f4df2fea78bab9992a9c6460c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:56be623fbc343d9a9174440ac132421ca1dec49cc1c6483b3bd5848a3f78bae9`
--	v2 Content-Length: 118.0 B
--	v2 Last-Modified: Tue, 25 Aug 2015 00:02:25 GMT
+-	v2 Blob: `sha256:33bf1a0f8d1c0a8e8f430b089f291a5d78578314772662e0f194c84974979979`
+-	v2 Content-Length: 117.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:22:44 GMT
 
-#### `5be44b60560caec4f02a3504918ee9a2ad8b6bba080bc245e0f0b84c34b9e99f`
+#### `ba53e9f50f185e0abba192ebd128c323304bb77536bfb4426718c0e2c45ee3be`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:06 GMT
--	Parent Layer: `da1282b74c69107253f7151561c89a76f24453be821fbde9e3ee6f9a7aabddda`
+-	Created: Wed, 09 Sep 2015 22:37:18 GMT
+-	Parent Layer: `c537910de5ccc7b95753714b42c1e5f84f3f5470f4d7f41def906c2a16541df6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4bb5fb2209a8011e8a35b69877f2e8ac70ec0bdf7b77e932d0790d3b164db841`
+#### `f3b2b8cf226c2fb3c4a71358b0de76aee189420a2a77c51a0001fb9b14e6d69b`
 
 ```dockerfile
 COPY file:ef2883b33ed7ba0cc18a5fb8a4f047a24c012e9d220218243da32cc8c8fe954e in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:07 GMT
--	Parent Layer: `5be44b60560caec4f02a3504918ee9a2ad8b6bba080bc245e0f0b84c34b9e99f`
+-	Created: Wed, 09 Sep 2015 22:37:19 GMT
+-	Parent Layer: `ba53e9f50f185e0abba192ebd128c323304bb77536bfb4426718c0e2c45ee3be`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:c185104550a90a870f46b57467797f10ab2fe95c3bdb00ee63f189c14fe6b7ee`
 -	v2 Content-Length: 272.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:48:51 GMT
 
-#### `b688139b30d06bd656b27b82447c2ea008be68b38df9a7e98d1e74fdb1a4bbb7`
+#### `ebd34b5e9c37e7e43f9d0fa946800eecb21ddf4519fe7cbfd7154bd9cff32422`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:08 GMT
--	Parent Layer: `4bb5fb2209a8011e8a35b69877f2e8ac70ec0bdf7b77e932d0790d3b164db841`
+-	Created: Wed, 09 Sep 2015 22:37:19 GMT
+-	Parent Layer: `f3b2b8cf226c2fb3c4a71358b0de76aee189420a2a77c51a0001fb9b14e6d69b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0b9dde0d3ed61d23728e0045c7d26aca9ca16adf78714ec8397b86739d29d8f1`
+#### `341d04fd3d27d7c422184ee9cf96a7469ba2f03269bfd329798bd8e83e68318e`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:09 GMT
--	Parent Layer: `b688139b30d06bd656b27b82447c2ea008be68b38df9a7e98d1e74fdb1a4bbb7`
+-	Created: Wed, 09 Sep 2015 22:37:20 GMT
+-	Parent Layer: `ebd34b5e9c37e7e43f9d0fa946800eecb21ddf4519fe7cbfd7154bd9cff32422`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5c9464760d54612edf1df762d13207117aa4480b2174d9c23962c44afaa4d808`
+#### `278372cb22b2b0600fc6a488481af7b375575728c12bf599f040205fa6115b3d`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:10 GMT
--	Parent Layer: `0b9dde0d3ed61d23728e0045c7d26aca9ca16adf78714ec8397b86739d29d8f1`
+-	Created: Wed, 09 Sep 2015 22:37:21 GMT
+-	Parent Layer: `341d04fd3d27d7c422184ee9cf96a7469ba2f03269bfd329798bd8e83e68318e`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2302,53 +2302,53 @@ CMD ["mongod"]
 
 ## `mongo:latest`
 
--	Total Virtual Size: 260.8 MB (260770070 bytes)
--	Total v2 Content-Length: 95.5 MB (95472492 bytes)
+-	Total Virtual Size: 260.7 MB (260701925 bytes)
+-	Total v2 Content-Length: 95.5 MB (95456241 bytes)
 
 ### Layers (17)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -2358,29 +2358,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -2390,71 +2390,71 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `7a7fe147b503bf904b97e5280deedba1eba8511ea50ed2f95d5ecbfabb65e783`
+#### `5e7b428dddf7b930ffd00bd3b97dd5a5701fd6a828c0d76eec9359991aca0709`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 492EAFE8CD016A07919F1D2B9ECBEC467F0CEB10
 ```
 
--	Created: Mon, 24 Aug 2015 18:58:24 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:37:02 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 57.9 KB (57938 bytes)
--	v2 Blob: `sha256:5338b501454744fd817e092d42d1998d1fa19a41c8398897cc251a39990048b4`
--	v2 Content-Length: 29.8 KB (29816 bytes)
--	v2 Last-Modified: Tue, 25 Aug 2015 00:03:07 GMT
+-	v2 Blob: `sha256:3d8dd9aa505179104dbf934111afd9ef187ee7fc4ef601e4c482bb6a24c71374`
+-	v2 Content-Length: 29.8 KB (29817 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:35 GMT
 
-#### `1c33b6afec9c20466a6cf451876d4ac6dc80afd9b9ad4b94a32f3de42bc93cc4`
+#### `0dab801053d976ba19434dfa9c8effed3e3139b73dd1944023b04c68a79b698a`
 
 ```dockerfile
 ENV MONGO_MAJOR=3.0
 ```
 
--	Created: Mon, 24 Aug 2015 18:58:24 GMT
--	Parent Layer: `7a7fe147b503bf904b97e5280deedba1eba8511ea50ed2f95d5ecbfabb65e783`
+-	Created: Wed, 09 Sep 2015 22:37:02 GMT
+-	Parent Layer: `5e7b428dddf7b930ffd00bd3b97dd5a5701fd6a828c0d76eec9359991aca0709`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a96a8a2267427dc1ac3cab3c8756bf20259f1b9bcacb07d38ec60078d79a5f7a`
+#### `96de83c82d4ba19a972500f48036bfc36d3a4d166516934d0c4bd35cb448fd75`
 
 ```dockerfile
 ENV MONGO_VERSION=3.0.6
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:45 GMT
--	Parent Layer: `1c33b6afec9c20466a6cf451876d4ac6dc80afd9b9ad4b94a32f3de42bc93cc4`
+-	Created: Wed, 09 Sep 2015 22:37:03 GMT
+-	Parent Layer: `0dab801053d976ba19434dfa9c8effed3e3139b73dd1944023b04c68a79b698a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a9d05a25574860a2df7d0c93f78b2d4a364d90975ff3b9dc0d5be209a8d9c76b`
+#### `df59596772ab414edbf08cccabd666591543b6637193415b2ab8554fce03997e`
 
 ```dockerfile
 RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:46 GMT
--	Parent Layer: `a96a8a2267427dc1ac3cab3c8756bf20259f1b9bcacb07d38ec60078d79a5f7a`
+-	Created: Wed, 09 Sep 2015 22:37:05 GMT
+-	Parent Layer: `96de83c82d4ba19a972500f48036bfc36d3a4d166516934d0c4bd35cb448fd75`
 -	Docker Version: 1.7.1
 -	Virtual Size: 67.0 B
--	v2 Blob: `sha256:3554d823067f851f107be6d607f54306884f07d0ae6dca35da5377893c184a81`
--	v2 Content-Length: 225.0 B
--	v2 Last-Modified: Tue, 25 Aug 2015 00:03:02 GMT
+-	v2 Blob: `sha256:cf8149ed119fcb443fb49a9e65c90ee7b8a5f6dbcc2bd6733cdeeaf06e1cad56`
+-	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:21 GMT
 
-#### `47b97d88e7c10f8f5cdf013760fc226733e9e6a67ea30cda42f892c7fe6c5df5`
+#### `f48ad436057ab4baafa4b41f05f4f913fca7034f4df2fea78bab9992a9c6460c`
 
 ```dockerfile
 RUN set -x \
@@ -2470,92 +2470,92 @@ RUN set -x \
 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:01 GMT
--	Parent Layer: `a9d05a25574860a2df7d0c93f78b2d4a364d90975ff3b9dc0d5be209a8d9c76b`
+-	Created: Wed, 09 Sep 2015 22:37:13 GMT
+-	Parent Layer: `df59596772ab414edbf08cccabd666591543b6637193415b2ab8554fce03997e`
 -	Docker Version: 1.7.1
--	Virtual Size: 160.6 MB (160647722 bytes)
--	v2 Blob: `sha256:b2e3ad589b2d3a06543f003acd113d7ab4d44f6c8996934848f638c0499c4606`
--	v2 Content-Length: 51.5 MB (51519038 bytes)
--	v2 Last-Modified: Tue, 25 Aug 2015 00:02:59 GMT
+-	Virtual Size: 160.6 MB (160635638 bytes)
+-	v2 Blob: `sha256:7b41eaa82466385760041da6259b85f1bd00a3c21bfa4a93492d5bab40b5febb`
+-	v2 Content-Length: 51.5 MB (51518219 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:23:16 GMT
 
-#### `da1282b74c69107253f7151561c89a76f24453be821fbde9e3ee6f9a7aabddda`
+#### `c537910de5ccc7b95753714b42c1e5f84f3f5470f4d7f41def906c2a16541df6`
 
 ```dockerfile
 RUN mkdir -p /data/db && chown -R mongodb:mongodb /data/db
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:06 GMT
--	Parent Layer: `47b97d88e7c10f8f5cdf013760fc226733e9e6a67ea30cda42f892c7fe6c5df5`
+-	Created: Wed, 09 Sep 2015 22:37:17 GMT
+-	Parent Layer: `f48ad436057ab4baafa4b41f05f4f913fca7034f4df2fea78bab9992a9c6460c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:56be623fbc343d9a9174440ac132421ca1dec49cc1c6483b3bd5848a3f78bae9`
--	v2 Content-Length: 118.0 B
--	v2 Last-Modified: Tue, 25 Aug 2015 00:02:25 GMT
+-	v2 Blob: `sha256:33bf1a0f8d1c0a8e8f430b089f291a5d78578314772662e0f194c84974979979`
+-	v2 Content-Length: 117.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:22:44 GMT
 
-#### `5be44b60560caec4f02a3504918ee9a2ad8b6bba080bc245e0f0b84c34b9e99f`
+#### `ba53e9f50f185e0abba192ebd128c323304bb77536bfb4426718c0e2c45ee3be`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:06 GMT
--	Parent Layer: `da1282b74c69107253f7151561c89a76f24453be821fbde9e3ee6f9a7aabddda`
+-	Created: Wed, 09 Sep 2015 22:37:18 GMT
+-	Parent Layer: `c537910de5ccc7b95753714b42c1e5f84f3f5470f4d7f41def906c2a16541df6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4bb5fb2209a8011e8a35b69877f2e8ac70ec0bdf7b77e932d0790d3b164db841`
+#### `f3b2b8cf226c2fb3c4a71358b0de76aee189420a2a77c51a0001fb9b14e6d69b`
 
 ```dockerfile
 COPY file:ef2883b33ed7ba0cc18a5fb8a4f047a24c012e9d220218243da32cc8c8fe954e in /entrypoint.sh
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:07 GMT
--	Parent Layer: `5be44b60560caec4f02a3504918ee9a2ad8b6bba080bc245e0f0b84c34b9e99f`
+-	Created: Wed, 09 Sep 2015 22:37:19 GMT
+-	Parent Layer: `ba53e9f50f185e0abba192ebd128c323304bb77536bfb4426718c0e2c45ee3be`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:c185104550a90a870f46b57467797f10ab2fe95c3bdb00ee63f189c14fe6b7ee`
 -	v2 Content-Length: 272.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:48:51 GMT
 
-#### `b688139b30d06bd656b27b82447c2ea008be68b38df9a7e98d1e74fdb1a4bbb7`
+#### `ebd34b5e9c37e7e43f9d0fa946800eecb21ddf4519fe7cbfd7154bd9cff32422`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:08 GMT
--	Parent Layer: `4bb5fb2209a8011e8a35b69877f2e8ac70ec0bdf7b77e932d0790d3b164db841`
+-	Created: Wed, 09 Sep 2015 22:37:19 GMT
+-	Parent Layer: `f3b2b8cf226c2fb3c4a71358b0de76aee189420a2a77c51a0001fb9b14e6d69b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0b9dde0d3ed61d23728e0045c7d26aca9ca16adf78714ec8397b86739d29d8f1`
+#### `341d04fd3d27d7c422184ee9cf96a7469ba2f03269bfd329798bd8e83e68318e`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:09 GMT
--	Parent Layer: `b688139b30d06bd656b27b82447c2ea008be68b38df9a7e98d1e74fdb1a4bbb7`
+-	Created: Wed, 09 Sep 2015 22:37:20 GMT
+-	Parent Layer: `ebd34b5e9c37e7e43f9d0fa946800eecb21ddf4519fe7cbfd7154bd9cff32422`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5c9464760d54612edf1df762d13207117aa4480b2174d9c23962c44afaa4d808`
+#### `278372cb22b2b0600fc6a488481af7b375575728c12bf599f040205fa6115b3d`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Mon, 24 Aug 2015 23:31:10 GMT
--	Parent Layer: `0b9dde0d3ed61d23728e0045c7d26aca9ca16adf78714ec8397b86739d29d8f1`
+-	Created: Wed, 09 Sep 2015 22:37:21 GMT
+-	Parent Layer: `341d04fd3d27d7c422184ee9cf96a7469ba2f03269bfd329798bd8e83e68318e`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2564,53 +2564,53 @@ CMD ["mongod"]
 
 ## `mongo:3.1.7`
 
--	Total Virtual Size: 306.7 MB (306699129 bytes)
--	Total v2 Content-Length: 108.0 MB (107998164 bytes)
+-	Total Virtual Size: 306.6 MB (306633874 bytes)
+-	Total v2 Content-Length: 108.0 MB (107983219 bytes)
 
 ### Layers (17)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -2620,29 +2620,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -2652,71 +2652,71 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `fd7d8efab2f136b79ab35c8fbea465e4781dbf7afdd20bcfefeb2aa36dc83175`
+#### `631c81057e165ad349db4755a3a25e7c4afb16772078bad359f70ffb050d3ee5`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 13ACB91D285DD02566BB4116614D985504A2163B
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:16 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:41:59 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.2 KB (1166 bytes)
--	v2 Blob: `sha256:66dabe142cec94486f4738ac0e13a798f44baed38e4f65fa25c2883987c8bcaa`
+-	v2 Blob: `sha256:15737ec5b46067ed1ec3c8be89cff8035416bf4273869e74370b3fda84eccffa`
 -	v2 Content-Length: 1.4 KB (1441 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:08:47 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:27:50 GMT
 
-#### `3108de114aba9ec8285fcbbae99ce9b6c35a653b688d988971e9d1c1d7c4afdc`
+#### `5c2b4017520b6ad43cd1e98ca7672d33717bd4d64ac54edf6b72371a70ab6195`
 
 ```dockerfile
 ENV MONGO_MAJOR=3.1
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:18 GMT
--	Parent Layer: `fd7d8efab2f136b79ab35c8fbea465e4781dbf7afdd20bcfefeb2aa36dc83175`
+-	Created: Wed, 09 Sep 2015 22:42:00 GMT
+-	Parent Layer: `631c81057e165ad349db4755a3a25e7c4afb16772078bad359f70ffb050d3ee5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e5cb1c6217d59da65049c9e476dc6df3ec3174430ff71cb1949b1339dbbf8edb`
+#### `a034f1a1838cfae467fc964c774008f2a4478d48dcfbbdac39cdc2d6a3158312`
 
 ```dockerfile
 ENV MONGO_VERSION=3.1.7
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:20 GMT
--	Parent Layer: `3108de114aba9ec8285fcbbae99ce9b6c35a653b688d988971e9d1c1d7c4afdc`
+-	Created: Wed, 09 Sep 2015 22:42:00 GMT
+-	Parent Layer: `5c2b4017520b6ad43cd1e98ca7672d33717bd4d64ac54edf6b72371a70ab6195`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `525a738873a1dd0f65eee69351b1ecacd3306b01d774fde1c327d278fb201b2b`
+#### `48361050cc6a2c242933ea97733d9189f948ac9670e14560e4476889d18696e6`
 
 ```dockerfile
 RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:23 GMT
--	Parent Layer: `e5cb1c6217d59da65049c9e476dc6df3ec3174430ff71cb1949b1339dbbf8edb`
+-	Created: Wed, 09 Sep 2015 22:42:02 GMT
+-	Parent Layer: `a034f1a1838cfae467fc964c774008f2a4478d48dcfbbdac39cdc2d6a3158312`
 -	Docker Version: 1.7.1
 -	Virtual Size: 67.0 B
--	v2 Blob: `sha256:0f73996e2f3ef9131c2e189dcbd09e2c36b65d059ec898ec1180e66a5c242480`
+-	v2 Blob: `sha256:6fcd765f17f8f450a721ba9f11edbcd302da93cd593e994f932b4486fef5e8da`
 -	v2 Content-Length: 227.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 22:08:41 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:27:39 GMT
 
-#### `626ccdfad9b3edb4deeb9688f5a559d250bd617113fd4d702903d84ec7c62191`
+#### `60daa246b095567f1917e28ef119900204961146cf8cd03d46b8127d734430d1`
 
 ```dockerfile
 RUN set -x \
@@ -2732,92 +2732,92 @@ RUN set -x \
 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:41 GMT
--	Parent Layer: `525a738873a1dd0f65eee69351b1ecacd3306b01d774fde1c327d278fb201b2b`
+-	Created: Wed, 09 Sep 2015 22:42:38 GMT
+-	Parent Layer: `48361050cc6a2c242933ea97733d9189f948ac9670e14560e4476889d18696e6`
 -	Docker Version: 1.7.1
--	Virtual Size: 206.6 MB (206633553 bytes)
--	v2 Blob: `sha256:728a8483e317039ab5dd87582e7d8ffecb8e3af2ac0cedd2a487dc71c534082e`
--	v2 Content-Length: 64.1 MB (64073082 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:08:37 GMT
+-	Virtual Size: 206.6 MB (206624359 bytes)
+-	v2 Blob: `sha256:19ffcef369fe55d74c62f8628d62321bb0a1bce5f6fdb6075aa1f8b34d18ab14`
+-	v2 Content-Length: 64.1 MB (64073569 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:27:32 GMT
 
-#### `9de84f427b78925246cc43b52b5f8b4a391e38616d678f13bc3dba72cf7fca43`
+#### `659d2b644c443e81f14f4017498518940fc8d6022a0ba52949bed5bca8035c5a`
 
 ```dockerfile
 RUN mkdir -p /data/db && chown -R mongodb:mongodb /data/db
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:42 GMT
--	Parent Layer: `626ccdfad9b3edb4deeb9688f5a559d250bd617113fd4d702903d84ec7c62191`
+-	Created: Wed, 09 Sep 2015 22:42:43 GMT
+-	Parent Layer: `60daa246b095567f1917e28ef119900204961146cf8cd03d46b8127d734430d1`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:ff472f5e4a30759c9a2eb58a2ed1b234470f74b573525ab48a9f12ea511bf246`
--	v2 Content-Length: 117.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 22:08:04 GMT
+-	v2 Blob: `sha256:861143dead984dbc4d7484aacdd3fdd522873b80e0f8d4c94a5e1d3c0e5d6625`
+-	v2 Content-Length: 118.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:26:54 GMT
 
-#### `37d9a66856f2cdee90e054ebc02b19cc673e5e646da5cc9fb915d3ba1573169f`
+#### `2405200c3cc0fa2fca6521006899ad010ca284c8bff539548ea50c76949e3e23`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:43 GMT
--	Parent Layer: `9de84f427b78925246cc43b52b5f8b4a391e38616d678f13bc3dba72cf7fca43`
+-	Created: Wed, 09 Sep 2015 22:42:44 GMT
+-	Parent Layer: `659d2b644c443e81f14f4017498518940fc8d6022a0ba52949bed5bca8035c5a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8088804a120723c5a30f127c2b99931193a9ec463ecf3b3018841ea73cdb2e1e`
+#### `e672480652f258867d943f6440c1b1632ad9b1ed60599e847818e39bb5cf7d41`
 
 ```dockerfile
 COPY file:2281d7365008327d469a8cb873a24b4a8eb69e4a82101639520f8e6a3ffa590f in /entrypoint.sh
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:43 GMT
--	Parent Layer: `37d9a66856f2cdee90e054ebc02b19cc673e5e646da5cc9fb915d3ba1573169f`
+-	Created: Wed, 09 Sep 2015 22:42:45 GMT
+-	Parent Layer: `2405200c3cc0fa2fca6521006899ad010ca284c8bff539548ea50c76949e3e23`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:acc63ef6eb82a3506592ac7e9d74c35545dd746d1088f20cadda7bc8670d2a6d`
 -	v2 Content-Length: 274.0 B
 -	v2 Last-Modified: Thu, 18 Jun 2015 22:47:40 GMT
 
-#### `06c412924574eaafbbcf5a0aa0ed5dcd6bffc17520474e3690b98ce80cd40d63`
+#### `9ef62af8c323502b13603725eba42f043af98db772ced737e860836558c4b78a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:44 GMT
--	Parent Layer: `8088804a120723c5a30f127c2b99931193a9ec463ecf3b3018841ea73cdb2e1e`
+-	Created: Wed, 09 Sep 2015 22:42:45 GMT
+-	Parent Layer: `e672480652f258867d943f6440c1b1632ad9b1ed60599e847818e39bb5cf7d41`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1121cfc26cdb5bf4537c0c8779623512db690c3e4cda088d4b5a398d8847bffd`
+#### `7386f60e0bb701c54f4f565ad806c84334238a83fa6f27d51e13717435452a27`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:44 GMT
--	Parent Layer: `06c412924574eaafbbcf5a0aa0ed5dcd6bffc17520474e3690b98ce80cd40d63`
+-	Created: Wed, 09 Sep 2015 22:42:46 GMT
+-	Parent Layer: `9ef62af8c323502b13603725eba42f043af98db772ced737e860836558c4b78a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `12eadb1361595b9a8c6a3bd7bddfec4fbe5da22135b9ee4eaff615c6211c7dcf`
+#### `bb1613d0d01f0b7d7dfdac84dc9e2bcd910de22e20769383cf099fd9d909031e`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:45 GMT
--	Parent Layer: `1121cfc26cdb5bf4537c0c8779623512db690c3e4cda088d4b5a398d8847bffd`
+-	Created: Wed, 09 Sep 2015 22:42:47 GMT
+-	Parent Layer: `7386f60e0bb701c54f4f565ad806c84334238a83fa6f27d51e13717435452a27`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2826,53 +2826,53 @@ CMD ["mongod"]
 
 ## `mongo:3.1`
 
--	Total Virtual Size: 306.7 MB (306699129 bytes)
--	Total v2 Content-Length: 108.0 MB (107998164 bytes)
+-	Total Virtual Size: 306.6 MB (306633874 bytes)
+-	Total v2 Content-Length: 108.0 MB (107983219 bytes)
 
 ### Layers (17)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+#### `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 
 ```dockerfile
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:40 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 22:30:07 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 328.3 KB (328314 bytes)
--	v2 Blob: `sha256:d09bfe72d7025e87d2e2c9402594423a9f67f8b5f21b49ec5150640d823b8b23`
--	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:53 GMT
+-	v2 Blob: `sha256:3277d91c56d4451ccaeee485961a1f1a089b5e02394e7df8a6d0c4543ce1247c`
+-	v2 Content-Length: 1.7 KB (1698 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:12:02 GMT
 
-#### `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+#### `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 
 ```dockerfile
 RUN apt-get update \
@@ -2882,29 +2882,29 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:57 GMT
--	Parent Layer: `29a02fba12fd540c8804768da0ab2816e9ade32340e62af1a3bb4d37bc348db7`
+-	Created: Wed, 09 Sep 2015 22:30:25 GMT
+-	Parent Layer: `430e6598f55b7b22f412024fca3721fb909a1aceffac0bfc24a998be4eb0d7b1`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.5 MB (12519172 bytes)
--	v2 Blob: `sha256:0d620cc779ebe5ef29ebd9e4ebcca9044b3f0edbc3fff22256bb625dc6108c2c`
--	v2 Content-Length: 6.0 MB (6009079 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:51 GMT
+-	Virtual Size: 12.5 MB (12509978 bytes)
+-	v2 Blob: `sha256:acc0b67c2d8a58f3e3f725dd94b3e82268b3204693c8b036822c6f4e120b73c8`
+-	v2 Content-Length: 6.0 MB (6009668 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:58 GMT
 
-#### `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+#### `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 18:53:59 GMT
--	Parent Layer: `2c0883c33c774e3506292a95afa789e622e21f997fc7cee0941cdf6ac94117b2`
+-	Created: Wed, 09 Sep 2015 22:30:28 GMT
+-	Parent Layer: `ec5be38a3c65d7c883bc058e3abd895cfc67c77338b103f90eacfb4e145e1de3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:1f9814f0625e536b32d9c52aafa2e794d973cfd0529a5e5c306d9bfa4ad3e708`
--	v2 Content-Length: 93.6 KB (93631 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:44 GMT
+-	v2 Blob: `sha256:659c6331f7c7dc7edfd4bd863649dbc187dd157e067999a3108db94f1f4b2711`
+-	v2 Content-Length: 93.6 KB (93637 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:50 GMT
 
-#### `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+#### `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -2914,71 +2914,71 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 18:54:04 GMT
--	Parent Layer: `784b13b5e7aac059afba2b436a1db366dbc2c87cd8850550e90f41f383a78858`
+-	Created: Wed, 09 Sep 2015 22:30:33 GMT
+-	Parent Layer: `7328803ca45214bd97dea8a412908789836282c62d22ff3262d65330f991ae49`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:884eca7eebb73b847acda2777f5ac19f642b1e899b13ff9db98b551be5392ce5`
--	v2 Content-Length: 610.6 KB (610599 bytes)
--	v2 Last-Modified: Mon, 24 Aug 2015 23:50:42 GMT
+-	v2 Blob: `sha256:0d3a10238e5ce07734fb23e2676deb15e0762b08f3153e8f4b3a0adefb44c6c3`
+-	v2 Content-Length: 610.6 KB (610602 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:11:45 GMT
 
-#### `fd7d8efab2f136b79ab35c8fbea465e4781dbf7afdd20bcfefeb2aa36dc83175`
+#### `631c81057e165ad349db4755a3a25e7c4afb16772078bad359f70ffb050d3ee5`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 13ACB91D285DD02566BB4116614D985504A2163B
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:16 GMT
--	Parent Layer: `d4c232f44716b759c666518ded05b6edccb1a15e7a880b3c273da5213d684c3c`
+-	Created: Wed, 09 Sep 2015 22:41:59 GMT
+-	Parent Layer: `e81ad85ddfcefee4e25369bb83b17f910cbf207667cb4f227ecf8bcac59df872`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.2 KB (1166 bytes)
--	v2 Blob: `sha256:66dabe142cec94486f4738ac0e13a798f44baed38e4f65fa25c2883987c8bcaa`
+-	v2 Blob: `sha256:15737ec5b46067ed1ec3c8be89cff8035416bf4273869e74370b3fda84eccffa`
 -	v2 Content-Length: 1.4 KB (1441 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:08:47 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:27:50 GMT
 
-#### `3108de114aba9ec8285fcbbae99ce9b6c35a653b688d988971e9d1c1d7c4afdc`
+#### `5c2b4017520b6ad43cd1e98ca7672d33717bd4d64ac54edf6b72371a70ab6195`
 
 ```dockerfile
 ENV MONGO_MAJOR=3.1
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:18 GMT
--	Parent Layer: `fd7d8efab2f136b79ab35c8fbea465e4781dbf7afdd20bcfefeb2aa36dc83175`
+-	Created: Wed, 09 Sep 2015 22:42:00 GMT
+-	Parent Layer: `631c81057e165ad349db4755a3a25e7c4afb16772078bad359f70ffb050d3ee5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e5cb1c6217d59da65049c9e476dc6df3ec3174430ff71cb1949b1339dbbf8edb`
+#### `a034f1a1838cfae467fc964c774008f2a4478d48dcfbbdac39cdc2d6a3158312`
 
 ```dockerfile
 ENV MONGO_VERSION=3.1.7
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:20 GMT
--	Parent Layer: `3108de114aba9ec8285fcbbae99ce9b6c35a653b688d988971e9d1c1d7c4afdc`
+-	Created: Wed, 09 Sep 2015 22:42:00 GMT
+-	Parent Layer: `5c2b4017520b6ad43cd1e98ca7672d33717bd4d64ac54edf6b72371a70ab6195`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `525a738873a1dd0f65eee69351b1ecacd3306b01d774fde1c327d278fb201b2b`
+#### `48361050cc6a2c242933ea97733d9189f948ac9670e14560e4476889d18696e6`
 
 ```dockerfile
 RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:23 GMT
--	Parent Layer: `e5cb1c6217d59da65049c9e476dc6df3ec3174430ff71cb1949b1339dbbf8edb`
+-	Created: Wed, 09 Sep 2015 22:42:02 GMT
+-	Parent Layer: `a034f1a1838cfae467fc964c774008f2a4478d48dcfbbdac39cdc2d6a3158312`
 -	Docker Version: 1.7.1
 -	Virtual Size: 67.0 B
--	v2 Blob: `sha256:0f73996e2f3ef9131c2e189dcbd09e2c36b65d059ec898ec1180e66a5c242480`
+-	v2 Blob: `sha256:6fcd765f17f8f450a721ba9f11edbcd302da93cd593e994f932b4486fef5e8da`
 -	v2 Content-Length: 227.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 22:08:41 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:27:39 GMT
 
-#### `626ccdfad9b3edb4deeb9688f5a559d250bd617113fd4d702903d84ec7c62191`
+#### `60daa246b095567f1917e28ef119900204961146cf8cd03d46b8127d734430d1`
 
 ```dockerfile
 RUN set -x \
@@ -2994,92 +2994,92 @@ RUN set -x \
 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:41 GMT
--	Parent Layer: `525a738873a1dd0f65eee69351b1ecacd3306b01d774fde1c327d278fb201b2b`
+-	Created: Wed, 09 Sep 2015 22:42:38 GMT
+-	Parent Layer: `48361050cc6a2c242933ea97733d9189f948ac9670e14560e4476889d18696e6`
 -	Docker Version: 1.7.1
--	Virtual Size: 206.6 MB (206633553 bytes)
--	v2 Blob: `sha256:728a8483e317039ab5dd87582e7d8ffecb8e3af2ac0cedd2a487dc71c534082e`
--	v2 Content-Length: 64.1 MB (64073082 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:08:37 GMT
+-	Virtual Size: 206.6 MB (206624359 bytes)
+-	v2 Blob: `sha256:19ffcef369fe55d74c62f8628d62321bb0a1bce5f6fdb6075aa1f8b34d18ab14`
+-	v2 Content-Length: 64.1 MB (64073569 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:27:32 GMT
 
-#### `9de84f427b78925246cc43b52b5f8b4a391e38616d678f13bc3dba72cf7fca43`
+#### `659d2b644c443e81f14f4017498518940fc8d6022a0ba52949bed5bca8035c5a`
 
 ```dockerfile
 RUN mkdir -p /data/db && chown -R mongodb:mongodb /data/db
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:42 GMT
--	Parent Layer: `626ccdfad9b3edb4deeb9688f5a559d250bd617113fd4d702903d84ec7c62191`
+-	Created: Wed, 09 Sep 2015 22:42:43 GMT
+-	Parent Layer: `60daa246b095567f1917e28ef119900204961146cf8cd03d46b8127d734430d1`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:ff472f5e4a30759c9a2eb58a2ed1b234470f74b573525ab48a9f12ea511bf246`
--	v2 Content-Length: 117.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 22:08:04 GMT
+-	v2 Blob: `sha256:861143dead984dbc4d7484aacdd3fdd522873b80e0f8d4c94a5e1d3c0e5d6625`
+-	v2 Content-Length: 118.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:26:54 GMT
 
-#### `37d9a66856f2cdee90e054ebc02b19cc673e5e646da5cc9fb915d3ba1573169f`
+#### `2405200c3cc0fa2fca6521006899ad010ca284c8bff539548ea50c76949e3e23`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:43 GMT
--	Parent Layer: `9de84f427b78925246cc43b52b5f8b4a391e38616d678f13bc3dba72cf7fca43`
+-	Created: Wed, 09 Sep 2015 22:42:44 GMT
+-	Parent Layer: `659d2b644c443e81f14f4017498518940fc8d6022a0ba52949bed5bca8035c5a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8088804a120723c5a30f127c2b99931193a9ec463ecf3b3018841ea73cdb2e1e`
+#### `e672480652f258867d943f6440c1b1632ad9b1ed60599e847818e39bb5cf7d41`
 
 ```dockerfile
 COPY file:2281d7365008327d469a8cb873a24b4a8eb69e4a82101639520f8e6a3ffa590f in /entrypoint.sh
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:43 GMT
--	Parent Layer: `37d9a66856f2cdee90e054ebc02b19cc673e5e646da5cc9fb915d3ba1573169f`
+-	Created: Wed, 09 Sep 2015 22:42:45 GMT
+-	Parent Layer: `2405200c3cc0fa2fca6521006899ad010ca284c8bff539548ea50c76949e3e23`
 -	Docker Version: 1.7.1
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:acc63ef6eb82a3506592ac7e9d74c35545dd746d1088f20cadda7bc8670d2a6d`
 -	v2 Content-Length: 274.0 B
 -	v2 Last-Modified: Thu, 18 Jun 2015 22:47:40 GMT
 
-#### `06c412924574eaafbbcf5a0aa0ed5dcd6bffc17520474e3690b98ce80cd40d63`
+#### `9ef62af8c323502b13603725eba42f043af98db772ced737e860836558c4b78a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:44 GMT
--	Parent Layer: `8088804a120723c5a30f127c2b99931193a9ec463ecf3b3018841ea73cdb2e1e`
+-	Created: Wed, 09 Sep 2015 22:42:45 GMT
+-	Parent Layer: `e672480652f258867d943f6440c1b1632ad9b1ed60599e847818e39bb5cf7d41`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1121cfc26cdb5bf4537c0c8779623512db690c3e4cda088d4b5a398d8847bffd`
+#### `7386f60e0bb701c54f4f565ad806c84334238a83fa6f27d51e13717435452a27`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:44 GMT
--	Parent Layer: `06c412924574eaafbbcf5a0aa0ed5dcd6bffc17520474e3690b98ce80cd40d63`
+-	Created: Wed, 09 Sep 2015 22:42:46 GMT
+-	Parent Layer: `9ef62af8c323502b13603725eba42f043af98db772ced737e860836558c4b78a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `12eadb1361595b9a8c6a3bd7bddfec4fbe5da22135b9ee4eaff615c6211c7dcf`
+#### `bb1613d0d01f0b7d7dfdac84dc9e2bcd910de22e20769383cf099fd9d909031e`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Wed, 26 Aug 2015 21:08:45 GMT
--	Parent Layer: `1121cfc26cdb5bf4537c0c8779623512db690c3e4cda088d4b5a398d8847bffd`
+-	Created: Wed, 09 Sep 2015 22:42:47 GMT
+-	Parent Layer: `7386f60e0bb701c54f4f565ad806c84334238a83fa6f27d51e13717435452a27`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`

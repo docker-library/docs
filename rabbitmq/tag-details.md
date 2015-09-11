@@ -13,81 +13,81 @@
 
 ## `rabbitmq:3.5.4`
 
--	Total Virtual Size: 143.5 MB (143507610 bytes)
--	Total v2 Content-Length: 73.2 MB (73179079 bytes)
+-	Total Virtual Size: 143.4 MB (143442355 bytes)
+-	Total v2 Content-Length: 73.2 MB (73164257 bytes)
 
 ### Layers (22)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+#### `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 
 ```dockerfile
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
 ```
 
--	Created: Mon, 24 Aug 2015 21:27:51 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Thu, 10 Sep 2015 01:50:59 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 332.6 KB (332609 bytes)
--	v2 Blob: `sha256:6152f342d55d4498b3b6955069d05bba6e0e0092d401570a37c253ec3dabc099`
--	v2 Content-Length: 3.9 KB (3929 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:26 GMT
+-	v2 Blob: `sha256:8b63910eab49e2154eec3b6a305d67a444232df10cbcae77262e51e75efb05ee`
+-	v2 Content-Length: 3.9 KB (3928 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:45 GMT
 
-#### `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+#### `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y curl ca-certificates --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:07 GMT
--	Parent Layer: `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+-	Created: Thu, 10 Sep 2015 01:51:14 GMT
+-	Parent Layer: `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.4 MB (12386491 bytes)
--	v2 Blob: `sha256:27e87689d8a96672cff2b32d3b8e4f82fb6df2ab23a5c66def7e43622fa6f453`
--	v2 Content-Length: 5.9 MB (5943765 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:24 GMT
+-	Virtual Size: 12.4 MB (12377297 bytes)
+-	v2 Blob: `sha256:9512b31eaf7b467f08ef41406d58eb4fb14e5bf5252da582c3a2edf6e52227ad`
+-	v2 Content-Length: 5.9 MB (5944424 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:40 GMT
 
-#### `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+#### `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:11 GMT
--	Parent Layer: `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+-	Created: Thu, 10 Sep 2015 01:51:18 GMT
+-	Parent Layer: `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:fcf6db73564da32f1270d1734ae739d8071ef39676bd85a558ebcaa64f7e5dc8`
+-	v2 Blob: `sha256:8609be7574fbd2e0460c78b9df7aace346cf85bece23ad9d7084edca23edd5b3`
 -	v2 Content-Length: 93.6 KB (93634 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:19 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:32 GMT
 
-#### `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+#### `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.3/gosu-$(dpkg --print-architecture)" \
@@ -97,15 +97,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:16 GMT
--	Parent Layer: `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+-	Created: Thu, 10 Sep 2015 01:51:22 GMT
+-	Parent Layer: `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.3 MB (2267488 bytes)
--	v2 Blob: `sha256:b243dc839a00262b15a96681fe4d02a0389bc3208288fdcc371856bcd5a4f4ce`
--	v2 Content-Length: 654.4 KB (654439 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:17 GMT
+-	v2 Blob: `sha256:63317e72cb92233cefbe9d267416e6f2833fae45fc86c7daf2c938de8be22fa3`
+-	v2 Content-Length: 654.4 KB (654436 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:27 GMT
 
-#### `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+#### `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 
 ```dockerfile
 RUN set -x \
@@ -114,218 +114,218 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:18 GMT
--	Parent Layer: `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+-	Created: Thu, 10 Sep 2015 01:51:24 GMT
+-	Parent Layer: `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:78826d53bfd1b5d7d69818a8dfef1ae11d63a42f379b51ede72d288c2e62b9da`
+-	v2 Blob: `sha256:62922d1795418ae90d1e7a5b9b0e9f54935dce4c2b6ecf578c482e1de7664e01`
 -	v2 Content-Length: 5.3 KB (5323 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:14 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:21 GMT
 
-#### `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+#### `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 434975BD900CCBE4F7EE1B1ED208507CA14F4FCA
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:20 GMT
--	Parent Layer: `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+-	Created: Thu, 10 Sep 2015 01:51:26 GMT
+-	Parent Layer: `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.2 KB (2236 bytes)
--	v2 Blob: `sha256:f13f2e6f6e3dd982e249d2d98716a44a0cb209e797ebc6f9a1b2139d33299ed9`
--	v2 Content-Length: 2.5 KB (2518 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:12 GMT
+-	v2 Blob: `sha256:ced16b2d41df694bece4430bc9f74e7ba435dd2e1e747fba75f9f05cb9303117`
+-	v2 Content-Length: 2.5 KB (2517 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:17 GMT
 
-#### `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+#### `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 
 ```dockerfile
 RUN echo 'deb http://packages.erlang-solutions.com/debian wheezy contrib' > /etc/apt/sources.list.d/erlang.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 63.0 B
--	v2 Blob: `sha256:61fcf37aab08c4e06998e9442d5332d171056a8d055ec1085bd000960d359bb1`
--	v2 Content-Length: 227.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:10 GMT
+-	v2 Blob: `sha256:fd3bfa9eb38b17669fb7aac390c0454bb7dea3aaf2912b09b44631c34901f38f`
+-	v2 Content-Length: 228.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:12 GMT
 
-#### `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+#### `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 
 ```dockerfile
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+#### `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50C80464FC1B4F7B8CEA6056E8E56
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:23 GMT
--	Parent Layer: `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+-	Created: Thu, 10 Sep 2015 01:51:29 GMT
+-	Parent Layer: `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 5.7 KB (5652 bytes)
--	v2 Blob: `sha256:258b27038ff3732c9bde9356c7f2abb5efc9e7c50acf62dc5653937b19314347`
--	v2 Content-Length: 3.7 KB (3685 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:07 GMT
+-	v2 Blob: `sha256:2a488d8b35a3aa78728f3ead262cbf37a0f3c6758ce66d1833888be347a729fe`
+-	v2 Content-Length: 3.7 KB (3690 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:04 GMT
 
-#### `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+#### `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 
 ```dockerfile
 RUN echo 'deb http://www.rabbitmq.com/debian/ testing main' > /etc/apt/sources.list.d/rabbitmq.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 49.0 B
--	v2 Blob: `sha256:bb4a14715b1022baa44017713507dee8a006bfe65387e93cf57a589c37dfdcc1`
--	v2 Content-Length: 212.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:05 GMT
+-	v2 Blob: `sha256:6cf22df6099160819953270b3451bda11d06bed874d92bc1b1a065c0e5586b1f`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:59 GMT
 
-#### `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+#### `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 
 ```dockerfile
 ENV RABBITMQ_VERSION=3.5.4-1
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+#### `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rabbitmq-server=$RABBITMQ_VERSION --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:58 GMT
--	Parent Layer: `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+-	Created: Thu, 10 Sep 2015 01:51:57 GMT
+-	Parent Layer: `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 -	Docker Version: 1.7.1
--	Virtual Size: 43.4 MB (43421784 bytes)
--	v2 Blob: `sha256:798679e408d1e1667ed0460e9b74b107c6192f2c1ba6c1a79851ecf18f1f8e12`
--	v2 Content-Length: 29.3 MB (29262314 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:00 GMT
+-	Virtual Size: 43.4 MB (43412590 bytes)
+-	v2 Blob: `sha256:867158fff484e546fd7110a844149fb30c6acd353025aaa202d0a43686443db3`
+-	v2 Content-Length: 29.3 MB (29262862 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:50 GMT
 
-#### `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+#### `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 
 ```dockerfile
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:59 GMT
--	Parent Layer: `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+-	Created: Thu, 10 Sep 2015 01:51:58 GMT
+-	Parent Layer: `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+#### `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 
 ```dockerfile
 RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:00 GMT
--	Parent Layer: `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 -	Docker Version: 1.7.1
 -	Virtual Size: 36.0 B
--	v2 Blob: `sha256:7e43b1dd45283a49d384f983157bce0cdcd0dc9d695c75de7e8590ae55bd70a3`
+-	v2 Blob: `sha256:1d1c982f0b912d98c902d82e073322821709b4ba6c63afa628347253e46f2057`
 -	v2 Content-Length: 190.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:46 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:31 GMT
 
-#### `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+#### `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 
 ```dockerfile
 VOLUME [/var/lib/rabbitmq]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:01 GMT
--	Parent Layer: `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+#### `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 
 ```dockerfile
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+-	Created: Thu, 10 Sep 2015 01:52:00 GMT
+-	Parent Layer: `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 -	Docker Version: 1.7.1
 -	Virtual Size: 32.0 B
--	v2 Blob: `sha256:dcd8071f2e3a11c04c1d42374d806fb3189ccd653a30760f9b72ed44841574c5`
--	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:41 GMT
+-	v2 Blob: `sha256:f2a2ae268a6f01fa55139bb085361cb92a2206449cf69fc9ba4a46b22cf31f87`
+-	v2 Content-Length: 147.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:23 GMT
 
-#### `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+#### `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 
 ```dockerfile
 COPY file:db9f9f50e2ef42cbe4991524d8c02499c985667cbd683ca0b69fba97e93f1b2c in /
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+-	Created: Thu, 10 Sep 2015 01:52:01 GMT
+-	Parent Layer: `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.2 KB (1238 bytes)
 -	v2 Blob: `sha256:512fc7e0c5f63cdba3707bf23c86151d49ccda2f7c6c13b53650a739a4674847`
 -	v2 Content-Length: 645.0 B
 -	v2 Last-Modified: Fri, 24 Jul 2015 21:31:45 GMT
 
-#### `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+#### `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+#### `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 
 ```dockerfile
 EXPOSE 5672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+#### `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 
 ```dockerfile
 CMD ["rabbitmq-server"]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:04 GMT
--	Parent Layer: `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+-	Created: Thu, 10 Sep 2015 01:52:03 GMT
+-	Parent Layer: `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -334,81 +334,81 @@ CMD ["rabbitmq-server"]
 
 ## `rabbitmq:3.5`
 
--	Total Virtual Size: 143.5 MB (143507610 bytes)
--	Total v2 Content-Length: 73.2 MB (73179079 bytes)
+-	Total Virtual Size: 143.4 MB (143442355 bytes)
+-	Total v2 Content-Length: 73.2 MB (73164257 bytes)
 
 ### Layers (22)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+#### `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 
 ```dockerfile
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
 ```
 
--	Created: Mon, 24 Aug 2015 21:27:51 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Thu, 10 Sep 2015 01:50:59 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 332.6 KB (332609 bytes)
--	v2 Blob: `sha256:6152f342d55d4498b3b6955069d05bba6e0e0092d401570a37c253ec3dabc099`
--	v2 Content-Length: 3.9 KB (3929 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:26 GMT
+-	v2 Blob: `sha256:8b63910eab49e2154eec3b6a305d67a444232df10cbcae77262e51e75efb05ee`
+-	v2 Content-Length: 3.9 KB (3928 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:45 GMT
 
-#### `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+#### `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y curl ca-certificates --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:07 GMT
--	Parent Layer: `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+-	Created: Thu, 10 Sep 2015 01:51:14 GMT
+-	Parent Layer: `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.4 MB (12386491 bytes)
--	v2 Blob: `sha256:27e87689d8a96672cff2b32d3b8e4f82fb6df2ab23a5c66def7e43622fa6f453`
--	v2 Content-Length: 5.9 MB (5943765 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:24 GMT
+-	Virtual Size: 12.4 MB (12377297 bytes)
+-	v2 Blob: `sha256:9512b31eaf7b467f08ef41406d58eb4fb14e5bf5252da582c3a2edf6e52227ad`
+-	v2 Content-Length: 5.9 MB (5944424 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:40 GMT
 
-#### `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+#### `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:11 GMT
--	Parent Layer: `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+-	Created: Thu, 10 Sep 2015 01:51:18 GMT
+-	Parent Layer: `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:fcf6db73564da32f1270d1734ae739d8071ef39676bd85a558ebcaa64f7e5dc8`
+-	v2 Blob: `sha256:8609be7574fbd2e0460c78b9df7aace346cf85bece23ad9d7084edca23edd5b3`
 -	v2 Content-Length: 93.6 KB (93634 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:19 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:32 GMT
 
-#### `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+#### `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.3/gosu-$(dpkg --print-architecture)" \
@@ -418,15 +418,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:16 GMT
--	Parent Layer: `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+-	Created: Thu, 10 Sep 2015 01:51:22 GMT
+-	Parent Layer: `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.3 MB (2267488 bytes)
--	v2 Blob: `sha256:b243dc839a00262b15a96681fe4d02a0389bc3208288fdcc371856bcd5a4f4ce`
--	v2 Content-Length: 654.4 KB (654439 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:17 GMT
+-	v2 Blob: `sha256:63317e72cb92233cefbe9d267416e6f2833fae45fc86c7daf2c938de8be22fa3`
+-	v2 Content-Length: 654.4 KB (654436 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:27 GMT
 
-#### `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+#### `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 
 ```dockerfile
 RUN set -x \
@@ -435,218 +435,218 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:18 GMT
--	Parent Layer: `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+-	Created: Thu, 10 Sep 2015 01:51:24 GMT
+-	Parent Layer: `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:78826d53bfd1b5d7d69818a8dfef1ae11d63a42f379b51ede72d288c2e62b9da`
+-	v2 Blob: `sha256:62922d1795418ae90d1e7a5b9b0e9f54935dce4c2b6ecf578c482e1de7664e01`
 -	v2 Content-Length: 5.3 KB (5323 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:14 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:21 GMT
 
-#### `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+#### `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 434975BD900CCBE4F7EE1B1ED208507CA14F4FCA
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:20 GMT
--	Parent Layer: `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+-	Created: Thu, 10 Sep 2015 01:51:26 GMT
+-	Parent Layer: `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.2 KB (2236 bytes)
--	v2 Blob: `sha256:f13f2e6f6e3dd982e249d2d98716a44a0cb209e797ebc6f9a1b2139d33299ed9`
--	v2 Content-Length: 2.5 KB (2518 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:12 GMT
+-	v2 Blob: `sha256:ced16b2d41df694bece4430bc9f74e7ba435dd2e1e747fba75f9f05cb9303117`
+-	v2 Content-Length: 2.5 KB (2517 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:17 GMT
 
-#### `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+#### `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 
 ```dockerfile
 RUN echo 'deb http://packages.erlang-solutions.com/debian wheezy contrib' > /etc/apt/sources.list.d/erlang.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 63.0 B
--	v2 Blob: `sha256:61fcf37aab08c4e06998e9442d5332d171056a8d055ec1085bd000960d359bb1`
--	v2 Content-Length: 227.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:10 GMT
+-	v2 Blob: `sha256:fd3bfa9eb38b17669fb7aac390c0454bb7dea3aaf2912b09b44631c34901f38f`
+-	v2 Content-Length: 228.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:12 GMT
 
-#### `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+#### `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 
 ```dockerfile
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+#### `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50C80464FC1B4F7B8CEA6056E8E56
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:23 GMT
--	Parent Layer: `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+-	Created: Thu, 10 Sep 2015 01:51:29 GMT
+-	Parent Layer: `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 5.7 KB (5652 bytes)
--	v2 Blob: `sha256:258b27038ff3732c9bde9356c7f2abb5efc9e7c50acf62dc5653937b19314347`
--	v2 Content-Length: 3.7 KB (3685 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:07 GMT
+-	v2 Blob: `sha256:2a488d8b35a3aa78728f3ead262cbf37a0f3c6758ce66d1833888be347a729fe`
+-	v2 Content-Length: 3.7 KB (3690 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:04 GMT
 
-#### `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+#### `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 
 ```dockerfile
 RUN echo 'deb http://www.rabbitmq.com/debian/ testing main' > /etc/apt/sources.list.d/rabbitmq.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 49.0 B
--	v2 Blob: `sha256:bb4a14715b1022baa44017713507dee8a006bfe65387e93cf57a589c37dfdcc1`
--	v2 Content-Length: 212.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:05 GMT
+-	v2 Blob: `sha256:6cf22df6099160819953270b3451bda11d06bed874d92bc1b1a065c0e5586b1f`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:59 GMT
 
-#### `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+#### `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 
 ```dockerfile
 ENV RABBITMQ_VERSION=3.5.4-1
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+#### `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rabbitmq-server=$RABBITMQ_VERSION --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:58 GMT
--	Parent Layer: `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+-	Created: Thu, 10 Sep 2015 01:51:57 GMT
+-	Parent Layer: `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 -	Docker Version: 1.7.1
--	Virtual Size: 43.4 MB (43421784 bytes)
--	v2 Blob: `sha256:798679e408d1e1667ed0460e9b74b107c6192f2c1ba6c1a79851ecf18f1f8e12`
--	v2 Content-Length: 29.3 MB (29262314 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:00 GMT
+-	Virtual Size: 43.4 MB (43412590 bytes)
+-	v2 Blob: `sha256:867158fff484e546fd7110a844149fb30c6acd353025aaa202d0a43686443db3`
+-	v2 Content-Length: 29.3 MB (29262862 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:50 GMT
 
-#### `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+#### `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 
 ```dockerfile
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:59 GMT
--	Parent Layer: `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+-	Created: Thu, 10 Sep 2015 01:51:58 GMT
+-	Parent Layer: `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+#### `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 
 ```dockerfile
 RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:00 GMT
--	Parent Layer: `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 -	Docker Version: 1.7.1
 -	Virtual Size: 36.0 B
--	v2 Blob: `sha256:7e43b1dd45283a49d384f983157bce0cdcd0dc9d695c75de7e8590ae55bd70a3`
+-	v2 Blob: `sha256:1d1c982f0b912d98c902d82e073322821709b4ba6c63afa628347253e46f2057`
 -	v2 Content-Length: 190.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:46 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:31 GMT
 
-#### `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+#### `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 
 ```dockerfile
 VOLUME [/var/lib/rabbitmq]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:01 GMT
--	Parent Layer: `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+#### `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 
 ```dockerfile
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+-	Created: Thu, 10 Sep 2015 01:52:00 GMT
+-	Parent Layer: `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 -	Docker Version: 1.7.1
 -	Virtual Size: 32.0 B
--	v2 Blob: `sha256:dcd8071f2e3a11c04c1d42374d806fb3189ccd653a30760f9b72ed44841574c5`
--	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:41 GMT
+-	v2 Blob: `sha256:f2a2ae268a6f01fa55139bb085361cb92a2206449cf69fc9ba4a46b22cf31f87`
+-	v2 Content-Length: 147.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:23 GMT
 
-#### `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+#### `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 
 ```dockerfile
 COPY file:db9f9f50e2ef42cbe4991524d8c02499c985667cbd683ca0b69fba97e93f1b2c in /
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+-	Created: Thu, 10 Sep 2015 01:52:01 GMT
+-	Parent Layer: `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.2 KB (1238 bytes)
 -	v2 Blob: `sha256:512fc7e0c5f63cdba3707bf23c86151d49ccda2f7c6c13b53650a739a4674847`
 -	v2 Content-Length: 645.0 B
 -	v2 Last-Modified: Fri, 24 Jul 2015 21:31:45 GMT
 
-#### `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+#### `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+#### `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 
 ```dockerfile
 EXPOSE 5672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+#### `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 
 ```dockerfile
 CMD ["rabbitmq-server"]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:04 GMT
--	Parent Layer: `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+-	Created: Thu, 10 Sep 2015 01:52:03 GMT
+-	Parent Layer: `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -655,81 +655,81 @@ CMD ["rabbitmq-server"]
 
 ## `rabbitmq:3`
 
--	Total Virtual Size: 143.5 MB (143507610 bytes)
--	Total v2 Content-Length: 73.2 MB (73179079 bytes)
+-	Total Virtual Size: 143.4 MB (143442355 bytes)
+-	Total v2 Content-Length: 73.2 MB (73164257 bytes)
 
 ### Layers (22)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+#### `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 
 ```dockerfile
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
 ```
 
--	Created: Mon, 24 Aug 2015 21:27:51 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Thu, 10 Sep 2015 01:50:59 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 332.6 KB (332609 bytes)
--	v2 Blob: `sha256:6152f342d55d4498b3b6955069d05bba6e0e0092d401570a37c253ec3dabc099`
--	v2 Content-Length: 3.9 KB (3929 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:26 GMT
+-	v2 Blob: `sha256:8b63910eab49e2154eec3b6a305d67a444232df10cbcae77262e51e75efb05ee`
+-	v2 Content-Length: 3.9 KB (3928 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:45 GMT
 
-#### `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+#### `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y curl ca-certificates --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:07 GMT
--	Parent Layer: `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+-	Created: Thu, 10 Sep 2015 01:51:14 GMT
+-	Parent Layer: `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.4 MB (12386491 bytes)
--	v2 Blob: `sha256:27e87689d8a96672cff2b32d3b8e4f82fb6df2ab23a5c66def7e43622fa6f453`
--	v2 Content-Length: 5.9 MB (5943765 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:24 GMT
+-	Virtual Size: 12.4 MB (12377297 bytes)
+-	v2 Blob: `sha256:9512b31eaf7b467f08ef41406d58eb4fb14e5bf5252da582c3a2edf6e52227ad`
+-	v2 Content-Length: 5.9 MB (5944424 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:40 GMT
 
-#### `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+#### `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:11 GMT
--	Parent Layer: `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+-	Created: Thu, 10 Sep 2015 01:51:18 GMT
+-	Parent Layer: `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:fcf6db73564da32f1270d1734ae739d8071ef39676bd85a558ebcaa64f7e5dc8`
+-	v2 Blob: `sha256:8609be7574fbd2e0460c78b9df7aace346cf85bece23ad9d7084edca23edd5b3`
 -	v2 Content-Length: 93.6 KB (93634 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:19 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:32 GMT
 
-#### `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+#### `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.3/gosu-$(dpkg --print-architecture)" \
@@ -739,15 +739,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:16 GMT
--	Parent Layer: `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+-	Created: Thu, 10 Sep 2015 01:51:22 GMT
+-	Parent Layer: `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.3 MB (2267488 bytes)
--	v2 Blob: `sha256:b243dc839a00262b15a96681fe4d02a0389bc3208288fdcc371856bcd5a4f4ce`
--	v2 Content-Length: 654.4 KB (654439 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:17 GMT
+-	v2 Blob: `sha256:63317e72cb92233cefbe9d267416e6f2833fae45fc86c7daf2c938de8be22fa3`
+-	v2 Content-Length: 654.4 KB (654436 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:27 GMT
 
-#### `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+#### `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 
 ```dockerfile
 RUN set -x \
@@ -756,218 +756,218 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:18 GMT
--	Parent Layer: `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+-	Created: Thu, 10 Sep 2015 01:51:24 GMT
+-	Parent Layer: `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:78826d53bfd1b5d7d69818a8dfef1ae11d63a42f379b51ede72d288c2e62b9da`
+-	v2 Blob: `sha256:62922d1795418ae90d1e7a5b9b0e9f54935dce4c2b6ecf578c482e1de7664e01`
 -	v2 Content-Length: 5.3 KB (5323 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:14 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:21 GMT
 
-#### `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+#### `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 434975BD900CCBE4F7EE1B1ED208507CA14F4FCA
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:20 GMT
--	Parent Layer: `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+-	Created: Thu, 10 Sep 2015 01:51:26 GMT
+-	Parent Layer: `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.2 KB (2236 bytes)
--	v2 Blob: `sha256:f13f2e6f6e3dd982e249d2d98716a44a0cb209e797ebc6f9a1b2139d33299ed9`
--	v2 Content-Length: 2.5 KB (2518 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:12 GMT
+-	v2 Blob: `sha256:ced16b2d41df694bece4430bc9f74e7ba435dd2e1e747fba75f9f05cb9303117`
+-	v2 Content-Length: 2.5 KB (2517 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:17 GMT
 
-#### `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+#### `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 
 ```dockerfile
 RUN echo 'deb http://packages.erlang-solutions.com/debian wheezy contrib' > /etc/apt/sources.list.d/erlang.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 63.0 B
--	v2 Blob: `sha256:61fcf37aab08c4e06998e9442d5332d171056a8d055ec1085bd000960d359bb1`
--	v2 Content-Length: 227.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:10 GMT
+-	v2 Blob: `sha256:fd3bfa9eb38b17669fb7aac390c0454bb7dea3aaf2912b09b44631c34901f38f`
+-	v2 Content-Length: 228.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:12 GMT
 
-#### `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+#### `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 
 ```dockerfile
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+#### `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50C80464FC1B4F7B8CEA6056E8E56
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:23 GMT
--	Parent Layer: `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+-	Created: Thu, 10 Sep 2015 01:51:29 GMT
+-	Parent Layer: `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 5.7 KB (5652 bytes)
--	v2 Blob: `sha256:258b27038ff3732c9bde9356c7f2abb5efc9e7c50acf62dc5653937b19314347`
--	v2 Content-Length: 3.7 KB (3685 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:07 GMT
+-	v2 Blob: `sha256:2a488d8b35a3aa78728f3ead262cbf37a0f3c6758ce66d1833888be347a729fe`
+-	v2 Content-Length: 3.7 KB (3690 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:04 GMT
 
-#### `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+#### `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 
 ```dockerfile
 RUN echo 'deb http://www.rabbitmq.com/debian/ testing main' > /etc/apt/sources.list.d/rabbitmq.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 49.0 B
--	v2 Blob: `sha256:bb4a14715b1022baa44017713507dee8a006bfe65387e93cf57a589c37dfdcc1`
--	v2 Content-Length: 212.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:05 GMT
+-	v2 Blob: `sha256:6cf22df6099160819953270b3451bda11d06bed874d92bc1b1a065c0e5586b1f`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:59 GMT
 
-#### `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+#### `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 
 ```dockerfile
 ENV RABBITMQ_VERSION=3.5.4-1
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+#### `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rabbitmq-server=$RABBITMQ_VERSION --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:58 GMT
--	Parent Layer: `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+-	Created: Thu, 10 Sep 2015 01:51:57 GMT
+-	Parent Layer: `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 -	Docker Version: 1.7.1
--	Virtual Size: 43.4 MB (43421784 bytes)
--	v2 Blob: `sha256:798679e408d1e1667ed0460e9b74b107c6192f2c1ba6c1a79851ecf18f1f8e12`
--	v2 Content-Length: 29.3 MB (29262314 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:00 GMT
+-	Virtual Size: 43.4 MB (43412590 bytes)
+-	v2 Blob: `sha256:867158fff484e546fd7110a844149fb30c6acd353025aaa202d0a43686443db3`
+-	v2 Content-Length: 29.3 MB (29262862 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:50 GMT
 
-#### `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+#### `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 
 ```dockerfile
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:59 GMT
--	Parent Layer: `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+-	Created: Thu, 10 Sep 2015 01:51:58 GMT
+-	Parent Layer: `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+#### `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 
 ```dockerfile
 RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:00 GMT
--	Parent Layer: `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 -	Docker Version: 1.7.1
 -	Virtual Size: 36.0 B
--	v2 Blob: `sha256:7e43b1dd45283a49d384f983157bce0cdcd0dc9d695c75de7e8590ae55bd70a3`
+-	v2 Blob: `sha256:1d1c982f0b912d98c902d82e073322821709b4ba6c63afa628347253e46f2057`
 -	v2 Content-Length: 190.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:46 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:31 GMT
 
-#### `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+#### `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 
 ```dockerfile
 VOLUME [/var/lib/rabbitmq]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:01 GMT
--	Parent Layer: `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+#### `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 
 ```dockerfile
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+-	Created: Thu, 10 Sep 2015 01:52:00 GMT
+-	Parent Layer: `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 -	Docker Version: 1.7.1
 -	Virtual Size: 32.0 B
--	v2 Blob: `sha256:dcd8071f2e3a11c04c1d42374d806fb3189ccd653a30760f9b72ed44841574c5`
--	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:41 GMT
+-	v2 Blob: `sha256:f2a2ae268a6f01fa55139bb085361cb92a2206449cf69fc9ba4a46b22cf31f87`
+-	v2 Content-Length: 147.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:23 GMT
 
-#### `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+#### `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 
 ```dockerfile
 COPY file:db9f9f50e2ef42cbe4991524d8c02499c985667cbd683ca0b69fba97e93f1b2c in /
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+-	Created: Thu, 10 Sep 2015 01:52:01 GMT
+-	Parent Layer: `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.2 KB (1238 bytes)
 -	v2 Blob: `sha256:512fc7e0c5f63cdba3707bf23c86151d49ccda2f7c6c13b53650a739a4674847`
 -	v2 Content-Length: 645.0 B
 -	v2 Last-Modified: Fri, 24 Jul 2015 21:31:45 GMT
 
-#### `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+#### `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+#### `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 
 ```dockerfile
 EXPOSE 5672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+#### `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 
 ```dockerfile
 CMD ["rabbitmq-server"]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:04 GMT
--	Parent Layer: `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+-	Created: Thu, 10 Sep 2015 01:52:03 GMT
+-	Parent Layer: `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -976,81 +976,81 @@ CMD ["rabbitmq-server"]
 
 ## `rabbitmq:latest`
 
--	Total Virtual Size: 143.5 MB (143507610 bytes)
--	Total v2 Content-Length: 73.2 MB (73179079 bytes)
+-	Total Virtual Size: 143.4 MB (143442355 bytes)
+-	Total v2 Content-Length: 73.2 MB (73164257 bytes)
 
 ### Layers (22)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+#### `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 
 ```dockerfile
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
 ```
 
--	Created: Mon, 24 Aug 2015 21:27:51 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Thu, 10 Sep 2015 01:50:59 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 332.6 KB (332609 bytes)
--	v2 Blob: `sha256:6152f342d55d4498b3b6955069d05bba6e0e0092d401570a37c253ec3dabc099`
--	v2 Content-Length: 3.9 KB (3929 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:26 GMT
+-	v2 Blob: `sha256:8b63910eab49e2154eec3b6a305d67a444232df10cbcae77262e51e75efb05ee`
+-	v2 Content-Length: 3.9 KB (3928 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:45 GMT
 
-#### `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+#### `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y curl ca-certificates --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:07 GMT
--	Parent Layer: `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+-	Created: Thu, 10 Sep 2015 01:51:14 GMT
+-	Parent Layer: `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.4 MB (12386491 bytes)
--	v2 Blob: `sha256:27e87689d8a96672cff2b32d3b8e4f82fb6df2ab23a5c66def7e43622fa6f453`
--	v2 Content-Length: 5.9 MB (5943765 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:24 GMT
+-	Virtual Size: 12.4 MB (12377297 bytes)
+-	v2 Blob: `sha256:9512b31eaf7b467f08ef41406d58eb4fb14e5bf5252da582c3a2edf6e52227ad`
+-	v2 Content-Length: 5.9 MB (5944424 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:40 GMT
 
-#### `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+#### `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:11 GMT
--	Parent Layer: `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+-	Created: Thu, 10 Sep 2015 01:51:18 GMT
+-	Parent Layer: `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:fcf6db73564da32f1270d1734ae739d8071ef39676bd85a558ebcaa64f7e5dc8`
+-	v2 Blob: `sha256:8609be7574fbd2e0460c78b9df7aace346cf85bece23ad9d7084edca23edd5b3`
 -	v2 Content-Length: 93.6 KB (93634 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:19 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:32 GMT
 
-#### `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+#### `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.3/gosu-$(dpkg --print-architecture)" \
@@ -1060,15 +1060,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:16 GMT
--	Parent Layer: `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+-	Created: Thu, 10 Sep 2015 01:51:22 GMT
+-	Parent Layer: `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.3 MB (2267488 bytes)
--	v2 Blob: `sha256:b243dc839a00262b15a96681fe4d02a0389bc3208288fdcc371856bcd5a4f4ce`
--	v2 Content-Length: 654.4 KB (654439 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:17 GMT
+-	v2 Blob: `sha256:63317e72cb92233cefbe9d267416e6f2833fae45fc86c7daf2c938de8be22fa3`
+-	v2 Content-Length: 654.4 KB (654436 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:27 GMT
 
-#### `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+#### `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 
 ```dockerfile
 RUN set -x \
@@ -1077,218 +1077,218 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:18 GMT
--	Parent Layer: `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+-	Created: Thu, 10 Sep 2015 01:51:24 GMT
+-	Parent Layer: `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:78826d53bfd1b5d7d69818a8dfef1ae11d63a42f379b51ede72d288c2e62b9da`
+-	v2 Blob: `sha256:62922d1795418ae90d1e7a5b9b0e9f54935dce4c2b6ecf578c482e1de7664e01`
 -	v2 Content-Length: 5.3 KB (5323 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:14 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:21 GMT
 
-#### `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+#### `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 434975BD900CCBE4F7EE1B1ED208507CA14F4FCA
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:20 GMT
--	Parent Layer: `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+-	Created: Thu, 10 Sep 2015 01:51:26 GMT
+-	Parent Layer: `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.2 KB (2236 bytes)
--	v2 Blob: `sha256:f13f2e6f6e3dd982e249d2d98716a44a0cb209e797ebc6f9a1b2139d33299ed9`
--	v2 Content-Length: 2.5 KB (2518 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:12 GMT
+-	v2 Blob: `sha256:ced16b2d41df694bece4430bc9f74e7ba435dd2e1e747fba75f9f05cb9303117`
+-	v2 Content-Length: 2.5 KB (2517 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:17 GMT
 
-#### `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+#### `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 
 ```dockerfile
 RUN echo 'deb http://packages.erlang-solutions.com/debian wheezy contrib' > /etc/apt/sources.list.d/erlang.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 63.0 B
--	v2 Blob: `sha256:61fcf37aab08c4e06998e9442d5332d171056a8d055ec1085bd000960d359bb1`
--	v2 Content-Length: 227.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:10 GMT
+-	v2 Blob: `sha256:fd3bfa9eb38b17669fb7aac390c0454bb7dea3aaf2912b09b44631c34901f38f`
+-	v2 Content-Length: 228.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:12 GMT
 
-#### `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+#### `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 
 ```dockerfile
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+#### `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50C80464FC1B4F7B8CEA6056E8E56
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:23 GMT
--	Parent Layer: `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+-	Created: Thu, 10 Sep 2015 01:51:29 GMT
+-	Parent Layer: `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 5.7 KB (5652 bytes)
--	v2 Blob: `sha256:258b27038ff3732c9bde9356c7f2abb5efc9e7c50acf62dc5653937b19314347`
--	v2 Content-Length: 3.7 KB (3685 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:07 GMT
+-	v2 Blob: `sha256:2a488d8b35a3aa78728f3ead262cbf37a0f3c6758ce66d1833888be347a729fe`
+-	v2 Content-Length: 3.7 KB (3690 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:04 GMT
 
-#### `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+#### `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 
 ```dockerfile
 RUN echo 'deb http://www.rabbitmq.com/debian/ testing main' > /etc/apt/sources.list.d/rabbitmq.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 49.0 B
--	v2 Blob: `sha256:bb4a14715b1022baa44017713507dee8a006bfe65387e93cf57a589c37dfdcc1`
--	v2 Content-Length: 212.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:05 GMT
+-	v2 Blob: `sha256:6cf22df6099160819953270b3451bda11d06bed874d92bc1b1a065c0e5586b1f`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:59 GMT
 
-#### `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+#### `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 
 ```dockerfile
 ENV RABBITMQ_VERSION=3.5.4-1
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+#### `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rabbitmq-server=$RABBITMQ_VERSION --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:58 GMT
--	Parent Layer: `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+-	Created: Thu, 10 Sep 2015 01:51:57 GMT
+-	Parent Layer: `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 -	Docker Version: 1.7.1
--	Virtual Size: 43.4 MB (43421784 bytes)
--	v2 Blob: `sha256:798679e408d1e1667ed0460e9b74b107c6192f2c1ba6c1a79851ecf18f1f8e12`
--	v2 Content-Length: 29.3 MB (29262314 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:00 GMT
+-	Virtual Size: 43.4 MB (43412590 bytes)
+-	v2 Blob: `sha256:867158fff484e546fd7110a844149fb30c6acd353025aaa202d0a43686443db3`
+-	v2 Content-Length: 29.3 MB (29262862 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:50 GMT
 
-#### `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+#### `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 
 ```dockerfile
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:59 GMT
--	Parent Layer: `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+-	Created: Thu, 10 Sep 2015 01:51:58 GMT
+-	Parent Layer: `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+#### `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 
 ```dockerfile
 RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:00 GMT
--	Parent Layer: `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 -	Docker Version: 1.7.1
 -	Virtual Size: 36.0 B
--	v2 Blob: `sha256:7e43b1dd45283a49d384f983157bce0cdcd0dc9d695c75de7e8590ae55bd70a3`
+-	v2 Blob: `sha256:1d1c982f0b912d98c902d82e073322821709b4ba6c63afa628347253e46f2057`
 -	v2 Content-Length: 190.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:46 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:31 GMT
 
-#### `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+#### `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 
 ```dockerfile
 VOLUME [/var/lib/rabbitmq]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:01 GMT
--	Parent Layer: `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+#### `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 
 ```dockerfile
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+-	Created: Thu, 10 Sep 2015 01:52:00 GMT
+-	Parent Layer: `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 -	Docker Version: 1.7.1
 -	Virtual Size: 32.0 B
--	v2 Blob: `sha256:dcd8071f2e3a11c04c1d42374d806fb3189ccd653a30760f9b72ed44841574c5`
--	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:41 GMT
+-	v2 Blob: `sha256:f2a2ae268a6f01fa55139bb085361cb92a2206449cf69fc9ba4a46b22cf31f87`
+-	v2 Content-Length: 147.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:23 GMT
 
-#### `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+#### `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 
 ```dockerfile
 COPY file:db9f9f50e2ef42cbe4991524d8c02499c985667cbd683ca0b69fba97e93f1b2c in /
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+-	Created: Thu, 10 Sep 2015 01:52:01 GMT
+-	Parent Layer: `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.2 KB (1238 bytes)
 -	v2 Blob: `sha256:512fc7e0c5f63cdba3707bf23c86151d49ccda2f7c6c13b53650a739a4674847`
 -	v2 Content-Length: 645.0 B
 -	v2 Last-Modified: Fri, 24 Jul 2015 21:31:45 GMT
 
-#### `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+#### `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+#### `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 
 ```dockerfile
 EXPOSE 5672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+#### `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 
 ```dockerfile
 CMD ["rabbitmq-server"]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:04 GMT
--	Parent Layer: `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+-	Created: Thu, 10 Sep 2015 01:52:03 GMT
+-	Parent Layer: `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1297,81 +1297,81 @@ CMD ["rabbitmq-server"]
 
 ## `rabbitmq:3.5.4-management`
 
--	Total Virtual Size: 143.5 MB (143507633 bytes)
--	Total v2 Content-Length: 73.2 MB (73179292 bytes)
+-	Total Virtual Size: 143.4 MB (143442378 bytes)
+-	Total v2 Content-Length: 73.2 MB (73164469 bytes)
 
 ### Layers (24)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+#### `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 
 ```dockerfile
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
 ```
 
--	Created: Mon, 24 Aug 2015 21:27:51 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Thu, 10 Sep 2015 01:50:59 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 332.6 KB (332609 bytes)
--	v2 Blob: `sha256:6152f342d55d4498b3b6955069d05bba6e0e0092d401570a37c253ec3dabc099`
--	v2 Content-Length: 3.9 KB (3929 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:26 GMT
+-	v2 Blob: `sha256:8b63910eab49e2154eec3b6a305d67a444232df10cbcae77262e51e75efb05ee`
+-	v2 Content-Length: 3.9 KB (3928 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:45 GMT
 
-#### `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+#### `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y curl ca-certificates --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:07 GMT
--	Parent Layer: `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+-	Created: Thu, 10 Sep 2015 01:51:14 GMT
+-	Parent Layer: `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.4 MB (12386491 bytes)
--	v2 Blob: `sha256:27e87689d8a96672cff2b32d3b8e4f82fb6df2ab23a5c66def7e43622fa6f453`
--	v2 Content-Length: 5.9 MB (5943765 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:24 GMT
+-	Virtual Size: 12.4 MB (12377297 bytes)
+-	v2 Blob: `sha256:9512b31eaf7b467f08ef41406d58eb4fb14e5bf5252da582c3a2edf6e52227ad`
+-	v2 Content-Length: 5.9 MB (5944424 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:40 GMT
 
-#### `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+#### `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:11 GMT
--	Parent Layer: `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+-	Created: Thu, 10 Sep 2015 01:51:18 GMT
+-	Parent Layer: `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:fcf6db73564da32f1270d1734ae739d8071ef39676bd85a558ebcaa64f7e5dc8`
+-	v2 Blob: `sha256:8609be7574fbd2e0460c78b9df7aace346cf85bece23ad9d7084edca23edd5b3`
 -	v2 Content-Length: 93.6 KB (93634 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:19 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:32 GMT
 
-#### `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+#### `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.3/gosu-$(dpkg --print-architecture)" \
@@ -1381,15 +1381,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:16 GMT
--	Parent Layer: `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+-	Created: Thu, 10 Sep 2015 01:51:22 GMT
+-	Parent Layer: `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.3 MB (2267488 bytes)
--	v2 Blob: `sha256:b243dc839a00262b15a96681fe4d02a0389bc3208288fdcc371856bcd5a4f4ce`
--	v2 Content-Length: 654.4 KB (654439 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:17 GMT
+-	v2 Blob: `sha256:63317e72cb92233cefbe9d267416e6f2833fae45fc86c7daf2c938de8be22fa3`
+-	v2 Content-Length: 654.4 KB (654436 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:27 GMT
 
-#### `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+#### `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 
 ```dockerfile
 RUN set -x \
@@ -1398,246 +1398,246 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:18 GMT
--	Parent Layer: `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+-	Created: Thu, 10 Sep 2015 01:51:24 GMT
+-	Parent Layer: `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:78826d53bfd1b5d7d69818a8dfef1ae11d63a42f379b51ede72d288c2e62b9da`
+-	v2 Blob: `sha256:62922d1795418ae90d1e7a5b9b0e9f54935dce4c2b6ecf578c482e1de7664e01`
 -	v2 Content-Length: 5.3 KB (5323 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:14 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:21 GMT
 
-#### `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+#### `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 434975BD900CCBE4F7EE1B1ED208507CA14F4FCA
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:20 GMT
--	Parent Layer: `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+-	Created: Thu, 10 Sep 2015 01:51:26 GMT
+-	Parent Layer: `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.2 KB (2236 bytes)
--	v2 Blob: `sha256:f13f2e6f6e3dd982e249d2d98716a44a0cb209e797ebc6f9a1b2139d33299ed9`
--	v2 Content-Length: 2.5 KB (2518 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:12 GMT
+-	v2 Blob: `sha256:ced16b2d41df694bece4430bc9f74e7ba435dd2e1e747fba75f9f05cb9303117`
+-	v2 Content-Length: 2.5 KB (2517 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:17 GMT
 
-#### `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+#### `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 
 ```dockerfile
 RUN echo 'deb http://packages.erlang-solutions.com/debian wheezy contrib' > /etc/apt/sources.list.d/erlang.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 63.0 B
--	v2 Blob: `sha256:61fcf37aab08c4e06998e9442d5332d171056a8d055ec1085bd000960d359bb1`
--	v2 Content-Length: 227.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:10 GMT
+-	v2 Blob: `sha256:fd3bfa9eb38b17669fb7aac390c0454bb7dea3aaf2912b09b44631c34901f38f`
+-	v2 Content-Length: 228.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:12 GMT
 
-#### `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+#### `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 
 ```dockerfile
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+#### `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50C80464FC1B4F7B8CEA6056E8E56
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:23 GMT
--	Parent Layer: `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+-	Created: Thu, 10 Sep 2015 01:51:29 GMT
+-	Parent Layer: `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 5.7 KB (5652 bytes)
--	v2 Blob: `sha256:258b27038ff3732c9bde9356c7f2abb5efc9e7c50acf62dc5653937b19314347`
--	v2 Content-Length: 3.7 KB (3685 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:07 GMT
+-	v2 Blob: `sha256:2a488d8b35a3aa78728f3ead262cbf37a0f3c6758ce66d1833888be347a729fe`
+-	v2 Content-Length: 3.7 KB (3690 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:04 GMT
 
-#### `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+#### `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 
 ```dockerfile
 RUN echo 'deb http://www.rabbitmq.com/debian/ testing main' > /etc/apt/sources.list.d/rabbitmq.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 49.0 B
--	v2 Blob: `sha256:bb4a14715b1022baa44017713507dee8a006bfe65387e93cf57a589c37dfdcc1`
--	v2 Content-Length: 212.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:05 GMT
+-	v2 Blob: `sha256:6cf22df6099160819953270b3451bda11d06bed874d92bc1b1a065c0e5586b1f`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:59 GMT
 
-#### `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+#### `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 
 ```dockerfile
 ENV RABBITMQ_VERSION=3.5.4-1
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+#### `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rabbitmq-server=$RABBITMQ_VERSION --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:58 GMT
--	Parent Layer: `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+-	Created: Thu, 10 Sep 2015 01:51:57 GMT
+-	Parent Layer: `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 -	Docker Version: 1.7.1
--	Virtual Size: 43.4 MB (43421784 bytes)
--	v2 Blob: `sha256:798679e408d1e1667ed0460e9b74b107c6192f2c1ba6c1a79851ecf18f1f8e12`
--	v2 Content-Length: 29.3 MB (29262314 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:00 GMT
+-	Virtual Size: 43.4 MB (43412590 bytes)
+-	v2 Blob: `sha256:867158fff484e546fd7110a844149fb30c6acd353025aaa202d0a43686443db3`
+-	v2 Content-Length: 29.3 MB (29262862 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:50 GMT
 
-#### `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+#### `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 
 ```dockerfile
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:59 GMT
--	Parent Layer: `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+-	Created: Thu, 10 Sep 2015 01:51:58 GMT
+-	Parent Layer: `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+#### `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 
 ```dockerfile
 RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:00 GMT
--	Parent Layer: `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 -	Docker Version: 1.7.1
 -	Virtual Size: 36.0 B
--	v2 Blob: `sha256:7e43b1dd45283a49d384f983157bce0cdcd0dc9d695c75de7e8590ae55bd70a3`
+-	v2 Blob: `sha256:1d1c982f0b912d98c902d82e073322821709b4ba6c63afa628347253e46f2057`
 -	v2 Content-Length: 190.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:46 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:31 GMT
 
-#### `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+#### `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 
 ```dockerfile
 VOLUME [/var/lib/rabbitmq]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:01 GMT
--	Parent Layer: `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+#### `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 
 ```dockerfile
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+-	Created: Thu, 10 Sep 2015 01:52:00 GMT
+-	Parent Layer: `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 -	Docker Version: 1.7.1
 -	Virtual Size: 32.0 B
--	v2 Blob: `sha256:dcd8071f2e3a11c04c1d42374d806fb3189ccd653a30760f9b72ed44841574c5`
--	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:41 GMT
+-	v2 Blob: `sha256:f2a2ae268a6f01fa55139bb085361cb92a2206449cf69fc9ba4a46b22cf31f87`
+-	v2 Content-Length: 147.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:23 GMT
 
-#### `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+#### `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 
 ```dockerfile
 COPY file:db9f9f50e2ef42cbe4991524d8c02499c985667cbd683ca0b69fba97e93f1b2c in /
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+-	Created: Thu, 10 Sep 2015 01:52:01 GMT
+-	Parent Layer: `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.2 KB (1238 bytes)
 -	v2 Blob: `sha256:512fc7e0c5f63cdba3707bf23c86151d49ccda2f7c6c13b53650a739a4674847`
 -	v2 Content-Length: 645.0 B
 -	v2 Last-Modified: Fri, 24 Jul 2015 21:31:45 GMT
 
-#### `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+#### `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+#### `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 
 ```dockerfile
 EXPOSE 5672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+#### `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 
 ```dockerfile
 CMD ["rabbitmq-server"]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:04 GMT
--	Parent Layer: `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+-	Created: Thu, 10 Sep 2015 01:52:03 GMT
+-	Parent Layer: `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `505e108f00b383cc28f85ce97fb25c4c24389f2d68bee5f5318af6c3daa8c1f0`
+#### `e8c1d002d2fff0f55dcace16e2a8cc32beb9bc03b926f889aaa4c7f3785318c3`
 
 ```dockerfile
 RUN rabbitmq-plugins enable --offline rabbitmq_management
 ```
 
--	Created: Mon, 24 Aug 2015 21:31:45 GMT
--	Parent Layer: `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+-	Created: Thu, 10 Sep 2015 01:55:12 GMT
+-	Parent Layer: `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.0 B
--	v2 Blob: `sha256:0b5d07fa179cd3d16548080d8b1332e4d1f45c4545b2985db7323beaf0d71e50`
--	v2 Content-Length: 181.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:06:52 GMT
+-	v2 Blob: `sha256:e0f5971b7f21a5304339065302268efa1d0fa18fb9eed171f9c8ab799fe97d8c`
+-	v2 Content-Length: 180.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:40:28 GMT
 
-#### `327b803301e90c10466f61cc5d40e65bd871da9f526c91d42fcac8d6074e1192`
+#### `53929a6c7e334d13be0e9f4e2ea958e78d1ea0a7e98489dda11f5b4b59dd4622`
 
 ```dockerfile
 EXPOSE 15672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:31:45 GMT
--	Parent Layer: `505e108f00b383cc28f85ce97fb25c4c24389f2d68bee5f5318af6c3daa8c1f0`
+-	Created: Thu, 10 Sep 2015 01:55:13 GMT
+-	Parent Layer: `e8c1d002d2fff0f55dcace16e2a8cc32beb9bc03b926f889aaa4c7f3785318c3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1646,81 +1646,81 @@ EXPOSE 15672/tcp
 
 ## `rabbitmq:3.5-management`
 
--	Total Virtual Size: 143.5 MB (143507633 bytes)
--	Total v2 Content-Length: 73.2 MB (73179292 bytes)
+-	Total Virtual Size: 143.4 MB (143442378 bytes)
+-	Total v2 Content-Length: 73.2 MB (73164469 bytes)
 
 ### Layers (24)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+#### `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 
 ```dockerfile
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
 ```
 
--	Created: Mon, 24 Aug 2015 21:27:51 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Thu, 10 Sep 2015 01:50:59 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 332.6 KB (332609 bytes)
--	v2 Blob: `sha256:6152f342d55d4498b3b6955069d05bba6e0e0092d401570a37c253ec3dabc099`
--	v2 Content-Length: 3.9 KB (3929 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:26 GMT
+-	v2 Blob: `sha256:8b63910eab49e2154eec3b6a305d67a444232df10cbcae77262e51e75efb05ee`
+-	v2 Content-Length: 3.9 KB (3928 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:45 GMT
 
-#### `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+#### `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y curl ca-certificates --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:07 GMT
--	Parent Layer: `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+-	Created: Thu, 10 Sep 2015 01:51:14 GMT
+-	Parent Layer: `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.4 MB (12386491 bytes)
--	v2 Blob: `sha256:27e87689d8a96672cff2b32d3b8e4f82fb6df2ab23a5c66def7e43622fa6f453`
--	v2 Content-Length: 5.9 MB (5943765 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:24 GMT
+-	Virtual Size: 12.4 MB (12377297 bytes)
+-	v2 Blob: `sha256:9512b31eaf7b467f08ef41406d58eb4fb14e5bf5252da582c3a2edf6e52227ad`
+-	v2 Content-Length: 5.9 MB (5944424 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:40 GMT
 
-#### `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+#### `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:11 GMT
--	Parent Layer: `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+-	Created: Thu, 10 Sep 2015 01:51:18 GMT
+-	Parent Layer: `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:fcf6db73564da32f1270d1734ae739d8071ef39676bd85a558ebcaa64f7e5dc8`
+-	v2 Blob: `sha256:8609be7574fbd2e0460c78b9df7aace346cf85bece23ad9d7084edca23edd5b3`
 -	v2 Content-Length: 93.6 KB (93634 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:19 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:32 GMT
 
-#### `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+#### `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.3/gosu-$(dpkg --print-architecture)" \
@@ -1730,15 +1730,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:16 GMT
--	Parent Layer: `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+-	Created: Thu, 10 Sep 2015 01:51:22 GMT
+-	Parent Layer: `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.3 MB (2267488 bytes)
--	v2 Blob: `sha256:b243dc839a00262b15a96681fe4d02a0389bc3208288fdcc371856bcd5a4f4ce`
--	v2 Content-Length: 654.4 KB (654439 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:17 GMT
+-	v2 Blob: `sha256:63317e72cb92233cefbe9d267416e6f2833fae45fc86c7daf2c938de8be22fa3`
+-	v2 Content-Length: 654.4 KB (654436 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:27 GMT
 
-#### `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+#### `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 
 ```dockerfile
 RUN set -x \
@@ -1747,246 +1747,246 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:18 GMT
--	Parent Layer: `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+-	Created: Thu, 10 Sep 2015 01:51:24 GMT
+-	Parent Layer: `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:78826d53bfd1b5d7d69818a8dfef1ae11d63a42f379b51ede72d288c2e62b9da`
+-	v2 Blob: `sha256:62922d1795418ae90d1e7a5b9b0e9f54935dce4c2b6ecf578c482e1de7664e01`
 -	v2 Content-Length: 5.3 KB (5323 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:14 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:21 GMT
 
-#### `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+#### `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 434975BD900CCBE4F7EE1B1ED208507CA14F4FCA
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:20 GMT
--	Parent Layer: `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+-	Created: Thu, 10 Sep 2015 01:51:26 GMT
+-	Parent Layer: `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.2 KB (2236 bytes)
--	v2 Blob: `sha256:f13f2e6f6e3dd982e249d2d98716a44a0cb209e797ebc6f9a1b2139d33299ed9`
--	v2 Content-Length: 2.5 KB (2518 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:12 GMT
+-	v2 Blob: `sha256:ced16b2d41df694bece4430bc9f74e7ba435dd2e1e747fba75f9f05cb9303117`
+-	v2 Content-Length: 2.5 KB (2517 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:17 GMT
 
-#### `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+#### `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 
 ```dockerfile
 RUN echo 'deb http://packages.erlang-solutions.com/debian wheezy contrib' > /etc/apt/sources.list.d/erlang.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 63.0 B
--	v2 Blob: `sha256:61fcf37aab08c4e06998e9442d5332d171056a8d055ec1085bd000960d359bb1`
--	v2 Content-Length: 227.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:10 GMT
+-	v2 Blob: `sha256:fd3bfa9eb38b17669fb7aac390c0454bb7dea3aaf2912b09b44631c34901f38f`
+-	v2 Content-Length: 228.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:12 GMT
 
-#### `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+#### `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 
 ```dockerfile
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+#### `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50C80464FC1B4F7B8CEA6056E8E56
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:23 GMT
--	Parent Layer: `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+-	Created: Thu, 10 Sep 2015 01:51:29 GMT
+-	Parent Layer: `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 5.7 KB (5652 bytes)
--	v2 Blob: `sha256:258b27038ff3732c9bde9356c7f2abb5efc9e7c50acf62dc5653937b19314347`
--	v2 Content-Length: 3.7 KB (3685 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:07 GMT
+-	v2 Blob: `sha256:2a488d8b35a3aa78728f3ead262cbf37a0f3c6758ce66d1833888be347a729fe`
+-	v2 Content-Length: 3.7 KB (3690 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:04 GMT
 
-#### `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+#### `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 
 ```dockerfile
 RUN echo 'deb http://www.rabbitmq.com/debian/ testing main' > /etc/apt/sources.list.d/rabbitmq.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 49.0 B
--	v2 Blob: `sha256:bb4a14715b1022baa44017713507dee8a006bfe65387e93cf57a589c37dfdcc1`
--	v2 Content-Length: 212.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:05 GMT
+-	v2 Blob: `sha256:6cf22df6099160819953270b3451bda11d06bed874d92bc1b1a065c0e5586b1f`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:59 GMT
 
-#### `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+#### `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 
 ```dockerfile
 ENV RABBITMQ_VERSION=3.5.4-1
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+#### `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rabbitmq-server=$RABBITMQ_VERSION --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:58 GMT
--	Parent Layer: `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+-	Created: Thu, 10 Sep 2015 01:51:57 GMT
+-	Parent Layer: `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 -	Docker Version: 1.7.1
--	Virtual Size: 43.4 MB (43421784 bytes)
--	v2 Blob: `sha256:798679e408d1e1667ed0460e9b74b107c6192f2c1ba6c1a79851ecf18f1f8e12`
--	v2 Content-Length: 29.3 MB (29262314 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:00 GMT
+-	Virtual Size: 43.4 MB (43412590 bytes)
+-	v2 Blob: `sha256:867158fff484e546fd7110a844149fb30c6acd353025aaa202d0a43686443db3`
+-	v2 Content-Length: 29.3 MB (29262862 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:50 GMT
 
-#### `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+#### `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 
 ```dockerfile
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:59 GMT
--	Parent Layer: `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+-	Created: Thu, 10 Sep 2015 01:51:58 GMT
+-	Parent Layer: `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+#### `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 
 ```dockerfile
 RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:00 GMT
--	Parent Layer: `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 -	Docker Version: 1.7.1
 -	Virtual Size: 36.0 B
--	v2 Blob: `sha256:7e43b1dd45283a49d384f983157bce0cdcd0dc9d695c75de7e8590ae55bd70a3`
+-	v2 Blob: `sha256:1d1c982f0b912d98c902d82e073322821709b4ba6c63afa628347253e46f2057`
 -	v2 Content-Length: 190.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:46 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:31 GMT
 
-#### `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+#### `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 
 ```dockerfile
 VOLUME [/var/lib/rabbitmq]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:01 GMT
--	Parent Layer: `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+#### `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 
 ```dockerfile
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+-	Created: Thu, 10 Sep 2015 01:52:00 GMT
+-	Parent Layer: `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 -	Docker Version: 1.7.1
 -	Virtual Size: 32.0 B
--	v2 Blob: `sha256:dcd8071f2e3a11c04c1d42374d806fb3189ccd653a30760f9b72ed44841574c5`
--	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:41 GMT
+-	v2 Blob: `sha256:f2a2ae268a6f01fa55139bb085361cb92a2206449cf69fc9ba4a46b22cf31f87`
+-	v2 Content-Length: 147.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:23 GMT
 
-#### `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+#### `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 
 ```dockerfile
 COPY file:db9f9f50e2ef42cbe4991524d8c02499c985667cbd683ca0b69fba97e93f1b2c in /
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+-	Created: Thu, 10 Sep 2015 01:52:01 GMT
+-	Parent Layer: `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.2 KB (1238 bytes)
 -	v2 Blob: `sha256:512fc7e0c5f63cdba3707bf23c86151d49ccda2f7c6c13b53650a739a4674847`
 -	v2 Content-Length: 645.0 B
 -	v2 Last-Modified: Fri, 24 Jul 2015 21:31:45 GMT
 
-#### `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+#### `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+#### `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 
 ```dockerfile
 EXPOSE 5672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+#### `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 
 ```dockerfile
 CMD ["rabbitmq-server"]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:04 GMT
--	Parent Layer: `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+-	Created: Thu, 10 Sep 2015 01:52:03 GMT
+-	Parent Layer: `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `505e108f00b383cc28f85ce97fb25c4c24389f2d68bee5f5318af6c3daa8c1f0`
+#### `e8c1d002d2fff0f55dcace16e2a8cc32beb9bc03b926f889aaa4c7f3785318c3`
 
 ```dockerfile
 RUN rabbitmq-plugins enable --offline rabbitmq_management
 ```
 
--	Created: Mon, 24 Aug 2015 21:31:45 GMT
--	Parent Layer: `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+-	Created: Thu, 10 Sep 2015 01:55:12 GMT
+-	Parent Layer: `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.0 B
--	v2 Blob: `sha256:0b5d07fa179cd3d16548080d8b1332e4d1f45c4545b2985db7323beaf0d71e50`
--	v2 Content-Length: 181.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:06:52 GMT
+-	v2 Blob: `sha256:e0f5971b7f21a5304339065302268efa1d0fa18fb9eed171f9c8ab799fe97d8c`
+-	v2 Content-Length: 180.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:40:28 GMT
 
-#### `327b803301e90c10466f61cc5d40e65bd871da9f526c91d42fcac8d6074e1192`
+#### `53929a6c7e334d13be0e9f4e2ea958e78d1ea0a7e98489dda11f5b4b59dd4622`
 
 ```dockerfile
 EXPOSE 15672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:31:45 GMT
--	Parent Layer: `505e108f00b383cc28f85ce97fb25c4c24389f2d68bee5f5318af6c3daa8c1f0`
+-	Created: Thu, 10 Sep 2015 01:55:13 GMT
+-	Parent Layer: `e8c1d002d2fff0f55dcace16e2a8cc32beb9bc03b926f889aaa4c7f3785318c3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1995,81 +1995,81 @@ EXPOSE 15672/tcp
 
 ## `rabbitmq:3-management`
 
--	Total Virtual Size: 143.5 MB (143507633 bytes)
--	Total v2 Content-Length: 73.2 MB (73179292 bytes)
+-	Total Virtual Size: 143.4 MB (143442378 bytes)
+-	Total v2 Content-Length: 73.2 MB (73164469 bytes)
 
 ### Layers (24)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+#### `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 
 ```dockerfile
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
 ```
 
--	Created: Mon, 24 Aug 2015 21:27:51 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Thu, 10 Sep 2015 01:50:59 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 332.6 KB (332609 bytes)
--	v2 Blob: `sha256:6152f342d55d4498b3b6955069d05bba6e0e0092d401570a37c253ec3dabc099`
--	v2 Content-Length: 3.9 KB (3929 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:26 GMT
+-	v2 Blob: `sha256:8b63910eab49e2154eec3b6a305d67a444232df10cbcae77262e51e75efb05ee`
+-	v2 Content-Length: 3.9 KB (3928 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:45 GMT
 
-#### `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+#### `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y curl ca-certificates --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:07 GMT
--	Parent Layer: `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+-	Created: Thu, 10 Sep 2015 01:51:14 GMT
+-	Parent Layer: `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.4 MB (12386491 bytes)
--	v2 Blob: `sha256:27e87689d8a96672cff2b32d3b8e4f82fb6df2ab23a5c66def7e43622fa6f453`
--	v2 Content-Length: 5.9 MB (5943765 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:24 GMT
+-	Virtual Size: 12.4 MB (12377297 bytes)
+-	v2 Blob: `sha256:9512b31eaf7b467f08ef41406d58eb4fb14e5bf5252da582c3a2edf6e52227ad`
+-	v2 Content-Length: 5.9 MB (5944424 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:40 GMT
 
-#### `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+#### `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:11 GMT
--	Parent Layer: `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+-	Created: Thu, 10 Sep 2015 01:51:18 GMT
+-	Parent Layer: `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:fcf6db73564da32f1270d1734ae739d8071ef39676bd85a558ebcaa64f7e5dc8`
+-	v2 Blob: `sha256:8609be7574fbd2e0460c78b9df7aace346cf85bece23ad9d7084edca23edd5b3`
 -	v2 Content-Length: 93.6 KB (93634 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:19 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:32 GMT
 
-#### `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+#### `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.3/gosu-$(dpkg --print-architecture)" \
@@ -2079,15 +2079,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:16 GMT
--	Parent Layer: `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+-	Created: Thu, 10 Sep 2015 01:51:22 GMT
+-	Parent Layer: `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.3 MB (2267488 bytes)
--	v2 Blob: `sha256:b243dc839a00262b15a96681fe4d02a0389bc3208288fdcc371856bcd5a4f4ce`
--	v2 Content-Length: 654.4 KB (654439 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:17 GMT
+-	v2 Blob: `sha256:63317e72cb92233cefbe9d267416e6f2833fae45fc86c7daf2c938de8be22fa3`
+-	v2 Content-Length: 654.4 KB (654436 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:27 GMT
 
-#### `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+#### `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 
 ```dockerfile
 RUN set -x \
@@ -2096,246 +2096,246 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:18 GMT
--	Parent Layer: `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+-	Created: Thu, 10 Sep 2015 01:51:24 GMT
+-	Parent Layer: `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:78826d53bfd1b5d7d69818a8dfef1ae11d63a42f379b51ede72d288c2e62b9da`
+-	v2 Blob: `sha256:62922d1795418ae90d1e7a5b9b0e9f54935dce4c2b6ecf578c482e1de7664e01`
 -	v2 Content-Length: 5.3 KB (5323 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:14 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:21 GMT
 
-#### `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+#### `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 434975BD900CCBE4F7EE1B1ED208507CA14F4FCA
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:20 GMT
--	Parent Layer: `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+-	Created: Thu, 10 Sep 2015 01:51:26 GMT
+-	Parent Layer: `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.2 KB (2236 bytes)
--	v2 Blob: `sha256:f13f2e6f6e3dd982e249d2d98716a44a0cb209e797ebc6f9a1b2139d33299ed9`
--	v2 Content-Length: 2.5 KB (2518 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:12 GMT
+-	v2 Blob: `sha256:ced16b2d41df694bece4430bc9f74e7ba435dd2e1e747fba75f9f05cb9303117`
+-	v2 Content-Length: 2.5 KB (2517 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:17 GMT
 
-#### `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+#### `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 
 ```dockerfile
 RUN echo 'deb http://packages.erlang-solutions.com/debian wheezy contrib' > /etc/apt/sources.list.d/erlang.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 63.0 B
--	v2 Blob: `sha256:61fcf37aab08c4e06998e9442d5332d171056a8d055ec1085bd000960d359bb1`
--	v2 Content-Length: 227.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:10 GMT
+-	v2 Blob: `sha256:fd3bfa9eb38b17669fb7aac390c0454bb7dea3aaf2912b09b44631c34901f38f`
+-	v2 Content-Length: 228.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:12 GMT
 
-#### `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+#### `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 
 ```dockerfile
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+#### `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50C80464FC1B4F7B8CEA6056E8E56
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:23 GMT
--	Parent Layer: `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+-	Created: Thu, 10 Sep 2015 01:51:29 GMT
+-	Parent Layer: `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 5.7 KB (5652 bytes)
--	v2 Blob: `sha256:258b27038ff3732c9bde9356c7f2abb5efc9e7c50acf62dc5653937b19314347`
--	v2 Content-Length: 3.7 KB (3685 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:07 GMT
+-	v2 Blob: `sha256:2a488d8b35a3aa78728f3ead262cbf37a0f3c6758ce66d1833888be347a729fe`
+-	v2 Content-Length: 3.7 KB (3690 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:04 GMT
 
-#### `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+#### `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 
 ```dockerfile
 RUN echo 'deb http://www.rabbitmq.com/debian/ testing main' > /etc/apt/sources.list.d/rabbitmq.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 49.0 B
--	v2 Blob: `sha256:bb4a14715b1022baa44017713507dee8a006bfe65387e93cf57a589c37dfdcc1`
--	v2 Content-Length: 212.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:05 GMT
+-	v2 Blob: `sha256:6cf22df6099160819953270b3451bda11d06bed874d92bc1b1a065c0e5586b1f`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:59 GMT
 
-#### `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+#### `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 
 ```dockerfile
 ENV RABBITMQ_VERSION=3.5.4-1
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+#### `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rabbitmq-server=$RABBITMQ_VERSION --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:58 GMT
--	Parent Layer: `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+-	Created: Thu, 10 Sep 2015 01:51:57 GMT
+-	Parent Layer: `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 -	Docker Version: 1.7.1
--	Virtual Size: 43.4 MB (43421784 bytes)
--	v2 Blob: `sha256:798679e408d1e1667ed0460e9b74b107c6192f2c1ba6c1a79851ecf18f1f8e12`
--	v2 Content-Length: 29.3 MB (29262314 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:00 GMT
+-	Virtual Size: 43.4 MB (43412590 bytes)
+-	v2 Blob: `sha256:867158fff484e546fd7110a844149fb30c6acd353025aaa202d0a43686443db3`
+-	v2 Content-Length: 29.3 MB (29262862 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:50 GMT
 
-#### `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+#### `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 
 ```dockerfile
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:59 GMT
--	Parent Layer: `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+-	Created: Thu, 10 Sep 2015 01:51:58 GMT
+-	Parent Layer: `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+#### `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 
 ```dockerfile
 RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:00 GMT
--	Parent Layer: `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 -	Docker Version: 1.7.1
 -	Virtual Size: 36.0 B
--	v2 Blob: `sha256:7e43b1dd45283a49d384f983157bce0cdcd0dc9d695c75de7e8590ae55bd70a3`
+-	v2 Blob: `sha256:1d1c982f0b912d98c902d82e073322821709b4ba6c63afa628347253e46f2057`
 -	v2 Content-Length: 190.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:46 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:31 GMT
 
-#### `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+#### `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 
 ```dockerfile
 VOLUME [/var/lib/rabbitmq]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:01 GMT
--	Parent Layer: `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+#### `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 
 ```dockerfile
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+-	Created: Thu, 10 Sep 2015 01:52:00 GMT
+-	Parent Layer: `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 -	Docker Version: 1.7.1
 -	Virtual Size: 32.0 B
--	v2 Blob: `sha256:dcd8071f2e3a11c04c1d42374d806fb3189ccd653a30760f9b72ed44841574c5`
--	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:41 GMT
+-	v2 Blob: `sha256:f2a2ae268a6f01fa55139bb085361cb92a2206449cf69fc9ba4a46b22cf31f87`
+-	v2 Content-Length: 147.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:23 GMT
 
-#### `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+#### `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 
 ```dockerfile
 COPY file:db9f9f50e2ef42cbe4991524d8c02499c985667cbd683ca0b69fba97e93f1b2c in /
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+-	Created: Thu, 10 Sep 2015 01:52:01 GMT
+-	Parent Layer: `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.2 KB (1238 bytes)
 -	v2 Blob: `sha256:512fc7e0c5f63cdba3707bf23c86151d49ccda2f7c6c13b53650a739a4674847`
 -	v2 Content-Length: 645.0 B
 -	v2 Last-Modified: Fri, 24 Jul 2015 21:31:45 GMT
 
-#### `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+#### `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+#### `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 
 ```dockerfile
 EXPOSE 5672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+#### `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 
 ```dockerfile
 CMD ["rabbitmq-server"]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:04 GMT
--	Parent Layer: `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+-	Created: Thu, 10 Sep 2015 01:52:03 GMT
+-	Parent Layer: `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `505e108f00b383cc28f85ce97fb25c4c24389f2d68bee5f5318af6c3daa8c1f0`
+#### `e8c1d002d2fff0f55dcace16e2a8cc32beb9bc03b926f889aaa4c7f3785318c3`
 
 ```dockerfile
 RUN rabbitmq-plugins enable --offline rabbitmq_management
 ```
 
--	Created: Mon, 24 Aug 2015 21:31:45 GMT
--	Parent Layer: `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+-	Created: Thu, 10 Sep 2015 01:55:12 GMT
+-	Parent Layer: `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.0 B
--	v2 Blob: `sha256:0b5d07fa179cd3d16548080d8b1332e4d1f45c4545b2985db7323beaf0d71e50`
--	v2 Content-Length: 181.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:06:52 GMT
+-	v2 Blob: `sha256:e0f5971b7f21a5304339065302268efa1d0fa18fb9eed171f9c8ab799fe97d8c`
+-	v2 Content-Length: 180.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:40:28 GMT
 
-#### `327b803301e90c10466f61cc5d40e65bd871da9f526c91d42fcac8d6074e1192`
+#### `53929a6c7e334d13be0e9f4e2ea958e78d1ea0a7e98489dda11f5b4b59dd4622`
 
 ```dockerfile
 EXPOSE 15672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:31:45 GMT
--	Parent Layer: `505e108f00b383cc28f85ce97fb25c4c24389f2d68bee5f5318af6c3daa8c1f0`
+-	Created: Thu, 10 Sep 2015 01:55:13 GMT
+-	Parent Layer: `e8c1d002d2fff0f55dcace16e2a8cc32beb9bc03b926f889aaa4c7f3785318c3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2344,81 +2344,81 @@ EXPOSE 15672/tcp
 
 ## `rabbitmq:management`
 
--	Total Virtual Size: 143.5 MB (143507633 bytes)
--	Total v2 Content-Length: 73.2 MB (73179292 bytes)
+-	Total Virtual Size: 143.4 MB (143442378 bytes)
+-	Total v2 Content-Length: 73.2 MB (73164469 bytes)
 
 ### Layers (24)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+#### `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 
 ```dockerfile
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
 ```
 
--	Created: Mon, 24 Aug 2015 21:27:51 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Thu, 10 Sep 2015 01:50:59 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 332.6 KB (332609 bytes)
--	v2 Blob: `sha256:6152f342d55d4498b3b6955069d05bba6e0e0092d401570a37c253ec3dabc099`
--	v2 Content-Length: 3.9 KB (3929 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:26 GMT
+-	v2 Blob: `sha256:8b63910eab49e2154eec3b6a305d67a444232df10cbcae77262e51e75efb05ee`
+-	v2 Content-Length: 3.9 KB (3928 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:45 GMT
 
-#### `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+#### `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y curl ca-certificates --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:07 GMT
--	Parent Layer: `40bcd28893f08d19ede04a1007c9e452b4693e4b125f11721b150aa8dae1be8b`
+-	Created: Thu, 10 Sep 2015 01:51:14 GMT
+-	Parent Layer: `f450b32f955f87c17f774478f84bbb4d3893e219f43f8c63d2045f40cb262abc`
 -	Docker Version: 1.7.1
--	Virtual Size: 12.4 MB (12386491 bytes)
--	v2 Blob: `sha256:27e87689d8a96672cff2b32d3b8e4f82fb6df2ab23a5c66def7e43622fa6f453`
--	v2 Content-Length: 5.9 MB (5943765 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:24 GMT
+-	Virtual Size: 12.4 MB (12377297 bytes)
+-	v2 Blob: `sha256:9512b31eaf7b467f08ef41406d58eb4fb14e5bf5252da582c3a2edf6e52227ad`
+-	v2 Content-Length: 5.9 MB (5944424 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:40 GMT
 
-#### `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+#### `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:11 GMT
--	Parent Layer: `61b2df53cf572f63e8b7fe6ac5ea2435ef7e3b5d8614f41c889ff1870f13e210`
+-	Created: Thu, 10 Sep 2015 01:51:18 GMT
+-	Parent Layer: `6ae55e717133462525e4c364e853e7523ddc0961ab6f60add2b9de027cd51658`
 -	Docker Version: 1.7.1
 -	Virtual Size: 103.7 KB (103740 bytes)
--	v2 Blob: `sha256:fcf6db73564da32f1270d1734ae739d8071ef39676bd85a558ebcaa64f7e5dc8`
+-	v2 Blob: `sha256:8609be7574fbd2e0460c78b9df7aace346cf85bece23ad9d7084edca23edd5b3`
 -	v2 Content-Length: 93.6 KB (93634 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:19 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:32 GMT
 
-#### `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+#### `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.3/gosu-$(dpkg --print-architecture)" \
@@ -2428,15 +2428,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:16 GMT
--	Parent Layer: `9977246546faf1fa9e1126883735b20df70e2f6ee134d2eb9cd26315cea17f58`
+-	Created: Thu, 10 Sep 2015 01:51:22 GMT
+-	Parent Layer: `336edff5a74c89da3040858fe9a33566fed404a524886606a9be46c4a852c051`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.3 MB (2267488 bytes)
--	v2 Blob: `sha256:b243dc839a00262b15a96681fe4d02a0389bc3208288fdcc371856bcd5a4f4ce`
--	v2 Content-Length: 654.4 KB (654439 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:17 GMT
+-	v2 Blob: `sha256:63317e72cb92233cefbe9d267416e6f2833fae45fc86c7daf2c938de8be22fa3`
+-	v2 Content-Length: 654.4 KB (654436 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:27 GMT
 
-#### `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+#### `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 
 ```dockerfile
 RUN set -x \
@@ -2445,246 +2445,246 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:18 GMT
--	Parent Layer: `d157bfde5c65b4a8d4d327865fd8b19cfeb22bff47b414dc61564fb7f0db1c84`
+-	Created: Thu, 10 Sep 2015 01:51:24 GMT
+-	Parent Layer: `2415d8a1571dd10f2ecd902c927b35e3c5ec62205b12c1020e2b1a4887ab00e4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:78826d53bfd1b5d7d69818a8dfef1ae11d63a42f379b51ede72d288c2e62b9da`
+-	v2 Blob: `sha256:62922d1795418ae90d1e7a5b9b0e9f54935dce4c2b6ecf578c482e1de7664e01`
 -	v2 Content-Length: 5.3 KB (5323 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:14 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:21 GMT
 
-#### `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+#### `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 434975BD900CCBE4F7EE1B1ED208507CA14F4FCA
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:20 GMT
--	Parent Layer: `1f7cf6768c50b1e72c58a76881ed0900f661d12c436b5b4531047712a7993f4f`
+-	Created: Thu, 10 Sep 2015 01:51:26 GMT
+-	Parent Layer: `89e764f7d8798b61f123afd81eb8ca4f3948ede140e9b0556524e8adb05c1799`
 -	Docker Version: 1.7.1
 -	Virtual Size: 2.2 KB (2236 bytes)
--	v2 Blob: `sha256:f13f2e6f6e3dd982e249d2d98716a44a0cb209e797ebc6f9a1b2139d33299ed9`
--	v2 Content-Length: 2.5 KB (2518 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:12 GMT
+-	v2 Blob: `sha256:ced16b2d41df694bece4430bc9f74e7ba435dd2e1e747fba75f9f05cb9303117`
+-	v2 Content-Length: 2.5 KB (2517 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:17 GMT
 
-#### `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+#### `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 
 ```dockerfile
 RUN echo 'deb http://packages.erlang-solutions.com/debian wheezy contrib' > /etc/apt/sources.list.d/erlang.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `88956f023f4cf0506babd2e0c10e0ebf60d06b1e0259a4f7c4d4676c2ac6935a`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `55dbe7c3d0c150c7ce64a9d1d2b6c921972e73bd838447aa423e8902957637a6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 63.0 B
--	v2 Blob: `sha256:61fcf37aab08c4e06998e9442d5332d171056a8d055ec1085bd000960d359bb1`
--	v2 Content-Length: 227.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:10 GMT
+-	v2 Blob: `sha256:fd3bfa9eb38b17669fb7aac390c0454bb7dea3aaf2912b09b44631c34901f38f`
+-	v2 Content-Length: 228.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:12 GMT
 
-#### `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+#### `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 
 ```dockerfile
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:21 GMT
--	Parent Layer: `b664ad9b911af0b726b49e7d8bec3b71eedb3e6a857672a9cd0adabb026a104e`
+-	Created: Thu, 10 Sep 2015 01:51:27 GMT
+-	Parent Layer: `2f7545c26d4ed43320d63b8d8b2ac4dec3db92d78d1cbf85769c3afe638a0f5c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+#### `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys F78372A06FF50C80464FC1B4F7B8CEA6056E8E56
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:23 GMT
--	Parent Layer: `d03257644ac953821f534e12c981e4df2f811a6175812ffb70cff53b6bbba47e`
+-	Created: Thu, 10 Sep 2015 01:51:29 GMT
+-	Parent Layer: `d6d4226861c0ccfefe3ba0adebdb718051e65dd6da225015b41169655a2ad6a2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 5.7 KB (5652 bytes)
--	v2 Blob: `sha256:258b27038ff3732c9bde9356c7f2abb5efc9e7c50acf62dc5653937b19314347`
--	v2 Content-Length: 3.7 KB (3685 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:07 GMT
+-	v2 Blob: `sha256:2a488d8b35a3aa78728f3ead262cbf37a0f3c6758ce66d1833888be347a729fe`
+-	v2 Content-Length: 3.7 KB (3690 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:35:04 GMT
 
-#### `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+#### `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 
 ```dockerfile
 RUN echo 'deb http://www.rabbitmq.com/debian/ testing main' > /etc/apt/sources.list.d/rabbitmq.list
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `1ff93e202b626f649460a5667bf738b7f0c993a383df2b6db4a8fa9e01fe603a`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `d4a650287e138f4210e0d24111ebdb55c3bbe708d54d1bf5477b0968ebe8624b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 49.0 B
--	v2 Blob: `sha256:bb4a14715b1022baa44017713507dee8a006bfe65387e93cf57a589c37dfdcc1`
--	v2 Content-Length: 212.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:05 GMT
+-	v2 Blob: `sha256:6cf22df6099160819953270b3451bda11d06bed874d92bc1b1a065c0e5586b1f`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:59 GMT
 
-#### `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+#### `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 
 ```dockerfile
 ENV RABBITMQ_VERSION=3.5.4-1
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:24 GMT
--	Parent Layer: `a1ca4e30f7c1bc85155b266c8b707d3e1480f6c0b0b0c32389089f50a2607c63`
+-	Created: Thu, 10 Sep 2015 01:51:30 GMT
+-	Parent Layer: `db301d662e5ea3bbaccb78f06a4b8a8222dc6a8067ff0aaacf11c5f4187803eb`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+#### `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y rabbitmq-server=$RABBITMQ_VERSION --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:58 GMT
--	Parent Layer: `e7bd4a5d5b2a8a9fe2561fab96f45f6f2bdf7cfb951215cad5fddd5fb28f38e5`
+-	Created: Thu, 10 Sep 2015 01:51:57 GMT
+-	Parent Layer: `992dbfa68acf1f46bfcff8eebee9139bbd741f66414d11a9fd78377662fe059a`
 -	Docker Version: 1.7.1
--	Virtual Size: 43.4 MB (43421784 bytes)
--	v2 Blob: `sha256:798679e408d1e1667ed0460e9b74b107c6192f2c1ba6c1a79851ecf18f1f8e12`
--	v2 Content-Length: 29.3 MB (29262314 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 04:03:00 GMT
+-	Virtual Size: 43.4 MB (43412590 bytes)
+-	v2 Blob: `sha256:867158fff484e546fd7110a844149fb30c6acd353025aaa202d0a43686443db3`
+-	v2 Content-Length: 29.3 MB (29262862 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:50 GMT
 
-#### `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+#### `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 
 ```dockerfile
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 21:28:59 GMT
--	Parent Layer: `1cdef1a0f55bda8a5408ec4958c0d9dfb458f9610f2e9fec92b96f566f53d39b`
+-	Created: Thu, 10 Sep 2015 01:51:58 GMT
+-	Parent Layer: `efcf1631b102135f5897dc0f5caf3de26126a721d22c32382277af8537b6349f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+#### `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 
 ```dockerfile
 RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:00 GMT
--	Parent Layer: `0fa08642bfc930c347ad43d27a96cf09979e60cbdfba3c929bf3276dd20de80f`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `b32de60522d99161fa9605134123db7b971fc175a3f3ca092c34daf596d57911`
 -	Docker Version: 1.7.1
 -	Virtual Size: 36.0 B
--	v2 Blob: `sha256:7e43b1dd45283a49d384f983157bce0cdcd0dc9d695c75de7e8590ae55bd70a3`
+-	v2 Blob: `sha256:1d1c982f0b912d98c902d82e073322821709b4ba6c63afa628347253e46f2057`
 -	v2 Content-Length: 190.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:46 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:31 GMT
 
-#### `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+#### `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 
 ```dockerfile
 VOLUME [/var/lib/rabbitmq]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:01 GMT
--	Parent Layer: `18da1321ff74a6cd0835004ca6acaee93f9ef552f95c5b08841977c5e20d7633`
+-	Created: Thu, 10 Sep 2015 01:51:59 GMT
+-	Parent Layer: `f951ad325ec91dada10ea22669c3eb2a7a4cc6e41f19fbb570a7a4e40d89c874`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+#### `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 
 ```dockerfile
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `7921308884e7be530e3eb37195cadc917366716eed18a27f0cbcb8f56bd38721`
+-	Created: Thu, 10 Sep 2015 01:52:00 GMT
+-	Parent Layer: `462879282ace7639d8071b5c4fad5597903f13aa7c23f820a98e6e67ecd22048`
 -	Docker Version: 1.7.1
 -	Virtual Size: 32.0 B
--	v2 Blob: `sha256:dcd8071f2e3a11c04c1d42374d806fb3189ccd653a30760f9b72ed44841574c5`
--	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:02:41 GMT
+-	v2 Blob: `sha256:f2a2ae268a6f01fa55139bb085361cb92a2206449cf69fc9ba4a46b22cf31f87`
+-	v2 Content-Length: 147.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:34:23 GMT
 
-#### `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+#### `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 
 ```dockerfile
 COPY file:db9f9f50e2ef42cbe4991524d8c02499c985667cbd683ca0b69fba97e93f1b2c in /
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:02 GMT
--	Parent Layer: `58cfa0c5e4e793e1a03bbc60ab4b6a726bd46ed73ca51475b81915bd6920a2dc`
+-	Created: Thu, 10 Sep 2015 01:52:01 GMT
+-	Parent Layer: `38a10294f3e7d5479094b03b78fab028faa5b1e541d98b4b5b9da145b1d7e8fd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.2 KB (1238 bytes)
 -	v2 Blob: `sha256:512fc7e0c5f63cdba3707bf23c86151d49ccda2f7c6c13b53650a739a4674847`
 -	v2 Content-Length: 645.0 B
 -	v2 Last-Modified: Fri, 24 Jul 2015 21:31:45 GMT
 
-#### `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+#### `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `dba8ee7a21eaaf874854be677b04e6ae598eb706f76cd2de347c279c1420237e`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `8a890ee54ec4c846e62a51c69855834e1e0500aaeefb13cc719bb1473b85e9ee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+#### `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 
 ```dockerfile
 EXPOSE 5672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:03 GMT
--	Parent Layer: `918fa13f3a5411a37e00692425213a1b01e5ee8a6919f9d32604112f0e5f9dc9`
+-	Created: Thu, 10 Sep 2015 01:52:02 GMT
+-	Parent Layer: `2ed1a469656a3d28893151dddb2c0744d49e1fa5e05b35ea8301dc1da2234efd`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+#### `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 
 ```dockerfile
 CMD ["rabbitmq-server"]
 ```
 
--	Created: Mon, 24 Aug 2015 21:29:04 GMT
--	Parent Layer: `a4c52bb2b28901813c450613cefdcaf08d11667a2f336110ba5dd64ed1b07b12`
+-	Created: Thu, 10 Sep 2015 01:52:03 GMT
+-	Parent Layer: `2ecf53c56258ec3e9cf6164e8c00b088b14f2ac16ce12f5666f097260bb4b4d5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `505e108f00b383cc28f85ce97fb25c4c24389f2d68bee5f5318af6c3daa8c1f0`
+#### `e8c1d002d2fff0f55dcace16e2a8cc32beb9bc03b926f889aaa4c7f3785318c3`
 
 ```dockerfile
 RUN rabbitmq-plugins enable --offline rabbitmq_management
 ```
 
--	Created: Mon, 24 Aug 2015 21:31:45 GMT
--	Parent Layer: `f8a4aa1d895104137708bfadd9d342f3b09d13c43419d6a241ce8ad3033df2c7`
+-	Created: Thu, 10 Sep 2015 01:55:12 GMT
+-	Parent Layer: `883a9af8fba1138cd3807bd8d4f13f4af741aa00ac6982538fa5df0cce51bffc`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.0 B
--	v2 Blob: `sha256:0b5d07fa179cd3d16548080d8b1332e4d1f45c4545b2985db7323beaf0d71e50`
--	v2 Content-Length: 181.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 04:06:52 GMT
+-	v2 Blob: `sha256:e0f5971b7f21a5304339065302268efa1d0fa18fb9eed171f9c8ab799fe97d8c`
+-	v2 Content-Length: 180.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 12:40:28 GMT
 
-#### `327b803301e90c10466f61cc5d40e65bd871da9f526c91d42fcac8d6074e1192`
+#### `53929a6c7e334d13be0e9f4e2ea958e78d1ea0a7e98489dda11f5b4b59dd4622`
 
 ```dockerfile
 EXPOSE 15672/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 21:31:45 GMT
--	Parent Layer: `505e108f00b383cc28f85ce97fb25c4c24389f2d68bee5f5318af6c3daa8c1f0`
+-	Created: Thu, 10 Sep 2015 01:55:13 GMT
+-	Parent Layer: `e8c1d002d2fff0f55dcace16e2a8cc32beb9bc03b926f889aaa4c7f3785318c3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`

@@ -11,8 +11,8 @@
 
 ## `fedora:latest`
 
--	Total Virtual Size: 373.0 MB (373031662 bytes)
--	Total v2 Content-Length: 133.9 MB (133888772 bytes)
+-	Total Virtual Size: 186.5 MB (186515831 bytes)
+-	Total v2 Content-Length: 66.9 MB (66944402 bytes)
 
 ### Layers (2)
 
@@ -45,8 +45,8 @@ ADD file:4be46382bcf2b095fcb9fe8334206b584eff60bb3fad8178cbd97697fcb2ea83 in /
 
 ## `fedora:22`
 
--	Total Virtual Size: 373.0 MB (373031662 bytes)
--	Total v2 Content-Length: 133.9 MB (133888772 bytes)
+-	Total Virtual Size: 186.5 MB (186515831 bytes)
+-	Total v2 Content-Length: 66.9 MB (66944402 bytes)
 
 ### Layers (2)
 
@@ -79,8 +79,8 @@ ADD file:4be46382bcf2b095fcb9fe8334206b584eff60bb3fad8178cbd97697fcb2ea83 in /
 
 ## `fedora:21`
 
--	Total Virtual Size: 482.7 MB (482651612 bytes)
--	Total v2 Content-Length: 184.9 MB (184926896 bytes)
+-	Total Virtual Size: 241.3 MB (241325806 bytes)
+-	Total v2 Content-Length: 92.5 MB (92463450 bytes)
 
 ### Layers (2)
 
@@ -107,14 +107,14 @@ ADD file:95307157b233a03b3dfe9df99d1ff49fdbf7e82c9b042cc33c4fb6bc39663489 in /
 -	Parent Layer: `48ecf305d2cf7046c1f5f8fcbcd4994403173441d4a7f125b1bb0ceead9de731`
 -	Docker Version: 1.6.0
 -	Virtual Size: 241.3 MB (241325806 bytes)
--	v2 Blob: `sha256:5febeaec507869d0fdf44748a3e7cdb682e28793e2a2a2d3e6091bb15403cf6f`
--	v2 Content-Length: 92.5 MB (92463432 bytes)
--	v2 Last-Modified: Tue, 01 Sep 2015 22:11:12 GMT
+-	v2 Blob: `sha256:21aae0be8a42e7ee6c85258b8e09d5665086ace47bab77740edb540c0e88bc1b`
+-	v2 Content-Length: 92.5 MB (92463418 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 02:34:32 GMT
 
 ## `fedora:rawhide`
 
--	Total Virtual Size: 630.5 MB (630484402 bytes)
--	Total v2 Content-Length: 197.8 MB (197829242 bytes)
+-	Total Virtual Size: 315.2 MB (315242201 bytes)
+-	Total v2 Content-Length: 98.9 MB (98914604 bytes)
 
 ### Layers (2)
 
@@ -141,14 +141,14 @@ ADD file:60ff9d4b9fadc37de728ecd91deb480d2c4e20e8f5336e4d40a14b501148e20c in /
 -	Parent Layer: `b0082ba983ef3569aad347f923a9cec8ea764c239179081a1e2c47709788dc44`
 -	Docker Version: 1.7.1
 -	Virtual Size: 315.2 MB (315242201 bytes)
--	v2 Blob: `sha256:c7e258b1c9f096e0b5d191e5ddfd760dffb3de970a9c5d630a4cfd6890a00373`
--	v2 Content-Length: 98.9 MB (98914605 bytes)
--	v2 Last-Modified: Tue, 01 Sep 2015 22:12:58 GMT
+-	v2 Blob: `sha256:b2acf66e6bb172c73082ab80af4eb6e4d94d3679f9325cd02c759837ae9684e3`
+-	v2 Content-Length: 98.9 MB (98914572 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 02:36:36 GMT
 
 ## `fedora:20`
 
--	Total Virtual Size: 581.3 MB (581266654 bytes)
--	Total v2 Content-Length: 187.9 MB (187900304 bytes)
+-	Total Virtual Size: 290.6 MB (290633327 bytes)
+-	Total v2 Content-Length: 94.0 MB (93950180 bytes)
 
 ### Layers (2)
 
@@ -175,14 +175,14 @@ ADD file:11e165f0d522bb69e7c207c653d9330d0fdc4935b7bdf234ffe570492f767d8c in /
 -	Parent Layer: `eb8e83ebb17d251b80550891eaef38117c8606605451dd764d46ee96426ddef1`
 -	Docker Version: 1.6.2
 -	Virtual Size: 290.6 MB (290633327 bytes)
--	v2 Blob: `sha256:48ebaa42a40efd9e49cab3154ba19d8dfce64598232a8e4993c318a307857679`
--	v2 Content-Length: 94.0 MB (93950136 bytes)
--	v2 Last-Modified: Tue, 01 Sep 2015 22:14:58 GMT
+-	v2 Blob: `sha256:8eb51a77717fe79f051f755021d7cf451dea0f95d787fd5e0bf335c63188f02b`
+-	v2 Content-Length: 94.0 MB (93950148 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 02:38:45 GMT
 
 ## `fedora:heisenbug`
 
--	Total Virtual Size: 581.3 MB (581266654 bytes)
--	Total v2 Content-Length: 187.9 MB (187900304 bytes)
+-	Total Virtual Size: 290.6 MB (290633327 bytes)
+-	Total v2 Content-Length: 94.0 MB (93950180 bytes)
 
 ### Layers (2)
 
@@ -209,6 +209,6 @@ ADD file:11e165f0d522bb69e7c207c653d9330d0fdc4935b7bdf234ffe570492f767d8c in /
 -	Parent Layer: `eb8e83ebb17d251b80550891eaef38117c8606605451dd764d46ee96426ddef1`
 -	Docker Version: 1.6.2
 -	Virtual Size: 290.6 MB (290633327 bytes)
--	v2 Blob: `sha256:48ebaa42a40efd9e49cab3154ba19d8dfce64598232a8e4993c318a307857679`
--	v2 Content-Length: 94.0 MB (93950136 bytes)
--	v2 Last-Modified: Tue, 01 Sep 2015 22:14:58 GMT
+-	v2 Blob: `sha256:8eb51a77717fe79f051f755021d7cf451dea0f95d787fd5e0bf335c63188f02b`
+-	v2 Content-Length: 94.0 MB (93950148 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 02:38:45 GMT

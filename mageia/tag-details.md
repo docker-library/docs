@@ -76,8 +76,8 @@ ADD file:66fc9b01f04ce39b303b0d6be94581f181bcc24b6f0fdb856cd784fca605f7db in /
 
 ## `mageia:5`
 
--	Total Virtual Size: 335.7 MB (335681380 bytes)
--	Total v2 Content-Length: 122.6 MB (122619652 bytes)
+-	Total Virtual Size: 167.8 MB (167840690 bytes)
+-	Total v2 Content-Length: 61.3 MB (61309842 bytes)
 
 ### Layers (2)
 

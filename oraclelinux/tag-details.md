@@ -15,7 +15,7 @@
 ## `oraclelinux:latest`
 
 -	Total Virtual Size: 189.6 MB (189554733 bytes)
--	Total v2 Content-Length: 68.4 MB (68366815 bytes)
+-	Total v2 Content-Length: 68.4 MB (68366981 bytes)
 
 ### Layers (3)
 
@@ -42,9 +42,9 @@ ADD file:c2111387d32b6a6256da8476b8ba1bd6454c4340f2a70c337998b75744f6681a in /
 -	Parent Layer: `8c3e49cb06dc5b36240627eca5238665ce373d96f41e28947920828dfe434381`
 -	Docker Version: 1.6.0
 -	Virtual Size: 189.6 MB (189554733 bytes)
--	v2 Blob: `sha256:b00caa91b056a061e2ba81ab4cc047f0ca3dc4ee6e8c83b1214688032e893bd5`
--	v2 Content-Length: 68.4 MB (68366751 bytes)
--	v2 Last-Modified: Thu, 30 Jul 2015 23:22:11 GMT
+-	v2 Blob: `sha256:cb67d18e1948a8588154b9e074a9980c5e30921c265d87b6411adc1ebd469a19`
+-	v2 Content-Length: 68.4 MB (68366917 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:35:47 GMT
 
 #### `8a2b759d9dd8c31211ecddf456ea4e533edbe2275436f3baa79f524e6f824b5c`
 
@@ -63,7 +63,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7`
 
 -	Total Virtual Size: 189.6 MB (189554733 bytes)
--	Total v2 Content-Length: 68.4 MB (68366847 bytes)
+-	Total v2 Content-Length: 68.4 MB (68366981 bytes)
 
 ### Layers (3)
 
@@ -90,9 +90,9 @@ ADD file:c2111387d32b6a6256da8476b8ba1bd6454c4340f2a70c337998b75744f6681a in /
 -	Parent Layer: `8c3e49cb06dc5b36240627eca5238665ce373d96f41e28947920828dfe434381`
 -	Docker Version: 1.6.0
 -	Virtual Size: 189.6 MB (189554733 bytes)
--	v2 Blob: `sha256:b00caa91b056a061e2ba81ab4cc047f0ca3dc4ee6e8c83b1214688032e893bd5`
--	v2 Content-Length: 68.4 MB (68366751 bytes)
--	v2 Last-Modified: Thu, 30 Jul 2015 23:22:11 GMT
+-	v2 Blob: `sha256:cb67d18e1948a8588154b9e074a9980c5e30921c265d87b6411adc1ebd469a19`
+-	v2 Content-Length: 68.4 MB (68366917 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:35:47 GMT
 
 #### `8a2b759d9dd8c31211ecddf456ea4e533edbe2275436f3baa79f524e6f824b5c`
 
@@ -111,7 +111,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7.1`
 
 -	Total Virtual Size: 189.6 MB (189554733 bytes)
--	Total v2 Content-Length: 68.4 MB (68366847 bytes)
+-	Total v2 Content-Length: 68.4 MB (68366981 bytes)
 
 ### Layers (3)
 
@@ -138,9 +138,9 @@ ADD file:c2111387d32b6a6256da8476b8ba1bd6454c4340f2a70c337998b75744f6681a in /
 -	Parent Layer: `8c3e49cb06dc5b36240627eca5238665ce373d96f41e28947920828dfe434381`
 -	Docker Version: 1.6.0
 -	Virtual Size: 189.6 MB (189554733 bytes)
--	v2 Blob: `sha256:b00caa91b056a061e2ba81ab4cc047f0ca3dc4ee6e8c83b1214688032e893bd5`
--	v2 Content-Length: 68.4 MB (68366751 bytes)
--	v2 Last-Modified: Thu, 30 Jul 2015 23:22:11 GMT
+-	v2 Blob: `sha256:cb67d18e1948a8588154b9e074a9980c5e30921c265d87b6411adc1ebd469a19`
+-	v2 Content-Length: 68.4 MB (68366917 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:35:47 GMT
 
 #### `8a2b759d9dd8c31211ecddf456ea4e533edbe2275436f3baa79f524e6f824b5c`
 
@@ -207,7 +207,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:6`
 
 -	Total Virtual Size: 156.2 MB (156191943 bytes)
--	Total v2 Content-Length: 64.0 MB (64033408 bytes)
+-	Total v2 Content-Length: 64.0 MB (64033438 bytes)
 
 ### Layers (3)
 
@@ -234,9 +234,9 @@ ADD file:4e581b757e8607fa81c70513b112598cb279a392ba1dc8da3307c3092919919a in /
 -	Parent Layer: `8c3e49cb06dc5b36240627eca5238665ce373d96f41e28947920828dfe434381`
 -	Docker Version: 1.7.1
 -	Virtual Size: 156.2 MB (156191943 bytes)
--	v2 Blob: `sha256:57d97a586fdeef6dc21b032f5aa07d89ce4ed316ae795fe0e516d43bab6302f0`
--	v2 Content-Length: 64.0 MB (64033344 bytes)
--	v2 Last-Modified: Thu, 30 Jul 2015 23:26:10 GMT
+-	v2 Blob: `sha256:fe191d286e3507638993b829bc1c268e0c163246bb0025f356f559af50acd65b`
+-	v2 Content-Length: 64.0 MB (64033374 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:40:28 GMT
 
 #### `cfc75fa9f295d84c856f6e6205389282643c67842fdcc62abc24f55acdc01b64`
 
@@ -255,7 +255,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:6.7`
 
 -	Total Virtual Size: 156.2 MB (156191943 bytes)
--	Total v2 Content-Length: 64.0 MB (64033440 bytes)
+-	Total v2 Content-Length: 64.0 MB (64033438 bytes)
 
 ### Layers (3)
 
@@ -282,9 +282,9 @@ ADD file:4e581b757e8607fa81c70513b112598cb279a392ba1dc8da3307c3092919919a in /
 -	Parent Layer: `8c3e49cb06dc5b36240627eca5238665ce373d96f41e28947920828dfe434381`
 -	Docker Version: 1.7.1
 -	Virtual Size: 156.2 MB (156191943 bytes)
--	v2 Blob: `sha256:57d97a586fdeef6dc21b032f5aa07d89ce4ed316ae795fe0e516d43bab6302f0`
--	v2 Content-Length: 64.0 MB (64033344 bytes)
--	v2 Last-Modified: Thu, 30 Jul 2015 23:26:10 GMT
+-	v2 Blob: `sha256:fe191d286e3507638993b829bc1c268e0c163246bb0025f356f559af50acd65b`
+-	v2 Content-Length: 64.0 MB (64033374 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:40:28 GMT
 
 #### `cfc75fa9f295d84c856f6e6205389282643c67842fdcc62abc24f55acdc01b64`
 
@@ -303,7 +303,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:6.6`
 
 -	Total Virtual Size: 157.8 MB (157752322 bytes)
--	Total v2 Content-Length: 64.4 MB (64372530 bytes)
+-	Total v2 Content-Length: 64.4 MB (64372487 bytes)
 
 ### Layers (3)
 
@@ -330,9 +330,9 @@ ADD file:9d893d9c953d08638392c48f8763881f4d871f0207ae67a370996d89bfe4d6da in /
 -	Parent Layer: `8c3e49cb06dc5b36240627eca5238665ce373d96f41e28947920828dfe434381`
 -	Docker Version: 1.6.2
 -	Virtual Size: 157.8 MB (157752322 bytes)
--	v2 Blob: `sha256:cf74c0cad0116aa172d99005133ad909df9d4e9dda2674179bb22b2529c9dfbe`
--	v2 Content-Length: 64.4 MB (64372466 bytes)
--	v2 Last-Modified: Thu, 30 Jul 2015 23:28:39 GMT
+-	v2 Blob: `sha256:74f5c744f19a54d3fbf8a816aebcd43ee4366b726a8f637a0254ff20e6df5c02`
+-	v2 Content-Length: 64.4 MB (64372423 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:43:17 GMT
 
 #### `88c24509b051f792e81a8c5a5b6697ae67e1b85d7a7809f47770e598d4a3b18c`
 
@@ -399,7 +399,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:5.11`
 
 -	Total Virtual Size: 489.4 MB (489388004 bytes)
--	Total v2 Content-Length: 133.3 MB (133251593 bytes)
+-	Total v2 Content-Length: 133.3 MB (133251561 bytes)
 
 ### Layers (3)
 

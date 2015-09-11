@@ -51,8 +51,8 @@ ADD file:98d5decf83ee59e1dd63cd038be33a43e840fa4bd2aca68cb90f20ea06527c40 in /
 
 ## `alpine:latest`
 
--	Total Virtual Size: 10.5 MB (10508984 bytes)
--	Total v2 Content-Length: 5.0 MB (4950580 bytes)
+-	Total Virtual Size: 5.3 MB (5254492 bytes)
+-	Total v2 Content-Length: 2.5 MB (2475290 bytes)
 
 ### Layers (1)
 

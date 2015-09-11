@@ -114,8 +114,8 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:nd12.04`
 
--	Total Virtual Size: 85.8 MB (85845887 bytes)
--	Total v2 Content-Length: 35.6 MB (35598152 bytes)
+-	Total Virtual Size: 85.8 MB (85813591 bytes)
+-	Total v2 Content-Length: 35.6 MB (35583271 bytes)
 
 ### Layers (6)
 
@@ -294,8 +294,8 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:nd14.04`
 
--	Total Virtual Size: 87.1 MB (87143346 bytes)
--	Total v2 Content-Length: 34.9 MB (34895436 bytes)
+-	Total Virtual Size: 87.1 MB (87115463 bytes)
+-	Total v2 Content-Length: 34.9 MB (34880654 bytes)
 
 ### Layers (6)
 
@@ -474,8 +474,8 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:nd14.10`
 
--	Total Virtual Size: 125.3 MB (125340748 bytes)
--	Total v2 Content-Length: 45.1 MB (45064370 bytes)
+-	Total Virtual Size: 125.3 MB (125312865 bytes)
+-	Total v2 Content-Length: 45.0 MB (45049588 bytes)
 
 ### Layers (6)
 
@@ -654,8 +654,8 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:nd15.04`
 
--	Total Virtual Size: 110.2 MB (110206642 bytes)
--	Total v2 Content-Length: 43.5 MB (43482822 bytes)
+-	Total Virtual Size: 110.2 MB (110178759 bytes)
+-	Total v2 Content-Length: 43.5 MB (43468039 bytes)
 
 ### Layers (6)
 
@@ -745,989 +745,989 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ## `neurodebian:squeeze`
 
 -	Total Virtual Size: 76.6 MB (76577169 bytes)
--	Total v2 Content-Length: 33.9 MB (33863457 bytes)
+-	Total v2 Content-Length: 33.9 MB (33862363 bytes)
 
 ### Layers (6)
 
-#### `4c115374adfc705a50767e7e96bf970acba9bbe1fdd6740729de9c22c8e55c7f`
+#### `e7a4463ba4d839b91fe34e932f9c78d5f17b2956541016a300ed944c9629026b`
 
 ```dockerfile
-ADD file:c75b3c210e68e4089c542482f193ce43cd24a428856dad73d5904fd2736e3201 in /
+ADD file:9e38161c0a40d9edbb55518ec08e6bbe49f896c023c4eb78efbb48433b3ccd55 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:48 GMT
+-	Created: Mon, 07 Sep 2015 23:36:01 GMT
 -	Docker Version: 1.7.1
 -	Virtual Size: 76.5 MB (76535900 bytes)
--	v2 Blob: `sha256:c3313e8a6f42b9195442328c4214c9e0483b954045a125b2cfae7d70a939ae4c`
--	v2 Content-Length: 33.8 MB (33843616 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:43:35 GMT
+-	v2 Blob: `sha256:359bf3f3748c8920bf427de6774616f4cc5b8dbbd0ded78b82bf1dc61fd19ff1`
+-	v2 Content-Length: 33.8 MB (33842512 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:41:30 GMT
 
-#### `041aead07a8870a23ca9ff6c7521c546ebe3c895c865c0e3ebfe586ea75581bf`
+#### `c952ddebf470d169a2bdc03f63fed9c579519901bc2ae9305c9688cc9771bfd5`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:49 GMT
--	Parent Layer: `4c115374adfc705a50767e7e96bf970acba9bbe1fdd6740729de9c22c8e55c7f`
+-	Created: Mon, 07 Sep 2015 23:36:02 GMT
+-	Parent Layer: `e7a4463ba4d839b91fe34e932f9c78d5f17b2956541016a300ed944c9629026b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c008d6489ff6acf8b3b2a8065b39ffed02e65209f8b48d42e0c22024972e3ea5`
+#### `bd0d9231f474b7aaf0b5fe56ce462ad44c63081cf1343b71711ddc1ed74339b4`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian squeeze main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:20:55 GMT
--	Parent Layer: `041aead07a8870a23ca9ff6c7521c546ebe3c895c865c0e3ebfe586ea75581bf`
+-	Created: Wed, 09 Sep 2015 23:13:13 GMT
+-	Parent Layer: `c952ddebf470d169a2bdc03f63fed9c579519901bc2ae9305c9688cc9771bfd5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 48.0 B
--	v2 Blob: `sha256:9ff0447ee86d8b4ee394b46cd640b3c39f4b6b3eb184afaf9fd365768cd0dff3`
--	v2 Content-Length: 213.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:17:47 GMT
+-	v2 Blob: `sha256:ac0260e2508f304aee2be90be7e2a1db09eb4957d1e6a44c3994a219d06ee831`
+-	v2 Content-Length: 215.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:57:59 GMT
 
-#### `58d1e9abb945dd78c23809cbf1df73585b430b7fe6d1d2f057e9b5e8824c4546`
+#### `0aa6137a260706fd2f0b91627df58c80c722fd8056b8d8614e3bd77ddaf4ec5b`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:20:56 GMT
--	Parent Layer: `c008d6489ff6acf8b3b2a8065b39ffed02e65209f8b48d42e0c22024972e3ea5`
+-	Created: Wed, 09 Sep 2015 23:13:19 GMT
+-	Parent Layer: `bd0d9231f474b7aaf0b5fe56ce462ad44c63081cf1343b71711ddc1ed74339b4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 93.0 B
--	v2 Blob: `sha256:b31ee29dfedefc430ad9a5db43fd362d5a03e5e5d29079ba74cb38f5f6fe740c`
--	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:17:45 GMT
+-	v2 Blob: `sha256:97365d7f4a8b0bb98e94a589b5670b03da7118432f10d83984c237a026c79f7e`
+-	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:57:54 GMT
 
-#### `c0946b17c7aab0eee21935c1b14d1b9b183789bcb4f1e111111a2e6dae5a17b5`
+#### `94ce1efa13c1bc1b58752e4cc69210b021076f15f1988c6113860d1e37940b67`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel squeeze main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:20:57 GMT
--	Parent Layer: `58d1e9abb945dd78c23809cbf1df73585b430b7fe6d1d2f057e9b5e8824c4546`
+-	Created: Wed, 09 Sep 2015 23:13:21 GMT
+-	Parent Layer: `0aa6137a260706fd2f0b91627df58c80c722fd8056b8d8614e3bd77ddaf4ec5b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 152.0 B
--	v2 Blob: `sha256:b8b0878d4d48a1b6ce4ce0228c8657b4fa238fb25bfd64f0d35f2dec7eee1af8`
--	v2 Content-Length: 238.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:17:43 GMT
+-	v2 Blob: `sha256:684df8b7ee8544c4b7f19f1c051638cb15e07ff4c745c21f11d109e1c2f4b8d7`
+-	v2 Content-Length: 240.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:57:49 GMT
 
-#### `fae751dac965bdd7f0216ab894cbe7aa2da4e7a2e5df490f4452342a7d9f5ad0`
+#### `f7d939cfa543c7d19c53df0426b607b7b2b5ea616c46c7ebf8afce623d691744`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:20:59 GMT
--	Parent Layer: `c0946b17c7aab0eee21935c1b14d1b9b183789bcb4f1e111111a2e6dae5a17b5`
+-	Created: Wed, 09 Sep 2015 23:13:23 GMT
+-	Parent Layer: `94ce1efa13c1bc1b58752e4cc69210b021076f15f1988c6113860d1e37940b67`
 -	Docker Version: 1.7.1
 -	Virtual Size: 41.0 KB (40976 bytes)
--	v2 Blob: `sha256:d4c9c2ce1562a71fea45a2d127dbfaece00be0f6a30a969bd65aeddbbc122f5c`
--	v2 Content-Length: 19.1 KB (19139 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:17:40 GMT
+-	v2 Blob: `sha256:a79984676a9c1c29eb7f17835e087b40a09dbe6f272def8aa6b3bc2d2055a6d0`
+-	v2 Content-Length: 19.1 KB (19141 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:57:44 GMT
 
 ## `neurodebian:nd60`
 
--	Total Virtual Size: 76.6 MB (76618145 bytes)
--	Total v2 Content-Length: 33.9 MB (33882596 bytes)
+-	Total Virtual Size: 76.6 MB (76577169 bytes)
+-	Total v2 Content-Length: 33.9 MB (33862363 bytes)
 
 ### Layers (6)
 
-#### `4c115374adfc705a50767e7e96bf970acba9bbe1fdd6740729de9c22c8e55c7f`
+#### `e7a4463ba4d839b91fe34e932f9c78d5f17b2956541016a300ed944c9629026b`
 
 ```dockerfile
-ADD file:c75b3c210e68e4089c542482f193ce43cd24a428856dad73d5904fd2736e3201 in /
+ADD file:9e38161c0a40d9edbb55518ec08e6bbe49f896c023c4eb78efbb48433b3ccd55 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:48 GMT
+-	Created: Mon, 07 Sep 2015 23:36:01 GMT
 -	Docker Version: 1.7.1
 -	Virtual Size: 76.5 MB (76535900 bytes)
--	v2 Blob: `sha256:c3313e8a6f42b9195442328c4214c9e0483b954045a125b2cfae7d70a939ae4c`
--	v2 Content-Length: 33.8 MB (33843616 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:43:35 GMT
+-	v2 Blob: `sha256:359bf3f3748c8920bf427de6774616f4cc5b8dbbd0ded78b82bf1dc61fd19ff1`
+-	v2 Content-Length: 33.8 MB (33842512 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:41:30 GMT
 
-#### `041aead07a8870a23ca9ff6c7521c546ebe3c895c865c0e3ebfe586ea75581bf`
+#### `c952ddebf470d169a2bdc03f63fed9c579519901bc2ae9305c9688cc9771bfd5`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:49 GMT
--	Parent Layer: `4c115374adfc705a50767e7e96bf970acba9bbe1fdd6740729de9c22c8e55c7f`
+-	Created: Mon, 07 Sep 2015 23:36:02 GMT
+-	Parent Layer: `e7a4463ba4d839b91fe34e932f9c78d5f17b2956541016a300ed944c9629026b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c008d6489ff6acf8b3b2a8065b39ffed02e65209f8b48d42e0c22024972e3ea5`
+#### `bd0d9231f474b7aaf0b5fe56ce462ad44c63081cf1343b71711ddc1ed74339b4`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian squeeze main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:20:55 GMT
--	Parent Layer: `041aead07a8870a23ca9ff6c7521c546ebe3c895c865c0e3ebfe586ea75581bf`
+-	Created: Wed, 09 Sep 2015 23:13:13 GMT
+-	Parent Layer: `c952ddebf470d169a2bdc03f63fed9c579519901bc2ae9305c9688cc9771bfd5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 48.0 B
--	v2 Blob: `sha256:9ff0447ee86d8b4ee394b46cd640b3c39f4b6b3eb184afaf9fd365768cd0dff3`
--	v2 Content-Length: 213.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:17:47 GMT
+-	v2 Blob: `sha256:ac0260e2508f304aee2be90be7e2a1db09eb4957d1e6a44c3994a219d06ee831`
+-	v2 Content-Length: 215.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:57:59 GMT
 
-#### `58d1e9abb945dd78c23809cbf1df73585b430b7fe6d1d2f057e9b5e8824c4546`
+#### `0aa6137a260706fd2f0b91627df58c80c722fd8056b8d8614e3bd77ddaf4ec5b`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:20:56 GMT
--	Parent Layer: `c008d6489ff6acf8b3b2a8065b39ffed02e65209f8b48d42e0c22024972e3ea5`
+-	Created: Wed, 09 Sep 2015 23:13:19 GMT
+-	Parent Layer: `bd0d9231f474b7aaf0b5fe56ce462ad44c63081cf1343b71711ddc1ed74339b4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 93.0 B
--	v2 Blob: `sha256:b31ee29dfedefc430ad9a5db43fd362d5a03e5e5d29079ba74cb38f5f6fe740c`
--	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:17:45 GMT
+-	v2 Blob: `sha256:97365d7f4a8b0bb98e94a589b5670b03da7118432f10d83984c237a026c79f7e`
+-	v2 Content-Length: 223.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:57:54 GMT
 
-#### `c0946b17c7aab0eee21935c1b14d1b9b183789bcb4f1e111111a2e6dae5a17b5`
+#### `94ce1efa13c1bc1b58752e4cc69210b021076f15f1988c6113860d1e37940b67`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel squeeze main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:20:57 GMT
--	Parent Layer: `58d1e9abb945dd78c23809cbf1df73585b430b7fe6d1d2f057e9b5e8824c4546`
+-	Created: Wed, 09 Sep 2015 23:13:21 GMT
+-	Parent Layer: `0aa6137a260706fd2f0b91627df58c80c722fd8056b8d8614e3bd77ddaf4ec5b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 152.0 B
--	v2 Blob: `sha256:b8b0878d4d48a1b6ce4ce0228c8657b4fa238fb25bfd64f0d35f2dec7eee1af8`
--	v2 Content-Length: 238.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:17:43 GMT
+-	v2 Blob: `sha256:684df8b7ee8544c4b7f19f1c051638cb15e07ff4c745c21f11d109e1c2f4b8d7`
+-	v2 Content-Length: 240.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:57:49 GMT
 
-#### `fae751dac965bdd7f0216ab894cbe7aa2da4e7a2e5df490f4452342a7d9f5ad0`
+#### `f7d939cfa543c7d19c53df0426b607b7b2b5ea616c46c7ebf8afce623d691744`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:20:59 GMT
--	Parent Layer: `c0946b17c7aab0eee21935c1b14d1b9b183789bcb4f1e111111a2e6dae5a17b5`
+-	Created: Wed, 09 Sep 2015 23:13:23 GMT
+-	Parent Layer: `94ce1efa13c1bc1b58752e4cc69210b021076f15f1988c6113860d1e37940b67`
 -	Docker Version: 1.7.1
 -	Virtual Size: 41.0 KB (40976 bytes)
--	v2 Blob: `sha256:d4c9c2ce1562a71fea45a2d127dbfaece00be0f6a30a969bd65aeddbbc122f5c`
--	v2 Content-Length: 19.1 KB (19139 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:17:40 GMT
+-	v2 Blob: `sha256:a79984676a9c1c29eb7f17835e087b40a09dbe6f272def8aa6b3bc2d2055a6d0`
+-	v2 Content-Length: 19.1 KB (19141 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:57:44 GMT
 
 ## `neurodebian:wheezy`
 
--	Total Virtual Size: 85.0 MB (85032811 bytes)
--	Total v2 Content-Length: 37.2 MB (37240603 bytes)
+-	Total Virtual Size: 85.0 MB (84985944 bytes)
+-	Total v2 Content-Length: 37.2 MB (37224606 bytes)
 
 ### Layers (6)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `56da4d2d3b215fd3f5cdc372e6fd6b0504a508adbd9bc4c23f45becd40897531`
+#### `aa1112fe6f2d473090ab03999860a247605fa936ef836e087ae20ba1c5665fec`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian wheezy main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:14 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 23:13:41 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 47.0 B
--	v2 Blob: `sha256:54f6d9c4eb5e55647f627b56f6f580fc7542291c6739ab0aea9fc886ed33012f`
--	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:19:02 GMT
+-	v2 Blob: `sha256:229a7e31056184ec545438b2e4b20b76b913468b80c61169b3c0201e85805bcd`
+-	v2 Content-Length: 218.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:59:40 GMT
 
-#### `15e2b9b68f3c22a4f453b872784af1a51eddfd775dc4e5fe3ac5b4b1731406b2`
+#### `d34e536e1247adc72d7927327e23ebe04d8803e7661ea3994c972ccc4befe78e`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:15 GMT
--	Parent Layer: `56da4d2d3b215fd3f5cdc372e6fd6b0504a508adbd9bc4c23f45becd40897531`
+-	Created: Wed, 09 Sep 2015 23:13:42 GMT
+-	Parent Layer: `aa1112fe6f2d473090ab03999860a247605fa936ef836e087ae20ba1c5665fec`
 -	Docker Version: 1.7.1
 -	Virtual Size: 92.0 B
--	v2 Blob: `sha256:9b607a2da185c00ab8b48a7e6ed87db349b2567960348af6d6362702cb96c586`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:18:59 GMT
+-	v2 Blob: `sha256:fd651826676b2114b87c8a69e0db60350b036bfc9fd736c6ac4bf1b06ac39e93`
+-	v2 Content-Length: 221.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:59:35 GMT
 
-#### `10cffb788e926d6319de2aa3d420b187010975ddeee24e032a6dbc1fd5a7344a`
+#### `22d64be60f4e890b789d3156d436b940234ea7cc9dbcd23930aac6cee8a0ebd5`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel wheezy main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:16 GMT
--	Parent Layer: `15e2b9b68f3c22a4f453b872784af1a51eddfd775dc4e5fe3ac5b4b1731406b2`
+-	Created: Wed, 09 Sep 2015 23:13:43 GMT
+-	Parent Layer: `d34e536e1247adc72d7927327e23ebe04d8803e7661ea3994c972ccc4befe78e`
 -	Docker Version: 1.7.1
 -	Virtual Size: 150.0 B
--	v2 Blob: `sha256:08544f85bdd1c8114ce519a8fb98f89f607a00a6a3d8d91b73998f7d2ee56854`
+-	v2 Blob: `sha256:92e5f0354670e41470dab846615d5bf867f08c59eeb7464e553d653adbdc4550`
 -	v2 Content-Length: 239.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:18:57 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:59:31 GMT
 
-#### `af7de617c3472f75990632572bbbd9d558ed1ddbf24a7b70d6c87d444cdde47c`
+#### `d8591f929c85a4c0e570f46674d9cf3a9a25efe63ca8f291810a7eed870c5c67`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:17 GMT
--	Parent Layer: `10cffb788e926d6319de2aa3d420b187010975ddeee24e032a6dbc1fd5a7344a`
+-	Created: Wed, 09 Sep 2015 23:13:45 GMT
+-	Parent Layer: `22d64be60f4e890b789d3156d436b940234ea7cc9dbcd23930aac6cee8a0ebd5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 60.9 KB (60882 bytes)
--	v2 Blob: `sha256:52f0f07cfa79cb9cdd352c1f6074abef20b9e6696bb2823b2b7ef268f2704f61`
--	v2 Content-Length: 32.1 KB (32131 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:18:53 GMT
+-	v2 Blob: `sha256:38068cb7291a36dace6f4dbeb3741f062e46540916b452c77c36e7bdaec2efe5`
+-	v2 Content-Length: 32.1 KB (32135 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:59:27 GMT
 
 ## `neurodebian:nd70`
 
--	Total Virtual Size: 85.1 MB (85093693 bytes)
--	Total v2 Content-Length: 37.3 MB (37272734 bytes)
+-	Total Virtual Size: 85.0 MB (84985944 bytes)
+-	Total v2 Content-Length: 37.2 MB (37224606 bytes)
 
 ### Layers (6)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `56da4d2d3b215fd3f5cdc372e6fd6b0504a508adbd9bc4c23f45becd40897531`
+#### `aa1112fe6f2d473090ab03999860a247605fa936ef836e087ae20ba1c5665fec`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian wheezy main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:14 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 23:13:41 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 47.0 B
--	v2 Blob: `sha256:54f6d9c4eb5e55647f627b56f6f580fc7542291c6739ab0aea9fc886ed33012f`
--	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:19:02 GMT
+-	v2 Blob: `sha256:229a7e31056184ec545438b2e4b20b76b913468b80c61169b3c0201e85805bcd`
+-	v2 Content-Length: 218.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:59:40 GMT
 
-#### `15e2b9b68f3c22a4f453b872784af1a51eddfd775dc4e5fe3ac5b4b1731406b2`
+#### `d34e536e1247adc72d7927327e23ebe04d8803e7661ea3994c972ccc4befe78e`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:15 GMT
--	Parent Layer: `56da4d2d3b215fd3f5cdc372e6fd6b0504a508adbd9bc4c23f45becd40897531`
+-	Created: Wed, 09 Sep 2015 23:13:42 GMT
+-	Parent Layer: `aa1112fe6f2d473090ab03999860a247605fa936ef836e087ae20ba1c5665fec`
 -	Docker Version: 1.7.1
 -	Virtual Size: 92.0 B
--	v2 Blob: `sha256:9b607a2da185c00ab8b48a7e6ed87db349b2567960348af6d6362702cb96c586`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:18:59 GMT
+-	v2 Blob: `sha256:fd651826676b2114b87c8a69e0db60350b036bfc9fd736c6ac4bf1b06ac39e93`
+-	v2 Content-Length: 221.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:59:35 GMT
 
-#### `10cffb788e926d6319de2aa3d420b187010975ddeee24e032a6dbc1fd5a7344a`
+#### `22d64be60f4e890b789d3156d436b940234ea7cc9dbcd23930aac6cee8a0ebd5`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel wheezy main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:16 GMT
--	Parent Layer: `15e2b9b68f3c22a4f453b872784af1a51eddfd775dc4e5fe3ac5b4b1731406b2`
+-	Created: Wed, 09 Sep 2015 23:13:43 GMT
+-	Parent Layer: `d34e536e1247adc72d7927327e23ebe04d8803e7661ea3994c972ccc4befe78e`
 -	Docker Version: 1.7.1
 -	Virtual Size: 150.0 B
--	v2 Blob: `sha256:08544f85bdd1c8114ce519a8fb98f89f607a00a6a3d8d91b73998f7d2ee56854`
+-	v2 Blob: `sha256:92e5f0354670e41470dab846615d5bf867f08c59eeb7464e553d653adbdc4550`
 -	v2 Content-Length: 239.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:18:57 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:59:31 GMT
 
-#### `af7de617c3472f75990632572bbbd9d558ed1ddbf24a7b70d6c87d444cdde47c`
+#### `d8591f929c85a4c0e570f46674d9cf3a9a25efe63ca8f291810a7eed870c5c67`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:17 GMT
--	Parent Layer: `10cffb788e926d6319de2aa3d420b187010975ddeee24e032a6dbc1fd5a7344a`
+-	Created: Wed, 09 Sep 2015 23:13:45 GMT
+-	Parent Layer: `22d64be60f4e890b789d3156d436b940234ea7cc9dbcd23930aac6cee8a0ebd5`
 -	Docker Version: 1.7.1
 -	Virtual Size: 60.9 KB (60882 bytes)
--	v2 Blob: `sha256:52f0f07cfa79cb9cdd352c1f6074abef20b9e6696bb2823b2b7ef268f2704f61`
--	v2 Content-Length: 32.1 KB (32131 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:18:53 GMT
+-	v2 Blob: `sha256:38068cb7291a36dace6f4dbeb3741f062e46540916b452c77c36e7bdaec2efe5`
+-	v2 Content-Length: 32.1 KB (32135 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 08:59:27 GMT
 
 ## `neurodebian:jessie`
 
--	Total Virtual Size: 125.2 MB (125178406 bytes)
--	Total v2 Content-Length: 51.4 MB (51372244 bytes)
+-	Total Virtual Size: 125.2 MB (125162633 bytes)
+-	Total v2 Content-Length: 51.4 MB (51363587 bytes)
 
 ### Layers (6)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
+-	Created: Mon, 07 Sep 2015 23:35:05 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Virtual Size: 125.2 MB (125159131 bytes)
+-	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
+-	v2 Content-Length: 51.4 MB (51359708 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+-	Created: Mon, 07 Sep 2015 23:35:07 GMT
+-	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9182a28aebdb46305886b167d05582956eb67e10bf739c85c8c8361aa0d3c77d`
+#### `4ce2c2149587c7dec65cf481f4d390d29ae0b8112d9b5163b3e68613c3055fee`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian jessie main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:32 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+-	Created: Wed, 09 Sep 2015 23:14:03 GMT
+-	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 47.0 B
--	v2 Blob: `sha256:25f9110e434c5d5445f2ef3e2f06a221ac5e110aa37c67cde493e50a51ef90d0`
--	v2 Content-Length: 213.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:12 GMT
+-	v2 Blob: `sha256:7c3ccf4ac8f56484525e25dfd4bb63a903383758fe9ab51c4416fc400eef5f71`
+-	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:20 GMT
 
-#### `75bed7bbc527c9a5ffe80ae5cd63f867a225305e6d47915060fd815ef7554cec`
+#### `afd87883fa16157a3f1c4a77ed0dacf357671a689fb92a73711b7a8498e20c6f`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:33 GMT
--	Parent Layer: `9182a28aebdb46305886b167d05582956eb67e10bf739c85c8c8361aa0d3c77d`
+-	Created: Wed, 09 Sep 2015 23:14:04 GMT
+-	Parent Layer: `4ce2c2149587c7dec65cf481f4d390d29ae0b8112d9b5163b3e68613c3055fee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 92.0 B
--	v2 Blob: `sha256:254887df2ae334670f5fdb9d1383c0a7bc50f72a305ee4a37e1cde95ffd4bb0d`
+-	v2 Blob: `sha256:b706fc241305277856bd6e38ccdbe5e1c2021fbb6f394537d216e64475ef134b`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:10 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:16 GMT
 
-#### `bc8fe24d33703f29be7d740d5e9b2cb4b7702eee9e37d83e88fe11a064621393`
+#### `f4a167efa2121a80383b4a2c9ca5393da87331c1f84bb658323b6fefcc30c2d0`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel jessie main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:35 GMT
--	Parent Layer: `75bed7bbc527c9a5ffe80ae5cd63f867a225305e6d47915060fd815ef7554cec`
+-	Created: Wed, 09 Sep 2015 23:14:05 GMT
+-	Parent Layer: `afd87883fa16157a3f1c4a77ed0dacf357671a689fb92a73711b7a8498e20c6f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 150.0 B
--	v2 Blob: `sha256:c1fde9d5fd1362dd663f24ac2721b3e62f5d3ef32b6d414caf7f8cc368ca4e1b`
--	v2 Content-Length: 236.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:08 GMT
+-	v2 Blob: `sha256:e88abe0d9023bdc2dcd7efd82d5355a2ea54aac51cef90a87a241880b8955ab5`
+-	v2 Content-Length: 237.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:11 GMT
 
-#### `966d16ec2d6c8c1dc39e83d729f058eabe77b62f09e25a623b83bf1293aea025`
+#### `90936247e9666cd10d7ccf98fd6e641c59bba1d3465a1a0430af34b721f802ba`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:45 GMT
--	Parent Layer: `bc8fe24d33703f29be7d740d5e9b2cb4b7702eee9e37d83e88fe11a064621393`
+-	Created: Wed, 09 Sep 2015 23:14:16 GMT
+-	Parent Layer: `f4a167efa2121a80383b4a2c9ca5393da87331c1f84bb658323b6fefcc30c2d0`
 -	Docker Version: 1.7.1
 -	Virtual Size: 3.2 KB (3213 bytes)
--	v2 Blob: `sha256:96ba701132feb16423e5ea7b602bb7d395362b8f2e10ae935181e3c343593372`
--	v2 Content-Length: 3.2 KB (3166 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:06 GMT
+-	v2 Blob: `sha256:c96fc0fc3d1e9db756858d72a4e57190b9b7eb5f0509d9d8abf35265a44ea703`
+-	v2 Content-Length: 3.2 KB (3176 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:07 GMT
 
 ## `neurodebian:nd80`
 
--	Total Virtual Size: 125.2 MB (125181619 bytes)
--	Total v2 Content-Length: 51.4 MB (51375410 bytes)
+-	Total Virtual Size: 125.2 MB (125162633 bytes)
+-	Total v2 Content-Length: 51.4 MB (51363587 bytes)
 
 ### Layers (6)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
+-	Created: Mon, 07 Sep 2015 23:35:05 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Virtual Size: 125.2 MB (125159131 bytes)
+-	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
+-	v2 Content-Length: 51.4 MB (51359708 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+-	Created: Mon, 07 Sep 2015 23:35:07 GMT
+-	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9182a28aebdb46305886b167d05582956eb67e10bf739c85c8c8361aa0d3c77d`
+#### `4ce2c2149587c7dec65cf481f4d390d29ae0b8112d9b5163b3e68613c3055fee`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian jessie main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:32 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+-	Created: Wed, 09 Sep 2015 23:14:03 GMT
+-	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 47.0 B
--	v2 Blob: `sha256:25f9110e434c5d5445f2ef3e2f06a221ac5e110aa37c67cde493e50a51ef90d0`
--	v2 Content-Length: 213.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:12 GMT
+-	v2 Blob: `sha256:7c3ccf4ac8f56484525e25dfd4bb63a903383758fe9ab51c4416fc400eef5f71`
+-	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:20 GMT
 
-#### `75bed7bbc527c9a5ffe80ae5cd63f867a225305e6d47915060fd815ef7554cec`
+#### `afd87883fa16157a3f1c4a77ed0dacf357671a689fb92a73711b7a8498e20c6f`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:33 GMT
--	Parent Layer: `9182a28aebdb46305886b167d05582956eb67e10bf739c85c8c8361aa0d3c77d`
+-	Created: Wed, 09 Sep 2015 23:14:04 GMT
+-	Parent Layer: `4ce2c2149587c7dec65cf481f4d390d29ae0b8112d9b5163b3e68613c3055fee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 92.0 B
--	v2 Blob: `sha256:254887df2ae334670f5fdb9d1383c0a7bc50f72a305ee4a37e1cde95ffd4bb0d`
+-	v2 Blob: `sha256:b706fc241305277856bd6e38ccdbe5e1c2021fbb6f394537d216e64475ef134b`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:10 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:16 GMT
 
-#### `bc8fe24d33703f29be7d740d5e9b2cb4b7702eee9e37d83e88fe11a064621393`
+#### `f4a167efa2121a80383b4a2c9ca5393da87331c1f84bb658323b6fefcc30c2d0`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel jessie main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:35 GMT
--	Parent Layer: `75bed7bbc527c9a5ffe80ae5cd63f867a225305e6d47915060fd815ef7554cec`
+-	Created: Wed, 09 Sep 2015 23:14:05 GMT
+-	Parent Layer: `afd87883fa16157a3f1c4a77ed0dacf357671a689fb92a73711b7a8498e20c6f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 150.0 B
--	v2 Blob: `sha256:c1fde9d5fd1362dd663f24ac2721b3e62f5d3ef32b6d414caf7f8cc368ca4e1b`
--	v2 Content-Length: 236.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:08 GMT
+-	v2 Blob: `sha256:e88abe0d9023bdc2dcd7efd82d5355a2ea54aac51cef90a87a241880b8955ab5`
+-	v2 Content-Length: 237.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:11 GMT
 
-#### `966d16ec2d6c8c1dc39e83d729f058eabe77b62f09e25a623b83bf1293aea025`
+#### `90936247e9666cd10d7ccf98fd6e641c59bba1d3465a1a0430af34b721f802ba`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:45 GMT
--	Parent Layer: `bc8fe24d33703f29be7d740d5e9b2cb4b7702eee9e37d83e88fe11a064621393`
+-	Created: Wed, 09 Sep 2015 23:14:16 GMT
+-	Parent Layer: `f4a167efa2121a80383b4a2c9ca5393da87331c1f84bb658323b6fefcc30c2d0`
 -	Docker Version: 1.7.1
 -	Virtual Size: 3.2 KB (3213 bytes)
--	v2 Blob: `sha256:96ba701132feb16423e5ea7b602bb7d395362b8f2e10ae935181e3c343593372`
--	v2 Content-Length: 3.2 KB (3166 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:06 GMT
+-	v2 Blob: `sha256:c96fc0fc3d1e9db756858d72a4e57190b9b7eb5f0509d9d8abf35265a44ea703`
+-	v2 Content-Length: 3.2 KB (3176 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:07 GMT
 
 ## `neurodebian:latest`
 
--	Total Virtual Size: 125.2 MB (125181619 bytes)
--	Total v2 Content-Length: 51.4 MB (51375410 bytes)
+-	Total Virtual Size: 125.2 MB (125162633 bytes)
+-	Total v2 Content-Length: 51.4 MB (51363587 bytes)
 
 ### Layers (6)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
+-	Created: Mon, 07 Sep 2015 23:35:05 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Virtual Size: 125.2 MB (125159131 bytes)
+-	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
+-	v2 Content-Length: 51.4 MB (51359708 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+-	Created: Mon, 07 Sep 2015 23:35:07 GMT
+-	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9182a28aebdb46305886b167d05582956eb67e10bf739c85c8c8361aa0d3c77d`
+#### `4ce2c2149587c7dec65cf481f4d390d29ae0b8112d9b5163b3e68613c3055fee`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian jessie main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:32 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+-	Created: Wed, 09 Sep 2015 23:14:03 GMT
+-	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 47.0 B
--	v2 Blob: `sha256:25f9110e434c5d5445f2ef3e2f06a221ac5e110aa37c67cde493e50a51ef90d0`
--	v2 Content-Length: 213.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:12 GMT
+-	v2 Blob: `sha256:7c3ccf4ac8f56484525e25dfd4bb63a903383758fe9ab51c4416fc400eef5f71`
+-	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:20 GMT
 
-#### `75bed7bbc527c9a5ffe80ae5cd63f867a225305e6d47915060fd815ef7554cec`
+#### `afd87883fa16157a3f1c4a77ed0dacf357671a689fb92a73711b7a8498e20c6f`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:33 GMT
--	Parent Layer: `9182a28aebdb46305886b167d05582956eb67e10bf739c85c8c8361aa0d3c77d`
+-	Created: Wed, 09 Sep 2015 23:14:04 GMT
+-	Parent Layer: `4ce2c2149587c7dec65cf481f4d390d29ae0b8112d9b5163b3e68613c3055fee`
 -	Docker Version: 1.7.1
 -	Virtual Size: 92.0 B
--	v2 Blob: `sha256:254887df2ae334670f5fdb9d1383c0a7bc50f72a305ee4a37e1cde95ffd4bb0d`
+-	v2 Blob: `sha256:b706fc241305277856bd6e38ccdbe5e1c2021fbb6f394537d216e64475ef134b`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:10 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:16 GMT
 
-#### `bc8fe24d33703f29be7d740d5e9b2cb4b7702eee9e37d83e88fe11a064621393`
+#### `f4a167efa2121a80383b4a2c9ca5393da87331c1f84bb658323b6fefcc30c2d0`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel jessie main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:35 GMT
--	Parent Layer: `75bed7bbc527c9a5ffe80ae5cd63f867a225305e6d47915060fd815ef7554cec`
+-	Created: Wed, 09 Sep 2015 23:14:05 GMT
+-	Parent Layer: `afd87883fa16157a3f1c4a77ed0dacf357671a689fb92a73711b7a8498e20c6f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 150.0 B
--	v2 Blob: `sha256:c1fde9d5fd1362dd663f24ac2721b3e62f5d3ef32b6d414caf7f8cc368ca4e1b`
--	v2 Content-Length: 236.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:08 GMT
+-	v2 Blob: `sha256:e88abe0d9023bdc2dcd7efd82d5355a2ea54aac51cef90a87a241880b8955ab5`
+-	v2 Content-Length: 237.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:11 GMT
 
-#### `966d16ec2d6c8c1dc39e83d729f058eabe77b62f09e25a623b83bf1293aea025`
+#### `90936247e9666cd10d7ccf98fd6e641c59bba1d3465a1a0430af34b721f802ba`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:21:45 GMT
--	Parent Layer: `bc8fe24d33703f29be7d740d5e9b2cb4b7702eee9e37d83e88fe11a064621393`
+-	Created: Wed, 09 Sep 2015 23:14:16 GMT
+-	Parent Layer: `f4a167efa2121a80383b4a2c9ca5393da87331c1f84bb658323b6fefcc30c2d0`
 -	Docker Version: 1.7.1
 -	Virtual Size: 3.2 KB (3213 bytes)
--	v2 Blob: `sha256:96ba701132feb16423e5ea7b602bb7d395362b8f2e10ae935181e3c343593372`
--	v2 Content-Length: 3.2 KB (3166 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:20:06 GMT
+-	v2 Blob: `sha256:c96fc0fc3d1e9db756858d72a4e57190b9b7eb5f0509d9d8abf35265a44ea703`
+-	v2 Content-Length: 3.2 KB (3176 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:01:07 GMT
 
 ## `neurodebian:stretch`
 
--	Total Virtual Size: 127.1 MB (127072173 bytes)
--	Total v2 Content-Length: 53.3 MB (53279028 bytes)
+-	Total Virtual Size: 126.1 MB (126050066 bytes)
+-	Total v2 Content-Length: 52.8 MB (52816442 bytes)
 
 ### Layers (6)
 
-#### `673752e053f8f437dcb22758121fd246de5c06689305b9dfd83d9c12a85c1a14`
+#### `761ce6a283c3487a021bf1cde355b15f2e82904412f51138c3910ffbf95c364e`
 
 ```dockerfile
-ADD file:59b87401cd923b243a195eaba09c5ffc3e30177f756b4ab999e07ad9dcd4b971 in /
+ADD file:a0a4ab6c9e252f807e748608939dedb90176ac28d2915e38b6262794f9e35c6a in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:26 GMT
+-	Created: Mon, 07 Sep 2015 23:36:44 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 127.1 MB (127068667 bytes)
--	v2 Blob: `sha256:792d6405e27141c254127e3f5ad3784de95e802ed023f74616e6f07d266d7f3d`
--	v2 Content-Length: 53.3 MB (53275161 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:45:58 GMT
+-	Virtual Size: 126.0 MB (126046560 bytes)
+-	v2 Blob: `sha256:f3967d0bce4d23bb1a8b968561f8882d175f6813cca19f578d749c8a931143a7`
+-	v2 Content-Length: 52.8 MB (52812575 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:43:44 GMT
 
-#### `e4b88e78d512093160bafa4d16b00194881378f22e77bcd748390f12becf5a78`
+#### `91238ddc9186dfd1134eb070fe420bd6a7c9923709c4a6da542a0c9f7f387873`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:27 GMT
--	Parent Layer: `673752e053f8f437dcb22758121fd246de5c06689305b9dfd83d9c12a85c1a14`
+-	Created: Mon, 07 Sep 2015 23:36:45 GMT
+-	Parent Layer: `761ce6a283c3487a021bf1cde355b15f2e82904412f51138c3910ffbf95c364e`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `77f47cf03d13af469f9d19964aef200f30753e7f1d80f58f680fbdd911b722db`
+#### `e7e6589834baa56f41e560fe91d19ea9e8b391d2db7821b99bf2b3b758b2e83f`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian stretch main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:11 GMT
--	Parent Layer: `e4b88e78d512093160bafa4d16b00194881378f22e77bcd748390f12becf5a78`
+-	Created: Wed, 09 Sep 2015 23:14:46 GMT
+-	Parent Layer: `91238ddc9186dfd1134eb070fe420bd6a7c9923709c4a6da542a0c9f7f387873`
 -	Docker Version: 1.7.1
 -	Virtual Size: 48.0 B
--	v2 Blob: `sha256:f4d01877d665bb8f9347d80acc334c8b1703c6b20034c0180848feaf90b1b937`
--	v2 Content-Length: 211.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:21:50 GMT
+-	v2 Blob: `sha256:4e34c086fef7fabdbd44c33a3c6ead776e5047248f56d6f89273feb750b0fcc8`
+-	v2 Content-Length: 210.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:03:31 GMT
 
-#### `be523686475d4379a3bb9a3d47e33df5b3ac9f2fbbc7df468cdc02d725171f45`
+#### `95ae6bbe394aba29346c3752f0c69c901005181c4b9f665f138b6869bee1ab4b`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:12 GMT
--	Parent Layer: `77f47cf03d13af469f9d19964aef200f30753e7f1d80f58f680fbdd911b722db`
+-	Created: Wed, 09 Sep 2015 23:14:48 GMT
+-	Parent Layer: `e7e6589834baa56f41e560fe91d19ea9e8b391d2db7821b99bf2b3b758b2e83f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 93.0 B
--	v2 Blob: `sha256:da3a9e7648c46daa08198d38651edd83b124b24fed26cca654cab4aed072f545`
--	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:21:49 GMT
+-	v2 Blob: `sha256:816fbc7928b93cafe147ab181c0b5b0336ba9e4ec93c257418f34fa29ec348d7`
+-	v2 Content-Length: 221.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:03:26 GMT
 
-#### `620a2657124b6eccabceec196e61d832589dcd659a9833c8d6a013b1f2baf7cd`
+#### `c08a11fc6a26d649e0e02ccde9a5ddab7850174ea2b3b5be3d1b84dcbf87c82d`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel stretch main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:13 GMT
--	Parent Layer: `be523686475d4379a3bb9a3d47e33df5b3ac9f2fbbc7df468cdc02d725171f45`
+-	Created: Wed, 09 Sep 2015 23:14:49 GMT
+-	Parent Layer: `95ae6bbe394aba29346c3752f0c69c901005181c4b9f665f138b6869bee1ab4b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 152.0 B
--	v2 Blob: `sha256:d31e0561d0107ad80d9f463dc1edeadb47f03c7a1a66e1ca150bd2ced297a981`
--	v2 Content-Length: 237.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:21:47 GMT
+-	v2 Blob: `sha256:417d55087777bf3298adf26994f0112564c7f074a048c01ae1d1a4707a8f2ee0`
+-	v2 Content-Length: 238.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:03:21 GMT
 
-#### `35c924ab063132eea43c26c8d179bb86ec87ebb95cd870b4d06225bf2b55797e`
+#### `743fb026c9527fcd3b631443897137af04df819a097fe62ec3ff2795feded352`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:20 GMT
--	Parent Layer: `620a2657124b6eccabceec196e61d832589dcd659a9833c8d6a013b1f2baf7cd`
+-	Created: Wed, 09 Sep 2015 23:14:51 GMT
+-	Parent Layer: `c08a11fc6a26d649e0e02ccde9a5ddab7850174ea2b3b5be3d1b84dcbf87c82d`
 -	Docker Version: 1.7.1
 -	Virtual Size: 3.2 KB (3213 bytes)
--	v2 Blob: `sha256:81f9c6ae00edd090eca919f93c37baf59c8f1214508e094c3cff72641d805231`
--	v2 Content-Length: 3.2 KB (3167 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:21:44 GMT
+-	v2 Blob: `sha256:cef45f161cc58d97c77e371528aaac9d4db1e927dd5c340b86c78a95611f6f2f`
+-	v2 Content-Length: 3.2 KB (3166 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:03:17 GMT
 
 ## `neurodebian:nd90`
 
--	Total Virtual Size: 127.1 MB (127075386 bytes)
--	Total v2 Content-Length: 53.3 MB (53282195 bytes)
+-	Total Virtual Size: 126.1 MB (126050066 bytes)
+-	Total v2 Content-Length: 52.8 MB (52816442 bytes)
 
 ### Layers (6)
 
-#### `673752e053f8f437dcb22758121fd246de5c06689305b9dfd83d9c12a85c1a14`
+#### `761ce6a283c3487a021bf1cde355b15f2e82904412f51138c3910ffbf95c364e`
 
 ```dockerfile
-ADD file:59b87401cd923b243a195eaba09c5ffc3e30177f756b4ab999e07ad9dcd4b971 in /
+ADD file:a0a4ab6c9e252f807e748608939dedb90176ac28d2915e38b6262794f9e35c6a in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:26 GMT
+-	Created: Mon, 07 Sep 2015 23:36:44 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 127.1 MB (127068667 bytes)
--	v2 Blob: `sha256:792d6405e27141c254127e3f5ad3784de95e802ed023f74616e6f07d266d7f3d`
--	v2 Content-Length: 53.3 MB (53275161 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:45:58 GMT
+-	Virtual Size: 126.0 MB (126046560 bytes)
+-	v2 Blob: `sha256:f3967d0bce4d23bb1a8b968561f8882d175f6813cca19f578d749c8a931143a7`
+-	v2 Content-Length: 52.8 MB (52812575 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:43:44 GMT
 
-#### `e4b88e78d512093160bafa4d16b00194881378f22e77bcd748390f12becf5a78`
+#### `91238ddc9186dfd1134eb070fe420bd6a7c9923709c4a6da542a0c9f7f387873`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:27 GMT
--	Parent Layer: `673752e053f8f437dcb22758121fd246de5c06689305b9dfd83d9c12a85c1a14`
+-	Created: Mon, 07 Sep 2015 23:36:45 GMT
+-	Parent Layer: `761ce6a283c3487a021bf1cde355b15f2e82904412f51138c3910ffbf95c364e`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `77f47cf03d13af469f9d19964aef200f30753e7f1d80f58f680fbdd911b722db`
+#### `e7e6589834baa56f41e560fe91d19ea9e8b391d2db7821b99bf2b3b758b2e83f`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian stretch main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:11 GMT
--	Parent Layer: `e4b88e78d512093160bafa4d16b00194881378f22e77bcd748390f12becf5a78`
+-	Created: Wed, 09 Sep 2015 23:14:46 GMT
+-	Parent Layer: `91238ddc9186dfd1134eb070fe420bd6a7c9923709c4a6da542a0c9f7f387873`
 -	Docker Version: 1.7.1
 -	Virtual Size: 48.0 B
--	v2 Blob: `sha256:f4d01877d665bb8f9347d80acc334c8b1703c6b20034c0180848feaf90b1b937`
--	v2 Content-Length: 211.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:21:50 GMT
+-	v2 Blob: `sha256:4e34c086fef7fabdbd44c33a3c6ead776e5047248f56d6f89273feb750b0fcc8`
+-	v2 Content-Length: 210.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:03:31 GMT
 
-#### `be523686475d4379a3bb9a3d47e33df5b3ac9f2fbbc7df468cdc02d725171f45`
+#### `95ae6bbe394aba29346c3752f0c69c901005181c4b9f665f138b6869bee1ab4b`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:12 GMT
--	Parent Layer: `77f47cf03d13af469f9d19964aef200f30753e7f1d80f58f680fbdd911b722db`
+-	Created: Wed, 09 Sep 2015 23:14:48 GMT
+-	Parent Layer: `e7e6589834baa56f41e560fe91d19ea9e8b391d2db7821b99bf2b3b758b2e83f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 93.0 B
--	v2 Blob: `sha256:da3a9e7648c46daa08198d38651edd83b124b24fed26cca654cab4aed072f545`
--	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:21:49 GMT
+-	v2 Blob: `sha256:816fbc7928b93cafe147ab181c0b5b0336ba9e4ec93c257418f34fa29ec348d7`
+-	v2 Content-Length: 221.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:03:26 GMT
 
-#### `620a2657124b6eccabceec196e61d832589dcd659a9833c8d6a013b1f2baf7cd`
+#### `c08a11fc6a26d649e0e02ccde9a5ddab7850174ea2b3b5be3d1b84dcbf87c82d`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel stretch main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:13 GMT
--	Parent Layer: `be523686475d4379a3bb9a3d47e33df5b3ac9f2fbbc7df468cdc02d725171f45`
+-	Created: Wed, 09 Sep 2015 23:14:49 GMT
+-	Parent Layer: `95ae6bbe394aba29346c3752f0c69c901005181c4b9f665f138b6869bee1ab4b`
 -	Docker Version: 1.7.1
 -	Virtual Size: 152.0 B
--	v2 Blob: `sha256:d31e0561d0107ad80d9f463dc1edeadb47f03c7a1a66e1ca150bd2ced297a981`
--	v2 Content-Length: 237.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:21:47 GMT
+-	v2 Blob: `sha256:417d55087777bf3298adf26994f0112564c7f074a048c01ae1d1a4707a8f2ee0`
+-	v2 Content-Length: 238.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:03:21 GMT
 
-#### `35c924ab063132eea43c26c8d179bb86ec87ebb95cd870b4d06225bf2b55797e`
+#### `743fb026c9527fcd3b631443897137af04df819a097fe62ec3ff2795feded352`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:20 GMT
--	Parent Layer: `620a2657124b6eccabceec196e61d832589dcd659a9833c8d6a013b1f2baf7cd`
+-	Created: Wed, 09 Sep 2015 23:14:51 GMT
+-	Parent Layer: `c08a11fc6a26d649e0e02ccde9a5ddab7850174ea2b3b5be3d1b84dcbf87c82d`
 -	Docker Version: 1.7.1
 -	Virtual Size: 3.2 KB (3213 bytes)
--	v2 Blob: `sha256:81f9c6ae00edd090eca919f93c37baf59c8f1214508e094c3cff72641d805231`
--	v2 Content-Length: 3.2 KB (3167 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:21:44 GMT
+-	v2 Blob: `sha256:cef45f161cc58d97c77e371528aaac9d4db1e927dd5c340b86c78a95611f6f2f`
+-	v2 Content-Length: 3.2 KB (3166 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:03:17 GMT
 
 ## `neurodebian:sid`
 
--	Total Virtual Size: 127.5 MB (127536155 bytes)
--	Total v2 Content-Length: 53.4 MB (53388032 bytes)
+-	Total Virtual Size: 126.5 MB (126467557 bytes)
+-	Total v2 Content-Length: 53.0 MB (53019014 bytes)
 
 ### Layers (6)
 
-#### `cacb84c03d033e40fd536beb6009321c66e3ba3f92d35b392e40b7a3eecf27fc`
+#### `ec94fc1203dcb12091bfbc34ceb58da1f983d9450742e8f1c3e3fda778f4cb80`
 
 ```dockerfile
-ADD file:7d0938a312e489995bc741fae7b7ac6a7374e598389fb8a6ed1a65226f37f0fa in /
+ADD file:b0bc681b7467cc01eb23a8294fc5aa4b1d8b1b1feaceb7d6e857a235b2d302a2 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:41 GMT
+-	Created: Mon, 07 Sep 2015 23:35:53 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 127.5 MB (127532665 bytes)
--	v2 Blob: `sha256:7c682990e76ee65098747b5daa8c3366555f6e4a7f88232f1246d4c45908a9bf`
--	v2 Content-Length: 53.4 MB (53384172 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:42:45 GMT
+-	Virtual Size: 126.5 MB (126464067 bytes)
+-	v2 Blob: `sha256:9c51022dc44e2b2119496b2181b75ad35a909e6fcd593b5a8cb2885e2aa03541`
+-	v2 Content-Length: 53.0 MB (53015152 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:40:42 GMT
 
-#### `3573a45f4cd6310a1a12c2bdca72fc0faf110abffba725fb7080b00150e68f6c`
+#### `e7d52d7d94ef1e142d8d03de57184c3a5b9e2b3e06dd7f2f7725015693623f34`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:42 GMT
--	Parent Layer: `cacb84c03d033e40fd536beb6009321c66e3ba3f92d35b392e40b7a3eecf27fc`
+-	Created: Mon, 07 Sep 2015 23:35:54 GMT
+-	Parent Layer: `ec94fc1203dcb12091bfbc34ceb58da1f983d9450742e8f1c3e3fda778f4cb80`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `cea7437333c39a80a2830fcffe17e752d13e28f04a01c3a12a4abb172452171b`
+#### `1842683b6a56083ccee0c3f9b4e1962669a04af25b7bbf89dabe9fb40cf5bd95`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian sid main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:35 GMT
--	Parent Layer: `3573a45f4cd6310a1a12c2bdca72fc0faf110abffba725fb7080b00150e68f6c`
+-	Created: Wed, 09 Sep 2015 23:15:13 GMT
+-	Parent Layer: `e7d52d7d94ef1e142d8d03de57184c3a5b9e2b3e06dd7f2f7725015693623f34`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.0 B
--	v2 Blob: `sha256:8f23085d498bf06841cdd33cef213d247632e146dc5491c79bc3fcda7ecf09dc`
+-	v2 Blob: `sha256:875efffe683bde5ef0d2b5ef47c263da1c1af7b501434b9cf4182860c631de72`
 -	v2 Content-Length: 210.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:23:20 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:05:29 GMT
 
-#### `13a61d1adfa73bb5a380018ec8c9afb8060e59b5baa30cb1c93d89749e330121`
+#### `253322f4e0653c6fdf9d08c9f1520e9f8983f5f511abc9b7ff392c196bd2a846`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:36 GMT
--	Parent Layer: `cea7437333c39a80a2830fcffe17e752d13e28f04a01c3a12a4abb172452171b`
+-	Created: Wed, 09 Sep 2015 23:15:17 GMT
+-	Parent Layer: `1842683b6a56083ccee0c3f9b4e1962669a04af25b7bbf89dabe9fb40cf5bd95`
 -	Docker Version: 1.7.1
 -	Virtual Size: 89.0 B
--	v2 Blob: `sha256:952394c40ba9bfe0ef98d774d546a97f71cda42d3e1ef994a7b3375bce6f7129`
--	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:23:18 GMT
+-	v2 Blob: `sha256:9ac6adc5163389c8780f0b051820557c8a4910f3a29f284df4c2d362c8c1033e`
+-	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:05:24 GMT
 
-#### `a057075cfcdeaa7f1a0419b2de5bf29586f3f42ac0e37a264361977888b08460`
+#### `a8dbe925461c323cd5e19129219c01b9319dbe16858e80cf0fa424493b75b590`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel sid main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:37 GMT
--	Parent Layer: `13a61d1adfa73bb5a380018ec8c9afb8060e59b5baa30cb1c93d89749e330121`
+-	Created: Wed, 09 Sep 2015 23:15:25 GMT
+-	Parent Layer: `253322f4e0653c6fdf9d08c9f1520e9f8983f5f511abc9b7ff392c196bd2a846`
 -	Docker Version: 1.7.1
 -	Virtual Size: 144.0 B
--	v2 Blob: `sha256:74ec60e9b363fa773207e995c5f3771762a01c33ed30e5fe30cfe57aafa973fe`
--	v2 Content-Length: 233.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:23:17 GMT
+-	v2 Blob: `sha256:6f4aa473b1f50bae062436ff1182b1d90426bd521dba91f104b5f24ec7e447c2`
+-	v2 Content-Length: 234.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:05:20 GMT
 
-#### `371f93b31c32e4d90971f62d66a56d8d896e7878158479abe72c2f44cce4bf28`
+#### `ae93d9b4ce0042300e628ddb5381a64448e82b1e90370fedc64d19734907efbc`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:38 GMT
--	Parent Layer: `a057075cfcdeaa7f1a0419b2de5bf29586f3f42ac0e37a264361977888b08460`
+-	Created: Wed, 09 Sep 2015 23:15:31 GMT
+-	Parent Layer: `a8dbe925461c323cd5e19129219c01b9319dbe16858e80cf0fa424493b75b590`
 -	Docker Version: 1.7.1
 -	Virtual Size: 3.2 KB (3213 bytes)
--	v2 Blob: `sha256:5f776a30af5b421db17596087a6b7f5da4e29ad38bf9a136763f5ba0306ef485`
+-	v2 Blob: `sha256:cea0c7fee4d9aaf59a0be769d2bbdb1f63e3c4238c6b3612101e70d45563338c`
 -	v2 Content-Length: 3.2 KB (3167 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:23:14 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:05:16 GMT
 
 ## `neurodebian:nd`
 
--	Total Virtual Size: 127.5 MB (127539368 bytes)
--	Total v2 Content-Length: 53.4 MB (53391199 bytes)
+-	Total Virtual Size: 126.5 MB (126467557 bytes)
+-	Total v2 Content-Length: 53.0 MB (53019014 bytes)
 
 ### Layers (6)
 
-#### `cacb84c03d033e40fd536beb6009321c66e3ba3f92d35b392e40b7a3eecf27fc`
+#### `ec94fc1203dcb12091bfbc34ceb58da1f983d9450742e8f1c3e3fda778f4cb80`
 
 ```dockerfile
-ADD file:7d0938a312e489995bc741fae7b7ac6a7374e598389fb8a6ed1a65226f37f0fa in /
+ADD file:b0bc681b7467cc01eb23a8294fc5aa4b1d8b1b1feaceb7d6e857a235b2d302a2 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:41 GMT
+-	Created: Mon, 07 Sep 2015 23:35:53 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 127.5 MB (127532665 bytes)
--	v2 Blob: `sha256:7c682990e76ee65098747b5daa8c3366555f6e4a7f88232f1246d4c45908a9bf`
--	v2 Content-Length: 53.4 MB (53384172 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:42:45 GMT
+-	Virtual Size: 126.5 MB (126464067 bytes)
+-	v2 Blob: `sha256:9c51022dc44e2b2119496b2181b75ad35a909e6fcd593b5a8cb2885e2aa03541`
+-	v2 Content-Length: 53.0 MB (53015152 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:40:42 GMT
 
-#### `3573a45f4cd6310a1a12c2bdca72fc0faf110abffba725fb7080b00150e68f6c`
+#### `e7d52d7d94ef1e142d8d03de57184c3a5b9e2b3e06dd7f2f7725015693623f34`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:42 GMT
--	Parent Layer: `cacb84c03d033e40fd536beb6009321c66e3ba3f92d35b392e40b7a3eecf27fc`
+-	Created: Mon, 07 Sep 2015 23:35:54 GMT
+-	Parent Layer: `ec94fc1203dcb12091bfbc34ceb58da1f983d9450742e8f1c3e3fda778f4cb80`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `cea7437333c39a80a2830fcffe17e752d13e28f04a01c3a12a4abb172452171b`
+#### `1842683b6a56083ccee0c3f9b4e1962669a04af25b7bbf89dabe9fb40cf5bd95`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian sid main' > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:35 GMT
--	Parent Layer: `3573a45f4cd6310a1a12c2bdca72fc0faf110abffba725fb7080b00150e68f6c`
+-	Created: Wed, 09 Sep 2015 23:15:13 GMT
+-	Parent Layer: `e7d52d7d94ef1e142d8d03de57184c3a5b9e2b3e06dd7f2f7725015693623f34`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.0 B
--	v2 Blob: `sha256:8f23085d498bf06841cdd33cef213d247632e146dc5491c79bc3fcda7ecf09dc`
+-	v2 Blob: `sha256:875efffe683bde5ef0d2b5ef47c263da1c1af7b501434b9cf4182860c631de72`
 -	v2 Content-Length: 210.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:23:20 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:05:29 GMT
 
-#### `13a61d1adfa73bb5a380018ec8c9afb8060e59b5baa30cb1c93d89749e330121`
+#### `253322f4e0653c6fdf9d08c9f1520e9f8983f5f511abc9b7ff392c196bd2a846`
 
 ```dockerfile
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:36 GMT
--	Parent Layer: `cea7437333c39a80a2830fcffe17e752d13e28f04a01c3a12a4abb172452171b`
+-	Created: Wed, 09 Sep 2015 23:15:17 GMT
+-	Parent Layer: `1842683b6a56083ccee0c3f9b4e1962669a04af25b7bbf89dabe9fb40cf5bd95`
 -	Docker Version: 1.7.1
 -	Virtual Size: 89.0 B
--	v2 Blob: `sha256:952394c40ba9bfe0ef98d774d546a97f71cda42d3e1ef994a7b3375bce6f7129`
--	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:23:18 GMT
+-	v2 Blob: `sha256:9ac6adc5163389c8780f0b051820557c8a4910f3a29f284df4c2d362c8c1033e`
+-	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:05:24 GMT
 
-#### `a057075cfcdeaa7f1a0419b2de5bf29586f3f42ac0e37a264361977888b08460`
+#### `a8dbe925461c323cd5e19129219c01b9319dbe16858e80cf0fa424493b75b590`
 
 ```dockerfile
 RUN echo '#deb-src http://neuro.debian.net/debian-devel sid main' >> /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:37 GMT
--	Parent Layer: `13a61d1adfa73bb5a380018ec8c9afb8060e59b5baa30cb1c93d89749e330121`
+-	Created: Wed, 09 Sep 2015 23:15:25 GMT
+-	Parent Layer: `253322f4e0653c6fdf9d08c9f1520e9f8983f5f511abc9b7ff392c196bd2a846`
 -	Docker Version: 1.7.1
 -	Virtual Size: 144.0 B
--	v2 Blob: `sha256:74ec60e9b363fa773207e995c5f3771762a01c33ed30e5fe30cfe57aafa973fe`
--	v2 Content-Length: 233.0 B
--	v2 Last-Modified: Thu, 27 Aug 2015 01:23:17 GMT
+-	v2 Blob: `sha256:6f4aa473b1f50bae062436ff1182b1d90426bd521dba91f104b5f24ec7e447c2`
+-	v2 Content-Length: 234.0 B
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:05:20 GMT
 
-#### `371f93b31c32e4d90971f62d66a56d8d896e7878158479abe72c2f44cce4bf28`
+#### `ae93d9b4ce0042300e628ddb5381a64448e82b1e90370fedc64d19734907efbc`
 
 ```dockerfile
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
--	Created: Mon, 24 Aug 2015 19:22:38 GMT
--	Parent Layer: `a057075cfcdeaa7f1a0419b2de5bf29586f3f42ac0e37a264361977888b08460`
+-	Created: Wed, 09 Sep 2015 23:15:31 GMT
+-	Parent Layer: `a8dbe925461c323cd5e19129219c01b9319dbe16858e80cf0fa424493b75b590`
 -	Docker Version: 1.7.1
 -	Virtual Size: 3.2 KB (3213 bytes)
--	v2 Blob: `sha256:5f776a30af5b421db17596087a6b7f5da4e29ad38bf9a136763f5ba0306ef485`
+-	v2 Blob: `sha256:cea0c7fee4d9aaf59a0be769d2bbdb1f63e3c4238c6b3612101e70d45563338c`
 -	v2 Content-Length: 3.2 KB (3167 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 01:23:14 GMT
+-	v2 Last-Modified: Fri, 11 Sep 2015 09:05:16 GMT

@@ -21,7 +21,7 @@
 ## `ubuntu:12.04.5`
 
 -	Total Virtual Size: 134.8 MB (134791757 bytes)
--	Total v2 Content-Length: 44.0 MB (43977848 bytes)
+-	Total v2 Content-Length: 44.0 MB (43977816 bytes)
 
 ### Layers (4)
 
@@ -94,7 +94,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:12.04`
 
 -	Total Virtual Size: 134.8 MB (134791757 bytes)
--	Total v2 Content-Length: 44.0 MB (43977848 bytes)
+-	Total v2 Content-Length: 44.0 MB (43977816 bytes)
 
 ### Layers (4)
 
@@ -167,7 +167,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:precise-20150813`
 
 -	Total Virtual Size: 134.8 MB (134791757 bytes)
--	Total v2 Content-Length: 44.0 MB (43977848 bytes)
+-	Total v2 Content-Length: 44.0 MB (43977816 bytes)
 
 ### Layers (4)
 
@@ -240,7 +240,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:precise`
 
 -	Total Virtual Size: 134.8 MB (134791757 bytes)
--	Total v2 Content-Length: 44.0 MB (43977848 bytes)
+-	Total v2 Content-Length: 44.0 MB (43977816 bytes)
 
 ### Layers (4)
 
@@ -313,7 +313,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:14.04.3`
 
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
--	Total v2 Content-Length: 65.9 MB (65859281 bytes)
+-	Total v2 Content-Length: 65.9 MB (65859249 bytes)
 
 ### Layers (4)
 
@@ -386,7 +386,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:14.04`
 
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
--	Total v2 Content-Length: 65.9 MB (65859281 bytes)
+-	Total v2 Content-Length: 65.9 MB (65859249 bytes)
 
 ### Layers (4)
 
@@ -459,7 +459,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:trusty-20150814`
 
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
--	Total v2 Content-Length: 65.9 MB (65859281 bytes)
+-	Total v2 Content-Length: 65.9 MB (65859249 bytes)
 
 ### Layers (4)
 
@@ -532,7 +532,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:trusty`
 
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
--	Total v2 Content-Length: 65.9 MB (65859281 bytes)
+-	Total v2 Content-Length: 65.9 MB (65859249 bytes)
 
 ### Layers (4)
 
@@ -605,7 +605,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:latest`
 
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
--	Total v2 Content-Length: 65.9 MB (65859281 bytes)
+-	Total v2 Content-Length: 65.9 MB (65859249 bytes)
 
 ### Layers (4)
 
@@ -678,7 +678,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:15.04`
 
 -	Total Virtual Size: 131.4 MB (131355683 bytes)
--	Total v2 Content-Length: 49.3 MB (49343728 bytes)
+-	Total v2 Content-Length: 49.3 MB (49343696 bytes)
 
 ### Layers (4)
 
@@ -751,7 +751,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:vivid-20150813`
 
 -	Total Virtual Size: 131.4 MB (131355683 bytes)
--	Total v2 Content-Length: 49.3 MB (49343728 bytes)
+-	Total v2 Content-Length: 49.3 MB (49343696 bytes)
 
 ### Layers (4)
 
@@ -824,7 +824,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:vivid`
 
 -	Total Virtual Size: 131.4 MB (131355683 bytes)
--	Total v2 Content-Length: 49.3 MB (49343728 bytes)
+-	Total v2 Content-Length: 49.3 MB (49343696 bytes)
 
 ### Layers (4)
 
@@ -897,7 +897,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:15.10`
 
 -	Total Virtual Size: 131.3 MB (131261115 bytes)
--	Total v2 Content-Length: 49.6 MB (49614696 bytes)
+-	Total v2 Content-Length: 49.6 MB (49614664 bytes)
 
 ### Layers (4)
 
@@ -970,7 +970,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:wily-20150829`
 
 -	Total Virtual Size: 131.3 MB (131261115 bytes)
--	Total v2 Content-Length: 49.6 MB (49614696 bytes)
+-	Total v2 Content-Length: 49.6 MB (49614664 bytes)
 
 ### Layers (4)
 
@@ -1043,7 +1043,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:wily`
 
 -	Total Virtual Size: 131.3 MB (131261115 bytes)
--	Total v2 Content-Length: 49.6 MB (49614696 bytes)
+-	Total v2 Content-Length: 49.6 MB (49614664 bytes)
 
 ### Layers (4)
 

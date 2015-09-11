@@ -23,7 +23,7 @@
 ## `centos:latest`
 
 -	Total Virtual Size: 172.3 MB (172289754 bytes)
--	Total v2 Content-Length: 62.9 MB (62906758 bytes)
+-	Total v2 Content-Length: 62.9 MB (62906701 bytes)
 
 ### Layers (5)
 
@@ -50,9 +50,9 @@ ADD file:2c002b8a427ce98fc1df7c81aed87db26a3077a7200e2a89a9d69abf5ee3b1b1 in /
 -	Parent Layer: `47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 172.3 MB (172289754 bytes)
--	v2 Blob: `sha256:503790ba1ac068ba6c97cef550afe31fb4bb9e172bed5c9315155fc6b28095ad`
--	v2 Content-Length: 62.9 MB (62906598 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:09:14 GMT
+-	v2 Blob: `sha256:c3bf6062f354b9af9db4481f24f488da418727673ea76c5162b864e1eea29a4e`
+-	v2 Content-Length: 62.9 MB (62906573 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 00:06:48 GMT
 
 #### `f9a8cbc8dd13fb5bdbcff050cbeee76cc8c967a9ab2122714d00090c5815d385`
 
@@ -99,7 +99,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7`
 
 -	Total Virtual Size: 172.3 MB (172289754 bytes)
--	Total v2 Content-Length: 62.9 MB (62906758 bytes)
+-	Total v2 Content-Length: 62.9 MB (62906701 bytes)
 
 ### Layers (5)
 
@@ -126,9 +126,9 @@ ADD file:2c002b8a427ce98fc1df7c81aed87db26a3077a7200e2a89a9d69abf5ee3b1b1 in /
 -	Parent Layer: `47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 172.3 MB (172289754 bytes)
--	v2 Blob: `sha256:503790ba1ac068ba6c97cef550afe31fb4bb9e172bed5c9315155fc6b28095ad`
--	v2 Content-Length: 62.9 MB (62906598 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:09:14 GMT
+-	v2 Blob: `sha256:c3bf6062f354b9af9db4481f24f488da418727673ea76c5162b864e1eea29a4e`
+-	v2 Content-Length: 62.9 MB (62906573 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 00:06:48 GMT
 
 #### `f9a8cbc8dd13fb5bdbcff050cbeee76cc8c967a9ab2122714d00090c5815d385`
 
@@ -175,7 +175,7 @@ CMD ["/bin/bash"]
 ## `centos:7`
 
 -	Total Virtual Size: 172.3 MB (172289754 bytes)
--	Total v2 Content-Length: 62.9 MB (62906758 bytes)
+-	Total v2 Content-Length: 62.9 MB (62906701 bytes)
 
 ### Layers (5)
 
@@ -202,9 +202,9 @@ ADD file:2c002b8a427ce98fc1df7c81aed87db26a3077a7200e2a89a9d69abf5ee3b1b1 in /
 -	Parent Layer: `47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a`
 -	Docker Version: 1.7.1
 -	Virtual Size: 172.3 MB (172289754 bytes)
--	v2 Blob: `sha256:503790ba1ac068ba6c97cef550afe31fb4bb9e172bed5c9315155fc6b28095ad`
--	v2 Content-Length: 62.9 MB (62906598 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:09:14 GMT
+-	v2 Blob: `sha256:c3bf6062f354b9af9db4481f24f488da418727673ea76c5162b864e1eea29a4e`
+-	v2 Content-Length: 62.9 MB (62906573 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 00:06:48 GMT
 
 #### `f9a8cbc8dd13fb5bdbcff050cbeee76cc8c967a9ab2122714d00090c5815d385`
 
@@ -251,7 +251,7 @@ CMD ["/bin/bash"]
 ## `centos:centos6`
 
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
--	Total v2 Content-Length: 66.4 MB (66391014 bytes)
+-	Total v2 Content-Length: 66.4 MB (66390982 bytes)
 
 ### Layers (5)
 
@@ -327,7 +327,7 @@ CMD ["/bin/bash"]
 ## `centos:6`
 
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
--	Total v2 Content-Length: 66.4 MB (66391014 bytes)
+-	Total v2 Content-Length: 66.4 MB (66390982 bytes)
 
 ### Layers (5)
 
@@ -402,8 +402,8 @@ CMD ["/bin/bash"]
 
 ## `centos:centos5`
 
--	Total Virtual Size: 568.2 MB (568163764 bytes)
--	Total v2 Content-Length: 174.1 MB (174070448 bytes)
+-	Total Virtual Size: 284.1 MB (284081882 bytes)
+-	Total v2 Content-Length: 87.0 MB (87035259 bytes)
 
 ### Layers (2)
 
@@ -430,14 +430,14 @@ ADD file:daa82c1f87a4f4827b4cfedad2f374ebccd22ff1e7371b1046c11bc3506e8886 in /
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
 -	Docker Version: 1.6.0
 -	Virtual Size: 284.1 MB (284081882 bytes)
--	v2 Blob: `sha256:7d8d69b4911a8ec8e8cd630ee1ec5e606f09f3472371eeb6d56bfa83dfebe6b9`
--	v2 Content-Length: 87.0 MB (87035208 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:14:52 GMT
+-	v2 Blob: `sha256:5fdbdeb6c0e81b3ac639bb1a57dc33951871255086bdb88c5d6225b9ec6a1417`
+-	v2 Content-Length: 87.0 MB (87035227 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:13:45 GMT
 
 ## `centos:5`
 
--	Total Virtual Size: 568.2 MB (568163764 bytes)
--	Total v2 Content-Length: 174.1 MB (174070448 bytes)
+-	Total Virtual Size: 284.1 MB (284081882 bytes)
+-	Total v2 Content-Length: 87.0 MB (87035259 bytes)
 
 ### Layers (2)
 
@@ -464,14 +464,14 @@ ADD file:daa82c1f87a4f4827b4cfedad2f374ebccd22ff1e7371b1046c11bc3506e8886 in /
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
 -	Docker Version: 1.6.0
 -	Virtual Size: 284.1 MB (284081882 bytes)
--	v2 Blob: `sha256:7d8d69b4911a8ec8e8cd630ee1ec5e606f09f3472371eeb6d56bfa83dfebe6b9`
--	v2 Content-Length: 87.0 MB (87035208 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:14:52 GMT
+-	v2 Blob: `sha256:5fdbdeb6c0e81b3ac639bb1a57dc33951871255086bdb88c5d6225b9ec6a1417`
+-	v2 Content-Length: 87.0 MB (87035227 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:13:45 GMT
 
 ## `centos:centos7.1.1503`
 
 -	Total Virtual Size: 212.1 MB (212062952 bytes)
--	Total v2 Content-Length: 75.7 MB (75670145 bytes)
+-	Total v2 Content-Length: 75.7 MB (75670068 bytes)
 
 ### Layers (3)
 
@@ -498,9 +498,9 @@ ADD file:87cc81d5ce65445271b5e976e352cf8da40923078bc2580202aa5eaa73f13eab in /
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
 -	Docker Version: 1.6.0
 -	Virtual Size: 212.1 MB (212062952 bytes)
--	v2 Blob: `sha256:a2d3a53721df804f0cad2b350180aaeddebd09ef57b36d2772c5f373c18d11e4`
--	v2 Content-Length: 75.7 MB (75670049 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:18:25 GMT
+-	v2 Blob: `sha256:912f77ff66de4104382ae33c6d5213a6ba2d610bd52b397b1bee116d78344ddb`
+-	v2 Content-Length: 75.7 MB (75670004 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:17:22 GMT
 
 #### `f1dade627e2541880e968459c4c3861678a8b576714f0325e16a7a04c32326c6`
 
@@ -519,7 +519,7 @@ CMD ["/bin/bash"]
 ## `centos:7.1.1503`
 
 -	Total Virtual Size: 212.1 MB (212062952 bytes)
--	Total v2 Content-Length: 75.7 MB (75670145 bytes)
+-	Total v2 Content-Length: 75.7 MB (75670068 bytes)
 
 ### Layers (3)
 
@@ -546,9 +546,9 @@ ADD file:87cc81d5ce65445271b5e976e352cf8da40923078bc2580202aa5eaa73f13eab in /
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
 -	Docker Version: 1.6.0
 -	Virtual Size: 212.1 MB (212062952 bytes)
--	v2 Blob: `sha256:a2d3a53721df804f0cad2b350180aaeddebd09ef57b36d2772c5f373c18d11e4`
--	v2 Content-Length: 75.7 MB (75670049 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:18:25 GMT
+-	v2 Blob: `sha256:912f77ff66de4104382ae33c6d5213a6ba2d610bd52b397b1bee116d78344ddb`
+-	v2 Content-Length: 75.7 MB (75670004 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:17:22 GMT
 
 #### `f1dade627e2541880e968459c4c3861678a8b576714f0325e16a7a04c32326c6`
 
@@ -566,8 +566,8 @@ CMD ["/bin/bash"]
 
 ## `centos:centos7.0.1406`
 
--	Total Virtual Size: 420.4 MB (420425404 bytes)
--	Total v2 Content-Length: 150.1 MB (150135476 bytes)
+-	Total Virtual Size: 210.2 MB (210212702 bytes)
+-	Total v2 Content-Length: 75.1 MB (75067738 bytes)
 
 ### Layers (2)
 
@@ -594,14 +594,14 @@ ADD file:a15cc97064e287aee651c723e4306d8f590c7a898c387dc66f7854ef7acf2fdb in /
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
 -	Docker Version: 1.6.0
 -	Virtual Size: 210.2 MB (210212702 bytes)
--	v2 Blob: `sha256:f804eae4f8220730da8cdef53da6c83c5d8c6c8db2be4733eedc1346788e77e7`
--	v2 Content-Length: 75.1 MB (75067722 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:21:16 GMT
+-	v2 Blob: `sha256:09bbb1ac1bd6d903cee7bc4ab6c1f296867d4cc6b1ffeda3998ba68f0419ed80`
+-	v2 Content-Length: 75.1 MB (75067706 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:20:21 GMT
 
 ## `centos:7.0.1406`
 
--	Total Virtual Size: 420.4 MB (420425404 bytes)
--	Total v2 Content-Length: 150.1 MB (150135476 bytes)
+-	Total Virtual Size: 210.2 MB (210212702 bytes)
+-	Total v2 Content-Length: 75.1 MB (75067738 bytes)
 
 ### Layers (2)
 
@@ -628,14 +628,14 @@ ADD file:a15cc97064e287aee651c723e4306d8f590c7a898c387dc66f7854ef7acf2fdb in /
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
 -	Docker Version: 1.6.0
 -	Virtual Size: 210.2 MB (210212702 bytes)
--	v2 Blob: `sha256:f804eae4f8220730da8cdef53da6c83c5d8c6c8db2be4733eedc1346788e77e7`
--	v2 Content-Length: 75.1 MB (75067722 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:21:16 GMT
+-	v2 Blob: `sha256:09bbb1ac1bd6d903cee7bc4ab6c1f296867d4cc6b1ffeda3998ba68f0419ed80`
+-	v2 Content-Length: 75.1 MB (75067706 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:20:21 GMT
 
 ## `centos:centos6.7`
 
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
--	Total v2 Content-Length: 66.4 MB (66391014 bytes)
+-	Total v2 Content-Length: 66.4 MB (66390982 bytes)
 
 ### Layers (5)
 
@@ -711,7 +711,7 @@ CMD ["/bin/bash"]
 ## `centos:6.7`
 
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
--	Total v2 Content-Length: 66.4 MB (66391014 bytes)
+-	Total v2 Content-Length: 66.4 MB (66390982 bytes)
 
 ### Layers (5)
 
@@ -786,8 +786,8 @@ CMD ["/bin/bash"]
 
 ## `centos:centos6.6`
 
--	Total Virtual Size: 405.2 MB (405218006 bytes)
--	Total v2 Content-Length: 144.1 MB (144077562 bytes)
+-	Total Virtual Size: 202.6 MB (202609003 bytes)
+-	Total v2 Content-Length: 72.0 MB (72038828 bytes)
 
 ### Layers (2)
 
@@ -814,14 +814,14 @@ ADD file:eab3c29917290b056db08167d3a9f769c4b4ce46403be2fad083bc2535fb4d03 in /
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
 -	Docker Version: 1.6.0
 -	Virtual Size: 202.6 MB (202609003 bytes)
--	v2 Blob: `sha256:e7d78dc0d3dbf1e01b07d006a9df5b3454280cbde2d9ae3482424e58574afcc2`
--	v2 Content-Length: 72.0 MB (72038765 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:25:37 GMT
+-	v2 Blob: `sha256:639e9fea509e70fb6c94fbcb30f4bf987de27e46b721cececd8b1516f1d307ae`
+-	v2 Content-Length: 72.0 MB (72038796 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:23:11 GMT
 
 ## `centos:6.6`
 
--	Total Virtual Size: 405.2 MB (405218006 bytes)
--	Total v2 Content-Length: 144.1 MB (144077562 bytes)
+-	Total Virtual Size: 202.6 MB (202609003 bytes)
+-	Total v2 Content-Length: 72.0 MB (72038828 bytes)
 
 ### Layers (2)
 
@@ -848,14 +848,14 @@ ADD file:eab3c29917290b056db08167d3a9f769c4b4ce46403be2fad083bc2535fb4d03 in /
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
 -	Docker Version: 1.6.0
 -	Virtual Size: 202.6 MB (202609003 bytes)
--	v2 Blob: `sha256:e7d78dc0d3dbf1e01b07d006a9df5b3454280cbde2d9ae3482424e58574afcc2`
--	v2 Content-Length: 72.0 MB (72038765 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:25:37 GMT
+-	v2 Blob: `sha256:639e9fea509e70fb6c94fbcb30f4bf987de27e46b721cececd8b1516f1d307ae`
+-	v2 Content-Length: 72.0 MB (72038796 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:23:11 GMT
 
 ## `centos:centos5.11`
 
--	Total Virtual Size: 568.3 MB (568303978 bytes)
--	Total v2 Content-Length: 174.2 MB (174215692 bytes)
+-	Total Virtual Size: 284.2 MB (284151989 bytes)
+-	Total v2 Content-Length: 87.1 MB (87107844 bytes)
 
 ### Layers (2)
 
@@ -882,14 +882,14 @@ ADD file:a9e3cd9845a72bb736a449b76e80c8c5a872abba7bcae6fa9e7e602e3c5d0d2c in /
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
 -	Docker Version: 1.6.0
 -	Virtual Size: 284.2 MB (284151989 bytes)
--	v2 Blob: `sha256:20f4edf1e71592e3e022424734d20e0aa224df2b26553d7cb245f9e881564360`
--	v2 Content-Length: 87.1 MB (87107830 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:28:41 GMT
+-	v2 Blob: `sha256:170adb074514febdd0a2989b950042974e2b79622112af388d52f2c462c4f403`
+-	v2 Content-Length: 87.1 MB (87107812 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:26:14 GMT
 
 ## `centos:5.11`
 
--	Total Virtual Size: 568.3 MB (568303978 bytes)
--	Total v2 Content-Length: 174.2 MB (174215692 bytes)
+-	Total Virtual Size: 284.2 MB (284151989 bytes)
+-	Total v2 Content-Length: 87.1 MB (87107844 bytes)
 
 ### Layers (2)
 
@@ -916,6 +916,6 @@ ADD file:a9e3cd9845a72bb736a449b76e80c8c5a872abba7bcae6fa9e7e602e3c5d0d2c in /
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
 -	Docker Version: 1.6.0
 -	Virtual Size: 284.2 MB (284151989 bytes)
--	v2 Blob: `sha256:20f4edf1e71592e3e022424734d20e0aa224df2b26553d7cb245f9e881564360`
--	v2 Content-Length: 87.1 MB (87107830 bytes)
--	v2 Last-Modified: Mon, 07 Sep 2015 19:28:41 GMT
+-	v2 Blob: `sha256:170adb074514febdd0a2989b950042974e2b79622112af388d52f2c462c4f403`
+-	v2 Content-Length: 87.1 MB (87107812 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:26:14 GMT

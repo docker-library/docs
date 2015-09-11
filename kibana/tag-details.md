@@ -15,7 +15,7 @@
 ## `kibana:4.0.3`
 
 -	Total Virtual Size: 195.5 MB (195480915 bytes)
--	Total v2 Content-Length: 73.1 MB (73080697 bytes)
+-	Total v2 Content-Length: 73.1 MB (73080665 bytes)
 
 ### Layers (14)
 
@@ -228,7 +228,7 @@ CMD ["kibana"]
 ## `kibana:4.0`
 
 -	Total Virtual Size: 195.5 MB (195480915 bytes)
--	Total v2 Content-Length: 73.1 MB (73080697 bytes)
+-	Total v2 Content-Length: 73.1 MB (73080665 bytes)
 
 ### Layers (14)
 
@@ -441,7 +441,7 @@ CMD ["kibana"]
 ## `kibana:4.1.2`
 
 -	Total Virtual Size: 184.6 MB (184644596 bytes)
--	Total v2 Content-Length: 70.5 MB (70549889 bytes)
+-	Total v2 Content-Length: 70.5 MB (70549857 bytes)
 
 ### Layers (14)
 
@@ -654,7 +654,7 @@ CMD ["kibana"]
 ## `kibana:4.1`
 
 -	Total Virtual Size: 184.6 MB (184644596 bytes)
--	Total v2 Content-Length: 70.5 MB (70549889 bytes)
+-	Total v2 Content-Length: 70.5 MB (70549857 bytes)
 
 ### Layers (14)
 
@@ -867,7 +867,7 @@ CMD ["kibana"]
 ## `kibana:4`
 
 -	Total Virtual Size: 184.6 MB (184644596 bytes)
--	Total v2 Content-Length: 70.5 MB (70549889 bytes)
+-	Total v2 Content-Length: 70.5 MB (70549857 bytes)
 
 ### Layers (14)
 
@@ -1080,7 +1080,7 @@ CMD ["kibana"]
 ## `kibana:latest`
 
 -	Total Virtual Size: 184.6 MB (184644596 bytes)
--	Total v2 Content-Length: 70.5 MB (70549889 bytes)
+-	Total v2 Content-Length: 70.5 MB (70549857 bytes)
 
 ### Layers (14)
 
@@ -1293,7 +1293,7 @@ CMD ["kibana"]
 ## `kibana:4.2.0-beta1`
 
 -	Total Virtual Size: 307.4 MB (307353338 bytes)
--	Total v2 Content-Length: 102.3 MB (102273914 bytes)
+-	Total v2 Content-Length: 102.3 MB (102273882 bytes)
 
 ### Layers (14)
 
@@ -1507,7 +1507,7 @@ CMD ["kibana"]
 ## `kibana:4.2.0`
 
 -	Total Virtual Size: 307.4 MB (307353338 bytes)
--	Total v2 Content-Length: 102.3 MB (102273914 bytes)
+-	Total v2 Content-Length: 102.3 MB (102273882 bytes)
 
 ### Layers (14)
 
@@ -1721,7 +1721,7 @@ CMD ["kibana"]
 ## `kibana:4.2`
 
 -	Total Virtual Size: 307.4 MB (307353338 bytes)
--	Total v2 Content-Length: 102.3 MB (102273914 bytes)
+-	Total v2 Content-Length: 102.3 MB (102273882 bytes)
 
 ### Layers (14)
 

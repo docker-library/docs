@@ -15,7 +15,7 @@
 ## `mysql:5.5.45`
 
 -	Total Virtual Size: 213.5 MB (213454922 bytes)
--	Total v2 Content-Length: 73.2 MB (73155242 bytes)
+-	Total v2 Content-Length: 73.2 MB (73155210 bytes)
 
 ### Layers (17)
 
@@ -280,7 +280,7 @@ CMD ["mysqld"]
 ## `mysql:5.5`
 
 -	Total Virtual Size: 213.5 MB (213454922 bytes)
--	Total v2 Content-Length: 73.2 MB (73155242 bytes)
+-	Total v2 Content-Length: 73.2 MB (73155210 bytes)
 
 ### Layers (17)
 
@@ -545,7 +545,7 @@ CMD ["mysqld"]
 ## `mysql:5.6.26`
 
 -	Total Virtual Size: 283.5 MB (283530606 bytes)
--	Total v2 Content-Length: 96.9 MB (96856876 bytes)
+-	Total v2 Content-Length: 96.9 MB (96856844 bytes)
 
 ### Layers (16)
 
@@ -784,7 +784,7 @@ CMD ["mysqld"]
 ## `mysql:5.6`
 
 -	Total Virtual Size: 283.5 MB (283530606 bytes)
--	Total v2 Content-Length: 96.9 MB (96856876 bytes)
+-	Total v2 Content-Length: 96.9 MB (96856844 bytes)
 
 ### Layers (16)
 
@@ -1023,7 +1023,7 @@ CMD ["mysqld"]
 ## `mysql:5`
 
 -	Total Virtual Size: 283.5 MB (283530606 bytes)
--	Total v2 Content-Length: 96.9 MB (96856876 bytes)
+-	Total v2 Content-Length: 96.9 MB (96856844 bytes)
 
 ### Layers (16)
 
@@ -1262,7 +1262,7 @@ CMD ["mysqld"]
 ## `mysql:latest`
 
 -	Total Virtual Size: 283.5 MB (283530606 bytes)
--	Total v2 Content-Length: 96.9 MB (96856876 bytes)
+-	Total v2 Content-Length: 96.9 MB (96856844 bytes)
 
 ### Layers (16)
 
@@ -1501,7 +1501,7 @@ CMD ["mysqld"]
 ## `mysql:5.7.8-rc`
 
 -	Total Virtual Size: 321.3 MB (321267051 bytes)
--	Total v2 Content-Length: 109.1 MB (109140058 bytes)
+-	Total v2 Content-Length: 109.1 MB (109140026 bytes)
 
 ### Layers (16)
 
@@ -1740,7 +1740,7 @@ CMD ["mysqld"]
 ## `mysql:5.7.8`
 
 -	Total Virtual Size: 321.3 MB (321267051 bytes)
--	Total v2 Content-Length: 109.1 MB (109140058 bytes)
+-	Total v2 Content-Length: 109.1 MB (109140026 bytes)
 
 ### Layers (16)
 
@@ -1979,7 +1979,7 @@ CMD ["mysqld"]
 ## `mysql:5.7`
 
 -	Total Virtual Size: 321.3 MB (321267051 bytes)
--	Total v2 Content-Length: 109.1 MB (109140058 bytes)
+-	Total v2 Content-Length: 109.1 MB (109140026 bytes)
 
 ### Layers (16)
 

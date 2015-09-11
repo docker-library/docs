@@ -8,7 +8,7 @@
 ## `nats:0.6.6`
 
 -	Total Virtual Size: 6.6 MB (6612515 bytes)
--	Total v2 Content-Length: 2.1 MB (2053775 bytes)
+-	Total v2 Content-Length: 2.1 MB (2053743 bytes)
 
 ### Layers (6)
 
@@ -98,7 +98,7 @@ CMD []
 ## `nats:latest`
 
 -	Total Virtual Size: 6.6 MB (6612515 bytes)
--	Total v2 Content-Length: 2.1 MB (2053775 bytes)
+-	Total v2 Content-Length: 2.1 MB (2053743 bytes)
 
 ### Layers (6)
 

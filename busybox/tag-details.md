@@ -107,7 +107,7 @@ CMD ["/bin/sh"]
 ## `busybox:latest`
 
 -	Total Virtual Size: 2.4 MB (2433303 bytes)
--	Total v2 Content-Length: 1.1 MB (1145165 bytes)
+-	Total v2 Content-Length: 1.1 MB (1145133 bytes)
 
 ### Layers (3)
 

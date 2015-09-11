@@ -32,8 +32,8 @@
 
 ## `buildpack-deps:jessie-curl`
 
--	Total Virtual Size: 213.9 MB (213870507 bytes)
--	Total v2 Content-Length: 88.4 MB (88436924 bytes)
+-	Total Virtual Size: 169.5 MB (169514819 bytes)
+-	Total v2 Content-Length: 69.9 MB (69898339 bytes)
 
 ### Layers (3)
 
@@ -78,14 +78,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:265cc6cb1549bc583359f76726ad715d3cd55f42c7815c0e10e02b604834cbfe`
--	v2 Content-Length: 18.5 MB (18538592 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 15:41:44 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 ## `buildpack-deps:curl`
 
--	Total Virtual Size: 213.9 MB (213870507 bytes)
--	Total v2 Content-Length: 88.4 MB (88436924 bytes)
+-	Total Virtual Size: 169.5 MB (169514819 bytes)
+-	Total v2 Content-Length: 69.9 MB (69898339 bytes)
 
 ### Layers (3)
 
@@ -130,14 +130,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:265cc6cb1549bc583359f76726ad715d3cd55f42c7815c0e10e02b604834cbfe`
--	v2 Content-Length: 18.5 MB (18538592 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 15:41:44 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 ## `buildpack-deps:jessie-scm`
 
--	Total Virtual Size: 414.2 MB (414150795 bytes)
--	Total v2 Content-Length: 154.6 MB (154577376 bytes)
+-	Total Virtual Size: 291.8 MB (291832807 bytes)
+-	Total v2 Content-Length: 112.2 MB (112237861 bytes)
 
 ### Layers (4)
 
@@ -182,9 +182,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:265cc6cb1549bc583359f76726ad715d3cd55f42c7815c0e10e02b604834cbfe`
--	v2 Content-Length: 18.5 MB (18538592 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 15:41:44 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -208,8 +208,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:scm`
 
--	Total Virtual Size: 414.2 MB (414150795 bytes)
--	Total v2 Content-Length: 154.6 MB (154577376 bytes)
+-	Total Virtual Size: 291.8 MB (291832807 bytes)
+-	Total v2 Content-Length: 112.2 MB (112237861 bytes)
 
 ### Layers (4)
 
@@ -254,9 +254,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:265cc6cb1549bc583359f76726ad715d3cd55f42c7815c0e10e02b604834cbfe`
--	v2 Content-Length: 18.5 MB (18538592 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 15:41:44 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -280,8 +280,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:jessie`
 
--	Total Virtual Size: 921.1 MB (921137109 bytes)
--	Total v2 Content-Length: 369.3 MB (369300140 bytes)
+-	Total Virtual Size: 606.5 MB (606484958 bytes)
+-	Total v2 Content-Length: 240.8 MB (240769004 bytes)
 
 ### Layers (5)
 
@@ -326,9 +326,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:265cc6cb1549bc583359f76726ad715d3cd55f42c7815c0e10e02b604834cbfe`
--	v2 Content-Length: 18.5 MB (18538592 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 15:41:44 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -401,8 +401,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:latest`
 
--	Total Virtual Size: 921.1 MB (921137109 bytes)
--	Total v2 Content-Length: 369.3 MB (369300140 bytes)
+-	Total Virtual Size: 606.5 MB (606484958 bytes)
+-	Total v2 Content-Length: 240.8 MB (240769004 bytes)
 
 ### Layers (5)
 
@@ -447,9 +447,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:265cc6cb1549bc583359f76726ad715d3cd55f42c7815c0e10e02b604834cbfe`
--	v2 Content-Length: 18.5 MB (18538592 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 15:41:44 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -522,8 +522,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:precise-curl`
 
--	Total Virtual Size: 108.9 MB (108883418 bytes)
--	Total v2 Content-Length: 45.8 MB (45776977 bytes)
+-	Total Virtual Size: 97.3 MB (97332210 bytes)
+-	Total v2 Content-Length: 40.7 MB (40672348 bytes)
 
 ### Layers (3)
 
@@ -574,8 +574,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:precise-scm`
 
--	Total Virtual Size: 284.6 MB (284645300 bytes)
--	Total v2 Content-Length: 101.9 MB (101857042 bytes)
+-	Total Virtual Size: 191.0 MB (190988755 bytes)
+-	Total v2 Content-Length: 71.3 MB (71264695 bytes)
 
 ### Layers (4)
 
@@ -646,8 +646,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:precise`
 
--	Total Virtual Size: 687.3 MB (687336487 bytes)
--	Total v2 Content-Length: 233.8 MB (233760553 bytes)
+-	Total Virtual Size: 439.2 MB (439162621 bytes)
+-	Total v2 Content-Length: 152.5 MB (152512624 bytes)
 
 ### Layers (5)
 
@@ -767,8 +767,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:sid-curl`
 
--	Total Virtual Size: 223.9 MB (223867797 bytes)
--	Total v2 Content-Length: 93.6 MB (93606920 bytes)
+-	Total Virtual Size: 175.2 MB (175165932 bytes)
+-	Total v2 Content-Length: 73.3 MB (73311066 bytes)
 
 ### Layers (3)
 
@@ -813,14 +813,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `e7d52d7d94ef1e142d8d03de57184c3a5b9e2b3e06dd7f2f7725015693623f34`
 -	Docker Version: 1.7.1
 -	Virtual Size: 48.7 MB (48701865 bytes)
--	v2 Blob: `sha256:451c0546fe6f55ffda580e0d568c0c2f4585f3457fadb34c13b926a092f1da81`
--	v2 Content-Length: 20.3 MB (20295868 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 15:47:23 GMT
+-	v2 Blob: `sha256:febd228c972422520423d9471d2dd6d14b549e03f6494264e030cd5fd0945973`
+-	v2 Content-Length: 20.3 MB (20295882 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:40:04 GMT
 
 ## `buildpack-deps:sid-scm`
 
--	Total Virtual Size: 428.1 MB (428136692 bytes)
--	Total v2 Content-Length: 160.9 MB (160910124 bytes)
+-	Total Virtual Size: 301.7 MB (301651312 bytes)
+-	Total v2 Content-Length: 117.1 MB (117110602 bytes)
 
 ### Layers (4)
 
@@ -865,9 +865,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `e7d52d7d94ef1e142d8d03de57184c3a5b9e2b3e06dd7f2f7725015693623f34`
 -	Docker Version: 1.7.1
 -	Virtual Size: 48.7 MB (48701865 bytes)
--	v2 Blob: `sha256:451c0546fe6f55ffda580e0d568c0c2f4585f3457fadb34c13b926a092f1da81`
--	v2 Content-Length: 20.3 MB (20295868 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 15:47:23 GMT
+-	v2 Blob: `sha256:febd228c972422520423d9471d2dd6d14b549e03f6494264e030cd5fd0945973`
+-	v2 Content-Length: 20.3 MB (20295882 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:40:04 GMT
 
 #### `55547003546e42f5d65fa5a7c473378a8b6fd724a55fbb435e56b2635b1a4c7b`
 
@@ -891,8 +891,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:sid`
 
--	Total Virtual Size: 1.7 GB (1688682050 bytes)
--	Total v2 Content-Length: 635.7 MB (635717848 bytes)
+-	Total Virtual Size: 995.2 MB (995166681 bytes)
+-	Total v2 Content-Length: 376.4 MB (376414232 bytes)
 
 ### Layers (5)
 
@@ -937,9 +937,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `e7d52d7d94ef1e142d8d03de57184c3a5b9e2b3e06dd7f2f7725015693623f34`
 -	Docker Version: 1.7.1
 -	Virtual Size: 48.7 MB (48701865 bytes)
--	v2 Blob: `sha256:451c0546fe6f55ffda580e0d568c0c2f4585f3457fadb34c13b926a092f1da81`
--	v2 Content-Length: 20.3 MB (20295868 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 15:47:23 GMT
+-	v2 Blob: `sha256:febd228c972422520423d9471d2dd6d14b549e03f6494264e030cd5fd0945973`
+-	v2 Content-Length: 20.3 MB (20295882 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:40:04 GMT
 
 #### `55547003546e42f5d65fa5a7c473378a8b6fd724a55fbb435e56b2635b1a4c7b`
 
@@ -1012,8 +1012,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:stretch-curl`
 
--	Total Virtual Size: 223.5 MB (223450422 bytes)
--	Total v2 Content-Length: 93.4 MB (93404163 bytes)
+-	Total Virtual Size: 174.7 MB (174748491 bytes)
+-	Total v2 Content-Length: 73.1 MB (73108385 bytes)
 
 ### Layers (3)
 
@@ -1064,8 +1064,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:stretch-scm`
 
--	Total Virtual Size: 427.2 MB (427230815 bytes)
--	Total v2 Content-Length: 160.6 MB (160564687 bytes)
+-	Total Virtual Size: 301.0 MB (300989653 bytes)
+-	Total v2 Content-Length: 116.8 MB (116836536 bytes)
 
 ### Layers (4)
 
@@ -1136,8 +1136,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:stretch`
 
--	Total Virtual Size: 1.6 GB (1599467197 bytes)
--	Total v2 Content-Length: 605.9 MB (605923592 bytes)
+-	Total Virtual Size: 950.2 MB (950228425 bytes)
+-	Total v2 Content-Length: 361.4 MB (361380064 bytes)
 
 ### Layers (5)
 
@@ -1257,8 +1257,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:trusty-curl`
 
--	Total Virtual Size: 117.6 MB (117638089 bytes)
--	Total v2 Content-Length: 47.6 MB (47631264 bytes)
+-	Total Virtual Size: 102.4 MB (102362690 bytes)
+-	Total v2 Content-Length: 41.2 MB (41248228 bytes)
 
 ### Layers (3)
 
@@ -1309,8 +1309,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:trusty-scm`
 
--	Total Virtual Size: 325.8 MB (325793820 bytes)
--	Total v2 Content-Length: 115.2 MB (115170772 bytes)
+-	Total Virtual Size: 214.1 MB (214078255 bytes)
+-	Total v2 Content-Length: 78.2 MB (78209500 bytes)
 
 ### Layers (4)
 
@@ -1381,8 +1381,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:trusty`
 
--	Total Virtual Size: 721.5 MB (721512213 bytes)
--	Total v2 Content-Length: 269.0 MB (269028544 bytes)
+-	Total Virtual Size: 467.8 MB (467795234 bytes)
+-	Total v2 Content-Length: 173.6 MB (173619022 bytes)
 
 ### Layers (5)
 
@@ -1502,8 +1502,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:vivid-curl`
 
--	Total Virtual Size: 142.5 MB (142526955 bytes)
--	Total v2 Content-Length: 57.2 MB (57157356 bytes)
+-	Total Virtual Size: 126.3 MB (126338773 bytes)
+-	Total v2 Content-Length: 50.3 MB (50304971 bytes)
 
 ### Layers (3)
 
@@ -1554,8 +1554,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:vivid-scm`
 
--	Total Virtual Size: 350.7 MB (350729561 bytes)
--	Total v2 Content-Length: 125.3 MB (125309271 bytes)
+-	Total Virtual Size: 238.5 MB (238534167 bytes)
+-	Total v2 Content-Length: 87.8 MB (87807121 bytes)
 
 ### Layers (4)
 
@@ -1626,8 +1626,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:vivid`
 
--	Total Virtual Size: 919.5 MB (919451557 bytes)
--	Total v2 Content-Length: 341.4 MB (341444479 bytes)
+-	Total Virtual Size: 579.0 MB (578992862 bytes)
+-	Total v2 Content-Length: 214.6 MB (214625800 bytes)
 
 ### Layers (5)
 
@@ -1747,8 +1747,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:wheezy-curl`
 
--	Total Virtual Size: 113.4 MB (113404411 bytes)
--	Total v2 Content-Length: 50.7 MB (50670905 bytes)
+-	Total Virtual Size: 99.2 MB (99164592 bytes)
+-	Total v2 Content-Length: 43.9 MB (43931352 bytes)
 
 ### Layers (3)
 
@@ -1793,14 +1793,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:141e56065772d0977781df4825c50650edf92fd624d6ee67e2f7309ff3916113`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 16:01:34 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 ## `buildpack-deps:wheezy-scm`
 
--	Total Virtual Size: 318.0 MB (318027110 bytes)
--	Total v2 Content-Length: 118.0 MB (118024909 bytes)
+-	Total Virtual Size: 208.6 MB (208595851 bytes)
+-	Total v2 Content-Length: 81.0 MB (80978132 bytes)
 
 ### Layers (4)
 
@@ -1845,9 +1845,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:141e56065772d0977781df4825c50650edf92fd624d6ee67e2f7309ff3916113`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 16:01:34 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -1871,8 +1871,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:wheezy`
 
--	Total Virtual Size: 709.7 MB (709734401 bytes)
--	Total v2 Content-Length: 269.5 MB (269501693 bytes)
+-	Total Virtual Size: 459.2 MB (459165126 bytes)
+-	Total v2 Content-Length: 175.2 MB (175239914 bytes)
 
 ### Layers (5)
 
@@ -1917,9 +1917,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:141e56065772d0977781df4825c50650edf92fd624d6ee67e2f7309ff3916113`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Tue, 08 Sep 2015 16:01:34 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -1992,8 +1992,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:wily-curl`
 
--	Total Virtual Size: 145.0 MB (144989604 bytes)
--	Total v2 Content-Length: 58.9 MB (58882010 bytes)
+-	Total Virtual Size: 128.0 MB (127989526 bytes)
+-	Total v2 Content-Length: 51.6 MB (51638169 bytes)
 
 ### Layers (3)
 
@@ -2044,8 +2044,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:wily-scm`
 
--	Total Virtual Size: 356.1 MB (356089492 bytes)
--	Total v2 Content-Length: 128.1 MB (128122437 bytes)
+-	Total Virtual Size: 242.0 MB (242039509 bytes)
+-	Total v2 Content-Length: 89.9 MB (89880303 bytes)
 
 ### Layers (4)
 
@@ -2116,8 +2116,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:wily`
 
--	Total Virtual Size: 1.6 GB (1631681119 bytes)
--	Total v2 Content-Length: 591.1 MB (591066771 bytes)
+-	Total Virtual Size: 936.9 MB (936860314 bytes)
+-	Total v2 Content-Length: 340.5 MB (340473537 bytes)
 
 ### Layers (5)
 

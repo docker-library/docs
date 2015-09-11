@@ -24,7 +24,7 @@
 ## `docker:1.8.2`
 
 -	Total Virtual Size: 29.7 MB (29663456 bytes)
--	Total v2 Content-Length: 10.1 MB (10074550 bytes)
+-	Total v2 Content-Length: 10.1 MB (10074518 bytes)
 
 ### Layers (9)
 
@@ -160,7 +160,7 @@ CMD ["sh"]
 ## `docker:1.8`
 
 -	Total Virtual Size: 29.7 MB (29663456 bytes)
--	Total v2 Content-Length: 10.1 MB (10074550 bytes)
+-	Total v2 Content-Length: 10.1 MB (10074518 bytes)
 
 ### Layers (9)
 
@@ -296,7 +296,7 @@ CMD ["sh"]
 ## `docker:1`
 
 -	Total Virtual Size: 29.7 MB (29663456 bytes)
--	Total v2 Content-Length: 10.1 MB (10074550 bytes)
+-	Total v2 Content-Length: 10.1 MB (10074518 bytes)
 
 ### Layers (9)
 
@@ -432,7 +432,7 @@ CMD ["sh"]
 ## `docker:latest`
 
 -	Total Virtual Size: 29.7 MB (29663456 bytes)
--	Total v2 Content-Length: 10.1 MB (10074550 bytes)
+-	Total v2 Content-Length: 10.1 MB (10074518 bytes)
 
 ### Layers (9)
 
@@ -568,7 +568,7 @@ CMD ["sh"]
 ## `docker:1.8.2-dind`
 
 -	Total Virtual Size: 35.6 MB (35571762 bytes)
--	Total v2 Content-Length: 12.5 MB (12532391 bytes)
+-	Total v2 Content-Length: 12.5 MB (12532359 bytes)
 
 ### Layers (17)
 
@@ -822,7 +822,7 @@ CMD []
 ## `docker:1.8-dind`
 
 -	Total Virtual Size: 35.6 MB (35571762 bytes)
--	Total v2 Content-Length: 12.5 MB (12532391 bytes)
+-	Total v2 Content-Length: 12.5 MB (12532359 bytes)
 
 ### Layers (17)
 
@@ -1076,7 +1076,7 @@ CMD []
 ## `docker:1-dind`
 
 -	Total Virtual Size: 35.6 MB (35571762 bytes)
--	Total v2 Content-Length: 12.5 MB (12532391 bytes)
+-	Total v2 Content-Length: 12.5 MB (12532359 bytes)
 
 ### Layers (17)
 
@@ -1330,7 +1330,7 @@ CMD []
 ## `docker:dind`
 
 -	Total Virtual Size: 35.6 MB (35571762 bytes)
--	Total v2 Content-Length: 12.5 MB (12532391 bytes)
+-	Total v2 Content-Length: 12.5 MB (12532359 bytes)
 
 ### Layers (17)
 
@@ -1583,8 +1583,8 @@ CMD []
 
 ## `docker:1.8.2-git`
 
--	Total Virtual Size: 64.3 MB (64321652 bytes)
--	Total v2 Content-Length: 26.9 MB (26942064 bytes)
+-	Total Virtual Size: 47.0 MB (46992554 bytes)
+-	Total v2 Content-Length: 18.5 MB (18508291 bytes)
 
 ### Layers (10)
 
@@ -1736,8 +1736,8 @@ RUN apk add --update \
 
 ## `docker:1.8-git`
 
--	Total Virtual Size: 64.3 MB (64321652 bytes)
--	Total v2 Content-Length: 26.9 MB (26942064 bytes)
+-	Total Virtual Size: 47.0 MB (46992554 bytes)
+-	Total v2 Content-Length: 18.5 MB (18508291 bytes)
 
 ### Layers (10)
 
@@ -1889,8 +1889,8 @@ RUN apk add --update \
 
 ## `docker:1-git`
 
--	Total Virtual Size: 64.3 MB (64321652 bytes)
--	Total v2 Content-Length: 26.9 MB (26942064 bytes)
+-	Total Virtual Size: 47.0 MB (46992554 bytes)
+-	Total v2 Content-Length: 18.5 MB (18508291 bytes)
 
 ### Layers (10)
 
@@ -2042,8 +2042,8 @@ RUN apk add --update \
 
 ## `docker:git`
 
--	Total Virtual Size: 64.3 MB (64321652 bytes)
--	Total v2 Content-Length: 26.9 MB (26942064 bytes)
+-	Total Virtual Size: 47.0 MB (46992554 bytes)
+-	Total v2 Content-Length: 18.5 MB (18508291 bytes)
 
 ### Layers (10)
 
@@ -2196,7 +2196,7 @@ RUN apk add --update \
 ## `docker:1.7.1`
 
 -	Total Virtual Size: 24.4 MB (24360669 bytes)
--	Total v2 Content-Length: 8.7 MB (8650274 bytes)
+-	Total v2 Content-Length: 8.7 MB (8650242 bytes)
 
 ### Layers (9)
 
@@ -2332,7 +2332,7 @@ CMD ["sh"]
 ## `docker:1.7`
 
 -	Total Virtual Size: 24.4 MB (24360669 bytes)
--	Total v2 Content-Length: 8.7 MB (8650274 bytes)
+-	Total v2 Content-Length: 8.7 MB (8650242 bytes)
 
 ### Layers (9)
 
@@ -2468,7 +2468,7 @@ CMD ["sh"]
 ## `docker:1.7.1-dind`
 
 -	Total Virtual Size: 30.3 MB (30268958 bytes)
--	Total v2 Content-Length: 11.1 MB (11108144 bytes)
+-	Total v2 Content-Length: 11.1 MB (11108112 bytes)
 
 ### Layers (17)
 
@@ -2722,7 +2722,7 @@ CMD []
 ## `docker:1.7-dind`
 
 -	Total Virtual Size: 30.3 MB (30268958 bytes)
--	Total v2 Content-Length: 11.1 MB (11108144 bytes)
+-	Total v2 Content-Length: 11.1 MB (11108112 bytes)
 
 ### Layers (17)
 
@@ -2975,8 +2975,8 @@ CMD []
 
 ## `docker:1.7.1-git`
 
--	Total Virtual Size: 59.0 MB (59018865 bytes)
--	Total v2 Content-Length: 25.5 MB (25517722 bytes)
+-	Total Virtual Size: 41.7 MB (41689767 bytes)
+-	Total v2 Content-Length: 17.1 MB (17083982 bytes)
 
 ### Layers (10)
 
@@ -3128,8 +3128,8 @@ RUN apk add --update \
 
 ## `docker:1.7-git`
 
--	Total Virtual Size: 59.0 MB (59018865 bytes)
--	Total v2 Content-Length: 25.5 MB (25517722 bytes)
+-	Total Virtual Size: 41.7 MB (41689767 bytes)
+-	Total v2 Content-Length: 17.1 MB (17083982 bytes)
 
 ### Layers (10)
 

@@ -17,7 +17,7 @@
 ## `ros:indigo-ros-core`
 
 -	Total Virtual Size: 812.2 MB (812195956 bytes)
--	Total v2 Content-Length: 250.1 MB (250051894 bytes)
+-	Total v2 Content-Length: 250.1 MB (250051864 bytes)
 
 ### Layers (16)
 
@@ -216,9 +216,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
--	v2 Content-Length: 151.6 MB (151621462 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
+-	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
+-	v2 Content-Length: 151.6 MB (151621464 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -264,8 +264,8 @@ CMD ["bash"]
 
 ## `ros:indigo-ros-base`
 
--	Total Virtual Size: 841.1 MB (841128006 bytes)
--	Total v2 Content-Length: 256.9 MB (256871232 bytes)
+-	Total Virtual Size: 826.7 MB (826661981 bytes)
+-	Total v2 Content-Length: 253.5 MB (253461565 bytes)
 
 ### Layers (18)
 
@@ -464,9 +464,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
--	v2 Content-Length: 151.6 MB (151621462 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
+-	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
+-	v2 Content-Length: 151.6 MB (151621464 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -542,8 +542,8 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:indigo-robot`
 
--	Total Virtual Size: 1.2 GB (1248159943 bytes)
--	Total v2 Content-Length: 389.6 MB (389634779 bytes)
+-	Total Virtual Size: 1.0 GB (1037410962 bytes)
+-	Total v2 Content-Length: 321.5 MB (321548189 bytes)
 
 ### Layers (20)
 
@@ -742,9 +742,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
--	v2 Content-Length: 151.6 MB (151621462 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
+-	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
+-	v2 Content-Length: 151.6 MB (151621464 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -850,8 +850,8 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:indigo-perception`
 
--	Total Virtual Size: 2.7 GB (2653075881 bytes)
--	Total v2 Content-Length: 780.9 MB (780922147 bytes)
+-	Total Virtual Size: 1.7 GB (1739868931 bytes)
+-	Total v2 Content-Length: 517.2 MB (517191873 bytes)
 
 ### Layers (20)
 
@@ -1050,9 +1050,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
--	v2 Content-Length: 151.6 MB (151621462 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
+-	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
+-	v2 Content-Length: 151.6 MB (151621464 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -1158,8 +1158,8 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:indigo`
 
--	Total Virtual Size: 841.1 MB (841128006 bytes)
--	Total v2 Content-Length: 256.9 MB (256871232 bytes)
+-	Total Virtual Size: 826.7 MB (826661981 bytes)
+-	Total v2 Content-Length: 253.5 MB (253461565 bytes)
 
 ### Layers (18)
 
@@ -1358,9 +1358,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
--	v2 Content-Length: 151.6 MB (151621462 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
+-	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
+-	v2 Content-Length: 151.6 MB (151621464 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -1436,8 +1436,8 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:latest`
 
--	Total Virtual Size: 841.1 MB (841128006 bytes)
--	Total v2 Content-Length: 256.9 MB (256871232 bytes)
+-	Total Virtual Size: 826.7 MB (826661981 bytes)
+-	Total v2 Content-Length: 253.5 MB (253461565 bytes)
 
 ### Layers (18)
 
@@ -1636,9 +1636,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
--	v2 Content-Length: 151.6 MB (151621462 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
+-	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
+-	v2 Content-Length: 151.6 MB (151621464 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -1715,7 +1715,7 @@ RUN apt-get update && apt-get install -y\
 ## `ros:jade-ros-core`
 
 -	Total Virtual Size: 813.0 MB (812962751 bytes)
--	Total v2 Content-Length: 250.2 MB (250161554 bytes)
+-	Total v2 Content-Length: 250.2 MB (250161522 bytes)
 
 ### Layers (16)
 
@@ -1962,8 +1962,8 @@ CMD ["bash"]
 
 ## `ros:jade-ros-base`
 
--	Total Virtual Size: 842.2 MB (842178631 bytes)
--	Total v2 Content-Length: 257.0 MB (256999848 bytes)
+-	Total Virtual Size: 827.6 MB (827570691 bytes)
+-	Total v2 Content-Length: 253.6 MB (253580701 bytes)
 
 ### Layers (18)
 
@@ -2240,8 +2240,8 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:jade-robot`
 
--	Total Virtual Size: 1.2 GB (1248283761 bytes)
--	Total v2 Content-Length: 389.5 MB (389494891 bytes)
+-	Total Virtual Size: 1.0 GB (1037927226 bytes)
+-	Total v2 Content-Length: 321.5 MB (321537812 bytes)
 
 ### Layers (20)
 
@@ -2548,8 +2548,8 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:jade-perception`
 
--	Total Virtual Size: 2.7 GB (2651668791 bytes)
--	Total v2 Content-Length: 780.5 MB (780455321 bytes)
+-	Total Virtual Size: 1.7 GB (1739619741 bytes)
+-	Total v2 Content-Length: 517.0 MB (517018027 bytes)
 
 ### Layers (20)
 
@@ -2856,8 +2856,8 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:jade`
 
--	Total Virtual Size: 842.2 MB (842178631 bytes)
--	Total v2 Content-Length: 257.0 MB (256999848 bytes)
+-	Total Virtual Size: 827.6 MB (827570691 bytes)
+-	Total v2 Content-Length: 253.6 MB (253580701 bytes)
 
 ### Layers (18)
 

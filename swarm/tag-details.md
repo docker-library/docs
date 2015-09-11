@@ -8,7 +8,7 @@
 ## `swarm:0.4.0`
 
 -	Total Virtual Size: 10.2 MB (10195476 bytes)
--	Total v2 Content-Length: 2.8 MB (2825213 bytes)
+-	Total v2 Content-Length: 2.8 MB (2825181 bytes)
 
 ### Layers (8)
 
@@ -126,7 +126,7 @@ CMD ["--help"]
 ## `swarm:latest`
 
 -	Total Virtual Size: 10.2 MB (10195476 bytes)
--	Total v2 Content-Length: 2.8 MB (2825213 bytes)
+-	Total v2 Content-Length: 2.8 MB (2825181 bytes)
 
 ### Layers (8)
 

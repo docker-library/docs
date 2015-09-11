@@ -19,7 +19,7 @@
 ## `couchbase:latest`
 
 -	Total Virtual Size: 803.8 MB (803785758 bytes)
--	Total v2 Content-Length: 264.6 MB (264591317 bytes)
+-	Total v2 Content-Length: 264.6 MB (264591287 bytes)
 
 ### Layers (15)
 
@@ -116,9 +116,9 @@ RUN apt-get update &&\
 -	Parent Layer: `5eb89c4f7e1aeac68c284c928474b2722cf401cdfb95089da8d0237b25c59d6c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.6 MB (23570300 bytes)
--	v2 Blob: `sha256:8fc12c01592c14b04f07f76d3a1766908e66cfec6d818f8f251c69f32b9d54b9`
--	v2 Content-Length: 7.5 MB (7496886 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 23:37:02 GMT
+-	v2 Blob: `sha256:efdcf40c3b9ada725978b52a8b1046820e2c6d452ce92cac5406f20fa42731de`
+-	v2 Content-Length: 7.5 MB (7496888 bytes)
+-	v2 Last-Modified: Thu, 03 Sep 2015 23:39:19 GMT
 
 #### `286998887ddef8443dfb142eef810d1b044ed0df0c53383fbde32d12dcab0f1a`
 
@@ -251,7 +251,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:enterprise`
 
 -	Total Virtual Size: 803.8 MB (803785758 bytes)
--	Total v2 Content-Length: 264.6 MB (264591317 bytes)
+-	Total v2 Content-Length: 264.6 MB (264591287 bytes)
 
 ### Layers (15)
 
@@ -348,9 +348,9 @@ RUN apt-get update &&\
 -	Parent Layer: `5eb89c4f7e1aeac68c284c928474b2722cf401cdfb95089da8d0237b25c59d6c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.6 MB (23570300 bytes)
--	v2 Blob: `sha256:8fc12c01592c14b04f07f76d3a1766908e66cfec6d818f8f251c69f32b9d54b9`
--	v2 Content-Length: 7.5 MB (7496886 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 23:37:02 GMT
+-	v2 Blob: `sha256:efdcf40c3b9ada725978b52a8b1046820e2c6d452ce92cac5406f20fa42731de`
+-	v2 Content-Length: 7.5 MB (7496888 bytes)
+-	v2 Last-Modified: Thu, 03 Sep 2015 23:39:19 GMT
 
 #### `286998887ddef8443dfb142eef810d1b044ed0df0c53383fbde32d12dcab0f1a`
 
@@ -483,7 +483,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:3.1.0`
 
 -	Total Virtual Size: 803.8 MB (803785758 bytes)
--	Total v2 Content-Length: 264.6 MB (264591317 bytes)
+-	Total v2 Content-Length: 264.6 MB (264591287 bytes)
 
 ### Layers (15)
 
@@ -580,9 +580,9 @@ RUN apt-get update &&\
 -	Parent Layer: `5eb89c4f7e1aeac68c284c928474b2722cf401cdfb95089da8d0237b25c59d6c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.6 MB (23570300 bytes)
--	v2 Blob: `sha256:8fc12c01592c14b04f07f76d3a1766908e66cfec6d818f8f251c69f32b9d54b9`
--	v2 Content-Length: 7.5 MB (7496886 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 23:37:02 GMT
+-	v2 Blob: `sha256:efdcf40c3b9ada725978b52a8b1046820e2c6d452ce92cac5406f20fa42731de`
+-	v2 Content-Length: 7.5 MB (7496888 bytes)
+-	v2 Last-Modified: Thu, 03 Sep 2015 23:39:19 GMT
 
 #### `286998887ddef8443dfb142eef810d1b044ed0df0c53383fbde32d12dcab0f1a`
 
@@ -715,7 +715,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:enterprise-3.1.0`
 
 -	Total Virtual Size: 803.8 MB (803785758 bytes)
--	Total v2 Content-Length: 264.6 MB (264591317 bytes)
+-	Total v2 Content-Length: 264.6 MB (264591287 bytes)
 
 ### Layers (15)
 
@@ -812,9 +812,9 @@ RUN apt-get update &&\
 -	Parent Layer: `5eb89c4f7e1aeac68c284c928474b2722cf401cdfb95089da8d0237b25c59d6c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.6 MB (23570300 bytes)
--	v2 Blob: `sha256:8fc12c01592c14b04f07f76d3a1766908e66cfec6d818f8f251c69f32b9d54b9`
--	v2 Content-Length: 7.5 MB (7496886 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 23:37:02 GMT
+-	v2 Blob: `sha256:efdcf40c3b9ada725978b52a8b1046820e2c6d452ce92cac5406f20fa42731de`
+-	v2 Content-Length: 7.5 MB (7496888 bytes)
+-	v2 Last-Modified: Thu, 03 Sep 2015 23:39:19 GMT
 
 #### `286998887ddef8443dfb142eef810d1b044ed0df0c53383fbde32d12dcab0f1a`
 
@@ -947,7 +947,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:3.0.3`
 
 -	Total Virtual Size: 803.0 MB (802969744 bytes)
--	Total v2 Content-Length: 264.3 MB (264321059 bytes)
+-	Total v2 Content-Length: 264.3 MB (264321029 bytes)
 
 ### Layers (15)
 
@@ -1044,9 +1044,9 @@ RUN apt-get update &&\
 -	Parent Layer: `5eb89c4f7e1aeac68c284c928474b2722cf401cdfb95089da8d0237b25c59d6c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.6 MB (23570300 bytes)
--	v2 Blob: `sha256:8fc12c01592c14b04f07f76d3a1766908e66cfec6d818f8f251c69f32b9d54b9`
--	v2 Content-Length: 7.5 MB (7496886 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 23:37:02 GMT
+-	v2 Blob: `sha256:efdcf40c3b9ada725978b52a8b1046820e2c6d452ce92cac5406f20fa42731de`
+-	v2 Content-Length: 7.5 MB (7496888 bytes)
+-	v2 Last-Modified: Thu, 03 Sep 2015 23:39:19 GMT
 
 #### `4e30ab5052077061ffc94332bc6586a0df972d5c0270879bfce8e5628cebc26e`
 
@@ -1179,7 +1179,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:enterprise-3.0.3`
 
 -	Total Virtual Size: 803.0 MB (802969744 bytes)
--	Total v2 Content-Length: 264.3 MB (264321059 bytes)
+-	Total v2 Content-Length: 264.3 MB (264321029 bytes)
 
 ### Layers (15)
 
@@ -1276,9 +1276,9 @@ RUN apt-get update &&\
 -	Parent Layer: `5eb89c4f7e1aeac68c284c928474b2722cf401cdfb95089da8d0237b25c59d6c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.6 MB (23570300 bytes)
--	v2 Blob: `sha256:8fc12c01592c14b04f07f76d3a1766908e66cfec6d818f8f251c69f32b9d54b9`
--	v2 Content-Length: 7.5 MB (7496886 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 23:37:02 GMT
+-	v2 Blob: `sha256:efdcf40c3b9ada725978b52a8b1046820e2c6d452ce92cac5406f20fa42731de`
+-	v2 Content-Length: 7.5 MB (7496888 bytes)
+-	v2 Last-Modified: Thu, 03 Sep 2015 23:39:19 GMT
 
 #### `4e30ab5052077061ffc94332bc6586a0df972d5c0270879bfce8e5628cebc26e`
 
@@ -1411,7 +1411,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:3.0.2`
 
 -	Total Virtual Size: 803.0 MB (802987999 bytes)
--	Total v2 Content-Length: 264.3 MB (264325166 bytes)
+-	Total v2 Content-Length: 264.3 MB (264325136 bytes)
 
 ### Layers (15)
 
@@ -1508,9 +1508,9 @@ RUN apt-get update &&\
 -	Parent Layer: `5eb89c4f7e1aeac68c284c928474b2722cf401cdfb95089da8d0237b25c59d6c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.6 MB (23570300 bytes)
--	v2 Blob: `sha256:8fc12c01592c14b04f07f76d3a1766908e66cfec6d818f8f251c69f32b9d54b9`
--	v2 Content-Length: 7.5 MB (7496886 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 23:37:02 GMT
+-	v2 Blob: `sha256:efdcf40c3b9ada725978b52a8b1046820e2c6d452ce92cac5406f20fa42731de`
+-	v2 Content-Length: 7.5 MB (7496888 bytes)
+-	v2 Last-Modified: Thu, 03 Sep 2015 23:39:19 GMT
 
 #### `e4961b724420d8424cb63654ac129adad56af39e4123200d10233030b8b4e0da`
 
@@ -1643,7 +1643,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:enterprise-3.0.2`
 
 -	Total Virtual Size: 803.0 MB (802987999 bytes)
--	Total v2 Content-Length: 264.3 MB (264325166 bytes)
+-	Total v2 Content-Length: 264.3 MB (264325136 bytes)
 
 ### Layers (15)
 
@@ -1740,9 +1740,9 @@ RUN apt-get update &&\
 -	Parent Layer: `5eb89c4f7e1aeac68c284c928474b2722cf401cdfb95089da8d0237b25c59d6c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.6 MB (23570300 bytes)
--	v2 Blob: `sha256:8fc12c01592c14b04f07f76d3a1766908e66cfec6d818f8f251c69f32b9d54b9`
--	v2 Content-Length: 7.5 MB (7496886 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 23:37:02 GMT
+-	v2 Blob: `sha256:efdcf40c3b9ada725978b52a8b1046820e2c6d452ce92cac5406f20fa42731de`
+-	v2 Content-Length: 7.5 MB (7496888 bytes)
+-	v2 Last-Modified: Thu, 03 Sep 2015 23:39:19 GMT
 
 #### `e4961b724420d8424cb63654ac129adad56af39e4123200d10233030b8b4e0da`
 
@@ -1875,7 +1875,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:community`
 
 -	Total Virtual Size: 803.8 MB (803846748 bytes)
--	Total v2 Content-Length: 264.7 MB (264661731 bytes)
+-	Total v2 Content-Length: 264.7 MB (264661701 bytes)
 
 ### Layers (15)
 
@@ -1972,9 +1972,9 @@ RUN apt-get update &&\
 -	Parent Layer: `5eb89c4f7e1aeac68c284c928474b2722cf401cdfb95089da8d0237b25c59d6c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.6 MB (23570300 bytes)
--	v2 Blob: `sha256:8fc12c01592c14b04f07f76d3a1766908e66cfec6d818f8f251c69f32b9d54b9`
--	v2 Content-Length: 7.5 MB (7496886 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 23:37:02 GMT
+-	v2 Blob: `sha256:efdcf40c3b9ada725978b52a8b1046820e2c6d452ce92cac5406f20fa42731de`
+-	v2 Content-Length: 7.5 MB (7496888 bytes)
+-	v2 Last-Modified: Thu, 03 Sep 2015 23:39:19 GMT
 
 #### `1d7dc78cc8c5d1471ef7d26e8dc936736cbf94e856cee3ac08b60037c417f25b`
 
@@ -2107,7 +2107,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:community-3.0.1`
 
 -	Total Virtual Size: 803.8 MB (803846748 bytes)
--	Total v2 Content-Length: 264.7 MB (264661731 bytes)
+-	Total v2 Content-Length: 264.7 MB (264661701 bytes)
 
 ### Layers (15)
 
@@ -2204,9 +2204,9 @@ RUN apt-get update &&\
 -	Parent Layer: `5eb89c4f7e1aeac68c284c928474b2722cf401cdfb95089da8d0237b25c59d6c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 23.6 MB (23570300 bytes)
--	v2 Blob: `sha256:8fc12c01592c14b04f07f76d3a1766908e66cfec6d818f8f251c69f32b9d54b9`
--	v2 Content-Length: 7.5 MB (7496886 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 23:37:02 GMT
+-	v2 Blob: `sha256:efdcf40c3b9ada725978b52a8b1046820e2c6d452ce92cac5406f20fa42731de`
+-	v2 Content-Length: 7.5 MB (7496888 bytes)
+-	v2 Last-Modified: Thu, 03 Sep 2015 23:39:19 GMT
 
 #### `1d7dc78cc8c5d1471ef7d26e8dc936736cbf94e856cee3ac08b60037c417f25b`
 
@@ -2339,7 +2339,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:2.5.2`
 
 -	Total Virtual Size: 583.4 MB (583354591 bytes)
--	Total v2 Content-Length: 193.8 MB (193833069 bytes)
+-	Total v2 Content-Length: 193.8 MB (193833037 bytes)
 
 ### Layers (15)
 
@@ -2571,7 +2571,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:enterprise-2.5.2`
 
 -	Total Virtual Size: 583.4 MB (583354591 bytes)
--	Total v2 Content-Length: 193.8 MB (193833069 bytes)
+-	Total v2 Content-Length: 193.8 MB (193833037 bytes)
 
 ### Layers (15)
 
@@ -2803,7 +2803,7 @@ VOLUME [/opt/couchbase/var]
 ## `couchbase:community-2.2.0`
 
 -	Total Virtual Size: 573.8 MB (573765527 bytes)
--	Total v2 Content-Length: 190.4 MB (190384236 bytes)
+-	Total v2 Content-Length: 190.4 MB (190384204 bytes)
 
 ### Layers (15)
 

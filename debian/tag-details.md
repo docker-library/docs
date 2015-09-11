@@ -29,7 +29,7 @@
 ## `debian:8.2`
 
 -	Total Virtual Size: 125.2 MB (125159131 bytes)
--	Total v2 Content-Length: 51.4 MB (51359772 bytes)
+-	Total v2 Content-Length: 51.4 MB (51359740 bytes)
 
 ### Layers (2)
 
@@ -63,7 +63,7 @@ CMD ["/bin/bash"]
 ## `debian:8`
 
 -	Total Virtual Size: 125.2 MB (125159131 bytes)
--	Total v2 Content-Length: 51.4 MB (51359772 bytes)
+-	Total v2 Content-Length: 51.4 MB (51359740 bytes)
 
 ### Layers (2)
 
@@ -97,7 +97,7 @@ CMD ["/bin/bash"]
 ## `debian:jessie`
 
 -	Total Virtual Size: 125.2 MB (125159131 bytes)
--	Total v2 Content-Length: 51.4 MB (51359772 bytes)
+-	Total v2 Content-Length: 51.4 MB (51359740 bytes)
 
 ### Layers (2)
 
@@ -131,7 +131,7 @@ CMD ["/bin/bash"]
 ## `debian:latest`
 
 -	Total Virtual Size: 125.2 MB (125159131 bytes)
--	Total v2 Content-Length: 51.4 MB (51359772 bytes)
+-	Total v2 Content-Length: 51.4 MB (51359740 bytes)
 
 ### Layers (2)
 
@@ -164,8 +164,8 @@ CMD ["/bin/bash"]
 
 ## `debian:jessie-backports`
 
--	Total Virtual Size: 125.2 MB (125159253 bytes)
--	Total v2 Content-Length: 51.4 MB (51360180 bytes)
+-	Total Virtual Size: 125.2 MB (125159192 bytes)
+-	Total v2 Content-Length: 51.4 MB (51359960 bytes)
 
 ### Layers (3)
 
@@ -213,7 +213,7 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 ## `debian:oldstable`
 
 -	Total Virtual Size: 84.9 MB (84924782 bytes)
--	Total v2 Content-Length: 37.2 MB (37191676 bytes)
+-	Total v2 Content-Length: 37.2 MB (37191644 bytes)
 
 ### Layers (2)
 
@@ -246,8 +246,8 @@ CMD ["/bin/bash"]
 
 ## `debian:oldstable-backports`
 
--	Total Virtual Size: 84.9 MB (84924910 bytes)
--	Total v2 Content-Length: 37.2 MB (37192090 bytes)
+-	Total Virtual Size: 84.9 MB (84924846 bytes)
+-	Total v2 Content-Length: 37.2 MB (37191867 bytes)
 
 ### Layers (3)
 
@@ -295,7 +295,7 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 ## `debian:sid`
 
 -	Total Virtual Size: 126.5 MB (126464067 bytes)
--	Total v2 Content-Length: 53.0 MB (53015216 bytes)
+-	Total v2 Content-Length: 53.0 MB (53015184 bytes)
 
 ### Layers (2)
 
@@ -329,7 +329,7 @@ CMD ["/bin/bash"]
 ## `debian:6.0.10`
 
 -	Total Virtual Size: 76.5 MB (76535900 bytes)
--	Total v2 Content-Length: 33.8 MB (33842576 bytes)
+-	Total v2 Content-Length: 33.8 MB (33842544 bytes)
 
 ### Layers (2)
 
@@ -363,7 +363,7 @@ CMD ["/bin/bash"]
 ## `debian:6.0`
 
 -	Total Virtual Size: 76.5 MB (76535900 bytes)
--	Total v2 Content-Length: 33.8 MB (33842576 bytes)
+-	Total v2 Content-Length: 33.8 MB (33842544 bytes)
 
 ### Layers (2)
 
@@ -397,7 +397,7 @@ CMD ["/bin/bash"]
 ## `debian:6`
 
 -	Total Virtual Size: 76.5 MB (76535900 bytes)
--	Total v2 Content-Length: 33.8 MB (33842576 bytes)
+-	Total v2 Content-Length: 33.8 MB (33842544 bytes)
 
 ### Layers (2)
 
@@ -431,7 +431,7 @@ CMD ["/bin/bash"]
 ## `debian:squeeze`
 
 -	Total Virtual Size: 76.5 MB (76535900 bytes)
--	Total v2 Content-Length: 33.8 MB (33842576 bytes)
+-	Total v2 Content-Length: 33.8 MB (33842544 bytes)
 
 ### Layers (2)
 
@@ -465,7 +465,7 @@ CMD ["/bin/bash"]
 ## `debian:stable`
 
 -	Total Virtual Size: 125.2 MB (125177528 bytes)
--	Total v2 Content-Length: 51.4 MB (51360903 bytes)
+-	Total v2 Content-Length: 51.4 MB (51360871 bytes)
 
 ### Layers (2)
 
@@ -498,8 +498,8 @@ CMD ["/bin/bash"]
 
 ## `debian:stable-backports`
 
--	Total Virtual Size: 125.2 MB (125177650 bytes)
--	Total v2 Content-Length: 51.4 MB (51361311 bytes)
+-	Total Virtual Size: 125.2 MB (125177589 bytes)
+-	Total v2 Content-Length: 51.4 MB (51361091 bytes)
 
 ### Layers (3)
 
@@ -547,7 +547,7 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 ## `debian:stretch`
 
 -	Total Virtual Size: 126.0 MB (126046560 bytes)
--	Total v2 Content-Length: 52.8 MB (52812639 bytes)
+-	Total v2 Content-Length: 52.8 MB (52812607 bytes)
 
 ### Layers (2)
 
@@ -581,7 +581,7 @@ CMD ["/bin/bash"]
 ## `debian:testing`
 
 -	Total Virtual Size: 126.0 MB (126046560 bytes)
--	Total v2 Content-Length: 52.8 MB (52812811 bytes)
+-	Total v2 Content-Length: 52.8 MB (52812779 bytes)
 
 ### Layers (2)
 
@@ -615,7 +615,7 @@ CMD ["/bin/bash"]
 ## `debian:unstable`
 
 -	Total Virtual Size: 126.5 MB (126464072 bytes)
--	Total v2 Content-Length: 53.0 MB (53015462 bytes)
+-	Total v2 Content-Length: 53.0 MB (53015430 bytes)
 
 ### Layers (2)
 
@@ -649,7 +649,7 @@ CMD ["/bin/bash"]
 ## `debian:7.9`
 
 -	Total Virtual Size: 84.9 MB (84924773 bytes)
--	Total v2 Content-Length: 37.2 MB (37191825 bytes)
+-	Total v2 Content-Length: 37.2 MB (37191793 bytes)
 
 ### Layers (2)
 
@@ -683,7 +683,7 @@ CMD ["/bin/bash"]
 ## `debian:7`
 
 -	Total Virtual Size: 84.9 MB (84924773 bytes)
--	Total v2 Content-Length: 37.2 MB (37191825 bytes)
+-	Total v2 Content-Length: 37.2 MB (37191793 bytes)
 
 ### Layers (2)
 
@@ -717,7 +717,7 @@ CMD ["/bin/bash"]
 ## `debian:wheezy`
 
 -	Total Virtual Size: 84.9 MB (84924773 bytes)
--	Total v2 Content-Length: 37.2 MB (37191825 bytes)
+-	Total v2 Content-Length: 37.2 MB (37191793 bytes)
 
 ### Layers (2)
 
@@ -750,8 +750,8 @@ CMD ["/bin/bash"]
 
 ## `debian:wheezy-backports`
 
--	Total Virtual Size: 84.9 MB (84924895 bytes)
--	Total v2 Content-Length: 37.2 MB (37192239 bytes)
+-	Total Virtual Size: 84.9 MB (84924834 bytes)
+-	Total v2 Content-Length: 37.2 MB (37192016 bytes)
 
 ### Layers (3)
 
@@ -798,8 +798,8 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 
 ## `debian:rc-buggy`
 
--	Total Virtual Size: 126.5 MB (126464173 bytes)
--	Total v2 Content-Length: 53.0 MB (53015626 bytes)
+-	Total Virtual Size: 126.5 MB (126464120 bytes)
+-	Total v2 Content-Length: 53.0 MB (53015405 bytes)
 
 ### Layers (3)
 
@@ -846,8 +846,8 @@ RUN awk '$1 ~ "^deb" { $3 = "rc-buggy"; print; exit }' /etc/apt/sources.list > /
 
 ## `debian:experimental`
 
--	Total Virtual Size: 126.5 MB (126464186 bytes)
--	Total v2 Content-Length: 53.0 MB (53015864 bytes)
+-	Total Virtual Size: 126.5 MB (126464129 bytes)
+-	Total v2 Content-Length: 53.0 MB (53015647 bytes)
 
 ### Layers (3)
 

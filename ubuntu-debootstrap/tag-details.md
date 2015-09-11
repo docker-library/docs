@@ -18,7 +18,7 @@
 ## `ubuntu-debootstrap:12.04.5`
 
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
--	Total v2 Content-Length: 35.6 MB (35567751 bytes)
+-	Total v2 Content-Length: 35.6 MB (35567719 bytes)
 
 ### Layers (2)
 
@@ -52,7 +52,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:12.04`
 
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
--	Total v2 Content-Length: 35.6 MB (35567751 bytes)
+-	Total v2 Content-Length: 35.6 MB (35567719 bytes)
 
 ### Layers (2)
 
@@ -86,7 +86,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:precise`
 
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
--	Total v2 Content-Length: 35.6 MB (35567751 bytes)
+-	Total v2 Content-Length: 35.6 MB (35567719 bytes)
 
 ### Layers (2)
 
@@ -120,7 +120,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:14.04.3`
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
--	Total v2 Content-Length: 34.9 MB (34865224 bytes)
+-	Total v2 Content-Length: 34.9 MB (34865192 bytes)
 
 ### Layers (2)
 
@@ -154,7 +154,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:14.04`
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
--	Total v2 Content-Length: 34.9 MB (34865224 bytes)
+-	Total v2 Content-Length: 34.9 MB (34865192 bytes)
 
 ### Layers (2)
 
@@ -188,7 +188,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:trusty`
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
--	Total v2 Content-Length: 34.9 MB (34865224 bytes)
+-	Total v2 Content-Length: 34.9 MB (34865192 bytes)
 
 ### Layers (2)
 
@@ -222,7 +222,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:latest`
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
--	Total v2 Content-Length: 34.9 MB (34865224 bytes)
+-	Total v2 Content-Length: 34.9 MB (34865192 bytes)
 
 ### Layers (2)
 
@@ -256,7 +256,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:15.04`
 
 -	Total Virtual Size: 110.2 MB (110150591 bytes)
--	Total v2 Content-Length: 43.5 MB (43452618 bytes)
+-	Total v2 Content-Length: 43.5 MB (43452586 bytes)
 
 ### Layers (2)
 
@@ -290,7 +290,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:vivid`
 
 -	Total Virtual Size: 110.2 MB (110150591 bytes)
--	Total v2 Content-Length: 43.5 MB (43452618 bytes)
+-	Total v2 Content-Length: 43.5 MB (43452586 bytes)
 
 ### Layers (2)
 
@@ -324,7 +324,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:15.10`
 
 -	Total Virtual Size: 111.0 MB (110989448 bytes)
--	Total v2 Content-Length: 44.4 MB (44394360 bytes)
+-	Total v2 Content-Length: 44.4 MB (44394328 bytes)
 
 ### Layers (2)
 
@@ -358,7 +358,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:wily`
 
 -	Total Virtual Size: 111.0 MB (110989448 bytes)
--	Total v2 Content-Length: 44.4 MB (44394360 bytes)
+-	Total v2 Content-Length: 44.4 MB (44394328 bytes)
 
 ### Layers (2)
 
@@ -392,7 +392,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:devel`
 
 -	Total Virtual Size: 111.0 MB (110989451 bytes)
--	Total v2 Content-Length: 44.4 MB (44394594 bytes)
+-	Total v2 Content-Length: 44.4 MB (44394562 bytes)
 
 ### Layers (2)
 

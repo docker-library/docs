@@ -7,130 +7,130 @@
 
 ## `aerospike:3.5.15`
 
--	Total Virtual Size: 147.6 MB (147635823 bytes)
--	Total v2 Content-Length: 58.7 MB (58659359 bytes)
+-	Total Virtual Size: 147.6 MB (147579762 bytes)
+-	Total v2 Content-Length: 58.6 MB (58644508 bytes)
 
 ### Layers (9)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `354d393b5b59857d793c39ec42b1c3f247bad36d5b8b45933220396af093a721`
+#### `d3af704b115e09c24a403180544311da5fd560c3f8c61c2a01b8ceaf0e37d67c`
 
 ```dockerfile
 ENV AEROSPIKE_VERSION=3.5.15
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:14 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Thu, 10 Sep 2015 03:11:54 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3c5f718430502849740dbad49c16a2200299ed082273f0e104da890f170af6a3`
+#### `dce295c11e516e9c3d84004cf6adfb8a055a2a12160a5f4f897785aad230c126`
 
 ```dockerfile
 ENV AEROSPIKE_SHA256=d6a9055b269959f257d7c51ef43c2e0960fb5518098714b871e77d9659ccb905
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:15 GMT
--	Parent Layer: `354d393b5b59857d793c39ec42b1c3f247bad36d5b8b45933220396af093a721`
+-	Created: Thu, 10 Sep 2015 03:11:55 GMT
+-	Parent Layer: `d3af704b115e09c24a403180544311da5fd560c3f8c61c2a01b8ceaf0e37d67c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2c7e851443c65b712b32060a31305b47f962b7529cc80ad289d13a1be66219cc`
+#### `f170ab5839f09c759db45a3c3d1821fe8f53eebef6530059ef9318b17003faa6`
 
 ```dockerfile
 RUN apt-get update -y   && apt-get install -y wget logrotate ca-certificates   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-debian7.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && apt-get purge -y --auto-remove wget ca-certificates   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:48 GMT
--	Parent Layer: `3c5f718430502849740dbad49c16a2200299ed082273f0e104da890f170af6a3`
+-	Created: Thu, 10 Sep 2015 03:12:22 GMT
+-	Parent Layer: `dce295c11e516e9c3d84004cf6adfb8a055a2a12160a5f4f897785aad230c126`
 -	Docker Version: 1.7.1
--	Virtual Size: 62.7 MB (62662641 bytes)
--	v2 Blob: `sha256:fb233d2485bb90905d3f99106fce55d343eefbd2a34601b075ba03f22c534413`
--	v2 Content-Length: 21.5 MB (21450435 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:02:06 GMT
+-	Virtual Size: 62.7 MB (62653447 bytes)
+-	v2 Blob: `sha256:240201e93e9f61f9155c40ea7ff4421478cf4a06110aa5e341a803d0f9f81721`
+-	v2 Content-Length: 21.5 MB (21451588 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:25:51 GMT
 
-#### `97b1fbcf1ab8485bec4758e8abf306ad4a724bec0192e15d81b774d5af5f2226`
+#### `766ee94667f89e50a0fabb2c9f7c14218c606f316d942f8fc0dbc90158f44732`
 
 ```dockerfile
 ADD file:6715f61976fdbc36de3e901e4a640f0271ad2506c4349b04a328236743406843 in /etc/aerospike/aerospike.conf
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:49 GMT
--	Parent Layer: `2c7e851443c65b712b32060a31305b47f962b7529cc80ad289d13a1be66219cc`
+-	Created: Thu, 10 Sep 2015 03:12:23 GMT
+-	Parent Layer: `f170ab5839f09c759db45a3c3d1821fe8f53eebef6530059ef9318b17003faa6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.5 KB (1542 bytes)
--	v2 Blob: `sha256:3dc9486c8785410755eca89a268d7b602773b47f92d83b0160c1af3264bf1a9c`
--	v2 Content-Length: 968.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 18:01:53 GMT
+-	v2 Blob: `sha256:da935556f76f7efe7d4bf9165498d5732bddccbc449f4b14e97f12460db9ba83`
+-	v2 Content-Length: 967.0 B
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:25:26 GMT
 
-#### `20cc8744c14667a51e609540cd70b3e1971daac2cba7836677217c2e5434621b`
+#### `ba9d9b45d7c72cd8e91dbaaa3a96e80b3cf76a9b578c83afc8ee02b378f0ff11`
 
 ```dockerfile
 VOLUME [/opt/aerospike/data]
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:50 GMT
--	Parent Layer: `97b1fbcf1ab8485bec4758e8abf306ad4a724bec0192e15d81b774d5af5f2226`
+-	Created: Thu, 10 Sep 2015 03:12:24 GMT
+-	Parent Layer: `766ee94667f89e50a0fabb2c9f7c14218c606f316d942f8fc0dbc90158f44732`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb8e14b9a642f7399544fe200aadcf01d278d275b48918afc995db47566c0509`
+#### `57241db8e25b2a4ecef644bef81514049ce893b21ed6e4098f792d0484c94547`
 
 ```dockerfile
 EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:51 GMT
--	Parent Layer: `20cc8744c14667a51e609540cd70b3e1971daac2cba7836677217c2e5434621b`
+-	Created: Thu, 10 Sep 2015 03:12:24 GMT
+-	Parent Layer: `ba9d9b45d7c72cd8e91dbaaa3a96e80b3cf76a9b578c83afc8ee02b378f0ff11`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `97cfb26aed4030e51d45d3011d75a64b0a91531135425c44debf8dd8d139c95c`
+#### `57c959ec6dd6570c66f965bce0947636fe78501486d90331f163e75e84538875`
 
 ```dockerfile
 CMD ["/usr/bin/asd" "--foreground"]
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:52 GMT
--	Parent Layer: `fb8e14b9a642f7399544fe200aadcf01d278d275b48918afc995db47566c0509`
+-	Created: Thu, 10 Sep 2015 03:12:24 GMT
+-	Parent Layer: `57241db8e25b2a4ecef644bef81514049ce893b21ed6e4098f792d0484c94547`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -139,130 +139,130 @@ CMD ["/usr/bin/asd" "--foreground"]
 
 ## `aerospike:latest`
 
--	Total Virtual Size: 147.6 MB (147635823 bytes)
--	Total v2 Content-Length: 58.7 MB (58659391 bytes)
+-	Total Virtual Size: 147.6 MB (147579762 bytes)
+-	Total v2 Content-Length: 58.6 MB (58644508 bytes)
 
 ### Layers (9)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `354d393b5b59857d793c39ec42b1c3f247bad36d5b8b45933220396af093a721`
+#### `d3af704b115e09c24a403180544311da5fd560c3f8c61c2a01b8ceaf0e37d67c`
 
 ```dockerfile
 ENV AEROSPIKE_VERSION=3.5.15
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:14 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Thu, 10 Sep 2015 03:11:54 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3c5f718430502849740dbad49c16a2200299ed082273f0e104da890f170af6a3`
+#### `dce295c11e516e9c3d84004cf6adfb8a055a2a12160a5f4f897785aad230c126`
 
 ```dockerfile
 ENV AEROSPIKE_SHA256=d6a9055b269959f257d7c51ef43c2e0960fb5518098714b871e77d9659ccb905
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:15 GMT
--	Parent Layer: `354d393b5b59857d793c39ec42b1c3f247bad36d5b8b45933220396af093a721`
+-	Created: Thu, 10 Sep 2015 03:11:55 GMT
+-	Parent Layer: `d3af704b115e09c24a403180544311da5fd560c3f8c61c2a01b8ceaf0e37d67c`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2c7e851443c65b712b32060a31305b47f962b7529cc80ad289d13a1be66219cc`
+#### `f170ab5839f09c759db45a3c3d1821fe8f53eebef6530059ef9318b17003faa6`
 
 ```dockerfile
 RUN apt-get update -y   && apt-get install -y wget logrotate ca-certificates   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-debian7.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && apt-get purge -y --auto-remove wget ca-certificates   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:48 GMT
--	Parent Layer: `3c5f718430502849740dbad49c16a2200299ed082273f0e104da890f170af6a3`
+-	Created: Thu, 10 Sep 2015 03:12:22 GMT
+-	Parent Layer: `dce295c11e516e9c3d84004cf6adfb8a055a2a12160a5f4f897785aad230c126`
 -	Docker Version: 1.7.1
--	Virtual Size: 62.7 MB (62662641 bytes)
--	v2 Blob: `sha256:fb233d2485bb90905d3f99106fce55d343eefbd2a34601b075ba03f22c534413`
--	v2 Content-Length: 21.5 MB (21450435 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:02:06 GMT
+-	Virtual Size: 62.7 MB (62653447 bytes)
+-	v2 Blob: `sha256:240201e93e9f61f9155c40ea7ff4421478cf4a06110aa5e341a803d0f9f81721`
+-	v2 Content-Length: 21.5 MB (21451588 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:25:51 GMT
 
-#### `97b1fbcf1ab8485bec4758e8abf306ad4a724bec0192e15d81b774d5af5f2226`
+#### `766ee94667f89e50a0fabb2c9f7c14218c606f316d942f8fc0dbc90158f44732`
 
 ```dockerfile
 ADD file:6715f61976fdbc36de3e901e4a640f0271ad2506c4349b04a328236743406843 in /etc/aerospike/aerospike.conf
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:49 GMT
--	Parent Layer: `2c7e851443c65b712b32060a31305b47f962b7529cc80ad289d13a1be66219cc`
+-	Created: Thu, 10 Sep 2015 03:12:23 GMT
+-	Parent Layer: `f170ab5839f09c759db45a3c3d1821fe8f53eebef6530059ef9318b17003faa6`
 -	Docker Version: 1.7.1
 -	Virtual Size: 1.5 KB (1542 bytes)
--	v2 Blob: `sha256:3dc9486c8785410755eca89a268d7b602773b47f92d83b0160c1af3264bf1a9c`
--	v2 Content-Length: 968.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 18:01:53 GMT
+-	v2 Blob: `sha256:da935556f76f7efe7d4bf9165498d5732bddccbc449f4b14e97f12460db9ba83`
+-	v2 Content-Length: 967.0 B
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:25:26 GMT
 
-#### `20cc8744c14667a51e609540cd70b3e1971daac2cba7836677217c2e5434621b`
+#### `ba9d9b45d7c72cd8e91dbaaa3a96e80b3cf76a9b578c83afc8ee02b378f0ff11`
 
 ```dockerfile
 VOLUME [/opt/aerospike/data]
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:50 GMT
--	Parent Layer: `97b1fbcf1ab8485bec4758e8abf306ad4a724bec0192e15d81b774d5af5f2226`
+-	Created: Thu, 10 Sep 2015 03:12:24 GMT
+-	Parent Layer: `766ee94667f89e50a0fabb2c9f7c14218c606f316d942f8fc0dbc90158f44732`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb8e14b9a642f7399544fe200aadcf01d278d275b48918afc995db47566c0509`
+#### `57241db8e25b2a4ecef644bef81514049ce893b21ed6e4098f792d0484c94547`
 
 ```dockerfile
 EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:51 GMT
--	Parent Layer: `20cc8744c14667a51e609540cd70b3e1971daac2cba7836677217c2e5434621b`
+-	Created: Thu, 10 Sep 2015 03:12:24 GMT
+-	Parent Layer: `ba9d9b45d7c72cd8e91dbaaa3a96e80b3cf76a9b578c83afc8ee02b378f0ff11`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `97cfb26aed4030e51d45d3011d75a64b0a91531135425c44debf8dd8d139c95c`
+#### `57c959ec6dd6570c66f965bce0947636fe78501486d90331f163e75e84538875`
 
 ```dockerfile
 CMD ["/usr/bin/asd" "--foreground"]
 ```
 
--	Created: Mon, 24 Aug 2015 23:30:52 GMT
--	Parent Layer: `fb8e14b9a642f7399544fe200aadcf01d278d275b48918afc995db47566c0509`
+-	Created: Thu, 10 Sep 2015 03:12:24 GMT
+-	Parent Layer: `57241db8e25b2a4ecef644bef81514049ce893b21ed6e4098f792d0484c94547`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`

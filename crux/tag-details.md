@@ -8,7 +8,7 @@
 ## `crux:latest`
 
 -	Total Virtual Size: 341.7 MB (341729815 bytes)
--	Total v2 Content-Length: 122.3 MB (122252563 bytes)
+-	Total v2 Content-Length: 122.3 MB (122252531 bytes)
 
 ### Layers (3)
 
@@ -56,7 +56,7 @@ CMD ["/bin/bash"]
 ## `crux:3.1`
 
 -	Total Virtual Size: 341.7 MB (341729815 bytes)
--	Total v2 Content-Length: 122.3 MB (122252563 bytes)
+-	Total v2 Content-Length: 122.3 MB (122252531 bytes)
 
 ### Layers (3)
 

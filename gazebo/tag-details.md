@@ -13,7 +13,7 @@
 ## `gazebo:gzserver4`
 
 -	Total Virtual Size: 530.1 MB (530097244 bytes)
--	Total v2 Content-Length: 210.0 MB (209964859 bytes)
+-	Total v2 Content-Length: 210.0 MB (209964832 bytes)
 
 ### Layers (12)
 
@@ -137,9 +137,9 @@ RUN apt-get update && apt-get install -q -y\
 -	Parent Layer: `0ee8342ea1a9c41ed2636bd87ed1a7a8fe9b1eed0d6304195babd3cd0a288c89`
 -	Docker Version: 1.7.1
 -	Virtual Size: 341.1 MB (341122230 bytes)
--	v2 Blob: `sha256:d2d940192d4de00fb8a9c05538c84fb6765b91a5b47f6b3bba91afbebe6adf19`
--	v2 Content-Length: 143.9 MB (143868567 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 20:52:00 GMT
+-	v2 Blob: `sha256:0e1139bc9c7aee1e7475afae80a920cc37f55018887e05b30bd1a22075682725`
+-	v2 Content-Length: 143.9 MB (143868572 bytes)
+-	v2 Last-Modified: Wed, 26 Aug 2015 20:58:50 GMT
 
 #### `24042e6a9ffe51272351cf4dfcc86edcbe1ee30260500ad9737083672eae8c59`
 
@@ -199,8 +199,8 @@ CMD ["gzserver"]
 
 ## `gazebo:libgazebo4`
 
--	Total Virtual Size: 2.0 GB (1973636382 bytes)
--	Total v2 Content-Length: 665.5 MB (665470283 bytes)
+-	Total Virtual Size: 1.3 GB (1251866813 bytes)
+-	Total v2 Content-Length: 437.7 MB (437717576 bytes)
 
 ### Layers (14)
 
@@ -324,9 +324,9 @@ RUN apt-get update && apt-get install -q -y\
 -	Parent Layer: `0ee8342ea1a9c41ed2636bd87ed1a7a8fe9b1eed0d6304195babd3cd0a288c89`
 -	Docker Version: 1.7.1
 -	Virtual Size: 341.1 MB (341122230 bytes)
--	v2 Blob: `sha256:d2d940192d4de00fb8a9c05538c84fb6765b91a5b47f6b3bba91afbebe6adf19`
--	v2 Content-Length: 143.9 MB (143868567 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 20:52:00 GMT
+-	v2 Blob: `sha256:0e1139bc9c7aee1e7475afae80a920cc37f55018887e05b30bd1a22075682725`
+-	v2 Content-Length: 143.9 MB (143868572 bytes)
+-	v2 Last-Modified: Wed, 26 Aug 2015 20:58:50 GMT
 
 #### `24042e6a9ffe51272351cf4dfcc86edcbe1ee30260500ad9737083672eae8c59`
 
@@ -417,7 +417,7 @@ RUN apt-get update && apt-get install -q -y\
 ## `gazebo:gzserver5`
 
 -	Total Virtual Size: 566.5 MB (566502997 bytes)
--	Total v2 Content-Length: 230.6 MB (230563412 bytes)
+-	Total v2 Content-Length: 230.6 MB (230563377 bytes)
 
 ### Layers (12)
 
@@ -541,9 +541,9 @@ RUN apt-get update && apt-get install -q -y\
 -	Parent Layer: `0ee8342ea1a9c41ed2636bd87ed1a7a8fe9b1eed0d6304195babd3cd0a288c89`
 -	Docker Version: 1.7.1
 -	Virtual Size: 377.5 MB (377527983 bytes)
--	v2 Blob: `sha256:7ae9001b87c9be615d8f412b65974506de889ed122f3a9d93d0e5bb5bf55305a`
--	v2 Content-Length: 164.5 MB (164467151 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 21:03:21 GMT
+-	v2 Blob: `sha256:93e3499a864e2b57620495c26128d715e9db7ffb91dde7d32c2b1d2788137c2c`
+-	v2 Content-Length: 164.5 MB (164467116 bytes)
+-	v2 Last-Modified: Wed, 26 Aug 2015 21:04:51 GMT
 
 #### `0a0b9b937613d254eb7911d4196522da333633642a81d6a054f13bb204514e35`
 
@@ -604,7 +604,7 @@ CMD ["gzserver"]
 ## `gazebo:libgazebo5`
 
 -	Total Virtual Size: 1.4 GB (1416896550 bytes)
--	Total v2 Content-Length: 487.2 MB (487240909 bytes)
+-	Total v2 Content-Length: 487.2 MB (487240874 bytes)
 
 ### Layers (14)
 
@@ -728,9 +728,9 @@ RUN apt-get update && apt-get install -q -y\
 -	Parent Layer: `0ee8342ea1a9c41ed2636bd87ed1a7a8fe9b1eed0d6304195babd3cd0a288c89`
 -	Docker Version: 1.7.1
 -	Virtual Size: 377.5 MB (377527983 bytes)
--	v2 Blob: `sha256:7ae9001b87c9be615d8f412b65974506de889ed122f3a9d93d0e5bb5bf55305a`
--	v2 Content-Length: 164.5 MB (164467151 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 21:03:21 GMT
+-	v2 Blob: `sha256:93e3499a864e2b57620495c26128d715e9db7ffb91dde7d32c2b1d2788137c2c`
+-	v2 Content-Length: 164.5 MB (164467116 bytes)
+-	v2 Last-Modified: Wed, 26 Aug 2015 21:04:51 GMT
 
 #### `0a0b9b937613d254eb7911d4196522da333633642a81d6a054f13bb204514e35`
 
@@ -1224,8 +1224,8 @@ RUN apt-get update && apt-get install -q -y\
 
 ## `gazebo:latest`
 
--	Total Virtual Size: 2.2 GB (2229398675 bytes)
--	Total v2 Content-Length: 726.7 MB (726738860 bytes)
+-	Total Virtual Size: 1.4 GB (1401205055 bytes)
+-	Total v2 Content-Length: 480.6 MB (480647412 bytes)
 
 ### Layers (14)
 

@@ -43,8 +43,8 @@ ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
 
 ## `opensuse:harlequin`
 
--	Total Virtual Size: 188.0 MB (188002816 bytes)
--	Total v2 Content-Length: 73.9 MB (73890624 bytes)
+-	Total Virtual Size: 94.0 MB (94001408 bytes)
+-	Total v2 Content-Length: 36.9 MB (36945328 bytes)
 
 ### Layers (2)
 
@@ -77,8 +77,8 @@ ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
 
 ## `opensuse:latest`
 
--	Total Virtual Size: 188.0 MB (188002816 bytes)
--	Total v2 Content-Length: 73.9 MB (73890624 bytes)
+-	Total Virtual Size: 94.0 MB (94001408 bytes)
+-	Total v2 Content-Length: 36.9 MB (36945328 bytes)
 
 ### Layers (2)
 

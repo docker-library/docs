@@ -84,7 +84,7 @@ CMD ["/sbin/init"]
 ## `cirros:0.3.3`
 
 -	Total Virtual Size: 7.7 MB (7698435 bytes)
--	Total v2 Content-Length: 3.5 MB (3529347 bytes)
+-	Total v2 Content-Length: 3.5 MB (3529315 bytes)
 
 ### Layers (5)
 

@@ -11,95 +11,95 @@
 
 ## `haproxy:1.4.26`
 
--	Total Virtual Size: 92.1 MB (92104302 bytes)
--	Total v2 Content-Length: 40.2 MB (40219599 bytes)
+-	Total Virtual Size: 92.0 MB (92036157 bytes)
+-	Total v2 Content-Length: 40.2 MB (40203275 bytes)
 
 ### Layers (8)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1790b052e3efff537d3187bada5fa00b803f985c9afd6f2508b8272ad85daa28`
+#### `ce624d299e23790b988bb968e5fded9b62cbd1d521d922ae1fe1796509e661d4`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libpcre3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:09 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 21:31:45 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
--	Virtual Size: 762.7 KB (762663 bytes)
--	v2 Blob: `sha256:5116efe84e6803355a6191bcd99cb61853506dc36759bfc78d0d97af3d9c34e6`
--	v2 Content-Length: 330.3 KB (330278 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:20:22 GMT
+-	Virtual Size: 750.6 KB (750579 bytes)
+-	v2 Blob: `sha256:c77c6ac38640c1d194dfac91a41df18d267f4b4bdf8b7b8bb39eef65af6212c2`
+-	v2 Content-Length: 329.4 KB (329386 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:56:47 GMT
 
-#### `c30a1ba12d80a293ed18a6806dd0c01f6738cfa8e2d613e7eea518af0d4b12c5`
+#### `b4ef64e449e57243bccb2928d9be1e82a8879a7cf277f98c31b55adb01dc1ea8`
 
 ```dockerfile
 ENV HAPROXY_MAJOR=1.4
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:09 GMT
--	Parent Layer: `1790b052e3efff537d3187bada5fa00b803f985c9afd6f2508b8272ad85daa28`
+-	Created: Wed, 09 Sep 2015 21:31:46 GMT
+-	Parent Layer: `ce624d299e23790b988bb968e5fded9b62cbd1d521d922ae1fe1796509e661d4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `870f6dd7418ffc672d681e330daf9305f7226213480d58fc87bea68bea82210d`
+#### `6c90e2bc30e23ab0ed1b304b2f8d484ffcfa2b356034bac549ef491e984b8851`
 
 ```dockerfile
 ENV HAPROXY_VERSION=1.4.26
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:10 GMT
--	Parent Layer: `c30a1ba12d80a293ed18a6806dd0c01f6738cfa8e2d613e7eea518af0d4b12c5`
+-	Created: Wed, 09 Sep 2015 21:31:46 GMT
+-	Parent Layer: `b4ef64e449e57243bccb2928d9be1e82a8879a7cf277f98c31b55adb01dc1ea8`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `09bd2593fb71d1e485f8836f9b90f242780275cb47cde4e4680fe8800065f2dc`
+#### `dc07b977d305ebfe6f2b06bcac03a3537a8d7b4130554a4b694684e173511a40`
 
 ```dockerfile
 ENV HAPROXY_MD5=0606180bb01d9b91b49e6ca16e681172
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:10 GMT
--	Parent Layer: `870f6dd7418ffc672d681e330daf9305f7226213480d58fc87bea68bea82210d`
+-	Created: Wed, 09 Sep 2015 21:31:47 GMT
+-	Parent Layer: `6c90e2bc30e23ab0ed1b304b2f8d484ffcfa2b356034bac549ef491e984b8851`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0d8abab49c1e9a2b0e4c84e0e302d6da08981e3d7e69114aa51b99526a5e1d0f`
+#### `490e97937b46d21c244b357e0aaad394d0fc4f3106ee2ec431278ddf6255cdf7`
 
 ```dockerfile
 RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
@@ -123,22 +123,22 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:45 GMT
--	Parent Layer: `09bd2593fb71d1e485f8836f9b90f242780275cb47cde4e4680fe8800065f2dc`
+-	Created: Wed, 09 Sep 2015 21:32:26 GMT
+-	Parent Layer: `dc07b977d305ebfe6f2b06bcac03a3537a8d7b4130554a4b694684e173511a40`
 -	Docker Version: 1.7.1
--	Virtual Size: 6.4 MB (6369999 bytes)
--	v2 Blob: `sha256:3aae3d880872c5e5610553e1e154dbe9236c09e515d3ffeec515b9ac345baf6b`
--	v2 Content-Length: 2.7 MB (2681397 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:20:14 GMT
+-	Virtual Size: 6.4 MB (6360805 bytes)
+-	v2 Blob: `sha256:c680cd5c44bf4dca4d4bdb81628d4d9101f460d11cfb5aafb07aab0dc08fddb1`
+-	v2 Content-Length: 2.7 MB (2681968 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:56:30 GMT
 
-#### `0bcb5b8ce7041ea715356a815fd0020394ca51621812bf644748f1783b7453e1`
+#### `08698f1676f8bfe527ed175e18e4852fbdfddc955766cdd0194a88f78c935d66`
 
 ```dockerfile
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:46 GMT
--	Parent Layer: `0d8abab49c1e9a2b0e4c84e0e302d6da08981e3d7e69114aa51b99526a5e1d0f`
+-	Created: Wed, 09 Sep 2015 21:32:28 GMT
+-	Parent Layer: `490e97937b46d21c244b357e0aaad394d0fc4f3106ee2ec431278ddf6255cdf7`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -147,95 +147,95 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 ## `haproxy:1.4`
 
--	Total Virtual Size: 92.1 MB (92104302 bytes)
--	Total v2 Content-Length: 40.2 MB (40219631 bytes)
+-	Total Virtual Size: 92.0 MB (92036157 bytes)
+-	Total v2 Content-Length: 40.2 MB (40203275 bytes)
 
 ### Layers (8)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1790b052e3efff537d3187bada5fa00b803f985c9afd6f2508b8272ad85daa28`
+#### `ce624d299e23790b988bb968e5fded9b62cbd1d521d922ae1fe1796509e661d4`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libpcre3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:09 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 21:31:45 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
--	Virtual Size: 762.7 KB (762663 bytes)
--	v2 Blob: `sha256:5116efe84e6803355a6191bcd99cb61853506dc36759bfc78d0d97af3d9c34e6`
--	v2 Content-Length: 330.3 KB (330278 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:20:22 GMT
+-	Virtual Size: 750.6 KB (750579 bytes)
+-	v2 Blob: `sha256:c77c6ac38640c1d194dfac91a41df18d267f4b4bdf8b7b8bb39eef65af6212c2`
+-	v2 Content-Length: 329.4 KB (329386 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:56:47 GMT
 
-#### `c30a1ba12d80a293ed18a6806dd0c01f6738cfa8e2d613e7eea518af0d4b12c5`
+#### `b4ef64e449e57243bccb2928d9be1e82a8879a7cf277f98c31b55adb01dc1ea8`
 
 ```dockerfile
 ENV HAPROXY_MAJOR=1.4
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:09 GMT
--	Parent Layer: `1790b052e3efff537d3187bada5fa00b803f985c9afd6f2508b8272ad85daa28`
+-	Created: Wed, 09 Sep 2015 21:31:46 GMT
+-	Parent Layer: `ce624d299e23790b988bb968e5fded9b62cbd1d521d922ae1fe1796509e661d4`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `870f6dd7418ffc672d681e330daf9305f7226213480d58fc87bea68bea82210d`
+#### `6c90e2bc30e23ab0ed1b304b2f8d484ffcfa2b356034bac549ef491e984b8851`
 
 ```dockerfile
 ENV HAPROXY_VERSION=1.4.26
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:10 GMT
--	Parent Layer: `c30a1ba12d80a293ed18a6806dd0c01f6738cfa8e2d613e7eea518af0d4b12c5`
+-	Created: Wed, 09 Sep 2015 21:31:46 GMT
+-	Parent Layer: `b4ef64e449e57243bccb2928d9be1e82a8879a7cf277f98c31b55adb01dc1ea8`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `09bd2593fb71d1e485f8836f9b90f242780275cb47cde4e4680fe8800065f2dc`
+#### `dc07b977d305ebfe6f2b06bcac03a3537a8d7b4130554a4b694684e173511a40`
 
 ```dockerfile
 ENV HAPROXY_MD5=0606180bb01d9b91b49e6ca16e681172
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:10 GMT
--	Parent Layer: `870f6dd7418ffc672d681e330daf9305f7226213480d58fc87bea68bea82210d`
+-	Created: Wed, 09 Sep 2015 21:31:47 GMT
+-	Parent Layer: `6c90e2bc30e23ab0ed1b304b2f8d484ffcfa2b356034bac549ef491e984b8851`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0d8abab49c1e9a2b0e4c84e0e302d6da08981e3d7e69114aa51b99526a5e1d0f`
+#### `490e97937b46d21c244b357e0aaad394d0fc4f3106ee2ec431278ddf6255cdf7`
 
 ```dockerfile
 RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
@@ -259,22 +259,22 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:45 GMT
--	Parent Layer: `09bd2593fb71d1e485f8836f9b90f242780275cb47cde4e4680fe8800065f2dc`
+-	Created: Wed, 09 Sep 2015 21:32:26 GMT
+-	Parent Layer: `dc07b977d305ebfe6f2b06bcac03a3537a8d7b4130554a4b694684e173511a40`
 -	Docker Version: 1.7.1
--	Virtual Size: 6.4 MB (6369999 bytes)
--	v2 Blob: `sha256:3aae3d880872c5e5610553e1e154dbe9236c09e515d3ffeec515b9ac345baf6b`
--	v2 Content-Length: 2.7 MB (2681397 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:20:14 GMT
+-	Virtual Size: 6.4 MB (6360805 bytes)
+-	v2 Blob: `sha256:c680cd5c44bf4dca4d4bdb81628d4d9101f460d11cfb5aafb07aab0dc08fddb1`
+-	v2 Content-Length: 2.7 MB (2681968 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:56:30 GMT
 
-#### `0bcb5b8ce7041ea715356a815fd0020394ca51621812bf644748f1783b7453e1`
+#### `08698f1676f8bfe527ed175e18e4852fbdfddc955766cdd0194a88f78c935d66`
 
 ```dockerfile
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:17:46 GMT
--	Parent Layer: `0d8abab49c1e9a2b0e4c84e0e302d6da08981e3d7e69114aa51b99526a5e1d0f`
+-	Created: Wed, 09 Sep 2015 21:32:28 GMT
+-	Parent Layer: `490e97937b46d21c244b357e0aaad394d0fc4f3106ee2ec431278ddf6255cdf7`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -283,95 +283,95 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 ## `haproxy:1.5.14`
 
--	Total Virtual Size: 97.9 MB (97903285 bytes)
--	Total v2 Content-Length: 42.7 MB (42716480 bytes)
+-	Total Virtual Size: 97.8 MB (97835140 bytes)
+-	Total v2 Content-Length: 42.7 MB (42700111 bytes)
 
 ### Layers (8)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `63c86e8e4b3721775aa6e2c479c3880e0399a88bfa36d873c9af7b0f97775b85`
+#### `fda785d6b841cbaad90e65558ae55104a540348e4596a3ce6bf34c0f800d3033`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:20 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 21:33:22 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
--	Virtual Size: 4.8 MB (4778607 bytes)
--	v2 Blob: `sha256:0653546fa43df342027d2b265fe8c2c97f1ba1ea4776938125a6016094a07761`
--	v2 Content-Length: 1.9 MB (1879132 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:21:43 GMT
+-	Virtual Size: 4.8 MB (4769413 bytes)
+-	v2 Blob: `sha256:5b90e59957c76d08e7305e94a1d5649e06e72324f549a3fba3be094090913508`
+-	v2 Content-Length: 1.9 MB (1879468 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:58:39 GMT
 
-#### `dd04779290398e605e82dcbf582722012d0a60659c3882537bb43269989c9174`
+#### `725472d794152ecfa261f0545d74a075561074dcd50936946dbd9455b0c3fda1`
 
 ```dockerfile
 ENV HAPROXY_MAJOR=1.5
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:20 GMT
--	Parent Layer: `63c86e8e4b3721775aa6e2c479c3880e0399a88bfa36d873c9af7b0f97775b85`
+-	Created: Wed, 09 Sep 2015 21:33:24 GMT
+-	Parent Layer: `fda785d6b841cbaad90e65558ae55104a540348e4596a3ce6bf34c0f800d3033`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `75655d8d3b3dc6487ffa805d3cdc1d5f5188a495fdf875a5c87114469f27eb74`
+#### `a355d95013235ca9037939fcce11be34ff9ab87926c2795633ba0514214fa264`
 
 ```dockerfile
 ENV HAPROXY_VERSION=1.5.14
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:21 GMT
--	Parent Layer: `dd04779290398e605e82dcbf582722012d0a60659c3882537bb43269989c9174`
+-	Created: Wed, 09 Sep 2015 21:33:25 GMT
+-	Parent Layer: `725472d794152ecfa261f0545d74a075561074dcd50936946dbd9455b0c3fda1`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1df4fc731070551eb704a994dba08dcc6f505c60163761b083b02ec161d3ea84`
+#### `d9418e93c870673d54416e86355d606586ae8090f95c1b35c49a5121011e8367`
 
 ```dockerfile
 ENV HAPROXY_MD5=ad9d7262b96ba85a0f8c6acc6cb9edde
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:21 GMT
--	Parent Layer: `75655d8d3b3dc6487ffa805d3cdc1d5f5188a495fdf875a5c87114469f27eb74`
+-	Created: Wed, 09 Sep 2015 21:33:27 GMT
+-	Parent Layer: `a355d95013235ca9037939fcce11be34ff9ab87926c2795633ba0514214fa264`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `cf9a148af3460e3b3124a257bfa608e77eaaec837c88553ec584ec7e3b9fb695`
+#### `82b1df1ce920b2ebdba3e0439f81338d23ae75d8b86c6d53491804155d0c51ed`
 
 ```dockerfile
 RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
@@ -395,22 +395,22 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Mon, 24 Aug 2015 18:19:19 GMT
--	Parent Layer: `1df4fc731070551eb704a994dba08dcc6f505c60163761b083b02ec161d3ea84`
+-	Created: Wed, 09 Sep 2015 21:34:19 GMT
+-	Parent Layer: `d9418e93c870673d54416e86355d606586ae8090f95c1b35c49a5121011e8367`
 -	Docker Version: 1.7.1
--	Virtual Size: 8.2 MB (8153038 bytes)
--	v2 Blob: `sha256:ce2dde318e6b3b9c433a27169b5cdf52eda391b97c0b72c9896f505813682c5d`
--	v2 Content-Length: 3.6 MB (3629424 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:21:35 GMT
+-	Virtual Size: 8.1 MB (8140954 bytes)
+-	v2 Blob: `sha256:e689bc5b148db7548c3d0c7a98ca5c7d968952b6724b335e150708e468558d2d`
+-	v2 Content-Length: 3.6 MB (3628722 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:58:21 GMT
 
-#### `5e72a3468175f59269c8318d631d99ed9ae4f3b4dfad92ce9a48166db8a0d752`
+#### `b225626aa2521bfc97201c3aac928779e0bae38fb15f6073674d087e79a8d410`
 
 ```dockerfile
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:19:20 GMT
--	Parent Layer: `cf9a148af3460e3b3124a257bfa608e77eaaec837c88553ec584ec7e3b9fb695`
+-	Created: Wed, 09 Sep 2015 21:34:19 GMT
+-	Parent Layer: `82b1df1ce920b2ebdba3e0439f81338d23ae75d8b86c6d53491804155d0c51ed`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -419,95 +419,95 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 ## `haproxy:1.5`
 
--	Total Virtual Size: 97.9 MB (97903285 bytes)
--	Total v2 Content-Length: 42.7 MB (42716512 bytes)
+-	Total Virtual Size: 97.8 MB (97835140 bytes)
+-	Total v2 Content-Length: 42.7 MB (42700111 bytes)
 
 ### Layers (8)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `63c86e8e4b3721775aa6e2c479c3880e0399a88bfa36d873c9af7b0f97775b85`
+#### `fda785d6b841cbaad90e65558ae55104a540348e4596a3ce6bf34c0f800d3033`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:20 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 21:33:22 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
--	Virtual Size: 4.8 MB (4778607 bytes)
--	v2 Blob: `sha256:0653546fa43df342027d2b265fe8c2c97f1ba1ea4776938125a6016094a07761`
--	v2 Content-Length: 1.9 MB (1879132 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:21:43 GMT
+-	Virtual Size: 4.8 MB (4769413 bytes)
+-	v2 Blob: `sha256:5b90e59957c76d08e7305e94a1d5649e06e72324f549a3fba3be094090913508`
+-	v2 Content-Length: 1.9 MB (1879468 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:58:39 GMT
 
-#### `dd04779290398e605e82dcbf582722012d0a60659c3882537bb43269989c9174`
+#### `725472d794152ecfa261f0545d74a075561074dcd50936946dbd9455b0c3fda1`
 
 ```dockerfile
 ENV HAPROXY_MAJOR=1.5
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:20 GMT
--	Parent Layer: `63c86e8e4b3721775aa6e2c479c3880e0399a88bfa36d873c9af7b0f97775b85`
+-	Created: Wed, 09 Sep 2015 21:33:24 GMT
+-	Parent Layer: `fda785d6b841cbaad90e65558ae55104a540348e4596a3ce6bf34c0f800d3033`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `75655d8d3b3dc6487ffa805d3cdc1d5f5188a495fdf875a5c87114469f27eb74`
+#### `a355d95013235ca9037939fcce11be34ff9ab87926c2795633ba0514214fa264`
 
 ```dockerfile
 ENV HAPROXY_VERSION=1.5.14
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:21 GMT
--	Parent Layer: `dd04779290398e605e82dcbf582722012d0a60659c3882537bb43269989c9174`
+-	Created: Wed, 09 Sep 2015 21:33:25 GMT
+-	Parent Layer: `725472d794152ecfa261f0545d74a075561074dcd50936946dbd9455b0c3fda1`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1df4fc731070551eb704a994dba08dcc6f505c60163761b083b02ec161d3ea84`
+#### `d9418e93c870673d54416e86355d606586ae8090f95c1b35c49a5121011e8367`
 
 ```dockerfile
 ENV HAPROXY_MD5=ad9d7262b96ba85a0f8c6acc6cb9edde
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:21 GMT
--	Parent Layer: `75655d8d3b3dc6487ffa805d3cdc1d5f5188a495fdf875a5c87114469f27eb74`
+-	Created: Wed, 09 Sep 2015 21:33:27 GMT
+-	Parent Layer: `a355d95013235ca9037939fcce11be34ff9ab87926c2795633ba0514214fa264`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `cf9a148af3460e3b3124a257bfa608e77eaaec837c88553ec584ec7e3b9fb695`
+#### `82b1df1ce920b2ebdba3e0439f81338d23ae75d8b86c6d53491804155d0c51ed`
 
 ```dockerfile
 RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
@@ -531,22 +531,22 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Mon, 24 Aug 2015 18:19:19 GMT
--	Parent Layer: `1df4fc731070551eb704a994dba08dcc6f505c60163761b083b02ec161d3ea84`
+-	Created: Wed, 09 Sep 2015 21:34:19 GMT
+-	Parent Layer: `d9418e93c870673d54416e86355d606586ae8090f95c1b35c49a5121011e8367`
 -	Docker Version: 1.7.1
--	Virtual Size: 8.2 MB (8153038 bytes)
--	v2 Blob: `sha256:ce2dde318e6b3b9c433a27169b5cdf52eda391b97c0b72c9896f505813682c5d`
--	v2 Content-Length: 3.6 MB (3629424 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:21:35 GMT
+-	Virtual Size: 8.1 MB (8140954 bytes)
+-	v2 Blob: `sha256:e689bc5b148db7548c3d0c7a98ca5c7d968952b6724b335e150708e468558d2d`
+-	v2 Content-Length: 3.6 MB (3628722 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:58:21 GMT
 
-#### `5e72a3468175f59269c8318d631d99ed9ae4f3b4dfad92ce9a48166db8a0d752`
+#### `b225626aa2521bfc97201c3aac928779e0bae38fb15f6073674d087e79a8d410`
 
 ```dockerfile
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:19:20 GMT
--	Parent Layer: `cf9a148af3460e3b3124a257bfa608e77eaaec837c88553ec584ec7e3b9fb695`
+-	Created: Wed, 09 Sep 2015 21:34:19 GMT
+-	Parent Layer: `82b1df1ce920b2ebdba3e0439f81338d23ae75d8b86c6d53491804155d0c51ed`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -555,95 +555,95 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 ## `haproxy:1`
 
--	Total Virtual Size: 97.9 MB (97903285 bytes)
--	Total v2 Content-Length: 42.7 MB (42716512 bytes)
+-	Total Virtual Size: 97.8 MB (97835140 bytes)
+-	Total v2 Content-Length: 42.7 MB (42700111 bytes)
 
 ### Layers (8)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `63c86e8e4b3721775aa6e2c479c3880e0399a88bfa36d873c9af7b0f97775b85`
+#### `fda785d6b841cbaad90e65558ae55104a540348e4596a3ce6bf34c0f800d3033`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:20 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 21:33:22 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
--	Virtual Size: 4.8 MB (4778607 bytes)
--	v2 Blob: `sha256:0653546fa43df342027d2b265fe8c2c97f1ba1ea4776938125a6016094a07761`
--	v2 Content-Length: 1.9 MB (1879132 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:21:43 GMT
+-	Virtual Size: 4.8 MB (4769413 bytes)
+-	v2 Blob: `sha256:5b90e59957c76d08e7305e94a1d5649e06e72324f549a3fba3be094090913508`
+-	v2 Content-Length: 1.9 MB (1879468 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:58:39 GMT
 
-#### `dd04779290398e605e82dcbf582722012d0a60659c3882537bb43269989c9174`
+#### `725472d794152ecfa261f0545d74a075561074dcd50936946dbd9455b0c3fda1`
 
 ```dockerfile
 ENV HAPROXY_MAJOR=1.5
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:20 GMT
--	Parent Layer: `63c86e8e4b3721775aa6e2c479c3880e0399a88bfa36d873c9af7b0f97775b85`
+-	Created: Wed, 09 Sep 2015 21:33:24 GMT
+-	Parent Layer: `fda785d6b841cbaad90e65558ae55104a540348e4596a3ce6bf34c0f800d3033`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `75655d8d3b3dc6487ffa805d3cdc1d5f5188a495fdf875a5c87114469f27eb74`
+#### `a355d95013235ca9037939fcce11be34ff9ab87926c2795633ba0514214fa264`
 
 ```dockerfile
 ENV HAPROXY_VERSION=1.5.14
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:21 GMT
--	Parent Layer: `dd04779290398e605e82dcbf582722012d0a60659c3882537bb43269989c9174`
+-	Created: Wed, 09 Sep 2015 21:33:25 GMT
+-	Parent Layer: `725472d794152ecfa261f0545d74a075561074dcd50936946dbd9455b0c3fda1`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1df4fc731070551eb704a994dba08dcc6f505c60163761b083b02ec161d3ea84`
+#### `d9418e93c870673d54416e86355d606586ae8090f95c1b35c49a5121011e8367`
 
 ```dockerfile
 ENV HAPROXY_MD5=ad9d7262b96ba85a0f8c6acc6cb9edde
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:21 GMT
--	Parent Layer: `75655d8d3b3dc6487ffa805d3cdc1d5f5188a495fdf875a5c87114469f27eb74`
+-	Created: Wed, 09 Sep 2015 21:33:27 GMT
+-	Parent Layer: `a355d95013235ca9037939fcce11be34ff9ab87926c2795633ba0514214fa264`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `cf9a148af3460e3b3124a257bfa608e77eaaec837c88553ec584ec7e3b9fb695`
+#### `82b1df1ce920b2ebdba3e0439f81338d23ae75d8b86c6d53491804155d0c51ed`
 
 ```dockerfile
 RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
@@ -667,22 +667,22 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Mon, 24 Aug 2015 18:19:19 GMT
--	Parent Layer: `1df4fc731070551eb704a994dba08dcc6f505c60163761b083b02ec161d3ea84`
+-	Created: Wed, 09 Sep 2015 21:34:19 GMT
+-	Parent Layer: `d9418e93c870673d54416e86355d606586ae8090f95c1b35c49a5121011e8367`
 -	Docker Version: 1.7.1
--	Virtual Size: 8.2 MB (8153038 bytes)
--	v2 Blob: `sha256:ce2dde318e6b3b9c433a27169b5cdf52eda391b97c0b72c9896f505813682c5d`
--	v2 Content-Length: 3.6 MB (3629424 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:21:35 GMT
+-	Virtual Size: 8.1 MB (8140954 bytes)
+-	v2 Blob: `sha256:e689bc5b148db7548c3d0c7a98ca5c7d968952b6724b335e150708e468558d2d`
+-	v2 Content-Length: 3.6 MB (3628722 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:58:21 GMT
 
-#### `5e72a3468175f59269c8318d631d99ed9ae4f3b4dfad92ce9a48166db8a0d752`
+#### `b225626aa2521bfc97201c3aac928779e0bae38fb15f6073674d087e79a8d410`
 
 ```dockerfile
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:19:20 GMT
--	Parent Layer: `cf9a148af3460e3b3124a257bfa608e77eaaec837c88553ec584ec7e3b9fb695`
+-	Created: Wed, 09 Sep 2015 21:34:19 GMT
+-	Parent Layer: `82b1df1ce920b2ebdba3e0439f81338d23ae75d8b86c6d53491804155d0c51ed`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -691,95 +691,95 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 ## `haproxy:latest`
 
--	Total Virtual Size: 97.9 MB (97903285 bytes)
--	Total v2 Content-Length: 42.7 MB (42716512 bytes)
+-	Total Virtual Size: 97.8 MB (97835140 bytes)
+-	Total v2 Content-Length: 42.7 MB (42700111 bytes)
 
 ### Layers (8)
 
-#### `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 
 ```dockerfile
-ADD file:f7eb3ddd8c7f33332cd94564ec171306ffa490836953449b9b9c506085ec8745 in /
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:51 GMT
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
 -	Docker Version: 1.7.1
--	Virtual Size: 85.0 MB (84971640 bytes)
--	v2 Blob: `sha256:80ab95908a2b67c1076055c280adb7e09f38423b5a6a9948845c5a86fbf2bc82`
--	v2 Content-Length: 37.2 MB (37207764 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:48:53 GMT
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
 
-#### `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:19:54 GMT
--	Parent Layer: `9d3ceacde91b4c7d6c1275032adb558d668afd5489c007f3512b39793ddf992d`
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `63c86e8e4b3721775aa6e2c479c3880e0399a88bfa36d873c9af7b0f97775b85`
+#### `fda785d6b841cbaad90e65558ae55104a540348e4596a3ce6bf34c0f800d3033`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:20 GMT
--	Parent Layer: `bbe78c1a5a535fac669e3225d5c3bb4396b6b2f9decb560ffb6351396da8c345`
+-	Created: Wed, 09 Sep 2015 21:33:22 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
--	Virtual Size: 4.8 MB (4778607 bytes)
--	v2 Blob: `sha256:0653546fa43df342027d2b265fe8c2c97f1ba1ea4776938125a6016094a07761`
--	v2 Content-Length: 1.9 MB (1879132 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:21:43 GMT
+-	Virtual Size: 4.8 MB (4769413 bytes)
+-	v2 Blob: `sha256:5b90e59957c76d08e7305e94a1d5649e06e72324f549a3fba3be094090913508`
+-	v2 Content-Length: 1.9 MB (1879468 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:58:39 GMT
 
-#### `dd04779290398e605e82dcbf582722012d0a60659c3882537bb43269989c9174`
+#### `725472d794152ecfa261f0545d74a075561074dcd50936946dbd9455b0c3fda1`
 
 ```dockerfile
 ENV HAPROXY_MAJOR=1.5
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:20 GMT
--	Parent Layer: `63c86e8e4b3721775aa6e2c479c3880e0399a88bfa36d873c9af7b0f97775b85`
+-	Created: Wed, 09 Sep 2015 21:33:24 GMT
+-	Parent Layer: `fda785d6b841cbaad90e65558ae55104a540348e4596a3ce6bf34c0f800d3033`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `75655d8d3b3dc6487ffa805d3cdc1d5f5188a495fdf875a5c87114469f27eb74`
+#### `a355d95013235ca9037939fcce11be34ff9ab87926c2795633ba0514214fa264`
 
 ```dockerfile
 ENV HAPROXY_VERSION=1.5.14
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:21 GMT
--	Parent Layer: `dd04779290398e605e82dcbf582722012d0a60659c3882537bb43269989c9174`
+-	Created: Wed, 09 Sep 2015 21:33:25 GMT
+-	Parent Layer: `725472d794152ecfa261f0545d74a075561074dcd50936946dbd9455b0c3fda1`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1df4fc731070551eb704a994dba08dcc6f505c60163761b083b02ec161d3ea84`
+#### `d9418e93c870673d54416e86355d606586ae8090f95c1b35c49a5121011e8367`
 
 ```dockerfile
 ENV HAPROXY_MD5=ad9d7262b96ba85a0f8c6acc6cb9edde
 ```
 
--	Created: Mon, 24 Aug 2015 18:18:21 GMT
--	Parent Layer: `75655d8d3b3dc6487ffa805d3cdc1d5f5188a495fdf875a5c87114469f27eb74`
+-	Created: Wed, 09 Sep 2015 21:33:27 GMT
+-	Parent Layer: `a355d95013235ca9037939fcce11be34ff9ab87926c2795633ba0514214fa264`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `cf9a148af3460e3b3124a257bfa608e77eaaec837c88553ec584ec7e3b9fb695`
+#### `82b1df1ce920b2ebdba3e0439f81338d23ae75d8b86c6d53491804155d0c51ed`
 
 ```dockerfile
 RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
@@ -803,22 +803,22 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Mon, 24 Aug 2015 18:19:19 GMT
--	Parent Layer: `1df4fc731070551eb704a994dba08dcc6f505c60163761b083b02ec161d3ea84`
+-	Created: Wed, 09 Sep 2015 21:34:19 GMT
+-	Parent Layer: `d9418e93c870673d54416e86355d606586ae8090f95c1b35c49a5121011e8367`
 -	Docker Version: 1.7.1
--	Virtual Size: 8.2 MB (8153038 bytes)
--	v2 Blob: `sha256:ce2dde318e6b3b9c433a27169b5cdf52eda391b97c0b72c9896f505813682c5d`
--	v2 Content-Length: 3.6 MB (3629424 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:21:35 GMT
+-	Virtual Size: 8.1 MB (8140954 bytes)
+-	v2 Blob: `sha256:e689bc5b148db7548c3d0c7a98ca5c7d968952b6724b335e150708e468558d2d`
+-	v2 Content-Length: 3.6 MB (3628722 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 03:58:21 GMT
 
-#### `5e72a3468175f59269c8318d631d99ed9ae4f3b4dfad92ce9a48166db8a0d752`
+#### `b225626aa2521bfc97201c3aac928779e0bae38fb15f6073674d087e79a8d410`
 
 ```dockerfile
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:19:20 GMT
--	Parent Layer: `cf9a148af3460e3b3124a257bfa608e77eaaec837c88553ec584ec7e3b9fb695`
+-	Created: Wed, 09 Sep 2015 21:34:19 GMT
+-	Parent Layer: `82b1df1ce920b2ebdba3e0439f81338d23ae75d8b86c6d53491804155d0c51ed`
 -	Docker Version: 1.7.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
