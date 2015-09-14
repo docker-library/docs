@@ -12,119 +12,119 @@
 ## `alpine:2.6`
 
 -	Total Virtual Size: 4.5 MB (4502262 bytes)
--	Total v2 Content-Length: 2.0 MB (1952229 bytes)
+-	Total v2 Content-Length: 2.0 MB (1952218 bytes)
 
 ### Layers (1)
 
-#### `6e25877bc8bcf3fc0baedee3cdcb2375c108840b999ac5d2319800602cc4dc28`
+#### `efcfbfe153c39458f9f556d7df28b5c68bfa8aa24f8a876c0c16fdd3cd7842e7`
 
 ```dockerfile
-ADD file:8fbab3792c980f9a621bcacf25fb3e127086e5c89e1a0893e1bcdf7851f717aa in /
+ADD file:6b71acf68670a4291a15e8ea342ecb83c64bd89dcac503594b6aac459a2a7df6 in /
 ```
 
--	Created: Fri, 12 Jun 2015 19:38:27 GMT
--	Docker Version: 1.6.0
+-	Created: Mon, 14 Sep 2015 20:01:04 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 4.5 MB (4502262 bytes)
--	v2 Blob: `sha256:4aa8dce0b5bb41623a32fb5bc0c8783fc845b223ccb7dbfb9c936cfd27e90923`
--	v2 Content-Length: 2.0 MB (1952229 bytes)
--	v2 Last-Modified: Fri, 12 Jun 2015 19:46:51 GMT
+-	v2 Blob: `sha256:6cba3b1b02a80fccb244087558ab22eda940ac1559ad99749b5de40ea08c9f42`
+-	v2 Content-Length: 2.0 MB (1952218 bytes)
+-	v2 Last-Modified: Mon, 14 Sep 2015 20:37:10 GMT
 
 ## `alpine:2.7`
 
--	Total Virtual Size: 4.7 MB (4710852 bytes)
--	Total v2 Content-Length: 2.0 MB (1972231 bytes)
+-	Total Virtual Size: 4.7 MB (4712974 bytes)
+-	Total v2 Content-Length: 2.0 MB (1972807 bytes)
 
 ### Layers (1)
 
-#### `c22deeac7b1350109368da01902d83748a22e82847c1ba6e6d61f1869f6053c2`
+#### `5521751619c6b458ca83826cc80bbb1a9ff2e3c44c94837faea67c1fb08d4054`
 
 ```dockerfile
-ADD file:35c3b9f8c4b3a2d037e4790b63d77bcfe6691767febefe79f0bdb3bf3e6636f5 in /
+ADD file:ba0f96fc9e5bfd966eb8f2363a5b9109608adfabee57e2d56168ea758ced68d9 in /
 ```
 
--	Created: Fri, 12 Jun 2015 19:38:24 GMT
--	Docker Version: 1.6.0
--	Virtual Size: 4.7 MB (4710852 bytes)
--	v2 Blob: `sha256:ea994592ee8ac292cffec561b1a3da090066fd9eb4e18b5670b96f52652295dc`
--	v2 Content-Length: 2.0 MB (1972231 bytes)
--	v2 Last-Modified: Fri, 12 Jun 2015 19:46:34 GMT
+-	Created: Mon, 14 Sep 2015 20:01:08 GMT
+-	Docker Version: 1.8.2
+-	Virtual Size: 4.7 MB (4712974 bytes)
+-	v2 Blob: `sha256:ac022cde5850442d31aad4fe81155405f5d176a23572e5ae51f0700ae9bfad09`
+-	v2 Content-Length: 2.0 MB (1972807 bytes)
+-	v2 Last-Modified: Mon, 14 Sep 2015 20:37:23 GMT
 
 ## `alpine:3.1`
 
 -	Total Virtual Size: 5.0 MB (5041128 bytes)
--	Total v2 Content-Length: 2.2 MB (2239030 bytes)
+-	Total v2 Content-Length: 2.2 MB (2239031 bytes)
 
 ### Layers (1)
 
-#### `878b6301bedafae11e013d8393be8bb3919d06e06917007991933b59c040c7fe`
+#### `8dd8107abd2e22bfd3b45b05733f3d2677d4078b09b5edce56ee3d8677d3c648`
 
 ```dockerfile
-ADD file:5c1b451d97812af6d77b7a9bb99e16eb054d0b39c29654c8d9ec69dc5a6ec6d9 in /
+ADD file:f302eb46ca6d55d4baef4cb4aaff3a2266fb34d413bfaa21c0dd5da34b975b8b in /
 ```
 
--	Created: Fri, 12 Jun 2015 19:38:21 GMT
--	Docker Version: 1.6.0
+-	Created: Mon, 14 Sep 2015 20:01:11 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 5.0 MB (5041128 bytes)
--	v2 Blob: `sha256:924cee5295ab7eb6d74de87afccfc465e3cfc0294b694b7310e46bb61a16123d`
--	v2 Content-Length: 2.2 MB (2239030 bytes)
--	v2 Last-Modified: Fri, 12 Jun 2015 19:46:21 GMT
+-	v2 Blob: `sha256:a671d06fb2e278ad8a3d92e98969b94de9abc4404ed0c3891027294468172e56`
+-	v2 Content-Length: 2.2 MB (2239031 bytes)
+-	v2 Last-Modified: Mon, 14 Sep 2015 20:37:37 GMT
 
 ## `alpine:3.2`
 
--	Total Virtual Size: 5.3 MB (5254492 bytes)
--	Total v2 Content-Length: 2.5 MB (2475290 bytes)
+-	Total Virtual Size: 5.2 MB (5248903 bytes)
+-	Total v2 Content-Length: 2.5 MB (2489689 bytes)
 
 ### Layers (1)
 
-#### `31f630c65071968699d327be41add2e301d06568a4914e1aa67c98e1db34a9d8`
+#### `f4fddc471ec22fc1f7d37768132f1753bc171121e30ac2af7fcb0302588197c0`
 
 ```dockerfile
-ADD file:98d5decf83ee59e1dd63cd038be33a43e840fa4bd2aca68cb90f20ea06527c40 in /
+ADD file:43a95cc218d164ff589cb91519964373d53b607469f5ccce725631916392cd88 in /
 ```
 
--	Created: Fri, 12 Jun 2015 19:38:15 GMT
--	Docker Version: 1.6.0
--	Virtual Size: 5.3 MB (5254492 bytes)
--	v2 Blob: `sha256:c862d82a67a239544df3e99f3883decc2aa840d480daa269d33e35b2364eed58`
--	v2 Content-Length: 2.5 MB (2475290 bytes)
--	v2 Last-Modified: Fri, 12 Jun 2015 19:46:00 GMT
+-	Created: Mon, 14 Sep 2015 20:01:14 GMT
+-	Docker Version: 1.8.2
+-	Virtual Size: 5.2 MB (5248903 bytes)
+-	v2 Blob: `sha256:12b41071e6ce9005c70d448cb8035486489f9d50134a1b04206b46e413ac3a3f`
+-	v2 Content-Length: 2.5 MB (2489689 bytes)
+-	v2 Last-Modified: Mon, 14 Sep 2015 20:37:51 GMT
 
 ## `alpine:latest`
 
--	Total Virtual Size: 5.3 MB (5254492 bytes)
--	Total v2 Content-Length: 2.5 MB (2475290 bytes)
+-	Total Virtual Size: 5.2 MB (5248903 bytes)
+-	Total v2 Content-Length: 2.5 MB (2489689 bytes)
 
 ### Layers (1)
 
-#### `31f630c65071968699d327be41add2e301d06568a4914e1aa67c98e1db34a9d8`
+#### `f4fddc471ec22fc1f7d37768132f1753bc171121e30ac2af7fcb0302588197c0`
 
 ```dockerfile
-ADD file:98d5decf83ee59e1dd63cd038be33a43e840fa4bd2aca68cb90f20ea06527c40 in /
+ADD file:43a95cc218d164ff589cb91519964373d53b607469f5ccce725631916392cd88 in /
 ```
 
--	Created: Fri, 12 Jun 2015 19:38:15 GMT
--	Docker Version: 1.6.0
--	Virtual Size: 5.3 MB (5254492 bytes)
--	v2 Blob: `sha256:c862d82a67a239544df3e99f3883decc2aa840d480daa269d33e35b2364eed58`
--	v2 Content-Length: 2.5 MB (2475290 bytes)
--	v2 Last-Modified: Fri, 12 Jun 2015 19:46:00 GMT
+-	Created: Mon, 14 Sep 2015 20:01:14 GMT
+-	Docker Version: 1.8.2
+-	Virtual Size: 5.2 MB (5248903 bytes)
+-	v2 Blob: `sha256:12b41071e6ce9005c70d448cb8035486489f9d50134a1b04206b46e413ac3a3f`
+-	v2 Content-Length: 2.5 MB (2489689 bytes)
+-	v2 Last-Modified: Mon, 14 Sep 2015 20:37:51 GMT
 
 ## `alpine:edge`
 
--	Total Virtual Size: 5.3 MB (5309597 bytes)
--	Total v2 Content-Length: 2.5 MB (2520161 bytes)
+-	Total Virtual Size: 5.2 MB (5248796 bytes)
+-	Total v2 Content-Length: 2.5 MB (2490009 bytes)
 
 ### Layers (1)
 
-#### `5e704a9ae9acbaa969da7bec6eca7c9b8682b71e9edbe7aace95cdb880dd05a0`
+#### `a002c2202bd26d2bb69ef8d2561e0d1f42f4c9a055c0a3f242ff6fefccf1996e`
 
 ```dockerfile
-ADD file:cb75813d302db56c1dee9d1690563a641b1c4c1ef79a8b71029da1589a433ec9 in /
+ADD file:2fd4bb6ccce6077e861ec6d3778ae09a80bd84d45d48da98e59c411b33f17d79 in /
 ```
 
--	Created: Fri, 12 Jun 2015 19:38:12 GMT
--	Docker Version: 1.6.0
--	Virtual Size: 5.3 MB (5309597 bytes)
--	v2 Blob: `sha256:f5f17db9ef7c358fa4eb401a4580f1953d2fc1c80a32ba7d2ddd446a803000db`
--	v2 Content-Length: 2.5 MB (2520161 bytes)
--	v2 Last-Modified: Fri, 12 Jun 2015 19:45:46 GMT
+-	Created: Mon, 14 Sep 2015 20:01:20 GMT
+-	Docker Version: 1.8.2
+-	Virtual Size: 5.2 MB (5248796 bytes)
+-	v2 Blob: `sha256:f712fdc11509ddcb0065c16ade3c5aa3e7a51433d5961b29474f60aeb5cf5dc1`
+-	v2 Content-Length: 2.5 MB (2490009 bytes)
+-	v2 Last-Modified: Mon, 14 Sep 2015 20:38:10 GMT
