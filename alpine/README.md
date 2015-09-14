@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/30dffbd27c88623a061804f8d36f46991edf354f/versions/library-edge/Dockerfile)
--	[`3.2`, `latest` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/f2e97b32d9d5a3378ceddf33d30623106517a3a8/versions/library-3.2/Dockerfile)
--	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c843254fc27384286fe6218815919a61cff74e83/versions/library-3.1/Dockerfile)
--	[`2.7` (*versions/library-2.7/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/b05051f894698f86133174ef1967ba9e4057ddf5/versions/library-2.7/Dockerfile)
--	[`2.6` (*versions/library-2.6/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/a4928ccda5c1c3e4555c361d938cf0d393d4da06/versions/library-2.6/Dockerfile)
+-	[`2.6` (*versions/library-2.6/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c369eb24b9cd81149b355fc785173e3dde098001/versions/library-2.6/Dockerfile)
+-	[`2.7` (*versions/library-2.7/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/19859598cbba40c4b8851339164c3998694dee65/versions/library-2.7/Dockerfile)
+-	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/1a65d4ea2ceb1db6d1579c99226a0858c45563ce/versions/library-3.1/Dockerfile)
+-	[`3.2`, `latest` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/7621dffecfb794a7639dabb468732102e6f265bb/versions/library-3.2/Dockerfile)
+-	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/16384184f6870fa786e7dc590bf9fdbddee77bd7/versions/library-edge/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/alpine`)](https://github.com/docker-library/official-images/blob/master/library/alpine). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
