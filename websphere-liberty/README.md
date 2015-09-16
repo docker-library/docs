@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`kernel`, `8.5.5.6-kernel` (*websphere-liberty/8.5.5/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c424138b69111e82fbacb08fb4f18913d2e977fd/websphere-liberty/8.5.5/developer/kernel/Dockerfile)
--	[`common`, `8.5.5.6-common` (*websphere-liberty/8.5.5/developer/common/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c424138b69111e82fbacb08fb4f18913d2e977fd/websphere-liberty/8.5.5/developer/common/Dockerfile)
--	[`webProfile6`, `8.5.5.6-webProfile6` (*websphere-liberty/8.5.5/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c424138b69111e82fbacb08fb4f18913d2e977fd/websphere-liberty/8.5.5/developer/webProfile6/Dockerfile)
--	[`webProfile7`, `8.5.5.6-webProfile7` (*websphere-liberty/8.5.5/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c424138b69111e82fbacb08fb4f18913d2e977fd/websphere-liberty/8.5.5/developer/webProfile7/Dockerfile)
--	[`javaee7`, `8.5.5.6-javaee7`, `8.5.5.6`, `8.5.5`, `latest` (*websphere-liberty/8.5.5/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c424138b69111e82fbacb08fb4f18913d2e977fd/websphere-liberty/8.5.5/developer/javaee7/Dockerfile)
+-	[`kernel`, `8.5.5.6-kernel` (*websphere-liberty/8.5.5/developer/kernel/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/9da673b7e3c9d69197e67f9be276a60702674909/websphere-liberty/8.5.5/developer/kernel/Dockerfile)
+-	[`common`, `8.5.5.6-common` (*websphere-liberty/8.5.5/developer/common/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/9da673b7e3c9d69197e67f9be276a60702674909/websphere-liberty/8.5.5/developer/common/Dockerfile)
+-	[`webProfile6`, `8.5.5.6-webProfile6` (*websphere-liberty/8.5.5/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/9da673b7e3c9d69197e67f9be276a60702674909/websphere-liberty/8.5.5/developer/webProfile6/Dockerfile)
+-	[`webProfile7`, `8.5.5.6-webProfile7` (*websphere-liberty/8.5.5/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/9da673b7e3c9d69197e67f9be276a60702674909/websphere-liberty/8.5.5/developer/webProfile7/Dockerfile)
+-	[`javaee7`, `8.5.5.6-javaee7`, `8.5.5.6`, `8.5.5`, `latest` (*websphere-liberty/8.5.5/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/9da673b7e3c9d69197e67f9be276a60702674909/websphere-liberty/8.5.5/developer/javaee7/Dockerfile)
 -	[`beta` (*websphere-liberty/beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/65818b1c55cce5c9eac55c8ece2c2bc97f789d9d/websphere-liberty/beta/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).

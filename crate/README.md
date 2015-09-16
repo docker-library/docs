@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.50`, `0.50.5` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/afe4de88bbe1a55443f7daa91fc78b50b41eb8b8/Dockerfile)
+-	[`latest`, `0.50`, `0.50.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/46cbc25d0902c0b7019e188dbc2fe03a40f4e93f/Dockerfile)
 -	[`0.49`, `0.49.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/8762d54054d9ed9d76a3bba0f9e6fa38acd34c2a/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
