@@ -10,8 +10,6 @@ SpagoBI is a Business Intelligence Free Platform which uses many FOSS tools as a
 
 > [SpagoBI on Fiware](http://catalogue.fiware.org/enablers/data-visualization-spagobi)
 
-%%LOGO%%
-
 # How to use this image
 
 ## Run SpagoBI
