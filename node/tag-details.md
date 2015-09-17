@@ -12,33 +12,37 @@
 -	[`node:0.10-wheezy`](#node010-wheezy)
 -	[`node:0.12.7`](#node0127)
 -	[`node:0.12`](#node012)
+-	[`node:0`](#node0)
 -	[`node:0.12.7-onbuild`](#node0127-onbuild)
 -	[`node:0.12-onbuild`](#node012-onbuild)
+-	[`node:0-onbuild`](#node0-onbuild)
 -	[`node:0.12.7-slim`](#node0127-slim)
 -	[`node:0.12-slim`](#node012-slim)
+-	[`node:0-slim`](#node0-slim)
 -	[`node:0.12.7-wheezy`](#node0127-wheezy)
 -	[`node:0.12-wheezy`](#node012-wheezy)
+-	[`node:0-wheezy`](#node0-wheezy)
 -	[`node:4.0.0`](#node400)
 -	[`node:4.0`](#node40)
--	[`node:0`](#node0)
+-	[`node:4`](#node4)
 -	[`node:latest`](#nodelatest)
 -	[`node:4.0.0-onbuild`](#node400-onbuild)
 -	[`node:4.0-onbuild`](#node40-onbuild)
--	[`node:0-onbuild`](#node0-onbuild)
+-	[`node:4-onbuild`](#node4-onbuild)
 -	[`node:onbuild`](#nodeonbuild)
 -	[`node:4.0.0-slim`](#node400-slim)
 -	[`node:4.0-slim`](#node40-slim)
--	[`node:0-slim`](#node0-slim)
+-	[`node:4-slim`](#node4-slim)
 -	[`node:slim`](#nodeslim)
 -	[`node:4.0.0-wheezy`](#node400-wheezy)
 -	[`node:4.0-wheezy`](#node40-wheezy)
--	[`node:0-wheezy`](#node0-wheezy)
+-	[`node:4-wheezy`](#node4-wheezy)
 -	[`node:wheezy`](#nodewheezy)
 
 ## `node:0.10.40`
 
 -	Total Virtual Size: 633.4 MB (633380974 bytes)
--	Total v2 Content-Length: 251.0 MB (250972652 bytes)
+-	Total v2 Content-Length: 251.0 MB (250972649 bytes)
 
 ### Layers (10)
 
@@ -83,9 +87,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -242,7 +246,7 @@ CMD ["node"]
 ## `node:0.10`
 
 -	Total Virtual Size: 633.4 MB (633380974 bytes)
--	Total v2 Content-Length: 251.0 MB (250972652 bytes)
+-	Total v2 Content-Length: 251.0 MB (250972649 bytes)
 
 ### Layers (10)
 
@@ -287,9 +291,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -446,7 +450,7 @@ CMD ["node"]
 ## `node:0.10.40-onbuild`
 
 -	Total Virtual Size: 633.4 MB (633380974 bytes)
--	Total v2 Content-Length: 251.0 MB (250972938 bytes)
+-	Total v2 Content-Length: 251.0 MB (250972935 bytes)
 
 ### Layers (16)
 
@@ -491,9 +495,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -734,7 +738,7 @@ CMD ["npm" "start"]
 ## `node:0.10-onbuild`
 
 -	Total Virtual Size: 633.4 MB (633380974 bytes)
--	Total v2 Content-Length: 251.0 MB (250972938 bytes)
+-	Total v2 Content-Length: 251.0 MB (250972935 bytes)
 
 ### Layers (16)
 
@@ -779,9 +783,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1266,7 +1270,7 @@ CMD ["node"]
 ## `node:0.10.40-wheezy`
 
 -	Total Virtual Size: 486.1 MB (486061142 bytes)
--	Total v2 Content-Length: 185.4 MB (185443572 bytes)
+-	Total v2 Content-Length: 185.4 MB (185443569 bytes)
 
 ### Layers (10)
 
@@ -1311,9 +1315,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
+-	v2 Content-Length: 6.7 MB (6739553 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -1470,7 +1474,7 @@ CMD ["node"]
 ## `node:0.10-wheezy`
 
 -	Total Virtual Size: 486.1 MB (486061142 bytes)
--	Total v2 Content-Length: 185.4 MB (185443572 bytes)
+-	Total v2 Content-Length: 185.4 MB (185443569 bytes)
 
 ### Layers (10)
 
@@ -1515,9 +1519,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
+-	v2 Content-Length: 6.7 MB (6739553 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -1674,7 +1678,7 @@ CMD ["node"]
 ## `node:0.12.7`
 
 -	Total Virtual Size: 642.3 MB (642302869 bytes)
--	Total v2 Content-Length: 254.2 MB (254239171 bytes)
+-	Total v2 Content-Length: 254.2 MB (254239168 bytes)
 
 ### Layers (10)
 
@@ -1719,9 +1723,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1878,7 +1882,7 @@ CMD ["node"]
 ## `node:0.12`
 
 -	Total Virtual Size: 642.3 MB (642302869 bytes)
--	Total v2 Content-Length: 254.2 MB (254239171 bytes)
+-	Total v2 Content-Length: 254.2 MB (254239168 bytes)
 
 ### Layers (10)
 
@@ -1923,9 +1927,213 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+
+#### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 08 Sep 2015 15:29:05 GMT
+-	Parent Layer: `8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe`
+-	Docker Version: 1.7.1
+-	Virtual Size: 122.3 MB (122317988 bytes)
+-	v2 Blob: `sha256:a6f2dac3eb9c26067c12dafd0c917f591d9881ee84a45f750d7a1d58187adfd8`
+-	v2 Content-Length: 42.3 MB (42339522 bytes)
+-	v2 Last-Modified: Tue, 08 Sep 2015 15:43:42 GMT
+
+#### `16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		autoconf \
+		automake \
+		bzip2 \
+		file \
+		g++ \
+		gcc \
+		imagemagick \
+		libbz2-dev \
+		libc6-dev \
+		libcurl4-openssl-dev \
+		libevent-dev \
+		libffi-dev \
+		libgeoip-dev \
+		libglib2.0-dev \
+		libjpeg-dev \
+		liblzma-dev \
+		libmagickcore-dev \
+		libmagickwand-dev \
+		libmysqlclient-dev \
+		libncurses-dev \
+		libpng-dev \
+		libpq-dev \
+		libreadline-dev \
+		libsqlite3-dev \
+		libssl-dev \
+		libtool \
+		libwebp-dev \
+		libxml2-dev \
+		libxslt-dev \
+		libyaml-dev \
+		make \
+		patch \
+		xz-utils \
+		zlib1g-dev \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 08 Sep 2015 15:31:25 GMT
+-	Parent Layer: `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
+-	Docker Version: 1.7.1
+-	Virtual Size: 314.7 MB (314652151 bytes)
+-	v2 Blob: `sha256:f4f48828d97bcfe36d5697d8f505088a4369e3d660307576f68ae74031884ca7`
+-	v2 Content-Length: 128.5 MB (128531143 bytes)
+-	v2 Last-Modified: Tue, 08 Sep 2015 15:45:31 GMT
+
+#### `09b553853302591a7220cb207c0d3ea8360fae517dbc6aef45f9b831a4c1b0e0`
+
+```dockerfile
+RUN set -ex \
+	&& for key in \
+		7937DFD2AB06298B2293C3187D33FF9D0246406D \
+		114F43EE0176B71C7BC219DD50A3051F888C628D \
+	; do \
+		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
+	done
+```
+
+-	Created: Wed, 09 Sep 2015 19:51:06 GMT
+-	Parent Layer: `16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280`
+-	Docker Version: 1.7.1
+-	Virtual Size: 22.3 KB (22254 bytes)
+-	v2 Blob: `sha256:c33cf53247a5495d99f93a65a9a5424df06b11032f0580494fb0754faf9ff685`
+-	v2 Content-Length: 9.8 KB (9824 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 20:17:00 GMT
+
+#### `7ad4d0983ded1c3e09c604dbcef7827e55d9f0f653a941f4c7a375f605e7cfb8`
+
+```dockerfile
+ENV NODE_VERSION=0.12.7
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:03 GMT
+-	Parent Layer: `09b553853302591a7220cb207c0d3ea8360fae517dbc6aef45f9b831a4c1b0e0`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `8f213c115713164406056b9bc5111aee93e110ac516b86992450969734f91a3a`
+
+```dockerfile
+ENV NPM_VERSION=2.14.1
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:03 GMT
+-	Parent Layer: `7ad4d0983ded1c3e09c604dbcef7827e55d9f0f653a941f4c7a375f605e7cfb8`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `037e12c3f1a9238353ce67ef1f4038c55929231d1bcf8870b69f498a43540e3d`
+
+```dockerfile
+RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
+	&& curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
+	&& gpg --verify SHASUMS256.txt.asc \
+	&& grep " node-v$NODE_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c - \
+	&& tar -xzf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
+	&& rm "node-v$NODE_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc \
+	&& npm install -g npm@"$NPM_VERSION" \
+	&& npm cache clear
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:16 GMT
+-	Parent Layer: `8f213c115713164406056b9bc5111aee93e110ac516b86992450969734f91a3a`
+-	Docker Version: 1.7.1
+-	Virtual Size: 35.8 MB (35795657 bytes)
+-	v2 Blob: `sha256:a903811666ed99d8a0c826270b8d4c1b68df3de1e90be1bf7e4a31d4473c210d`
+-	v2 Content-Length: 13.5 MB (13460252 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 20:27:49 GMT
+
+#### `a4b45afffe4a32164396d91c0fa75bdd58f00b7acbf288d9cb440ff780bc3d31`
+
+```dockerfile
+CMD ["node"]
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:17 GMT
+-	Parent Layer: `037e12c3f1a9238353ce67ef1f4038c55929231d1bcf8870b69f498a43540e3d`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+## `node:0`
+
+-	Total Virtual Size: 642.3 MB (642302869 bytes)
+-	Total v2 Content-Length: 254.2 MB (254239168 bytes)
+
+### Layers (10)
+
+#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+
+```dockerfile
+ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+```
+
+-	Created: Mon, 07 Sep 2015 23:35:05 GMT
+-	Docker Version: 1.7.1
+-	Virtual Size: 125.2 MB (125159131 bytes)
+-	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
+-	v2 Content-Length: 51.4 MB (51359708 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
+
+#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 07 Sep 2015 23:35:07 GMT
+-	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 08 Sep 2015 15:27:57 GMT
+-	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+-	Docker Version: 1.7.1
+-	Virtual Size: 44.4 MB (44355688 bytes)
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2082,7 +2290,7 @@ CMD ["node"]
 ## `node:0.12.7-onbuild`
 
 -	Total Virtual Size: 642.3 MB (642302869 bytes)
--	Total v2 Content-Length: 254.2 MB (254239458 bytes)
+-	Total v2 Content-Length: 254.2 MB (254239455 bytes)
 
 ### Layers (16)
 
@@ -2127,9 +2335,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2370,7 +2578,7 @@ CMD ["npm" "start"]
 ## `node:0.12-onbuild`
 
 -	Total Virtual Size: 642.3 MB (642302869 bytes)
--	Total v2 Content-Length: 254.2 MB (254239458 bytes)
+-	Total v2 Content-Length: 254.2 MB (254239455 bytes)
 
 ### Layers (16)
 
@@ -2415,9 +2623,297 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+
+#### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 08 Sep 2015 15:29:05 GMT
+-	Parent Layer: `8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe`
+-	Docker Version: 1.7.1
+-	Virtual Size: 122.3 MB (122317988 bytes)
+-	v2 Blob: `sha256:a6f2dac3eb9c26067c12dafd0c917f591d9881ee84a45f750d7a1d58187adfd8`
+-	v2 Content-Length: 42.3 MB (42339522 bytes)
+-	v2 Last-Modified: Tue, 08 Sep 2015 15:43:42 GMT
+
+#### `16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		autoconf \
+		automake \
+		bzip2 \
+		file \
+		g++ \
+		gcc \
+		imagemagick \
+		libbz2-dev \
+		libc6-dev \
+		libcurl4-openssl-dev \
+		libevent-dev \
+		libffi-dev \
+		libgeoip-dev \
+		libglib2.0-dev \
+		libjpeg-dev \
+		liblzma-dev \
+		libmagickcore-dev \
+		libmagickwand-dev \
+		libmysqlclient-dev \
+		libncurses-dev \
+		libpng-dev \
+		libpq-dev \
+		libreadline-dev \
+		libsqlite3-dev \
+		libssl-dev \
+		libtool \
+		libwebp-dev \
+		libxml2-dev \
+		libxslt-dev \
+		libyaml-dev \
+		make \
+		patch \
+		xz-utils \
+		zlib1g-dev \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 08 Sep 2015 15:31:25 GMT
+-	Parent Layer: `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
+-	Docker Version: 1.7.1
+-	Virtual Size: 314.7 MB (314652151 bytes)
+-	v2 Blob: `sha256:f4f48828d97bcfe36d5697d8f505088a4369e3d660307576f68ae74031884ca7`
+-	v2 Content-Length: 128.5 MB (128531143 bytes)
+-	v2 Last-Modified: Tue, 08 Sep 2015 15:45:31 GMT
+
+#### `09b553853302591a7220cb207c0d3ea8360fae517dbc6aef45f9b831a4c1b0e0`
+
+```dockerfile
+RUN set -ex \
+	&& for key in \
+		7937DFD2AB06298B2293C3187D33FF9D0246406D \
+		114F43EE0176B71C7BC219DD50A3051F888C628D \
+	; do \
+		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
+	done
+```
+
+-	Created: Wed, 09 Sep 2015 19:51:06 GMT
+-	Parent Layer: `16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280`
+-	Docker Version: 1.7.1
+-	Virtual Size: 22.3 KB (22254 bytes)
+-	v2 Blob: `sha256:c33cf53247a5495d99f93a65a9a5424df06b11032f0580494fb0754faf9ff685`
+-	v2 Content-Length: 9.8 KB (9824 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 20:17:00 GMT
+
+#### `7ad4d0983ded1c3e09c604dbcef7827e55d9f0f653a941f4c7a375f605e7cfb8`
+
+```dockerfile
+ENV NODE_VERSION=0.12.7
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:03 GMT
+-	Parent Layer: `09b553853302591a7220cb207c0d3ea8360fae517dbc6aef45f9b831a4c1b0e0`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `8f213c115713164406056b9bc5111aee93e110ac516b86992450969734f91a3a`
+
+```dockerfile
+ENV NPM_VERSION=2.14.1
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:03 GMT
+-	Parent Layer: `7ad4d0983ded1c3e09c604dbcef7827e55d9f0f653a941f4c7a375f605e7cfb8`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `037e12c3f1a9238353ce67ef1f4038c55929231d1bcf8870b69f498a43540e3d`
+
+```dockerfile
+RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
+	&& curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
+	&& gpg --verify SHASUMS256.txt.asc \
+	&& grep " node-v$NODE_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c - \
+	&& tar -xzf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
+	&& rm "node-v$NODE_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc \
+	&& npm install -g npm@"$NPM_VERSION" \
+	&& npm cache clear
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:16 GMT
+-	Parent Layer: `8f213c115713164406056b9bc5111aee93e110ac516b86992450969734f91a3a`
+-	Docker Version: 1.7.1
+-	Virtual Size: 35.8 MB (35795657 bytes)
+-	v2 Blob: `sha256:a903811666ed99d8a0c826270b8d4c1b68df3de1e90be1bf7e4a31d4473c210d`
+-	v2 Content-Length: 13.5 MB (13460252 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 20:27:49 GMT
+
+#### `a4b45afffe4a32164396d91c0fa75bdd58f00b7acbf288d9cb440ff780bc3d31`
+
+```dockerfile
+CMD ["node"]
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:17 GMT
+-	Parent Layer: `037e12c3f1a9238353ce67ef1f4038c55929231d1bcf8870b69f498a43540e3d`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `e710775d832814594f9fe4ca6ce4ae7cf216341e292f67ae45b124d957767227`
+
+```dockerfile
+RUN mkdir -p /usr/src/app
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:37 GMT
+-	Parent Layer: `a4b45afffe4a32164396d91c0fa75bdd58f00b7acbf288d9cb440ff780bc3d31`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:44b7b7869dfcc959c8cc119dc713492ffda6384bf72899bf1c008e27fce80462`
+-	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Wed, 09 Sep 2015 20:28:40 GMT
+
+#### `c017b6947c2dccbd59d4729ada807aff0d15e40976a89f6548ddcef9905ccd7d`
+
+```dockerfile
+WORKDIR /usr/src/app
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:37 GMT
+-	Parent Layer: `e710775d832814594f9fe4ca6ce4ae7cf216341e292f67ae45b124d957767227`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `454a566508e94954baac1910ed044b162591146b4ccca73ad072858a76e2a4a0`
+
+```dockerfile
+ONBUILD COPY package.json /usr/src/app/
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:38 GMT
+-	Parent Layer: `c017b6947c2dccbd59d4729ada807aff0d15e40976a89f6548ddcef9905ccd7d`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `9455a1b0478dfc47f6c044a4bd939a37528e265c3532a597f46fa27e18da498e`
+
+```dockerfile
+ONBUILD RUN npm install
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:38 GMT
+-	Parent Layer: `454a566508e94954baac1910ed044b162591146b4ccca73ad072858a76e2a4a0`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `97872b9ea4b96008818cd330faff82f70a1d5d17663e8128df7dc764ac6bdb53`
+
+```dockerfile
+ONBUILD COPY . /usr/src/app
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:38 GMT
+-	Parent Layer: `9455a1b0478dfc47f6c044a4bd939a37528e265c3532a597f46fa27e18da498e`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `3f0b01a1a88e3cf07d222385e699588ac3ff84f12f13261b95cc5371b6230bc1`
+
+```dockerfile
+CMD ["npm" "start"]
+```
+
+-	Created: Wed, 09 Sep 2015 19:54:39 GMT
+-	Parent Layer: `97872b9ea4b96008818cd330faff82f70a1d5d17663e8128df7dc764ac6bdb53`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+## `node:0-onbuild`
+
+-	Total Virtual Size: 642.3 MB (642302869 bytes)
+-	Total v2 Content-Length: 254.2 MB (254239455 bytes)
+
+### Layers (16)
+
+#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+
+```dockerfile
+ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+```
+
+-	Created: Mon, 07 Sep 2015 23:35:05 GMT
+-	Docker Version: 1.7.1
+-	Virtual Size: 125.2 MB (125159131 bytes)
+-	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
+-	v2 Content-Length: 51.4 MB (51359708 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
+
+#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 07 Sep 2015 23:35:07 GMT
+-	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 08 Sep 2015 15:27:57 GMT
+-	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+-	Docker Version: 1.7.1
+-	Virtual Size: 44.4 MB (44355688 bytes)
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2899,10 +3395,132 @@ CMD ["node"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
+## `node:0-slim`
+
+-	Total Virtual Size: 166.7 MB (166735609 bytes)
+-	Total v2 Content-Length: 67.3 MB (67317143 bytes)
+
+### Layers (7)
+
+#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+
+```dockerfile
+ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+```
+
+-	Created: Mon, 07 Sep 2015 23:35:05 GMT
+-	Docker Version: 1.7.1
+-	Virtual Size: 125.2 MB (125159131 bytes)
+-	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
+-	v2 Content-Length: 51.4 MB (51359708 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
+
+#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 07 Sep 2015 23:35:07 GMT
+-	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `747bd8920442195eac63d4a33c63830ed77c57001687a47832d4f8e33031e8cf`
+
+```dockerfile
+RUN set -ex \
+	&& for key in \
+		7937DFD2AB06298B2293C3187D33FF9D0246406D \
+		114F43EE0176B71C7BC219DD50A3051F888C628D \
+	; do \
+		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
+	done
+```
+
+-	Created: Wed, 09 Sep 2015 19:52:03 GMT
+-	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+-	Docker Version: 1.7.1
+-	Virtual Size: 22.3 KB (22254 bytes)
+-	v2 Blob: `sha256:bcff9295a40abc0cc46bb73d2dbcda3cda28fc48ef038efd21661910edf1355d`
+-	v2 Content-Length: 9.8 KB (9828 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 20:22:51 GMT
+
+#### `0e304b72f19f5e77c30daf952ee6a4018008f6b60db4b139d9aadf600916f8e4`
+
+```dockerfile
+ENV NODE_VERSION=0.12.7
+```
+
+-	Created: Wed, 09 Sep 2015 19:55:03 GMT
+-	Parent Layer: `747bd8920442195eac63d4a33c63830ed77c57001687a47832d4f8e33031e8cf`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `00c733684be982b7267e41761f853b2fca8a48826cdbb9b0ec6000e0494b0871`
+
+```dockerfile
+ENV NPM_VERSION=2.14.1
+```
+
+-	Created: Wed, 09 Sep 2015 19:55:04 GMT
+-	Parent Layer: `0e304b72f19f5e77c30daf952ee6a4018008f6b60db4b139d9aadf600916f8e4`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `ddea2bd03570dde7eb9fffa026d3aa6a70cece80f76866796ef41ddb41dcb86b`
+
+```dockerfile
+RUN buildDeps='curl ca-certificates' \
+	&& set -x \
+	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
+	&& rm -rf /var/lib/apt/lists/* \
+	&& curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
+	&& curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
+	&& gpg --verify SHASUMS256.txt.asc \
+	&& grep " node-v$NODE_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c - \
+	&& tar -xzf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
+	&& rm "node-v$NODE_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc \
+	&& apt-get purge -y --auto-remove $buildDeps \
+	&& npm install -g npm@"$NPM_VERSION" \
+	&& npm cache clear
+```
+
+-	Created: Wed, 09 Sep 2015 19:56:17 GMT
+-	Parent Layer: `00c733684be982b7267e41761f853b2fca8a48826cdbb9b0ec6000e0494b0871`
+-	Docker Version: 1.7.1
+-	Virtual Size: 41.6 MB (41554224 bytes)
+-	v2 Blob: `sha256:65966963eb1b2c2ab08163a30e566b594003468fe1a31190e0cd7ad9aca079dd`
+-	v2 Content-Length: 15.9 MB (15947479 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 20:29:32 GMT
+
+#### `b73ac230ffc92ce6cec70b39fbb9ce1e47f5c9c8be9eaf1eadd9e721142da674`
+
+```dockerfile
+CMD ["node"]
+```
+
+-	Created: Wed, 09 Sep 2015 19:56:18 GMT
+-	Parent Layer: `ddea2bd03570dde7eb9fffa026d3aa6a70cece80f76866796ef41ddb41dcb86b`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
 ## `node:0.12.7-wheezy`
 
 -	Total Virtual Size: 495.0 MB (494983037 bytes)
--	Total v2 Content-Length: 188.7 MB (188710092 bytes)
+-	Total v2 Content-Length: 188.7 MB (188710089 bytes)
 
 ### Layers (10)
 
@@ -2947,9 +3565,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
+-	v2 Content-Length: 6.7 MB (6739553 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -3106,7 +3724,7 @@ CMD ["node"]
 ## `node:0.12-wheezy`
 
 -	Total Virtual Size: 495.0 MB (494983037 bytes)
--	Total v2 Content-Length: 188.7 MB (188710092 bytes)
+-	Total v2 Content-Length: 188.7 MB (188710089 bytes)
 
 ### Layers (10)
 
@@ -3151,9 +3769,213 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
+-	v2 Content-Length: 6.7 MB (6739553 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
+
+#### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 08 Sep 2015 15:39:23 GMT
+-	Parent Layer: `e83e5b7f7d01ffa47e46b7234799f12d842089df890db8fae765c5a4df26a20b`
+-	Docker Version: 1.7.1
+-	Virtual Size: 109.4 MB (109431259 bytes)
+-	v2 Blob: `sha256:4224b2b7563f71616cbe9215abf5276c51b18d3ceead85a56526519b5391a75f`
+-	v2 Content-Length: 37.0 MB (37046780 bytes)
+-	v2 Last-Modified: Tue, 08 Sep 2015 16:02:41 GMT
+
+#### `3a5282506aa21c7b21cfdad32a099497bf9839dbc5e427f79bdad6a5e109f3d3`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		autoconf \
+		automake \
+		bzip2 \
+		file \
+		g++ \
+		gcc \
+		imagemagick \
+		libbz2-dev \
+		libc6-dev \
+		libcurl4-openssl-dev \
+		libevent-dev \
+		libffi-dev \
+		libgeoip-dev \
+		libglib2.0-dev \
+		libjpeg-dev \
+		liblzma-dev \
+		libmagickcore-dev \
+		libmagickwand-dev \
+		libmysqlclient-dev \
+		libncurses-dev \
+		libpng-dev \
+		libpq-dev \
+		libreadline-dev \
+		libsqlite3-dev \
+		libssl-dev \
+		libtool \
+		libwebp-dev \
+		libxml2-dev \
+		libxslt-dev \
+		libyaml-dev \
+		make \
+		patch \
+		xz-utils \
+		zlib1g-dev \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 08 Sep 2015 15:41:19 GMT
+-	Parent Layer: `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
+-	Docker Version: 1.7.1
+-	Virtual Size: 250.6 MB (250569275 bytes)
+-	v2 Blob: `sha256:89989badb2c249165ed907bdf03e38dffbaefd3c115ad32ac6cf53ebbafab33b`
+-	v2 Content-Length: 94.3 MB (94261782 bytes)
+-	v2 Last-Modified: Tue, 08 Sep 2015 16:03:53 GMT
+
+#### `ce9946b53ce428ddf2b10e020c18a431cc650e84959988f43e8881d9c445e33f`
+
+```dockerfile
+RUN set -ex \
+	&& for key in \
+		7937DFD2AB06298B2293C3187D33FF9D0246406D \
+		114F43EE0176B71C7BC219DD50A3051F888C628D \
+	; do \
+		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
+	done
+```
+
+-	Created: Wed, 09 Sep 2015 19:53:30 GMT
+-	Parent Layer: `3a5282506aa21c7b21cfdad32a099497bf9839dbc5e427f79bdad6a5e109f3d3`
+-	Docker Version: 1.7.1
+-	Virtual Size: 22.3 KB (22254 bytes)
+-	v2 Blob: `sha256:bf3e4302f7db973a9fa82ab1ae7f15fc2e04ddc7fb80df433bbf576fcf085b08`
+-	v2 Content-Length: 9.8 KB (9825 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 20:23:49 GMT
+
+#### `2f69df329512cf47b3e6c3d944c6bd1b34ece2985c1f120566a3a620d4bdacda`
+
+```dockerfile
+ENV NODE_VERSION=0.12.7
+```
+
+-	Created: Wed, 09 Sep 2015 19:56:40 GMT
+-	Parent Layer: `ce9946b53ce428ddf2b10e020c18a431cc650e84959988f43e8881d9c445e33f`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `f78b05171cae0d343b506f2c7fbe2ab9970e0f62de2332b5abf22fdf8abc9f04`
+
+```dockerfile
+ENV NPM_VERSION=2.14.1
+```
+
+-	Created: Wed, 09 Sep 2015 19:56:40 GMT
+-	Parent Layer: `2f69df329512cf47b3e6c3d944c6bd1b34ece2985c1f120566a3a620d4bdacda`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `c9de376f1bd56a5b3569bc7dab76897f44def5e651b1a0bb498298f054e403c9`
+
+```dockerfile
+RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
+	&& curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
+	&& gpg --verify SHASUMS256.txt.asc \
+	&& grep " node-v$NODE_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c - \
+	&& tar -xzf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
+	&& rm "node-v$NODE_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc \
+	&& npm install -g npm@"$NPM_VERSION" \
+	&& npm cache clear
+```
+
+-	Created: Wed, 09 Sep 2015 19:56:52 GMT
+-	Parent Layer: `f78b05171cae0d343b506f2c7fbe2ab9970e0f62de2332b5abf22fdf8abc9f04`
+-	Docker Version: 1.7.1
+-	Virtual Size: 35.8 MB (35795657 bytes)
+-	v2 Blob: `sha256:67a55bf72f84bcaffb49fb5965a22d613f009a17467e9e8c73392bde6f5f721d`
+-	v2 Content-Length: 13.5 MB (13460260 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 20:30:20 GMT
+
+#### `30f3834838522774491236aeb4d3e5c0b4edb4934f03d1c8e8aeb2e12b19c73d`
+
+```dockerfile
+CMD ["node"]
+```
+
+-	Created: Wed, 09 Sep 2015 19:56:53 GMT
+-	Parent Layer: `c9de376f1bd56a5b3569bc7dab76897f44def5e651b1a0bb498298f054e403c9`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+## `node:0-wheezy`
+
+-	Total Virtual Size: 495.0 MB (494983037 bytes)
+-	Total v2 Content-Length: 188.7 MB (188710089 bytes)
+
+### Layers (10)
+
+#### `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
+
+```dockerfile
+ADD file:b908886c97e2b96665b7afc54ff53ebaef1c62896cf83a1199e59fceff1dafb5 in /
+```
+
+-	Created: Mon, 07 Sep 2015 23:37:10 GMT
+-	Docker Version: 1.7.1
+-	Virtual Size: 84.9 MB (84924773 bytes)
+-	v2 Blob: `sha256:8f47f7c36e4382b4569bfe8858c0b371313e9c47a72867d69b000949c53637c9`
+-	v2 Content-Length: 37.2 MB (37191761 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:46:29 GMT
+
+#### `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Mon, 07 Sep 2015 23:37:11 GMT
+-	Parent Layer: `ba249489d0b6512128b60a4910e78fa2000c785d59e0599188a6802bd01155f2`
+-	Docker Version: 1.7.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `e83e5b7f7d01ffa47e46b7234799f12d842089df890db8fae765c5a4df26a20b`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 08 Sep 2015 15:38:48 GMT
+-	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
+-	Docker Version: 1.7.1
+-	Virtual Size: 14.2 MB (14239819 bytes)
+-	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
+-	v2 Content-Length: 6.7 MB (6739553 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -3310,7 +4132,7 @@ CMD ["node"]
 ## `node:4.0.0`
 
 -	Total Virtual Size: 641.2 MB (641154965 bytes)
--	Total v2 Content-Length: 252.3 MB (252262455 bytes)
+-	Total v2 Content-Length: 252.3 MB (252262452 bytes)
 
 ### Layers (10)
 
@@ -3355,9 +4177,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3508,7 +4330,7 @@ CMD ["node"]
 ## `node:4.0`
 
 -	Total Virtual Size: 641.2 MB (641154965 bytes)
--	Total v2 Content-Length: 252.3 MB (252262455 bytes)
+-	Total v2 Content-Length: 252.3 MB (252262452 bytes)
 
 ### Layers (10)
 
@@ -3553,9 +4375,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3703,10 +4525,10 @@ CMD ["node"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `node:0`
+## `node:4`
 
 -	Total Virtual Size: 641.2 MB (641154965 bytes)
--	Total v2 Content-Length: 252.3 MB (252262455 bytes)
+-	Total v2 Content-Length: 252.3 MB (252262452 bytes)
 
 ### Layers (10)
 
@@ -3751,9 +4573,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3904,7 +4726,7 @@ CMD ["node"]
 ## `node:latest`
 
 -	Total Virtual Size: 641.2 MB (641154965 bytes)
--	Total v2 Content-Length: 252.3 MB (252262455 bytes)
+-	Total v2 Content-Length: 252.3 MB (252262452 bytes)
 
 ### Layers (10)
 
@@ -3949,9 +4771,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4102,7 +4924,7 @@ CMD ["node"]
 ## `node:4.0.0-onbuild`
 
 -	Total Virtual Size: 641.2 MB (641154965 bytes)
--	Total v2 Content-Length: 252.3 MB (252262741 bytes)
+-	Total v2 Content-Length: 252.3 MB (252262738 bytes)
 
 ### Layers (16)
 
@@ -4147,9 +4969,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4384,7 +5206,7 @@ CMD ["npm" "start"]
 ## `node:4.0-onbuild`
 
 -	Total Virtual Size: 641.2 MB (641154965 bytes)
--	Total v2 Content-Length: 252.3 MB (252262741 bytes)
+-	Total v2 Content-Length: 252.3 MB (252262738 bytes)
 
 ### Layers (16)
 
@@ -4429,9 +5251,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4663,10 +5485,10 @@ CMD ["npm" "start"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `node:0-onbuild`
+## `node:4-onbuild`
 
 -	Total Virtual Size: 641.2 MB (641154965 bytes)
--	Total v2 Content-Length: 252.3 MB (252262741 bytes)
+-	Total v2 Content-Length: 252.3 MB (252262738 bytes)
 
 ### Layers (16)
 
@@ -4711,9 +5533,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4948,7 +5770,7 @@ CMD ["npm" "start"]
 ## `node:onbuild`
 
 -	Total Virtual Size: 641.2 MB (641154965 bytes)
--	Total v2 Content-Length: 252.3 MB (252262741 bytes)
+-	Total v2 Content-Length: 252.3 MB (252262738 bytes)
 
 ### Layers (16)
 
@@ -4993,9 +5815,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -5230,7 +6052,7 @@ CMD ["npm" "start"]
 ## `node:4.0.0-slim`
 
 -	Total Virtual Size: 204.2 MB (204184826 bytes)
--	Total v2 Content-Length: 81.4 MB (81391813 bytes)
+-	Total v2 Content-Length: 81.4 MB (81391810 bytes)
 
 ### Layers (8)
 
@@ -5275,9 +6097,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3ca3a69d20d0506f48dd8f8d337c2d5120bee25c607e02f5c55402c39093addd`
 
@@ -5359,7 +6181,7 @@ CMD ["node"]
 ## `node:4.0-slim`
 
 -	Total Virtual Size: 204.2 MB (204184826 bytes)
--	Total v2 Content-Length: 81.4 MB (81391813 bytes)
+-	Total v2 Content-Length: 81.4 MB (81391810 bytes)
 
 ### Layers (8)
 
@@ -5404,9 +6226,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3ca3a69d20d0506f48dd8f8d337c2d5120bee25c607e02f5c55402c39093addd`
 
@@ -5485,10 +6307,10 @@ CMD ["node"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `node:0-slim`
+## `node:4-slim`
 
 -	Total Virtual Size: 204.2 MB (204184826 bytes)
--	Total v2 Content-Length: 81.4 MB (81391813 bytes)
+-	Total v2 Content-Length: 81.4 MB (81391810 bytes)
 
 ### Layers (8)
 
@@ -5533,9 +6355,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3ca3a69d20d0506f48dd8f8d337c2d5120bee25c607e02f5c55402c39093addd`
 
@@ -5617,7 +6439,7 @@ CMD ["node"]
 ## `node:slim`
 
 -	Total Virtual Size: 204.2 MB (204184826 bytes)
--	Total v2 Content-Length: 81.4 MB (81391813 bytes)
+-	Total v2 Content-Length: 81.4 MB (81391810 bytes)
 
 ### Layers (8)
 
@@ -5662,9 +6484,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3ca3a69d20d0506f48dd8f8d337c2d5120bee25c607e02f5c55402c39093addd`
 
@@ -5746,7 +6568,7 @@ CMD ["node"]
 ## `node:4.0.0-wheezy`
 
 -	Total Virtual Size: 493.8 MB (493835133 bytes)
--	Total v2 Content-Length: 186.7 MB (186733369 bytes)
+-	Total v2 Content-Length: 186.7 MB (186733366 bytes)
 
 ### Layers (10)
 
@@ -5791,9 +6613,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
+-	v2 Content-Length: 6.7 MB (6739553 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -5944,7 +6766,7 @@ CMD ["node"]
 ## `node:4.0-wheezy`
 
 -	Total Virtual Size: 493.8 MB (493835133 bytes)
--	Total v2 Content-Length: 186.7 MB (186733369 bytes)
+-	Total v2 Content-Length: 186.7 MB (186733366 bytes)
 
 ### Layers (10)
 
@@ -5989,9 +6811,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
+-	v2 Content-Length: 6.7 MB (6739553 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -6139,10 +6961,10 @@ CMD ["node"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `node:0-wheezy`
+## `node:4-wheezy`
 
 -	Total Virtual Size: 493.8 MB (493835133 bytes)
--	Total v2 Content-Length: 186.7 MB (186733369 bytes)
+-	Total v2 Content-Length: 186.7 MB (186733366 bytes)
 
 ### Layers (10)
 
@@ -6187,9 +7009,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
+-	v2 Content-Length: 6.7 MB (6739553 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -6340,7 +7162,7 @@ CMD ["node"]
 ## `node:wheezy`
 
 -	Total Virtual Size: 493.8 MB (493835133 bytes)
--	Total v2 Content-Length: 186.7 MB (186733369 bytes)
+-	Total v2 Content-Length: 186.7 MB (186733366 bytes)
 
 ### Layers (10)
 
@@ -6385,9 +7207,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
+-	v2 Content-Length: 6.7 MB (6739553 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
