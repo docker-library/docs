@@ -24,13 +24,10 @@ $ docker inspect --format '{{ .NetworkSettings.IPAddress }}' spagobi
 172.17.0.44
 ```
 
-You can test it by visiting `http://container-ip:8080/SpagoBI` in a browser.
+It's necessary to test it through directly the container, so without mapping the port to the host.
 
-If you need access outside the host, on port 8080:
+If you run the host with a Virtual Machine (for example in a Mac environment) then you can route the traffic directly to the container from you localhost using route command:
 
 ```console
-$ docker run --name spagobi -p 8080:8080 -d spagobi:all-in-one
-f3d9a80d80aa7c67b8a57a6b96907d517ebed690a1bb8576eaf4758c41cfdec8
+$ route -n add 172.17.0.0/16 <ip-of-host-Virtual-Machine>
 ```
-
-You can test it now by visiting `http://host-ip:8080/SpagoBI` in a browser.
