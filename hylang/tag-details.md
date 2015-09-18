@@ -9,6 +9,10 @@
 
 ## `hylang:latest`
 
+```console
+$ docker pull library/hylang@sha256:189f82a59b3ebc71097e9f5605decf05c156e46cba7031462571c427080035ad
+```
+
 -	Total Virtual Size: 691.9 MB (691934608 bytes)
 -	Total v2 Content-Length: 265.5 MB (265524561 bytes)
 
@@ -319,6 +323,10 @@ CMD ["hy"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `hylang:0`
+
+```console
+$ docker pull library/hylang@sha256:0307ed572307b8274d75c2e65c5186ee5301e068f38b69b3615552e8d79a9370
+```
 
 -	Total Virtual Size: 691.9 MB (691934608 bytes)
 -	Total v2 Content-Length: 265.5 MB (265524561 bytes)
@@ -631,6 +639,10 @@ CMD ["hy"]
 
 ## `hylang:0.11`
 
+```console
+$ docker pull library/hylang@sha256:1ca59bc1c05397901350c27b89d42be6ce916acd79b1e051e36beeba427d301d
+```
+
 -	Total Virtual Size: 691.9 MB (691934608 bytes)
 -	Total v2 Content-Length: 265.5 MB (265524561 bytes)
 
@@ -941,6 +953,10 @@ CMD ["hy"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `hylang:0.11.0`
+
+```console
+$ docker pull library/hylang@sha256:48abe2b0f4a80bdf89dda26316009217943ec3e68a220b456a3c1d5432093b4d
+```
 
 -	Total Virtual Size: 691.9 MB (691934608 bytes)
 -	Total v2 Content-Length: 265.5 MB (265524561 bytes)

@@ -9,6 +9,10 @@
 
 ## `nginx:latest`
 
+```console
+$ docker pull library/nginx@sha256:0324afc5c8191616576f7b23b297d001609726a2f1b6561c90e229e54ab701cf
+```
+
 -	Total Virtual Size: 132.9 MB (132855579 bytes)
 -	Total v2 Content-Length: 54.7 MB (54747696 bytes)
 
@@ -184,6 +188,10 @@ CMD ["nginx" "-g" "daemon off;"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `nginx:1`
+
+```console
+$ docker pull library/nginx@sha256:e5bfc59367036060b0e5a39f91369c21c91c7c78c7f1ffbe961dd1fd9087ccc2
+```
 
 -	Total Virtual Size: 132.9 MB (132855579 bytes)
 -	Total v2 Content-Length: 54.7 MB (54747696 bytes)
@@ -361,6 +369,10 @@ CMD ["nginx" "-g" "daemon off;"]
 
 ## `nginx:1.9`
 
+```console
+$ docker pull library/nginx@sha256:694367d61a3301c41bf169a343ba75d4333e2c9029d46b0758d79425c3031332
+```
+
 -	Total Virtual Size: 132.9 MB (132855579 bytes)
 -	Total v2 Content-Length: 54.7 MB (54747696 bytes)
 
@@ -536,6 +548,10 @@ CMD ["nginx" "-g" "daemon off;"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `nginx:1.9.4`
+
+```console
+$ docker pull library/nginx@sha256:de5db7aaa5b02492094b71e4db7d0b17782ee4b0b390689c0815120ab34fc11c
+```
 
 -	Total Virtual Size: 132.9 MB (132855579 bytes)
 -	Total v2 Content-Length: 54.7 MB (54747696 bytes)

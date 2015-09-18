@@ -14,6 +14,10 @@
 
 ## `mysql:5.5.45`
 
+```console
+$ docker pull library/mysql@sha256:d48774c3a8eb8fbaf78e36c701abb1f833015e2f58a91e1a1ac2d0f6f5317b8a
+```
+
 -	Total Virtual Size: 213.5 MB (213454922 bytes)
 -	Total v2 Content-Length: 73.2 MB (73155210 bytes)
 
@@ -278,6 +282,10 @@ CMD ["mysqld"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `mysql:5.5`
+
+```console
+$ docker pull library/mysql@sha256:2edec1ca3024c8bd77b02be92d0b3295bcfd5fac2d111c89249b4b0c9d16c182
+```
 
 -	Total Virtual Size: 213.5 MB (213454922 bytes)
 -	Total v2 Content-Length: 73.2 MB (73155210 bytes)
@@ -544,6 +552,10 @@ CMD ["mysqld"]
 
 ## `mysql:5.6.26`
 
+```console
+$ docker pull library/mysql@sha256:372ee10a9543241d1856324a2b2bcfaa7c6ec84dff86d52185de43f2ff9eafc9
+```
+
 -	Total Virtual Size: 283.5 MB (283530606 bytes)
 -	Total v2 Content-Length: 96.9 MB (96856844 bytes)
 
@@ -782,6 +794,10 @@ CMD ["mysqld"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `mysql:5.6`
+
+```console
+$ docker pull library/mysql@sha256:c30f04b3417f4d62d803c8433377e1b5c4791cd39f996a89aa1c8cfaf74d59b0
+```
 
 -	Total Virtual Size: 283.5 MB (283530606 bytes)
 -	Total v2 Content-Length: 96.9 MB (96856844 bytes)
@@ -1022,6 +1038,10 @@ CMD ["mysqld"]
 
 ## `mysql:5`
 
+```console
+$ docker pull library/mysql@sha256:d5bdebd5b0b8581963047a8d68d6e505e3272a4b87193a1ac6a79add60d30a51
+```
+
 -	Total Virtual Size: 283.5 MB (283530606 bytes)
 -	Total v2 Content-Length: 96.9 MB (96856844 bytes)
 
@@ -1260,6 +1280,10 @@ CMD ["mysqld"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `mysql:latest`
+
+```console
+$ docker pull library/mysql@sha256:842ee1ad1b0f19561d9fee65bb7c6197b2a2b4093f069e7969acefb6355e8c1b
+```
 
 -	Total Virtual Size: 283.5 MB (283530606 bytes)
 -	Total v2 Content-Length: 96.9 MB (96856844 bytes)
@@ -1500,6 +1524,10 @@ CMD ["mysqld"]
 
 ## `mysql:5.7.8-rc`
 
+```console
+$ docker pull library/mysql@sha256:8630a573edba13c05ca7a66e86562075110a01c7c0f06c0d7edec23492248819
+```
+
 -	Total Virtual Size: 321.3 MB (321267051 bytes)
 -	Total v2 Content-Length: 109.1 MB (109140026 bytes)
 
@@ -1739,6 +1767,10 @@ CMD ["mysqld"]
 
 ## `mysql:5.7.8`
 
+```console
+$ docker pull library/mysql@sha256:832ad9cd9b7d5fa4008a9d8a43f8f2c0b05407cf8c41539f77e77c43235671fe
+```
+
 -	Total Virtual Size: 321.3 MB (321267051 bytes)
 -	Total v2 Content-Length: 109.1 MB (109140026 bytes)
 
@@ -1977,6 +2009,10 @@ CMD ["mysqld"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `mysql:5.7`
+
+```console
+$ docker pull library/mysql@sha256:839f9145c82dc8691393b2f01a835051b398d6e0c08991127c79268523bd7160
+```
 
 -	Total Virtual Size: 321.3 MB (321267051 bytes)
 -	Total v2 Content-Length: 109.1 MB (109140026 bytes)

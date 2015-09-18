@@ -20,6 +20,10 @@
 
 ## `django:1.8.4-python2`
 
+```console
+$ docker pull library/django@sha256:53655c90c3700a01f92b9b7c4d08cbb117ec9c4bcf80700c933242c6a30c4ff0
+```
+
 -	Total Virtual Size: 421.1 MB (421116993 bytes)
 -	Total v2 Content-Length: 151.7 MB (151699205 bytes)
 
@@ -263,6 +267,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:13:01 GMT
 
 ## `django:1.8-python2`
+
+```console
+$ docker pull library/django@sha256:213c1b8bec8783d2dc81485fcee07a23b5fddfd568c3e41537bccb3e532c81ac
+```
 
 -	Total Virtual Size: 421.1 MB (421116993 bytes)
 -	Total v2 Content-Length: 151.7 MB (151699205 bytes)
@@ -508,6 +516,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 
 ## `django:1-python2`
 
+```console
+$ docker pull library/django@sha256:998ec5c9c01a713dcae12b3d288a8ea86008e0c9c30a4dd2c45ac427a795aacb
+```
+
 -	Total Virtual Size: 421.1 MB (421116993 bytes)
 -	Total v2 Content-Length: 151.7 MB (151699205 bytes)
 
@@ -752,6 +764,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 
 ## `django:python2`
 
+```console
+$ docker pull library/django@sha256:24e3a1162e73c772e9ba0c86f0609621aa401c4debfe8689455a1066a36acc44
+```
+
 -	Total Virtual Size: 421.1 MB (421116993 bytes)
 -	Total v2 Content-Length: 151.7 MB (151699205 bytes)
 
@@ -995,6 +1011,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:13:01 GMT
 
 ## `django:python2-onbuild`
+
+```console
+$ docker pull library/django@sha256:01f4495c121184522c63cf427702b92c08828004aa840007331486ea34ce6e8e
+```
 
 -	Total Virtual Size: 720.7 MB (720656176 bytes)
 -	Total v2 Content-Length: 277.4 MB (277366176 bytes)
@@ -1364,6 +1384,10 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 
 ## `django:1.8.4-python3`
 
+```console
+$ docker pull library/django@sha256:8651854cca47bfb1037fa2bd705ba218ac75afda7cce4a8eaf44fdae8981b75d
+```
+
 -	Total Virtual Size: 434.5 MB (434493809 bytes)
 -	Total v2 Content-Length: 152.4 MB (152384919 bytes)
 
@@ -1611,6 +1635,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:25:41 GMT
 
 ## `django:1.8.4`
+
+```console
+$ docker pull library/django@sha256:f81865f7038623c5515a20e6c5772a10eaf63f253f7974d65e4e8867cc55ba86
+```
 
 -	Total Virtual Size: 434.5 MB (434493809 bytes)
 -	Total v2 Content-Length: 152.4 MB (152384919 bytes)
@@ -1860,6 +1888,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 
 ## `django:1.8-python3`
 
+```console
+$ docker pull library/django@sha256:a689dfe96897b2bedbbbb09e90c260a3ef829532e7352c045c81e2c4e6c7792d
+```
+
 -	Total Virtual Size: 434.5 MB (434493809 bytes)
 -	Total v2 Content-Length: 152.4 MB (152384919 bytes)
 
@@ -2107,6 +2139,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:25:41 GMT
 
 ## `django:1.8`
+
+```console
+$ docker pull library/django@sha256:55014c602ec832b7c4cbee66ae884bc443b461c2cce60afa6d0d381179b03ad8
+```
 
 -	Total Virtual Size: 434.5 MB (434493809 bytes)
 -	Total v2 Content-Length: 152.4 MB (152384919 bytes)
@@ -2356,6 +2392,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 
 ## `django:1-python3`
 
+```console
+$ docker pull library/django@sha256:3b4a644e2e4352ca258d44e40f416c3a152637b282a77adb3c72deb085f92cbf
+```
+
 -	Total Virtual Size: 434.5 MB (434493809 bytes)
 -	Total v2 Content-Length: 152.4 MB (152384919 bytes)
 
@@ -2603,6 +2643,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:25:41 GMT
 
 ## `django:1`
+
+```console
+$ docker pull library/django@sha256:35a1734c73e3301aa0a8c5e2d408195cc39121d20afc874484fa8036dc8a4827
+```
 
 -	Total Virtual Size: 434.5 MB (434493809 bytes)
 -	Total v2 Content-Length: 152.4 MB (152384919 bytes)
@@ -2852,6 +2896,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 
 ## `django:python3`
 
+```console
+$ docker pull library/django@sha256:1ca8afb4cc47420324a4acf331652447d79940c27369e6dc41a1133ad7646a68
+```
+
 -	Total Virtual Size: 434.5 MB (434493809 bytes)
 -	Total v2 Content-Length: 152.4 MB (152384919 bytes)
 
@@ -3100,6 +3148,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 
 ## `django:latest`
 
+```console
+$ docker pull library/django@sha256:5862a3408ae07511b89112228c24c801efb664f3f2731e584b5366becbb023b2
+```
+
 -	Total Virtual Size: 434.5 MB (434493809 bytes)
 -	Total v2 Content-Length: 152.4 MB (152384919 bytes)
 
@@ -3347,6 +3399,10 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:25:41 GMT
 
 ## `django:python3-onbuild`
+
+```console
+$ docker pull library/django@sha256:ce527c6ba8353bd0b2f95a6db38683875e64e6f74a83de164648193461724cdf
+```
 
 -	Total Virtual Size: 731.0 MB (731020151 bytes)
 -	Total v2 Content-Length: 276.7 MB (276730598 bytes)
@@ -3719,6 +3775,10 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `django:onbuild`
+
+```console
+$ docker pull library/django@sha256:686deb09c8f81078e96d506ea9942201cc2b31279ef2e1a521dd34735910b197
+```
 
 -	Total Virtual Size: 731.0 MB (731020151 bytes)
 -	Total v2 Content-Length: 276.7 MB (276730598 bytes)

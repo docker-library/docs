@@ -14,6 +14,10 @@
 
 ## `kibana:4.0.3`
 
+```console
+$ docker pull library/kibana@sha256:11f43d246056621683b9fb628d6238fe8a3e14424388bd0afcaa598f8a7c522a
+```
+
 -	Total Virtual Size: 195.5 MB (195480915 bytes)
 -	Total v2 Content-Length: 73.1 MB (73080665 bytes)
 
@@ -226,6 +230,10 @@ CMD ["kibana"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:4.0`
+
+```console
+$ docker pull library/kibana@sha256:6612403b597f9285da98241947c31247f70583aacdd7daded747fea602c708b6
+```
 
 -	Total Virtual Size: 195.5 MB (195480915 bytes)
 -	Total v2 Content-Length: 73.1 MB (73080665 bytes)
@@ -440,6 +448,10 @@ CMD ["kibana"]
 
 ## `kibana:4.1.2`
 
+```console
+$ docker pull library/kibana@sha256:d7b6387c178819cec67b79106b709b96e2f13830cfcfc13851fd22361443e801
+```
+
 -	Total Virtual Size: 184.6 MB (184644596 bytes)
 -	Total v2 Content-Length: 70.5 MB (70549857 bytes)
 
@@ -652,6 +664,10 @@ CMD ["kibana"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:4.1`
+
+```console
+$ docker pull library/kibana@sha256:21646b2e0a3503df7a33623d641b17917fc9b17ee9459ba5895260e0981da9b9
+```
 
 -	Total Virtual Size: 184.6 MB (184644596 bytes)
 -	Total v2 Content-Length: 70.5 MB (70549857 bytes)
@@ -866,6 +882,10 @@ CMD ["kibana"]
 
 ## `kibana:4`
 
+```console
+$ docker pull library/kibana@sha256:e5a735d394cf2eaca752f69efc455b9826c349da3529b159b26cac542887c14e
+```
+
 -	Total Virtual Size: 184.6 MB (184644596 bytes)
 -	Total v2 Content-Length: 70.5 MB (70549857 bytes)
 
@@ -1079,6 +1099,10 @@ CMD ["kibana"]
 
 ## `kibana:latest`
 
+```console
+$ docker pull library/kibana@sha256:c14610acff12578dfb096e798da9cf974f431f2a83e192697219a7855abb992f
+```
+
 -	Total Virtual Size: 184.6 MB (184644596 bytes)
 -	Total v2 Content-Length: 70.5 MB (70549857 bytes)
 
@@ -1291,6 +1315,10 @@ CMD ["kibana"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:4.2.0-beta1`
+
+```console
+$ docker pull library/kibana@sha256:12d538b71ba1b11920ed866d23c08306ebe9786918483eb3afd771be783a2d93
+```
 
 -	Total Virtual Size: 307.4 MB (307353338 bytes)
 -	Total v2 Content-Length: 102.3 MB (102273882 bytes)
@@ -1506,6 +1534,10 @@ CMD ["kibana"]
 
 ## `kibana:4.2.0`
 
+```console
+$ docker pull library/kibana@sha256:54f04980c83d6d9f38a2184b4ab86e316af24a86148c46487749c0e11accbfb4
+```
+
 -	Total Virtual Size: 307.4 MB (307353338 bytes)
 -	Total v2 Content-Length: 102.3 MB (102273882 bytes)
 
@@ -1719,6 +1751,10 @@ CMD ["kibana"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:4.2`
+
+```console
+$ docker pull library/kibana@sha256:f0e0eb2bae41b1fc2e9dc588fc9a3dc680b00e1d0a51e6515afc621c5db75287
+```
 
 -	Total Virtual Size: 307.4 MB (307353338 bytes)
 -	Total v2 Content-Length: 102.3 MB (102273882 bytes)

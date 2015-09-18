@@ -24,6 +24,10 @@
 
 ## `neurodebian:precise`
 
+```console
+$ docker pull library/neurodebian@sha256:06566149631e55a7cdaa150f8c57da25f2208f9b3610bc6414df2c530d14ce0c
+```
+
 -	Total Virtual Size: 85.8 MB (85813591 bytes)
 -	Total v2 Content-Length: 35.6 MB (35583271 bytes)
 
@@ -113,6 +117,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 -	v2 Last-Modified: Thu, 27 Aug 2015 01:13:22 GMT
 
 ## `neurodebian:nd12.04`
+
+```console
+$ docker pull library/neurodebian@sha256:17a24b4284d148ed88ccde691eff893c0b6e9fc9c89cf1e7cd4e606e26c17320
+```
 
 -	Total Virtual Size: 85.8 MB (85813591 bytes)
 -	Total v2 Content-Length: 35.6 MB (35583271 bytes)
@@ -204,6 +212,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:trusty`
 
+```console
+$ docker pull library/neurodebian@sha256:e6482ecf0af0c7529add9588d16ec951f273ad62438ef73b3327dba41118d284
+```
+
 -	Total Virtual Size: 87.1 MB (87115463 bytes)
 -	Total v2 Content-Length: 34.9 MB (34880654 bytes)
 
@@ -293,6 +305,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 -	v2 Last-Modified: Thu, 27 Aug 2015 01:14:38 GMT
 
 ## `neurodebian:nd14.04`
+
+```console
+$ docker pull library/neurodebian@sha256:9eb7216b959e059a2121dccdb9d24dbe1b380da0d250acff398dca4bac3449e5
+```
 
 -	Total Virtual Size: 87.1 MB (87115463 bytes)
 -	Total v2 Content-Length: 34.9 MB (34880654 bytes)
@@ -384,6 +400,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:utopic`
 
+```console
+$ docker pull library/neurodebian@sha256:f5d7631225726af43c7e173694ca1f0079190eab8ac46d6f62a7cae16030c0a1
+```
+
 -	Total Virtual Size: 125.3 MB (125312865 bytes)
 -	Total v2 Content-Length: 45.0 MB (45049588 bytes)
 
@@ -473,6 +493,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 -	v2 Last-Modified: Tue, 14 Jul 2015 17:37:24 GMT
 
 ## `neurodebian:nd14.10`
+
+```console
+$ docker pull library/neurodebian@sha256:f2cebb80fe75c942d168760c230b028b640d4dc756d24f4af6b2c5bd98a0b2a1
+```
 
 -	Total Virtual Size: 125.3 MB (125312865 bytes)
 -	Total v2 Content-Length: 45.0 MB (45049588 bytes)
@@ -564,6 +588,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:vivid`
 
+```console
+$ docker pull library/neurodebian@sha256:928665511c5ee071dc120ba6a325a6da1641837f5a49cd7e4526be8ca3f82491
+```
+
 -	Total Virtual Size: 110.2 MB (110178759 bytes)
 -	Total v2 Content-Length: 43.5 MB (43468039 bytes)
 
@@ -653,6 +681,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 -	v2 Last-Modified: Thu, 27 Aug 2015 01:16:18 GMT
 
 ## `neurodebian:nd15.04`
+
+```console
+$ docker pull library/neurodebian@sha256:5bd61d107a04ff64e65960768c11628f3afda785f7e54b339d3ba843f14c055c
+```
 
 -	Total Virtual Size: 110.2 MB (110178759 bytes)
 -	Total v2 Content-Length: 43.5 MB (43468039 bytes)
@@ -744,6 +776,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:squeeze`
 
+```console
+$ docker pull library/neurodebian@sha256:48394cabf601fe17c9d7f664694df0cddb9bdaaa6e4984feba2dfbe029be3cc7
+```
+
 -	Total Virtual Size: 76.6 MB (76577169 bytes)
 -	Total v2 Content-Length: 33.9 MB (33862363 bytes)
 
@@ -833,6 +869,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 -	v2 Last-Modified: Fri, 11 Sep 2015 08:57:44 GMT
 
 ## `neurodebian:nd60`
+
+```console
+$ docker pull library/neurodebian@sha256:dadbb5d99d44e1e2ea741203bfbf82f922e27949a44e0697d3c91bb99b1b018d
+```
 
 -	Total Virtual Size: 76.6 MB (76577169 bytes)
 -	Total v2 Content-Length: 33.9 MB (33862363 bytes)
@@ -924,6 +964,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:wheezy`
 
+```console
+$ docker pull library/neurodebian@sha256:6ca53902b3f923e5f3d37497b206b35359f53cddaefade3bf321765a15135a9c
+```
+
 -	Total Virtual Size: 85.0 MB (84985944 bytes)
 -	Total v2 Content-Length: 37.2 MB (37224606 bytes)
 
@@ -1013,6 +1057,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 -	v2 Last-Modified: Fri, 11 Sep 2015 08:59:27 GMT
 
 ## `neurodebian:nd70`
+
+```console
+$ docker pull library/neurodebian@sha256:3b973c94098381e20c66cf43f0fee723b3f65a17dafb53b1318e43f7f566ec25
+```
 
 -	Total Virtual Size: 85.0 MB (84985944 bytes)
 -	Total v2 Content-Length: 37.2 MB (37224606 bytes)
@@ -1104,6 +1152,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:jessie`
 
+```console
+$ docker pull library/neurodebian@sha256:d4e165783c668827a8bb99e987b62bf993824864126e52145aae5e9eaaaccdb8
+```
+
 -	Total Virtual Size: 125.2 MB (125162633 bytes)
 -	Total v2 Content-Length: 51.4 MB (51363587 bytes)
 
@@ -1193,6 +1245,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 -	v2 Last-Modified: Fri, 11 Sep 2015 09:01:07 GMT
 
 ## `neurodebian:nd80`
+
+```console
+$ docker pull library/neurodebian@sha256:1fe1b1b8636a6aeff86091f9800634579a60f1a835d93b7a1e1ea127bc29beb8
+```
 
 -	Total Virtual Size: 125.2 MB (125162633 bytes)
 -	Total v2 Content-Length: 51.4 MB (51363587 bytes)
@@ -1284,6 +1340,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:latest`
 
+```console
+$ docker pull library/neurodebian@sha256:69fdec3ea3c281ae281136d0a34221ef2dcb9a5c066fbcf72d9819bf2d842dd2
+```
+
 -	Total Virtual Size: 125.2 MB (125162633 bytes)
 -	Total v2 Content-Length: 51.4 MB (51363587 bytes)
 
@@ -1373,6 +1433,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 -	v2 Last-Modified: Fri, 11 Sep 2015 09:01:07 GMT
 
 ## `neurodebian:stretch`
+
+```console
+$ docker pull library/neurodebian@sha256:7ac9166d4709f95896195e65ce770a816d1035e3b74c4be6da17abb885c6840c
+```
 
 -	Total Virtual Size: 126.1 MB (126050066 bytes)
 -	Total v2 Content-Length: 52.8 MB (52816442 bytes)
@@ -1464,6 +1528,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:nd90`
 
+```console
+$ docker pull library/neurodebian@sha256:6d4dafed2933e31029b462df7f0ff87968d3897535ca4f80af70098b44c4a9df
+```
+
 -	Total Virtual Size: 126.1 MB (126050066 bytes)
 -	Total v2 Content-Length: 52.8 MB (52816442 bytes)
 
@@ -1554,6 +1622,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 
 ## `neurodebian:sid`
 
+```console
+$ docker pull library/neurodebian@sha256:d4e485a4d8787599c8830cfa2f50b595458487cbb0305ad2c5b823bc302390a0
+```
+
 -	Total Virtual Size: 126.5 MB (126467557 bytes)
 -	Total v2 Content-Length: 53.0 MB (53019014 bytes)
 
@@ -1643,6 +1715,10 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 -	v2 Last-Modified: Fri, 11 Sep 2015 09:05:16 GMT
 
 ## `neurodebian:nd`
+
+```console
+$ docker pull library/neurodebian@sha256:41f1a1588026d37ce8fe7a83e8b50e4dbdca58936d589df4a87bd1d6dd202332
+```
 
 -	Total Virtual Size: 126.5 MB (126467557 bytes)
 -	Total v2 Content-Length: 53.0 MB (53019014 bytes)

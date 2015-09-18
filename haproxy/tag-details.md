@@ -11,6 +11,10 @@
 
 ## `haproxy:1.4.26`
 
+```console
+$ docker pull library/haproxy@sha256:516e58d7748869c06e0627d6c205291a4b6846f8393ee8015e14892a49614443
+```
+
 -	Total Virtual Size: 92.0 MB (92036157 bytes)
 -	Total v2 Content-Length: 40.2 MB (40203275 bytes)
 
@@ -146,6 +150,10 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `haproxy:1.4`
+
+```console
+$ docker pull library/haproxy@sha256:8a271e49d48b5ae9a621cbd83ea027482c55766060c7099577b233661fa0548a
+```
 
 -	Total Virtual Size: 92.0 MB (92036157 bytes)
 -	Total v2 Content-Length: 40.2 MB (40203275 bytes)
@@ -283,6 +291,10 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 ## `haproxy:1.5.14`
 
+```console
+$ docker pull library/haproxy@sha256:fee6bd310af38bc8cb488522b4da016fc58a42011ab0dd169c043e41c5f1082c
+```
+
 -	Total Virtual Size: 97.8 MB (97835140 bytes)
 -	Total v2 Content-Length: 42.7 MB (42700111 bytes)
 
@@ -418,6 +430,10 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `haproxy:1.5`
+
+```console
+$ docker pull library/haproxy@sha256:6ad1541064a00a5ff6927af3809eb6b037a3c65c3e69faca76d6cd588bd28a44
+```
 
 -	Total Virtual Size: 97.8 MB (97835140 bytes)
 -	Total v2 Content-Length: 42.7 MB (42700111 bytes)
@@ -555,6 +571,10 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 ## `haproxy:1`
 
+```console
+$ docker pull library/haproxy@sha256:6c22e4eeb9c57d0472f7b49fe129872ae47bc54b6d9a92ea04a7bce624474f2b
+```
+
 -	Total Virtual Size: 97.8 MB (97835140 bytes)
 -	Total v2 Content-Length: 42.7 MB (42700111 bytes)
 
@@ -690,6 +710,10 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `haproxy:latest`
+
+```console
+$ docker pull library/haproxy@sha256:a168f0b100dec8fdf9474f67ebc0a822ec1c7dc72306b591f9b3627dcf8fe054
+```
 
 -	Total Virtual Size: 97.8 MB (97835140 bytes)
 -	Total v2 Content-Length: 42.7 MB (42700111 bytes)

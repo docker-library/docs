@@ -9,6 +9,10 @@
 
 ## `opensuse:13.2`
 
+```console
+$ docker pull library/opensuse@sha256:ae45dd0733912265db17f1f0a83d610215185aacdf84599d4b57462fe7d758f1
+```
+
 -	Total Virtual Size: 94.0 MB (94001408 bytes)
 -	Total v2 Content-Length: 36.9 MB (36945328 bytes)
 
@@ -42,6 +46,10 @@ ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
 -	v2 Last-Modified: Tue, 28 Jul 2015 17:44:47 GMT
 
 ## `opensuse:harlequin`
+
+```console
+$ docker pull library/opensuse@sha256:c14fc4d02f768fac4ce4f196ac1fa191dcdaaad82b7461cc1fdff65874d3d7b5
+```
 
 -	Total Virtual Size: 94.0 MB (94001408 bytes)
 -	Total v2 Content-Length: 36.9 MB (36945328 bytes)
@@ -77,6 +85,10 @@ ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
 
 ## `opensuse:latest`
 
+```console
+$ docker pull library/opensuse@sha256:d5ee5ba07134da6cece6ce784faa261efb4edd87b215bf8a7f8d9765b45878dd
+```
+
 -	Total Virtual Size: 94.0 MB (94001408 bytes)
 -	Total v2 Content-Length: 36.9 MB (36945328 bytes)
 
@@ -110,6 +122,10 @@ ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
 -	v2 Last-Modified: Tue, 28 Jul 2015 17:44:47 GMT
 
 ## `opensuse:tumbleweed`
+
+```console
+$ docker pull library/opensuse@sha256:cbb71ed6ece310ccf782faeed419c7de53a75df26bf1ae66fe0686ccdf064a99
+```
 
 -	Total Virtual Size: 106.6 MB (106595103 bytes)
 -	Total v2 Content-Length: 41.9 MB (41870896 bytes)

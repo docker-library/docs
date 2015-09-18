@@ -7,6 +7,10 @@
 
 ## `crux:latest`
 
+```console
+$ docker pull library/crux@sha256:9436af2ebae0264205bf412ba9e81cf88555dad5e6aa36c3a6ab14ba88f1b8f1
+```
+
 -	Total Virtual Size: 341.7 MB (341729815 bytes)
 -	Total v2 Content-Length: 122.3 MB (122252531 bytes)
 
@@ -54,6 +58,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `crux:3.1`
+
+```console
+$ docker pull library/crux@sha256:47aa91499b68e80ae3e00b1221786b5c4274ac69fb62757b964798d1f34277d5
+```
 
 -	Total Virtual Size: 341.7 MB (341729815 bytes)
 -	Total v2 Content-Length: 122.3 MB (122252531 bytes)

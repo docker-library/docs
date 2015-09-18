@@ -44,6 +44,10 @@
 
 ## `java:openjdk-6b36-jdk`
 
+```console
+$ docker pull library/java@sha256:d5765b2e0671cdd2090647415e38ca3d0bfb104fa7615c367d3b356968437e35
+```
+
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
 -	Total v2 Content-Length: 186.5 MB (186516917 bytes)
 
@@ -185,6 +189,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jdk="$JAVA_DEBIAN_VERSION" &&
 -	v2 Last-Modified: Fri, 11 Sep 2015 04:57:37 GMT
 
 ## `java:openjdk-6b36`
+
+```console
+$ docker pull library/java@sha256:8ce9d32bd87d705d2dfa06a72794baf0b1d375f25c32e0dec95aef0852a7c3ee
+```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
 -	Total v2 Content-Length: 186.5 MB (186516917 bytes)
@@ -328,6 +336,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jdk="$JAVA_DEBIAN_VERSION" &&
 
 ## `java:openjdk-6-jdk`
 
+```console
+$ docker pull library/java@sha256:c65e030d8fb2400bffbcff4ef9768c27f8508e4dfe557abadc449b39063eaab5
+```
+
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
 -	Total v2 Content-Length: 186.5 MB (186516917 bytes)
 
@@ -469,6 +481,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jdk="$JAVA_DEBIAN_VERSION" &&
 -	v2 Last-Modified: Fri, 11 Sep 2015 04:57:37 GMT
 
 ## `java:openjdk-6`
+
+```console
+$ docker pull library/java@sha256:5983a6f6ce71c191469ee2fbae0454f8971c49c8b5f71664cb83dc9747155756
+```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
 -	Total v2 Content-Length: 186.5 MB (186516917 bytes)
@@ -612,6 +628,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jdk="$JAVA_DEBIAN_VERSION" &&
 
 ## `java:6b36-jdk`
 
+```console
+$ docker pull library/java@sha256:6e4432b42598f118d3514bfae52d1d54bca4a9242ccc42ea93051d73bcced2c4
+```
+
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
 -	Total v2 Content-Length: 186.5 MB (186516917 bytes)
 
@@ -753,6 +773,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jdk="$JAVA_DEBIAN_VERSION" &&
 -	v2 Last-Modified: Fri, 11 Sep 2015 04:57:37 GMT
 
 ## `java:6b36`
+
+```console
+$ docker pull library/java@sha256:ed0d4b3ed3e34f8060c9cb18f0ff75f4bb22579ea8b761470c6083ec62f87a44
+```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
 -	Total v2 Content-Length: 186.5 MB (186516917 bytes)
@@ -896,6 +920,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jdk="$JAVA_DEBIAN_VERSION" &&
 
 ## `java:6-jdk`
 
+```console
+$ docker pull library/java@sha256:a4c259e57307d3dd9c7430a8a872d85f8877cbbe96d126c2e22f002d3b30a501
+```
+
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
 -	Total v2 Content-Length: 186.5 MB (186516917 bytes)
 
@@ -1037,6 +1065,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jdk="$JAVA_DEBIAN_VERSION" &&
 -	v2 Last-Modified: Fri, 11 Sep 2015 04:57:37 GMT
 
 ## `java:6`
+
+```console
+$ docker pull library/java@sha256:0db73b3cc1ae6f0cd96bce3016b046ae0e3cd22fba4096c6e89d6c42a9dea3e7
+```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
 -	Total v2 Content-Length: 186.5 MB (186516917 bytes)
@@ -1180,6 +1212,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jdk="$JAVA_DEBIAN_VERSION" &&
 
 ## `java:openjdk-6b36-jre`
 
+```console
+$ docker pull library/java@sha256:9f34ea4736b665473a995abd5c0b62222a34e94e556590b8bfb95a657e7641a4
+```
+
 -	Total Virtual Size: 194.4 MB (194423580 bytes)
 -	Total v2 Content-Length: 96.8 MB (96783484 bytes)
 
@@ -1301,6 +1337,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jre-headless="$JAVA_DEBIAN_VE
 -	v2 Last-Modified: Fri, 11 Sep 2015 05:03:46 GMT
 
 ## `java:openjdk-6-jre`
+
+```console
+$ docker pull library/java@sha256:64cb109c5fc88e9f2ae92704e985b33acbee539bde6cc86f309c476f02c8f8c3
+```
 
 -	Total Virtual Size: 194.4 MB (194423580 bytes)
 -	Total v2 Content-Length: 96.8 MB (96783484 bytes)
@@ -1424,6 +1464,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jre-headless="$JAVA_DEBIAN_VE
 
 ## `java:6b36-jre`
 
+```console
+$ docker pull library/java@sha256:9ee8f29ab7a56487fefbee493eac309df65fe2c9f49982ee77d2e1faaf0bbd71
+```
+
 -	Total Virtual Size: 194.4 MB (194423580 bytes)
 -	Total v2 Content-Length: 96.8 MB (96783484 bytes)
 
@@ -1546,6 +1590,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jre-headless="$JAVA_DEBIAN_VE
 
 ## `java:6-jre`
 
+```console
+$ docker pull library/java@sha256:c53b8b3439eff84468fe07ee5db77bb91070b893c5bcd9adbbb3eb530a88b824
+```
+
 -	Total Virtual Size: 194.4 MB (194423580 bytes)
 -	Total v2 Content-Length: 96.8 MB (96783484 bytes)
 
@@ -1667,6 +1715,10 @@ RUN apt-get update && apt-get install -y openjdk-6-jre-headless="$JAVA_DEBIAN_VE
 -	v2 Last-Modified: Fri, 11 Sep 2015 05:03:46 GMT
 
 ## `java:openjdk-7u79-jdk`
+
+```console
+$ docker pull library/java@sha256:145c2b65a0c3134c589d31c55add183c3feec9db20a23a3abb7198eb27a68105
+```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
 -	Total v2 Content-Length: 252.3 MB (252255181 bytes)
@@ -1810,6 +1862,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jdk="$JAVA_DEBIAN_VERSION" &&
 
 ## `java:openjdk-7u79`
 
+```console
+$ docker pull library/java@sha256:01773d83e0f69bf8cfae3b4890da5ce2a87dc15d75c2c16e3b5a8ca247a88c13
+```
+
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
 -	Total v2 Content-Length: 252.3 MB (252255181 bytes)
 
@@ -1951,6 +2007,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jdk="$JAVA_DEBIAN_VERSION" &&
 -	v2 Last-Modified: Fri, 11 Sep 2015 03:24:17 GMT
 
 ## `java:openjdk-7-jdk`
+
+```console
+$ docker pull library/java@sha256:32943b1da2556d6878fe46f9f03f79336ac2319680e05d5f423c22b7cd82731e
+```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
 -	Total v2 Content-Length: 252.3 MB (252255181 bytes)
@@ -2094,6 +2154,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jdk="$JAVA_DEBIAN_VERSION" &&
 
 ## `java:openjdk-7`
 
+```console
+$ docker pull library/java@sha256:a6df3fc355074fc9bf7f00e04dc885ed0ec5613c98197e2ab1e92cb5a03983fd
+```
+
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
 -	Total v2 Content-Length: 252.3 MB (252255181 bytes)
 
@@ -2235,6 +2299,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jdk="$JAVA_DEBIAN_VERSION" &&
 -	v2 Last-Modified: Fri, 11 Sep 2015 03:24:17 GMT
 
 ## `java:7u79-jdk`
+
+```console
+$ docker pull library/java@sha256:df961614cff279340040436e2015be75ac9b95ec5e2b800a7ee45c5996622e6a
+```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
 -	Total v2 Content-Length: 252.3 MB (252255181 bytes)
@@ -2378,6 +2446,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jdk="$JAVA_DEBIAN_VERSION" &&
 
 ## `java:7u79`
 
+```console
+$ docker pull library/java@sha256:1cbecb1d4ae73d7556b53f04aba1780a7b0173a3a8970a321a68e4f4c3288a0d
+```
+
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
 -	Total v2 Content-Length: 252.3 MB (252255181 bytes)
 
@@ -2519,6 +2591,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jdk="$JAVA_DEBIAN_VERSION" &&
 -	v2 Last-Modified: Fri, 11 Sep 2015 03:24:17 GMT
 
 ## `java:7-jdk`
+
+```console
+$ docker pull library/java@sha256:3b23eabf95a7496ad64ff0701a97600252301236ec40d14ed77eb97924babac4
+```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
 -	Total v2 Content-Length: 252.3 MB (252255181 bytes)
@@ -2662,6 +2738,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jdk="$JAVA_DEBIAN_VERSION" &&
 
 ## `java:7`
 
+```console
+$ docker pull library/java@sha256:383b0b1b479401b7d2bec04ac7bfed6948d48b39fc4581f4e06a07268d86092e
+```
+
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
 -	Total v2 Content-Length: 252.3 MB (252255181 bytes)
 
@@ -2804,6 +2884,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jdk="$JAVA_DEBIAN_VERSION" &&
 
 ## `java:openjdk-7u79-jre`
 
+```console
+$ docker pull library/java@sha256:97777c3ef12769d73ba4c6bf94bd5d9f0838142ae1616780c1eae08ee104b15f
+```
+
 -	Total Virtual Size: 334.7 MB (334718476 bytes)
 -	Total v2 Content-Length: 148.3 MB (148301632 bytes)
 
@@ -2925,6 +3009,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jre-headless="$JAVA_DEBIAN_VE
 -	v2 Last-Modified: Fri, 11 Sep 2015 05:15:18 GMT
 
 ## `java:openjdk-7-jre`
+
+```console
+$ docker pull library/java@sha256:d1d081099163b5c62de0a98ad7a3b7976d369f6ff98f6de432352d4e81605651
+```
 
 -	Total Virtual Size: 334.7 MB (334718476 bytes)
 -	Total v2 Content-Length: 148.3 MB (148301632 bytes)
@@ -3048,6 +3136,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jre-headless="$JAVA_DEBIAN_VE
 
 ## `java:7u79-jre`
 
+```console
+$ docker pull library/java@sha256:5defb2f691ac825bdb90d7a8521910d5f8f8b99ca3b0473fc8c357b39db6a0ba
+```
+
 -	Total Virtual Size: 334.7 MB (334718476 bytes)
 -	Total v2 Content-Length: 148.3 MB (148301632 bytes)
 
@@ -3170,6 +3262,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jre-headless="$JAVA_DEBIAN_VE
 
 ## `java:7-jre`
 
+```console
+$ docker pull library/java@sha256:7809712add53710e3ab73f84b71399fedc876eee4b8b4cebe83ddbb09fb76360
+```
+
 -	Total Virtual Size: 334.7 MB (334718476 bytes)
 -	Total v2 Content-Length: 148.3 MB (148301632 bytes)
 
@@ -3291,6 +3387,10 @@ RUN apt-get update && apt-get install -y openjdk-7-jre-headless="$JAVA_DEBIAN_VE
 -	v2 Last-Modified: Fri, 11 Sep 2015 05:15:18 GMT
 
 ## `java:openjdk-8u66-jdk`
+
+```console
+$ docker pull library/java@sha256:57a5ebf6e5baa7b17c8139fc3238edf904eba2dd9654404d84cc1e6e73e2bc88
+```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
 -	Total v2 Content-Length: 312.6 MB (312557742 bytes)
@@ -3481,6 +3581,10 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 
 ## `java:openjdk-8u66`
 
+```console
+$ docker pull library/java@sha256:d0e93dee1a4c79f2cf4f0962305988dc2d7b245ee5fcc76e55782b889ef2b97c
+```
+
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
 -	Total v2 Content-Length: 312.6 MB (312557742 bytes)
 
@@ -3669,6 +3773,10 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	v2 Last-Modified: Fri, 11 Sep 2015 00:31:14 GMT
 
 ## `java:openjdk-8-jdk`
+
+```console
+$ docker pull library/java@sha256:68b79731e6f9e8a9cb5fb67883254bf69977120807155af85cee92650c409e8c
+```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
 -	Total v2 Content-Length: 312.6 MB (312557742 bytes)
@@ -3859,6 +3967,10 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 
 ## `java:openjdk-8`
 
+```console
+$ docker pull library/java@sha256:4829a1a37c819021af5b9b1e805793014a775160b9efe2c56e8ab6e9059b1c1c
+```
+
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
 -	Total v2 Content-Length: 312.6 MB (312557742 bytes)
 
@@ -4047,6 +4159,10 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	v2 Last-Modified: Fri, 11 Sep 2015 00:31:14 GMT
 
 ## `java:8u66-jdk`
+
+```console
+$ docker pull library/java@sha256:31993f72180948713f5e5cecbfcfe8f567f400d481125a6bd78dfc851b8c3c4f
+```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
 -	Total v2 Content-Length: 312.6 MB (312557742 bytes)
@@ -4237,6 +4353,10 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 
 ## `java:8u66`
 
+```console
+$ docker pull library/java@sha256:f12c6efc3f3074f7755dbe4c9cf895affd8829acf85a9424d6f12aa1b1ec24c3
+```
+
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
 -	Total v2 Content-Length: 312.6 MB (312557742 bytes)
 
@@ -4425,6 +4545,10 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	v2 Last-Modified: Fri, 11 Sep 2015 00:31:14 GMT
 
 ## `java:8-jdk`
+
+```console
+$ docker pull library/java@sha256:fac0ab3a7597f2c56372dd4bac8d47db88b61de623cfbd2dc2c8e4899715950d
+```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
 -	Total v2 Content-Length: 312.6 MB (312557742 bytes)
@@ -4615,6 +4739,10 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 
 ## `java:8`
 
+```console
+$ docker pull library/java@sha256:4f6c9e516ec04a50057e6427fbb6069f48e09454184548fba6e7fe5ae8df1c22
+```
+
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
 -	Total v2 Content-Length: 312.6 MB (312557742 bytes)
 
@@ -4803,6 +4931,10 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	v2 Last-Modified: Fri, 11 Sep 2015 00:31:14 GMT
 
 ## `java:jdk`
+
+```console
+$ docker pull library/java@sha256:0863a480242bd05a6f75012d70b973988e0b5df494d41025e4eb936b0f3d89ba
+```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
 -	Total v2 Content-Length: 312.6 MB (312557742 bytes)
@@ -4993,6 +5125,10 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 
 ## `java:latest`
 
+```console
+$ docker pull library/java@sha256:71f868818d54629764f30c7ddbb055c65aa0d01f75ef4f98ce31b2184a54ce74
+```
+
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
 -	Total v2 Content-Length: 312.6 MB (312557742 bytes)
 
@@ -5182,6 +5318,10 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 
 ## `java:openjdk-8u66-jre`
 
+```console
+$ docker pull library/java@sha256:023557f3e75469186384697855cc1fa77e648a7563303b83b987f46da3f8f552
+```
+
 -	Total Virtual Size: 487.9 MB (487910700 bytes)
 -	Total v2 Content-Length: 194.1 MB (194108039 bytes)
 
@@ -5364,6 +5504,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends libfontconfig1 
 -	v2 Last-Modified: Fri, 11 Sep 2015 00:49:33 GMT
 
 ## `java:openjdk-8-jre`
+
+```console
+$ docker pull library/java@sha256:6b7ae979db4d8a6ea058c95ef2064e210e1669515e7235a943666169793c4a35
+```
 
 -	Total Virtual Size: 487.9 MB (487910700 bytes)
 -	Total v2 Content-Length: 194.1 MB (194108039 bytes)
@@ -5548,6 +5692,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends libfontconfig1 
 
 ## `java:8u66-jre`
 
+```console
+$ docker pull library/java@sha256:eb1c4d1f2e650248a81ef45201e32a7bda4f8b0f3ea76fa2a78daa0a59604212
+```
+
 -	Total Virtual Size: 487.9 MB (487910700 bytes)
 -	Total v2 Content-Length: 194.1 MB (194108039 bytes)
 
@@ -5731,6 +5879,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends libfontconfig1 
 
 ## `java:8-jre`
 
+```console
+$ docker pull library/java@sha256:950b84216d4e1ad9c0f50388bfc90a99a8c443df401fcfed37b5d0326079b5d3
+```
+
 -	Total Virtual Size: 487.9 MB (487910700 bytes)
 -	Total v2 Content-Length: 194.1 MB (194108039 bytes)
 
@@ -5913,6 +6065,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends libfontconfig1 
 -	v2 Last-Modified: Fri, 11 Sep 2015 00:49:33 GMT
 
 ## `java:jre`
+
+```console
+$ docker pull library/java@sha256:78e65316aa89618594922eb2ec709a5ebb90e29565e464f10dd03c1072ca3750
+```
 
 -	Total Virtual Size: 487.9 MB (487910700 bytes)
 -	Total v2 Content-Length: 194.1 MB (194108039 bytes)

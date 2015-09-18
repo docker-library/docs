@@ -17,6 +17,10 @@
 
 ## `ubuntu-debootstrap:12.04.5`
 
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:db4a5608c2330eac784e5e3c0961bbe60841ea2212777069701060292cf1b9c7
+```
+
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
 -	Total v2 Content-Length: 35.6 MB (35567719 bytes)
 
@@ -50,6 +54,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu-debootstrap:12.04`
+
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:e29393083e1d1cedd2440a75be3bad6957a31ada404481f35881440cebdebbd3
+```
 
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
 -	Total v2 Content-Length: 35.6 MB (35567719 bytes)
@@ -85,6 +93,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu-debootstrap:precise`
 
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:a674323d192c298ec6eb458918b4867bbef7fa0efce2c0084ee969771301c148
+```
+
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
 -	Total v2 Content-Length: 35.6 MB (35567719 bytes)
 
@@ -118,6 +130,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu-debootstrap:14.04.3`
+
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:9d9af11da2c7feeb294a350414562404b19dd61e7e58dea1f773301d03c4096b
+```
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
 -	Total v2 Content-Length: 34.9 MB (34865192 bytes)
@@ -153,6 +169,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu-debootstrap:14.04`
 
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:7c1f49aafb341170af2899b395ab42a6b912b5a52f3275c2e071c822bceb0aef
+```
+
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
 -	Total v2 Content-Length: 34.9 MB (34865192 bytes)
 
@@ -186,6 +206,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu-debootstrap:trusty`
+
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:f38e6de96048ed235eb7f2e93ade1ce4911994b481bd59d687160f3b3ece67fc
+```
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
 -	Total v2 Content-Length: 34.9 MB (34865192 bytes)
@@ -221,6 +245,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu-debootstrap:latest`
 
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:9eada1f7a381fcb852c332f46c6ebc8c166344ac4938d5645ba4865d4edc3483
+```
+
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
 -	Total v2 Content-Length: 34.9 MB (34865192 bytes)
 
@@ -254,6 +282,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu-debootstrap:15.04`
+
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:e5ffa14dc069dd7b1b9674a5f33dc303db2283e2394839666b467512fbc697d3
+```
 
 -	Total Virtual Size: 110.2 MB (110150591 bytes)
 -	Total v2 Content-Length: 43.5 MB (43452586 bytes)
@@ -289,6 +321,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu-debootstrap:vivid`
 
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:c370ca75001734340cd02825a906cd50fbe83d931c780557551e90cd0fe8b097
+```
+
 -	Total Virtual Size: 110.2 MB (110150591 bytes)
 -	Total v2 Content-Length: 43.5 MB (43452586 bytes)
 
@@ -322,6 +358,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu-debootstrap:15.10`
+
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:c67da6d006cbb7923964cd6c2e43add5e1a8e8c668f450cdc5b3165a4e943688
+```
 
 -	Total Virtual Size: 111.0 MB (110989448 bytes)
 -	Total v2 Content-Length: 44.4 MB (44394328 bytes)
@@ -357,6 +397,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu-debootstrap:wily`
 
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:17d42faac0b5b219e55973b9344bf2c1b445b133590cf56d2db40dee0c54f57a
+```
+
 -	Total Virtual Size: 111.0 MB (110989448 bytes)
 -	Total v2 Content-Length: 44.4 MB (44394328 bytes)
 
@@ -390,6 +434,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu-debootstrap:devel`
+
+```console
+$ docker pull library/ubuntu-debootstrap@sha256:0ce8e8d375895a0a31200d2e9349d0cd1d75b0dd3386ebf527d9c1cb9510ea06
+```
 
 -	Total Virtual Size: 111.0 MB (110989451 bytes)
 -	Total v2 Content-Length: 44.4 MB (44394562 bytes)

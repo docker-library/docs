@@ -16,6 +16,10 @@
 
 ## `gcc:4.8.5`
 
+```console
+$ docker pull library/gcc@sha256:c2c9f9028aa614715f4965cb8da90a00662a54329b0882f56ca829ded2c1454b
+```
+
 -	Total Virtual Size: 1.1 GB (1055644045 bytes)
 -	Total v2 Content-Length: 317.9 MB (317911796 bytes)
 
@@ -249,6 +253,10 @@ RUN set -x \
 -	v2 Last-Modified: Fri, 11 Sep 2015 02:45:40 GMT
 
 ## `gcc:4.8`
+
+```console
+$ docker pull library/gcc@sha256:a4e95a1f7a19632d5400371bf70f7ed6eb01a3e5311b5ac94ec1d1b3830af6e7
+```
 
 -	Total Virtual Size: 1.1 GB (1055644045 bytes)
 -	Total v2 Content-Length: 317.9 MB (317911796 bytes)
@@ -484,6 +492,10 @@ RUN set -x \
 
 ## `gcc:4.9.3`
 
+```console
+$ docker pull library/gcc@sha256:a15bc573b5f3766ece1abdeedbfd4bc8423f920bbac717ec86026a5b2d3511fe
+```
+
 -	Total Virtual Size: 1.1 GB (1128797418 bytes)
 -	Total v2 Content-Length: 334.4 MB (334438660 bytes)
 
@@ -717,6 +729,10 @@ RUN set -x \
 -	v2 Last-Modified: Fri, 11 Sep 2015 02:54:05 GMT
 
 ## `gcc:4.9`
+
+```console
+$ docker pull library/gcc@sha256:ce89a03c6a525dcbc07ae4abaf48560ef563c536a9afd10fb557adfacbb6823e
+```
 
 -	Total Virtual Size: 1.1 GB (1128797418 bytes)
 -	Total v2 Content-Length: 334.4 MB (334438660 bytes)
@@ -952,6 +968,10 @@ RUN set -x \
 
 ## `gcc:4`
 
+```console
+$ docker pull library/gcc@sha256:98ec3ae686ea269b2e2799bcaad6b4aac02fb816388ee92f4685af7a586bbe03
+```
+
 -	Total Virtual Size: 1.1 GB (1128797418 bytes)
 -	Total v2 Content-Length: 334.4 MB (334438660 bytes)
 
@@ -1185,6 +1205,10 @@ RUN set -x \
 -	v2 Last-Modified: Fri, 11 Sep 2015 02:54:05 GMT
 
 ## `gcc:5.1.0`
+
+```console
+$ docker pull library/gcc@sha256:051b9de8c0077e2c006687347c02b5292425b5bc7e6b731c1277246d2e293fd9
+```
 
 -	Total Virtual Size: 1.2 GB (1153064853 bytes)
 -	Total v2 Content-Length: 341.8 MB (341766191 bytes)
@@ -1420,6 +1444,10 @@ RUN set -x \
 
 ## `gcc:5.1`
 
+```console
+$ docker pull library/gcc@sha256:014d6ddf429d1255383a2fcbdcf4c1176c29151ff3cb0efa98e26021db0ef17a
+```
+
 -	Total Virtual Size: 1.2 GB (1153064853 bytes)
 -	Total v2 Content-Length: 341.8 MB (341766191 bytes)
 
@@ -1653,6 +1681,10 @@ RUN set -x \
 -	v2 Last-Modified: Fri, 11 Sep 2015 02:59:40 GMT
 
 ## `gcc:5.2.0`
+
+```console
+$ docker pull library/gcc@sha256:41bd7253fb57665d70ab446b2d0e3862f067a73194ce73aaa9a63bcea21599e9
+```
 
 -	Total Virtual Size: 1.4 GB (1388609644 bytes)
 -	Total v2 Content-Length: 428.5 MB (428490979 bytes)
@@ -1888,6 +1920,10 @@ RUN set -x \
 
 ## `gcc:5.2`
 
+```console
+$ docker pull library/gcc@sha256:3a423faadbda400966b7d5fe33c90154c4c79e2d5497dd10850b140183893d6a
+```
+
 -	Total Virtual Size: 1.4 GB (1388609644 bytes)
 -	Total v2 Content-Length: 428.5 MB (428490979 bytes)
 
@@ -2122,6 +2158,10 @@ RUN set -x \
 
 ## `gcc:5`
 
+```console
+$ docker pull library/gcc@sha256:b6a99b9f1c9801b6d6baa104af1b7215d488228dc7e0cdae9ccc0c2b7c044552
+```
+
 -	Total Virtual Size: 1.4 GB (1388609644 bytes)
 -	Total v2 Content-Length: 428.5 MB (428490979 bytes)
 
@@ -2355,6 +2395,10 @@ RUN set -x \
 -	v2 Last-Modified: Fri, 11 Sep 2015 03:04:54 GMT
 
 ## `gcc:latest`
+
+```console
+$ docker pull library/gcc@sha256:7e04bceb36fb726b71c9c917a578573e680dbc7eb987775022817170079e75a6
+```
 
 -	Total Virtual Size: 1.4 GB (1388609644 bytes)
 -	Total v2 Content-Length: 428.5 MB (428490979 bytes)

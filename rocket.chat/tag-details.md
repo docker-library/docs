@@ -9,6 +9,10 @@
 
 ## `rocket.chat:0.4.0`
 
+```console
+$ docker pull library/rocket.chat@sha256:c0cc2431aaca311863de877947892dd287013ebbc851371205900266571e15e3
+```
+
 -	Total Virtual Size: 691.4 MB (691413276 bytes)
 -	Total v2 Content-Length: 271.8 MB (271811102 bytes)
 
@@ -352,6 +356,10 @@ CMD ["node" "main.js"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `rocket.chat:0.4`
+
+```console
+$ docker pull library/rocket.chat@sha256:1e3a7048f6f1159f83a4eb4e42c786c9ba6af3b1ebe14aa16573c84dafbc1f6a
+```
 
 -	Total Virtual Size: 691.4 MB (691413276 bytes)
 -	Total v2 Content-Length: 271.8 MB (271811102 bytes)
@@ -697,6 +705,10 @@ CMD ["node" "main.js"]
 
 ## `rocket.chat:0`
 
+```console
+$ docker pull library/rocket.chat@sha256:38122b761b00eb539f69622ae311afa727c6503acbd9252a68cabc99528beca5
+```
+
 -	Total Virtual Size: 691.4 MB (691413276 bytes)
 -	Total v2 Content-Length: 271.8 MB (271811102 bytes)
 
@@ -1040,6 +1052,10 @@ CMD ["node" "main.js"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `rocket.chat:latest`
+
+```console
+$ docker pull library/rocket.chat@sha256:2b21a796bc9dbd93cbcf7e36912056a34e865528c079c34ad1bb2434afdcdc19
+```
 
 -	Total Virtual Size: 691.4 MB (691413276 bytes)
 -	Total v2 Content-Length: 271.8 MB (271811102 bytes)

@@ -22,6 +22,10 @@
 
 ## `centos:latest`
 
+```console
+$ docker pull library/centos@sha256:2d9573acf37315cb8fe2a1420769c3b83f59d8f286fd8898a580578c0d5e66c6
+```
+
 -	Total Virtual Size: 172.3 MB (172289754 bytes)
 -	Total v2 Content-Length: 62.9 MB (62906701 bytes)
 
@@ -97,6 +101,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `centos:centos7`
+
+```console
+$ docker pull library/centos@sha256:38eca413ebfe76e841c3926bd00585d0cdef1abbb0c6b230fabde64553ecdde7
+```
 
 -	Total Virtual Size: 172.3 MB (172289754 bytes)
 -	Total v2 Content-Length: 62.9 MB (62906701 bytes)
@@ -174,6 +182,10 @@ CMD ["/bin/bash"]
 
 ## `centos:7`
 
+```console
+$ docker pull library/centos@sha256:c28c6a9260a3d82609c20f27c6654f3a1e80f167392021386c7f33901a27d08d
+```
+
 -	Total Virtual Size: 172.3 MB (172289754 bytes)
 -	Total v2 Content-Length: 62.9 MB (62906701 bytes)
 
@@ -249,6 +261,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `centos:centos6`
+
+```console
+$ docker pull library/centos@sha256:efa5de1eed533dd620ba3ae1d1f046c02a874d88860ff7a36a1dcbfe4ca8cff6
+```
 
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
 -	Total v2 Content-Length: 66.4 MB (66390982 bytes)
@@ -326,6 +342,10 @@ CMD ["/bin/bash"]
 
 ## `centos:6`
 
+```console
+$ docker pull library/centos@sha256:045c14a29c8b318678455a788546705a238249595cdad59f8b880fd3fb21f37a
+```
+
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
 -	Total v2 Content-Length: 66.4 MB (66390982 bytes)
 
@@ -402,6 +422,10 @@ CMD ["/bin/bash"]
 
 ## `centos:centos5`
 
+```console
+$ docker pull library/centos@sha256:b3236fb85715944d83f2b920a10b9bde959cc694c2be817dcac5c94cb141735a
+```
+
 -	Total Virtual Size: 284.1 MB (284081882 bytes)
 -	Total v2 Content-Length: 87.0 MB (87035259 bytes)
 
@@ -436,6 +460,10 @@ ADD file:daa82c1f87a4f4827b4cfedad2f374ebccd22ff1e7371b1046c11bc3506e8886 in /
 
 ## `centos:5`
 
+```console
+$ docker pull library/centos@sha256:9993047a6fee832d1f3e0b70b1813d53b1716ca8e151bc1dda34545160595944
+```
+
 -	Total Virtual Size: 284.1 MB (284081882 bytes)
 -	Total v2 Content-Length: 87.0 MB (87035259 bytes)
 
@@ -469,6 +497,10 @@ ADD file:daa82c1f87a4f4827b4cfedad2f374ebccd22ff1e7371b1046c11bc3506e8886 in /
 -	v2 Last-Modified: Tue, 14 Jul 2015 11:13:45 GMT
 
 ## `centos:centos7.1.1503`
+
+```console
+$ docker pull library/centos@sha256:f5451b8c1f755937c2236829604ede7b2cda566c6ee43d2825c63da8d662f9d6
+```
 
 -	Total Virtual Size: 212.1 MB (212062952 bytes)
 -	Total v2 Content-Length: 75.7 MB (75670068 bytes)
@@ -518,6 +550,10 @@ CMD ["/bin/bash"]
 
 ## `centos:7.1.1503`
 
+```console
+$ docker pull library/centos@sha256:4c02104e053f98cb9f9f18871eaa34e65e2dbd78afe5e22500b334b770da7b7c
+```
+
 -	Total Virtual Size: 212.1 MB (212062952 bytes)
 -	Total v2 Content-Length: 75.7 MB (75670068 bytes)
 
@@ -566,6 +602,10 @@ CMD ["/bin/bash"]
 
 ## `centos:centos7.0.1406`
 
+```console
+$ docker pull library/centos@sha256:e4c37bb07d37cefb1fee573f01f939fd1e2deb65136e1c5e66abb686d5346bb7
+```
+
 -	Total Virtual Size: 210.2 MB (210212702 bytes)
 -	Total v2 Content-Length: 75.1 MB (75067738 bytes)
 
@@ -600,6 +640,10 @@ ADD file:a15cc97064e287aee651c723e4306d8f590c7a898c387dc66f7854ef7acf2fdb in /
 
 ## `centos:7.0.1406`
 
+```console
+$ docker pull library/centos@sha256:bc5356bb3b38f5063af788fdff6aec0dce710b49db78cd7ac5318820d26c4936
+```
+
 -	Total Virtual Size: 210.2 MB (210212702 bytes)
 -	Total v2 Content-Length: 75.1 MB (75067738 bytes)
 
@@ -633,6 +677,10 @@ ADD file:a15cc97064e287aee651c723e4306d8f590c7a898c387dc66f7854ef7acf2fdb in /
 -	v2 Last-Modified: Tue, 14 Jul 2015 11:20:21 GMT
 
 ## `centos:centos6.7`
+
+```console
+$ docker pull library/centos@sha256:ca2c18123dc1de0d4abed547d610f97181a0b84ef13921c17dac65ed5d082d8e
+```
 
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
 -	Total v2 Content-Length: 66.4 MB (66390982 bytes)
@@ -710,6 +758,10 @@ CMD ["/bin/bash"]
 
 ## `centos:6.7`
 
+```console
+$ docker pull library/centos@sha256:69a58cf1c990da2605c3e98000503ba896211b67fd916668e806c3378a5ff5d3
+```
+
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
 -	Total v2 Content-Length: 66.4 MB (66390982 bytes)
 
@@ -786,6 +838,10 @@ CMD ["/bin/bash"]
 
 ## `centos:centos6.6`
 
+```console
+$ docker pull library/centos@sha256:8a3d975c93163ff5dd119bee819f2ebf381e53a707adc3afaf1c04457db19ebb
+```
+
 -	Total Virtual Size: 202.6 MB (202609003 bytes)
 -	Total v2 Content-Length: 72.0 MB (72038828 bytes)
 
@@ -819,6 +875,10 @@ ADD file:eab3c29917290b056db08167d3a9f769c4b4ce46403be2fad083bc2535fb4d03 in /
 -	v2 Last-Modified: Tue, 14 Jul 2015 11:23:11 GMT
 
 ## `centos:6.6`
+
+```console
+$ docker pull library/centos@sha256:0e69a5fa0ce3e1490d02f024a04003aa7c49e3bb320e9860ca4cc151a2aca8b1
+```
 
 -	Total Virtual Size: 202.6 MB (202609003 bytes)
 -	Total v2 Content-Length: 72.0 MB (72038828 bytes)
@@ -854,6 +914,10 @@ ADD file:eab3c29917290b056db08167d3a9f769c4b4ce46403be2fad083bc2535fb4d03 in /
 
 ## `centos:centos5.11`
 
+```console
+$ docker pull library/centos@sha256:e7ea7ca5542f9ee9a59ebe6c737b3899f27d447b75c7b6a84fefe7472db7cba0
+```
+
 -	Total Virtual Size: 284.2 MB (284151989 bytes)
 -	Total v2 Content-Length: 87.1 MB (87107844 bytes)
 
@@ -887,6 +951,10 @@ ADD file:a9e3cd9845a72bb736a449b76e80c8c5a872abba7bcae6fa9e7e602e3c5d0d2c in /
 -	v2 Last-Modified: Tue, 14 Jul 2015 11:26:14 GMT
 
 ## `centos:5.11`
+
+```console
+$ docker pull library/centos@sha256:b381bdf84f74a7c8ceab2cea17700cb710d700a7938479ea5bab4f64e440a73f
+```
 
 -	Total Virtual Size: 284.2 MB (284151989 bytes)
 -	Total v2 Content-Length: 87.1 MB (87107844 bytes)

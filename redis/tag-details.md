@@ -23,6 +23,10 @@
 
 ## `redis:2.6.17`
 
+```console
+$ docker pull library/redis@sha256:946633c2a1f5b4b9f218a6b3f2d59e904aeb5f92734c649eee297bd7ed17c0b4
+```
+
 -	Total Virtual Size: 108.6 MB (108598596 bytes)
 -	Total v2 Content-Length: 46.6 MB (46585791 bytes)
 
@@ -287,6 +291,10 @@ CMD ["redis-server"]
 
 ## `redis:2.6`
 
+```console
+$ docker pull library/redis@sha256:4a9f0a723cef70e0a8ac16011f420b00397914572d3ce3bed981a96c2d565c64
+```
+
 -	Total Virtual Size: 108.6 MB (108598596 bytes)
 -	Total v2 Content-Length: 46.6 MB (46585791 bytes)
 
@@ -550,6 +558,10 @@ CMD ["redis-server"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2.6.17-32bit`
+
+```console
+$ docker pull library/redis@sha256:e422130f2433499fb4c0672ae8d57078490651e9b7ad5018996960f6abc0dec5
+```
 
 -	Total Virtual Size: 116.0 MB (115961326 bytes)
 -	Total v2 Content-Length: 50.4 MB (50382788 bytes)
@@ -816,6 +828,10 @@ CMD ["redis-server"]
 
 ## `redis:2.6-32bit`
 
+```console
+$ docker pull library/redis@sha256:840957cc50f0c4af24bf81bc652bd232e31b5dc0e1181c0b69ec927baaa59edd
+```
+
 -	Total Virtual Size: 116.0 MB (115961326 bytes)
 -	Total v2 Content-Length: 50.4 MB (50382788 bytes)
 
@@ -1081,6 +1097,10 @@ CMD ["redis-server"]
 
 ## `redis:2.8.22`
 
+```console
+$ docker pull library/redis@sha256:d2331bfb307b32ccbd0ff41779c2589aa25731a0fbdf9e40ddb76582604cdcc6
+```
+
 -	Total Virtual Size: 109.0 MB (108967457 bytes)
 -	Total v2 Content-Length: 46.8 MB (46774878 bytes)
 
@@ -1343,6 +1363,10 @@ CMD ["redis-server"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2.8`
+
+```console
+$ docker pull library/redis@sha256:cdb0b9cfb8628aaa64d158c2d1b9f23dd881128e98352ea35db1c9c67dc342cc
+```
 
 -	Total Virtual Size: 109.0 MB (108962356 bytes)
 -	Total v2 Content-Length: 46.8 MB (46772140 bytes)
@@ -1607,6 +1631,10 @@ CMD ["redis-server"]
 
 ## `redis:2`
 
+```console
+$ docker pull library/redis@sha256:ed8b126ccbee9a86b7aff95dfce497054e78296e615a31cd948a69578f83f6e7
+```
+
 -	Total Virtual Size: 109.0 MB (108962356 bytes)
 -	Total v2 Content-Length: 46.8 MB (46772140 bytes)
 
@@ -1869,6 +1897,10 @@ CMD ["redis-server"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2.8.22-32bit`
+
+```console
+$ docker pull library/redis@sha256:43831d5d4deef78fe3ef2e700ebbfe03dc82d7764c9e75cefa9fb88b5e3a92db
+```
 
 -	Total Virtual Size: 116.3 MB (116326360 bytes)
 -	Total v2 Content-Length: 50.6 MB (50569345 bytes)
@@ -2134,6 +2166,10 @@ CMD ["redis-server"]
 
 ## `redis:2.8-32bit`
 
+```console
+$ docker pull library/redis@sha256:814795e6e660bd90cf5351d6803ab489984c8054aab6d1d01226fb69aefb8ff9
+```
+
 -	Total Virtual Size: 116.3 MB (116321849 bytes)
 -	Total v2 Content-Length: 50.6 MB (50567805 bytes)
 
@@ -2397,6 +2433,10 @@ CMD ["redis-server"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2-32bit`
+
+```console
+$ docker pull library/redis@sha256:7f4d232d2031e855e5d288be2ba99755d7e17da3d6d2378d2da69441699fb165
+```
 
 -	Total Virtual Size: 116.3 MB (116321849 bytes)
 -	Total v2 Content-Length: 50.6 MB (50567805 bytes)
@@ -2662,6 +2702,10 @@ CMD ["redis-server"]
 
 ## `redis:3.0.4`
 
+```console
+$ docker pull library/redis@sha256:af646d3c7fbdad43f3ded178ac0c2417e00317946a54b24b6c8d5ac78a6b3ba3
+```
+
 -	Total Virtual Size: 109.2 MB (109244399 bytes)
 -	Total v2 Content-Length: 46.9 MB (46883359 bytes)
 
@@ -2924,6 +2968,10 @@ CMD ["redis-server"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:3.0`
+
+```console
+$ docker pull library/redis@sha256:c21883de88919be8e902cc13ff0561c4358672ce9740cc50ab5135b27ca0be62
+```
 
 -	Total Virtual Size: 109.2 MB (109239242 bytes)
 -	Total v2 Content-Length: 46.9 MB (46879956 bytes)
@@ -3188,6 +3236,10 @@ CMD ["redis-server"]
 
 ## `redis:3`
 
+```console
+$ docker pull library/redis@sha256:6d91c5a00684a71dcd80e169da7b725f92c181ff7a7915df9ec717ca5b6b3d73
+```
+
 -	Total Virtual Size: 109.2 MB (109239242 bytes)
 -	Total v2 Content-Length: 46.9 MB (46879956 bytes)
 
@@ -3451,6 +3503,10 @@ CMD ["redis-server"]
 
 ## `redis:latest`
 
+```console
+$ docker pull library/redis@sha256:3c3e4a25690f9f82a2a1ec6d4f577dc2c81563c1ccd52efdf4903ccdd26cada3
+```
+
 -	Total Virtual Size: 109.2 MB (109239242 bytes)
 -	Total v2 Content-Length: 46.9 MB (46879956 bytes)
 
@@ -3713,6 +3769,10 @@ CMD ["redis-server"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:3.0.4-32bit`
+
+```console
+$ docker pull library/redis@sha256:f704f6d2aa460198abc5b3e0b5ea454ed962e81639fb725d05e1a485075ef16f
+```
 
 -	Total Virtual Size: 116.6 MB (116550060 bytes)
 -	Total v2 Content-Length: 50.7 MB (50677114 bytes)
@@ -3978,6 +4038,10 @@ CMD ["redis-server"]
 
 ## `redis:3.0-32bit`
 
+```console
+$ docker pull library/redis@sha256:5acf9d10486c292917a7eb21c9b9e0bf8756b5ec8861377fe679a52cb8c123e8
+```
+
 -	Total Virtual Size: 116.5 MB (116544909 bytes)
 -	Total v2 Content-Length: 50.7 MB (50674539 bytes)
 
@@ -4242,6 +4306,10 @@ CMD ["redis-server"]
 
 ## `redis:3-32bit`
 
+```console
+$ docker pull library/redis@sha256:d06d387940dfcef30ceab24408cec9aef42d66cc2d159063a6a8302c0d8f9982
+```
+
 -	Total Virtual Size: 116.5 MB (116544909 bytes)
 -	Total v2 Content-Length: 50.7 MB (50674539 bytes)
 
@@ -4505,6 +4573,10 @@ CMD ["redis-server"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:32bit`
+
+```console
+$ docker pull library/redis@sha256:01cb44247b27e64ad5d7a558df8e8ecf9a3d2043a5746ae1ce8414c7a81962ce
+```
 
 -	Total Virtual Size: 116.5 MB (116544909 bytes)
 -	Total v2 Content-Length: 50.7 MB (50674539 bytes)

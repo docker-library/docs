@@ -7,6 +7,10 @@
 
 ## `hipache:latest`
 
+```console
+$ docker pull library/hipache@sha256:74187f2de4fee80c826ff340f9c8226bd77a45d959b01f1b90688f869a57151f
+```
+
 -	Total Virtual Size: 367.8 MB (367785452 bytes)
 -	Total v2 Content-Length: 150.3 MB (150283959 bytes)
 
@@ -219,6 +223,10 @@ CMD ["supervisord" "-n"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `hipache:0.3.1`
+
+```console
+$ docker pull library/hipache@sha256:6e9c5d5d4e8434fb9e799809a93202f56d20b6fca24e174dd44e69d3f38fbf1e
+```
 
 -	Total Virtual Size: 367.8 MB (367785452 bytes)
 -	Total v2 Content-Length: 150.3 MB (150283934 bytes)

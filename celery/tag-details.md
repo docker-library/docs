@@ -9,6 +9,10 @@
 
 ## `celery:3.1.18`
 
+```console
+$ docker pull library/celery@sha256:cef344758d16879f3a1e9b4518636ddf5a235fafd27bf96247442287ae575ba1
+```
+
 -	Total Virtual Size: 229.9 MB (229949680 bytes)
 -	Total v2 Content-Length: 84.5 MB (84545139 bytes)
 
@@ -337,6 +341,10 @@ CMD ["celery" "worker"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `celery:3.1`
+
+```console
+$ docker pull library/celery@sha256:3b08b635425f92bf0448122073f3b9d899d0b50550144d510c2d80b9e2fba558
+```
 
 -	Total Virtual Size: 229.9 MB (229949680 bytes)
 -	Total v2 Content-Length: 84.5 MB (84545139 bytes)
@@ -667,6 +675,10 @@ CMD ["celery" "worker"]
 
 ## `celery:3`
 
+```console
+$ docker pull library/celery@sha256:3024dcfb0d35cc888198f376371da14d87f4046566e44af3b7f1e9b6479db293
+```
+
 -	Total Virtual Size: 229.9 MB (229949680 bytes)
 -	Total v2 Content-Length: 84.5 MB (84545139 bytes)
 
@@ -995,6 +1007,10 @@ CMD ["celery" "worker"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `celery:latest`
+
+```console
+$ docker pull library/celery@sha256:8295031946748df5cd21a9d29b589ea1d28d03051a45338511d29b8b3327159b
+```
 
 -	Total Virtual Size: 229.9 MB (229949680 bytes)
 -	Total v2 Content-Length: 84.5 MB (84545139 bytes)

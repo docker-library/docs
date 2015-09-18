@@ -10,6 +10,10 @@
 
 ## `rails:4.2.4`
 
+```console
+$ docker pull library/rails@sha256:05b14d6b17237b1cf4800ca28443d96f15624a15b2ed651cd657fd7859b1600c
+```
+
 -	Total Virtual Size: 824.9 MB (824851474 bytes)
 -	Total v2 Content-Length: 314.4 MB (314369522 bytes)
 
@@ -371,6 +375,10 @@ RUN gem install rails --version "$RAILS_VERSION"
 -	v2 Last-Modified: Fri, 11 Sep 2015 12:43:55 GMT
 
 ## `rails:4.2`
+
+```console
+$ docker pull library/rails@sha256:6eeecf4a3c6da122d7c75e6109fcab35ccc34ebad370cb73c8317c4aec0422fc
+```
 
 -	Total Virtual Size: 824.9 MB (824851474 bytes)
 -	Total v2 Content-Length: 314.4 MB (314369522 bytes)
@@ -734,6 +742,10 @@ RUN gem install rails --version "$RAILS_VERSION"
 
 ## `rails:4`
 
+```console
+$ docker pull library/rails@sha256:164de31b54599c73995ab2c0fce0361de0b79270b300ccb9fc2b4298b21842ad
+```
+
 -	Total Virtual Size: 824.9 MB (824851474 bytes)
 -	Total v2 Content-Length: 314.4 MB (314369522 bytes)
 
@@ -1096,6 +1108,10 @@ RUN gem install rails --version "$RAILS_VERSION"
 
 ## `rails:latest`
 
+```console
+$ docker pull library/rails@sha256:d69b26bd4b2af9684e05729b064f732d45588a7f62ae0b95ccc2b99c3f1566eb
+```
+
 -	Total Virtual Size: 824.9 MB (824851474 bytes)
 -	Total v2 Content-Length: 314.4 MB (314369522 bytes)
 
@@ -1457,6 +1473,10 @@ RUN gem install rails --version "$RAILS_VERSION"
 -	v2 Last-Modified: Fri, 11 Sep 2015 12:43:55 GMT
 
 ## `rails:onbuild`
+
+```console
+$ docker pull library/rails@sha256:9c29b2d65896c9642164653bd992a6f92cc48da28643ca84c9e11d8e05d4ebf9
+```
 
 -	Total Virtual Size: 771.6 MB (771633929 bytes)
 -	Total v2 Content-Length: 290.1 MB (290143510 bytes)

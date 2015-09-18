@@ -7,6 +7,10 @@
 
 ## `rakudo-star:2015.07`
 
+```console
+$ docker pull library/rakudo-star@sha256:7afdef3f032756975e9a09fff9557a061d05889b31f09746880db4ea1c047285
+```
+
 -	Total Virtual Size: 319.3 MB (319259087 bytes)
 -	Total v2 Content-Length: 118.8 MB (118800936 bytes)
 
@@ -167,6 +171,10 @@ CMD ["rlwrap" "perl6"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `rakudo-star:latest`
+
+```console
+$ docker pull library/rakudo-star@sha256:90f23fd2b34ad3affca24b5cc9ad13d6f290b0929dacd3630ce9f6664cb28522
+```
 
 -	Total Virtual Size: 319.3 MB (319259087 bytes)
 -	Total v2 Content-Length: 118.8 MB (118800936 bytes)

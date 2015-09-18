@@ -17,6 +17,10 @@
 
 ## `perl:latest`
 
+```console
+$ docker pull library/perl@sha256:c333684cfd9b7b5397f02f1811fc44f10774acfb4d9c1931e2a4d25f836c9560
+```
+
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
 -	Total v2 Content-Length: 254.2 MB (254217891 bytes)
 
@@ -264,6 +268,10 @@ CMD ["perl5.22.0" "-de0"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `perl:5`
+
+```console
+$ docker pull library/perl@sha256:b332f41299be9e416c4dd8f750637d4c8550bc7e7a1c3e21812160fc277419d6
+```
 
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
 -	Total v2 Content-Length: 254.2 MB (254217891 bytes)
@@ -513,6 +521,10 @@ CMD ["perl5.22.0" "-de0"]
 
 ## `perl:5.22`
 
+```console
+$ docker pull library/perl@sha256:d1fd145c214381215a7bdad47df106b5074b715d6b483ff681e24ade06d3479b
+```
+
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
 -	Total v2 Content-Length: 254.2 MB (254217891 bytes)
 
@@ -760,6 +772,10 @@ CMD ["perl5.22.0" "-de0"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `perl:5.22.0`
+
+```console
+$ docker pull library/perl@sha256:2c7c33800eac99b34ea44f523629c2c9e02ccd222d2e5e9d2c85819528f0df17
+```
 
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
 -	Total v2 Content-Length: 254.2 MB (254217891 bytes)
@@ -1009,6 +1025,10 @@ CMD ["perl5.22.0" "-de0"]
 
 ## `perl:5.20`
 
+```console
+$ docker pull library/perl@sha256:197b4cecae79d1f742f6ca05c064b62b394a67818001dcbac74da4b6a1d93ea6
+```
+
 -	Total Virtual Size: 654.7 MB (654665833 bytes)
 -	Total v2 Content-Length: 253.9 MB (253880742 bytes)
 
@@ -1256,6 +1276,10 @@ CMD ["perl5.20.2" "-de0"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `perl:5.20.2`
+
+```console
+$ docker pull library/perl@sha256:46bd93abb96bf2009457645046c45f21b0c53283541ffbe5b7a0ca9e9943aab6
+```
 
 -	Total Virtual Size: 654.7 MB (654665833 bytes)
 -	Total v2 Content-Length: 253.9 MB (253880742 bytes)
@@ -1505,6 +1529,10 @@ CMD ["perl5.20.2" "-de0"]
 
 ## `perl:threaded`
 
+```console
+$ docker pull library/perl@sha256:6bb07ec606c08e18b96e36d7363146c5a49c86356cb94a8526e007e019408052
+```
+
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
 -	Total v2 Content-Length: 254.3 MB (254271563 bytes)
 
@@ -1752,6 +1780,10 @@ CMD ["perl5.22.0" "-de0"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `perl:5-threaded`
+
+```console
+$ docker pull library/perl@sha256:202d1c66824025ca98a338f570aa190467443d83f16b0dde8549ba05429cf20e
+```
 
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
 -	Total v2 Content-Length: 254.3 MB (254271563 bytes)
@@ -2001,6 +2033,10 @@ CMD ["perl5.22.0" "-de0"]
 
 ## `perl:5.22-threaded`
 
+```console
+$ docker pull library/perl@sha256:3165951018282466cc4eacb6564cc0520efda22d5df508386af19055d60e02f1
+```
+
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
 -	Total v2 Content-Length: 254.3 MB (254271563 bytes)
 
@@ -2248,6 +2284,10 @@ CMD ["perl5.22.0" "-de0"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `perl:5.22.0-threaded`
+
+```console
+$ docker pull library/perl@sha256:3fb8f1a6a3dffa6e1d6e449ccd0c96d38c93233cdeaa1587c04de2e1d18a09bb
+```
 
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
 -	Total v2 Content-Length: 254.3 MB (254271563 bytes)
@@ -2497,6 +2537,10 @@ CMD ["perl5.22.0" "-de0"]
 
 ## `perl:5.20-threaded`
 
+```console
+$ docker pull library/perl@sha256:3b74e27e1f96f4e6fde91e402b38f3fcfecf934b755c9422949b80c0c513ba75
+```
+
 -	Total Virtual Size: 654.7 MB (654695097 bytes)
 -	Total v2 Content-Length: 253.9 MB (253945363 bytes)
 
@@ -2744,6 +2788,10 @@ CMD ["perl5.20.2" "-de0"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `perl:5.20.2-threaded`
+
+```console
+$ docker pull library/perl@sha256:fec5c5cb31581339ecff731342f59b49d235908a4377f32219acc886b2d48fb7
+```
 
 -	Total Virtual Size: 654.7 MB (654695097 bytes)
 -	Total v2 Content-Length: 253.9 MB (253945363 bytes)

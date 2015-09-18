@@ -11,6 +11,10 @@
 
 ## `php-zendserver:5.5`
 
+```console
+$ docker pull library/php-zendserver@sha256:afc170d48f319f558d6bdd21a8e1ce8fb7cf6785c154b79a82b54fbd009f88ae
+```
+
 -	Total Virtual Size: 680.2 MB (680159624 bytes)
 -	Total v2 Content-Length: 286.1 MB (286085917 bytes)
 
@@ -279,6 +283,10 @@ CMD ["/usr/local/bin/run"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `php-zendserver:7.0-php5.5`
+
+```console
+$ docker pull library/php-zendserver@sha256:89279099886f74a2e2b4fb8354268a416c8efd062c148368e73d157aa437f36c
+```
 
 -	Total Virtual Size: 680.2 MB (680159624 bytes)
 -	Total v2 Content-Length: 286.1 MB (286085917 bytes)
@@ -549,6 +557,10 @@ CMD ["/usr/local/bin/run"]
 
 ## `php-zendserver:7.0`
 
+```console
+$ docker pull library/php-zendserver@sha256:d528e7d316be21b8f385b62469281314212d38e7708bd3dbb9790b39a84b8431
+```
+
 -	Total Virtual Size: 680.2 MB (680159624 bytes)
 -	Total v2 Content-Length: 286.1 MB (286085917 bytes)
 
@@ -817,6 +829,10 @@ CMD ["/usr/local/bin/run"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `php-zendserver:5.4`
+
+```console
+$ docker pull library/php-zendserver@sha256:06ded677b398307a58d47dcc35d7b6337e2f946a34f70502ccce57b00282e749
+```
 
 -	Total Virtual Size: 686.4 MB (686390149 bytes)
 -	Total v2 Content-Length: 289.8 MB (289849891 bytes)
@@ -1087,6 +1103,10 @@ CMD ["/usr/local/bin/run"]
 
 ## `php-zendserver:7.0-php5.4`
 
+```console
+$ docker pull library/php-zendserver@sha256:b749428f52343e0278e5d00c108f41adcc619cc348377a0ba9a9284c0266dba6
+```
+
 -	Total Virtual Size: 686.4 MB (686390149 bytes)
 -	Total v2 Content-Length: 289.8 MB (289849891 bytes)
 
@@ -1355,6 +1375,10 @@ CMD ["/usr/local/bin/run"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `php-zendserver:latest`
+
+```console
+$ docker pull library/php-zendserver@sha256:53d176d2c4f4d7b0b8db57055ed10138c4edda6cbb82bdec2f04cf9cb2f61459
+```
 
 -	Total Virtual Size: 680.2 MB (680159624 bytes)
 -	Total v2 Content-Length: 286.1 MB (286085917 bytes)

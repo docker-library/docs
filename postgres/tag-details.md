@@ -19,6 +19,10 @@
 
 ## `postgres:9.0.22`
 
+```console
+$ docker pull library/postgres@sha256:d94d1c1ff7a955f18aff6476bdd9cae3b3d0def57d0f1915f5777a87424df27f
+```
+
 -	Total Virtual Size: 262.8 MB (262790033 bytes)
 -	Total v2 Content-Length: 99.3 MB (99339918 bytes)
 
@@ -331,6 +335,10 @@ CMD ["postgres"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `postgres:9.0`
+
+```console
+$ docker pull library/postgres@sha256:08d4de3235fe9a868b47bb7e5a002a601ea9829cd5aea12a8de9ecd0f2d33831
+```
 
 -	Total Virtual Size: 262.8 MB (262790033 bytes)
 -	Total v2 Content-Length: 99.3 MB (99339918 bytes)
@@ -645,6 +653,10 @@ CMD ["postgres"]
 
 ## `postgres:9.1.18`
 
+```console
+$ docker pull library/postgres@sha256:73d7cd2bdf6f87310f8fc4f6550e30bc6f77cc31d52122e3296d2f0ff6ab3bf1
+```
+
 -	Total Virtual Size: 263.5 MB (263452742 bytes)
 -	Total v2 Content-Length: 99.5 MB (99504609 bytes)
 
@@ -957,6 +969,10 @@ CMD ["postgres"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `postgres:9.1`
+
+```console
+$ docker pull library/postgres@sha256:c611ff29deed4ff80ef8b8d1698bb4e0c09472c416cd2ae11093077a9fdcbedc
+```
 
 -	Total Virtual Size: 263.5 MB (263452742 bytes)
 -	Total v2 Content-Length: 99.5 MB (99504609 bytes)
@@ -1271,6 +1287,10 @@ CMD ["postgres"]
 
 ## `postgres:9.2.13`
 
+```console
+$ docker pull library/postgres@sha256:baf0cce280b24ca89c237f5f8c1e6e027ddfc3442d450ecd7a32cb7d3cc91f31
+```
+
 -	Total Virtual Size: 264.0 MB (263972154 bytes)
 -	Total v2 Content-Length: 99.7 MB (99692560 bytes)
 
@@ -1583,6 +1603,10 @@ CMD ["postgres"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `postgres:9.2`
+
+```console
+$ docker pull library/postgres@sha256:16c091620409baeee9f117ba1623caec4edc90eff03f94a4ec092808e8cc5502
+```
 
 -	Total Virtual Size: 264.0 MB (263972154 bytes)
 -	Total v2 Content-Length: 99.7 MB (99692560 bytes)
@@ -1897,6 +1921,10 @@ CMD ["postgres"]
 
 ## `postgres:9.3.9`
 
+```console
+$ docker pull library/postgres@sha256:56ead64e880242d63447a4ec5322487be18b2e8c66473a83880c2c82fda2d980
+```
+
 -	Total Virtual Size: 264.3 MB (264256629 bytes)
 -	Total v2 Content-Length: 99.8 MB (99849009 bytes)
 
@@ -2209,6 +2237,10 @@ CMD ["postgres"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `postgres:9.3`
+
+```console
+$ docker pull library/postgres@sha256:6ac2ae21ac35e575f5b271b90aa3648eda524795608be9cdb31d9d7b9ea59465
+```
 
 -	Total Virtual Size: 264.3 MB (264256629 bytes)
 -	Total v2 Content-Length: 99.8 MB (99849009 bytes)
@@ -2523,6 +2555,10 @@ CMD ["postgres"]
 
 ## `postgres:9.4.4`
 
+```console
+$ docker pull library/postgres@sha256:111008ad5437e8ecd9133dbc3d35efaac73a140aade6a35a4402502b1dbb48a4
+```
+
 -	Total Virtual Size: 265.3 MB (265315373 bytes)
 -	Total v2 Content-Length: 100.2 MB (100195408 bytes)
 
@@ -2835,6 +2871,10 @@ CMD ["postgres"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `postgres:9.4`
+
+```console
+$ docker pull library/postgres@sha256:0426f89540cad3bec71d593fbb686a27b97173c7a5b9c8917c417cd8a22bb5b8
+```
 
 -	Total Virtual Size: 265.3 MB (265315373 bytes)
 -	Total v2 Content-Length: 100.2 MB (100195408 bytes)
@@ -3149,6 +3189,10 @@ CMD ["postgres"]
 
 ## `postgres:9`
 
+```console
+$ docker pull library/postgres@sha256:32f2cfce07c250ad52fa6c8531318d855db05586677f98f4e953c2adbb280a06
+```
+
 -	Total Virtual Size: 265.3 MB (265315373 bytes)
 -	Total v2 Content-Length: 100.2 MB (100195408 bytes)
 
@@ -3461,6 +3505,10 @@ CMD ["postgres"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `postgres:latest`
+
+```console
+$ docker pull library/postgres@sha256:a11e806f65a093bde78acb1ecc0182adcb7e9fe61176344b903442517012fc4a
+```
 
 -	Total Virtual Size: 265.3 MB (265315373 bytes)
 -	Total v2 Content-Length: 100.2 MB (100195408 bytes)
@@ -3775,6 +3823,10 @@ CMD ["postgres"]
 
 ## `postgres:9.5-alpha2`
 
+```console
+$ docker pull library/postgres@sha256:dc70938bf4ee446542fbe7033ca124f59f5d52b9a4635d88a1f7ff7f86ae4822
+```
+
 -	Total Virtual Size: 265.7 MB (265695335 bytes)
 -	Total v2 Content-Length: 100.4 MB (100397313 bytes)
 
@@ -4087,6 +4139,10 @@ CMD ["postgres"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `postgres:9.5`
+
+```console
+$ docker pull library/postgres@sha256:2c40c38e6bb2bc3402aed4282dbbf5bd3152fd000599aca4ca3aaff78f949e62
+```
 
 -	Total Virtual Size: 265.7 MB (265695335 bytes)
 -	Total v2 Content-Length: 100.4 MB (100397313 bytes)

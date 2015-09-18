@@ -12,6 +12,10 @@
 
 ## `drupal:7.39`
 
+```console
+$ docker pull library/drupal@sha256:a271fee4f55fe39860298eb1b9602178fa0fbae98ef407e0cea5d7cf2e0015d1
+```
+
 -	Total Virtual Size: 526.1 MB (526074520 bytes)
 -	Total v2 Content-Length: 177.5 MB (177532933 bytes)
 
@@ -455,6 +459,10 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:49:11 GMT
 
 ## `drupal:7`
+
+```console
+$ docker pull library/drupal@sha256:9eb75eefd7954f30381e7cc9915017b39795ac70f3fa84ce709e38a30d8b627d
+```
 
 -	Total Virtual Size: 526.1 MB (526074520 bytes)
 -	Total v2 Content-Length: 177.5 MB (177532933 bytes)
@@ -900,6 +908,10 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 
 ## `drupal:latest`
 
+```console
+$ docker pull library/drupal@sha256:8a3ea4d99c4b8d4c5ad406c52f47c047dca9d2879176079e0408b590e7191948
+```
+
 -	Total Virtual Size: 526.1 MB (526074520 bytes)
 -	Total v2 Content-Length: 177.5 MB (177532933 bytes)
 
@@ -1343,6 +1355,10 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:49:11 GMT
 
 ## `drupal:8.0.0-beta15`
+
+```console
+$ docker pull library/drupal@sha256:7bea98b9efbc60b8e2e60cf0c2812a1f54aeff5aa0a10ee8da0bdbbbc356af87
+```
 
 -	Total Virtual Size: 566.9 MB (566897162 bytes)
 -	Total v2 Content-Length: 185.5 MB (185511939 bytes)
@@ -1788,6 +1804,10 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 
 ## `drupal:8.0.0`
 
+```console
+$ docker pull library/drupal@sha256:f921cc837c8bb8d9382f1f33fde40ffe745e11b018d0257382ec77b92cd59715
+```
+
 -	Total Virtual Size: 566.9 MB (566897162 bytes)
 -	Total v2 Content-Length: 185.5 MB (185511939 bytes)
 
@@ -2232,6 +2252,10 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 
 ## `drupal:8.0`
 
+```console
+$ docker pull library/drupal@sha256:2aebf25d0ad5045fe159bebcdb29a3b18994419aa6d29187aa6103c4712c171b
+```
+
 -	Total Virtual Size: 566.9 MB (566897162 bytes)
 -	Total v2 Content-Length: 185.5 MB (185511939 bytes)
 
@@ -2675,6 +2699,10 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	v2 Last-Modified: Fri, 11 Sep 2015 02:00:13 GMT
 
 ## `drupal:8`
+
+```console
+$ docker pull library/drupal@sha256:b89f1a7f1f9374bf58d6767ecf7f24960ff56e07f94e90e35f2ecb4e16be16e9
+```
 
 -	Total Virtual Size: 566.9 MB (566897162 bytes)
 -	Total v2 Content-Length: 185.5 MB (185511939 bytes)

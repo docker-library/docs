@@ -14,6 +14,10 @@
 
 ## `logstash:1.4.5-1-a2bacae`
 
+```console
+$ docker pull library/logstash@sha256:d159e681e66e6823f890690149961fdff2ccd80d781fe295deafb153819ec692
+```
+
 -	Total Virtual Size: 599.2 MB (599232411 bytes)
 -	Total v2 Content-Length: 269.0 MB (268981133 bytes)
 
@@ -359,6 +363,10 @@ CMD ["logstash" "agent"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `logstash:1.4.5-1`
+
+```console
+$ docker pull library/logstash@sha256:b5ad88c0c774eff47081570e78208331902fee188d7d53e780358822ffcc8138
+```
 
 -	Total Virtual Size: 599.2 MB (599232411 bytes)
 -	Total v2 Content-Length: 269.0 MB (268981133 bytes)
@@ -706,6 +714,10 @@ CMD ["logstash" "agent"]
 
 ## `logstash:1.4.5`
 
+```console
+$ docker pull library/logstash@sha256:b3b0bffbef42b5063cf1936bc7e44a6a7f9250343ef6d15bc6042fc87a4147c9
+```
+
 -	Total Virtual Size: 599.2 MB (599232411 bytes)
 -	Total v2 Content-Length: 269.0 MB (268981133 bytes)
 
@@ -1051,6 +1063,10 @@ CMD ["logstash" "agent"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `logstash:1.4`
+
+```console
+$ docker pull library/logstash@sha256:74a21d8b7f9d44899e55c7bbd6e97c47525deed5a14ca4d376fdb12a9efdc43f
+```
 
 -	Total Virtual Size: 599.2 MB (599232411 bytes)
 -	Total v2 Content-Length: 269.0 MB (268981133 bytes)
@@ -1398,6 +1414,10 @@ CMD ["logstash" "agent"]
 
 ## `logstash:1.5.4-1`
 
+```console
+$ docker pull library/logstash@sha256:d9e0f5130e5e66f7d2d7b11c3677605a34648fdbf7f90fcc7e5c24f03d831430
+```
+
 -	Total Virtual Size: 636.8 MB (636798921 bytes)
 -	Total v2 Content-Length: 287.7 MB (287670661 bytes)
 
@@ -1743,6 +1763,10 @@ CMD ["logstash" "agent"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `logstash:1.5.4`
+
+```console
+$ docker pull library/logstash@sha256:921d1683aa6f848f2e2bd6c42c3f872bc7b02b1a2da896dda268032f87891755
+```
 
 -	Total Virtual Size: 636.8 MB (636798921 bytes)
 -	Total v2 Content-Length: 287.7 MB (287670661 bytes)
@@ -2090,6 +2114,10 @@ CMD ["logstash" "agent"]
 
 ## `logstash:1.5`
 
+```console
+$ docker pull library/logstash@sha256:fceab3453237494b7345eadf8f70b83a1ba03f267a9cf8c24d4eda9de6b7261e
+```
+
 -	Total Virtual Size: 636.8 MB (636798921 bytes)
 -	Total v2 Content-Length: 287.7 MB (287670661 bytes)
 
@@ -2436,6 +2464,10 @@ CMD ["logstash" "agent"]
 
 ## `logstash:1`
 
+```console
+$ docker pull library/logstash@sha256:e9e5f65f1a45113155746e22387dee5ea1258ef2fe6c0d14f60809892d2094e8
+```
+
 -	Total Virtual Size: 636.8 MB (636798921 bytes)
 -	Total v2 Content-Length: 287.7 MB (287670661 bytes)
 
@@ -2781,6 +2813,10 @@ CMD ["logstash" "agent"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `logstash:latest`
+
+```console
+$ docker pull library/logstash@sha256:268fcb5ed3555ae73a85c179f879f099f810c5050bab9fe72e2065415dd0c7a8
+```
 
 -	Total Virtual Size: 636.8 MB (636798921 bytes)
 -	Total v2 Content-Length: 287.7 MB (287670661 bytes)

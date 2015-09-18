@@ -8,6 +8,10 @@
 
 ## `docker-dev:1.8.2`
 
+```console
+$ docker pull library/docker-dev@sha256:9e5a735be6716a3a47eafa5352f0ee57154557c79bab080e9ce3ad320483fea1
+```
+
 -	Total Virtual Size: 1.7 GB (1651721722 bytes)
 -	Total v2 Content-Length: 571.7 MB (571682657 bytes)
 
@@ -807,6 +811,10 @@ COPY dir:b694198bceb535b632aadeb1fea265c75bfe451c46112ed618cb382f91ffeeab in /go
 
 ## `docker-dev:1.8`
 
+```console
+$ docker pull library/docker-dev@sha256:e202ea31d4e56c924c2d7dfc258aa8e280123f0e7ba04d0bd8225f57319c979d
+```
+
 -	Total Virtual Size: 1.7 GB (1651721722 bytes)
 -	Total v2 Content-Length: 571.7 MB (571683042 bytes)
 
@@ -1605,6 +1613,10 @@ COPY dir:90768477fd5abc9004349c718ac82ef4989c875092c7138fa4af9ccb5a3ff029 in /go
 -	v2 Last-Modified: Thu, 10 Sep 2015 22:10:26 GMT
 
 ## `docker-dev:1`
+
+```console
+$ docker pull library/docker-dev@sha256:57829697407034c1dc1aeafbbe4a58608043f8fef283755d8cfdf40c23e6ec29
+```
 
 -	Total Virtual Size: 1.7 GB (1651721722 bytes)
 -	Total v2 Content-Length: 571.7 MB (571682871 bytes)

@@ -17,6 +17,10 @@
 
 ## `wordpress:4.3.1-apache`
 
+```console
+$ docker pull library/wordpress@sha256:f65a568e3cd2455adaff23e05ff9a0262062a4e3247ba3d524ec136da0ab7423
+```
+
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
 -	Total v2 Content-Length: 173.8 MB (173795343 bytes)
 
@@ -515,6 +519,10 @@ CMD ["apache2-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `wordpress:4.3.1`
+
+```console
+$ docker pull library/wordpress@sha256:afaa7fd8309da9bb645f238dd636176e7f5251beba84f3a5860598207767abac
+```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
 -	Total v2 Content-Length: 173.8 MB (173795343 bytes)
@@ -1015,6 +1023,10 @@ CMD ["apache2-foreground"]
 
 ## `wordpress:4.3-apache`
 
+```console
+$ docker pull library/wordpress@sha256:ccdb53fa780f0dcb342b65999545979a6b357742197932237abee12e03a8c5de
+```
+
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
 -	Total v2 Content-Length: 173.8 MB (173795343 bytes)
 
@@ -1513,6 +1525,10 @@ CMD ["apache2-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `wordpress:4.3`
+
+```console
+$ docker pull library/wordpress@sha256:40d515f7d5d4c1f5d7ffafb14b77764f52430d65e545967fe07055c6703d6fb6
+```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
 -	Total v2 Content-Length: 173.8 MB (173795343 bytes)
@@ -2013,6 +2029,10 @@ CMD ["apache2-foreground"]
 
 ## `wordpress:4-apache`
 
+```console
+$ docker pull library/wordpress@sha256:3bebd1393f701da7bc083e7be14b06b2ea00a270b712940f4be7e5eb388a13b9
+```
+
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
 -	Total v2 Content-Length: 173.8 MB (173795343 bytes)
 
@@ -2511,6 +2531,10 @@ CMD ["apache2-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `wordpress:apache`
+
+```console
+$ docker pull library/wordpress@sha256:126bb25b6661e1160f08f192c3c64ed802d03bc93624ffac1d87ed708f9eeaa4
+```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
 -	Total v2 Content-Length: 173.8 MB (173795343 bytes)
@@ -3011,6 +3035,10 @@ CMD ["apache2-foreground"]
 
 ## `wordpress:4`
 
+```console
+$ docker pull library/wordpress@sha256:3c2d6347b222d873044b594a8a2fd60e88f3a3a6b53cffa05dbc9354008a8a6d
+```
+
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
 -	Total v2 Content-Length: 173.8 MB (173795343 bytes)
 
@@ -3509,6 +3537,10 @@ CMD ["apache2-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `wordpress:latest`
+
+```console
+$ docker pull library/wordpress@sha256:27e04468b29ee2db0fb678902593a1ff9bfd6a67f7a2feccc951cc6fc7febc4a
+```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
 -	Total v2 Content-Length: 173.8 MB (173795343 bytes)
@@ -4009,6 +4041,10 @@ CMD ["apache2-foreground"]
 
 ## `wordpress:4.3.1-fpm`
 
+```console
+$ docker pull library/wordpress@sha256:7e6a491e8ec33b6292ee0a868233b27602b9d326506b679e416b7a7d8b6ad13c
+```
+
 -	Total Virtual Size: 485.6 MB (485590617 bytes)
 -	Total v2 Content-Length: 164.4 MB (164440600 bytes)
 
@@ -4409,6 +4445,10 @@ CMD ["php-fpm"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `wordpress:4.3-fpm`
+
+```console
+$ docker pull library/wordpress@sha256:a821b820dac41da2f8882b4865cb9af1172177df92bbbed5a7b4d68786ef33a7
+```
 
 -	Total Virtual Size: 485.6 MB (485590617 bytes)
 -	Total v2 Content-Length: 164.4 MB (164440600 bytes)
@@ -4811,6 +4851,10 @@ CMD ["php-fpm"]
 
 ## `wordpress:4-fpm`
 
+```console
+$ docker pull library/wordpress@sha256:1a358daf0c0d59c7326a15952490bab45d53c32929a965d147bc9a4e61c20235
+```
+
 -	Total Virtual Size: 485.6 MB (485590617 bytes)
 -	Total v2 Content-Length: 164.4 MB (164440600 bytes)
 
@@ -5211,6 +5255,10 @@ CMD ["php-fpm"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `wordpress:fpm`
+
+```console
+$ docker pull library/wordpress@sha256:ccf92840f1353e9f43dbfac81a16d94ae01807ce0bf5fb32dc8aac156d715345
+```
 
 -	Total Virtual Size: 485.6 MB (485590617 bytes)
 -	Total v2 Content-Length: 164.4 MB (164440600 bytes)

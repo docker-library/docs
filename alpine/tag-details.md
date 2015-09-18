@@ -11,6 +11,10 @@
 
 ## `alpine:2.6`
 
+```console
+$ docker pull library/alpine@sha256:65602701d087c12acdcad42002bcf3552661a267fcc0b76a5ca3b7be3758f2bb
+```
+
 -	Total Virtual Size: 4.5 MB (4502262 bytes)
 -	Total v2 Content-Length: 2.0 MB (1952218 bytes)
 
@@ -30,6 +34,10 @@ ADD file:6b71acf68670a4291a15e8ea342ecb83c64bd89dcac503594b6aac459a2a7df6 in /
 -	v2 Last-Modified: Mon, 14 Sep 2015 20:37:10 GMT
 
 ## `alpine:2.7`
+
+```console
+$ docker pull library/alpine@sha256:afd6ce6086e0fac5d94c038e4ded8d5a5d86ed86838d5c96760ba332e36a42f5
+```
 
 -	Total Virtual Size: 4.7 MB (4712974 bytes)
 -	Total v2 Content-Length: 2.0 MB (1972807 bytes)
@@ -51,6 +59,10 @@ ADD file:ba0f96fc9e5bfd966eb8f2363a5b9109608adfabee57e2d56168ea758ced68d9 in /
 
 ## `alpine:3.1`
 
+```console
+$ docker pull library/alpine@sha256:22b8b96ceccf4d484e4ca62363abb527fc5c2fe01a4097642395c4d830c3471f
+```
+
 -	Total Virtual Size: 5.0 MB (5041128 bytes)
 -	Total v2 Content-Length: 2.2 MB (2239031 bytes)
 
@@ -70,6 +82,10 @@ ADD file:f302eb46ca6d55d4baef4cb4aaff3a2266fb34d413bfaa21c0dd5da34b975b8b in /
 -	v2 Last-Modified: Mon, 14 Sep 2015 20:37:37 GMT
 
 ## `alpine:3.2`
+
+```console
+$ docker pull library/alpine@sha256:b4769592c47ebc65f85999c61cf33dcdd5f04a7660c4225b454f875c57ef79fd
+```
 
 -	Total Virtual Size: 5.2 MB (5248903 bytes)
 -	Total v2 Content-Length: 2.5 MB (2489689 bytes)
@@ -91,6 +107,10 @@ ADD file:43a95cc218d164ff589cb91519964373d53b607469f5ccce725631916392cd88 in /
 
 ## `alpine:latest`
 
+```console
+$ docker pull library/alpine@sha256:fb9f16730ac6316afa4d97caa5130219927bfcecf0b0ce35c01dcb612f449739
+```
+
 -	Total Virtual Size: 5.2 MB (5248903 bytes)
 -	Total v2 Content-Length: 2.5 MB (2489689 bytes)
 
@@ -110,6 +130,10 @@ ADD file:43a95cc218d164ff589cb91519964373d53b607469f5ccce725631916392cd88 in /
 -	v2 Last-Modified: Mon, 14 Sep 2015 20:37:51 GMT
 
 ## `alpine:edge`
+
+```console
+$ docker pull library/alpine@sha256:ff86433452752358a22a7ea4054b92d2ca0c310e5227074665215837d93f184b
+```
 
 -	Total Virtual Size: 5.2 MB (5248796 bytes)
 -	Total v2 Content-Length: 2.5 MB (2490009 bytes)

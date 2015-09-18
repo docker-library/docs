@@ -7,6 +7,10 @@
 
 ## `nats:0.6.6`
 
+```console
+$ docker pull library/nats@sha256:865f4c9dec716b35499149cbac95fdf639b8f51c73e2e135372c478212ca465e
+```
+
 -	Total Virtual Size: 6.6 MB (6612515 bytes)
 -	Total v2 Content-Length: 2.1 MB (2053743 bytes)
 
@@ -96,6 +100,10 @@ CMD []
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `nats:latest`
+
+```console
+$ docker pull library/nats@sha256:cf36a19634066f4e8fdea598a2d5b777ac5ba11d8d46b79f1f141d017d12ca2a
+```
 
 -	Total Virtual Size: 6.6 MB (6612515 bytes)
 -	Total v2 Content-Length: 2.1 MB (2053743 bytes)

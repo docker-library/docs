@@ -10,6 +10,10 @@
 
 ## `arangodb:2.5.5`
 
+```console
+$ docker pull library/arangodb@sha256:33a9bfe47a4f293faa46a59f2e9b04995a6d9bb5a158b94aea7bbd3139c5d0ca
+```
+
 -	Total Virtual Size: 302.7 MB (302742160 bytes)
 -	Total v2 Content-Length: 106.5 MB (106474335 bytes)
 
@@ -228,6 +232,10 @@ CMD ["/usr/sbin/arangod"]
 
 ## `arangodb:2.5`
 
+```console
+$ docker pull library/arangodb@sha256:2fb3b857259e81d07ad95496dc65ccbae94902d928325c71f613838b4f171f25
+```
+
 -	Total Virtual Size: 302.7 MB (302742160 bytes)
 -	Total v2 Content-Length: 106.5 MB (106474335 bytes)
 
@@ -445,6 +453,10 @@ CMD ["/usr/sbin/arangod"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `arangodb:2.6`
+
+```console
+$ docker pull library/arangodb@sha256:2d218cff20e6d993464d857a50db50855183eeef21ab432fce83bb40226be174
+```
 
 -	Total Virtual Size: 333.2 MB (333246306 bytes)
 -	Total v2 Content-Length: 124.6 MB (124596595 bytes)
@@ -665,6 +677,10 @@ CMD ["/usr/sbin/arangod"]
 
 ## `arangodb:2.6.7`
 
+```console
+$ docker pull library/arangodb@sha256:8c74a245ab88b5b0ca9029eee0a1772ddc83397124d843790d426e3b65c8973d
+```
+
 -	Total Virtual Size: 333.2 MB (333246306 bytes)
 -	Total v2 Content-Length: 124.6 MB (124596595 bytes)
 
@@ -883,6 +899,10 @@ CMD ["/usr/sbin/arangod"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `arangodb:latest`
+
+```console
+$ docker pull library/arangodb@sha256:b44015cbc8a0546f77ed04578dda613db94397c17564cf51786133bfb9adb8d8
+```
 
 -	Total Virtual Size: 333.2 MB (333246306 bytes)
 -	Total v2 Content-Length: 124.6 MB (124596595 bytes)

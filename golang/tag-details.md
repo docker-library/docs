@@ -25,6 +25,10 @@
 
 ## `golang:1.4.2`
 
+```console
+$ docker pull library/golang@sha256:a661a9a57b864de1d08b350c8dfc944b72daea8fb4292c63bbbf534ba489474b
+```
+
 -	Total Virtual Size: 562.9 MB (562915021 bytes)
 -	Total v2 Content-Length: 204.6 MB (204568522 bytes)
 
@@ -246,6 +250,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 
 ## `golang:1.4`
 
+```console
+$ docker pull library/golang@sha256:8a95a59ad3d207417d749ab08f8ffd2a75067d6504045cb9d85cb95d8dd65501
+```
+
 -	Total Virtual Size: 562.9 MB (562915021 bytes)
 -	Total v2 Content-Length: 204.6 MB (204568522 bytes)
 
@@ -466,6 +474,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	v2 Last-Modified: Thu, 17 Sep 2015 16:38:23 GMT
 
 ## `golang:1.4.2-onbuild`
+
+```console
+$ docker pull library/golang@sha256:8298cba6fadb341ea02548882fc5e4a43cdc07c37b2ca822fb691a8d945132e2
+```
 
 -	Total Virtual Size: 562.9 MB (562915021 bytes)
 -	Total v2 Content-Length: 204.6 MB (204568815 bytes)
@@ -772,6 +784,10 @@ ONBUILD RUN go-wrapper install
 
 ## `golang:1.4-onbuild`
 
+```console
+$ docker pull library/golang@sha256:da510ca73a64a3d6dedf6033c81c22d6dd53d414090cef62ff5f1fb5f77268ac
+```
+
 -	Total Virtual Size: 562.9 MB (562915021 bytes)
 -	Total v2 Content-Length: 204.6 MB (204568815 bytes)
 
@@ -1077,6 +1093,10 @@ ONBUILD RUN go-wrapper install
 
 ## `golang:1.4.2-cross`
 
+```console
+$ docker pull library/golang@sha256:14168736ca3da14197c0473bc9b93bbe0a0bdbd8360cb4d067f9d34f53d18e89
+```
+
 -	Total Virtual Size: 2.4 GB (2384467146 bytes)
 -	Total v2 Content-Length: 665.0 MB (665042728 bytes)
 
@@ -1345,6 +1365,10 @@ RUN cd /usr/src/go/src \
 -	v2 Last-Modified: Thu, 17 Sep 2015 16:46:04 GMT
 
 ## `golang:1.4-cross`
+
+```console
+$ docker pull library/golang@sha256:4a2ae3585ed2973431129029b5321eb98dfcaa5190ba605c02be4c93ada81969
+```
 
 -	Total Virtual Size: 2.4 GB (2384467146 bytes)
 -	Total v2 Content-Length: 665.0 MB (665042728 bytes)
@@ -1615,6 +1639,10 @@ RUN cd /usr/src/go/src \
 
 ## `golang:1.4.2-wheezy`
 
+```console
+$ docker pull library/golang@sha256:fdf8b4a76396839e1661486ed004537555cc44b18378cf8ed9c58801db360f86
+```
+
 -	Total Virtual Size: 437.3 MB (437302091 bytes)
 -	Total v2 Content-Length: 150.6 MB (150557456 bytes)
 
@@ -1835,6 +1863,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	v2 Last-Modified: Thu, 17 Sep 2015 16:51:09 GMT
 
 ## `golang:1.4-wheezy`
+
+```console
+$ docker pull library/golang@sha256:c224f5d9e00e656d0bfc47887a5fd762a011fc6dd139963cb7f01243dc96199d
+```
 
 -	Total Virtual Size: 437.3 MB (437302091 bytes)
 -	Total v2 Content-Length: 150.6 MB (150557456 bytes)
@@ -2057,6 +2089,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 
 ## `golang:1.5.1`
 
+```console
+$ docker pull library/golang@sha256:7fea9e372429f67b4a273c3d999efa51bd5910ca7ad0b2125f978150f2175bd2
+```
+
 -	Total Virtual Size: 709.5 MB (709470237 bytes)
 -	Total v2 Content-Length: 247.0 MB (246985723 bytes)
 
@@ -2276,6 +2312,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	v2 Last-Modified: Thu, 17 Sep 2015 16:53:49 GMT
 
 ## `golang:1.5`
+
+```console
+$ docker pull library/golang@sha256:ead434cd278824865d6e3b67e5d4579ded02eb2e8367fc165efa21138b225f11
+```
 
 -	Total Virtual Size: 709.5 MB (709470237 bytes)
 -	Total v2 Content-Length: 247.0 MB (246985723 bytes)
@@ -2497,6 +2537,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 
 ## `golang:1`
 
+```console
+$ docker pull library/golang@sha256:5db37256cfd56b7d4dcc291a7e24db6362b1f7cb28e51d35b8193aa3b574c9b9
+```
+
 -	Total Virtual Size: 709.5 MB (709470237 bytes)
 -	Total v2 Content-Length: 247.0 MB (246985723 bytes)
 
@@ -2717,6 +2761,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 
 ## `golang:latest`
 
+```console
+$ docker pull library/golang@sha256:6ac7f90e1f2f52de4927554a500477c233210460c059e06ab4a60f580c277f9d
+```
+
 -	Total Virtual Size: 709.5 MB (709470237 bytes)
 -	Total v2 Content-Length: 247.0 MB (246985723 bytes)
 
@@ -2936,6 +2984,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	v2 Last-Modified: Thu, 17 Sep 2015 16:53:49 GMT
 
 ## `golang:1.5.1-onbuild`
+
+```console
+$ docker pull library/golang@sha256:ce9d0ef210a25af4eaf7cf4562bc12f5a36557e026b904ffbda6c5003ef1106f
+```
 
 -	Total Virtual Size: 709.5 MB (709470237 bytes)
 -	Total v2 Content-Length: 247.0 MB (246986013 bytes)
@@ -3241,6 +3293,10 @@ ONBUILD RUN go-wrapper install
 
 ## `golang:1.5-onbuild`
 
+```console
+$ docker pull library/golang@sha256:f3e041024e82c7206c8bd0b4fe69a1bbca086a0e879f48083c98483e0d2c6e75
+```
+
 -	Total Virtual Size: 709.5 MB (709470237 bytes)
 -	Total v2 Content-Length: 247.0 MB (246986013 bytes)
 
@@ -3544,6 +3600,10 @@ ONBUILD RUN go-wrapper install
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `golang:1-onbuild`
+
+```console
+$ docker pull library/golang@sha256:23f402acf1b4afba97b14922a0c9e4a2b5aef8ceb734dae7cfa7121ceb69535e
+```
 
 -	Total Virtual Size: 709.5 MB (709470237 bytes)
 -	Total v2 Content-Length: 247.0 MB (246986013 bytes)
@@ -3849,6 +3909,10 @@ ONBUILD RUN go-wrapper install
 
 ## `golang:onbuild`
 
+```console
+$ docker pull library/golang@sha256:a3ef162d80318d493a8274f65cf4d4a64c7ddb6a0cc3773ad6cc20e68fb78bd1
+```
+
 -	Total Virtual Size: 709.5 MB (709470237 bytes)
 -	Total v2 Content-Length: 247.0 MB (246986013 bytes)
 
@@ -4153,6 +4217,10 @@ ONBUILD RUN go-wrapper install
 
 ## `golang:1.5.1-wheezy`
 
+```console
+$ docker pull library/golang@sha256:c477adb3b92a26e7e1ffd64c51534b07876525beb9b09084274adebf7f87f469
+```
+
 -	Total Virtual Size: 583.0 MB (583028248 bytes)
 -	Total v2 Content-Length: 192.8 MB (192776514 bytes)
 
@@ -4372,6 +4440,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	v2 Last-Modified: Thu, 17 Sep 2015 16:58:24 GMT
 
 ## `golang:1.5-wheezy`
+
+```console
+$ docker pull library/golang@sha256:aaa27cfd9be558b9a60ea947f1d05e085380cca1a8cdcf7a69822772484ed74a
+```
 
 -	Total Virtual Size: 583.0 MB (583028248 bytes)
 -	Total v2 Content-Length: 192.8 MB (192776514 bytes)
@@ -4593,6 +4665,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 
 ## `golang:1-wheezy`
 
+```console
+$ docker pull library/golang@sha256:8087c2ac73e05f71cd32da6c9e517724c94dc61daae21b3380e75e5ba12cea7c
+```
+
 -	Total Virtual Size: 583.0 MB (583028248 bytes)
 -	Total v2 Content-Length: 192.8 MB (192776514 bytes)
 
@@ -4812,6 +4888,10 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	v2 Last-Modified: Thu, 17 Sep 2015 16:58:24 GMT
 
 ## `golang:wheezy`
+
+```console
+$ docker pull library/golang@sha256:b0723303a749afd4785fd29eab91631bf85c509ab2ba1bf119bd9630e3c4d2cc
+```
 
 -	Total Virtual Size: 583.0 MB (583028248 bytes)
 -	Total v2 Content-Length: 192.8 MB (192776514 bytes)

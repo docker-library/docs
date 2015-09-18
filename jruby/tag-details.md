@@ -28,6 +28,10 @@
 
 ## `jruby:1.7`
 
+```console
+$ docker pull library/jruby@sha256:bd8bdee3dfa245249813422c69291c79f142739f0a117b6f0fef72b9cebcf2e0
+```
+
 -	Total Virtual Size: 552.1 MB (552086973 bytes)
 -	Total v2 Content-Length: 229.0 MB (229049281 bytes)
 
@@ -366,6 +370,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `jruby:1.7.22`
+
+```console
+$ docker pull library/jruby@sha256:56dc7888d1ae681dca63339add49b114d97c51c76d479747ebbe9183e820a613
+```
 
 -	Total Virtual Size: 552.1 MB (552086973 bytes)
 -	Total v2 Content-Length: 229.0 MB (229049281 bytes)
@@ -706,6 +714,10 @@ CMD ["irb"]
 
 ## `jruby:latest`
 
+```console
+$ docker pull library/jruby@sha256:273cb66c2c171a82268bcd25f439ec80ebaf4ed331c9a83d89ca779632985344
+```
+
 -	Total Virtual Size: 552.1 MB (552086973 bytes)
 -	Total v2 Content-Length: 229.0 MB (229049281 bytes)
 
@@ -1044,6 +1056,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `jruby:1.7-jre`
+
+```console
+$ docker pull library/jruby@sha256:4a9d4b8bee38011f6a9fecff325a429ca7d709697a5f8b7093d3cb9b5e9df6df
+```
 
 -	Total Virtual Size: 552.1 MB (552086973 bytes)
 -	Total v2 Content-Length: 229.0 MB (229049281 bytes)
@@ -1384,6 +1400,10 @@ CMD ["irb"]
 
 ## `jruby:1.7.22-jre`
 
+```console
+$ docker pull library/jruby@sha256:4f26baff6dfbc50e915d6f785314d1e6bade99e2377ce4c0563ee0cec7199314
+```
+
 -	Total Virtual Size: 552.1 MB (552086973 bytes)
 -	Total v2 Content-Length: 229.0 MB (229049281 bytes)
 
@@ -1722,6 +1742,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `jruby:1.7-jdk`
+
+```console
+$ docker pull library/jruby@sha256:4abb0da829374e17a9fb9ecefc7e40d995e00c7b9dae25fe74d16362cf170a77
+```
 
 -	Total Virtual Size: 882.1 MB (882093048 bytes)
 -	Total v2 Content-Length: 347.6 MB (347583597 bytes)
@@ -2068,6 +2092,10 @@ CMD ["irb"]
 
 ## `jruby:1.7.22-jdk`
 
+```console
+$ docker pull library/jruby@sha256:07fdcb44ee088063ecbe693f5325873b7befafe5fea42ca31793e06d8f5338f0
+```
+
 -	Total Virtual Size: 882.1 MB (882093048 bytes)
 -	Total v2 Content-Length: 347.6 MB (347583597 bytes)
 
@@ -2412,6 +2440,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `jruby:1.7-onbuild`
+
+```console
+$ docker pull library/jruby@sha256:95cc737a96922ba5e517d98813464df56c9294e26d78934e9031f82c68fc6aa1
+```
 
 -	Total Virtual Size: 882.1 MB (882093048 bytes)
 -	Total v2 Content-Length: 347.6 MB (347583883 bytes)
@@ -2842,6 +2874,10 @@ ONBUILD ADD . /usr/src/app
 
 ## `jruby:1.7.22-onbuild`
 
+```console
+$ docker pull library/jruby@sha256:b98cff9cdc09e48d18b926f711b61d9eb09cb9198610fd634847d0b2ad14d2a5
+```
+
 -	Total Virtual Size: 882.1 MB (882093048 bytes)
 -	Total v2 Content-Length: 347.6 MB (347583883 bytes)
 
@@ -3271,6 +3307,10 @@ ONBUILD ADD . /usr/src/app
 
 ## `jruby:9`
 
+```console
+$ docker pull library/jruby@sha256:6c322e92bcba5aa806512ab46ffac565d0b68886cd8462e2478a07c0145e21b8
+```
+
 -	Total Virtual Size: 556.7 MB (556709143 bytes)
 -	Total v2 Content-Length: 236.9 MB (236922228 bytes)
 
@@ -3609,6 +3649,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `jruby:9.0`
+
+```console
+$ docker pull library/jruby@sha256:e6e25b8f1742b2838efd50dff635932bb6c826c1ee415499411dfee1d7b151ed
+```
 
 -	Total Virtual Size: 556.7 MB (556709143 bytes)
 -	Total v2 Content-Length: 236.9 MB (236922228 bytes)
@@ -3949,6 +3993,10 @@ CMD ["irb"]
 
 ## `jruby:9.0-jre`
 
+```console
+$ docker pull library/jruby@sha256:11899a964c8dc0e2e6ee4eef779b8b42d6ccb6e1d7a9a6f9a7f31d18f810be14
+```
+
 -	Total Virtual Size: 556.7 MB (556709143 bytes)
 -	Total v2 Content-Length: 236.9 MB (236922228 bytes)
 
@@ -4287,6 +4335,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `jruby:9.0.1`
+
+```console
+$ docker pull library/jruby@sha256:76c5220f0d5282be19935b7dd053c094782dc222ab166366e8f3ba688e967f24
+```
 
 -	Total Virtual Size: 556.7 MB (556709143 bytes)
 -	Total v2 Content-Length: 236.9 MB (236922228 bytes)
@@ -4627,6 +4679,10 @@ CMD ["irb"]
 
 ## `jruby:9.0.1-jre`
 
+```console
+$ docker pull library/jruby@sha256:d8ff2a3b7e09f4835222d48cf52fd2c447c4ddefe04c5ea9eb5e02270be0b9d2
+```
+
 -	Total Virtual Size: 556.7 MB (556709143 bytes)
 -	Total v2 Content-Length: 236.9 MB (236922228 bytes)
 
@@ -4965,6 +5021,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `jruby:9.0.1.0`
+
+```console
+$ docker pull library/jruby@sha256:b1bcaf3e1b47722882b80ade869b63ec2aabfc83a9609d2f89fe570df18a9b3f
+```
 
 -	Total Virtual Size: 556.7 MB (556709143 bytes)
 -	Total v2 Content-Length: 236.9 MB (236922228 bytes)
@@ -5305,6 +5365,10 @@ CMD ["irb"]
 
 ## `jruby:9.0.1.0-jre`
 
+```console
+$ docker pull library/jruby@sha256:74e771797771ee84a6be06b21d2eb6ff1880f4630a55b9917a46ee3c2fdab5ca
+```
+
 -	Total Virtual Size: 556.7 MB (556709143 bytes)
 -	Total v2 Content-Length: 236.9 MB (236922228 bytes)
 
@@ -5643,6 +5707,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `jruby:9.0-jdk`
+
+```console
+$ docker pull library/jruby@sha256:38ccd665b6ca27c3042f9f8d21d0c6339c518d55b076443c661b808893b18d1c
+```
 
 -	Total Virtual Size: 886.7 MB (886715218 bytes)
 -	Total v2 Content-Length: 355.5 MB (355456474 bytes)
@@ -5989,6 +6057,10 @@ CMD ["irb"]
 
 ## `jruby:9.0.1-jdk`
 
+```console
+$ docker pull library/jruby@sha256:f017f9f3fe9a37bad88e6a7ba4c69cebcfcf4e0824e6544bd4301361112a62ca
+```
+
 -	Total Virtual Size: 886.7 MB (886715218 bytes)
 -	Total v2 Content-Length: 355.5 MB (355456474 bytes)
 
@@ -6334,6 +6406,10 @@ CMD ["irb"]
 
 ## `jruby:9.0.1.0-jdk`
 
+```console
+$ docker pull library/jruby@sha256:af678946cf821492b0e91770590793a1ba64c50bf13bcd9087a0f007220ab3a8
+```
+
 -	Total Virtual Size: 886.7 MB (886715218 bytes)
 -	Total v2 Content-Length: 355.5 MB (355456474 bytes)
 
@@ -6678,6 +6754,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `jruby:9-onbuild`
+
+```console
+$ docker pull library/jruby@sha256:7a5c4f7bc84d61fb9fd0ef1faae8361e59d959cfc73406a523bbdcda9cfae06b
+```
 
 -	Total Virtual Size: 886.7 MB (886715218 bytes)
 -	Total v2 Content-Length: 355.5 MB (355456762 bytes)
@@ -7108,6 +7188,10 @@ ONBUILD ADD . /usr/src/app
 
 ## `jruby:9.0-onbuild`
 
+```console
+$ docker pull library/jruby@sha256:a6d9b4e258811f5f848d275bfda221aaa044ca9bc7c557166bbf3e8f02a99319
+```
+
 -	Total Virtual Size: 886.7 MB (886715218 bytes)
 -	Total v2 Content-Length: 355.5 MB (355456762 bytes)
 
@@ -7537,6 +7621,10 @@ ONBUILD ADD . /usr/src/app
 
 ## `jruby:9.0.1-onbuild`
 
+```console
+$ docker pull library/jruby@sha256:175b932de4b31dfd89900ef9a537ef4da4c5d0062128cafff6bf8f616f6263f4
+```
+
 -	Total Virtual Size: 886.7 MB (886715218 bytes)
 -	Total v2 Content-Length: 355.5 MB (355456762 bytes)
 
@@ -7965,6 +8053,10 @@ ONBUILD ADD . /usr/src/app
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `jruby:9.0.1.0-onbuild`
+
+```console
+$ docker pull library/jruby@sha256:ff9b32263c4f63d000f001a0a0f1b6607f3f709d7cecdeb91223152f333bd9cf
+```
 
 -	Total Virtual Size: 886.7 MB (886715218 bytes)
 -	Total v2 Content-Length: 355.5 MB (355456762 bytes)

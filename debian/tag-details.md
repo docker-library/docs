@@ -28,6 +28,10 @@
 
 ## `debian:8.2`
 
+```console
+$ docker pull library/debian@sha256:b9e8aca1e118dbcd27aad99ae26a7cd0e9e6c5701a9fa59843a9622a954edcd5
+```
+
 -	Total Virtual Size: 125.2 MB (125159131 bytes)
 -	Total v2 Content-Length: 51.4 MB (51359740 bytes)
 
@@ -61,6 +65,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:8`
+
+```console
+$ docker pull library/debian@sha256:f5e3efecfdc762192d0a2b57c4061c1e3ca99d8de60b1d1a1aac6d28306d901d
+```
 
 -	Total Virtual Size: 125.2 MB (125159131 bytes)
 -	Total v2 Content-Length: 51.4 MB (51359740 bytes)
@@ -96,6 +104,10 @@ CMD ["/bin/bash"]
 
 ## `debian:jessie`
 
+```console
+$ docker pull library/debian@sha256:228d4781e7c60491e2852538e5931c7ccb15a2bbdc4f62f27e925bf77ed20a7f
+```
+
 -	Total Virtual Size: 125.2 MB (125159131 bytes)
 -	Total v2 Content-Length: 51.4 MB (51359740 bytes)
 
@@ -130,6 +142,10 @@ CMD ["/bin/bash"]
 
 ## `debian:latest`
 
+```console
+$ docker pull library/debian@sha256:d9168a2c1889b4c9d44952a23065c29b0656237909d618328275f42065602354
+```
+
 -	Total Virtual Size: 125.2 MB (125159131 bytes)
 -	Total v2 Content-Length: 51.4 MB (51359740 bytes)
 
@@ -163,6 +179,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:jessie-backports`
+
+```console
+$ docker pull library/debian@sha256:4538d66ca43e2c160735e4892e4046d6673edb41d6a05983bd42cbe6a6658f4c
+```
 
 -	Total Virtual Size: 125.2 MB (125159192 bytes)
 -	Total v2 Content-Length: 51.4 MB (51359960 bytes)
@@ -212,6 +232,10 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 
 ## `debian:oldstable`
 
+```console
+$ docker pull library/debian@sha256:a1dd0f6f3768f8fde2c329cea84b1b9b4a642f6cecd5cf92ea5f3cec7a3e3e9a
+```
+
 -	Total Virtual Size: 84.9 MB (84924782 bytes)
 -	Total v2 Content-Length: 37.2 MB (37191644 bytes)
 
@@ -245,6 +269,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:oldstable-backports`
+
+```console
+$ docker pull library/debian@sha256:b5d92f06a30078355ec5ecd96119e660f2a0e5b4f56b09b25bd2dcc2dd595715
+```
 
 -	Total Virtual Size: 84.9 MB (84924846 bytes)
 -	Total v2 Content-Length: 37.2 MB (37191867 bytes)
@@ -294,6 +322,10 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 
 ## `debian:sid`
 
+```console
+$ docker pull library/debian@sha256:0dca4872bbaca7162714175f273fee23b171cda41e0320b6c10415cca2697936
+```
+
 -	Total Virtual Size: 126.5 MB (126464067 bytes)
 -	Total v2 Content-Length: 53.0 MB (53015184 bytes)
 
@@ -327,6 +359,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:6.0.10`
+
+```console
+$ docker pull library/debian@sha256:53c41c53e3a7dd8b473d1e42bbda7c1ce102f45ccd7dda0c06762333bb67d84f
+```
 
 -	Total Virtual Size: 76.5 MB (76535900 bytes)
 -	Total v2 Content-Length: 33.8 MB (33842544 bytes)
@@ -362,6 +398,10 @@ CMD ["/bin/bash"]
 
 ## `debian:6.0`
 
+```console
+$ docker pull library/debian@sha256:6866e5efcca76771ce77543aaa59c94d6bcfccbb442b343340b5b6925a9f8bf1
+```
+
 -	Total Virtual Size: 76.5 MB (76535900 bytes)
 -	Total v2 Content-Length: 33.8 MB (33842544 bytes)
 
@@ -395,6 +435,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:6`
+
+```console
+$ docker pull library/debian@sha256:aa5df2a0dcbc378986fce96822855b4a77a78b4b1480e87506392e25f46ef399
+```
 
 -	Total Virtual Size: 76.5 MB (76535900 bytes)
 -	Total v2 Content-Length: 33.8 MB (33842544 bytes)
@@ -430,6 +474,10 @@ CMD ["/bin/bash"]
 
 ## `debian:squeeze`
 
+```console
+$ docker pull library/debian@sha256:6a6a49b3383c59b761d59c942fbaa721ef426f7c2b076edbb1305e3fceccab34
+```
+
 -	Total Virtual Size: 76.5 MB (76535900 bytes)
 -	Total v2 Content-Length: 33.8 MB (33842544 bytes)
 
@@ -464,6 +512,10 @@ CMD ["/bin/bash"]
 
 ## `debian:stable`
 
+```console
+$ docker pull library/debian@sha256:2ee35f51e54da93075fe46631a28d84ef4e23eb4ca51e7a8ef9f9ba625e7f6be
+```
+
 -	Total Virtual Size: 125.2 MB (125177528 bytes)
 -	Total v2 Content-Length: 51.4 MB (51360871 bytes)
 
@@ -497,6 +549,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:stable-backports`
+
+```console
+$ docker pull library/debian@sha256:06f8a76ec816cd2d33ca159a6ecfccda54e7514477b0b09d94a979cf937561f6
+```
 
 -	Total Virtual Size: 125.2 MB (125177589 bytes)
 -	Total v2 Content-Length: 51.4 MB (51361091 bytes)
@@ -546,6 +602,10 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 
 ## `debian:stretch`
 
+```console
+$ docker pull library/debian@sha256:4dd9913ddb1d2bde20e82cb09d97004bc1cafb5d8f3bf7c96013b140df7ae597
+```
+
 -	Total Virtual Size: 126.0 MB (126046560 bytes)
 -	Total v2 Content-Length: 52.8 MB (52812607 bytes)
 
@@ -579,6 +639,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:testing`
+
+```console
+$ docker pull library/debian@sha256:9206835bcdbb969b439d5f9a5466a152c34e074a1d133bf07ac65c67ace657cb
+```
 
 -	Total Virtual Size: 126.0 MB (126046560 bytes)
 -	Total v2 Content-Length: 52.8 MB (52812779 bytes)
@@ -614,6 +678,10 @@ CMD ["/bin/bash"]
 
 ## `debian:unstable`
 
+```console
+$ docker pull library/debian@sha256:9442f7ffbe20e77b0eab25bb70c96d60504a894bd78a65bbe72750b82fa3e3da
+```
+
 -	Total Virtual Size: 126.5 MB (126464072 bytes)
 -	Total v2 Content-Length: 53.0 MB (53015430 bytes)
 
@@ -647,6 +715,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:7.9`
+
+```console
+$ docker pull library/debian@sha256:7d51b910a3e1e3a72386b9f1a7ef830a1b222746217f1a94eff64456efbc7702
+```
 
 -	Total Virtual Size: 84.9 MB (84924773 bytes)
 -	Total v2 Content-Length: 37.2 MB (37191793 bytes)
@@ -682,6 +754,10 @@ CMD ["/bin/bash"]
 
 ## `debian:7`
 
+```console
+$ docker pull library/debian@sha256:0003fe088bfee9baabf59de886654da93375b8ba55d4002a983669393ee1ef25
+```
+
 -	Total Virtual Size: 84.9 MB (84924773 bytes)
 -	Total v2 Content-Length: 37.2 MB (37191793 bytes)
 
@@ -716,6 +792,10 @@ CMD ["/bin/bash"]
 
 ## `debian:wheezy`
 
+```console
+$ docker pull library/debian@sha256:90de9d4ecb9c954bdacd9fbcc58b431864e8023e42f8cc21782f2107054344e1
+```
+
 -	Total Virtual Size: 84.9 MB (84924773 bytes)
 -	Total v2 Content-Length: 37.2 MB (37191793 bytes)
 
@@ -749,6 +829,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:wheezy-backports`
+
+```console
+$ docker pull library/debian@sha256:ccf4d746ec6df148d9238eb36290082b016079188a9b17910ac05390d6f8af47
+```
 
 -	Total Virtual Size: 84.9 MB (84924834 bytes)
 -	Total v2 Content-Length: 37.2 MB (37192016 bytes)
@@ -798,6 +882,10 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 
 ## `debian:rc-buggy`
 
+```console
+$ docker pull library/debian@sha256:b314adc7561dbac04727a73f47fd81c7f5ce42aa7a8498f6181d6826d6b63fb5
+```
+
 -	Total Virtual Size: 126.5 MB (126464120 bytes)
 -	Total v2 Content-Length: 53.0 MB (53015405 bytes)
 
@@ -845,6 +933,10 @@ RUN awk '$1 ~ "^deb" { $3 = "rc-buggy"; print; exit }' /etc/apt/sources.list > /
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:47:22 GMT
 
 ## `debian:experimental`
+
+```console
+$ docker pull library/debian@sha256:558b5a8a13ba2a8958f570ba6ca8c2643784c30a9325136dc6b707611b13a536
+```
 
 -	Total Virtual Size: 126.5 MB (126464129 bytes)
 -	Total v2 Content-Length: 53.0 MB (53015647 bytes)

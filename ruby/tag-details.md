@@ -32,6 +32,10 @@
 
 ## `ruby:2.0.0-p647`
 
+```console
+$ docker pull library/ruby@sha256:66d1fdc1977525eee6dbcc56fe115dbbd38cb1b5ac41aacb7f7acef9436e9639
+```
+
 -	Total Virtual Size: 706.2 MB (706209032 bytes)
 -	Total v2 Content-Length: 269.7 MB (269725159 bytes)
 
@@ -337,6 +341,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2.0.0`
+
+```console
+$ docker pull library/ruby@sha256:fa37f99784ea906a44a24e5a31b7cae0200a1ca22f6724a4c7e92e0022348041
+```
 
 -	Total Virtual Size: 706.2 MB (706209032 bytes)
 -	Total v2 Content-Length: 269.7 MB (269725159 bytes)
@@ -644,6 +652,10 @@ CMD ["irb"]
 
 ## `ruby:2.0`
 
+```console
+$ docker pull library/ruby@sha256:ba617f5b8cf32086415035f87a8800018124742d10096b036f12263e626c88f0
+```
+
 -	Total Virtual Size: 706.2 MB (706209032 bytes)
 -	Total v2 Content-Length: 269.7 MB (269725159 bytes)
 
@@ -949,6 +961,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2.0.0-p647-onbuild`
+
+```console
+$ docker pull library/ruby@sha256:b5a43697dddf763312b2c6c0d35210dfddff868d44cbc3dda0cee6a59638ff77
+```
 
 -	Total Virtual Size: 706.2 MB (706209120 bytes)
 -	Total v2 Content-Length: 269.7 MB (269725661 bytes)
@@ -1354,6 +1370,10 @@ ONBUILD COPY . /usr/src/app
 
 ## `ruby:2.0.0-onbuild`
 
+```console
+$ docker pull library/ruby@sha256:0658c46c5861a7be00d3eae45bb0aff358bf9318a04d7620a6876c6332eee933
+```
+
 -	Total Virtual Size: 706.2 MB (706209120 bytes)
 -	Total v2 Content-Length: 269.7 MB (269725661 bytes)
 
@@ -1757,6 +1777,10 @@ ONBUILD COPY . /usr/src/app
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2.0-onbuild`
+
+```console
+$ docker pull library/ruby@sha256:0448407887b2f9b55698764dec3efb2808b90d2fa3b3735077f003e201efa60c
+```
 
 -	Total Virtual Size: 706.2 MB (706209120 bytes)
 -	Total v2 Content-Length: 269.7 MB (269725661 bytes)
@@ -2162,6 +2186,10 @@ ONBUILD COPY . /usr/src/app
 
 ## `ruby:2.0.0-p647-slim`
 
+```console
+$ docker pull library/ruby@sha256:a0a0109ba06ee16f03a51e49513b366425bd3a3fbdf84b737fdf314707dce3f8
+```
+
 -	Total Virtual Size: 263.5 MB (263474537 bytes)
 -	Total v2 Content-Length: 94.1 MB (94117932 bytes)
 
@@ -2404,6 +2432,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2.0.0-slim`
+
+```console
+$ docker pull library/ruby@sha256:cef48ee0f1d4d001664f4284b7e853bc1eb4cb39dd4cdf36d216f288bf4ed556
+```
 
 -	Total Virtual Size: 263.5 MB (263474537 bytes)
 -	Total v2 Content-Length: 94.1 MB (94117932 bytes)
@@ -2648,6 +2680,10 @@ CMD ["irb"]
 
 ## `ruby:2.0-slim`
 
+```console
+$ docker pull library/ruby@sha256:63de50373fb45937a02da677612a0f4318f2bc25f25682b52d1be4631a4e5449
+```
+
 -	Total Virtual Size: 263.5 MB (263474537 bytes)
 -	Total v2 Content-Length: 94.1 MB (94117932 bytes)
 
@@ -2890,6 +2926,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2.1.7`
+
+```console
+$ docker pull library/ruby@sha256:ddb18154bfe3fc054573d2821066f089e9c8e061067ee3f75df796150db2ad16
+```
 
 -	Total Virtual Size: 717.9 MB (717884486 bytes)
 -	Total v2 Content-Length: 273.1 MB (273080250 bytes)
@@ -3197,6 +3237,10 @@ CMD ["irb"]
 
 ## `ruby:2.1`
 
+```console
+$ docker pull library/ruby@sha256:73652f2e6f45a52400a483e4733e19198a020ef79441b86446609feae24b0b38
+```
+
 -	Total Virtual Size: 717.9 MB (717884486 bytes)
 -	Total v2 Content-Length: 273.1 MB (273080250 bytes)
 
@@ -3502,6 +3546,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2.1.7-onbuild`
+
+```console
+$ docker pull library/ruby@sha256:761d697829aa86af00ff7e729b8cf308e6cdd9ae6217d51627859636e137c7c6
+```
 
 -	Total Virtual Size: 717.9 MB (717884578 bytes)
 -	Total v2 Content-Length: 273.1 MB (273080757 bytes)
@@ -3907,6 +3955,10 @@ ONBUILD COPY . /usr/src/app
 
 ## `ruby:2.1-onbuild`
 
+```console
+$ docker pull library/ruby@sha256:4225ea955e57436521bf15080e2689178a216478ac51ec3012603a4f21023dea
+```
+
 -	Total Virtual Size: 717.9 MB (717884578 bytes)
 -	Total v2 Content-Length: 273.1 MB (273080757 bytes)
 
@@ -4311,6 +4363,10 @@ ONBUILD COPY . /usr/src/app
 
 ## `ruby:2.1.7-slim`
 
+```console
+$ docker pull library/ruby@sha256:1a3ac0d749fbf8f54d3ec3b9a317502dad1e137fd22ab90a447a30bf80ddddc5
+```
+
 -	Total Virtual Size: 275.1 MB (275149979 bytes)
 -	Total v2 Content-Length: 97.5 MB (97469128 bytes)
 
@@ -4554,6 +4610,10 @@ CMD ["irb"]
 
 ## `ruby:2.1-slim`
 
+```console
+$ docker pull library/ruby@sha256:20ef2872b3c91794ddb72c87dbbfbc96c210f1961dddb0db0da211a84bfc9d9a
+```
+
 -	Total Virtual Size: 275.1 MB (275149979 bytes)
 -	Total v2 Content-Length: 97.5 MB (97469128 bytes)
 
@@ -4796,6 +4856,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2.2.3`
+
+```console
+$ docker pull library/ruby@sha256:f97bdb6780f6badfa2733236ff657f36b104eb158cf31eb083f603ab828676c7
+```
 
 -	Total Virtual Size: 717.9 MB (717878507 bytes)
 -	Total v2 Content-Length: 273.6 MB (273581460 bytes)
@@ -5103,6 +5167,10 @@ CMD ["irb"]
 
 ## `ruby:2.2`
 
+```console
+$ docker pull library/ruby@sha256:dca5c4ed99a7ac4504e5e5cc3028054669b07335c000c58dd179270e5c5ee829
+```
+
 -	Total Virtual Size: 717.9 MB (717878507 bytes)
 -	Total v2 Content-Length: 273.6 MB (273581460 bytes)
 
@@ -5408,6 +5476,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2`
+
+```console
+$ docker pull library/ruby@sha256:7f7ebfaac3a1c270048885734f99465df53f976fb64f844c9dfe49373d95f140
+```
 
 -	Total Virtual Size: 717.9 MB (717878507 bytes)
 -	Total v2 Content-Length: 273.6 MB (273581460 bytes)
@@ -5715,6 +5787,10 @@ CMD ["irb"]
 
 ## `ruby:latest`
 
+```console
+$ docker pull library/ruby@sha256:e24a9e2c6ddd61a3dd7a785696f25562f7fe103070c261a82ddc5b2a109d1254
+```
+
 -	Total Virtual Size: 717.9 MB (717878507 bytes)
 -	Total v2 Content-Length: 273.6 MB (273581460 bytes)
 
@@ -6020,6 +6096,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2.2.3-onbuild`
+
+```console
+$ docker pull library/ruby@sha256:0effc146e1821d84c52b0254a8e4cb7ebfb08113ff99f3db061c5c15f39eab7e
+```
 
 -	Total Virtual Size: 717.9 MB (717878599 bytes)
 -	Total v2 Content-Length: 273.6 MB (273581966 bytes)
@@ -6425,6 +6505,10 @@ ONBUILD COPY . /usr/src/app
 
 ## `ruby:2.2-onbuild`
 
+```console
+$ docker pull library/ruby@sha256:d40f11718a7e3fba7dad3eb2b40579ed947c7dcb83374c40e24d44849fe08907
+```
+
 -	Total Virtual Size: 717.9 MB (717878599 bytes)
 -	Total v2 Content-Length: 273.6 MB (273581966 bytes)
 
@@ -6828,6 +6912,10 @@ ONBUILD COPY . /usr/src/app
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2-onbuild`
+
+```console
+$ docker pull library/ruby@sha256:f73ba2118e3c8fd0a0f8cc099ad6b30867c28be64cf5208081340e3aa6a5d80b
+```
 
 -	Total Virtual Size: 717.9 MB (717878599 bytes)
 -	Total v2 Content-Length: 273.6 MB (273581966 bytes)
@@ -7233,6 +7321,10 @@ ONBUILD COPY . /usr/src/app
 
 ## `ruby:onbuild`
 
+```console
+$ docker pull library/ruby@sha256:a2d8eb25711dcf8ee0a640ad459b5d79b538f6fc1088920b3d211a7d4ded30e0
+```
+
 -	Total Virtual Size: 717.9 MB (717878599 bytes)
 -	Total v2 Content-Length: 273.6 MB (273581966 bytes)
 
@@ -7637,6 +7729,10 @@ ONBUILD COPY . /usr/src/app
 
 ## `ruby:2.2.3-slim`
 
+```console
+$ docker pull library/ruby@sha256:3bf64f78d9f2ed8734a68c05a6241db0e2ac9d92e97144565135ea47523ddc31
+```
+
 -	Total Virtual Size: 275.1 MB (275143988 bytes)
 -	Total v2 Content-Length: 98.0 MB (97987994 bytes)
 
@@ -7879,6 +7975,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:2.2-slim`
+
+```console
+$ docker pull library/ruby@sha256:097b5a5c13b1526fc1bb5f4c496c2e11d7fe2fa65e27cea868aeba45511551ae
+```
 
 -	Total Virtual Size: 275.1 MB (275143988 bytes)
 -	Total v2 Content-Length: 98.0 MB (97987994 bytes)
@@ -8123,6 +8223,10 @@ CMD ["irb"]
 
 ## `ruby:2-slim`
 
+```console
+$ docker pull library/ruby@sha256:ba5059e511806e83f08da3a18cfd80bc19193d05e5cc6cdb94ef57426f93182a
+```
+
 -	Total Virtual Size: 275.1 MB (275143988 bytes)
 -	Total v2 Content-Length: 98.0 MB (97987994 bytes)
 
@@ -8365,6 +8469,10 @@ CMD ["irb"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ruby:slim`
+
+```console
+$ docker pull library/ruby@sha256:38b199c00edd55d3d10713fab953373dc9f87583948110e54dde2d9d9ff35b0a
+```
 
 -	Total Virtual Size: 275.1 MB (275143988 bytes)
 -	Total v2 Content-Length: 98.0 MB (97987994 bytes)

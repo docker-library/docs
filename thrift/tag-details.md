@@ -8,6 +8,10 @@
 
 ## `thrift:0.9`
 
+```console
+$ docker pull library/thrift@sha256:ead565e85211dd91a9623cebb60990b770fa71923f4e36c7158ca505498af0a9
+```
+
 -	Total Virtual Size: 135.2 MB (135177096 bytes)
 -	Total v2 Content-Length: 48.5 MB (48477245 bytes)
 
@@ -131,6 +135,10 @@ CMD ["thrift"]
 
 ## `thrift:0.9.2`
 
+```console
+$ docker pull library/thrift@sha256:c908cd63a52a0b9cd4575b5f5990f28f944c4866a755bf4427d8ab1490d39fde
+```
+
 -	Total Virtual Size: 135.2 MB (135177096 bytes)
 -	Total v2 Content-Length: 48.5 MB (48477245 bytes)
 
@@ -253,6 +261,10 @@ CMD ["thrift"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `thrift:latest`
+
+```console
+$ docker pull library/thrift@sha256:b2de87bdc2c78de9a24451efcfd550422ebfeb1ee1dfa878302c966cb58fd613
+```
 
 -	Total Virtual Size: 135.2 MB (135177096 bytes)
 -	Total v2 Content-Length: 48.5 MB (48477245 bytes)

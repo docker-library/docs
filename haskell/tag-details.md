@@ -11,6 +11,10 @@
 
 ## `haskell:7.10.2`
 
+```console
+$ docker pull library/haskell@sha256:25001b8085cdd26ff13e5c9649a05cd5b5c54914de714ec6be04a925c57c4e55
+```
+
 -	Total Virtual Size: 714.0 MB (714031667 bytes)
 -	Total v2 Content-Length: 174.4 MB (174394057 bytes)
 
@@ -119,6 +123,10 @@ CMD ["ghci"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `haskell:7.10`
+
+```console
+$ docker pull library/haskell@sha256:8247abbefef61788da94b43c99f56e7a01045de0103d1fc3bef6f75c1cf21670
+```
 
 -	Total Virtual Size: 714.0 MB (714031667 bytes)
 -	Total v2 Content-Length: 174.4 MB (174394057 bytes)
@@ -229,6 +237,10 @@ CMD ["ghci"]
 
 ## `haskell:7`
 
+```console
+$ docker pull library/haskell@sha256:80b89e1a1566a8b8484c0e9b8cc5dcca943de27d9c3157c418409a36ae0ebe6d
+```
+
 -	Total Virtual Size: 714.0 MB (714031667 bytes)
 -	Total v2 Content-Length: 174.4 MB (174394057 bytes)
 
@@ -337,6 +349,10 @@ CMD ["ghci"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `haskell:latest`
+
+```console
+$ docker pull library/haskell@sha256:2a86ed50068c7974f7338c81040e8d62f11eb271904cb5e56b84cebb273515d4
+```
 
 -	Total Virtual Size: 714.0 MB (714031667 bytes)
 -	Total v2 Content-Length: 174.4 MB (174394057 bytes)
@@ -447,6 +463,10 @@ CMD ["ghci"]
 
 ## `haskell:7.8.4`
 
+```console
+$ docker pull library/haskell@sha256:5c10fe64528feacabf3f88f003cc007e0bbe206ff381f51e9763daffc5e904fa
+```
+
 -	Total Virtual Size: 647.9 MB (647870486 bytes)
 -	Total v2 Content-Length: 164.4 MB (164405007 bytes)
 
@@ -555,6 +575,10 @@ CMD ["ghci"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `haskell:7.8`
+
+```console
+$ docker pull library/haskell@sha256:f33bcfc0d88baacd7647c00ef089326afdd0032b630d07f79c16db622340a127
+```
 
 -	Total Virtual Size: 647.9 MB (647870486 bytes)
 -	Total v2 Content-Length: 164.4 MB (164405007 bytes)

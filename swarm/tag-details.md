@@ -7,6 +7,10 @@
 
 ## `swarm:0.4.0`
 
+```console
+$ docker pull library/swarm@sha256:3371b6783215db2657a2e4d4366b760d5be14cd573ecb14abc494cda8e01e971
+```
+
 -	Total Virtual Size: 10.2 MB (10195476 bytes)
 -	Total v2 Content-Length: 2.8 MB (2825181 bytes)
 
@@ -124,6 +128,10 @@ CMD ["--help"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `swarm:latest`
+
+```console
+$ docker pull library/swarm@sha256:1502dd0c1d778d4f5e75d47820dd858ac1f67aa59c178f3244de17ccbde0067f
+```
 
 -	Total Virtual Size: 10.2 MB (10195476 bytes)
 -	Total v2 Content-Length: 2.8 MB (2825181 bytes)

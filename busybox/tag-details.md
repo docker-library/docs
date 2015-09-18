@@ -10,6 +10,10 @@
 
 ## `busybox:buildroot-2013.08.1`
 
+```console
+$ docker pull library/busybox@sha256:4eccca494e527311eb4a4ebee1f90d9362971d882bb22fd7ded46d517129b1ac
+```
+
 -	Total Virtual Size: 2.5 MB (2489301 bytes)
 -	Total v2 Content-Length: 1.2 MB (1160839 bytes)
 
@@ -57,6 +61,10 @@ CMD ["/bin/sh"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `busybox:buildroot-2014.02`
+
+```console
+$ docker pull library/busybox@sha256:f8cdcf3eb8fac77a9b24f37bc440feea024a5d3ec9a33f1d0a4c42c5df6a49c3
+```
 
 -	Total Virtual Size: 2.4 MB (2433303 bytes)
 -	Total v2 Content-Length: 1.1 MB (1145133 bytes)
@@ -106,6 +114,10 @@ CMD ["/bin/sh"]
 
 ## `busybox:latest`
 
+```console
+$ docker pull library/busybox@sha256:c451012efb6e79b9cf93f48a326a195acfcdf01cadf4271d678d03e031c214d3
+```
+
 -	Total Virtual Size: 2.4 MB (2433303 bytes)
 -	Total v2 Content-Length: 1.1 MB (1145133 bytes)
 
@@ -154,6 +166,10 @@ CMD ["/bin/sh"]
 
 ## `busybox:ubuntu-12.04`
 
+```console
+$ docker pull library/busybox@sha256:9f44ce28d99752c237d942e865104adb86a2170822f5c6f5f028a44eb123b7d7
+```
+
 -	Total Virtual Size: 5.5 MB (5454693 bytes)
 -	Total v2 Content-Length: 2.7 MB (2663851 bytes)
 
@@ -201,6 +217,10 @@ CMD ["/bin/sh"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `busybox:ubuntu-14.04`
+
+```console
+$ docker pull library/busybox@sha256:7d3ce4e482101f0c484602dd6687c826bb8bef6295739088c58e84245845912e
+```
 
 -	Total Virtual Size: 5.6 MB (5609404 bytes)
 -	Total v2 Content-Length: 2.8 MB (2786550 bytes)

@@ -7,6 +7,10 @@
 
 ## `kaazing-gateway:latest`
 
+```console
+$ docker pull library/kaazing-gateway@sha256:51f404d6c1b2907c5a347df9bc9a785013748bb3c83235cf69f6de4361310c10
+```
+
 -	Total Virtual Size: 840.7 MB (840700488 bytes)
 -	Total v2 Content-Length: 326.9 MB (326932326 bytes)
 
@@ -339,6 +343,10 @@ CMD ["gateway.start"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kaazing-gateway:5.0.1.21`
+
+```console
+$ docker pull library/kaazing-gateway@sha256:acc08adf8b1b1ebcc14e5f45e75388f0368c7f337553b8c40da6eab6a60cf14d
+```
 
 -	Total Virtual Size: 840.7 MB (840700488 bytes)
 -	Total v2 Content-Length: 326.9 MB (326932326 bytes)

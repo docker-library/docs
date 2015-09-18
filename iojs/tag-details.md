@@ -35,6 +35,10 @@
 
 ## `iojs:1.8.4`
 
+```console
+$ docker pull library/iojs@sha256:74ce8d152cdc0c1c60693bebb915016722c7b94c9574796b81c6645c18afbf1b
+```
+
 -	Total Virtual Size: 634.3 MB (634263704 bytes)
 -	Total v2 Content-Length: 249.6 MB (249647017 bytes)
 
@@ -232,6 +236,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:1.8`
+
+```console
+$ docker pull library/iojs@sha256:f144148bafb66aeb6b111d71c348c602915d8ede03e23889c47948ed088a3899
+```
 
 -	Total Virtual Size: 634.3 MB (634263704 bytes)
 -	Total v2 Content-Length: 249.6 MB (249647017 bytes)
@@ -431,6 +439,10 @@ CMD ["iojs"]
 
 ## `iojs:1`
 
+```console
+$ docker pull library/iojs@sha256:f52025ee7ce351d63e10f60d24aed03d075c5f78dd1709edd3ee4a2bd400a0d1
+```
+
 -	Total Virtual Size: 634.3 MB (634263704 bytes)
 -	Total v2 Content-Length: 249.6 MB (249647017 bytes)
 
@@ -628,6 +640,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:1.8.4-onbuild`
+
+```console
+$ docker pull library/iojs@sha256:13a8c6c4043ebd416042cbb9aac50b06f8ba3774c43e7494ff2359799a835170
+```
 
 -	Total Virtual Size: 634.3 MB (634263704 bytes)
 -	Total v2 Content-Length: 249.6 MB (249647305 bytes)
@@ -911,6 +927,10 @@ CMD ["npm" "start"]
 
 ## `iojs:1.8-onbuild`
 
+```console
+$ docker pull library/iojs@sha256:ca17a1e9d45e77be4daf1d4dbd6fbdb3b66d6d6d470ee79563d2bcc92d291faa
+```
+
 -	Total Virtual Size: 634.3 MB (634263704 bytes)
 -	Total v2 Content-Length: 249.6 MB (249647305 bytes)
 
@@ -1192,6 +1212,10 @@ CMD ["npm" "start"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:1-onbuild`
+
+```console
+$ docker pull library/iojs@sha256:fcf2f8c61462d0fcbbd1e7a56ae7a2a71645f2fb7bebc45103389c91349f5baa
+```
 
 -	Total Virtual Size: 634.3 MB (634263704 bytes)
 -	Total v2 Content-Length: 249.6 MB (249647305 bytes)
@@ -1475,6 +1499,10 @@ CMD ["npm" "start"]
 
 ## `iojs:1.8.4-slim`
 
+```console
+$ docker pull library/iojs@sha256:fefe97c6075e1c497ca2ad48d1df7a4db6dc4ed3006ea180901e419535984a4a
+```
+
 -	Total Virtual Size: 197.3 MB (197293565 bytes)
 -	Total v2 Content-Length: 78.8 MB (78776351 bytes)
 
@@ -1603,6 +1631,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:1.8-slim`
+
+```console
+$ docker pull library/iojs@sha256:ce4a847f9b39037a51dc8f70d7db53042dfde381242bc1ed78ca3421019664f5
+```
 
 -	Total Virtual Size: 197.3 MB (197293565 bytes)
 -	Total v2 Content-Length: 78.8 MB (78776351 bytes)
@@ -1733,6 +1765,10 @@ CMD ["iojs"]
 
 ## `iojs:1-slim`
 
+```console
+$ docker pull library/iojs@sha256:f386629f9c6766e6779fc41a11479e6fcf116937290b52eba02139100c26c131
+```
+
 -	Total Virtual Size: 197.3 MB (197293565 bytes)
 -	Total v2 Content-Length: 78.8 MB (78776351 bytes)
 
@@ -1861,6 +1897,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:2.5.0`
+
+```console
+$ docker pull library/iojs@sha256:72c1c26df49c61c24cde00556beb8ee29ecaa98a632e16772de2d61d55367966
+```
 
 -	Total Virtual Size: 635.5 MB (635457324 bytes)
 -	Total v2 Content-Length: 250.0 MB (250040183 bytes)
@@ -2060,6 +2100,10 @@ CMD ["iojs"]
 
 ## `iojs:2.5`
 
+```console
+$ docker pull library/iojs@sha256:30bcbc0eaf3795979dd6fb4d8d0ff6fd78515d168f714976ca417c18529f36ab
+```
+
 -	Total Virtual Size: 635.5 MB (635457324 bytes)
 -	Total v2 Content-Length: 250.0 MB (250040183 bytes)
 
@@ -2258,6 +2302,10 @@ CMD ["iojs"]
 
 ## `iojs:2`
 
+```console
+$ docker pull library/iojs@sha256:e04538f850fc6758cf5de60d9f9e40503d540cfcdc255eb5431fa43e78d684c4
+```
+
 -	Total Virtual Size: 635.5 MB (635457324 bytes)
 -	Total v2 Content-Length: 250.0 MB (250040183 bytes)
 
@@ -2455,6 +2503,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:2.5.0-onbuild`
+
+```console
+$ docker pull library/iojs@sha256:262754c1fd11193bdeaa899ee799175d689342d5f5d6749fcf9fae58c8b062b5
+```
 
 -	Total Virtual Size: 635.5 MB (635457324 bytes)
 -	Total v2 Content-Length: 250.0 MB (250040470 bytes)
@@ -2738,6 +2790,10 @@ CMD ["npm" "start"]
 
 ## `iojs:2.5-onbuild`
 
+```console
+$ docker pull library/iojs@sha256:0635177e0534f109df2e1acc651eb0d6d92b742fae9c5db7d244ce747dc582f8
+```
+
 -	Total Virtual Size: 635.5 MB (635457324 bytes)
 -	Total v2 Content-Length: 250.0 MB (250040470 bytes)
 
@@ -3019,6 +3075,10 @@ CMD ["npm" "start"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:2-onbuild`
+
+```console
+$ docker pull library/iojs@sha256:c0d2aca00d3d886ec2b54b038f9acd569379f37ae6e7c947f6fa3d5807c0cff6
+```
 
 -	Total Virtual Size: 635.5 MB (635457324 bytes)
 -	Total v2 Content-Length: 250.0 MB (250040470 bytes)
@@ -3302,6 +3362,10 @@ CMD ["npm" "start"]
 
 ## `iojs:2.5.0-slim`
 
+```console
+$ docker pull library/iojs@sha256:d9d15daf807498c44e7c485605eff75ee99fd6b04540459370cdc7c8501ef704
+```
+
 -	Total Virtual Size: 198.5 MB (198487185 bytes)
 -	Total v2 Content-Length: 79.2 MB (79169527 bytes)
 
@@ -3430,6 +3494,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:2.5-slim`
+
+```console
+$ docker pull library/iojs@sha256:4b7756dbfe68fb64185d3052cfe7d707c8b7dc32f4b9483d4cf56fa8ad3c180b
+```
 
 -	Total Virtual Size: 198.5 MB (198487185 bytes)
 -	Total v2 Content-Length: 79.2 MB (79169527 bytes)
@@ -3560,6 +3628,10 @@ CMD ["iojs"]
 
 ## `iojs:2-slim`
 
+```console
+$ docker pull library/iojs@sha256:21426d90302c4a886403de4628300c3727c44d51f4ed2ee5c03aea91457bde8f
+```
+
 -	Total Virtual Size: 198.5 MB (198487185 bytes)
 -	Total v2 Content-Length: 79.2 MB (79169527 bytes)
 
@@ -3688,6 +3760,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:3.3.0`
+
+```console
+$ docker pull library/iojs@sha256:e9d7cba25cf9a796789ce1c0c322a85fa9a6bb0fedc782b75dce441fb13d99e1
+```
 
 -	Total Virtual Size: 641.2 MB (641174444 bytes)
 -	Total v2 Content-Length: 252.3 MB (252271245 bytes)
@@ -3887,6 +3963,10 @@ CMD ["iojs"]
 
 ## `iojs:3.3`
 
+```console
+$ docker pull library/iojs@sha256:f1c4292fe312b3eca00528edb196c6def69431d0e94ffe1b29ec420f5908c6a0
+```
+
 -	Total Virtual Size: 641.2 MB (641174444 bytes)
 -	Total v2 Content-Length: 252.3 MB (252271245 bytes)
 
@@ -4084,6 +4164,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:3`
+
+```console
+$ docker pull library/iojs@sha256:18107f13115caa7896fda263e97cdeb8b37be2f369f08c143b517bd88f79051c
+```
 
 -	Total Virtual Size: 641.2 MB (641174444 bytes)
 -	Total v2 Content-Length: 252.3 MB (252271245 bytes)
@@ -4283,6 +4367,10 @@ CMD ["iojs"]
 
 ## `iojs:latest`
 
+```console
+$ docker pull library/iojs@sha256:1906ecbe478a5bfa5f7860279d37b8dbdf89af2ea3970181692afa290d5cd9ad
+```
+
 -	Total Virtual Size: 641.2 MB (641174444 bytes)
 -	Total v2 Content-Length: 252.3 MB (252271245 bytes)
 
@@ -4480,6 +4568,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:3.3.0-onbuild`
+
+```console
+$ docker pull library/iojs@sha256:63360866bf0b448c9cbe0d0c89cdb25a4c2cb576d092f2e0e0898974b53983df
+```
 
 -	Total Virtual Size: 641.2 MB (641174444 bytes)
 -	Total v2 Content-Length: 252.3 MB (252271531 bytes)
@@ -4763,6 +4855,10 @@ CMD ["npm" "start"]
 
 ## `iojs:3.3-onbuild`
 
+```console
+$ docker pull library/iojs@sha256:0116f3445f55b9774ca977512d672a4516e244a902f18d44bf5627b66ae64f41
+```
+
 -	Total Virtual Size: 641.2 MB (641174444 bytes)
 -	Total v2 Content-Length: 252.3 MB (252271531 bytes)
 
@@ -5044,6 +5140,10 @@ CMD ["npm" "start"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:3-onbuild`
+
+```console
+$ docker pull library/iojs@sha256:00b02aa010b934311b9b7ae747a8eb7e33750d9236b2dba0096215b7bb5ac9bd
+```
 
 -	Total Virtual Size: 641.2 MB (641174444 bytes)
 -	Total v2 Content-Length: 252.3 MB (252271531 bytes)
@@ -5327,6 +5427,10 @@ CMD ["npm" "start"]
 
 ## `iojs:onbuild`
 
+```console
+$ docker pull library/iojs@sha256:44bc2038fae76bf5e211b669c570b06bca44930cdc2f51ab802c1a01b987522d
+```
+
 -	Total Virtual Size: 641.2 MB (641174444 bytes)
 -	Total v2 Content-Length: 252.3 MB (252271531 bytes)
 
@@ -5609,6 +5713,10 @@ CMD ["npm" "start"]
 
 ## `iojs:3.3.0-slim`
 
+```console
+$ docker pull library/iojs@sha256:e5f2a22e3e338666d3007c030b0ed0f763794b717d6db83221c04197f307c4d6
+```
+
 -	Total Virtual Size: 204.2 MB (204204305 bytes)
 -	Total v2 Content-Length: 81.4 MB (81400599 bytes)
 
@@ -5737,6 +5845,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:3.3-slim`
+
+```console
+$ docker pull library/iojs@sha256:1b9d1e203a480a8df388a763b5f20f91d03372dead44ea2279004deeddeddecd
+```
 
 -	Total Virtual Size: 204.2 MB (204204305 bytes)
 -	Total v2 Content-Length: 81.4 MB (81400599 bytes)
@@ -5867,6 +5979,10 @@ CMD ["iojs"]
 
 ## `iojs:3-slim`
 
+```console
+$ docker pull library/iojs@sha256:b379fbc16b8509cd5865daf3391d733bc80b9b522051dfe6fd672897f6d08796
+```
+
 -	Total Virtual Size: 204.2 MB (204204305 bytes)
 -	Total v2 Content-Length: 81.4 MB (81400599 bytes)
 
@@ -5995,6 +6111,10 @@ CMD ["iojs"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `iojs:slim`
+
+```console
+$ docker pull library/iojs@sha256:48b83ef88d4844e1a6b8aa1c1535c91f754c6f0fef5931c2586d601d25b13493
+```
 
 -	Total Virtual Size: 204.2 MB (204204305 bytes)
 -	Total v2 Content-Length: 81.4 MB (81400599 bytes)

@@ -13,6 +13,10 @@
 
 ## `rabbitmq:3.5.4`
 
+```console
+$ docker pull library/rabbitmq@sha256:42d02f57fe9a4dc50c48e44d31f67f9c823b798a7ebf26c78ec5b605def4baf9
+```
+
 -	Total Virtual Size: 143.4 MB (143442355 bytes)
 -	Total v2 Content-Length: 73.2 MB (73164257 bytes)
 
@@ -333,6 +337,10 @@ CMD ["rabbitmq-server"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `rabbitmq:3.5`
+
+```console
+$ docker pull library/rabbitmq@sha256:607eb038e15694272da19bbd5ace0358fa0b6dbfc1e82e08132051c7d56ac521
+```
 
 -	Total Virtual Size: 143.4 MB (143442355 bytes)
 -	Total v2 Content-Length: 73.2 MB (73164257 bytes)
@@ -655,6 +663,10 @@ CMD ["rabbitmq-server"]
 
 ## `rabbitmq:3`
 
+```console
+$ docker pull library/rabbitmq@sha256:b96f8d80f92dd9d2d88d6845833256694260bfae339bb5fb30b465ec80e49ffe
+```
+
 -	Total Virtual Size: 143.4 MB (143442355 bytes)
 -	Total v2 Content-Length: 73.2 MB (73164257 bytes)
 
@@ -976,6 +988,10 @@ CMD ["rabbitmq-server"]
 
 ## `rabbitmq:latest`
 
+```console
+$ docker pull library/rabbitmq@sha256:c320e4026726f4fae1e3e80023e392667d63d063afae62d32f7941def1f34156
+```
+
 -	Total Virtual Size: 143.4 MB (143442355 bytes)
 -	Total v2 Content-Length: 73.2 MB (73164257 bytes)
 
@@ -1296,6 +1312,10 @@ CMD ["rabbitmq-server"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `rabbitmq:3.5.4-management`
+
+```console
+$ docker pull library/rabbitmq@sha256:fa89920b604c641b274d4907a36d67e9efbb1e9fa16ea4a4e26e25b5fd4c0878
+```
 
 -	Total Virtual Size: 143.4 MB (143442378 bytes)
 -	Total v2 Content-Length: 73.2 MB (73164469 bytes)
@@ -1646,6 +1666,10 @@ EXPOSE 15672/tcp
 
 ## `rabbitmq:3.5-management`
 
+```console
+$ docker pull library/rabbitmq@sha256:111dd3298244e1a2a331b9d48e8edb3d2a32a55b3a0c54fb0de682f16e4a618f
+```
+
 -	Total Virtual Size: 143.4 MB (143442378 bytes)
 -	Total v2 Content-Length: 73.2 MB (73164469 bytes)
 
@@ -1995,6 +2019,10 @@ EXPOSE 15672/tcp
 
 ## `rabbitmq:3-management`
 
+```console
+$ docker pull library/rabbitmq@sha256:b6eccdf6379b2ef44cd4012780348d38667dcb4d9574f840cf79ebc7abb2d163
+```
+
 -	Total Virtual Size: 143.4 MB (143442378 bytes)
 -	Total v2 Content-Length: 73.2 MB (73164469 bytes)
 
@@ -2343,6 +2371,10 @@ EXPOSE 15672/tcp
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `rabbitmq:management`
+
+```console
+$ docker pull library/rabbitmq@sha256:7b344ef436978e2e87df199e546984a642f2835965f5251f35057fcbf8fd4547
+```
 
 -	Total Virtual Size: 143.4 MB (143442378 bytes)
 -	Total v2 Content-Length: 73.2 MB (73164469 bytes)

@@ -8,6 +8,10 @@
 
 ## `odoo:8.0`
 
+```console
+$ docker pull library/odoo@sha256:971bd6e160fd7144ef412df981c15747c5700849ff631c52f4a4866adab678c3
+```
+
 -	Total Virtual Size: 739.5 MB (739461391 bytes)
 -	Total v2 Content-Length: 252.8 MB (252832225 bytes)
 
@@ -259,6 +263,10 @@ CMD ["openerp-server"]
 
 ## `odoo:8`
 
+```console
+$ docker pull library/odoo@sha256:b918ec14410c43c02624f94b219c74f851492b5fca4aaf005289fcd30c333f20
+```
+
 -	Total Virtual Size: 739.5 MB (739461391 bytes)
 -	Total v2 Content-Length: 252.8 MB (252832225 bytes)
 
@@ -509,6 +517,10 @@ CMD ["openerp-server"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `odoo:latest`
+
+```console
+$ docker pull library/odoo@sha256:9bbc507e868d6d605f960654dba719654dea263986b7163d465dfb6d99dd64df
+```
 
 -	Total Virtual Size: 739.5 MB (739461391 bytes)
 -	Total v2 Content-Length: 252.8 MB (252832225 bytes)

@@ -19,6 +19,10 @@
 
 ## `redmine:2.6.6`
 
+```console
+$ docker pull library/redmine@sha256:2dad10c75e9efb845d2cd9ff41ff5f1a5a59656d10cb4be522b17bd5572157dc
+```
+
 -	Total Virtual Size: 415.2 MB (415161809 bytes)
 -	Total v2 Content-Length: 158.9 MB (158875319 bytes)
 
@@ -522,6 +526,10 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redmine:2.6`
+
+```console
+$ docker pull library/redmine@sha256:dee96e068e10f2705ce41e823413dd23fe777bff53a4331b18599d09aed4636f
+```
 
 -	Total Virtual Size: 415.2 MB (415161809 bytes)
 -	Total v2 Content-Length: 158.9 MB (158875319 bytes)
@@ -1027,6 +1035,10 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 
 ## `redmine:2`
 
+```console
+$ docker pull library/redmine@sha256:162416df8009764db3c9c1d096ea2c9995fa5221e98869fbae9921d14f45a4b0
+```
+
 -	Total Virtual Size: 415.2 MB (415161809 bytes)
 -	Total v2 Content-Length: 158.9 MB (158875319 bytes)
 
@@ -1530,6 +1542,10 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redmine:2.6.6-passenger`
+
+```console
+$ docker pull library/redmine@sha256:d1cbdd2d34a7c7c5a3a3c3196cd57c83bd0b90de891376b58a3213f373cd8119
+```
 
 -	Total Virtual Size: 484.5 MB (484481130 bytes)
 -	Total v2 Content-Length: 187.8 MB (187760440 bytes)
@@ -2099,6 +2115,10 @@ CMD ["passenger" "start"]
 
 ## `redmine:2.6-passenger`
 
+```console
+$ docker pull library/redmine@sha256:5b6d2f445910b5827eb77a781d29c523c7cc45200ac334cb06d7661cc81a58b9
+```
+
 -	Total Virtual Size: 484.5 MB (484481130 bytes)
 -	Total v2 Content-Length: 187.8 MB (187760440 bytes)
 
@@ -2666,6 +2686,10 @@ CMD ["passenger" "start"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redmine:2-passenger`
+
+```console
+$ docker pull library/redmine@sha256:089c72b4fa3f0d3c741a660024ec7d39548938fba456028dae6e49a7fd440200
+```
 
 -	Total Virtual Size: 484.5 MB (484481130 bytes)
 -	Total v2 Content-Length: 187.8 MB (187760440 bytes)
@@ -3235,6 +3259,10 @@ CMD ["passenger" "start"]
 
 ## `redmine:3.0.4`
 
+```console
+$ docker pull library/redmine@sha256:3a6245cfbe384c72323bbc34cd912a01cfb307119254074a38c80930c87e64a2
+```
+
 -	Total Virtual Size: 448.2 MB (448155328 bytes)
 -	Total v2 Content-Length: 174.4 MB (174377849 bytes)
 
@@ -3738,6 +3766,10 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redmine:3.0`
+
+```console
+$ docker pull library/redmine@sha256:c514e7636410ce6fbe7ceb77a64b34e20109c94d70ace941aba60b70dc595eca
+```
 
 -	Total Virtual Size: 448.2 MB (448155328 bytes)
 -	Total v2 Content-Length: 174.4 MB (174377849 bytes)
@@ -4243,6 +4275,10 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 
 ## `redmine:3`
 
+```console
+$ docker pull library/redmine@sha256:349d00857b9dc5581b6d9291b8d4d5ffca875670321d8b04bec1bd5d65eef668
+```
+
 -	Total Virtual Size: 448.2 MB (448155328 bytes)
 -	Total v2 Content-Length: 174.4 MB (174377849 bytes)
 
@@ -4747,6 +4783,10 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 
 ## `redmine:latest`
 
+```console
+$ docker pull library/redmine@sha256:a471c793b0dec84aed15c39e81973eebe5a8c5bdd2d751bfa569e839c197a1d6
+```
+
 -	Total Virtual Size: 448.2 MB (448155328 bytes)
 -	Total v2 Content-Length: 174.4 MB (174377849 bytes)
 
@@ -5250,6 +5290,10 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redmine:3.0.4-passenger`
+
+```console
+$ docker pull library/redmine@sha256:a8fc10d82096f12120ea642a69f6f24df151590e866b8c718dc273d8ef8d9488
+```
 
 -	Total Virtual Size: 517.5 MB (517474649 bytes)
 -	Total v2 Content-Length: 203.3 MB (203262776 bytes)
@@ -5819,6 +5863,10 @@ CMD ["passenger" "start"]
 
 ## `redmine:3.0-passenger`
 
+```console
+$ docker pull library/redmine@sha256:4c1f309ff8323054322a37d8087d11fb45bc9f94fcffc87b946eefd04157eeb4
+```
+
 -	Total Virtual Size: 517.5 MB (517474649 bytes)
 -	Total v2 Content-Length: 203.3 MB (203262776 bytes)
 
@@ -6387,6 +6435,10 @@ CMD ["passenger" "start"]
 
 ## `redmine:3-passenger`
 
+```console
+$ docker pull library/redmine@sha256:bd9e72392ab7e18611f335cacf5cff8eee01f2f24b6b6aa49078d0c9e6a593ef
+```
+
 -	Total Virtual Size: 517.5 MB (517474649 bytes)
 -	Total v2 Content-Length: 203.3 MB (203262776 bytes)
 
@@ -6954,6 +7006,10 @@ CMD ["passenger" "start"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redmine:passenger`
+
+```console
+$ docker pull library/redmine@sha256:110bd47a2f07aeec0036b9a01dc7a896aa77d17dcb4f224aea44b5f6642c3132
+```
 
 -	Total Virtual Size: 517.5 MB (517474649 bytes)
 -	Total v2 Content-Length: 203.3 MB (203262776 bytes)

@@ -11,6 +11,10 @@
 
 ## `httpd:2.2.31`
 
+```console
+$ docker pull library/httpd@sha256:8a581dccb43193e3770dd2d83eba9a68c74bfae12352267a12dc95cea7fddfac
+```
+
 -	Total Virtual Size: 152.9 MB (152900710 bytes)
 -	Total v2 Content-Length: 59.7 MB (59692880 bytes)
 
@@ -251,6 +255,10 @@ CMD ["httpd-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `httpd:2.2`
+
+```console
+$ docker pull library/httpd@sha256:57af246abf5a769eaa0a5f75b4464ff00f23ec8e954f3a11d4ad1bc8665ab8b0
+```
 
 -	Total Virtual Size: 152.9 MB (152900710 bytes)
 -	Total v2 Content-Length: 59.7 MB (59692880 bytes)
@@ -493,6 +501,10 @@ CMD ["httpd-foreground"]
 
 ## `httpd:2.4.16`
 
+```console
+$ docker pull library/httpd@sha256:862ed54f35039f499b399a56d376cc5e4f33b5d8b9507b7a6c05fd2341d4e34a
+```
+
 -	Total Virtual Size: 162.0 MB (162003398 bytes)
 -	Total v2 Content-Length: 61.9 MB (61938623 bytes)
 
@@ -733,6 +745,10 @@ CMD ["httpd-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `httpd:2.4`
+
+```console
+$ docker pull library/httpd@sha256:5e22af4b140c77b53fdd2b917bd7ab61aa9f889560d9321551c8525c97fe95a8
+```
 
 -	Total Virtual Size: 162.0 MB (162003398 bytes)
 -	Total v2 Content-Length: 61.9 MB (61938623 bytes)
@@ -975,6 +991,10 @@ CMD ["httpd-foreground"]
 
 ## `httpd:2`
 
+```console
+$ docker pull library/httpd@sha256:dfa7e20c290a2d074ead7c6602c5a9347ebb242385f4f54fb16dd0d2e6d77fdf
+```
+
 -	Total Virtual Size: 162.0 MB (162003398 bytes)
 -	Total v2 Content-Length: 61.9 MB (61938623 bytes)
 
@@ -1215,6 +1235,10 @@ CMD ["httpd-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `httpd:latest`
+
+```console
+$ docker pull library/httpd@sha256:53afd61a4774ce1203fef655c4b2a99b22ee258df120bc611a1f15a693901d7d
+```
 
 -	Total Virtual Size: 162.0 MB (162003398 bytes)
 -	Total v2 Content-Length: 61.9 MB (61938623 bytes)

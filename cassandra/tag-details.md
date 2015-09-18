@@ -13,6 +13,10 @@
 
 ## `cassandra:2.0.16`
 
+```console
+$ docker pull library/cassandra@sha256:4c042930982d4ccae6e7619bcf590d242ed0abbc9a72c066c77451027e202dff
+```
+
 -	Total Virtual Size: 347.3 MB (347305917 bytes)
 -	Total v2 Content-Length: 160.4 MB (160397166 bytes)
 
@@ -204,6 +208,10 @@ CMD ["cassandra" "-f"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `cassandra:2.0`
+
+```console
+$ docker pull library/cassandra@sha256:2321bb52732f049e81c67bbc7004329918c708ce86b14dc5148ba197f52514c2
+```
 
 -	Total Virtual Size: 347.3 MB (347305917 bytes)
 -	Total v2 Content-Length: 160.4 MB (160397166 bytes)
@@ -397,6 +405,10 @@ CMD ["cassandra" "-f"]
 
 ## `cassandra:2.1.9`
 
+```console
+$ docker pull library/cassandra@sha256:87b2c1cc014c5b32b5b4aa2d7d6b4b60bb31b88d430bdbfca87de7fda117dd76
+```
+
 -	Total Virtual Size: 353.4 MB (353420660 bytes)
 -	Total v2 Content-Length: 165.9 MB (165886277 bytes)
 
@@ -588,6 +600,10 @@ CMD ["cassandra" "-f"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `cassandra:2.1`
+
+```console
+$ docker pull library/cassandra@sha256:c8d76ab7ec7d37d8e5a1ec6cd5fe44add40bee015159c067252d4968222fd0fa
+```
 
 -	Total Virtual Size: 353.4 MB (353420660 bytes)
 -	Total v2 Content-Length: 165.9 MB (165886277 bytes)
@@ -781,6 +797,10 @@ CMD ["cassandra" "-f"]
 
 ## `cassandra:2.2.1`
 
+```console
+$ docker pull library/cassandra@sha256:113e10163294e9ae1905001d9b661c3064eddf8c55054be88a49230ee2d025b0
+```
+
 -	Total Virtual Size: 362.6 MB (362623621 bytes)
 -	Total v2 Content-Length: 170.1 MB (170089512 bytes)
 
@@ -972,6 +992,10 @@ CMD ["cassandra" "-f"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `cassandra:2.2`
+
+```console
+$ docker pull library/cassandra@sha256:82a4dd735a2bd765635a7133bdd14832e8d702116479f9c0912ccbb741f3f06b
+```
 
 -	Total Virtual Size: 362.6 MB (362623621 bytes)
 -	Total v2 Content-Length: 170.1 MB (170089512 bytes)
@@ -1165,6 +1189,10 @@ CMD ["cassandra" "-f"]
 
 ## `cassandra:2`
 
+```console
+$ docker pull library/cassandra@sha256:bd20a5a32547f19301ae50b336d11c88749ed05a38739d9a673a00f54101a9ca
+```
+
 -	Total Virtual Size: 362.6 MB (362623621 bytes)
 -	Total v2 Content-Length: 170.1 MB (170089512 bytes)
 
@@ -1356,6 +1384,10 @@ CMD ["cassandra" "-f"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `cassandra:latest`
+
+```console
+$ docker pull library/cassandra@sha256:6254c42daa82ec2a5febd3e56c82188ad2b473cbcf83c939bf25fa468d5805ec
+```
 
 -	Total Virtual Size: 362.6 MB (362623621 bytes)
 -	Total v2 Content-Length: 170.1 MB (170089512 bytes)

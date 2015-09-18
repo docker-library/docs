@@ -20,6 +20,10 @@
 
 ## `ubuntu:12.04.5`
 
+```console
+$ docker pull library/ubuntu@sha256:a47e211508be9d63b9a4cee835fc07d0603be5a95729e83f8636e8bedc45dd9d
+```
+
 -	Total Virtual Size: 134.8 MB (134791757 bytes)
 -	Total v2 Content-Length: 44.0 MB (43977816 bytes)
 
@@ -92,6 +96,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu:12.04`
+
+```console
+$ docker pull library/ubuntu@sha256:b6055621e534009eb9cddbfbb5766a983d99a73fb9d170cc224209a628f91804
+```
 
 -	Total Virtual Size: 134.8 MB (134791757 bytes)
 -	Total v2 Content-Length: 44.0 MB (43977816 bytes)
@@ -166,6 +174,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu:precise-20150813`
 
+```console
+$ docker pull library/ubuntu@sha256:7cf6c2bbc37808eff62d407e1f0699510c1fecc7b21d0069db9a06ebe4268401
+```
+
 -	Total Virtual Size: 134.8 MB (134791757 bytes)
 -	Total v2 Content-Length: 44.0 MB (43977816 bytes)
 
@@ -238,6 +250,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu:precise`
+
+```console
+$ docker pull library/ubuntu@sha256:ce202aa9e06eb3afb0a297a1e5d07dccdf13a11d74bddf88da94a24c4e848ae4
+```
 
 -	Total Virtual Size: 134.8 MB (134791757 bytes)
 -	Total v2 Content-Length: 44.0 MB (43977816 bytes)
@@ -312,6 +328,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu:14.04.3`
 
+```console
+$ docker pull library/ubuntu@sha256:00d60ee82b79ad0fd7e4f89b98414d8b35332fef5ad0874a87cc1480997621fe
+```
+
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
 -	Total v2 Content-Length: 65.9 MB (65859249 bytes)
 
@@ -384,6 +404,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu:14.04`
+
+```console
+$ docker pull library/ubuntu@sha256:b08e2d47c4629f8f9d1ae11eda8fdb3aeaf3f84de7cf19e4bb9395eaad006bd9
+```
 
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
 -	Total v2 Content-Length: 65.9 MB (65859249 bytes)
@@ -458,6 +482,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu:trusty-20150814`
 
+```console
+$ docker pull library/ubuntu@sha256:df7c84d0a76fb35f6e42bdd4384f7a5f425f9ae1591a8779956585d520b561b3
+```
+
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
 -	Total v2 Content-Length: 65.9 MB (65859249 bytes)
 
@@ -530,6 +558,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu:trusty`
+
+```console
+$ docker pull library/ubuntu@sha256:2153d9d8a46ba76931b910b3dcc716bc5451c9f8e5c736bd72db49af523b5e82
+```
 
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
 -	Total v2 Content-Length: 65.9 MB (65859249 bytes)
@@ -604,6 +636,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu:latest`
 
+```console
+$ docker pull library/ubuntu@sha256:73fbe2308f5f5cb6e343425831b8ab44f10bbd77070ecdfbe4081daa4dbe3ed1
+```
+
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
 -	Total v2 Content-Length: 65.9 MB (65859249 bytes)
 
@@ -676,6 +712,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu:15.04`
+
+```console
+$ docker pull library/ubuntu@sha256:947e1de770f0e4e0edf8248c3721c44e9691c6ab1862c13c7c352f4d37ad716a
+```
 
 -	Total Virtual Size: 131.4 MB (131355683 bytes)
 -	Total v2 Content-Length: 49.3 MB (49343696 bytes)
@@ -750,6 +790,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu:vivid-20150813`
 
+```console
+$ docker pull library/ubuntu@sha256:3a95499197b9d0a3b5bc047dd8fee014e94c5e515dcd9e0046f061222f459f24
+```
+
 -	Total Virtual Size: 131.4 MB (131355683 bytes)
 -	Total v2 Content-Length: 49.3 MB (49343696 bytes)
 
@@ -822,6 +866,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu:vivid`
+
+```console
+$ docker pull library/ubuntu@sha256:d474012e0022319b7072c9e2614db1ec81c111abf2edffb81715287e80ca67ec
+```
 
 -	Total Virtual Size: 131.4 MB (131355683 bytes)
 -	Total v2 Content-Length: 49.3 MB (49343696 bytes)
@@ -896,6 +944,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu:15.10`
 
+```console
+$ docker pull library/ubuntu@sha256:d8fadf467d6188bae22350efff59f40f6873fb36944f9ef3ebb0c36b2be06642
+```
+
 -	Total Virtual Size: 131.3 MB (131261115 bytes)
 -	Total v2 Content-Length: 49.6 MB (49614664 bytes)
 
@@ -969,6 +1021,10 @@ CMD ["/bin/bash"]
 
 ## `ubuntu:wily-20150829`
 
+```console
+$ docker pull library/ubuntu@sha256:9b83eede66d0d43a413615deea92452e5936ccb3ca41e5293a7277729c50344f
+```
+
 -	Total Virtual Size: 131.3 MB (131261115 bytes)
 -	Total v2 Content-Length: 49.6 MB (49614664 bytes)
 
@@ -1041,6 +1097,10 @@ CMD ["/bin/bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu:wily`
+
+```console
+$ docker pull library/ubuntu@sha256:28a3af9ee424849ccbd808b84629bd8c88d74e6c3302649badf8c42739a8a3aa
+```
 
 -	Total Virtual Size: 131.3 MB (131261115 bytes)
 -	Total v2 Content-Length: 49.6 MB (49614664 bytes)

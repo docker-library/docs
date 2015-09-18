@@ -11,6 +11,10 @@
 
 ## `fedora:latest`
 
+```console
+$ docker pull library/fedora@sha256:49ae2d6d0b51f713a18db1c0da9fb1b5c94e92eb43cd712ba09028161ea22880
+```
+
 -	Total Virtual Size: 186.5 MB (186515831 bytes)
 -	Total v2 Content-Length: 66.9 MB (66944402 bytes)
 
@@ -44,6 +48,10 @@ ADD file:4be46382bcf2b095fcb9fe8334206b584eff60bb3fad8178cbd97697fcb2ea83 in /
 -	v2 Last-Modified: Tue, 26 May 2015 18:17:38 GMT
 
 ## `fedora:22`
+
+```console
+$ docker pull library/fedora@sha256:2d38ea3c0c4d52bb125fd7f4a4a0dcf1312084772d4aa7473b1a73daadcfd0df
+```
 
 -	Total Virtual Size: 186.5 MB (186515831 bytes)
 -	Total v2 Content-Length: 66.9 MB (66944402 bytes)
@@ -79,6 +87,10 @@ ADD file:4be46382bcf2b095fcb9fe8334206b584eff60bb3fad8178cbd97697fcb2ea83 in /
 
 ## `fedora:21`
 
+```console
+$ docker pull library/fedora@sha256:d02ceb1bf5f84d805025dcaac84c34bec6036226346b375ddb9dba0ba46e3f10
+```
+
 -	Total Virtual Size: 241.3 MB (241325806 bytes)
 -	Total v2 Content-Length: 92.5 MB (92463450 bytes)
 
@@ -112,6 +124,10 @@ ADD file:95307157b233a03b3dfe9df99d1ff49fdbf7e82c9b042cc33c4fb6bc39663489 in /
 -	v2 Last-Modified: Fri, 11 Sep 2015 02:34:32 GMT
 
 ## `fedora:rawhide`
+
+```console
+$ docker pull library/fedora@sha256:1ecb972542bc6a4cbb9cb1abb72e8dc2d94e55571132c247b12e9cce81b26703
+```
 
 -	Total Virtual Size: 315.2 MB (315242201 bytes)
 -	Total v2 Content-Length: 98.9 MB (98914604 bytes)
@@ -147,6 +163,10 @@ ADD file:60ff9d4b9fadc37de728ecd91deb480d2c4e20e8f5336e4d40a14b501148e20c in /
 
 ## `fedora:20`
 
+```console
+$ docker pull library/fedora@sha256:14799af7a6489e4617d2820946ecdf2a456a4bc73fc5a46a69b85ea0f249bc8a
+```
+
 -	Total Virtual Size: 290.6 MB (290633327 bytes)
 -	Total v2 Content-Length: 94.0 MB (93950180 bytes)
 
@@ -180,6 +200,10 @@ ADD file:11e165f0d522bb69e7c207c653d9330d0fdc4935b7bdf234ffe570492f767d8c in /
 -	v2 Last-Modified: Fri, 11 Sep 2015 02:38:45 GMT
 
 ## `fedora:heisenbug`
+
+```console
+$ docker pull library/fedora@sha256:091a25c1d64f36e559cad113fe5dec210fc4540f634bc66cbac4b4f1caa81d89
+```
 
 -	Total Virtual Size: 290.6 MB (290633327 bytes)
 -	Total v2 Content-Length: 94.0 MB (93950180 bytes)

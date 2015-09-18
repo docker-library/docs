@@ -8,6 +8,10 @@
 
 ## `julia:0.3.11`
 
+```console
+$ docker pull library/julia@sha256:81ce6d4c87c751c7000a69b9bd4cb9859c395176204656713619a0548c6b39fe
+```
+
 -	Total Virtual Size: 361.8 MB (361839208 bytes)
 -	Total v2 Content-Length: 123.3 MB (123270328 bytes)
 
@@ -136,6 +140,10 @@ CMD ["julia"]
 
 ## `julia:0.3`
 
+```console
+$ docker pull library/julia@sha256:f788e09658016461cdcd8eb0e6c86b9f93bd47d228c859919a8daa01793fc5d8
+```
+
 -	Total Virtual Size: 361.8 MB (361839208 bytes)
 -	Total v2 Content-Length: 123.3 MB (123270328 bytes)
 
@@ -263,6 +271,10 @@ CMD ["julia"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `julia:latest`
+
+```console
+$ docker pull library/julia@sha256:fa7da2315efa4e7a9580dd211d76bf941ab876565e93feca1b3bedae1919c27a
+```
 
 -	Total Virtual Size: 361.8 MB (361839208 bytes)
 -	Total v2 Content-Length: 123.3 MB (123270328 bytes)

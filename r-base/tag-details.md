@@ -7,6 +7,10 @@
 
 ## `r-base:3.2.2`
 
+```console
+$ docker pull library/r-base@sha256:1364b3a911d0bc8ce685fd38591742624e42ec691b61a0eb10b052ce78b50d2b
+```
+
 -	Total Virtual Size: 997.3 MB (997314201 bytes)
 -	Total v2 Content-Length: 398.1 MB (398130198 bytes)
 
@@ -208,6 +212,10 @@ CMD ["R"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `r-base:latest`
+
+```console
+$ docker pull library/r-base@sha256:c12c1f5a5d1db5a7f38f95e751133cfca9a3d1c052c861228310eaa7b1337e2d
+```
 
 -	Total Virtual Size: 997.3 MB (997314201 bytes)
 -	Total v2 Content-Length: 398.1 MB (398130198 bytes)

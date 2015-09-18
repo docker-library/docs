@@ -9,6 +9,10 @@
 
 ## `clojure:latest`
 
+```console
+$ docker pull library/clojure@sha256:c0c45771515b26973730109495001cdf44e4962697b66be3478995ab7f497c3d
+```
+
 -	Total Virtual Size: 833.3 MB (833282452 bytes)
 -	Total v2 Content-Length: 326.7 MB (326727464 bytes)
 
@@ -309,6 +313,10 @@ RUN lein
 -	v2 Last-Modified: Fri, 11 Sep 2015 00:30:35 GMT
 
 ## `clojure:onbuild`
+
+```console
+$ docker pull library/clojure@sha256:f9bea05e43f44fdf212421817ce010ee09c1b7038fad79509994c1891150bfb0
+```
 
 -	Total Virtual Size: 833.3 MB (833282452 bytes)
 -	Total v2 Content-Length: 326.7 MB (326727656 bytes)
@@ -695,6 +703,10 @@ CMD ["lein" "run"]
 
 ## `clojure:lein-2.5.2`
 
+```console
+$ docker pull library/clojure@sha256:553a8b5d1536e388bc2ce5fe1cbda1b7749f9396e3b7f0cf72e70a7eb46f0c8b
+```
+
 -	Total Virtual Size: 833.3 MB (833282452 bytes)
 -	Total v2 Content-Length: 326.7 MB (326727464 bytes)
 
@@ -995,6 +1007,10 @@ RUN lein
 -	v2 Last-Modified: Fri, 11 Sep 2015 00:30:35 GMT
 
 ## `clojure:lein-2.5.2-onbuild`
+
+```console
+$ docker pull library/clojure@sha256:035acc90688f403ac1d4dae6bc050b147a3dc2ff2feee696c48959a309070cf1
+```
 
 -	Total Virtual Size: 833.3 MB (833282452 bytes)
 -	Total v2 Content-Length: 326.7 MB (326727656 bytes)

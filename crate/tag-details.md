@@ -10,6 +10,10 @@
 
 ## `crate:latest`
 
+```console
+$ docker pull library/crate@sha256:38dbd669f4e9123ab97df381493cc85b852712c596f4ff7d9442ce2446934303
+```
+
 -	Total Virtual Size: 561.5 MB (561451703 bytes)
 -	Total v2 Content-Length: 253.1 MB (253124485 bytes)
 
@@ -346,6 +350,10 @@ CMD ["crate"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `crate:0.49`
+
+```console
+$ docker pull library/crate@sha256:5a4d923c12e4abc30852a53a867930da291f97275c1f38aad6af8eb34219fcc5
+```
 
 -	Total Virtual Size: 558.8 MB (558771235 bytes)
 -	Total v2 Content-Length: 252.0 MB (251962072 bytes)
@@ -684,6 +692,10 @@ CMD ["crate"]
 
 ## `crate:0.49.6`
 
+```console
+$ docker pull library/crate@sha256:6e7c06d80a948da2ec68637adcb2c4cb80e6345ac000cd16b3a9dcb8495e44e0
+```
+
 -	Total Virtual Size: 558.8 MB (558771235 bytes)
 -	Total v2 Content-Length: 252.0 MB (251962072 bytes)
 
@@ -1021,6 +1033,10 @@ CMD ["crate"]
 
 ## `crate:0.50`
 
+```console
+$ docker pull library/crate@sha256:e0909f37f3942061e659271af6b2f0553aecbbb6a701a3ebf22a4392ae60057f
+```
+
 -	Total Virtual Size: 561.5 MB (561451703 bytes)
 -	Total v2 Content-Length: 253.1 MB (253124485 bytes)
 
@@ -1357,6 +1373,10 @@ CMD ["crate"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `crate:0.50.6`
+
+```console
+$ docker pull library/crate@sha256:2a49186964d32ab2d2fbc0c519e7a332d24bf6b56067078df22809f913227162
+```
 
 -	Total Virtual Size: 561.5 MB (561451703 bytes)
 -	Total v2 Content-Length: 253.1 MB (253124485 bytes)

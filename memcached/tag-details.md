@@ -9,6 +9,10 @@
 
 ## `memcached:1.4.24`
 
+```console
+$ docker pull library/memcached@sha256:cf5f30508cddd6b3918bb1b6cd15b4505d6b985f3d5460b0546d66b2d760ffa6
+```
+
 -	Total Virtual Size: 132.4 MB (132359995 bytes)
 -	Total v2 Content-Length: 54.3 MB (54271455 bytes)
 
@@ -198,6 +202,10 @@ CMD ["memcached"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `memcached:1.4`
+
+```console
+$ docker pull library/memcached@sha256:03d9082ecbc13e56540ba5eb9d472e07229e150c8071142984677c8deef8dc2b
+```
 
 -	Total Virtual Size: 132.4 MB (132359995 bytes)
 -	Total v2 Content-Length: 54.3 MB (54271455 bytes)
@@ -389,6 +397,10 @@ CMD ["memcached"]
 
 ## `memcached:1`
 
+```console
+$ docker pull library/memcached@sha256:b6100dc100d0327170fdf9866d57b70b4c8f0d944bd70a649317d0d20b175ad9
+```
+
 -	Total Virtual Size: 132.4 MB (132359995 bytes)
 -	Total v2 Content-Length: 54.3 MB (54271455 bytes)
 
@@ -578,6 +590,10 @@ CMD ["memcached"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `memcached:latest`
+
+```console
+$ docker pull library/memcached@sha256:7d04f4c8e77678eec6b3e5995b9e46d697bda99eba482b3b3030e0f28d5cc1b3
+```
 
 -	Total Virtual Size: 132.4 MB (132359995 bytes)
 -	Total v2 Content-Length: 54.3 MB (54271455 bytes)

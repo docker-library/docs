@@ -12,6 +12,10 @@
 
 ## `gazebo:gzserver4`
 
+```console
+$ docker pull library/gazebo@sha256:9f6c859c775e2df27178c68a50417568d7b275cbac07d1f26c0b5478789d0e82
+```
+
 -	Total Virtual Size: 530.1 MB (530097244 bytes)
 -	Total v2 Content-Length: 210.0 MB (209964832 bytes)
 
@@ -198,6 +202,10 @@ CMD ["gzserver"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `gazebo:libgazebo4`
+
+```console
+$ docker pull library/gazebo@sha256:3392b9acd87345411c4d381fe5d71152287dd3f94340009e7ccc0464fa55d224
+```
 
 -	Total Virtual Size: 1.3 GB (1251866813 bytes)
 -	Total v2 Content-Length: 437.7 MB (437717576 bytes)
@@ -416,6 +424,10 @@ RUN apt-get update && apt-get install -q -y\
 
 ## `gazebo:gzserver5`
 
+```console
+$ docker pull library/gazebo@sha256:1bc49028d1a41e2a60e3e6fd8e358b8f3f986ab48822c82ad6785b32bea64e1f
+```
+
 -	Total Virtual Size: 566.5 MB (566502997 bytes)
 -	Total v2 Content-Length: 230.6 MB (230563377 bytes)
 
@@ -602,6 +614,10 @@ CMD ["gzserver"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `gazebo:libgazebo5`
+
+```console
+$ docker pull library/gazebo@sha256:684690a12744ebe69967901bd130eedba301a671006c85259b8021e829d80529
+```
 
 -	Total Virtual Size: 1.4 GB (1416896550 bytes)
 -	Total v2 Content-Length: 487.2 MB (487240874 bytes)
@@ -820,6 +836,10 @@ RUN apt-get update && apt-get install -q -y\
 
 ## `gazebo:gzserver6`
 
+```console
+$ docker pull library/gazebo@sha256:f9fe1980db956732eaad7a9d7d9d289154941fe9fb76e6d27a534c54f451fad3
+```
+
 -	Total Virtual Size: 573.0 MB (573011435 bytes)
 -	Total v2 Content-Length: 234.6 MB (234555932 bytes)
 
@@ -1006,6 +1026,10 @@ CMD ["gzserver"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `gazebo:libgazebo6`
+
+```console
+$ docker pull library/gazebo@sha256:06d24de4026568cc0be9423125f6b3a85838522ecb26293768ed6a9f9ab968b9
+```
 
 -	Total Virtual Size: 1.4 GB (1401205055 bytes)
 -	Total v2 Content-Length: 480.6 MB (480647412 bytes)
@@ -1223,6 +1247,10 @@ RUN apt-get update && apt-get install -q -y\
 -	v2 Last-Modified: Wed, 26 Aug 2015 21:20:46 GMT
 
 ## `gazebo:latest`
+
+```console
+$ docker pull library/gazebo@sha256:1b3a461eea7d7c3070157e70109a5acd23e197921ca4cd6deb6f7cace272c195
+```
 
 -	Total Virtual Size: 1.4 GB (1401205055 bytes)
 -	Total v2 Content-Length: 480.6 MB (480647412 bytes)

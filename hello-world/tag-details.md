@@ -6,6 +6,10 @@
 
 ## `hello-world:latest`
 
+```console
+$ docker pull library/hello-world@sha256:02fee8c3220ba806531f606525eceb83f4feb654f62b207191b1c9209188dedd
+```
+
 -	Total Virtual Size: 960.0 B
 -	Total v2 Content-Length: 633.0 B
 

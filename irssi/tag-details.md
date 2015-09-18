@@ -9,6 +9,10 @@
 
 ## `irssi:0.8.17`
 
+```console
+$ docker pull library/irssi@sha256:003f401b528044f9ee6b69b7e5d38d18b130308d2bdd54491808e4688c161ad7
+```
+
 -	Total Virtual Size: 261.2 MB (261186951 bytes)
 -	Total v2 Content-Length: 97.5 MB (97497456 bytes)
 
@@ -237,6 +241,10 @@ CMD ["irssi"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `irssi:0.8`
+
+```console
+$ docker pull library/irssi@sha256:e893a60ed9e34df12047925ec1dfca4d5565173ff7cc027b95acb56152cea9bd
+```
 
 -	Total Virtual Size: 261.2 MB (261186951 bytes)
 -	Total v2 Content-Length: 97.5 MB (97497456 bytes)
@@ -467,6 +475,10 @@ CMD ["irssi"]
 
 ## `irssi:0`
 
+```console
+$ docker pull library/irssi@sha256:d077f489bee68f0e61414421182db6ef371eded057ebb9de4b032eb25aecefe5
+```
+
 -	Total Virtual Size: 261.2 MB (261186951 bytes)
 -	Total v2 Content-Length: 97.5 MB (97497456 bytes)
 
@@ -695,6 +707,10 @@ CMD ["irssi"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `irssi:latest`
+
+```console
+$ docker pull library/irssi@sha256:2a2e83b5f501db0f98e398e0ec8563ed4c29516a27cfb68d99489391b1328b25
+```
 
 -	Total Virtual Size: 261.2 MB (261186951 bytes)
 -	Total v2 Content-Length: 97.5 MB (97497456 bytes)

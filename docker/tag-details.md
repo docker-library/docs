@@ -23,6 +23,10 @@
 
 ## `docker:1.8.2`
 
+```console
+$ docker pull library/docker@sha256:0a9abb7fd5b79e0b33093e10ba1358fe6c6dd5dd78af9306b70729fecec66aac
+```
+
 -	Total Virtual Size: 29.7 MB (29657955 bytes)
 -	Total v2 Content-Length: 10.1 MB (10088932 bytes)
 
@@ -158,6 +162,10 @@ CMD ["sh"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `docker:1.8`
+
+```console
+$ docker pull library/docker@sha256:8d1b40cd5257b51495dbc5ceb400a4eee61376f9601bf4702e935736f83b1bd6
+```
 
 -	Total Virtual Size: 29.7 MB (29657955 bytes)
 -	Total v2 Content-Length: 10.1 MB (10088932 bytes)
@@ -295,6 +303,10 @@ CMD ["sh"]
 
 ## `docker:1`
 
+```console
+$ docker pull library/docker@sha256:6ff1094cb9bd9967eac0d1eb38acf6fc184ae05e1a511ec1e74526fd046ba72c
+```
+
 -	Total Virtual Size: 29.7 MB (29657955 bytes)
 -	Total v2 Content-Length: 10.1 MB (10088932 bytes)
 
@@ -431,6 +443,10 @@ CMD ["sh"]
 
 ## `docker:latest`
 
+```console
+$ docker pull library/docker@sha256:e9b44822568fd5f3f55a0e1512bebc86960fb1ca779a3d3bf112d42ee30593a9
+```
+
 -	Total Virtual Size: 29.7 MB (29657955 bytes)
 -	Total v2 Content-Length: 10.1 MB (10088932 bytes)
 
@@ -566,6 +582,10 @@ CMD ["sh"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `docker:1.8.2-dind`
+
+```console
+$ docker pull library/docker@sha256:91c5388546a1f277dafeb2d36d4dcd8ea17f3be67961bf14588198fd6bfd7611
+```
 
 -	Total Virtual Size: 35.6 MB (35566349 bytes)
 -	Total v2 Content-Length: 12.5 MB (12546802 bytes)
@@ -821,6 +841,10 @@ CMD []
 
 ## `docker:1.8-dind`
 
+```console
+$ docker pull library/docker@sha256:255a15ecb6e6b6e17f50f7e1081e540f38a4b6c7fa2d185597a2a5b434a9da2e
+```
+
 -	Total Virtual Size: 35.6 MB (35566349 bytes)
 -	Total v2 Content-Length: 12.5 MB (12546802 bytes)
 
@@ -1074,6 +1098,10 @@ CMD []
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `docker:1-dind`
+
+```console
+$ docker pull library/docker@sha256:58b64eb117fd1f1d8d338422479965291946ea86fcb19ba0748602b44ad58a78
+```
 
 -	Total Virtual Size: 35.6 MB (35566349 bytes)
 -	Total v2 Content-Length: 12.5 MB (12546802 bytes)
@@ -1329,6 +1357,10 @@ CMD []
 
 ## `docker:dind`
 
+```console
+$ docker pull library/docker@sha256:afbc74f338725308bb1f977287a8d719766b1d1681fcf27d51fa63c28a6056b1
+```
+
 -	Total Virtual Size: 35.6 MB (35566349 bytes)
 -	Total v2 Content-Length: 12.5 MB (12546802 bytes)
 
@@ -1583,6 +1615,10 @@ CMD []
 
 ## `docker:1.8.2-git`
 
+```console
+$ docker pull library/docker@sha256:2ac478afef572ead66eccf484ab369b467853d2f4caa86d8d2672702afa41ef4
+```
+
 -	Total Virtual Size: 47.0 MB (46987141 bytes)
 -	Total v2 Content-Length: 18.5 MB (18522729 bytes)
 
@@ -1735,6 +1771,10 @@ RUN apk add --update \
 -	v2 Last-Modified: Mon, 14 Sep 2015 21:20:29 GMT
 
 ## `docker:1.8-git`
+
+```console
+$ docker pull library/docker@sha256:e201b1f328b24c7714e5b8d6833fbb30b51125c109a86e3917d56ef559ffa4fd
+```
 
 -	Total Virtual Size: 47.0 MB (46987141 bytes)
 -	Total v2 Content-Length: 18.5 MB (18522729 bytes)
@@ -1889,6 +1929,10 @@ RUN apk add --update \
 
 ## `docker:1-git`
 
+```console
+$ docker pull library/docker@sha256:684b4de670c507c28391a21cc747fbbe4ba722c7766dac683e554711127db876
+```
+
 -	Total Virtual Size: 47.0 MB (46987141 bytes)
 -	Total v2 Content-Length: 18.5 MB (18522729 bytes)
 
@@ -2041,6 +2085,10 @@ RUN apk add --update \
 -	v2 Last-Modified: Mon, 14 Sep 2015 21:20:29 GMT
 
 ## `docker:git`
+
+```console
+$ docker pull library/docker@sha256:0bee89d8893327a52a5129f68a518df4458898f7b9b8629e7ee67a3c2c551b44
+```
 
 -	Total Virtual Size: 47.0 MB (46987141 bytes)
 -	Total v2 Content-Length: 18.5 MB (18522729 bytes)
@@ -2195,6 +2243,10 @@ RUN apk add --update \
 
 ## `docker:1.7.1`
 
+```console
+$ docker pull library/docker@sha256:e8748a74faec04b8c965da75d4e84ec03f4cd1675380f0636b50dabeecc35f1e
+```
+
 -	Total Virtual Size: 24.4 MB (24355168 bytes)
 -	Total v2 Content-Length: 8.7 MB (8664664 bytes)
 
@@ -2331,6 +2383,10 @@ CMD ["sh"]
 
 ## `docker:1.7`
 
+```console
+$ docker pull library/docker@sha256:c3666cc6458e02d780492c75acf1b0bf3424c8dd6882361438a9b93b46c2aa55
+```
+
 -	Total Virtual Size: 24.4 MB (24355168 bytes)
 -	Total v2 Content-Length: 8.7 MB (8664664 bytes)
 
@@ -2466,6 +2522,10 @@ CMD ["sh"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `docker:1.7.1-dind`
+
+```console
+$ docker pull library/docker@sha256:2813ee051050972f65d2976273b28c15bd88f2f1be5727a00aec402b4da2037f
+```
 
 -	Total Virtual Size: 30.3 MB (30263545 bytes)
 -	Total v2 Content-Length: 11.1 MB (11122517 bytes)
@@ -2721,6 +2781,10 @@ CMD []
 
 ## `docker:1.7-dind`
 
+```console
+$ docker pull library/docker@sha256:042284afe624aee0af4f5aee9373ec1d2488a8f33ecfd9647e5786b6932b80b5
+```
+
 -	Total Virtual Size: 30.3 MB (30263545 bytes)
 -	Total v2 Content-Length: 11.1 MB (11122517 bytes)
 
@@ -2975,6 +3039,10 @@ CMD []
 
 ## `docker:1.7.1-git`
 
+```console
+$ docker pull library/docker@sha256:595a03d3ca6da96b51c7f3f30fa4cc1c16013a62a34759f854cf1f4d18298163
+```
+
 -	Total Virtual Size: 41.7 MB (41684354 bytes)
 -	Total v2 Content-Length: 17.1 MB (17098460 bytes)
 
@@ -3127,6 +3195,10 @@ RUN apk add --update \
 -	v2 Last-Modified: Mon, 14 Sep 2015 21:23:42 GMT
 
 ## `docker:1.7-git`
+
+```console
+$ docker pull library/docker@sha256:4a4e936a0bfea8cfec2e3c3fa50dd12db13bb62a846fdaa44c1d4385d8183aec
+```
 
 -	Total Virtual Size: 41.7 MB (41684354 bytes)
 -	Total v2 Content-Length: 17.1 MB (17098460 bytes)

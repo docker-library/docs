@@ -12,6 +12,10 @@
 
 ## `ubuntu-upstart:12.04`
 
+```console
+$ docker pull library/ubuntu-upstart@sha256:bc0f94fa2829a255ebb26c87d69466c01c1574f9a8687185bd3a949551408e3e
+```
+
 -	Total Virtual Size: 177.9 MB (177850277 bytes)
 -	Total v2 Content-Length: 78.4 MB (78403709 bytes)
 
@@ -256,6 +260,10 @@ CMD ["/sbin/init"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu-upstart:precise`
+
+```console
+$ docker pull library/ubuntu-upstart@sha256:9186a1d7bb2386eca71879336835b03e69d413b7081e3dbc19ef8835e8f045cc
+```
 
 -	Total Virtual Size: 177.9 MB (177850277 bytes)
 -	Total v2 Content-Length: 78.4 MB (78403709 bytes)
@@ -502,6 +510,10 @@ CMD ["/sbin/init"]
 
 ## `ubuntu-upstart:14.04`
 
+```console
+$ docker pull library/ubuntu-upstart@sha256:9f4a6ce3eed2048b3dfb7223ecc1e2d4b32be78ef752ddc279c912b330f33f03
+```
+
 -	Total Virtual Size: 253.5 MB (253473157 bytes)
 -	Total v2 Content-Length: 101.5 MB (101520399 bytes)
 
@@ -746,6 +758,10 @@ CMD ["/sbin/init"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu-upstart:trusty`
+
+```console
+$ docker pull library/ubuntu-upstart@sha256:1b731df26688a91911e759649178ac3096f8b5d385c8efc61cdf89d073bf86ae
+```
 
 -	Total Virtual Size: 253.5 MB (253473157 bytes)
 -	Total v2 Content-Length: 101.5 MB (101520399 bytes)
@@ -992,6 +1008,10 @@ CMD ["/sbin/init"]
 
 ## `ubuntu-upstart:latest`
 
+```console
+$ docker pull library/ubuntu-upstart@sha256:2cc6cee2ae4ec65ee970007480b553cc6d3e3f6e5c644c64a455ba5157259f1a
+```
+
 -	Total Virtual Size: 253.5 MB (253473157 bytes)
 -	Total v2 Content-Length: 101.5 MB (101520399 bytes)
 
@@ -1237,6 +1257,10 @@ CMD ["/sbin/init"]
 
 ## `ubuntu-upstart:14.10`
 
+```console
+$ docker pull library/ubuntu-upstart@sha256:68bbe3421f26e8e93c071b5f19b20d6202206964f433a21cd1e9d8b8295a214c
+```
+
 -	Total Virtual Size: 260.3 MB (260275383 bytes)
 -	Total v2 Content-Length: 104.2 MB (104240694 bytes)
 
@@ -1481,6 +1505,10 @@ CMD ["/sbin/init"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ubuntu-upstart:utopic`
+
+```console
+$ docker pull library/ubuntu-upstart@sha256:20560500e82bbfed2d61dcb670fe20a69571051fbff5b49769bdc6170139ae52
+```
 
 -	Total Virtual Size: 260.3 MB (260275383 bytes)
 -	Total v2 Content-Length: 104.2 MB (104240694 bytes)

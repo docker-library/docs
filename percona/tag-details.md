@@ -11,6 +11,10 @@
 
 ## `percona:5.5.45`
 
+```console
+$ docker pull library/percona@sha256:0d12ff7c483d2147dd5e9eb988c18d026c4088c478e4c3d853925ac0e9185979
+```
+
 -	Total Virtual Size: 284.0 MB (284039991 bytes)
 -	Total v2 Content-Length: 97.5 MB (97470779 bytes)
 
@@ -237,6 +241,10 @@ CMD ["mysqld"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `percona:5.5`
+
+```console
+$ docker pull library/percona@sha256:75abf045462f185a14880e94f857245b1d90f097ffa153ef3202d5e234a9b516
+```
 
 -	Total Virtual Size: 284.0 MB (284039991 bytes)
 -	Total v2 Content-Length: 97.5 MB (97470779 bytes)
@@ -465,6 +473,10 @@ CMD ["mysqld"]
 
 ## `percona:5.6.26`
 
+```console
+$ docker pull library/percona@sha256:7842141888a1d5bca5372f942aa60d895a2ba1307a017d0beb27460acca1cc04
+```
+
 -	Total Virtual Size: 308.7 MB (308659056 bytes)
 -	Total v2 Content-Length: 104.0 MB (103994403 bytes)
 
@@ -691,6 +703,10 @@ CMD ["mysqld"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `percona:5.6`
+
+```console
+$ docker pull library/percona@sha256:a888f4b2e903a056396b03a6f45e43f1e9ff425b121e19958c766ae622916edc
+```
 
 -	Total Virtual Size: 308.7 MB (308659056 bytes)
 -	Total v2 Content-Length: 104.0 MB (103994403 bytes)
@@ -919,6 +935,10 @@ CMD ["mysqld"]
 
 ## `percona:5`
 
+```console
+$ docker pull library/percona@sha256:d69beb736f3700cbf3e625bcb96da83809b3326c215e207641b126729276f053
+```
+
 -	Total Virtual Size: 308.7 MB (308659056 bytes)
 -	Total v2 Content-Length: 104.0 MB (103994403 bytes)
 
@@ -1145,6 +1165,10 @@ CMD ["mysqld"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `percona:latest`
+
+```console
+$ docker pull library/percona@sha256:b2b05fcca4ead74dd4604a9257b83e9eab706c80dbe84a97853ed83c251b2aff
+```
 
 -	Total Virtual Size: 308.7 MB (308659056 bytes)
 -	Total v2 Content-Length: 104.0 MB (103994403 bytes)

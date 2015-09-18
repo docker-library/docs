@@ -9,6 +9,10 @@
 
 ## `ghost:0.7.0`
 
+```console
+$ docker pull library/ghost@sha256:6b409c46fdedb5b96ba648eb4dd8715b80d8c2355b4d5befdce1ddaa2ce943aa
+```
+
 -	Total Virtual Size: 313.4 MB (313358652 bytes)
 -	Total v2 Content-Length: 92.6 MB (92639362 bytes)
 
@@ -363,6 +367,10 @@ CMD ["npm" "start"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ghost:0.7`
+
+```console
+$ docker pull library/ghost@sha256:5c517656b495fddc850cd0a999fed9beaefc18b439f25ee221e04f7cb7dd2f45
+```
 
 -	Total Virtual Size: 313.4 MB (313358652 bytes)
 -	Total v2 Content-Length: 92.6 MB (92639362 bytes)
@@ -719,6 +727,10 @@ CMD ["npm" "start"]
 
 ## `ghost:0`
 
+```console
+$ docker pull library/ghost@sha256:ebd659c85ce3355b03ab814016248a67eee838ddd69fa624a52b57f9590edb37
+```
+
 -	Total Virtual Size: 313.4 MB (313358652 bytes)
 -	Total v2 Content-Length: 92.6 MB (92639362 bytes)
 
@@ -1073,6 +1085,10 @@ CMD ["npm" "start"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ghost:latest`
+
+```console
+$ docker pull library/ghost@sha256:593e55e3e5392659b03b76a838b993909439305e7f6aedc9243e63c2199373d5
+```
 
 -	Total Virtual Size: 313.4 MB (313358652 bytes)
 -	Total v2 Content-Length: 92.6 MB (92639362 bytes)

@@ -7,6 +7,10 @@
 
 ## `jenkins:latest`
 
+```console
+$ docker pull library/jenkins@sha256:70ec5a9ee8bfea1056e938b6fa21e44578318f1a9cde49ed8c978e3d8766e7a8
+```
+
 -	Total Virtual Size: 889.1 MB (889104719 bytes)
 -	Total v2 Content-Length: 376.3 MB (376344319 bytes)
 
@@ -489,6 +493,10 @@ COPY file:5fd4177d7ef991f00257900e2b6056786571bf03882b203c77926eef6c0d723f in /u
 -	v2 Last-Modified: Fri, 11 Sep 2015 05:32:12 GMT
 
 ## `jenkins:1.609.3`
+
+```console
+$ docker pull library/jenkins@sha256:3447993c329b682980b38d3874ba39ec946e6d65500ec688e3122fe7a5008abe
+```
 
 -	Total Virtual Size: 889.1 MB (889104719 bytes)
 -	Total v2 Content-Length: 376.3 MB (376344319 bytes)

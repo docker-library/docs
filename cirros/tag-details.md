@@ -7,6 +7,10 @@
 
 ## `cirros:latest`
 
+```console
+$ docker pull library/cirros@sha256:05dc8ce8beb485826be45b80130d0e8693144bdec091d2674d71370011220229
+```
+
 -	Total Virtual Size: 7.7 MB (7698435 bytes)
 -	Total v2 Content-Length: 3.5 MB (3529315 bytes)
 
@@ -82,6 +86,10 @@ CMD ["/sbin/init"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `cirros:0.3.3`
+
+```console
+$ docker pull library/cirros@sha256:f18ca05f074c0d2a10f5d94a3541b201803a00b8cadc6aa52d877384f6a8c0ac
+```
 
 -	Total Virtual Size: 7.7 MB (7698435 bytes)
 -	Total v2 Content-Length: 3.5 MB (3529315 bytes)

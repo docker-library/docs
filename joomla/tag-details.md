@@ -17,6 +17,10 @@
 
 ## `joomla:3.4.4-apache`
 
+```console
+$ docker pull library/joomla@sha256:369fca90667d398d686be5fa7f23409371cd7c9da1576ef895046d91afe26031
+```
+
 -	Total Virtual Size: 524.0 MB (523960178 bytes)
 -	Total v2 Content-Length: 175.7 MB (175727142 bytes)
 
@@ -544,6 +548,10 @@ CMD ["apache2-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `joomla:3.4.4`
+
+```console
+$ docker pull library/joomla@sha256:b213782ddb98f6867c5bc99ff6c7d87c1249ac3c4f71505b7593b512cffba200
+```
 
 -	Total Virtual Size: 524.0 MB (523960178 bytes)
 -	Total v2 Content-Length: 175.7 MB (175727142 bytes)
@@ -1073,6 +1081,10 @@ CMD ["apache2-foreground"]
 
 ## `joomla:3.4-apache`
 
+```console
+$ docker pull library/joomla@sha256:24cf0e69953b8789b96cc4966386a17411284e7380e2ab2d3a305b6bf07bc255
+```
+
 -	Total Virtual Size: 524.0 MB (523960178 bytes)
 -	Total v2 Content-Length: 175.7 MB (175727142 bytes)
 
@@ -1600,6 +1612,10 @@ CMD ["apache2-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `joomla:3.4`
+
+```console
+$ docker pull library/joomla@sha256:d110ee2a635dac81f6298bbb01b79067c571820c33462b64ea6765338e3c213d
+```
 
 -	Total Virtual Size: 524.0 MB (523960178 bytes)
 -	Total v2 Content-Length: 175.7 MB (175727142 bytes)
@@ -2129,6 +2145,10 @@ CMD ["apache2-foreground"]
 
 ## `joomla:3-apache`
 
+```console
+$ docker pull library/joomla@sha256:2da66f2ca753e759d1b32b1ecf55242ba10cf3ee3cf3c9f2aa3f951d143e3066
+```
+
 -	Total Virtual Size: 524.0 MB (523960178 bytes)
 -	Total v2 Content-Length: 175.7 MB (175727142 bytes)
 
@@ -2656,6 +2676,10 @@ CMD ["apache2-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `joomla:apache`
+
+```console
+$ docker pull library/joomla@sha256:cb658c5d9d1c14fab5f0b92535a512c38a8518c8ebaa82eeed86ef2a17f98c35
+```
 
 -	Total Virtual Size: 524.0 MB (523960178 bytes)
 -	Total v2 Content-Length: 175.7 MB (175727142 bytes)
@@ -3185,6 +3209,10 @@ CMD ["apache2-foreground"]
 
 ## `joomla:3`
 
+```console
+$ docker pull library/joomla@sha256:a6612f7e175a11b4dca4b743f4524a317ee36864783efc7eee83aecfc347c63f
+```
+
 -	Total Virtual Size: 524.0 MB (523960178 bytes)
 -	Total v2 Content-Length: 175.7 MB (175727142 bytes)
 
@@ -3712,6 +3740,10 @@ CMD ["apache2-foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `joomla:latest`
+
+```console
+$ docker pull library/joomla@sha256:1fe64aa2bc098decff5cd4e4d9a8c30168401bd7c6a4c30c7cf63505752f12f9
+```
 
 -	Total Virtual Size: 524.0 MB (523960178 bytes)
 -	Total v2 Content-Length: 175.7 MB (175727142 bytes)
@@ -4241,6 +4273,10 @@ CMD ["apache2-foreground"]
 
 ## `joomla:3.4.4-fpm`
 
+```console
+$ docker pull library/joomla@sha256:ba6a4e7e9b764894199d2ff87a14bfb1b7ff0f726155098f2d69abd1aa1c2729
+```
+
 -	Total Virtual Size: 497.2 MB (497224670 bytes)
 -	Total v2 Content-Length: 166.4 MB (166371070 bytes)
 
@@ -4670,6 +4706,10 @@ CMD ["php-fpm"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `joomla:3.4-fpm`
+
+```console
+$ docker pull library/joomla@sha256:35d9b6251da3aef27058595ec50595ce1a60ba3149884b33d559d3dd1d102c69
+```
 
 -	Total Virtual Size: 497.2 MB (497224670 bytes)
 -	Total v2 Content-Length: 166.4 MB (166371070 bytes)
@@ -5101,6 +5141,10 @@ CMD ["php-fpm"]
 
 ## `joomla:3-fpm`
 
+```console
+$ docker pull library/joomla@sha256:40406ca6f337a3dac084de1c1d78a56c94a4950f960432bad4c9e957e85ce272
+```
+
 -	Total Virtual Size: 497.2 MB (497224670 bytes)
 -	Total v2 Content-Length: 166.4 MB (166371070 bytes)
 
@@ -5530,6 +5574,10 @@ CMD ["php-fpm"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `joomla:fpm`
+
+```console
+$ docker pull library/joomla@sha256:8301db05afe6ce0e6b7e4781187a79dd1f959c9b248a21250d5a98db3670f351
+```
 
 -	Total Virtual Size: 497.2 MB (497224670 bytes)
 -	Total v2 Content-Length: 166.4 MB (166371070 bytes)

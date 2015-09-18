@@ -11,6 +11,10 @@
 
 ## `registry:latest`
 
+```console
+$ docker pull library/registry@sha256:ef9369fa1cf884474adebbe2c10bb3d6f82bab2f1c2bafaad14799cb30385e93
+```
+
 -	Total Virtual Size: 423.3 MB (423335757 bytes)
 -	Total v2 Content-Length: 166.9 MB (166894629 bytes)
 
@@ -231,6 +235,10 @@ CMD ["docker-registry"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `registry:0.8.1`
+
+```console
+$ docker pull library/registry@sha256:6d19fef3eff33ab22b3096e1a5933f17b9a5821b208df540f63f944bdd9b3fe1
+```
 
 -	Total Virtual Size: 429.2 MB (429220447 bytes)
 -	Total v2 Content-Length: 182.8 MB (182794383 bytes)
@@ -473,6 +481,10 @@ CMD ["/bin/sh" "-c" "exec docker-registry"]
 
 ## `registry:0.9.1`
 
+```console
+$ docker pull library/registry@sha256:06f2375123f7bc1478d860ddddeb5fe3cf85b7ff334e71e701e5e9ef6aa35519
+```
+
 -	Total Virtual Size: 423.3 MB (423336153 bytes)
 -	Total v2 Content-Length: 166.9 MB (166893677 bytes)
 
@@ -694,6 +706,10 @@ CMD ["docker-registry"]
 
 ## `registry:2`
 
+```console
+$ docker pull library/registry@sha256:b7de4f6226df56d18f83296efa77dedf9bb72e79838167be0484a3078836fab2
+```
+
 -	Total Virtual Size: 220.6 MB (220648934 bytes)
 -	Total v2 Content-Length: 75.8 MB (75799696 bytes)
 
@@ -867,6 +883,10 @@ CMD ["/etc/docker/registry/config.yml"]
 
 ## `registry:2.1`
 
+```console
+$ docker pull library/registry@sha256:df570e6612e477f0e49bdc660a4660541230e7962b0adf4cd3993ff6810105f9
+```
+
 -	Total Virtual Size: 220.6 MB (220648934 bytes)
 -	Total v2 Content-Length: 75.8 MB (75799696 bytes)
 
@@ -1039,6 +1059,10 @@ CMD ["/etc/docker/registry/config.yml"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `registry:2.1.1`
+
+```console
+$ docker pull library/registry@sha256:87a58011682ab600004f52e7be7f4a56f945747c8bc005b49a8e373ca78ec742
+```
 
 -	Total Virtual Size: 220.6 MB (220648934 bytes)
 -	Total v2 Content-Length: 75.8 MB (75799696 bytes)

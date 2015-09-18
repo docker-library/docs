@@ -12,6 +12,10 @@
 
 ## `mariadb:10.0.21`
 
+```console
+$ docker pull library/mariadb@sha256:36aa62cb79973bb38cd1dcfa6a6eb3441b4333930032474520d6937e379059a8
+```
+
 -	Total Virtual Size: 302.2 MB (302196693 bytes)
 -	Total v2 Content-Length: 102.8 MB (102770745 bytes)
 
@@ -243,6 +247,10 @@ CMD ["mysqld"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `mariadb:10.0`
+
+```console
+$ docker pull library/mariadb@sha256:c7b1bb4df701819e117aee903daba3bf4a56065cedeeaac804de6d7fd697da41
+```
 
 -	Total Virtual Size: 302.2 MB (302196693 bytes)
 -	Total v2 Content-Length: 102.8 MB (102770745 bytes)
@@ -476,6 +484,10 @@ CMD ["mysqld"]
 
 ## `mariadb:10`
 
+```console
+$ docker pull library/mariadb@sha256:4acb92231e8269d6e7b975c785b1a94f26d8393eea694e787b999c0753ad0007
+```
+
 -	Total Virtual Size: 302.2 MB (302196693 bytes)
 -	Total v2 Content-Length: 102.8 MB (102770745 bytes)
 
@@ -707,6 +719,10 @@ CMD ["mysqld"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `mariadb:latest`
+
+```console
+$ docker pull library/mariadb@sha256:f208beb8cd0b498d70ed5531a4064af77666617403b0d070aa9987884f3317b0
+```
 
 -	Total Virtual Size: 302.2 MB (302196693 bytes)
 -	Total v2 Content-Length: 102.8 MB (102770745 bytes)
@@ -940,6 +956,10 @@ CMD ["mysqld"]
 
 ## `mariadb:5.5.45`
 
+```console
+$ docker pull library/mariadb@sha256:b5b6f23a3908cb825920f2e1154f4052be674ee3169fb09b7afde3ea7c8c1efc
+```
+
 -	Total Virtual Size: 238.5 MB (238516936 bytes)
 -	Total v2 Content-Length: 81.7 MB (81664329 bytes)
 
@@ -1172,6 +1192,10 @@ CMD ["mysqld"]
 
 ## `mariadb:5.5`
 
+```console
+$ docker pull library/mariadb@sha256:f9168cdf1f02a7889eeba0d17dc69a3b066e64d84fee3baac8157aecef6f98ab
+```
+
 -	Total Virtual Size: 238.5 MB (238516936 bytes)
 -	Total v2 Content-Length: 81.7 MB (81664329 bytes)
 
@@ -1403,6 +1427,10 @@ CMD ["mysqld"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `mariadb:5`
+
+```console
+$ docker pull library/mariadb@sha256:a160fff6ffc146593907e688ee042f0ca9da89486dbf45dcf7f62489bdcaa8fe
+```
 
 -	Total Virtual Size: 238.5 MB (238516936 bytes)
 -	Total v2 Content-Length: 81.7 MB (81664329 bytes)

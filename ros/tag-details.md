@@ -16,6 +16,10 @@
 
 ## `ros:indigo-ros-core`
 
+```console
+$ docker pull library/ros@sha256:cb7cb4362ab78a7ea9e5662a559282044039b15563cfe35a42e0e40830699478
+```
+
 -	Total Virtual Size: 812.2 MB (812195956 bytes)
 -	Total v2 Content-Length: 250.1 MB (250051864 bytes)
 
@@ -263,6 +267,10 @@ CMD ["bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ros:indigo-ros-base`
+
+```console
+$ docker pull library/ros@sha256:32cea601332f417835cd23a25420160665b1882095219ced6f0de505d740bf8a
+```
 
 -	Total Virtual Size: 826.7 MB (826661981 bytes)
 -	Total v2 Content-Length: 253.5 MB (253461565 bytes)
@@ -541,6 +549,10 @@ RUN apt-get update && apt-get install -y\
 -	v2 Last-Modified: Thu, 27 Aug 2015 05:24:12 GMT
 
 ## `ros:indigo-robot`
+
+```console
+$ docker pull library/ros@sha256:a009cda97c0c3679d017921fa0beac148a5788f97704cf8d6c5b0ae21ffce167
+```
 
 -	Total Virtual Size: 1.0 GB (1037410962 bytes)
 -	Total v2 Content-Length: 321.5 MB (321548189 bytes)
@@ -850,6 +862,10 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:indigo-perception`
 
+```console
+$ docker pull library/ros@sha256:417adeadc1063d808c58427adbcb2081911e5177711f30f3a149f63becc2434d
+```
+
 -	Total Virtual Size: 1.7 GB (1739868931 bytes)
 -	Total v2 Content-Length: 517.2 MB (517191873 bytes)
 
@@ -1158,6 +1174,10 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:indigo`
 
+```console
+$ docker pull library/ros@sha256:fe1565681db446ee664570dd2c821d397418be067d47365856b0be8381166e54
+```
+
 -	Total Virtual Size: 826.7 MB (826661981 bytes)
 -	Total v2 Content-Length: 253.5 MB (253461565 bytes)
 
@@ -1435,6 +1455,10 @@ RUN apt-get update && apt-get install -y\
 -	v2 Last-Modified: Thu, 27 Aug 2015 05:24:12 GMT
 
 ## `ros:latest`
+
+```console
+$ docker pull library/ros@sha256:f045d61a3ac231f581ff5ea96bfa969a911d50b637806d71c7f8f7241bec7cd7
+```
 
 -	Total Virtual Size: 826.7 MB (826661981 bytes)
 -	Total v2 Content-Length: 253.5 MB (253461565 bytes)
@@ -1714,6 +1738,10 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:jade-ros-core`
 
+```console
+$ docker pull library/ros@sha256:5e61c545cb62e5f77b03cbddcb2c067c517223b61a0caaab64271c845143fd07
+```
+
 -	Total Virtual Size: 813.0 MB (812962751 bytes)
 -	Total v2 Content-Length: 250.2 MB (250161522 bytes)
 
@@ -1961,6 +1989,10 @@ CMD ["bash"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `ros:jade-ros-base`
+
+```console
+$ docker pull library/ros@sha256:987c29c097d5a52e9f37fd62d12f3ae196e043e5552b355ab48c719469ff73f8
+```
 
 -	Total Virtual Size: 827.6 MB (827570691 bytes)
 -	Total v2 Content-Length: 253.6 MB (253580701 bytes)
@@ -2239,6 +2271,10 @@ RUN apt-get update && apt-get install -y\
 -	v2 Last-Modified: Thu, 27 Aug 2015 05:38:48 GMT
 
 ## `ros:jade-robot`
+
+```console
+$ docker pull library/ros@sha256:b7684cb46b29802331dc281007492f2ad3faf6e7e6dd5d7a519bd0e349086b20
+```
 
 -	Total Virtual Size: 1.0 GB (1037927226 bytes)
 -	Total v2 Content-Length: 321.5 MB (321537812 bytes)
@@ -2548,6 +2584,10 @@ RUN apt-get update && apt-get install -y\
 
 ## `ros:jade-perception`
 
+```console
+$ docker pull library/ros@sha256:44327a7190997f61a27b2955714b7df1816a28782f955a7e3123d0709578c428
+```
+
 -	Total Virtual Size: 1.7 GB (1739619741 bytes)
 -	Total v2 Content-Length: 517.0 MB (517018027 bytes)
 
@@ -2855,6 +2895,10 @@ RUN apt-get update && apt-get install -y\
 -	v2 Last-Modified: Thu, 27 Aug 2015 05:43:16 GMT
 
 ## `ros:jade`
+
+```console
+$ docker pull library/ros@sha256:c6f8bcffa8262d5428a9b5453e9f2f9d8b602d2e588543c4dcad9c07acdcd771
+```
 
 -	Total Virtual Size: 827.6 MB (827570691 bytes)
 -	Total v2 Content-Length: 253.6 MB (253580701 bytes)

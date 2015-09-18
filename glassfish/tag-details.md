@@ -10,6 +10,10 @@
 
 ## `glassfish:4.0-jdk7`
 
+```console
+$ docker pull library/glassfish@sha256:418de17606209554c9b41f5290754bc11f4455de2833083549bb7221577bda3e
+```
+
 -	Total Virtual Size: 713.6 MB (713551773 bytes)
 -	Total v2 Content-Length: 353.9 MB (353937231 bytes)
 
@@ -268,6 +272,10 @@ CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 
 ## `glassfish:4.0`
 
+```console
+$ docker pull library/glassfish@sha256:65554937c00fa9a6d3b19688b5c18325859e9566a4bc5a60da50bf97a2699750
+```
+
 -	Total Virtual Size: 713.6 MB (713551773 bytes)
 -	Total v2 Content-Length: 353.9 MB (353937231 bytes)
 
@@ -525,6 +533,10 @@ CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `glassfish:4.1-jdk8`
+
+```console
+$ docker pull library/glassfish@sha256:0625436bf21a92ca8fab6409d9fea62afdbb70ea4999ea672d609ac9e9f9c73d
+```
 
 -	Total Virtual Size: 949.9 MB (949853054 bytes)
 -	Total v2 Content-Length: 419.8 MB (419810879 bytes)
@@ -831,6 +843,10 @@ CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 
 ## `glassfish:4.1`
 
+```console
+$ docker pull library/glassfish@sha256:9f1d111930b2d089685ee8aeeac9676ef2ca0bf8dec74d3b036dae1439043b95
+```
+
 -	Total Virtual Size: 949.9 MB (949853054 bytes)
 -	Total v2 Content-Length: 419.8 MB (419810879 bytes)
 
@@ -1135,6 +1151,10 @@ CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `glassfish:latest`
+
+```console
+$ docker pull library/glassfish@sha256:1b064d3f3e6ec8d10ee059185c4b6e0ce82379113146c281e37ba120342da2be
+```
 
 -	Total Virtual Size: 949.9 MB (949853054 bytes)
 -	Total v2 Content-Length: 419.8 MB (419810879 bytes)

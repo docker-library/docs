@@ -7,6 +7,10 @@
 
 ## `aerospike:3.6.0`
 
+```console
+$ docker pull library/aerospike@sha256:e6191043bf35a5ee813123e1dfd779d73565257c055049d17e7f575e22de4266
+```
+
 -	Total Virtual Size: 147.8 MB (147806667 bytes)
 -	Total v2 Content-Length: 58.7 MB (58716763 bytes)
 
@@ -138,6 +142,10 @@ CMD ["/usr/bin/asd" "--foreground"]
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `aerospike:latest`
+
+```console
+$ docker pull library/aerospike@sha256:c305289387b5a153a994981798bdafa139f53f8de4719cfa9f17f5bfe7f258bb
+```
 
 -	Total Virtual Size: 147.8 MB (147806667 bytes)
 -	Total v2 Content-Length: 58.7 MB (58716763 bytes)
