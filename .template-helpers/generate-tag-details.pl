@@ -83,7 +83,10 @@ sub get_manifest {
 
 	my $manifestTx = ua_req(get => "https://registry-1.docker.io/v2/$repo/manifests/$tag" => $authorizationHeader);
 	die "failed to get manifest for $image" unless $manifestTx->success;
-	return $manifests{$image} = $manifestTx->res->json;
+	return (
+		$manifestTx->res->headers->header('Docker-Content-Digest'),
+		$manifests{$image} = $manifestTx->res->json,
+	);
 }
 
 sub get_blob_headers {
@@ -161,7 +164,13 @@ while (my $image = shift) {
 	say '## `' . $image . '`';
 	my ($repo, $tag) = split_image_name($image);
 
-	my $manifest = get_manifest($repo, $tag);
+	my ($digest, $manifest) = get_manifest($repo, $tag);
+
+	print "\n";
+	say '```console';
+	say '$ docker pull ' . $repo . '@' . $digest;
+	say '```';
+
 	my %parentChild;
 	my %totals = (
 		virtual_size => 0,
