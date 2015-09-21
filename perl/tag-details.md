@@ -7,22 +7,22 @@
 -	[`perl:5.22`](#perl522)
 -	[`perl:5.22.0`](#perl5220)
 -	[`perl:5.20`](#perl520)
--	[`perl:5.20.2`](#perl5202)
+-	[`perl:5.20.3`](#perl5203)
 -	[`perl:threaded`](#perlthreaded)
 -	[`perl:5-threaded`](#perl5-threaded)
 -	[`perl:5.22-threaded`](#perl522-threaded)
 -	[`perl:5.22.0-threaded`](#perl5220-threaded)
 -	[`perl:5.20-threaded`](#perl520-threaded)
--	[`perl:5.20.2-threaded`](#perl5202-threaded)
+-	[`perl:5.20.3-threaded`](#perl5203-threaded)
 
 ## `perl:latest`
 
 ```console
-$ docker pull library/perl@sha256:c333684cfd9b7b5397f02f1811fc44f10774acfb4d9c1931e2a4d25f836c9560
+$ docker pull library/perl@sha256:fb796e216a1b6ac831fbf6fd87885837e269f8f5fbdfaa0543c88007e814d74b
 ```
 
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
--	Total v2 Content-Length: 254.2 MB (254217891 bytes)
+-	Total v2 Content-Length: 254.2 MB (254217856 bytes)
 
 ### Layers (13)
 
@@ -184,35 +184,35 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
+#### `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
 
 ```dockerfile
-COPY file:bb70643053b2e98aac4d542544be16728b72b3501fa681ccc497900b5d4ea163 in /usr/src/perl/
+COPY file:c8200406a5ee5be485187bfbbeb7f1c382915eed9e7f44333a436ced13aba0a9 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:37 GMT
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 311.0 B
--	v2 Blob: `sha256:003e8d9cbe8cfcd6c2265a1c36bdc65f68d5df648598603448c89d961efa146c`
--	v2 Content-Length: 401.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 10:19:04 GMT
+-	v2 Blob: `sha256:52f8b9eac90bb926685e5b6574680eff6b6ebd4be314742e1c89cf7658760005`
+-	v2 Content-Length: 399.0 B
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:18 GMT
 
-#### `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
+#### `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:38 GMT
--	Parent Layer: `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
+-	Parent Layer: `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8ea6118f7e93de225e2c23af81b308dbe8851ded4e73b2497f9a0688e38dde21`
+#### `a524e326ad609e43f0f0ceaeb0587049613e1d8875803a75beab71bb021518f2`
 
 ```dockerfile
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 -o perl-5.22.0.tar.bz2\
@@ -231,37 +231,37 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:43 GMT
--	Parent Layer: `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:12 GMT
+-	Parent Layer: `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 MB (50026791 bytes)
--	v2 Blob: `sha256:bd1ed001fca1cced7b67e6f8d3aeb36b2f56e392a081fa888ad43d5b88233739`
--	v2 Content-Length: 13.4 MB (13448070 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:18:55 GMT
+-	v2 Blob: `sha256:fcf337203514ec410c35eaae19609655f714f9f62cd6baf8cb2b7637ca51745e`
+-	v2 Content-Length: 13.4 MB (13448037 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:11 GMT
 
-#### `8118d76069a554ccf2dc67a653fa094745b11ddd01c6f020d666d07e0551ad2c`
+#### `bfec432698d1d213b4ffe64bba7346aea4d1df056554da21ae980479073d3c29`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:44 GMT
--	Parent Layer: `8ea6118f7e93de225e2c23af81b308dbe8851ded4e73b2497f9a0688e38dde21`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:13 GMT
+-	Parent Layer: `a524e326ad609e43f0f0ceaeb0587049613e1d8875803a75beab71bb021518f2`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5d6203dfa61cb5f134b16679fbe5ebf1fef6bf5a53c8d75a13fa6e58b1a7f132`
+#### `8fc3b598ce113d14f06ad5d99667de4037f3489f41281928b6b2494cf96156bc`
 
 ```dockerfile
 CMD ["perl5.22.0" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:44 GMT
--	Parent Layer: `8118d76069a554ccf2dc67a653fa094745b11ddd01c6f020d666d07e0551ad2c`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:14 GMT
+-	Parent Layer: `bfec432698d1d213b4ffe64bba7346aea4d1df056554da21ae980479073d3c29`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -270,11 +270,11 @@ CMD ["perl5.22.0" "-de0"]
 ## `perl:5`
 
 ```console
-$ docker pull library/perl@sha256:b332f41299be9e416c4dd8f750637d4c8550bc7e7a1c3e21812160fc277419d6
+$ docker pull library/perl@sha256:014aca822ce0442e3a9c0b2d018885938029a6e5303bd706ca8d771649d7c972
 ```
 
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
--	Total v2 Content-Length: 254.2 MB (254217891 bytes)
+-	Total v2 Content-Length: 254.2 MB (254217856 bytes)
 
 ### Layers (13)
 
@@ -436,35 +436,35 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
+#### `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
 
 ```dockerfile
-COPY file:bb70643053b2e98aac4d542544be16728b72b3501fa681ccc497900b5d4ea163 in /usr/src/perl/
+COPY file:c8200406a5ee5be485187bfbbeb7f1c382915eed9e7f44333a436ced13aba0a9 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:37 GMT
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 311.0 B
--	v2 Blob: `sha256:003e8d9cbe8cfcd6c2265a1c36bdc65f68d5df648598603448c89d961efa146c`
--	v2 Content-Length: 401.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 10:19:04 GMT
+-	v2 Blob: `sha256:52f8b9eac90bb926685e5b6574680eff6b6ebd4be314742e1c89cf7658760005`
+-	v2 Content-Length: 399.0 B
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:18 GMT
 
-#### `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
+#### `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:38 GMT
--	Parent Layer: `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
+-	Parent Layer: `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8ea6118f7e93de225e2c23af81b308dbe8851ded4e73b2497f9a0688e38dde21`
+#### `a524e326ad609e43f0f0ceaeb0587049613e1d8875803a75beab71bb021518f2`
 
 ```dockerfile
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 -o perl-5.22.0.tar.bz2\
@@ -483,37 +483,37 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:43 GMT
--	Parent Layer: `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:12 GMT
+-	Parent Layer: `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 MB (50026791 bytes)
--	v2 Blob: `sha256:bd1ed001fca1cced7b67e6f8d3aeb36b2f56e392a081fa888ad43d5b88233739`
--	v2 Content-Length: 13.4 MB (13448070 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:18:55 GMT
+-	v2 Blob: `sha256:fcf337203514ec410c35eaae19609655f714f9f62cd6baf8cb2b7637ca51745e`
+-	v2 Content-Length: 13.4 MB (13448037 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:11 GMT
 
-#### `8118d76069a554ccf2dc67a653fa094745b11ddd01c6f020d666d07e0551ad2c`
+#### `bfec432698d1d213b4ffe64bba7346aea4d1df056554da21ae980479073d3c29`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:44 GMT
--	Parent Layer: `8ea6118f7e93de225e2c23af81b308dbe8851ded4e73b2497f9a0688e38dde21`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:13 GMT
+-	Parent Layer: `a524e326ad609e43f0f0ceaeb0587049613e1d8875803a75beab71bb021518f2`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5d6203dfa61cb5f134b16679fbe5ebf1fef6bf5a53c8d75a13fa6e58b1a7f132`
+#### `8fc3b598ce113d14f06ad5d99667de4037f3489f41281928b6b2494cf96156bc`
 
 ```dockerfile
 CMD ["perl5.22.0" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:44 GMT
--	Parent Layer: `8118d76069a554ccf2dc67a653fa094745b11ddd01c6f020d666d07e0551ad2c`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:14 GMT
+-	Parent Layer: `bfec432698d1d213b4ffe64bba7346aea4d1df056554da21ae980479073d3c29`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -522,11 +522,11 @@ CMD ["perl5.22.0" "-de0"]
 ## `perl:5.22`
 
 ```console
-$ docker pull library/perl@sha256:d1fd145c214381215a7bdad47df106b5074b715d6b483ff681e24ade06d3479b
+$ docker pull library/perl@sha256:693c27d1b0c429fcc4b7b79178d4bd37adc2cbf09770bb439cfb1a4b600f03dc
 ```
 
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
--	Total v2 Content-Length: 254.2 MB (254217891 bytes)
+-	Total v2 Content-Length: 254.2 MB (254217856 bytes)
 
 ### Layers (13)
 
@@ -688,35 +688,35 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
+#### `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
 
 ```dockerfile
-COPY file:bb70643053b2e98aac4d542544be16728b72b3501fa681ccc497900b5d4ea163 in /usr/src/perl/
+COPY file:c8200406a5ee5be485187bfbbeb7f1c382915eed9e7f44333a436ced13aba0a9 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:37 GMT
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 311.0 B
--	v2 Blob: `sha256:003e8d9cbe8cfcd6c2265a1c36bdc65f68d5df648598603448c89d961efa146c`
--	v2 Content-Length: 401.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 10:19:04 GMT
+-	v2 Blob: `sha256:52f8b9eac90bb926685e5b6574680eff6b6ebd4be314742e1c89cf7658760005`
+-	v2 Content-Length: 399.0 B
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:18 GMT
 
-#### `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
+#### `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:38 GMT
--	Parent Layer: `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
+-	Parent Layer: `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8ea6118f7e93de225e2c23af81b308dbe8851ded4e73b2497f9a0688e38dde21`
+#### `a524e326ad609e43f0f0ceaeb0587049613e1d8875803a75beab71bb021518f2`
 
 ```dockerfile
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 -o perl-5.22.0.tar.bz2\
@@ -735,37 +735,37 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:43 GMT
--	Parent Layer: `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:12 GMT
+-	Parent Layer: `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 MB (50026791 bytes)
--	v2 Blob: `sha256:bd1ed001fca1cced7b67e6f8d3aeb36b2f56e392a081fa888ad43d5b88233739`
--	v2 Content-Length: 13.4 MB (13448070 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:18:55 GMT
+-	v2 Blob: `sha256:fcf337203514ec410c35eaae19609655f714f9f62cd6baf8cb2b7637ca51745e`
+-	v2 Content-Length: 13.4 MB (13448037 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:11 GMT
 
-#### `8118d76069a554ccf2dc67a653fa094745b11ddd01c6f020d666d07e0551ad2c`
+#### `bfec432698d1d213b4ffe64bba7346aea4d1df056554da21ae980479073d3c29`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:44 GMT
--	Parent Layer: `8ea6118f7e93de225e2c23af81b308dbe8851ded4e73b2497f9a0688e38dde21`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:13 GMT
+-	Parent Layer: `a524e326ad609e43f0f0ceaeb0587049613e1d8875803a75beab71bb021518f2`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5d6203dfa61cb5f134b16679fbe5ebf1fef6bf5a53c8d75a13fa6e58b1a7f132`
+#### `8fc3b598ce113d14f06ad5d99667de4037f3489f41281928b6b2494cf96156bc`
 
 ```dockerfile
 CMD ["perl5.22.0" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:44 GMT
--	Parent Layer: `8118d76069a554ccf2dc67a653fa094745b11ddd01c6f020d666d07e0551ad2c`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:14 GMT
+-	Parent Layer: `bfec432698d1d213b4ffe64bba7346aea4d1df056554da21ae980479073d3c29`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -774,11 +774,11 @@ CMD ["perl5.22.0" "-de0"]
 ## `perl:5.22.0`
 
 ```console
-$ docker pull library/perl@sha256:2c7c33800eac99b34ea44f523629c2c9e02ccd222d2e5e9d2c85819528f0df17
+$ docker pull library/perl@sha256:d7f6b199299b27c1896b54ffea4f86d5fbfba9b3f1fb03003d9775837288ad50
 ```
 
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
--	Total v2 Content-Length: 254.2 MB (254217891 bytes)
+-	Total v2 Content-Length: 254.2 MB (254217856 bytes)
 
 ### Layers (13)
 
@@ -940,35 +940,35 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
+#### `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
 
 ```dockerfile
-COPY file:bb70643053b2e98aac4d542544be16728b72b3501fa681ccc497900b5d4ea163 in /usr/src/perl/
+COPY file:c8200406a5ee5be485187bfbbeb7f1c382915eed9e7f44333a436ced13aba0a9 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:37 GMT
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 311.0 B
--	v2 Blob: `sha256:003e8d9cbe8cfcd6c2265a1c36bdc65f68d5df648598603448c89d961efa146c`
--	v2 Content-Length: 401.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 10:19:04 GMT
+-	v2 Blob: `sha256:52f8b9eac90bb926685e5b6574680eff6b6ebd4be314742e1c89cf7658760005`
+-	v2 Content-Length: 399.0 B
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:18 GMT
 
-#### `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
+#### `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:38 GMT
--	Parent Layer: `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
+-	Parent Layer: `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8ea6118f7e93de225e2c23af81b308dbe8851ded4e73b2497f9a0688e38dde21`
+#### `a524e326ad609e43f0f0ceaeb0587049613e1d8875803a75beab71bb021518f2`
 
 ```dockerfile
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 -o perl-5.22.0.tar.bz2\
@@ -987,37 +987,37 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:43 GMT
--	Parent Layer: `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:12 GMT
+-	Parent Layer: `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 MB (50026791 bytes)
--	v2 Blob: `sha256:bd1ed001fca1cced7b67e6f8d3aeb36b2f56e392a081fa888ad43d5b88233739`
--	v2 Content-Length: 13.4 MB (13448070 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:18:55 GMT
+-	v2 Blob: `sha256:fcf337203514ec410c35eaae19609655f714f9f62cd6baf8cb2b7637ca51745e`
+-	v2 Content-Length: 13.4 MB (13448037 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:11 GMT
 
-#### `8118d76069a554ccf2dc67a653fa094745b11ddd01c6f020d666d07e0551ad2c`
+#### `bfec432698d1d213b4ffe64bba7346aea4d1df056554da21ae980479073d3c29`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:44 GMT
--	Parent Layer: `8ea6118f7e93de225e2c23af81b308dbe8851ded4e73b2497f9a0688e38dde21`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:13 GMT
+-	Parent Layer: `a524e326ad609e43f0f0ceaeb0587049613e1d8875803a75beab71bb021518f2`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5d6203dfa61cb5f134b16679fbe5ebf1fef6bf5a53c8d75a13fa6e58b1a7f132`
+#### `8fc3b598ce113d14f06ad5d99667de4037f3489f41281928b6b2494cf96156bc`
 
 ```dockerfile
 CMD ["perl5.22.0" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 09:53:44 GMT
--	Parent Layer: `8118d76069a554ccf2dc67a653fa094745b11ddd01c6f020d666d07e0551ad2c`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:19:14 GMT
+-	Parent Layer: `bfec432698d1d213b4ffe64bba7346aea4d1df056554da21ae980479073d3c29`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1026,11 +1026,11 @@ CMD ["perl5.22.0" "-de0"]
 ## `perl:5.20`
 
 ```console
-$ docker pull library/perl@sha256:197b4cecae79d1f742f6ca05c064b62b394a67818001dcbac74da4b6a1d93ea6
+$ docker pull library/perl@sha256:6ca9d28d95a68666da9a9d6b36caaf333ff39c8a4b8cf0c0f1889347ac4c45f5
 ```
 
--	Total Virtual Size: 654.7 MB (654665833 bytes)
--	Total v2 Content-Length: 253.9 MB (253880742 bytes)
+-	Total Virtual Size: 654.7 MB (654714772 bytes)
+-	Total v2 Content-Length: 253.9 MB (253899023 bytes)
 
 ### Layers (13)
 
@@ -1192,45 +1192,45 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `7845e0c562dfc4c07b4cc0695e0f4a7f28695f6f573effe748138ea2c861dc08`
+#### `0ee9f821fdd235e48d29ec9b14f9951dd80167405b28bdaea489c21ef8749d48`
 
 ```dockerfile
-COPY file:865b3ce15e6050439113c6a91e926f606747a269f756ac73cc9ff4668ea05625 in /usr/src/perl/
+COPY file:75bfd850fa1c703e23e65e3ab4b5f29d167e32f90a110a7626acff955d6148f2 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:55:16 GMT
+-	Created: Mon, 21 Sep 2015 19:20:17 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.6 KB (1575 bytes)
--	v2 Blob: `sha256:93cb59ee1771516e05bfe645e0e7b6ec46d26a41b87f25bb941135ffc7d4ca4a`
--	v2 Content-Length: 1.0 KB (1007 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:26:10 GMT
+-	v2 Blob: `sha256:b644441b1a3bd6875b30e8dd78a30e9390ec0327da2077e730e0fbd2d40b3ca7`
+-	v2 Content-Length: 1.0 KB (1006 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:11:34 GMT
 
-#### `3fd6a9ce2f33f0555e34e3dcb6f4236fa070ef65d30ab622ee05471fa2ff98fe`
+#### `962cdf42ac846476bbac6d49bfea59e2aac9d5cd4d2c3cc3619a8b154cec6e89`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:55:16 GMT
--	Parent Layer: `7845e0c562dfc4c07b4cc0695e0f4a7f28695f6f573effe748138ea2c861dc08`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:20:17 GMT
+-	Parent Layer: `0ee9f821fdd235e48d29ec9b14f9951dd80167405b28bdaea489c21ef8749d48`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4b3fe5a82b776474fbdfa1523493bf89c903242a5a7eff184d66865c9eb64240`
+#### `6e457d51195a9c9eb207e9c6c36ea9f94cd7d32ede04910a40531fc5f35e1d21`
 
 ```dockerfile
-RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.2.tar.bz2 -o perl-5.20.2.tar.bz2\
-     && echo '63126c683b4c79c35008a47d56f7beae876c569f *perl-5.20.2.tar.bz2' | sha1sum -c -\
-     && tar --strip-components=1 -xjf perl-5.20.2.tar.bz2 -C /usr/src/perl\
-     && rm perl-5.20.2.tar.bz2\
+RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.3.tar.bz2 -o perl-5.20.3.tar.bz2\
+     && echo 'eedf9e3be3c83bef15911996ed18703cffe4d113 *perl-5.20.3.tar.bz2' | sha1sum -c -\
+     && tar --strip-components=1 -xjf perl-5.20.3.tar.bz2 -C /usr/src/perl\
+     && rm perl-5.20.3.tar.bz2\
      && cat *.patch | patch -p1\
      && ./Configure -Duse64bitall  -des\
      && make -j$(nproc)\
-     && make test_harness\
+     && TEST_JOBS=$(nproc) make test_harness\
      && make install\
      && cd /usr/src\
      && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm\
@@ -1239,50 +1239,50 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.2.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 10:09:36 GMT
--	Parent Layer: `3fd6a9ce2f33f0555e34e3dcb6f4236fa070ef65d30ab622ee05471fa2ff98fe`
--	Docker Version: 1.7.1
--	Virtual Size: 48.2 MB (48179300 bytes)
--	v2 Blob: `sha256:f66dc0d2baa07ce7aba2e0d931669d053c5942bd4f26635f4c0c3a9ed2ef9ff0`
--	v2 Content-Length: 13.1 MB (13110315 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:26:01 GMT
+-	Created: Mon, 21 Sep 2015 19:27:14 GMT
+-	Parent Layer: `962cdf42ac846476bbac6d49bfea59e2aac9d5cd4d2c3cc3619a8b154cec6e89`
+-	Docker Version: 1.8.2
+-	Virtual Size: 48.2 MB (48228239 bytes)
+-	v2 Blob: `sha256:b169deca9381eeb84c5f915e7446817094c100b813836e2f3e99e1303722aa71`
+-	v2 Content-Length: 13.1 MB (13128597 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:11:28 GMT
 
-#### `06c261ad9593cec9fa8d13b240265ce667fe3ac91f06fa844a5b068f22417e25`
+#### `85484a3cc6800b5f142454abe383314c1a894a22e888207b70fa43251b7c823e`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 10:09:36 GMT
--	Parent Layer: `4b3fe5a82b776474fbdfa1523493bf89c903242a5a7eff184d66865c9eb64240`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:27:15 GMT
+-	Parent Layer: `6e457d51195a9c9eb207e9c6c36ea9f94cd7d32ede04910a40531fc5f35e1d21`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `27e2e52cb05fb3b866d7f61a7d59dc41beeebd49492fbb4e67b327582392759a`
+#### `54904e3541f85150557cb7bb29b970310c5b6af89f110ae20e661160fd7f8031`
 
 ```dockerfile
-CMD ["perl5.20.2" "-de0"]
+CMD ["perl5.20.3" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 10:09:36 GMT
--	Parent Layer: `06c261ad9593cec9fa8d13b240265ce667fe3ac91f06fa844a5b068f22417e25`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:27:15 GMT
+-	Parent Layer: `85484a3cc6800b5f142454abe383314c1a894a22e888207b70fa43251b7c823e`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `perl:5.20.2`
+## `perl:5.20.3`
 
 ```console
-$ docker pull library/perl@sha256:46bd93abb96bf2009457645046c45f21b0c53283541ffbe5b7a0ca9e9943aab6
+$ docker pull library/perl@sha256:710b2d4393ec94f466c74ebbf82e67b33d7ea23abc0f61ac0572ffda195ee4a4
 ```
 
--	Total Virtual Size: 654.7 MB (654665833 bytes)
--	Total v2 Content-Length: 253.9 MB (253880742 bytes)
+-	Total Virtual Size: 654.7 MB (654714772 bytes)
+-	Total v2 Content-Length: 253.9 MB (253899023 bytes)
 
 ### Layers (13)
 
@@ -1444,45 +1444,45 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `7845e0c562dfc4c07b4cc0695e0f4a7f28695f6f573effe748138ea2c861dc08`
+#### `0ee9f821fdd235e48d29ec9b14f9951dd80167405b28bdaea489c21ef8749d48`
 
 ```dockerfile
-COPY file:865b3ce15e6050439113c6a91e926f606747a269f756ac73cc9ff4668ea05625 in /usr/src/perl/
+COPY file:75bfd850fa1c703e23e65e3ab4b5f29d167e32f90a110a7626acff955d6148f2 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:55:16 GMT
+-	Created: Mon, 21 Sep 2015 19:20:17 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.6 KB (1575 bytes)
--	v2 Blob: `sha256:93cb59ee1771516e05bfe645e0e7b6ec46d26a41b87f25bb941135ffc7d4ca4a`
--	v2 Content-Length: 1.0 KB (1007 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:26:10 GMT
+-	v2 Blob: `sha256:b644441b1a3bd6875b30e8dd78a30e9390ec0327da2077e730e0fbd2d40b3ca7`
+-	v2 Content-Length: 1.0 KB (1006 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:11:34 GMT
 
-#### `3fd6a9ce2f33f0555e34e3dcb6f4236fa070ef65d30ab622ee05471fa2ff98fe`
+#### `962cdf42ac846476bbac6d49bfea59e2aac9d5cd4d2c3cc3619a8b154cec6e89`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:55:16 GMT
--	Parent Layer: `7845e0c562dfc4c07b4cc0695e0f4a7f28695f6f573effe748138ea2c861dc08`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:20:17 GMT
+-	Parent Layer: `0ee9f821fdd235e48d29ec9b14f9951dd80167405b28bdaea489c21ef8749d48`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4b3fe5a82b776474fbdfa1523493bf89c903242a5a7eff184d66865c9eb64240`
+#### `6e457d51195a9c9eb207e9c6c36ea9f94cd7d32ede04910a40531fc5f35e1d21`
 
 ```dockerfile
-RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.2.tar.bz2 -o perl-5.20.2.tar.bz2\
-     && echo '63126c683b4c79c35008a47d56f7beae876c569f *perl-5.20.2.tar.bz2' | sha1sum -c -\
-     && tar --strip-components=1 -xjf perl-5.20.2.tar.bz2 -C /usr/src/perl\
-     && rm perl-5.20.2.tar.bz2\
+RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.3.tar.bz2 -o perl-5.20.3.tar.bz2\
+     && echo 'eedf9e3be3c83bef15911996ed18703cffe4d113 *perl-5.20.3.tar.bz2' | sha1sum -c -\
+     && tar --strip-components=1 -xjf perl-5.20.3.tar.bz2 -C /usr/src/perl\
+     && rm perl-5.20.3.tar.bz2\
      && cat *.patch | patch -p1\
      && ./Configure -Duse64bitall  -des\
      && make -j$(nproc)\
-     && make test_harness\
+     && TEST_JOBS=$(nproc) make test_harness\
      && make install\
      && cd /usr/src\
      && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm\
@@ -1491,37 +1491,37 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.2.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 10:09:36 GMT
--	Parent Layer: `3fd6a9ce2f33f0555e34e3dcb6f4236fa070ef65d30ab622ee05471fa2ff98fe`
--	Docker Version: 1.7.1
--	Virtual Size: 48.2 MB (48179300 bytes)
--	v2 Blob: `sha256:f66dc0d2baa07ce7aba2e0d931669d053c5942bd4f26635f4c0c3a9ed2ef9ff0`
--	v2 Content-Length: 13.1 MB (13110315 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:26:01 GMT
+-	Created: Mon, 21 Sep 2015 19:27:14 GMT
+-	Parent Layer: `962cdf42ac846476bbac6d49bfea59e2aac9d5cd4d2c3cc3619a8b154cec6e89`
+-	Docker Version: 1.8.2
+-	Virtual Size: 48.2 MB (48228239 bytes)
+-	v2 Blob: `sha256:b169deca9381eeb84c5f915e7446817094c100b813836e2f3e99e1303722aa71`
+-	v2 Content-Length: 13.1 MB (13128597 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:11:28 GMT
 
-#### `06c261ad9593cec9fa8d13b240265ce667fe3ac91f06fa844a5b068f22417e25`
+#### `85484a3cc6800b5f142454abe383314c1a894a22e888207b70fa43251b7c823e`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 10:09:36 GMT
--	Parent Layer: `4b3fe5a82b776474fbdfa1523493bf89c903242a5a7eff184d66865c9eb64240`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:27:15 GMT
+-	Parent Layer: `6e457d51195a9c9eb207e9c6c36ea9f94cd7d32ede04910a40531fc5f35e1d21`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `27e2e52cb05fb3b866d7f61a7d59dc41beeebd49492fbb4e67b327582392759a`
+#### `54904e3541f85150557cb7bb29b970310c5b6af89f110ae20e661160fd7f8031`
 
 ```dockerfile
-CMD ["perl5.20.2" "-de0"]
+CMD ["perl5.20.3" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 10:09:36 GMT
--	Parent Layer: `06c261ad9593cec9fa8d13b240265ce667fe3ac91f06fa844a5b068f22417e25`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:27:15 GMT
+-	Parent Layer: `85484a3cc6800b5f142454abe383314c1a894a22e888207b70fa43251b7c823e`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1530,11 +1530,11 @@ CMD ["perl5.20.2" "-de0"]
 ## `perl:threaded`
 
 ```console
-$ docker pull library/perl@sha256:6bb07ec606c08e18b96e36d7363146c5a49c86356cb94a8526e007e019408052
+$ docker pull library/perl@sha256:77d0f60824a1cc7c616a5008116f363aa7c7f2d9478013eb17b2e4512fd9eca7
 ```
 
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
--	Total v2 Content-Length: 254.3 MB (254271563 bytes)
+-	Total v2 Content-Length: 254.3 MB (254270593 bytes)
 
 ### Layers (13)
 
@@ -1696,35 +1696,35 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
+#### `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
 
 ```dockerfile
-COPY file:bb70643053b2e98aac4d542544be16728b72b3501fa681ccc497900b5d4ea163 in /usr/src/perl/
+COPY file:c8200406a5ee5be485187bfbbeb7f1c382915eed9e7f44333a436ced13aba0a9 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:37 GMT
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 311.0 B
--	v2 Blob: `sha256:003e8d9cbe8cfcd6c2265a1c36bdc65f68d5df648598603448c89d961efa146c`
--	v2 Content-Length: 401.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 10:19:04 GMT
+-	v2 Blob: `sha256:52f8b9eac90bb926685e5b6574680eff6b6ebd4be314742e1c89cf7658760005`
+-	v2 Content-Length: 399.0 B
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:18 GMT
 
-#### `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
+#### `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:38 GMT
--	Parent Layer: `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
+-	Parent Layer: `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e5bd016af4b786d8eb79260d31cb8ba6efc5eb271091d00d0378c3cfccc757ba`
+#### `3f9ebf2e824389bf31e1121b0dba3a994b72a56e85d21c67d27669dc0590914b`
 
 ```dockerfile
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 -o perl-5.22.0.tar.bz2\
@@ -1743,37 +1743,37 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:15 GMT
--	Parent Layer: `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:01 GMT
+-	Parent Layer: `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.1 MB (50054450 bytes)
--	v2 Blob: `sha256:bbe174f2bbd334a6ccfacc0def678ed6f019ce9253a1fd2bf2aea47debbd5778`
--	v2 Content-Length: 13.5 MB (13501742 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:27:39 GMT
+-	v2 Blob: `sha256:9cbcf2206f11144c2a81777db617210da68d18365d4d33bcfe9ef4653aef0615`
+-	v2 Content-Length: 13.5 MB (13500774 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:12:31 GMT
 
-#### `513c54a5b7a9d48321ae249febff3b7078022ed5ce8c9f2a95e80790428b1823`
+#### `61e47d7d0fec6b15fd73921160055d1186a36500043020de54a573d64bbe1886`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:15 GMT
--	Parent Layer: `e5bd016af4b786d8eb79260d31cb8ba6efc5eb271091d00d0378c3cfccc757ba`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:02 GMT
+-	Parent Layer: `3f9ebf2e824389bf31e1121b0dba3a994b72a56e85d21c67d27669dc0590914b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `6946b1f2d2f1fd5ed904c7486842a4e999fa94155153afe94f25147979a802cd`
+#### `cfc9b34f87d2f1171a692e4f51df1a0d2e6acf46ba9d9d9e854a35dcd7195605`
 
 ```dockerfile
 CMD ["perl5.22.0" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:16 GMT
--	Parent Layer: `513c54a5b7a9d48321ae249febff3b7078022ed5ce8c9f2a95e80790428b1823`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:02 GMT
+-	Parent Layer: `61e47d7d0fec6b15fd73921160055d1186a36500043020de54a573d64bbe1886`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1782,11 +1782,11 @@ CMD ["perl5.22.0" "-de0"]
 ## `perl:5-threaded`
 
 ```console
-$ docker pull library/perl@sha256:202d1c66824025ca98a338f570aa190467443d83f16b0dde8549ba05429cf20e
+$ docker pull library/perl@sha256:167d7aefff9056b5c52639b489804df22f8d2f6b75f1b48f5b836185b046fe62
 ```
 
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
--	Total v2 Content-Length: 254.3 MB (254271563 bytes)
+-	Total v2 Content-Length: 254.3 MB (254270593 bytes)
 
 ### Layers (13)
 
@@ -1948,35 +1948,35 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
+#### `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
 
 ```dockerfile
-COPY file:bb70643053b2e98aac4d542544be16728b72b3501fa681ccc497900b5d4ea163 in /usr/src/perl/
+COPY file:c8200406a5ee5be485187bfbbeb7f1c382915eed9e7f44333a436ced13aba0a9 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:37 GMT
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 311.0 B
--	v2 Blob: `sha256:003e8d9cbe8cfcd6c2265a1c36bdc65f68d5df648598603448c89d961efa146c`
--	v2 Content-Length: 401.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 10:19:04 GMT
+-	v2 Blob: `sha256:52f8b9eac90bb926685e5b6574680eff6b6ebd4be314742e1c89cf7658760005`
+-	v2 Content-Length: 399.0 B
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:18 GMT
 
-#### `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
+#### `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:38 GMT
--	Parent Layer: `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
+-	Parent Layer: `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e5bd016af4b786d8eb79260d31cb8ba6efc5eb271091d00d0378c3cfccc757ba`
+#### `3f9ebf2e824389bf31e1121b0dba3a994b72a56e85d21c67d27669dc0590914b`
 
 ```dockerfile
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 -o perl-5.22.0.tar.bz2\
@@ -1995,37 +1995,37 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:15 GMT
--	Parent Layer: `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:01 GMT
+-	Parent Layer: `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.1 MB (50054450 bytes)
--	v2 Blob: `sha256:bbe174f2bbd334a6ccfacc0def678ed6f019ce9253a1fd2bf2aea47debbd5778`
--	v2 Content-Length: 13.5 MB (13501742 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:27:39 GMT
+-	v2 Blob: `sha256:9cbcf2206f11144c2a81777db617210da68d18365d4d33bcfe9ef4653aef0615`
+-	v2 Content-Length: 13.5 MB (13500774 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:12:31 GMT
 
-#### `513c54a5b7a9d48321ae249febff3b7078022ed5ce8c9f2a95e80790428b1823`
+#### `61e47d7d0fec6b15fd73921160055d1186a36500043020de54a573d64bbe1886`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:15 GMT
--	Parent Layer: `e5bd016af4b786d8eb79260d31cb8ba6efc5eb271091d00d0378c3cfccc757ba`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:02 GMT
+-	Parent Layer: `3f9ebf2e824389bf31e1121b0dba3a994b72a56e85d21c67d27669dc0590914b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `6946b1f2d2f1fd5ed904c7486842a4e999fa94155153afe94f25147979a802cd`
+#### `cfc9b34f87d2f1171a692e4f51df1a0d2e6acf46ba9d9d9e854a35dcd7195605`
 
 ```dockerfile
 CMD ["perl5.22.0" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:16 GMT
--	Parent Layer: `513c54a5b7a9d48321ae249febff3b7078022ed5ce8c9f2a95e80790428b1823`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:02 GMT
+-	Parent Layer: `61e47d7d0fec6b15fd73921160055d1186a36500043020de54a573d64bbe1886`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2034,11 +2034,11 @@ CMD ["perl5.22.0" "-de0"]
 ## `perl:5.22-threaded`
 
 ```console
-$ docker pull library/perl@sha256:3165951018282466cc4eacb6564cc0520efda22d5df508386af19055d60e02f1
+$ docker pull library/perl@sha256:5a54c622f71aeeabcb40ee297804dfc3399aef0315d7629d98e7772e4ee54617
 ```
 
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
--	Total v2 Content-Length: 254.3 MB (254271563 bytes)
+-	Total v2 Content-Length: 254.3 MB (254270593 bytes)
 
 ### Layers (13)
 
@@ -2200,35 +2200,35 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
+#### `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
 
 ```dockerfile
-COPY file:bb70643053b2e98aac4d542544be16728b72b3501fa681ccc497900b5d4ea163 in /usr/src/perl/
+COPY file:c8200406a5ee5be485187bfbbeb7f1c382915eed9e7f44333a436ced13aba0a9 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:37 GMT
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 311.0 B
--	v2 Blob: `sha256:003e8d9cbe8cfcd6c2265a1c36bdc65f68d5df648598603448c89d961efa146c`
--	v2 Content-Length: 401.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 10:19:04 GMT
+-	v2 Blob: `sha256:52f8b9eac90bb926685e5b6574680eff6b6ebd4be314742e1c89cf7658760005`
+-	v2 Content-Length: 399.0 B
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:18 GMT
 
-#### `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
+#### `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:38 GMT
--	Parent Layer: `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
+-	Parent Layer: `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e5bd016af4b786d8eb79260d31cb8ba6efc5eb271091d00d0378c3cfccc757ba`
+#### `3f9ebf2e824389bf31e1121b0dba3a994b72a56e85d21c67d27669dc0590914b`
 
 ```dockerfile
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 -o perl-5.22.0.tar.bz2\
@@ -2247,37 +2247,37 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:15 GMT
--	Parent Layer: `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:01 GMT
+-	Parent Layer: `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.1 MB (50054450 bytes)
--	v2 Blob: `sha256:bbe174f2bbd334a6ccfacc0def678ed6f019ce9253a1fd2bf2aea47debbd5778`
--	v2 Content-Length: 13.5 MB (13501742 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:27:39 GMT
+-	v2 Blob: `sha256:9cbcf2206f11144c2a81777db617210da68d18365d4d33bcfe9ef4653aef0615`
+-	v2 Content-Length: 13.5 MB (13500774 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:12:31 GMT
 
-#### `513c54a5b7a9d48321ae249febff3b7078022ed5ce8c9f2a95e80790428b1823`
+#### `61e47d7d0fec6b15fd73921160055d1186a36500043020de54a573d64bbe1886`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:15 GMT
--	Parent Layer: `e5bd016af4b786d8eb79260d31cb8ba6efc5eb271091d00d0378c3cfccc757ba`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:02 GMT
+-	Parent Layer: `3f9ebf2e824389bf31e1121b0dba3a994b72a56e85d21c67d27669dc0590914b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `6946b1f2d2f1fd5ed904c7486842a4e999fa94155153afe94f25147979a802cd`
+#### `cfc9b34f87d2f1171a692e4f51df1a0d2e6acf46ba9d9d9e854a35dcd7195605`
 
 ```dockerfile
 CMD ["perl5.22.0" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:16 GMT
--	Parent Layer: `513c54a5b7a9d48321ae249febff3b7078022ed5ce8c9f2a95e80790428b1823`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:02 GMT
+-	Parent Layer: `61e47d7d0fec6b15fd73921160055d1186a36500043020de54a573d64bbe1886`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2286,11 +2286,11 @@ CMD ["perl5.22.0" "-de0"]
 ## `perl:5.22.0-threaded`
 
 ```console
-$ docker pull library/perl@sha256:3fb8f1a6a3dffa6e1d6e449ccd0c96d38c93233cdeaa1587c04de2e1d18a09bb
+$ docker pull library/perl@sha256:7e3cbf0daa1a6493e0011ec904406edde019552c92dd65fd1c95095edc0d01b1
 ```
 
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
--	Total v2 Content-Length: 254.3 MB (254271563 bytes)
+-	Total v2 Content-Length: 254.3 MB (254270593 bytes)
 
 ### Layers (13)
 
@@ -2452,35 +2452,35 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
+#### `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
 
 ```dockerfile
-COPY file:bb70643053b2e98aac4d542544be16728b72b3501fa681ccc497900b5d4ea163 in /usr/src/perl/
+COPY file:c8200406a5ee5be485187bfbbeb7f1c382915eed9e7f44333a436ced13aba0a9 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:37 GMT
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 311.0 B
--	v2 Blob: `sha256:003e8d9cbe8cfcd6c2265a1c36bdc65f68d5df648598603448c89d961efa146c`
--	v2 Content-Length: 401.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 10:19:04 GMT
+-	v2 Blob: `sha256:52f8b9eac90bb926685e5b6574680eff6b6ebd4be314742e1c89cf7658760005`
+-	v2 Content-Length: 399.0 B
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:09:18 GMT
 
-#### `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
+#### `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:39:38 GMT
--	Parent Layer: `1b9c38279cc9e24ad97bfd23e32ddd74a39aac61e6efb9398912ed3593a363e0`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:05:04 GMT
+-	Parent Layer: `4dae359095340e1b857dadbddd3271a29ad4b68c45ec44a569263c8c4eb7b339`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e5bd016af4b786d8eb79260d31cb8ba6efc5eb271091d00d0378c3cfccc757ba`
+#### `3f9ebf2e824389bf31e1121b0dba3a994b72a56e85d21c67d27669dc0590914b`
 
 ```dockerfile
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 -o perl-5.22.0.tar.bz2\
@@ -2499,37 +2499,37 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.22.0.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:15 GMT
--	Parent Layer: `7316dc1854ff70968fffce57d358c3bce207ac7b612d7f056884287de338c447`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:01 GMT
+-	Parent Layer: `b96cca44241e7d032f8bcdd4065e138f1bdb2ba787aaa7849a59e660b663a0d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.1 MB (50054450 bytes)
--	v2 Blob: `sha256:bbe174f2bbd334a6ccfacc0def678ed6f019ce9253a1fd2bf2aea47debbd5778`
--	v2 Content-Length: 13.5 MB (13501742 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:27:39 GMT
+-	v2 Blob: `sha256:9cbcf2206f11144c2a81777db617210da68d18365d4d33bcfe9ef4653aef0615`
+-	v2 Content-Length: 13.5 MB (13500774 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:12:31 GMT
 
-#### `513c54a5b7a9d48321ae249febff3b7078022ed5ce8c9f2a95e80790428b1823`
+#### `61e47d7d0fec6b15fd73921160055d1186a36500043020de54a573d64bbe1886`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:15 GMT
--	Parent Layer: `e5bd016af4b786d8eb79260d31cb8ba6efc5eb271091d00d0378c3cfccc757ba`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:02 GMT
+-	Parent Layer: `3f9ebf2e824389bf31e1121b0dba3a994b72a56e85d21c67d27669dc0590914b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `6946b1f2d2f1fd5ed904c7486842a4e999fa94155153afe94f25147979a802cd`
+#### `cfc9b34f87d2f1171a692e4f51df1a0d2e6acf46ba9d9d9e854a35dcd7195605`
 
 ```dockerfile
 CMD ["perl5.22.0" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 10:26:16 GMT
--	Parent Layer: `513c54a5b7a9d48321ae249febff3b7078022ed5ce8c9f2a95e80790428b1823`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:44:02 GMT
+-	Parent Layer: `61e47d7d0fec6b15fd73921160055d1186a36500043020de54a573d64bbe1886`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2538,11 +2538,11 @@ CMD ["perl5.22.0" "-de0"]
 ## `perl:5.20-threaded`
 
 ```console
-$ docker pull library/perl@sha256:3b74e27e1f96f4e6fde91e402b38f3fcfecf934b755c9422949b80c0c513ba75
+$ docker pull library/perl@sha256:514fa33f7301d651fc25fab267dea3af51fc4c3a3b87dab91425d1f42a5e5800
 ```
 
--	Total Virtual Size: 654.7 MB (654695097 bytes)
--	Total v2 Content-Length: 253.9 MB (253945363 bytes)
+-	Total Virtual Size: 654.7 MB (654741988 bytes)
+-	Total v2 Content-Length: 253.9 MB (253943850 bytes)
 
 ### Layers (13)
 
@@ -2704,45 +2704,45 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `7845e0c562dfc4c07b4cc0695e0f4a7f28695f6f573effe748138ea2c861dc08`
+#### `0ee9f821fdd235e48d29ec9b14f9951dd80167405b28bdaea489c21ef8749d48`
 
 ```dockerfile
-COPY file:865b3ce15e6050439113c6a91e926f606747a269f756ac73cc9ff4668ea05625 in /usr/src/perl/
+COPY file:75bfd850fa1c703e23e65e3ab4b5f29d167e32f90a110a7626acff955d6148f2 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:55:16 GMT
+-	Created: Mon, 21 Sep 2015 19:20:17 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.6 KB (1575 bytes)
--	v2 Blob: `sha256:93cb59ee1771516e05bfe645e0e7b6ec46d26a41b87f25bb941135ffc7d4ca4a`
--	v2 Content-Length: 1.0 KB (1007 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:26:10 GMT
+-	v2 Blob: `sha256:b644441b1a3bd6875b30e8dd78a30e9390ec0327da2077e730e0fbd2d40b3ca7`
+-	v2 Content-Length: 1.0 KB (1006 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:11:34 GMT
 
-#### `3fd6a9ce2f33f0555e34e3dcb6f4236fa070ef65d30ab622ee05471fa2ff98fe`
+#### `962cdf42ac846476bbac6d49bfea59e2aac9d5cd4d2c3cc3619a8b154cec6e89`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:55:16 GMT
--	Parent Layer: `7845e0c562dfc4c07b4cc0695e0f4a7f28695f6f573effe748138ea2c861dc08`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:20:17 GMT
+-	Parent Layer: `0ee9f821fdd235e48d29ec9b14f9951dd80167405b28bdaea489c21ef8749d48`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3de3d0a6bba81722d7feb9c0f830d664a544ec598aaf993f7a3930103abdc3f5`
+#### `ecd844cef8a92f41a92776aa5791e39b54aa4f00fbde86add8be25a56e1fd0d7`
 
 ```dockerfile
-RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.2.tar.bz2 -o perl-5.20.2.tar.bz2\
-     && echo '63126c683b4c79c35008a47d56f7beae876c569f *perl-5.20.2.tar.bz2' | sha1sum -c -\
-     && tar --strip-components=1 -xjf perl-5.20.2.tar.bz2 -C /usr/src/perl\
-     && rm perl-5.20.2.tar.bz2\
+RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.3.tar.bz2 -o perl-5.20.3.tar.bz2\
+     && echo 'eedf9e3be3c83bef15911996ed18703cffe4d113 *perl-5.20.3.tar.bz2' | sha1sum -c -\
+     && tar --strip-components=1 -xjf perl-5.20.3.tar.bz2 -C /usr/src/perl\
+     && rm perl-5.20.3.tar.bz2\
      && cat *.patch | patch -p1\
      && ./Configure -Dusethreads -Duse64bitall  -des\
      && make -j$(nproc)\
-     && make test_harness\
+     && TEST_JOBS=$(nproc) make test_harness\
      && make install\
      && cd /usr/src\
      && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm\
@@ -2751,50 +2751,50 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.2.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 10:44:27 GMT
--	Parent Layer: `3fd6a9ce2f33f0555e34e3dcb6f4236fa070ef65d30ab622ee05471fa2ff98fe`
--	Docker Version: 1.7.1
--	Virtual Size: 48.2 MB (48208564 bytes)
--	v2 Blob: `sha256:177aebf649d047c5ad941a42a10e1d868f1fd9779e98629de83298ac481bfe2f`
--	v2 Content-Length: 13.2 MB (13174936 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:30:02 GMT
+-	Created: Mon, 21 Sep 2015 19:52:56 GMT
+-	Parent Layer: `962cdf42ac846476bbac6d49bfea59e2aac9d5cd4d2c3cc3619a8b154cec6e89`
+-	Docker Version: 1.8.2
+-	Virtual Size: 48.3 MB (48255455 bytes)
+-	v2 Blob: `sha256:6995c8119b2cd6dc4c32ae5bd98e5a4a22e74e4ce6a65a5f0e02018c531fe510`
+-	v2 Content-Length: 13.2 MB (13173424 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:13:54 GMT
 
-#### `def9608dc408966221774593e96738e1a06fe3d78c56367b631a1ec7b3d6cda1`
+#### `a64959a1800e3437c07c59d2c1e38db0dc877e74c725b19b5fe0f3788b557b64`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 10:44:27 GMT
--	Parent Layer: `3de3d0a6bba81722d7feb9c0f830d664a544ec598aaf993f7a3930103abdc3f5`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:52:57 GMT
+-	Parent Layer: `ecd844cef8a92f41a92776aa5791e39b54aa4f00fbde86add8be25a56e1fd0d7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1afc83701b062a708373405a0f09390db11215ff924835f2c93cce68a9f4a690`
+#### `de4a7cdf63e1e6e3a22800a030056380c091830c3bfcbc0a9252fdc196661bb0`
 
 ```dockerfile
-CMD ["perl5.20.2" "-de0"]
+CMD ["perl5.20.3" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 10:44:27 GMT
--	Parent Layer: `def9608dc408966221774593e96738e1a06fe3d78c56367b631a1ec7b3d6cda1`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:52:57 GMT
+-	Parent Layer: `a64959a1800e3437c07c59d2c1e38db0dc877e74c725b19b5fe0f3788b557b64`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `perl:5.20.2-threaded`
+## `perl:5.20.3-threaded`
 
 ```console
-$ docker pull library/perl@sha256:fec5c5cb31581339ecff731342f59b49d235908a4377f32219acc886b2d48fb7
+$ docker pull library/perl@sha256:3d7d9684fd7c351808df594d0836808a8453f7fc41d508003d053c6303f845ae
 ```
 
--	Total Virtual Size: 654.7 MB (654695097 bytes)
--	Total v2 Content-Length: 253.9 MB (253945363 bytes)
+-	Total Virtual Size: 654.7 MB (654741988 bytes)
+-	Total v2 Content-Length: 253.9 MB (253943850 bytes)
 
 ### Layers (13)
 
@@ -2956,45 +2956,45 @@ RUN mkdir /usr/src/perl
 -	v2 Content-Length: 129.0 B
 -	v2 Last-Modified: Fri, 11 Sep 2015 10:19:09 GMT
 
-#### `7845e0c562dfc4c07b4cc0695e0f4a7f28695f6f573effe748138ea2c861dc08`
+#### `0ee9f821fdd235e48d29ec9b14f9951dd80167405b28bdaea489c21ef8749d48`
 
 ```dockerfile
-COPY file:865b3ce15e6050439113c6a91e926f606747a269f756ac73cc9ff4668ea05625 in /usr/src/perl/
+COPY file:75bfd850fa1c703e23e65e3ab4b5f29d167e32f90a110a7626acff955d6148f2 in /usr/src/perl/
 ```
 
--	Created: Thu, 10 Sep 2015 09:55:16 GMT
+-	Created: Mon, 21 Sep 2015 19:20:17 GMT
 -	Parent Layer: `d668b2b0b0ec1c7044f74550eced2835427823858649cb72086094f8261dd38a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.6 KB (1575 bytes)
--	v2 Blob: `sha256:93cb59ee1771516e05bfe645e0e7b6ec46d26a41b87f25bb941135ffc7d4ca4a`
--	v2 Content-Length: 1.0 KB (1007 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:26:10 GMT
+-	v2 Blob: `sha256:b644441b1a3bd6875b30e8dd78a30e9390ec0327da2077e730e0fbd2d40b3ca7`
+-	v2 Content-Length: 1.0 KB (1006 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:11:34 GMT
 
-#### `3fd6a9ce2f33f0555e34e3dcb6f4236fa070ef65d30ab622ee05471fa2ff98fe`
+#### `962cdf42ac846476bbac6d49bfea59e2aac9d5cd4d2c3cc3619a8b154cec6e89`
 
 ```dockerfile
 WORKDIR /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 09:55:16 GMT
--	Parent Layer: `7845e0c562dfc4c07b4cc0695e0f4a7f28695f6f573effe748138ea2c861dc08`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:20:17 GMT
+-	Parent Layer: `0ee9f821fdd235e48d29ec9b14f9951dd80167405b28bdaea489c21ef8749d48`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3de3d0a6bba81722d7feb9c0f830d664a544ec598aaf993f7a3930103abdc3f5`
+#### `ecd844cef8a92f41a92776aa5791e39b54aa4f00fbde86add8be25a56e1fd0d7`
 
 ```dockerfile
-RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.2.tar.bz2 -o perl-5.20.2.tar.bz2\
-     && echo '63126c683b4c79c35008a47d56f7beae876c569f *perl-5.20.2.tar.bz2' | sha1sum -c -\
-     && tar --strip-components=1 -xjf perl-5.20.2.tar.bz2 -C /usr/src/perl\
-     && rm perl-5.20.2.tar.bz2\
+RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.3.tar.bz2 -o perl-5.20.3.tar.bz2\
+     && echo 'eedf9e3be3c83bef15911996ed18703cffe4d113 *perl-5.20.3.tar.bz2' | sha1sum -c -\
+     && tar --strip-components=1 -xjf perl-5.20.3.tar.bz2 -C /usr/src/perl\
+     && rm perl-5.20.3.tar.bz2\
      && cat *.patch | patch -p1\
      && ./Configure -Dusethreads -Duse64bitall  -des\
      && make -j$(nproc)\
-     && make test_harness\
+     && TEST_JOBS=$(nproc) make test_harness\
      && make install\
      && cd /usr/src\
      && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm\
@@ -3003,37 +3003,37 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.2.tar.bz2 
      && rm -fr ./cpanm /root/.cpanm /usr/src/perl
 ```
 
--	Created: Thu, 10 Sep 2015 10:44:27 GMT
--	Parent Layer: `3fd6a9ce2f33f0555e34e3dcb6f4236fa070ef65d30ab622ee05471fa2ff98fe`
--	Docker Version: 1.7.1
--	Virtual Size: 48.2 MB (48208564 bytes)
--	v2 Blob: `sha256:177aebf649d047c5ad941a42a10e1d868f1fd9779e98629de83298ac481bfe2f`
--	v2 Content-Length: 13.2 MB (13174936 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 10:30:02 GMT
+-	Created: Mon, 21 Sep 2015 19:52:56 GMT
+-	Parent Layer: `962cdf42ac846476bbac6d49bfea59e2aac9d5cd4d2c3cc3619a8b154cec6e89`
+-	Docker Version: 1.8.2
+-	Virtual Size: 48.3 MB (48255455 bytes)
+-	v2 Blob: `sha256:6995c8119b2cd6dc4c32ae5bd98e5a4a22e74e4ce6a65a5f0e02018c531fe510`
+-	v2 Content-Length: 13.2 MB (13173424 bytes)
+-	v2 Last-Modified: Mon, 21 Sep 2015 20:13:54 GMT
 
-#### `def9608dc408966221774593e96738e1a06fe3d78c56367b631a1ec7b3d6cda1`
+#### `a64959a1800e3437c07c59d2c1e38db0dc877e74c725b19b5fe0f3788b557b64`
 
 ```dockerfile
 WORKDIR /root
 ```
 
--	Created: Thu, 10 Sep 2015 10:44:27 GMT
--	Parent Layer: `3de3d0a6bba81722d7feb9c0f830d664a544ec598aaf993f7a3930103abdc3f5`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:52:57 GMT
+-	Parent Layer: `ecd844cef8a92f41a92776aa5791e39b54aa4f00fbde86add8be25a56e1fd0d7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1afc83701b062a708373405a0f09390db11215ff924835f2c93cce68a9f4a690`
+#### `de4a7cdf63e1e6e3a22800a030056380c091830c3bfcbc0a9252fdc196661bb0`
 
 ```dockerfile
-CMD ["perl5.20.2" "-de0"]
+CMD ["perl5.20.3" "-de0"]
 ```
 
--	Created: Thu, 10 Sep 2015 10:44:27 GMT
--	Parent Layer: `def9608dc408966221774593e96738e1a06fe3d78c56367b631a1ec7b3d6cda1`
--	Docker Version: 1.7.1
+-	Created: Mon, 21 Sep 2015 19:52:57 GMT
+-	Parent Layer: `a64959a1800e3437c07c59d2c1e38db0dc877e74c725b19b5fe0f3788b557b64`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
