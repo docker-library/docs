@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.2`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/golang/blob/51d6eacd41fe80d41105142b9ad32f575082970f/1.4/Dockerfile)
--	[`1.4.2-onbuild`, `1.4-onbuild` (*1.4/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/onbuild/Dockerfile)
--	[`1.4.2-cross`, `1.4-cross` (*1.4/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/cross/Dockerfile)
--	[`1.4.2-wheezy`, `1.4-wheezy` (*1.4/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/51d6eacd41fe80d41105142b9ad32f575082970f/1.4/wheezy/Dockerfile)
+-	[`1.4.3`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/golang/blob/a4f3927494b48c7bdb6ea6edac8f89818853b45b/1.4/Dockerfile)
+-	[`1.4.3-onbuild`, `1.4-onbuild` (*1.4/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/onbuild/Dockerfile)
+-	[`1.4.3-cross`, `1.4-cross` (*1.4/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/cross/Dockerfile)
+-	[`1.4.3-wheezy`, `1.4-wheezy` (*1.4/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/a4f3927494b48c7bdb6ea6edac8f89818853b45b/1.4/wheezy/Dockerfile)
 -	[`1.5.1`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/51d6eacd41fe80d41105142b9ad32f575082970f/1.5/Dockerfile)
 -	[`1.5.1-onbuild`, `1.5-onbuild`, `1-onbuild`, `onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
 -	[`1.5.1-wheezy`, `1.5-wheezy`, `1-wheezy`, `wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/51d6eacd41fe80d41105142b9ad32f575082970f/1.5/wheezy/Dockerfile)
