@@ -8,13 +8,13 @@ For more information about this image and its history, please see [the relevant 
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mysql/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mysql/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png)
-
 # What is MySQL?
 
 MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, covering the entire range from personal projects and websites, via e-commerce and information services, all the way to high profile web properties including Facebook, Twitter, YouTube, Yahoo! and many more.
 
 For more information and related downloads for MySQL Server and other MySQL products, please visit [www.mysql.com](http://www.mysql.com).
+
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png)
 
 # How to use this image
 
@@ -33,18 +33,18 @@ $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
 
 ```console
-$ docker run --name some-app --link some-mysql:mysql -d app-that-uses-mysql
+$ docker run --name some-app --link some-mysql:mysql -d application-that-uses-mysql
 ```
 
 ## Connect to MySQL from the MySQL command line client
 
-The following command starts another MySQL container instance and runs the `mysql` command line client against your original MySQL container, allowing you to execute SQL statements against your database instance:
+The following command starts another mysql container instance and runs the `mysql` command line client against your original mysql container, allowing you to execute SQL statements against your database instance:
 
 ```console
 $ docker run -it --link some-mysql:mysql --rm mysql sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
 ```
 
-... where `some-mysql` is the name of your original MySQL Server container.
+... where `some-mysql` is the name of your original mysql container.
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
