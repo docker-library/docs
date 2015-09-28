@@ -11,11 +11,11 @@
 ## `glassfish:4.0-jdk7`
 
 ```console
-$ docker pull library/glassfish@sha256:418de17606209554c9b41f5290754bc11f4455de2833083549bb7221577bda3e
+$ docker pull library/glassfish@sha256:9ede9fbc9f7b33c0dd734d3a7025def2fd74e7aa1b42fa4036455b31621dd46d
 ```
 
 -	Total Virtual Size: 713.6 MB (713551773 bytes)
--	Total v2 Content-Length: 353.9 MB (353937231 bytes)
+-	Total v2 Content-Length: 353.9 MB (353937239 bytes)
 
 ### Layers (17)
 
@@ -60,9 +60,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -277,7 +277,7 @@ $ docker pull library/glassfish@sha256:65554937c00fa9a6d3b19688b5c18325859e9566a
 ```
 
 -	Total Virtual Size: 713.6 MB (713551773 bytes)
--	Total v2 Content-Length: 353.9 MB (353937231 bytes)
+-	Total v2 Content-Length: 353.9 MB (353937239 bytes)
 
 ### Layers (17)
 
@@ -322,9 +322,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -535,11 +535,11 @@ CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ## `glassfish:4.1-jdk8`
 
 ```console
-$ docker pull library/glassfish@sha256:0625436bf21a92ca8fab6409d9fea62afdbb70ea4999ea672d609ac9e9f9c73d
+$ docker pull library/glassfish@sha256:54243bc65eb5bacdd1198ca96228ff6d04b5098018a987f1912e86246c27e7b6
 ```
 
 -	Total Virtual Size: 949.9 MB (949853054 bytes)
--	Total v2 Content-Length: 419.8 MB (419810879 bytes)
+-	Total v2 Content-Length: 419.8 MB (419810887 bytes)
 
 ### Layers (20)
 
@@ -584,9 +584,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -848,7 +848,7 @@ $ docker pull library/glassfish@sha256:9f1d111930b2d089685ee8aeeac9676ef2ca0bf8d
 ```
 
 -	Total Virtual Size: 949.9 MB (949853054 bytes)
--	Total v2 Content-Length: 419.8 MB (419810879 bytes)
+-	Total v2 Content-Length: 419.8 MB (419810887 bytes)
 
 ### Layers (20)
 
@@ -893,9 +893,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1157,7 +1157,7 @@ $ docker pull library/glassfish@sha256:1b064d3f3e6ec8d10ee059185c4b6e0ce82379113
 ```
 
 -	Total Virtual Size: 949.9 MB (949853054 bytes)
--	Total v2 Content-Length: 419.8 MB (419810879 bytes)
+-	Total v2 Content-Length: 419.8 MB (419810887 bytes)
 
 ### Layers (20)
 
@@ -1202,9 +1202,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 

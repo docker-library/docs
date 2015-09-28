@@ -88,11 +88,11 @@ ADD file:4be46382bcf2b095fcb9fe8334206b584eff60bb3fad8178cbd97697fcb2ea83 in /
 ## `fedora:21`
 
 ```console
-$ docker pull library/fedora@sha256:d02ceb1bf5f84d805025dcaac84c34bec6036226346b375ddb9dba0ba46e3f10
+$ docker pull library/fedora@sha256:53c673185c86cf2b8ef774d6fa59391a3728005abaccf1320a7a0ab8b5f4361f
 ```
 
 -	Total Virtual Size: 241.3 MB (241325806 bytes)
--	Total v2 Content-Length: 92.5 MB (92463450 bytes)
+-	Total v2 Content-Length: 92.5 MB (92463462 bytes)
 
 ### Layers (2)
 
@@ -119,18 +119,18 @@ ADD file:95307157b233a03b3dfe9df99d1ff49fdbf7e82c9b042cc33c4fb6bc39663489 in /
 -	Parent Layer: `48ecf305d2cf7046c1f5f8fcbcd4994403173441d4a7f125b1bb0ceead9de731`
 -	Docker Version: 1.6.0
 -	Virtual Size: 241.3 MB (241325806 bytes)
--	v2 Blob: `sha256:21aae0be8a42e7ee6c85258b8e09d5665086ace47bab77740edb540c0e88bc1b`
--	v2 Content-Length: 92.5 MB (92463418 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 02:34:32 GMT
+-	v2 Blob: `sha256:89ade3ea7e692018e99999aedaacaf59889a16c2fd05a7a04c96491beeebc946`
+-	v2 Content-Length: 92.5 MB (92463430 bytes)
+-	v2 Last-Modified: Mon, 20 Jul 2015 22:21:23 GMT
 
 ## `fedora:rawhide`
 
 ```console
-$ docker pull library/fedora@sha256:1ecb972542bc6a4cbb9cb1abb72e8dc2d94e55571132c247b12e9cce81b26703
+$ docker pull library/fedora@sha256:8eab00c3541cd64b74d25f6c246aa63159f5498f2431bec318ac86432a031785
 ```
 
 -	Total Virtual Size: 315.2 MB (315242201 bytes)
--	Total v2 Content-Length: 98.9 MB (98914604 bytes)
+-	Total v2 Content-Length: 98.9 MB (98914637 bytes)
 
 ### Layers (2)
 
@@ -157,18 +157,18 @@ ADD file:60ff9d4b9fadc37de728ecd91deb480d2c4e20e8f5336e4d40a14b501148e20c in /
 -	Parent Layer: `b0082ba983ef3569aad347f923a9cec8ea764c239179081a1e2c47709788dc44`
 -	Docker Version: 1.7.1
 -	Virtual Size: 315.2 MB (315242201 bytes)
--	v2 Blob: `sha256:b2acf66e6bb172c73082ab80af4eb6e4d94d3679f9325cd02c759837ae9684e3`
--	v2 Content-Length: 98.9 MB (98914572 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 02:36:36 GMT
+-	v2 Blob: `sha256:c7e258b1c9f096e0b5d191e5ddfd760dffb3de970a9c5d630a4cfd6890a00373`
+-	v2 Content-Length: 98.9 MB (98914605 bytes)
+-	v2 Last-Modified: Tue, 01 Sep 2015 22:12:58 GMT
 
 ## `fedora:20`
 
 ```console
-$ docker pull library/fedora@sha256:14799af7a6489e4617d2820946ecdf2a456a4bc73fc5a46a69b85ea0f249bc8a
+$ docker pull library/fedora@sha256:8f6d344bd1a0cd4b8e0a2755195f7440f5e6618b5ab871d309251d7ee48d9473
 ```
 
 -	Total Virtual Size: 290.6 MB (290633327 bytes)
--	Total v2 Content-Length: 94.0 MB (93950180 bytes)
+-	Total v2 Content-Length: 94.0 MB (93950275 bytes)
 
 ### Layers (2)
 
@@ -195,9 +195,9 @@ ADD file:11e165f0d522bb69e7c207c653d9330d0fdc4935b7bdf234ffe570492f767d8c in /
 -	Parent Layer: `eb8e83ebb17d251b80550891eaef38117c8606605451dd764d46ee96426ddef1`
 -	Docker Version: 1.6.2
 -	Virtual Size: 290.6 MB (290633327 bytes)
--	v2 Blob: `sha256:8eb51a77717fe79f051f755021d7cf451dea0f95d787fd5e0bf335c63188f02b`
--	v2 Content-Length: 94.0 MB (93950148 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 02:38:45 GMT
+-	v2 Blob: `sha256:f99a70fd87cf3fcdd24eee682e95e0ecc4c5447cd42366dddfbe1dfd62244f42`
+-	v2 Content-Length: 94.0 MB (93950243 bytes)
+-	v2 Last-Modified: Mon, 20 Jul 2015 22:25:10 GMT
 
 ## `fedora:heisenbug`
 
@@ -206,7 +206,7 @@ $ docker pull library/fedora@sha256:091a25c1d64f36e559cad113fe5dec210fc4540f634b
 ```
 
 -	Total Virtual Size: 290.6 MB (290633327 bytes)
--	Total v2 Content-Length: 94.0 MB (93950180 bytes)
+-	Total v2 Content-Length: 94.0 MB (93950275 bytes)
 
 ### Layers (2)
 
@@ -233,6 +233,6 @@ ADD file:11e165f0d522bb69e7c207c653d9330d0fdc4935b7bdf234ffe570492f767d8c in /
 -	Parent Layer: `eb8e83ebb17d251b80550891eaef38117c8606605451dd764d46ee96426ddef1`
 -	Docker Version: 1.6.2
 -	Virtual Size: 290.6 MB (290633327 bytes)
--	v2 Blob: `sha256:8eb51a77717fe79f051f755021d7cf451dea0f95d787fd5e0bf335c63188f02b`
--	v2 Content-Length: 94.0 MB (93950148 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 02:38:45 GMT
+-	v2 Blob: `sha256:f99a70fd87cf3fcdd24eee682e95e0ecc4c5447cd42366dddfbe1dfd62244f42`
+-	v2 Content-Length: 94.0 MB (93950243 bytes)
+-	v2 Last-Modified: Mon, 20 Jul 2015 22:25:10 GMT

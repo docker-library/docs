@@ -10,7 +10,7 @@
 ## `ghost:0.7.0`
 
 ```console
-$ docker pull library/ghost@sha256:6b409c46fdedb5b96ba648eb4dd8715b80d8c2355b4d5befdce1ddaa2ce943aa
+$ docker pull library/ghost@sha256:fb0bd645a155c8f14ca11e85d6876b53e1b81f387bb02b91b0d786063744f7b3
 ```
 
 -	Total Virtual Size: 313.4 MB (313358652 bytes)

@@ -13,7 +13,7 @@
 ## `drupal:7.39`
 
 ```console
-$ docker pull library/drupal@sha256:a271fee4f55fe39860298eb1b9602178fa0fbae98ef407e0cea5d7cf2e0015d1
+$ docker pull library/drupal@sha256:9920de767c404e1330e25f09e503ab382d587da96258d3d085da23487279c328
 ```
 
 -	Total Virtual Size: 526.1 MB (526074520 bytes)
@@ -1357,7 +1357,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 ## `drupal:8.0.0-beta15`
 
 ```console
-$ docker pull library/drupal@sha256:7bea98b9efbc60b8e2e60cf0c2812a1f54aeff5aa0a10ee8da0bdbbbc356af87
+$ docker pull library/drupal@sha256:fa50955cc48ff5ad4ebf48ffaec914bda915fe66990998c14d39198f648a594b
 ```
 
 -	Total Virtual Size: 566.9 MB (566897162 bytes)

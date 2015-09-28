@@ -9,7 +9,7 @@
 ## `docker-dev:1.8.2`
 
 ```console
-$ docker pull library/docker-dev@sha256:9e5a735be6716a3a47eafa5352f0ee57154557c79bab080e9ce3ad320483fea1
+$ docker pull library/docker-dev@sha256:207dd072414ad0e1af9532468a86a923f94cf34e580a51c7e42af0d2d1fac552
 ```
 
 -	Total Virtual Size: 1.7 GB (1651721722 bytes)
