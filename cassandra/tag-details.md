@@ -14,7 +14,7 @@
 ## `cassandra:2.0.17`
 
 ```console
-$ docker pull library/cassandra@sha256:55918c42917a293dd411cde67a174cdbfb5519d548a164b7678dd1483d4ce01f
+$ docker pull library/cassandra@sha256:d70e0969cf9b7065d1fadf00d9a8e3dbdb279f533ad1fccb8ee024b9eed78c9a
 ```
 
 -	Total Virtual Size: 347.3 MB (347317816 bytes)
@@ -406,11 +406,11 @@ CMD ["cassandra" "-f"]
 ## `cassandra:2.1.9`
 
 ```console
-$ docker pull library/cassandra@sha256:e31a2fde91f732c85b5f606f16337536cf5f5cb2587b1b63676ca6d4fd195679
+$ docker pull library/cassandra@sha256:d90e70e316c871361a74e3f6b679d2eb7e4cd72d3aa0ad3cb43882b7baf8f0a7
 ```
 
 -	Total Virtual Size: 353.4 MB (353420660 bytes)
--	Total v2 Content-Length: 165.9 MB (165886304 bytes)
+-	Total v2 Content-Length: 165.9 MB (165886277 bytes)
 
 ### Layers (13)
 
@@ -495,9 +495,9 @@ RUN apt-get update \
 -	Parent Layer: `638df297ebed871386e9d6c38302b112c4d5d468bbd2ec325bd15d555256029f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 228.2 MB (228219521 bytes)
--	v2 Blob: `sha256:8bc0c49e2225da97605ad7043b84e89ef0bf9608689299d56ae9de35f560adca`
--	v2 Content-Length: 114.5 MB (114509332 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:53:32 GMT
+-	v2 Blob: `sha256:a3d0e78bd62233b8a22c3d11ea409dc978137155b6ecb580657fc688bd42c3b2`
+-	v2 Content-Length: 114.5 MB (114509305 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:52:17 GMT
 
 #### `1f7c9082f7c99d7d520644416857aabd66cc113d4c7ccb859d92d5a1ed7cfd22`
 
@@ -606,7 +606,7 @@ $ docker pull library/cassandra@sha256:f6c7fd6c09652ceda951291fef9a580a635fce8a7
 ```
 
 -	Total Virtual Size: 353.4 MB (353420660 bytes)
--	Total v2 Content-Length: 165.9 MB (165886304 bytes)
+-	Total v2 Content-Length: 165.9 MB (165886277 bytes)
 
 ### Layers (13)
 
@@ -691,9 +691,9 @@ RUN apt-get update \
 -	Parent Layer: `638df297ebed871386e9d6c38302b112c4d5d468bbd2ec325bd15d555256029f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 228.2 MB (228219521 bytes)
--	v2 Blob: `sha256:8bc0c49e2225da97605ad7043b84e89ef0bf9608689299d56ae9de35f560adca`
--	v2 Content-Length: 114.5 MB (114509332 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:53:32 GMT
+-	v2 Blob: `sha256:a3d0e78bd62233b8a22c3d11ea409dc978137155b6ecb580657fc688bd42c3b2`
+-	v2 Content-Length: 114.5 MB (114509305 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:52:17 GMT
 
 #### `1f7c9082f7c99d7d520644416857aabd66cc113d4c7ccb859d92d5a1ed7cfd22`
 
@@ -798,11 +798,11 @@ CMD ["cassandra" "-f"]
 ## `cassandra:2.2.1`
 
 ```console
-$ docker pull library/cassandra@sha256:38eac90cada296349c608317e5343d2001bf7f29073c71ee8667c51d090b3d0d
+$ docker pull library/cassandra@sha256:cab42bbbd7adadf5ef5a772d67723c5e05172e4c0ac2a9e3eb82ef92019ae132
 ```
 
 -	Total Virtual Size: 362.6 MB (362623621 bytes)
--	Total v2 Content-Length: 170.1 MB (170089516 bytes)
+-	Total v2 Content-Length: 170.1 MB (170089512 bytes)
 
 ### Layers (13)
 
@@ -887,9 +887,9 @@ RUN apt-get update \
 -	Parent Layer: `d59365a7ffeaf1c026aff9ba08c40f98ffd7821f180fd6a1df876182d5b9894f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 237.4 MB (237419085 bytes)
--	v2 Blob: `sha256:b636e35a256d4800a6211e154682191bb530352b028b202bb9f462ecd207763f`
--	v2 Content-Length: 118.7 MB (118711554 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:57:28 GMT
+-	v2 Blob: `sha256:2105bf815e7dd208759edcf485d2389c57e7f2de27926929ca7d4690d21f5ee9`
+-	v2 Content-Length: 118.7 MB (118711550 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:56:16 GMT
 
 #### `16e5fc6ea5c15a9ddd5b2d03a6a547a35e7a16a3348e4a289d55bac6081fb711`
 
@@ -998,7 +998,7 @@ $ docker pull library/cassandra@sha256:2a9dfbf2a1327dc36b4dacb4191d234994f353cf8
 ```
 
 -	Total Virtual Size: 362.6 MB (362623621 bytes)
--	Total v2 Content-Length: 170.1 MB (170089516 bytes)
+-	Total v2 Content-Length: 170.1 MB (170089512 bytes)
 
 ### Layers (13)
 
@@ -1083,9 +1083,9 @@ RUN apt-get update \
 -	Parent Layer: `d59365a7ffeaf1c026aff9ba08c40f98ffd7821f180fd6a1df876182d5b9894f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 237.4 MB (237419085 bytes)
--	v2 Blob: `sha256:b636e35a256d4800a6211e154682191bb530352b028b202bb9f462ecd207763f`
--	v2 Content-Length: 118.7 MB (118711554 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:57:28 GMT
+-	v2 Blob: `sha256:2105bf815e7dd208759edcf485d2389c57e7f2de27926929ca7d4690d21f5ee9`
+-	v2 Content-Length: 118.7 MB (118711550 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:56:16 GMT
 
 #### `16e5fc6ea5c15a9ddd5b2d03a6a547a35e7a16a3348e4a289d55bac6081fb711`
 
@@ -1194,7 +1194,7 @@ $ docker pull library/cassandra@sha256:a34eae200779e0a878ea6473c53fbeb2ec213faff
 ```
 
 -	Total Virtual Size: 362.6 MB (362623621 bytes)
--	Total v2 Content-Length: 170.1 MB (170089516 bytes)
+-	Total v2 Content-Length: 170.1 MB (170089512 bytes)
 
 ### Layers (13)
 
@@ -1279,9 +1279,9 @@ RUN apt-get update \
 -	Parent Layer: `d59365a7ffeaf1c026aff9ba08c40f98ffd7821f180fd6a1df876182d5b9894f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 237.4 MB (237419085 bytes)
--	v2 Blob: `sha256:b636e35a256d4800a6211e154682191bb530352b028b202bb9f462ecd207763f`
--	v2 Content-Length: 118.7 MB (118711554 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:57:28 GMT
+-	v2 Blob: `sha256:2105bf815e7dd208759edcf485d2389c57e7f2de27926929ca7d4690d21f5ee9`
+-	v2 Content-Length: 118.7 MB (118711550 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:56:16 GMT
 
 #### `16e5fc6ea5c15a9ddd5b2d03a6a547a35e7a16a3348e4a289d55bac6081fb711`
 
@@ -1390,7 +1390,7 @@ $ docker pull library/cassandra@sha256:143dd19f9bb37d734d28778baae6cddf2b11f8da5
 ```
 
 -	Total Virtual Size: 362.6 MB (362623621 bytes)
--	Total v2 Content-Length: 170.1 MB (170089516 bytes)
+-	Total v2 Content-Length: 170.1 MB (170089512 bytes)
 
 ### Layers (13)
 
@@ -1475,9 +1475,9 @@ RUN apt-get update \
 -	Parent Layer: `d59365a7ffeaf1c026aff9ba08c40f98ffd7821f180fd6a1df876182d5b9894f`
 -	Docker Version: 1.7.1
 -	Virtual Size: 237.4 MB (237419085 bytes)
--	v2 Blob: `sha256:b636e35a256d4800a6211e154682191bb530352b028b202bb9f462ecd207763f`
--	v2 Content-Length: 118.7 MB (118711554 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:57:28 GMT
+-	v2 Blob: `sha256:2105bf815e7dd208759edcf485d2389c57e7f2de27926929ca7d4690d21f5ee9`
+-	v2 Content-Length: 118.7 MB (118711550 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:56:16 GMT
 
 #### `16e5fc6ea5c15a9ddd5b2d03a6a547a35e7a16a3348e4a289d55bac6081fb711`
 

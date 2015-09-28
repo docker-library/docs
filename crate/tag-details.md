@@ -11,11 +11,11 @@
 ## `crate:latest`
 
 ```console
-$ docker pull library/crate@sha256:38dbd669f4e9123ab97df381493cc85b852712c596f4ff7d9442ce2446934303
+$ docker pull library/crate@sha256:6a5fe9b02e558ef0fdfcfedbbe1204de842378e31a69e6cfd13333f7b7e6d156
 ```
 
 -	Total Virtual Size: 561.5 MB (561451703 bytes)
--	Total v2 Content-Length: 253.1 MB (253124485 bytes)
+-	Total v2 Content-Length: 253.1 MB (253124493 bytes)
 
 ### Layers (23)
 
@@ -60,9 +60,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -352,11 +352,11 @@ CMD ["crate"]
 ## `crate:0.49`
 
 ```console
-$ docker pull library/crate@sha256:5a4d923c12e4abc30852a53a867930da291f97275c1f38aad6af8eb34219fcc5
+$ docker pull library/crate@sha256:390a34474e14197dafdbf9f5d79478ad98154babfc5919d64795d3c448d43e07
 ```
 
 -	Total Virtual Size: 558.8 MB (558771235 bytes)
--	Total v2 Content-Length: 252.0 MB (251962072 bytes)
+-	Total v2 Content-Length: 252.0 MB (251962080 bytes)
 
 ### Layers (23)
 
@@ -401,9 +401,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -697,7 +697,7 @@ $ docker pull library/crate@sha256:6e7c06d80a948da2ec68637adcb2c4cb80e6345ac000c
 ```
 
 -	Total Virtual Size: 558.8 MB (558771235 bytes)
--	Total v2 Content-Length: 252.0 MB (251962072 bytes)
+-	Total v2 Content-Length: 252.0 MB (251962080 bytes)
 
 ### Layers (23)
 
@@ -742,9 +742,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1038,7 +1038,7 @@ $ docker pull library/crate@sha256:e0909f37f3942061e659271af6b2f0553aecbbb6a701a
 ```
 
 -	Total Virtual Size: 561.5 MB (561451703 bytes)
--	Total v2 Content-Length: 253.1 MB (253124485 bytes)
+-	Total v2 Content-Length: 253.1 MB (253124493 bytes)
 
 ### Layers (23)
 
@@ -1083,9 +1083,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1379,7 +1379,7 @@ $ docker pull library/crate@sha256:2a49186964d32ab2d2fbc0c519e7a332d24bf6b560670
 ```
 
 -	Total Virtual Size: 561.5 MB (561451703 bytes)
--	Total v2 Content-Length: 253.1 MB (253124485 bytes)
+-	Total v2 Content-Length: 253.1 MB (253124493 bytes)
 
 ### Layers (23)
 
@@ -1424,9 +1424,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 

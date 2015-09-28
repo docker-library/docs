@@ -8,7 +8,7 @@
 ## `aerospike:3.6.1`
 
 ```console
-$ docker pull library/aerospike@sha256:f4beff23f1e8de00378776eafe5714abc0ecd7f391053a9b3758386883582916
+$ docker pull library/aerospike@sha256:b9c50beb4e968f3d0bfe2cd2ccc5c56c7ae37d32729d6468ba19c7270b4cb137
 ```
 
 -	Total Virtual Size: 147.8 MB (147750047 bytes)
