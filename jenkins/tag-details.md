@@ -8,11 +8,11 @@
 ## `jenkins:latest`
 
 ```console
-$ docker pull library/jenkins@sha256:70ec5a9ee8bfea1056e938b6fa21e44578318f1a9cde49ed8c978e3d8766e7a8
+$ docker pull library/jenkins@sha256:ec4a0b8291c3d3ecb97e4ec57f97e224179670b54e07699448de40a8fdc364a8
 ```
 
 -	Total Virtual Size: 889.1 MB (889104719 bytes)
--	Total v2 Content-Length: 376.3 MB (376344319 bytes)
+-	Total v2 Content-Length: 376.3 MB (376344335 bytes)
 
 ### Layers (33)
 
@@ -57,9 +57,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:d6314f6cfecf4fc37f622f99d2a114af91ec678d29c76983249f23995ef77563`
--	v2 Content-Length: 18.5 MB (18538583 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -499,7 +499,7 @@ $ docker pull library/jenkins@sha256:3447993c329b682980b38d3874ba39ec946e6d65500
 ```
 
 -	Total Virtual Size: 889.1 MB (889104719 bytes)
--	Total v2 Content-Length: 376.3 MB (376344319 bytes)
+-	Total v2 Content-Length: 376.3 MB (376344335 bytes)
 
 ### Layers (33)
 
@@ -544,9 +544,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:d6314f6cfecf4fc37f622f99d2a114af91ec678d29c76983249f23995ef77563`
--	v2 Content-Length: 18.5 MB (18538583 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 

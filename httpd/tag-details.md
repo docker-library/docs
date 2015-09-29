@@ -12,7 +12,7 @@
 ## `httpd:2.2.31`
 
 ```console
-$ docker pull library/httpd@sha256:8a581dccb43193e3770dd2d83eba9a68c74bfae12352267a12dc95cea7fddfac
+$ docker pull library/httpd@sha256:c75b7988e952cfb4284617ee55f5ffb1753dccb25ac7556de42e08e40494a533
 ```
 
 -	Total Virtual Size: 152.9 MB (152900710 bytes)
@@ -502,7 +502,7 @@ CMD ["httpd-foreground"]
 ## `httpd:2.4.16`
 
 ```console
-$ docker pull library/httpd@sha256:862ed54f35039f499b399a56d376cc5e4f33b5d8b9507b7a6c05fd2341d4e34a
+$ docker pull library/httpd@sha256:c725ac3661a472b54e10bfb02bb4c490c00c29d0979357fb82fb6f7bb9788999
 ```
 
 -	Total Virtual Size: 162.0 MB (162003398 bytes)

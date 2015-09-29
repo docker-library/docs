@@ -18,7 +18,7 @@
 ## `joomla:3.4.4-apache`
 
 ```console
-$ docker pull library/joomla@sha256:369fca90667d398d686be5fa7f23409371cd7c9da1576ef895046d91afe26031
+$ docker pull library/joomla@sha256:ebd272e94b24789fbe0758393345f88eb48524148627a2ebba89c83ce512889b
 ```
 
 -	Total Virtual Size: 524.0 MB (523960178 bytes)
@@ -4274,7 +4274,7 @@ CMD ["apache2-foreground"]
 ## `joomla:3.4.4-fpm`
 
 ```console
-$ docker pull library/joomla@sha256:ba6a4e7e9b764894199d2ff87a14bfb1b7ff0f726155098f2d69abd1aa1c2729
+$ docker pull library/joomla@sha256:8acfb3894092aba6157f92e75324e0b71a5c639b7766bef36d49a3bb50a18292
 ```
 
 -	Total Virtual Size: 497.2 MB (497224670 bytes)

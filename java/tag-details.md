@@ -45,11 +45,11 @@
 ## `java:openjdk-6b36-jdk`
 
 ```console
-$ docker pull library/java@sha256:d5765b2e0671cdd2090647415e38ca3d0bfb104fa7615c367d3b356968437e35
+$ docker pull library/java@sha256:2e9bc73be3d163372e0f091005ac9aa0801436345eb0ceea43cebf84e748ef1f
 ```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
--	Total v2 Content-Length: 186.5 MB (186516917 bytes)
+-	Total v2 Content-Length: 186.5 MB (186516920 bytes)
 
 ### Layers (9)
 
@@ -94,9 +94,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -195,7 +195,7 @@ $ docker pull library/java@sha256:8ce9d32bd87d705d2dfa06a72794baf0b1d375f25c32e0
 ```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
--	Total v2 Content-Length: 186.5 MB (186516917 bytes)
+-	Total v2 Content-Length: 186.5 MB (186516920 bytes)
 
 ### Layers (9)
 
@@ -240,9 +240,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -341,7 +341,7 @@ $ docker pull library/java@sha256:c65e030d8fb2400bffbcff4ef9768c27f8508e4dfe557a
 ```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
--	Total v2 Content-Length: 186.5 MB (186516917 bytes)
+-	Total v2 Content-Length: 186.5 MB (186516920 bytes)
 
 ### Layers (9)
 
@@ -386,9 +386,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -487,7 +487,7 @@ $ docker pull library/java@sha256:5983a6f6ce71c191469ee2fbae0454f8971c49c8b5f716
 ```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
--	Total v2 Content-Length: 186.5 MB (186516917 bytes)
+-	Total v2 Content-Length: 186.5 MB (186516920 bytes)
 
 ### Layers (9)
 
@@ -532,9 +532,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -633,7 +633,7 @@ $ docker pull library/java@sha256:6e4432b42598f118d3514bfae52d1d54bca4a9242ccc42
 ```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
--	Total v2 Content-Length: 186.5 MB (186516917 bytes)
+-	Total v2 Content-Length: 186.5 MB (186516920 bytes)
 
 ### Layers (9)
 
@@ -678,9 +678,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -779,7 +779,7 @@ $ docker pull library/java@sha256:ed0d4b3ed3e34f8060c9cb18f0ff75f4bb22579ea8b761
 ```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
--	Total v2 Content-Length: 186.5 MB (186516917 bytes)
+-	Total v2 Content-Length: 186.5 MB (186516920 bytes)
 
 ### Layers (9)
 
@@ -824,9 +824,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -925,7 +925,7 @@ $ docker pull library/java@sha256:a4c259e57307d3dd9c7430a8a872d85f8877cbbe96d126
 ```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
--	Total v2 Content-Length: 186.5 MB (186516917 bytes)
+-	Total v2 Content-Length: 186.5 MB (186516920 bytes)
 
 ### Layers (9)
 
@@ -970,9 +970,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -1071,7 +1071,7 @@ $ docker pull library/java@sha256:0db73b3cc1ae6f0cd96bce3016b046ae0e3cd22fba4096
 ```
 
 -	Total Virtual Size: 418.4 MB (418431795 bytes)
--	Total v2 Content-Length: 186.5 MB (186516917 bytes)
+-	Total v2 Content-Length: 186.5 MB (186516920 bytes)
 
 ### Layers (9)
 
@@ -1116,9 +1116,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -1213,11 +1213,11 @@ RUN apt-get update && apt-get install -y openjdk-6-jdk="$JAVA_DEBIAN_VERSION" &&
 ## `java:openjdk-6b36-jre`
 
 ```console
-$ docker pull library/java@sha256:9f34ea4736b665473a995abd5c0b62222a34e94e556590b8bfb95a657e7641a4
+$ docker pull library/java@sha256:55367a21ddf02deea4ba732ecca0c77fc3d099a42fffd146cc6334294721a4bb
 ```
 
 -	Total Virtual Size: 194.4 MB (194423580 bytes)
--	Total v2 Content-Length: 96.8 MB (96783484 bytes)
+-	Total v2 Content-Length: 96.8 MB (96783487 bytes)
 
 ### Layers (8)
 
@@ -1262,9 +1262,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `81979c256f01204664b34c4a4f6fe042fe933e840fae33981b299e0fd3263321`
 
@@ -1343,7 +1343,7 @@ $ docker pull library/java@sha256:64cb109c5fc88e9f2ae92704e985b33acbee539bde6cc8
 ```
 
 -	Total Virtual Size: 194.4 MB (194423580 bytes)
--	Total v2 Content-Length: 96.8 MB (96783484 bytes)
+-	Total v2 Content-Length: 96.8 MB (96783487 bytes)
 
 ### Layers (8)
 
@@ -1388,9 +1388,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `81979c256f01204664b34c4a4f6fe042fe933e840fae33981b299e0fd3263321`
 
@@ -1469,7 +1469,7 @@ $ docker pull library/java@sha256:9ee8f29ab7a56487fefbee493eac309df65fe2c9f49982
 ```
 
 -	Total Virtual Size: 194.4 MB (194423580 bytes)
--	Total v2 Content-Length: 96.8 MB (96783484 bytes)
+-	Total v2 Content-Length: 96.8 MB (96783487 bytes)
 
 ### Layers (8)
 
@@ -1514,9 +1514,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `81979c256f01204664b34c4a4f6fe042fe933e840fae33981b299e0fd3263321`
 
@@ -1595,7 +1595,7 @@ $ docker pull library/java@sha256:c53b8b3439eff84468fe07ee5db77bb91070b893c5bcd9
 ```
 
 -	Total Virtual Size: 194.4 MB (194423580 bytes)
--	Total v2 Content-Length: 96.8 MB (96783484 bytes)
+-	Total v2 Content-Length: 96.8 MB (96783487 bytes)
 
 ### Layers (8)
 
@@ -1640,9 +1640,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7cbb864140da61e0bd34e2881d8447605964c4136210d4256081f1f155256a6b`
--	v2 Content-Length: 6.7 MB (6739556 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 04:58:36 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `81979c256f01204664b34c4a4f6fe042fe933e840fae33981b299e0fd3263321`
 
@@ -1717,11 +1717,11 @@ RUN apt-get update && apt-get install -y openjdk-6-jre-headless="$JAVA_DEBIAN_VE
 ## `java:openjdk-7u79-jdk`
 
 ```console
-$ docker pull library/java@sha256:145c2b65a0c3134c589d31c55add183c3feec9db20a23a3abb7198eb27a68105
+$ docker pull library/java@sha256:a4e420512ad7a69905d829775348c2090e8a4064b74b5a1f44dfc6e1ba3be4b7
 ```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
--	Total v2 Content-Length: 252.3 MB (252255181 bytes)
+-	Total v2 Content-Length: 252.3 MB (252255189 bytes)
 
 ### Layers (9)
 
@@ -1766,9 +1766,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1867,7 +1867,7 @@ $ docker pull library/java@sha256:01773d83e0f69bf8cfae3b4890da5ce2a87dc15d75c2c1
 ```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
--	Total v2 Content-Length: 252.3 MB (252255181 bytes)
+-	Total v2 Content-Length: 252.3 MB (252255189 bytes)
 
 ### Layers (9)
 
@@ -1912,9 +1912,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2013,7 +2013,7 @@ $ docker pull library/java@sha256:32943b1da2556d6878fe46f9f03f79336ac2319680e05d
 ```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
--	Total v2 Content-Length: 252.3 MB (252255181 bytes)
+-	Total v2 Content-Length: 252.3 MB (252255189 bytes)
 
 ### Layers (9)
 
@@ -2058,9 +2058,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2159,7 +2159,7 @@ $ docker pull library/java@sha256:a6df3fc355074fc9bf7f00e04dc885ed0ec5613c98197e
 ```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
--	Total v2 Content-Length: 252.3 MB (252255181 bytes)
+-	Total v2 Content-Length: 252.3 MB (252255189 bytes)
 
 ### Layers (9)
 
@@ -2204,9 +2204,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2305,7 +2305,7 @@ $ docker pull library/java@sha256:df961614cff279340040436e2015be75ac9b95ec5e2b80
 ```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
--	Total v2 Content-Length: 252.3 MB (252255181 bytes)
+-	Total v2 Content-Length: 252.3 MB (252255189 bytes)
 
 ### Layers (9)
 
@@ -2350,9 +2350,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2451,7 +2451,7 @@ $ docker pull library/java@sha256:1cbecb1d4ae73d7556b53f04aba1780a7b0173a3a8970a
 ```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
--	Total v2 Content-Length: 252.3 MB (252255181 bytes)
+-	Total v2 Content-Length: 252.3 MB (252255189 bytes)
 
 ### Layers (9)
 
@@ -2496,9 +2496,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2597,7 +2597,7 @@ $ docker pull library/java@sha256:3b23eabf95a7496ad64ff0701a97600252301236ec40d1
 ```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
--	Total v2 Content-Length: 252.3 MB (252255181 bytes)
+-	Total v2 Content-Length: 252.3 MB (252255189 bytes)
 
 ### Layers (9)
 
@@ -2642,9 +2642,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2743,7 +2743,7 @@ $ docker pull library/java@sha256:383b0b1b479401b7d2bec04ac7bfed6948d48b39fc4581
 ```
 
 -	Total Virtual Size: 587.3 MB (587317645 bytes)
--	Total v2 Content-Length: 252.3 MB (252255181 bytes)
+-	Total v2 Content-Length: 252.3 MB (252255189 bytes)
 
 ### Layers (9)
 
@@ -2788,9 +2788,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2885,11 +2885,11 @@ RUN apt-get update && apt-get install -y openjdk-7-jdk="$JAVA_DEBIAN_VERSION" &&
 ## `java:openjdk-7u79-jre`
 
 ```console
-$ docker pull library/java@sha256:97777c3ef12769d73ba4c6bf94bd5d9f0838142ae1616780c1eae08ee104b15f
+$ docker pull library/java@sha256:44c0ea0ef191a7a451f0a30d721412df564554c509f03e8eb003386f714d3eac
 ```
 
 -	Total Virtual Size: 334.7 MB (334718476 bytes)
--	Total v2 Content-Length: 148.3 MB (148301632 bytes)
+-	Total v2 Content-Length: 148.3 MB (148301640 bytes)
 
 ### Layers (8)
 
@@ -2934,9 +2934,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3015,7 +3015,7 @@ $ docker pull library/java@sha256:d1d081099163b5c62de0a98ad7a3b7976d369f6ff98f6d
 ```
 
 -	Total Virtual Size: 334.7 MB (334718476 bytes)
--	Total v2 Content-Length: 148.3 MB (148301632 bytes)
+-	Total v2 Content-Length: 148.3 MB (148301640 bytes)
 
 ### Layers (8)
 
@@ -3060,9 +3060,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3141,7 +3141,7 @@ $ docker pull library/java@sha256:5defb2f691ac825bdb90d7a8521910d5f8f8b99ca3b047
 ```
 
 -	Total Virtual Size: 334.7 MB (334718476 bytes)
--	Total v2 Content-Length: 148.3 MB (148301632 bytes)
+-	Total v2 Content-Length: 148.3 MB (148301640 bytes)
 
 ### Layers (8)
 
@@ -3186,9 +3186,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3267,7 +3267,7 @@ $ docker pull library/java@sha256:7809712add53710e3ab73f84b71399fedc876eee4b8b4c
 ```
 
 -	Total Virtual Size: 334.7 MB (334718476 bytes)
--	Total v2 Content-Length: 148.3 MB (148301632 bytes)
+-	Total v2 Content-Length: 148.3 MB (148301640 bytes)
 
 ### Layers (8)
 
@@ -3312,9 +3312,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3389,11 +3389,11 @@ RUN apt-get update && apt-get install -y openjdk-7-jre-headless="$JAVA_DEBIAN_VE
 ## `java:openjdk-8u66-jdk`
 
 ```console
-$ docker pull library/java@sha256:57a5ebf6e5baa7b17c8139fc3238edf904eba2dd9654404d84cc1e6e73e2bc88
+$ docker pull library/java@sha256:ec06f9b2d7e123645c258490b3d8c27467e9b7ab59cb7efa13ac919200ab0f84
 ```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
--	Total v2 Content-Length: 312.6 MB (312557742 bytes)
+-	Total v2 Content-Length: 312.6 MB (312557750 bytes)
 
 ### Layers (12)
 
@@ -3438,9 +3438,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3586,7 +3586,7 @@ $ docker pull library/java@sha256:d0e93dee1a4c79f2cf4f0962305988dc2d7b245ee5fcc7
 ```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
--	Total v2 Content-Length: 312.6 MB (312557742 bytes)
+-	Total v2 Content-Length: 312.6 MB (312557750 bytes)
 
 ### Layers (12)
 
@@ -3631,9 +3631,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3779,7 +3779,7 @@ $ docker pull library/java@sha256:68b79731e6f9e8a9cb5fb67883254bf69977120807155a
 ```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
--	Total v2 Content-Length: 312.6 MB (312557742 bytes)
+-	Total v2 Content-Length: 312.6 MB (312557750 bytes)
 
 ### Layers (12)
 
@@ -3824,9 +3824,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3972,7 +3972,7 @@ $ docker pull library/java@sha256:4829a1a37c819021af5b9b1e805793014a775160b9efe2
 ```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
--	Total v2 Content-Length: 312.6 MB (312557742 bytes)
+-	Total v2 Content-Length: 312.6 MB (312557750 bytes)
 
 ### Layers (12)
 
@@ -4017,9 +4017,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4165,7 +4165,7 @@ $ docker pull library/java@sha256:31993f72180948713f5e5cecbfcfe8f567f400d481125a
 ```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
--	Total v2 Content-Length: 312.6 MB (312557742 bytes)
+-	Total v2 Content-Length: 312.6 MB (312557750 bytes)
 
 ### Layers (12)
 
@@ -4210,9 +4210,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4358,7 +4358,7 @@ $ docker pull library/java@sha256:f12c6efc3f3074f7755dbe4c9cf895affd8829acf85a94
 ```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
--	Total v2 Content-Length: 312.6 MB (312557742 bytes)
+-	Total v2 Content-Length: 312.6 MB (312557750 bytes)
 
 ### Layers (12)
 
@@ -4403,9 +4403,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4551,7 +4551,7 @@ $ docker pull library/java@sha256:fac0ab3a7597f2c56372dd4bac8d47db88b61de623cfbd
 ```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
--	Total v2 Content-Length: 312.6 MB (312557742 bytes)
+-	Total v2 Content-Length: 312.6 MB (312557750 bytes)
 
 ### Layers (12)
 
@@ -4596,9 +4596,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4744,7 +4744,7 @@ $ docker pull library/java@sha256:4f6c9e516ec04a50057e6427fbb6069f48e09454184548
 ```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
--	Total v2 Content-Length: 312.6 MB (312557742 bytes)
+-	Total v2 Content-Length: 312.6 MB (312557750 bytes)
 
 ### Layers (12)
 
@@ -4789,9 +4789,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4937,7 +4937,7 @@ $ docker pull library/java@sha256:0863a480242bd05a6f75012d70b973988e0b5df494d410
 ```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
--	Total v2 Content-Length: 312.6 MB (312557742 bytes)
+-	Total v2 Content-Length: 312.6 MB (312557750 bytes)
 
 ### Layers (12)
 
@@ -4982,9 +4982,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -5130,7 +5130,7 @@ $ docker pull library/java@sha256:71f868818d54629764f30c7ddbb055c65aa0d01f75ef4f
 ```
 
 -	Total Virtual Size: 817.5 MB (817506595 bytes)
--	Total v2 Content-Length: 312.6 MB (312557742 bytes)
+-	Total v2 Content-Length: 312.6 MB (312557750 bytes)
 
 ### Layers (12)
 
@@ -5175,9 +5175,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -5319,11 +5319,11 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:openjdk-8u66-jre`
 
 ```console
-$ docker pull library/java@sha256:023557f3e75469186384697855cc1fa77e648a7563303b83b987f46da3f8f552
+$ docker pull library/java@sha256:23930b412e4b38e1c5cd355611e0c071142c36cda64ca5df642e349c65872cdf
 ```
 
 -	Total Virtual Size: 487.9 MB (487910700 bytes)
--	Total v2 Content-Length: 194.1 MB (194108039 bytes)
+-	Total v2 Content-Length: 194.1 MB (194108047 bytes)
 
 ### Layers (12)
 
@@ -5368,9 +5368,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -5510,7 +5510,7 @@ $ docker pull library/java@sha256:6b7ae979db4d8a6ea058c95ef2064e210e1669515e7235
 ```
 
 -	Total Virtual Size: 487.9 MB (487910700 bytes)
--	Total v2 Content-Length: 194.1 MB (194108039 bytes)
+-	Total v2 Content-Length: 194.1 MB (194108047 bytes)
 
 ### Layers (12)
 
@@ -5555,9 +5555,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -5697,7 +5697,7 @@ $ docker pull library/java@sha256:eb1c4d1f2e650248a81ef45201e32a7bda4f8b0f3ea76f
 ```
 
 -	Total Virtual Size: 487.9 MB (487910700 bytes)
--	Total v2 Content-Length: 194.1 MB (194108039 bytes)
+-	Total v2 Content-Length: 194.1 MB (194108047 bytes)
 
 ### Layers (12)
 
@@ -5742,9 +5742,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -5884,7 +5884,7 @@ $ docker pull library/java@sha256:950b84216d4e1ad9c0f50388bfc90a99a8c443df401fcf
 ```
 
 -	Total Virtual Size: 487.9 MB (487910700 bytes)
--	Total v2 Content-Length: 194.1 MB (194108039 bytes)
+-	Total v2 Content-Length: 194.1 MB (194108047 bytes)
 
 ### Layers (12)
 
@@ -5929,9 +5929,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -6071,7 +6071,7 @@ $ docker pull library/java@sha256:78e65316aa89618594922eb2ec709a5ebb90e29565e464
 ```
 
 -	Total Virtual Size: 487.9 MB (487910700 bytes)
--	Total v2 Content-Length: 194.1 MB (194108039 bytes)
+-	Total v2 Content-Length: 194.1 MB (194108047 bytes)
 
 ### Layers (12)
 
@@ -6116,9 +6116,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 

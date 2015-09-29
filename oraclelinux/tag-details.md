@@ -15,7 +15,7 @@
 ## `oraclelinux:latest`
 
 ```console
-$ docker pull library/oraclelinux@sha256:9fef2fd9c8bdeacbedca7a143e7dd415d8e160640ec3a7d6ea4fc6396eb1fd73
+$ docker pull library/oraclelinux@sha256:7bf48ff296013072fc8f3efded2cd498e8309c333cabd7609f428f8426639bac
 ```
 
 -	Total Virtual Size: 189.6 MB (189646645 bytes)

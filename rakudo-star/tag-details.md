@@ -2,17 +2,17 @@
 
 # Tags of `rakudo-star`
 
--	[`rakudo-star:2015.07`](#rakudo-star201507)
+-	[`rakudo-star:2015.09`](#rakudo-star201509)
 -	[`rakudo-star:latest`](#rakudo-starlatest)
 
-## `rakudo-star:2015.07`
+## `rakudo-star:2015.09`
 
 ```console
-$ docker pull library/rakudo-star@sha256:7afdef3f032756975e9a09fff9557a061d05889b31f09746880db4ea1c047285
+$ docker pull library/rakudo-star@sha256:c27db60db6c93a044add29597e58b2f1bb52f6acbe390783a5a9920a66cf050a
 ```
 
--	Total Virtual Size: 319.3 MB (319259087 bytes)
--	Total v2 Content-Length: 118.8 MB (118800936 bytes)
+-	Total Virtual Size: 320.1 MB (320107450 bytes)
+-	Total v2 Content-Length: 119.0 MB (119048984 bytes)
 
 ### Layers (9)
 
@@ -109,21 +109,21 @@ RUN groupadd -r perl6 && useradd -r -g perl6 perl6
 -	v2 Content-Length: 2.1 KB (2054 bytes)
 -	v2 Last-Modified: Fri, 11 Sep 2015 12:55:47 GMT
 
-#### `ffa582432814b0da21b8e6f4788caf7ffdfb9c317ce47ff1ffe984f3ba3af85e`
+#### `22c33c58df4f2068345bcbd5d0274d910a4e17adbcb245101d69c29350919143`
 
 ```dockerfile
-ENV rakudo_version=2015.07
+ENV rakudo_version=2015.09
 ```
 
--	Created: Thu, 10 Sep 2015 11:09:47 GMT
+-	Created: Mon, 28 Sep 2015 23:23:56 GMT
 -	Parent Layer: `a184b0433a221b0b1db05b2e5c701d17c63466bb701ea0b0c5856f5201e6a1fe`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `878f919e8b6cd07698cf6bd43dc5ff6f8f6ad03754d0c83c91b124970f0c3f7c`
+#### `caf9d1cee8c93c2668a841364c0245c7b46700ed9088afd744f620e93205d1b8`
 
 ```dockerfile
 RUN buildDeps='\
@@ -148,23 +148,23 @@ RUN buildDeps='\
      && apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Thu, 10 Sep 2015 11:13:59 GMT
--	Parent Layer: `ffa582432814b0da21b8e6f4788caf7ffdfb9c317ce47ff1ffe984f3ba3af85e`
--	Docker Version: 1.7.1
--	Virtual Size: 27.1 MB (27095874 bytes)
--	v2 Blob: `sha256:5f7125d120dc0e460ed5f8210fece54fa51fd1ed962a5419d43eed07bdf20708`
--	v2 Content-Length: 6.6 MB (6560933 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 12:55:39 GMT
+-	Created: Mon, 28 Sep 2015 23:28:22 GMT
+-	Parent Layer: `22c33c58df4f2068345bcbd5d0274d910a4e17adbcb245101d69c29350919143`
+-	Docker Version: 1.8.2
+-	Virtual Size: 27.9 MB (27944237 bytes)
+-	v2 Blob: `sha256:35027d4145e600fe212f29dbe9a86541f739e24e11a10e614229242d758bde5c`
+-	v2 Content-Length: 6.8 MB (6808981 bytes)
+-	v2 Last-Modified: Mon, 28 Sep 2015 23:28:53 GMT
 
-#### `0dc9697981ec573f479f08915154b5bc13fd95cfcf2cdc8a7efd091bbd8f39b8`
+#### `96636ba87fe1ba49ddbc8171dbd99f3db0a2116a9e1a140eae965919536b0a5e`
 
 ```dockerfile
 CMD ["rlwrap" "perl6"]
 ```
 
--	Created: Thu, 10 Sep 2015 11:14:00 GMT
--	Parent Layer: `878f919e8b6cd07698cf6bd43dc5ff6f8f6ad03754d0c83c91b124970f0c3f7c`
--	Docker Version: 1.7.1
+-	Created: Mon, 28 Sep 2015 23:28:23 GMT
+-	Parent Layer: `caf9d1cee8c93c2668a841364c0245c7b46700ed9088afd744f620e93205d1b8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -173,11 +173,11 @@ CMD ["rlwrap" "perl6"]
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull library/rakudo-star@sha256:90f23fd2b34ad3affca24b5cc9ad13d6f290b0929dacd3630ce9f6664cb28522
+$ docker pull library/rakudo-star@sha256:6a616c5defe3298914b22b31ca9afb3335ec63aabaa53bc0ba36510531811741
 ```
 
--	Total Virtual Size: 319.3 MB (319259087 bytes)
--	Total v2 Content-Length: 118.8 MB (118800936 bytes)
+-	Total Virtual Size: 320.1 MB (320107450 bytes)
+-	Total v2 Content-Length: 119.0 MB (119048984 bytes)
 
 ### Layers (9)
 
@@ -274,21 +274,21 @@ RUN groupadd -r perl6 && useradd -r -g perl6 perl6
 -	v2 Content-Length: 2.1 KB (2054 bytes)
 -	v2 Last-Modified: Fri, 11 Sep 2015 12:55:47 GMT
 
-#### `ffa582432814b0da21b8e6f4788caf7ffdfb9c317ce47ff1ffe984f3ba3af85e`
+#### `22c33c58df4f2068345bcbd5d0274d910a4e17adbcb245101d69c29350919143`
 
 ```dockerfile
-ENV rakudo_version=2015.07
+ENV rakudo_version=2015.09
 ```
 
--	Created: Thu, 10 Sep 2015 11:09:47 GMT
+-	Created: Mon, 28 Sep 2015 23:23:56 GMT
 -	Parent Layer: `a184b0433a221b0b1db05b2e5c701d17c63466bb701ea0b0c5856f5201e6a1fe`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `878f919e8b6cd07698cf6bd43dc5ff6f8f6ad03754d0c83c91b124970f0c3f7c`
+#### `caf9d1cee8c93c2668a841364c0245c7b46700ed9088afd744f620e93205d1b8`
 
 ```dockerfile
 RUN buildDeps='\
@@ -313,23 +313,23 @@ RUN buildDeps='\
      && apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Thu, 10 Sep 2015 11:13:59 GMT
--	Parent Layer: `ffa582432814b0da21b8e6f4788caf7ffdfb9c317ce47ff1ffe984f3ba3af85e`
--	Docker Version: 1.7.1
--	Virtual Size: 27.1 MB (27095874 bytes)
--	v2 Blob: `sha256:5f7125d120dc0e460ed5f8210fece54fa51fd1ed962a5419d43eed07bdf20708`
--	v2 Content-Length: 6.6 MB (6560933 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 12:55:39 GMT
+-	Created: Mon, 28 Sep 2015 23:28:22 GMT
+-	Parent Layer: `22c33c58df4f2068345bcbd5d0274d910a4e17adbcb245101d69c29350919143`
+-	Docker Version: 1.8.2
+-	Virtual Size: 27.9 MB (27944237 bytes)
+-	v2 Blob: `sha256:35027d4145e600fe212f29dbe9a86541f739e24e11a10e614229242d758bde5c`
+-	v2 Content-Length: 6.8 MB (6808981 bytes)
+-	v2 Last-Modified: Mon, 28 Sep 2015 23:28:53 GMT
 
-#### `0dc9697981ec573f479f08915154b5bc13fd95cfcf2cdc8a7efd091bbd8f39b8`
+#### `96636ba87fe1ba49ddbc8171dbd99f3db0a2116a9e1a140eae965919536b0a5e`
 
 ```dockerfile
 CMD ["rlwrap" "perl6"]
 ```
 
--	Created: Thu, 10 Sep 2015 11:14:00 GMT
--	Parent Layer: `878f919e8b6cd07698cf6bd43dc5ff6f8f6ad03754d0c83c91b124970f0c3f7c`
--	Docker Version: 1.7.1
+-	Created: Mon, 28 Sep 2015 23:28:23 GMT
+-	Parent Layer: `caf9d1cee8c93c2668a841364c0245c7b46700ed9088afd744f620e93205d1b8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B

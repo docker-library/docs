@@ -26,11 +26,11 @@
 ## `maven:3.3.3-jdk-7`
 
 ```console
-$ docker pull library/maven@sha256:284d5222612a2faa1a294fbbf97a9e28370020808bb0e3bb927be38fff5a5240
+$ docker pull library/maven@sha256:7faa17f003f9815cd539130c4c6c915aa1411e2b6a320e60a277ee0985040473
 ```
 
 -	Total Virtual Size: 596.8 MB (596822091 bytes)
--	Total v2 Content-Length: 260.4 MB (260396527 bytes)
+-	Total v2 Content-Length: 260.4 MB (260396535 bytes)
 
 ### Layers (13)
 
@@ -75,9 +75,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -232,7 +232,7 @@ $ docker pull library/maven@sha256:c4af3bb26c8cdc0b7e7b588cf2e78ae11fdcbe172d975
 ```
 
 -	Total Virtual Size: 596.8 MB (596822091 bytes)
--	Total v2 Content-Length: 260.4 MB (260396527 bytes)
+-	Total v2 Content-Length: 260.4 MB (260396535 bytes)
 
 ### Layers (13)
 
@@ -277,9 +277,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -434,7 +434,7 @@ $ docker pull library/maven@sha256:dfdd1743b8af824d6d5d6b9a5ea275b2dfa00f7a93fde
 ```
 
 -	Total Virtual Size: 596.8 MB (596822091 bytes)
--	Total v2 Content-Length: 260.4 MB (260396527 bytes)
+-	Total v2 Content-Length: 260.4 MB (260396535 bytes)
 
 ### Layers (13)
 
@@ -479,9 +479,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -632,11 +632,11 @@ CMD ["mvn"]
 ## `maven:3.3.3-jdk-7-onbuild`
 
 ```console
-$ docker pull library/maven@sha256:e3d899013fcb767bafdc719abc5210d3a2c2740f0da4a9dde90999e1c6deb3a9
+$ docker pull library/maven@sha256:46a0f76ef80fba491ca013e05533e52ebcf7c101dd30cae22c0c3b7f165338a3
 ```
 
 -	Total Virtual Size: 596.8 MB (596822091 bytes)
--	Total v2 Content-Length: 260.4 MB (260396750 bytes)
+-	Total v2 Content-Length: 260.4 MB (260396758 bytes)
 
 ### Layers (17)
 
@@ -681,9 +681,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -894,7 +894,7 @@ $ docker pull library/maven@sha256:ae864bb2dc2b51714e407d2e8a61af903521d834fef1b
 ```
 
 -	Total Virtual Size: 596.8 MB (596822091 bytes)
--	Total v2 Content-Length: 260.4 MB (260396750 bytes)
+-	Total v2 Content-Length: 260.4 MB (260396758 bytes)
 
 ### Layers (17)
 
@@ -939,9 +939,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1152,7 +1152,7 @@ $ docker pull library/maven@sha256:ec4342802e61f3fde3b78f01abac5dfe60e4835df624d
 ```
 
 -	Total Virtual Size: 596.8 MB (596822091 bytes)
--	Total v2 Content-Length: 260.4 MB (260396750 bytes)
+-	Total v2 Content-Length: 260.4 MB (260396758 bytes)
 
 ### Layers (17)
 
@@ -1197,9 +1197,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1406,11 +1406,11 @@ ONBUILD RUN mvn install
 ## `maven:3.3.3-jdk-8`
 
 ```console
-$ docker pull library/maven@sha256:9438d87ad5e971e6a7fd47e694f78697293773747d9144ed210081f0946130bc
+$ docker pull library/maven@sha256:5128abeb6a235c04976ecbf319ad3c50cb2f6a803e65815c5cce9a8073940baa
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699085 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699093 bytes)
 
 ### Layers (16)
 
@@ -1455,9 +1455,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1659,7 +1659,7 @@ $ docker pull library/maven@sha256:6b08c3353e328777b34cbc30f8dff0e2dd0cf9ea232f0
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699085 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699093 bytes)
 
 ### Layers (16)
 
@@ -1704,9 +1704,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1908,7 +1908,7 @@ $ docker pull library/maven@sha256:da9145a3fc2abe327f2bceac3c0b53312cac960e3f758
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699085 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699093 bytes)
 
 ### Layers (16)
 
@@ -1953,9 +1953,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2157,7 +2157,7 @@ $ docker pull library/maven@sha256:28d2971afd3914be1045285d07dfd2d328a30c1b9476e
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699085 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699093 bytes)
 
 ### Layers (16)
 
@@ -2202,9 +2202,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2406,7 +2406,7 @@ $ docker pull library/maven@sha256:84f7379b4bdb962172bf08bb76684bd615ddd1cdfb4f4
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699085 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699093 bytes)
 
 ### Layers (16)
 
@@ -2451,9 +2451,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2655,7 +2655,7 @@ $ docker pull library/maven@sha256:ad2334ff142897f5adfbb4015ec63daffe2b8fbbab033
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699085 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699093 bytes)
 
 ### Layers (16)
 
@@ -2700,9 +2700,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2904,7 +2904,7 @@ $ docker pull library/maven@sha256:081bd7fc9ec6e766975338a23b223b91d586452f277e3
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699085 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699093 bytes)
 
 ### Layers (16)
 
@@ -2949,9 +2949,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3149,11 +3149,11 @@ CMD ["mvn"]
 ## `maven:3.3.3-jdk-8-onbuild`
 
 ```console
-$ docker pull library/maven@sha256:7da6589fc462614ff06cabd2a14f7eb84fc5be58688a419b7e0ba2e4cdfa83b0
+$ docker pull library/maven@sha256:01e02d9da7c313cd7a0c24d70f5e8b100f0a023eaed6a9559ca566d195c4c6a9
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699306 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699314 bytes)
 
 ### Layers (20)
 
@@ -3198,9 +3198,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3458,7 +3458,7 @@ $ docker pull library/maven@sha256:b8b84925bf0d0cb1c551c4cab248cdfbef3bbce3b4876
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699306 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699314 bytes)
 
 ### Layers (20)
 
@@ -3503,9 +3503,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3763,7 +3763,7 @@ $ docker pull library/maven@sha256:b00aa75bf77afec5025011a55d6679ec6e00a9c04653b
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699306 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699314 bytes)
 
 ### Layers (20)
 
@@ -3808,9 +3808,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4068,7 +4068,7 @@ $ docker pull library/maven@sha256:87e5e92111c98ec99a6afd707efdb6adc8bb3f82d0c3e
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699306 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699314 bytes)
 
 ### Layers (20)
 
@@ -4113,9 +4113,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4373,7 +4373,7 @@ $ docker pull library/maven@sha256:61fbdc7a1a87fc81dd4760bc12e040057c790ff7c869a
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699306 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699314 bytes)
 
 ### Layers (20)
 
@@ -4418,9 +4418,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4678,7 +4678,7 @@ $ docker pull library/maven@sha256:5e32b8e843c63ed99369dff58c7d1b5c78c1962a7b89a
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699306 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699314 bytes)
 
 ### Layers (20)
 
@@ -4723,9 +4723,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4983,7 +4983,7 @@ $ docker pull library/maven@sha256:1fe2aee96da8f5675756f7929134ce31742c7ef353932
 ```
 
 -	Total Virtual Size: 827.0 MB (827011041 bytes)
--	Total v2 Content-Length: 320.7 MB (320699306 bytes)
+-	Total v2 Content-Length: 320.7 MB (320699314 bytes)
 
 ### Layers (20)
 
@@ -5028,9 +5028,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 

@@ -8,7 +8,7 @@
 ## `hipache:latest`
 
 ```console
-$ docker pull library/hipache@sha256:74187f2de4fee80c826ff340f9c8226bd77a45d959b01f1b90688f869a57151f
+$ docker pull library/hipache@sha256:9d002a2bd1e1e0c1a18f57077894edd32e8b4f56904f6b0f5b77863928034832
 ```
 
 -	Total Virtual Size: 367.8 MB (367785452 bytes)

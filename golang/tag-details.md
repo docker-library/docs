@@ -476,7 +476,7 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 ## `golang:1.4.3-onbuild`
 
 ```console
-$ docker pull library/golang@sha256:db2340ea4ad97780a3a529a5984b41c1cdaee8e5a9d013bdb5283bafd9987d14
+$ docker pull library/golang@sha256:c4e890d4337b49998a812f42db3676e6ec33416f0e9f42ace6550f5c8afbdb88
 ```
 
 -	Total Virtual Size: 562.9 MB (562890894 bytes)
@@ -1094,7 +1094,7 @@ ONBUILD RUN go-wrapper install
 ## `golang:1.4.3-cross`
 
 ```console
-$ docker pull library/golang@sha256:d5a377cb4696c4c0f1ec7651683af1692a0b6fba726e3b35f0f78a3bc4e51e4c
+$ docker pull library/golang@sha256:169cf21af2e42e3ac51f9444e36728cf70c600cdac4d8a0c66a974803851b2c5
 ```
 
 -	Total Virtual Size: 2.4 GB (2384680623 bytes)
@@ -1640,11 +1640,11 @@ RUN cd /usr/src/go/src \
 ## `golang:1.4.3-wheezy`
 
 ```console
-$ docker pull library/golang@sha256:943699786866071d0a78e61690eda09111e69c451230921283c00fb0f2c31086
+$ docker pull library/golang@sha256:44fded90ccb92b772d0364319a36219308a7e15efce0f5fa3cc5f66b56cf1953
 ```
 
 -	Total Virtual Size: 437.3 MB (437277964 bytes)
--	Total v2 Content-Length: 150.5 MB (150517930 bytes)
+-	Total v2 Content-Length: 150.5 MB (150517936 bytes)
 
 ### Layers (14)
 
@@ -1689,9 +1689,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
--	v2 Content-Length: 6.7 MB (6739553 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -1869,7 +1869,7 @@ $ docker pull library/golang@sha256:0be5940e434b7acef785557a85410949156eb4473a28
 ```
 
 -	Total Virtual Size: 437.3 MB (437277964 bytes)
--	Total v2 Content-Length: 150.5 MB (150517930 bytes)
+-	Total v2 Content-Length: 150.5 MB (150517936 bytes)
 
 ### Layers (14)
 
@@ -1914,9 +1914,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
--	v2 Content-Length: 6.7 MB (6739553 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -2090,7 +2090,7 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 ## `golang:1.5.1`
 
 ```console
-$ docker pull library/golang@sha256:7fea9e372429f67b4a273c3d999efa51bd5910ca7ad0b2125f978150f2175bd2
+$ docker pull library/golang@sha256:d585b7b7264b2077c1a8986665990f545deca17df7b9f8c45a989013eef6ebaa
 ```
 
 -	Total Virtual Size: 709.5 MB (709470237 bytes)
@@ -2986,7 +2986,7 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 ## `golang:1.5.1-onbuild`
 
 ```console
-$ docker pull library/golang@sha256:ce9d0ef210a25af4eaf7cf4562bc12f5a36557e026b904ffbda6c5003ef1106f
+$ docker pull library/golang@sha256:f938465579d1cde302a447fef237a5a45d7e96609b97c83b9144446615ad9e72
 ```
 
 -	Total Virtual Size: 709.5 MB (709470237 bytes)
@@ -4218,11 +4218,11 @@ ONBUILD RUN go-wrapper install
 ## `golang:1.5.1-wheezy`
 
 ```console
-$ docker pull library/golang@sha256:c477adb3b92a26e7e1ffd64c51534b07876525beb9b09084274adebf7f87f469
+$ docker pull library/golang@sha256:c1f150e7d638c6539e65c51aa9ded08910025dbce7ff2883e9bf80c0fae90af4
 ```
 
 -	Total Virtual Size: 583.0 MB (583028248 bytes)
--	Total v2 Content-Length: 192.8 MB (192776514 bytes)
+-	Total v2 Content-Length: 192.8 MB (192776520 bytes)
 
 ### Layers (14)
 
@@ -4267,9 +4267,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
--	v2 Content-Length: 6.7 MB (6739553 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -4446,7 +4446,7 @@ $ docker pull library/golang@sha256:aaa27cfd9be558b9a60ea947f1d05e085380cca1a8cd
 ```
 
 -	Total Virtual Size: 583.0 MB (583028248 bytes)
--	Total v2 Content-Length: 192.8 MB (192776514 bytes)
+-	Total v2 Content-Length: 192.8 MB (192776520 bytes)
 
 ### Layers (14)
 
@@ -4491,9 +4491,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
--	v2 Content-Length: 6.7 MB (6739553 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -4670,7 +4670,7 @@ $ docker pull library/golang@sha256:8087c2ac73e05f71cd32da6c9e517724c94dc61daae2
 ```
 
 -	Total Virtual Size: 583.0 MB (583028248 bytes)
--	Total v2 Content-Length: 192.8 MB (192776514 bytes)
+-	Total v2 Content-Length: 192.8 MB (192776520 bytes)
 
 ### Layers (14)
 
@@ -4715,9 +4715,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
--	v2 Content-Length: 6.7 MB (6739553 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 
@@ -4894,7 +4894,7 @@ $ docker pull library/golang@sha256:b0723303a749afd4785fd29eab91631bf85c509ab2ba
 ```
 
 -	Total Virtual Size: 583.0 MB (583028248 bytes)
--	Total v2 Content-Length: 192.8 MB (192776514 bytes)
+-	Total v2 Content-Length: 192.8 MB (192776520 bytes)
 
 ### Layers (14)
 
@@ -4939,9 +4939,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `19de96c112fcca5b6de16611dc0a359b0b977c551921ca79ac5cf4a8bfff9351`
 -	Docker Version: 1.7.1
 -	Virtual Size: 14.2 MB (14239819 bytes)
--	v2 Blob: `sha256:7a11528d019acc2b739bd4c1a7e518e247f729fdad40490be9d9fdb13e85c8c8`
--	v2 Content-Length: 6.7 MB (6739553 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:43:23 GMT
+-	v2 Blob: `sha256:2aab28f324d08905439a124eba4af72a5862584413ec2961a34387afc1f37634`
+-	v2 Content-Length: 6.7 MB (6739559 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:43:09 GMT
 
 #### `d6b70cefe2bfb76216c96acb6a6c6350eedff489df914b2606b1005e70f73a00`
 

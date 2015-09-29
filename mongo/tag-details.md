@@ -19,7 +19,7 @@
 ## `mongo:2.2.7`
 
 ```console
-$ docker pull library/mongo@sha256:5a8552dac7074cf4971b8cafa29277a24a5a9aab79d1716863c07ed1d6f23abe
+$ docker pull library/mongo@sha256:ef8cc3654b239233a3c77c9d2d4cda5c4c4c8be95e38d6c6acc0f83ea016b6e4
 ```
 
 -	Total Virtual Size: 238.4 MB (238350362 bytes)
@@ -455,7 +455,7 @@ CMD ["mongod"]
 ## `mongo:2.4.14`
 
 ```console
-$ docker pull library/mongo@sha256:935b1884f8120ba438212f9653e818310860fb78a895a7dfc0659021082ce398
+$ docker pull library/mongo@sha256:36f6ece42dfcc9b71829455691a739a82f4c515f41284b49f78dab7bd8b1b084
 ```
 
 -	Total Virtual Size: 343.9 MB (343942043 bytes)
@@ -891,7 +891,7 @@ CMD ["mongod"]
 ## `mongo:2.6.11`
 
 ```console
-$ docker pull library/mongo@sha256:8654030bbfc18a56e8ec226492af57f114fb35ffd5fad1798487c3d74b744ae1
+$ docker pull library/mongo@sha256:7692c13796d833939d822e1451dad019d3882de2d45172ab4ef4bacb64e26251
 ```
 
 -	Total Virtual Size: 392.3 MB (392315400 bytes)
@@ -1545,7 +1545,7 @@ CMD ["mongod"]
 ## `mongo:3.0.6`
 
 ```console
-$ docker pull library/mongo@sha256:c987136f7ce01cc2d3c85cba12000ab4a4c111c5a417f303fc610652a9901e97
+$ docker pull library/mongo@sha256:f692a53d17fde5a2beea1debd363cca400a4534a5c70ef65de6cc261476cd4e4
 ```
 
 -	Total Virtual Size: 260.7 MB (260701925 bytes)
@@ -2609,7 +2609,7 @@ CMD ["mongod"]
 ## `mongo:3.1.8`
 
 ```console
-$ docker pull library/mongo@sha256:e188279d51226660cd48ed7ffefcbfc9ab4751b5599b4a8f3466dd7818f26815
+$ docker pull library/mongo@sha256:65fdb48dc3c0d2e04b68402844d3d4b2319c9b421e93402dacf2f41c8665e4a3
 ```
 
 -	Total Virtual Size: 310.9 MB (310909333 bytes)

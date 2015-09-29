@@ -10,7 +10,7 @@
 ## `nginx:latest`
 
 ```console
-$ docker pull library/nginx@sha256:302e0a331371acb77e434075d111ebe485a7f3605fdcf184185fcca73d65ac8b
+$ docker pull library/nginx@sha256:9d0768452fe8f43c23292d24ec0fbd0ce06c98f776a084623d62ee12c4b7d58c
 ```
 
 -	Total Virtual Size: 132.9 MB (132881060 bytes)

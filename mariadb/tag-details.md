@@ -13,7 +13,7 @@
 ## `mariadb:10.0.21`
 
 ```console
-$ docker pull library/mariadb@sha256:36aa62cb79973bb38cd1dcfa6a6eb3441b4333930032474520d6937e379059a8
+$ docker pull library/mariadb@sha256:a206f8a3dcf70856ff9762a6a86af953f50e08c0d8532f74db7c3a695e49f522
 ```
 
 -	Total Virtual Size: 302.2 MB (302196693 bytes)
@@ -957,7 +957,7 @@ CMD ["mysqld"]
 ## `mariadb:5.5.45`
 
 ```console
-$ docker pull library/mariadb@sha256:b5b6f23a3908cb825920f2e1154f4052be674ee3169fb09b7afde3ea7c8c1efc
+$ docker pull library/mariadb@sha256:d391aa5b38b58f9a64279dd09876db2fc0a8923497ef787a273fdbc53e5d5e4a
 ```
 
 -	Total Virtual Size: 238.5 MB (238516936 bytes)

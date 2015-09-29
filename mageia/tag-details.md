@@ -9,7 +9,7 @@
 ## `mageia:latest`
 
 ```console
-$ docker pull library/mageia@sha256:b36eefdaae7206e09d66e6b566ec588ae8a9c848da4d8e3d8ee5e91d68888a26
+$ docker pull library/mageia@sha256:ba63a88f22bf1d6065662ed3c03439641806b2f520f334a473ae773a5505b236
 ```
 
 -	Total Virtual Size: 167.8 MB (167840690 bytes)
@@ -47,7 +47,7 @@ ADD file:b4b0fe75032a7c858b2b82d641d89a4bff3e8a99e7f22c88662d0115e9429087 in /
 ## `mageia:4`
 
 ```console
-$ docker pull library/mageia@sha256:518d6505c15ed5ab4f4c03fb9eec95c7c3f67b28c67304bc6c168b4056a5e9f1
+$ docker pull library/mageia@sha256:5dbb5a86d997bf54b7fd2292bea64e1120854b3f8043d5ba4832ad1d1f700a49
 ```
 
 -	Total Virtual Size: 159.7 MB (159661883 bytes)

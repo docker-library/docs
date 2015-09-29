@@ -30,7 +30,7 @@
 ## `mono:3.10.0`
 
 ```console
-$ docker pull library/mono@sha256:8eca5650a59f056b275927048b50a1ed0990e986efbd056984023d80c0b6fa59
+$ docker pull library/mono@sha256:1fbb98c5dde005e5d16895be57fa07342ca1fc45428a6d083531c2816cf893fc
 ```
 
 -	Total Virtual Size: 334.0 MB (334029281 bytes)
@@ -258,7 +258,7 @@ RUN mozroots --machine --import --sync --quiet
 ## `mono:3.10.0-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:b318d917b3f53cf882d7d003d0dc797f9b884b6fe61cec7897eb27340a470bb1
+$ docker pull library/mono@sha256:412fd6800586356a00136b90ef907914a746b21b38ef3cf98844f348804282b5
 ```
 
 -	Total Virtual Size: 334.0 MB (334029281 bytes)
@@ -682,7 +682,7 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:3.12.1`
 
 ```console
-$ docker pull library/mono@sha256:fe0b0176903abe0dd34f587a49bc24871f613dd0bf0bd2933f1417849b42c4cf
+$ docker pull library/mono@sha256:009af90389fbadd8f111204c189aec86b352c8147c81d36b0d3eaace7554061d
 ```
 
 -	Total Virtual Size: 348.6 MB (348596691 bytes)
@@ -1078,7 +1078,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 ## `mono:3.12.0-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:b8efe41e544cec3a83b7b958d7986e14b5d8dbf777290a7da7cbdb6069db5ba9
+$ docker pull library/mono@sha256:ae599b301d50854cfd938d73c846968c45b2d35e90e13186cffe5e5eb0f10a3b
 ```
 
 -	Total Virtual Size: 348.6 MB (348596691 bytes)
@@ -1669,7 +1669,7 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:3.8.0`
 
 ```console
-$ docker pull library/mono@sha256:68748b03cb0f2bdb2d48544ff59c55c1c6806542a90f6d851d7acf2f2be81b4a
+$ docker pull library/mono@sha256:cdd19a0ded4805cd6b1ef4d63c272f7ea47b4d589e29bf572f2c8175b10d2585
 ```
 
 -	Total Virtual Size: 328.0 MB (328035250 bytes)
@@ -1897,7 +1897,7 @@ RUN mozroots --machine --import --sync --quiet
 ## `mono:3.8.0-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:c5389f3cbe40d90933cfc200c9e66fbd943d9d9b27ae62b4ab8547a478200bb2
+$ docker pull library/mono@sha256:e9387f312533d190596b37b078e04ca2ac1241767798a1421a7649b3b3d6b03c
 ```
 
 -	Total Virtual Size: 328.0 MB (328035250 bytes)
@@ -2321,7 +2321,7 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.0.1`
 
 ```console
-$ docker pull library/mono@sha256:689eaa5094f8df32f260ff59363605b483cc07e038d126732ee6119e0a82fed0
+$ docker pull library/mono@sha256:5cce08b183f8c1f4376db7481cd9ea4ce03cae2a074026588b83c987023811d4
 ```
 
 -	Total Virtual Size: 622.5 MB (622482771 bytes)
@@ -2717,7 +2717,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 ## `mono:4.0.0-onbuild`
 
 ```console
-$ docker pull library/mono@sha256:806c4a6936aecc260d9d54c3c147ca89266a17f36bfeb4de381ed38b55b9a700
+$ docker pull library/mono@sha256:882f4bab826e27b132ec1ee14cf6267144961c679227c2bbb3d555f21dcc460a
 ```
 
 -	Total Virtual Size: 622.5 MB (622482771 bytes)

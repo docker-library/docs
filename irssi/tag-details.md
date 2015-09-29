@@ -10,7 +10,7 @@
 ## `irssi:0.8.17`
 
 ```console
-$ docker pull library/irssi@sha256:003f401b528044f9ee6b69b7e5d38d18b130308d2bdd54491808e4688c161ad7
+$ docker pull library/irssi@sha256:2dafa4c9d37dfca31481f045af5dbbde2a392a75659eefff2b6eb5237ac21def
 ```
 
 -	Total Virtual Size: 261.2 MB (261186951 bytes)

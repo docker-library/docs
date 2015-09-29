@@ -9,7 +9,7 @@
 ## `julia:0.3.11`
 
 ```console
-$ docker pull library/julia@sha256:81ce6d4c87c751c7000a69b9bd4cb9859c395176204656713619a0548c6b39fe
+$ docker pull library/julia@sha256:d63531d10116aa6d575285ed530035e5106431ddbc289aaf6991eb5ed8438c38
 ```
 
 -	Total Virtual Size: 361.8 MB (361839208 bytes)

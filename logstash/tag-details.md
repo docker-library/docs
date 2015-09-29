@@ -15,11 +15,11 @@
 ## `logstash:1.4.5-1-a2bacae`
 
 ```console
-$ docker pull library/logstash@sha256:d159e681e66e6823f890690149961fdff2ccd80d781fe295deafb153819ec692
+$ docker pull library/logstash@sha256:dfb286ff54489d77c9c5f38c5d471d2acc3648b13218ff61b5cae00f7575bd9a
 ```
 
 -	Total Virtual Size: 599.2 MB (599232411 bytes)
--	Total v2 Content-Length: 269.0 MB (268981133 bytes)
+-	Total v2 Content-Length: 269.0 MB (268981141 bytes)
 
 ### Layers (23)
 
@@ -64,9 +64,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -369,7 +369,7 @@ $ docker pull library/logstash@sha256:b5ad88c0c774eff47081570e78208331902fee188d
 ```
 
 -	Total Virtual Size: 599.2 MB (599232411 bytes)
--	Total v2 Content-Length: 269.0 MB (268981133 bytes)
+-	Total v2 Content-Length: 269.0 MB (268981141 bytes)
 
 ### Layers (23)
 
@@ -414,9 +414,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -719,7 +719,7 @@ $ docker pull library/logstash@sha256:b3b0bffbef42b5063cf1936bc7e44a6a7f9250343e
 ```
 
 -	Total Virtual Size: 599.2 MB (599232411 bytes)
--	Total v2 Content-Length: 269.0 MB (268981133 bytes)
+-	Total v2 Content-Length: 269.0 MB (268981141 bytes)
 
 ### Layers (23)
 
@@ -764,9 +764,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1069,7 +1069,7 @@ $ docker pull library/logstash@sha256:74a21d8b7f9d44899e55c7bbd6e97c47525deed5a1
 ```
 
 -	Total Virtual Size: 599.2 MB (599232411 bytes)
--	Total v2 Content-Length: 269.0 MB (268981133 bytes)
+-	Total v2 Content-Length: 269.0 MB (268981141 bytes)
 
 ### Layers (23)
 
@@ -1114,9 +1114,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1415,11 +1415,11 @@ CMD ["logstash" "agent"]
 ## `logstash:1.5.4-1`
 
 ```console
-$ docker pull library/logstash@sha256:d9e0f5130e5e66f7d2d7b11c3677605a34648fdbf7f90fcc7e5c24f03d831430
+$ docker pull library/logstash@sha256:5b4d4eac8dd288de5169f0064d8a8d045d87adc65ac9b4145434c4bc26a45a7b
 ```
 
 -	Total Virtual Size: 636.8 MB (636798921 bytes)
--	Total v2 Content-Length: 287.7 MB (287670661 bytes)
+-	Total v2 Content-Length: 287.7 MB (287670669 bytes)
 
 ### Layers (23)
 
@@ -1464,9 +1464,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1769,7 +1769,7 @@ $ docker pull library/logstash@sha256:921d1683aa6f848f2e2bd6c42c3f872bc7b02b1a2d
 ```
 
 -	Total Virtual Size: 636.8 MB (636798921 bytes)
--	Total v2 Content-Length: 287.7 MB (287670661 bytes)
+-	Total v2 Content-Length: 287.7 MB (287670669 bytes)
 
 ### Layers (23)
 
@@ -1814,9 +1814,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2119,7 +2119,7 @@ $ docker pull library/logstash@sha256:fceab3453237494b7345eadf8f70b83a1ba03f267a
 ```
 
 -	Total Virtual Size: 636.8 MB (636798921 bytes)
--	Total v2 Content-Length: 287.7 MB (287670661 bytes)
+-	Total v2 Content-Length: 287.7 MB (287670669 bytes)
 
 ### Layers (23)
 
@@ -2164,9 +2164,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2469,7 +2469,7 @@ $ docker pull library/logstash@sha256:e9e5f65f1a45113155746e22387dee5ea1258ef2fe
 ```
 
 -	Total Virtual Size: 636.8 MB (636798921 bytes)
--	Total v2 Content-Length: 287.7 MB (287670661 bytes)
+-	Total v2 Content-Length: 287.7 MB (287670669 bytes)
 
 ### Layers (23)
 
@@ -2514,9 +2514,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2819,7 +2819,7 @@ $ docker pull library/logstash@sha256:268fcb5ed3555ae73a85c179f879f099f810c5050b
 ```
 
 -	Total Virtual Size: 636.8 MB (636798921 bytes)
--	Total v2 Content-Length: 287.7 MB (287670661 bytes)
+-	Total v2 Content-Length: 287.7 MB (287670669 bytes)
 
 ### Layers (23)
 
@@ -2864,9 +2864,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 

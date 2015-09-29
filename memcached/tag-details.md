@@ -10,7 +10,7 @@
 ## `memcached:1.4.24`
 
 ```console
-$ docker pull library/memcached@sha256:cf5f30508cddd6b3918bb1b6cd15b4505d6b985f3d5460b0546d66b2d760ffa6
+$ docker pull library/memcached@sha256:492a7399c2c0c27429ee1dc961c26919ed0a7a211863ca786b121f51dee7aa9d
 ```
 
 -	Total Virtual Size: 132.4 MB (132359995 bytes)

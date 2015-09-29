@@ -8,7 +8,7 @@
 ## `kaazing-gateway:latest`
 
 ```console
-$ docker pull library/kaazing-gateway@sha256:51f404d6c1b2907c5a347df9bc9a785013748bb3c83235cf69f6de4361310c10
+$ docker pull library/kaazing-gateway@sha256:608155a50dca3b00b330f87820012e1a2a63eed7e18ab366d1f67e1f755849e9
 ```
 
 -	Total Virtual Size: 840.7 MB (840700488 bytes)

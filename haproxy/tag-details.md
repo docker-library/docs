@@ -12,7 +12,7 @@
 ## `haproxy:1.4.26`
 
 ```console
-$ docker pull library/haproxy@sha256:516e58d7748869c06e0627d6c205291a4b6846f8393ee8015e14892a49614443
+$ docker pull library/haproxy@sha256:3f00bdb007800c2fca5d7e134bf34c6df03767c123988f1ea0e9f9cc97c53482
 ```
 
 -	Total Virtual Size: 92.0 MB (92036157 bytes)
@@ -292,7 +292,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ## `haproxy:1.5.14`
 
 ```console
-$ docker pull library/haproxy@sha256:fee6bd310af38bc8cb488522b4da016fc58a42011ab0dd169c043e41c5f1082c
+$ docker pull library/haproxy@sha256:576aa129c6d5d8af23c54b3db217f355b5d7b69e4eda837c8dd0af4a41044fc5
 ```
 
 -	Total Virtual Size: 97.8 MB (97835140 bytes)

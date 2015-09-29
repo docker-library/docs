@@ -15,7 +15,7 @@
 ## `mysql:5.5.45`
 
 ```console
-$ docker pull library/mysql@sha256:d48774c3a8eb8fbaf78e36c701abb1f833015e2f58a91e1a1ac2d0f6f5317b8a
+$ docker pull library/mysql@sha256:72a09a61824bdaf652e701fcbf0ee12f5b132d8fdeaf1629ce42960375de03cb
 ```
 
 -	Total Virtual Size: 213.5 MB (213454922 bytes)
@@ -553,7 +553,7 @@ CMD ["mysqld"]
 ## `mysql:5.6.26`
 
 ```console
-$ docker pull library/mysql@sha256:372ee10a9543241d1856324a2b2bcfaa7c6ec84dff86d52185de43f2ff9eafc9
+$ docker pull library/mysql@sha256:1dde2a549e58ca004b99669a1c4939e3782c2185bf35f2b09b32e7c2393babd8
 ```
 
 -	Total Virtual Size: 283.5 MB (283530606 bytes)
@@ -1525,7 +1525,7 @@ CMD ["mysqld"]
 ## `mysql:5.7.8-rc`
 
 ```console
-$ docker pull library/mysql@sha256:8630a573edba13c05ca7a66e86562075110a01c7c0f06c0d7edec23492248819
+$ docker pull library/mysql@sha256:dce4ba6c097f305f4731eba6cb7ed2860b95c82e4c4fb12c77ccb05afc867654
 ```
 
 -	Total Virtual Size: 321.3 MB (321267051 bytes)

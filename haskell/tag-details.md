@@ -12,7 +12,7 @@
 ## `haskell:7.10.2`
 
 ```console
-$ docker pull library/haskell@sha256:25001b8085cdd26ff13e5c9649a05cd5b5c54914de714ec6be04a925c57c4e55
+$ docker pull library/haskell@sha256:4d50bb63fd9b446f9a15626150badc5352061c861bc71baf8277aa137f0bcf61
 ```
 
 -	Total Virtual Size: 714.0 MB (714031667 bytes)
@@ -464,7 +464,7 @@ CMD ["ghci"]
 ## `haskell:7.8.4`
 
 ```console
-$ docker pull library/haskell@sha256:5c10fe64528feacabf3f88f003cc007e0bbe206ff381f51e9763daffc5e904fa
+$ docker pull library/haskell@sha256:afc5178d0fd6525ea3549014649dabf0de459cc8b67568159fd6d65538c15803
 ```
 
 -	Total Virtual Size: 647.9 MB (647870486 bytes)

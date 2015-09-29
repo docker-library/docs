@@ -9,7 +9,7 @@
 ## `odoo:8.0`
 
 ```console
-$ docker pull library/odoo@sha256:971bd6e160fd7144ef412df981c15747c5700849ff631c52f4a4866adab678c3
+$ docker pull library/odoo@sha256:eada65b7fdfa3a609be0a84a470fe0c81e0ca78d7c6ddabc168414a4995c386e
 ```
 
 -	Total Virtual Size: 739.5 MB (739461391 bytes)

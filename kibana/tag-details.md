@@ -15,7 +15,7 @@
 ## `kibana:4.0.3`
 
 ```console
-$ docker pull library/kibana@sha256:a9705d3250a5d0d19ed672a6750dbf364f33ebde7f4d41be5ec73f690b412862
+$ docker pull library/kibana@sha256:61d3752596d2848817d0f0fd731fc47a330e61b0ded72053f74ad271927e3974
 ```
 
 -	Total Virtual Size: 195.5 MB (195480915 bytes)
@@ -449,7 +449,7 @@ CMD ["kibana"]
 ## `kibana:4.1.2`
 
 ```console
-$ docker pull library/kibana@sha256:31de31ed91bd89859666780d35064371dc1847cf13563c1eafc6e89b76850d37
+$ docker pull library/kibana@sha256:f6094c303cbae52162fb4dd9cc3a972f070482b94378e196e9a4e86419e9a797
 ```
 
 -	Total Virtual Size: 184.6 MB (184644596 bytes)

@@ -10,7 +10,7 @@
 ## `opensuse:13.2`
 
 ```console
-$ docker pull library/opensuse@sha256:ae45dd0733912265db17f1f0a83d610215185aacdf84599d4b57462fe7d758f1
+$ docker pull library/opensuse@sha256:b9ebaf54a450bcd400bcafea93b53aa3debcc787df7805a5a7e2d0db3457163f
 ```
 
 -	Total Virtual Size: 94.0 MB (94001408 bytes)
@@ -124,7 +124,7 @@ ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
 ## `opensuse:tumbleweed`
 
 ```console
-$ docker pull library/opensuse@sha256:cbb71ed6ece310ccf782faeed419c7de53a75df26bf1ae66fe0686ccdf064a99
+$ docker pull library/opensuse@sha256:efb43c554a1b261719e88e05ccb6d7911fb843d6ff90e1d3dadb7b599833dd15
 ```
 
 -	Total Virtual Size: 106.6 MB (106595103 bytes)
