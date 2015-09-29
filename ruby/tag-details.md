@@ -33,11 +33,11 @@
 ## `ruby:2.0.0-p647`
 
 ```console
-$ docker pull library/ruby@sha256:66d1fdc1977525eee6dbcc56fe115dbbd38cb1b5ac41aacb7f7acef9436e9639
+$ docker pull library/ruby@sha256:bdcd8471d64cde903682105132926210b34460e5dbb4b0438d083688c8f2a8b1
 ```
 
 -	Total Virtual Size: 706.2 MB (706209032 bytes)
--	Total v2 Content-Length: 269.7 MB (269725159 bytes)
+-	Total v2 Content-Length: 269.7 MB (269725164 bytes)
 
 ### Layers (17)
 
@@ -82,9 +82,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -347,7 +347,7 @@ $ docker pull library/ruby@sha256:fa37f99784ea906a44a24e5a31b7cae0200a1ca22f6724
 ```
 
 -	Total Virtual Size: 706.2 MB (706209032 bytes)
--	Total v2 Content-Length: 269.7 MB (269725159 bytes)
+-	Total v2 Content-Length: 269.7 MB (269725164 bytes)
 
 ### Layers (17)
 
@@ -392,9 +392,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -657,7 +657,7 @@ $ docker pull library/ruby@sha256:ba617f5b8cf32086415035f87a8800018124742d10096b
 ```
 
 -	Total Virtual Size: 706.2 MB (706209032 bytes)
--	Total v2 Content-Length: 269.7 MB (269725159 bytes)
+-	Total v2 Content-Length: 269.7 MB (269725164 bytes)
 
 ### Layers (17)
 
@@ -702,9 +702,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -963,11 +963,11 @@ CMD ["irb"]
 ## `ruby:2.0.0-p647-onbuild`
 
 ```console
-$ docker pull library/ruby@sha256:b5a43697dddf763312b2c6c0d35210dfddff868d44cbc3dda0cee6a59638ff77
+$ docker pull library/ruby@sha256:2f2d704aa2779f908002a2f9cf0a22c6d1457e68656cc66b1fb1d4a66a745dc1
 ```
 
 -	Total Virtual Size: 706.2 MB (706209120 bytes)
--	Total v2 Content-Length: 269.7 MB (269725661 bytes)
+-	Total v2 Content-Length: 269.7 MB (269725666 bytes)
 
 ### Layers (24)
 
@@ -1012,9 +1012,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1375,7 +1375,7 @@ $ docker pull library/ruby@sha256:0658c46c5861a7be00d3eae45bb0aff358bf9318a04d76
 ```
 
 -	Total Virtual Size: 706.2 MB (706209120 bytes)
--	Total v2 Content-Length: 269.7 MB (269725661 bytes)
+-	Total v2 Content-Length: 269.7 MB (269725666 bytes)
 
 ### Layers (24)
 
@@ -1420,9 +1420,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1783,7 +1783,7 @@ $ docker pull library/ruby@sha256:0448407887b2f9b55698764dec3efb2808b90d2fa3b373
 ```
 
 -	Total Virtual Size: 706.2 MB (706209120 bytes)
--	Total v2 Content-Length: 269.7 MB (269725661 bytes)
+-	Total v2 Content-Length: 269.7 MB (269725666 bytes)
 
 ### Layers (24)
 
@@ -1828,9 +1828,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2187,7 +2187,7 @@ ONBUILD COPY . /usr/src/app
 ## `ruby:2.0.0-p647-slim`
 
 ```console
-$ docker pull library/ruby@sha256:a0a0109ba06ee16f03a51e49513b366425bd3a3fbdf84b737fdf314707dce3f8
+$ docker pull library/ruby@sha256:819f69e78b9a2a7b2c8632ea17bc702c52727a2bba2b85a35b17d5f1805993eb
 ```
 
 -	Total Virtual Size: 263.5 MB (263474537 bytes)
@@ -2928,11 +2928,11 @@ CMD ["irb"]
 ## `ruby:2.1.7`
 
 ```console
-$ docker pull library/ruby@sha256:ddb18154bfe3fc054573d2821066f089e9c8e061067ee3f75df796150db2ad16
+$ docker pull library/ruby@sha256:b6efbf7e2de9b0e01ed988d839f53d3d747f1742d319fcee152930be7f3d81c2
 ```
 
 -	Total Virtual Size: 717.9 MB (717884486 bytes)
--	Total v2 Content-Length: 273.1 MB (273080250 bytes)
+-	Total v2 Content-Length: 273.1 MB (273080255 bytes)
 
 ### Layers (17)
 
@@ -2977,9 +2977,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3242,7 +3242,7 @@ $ docker pull library/ruby@sha256:73652f2e6f45a52400a483e4733e19198a020ef79441b8
 ```
 
 -	Total Virtual Size: 717.9 MB (717884486 bytes)
--	Total v2 Content-Length: 273.1 MB (273080250 bytes)
+-	Total v2 Content-Length: 273.1 MB (273080255 bytes)
 
 ### Layers (17)
 
@@ -3287,9 +3287,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3548,11 +3548,11 @@ CMD ["irb"]
 ## `ruby:2.1.7-onbuild`
 
 ```console
-$ docker pull library/ruby@sha256:761d697829aa86af00ff7e729b8cf308e6cdd9ae6217d51627859636e137c7c6
+$ docker pull library/ruby@sha256:ad5fa24cf9a2737726bcc7e91843560a4db2888a4ddbbe857daac0614ffb7caf
 ```
 
 -	Total Virtual Size: 717.9 MB (717884578 bytes)
--	Total v2 Content-Length: 273.1 MB (273080757 bytes)
+-	Total v2 Content-Length: 273.1 MB (273080762 bytes)
 
 ### Layers (24)
 
@@ -3597,9 +3597,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3960,7 +3960,7 @@ $ docker pull library/ruby@sha256:4225ea955e57436521bf15080e2689178a216478ac51ec
 ```
 
 -	Total Virtual Size: 717.9 MB (717884578 bytes)
--	Total v2 Content-Length: 273.1 MB (273080757 bytes)
+-	Total v2 Content-Length: 273.1 MB (273080762 bytes)
 
 ### Layers (24)
 
@@ -4005,9 +4005,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4364,7 +4364,7 @@ ONBUILD COPY . /usr/src/app
 ## `ruby:2.1.7-slim`
 
 ```console
-$ docker pull library/ruby@sha256:1a3ac0d749fbf8f54d3ec3b9a317502dad1e137fd22ab90a447a30bf80ddddc5
+$ docker pull library/ruby@sha256:1d03c9e519559931c5edf5106b45ba90f98d58a874b729294d6d92848268db88
 ```
 
 -	Total Virtual Size: 275.1 MB (275149979 bytes)
@@ -4858,11 +4858,11 @@ CMD ["irb"]
 ## `ruby:2.2.3`
 
 ```console
-$ docker pull library/ruby@sha256:f97bdb6780f6badfa2733236ff657f36b104eb158cf31eb083f603ab828676c7
+$ docker pull library/ruby@sha256:49ae896408badff4c64fb27a8544476a68525fdcc3421c8f2142ede70aea4816
 ```
 
 -	Total Virtual Size: 717.9 MB (717878507 bytes)
--	Total v2 Content-Length: 273.6 MB (273581460 bytes)
+-	Total v2 Content-Length: 273.6 MB (273581465 bytes)
 
 ### Layers (17)
 
@@ -4907,9 +4907,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -5172,7 +5172,7 @@ $ docker pull library/ruby@sha256:dca5c4ed99a7ac4504e5e5cc3028054669b07335c000c5
 ```
 
 -	Total Virtual Size: 717.9 MB (717878507 bytes)
--	Total v2 Content-Length: 273.6 MB (273581460 bytes)
+-	Total v2 Content-Length: 273.6 MB (273581465 bytes)
 
 ### Layers (17)
 
@@ -5217,9 +5217,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -5482,7 +5482,7 @@ $ docker pull library/ruby@sha256:7f7ebfaac3a1c270048885734f99465df53f976fb64f84
 ```
 
 -	Total Virtual Size: 717.9 MB (717878507 bytes)
--	Total v2 Content-Length: 273.6 MB (273581460 bytes)
+-	Total v2 Content-Length: 273.6 MB (273581465 bytes)
 
 ### Layers (17)
 
@@ -5527,9 +5527,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -5792,7 +5792,7 @@ $ docker pull library/ruby@sha256:e24a9e2c6ddd61a3dd7a785696f25562f7fe103070c261
 ```
 
 -	Total Virtual Size: 717.9 MB (717878507 bytes)
--	Total v2 Content-Length: 273.6 MB (273581460 bytes)
+-	Total v2 Content-Length: 273.6 MB (273581465 bytes)
 
 ### Layers (17)
 
@@ -5837,9 +5837,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -6098,11 +6098,11 @@ CMD ["irb"]
 ## `ruby:2.2.3-onbuild`
 
 ```console
-$ docker pull library/ruby@sha256:0effc146e1821d84c52b0254a8e4cb7ebfb08113ff99f3db061c5c15f39eab7e
+$ docker pull library/ruby@sha256:0d5a8d344407d9f809c1398031493f8e01fd4283cf65fcac5264d16fd957be10
 ```
 
 -	Total Virtual Size: 717.9 MB (717878599 bytes)
--	Total v2 Content-Length: 273.6 MB (273581966 bytes)
+-	Total v2 Content-Length: 273.6 MB (273581971 bytes)
 
 ### Layers (24)
 
@@ -6147,9 +6147,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -6510,7 +6510,7 @@ $ docker pull library/ruby@sha256:d40f11718a7e3fba7dad3eb2b40579ed947c7dcb83374c
 ```
 
 -	Total Virtual Size: 717.9 MB (717878599 bytes)
--	Total v2 Content-Length: 273.6 MB (273581966 bytes)
+-	Total v2 Content-Length: 273.6 MB (273581971 bytes)
 
 ### Layers (24)
 
@@ -6555,9 +6555,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -6918,7 +6918,7 @@ $ docker pull library/ruby@sha256:f73ba2118e3c8fd0a0f8cc099ad6b30867c28be64cf520
 ```
 
 -	Total Virtual Size: 717.9 MB (717878599 bytes)
--	Total v2 Content-Length: 273.6 MB (273581966 bytes)
+-	Total v2 Content-Length: 273.6 MB (273581971 bytes)
 
 ### Layers (24)
 
@@ -6963,9 +6963,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -7326,7 +7326,7 @@ $ docker pull library/ruby@sha256:a2d8eb25711dcf8ee0a640ad459b5d79b538f6fc108892
 ```
 
 -	Total Virtual Size: 717.9 MB (717878599 bytes)
--	Total v2 Content-Length: 273.6 MB (273581966 bytes)
+-	Total v2 Content-Length: 273.6 MB (273581971 bytes)
 
 ### Layers (24)
 
@@ -7371,9 +7371,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:9fdd4e0a1a49a5e2da3e35c8535821bba806e68d4bf141c82b46f588fd4015f3`
--	v2 Content-Length: 18.5 MB (18538594 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:05:48 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -7730,7 +7730,7 @@ ONBUILD COPY . /usr/src/app
 ## `ruby:2.2.3-slim`
 
 ```console
-$ docker pull library/ruby@sha256:3bf64f78d9f2ed8734a68c05a6241db0e2ac9d92e97144565135ea47523ddc31
+$ docker pull library/ruby@sha256:2190abe6c98c03382d6180a508f7b6fef2b20dcdd94da44ed92e32addb75e152
 ```
 
 -	Total Virtual Size: 275.1 MB (275143988 bytes)

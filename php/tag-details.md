@@ -50,7 +50,7 @@
 ## `php:5.4.45-cli`
 
 ```console
-$ docker pull library/php@sha256:c8e8d5c50a5938436a28eefd40a023967b8aceba6e494aa7d638b4c28d60a7a3
+$ docker pull library/php@sha256:d6e4f5e176ff4fd961fa73cd2220cbfb342011b5236bef6c47a6bf66814c16f9
 ```
 
 -	Total Virtual Size: 433.3 MB (433314430 bytes)
@@ -918,7 +918,7 @@ CMD ["php" "-a"]
 ## `php:5.4.45-apache`
 
 ```console
-$ docker pull library/php@sha256:ccbfaa911580632d4472fe79607fa203ae792fccca826ac538104229b289054d
+$ docker pull library/php@sha256:5356e55e7b404de3d8655e157fda64310a9b7ac6c9a731111e08684685825d06
 ```
 
 -	Total Virtual Size: 470.7 MB (470688407 bytes)
@@ -1632,7 +1632,7 @@ CMD ["apache2-foreground"]
 ## `php:5.4.45-fpm`
 
 ```console
-$ docker pull library/php@sha256:e2bd44d19c37138b39f7c0071ead946be15f607bebbe8d3b857ac3e2a13d4805
+$ docker pull library/php@sha256:35f94919ec5013c48fc2e942a929852cc1c611b9d305d1082cec07347146bd26
 ```
 
 -	Total Virtual Size: 469.6 MB (469603292 bytes)
@@ -2178,7 +2178,7 @@ CMD ["php-fpm"]
 ## `php:5.5.29-cli`
 
 ```console
-$ docker pull library/php@sha256:cd3595914b6b7ec643d7fd6df380f56ab538d87e88018f3d65180eeb65c9c2cc
+$ docker pull library/php@sha256:aacf6692c448a4727098590d4a1a11fb1c087ba2ec940232930ddc33ac673601
 ```
 
 -	Total Virtual Size: 440.9 MB (440909632 bytes)
@@ -3046,7 +3046,7 @@ CMD ["php" "-a"]
 ## `php:5.5.29-apache`
 
 ```console
-$ docker pull library/php@sha256:8b02a9299cd5788bbdfb08aa730dc5ec96bd6617f37d3addc826ae613edc7ed3
+$ docker pull library/php@sha256:41f2d7d98413031a3f0d5679c2d3dbd5f65fdbd0374442f0ab8dcc73b959593c
 ```
 
 -	Total Virtual Size: 477.6 MB (477641106 bytes)
@@ -3760,7 +3760,7 @@ CMD ["apache2-foreground"]
 ## `php:5.5.29-fpm`
 
 ```console
-$ docker pull library/php@sha256:160ccc64c4fe5255ad9def51f06aa2e40ec10ff3b715c9521deebd240177763c
+$ docker pull library/php@sha256:cb848d37b581890ba804afd0f60a62d47f74c5fef2a2cdefb350257c5ccc1e41
 ```
 
 -	Total Virtual Size: 450.4 MB (450359788 bytes)
@@ -4306,7 +4306,7 @@ CMD ["php-fpm"]
 ## `php:5.6.13-cli`
 
 ```console
-$ docker pull library/php@sha256:7a259cede7d7a9c43c0a965b27cb943f649ec8f00bde4d58d689a6c1b1de5f8d
+$ docker pull library/php@sha256:fc5fc43a37bb7a3414006689c35d124b49f2ef3afa3e3ee8ac63c72e74d9439c
 ```
 
 -	Total Virtual Size: 444.5 MB (444503496 bytes)
@@ -6042,7 +6042,7 @@ CMD ["php" "-a"]
 ## `php:5.6.13-apache`
 
 ```console
-$ docker pull library/php@sha256:4eb19eac7bb850f0259fa4252ea13d922dbadd77a922eb0487b711b3d6034214
+$ docker pull library/php@sha256:31846ed83cc67bcf9dc3611457f1cb19de38e66f083a6f52796d2835129e165f
 ```
 
 -	Total Virtual Size: 481.3 MB (481258239 bytes)
@@ -7470,7 +7470,7 @@ CMD ["apache2-foreground"]
 ## `php:5.6.13-fpm`
 
 ```console
-$ docker pull library/php@sha256:23ea0849347de2658fa0b3881c3f9d9b011671d39ea8cdcc4d5bb620d77e2066
+$ docker pull library/php@sha256:279f411b0b320bed52c20829ad90ca3badceed9f06b3aa1a7cef44d79d40a243
 ```
 
 -	Total Virtual Size: 454.2 MB (454153988 bytes)
@@ -8562,7 +8562,7 @@ CMD ["php-fpm"]
 ## `php:7.0.0RC3-cli`
 
 ```console
-$ docker pull library/php@sha256:4ba1875c1314eb0051bb3297817ca317f76d7f0430c0d171ac93db72f8683164
+$ docker pull library/php@sha256:29330b9321ce315967ff01d5e4eed8531dc2e785053a5c948fe645ce0e3f74bc
 ```
 
 -	Total Virtual Size: 484.5 MB (484529609 bytes)
@@ -9666,7 +9666,7 @@ CMD ["php" "-a"]
 ## `php:7.0.0RC3-apache`
 
 ```console
-$ docker pull library/php@sha256:799f2bd5819d357068cc61868d05bc8c6b26a94d6810789617fc72a7f186b27e
+$ docker pull library/php@sha256:cb696ba3be8bfaa3012c60d7d6c07a7705052ea00969c89080e91353863e25c4
 ```
 
 -	Total Virtual Size: 521.2 MB (521154861 bytes)
@@ -10638,7 +10638,7 @@ CMD ["apache2-foreground"]
 ## `php:7.0.0RC3-fpm`
 
 ```console
-$ docker pull library/php@sha256:cd2a4635b12eb8b3111d220b0cdd440741485e49aaceae76cf610cfdd13a9f7f
+$ docker pull library/php@sha256:6aa942b12e01da7676da9764b4864f996d24ccc0f611b543a1a9a0c7c3ed8ddd
 ```
 
 -	Total Virtual Size: 494.3 MB (494267860 bytes)

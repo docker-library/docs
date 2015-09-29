@@ -20,7 +20,7 @@
 ## `redmine:2.6.7`
 
 ```console
-$ docker pull library/redmine@sha256:05222b3c2fc497b067fe1ad646b9f8bab08cd0ce01889acbfde13ffaa89f3026
+$ docker pull library/redmine@sha256:7fd5ff670179737df315460aba3284c9b37a7a9b27277d4e1d3b07d37fccb2bc
 ```
 
 -	Total Virtual Size: 415.4 MB (415397717 bytes)
@@ -1544,7 +1544,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:2.6.7-passenger`
 
 ```console
-$ docker pull library/redmine@sha256:b3ad646dd0a70f62e1592e8d5db78a0e68b413e3ae6634f906d54d26b14e0140
+$ docker pull library/redmine@sha256:38876dc9f87779c163ad90c3e19fa51fd314482335b8babce254094b4ed8c6b9
 ```
 
 -	Total Virtual Size: 487.4 MB (487416897 bytes)
@@ -3260,7 +3260,7 @@ CMD ["passenger" "start"]
 ## `redmine:3.0.5`
 
 ```console
-$ docker pull library/redmine@sha256:103b3835d690065ab34dad063ecda5a489c984e1bd4e954d9bc7dcd027a98d5d
+$ docker pull library/redmine@sha256:6d84959419ba7f664f059b355fb0ec7885c51a033ffe67e5199184f37219e583
 ```
 
 -	Total Virtual Size: 448.1 MB (448066365 bytes)
@@ -5292,7 +5292,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.0.5-passenger`
 
 ```console
-$ docker pull library/redmine@sha256:d9a917adfc47ecc716487eeaa15e1473eb6e9b2998d0632ab57d55d165aa35ca
+$ docker pull library/redmine@sha256:cb56d2e508e978428c1a7e14c1e49b69056de1595029b9f7310600d4a675142d
 ```
 
 -	Total Virtual Size: 520.1 MB (520085544 bytes)

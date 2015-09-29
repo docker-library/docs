@@ -20,7 +20,7 @@
 ## `postgres:9.0.22`
 
 ```console
-$ docker pull library/postgres@sha256:d94d1c1ff7a955f18aff6476bdd9cae3b3d0def57d0f1915f5777a87424df27f
+$ docker pull library/postgres@sha256:f7e1e8f3387c31b439f0c18faf73a38cd9de64d9a926363b5971080b03cfe4f5
 ```
 
 -	Total Virtual Size: 262.8 MB (262790033 bytes)
@@ -654,7 +654,7 @@ CMD ["postgres"]
 ## `postgres:9.1.18`
 
 ```console
-$ docker pull library/postgres@sha256:73d7cd2bdf6f87310f8fc4f6550e30bc6f77cc31d52122e3296d2f0ff6ab3bf1
+$ docker pull library/postgres@sha256:e81a908ed0af804ed0f63e6e3cf1d768e5f3ec35aafdbac4031e5a440547c555
 ```
 
 -	Total Virtual Size: 263.5 MB (263452742 bytes)
@@ -1288,7 +1288,7 @@ CMD ["postgres"]
 ## `postgres:9.2.13`
 
 ```console
-$ docker pull library/postgres@sha256:baf0cce280b24ca89c237f5f8c1e6e027ddfc3442d450ecd7a32cb7d3cc91f31
+$ docker pull library/postgres@sha256:4807008284f62e323247ab10411a98a1e7ef66eefb5de7a899e431b0e0530d6b
 ```
 
 -	Total Virtual Size: 264.0 MB (263972154 bytes)
@@ -1922,7 +1922,7 @@ CMD ["postgres"]
 ## `postgres:9.3.9`
 
 ```console
-$ docker pull library/postgres@sha256:56ead64e880242d63447a4ec5322487be18b2e8c66473a83880c2c82fda2d980
+$ docker pull library/postgres@sha256:ce0787961e340e6660f7039cbcb2a4588caa1b6f36a748905249c365da9d88ed
 ```
 
 -	Total Virtual Size: 264.3 MB (264256629 bytes)
@@ -2556,7 +2556,7 @@ CMD ["postgres"]
 ## `postgres:9.4.4`
 
 ```console
-$ docker pull library/postgres@sha256:111008ad5437e8ecd9133dbc3d35efaac73a140aade6a35a4402502b1dbb48a4
+$ docker pull library/postgres@sha256:2380a12b9a90724e278b0fa4e4173774bb729752b7fc85bacb4881d942931d3e
 ```
 
 -	Total Virtual Size: 265.3 MB (265315373 bytes)
@@ -3824,7 +3824,7 @@ CMD ["postgres"]
 ## `postgres:9.5-alpha2`
 
 ```console
-$ docker pull library/postgres@sha256:dc70938bf4ee446542fbe7033ca124f59f5d52b9a4635d88a1f7ff7f86ae4822
+$ docker pull library/postgres@sha256:428605b2f49a59d22b43c785afe5a8709d6232e187fdee750eb8e5f465b13555
 ```
 
 -	Total Virtual Size: 265.7 MB (265695335 bytes)

@@ -33,11 +33,11 @@
 ## `pypy:2-2.6.1`
 
 ```console
-$ docker pull library/pypy@sha256:e70b7eb92047c87193bfd74c3ddfa819107ab524147a88d42f2a88a1f2c7a0cc
+$ docker pull library/pypy@sha256:9f8c6b1db939c624f2456992c0bd507b413f698d8e7f99bcba70758d3f36d5b5
 ```
 
 -	Total Virtual Size: 717.0 MB (717021258 bytes)
--	Total v2 Content-Length: 269.4 MB (269420894 bytes)
+-	Total v2 Content-Length: 269.4 MB (269420902 bytes)
 
 ### Layers (12)
 
@@ -82,9 +82,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -263,7 +263,7 @@ $ docker pull library/pypy@sha256:c0b609745d2017bf9208596dbf8fa8e7b0497a2ad4b1dc
 ```
 
 -	Total Virtual Size: 717.0 MB (717021258 bytes)
--	Total v2 Content-Length: 269.4 MB (269420894 bytes)
+-	Total v2 Content-Length: 269.4 MB (269420902 bytes)
 
 ### Layers (12)
 
@@ -308,9 +308,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -489,7 +489,7 @@ $ docker pull library/pypy@sha256:0826d38f54d54ced6dc5d0d59202caf077bb5036f3ae11
 ```
 
 -	Total Virtual Size: 717.0 MB (717021258 bytes)
--	Total v2 Content-Length: 269.4 MB (269420894 bytes)
+-	Total v2 Content-Length: 269.4 MB (269420902 bytes)
 
 ### Layers (12)
 
@@ -534,9 +534,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -715,7 +715,7 @@ $ docker pull library/pypy@sha256:0f7abb7572e7999701c0db0cc2a9b0fb4e787af2a56e6d
 ```
 
 -	Total Virtual Size: 717.0 MB (717021258 bytes)
--	Total v2 Content-Length: 269.4 MB (269420894 bytes)
+-	Total v2 Content-Length: 269.4 MB (269420902 bytes)
 
 ### Layers (12)
 
@@ -760,9 +760,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -937,11 +937,11 @@ CMD ["pypy"]
 ## `pypy:2-2.6.1-onbuild`
 
 ```console
-$ docker pull library/pypy@sha256:9f26cc084eee3e6df2d030011e028b36c7d0dfbe042f0ee44a4c4cd6f1791a22
+$ docker pull library/pypy@sha256:962f934ca9a40feb41bc893d7b0415803c7540786ccea0c5bfd1595b7072989d
 ```
 
 -	Total Virtual Size: 717.0 MB (717021258 bytes)
--	Total v2 Content-Length: 269.4 MB (269421149 bytes)
+-	Total v2 Content-Length: 269.4 MB (269421157 bytes)
 
 ### Layers (17)
 
@@ -986,9 +986,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1237,7 +1237,7 @@ $ docker pull library/pypy@sha256:bdfdbe985cf8853af37ec57fa24445341e00df5d50f20d
 ```
 
 -	Total Virtual Size: 717.0 MB (717021258 bytes)
--	Total v2 Content-Length: 269.4 MB (269421149 bytes)
+-	Total v2 Content-Length: 269.4 MB (269421157 bytes)
 
 ### Layers (17)
 
@@ -1282,9 +1282,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1533,7 +1533,7 @@ $ docker pull library/pypy@sha256:0ced41ff0d491654ca8f02b0d1444f143b3403fda0c7e5
 ```
 
 -	Total Virtual Size: 717.0 MB (717021258 bytes)
--	Total v2 Content-Length: 269.4 MB (269421149 bytes)
+-	Total v2 Content-Length: 269.4 MB (269421157 bytes)
 
 ### Layers (17)
 
@@ -1578,9 +1578,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1829,7 +1829,7 @@ $ docker pull library/pypy@sha256:ab82c049e082411c5bbdebe27728fba7669d2801a937c3
 ```
 
 -	Total Virtual Size: 717.0 MB (717021258 bytes)
--	Total v2 Content-Length: 269.4 MB (269421149 bytes)
+-	Total v2 Content-Length: 269.4 MB (269421157 bytes)
 
 ### Layers (17)
 
@@ -1874,9 +1874,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2121,7 +2121,7 @@ ONBUILD COPY . /usr/src/app
 ## `pypy:2-2.6.1-slim`
 
 ```console
-$ docker pull library/pypy@sha256:4c4ec10bf5fad1d705d9ec850db49ae9114a256b0e712fe45661a031f18b09f0
+$ docker pull library/pypy@sha256:7d16ece1133a2b4a585719a6a1fe8c9d9ce91983f7855d5ba5f81db291fe5e62
 ```
 
 -	Total Virtual Size: 247.0 MB (246966195 bytes)
@@ -2705,11 +2705,11 @@ CMD ["pypy"]
 ## `pypy:3-2.4.0`
 
 ```console
-$ docker pull library/pypy@sha256:dd89feaa1304181f2a2221987ae447685e5a300e15d4a39849f0378f48ae6246
+$ docker pull library/pypy@sha256:eaba9915a98b88ba5e1f7ea9b4afa3fcc59154dfe07d780d6bcd8a25f2420de1
 ```
 
 -	Total Virtual Size: 683.7 MB (683667093 bytes)
--	Total v2 Content-Length: 260.4 MB (260436899 bytes)
+-	Total v2 Content-Length: 260.4 MB (260436907 bytes)
 
 ### Layers (12)
 
@@ -2754,9 +2754,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2935,7 +2935,7 @@ $ docker pull library/pypy@sha256:acf8dc6df2fb643137ca6b482257bcafd5f9ecc04c2e8c
 ```
 
 -	Total Virtual Size: 683.7 MB (683667093 bytes)
--	Total v2 Content-Length: 260.4 MB (260436899 bytes)
+-	Total v2 Content-Length: 260.4 MB (260436907 bytes)
 
 ### Layers (12)
 
@@ -2980,9 +2980,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3161,7 +3161,7 @@ $ docker pull library/pypy@sha256:a13afc0a16c519591ae190192b7ca4242ecd0afc25ad66
 ```
 
 -	Total Virtual Size: 683.7 MB (683667093 bytes)
--	Total v2 Content-Length: 260.4 MB (260436899 bytes)
+-	Total v2 Content-Length: 260.4 MB (260436907 bytes)
 
 ### Layers (12)
 
@@ -3206,9 +3206,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3387,7 +3387,7 @@ $ docker pull library/pypy@sha256:1ced84e6a61a9fa723a52454a036fc8f72eca9ffc31e18
 ```
 
 -	Total Virtual Size: 683.7 MB (683667093 bytes)
--	Total v2 Content-Length: 260.4 MB (260436899 bytes)
+-	Total v2 Content-Length: 260.4 MB (260436907 bytes)
 
 ### Layers (12)
 
@@ -3432,9 +3432,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3613,7 +3613,7 @@ $ docker pull library/pypy@sha256:d937d54da38d6c40caf8147f1558435f8035b155e07837
 ```
 
 -	Total Virtual Size: 683.7 MB (683667093 bytes)
--	Total v2 Content-Length: 260.4 MB (260436899 bytes)
+-	Total v2 Content-Length: 260.4 MB (260436907 bytes)
 
 ### Layers (12)
 
@@ -3658,9 +3658,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -3839,7 +3839,7 @@ $ docker pull library/pypy@sha256:b231e9c24fcbe8dc8dcf8deaf65716f9f86c54c930eb53
 ```
 
 -	Total Virtual Size: 683.7 MB (683667093 bytes)
--	Total v2 Content-Length: 260.4 MB (260437154 bytes)
+-	Total v2 Content-Length: 260.4 MB (260437162 bytes)
 
 ### Layers (17)
 
@@ -3884,9 +3884,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4135,7 +4135,7 @@ $ docker pull library/pypy@sha256:775c3a559b3f04fc442ca3ed24cb7437f215cee198d906
 ```
 
 -	Total Virtual Size: 683.7 MB (683667093 bytes)
--	Total v2 Content-Length: 260.4 MB (260437154 bytes)
+-	Total v2 Content-Length: 260.4 MB (260437162 bytes)
 
 ### Layers (17)
 
@@ -4180,9 +4180,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4431,7 +4431,7 @@ $ docker pull library/pypy@sha256:66fd871923599fcae27613d2834d4647edf88392d9160b
 ```
 
 -	Total Virtual Size: 683.7 MB (683667093 bytes)
--	Total v2 Content-Length: 260.4 MB (260437154 bytes)
+-	Total v2 Content-Length: 260.4 MB (260437162 bytes)
 
 ### Layers (17)
 
@@ -4476,9 +4476,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -4727,7 +4727,7 @@ $ docker pull library/pypy@sha256:58652add5e5531be0890baa308f18cc43718e76b7bb172
 ```
 
 -	Total Virtual Size: 683.7 MB (683667093 bytes)
--	Total v2 Content-Length: 260.4 MB (260437154 bytes)
+-	Total v2 Content-Length: 260.4 MB (260437162 bytes)
 
 ### Layers (17)
 
@@ -4772,9 +4772,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -5023,7 +5023,7 @@ $ docker pull library/pypy@sha256:29857730bca8acda6ec2957774d22670075e4f8f60c593
 ```
 
 -	Total Virtual Size: 683.7 MB (683667093 bytes)
--	Total v2 Content-Length: 260.4 MB (260437154 bytes)
+-	Total v2 Content-Length: 260.4 MB (260437162 bytes)
 
 ### Layers (17)
 
@@ -5068,9 +5068,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 

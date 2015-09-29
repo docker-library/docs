@@ -12,7 +12,7 @@
 ## `registry:latest`
 
 ```console
-$ docker pull library/registry@sha256:ef9369fa1cf884474adebbe2c10bb3d6f82bab2f1c2bafaad14799cb30385e93
+$ docker pull library/registry@sha256:afd23d04268f71872ca2e8f7ae24072839d854f7d7f32f110a01233b46d95785
 ```
 
 -	Total Virtual Size: 423.3 MB (423335757 bytes)
@@ -237,11 +237,11 @@ CMD ["docker-registry"]
 ## `registry:0.8.1`
 
 ```console
-$ docker pull library/registry@sha256:6d19fef3eff33ab22b3096e1a5933f17b9a5821b208df540f63f944bdd9b3fe1
+$ docker pull library/registry@sha256:2efdb49ed96c280d3da98b8a27abdacdd2a02db99664fe848525731ce4e1efa7
 ```
 
 -	Total Virtual Size: 429.2 MB (429220447 bytes)
--	Total v2 Content-Length: 182.8 MB (182794383 bytes)
+-	Total v2 Content-Length: 182.8 MB (182794351 bytes)
 
 ### Layers (16)
 
@@ -349,9 +349,9 @@ RUN apt-get -y install python-pip
 -	Parent Layer: `a96df057c3ad5e5f4a4c3e72312fce6de60bb217248d56f920b15515a4214e85`
 -	Docker Version: 1.7.1
 -	Virtual Size: 144.9 MB (144925020 bytes)
--	v2 Blob: `sha256:7afb50d7ae9146f7d32fd2c445f0e06aa568f677b0f440f658208cff0304b575`
--	v2 Content-Length: 59.3 MB (59341058 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:38:18 GMT
+-	v2 Blob: `sha256:ad1f9c06d8b3bcc5d22701f7586df108726c2fba52cee2df72af060fc449b6d9`
+-	v2 Content-Length: 59.3 MB (59341026 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 04:52:21 GMT
 
 #### `c90a38b70ed54b3f2c8acf5b634187f090bf769c5e6c30155d6fddbc0c00467f`
 
@@ -707,7 +707,7 @@ CMD ["docker-registry"]
 ## `registry:2`
 
 ```console
-$ docker pull library/registry@sha256:b7de4f6226df56d18f83296efa77dedf9bb72e79838167be0484a3078836fab2
+$ docker pull library/registry@sha256:88863be6229fa4f312b34f410908983544f1a1f4ad7d10be169eb98eb71a1c5a
 ```
 
 -	Total Virtual Size: 220.6 MB (220648934 bytes)

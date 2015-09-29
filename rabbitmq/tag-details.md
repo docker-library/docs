@@ -14,7 +14,7 @@
 ## `rabbitmq:3.5.5`
 
 ```console
-$ docker pull library/rabbitmq@sha256:49f491e015a31c1bbed87c18acabbdd263e587e7def9af5e4c6fd7ac1e99cf13
+$ docker pull library/rabbitmq@sha256:daf128ec71ed5d440267c7ee12b2812a583023e2a3204cb566494e23fe445569
 ```
 
 -	Total Virtual Size: 183.0 MB (182976821 bytes)
@@ -1246,7 +1246,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:3.5.5-management`
 
 ```console
-$ docker pull library/rabbitmq@sha256:a80e63f9bd2d01265dc85a57dc67c7cfdd6088fb3a965906b4168e3e9563d18e
+$ docker pull library/rabbitmq@sha256:e165e83a1d429ce2a1f3c0f93d3451973a34c6a01ea3fe5e54a82ee8d7926b3b
 ```
 
 -	Total Virtual Size: 183.0 MB (182976844 bytes)

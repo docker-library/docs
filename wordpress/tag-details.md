@@ -18,11 +18,11 @@
 ## `wordpress:4.3.1-apache`
 
 ```console
-$ docker pull library/wordpress@sha256:f65a568e3cd2455adaff23e05ff9a0262062a4e3247ba3d524ec136da0ab7423
+$ docker pull library/wordpress@sha256:9dfc9cd798927f67d4992cc52f2b8e20b8599e57f354309f978f743a4db1ce3f
 ```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
--	Total v2 Content-Length: 173.8 MB (173795343 bytes)
+-	Total v2 Content-Length: 173.8 MB (173795358 bytes)
 
 ### Layers (32)
 
@@ -63,9 +63,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -525,7 +525,7 @@ $ docker pull library/wordpress@sha256:afaa7fd8309da9bb645f238dd636176e7f5251beb
 ```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
--	Total v2 Content-Length: 173.8 MB (173795343 bytes)
+-	Total v2 Content-Length: 173.8 MB (173795358 bytes)
 
 ### Layers (32)
 
@@ -566,9 +566,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -1028,7 +1028,7 @@ $ docker pull library/wordpress@sha256:ccdb53fa780f0dcb342b65999545979a6b3577421
 ```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
--	Total v2 Content-Length: 173.8 MB (173795343 bytes)
+-	Total v2 Content-Length: 173.8 MB (173795358 bytes)
 
 ### Layers (32)
 
@@ -1069,9 +1069,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -1531,7 +1531,7 @@ $ docker pull library/wordpress@sha256:40d515f7d5d4c1f5d7ffafb14b77764f52430d65e
 ```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
--	Total v2 Content-Length: 173.8 MB (173795343 bytes)
+-	Total v2 Content-Length: 173.8 MB (173795358 bytes)
 
 ### Layers (32)
 
@@ -1572,9 +1572,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -2034,7 +2034,7 @@ $ docker pull library/wordpress@sha256:3bebd1393f701da7bc083e7be14b06b2ea00a270b
 ```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
--	Total v2 Content-Length: 173.8 MB (173795343 bytes)
+-	Total v2 Content-Length: 173.8 MB (173795358 bytes)
 
 ### Layers (32)
 
@@ -2075,9 +2075,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -2537,7 +2537,7 @@ $ docker pull library/wordpress@sha256:126bb25b6661e1160f08f192c3c64ed802d03bc93
 ```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
--	Total v2 Content-Length: 173.8 MB (173795343 bytes)
+-	Total v2 Content-Length: 173.8 MB (173795358 bytes)
 
 ### Layers (32)
 
@@ -2578,9 +2578,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -3040,7 +3040,7 @@ $ docker pull library/wordpress@sha256:3c2d6347b222d873044b594a8a2fd60e88f3a3a6b
 ```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
--	Total v2 Content-Length: 173.8 MB (173795343 bytes)
+-	Total v2 Content-Length: 173.8 MB (173795358 bytes)
 
 ### Layers (32)
 
@@ -3081,9 +3081,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -3543,7 +3543,7 @@ $ docker pull library/wordpress@sha256:27e04468b29ee2db0fb678902593a1ff9bfd6a67f
 ```
 
 -	Total Virtual Size: 512.3 MB (512324159 bytes)
--	Total v2 Content-Length: 173.8 MB (173795343 bytes)
+-	Total v2 Content-Length: 173.8 MB (173795358 bytes)
 
 ### Layers (32)
 
@@ -3584,9 +3584,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -4042,11 +4042,11 @@ CMD ["apache2-foreground"]
 ## `wordpress:4.3.1-fpm`
 
 ```console
-$ docker pull library/wordpress@sha256:7e6a491e8ec33b6292ee0a868233b27602b9d326506b679e416b7a7d8b6ad13c
+$ docker pull library/wordpress@sha256:5e77e21c3f344673aed1b518762453dc88ea2aab3014d752ce366dea644f65e8
 ```
 
 -	Total Virtual Size: 485.6 MB (485590617 bytes)
--	Total v2 Content-Length: 164.4 MB (164440600 bytes)
+-	Total v2 Content-Length: 164.4 MB (164440615 bytes)
 
 ### Layers (25)
 
@@ -4087,9 +4087,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -4451,7 +4451,7 @@ $ docker pull library/wordpress@sha256:a821b820dac41da2f8882b4865cb9af1172177df9
 ```
 
 -	Total Virtual Size: 485.6 MB (485590617 bytes)
--	Total v2 Content-Length: 164.4 MB (164440600 bytes)
+-	Total v2 Content-Length: 164.4 MB (164440615 bytes)
 
 ### Layers (25)
 
@@ -4492,9 +4492,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -4856,7 +4856,7 @@ $ docker pull library/wordpress@sha256:1a358daf0c0d59c7326a15952490bab45d53c3292
 ```
 
 -	Total Virtual Size: 485.6 MB (485590617 bytes)
--	Total v2 Content-Length: 164.4 MB (164440600 bytes)
+-	Total v2 Content-Length: 164.4 MB (164440615 bytes)
 
 ### Layers (25)
 
@@ -4897,9 +4897,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 
@@ -5261,7 +5261,7 @@ $ docker pull library/wordpress@sha256:ccf92840f1353e9f43dbfac81a16d94ae01807ce0
 ```
 
 -	Total Virtual Size: 485.6 MB (485590617 bytes)
--	Total v2 Content-Length: 164.4 MB (164440600 bytes)
+-	Total v2 Content-Length: 164.4 MB (164440615 bytes)
 
 ### Layers (25)
 
@@ -5302,9 +5302,9 @@ RUN apt-get update && apt-get install -y ca-certificates curl libpcre3 librecode
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 18.7 MB (18681148 bytes)
--	v2 Blob: `sha256:3cb8298adb5676378cc34bc8a51c5254348bec7d17f2211702a4acecd5323973`
--	v2 Content-Length: 8.7 MB (8720023 bytes)
--	v2 Last-Modified: Wed, 16 Sep 2015 16:53:09 GMT
+-	v2 Blob: `sha256:66298e0310f8229fad8a782d34757930bf118d2f30d6a41bdd4103ae766778b6`
+-	v2 Content-Length: 8.7 MB (8720038 bytes)
+-	v2 Last-Modified: Fri, 11 Sep 2015 01:52:15 GMT
 
 #### `cc77263a56304cc139cf61ee5767aecfb914eedc0149662d53c1695f31813e9b`
 

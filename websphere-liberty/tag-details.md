@@ -20,11 +20,11 @@
 ## `websphere-liberty:kernel`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:31e552b4bbe0b2ad1d8f47585c1a2a2da4c37aa7bc234e30d91c6b041be833e6
+$ docker pull library/websphere-liberty@sha256:5d7fe20efd75abaa16bd0adc129f02554c3586006c2c66596f2271e331cb0377
 ```
 
 -	Total Virtual Size: 506.1 MB (506092389 bytes)
--	Total v2 Content-Length: 205.2 MB (205240433 bytes)
+-	Total v2 Content-Length: 205.2 MB (205240441 bytes)
 
 ### Layers (24)
 
@@ -69,9 +69,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -385,7 +385,7 @@ $ docker pull library/websphere-liberty@sha256:61682f3b261303285068f89a30e3527b9
 ```
 
 -	Total Virtual Size: 506.1 MB (506092389 bytes)
--	Total v2 Content-Length: 205.2 MB (205240433 bytes)
+-	Total v2 Content-Length: 205.2 MB (205240441 bytes)
 
 ### Layers (24)
 
@@ -430,9 +430,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -742,11 +742,11 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ## `websphere-liberty:common`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:f9e327ba868353a9992c65533846ff05262f16035d1b3cd5a311c2ff33a52c77
+$ docker pull library/websphere-liberty@sha256:f4513e5ed7fd1385a7ede110037833a3ce457ffeecfaedf36b3db3547e36e32a
 ```
 
 -	Total Virtual Size: 542.2 MB (542206899 bytes)
--	Total v2 Content-Length: 236.9 MB (236865262 bytes)
+-	Total v2 Content-Length: 236.9 MB (236865270 bytes)
 
 ### Layers (25)
 
@@ -791,9 +791,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1121,7 +1121,7 @@ $ docker pull library/websphere-liberty@sha256:518236a88f3f898475ccdb7141c514747
 ```
 
 -	Total Virtual Size: 542.2 MB (542206899 bytes)
--	Total v2 Content-Length: 236.9 MB (236865262 bytes)
+-	Total v2 Content-Length: 236.9 MB (236865270 bytes)
 
 ### Layers (25)
 
@@ -1166,9 +1166,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1492,11 +1492,11 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 ## `websphere-liberty:webProfile6`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:d2e030e45e561c860fb6c38d629d545a121a9b19b8eac9095e1bc22575b3fa07
+$ docker pull library/websphere-liberty@sha256:a20bc1ada6b0faf5d294cd3461f32e37f5350e2d9b3959b4960557289cdfb84e
 ```
 
 -	Total Virtual Size: 566.1 MB (566091028 bytes)
--	Total v2 Content-Length: 257.4 MB (257354458 bytes)
+-	Total v2 Content-Length: 257.4 MB (257354466 bytes)
 
 ### Layers (27)
 
@@ -1541,9 +1541,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1901,7 +1901,7 @@ $ docker pull library/websphere-liberty@sha256:ca2596dc91344ee99b3087c5342280e5f
 ```
 
 -	Total Virtual Size: 566.1 MB (566091028 bytes)
--	Total v2 Content-Length: 257.4 MB (257354458 bytes)
+-	Total v2 Content-Length: 257.4 MB (257354466 bytes)
 
 ### Layers (27)
 
@@ -1946,9 +1946,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2302,11 +2302,11 @@ RUN installUtility install --acceptLicense appSecurity-1.0 blueprint-1.0 concurr
 ## `websphere-liberty:webProfile7`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:808118f60d71d6eb6b58ca65464a102342bb3abb4b8aa96b15988435ec8f4444
+$ docker pull library/websphere-liberty@sha256:cf4379217aa11bc75739adcac5e2cd5382d3304f7ec1b405c6e41925d2e6bde7
 ```
 
 -	Total Virtual Size: 586.6 MB (586642001 bytes)
--	Total v2 Content-Length: 276.2 MB (276220595 bytes)
+-	Total v2 Content-Length: 276.2 MB (276220603 bytes)
 
 ### Layers (27)
 
@@ -2351,9 +2351,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2710,7 +2710,7 @@ $ docker pull library/websphere-liberty@sha256:3063ba74b24e2c77a459dd5505cecdd33
 ```
 
 -	Total Virtual Size: 586.6 MB (586642001 bytes)
--	Total v2 Content-Length: 276.2 MB (276220595 bytes)
+-	Total v2 Content-Length: 276.2 MB (276220603 bytes)
 
 ### Layers (27)
 
@@ -2755,9 +2755,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3110,11 +3110,11 @@ RUN installUtility install --acceptLicense defaultServer\
 ## `websphere-liberty:javaee7`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:e115f0f724a00e1a1e70df17764895b0cba1298d3d07907405115719f3c91df9
+$ docker pull library/websphere-liberty@sha256:7ffd4ba9160a92f38bddf1919dab59469e3d32cdb094559c68dada7bb4e12da1
 ```
 
 -	Total Virtual Size: 635.1 MB (635107675 bytes)
--	Total v2 Content-Length: 318.5 MB (318496258 bytes)
+-	Total v2 Content-Length: 318.5 MB (318496266 bytes)
 
 ### Layers (29)
 
@@ -3159,9 +3159,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3547,7 +3547,7 @@ $ docker pull library/websphere-liberty@sha256:9724761bb243d30595d72d0d01d9818ac
 ```
 
 -	Total Virtual Size: 635.1 MB (635107675 bytes)
--	Total v2 Content-Length: 318.5 MB (318496258 bytes)
+-	Total v2 Content-Length: 318.5 MB (318496266 bytes)
 
 ### Layers (29)
 
@@ -3592,9 +3592,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3980,7 +3980,7 @@ $ docker pull library/websphere-liberty@sha256:27bb5a5ddb789ace80e5701e9598b469c
 ```
 
 -	Total Virtual Size: 635.1 MB (635107675 bytes)
--	Total v2 Content-Length: 318.5 MB (318496258 bytes)
+-	Total v2 Content-Length: 318.5 MB (318496266 bytes)
 
 ### Layers (29)
 
@@ -4025,9 +4025,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -4413,7 +4413,7 @@ $ docker pull library/websphere-liberty@sha256:ed6d3be72e85dac0ff7544d4714dbc8c1
 ```
 
 -	Total Virtual Size: 635.1 MB (635107675 bytes)
--	Total v2 Content-Length: 318.5 MB (318496258 bytes)
+-	Total v2 Content-Length: 318.5 MB (318496266 bytes)
 
 ### Layers (29)
 
@@ -4458,9 +4458,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -4846,7 +4846,7 @@ $ docker pull library/websphere-liberty@sha256:7cfa308c8db921a08693e96b38c374173
 ```
 
 -	Total Virtual Size: 635.1 MB (635107675 bytes)
--	Total v2 Content-Length: 318.5 MB (318496258 bytes)
+-	Total v2 Content-Length: 318.5 MB (318496266 bytes)
 
 ### Layers (29)
 
@@ -4891,9 +4891,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -5275,11 +5275,11 @@ RUN installUtility install --acceptLicense defaultServer\
 ## `websphere-liberty:beta`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:158ea20741e9f1e7e30c36a2c224ebd6eee0029a0828ebb8a11f5eb36f06e178
+$ docker pull library/websphere-liberty@sha256:9d0e0112bc345457bfa7b1d3fc686964067236abaa0cd57cc0211c4d72c64f45
 ```
 
 -	Total Virtual Size: 603.0 MB (602973881 bytes)
--	Total v2 Content-Length: 292.1 MB (292086631 bytes)
+-	Total v2 Content-Length: 292.1 MB (292086639 bytes)
 
 ### Layers (25)
 
@@ -5324,9 +5324,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 

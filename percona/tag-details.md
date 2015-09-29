@@ -12,7 +12,7 @@
 ## `percona:5.5.45`
 
 ```console
-$ docker pull library/percona@sha256:0d12ff7c483d2147dd5e9eb988c18d026c4088c478e4c3d853925ac0e9185979
+$ docker pull library/percona@sha256:338c7e2979ebf69c600f3484b5abe6eb14f04a18e156a2dcec2c4bea5b8fcd03
 ```
 
 -	Total Virtual Size: 284.0 MB (284039991 bytes)
@@ -474,7 +474,7 @@ CMD ["mysqld"]
 ## `percona:5.6.26`
 
 ```console
-$ docker pull library/percona@sha256:7842141888a1d5bca5372f942aa60d895a2ba1307a017d0beb27460acca1cc04
+$ docker pull library/percona@sha256:7450b0ae1740ba7babff2965d553c66deb503653ce5137d2ff72c1b2baac9831
 ```
 
 -	Total Virtual Size: 308.7 MB (308659056 bytes)

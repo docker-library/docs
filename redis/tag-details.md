@@ -24,11 +24,11 @@
 ## `redis:2.6.17`
 
 ```console
-$ docker pull library/redis@sha256:946633c2a1f5b4b9f218a6b3f2d59e904aeb5f92734c649eee297bd7ed17c0b4
+$ docker pull library/redis@sha256:e3201100a20c3711ec453c2cded61bf7f013bf4ea2a2f51be077f09687d95125
 ```
 
 -	Total Virtual Size: 108.6 MB (108598596 bytes)
--	Total v2 Content-Length: 46.6 MB (46585791 bytes)
+-	Total v2 Content-Length: 46.6 MB (46585797 bytes)
 
 ### Layers (17)
 
@@ -86,9 +86,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 12.4 MB (12377297 bytes)
--	v2 Blob: `sha256:602d58b1e211802db1ba968079f5f4356da9bdecc557cbb4da220051d12c9cbe`
--	v2 Content-Length: 5.9 MB (5944553 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:48:59 GMT
+-	v2 Blob: `sha256:74aa1cd7d108cc4e3ae58268dcf8c3b6195b5ef01b980894c03f2a611c2e3e33`
+-	v2 Content-Length: 5.9 MB (5944559 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:48:04 GMT
 
 #### `f7022ac152fbf8a9bb5f24fb0084d55057c4c46be04d77c7d8bad24d00346ed0`
 
@@ -296,7 +296,7 @@ $ docker pull library/redis@sha256:4a9f0a723cef70e0a8ac16011f420b00397914572d3ce
 ```
 
 -	Total Virtual Size: 108.6 MB (108598596 bytes)
--	Total v2 Content-Length: 46.6 MB (46585791 bytes)
+-	Total v2 Content-Length: 46.6 MB (46585797 bytes)
 
 ### Layers (17)
 
@@ -354,9 +354,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 12.4 MB (12377297 bytes)
--	v2 Blob: `sha256:602d58b1e211802db1ba968079f5f4356da9bdecc557cbb4da220051d12c9cbe`
--	v2 Content-Length: 5.9 MB (5944553 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:48:59 GMT
+-	v2 Blob: `sha256:74aa1cd7d108cc4e3ae58268dcf8c3b6195b5ef01b980894c03f2a611c2e3e33`
+-	v2 Content-Length: 5.9 MB (5944559 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:48:04 GMT
 
 #### `f7022ac152fbf8a9bb5f24fb0084d55057c4c46be04d77c7d8bad24d00346ed0`
 
@@ -560,11 +560,11 @@ CMD ["redis-server"]
 ## `redis:2.6.17-32bit`
 
 ```console
-$ docker pull library/redis@sha256:e422130f2433499fb4c0672ae8d57078490651e9b7ad5018996960f6abc0dec5
+$ docker pull library/redis@sha256:95ff2864432a5b268c4438f73a5742a96872a3de563fef303cfecb3a90675c16
 ```
 
 -	Total Virtual Size: 116.0 MB (115961326 bytes)
--	Total v2 Content-Length: 50.4 MB (50382788 bytes)
+-	Total v2 Content-Length: 50.4 MB (50382799 bytes)
 
 ### Layers (17)
 
@@ -623,9 +623,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 21.6 MB (21584555 bytes)
--	v2 Blob: `sha256:8532a14b3727a26cca0a3cb1df8c09bdfce4a7b98fb7e357fc2f5ab85f713c7b`
--	v2 Content-Length: 9.9 MB (9871512 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:51:52 GMT
+-	v2 Blob: `sha256:accda0db0caa46f874858b9a3270a634613931f5c86e249bcffa8d68fb5842e2`
+-	v2 Content-Length: 9.9 MB (9871523 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:50:48 GMT
 
 #### `2eb8550e3970682104a55c00f12e3fb7e36cac258993d1e4b947391c7bc5133f`
 
@@ -833,7 +833,7 @@ $ docker pull library/redis@sha256:840957cc50f0c4af24bf81bc652bd232e31b5dc0e1181
 ```
 
 -	Total Virtual Size: 116.0 MB (115961326 bytes)
--	Total v2 Content-Length: 50.4 MB (50382788 bytes)
+-	Total v2 Content-Length: 50.4 MB (50382799 bytes)
 
 ### Layers (17)
 
@@ -892,9 +892,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 21.6 MB (21584555 bytes)
--	v2 Blob: `sha256:8532a14b3727a26cca0a3cb1df8c09bdfce4a7b98fb7e357fc2f5ab85f713c7b`
--	v2 Content-Length: 9.9 MB (9871512 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:51:52 GMT
+-	v2 Blob: `sha256:accda0db0caa46f874858b9a3270a634613931f5c86e249bcffa8d68fb5842e2`
+-	v2 Content-Length: 9.9 MB (9871523 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:50:48 GMT
 
 #### `2eb8550e3970682104a55c00f12e3fb7e36cac258993d1e4b947391c7bc5133f`
 
@@ -1098,11 +1098,11 @@ CMD ["redis-server"]
 ## `redis:2.8.22`
 
 ```console
-$ docker pull library/redis@sha256:d2331bfb307b32ccbd0ff41779c2589aa25731a0fbdf9e40ddb76582604cdcc6
+$ docker pull library/redis@sha256:fb3b6ded4cb1e086b303e2cc5b59795c9939a093449791010b5d6adc973dc880
 ```
 
 -	Total Virtual Size: 109.0 MB (108967457 bytes)
--	Total v2 Content-Length: 46.8 MB (46774878 bytes)
+-	Total v2 Content-Length: 46.8 MB (46774884 bytes)
 
 ### Layers (17)
 
@@ -1160,9 +1160,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 12.4 MB (12377297 bytes)
--	v2 Blob: `sha256:602d58b1e211802db1ba968079f5f4356da9bdecc557cbb4da220051d12c9cbe`
--	v2 Content-Length: 5.9 MB (5944553 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:48:59 GMT
+-	v2 Blob: `sha256:74aa1cd7d108cc4e3ae58268dcf8c3b6195b5ef01b980894c03f2a611c2e3e33`
+-	v2 Content-Length: 5.9 MB (5944559 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:48:04 GMT
 
 #### `f7022ac152fbf8a9bb5f24fb0084d55057c4c46be04d77c7d8bad24d00346ed0`
 
@@ -1369,7 +1369,7 @@ $ docker pull library/redis@sha256:cdb0b9cfb8628aaa64d158c2d1b9f23dd881128e98352
 ```
 
 -	Total Virtual Size: 109.0 MB (108962356 bytes)
--	Total v2 Content-Length: 46.8 MB (46772140 bytes)
+-	Total v2 Content-Length: 46.8 MB (46772146 bytes)
 
 ### Layers (17)
 
@@ -1427,9 +1427,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 12.4 MB (12377297 bytes)
--	v2 Blob: `sha256:602d58b1e211802db1ba968079f5f4356da9bdecc557cbb4da220051d12c9cbe`
--	v2 Content-Length: 5.9 MB (5944553 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:48:59 GMT
+-	v2 Blob: `sha256:74aa1cd7d108cc4e3ae58268dcf8c3b6195b5ef01b980894c03f2a611c2e3e33`
+-	v2 Content-Length: 5.9 MB (5944559 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:48:04 GMT
 
 #### `f7022ac152fbf8a9bb5f24fb0084d55057c4c46be04d77c7d8bad24d00346ed0`
 
@@ -1636,7 +1636,7 @@ $ docker pull library/redis@sha256:ed8b126ccbee9a86b7aff95dfce497054e78296e615a3
 ```
 
 -	Total Virtual Size: 109.0 MB (108962356 bytes)
--	Total v2 Content-Length: 46.8 MB (46772140 bytes)
+-	Total v2 Content-Length: 46.8 MB (46772146 bytes)
 
 ### Layers (17)
 
@@ -1694,9 +1694,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 12.4 MB (12377297 bytes)
--	v2 Blob: `sha256:602d58b1e211802db1ba968079f5f4356da9bdecc557cbb4da220051d12c9cbe`
--	v2 Content-Length: 5.9 MB (5944553 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:48:59 GMT
+-	v2 Blob: `sha256:74aa1cd7d108cc4e3ae58268dcf8c3b6195b5ef01b980894c03f2a611c2e3e33`
+-	v2 Content-Length: 5.9 MB (5944559 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:48:04 GMT
 
 #### `f7022ac152fbf8a9bb5f24fb0084d55057c4c46be04d77c7d8bad24d00346ed0`
 
@@ -1899,11 +1899,11 @@ CMD ["redis-server"]
 ## `redis:2.8.22-32bit`
 
 ```console
-$ docker pull library/redis@sha256:43831d5d4deef78fe3ef2e700ebbfe03dc82d7764c9e75cefa9fb88b5e3a92db
+$ docker pull library/redis@sha256:dd18af52f82be6f50ef2574c013eeb245506dc7278636266c6bf4f989e6d7d34
 ```
 
 -	Total Virtual Size: 116.3 MB (116326360 bytes)
--	Total v2 Content-Length: 50.6 MB (50569345 bytes)
+-	Total v2 Content-Length: 50.6 MB (50569356 bytes)
 
 ### Layers (17)
 
@@ -1962,9 +1962,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 21.6 MB (21584555 bytes)
--	v2 Blob: `sha256:8532a14b3727a26cca0a3cb1df8c09bdfce4a7b98fb7e357fc2f5ab85f713c7b`
--	v2 Content-Length: 9.9 MB (9871512 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:51:52 GMT
+-	v2 Blob: `sha256:accda0db0caa46f874858b9a3270a634613931f5c86e249bcffa8d68fb5842e2`
+-	v2 Content-Length: 9.9 MB (9871523 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:50:48 GMT
 
 #### `2eb8550e3970682104a55c00f12e3fb7e36cac258993d1e4b947391c7bc5133f`
 
@@ -2171,7 +2171,7 @@ $ docker pull library/redis@sha256:814795e6e660bd90cf5351d6803ab489984c8054aab6d
 ```
 
 -	Total Virtual Size: 116.3 MB (116321849 bytes)
--	Total v2 Content-Length: 50.6 MB (50567805 bytes)
+-	Total v2 Content-Length: 50.6 MB (50567816 bytes)
 
 ### Layers (17)
 
@@ -2230,9 +2230,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 21.6 MB (21584555 bytes)
--	v2 Blob: `sha256:8532a14b3727a26cca0a3cb1df8c09bdfce4a7b98fb7e357fc2f5ab85f713c7b`
--	v2 Content-Length: 9.9 MB (9871512 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:51:52 GMT
+-	v2 Blob: `sha256:accda0db0caa46f874858b9a3270a634613931f5c86e249bcffa8d68fb5842e2`
+-	v2 Content-Length: 9.9 MB (9871523 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:50:48 GMT
 
 #### `2eb8550e3970682104a55c00f12e3fb7e36cac258993d1e4b947391c7bc5133f`
 
@@ -2439,7 +2439,7 @@ $ docker pull library/redis@sha256:7f4d232d2031e855e5d288be2ba99755d7e17da3d6d23
 ```
 
 -	Total Virtual Size: 116.3 MB (116321849 bytes)
--	Total v2 Content-Length: 50.6 MB (50567805 bytes)
+-	Total v2 Content-Length: 50.6 MB (50567816 bytes)
 
 ### Layers (17)
 
@@ -2498,9 +2498,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 21.6 MB (21584555 bytes)
--	v2 Blob: `sha256:8532a14b3727a26cca0a3cb1df8c09bdfce4a7b98fb7e357fc2f5ab85f713c7b`
--	v2 Content-Length: 9.9 MB (9871512 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:51:52 GMT
+-	v2 Blob: `sha256:accda0db0caa46f874858b9a3270a634613931f5c86e249bcffa8d68fb5842e2`
+-	v2 Content-Length: 9.9 MB (9871523 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:50:48 GMT
 
 #### `2eb8550e3970682104a55c00f12e3fb7e36cac258993d1e4b947391c7bc5133f`
 
@@ -2703,11 +2703,11 @@ CMD ["redis-server"]
 ## `redis:3.0.4`
 
 ```console
-$ docker pull library/redis@sha256:af646d3c7fbdad43f3ded178ac0c2417e00317946a54b24b6c8d5ac78a6b3ba3
+$ docker pull library/redis@sha256:5525014f499e50a2d33bd967b547e23aa2d5d59b87c096c5faff0e9ffe5bf937
 ```
 
 -	Total Virtual Size: 109.2 MB (109244399 bytes)
--	Total v2 Content-Length: 46.9 MB (46883359 bytes)
+-	Total v2 Content-Length: 46.9 MB (46883365 bytes)
 
 ### Layers (17)
 
@@ -2765,9 +2765,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 12.4 MB (12377297 bytes)
--	v2 Blob: `sha256:602d58b1e211802db1ba968079f5f4356da9bdecc557cbb4da220051d12c9cbe`
--	v2 Content-Length: 5.9 MB (5944553 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:48:59 GMT
+-	v2 Blob: `sha256:74aa1cd7d108cc4e3ae58268dcf8c3b6195b5ef01b980894c03f2a611c2e3e33`
+-	v2 Content-Length: 5.9 MB (5944559 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:48:04 GMT
 
 #### `f7022ac152fbf8a9bb5f24fb0084d55057c4c46be04d77c7d8bad24d00346ed0`
 
@@ -2974,7 +2974,7 @@ $ docker pull library/redis@sha256:c21883de88919be8e902cc13ff0561c4358672ce9740c
 ```
 
 -	Total Virtual Size: 109.2 MB (109239242 bytes)
--	Total v2 Content-Length: 46.9 MB (46879956 bytes)
+-	Total v2 Content-Length: 46.9 MB (46879962 bytes)
 
 ### Layers (17)
 
@@ -3032,9 +3032,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 12.4 MB (12377297 bytes)
--	v2 Blob: `sha256:602d58b1e211802db1ba968079f5f4356da9bdecc557cbb4da220051d12c9cbe`
--	v2 Content-Length: 5.9 MB (5944553 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:48:59 GMT
+-	v2 Blob: `sha256:74aa1cd7d108cc4e3ae58268dcf8c3b6195b5ef01b980894c03f2a611c2e3e33`
+-	v2 Content-Length: 5.9 MB (5944559 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:48:04 GMT
 
 #### `f7022ac152fbf8a9bb5f24fb0084d55057c4c46be04d77c7d8bad24d00346ed0`
 
@@ -3241,7 +3241,7 @@ $ docker pull library/redis@sha256:6d91c5a00684a71dcd80e169da7b725f92c181ff7a791
 ```
 
 -	Total Virtual Size: 109.2 MB (109239242 bytes)
--	Total v2 Content-Length: 46.9 MB (46879956 bytes)
+-	Total v2 Content-Length: 46.9 MB (46879962 bytes)
 
 ### Layers (17)
 
@@ -3299,9 +3299,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 12.4 MB (12377297 bytes)
--	v2 Blob: `sha256:602d58b1e211802db1ba968079f5f4356da9bdecc557cbb4da220051d12c9cbe`
--	v2 Content-Length: 5.9 MB (5944553 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:48:59 GMT
+-	v2 Blob: `sha256:74aa1cd7d108cc4e3ae58268dcf8c3b6195b5ef01b980894c03f2a611c2e3e33`
+-	v2 Content-Length: 5.9 MB (5944559 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:48:04 GMT
 
 #### `f7022ac152fbf8a9bb5f24fb0084d55057c4c46be04d77c7d8bad24d00346ed0`
 
@@ -3508,7 +3508,7 @@ $ docker pull library/redis@sha256:3c3e4a25690f9f82a2a1ec6d4f577dc2c81563c1ccd52
 ```
 
 -	Total Virtual Size: 109.2 MB (109239242 bytes)
--	Total v2 Content-Length: 46.9 MB (46879956 bytes)
+-	Total v2 Content-Length: 46.9 MB (46879962 bytes)
 
 ### Layers (17)
 
@@ -3566,9 +3566,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 12.4 MB (12377297 bytes)
--	v2 Blob: `sha256:602d58b1e211802db1ba968079f5f4356da9bdecc557cbb4da220051d12c9cbe`
--	v2 Content-Length: 5.9 MB (5944553 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:48:59 GMT
+-	v2 Blob: `sha256:74aa1cd7d108cc4e3ae58268dcf8c3b6195b5ef01b980894c03f2a611c2e3e33`
+-	v2 Content-Length: 5.9 MB (5944559 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:48:04 GMT
 
 #### `f7022ac152fbf8a9bb5f24fb0084d55057c4c46be04d77c7d8bad24d00346ed0`
 
@@ -3771,11 +3771,11 @@ CMD ["redis-server"]
 ## `redis:3.0.4-32bit`
 
 ```console
-$ docker pull library/redis@sha256:f704f6d2aa460198abc5b3e0b5ea454ed962e81639fb725d05e1a485075ef16f
+$ docker pull library/redis@sha256:8488be8ac8009cec35293ad3715c0b232407594e8b411e3b2d8d9921191078d2
 ```
 
 -	Total Virtual Size: 116.6 MB (116550060 bytes)
--	Total v2 Content-Length: 50.7 MB (50677114 bytes)
+-	Total v2 Content-Length: 50.7 MB (50677125 bytes)
 
 ### Layers (17)
 
@@ -3834,9 +3834,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 21.6 MB (21584555 bytes)
--	v2 Blob: `sha256:8532a14b3727a26cca0a3cb1df8c09bdfce4a7b98fb7e357fc2f5ab85f713c7b`
--	v2 Content-Length: 9.9 MB (9871512 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:51:52 GMT
+-	v2 Blob: `sha256:accda0db0caa46f874858b9a3270a634613931f5c86e249bcffa8d68fb5842e2`
+-	v2 Content-Length: 9.9 MB (9871523 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:50:48 GMT
 
 #### `2eb8550e3970682104a55c00f12e3fb7e36cac258993d1e4b947391c7bc5133f`
 
@@ -4043,7 +4043,7 @@ $ docker pull library/redis@sha256:5acf9d10486c292917a7eb21c9b9e0bf8756b5ec88613
 ```
 
 -	Total Virtual Size: 116.5 MB (116544909 bytes)
--	Total v2 Content-Length: 50.7 MB (50674539 bytes)
+-	Total v2 Content-Length: 50.7 MB (50674550 bytes)
 
 ### Layers (17)
 
@@ -4102,9 +4102,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 21.6 MB (21584555 bytes)
--	v2 Blob: `sha256:8532a14b3727a26cca0a3cb1df8c09bdfce4a7b98fb7e357fc2f5ab85f713c7b`
--	v2 Content-Length: 9.9 MB (9871512 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:51:52 GMT
+-	v2 Blob: `sha256:accda0db0caa46f874858b9a3270a634613931f5c86e249bcffa8d68fb5842e2`
+-	v2 Content-Length: 9.9 MB (9871523 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:50:48 GMT
 
 #### `2eb8550e3970682104a55c00f12e3fb7e36cac258993d1e4b947391c7bc5133f`
 
@@ -4311,7 +4311,7 @@ $ docker pull library/redis@sha256:d06d387940dfcef30ceab24408cec9aef42d66cc2d159
 ```
 
 -	Total Virtual Size: 116.5 MB (116544909 bytes)
--	Total v2 Content-Length: 50.7 MB (50674539 bytes)
+-	Total v2 Content-Length: 50.7 MB (50674550 bytes)
 
 ### Layers (17)
 
@@ -4370,9 +4370,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 21.6 MB (21584555 bytes)
--	v2 Blob: `sha256:8532a14b3727a26cca0a3cb1df8c09bdfce4a7b98fb7e357fc2f5ab85f713c7b`
--	v2 Content-Length: 9.9 MB (9871512 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:51:52 GMT
+-	v2 Blob: `sha256:accda0db0caa46f874858b9a3270a634613931f5c86e249bcffa8d68fb5842e2`
+-	v2 Content-Length: 9.9 MB (9871523 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:50:48 GMT
 
 #### `2eb8550e3970682104a55c00f12e3fb7e36cac258993d1e4b947391c7bc5133f`
 
@@ -4579,7 +4579,7 @@ $ docker pull library/redis@sha256:01cb44247b27e64ad5d7a558df8e8ecf9a3d2043a5746
 ```
 
 -	Total Virtual Size: 116.5 MB (116544909 bytes)
--	Total v2 Content-Length: 50.7 MB (50674539 bytes)
+-	Total v2 Content-Length: 50.7 MB (50674550 bytes)
 
 ### Layers (17)
 
@@ -4638,9 +4638,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `d990a769a35e7374d2cef9d92b502f9a4f3840225a502ba4b425b38834c020d3`
 -	Docker Version: 1.7.1
 -	Virtual Size: 21.6 MB (21584555 bytes)
--	v2 Blob: `sha256:8532a14b3727a26cca0a3cb1df8c09bdfce4a7b98fb7e357fc2f5ab85f713c7b`
--	v2 Content-Length: 9.9 MB (9871512 bytes)
--	v2 Last-Modified: Wed, 09 Sep 2015 23:51:52 GMT
+-	v2 Blob: `sha256:accda0db0caa46f874858b9a3270a634613931f5c86e249bcffa8d68fb5842e2`
+-	v2 Content-Length: 9.9 MB (9871523 bytes)
+-	v2 Last-Modified: Wed, 09 Sep 2015 23:50:48 GMT
 
 #### `2eb8550e3970682104a55c00f12e3fb7e36cac258993d1e4b947391c7bc5133f`
 

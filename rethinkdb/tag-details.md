@@ -29,7 +29,7 @@
 ## `rethinkdb:1.15.1`
 
 ```console
-$ docker pull library/rethinkdb@sha256:2afd0b337d99ee2fbbfb3547064b4e3c9d2465737e9529225baa3a0fc5b67144
+$ docker pull library/rethinkdb@sha256:c0029f2ffbfd71183b4cf734e58cfbd853d6b853bef1f0b32a10013ebced9a3a
 ```
 
 -	Total Virtual Size: 179.5 MB (179488633 bytes)
@@ -195,7 +195,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.15.2`
 
 ```console
-$ docker pull library/rethinkdb@sha256:b22e05a00deff0267d963e50868337c24a6b63f2e2a97d3b9f7c3e80727f5982
+$ docker pull library/rethinkdb@sha256:dc11e4a81d7c20858c01345d249e89ed92bc2cc323fa1a282bcc6c58ef5650a8
 ```
 
 -	Total Virtual Size: 179.5 MB (179510073 bytes)
@@ -361,7 +361,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.15.3`
 
 ```console
-$ docker pull library/rethinkdb@sha256:1214f3fd24a77106580b3ac274d022b2f099d228530aa8f15aa0691b5bb24449
+$ docker pull library/rethinkdb@sha256:39612d9eb46e3132b77381f5c2e583e047528e06091a9d322888da98a8a89faa
 ```
 
 -	Total Virtual Size: 179.5 MB (179513591 bytes)
@@ -693,7 +693,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.16.0`
 
 ```console
-$ docker pull library/rethinkdb@sha256:3800026facb759006666b190668999077aae7b7372483f5ef10db09b1d07d4c7
+$ docker pull library/rethinkdb@sha256:a6dac30ed391c2c9bcb80d1b7d77917799aea092ad9e67c65c3ac56787240771
 ```
 
 -	Total Virtual Size: 179.4 MB (179369037 bytes)
@@ -859,7 +859,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.16.1`
 
 ```console
-$ docker pull library/rethinkdb@sha256:266097af1097a259ec0979ca629155882b56c34f75537b4231c65cf1a9bae465
+$ docker pull library/rethinkdb@sha256:fafc14140a34a288174fd783f63b1931c0afc12d301d061679dfdfd19abaa2b1
 ```
 
 -	Total Virtual Size: 179.4 MB (179378014 bytes)
@@ -1025,7 +1025,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.16.2`
 
 ```console
-$ docker pull library/rethinkdb@sha256:09fb226a4a599e61e9b6099895d0c3d9b5246852496517c75208493ca95924d4
+$ docker pull library/rethinkdb@sha256:31d06626e9d58ed3ba0476687c36ae7e5183337a28a9b86ce0c5a009c8c3179f
 ```
 
 -	Total Virtual Size: 180.1 MB (180118699 bytes)
@@ -1191,7 +1191,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.16.3`
 
 ```console
-$ docker pull library/rethinkdb@sha256:d3dfa2f69baca630960ffb8c5ba3345e0771a409a6de49fad8367683e2352c84
+$ docker pull library/rethinkdb@sha256:d64fc2e4f0355adfa30e7a697831bb593e0902521266146ac1432b10dd0a0936
 ```
 
 -	Total Virtual Size: 180.1 MB (180122750 bytes)
@@ -1689,7 +1689,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0.0`
 
 ```console
-$ docker pull library/rethinkdb@sha256:f4f6fea9baaffd4e3cad9fb349b9f833995a77f402ddbbb9359338eabdbdae11
+$ docker pull library/rethinkdb@sha256:bbd87a8ca003915676bef361620c0fb111ae8cd9114dca7640de16cc60d208c2
 ```
 
 -	Total Virtual Size: 195.9 MB (195922978 bytes)
@@ -1855,7 +1855,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0.1`
 
 ```console
-$ docker pull library/rethinkdb@sha256:86149a40813ffb363faff0a743b5466b91242b520d2597d356937933b49e346b
+$ docker pull library/rethinkdb@sha256:ce841d6cdd887d39e38aafb33ed806504d4997d479289f0f1f406326d14be8ad
 ```
 
 -	Total Virtual Size: 195.9 MB (195922934 bytes)
@@ -2021,7 +2021,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0.2`
 
 ```console
-$ docker pull library/rethinkdb@sha256:56d6dd00f67dfba7b7f06f462cf80459ff4735fc279a57e8690860141f424903
+$ docker pull library/rethinkdb@sha256:0926ba00526af27148e5a3e9e59e9c0258f3063aa8cb601dca5d89b961c8b469
 ```
 
 -	Total Virtual Size: 195.9 MB (195931060 bytes)
@@ -2187,7 +2187,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0.3`
 
 ```console
-$ docker pull library/rethinkdb@sha256:c7f3e25a367f965b6f25e6e83bb4b74ba0e541fa956828f6b1c2cdaf181294b6
+$ docker pull library/rethinkdb@sha256:8ed231d494afa3a3f1dd698ec91b64f0c7745a68e2fc10ef7b5bda892ded1f97
 ```
 
 -	Total Virtual Size: 195.9 MB (195936564 bytes)
@@ -2353,7 +2353,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0.4`
 
 ```console
-$ docker pull library/rethinkdb@sha256:878c5c42fa16319198596e607d3ee28017d317552d428bb9f6f00fcfd7e839d8
+$ docker pull library/rethinkdb@sha256:0b26d9c37bd94d513dcd2b0e9a68e86665edea9623d9c97008912c2d2e1bba0b
 ```
 
 -	Total Virtual Size: 195.9 MB (195936631 bytes)
@@ -2685,7 +2685,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.1.0`
 
 ```console
-$ docker pull library/rethinkdb@sha256:8663938553bfd7609809830aa336dd94c975875ddab0f4b36e7a53fa92ee2eb1
+$ docker pull library/rethinkdb@sha256:8dbeeb86b995521334b9aaf773a8bcd740f4798a04c91dda58efa55f84eb7d40
 ```
 
 -	Total Virtual Size: 196.2 MB (196248003 bytes)
@@ -2851,7 +2851,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.1.1`
 
 ```console
-$ docker pull library/rethinkdb@sha256:4f5438640c9b4380dd24c95c1318445ffb96c620e13d16baf3e6df008debaee2
+$ docker pull library/rethinkdb@sha256:b55a549ec24447a20b245d75fbf7d9937a303a136c20a1f72e5cf4af84da2d85
 ```
 
 -	Total Virtual Size: 196.2 MB (196247766 bytes)
@@ -3017,7 +3017,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.1.2`
 
 ```console
-$ docker pull library/rethinkdb@sha256:7eb71b2ab52d47abf7ae219746f4a4211894ab8e97e9c04c4d1e4a8d5a4abe7b
+$ docker pull library/rethinkdb@sha256:3bf06ce50319c7ac3ccc2e06310ebb34e525a9bef2c1bbb9600ad72a0b364964
 ```
 
 -	Total Virtual Size: 196.3 MB (196263341 bytes)
@@ -3183,7 +3183,7 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.1.3`
 
 ```console
-$ docker pull library/rethinkdb@sha256:df36c122a4ed9e6efcbf5cfe7e121e5c042628c76bccb2bc1222d4ef26d0e1f0
+$ docker pull library/rethinkdb@sha256:75a60760c7b49c8d1e1e2b77ceb95a6ddadbf3e323228a520e1566c957fcd0a2
 ```
 
 -	Total Virtual Size: 196.3 MB (196271535 bytes)

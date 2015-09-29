@@ -11,11 +11,11 @@
 ## `rails:4.2.4`
 
 ```console
-$ docker pull library/rails@sha256:05b14d6b17237b1cf4800ca28443d96f15624a15b2ed651cd657fd7859b1600c
+$ docker pull library/rails@sha256:4582476b14b6e24d8a9e591cb9b2d3ffc6e8efec8fd7da1e5264f80307e271df
 ```
 
 -	Total Virtual Size: 824.9 MB (824851474 bytes)
--	Total v2 Content-Length: 314.4 MB (314369522 bytes)
+-	Total v2 Content-Length: 314.4 MB (314369530 bytes)
 
 ### Layers (21)
 
@@ -60,9 +60,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -381,7 +381,7 @@ $ docker pull library/rails@sha256:6eeecf4a3c6da122d7c75e6109fcab35ccc34ebad370c
 ```
 
 -	Total Virtual Size: 824.9 MB (824851474 bytes)
--	Total v2 Content-Length: 314.4 MB (314369522 bytes)
+-	Total v2 Content-Length: 314.4 MB (314369530 bytes)
 
 ### Layers (21)
 
@@ -426,9 +426,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -747,7 +747,7 @@ $ docker pull library/rails@sha256:164de31b54599c73995ab2c0fce0361de0b79270b300c
 ```
 
 -	Total Virtual Size: 824.9 MB (824851474 bytes)
--	Total v2 Content-Length: 314.4 MB (314369522 bytes)
+-	Total v2 Content-Length: 314.4 MB (314369530 bytes)
 
 ### Layers (21)
 
@@ -792,9 +792,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1113,7 +1113,7 @@ $ docker pull library/rails@sha256:d69b26bd4b2af9684e05729b064f732d45588a7f62ae0
 ```
 
 -	Total Virtual Size: 824.9 MB (824851474 bytes)
--	Total v2 Content-Length: 314.4 MB (314369522 bytes)
+-	Total v2 Content-Length: 314.4 MB (314369530 bytes)
 
 ### Layers (21)
 
@@ -1158,9 +1158,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1475,11 +1475,11 @@ RUN gem install rails --version "$RAILS_VERSION"
 ## `rails:onbuild`
 
 ```console
-$ docker pull library/rails@sha256:9c29b2d65896c9642164653bd992a6f92cc48da28643ca84c9e11d8e05d4ebf9
+$ docker pull library/rails@sha256:b7e6cda49b977b3c6f49e369c4cb7ffe9047e78af74f8a5b0f78f1a78febe616
 ```
 
 -	Total Virtual Size: 771.6 MB (771633929 bytes)
--	Total v2 Content-Length: 290.1 MB (290143510 bytes)
+-	Total v2 Content-Length: 290.1 MB (290143518 bytes)
 
 ### Layers (28)
 
@@ -1524,9 +1524,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 

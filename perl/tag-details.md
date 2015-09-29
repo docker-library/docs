@@ -18,11 +18,11 @@
 ## `perl:latest`
 
 ```console
-$ docker pull library/perl@sha256:fb796e216a1b6ac831fbf6fd87885837e269f8f5fbdfaa0543c88007e814d74b
+$ docker pull library/perl@sha256:33c996a73c9d723703dbb768fe3c4187af9deaa3d55ed898971b0cbeb3ba8cac
 ```
 
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
--	Total v2 Content-Length: 254.2 MB (254217856 bytes)
+-	Total v2 Content-Length: 254.2 MB (254217864 bytes)
 
 ### Layers (13)
 
@@ -67,9 +67,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -274,7 +274,7 @@ $ docker pull library/perl@sha256:014aca822ce0442e3a9c0b2d018885938029a6e5303bd7
 ```
 
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
--	Total v2 Content-Length: 254.2 MB (254217856 bytes)
+-	Total v2 Content-Length: 254.2 MB (254217864 bytes)
 
 ### Layers (13)
 
@@ -319,9 +319,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -526,7 +526,7 @@ $ docker pull library/perl@sha256:693c27d1b0c429fcc4b7b79178d4bd37adc2cbf09770bb
 ```
 
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
--	Total v2 Content-Length: 254.2 MB (254217856 bytes)
+-	Total v2 Content-Length: 254.2 MB (254217864 bytes)
 
 ### Layers (13)
 
@@ -571,9 +571,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -778,7 +778,7 @@ $ docker pull library/perl@sha256:d7f6b199299b27c1896b54ffea4f86d5fbfba9b3f1fb03
 ```
 
 -	Total Virtual Size: 656.5 MB (656512060 bytes)
--	Total v2 Content-Length: 254.2 MB (254217856 bytes)
+-	Total v2 Content-Length: 254.2 MB (254217864 bytes)
 
 ### Layers (13)
 
@@ -823,9 +823,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1026,11 +1026,11 @@ CMD ["perl5.22.0" "-de0"]
 ## `perl:5.20`
 
 ```console
-$ docker pull library/perl@sha256:6ca9d28d95a68666da9a9d6b36caaf333ff39c8a4b8cf0c0f1889347ac4c45f5
+$ docker pull library/perl@sha256:f47168f73b95643ed0d09b9a6c3bdaca07f3b43815415c5a36da52430c4b56fa
 ```
 
 -	Total Virtual Size: 654.7 MB (654714772 bytes)
--	Total v2 Content-Length: 253.9 MB (253899023 bytes)
+-	Total v2 Content-Length: 253.9 MB (253899031 bytes)
 
 ### Layers (13)
 
@@ -1075,9 +1075,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1282,7 +1282,7 @@ $ docker pull library/perl@sha256:710b2d4393ec94f466c74ebbf82e67b33d7ea23abc0f61
 ```
 
 -	Total Virtual Size: 654.7 MB (654714772 bytes)
--	Total v2 Content-Length: 253.9 MB (253899023 bytes)
+-	Total v2 Content-Length: 253.9 MB (253899031 bytes)
 
 ### Layers (13)
 
@@ -1327,9 +1327,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1530,11 +1530,11 @@ CMD ["perl5.20.3" "-de0"]
 ## `perl:threaded`
 
 ```console
-$ docker pull library/perl@sha256:77d0f60824a1cc7c616a5008116f363aa7c7f2d9478013eb17b2e4512fd9eca7
+$ docker pull library/perl@sha256:a27ccd44b9f47a85c3b36658ed8255affb6f69afa78dd866d8e37aad94f6ebb9
 ```
 
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
--	Total v2 Content-Length: 254.3 MB (254270593 bytes)
+-	Total v2 Content-Length: 254.3 MB (254270601 bytes)
 
 ### Layers (13)
 
@@ -1579,9 +1579,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1786,7 +1786,7 @@ $ docker pull library/perl@sha256:167d7aefff9056b5c52639b489804df22f8d2f6b75f1b4
 ```
 
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
--	Total v2 Content-Length: 254.3 MB (254270593 bytes)
+-	Total v2 Content-Length: 254.3 MB (254270601 bytes)
 
 ### Layers (13)
 
@@ -1831,9 +1831,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2038,7 +2038,7 @@ $ docker pull library/perl@sha256:5a54c622f71aeeabcb40ee297804dfc3399aef0315d762
 ```
 
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
--	Total v2 Content-Length: 254.3 MB (254270593 bytes)
+-	Total v2 Content-Length: 254.3 MB (254270601 bytes)
 
 ### Layers (13)
 
@@ -2083,9 +2083,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2290,7 +2290,7 @@ $ docker pull library/perl@sha256:7e3cbf0daa1a6493e0011ec904406edde019552c92dd65
 ```
 
 -	Total Virtual Size: 656.5 MB (656539719 bytes)
--	Total v2 Content-Length: 254.3 MB (254270593 bytes)
+-	Total v2 Content-Length: 254.3 MB (254270601 bytes)
 
 ### Layers (13)
 
@@ -2335,9 +2335,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2538,11 +2538,11 @@ CMD ["perl5.22.0" "-de0"]
 ## `perl:5.20-threaded`
 
 ```console
-$ docker pull library/perl@sha256:514fa33f7301d651fc25fab267dea3af51fc4c3a3b87dab91425d1f42a5e5800
+$ docker pull library/perl@sha256:6a81075df654446ccb839dc57b15a41b045b876529dac69fe6ad6755920968cd
 ```
 
 -	Total Virtual Size: 654.7 MB (654741988 bytes)
--	Total v2 Content-Length: 253.9 MB (253943850 bytes)
+-	Total v2 Content-Length: 253.9 MB (253943858 bytes)
 
 ### Layers (13)
 
@@ -2587,9 +2587,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -2794,7 +2794,7 @@ $ docker pull library/perl@sha256:3d7d9684fd7c351808df594d0836808a8453f7fc41d508
 ```
 
 -	Total Virtual Size: 654.7 MB (654741988 bytes)
--	Total v2 Content-Length: 253.9 MB (253943850 bytes)
+-	Total v2 Content-Length: 253.9 MB (253943858 bytes)
 
 ### Layers (13)
 
@@ -2839,9 +2839,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 

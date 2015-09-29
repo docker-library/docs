@@ -8,7 +8,7 @@
 ## `r-base:3.2.2`
 
 ```console
-$ docker pull library/r-base@sha256:1364b3a911d0bc8ce685fd38591742624e42ec691b61a0eb10b052ce78b50d2b
+$ docker pull library/r-base@sha256:4b435291ba260c71580b83b502bf3af1e9d311cc743e4a2831f4ecb87bf8b5d2
 ```
 
 -	Total Virtual Size: 997.3 MB (997314201 bytes)

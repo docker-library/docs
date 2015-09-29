@@ -8,7 +8,7 @@
 ## `swarm:0.4.0`
 
 ```console
-$ docker pull library/swarm@sha256:3371b6783215db2657a2e4d4366b760d5be14cd573ecb14abc494cda8e01e971
+$ docker pull library/swarm@sha256:fd43261eecd0a7983a4f268cccaac09511c7c1a8b181964ffea9849930b64ee3
 ```
 
 -	Total Virtual Size: 10.2 MB (10195476 bytes)

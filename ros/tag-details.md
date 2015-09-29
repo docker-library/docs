@@ -17,11 +17,11 @@
 ## `ros:indigo-ros-core`
 
 ```console
-$ docker pull library/ros@sha256:cb7cb4362ab78a7ea9e5662a559282044039b15563cfe35a42e0e40830699478
+$ docker pull library/ros@sha256:c672f9eac04a6aef3faccfe4ef3895870ada7a6670526827e23e4886176b0bdd
 ```
 
 -	Total Virtual Size: 812.2 MB (812195956 bytes)
--	Total v2 Content-Length: 250.1 MB (250051864 bytes)
+-	Total v2 Content-Length: 250.1 MB (250051862 bytes)
 
 ### Layers (16)
 
@@ -220,9 +220,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
--	v2 Content-Length: 151.6 MB (151621464 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
+-	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
+-	v2 Content-Length: 151.6 MB (151621462 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -269,11 +269,11 @@ CMD ["bash"]
 ## `ros:indigo-ros-base`
 
 ```console
-$ docker pull library/ros@sha256:32cea601332f417835cd23a25420160665b1882095219ced6f0de505d740bf8a
+$ docker pull library/ros@sha256:baa6e561eb4e573f05e84d158656ff392a60ed1a11828db8cb86b47770758603
 ```
 
 -	Total Virtual Size: 826.7 MB (826661981 bytes)
--	Total v2 Content-Length: 253.5 MB (253461565 bytes)
+-	Total v2 Content-Length: 253.5 MB (253461563 bytes)
 
 ### Layers (18)
 
@@ -472,9 +472,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
--	v2 Content-Length: 151.6 MB (151621464 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
+-	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
+-	v2 Content-Length: 151.6 MB (151621462 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -551,11 +551,11 @@ RUN apt-get update && apt-get install -y\
 ## `ros:indigo-robot`
 
 ```console
-$ docker pull library/ros@sha256:a009cda97c0c3679d017921fa0beac148a5788f97704cf8d6c5b0ae21ffce167
+$ docker pull library/ros@sha256:244c05bc53c3c978aacc7362cd4dd0791252fb562909fe89720acb29ea7b8e17
 ```
 
 -	Total Virtual Size: 1.0 GB (1037410962 bytes)
--	Total v2 Content-Length: 321.5 MB (321548189 bytes)
+-	Total v2 Content-Length: 321.5 MB (321548187 bytes)
 
 ### Layers (20)
 
@@ -754,9 +754,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
--	v2 Content-Length: 151.6 MB (151621464 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
+-	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
+-	v2 Content-Length: 151.6 MB (151621462 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -863,11 +863,11 @@ RUN apt-get update && apt-get install -y\
 ## `ros:indigo-perception`
 
 ```console
-$ docker pull library/ros@sha256:417adeadc1063d808c58427adbcb2081911e5177711f30f3a149f63becc2434d
+$ docker pull library/ros@sha256:87ef4aaebb403c3df37b56c3a20a0ee52f1c78ae933b94768e5650f8ebaad6c9
 ```
 
 -	Total Virtual Size: 1.7 GB (1739868931 bytes)
--	Total v2 Content-Length: 517.2 MB (517191873 bytes)
+-	Total v2 Content-Length: 517.2 MB (517191871 bytes)
 
 ### Layers (20)
 
@@ -1066,9 +1066,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
--	v2 Content-Length: 151.6 MB (151621464 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
+-	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
+-	v2 Content-Length: 151.6 MB (151621462 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -1179,7 +1179,7 @@ $ docker pull library/ros@sha256:fe1565681db446ee664570dd2c821d397418be067d47365
 ```
 
 -	Total Virtual Size: 826.7 MB (826661981 bytes)
--	Total v2 Content-Length: 253.5 MB (253461565 bytes)
+-	Total v2 Content-Length: 253.5 MB (253461563 bytes)
 
 ### Layers (18)
 
@@ -1378,9 +1378,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
--	v2 Content-Length: 151.6 MB (151621464 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
+-	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
+-	v2 Content-Length: 151.6 MB (151621462 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -1461,7 +1461,7 @@ $ docker pull library/ros@sha256:f045d61a3ac231f581ff5ea96bfa969a911d50b637806d7
 ```
 
 -	Total Virtual Size: 826.7 MB (826661981 bytes)
--	Total v2 Content-Length: 253.5 MB (253461565 bytes)
+-	Total v2 Content-Length: 253.5 MB (253461563 bytes)
 
 ### Layers (18)
 
@@ -1660,9 +1660,9 @@ RUN apt-get update && apt-get install -y\
 -	Parent Layer: `b838a0f5ebaa6be2859a5080e01d44db84e61a4183fab8a2a36b5eb3fab6cefe`
 -	Docker Version: 1.7.1
 -	Virtual Size: 531.1 MB (531139827 bytes)
--	v2 Blob: `sha256:2d72ca4b8dac39c407e673c84f034e4ec5c58c4316fe016ad0f0f70e5b08cd39`
--	v2 Content-Length: 151.6 MB (151621464 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 05:25:46 GMT
+-	v2 Blob: `sha256:85fdf32f2a230e577520d95d3a3981cd34a30651ea1d44c4c73c509c0a818e27`
+-	v2 Content-Length: 151.6 MB (151621462 bytes)
+-	v2 Last-Modified: Thu, 27 Aug 2015 05:20:16 GMT
 
 #### `56483ea244d4c07f198b0850e1dd19e9febf8678fd3540c77282400b2e285fbe`
 
@@ -1739,7 +1739,7 @@ RUN apt-get update && apt-get install -y\
 ## `ros:jade-ros-core`
 
 ```console
-$ docker pull library/ros@sha256:5e61c545cb62e5f77b03cbddcb2c067c517223b61a0caaab64271c845143fd07
+$ docker pull library/ros@sha256:c4519a4044fc5c88514663ff9584dcfdcc7729c69f7679079bfb8ffbfe884bd2
 ```
 
 -	Total Virtual Size: 813.0 MB (812962751 bytes)
@@ -1991,7 +1991,7 @@ CMD ["bash"]
 ## `ros:jade-ros-base`
 
 ```console
-$ docker pull library/ros@sha256:987c29c097d5a52e9f37fd62d12f3ae196e043e5552b355ab48c719469ff73f8
+$ docker pull library/ros@sha256:16a82ed0801a022676e74067439e92168edbca93b561c3c709e964a44b8d0260
 ```
 
 -	Total Virtual Size: 827.6 MB (827570691 bytes)
@@ -2273,7 +2273,7 @@ RUN apt-get update && apt-get install -y\
 ## `ros:jade-robot`
 
 ```console
-$ docker pull library/ros@sha256:b7684cb46b29802331dc281007492f2ad3faf6e7e6dd5d7a519bd0e349086b20
+$ docker pull library/ros@sha256:62c7b424ffbff3f8f5d0bcd97314117228f265bedd131a44316017aa6a50d93d
 ```
 
 -	Total Virtual Size: 1.0 GB (1037927226 bytes)
@@ -2585,7 +2585,7 @@ RUN apt-get update && apt-get install -y\
 ## `ros:jade-perception`
 
 ```console
-$ docker pull library/ros@sha256:44327a7190997f61a27b2955714b7df1816a28782f955a7e3123d0709578c428
+$ docker pull library/ros@sha256:26a74572ce5e27c12187b809bf314b03a9003002f77340277f0080e5259cf22a
 ```
 
 -	Total Virtual Size: 1.7 GB (1739619741 bytes)

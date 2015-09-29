@@ -36,11 +36,11 @@
 ## `tomcat:6.0.44-jre7`
 
 ```console
-$ docker pull library/tomcat@sha256:89792a42ce83603d00e935a9e085ab44560aa9655b15513efb53f1bb93132bf7
+$ docker pull library/tomcat@sha256:c797a5766a128758bf718446bd88854f5863325716138cfbe882e4e1ee1e46e3
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621068 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621081 bytes)
 
 ### Layers (19)
 
@@ -85,9 +85,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -340,7 +340,7 @@ $ docker pull library/tomcat@sha256:ec95225e4da3539e709a0b90f1bf347b2b49315ddae7
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621068 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621081 bytes)
 
 ### Layers (19)
 
@@ -385,9 +385,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -640,7 +640,7 @@ $ docker pull library/tomcat@sha256:a3b0e7323e06c62e1cec6d597306becd14dd79707444
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621068 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621081 bytes)
 
 ### Layers (19)
 
@@ -685,9 +685,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -940,7 +940,7 @@ $ docker pull library/tomcat@sha256:cf934db3ba9a709a328fe22a8054b0571b06fa2014cb
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621068 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621081 bytes)
 
 ### Layers (19)
 
@@ -985,9 +985,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1240,7 +1240,7 @@ $ docker pull library/tomcat@sha256:bff34569d31e29288b16816e1220038f0e1bd7fc32a5
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621068 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621081 bytes)
 
 ### Layers (19)
 
@@ -1285,9 +1285,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1540,7 +1540,7 @@ $ docker pull library/tomcat@sha256:2dc420345f0457cd5a2c1e43800ffa9c0a415d74a862
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621068 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621081 bytes)
 
 ### Layers (19)
 
@@ -1585,9 +1585,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1836,11 +1836,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:6.0.44-jre8`
 
 ```console
-$ docker pull library/tomcat@sha256:42a10a1fc93c682b772497480097c7fdaa35d979659ff47274e29eb8d7d280e8
+$ docker pull library/tomcat@sha256:92ebf63f0b8b9ec31e9d159abe5e843a46ad02e1471230e4f3966afa8fa1975e
 ```
 
 -	Total Virtual Size: 499.0 MB (498958274 bytes)
--	Total v2 Content-Length: 201.4 MB (201427490 bytes)
+-	Total v2 Content-Length: 201.4 MB (201427503 bytes)
 
 ### Layers (23)
 
@@ -1885,9 +1885,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2201,7 +2201,7 @@ $ docker pull library/tomcat@sha256:f6c4177091a78e49f3239fc266747d1f7d9eddbd5d82
 ```
 
 -	Total Virtual Size: 499.0 MB (498958274 bytes)
--	Total v2 Content-Length: 201.4 MB (201427490 bytes)
+-	Total v2 Content-Length: 201.4 MB (201427503 bytes)
 
 ### Layers (23)
 
@@ -2246,9 +2246,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2562,7 +2562,7 @@ $ docker pull library/tomcat@sha256:f8a7a2293d6fbe310a43378af044e61cec6790a35a64
 ```
 
 -	Total Virtual Size: 499.0 MB (498958274 bytes)
--	Total v2 Content-Length: 201.4 MB (201427490 bytes)
+-	Total v2 Content-Length: 201.4 MB (201427503 bytes)
 
 ### Layers (23)
 
@@ -2607,9 +2607,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2919,11 +2919,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7.0.64-jre7`
 
 ```console
-$ docker pull library/tomcat@sha256:0a178aeab9fe8c52c6bca5e758145d8854fcf2dcef30477887e1a54ecfd402ba
+$ docker pull library/tomcat@sha256:0b1e63d9f6603e5bebc51cbf5ef1bc274175868be595721dfbd2c458bfe2c6f6
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260255 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260268 bytes)
 
 ### Layers (19)
 
@@ -2968,9 +2968,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3222,7 +3222,7 @@ $ docker pull library/tomcat@sha256:2d6a39f02750ae11c48900459590a81aa70956ccfdde
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260255 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260268 bytes)
 
 ### Layers (19)
 
@@ -3267,9 +3267,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3521,7 +3521,7 @@ $ docker pull library/tomcat@sha256:1e0b3b7ff63fa78523c618c1c9a568c8c05c21c73ddf
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260255 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260268 bytes)
 
 ### Layers (19)
 
@@ -3566,9 +3566,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3820,7 +3820,7 @@ $ docker pull library/tomcat@sha256:5eeea1b76fc2e52f33e5b7d658ba3775c67078910a29
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260255 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260268 bytes)
 
 ### Layers (19)
 
@@ -3865,9 +3865,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -4119,7 +4119,7 @@ $ docker pull library/tomcat@sha256:e9c2e6570a2818bb5c5ba76f33cb07bcc287b721900d
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260255 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260268 bytes)
 
 ### Layers (19)
 
@@ -4164,9 +4164,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -4418,7 +4418,7 @@ $ docker pull library/tomcat@sha256:b545868782d6cbae48a1d585cd3bc9ed1de44993c2c8
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260255 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260268 bytes)
 
 ### Layers (19)
 
@@ -4463,9 +4463,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -4713,11 +4713,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7.0.64-jre8`
 
 ```console
-$ docker pull library/tomcat@sha256:a87b9162d71c9b4854b2f2c6490024aa89d60554478e391c69a45980fdf6e27e
+$ docker pull library/tomcat@sha256:959f280e596bd3b562853c95e85671abe5ebbb87df4fcc5e2531f7a09c53334b
 ```
 
 -	Total Virtual Size: 501.4 MB (501411869 bytes)
--	Total v2 Content-Length: 203.1 MB (203066648 bytes)
+-	Total v2 Content-Length: 203.1 MB (203066661 bytes)
 
 ### Layers (23)
 
@@ -4762,9 +4762,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -5077,7 +5077,7 @@ $ docker pull library/tomcat@sha256:19af883ebfd8769c7a8abf98e7ef40eb9c94e47b4667
 ```
 
 -	Total Virtual Size: 501.4 MB (501411869 bytes)
--	Total v2 Content-Length: 203.1 MB (203066648 bytes)
+-	Total v2 Content-Length: 203.1 MB (203066661 bytes)
 
 ### Layers (23)
 
@@ -5122,9 +5122,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -5437,7 +5437,7 @@ $ docker pull library/tomcat@sha256:5d94c6ada060e21a6d360de0b7f4ef50b05fa361eb72
 ```
 
 -	Total Virtual Size: 501.4 MB (501411869 bytes)
--	Total v2 Content-Length: 203.1 MB (203066648 bytes)
+-	Total v2 Content-Length: 203.1 MB (203066661 bytes)
 
 ### Layers (23)
 
@@ -5482,9 +5482,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -5793,11 +5793,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0.26-jre7`
 
 ```console
-$ docker pull library/tomcat@sha256:7f88ff4855c33086340e60287feb1ca415b566ed999828c4e18eb04b8d460f2c
+$ docker pull library/tomcat@sha256:b9d21cb5db6ea3c9a3e61ae054e74c253e66b915db82438e4af5a22cb60da6cf
 ```
 
 -	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517599 bytes)
+-	Total v2 Content-Length: 157.5 MB (157517612 bytes)
 
 ### Layers (19)
 
@@ -5842,9 +5842,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -6095,7 +6095,7 @@ $ docker pull library/tomcat@sha256:66bfd400f0dd6c837547149809bfe97533dc3c838e5b
 ```
 
 -	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517599 bytes)
+-	Total v2 Content-Length: 157.5 MB (157517612 bytes)
 
 ### Layers (19)
 
@@ -6140,9 +6140,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -6393,7 +6393,7 @@ $ docker pull library/tomcat@sha256:c7b0a87a2d9787f4bfa95a8b217322f69dad50d89f9c
 ```
 
 -	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517599 bytes)
+-	Total v2 Content-Length: 157.5 MB (157517612 bytes)
 
 ### Layers (19)
 
@@ -6438,9 +6438,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -6691,7 +6691,7 @@ $ docker pull library/tomcat@sha256:25c44961c8ed94e46f5e4ccdfc1897290120183e0b59
 ```
 
 -	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517599 bytes)
+-	Total v2 Content-Length: 157.5 MB (157517612 bytes)
 
 ### Layers (19)
 
@@ -6736,9 +6736,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -6989,7 +6989,7 @@ $ docker pull library/tomcat@sha256:f9032a02cf130528cef2e67c077b42041ba51a0da5c8
 ```
 
 -	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517599 bytes)
+-	Total v2 Content-Length: 157.5 MB (157517612 bytes)
 
 ### Layers (19)
 
@@ -7034,9 +7034,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -7287,7 +7287,7 @@ $ docker pull library/tomcat@sha256:d4389d84b45589922f840abb5bca0a7b1682fe9ed3f9
 ```
 
 -	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517599 bytes)
+-	Total v2 Content-Length: 157.5 MB (157517612 bytes)
 
 ### Layers (19)
 
@@ -7332,9 +7332,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -7585,7 +7585,7 @@ $ docker pull library/tomcat@sha256:8a79c8f3a9751ece0e76cc4f3bf42b862349b9bb687f
 ```
 
 -	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517599 bytes)
+-	Total v2 Content-Length: 157.5 MB (157517612 bytes)
 
 ### Layers (19)
 
@@ -7630,9 +7630,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -7883,7 +7883,7 @@ $ docker pull library/tomcat@sha256:4122e91807764b8f4913748180dd78a5f3979387916f
 ```
 
 -	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517599 bytes)
+-	Total v2 Content-Length: 157.5 MB (157517612 bytes)
 
 ### Layers (19)
 
@@ -7928,9 +7928,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -8177,11 +8177,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0.26-jre8`
 
 ```console
-$ docker pull library/tomcat@sha256:1c7806cd089fae44e329cf6175d542dfc025963b26d1520037f7ea6f4c018a3e
+$ docker pull library/tomcat@sha256:69f79fc194a761fe55d459cbb88f2b6013f75de84a8d0d7f89a7c3d9b0420e0c
 ```
 
 -	Total Virtual Size: 500.9 MB (500902911 bytes)
--	Total v2 Content-Length: 203.3 MB (203323981 bytes)
+-	Total v2 Content-Length: 203.3 MB (203323994 bytes)
 
 ### Layers (23)
 
@@ -8226,9 +8226,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -8540,7 +8540,7 @@ $ docker pull library/tomcat@sha256:62cca45cd5fa9e4d2df25cd50c3ba982760bca69bad6
 ```
 
 -	Total Virtual Size: 500.9 MB (500902911 bytes)
--	Total v2 Content-Length: 203.3 MB (203323981 bytes)
+-	Total v2 Content-Length: 203.3 MB (203323994 bytes)
 
 ### Layers (23)
 
@@ -8585,9 +8585,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -8899,7 +8899,7 @@ $ docker pull library/tomcat@sha256:43f52c5210212ee9c3a95b95a4918bf105c4fe4a374d
 ```
 
 -	Total Virtual Size: 500.9 MB (500902911 bytes)
--	Total v2 Content-Length: 203.3 MB (203323981 bytes)
+-	Total v2 Content-Length: 203.3 MB (203323994 bytes)
 
 ### Layers (23)
 
@@ -8944,9 +8944,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -9258,7 +9258,7 @@ $ docker pull library/tomcat@sha256:84075b8677376f07c786edcdb4ffc1f0a5b0bdf9edc1
 ```
 
 -	Total Virtual Size: 500.9 MB (500902911 bytes)
--	Total v2 Content-Length: 203.3 MB (203323981 bytes)
+-	Total v2 Content-Length: 203.3 MB (203323994 bytes)
 
 ### Layers (23)
 
@@ -9303,9 +9303,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:5c5e8fdddc34685078267eb443789edbdae0f7ac0c642887755f219d1764c294`
--	v2 Content-Length: 18.5 MB (18538586 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 07:16:31 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 

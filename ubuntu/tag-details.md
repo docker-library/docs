@@ -21,7 +21,7 @@
 ## `ubuntu:12.04.5`
 
 ```console
-$ docker pull library/ubuntu@sha256:a47e211508be9d63b9a4cee835fc07d0603be5a95729e83f8636e8bedc45dd9d
+$ docker pull library/ubuntu@sha256:29912cc394639f5870a15661701011f0da6a0b5fdd924d2d1d025d3aa6f1c822
 ```
 
 -	Total Virtual Size: 134.8 MB (134791757 bytes)
@@ -329,7 +329,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:14.04.3`
 
 ```console
-$ docker pull library/ubuntu@sha256:00d60ee82b79ad0fd7e4f89b98414d8b35332fef5ad0874a87cc1480997621fe
+$ docker pull library/ubuntu@sha256:d2cdab847fabbd73fdbc41cea2b3cb9b3e7d46fcd0a6ecd1e461e2702c76006e
 ```
 
 -	Total Virtual Size: 188.4 MB (188359297 bytes)
@@ -714,7 +714,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:15.04`
 
 ```console
-$ docker pull library/ubuntu@sha256:947e1de770f0e4e0edf8248c3721c44e9691c6ab1862c13c7c352f4d37ad716a
+$ docker pull library/ubuntu@sha256:c7ecf33cef00ae34b131605c31486c91f5fd9a76315d075db2afd39d1ccdf3ed
 ```
 
 -	Total Virtual Size: 131.4 MB (131355683 bytes)
@@ -945,7 +945,7 @@ CMD ["/bin/bash"]
 ## `ubuntu:15.10`
 
 ```console
-$ docker pull library/ubuntu@sha256:d8fadf467d6188bae22350efff59f40f6873fb36944f9ef3ebb0c36b2be06642
+$ docker pull library/ubuntu@sha256:8f2767be97dc701618fc4f46f73e2273afa6102c4919163e50c47ff6bd6e2c4c
 ```
 
 -	Total Virtual Size: 131.3 MB (131261115 bytes)

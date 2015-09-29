@@ -10,11 +10,11 @@
 ## `rocket.chat:0.4.0`
 
 ```console
-$ docker pull library/rocket.chat@sha256:c0cc2431aaca311863de877947892dd287013ebbc851371205900266571e15e3
+$ docker pull library/rocket.chat@sha256:ed4d3981703828b0aa31cc0f191d8e4f6d97439651e0fc424eaa14fb5314c0ca
 ```
 
 -	Total Virtual Size: 691.4 MB (691413276 bytes)
--	Total v2 Content-Length: 271.8 MB (271811102 bytes)
+-	Total v2 Content-Length: 271.8 MB (271811110 bytes)
 
 ### Layers (20)
 
@@ -59,9 +59,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -362,7 +362,7 @@ $ docker pull library/rocket.chat@sha256:1e3a7048f6f1159f83a4eb4e42c786c9ba6af3b
 ```
 
 -	Total Virtual Size: 691.4 MB (691413276 bytes)
--	Total v2 Content-Length: 271.8 MB (271811102 bytes)
+-	Total v2 Content-Length: 271.8 MB (271811110 bytes)
 
 ### Layers (20)
 
@@ -407,9 +407,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -710,7 +710,7 @@ $ docker pull library/rocket.chat@sha256:38122b761b00eb539f69622ae311afa727c6503
 ```
 
 -	Total Virtual Size: 691.4 MB (691413276 bytes)
--	Total v2 Content-Length: 271.8 MB (271811102 bytes)
+-	Total v2 Content-Length: 271.8 MB (271811110 bytes)
 
 ### Layers (20)
 
@@ -755,9 +755,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 
@@ -1058,7 +1058,7 @@ $ docker pull library/rocket.chat@sha256:2b21a796bc9dbd93cbcf7e36912056a34e86552
 ```
 
 -	Total Virtual Size: 691.4 MB (691413276 bytes)
--	Total v2 Content-Length: 271.8 MB (271811102 bytes)
+-	Total v2 Content-Length: 271.8 MB (271811110 bytes)
 
 ### Layers (20)
 
@@ -1103,9 +1103,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
--	v2 Content-Length: 18.5 MB (18538591 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
+-	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
+-	v2 Content-Length: 18.5 MB (18538599 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
 
 #### `20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f`
 

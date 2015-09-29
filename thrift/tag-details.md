@@ -9,7 +9,7 @@
 ## `thrift:0.9`
 
 ```console
-$ docker pull library/thrift@sha256:ead565e85211dd91a9623cebb60990b770fa71923f4e36c7158ca505498af0a9
+$ docker pull library/thrift@sha256:898fe152bfb24ac8c51442ca9bd911e9baef2c36d4140738a35acf4c034e0131
 ```
 
 -	Total Virtual Size: 135.2 MB (135177096 bytes)

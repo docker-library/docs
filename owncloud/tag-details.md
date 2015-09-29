@@ -18,7 +18,7 @@
 ## `owncloud:6.0.9`
 
 ```console
-$ docker pull library/owncloud@sha256:f52962e741a47d3cebc7eb3280cdcd67f4a792bb64e3ef54c7f426f44bfc559c
+$ docker pull library/owncloud@sha256:c18ae45d2b1b9e3889bd40258e425a3ad0896a7baecb91c6a186d946d2a1e985
 ```
 
 -	Total Virtual Size: 690.1 MB (690064294 bytes)
@@ -1623,7 +1623,7 @@ CMD ["apache2-foreground"]
 ## `owncloud:7.0.10`
 
 ```console
-$ docker pull library/owncloud@sha256:34322d871b19b645b37363789f7e3a910eae5f477ce24057e650544b62db16ce
+$ docker pull library/owncloud@sha256:637f59fdd461ceecf3c5086858c1fb21df36b5c283ae257c23211e5fdd664ea8
 ```
 
 -	Total Virtual Size: 705.4 MB (705393287 bytes)
@@ -3228,7 +3228,7 @@ CMD ["apache2-foreground"]
 ## `owncloud:8.0.8`
 
 ```console
-$ docker pull library/owncloud@sha256:ae54d4797134faf5cc44581ae4bd0f660971e6f05f60bf5b410cedca123f1468
+$ docker pull library/owncloud@sha256:2891d7d3a6cec38e45db679c7c2360398ffde8fd067e5a1384e7300dbcc20fc0
 ```
 
 -	Total Virtual Size: 678.9 MB (678888226 bytes)
@@ -4328,7 +4328,7 @@ CMD ["apache2-foreground"]
 ## `owncloud:8.1.3`
 
 ```console
-$ docker pull library/owncloud@sha256:6c92527ec25d28e3e5cdf75a87764f4398da304f62f5bed7708921baf897f296
+$ docker pull library/owncloud@sha256:353409cb246e56355cf12faa77fc6b0e2b42ad6ec71c96870e8fc2dd93bb41ce
 ```
 
 -	Total Virtual Size: 686.8 MB (686828364 bytes)
