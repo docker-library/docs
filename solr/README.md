@@ -39,15 +39,6 @@ and you should see a few docs with data. Congratulations!
 
 To learn more about Solr, see the [Apache Solr Reference Guide](https://cwiki.apache.org/confluence/display/solr/Apache+Solr+Reference+Guide).
 
-## Single-container SolrCloud
-
-To simulate a distributed Solr configuration ("SolrCloud" mode) on a single container with 2 nodes in separate JVMs, run the "cloud" example:
-
-    docker run -d -p 8983:8983 -p 7574:7574 solr \
-        /bin/bash -c "/opt/solr/bin/solr -e cloud -noprompt; while true ; do sleep 3600; done"
-
-This will take a minute or so to start. You can follow along with `docker logs -f CONTAINER`.
-
 ## Distributed Solr
 
 You can also run a distributed Solr configuration, with Solr nodes in separate containers, sharing a single ZooKeeper server:
