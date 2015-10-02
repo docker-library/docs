@@ -17,7 +17,7 @@ $ docker run -d %%REPO%%
 You can test it by visiting `http://container-ip:8080` or `https://container-ip:8443/` in a browser. To expose your Jetty server to outside requests, use a port mapping as follows:
 
 ```console
-$ docker run -d -p 8888:8080 %%REPO%%
+$ docker run -d -p 80:8080 -p 443:8443 %%REPO%%
 ```
 
 This will map port 8080 inside the container as port 80 on the host and container port 8443 as host port 443. You can then go to `http://host-ip` or `https://host-ip` in a browser.
