@@ -72,17 +72,17 @@ NOTE: the `--ulimit` flags only work on Docker 1.6 or later.
 
 ## Single host, single container
 
-	┌───────────────────────┐                                                      
-	│   Host OS (Linux)     │                                                      
-	│  ┌─────────────────┐  │                                                      
-	│  │  Container OS   │  │                                                      
-	│  │    (CentOS)     │  │                                                      
-	│  │  ┌───────────┐  │  │                                                      
-	│  │  │ Couchbase │  │  │                                                      
-	│  │  │  Server   │  │  │                                                      
-	│  │  └───────────┘  │  │                                                      
-	│  └─────────────────┘  │                                                      
-	└───────────────────────┘                                                      
+	┌───────────────────────┐
+	│   Host OS (Linux)     │
+	│  ┌─────────────────┐  │
+	│  │  Container OS   │  │
+	│  │    (Ubuntu)     │  │
+	│  │  ┌───────────┐  │  │
+	│  │  │ Couchbase │  │  │
+	│  │  │  Server   │  │  │
+	│  │  └───────────┘  │  │
+	│  └─────────────────┘  │
+	└───────────────────────┘
 
 This is a quick way to try out Couchbase Server on your own machine with no installation overhead - just *download and run*. In this case, any networking configuration will work; the only real requirement is that port 8091 be exposed so that you can access the Couchbase Admin Console.
 
@@ -127,21 +127,21 @@ You should run the SDK on the host and point it to `http://localhost:8091/pools`
 
 ## Single host, multiple containers
 
-	┌──────────────────────────────────────────────────────────┐                   
-	│                     Host OS (Linux)                      │                   
-	│                                                          │                   
-	│  ┌───────────────┐ ┌───────────────┐  ┌───────────────┐  │                   
-	│  │ Container OS  │ │ Container OS  │  │ Container OS  │  │                   
-	│  │   (CentOS)    │ │   (CentOS)    │  │   (CentOS)    │  │                   
-	│  │ ┌───────────┐ │ │ ┌───────────┐ │  │ ┌───────────┐ │  │                   
-	│  │ │ Couchbase │ │ │ │ Couchbase │ │  │ │ Couchbase │ │  │                   
-	│  │ │  Server   │ │ │ │  Server   │ │  │ │  Server   │ │  │                   
-	│  │ └───────────┘ │ │ └───────────┘ │  │ └───────────┘ │  │                   
-	│  └───────────────┘ └───────────────┘  └───────────────┘  │                   
-	└──────────────────────────────────────────────────────────┘                   
+	┌──────────────────────────────────────────────────────────┐
+	│                     Host OS (Linux)                      │
+	│                                                          │
+	│  ┌───────────────┐ ┌───────────────┐  ┌───────────────┐  │
+	│  │ Container OS  │ │ Container OS  │  │ Container OS  │  │
+	│  │   (Ubuntu)    │ │   (Ubuntu)    │  │   (Ubuntu)    │  │
+	│  │ ┌───────────┐ │ │ ┌───────────┐ │  │ ┌───────────┐ │  │
+	│  │ │ Couchbase │ │ │ │ Couchbase │ │  │ │ Couchbase │ │  │
+	│  │ │  Server   │ │ │ │  Server   │ │  │ │  Server   │ │  │
+	│  │ └───────────┘ │ │ └───────────┘ │  │ └───────────┘ │  │
+	│  └───────────────┘ └───────────────┘  └───────────────┘  │
+	└──────────────────────────────────────────────────────────┘
 
 -	Useful for testing out a multi-node cluster on your local workstation.
--	Not recommended for production use. (the norm for a production cluster is that each node runs on dedicated hardware)
+-	Not recommended for production use. (The norm for a production cluster is that each node runs on dedicated hardware.)
 -	Allows you to experiment with cluster rebalancing and failover.
 -	The networking is effectively the same as described the Software-Defined Network section: each container is given an internal IP address by Docker, and each of these IPs is visible to all other containers running on the same host
 -	Internal IPs should be used in the Admin Console when adding new nodes to the cluster
@@ -185,7 +185,7 @@ $ docker run -d -v ~/couchbase/node3:/opt/couchbase/var -p 8091:8091 couchbase
 	│   Host OS (Linux)     │  │   Host OS (Linux)     │  │   Host OS (Linux)     │
 	│  ┌─────────────────┐  │  │  ┌─────────────────┐  │  │  ┌─────────────────┐  │
 	│  │  Container OS   │  │  │  │  Container OS   │  │  │  │  Container OS   │  │
-	│  │    (CentOS)     │  │  │  │    (CentOS)     │  │  │  │    (CentOS)     │  │
+	│  │    (Ubuntu)     │  │  │  │    (Ubuntu)     │  │  │  │    (Ubuntu)     │  │
 	│  │  ┌───────────┐  │  │  │  │  ┌───────────┐  │  │  │  │  ┌───────────┐  │  │
 	│  │  │ Couchbase │  │  │  │  │  │ Couchbase │  │  │  │  │  │ Couchbase │  │  │
 	│  │  │  Server   │  │  │  │  │  │  Server   │  │  │  │  │  │  Server   │  │  │
@@ -222,7 +222,7 @@ To configure Couchbase Server:
 	│            Host OS (Linux)              │  │            Host OS (Linux)              │
 	│ ┌─────────────────┐ ┌─────────────────┐ │  │ ┌─────────────────┐ ┌─────────────────┐ │
 	│ │  Container OS   │ │  Container OS   │ │  │ │  Container OS   │ │  Container OS   │ │
-	│ │    (CentOS)     │ │    (CentOS)     │ │  │ │    (CentOS)     │ │    (CentOS)     │ │
+	│ │    (Ubuntu)     │ │    (Ubuntu)     │ │  │ │    (Ubuntu)     │ │    (Ubuntu)     │ │
 	│ │  ┌───────────┐  │ │  ┌───────────┐  │ │  │ │  ┌───────────┐  │ │  ┌───────────┐  │ │
 	│ │  │ Couchbase │  │ │  │ Couchbase │  │ │  │ │  │ Couchbase │  │ │  │ Couchbase │  │ │
 	│ │  │  Server   │  │ │  │  Server   │  │ │  │ │  │  Server   │  │ │  │  Server   │  │ │
