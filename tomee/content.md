@@ -1,4 +1,4 @@
-#What is TomEE?
+# What is TomEE?
 
 Apache TomEE, pronounced "Tommy", is an all-Apache Java EE Web Profile certified stack where Apache Tomcat is top dog. Apache TomEE is assembled from a vanilla Apache Tomcat zip file. We start with Apache Tomcat, add our jars and zip up the rest. The result is Tomcat with added EE features - TomEE.
 
@@ -46,16 +46,3 @@ You can also use this image as base image for deploying your war application. To
 
 	ADD <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
 
-# Issues & Contributors
-
-Any issue can be notified to Tomitribe team by using next link https://github.com/tomitribe/docker-tomee/issues
-
-Contributions are more than welcome and can be done by forking https://github.com/tomitribe/docker-tomee repository and sending a PR.
-
-Note that project contains three scripts which can be used to generate a *tomee* version.
-
-The most important file is one called `Dockerfile.template` which is used as a based `Dockerfile`.
-
-# License
-
-Apache TomEE comes with an APL v2 version (http://www.apache.org/licenses/LICENSE-2.0) and all files provided to produce the Docker images are APL v2 as well.
