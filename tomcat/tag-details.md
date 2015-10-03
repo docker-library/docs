@@ -20,15 +20,15 @@
 -	[`tomcat:7.0.64-jre8`](#tomcat7064-jre8)
 -	[`tomcat:7.0-jre8`](#tomcat70-jre8)
 -	[`tomcat:7-jre8`](#tomcat7-jre8)
--	[`tomcat:8.0.26-jre7`](#tomcat8026-jre7)
+-	[`tomcat:8.0.27-jre7`](#tomcat8027-jre7)
 -	[`tomcat:8.0-jre7`](#tomcat80-jre7)
 -	[`tomcat:8-jre7`](#tomcat8-jre7)
 -	[`tomcat:jre7`](#tomcatjre7)
--	[`tomcat:8.0.26`](#tomcat8026)
+-	[`tomcat:8.0.27`](#tomcat8027)
 -	[`tomcat:8.0`](#tomcat80)
 -	[`tomcat:8`](#tomcat8)
 -	[`tomcat:latest`](#tomcatlatest)
--	[`tomcat:8.0.26-jre8`](#tomcat8026-jre8)
+-	[`tomcat:8.0.27-jre8`](#tomcat8027-jre8)
 -	[`tomcat:8.0-jre8`](#tomcat80-jre8)
 -	[`tomcat:8-jre8`](#tomcat8-jre8)
 -	[`tomcat:jre8`](#tomcatjre8)
@@ -36,11 +36,11 @@
 ## `tomcat:6.0.44-jre7`
 
 ```console
-$ docker pull library/tomcat@sha256:c797a5766a128758bf718446bd88854f5863325716138cfbe882e4e1ee1e46e3
+$ docker pull library/tomcat@sha256:5612ce9b44b767b2ec2b44de7448b03a96653f766bf7d7405a957649a02e56b0
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621081 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621073 bytes)
 
 ### Layers (19)
 
@@ -85,9 +85,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -336,11 +336,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:6.0-jre7`
 
 ```console
-$ docker pull library/tomcat@sha256:ec95225e4da3539e709a0b90f1bf347b2b49315ddae7703532779392429a81e1
+$ docker pull library/tomcat@sha256:ce6f3c4851bb26ae5446c976c0149bb839c9141180a1d0af47b4cc8798d478d5
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621081 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621073 bytes)
 
 ### Layers (19)
 
@@ -385,9 +385,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -640,7 +640,7 @@ $ docker pull library/tomcat@sha256:a3b0e7323e06c62e1cec6d597306becd14dd79707444
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621081 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621073 bytes)
 
 ### Layers (19)
 
@@ -685,9 +685,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -940,7 +940,7 @@ $ docker pull library/tomcat@sha256:cf934db3ba9a709a328fe22a8054b0571b06fa2014cb
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621081 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621073 bytes)
 
 ### Layers (19)
 
@@ -985,9 +985,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1240,7 +1240,7 @@ $ docker pull library/tomcat@sha256:bff34569d31e29288b16816e1220038f0e1bd7fc32a5
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621081 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621073 bytes)
 
 ### Layers (19)
 
@@ -1285,9 +1285,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1540,7 +1540,7 @@ $ docker pull library/tomcat@sha256:2dc420345f0457cd5a2c1e43800ffa9c0a415d74a862
 ```
 
 -	Total Virtual Size: 345.8 MB (345766050 bytes)
--	Total v2 Content-Length: 155.6 MB (155621081 bytes)
+-	Total v2 Content-Length: 155.6 MB (155621073 bytes)
 
 ### Layers (19)
 
@@ -1585,9 +1585,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -1836,11 +1836,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:6.0.44-jre8`
 
 ```console
-$ docker pull library/tomcat@sha256:92ebf63f0b8b9ec31e9d159abe5e843a46ad02e1471230e4f3966afa8fa1975e
+$ docker pull library/tomcat@sha256:42a10a1fc93c682b772497480097c7fdaa35d979659ff47274e29eb8d7d280e8
 ```
 
 -	Total Virtual Size: 499.0 MB (498958274 bytes)
--	Total v2 Content-Length: 201.4 MB (201427503 bytes)
+-	Total v2 Content-Length: 201.4 MB (201427495 bytes)
 
 ### Layers (23)
 
@@ -1885,9 +1885,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2201,7 +2201,7 @@ $ docker pull library/tomcat@sha256:f6c4177091a78e49f3239fc266747d1f7d9eddbd5d82
 ```
 
 -	Total Virtual Size: 499.0 MB (498958274 bytes)
--	Total v2 Content-Length: 201.4 MB (201427503 bytes)
+-	Total v2 Content-Length: 201.4 MB (201427495 bytes)
 
 ### Layers (23)
 
@@ -2246,9 +2246,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2562,7 +2562,7 @@ $ docker pull library/tomcat@sha256:f8a7a2293d6fbe310a43378af044e61cec6790a35a64
 ```
 
 -	Total Virtual Size: 499.0 MB (498958274 bytes)
--	Total v2 Content-Length: 201.4 MB (201427503 bytes)
+-	Total v2 Content-Length: 201.4 MB (201427495 bytes)
 
 ### Layers (23)
 
@@ -2607,9 +2607,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -2919,11 +2919,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7.0.64-jre7`
 
 ```console
-$ docker pull library/tomcat@sha256:0b1e63d9f6603e5bebc51cbf5ef1bc274175868be595721dfbd2c458bfe2c6f6
+$ docker pull library/tomcat@sha256:0a178aeab9fe8c52c6bca5e758145d8854fcf2dcef30477887e1a54ecfd402ba
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260268 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260260 bytes)
 
 ### Layers (19)
 
@@ -2968,9 +2968,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3222,7 +3222,7 @@ $ docker pull library/tomcat@sha256:2d6a39f02750ae11c48900459590a81aa70956ccfdde
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260268 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260260 bytes)
 
 ### Layers (19)
 
@@ -3267,9 +3267,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3521,7 +3521,7 @@ $ docker pull library/tomcat@sha256:1e0b3b7ff63fa78523c618c1c9a568c8c05c21c73ddf
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260268 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260260 bytes)
 
 ### Layers (19)
 
@@ -3566,9 +3566,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -3820,7 +3820,7 @@ $ docker pull library/tomcat@sha256:5eeea1b76fc2e52f33e5b7d658ba3775c67078910a29
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260268 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260260 bytes)
 
 ### Layers (19)
 
@@ -3865,9 +3865,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -4119,7 +4119,7 @@ $ docker pull library/tomcat@sha256:e9c2e6570a2818bb5c5ba76f33cb07bcc287b721900d
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260268 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260260 bytes)
 
 ### Layers (19)
 
@@ -4164,9 +4164,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -4418,7 +4418,7 @@ $ docker pull library/tomcat@sha256:b545868782d6cbae48a1d585cd3bc9ed1de44993c2c8
 ```
 
 -	Total Virtual Size: 348.2 MB (348219645 bytes)
--	Total v2 Content-Length: 157.3 MB (157260268 bytes)
+-	Total v2 Content-Length: 157.3 MB (157260260 bytes)
 
 ### Layers (19)
 
@@ -4463,9 +4463,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -4713,11 +4713,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7.0.64-jre8`
 
 ```console
-$ docker pull library/tomcat@sha256:959f280e596bd3b562853c95e85671abe5ebbb87df4fcc5e2531f7a09c53334b
+$ docker pull library/tomcat@sha256:a87b9162d71c9b4854b2f2c6490024aa89d60554478e391c69a45980fdf6e27e
 ```
 
 -	Total Virtual Size: 501.4 MB (501411869 bytes)
--	Total v2 Content-Length: 203.1 MB (203066661 bytes)
+-	Total v2 Content-Length: 203.1 MB (203066653 bytes)
 
 ### Layers (23)
 
@@ -4762,9 +4762,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -5077,7 +5077,7 @@ $ docker pull library/tomcat@sha256:19af883ebfd8769c7a8abf98e7ef40eb9c94e47b4667
 ```
 
 -	Total Virtual Size: 501.4 MB (501411869 bytes)
--	Total v2 Content-Length: 203.1 MB (203066661 bytes)
+-	Total v2 Content-Length: 203.1 MB (203066653 bytes)
 
 ### Layers (23)
 
@@ -5122,9 +5122,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -5437,7 +5437,7 @@ $ docker pull library/tomcat@sha256:5d94c6ada060e21a6d360de0b7f4ef50b05fa361eb72
 ```
 
 -	Total Virtual Size: 501.4 MB (501411869 bytes)
--	Total v2 Content-Length: 203.1 MB (203066661 bytes)
+-	Total v2 Content-Length: 203.1 MB (203066653 bytes)
 
 ### Layers (23)
 
@@ -5482,9 +5482,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -5790,14 +5790,14 @@ CMD ["catalina.sh" "run"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `tomcat:8.0.26-jre7`
+## `tomcat:8.0.27-jre7`
 
 ```console
-$ docker pull library/tomcat@sha256:b9d21cb5db6ea3c9a3e61ae054e74c253e66b915db82438e4af5a22cb60da6cf
+$ docker pull library/tomcat@sha256:b45c7d542adb43f07e9a3b7310f935c5436bac4152e25fce49bd622dad4ca3ec
 ```
 
--	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517612 bytes)
+-	Total Virtual Size: 347.7 MB (347734123 bytes)
+-	Total v2 Content-Length: 157.5 MB (157526833 bytes)
 
 ### Layers (19)
 
@@ -5842,9 +5842,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -6012,35 +6012,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
+#### `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
 -	Parent Layer: `51a4b27f3bce0d75eae62be0fdcc4b0324a78eb330ebd6a30ef86c8f35b216c8`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
+#### `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
--	Parent Layer: `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
+-	Parent Layer: `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
+#### `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
 
 ```dockerfile
 RUN set -x \
@@ -6052,37 +6052,37 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:28 GMT
--	Parent Layer: `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:f69a603d790f38d10fd98e01945b44b2bb24d0810bc3b3f8c8d3221606e1ec69`
--	v2 Content-Length: 9.1 MB (9118036 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:22:40 GMT
+-	Created: Fri, 02 Oct 2015 21:30:57 GMT
+-	Parent Layer: `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:b91995efc59b2c71a11d9010fa04004c020f95b7f58368a270ca51300456321f`
+-	v2 Content-Length: 9.1 MB (9127265 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:31:21 GMT
 
-#### `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
+#### `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a27ef609a8c3e65880721cf6ff13738df477d9ebdc7b99a39386580ddcf16659`
+#### `58bae427662fe37ed0898de0b936bd778774705203207fa27eb4606563725942`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -6091,11 +6091,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0-jre7`
 
 ```console
-$ docker pull library/tomcat@sha256:66bfd400f0dd6c837547149809bfe97533dc3c838e5b1f1cf8ef9fdfa7db4133
+$ docker pull library/tomcat@sha256:a27848b57a8a9b819803b027acac4666c56648d0366791e49b2b3f93e7fbd99c
 ```
 
--	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517612 bytes)
+-	Total Virtual Size: 347.7 MB (347734123 bytes)
+-	Total v2 Content-Length: 157.5 MB (157526833 bytes)
 
 ### Layers (19)
 
@@ -6140,9 +6140,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -6310,35 +6310,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
+#### `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
 -	Parent Layer: `51a4b27f3bce0d75eae62be0fdcc4b0324a78eb330ebd6a30ef86c8f35b216c8`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
+#### `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
--	Parent Layer: `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
+-	Parent Layer: `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
+#### `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
 
 ```dockerfile
 RUN set -x \
@@ -6350,37 +6350,37 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:28 GMT
--	Parent Layer: `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:f69a603d790f38d10fd98e01945b44b2bb24d0810bc3b3f8c8d3221606e1ec69`
--	v2 Content-Length: 9.1 MB (9118036 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:22:40 GMT
+-	Created: Fri, 02 Oct 2015 21:30:57 GMT
+-	Parent Layer: `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:b91995efc59b2c71a11d9010fa04004c020f95b7f58368a270ca51300456321f`
+-	v2 Content-Length: 9.1 MB (9127265 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:31:21 GMT
 
-#### `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
+#### `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a27ef609a8c3e65880721cf6ff13738df477d9ebdc7b99a39386580ddcf16659`
+#### `58bae427662fe37ed0898de0b936bd778774705203207fa27eb4606563725942`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -6389,11 +6389,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8-jre7`
 
 ```console
-$ docker pull library/tomcat@sha256:c7b0a87a2d9787f4bfa95a8b217322f69dad50d89f9c98c7e7b7d3f7353a9c35
+$ docker pull library/tomcat@sha256:e30ce3f57fab86b39b7eaf19e77de5bca95d87cd986bcba25fd72fcf8a5121a3
 ```
 
--	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517612 bytes)
+-	Total Virtual Size: 347.7 MB (347734123 bytes)
+-	Total v2 Content-Length: 157.5 MB (157526833 bytes)
 
 ### Layers (19)
 
@@ -6438,9 +6438,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -6608,35 +6608,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
+#### `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
 -	Parent Layer: `51a4b27f3bce0d75eae62be0fdcc4b0324a78eb330ebd6a30ef86c8f35b216c8`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
+#### `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
--	Parent Layer: `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
+-	Parent Layer: `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
+#### `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
 
 ```dockerfile
 RUN set -x \
@@ -6648,37 +6648,37 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:28 GMT
--	Parent Layer: `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:f69a603d790f38d10fd98e01945b44b2bb24d0810bc3b3f8c8d3221606e1ec69`
--	v2 Content-Length: 9.1 MB (9118036 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:22:40 GMT
+-	Created: Fri, 02 Oct 2015 21:30:57 GMT
+-	Parent Layer: `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:b91995efc59b2c71a11d9010fa04004c020f95b7f58368a270ca51300456321f`
+-	v2 Content-Length: 9.1 MB (9127265 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:31:21 GMT
 
-#### `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
+#### `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a27ef609a8c3e65880721cf6ff13738df477d9ebdc7b99a39386580ddcf16659`
+#### `58bae427662fe37ed0898de0b936bd778774705203207fa27eb4606563725942`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -6687,11 +6687,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:jre7`
 
 ```console
-$ docker pull library/tomcat@sha256:25c44961c8ed94e46f5e4ccdfc1897290120183e0b597e0bad7400b2fcb2f90a
+$ docker pull library/tomcat@sha256:7a4c6d22356364c58451ba5612bf1309e1a1c5ee2a864d89f1f00fca1bacc8a9
 ```
 
--	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517612 bytes)
+-	Total Virtual Size: 347.7 MB (347734123 bytes)
+-	Total v2 Content-Length: 157.5 MB (157526833 bytes)
 
 ### Layers (19)
 
@@ -6736,9 +6736,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -6906,35 +6906,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
+#### `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
 -	Parent Layer: `51a4b27f3bce0d75eae62be0fdcc4b0324a78eb330ebd6a30ef86c8f35b216c8`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
+#### `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
--	Parent Layer: `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
+-	Parent Layer: `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
+#### `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
 
 ```dockerfile
 RUN set -x \
@@ -6946,50 +6946,50 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:28 GMT
--	Parent Layer: `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:f69a603d790f38d10fd98e01945b44b2bb24d0810bc3b3f8c8d3221606e1ec69`
--	v2 Content-Length: 9.1 MB (9118036 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:22:40 GMT
+-	Created: Fri, 02 Oct 2015 21:30:57 GMT
+-	Parent Layer: `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:b91995efc59b2c71a11d9010fa04004c020f95b7f58368a270ca51300456321f`
+-	v2 Content-Length: 9.1 MB (9127265 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:31:21 GMT
 
-#### `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
+#### `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a27ef609a8c3e65880721cf6ff13738df477d9ebdc7b99a39386580ddcf16659`
+#### `58bae427662fe37ed0898de0b936bd778774705203207fa27eb4606563725942`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `tomcat:8.0.26`
+## `tomcat:8.0.27`
 
 ```console
-$ docker pull library/tomcat@sha256:f9032a02cf130528cef2e67c077b42041ba51a0da5c89137ba7072ced472c80f
+$ docker pull library/tomcat@sha256:d63cab522cc1150c42cc524e61de693ad1b8aa91fd840111a181590da0e3bad3
 ```
 
--	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517612 bytes)
+-	Total Virtual Size: 347.7 MB (347734123 bytes)
+-	Total v2 Content-Length: 157.5 MB (157526833 bytes)
 
 ### Layers (19)
 
@@ -7034,9 +7034,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -7204,35 +7204,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
+#### `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
 -	Parent Layer: `51a4b27f3bce0d75eae62be0fdcc4b0324a78eb330ebd6a30ef86c8f35b216c8`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
+#### `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
--	Parent Layer: `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
+-	Parent Layer: `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
+#### `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
 
 ```dockerfile
 RUN set -x \
@@ -7244,37 +7244,37 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:28 GMT
--	Parent Layer: `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:f69a603d790f38d10fd98e01945b44b2bb24d0810bc3b3f8c8d3221606e1ec69`
--	v2 Content-Length: 9.1 MB (9118036 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:22:40 GMT
+-	Created: Fri, 02 Oct 2015 21:30:57 GMT
+-	Parent Layer: `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:b91995efc59b2c71a11d9010fa04004c020f95b7f58368a270ca51300456321f`
+-	v2 Content-Length: 9.1 MB (9127265 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:31:21 GMT
 
-#### `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
+#### `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a27ef609a8c3e65880721cf6ff13738df477d9ebdc7b99a39386580ddcf16659`
+#### `58bae427662fe37ed0898de0b936bd778774705203207fa27eb4606563725942`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -7283,11 +7283,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0`
 
 ```console
-$ docker pull library/tomcat@sha256:d4389d84b45589922f840abb5bca0a7b1682fe9ed3f995efd621389e2a98a6da
+$ docker pull library/tomcat@sha256:4dfdc6c892376a491d905b62bca91ba13ca9cae96fbd613f55fa8dc0de89f997
 ```
 
--	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517612 bytes)
+-	Total Virtual Size: 347.7 MB (347734123 bytes)
+-	Total v2 Content-Length: 157.5 MB (157526833 bytes)
 
 ### Layers (19)
 
@@ -7332,9 +7332,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -7502,35 +7502,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
+#### `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
 -	Parent Layer: `51a4b27f3bce0d75eae62be0fdcc4b0324a78eb330ebd6a30ef86c8f35b216c8`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
+#### `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
--	Parent Layer: `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
+-	Parent Layer: `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
+#### `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
 
 ```dockerfile
 RUN set -x \
@@ -7542,37 +7542,37 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:28 GMT
--	Parent Layer: `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:f69a603d790f38d10fd98e01945b44b2bb24d0810bc3b3f8c8d3221606e1ec69`
--	v2 Content-Length: 9.1 MB (9118036 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:22:40 GMT
+-	Created: Fri, 02 Oct 2015 21:30:57 GMT
+-	Parent Layer: `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:b91995efc59b2c71a11d9010fa04004c020f95b7f58368a270ca51300456321f`
+-	v2 Content-Length: 9.1 MB (9127265 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:31:21 GMT
 
-#### `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
+#### `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a27ef609a8c3e65880721cf6ff13738df477d9ebdc7b99a39386580ddcf16659`
+#### `58bae427662fe37ed0898de0b936bd778774705203207fa27eb4606563725942`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -7581,11 +7581,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8`
 
 ```console
-$ docker pull library/tomcat@sha256:8a79c8f3a9751ece0e76cc4f3bf42b862349b9bb687f0463af8f2da56d8b49ce
+$ docker pull library/tomcat@sha256:4279d95d9c92ea0574d42974297b7df6f8b8314e40703c961323bc9cae3f21a9
 ```
 
--	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517612 bytes)
+-	Total Virtual Size: 347.7 MB (347734123 bytes)
+-	Total v2 Content-Length: 157.5 MB (157526833 bytes)
 
 ### Layers (19)
 
@@ -7630,9 +7630,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -7800,35 +7800,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
+#### `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
 -	Parent Layer: `51a4b27f3bce0d75eae62be0fdcc4b0324a78eb330ebd6a30ef86c8f35b216c8`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
+#### `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
--	Parent Layer: `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
+-	Parent Layer: `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
+#### `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
 
 ```dockerfile
 RUN set -x \
@@ -7840,37 +7840,37 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:28 GMT
--	Parent Layer: `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:f69a603d790f38d10fd98e01945b44b2bb24d0810bc3b3f8c8d3221606e1ec69`
--	v2 Content-Length: 9.1 MB (9118036 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:22:40 GMT
+-	Created: Fri, 02 Oct 2015 21:30:57 GMT
+-	Parent Layer: `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:b91995efc59b2c71a11d9010fa04004c020f95b7f58368a270ca51300456321f`
+-	v2 Content-Length: 9.1 MB (9127265 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:31:21 GMT
 
-#### `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
+#### `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a27ef609a8c3e65880721cf6ff13738df477d9ebdc7b99a39386580ddcf16659`
+#### `58bae427662fe37ed0898de0b936bd778774705203207fa27eb4606563725942`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -7879,11 +7879,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:latest`
 
 ```console
-$ docker pull library/tomcat@sha256:4122e91807764b8f4913748180dd78a5f3979387916f18bc9d3068f353ca45b4
+$ docker pull library/tomcat@sha256:613255efa0ceafee0adb5419750e10037dca1b120252d11e68954d4c246e7fd7
 ```
 
--	Total Virtual Size: 347.7 MB (347710687 bytes)
--	Total v2 Content-Length: 157.5 MB (157517612 bytes)
+-	Total Virtual Size: 347.7 MB (347734123 bytes)
+-	Total v2 Content-Length: 157.5 MB (157526833 bytes)
 
 ### Layers (19)
 
@@ -7928,9 +7928,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -8098,35 +8098,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
+#### `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
 -	Parent Layer: `51a4b27f3bce0d75eae62be0fdcc4b0324a78eb330ebd6a30ef86c8f35b216c8`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
+#### `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:22 GMT
--	Parent Layer: `9afdea21e1829a7568509f3719aa0a226e337155d360b91ded3e46cf54cbdceb`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:52 GMT
+-	Parent Layer: `93e5e6c3cce711fac517a6a790ce216388a4861351f73b3dc5e5d0b4f91a6745`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
+#### `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
 
 ```dockerfile
 RUN set -x \
@@ -8138,50 +8138,50 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:28 GMT
--	Parent Layer: `c31b4fa402d4812452b4375c3083e8c8c0fed44ce454f616fe7e016abdb0f178`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:f69a603d790f38d10fd98e01945b44b2bb24d0810bc3b3f8c8d3221606e1ec69`
--	v2 Content-Length: 9.1 MB (9118036 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:22:40 GMT
+-	Created: Fri, 02 Oct 2015 21:30:57 GMT
+-	Parent Layer: `2f92ebb0016ecca78ce9f21ad21d70f639d13b41e58d07a309fddb9d8ccdf7b7`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:b91995efc59b2c71a11d9010fa04004c020f95b7f58368a270ca51300456321f`
+-	v2 Content-Length: 9.1 MB (9127265 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:31:21 GMT
 
-#### `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
+#### `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `5a00f89f9b4065b9b848afaec7bb2066ca220018c54a5ee8919eb3126677632f`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `af2a60b08f57e063bb53ffeb6e685ee349ae1cf698d9c39da0e2b1d9a45679d7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a27ef609a8c3e65880721cf6ff13738df477d9ebdc7b99a39386580ddcf16659`
+#### `58bae427662fe37ed0898de0b936bd778774705203207fa27eb4606563725942`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:15:29 GMT
--	Parent Layer: `d71bd3a78d4130a70fbceec83fa827785228f4a110bc8a7f647b5baf641abe2e`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:30:58 GMT
+-	Parent Layer: `233ad64ea253c3637b195df48ded8558b54d105a95ad055a1dad26c6641a5e4b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `tomcat:8.0.26-jre8`
+## `tomcat:8.0.27-jre8`
 
 ```console
-$ docker pull library/tomcat@sha256:69f79fc194a761fe55d459cbb88f2b6013f75de84a8d0d7f89a7c3d9b0420e0c
+$ docker pull library/tomcat@sha256:cc83b4e9e32d778b1ca9d81a97407ebfbda4f33bc79f6e3f9ea0e1be72529da3
 ```
 
--	Total Virtual Size: 500.9 MB (500902911 bytes)
--	Total v2 Content-Length: 203.3 MB (203323994 bytes)
+-	Total Virtual Size: 500.9 MB (500926347 bytes)
+-	Total v2 Content-Length: 203.3 MB (203333207 bytes)
 
 ### Layers (23)
 
@@ -8226,9 +8226,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -8457,35 +8457,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8990fc72690566eda84565c9564c23e7947185781bafcf0faa133303bc0aa447`
+#### `47a509e540c71c2db4ea15bd9f8190d2f67e6f0c8b504b5e402273eff2265ab9`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:05 GMT
+-	Created: Fri, 02 Oct 2015 21:34:08 GMT
 -	Parent Layer: `98824fa79c32582e46c03bd4374eb42318d2d0c299a1c97145244f1b9c84abcb`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8f41d3dc482ec54e8166e2d72445319c64ad87eb791201440e980e3b0a122549`
+#### `dfa4f42adeb9e0962312f7c063aae1a6ca1df05da5f0bb2fc388a80ed4f95703`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:06 GMT
--	Parent Layer: `8990fc72690566eda84565c9564c23e7947185781bafcf0faa133303bc0aa447`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:09 GMT
+-	Parent Layer: `47a509e540c71c2db4ea15bd9f8190d2f67e6f0c8b504b5e402273eff2265ab9`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8c53d499c76f333d8b0117fa46cfb214d8ed58970b38803373bbbd7e93cf2fe`
+#### `0c737d599a459ad69692e57117620ff5edceb3d5a48a271c9cf30170eafb8908`
 
 ```dockerfile
 RUN set -x \
@@ -8497,37 +8497,37 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:13 GMT
--	Parent Layer: `8f41d3dc482ec54e8166e2d72445319c64ad87eb791201440e980e3b0a122549`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:8f3dd92d6c09bee89badbe435f4cf285e03d89cb06ae5e420cb3c1af7fd9fe92`
--	v2 Content-Length: 9.1 MB (9118013 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:27:27 GMT
+-	Created: Fri, 02 Oct 2015 21:34:14 GMT
+-	Parent Layer: `dfa4f42adeb9e0962312f7c063aae1a6ca1df05da5f0bb2fc388a80ed4f95703`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:430c8ff6715346090be7e9ef004096e393e4c0690c01dfd5de721071dbce385a`
+-	v2 Content-Length: 9.1 MB (9127234 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:34:22 GMT
 
-#### `fbf7411416e9376adad831847812cf071b806bbe20d8d2d3b161c1b5e8b5d38a`
+#### `720d567feed4f83f990c3f3af2c97b3303ba3c20bd6fc822a16725cd85fb8fcb`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:14 GMT
--	Parent Layer: `f8c53d499c76f333d8b0117fa46cfb214d8ed58970b38803373bbbd7e93cf2fe`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:15 GMT
+-	Parent Layer: `0c737d599a459ad69692e57117620ff5edceb3d5a48a271c9cf30170eafb8908`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ee6943c769bd9ab2d1c227b363c87c843ebf3955ce758930d610bd7e0a0169b5`
+#### `345f53856bcfbe2903628c448401dd522cabf7fe32c28bf9846f7b104b44a1d5`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:14 GMT
--	Parent Layer: `fbf7411416e9376adad831847812cf071b806bbe20d8d2d3b161c1b5e8b5d38a`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:15 GMT
+-	Parent Layer: `720d567feed4f83f990c3f3af2c97b3303ba3c20bd6fc822a16725cd85fb8fcb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -8536,11 +8536,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0-jre8`
 
 ```console
-$ docker pull library/tomcat@sha256:62cca45cd5fa9e4d2df25cd50c3ba982760bca69bad67bdcfd25c0e7749e47b5
+$ docker pull library/tomcat@sha256:77117d571db76ed9e7cc0b1daa949a4e1f152af85f516c1e0e943f497d847036
 ```
 
--	Total Virtual Size: 500.9 MB (500902911 bytes)
--	Total v2 Content-Length: 203.3 MB (203323994 bytes)
+-	Total Virtual Size: 500.9 MB (500926347 bytes)
+-	Total v2 Content-Length: 203.3 MB (203333207 bytes)
 
 ### Layers (23)
 
@@ -8585,9 +8585,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -8816,35 +8816,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8990fc72690566eda84565c9564c23e7947185781bafcf0faa133303bc0aa447`
+#### `47a509e540c71c2db4ea15bd9f8190d2f67e6f0c8b504b5e402273eff2265ab9`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:05 GMT
+-	Created: Fri, 02 Oct 2015 21:34:08 GMT
 -	Parent Layer: `98824fa79c32582e46c03bd4374eb42318d2d0c299a1c97145244f1b9c84abcb`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8f41d3dc482ec54e8166e2d72445319c64ad87eb791201440e980e3b0a122549`
+#### `dfa4f42adeb9e0962312f7c063aae1a6ca1df05da5f0bb2fc388a80ed4f95703`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:06 GMT
--	Parent Layer: `8990fc72690566eda84565c9564c23e7947185781bafcf0faa133303bc0aa447`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:09 GMT
+-	Parent Layer: `47a509e540c71c2db4ea15bd9f8190d2f67e6f0c8b504b5e402273eff2265ab9`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8c53d499c76f333d8b0117fa46cfb214d8ed58970b38803373bbbd7e93cf2fe`
+#### `0c737d599a459ad69692e57117620ff5edceb3d5a48a271c9cf30170eafb8908`
 
 ```dockerfile
 RUN set -x \
@@ -8856,37 +8856,37 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:13 GMT
--	Parent Layer: `8f41d3dc482ec54e8166e2d72445319c64ad87eb791201440e980e3b0a122549`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:8f3dd92d6c09bee89badbe435f4cf285e03d89cb06ae5e420cb3c1af7fd9fe92`
--	v2 Content-Length: 9.1 MB (9118013 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:27:27 GMT
+-	Created: Fri, 02 Oct 2015 21:34:14 GMT
+-	Parent Layer: `dfa4f42adeb9e0962312f7c063aae1a6ca1df05da5f0bb2fc388a80ed4f95703`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:430c8ff6715346090be7e9ef004096e393e4c0690c01dfd5de721071dbce385a`
+-	v2 Content-Length: 9.1 MB (9127234 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:34:22 GMT
 
-#### `fbf7411416e9376adad831847812cf071b806bbe20d8d2d3b161c1b5e8b5d38a`
+#### `720d567feed4f83f990c3f3af2c97b3303ba3c20bd6fc822a16725cd85fb8fcb`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:14 GMT
--	Parent Layer: `f8c53d499c76f333d8b0117fa46cfb214d8ed58970b38803373bbbd7e93cf2fe`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:15 GMT
+-	Parent Layer: `0c737d599a459ad69692e57117620ff5edceb3d5a48a271c9cf30170eafb8908`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ee6943c769bd9ab2d1c227b363c87c843ebf3955ce758930d610bd7e0a0169b5`
+#### `345f53856bcfbe2903628c448401dd522cabf7fe32c28bf9846f7b104b44a1d5`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:14 GMT
--	Parent Layer: `fbf7411416e9376adad831847812cf071b806bbe20d8d2d3b161c1b5e8b5d38a`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:15 GMT
+-	Parent Layer: `720d567feed4f83f990c3f3af2c97b3303ba3c20bd6fc822a16725cd85fb8fcb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -8895,11 +8895,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8-jre8`
 
 ```console
-$ docker pull library/tomcat@sha256:43f52c5210212ee9c3a95b95a4918bf105c4fe4a374d7bf4f8cb1177f1770d53
+$ docker pull library/tomcat@sha256:0b33b6518ab7e62f6ecc1ba42fc6b174ff25fef6f7a3a0a6fe8785fc3381b7e6
 ```
 
--	Total Virtual Size: 500.9 MB (500902911 bytes)
--	Total v2 Content-Length: 203.3 MB (203323994 bytes)
+-	Total Virtual Size: 500.9 MB (500926347 bytes)
+-	Total v2 Content-Length: 203.3 MB (203333207 bytes)
 
 ### Layers (23)
 
@@ -8944,9 +8944,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -9175,35 +9175,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8990fc72690566eda84565c9564c23e7947185781bafcf0faa133303bc0aa447`
+#### `47a509e540c71c2db4ea15bd9f8190d2f67e6f0c8b504b5e402273eff2265ab9`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:05 GMT
+-	Created: Fri, 02 Oct 2015 21:34:08 GMT
 -	Parent Layer: `98824fa79c32582e46c03bd4374eb42318d2d0c299a1c97145244f1b9c84abcb`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8f41d3dc482ec54e8166e2d72445319c64ad87eb791201440e980e3b0a122549`
+#### `dfa4f42adeb9e0962312f7c063aae1a6ca1df05da5f0bb2fc388a80ed4f95703`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:06 GMT
--	Parent Layer: `8990fc72690566eda84565c9564c23e7947185781bafcf0faa133303bc0aa447`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:09 GMT
+-	Parent Layer: `47a509e540c71c2db4ea15bd9f8190d2f67e6f0c8b504b5e402273eff2265ab9`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8c53d499c76f333d8b0117fa46cfb214d8ed58970b38803373bbbd7e93cf2fe`
+#### `0c737d599a459ad69692e57117620ff5edceb3d5a48a271c9cf30170eafb8908`
 
 ```dockerfile
 RUN set -x \
@@ -9215,37 +9215,37 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:13 GMT
--	Parent Layer: `8f41d3dc482ec54e8166e2d72445319c64ad87eb791201440e980e3b0a122549`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:8f3dd92d6c09bee89badbe435f4cf285e03d89cb06ae5e420cb3c1af7fd9fe92`
--	v2 Content-Length: 9.1 MB (9118013 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:27:27 GMT
+-	Created: Fri, 02 Oct 2015 21:34:14 GMT
+-	Parent Layer: `dfa4f42adeb9e0962312f7c063aae1a6ca1df05da5f0bb2fc388a80ed4f95703`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:430c8ff6715346090be7e9ef004096e393e4c0690c01dfd5de721071dbce385a`
+-	v2 Content-Length: 9.1 MB (9127234 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:34:22 GMT
 
-#### `fbf7411416e9376adad831847812cf071b806bbe20d8d2d3b161c1b5e8b5d38a`
+#### `720d567feed4f83f990c3f3af2c97b3303ba3c20bd6fc822a16725cd85fb8fcb`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:14 GMT
--	Parent Layer: `f8c53d499c76f333d8b0117fa46cfb214d8ed58970b38803373bbbd7e93cf2fe`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:15 GMT
+-	Parent Layer: `0c737d599a459ad69692e57117620ff5edceb3d5a48a271c9cf30170eafb8908`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ee6943c769bd9ab2d1c227b363c87c843ebf3955ce758930d610bd7e0a0169b5`
+#### `345f53856bcfbe2903628c448401dd522cabf7fe32c28bf9846f7b104b44a1d5`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:14 GMT
--	Parent Layer: `fbf7411416e9376adad831847812cf071b806bbe20d8d2d3b161c1b5e8b5d38a`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:15 GMT
+-	Parent Layer: `720d567feed4f83f990c3f3af2c97b3303ba3c20bd6fc822a16725cd85fb8fcb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -9254,11 +9254,11 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:jre8`
 
 ```console
-$ docker pull library/tomcat@sha256:84075b8677376f07c786edcdb4ffc1f0a5b0bdf9edc189c2b4038bf43d748418
+$ docker pull library/tomcat@sha256:be5994f358070bdf30feabcf38a6025780831f90a2943b8a2592e2fc2501af61
 ```
 
--	Total Virtual Size: 500.9 MB (500902911 bytes)
--	Total v2 Content-Length: 203.3 MB (203323994 bytes)
+-	Total Virtual Size: 500.9 MB (500926347 bytes)
+-	Total v2 Content-Length: 203.3 MB (203333207 bytes)
 
 ### Layers (23)
 
@@ -9303,9 +9303,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
 -	Docker Version: 1.7.1
 -	Virtual Size: 44.4 MB (44355688 bytes)
--	v2 Blob: `sha256:3c3c92680991bcdab58cc2bd1cff4f55f5d0c78fe7196bf4a88aa73117fc8a64`
--	v2 Content-Length: 18.5 MB (18538599 bytes)
--	v2 Last-Modified: Thu, 10 Sep 2015 23:36:09 GMT
+-	v2 Blob: `sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557`
+-	v2 Content-Length: 18.5 MB (18538591 bytes)
+-	v2 Last-Modified: Thu, 10 Sep 2015 23:36:30 GMT
 
 #### `3bdf542c6cd7fff7c6d760f79cb95469691d247c4521dadf5f93205b7e49ba80`
 
@@ -9534,35 +9534,35 @@ ENV TOMCAT_MAJOR=8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8990fc72690566eda84565c9564c23e7947185781bafcf0faa133303bc0aa447`
+#### `47a509e540c71c2db4ea15bd9f8190d2f67e6f0c8b504b5e402273eff2265ab9`
 
 ```dockerfile
-ENV TOMCAT_VERSION=8.0.26
+ENV TOMCAT_VERSION=8.0.27
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:05 GMT
+-	Created: Fri, 02 Oct 2015 21:34:08 GMT
 -	Parent Layer: `98824fa79c32582e46c03bd4374eb42318d2d0c299a1c97145244f1b9c84abcb`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8f41d3dc482ec54e8166e2d72445319c64ad87eb791201440e980e3b0a122549`
+#### `dfa4f42adeb9e0962312f7c063aae1a6ca1df05da5f0bb2fc388a80ed4f95703`
 
 ```dockerfile
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:06 GMT
--	Parent Layer: `8990fc72690566eda84565c9564c23e7947185781bafcf0faa133303bc0aa447`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:09 GMT
+-	Parent Layer: `47a509e540c71c2db4ea15bd9f8190d2f67e6f0c8b504b5e402273eff2265ab9`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8c53d499c76f333d8b0117fa46cfb214d8ed58970b38803373bbbd7e93cf2fe`
+#### `0c737d599a459ad69692e57117620ff5edceb3d5a48a271c9cf30170eafb8908`
 
 ```dockerfile
 RUN set -x \
@@ -9574,37 +9574,37 @@ RUN set -x \
 	&& rm tomcat.tar.gz*
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:13 GMT
--	Parent Layer: `8f41d3dc482ec54e8166e2d72445319c64ad87eb791201440e980e3b0a122549`
--	Docker Version: 1.7.1
--	Virtual Size: 12.9 MB (12881163 bytes)
--	v2 Blob: `sha256:8f3dd92d6c09bee89badbe435f4cf285e03d89cb06ae5e420cb3c1af7fd9fe92`
--	v2 Content-Length: 9.1 MB (9118013 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 15:27:27 GMT
+-	Created: Fri, 02 Oct 2015 21:34:14 GMT
+-	Parent Layer: `dfa4f42adeb9e0962312f7c063aae1a6ca1df05da5f0bb2fc388a80ed4f95703`
+-	Docker Version: 1.8.2
+-	Virtual Size: 12.9 MB (12904599 bytes)
+-	v2 Blob: `sha256:430c8ff6715346090be7e9ef004096e393e4c0690c01dfd5de721071dbce385a`
+-	v2 Content-Length: 9.1 MB (9127234 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 23:34:22 GMT
 
-#### `fbf7411416e9376adad831847812cf071b806bbe20d8d2d3b161c1b5e8b5d38a`
+#### `720d567feed4f83f990c3f3af2c97b3303ba3c20bd6fc822a16725cd85fb8fcb`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:14 GMT
--	Parent Layer: `f8c53d499c76f333d8b0117fa46cfb214d8ed58970b38803373bbbd7e93cf2fe`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:15 GMT
+-	Parent Layer: `0c737d599a459ad69692e57117620ff5edceb3d5a48a271c9cf30170eafb8908`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ee6943c769bd9ab2d1c227b363c87c843ebf3955ce758930d610bd7e0a0169b5`
+#### `345f53856bcfbe2903628c448401dd522cabf7fe32c28bf9846f7b104b44a1d5`
 
 ```dockerfile
 CMD ["catalina.sh" "run"]
 ```
 
--	Created: Thu, 10 Sep 2015 12:20:14 GMT
--	Parent Layer: `fbf7411416e9376adad831847812cf071b806bbe20d8d2d3b161c1b5e8b5d38a`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:34:15 GMT
+-	Parent Layer: `720d567feed4f83f990c3f3af2c97b3303ba3c20bd6fc822a16725cd85fb8fcb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B

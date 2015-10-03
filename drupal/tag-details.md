@@ -5,7 +5,7 @@
 -	[`drupal:7.39`](#drupal739)
 -	[`drupal:7`](#drupal7)
 -	[`drupal:latest`](#drupallatest)
--	[`drupal:8.0.0-beta15`](#drupal800-beta15)
+-	[`drupal:8.0.0-beta16`](#drupal800-beta16)
 -	[`drupal:8.0.0`](#drupal800)
 -	[`drupal:8.0`](#drupal80)
 -	[`drupal:8`](#drupal8)
@@ -13,11 +13,11 @@
 ## `drupal:7.39`
 
 ```console
-$ docker pull library/drupal@sha256:9920de767c404e1330e25f09e503ab382d587da96258d3d085da23487279c328
+$ docker pull library/drupal@sha256:9a816aeaa8e378fd65024a7f6c6743c06f27421c25705b5db5873684de1e6aa2
 ```
 
--	Total Virtual Size: 526.1 MB (526074520 bytes)
--	Total v2 Content-Length: 177.5 MB (177532933 bytes)
+-	Total Virtual Size: 526.6 MB (526574591 bytes)
+-	Total v2 Content-Length: 177.8 MB (177786950 bytes)
 
 ### Layers (28)
 
@@ -160,63 +160,63 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	v2 Content-Length: 3.4 KB (3366 bytes)
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:51:04 GMT
 
-#### `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
+#### `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
 
 ```dockerfile
-COPY file:82a8ff091c202126e8a44a36f7c441b6c534f02cf515bc0706db25501bace857 in /etc/apache2/apache2.conf
+COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
 -	Parent Layer: `9621eba31daf0fe52c2f9c66d5e88ddab9b89859d2f32908e2698c2b61289bbe`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.5 KB (1520 bytes)
--	v2 Blob: `sha256:7dc94c4112c586828689e398510577b36628631719e7e3c9b3e11280b0d58da5`
+-	v2 Blob: `sha256:6c6389db7d98791ff3c5c065b3d7578b831e8b2aaf5c0e6595e2d0ef2d1f2baf`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:59 GMT
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:43:03 GMT
 
-#### `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
+#### `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
 
 ```dockerfile
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
--	Parent Layer: `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
+-	Parent Layer: `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
+#### `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
 
 ```dockerfile
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:10 GMT
--	Parent Layer: `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:42 GMT
+-	Parent Layer: `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
+#### `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
 
 ```dockerfile
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:37 GMT
--	Parent Layer: `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:16 GMT
+-	Parent Layer: `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
+#### `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
 
 ```dockerfile
 RUN set -xe \
@@ -225,29 +225,29 @@ RUN set -xe \
 	done
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:20 GMT
+-	Parent Layer: `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
+-	Docker Version: 1.8.2
 -	Virtual Size: 16.6 KB (16552 bytes)
--	v2 Blob: `sha256:05609d9af281dd11d2b00238144f7acd2d3b54955a7ad6175332a65e6ff688dd`
--	v2 Content-Length: 7.6 KB (7588 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:43 GMT
+-	v2 Blob: `sha256:1947dd69e2807158de667a003725f9794bfa9d40d71b504430e7344d4961e602`
+-	v2 Content-Length: 7.6 KB (7584 bytes)
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:55:06 GMT
 
-#### `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
+#### `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
 
 ```dockerfile
-ENV PHP_VERSION=5.6.13
+ENV PHP_VERSION=5.6.14
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:04:16 GMT
+-	Parent Layer: `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
+#### `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
 
 ```dockerfile
 RUN buildDeps=" \
@@ -289,99 +289,99 @@ RUN buildDeps=" \
 	&& make clean
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:51 GMT
--	Parent Layer: `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
--	Docker Version: 1.7.1
--	Virtual Size: 152.6 MB (152567097 bytes)
--	v2 Blob: `sha256:d9ce090325c14457f50b4c909bf9cd83d2dd725184ac4829c96bf984d4302509`
--	v2 Content-Length: 31.6 MB (31604093 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:33 GMT
+-	Created: Fri, 02 Oct 2015 21:08:21 GMT
+-	Parent Layer: `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 153.1 MB (153074502 bytes)
+-	v2 Blob: `sha256:595eb04d75b7b7196cc03f353f38feabe4851e0fe6360509e085969511d184c9`
+-	v2 Content-Length: 31.9 MB (31860059 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:28:17 GMT
 
-#### `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
+#### `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
 
 ```dockerfile
-COPY multi:f55c2dabfb9111446ee05aec9da02f195eaffa07c573a1eacf6409e6d801f5ef in /usr/local/bin/
+COPY multi:a86bc89488530268091f407c455078b1f711473a7955eb5e1f90630c88e53d9d in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:26 GMT
+-	Parent Layer: `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
+-	Docker Version: 1.8.2
 -	Virtual Size: 2.8 KB (2807 bytes)
--	v2 Blob: `sha256:aeba873793c280de0c71b8ab5a7f3214cf5420a90c4d68b4f9f44aa7187f25b1`
--	v2 Content-Length: 1.3 KB (1329 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:00 GMT
+-	v2 Blob: `sha256:15fd40180df020d4e2d20a835b52df7e2a4639dcd7d7bab1c80d8158050fa4b9`
+-	v2 Content-Length: 1.3 KB (1326 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:45 GMT
 
-#### `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
+#### `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
 
 ```dockerfile
-COPY file:cb43d7f6cf3828bf8e5b53b4a94caad0f95f141baa430c05f9e6a9dd7b33bab3 in /usr/local/bin/
+COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 132.0 B
--	v2 Blob: `sha256:df13a8e36b2f25a4b2dd551a9799f9dac516f9c4c06a7ec4d8bfc3a5ad21e544`
+-	v2 Blob: `sha256:c12784b2cd7558454e2de91aaad0b5768aaf15639e490c9c6401f51f2dd01bfe`
 -	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:56 GMT
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:42 GMT
 
-#### `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
+#### `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
+#### `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
+#### `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
+#### `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
 
 ```dockerfile
 RUN a2enmod rewrite
 ```
 
--	Created: Thu, 10 Sep 2015 03:04:15 GMT
--	Parent Layer: `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:08:07 GMT
+-	Parent Layer: `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 30.0 B
--	v2 Blob: `sha256:f81b285a9f57847b0e1132fd29b9f1305b89319d6deac85f5f7fb9cb6ac5de55`
--	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:39 GMT
+-	v2 Blob: `sha256:513efb2f903a945c0ff071e970513c3791a46b7ec31da635491ad728cb3676ab`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:31 GMT
 
-#### `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
+#### `b797863d818f8325a20f161cf7fef8904329bb54220bd2e15403b0b61e21fd6b`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
@@ -390,57 +390,57 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:02 GMT
--	Parent Layer: `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
--	Docker Version: 1.7.1
--	Virtual Size: 32.9 MB (32900122 bytes)
--	v2 Blob: `sha256:c231d546ef8a0216f31ef96780b88d66535b814df10b1e32da10b7159fe664f7`
--	v2 Content-Length: 10.5 MB (10512399 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:34 GMT
+-	Created: Fri, 02 Oct 2015 22:21:07 GMT
+-	Parent Layer: `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
+-	Docker Version: 1.8.2
+-	Virtual Size: 32.9 MB (32892788 bytes)
+-	v2 Blob: `sha256:27498b983bb6b80c85120e8348cd7bfa1de424264adc08ca588d9d71ddaaa56d`
+-	v2 Content-Length: 10.5 MB (10510463 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:26 GMT
 
-#### `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
+#### `2bb93c5ebd2a915bf84ddfefdae209bce52b7ba369d1dc22b6f30cf58fbe4a36`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:03 GMT
--	Parent Layer: `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:08 GMT
+-	Parent Layer: `b797863d818f8325a20f161cf7fef8904329bb54220bd2e15403b0b61e21fd6b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7668d0a8c29c1f8a633dd51f5190bbb315eaff62626d052eedff4eb3f06fef49`
+#### `2a7fffbb423c1aeb6554875f913afe5726b050990b16f3b79040e58ef4bb9e13`
 
 ```dockerfile
 ENV DRUPAL_VERSION=7.39
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:03 GMT
--	Parent Layer: `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:08 GMT
+-	Parent Layer: `2bb93c5ebd2a915bf84ddfefdae209bce52b7ba369d1dc22b6f30cf58fbe4a36`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `69be0ee9b51795238b0962ea0417b6225d476a439f4e125bc463f290fae6ebb3`
+#### `9bb11bc8e6c8d7d4959fc3904f5c24a15e9bd7e56027ad684141a42556ffbe19`
 
 ```dockerfile
 ENV DRUPAL_MD5=6f42a7e9c7a1c2c4c9c2f20c81b8e79a
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:04 GMT
--	Parent Layer: `7668d0a8c29c1f8a633dd51f5190bbb315eaff62626d052eedff4eb3f06fef49`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:09 GMT
+-	Parent Layer: `2a7fffbb423c1aeb6554875f913afe5726b050990b16f3b79040e58ef4bb9e13`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `78a50f5fbefe8d40203bd3fd8009ef6ae26f55973de27a341fc10d744a2a76bc`
+#### `7d6237ba0235df61ba1d007187893f7988b16e5082735af2d2b964b5bd38b7ca`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -450,22 +450,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:07 GMT
--	Parent Layer: `69be0ee9b51795238b0962ea0417b6225d476a439f4e125bc463f290fae6ebb3`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:10 GMT
+-	Parent Layer: `9bb11bc8e6c8d7d4959fc3904f5c24a15e9bd7e56027ad684141a42556ffbe19`
+-	Docker Version: 1.8.2
 -	Virtual Size: 12.4 MB (12398834 bytes)
--	v2 Blob: `sha256:76ce9349d22e0868e25b5475e6de0ad0b44476570c1c7f663c10573feeb506ae`
--	v2 Content-Length: 3.2 MB (3248221 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:11 GMT
+-	v2 Blob: `sha256:884411d8c6467ca33101b548925cc2314e0c5119fa81698f7623caadad2a5f8d`
+-	v2 Content-Length: 3.2 MB (3248216 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:04 GMT
 
 ## `drupal:7`
 
 ```console
-$ docker pull library/drupal@sha256:9eb75eefd7954f30381e7cc9915017b39795ac70f3fa84ce709e38a30d8b627d
+$ docker pull library/drupal@sha256:adf51dbf0f3eeccf01fc2fa4ad51139e46ab6bf896eac6a6f91e1efd74218521
 ```
 
--	Total Virtual Size: 526.1 MB (526074520 bytes)
--	Total v2 Content-Length: 177.5 MB (177532933 bytes)
+-	Total Virtual Size: 526.6 MB (526574591 bytes)
+-	Total v2 Content-Length: 177.8 MB (177786950 bytes)
 
 ### Layers (28)
 
@@ -608,63 +608,63 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	v2 Content-Length: 3.4 KB (3366 bytes)
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:51:04 GMT
 
-#### `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
+#### `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
 
 ```dockerfile
-COPY file:82a8ff091c202126e8a44a36f7c441b6c534f02cf515bc0706db25501bace857 in /etc/apache2/apache2.conf
+COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
 -	Parent Layer: `9621eba31daf0fe52c2f9c66d5e88ddab9b89859d2f32908e2698c2b61289bbe`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.5 KB (1520 bytes)
--	v2 Blob: `sha256:7dc94c4112c586828689e398510577b36628631719e7e3c9b3e11280b0d58da5`
+-	v2 Blob: `sha256:6c6389db7d98791ff3c5c065b3d7578b831e8b2aaf5c0e6595e2d0ef2d1f2baf`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:59 GMT
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:43:03 GMT
 
-#### `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
+#### `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
 
 ```dockerfile
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
--	Parent Layer: `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
+-	Parent Layer: `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
+#### `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
 
 ```dockerfile
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:10 GMT
--	Parent Layer: `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:42 GMT
+-	Parent Layer: `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
+#### `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
 
 ```dockerfile
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:37 GMT
--	Parent Layer: `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:16 GMT
+-	Parent Layer: `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
+#### `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
 
 ```dockerfile
 RUN set -xe \
@@ -673,29 +673,29 @@ RUN set -xe \
 	done
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:20 GMT
+-	Parent Layer: `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
+-	Docker Version: 1.8.2
 -	Virtual Size: 16.6 KB (16552 bytes)
--	v2 Blob: `sha256:05609d9af281dd11d2b00238144f7acd2d3b54955a7ad6175332a65e6ff688dd`
--	v2 Content-Length: 7.6 KB (7588 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:43 GMT
+-	v2 Blob: `sha256:1947dd69e2807158de667a003725f9794bfa9d40d71b504430e7344d4961e602`
+-	v2 Content-Length: 7.6 KB (7584 bytes)
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:55:06 GMT
 
-#### `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
+#### `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
 
 ```dockerfile
-ENV PHP_VERSION=5.6.13
+ENV PHP_VERSION=5.6.14
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:04:16 GMT
+-	Parent Layer: `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
+#### `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
 
 ```dockerfile
 RUN buildDeps=" \
@@ -737,99 +737,99 @@ RUN buildDeps=" \
 	&& make clean
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:51 GMT
--	Parent Layer: `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
--	Docker Version: 1.7.1
--	Virtual Size: 152.6 MB (152567097 bytes)
--	v2 Blob: `sha256:d9ce090325c14457f50b4c909bf9cd83d2dd725184ac4829c96bf984d4302509`
--	v2 Content-Length: 31.6 MB (31604093 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:33 GMT
+-	Created: Fri, 02 Oct 2015 21:08:21 GMT
+-	Parent Layer: `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 153.1 MB (153074502 bytes)
+-	v2 Blob: `sha256:595eb04d75b7b7196cc03f353f38feabe4851e0fe6360509e085969511d184c9`
+-	v2 Content-Length: 31.9 MB (31860059 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:28:17 GMT
 
-#### `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
+#### `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
 
 ```dockerfile
-COPY multi:f55c2dabfb9111446ee05aec9da02f195eaffa07c573a1eacf6409e6d801f5ef in /usr/local/bin/
+COPY multi:a86bc89488530268091f407c455078b1f711473a7955eb5e1f90630c88e53d9d in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:26 GMT
+-	Parent Layer: `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
+-	Docker Version: 1.8.2
 -	Virtual Size: 2.8 KB (2807 bytes)
--	v2 Blob: `sha256:aeba873793c280de0c71b8ab5a7f3214cf5420a90c4d68b4f9f44aa7187f25b1`
--	v2 Content-Length: 1.3 KB (1329 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:00 GMT
+-	v2 Blob: `sha256:15fd40180df020d4e2d20a835b52df7e2a4639dcd7d7bab1c80d8158050fa4b9`
+-	v2 Content-Length: 1.3 KB (1326 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:45 GMT
 
-#### `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
+#### `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
 
 ```dockerfile
-COPY file:cb43d7f6cf3828bf8e5b53b4a94caad0f95f141baa430c05f9e6a9dd7b33bab3 in /usr/local/bin/
+COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 132.0 B
--	v2 Blob: `sha256:df13a8e36b2f25a4b2dd551a9799f9dac516f9c4c06a7ec4d8bfc3a5ad21e544`
+-	v2 Blob: `sha256:c12784b2cd7558454e2de91aaad0b5768aaf15639e490c9c6401f51f2dd01bfe`
 -	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:56 GMT
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:42 GMT
 
-#### `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
+#### `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
+#### `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
+#### `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
+#### `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
 
 ```dockerfile
 RUN a2enmod rewrite
 ```
 
--	Created: Thu, 10 Sep 2015 03:04:15 GMT
--	Parent Layer: `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:08:07 GMT
+-	Parent Layer: `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 30.0 B
--	v2 Blob: `sha256:f81b285a9f57847b0e1132fd29b9f1305b89319d6deac85f5f7fb9cb6ac5de55`
--	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:39 GMT
+-	v2 Blob: `sha256:513efb2f903a945c0ff071e970513c3791a46b7ec31da635491ad728cb3676ab`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:31 GMT
 
-#### `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
+#### `b797863d818f8325a20f161cf7fef8904329bb54220bd2e15403b0b61e21fd6b`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
@@ -838,57 +838,57 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:02 GMT
--	Parent Layer: `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
--	Docker Version: 1.7.1
--	Virtual Size: 32.9 MB (32900122 bytes)
--	v2 Blob: `sha256:c231d546ef8a0216f31ef96780b88d66535b814df10b1e32da10b7159fe664f7`
--	v2 Content-Length: 10.5 MB (10512399 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:34 GMT
+-	Created: Fri, 02 Oct 2015 22:21:07 GMT
+-	Parent Layer: `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
+-	Docker Version: 1.8.2
+-	Virtual Size: 32.9 MB (32892788 bytes)
+-	v2 Blob: `sha256:27498b983bb6b80c85120e8348cd7bfa1de424264adc08ca588d9d71ddaaa56d`
+-	v2 Content-Length: 10.5 MB (10510463 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:26 GMT
 
-#### `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
+#### `2bb93c5ebd2a915bf84ddfefdae209bce52b7ba369d1dc22b6f30cf58fbe4a36`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:03 GMT
--	Parent Layer: `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:08 GMT
+-	Parent Layer: `b797863d818f8325a20f161cf7fef8904329bb54220bd2e15403b0b61e21fd6b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7668d0a8c29c1f8a633dd51f5190bbb315eaff62626d052eedff4eb3f06fef49`
+#### `2a7fffbb423c1aeb6554875f913afe5726b050990b16f3b79040e58ef4bb9e13`
 
 ```dockerfile
 ENV DRUPAL_VERSION=7.39
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:03 GMT
--	Parent Layer: `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:08 GMT
+-	Parent Layer: `2bb93c5ebd2a915bf84ddfefdae209bce52b7ba369d1dc22b6f30cf58fbe4a36`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `69be0ee9b51795238b0962ea0417b6225d476a439f4e125bc463f290fae6ebb3`
+#### `9bb11bc8e6c8d7d4959fc3904f5c24a15e9bd7e56027ad684141a42556ffbe19`
 
 ```dockerfile
 ENV DRUPAL_MD5=6f42a7e9c7a1c2c4c9c2f20c81b8e79a
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:04 GMT
--	Parent Layer: `7668d0a8c29c1f8a633dd51f5190bbb315eaff62626d052eedff4eb3f06fef49`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:09 GMT
+-	Parent Layer: `2a7fffbb423c1aeb6554875f913afe5726b050990b16f3b79040e58ef4bb9e13`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `78a50f5fbefe8d40203bd3fd8009ef6ae26f55973de27a341fc10d744a2a76bc`
+#### `7d6237ba0235df61ba1d007187893f7988b16e5082735af2d2b964b5bd38b7ca`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -898,22 +898,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:07 GMT
--	Parent Layer: `69be0ee9b51795238b0962ea0417b6225d476a439f4e125bc463f290fae6ebb3`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:10 GMT
+-	Parent Layer: `9bb11bc8e6c8d7d4959fc3904f5c24a15e9bd7e56027ad684141a42556ffbe19`
+-	Docker Version: 1.8.2
 -	Virtual Size: 12.4 MB (12398834 bytes)
--	v2 Blob: `sha256:76ce9349d22e0868e25b5475e6de0ad0b44476570c1c7f663c10573feeb506ae`
--	v2 Content-Length: 3.2 MB (3248221 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:11 GMT
+-	v2 Blob: `sha256:884411d8c6467ca33101b548925cc2314e0c5119fa81698f7623caadad2a5f8d`
+-	v2 Content-Length: 3.2 MB (3248216 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:04 GMT
 
 ## `drupal:latest`
 
 ```console
-$ docker pull library/drupal@sha256:8a3ea4d99c4b8d4c5ad406c52f47c047dca9d2879176079e0408b590e7191948
+$ docker pull library/drupal@sha256:da6202db422463d4491fcd3f5ccb389d5d017709b3395761ed58ed7786be4353
 ```
 
--	Total Virtual Size: 526.1 MB (526074520 bytes)
--	Total v2 Content-Length: 177.5 MB (177532933 bytes)
+-	Total Virtual Size: 526.6 MB (526574591 bytes)
+-	Total v2 Content-Length: 177.8 MB (177786950 bytes)
 
 ### Layers (28)
 
@@ -1056,63 +1056,63 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	v2 Content-Length: 3.4 KB (3366 bytes)
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:51:04 GMT
 
-#### `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
+#### `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
 
 ```dockerfile
-COPY file:82a8ff091c202126e8a44a36f7c441b6c534f02cf515bc0706db25501bace857 in /etc/apache2/apache2.conf
+COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
 -	Parent Layer: `9621eba31daf0fe52c2f9c66d5e88ddab9b89859d2f32908e2698c2b61289bbe`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.5 KB (1520 bytes)
--	v2 Blob: `sha256:7dc94c4112c586828689e398510577b36628631719e7e3c9b3e11280b0d58da5`
+-	v2 Blob: `sha256:6c6389db7d98791ff3c5c065b3d7578b831e8b2aaf5c0e6595e2d0ef2d1f2baf`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:59 GMT
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:43:03 GMT
 
-#### `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
+#### `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
 
 ```dockerfile
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
--	Parent Layer: `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
+-	Parent Layer: `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
+#### `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
 
 ```dockerfile
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:10 GMT
--	Parent Layer: `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:42 GMT
+-	Parent Layer: `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
+#### `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
 
 ```dockerfile
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:37 GMT
--	Parent Layer: `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:16 GMT
+-	Parent Layer: `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
+#### `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
 
 ```dockerfile
 RUN set -xe \
@@ -1121,29 +1121,29 @@ RUN set -xe \
 	done
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:20 GMT
+-	Parent Layer: `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
+-	Docker Version: 1.8.2
 -	Virtual Size: 16.6 KB (16552 bytes)
--	v2 Blob: `sha256:05609d9af281dd11d2b00238144f7acd2d3b54955a7ad6175332a65e6ff688dd`
--	v2 Content-Length: 7.6 KB (7588 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:43 GMT
+-	v2 Blob: `sha256:1947dd69e2807158de667a003725f9794bfa9d40d71b504430e7344d4961e602`
+-	v2 Content-Length: 7.6 KB (7584 bytes)
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:55:06 GMT
 
-#### `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
+#### `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
 
 ```dockerfile
-ENV PHP_VERSION=5.6.13
+ENV PHP_VERSION=5.6.14
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:04:16 GMT
+-	Parent Layer: `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
+#### `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
 
 ```dockerfile
 RUN buildDeps=" \
@@ -1185,99 +1185,99 @@ RUN buildDeps=" \
 	&& make clean
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:51 GMT
--	Parent Layer: `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
--	Docker Version: 1.7.1
--	Virtual Size: 152.6 MB (152567097 bytes)
--	v2 Blob: `sha256:d9ce090325c14457f50b4c909bf9cd83d2dd725184ac4829c96bf984d4302509`
--	v2 Content-Length: 31.6 MB (31604093 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:33 GMT
+-	Created: Fri, 02 Oct 2015 21:08:21 GMT
+-	Parent Layer: `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 153.1 MB (153074502 bytes)
+-	v2 Blob: `sha256:595eb04d75b7b7196cc03f353f38feabe4851e0fe6360509e085969511d184c9`
+-	v2 Content-Length: 31.9 MB (31860059 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:28:17 GMT
 
-#### `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
+#### `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
 
 ```dockerfile
-COPY multi:f55c2dabfb9111446ee05aec9da02f195eaffa07c573a1eacf6409e6d801f5ef in /usr/local/bin/
+COPY multi:a86bc89488530268091f407c455078b1f711473a7955eb5e1f90630c88e53d9d in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:26 GMT
+-	Parent Layer: `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
+-	Docker Version: 1.8.2
 -	Virtual Size: 2.8 KB (2807 bytes)
--	v2 Blob: `sha256:aeba873793c280de0c71b8ab5a7f3214cf5420a90c4d68b4f9f44aa7187f25b1`
--	v2 Content-Length: 1.3 KB (1329 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:00 GMT
+-	v2 Blob: `sha256:15fd40180df020d4e2d20a835b52df7e2a4639dcd7d7bab1c80d8158050fa4b9`
+-	v2 Content-Length: 1.3 KB (1326 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:45 GMT
 
-#### `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
+#### `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
 
 ```dockerfile
-COPY file:cb43d7f6cf3828bf8e5b53b4a94caad0f95f141baa430c05f9e6a9dd7b33bab3 in /usr/local/bin/
+COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 132.0 B
--	v2 Blob: `sha256:df13a8e36b2f25a4b2dd551a9799f9dac516f9c4c06a7ec4d8bfc3a5ad21e544`
+-	v2 Blob: `sha256:c12784b2cd7558454e2de91aaad0b5768aaf15639e490c9c6401f51f2dd01bfe`
 -	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:56 GMT
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:42 GMT
 
-#### `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
+#### `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
+#### `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
+#### `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
+#### `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
 
 ```dockerfile
 RUN a2enmod rewrite
 ```
 
--	Created: Thu, 10 Sep 2015 03:04:15 GMT
--	Parent Layer: `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:08:07 GMT
+-	Parent Layer: `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 30.0 B
--	v2 Blob: `sha256:f81b285a9f57847b0e1132fd29b9f1305b89319d6deac85f5f7fb9cb6ac5de55`
--	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:39 GMT
+-	v2 Blob: `sha256:513efb2f903a945c0ff071e970513c3791a46b7ec31da635491ad728cb3676ab`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:31 GMT
 
-#### `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
+#### `b797863d818f8325a20f161cf7fef8904329bb54220bd2e15403b0b61e21fd6b`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
@@ -1286,57 +1286,57 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:02 GMT
--	Parent Layer: `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
--	Docker Version: 1.7.1
--	Virtual Size: 32.9 MB (32900122 bytes)
--	v2 Blob: `sha256:c231d546ef8a0216f31ef96780b88d66535b814df10b1e32da10b7159fe664f7`
--	v2 Content-Length: 10.5 MB (10512399 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:34 GMT
+-	Created: Fri, 02 Oct 2015 22:21:07 GMT
+-	Parent Layer: `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
+-	Docker Version: 1.8.2
+-	Virtual Size: 32.9 MB (32892788 bytes)
+-	v2 Blob: `sha256:27498b983bb6b80c85120e8348cd7bfa1de424264adc08ca588d9d71ddaaa56d`
+-	v2 Content-Length: 10.5 MB (10510463 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:26 GMT
 
-#### `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
+#### `2bb93c5ebd2a915bf84ddfefdae209bce52b7ba369d1dc22b6f30cf58fbe4a36`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:03 GMT
--	Parent Layer: `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:08 GMT
+-	Parent Layer: `b797863d818f8325a20f161cf7fef8904329bb54220bd2e15403b0b61e21fd6b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7668d0a8c29c1f8a633dd51f5190bbb315eaff62626d052eedff4eb3f06fef49`
+#### `2a7fffbb423c1aeb6554875f913afe5726b050990b16f3b79040e58ef4bb9e13`
 
 ```dockerfile
 ENV DRUPAL_VERSION=7.39
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:03 GMT
--	Parent Layer: `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:08 GMT
+-	Parent Layer: `2bb93c5ebd2a915bf84ddfefdae209bce52b7ba369d1dc22b6f30cf58fbe4a36`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `69be0ee9b51795238b0962ea0417b6225d476a439f4e125bc463f290fae6ebb3`
+#### `9bb11bc8e6c8d7d4959fc3904f5c24a15e9bd7e56027ad684141a42556ffbe19`
 
 ```dockerfile
 ENV DRUPAL_MD5=6f42a7e9c7a1c2c4c9c2f20c81b8e79a
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:04 GMT
--	Parent Layer: `7668d0a8c29c1f8a633dd51f5190bbb315eaff62626d052eedff4eb3f06fef49`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:09 GMT
+-	Parent Layer: `2a7fffbb423c1aeb6554875f913afe5726b050990b16f3b79040e58ef4bb9e13`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `78a50f5fbefe8d40203bd3fd8009ef6ae26f55973de27a341fc10d744a2a76bc`
+#### `7d6237ba0235df61ba1d007187893f7988b16e5082735af2d2b964b5bd38b7ca`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -1346,24 +1346,24 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:07 GMT
--	Parent Layer: `69be0ee9b51795238b0962ea0417b6225d476a439f4e125bc463f290fae6ebb3`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:21:10 GMT
+-	Parent Layer: `9bb11bc8e6c8d7d4959fc3904f5c24a15e9bd7e56027ad684141a42556ffbe19`
+-	Docker Version: 1.8.2
 -	Virtual Size: 12.4 MB (12398834 bytes)
--	v2 Blob: `sha256:76ce9349d22e0868e25b5475e6de0ad0b44476570c1c7f663c10573feeb506ae`
--	v2 Content-Length: 3.2 MB (3248221 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:11 GMT
+-	v2 Blob: `sha256:884411d8c6467ca33101b548925cc2314e0c5119fa81698f7623caadad2a5f8d`
+-	v2 Content-Length: 3.2 MB (3248216 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:04 GMT
 
-## `drupal:8.0.0-beta15`
+## `drupal:8.0.0-beta16`
 
 ```console
-$ docker pull library/drupal@sha256:fa50955cc48ff5ad4ebf48ffaec914bda915fe66990998c14d39198f648a594b
+$ docker pull library/drupal@sha256:b5faa83f820dde39581bc0bee43708ce5fee8c58c53450caef3bb088cfdcfda7
 ```
 
--	Total Virtual Size: 566.9 MB (566897162 bytes)
--	Total v2 Content-Length: 185.5 MB (185511939 bytes)
+-	Total Virtual Size: 571.1 MB (571061530 bytes)
+-	Total v2 Content-Length: 186.7 MB (186703631 bytes)
 
-### Layers (28)
+### Layers (29)
 
 #### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
 
@@ -1504,63 +1504,63 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	v2 Content-Length: 3.4 KB (3366 bytes)
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:51:04 GMT
 
-#### `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
+#### `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
 
 ```dockerfile
-COPY file:82a8ff091c202126e8a44a36f7c441b6c534f02cf515bc0706db25501bace857 in /etc/apache2/apache2.conf
+COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
 -	Parent Layer: `9621eba31daf0fe52c2f9c66d5e88ddab9b89859d2f32908e2698c2b61289bbe`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.5 KB (1520 bytes)
--	v2 Blob: `sha256:7dc94c4112c586828689e398510577b36628631719e7e3c9b3e11280b0d58da5`
+-	v2 Blob: `sha256:6c6389db7d98791ff3c5c065b3d7578b831e8b2aaf5c0e6595e2d0ef2d1f2baf`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:59 GMT
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:43:03 GMT
 
-#### `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
+#### `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
 
 ```dockerfile
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
--	Parent Layer: `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
+-	Parent Layer: `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
+#### `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
 
 ```dockerfile
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:10 GMT
--	Parent Layer: `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:42 GMT
+-	Parent Layer: `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
+#### `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
 
 ```dockerfile
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:37 GMT
--	Parent Layer: `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:16 GMT
+-	Parent Layer: `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
+#### `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
 
 ```dockerfile
 RUN set -xe \
@@ -1569,29 +1569,29 @@ RUN set -xe \
 	done
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:20 GMT
+-	Parent Layer: `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
+-	Docker Version: 1.8.2
 -	Virtual Size: 16.6 KB (16552 bytes)
--	v2 Blob: `sha256:05609d9af281dd11d2b00238144f7acd2d3b54955a7ad6175332a65e6ff688dd`
--	v2 Content-Length: 7.6 KB (7588 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:43 GMT
+-	v2 Blob: `sha256:1947dd69e2807158de667a003725f9794bfa9d40d71b504430e7344d4961e602`
+-	v2 Content-Length: 7.6 KB (7584 bytes)
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:55:06 GMT
 
-#### `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
+#### `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
 
 ```dockerfile
-ENV PHP_VERSION=5.6.13
+ENV PHP_VERSION=5.6.14
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:04:16 GMT
+-	Parent Layer: `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
+#### `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
 
 ```dockerfile
 RUN buildDeps=" \
@@ -1633,158 +1633,179 @@ RUN buildDeps=" \
 	&& make clean
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:51 GMT
--	Parent Layer: `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
--	Docker Version: 1.7.1
--	Virtual Size: 152.6 MB (152567097 bytes)
--	v2 Blob: `sha256:d9ce090325c14457f50b4c909bf9cd83d2dd725184ac4829c96bf984d4302509`
--	v2 Content-Length: 31.6 MB (31604093 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:33 GMT
+-	Created: Fri, 02 Oct 2015 21:08:21 GMT
+-	Parent Layer: `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 153.1 MB (153074502 bytes)
+-	v2 Blob: `sha256:595eb04d75b7b7196cc03f353f38feabe4851e0fe6360509e085969511d184c9`
+-	v2 Content-Length: 31.9 MB (31860059 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:28:17 GMT
 
-#### `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
+#### `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
 
 ```dockerfile
-COPY multi:f55c2dabfb9111446ee05aec9da02f195eaffa07c573a1eacf6409e6d801f5ef in /usr/local/bin/
+COPY multi:a86bc89488530268091f407c455078b1f711473a7955eb5e1f90630c88e53d9d in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:26 GMT
+-	Parent Layer: `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
+-	Docker Version: 1.8.2
 -	Virtual Size: 2.8 KB (2807 bytes)
--	v2 Blob: `sha256:aeba873793c280de0c71b8ab5a7f3214cf5420a90c4d68b4f9f44aa7187f25b1`
--	v2 Content-Length: 1.3 KB (1329 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:00 GMT
+-	v2 Blob: `sha256:15fd40180df020d4e2d20a835b52df7e2a4639dcd7d7bab1c80d8158050fa4b9`
+-	v2 Content-Length: 1.3 KB (1326 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:45 GMT
 
-#### `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
+#### `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
 
 ```dockerfile
-COPY file:cb43d7f6cf3828bf8e5b53b4a94caad0f95f141baa430c05f9e6a9dd7b33bab3 in /usr/local/bin/
+COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 132.0 B
--	v2 Blob: `sha256:df13a8e36b2f25a4b2dd551a9799f9dac516f9c4c06a7ec4d8bfc3a5ad21e544`
+-	v2 Blob: `sha256:c12784b2cd7558454e2de91aaad0b5768aaf15639e490c9c6401f51f2dd01bfe`
 -	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:56 GMT
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:42 GMT
 
-#### `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
+#### `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
+#### `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
+#### `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
+#### `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
 
 ```dockerfile
 RUN a2enmod rewrite
 ```
 
--	Created: Thu, 10 Sep 2015 03:04:15 GMT
--	Parent Layer: `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:08:07 GMT
+-	Parent Layer: `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 30.0 B
--	v2 Blob: `sha256:f81b285a9f57847b0e1132fd29b9f1305b89319d6deac85f5f7fb9cb6ac5de55`
--	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:39 GMT
+-	v2 Blob: `sha256:513efb2f903a945c0ff071e970513c3791a46b7ec31da635491ad728cb3676ab`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:31 GMT
 
-#### `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
+#### `a6a8a87c26eaa476d800e98fb58674ec2f113a2371575ad3136de0d7f440068e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
-	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql
+	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:02 GMT
--	Parent Layer: `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
--	Docker Version: 1.7.1
--	Virtual Size: 32.9 MB (32900122 bytes)
--	v2 Blob: `sha256:c231d546ef8a0216f31ef96780b88d66535b814df10b1e32da10b7159fe664f7`
--	v2 Content-Length: 10.5 MB (10512399 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:34 GMT
+-	Created: Fri, 02 Oct 2015 22:25:10 GMT
+-	Parent Layer: `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
+-	Docker Version: 1.8.2
+-	Virtual Size: 35.8 MB (35772144 bytes)
+-	v2 Blob: `sha256:9798357d56ccef17be2317139650290efb2e5d150d687654d0e5cf07749d3745`
+-	v2 Content-Length: 11.3 MB (11297853 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:31:04 GMT
 
-#### `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
+#### `47b8cd631d33b98ebf7dfd6910e700a06b5de4a42e6c0747e6d82f72efbdc4a0`
+
+```dockerfile
+RUN { \
+		echo 'opcache.memory_consumption=128'; \
+		echo 'opcache.interned_strings_buffer=8'; \
+		echo 'opcache.max_accelerated_files=4000'; \
+		echo 'opcache.revalidate_freq=60'; \
+		echo 'opcache.fast_shutdown=1'; \
+		echo 'opcache.enable_cli=1'; \
+	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
+```
+
+-	Created: Fri, 02 Oct 2015 22:25:12 GMT
+-	Parent Layer: `a6a8a87c26eaa476d800e98fb58674ec2f113a2371575ad3136de0d7f440068e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 172.0 B
+-	v2 Blob: `sha256:999b5ee2bc76409c067576caa79bab3fa61412869d4765b7edd2c98fd370510e`
+-	v2 Content-Length: 333.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:30:55 GMT
+
+#### `4763385f77db280493639b22a8a7f5007159de0c8712b553eb321f419e7b93e4`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:03 GMT
--	Parent Layer: `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:12 GMT
+-	Parent Layer: `47b8cd631d33b98ebf7dfd6910e700a06b5de4a42e6c0747e6d82f72efbdc4a0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b4ae7ba9c0afc6a8f8e08057199f28e5a16fc56d42462803dc030a95ef8c5a8b`
+#### `ca56c0f9bc02a3e6f69612ad10a8f73ec76d5363d507ce95ec3b1792ad06da1f`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-beta15
+ENV DRUPAL_VERSION=8.0.0-beta16
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:58 GMT
--	Parent Layer: `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:13 GMT
+-	Parent Layer: `4763385f77db280493639b22a8a7f5007159de0c8712b553eb321f419e7b93e4`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `605395f8014684cb2cb316e361bb5b0b389d3f129035af93e7fcd027147ba8d7`
+#### `d94734a09340941f2188bf87147d1c5e38fbc243db25cf4e4ee785392e56ba53`
 
 ```dockerfile
-ENV DRUPAL_MD5=727e700eab75395663d6c5dbd20fe6ee
+ENV DRUPAL_MD5=3204db355d8163616f10263074285aee
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:59 GMT
--	Parent Layer: `b4ae7ba9c0afc6a8f8e08057199f28e5a16fc56d42462803dc030a95ef8c5a8b`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:14 GMT
+-	Parent Layer: `ca56c0f9bc02a3e6f69612ad10a8f73ec76d5363d507ce95ec3b1792ad06da1f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2829732f0756350d8492ee1d6f52ff15d82743ae04affddf2b69cce3b3f1c3f1`
+#### `bd74ce81526df7edbb99f304278c64d51cbb5e65164a56b8bf05031f7393ea6f`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -1794,24 +1815,24 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Thu, 10 Sep 2015 04:04:03 GMT
--	Parent Layer: `605395f8014684cb2cb316e361bb5b0b389d3f129035af93e7fcd027147ba8d7`
--	Docker Version: 1.7.1
--	Virtual Size: 53.2 MB (53221476 bytes)
--	v2 Blob: `sha256:1c6bf57143aa406adc5213399032387309b47d7bcf68a37aab55f0512b5cdf19`
--	v2 Content-Length: 11.2 MB (11227227 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 02:00:13 GMT
+-	Created: Fri, 02 Oct 2015 22:25:20 GMT
+-	Parent Layer: `d94734a09340941f2188bf87147d1c5e38fbc243db25cf4e4ee785392e56ba53`
+-	Docker Version: 1.8.2
+-	Virtual Size: 54.0 MB (54006245 bytes)
+-	v2 Blob: `sha256:9cc4198db35ecf79251bb34bc3bcf6d439e18d2740be9bdb7083ccdc0215b795`
+-	v2 Content-Length: 11.4 MB (11377174 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:30:38 GMT
 
 ## `drupal:8.0.0`
 
 ```console
-$ docker pull library/drupal@sha256:f921cc837c8bb8d9382f1f33fde40ffe745e11b018d0257382ec77b92cd59715
+$ docker pull library/drupal@sha256:96735698683b09284e5c38e399b41ad744be6e0f6b6fab050198601dacc91e66
 ```
 
--	Total Virtual Size: 566.9 MB (566897162 bytes)
--	Total v2 Content-Length: 185.5 MB (185511939 bytes)
+-	Total Virtual Size: 571.1 MB (571061530 bytes)
+-	Total v2 Content-Length: 186.7 MB (186703631 bytes)
 
-### Layers (28)
+### Layers (29)
 
 #### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
 
@@ -1952,63 +1973,63 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	v2 Content-Length: 3.4 KB (3366 bytes)
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:51:04 GMT
 
-#### `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
+#### `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
 
 ```dockerfile
-COPY file:82a8ff091c202126e8a44a36f7c441b6c534f02cf515bc0706db25501bace857 in /etc/apache2/apache2.conf
+COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
 -	Parent Layer: `9621eba31daf0fe52c2f9c66d5e88ddab9b89859d2f32908e2698c2b61289bbe`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.5 KB (1520 bytes)
--	v2 Blob: `sha256:7dc94c4112c586828689e398510577b36628631719e7e3c9b3e11280b0d58da5`
+-	v2 Blob: `sha256:6c6389db7d98791ff3c5c065b3d7578b831e8b2aaf5c0e6595e2d0ef2d1f2baf`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:59 GMT
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:43:03 GMT
 
-#### `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
+#### `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
 
 ```dockerfile
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
--	Parent Layer: `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
+-	Parent Layer: `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
+#### `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
 
 ```dockerfile
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:10 GMT
--	Parent Layer: `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:42 GMT
+-	Parent Layer: `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
+#### `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
 
 ```dockerfile
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:37 GMT
--	Parent Layer: `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:16 GMT
+-	Parent Layer: `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
+#### `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
 
 ```dockerfile
 RUN set -xe \
@@ -2017,29 +2038,29 @@ RUN set -xe \
 	done
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:20 GMT
+-	Parent Layer: `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
+-	Docker Version: 1.8.2
 -	Virtual Size: 16.6 KB (16552 bytes)
--	v2 Blob: `sha256:05609d9af281dd11d2b00238144f7acd2d3b54955a7ad6175332a65e6ff688dd`
--	v2 Content-Length: 7.6 KB (7588 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:43 GMT
+-	v2 Blob: `sha256:1947dd69e2807158de667a003725f9794bfa9d40d71b504430e7344d4961e602`
+-	v2 Content-Length: 7.6 KB (7584 bytes)
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:55:06 GMT
 
-#### `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
+#### `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
 
 ```dockerfile
-ENV PHP_VERSION=5.6.13
+ENV PHP_VERSION=5.6.14
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:04:16 GMT
+-	Parent Layer: `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
+#### `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
 
 ```dockerfile
 RUN buildDeps=" \
@@ -2081,158 +2102,179 @@ RUN buildDeps=" \
 	&& make clean
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:51 GMT
--	Parent Layer: `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
--	Docker Version: 1.7.1
--	Virtual Size: 152.6 MB (152567097 bytes)
--	v2 Blob: `sha256:d9ce090325c14457f50b4c909bf9cd83d2dd725184ac4829c96bf984d4302509`
--	v2 Content-Length: 31.6 MB (31604093 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:33 GMT
+-	Created: Fri, 02 Oct 2015 21:08:21 GMT
+-	Parent Layer: `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 153.1 MB (153074502 bytes)
+-	v2 Blob: `sha256:595eb04d75b7b7196cc03f353f38feabe4851e0fe6360509e085969511d184c9`
+-	v2 Content-Length: 31.9 MB (31860059 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:28:17 GMT
 
-#### `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
+#### `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
 
 ```dockerfile
-COPY multi:f55c2dabfb9111446ee05aec9da02f195eaffa07c573a1eacf6409e6d801f5ef in /usr/local/bin/
+COPY multi:a86bc89488530268091f407c455078b1f711473a7955eb5e1f90630c88e53d9d in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:26 GMT
+-	Parent Layer: `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
+-	Docker Version: 1.8.2
 -	Virtual Size: 2.8 KB (2807 bytes)
--	v2 Blob: `sha256:aeba873793c280de0c71b8ab5a7f3214cf5420a90c4d68b4f9f44aa7187f25b1`
--	v2 Content-Length: 1.3 KB (1329 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:00 GMT
+-	v2 Blob: `sha256:15fd40180df020d4e2d20a835b52df7e2a4639dcd7d7bab1c80d8158050fa4b9`
+-	v2 Content-Length: 1.3 KB (1326 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:45 GMT
 
-#### `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
+#### `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
 
 ```dockerfile
-COPY file:cb43d7f6cf3828bf8e5b53b4a94caad0f95f141baa430c05f9e6a9dd7b33bab3 in /usr/local/bin/
+COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 132.0 B
--	v2 Blob: `sha256:df13a8e36b2f25a4b2dd551a9799f9dac516f9c4c06a7ec4d8bfc3a5ad21e544`
+-	v2 Blob: `sha256:c12784b2cd7558454e2de91aaad0b5768aaf15639e490c9c6401f51f2dd01bfe`
 -	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:56 GMT
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:42 GMT
 
-#### `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
+#### `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
+#### `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
+#### `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
+#### `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
 
 ```dockerfile
 RUN a2enmod rewrite
 ```
 
--	Created: Thu, 10 Sep 2015 03:04:15 GMT
--	Parent Layer: `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:08:07 GMT
+-	Parent Layer: `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 30.0 B
--	v2 Blob: `sha256:f81b285a9f57847b0e1132fd29b9f1305b89319d6deac85f5f7fb9cb6ac5de55`
--	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:39 GMT
+-	v2 Blob: `sha256:513efb2f903a945c0ff071e970513c3791a46b7ec31da635491ad728cb3676ab`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:31 GMT
 
-#### `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
+#### `a6a8a87c26eaa476d800e98fb58674ec2f113a2371575ad3136de0d7f440068e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
-	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql
+	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:02 GMT
--	Parent Layer: `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
--	Docker Version: 1.7.1
--	Virtual Size: 32.9 MB (32900122 bytes)
--	v2 Blob: `sha256:c231d546ef8a0216f31ef96780b88d66535b814df10b1e32da10b7159fe664f7`
--	v2 Content-Length: 10.5 MB (10512399 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:34 GMT
+-	Created: Fri, 02 Oct 2015 22:25:10 GMT
+-	Parent Layer: `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
+-	Docker Version: 1.8.2
+-	Virtual Size: 35.8 MB (35772144 bytes)
+-	v2 Blob: `sha256:9798357d56ccef17be2317139650290efb2e5d150d687654d0e5cf07749d3745`
+-	v2 Content-Length: 11.3 MB (11297853 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:31:04 GMT
 
-#### `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
+#### `47b8cd631d33b98ebf7dfd6910e700a06b5de4a42e6c0747e6d82f72efbdc4a0`
+
+```dockerfile
+RUN { \
+		echo 'opcache.memory_consumption=128'; \
+		echo 'opcache.interned_strings_buffer=8'; \
+		echo 'opcache.max_accelerated_files=4000'; \
+		echo 'opcache.revalidate_freq=60'; \
+		echo 'opcache.fast_shutdown=1'; \
+		echo 'opcache.enable_cli=1'; \
+	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
+```
+
+-	Created: Fri, 02 Oct 2015 22:25:12 GMT
+-	Parent Layer: `a6a8a87c26eaa476d800e98fb58674ec2f113a2371575ad3136de0d7f440068e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 172.0 B
+-	v2 Blob: `sha256:999b5ee2bc76409c067576caa79bab3fa61412869d4765b7edd2c98fd370510e`
+-	v2 Content-Length: 333.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:30:55 GMT
+
+#### `4763385f77db280493639b22a8a7f5007159de0c8712b553eb321f419e7b93e4`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:03 GMT
--	Parent Layer: `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:12 GMT
+-	Parent Layer: `47b8cd631d33b98ebf7dfd6910e700a06b5de4a42e6c0747e6d82f72efbdc4a0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b4ae7ba9c0afc6a8f8e08057199f28e5a16fc56d42462803dc030a95ef8c5a8b`
+#### `ca56c0f9bc02a3e6f69612ad10a8f73ec76d5363d507ce95ec3b1792ad06da1f`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-beta15
+ENV DRUPAL_VERSION=8.0.0-beta16
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:58 GMT
--	Parent Layer: `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:13 GMT
+-	Parent Layer: `4763385f77db280493639b22a8a7f5007159de0c8712b553eb321f419e7b93e4`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `605395f8014684cb2cb316e361bb5b0b389d3f129035af93e7fcd027147ba8d7`
+#### `d94734a09340941f2188bf87147d1c5e38fbc243db25cf4e4ee785392e56ba53`
 
 ```dockerfile
-ENV DRUPAL_MD5=727e700eab75395663d6c5dbd20fe6ee
+ENV DRUPAL_MD5=3204db355d8163616f10263074285aee
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:59 GMT
--	Parent Layer: `b4ae7ba9c0afc6a8f8e08057199f28e5a16fc56d42462803dc030a95ef8c5a8b`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:14 GMT
+-	Parent Layer: `ca56c0f9bc02a3e6f69612ad10a8f73ec76d5363d507ce95ec3b1792ad06da1f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2829732f0756350d8492ee1d6f52ff15d82743ae04affddf2b69cce3b3f1c3f1`
+#### `bd74ce81526df7edbb99f304278c64d51cbb5e65164a56b8bf05031f7393ea6f`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -2242,24 +2284,24 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Thu, 10 Sep 2015 04:04:03 GMT
--	Parent Layer: `605395f8014684cb2cb316e361bb5b0b389d3f129035af93e7fcd027147ba8d7`
--	Docker Version: 1.7.1
--	Virtual Size: 53.2 MB (53221476 bytes)
--	v2 Blob: `sha256:1c6bf57143aa406adc5213399032387309b47d7bcf68a37aab55f0512b5cdf19`
--	v2 Content-Length: 11.2 MB (11227227 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 02:00:13 GMT
+-	Created: Fri, 02 Oct 2015 22:25:20 GMT
+-	Parent Layer: `d94734a09340941f2188bf87147d1c5e38fbc243db25cf4e4ee785392e56ba53`
+-	Docker Version: 1.8.2
+-	Virtual Size: 54.0 MB (54006245 bytes)
+-	v2 Blob: `sha256:9cc4198db35ecf79251bb34bc3bcf6d439e18d2740be9bdb7083ccdc0215b795`
+-	v2 Content-Length: 11.4 MB (11377174 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:30:38 GMT
 
 ## `drupal:8.0`
 
 ```console
-$ docker pull library/drupal@sha256:2aebf25d0ad5045fe159bebcdb29a3b18994419aa6d29187aa6103c4712c171b
+$ docker pull library/drupal@sha256:1ac5474abecdfec295656c5853c17ba65b44e2bee82c8fc3385b38896f9cad93
 ```
 
--	Total Virtual Size: 566.9 MB (566897162 bytes)
--	Total v2 Content-Length: 185.5 MB (185511939 bytes)
+-	Total Virtual Size: 571.1 MB (571061530 bytes)
+-	Total v2 Content-Length: 186.7 MB (186703631 bytes)
 
-### Layers (28)
+### Layers (29)
 
 #### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
 
@@ -2400,63 +2442,63 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	v2 Content-Length: 3.4 KB (3366 bytes)
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:51:04 GMT
 
-#### `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
+#### `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
 
 ```dockerfile
-COPY file:82a8ff091c202126e8a44a36f7c441b6c534f02cf515bc0706db25501bace857 in /etc/apache2/apache2.conf
+COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
 -	Parent Layer: `9621eba31daf0fe52c2f9c66d5e88ddab9b89859d2f32908e2698c2b61289bbe`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.5 KB (1520 bytes)
--	v2 Blob: `sha256:7dc94c4112c586828689e398510577b36628631719e7e3c9b3e11280b0d58da5`
+-	v2 Blob: `sha256:6c6389db7d98791ff3c5c065b3d7578b831e8b2aaf5c0e6595e2d0ef2d1f2baf`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:59 GMT
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:43:03 GMT
 
-#### `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
+#### `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
 
 ```dockerfile
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
--	Parent Layer: `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
+-	Parent Layer: `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
+#### `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
 
 ```dockerfile
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:10 GMT
--	Parent Layer: `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:42 GMT
+-	Parent Layer: `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
+#### `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
 
 ```dockerfile
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:37 GMT
--	Parent Layer: `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:16 GMT
+-	Parent Layer: `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
+#### `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
 
 ```dockerfile
 RUN set -xe \
@@ -2465,29 +2507,29 @@ RUN set -xe \
 	done
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:20 GMT
+-	Parent Layer: `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
+-	Docker Version: 1.8.2
 -	Virtual Size: 16.6 KB (16552 bytes)
--	v2 Blob: `sha256:05609d9af281dd11d2b00238144f7acd2d3b54955a7ad6175332a65e6ff688dd`
--	v2 Content-Length: 7.6 KB (7588 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:43 GMT
+-	v2 Blob: `sha256:1947dd69e2807158de667a003725f9794bfa9d40d71b504430e7344d4961e602`
+-	v2 Content-Length: 7.6 KB (7584 bytes)
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:55:06 GMT
 
-#### `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
+#### `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
 
 ```dockerfile
-ENV PHP_VERSION=5.6.13
+ENV PHP_VERSION=5.6.14
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:04:16 GMT
+-	Parent Layer: `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
+#### `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
 
 ```dockerfile
 RUN buildDeps=" \
@@ -2529,158 +2571,179 @@ RUN buildDeps=" \
 	&& make clean
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:51 GMT
--	Parent Layer: `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
--	Docker Version: 1.7.1
--	Virtual Size: 152.6 MB (152567097 bytes)
--	v2 Blob: `sha256:d9ce090325c14457f50b4c909bf9cd83d2dd725184ac4829c96bf984d4302509`
--	v2 Content-Length: 31.6 MB (31604093 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:33 GMT
+-	Created: Fri, 02 Oct 2015 21:08:21 GMT
+-	Parent Layer: `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 153.1 MB (153074502 bytes)
+-	v2 Blob: `sha256:595eb04d75b7b7196cc03f353f38feabe4851e0fe6360509e085969511d184c9`
+-	v2 Content-Length: 31.9 MB (31860059 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:28:17 GMT
 
-#### `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
+#### `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
 
 ```dockerfile
-COPY multi:f55c2dabfb9111446ee05aec9da02f195eaffa07c573a1eacf6409e6d801f5ef in /usr/local/bin/
+COPY multi:a86bc89488530268091f407c455078b1f711473a7955eb5e1f90630c88e53d9d in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:26 GMT
+-	Parent Layer: `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
+-	Docker Version: 1.8.2
 -	Virtual Size: 2.8 KB (2807 bytes)
--	v2 Blob: `sha256:aeba873793c280de0c71b8ab5a7f3214cf5420a90c4d68b4f9f44aa7187f25b1`
--	v2 Content-Length: 1.3 KB (1329 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:00 GMT
+-	v2 Blob: `sha256:15fd40180df020d4e2d20a835b52df7e2a4639dcd7d7bab1c80d8158050fa4b9`
+-	v2 Content-Length: 1.3 KB (1326 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:45 GMT
 
-#### `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
+#### `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
 
 ```dockerfile
-COPY file:cb43d7f6cf3828bf8e5b53b4a94caad0f95f141baa430c05f9e6a9dd7b33bab3 in /usr/local/bin/
+COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 132.0 B
--	v2 Blob: `sha256:df13a8e36b2f25a4b2dd551a9799f9dac516f9c4c06a7ec4d8bfc3a5ad21e544`
+-	v2 Blob: `sha256:c12784b2cd7558454e2de91aaad0b5768aaf15639e490c9c6401f51f2dd01bfe`
 -	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:56 GMT
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:42 GMT
 
-#### `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
+#### `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
+#### `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
+#### `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
+#### `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
 
 ```dockerfile
 RUN a2enmod rewrite
 ```
 
--	Created: Thu, 10 Sep 2015 03:04:15 GMT
--	Parent Layer: `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:08:07 GMT
+-	Parent Layer: `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 30.0 B
--	v2 Blob: `sha256:f81b285a9f57847b0e1132fd29b9f1305b89319d6deac85f5f7fb9cb6ac5de55`
--	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:39 GMT
+-	v2 Blob: `sha256:513efb2f903a945c0ff071e970513c3791a46b7ec31da635491ad728cb3676ab`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:31 GMT
 
-#### `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
+#### `a6a8a87c26eaa476d800e98fb58674ec2f113a2371575ad3136de0d7f440068e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
-	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql
+	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:02 GMT
--	Parent Layer: `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
--	Docker Version: 1.7.1
--	Virtual Size: 32.9 MB (32900122 bytes)
--	v2 Blob: `sha256:c231d546ef8a0216f31ef96780b88d66535b814df10b1e32da10b7159fe664f7`
--	v2 Content-Length: 10.5 MB (10512399 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:34 GMT
+-	Created: Fri, 02 Oct 2015 22:25:10 GMT
+-	Parent Layer: `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
+-	Docker Version: 1.8.2
+-	Virtual Size: 35.8 MB (35772144 bytes)
+-	v2 Blob: `sha256:9798357d56ccef17be2317139650290efb2e5d150d687654d0e5cf07749d3745`
+-	v2 Content-Length: 11.3 MB (11297853 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:31:04 GMT
 
-#### `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
+#### `47b8cd631d33b98ebf7dfd6910e700a06b5de4a42e6c0747e6d82f72efbdc4a0`
+
+```dockerfile
+RUN { \
+		echo 'opcache.memory_consumption=128'; \
+		echo 'opcache.interned_strings_buffer=8'; \
+		echo 'opcache.max_accelerated_files=4000'; \
+		echo 'opcache.revalidate_freq=60'; \
+		echo 'opcache.fast_shutdown=1'; \
+		echo 'opcache.enable_cli=1'; \
+	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
+```
+
+-	Created: Fri, 02 Oct 2015 22:25:12 GMT
+-	Parent Layer: `a6a8a87c26eaa476d800e98fb58674ec2f113a2371575ad3136de0d7f440068e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 172.0 B
+-	v2 Blob: `sha256:999b5ee2bc76409c067576caa79bab3fa61412869d4765b7edd2c98fd370510e`
+-	v2 Content-Length: 333.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:30:55 GMT
+
+#### `4763385f77db280493639b22a8a7f5007159de0c8712b553eb321f419e7b93e4`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:03 GMT
--	Parent Layer: `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:12 GMT
+-	Parent Layer: `47b8cd631d33b98ebf7dfd6910e700a06b5de4a42e6c0747e6d82f72efbdc4a0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b4ae7ba9c0afc6a8f8e08057199f28e5a16fc56d42462803dc030a95ef8c5a8b`
+#### `ca56c0f9bc02a3e6f69612ad10a8f73ec76d5363d507ce95ec3b1792ad06da1f`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-beta15
+ENV DRUPAL_VERSION=8.0.0-beta16
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:58 GMT
--	Parent Layer: `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:13 GMT
+-	Parent Layer: `4763385f77db280493639b22a8a7f5007159de0c8712b553eb321f419e7b93e4`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `605395f8014684cb2cb316e361bb5b0b389d3f129035af93e7fcd027147ba8d7`
+#### `d94734a09340941f2188bf87147d1c5e38fbc243db25cf4e4ee785392e56ba53`
 
 ```dockerfile
-ENV DRUPAL_MD5=727e700eab75395663d6c5dbd20fe6ee
+ENV DRUPAL_MD5=3204db355d8163616f10263074285aee
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:59 GMT
--	Parent Layer: `b4ae7ba9c0afc6a8f8e08057199f28e5a16fc56d42462803dc030a95ef8c5a8b`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:14 GMT
+-	Parent Layer: `ca56c0f9bc02a3e6f69612ad10a8f73ec76d5363d507ce95ec3b1792ad06da1f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2829732f0756350d8492ee1d6f52ff15d82743ae04affddf2b69cce3b3f1c3f1`
+#### `bd74ce81526df7edbb99f304278c64d51cbb5e65164a56b8bf05031f7393ea6f`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -2690,24 +2753,24 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Thu, 10 Sep 2015 04:04:03 GMT
--	Parent Layer: `605395f8014684cb2cb316e361bb5b0b389d3f129035af93e7fcd027147ba8d7`
--	Docker Version: 1.7.1
--	Virtual Size: 53.2 MB (53221476 bytes)
--	v2 Blob: `sha256:1c6bf57143aa406adc5213399032387309b47d7bcf68a37aab55f0512b5cdf19`
--	v2 Content-Length: 11.2 MB (11227227 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 02:00:13 GMT
+-	Created: Fri, 02 Oct 2015 22:25:20 GMT
+-	Parent Layer: `d94734a09340941f2188bf87147d1c5e38fbc243db25cf4e4ee785392e56ba53`
+-	Docker Version: 1.8.2
+-	Virtual Size: 54.0 MB (54006245 bytes)
+-	v2 Blob: `sha256:9cc4198db35ecf79251bb34bc3bcf6d439e18d2740be9bdb7083ccdc0215b795`
+-	v2 Content-Length: 11.4 MB (11377174 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:30:38 GMT
 
 ## `drupal:8`
 
 ```console
-$ docker pull library/drupal@sha256:b89f1a7f1f9374bf58d6767ecf7f24960ff56e07f94e90e35f2ecb4e16be16e9
+$ docker pull library/drupal@sha256:bb18d6d64031ee014ce8c9118e71f472afb6a6b619e0457bf99a0e3a503befe5
 ```
 
--	Total Virtual Size: 566.9 MB (566897162 bytes)
--	Total v2 Content-Length: 185.5 MB (185511939 bytes)
+-	Total Virtual Size: 571.1 MB (571061530 bytes)
+-	Total v2 Content-Length: 186.7 MB (186703631 bytes)
 
-### Layers (28)
+### Layers (29)
 
 #### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
 
@@ -2848,63 +2911,63 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	v2 Content-Length: 3.4 KB (3366 bytes)
 -	v2 Last-Modified: Fri, 11 Sep 2015 01:51:04 GMT
 
-#### `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
+#### `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
 
 ```dockerfile
-COPY file:82a8ff091c202126e8a44a36f7c441b6c534f02cf515bc0706db25501bace857 in /etc/apache2/apache2.conf
+COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /etc/apache2/apache2.conf
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
 -	Parent Layer: `9621eba31daf0fe52c2f9c66d5e88ddab9b89859d2f32908e2698c2b61289bbe`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.5 KB (1520 bytes)
--	v2 Blob: `sha256:7dc94c4112c586828689e398510577b36628631719e7e3c9b3e11280b0d58da5`
+-	v2 Blob: `sha256:6c6389db7d98791ff3c5c065b3d7578b831e8b2aaf5c0e6595e2d0ef2d1f2baf`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:59 GMT
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:43:03 GMT
 
-#### `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
+#### `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
 
 ```dockerfile
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:09 GMT
--	Parent Layer: `086881f77ae0ca0bd849f81e8b691d6574766532ec9b1ae20a1ea28886a58131`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:41 GMT
+-	Parent Layer: `c1719626ec08eb81327fa4b2611e2366cdbb4d09a439e3ebbe737bbad5a22ddd`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
+#### `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
 
 ```dockerfile
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 ```
 
--	Created: Wed, 09 Sep 2015 23:50:10 GMT
--	Parent Layer: `ea8f1ce72c6fa36b320d98dc29ad0b1cdff5cb32be0e15a16004f7645813ee49`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:25:42 GMT
+-	Parent Layer: `80419309cd273e309a5d18b129fa02a02c301329191bdf6cb209b0a49f6bba26`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
+#### `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
 
 ```dockerfile
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:37 GMT
--	Parent Layer: `445e4a0cc9a1e8bf681ccea57eedd478401ff5fbe79646e0a0460a41e2aabd55`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:16 GMT
+-	Parent Layer: `81f2929c91fd50473aef0f72dcc507206c25b2d4673c155e7e14e00d8dc59245`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
+#### `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
 
 ```dockerfile
 RUN set -xe \
@@ -2913,29 +2976,29 @@ RUN set -xe \
 	done
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d92aebb6487c4a25e14748051eb0b0e64ea797a03a9b35be4cda1c686c169558`
--	Docker Version: 1.7.1
+-	Created: Wed, 23 Sep 2015 19:43:20 GMT
+-	Parent Layer: `0816813a5c0094f54820c957809d24f325675fc9df6d529d9e882f6a37cde70e`
+-	Docker Version: 1.8.2
 -	Virtual Size: 16.6 KB (16552 bytes)
--	v2 Blob: `sha256:05609d9af281dd11d2b00238144f7acd2d3b54955a7ad6175332a65e6ff688dd`
--	v2 Content-Length: 7.6 KB (7588 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:43 GMT
+-	v2 Blob: `sha256:1947dd69e2807158de667a003725f9794bfa9d40d71b504430e7344d4961e602`
+-	v2 Content-Length: 7.6 KB (7584 bytes)
+-	v2 Last-Modified: Wed, 23 Sep 2015 20:55:06 GMT
 
-#### `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
+#### `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
 
 ```dockerfile
-ENV PHP_VERSION=5.6.13
+ENV PHP_VERSION=5.6.14
 ```
 
--	Created: Thu, 10 Sep 2015 00:30:41 GMT
--	Parent Layer: `d4d42b31a19ff02e6f137c8a156ff488a234af0169a1972382168876cd1b3cc4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:04:16 GMT
+-	Parent Layer: `b5e58bc2d4745621beaecee9788c589ecb8379bb7ca8e4754586fb14f53eab8f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
+#### `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
 
 ```dockerfile
 RUN buildDeps=" \
@@ -2977,158 +3040,179 @@ RUN buildDeps=" \
 	&& make clean
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:51 GMT
--	Parent Layer: `b6b83ac801fb1e91416449655d84bddb73d9c299879a56f987a2a46fd2a0b6bb`
--	Docker Version: 1.7.1
--	Virtual Size: 152.6 MB (152567097 bytes)
--	v2 Blob: `sha256:d9ce090325c14457f50b4c909bf9cd83d2dd725184ac4829c96bf984d4302509`
--	v2 Content-Length: 31.6 MB (31604093 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:33 GMT
+-	Created: Fri, 02 Oct 2015 21:08:21 GMT
+-	Parent Layer: `e6a7117ba79340cbe91623605d84a9e812973865ca6470c49302f3ebacd2513e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 153.1 MB (153074502 bytes)
+-	v2 Blob: `sha256:595eb04d75b7b7196cc03f353f38feabe4851e0fe6360509e085969511d184c9`
+-	v2 Content-Length: 31.9 MB (31860059 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:28:17 GMT
 
-#### `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
+#### `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
 
 ```dockerfile
-COPY multi:f55c2dabfb9111446ee05aec9da02f195eaffa07c573a1eacf6409e6d801f5ef in /usr/local/bin/
+COPY multi:a86bc89488530268091f407c455078b1f711473a7955eb5e1f90630c88e53d9d in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `c9fdb32c012714d3e93b4d3b641032ca97c6b0e464de3cee8e75039bbb6be710`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:26 GMT
+-	Parent Layer: `5b5212e788c71b03eabeadc74730258a5d403f5102fe343faa4bba65033c6eac`
+-	Docker Version: 1.8.2
 -	Virtual Size: 2.8 KB (2807 bytes)
--	v2 Blob: `sha256:aeba873793c280de0c71b8ab5a7f3214cf5420a90c4d68b4f9f44aa7187f25b1`
--	v2 Content-Length: 1.3 KB (1329 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:50:00 GMT
+-	v2 Blob: `sha256:15fd40180df020d4e2d20a835b52df7e2a4639dcd7d7bab1c80d8158050fa4b9`
+-	v2 Content-Length: 1.3 KB (1326 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:45 GMT
 
-#### `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
+#### `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
 
 ```dockerfile
-COPY file:cb43d7f6cf3828bf8e5b53b4a94caad0f95f141baa430c05f9e6a9dd7b33bab3 in /usr/local/bin/
+COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /usr/local/bin/
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:55 GMT
--	Parent Layer: `169fb5288ecdaf6cb4778e90852ab34a4ce84301bcd9eac796193784c4550df0`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `0744d004e1363d845ea878565ec1db120aaa7b452f43ac86dce34982ba0034b8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 132.0 B
--	v2 Blob: `sha256:df13a8e36b2f25a4b2dd551a9799f9dac516f9c4c06a7ec4d8bfc3a5ad21e544`
+-	v2 Blob: `sha256:c12784b2cd7558454e2de91aaad0b5768aaf15639e490c9c6401f51f2dd01bfe`
 -	v2 Content-Length: 292.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:56 GMT
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:42 GMT
 
-#### `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
+#### `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `0d9982a8d699319e4cb3c1438470f2b2f7be16b95ecd4823215dd00d6cb4c4d4`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:27 GMT
+-	Parent Layer: `5ae5646ce6aa6fce0507918b3454060cecaaa102e0661c2f7f832c09c22433b0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
+#### `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `e380d0dac8199964c9030600a85ed3561a583cacf48ba47dd84735049c72adbf`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `ca511f463325031aec039867f8d501e287c326f3f7ca954c47885c577c44550f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
+#### `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Thu, 10 Sep 2015 00:34:56 GMT
--	Parent Layer: `ab6ded1ae607322ce6bee62be84dabc722c6ac8bef68a689667f4bf45dbb11f9`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 21:08:28 GMT
+-	Parent Layer: `6ccef6dcfffd1e3c94f1de88ebe989610cccd2a067b3746c52b8150899ad679c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
+#### `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
 
 ```dockerfile
 RUN a2enmod rewrite
 ```
 
--	Created: Thu, 10 Sep 2015 03:04:15 GMT
--	Parent Layer: `ece68e07f8991514d2786a47e6010b6d435f79ab2097016fc828b098c55f0792`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:08:07 GMT
+-	Parent Layer: `efa117a46d247c7e1992634658a83c849248ddc8ae0a92b70826ef25e12304d5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 30.0 B
--	v2 Blob: `sha256:f81b285a9f57847b0e1132fd29b9f1305b89319d6deac85f5f7fb9cb6ac5de55`
--	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:39 GMT
+-	v2 Blob: `sha256:513efb2f903a945c0ff071e970513c3791a46b7ec31da635491ad728cb3676ab`
+-	v2 Content-Length: 293.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:27:31 GMT
 
-#### `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
+#### `a6a8a87c26eaa476d800e98fb58674ec2f113a2371575ad3136de0d7f440068e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
-	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql
+	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:02 GMT
--	Parent Layer: `060c8689771e547086bbde009f905d4962f6439f2db35e092dc5aaa988911f45`
--	Docker Version: 1.7.1
--	Virtual Size: 32.9 MB (32900122 bytes)
--	v2 Blob: `sha256:c231d546ef8a0216f31ef96780b88d66535b814df10b1e32da10b7159fe664f7`
--	v2 Content-Length: 10.5 MB (10512399 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 01:49:34 GMT
+-	Created: Fri, 02 Oct 2015 22:25:10 GMT
+-	Parent Layer: `c6b6692e18165ddeef679245445b26dd4e87e62587ce7cc9141854af35f96355`
+-	Docker Version: 1.8.2
+-	Virtual Size: 35.8 MB (35772144 bytes)
+-	v2 Blob: `sha256:9798357d56ccef17be2317139650290efb2e5d150d687654d0e5cf07749d3745`
+-	v2 Content-Length: 11.3 MB (11297853 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:31:04 GMT
 
-#### `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
+#### `47b8cd631d33b98ebf7dfd6910e700a06b5de4a42e6c0747e6d82f72efbdc4a0`
+
+```dockerfile
+RUN { \
+		echo 'opcache.memory_consumption=128'; \
+		echo 'opcache.interned_strings_buffer=8'; \
+		echo 'opcache.max_accelerated_files=4000'; \
+		echo 'opcache.revalidate_freq=60'; \
+		echo 'opcache.fast_shutdown=1'; \
+		echo 'opcache.enable_cli=1'; \
+	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
+```
+
+-	Created: Fri, 02 Oct 2015 22:25:12 GMT
+-	Parent Layer: `a6a8a87c26eaa476d800e98fb58674ec2f113a2371575ad3136de0d7f440068e`
+-	Docker Version: 1.8.2
+-	Virtual Size: 172.0 B
+-	v2 Blob: `sha256:999b5ee2bc76409c067576caa79bab3fa61412869d4765b7edd2c98fd370510e`
+-	v2 Content-Length: 333.0 B
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:30:55 GMT
+
+#### `4763385f77db280493639b22a8a7f5007159de0c8712b553eb321f419e7b93e4`
 
 ```dockerfile
 WORKDIR /var/www/html
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:03 GMT
--	Parent Layer: `504b529831148dd006c558a887ceafc6186252a929f3252be4f30ec35d02f3cc`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:12 GMT
+-	Parent Layer: `47b8cd631d33b98ebf7dfd6910e700a06b5de4a42e6c0747e6d82f72efbdc4a0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b4ae7ba9c0afc6a8f8e08057199f28e5a16fc56d42462803dc030a95ef8c5a8b`
+#### `ca56c0f9bc02a3e6f69612ad10a8f73ec76d5363d507ce95ec3b1792ad06da1f`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-beta15
+ENV DRUPAL_VERSION=8.0.0-beta16
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:58 GMT
--	Parent Layer: `4f4fef7c92285b6a38fd097001a1f56e76bed78555c57483dd4fca92e62738d8`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:13 GMT
+-	Parent Layer: `4763385f77db280493639b22a8a7f5007159de0c8712b553eb321f419e7b93e4`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `605395f8014684cb2cb316e361bb5b0b389d3f129035af93e7fcd027147ba8d7`
+#### `d94734a09340941f2188bf87147d1c5e38fbc243db25cf4e4ee785392e56ba53`
 
 ```dockerfile
-ENV DRUPAL_MD5=727e700eab75395663d6c5dbd20fe6ee
+ENV DRUPAL_MD5=3204db355d8163616f10263074285aee
 ```
 
--	Created: Thu, 10 Sep 2015 04:03:59 GMT
--	Parent Layer: `b4ae7ba9c0afc6a8f8e08057199f28e5a16fc56d42462803dc030a95ef8c5a8b`
--	Docker Version: 1.7.1
+-	Created: Fri, 02 Oct 2015 22:25:14 GMT
+-	Parent Layer: `ca56c0f9bc02a3e6f69612ad10a8f73ec76d5363d507ce95ec3b1792ad06da1f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2829732f0756350d8492ee1d6f52ff15d82743ae04affddf2b69cce3b3f1c3f1`
+#### `bd74ce81526df7edbb99f304278c64d51cbb5e65164a56b8bf05031f7393ea6f`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -3138,10 +3222,10 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Thu, 10 Sep 2015 04:04:03 GMT
--	Parent Layer: `605395f8014684cb2cb316e361bb5b0b389d3f129035af93e7fcd027147ba8d7`
--	Docker Version: 1.7.1
--	Virtual Size: 53.2 MB (53221476 bytes)
--	v2 Blob: `sha256:1c6bf57143aa406adc5213399032387309b47d7bcf68a37aab55f0512b5cdf19`
--	v2 Content-Length: 11.2 MB (11227227 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 02:00:13 GMT
+-	Created: Fri, 02 Oct 2015 22:25:20 GMT
+-	Parent Layer: `d94734a09340941f2188bf87147d1c5e38fbc243db25cf4e4ee785392e56ba53`
+-	Docker Version: 1.8.2
+-	Virtual Size: 54.0 MB (54006245 bytes)
+-	v2 Blob: `sha256:9cc4198db35ecf79251bb34bc3bcf6d439e18d2740be9bdb7083ccdc0215b795`
+-	v2 Content-Length: 11.4 MB (11377174 bytes)
+-	v2 Last-Modified: Fri, 02 Oct 2015 22:30:38 GMT
