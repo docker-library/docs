@@ -57,8 +57,8 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 	-	using the celery image:
 
 		```console
-		$ docker run -d --name celery-beat --link some-redis:redis  -e CELERY_BROKER_URL=redis://redis celery celery beat
-		$ docker run -d --name celery-worker1 --link some-redis:redis  -e CELERY_BROKER_URL=redis://redis celery
+		$ docker run -d --name celery-beat --link some-redis:redis --link some-postgres:postgres -e CELERY_BROKER_URL=redis://redis celery celery beat
+		$ docker run -d --name celery-worker1 --link some-redis:redis --link some-postgres:postgres -e CELERY_BROKER_URL=redis://redis celery
 		```
 
 	-	using the celery bundled with sentry
