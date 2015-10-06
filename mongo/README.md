@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/d356e7da1cf470d732a5e92b41eae66aa09e7c77/2.2/Dockerfile)
--	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/d356e7da1cf470d732a5e92b41eae66aa09e7c77/2.4/Dockerfile)
--	[`2.6.11`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/d356e7da1cf470d732a5e92b41eae66aa09e7c77/2.6/Dockerfile)
--	[`3.0.6`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/d356e7da1cf470d732a5e92b41eae66aa09e7c77/3.0/Dockerfile)
--	[`3.1.8`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/d356e7da1cf470d732a5e92b41eae66aa09e7c77/3.1/Dockerfile)
+-	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.2/Dockerfile)
+-	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.4/Dockerfile)
+-	[`2.6.11`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.6/Dockerfile)
+-	[`3.0.6`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/3.0/Dockerfile)
+-	[`3.1.8`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/3.1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
