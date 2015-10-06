@@ -707,7 +707,7 @@ CMD ["docker-registry"]
 ## `registry:2`
 
 ```console
-$ docker pull library/registry@sha256:acade6d969effe6f1a9370c59128113ea604d4fcbe2aaa4dafdd3cb1efa72f99
+$ docker pull library/registry@sha256:638ece223dd56a62dac03581392eb05266db82309dadc9dbe66c9877ad0c5b6c
 ```
 
 -	Total Virtual Size: 220.7 MB (220650278 bytes)
@@ -884,7 +884,7 @@ CMD ["/etc/docker/registry/config.yml"]
 ## `registry:2.1`
 
 ```console
-$ docker pull library/registry@sha256:dd6032e594c85782b150f361406ff28a34a5f70137d2b194d0886523a1d6c040
+$ docker pull library/registry@sha256:0460422be35dfaf03f1e5d147944d51a64936a2ea52a9722d4a49101fca4eca6
 ```
 
 -	Total Virtual Size: 220.7 MB (220650278 bytes)
@@ -1061,7 +1061,7 @@ CMD ["/etc/docker/registry/config.yml"]
 ## `registry:2.1.1`
 
 ```console
-$ docker pull library/registry@sha256:dc48a30254c2083aaf794267419fde5a057bf792ae0e272cfbf6f18c5aae1f99
+$ docker pull library/registry@sha256:1bbc7797b963461abdc79deac6284f448f0f6a585a2c18bb8330d40db81c17e7
 ```
 
 -	Total Virtual Size: 220.7 MB (220650278 bytes)
