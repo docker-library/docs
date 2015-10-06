@@ -85,7 +85,9 @@ This image is licensed under the MIT License (see [LICENSE](https://github.com/d
 
 This image is officially supported on Docker version 1.8.2.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
