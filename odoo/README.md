@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/0afa334549c20c2a00eb1b8f5540c2f35bd7cac4/8.0/Dockerfile)
+-	[`8.0`, `8` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/6e12a6494782a2aec83346cae9c77d971b0d73b3/8.0/Dockerfile)
+-	[`9.0`, `9`, `latest` (*9.0/Dockerfile*)](https://github.com/odoo/docker/blob/6e12a6494782a2aec83346cae9c77d971b0d73b3/9.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/odoo`)](https://github.com/docker-library/official-images/blob/master/library/odoo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
