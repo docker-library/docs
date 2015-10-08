@@ -47,7 +47,7 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
 If you want to generate the scaffolding for a new Rails project, you can do the following:
 
 ```console
-$ docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new webapp
+$ docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new --skip-bundle webapp
 ```
 
 This will create a sub-directory named `webapp` inside your current directory.
