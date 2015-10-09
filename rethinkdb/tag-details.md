@@ -23,6 +23,7 @@
 -	[`rethinkdb:2.1.2`](#rethinkdb212)
 -	[`rethinkdb:2.1.3`](#rethinkdb213)
 -	[`rethinkdb:2.1.4`](#rethinkdb214)
+-	[`rethinkdb:2.1.5`](#rethinkdb215)
 -	[`rethinkdb:2.1`](#rethinkdb21)
 -	[`rethinkdb:2`](#rethinkdb2)
 -	[`rethinkdb:latest`](#rethinkdblatest)
@@ -30,98 +31,98 @@
 ## `rethinkdb:1.15.1`
 
 ```console
-$ docker pull library/rethinkdb@sha256:2afd0b337d99ee2fbbfb3547064b4e3c9d2465737e9529225baa3a0fc5b67144
+$ docker pull library/rethinkdb@sha256:afcc9cd7424548f732f63add56faa095b1894c1eb6c34213b95ba369c6016828
 ```
 
--	Total Virtual Size: 179.5 MB (179488633 bytes)
--	Total v2 Content-Length: 74.6 MB (74575955 bytes)
+-	Total Virtual Size: 179.5 MB (179489475 bytes)
+-	Total v2 Content-Length: 74.6 MB (74576533 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `a2c8bec4f2a3ed5ad6511ec61c15635e9c8d6a0f6be66c63036945313c089193`
+#### `eb1efe4561162735e6ca46430b2b4ec657a0b453ec98ccf284dbab38f4fcc040`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=1.15.1~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:01 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `487f9ecad1177bd32a5220422485197c4046534f105b959aaf7e56eebc58e057`
+#### `3f0b917d1ed4036bf8f968e68e15b1e7dea3568fc65176c4d430a295128b56b9`
 
 ```dockerfile
 RUN apt-get update \
@@ -129,65 +130,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:12:07 GMT
--	Parent Layer: `a2c8bec4f2a3ed5ad6511ec61c15635e9c8d6a0f6be66c63036945313c089193`
--	Docker Version: 1.7.1
--	Virtual Size: 54.3 MB (54328248 bytes)
--	v2 Blob: `sha256:1dd1dfb35e44ffe3ef9433b7adf0fb033f20dcfaf05a403ee280a2d347ba26f7`
--	v2 Content-Length: 23.2 MB (23214368 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:42:53 GMT
+-	Created: Fri, 09 Oct 2015 20:12:53 GMT
+-	Parent Layer: `eb1efe4561162735e6ca46430b2b4ec657a0b453ec98ccf284dbab38f4fcc040`
+-	Docker Version: 1.8.2
+-	Virtual Size: 54.3 MB (54329090 bytes)
+-	v2 Blob: `sha256:82be51e97ce9411fef4fdd4f9c71ac28efc29bd6a6e7e6910472ba95b1dbd1f9`
+-	v2 Content-Length: 23.2 MB (23214951 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:40 GMT
 
-#### `d5de2670ab6a736eade2e0e4f4e393d544fb860b29fdc11a1eb338b38facadef`
+#### `cbc4b1b458919d20966d6938f68a58723d05f777cf47a614ea539b9241c504cb`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:12:07 GMT
--	Parent Layer: `487f9ecad1177bd32a5220422485197c4046534f105b959aaf7e56eebc58e057`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:54 GMT
+-	Parent Layer: `3f0b917d1ed4036bf8f968e68e15b1e7dea3568fc65176c4d430a295128b56b9`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ac5a3e454292e771bf5dc5e9c240f0766b0e677dfd451fd71af0cc2d6cf582c9`
+#### `fa41aa6151e47530ead6e72d3ec697cc9e292643b6903e3e4dee2fabd9457f46`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:12:08 GMT
--	Parent Layer: `d5de2670ab6a736eade2e0e4f4e393d544fb860b29fdc11a1eb338b38facadef`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:55 GMT
+-	Parent Layer: `cbc4b1b458919d20966d6938f68a58723d05f777cf47a614ea539b9241c504cb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `dd87e85ddd1e33ed2390ad45a16c56a6d0cb54318ac29d222a4a553b98efa56f`
+#### `835a65fec35e3eeaedfd70e3b4c0a087560006d4ca33ee4793fad8470b5b5fcf`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:12:08 GMT
--	Parent Layer: `ac5a3e454292e771bf5dc5e9c240f0766b0e677dfd451fd71af0cc2d6cf582c9`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:55 GMT
+-	Parent Layer: `fa41aa6151e47530ead6e72d3ec697cc9e292643b6903e3e4dee2fabd9457f46`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5ec7925e11fba50fadfb1b66f1bebbf0577e3dccae86a3567ce81e8b849250ee`
+#### `c710994a0c8b97429cd242202bce7790a9549d785858c8e37f7fb3d6163dfc9c`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:12:09 GMT
--	Parent Layer: `dd87e85ddd1e33ed2390ad45a16c56a6d0cb54318ac29d222a4a553b98efa56f`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:56 GMT
+-	Parent Layer: `835a65fec35e3eeaedfd70e3b4c0a087560006d4ca33ee4793fad8470b5b5fcf`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -196,98 +197,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.15.2`
 
 ```console
-$ docker pull library/rethinkdb@sha256:b22e05a00deff0267d963e50868337c24a6b63f2e2a97d3b9f7c3e80727f5982
+$ docker pull library/rethinkdb@sha256:866fa7f47b383f0ae3aaea1440696766c00a5b0738963eaa63de1ddb8e58b3a5
 ```
 
--	Total Virtual Size: 179.5 MB (179510073 bytes)
--	Total v2 Content-Length: 74.6 MB (74583113 bytes)
+-	Total Virtual Size: 179.5 MB (179510915 bytes)
+-	Total v2 Content-Length: 74.6 MB (74583053 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `f11d6deb516e29065783ba5b71b9472fdef50a7efc765d241ae5430b14fc0459`
+#### `b63ea91a5c08b25d727fe9d52b600e4a2c8327408985fb273e609025308517d0`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=1.15.2~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:12:22 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:13:06 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `88ad2914d0695606ca4a54a68580e7157e15593146eaac769fadc2861c50d6c2`
+#### `cc3823ab15233e453ff82a8180ce52b7e02420a90aa02692db0bbd5264501455`
 
 ```dockerfile
 RUN apt-get update \
@@ -295,65 +296,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:13:09 GMT
--	Parent Layer: `f11d6deb516e29065783ba5b71b9472fdef50a7efc765d241ae5430b14fc0459`
--	Docker Version: 1.7.1
--	Virtual Size: 54.3 MB (54349688 bytes)
--	v2 Blob: `sha256:5380c9a32431589a303724679ea4adc1852e2d952967c0ac79908c24af2a5ccc`
--	v2 Content-Length: 23.2 MB (23221526 bytes)
--	v2 Last-Modified: Mon, 14 Sep 2015 21:07:20 GMT
+-	Created: Fri, 09 Oct 2015 20:13:58 GMT
+-	Parent Layer: `b63ea91a5c08b25d727fe9d52b600e4a2c8327408985fb273e609025308517d0`
+-	Docker Version: 1.8.2
+-	Virtual Size: 54.4 MB (54350530 bytes)
+-	v2 Blob: `sha256:1da28b3f97b692bc453cee3cc807f1ca5f85004556291baeb3344a52e931f3c2`
+-	v2 Content-Length: 23.2 MB (23221471 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:40:48 GMT
 
-#### `bc11cbe6276127c1b197a3d210867ebe25f4a96e71385569166193d3e21b9b8a`
+#### `0678829c1076bc980ad96bff60a1f7c0b7679457099eb6823f31a713145fbf29`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:13:09 GMT
--	Parent Layer: `88ad2914d0695606ca4a54a68580e7157e15593146eaac769fadc2861c50d6c2`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:13:59 GMT
+-	Parent Layer: `cc3823ab15233e453ff82a8180ce52b7e02420a90aa02692db0bbd5264501455`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `29838b6fc82a12994b200f2a12f73e489c5c501807c7b0f4ea2ca9d780b33519`
+#### `cc6ecfd571439de1f90f84a55649a8943a0810e04b68694eddb402a159396cc2`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:13:10 GMT
--	Parent Layer: `bc11cbe6276127c1b197a3d210867ebe25f4a96e71385569166193d3e21b9b8a`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:13:59 GMT
+-	Parent Layer: `0678829c1076bc980ad96bff60a1f7c0b7679457099eb6823f31a713145fbf29`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f8b13262d4aa42f201855ff80f4ad5b2b1e67aafa438817cb87bf9a9fee70868`
+#### `9f3fe2bb130a47e763a2150163f0f0cfc2f7385596616bc1ff2963f58bb014dd`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:13:10 GMT
--	Parent Layer: `29838b6fc82a12994b200f2a12f73e489c5c501807c7b0f4ea2ca9d780b33519`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:13:59 GMT
+-	Parent Layer: `cc6ecfd571439de1f90f84a55649a8943a0810e04b68694eddb402a159396cc2`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d4a2443f4e4c156c40b6458b33f10f5f185c2ac1face50548146b2e4d14766b5`
+#### `ba137295426cc009b4e9f4a6c55f3c1ebf725662c51fb6f27446a4d6a6dfe264`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:13:11 GMT
--	Parent Layer: `f8b13262d4aa42f201855ff80f4ad5b2b1e67aafa438817cb87bf9a9fee70868`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:14:00 GMT
+-	Parent Layer: `9f3fe2bb130a47e763a2150163f0f0cfc2f7385596616bc1ff2963f58bb014dd`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -362,98 +363,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.15.3`
 
 ```console
-$ docker pull library/rethinkdb@sha256:1214f3fd24a77106580b3ac274d022b2f099d228530aa8f15aa0691b5bb24449
+$ docker pull library/rethinkdb@sha256:493753bfd9fa72992f798240c58bffb99fcea0fb60083ef429a338d83fc44ab3
 ```
 
--	Total Virtual Size: 179.5 MB (179513591 bytes)
--	Total v2 Content-Length: 74.6 MB (74585072 bytes)
+-	Total Virtual Size: 179.5 MB (179514433 bytes)
+-	Total v2 Content-Length: 74.6 MB (74585192 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `279b6ce99c67558fb576791c71a1c5320d736f4cfba45828a5948bb5ef5a273c`
+#### `bb01b3ea32a2ed3aed21b5f24f4550f55746801f9f6c0dbc1a9300d5ee986138`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=1.15.3~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:13:24 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:14:10 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0a8f829cd024e1d5e79dd90b21f1dacf9066e493d2c80b97875da49d961dd952`
+#### `b24b88281a07719081570386d928585963083c069a7285719b730a8d40fc7a23`
 
 ```dockerfile
 RUN apt-get update \
@@ -461,65 +462,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:13 GMT
--	Parent Layer: `279b6ce99c67558fb576791c71a1c5320d736f4cfba45828a5948bb5ef5a273c`
--	Docker Version: 1.7.1
--	Virtual Size: 54.4 MB (54353206 bytes)
--	v2 Blob: `sha256:51cff9e7f96a42e6a732f0b7332d30070aec94b98ec289d5d7661ef0c173b223`
--	v2 Content-Length: 23.2 MB (23223485 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:46:24 GMT
+-	Created: Fri, 09 Oct 2015 20:15:01 GMT
+-	Parent Layer: `bb01b3ea32a2ed3aed21b5f24f4550f55746801f9f6c0dbc1a9300d5ee986138`
+-	Docker Version: 1.8.2
+-	Virtual Size: 54.4 MB (54354048 bytes)
+-	v2 Blob: `sha256:14df97222f577d747c10c103c4dbe64758f88b9a43fe7715056cfd6d07eee92b`
+-	v2 Content-Length: 23.2 MB (23223610 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:41:46 GMT
 
-#### `f58a029ed01bc027c04d397df41fa7d4eda75ca859285ce7b03c22e41a781017`
+#### `ad938c9ea6d29bc22d4ed58bbc2e0debaee03924a7361f52c7b2af3d590fccd8`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:13 GMT
--	Parent Layer: `0a8f829cd024e1d5e79dd90b21f1dacf9066e493d2c80b97875da49d961dd952`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:15:02 GMT
+-	Parent Layer: `b24b88281a07719081570386d928585963083c069a7285719b730a8d40fc7a23`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ee91fd10b8db49a82579995a46682060c6817c4765858482ea826c494b2d10c7`
+#### `73dc01b2407ab0a39cbcf13fab144cfae93c37b47d0bd3ccea7a2fa425329aeb`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:14 GMT
--	Parent Layer: `f58a029ed01bc027c04d397df41fa7d4eda75ca859285ce7b03c22e41a781017`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:15:02 GMT
+-	Parent Layer: `ad938c9ea6d29bc22d4ed58bbc2e0debaee03924a7361f52c7b2af3d590fccd8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ed07c49542121de2331ceb630d75b0fe5d976e2b0e609cc62c1b84d7ce0bd3a1`
+#### `42ae31763f053fcb3b0dfc05f5f6614acfce9bc4830937779044dc73bfa7a39c`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:14 GMT
--	Parent Layer: `ee91fd10b8db49a82579995a46682060c6817c4765858482ea826c494b2d10c7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:15:03 GMT
+-	Parent Layer: `73dc01b2407ab0a39cbcf13fab144cfae93c37b47d0bd3ccea7a2fa425329aeb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1fa004b90e1fcc5de59bba3d993ae1690ea1d8ef1e4ee716575cdd254fb2b707`
+#### `2ff822d479a5fa2f8863d2e81b2f747335be619689b0ad6f1f73901f0e43dd57`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:15 GMT
--	Parent Layer: `ed07c49542121de2331ceb630d75b0fe5d976e2b0e609cc62c1b84d7ce0bd3a1`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:15:03 GMT
+-	Parent Layer: `42ae31763f053fcb3b0dfc05f5f6614acfce9bc4830937779044dc73bfa7a39c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -528,98 +529,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.15`
 
 ```console
-$ docker pull library/rethinkdb@sha256:c6e9886755dd71d645eeee89213507d8b779519c181960b65ddb8b7640ad631e
+$ docker pull library/rethinkdb@sha256:df40033beb2f7fcacbbdef09b64870c65383ea7e1cb24a43ad4a7b6e592bb580
 ```
 
--	Total Virtual Size: 179.5 MB (179513591 bytes)
--	Total v2 Content-Length: 74.6 MB (74585072 bytes)
+-	Total Virtual Size: 179.5 MB (179514433 bytes)
+-	Total v2 Content-Length: 74.6 MB (74585192 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `279b6ce99c67558fb576791c71a1c5320d736f4cfba45828a5948bb5ef5a273c`
+#### `bb01b3ea32a2ed3aed21b5f24f4550f55746801f9f6c0dbc1a9300d5ee986138`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=1.15.3~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:13:24 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:14:10 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0a8f829cd024e1d5e79dd90b21f1dacf9066e493d2c80b97875da49d961dd952`
+#### `b24b88281a07719081570386d928585963083c069a7285719b730a8d40fc7a23`
 
 ```dockerfile
 RUN apt-get update \
@@ -627,65 +628,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:13 GMT
--	Parent Layer: `279b6ce99c67558fb576791c71a1c5320d736f4cfba45828a5948bb5ef5a273c`
--	Docker Version: 1.7.1
--	Virtual Size: 54.4 MB (54353206 bytes)
--	v2 Blob: `sha256:51cff9e7f96a42e6a732f0b7332d30070aec94b98ec289d5d7661ef0c173b223`
--	v2 Content-Length: 23.2 MB (23223485 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:46:24 GMT
+-	Created: Fri, 09 Oct 2015 20:15:01 GMT
+-	Parent Layer: `bb01b3ea32a2ed3aed21b5f24f4550f55746801f9f6c0dbc1a9300d5ee986138`
+-	Docker Version: 1.8.2
+-	Virtual Size: 54.4 MB (54354048 bytes)
+-	v2 Blob: `sha256:14df97222f577d747c10c103c4dbe64758f88b9a43fe7715056cfd6d07eee92b`
+-	v2 Content-Length: 23.2 MB (23223610 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:41:46 GMT
 
-#### `f58a029ed01bc027c04d397df41fa7d4eda75ca859285ce7b03c22e41a781017`
+#### `ad938c9ea6d29bc22d4ed58bbc2e0debaee03924a7361f52c7b2af3d590fccd8`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:13 GMT
--	Parent Layer: `0a8f829cd024e1d5e79dd90b21f1dacf9066e493d2c80b97875da49d961dd952`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:15:02 GMT
+-	Parent Layer: `b24b88281a07719081570386d928585963083c069a7285719b730a8d40fc7a23`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ee91fd10b8db49a82579995a46682060c6817c4765858482ea826c494b2d10c7`
+#### `73dc01b2407ab0a39cbcf13fab144cfae93c37b47d0bd3ccea7a2fa425329aeb`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:14 GMT
--	Parent Layer: `f58a029ed01bc027c04d397df41fa7d4eda75ca859285ce7b03c22e41a781017`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:15:02 GMT
+-	Parent Layer: `ad938c9ea6d29bc22d4ed58bbc2e0debaee03924a7361f52c7b2af3d590fccd8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ed07c49542121de2331ceb630d75b0fe5d976e2b0e609cc62c1b84d7ce0bd3a1`
+#### `42ae31763f053fcb3b0dfc05f5f6614acfce9bc4830937779044dc73bfa7a39c`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:14 GMT
--	Parent Layer: `ee91fd10b8db49a82579995a46682060c6817c4765858482ea826c494b2d10c7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:15:03 GMT
+-	Parent Layer: `73dc01b2407ab0a39cbcf13fab144cfae93c37b47d0bd3ccea7a2fa425329aeb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1fa004b90e1fcc5de59bba3d993ae1690ea1d8ef1e4ee716575cdd254fb2b707`
+#### `2ff822d479a5fa2f8863d2e81b2f747335be619689b0ad6f1f73901f0e43dd57`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:15 GMT
--	Parent Layer: `ed07c49542121de2331ceb630d75b0fe5d976e2b0e609cc62c1b84d7ce0bd3a1`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:15:03 GMT
+-	Parent Layer: `42ae31763f053fcb3b0dfc05f5f6614acfce9bc4830937779044dc73bfa7a39c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -694,98 +695,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.16.0`
 
 ```console
-$ docker pull library/rethinkdb@sha256:3800026facb759006666b190668999077aae7b7372483f5ef10db09b1d07d4c7
+$ docker pull library/rethinkdb@sha256:1adad103d6f80a5d41367ac127944f6ceb63c7a16cd0170ba4cb14b60902c14a
 ```
 
--	Total Virtual Size: 179.4 MB (179369037 bytes)
--	Total v2 Content-Length: 74.7 MB (74677298 bytes)
+-	Total Virtual Size: 179.4 MB (179369879 bytes)
+-	Total v2 Content-Length: 74.7 MB (74677776 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `2e48c5e01a156e69f8784aacb1e482fb91792d624f7cf64a10f0562ab18ed783`
+#### `894dc0a4465050fdf29ba4cbffe40f233071cb20e8fef1d819fe031fd0bbe74d`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=1.16.0+1~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:14:56 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:15:35 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `68254a121c705074c5673b973b5ccf62f088814ecee96fb56809b93c20ad4cfd`
+#### `cc9f23d9a6d73582b86545b190707dcbde097c595f034b99127d4b51ccd8ffda`
 
 ```dockerfile
 RUN apt-get update \
@@ -793,65 +794,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:15:45 GMT
--	Parent Layer: `2e48c5e01a156e69f8784aacb1e482fb91792d624f7cf64a10f0562ab18ed783`
--	Docker Version: 1.7.1
--	Virtual Size: 54.2 MB (54208652 bytes)
--	v2 Blob: `sha256:cf69347f9c700b7c0d46ed17b3c24a0e2a035712ecdc4ab300945a8ff1ed60c4`
--	v2 Content-Length: 23.3 MB (23315711 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:48:25 GMT
+-	Created: Fri, 09 Oct 2015 20:16:24 GMT
+-	Parent Layer: `894dc0a4465050fdf29ba4cbffe40f233071cb20e8fef1d819fe031fd0bbe74d`
+-	Docker Version: 1.8.2
+-	Virtual Size: 54.2 MB (54209494 bytes)
+-	v2 Blob: `sha256:841e675e331bd02a482111bcf183b2040dd1c64eebfe07a19e9f05cd84c0dba1`
+-	v2 Content-Length: 23.3 MB (23316194 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:42:54 GMT
 
-#### `75f7e018ca2e42cef18e26e2feb021f888deaa187b783707a81bb080bfae554e`
+#### `a8749a44fd6e6e9a6c7cbd2065905d68ce5c1e029fbc8d48232c8302380afa7d`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:15:46 GMT
--	Parent Layer: `68254a121c705074c5673b973b5ccf62f088814ecee96fb56809b93c20ad4cfd`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:16:25 GMT
+-	Parent Layer: `cc9f23d9a6d73582b86545b190707dcbde097c595f034b99127d4b51ccd8ffda`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2f9adde5d31086f57b53224396348cb441737c6ca9bb36157b776145d70121bd`
+#### `0b6edcbc6309fcbe56c641bbf68a06add405d931f58980f15165e4d1087c2b89`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:15:46 GMT
--	Parent Layer: `75f7e018ca2e42cef18e26e2feb021f888deaa187b783707a81bb080bfae554e`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:16:25 GMT
+-	Parent Layer: `a8749a44fd6e6e9a6c7cbd2065905d68ce5c1e029fbc8d48232c8302380afa7d`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0e6223909c06c3e96be0bf3193a9bf77bcd58dbc87e3bdeee4ff6bde6ebab7a2`
+#### `1bd67f313cb41d2b46dda7fe129ab59ee347fedc5a25f97f861671414501120c`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:15:47 GMT
--	Parent Layer: `2f9adde5d31086f57b53224396348cb441737c6ca9bb36157b776145d70121bd`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:16:25 GMT
+-	Parent Layer: `0b6edcbc6309fcbe56c641bbf68a06add405d931f58980f15165e4d1087c2b89`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d42d35b6a1d9cdce98b8c9ecf93bfa278c3e5a592ca6839cfea4597fb6aab717`
+#### `de69046e92399b2124524deb4333ef20766260d61aa102cce10b598a490f7921`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:15:47 GMT
--	Parent Layer: `0e6223909c06c3e96be0bf3193a9bf77bcd58dbc87e3bdeee4ff6bde6ebab7a2`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:16:26 GMT
+-	Parent Layer: `1bd67f313cb41d2b46dda7fe129ab59ee347fedc5a25f97f861671414501120c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -860,98 +861,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.16.1`
 
 ```console
-$ docker pull library/rethinkdb@sha256:266097af1097a259ec0979ca629155882b56c34f75537b4231c65cf1a9bae465
+$ docker pull library/rethinkdb@sha256:ebd485ecaa20688b7ba8a603939e58de32dcbb541823cb6e83990aa96244b2ec
 ```
 
--	Total Virtual Size: 179.4 MB (179378014 bytes)
--	Total v2 Content-Length: 74.7 MB (74677423 bytes)
+-	Total Virtual Size: 179.4 MB (179378856 bytes)
+-	Total v2 Content-Length: 74.7 MB (74677797 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `fd7eb3cff2ae271a8e4beb2ba868036f1e0358a47ed22a1e19e7361fc3bc3ff2`
+#### `cb9319d52a1daf88254487b6cf480c69c1eb879eb707932a37f9495f49853b2a`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=1.16.1~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:16:00 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:16:36 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1f9b01bf27dc456381d64e3f23bf04306e5224da7c0d4c685059e945f74065e4`
+#### `d135bb58b2c3d411cee92e00fd321c53e97645dc9e49271302e436a466ef2121`
 
 ```dockerfile
 RUN apt-get update \
@@ -959,65 +960,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:16:48 GMT
--	Parent Layer: `fd7eb3cff2ae271a8e4beb2ba868036f1e0358a47ed22a1e19e7361fc3bc3ff2`
--	Docker Version: 1.7.1
--	Virtual Size: 54.2 MB (54217629 bytes)
--	v2 Blob: `sha256:774445010beeea8be94e25bb38909e016368515c55417a481686379fd6962a7f`
--	v2 Content-Length: 23.3 MB (23315836 bytes)
--	v2 Last-Modified: Mon, 14 Sep 2015 21:08:57 GMT
+-	Created: Fri, 09 Oct 2015 20:17:27 GMT
+-	Parent Layer: `cb9319d52a1daf88254487b6cf480c69c1eb879eb707932a37f9495f49853b2a`
+-	Docker Version: 1.8.2
+-	Virtual Size: 54.2 MB (54218471 bytes)
+-	v2 Blob: `sha256:e0646065b07c312085b7bb8320a740c355f22553bd34e1aee8a257eed6af70e0`
+-	v2 Content-Length: 23.3 MB (23316215 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:43:46 GMT
 
-#### `24261bc7a81134fa42e4be700beebdad4b1421f4f54a240f8530bea34023bb43`
+#### `900c1855288e12f721048821c521687dbdcc4ed8e658e5191153d7d655313c78`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:16:49 GMT
--	Parent Layer: `1f9b01bf27dc456381d64e3f23bf04306e5224da7c0d4c685059e945f74065e4`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:17:28 GMT
+-	Parent Layer: `d135bb58b2c3d411cee92e00fd321c53e97645dc9e49271302e436a466ef2121`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c08adbf7499ab41c4bd96fe6049d66b9b69ccb32b51e0806e58495cd079431e4`
+#### `02a312edad5e370f01c1224ea2f3558a26988ba5d0057c8b55261c63e73fe85f`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:16:49 GMT
--	Parent Layer: `24261bc7a81134fa42e4be700beebdad4b1421f4f54a240f8530bea34023bb43`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:17:29 GMT
+-	Parent Layer: `900c1855288e12f721048821c521687dbdcc4ed8e658e5191153d7d655313c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `cbc3821e34436603c24e83680455e93e0a56d6d733fc86b7090eb476d8888fd9`
+#### `85ff114cbfc3b2847153372111218557bce997177ef2462ad84529f55268ef03`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:16:50 GMT
--	Parent Layer: `c08adbf7499ab41c4bd96fe6049d66b9b69ccb32b51e0806e58495cd079431e4`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:17:29 GMT
+-	Parent Layer: `02a312edad5e370f01c1224ea2f3558a26988ba5d0057c8b55261c63e73fe85f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24eb1b8b8e8416f0cbf56b186854deb6173eeb95f24afcc658003ee7bd431d06`
+#### `a26f44c5cf292b617ecdef7ba1556c46d892b1cb8cf555fe2ba6425271b27178`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:16:50 GMT
--	Parent Layer: `cbc3821e34436603c24e83680455e93e0a56d6d733fc86b7090eb476d8888fd9`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:17:29 GMT
+-	Parent Layer: `85ff114cbfc3b2847153372111218557bce997177ef2462ad84529f55268ef03`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1026,98 +1027,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.16.2`
 
 ```console
-$ docker pull library/rethinkdb@sha256:0ff4ce0dbbad3b790461aec067e099ff0564984deac1ed8ddde061d985a1bbf9
+$ docker pull library/rethinkdb@sha256:8eb7c801e5564d629757380dda86338c4d9a9f8f2b327c7b5ef2371720a37f77
 ```
 
--	Total Virtual Size: 180.1 MB (180118699 bytes)
--	Total v2 Content-Length: 74.9 MB (74885582 bytes)
+-	Total Virtual Size: 180.1 MB (180119541 bytes)
+-	Total v2 Content-Length: 74.9 MB (74886075 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `69e778750686b8086c214d27cd198e9c3d64aee8be8ef1ac3107de76259f105e`
+#### `4e42160f2b2acf088fdd646ce4b0891d61c67375bcf097dff1ac009d0477931d`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=1.16.2+1~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:17:03 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:17:40 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fd2d2f4eafa47f69a99542ddd370032df7d315caa9a4f1f401e906297e4ad412`
+#### `b91315d24e8b42c0b3e9eb4ca991f74246d70b2b1261574680a834dc30007633`
 
 ```dockerfile
 RUN apt-get update \
@@ -1125,65 +1126,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:17:53 GMT
--	Parent Layer: `69e778750686b8086c214d27cd198e9c3d64aee8be8ef1ac3107de76259f105e`
--	Docker Version: 1.7.1
--	Virtual Size: 55.0 MB (54958314 bytes)
--	v2 Blob: `sha256:a928e49a5aa67be2b9556cd7d7e65fe79529e0d97e4023919442a19c113987db`
--	v2 Content-Length: 23.5 MB (23523995 bytes)
--	v2 Last-Modified: Tue, 06 Oct 2015 19:39:42 GMT
+-	Created: Fri, 09 Oct 2015 20:18:35 GMT
+-	Parent Layer: `4e42160f2b2acf088fdd646ce4b0891d61c67375bcf097dff1ac009d0477931d`
+-	Docker Version: 1.8.2
+-	Virtual Size: 55.0 MB (54959156 bytes)
+-	v2 Blob: `sha256:31906da6b7d757063d95c4d3a537764679936817a7ef2934977f1d87c16f4b71`
+-	v2 Content-Length: 23.5 MB (23524493 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:44:39 GMT
 
-#### `cfe50a1624187e27239c9ad67360f549ec02fa274a549e9b7dbb0af3bcf61c69`
+#### `0b507cb50385ec4c764ede4aef4220c8fd448b1a8f6fba76bd6e38ff6bd2e843`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:17:53 GMT
--	Parent Layer: `fd2d2f4eafa47f69a99542ddd370032df7d315caa9a4f1f401e906297e4ad412`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:18:36 GMT
+-	Parent Layer: `b91315d24e8b42c0b3e9eb4ca991f74246d70b2b1261574680a834dc30007633`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e7c37d5da3d68abf31b204ef3a1b7d1f100d02dbedd815ecec87f51d7a76ce9e`
+#### `4256ddf0bb85365a7bd8c2e9785c356ca6e49552cddc57e13cf7f9451f79a161`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:17:54 GMT
--	Parent Layer: `cfe50a1624187e27239c9ad67360f549ec02fa274a549e9b7dbb0af3bcf61c69`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:18:37 GMT
+-	Parent Layer: `0b507cb50385ec4c764ede4aef4220c8fd448b1a8f6fba76bd6e38ff6bd2e843`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fe9092b34003c8402a65044e046c3801e810626b4bd85d5e60276f136e53679b`
+#### `360bab4d31f0874a06b40d9a5e7d5d9917b9f15dbe358082a1110682d65acc4a`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:17:54 GMT
--	Parent Layer: `e7c37d5da3d68abf31b204ef3a1b7d1f100d02dbedd815ecec87f51d7a76ce9e`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:18:37 GMT
+-	Parent Layer: `4256ddf0bb85365a7bd8c2e9785c356ca6e49552cddc57e13cf7f9451f79a161`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ae690184a6825e5c332deac71e759b83f754a1fc14ae88120362927d1b4f9d32`
+#### `b9ffd91ca9a28aefe5052265f9fa5d32c2de484ef80c85450fad748ffb59f8ea`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:17:55 GMT
--	Parent Layer: `fe9092b34003c8402a65044e046c3801e810626b4bd85d5e60276f136e53679b`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:18:38 GMT
+-	Parent Layer: `360bab4d31f0874a06b40d9a5e7d5d9917b9f15dbe358082a1110682d65acc4a`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1192,98 +1193,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.16.3`
 
 ```console
-$ docker pull library/rethinkdb@sha256:d3dfa2f69baca630960ffb8c5ba3345e0771a409a6de49fad8367683e2352c84
+$ docker pull library/rethinkdb@sha256:ffd2c63ba12bd0901f214d46d5fa5c7e9f75770d57ad3d3d9ff99b33df26bb55
 ```
 
--	Total Virtual Size: 180.1 MB (180122750 bytes)
--	Total v2 Content-Length: 74.9 MB (74887689 bytes)
+-	Total Virtual Size: 180.1 MB (180123592 bytes)
+-	Total v2 Content-Length: 74.9 MB (74888205 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `8f2dc59d14f8f275da8acec86f77ea8e28786d28dbf3e25a5a4d55f1db5d3c87`
+#### `070a856c51b58ff319ac30755c9d3dc03125a4714eedf6c10fa30c6c6d368b71`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=1.16.3~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:08 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:18:48 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `6db25ed489e5fc24ac9c79ad1442ab5c167eb13db896b7fef99812482ad4270c`
+#### `2ce106fae72610a4699d57acdfa95b226b06935601b26c626295ef65160c0025`
 
 ```dockerfile
 RUN apt-get update \
@@ -1291,65 +1292,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:58 GMT
--	Parent Layer: `8f2dc59d14f8f275da8acec86f77ea8e28786d28dbf3e25a5a4d55f1db5d3c87`
--	Docker Version: 1.7.1
--	Virtual Size: 55.0 MB (54962365 bytes)
--	v2 Blob: `sha256:3593aecf19b6c69b1fc10a623340deab30adcf43a38d8012d0b3a8a1aaee3522`
--	v2 Content-Length: 23.5 MB (23526102 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:51:21 GMT
+-	Created: Fri, 09 Oct 2015 20:19:38 GMT
+-	Parent Layer: `070a856c51b58ff319ac30755c9d3dc03125a4714eedf6c10fa30c6c6d368b71`
+-	Docker Version: 1.8.2
+-	Virtual Size: 55.0 MB (54963207 bytes)
+-	v2 Blob: `sha256:50815f8b63b6ce867d888a436cc0af1b3691feaa88326b1159fb22720285bbb0`
+-	v2 Content-Length: 23.5 MB (23526623 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:45:40 GMT
 
-#### `407a3fc98cb0e9457de60581b2bdac073fd901976d9b03813d8d0134d9ff8ac8`
+#### `360aef4084445ee3a17e45a07d2f2602b33b44ce6e630b95f050c399bf210e01`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:59 GMT
--	Parent Layer: `6db25ed489e5fc24ac9c79ad1442ab5c167eb13db896b7fef99812482ad4270c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:39 GMT
+-	Parent Layer: `2ce106fae72610a4699d57acdfa95b226b06935601b26c626295ef65160c0025`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a16d95422c147acec04896c36ef90d8cc8a4b7a974846cd56ae5d5cff0a7bb95`
+#### `01dfcf5841b8cef08b8369565b6f9a01610c8ffe2d5af7e254b42f4f95cf97fa`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:59 GMT
--	Parent Layer: `407a3fc98cb0e9457de60581b2bdac073fd901976d9b03813d8d0134d9ff8ac8`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:40 GMT
+-	Parent Layer: `360aef4084445ee3a17e45a07d2f2602b33b44ce6e630b95f050c399bf210e01`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `121bec02f46ba33d292426c1d9ae22e49a9a81777b00efd87a1ea67423d1f1ea`
+#### `2f6194c25a0103846bccacc7b5371cb29bcd67e52ff77de73f403cb698e5cd74`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:19:00 GMT
--	Parent Layer: `a16d95422c147acec04896c36ef90d8cc8a4b7a974846cd56ae5d5cff0a7bb95`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:40 GMT
+-	Parent Layer: `01dfcf5841b8cef08b8369565b6f9a01610c8ffe2d5af7e254b42f4f95cf97fa`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5e283a13f011bd716e121d8048383ecc0943c00de12874b8c0a55769082026dc`
+#### `988f896a5b7080a56e135dfbc70eb566589da3fdd228cadd931a206ef1420a9c`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:19:00 GMT
--	Parent Layer: `121bec02f46ba33d292426c1d9ae22e49a9a81777b00efd87a1ea67423d1f1ea`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:41 GMT
+-	Parent Layer: `2f6194c25a0103846bccacc7b5371cb29bcd67e52ff77de73f403cb698e5cd74`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1358,98 +1359,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1.16`
 
 ```console
-$ docker pull library/rethinkdb@sha256:3c621452e4d6725710375bade5958e9f2d1e5de914acf27acc6df3ec1f46ce9b
+$ docker pull library/rethinkdb@sha256:d07f8d789926a372cd775f89c141afe32068064e3fe477b4ae9fe873b4cfea1c
 ```
 
--	Total Virtual Size: 180.1 MB (180122750 bytes)
--	Total v2 Content-Length: 74.9 MB (74887689 bytes)
+-	Total Virtual Size: 180.1 MB (180123592 bytes)
+-	Total v2 Content-Length: 74.9 MB (74888205 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `8f2dc59d14f8f275da8acec86f77ea8e28786d28dbf3e25a5a4d55f1db5d3c87`
+#### `070a856c51b58ff319ac30755c9d3dc03125a4714eedf6c10fa30c6c6d368b71`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=1.16.3~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:08 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:18:48 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `6db25ed489e5fc24ac9c79ad1442ab5c167eb13db896b7fef99812482ad4270c`
+#### `2ce106fae72610a4699d57acdfa95b226b06935601b26c626295ef65160c0025`
 
 ```dockerfile
 RUN apt-get update \
@@ -1457,65 +1458,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:58 GMT
--	Parent Layer: `8f2dc59d14f8f275da8acec86f77ea8e28786d28dbf3e25a5a4d55f1db5d3c87`
--	Docker Version: 1.7.1
--	Virtual Size: 55.0 MB (54962365 bytes)
--	v2 Blob: `sha256:3593aecf19b6c69b1fc10a623340deab30adcf43a38d8012d0b3a8a1aaee3522`
--	v2 Content-Length: 23.5 MB (23526102 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:51:21 GMT
+-	Created: Fri, 09 Oct 2015 20:19:38 GMT
+-	Parent Layer: `070a856c51b58ff319ac30755c9d3dc03125a4714eedf6c10fa30c6c6d368b71`
+-	Docker Version: 1.8.2
+-	Virtual Size: 55.0 MB (54963207 bytes)
+-	v2 Blob: `sha256:50815f8b63b6ce867d888a436cc0af1b3691feaa88326b1159fb22720285bbb0`
+-	v2 Content-Length: 23.5 MB (23526623 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:45:40 GMT
 
-#### `407a3fc98cb0e9457de60581b2bdac073fd901976d9b03813d8d0134d9ff8ac8`
+#### `360aef4084445ee3a17e45a07d2f2602b33b44ce6e630b95f050c399bf210e01`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:59 GMT
--	Parent Layer: `6db25ed489e5fc24ac9c79ad1442ab5c167eb13db896b7fef99812482ad4270c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:39 GMT
+-	Parent Layer: `2ce106fae72610a4699d57acdfa95b226b06935601b26c626295ef65160c0025`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a16d95422c147acec04896c36ef90d8cc8a4b7a974846cd56ae5d5cff0a7bb95`
+#### `01dfcf5841b8cef08b8369565b6f9a01610c8ffe2d5af7e254b42f4f95cf97fa`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:59 GMT
--	Parent Layer: `407a3fc98cb0e9457de60581b2bdac073fd901976d9b03813d8d0134d9ff8ac8`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:40 GMT
+-	Parent Layer: `360aef4084445ee3a17e45a07d2f2602b33b44ce6e630b95f050c399bf210e01`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `121bec02f46ba33d292426c1d9ae22e49a9a81777b00efd87a1ea67423d1f1ea`
+#### `2f6194c25a0103846bccacc7b5371cb29bcd67e52ff77de73f403cb698e5cd74`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:19:00 GMT
--	Parent Layer: `a16d95422c147acec04896c36ef90d8cc8a4b7a974846cd56ae5d5cff0a7bb95`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:40 GMT
+-	Parent Layer: `01dfcf5841b8cef08b8369565b6f9a01610c8ffe2d5af7e254b42f4f95cf97fa`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5e283a13f011bd716e121d8048383ecc0943c00de12874b8c0a55769082026dc`
+#### `988f896a5b7080a56e135dfbc70eb566589da3fdd228cadd931a206ef1420a9c`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:19:00 GMT
--	Parent Layer: `121bec02f46ba33d292426c1d9ae22e49a9a81777b00efd87a1ea67423d1f1ea`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:41 GMT
+-	Parent Layer: `2f6194c25a0103846bccacc7b5371cb29bcd67e52ff77de73f403cb698e5cd74`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1524,98 +1525,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:1`
 
 ```console
-$ docker pull library/rethinkdb@sha256:6034d42276c099a84a50d1505f99bb9b5c5807a155882cccac7d3b2584d269b1
+$ docker pull library/rethinkdb@sha256:50a821e658c2414a6088592f19a7a990ceb0f6f2c74b398422d8a5acd0563053
 ```
 
--	Total Virtual Size: 180.1 MB (180122750 bytes)
--	Total v2 Content-Length: 74.9 MB (74887689 bytes)
+-	Total Virtual Size: 180.1 MB (180123592 bytes)
+-	Total v2 Content-Length: 74.9 MB (74888205 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `8f2dc59d14f8f275da8acec86f77ea8e28786d28dbf3e25a5a4d55f1db5d3c87`
+#### `070a856c51b58ff319ac30755c9d3dc03125a4714eedf6c10fa30c6c6d368b71`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=1.16.3~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:08 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:18:48 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `6db25ed489e5fc24ac9c79ad1442ab5c167eb13db896b7fef99812482ad4270c`
+#### `2ce106fae72610a4699d57acdfa95b226b06935601b26c626295ef65160c0025`
 
 ```dockerfile
 RUN apt-get update \
@@ -1623,65 +1624,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:58 GMT
--	Parent Layer: `8f2dc59d14f8f275da8acec86f77ea8e28786d28dbf3e25a5a4d55f1db5d3c87`
--	Docker Version: 1.7.1
--	Virtual Size: 55.0 MB (54962365 bytes)
--	v2 Blob: `sha256:3593aecf19b6c69b1fc10a623340deab30adcf43a38d8012d0b3a8a1aaee3522`
--	v2 Content-Length: 23.5 MB (23526102 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:51:21 GMT
+-	Created: Fri, 09 Oct 2015 20:19:38 GMT
+-	Parent Layer: `070a856c51b58ff319ac30755c9d3dc03125a4714eedf6c10fa30c6c6d368b71`
+-	Docker Version: 1.8.2
+-	Virtual Size: 55.0 MB (54963207 bytes)
+-	v2 Blob: `sha256:50815f8b63b6ce867d888a436cc0af1b3691feaa88326b1159fb22720285bbb0`
+-	v2 Content-Length: 23.5 MB (23526623 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:45:40 GMT
 
-#### `407a3fc98cb0e9457de60581b2bdac073fd901976d9b03813d8d0134d9ff8ac8`
+#### `360aef4084445ee3a17e45a07d2f2602b33b44ce6e630b95f050c399bf210e01`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:59 GMT
--	Parent Layer: `6db25ed489e5fc24ac9c79ad1442ab5c167eb13db896b7fef99812482ad4270c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:39 GMT
+-	Parent Layer: `2ce106fae72610a4699d57acdfa95b226b06935601b26c626295ef65160c0025`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a16d95422c147acec04896c36ef90d8cc8a4b7a974846cd56ae5d5cff0a7bb95`
+#### `01dfcf5841b8cef08b8369565b6f9a01610c8ffe2d5af7e254b42f4f95cf97fa`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:18:59 GMT
--	Parent Layer: `407a3fc98cb0e9457de60581b2bdac073fd901976d9b03813d8d0134d9ff8ac8`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:40 GMT
+-	Parent Layer: `360aef4084445ee3a17e45a07d2f2602b33b44ce6e630b95f050c399bf210e01`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `121bec02f46ba33d292426c1d9ae22e49a9a81777b00efd87a1ea67423d1f1ea`
+#### `2f6194c25a0103846bccacc7b5371cb29bcd67e52ff77de73f403cb698e5cd74`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:19:00 GMT
--	Parent Layer: `a16d95422c147acec04896c36ef90d8cc8a4b7a974846cd56ae5d5cff0a7bb95`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:40 GMT
+-	Parent Layer: `01dfcf5841b8cef08b8369565b6f9a01610c8ffe2d5af7e254b42f4f95cf97fa`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5e283a13f011bd716e121d8048383ecc0943c00de12874b8c0a55769082026dc`
+#### `988f896a5b7080a56e135dfbc70eb566589da3fdd228cadd931a206ef1420a9c`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:19:00 GMT
--	Parent Layer: `121bec02f46ba33d292426c1d9ae22e49a9a81777b00efd87a1ea67423d1f1ea`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:19:41 GMT
+-	Parent Layer: `2f6194c25a0103846bccacc7b5371cb29bcd67e52ff77de73f403cb698e5cd74`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1690,98 +1691,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0.0`
 
 ```console
-$ docker pull library/rethinkdb@sha256:f4f6fea9baaffd4e3cad9fb349b9f833995a77f402ddbbb9359338eabdbdae11
+$ docker pull library/rethinkdb@sha256:b17c1a36affbec8904da51ac3ff3a18b3044ed4daf5eed5672836e63c0f32f4b
 ```
 
--	Total Virtual Size: 195.9 MB (195922978 bytes)
--	Total v2 Content-Length: 80.7 MB (80662650 bytes)
+-	Total Virtual Size: 195.9 MB (195923861 bytes)
+-	Total v2 Content-Length: 80.7 MB (80663026 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `10dfd8448105cf3c8651da0a371ebcc21294d33fbfce5178a11d8cee149acf25`
+#### `4ee9ff1b05bcaecf063462436fa4a98a440eb1ad78823897e41e081ad700f197`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=2.0.0+1~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:20:09 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:20:34 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a8bfa1bea3a87a4c711bf251086277ad27010724ae2bf48b772922f754534016`
+#### `b823b9a5f163c9fe484d8be378274ed3c5f21f46691504db49054753ffb842df`
 
 ```dockerfile
 RUN apt-get update \
@@ -1789,65 +1790,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:20:58 GMT
--	Parent Layer: `10dfd8448105cf3c8651da0a371ebcc21294d33fbfce5178a11d8cee149acf25`
--	Docker Version: 1.7.1
--	Virtual Size: 70.8 MB (70762593 bytes)
--	v2 Blob: `sha256:8dcdc4f8bab9be43283f59a8dc967e704a3f7b84d8ff0a9c5e46e048f6f2c913`
--	v2 Content-Length: 29.3 MB (29301063 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:54:20 GMT
+-	Created: Fri, 09 Oct 2015 20:21:24 GMT
+-	Parent Layer: `4ee9ff1b05bcaecf063462436fa4a98a440eb1ad78823897e41e081ad700f197`
+-	Docker Version: 1.8.2
+-	Virtual Size: 70.8 MB (70763476 bytes)
+-	v2 Blob: `sha256:01b01e1620bc711d8522a99857ff68b1630c99c59fc47c49f343dcc304c4e9ab`
+-	v2 Content-Length: 29.3 MB (29301444 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:47:02 GMT
 
-#### `63a83f735c65930f31bd1db514151b44bfd45e285d47c9114351f7d69974feb1`
+#### `8b89f3d5994d285e71b5a0fc8a498401d47051d5e996e14b7fd7e725ea2c918a`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:20:59 GMT
--	Parent Layer: `a8bfa1bea3a87a4c711bf251086277ad27010724ae2bf48b772922f754534016`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:21:25 GMT
+-	Parent Layer: `b823b9a5f163c9fe484d8be378274ed3c5f21f46691504db49054753ffb842df`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7fe9726b87b64327acf539cc55e3cd15c7c6bcedfcd247ffb77214b32e440437`
+#### `053d340688f4c93a7c2e58f5e6c952ec28f036b85941708341e88fc2bd6ce367`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:20:59 GMT
--	Parent Layer: `63a83f735c65930f31bd1db514151b44bfd45e285d47c9114351f7d69974feb1`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:21:26 GMT
+-	Parent Layer: `8b89f3d5994d285e71b5a0fc8a498401d47051d5e996e14b7fd7e725ea2c918a`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b832955477d60c76ef203ef3fb34d3e72941360923b90b267f16e90378300797`
+#### `0dafcd9e732967fcd19d413e6a2dcea3f189be501b03d84202ddab5abd11992a`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:20:59 GMT
--	Parent Layer: `7fe9726b87b64327acf539cc55e3cd15c7c6bcedfcd247ffb77214b32e440437`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:21:26 GMT
+-	Parent Layer: `053d340688f4c93a7c2e58f5e6c952ec28f036b85941708341e88fc2bd6ce367`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `413c67056523c316baecee56fbb2dffc91131b50be2f8feb4f1cfe1e7e82a8d7`
+#### `7c4946b350f11f54b82bc4ef748ed277626e242f4e448afb38c8733c6d066d91`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:21:00 GMT
--	Parent Layer: `b832955477d60c76ef203ef3fb34d3e72941360923b90b267f16e90378300797`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:21:27 GMT
+-	Parent Layer: `0dafcd9e732967fcd19d413e6a2dcea3f189be501b03d84202ddab5abd11992a`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -1856,98 +1857,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0.1`
 
 ```console
-$ docker pull library/rethinkdb@sha256:86149a40813ffb363faff0a743b5466b91242b520d2597d356937933b49e346b
+$ docker pull library/rethinkdb@sha256:b0006ba425702e23aba2b4e5352ebc662fcc31ef6b7847b243ad72d7f32a5809
 ```
 
--	Total Virtual Size: 195.9 MB (195922934 bytes)
--	Total v2 Content-Length: 80.7 MB (80662659 bytes)
+-	Total Virtual Size: 195.9 MB (195923817 bytes)
+-	Total v2 Content-Length: 80.7 MB (80663152 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `4aef7b136906a8db7303308b6bdc7a103b714bfcb7575a74979cfc9a7899d510`
+#### `b458edd91b873a18d5d51c1418af049f0f8884c5b591f758e8faee11ab77ae5c`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=2.0.1~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:21:13 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:21:37 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `07c417f46b1a89aba3991d07deb1b7d1d9423429dcecc7f582d15c02a8a6dbcc`
+#### `37e2c2ce89eb3f26c3ea357710ad0795df943ba633c809e47685d4b6e57280a6`
 
 ```dockerfile
 RUN apt-get update \
@@ -1955,65 +1956,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:22:03 GMT
--	Parent Layer: `4aef7b136906a8db7303308b6bdc7a103b714bfcb7575a74979cfc9a7899d510`
--	Docker Version: 1.7.1
--	Virtual Size: 70.8 MB (70762549 bytes)
--	v2 Blob: `sha256:3a00d08516cdff86bf0d5ed2aa48a8b9bed311782fc13edec3e5df10c53b1a58`
--	v2 Content-Length: 29.3 MB (29301072 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:55:33 GMT
+-	Created: Fri, 09 Oct 2015 20:23:15 GMT
+-	Parent Layer: `b458edd91b873a18d5d51c1418af049f0f8884c5b591f758e8faee11ab77ae5c`
+-	Docker Version: 1.8.2
+-	Virtual Size: 70.8 MB (70763432 bytes)
+-	v2 Blob: `sha256:751337649a7a4269240eec0706128222ad426e13a760b5b664a6880dab588254`
+-	v2 Content-Length: 29.3 MB (29301570 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:48:00 GMT
 
-#### `9e2d7cd14756e19a4dde14c9df460b85fe59576ef556f9e8d0e9aa593d1b0376`
+#### `3eeb4f2e8f02849b74cd1a70dc5bded014de4945da912bc90461ec685c815520`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:22:04 GMT
--	Parent Layer: `07c417f46b1a89aba3991d07deb1b7d1d9423429dcecc7f582d15c02a8a6dbcc`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:23:16 GMT
+-	Parent Layer: `37e2c2ce89eb3f26c3ea357710ad0795df943ba633c809e47685d4b6e57280a6`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `738f9227cc109577dd5815468e219e0746f4a9039e361b49421dfcbc820c1e15`
+#### `5cad820030d94fd7c60f0c62c46231e706ac90e2e1bc1af2b71b3e2d1341d26c`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:22:04 GMT
--	Parent Layer: `9e2d7cd14756e19a4dde14c9df460b85fe59576ef556f9e8d0e9aa593d1b0376`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:23:17 GMT
+-	Parent Layer: `3eeb4f2e8f02849b74cd1a70dc5bded014de4945da912bc90461ec685c815520`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `87afaad2e92aa8bf890fe9b64a3ed3714e0e03fbcde46b3743c80ca28098cec4`
+#### `d36d30a5422cde9e5f708733307d5c4e37c048a7c90906f3da7d2781f3269a76`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:22:05 GMT
--	Parent Layer: `738f9227cc109577dd5815468e219e0746f4a9039e361b49421dfcbc820c1e15`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:23:17 GMT
+-	Parent Layer: `5cad820030d94fd7c60f0c62c46231e706ac90e2e1bc1af2b71b3e2d1341d26c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `136721bfd8634c58f2d3edfeba60cc8812436ee1a2128bf8e6d708e8dfe42a03`
+#### `2dbaa334dd11dc21a46502048c2625a0e0edfcc787ce048cd86f47804504f6a1`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:22:05 GMT
--	Parent Layer: `87afaad2e92aa8bf890fe9b64a3ed3714e0e03fbcde46b3743c80ca28098cec4`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:23:18 GMT
+-	Parent Layer: `d36d30a5422cde9e5f708733307d5c4e37c048a7c90906f3da7d2781f3269a76`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2022,98 +2023,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0.2`
 
 ```console
-$ docker pull library/rethinkdb@sha256:56d6dd00f67dfba7b7f06f462cf80459ff4735fc279a57e8690860141f424903
+$ docker pull library/rethinkdb@sha256:aba3d7478dc1a7e2f51eea96f9429dff778eb151d8b6a2053b477948fb952f2f
 ```
 
--	Total Virtual Size: 195.9 MB (195931060 bytes)
--	Total v2 Content-Length: 80.7 MB (80667255 bytes)
+-	Total Virtual Size: 195.9 MB (195931943 bytes)
+-	Total v2 Content-Length: 80.7 MB (80667681 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `833b3491a47ab5a785ff4b65e2ec0cb72e9553ec67d5c84740e2c696005ee2d0`
+#### `aa1665ca61aa86504aff0a8956623f4f144977b47a92d0b4d18d1dcdfc1919b2`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=2.0.2~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:22:18 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:23:28 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `38e3b9a83f099de3c89998836ab1576155d4ad4af3694f57b4c43dc61da158cf`
+#### `c0a83efe04cfb9e1c1b33374924545ec3cfd450174aa7f8804bd3335fab57527`
 
 ```dockerfile
 RUN apt-get update \
@@ -2121,65 +2122,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:23:07 GMT
--	Parent Layer: `833b3491a47ab5a785ff4b65e2ec0cb72e9553ec67d5c84740e2c696005ee2d0`
--	Docker Version: 1.7.1
--	Virtual Size: 70.8 MB (70770675 bytes)
--	v2 Blob: `sha256:01ae8584fc4c47484c99d821a6dda58c416e50e1a3c63121f40e847c463b7923`
--	v2 Content-Length: 29.3 MB (29305668 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:56:14 GMT
+-	Created: Fri, 09 Oct 2015 20:24:24 GMT
+-	Parent Layer: `aa1665ca61aa86504aff0a8956623f4f144977b47a92d0b4d18d1dcdfc1919b2`
+-	Docker Version: 1.8.2
+-	Virtual Size: 70.8 MB (70771558 bytes)
+-	v2 Blob: `sha256:1d68ec03d575b7cc27ff5d0adfc534fd687b664b68075d0c0b91b77ff74c6760`
+-	v2 Content-Length: 29.3 MB (29306099 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:48:56 GMT
 
-#### `8e233138726657c33b6b68809182128276555817c78e7373d459bf294f5d8ce8`
+#### `ff1aa6e81529e5b995cf35cda4037498a336dd9b880b29533a8b9c3a4e485565`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:23:08 GMT
--	Parent Layer: `38e3b9a83f099de3c89998836ab1576155d4ad4af3694f57b4c43dc61da158cf`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:24:25 GMT
+-	Parent Layer: `c0a83efe04cfb9e1c1b33374924545ec3cfd450174aa7f8804bd3335fab57527`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1a1c9cf3c151d89daa54c67a8371e6ec6c49dcee59ae0a5592fe1b4df6b9525b`
+#### `ae9454bca21d52878b5fed422fbfeebb925d8f182a67fdb9888d489ed356b2e1`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:23:08 GMT
--	Parent Layer: `8e233138726657c33b6b68809182128276555817c78e7373d459bf294f5d8ce8`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:24:25 GMT
+-	Parent Layer: `ff1aa6e81529e5b995cf35cda4037498a336dd9b880b29533a8b9c3a4e485565`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5926e3b0b88e0b2f78b46cbe53044d025dd7965da7b4bacbf8a35b97f085681f`
+#### `bb889377c1611e58e62fb9b7fe66f48788e7cc8b84d4f093a014c121375f067b`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:23:09 GMT
--	Parent Layer: `1a1c9cf3c151d89daa54c67a8371e6ec6c49dcee59ae0a5592fe1b4df6b9525b`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:24:25 GMT
+-	Parent Layer: `ae9454bca21d52878b5fed422fbfeebb925d8f182a67fdb9888d489ed356b2e1`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `eb7cc1b7cedf00bdc97e415f10a95411574208c702babe2865b66c38a0f10b4c`
+#### `2915433f46c42a61ef5a86f57b0a58c90794f1f7253a5afae00c97e876358347`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:23:09 GMT
--	Parent Layer: `5926e3b0b88e0b2f78b46cbe53044d025dd7965da7b4bacbf8a35b97f085681f`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:24:26 GMT
+-	Parent Layer: `bb889377c1611e58e62fb9b7fe66f48788e7cc8b84d4f093a014c121375f067b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2188,98 +2189,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0.3`
 
 ```console
-$ docker pull library/rethinkdb@sha256:c7f3e25a367f965b6f25e6e83bb4b74ba0e541fa956828f6b1c2cdaf181294b6
+$ docker pull library/rethinkdb@sha256:d38adb8bbf468f328ac34a0e55d2fe47894c6d5fe9afe7a1431dee037dfc5f16
 ```
 
--	Total Virtual Size: 195.9 MB (195936564 bytes)
--	Total v2 Content-Length: 80.7 MB (80668712 bytes)
+-	Total Virtual Size: 195.9 MB (195937447 bytes)
+-	Total v2 Content-Length: 80.7 MB (80669344 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `370131422da9054ca0079267c20efaf5c302a66b617f9ce050582b815ab00fe3`
+#### `f3ecf64c317f196e04290da7a67404ea95665a5f24dcd3cedd6e07732de27e3f`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=2.0.3~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:23:22 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:24:36 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0d08c8c1f6de756803bca7a065580641714c70c906a907b4c0f756d337f8138f`
+#### `d0a14f91db30239be9bd4d91da9a717a4829f4e987dc7b40e166c11a622d05d9`
 
 ```dockerfile
 RUN apt-get update \
@@ -2287,65 +2288,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:24:11 GMT
--	Parent Layer: `370131422da9054ca0079267c20efaf5c302a66b617f9ce050582b815ab00fe3`
--	Docker Version: 1.7.1
--	Virtual Size: 70.8 MB (70776179 bytes)
--	v2 Blob: `sha256:09836db533d37d6a49a84ca34a9fc83ddff0f09c8ecb9e0059b6ba6d748a5ff4`
--	v2 Content-Length: 29.3 MB (29307125 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:57:33 GMT
+-	Created: Fri, 09 Oct 2015 20:25:26 GMT
+-	Parent Layer: `f3ecf64c317f196e04290da7a67404ea95665a5f24dcd3cedd6e07732de27e3f`
+-	Docker Version: 1.8.2
+-	Virtual Size: 70.8 MB (70777062 bytes)
+-	v2 Blob: `sha256:88f4b0bff1309e4679b2f50ad2888b139b9765b8eebf682f1e3874076f23d6f3`
+-	v2 Content-Length: 29.3 MB (29307762 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:49:52 GMT
 
-#### `d26e4b17836c6cc22c57c07e0c08a1fdd44bc5855dcf801f7a1f8d5bad20a73e`
+#### `f1a44e3a87ff1757d6b7a9dda17bbb6402579a26d492a1466c5e0599233deb82`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:24:12 GMT
--	Parent Layer: `0d08c8c1f6de756803bca7a065580641714c70c906a907b4c0f756d337f8138f`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:25:27 GMT
+-	Parent Layer: `d0a14f91db30239be9bd4d91da9a717a4829f4e987dc7b40e166c11a622d05d9`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c475529820654da0722779b5574a5f70523cd568fe5c8b854f533e24f6132e7e`
+#### `95fc6887575f55acdc3e8af25085c79372b674ced0bee446000bd05358cfbb69`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:24:13 GMT
--	Parent Layer: `d26e4b17836c6cc22c57c07e0c08a1fdd44bc5855dcf801f7a1f8d5bad20a73e`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:25:28 GMT
+-	Parent Layer: `f1a44e3a87ff1757d6b7a9dda17bbb6402579a26d492a1466c5e0599233deb82`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `aa8fed30040e4d407d871129a024a6fcac8b18c5e8a7dd517835479d0a2bb04c`
+#### `32c2bfe72cbd95e0236ac70cf07bb0aa0fac2888ba29ad841a9439f3fc54b9b6`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:24:13 GMT
--	Parent Layer: `c475529820654da0722779b5574a5f70523cd568fe5c8b854f533e24f6132e7e`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:25:28 GMT
+-	Parent Layer: `95fc6887575f55acdc3e8af25085c79372b674ced0bee446000bd05358cfbb69`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `26d22f0476f1f8239d4f4602dc313e07d6d38a0fcf996139991ec94c6473c098`
+#### `550c0ac01788cf6a285330b98f8c66f3fed5d478162f82f4ead5b3503d97cf77`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:24:13 GMT
--	Parent Layer: `aa8fed30040e4d407d871129a024a6fcac8b18c5e8a7dd517835479d0a2bb04c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:25:29 GMT
+-	Parent Layer: `32c2bfe72cbd95e0236ac70cf07bb0aa0fac2888ba29ad841a9439f3fc54b9b6`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2354,98 +2355,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0.4`
 
 ```console
-$ docker pull library/rethinkdb@sha256:878c5c42fa16319198596e607d3ee28017d317552d428bb9f6f00fcfd7e839d8
+$ docker pull library/rethinkdb@sha256:2d7cdc188592ca414af6706864ac015babefb89dffd8911f112f765886503dc1
 ```
 
--	Total Virtual Size: 195.9 MB (195936631 bytes)
--	Total v2 Content-Length: 80.7 MB (80668963 bytes)
+-	Total Virtual Size: 195.9 MB (195937514 bytes)
+-	Total v2 Content-Length: 80.7 MB (80669510 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `2b9700cd78f75627571d500b4eca4b1d4c4080a4f21b066f11a4ffd87c890ec5`
+#### `857548ae3878156ce11b31c6aa45c55f5d8075492be59d36d2b776144cb50e85`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=2.0.4~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:24:27 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:25:39 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7a30e3b261348cff280b916c1f7e246f8a7ec7bc40fedd21eb98ada1223a0d8e`
+#### `f2da8299281f218f390e93acc74f2fc16da7a785340a8c1b304e3ca50f847406`
 
 ```dockerfile
 RUN apt-get update \
@@ -2453,65 +2454,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:25:16 GMT
--	Parent Layer: `2b9700cd78f75627571d500b4eca4b1d4c4080a4f21b066f11a4ffd87c890ec5`
--	Docker Version: 1.7.1
--	Virtual Size: 70.8 MB (70776246 bytes)
--	v2 Blob: `sha256:a053a19e5d5dc7d8ad183c72d2c4be31035f00acbfbfa4e6cb51631b84a155ac`
--	v2 Content-Length: 29.3 MB (29307376 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:59:16 GMT
+-	Created: Fri, 09 Oct 2015 20:26:57 GMT
+-	Parent Layer: `857548ae3878156ce11b31c6aa45c55f5d8075492be59d36d2b776144cb50e85`
+-	Docker Version: 1.8.2
+-	Virtual Size: 70.8 MB (70777129 bytes)
+-	v2 Blob: `sha256:45f1f3c0633c7d4f5522e1c9922dc4cd948b958c82fabd168b68c72c87404f51`
+-	v2 Content-Length: 29.3 MB (29307928 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:50:51 GMT
 
-#### `eb7512b5d22b36a5015cf3f0282e989362d1dabc4d843653bf857575773d34c0`
+#### `380c9dea34d7dda46687a232c31feb35bc8ec7d24bdaa24b19abefd642b895ff`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:25:17 GMT
--	Parent Layer: `7a30e3b261348cff280b916c1f7e246f8a7ec7bc40fedd21eb98ada1223a0d8e`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:26:58 GMT
+-	Parent Layer: `f2da8299281f218f390e93acc74f2fc16da7a785340a8c1b304e3ca50f847406`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ab868d1902ca58a80f63a84d521c2a2276350429822048f7bc38a451a11a4369`
+#### `be30d27ee235fd50fac282201c88bcccbae2acd90df0015002e1c4ece506c798`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:25:17 GMT
--	Parent Layer: `eb7512b5d22b36a5015cf3f0282e989362d1dabc4d843653bf857575773d34c0`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:26:59 GMT
+-	Parent Layer: `380c9dea34d7dda46687a232c31feb35bc8ec7d24bdaa24b19abefd642b895ff`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c8c3eafe3d02f34335e052eee5f33123830902c1d7096c343c797ab3118ca3a0`
+#### `2db37937f09dab4ca258e006a4b40e39005b1e2a378fd53c78215185c9ccce0a`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:25:18 GMT
--	Parent Layer: `ab868d1902ca58a80f63a84d521c2a2276350429822048f7bc38a451a11a4369`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:26:59 GMT
+-	Parent Layer: `be30d27ee235fd50fac282201c88bcccbae2acd90df0015002e1c4ece506c798`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `770af2ce1837071874cdaf1cb9dcc7ab52f26288b499070065febd9d799510a3`
+#### `77bb345b0dee659b041cecfd18c822267ce86ebc8dd907543f0094817f4e5995`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:25:18 GMT
--	Parent Layer: `c8c3eafe3d02f34335e052eee5f33123830902c1d7096c343c797ab3118ca3a0`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:27:00 GMT
+-	Parent Layer: `2db37937f09dab4ca258e006a4b40e39005b1e2a378fd53c78215185c9ccce0a`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2520,98 +2521,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.0`
 
 ```console
-$ docker pull library/rethinkdb@sha256:23d003cc755a8073ad45c9a782b8c0b67f0e7744d293654ca6c65fd25bcc7951
+$ docker pull library/rethinkdb@sha256:03d186111c7aad81a158e9e700f3d238376ca26f32091143b08d00d924a32519
 ```
 
--	Total Virtual Size: 195.9 MB (195936631 bytes)
--	Total v2 Content-Length: 80.7 MB (80668963 bytes)
+-	Total Virtual Size: 195.9 MB (195937514 bytes)
+-	Total v2 Content-Length: 80.7 MB (80669510 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `2b9700cd78f75627571d500b4eca4b1d4c4080a4f21b066f11a4ffd87c890ec5`
+#### `857548ae3878156ce11b31c6aa45c55f5d8075492be59d36d2b776144cb50e85`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=2.0.4~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:24:27 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:25:39 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7a30e3b261348cff280b916c1f7e246f8a7ec7bc40fedd21eb98ada1223a0d8e`
+#### `f2da8299281f218f390e93acc74f2fc16da7a785340a8c1b304e3ca50f847406`
 
 ```dockerfile
 RUN apt-get update \
@@ -2619,65 +2620,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:25:16 GMT
--	Parent Layer: `2b9700cd78f75627571d500b4eca4b1d4c4080a4f21b066f11a4ffd87c890ec5`
--	Docker Version: 1.7.1
--	Virtual Size: 70.8 MB (70776246 bytes)
--	v2 Blob: `sha256:a053a19e5d5dc7d8ad183c72d2c4be31035f00acbfbfa4e6cb51631b84a155ac`
--	v2 Content-Length: 29.3 MB (29307376 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:59:16 GMT
+-	Created: Fri, 09 Oct 2015 20:26:57 GMT
+-	Parent Layer: `857548ae3878156ce11b31c6aa45c55f5d8075492be59d36d2b776144cb50e85`
+-	Docker Version: 1.8.2
+-	Virtual Size: 70.8 MB (70777129 bytes)
+-	v2 Blob: `sha256:45f1f3c0633c7d4f5522e1c9922dc4cd948b958c82fabd168b68c72c87404f51`
+-	v2 Content-Length: 29.3 MB (29307928 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:50:51 GMT
 
-#### `eb7512b5d22b36a5015cf3f0282e989362d1dabc4d843653bf857575773d34c0`
+#### `380c9dea34d7dda46687a232c31feb35bc8ec7d24bdaa24b19abefd642b895ff`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:25:17 GMT
--	Parent Layer: `7a30e3b261348cff280b916c1f7e246f8a7ec7bc40fedd21eb98ada1223a0d8e`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:26:58 GMT
+-	Parent Layer: `f2da8299281f218f390e93acc74f2fc16da7a785340a8c1b304e3ca50f847406`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ab868d1902ca58a80f63a84d521c2a2276350429822048f7bc38a451a11a4369`
+#### `be30d27ee235fd50fac282201c88bcccbae2acd90df0015002e1c4ece506c798`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:25:17 GMT
--	Parent Layer: `eb7512b5d22b36a5015cf3f0282e989362d1dabc4d843653bf857575773d34c0`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:26:59 GMT
+-	Parent Layer: `380c9dea34d7dda46687a232c31feb35bc8ec7d24bdaa24b19abefd642b895ff`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c8c3eafe3d02f34335e052eee5f33123830902c1d7096c343c797ab3118ca3a0`
+#### `2db37937f09dab4ca258e006a4b40e39005b1e2a378fd53c78215185c9ccce0a`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:25:18 GMT
--	Parent Layer: `ab868d1902ca58a80f63a84d521c2a2276350429822048f7bc38a451a11a4369`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:26:59 GMT
+-	Parent Layer: `be30d27ee235fd50fac282201c88bcccbae2acd90df0015002e1c4ece506c798`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `770af2ce1837071874cdaf1cb9dcc7ab52f26288b499070065febd9d799510a3`
+#### `77bb345b0dee659b041cecfd18c822267ce86ebc8dd907543f0094817f4e5995`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:25:18 GMT
--	Parent Layer: `c8c3eafe3d02f34335e052eee5f33123830902c1d7096c343c797ab3118ca3a0`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:27:00 GMT
+-	Parent Layer: `2db37937f09dab4ca258e006a4b40e39005b1e2a378fd53c78215185c9ccce0a`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2686,98 +2687,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.1.0`
 
 ```console
-$ docker pull library/rethinkdb@sha256:676bf1f605f466616bb503c89622dab1fab34979187c7a091d147f6280320af0
+$ docker pull library/rethinkdb@sha256:a21c4992420d09f3d25047417ff33d5219d8800552b1aabd71a5b9a4592c877c
 ```
 
--	Total Virtual Size: 196.2 MB (196248003 bytes)
--	Total v2 Content-Length: 81.0 MB (81017456 bytes)
+-	Total Virtual Size: 196.2 MB (196248886 bytes)
+-	Total v2 Content-Length: 81.0 MB (81017754 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `b6814120acd4a0ed4fc6cbf59f2f89a057c42fbfa6fbb18f04971e390597fb83`
+#### `121e526285e7eac9bc8e875366e032baa16e066f51ece1106bfdf2a3587bfa61`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=2.1.0+1~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:26:00 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:27:32 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4360239ef29a6f57f196045a3ec7e94c42427774df4090c1e8643de3d73b81da`
+#### `102a3d539132f276303985a190cb762a8f4a7f57e199a3840ed444d9bf2fdaa7`
 
 ```dockerfile
 RUN apt-get update \
@@ -2785,65 +2786,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:26:51 GMT
--	Parent Layer: `b6814120acd4a0ed4fc6cbf59f2f89a057c42fbfa6fbb18f04971e390597fb83`
--	Docker Version: 1.7.1
--	Virtual Size: 71.1 MB (71087618 bytes)
--	v2 Blob: `sha256:84d1b24d7bfcb7290e99ba392845bcf03f6e69cf355514399b03410587f733fe`
--	v2 Content-Length: 29.7 MB (29655869 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 14:00:56 GMT
+-	Created: Fri, 09 Oct 2015 20:28:22 GMT
+-	Parent Layer: `121e526285e7eac9bc8e875366e032baa16e066f51ece1106bfdf2a3587bfa61`
+-	Docker Version: 1.8.2
+-	Virtual Size: 71.1 MB (71088501 bytes)
+-	v2 Blob: `sha256:c52b2b96b9cd8714fc7c586e009e8ac23d993450b9a570d56d98b37e2c684086`
+-	v2 Content-Length: 29.7 MB (29656172 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:52:02 GMT
 
-#### `49a120268858cbc141b430e2ded04f54e0c6f69bb0ad12364a127935e9888f32`
+#### `0e37151a5915d2413e9d40c1a7f83d83cf246018c0efdb7216dea9d6e9bd86b6`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:26:52 GMT
--	Parent Layer: `4360239ef29a6f57f196045a3ec7e94c42427774df4090c1e8643de3d73b81da`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:28:23 GMT
+-	Parent Layer: `102a3d539132f276303985a190cb762a8f4a7f57e199a3840ed444d9bf2fdaa7`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f36cf8cc4918e7482195ba6faebe81368e8e9b4e9ea67436416047833e56ee07`
+#### `0a485695ed46460aa1589f8458ca596a022a229440cbb03e328e07566cd9d948`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:26:52 GMT
--	Parent Layer: `49a120268858cbc141b430e2ded04f54e0c6f69bb0ad12364a127935e9888f32`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:28:24 GMT
+-	Parent Layer: `0e37151a5915d2413e9d40c1a7f83d83cf246018c0efdb7216dea9d6e9bd86b6`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5e51f8b48ca563fe560ac83cbcd69800ee2fb80a2372a6e4b4c7475631bbc536`
+#### `1680d2861d0c783faaad4fe3cbddd23137630ca97d2cfad125dadd0383edeeb5`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:26:53 GMT
--	Parent Layer: `f36cf8cc4918e7482195ba6faebe81368e8e9b4e9ea67436416047833e56ee07`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:28:24 GMT
+-	Parent Layer: `0a485695ed46460aa1589f8458ca596a022a229440cbb03e328e07566cd9d948`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `193ec5542440019be1a0763ebe92db0a3fe70b3ba490108871a31e3960a97bc5`
+#### `3e44644652903a76505acc32ebed666a06b9cb77460f6bf7d88a6a25501ff153`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:26:53 GMT
--	Parent Layer: `5e51f8b48ca563fe560ac83cbcd69800ee2fb80a2372a6e4b4c7475631bbc536`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:28:24 GMT
+-	Parent Layer: `1680d2861d0c783faaad4fe3cbddd23137630ca97d2cfad125dadd0383edeeb5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -2852,98 +2853,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.1.1`
 
 ```console
-$ docker pull library/rethinkdb@sha256:4f5438640c9b4380dd24c95c1318445ffb96c620e13d16baf3e6df008debaee2
+$ docker pull library/rethinkdb@sha256:17c27b2c8027afa75c91141d513c2a5ed673d495d8b8f5826f5003bd2acc054e
 ```
 
--	Total Virtual Size: 196.2 MB (196247766 bytes)
--	Total v2 Content-Length: 81.0 MB (81018135 bytes)
+-	Total Virtual Size: 196.2 MB (196248649 bytes)
+-	Total v2 Content-Length: 81.0 MB (81018261 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
 
 ```dockerfile
 MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
 
 ```dockerfile
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
 -	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
 
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
 
 ```dockerfile
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
 ```
 
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
 -	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
 
-#### `081a8ead60c369196231a451d78fc8c6622cd3bd392a97ade2e7060719aae871`
+#### `c629ffc336d79491962f6b961015cdf6ac731e66b854f99ee31c81578c940cad`
 
 ```dockerfile
 ENV RETHINKDB_PACKAGE_VERSION=2.1.1~0jessie
 ```
 
--	Created: Thu, 10 Sep 2015 02:27:06 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:28:35 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1d875e66fc3d590f4dd960446b158d0cd97a2243af056f91fd2e43c3cd1bf85b`
+#### `77fe0313fdfb7f46d1f220eb132c0ef8ff7cb53324c6259796964b611949764b`
 
 ```dockerfile
 RUN apt-get update \
@@ -2951,65 +2952,65 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 10 Sep 2015 02:27:56 GMT
--	Parent Layer: `081a8ead60c369196231a451d78fc8c6622cd3bd392a97ade2e7060719aae871`
--	Docker Version: 1.7.1
--	Virtual Size: 71.1 MB (71087381 bytes)
--	v2 Blob: `sha256:c1bf4d702e25595c7a4c03fdc4112f4c7f9a2da96a101ae2a6fa74aedee50b2d`
--	v2 Content-Length: 29.7 MB (29656548 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 14:04:14 GMT
+-	Created: Fri, 09 Oct 2015 20:30:19 GMT
+-	Parent Layer: `c629ffc336d79491962f6b961015cdf6ac731e66b854f99ee31c81578c940cad`
+-	Docker Version: 1.8.2
+-	Virtual Size: 71.1 MB (71088264 bytes)
+-	v2 Blob: `sha256:ba2067d396725d20cf46f27425f70e08823b604fc1a24b50d09a2dff5679bd2e`
+-	v2 Content-Length: 29.7 MB (29656679 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:53:03 GMT
 
-#### `a41500dcdca124c5d932937736ece35f734bec5828d568fe4d7a2cad92e8485d`
+#### `fc84ab89ea54d4858f62e6d3aabb25bc0b8eec7787f1f6317983f2dc93a2ca44`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Thu, 10 Sep 2015 02:27:56 GMT
--	Parent Layer: `1d875e66fc3d590f4dd960446b158d0cd97a2243af056f91fd2e43c3cd1bf85b`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:30:20 GMT
+-	Parent Layer: `77fe0313fdfb7f46d1f220eb132c0ef8ff7cb53324c6259796964b611949764b`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `51aea7d4f8dd0e44073a5ff04f6c324ca4baf6082b38648f5b2e7930e981eda0`
+#### `193eb8ecccf3a988402ed0ce00cfee8dae7ea16332ebc09e49e43a516d960994`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Thu, 10 Sep 2015 02:27:57 GMT
--	Parent Layer: `a41500dcdca124c5d932937736ece35f734bec5828d568fe4d7a2cad92e8485d`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:30:21 GMT
+-	Parent Layer: `fc84ab89ea54d4858f62e6d3aabb25bc0b8eec7787f1f6317983f2dc93a2ca44`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ca7a2ac3ba042793d0b06226d299d56d142d99859934300bb706e53e21b74d4b`
+#### `b9997be1a67bbca3346a8b0aeaabeb84e3a431dc288a529e25337d3a4e95cdf6`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Thu, 10 Sep 2015 02:27:57 GMT
--	Parent Layer: `51aea7d4f8dd0e44073a5ff04f6c324ca4baf6082b38648f5b2e7930e981eda0`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:30:21 GMT
+-	Parent Layer: `193eb8ecccf3a988402ed0ce00cfee8dae7ea16332ebc09e49e43a516d960994`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9a330e22d3a1408788a44506821c59fe1ae796aaa7000d62352dd018ed8645c1`
+#### `ff7463c3a004aef3b968e2cb7598218638976a9ff9af8f77c76d25abbe96cda3`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Thu, 10 Sep 2015 02:27:58 GMT
--	Parent Layer: `ca7a2ac3ba042793d0b06226d299d56d142d99859934300bb706e53e21b74d4b`
--	Docker Version: 1.7.1
+-	Created: Fri, 09 Oct 2015 20:30:22 GMT
+-	Parent Layer: `b9997be1a67bbca3346a8b0aeaabeb84e3a431dc288a529e25337d3a4e95cdf6`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3018,98 +3019,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.1.2`
 
 ```console
-$ docker pull library/rethinkdb@sha256:7eb71b2ab52d47abf7ae219746f4a4211894ab8e97e9c04c4d1e4a8d5a4abe7b
+$ docker pull library/rethinkdb@sha256:a6f691d5a3dd044f963d12d1e04d67c1d2a8ab1491bfe88fda59e41e069f42e2
 ```
 
--	Total Virtual Size: 196.3 MB (196263341 bytes)
--	Total v2 Content-Length: 81.0 MB (81017322 bytes)
+-	Total Virtual Size: 196.3 MB (196263945 bytes)
+-	Total v2 Content-Length: 81.0 MB (81017558 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
-
-```dockerfile
-MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
-```
-
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
-
-```dockerfile
-RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-```
-
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
--	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
-
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
-
-```dockerfile
-RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-```
-
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
--	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
--	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
-
-#### `522547b3428c0b0473a28536e3e94da2339c1d1af474df733d00acdd55ede2eb`
-
-```dockerfile
-ENV RETHINKDB_PACKAGE_VERSION=2.1.2~0jessie
-```
-
--	Created: Mon, 14 Sep 2015 20:30:34 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c69c54d197a28e8fb870b29adb72b47671e9b1d0d534f20313ad430cc3efe994`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+
+```dockerfile
+MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+
+```dockerfile
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
+-	Virtual Size: 1.2 KB (1204 bytes)
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
+
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+
+```dockerfile
+RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
+```
+
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
+-	Virtual Size: 50.0 B
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
+
+#### `847ec9662162637f9a593a78f390b319caaa42ad1d5d124f1a54b98ee962830f`
+
+```dockerfile
+ENV RETHINKDB_PACKAGE_VERSION=2.1.2~0jessie
+```
+
+-	Created: Fri, 09 Oct 2015 20:30:32 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `6776c6578e894bd69032778acf8bb9f5c9c3884a52889c8e1f565e11e3231875`
 
 ```dockerfile
 RUN apt-get update \
@@ -3117,64 +3118,64 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 14 Sep 2015 20:31:28 GMT
--	Parent Layer: `522547b3428c0b0473a28536e3e94da2339c1d1af474df733d00acdd55ede2eb`
+-	Created: Fri, 09 Oct 2015 20:31:25 GMT
+-	Parent Layer: `847ec9662162637f9a593a78f390b319caaa42ad1d5d124f1a54b98ee962830f`
 -	Docker Version: 1.8.2
--	Virtual Size: 71.1 MB (71102956 bytes)
--	v2 Blob: `sha256:0b32b214857a152ab63625d35c3df36a0d5170e75f3ad8eca6d0ba3efd1e6816`
--	v2 Content-Length: 29.7 MB (29655735 bytes)
--	v2 Last-Modified: Mon, 14 Sep 2015 21:14:27 GMT
+-	Virtual Size: 71.1 MB (71103560 bytes)
+-	v2 Blob: `sha256:2a15f1fdca2605379ce5ca332497c45bf61bd7ea3eb0a9b23156c897f6d63ca4`
+-	v2 Content-Length: 29.7 MB (29655976 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:54:01 GMT
 
-#### `ed08b21ae566f6a6b283c973e212f2381cffb04e2817c44bad6337bf9c443d99`
+#### `828c6155f50763be5a109866248023e80377abb2a28829ec110bec46aa986120`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Mon, 14 Sep 2015 20:31:29 GMT
--	Parent Layer: `c69c54d197a28e8fb870b29adb72b47671e9b1d0d534f20313ad430cc3efe994`
+-	Created: Fri, 09 Oct 2015 20:31:26 GMT
+-	Parent Layer: `6776c6578e894bd69032778acf8bb9f5c9c3884a52889c8e1f565e11e3231875`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e361ed4349bf7bef7ca427db4fc0521329ac003f464c05166b8166ef7ab7cdfa`
+#### `3e8924af73766ac33bf94e86eac83fef905b9b0bb366f4b1e381ad07ab50b612`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Mon, 14 Sep 2015 20:31:30 GMT
--	Parent Layer: `ed08b21ae566f6a6b283c973e212f2381cffb04e2817c44bad6337bf9c443d99`
+-	Created: Fri, 09 Oct 2015 20:31:26 GMT
+-	Parent Layer: `828c6155f50763be5a109866248023e80377abb2a28829ec110bec46aa986120`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3d333946a4d3a1e5ca9abd8fcda9f967638370e669bb27a2f411695d4d67d4a0`
+#### `db061c632f93b01f943e0e579d0a80948b76f51c55879e5c16ea3a54c8056ee5`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Mon, 14 Sep 2015 20:31:30 GMT
--	Parent Layer: `e361ed4349bf7bef7ca427db4fc0521329ac003f464c05166b8166ef7ab7cdfa`
+-	Created: Fri, 09 Oct 2015 20:31:27 GMT
+-	Parent Layer: `3e8924af73766ac33bf94e86eac83fef905b9b0bb366f4b1e381ad07ab50b612`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2833148811afb2a138cc271bd26674872e7ccd32334f252c5f60175502340bf9`
+#### `336fb6a2196fdb95131014ae67dad3f98691a03387a9f89541dafdcb2e31030d`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Mon, 14 Sep 2015 20:31:30 GMT
--	Parent Layer: `3d333946a4d3a1e5ca9abd8fcda9f967638370e669bb27a2f411695d4d67d4a0`
+-	Created: Fri, 09 Oct 2015 20:31:27 GMT
+-	Parent Layer: `db061c632f93b01f943e0e579d0a80948b76f51c55879e5c16ea3a54c8056ee5`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3184,98 +3185,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.1.3`
 
 ```console
-$ docker pull library/rethinkdb@sha256:df36c122a4ed9e6efcbf5cfe7e121e5c042628c76bccb2bc1222d4ef26d0e1f0
+$ docker pull library/rethinkdb@sha256:05da4c7fe094946f91050512dabb211f7f47900a7d2e0e44e0b8d16469018bb5
 ```
 
--	Total Virtual Size: 196.3 MB (196271535 bytes)
--	Total v2 Content-Length: 81.0 MB (81018979 bytes)
+-	Total Virtual Size: 196.3 MB (196272139 bytes)
+-	Total v2 Content-Length: 81.0 MB (81019095 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
-
-```dockerfile
-MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
-```
-
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
-
-```dockerfile
-RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-```
-
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
--	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
-
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
-
-```dockerfile
-RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-```
-
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
--	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
--	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
-
-#### `7aa456fe36dfd884c0f9fef8ee6f3e6658ba3014a97cf810ff6c42986bf013be`
-
-```dockerfile
-ENV RETHINKDB_PACKAGE_VERSION=2.1.3~0jessie
-```
-
--	Created: Mon, 14 Sep 2015 20:31:40 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8784186331a97e69ed31e24be51d6b1d8144d19bc8e42ddb5cca41be9ca22015`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+
+```dockerfile
+MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+
+```dockerfile
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
+-	Virtual Size: 1.2 KB (1204 bytes)
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
+
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+
+```dockerfile
+RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
+```
+
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
+-	Virtual Size: 50.0 B
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
+
+#### `ce8d7ef4896229ff25e66cbd87324ef52012c2258b2d921cdf5ba7bb32d8ae88`
+
+```dockerfile
+ENV RETHINKDB_PACKAGE_VERSION=2.1.3~0jessie
+```
+
+-	Created: Fri, 09 Oct 2015 20:31:38 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `de417a85382806fc9965f0402825df84a82397826b3ae10017fc9c279c1d60eb`
 
 ```dockerfile
 RUN apt-get update \
@@ -3283,64 +3284,64 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:33 GMT
--	Parent Layer: `7aa456fe36dfd884c0f9fef8ee6f3e6658ba3014a97cf810ff6c42986bf013be`
+-	Created: Fri, 09 Oct 2015 20:32:27 GMT
+-	Parent Layer: `ce8d7ef4896229ff25e66cbd87324ef52012c2258b2d921cdf5ba7bb32d8ae88`
 -	Docker Version: 1.8.2
--	Virtual Size: 71.1 MB (71111150 bytes)
--	v2 Blob: `sha256:e41ec04224b40d0ce79055db3b0d4c5083cba6179dc447548b881bce98672e7b`
--	v2 Content-Length: 29.7 MB (29657392 bytes)
--	v2 Last-Modified: Mon, 14 Sep 2015 21:15:26 GMT
+-	Virtual Size: 71.1 MB (71111754 bytes)
+-	v2 Blob: `sha256:e0d88f502ec5c54974ec86022c1f657f313018a3c624a1f2f98f2feafaa9afb2`
+-	v2 Content-Length: 29.7 MB (29657513 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:55:01 GMT
 
-#### `4ebcf7747f11dc60d26e648ae815df61c1aed6135b8b496d78d209985f58f533`
+#### `a529179241fc52626214d8e6429410e1a78a80edfb7193c6beb0e2121f1801c5`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:34 GMT
--	Parent Layer: `8784186331a97e69ed31e24be51d6b1d8144d19bc8e42ddb5cca41be9ca22015`
+-	Created: Fri, 09 Oct 2015 20:32:28 GMT
+-	Parent Layer: `de417a85382806fc9965f0402825df84a82397826b3ae10017fc9c279c1d60eb`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8a74805e3ad1b712da1b72952536beab835afc6f2305ca8d9d794f98031d6748`
+#### `a4eb681d0bb7b36d67d36fc6a8e4909bf2aefd5fee70a05c2e6b8807111c6bd1`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:34 GMT
--	Parent Layer: `4ebcf7747f11dc60d26e648ae815df61c1aed6135b8b496d78d209985f58f533`
+-	Created: Fri, 09 Oct 2015 20:32:29 GMT
+-	Parent Layer: `a529179241fc52626214d8e6429410e1a78a80edfb7193c6beb0e2121f1801c5`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `51d8f3e2b66136e7f03a48dcaaa2921c029ad701984f8e0f42a5aff5730d78dd`
+#### `d1159bbd9127f64e8df685eaddedfc7270b315509e632271c4c827862e37ca72`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:34 GMT
--	Parent Layer: `8a74805e3ad1b712da1b72952536beab835afc6f2305ca8d9d794f98031d6748`
+-	Created: Fri, 09 Oct 2015 20:32:29 GMT
+-	Parent Layer: `a4eb681d0bb7b36d67d36fc6a8e4909bf2aefd5fee70a05c2e6b8807111c6bd1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `bb270de71f333226b16a694f85a472a4353079c9566071416f5e03ea31002687`
+#### `c2aa9ec0a2f7f55a318fa6922a65a723afc9d8fcdcee92db89cc8ffed2010cad`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:35 GMT
--	Parent Layer: `51d8f3e2b66136e7f03a48dcaaa2921c029ad701984f8e0f42a5aff5730d78dd`
+-	Created: Fri, 09 Oct 2015 20:32:30 GMT
+-	Parent Layer: `d1159bbd9127f64e8df685eaddedfc7270b315509e632271c4c827862e37ca72`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3350,98 +3351,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.1.4`
 
 ```console
-$ docker pull library/rethinkdb@sha256:a333a993d39866dcd9f9f4a5b32c80f38ad239667452e5edcb60b829ff1414b0
+$ docker pull library/rethinkdb@sha256:d23e7dd5d9636fb1794053e587595538f10a40e1fed232477a789df509248620
 ```
 
 -	Total Virtual Size: 196.3 MB (196276232 bytes)
--	Total v2 Content-Length: 81.0 MB (81020407 bytes)
+-	Total v2 Content-Length: 81.0 MB (81020344 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
-
-```dockerfile
-MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
-```
-
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
-
-```dockerfile
-RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-```
-
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
--	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
-
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
-
-```dockerfile
-RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-```
-
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
--	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
--	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
-
-#### `5c12148100a276970ae71c72aef35d5595c3f5f72ea1eb92b1e1e0676cb27ba0`
-
-```dockerfile
-ENV RETHINKDB_PACKAGE_VERSION=2.1.4~0jessie
-```
-
--	Created: Tue, 06 Oct 2015 19:35:18 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `31a3c4ce0229358c6a92f8f01fda9b61f077938862e7988e3079ed6d906a948f`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+
+```dockerfile
+MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+
+```dockerfile
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
+-	Virtual Size: 1.2 KB (1204 bytes)
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
+
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+
+```dockerfile
+RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
+```
+
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
+-	Virtual Size: 50.0 B
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
+
+#### `f607f50101863bdbfd2ffd0c1ea4feb06384b5168ef3bc3785302aa1aaffce20`
+
+```dockerfile
+ENV RETHINKDB_PACKAGE_VERSION=2.1.4~0jessie
+```
+
+-	Created: Fri, 09 Oct 2015 20:32:40 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `91e49b00f89e67f2ea943da9696bd79a1933fc028a5353bf25039a28ac194700`
 
 ```dockerfile
 RUN apt-get update \
@@ -3449,64 +3450,230 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 06 Oct 2015 19:36:08 GMT
--	Parent Layer: `5c12148100a276970ae71c72aef35d5595c3f5f72ea1eb92b1e1e0676cb27ba0`
+-	Created: Fri, 09 Oct 2015 20:33:31 GMT
+-	Parent Layer: `f607f50101863bdbfd2ffd0c1ea4feb06384b5168ef3bc3785302aa1aaffce20`
 -	Docker Version: 1.8.2
 -	Virtual Size: 71.1 MB (71115847 bytes)
--	v2 Blob: `sha256:7f6e9a91077977c5ec542fb5b67e46af1f748442f72eb82411e9f2b5b62c7e19`
--	v2 Content-Length: 29.7 MB (29658820 bytes)
--	v2 Last-Modified: Tue, 06 Oct 2015 19:43:44 GMT
+-	v2 Blob: `sha256:7b22523e67dc42dc9194e075709c7f8f9ba3216275d5f38cd71c7c4fe7eb2d6b`
+-	v2 Content-Length: 29.7 MB (29658762 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:55:59 GMT
 
-#### `16a8992297898f08aa9124b9090a95cf36f694db9f6888075255298cffa183c0`
+#### `645682a6a85cc47f4ca67498638139b9a29e7c5bff896858d79bd4b0b4509a18`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Tue, 06 Oct 2015 19:36:09 GMT
--	Parent Layer: `31a3c4ce0229358c6a92f8f01fda9b61f077938862e7988e3079ed6d906a948f`
+-	Created: Fri, 09 Oct 2015 20:33:32 GMT
+-	Parent Layer: `91e49b00f89e67f2ea943da9696bd79a1933fc028a5353bf25039a28ac194700`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `82396e29d803bf1cc0f2530b5f95af3f286718f94d24948075e0cb0223632e45`
+#### `17098a6417ccbf574be10479214fefe8563dbaf6d95cdcaf16bbe7465bc45683`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Tue, 06 Oct 2015 19:36:09 GMT
--	Parent Layer: `16a8992297898f08aa9124b9090a95cf36f694db9f6888075255298cffa183c0`
+-	Created: Fri, 09 Oct 2015 20:33:32 GMT
+-	Parent Layer: `645682a6a85cc47f4ca67498638139b9a29e7c5bff896858d79bd4b0b4509a18`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `768cbea39baa5d8855a943572eacce3cfeff1202c8f13a9185e03628052976c4`
+#### `e8033c420cf5a8bc0c425037fdb2af6961136dad9cd61508968f17d9aca7a0d7`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Tue, 06 Oct 2015 19:36:09 GMT
--	Parent Layer: `82396e29d803bf1cc0f2530b5f95af3f286718f94d24948075e0cb0223632e45`
+-	Created: Fri, 09 Oct 2015 20:33:32 GMT
+-	Parent Layer: `17098a6417ccbf574be10479214fefe8563dbaf6d95cdcaf16bbe7465bc45683`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0340075a76e49e31276bc4f1dbf7dab67e5091c0a20bc21c05f66bd17c54b550`
+#### `b17ad788b553116925f258c16e9d4bf9ab318be517cec2be52e4d5f2b0992463`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Tue, 06 Oct 2015 19:36:10 GMT
--	Parent Layer: `768cbea39baa5d8855a943572eacce3cfeff1202c8f13a9185e03628052976c4`
+-	Created: Fri, 09 Oct 2015 20:33:33 GMT
+-	Parent Layer: `e8033c420cf5a8bc0c425037fdb2af6961136dad9cd61508968f17d9aca7a0d7`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+## `rethinkdb:2.1.5`
+
+```console
+$ docker pull library/rethinkdb@sha256:49d32a2caf332e77257b2cd0baafd70a8b6e3e531dbe8e98b42ecfdf250f637a
+```
+
+-	Total Virtual Size: 181.3 MB (181281398 bytes)
+-	Total v2 Content-Length: 75.3 MB (75295379 bytes)
+
+### Layers (11)
+
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+
+```dockerfile
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
+```
+
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
+-	Virtual Size: 125.2 MB (125159131 bytes)
+-	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
+-	v2 Content-Length: 51.4 MB (51359708 bytes)
+-	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
+
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+
+```dockerfile
+MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+
+```dockerfile
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
+-	Virtual Size: 1.2 KB (1204 bytes)
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
+
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+
+```dockerfile
+RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
+```
+
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
+-	Virtual Size: 50.0 B
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
+
+#### `137196f6cf2a7fafa2a15a40f8d3147aa32d924f52063f37d2427764a56f9e18`
+
+```dockerfile
+ENV RETHINKDB_PACKAGE_VERSION=2.1.5+2~0jessie
+```
+
+-	Created: Fri, 09 Oct 2015 20:33:43 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `b0437a2e1837c5364da11239e9c4029189334b017d1eb04cafbadf953fca88b4`
+
+```dockerfile
+RUN apt-get update \
+	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 09 Oct 2015 20:34:52 GMT
+-	Parent Layer: `137196f6cf2a7fafa2a15a40f8d3147aa32d924f52063f37d2427764a56f9e18`
+-	Docker Version: 1.8.2
+-	Virtual Size: 56.1 MB (56121013 bytes)
+-	v2 Blob: `sha256:5baab7fb61a7280910b0a5d17dfd78e90b2a3521dd46743f78a8980cd9eb85f7`
+-	v2 Content-Length: 23.9 MB (23933797 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:56:53 GMT
+
+#### `5c13a1fb90ef656cc02b60444d8450f018de631790ccd635e13d948b3dbf273b`
+
+```dockerfile
+VOLUME [/data]
+```
+
+-	Created: Fri, 09 Oct 2015 20:34:53 GMT
+-	Parent Layer: `b0437a2e1837c5364da11239e9c4029189334b017d1eb04cafbadf953fca88b4`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `c5170cb6988441c1448f52d7c7e77453ebc502f47cb32a2c0e91af83bfbb4ad0`
+
+```dockerfile
+WORKDIR /data
+```
+
+-	Created: Fri, 09 Oct 2015 20:34:53 GMT
+-	Parent Layer: `5c13a1fb90ef656cc02b60444d8450f018de631790ccd635e13d948b3dbf273b`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `6d55e66077ce0634e4ead1003343a07a52c980d90735684787899c231d50a411`
+
+```dockerfile
+CMD ["rethinkdb" "--bind" "all"]
+```
+
+-	Created: Fri, 09 Oct 2015 20:34:54 GMT
+-	Parent Layer: `c5170cb6988441c1448f52d7c7e77453ebc502f47cb32a2c0e91af83bfbb4ad0`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `84afe2b8ffc117382da1b23db65778cb57cf33584ef1550a72a72de1de37aa97`
+
+```dockerfile
+EXPOSE 28015/tcp 29015/tcp 8080/tcp
+```
+
+-	Created: Fri, 09 Oct 2015 20:34:54 GMT
+-	Parent Layer: `6d55e66077ce0634e4ead1003343a07a52c980d90735684787899c231d50a411`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3516,98 +3683,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2.1`
 
 ```console
-$ docker pull library/rethinkdb@sha256:6f978c70ca34d9d169d598adc351f7d214ccbe315bd36125c79592b3b2eab9cb
+$ docker pull library/rethinkdb@sha256:31663e2ba2921dead601426ba785b1b472b1d886560fbc74baf4091b9040f49f
 ```
 
--	Total Virtual Size: 196.3 MB (196271535 bytes)
--	Total v2 Content-Length: 81.0 MB (81018979 bytes)
+-	Total Virtual Size: 181.3 MB (181281398 bytes)
+-	Total v2 Content-Length: 75.3 MB (75295379 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
-
-```dockerfile
-MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
-```
-
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
-
-```dockerfile
-RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-```
-
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
--	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
-
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
-
-```dockerfile
-RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-```
-
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
--	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
--	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
-
-#### `7aa456fe36dfd884c0f9fef8ee6f3e6658ba3014a97cf810ff6c42986bf013be`
-
-```dockerfile
-ENV RETHINKDB_PACKAGE_VERSION=2.1.3~0jessie
-```
-
--	Created: Mon, 14 Sep 2015 20:31:40 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8784186331a97e69ed31e24be51d6b1d8144d19bc8e42ddb5cca41be9ca22015`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+
+```dockerfile
+MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+
+```dockerfile
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
+-	Virtual Size: 1.2 KB (1204 bytes)
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
+
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+
+```dockerfile
+RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
+```
+
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
+-	Virtual Size: 50.0 B
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
+
+#### `137196f6cf2a7fafa2a15a40f8d3147aa32d924f52063f37d2427764a56f9e18`
+
+```dockerfile
+ENV RETHINKDB_PACKAGE_VERSION=2.1.5+2~0jessie
+```
+
+-	Created: Fri, 09 Oct 2015 20:33:43 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `b0437a2e1837c5364da11239e9c4029189334b017d1eb04cafbadf953fca88b4`
 
 ```dockerfile
 RUN apt-get update \
@@ -3615,64 +3782,64 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:33 GMT
--	Parent Layer: `7aa456fe36dfd884c0f9fef8ee6f3e6658ba3014a97cf810ff6c42986bf013be`
+-	Created: Fri, 09 Oct 2015 20:34:52 GMT
+-	Parent Layer: `137196f6cf2a7fafa2a15a40f8d3147aa32d924f52063f37d2427764a56f9e18`
 -	Docker Version: 1.8.2
--	Virtual Size: 71.1 MB (71111150 bytes)
--	v2 Blob: `sha256:e41ec04224b40d0ce79055db3b0d4c5083cba6179dc447548b881bce98672e7b`
--	v2 Content-Length: 29.7 MB (29657392 bytes)
--	v2 Last-Modified: Mon, 14 Sep 2015 21:15:26 GMT
+-	Virtual Size: 56.1 MB (56121013 bytes)
+-	v2 Blob: `sha256:5baab7fb61a7280910b0a5d17dfd78e90b2a3521dd46743f78a8980cd9eb85f7`
+-	v2 Content-Length: 23.9 MB (23933797 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:56:53 GMT
 
-#### `4ebcf7747f11dc60d26e648ae815df61c1aed6135b8b496d78d209985f58f533`
+#### `5c13a1fb90ef656cc02b60444d8450f018de631790ccd635e13d948b3dbf273b`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:34 GMT
--	Parent Layer: `8784186331a97e69ed31e24be51d6b1d8144d19bc8e42ddb5cca41be9ca22015`
+-	Created: Fri, 09 Oct 2015 20:34:53 GMT
+-	Parent Layer: `b0437a2e1837c5364da11239e9c4029189334b017d1eb04cafbadf953fca88b4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8a74805e3ad1b712da1b72952536beab835afc6f2305ca8d9d794f98031d6748`
+#### `c5170cb6988441c1448f52d7c7e77453ebc502f47cb32a2c0e91af83bfbb4ad0`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:34 GMT
--	Parent Layer: `4ebcf7747f11dc60d26e648ae815df61c1aed6135b8b496d78d209985f58f533`
+-	Created: Fri, 09 Oct 2015 20:34:53 GMT
+-	Parent Layer: `5c13a1fb90ef656cc02b60444d8450f018de631790ccd635e13d948b3dbf273b`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `51d8f3e2b66136e7f03a48dcaaa2921c029ad701984f8e0f42a5aff5730d78dd`
+#### `6d55e66077ce0634e4ead1003343a07a52c980d90735684787899c231d50a411`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:34 GMT
--	Parent Layer: `8a74805e3ad1b712da1b72952536beab835afc6f2305ca8d9d794f98031d6748`
+-	Created: Fri, 09 Oct 2015 20:34:54 GMT
+-	Parent Layer: `c5170cb6988441c1448f52d7c7e77453ebc502f47cb32a2c0e91af83bfbb4ad0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `bb270de71f333226b16a694f85a472a4353079c9566071416f5e03ea31002687`
+#### `84afe2b8ffc117382da1b23db65778cb57cf33584ef1550a72a72de1de37aa97`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:35 GMT
--	Parent Layer: `51d8f3e2b66136e7f03a48dcaaa2921c029ad701984f8e0f42a5aff5730d78dd`
+-	Created: Fri, 09 Oct 2015 20:34:54 GMT
+-	Parent Layer: `6d55e66077ce0634e4ead1003343a07a52c980d90735684787899c231d50a411`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3682,98 +3849,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:2`
 
 ```console
-$ docker pull library/rethinkdb@sha256:6c88771f1080bc652872e6ace38540b0902d9696bf05303b231e055444114b6a
+$ docker pull library/rethinkdb@sha256:8683c0b48d8956aec55d169bb5c6f802fd3193397f9bca0d996d695d3c9f744b
 ```
 
--	Total Virtual Size: 196.3 MB (196271535 bytes)
--	Total v2 Content-Length: 81.0 MB (81018979 bytes)
+-	Total Virtual Size: 181.3 MB (181281398 bytes)
+-	Total v2 Content-Length: 75.3 MB (75295379 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
-
-```dockerfile
-MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
-```
-
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
-
-```dockerfile
-RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-```
-
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
--	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
-
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
-
-```dockerfile
-RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-```
-
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
--	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
--	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
-
-#### `7aa456fe36dfd884c0f9fef8ee6f3e6658ba3014a97cf810ff6c42986bf013be`
-
-```dockerfile
-ENV RETHINKDB_PACKAGE_VERSION=2.1.3~0jessie
-```
-
--	Created: Mon, 14 Sep 2015 20:31:40 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8784186331a97e69ed31e24be51d6b1d8144d19bc8e42ddb5cca41be9ca22015`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+
+```dockerfile
+MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+
+```dockerfile
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
+-	Virtual Size: 1.2 KB (1204 bytes)
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
+
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+
+```dockerfile
+RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
+```
+
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
+-	Virtual Size: 50.0 B
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
+
+#### `137196f6cf2a7fafa2a15a40f8d3147aa32d924f52063f37d2427764a56f9e18`
+
+```dockerfile
+ENV RETHINKDB_PACKAGE_VERSION=2.1.5+2~0jessie
+```
+
+-	Created: Fri, 09 Oct 2015 20:33:43 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `b0437a2e1837c5364da11239e9c4029189334b017d1eb04cafbadf953fca88b4`
 
 ```dockerfile
 RUN apt-get update \
@@ -3781,64 +3948,64 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:33 GMT
--	Parent Layer: `7aa456fe36dfd884c0f9fef8ee6f3e6658ba3014a97cf810ff6c42986bf013be`
+-	Created: Fri, 09 Oct 2015 20:34:52 GMT
+-	Parent Layer: `137196f6cf2a7fafa2a15a40f8d3147aa32d924f52063f37d2427764a56f9e18`
 -	Docker Version: 1.8.2
--	Virtual Size: 71.1 MB (71111150 bytes)
--	v2 Blob: `sha256:e41ec04224b40d0ce79055db3b0d4c5083cba6179dc447548b881bce98672e7b`
--	v2 Content-Length: 29.7 MB (29657392 bytes)
--	v2 Last-Modified: Mon, 14 Sep 2015 21:15:26 GMT
+-	Virtual Size: 56.1 MB (56121013 bytes)
+-	v2 Blob: `sha256:5baab7fb61a7280910b0a5d17dfd78e90b2a3521dd46743f78a8980cd9eb85f7`
+-	v2 Content-Length: 23.9 MB (23933797 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:56:53 GMT
 
-#### `4ebcf7747f11dc60d26e648ae815df61c1aed6135b8b496d78d209985f58f533`
+#### `5c13a1fb90ef656cc02b60444d8450f018de631790ccd635e13d948b3dbf273b`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:34 GMT
--	Parent Layer: `8784186331a97e69ed31e24be51d6b1d8144d19bc8e42ddb5cca41be9ca22015`
+-	Created: Fri, 09 Oct 2015 20:34:53 GMT
+-	Parent Layer: `b0437a2e1837c5364da11239e9c4029189334b017d1eb04cafbadf953fca88b4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8a74805e3ad1b712da1b72952536beab835afc6f2305ca8d9d794f98031d6748`
+#### `c5170cb6988441c1448f52d7c7e77453ebc502f47cb32a2c0e91af83bfbb4ad0`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:34 GMT
--	Parent Layer: `4ebcf7747f11dc60d26e648ae815df61c1aed6135b8b496d78d209985f58f533`
+-	Created: Fri, 09 Oct 2015 20:34:53 GMT
+-	Parent Layer: `5c13a1fb90ef656cc02b60444d8450f018de631790ccd635e13d948b3dbf273b`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `51d8f3e2b66136e7f03a48dcaaa2921c029ad701984f8e0f42a5aff5730d78dd`
+#### `6d55e66077ce0634e4ead1003343a07a52c980d90735684787899c231d50a411`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:34 GMT
--	Parent Layer: `8a74805e3ad1b712da1b72952536beab835afc6f2305ca8d9d794f98031d6748`
+-	Created: Fri, 09 Oct 2015 20:34:54 GMT
+-	Parent Layer: `c5170cb6988441c1448f52d7c7e77453ebc502f47cb32a2c0e91af83bfbb4ad0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `bb270de71f333226b16a694f85a472a4353079c9566071416f5e03ea31002687`
+#### `84afe2b8ffc117382da1b23db65778cb57cf33584ef1550a72a72de1de37aa97`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Mon, 14 Sep 2015 20:32:35 GMT
--	Parent Layer: `51d8f3e2b66136e7f03a48dcaaa2921c029ad701984f8e0f42a5aff5730d78dd`
+-	Created: Fri, 09 Oct 2015 20:34:54 GMT
+-	Parent Layer: `6d55e66077ce0634e4ead1003343a07a52c980d90735684787899c231d50a411`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3848,98 +4015,98 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ## `rethinkdb:latest`
 
 ```console
-$ docker pull library/rethinkdb@sha256:0307944b6c75e6bfc3e91424b594e2f0e2e0d28fdbc1e33837a490ea97019a6d
+$ docker pull library/rethinkdb@sha256:4cb76e0515325e8c14d2e63787d024b76abf5df670fda572fcb0898b11823842
 ```
 
--	Total Virtual Size: 196.3 MB (196276232 bytes)
--	Total v2 Content-Length: 81.0 MB (81020407 bytes)
+-	Total Virtual Size: 181.3 MB (181281398 bytes)
+-	Total v2 Content-Length: 75.3 MB (75295379 bytes)
 
 ### Layers (11)
 
-#### `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
+#### `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 
 ```dockerfile
-ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /
+ADD file:fd73312d29edb04f9cf107eb2488342984471d1798ea66ba6067f91d13f76fdf in /
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:05 GMT
--	Docker Version: 1.7.1
+-	Created: Thu, 08 Oct 2015 21:44:22 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 125.2 MB (125159131 bytes)
 -	v2 Blob: `sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70`
 -	v2 Content-Length: 51.4 MB (51359708 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 23:38:06 GMT
 
-#### `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
+#### `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 23:35:07 GMT
--	Parent Layer: `843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
-
-```dockerfile
-MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
-```
-
--	Created: Thu, 10 Sep 2015 02:11:05 GMT
--	Parent Layer: `8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
-
-```dockerfile
-RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-```
-
--	Created: Thu, 10 Sep 2015 02:11:16 GMT
--	Parent Layer: `24926fb0be263b4568a2834abbeb0f436d3b9e437b21cc009c6adf2cefe289f7`
--	Docker Version: 1.7.1
--	Virtual Size: 1.2 KB (1204 bytes)
--	v2 Blob: `sha256:fd043a22fcf353677904d241a4a69f4847a144abd0bc863840b55883378ff6a6`
--	v2 Content-Length: 1.4 KB (1439 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:07 GMT
-
-#### `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
-
-```dockerfile
-RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-```
-
--	Created: Thu, 10 Sep 2015 02:11:17 GMT
--	Parent Layer: `da618c2cb45e2f0dd09410508a5faadb776ffdea65ceb40faaa1d613c2b29d4c`
--	Docker Version: 1.7.1
--	Virtual Size: 50.0 B
--	v2 Blob: `sha256:e0129c891ee0dcd988ecb1d30c6e9c2a31da52daaf6d7822647216f33505671d`
--	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Fri, 11 Sep 2015 13:43:02 GMT
-
-#### `5c12148100a276970ae71c72aef35d5595c3f5f72ea1eb92b1e1e0676cb27ba0`
-
-```dockerfile
-ENV RETHINKDB_PACKAGE_VERSION=2.1.4~0jessie
-```
-
--	Created: Tue, 06 Oct 2015 19:35:18 GMT
--	Parent Layer: `2d9ed6309271b289916e14fb6a35006dcec1dcf6819f2e7daccd0377e8757b91`
+-	Created: Thu, 08 Oct 2015 21:44:24 GMT
+-	Parent Layer: `e2a4fb18da48c71baa73583c05c06ecf1a27486ea0ec08ca3458ddd4647a1894`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `31a3c4ce0229358c6a92f8f01fda9b61f077938862e7988e3079ed6d906a948f`
+#### `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+
+```dockerfile
+MAINTAINER Stuart P. Bentley <stuart@testtrack4.com>
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:48 GMT
+-	Parent Layer: `58016a5acc80ae6bbee80c4c0ebf82fa0b17ad83a7c332b43420a5ac4daf1c78`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+
+```dockerfile
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
+```
+
+-	Created: Fri, 09 Oct 2015 20:11:59 GMT
+-	Parent Layer: `e128b3b26b51cc9ba6c27184673aa486478acc3b53dbb491b408e0fd89293284`
+-	Docker Version: 1.8.2
+-	Virtual Size: 1.2 KB (1204 bytes)
+-	v2 Blob: `sha256:bc9fd20e3bea4b24317797a0fcd4ac739d7e1d50c4e350c44fec9411bd11663a`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:52 GMT
+
+#### `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+
+```dockerfile
+RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
+```
+
+-	Created: Fri, 09 Oct 2015 20:12:00 GMT
+-	Parent Layer: `da3e849b223a0c5b92ada99c0bc424e11757bc4b84b9fd1a074f751cd172716c`
+-	Docker Version: 1.8.2
+-	Virtual Size: 50.0 B
+-	v2 Blob: `sha256:dbf2e0e36d5ffc32333b17518de1e65f807d15b9dd6f54b257bc5f9f9daaddee`
+-	v2 Content-Length: 216.0 B
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:39:48 GMT
+
+#### `137196f6cf2a7fafa2a15a40f8d3147aa32d924f52063f37d2427764a56f9e18`
+
+```dockerfile
+ENV RETHINKDB_PACKAGE_VERSION=2.1.5+2~0jessie
+```
+
+-	Created: Fri, 09 Oct 2015 20:33:43 GMT
+-	Parent Layer: `d3c8ba340282b5f0b680dc369c5f94a2fefd1f517fdc0ed3368927db0e5c211f`
+-	Docker Version: 1.8.2
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+
+#### `b0437a2e1837c5364da11239e9c4029189334b017d1eb04cafbadf953fca88b4`
 
 ```dockerfile
 RUN apt-get update \
@@ -3947,64 +4114,64 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 06 Oct 2015 19:36:08 GMT
--	Parent Layer: `5c12148100a276970ae71c72aef35d5595c3f5f72ea1eb92b1e1e0676cb27ba0`
+-	Created: Fri, 09 Oct 2015 20:34:52 GMT
+-	Parent Layer: `137196f6cf2a7fafa2a15a40f8d3147aa32d924f52063f37d2427764a56f9e18`
 -	Docker Version: 1.8.2
--	Virtual Size: 71.1 MB (71115847 bytes)
--	v2 Blob: `sha256:7f6e9a91077977c5ec542fb5b67e46af1f748442f72eb82411e9f2b5b62c7e19`
--	v2 Content-Length: 29.7 MB (29658820 bytes)
--	v2 Last-Modified: Tue, 06 Oct 2015 19:43:44 GMT
+-	Virtual Size: 56.1 MB (56121013 bytes)
+-	v2 Blob: `sha256:5baab7fb61a7280910b0a5d17dfd78e90b2a3521dd46743f78a8980cd9eb85f7`
+-	v2 Content-Length: 23.9 MB (23933797 bytes)
+-	v2 Last-Modified: Fri, 09 Oct 2015 20:56:53 GMT
 
-#### `16a8992297898f08aa9124b9090a95cf36f694db9f6888075255298cffa183c0`
+#### `5c13a1fb90ef656cc02b60444d8450f018de631790ccd635e13d948b3dbf273b`
 
 ```dockerfile
 VOLUME [/data]
 ```
 
--	Created: Tue, 06 Oct 2015 19:36:09 GMT
--	Parent Layer: `31a3c4ce0229358c6a92f8f01fda9b61f077938862e7988e3079ed6d906a948f`
+-	Created: Fri, 09 Oct 2015 20:34:53 GMT
+-	Parent Layer: `b0437a2e1837c5364da11239e9c4029189334b017d1eb04cafbadf953fca88b4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `82396e29d803bf1cc0f2530b5f95af3f286718f94d24948075e0cb0223632e45`
+#### `c5170cb6988441c1448f52d7c7e77453ebc502f47cb32a2c0e91af83bfbb4ad0`
 
 ```dockerfile
 WORKDIR /data
 ```
 
--	Created: Tue, 06 Oct 2015 19:36:09 GMT
--	Parent Layer: `16a8992297898f08aa9124b9090a95cf36f694db9f6888075255298cffa183c0`
+-	Created: Fri, 09 Oct 2015 20:34:53 GMT
+-	Parent Layer: `5c13a1fb90ef656cc02b60444d8450f018de631790ccd635e13d948b3dbf273b`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `768cbea39baa5d8855a943572eacce3cfeff1202c8f13a9185e03628052976c4`
+#### `6d55e66077ce0634e4ead1003343a07a52c980d90735684787899c231d50a411`
 
 ```dockerfile
 CMD ["rethinkdb" "--bind" "all"]
 ```
 
--	Created: Tue, 06 Oct 2015 19:36:09 GMT
--	Parent Layer: `82396e29d803bf1cc0f2530b5f95af3f286718f94d24948075e0cb0223632e45`
+-	Created: Fri, 09 Oct 2015 20:34:54 GMT
+-	Parent Layer: `c5170cb6988441c1448f52d7c7e77453ebc502f47cb32a2c0e91af83bfbb4ad0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0340075a76e49e31276bc4f1dbf7dab67e5091c0a20bc21c05f66bd17c54b550`
+#### `84afe2b8ffc117382da1b23db65778cb57cf33584ef1550a72a72de1de37aa97`
 
 ```dockerfile
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
--	Created: Tue, 06 Oct 2015 19:36:10 GMT
--	Parent Layer: `768cbea39baa5d8855a943572eacce3cfeff1202c8f13a9185e03628052976c4`
+-	Created: Fri, 09 Oct 2015 20:34:54 GMT
+-	Parent Layer: `6d55e66077ce0634e4ead1003343a07a52c980d90735684787899c231d50a411`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
