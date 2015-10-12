@@ -8,14 +8,14 @@
 -	[`ubuntu:precise`](#ubuntuprecise)
 -	[`ubuntu:14.04.3`](#ubuntu14043)
 -	[`ubuntu:14.04`](#ubuntu1404)
--	[`ubuntu:trusty-20151001`](#ubuntutrusty-20151001)
+-	[`ubuntu:trusty-20151009`](#ubuntutrusty-20151009)
 -	[`ubuntu:trusty`](#ubuntutrusty)
 -	[`ubuntu:latest`](#ubuntulatest)
 -	[`ubuntu:15.04`](#ubuntu1504)
 -	[`ubuntu:vivid-20150930`](#ubuntuvivid-20150930)
 -	[`ubuntu:vivid`](#ubuntuvivid)
 -	[`ubuntu:15.10`](#ubuntu1510)
--	[`ubuntu:wily-20151006`](#ubuntuwily-20151006)
+-	[`ubuntu:wily-20151009`](#ubuntuwily-20151009)
 -	[`ubuntu:wily`](#ubuntuwily)
 
 ## `ubuntu:12.04.5`
@@ -329,28 +329,28 @@ CMD ["/bin/bash"]
 ## `ubuntu:14.04.3`
 
 ```console
-$ docker pull library/ubuntu@sha256:0f7af86da006aafc56bf09766dc51a2cc36031e4856887052e7a733bd2f7a284
+$ docker pull library/ubuntu@sha256:029e12188955ea10be993f34258d172913d3da9e1c63a5beb65fb85c5471fd25
 ```
 
--	Total Virtual Size: 188.0 MB (187958250 bytes)
--	Total v2 Content-Length: 65.8 MB (65757468 bytes)
+-	Total Virtual Size: 188.4 MB (188363065 bytes)
+-	Total v2 Content-Length: 65.9 MB (65861875 bytes)
 
 ### Layers (4)
 
-#### `48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d`
+#### `0105f98ced6dc9e178b4b2aa3400759d0395c402c3718992561b11652a1eb6f6`
 
 ```dockerfile
-ADD file:ed2337b3477da68f9b1bebfe13512bfeccdc0d9d4dbe9b04a59665f5e630ee22 in /
+ADD file:754fe67550b95565a4095fbab92e05b99f050ec521b9369753545c8e5d531f2b in /
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:22 GMT
+-	Created: Mon, 12 Oct 2015 17:26:56 GMT
 -	Docker Version: 1.8.2
--	Virtual Size: 187.8 MB (187761822 bytes)
--	v2 Blob: `sha256:6312a4848c91283f00f268353fb8e15602ab2b1290b7f6aa7b9b1c2e84446dcb`
--	v2 Content-Length: 65.7 MB (65685276 bytes)
--	v2 Last-Modified: Wed, 07 Oct 2015 22:00:40 GMT
+-	Virtual Size: 188.2 MB (188166637 bytes)
+-	v2 Blob: `sha256:012a7829fd3ffd2165e76e721ac5384131de4ee35e5b34330f5df9d4f52935d6`
+-	v2 Content-Length: 65.8 MB (65789689 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:02:38 GMT
 
-#### `9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13`
+#### `66395c31eb82ba7f0a4efc97b3a18f1ca9afa82b4d19fba23f9f3891a844bcf4`
 
 ```dockerfile
 RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
@@ -367,36 +367,36 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:27 GMT
--	Parent Layer: `48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d`
+-	Created: Mon, 12 Oct 2015 17:27:01 GMT
+-	Parent Layer: `0105f98ced6dc9e178b4b2aa3400759d0395c402c3718992561b11652a1eb6f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:44101d32762f17e0ccff3f8158d71ee03c43d5d79dd1eb25bb11388e30ffaba9`
--	v2 Content-Length: 71.5 KB (71479 bytes)
--	v2 Last-Modified: Thu, 08 Oct 2015 22:15:02 GMT
+-	v2 Blob: `sha256:41158247dd502205fcfc5201164f687b957a76d32726e7b45185f22b62143e94`
+-	v2 Content-Length: 71.5 KB (71472 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:01:58 GMT
 
-#### `f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97`
+#### `002fa881df8af8679b36b85f052456483a8bec47ad270df58ee811bc224c3b08`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:28 GMT
--	Parent Layer: `9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13`
+-	Created: Mon, 12 Oct 2015 17:27:03 GMT
+-	Parent Layer: `66395c31eb82ba7f0a4efc97b3a18f1ca9afa82b4d19fba23f9f3891a844bcf4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:3e15fbbd0f4995c7bb3d54d978f1a11a70439ae7540443642c30603bd5b26849`
--	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:14:58 GMT
+-	v2 Blob: `sha256:916b974d99af866381ea9e3c929b4709058946bb44f3ad10dacfc6ea3b2a936b`
+-	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:01:55 GMT
 
-#### `cdd474520b8c2c0418260fc9dcd999c84fe35bd3a36304aeb47517a290e5a5c4`
+#### `a005e6b7dd0152d61a0f3d2b3aa42e93bbc5568facf435ebb3c022faf03c7085`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:28 GMT
--	Parent Layer: `f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97`
+-	Created: Mon, 12 Oct 2015 17:27:03 GMT
+-	Parent Layer: `002fa881df8af8679b36b85f052456483a8bec47ad270df58ee811bc224c3b08`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -406,28 +406,28 @@ CMD ["/bin/bash"]
 ## `ubuntu:14.04`
 
 ```console
-$ docker pull library/ubuntu@sha256:83c15507f1eeec81d0c3ef59c52b8e9741eec9f8315657053973b9ad48c5202a
+$ docker pull library/ubuntu@sha256:6a50ef3d008bf0bb9ed280a092c32d8b0a589240238c6bc0820bd502629d5bf4
 ```
 
--	Total Virtual Size: 188.0 MB (187958250 bytes)
--	Total v2 Content-Length: 65.8 MB (65757468 bytes)
+-	Total Virtual Size: 188.4 MB (188363065 bytes)
+-	Total v2 Content-Length: 65.9 MB (65861875 bytes)
 
 ### Layers (4)
 
-#### `48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d`
+#### `0105f98ced6dc9e178b4b2aa3400759d0395c402c3718992561b11652a1eb6f6`
 
 ```dockerfile
-ADD file:ed2337b3477da68f9b1bebfe13512bfeccdc0d9d4dbe9b04a59665f5e630ee22 in /
+ADD file:754fe67550b95565a4095fbab92e05b99f050ec521b9369753545c8e5d531f2b in /
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:22 GMT
+-	Created: Mon, 12 Oct 2015 17:26:56 GMT
 -	Docker Version: 1.8.2
--	Virtual Size: 187.8 MB (187761822 bytes)
--	v2 Blob: `sha256:6312a4848c91283f00f268353fb8e15602ab2b1290b7f6aa7b9b1c2e84446dcb`
--	v2 Content-Length: 65.7 MB (65685276 bytes)
--	v2 Last-Modified: Wed, 07 Oct 2015 22:00:40 GMT
+-	Virtual Size: 188.2 MB (188166637 bytes)
+-	v2 Blob: `sha256:012a7829fd3ffd2165e76e721ac5384131de4ee35e5b34330f5df9d4f52935d6`
+-	v2 Content-Length: 65.8 MB (65789689 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:02:38 GMT
 
-#### `9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13`
+#### `66395c31eb82ba7f0a4efc97b3a18f1ca9afa82b4d19fba23f9f3891a844bcf4`
 
 ```dockerfile
 RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
@@ -444,67 +444,67 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:27 GMT
--	Parent Layer: `48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d`
+-	Created: Mon, 12 Oct 2015 17:27:01 GMT
+-	Parent Layer: `0105f98ced6dc9e178b4b2aa3400759d0395c402c3718992561b11652a1eb6f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:44101d32762f17e0ccff3f8158d71ee03c43d5d79dd1eb25bb11388e30ffaba9`
--	v2 Content-Length: 71.5 KB (71479 bytes)
--	v2 Last-Modified: Thu, 08 Oct 2015 22:15:02 GMT
+-	v2 Blob: `sha256:41158247dd502205fcfc5201164f687b957a76d32726e7b45185f22b62143e94`
+-	v2 Content-Length: 71.5 KB (71472 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:01:58 GMT
 
-#### `f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97`
+#### `002fa881df8af8679b36b85f052456483a8bec47ad270df58ee811bc224c3b08`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:28 GMT
--	Parent Layer: `9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13`
+-	Created: Mon, 12 Oct 2015 17:27:03 GMT
+-	Parent Layer: `66395c31eb82ba7f0a4efc97b3a18f1ca9afa82b4d19fba23f9f3891a844bcf4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:3e15fbbd0f4995c7bb3d54d978f1a11a70439ae7540443642c30603bd5b26849`
--	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:14:58 GMT
+-	v2 Blob: `sha256:916b974d99af866381ea9e3c929b4709058946bb44f3ad10dacfc6ea3b2a936b`
+-	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:01:55 GMT
 
-#### `cdd474520b8c2c0418260fc9dcd999c84fe35bd3a36304aeb47517a290e5a5c4`
+#### `a005e6b7dd0152d61a0f3d2b3aa42e93bbc5568facf435ebb3c022faf03c7085`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:28 GMT
--	Parent Layer: `f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97`
+-	Created: Mon, 12 Oct 2015 17:27:03 GMT
+-	Parent Layer: `002fa881df8af8679b36b85f052456483a8bec47ad270df58ee811bc224c3b08`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `ubuntu:trusty-20151001`
+## `ubuntu:trusty-20151009`
 
 ```console
-$ docker pull library/ubuntu@sha256:60f223760ee9c6ae365d46ed3ea274df710853c3dd28998b1a8f8d188655d1ed
+$ docker pull library/ubuntu@sha256:59d31baf4ff1596d96d24a425f3b835fe40ebf5ef681ef88f6f210dc7ca20a43
 ```
 
--	Total Virtual Size: 188.0 MB (187958250 bytes)
--	Total v2 Content-Length: 65.8 MB (65757468 bytes)
+-	Total Virtual Size: 188.4 MB (188363065 bytes)
+-	Total v2 Content-Length: 65.9 MB (65861875 bytes)
 
 ### Layers (4)
 
-#### `48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d`
+#### `0105f98ced6dc9e178b4b2aa3400759d0395c402c3718992561b11652a1eb6f6`
 
 ```dockerfile
-ADD file:ed2337b3477da68f9b1bebfe13512bfeccdc0d9d4dbe9b04a59665f5e630ee22 in /
+ADD file:754fe67550b95565a4095fbab92e05b99f050ec521b9369753545c8e5d531f2b in /
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:22 GMT
+-	Created: Mon, 12 Oct 2015 17:26:56 GMT
 -	Docker Version: 1.8.2
--	Virtual Size: 187.8 MB (187761822 bytes)
--	v2 Blob: `sha256:6312a4848c91283f00f268353fb8e15602ab2b1290b7f6aa7b9b1c2e84446dcb`
--	v2 Content-Length: 65.7 MB (65685276 bytes)
--	v2 Last-Modified: Wed, 07 Oct 2015 22:00:40 GMT
+-	Virtual Size: 188.2 MB (188166637 bytes)
+-	v2 Blob: `sha256:012a7829fd3ffd2165e76e721ac5384131de4ee35e5b34330f5df9d4f52935d6`
+-	v2 Content-Length: 65.8 MB (65789689 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:02:38 GMT
 
-#### `9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13`
+#### `66395c31eb82ba7f0a4efc97b3a18f1ca9afa82b4d19fba23f9f3891a844bcf4`
 
 ```dockerfile
 RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
@@ -521,36 +521,36 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:27 GMT
--	Parent Layer: `48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d`
+-	Created: Mon, 12 Oct 2015 17:27:01 GMT
+-	Parent Layer: `0105f98ced6dc9e178b4b2aa3400759d0395c402c3718992561b11652a1eb6f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:44101d32762f17e0ccff3f8158d71ee03c43d5d79dd1eb25bb11388e30ffaba9`
--	v2 Content-Length: 71.5 KB (71479 bytes)
--	v2 Last-Modified: Thu, 08 Oct 2015 22:15:02 GMT
+-	v2 Blob: `sha256:41158247dd502205fcfc5201164f687b957a76d32726e7b45185f22b62143e94`
+-	v2 Content-Length: 71.5 KB (71472 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:01:58 GMT
 
-#### `f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97`
+#### `002fa881df8af8679b36b85f052456483a8bec47ad270df58ee811bc224c3b08`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:28 GMT
--	Parent Layer: `9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13`
+-	Created: Mon, 12 Oct 2015 17:27:03 GMT
+-	Parent Layer: `66395c31eb82ba7f0a4efc97b3a18f1ca9afa82b4d19fba23f9f3891a844bcf4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:3e15fbbd0f4995c7bb3d54d978f1a11a70439ae7540443642c30603bd5b26849`
--	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:14:58 GMT
+-	v2 Blob: `sha256:916b974d99af866381ea9e3c929b4709058946bb44f3ad10dacfc6ea3b2a936b`
+-	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:01:55 GMT
 
-#### `cdd474520b8c2c0418260fc9dcd999c84fe35bd3a36304aeb47517a290e5a5c4`
+#### `a005e6b7dd0152d61a0f3d2b3aa42e93bbc5568facf435ebb3c022faf03c7085`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:28 GMT
--	Parent Layer: `f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97`
+-	Created: Mon, 12 Oct 2015 17:27:03 GMT
+-	Parent Layer: `002fa881df8af8679b36b85f052456483a8bec47ad270df58ee811bc224c3b08`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -560,28 +560,28 @@ CMD ["/bin/bash"]
 ## `ubuntu:trusty`
 
 ```console
-$ docker pull library/ubuntu@sha256:71de8671701a0fe8c432f087c864c54735d7d18ad37c5a8c1c85007e413f232e
+$ docker pull library/ubuntu@sha256:b7a106628650ad5d31a6f1acff1e6cdffb321df5f1cd031c1f34417472b99077
 ```
 
--	Total Virtual Size: 188.0 MB (187958250 bytes)
--	Total v2 Content-Length: 65.8 MB (65757468 bytes)
+-	Total Virtual Size: 188.4 MB (188363065 bytes)
+-	Total v2 Content-Length: 65.9 MB (65861875 bytes)
 
 ### Layers (4)
 
-#### `48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d`
+#### `0105f98ced6dc9e178b4b2aa3400759d0395c402c3718992561b11652a1eb6f6`
 
 ```dockerfile
-ADD file:ed2337b3477da68f9b1bebfe13512bfeccdc0d9d4dbe9b04a59665f5e630ee22 in /
+ADD file:754fe67550b95565a4095fbab92e05b99f050ec521b9369753545c8e5d531f2b in /
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:22 GMT
+-	Created: Mon, 12 Oct 2015 17:26:56 GMT
 -	Docker Version: 1.8.2
--	Virtual Size: 187.8 MB (187761822 bytes)
--	v2 Blob: `sha256:6312a4848c91283f00f268353fb8e15602ab2b1290b7f6aa7b9b1c2e84446dcb`
--	v2 Content-Length: 65.7 MB (65685276 bytes)
--	v2 Last-Modified: Wed, 07 Oct 2015 22:00:40 GMT
+-	Virtual Size: 188.2 MB (188166637 bytes)
+-	v2 Blob: `sha256:012a7829fd3ffd2165e76e721ac5384131de4ee35e5b34330f5df9d4f52935d6`
+-	v2 Content-Length: 65.8 MB (65789689 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:02:38 GMT
 
-#### `9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13`
+#### `66395c31eb82ba7f0a4efc97b3a18f1ca9afa82b4d19fba23f9f3891a844bcf4`
 
 ```dockerfile
 RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
@@ -598,36 +598,36 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:27 GMT
--	Parent Layer: `48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d`
+-	Created: Mon, 12 Oct 2015 17:27:01 GMT
+-	Parent Layer: `0105f98ced6dc9e178b4b2aa3400759d0395c402c3718992561b11652a1eb6f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:44101d32762f17e0ccff3f8158d71ee03c43d5d79dd1eb25bb11388e30ffaba9`
--	v2 Content-Length: 71.5 KB (71479 bytes)
--	v2 Last-Modified: Thu, 08 Oct 2015 22:15:02 GMT
+-	v2 Blob: `sha256:41158247dd502205fcfc5201164f687b957a76d32726e7b45185f22b62143e94`
+-	v2 Content-Length: 71.5 KB (71472 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:01:58 GMT
 
-#### `f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97`
+#### `002fa881df8af8679b36b85f052456483a8bec47ad270df58ee811bc224c3b08`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:28 GMT
--	Parent Layer: `9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13`
+-	Created: Mon, 12 Oct 2015 17:27:03 GMT
+-	Parent Layer: `66395c31eb82ba7f0a4efc97b3a18f1ca9afa82b4d19fba23f9f3891a844bcf4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:3e15fbbd0f4995c7bb3d54d978f1a11a70439ae7540443642c30603bd5b26849`
--	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:14:58 GMT
+-	v2 Blob: `sha256:916b974d99af866381ea9e3c929b4709058946bb44f3ad10dacfc6ea3b2a936b`
+-	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:01:55 GMT
 
-#### `cdd474520b8c2c0418260fc9dcd999c84fe35bd3a36304aeb47517a290e5a5c4`
+#### `a005e6b7dd0152d61a0f3d2b3aa42e93bbc5568facf435ebb3c022faf03c7085`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:28 GMT
--	Parent Layer: `f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97`
+-	Created: Mon, 12 Oct 2015 17:27:03 GMT
+-	Parent Layer: `002fa881df8af8679b36b85f052456483a8bec47ad270df58ee811bc224c3b08`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -637,28 +637,28 @@ CMD ["/bin/bash"]
 ## `ubuntu:latest`
 
 ```console
-$ docker pull library/ubuntu@sha256:40cd91cbcaac863fa2fc0b8a8eaa440565ef5ce498d60177988f6f55ec691d9d
+$ docker pull library/ubuntu@sha256:6b49d063abab3fa81881b9f3e64fdfb74ea830a566914d69c04681a4e1b0fe63
 ```
 
--	Total Virtual Size: 188.0 MB (187958250 bytes)
--	Total v2 Content-Length: 65.8 MB (65757468 bytes)
+-	Total Virtual Size: 188.4 MB (188363065 bytes)
+-	Total v2 Content-Length: 65.9 MB (65861875 bytes)
 
 ### Layers (4)
 
-#### `48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d`
+#### `0105f98ced6dc9e178b4b2aa3400759d0395c402c3718992561b11652a1eb6f6`
 
 ```dockerfile
-ADD file:ed2337b3477da68f9b1bebfe13512bfeccdc0d9d4dbe9b04a59665f5e630ee22 in /
+ADD file:754fe67550b95565a4095fbab92e05b99f050ec521b9369753545c8e5d531f2b in /
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:22 GMT
+-	Created: Mon, 12 Oct 2015 17:26:56 GMT
 -	Docker Version: 1.8.2
--	Virtual Size: 187.8 MB (187761822 bytes)
--	v2 Blob: `sha256:6312a4848c91283f00f268353fb8e15602ab2b1290b7f6aa7b9b1c2e84446dcb`
--	v2 Content-Length: 65.7 MB (65685276 bytes)
--	v2 Last-Modified: Wed, 07 Oct 2015 22:00:40 GMT
+-	Virtual Size: 188.2 MB (188166637 bytes)
+-	v2 Blob: `sha256:012a7829fd3ffd2165e76e721ac5384131de4ee35e5b34330f5df9d4f52935d6`
+-	v2 Content-Length: 65.8 MB (65789689 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:02:38 GMT
 
-#### `9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13`
+#### `66395c31eb82ba7f0a4efc97b3a18f1ca9afa82b4d19fba23f9f3891a844bcf4`
 
 ```dockerfile
 RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
@@ -675,36 +675,36 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:27 GMT
--	Parent Layer: `48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d`
+-	Created: Mon, 12 Oct 2015 17:27:01 GMT
+-	Parent Layer: `0105f98ced6dc9e178b4b2aa3400759d0395c402c3718992561b11652a1eb6f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:44101d32762f17e0ccff3f8158d71ee03c43d5d79dd1eb25bb11388e30ffaba9`
--	v2 Content-Length: 71.5 KB (71479 bytes)
--	v2 Last-Modified: Thu, 08 Oct 2015 22:15:02 GMT
+-	v2 Blob: `sha256:41158247dd502205fcfc5201164f687b957a76d32726e7b45185f22b62143e94`
+-	v2 Content-Length: 71.5 KB (71472 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:01:58 GMT
 
-#### `f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97`
+#### `002fa881df8af8679b36b85f052456483a8bec47ad270df58ee811bc224c3b08`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:28 GMT
--	Parent Layer: `9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13`
+-	Created: Mon, 12 Oct 2015 17:27:03 GMT
+-	Parent Layer: `66395c31eb82ba7f0a4efc97b3a18f1ca9afa82b4d19fba23f9f3891a844bcf4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:3e15fbbd0f4995c7bb3d54d978f1a11a70439ae7540443642c30603bd5b26849`
--	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:14:58 GMT
+-	v2 Blob: `sha256:916b974d99af866381ea9e3c929b4709058946bb44f3ad10dacfc6ea3b2a936b`
+-	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:01:55 GMT
 
-#### `cdd474520b8c2c0418260fc9dcd999c84fe35bd3a36304aeb47517a290e5a5c4`
+#### `a005e6b7dd0152d61a0f3d2b3aa42e93bbc5568facf435ebb3c022faf03c7085`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 08 Oct 2015 21:42:28 GMT
--	Parent Layer: `f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97`
+-	Created: Mon, 12 Oct 2015 17:27:03 GMT
+-	Parent Layer: `002fa881df8af8679b36b85f052456483a8bec47ad270df58ee811bc224c3b08`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -945,28 +945,28 @@ CMD ["/bin/bash"]
 ## `ubuntu:15.10`
 
 ```console
-$ docker pull library/ubuntu@sha256:56e075aca523f097ca9482cd6c2ac94b0665d096340e402c1863cdc60e83c054
+$ docker pull library/ubuntu@sha256:acb59cabe0b849deee30ef4a057025a01b1d4925599a99d821f9be6c5fe63508
 ```
 
--	Total Virtual Size: 131.5 MB (131464264 bytes)
--	Total v2 Content-Length: 49.9 MB (49861095 bytes)
+-	Total Virtual Size: 131.4 MB (131388930 bytes)
+-	Total v2 Content-Length: 49.8 MB (49844614 bytes)
 
 ### Layers (4)
 
-#### `73cf3427a75ee251ceee8a69072b037acbad32ff3d5f59e6cff3bf2799af780b`
+#### `f69c27217750637757e8c0932079de82b51610bf867c64c1ace5b45bf78e048c`
 
 ```dockerfile
-ADD file:9b401ba10e3d45f753b7fe7979cd4493fc2ddd9744fd9994d3ac8e038730c209 in /
+ADD file:2bc074de437930facd5ec20c8d7b501b5e21cc19aa0b2c549b50475c5eb7a9ba in /
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:49 GMT
+-	Created: Mon, 12 Oct 2015 17:28:24 GMT
 -	Docker Version: 1.8.2
--	Virtual Size: 131.5 MB (131461700 bytes)
--	v2 Blob: `sha256:f4b2bae546a163432a85cf343289dc04534f09994df81a972eac2622bdfa8acc`
--	v2 Content-Length: 49.9 MB (49859626 bytes)
--	v2 Last-Modified: Thu, 08 Oct 2015 22:19:15 GMT
+-	Virtual Size: 131.4 MB (131386366 bytes)
+-	v2 Blob: `sha256:163ac47155a5da410d03dbc2d15182732a7fe4ffe1a64d422d2a03cd6ca72046`
+-	v2 Content-Length: 49.8 MB (49843142 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:05:03 GMT
 
-#### `9641e53e6e3c6c19c903e2a21d1f044a69b665a45aa4c67e19bf7f70d21bedda`
+#### `8745d841a74e74cd09d9b3af6055c5a5e0c18ead72625253d22b26d97870f66c`
 
 ```dockerfile
 RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
@@ -983,67 +983,67 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:53 GMT
--	Parent Layer: `73cf3427a75ee251ceee8a69072b037acbad32ff3d5f59e6cff3bf2799af780b`
+-	Created: Mon, 12 Oct 2015 17:28:28 GMT
+-	Parent Layer: `f69c27217750637757e8c0932079de82b51610bf867c64c1ace5b45bf78e048c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 701.0 B
--	v2 Blob: `sha256:57e0495f06fcc112d466a5cd698fe99e725a6a7256e6219369cf976703b80bd9`
--	v2 Content-Length: 757.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:18:45 GMT
+-	v2 Blob: `sha256:7b4f8819e8b9d061e6fcd4e4989d72bfa60257d0f7db7da1bce439326b900a73`
+-	v2 Content-Length: 761.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:04:32 GMT
 
-#### `f5c50e9487a19724fcc9b050854debf5bc684fe9fe606a899c4be49c23eb1c05`
+#### `c92946456718fd43875dabb1c8277dda464f3f4f6b1e1bd113b50a011c0b531b`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:54 GMT
--	Parent Layer: `9641e53e6e3c6c19c903e2a21d1f044a69b665a45aa4c67e19bf7f70d21bedda`
+-	Created: Mon, 12 Oct 2015 17:28:29 GMT
+-	Parent Layer: `8745d841a74e74cd09d9b3af6055c5a5e0c18ead72625253d22b26d97870f66c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 1.9 KB (1863 bytes)
--	v2 Blob: `sha256:7a8d4689e0af7147e373c78ebfe113b6c801fb948e3948e96b1c293f69ba2290`
--	v2 Content-Length: 680.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:18:42 GMT
+-	v2 Blob: `sha256:369f69d3c3084be2a12095635799250902533c29d82fbce20f3b5405c9af911f`
+-	v2 Content-Length: 679.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:04:28 GMT
 
-#### `4dc9465031e0732c4d86d2681abaf180c813a5b38713a962487cc9be4316f8f9`
+#### `6171b5c3b3a4f196cfe6a0ed49fbda022a527cda8d88d64e8078e577ff7b9ecb`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:55 GMT
--	Parent Layer: `f5c50e9487a19724fcc9b050854debf5bc684fe9fe606a899c4be49c23eb1c05`
+-	Created: Mon, 12 Oct 2015 17:28:29 GMT
+-	Parent Layer: `c92946456718fd43875dabb1c8277dda464f3f4f6b1e1bd113b50a011c0b531b`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `ubuntu:wily-20151006`
+## `ubuntu:wily-20151009`
 
 ```console
-$ docker pull library/ubuntu@sha256:d80bd1feac8f6a5fc3c34fda0ab7b862ddbdf06468d56acd91f43a807d2e4fbc
+$ docker pull library/ubuntu@sha256:a609b2fc3bb595e5f94d4f2dafd755bca54936c833e775c35a36296d0cc566db
 ```
 
--	Total Virtual Size: 131.5 MB (131464264 bytes)
--	Total v2 Content-Length: 49.9 MB (49861095 bytes)
+-	Total Virtual Size: 131.4 MB (131388930 bytes)
+-	Total v2 Content-Length: 49.8 MB (49844614 bytes)
 
 ### Layers (4)
 
-#### `73cf3427a75ee251ceee8a69072b037acbad32ff3d5f59e6cff3bf2799af780b`
+#### `f69c27217750637757e8c0932079de82b51610bf867c64c1ace5b45bf78e048c`
 
 ```dockerfile
-ADD file:9b401ba10e3d45f753b7fe7979cd4493fc2ddd9744fd9994d3ac8e038730c209 in /
+ADD file:2bc074de437930facd5ec20c8d7b501b5e21cc19aa0b2c549b50475c5eb7a9ba in /
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:49 GMT
+-	Created: Mon, 12 Oct 2015 17:28:24 GMT
 -	Docker Version: 1.8.2
--	Virtual Size: 131.5 MB (131461700 bytes)
--	v2 Blob: `sha256:f4b2bae546a163432a85cf343289dc04534f09994df81a972eac2622bdfa8acc`
--	v2 Content-Length: 49.9 MB (49859626 bytes)
--	v2 Last-Modified: Thu, 08 Oct 2015 22:19:15 GMT
+-	Virtual Size: 131.4 MB (131386366 bytes)
+-	v2 Blob: `sha256:163ac47155a5da410d03dbc2d15182732a7fe4ffe1a64d422d2a03cd6ca72046`
+-	v2 Content-Length: 49.8 MB (49843142 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:05:03 GMT
 
-#### `9641e53e6e3c6c19c903e2a21d1f044a69b665a45aa4c67e19bf7f70d21bedda`
+#### `8745d841a74e74cd09d9b3af6055c5a5e0c18ead72625253d22b26d97870f66c`
 
 ```dockerfile
 RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
@@ -1060,36 +1060,36 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:53 GMT
--	Parent Layer: `73cf3427a75ee251ceee8a69072b037acbad32ff3d5f59e6cff3bf2799af780b`
+-	Created: Mon, 12 Oct 2015 17:28:28 GMT
+-	Parent Layer: `f69c27217750637757e8c0932079de82b51610bf867c64c1ace5b45bf78e048c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 701.0 B
--	v2 Blob: `sha256:57e0495f06fcc112d466a5cd698fe99e725a6a7256e6219369cf976703b80bd9`
--	v2 Content-Length: 757.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:18:45 GMT
+-	v2 Blob: `sha256:7b4f8819e8b9d061e6fcd4e4989d72bfa60257d0f7db7da1bce439326b900a73`
+-	v2 Content-Length: 761.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:04:32 GMT
 
-#### `f5c50e9487a19724fcc9b050854debf5bc684fe9fe606a899c4be49c23eb1c05`
+#### `c92946456718fd43875dabb1c8277dda464f3f4f6b1e1bd113b50a011c0b531b`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:54 GMT
--	Parent Layer: `9641e53e6e3c6c19c903e2a21d1f044a69b665a45aa4c67e19bf7f70d21bedda`
+-	Created: Mon, 12 Oct 2015 17:28:29 GMT
+-	Parent Layer: `8745d841a74e74cd09d9b3af6055c5a5e0c18ead72625253d22b26d97870f66c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 1.9 KB (1863 bytes)
--	v2 Blob: `sha256:7a8d4689e0af7147e373c78ebfe113b6c801fb948e3948e96b1c293f69ba2290`
--	v2 Content-Length: 680.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:18:42 GMT
+-	v2 Blob: `sha256:369f69d3c3084be2a12095635799250902533c29d82fbce20f3b5405c9af911f`
+-	v2 Content-Length: 679.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:04:28 GMT
 
-#### `4dc9465031e0732c4d86d2681abaf180c813a5b38713a962487cc9be4316f8f9`
+#### `6171b5c3b3a4f196cfe6a0ed49fbda022a527cda8d88d64e8078e577ff7b9ecb`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:55 GMT
--	Parent Layer: `f5c50e9487a19724fcc9b050854debf5bc684fe9fe606a899c4be49c23eb1c05`
+-	Created: Mon, 12 Oct 2015 17:28:29 GMT
+-	Parent Layer: `c92946456718fd43875dabb1c8277dda464f3f4f6b1e1bd113b50a011c0b531b`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1099,28 +1099,28 @@ CMD ["/bin/bash"]
 ## `ubuntu:wily`
 
 ```console
-$ docker pull library/ubuntu@sha256:b10ccd00a25a1b3e0e5111027fb65aedf435a293c2818bd7724f6b43a10de95d
+$ docker pull library/ubuntu@sha256:0a370cff5b516d85394a3db8adb703067d595cd61fd1c22b51bb1042a2929401
 ```
 
--	Total Virtual Size: 131.5 MB (131464264 bytes)
--	Total v2 Content-Length: 49.9 MB (49861095 bytes)
+-	Total Virtual Size: 131.4 MB (131388930 bytes)
+-	Total v2 Content-Length: 49.8 MB (49844614 bytes)
 
 ### Layers (4)
 
-#### `73cf3427a75ee251ceee8a69072b037acbad32ff3d5f59e6cff3bf2799af780b`
+#### `f69c27217750637757e8c0932079de82b51610bf867c64c1ace5b45bf78e048c`
 
 ```dockerfile
-ADD file:9b401ba10e3d45f753b7fe7979cd4493fc2ddd9744fd9994d3ac8e038730c209 in /
+ADD file:2bc074de437930facd5ec20c8d7b501b5e21cc19aa0b2c549b50475c5eb7a9ba in /
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:49 GMT
+-	Created: Mon, 12 Oct 2015 17:28:24 GMT
 -	Docker Version: 1.8.2
--	Virtual Size: 131.5 MB (131461700 bytes)
--	v2 Blob: `sha256:f4b2bae546a163432a85cf343289dc04534f09994df81a972eac2622bdfa8acc`
--	v2 Content-Length: 49.9 MB (49859626 bytes)
--	v2 Last-Modified: Thu, 08 Oct 2015 22:19:15 GMT
+-	Virtual Size: 131.4 MB (131386366 bytes)
+-	v2 Blob: `sha256:163ac47155a5da410d03dbc2d15182732a7fe4ffe1a64d422d2a03cd6ca72046`
+-	v2 Content-Length: 49.8 MB (49843142 bytes)
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:05:03 GMT
 
-#### `9641e53e6e3c6c19c903e2a21d1f044a69b665a45aa4c67e19bf7f70d21bedda`
+#### `8745d841a74e74cd09d9b3af6055c5a5e0c18ead72625253d22b26d97870f66c`
 
 ```dockerfile
 RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
@@ -1137,36 +1137,36 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:53 GMT
--	Parent Layer: `73cf3427a75ee251ceee8a69072b037acbad32ff3d5f59e6cff3bf2799af780b`
+-	Created: Mon, 12 Oct 2015 17:28:28 GMT
+-	Parent Layer: `f69c27217750637757e8c0932079de82b51610bf867c64c1ace5b45bf78e048c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 701.0 B
--	v2 Blob: `sha256:57e0495f06fcc112d466a5cd698fe99e725a6a7256e6219369cf976703b80bd9`
--	v2 Content-Length: 757.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:18:45 GMT
+-	v2 Blob: `sha256:7b4f8819e8b9d061e6fcd4e4989d72bfa60257d0f7db7da1bce439326b900a73`
+-	v2 Content-Length: 761.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:04:32 GMT
 
-#### `f5c50e9487a19724fcc9b050854debf5bc684fe9fe606a899c4be49c23eb1c05`
+#### `c92946456718fd43875dabb1c8277dda464f3f4f6b1e1bd113b50a011c0b531b`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:54 GMT
--	Parent Layer: `9641e53e6e3c6c19c903e2a21d1f044a69b665a45aa4c67e19bf7f70d21bedda`
+-	Created: Mon, 12 Oct 2015 17:28:29 GMT
+-	Parent Layer: `8745d841a74e74cd09d9b3af6055c5a5e0c18ead72625253d22b26d97870f66c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 1.9 KB (1863 bytes)
--	v2 Blob: `sha256:7a8d4689e0af7147e373c78ebfe113b6c801fb948e3948e96b1c293f69ba2290`
--	v2 Content-Length: 680.0 B
--	v2 Last-Modified: Thu, 08 Oct 2015 22:18:42 GMT
+-	v2 Blob: `sha256:369f69d3c3084be2a12095635799250902533c29d82fbce20f3b5405c9af911f`
+-	v2 Content-Length: 679.0 B
+-	v2 Last-Modified: Mon, 12 Oct 2015 18:04:28 GMT
 
-#### `4dc9465031e0732c4d86d2681abaf180c813a5b38713a962487cc9be4316f8f9`
+#### `6171b5c3b3a4f196cfe6a0ed49fbda022a527cda8d88d64e8078e577ff7b9ecb`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 08 Oct 2015 21:43:55 GMT
--	Parent Layer: `f5c50e9487a19724fcc9b050854debf5bc684fe9fe606a899c4be49c23eb1c05`
+-	Created: Mon, 12 Oct 2015 17:28:29 GMT
+-	Parent Layer: `c92946456718fd43875dabb1c8277dda464f3f4f6b1e1bd113b50a011c0b531b`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
