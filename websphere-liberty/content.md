@@ -1,6 +1,6 @@
 # Overview
 
-The images in this repository contain IBM WebSphere Application Server for Developers Liberty Profile. For more information on WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site. Due to the current lack of geographic export controls on Docker Hub it has been necessary to remove the IBM Java Runtime Environment from these images. The images now build on the Debian based `java:jre` OpenJRE official repository image. To build an Ubuntu image with the IBM JRE, use the Dockerfiles available in the [ibmjre](https://github.com/WASdev/ci.docker/tree/ibmjre/websphere-liberty/8.5.5) branch on GitHub.
+The images in this repository contain IBM WebSphere Application Server for Developers Liberty Profile and the IBM Java Runtime Environment. For more information on WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
 
 # Images
 
@@ -24,7 +24,7 @@ There are also corresponding image tags that contain the version number of the L
 
 # Usage
 
-In order to use any of the images, it is necessary to accept the terms of the WebSphere Application Server for Developers license. This is achieved by specifying the environment variable `LICENSE` equal to `accept` when running an image. You can also view the license terms by setting this variable to `view`. Failure to set the variable will result in the termination of the container with a usage statement.
+In order to use any of the images, it is necessary to accept the terms of the WebSphere Application Server for Developers and IBM JRE licenses. This is achieved by specifying the environment variable `LICENSE` equal to `accept` when running an image. You can also view the license terms by setting this variable to `view`. Failure to set the variable will result in the termination of the container with a usage statement.
 
 The images are designed to support a number of different usage patterns. The following examples are based on the Java EE6 Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/resource/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza:
 
