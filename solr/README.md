@@ -19,19 +19,25 @@ Learn more on [Apache Solr homepage](http://lucene.apache.org/solr/) and in the 
 
 To run a single Solr server:
 
-    SOLR_CONTAINER=$(docker run -d -p 8983:8983 -t solr)
+```console
+$ docker run --name my_solr -d -p 8983:8983 -t solr
+```
 
 Then with a web browser go to `http://localhost:8983/` to see the Admin Console (adjust the hostname for your docker host).
 
 To use Solr, you need to create a "core", an index for your data. For example:
 
-    docker exec -it --user=solr $SOLR_CONTAINER bin/solr create_core -c gettingstarted
+```console
+$ docker exec -it --user=solr my_solr bin/solr create_core -c gettingstarted
+```
 
 In the web UI if you click on "Core Admin" you should now see the "gettingstarted" core.
 
 If you want to load some example data:
 
-    docker exec -it --user=solr $SOLR_CONTAINER bin/post -c gettingstarted example/exampledocs/manufacturers.xml
+```console
+$ docker exec -it --user=solr my_solr bin/post -c gettingstarted example/exampledocs/manufacturers.xml
+```
 
 In the UI, find the "Core selector" popup menu and select the "gettingstarted" core, then select the "Query"
 menu item. This gives you a default search for "*:*" which returns all docs. Hit the "Execute Query" button,
@@ -45,22 +51,28 @@ You can also run a distributed Solr configuration, with Solr nodes in separate c
 
 Run ZooKeeper, and define a name so we can link to it:
 
-    docker run --name zookeeper -d -p 2181:2181 -p 2888:2888 -p 3888:3888 jplock/zookeeper
+```console
+$ docker run --name zookeeper -d -p 2181:2181 -p 2888:2888 -p 3888:3888 jplock/zookeeper
+```
 
 Run two Solr nodes, linked to the zookeeper container:
 
-    docker run --name solr1 --link zookeeper:ZK -d -p 8983:8983 \
+```console
+$ docker run --name solr1 --link zookeeper:ZK -d -p 8983:8983 \
       solr \
       bash -c '/opt/solr/bin/solr start -f -z $ZK_PORT_2181_TCP_ADDR:$ZK_PORT_2181_TCP_PORT'
 
-    docker run --name solr2 --link zookeeper:ZK -d -p 8984:8983 \
+$ docker run --name solr2 --link zookeeper:ZK -d -p 8984:8983 \
       solr \
       bash -c '/opt/solr/bin/solr start -f -z $ZK_PORT_2181_TCP_ADDR:$ZK_PORT_2181_TCP_PORT'
+```
 
 Create a collection:
 
-    docker exec -i -t solr1 /opt/solr/bin/solr create_collection \
+```console
+$ docker exec -i -t solr1 /opt/solr/bin/solr create_collection \
         -c collection1 -shards 2 -p 8983
+```
 
 Then go to `http://localhost:8983/solr/#/~cloud` (adjust the hostname for your docker host) to see the two shards and Solr nodes.
 
