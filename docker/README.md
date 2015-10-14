@@ -1,10 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.2`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/docker/blob/bb15fc25bbd4f51a880cf02f91eab447b1083b75/1.8/Dockerfile)
--	[`1.8.2-dind`, `1.8-dind`, `1-dind`, `dind` (*1.8/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/251cf235760a2ba6db1cf1ddc8ccb3d4da5ec99d/1.8/dind/Dockerfile)
--	[`1.8.2-git`, `1.8-git`, `1-git`, `git` (*1.8/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a2614c9b94d3bae7d8d61a7cf4d56a42f6332104/1.8/git/Dockerfile)
+-	[`1.9.0-rc1`, `1.9-rc`, `rc` (*1.9-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/20e81e7474e54f9edbb33c931e4731ef6c5b8335/1.9-rc/Dockerfile)
+-	[`1.9.0-rc1-dind`, `1.9-rc-dind`, `rc-dind` (*1.9-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/20e81e7474e54f9edbb33c931e4731ef6c5b8335/1.9-rc/dind/Dockerfile)
+-	[`1.9.0-rc1-git`, `1.9-rc-git`, `rc-git` (*1.9-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/20e81e7474e54f9edbb33c931e4731ef6c5b8335/1.9-rc/git/Dockerfile)
+-	[`1.8.3`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/docker/blob/460aea3b5f26709dc58252deb7cf31cd0a26383e/1.8/Dockerfile)
+-	[`1.8.3-dind`, `1.8-dind`, `1-dind`, `dind` (*1.8/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/2e8569cf5c665ef955855e95be475f52a55c0720/1.8/dind/Dockerfile)
+-	[`1.8.3-git`, `1.8-git`, `1-git`, `git` (*1.8/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a2614c9b94d3bae7d8d61a7cf4d56a42f6332104/1.8/git/Dockerfile)
 -	[`1.7.1`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/docker/blob/6c4acc40ebc56a539fd33e7799187641dc1e27b0/1.7/Dockerfile)
--	[`1.7.1-dind`, `1.7-dind` (*1.7/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/251cf235760a2ba6db1cf1ddc8ccb3d4da5ec99d/1.7/dind/Dockerfile)
+-	[`1.7.1-dind`, `1.7-dind` (*1.7/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/2e8569cf5c665ef955855e95be475f52a55c0720/1.7/dind/Dockerfile)
 -	[`1.7.1-git`, `1.7-git` (*1.7/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a98e0c42a96497670c36f4b2dcad2bcc81f18f35/1.7/git/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
