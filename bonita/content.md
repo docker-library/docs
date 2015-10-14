@@ -22,13 +22,13 @@ You can access the Bonita BPM Portal on http://localhost:8080/bonita and login u
 
 [Increase the packet size](http://documentation.bonitasoft.com/database-configuration-2#mysqlspec) which is set by default to 1M:
 
-	mkdir -p ~/Documents/Docker/Volumes/custom_mysql
-	echo "[mysqld]" > ~/Documents/Docker/Volumes/custom_mysql/bonita.cnf
-	echo "max_allowed_packet=16M" >> ~/Documents/Docker/Volumes/custom_mysql/bonita.cnf
+	mkdir -p custom_mysql
+	echo "[mysqld]" > custom_mysql/bonita.cnf
+	echo "max_allowed_packet=16M" >> custom_mysql/bonita.cnf
 
 Mount that directory location as /etc/mysql/conf.d inside the MySQL container:
 
-	docker run --name mydbmysql -v ~/Documents/Docker/Volumes/custom_mysql/:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql:5.5
+	docker run --name mydbmysql -v "$PWD"/custom_mysql/:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql:5.5
 
 See the [official MySQL documentation](https://registry.hub.docker.com/_/mysql/) for more details.
 
@@ -40,14 +40,14 @@ Start your application container to link it to the MySQL container:
 
 [Set max_prepared_transactions to 100](http://documentation.bonitasoft.com/database-configuration-business-data-1):
 
-	mkdir -p ~/Documents/Docker/Volumes/custom_postgres
-	echo '#!/bin/bash' > ~/Documents/Docker/Volumes/custom_postgres/bonita.sh
-	echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$/max_prepared_transactions = 100/" "$PGDATA"/postgresql.conf' >> ~/Documents/Docker/Volumes/custom_postgres/bonita.sh
-	chmod +x ~/Documents/Docker/Volumes/custom_postgres/bonita.sh
+	mkdir -p custom_postgres
+	echo '#!/bin/bash' > custom_postgres/bonita.sh
+	echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$/max_prepared_transactions = 100/" "$PGDATA"/postgresql.conf' >> custom_postgres/bonita.sh
+	chmod +x custom_postgres/bonita.sh
 
 Mount that directory location as /docker-entrypoint-initdb.d inside the PostgreSQL container:
 
-	docker run --name mydbpostgres -v ~/Documents/Docker/Volumes/custom_postgres/:/docker-entrypoint-initdb.d -e POSTGRES_PASSWORD=mysecretpassword -d postgres:9.3
+	docker run --name mydbpostgres -v "$PWD"/custom_postgres/:/docker-entrypoint-initdb.d -e POSTGRES_PASSWORD=mysecretpassword -d postgres:9.3
 
 See the [official PostgreSQL documentation](https://registry.hub.docker.com/_/postgres/) for more details.
 
@@ -103,7 +103,7 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 
 3.	Copy data from the filesystem
 
-		cp -r ~/Documents/Docker/Volumes/bonita_7.0.0_postgres ~/Documents/Docker/Volumes/bonita_7.0.3_postgres
+		cp -r bonita_7.0.0_postgres bonita_7.0.3_postgres
 
 4.	Retrieve the DB container IP
 
@@ -127,7 +127,7 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 
 7.	Retrieve the last migration tool and the target version of the Bonita bundle
 
-		cd ~/Documents/Docker/Volumes/bonita_7.0.3_postgres
+		cd bonita_7.0.3_postgres
 		wget http://download.forge.ow2.org/bonita/bonita-migration-distrib-2.2.0.zip
 		wget http://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.0.3-Tomcat-7.0.55.zip
 		unzip bonita-migration-distrib-2.2.0.zip -d bonita-migration-distrib-2.2.0
@@ -165,7 +165,7 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 
 11.	Launch the new container pointing towards the copy of DB and filesystem
 
-		docker run --name=bonita_7.0.3_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v ~/Documents/Docker/Volumes/bonita_7.0.3_postgres:/opt/bonita/ -d -p 8081:8080 bonita:7.0.3
+		docker run --name=bonita_7.0.3_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v "$PWD"/bonita_7.0.3_postgres:/opt/bonita/ -d -p 8081:8080 bonita:7.0.3
 
 For more details regarding Bonita migration, see the [documentation](http://documentation.bonitasoft.com/migrate-earlier-version-bonita-bpm-0).
 
@@ -263,12 +263,12 @@ If you would like to do additional initialization, you can add a `*.sh` script u
 
 For example, you can increase the log level :
 
-	mkdir -p ~/Documents/Docker/Volumes/custom_bonita
-	echo '#!/bin/bash' > ~/Documents/Docker/Volumes/custom_bonita/bonita.sh
-	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/conf/logging.properties' >> ~/Documents/Docker/Volumes/custom_bonita/bonita.sh
-	chmod +x ~/Documents/Docker/Volumes/custom_bonita/bonita.sh
+	mkdir -p custom_bonita
+	echo '#!/bin/bash' > custom_bonita/bonita.sh
+	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/conf/logging.properties' >> custom_bonita/bonita.sh
+	chmod +x custom_bonita/bonita.sh
 	
-	docker run --name bonita_custom -v ~/Documents/Docker/Volumes/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
+	docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
 
 Note: There are several ways to check the `bonita` logs. One of them is
 
