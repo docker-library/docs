@@ -7,6 +7,7 @@ For more information about this image and its history, please see [the relevant 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `solr/tag-details.md` file](https://github.com/docker-library/docs/blob/master/solr/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
 # What is Solr?
+
 Solr is highly reliable, scalable and fault tolerant, providing distributed indexing, replication and load-balanced querying, automated failover and recovery, centralized configuration and more. Solr powers the search and navigation features of many of the world's largest internet sites.
 
 Learn more on [Apache Solr homepage](http://lucene.apache.org/solr/) and in the [Apache Solr Reference Guide](https://www.apache.org/dyn/closer.cgi/lucene/solr/ref-guide/).
@@ -39,9 +40,7 @@ If you want to load some example data:
 $ docker exec -it --user=solr my_solr bin/post -c gettingstarted example/exampledocs/manufacturers.xml
 ```
 
-In the UI, find the "Core selector" popup menu and select the "gettingstarted" core, then select the "Query"
-menu item. This gives you a default search for "*:*" which returns all docs. Hit the "Execute Query" button,
-and you should see a few docs with data. Congratulations!
+In the UI, find the "Core selector" popup menu and select the "gettingstarted" core, then select the "Query" menu item. This gives you a default search for "*:*" which returns all docs. Hit the "Execute Query" button, and you should see a few docs with data. Congratulations!
 
 To learn more about Solr, see the [Apache Solr Reference Guide](https://cwiki.apache.org/confluence/display/solr/Apache+Solr+Reference+Guide).
 
@@ -90,17 +89,11 @@ This repository is also licensed under the [Apache License, Version 2.0](https:/
 
 Copyright 2015 Martijn Koster
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	      http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 # Supported Docker versions
 
@@ -114,8 +107,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 Please report issues with this docker image on this [Github project](https://github.com/docker-solr/docker-solr).
 
-For general questions about Solr, see the [Community information](http://lucene.apache.org/solr/resources.html#community),
-in particular the solr-user mailing list.
+For general questions about Solr, see the [Community information](http://lucene.apache.org/solr/resources.html#community), in particular the solr-user mailing list.
 
 ## Contributing
 

@@ -1,4 +1,5 @@
 # What is Solr?
+
 Solr is highly reliable, scalable and fault tolerant, providing distributed indexing, replication and load-balanced querying, automated failover and recovery, centralized configuration and more. Solr powers the search and navigation features of many of the world's largest internet sites.
 
 Learn more on [Apache Solr homepage](http://lucene.apache.org/solr/) and in the [Apache Solr Reference Guide](https://www.apache.org/dyn/closer.cgi/lucene/solr/ref-guide/).
@@ -31,9 +32,7 @@ If you want to load some example data:
 $ docker exec -it --user=solr my_solr bin/post -c gettingstarted example/exampledocs/manufacturers.xml
 ```
 
-In the UI, find the "Core selector" popup menu and select the "gettingstarted" core, then select the "Query"
-menu item. This gives you a default search for "*:*" which returns all docs. Hit the "Execute Query" button,
-and you should see a few docs with data. Congratulations!
+In the UI, find the "Core selector" popup menu and select the "gettingstarted" core, then select the "Query" menu item. This gives you a default search for "*:*" which returns all docs. Hit the "Execute Query" button, and you should see a few docs with data. Congratulations!
 
 To learn more about Solr, see the [Apache Solr Reference Guide](https://cwiki.apache.org/confluence/display/solr/Apache+Solr+Reference+Guide).
 
