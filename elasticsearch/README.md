@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.3.9`, `1.3` (*1.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/546a3d48ac776256ab4b78a7136cc57ef0e8ddab/1.3/Dockerfile)
--	[`1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/546a3d48ac776256ab4b78a7136cc57ef0e8ddab/1.4/Dockerfile)
--	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/546a3d48ac776256ab4b78a7136cc57ef0e8ddab/1.5/Dockerfile)
--	[`1.6.2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/546a3d48ac776256ab4b78a7136cc57ef0e8ddab/1.6/Dockerfile)
--	[`1.7.2`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/18527ddda24e2f765c18c925f8970b5570882a3c/1.7/Dockerfile)
--	[`2.0.0-beta2`, `2.0.0`, `2.0`, `2` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/c6ae6abfc71a4fed1edcec58fafb9aca2cb3449c/2.0/Dockerfile)
+-	[`1.3.9`, `1.3` (*1.3/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/c0cc86cddec0de3bd8fa01bcca5ef0c36fc7d255/1.3/Dockerfile)
+-	[`1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/c0cc86cddec0de3bd8fa01bcca5ef0c36fc7d255/1.4/Dockerfile)
+-	[`1.5.2`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/c0cc86cddec0de3bd8fa01bcca5ef0c36fc7d255/1.5/Dockerfile)
+-	[`1.6.2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/c0cc86cddec0de3bd8fa01bcca5ef0c36fc7d255/1.6/Dockerfile)
+-	[`1.7.3`, `1.7`, `1`, `latest` (*1.7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/c0cc86cddec0de3bd8fa01bcca5ef0c36fc7d255/1.7/Dockerfile)
+-	[`2.0.0-rc1`, `2.0.0`, `2.0`, `2` (*2.0/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/c0cc86cddec0de3bd8fa01bcca5ef0c36fc7d255/2.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/elasticsearch`)](https://github.com/docker-library/official-images/blob/master/library/elasticsearch). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
