@@ -11,13 +11,13 @@ All of our scripts are [GPL](https://www.gnu.org/licenses/gpl.html)'d and our pa
 These images are based on our [chroot images](https://beta.sourcemage.ru/Install/Chroot). To use them, simply do the following:
 
 ```shell
-$ docker run -it --privileged vaygr/sourcemage
+$ docker run -it --privileged sourcemage
 ```
 
 or
 
 ```shell
-$ docker run -it --privileged vaygr/sourcemage:0.61
+$ docker run -it --privileged sourcemage:0.61
 ```
 
 ---
