@@ -34,7 +34,7 @@ For more examples and ideas, visit:
 
 $ docker images hello-world
 REPOSITORY   TAG     IMAGE ID      VIRTUAL SIZE
-hello-world  latest  af340544ed62  960 B
+hello-world  latest  975b84d108f1  960 B
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/hello-world/logo.png)
