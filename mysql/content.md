@@ -92,6 +92,10 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MySQL instance completely unprotected, allowing anyone to gain complete superuser access.
 
+### `MYSQL_CHARSET`
+
+This is an optional variable. If set then when `MYSQL_DATABASE` is used to create new database at image startup its character set will be set to the supplied value. Valid character sets can be seen with [`SHOW CHARACTER SET`](http://dev.mysql.com/doc/en/show-character-set.html) or in the [documentation](http://dev.mysql.com/doc/en/charset-charsets.html).
+
 # Caveats
 
 ## Where to Store Data
