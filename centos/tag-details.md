@@ -23,11 +23,11 @@
 ## `centos:latest`
 
 ```console
-$ docker pull library/centos@sha256:2d9573acf37315cb8fe2a1420769c3b83f59d8f286fd8898a580578c0d5e66c6
+$ docker pull library/centos@sha256:3aaab9f1297db9b013063c781cfe901e2aa6e7e334c1d1f4df12f25ce356f2e5
 ```
 
 -	Total Virtual Size: 172.3 MB (172289754 bytes)
--	Total v2 Content-Length: 62.9 MB (62906701 bytes)
+-	Total v2 Content-Length: 62.9 MB (62906636 bytes)
 
 ### Layers (5)
 
@@ -44,57 +44,57 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f6f39725d938c8ad3941b20fc230e9eb17c7d2d9bbb760733de1c32562b5c86a`
+#### `168a69b6220279e6d5bd8dafd2edf71434a08e32b60a7060f7a705f64857169d`
 
 ```dockerfile
-ADD file:2c002b8a427ce98fc1df7c81aed87db26a3077a7200e2a89a9d69abf5ee3b1b1 in /
+ADD file:125fe45519717bec39f64a67dfc5cd0ac1c8733963d71510ba770817d9466fcb in /
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:53 GMT
+-	Created: Tue, 13 Oct 2015 23:29:00 GMT
 -	Parent Layer: `47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 172.3 MB (172289754 bytes)
--	v2 Blob: `sha256:c3bf6062f354b9af9db4481f24f488da418727673ea76c5162b864e1eea29a4e`
--	v2 Content-Length: 62.9 MB (62906573 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 00:06:48 GMT
+-	v2 Blob: `sha256:05346a7282e1073e197c35de5953e2dc4d59df661f1bd72cefe712da699dfb74`
+-	v2 Content-Length: 62.9 MB (62906508 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:21:22 GMT
 
-#### `f9a8cbc8dd13fb5bdbcff050cbeee76cc8c967a9ab2122714d00090c5815d385`
+#### `812e9d9d677f15c39277b2edc8f9bc07354c899483409bb07d1c13c2b9c33ec8`
 
 ```dockerfile
 LABEL Vendor=CentOS
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:55 GMT
--	Parent Layer: `f6f39725d938c8ad3941b20fc230e9eb17c7d2d9bbb760733de1c32562b5c86a`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:03 GMT
+-	Parent Layer: `168a69b6220279e6d5bd8dafd2edf71434a08e32b60a7060f7a705f64857169d`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f37e6a610a37349d4ad2ffe4ea163463787109c8ee5d1163c68777b619c5198f`
+#### `4234bfdd88f8ed2bc4607bd2ebba2d41d61e2693ad0d184e7b05e1b57f8b8b33`
 
 ```dockerfile
 LABEL License=GPLv2
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:55 GMT
--	Parent Layer: `f9a8cbc8dd13fb5bdbcff050cbeee76cc8c967a9ab2122714d00090c5815d385`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:03 GMT
+-	Parent Layer: `812e9d9d677f15c39277b2edc8f9bc07354c899483409bb07d1c13c2b9c33ec8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0f73ae75014f435e279d85ad31edc67e46c4a5d692b61840ff51e9d05f3b01ec`
+#### `ce20c473cd8ac1fab6601529ce6a075743f2cf7a8f4cfed2216f8cfcb53bfc4e`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:55 GMT
--	Parent Layer: `f37e6a610a37349d4ad2ffe4ea163463787109c8ee5d1163c68777b619c5198f`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:04 GMT
+-	Parent Layer: `4234bfdd88f8ed2bc4607bd2ebba2d41d61e2693ad0d184e7b05e1b57f8b8b33`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -103,11 +103,11 @@ CMD ["/bin/bash"]
 ## `centos:centos7`
 
 ```console
-$ docker pull library/centos@sha256:38eca413ebfe76e841c3926bd00585d0cdef1abbb0c6b230fabde64553ecdde7
+$ docker pull library/centos@sha256:6200bb8b8db8c9d749b7a3ddda0fc5ec8fa4ae946bdecfdd8b0748b599cda01c
 ```
 
 -	Total Virtual Size: 172.3 MB (172289754 bytes)
--	Total v2 Content-Length: 62.9 MB (62906701 bytes)
+-	Total v2 Content-Length: 62.9 MB (62906636 bytes)
 
 ### Layers (5)
 
@@ -124,57 +124,57 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f6f39725d938c8ad3941b20fc230e9eb17c7d2d9bbb760733de1c32562b5c86a`
+#### `168a69b6220279e6d5bd8dafd2edf71434a08e32b60a7060f7a705f64857169d`
 
 ```dockerfile
-ADD file:2c002b8a427ce98fc1df7c81aed87db26a3077a7200e2a89a9d69abf5ee3b1b1 in /
+ADD file:125fe45519717bec39f64a67dfc5cd0ac1c8733963d71510ba770817d9466fcb in /
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:53 GMT
+-	Created: Tue, 13 Oct 2015 23:29:00 GMT
 -	Parent Layer: `47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 172.3 MB (172289754 bytes)
--	v2 Blob: `sha256:c3bf6062f354b9af9db4481f24f488da418727673ea76c5162b864e1eea29a4e`
--	v2 Content-Length: 62.9 MB (62906573 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 00:06:48 GMT
+-	v2 Blob: `sha256:05346a7282e1073e197c35de5953e2dc4d59df661f1bd72cefe712da699dfb74`
+-	v2 Content-Length: 62.9 MB (62906508 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:21:22 GMT
 
-#### `f9a8cbc8dd13fb5bdbcff050cbeee76cc8c967a9ab2122714d00090c5815d385`
+#### `812e9d9d677f15c39277b2edc8f9bc07354c899483409bb07d1c13c2b9c33ec8`
 
 ```dockerfile
 LABEL Vendor=CentOS
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:55 GMT
--	Parent Layer: `f6f39725d938c8ad3941b20fc230e9eb17c7d2d9bbb760733de1c32562b5c86a`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:03 GMT
+-	Parent Layer: `168a69b6220279e6d5bd8dafd2edf71434a08e32b60a7060f7a705f64857169d`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f37e6a610a37349d4ad2ffe4ea163463787109c8ee5d1163c68777b619c5198f`
+#### `4234bfdd88f8ed2bc4607bd2ebba2d41d61e2693ad0d184e7b05e1b57f8b8b33`
 
 ```dockerfile
 LABEL License=GPLv2
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:55 GMT
--	Parent Layer: `f9a8cbc8dd13fb5bdbcff050cbeee76cc8c967a9ab2122714d00090c5815d385`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:03 GMT
+-	Parent Layer: `812e9d9d677f15c39277b2edc8f9bc07354c899483409bb07d1c13c2b9c33ec8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0f73ae75014f435e279d85ad31edc67e46c4a5d692b61840ff51e9d05f3b01ec`
+#### `ce20c473cd8ac1fab6601529ce6a075743f2cf7a8f4cfed2216f8cfcb53bfc4e`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:55 GMT
--	Parent Layer: `f37e6a610a37349d4ad2ffe4ea163463787109c8ee5d1163c68777b619c5198f`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:04 GMT
+-	Parent Layer: `4234bfdd88f8ed2bc4607bd2ebba2d41d61e2693ad0d184e7b05e1b57f8b8b33`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -183,11 +183,11 @@ CMD ["/bin/bash"]
 ## `centos:7`
 
 ```console
-$ docker pull library/centos@sha256:c28c6a9260a3d82609c20f27c6654f3a1e80f167392021386c7f33901a27d08d
+$ docker pull library/centos@sha256:def5c79bc29849815dec7dddc8f75530a9115c94d5b17e0e6807f929902fab62
 ```
 
 -	Total Virtual Size: 172.3 MB (172289754 bytes)
--	Total v2 Content-Length: 62.9 MB (62906701 bytes)
+-	Total v2 Content-Length: 62.9 MB (62906636 bytes)
 
 ### Layers (5)
 
@@ -204,57 +204,57 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f6f39725d938c8ad3941b20fc230e9eb17c7d2d9bbb760733de1c32562b5c86a`
+#### `168a69b6220279e6d5bd8dafd2edf71434a08e32b60a7060f7a705f64857169d`
 
 ```dockerfile
-ADD file:2c002b8a427ce98fc1df7c81aed87db26a3077a7200e2a89a9d69abf5ee3b1b1 in /
+ADD file:125fe45519717bec39f64a67dfc5cd0ac1c8733963d71510ba770817d9466fcb in /
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:53 GMT
+-	Created: Tue, 13 Oct 2015 23:29:00 GMT
 -	Parent Layer: `47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 172.3 MB (172289754 bytes)
--	v2 Blob: `sha256:c3bf6062f354b9af9db4481f24f488da418727673ea76c5162b864e1eea29a4e`
--	v2 Content-Length: 62.9 MB (62906573 bytes)
--	v2 Last-Modified: Fri, 11 Sep 2015 00:06:48 GMT
+-	v2 Blob: `sha256:05346a7282e1073e197c35de5953e2dc4d59df661f1bd72cefe712da699dfb74`
+-	v2 Content-Length: 62.9 MB (62906508 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:21:22 GMT
 
-#### `f9a8cbc8dd13fb5bdbcff050cbeee76cc8c967a9ab2122714d00090c5815d385`
+#### `812e9d9d677f15c39277b2edc8f9bc07354c899483409bb07d1c13c2b9c33ec8`
 
 ```dockerfile
 LABEL Vendor=CentOS
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:55 GMT
--	Parent Layer: `f6f39725d938c8ad3941b20fc230e9eb17c7d2d9bbb760733de1c32562b5c86a`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:03 GMT
+-	Parent Layer: `168a69b6220279e6d5bd8dafd2edf71434a08e32b60a7060f7a705f64857169d`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f37e6a610a37349d4ad2ffe4ea163463787109c8ee5d1163c68777b619c5198f`
+#### `4234bfdd88f8ed2bc4607bd2ebba2d41d61e2693ad0d184e7b05e1b57f8b8b33`
 
 ```dockerfile
 LABEL License=GPLv2
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:55 GMT
--	Parent Layer: `f9a8cbc8dd13fb5bdbcff050cbeee76cc8c967a9ab2122714d00090c5815d385`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:03 GMT
+-	Parent Layer: `812e9d9d677f15c39277b2edc8f9bc07354c899483409bb07d1c13c2b9c33ec8`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0f73ae75014f435e279d85ad31edc67e46c4a5d692b61840ff51e9d05f3b01ec`
+#### `ce20c473cd8ac1fab6601529ce6a075743f2cf7a8f4cfed2216f8cfcb53bfc4e`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 19:05:55 GMT
--	Parent Layer: `f37e6a610a37349d4ad2ffe4ea163463787109c8ee5d1163c68777b619c5198f`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:04 GMT
+-	Parent Layer: `4234bfdd88f8ed2bc4607bd2ebba2d41d61e2693ad0d184e7b05e1b57f8b8b33`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -263,7 +263,7 @@ CMD ["/bin/bash"]
 ## `centos:centos6`
 
 ```console
-$ docker pull library/centos@sha256:efa5de1eed533dd620ba3ae1d1f046c02a874d88860ff7a36a1dcbfe4ca8cff6
+$ docker pull library/centos@sha256:65cb2f8276939d1dba78fbe7f5f9fb39700d36a6b0c402331a7da799d621cdf6
 ```
 
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
@@ -284,57 +284,57 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `6a7b54515901f15a22a60a9e0705bb8032bc956a1b45a9e39bed18e5b15c0e31`
+#### `2c2557968d488808c0086d9ab9340e0b188a8f9ba24f7251e04a81356e5b2092`
 
 ```dockerfile
-ADD file:91f92b9c62a2a8d573c22e578e5798294cdd4ff1f3736f9ac869546ec1f3216e in /
+ADD file:c8f5f9054c3914e848935c3554e18811219af1fe08b04ad8bad61ac44154db52 in /
 ```
 
--	Created: Mon, 07 Sep 2015 19:06:37 GMT
+-	Created: Tue, 13 Oct 2015 23:29:40 GMT
 -	Parent Layer: `47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 190.6 MB (190593087 bytes)
 -	v2 Blob: `sha256:3b231ed5aa2f1631b3189f15f215fad43e35ec4aa56ee7bb92b9dd1b73ca94cb`
 -	v2 Content-Length: 66.4 MB (66390854 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 19:13:06 GMT
 
-#### `e788880c8cfa99cd5f8c8edd05c23790c009686ce926bb42b0a1466dbbca1642`
+#### `91e6f84b8fe8bd8a0a3e1743fdf3821027fd6cac675f95c6ec18ccbb600471aa`
 
 ```dockerfile
 LABEL Vendor=CentOS
 ```
 
--	Created: Mon, 07 Sep 2015 19:06:39 GMT
--	Parent Layer: `6a7b54515901f15a22a60a9e0705bb8032bc956a1b45a9e39bed18e5b15c0e31`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:44 GMT
+-	Parent Layer: `2c2557968d488808c0086d9ab9340e0b188a8f9ba24f7251e04a81356e5b2092`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1debf8fb53e60f315842d1c5e72b23d8f5a868d1395bfc86de97e2d81778f192`
+#### `fea77d2fd61ed627e7c8b6b570936b88850abcddd6ee5b6848529bf8e129fa2d`
 
 ```dockerfile
 LABEL License=GPLv2
 ```
 
--	Created: Mon, 07 Sep 2015 19:06:39 GMT
--	Parent Layer: `e788880c8cfa99cd5f8c8edd05c23790c009686ce926bb42b0a1466dbbca1642`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:44 GMT
+-	Parent Layer: `91e6f84b8fe8bd8a0a3e1743fdf3821027fd6cac675f95c6ec18ccbb600471aa`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `72703a0520b702adac8167f7aa25a8d2f58fe624937c16377e1a1b53a0519a86`
+#### `3bbbf0aca3593044c280551babb73f306c145fe512976015829cfc98d2b45d94`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 19:06:40 GMT
--	Parent Layer: `1debf8fb53e60f315842d1c5e72b23d8f5a868d1395bfc86de97e2d81778f192`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:45 GMT
+-	Parent Layer: `fea77d2fd61ed627e7c8b6b570936b88850abcddd6ee5b6848529bf8e129fa2d`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -343,7 +343,7 @@ CMD ["/bin/bash"]
 ## `centos:6`
 
 ```console
-$ docker pull library/centos@sha256:045c14a29c8b318678455a788546705a238249595cdad59f8b880fd3fb21f37a
+$ docker pull library/centos@sha256:617d2d72bb74d6ff5ede23a6121b885be256cd15e4b1160ece4b502c0d409345
 ```
 
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
@@ -364,57 +364,57 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `6a7b54515901f15a22a60a9e0705bb8032bc956a1b45a9e39bed18e5b15c0e31`
+#### `2c2557968d488808c0086d9ab9340e0b188a8f9ba24f7251e04a81356e5b2092`
 
 ```dockerfile
-ADD file:91f92b9c62a2a8d573c22e578e5798294cdd4ff1f3736f9ac869546ec1f3216e in /
+ADD file:c8f5f9054c3914e848935c3554e18811219af1fe08b04ad8bad61ac44154db52 in /
 ```
 
--	Created: Mon, 07 Sep 2015 19:06:37 GMT
+-	Created: Tue, 13 Oct 2015 23:29:40 GMT
 -	Parent Layer: `47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 190.6 MB (190593087 bytes)
 -	v2 Blob: `sha256:3b231ed5aa2f1631b3189f15f215fad43e35ec4aa56ee7bb92b9dd1b73ca94cb`
 -	v2 Content-Length: 66.4 MB (66390854 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 19:13:06 GMT
 
-#### `e788880c8cfa99cd5f8c8edd05c23790c009686ce926bb42b0a1466dbbca1642`
+#### `91e6f84b8fe8bd8a0a3e1743fdf3821027fd6cac675f95c6ec18ccbb600471aa`
 
 ```dockerfile
 LABEL Vendor=CentOS
 ```
 
--	Created: Mon, 07 Sep 2015 19:06:39 GMT
--	Parent Layer: `6a7b54515901f15a22a60a9e0705bb8032bc956a1b45a9e39bed18e5b15c0e31`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:44 GMT
+-	Parent Layer: `2c2557968d488808c0086d9ab9340e0b188a8f9ba24f7251e04a81356e5b2092`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1debf8fb53e60f315842d1c5e72b23d8f5a868d1395bfc86de97e2d81778f192`
+#### `fea77d2fd61ed627e7c8b6b570936b88850abcddd6ee5b6848529bf8e129fa2d`
 
 ```dockerfile
 LABEL License=GPLv2
 ```
 
--	Created: Mon, 07 Sep 2015 19:06:39 GMT
--	Parent Layer: `e788880c8cfa99cd5f8c8edd05c23790c009686ce926bb42b0a1466dbbca1642`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:44 GMT
+-	Parent Layer: `91e6f84b8fe8bd8a0a3e1743fdf3821027fd6cac675f95c6ec18ccbb600471aa`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `72703a0520b702adac8167f7aa25a8d2f58fe624937c16377e1a1b53a0519a86`
+#### `3bbbf0aca3593044c280551babb73f306c145fe512976015829cfc98d2b45d94`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 19:06:40 GMT
--	Parent Layer: `1debf8fb53e60f315842d1c5e72b23d8f5a868d1395bfc86de97e2d81778f192`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:29:45 GMT
+-	Parent Layer: `fea77d2fd61ed627e7c8b6b570936b88850abcddd6ee5b6848529bf8e129fa2d`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -423,11 +423,11 @@ CMD ["/bin/bash"]
 ## `centos:centos5`
 
 ```console
-$ docker pull library/centos@sha256:b3236fb85715944d83f2b920a10b9bde959cc694c2be817dcac5c94cb141735a
+$ docker pull library/centos@sha256:d2ced7be44f42afccb78ba01e03567a066b33c1727655c87272927290c62263f
 ```
 
 -	Total Virtual Size: 284.1 MB (284081882 bytes)
--	Total v2 Content-Length: 87.0 MB (87035259 bytes)
+-	Total v2 Content-Length: 87.0 MB (87035253 bytes)
 
 ### Layers (2)
 
@@ -444,28 +444,28 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9069226e092e9c8d68450ca4a416bec6acf1709584e9fd70ea5fe8040bf9859e`
+#### `8418970fbb5946ff2446b85ae1417411660dc950758db48b325b57ec392902b8`
 
 ```dockerfile
-ADD file:daa82c1f87a4f4827b4cfedad2f374ebccd22ff1e7371b1046c11bc3506e8886 in /
+ADD file:5d64c112f85d4de58201bbe6595e229d38a8eddf43522ef9209ab7da89056733 in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:13:06 GMT
+-	Created: Tue, 13 Oct 2015 23:30:10 GMT
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 284.1 MB (284081882 bytes)
--	v2 Blob: `sha256:5fdbdeb6c0e81b3ac639bb1a57dc33951871255086bdb88c5d6225b9ec6a1417`
--	v2 Content-Length: 87.0 MB (87035227 bytes)
--	v2 Last-Modified: Tue, 14 Jul 2015 11:13:45 GMT
+-	v2 Blob: `sha256:f61f09b16af986f8124fbb699cf95e58855261211424e2d5336b9803fec473fc`
+-	v2 Content-Length: 87.0 MB (87035221 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:26:03 GMT
 
 ## `centos:5`
 
 ```console
-$ docker pull library/centos@sha256:9993047a6fee832d1f3e0b70b1813d53b1716ca8e151bc1dda34545160595944
+$ docker pull library/centos@sha256:b59fe8af3ce38fc52a64e7e02b8a042629c5c6d9063d910f9c3416327a093b14
 ```
 
 -	Total Virtual Size: 284.1 MB (284081882 bytes)
--	Total v2 Content-Length: 87.0 MB (87035259 bytes)
+-	Total v2 Content-Length: 87.0 MB (87035253 bytes)
 
 ### Layers (2)
 
@@ -482,28 +482,28 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9069226e092e9c8d68450ca4a416bec6acf1709584e9fd70ea5fe8040bf9859e`
+#### `8418970fbb5946ff2446b85ae1417411660dc950758db48b325b57ec392902b8`
 
 ```dockerfile
-ADD file:daa82c1f87a4f4827b4cfedad2f374ebccd22ff1e7371b1046c11bc3506e8886 in /
+ADD file:5d64c112f85d4de58201bbe6595e229d38a8eddf43522ef9209ab7da89056733 in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:13:06 GMT
+-	Created: Tue, 13 Oct 2015 23:30:10 GMT
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 284.1 MB (284081882 bytes)
--	v2 Blob: `sha256:5fdbdeb6c0e81b3ac639bb1a57dc33951871255086bdb88c5d6225b9ec6a1417`
--	v2 Content-Length: 87.0 MB (87035227 bytes)
--	v2 Last-Modified: Tue, 14 Jul 2015 11:13:45 GMT
+-	v2 Blob: `sha256:f61f09b16af986f8124fbb699cf95e58855261211424e2d5336b9803fec473fc`
+-	v2 Content-Length: 87.0 MB (87035221 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:26:03 GMT
 
 ## `centos:centos7.1.1503`
 
 ```console
-$ docker pull library/centos@sha256:f5451b8c1f755937c2236829604ede7b2cda566c6ee43d2825c63da8d662f9d6
+$ docker pull library/centos@sha256:1dbe9b2b8cd219a620aa36c4b9ece578029a9a212f9341819f982a680a572ab6
 ```
 
 -	Total Virtual Size: 212.1 MB (212062952 bytes)
--	Total v2 Content-Length: 75.7 MB (75670068 bytes)
+-	Total v2 Content-Length: 75.7 MB (75670111 bytes)
 
 ### Layers (3)
 
@@ -520,29 +520,29 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c43c1996cf187f30bc8af15e7a3bc5aee1eba2a0995baaf3e4135a7a676d74b1`
+#### `172633e384200b683dd587c350fd568fbc50758b54bdba44c03666f9b4089daf`
 
 ```dockerfile
-ADD file:87cc81d5ce65445271b5e976e352cf8da40923078bc2580202aa5eaa73f13eab in /
+ADD file:d68b6041059c394e0f95effd6517765405402b4302fe16cf864f658ba8b25a97 in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:13:20 GMT
+-	Created: Tue, 13 Oct 2015 23:30:32 GMT
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 212.1 MB (212062952 bytes)
--	v2 Blob: `sha256:912f77ff66de4104382ae33c6d5213a6ba2d610bd52b397b1bee116d78344ddb`
--	v2 Content-Length: 75.7 MB (75670004 bytes)
--	v2 Last-Modified: Tue, 14 Jul 2015 11:17:22 GMT
+-	v2 Blob: `sha256:9a6ec1c7bb954a779c78c156aee35e1d145e581be7123d1205958eb33ad73826`
+-	v2 Content-Length: 75.7 MB (75670047 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:28:51 GMT
 
-#### `f1dade627e2541880e968459c4c3861678a8b576714f0325e16a7a04c32326c6`
+#### `fab4b1df8eb1d14cf67441769759e98390559b26f8aae7baed0ce6aacb48cfc6`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Wed, 22 Apr 2015 05:13:22 GMT
--	Parent Layer: `c43c1996cf187f30bc8af15e7a3bc5aee1eba2a0995baaf3e4135a7a676d74b1`
--	Docker Version: 1.6.0
+-	Created: Tue, 13 Oct 2015 23:30:40 GMT
+-	Parent Layer: `172633e384200b683dd587c350fd568fbc50758b54bdba44c03666f9b4089daf`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -551,11 +551,11 @@ CMD ["/bin/bash"]
 ## `centos:7.1.1503`
 
 ```console
-$ docker pull library/centos@sha256:4c02104e053f98cb9f9f18871eaa34e65e2dbd78afe5e22500b334b770da7b7c
+$ docker pull library/centos@sha256:e4637a5f34b42f07f70f793e4b3b5871cadea6fee0ce4bde0da3884370712a72
 ```
 
 -	Total Virtual Size: 212.1 MB (212062952 bytes)
--	Total v2 Content-Length: 75.7 MB (75670068 bytes)
+-	Total v2 Content-Length: 75.7 MB (75670111 bytes)
 
 ### Layers (3)
 
@@ -572,29 +572,29 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c43c1996cf187f30bc8af15e7a3bc5aee1eba2a0995baaf3e4135a7a676d74b1`
+#### `172633e384200b683dd587c350fd568fbc50758b54bdba44c03666f9b4089daf`
 
 ```dockerfile
-ADD file:87cc81d5ce65445271b5e976e352cf8da40923078bc2580202aa5eaa73f13eab in /
+ADD file:d68b6041059c394e0f95effd6517765405402b4302fe16cf864f658ba8b25a97 in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:13:20 GMT
+-	Created: Tue, 13 Oct 2015 23:30:32 GMT
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 212.1 MB (212062952 bytes)
--	v2 Blob: `sha256:912f77ff66de4104382ae33c6d5213a6ba2d610bd52b397b1bee116d78344ddb`
--	v2 Content-Length: 75.7 MB (75670004 bytes)
--	v2 Last-Modified: Tue, 14 Jul 2015 11:17:22 GMT
+-	v2 Blob: `sha256:9a6ec1c7bb954a779c78c156aee35e1d145e581be7123d1205958eb33ad73826`
+-	v2 Content-Length: 75.7 MB (75670047 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:28:51 GMT
 
-#### `f1dade627e2541880e968459c4c3861678a8b576714f0325e16a7a04c32326c6`
+#### `fab4b1df8eb1d14cf67441769759e98390559b26f8aae7baed0ce6aacb48cfc6`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Wed, 22 Apr 2015 05:13:22 GMT
--	Parent Layer: `c43c1996cf187f30bc8af15e7a3bc5aee1eba2a0995baaf3e4135a7a676d74b1`
--	Docker Version: 1.6.0
+-	Created: Tue, 13 Oct 2015 23:30:40 GMT
+-	Parent Layer: `172633e384200b683dd587c350fd568fbc50758b54bdba44c03666f9b4089daf`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -603,11 +603,11 @@ CMD ["/bin/bash"]
 ## `centos:centos7.0.1406`
 
 ```console
-$ docker pull library/centos@sha256:e4c37bb07d37cefb1fee573f01f939fd1e2deb65136e1c5e66abb686d5346bb7
+$ docker pull library/centos@sha256:efde403e01b7e7b422575beb9f872da9919937029749aa80da022ea799377641
 ```
 
 -	Total Virtual Size: 210.2 MB (210212702 bytes)
--	Total v2 Content-Length: 75.1 MB (75067738 bytes)
+-	Total v2 Content-Length: 75.1 MB (75067722 bytes)
 
 ### Layers (2)
 
@@ -624,28 +624,28 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `feb2761601e7a65e37e4b78a1bd688cb1e7a847045e2f98ac50abba081d79d31`
+#### `539eca37badeb3097ad1cfc1b90e9892a8fb95523cd58fd03633c9d217207b9a`
 
 ```dockerfile
-ADD file:a15cc97064e287aee651c723e4306d8f590c7a898c387dc66f7854ef7acf2fdb in /
+ADD file:7c8ce4768c86ab8a5b884312b7d69eb4f0f128c397c3e2492ff67a236fec35c5 in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:13:33 GMT
+-	Created: Tue, 13 Oct 2015 23:31:00 GMT
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 210.2 MB (210212702 bytes)
--	v2 Blob: `sha256:09bbb1ac1bd6d903cee7bc4ab6c1f296867d4cc6b1ffeda3998ba68f0419ed80`
--	v2 Content-Length: 75.1 MB (75067706 bytes)
--	v2 Last-Modified: Tue, 14 Jul 2015 11:20:21 GMT
+-	v2 Blob: `sha256:e0c00e48b5457c27610a005fc814b0e8459178f9cc5406471b309cce2f444ecc`
+-	v2 Content-Length: 75.1 MB (75067690 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:31:10 GMT
 
 ## `centos:7.0.1406`
 
 ```console
-$ docker pull library/centos@sha256:bc5356bb3b38f5063af788fdff6aec0dce710b49db78cd7ac5318820d26c4936
+$ docker pull library/centos@sha256:2cd589325b7b23392af2e70d0064ddf5cb549c9f35c1165b2f158e1cfc3fa2ac
 ```
 
 -	Total Virtual Size: 210.2 MB (210212702 bytes)
--	Total v2 Content-Length: 75.1 MB (75067738 bytes)
+-	Total v2 Content-Length: 75.1 MB (75067722 bytes)
 
 ### Layers (2)
 
@@ -662,24 +662,24 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `feb2761601e7a65e37e4b78a1bd688cb1e7a847045e2f98ac50abba081d79d31`
+#### `539eca37badeb3097ad1cfc1b90e9892a8fb95523cd58fd03633c9d217207b9a`
 
 ```dockerfile
-ADD file:a15cc97064e287aee651c723e4306d8f590c7a898c387dc66f7854ef7acf2fdb in /
+ADD file:7c8ce4768c86ab8a5b884312b7d69eb4f0f128c397c3e2492ff67a236fec35c5 in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:13:33 GMT
+-	Created: Tue, 13 Oct 2015 23:31:00 GMT
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 210.2 MB (210212702 bytes)
--	v2 Blob: `sha256:09bbb1ac1bd6d903cee7bc4ab6c1f296867d4cc6b1ffeda3998ba68f0419ed80`
--	v2 Content-Length: 75.1 MB (75067706 bytes)
--	v2 Last-Modified: Tue, 14 Jul 2015 11:20:21 GMT
+-	v2 Blob: `sha256:e0c00e48b5457c27610a005fc814b0e8459178f9cc5406471b309cce2f444ecc`
+-	v2 Content-Length: 75.1 MB (75067690 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:31:10 GMT
 
 ## `centos:centos6.7`
 
 ```console
-$ docker pull library/centos@sha256:ca2c18123dc1de0d4abed547d610f97181a0b84ef13921c17dac65ed5d082d8e
+$ docker pull library/centos@sha256:dabd1d8b82ddcac69209b53205925da4bcea3c202b5c4ab8e932054b704d0513
 ```
 
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
@@ -700,57 +700,57 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7e0b08ea15c46d2497a7a09220718999fde0f8b59fe09e76533116fb3cb10dea`
+#### `5fc6f5013018fd5f1e84a3b5d304f03cfb81b6131ca20c968262bc60c2edb107`
 
 ```dockerfile
-ADD file:18d2fc7eb8391b4b1972a26f3b39e28f8ec4fe9a0cbb3066f332b5607912eb4d in /
+ADD file:63df1fe23f2f72b7663b5f66bba74923e4baa195a5c878485b44ac86ec3ff62b in /
 ```
 
--	Created: Mon, 07 Sep 2015 19:07:53 GMT
+-	Created: Tue, 13 Oct 2015 23:31:21 GMT
 -	Parent Layer: `47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 190.6 MB (190593087 bytes)
 -	v2 Blob: `sha256:3b231ed5aa2f1631b3189f15f215fad43e35ec4aa56ee7bb92b9dd1b73ca94cb`
 -	v2 Content-Length: 66.4 MB (66390854 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 19:13:06 GMT
 
-#### `70644e3aa674e89222b1b0299bf80024ef60f08ef8e2261f6da36313aedcdadc`
+#### `8e6730e0eaef34246dd562b1ecc41ab72012a1bab74996edd4b5783bbfe71b82`
 
 ```dockerfile
 LABEL Vendor=CentOS
 ```
 
--	Created: Mon, 07 Sep 2015 19:07:55 GMT
--	Parent Layer: `7e0b08ea15c46d2497a7a09220718999fde0f8b59fe09e76533116fb3cb10dea`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:31:24 GMT
+-	Parent Layer: `5fc6f5013018fd5f1e84a3b5d304f03cfb81b6131ca20c968262bc60c2edb107`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e52da0087c56e88a5fce6edae7ebc04af33f5af0a2c5747c876632787420ef35`
+#### `b89573a5b116e61624906884fc48ba0cd7037a72cf1d2757c77fbd73f03c150a`
 
 ```dockerfile
 LABEL License=GPLv2
 ```
 
--	Created: Mon, 07 Sep 2015 19:07:55 GMT
--	Parent Layer: `70644e3aa674e89222b1b0299bf80024ef60f08ef8e2261f6da36313aedcdadc`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:31:25 GMT
+-	Parent Layer: `8e6730e0eaef34246dd562b1ecc41ab72012a1bab74996edd4b5783bbfe71b82`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b67beaa4223168050ab947c5f0d7e4cb4976442052706f7d8852cef8af05fce2`
+#### `3fba1048142f7f89f67f2b6b11256053a3beaa280b97538dd85d51d4f0a65961`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 19:07:56 GMT
--	Parent Layer: `e52da0087c56e88a5fce6edae7ebc04af33f5af0a2c5747c876632787420ef35`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:31:25 GMT
+-	Parent Layer: `b89573a5b116e61624906884fc48ba0cd7037a72cf1d2757c77fbd73f03c150a`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -759,7 +759,7 @@ CMD ["/bin/bash"]
 ## `centos:6.7`
 
 ```console
-$ docker pull library/centos@sha256:69a58cf1c990da2605c3e98000503ba896211b67fd916668e806c3378a5ff5d3
+$ docker pull library/centos@sha256:89d9204927e3ebbe7d93fb7b07b86d2ab5502c31e9c964cb995d6d4fd1ea3039
 ```
 
 -	Total Virtual Size: 190.6 MB (190593087 bytes)
@@ -780,57 +780,57 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7e0b08ea15c46d2497a7a09220718999fde0f8b59fe09e76533116fb3cb10dea`
+#### `5fc6f5013018fd5f1e84a3b5d304f03cfb81b6131ca20c968262bc60c2edb107`
 
 ```dockerfile
-ADD file:18d2fc7eb8391b4b1972a26f3b39e28f8ec4fe9a0cbb3066f332b5607912eb4d in /
+ADD file:63df1fe23f2f72b7663b5f66bba74923e4baa195a5c878485b44ac86ec3ff62b in /
 ```
 
--	Created: Mon, 07 Sep 2015 19:07:53 GMT
+-	Created: Tue, 13 Oct 2015 23:31:21 GMT
 -	Parent Layer: `47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 190.6 MB (190593087 bytes)
 -	v2 Blob: `sha256:3b231ed5aa2f1631b3189f15f215fad43e35ec4aa56ee7bb92b9dd1b73ca94cb`
 -	v2 Content-Length: 66.4 MB (66390854 bytes)
 -	v2 Last-Modified: Mon, 07 Sep 2015 19:13:06 GMT
 
-#### `70644e3aa674e89222b1b0299bf80024ef60f08ef8e2261f6da36313aedcdadc`
+#### `8e6730e0eaef34246dd562b1ecc41ab72012a1bab74996edd4b5783bbfe71b82`
 
 ```dockerfile
 LABEL Vendor=CentOS
 ```
 
--	Created: Mon, 07 Sep 2015 19:07:55 GMT
--	Parent Layer: `7e0b08ea15c46d2497a7a09220718999fde0f8b59fe09e76533116fb3cb10dea`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:31:24 GMT
+-	Parent Layer: `5fc6f5013018fd5f1e84a3b5d304f03cfb81b6131ca20c968262bc60c2edb107`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e52da0087c56e88a5fce6edae7ebc04af33f5af0a2c5747c876632787420ef35`
+#### `b89573a5b116e61624906884fc48ba0cd7037a72cf1d2757c77fbd73f03c150a`
 
 ```dockerfile
 LABEL License=GPLv2
 ```
 
--	Created: Mon, 07 Sep 2015 19:07:55 GMT
--	Parent Layer: `70644e3aa674e89222b1b0299bf80024ef60f08ef8e2261f6da36313aedcdadc`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:31:25 GMT
+-	Parent Layer: `8e6730e0eaef34246dd562b1ecc41ab72012a1bab74996edd4b5783bbfe71b82`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `b67beaa4223168050ab947c5f0d7e4cb4976442052706f7d8852cef8af05fce2`
+#### `3fba1048142f7f89f67f2b6b11256053a3beaa280b97538dd85d51d4f0a65961`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 07 Sep 2015 19:07:56 GMT
--	Parent Layer: `e52da0087c56e88a5fce6edae7ebc04af33f5af0a2c5747c876632787420ef35`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:31:25 GMT
+-	Parent Layer: `b89573a5b116e61624906884fc48ba0cd7037a72cf1d2757c77fbd73f03c150a`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -839,11 +839,11 @@ CMD ["/bin/bash"]
 ## `centos:centos6.6`
 
 ```console
-$ docker pull library/centos@sha256:8a3d975c93163ff5dd119bee819f2ebf381e53a707adc3afaf1c04457db19ebb
+$ docker pull library/centos@sha256:27cebd8347061e577dab952cb36ebeb55b3308ef99771dde45903268bba076df
 ```
 
 -	Total Virtual Size: 202.6 MB (202609003 bytes)
--	Total v2 Content-Length: 72.0 MB (72038828 bytes)
+-	Total v2 Content-Length: 72.0 MB (72038798 bytes)
 
 ### Layers (2)
 
@@ -860,28 +860,28 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8b44529354f3ca0fbe44794e2dbd0169a8ae6e2cdfa2d6df3fcd0777892ebb85`
+#### `12c9d795d85aa792be67bd42aa564e5c44d0cbf6759b66bf0ae99b2ec4c552d6`
 
 ```dockerfile
-ADD file:eab3c29917290b056db08167d3a9f769c4b4ce46403be2fad083bc2535fb4d03 in /
+ADD file:9ff85de7a936502e83fadeed82d6f11231ce7e842eea23d73f6f5fb7182f1111 in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:13:47 GMT
+-	Created: Tue, 13 Oct 2015 23:31:50 GMT
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 202.6 MB (202609003 bytes)
--	v2 Blob: `sha256:639e9fea509e70fb6c94fbcb30f4bf987de27e46b721cececd8b1516f1d307ae`
--	v2 Content-Length: 72.0 MB (72038796 bytes)
--	v2 Last-Modified: Tue, 14 Jul 2015 11:23:11 GMT
+-	v2 Blob: `sha256:35d9d5d11536c0c6843ecd106dc710b5c54b8198aa28710e73dba2cbe555847f`
+-	v2 Content-Length: 72.0 MB (72038766 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:34:59 GMT
 
 ## `centos:6.6`
 
 ```console
-$ docker pull library/centos@sha256:0e69a5fa0ce3e1490d02f024a04003aa7c49e3bb320e9860ca4cc151a2aca8b1
+$ docker pull library/centos@sha256:34c96b0b91e88dc688d1bd9b4bd0a008d6aca4f8b0125699ea3beea25512b3c0
 ```
 
 -	Total Virtual Size: 202.6 MB (202609003 bytes)
--	Total v2 Content-Length: 72.0 MB (72038828 bytes)
+-	Total v2 Content-Length: 72.0 MB (72038798 bytes)
 
 ### Layers (2)
 
@@ -898,28 +898,28 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8b44529354f3ca0fbe44794e2dbd0169a8ae6e2cdfa2d6df3fcd0777892ebb85`
+#### `12c9d795d85aa792be67bd42aa564e5c44d0cbf6759b66bf0ae99b2ec4c552d6`
 
 ```dockerfile
-ADD file:eab3c29917290b056db08167d3a9f769c4b4ce46403be2fad083bc2535fb4d03 in /
+ADD file:9ff85de7a936502e83fadeed82d6f11231ce7e842eea23d73f6f5fb7182f1111 in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:13:47 GMT
+-	Created: Tue, 13 Oct 2015 23:31:50 GMT
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 202.6 MB (202609003 bytes)
--	v2 Blob: `sha256:639e9fea509e70fb6c94fbcb30f4bf987de27e46b721cececd8b1516f1d307ae`
--	v2 Content-Length: 72.0 MB (72038796 bytes)
--	v2 Last-Modified: Tue, 14 Jul 2015 11:23:11 GMT
+-	v2 Blob: `sha256:35d9d5d11536c0c6843ecd106dc710b5c54b8198aa28710e73dba2cbe555847f`
+-	v2 Content-Length: 72.0 MB (72038766 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:34:59 GMT
 
 ## `centos:centos5.11`
 
 ```console
-$ docker pull library/centos@sha256:e7ea7ca5542f9ee9a59ebe6c737b3899f27d447b75c7b6a84fefe7472db7cba0
+$ docker pull library/centos@sha256:ef99b112fa0aa9359e64967c93bd8990b10a0a548ccfded8a754e63a56f0ebae
 ```
 
 -	Total Virtual Size: 284.2 MB (284151989 bytes)
--	Total v2 Content-Length: 87.1 MB (87107844 bytes)
+-	Total v2 Content-Length: 87.1 MB (87107850 bytes)
 
 ### Layers (2)
 
@@ -936,28 +936,28 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `223843a319cac73d666e66265569d4c3c2f416b8b1c2c0af4391d1541051be35`
+#### `90226a24e71de785ebd02b24b6a67b66fd82aad45c5878fed330b26052caf154`
 
 ```dockerfile
-ADD file:a9e3cd9845a72bb736a449b76e80c8c5a872abba7bcae6fa9e7e602e3c5d0d2c in /
+ADD file:af04a5146dd7c7bd3c824aafb31841934ef4c020ada11789795b24298fb82bca in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:14:00 GMT
+-	Created: Tue, 13 Oct 2015 23:32:13 GMT
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 284.2 MB (284151989 bytes)
--	v2 Blob: `sha256:170adb074514febdd0a2989b950042974e2b79622112af388d52f2c462c4f403`
--	v2 Content-Length: 87.1 MB (87107812 bytes)
--	v2 Last-Modified: Tue, 14 Jul 2015 11:26:14 GMT
+-	v2 Blob: `sha256:708a6d294d631453786086fba37173677d251ed8ba76483d58affc3eeeb742dd`
+-	v2 Content-Length: 87.1 MB (87107818 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:37:37 GMT
 
 ## `centos:5.11`
 
 ```console
-$ docker pull library/centos@sha256:b381bdf84f74a7c8ceab2cea17700cb710d700a7938479ea5bab4f64e440a73f
+$ docker pull library/centos@sha256:0ab6e15f4678f385932aea63e7bc53e091a6507b095f5172164dfda2468909a3
 ```
 
 -	Total Virtual Size: 284.2 MB (284151989 bytes)
--	Total v2 Content-Length: 87.1 MB (87107844 bytes)
+-	Total v2 Content-Length: 87.1 MB (87107850 bytes)
 
 ### Layers (2)
 
@@ -974,16 +974,16 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `223843a319cac73d666e66265569d4c3c2f416b8b1c2c0af4391d1541051be35`
+#### `90226a24e71de785ebd02b24b6a67b66fd82aad45c5878fed330b26052caf154`
 
 ```dockerfile
-ADD file:a9e3cd9845a72bb736a449b76e80c8c5a872abba7bcae6fa9e7e602e3c5d0d2c in /
+ADD file:af04a5146dd7c7bd3c824aafb31841934ef4c020ada11789795b24298fb82bca in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:14:00 GMT
+-	Created: Tue, 13 Oct 2015 23:32:13 GMT
 -	Parent Layer: `f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 284.2 MB (284151989 bytes)
--	v2 Blob: `sha256:170adb074514febdd0a2989b950042974e2b79622112af388d52f2c462c4f403`
--	v2 Content-Length: 87.1 MB (87107812 bytes)
--	v2 Last-Modified: Tue, 14 Jul 2015 11:26:14 GMT
+-	v2 Blob: `sha256:708a6d294d631453786086fba37173677d251ed8ba76483d58affc3eeeb742dd`
+-	v2 Content-Length: 87.1 MB (87107818 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:37:37 GMT

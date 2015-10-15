@@ -7,7 +7,7 @@
 ## `hello-world:latest`
 
 ```console
-$ docker pull library/hello-world@sha256:a68868bfe696c00866942e8f5ca39e3e31b79c1e50feaee4ce5e28df2f051d5c
+$ docker pull library/hello-world@sha256:517f03be3f8169d84711c9ffb2b3235a4d27c1eb4ad147f6248c8040adb93113
 ```
 
 -	Total Virtual Size: 960.0 B
@@ -15,28 +15,28 @@ $ docker pull library/hello-world@sha256:a68868bfe696c00866942e8f5ca39e3e31b79c1
 
 ### Layers (2)
 
-#### `535020c3e8add9d6bb06e5ac15a261e73d9b213d62fb2c14d752b8e189b2b912`
+#### `3f12c794407e68e515ba7f473a744e748ac8a827a2ea8b33855dec564238b2e5`
 
 ```dockerfile
-COPY file:4abd3bff60458ca3b079d7b131ce26b2719055a030dfa96ff827da2b7c7038a7 in /
+COPY file:1ad52e3eaf4327c8f846c76dfc7424152b2347bf7bed5959932fa309d7496afc in /
 ```
 
--	Created: Thu, 06 Aug 2015 23:53:22 GMT
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:47:48 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 960.0 B
 -	v2 Blob: `sha256:03f4658f8b782e12230c1783426bd3bacce651ce582a4ffb6fbbfa2079428ecb`
 -	v2 Content-Length: 601.0 B
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:38:43 GMT
 
-#### `af340544ed62de0680f441c71fa1a80cb084678fed42bae393e543faea3a572c`
+#### `975b84d108f1024953937167506c2935a081c8c55ae9e9f7b7deee118605367f`
 
 ```dockerfile
 CMD ["/hello"]
 ```
 
--	Created: Thu, 06 Aug 2015 23:53:22 GMT
--	Parent Layer: `535020c3e8add9d6bb06e5ac15a261e73d9b213d62fb2c14d752b8e189b2b912`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:47:48 GMT
+-	Parent Layer: `3f12c794407e68e515ba7f473a744e748ac8a827a2ea8b33855dec564238b2e5`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B

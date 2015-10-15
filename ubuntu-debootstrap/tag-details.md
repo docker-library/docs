@@ -18,7 +18,7 @@
 ## `ubuntu-debootstrap:12.04.5`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:e4569c75c515040fe071517efe7e11306ea12af550cc0299e643f3c8b555d757
+$ docker pull library/ubuntu-debootstrap@sha256:bb0823b67fa7f13cfa38dfbaf18ea5b25cc4b8d24aef5b468bf5b9ae7d8dad93
 ```
 
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
@@ -26,28 +26,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:e4569c75c515040fe071517efe7e1130
 
 ### Layers (2)
 
-#### `4945dff8c1280af4a6309b8257d4ccc023216eed0821df00f68137cadab66eb4`
+#### `b8589d2372dc22f577a7be1e8fb60187e5e6dc1de31ad0c911547a315d1bd082`
 
 ```dockerfile
-ADD file:7bf8e349c9470f731c721d24d68367f24ece545ab9418fcfbdbd444db87f86dc in /
+ADD file:1978c4eec755462e5b1b293602ad22cacf2f61392b909537d893e2c054e9a04a in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:22:55 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:35 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 85.8 MB (85781002 bytes)
 -	v2 Blob: `sha256:c2a68515378ac0ab2f47e61f452016afb3d29346539245bceaefe53ea99551c8`
 -	v2 Content-Length: 35.6 MB (35567687 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:54:51 GMT
 
-#### `53f15a6ce5fe35467a22255007141e2914b2149f59363ef4d45c478fb33c34bf`
+#### `6fdc7ecb7bc81b700573ed4a0aad2e5b87140cfa225db85a7a73ea319723ef52`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:22:57 GMT
--	Parent Layer: `4945dff8c1280af4a6309b8257d4ccc023216eed0821df00f68137cadab66eb4`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:38 GMT
+-	Parent Layer: `b8589d2372dc22f577a7be1e8fb60187e5e6dc1de31ad0c911547a315d1bd082`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -56,7 +56,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:12.04`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:e29393083e1d1cedd2440a75be3bad6957a31ada404481f35881440cebdebbd3
+$ docker pull library/ubuntu-debootstrap@sha256:195ea2e225b7c56caa82e7a3c6a667d32fe5abdfa1bcecf5943b8e70b7d779b2
 ```
 
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
@@ -64,28 +64,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:e29393083e1d1cedd2440a75be3bad69
 
 ### Layers (2)
 
-#### `4945dff8c1280af4a6309b8257d4ccc023216eed0821df00f68137cadab66eb4`
+#### `b8589d2372dc22f577a7be1e8fb60187e5e6dc1de31ad0c911547a315d1bd082`
 
 ```dockerfile
-ADD file:7bf8e349c9470f731c721d24d68367f24ece545ab9418fcfbdbd444db87f86dc in /
+ADD file:1978c4eec755462e5b1b293602ad22cacf2f61392b909537d893e2c054e9a04a in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:22:55 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:35 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 85.8 MB (85781002 bytes)
 -	v2 Blob: `sha256:c2a68515378ac0ab2f47e61f452016afb3d29346539245bceaefe53ea99551c8`
 -	v2 Content-Length: 35.6 MB (35567687 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:54:51 GMT
 
-#### `53f15a6ce5fe35467a22255007141e2914b2149f59363ef4d45c478fb33c34bf`
+#### `6fdc7ecb7bc81b700573ed4a0aad2e5b87140cfa225db85a7a73ea319723ef52`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:22:57 GMT
--	Parent Layer: `4945dff8c1280af4a6309b8257d4ccc023216eed0821df00f68137cadab66eb4`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:38 GMT
+-	Parent Layer: `b8589d2372dc22f577a7be1e8fb60187e5e6dc1de31ad0c911547a315d1bd082`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -94,7 +94,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:precise`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:a674323d192c298ec6eb458918b4867bbef7fa0efce2c0084ee969771301c148
+$ docker pull library/ubuntu-debootstrap@sha256:5e02524f470f51550c82b03f9013e2d6bb10d4b0fc32a303b189d4a33dd6244b
 ```
 
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
@@ -102,28 +102,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:a674323d192c298ec6eb458918b4867b
 
 ### Layers (2)
 
-#### `4945dff8c1280af4a6309b8257d4ccc023216eed0821df00f68137cadab66eb4`
+#### `b8589d2372dc22f577a7be1e8fb60187e5e6dc1de31ad0c911547a315d1bd082`
 
 ```dockerfile
-ADD file:7bf8e349c9470f731c721d24d68367f24ece545ab9418fcfbdbd444db87f86dc in /
+ADD file:1978c4eec755462e5b1b293602ad22cacf2f61392b909537d893e2c054e9a04a in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:22:55 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:35 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 85.8 MB (85781002 bytes)
 -	v2 Blob: `sha256:c2a68515378ac0ab2f47e61f452016afb3d29346539245bceaefe53ea99551c8`
 -	v2 Content-Length: 35.6 MB (35567687 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:54:51 GMT
 
-#### `53f15a6ce5fe35467a22255007141e2914b2149f59363ef4d45c478fb33c34bf`
+#### `6fdc7ecb7bc81b700573ed4a0aad2e5b87140cfa225db85a7a73ea319723ef52`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:22:57 GMT
--	Parent Layer: `4945dff8c1280af4a6309b8257d4ccc023216eed0821df00f68137cadab66eb4`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:38 GMT
+-	Parent Layer: `b8589d2372dc22f577a7be1e8fb60187e5e6dc1de31ad0c911547a315d1bd082`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -132,7 +132,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:14.04.3`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:424efaa2a90d099a81a829d3b77674f4f7423527d552fe587d239755cd461a71
+$ docker pull library/ubuntu-debootstrap@sha256:fabe31b98a92aae2440e51219ce6559a84272cf3fc8277eec92101213cb43dc9
 ```
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
@@ -140,28 +140,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:424efaa2a90d099a81a829d3b77674f4
 
 ### Layers (2)
 
-#### `29abf451e7772a3ab619e3de9669154be6b28242e5144e07fe80a19e2d585df5`
+#### `095996d36002d967f651728a33b433bc7221629102b8328b932166f901b56ddb`
 
 ```dockerfile
-ADD file:432c64a961ab90452c8438718f01a7b3bb57ec2dd8f31fe88c96ca7a1356a370 in /
+ADD file:1d6c943b8cfe3ff8248653657d4bdd832f647e03df1925d1df6444c1b6e7a4e0 in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:15 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:56 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 87.1 MB (87087291 bytes)
 -	v2 Blob: `sha256:c02c7df4a131d5f0376e1c7f1648add5f443facc8e18c7deeb0e85af7308ec76`
 -	v2 Content-Length: 34.9 MB (34865160 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:55:51 GMT
 
-#### `1b166211e0552cf6038d978fd7ec7a8c856ed65192f5bfaf825de817991e20af`
+#### `cb54a9ba0f34d140e8a03e7b9bf736a891b5526edc7b49f7c910bdf5e5cf5162`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:17 GMT
--	Parent Layer: `29abf451e7772a3ab619e3de9669154be6b28242e5144e07fe80a19e2d585df5`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:58 GMT
+-	Parent Layer: `095996d36002d967f651728a33b433bc7221629102b8328b932166f901b56ddb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -170,7 +170,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:14.04`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:7c1f49aafb341170af2899b395ab42a6b912b5a52f3275c2e071c822bceb0aef
+$ docker pull library/ubuntu-debootstrap@sha256:b94ca5f9b6b6080a5e42c6ac730c32ccb19caf424836c111c511a37e9d6af940
 ```
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
@@ -178,28 +178,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:7c1f49aafb341170af2899b395ab42a6
 
 ### Layers (2)
 
-#### `29abf451e7772a3ab619e3de9669154be6b28242e5144e07fe80a19e2d585df5`
+#### `095996d36002d967f651728a33b433bc7221629102b8328b932166f901b56ddb`
 
 ```dockerfile
-ADD file:432c64a961ab90452c8438718f01a7b3bb57ec2dd8f31fe88c96ca7a1356a370 in /
+ADD file:1d6c943b8cfe3ff8248653657d4bdd832f647e03df1925d1df6444c1b6e7a4e0 in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:15 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:56 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 87.1 MB (87087291 bytes)
 -	v2 Blob: `sha256:c02c7df4a131d5f0376e1c7f1648add5f443facc8e18c7deeb0e85af7308ec76`
 -	v2 Content-Length: 34.9 MB (34865160 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:55:51 GMT
 
-#### `1b166211e0552cf6038d978fd7ec7a8c856ed65192f5bfaf825de817991e20af`
+#### `cb54a9ba0f34d140e8a03e7b9bf736a891b5526edc7b49f7c910bdf5e5cf5162`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:17 GMT
--	Parent Layer: `29abf451e7772a3ab619e3de9669154be6b28242e5144e07fe80a19e2d585df5`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:58 GMT
+-	Parent Layer: `095996d36002d967f651728a33b433bc7221629102b8328b932166f901b56ddb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -208,7 +208,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:trusty`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:f38e6de96048ed235eb7f2e93ade1ce4911994b481bd59d687160f3b3ece67fc
+$ docker pull library/ubuntu-debootstrap@sha256:0cdb6a206afb65524961ac5bbbfd6b1c0678c69f61f8a6b0d1f02f7de02f3a54
 ```
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
@@ -216,28 +216,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:f38e6de96048ed235eb7f2e93ade1ce4
 
 ### Layers (2)
 
-#### `29abf451e7772a3ab619e3de9669154be6b28242e5144e07fe80a19e2d585df5`
+#### `095996d36002d967f651728a33b433bc7221629102b8328b932166f901b56ddb`
 
 ```dockerfile
-ADD file:432c64a961ab90452c8438718f01a7b3bb57ec2dd8f31fe88c96ca7a1356a370 in /
+ADD file:1d6c943b8cfe3ff8248653657d4bdd832f647e03df1925d1df6444c1b6e7a4e0 in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:15 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:56 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 87.1 MB (87087291 bytes)
 -	v2 Blob: `sha256:c02c7df4a131d5f0376e1c7f1648add5f443facc8e18c7deeb0e85af7308ec76`
 -	v2 Content-Length: 34.9 MB (34865160 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:55:51 GMT
 
-#### `1b166211e0552cf6038d978fd7ec7a8c856ed65192f5bfaf825de817991e20af`
+#### `cb54a9ba0f34d140e8a03e7b9bf736a891b5526edc7b49f7c910bdf5e5cf5162`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:17 GMT
--	Parent Layer: `29abf451e7772a3ab619e3de9669154be6b28242e5144e07fe80a19e2d585df5`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:58 GMT
+-	Parent Layer: `095996d36002d967f651728a33b433bc7221629102b8328b932166f901b56ddb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -246,7 +246,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:latest`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:9eada1f7a381fcb852c332f46c6ebc8c166344ac4938d5645ba4865d4edc3483
+$ docker pull library/ubuntu-debootstrap@sha256:ed78270c3fc1aeaae5d4c1b25fea78d6e852468aedcbbc6a51a784d38f81183a
 ```
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
@@ -254,28 +254,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:9eada1f7a381fcb852c332f46c6ebc8c
 
 ### Layers (2)
 
-#### `29abf451e7772a3ab619e3de9669154be6b28242e5144e07fe80a19e2d585df5`
+#### `095996d36002d967f651728a33b433bc7221629102b8328b932166f901b56ddb`
 
 ```dockerfile
-ADD file:432c64a961ab90452c8438718f01a7b3bb57ec2dd8f31fe88c96ca7a1356a370 in /
+ADD file:1d6c943b8cfe3ff8248653657d4bdd832f647e03df1925d1df6444c1b6e7a4e0 in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:15 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:56 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 87.1 MB (87087291 bytes)
 -	v2 Blob: `sha256:c02c7df4a131d5f0376e1c7f1648add5f443facc8e18c7deeb0e85af7308ec76`
 -	v2 Content-Length: 34.9 MB (34865160 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:55:51 GMT
 
-#### `1b166211e0552cf6038d978fd7ec7a8c856ed65192f5bfaf825de817991e20af`
+#### `cb54a9ba0f34d140e8a03e7b9bf736a891b5526edc7b49f7c910bdf5e5cf5162`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:17 GMT
--	Parent Layer: `29abf451e7772a3ab619e3de9669154be6b28242e5144e07fe80a19e2d585df5`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:34:58 GMT
+-	Parent Layer: `095996d36002d967f651728a33b433bc7221629102b8328b932166f901b56ddb`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -284,7 +284,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:15.04`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:fd77129188e231cf4ac2235503853403bbd68284297a454a1f9d7079ea58d3da
+$ docker pull library/ubuntu-debootstrap@sha256:18eae0c01e1d16d625cc14f837f552c31ef3cf395996acd3c9843875a97b937e
 ```
 
 -	Total Virtual Size: 110.2 MB (110150591 bytes)
@@ -292,28 +292,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:fd77129188e231cf4ac2235503853403
 
 ### Layers (2)
 
-#### `cff393a042a7789f3dfcf5e3f033bddbe6d3a0ec6c72bb8595f3dde5b396189f`
+#### `27d17f8552820a51ed6c213588d08550c5290ccd9cfdb97fae584ede05a63ca0`
 
 ```dockerfile
-ADD file:97d12c39ca70d737d0e12b5fb1571c596fb1f8b63a090a9caca7ae77ea4b1907 in /
+ADD file:bf00a3695b63c5fe755de5df708d251dd2052aa1304a9a1172ad2fc79581a0e3 in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:40 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:35:23 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 110.2 MB (110150591 bytes)
 -	v2 Blob: `sha256:ff39fe51ee025b2f3d9b2da172201afe1a0e693f9dc00f7eb7f6a84aa22f7716`
 -	v2 Content-Length: 43.5 MB (43452554 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:57:03 GMT
 
-#### `b401c53111a2e846d85f8d16a606fa68d1d1a5a156fa39b163084817d780806c`
+#### `a5debb37772bf36ef1410420249a479a0bb32b06589524e74aeb65361a21fc19`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:42 GMT
--	Parent Layer: `cff393a042a7789f3dfcf5e3f033bddbe6d3a0ec6c72bb8595f3dde5b396189f`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:35:25 GMT
+-	Parent Layer: `27d17f8552820a51ed6c213588d08550c5290ccd9cfdb97fae584ede05a63ca0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -322,7 +322,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:vivid`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:c370ca75001734340cd02825a906cd50fbe83d931c780557551e90cd0fe8b097
+$ docker pull library/ubuntu-debootstrap@sha256:86782c9cc3520afb214061b577c2662686d87ad1a2175bcb604ca46f081026a2
 ```
 
 -	Total Virtual Size: 110.2 MB (110150591 bytes)
@@ -330,28 +330,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:c370ca75001734340cd02825a906cd50
 
 ### Layers (2)
 
-#### `cff393a042a7789f3dfcf5e3f033bddbe6d3a0ec6c72bb8595f3dde5b396189f`
+#### `27d17f8552820a51ed6c213588d08550c5290ccd9cfdb97fae584ede05a63ca0`
 
 ```dockerfile
-ADD file:97d12c39ca70d737d0e12b5fb1571c596fb1f8b63a090a9caca7ae77ea4b1907 in /
+ADD file:bf00a3695b63c5fe755de5df708d251dd2052aa1304a9a1172ad2fc79581a0e3 in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:40 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:35:23 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 110.2 MB (110150591 bytes)
 -	v2 Blob: `sha256:ff39fe51ee025b2f3d9b2da172201afe1a0e693f9dc00f7eb7f6a84aa22f7716`
 -	v2 Content-Length: 43.5 MB (43452554 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:57:03 GMT
 
-#### `b401c53111a2e846d85f8d16a606fa68d1d1a5a156fa39b163084817d780806c`
+#### `a5debb37772bf36ef1410420249a479a0bb32b06589524e74aeb65361a21fc19`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:42 GMT
--	Parent Layer: `cff393a042a7789f3dfcf5e3f033bddbe6d3a0ec6c72bb8595f3dde5b396189f`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:35:25 GMT
+-	Parent Layer: `27d17f8552820a51ed6c213588d08550c5290ccd9cfdb97fae584ede05a63ca0`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -360,7 +360,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:15.10`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:c32ff0fdd370791376b41fa2716014746d75d8d0dfcb7113a1f49ac88fd7f74e
+$ docker pull library/ubuntu-debootstrap@sha256:2faebad82abe380c38477a7891b8e911cca87230ca645c031e133787b3ffd90c
 ```
 
 -	Total Virtual Size: 111.0 MB (110989448 bytes)
@@ -368,28 +368,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:c32ff0fdd370791376b41fa271601474
 
 ### Layers (2)
 
-#### `76d6f4aab2ecc8ba860df310bd0df92d34b78953d6529c2e28f4c80b8aa3b3dc`
+#### `0f04a7272fd2cac6c3d73bf332f7acf0f31a2c6e951fde1c2c7a7146a01ac812`
 
 ```dockerfile
-ADD file:446171f50eb77bcbd913e66998a1aa4c9461d05c1c0d3f0a55604828c2db39d5 in /
+ADD file:699c6d39fef26eb23c346031700b5bdb1a5c68423e8c2f482b4c5e8b2b682322 in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:55 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:35:38 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 111.0 MB (110989448 bytes)
 -	v2 Blob: `sha256:4be0eda8c0e03d6d036656cef154dc8b1475312ec8ccbee5b2b5440ddda3579f`
 -	v2 Content-Length: 44.4 MB (44394296 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:58:02 GMT
 
-#### `092c2278b9ebda851b56722ac9f338f67219754751acaf5d14a08d229129af34`
+#### `23c445f92f1274dc3fad69d0781046e93bfdfb273ce799416b0ff8e05956a170`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:56 GMT
--	Parent Layer: `76d6f4aab2ecc8ba860df310bd0df92d34b78953d6529c2e28f4c80b8aa3b3dc`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:35:41 GMT
+-	Parent Layer: `0f04a7272fd2cac6c3d73bf332f7acf0f31a2c6e951fde1c2c7a7146a01ac812`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -398,7 +398,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:wily`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:17d42faac0b5b219e55973b9344bf2c1b445b133590cf56d2db40dee0c54f57a
+$ docker pull library/ubuntu-debootstrap@sha256:100d9a11568c60151fec667a12aa708cc02e4d6f864d5f216bef58f8b995862f
 ```
 
 -	Total Virtual Size: 111.0 MB (110989448 bytes)
@@ -406,28 +406,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:17d42faac0b5b219e55973b9344bf2c1
 
 ### Layers (2)
 
-#### `76d6f4aab2ecc8ba860df310bd0df92d34b78953d6529c2e28f4c80b8aa3b3dc`
+#### `0f04a7272fd2cac6c3d73bf332f7acf0f31a2c6e951fde1c2c7a7146a01ac812`
 
 ```dockerfile
-ADD file:446171f50eb77bcbd913e66998a1aa4c9461d05c1c0d3f0a55604828c2db39d5 in /
+ADD file:699c6d39fef26eb23c346031700b5bdb1a5c68423e8c2f482b4c5e8b2b682322 in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:55 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:35:38 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 111.0 MB (110989448 bytes)
 -	v2 Blob: `sha256:4be0eda8c0e03d6d036656cef154dc8b1475312ec8ccbee5b2b5440ddda3579f`
 -	v2 Content-Length: 44.4 MB (44394296 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:58:02 GMT
 
-#### `092c2278b9ebda851b56722ac9f338f67219754751acaf5d14a08d229129af34`
+#### `23c445f92f1274dc3fad69d0781046e93bfdfb273ce799416b0ff8e05956a170`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:23:56 GMT
--	Parent Layer: `76d6f4aab2ecc8ba860df310bd0df92d34b78953d6529c2e28f4c80b8aa3b3dc`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:35:41 GMT
+-	Parent Layer: `0f04a7272fd2cac6c3d73bf332f7acf0f31a2c6e951fde1c2c7a7146a01ac812`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -436,7 +436,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:devel`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:73e4470cd382514bc866f8e90a80e2e5c3b015f6a9ba1f311ff4a495880c9002
+$ docker pull library/ubuntu-debootstrap@sha256:a4dd17584661afb0d1baa5a5db076ddab0e6a0e4746be2796479e14c94df5231
 ```
 
 -	Total Virtual Size: 111.0 MB (110989451 bytes)
@@ -444,28 +444,28 @@ $ docker pull library/ubuntu-debootstrap@sha256:73e4470cd382514bc866f8e90a80e2e5
 
 ### Layers (2)
 
-#### `fe98a9073570c7c209550534101f5b704151cdafbdeb57670b1d4126444b30c2`
+#### `d9d1623b896a4efc9e3e9e0a9f9593cc047e517eceeb6394a75e32451f440f8a`
 
 ```dockerfile
-ADD file:2eb4789c578841037ec00651df9c6b74461158a34774bc28f85aada0014c50d3 in /
+ADD file:45d6e078207f4b112dfb138450e9b60c716b0345c82f64bb76007b2cb85b8f7b in /
 ```
 
--	Created: Thu, 20 Aug 2015 23:24:08 GMT
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:35:54 GMT
+-	Docker Version: 1.8.2
 -	Virtual Size: 111.0 MB (110989451 bytes)
 -	v2 Blob: `sha256:5d7901ce0c90f11565c90aeadbacd96b3972481a48ad12c44e99fed160b1ba07`
 -	v2 Content-Length: 44.4 MB (44394530 bytes)
 -	v2 Last-Modified: Thu, 20 Aug 2015 23:59:00 GMT
 
-#### `49f7b5a26aa2148ba679cece422c71e35d32688a8ffa38999fb1dd05d6a8d699`
+#### `20f31841f3ce625f28a6c5f253dd444c5bfa317f5f77ac190843e2db243e5461`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 23:24:10 GMT
--	Parent Layer: `fe98a9073570c7c209550534101f5b704151cdafbdeb57670b1d4126444b30c2`
--	Docker Version: 1.7.1
+-	Created: Wed, 14 Oct 2015 03:35:56 GMT
+-	Parent Layer: `d9d1623b896a4efc9e3e9e0a9f9593cc047e517eceeb6394a75e32451f440f8a`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B

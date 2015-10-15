@@ -10,7 +10,7 @@
 ## `opensuse:13.2`
 
 ```console
-$ docker pull library/opensuse@sha256:b9ebaf54a450bcd400bcafea93b53aa3debcc787df7805a5a7e2d0db3457163f
+$ docker pull library/opensuse@sha256:2a1926ee1be895d8f3f5fb3a2772f616ecd436dab295a1d947cd766554dcdcb3
 ```
 
 -	Total Virtual Size: 94.0 MB (94001408 bytes)
@@ -31,15 +31,15 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d6b241b32a2ddad57e176640fc14b596e1945bc822396711877667f7bb388b43`
+#### `085130dff90935a5727d4e4a6b3c7f2cd6996fc3e053003d2a1bce92ab36408d`
 
 ```dockerfile
-ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
+ADD file:77238259bbdd1e0435a06882c6d40177f1cd734742fee951a07edb1369fbb9b9 in /
 ```
 
--	Created: Tue, 28 Jul 2015 17:43:34 GMT
+-	Created: Wed, 14 Oct 2015 01:25:36 GMT
 -	Parent Layer: `5b8dd08af89b84564b09fc0dfe96cfdfee0ff650d50cf4f3683c6367a1295317`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 94.0 MB (94001408 bytes)
 -	v2 Blob: `sha256:329ead028520b658bf02feaa88ecf872c8fd04cb15ea9e33f704f6c15881911c`
 -	v2 Content-Length: 36.9 MB (36945296 bytes)
@@ -48,7 +48,7 @@ ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
 ## `opensuse:harlequin`
 
 ```console
-$ docker pull library/opensuse@sha256:c14fc4d02f768fac4ce4f196ac1fa191dcdaaad82b7461cc1fdff65874d3d7b5
+$ docker pull library/opensuse@sha256:4232bbc46ea60b988908fd2ecd8b4dbb2d6541540d44dbfd07906db1da372e7c
 ```
 
 -	Total Virtual Size: 94.0 MB (94001408 bytes)
@@ -69,15 +69,15 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d6b241b32a2ddad57e176640fc14b596e1945bc822396711877667f7bb388b43`
+#### `085130dff90935a5727d4e4a6b3c7f2cd6996fc3e053003d2a1bce92ab36408d`
 
 ```dockerfile
-ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
+ADD file:77238259bbdd1e0435a06882c6d40177f1cd734742fee951a07edb1369fbb9b9 in /
 ```
 
--	Created: Tue, 28 Jul 2015 17:43:34 GMT
+-	Created: Wed, 14 Oct 2015 01:25:36 GMT
 -	Parent Layer: `5b8dd08af89b84564b09fc0dfe96cfdfee0ff650d50cf4f3683c6367a1295317`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 94.0 MB (94001408 bytes)
 -	v2 Blob: `sha256:329ead028520b658bf02feaa88ecf872c8fd04cb15ea9e33f704f6c15881911c`
 -	v2 Content-Length: 36.9 MB (36945296 bytes)
@@ -86,7 +86,7 @@ ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
 ## `opensuse:latest`
 
 ```console
-$ docker pull library/opensuse@sha256:d5ee5ba07134da6cece6ce784faa261efb4edd87b215bf8a7f8d9765b45878dd
+$ docker pull library/opensuse@sha256:11b948cec8912616c12403c90fe45cdb8483e06ccac011c114dbf19bd0c48efd
 ```
 
 -	Total Virtual Size: 94.0 MB (94001408 bytes)
@@ -107,15 +107,15 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d6b241b32a2ddad57e176640fc14b596e1945bc822396711877667f7bb388b43`
+#### `085130dff90935a5727d4e4a6b3c7f2cd6996fc3e053003d2a1bce92ab36408d`
 
 ```dockerfile
-ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
+ADD file:77238259bbdd1e0435a06882c6d40177f1cd734742fee951a07edb1369fbb9b9 in /
 ```
 
--	Created: Tue, 28 Jul 2015 17:43:34 GMT
+-	Created: Wed, 14 Oct 2015 01:25:36 GMT
 -	Parent Layer: `5b8dd08af89b84564b09fc0dfe96cfdfee0ff650d50cf4f3683c6367a1295317`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 94.0 MB (94001408 bytes)
 -	v2 Blob: `sha256:329ead028520b658bf02feaa88ecf872c8fd04cb15ea9e33f704f6c15881911c`
 -	v2 Content-Length: 36.9 MB (36945296 bytes)
@@ -124,11 +124,11 @@ ADD file:a20504e5a54486b808113609f35345150d8590ddcb32dbb4c1a12a1ed7a6314c in /
 ## `opensuse:tumbleweed`
 
 ```console
-$ docker pull library/opensuse@sha256:efb43c554a1b261719e88e05ccb6d7911fb843d6ff90e1d3dadb7b599833dd15
+$ docker pull library/opensuse@sha256:db4b115c57973e75abbf8e1103256187da03a9473f61be5e3ebdf88209d16bde
 ```
 
--	Total Virtual Size: 106.6 MB (106595103 bytes)
--	Total v2 Content-Length: 41.9 MB (41870896 bytes)
+-	Total Virtual Size: 106.6 MB (106595102 bytes)
+-	Total v2 Content-Length: 41.9 MB (41870910 bytes)
 
 ### Layers (3)
 
@@ -145,30 +145,30 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1b8f0a8c9de87e4f4505d8266ffd2b37e77eb312ff9b2db6177ccb6883b18a03`
+#### `1f9bbfc8294b6322631b8f81ef0e02fedbd0329011ce444d25817aa505bbae58`
 
 ```dockerfile
-ADD file:3fdf0b4c015ae94d7f7a64ab05aa9906e44cc13cb58f30fb60371c83aace67a9 in /
+ADD file:f9b5b7b49aef42d661cc688ebb454044b20cfb494f1c51c273f628d74b15da42 in /
 ```
 
--	Created: Tue, 28 Jul 2015 17:44:16 GMT
+-	Created: Wed, 14 Oct 2015 01:25:57 GMT
 -	Parent Layer: `5b8dd08af89b84564b09fc0dfe96cfdfee0ff650d50cf4f3683c6367a1295317`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 106.2 MB (106249007 bytes)
 -	v2 Blob: `sha256:c2cb293dc06a70412c4878904c8270a630e73422ffc823404bb35ee1b81ed1cb`
 -	v2 Content-Length: 41.8 MB (41761513 bytes)
 -	v2 Last-Modified: Tue, 28 Jul 2015 17:46:05 GMT
 
-#### `eb4029861e83a46937452888f092d0c2bcf74ef366afd2c6fbfeb17cde752266`
+#### `c89cafff3e64e0e2a6a16cf9b9a2d97311662a8c5f0a9a168884488907a5f6f0`
 
 ```dockerfile
 RUN zypper -n --gpg-auto-import-keys ar http://download.opensuse.org/factory/repo/oss/ OSS
 ```
 
--	Created: Tue, 28 Jul 2015 17:44:23 GMT
--	Parent Layer: `1b8f0a8c9de87e4f4505d8266ffd2b37e77eb312ff9b2db6177ccb6883b18a03`
--	Docker Version: 1.7.1
--	Virtual Size: 346.1 KB (346096 bytes)
--	v2 Blob: `sha256:b54b640e6c6bb017fa8fbb8e378e8a9ec5a38d8bc0253e6517552a2f147f1499`
--	v2 Content-Length: 109.4 KB (109351 bytes)
--	v2 Last-Modified: Tue, 28 Jul 2015 17:45:42 GMT
+-	Created: Wed, 14 Oct 2015 01:26:03 GMT
+-	Parent Layer: `1f9bbfc8294b6322631b8f81ef0e02fedbd0329011ce444d25817aa505bbae58`
+-	Docker Version: 1.8.2
+-	Virtual Size: 346.1 KB (346095 bytes)
+-	v2 Blob: `sha256:02315fe89c2726a50c5eae288760a854d624c04d118ab1fa9ccdf56e6c8040af`
+-	v2 Content-Length: 109.4 KB (109365 bytes)
+-	v2 Last-Modified: Thu, 15 Oct 2015 04:22:55 GMT

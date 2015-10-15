@@ -8,7 +8,7 @@
 ## `cirros:latest`
 
 ```console
-$ docker pull library/cirros@sha256:05dc8ce8beb485826be45b80130d0e8693144bdec091d2674d71370011220229
+$ docker pull library/cirros@sha256:b58ef09fb83e2b211b82066a6ab43e9a6f3b8237dfb3e0a459d013ab2fd1321c
 ```
 
 -	Total Virtual Size: 7.7 MB (7698435 bytes)
@@ -29,57 +29,57 @@ MAINTAINER Eric Windisch <ewindisch@docker.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8dd3dd210e719529104e58a94a776b5863ecd6a2f2583251229c56581d84a9e5`
+#### `3e9defb0efcc8d4bfc0af55b0f4043cb627fd86b877330f94001d824d3336ce6`
 
 ```dockerfile
-ADD file:aae7f8c710cc0b18c5ae916053a5f1aac8134bb9560351f050f8dd4f9ca02513 in /
+ADD file:31b7d60ecb46a910225aabb36376a1df2376dd86433a28b24df3f67bb2d4d618 in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:14:10 GMT
+-	Created: Tue, 13 Oct 2015 23:32:33 GMT
 -	Parent Layer: `a6019b6fb4685230cf83afd7bccc26e945f83f64024883add6710e78072852a8`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 7.7 MB (7696146 bytes)
 -	v2 Blob: `sha256:78f3e58e2da9224cc693e476556047a957225ec4ef911a38f6cb05adea713035`
 -	v2 Content-Length: 3.5 MB (3527868 bytes)
 -	v2 Last-Modified: Fri, 17 Apr 2015 01:21:45 GMT
 
-#### `5292a1d619f525f6367ad3105866f1156aa6316d95ef7ae0512324a04824b13a`
+#### `ac86fdec5230216c8b6d7541506887c2daf8c2998092f2773f5d44323daf6a99`
 
 ```dockerfile
 RUN rm /etc/rc3.d/S40-network
 ```
 
--	Created: Wed, 22 Apr 2015 05:14:11 GMT
--	Parent Layer: `8dd3dd210e719529104e58a94a776b5863ecd6a2f2583251229c56581d84a9e5`
--	Docker Version: 1.6.0
+-	Created: Tue, 13 Oct 2015 23:32:35 GMT
+-	Parent Layer: `3e9defb0efcc8d4bfc0af55b0f4043cb627fd86b877330f94001d824d3336ce6`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:51e8104299b48c455f195074ed7bfe71ab32abbfd4cccbb26c0d8ce53f2daca3`
+-	v2 Blob: `sha256:4aaa72e15498ecbac1d4cf825041a9526ad9c3e683340522d45020eeed2e63de`
 -	v2 Content-Length: 152.0 B
--	v2 Last-Modified: Wed, 22 Apr 2015 22:18:57 GMT
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:39:28 GMT
 
-#### `6470003c1d9c614f5d356a58bdd412fcaf906fd3f0efbe99753efdca16a12bdf`
+#### `28575877dc7ea2b6df807d4a85030c808d4c42978f147ef7170395f6b24bb57a`
 
 ```dockerfile
 RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit
 ```
 
--	Created: Wed, 22 Apr 2015 05:14:11 GMT
--	Parent Layer: `5292a1d619f525f6367ad3105866f1156aa6316d95ef7ae0512324a04824b13a`
--	Docker Version: 1.6.0
+-	Created: Tue, 13 Oct 2015 23:32:36 GMT
+-	Parent Layer: `ac86fdec5230216c8b6d7541506887c2daf8c2998092f2773f5d44323daf6a99`
+-	Docker Version: 1.8.2
 -	Virtual Size: 2.3 KB (2289 bytes)
--	v2 Blob: `sha256:861994d1c99f972260a10bb97bf2bdf901e4805caa1a5c09d867bd76534191a2`
+-	v2 Blob: `sha256:0fbcaa8da3adaf959c0d33cc62528831a3b21c5b27290f694d02e7f819efab1b`
 -	v2 Content-Length: 1.2 KB (1231 bytes)
--	v2 Last-Modified: Wed, 22 Apr 2015 22:18:46 GMT
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:39:23 GMT
 
-#### `d8de71c04044730e474f1472eaa78030c6d3b1c204642eaaa5cd8b6e67f36d62`
+#### `37e06986c438630213a63bc5e104d2558eb38d246ca1dcd45504187c2db2a951`
 
 ```dockerfile
 CMD ["/sbin/init"]
 ```
 
--	Created: Wed, 22 Apr 2015 05:14:11 GMT
--	Parent Layer: `6470003c1d9c614f5d356a58bdd412fcaf906fd3f0efbe99753efdca16a12bdf`
--	Docker Version: 1.6.0
+-	Created: Tue, 13 Oct 2015 23:32:37 GMT
+-	Parent Layer: `28575877dc7ea2b6df807d4a85030c808d4c42978f147ef7170395f6b24bb57a`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -88,7 +88,7 @@ CMD ["/sbin/init"]
 ## `cirros:0.3.3`
 
 ```console
-$ docker pull library/cirros@sha256:f18ca05f074c0d2a10f5d94a3541b201803a00b8cadc6aa52d877384f6a8c0ac
+$ docker pull library/cirros@sha256:a8d0739942b7ba36086e815f1e05f1ab54d07bf682b24e60daebddacbf2cda5d
 ```
 
 -	Total Virtual Size: 7.7 MB (7698435 bytes)
@@ -109,57 +109,57 @@ MAINTAINER Eric Windisch <ewindisch@docker.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8dd3dd210e719529104e58a94a776b5863ecd6a2f2583251229c56581d84a9e5`
+#### `3e9defb0efcc8d4bfc0af55b0f4043cb627fd86b877330f94001d824d3336ce6`
 
 ```dockerfile
-ADD file:aae7f8c710cc0b18c5ae916053a5f1aac8134bb9560351f050f8dd4f9ca02513 in /
+ADD file:31b7d60ecb46a910225aabb36376a1df2376dd86433a28b24df3f67bb2d4d618 in /
 ```
 
--	Created: Wed, 22 Apr 2015 05:14:10 GMT
+-	Created: Tue, 13 Oct 2015 23:32:33 GMT
 -	Parent Layer: `a6019b6fb4685230cf83afd7bccc26e945f83f64024883add6710e78072852a8`
--	Docker Version: 1.6.0
+-	Docker Version: 1.8.2
 -	Virtual Size: 7.7 MB (7696146 bytes)
 -	v2 Blob: `sha256:78f3e58e2da9224cc693e476556047a957225ec4ef911a38f6cb05adea713035`
 -	v2 Content-Length: 3.5 MB (3527868 bytes)
 -	v2 Last-Modified: Fri, 17 Apr 2015 01:21:45 GMT
 
-#### `5292a1d619f525f6367ad3105866f1156aa6316d95ef7ae0512324a04824b13a`
+#### `ac86fdec5230216c8b6d7541506887c2daf8c2998092f2773f5d44323daf6a99`
 
 ```dockerfile
 RUN rm /etc/rc3.d/S40-network
 ```
 
--	Created: Wed, 22 Apr 2015 05:14:11 GMT
--	Parent Layer: `8dd3dd210e719529104e58a94a776b5863ecd6a2f2583251229c56581d84a9e5`
--	Docker Version: 1.6.0
+-	Created: Tue, 13 Oct 2015 23:32:35 GMT
+-	Parent Layer: `3e9defb0efcc8d4bfc0af55b0f4043cb627fd86b877330f94001d824d3336ce6`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:51e8104299b48c455f195074ed7bfe71ab32abbfd4cccbb26c0d8ce53f2daca3`
+-	v2 Blob: `sha256:4aaa72e15498ecbac1d4cf825041a9526ad9c3e683340522d45020eeed2e63de`
 -	v2 Content-Length: 152.0 B
--	v2 Last-Modified: Wed, 22 Apr 2015 22:18:57 GMT
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:39:28 GMT
 
-#### `6470003c1d9c614f5d356a58bdd412fcaf906fd3f0efbe99753efdca16a12bdf`
+#### `28575877dc7ea2b6df807d4a85030c808d4c42978f147ef7170395f6b24bb57a`
 
 ```dockerfile
 RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit
 ```
 
--	Created: Wed, 22 Apr 2015 05:14:11 GMT
--	Parent Layer: `5292a1d619f525f6367ad3105866f1156aa6316d95ef7ae0512324a04824b13a`
--	Docker Version: 1.6.0
+-	Created: Tue, 13 Oct 2015 23:32:36 GMT
+-	Parent Layer: `ac86fdec5230216c8b6d7541506887c2daf8c2998092f2773f5d44323daf6a99`
+-	Docker Version: 1.8.2
 -	Virtual Size: 2.3 KB (2289 bytes)
--	v2 Blob: `sha256:861994d1c99f972260a10bb97bf2bdf901e4805caa1a5c09d867bd76534191a2`
+-	v2 Blob: `sha256:0fbcaa8da3adaf959c0d33cc62528831a3b21c5b27290f694d02e7f819efab1b`
 -	v2 Content-Length: 1.2 KB (1231 bytes)
--	v2 Last-Modified: Wed, 22 Apr 2015 22:18:46 GMT
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:39:23 GMT
 
-#### `d8de71c04044730e474f1472eaa78030c6d3b1c204642eaaa5cd8b6e67f36d62`
+#### `37e06986c438630213a63bc5e104d2558eb38d246ca1dcd45504187c2db2a951`
 
 ```dockerfile
 CMD ["/sbin/init"]
 ```
 
--	Created: Wed, 22 Apr 2015 05:14:11 GMT
--	Parent Layer: `6470003c1d9c614f5d356a58bdd412fcaf906fd3f0efbe99753efdca16a12bdf`
--	Docker Version: 1.6.0
+-	Created: Tue, 13 Oct 2015 23:32:37 GMT
+-	Parent Layer: `28575877dc7ea2b6df807d4a85030c808d4c42978f147ef7170395f6b24bb57a`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B

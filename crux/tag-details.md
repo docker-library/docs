@@ -8,7 +8,7 @@
 ## `crux:latest`
 
 ```console
-$ docker pull library/crux@sha256:9436af2ebae0264205bf412ba9e81cf88555dad5e6aa36c3a6ab14ba88f1b8f1
+$ docker pull library/crux@sha256:cf8e4ce71f9957b1f58e1d3dfc6e9747a514d5eb473c5b3a7d5a6a02dd8950b3
 ```
 
 -	Total Virtual Size: 341.7 MB (341729815 bytes)
@@ -29,29 +29,29 @@ MAINTAINER James Mills, prologic at shortcircuit dot net dot au
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `afa8b7119c19336e1759b6ef96e8185334f40564804d97b2d468fa4a213ce874`
+#### `638bccd2da44cbac9768f1f955adf7e7df4a717b4f902951e9076ce9fcd3f3c3`
 
 ```dockerfile
-ADD file:e6755159b1e64cae8a997337f7d56f1b4c93668c57758d1c0074ace6f41eb27c in /
+ADD file:e60e2e7a8739aba25a581ced1031f5e6e8eaa6ada8a207fbdd3c27fc719b7840 in /
 ```
 
--	Created: Mon, 31 Aug 2015 16:54:05 GMT
+-	Created: Tue, 13 Oct 2015 23:33:06 GMT
 -	Parent Layer: `092a8f66f3ff92410ad49ea9926e17116f449a13bc5f296a8731815e00fe278d`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 341.7 MB (341729815 bytes)
 -	v2 Blob: `sha256:4a073de8a536a568bbf8d0f30c6946d4aa0e6f951d8791f710e22e1eec6143e0`
 -	v2 Content-Length: 122.3 MB (122252467 bytes)
 -	v2 Last-Modified: Mon, 31 Aug 2015 16:55:18 GMT
 
-#### `be2c08d3a3501a7c24a2cfe3fc45d2790ef8a4b180763f894927a0ee98868247`
+#### `07631e5f17e1f1be38339684ac125125f48bebbb08ca9c8d81da1fe73bb846bc`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 31 Aug 2015 16:54:11 GMT
--	Parent Layer: `afa8b7119c19336e1759b6ef96e8185334f40564804d97b2d468fa4a213ce874`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:33:14 GMT
+-	Parent Layer: `638bccd2da44cbac9768f1f955adf7e7df4a717b4f902951e9076ce9fcd3f3c3`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -60,7 +60,7 @@ CMD ["/bin/bash"]
 ## `crux:3.1`
 
 ```console
-$ docker pull library/crux@sha256:47aa91499b68e80ae3e00b1221786b5c4274ac69fb62757b964798d1f34277d5
+$ docker pull library/crux@sha256:90d804bced0fa530d3b248b7f4aa34300fc615e00820b409a0558aab10ad0eae
 ```
 
 -	Total Virtual Size: 341.7 MB (341729815 bytes)
@@ -81,29 +81,29 @@ MAINTAINER James Mills, prologic at shortcircuit dot net dot au
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `afa8b7119c19336e1759b6ef96e8185334f40564804d97b2d468fa4a213ce874`
+#### `638bccd2da44cbac9768f1f955adf7e7df4a717b4f902951e9076ce9fcd3f3c3`
 
 ```dockerfile
-ADD file:e6755159b1e64cae8a997337f7d56f1b4c93668c57758d1c0074ace6f41eb27c in /
+ADD file:e60e2e7a8739aba25a581ced1031f5e6e8eaa6ada8a207fbdd3c27fc719b7840 in /
 ```
 
--	Created: Mon, 31 Aug 2015 16:54:05 GMT
+-	Created: Tue, 13 Oct 2015 23:33:06 GMT
 -	Parent Layer: `092a8f66f3ff92410ad49ea9926e17116f449a13bc5f296a8731815e00fe278d`
--	Docker Version: 1.7.1
+-	Docker Version: 1.8.2
 -	Virtual Size: 341.7 MB (341729815 bytes)
 -	v2 Blob: `sha256:4a073de8a536a568bbf8d0f30c6946d4aa0e6f951d8791f710e22e1eec6143e0`
 -	v2 Content-Length: 122.3 MB (122252467 bytes)
 -	v2 Last-Modified: Mon, 31 Aug 2015 16:55:18 GMT
 
-#### `be2c08d3a3501a7c24a2cfe3fc45d2790ef8a4b180763f894927a0ee98868247`
+#### `07631e5f17e1f1be38339684ac125125f48bebbb08ca9c8d81da1fe73bb846bc`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 31 Aug 2015 16:54:11 GMT
--	Parent Layer: `afa8b7119c19336e1759b6ef96e8185334f40564804d97b2d468fa4a213ce874`
--	Docker Version: 1.7.1
+-	Created: Tue, 13 Oct 2015 23:33:14 GMT
+-	Parent Layer: `638bccd2da44cbac9768f1f955adf7e7df4a717b4f902951e9076ce9fcd3f3c3`
+-	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
