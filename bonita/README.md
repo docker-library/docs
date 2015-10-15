@@ -15,7 +15,7 @@ Bonita BPM is an open-source business process management and workflow suite crea
 
 > [wikipedia.org/wiki/Bonita_BPM](http://en.wikipedia.org/wiki/Bonita_BPM)
 
-![logo](https://github.com/bonitasoft/docker/blob/master/bonita/7.0.0/logo.png?raw=true)
+![logo](https://raw.githubusercontent.com/Bonitasoft-Community/docker_docs/master/bonita/logo.png)
 
 # How to use this image
 
@@ -310,7 +310,7 @@ Documentation for this image is stored in the [`bonita/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/bonita/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/Bonitasoft-Community/docker_bonita/issues).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
@@ -318,4 +318,4 @@ You can also reach many of the official image maintainers via the `#docker-libra
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/docker-library/bonita/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/Bonitasoft-Community/docker_bonita/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
