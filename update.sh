@@ -63,6 +63,7 @@ declare -A otherRepos=(
 	[ros]='https://github.com/osrf/docker_images'
 	[sentry]='https://github.com/getsentry/docker-sentry'
 	[sonarqube]='https://github.com/SonarSource/docker-sonarqube'
+	[sourcemage]='https://github.com/vaygr/docker-sourcemage'
 	[swarm]='https://github.com/docker/swarm-library-image'
 	[thrift]='https://github.com/ahawkins/docker-thrift'
 	[ubuntu-debootstrap]='https://github.com/tianon/docker-brew-ubuntu-debootstrap'
