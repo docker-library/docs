@@ -63,6 +63,7 @@ declare -A otherRepos=(
 	[rocket.chat]='https://github.com/RocketChat/Docker.Official.Image'
 	[ros]='https://github.com/osrf/docker_images'
 	[sentry]='https://github.com/getsentry/docker-sentry'
+	[solr]='https://github.com/docker-solr/solr'
 	[sonarqube]='https://github.com/SonarSource/docker-sonarqube'
 	[swarm]='https://github.com/docker/swarm-library-image'
 	[thrift]='https://github.com/ahawkins/docker-thrift'
