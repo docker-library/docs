@@ -4,6 +4,11 @@
 
 -	hhvm:latest
 -	hhvm:3
+-	hhvm:3.10
+-	hhvm:3.10.0
 -	hhvm:3.9
 -	hhvm:3.9.1
--	hhvm:unstable
+-	hhvm:3.6
+-	hhvm:3.6.6
+-	hhvm:3.3
+-	hhvm:3.3.7

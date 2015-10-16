@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3`, `3.9`, `3.9.1`, `stable` (*hhvm/3.9/Dockerfile*)](https://github.com/baptistedonaux/docker-images/blob/a175022215212731863535dff073bb71de5e67a8/hhvm/3.9/Dockerfile)
--	[`unstable` (*hhvm/master/Dockerfile*)](https://github.com/baptistedonaux/docker-images/blob/a175022215212731863535dff073bb71de5e67a8/hhvm/master/Dockerfile)
+-	[`3`, `3.10`, `3.10.0`, `latest` (*hhvm/master/Dockerfile*)](https://github.com/baptistedonaux/docker-images/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/hhvm/master/Dockerfile)
+-	[`3.9`, `3.9.1` (*hhvm/3.9/Dockerfile*)](https://github.com/baptistedonaux/docker-images/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/hhvm/3.9/Dockerfile)
+-	[`3.6`, `3.6.6` (*hhvm/3.6/Dockerfile*)](https://github.com/baptistedonaux/docker-images/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/hhvm/3.6/Dockerfile)
+-	[`3.3`, `3.3.7` (*hhvm/3.3/Dockerfile*)](https://github.com/baptistedonaux/docker-images/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/hhvm/3.3/Dockerfile)
 
 # What is HHVM?
 
@@ -17,7 +19,7 @@ The `hhvm:latest` tag will always point the latest stable release. Stable releas
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.8.3.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
 
