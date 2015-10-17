@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.3.1`, `5.3`, `5`, `latest` (*5.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/80ee84f565414c4f1218d39417049049d9f2c0d1/5.3/Dockerfile)
+-	[`5.3.1`, `5.3`, `5`, `latest` (*5.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/d722c55dd320a812e278a23c60a5d5616515df0b/5.3/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/solr`)](https://github.com/docker-library/official-images/blob/master/library/solr). This image is updated via pull requests to [the `docker-solr/docker-solr` GitHub repo](https://github.com/docker-solr/docker-solr).
+For more information about this image and its history, please see [the relevant manifest file (`library/solr`)](https://github.com/docker-library/official-images/blob/master/library/solr). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `solr/tag-details.md` file](https://github.com/docker-library/docs/blob/master/solr/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -97,9 +97,11 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.2.
+This image is officially supported on Docker version 1.8.3.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
