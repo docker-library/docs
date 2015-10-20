@@ -1,0 +1,1 @@
+View [license information](http://www.spagobi.org/homepage/opensource/license/) for the software contained in this image.

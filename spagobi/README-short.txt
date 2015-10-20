@@ -1,0 +1,1 @@
+SpagoBI is a Business Intelligence Free Platform which uses many FOSS tools as analytical engines.
