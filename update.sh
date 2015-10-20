@@ -49,6 +49,7 @@ declare -A otherRepos=(
 	[mageia]='https://github.com/juanluisbaptiste/docker-brew-mageia'
 	[maven]='https://github.com/carlossg/docker-maven'
 	[mono]='https://github.com/mono/docker'
+	[neo4j]='https://github.com/neo4j/docker-neo4j'
 	[neurodebian]='https://github.com/neurodebian/dockerfiles'
 	[nginx]='https://github.com/nginxinc/docker-nginx'
 	[node]='https://github.com/joyent/docker-node'
