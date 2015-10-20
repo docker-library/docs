@@ -11,18 +11,18 @@ All of our scripts are [GPL](https://www.gnu.org/licenses/gpl.html)'d and our pa
 These images are based on our [chroot images](https://beta.sourcemage.ru/Install/Chroot). To use them, simply do the following:
 
 ```shell
-$ docker run -it --privileged sourcemage
+$ docker run -it sourcemage
 ```
 
 or
 
 ```shell
-$ docker run -it --privileged sourcemage:0.61
+$ docker run -it sourcemage:0.61
 ```
 
 ---
 
 # Notes
 
--	you need the **--privileged** flag for access to `/dev/fuse` device within a container and proper functioning of [castfs](https://beta.sourcemage.ru/castfs)
+-	in order to get the full benefit of [castfs](https://beta.sourcemage.ru/castfs) you need additional flags (`--device /dev/fuse --cap-add SYS_ADMIN`) for access to `/dev/fuse` device within a container, but you've been warned because there are security implications to granting such capabilities/privileges to the container; otherwise [installwatch](https://beta.sourcemage.ru/installwatch) will be used
 -	`0.61` indicates the grimoire version this image is based on, otherwise `latest` will be pulled
