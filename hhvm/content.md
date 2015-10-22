@@ -70,15 +70,15 @@ $ docker run --name my_nginx_container -v /path/to/nginx.conf:/etc/nginx/nginx.c
 docker-compose.yml
 ```yaml
 nginx:
-	image: nginx:latest
-	volumes:
-		- "/path/to/nginx.conf:/etc/nginx/nginx.conf:ro"
-		- "/path/to/project:/home/docker:ro"
-	links:
-		- "hhvm:hhvm"
+    image: nginx:latest
+    volumes:
+        - "/path/to/nginx.conf:/etc/nginx/nginx.conf:ro"
+        - "/path/to/project:/home/docker:ro"
+    links:
+        - "hhvm:hhvm"
 
 hhvm:
-	image: hhvm:latest
-	volumes:
-		- "/path/to/project:/home/docker:rw"
+    image: hhvm:latest
+    volumes:
+        - "/path/to/project:/home/docker:rw"
 ```
