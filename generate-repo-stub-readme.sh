@@ -22,10 +22,9 @@ hubPage="https://registry.hub.docker.com/_/$repo/"
 cat <<EOREADME
 # About this Repo
 
-This is the Git repo of the official Docker image for [$repo]($hubPage). See the
-Hub page for the full readme on how to use the Docker image and for information
-regarding contributing and issues.
+This is the Git repo of the official Docker image for [$repo]($hubPage). See the Hub page for the full readme on how to use the Docker image and for information regarding contributing and issues.
 
-The full readme is generated over in [docker-library/docs]($gitRepo),
-specificially in [docker-library/docs/$repo]($gitRepo/tree/master/$repo).
+The full readme is generated over in [docker-library/docs]($gitRepo), specificially in [docker-library/docs/$repo]($gitRepo/tree/master/$repo).
+
+[![Travis CI](https://img.shields.io/travis/docker-library/$repo/master.svg)](https://travis-ci.org/docker-library/$repo/branches)
 EOREADME
