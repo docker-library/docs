@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3`, `3.10`, `3.10.0`, `latest` (*master/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/master/Dockerfile)
--	[`3.9`, `3.9.1` (*3.9/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/3.9/Dockerfile)
--	[`3.6`, `3.6.6` (*3.6/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/3.6/Dockerfile)
--	[`3.3`, `3.3.7` (*3.3/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/3.3/Dockerfile)
+-	[`3`, `3.10`, `3.10.1`, `latest` (*master/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/34672625d1b554c550dae80fb28af41e83a37b11/master/Dockerfile)
+-	[`3.9`, `3.9.1` (*3.9/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/34672625d1b554c550dae80fb28af41e83a37b11/3.9/Dockerfile)
+-	[`3.6`, `3.6.6` (*3.6/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/34672625d1b554c550dae80fb28af41e83a37b11/3.6/Dockerfile)
+-	[`3.3`, `3.3.7` (*3.3/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/34672625d1b554c550dae80fb28af41e83a37b11/3.3/Dockerfile)
 
 # What is HHVM?
 
