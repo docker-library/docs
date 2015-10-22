@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3`, `3.10`, `3.10.0`, `latest` (*hhvm/master/Dockerfile*)](https://github.com/baptistedonaux/docker-images/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/hhvm/master/Dockerfile)
--	[`3.9`, `3.9.1` (*hhvm/3.9/Dockerfile*)](https://github.com/baptistedonaux/docker-images/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/hhvm/3.9/Dockerfile)
--	[`3.6`, `3.6.6` (*hhvm/3.6/Dockerfile*)](https://github.com/baptistedonaux/docker-images/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/hhvm/3.6/Dockerfile)
--	[`3.3`, `3.3.7` (*hhvm/3.3/Dockerfile*)](https://github.com/baptistedonaux/docker-images/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/hhvm/3.3/Dockerfile)
+-	[`3`, `3.10`, `3.10.0`, `latest` (*master/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/master/Dockerfile)
+-	[`3.9`, `3.9.1` (*3.9/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/3.9/Dockerfile)
+-	[`3.6`, `3.6.6` (*3.6/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/3.6/Dockerfile)
+-	[`3.3`, `3.3.7` (*3.3/Dockerfile*)](https://github.com/baptistedonaux/docker-hhvm/blob/3b14e1bd10c654e5ad654b75b09cb26ea245bf2f/3.3/Dockerfile)
 
 # What is HHVM?
 
@@ -31,10 +31,10 @@ Documentation for this image is stored in the [`hhvm/` directory](https://github
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/baptistedonaux/docker-images/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/baptistedonaux/docker-hhvm/issues).
 
 ## Contributing
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/baptistedonaux/docker-images/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub issue](https://github.com/baptistedonaux/docker-hhvm/issues), especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

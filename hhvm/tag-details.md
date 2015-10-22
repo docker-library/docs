@@ -5,7 +5,7 @@
 -	hhvm:latest
 -	hhvm:3
 -	hhvm:3.10
--	hhvm:3.10.0
+-	hhvm:3.10.1
 -	hhvm:3.9
 -	hhvm:3.9.1
 -	hhvm:3.6
