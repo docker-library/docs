@@ -2,27 +2,27 @@
 
 # Tags of `joomla`
 
--	[`joomla:3.4.4-apache`](#joomla344-apache)
--	[`joomla:3.4.4`](#joomla344)
+-	[`joomla:3.4.5-apache`](#joomla345-apache)
+-	[`joomla:3.4.5`](#joomla345)
 -	[`joomla:3.4-apache`](#joomla34-apache)
 -	[`joomla:3.4`](#joomla34)
 -	[`joomla:3-apache`](#joomla3-apache)
 -	[`joomla:apache`](#joomlaapache)
 -	[`joomla:3`](#joomla3)
 -	[`joomla:latest`](#joomlalatest)
--	[`joomla:3.4.4-fpm`](#joomla344-fpm)
+-	[`joomla:3.4.5-fpm`](#joomla345-fpm)
 -	[`joomla:3.4-fpm`](#joomla34-fpm)
 -	[`joomla:3-fpm`](#joomla3-fpm)
 -	[`joomla:fpm`](#joomlafpm)
 
-## `joomla:3.4.4-apache`
+## `joomla:3.4.5-apache`
 
 ```console
-$ docker pull library/joomla@sha256:d05cb4c40da24027be12c62c99d0cceec32b601b6be2572c3ff7adcdd000509c
+$ docker pull library/joomla@sha256:b2ce2f65503144ec84d51d26a9557dab386d630863ab23ab763e1a1055438965
 ```
 
--	Total Virtual Size: 524.0 MB (523980883 bytes)
--	Total v2 Content-Length: 175.7 MB (175729699 bytes)
+-	Total Virtual Size: 524.0 MB (523984813 bytes)
+-	Total v2 Content-Length: 175.7 MB (175730475 bytes)
 
 ### Layers (34)
 
@@ -442,13 +442,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+#### `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:02 GMT
+-	Created: Thu, 22 Oct 2015 17:45:55 GMT
 -	Parent Layer: `c2d51784a0b4e0367850a6ef17d4078cc95f7e28a4cb30b47b9226670f6b2b84`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -456,21 +456,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+#### `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:03 GMT
--	Parent Layer: `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+-	Created: Thu, 22 Oct 2015 17:45:56 GMT
+-	Parent Layer: `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+#### `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -481,78 +481,78 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:10 GMT
--	Parent Layer: `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+-	Created: Thu, 22 Oct 2015 17:46:01 GMT
+-	Parent Layer: `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:0b88a392ba4ab53d14589b38a1f9244de5a8c1352c4edc53ce2a7e86ed0bee2e`
--	v2 Content-Length: 7.8 MB (7763770 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:16:43 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:b846480bb0beb5005250089caf7623b49ad6a14a0b357766ce9dba4bedf854df`
+-	v2 Content-Length: 7.8 MB (7764546 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 17:59:05 GMT
 
-#### `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+#### `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:12 GMT
--	Parent Layer: `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+#### `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+#### `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c5f7d8099d2eb1cc3237d02a56bd25b8f5b27d4b6503aa5bb1da86b06572d98e`
+#### `a42de1abda1bf700bd22e70e028d0c1dcdcb3fe8597bc038d10771ea01ba2981`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:14 GMT
--	Parent Layer: `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+-	Created: Thu, 22 Oct 2015 17:46:05 GMT
+-	Parent Layer: `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `joomla:3.4.4`
+## `joomla:3.4.5`
 
 ```console
-$ docker pull library/joomla@sha256:e96c2134c7ece2d8cbc4a86c0bdc3835f105530fa69488e216c1162cf6430db9
+$ docker pull library/joomla@sha256:ff79ff61791f788b239af3a39eee2ae06d1ab6e2ae29fb6c03ddf2cecfbe2ce1
 ```
 
--	Total Virtual Size: 524.0 MB (523980883 bytes)
--	Total v2 Content-Length: 175.7 MB (175729699 bytes)
+-	Total Virtual Size: 524.0 MB (523984813 bytes)
+-	Total v2 Content-Length: 175.7 MB (175730475 bytes)
 
 ### Layers (34)
 
@@ -972,13 +972,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+#### `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:02 GMT
+-	Created: Thu, 22 Oct 2015 17:45:55 GMT
 -	Parent Layer: `c2d51784a0b4e0367850a6ef17d4078cc95f7e28a4cb30b47b9226670f6b2b84`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -986,21 +986,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+#### `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:03 GMT
--	Parent Layer: `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+-	Created: Thu, 22 Oct 2015 17:45:56 GMT
+-	Parent Layer: `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+#### `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -1011,64 +1011,64 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:10 GMT
--	Parent Layer: `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+-	Created: Thu, 22 Oct 2015 17:46:01 GMT
+-	Parent Layer: `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:0b88a392ba4ab53d14589b38a1f9244de5a8c1352c4edc53ce2a7e86ed0bee2e`
--	v2 Content-Length: 7.8 MB (7763770 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:16:43 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:b846480bb0beb5005250089caf7623b49ad6a14a0b357766ce9dba4bedf854df`
+-	v2 Content-Length: 7.8 MB (7764546 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 17:59:05 GMT
 
-#### `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+#### `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:12 GMT
--	Parent Layer: `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+#### `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+#### `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c5f7d8099d2eb1cc3237d02a56bd25b8f5b27d4b6503aa5bb1da86b06572d98e`
+#### `a42de1abda1bf700bd22e70e028d0c1dcdcb3fe8597bc038d10771ea01ba2981`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:14 GMT
--	Parent Layer: `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+-	Created: Thu, 22 Oct 2015 17:46:05 GMT
+-	Parent Layer: `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1078,11 +1078,11 @@ CMD ["apache2-foreground"]
 ## `joomla:3.4-apache`
 
 ```console
-$ docker pull library/joomla@sha256:a657fa5bab2a979ab789023da8c67c844edb23566b5ae437e361687ffbe7918b
+$ docker pull library/joomla@sha256:b5eb08ad64c29ceb226fd16a00e6c88c121c39bc414a2a62aad6e90cf0fee8ca
 ```
 
--	Total Virtual Size: 524.0 MB (523980883 bytes)
--	Total v2 Content-Length: 175.7 MB (175729699 bytes)
+-	Total Virtual Size: 524.0 MB (523984813 bytes)
+-	Total v2 Content-Length: 175.7 MB (175730475 bytes)
 
 ### Layers (34)
 
@@ -1502,13 +1502,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+#### `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:02 GMT
+-	Created: Thu, 22 Oct 2015 17:45:55 GMT
 -	Parent Layer: `c2d51784a0b4e0367850a6ef17d4078cc95f7e28a4cb30b47b9226670f6b2b84`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -1516,21 +1516,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+#### `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:03 GMT
--	Parent Layer: `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+-	Created: Thu, 22 Oct 2015 17:45:56 GMT
+-	Parent Layer: `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+#### `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -1541,64 +1541,64 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:10 GMT
--	Parent Layer: `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+-	Created: Thu, 22 Oct 2015 17:46:01 GMT
+-	Parent Layer: `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:0b88a392ba4ab53d14589b38a1f9244de5a8c1352c4edc53ce2a7e86ed0bee2e`
--	v2 Content-Length: 7.8 MB (7763770 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:16:43 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:b846480bb0beb5005250089caf7623b49ad6a14a0b357766ce9dba4bedf854df`
+-	v2 Content-Length: 7.8 MB (7764546 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 17:59:05 GMT
 
-#### `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+#### `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:12 GMT
--	Parent Layer: `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+#### `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+#### `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c5f7d8099d2eb1cc3237d02a56bd25b8f5b27d4b6503aa5bb1da86b06572d98e`
+#### `a42de1abda1bf700bd22e70e028d0c1dcdcb3fe8597bc038d10771ea01ba2981`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:14 GMT
--	Parent Layer: `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+-	Created: Thu, 22 Oct 2015 17:46:05 GMT
+-	Parent Layer: `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1608,11 +1608,11 @@ CMD ["apache2-foreground"]
 ## `joomla:3.4`
 
 ```console
-$ docker pull library/joomla@sha256:2131dbac9aeede18d4e77704841e80496be114f78b5a077e5cf029fce13fe8ae
+$ docker pull library/joomla@sha256:571cdc493f1f167b3c1f156062f29fa707ba0bd682a2e9b7b4f6a06119994dd9
 ```
 
--	Total Virtual Size: 524.0 MB (523980883 bytes)
--	Total v2 Content-Length: 175.7 MB (175729699 bytes)
+-	Total Virtual Size: 524.0 MB (523984813 bytes)
+-	Total v2 Content-Length: 175.7 MB (175730475 bytes)
 
 ### Layers (34)
 
@@ -2032,13 +2032,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+#### `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:02 GMT
+-	Created: Thu, 22 Oct 2015 17:45:55 GMT
 -	Parent Layer: `c2d51784a0b4e0367850a6ef17d4078cc95f7e28a4cb30b47b9226670f6b2b84`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -2046,21 +2046,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+#### `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:03 GMT
--	Parent Layer: `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+-	Created: Thu, 22 Oct 2015 17:45:56 GMT
+-	Parent Layer: `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+#### `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -2071,64 +2071,64 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:10 GMT
--	Parent Layer: `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+-	Created: Thu, 22 Oct 2015 17:46:01 GMT
+-	Parent Layer: `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:0b88a392ba4ab53d14589b38a1f9244de5a8c1352c4edc53ce2a7e86ed0bee2e`
--	v2 Content-Length: 7.8 MB (7763770 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:16:43 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:b846480bb0beb5005250089caf7623b49ad6a14a0b357766ce9dba4bedf854df`
+-	v2 Content-Length: 7.8 MB (7764546 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 17:59:05 GMT
 
-#### `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+#### `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:12 GMT
--	Parent Layer: `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+#### `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+#### `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c5f7d8099d2eb1cc3237d02a56bd25b8f5b27d4b6503aa5bb1da86b06572d98e`
+#### `a42de1abda1bf700bd22e70e028d0c1dcdcb3fe8597bc038d10771ea01ba2981`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:14 GMT
--	Parent Layer: `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+-	Created: Thu, 22 Oct 2015 17:46:05 GMT
+-	Parent Layer: `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2138,11 +2138,11 @@ CMD ["apache2-foreground"]
 ## `joomla:3-apache`
 
 ```console
-$ docker pull library/joomla@sha256:1bf89ebf7473007dc89ad041468bc559aef9f91661e0fea250bf3ebadb107951
+$ docker pull library/joomla@sha256:a9278a54117c6ac54e535c5406e0c6e35f5e3bebe8809e57b5c5e58c455ded7d
 ```
 
--	Total Virtual Size: 524.0 MB (523980883 bytes)
--	Total v2 Content-Length: 175.7 MB (175729699 bytes)
+-	Total Virtual Size: 524.0 MB (523984813 bytes)
+-	Total v2 Content-Length: 175.7 MB (175730475 bytes)
 
 ### Layers (34)
 
@@ -2562,13 +2562,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+#### `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:02 GMT
+-	Created: Thu, 22 Oct 2015 17:45:55 GMT
 -	Parent Layer: `c2d51784a0b4e0367850a6ef17d4078cc95f7e28a4cb30b47b9226670f6b2b84`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -2576,21 +2576,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+#### `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:03 GMT
--	Parent Layer: `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+-	Created: Thu, 22 Oct 2015 17:45:56 GMT
+-	Parent Layer: `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+#### `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -2601,64 +2601,64 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:10 GMT
--	Parent Layer: `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+-	Created: Thu, 22 Oct 2015 17:46:01 GMT
+-	Parent Layer: `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:0b88a392ba4ab53d14589b38a1f9244de5a8c1352c4edc53ce2a7e86ed0bee2e`
--	v2 Content-Length: 7.8 MB (7763770 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:16:43 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:b846480bb0beb5005250089caf7623b49ad6a14a0b357766ce9dba4bedf854df`
+-	v2 Content-Length: 7.8 MB (7764546 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 17:59:05 GMT
 
-#### `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+#### `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:12 GMT
--	Parent Layer: `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+#### `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+#### `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c5f7d8099d2eb1cc3237d02a56bd25b8f5b27d4b6503aa5bb1da86b06572d98e`
+#### `a42de1abda1bf700bd22e70e028d0c1dcdcb3fe8597bc038d10771ea01ba2981`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:14 GMT
--	Parent Layer: `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+-	Created: Thu, 22 Oct 2015 17:46:05 GMT
+-	Parent Layer: `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2668,11 +2668,11 @@ CMD ["apache2-foreground"]
 ## `joomla:apache`
 
 ```console
-$ docker pull library/joomla@sha256:046018d1d164058b5873281b297cb929404f42578cba6bf30281c8e7b381124d
+$ docker pull library/joomla@sha256:e777615e161e032db6d9d42d60a71f410fe8c6be67b423a91eadc3c240f111ba
 ```
 
--	Total Virtual Size: 524.0 MB (523980883 bytes)
--	Total v2 Content-Length: 175.7 MB (175729699 bytes)
+-	Total Virtual Size: 524.0 MB (523984813 bytes)
+-	Total v2 Content-Length: 175.7 MB (175730475 bytes)
 
 ### Layers (34)
 
@@ -3092,13 +3092,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+#### `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:02 GMT
+-	Created: Thu, 22 Oct 2015 17:45:55 GMT
 -	Parent Layer: `c2d51784a0b4e0367850a6ef17d4078cc95f7e28a4cb30b47b9226670f6b2b84`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -3106,21 +3106,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+#### `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:03 GMT
--	Parent Layer: `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+-	Created: Thu, 22 Oct 2015 17:45:56 GMT
+-	Parent Layer: `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+#### `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -3131,64 +3131,64 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:10 GMT
--	Parent Layer: `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+-	Created: Thu, 22 Oct 2015 17:46:01 GMT
+-	Parent Layer: `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:0b88a392ba4ab53d14589b38a1f9244de5a8c1352c4edc53ce2a7e86ed0bee2e`
--	v2 Content-Length: 7.8 MB (7763770 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:16:43 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:b846480bb0beb5005250089caf7623b49ad6a14a0b357766ce9dba4bedf854df`
+-	v2 Content-Length: 7.8 MB (7764546 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 17:59:05 GMT
 
-#### `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+#### `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:12 GMT
--	Parent Layer: `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+#### `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+#### `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c5f7d8099d2eb1cc3237d02a56bd25b8f5b27d4b6503aa5bb1da86b06572d98e`
+#### `a42de1abda1bf700bd22e70e028d0c1dcdcb3fe8597bc038d10771ea01ba2981`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:14 GMT
--	Parent Layer: `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+-	Created: Thu, 22 Oct 2015 17:46:05 GMT
+-	Parent Layer: `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3198,11 +3198,11 @@ CMD ["apache2-foreground"]
 ## `joomla:3`
 
 ```console
-$ docker pull library/joomla@sha256:45da989349cf6a6d8bf1d89888ef26182c199e4d06c110e1f99c008b8b376bd0
+$ docker pull library/joomla@sha256:97140f9382d2cbd26e28f484fd72661666a1ce15a347d86c7fe70169aaf3e472
 ```
 
--	Total Virtual Size: 524.0 MB (523980883 bytes)
--	Total v2 Content-Length: 175.7 MB (175729699 bytes)
+-	Total Virtual Size: 524.0 MB (523984813 bytes)
+-	Total v2 Content-Length: 175.7 MB (175730475 bytes)
 
 ### Layers (34)
 
@@ -3622,13 +3622,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+#### `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:02 GMT
+-	Created: Thu, 22 Oct 2015 17:45:55 GMT
 -	Parent Layer: `c2d51784a0b4e0367850a6ef17d4078cc95f7e28a4cb30b47b9226670f6b2b84`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -3636,21 +3636,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+#### `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:03 GMT
--	Parent Layer: `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+-	Created: Thu, 22 Oct 2015 17:45:56 GMT
+-	Parent Layer: `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+#### `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -3661,64 +3661,64 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:10 GMT
--	Parent Layer: `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+-	Created: Thu, 22 Oct 2015 17:46:01 GMT
+-	Parent Layer: `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:0b88a392ba4ab53d14589b38a1f9244de5a8c1352c4edc53ce2a7e86ed0bee2e`
--	v2 Content-Length: 7.8 MB (7763770 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:16:43 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:b846480bb0beb5005250089caf7623b49ad6a14a0b357766ce9dba4bedf854df`
+-	v2 Content-Length: 7.8 MB (7764546 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 17:59:05 GMT
 
-#### `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+#### `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:12 GMT
--	Parent Layer: `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+#### `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+#### `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c5f7d8099d2eb1cc3237d02a56bd25b8f5b27d4b6503aa5bb1da86b06572d98e`
+#### `a42de1abda1bf700bd22e70e028d0c1dcdcb3fe8597bc038d10771ea01ba2981`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:14 GMT
--	Parent Layer: `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+-	Created: Thu, 22 Oct 2015 17:46:05 GMT
+-	Parent Layer: `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3728,11 +3728,11 @@ CMD ["apache2-foreground"]
 ## `joomla:latest`
 
 ```console
-$ docker pull library/joomla@sha256:b308547e6ac5e7e8ae453625f41885dedd6f2e91ffe3b91ce456b37311edae79
+$ docker pull library/joomla@sha256:fa000ccba393a189a4022e83c378bfcbb4602f87f3868f2bc2ee4585bd630b02
 ```
 
--	Total Virtual Size: 524.0 MB (523980883 bytes)
--	Total v2 Content-Length: 175.7 MB (175729699 bytes)
+-	Total Virtual Size: 524.0 MB (523984813 bytes)
+-	Total v2 Content-Length: 175.7 MB (175730475 bytes)
 
 ### Layers (34)
 
@@ -4152,13 +4152,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+#### `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:02 GMT
+-	Created: Thu, 22 Oct 2015 17:45:55 GMT
 -	Parent Layer: `c2d51784a0b4e0367850a6ef17d4078cc95f7e28a4cb30b47b9226670f6b2b84`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -4166,21 +4166,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+#### `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:03 GMT
--	Parent Layer: `ba573d948dfec607ac25696b6aa2c725a9bf4bbeb83bc0a9a0fbc9950fd97369`
+-	Created: Thu, 22 Oct 2015 17:45:56 GMT
+-	Parent Layer: `4da14e3140326c7e653beb96840f0735482d9e2eac795f4f3bf3eae2a512d776`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+#### `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -4191,78 +4191,78 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:10 GMT
--	Parent Layer: `905fb4ad8d34d7aa610d28a801576ea0ad9ef5147ed6d94ce5622883401dca4e`
+-	Created: Thu, 22 Oct 2015 17:46:01 GMT
+-	Parent Layer: `12220d3201e1a67d89e9978827b1f1f488dc4a39d2fbfe0ff110096f9014bcdd`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:0b88a392ba4ab53d14589b38a1f9244de5a8c1352c4edc53ce2a7e86ed0bee2e`
--	v2 Content-Length: 7.8 MB (7763770 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:16:43 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:b846480bb0beb5005250089caf7623b49ad6a14a0b357766ce9dba4bedf854df`
+-	v2 Content-Length: 7.8 MB (7764546 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 17:59:05 GMT
 
-#### `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+#### `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:12 GMT
--	Parent Layer: `061ea55aef35583a5e8b670c898ab4b194b88daee16e85537094c84c35b3d5af`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `b50fc50c4973aa16e072300911167a22c07d33a07e29f6fdf2cf2f7237810247`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+#### `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `a68a82db352f9a63ee8fdf7ce6f7a15d951977d81a3ba369f894f01d3041d15d`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `134e2a67a4eddb355ff39219bea3388b9df5b8d25b7ba4785d929bdd1f8fddca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+#### `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:13 GMT
--	Parent Layer: `3a14d1f4161ec778a7c2aaa01c980d3a3d77b3fa19d182a8fe4907b9ffe28a20`
+-	Created: Thu, 22 Oct 2015 17:46:04 GMT
+-	Parent Layer: `5a8432ee61e1c340735094779db593dd7830650aebe935b75a2feb92aa9f3125`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c5f7d8099d2eb1cc3237d02a56bd25b8f5b27d4b6503aa5bb1da86b06572d98e`
+#### `a42de1abda1bf700bd22e70e028d0c1dcdcb3fe8597bc038d10771ea01ba2981`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:19:14 GMT
--	Parent Layer: `976fd6c43cde0a009b51402278202392d2d8b7e957efca8c51ec90bc7d3ca933`
+-	Created: Thu, 22 Oct 2015 17:46:05 GMT
+-	Parent Layer: `82d815a52dcbcc7ee6b25fb146c66e0af645205e4b8ff9543129a8cf33f0c3ad`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `joomla:3.4.4-fpm`
+## `joomla:3.4.5-fpm`
 
 ```console
-$ docker pull library/joomla@sha256:b05000bc70dc484f68d771849848b69aacbe5711750b5c130633660a51479719
+$ docker pull library/joomla@sha256:bb685d676e29eb5c35cc9f16563df15077cb5731e3efdfa85bf93202b003edc2
 ```
 
--	Total Virtual Size: 497.2 MB (497223396 bytes)
--	Total v2 Content-Length: 166.4 MB (166368546 bytes)
+-	Total Virtual Size: 497.2 MB (497227326 bytes)
+-	Total v2 Content-Length: 166.4 MB (166369320 bytes)
 
 ### Layers (27)
 
@@ -4584,13 +4584,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9e84894377d90c5b519de54c6848eb21331b8ab746eb2c6c2a66846a2b0e399f`
+#### `b83aa21065415b552687e48c19d16eb25c8d2a29136ba75047a7fd7e40d0fee7`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:27 GMT
+-	Created: Thu, 22 Oct 2015 17:50:18 GMT
 -	Parent Layer: `27b059de2da9685b2394d86d7010fa878f1c77c40b2b79b4e42e8c634ff4c822`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -4598,21 +4598,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ec278894ccc783468beb1b4f83822a3e877bbb7ddff8e98c7517cc7fef690629`
+#### `091ed03d8987022f116d8b148ab57481735a7aca5cabdbc48f486beb6f406484`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:28 GMT
--	Parent Layer: `9e84894377d90c5b519de54c6848eb21331b8ab746eb2c6c2a66846a2b0e399f`
+-	Created: Thu, 22 Oct 2015 17:50:19 GMT
+-	Parent Layer: `b83aa21065415b552687e48c19d16eb25c8d2a29136ba75047a7fd7e40d0fee7`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40a4c5792d92b7a78463c4ddee8b1a2727de6f10020def80c5f1a6141a0443f9`
+#### `c78a1909288214339de6b31a5dca38d9cfda1084a6688448cd604d1f4113be0e`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -4623,64 +4623,64 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:35 GMT
--	Parent Layer: `ec278894ccc783468beb1b4f83822a3e877bbb7ddff8e98c7517cc7fef690629`
+-	Created: Thu, 22 Oct 2015 17:50:24 GMT
+-	Parent Layer: `091ed03d8987022f116d8b148ab57481735a7aca5cabdbc48f486beb6f406484`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:96508a8a689ab12a6d341c12c7683f1eef67fcd9c9ac27592baa35753804e31f`
--	v2 Content-Length: 7.8 MB (7763761 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:25:11 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:d535f2a063ea2edc23240c2ab8887783b6823a431fcf7c6a5a51d313a0ce1c9a`
+-	v2 Content-Length: 7.8 MB (7764535 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 18:05:18 GMT
 
-#### `773f7d66c23545bc1084995d99c6470aa98b75e1153e0dd54f3c6e41c851e807`
+#### `1205a4828e2fc71af3e2c8dff556a82ff459c32a07ee265686c711d4496fe154`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:37 GMT
--	Parent Layer: `40a4c5792d92b7a78463c4ddee8b1a2727de6f10020def80c5f1a6141a0443f9`
+-	Created: Thu, 22 Oct 2015 17:50:27 GMT
+-	Parent Layer: `c78a1909288214339de6b31a5dca38d9cfda1084a6688448cd604d1f4113be0e`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `825e7c7fe8c5dde7b6b0dae0fef4a118cd80b675d61bfd11ae165c35fc95bdd0`
+#### `52326d768506afd5d491534a6f5e61f0755f2261d089b057f0fd2a822c14aa20`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:38 GMT
--	Parent Layer: `773f7d66c23545bc1084995d99c6470aa98b75e1153e0dd54f3c6e41c851e807`
+-	Created: Thu, 22 Oct 2015 17:50:27 GMT
+-	Parent Layer: `1205a4828e2fc71af3e2c8dff556a82ff459c32a07ee265686c711d4496fe154`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `0a4f51529041fc3e86f6c93f40a1958d7994e21d49d9c3a21143309e97f95746`
+#### `0370ba9b4b1445062dc99a639835217299bbaa416d0d3da63e29de01179fb8c4`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:38 GMT
--	Parent Layer: `825e7c7fe8c5dde7b6b0dae0fef4a118cd80b675d61bfd11ae165c35fc95bdd0`
+-	Created: Thu, 22 Oct 2015 17:50:28 GMT
+-	Parent Layer: `52326d768506afd5d491534a6f5e61f0755f2261d089b057f0fd2a822c14aa20`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9134b8ff2938630fe17ba7e6f903e293d493ec2ea31b0afc0692e33afde84af3`
+#### `c354227cdc304e7e408da9fe6dc41338230f50e21037d99dff7495ad6ac23665`
 
 ```dockerfile
 CMD ["php-fpm"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:39 GMT
--	Parent Layer: `0a4f51529041fc3e86f6c93f40a1958d7994e21d49d9c3a21143309e97f95746`
+-	Created: Thu, 22 Oct 2015 17:50:28 GMT
+-	Parent Layer: `0370ba9b4b1445062dc99a639835217299bbaa416d0d3da63e29de01179fb8c4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4690,11 +4690,11 @@ CMD ["php-fpm"]
 ## `joomla:3.4-fpm`
 
 ```console
-$ docker pull library/joomla@sha256:e8218e24647b6ee8bbfcdfd51c1c43a56156cb26a5c7d91b2ed53b17dec1a012
+$ docker pull library/joomla@sha256:ab40846aec646a087fefd137a82bccaad00d2c70b4dd611d9989b14627504dd3
 ```
 
--	Total Virtual Size: 497.2 MB (497223396 bytes)
--	Total v2 Content-Length: 166.4 MB (166368546 bytes)
+-	Total Virtual Size: 497.2 MB (497227326 bytes)
+-	Total v2 Content-Length: 166.4 MB (166369320 bytes)
 
 ### Layers (27)
 
@@ -5016,13 +5016,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9e84894377d90c5b519de54c6848eb21331b8ab746eb2c6c2a66846a2b0e399f`
+#### `b83aa21065415b552687e48c19d16eb25c8d2a29136ba75047a7fd7e40d0fee7`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:27 GMT
+-	Created: Thu, 22 Oct 2015 17:50:18 GMT
 -	Parent Layer: `27b059de2da9685b2394d86d7010fa878f1c77c40b2b79b4e42e8c634ff4c822`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -5030,21 +5030,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ec278894ccc783468beb1b4f83822a3e877bbb7ddff8e98c7517cc7fef690629`
+#### `091ed03d8987022f116d8b148ab57481735a7aca5cabdbc48f486beb6f406484`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:28 GMT
--	Parent Layer: `9e84894377d90c5b519de54c6848eb21331b8ab746eb2c6c2a66846a2b0e399f`
+-	Created: Thu, 22 Oct 2015 17:50:19 GMT
+-	Parent Layer: `b83aa21065415b552687e48c19d16eb25c8d2a29136ba75047a7fd7e40d0fee7`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40a4c5792d92b7a78463c4ddee8b1a2727de6f10020def80c5f1a6141a0443f9`
+#### `c78a1909288214339de6b31a5dca38d9cfda1084a6688448cd604d1f4113be0e`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -5055,64 +5055,64 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:35 GMT
--	Parent Layer: `ec278894ccc783468beb1b4f83822a3e877bbb7ddff8e98c7517cc7fef690629`
+-	Created: Thu, 22 Oct 2015 17:50:24 GMT
+-	Parent Layer: `091ed03d8987022f116d8b148ab57481735a7aca5cabdbc48f486beb6f406484`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:96508a8a689ab12a6d341c12c7683f1eef67fcd9c9ac27592baa35753804e31f`
--	v2 Content-Length: 7.8 MB (7763761 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:25:11 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:d535f2a063ea2edc23240c2ab8887783b6823a431fcf7c6a5a51d313a0ce1c9a`
+-	v2 Content-Length: 7.8 MB (7764535 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 18:05:18 GMT
 
-#### `773f7d66c23545bc1084995d99c6470aa98b75e1153e0dd54f3c6e41c851e807`
+#### `1205a4828e2fc71af3e2c8dff556a82ff459c32a07ee265686c711d4496fe154`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:37 GMT
--	Parent Layer: `40a4c5792d92b7a78463c4ddee8b1a2727de6f10020def80c5f1a6141a0443f9`
+-	Created: Thu, 22 Oct 2015 17:50:27 GMT
+-	Parent Layer: `c78a1909288214339de6b31a5dca38d9cfda1084a6688448cd604d1f4113be0e`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `825e7c7fe8c5dde7b6b0dae0fef4a118cd80b675d61bfd11ae165c35fc95bdd0`
+#### `52326d768506afd5d491534a6f5e61f0755f2261d089b057f0fd2a822c14aa20`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:38 GMT
--	Parent Layer: `773f7d66c23545bc1084995d99c6470aa98b75e1153e0dd54f3c6e41c851e807`
+-	Created: Thu, 22 Oct 2015 17:50:27 GMT
+-	Parent Layer: `1205a4828e2fc71af3e2c8dff556a82ff459c32a07ee265686c711d4496fe154`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `0a4f51529041fc3e86f6c93f40a1958d7994e21d49d9c3a21143309e97f95746`
+#### `0370ba9b4b1445062dc99a639835217299bbaa416d0d3da63e29de01179fb8c4`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:38 GMT
--	Parent Layer: `825e7c7fe8c5dde7b6b0dae0fef4a118cd80b675d61bfd11ae165c35fc95bdd0`
+-	Created: Thu, 22 Oct 2015 17:50:28 GMT
+-	Parent Layer: `52326d768506afd5d491534a6f5e61f0755f2261d089b057f0fd2a822c14aa20`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9134b8ff2938630fe17ba7e6f903e293d493ec2ea31b0afc0692e33afde84af3`
+#### `c354227cdc304e7e408da9fe6dc41338230f50e21037d99dff7495ad6ac23665`
 
 ```dockerfile
 CMD ["php-fpm"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:39 GMT
--	Parent Layer: `0a4f51529041fc3e86f6c93f40a1958d7994e21d49d9c3a21143309e97f95746`
+-	Created: Thu, 22 Oct 2015 17:50:28 GMT
+-	Parent Layer: `0370ba9b4b1445062dc99a639835217299bbaa416d0d3da63e29de01179fb8c4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -5122,11 +5122,11 @@ CMD ["php-fpm"]
 ## `joomla:3-fpm`
 
 ```console
-$ docker pull library/joomla@sha256:6fbdc893afed03ac76887fff2d12ca64150d2559e699ba233166ed12cf11fa05
+$ docker pull library/joomla@sha256:8ecc37547e0d7fadb5cd48eba4f6c16a8eb33f8debabfe00a8196819262efef7
 ```
 
--	Total Virtual Size: 497.2 MB (497223396 bytes)
--	Total v2 Content-Length: 166.4 MB (166368546 bytes)
+-	Total Virtual Size: 497.2 MB (497227326 bytes)
+-	Total v2 Content-Length: 166.4 MB (166369320 bytes)
 
 ### Layers (27)
 
@@ -5448,13 +5448,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9e84894377d90c5b519de54c6848eb21331b8ab746eb2c6c2a66846a2b0e399f`
+#### `b83aa21065415b552687e48c19d16eb25c8d2a29136ba75047a7fd7e40d0fee7`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:27 GMT
+-	Created: Thu, 22 Oct 2015 17:50:18 GMT
 -	Parent Layer: `27b059de2da9685b2394d86d7010fa878f1c77c40b2b79b4e42e8c634ff4c822`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -5462,21 +5462,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ec278894ccc783468beb1b4f83822a3e877bbb7ddff8e98c7517cc7fef690629`
+#### `091ed03d8987022f116d8b148ab57481735a7aca5cabdbc48f486beb6f406484`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:28 GMT
--	Parent Layer: `9e84894377d90c5b519de54c6848eb21331b8ab746eb2c6c2a66846a2b0e399f`
+-	Created: Thu, 22 Oct 2015 17:50:19 GMT
+-	Parent Layer: `b83aa21065415b552687e48c19d16eb25c8d2a29136ba75047a7fd7e40d0fee7`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40a4c5792d92b7a78463c4ddee8b1a2727de6f10020def80c5f1a6141a0443f9`
+#### `c78a1909288214339de6b31a5dca38d9cfda1084a6688448cd604d1f4113be0e`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -5487,64 +5487,64 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:35 GMT
--	Parent Layer: `ec278894ccc783468beb1b4f83822a3e877bbb7ddff8e98c7517cc7fef690629`
+-	Created: Thu, 22 Oct 2015 17:50:24 GMT
+-	Parent Layer: `091ed03d8987022f116d8b148ab57481735a7aca5cabdbc48f486beb6f406484`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:96508a8a689ab12a6d341c12c7683f1eef67fcd9c9ac27592baa35753804e31f`
--	v2 Content-Length: 7.8 MB (7763761 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:25:11 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:d535f2a063ea2edc23240c2ab8887783b6823a431fcf7c6a5a51d313a0ce1c9a`
+-	v2 Content-Length: 7.8 MB (7764535 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 18:05:18 GMT
 
-#### `773f7d66c23545bc1084995d99c6470aa98b75e1153e0dd54f3c6e41c851e807`
+#### `1205a4828e2fc71af3e2c8dff556a82ff459c32a07ee265686c711d4496fe154`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:37 GMT
--	Parent Layer: `40a4c5792d92b7a78463c4ddee8b1a2727de6f10020def80c5f1a6141a0443f9`
+-	Created: Thu, 22 Oct 2015 17:50:27 GMT
+-	Parent Layer: `c78a1909288214339de6b31a5dca38d9cfda1084a6688448cd604d1f4113be0e`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `825e7c7fe8c5dde7b6b0dae0fef4a118cd80b675d61bfd11ae165c35fc95bdd0`
+#### `52326d768506afd5d491534a6f5e61f0755f2261d089b057f0fd2a822c14aa20`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:38 GMT
--	Parent Layer: `773f7d66c23545bc1084995d99c6470aa98b75e1153e0dd54f3c6e41c851e807`
+-	Created: Thu, 22 Oct 2015 17:50:27 GMT
+-	Parent Layer: `1205a4828e2fc71af3e2c8dff556a82ff459c32a07ee265686c711d4496fe154`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `0a4f51529041fc3e86f6c93f40a1958d7994e21d49d9c3a21143309e97f95746`
+#### `0370ba9b4b1445062dc99a639835217299bbaa416d0d3da63e29de01179fb8c4`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:38 GMT
--	Parent Layer: `825e7c7fe8c5dde7b6b0dae0fef4a118cd80b675d61bfd11ae165c35fc95bdd0`
+-	Created: Thu, 22 Oct 2015 17:50:28 GMT
+-	Parent Layer: `52326d768506afd5d491534a6f5e61f0755f2261d089b057f0fd2a822c14aa20`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9134b8ff2938630fe17ba7e6f903e293d493ec2ea31b0afc0692e33afde84af3`
+#### `c354227cdc304e7e408da9fe6dc41338230f50e21037d99dff7495ad6ac23665`
 
 ```dockerfile
 CMD ["php-fpm"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:39 GMT
--	Parent Layer: `0a4f51529041fc3e86f6c93f40a1958d7994e21d49d9c3a21143309e97f95746`
+-	Created: Thu, 22 Oct 2015 17:50:28 GMT
+-	Parent Layer: `0370ba9b4b1445062dc99a639835217299bbaa416d0d3da63e29de01179fb8c4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -5554,11 +5554,11 @@ CMD ["php-fpm"]
 ## `joomla:fpm`
 
 ```console
-$ docker pull library/joomla@sha256:8d662888a9d396d427e8b86dcf2fad66253a6a80517c6fe7d9de0f4381cd4b4c
+$ docker pull library/joomla@sha256:6efd1e8dd6fe149a61b183e902429b2f09f2c09c75b4a19bb1d4e655758e8265
 ```
 
--	Total Virtual Size: 497.2 MB (497223396 bytes)
--	Total v2 Content-Length: 166.4 MB (166368546 bytes)
+-	Total Virtual Size: 497.2 MB (497227326 bytes)
+-	Total v2 Content-Length: 166.4 MB (166369320 bytes)
 
 ### Layers (27)
 
@@ -5880,13 +5880,13 @@ VOLUME [/var/www/html]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9e84894377d90c5b519de54c6848eb21331b8ab746eb2c6c2a66846a2b0e399f`
+#### `b83aa21065415b552687e48c19d16eb25c8d2a29136ba75047a7fd7e40d0fee7`
 
 ```dockerfile
-ENV JOOMLA_VERSION=3.4.4
+ENV JOOMLA_VERSION=3.4.5
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:27 GMT
+-	Created: Thu, 22 Oct 2015 17:50:18 GMT
 -	Parent Layer: `27b059de2da9685b2394d86d7010fa878f1c77c40b2b79b4e42e8c634ff4c822`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -5894,21 +5894,21 @@ ENV JOOMLA_VERSION=3.4.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ec278894ccc783468beb1b4f83822a3e877bbb7ddff8e98c7517cc7fef690629`
+#### `091ed03d8987022f116d8b148ab57481735a7aca5cabdbc48f486beb6f406484`
 
 ```dockerfile
-ENV JOOMLA_SHA1=371ed0a987a4c66b4f711b8e27a785f84050de90
+ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:28 GMT
--	Parent Layer: `9e84894377d90c5b519de54c6848eb21331b8ab746eb2c6c2a66846a2b0e399f`
+-	Created: Thu, 22 Oct 2015 17:50:19 GMT
+-	Parent Layer: `b83aa21065415b552687e48c19d16eb25c8d2a29136ba75047a7fd7e40d0fee7`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40a4c5792d92b7a78463c4ddee8b1a2727de6f10020def80c5f1a6141a0443f9`
+#### `c78a1909288214339de6b31a5dca38d9cfda1084a6688448cd604d1f4113be0e`
 
 ```dockerfile
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip \
@@ -5919,64 +5919,64 @@ RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/downloa
 	&& chown -R www-data:www-data /usr/src/joomla
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:35 GMT
--	Parent Layer: `ec278894ccc783468beb1b4f83822a3e877bbb7ddff8e98c7517cc7fef690629`
+-	Created: Thu, 22 Oct 2015 17:50:24 GMT
+-	Parent Layer: `091ed03d8987022f116d8b148ab57481735a7aca5cabdbc48f486beb6f406484`
 -	Docker Version: 1.8.2
--	Virtual Size: 30.3 MB (30337322 bytes)
--	v2 Blob: `sha256:96508a8a689ab12a6d341c12c7683f1eef67fcd9c9ac27592baa35753804e31f`
--	v2 Content-Length: 7.8 MB (7763761 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:25:11 GMT
+-	Virtual Size: 30.3 MB (30341252 bytes)
+-	v2 Blob: `sha256:d535f2a063ea2edc23240c2ab8887783b6823a431fcf7c6a5a51d313a0ce1c9a`
+-	v2 Content-Length: 7.8 MB (7764535 bytes)
+-	v2 Last-Modified: Thu, 22 Oct 2015 18:05:18 GMT
 
-#### `773f7d66c23545bc1084995d99c6470aa98b75e1153e0dd54f3c6e41c851e807`
+#### `1205a4828e2fc71af3e2c8dff556a82ff459c32a07ee265686c711d4496fe154`
 
 ```dockerfile
 COPY file:490a13c34f326bf1a5bc3291db937ce37240aab9b2b6d8fbd328f8a9cca579ed in /entrypoint.sh
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:37 GMT
--	Parent Layer: `40a4c5792d92b7a78463c4ddee8b1a2727de6f10020def80c5f1a6141a0443f9`
+-	Created: Thu, 22 Oct 2015 17:50:27 GMT
+-	Parent Layer: `c78a1909288214339de6b31a5dca38d9cfda1084a6688448cd604d1f4113be0e`
 -	Docker Version: 1.8.2
 -	Virtual Size: 3.1 KB (3108 bytes)
 -	v2 Blob: `sha256:cdc0a363bc1ed25b229888f8c79bb8610df2433001426e8d189a9d0ce84c9212`
 -	v2 Content-Length: 1.2 KB (1153 bytes)
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:41 GMT
 
-#### `825e7c7fe8c5dde7b6b0dae0fef4a118cd80b675d61bfd11ae165c35fc95bdd0`
+#### `52326d768506afd5d491534a6f5e61f0755f2261d089b057f0fd2a822c14aa20`
 
 ```dockerfile
 COPY file:5bad4dc9f9c85ab369b2dd69059896b171369f340c40325054208e1eb073738b in /makedb.php
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:38 GMT
--	Parent Layer: `773f7d66c23545bc1084995d99c6470aa98b75e1153e0dd54f3c6e41c851e807`
+-	Created: Thu, 22 Oct 2015 17:50:27 GMT
+-	Parent Layer: `1205a4828e2fc71af3e2c8dff556a82ff459c32a07ee265686c711d4496fe154`
 -	Docker Version: 1.8.2
 -	Virtual Size: 968.0 B
 -	v2 Blob: `sha256:6b2e9efa5569e90acf7bb942d6f4c5a4f48ca3a7c1432851af97e2489d0fa6a5`
 -	v2 Content-Length: 605.0 B
 -	v2 Last-Modified: Tue, 04 Aug 2015 18:36:39 GMT
 
-#### `0a4f51529041fc3e86f6c93f40a1958d7994e21d49d9c3a21143309e97f95746`
+#### `0370ba9b4b1445062dc99a639835217299bbaa416d0d3da63e29de01179fb8c4`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:38 GMT
--	Parent Layer: `825e7c7fe8c5dde7b6b0dae0fef4a118cd80b675d61bfd11ae165c35fc95bdd0`
+-	Created: Thu, 22 Oct 2015 17:50:28 GMT
+-	Parent Layer: `52326d768506afd5d491534a6f5e61f0755f2261d089b057f0fd2a822c14aa20`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9134b8ff2938630fe17ba7e6f903e293d493ec2ea31b0afc0692e33afde84af3`
+#### `c354227cdc304e7e408da9fe6dc41338230f50e21037d99dff7495ad6ac23665`
 
 ```dockerfile
 CMD ["php-fpm"]
 ```
 
--	Created: Wed, 21 Oct 2015 02:24:39 GMT
--	Parent Layer: `0a4f51529041fc3e86f6c93f40a1958d7994e21d49d9c3a21143309e97f95746`
+-	Created: Thu, 22 Oct 2015 17:50:28 GMT
+-	Parent Layer: `0370ba9b4b1445062dc99a639835217299bbaa416d0d3da63e29de01179fb8c4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
