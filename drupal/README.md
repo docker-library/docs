@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.40`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/drupal/blob/7a95f6b9072c8d2b350225aca69b95e89bd8cf66/7/Dockerfile)
--	[`8.0.0-rc1`, `8.0.0`, `8.0`, `8` (*8/Dockerfile*)](https://github.com/docker-library/drupal/blob/8108a55ea5ab69f0259c65baa7faa98cec26ebd7/8/Dockerfile)
+-	[`7.41`, `7`, `latest` (*7/Dockerfile*)](https://github.com/docker-library/drupal/blob/9e1ff6c719c7a6dec88b1089f9128dab428c4eed/7/Dockerfile)
+-	[`8.0.0-rc2`, `8.0.0`, `8.0`, `8` (*8/Dockerfile*)](https://github.com/docker-library/drupal/blob/176ed927eace897e55946bfdcfa7cfce23468acb/8/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
