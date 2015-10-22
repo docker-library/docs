@@ -8,19 +8,77 @@ HHVM is an open-source virtual machine designed for executing programs written i
 
 # How to use this image
 
+Two methods (CLI vs FastCGI):
+
+## CLI mode
+
 ```console
-$ docker run --name hhvm -v /some/content:/usr/share/nginx/html:ro -P -d hhvm
+$ docker run -v /foo.php:/foo.php foo.php
+$ docker run -v /foo.php:/foo.php hhvm foo.php
+$ docker run -v /foo.php:/foo.php php foo.php
 ```
+
+## FastCGI mode
+
+```console
+$ docker run --name my_container_hhvm hhvm
+```
+
+### Complex configuration
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary content (which is a much cleaner solution than the bind mount above):
 
 ```dockerfile
-FROM hhvm
+FROM hhvm:latest
 RUN …
+
+CMD ["hhvm", "-m", "server", "-vServer.Type=fastcgi", "-vServer.Port=9000", "--debug-sandbox=default"]
 ```
 
-## exposing the port
+### How exposing port
 
 ```console
 $ docker run --name hhvm -d -p 9000:9000 hhvm
+```
+
+### If I want use HHVM with Nginx container
+
+Nginx configuration (nginx.conf)
+```
+server {
+    listen 80;
+    root   /home/docker;
+
+    location ~ \.php$ {
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_pass hhvm:9000;
+        fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        include fastcgi_params;
+    }
+}
+```
+
+#### From scratch
+
+```console
+$ docker run --name my_hhvm_container -v /path/to/project:/home/docker:rw -d hhvm:latest
+$ docker run --name my_nginx_container -v /path/to/nginx.conf:/etc/nginx/nginx.conf:ro -v /path/to/project:/home/docker:ro --link my_hhvm_container:hhvm -d nginx:latest
+```
+
+#### With docker-compose
+
+docker-compose.yml
+```yaml
+nginx:
+	image: nginx:latest
+	volumes:
+		- "/path/to/nginx.conf:/etc/nginx/nginx.conf:ro"
+		- "/path/to/project:/home/docker:ro"
+	links:
+		- "hhvm:hhvm"
+
+hhvm:
+	image: hhvm:latest
+	volumes:
+		- "/path/to/project:/home/docker:rw"
 ```
