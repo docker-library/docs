@@ -13,9 +13,9 @@ Two methods (CLI vs FastCGI):
 ## CLI mode
 
 ```console
-$ docker run -v /foo.php:/foo.php foo.php
 $ docker run -v /foo.php:/foo.php hhvm foo.php
-$ docker run -v /foo.php:/foo.php php foo.php
+$ docker run -v /foo.php:/foo.php hhvm hhvm foo.php
+$ docker run -v /foo.php:/foo.php hhvm php foo.php
 ```
 
 ## FastCGI mode
@@ -43,7 +43,7 @@ $ docker run --name hhvm -d -p 9000:9000 hhvm
 
 ### If I want use HHVM with Nginx container
 
-Nginx configuration (nginx.conf)
+Nginx configuration (default.conf)
 ```
 server {
     listen 80;
@@ -62,7 +62,7 @@ server {
 
 ```console
 $ docker run --name my_hhvm_container -v /path/to/project:/home/docker:rw -d hhvm:latest
-$ docker run --name my_nginx_container -v /path/to/nginx.conf:/etc/nginx/nginx.conf:ro -v /path/to/project:/home/docker:ro --link my_hhvm_container:hhvm -d nginx:latest
+$ docker run --name my_nginx_container -v /path/to/default.conf:/etc/nginx/conf.d/default.conf:ro -v /path/to/project:/home/docker:ro --link my_hhvm_container:hhvm -d nginx:latest
 ```
 
 #### With docker-compose
