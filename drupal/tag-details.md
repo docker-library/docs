@@ -2,22 +2,22 @@
 
 # Tags of `drupal`
 
--	[`drupal:7.40`](#drupal740)
+-	[`drupal:7.41`](#drupal741)
 -	[`drupal:7`](#drupal7)
 -	[`drupal:latest`](#drupallatest)
--	[`drupal:8.0.0-rc1`](#drupal800-rc1)
+-	[`drupal:8.0.0-rc2`](#drupal800-rc2)
 -	[`drupal:8.0.0`](#drupal800)
 -	[`drupal:8.0`](#drupal80)
 -	[`drupal:8`](#drupal8)
 
-## `drupal:7.40`
+## `drupal:7.41`
 
 ```console
-$ docker pull library/drupal@sha256:b0be48fdd3770d98204932685880f176b6cc468932095eaf33520d276ccc84f6
+$ docker pull library/drupal@sha256:d6ea308dc53d0580924a89f3ebc136c9e9e4c8722db8dbd6edf1b134a753fc58
 ```
 
--	Total Virtual Size: 530.0 MB (530022060 bytes)
--	Total v2 Content-Length: 178.5 MB (178480456 bytes)
+-	Total Virtual Size: 530.0 MB (530022148 bytes)
+-	Total v2 Content-Length: 178.5 MB (178480426 bytes)
 
 ### Layers (28)
 
@@ -410,13 +410,13 @@ WORKDIR /var/www/html
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `101b9491c0608a45abf60d5549abaa03c5a507ade3b074e654d221f6f937f1aa`
+#### `23b6cd785d7f32c37e4245736e8cb657bb321a098429a867d370f01ced07375a`
 
 ```dockerfile
-ENV DRUPAL_VERSION=7.40
+ENV DRUPAL_VERSION=7.41
 ```
 
--	Created: Wed, 21 Oct 2015 02:11:43 GMT
+-	Created: Thu, 22 Oct 2015 23:32:36 GMT
 -	Parent Layer: `c4d6b253fc5925ac9f26490f5e0d2acc7d94c38e47864c79d2e79fcddbc230fe`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -424,21 +424,21 @@ ENV DRUPAL_VERSION=7.40
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fccd996b4ec200be06ef8f7f1ac3fdf301453da3d12bcae29ac61b167097eab2`
+#### `0e0d28d5a5fd06d56919ca668f6cc8799fe2a6e1c03b4d249d272b24c6039258`
 
 ```dockerfile
-ENV DRUPAL_MD5=d4509f13c23999a76e61ec4d5ccfaf26
+ENV DRUPAL_MD5=7636e75e8be213455b4ac7911ce5801f
 ```
 
--	Created: Wed, 21 Oct 2015 02:11:44 GMT
--	Parent Layer: `101b9491c0608a45abf60d5549abaa03c5a507ade3b074e654d221f6f937f1aa`
+-	Created: Thu, 22 Oct 2015 23:32:37 GMT
+-	Parent Layer: `23b6cd785d7f32c37e4245736e8cb657bb321a098429a867d370f01ced07375a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4d19adcebd7b4c8beb4fc6227ac88e28f19a8b4690a1585ae6fa9cb2338d3b1a`
+#### `df7b5c6db130ca34bf5b237d9b51f053481d5ca5878c35be54d5134692a187a4`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -448,22 +448,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 21 Oct 2015 02:11:46 GMT
--	Parent Layer: `fccd996b4ec200be06ef8f7f1ac3fdf301453da3d12bcae29ac61b167097eab2`
+-	Created: Thu, 22 Oct 2015 23:32:39 GMT
+-	Parent Layer: `0e0d28d5a5fd06d56919ca668f6cc8799fe2a6e1c03b4d249d272b24c6039258`
 -	Docker Version: 1.8.2
--	Virtual Size: 12.4 MB (12438890 bytes)
--	v2 Blob: `sha256:6dd075d38a172deb9f8742dcc19cb6db13eb27e1cb7c4c1deff727aa336cefdf`
--	v2 Content-Length: 3.3 MB (3254991 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:06:03 GMT
+-	Virtual Size: 12.4 MB (12438978 bytes)
+-	v2 Blob: `sha256:28bb1f0d7e9cfb223902ed2985ad593661ddc740ec0bac46c2ca9e084cc0dfff`
+-	v2 Content-Length: 3.3 MB (3254961 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:30:34 GMT
 
 ## `drupal:7`
 
 ```console
-$ docker pull library/drupal@sha256:7a224a52eee1104ecaafb48b3d5813dadbc8d5d88df59cdccc6ed0c7ddaeba31
+$ docker pull library/drupal@sha256:38443984f8b7f97cdbab82aac2c5fcb662dce7c2747a99d5a82da2d073b805b8
 ```
 
--	Total Virtual Size: 530.0 MB (530022060 bytes)
--	Total v2 Content-Length: 178.5 MB (178480456 bytes)
+-	Total Virtual Size: 530.0 MB (530022148 bytes)
+-	Total v2 Content-Length: 178.5 MB (178480426 bytes)
 
 ### Layers (28)
 
@@ -856,13 +856,13 @@ WORKDIR /var/www/html
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `101b9491c0608a45abf60d5549abaa03c5a507ade3b074e654d221f6f937f1aa`
+#### `23b6cd785d7f32c37e4245736e8cb657bb321a098429a867d370f01ced07375a`
 
 ```dockerfile
-ENV DRUPAL_VERSION=7.40
+ENV DRUPAL_VERSION=7.41
 ```
 
--	Created: Wed, 21 Oct 2015 02:11:43 GMT
+-	Created: Thu, 22 Oct 2015 23:32:36 GMT
 -	Parent Layer: `c4d6b253fc5925ac9f26490f5e0d2acc7d94c38e47864c79d2e79fcddbc230fe`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -870,21 +870,21 @@ ENV DRUPAL_VERSION=7.40
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fccd996b4ec200be06ef8f7f1ac3fdf301453da3d12bcae29ac61b167097eab2`
+#### `0e0d28d5a5fd06d56919ca668f6cc8799fe2a6e1c03b4d249d272b24c6039258`
 
 ```dockerfile
-ENV DRUPAL_MD5=d4509f13c23999a76e61ec4d5ccfaf26
+ENV DRUPAL_MD5=7636e75e8be213455b4ac7911ce5801f
 ```
 
--	Created: Wed, 21 Oct 2015 02:11:44 GMT
--	Parent Layer: `101b9491c0608a45abf60d5549abaa03c5a507ade3b074e654d221f6f937f1aa`
+-	Created: Thu, 22 Oct 2015 23:32:37 GMT
+-	Parent Layer: `23b6cd785d7f32c37e4245736e8cb657bb321a098429a867d370f01ced07375a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4d19adcebd7b4c8beb4fc6227ac88e28f19a8b4690a1585ae6fa9cb2338d3b1a`
+#### `df7b5c6db130ca34bf5b237d9b51f053481d5ca5878c35be54d5134692a187a4`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -894,22 +894,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 21 Oct 2015 02:11:46 GMT
--	Parent Layer: `fccd996b4ec200be06ef8f7f1ac3fdf301453da3d12bcae29ac61b167097eab2`
+-	Created: Thu, 22 Oct 2015 23:32:39 GMT
+-	Parent Layer: `0e0d28d5a5fd06d56919ca668f6cc8799fe2a6e1c03b4d249d272b24c6039258`
 -	Docker Version: 1.8.2
--	Virtual Size: 12.4 MB (12438890 bytes)
--	v2 Blob: `sha256:6dd075d38a172deb9f8742dcc19cb6db13eb27e1cb7c4c1deff727aa336cefdf`
--	v2 Content-Length: 3.3 MB (3254991 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:06:03 GMT
+-	Virtual Size: 12.4 MB (12438978 bytes)
+-	v2 Blob: `sha256:28bb1f0d7e9cfb223902ed2985ad593661ddc740ec0bac46c2ca9e084cc0dfff`
+-	v2 Content-Length: 3.3 MB (3254961 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:30:34 GMT
 
 ## `drupal:latest`
 
 ```console
-$ docker pull library/drupal@sha256:2aabcd420eb711d663a834bbc3975ed401f9d387391780114f84e174d6387ff4
+$ docker pull library/drupal@sha256:766f4eefc0216225f23c8c07e29f8946c57576dde3233d3fbaeb73f0b6ae6704
 ```
 
--	Total Virtual Size: 530.0 MB (530022060 bytes)
--	Total v2 Content-Length: 178.5 MB (178480456 bytes)
+-	Total Virtual Size: 530.0 MB (530022148 bytes)
+-	Total v2 Content-Length: 178.5 MB (178480426 bytes)
 
 ### Layers (28)
 
@@ -1302,13 +1302,13 @@ WORKDIR /var/www/html
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `101b9491c0608a45abf60d5549abaa03c5a507ade3b074e654d221f6f937f1aa`
+#### `23b6cd785d7f32c37e4245736e8cb657bb321a098429a867d370f01ced07375a`
 
 ```dockerfile
-ENV DRUPAL_VERSION=7.40
+ENV DRUPAL_VERSION=7.41
 ```
 
--	Created: Wed, 21 Oct 2015 02:11:43 GMT
+-	Created: Thu, 22 Oct 2015 23:32:36 GMT
 -	Parent Layer: `c4d6b253fc5925ac9f26490f5e0d2acc7d94c38e47864c79d2e79fcddbc230fe`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -1316,21 +1316,21 @@ ENV DRUPAL_VERSION=7.40
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fccd996b4ec200be06ef8f7f1ac3fdf301453da3d12bcae29ac61b167097eab2`
+#### `0e0d28d5a5fd06d56919ca668f6cc8799fe2a6e1c03b4d249d272b24c6039258`
 
 ```dockerfile
-ENV DRUPAL_MD5=d4509f13c23999a76e61ec4d5ccfaf26
+ENV DRUPAL_MD5=7636e75e8be213455b4ac7911ce5801f
 ```
 
--	Created: Wed, 21 Oct 2015 02:11:44 GMT
--	Parent Layer: `101b9491c0608a45abf60d5549abaa03c5a507ade3b074e654d221f6f937f1aa`
+-	Created: Thu, 22 Oct 2015 23:32:37 GMT
+-	Parent Layer: `23b6cd785d7f32c37e4245736e8cb657bb321a098429a867d370f01ced07375a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4d19adcebd7b4c8beb4fc6227ac88e28f19a8b4690a1585ae6fa9cb2338d3b1a`
+#### `df7b5c6db130ca34bf5b237d9b51f053481d5ca5878c35be54d5134692a187a4`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -1340,22 +1340,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 21 Oct 2015 02:11:46 GMT
--	Parent Layer: `fccd996b4ec200be06ef8f7f1ac3fdf301453da3d12bcae29ac61b167097eab2`
+-	Created: Thu, 22 Oct 2015 23:32:39 GMT
+-	Parent Layer: `0e0d28d5a5fd06d56919ca668f6cc8799fe2a6e1c03b4d249d272b24c6039258`
 -	Docker Version: 1.8.2
--	Virtual Size: 12.4 MB (12438890 bytes)
--	v2 Blob: `sha256:6dd075d38a172deb9f8742dcc19cb6db13eb27e1cb7c4c1deff727aa336cefdf`
--	v2 Content-Length: 3.3 MB (3254991 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:06:03 GMT
+-	Virtual Size: 12.4 MB (12438978 bytes)
+-	v2 Blob: `sha256:28bb1f0d7e9cfb223902ed2985ad593661ddc740ec0bac46c2ca9e084cc0dfff`
+-	v2 Content-Length: 3.3 MB (3254961 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:30:34 GMT
 
-## `drupal:8.0.0-rc1`
+## `drupal:8.0.0-rc2`
 
 ```console
-$ docker pull library/drupal@sha256:bb40c7bb5df98e267ff436bd65bc3a3816b9474de4ccb6b56433ca62e7753755
+$ docker pull library/drupal@sha256:0a8df1a2a796f7289ba30847968a459e3d3e2961e17ba1f1ca279a2e49e73619
 ```
 
--	Total Virtual Size: 574.8 MB (574760352 bytes)
--	Total v2 Content-Length: 187.5 MB (187471320 bytes)
+-	Total Virtual Size: 569.6 MB (569552207 bytes)
+-	Total v2 Content-Length: 186.7 MB (186710151 bytes)
 
 ### Layers (29)
 
@@ -1769,13 +1769,13 @@ WORKDIR /var/www/html
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5e69280e27900837f659f0287ba562d8665b261946aa71bd99c100ef385b89d4`
+#### `81ed86a0a9689a843a99a225d3d935eeca91beb71c0313075bd88b113b1f4caf`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-rc1
+ENV DRUPAL_VERSION=8.0.0-rc2
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:35 GMT
+-	Created: Thu, 22 Oct 2015 23:33:57 GMT
 -	Parent Layer: `441010aa7bd1ee54e55def703f9358c8c166d5fc1c5c2f0487b45f50a30a3341`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -1783,21 +1783,21 @@ ENV DRUPAL_VERSION=8.0.0-rc1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8176f413b8a2e670eb5fbfe23807ed94549c46d73e078b946f55b72a9cf561af`
+#### `4929d002ca60aeba27b97d86c9c2a0b7dcba4af37c1543da9fec86de63b3417e`
 
 ```dockerfile
-ENV DRUPAL_MD5=58841f02728a85c105ce988e5605e4e5
+ENV DRUPAL_MD5=66f0032af1350410a502f3a8cde5ab3f
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:36 GMT
--	Parent Layer: `5e69280e27900837f659f0287ba562d8665b261946aa71bd99c100ef385b89d4`
+-	Created: Thu, 22 Oct 2015 23:33:58 GMT
+-	Parent Layer: `81ed86a0a9689a843a99a225d3d935eeca91beb71c0313075bd88b113b1f4caf`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba66a97a6ea7663bd8c17aea49eba650c1ba9b4dde388c8b0e5c9674349afc3e`
+#### `76145f1011d309644cc41cc7ef36ea33e3bef38cd3e48795fe81b059f829b5e8`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -1807,22 +1807,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:40 GMT
--	Parent Layer: `8176f413b8a2e670eb5fbfe23807ed94549c46d73e078b946f55b72a9cf561af`
+-	Created: Thu, 22 Oct 2015 23:34:01 GMT
+-	Parent Layer: `4929d002ca60aeba27b97d86c9c2a0b7dcba4af37c1543da9fec86de63b3417e`
 -	Docker Version: 1.8.2
--	Virtual Size: 54.3 MB (54297654 bytes)
--	v2 Blob: `sha256:293a702840218eab2730e4f7f6d3138f8163765bd9ea8d1bcad407745db7d82a`
--	v2 Content-Length: 11.5 MB (11458260 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:11:30 GMT
+-	Virtual Size: 49.1 MB (49089509 bytes)
+-	v2 Blob: `sha256:cb6649f4fd998e2ee2eef8a1b78e44a42a3ab3e934f661605a6b3e3e3a8fd81a`
+-	v2 Content-Length: 10.7 MB (10697091 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:32:38 GMT
 
 ## `drupal:8.0.0`
 
 ```console
-$ docker pull library/drupal@sha256:1fb86ab02d9242eda9ee5afe1c6a8eb622c1fc316d3fac81ed554900821f8ac3
+$ docker pull library/drupal@sha256:6817eb8fe3dd9357c63692e5035c08ac91cd1135a5281e2ee408209947619944
 ```
 
--	Total Virtual Size: 574.8 MB (574760352 bytes)
--	Total v2 Content-Length: 187.5 MB (187471320 bytes)
+-	Total Virtual Size: 569.6 MB (569552207 bytes)
+-	Total v2 Content-Length: 186.7 MB (186710151 bytes)
 
 ### Layers (29)
 
@@ -2236,13 +2236,13 @@ WORKDIR /var/www/html
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5e69280e27900837f659f0287ba562d8665b261946aa71bd99c100ef385b89d4`
+#### `81ed86a0a9689a843a99a225d3d935eeca91beb71c0313075bd88b113b1f4caf`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-rc1
+ENV DRUPAL_VERSION=8.0.0-rc2
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:35 GMT
+-	Created: Thu, 22 Oct 2015 23:33:57 GMT
 -	Parent Layer: `441010aa7bd1ee54e55def703f9358c8c166d5fc1c5c2f0487b45f50a30a3341`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -2250,21 +2250,21 @@ ENV DRUPAL_VERSION=8.0.0-rc1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8176f413b8a2e670eb5fbfe23807ed94549c46d73e078b946f55b72a9cf561af`
+#### `4929d002ca60aeba27b97d86c9c2a0b7dcba4af37c1543da9fec86de63b3417e`
 
 ```dockerfile
-ENV DRUPAL_MD5=58841f02728a85c105ce988e5605e4e5
+ENV DRUPAL_MD5=66f0032af1350410a502f3a8cde5ab3f
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:36 GMT
--	Parent Layer: `5e69280e27900837f659f0287ba562d8665b261946aa71bd99c100ef385b89d4`
+-	Created: Thu, 22 Oct 2015 23:33:58 GMT
+-	Parent Layer: `81ed86a0a9689a843a99a225d3d935eeca91beb71c0313075bd88b113b1f4caf`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba66a97a6ea7663bd8c17aea49eba650c1ba9b4dde388c8b0e5c9674349afc3e`
+#### `76145f1011d309644cc41cc7ef36ea33e3bef38cd3e48795fe81b059f829b5e8`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -2274,22 +2274,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:40 GMT
--	Parent Layer: `8176f413b8a2e670eb5fbfe23807ed94549c46d73e078b946f55b72a9cf561af`
+-	Created: Thu, 22 Oct 2015 23:34:01 GMT
+-	Parent Layer: `4929d002ca60aeba27b97d86c9c2a0b7dcba4af37c1543da9fec86de63b3417e`
 -	Docker Version: 1.8.2
--	Virtual Size: 54.3 MB (54297654 bytes)
--	v2 Blob: `sha256:293a702840218eab2730e4f7f6d3138f8163765bd9ea8d1bcad407745db7d82a`
--	v2 Content-Length: 11.5 MB (11458260 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:11:30 GMT
+-	Virtual Size: 49.1 MB (49089509 bytes)
+-	v2 Blob: `sha256:cb6649f4fd998e2ee2eef8a1b78e44a42a3ab3e934f661605a6b3e3e3a8fd81a`
+-	v2 Content-Length: 10.7 MB (10697091 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:32:38 GMT
 
 ## `drupal:8.0`
 
 ```console
-$ docker pull library/drupal@sha256:96c350bb9275d0c899cab4c49567fe3f5b9c4a6821ffcebc183adf5996554dd2
+$ docker pull library/drupal@sha256:315d969c2bae9ba5b41e8cf21495ac79f52862539c9c60fb4e8ed31b1f8a3cb6
 ```
 
--	Total Virtual Size: 574.8 MB (574760352 bytes)
--	Total v2 Content-Length: 187.5 MB (187471320 bytes)
+-	Total Virtual Size: 569.6 MB (569552207 bytes)
+-	Total v2 Content-Length: 186.7 MB (186710151 bytes)
 
 ### Layers (29)
 
@@ -2703,13 +2703,13 @@ WORKDIR /var/www/html
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5e69280e27900837f659f0287ba562d8665b261946aa71bd99c100ef385b89d4`
+#### `81ed86a0a9689a843a99a225d3d935eeca91beb71c0313075bd88b113b1f4caf`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-rc1
+ENV DRUPAL_VERSION=8.0.0-rc2
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:35 GMT
+-	Created: Thu, 22 Oct 2015 23:33:57 GMT
 -	Parent Layer: `441010aa7bd1ee54e55def703f9358c8c166d5fc1c5c2f0487b45f50a30a3341`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -2717,21 +2717,21 @@ ENV DRUPAL_VERSION=8.0.0-rc1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8176f413b8a2e670eb5fbfe23807ed94549c46d73e078b946f55b72a9cf561af`
+#### `4929d002ca60aeba27b97d86c9c2a0b7dcba4af37c1543da9fec86de63b3417e`
 
 ```dockerfile
-ENV DRUPAL_MD5=58841f02728a85c105ce988e5605e4e5
+ENV DRUPAL_MD5=66f0032af1350410a502f3a8cde5ab3f
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:36 GMT
--	Parent Layer: `5e69280e27900837f659f0287ba562d8665b261946aa71bd99c100ef385b89d4`
+-	Created: Thu, 22 Oct 2015 23:33:58 GMT
+-	Parent Layer: `81ed86a0a9689a843a99a225d3d935eeca91beb71c0313075bd88b113b1f4caf`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba66a97a6ea7663bd8c17aea49eba650c1ba9b4dde388c8b0e5c9674349afc3e`
+#### `76145f1011d309644cc41cc7ef36ea33e3bef38cd3e48795fe81b059f829b5e8`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -2741,22 +2741,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:40 GMT
--	Parent Layer: `8176f413b8a2e670eb5fbfe23807ed94549c46d73e078b946f55b72a9cf561af`
+-	Created: Thu, 22 Oct 2015 23:34:01 GMT
+-	Parent Layer: `4929d002ca60aeba27b97d86c9c2a0b7dcba4af37c1543da9fec86de63b3417e`
 -	Docker Version: 1.8.2
--	Virtual Size: 54.3 MB (54297654 bytes)
--	v2 Blob: `sha256:293a702840218eab2730e4f7f6d3138f8163765bd9ea8d1bcad407745db7d82a`
--	v2 Content-Length: 11.5 MB (11458260 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:11:30 GMT
+-	Virtual Size: 49.1 MB (49089509 bytes)
+-	v2 Blob: `sha256:cb6649f4fd998e2ee2eef8a1b78e44a42a3ab3e934f661605a6b3e3e3a8fd81a`
+-	v2 Content-Length: 10.7 MB (10697091 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:32:38 GMT
 
 ## `drupal:8`
 
 ```console
-$ docker pull library/drupal@sha256:b59cbdfc1e2a21cafe15973c1cb3f0fae16c3493f96e5cdc5e60774a0dd4fc27
+$ docker pull library/drupal@sha256:a09ec01f91fdd7005d483647f5a4f8af2a284000c78fd705190002a0b202ad11
 ```
 
--	Total Virtual Size: 574.8 MB (574760352 bytes)
--	Total v2 Content-Length: 187.5 MB (187471320 bytes)
+-	Total Virtual Size: 569.6 MB (569552207 bytes)
+-	Total v2 Content-Length: 186.7 MB (186710151 bytes)
 
 ### Layers (29)
 
@@ -3170,13 +3170,13 @@ WORKDIR /var/www/html
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5e69280e27900837f659f0287ba562d8665b261946aa71bd99c100ef385b89d4`
+#### `81ed86a0a9689a843a99a225d3d935eeca91beb71c0313075bd88b113b1f4caf`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-rc1
+ENV DRUPAL_VERSION=8.0.0-rc2
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:35 GMT
+-	Created: Thu, 22 Oct 2015 23:33:57 GMT
 -	Parent Layer: `441010aa7bd1ee54e55def703f9358c8c166d5fc1c5c2f0487b45f50a30a3341`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -3184,21 +3184,21 @@ ENV DRUPAL_VERSION=8.0.0-rc1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `8176f413b8a2e670eb5fbfe23807ed94549c46d73e078b946f55b72a9cf561af`
+#### `4929d002ca60aeba27b97d86c9c2a0b7dcba4af37c1543da9fec86de63b3417e`
 
 ```dockerfile
-ENV DRUPAL_MD5=58841f02728a85c105ce988e5605e4e5
+ENV DRUPAL_MD5=66f0032af1350410a502f3a8cde5ab3f
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:36 GMT
--	Parent Layer: `5e69280e27900837f659f0287ba562d8665b261946aa71bd99c100ef385b89d4`
+-	Created: Thu, 22 Oct 2015 23:33:58 GMT
+-	Parent Layer: `81ed86a0a9689a843a99a225d3d935eeca91beb71c0313075bd88b113b1f4caf`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `ba66a97a6ea7663bd8c17aea49eba650c1ba9b4dde388c8b0e5c9674349afc3e`
+#### `76145f1011d309644cc41cc7ef36ea33e3bef38cd3e48795fe81b059f829b5e8`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -3208,10 +3208,10 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 21 Oct 2015 02:15:40 GMT
--	Parent Layer: `8176f413b8a2e670eb5fbfe23807ed94549c46d73e078b946f55b72a9cf561af`
+-	Created: Thu, 22 Oct 2015 23:34:01 GMT
+-	Parent Layer: `4929d002ca60aeba27b97d86c9c2a0b7dcba4af37c1543da9fec86de63b3417e`
 -	Docker Version: 1.8.2
--	Virtual Size: 54.3 MB (54297654 bytes)
--	v2 Blob: `sha256:293a702840218eab2730e4f7f6d3138f8163765bd9ea8d1bcad407745db7d82a`
--	v2 Content-Length: 11.5 MB (11458260 bytes)
--	v2 Last-Modified: Wed, 21 Oct 2015 04:11:30 GMT
+-	Virtual Size: 49.1 MB (49089509 bytes)
+-	v2 Blob: `sha256:cb6649f4fd998e2ee2eef8a1b78e44a42a3ab3e934f661605a6b3e3e3a8fd81a`
+-	v2 Content-Length: 10.7 MB (10697091 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 00:32:38 GMT
