@@ -11,8 +11,8 @@
 -	[`logstash:1.5`](#logstash15)
 -	[`logstash:1`](#logstash1)
 -	[`logstash:latest`](#logstashlatest)
--	[`logstash:2.0.0-beta3-1`](#logstash200-beta3-1)
--	[`logstash:2.0.0-beta3`](#logstash200-beta3)
+-	[`logstash:2.0.0-rc1-1`](#logstash200-rc1-1)
+-	[`logstash:2.0.0-rc1`](#logstash200-rc1)
 -	[`logstash:2.0.0`](#logstash200)
 -	[`logstash:2.0`](#logstash20)
 -	[`logstash:2`](#logstash2)
@@ -3167,14 +3167,14 @@ CMD ["logstash" "agent"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `logstash:2.0.0-beta3-1`
+## `logstash:2.0.0-rc1-1`
 
 ```console
-$ docker pull library/logstash@sha256:017ecd41c2517a7866f7f971947a0f768385d12112e61b8ea8459be059b8efd1
+$ docker pull library/logstash@sha256:bb21a56e555fa0510ddfc6d8b67e64d43907dae299836d57925b59629c3df469
 ```
 
--	Total Virtual Size: 615.7 MB (615672852 bytes)
--	Total v2 Content-Length: 268.0 MB (267995850 bytes)
+-	Total Virtual Size: 630.5 MB (630504460 bytes)
+-	Total v2 Content-Length: 276.4 MB (276381786 bytes)
 
 ### Layers (23)
 
@@ -3416,13 +3416,13 @@ ENV LOGSTASH_MAJOR=2.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `07a646ac1039ce0ccb3faac71852f53e4f63cb09fc23918a152c268495f998ed`
+#### `78570dcf28b61ff60093245457d3c577e4252efa838d5271953630fbc872fd97`
 
 ```dockerfile
-ENV LOGSTASH_VERSION=1:2.0.0-beta3-1
+ENV LOGSTASH_VERSION=1:2.0.0-rc1-1
 ```
 
--	Created: Tue, 20 Oct 2015 22:12:50 GMT
+-	Created: Fri, 23 Oct 2015 19:09:33 GMT
 -	Parent Layer: `da7b5ce433f2c45f0ac8cd2d008df4a3ccbaf01b76ecd98db9ffb5a8f82f9f62`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -3430,21 +3430,21 @@ ENV LOGSTASH_VERSION=1:2.0.0-beta3-1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00bd64bd1630b4debba168ba74a8f3c13b6f953f2dca05afdf681aa4854f4f6e`
+#### `e80d1ce8cec36afab6f4b4859a2c0b70ff02db52eac1de413bbdeb9d7b136b59`
 
 ```dockerfile
 RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 20 Oct 2015 22:12:51 GMT
--	Parent Layer: `07a646ac1039ce0ccb3faac71852f53e4f63cb09fc23918a152c268495f998ed`
+-	Created: Fri, 23 Oct 2015 19:09:36 GMT
+-	Parent Layer: `78570dcf28b61ff60093245457d3c577e4252efa838d5271953630fbc872fd97`
 -	Docker Version: 1.8.2
 -	Virtual Size: 70.0 B
--	v2 Blob: `sha256:9a9c8333d499ac9b29040f3561cc2e8062be61305dcb5350d1f88e61d851301f`
+-	v2 Blob: `sha256:51e09aaf66f75942144d4541b5481d2db805c96bc2101b48331965922a1bf63b`
 -	v2 Content-Length: 231.0 B
--	v2 Last-Modified: Tue, 20 Oct 2015 23:49:57 GMT
+-	v2 Last-Modified: Fri, 23 Oct 2015 19:43:04 GMT
 
-#### `215f424a2c1f1f66b9d72611173dae20e6c56c2e057244ff3d4de1b22a12eacc`
+#### `62b99cf210be729631da4fe986728346bd81c8f6ce59df8490b2b2bfda66d589`
 
 ```dockerfile
 RUN set -x \
@@ -3453,78 +3453,78 @@ RUN set -x \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:35 GMT
--	Parent Layer: `00bd64bd1630b4debba168ba74a8f3c13b6f953f2dca05afdf681aa4854f4f6e`
+-	Created: Fri, 23 Oct 2015 19:10:31 GMT
+-	Parent Layer: `e80d1ce8cec36afab6f4b4859a2c0b70ff02db52eac1de413bbdeb9d7b136b59`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.4 MB (125382522 bytes)
--	v2 Blob: `sha256:a62147dc889c5dd79efa0654325d5fe3459ce26eea43b9699fc585aab576f402`
--	v2 Content-Length: 73.1 MB (73128346 bytes)
--	v2 Last-Modified: Tue, 20 Oct 2015 23:49:50 GMT
+-	Virtual Size: 140.2 MB (140214130 bytes)
+-	v2 Blob: `sha256:e7f9dde0ec438aa86826c75b910132a0afb32195173a46719ab216269e94fad6`
+-	v2 Content-Length: 81.5 MB (81514282 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 19:42:51 GMT
 
-#### `0606c3f9b8daa9ea188ccb6b2e78aeb6a49ebc0fd849080286059eb5863d1ad2`
+#### `29aa1ae1a6e4281c1288914e2b8d2e28a26b9ff983628b60758722dc6ff75c06`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:39 GMT
--	Parent Layer: `215f424a2c1f1f66b9d72611173dae20e6c56c2e057244ff3d4de1b22a12eacc`
+-	Created: Fri, 23 Oct 2015 19:10:38 GMT
+-	Parent Layer: `62b99cf210be729631da4fe986728346bd81c8f6ce59df8490b2b2bfda66d589`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7d49b08c85a7526b8037eecbc58ae071c9be469c4a324aaad46e658645bf5213`
+#### `c03229c96a02e0b78f2115be5300813a5b18ee93aa2ed5a8f7d4f27252f2bc35`
 
 ```dockerfile
 COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `0606c3f9b8daa9ea188ccb6b2e78aeb6a49ebc0fd849080286059eb5863d1ad2`
+-	Created: Fri, 23 Oct 2015 19:10:38 GMT
+-	Parent Layer: `29aa1ae1a6e4281c1288914e2b8d2e28a26b9ff983628b60758722dc6ff75c06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
 -	v2 Content-Length: 252.0 B
 -	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
 
-#### `f9d8eeddb6e7d5ee264cd1b9ecbf25e2a87c8b17cb9f21912810971fb6dc421d`
+#### `81135656c6517c046bd16504a64b0b29dc333b9d7a6434d3f250d13c7fc4f0f2`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `7d49b08c85a7526b8037eecbc58ae071c9be469c4a324aaad46e658645bf5213`
+-	Created: Fri, 23 Oct 2015 19:10:39 GMT
+-	Parent Layer: `c03229c96a02e0b78f2115be5300813a5b18ee93aa2ed5a8f7d4f27252f2bc35`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a6564450275463773b6a1b733830ea32d88ffa01f54694641dd1fa3b00b3c92e`
+#### `a0522c648dc032bb84eb45dde37aff6f4eb8bfbe8ebb237bd16fb0f9498077b1`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `f9d8eeddb6e7d5ee264cd1b9ecbf25e2a87c8b17cb9f21912810971fb6dc421d`
+-	Created: Fri, 23 Oct 2015 19:10:39 GMT
+-	Parent Layer: `81135656c6517c046bd16504a64b0b29dc333b9d7a6434d3f250d13c7fc4f0f2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `logstash:2.0.0-beta3`
+## `logstash:2.0.0-rc1`
 
 ```console
-$ docker pull library/logstash@sha256:7c06009cda2172794b9bac519436dc9d5bb981fbdfb53b2d2179df923cf77628
+$ docker pull library/logstash@sha256:96e5437461fe916e90bb2f96c9fce28021f6000c86c60fe008381fd8aafd28fe
 ```
 
--	Total Virtual Size: 615.7 MB (615672852 bytes)
--	Total v2 Content-Length: 268.0 MB (267995850 bytes)
+-	Total Virtual Size: 630.5 MB (630504460 bytes)
+-	Total v2 Content-Length: 276.4 MB (276381786 bytes)
 
 ### Layers (23)
 
@@ -3766,13 +3766,13 @@ ENV LOGSTASH_MAJOR=2.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `07a646ac1039ce0ccb3faac71852f53e4f63cb09fc23918a152c268495f998ed`
+#### `78570dcf28b61ff60093245457d3c577e4252efa838d5271953630fbc872fd97`
 
 ```dockerfile
-ENV LOGSTASH_VERSION=1:2.0.0-beta3-1
+ENV LOGSTASH_VERSION=1:2.0.0-rc1-1
 ```
 
--	Created: Tue, 20 Oct 2015 22:12:50 GMT
+-	Created: Fri, 23 Oct 2015 19:09:33 GMT
 -	Parent Layer: `da7b5ce433f2c45f0ac8cd2d008df4a3ccbaf01b76ecd98db9ffb5a8f82f9f62`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -3780,21 +3780,21 @@ ENV LOGSTASH_VERSION=1:2.0.0-beta3-1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00bd64bd1630b4debba168ba74a8f3c13b6f953f2dca05afdf681aa4854f4f6e`
+#### `e80d1ce8cec36afab6f4b4859a2c0b70ff02db52eac1de413bbdeb9d7b136b59`
 
 ```dockerfile
 RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 20 Oct 2015 22:12:51 GMT
--	Parent Layer: `07a646ac1039ce0ccb3faac71852f53e4f63cb09fc23918a152c268495f998ed`
+-	Created: Fri, 23 Oct 2015 19:09:36 GMT
+-	Parent Layer: `78570dcf28b61ff60093245457d3c577e4252efa838d5271953630fbc872fd97`
 -	Docker Version: 1.8.2
 -	Virtual Size: 70.0 B
--	v2 Blob: `sha256:9a9c8333d499ac9b29040f3561cc2e8062be61305dcb5350d1f88e61d851301f`
+-	v2 Blob: `sha256:51e09aaf66f75942144d4541b5481d2db805c96bc2101b48331965922a1bf63b`
 -	v2 Content-Length: 231.0 B
--	v2 Last-Modified: Tue, 20 Oct 2015 23:49:57 GMT
+-	v2 Last-Modified: Fri, 23 Oct 2015 19:43:04 GMT
 
-#### `215f424a2c1f1f66b9d72611173dae20e6c56c2e057244ff3d4de1b22a12eacc`
+#### `62b99cf210be729631da4fe986728346bd81c8f6ce59df8490b2b2bfda66d589`
 
 ```dockerfile
 RUN set -x \
@@ -3803,64 +3803,64 @@ RUN set -x \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:35 GMT
--	Parent Layer: `00bd64bd1630b4debba168ba74a8f3c13b6f953f2dca05afdf681aa4854f4f6e`
+-	Created: Fri, 23 Oct 2015 19:10:31 GMT
+-	Parent Layer: `e80d1ce8cec36afab6f4b4859a2c0b70ff02db52eac1de413bbdeb9d7b136b59`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.4 MB (125382522 bytes)
--	v2 Blob: `sha256:a62147dc889c5dd79efa0654325d5fe3459ce26eea43b9699fc585aab576f402`
--	v2 Content-Length: 73.1 MB (73128346 bytes)
--	v2 Last-Modified: Tue, 20 Oct 2015 23:49:50 GMT
+-	Virtual Size: 140.2 MB (140214130 bytes)
+-	v2 Blob: `sha256:e7f9dde0ec438aa86826c75b910132a0afb32195173a46719ab216269e94fad6`
+-	v2 Content-Length: 81.5 MB (81514282 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 19:42:51 GMT
 
-#### `0606c3f9b8daa9ea188ccb6b2e78aeb6a49ebc0fd849080286059eb5863d1ad2`
+#### `29aa1ae1a6e4281c1288914e2b8d2e28a26b9ff983628b60758722dc6ff75c06`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:39 GMT
--	Parent Layer: `215f424a2c1f1f66b9d72611173dae20e6c56c2e057244ff3d4de1b22a12eacc`
+-	Created: Fri, 23 Oct 2015 19:10:38 GMT
+-	Parent Layer: `62b99cf210be729631da4fe986728346bd81c8f6ce59df8490b2b2bfda66d589`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7d49b08c85a7526b8037eecbc58ae071c9be469c4a324aaad46e658645bf5213`
+#### `c03229c96a02e0b78f2115be5300813a5b18ee93aa2ed5a8f7d4f27252f2bc35`
 
 ```dockerfile
 COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `0606c3f9b8daa9ea188ccb6b2e78aeb6a49ebc0fd849080286059eb5863d1ad2`
+-	Created: Fri, 23 Oct 2015 19:10:38 GMT
+-	Parent Layer: `29aa1ae1a6e4281c1288914e2b8d2e28a26b9ff983628b60758722dc6ff75c06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
 -	v2 Content-Length: 252.0 B
 -	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
 
-#### `f9d8eeddb6e7d5ee264cd1b9ecbf25e2a87c8b17cb9f21912810971fb6dc421d`
+#### `81135656c6517c046bd16504a64b0b29dc333b9d7a6434d3f250d13c7fc4f0f2`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `7d49b08c85a7526b8037eecbc58ae071c9be469c4a324aaad46e658645bf5213`
+-	Created: Fri, 23 Oct 2015 19:10:39 GMT
+-	Parent Layer: `c03229c96a02e0b78f2115be5300813a5b18ee93aa2ed5a8f7d4f27252f2bc35`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a6564450275463773b6a1b733830ea32d88ffa01f54694641dd1fa3b00b3c92e`
+#### `a0522c648dc032bb84eb45dde37aff6f4eb8bfbe8ebb237bd16fb0f9498077b1`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `f9d8eeddb6e7d5ee264cd1b9ecbf25e2a87c8b17cb9f21912810971fb6dc421d`
+-	Created: Fri, 23 Oct 2015 19:10:39 GMT
+-	Parent Layer: `81135656c6517c046bd16504a64b0b29dc333b9d7a6434d3f250d13c7fc4f0f2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3870,11 +3870,11 @@ CMD ["logstash" "agent"]
 ## `logstash:2.0.0`
 
 ```console
-$ docker pull library/logstash@sha256:d21fedbfa237c149b40415d923e19220d4ea5da3c71ba65119306089dd2e34db
+$ docker pull library/logstash@sha256:5785a11ebe6e8267871c21a2860c132f8cfdb8d520e947af40945ebc670f6380
 ```
 
--	Total Virtual Size: 615.7 MB (615672852 bytes)
--	Total v2 Content-Length: 268.0 MB (267995850 bytes)
+-	Total Virtual Size: 630.5 MB (630504460 bytes)
+-	Total v2 Content-Length: 276.4 MB (276381786 bytes)
 
 ### Layers (23)
 
@@ -4116,13 +4116,13 @@ ENV LOGSTASH_MAJOR=2.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `07a646ac1039ce0ccb3faac71852f53e4f63cb09fc23918a152c268495f998ed`
+#### `78570dcf28b61ff60093245457d3c577e4252efa838d5271953630fbc872fd97`
 
 ```dockerfile
-ENV LOGSTASH_VERSION=1:2.0.0-beta3-1
+ENV LOGSTASH_VERSION=1:2.0.0-rc1-1
 ```
 
--	Created: Tue, 20 Oct 2015 22:12:50 GMT
+-	Created: Fri, 23 Oct 2015 19:09:33 GMT
 -	Parent Layer: `da7b5ce433f2c45f0ac8cd2d008df4a3ccbaf01b76ecd98db9ffb5a8f82f9f62`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -4130,21 +4130,21 @@ ENV LOGSTASH_VERSION=1:2.0.0-beta3-1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00bd64bd1630b4debba168ba74a8f3c13b6f953f2dca05afdf681aa4854f4f6e`
+#### `e80d1ce8cec36afab6f4b4859a2c0b70ff02db52eac1de413bbdeb9d7b136b59`
 
 ```dockerfile
 RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 20 Oct 2015 22:12:51 GMT
--	Parent Layer: `07a646ac1039ce0ccb3faac71852f53e4f63cb09fc23918a152c268495f998ed`
+-	Created: Fri, 23 Oct 2015 19:09:36 GMT
+-	Parent Layer: `78570dcf28b61ff60093245457d3c577e4252efa838d5271953630fbc872fd97`
 -	Docker Version: 1.8.2
 -	Virtual Size: 70.0 B
--	v2 Blob: `sha256:9a9c8333d499ac9b29040f3561cc2e8062be61305dcb5350d1f88e61d851301f`
+-	v2 Blob: `sha256:51e09aaf66f75942144d4541b5481d2db805c96bc2101b48331965922a1bf63b`
 -	v2 Content-Length: 231.0 B
--	v2 Last-Modified: Tue, 20 Oct 2015 23:49:57 GMT
+-	v2 Last-Modified: Fri, 23 Oct 2015 19:43:04 GMT
 
-#### `215f424a2c1f1f66b9d72611173dae20e6c56c2e057244ff3d4de1b22a12eacc`
+#### `62b99cf210be729631da4fe986728346bd81c8f6ce59df8490b2b2bfda66d589`
 
 ```dockerfile
 RUN set -x \
@@ -4153,64 +4153,64 @@ RUN set -x \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:35 GMT
--	Parent Layer: `00bd64bd1630b4debba168ba74a8f3c13b6f953f2dca05afdf681aa4854f4f6e`
+-	Created: Fri, 23 Oct 2015 19:10:31 GMT
+-	Parent Layer: `e80d1ce8cec36afab6f4b4859a2c0b70ff02db52eac1de413bbdeb9d7b136b59`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.4 MB (125382522 bytes)
--	v2 Blob: `sha256:a62147dc889c5dd79efa0654325d5fe3459ce26eea43b9699fc585aab576f402`
--	v2 Content-Length: 73.1 MB (73128346 bytes)
--	v2 Last-Modified: Tue, 20 Oct 2015 23:49:50 GMT
+-	Virtual Size: 140.2 MB (140214130 bytes)
+-	v2 Blob: `sha256:e7f9dde0ec438aa86826c75b910132a0afb32195173a46719ab216269e94fad6`
+-	v2 Content-Length: 81.5 MB (81514282 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 19:42:51 GMT
 
-#### `0606c3f9b8daa9ea188ccb6b2e78aeb6a49ebc0fd849080286059eb5863d1ad2`
+#### `29aa1ae1a6e4281c1288914e2b8d2e28a26b9ff983628b60758722dc6ff75c06`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:39 GMT
--	Parent Layer: `215f424a2c1f1f66b9d72611173dae20e6c56c2e057244ff3d4de1b22a12eacc`
+-	Created: Fri, 23 Oct 2015 19:10:38 GMT
+-	Parent Layer: `62b99cf210be729631da4fe986728346bd81c8f6ce59df8490b2b2bfda66d589`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7d49b08c85a7526b8037eecbc58ae071c9be469c4a324aaad46e658645bf5213`
+#### `c03229c96a02e0b78f2115be5300813a5b18ee93aa2ed5a8f7d4f27252f2bc35`
 
 ```dockerfile
 COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `0606c3f9b8daa9ea188ccb6b2e78aeb6a49ebc0fd849080286059eb5863d1ad2`
+-	Created: Fri, 23 Oct 2015 19:10:38 GMT
+-	Parent Layer: `29aa1ae1a6e4281c1288914e2b8d2e28a26b9ff983628b60758722dc6ff75c06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
 -	v2 Content-Length: 252.0 B
 -	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
 
-#### `f9d8eeddb6e7d5ee264cd1b9ecbf25e2a87c8b17cb9f21912810971fb6dc421d`
+#### `81135656c6517c046bd16504a64b0b29dc333b9d7a6434d3f250d13c7fc4f0f2`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `7d49b08c85a7526b8037eecbc58ae071c9be469c4a324aaad46e658645bf5213`
+-	Created: Fri, 23 Oct 2015 19:10:39 GMT
+-	Parent Layer: `c03229c96a02e0b78f2115be5300813a5b18ee93aa2ed5a8f7d4f27252f2bc35`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a6564450275463773b6a1b733830ea32d88ffa01f54694641dd1fa3b00b3c92e`
+#### `a0522c648dc032bb84eb45dde37aff6f4eb8bfbe8ebb237bd16fb0f9498077b1`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `f9d8eeddb6e7d5ee264cd1b9ecbf25e2a87c8b17cb9f21912810971fb6dc421d`
+-	Created: Fri, 23 Oct 2015 19:10:39 GMT
+-	Parent Layer: `81135656c6517c046bd16504a64b0b29dc333b9d7a6434d3f250d13c7fc4f0f2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4220,11 +4220,11 @@ CMD ["logstash" "agent"]
 ## `logstash:2.0`
 
 ```console
-$ docker pull library/logstash@sha256:abc6fc08d1b49ea002accaa0168ffbb69c11a690387842a61751548a9f5b3baf
+$ docker pull library/logstash@sha256:212234bbaa0da945f279efe4a312cea418218051d1d74b540ed4f949d651503b
 ```
 
--	Total Virtual Size: 615.7 MB (615672852 bytes)
--	Total v2 Content-Length: 268.0 MB (267995850 bytes)
+-	Total Virtual Size: 630.5 MB (630504460 bytes)
+-	Total v2 Content-Length: 276.4 MB (276381786 bytes)
 
 ### Layers (23)
 
@@ -4466,13 +4466,13 @@ ENV LOGSTASH_MAJOR=2.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `07a646ac1039ce0ccb3faac71852f53e4f63cb09fc23918a152c268495f998ed`
+#### `78570dcf28b61ff60093245457d3c577e4252efa838d5271953630fbc872fd97`
 
 ```dockerfile
-ENV LOGSTASH_VERSION=1:2.0.0-beta3-1
+ENV LOGSTASH_VERSION=1:2.0.0-rc1-1
 ```
 
--	Created: Tue, 20 Oct 2015 22:12:50 GMT
+-	Created: Fri, 23 Oct 2015 19:09:33 GMT
 -	Parent Layer: `da7b5ce433f2c45f0ac8cd2d008df4a3ccbaf01b76ecd98db9ffb5a8f82f9f62`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -4480,21 +4480,21 @@ ENV LOGSTASH_VERSION=1:2.0.0-beta3-1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00bd64bd1630b4debba168ba74a8f3c13b6f953f2dca05afdf681aa4854f4f6e`
+#### `e80d1ce8cec36afab6f4b4859a2c0b70ff02db52eac1de413bbdeb9d7b136b59`
 
 ```dockerfile
 RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 20 Oct 2015 22:12:51 GMT
--	Parent Layer: `07a646ac1039ce0ccb3faac71852f53e4f63cb09fc23918a152c268495f998ed`
+-	Created: Fri, 23 Oct 2015 19:09:36 GMT
+-	Parent Layer: `78570dcf28b61ff60093245457d3c577e4252efa838d5271953630fbc872fd97`
 -	Docker Version: 1.8.2
 -	Virtual Size: 70.0 B
--	v2 Blob: `sha256:9a9c8333d499ac9b29040f3561cc2e8062be61305dcb5350d1f88e61d851301f`
+-	v2 Blob: `sha256:51e09aaf66f75942144d4541b5481d2db805c96bc2101b48331965922a1bf63b`
 -	v2 Content-Length: 231.0 B
--	v2 Last-Modified: Tue, 20 Oct 2015 23:49:57 GMT
+-	v2 Last-Modified: Fri, 23 Oct 2015 19:43:04 GMT
 
-#### `215f424a2c1f1f66b9d72611173dae20e6c56c2e057244ff3d4de1b22a12eacc`
+#### `62b99cf210be729631da4fe986728346bd81c8f6ce59df8490b2b2bfda66d589`
 
 ```dockerfile
 RUN set -x \
@@ -4503,64 +4503,64 @@ RUN set -x \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:35 GMT
--	Parent Layer: `00bd64bd1630b4debba168ba74a8f3c13b6f953f2dca05afdf681aa4854f4f6e`
+-	Created: Fri, 23 Oct 2015 19:10:31 GMT
+-	Parent Layer: `e80d1ce8cec36afab6f4b4859a2c0b70ff02db52eac1de413bbdeb9d7b136b59`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.4 MB (125382522 bytes)
--	v2 Blob: `sha256:a62147dc889c5dd79efa0654325d5fe3459ce26eea43b9699fc585aab576f402`
--	v2 Content-Length: 73.1 MB (73128346 bytes)
--	v2 Last-Modified: Tue, 20 Oct 2015 23:49:50 GMT
+-	Virtual Size: 140.2 MB (140214130 bytes)
+-	v2 Blob: `sha256:e7f9dde0ec438aa86826c75b910132a0afb32195173a46719ab216269e94fad6`
+-	v2 Content-Length: 81.5 MB (81514282 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 19:42:51 GMT
 
-#### `0606c3f9b8daa9ea188ccb6b2e78aeb6a49ebc0fd849080286059eb5863d1ad2`
+#### `29aa1ae1a6e4281c1288914e2b8d2e28a26b9ff983628b60758722dc6ff75c06`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:39 GMT
--	Parent Layer: `215f424a2c1f1f66b9d72611173dae20e6c56c2e057244ff3d4de1b22a12eacc`
+-	Created: Fri, 23 Oct 2015 19:10:38 GMT
+-	Parent Layer: `62b99cf210be729631da4fe986728346bd81c8f6ce59df8490b2b2bfda66d589`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7d49b08c85a7526b8037eecbc58ae071c9be469c4a324aaad46e658645bf5213`
+#### `c03229c96a02e0b78f2115be5300813a5b18ee93aa2ed5a8f7d4f27252f2bc35`
 
 ```dockerfile
 COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `0606c3f9b8daa9ea188ccb6b2e78aeb6a49ebc0fd849080286059eb5863d1ad2`
+-	Created: Fri, 23 Oct 2015 19:10:38 GMT
+-	Parent Layer: `29aa1ae1a6e4281c1288914e2b8d2e28a26b9ff983628b60758722dc6ff75c06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
 -	v2 Content-Length: 252.0 B
 -	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
 
-#### `f9d8eeddb6e7d5ee264cd1b9ecbf25e2a87c8b17cb9f21912810971fb6dc421d`
+#### `81135656c6517c046bd16504a64b0b29dc333b9d7a6434d3f250d13c7fc4f0f2`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `7d49b08c85a7526b8037eecbc58ae071c9be469c4a324aaad46e658645bf5213`
+-	Created: Fri, 23 Oct 2015 19:10:39 GMT
+-	Parent Layer: `c03229c96a02e0b78f2115be5300813a5b18ee93aa2ed5a8f7d4f27252f2bc35`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a6564450275463773b6a1b733830ea32d88ffa01f54694641dd1fa3b00b3c92e`
+#### `a0522c648dc032bb84eb45dde37aff6f4eb8bfbe8ebb237bd16fb0f9498077b1`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `f9d8eeddb6e7d5ee264cd1b9ecbf25e2a87c8b17cb9f21912810971fb6dc421d`
+-	Created: Fri, 23 Oct 2015 19:10:39 GMT
+-	Parent Layer: `81135656c6517c046bd16504a64b0b29dc333b9d7a6434d3f250d13c7fc4f0f2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4570,11 +4570,11 @@ CMD ["logstash" "agent"]
 ## `logstash:2`
 
 ```console
-$ docker pull library/logstash@sha256:a7ff4d08f601b05ac33985c6d2e46a5852be0974778cde67a7e04a3e5bf3e8bf
+$ docker pull library/logstash@sha256:faf691d19f7fbb22737b351e02091e00b8ff877a71954efa594bacfd6953bba3
 ```
 
--	Total Virtual Size: 615.7 MB (615672852 bytes)
--	Total v2 Content-Length: 268.0 MB (267995850 bytes)
+-	Total Virtual Size: 630.5 MB (630504460 bytes)
+-	Total v2 Content-Length: 276.4 MB (276381786 bytes)
 
 ### Layers (23)
 
@@ -4816,13 +4816,13 @@ ENV LOGSTASH_MAJOR=2.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `07a646ac1039ce0ccb3faac71852f53e4f63cb09fc23918a152c268495f998ed`
+#### `78570dcf28b61ff60093245457d3c577e4252efa838d5271953630fbc872fd97`
 
 ```dockerfile
-ENV LOGSTASH_VERSION=1:2.0.0-beta3-1
+ENV LOGSTASH_VERSION=1:2.0.0-rc1-1
 ```
 
--	Created: Tue, 20 Oct 2015 22:12:50 GMT
+-	Created: Fri, 23 Oct 2015 19:09:33 GMT
 -	Parent Layer: `da7b5ce433f2c45f0ac8cd2d008df4a3ccbaf01b76ecd98db9ffb5a8f82f9f62`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -4830,21 +4830,21 @@ ENV LOGSTASH_VERSION=1:2.0.0-beta3-1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00bd64bd1630b4debba168ba74a8f3c13b6f953f2dca05afdf681aa4854f4f6e`
+#### `e80d1ce8cec36afab6f4b4859a2c0b70ff02db52eac1de413bbdeb9d7b136b59`
 
 ```dockerfile
 RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debian stable main" > /etc/apt/sources.list.d/logstash.list
 ```
 
--	Created: Tue, 20 Oct 2015 22:12:51 GMT
--	Parent Layer: `07a646ac1039ce0ccb3faac71852f53e4f63cb09fc23918a152c268495f998ed`
+-	Created: Fri, 23 Oct 2015 19:09:36 GMT
+-	Parent Layer: `78570dcf28b61ff60093245457d3c577e4252efa838d5271953630fbc872fd97`
 -	Docker Version: 1.8.2
 -	Virtual Size: 70.0 B
--	v2 Blob: `sha256:9a9c8333d499ac9b29040f3561cc2e8062be61305dcb5350d1f88e61d851301f`
+-	v2 Blob: `sha256:51e09aaf66f75942144d4541b5481d2db805c96bc2101b48331965922a1bf63b`
 -	v2 Content-Length: 231.0 B
--	v2 Last-Modified: Tue, 20 Oct 2015 23:49:57 GMT
+-	v2 Last-Modified: Fri, 23 Oct 2015 19:43:04 GMT
 
-#### `215f424a2c1f1f66b9d72611173dae20e6c56c2e057244ff3d4de1b22a12eacc`
+#### `62b99cf210be729631da4fe986728346bd81c8f6ce59df8490b2b2bfda66d589`
 
 ```dockerfile
 RUN set -x \
@@ -4853,64 +4853,64 @@ RUN set -x \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:35 GMT
--	Parent Layer: `00bd64bd1630b4debba168ba74a8f3c13b6f953f2dca05afdf681aa4854f4f6e`
+-	Created: Fri, 23 Oct 2015 19:10:31 GMT
+-	Parent Layer: `e80d1ce8cec36afab6f4b4859a2c0b70ff02db52eac1de413bbdeb9d7b136b59`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.4 MB (125382522 bytes)
--	v2 Blob: `sha256:a62147dc889c5dd79efa0654325d5fe3459ce26eea43b9699fc585aab576f402`
--	v2 Content-Length: 73.1 MB (73128346 bytes)
--	v2 Last-Modified: Tue, 20 Oct 2015 23:49:50 GMT
+-	Virtual Size: 140.2 MB (140214130 bytes)
+-	v2 Blob: `sha256:e7f9dde0ec438aa86826c75b910132a0afb32195173a46719ab216269e94fad6`
+-	v2 Content-Length: 81.5 MB (81514282 bytes)
+-	v2 Last-Modified: Fri, 23 Oct 2015 19:42:51 GMT
 
-#### `0606c3f9b8daa9ea188ccb6b2e78aeb6a49ebc0fd849080286059eb5863d1ad2`
+#### `29aa1ae1a6e4281c1288914e2b8d2e28a26b9ff983628b60758722dc6ff75c06`
 
 ```dockerfile
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:39 GMT
--	Parent Layer: `215f424a2c1f1f66b9d72611173dae20e6c56c2e057244ff3d4de1b22a12eacc`
+-	Created: Fri, 23 Oct 2015 19:10:38 GMT
+-	Parent Layer: `62b99cf210be729631da4fe986728346bd81c8f6ce59df8490b2b2bfda66d589`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `7d49b08c85a7526b8037eecbc58ae071c9be469c4a324aaad46e658645bf5213`
+#### `c03229c96a02e0b78f2115be5300813a5b18ee93aa2ed5a8f7d4f27252f2bc35`
 
 ```dockerfile
 COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `0606c3f9b8daa9ea188ccb6b2e78aeb6a49ebc0fd849080286059eb5863d1ad2`
+-	Created: Fri, 23 Oct 2015 19:10:38 GMT
+-	Parent Layer: `29aa1ae1a6e4281c1288914e2b8d2e28a26b9ff983628b60758722dc6ff75c06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:020fb47f74bbacad292355664d83f687f5f16239215cdbe1e23af7b7c397b7ee`
 -	v2 Content-Length: 252.0 B
 -	v2 Last-Modified: Fri, 02 Oct 2015 22:39:46 GMT
 
-#### `f9d8eeddb6e7d5ee264cd1b9ecbf25e2a87c8b17cb9f21912810971fb6dc421d`
+#### `81135656c6517c046bd16504a64b0b29dc333b9d7a6434d3f250d13c7fc4f0f2`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `7d49b08c85a7526b8037eecbc58ae071c9be469c4a324aaad46e658645bf5213`
+-	Created: Fri, 23 Oct 2015 19:10:39 GMT
+-	Parent Layer: `c03229c96a02e0b78f2115be5300813a5b18ee93aa2ed5a8f7d4f27252f2bc35`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a6564450275463773b6a1b733830ea32d88ffa01f54694641dd1fa3b00b3c92e`
+#### `a0522c648dc032bb84eb45dde37aff6f4eb8bfbe8ebb237bd16fb0f9498077b1`
 
 ```dockerfile
 CMD ["logstash" "agent"]
 ```
 
--	Created: Tue, 20 Oct 2015 22:13:40 GMT
--	Parent Layer: `f9d8eeddb6e7d5ee264cd1b9ecbf25e2a87c8b17cb9f21912810971fb6dc421d`
+-	Created: Fri, 23 Oct 2015 19:10:39 GMT
+-	Parent Layer: `81135656c6517c046bd16504a64b0b29dc333b9d7a6434d3f250d13c7fc4f0f2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
