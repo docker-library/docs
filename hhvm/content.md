@@ -76,7 +76,6 @@ nginx:
         - "/path/to/project:/home/docker:ro"
     links:
         - "hhvm:hhvm"
-
 hhvm:
     image: hhvm:latest
     volumes:
