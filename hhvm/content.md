@@ -44,7 +44,7 @@ $ docker run --name hhvm -d -p 9000:9000 hhvm
 ### If I want use HHVM with Nginx container
 
 Nginx configuration (default.conf)
-```
+```nginx
 server {
     listen 80;
     root   /home/docker;
@@ -80,4 +80,5 @@ hhvm:
     image: hhvm:latest
     volumes:
         - "/path/to/project:/home/docker:rw"
+
 ```
