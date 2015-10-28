@@ -1,1 +1,1 @@
-HHVM is an open PHP engine build by Facebook.
+HHVM is an open PHP engine built by Facebook.
