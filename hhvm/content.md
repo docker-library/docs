@@ -66,8 +66,4 @@ $ docker run --name my_hhvm_container -v /path/to/project:/home/docker:rw -d hhv
 $ docker run --name my_nginx_container -v /path/to/default.conf:/etc/nginx/conf.d/default.conf:ro -v /path/to/project:/home/docker:ro --link my_hhvm_container:hhvm -d nginx:latest
 ```
 
-#### With docker-compose
-
-docker-compose.yml
-
-%%COMPOSE-YML%%
+#### %%COMPOSE%%
