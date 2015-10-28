@@ -4,7 +4,7 @@ HHVM is an open-source virtual machine designed for executing programs written i
 
 > [wikipedia.org/wiki/HipHop_Virtual_Machine](https://en.wikipedia.org/wiki/HipHop_Virtual_Machine)
 
-![logo](https://raw.githubusercontent.com/baptistedonaux/docker-hhvm/master/logo.png)
+%%LOGO%%
 
 # How to use this image
 
@@ -70,16 +70,4 @@ $ docker run --name my_nginx_container -v /path/to/default.conf:/etc/nginx/conf.
 
 docker-compose.yml
 
-```yaml
-nginx:
-    image: nginx:latest
-    volumes:
-        - "/path/to/nginx.conf:/etc/nginx/nginx.conf:ro"
-        - "/path/to/project:/home/docker:ro"
-    links:
-        - "hhvm:hhvm"
-hhvm:
-    image: hhvm:latest
-    volumes:
-        - "/path/to/project:/home/docker:rw"
-```
+%%COMPOSE-YML%%

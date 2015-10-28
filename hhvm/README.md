@@ -11,7 +11,7 @@ HHVM is an open-source virtual machine designed for executing programs written i
 
 > [wikipedia.org/wiki/HipHop_Virtual_Machine](https://en.wikipedia.org/wiki/HipHop_Virtual_Machine)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/hhvm/logo.png)
+%%LOGO%%
 
 # About this image
 
