@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.5.5`, `2.5` (*jessie/2.5.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/636cd874df38edd77a187c08e1803693b3d978d3/jessie/2.5.5/Dockerfile)
--	[`2.6`, `2.6.9`, `latest` (*jessie/2.6.9/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/95c73ddb9847882472ceb04db13471d10ebaf739/jessie/2.6.9/Dockerfile)
+-	[`2.7`, `2.7.0`, `latest` (*jessie/2.7.0/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/9a21f8fb32b497315b9420028945b6d8be111455/jessie/2.7.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/arangodb`)](https://github.com/docker-library/official-images/blob/master/library/arangodb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
