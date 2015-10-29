@@ -18,7 +18,28 @@ You can access the Bonita BPM Portal on http://localhost:8080/bonita and login u
 
 ## Link Bonita BPM to a database
 
+### PostgreSQL
+
+PostgreSQL is the recommanded database.
+
+[Set max_prepared_transactions to 100](http://documentation.bonitasoft.com/database-configuration-business-data-1):
+
+	mkdir -p custom_postgres
+	echo '#!/bin/bash' > custom_postgres/bonita.sh
+	echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$/max_prepared_transactions = 100/" "$PGDATA"/postgresql.conf' >> custom_postgres/bonita.sh
+	chmod +x custom_postgres/bonita.sh
+
+Mount that directory location as /docker-entrypoint-initdb.d inside the PostgreSQL container:
+
+	docker run --name mydbpostgres -v "$PWD"/custom_postgres/:/docker-entrypoint-initdb.d -e POSTGRES_PASSWORD=mysecretpassword -d postgres:9.3
+
+See the [official PostgreSQL documentation](https://registry.hub.docker.com/_/postgres/) for more details.
+
+	docker run --name bonita_postgres --link mydbpostgres:postgres -d -p 8080:8080 bonita
+
 ### MySQL
+
+There are known issues with the management of XA transactions by MySQL engine and driver: see MySQL bugs [17343](http://bugs.mysql.com/bug.php?id=17343) and [12161](http://bugs.mysql.com/bug.php?id=12161) for more details. Thus, using MySQL database in a production environment is not recommended.
 
 [Increase the packet size](http://documentation.bonitasoft.com/database-configuration-2#mysqlspec) which is set by default to 1M:
 
@@ -35,23 +56,6 @@ See the [official MySQL documentation](https://registry.hub.docker.com/_/mysql/)
 Start your application container to link it to the MySQL container:
 
 	docker run --name bonita_mysql --link mydbmysql:mysql -d -p 8080:8080 bonita
-
-### PostgreSQL
-
-[Set max_prepared_transactions to 100](http://documentation.bonitasoft.com/database-configuration-business-data-1):
-
-	mkdir -p custom_postgres
-	echo '#!/bin/bash' > custom_postgres/bonita.sh
-	echo 'sed -i "s/^.*max_prepared_transactions\s*=\s*\(.*\)$/max_prepared_transactions = 100/" "$PGDATA"/postgresql.conf' >> custom_postgres/bonita.sh
-	chmod +x custom_postgres/bonita.sh
-
-Mount that directory location as /docker-entrypoint-initdb.d inside the PostgreSQL container:
-
-	docker run --name mydbpostgres -v "$PWD"/custom_postgres/:/docker-entrypoint-initdb.d -e POSTGRES_PASSWORD=mysecretpassword -d postgres:9.3
-
-See the [official PostgreSQL documentation](https://registry.hub.docker.com/_/postgres/) for more details.
-
-	docker run --name bonita_postgres --link mydbpostgres:postgres -d -p 8080:8080 bonita
 
 ## Modify default credentials
 
