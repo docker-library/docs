@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4.5-1-a2bacae`, `1.4.5-1`, `1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/0b9134f8c83f58120bee00efd41f4b5867930016/1.4/Dockerfile)
--	[`1.5.4-1`, `1.5.4`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/0b9134f8c83f58120bee00efd41f4b5867930016/1.5/Dockerfile)
--	[`2.0.0-rc1-1`, `2.0.0-rc1`, `2.0.0`, `2.0`, `2` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/d559b3f4cb236de21b678e6b2ba9abce507df048/2.0/Dockerfile)
+-	[`1.5.4-1`, `1.5.4`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/0b9134f8c83f58120bee00efd41f4b5867930016/1.5/Dockerfile)
+-	[`2.0.0-1`, `2.0.0`, `2.0`, `2`, `latest` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/c218eb120f20b4c8f19e2afb235ff012a5173794/2.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
