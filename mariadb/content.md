@@ -94,6 +94,14 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MariaDB instance completely unprotected, allowing anyone to gain complete superuser access.
 
+## Create database dumps
+
+To create a consistent backup of the databases you might consider creating database dumps using this command:
+
+```console
+$ docker run -it --link some-%%REPO%%:mysql --rm %%REPO%% sh -c 'exec mysqldump --all-databases -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"' > /path/to/mariadb_dump/all_databases.sql
+```
+
 # Initializing a fresh instance
 
 When a container is started for the first time, a new database `mysql` will be initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh` and `.sql` that are found in `/docker-entrypoint-initdb.d`. You can easily populate your %%REPO%% services by [mounting a SQL dump into that directory](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data.
