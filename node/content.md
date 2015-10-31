@@ -15,7 +15,7 @@ Node.js internally uses the Google V8 JavaScript engine to execute code; a large
 ## Create a `Dockerfile` in your Node.js app project
 
 ```dockerfile
-FROM node:0.10-onbuild
+FROM node:4-onbuild
 # replace this with your application's default port
 EXPOSE 8888
 ```
@@ -36,5 +36,5 @@ The image assumes that your application has a file named [`package.json`](https:
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Node.js script by using the Node.js Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp node:0.10 node your-daemon-or-script.js
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/app -w /usr/src/app node:4 node your-daemon-or-script.js
 ```
