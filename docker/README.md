@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.0-rc4`, `1.9-rc`, `rc` (*1.9-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/8ff80c4178d541fc6eb4fd3d5109d12159ec2871/1.9-rc/Dockerfile)
--	[`1.9.0-rc4-dind`, `1.9-rc-dind`, `rc-dind` (*1.9-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/20e81e7474e54f9edbb33c931e4731ef6c5b8335/1.9-rc/dind/Dockerfile)
--	[`1.9.0-rc4-git`, `1.9-rc-git`, `rc-git` (*1.9-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/20e81e7474e54f9edbb33c931e4731ef6c5b8335/1.9-rc/git/Dockerfile)
+-	[`1.9.0-rc5`, `1.9-rc`, `rc` (*1.9-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/ae5efdcdfaa99773197313d33343fa43df1c048a/1.9-rc/Dockerfile)
+-	[`1.9.0-rc5-dind`, `1.9-rc-dind`, `rc-dind` (*1.9-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/20e81e7474e54f9edbb33c931e4731ef6c5b8335/1.9-rc/dind/Dockerfile)
+-	[`1.9.0-rc5-git`, `1.9-rc-git`, `rc-git` (*1.9-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/20e81e7474e54f9edbb33c931e4731ef6c5b8335/1.9-rc/git/Dockerfile)
 -	[`1.8.3`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/docker/blob/460aea3b5f26709dc58252deb7cf31cd0a26383e/1.8/Dockerfile)
 -	[`1.8.3-dind`, `1.8-dind`, `1-dind`, `dind` (*1.8/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/2e8569cf5c665ef955855e95be475f52a55c0720/1.8/dind/Dockerfile)
 -	[`1.8.3-git`, `1.8-git`, `1-git`, `git` (*1.8/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a2614c9b94d3bae7d8d61a7cf4d56a42f6332104/1.8/git/Dockerfile)
