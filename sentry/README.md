@@ -54,19 +54,10 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 
 5.	the default config needs a celery beat and celery workers, start as many workers as you need (each with a unique name)
 
-	-	using the celery image:
-
-		```console
-		$ docker run -d --name celery-beat --link some-postgres:postgres --link some-redis:redis  -e CELERY_BROKER_URL=redis://redis celery celery beat
-		$ docker run -d --name celery-worker1  --link some-postgres:postgres --link some-redis:redis  -e CELERY_BROKER_URL=redis://redis celery
-		```
-
-	-	using the celery bundled with sentry
-
-		```console
-		$ docker run -d --name sentry-celery-beat --link some-redis:redis sentry sentry celery beat
-		$ docker run -d --name sentry-celery1 --link some-redis:redis sentry sentry celery worker
-		```
+	```console
+	$ docker run -d --name sentry-celery-beat --link some-postgres:postgres --link some-redis:redis sentry sentry celery beat
+	$ docker run -d --name sentry-celery1 --link some-postgres:postgres --link some-redis:redis sentry sentry celery worker
+	```
 
 ### port mapping
 
