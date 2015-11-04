@@ -143,7 +143,7 @@ If you start your `mariadb` container instance with a data directory that alread
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.3.
+This image is officially supported on Docker version 1.9.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
