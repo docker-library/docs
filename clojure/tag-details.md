@@ -4,17 +4,17 @@
 
 -	[`clojure:latest`](#clojurelatest)
 -	[`clojure:onbuild`](#clojureonbuild)
--	[`clojure:lein-2.5.2`](#clojurelein-252)
--	[`clojure:lein-2.5.2-onbuild`](#clojurelein-252-onbuild)
+-	[`clojure:lein-2.5.3`](#clojurelein-253)
+-	[`clojure:lein-2.5.3-onbuild`](#clojurelein-253-onbuild)
 
 ## `clojure:latest`
 
 ```console
-$ docker pull library/clojure@sha256:bad2734a384fc22532a8251b958e3b05ed0b00e0a21bbb4388beb31dc8fbb5bc
+$ docker pull library/clojure@sha256:7b893f4007b3ad9ac4b42659ddc18d76fd97bb887ee1e889bffd8d655060560c
 ```
 
--	Total Virtual Size: 657.7 MB (657714171 bytes)
--	Total v2 Content-Length: 256.9 MB (256880501 bytes)
+-	Total Virtual Size: 657.7 MB (657724911 bytes)
+-	Total v2 Content-Length: 256.9 MB (256883154 bytes)
 
 ### Layers (20)
 
@@ -214,13 +214,13 @@ MAINTAINER Paul Lam <paul@quantisan.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `83aec156146e059e80f9d37ea1a959cfd5e92e557af7dd6e4f8c2e04a997d1c5`
+#### `338a9a14149e2af4087daaccff4591d3e2e4e0ad2d84b957aac7dd5abdd383cb`
 
 ```dockerfile
-ENV LEIN_VERSION=2.5.2
+ENV LEIN_VERSION=2.5.3
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:16 GMT
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
 -	Parent Layer: `a28574dcec971288b0ea7c577eb38a428b43ff47cbe7bdb2c949d96bf5599ed8`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -228,98 +228,98 @@ ENV LEIN_VERSION=2.5.2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb3d174136cd9ea3f0e0fcb7f405719e270daf52e0f492b8288bb74f740f4842`
+#### `114f6a564bd97db4b4147b64218691642e5b2a2b3e25d4dd4f4082fd06fbb266`
 
 ```dockerfile
 ENV LEIN_INSTALL=/usr/local/bin/
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:16 GMT
--	Parent Layer: `83aec156146e059e80f9d37ea1a959cfd5e92e557af7dd6e4f8c2e04a997d1c5`
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
+-	Parent Layer: `338a9a14149e2af4087daaccff4591d3e2e4e0ad2d84b957aac7dd5abdd383cb`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3ab00331fdfb67e361df0c4b9b4e301528f634129477a80c8ddee1bc65673b4a`
+#### `972cb039ba1294a365ac892269e9982b62b2f676eeba11a74f7c0dc2c785fa07`
 
 ```dockerfile
 WORKDIR /tmp
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:17 GMT
--	Parent Layer: `fb3d174136cd9ea3f0e0fcb7f405719e270daf52e0f492b8288bb74f740f4842`
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
+-	Parent Layer: `114f6a564bd97db4b4147b64218691642e5b2a2b3e25d4dd4f4082fd06fbb266`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c2a3ab99b9e59d576be777737ca2fc9fea44c9ed12d688f9d06dec918f3952f2`
+#### `61eb058149b5f125cfd64d549585b79a1876fe55cd8aa76e44b1d2c9ad83a50f`
 
 ```dockerfile
-RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f286d3e61fec48ad2d52af1d8f23debc77cf7581 *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
+RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "871d2e308076d2e9edf457cffc9d15996c8d003e *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:24 GMT
--	Parent Layer: `3ab00331fdfb67e361df0c4b9b4e301528f634129477a80c8ddee1bc65673b4a`
+-	Created: Wed, 04 Nov 2015 21:38:08 GMT
+-	Parent Layer: `972cb039ba1294a365ac892269e9982b62b2f676eeba11a74f7c0dc2c785fa07`
 -	Docker Version: 1.8.2
--	Virtual Size: 15.8 MB (15775857 bytes)
--	v2 Blob: `sha256:de2e7096573acf4af81fb5a7ef6017252ad371268ab2318fba4cbe4f045200f7`
--	v2 Content-Length: 14.2 MB (14169357 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:39:02 GMT
+-	Virtual Size: 15.8 MB (15786597 bytes)
+-	v2 Blob: `sha256:112bfcd9c4eb58a46ec880a7573dc8bfb04b3d7613c2391ae63389c7aaa51dbc`
+-	v2 Content-Length: 14.2 MB (14172011 bytes)
+-	v2 Last-Modified: Wed, 04 Nov 2015 21:39:26 GMT
 
-#### `dcc8166dbcd89a8bfef22ef7de31c813f3d378816ea8863e2c25bd62bb4f6e33`
+#### `1536fa4933e7c1a9182947760f401cfb1efcf3ef8f11a0bce1e9694e99a612f7`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:24 GMT
--	Parent Layer: `c2a3ab99b9e59d576be777737ca2fc9fea44c9ed12d688f9d06dec918f3952f2`
+-	Created: Wed, 04 Nov 2015 21:38:09 GMT
+-	Parent Layer: `61eb058149b5f125cfd64d549585b79a1876fe55cd8aa76e44b1d2c9ad83a50f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da787b9359f910ffddeeaed3755dda87baa802dd65a61808d5ec50b2036439e5`
+#### `e887f57cd624ddd0cb5cc75e3147de542806cb1d2f01cd10d9fc3062d722e935`
 
 ```dockerfile
 ENV LEIN_ROOT=1
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:25 GMT
--	Parent Layer: `dcc8166dbcd89a8bfef22ef7de31c813f3d378816ea8863e2c25bd62bb4f6e33`
+-	Created: Wed, 04 Nov 2015 21:38:10 GMT
+-	Parent Layer: `1536fa4933e7c1a9182947760f401cfb1efcf3ef8f11a0bce1e9694e99a612f7`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e3a90fd08ccfaaa85f82723c962004a5b9a6a18c95cc7dd9b4b390f6db598441`
+#### `2b975e22595e8657957644986c13176752cc75c16b9349a1e0995113b5780b36`
 
 ```dockerfile
 RUN lein
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:29 GMT
--	Parent Layer: `da787b9359f910ffddeeaed3755dda87baa802dd65a61808d5ec50b2036439e5`
+-	Created: Wed, 04 Nov 2015 21:38:14 GMT
+-	Parent Layer: `e887f57cd624ddd0cb5cc75e3147de542806cb1d2f01cd10d9fc3062d722e935`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:3a63622e6a03de5c4e94b6f093a5823f134c894e4b314130a81d344976f2f704`
--	v2 Content-Length: 165.0 B
--	v2 Last-Modified: Sun, 01 Nov 2015 03:38:50 GMT
+-	v2 Blob: `sha256:826c8566476bad9ff5106e7601b020956e34b12c089792834b792db33b3b861f`
+-	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Wed, 04 Nov 2015 21:39:13 GMT
 
 ## `clojure:onbuild`
 
 ```console
-$ docker pull library/clojure@sha256:5074695f9c30b39de7b539800ae9e7a1bb3cb32d758b848c95e462c781dcf51c
+$ docker pull library/clojure@sha256:a2a85a3123e6eedddd99d6210688307f9e72cce912b37cb7ed56cc6acf2fb6e1
 ```
 
--	Total Virtual Size: 657.7 MB (657714171 bytes)
--	Total v2 Content-Length: 256.9 MB (256880693 bytes)
+-	Total Virtual Size: 657.7 MB (657724911 bytes)
+-	Total v2 Content-Length: 256.9 MB (256883346 bytes)
 
 ### Layers (26)
 
@@ -519,13 +519,13 @@ MAINTAINER Paul Lam <paul@quantisan.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `83aec156146e059e80f9d37ea1a959cfd5e92e557af7dd6e4f8c2e04a997d1c5`
+#### `338a9a14149e2af4087daaccff4591d3e2e4e0ad2d84b957aac7dd5abdd383cb`
 
 ```dockerfile
-ENV LEIN_VERSION=2.5.2
+ENV LEIN_VERSION=2.5.3
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:16 GMT
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
 -	Parent Layer: `a28574dcec971288b0ea7c577eb38a428b43ff47cbe7bdb2c949d96bf5599ed8`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -533,182 +533,182 @@ ENV LEIN_VERSION=2.5.2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb3d174136cd9ea3f0e0fcb7f405719e270daf52e0f492b8288bb74f740f4842`
+#### `114f6a564bd97db4b4147b64218691642e5b2a2b3e25d4dd4f4082fd06fbb266`
 
 ```dockerfile
 ENV LEIN_INSTALL=/usr/local/bin/
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:16 GMT
--	Parent Layer: `83aec156146e059e80f9d37ea1a959cfd5e92e557af7dd6e4f8c2e04a997d1c5`
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
+-	Parent Layer: `338a9a14149e2af4087daaccff4591d3e2e4e0ad2d84b957aac7dd5abdd383cb`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3ab00331fdfb67e361df0c4b9b4e301528f634129477a80c8ddee1bc65673b4a`
+#### `972cb039ba1294a365ac892269e9982b62b2f676eeba11a74f7c0dc2c785fa07`
 
 ```dockerfile
 WORKDIR /tmp
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:17 GMT
--	Parent Layer: `fb3d174136cd9ea3f0e0fcb7f405719e270daf52e0f492b8288bb74f740f4842`
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
+-	Parent Layer: `114f6a564bd97db4b4147b64218691642e5b2a2b3e25d4dd4f4082fd06fbb266`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c2a3ab99b9e59d576be777737ca2fc9fea44c9ed12d688f9d06dec918f3952f2`
+#### `61eb058149b5f125cfd64d549585b79a1876fe55cd8aa76e44b1d2c9ad83a50f`
 
 ```dockerfile
-RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f286d3e61fec48ad2d52af1d8f23debc77cf7581 *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
+RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "871d2e308076d2e9edf457cffc9d15996c8d003e *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:24 GMT
--	Parent Layer: `3ab00331fdfb67e361df0c4b9b4e301528f634129477a80c8ddee1bc65673b4a`
+-	Created: Wed, 04 Nov 2015 21:38:08 GMT
+-	Parent Layer: `972cb039ba1294a365ac892269e9982b62b2f676eeba11a74f7c0dc2c785fa07`
 -	Docker Version: 1.8.2
--	Virtual Size: 15.8 MB (15775857 bytes)
--	v2 Blob: `sha256:de2e7096573acf4af81fb5a7ef6017252ad371268ab2318fba4cbe4f045200f7`
--	v2 Content-Length: 14.2 MB (14169357 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:39:02 GMT
+-	Virtual Size: 15.8 MB (15786597 bytes)
+-	v2 Blob: `sha256:112bfcd9c4eb58a46ec880a7573dc8bfb04b3d7613c2391ae63389c7aaa51dbc`
+-	v2 Content-Length: 14.2 MB (14172011 bytes)
+-	v2 Last-Modified: Wed, 04 Nov 2015 21:39:26 GMT
 
-#### `dcc8166dbcd89a8bfef22ef7de31c813f3d378816ea8863e2c25bd62bb4f6e33`
+#### `1536fa4933e7c1a9182947760f401cfb1efcf3ef8f11a0bce1e9694e99a612f7`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:24 GMT
--	Parent Layer: `c2a3ab99b9e59d576be777737ca2fc9fea44c9ed12d688f9d06dec918f3952f2`
+-	Created: Wed, 04 Nov 2015 21:38:09 GMT
+-	Parent Layer: `61eb058149b5f125cfd64d549585b79a1876fe55cd8aa76e44b1d2c9ad83a50f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da787b9359f910ffddeeaed3755dda87baa802dd65a61808d5ec50b2036439e5`
+#### `e887f57cd624ddd0cb5cc75e3147de542806cb1d2f01cd10d9fc3062d722e935`
 
 ```dockerfile
 ENV LEIN_ROOT=1
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:25 GMT
--	Parent Layer: `dcc8166dbcd89a8bfef22ef7de31c813f3d378816ea8863e2c25bd62bb4f6e33`
+-	Created: Wed, 04 Nov 2015 21:38:10 GMT
+-	Parent Layer: `1536fa4933e7c1a9182947760f401cfb1efcf3ef8f11a0bce1e9694e99a612f7`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e3a90fd08ccfaaa85f82723c962004a5b9a6a18c95cc7dd9b4b390f6db598441`
+#### `2b975e22595e8657957644986c13176752cc75c16b9349a1e0995113b5780b36`
 
 ```dockerfile
 RUN lein
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:29 GMT
--	Parent Layer: `da787b9359f910ffddeeaed3755dda87baa802dd65a61808d5ec50b2036439e5`
+-	Created: Wed, 04 Nov 2015 21:38:14 GMT
+-	Parent Layer: `e887f57cd624ddd0cb5cc75e3147de542806cb1d2f01cd10d9fc3062d722e935`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:3a63622e6a03de5c4e94b6f093a5823f134c894e4b314130a81d344976f2f704`
--	v2 Content-Length: 165.0 B
--	v2 Last-Modified: Sun, 01 Nov 2015 03:38:50 GMT
+-	v2 Blob: `sha256:826c8566476bad9ff5106e7601b020956e34b12c089792834b792db33b3b861f`
+-	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Wed, 04 Nov 2015 21:39:13 GMT
 
-#### `8d8c88531a1366144f1acf7e36556c54b5b4b9f804568e9c58cf81e957615381`
+#### `6aac671ddd173040fcdead5ba12b38153839d31c28ba84d660453b194e1c0432`
 
 ```dockerfile
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:33 GMT
--	Parent Layer: `e3a90fd08ccfaaa85f82723c962004a5b9a6a18c95cc7dd9b4b390f6db598441`
+-	Created: Wed, 04 Nov 2015 21:38:19 GMT
+-	Parent Layer: `2b975e22595e8657957644986c13176752cc75c16b9349a1e0995113b5780b36`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `bec1e65ffbb3953e035012af9fde88e0978778e6d70e459617180c9f41430e0e`
+#### `45b881f4a8a4218cd5bc72e4dade7ab606916ebc16f34b9acd2536c36c34ae28`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:34 GMT
--	Parent Layer: `8d8c88531a1366144f1acf7e36556c54b5b4b9f804568e9c58cf81e957615381`
+-	Created: Wed, 04 Nov 2015 21:38:19 GMT
+-	Parent Layer: `6aac671ddd173040fcdead5ba12b38153839d31c28ba84d660453b194e1c0432`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1299160b97560228cb0ed66fffa1d50367a015a6bf4acf6494e71a26b189f5b2`
+#### `7ed345c321a7b971c164689932b9f97a0c32e2b3e5d28072d4db21c95d283dfc`
 
 ```dockerfile
 ONBUILD COPY project.clj /usr/src/app/
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:34 GMT
--	Parent Layer: `bec1e65ffbb3953e035012af9fde88e0978778e6d70e459617180c9f41430e0e`
+-	Created: Wed, 04 Nov 2015 21:38:19 GMT
+-	Parent Layer: `45b881f4a8a4218cd5bc72e4dade7ab606916ebc16f34b9acd2536c36c34ae28`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e02fdb63365ae41ace1e9cc49630b6f0b6d5ad34f023ae70b8260648bd7649fc`
+#### `f2286c886680cb6f3264b4ad8017ed4684bf4faf07fdbff59050a7939c664a62`
 
 ```dockerfile
 ONBUILD RUN lein deps
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:35 GMT
--	Parent Layer: `1299160b97560228cb0ed66fffa1d50367a015a6bf4acf6494e71a26b189f5b2`
+-	Created: Wed, 04 Nov 2015 21:38:20 GMT
+-	Parent Layer: `7ed345c321a7b971c164689932b9f97a0c32e2b3e5d28072d4db21c95d283dfc`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `047172c76ae28d204f9ecaa319d170813b9823cc76e209cc395308434ae3dc23`
+#### `44defc7574b3b18b8c33b23ae4bb3791e8bfd79de88d8cbac2a4e22730175e17`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:35 GMT
--	Parent Layer: `e02fdb63365ae41ace1e9cc49630b6f0b6d5ad34f023ae70b8260648bd7649fc`
+-	Created: Wed, 04 Nov 2015 21:38:20 GMT
+-	Parent Layer: `f2286c886680cb6f3264b4ad8017ed4684bf4faf07fdbff59050a7939c664a62`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2caab88b3c8645debc26adf7dfa760227753542d609de8d659dbff44945dee2b`
+#### `50b42ca81f2094330c2f71986f135137e5a51a492ebbdeb36903a49d9f0bce0a`
 
 ```dockerfile
 CMD ["lein" "run"]
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:36 GMT
--	Parent Layer: `047172c76ae28d204f9ecaa319d170813b9823cc76e209cc395308434ae3dc23`
+-	Created: Wed, 04 Nov 2015 21:38:21 GMT
+-	Parent Layer: `44defc7574b3b18b8c33b23ae4bb3791e8bfd79de88d8cbac2a4e22730175e17`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-## `clojure:lein-2.5.2`
+## `clojure:lein-2.5.3`
 
 ```console
-$ docker pull library/clojure@sha256:2e9855992f3da0ee737a0a7289e0411bb72c0757c1277815f008c03143241166
+$ docker pull library/clojure@sha256:ee26e484f5def3ac11667152416946ab0bdcb6f158138a754b9fb2a0182fefa8
 ```
 
--	Total Virtual Size: 657.7 MB (657714171 bytes)
--	Total v2 Content-Length: 256.9 MB (256880501 bytes)
+-	Total Virtual Size: 657.7 MB (657724911 bytes)
+-	Total v2 Content-Length: 256.9 MB (256883154 bytes)
 
 ### Layers (20)
 
@@ -908,13 +908,13 @@ MAINTAINER Paul Lam <paul@quantisan.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `83aec156146e059e80f9d37ea1a959cfd5e92e557af7dd6e4f8c2e04a997d1c5`
+#### `338a9a14149e2af4087daaccff4591d3e2e4e0ad2d84b957aac7dd5abdd383cb`
 
 ```dockerfile
-ENV LEIN_VERSION=2.5.2
+ENV LEIN_VERSION=2.5.3
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:16 GMT
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
 -	Parent Layer: `a28574dcec971288b0ea7c577eb38a428b43ff47cbe7bdb2c949d96bf5599ed8`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -922,98 +922,98 @@ ENV LEIN_VERSION=2.5.2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb3d174136cd9ea3f0e0fcb7f405719e270daf52e0f492b8288bb74f740f4842`
+#### `114f6a564bd97db4b4147b64218691642e5b2a2b3e25d4dd4f4082fd06fbb266`
 
 ```dockerfile
 ENV LEIN_INSTALL=/usr/local/bin/
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:16 GMT
--	Parent Layer: `83aec156146e059e80f9d37ea1a959cfd5e92e557af7dd6e4f8c2e04a997d1c5`
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
+-	Parent Layer: `338a9a14149e2af4087daaccff4591d3e2e4e0ad2d84b957aac7dd5abdd383cb`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3ab00331fdfb67e361df0c4b9b4e301528f634129477a80c8ddee1bc65673b4a`
+#### `972cb039ba1294a365ac892269e9982b62b2f676eeba11a74f7c0dc2c785fa07`
 
 ```dockerfile
 WORKDIR /tmp
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:17 GMT
--	Parent Layer: `fb3d174136cd9ea3f0e0fcb7f405719e270daf52e0f492b8288bb74f740f4842`
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
+-	Parent Layer: `114f6a564bd97db4b4147b64218691642e5b2a2b3e25d4dd4f4082fd06fbb266`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c2a3ab99b9e59d576be777737ca2fc9fea44c9ed12d688f9d06dec918f3952f2`
+#### `61eb058149b5f125cfd64d549585b79a1876fe55cd8aa76e44b1d2c9ad83a50f`
 
 ```dockerfile
-RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f286d3e61fec48ad2d52af1d8f23debc77cf7581 *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
+RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "871d2e308076d2e9edf457cffc9d15996c8d003e *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:24 GMT
--	Parent Layer: `3ab00331fdfb67e361df0c4b9b4e301528f634129477a80c8ddee1bc65673b4a`
+-	Created: Wed, 04 Nov 2015 21:38:08 GMT
+-	Parent Layer: `972cb039ba1294a365ac892269e9982b62b2f676eeba11a74f7c0dc2c785fa07`
 -	Docker Version: 1.8.2
--	Virtual Size: 15.8 MB (15775857 bytes)
--	v2 Blob: `sha256:de2e7096573acf4af81fb5a7ef6017252ad371268ab2318fba4cbe4f045200f7`
--	v2 Content-Length: 14.2 MB (14169357 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:39:02 GMT
+-	Virtual Size: 15.8 MB (15786597 bytes)
+-	v2 Blob: `sha256:112bfcd9c4eb58a46ec880a7573dc8bfb04b3d7613c2391ae63389c7aaa51dbc`
+-	v2 Content-Length: 14.2 MB (14172011 bytes)
+-	v2 Last-Modified: Wed, 04 Nov 2015 21:39:26 GMT
 
-#### `dcc8166dbcd89a8bfef22ef7de31c813f3d378816ea8863e2c25bd62bb4f6e33`
+#### `1536fa4933e7c1a9182947760f401cfb1efcf3ef8f11a0bce1e9694e99a612f7`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:24 GMT
--	Parent Layer: `c2a3ab99b9e59d576be777737ca2fc9fea44c9ed12d688f9d06dec918f3952f2`
+-	Created: Wed, 04 Nov 2015 21:38:09 GMT
+-	Parent Layer: `61eb058149b5f125cfd64d549585b79a1876fe55cd8aa76e44b1d2c9ad83a50f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da787b9359f910ffddeeaed3755dda87baa802dd65a61808d5ec50b2036439e5`
+#### `e887f57cd624ddd0cb5cc75e3147de542806cb1d2f01cd10d9fc3062d722e935`
 
 ```dockerfile
 ENV LEIN_ROOT=1
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:25 GMT
--	Parent Layer: `dcc8166dbcd89a8bfef22ef7de31c813f3d378816ea8863e2c25bd62bb4f6e33`
+-	Created: Wed, 04 Nov 2015 21:38:10 GMT
+-	Parent Layer: `1536fa4933e7c1a9182947760f401cfb1efcf3ef8f11a0bce1e9694e99a612f7`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e3a90fd08ccfaaa85f82723c962004a5b9a6a18c95cc7dd9b4b390f6db598441`
+#### `2b975e22595e8657957644986c13176752cc75c16b9349a1e0995113b5780b36`
 
 ```dockerfile
 RUN lein
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:29 GMT
--	Parent Layer: `da787b9359f910ffddeeaed3755dda87baa802dd65a61808d5ec50b2036439e5`
+-	Created: Wed, 04 Nov 2015 21:38:14 GMT
+-	Parent Layer: `e887f57cd624ddd0cb5cc75e3147de542806cb1d2f01cd10d9fc3062d722e935`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:3a63622e6a03de5c4e94b6f093a5823f134c894e4b314130a81d344976f2f704`
--	v2 Content-Length: 165.0 B
--	v2 Last-Modified: Sun, 01 Nov 2015 03:38:50 GMT
+-	v2 Blob: `sha256:826c8566476bad9ff5106e7601b020956e34b12c089792834b792db33b3b861f`
+-	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Wed, 04 Nov 2015 21:39:13 GMT
 
-## `clojure:lein-2.5.2-onbuild`
+## `clojure:lein-2.5.3-onbuild`
 
 ```console
-$ docker pull library/clojure@sha256:5119b3c65cb0ac8d128f406f0dac5406f34542d52d5ff25f2e377c457c8c5ea4
+$ docker pull library/clojure@sha256:bca967319680f5884bd2220bfd4af5d6b986ce51159b2b80b618e956681f40fa
 ```
 
--	Total Virtual Size: 657.7 MB (657714171 bytes)
--	Total v2 Content-Length: 256.9 MB (256880693 bytes)
+-	Total Virtual Size: 657.7 MB (657724911 bytes)
+-	Total v2 Content-Length: 256.9 MB (256883346 bytes)
 
 ### Layers (26)
 
@@ -1213,13 +1213,13 @@ MAINTAINER Paul Lam <paul@quantisan.com>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `83aec156146e059e80f9d37ea1a959cfd5e92e557af7dd6e4f8c2e04a997d1c5`
+#### `338a9a14149e2af4087daaccff4591d3e2e4e0ad2d84b957aac7dd5abdd383cb`
 
 ```dockerfile
-ENV LEIN_VERSION=2.5.2
+ENV LEIN_VERSION=2.5.3
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:16 GMT
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
 -	Parent Layer: `a28574dcec971288b0ea7c577eb38a428b43ff47cbe7bdb2c949d96bf5599ed8`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -1227,168 +1227,168 @@ ENV LEIN_VERSION=2.5.2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb3d174136cd9ea3f0e0fcb7f405719e270daf52e0f492b8288bb74f740f4842`
+#### `114f6a564bd97db4b4147b64218691642e5b2a2b3e25d4dd4f4082fd06fbb266`
 
 ```dockerfile
 ENV LEIN_INSTALL=/usr/local/bin/
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:16 GMT
--	Parent Layer: `83aec156146e059e80f9d37ea1a959cfd5e92e557af7dd6e4f8c2e04a997d1c5`
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
+-	Parent Layer: `338a9a14149e2af4087daaccff4591d3e2e4e0ad2d84b957aac7dd5abdd383cb`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3ab00331fdfb67e361df0c4b9b4e301528f634129477a80c8ddee1bc65673b4a`
+#### `972cb039ba1294a365ac892269e9982b62b2f676eeba11a74f7c0dc2c785fa07`
 
 ```dockerfile
 WORKDIR /tmp
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:17 GMT
--	Parent Layer: `fb3d174136cd9ea3f0e0fcb7f405719e270daf52e0f492b8288bb74f740f4842`
+-	Created: Wed, 04 Nov 2015 21:38:01 GMT
+-	Parent Layer: `114f6a564bd97db4b4147b64218691642e5b2a2b3e25d4dd4f4082fd06fbb266`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c2a3ab99b9e59d576be777737ca2fc9fea44c9ed12d688f9d06dec918f3952f2`
+#### `61eb058149b5f125cfd64d549585b79a1876fe55cd8aa76e44b1d2c9ad83a50f`
 
 ```dockerfile
-RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f286d3e61fec48ad2d52af1d8f23debc77cf7581 *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
+RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "871d2e308076d2e9edf457cffc9d15996c8d003e *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:24 GMT
--	Parent Layer: `3ab00331fdfb67e361df0c4b9b4e301528f634129477a80c8ddee1bc65673b4a`
+-	Created: Wed, 04 Nov 2015 21:38:08 GMT
+-	Parent Layer: `972cb039ba1294a365ac892269e9982b62b2f676eeba11a74f7c0dc2c785fa07`
 -	Docker Version: 1.8.2
--	Virtual Size: 15.8 MB (15775857 bytes)
--	v2 Blob: `sha256:de2e7096573acf4af81fb5a7ef6017252ad371268ab2318fba4cbe4f045200f7`
--	v2 Content-Length: 14.2 MB (14169357 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:39:02 GMT
+-	Virtual Size: 15.8 MB (15786597 bytes)
+-	v2 Blob: `sha256:112bfcd9c4eb58a46ec880a7573dc8bfb04b3d7613c2391ae63389c7aaa51dbc`
+-	v2 Content-Length: 14.2 MB (14172011 bytes)
+-	v2 Last-Modified: Wed, 04 Nov 2015 21:39:26 GMT
 
-#### `dcc8166dbcd89a8bfef22ef7de31c813f3d378816ea8863e2c25bd62bb4f6e33`
+#### `1536fa4933e7c1a9182947760f401cfb1efcf3ef8f11a0bce1e9694e99a612f7`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:24 GMT
--	Parent Layer: `c2a3ab99b9e59d576be777737ca2fc9fea44c9ed12d688f9d06dec918f3952f2`
+-	Created: Wed, 04 Nov 2015 21:38:09 GMT
+-	Parent Layer: `61eb058149b5f125cfd64d549585b79a1876fe55cd8aa76e44b1d2c9ad83a50f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `da787b9359f910ffddeeaed3755dda87baa802dd65a61808d5ec50b2036439e5`
+#### `e887f57cd624ddd0cb5cc75e3147de542806cb1d2f01cd10d9fc3062d722e935`
 
 ```dockerfile
 ENV LEIN_ROOT=1
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:25 GMT
--	Parent Layer: `dcc8166dbcd89a8bfef22ef7de31c813f3d378816ea8863e2c25bd62bb4f6e33`
+-	Created: Wed, 04 Nov 2015 21:38:10 GMT
+-	Parent Layer: `1536fa4933e7c1a9182947760f401cfb1efcf3ef8f11a0bce1e9694e99a612f7`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e3a90fd08ccfaaa85f82723c962004a5b9a6a18c95cc7dd9b4b390f6db598441`
+#### `2b975e22595e8657957644986c13176752cc75c16b9349a1e0995113b5780b36`
 
 ```dockerfile
 RUN lein
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:29 GMT
--	Parent Layer: `da787b9359f910ffddeeaed3755dda87baa802dd65a61808d5ec50b2036439e5`
+-	Created: Wed, 04 Nov 2015 21:38:14 GMT
+-	Parent Layer: `e887f57cd624ddd0cb5cc75e3147de542806cb1d2f01cd10d9fc3062d722e935`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:3a63622e6a03de5c4e94b6f093a5823f134c894e4b314130a81d344976f2f704`
--	v2 Content-Length: 165.0 B
--	v2 Last-Modified: Sun, 01 Nov 2015 03:38:50 GMT
+-	v2 Blob: `sha256:826c8566476bad9ff5106e7601b020956e34b12c089792834b792db33b3b861f`
+-	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Wed, 04 Nov 2015 21:39:13 GMT
 
-#### `8d8c88531a1366144f1acf7e36556c54b5b4b9f804568e9c58cf81e957615381`
+#### `6aac671ddd173040fcdead5ba12b38153839d31c28ba84d660453b194e1c0432`
 
 ```dockerfile
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:33 GMT
--	Parent Layer: `e3a90fd08ccfaaa85f82723c962004a5b9a6a18c95cc7dd9b4b390f6db598441`
+-	Created: Wed, 04 Nov 2015 21:38:19 GMT
+-	Parent Layer: `2b975e22595e8657957644986c13176752cc75c16b9349a1e0995113b5780b36`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `bec1e65ffbb3953e035012af9fde88e0978778e6d70e459617180c9f41430e0e`
+#### `45b881f4a8a4218cd5bc72e4dade7ab606916ebc16f34b9acd2536c36c34ae28`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:34 GMT
--	Parent Layer: `8d8c88531a1366144f1acf7e36556c54b5b4b9f804568e9c58cf81e957615381`
+-	Created: Wed, 04 Nov 2015 21:38:19 GMT
+-	Parent Layer: `6aac671ddd173040fcdead5ba12b38153839d31c28ba84d660453b194e1c0432`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1299160b97560228cb0ed66fffa1d50367a015a6bf4acf6494e71a26b189f5b2`
+#### `7ed345c321a7b971c164689932b9f97a0c32e2b3e5d28072d4db21c95d283dfc`
 
 ```dockerfile
 ONBUILD COPY project.clj /usr/src/app/
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:34 GMT
--	Parent Layer: `bec1e65ffbb3953e035012af9fde88e0978778e6d70e459617180c9f41430e0e`
+-	Created: Wed, 04 Nov 2015 21:38:19 GMT
+-	Parent Layer: `45b881f4a8a4218cd5bc72e4dade7ab606916ebc16f34b9acd2536c36c34ae28`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e02fdb63365ae41ace1e9cc49630b6f0b6d5ad34f023ae70b8260648bd7649fc`
+#### `f2286c886680cb6f3264b4ad8017ed4684bf4faf07fdbff59050a7939c664a62`
 
 ```dockerfile
 ONBUILD RUN lein deps
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:35 GMT
--	Parent Layer: `1299160b97560228cb0ed66fffa1d50367a015a6bf4acf6494e71a26b189f5b2`
+-	Created: Wed, 04 Nov 2015 21:38:20 GMT
+-	Parent Layer: `7ed345c321a7b971c164689932b9f97a0c32e2b3e5d28072d4db21c95d283dfc`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `047172c76ae28d204f9ecaa319d170813b9823cc76e209cc395308434ae3dc23`
+#### `44defc7574b3b18b8c33b23ae4bb3791e8bfd79de88d8cbac2a4e22730175e17`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:35 GMT
--	Parent Layer: `e02fdb63365ae41ace1e9cc49630b6f0b6d5ad34f023ae70b8260648bd7649fc`
+-	Created: Wed, 04 Nov 2015 21:38:20 GMT
+-	Parent Layer: `f2286c886680cb6f3264b4ad8017ed4684bf4faf07fdbff59050a7939c664a62`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2caab88b3c8645debc26adf7dfa760227753542d609de8d659dbff44945dee2b`
+#### `50b42ca81f2094330c2f71986f135137e5a51a492ebbdeb36903a49d9f0bce0a`
 
 ```dockerfile
 CMD ["lein" "run"]
 ```
 
--	Created: Sun, 01 Nov 2015 02:15:36 GMT
--	Parent Layer: `047172c76ae28d204f9ecaa319d170813b9823cc76e209cc395308434ae3dc23`
+-	Created: Wed, 04 Nov 2015 21:38:21 GMT
+-	Parent Layer: `44defc7574b3b18b8c33b23ae4bb3791e8bfd79de88d8cbac2a4e22730175e17`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
