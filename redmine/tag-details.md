@@ -20,11 +20,11 @@
 ## `redmine:2.6.7`
 
 ```console
-$ docker pull library/redmine@sha256:3f51d75b819f75a7d18b6860fd4162d49ef937357677b23fd0f2fe1c2ca8e327
+$ docker pull library/redmine@sha256:62c3edc8587efc09fdc1dd0c3287d4c2987824ab62d84b7502e34fa2f677fa4c
 ```
 
--	Total Virtual Size: 414.8 MB (414838920 bytes)
--	Total v2 Content-Length: 158.5 MB (158523156 bytes)
+-	Total Virtual Size: 415.2 MB (415224524 bytes)
+-	Total v2 Content-Length: 158.7 MB (158671937 bytes)
 
 ### Layers (31)
 
@@ -122,13 +122,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -136,21 +136,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -186,57 +186,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -244,71 +244,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -318,15 +318,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -335,15 +335,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -354,71 +354,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+#### `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 
 ```dockerfile
 ENV REDMINE_VERSION=2.6.7
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+#### `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=5770f90b65bda49fa8e7f1cc4b2afa5a
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+#### `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -429,15 +429,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:58 GMT
--	Parent Layer: `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+-	Created: Thu, 05 Nov 2015 21:08:17 GMT
+-	Parent Layer: `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.1 MB (9128415 bytes)
--	v2 Blob: `sha256:b91b338b1365bd6bee6ed780cf2ba0cdde4be089dbd3e8483c1f676f4e216591`
--	v2 Content-Length: 2.1 MB (2105441 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:04 GMT
+-	v2 Blob: `sha256:0b67b7b897b1e9e10e87715be91e501590a601c0bc746f57eb1bb4acc93dfff2`
+-	v2 Content-Length: 2.1 MB (2105457 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:58 GMT
 
-#### `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+#### `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 
 ```dockerfile
 RUN buildDeps='\
@@ -463,78 +463,78 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:32 GMT
--	Parent Layer: `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+-	Created: Thu, 05 Nov 2015 21:11:12 GMT
+-	Parent Layer: `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 -	Docker Version: 1.8.2
--	Virtual Size: 92.8 MB (92760795 bytes)
--	v2 Blob: `sha256:bef97fbba1cdb8fc8158f6f557d4418470d61ab197cefd4aa1ab946cfeb22765`
--	v2 Content-Length: 42.2 MB (42242726 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:45:55 GMT
+-	Virtual Size: 92.9 MB (92933498 bytes)
+-	v2 Blob: `sha256:9fc56518145e3bcfc46e4ec2a678be8cdbb720993fadae6ce84d249913888c24`
+-	v2 Content-Length: 42.3 MB (42306172 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:50 GMT
 
-#### `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+#### `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:34 GMT
--	Parent Layer: `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+#### `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+#### `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+#### `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2341738e031bb4cd82c888e0a297a061d63dcb118e7e01118bdcf6cc62109c7a`
+#### `393c5812c8794e3cdf7ee92e60bf11d58b0f89ce400752dd00ac47557d846a32`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+-	Created: Thu, 05 Nov 2015 21:11:17 GMT
+-	Parent Layer: `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -544,11 +544,11 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:2.6`
 
 ```console
-$ docker pull library/redmine@sha256:c8c81fbf4913817c6b326e6324297c0ae7d1f9f60d5b40c33d83a2279e3c5142
+$ docker pull library/redmine@sha256:04aac7bec40b812d50a12c5ee0739302e4870c566ef315e28ad031ac3bba096a
 ```
 
--	Total Virtual Size: 414.8 MB (414838920 bytes)
--	Total v2 Content-Length: 158.5 MB (158523156 bytes)
+-	Total Virtual Size: 415.2 MB (415224524 bytes)
+-	Total v2 Content-Length: 158.7 MB (158671937 bytes)
 
 ### Layers (31)
 
@@ -646,13 +646,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -660,21 +660,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -710,57 +710,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -768,71 +768,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -842,15 +842,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -859,15 +859,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -878,71 +878,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+#### `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 
 ```dockerfile
 ENV REDMINE_VERSION=2.6.7
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+#### `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=5770f90b65bda49fa8e7f1cc4b2afa5a
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+#### `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -953,15 +953,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:58 GMT
--	Parent Layer: `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+-	Created: Thu, 05 Nov 2015 21:08:17 GMT
+-	Parent Layer: `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.1 MB (9128415 bytes)
--	v2 Blob: `sha256:b91b338b1365bd6bee6ed780cf2ba0cdde4be089dbd3e8483c1f676f4e216591`
--	v2 Content-Length: 2.1 MB (2105441 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:04 GMT
+-	v2 Blob: `sha256:0b67b7b897b1e9e10e87715be91e501590a601c0bc746f57eb1bb4acc93dfff2`
+-	v2 Content-Length: 2.1 MB (2105457 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:58 GMT
 
-#### `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+#### `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 
 ```dockerfile
 RUN buildDeps='\
@@ -987,78 +987,78 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:32 GMT
--	Parent Layer: `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+-	Created: Thu, 05 Nov 2015 21:11:12 GMT
+-	Parent Layer: `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 -	Docker Version: 1.8.2
--	Virtual Size: 92.8 MB (92760795 bytes)
--	v2 Blob: `sha256:bef97fbba1cdb8fc8158f6f557d4418470d61ab197cefd4aa1ab946cfeb22765`
--	v2 Content-Length: 42.2 MB (42242726 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:45:55 GMT
+-	Virtual Size: 92.9 MB (92933498 bytes)
+-	v2 Blob: `sha256:9fc56518145e3bcfc46e4ec2a678be8cdbb720993fadae6ce84d249913888c24`
+-	v2 Content-Length: 42.3 MB (42306172 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:50 GMT
 
-#### `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+#### `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:34 GMT
--	Parent Layer: `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+#### `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+#### `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+#### `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2341738e031bb4cd82c888e0a297a061d63dcb118e7e01118bdcf6cc62109c7a`
+#### `393c5812c8794e3cdf7ee92e60bf11d58b0f89ce400752dd00ac47557d846a32`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+-	Created: Thu, 05 Nov 2015 21:11:17 GMT
+-	Parent Layer: `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1068,11 +1068,11 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:2`
 
 ```console
-$ docker pull library/redmine@sha256:b7e70e72edfc1de5b46b017a4b7da4c41230521b99808e2a643b926190cd7505
+$ docker pull library/redmine@sha256:2167a3af2cd3315c9b4211ec79f11bb280fac07bdceedd173a8af4e6b0c98d3e
 ```
 
--	Total Virtual Size: 414.8 MB (414838920 bytes)
--	Total v2 Content-Length: 158.5 MB (158523156 bytes)
+-	Total Virtual Size: 415.2 MB (415224524 bytes)
+-	Total v2 Content-Length: 158.7 MB (158671937 bytes)
 
 ### Layers (31)
 
@@ -1170,13 +1170,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -1184,21 +1184,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -1234,57 +1234,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -1292,71 +1292,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -1366,15 +1366,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -1383,15 +1383,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1402,71 +1402,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+#### `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 
 ```dockerfile
 ENV REDMINE_VERSION=2.6.7
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+#### `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=5770f90b65bda49fa8e7f1cc4b2afa5a
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+#### `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -1477,15 +1477,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:58 GMT
--	Parent Layer: `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+-	Created: Thu, 05 Nov 2015 21:08:17 GMT
+-	Parent Layer: `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.1 MB (9128415 bytes)
--	v2 Blob: `sha256:b91b338b1365bd6bee6ed780cf2ba0cdde4be089dbd3e8483c1f676f4e216591`
--	v2 Content-Length: 2.1 MB (2105441 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:04 GMT
+-	v2 Blob: `sha256:0b67b7b897b1e9e10e87715be91e501590a601c0bc746f57eb1bb4acc93dfff2`
+-	v2 Content-Length: 2.1 MB (2105457 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:58 GMT
 
-#### `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+#### `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 
 ```dockerfile
 RUN buildDeps='\
@@ -1511,78 +1511,78 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:32 GMT
--	Parent Layer: `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+-	Created: Thu, 05 Nov 2015 21:11:12 GMT
+-	Parent Layer: `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 -	Docker Version: 1.8.2
--	Virtual Size: 92.8 MB (92760795 bytes)
--	v2 Blob: `sha256:bef97fbba1cdb8fc8158f6f557d4418470d61ab197cefd4aa1ab946cfeb22765`
--	v2 Content-Length: 42.2 MB (42242726 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:45:55 GMT
+-	Virtual Size: 92.9 MB (92933498 bytes)
+-	v2 Blob: `sha256:9fc56518145e3bcfc46e4ec2a678be8cdbb720993fadae6ce84d249913888c24`
+-	v2 Content-Length: 42.3 MB (42306172 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:50 GMT
 
-#### `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+#### `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:34 GMT
--	Parent Layer: `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+#### `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+#### `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+#### `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2341738e031bb4cd82c888e0a297a061d63dcb118e7e01118bdcf6cc62109c7a`
+#### `393c5812c8794e3cdf7ee92e60bf11d58b0f89ce400752dd00ac47557d846a32`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+-	Created: Thu, 05 Nov 2015 21:11:17 GMT
+-	Parent Layer: `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1592,11 +1592,11 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:2.6.7-passenger`
 
 ```console
-$ docker pull library/redmine@sha256:307dc7c42b5fea43b9b628a5257761f4c3101ab6fc6d206c2c2de69a4e3e1360
+$ docker pull library/redmine@sha256:d08230c8e99ede664d321c870491a9f7114a26c3a332fd07401a827d3c0ac985
 ```
 
--	Total Virtual Size: 486.9 MB (486871854 bytes)
--	Total v2 Content-Length: 188.2 MB (188225768 bytes)
+-	Total Virtual Size: 487.3 MB (487257854 bytes)
+-	Total v2 Content-Length: 188.4 MB (188374478 bytes)
 
 ### Layers (35)
 
@@ -1694,13 +1694,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -1708,21 +1708,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -1758,57 +1758,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -1816,71 +1816,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -1890,15 +1890,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -1907,15 +1907,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1926,71 +1926,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+#### `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 
 ```dockerfile
 ENV REDMINE_VERSION=2.6.7
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+#### `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=5770f90b65bda49fa8e7f1cc4b2afa5a
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+#### `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -2001,15 +2001,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:58 GMT
--	Parent Layer: `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+-	Created: Thu, 05 Nov 2015 21:08:17 GMT
+-	Parent Layer: `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.1 MB (9128415 bytes)
--	v2 Blob: `sha256:b91b338b1365bd6bee6ed780cf2ba0cdde4be089dbd3e8483c1f676f4e216591`
--	v2 Content-Length: 2.1 MB (2105441 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:04 GMT
+-	v2 Blob: `sha256:0b67b7b897b1e9e10e87715be91e501590a601c0bc746f57eb1bb4acc93dfff2`
+-	v2 Content-Length: 2.1 MB (2105457 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:58 GMT
 
-#### `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+#### `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 
 ```dockerfile
 RUN buildDeps='\
@@ -2035,99 +2035,99 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:32 GMT
--	Parent Layer: `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+-	Created: Thu, 05 Nov 2015 21:11:12 GMT
+-	Parent Layer: `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 -	Docker Version: 1.8.2
--	Virtual Size: 92.8 MB (92760795 bytes)
--	v2 Blob: `sha256:bef97fbba1cdb8fc8158f6f557d4418470d61ab197cefd4aa1ab946cfeb22765`
--	v2 Content-Length: 42.2 MB (42242726 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:45:55 GMT
+-	Virtual Size: 92.9 MB (92933498 bytes)
+-	v2 Blob: `sha256:9fc56518145e3bcfc46e4ec2a678be8cdbb720993fadae6ce84d249913888c24`
+-	v2 Content-Length: 42.3 MB (42306172 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:50 GMT
 
-#### `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+#### `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:34 GMT
--	Parent Layer: `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+#### `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+#### `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+#### `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2341738e031bb4cd82c888e0a297a061d63dcb118e7e01118bdcf6cc62109c7a`
+#### `393c5812c8794e3cdf7ee92e60bf11d58b0f89ce400752dd00ac47557d846a32`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+-	Created: Thu, 05 Nov 2015 21:11:17 GMT
+-	Parent Layer: `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `edd39b10883ec5de90d6c83777a873617d660dd4b0c33a122fc4a2633d39a85f`
+#### `610ea9ea43f6c11514769df234404afc8492085ca24b1ccad921bdec57b440a7`
 
 ```dockerfile
 ENV PASSENGER_VERSION=5.0.21
 ```
 
--	Created: Sat, 24 Oct 2015 10:04:20 GMT
--	Parent Layer: `2341738e031bb4cd82c888e0a297a061d63dcb118e7e01118bdcf6cc62109c7a`
+-	Created: Thu, 05 Nov 2015 21:13:09 GMT
+-	Parent Layer: `393c5812c8794e3cdf7ee92e60bf11d58b0f89ce400752dd00ac47557d846a32`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `77754cdf646bb2e5995774e85024edd7a7496e27f06901657884ad5c12fa0de1`
+#### `86abe5e119ac1c2c42a765c85309bae5c3131684daf4bdabdc2657d28f1f7f44`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -2139,15 +2139,15 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:05:16 GMT
--	Parent Layer: `edd39b10883ec5de90d6c83777a873617d660dd4b0c33a122fc4a2633d39a85f`
+-	Created: Thu, 05 Nov 2015 21:14:00 GMT
+-	Parent Layer: `610ea9ea43f6c11514769df234404afc8492085ca24b1ccad921bdec57b440a7`
 -	Docker Version: 1.8.2
--	Virtual Size: 44.2 MB (44238969 bytes)
--	v2 Blob: `sha256:21c32c82399150f70cc928fe1e6871954a7bb3acb2b82dd46c9dc169b2fd9683`
--	v2 Content-Length: 20.2 MB (20207746 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:51:49 GMT
+-	Virtual Size: 44.2 MB (44239365 bytes)
+-	v2 Blob: `sha256:ecc8fc4cda477ba58baf6fc6a3de90a6690902b0ffac687f5a5a925bbb11802e`
+-	v2 Content-Length: 20.2 MB (20207678 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:52:32 GMT
 
-#### `d5372ac9d4f68bc66480521870e4ca42fd00f3de569555c8dd627be34332112a`
+#### `81c03bc131234e4a31111aaa3b9440c0c86c907bbf6481cc25867e676fbbd3a4`
 
 ```dockerfile
 RUN set -x \
@@ -2155,22 +2155,22 @@ RUN set -x \
 	&& passenger-config install-standalone-runtime
 ```
 
--	Created: Sat, 24 Oct 2015 10:05:19 GMT
--	Parent Layer: `77754cdf646bb2e5995774e85024edd7a7496e27f06901657884ad5c12fa0de1`
+-	Created: Thu, 05 Nov 2015 21:14:03 GMT
+-	Parent Layer: `86abe5e119ac1c2c42a765c85309bae5c3131684daf4bdabdc2657d28f1f7f44`
 -	Docker Version: 1.8.2
 -	Virtual Size: 27.8 MB (27793965 bytes)
--	v2 Blob: `sha256:55b4a55b21ca36aac58ea62a6d19cbcc4b603f7e5171cb0df5bb764717febbd9`
--	v2 Content-Length: 9.5 MB (9494802 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:51:37 GMT
+-	v2 Blob: `sha256:fdb9f01f6d9ea6aaec9897e2a6fa83daeb2bb9b7b18066b101e72403a17c9dd6`
+-	v2 Content-Length: 9.5 MB (9494799 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:52:22 GMT
 
-#### `add5db32f23623d970e69f9537d1fe39532a8e675b9b63ba1f9608f43d0dd419`
+#### `427c55610a88a00c1922c42f877582f71afa31f56abec64d3894d6f0d0638908`
 
 ```dockerfile
 CMD ["passenger" "start"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:05:20 GMT
--	Parent Layer: `d5372ac9d4f68bc66480521870e4ca42fd00f3de569555c8dd627be34332112a`
+-	Created: Thu, 05 Nov 2015 21:14:04 GMT
+-	Parent Layer: `81c03bc131234e4a31111aaa3b9440c0c86c907bbf6481cc25867e676fbbd3a4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2180,11 +2180,11 @@ CMD ["passenger" "start"]
 ## `redmine:2.6-passenger`
 
 ```console
-$ docker pull library/redmine@sha256:d2d43072849f87e478b97d980fab53027fa783e5000803de5deb26fc06319665
+$ docker pull library/redmine@sha256:1c6f22aa3a2659c65d23c8a620fcf94a4336464e2e91751a4edb61d3e5714173
 ```
 
--	Total Virtual Size: 486.9 MB (486871854 bytes)
--	Total v2 Content-Length: 188.2 MB (188225768 bytes)
+-	Total Virtual Size: 487.3 MB (487257854 bytes)
+-	Total v2 Content-Length: 188.4 MB (188374478 bytes)
 
 ### Layers (35)
 
@@ -2282,13 +2282,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -2296,21 +2296,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -2346,57 +2346,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -2404,71 +2404,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -2478,15 +2478,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -2495,15 +2495,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2514,71 +2514,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+#### `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 
 ```dockerfile
 ENV REDMINE_VERSION=2.6.7
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+#### `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=5770f90b65bda49fa8e7f1cc4b2afa5a
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+#### `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -2589,15 +2589,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:58 GMT
--	Parent Layer: `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+-	Created: Thu, 05 Nov 2015 21:08:17 GMT
+-	Parent Layer: `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.1 MB (9128415 bytes)
--	v2 Blob: `sha256:b91b338b1365bd6bee6ed780cf2ba0cdde4be089dbd3e8483c1f676f4e216591`
--	v2 Content-Length: 2.1 MB (2105441 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:04 GMT
+-	v2 Blob: `sha256:0b67b7b897b1e9e10e87715be91e501590a601c0bc746f57eb1bb4acc93dfff2`
+-	v2 Content-Length: 2.1 MB (2105457 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:58 GMT
 
-#### `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+#### `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 
 ```dockerfile
 RUN buildDeps='\
@@ -2623,99 +2623,99 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:32 GMT
--	Parent Layer: `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+-	Created: Thu, 05 Nov 2015 21:11:12 GMT
+-	Parent Layer: `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 -	Docker Version: 1.8.2
--	Virtual Size: 92.8 MB (92760795 bytes)
--	v2 Blob: `sha256:bef97fbba1cdb8fc8158f6f557d4418470d61ab197cefd4aa1ab946cfeb22765`
--	v2 Content-Length: 42.2 MB (42242726 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:45:55 GMT
+-	Virtual Size: 92.9 MB (92933498 bytes)
+-	v2 Blob: `sha256:9fc56518145e3bcfc46e4ec2a678be8cdbb720993fadae6ce84d249913888c24`
+-	v2 Content-Length: 42.3 MB (42306172 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:50 GMT
 
-#### `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+#### `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:34 GMT
--	Parent Layer: `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+#### `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+#### `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+#### `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2341738e031bb4cd82c888e0a297a061d63dcb118e7e01118bdcf6cc62109c7a`
+#### `393c5812c8794e3cdf7ee92e60bf11d58b0f89ce400752dd00ac47557d846a32`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+-	Created: Thu, 05 Nov 2015 21:11:17 GMT
+-	Parent Layer: `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `edd39b10883ec5de90d6c83777a873617d660dd4b0c33a122fc4a2633d39a85f`
+#### `610ea9ea43f6c11514769df234404afc8492085ca24b1ccad921bdec57b440a7`
 
 ```dockerfile
 ENV PASSENGER_VERSION=5.0.21
 ```
 
--	Created: Sat, 24 Oct 2015 10:04:20 GMT
--	Parent Layer: `2341738e031bb4cd82c888e0a297a061d63dcb118e7e01118bdcf6cc62109c7a`
+-	Created: Thu, 05 Nov 2015 21:13:09 GMT
+-	Parent Layer: `393c5812c8794e3cdf7ee92e60bf11d58b0f89ce400752dd00ac47557d846a32`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `77754cdf646bb2e5995774e85024edd7a7496e27f06901657884ad5c12fa0de1`
+#### `86abe5e119ac1c2c42a765c85309bae5c3131684daf4bdabdc2657d28f1f7f44`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -2727,15 +2727,15 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:05:16 GMT
--	Parent Layer: `edd39b10883ec5de90d6c83777a873617d660dd4b0c33a122fc4a2633d39a85f`
+-	Created: Thu, 05 Nov 2015 21:14:00 GMT
+-	Parent Layer: `610ea9ea43f6c11514769df234404afc8492085ca24b1ccad921bdec57b440a7`
 -	Docker Version: 1.8.2
--	Virtual Size: 44.2 MB (44238969 bytes)
--	v2 Blob: `sha256:21c32c82399150f70cc928fe1e6871954a7bb3acb2b82dd46c9dc169b2fd9683`
--	v2 Content-Length: 20.2 MB (20207746 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:51:49 GMT
+-	Virtual Size: 44.2 MB (44239365 bytes)
+-	v2 Blob: `sha256:ecc8fc4cda477ba58baf6fc6a3de90a6690902b0ffac687f5a5a925bbb11802e`
+-	v2 Content-Length: 20.2 MB (20207678 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:52:32 GMT
 
-#### `d5372ac9d4f68bc66480521870e4ca42fd00f3de569555c8dd627be34332112a`
+#### `81c03bc131234e4a31111aaa3b9440c0c86c907bbf6481cc25867e676fbbd3a4`
 
 ```dockerfile
 RUN set -x \
@@ -2743,22 +2743,22 @@ RUN set -x \
 	&& passenger-config install-standalone-runtime
 ```
 
--	Created: Sat, 24 Oct 2015 10:05:19 GMT
--	Parent Layer: `77754cdf646bb2e5995774e85024edd7a7496e27f06901657884ad5c12fa0de1`
+-	Created: Thu, 05 Nov 2015 21:14:03 GMT
+-	Parent Layer: `86abe5e119ac1c2c42a765c85309bae5c3131684daf4bdabdc2657d28f1f7f44`
 -	Docker Version: 1.8.2
 -	Virtual Size: 27.8 MB (27793965 bytes)
--	v2 Blob: `sha256:55b4a55b21ca36aac58ea62a6d19cbcc4b603f7e5171cb0df5bb764717febbd9`
--	v2 Content-Length: 9.5 MB (9494802 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:51:37 GMT
+-	v2 Blob: `sha256:fdb9f01f6d9ea6aaec9897e2a6fa83daeb2bb9b7b18066b101e72403a17c9dd6`
+-	v2 Content-Length: 9.5 MB (9494799 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:52:22 GMT
 
-#### `add5db32f23623d970e69f9537d1fe39532a8e675b9b63ba1f9608f43d0dd419`
+#### `427c55610a88a00c1922c42f877582f71afa31f56abec64d3894d6f0d0638908`
 
 ```dockerfile
 CMD ["passenger" "start"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:05:20 GMT
--	Parent Layer: `d5372ac9d4f68bc66480521870e4ca42fd00f3de569555c8dd627be34332112a`
+-	Created: Thu, 05 Nov 2015 21:14:04 GMT
+-	Parent Layer: `81c03bc131234e4a31111aaa3b9440c0c86c907bbf6481cc25867e676fbbd3a4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2768,11 +2768,11 @@ CMD ["passenger" "start"]
 ## `redmine:2-passenger`
 
 ```console
-$ docker pull library/redmine@sha256:56f2ef5cb373b5dac81c00e6340f2f8194b8ef179a320039a74a67ae21c80ab7
+$ docker pull library/redmine@sha256:39be6f7fea468a7e0d20442b1de9892b7eea49e69e47c4eb0a267fb74ba7adc4
 ```
 
--	Total Virtual Size: 486.9 MB (486871854 bytes)
--	Total v2 Content-Length: 188.2 MB (188225768 bytes)
+-	Total Virtual Size: 487.3 MB (487257854 bytes)
+-	Total v2 Content-Length: 188.4 MB (188374478 bytes)
 
 ### Layers (35)
 
@@ -2870,13 +2870,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -2884,21 +2884,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -2934,57 +2934,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -2992,71 +2992,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -3066,15 +3066,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -3083,15 +3083,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3102,71 +3102,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+#### `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 
 ```dockerfile
 ENV REDMINE_VERSION=2.6.7
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+#### `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=5770f90b65bda49fa8e7f1cc4b2afa5a
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `be9e02a783eba01a6c8b760d6ec133cf861495b152162be377582aa69532426f`
+-	Created: Thu, 05 Nov 2015 21:08:13 GMT
+-	Parent Layer: `55b85bcc68ca0ea55de115a472d5179b3593041885b3e15cbb19c4a2b8ec75ca`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+#### `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -3177,15 +3177,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:58 GMT
--	Parent Layer: `30c67b625c8e8c42730c6193b77c0eb8abaa628dd082c58a9237bd6bff0a3d05`
+-	Created: Thu, 05 Nov 2015 21:08:17 GMT
+-	Parent Layer: `d1e3dc2bf154c3fd859da7ba6e47a65e98ad5508f2d0c0669788bd1dd128f248`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.1 MB (9128415 bytes)
--	v2 Blob: `sha256:b91b338b1365bd6bee6ed780cf2ba0cdde4be089dbd3e8483c1f676f4e216591`
--	v2 Content-Length: 2.1 MB (2105441 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:04 GMT
+-	v2 Blob: `sha256:0b67b7b897b1e9e10e87715be91e501590a601c0bc746f57eb1bb4acc93dfff2`
+-	v2 Content-Length: 2.1 MB (2105457 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:58 GMT
 
-#### `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+#### `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 
 ```dockerfile
 RUN buildDeps='\
@@ -3211,99 +3211,99 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:32 GMT
--	Parent Layer: `19c28da85907d4eff9596a32cd013518b12f65221e01ed1371beb4a2eacf4c6b`
+-	Created: Thu, 05 Nov 2015 21:11:12 GMT
+-	Parent Layer: `683ffeb84ec7cc02ae3a884cea11c4ccb534b51b2539bad50d1d6c7d51615bd1`
 -	Docker Version: 1.8.2
--	Virtual Size: 92.8 MB (92760795 bytes)
--	v2 Blob: `sha256:bef97fbba1cdb8fc8158f6f557d4418470d61ab197cefd4aa1ab946cfeb22765`
--	v2 Content-Length: 42.2 MB (42242726 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:45:55 GMT
+-	Virtual Size: 92.9 MB (92933498 bytes)
+-	v2 Blob: `sha256:9fc56518145e3bcfc46e4ec2a678be8cdbb720993fadae6ce84d249913888c24`
+-	v2 Content-Length: 42.3 MB (42306172 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:47:50 GMT
 
-#### `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+#### `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:34 GMT
--	Parent Layer: `544b8d9e83121490160a425a970df039e26f6473dff1fa1637f0996cd8af928f`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `8f60ee882f5b672312e876e230bb5e6fe5267c700a370ac0bf543e2b313058f5`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+#### `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `4b739a82601aff3ff0944bf07408a7200bfeb589bb0f21cf73178599731a869b`
+-	Created: Thu, 05 Nov 2015 21:11:15 GMT
+-	Parent Layer: `f46908db28651d52ed25b64d71a1927ff0728468347ab71778d380ec907028e2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+#### `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:35 GMT
--	Parent Layer: `00b72a7e5664fb4855f737aab788b05181177400d43e61217e19a6bcdd8f6877`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `f9ab90786c4602e700fb9ac13f8668de78d7288622f826977e245f56f311715c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+#### `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `82f62d364cd95bf84ba8caf1ca639e2eea71af1984912571552b366e5771675a`
+-	Created: Thu, 05 Nov 2015 21:11:16 GMT
+-	Parent Layer: `a56cffe62d7a6b72bb69cc83802b9b309e1efec383dc91df10241e0085c68bc8`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2341738e031bb4cd82c888e0a297a061d63dcb118e7e01118bdcf6cc62109c7a`
+#### `393c5812c8794e3cdf7ee92e60bf11d58b0f89ce400752dd00ac47557d846a32`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:02:36 GMT
--	Parent Layer: `706120146fb8d06367b202695f946dd9d6e0185c15b8aac2a06bcf67c4f8132f`
+-	Created: Thu, 05 Nov 2015 21:11:17 GMT
+-	Parent Layer: `6f1cd3666de6edf1e9ca4571fc3bcfb969eed8e59ff14e902abfb99c8bd51f5a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `edd39b10883ec5de90d6c83777a873617d660dd4b0c33a122fc4a2633d39a85f`
+#### `610ea9ea43f6c11514769df234404afc8492085ca24b1ccad921bdec57b440a7`
 
 ```dockerfile
 ENV PASSENGER_VERSION=5.0.21
 ```
 
--	Created: Sat, 24 Oct 2015 10:04:20 GMT
--	Parent Layer: `2341738e031bb4cd82c888e0a297a061d63dcb118e7e01118bdcf6cc62109c7a`
+-	Created: Thu, 05 Nov 2015 21:13:09 GMT
+-	Parent Layer: `393c5812c8794e3cdf7ee92e60bf11d58b0f89ce400752dd00ac47557d846a32`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `77754cdf646bb2e5995774e85024edd7a7496e27f06901657884ad5c12fa0de1`
+#### `86abe5e119ac1c2c42a765c85309bae5c3131684daf4bdabdc2657d28f1f7f44`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -3315,15 +3315,15 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:05:16 GMT
--	Parent Layer: `edd39b10883ec5de90d6c83777a873617d660dd4b0c33a122fc4a2633d39a85f`
+-	Created: Thu, 05 Nov 2015 21:14:00 GMT
+-	Parent Layer: `610ea9ea43f6c11514769df234404afc8492085ca24b1ccad921bdec57b440a7`
 -	Docker Version: 1.8.2
--	Virtual Size: 44.2 MB (44238969 bytes)
--	v2 Blob: `sha256:21c32c82399150f70cc928fe1e6871954a7bb3acb2b82dd46c9dc169b2fd9683`
--	v2 Content-Length: 20.2 MB (20207746 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:51:49 GMT
+-	Virtual Size: 44.2 MB (44239365 bytes)
+-	v2 Blob: `sha256:ecc8fc4cda477ba58baf6fc6a3de90a6690902b0ffac687f5a5a925bbb11802e`
+-	v2 Content-Length: 20.2 MB (20207678 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:52:32 GMT
 
-#### `d5372ac9d4f68bc66480521870e4ca42fd00f3de569555c8dd627be34332112a`
+#### `81c03bc131234e4a31111aaa3b9440c0c86c907bbf6481cc25867e676fbbd3a4`
 
 ```dockerfile
 RUN set -x \
@@ -3331,22 +3331,22 @@ RUN set -x \
 	&& passenger-config install-standalone-runtime
 ```
 
--	Created: Sat, 24 Oct 2015 10:05:19 GMT
--	Parent Layer: `77754cdf646bb2e5995774e85024edd7a7496e27f06901657884ad5c12fa0de1`
+-	Created: Thu, 05 Nov 2015 21:14:03 GMT
+-	Parent Layer: `86abe5e119ac1c2c42a765c85309bae5c3131684daf4bdabdc2657d28f1f7f44`
 -	Docker Version: 1.8.2
 -	Virtual Size: 27.8 MB (27793965 bytes)
--	v2 Blob: `sha256:55b4a55b21ca36aac58ea62a6d19cbcc4b603f7e5171cb0df5bb764717febbd9`
--	v2 Content-Length: 9.5 MB (9494802 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:51:37 GMT
+-	v2 Blob: `sha256:fdb9f01f6d9ea6aaec9897e2a6fa83daeb2bb9b7b18066b101e72403a17c9dd6`
+-	v2 Content-Length: 9.5 MB (9494799 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:52:22 GMT
 
-#### `add5db32f23623d970e69f9537d1fe39532a8e675b9b63ba1f9608f43d0dd419`
+#### `427c55610a88a00c1922c42f877582f71afa31f56abec64d3894d6f0d0638908`
 
 ```dockerfile
 CMD ["passenger" "start"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:05:20 GMT
--	Parent Layer: `d5372ac9d4f68bc66480521870e4ca42fd00f3de569555c8dd627be34332112a`
+-	Created: Thu, 05 Nov 2015 21:14:04 GMT
+-	Parent Layer: `81c03bc131234e4a31111aaa3b9440c0c86c907bbf6481cc25867e676fbbd3a4`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3356,11 +3356,11 @@ CMD ["passenger" "start"]
 ## `redmine:3.0.5`
 
 ```console
-$ docker pull library/redmine@sha256:5f3775e3cc353df6aa9766983eb4b35bc8ec88355f6816122e408894f3e5fa17
+$ docker pull library/redmine@sha256:c2f6659ce99c57acb31b4cbd6ccffc20684944272e8249555067dd2d15de9c06
 ```
 
--	Total Virtual Size: 448.1 MB (448063404 bytes)
--	Total v2 Content-Length: 174.4 MB (174394633 bytes)
+-	Total Virtual Size: 448.4 MB (448449639 bytes)
+-	Total v2 Content-Length: 174.5 MB (174544834 bytes)
 
 ### Layers (31)
 
@@ -3458,13 +3458,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -3472,21 +3472,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -3522,57 +3522,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -3580,71 +3580,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -3654,15 +3654,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -3671,15 +3671,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3690,71 +3690,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+#### `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 
 ```dockerfile
 ENV REDMINE_VERSION=3.0.5
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:12 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:15:00 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+#### `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=c3ef69ee258239a53cd69ddc6a99754a
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:13 GMT
--	Parent Layer: `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+-	Created: Thu, 05 Nov 2015 21:15:01 GMT
+-	Parent Layer: `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+#### `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -3765,15 +3765,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:16 GMT
--	Parent Layer: `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+-	Created: Thu, 05 Nov 2015 21:15:04 GMT
+-	Parent Layer: `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.3 MB (9291973 bytes)
--	v2 Blob: `sha256:97948a035727472882148cb67528e345bccc84468814c464d379e44c847ce336`
--	v2 Content-Length: 2.1 MB (2142915 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:41 GMT
+-	v2 Blob: `sha256:7af29beb8e764d2fc77fc7230ca1d9cf43836c2fc3abf1d0e80a05f412354b25`
+-	v2 Content-Length: 2.1 MB (2142916 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:14 GMT
 
-#### `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+#### `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 
 ```dockerfile
 RUN buildDeps='\
@@ -3799,78 +3799,78 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:47 GMT
--	Parent Layer: `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+-	Created: Thu, 05 Nov 2015 21:19:17 GMT
+-	Parent Layer: `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.8 MB (125821721 bytes)
--	v2 Blob: `sha256:9ee3ce4883df4e5eeb397f4db137d4068291c02c2acfb6c5e8f200d5bd97aac0`
--	v2 Content-Length: 58.1 MB (58076729 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:31 GMT
+-	Virtual Size: 126.0 MB (125995055 bytes)
+-	v2 Blob: `sha256:c76989fb8594dff50083cdb87c20dee30be510986a7569b91bb8e8ce13ba8f9e`
+-	v2 Content-Length: 58.1 MB (58141610 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:06 GMT
 
-#### `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+#### `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+#### `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+#### `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+#### `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+#### `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:52 GMT
--	Parent Layer: `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+-	Created: Thu, 05 Nov 2015 21:19:22 GMT
+-	Parent Layer: `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3880,11 +3880,11 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.0`
 
 ```console
-$ docker pull library/redmine@sha256:891adaa8fafc24b65d5cacfd8b91e01b7357ef9133e09b19c0a00f73f291baed
+$ docker pull library/redmine@sha256:9a32727c47d0436cf285ef3dbf0f6b8fba2ebc42aafce88cc5855beb6d3caa58
 ```
 
--	Total Virtual Size: 448.1 MB (448063404 bytes)
--	Total v2 Content-Length: 174.4 MB (174394633 bytes)
+-	Total Virtual Size: 448.4 MB (448449639 bytes)
+-	Total v2 Content-Length: 174.5 MB (174544834 bytes)
 
 ### Layers (31)
 
@@ -3982,13 +3982,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -3996,21 +3996,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -4046,57 +4046,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -4104,71 +4104,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -4178,15 +4178,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -4195,15 +4195,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4214,71 +4214,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+#### `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 
 ```dockerfile
 ENV REDMINE_VERSION=3.0.5
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:12 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:15:00 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+#### `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=c3ef69ee258239a53cd69ddc6a99754a
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:13 GMT
--	Parent Layer: `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+-	Created: Thu, 05 Nov 2015 21:15:01 GMT
+-	Parent Layer: `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+#### `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -4289,15 +4289,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:16 GMT
--	Parent Layer: `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+-	Created: Thu, 05 Nov 2015 21:15:04 GMT
+-	Parent Layer: `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.3 MB (9291973 bytes)
--	v2 Blob: `sha256:97948a035727472882148cb67528e345bccc84468814c464d379e44c847ce336`
--	v2 Content-Length: 2.1 MB (2142915 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:41 GMT
+-	v2 Blob: `sha256:7af29beb8e764d2fc77fc7230ca1d9cf43836c2fc3abf1d0e80a05f412354b25`
+-	v2 Content-Length: 2.1 MB (2142916 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:14 GMT
 
-#### `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+#### `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 
 ```dockerfile
 RUN buildDeps='\
@@ -4323,78 +4323,78 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:47 GMT
--	Parent Layer: `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+-	Created: Thu, 05 Nov 2015 21:19:17 GMT
+-	Parent Layer: `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.8 MB (125821721 bytes)
--	v2 Blob: `sha256:9ee3ce4883df4e5eeb397f4db137d4068291c02c2acfb6c5e8f200d5bd97aac0`
--	v2 Content-Length: 58.1 MB (58076729 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:31 GMT
+-	Virtual Size: 126.0 MB (125995055 bytes)
+-	v2 Blob: `sha256:c76989fb8594dff50083cdb87c20dee30be510986a7569b91bb8e8ce13ba8f9e`
+-	v2 Content-Length: 58.1 MB (58141610 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:06 GMT
 
-#### `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+#### `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+#### `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+#### `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+#### `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+#### `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:52 GMT
--	Parent Layer: `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+-	Created: Thu, 05 Nov 2015 21:19:22 GMT
+-	Parent Layer: `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4404,11 +4404,11 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3`
 
 ```console
-$ docker pull library/redmine@sha256:8e3bf929f99d498cd032f9c986077624a7f6a3245f309b1766219af0e309337e
+$ docker pull library/redmine@sha256:0555fe50f68b8f66cd9e496ea883c6d5efab93e5714b59b2dd495f7aa44b4827
 ```
 
--	Total Virtual Size: 448.1 MB (448063404 bytes)
--	Total v2 Content-Length: 174.4 MB (174394633 bytes)
+-	Total Virtual Size: 448.4 MB (448449639 bytes)
+-	Total v2 Content-Length: 174.5 MB (174544834 bytes)
 
 ### Layers (31)
 
@@ -4506,13 +4506,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -4520,21 +4520,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -4570,57 +4570,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -4628,71 +4628,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -4702,15 +4702,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -4719,15 +4719,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4738,71 +4738,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+#### `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 
 ```dockerfile
 ENV REDMINE_VERSION=3.0.5
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:12 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:15:00 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+#### `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=c3ef69ee258239a53cd69ddc6a99754a
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:13 GMT
--	Parent Layer: `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+-	Created: Thu, 05 Nov 2015 21:15:01 GMT
+-	Parent Layer: `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+#### `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -4813,15 +4813,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:16 GMT
--	Parent Layer: `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+-	Created: Thu, 05 Nov 2015 21:15:04 GMT
+-	Parent Layer: `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.3 MB (9291973 bytes)
--	v2 Blob: `sha256:97948a035727472882148cb67528e345bccc84468814c464d379e44c847ce336`
--	v2 Content-Length: 2.1 MB (2142915 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:41 GMT
+-	v2 Blob: `sha256:7af29beb8e764d2fc77fc7230ca1d9cf43836c2fc3abf1d0e80a05f412354b25`
+-	v2 Content-Length: 2.1 MB (2142916 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:14 GMT
 
-#### `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+#### `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 
 ```dockerfile
 RUN buildDeps='\
@@ -4847,78 +4847,78 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:47 GMT
--	Parent Layer: `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+-	Created: Thu, 05 Nov 2015 21:19:17 GMT
+-	Parent Layer: `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.8 MB (125821721 bytes)
--	v2 Blob: `sha256:9ee3ce4883df4e5eeb397f4db137d4068291c02c2acfb6c5e8f200d5bd97aac0`
--	v2 Content-Length: 58.1 MB (58076729 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:31 GMT
+-	Virtual Size: 126.0 MB (125995055 bytes)
+-	v2 Blob: `sha256:c76989fb8594dff50083cdb87c20dee30be510986a7569b91bb8e8ce13ba8f9e`
+-	v2 Content-Length: 58.1 MB (58141610 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:06 GMT
 
-#### `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+#### `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+#### `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+#### `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+#### `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+#### `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:52 GMT
--	Parent Layer: `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+-	Created: Thu, 05 Nov 2015 21:19:22 GMT
+-	Parent Layer: `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4928,11 +4928,11 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:latest`
 
 ```console
-$ docker pull library/redmine@sha256:6287152da86267778e2550a3d24c7be9a59525528b6c71c2b71c3c613c73d086
+$ docker pull library/redmine@sha256:ad9dc72673002d375decd70077753e81c1ab6e6b688a0509df0745e02ebb02aa
 ```
 
--	Total Virtual Size: 448.1 MB (448063404 bytes)
--	Total v2 Content-Length: 174.4 MB (174394633 bytes)
+-	Total Virtual Size: 448.4 MB (448449639 bytes)
+-	Total v2 Content-Length: 174.5 MB (174544834 bytes)
 
 ### Layers (31)
 
@@ -5030,13 +5030,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -5044,21 +5044,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -5094,57 +5094,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -5152,71 +5152,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -5226,15 +5226,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -5243,15 +5243,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5262,71 +5262,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+#### `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 
 ```dockerfile
 ENV REDMINE_VERSION=3.0.5
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:12 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:15:00 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+#### `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=c3ef69ee258239a53cd69ddc6a99754a
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:13 GMT
--	Parent Layer: `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+-	Created: Thu, 05 Nov 2015 21:15:01 GMT
+-	Parent Layer: `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+#### `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -5337,15 +5337,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:16 GMT
--	Parent Layer: `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+-	Created: Thu, 05 Nov 2015 21:15:04 GMT
+-	Parent Layer: `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.3 MB (9291973 bytes)
--	v2 Blob: `sha256:97948a035727472882148cb67528e345bccc84468814c464d379e44c847ce336`
--	v2 Content-Length: 2.1 MB (2142915 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:41 GMT
+-	v2 Blob: `sha256:7af29beb8e764d2fc77fc7230ca1d9cf43836c2fc3abf1d0e80a05f412354b25`
+-	v2 Content-Length: 2.1 MB (2142916 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:14 GMT
 
-#### `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+#### `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 
 ```dockerfile
 RUN buildDeps='\
@@ -5371,78 +5371,78 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:47 GMT
--	Parent Layer: `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+-	Created: Thu, 05 Nov 2015 21:19:17 GMT
+-	Parent Layer: `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.8 MB (125821721 bytes)
--	v2 Blob: `sha256:9ee3ce4883df4e5eeb397f4db137d4068291c02c2acfb6c5e8f200d5bd97aac0`
--	v2 Content-Length: 58.1 MB (58076729 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:31 GMT
+-	Virtual Size: 126.0 MB (125995055 bytes)
+-	v2 Blob: `sha256:c76989fb8594dff50083cdb87c20dee30be510986a7569b91bb8e8ce13ba8f9e`
+-	v2 Content-Length: 58.1 MB (58141610 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:06 GMT
 
-#### `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+#### `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+#### `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+#### `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+#### `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+#### `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:52 GMT
--	Parent Layer: `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+-	Created: Thu, 05 Nov 2015 21:19:22 GMT
+-	Parent Layer: `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -5452,11 +5452,11 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.0.5-passenger`
 
 ```console
-$ docker pull library/redmine@sha256:67851a50c41f1e0852a17682ed4a284104ed06ea77f546de1daedb3442b8db4c
+$ docker pull library/redmine@sha256:5bb405c59806d9e89a08ab168ce1c276fce7f336be0cca177a5d073b27f323ad
 ```
 
--	Total Virtual Size: 520.1 MB (520096337 bytes)
--	Total v2 Content-Length: 204.1 MB (204097178 bytes)
+-	Total Virtual Size: 520.5 MB (520482968 bytes)
+-	Total v2 Content-Length: 204.2 MB (204247437 bytes)
 
 ### Layers (35)
 
@@ -5554,13 +5554,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -5568,21 +5568,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -5618,57 +5618,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -5676,71 +5676,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -5750,15 +5750,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -5767,15 +5767,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5786,71 +5786,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+#### `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 
 ```dockerfile
 ENV REDMINE_VERSION=3.0.5
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:12 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:15:00 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+#### `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=c3ef69ee258239a53cd69ddc6a99754a
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:13 GMT
--	Parent Layer: `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+-	Created: Thu, 05 Nov 2015 21:15:01 GMT
+-	Parent Layer: `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+#### `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -5861,15 +5861,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:16 GMT
--	Parent Layer: `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+-	Created: Thu, 05 Nov 2015 21:15:04 GMT
+-	Parent Layer: `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.3 MB (9291973 bytes)
--	v2 Blob: `sha256:97948a035727472882148cb67528e345bccc84468814c464d379e44c847ce336`
--	v2 Content-Length: 2.1 MB (2142915 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:41 GMT
+-	v2 Blob: `sha256:7af29beb8e764d2fc77fc7230ca1d9cf43836c2fc3abf1d0e80a05f412354b25`
+-	v2 Content-Length: 2.1 MB (2142916 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:14 GMT
 
-#### `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+#### `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 
 ```dockerfile
 RUN buildDeps='\
@@ -5895,99 +5895,99 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:47 GMT
--	Parent Layer: `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+-	Created: Thu, 05 Nov 2015 21:19:17 GMT
+-	Parent Layer: `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.8 MB (125821721 bytes)
--	v2 Blob: `sha256:9ee3ce4883df4e5eeb397f4db137d4068291c02c2acfb6c5e8f200d5bd97aac0`
--	v2 Content-Length: 58.1 MB (58076729 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:31 GMT
+-	Virtual Size: 126.0 MB (125995055 bytes)
+-	v2 Blob: `sha256:c76989fb8594dff50083cdb87c20dee30be510986a7569b91bb8e8ce13ba8f9e`
+-	v2 Content-Length: 58.1 MB (58141610 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:06 GMT
 
-#### `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+#### `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+#### `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+#### `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+#### `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+#### `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:52 GMT
--	Parent Layer: `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+-	Created: Thu, 05 Nov 2015 21:19:22 GMT
+-	Parent Layer: `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4d170031d993fda1d884edff8b768aff8b04d076652415d28ffc271f88a7a657`
+#### `940278e328efd3a0acb723f412557fcc44fded9c25a50398565dffef9d30862d`
 
 ```dockerfile
 ENV PASSENGER_VERSION=5.0.21
 ```
 
--	Created: Sat, 24 Oct 2015 10:14:26 GMT
--	Parent Layer: `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+-	Created: Thu, 05 Nov 2015 21:22:08 GMT
+-	Parent Layer: `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1e7f5e2962b816ab0caa2e322288d7e7432afb165a512e9336666f75efa2e47d`
+#### `d35fea4261ae4af369d477495bf251be3d7ff509f247684b04101dd1baa36921`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -5999,15 +5999,15 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:17 GMT
--	Parent Layer: `4d170031d993fda1d884edff8b768aff8b04d076652415d28ffc271f88a7a657`
+-	Created: Thu, 05 Nov 2015 21:22:59 GMT
+-	Parent Layer: `940278e328efd3a0acb723f412557fcc44fded9c25a50398565dffef9d30862d`
 -	Docker Version: 1.8.2
--	Virtual Size: 44.2 MB (44238968 bytes)
--	v2 Blob: `sha256:9012aa2d886768003d2fcbcd0fd2dd3e0a353ee76aada80ae25ecbd1860c81ca`
--	v2 Content-Length: 20.2 MB (20207681 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:57:33 GMT
+-	Virtual Size: 44.2 MB (44239364 bytes)
+-	v2 Blob: `sha256:10ed7aa74e67bbd490697ebb6b14bc0df69ab283716da58fdaf633c59ce9f45c`
+-	v2 Content-Length: 20.2 MB (20207738 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:57:55 GMT
 
-#### `623e34747ff8a486260794dcc6ddab6ae1850e99bb03da09b732f411cb168842`
+#### `38d3c55af2d7c234a995746801fb9515526a5150b0d883803773fecf01c9e26b`
 
 ```dockerfile
 RUN set -x \
@@ -6015,22 +6015,22 @@ RUN set -x \
 	&& passenger-config install-standalone-runtime
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:21 GMT
--	Parent Layer: `1e7f5e2962b816ab0caa2e322288d7e7432afb165a512e9336666f75efa2e47d`
+-	Created: Thu, 05 Nov 2015 21:23:02 GMT
+-	Parent Layer: `d35fea4261ae4af369d477495bf251be3d7ff509f247684b04101dd1baa36921`
 -	Docker Version: 1.8.2
 -	Virtual Size: 27.8 MB (27793965 bytes)
--	v2 Blob: `sha256:25b2aca36798c19b37ab54f62d267c2dab648beed505e77a400ed2d6ed2e779b`
--	v2 Content-Length: 9.5 MB (9494800 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:57:21 GMT
+-	v2 Blob: `sha256:957655c244867087a4dee7f0fd6dcf6b3510d30d62543e916219848ccc99efa4`
+-	v2 Content-Length: 9.5 MB (9494801 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:57:44 GMT
 
-#### `6066ca10d8c5196fc7e8d4374fe49aeeb127406cbe84c9406a7543124c5cf58d`
+#### `844e63eae50f59043a9aa2fb3bc71fb3fae51e9615fcef6c5bb38fdb5e2f72ee`
 
 ```dockerfile
 CMD ["passenger" "start"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:21 GMT
--	Parent Layer: `623e34747ff8a486260794dcc6ddab6ae1850e99bb03da09b732f411cb168842`
+-	Created: Thu, 05 Nov 2015 21:23:03 GMT
+-	Parent Layer: `38d3c55af2d7c234a995746801fb9515526a5150b0d883803773fecf01c9e26b`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -6040,11 +6040,11 @@ CMD ["passenger" "start"]
 ## `redmine:3.0-passenger`
 
 ```console
-$ docker pull library/redmine@sha256:086f157a0bcb537cf6c87fb4dc8e9a65cad534a192c5c3513cc656e3c1452bd6
+$ docker pull library/redmine@sha256:c06e67447b9e82634ba2d132e44c688d511ec422559657c2d7d2501a65f2c1de
 ```
 
--	Total Virtual Size: 520.1 MB (520096337 bytes)
--	Total v2 Content-Length: 204.1 MB (204097178 bytes)
+-	Total Virtual Size: 520.5 MB (520482968 bytes)
+-	Total v2 Content-Length: 204.2 MB (204247437 bytes)
 
 ### Layers (35)
 
@@ -6142,13 +6142,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -6156,21 +6156,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -6206,57 +6206,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -6264,71 +6264,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -6338,15 +6338,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -6355,15 +6355,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6374,71 +6374,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+#### `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 
 ```dockerfile
 ENV REDMINE_VERSION=3.0.5
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:12 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:15:00 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+#### `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=c3ef69ee258239a53cd69ddc6a99754a
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:13 GMT
--	Parent Layer: `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+-	Created: Thu, 05 Nov 2015 21:15:01 GMT
+-	Parent Layer: `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+#### `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -6449,15 +6449,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:16 GMT
--	Parent Layer: `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+-	Created: Thu, 05 Nov 2015 21:15:04 GMT
+-	Parent Layer: `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.3 MB (9291973 bytes)
--	v2 Blob: `sha256:97948a035727472882148cb67528e345bccc84468814c464d379e44c847ce336`
--	v2 Content-Length: 2.1 MB (2142915 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:41 GMT
+-	v2 Blob: `sha256:7af29beb8e764d2fc77fc7230ca1d9cf43836c2fc3abf1d0e80a05f412354b25`
+-	v2 Content-Length: 2.1 MB (2142916 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:14 GMT
 
-#### `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+#### `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 
 ```dockerfile
 RUN buildDeps='\
@@ -6483,99 +6483,99 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:47 GMT
--	Parent Layer: `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+-	Created: Thu, 05 Nov 2015 21:19:17 GMT
+-	Parent Layer: `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.8 MB (125821721 bytes)
--	v2 Blob: `sha256:9ee3ce4883df4e5eeb397f4db137d4068291c02c2acfb6c5e8f200d5bd97aac0`
--	v2 Content-Length: 58.1 MB (58076729 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:31 GMT
+-	Virtual Size: 126.0 MB (125995055 bytes)
+-	v2 Blob: `sha256:c76989fb8594dff50083cdb87c20dee30be510986a7569b91bb8e8ce13ba8f9e`
+-	v2 Content-Length: 58.1 MB (58141610 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:06 GMT
 
-#### `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+#### `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+#### `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+#### `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+#### `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+#### `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:52 GMT
--	Parent Layer: `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+-	Created: Thu, 05 Nov 2015 21:19:22 GMT
+-	Parent Layer: `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4d170031d993fda1d884edff8b768aff8b04d076652415d28ffc271f88a7a657`
+#### `940278e328efd3a0acb723f412557fcc44fded9c25a50398565dffef9d30862d`
 
 ```dockerfile
 ENV PASSENGER_VERSION=5.0.21
 ```
 
--	Created: Sat, 24 Oct 2015 10:14:26 GMT
--	Parent Layer: `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+-	Created: Thu, 05 Nov 2015 21:22:08 GMT
+-	Parent Layer: `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1e7f5e2962b816ab0caa2e322288d7e7432afb165a512e9336666f75efa2e47d`
+#### `d35fea4261ae4af369d477495bf251be3d7ff509f247684b04101dd1baa36921`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -6587,15 +6587,15 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:17 GMT
--	Parent Layer: `4d170031d993fda1d884edff8b768aff8b04d076652415d28ffc271f88a7a657`
+-	Created: Thu, 05 Nov 2015 21:22:59 GMT
+-	Parent Layer: `940278e328efd3a0acb723f412557fcc44fded9c25a50398565dffef9d30862d`
 -	Docker Version: 1.8.2
--	Virtual Size: 44.2 MB (44238968 bytes)
--	v2 Blob: `sha256:9012aa2d886768003d2fcbcd0fd2dd3e0a353ee76aada80ae25ecbd1860c81ca`
--	v2 Content-Length: 20.2 MB (20207681 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:57:33 GMT
+-	Virtual Size: 44.2 MB (44239364 bytes)
+-	v2 Blob: `sha256:10ed7aa74e67bbd490697ebb6b14bc0df69ab283716da58fdaf633c59ce9f45c`
+-	v2 Content-Length: 20.2 MB (20207738 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:57:55 GMT
 
-#### `623e34747ff8a486260794dcc6ddab6ae1850e99bb03da09b732f411cb168842`
+#### `38d3c55af2d7c234a995746801fb9515526a5150b0d883803773fecf01c9e26b`
 
 ```dockerfile
 RUN set -x \
@@ -6603,22 +6603,22 @@ RUN set -x \
 	&& passenger-config install-standalone-runtime
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:21 GMT
--	Parent Layer: `1e7f5e2962b816ab0caa2e322288d7e7432afb165a512e9336666f75efa2e47d`
+-	Created: Thu, 05 Nov 2015 21:23:02 GMT
+-	Parent Layer: `d35fea4261ae4af369d477495bf251be3d7ff509f247684b04101dd1baa36921`
 -	Docker Version: 1.8.2
 -	Virtual Size: 27.8 MB (27793965 bytes)
--	v2 Blob: `sha256:25b2aca36798c19b37ab54f62d267c2dab648beed505e77a400ed2d6ed2e779b`
--	v2 Content-Length: 9.5 MB (9494800 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:57:21 GMT
+-	v2 Blob: `sha256:957655c244867087a4dee7f0fd6dcf6b3510d30d62543e916219848ccc99efa4`
+-	v2 Content-Length: 9.5 MB (9494801 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:57:44 GMT
 
-#### `6066ca10d8c5196fc7e8d4374fe49aeeb127406cbe84c9406a7543124c5cf58d`
+#### `844e63eae50f59043a9aa2fb3bc71fb3fae51e9615fcef6c5bb38fdb5e2f72ee`
 
 ```dockerfile
 CMD ["passenger" "start"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:21 GMT
--	Parent Layer: `623e34747ff8a486260794dcc6ddab6ae1850e99bb03da09b732f411cb168842`
+-	Created: Thu, 05 Nov 2015 21:23:03 GMT
+-	Parent Layer: `38d3c55af2d7c234a995746801fb9515526a5150b0d883803773fecf01c9e26b`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -6628,11 +6628,11 @@ CMD ["passenger" "start"]
 ## `redmine:3-passenger`
 
 ```console
-$ docker pull library/redmine@sha256:1f648512ae290408071608940d285b098ab2334812dbffcef85b015e64ca373e
+$ docker pull library/redmine@sha256:1fe90c4ca34199050539501b3081708ac074988b2e3b1710c72f3010b8d81a36
 ```
 
--	Total Virtual Size: 520.1 MB (520096337 bytes)
--	Total v2 Content-Length: 204.1 MB (204097178 bytes)
+-	Total Virtual Size: 520.5 MB (520482968 bytes)
+-	Total v2 Content-Length: 204.2 MB (204247437 bytes)
 
 ### Layers (35)
 
@@ -6730,13 +6730,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -6744,21 +6744,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -6794,57 +6794,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -6852,71 +6852,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -6926,15 +6926,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -6943,15 +6943,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6962,71 +6962,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+#### `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 
 ```dockerfile
 ENV REDMINE_VERSION=3.0.5
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:12 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:15:00 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+#### `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=c3ef69ee258239a53cd69ddc6a99754a
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:13 GMT
--	Parent Layer: `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+-	Created: Thu, 05 Nov 2015 21:15:01 GMT
+-	Parent Layer: `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+#### `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -7037,15 +7037,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:16 GMT
--	Parent Layer: `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+-	Created: Thu, 05 Nov 2015 21:15:04 GMT
+-	Parent Layer: `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.3 MB (9291973 bytes)
--	v2 Blob: `sha256:97948a035727472882148cb67528e345bccc84468814c464d379e44c847ce336`
--	v2 Content-Length: 2.1 MB (2142915 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:41 GMT
+-	v2 Blob: `sha256:7af29beb8e764d2fc77fc7230ca1d9cf43836c2fc3abf1d0e80a05f412354b25`
+-	v2 Content-Length: 2.1 MB (2142916 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:14 GMT
 
-#### `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+#### `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 
 ```dockerfile
 RUN buildDeps='\
@@ -7071,99 +7071,99 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:47 GMT
--	Parent Layer: `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+-	Created: Thu, 05 Nov 2015 21:19:17 GMT
+-	Parent Layer: `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.8 MB (125821721 bytes)
--	v2 Blob: `sha256:9ee3ce4883df4e5eeb397f4db137d4068291c02c2acfb6c5e8f200d5bd97aac0`
--	v2 Content-Length: 58.1 MB (58076729 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:31 GMT
+-	Virtual Size: 126.0 MB (125995055 bytes)
+-	v2 Blob: `sha256:c76989fb8594dff50083cdb87c20dee30be510986a7569b91bb8e8ce13ba8f9e`
+-	v2 Content-Length: 58.1 MB (58141610 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:06 GMT
 
-#### `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+#### `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+#### `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+#### `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+#### `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+#### `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:52 GMT
--	Parent Layer: `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+-	Created: Thu, 05 Nov 2015 21:19:22 GMT
+-	Parent Layer: `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4d170031d993fda1d884edff8b768aff8b04d076652415d28ffc271f88a7a657`
+#### `940278e328efd3a0acb723f412557fcc44fded9c25a50398565dffef9d30862d`
 
 ```dockerfile
 ENV PASSENGER_VERSION=5.0.21
 ```
 
--	Created: Sat, 24 Oct 2015 10:14:26 GMT
--	Parent Layer: `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+-	Created: Thu, 05 Nov 2015 21:22:08 GMT
+-	Parent Layer: `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1e7f5e2962b816ab0caa2e322288d7e7432afb165a512e9336666f75efa2e47d`
+#### `d35fea4261ae4af369d477495bf251be3d7ff509f247684b04101dd1baa36921`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -7175,15 +7175,15 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:17 GMT
--	Parent Layer: `4d170031d993fda1d884edff8b768aff8b04d076652415d28ffc271f88a7a657`
+-	Created: Thu, 05 Nov 2015 21:22:59 GMT
+-	Parent Layer: `940278e328efd3a0acb723f412557fcc44fded9c25a50398565dffef9d30862d`
 -	Docker Version: 1.8.2
--	Virtual Size: 44.2 MB (44238968 bytes)
--	v2 Blob: `sha256:9012aa2d886768003d2fcbcd0fd2dd3e0a353ee76aada80ae25ecbd1860c81ca`
--	v2 Content-Length: 20.2 MB (20207681 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:57:33 GMT
+-	Virtual Size: 44.2 MB (44239364 bytes)
+-	v2 Blob: `sha256:10ed7aa74e67bbd490697ebb6b14bc0df69ab283716da58fdaf633c59ce9f45c`
+-	v2 Content-Length: 20.2 MB (20207738 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:57:55 GMT
 
-#### `623e34747ff8a486260794dcc6ddab6ae1850e99bb03da09b732f411cb168842`
+#### `38d3c55af2d7c234a995746801fb9515526a5150b0d883803773fecf01c9e26b`
 
 ```dockerfile
 RUN set -x \
@@ -7191,22 +7191,22 @@ RUN set -x \
 	&& passenger-config install-standalone-runtime
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:21 GMT
--	Parent Layer: `1e7f5e2962b816ab0caa2e322288d7e7432afb165a512e9336666f75efa2e47d`
+-	Created: Thu, 05 Nov 2015 21:23:02 GMT
+-	Parent Layer: `d35fea4261ae4af369d477495bf251be3d7ff509f247684b04101dd1baa36921`
 -	Docker Version: 1.8.2
 -	Virtual Size: 27.8 MB (27793965 bytes)
--	v2 Blob: `sha256:25b2aca36798c19b37ab54f62d267c2dab648beed505e77a400ed2d6ed2e779b`
--	v2 Content-Length: 9.5 MB (9494800 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:57:21 GMT
+-	v2 Blob: `sha256:957655c244867087a4dee7f0fd6dcf6b3510d30d62543e916219848ccc99efa4`
+-	v2 Content-Length: 9.5 MB (9494801 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:57:44 GMT
 
-#### `6066ca10d8c5196fc7e8d4374fe49aeeb127406cbe84c9406a7543124c5cf58d`
+#### `844e63eae50f59043a9aa2fb3bc71fb3fae51e9615fcef6c5bb38fdb5e2f72ee`
 
 ```dockerfile
 CMD ["passenger" "start"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:21 GMT
--	Parent Layer: `623e34747ff8a486260794dcc6ddab6ae1850e99bb03da09b732f411cb168842`
+-	Created: Thu, 05 Nov 2015 21:23:03 GMT
+-	Parent Layer: `38d3c55af2d7c234a995746801fb9515526a5150b0d883803773fecf01c9e26b`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -7216,11 +7216,11 @@ CMD ["passenger" "start"]
 ## `redmine:passenger`
 
 ```console
-$ docker pull library/redmine@sha256:fa34472fd988f8ea3913c41a40b2f3153fd8c23a3c3db18094478bf52712dfbc
+$ docker pull library/redmine@sha256:c0987b1fc2a85973f5c9a2cd0336e31f81094e9200e8cf070db3b58514b1d57d
 ```
 
--	Total Virtual Size: 520.1 MB (520096337 bytes)
--	Total v2 Content-Length: 204.1 MB (204097178 bytes)
+-	Total Virtual Size: 520.5 MB (520482968 bytes)
+-	Total v2 Content-Length: 204.2 MB (204247437 bytes)
 
 ### Layers (35)
 
@@ -7318,13 +7318,13 @@ ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+#### `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 
 ```dockerfile
-ENV RUBYGEMS_VERSION=2.4.8
+ENV RUBYGEMS_VERSION=2.5.0
 ```
 
--	Created: Fri, 23 Oct 2015 23:34:58 GMT
+-	Created: Thu, 05 Nov 2015 20:54:24 GMT
 -	Parent Layer: `91ecb3df5047a930edeadd41765dff0e1bbe35ac3180a56a09ef95ed6d977227`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
@@ -7332,21 +7332,21 @@ ENV RUBYGEMS_VERSION=2.4.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+#### `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 
 ```dockerfile
 RUN echo 'install: --no-document\nupdate: --no-document' >> "$HOME/.gemrc"
 ```
 
--	Created: Fri, 23 Oct 2015 23:35:00 GMT
--	Parent Layer: `e86dd7a0510efe48b069fe6033670823266d14c2ac975fa3545c552a99950db7`
+-	Created: Thu, 05 Nov 2015 20:54:26 GMT
+-	Parent Layer: `1d199c9dba09f34ad1f95b1658c39fe13fccb83ffb2c2eea217536767b45f726`
 -	Docker Version: 1.8.2
 -	Virtual Size: 45.0 B
--	v2 Blob: `sha256:76f5ff3987f4d21ae4301fd400e36f6e4a869aaeadb2fe2fac5d5eb3b8867b20`
+-	v2 Blob: `sha256:49ffbdb956e8774521dbef5206bd87272b1da50289fc35a98a7a6b9c7616dc2e`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:29 GMT
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:14 GMT
 
-#### `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+#### `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -7382,57 +7382,57 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:25 GMT
--	Parent Layer: `a0e6c02f405b5d79e1a455f2579c5284c5949e0be61a3a050142aa102636725d`
+-	Created: Thu, 05 Nov 2015 20:58:54 GMT
+-	Parent Layer: `565bba1fc91ea1a5a35de111b9940dda7865d43b57e15a13d59c8af4caefd9b2`
 -	Docker Version: 1.8.2
--	Virtual Size: 111.3 MB (111312299 bytes)
--	v2 Blob: `sha256:a56a0789866f99a1e6484271b0b62081fbf9ef63c8fb70d6338582d00bc251e2`
--	v2 Content-Length: 32.6 MB (32577058 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:47:24 GMT
+-	Virtual Size: 111.5 MB (111517538 bytes)
+-	v2 Blob: `sha256:f3e88b66f3f306e496a45e646dd8bb0550dc48b44bb0e182d298dda51d57c430`
+-	v2 Content-Length: 32.7 MB (32655003 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:49:08 GMT
 
-#### `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+#### `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 
 ```dockerfile
 ENV GEM_HOME=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `2a8e985433dcf641da432dd7d9a974dbc2c52f3f6ff49778791e846cb024f2ac`
+-	Created: Thu, 05 Nov 2015 20:58:55 GMT
+-	Parent Layer: `d3bfa54c40554bc4502ffd22003ccdbc5d7c2d23fc2d7ad94f127c5b3747766a`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+#### `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 
 ```dockerfile
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:27 GMT
--	Parent Layer: `0a4a4f1d0f19d21a0af03392287a9f2f4a081142b4ddb02521f58d36bfb08d01`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `4af13d7f58dd298c28463d3f7df3f49b95a2bfe03ae91bbe4b9a1f60961203f6`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+#### `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 
 ```dockerfile
 ENV BUNDLER_VERSION=1.10.6
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:28 GMT
--	Parent Layer: `fda0ab29a7239c3d088d88092f0d7fb199e0c60a3866260f4246dd5997468cec`
+-	Created: Thu, 05 Nov 2015 20:58:56 GMT
+-	Parent Layer: `1ff152e87cdd2583649ea2d4c5bc90635955d89bd801c4b2c6aff9573fa41769`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+#### `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 
 ```dockerfile
 RUN gem install bundler --version "$BUNDLER_VERSION" \
@@ -7440,71 +7440,71 @@ RUN gem install bundler --version "$BUNDLER_VERSION" \
 	&& bundle config --global bin "$GEM_HOME/bin"
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `c0961f847700159a25852dc8da2570822efaa5ff5ff19ef44118dcd44cc3caca`
+-	Created: Thu, 05 Nov 2015 20:58:59 GMT
+-	Parent Layer: `16e360b7f816fa3700fe0c60fed6a9dabc3d1a777c93f3108da2e102d3b2d15b`
 -	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1124534 bytes)
--	v2 Blob: `sha256:be50afe04ca71d7031d839af8ceba469ae972fd7b29e7a25eca1c57f17c133b3`
--	v2 Content-Length: 500.1 KB (500097 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:53 GMT
+-	Virtual Size: 1.1 MB (1124538 bytes)
+-	v2 Blob: `sha256:e999b42a5e7b1b6cf1fb583a1148c4e7ebdad5db883be3f6c170d1b54344333d`
+-	v2 Content-Length: 500.1 KB (500115 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:40 GMT
 
-#### `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+#### `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 
 ```dockerfile
 ENV BUNDLE_APP_CONFIG=/usr/local/bundle
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:31 GMT
--	Parent Layer: `80e3a5627f793235813b6c43ecc4cf63579090cb534a2c2559032a77a49294cf`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `19e5dab0e78f68f797bc20d90859d39c4f32658a519d5b642b0e0b0befa85d58`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+#### `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 
 ```dockerfile
 CMD ["irb"]
 ```
 
--	Created: Fri, 23 Oct 2015 23:39:32 GMT
--	Parent Layer: `b5876644a865d37fa34d7456e3ad766bd8bcb0ba305725a8bd4c375fdf49cbc6`
+-	Created: Thu, 05 Nov 2015 20:59:00 GMT
+-	Parent Layer: `aa2e71295fcaa9d0bc9dae60e67d68f0e24bc1d3680dd6b7a36c54ad5b60981f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+#### `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 
 ```dockerfile
 RUN groupadd -r redmine && useradd -r -g redmine redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:45 GMT
--	Parent Layer: `41de3ff86d01fe30561bc0c6c648f1bd73c7193ec4a256cedf1c111ec425792a`
+-	Created: Thu, 05 Nov 2015 21:07:14 GMT
+-	Parent Layer: `3af87ca8f0b290f8213be750917fdc9acd3124482efa7c3551b42208ad6d9af2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 330.4 KB (330382 bytes)
--	v2 Blob: `sha256:a6f8e502a52fd8f6d62b1c4d3f611e2fbdd43dc7fe98e45cdb7ef49635014d79`
--	v2 Content-Length: 2.0 KB (2045 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:44 GMT
+-	v2 Blob: `sha256:bb62c6410fd0de9fa31f11ef0ef5af300166c933e707734511f8c9cfc7bdc966`
+-	v2 Content-Length: 2.0 KB (2049 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:32 GMT
 
-#### `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+#### `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:49 GMT
--	Parent Layer: `873a645712bfd9b97c15a01fa173dbdce7dfbcf395fbf35c50ecc9bdfb4d79fc`
+-	Created: Thu, 05 Nov 2015 21:07:17 GMT
+-	Parent Layer: `bc20bbb1449a6ece2a40d064364fc0a350ca84313d71c1cfd109c3f18f2d36e7`
 -	Docker Version: 1.8.2
--	Virtual Size: 112.6 KB (112648 bytes)
--	v2 Blob: `sha256:0e63098d2bff7cc52ada9ae2af1e9816d08632edb7e7201cf807da8e69f7d31a`
--	v2 Content-Length: 102.0 KB (102022 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:40 GMT
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:dfb5633255d2f3a6615863c70a9021d91c7bfcd86addaa84b43bd20f6d680075`
+-	v2 Content-Length: 109.4 KB (109380 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:29 GMT
 
-#### `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+#### `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 
 ```dockerfile
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
@@ -7514,15 +7514,15 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 	&& chmod +x /usr/local/bin/gosu
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:54 GMT
--	Parent Layer: `6b65d04dd6408747cb1087465d72cb1455bc0040be7ea9d73a93af199fc52838`
+-	Created: Thu, 05 Nov 2015 21:07:22 GMT
+-	Parent Layer: `a82887db5142ad3295457557833331da45f04f34b4c8c0b9f2c4bca1ec8c33f1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.1 MB (2141216 bytes)
--	v2 Blob: `sha256:565ab765a668373ea7e7a409cd227d026c1c0eb4c1f518c68b7d2f90f897ef40`
--	v2 Content-Length: 610.6 KB (610597 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:37 GMT
+-	v2 Blob: `sha256:b3f9f76532de9219801d17ebf5a32242c6dce2ba5319c58fbb39ee7b7cb67334`
+-	v2 Content-Length: 610.6 KB (610598 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:25 GMT
 
-#### `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+#### `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 
 ```dockerfile
 RUN set -x \
@@ -7531,15 +7531,15 @@ RUN set -x \
 	&& tini -h
 ```
 
--	Created: Sat, 24 Oct 2015 09:56:56 GMT
--	Parent Layer: `4b63fda870d4dee3948af433e3b62775d9405cbafdfb6134a6f5d2b7d985d56d`
+-	Created: Thu, 05 Nov 2015 21:07:24 GMT
+-	Parent Layer: `a9bdc637e237370cc1cfb6d86bb30174af812fa5ae587a65829ef4e2e378fa93`
 -	Docker Version: 1.8.2
 -	Virtual Size: 14.6 KB (14552 bytes)
--	v2 Blob: `sha256:e650d424c8306a4ac46769576b49656b3ffc3098e72344e103f70d8ea4fd8b11`
--	v2 Content-Length: 5.3 KB (5320 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:32 GMT
+-	v2 Blob: `sha256:08b46a96e5ae160028ef3cc78c80d22b17d6fa61bdf2ee5374b248e23d6283b7`
+-	v2 Content-Length: 5.3 KB (5324 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:21 GMT
 
-#### `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+#### `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7550,71 +7550,71 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:52 GMT
--	Parent Layer: `de5f2fc6ac61789e42130dafe3dcd5e10224307eb0970d1cb0a0e78b56ab89d2`
+-	Created: Thu, 05 Nov 2015 21:08:10 GMT
+-	Parent Layer: `36ca1452127ccd4353647f42bb8f5fcd1a98227be0ee752671e9269d25f31ada`
 -	Docker Version: 1.8.2
 -	Virtual Size: 35.1 MB (35115491 bytes)
--	v2 Blob: `sha256:5b31c5f1e2a615216a2ce6e31f7d5da8f5deedd93bcea868922bf33fb38faad8`
--	v2 Content-Length: 15.4 MB (15435223 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:46:27 GMT
+-	v2 Blob: `sha256:7aa4b7d9816db09a103f623255161346f80141ce9aab2cd47b66a65112c5f86a`
+-	v2 Content-Length: 15.4 MB (15435212 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:48:17 GMT
 
-#### `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+#### `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 
 ```dockerfile
 ENV RAILS_ENV=production
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:53 GMT
--	Parent Layer: `47d03e33080b396e5c304e19b165146e223857ced2c1608b06317b11ae5a690d`
+-	Created: Thu, 05 Nov 2015 21:08:11 GMT
+-	Parent Layer: `fb7a7b00b6655e3525bb95add159ef2178afbe033dc08d623985f332d9047e11`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+#### `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 
 ```dockerfile
 WORKDIR /usr/src/redmine
 ```
 
--	Created: Sat, 24 Oct 2015 09:57:54 GMT
--	Parent Layer: `f3b88004750af115479b86b8f327534b21d8771768083a3cf586ea85f2266140`
+-	Created: Thu, 05 Nov 2015 21:08:12 GMT
+-	Parent Layer: `942caeac722e98bbd58a8f789e41a3a7ce98ffb59b64f222559bfe8fee2a5807`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+#### `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 
 ```dockerfile
 ENV REDMINE_VERSION=3.0.5
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:12 GMT
--	Parent Layer: `baec73026bdcdf3fa95e4868ee044b464d4cfc3321cd0c72971d6012a9a54c9b`
+-	Created: Thu, 05 Nov 2015 21:15:00 GMT
+-	Parent Layer: `82ba0f2deb290ece9f3fd7e869c904e4c747119f1d92ddd648b15570e07c2e06`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+#### `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 
 ```dockerfile
 ENV REDMINE_DOWNLOAD_MD5=c3ef69ee258239a53cd69ddc6a99754a
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:13 GMT
--	Parent Layer: `fb19f45adb4ca22af5bb8a93555c6275dc17b125055257ce9ba386d832e8a3fb`
+-	Created: Thu, 05 Nov 2015 21:15:01 GMT
+-	Parent Layer: `7d1ab89a6c964395a9eb47d773f1fa14415cb23bdd10bca2704e1ea59783d6b2`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+#### `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 
 ```dockerfile
 RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" -o redmine.tar.gz \
@@ -7625,15 +7625,15 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 	&& chown -R redmine:redmine ./
 ```
 
--	Created: Sat, 24 Oct 2015 10:06:16 GMT
--	Parent Layer: `e6410199b54abe529d34ad5fcd667f1baf0ac97f678329b78955a2f032a80edb`
+-	Created: Thu, 05 Nov 2015 21:15:04 GMT
+-	Parent Layer: `5617f3f96054de0fd01d79d9593188be8f2a6dc0c8b7469d7a93fadf6a70f523`
 -	Docker Version: 1.8.2
 -	Virtual Size: 9.3 MB (9291973 bytes)
--	v2 Blob: `sha256:97948a035727472882148cb67528e345bccc84468814c464d379e44c847ce336`
--	v2 Content-Length: 2.1 MB (2142915 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:41 GMT
+-	v2 Blob: `sha256:7af29beb8e764d2fc77fc7230ca1d9cf43836c2fc3abf1d0e80a05f412354b25`
+-	v2 Content-Length: 2.1 MB (2142916 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:14 GMT
 
-#### `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+#### `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 
 ```dockerfile
 RUN buildDeps='\
@@ -7659,99 +7659,99 @@ RUN buildDeps='\
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:47 GMT
--	Parent Layer: `5986fb1c54d16af909b76b2e49003500aa0b13e6e7d4700b90491d92d1b7c5bc`
+-	Created: Thu, 05 Nov 2015 21:19:17 GMT
+-	Parent Layer: `fa54aaa1b2d54c5a06003d3de003c25bb0193c3823dae70050b2bab055f958a9`
 -	Docker Version: 1.8.2
--	Virtual Size: 125.8 MB (125821721 bytes)
--	v2 Blob: `sha256:9ee3ce4883df4e5eeb397f4db137d4068291c02c2acfb6c5e8f200d5bd97aac0`
--	v2 Content-Length: 58.1 MB (58076729 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:54:31 GMT
+-	Virtual Size: 126.0 MB (125995055 bytes)
+-	v2 Blob: `sha256:c76989fb8594dff50083cdb87c20dee30be510986a7569b91bb8e8ce13ba8f9e`
+-	v2 Content-Length: 58.1 MB (58141610 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:55:06 GMT
 
-#### `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+#### `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 
 ```dockerfile
 VOLUME [/usr/src/redmine/files]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `e68b41856ec36e7d09406354784bc45f11b7c77d5588c6335535a4b341b707d1`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `2aded3b9968620e7c996eafae3e51c7f03fcfdab11bb75c46f54bc3d5521d5d1`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+#### `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 
 ```dockerfile
 COPY file:9ea549d39f5ef50aa59ececdbf4ec817a7f78503f1796f3bba53c5b0d8a3ab94 in /
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:50 GMT
--	Parent Layer: `d9fa30ef59e1d2e3505d1920d6460046088f871d8cb087b66194fea0e6246721`
+-	Created: Thu, 05 Nov 2015 21:19:20 GMT
+-	Parent Layer: `bccd412f2940b4bf81707394469729a34526a97388d448af112566d17e0e46a0`
 -	Docker Version: 1.8.2
 -	Virtual Size: 2.2 KB (2211 bytes)
 -	v2 Blob: `sha256:70222366951fa730d8f1136ca1f52c42219e19a90d24bdf46e867d8f74bc02d1`
 -	v2 Content-Length: 1.0 KB (1023 bytes)
 -	v2 Last-Modified: Fri, 07 Aug 2015 00:58:55 GMT
 
-#### `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+#### `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `49ff1e0d4e5744e463e17b29ff25101a298530fb94bf171a90510aa4c56b0fa0`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `cd97b2e7ec916931e76be3c24530c300e6e535a481c89b4d360842b5fac5664c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+#### `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 
 ```dockerfile
 EXPOSE 3000/tcp
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:51 GMT
--	Parent Layer: `7bafe4ac6fd9299f5c180a1a9a8c6e29d5aba1158a44ed10d980ca5b942dd831`
+-	Created: Thu, 05 Nov 2015 21:19:21 GMT
+-	Parent Layer: `e2923c5305f5523dcf194245943ae5deda37c5fa7cda315f70e1f50a3dda1672`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+#### `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 
 ```dockerfile
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:11:52 GMT
--	Parent Layer: `96be292f8b1538b9ef4271a8ef7487fac387c9a416216b792b139c77c389302b`
+-	Created: Thu, 05 Nov 2015 21:19:22 GMT
+-	Parent Layer: `e949e0fca78cd4b4e247fb82890d99cf5cf614afaf301960030b54f3f0e1459c`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `4d170031d993fda1d884edff8b768aff8b04d076652415d28ffc271f88a7a657`
+#### `940278e328efd3a0acb723f412557fcc44fded9c25a50398565dffef9d30862d`
 
 ```dockerfile
 ENV PASSENGER_VERSION=5.0.21
 ```
 
--	Created: Sat, 24 Oct 2015 10:14:26 GMT
--	Parent Layer: `c1e92e7f5992c748f071e6346d45773e95c01fca1352b0e0a59798a576bfd51a`
+-	Created: Thu, 05 Nov 2015 21:22:08 GMT
+-	Parent Layer: `66e270ad1018600f3339c04f353f2b95e62f6e256c43fe52ebaf940bd3a2fc2f`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `1e7f5e2962b816ab0caa2e322288d7e7432afb165a512e9336666f75efa2e47d`
+#### `d35fea4261ae4af369d477495bf251be3d7ff509f247684b04101dd1baa36921`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -7763,15 +7763,15 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:17 GMT
--	Parent Layer: `4d170031d993fda1d884edff8b768aff8b04d076652415d28ffc271f88a7a657`
+-	Created: Thu, 05 Nov 2015 21:22:59 GMT
+-	Parent Layer: `940278e328efd3a0acb723f412557fcc44fded9c25a50398565dffef9d30862d`
 -	Docker Version: 1.8.2
--	Virtual Size: 44.2 MB (44238968 bytes)
--	v2 Blob: `sha256:9012aa2d886768003d2fcbcd0fd2dd3e0a353ee76aada80ae25ecbd1860c81ca`
--	v2 Content-Length: 20.2 MB (20207681 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:57:33 GMT
+-	Virtual Size: 44.2 MB (44239364 bytes)
+-	v2 Blob: `sha256:10ed7aa74e67bbd490697ebb6b14bc0df69ab283716da58fdaf633c59ce9f45c`
+-	v2 Content-Length: 20.2 MB (20207738 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:57:55 GMT
 
-#### `623e34747ff8a486260794dcc6ddab6ae1850e99bb03da09b732f411cb168842`
+#### `38d3c55af2d7c234a995746801fb9515526a5150b0d883803773fecf01c9e26b`
 
 ```dockerfile
 RUN set -x \
@@ -7779,22 +7779,22 @@ RUN set -x \
 	&& passenger-config install-standalone-runtime
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:21 GMT
--	Parent Layer: `1e7f5e2962b816ab0caa2e322288d7e7432afb165a512e9336666f75efa2e47d`
+-	Created: Thu, 05 Nov 2015 21:23:02 GMT
+-	Parent Layer: `d35fea4261ae4af369d477495bf251be3d7ff509f247684b04101dd1baa36921`
 -	Docker Version: 1.8.2
 -	Virtual Size: 27.8 MB (27793965 bytes)
--	v2 Blob: `sha256:25b2aca36798c19b37ab54f62d267c2dab648beed505e77a400ed2d6ed2e779b`
--	v2 Content-Length: 9.5 MB (9494800 bytes)
--	v2 Last-Modified: Wed, 28 Oct 2015 09:57:21 GMT
+-	v2 Blob: `sha256:957655c244867087a4dee7f0fd6dcf6b3510d30d62543e916219848ccc99efa4`
+-	v2 Content-Length: 9.5 MB (9494801 bytes)
+-	v2 Last-Modified: Thu, 05 Nov 2015 21:57:44 GMT
 
-#### `6066ca10d8c5196fc7e8d4374fe49aeeb127406cbe84c9406a7543124c5cf58d`
+#### `844e63eae50f59043a9aa2fb3bc71fb3fae51e9615fcef6c5bb38fdb5e2f72ee`
 
 ```dockerfile
 CMD ["passenger" "start"]
 ```
 
--	Created: Sat, 24 Oct 2015 10:15:21 GMT
--	Parent Layer: `623e34747ff8a486260794dcc6ddab6ae1850e99bb03da09b732f411cb168842`
+-	Created: Thu, 05 Nov 2015 21:23:03 GMT
+-	Parent Layer: `38d3c55af2d7c234a995746801fb9515526a5150b0d883803773fecf01c9e26b`
 -	Docker Version: 1.8.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
