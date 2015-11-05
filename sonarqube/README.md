@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.1.2` (*5.1.2/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/7f1d131f4371e432336d569b5a8fa8c06cfe7da8/5.1.2/Dockerfile)
--	[`lts`, `4.5.4` (*4.5.4/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/83e2cbed37a8a6947b130958d0cb2ee7acd42d3a/4.5.4/Dockerfile)
+-	[`latest`, `5.2` (*5.2/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/2f7cc2f6ef7f0206b697c37df09fe2e0fd36c8f4/5.2/Dockerfile)
+-	[`lts`, `4.5.6` (*4.5.6/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/2f7cc2f6ef7f0206b697c37df09fe2e0fd36c8f4/4.5.6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
