@@ -14,7 +14,7 @@
 ## `busybox:1.21.0-ubuntu`
 
 ```console
-$ docker pull library/busybox@sha256:e4f5784e8decfb18a9048a21e956a56a0648102117108bc509c0f352585d45a9
+$ docker pull library/busybox@sha256:e9ff9ad8b8c242935922761c55ae461bfc2f85d23a35734b6511774d15e954f4
 ```
 
 -	Total Virtual Size: 4.3 MB (4346790 bytes)
@@ -52,7 +52,7 @@ CMD ["sh"]
 ## `busybox:1.21-ubuntu`
 
 ```console
-$ docker pull library/busybox@sha256:6af9e8fe918ce2962e772c72e448a9dcdd13192a6a7c9e01bb875f6a3001f39e
+$ docker pull library/busybox@sha256:86a7829a37fea81d6277e3b3c0e74af426eb806164d1eb5e70a791694683dbff
 ```
 
 -	Total Virtual Size: 4.3 MB (4346790 bytes)
@@ -90,7 +90,7 @@ CMD ["sh"]
 ## `busybox:1-ubuntu`
 
 ```console
-$ docker pull library/busybox@sha256:70756d24c82b4f2c0e05c8debe203491ebfea152ff1e4c9d2462b18d7c27fea3
+$ docker pull library/busybox@sha256:a02530780f51adb7f929d74278160723a751cf44763e42c6fa86290677427d53
 ```
 
 -	Total Virtual Size: 4.3 MB (4346790 bytes)
@@ -128,7 +128,7 @@ CMD ["sh"]
 ## `busybox:ubuntu`
 
 ```console
-$ docker pull library/busybox@sha256:091b57ef3620137c027c775e9516ef2c75963c2c410d5a6d4fe2f6ebeeef339a
+$ docker pull library/busybox@sha256:a5c199fad1a02d5faa424ec1e500d568b7d72e642bdee9b571a32e70993c270e
 ```
 
 -	Total Virtual Size: 4.3 MB (4346790 bytes)
@@ -166,7 +166,7 @@ CMD ["sh"]
 ## `busybox:1.24.1`
 
 ```console
-$ docker pull library/busybox@sha256:6e2f5b0e588d8826ee6a42c7248265caaa669d119714a8b9c2004d7be8505d53
+$ docker pull library/busybox@sha256:7ba8fc532956b2c0f28a0b7407a973275d8b0cbb6ab27f27ce2f509270a316b0
 ```
 
 -	Total Virtual Size: 1.1 MB (1108935 bytes)
@@ -204,7 +204,7 @@ CMD ["sh"]
 ## `busybox:1.24`
 
 ```console
-$ docker pull library/busybox@sha256:3b92276613879f017f92e206a2593d901b620c2b57f3794cecc3991ed9132dd5
+$ docker pull library/busybox@sha256:59dddbb6c1b45fdd082cbe975c2758412f8da1ab61b290671f9d814d6fdfabf3
 ```
 
 -	Total Virtual Size: 1.1 MB (1108935 bytes)
@@ -242,7 +242,7 @@ CMD ["sh"]
 ## `busybox:1`
 
 ```console
-$ docker pull library/busybox@sha256:13684d56dc62ee3f5cbe155faf856b67d61e7e79cc7f8de70d2161e6fcb62b22
+$ docker pull library/busybox@sha256:2b7da7b241e47dc2b7ad83ebb4c3bbc18378f5510a32c1f13b226b58f1f03275
 ```
 
 -	Total Virtual Size: 1.1 MB (1108935 bytes)
@@ -280,7 +280,7 @@ CMD ["sh"]
 ## `busybox:latest`
 
 ```console
-$ docker pull library/busybox@sha256:87fcdf79b696560b61905297f3be7759e01130a4befdfe2cc9ece9234bbbab6f
+$ docker pull library/busybox@sha256:eb3c0d4680f9213ee5f348ea6d39489a1f85a318a2ae09e012c426f78252a6d2
 ```
 
 -	Total Virtual Size: 1.1 MB (1108935 bytes)
