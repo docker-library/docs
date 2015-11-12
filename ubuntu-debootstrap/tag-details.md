@@ -18,7 +18,7 @@
 ## `ubuntu-debootstrap:12.04.5`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:bb0823b67fa7f13cfa38dfbaf18ea5b25cc4b8d24aef5b468bf5b9ae7d8dad93
+$ docker pull library/ubuntu-debootstrap@sha256:e9905e138b0b412529feaf35f689f2199e4150e1dfa057a3ecbbbd91b8c18c09
 ```
 
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
@@ -56,7 +56,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:12.04`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:195ea2e225b7c56caa82e7a3c6a667d32fe5abdfa1bcecf5943b8e70b7d779b2
+$ docker pull library/ubuntu-debootstrap@sha256:f40fd73887a88eb3335e0f7c0ad8a6b541d0c6d665f56655fe3072cac52ac51b
 ```
 
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
@@ -94,7 +94,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:precise`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:5e02524f470f51550c82b03f9013e2d6bb10d4b0fc32a303b189d4a33dd6244b
+$ docker pull library/ubuntu-debootstrap@sha256:3afbd97acf0a5af5459499e31307c9df95ede76117e6b48fbc7d721032d18989
 ```
 
 -	Total Virtual Size: 85.8 MB (85781002 bytes)
@@ -132,7 +132,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:14.04.3`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:fabe31b98a92aae2440e51219ce6559a84272cf3fc8277eec92101213cb43dc9
+$ docker pull library/ubuntu-debootstrap@sha256:a94fda77e53c651f9f2d8cb229ef328be1df1a35274f93298b04730b98589d24
 ```
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
@@ -170,7 +170,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:14.04`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:b94ca5f9b6b6080a5e42c6ac730c32ccb19caf424836c111c511a37e9d6af940
+$ docker pull library/ubuntu-debootstrap@sha256:b424724203198bdb60d79368bf967c71534dd25f2b7703021110f04e1a81b78c
 ```
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
@@ -208,7 +208,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:trusty`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:0cdb6a206afb65524961ac5bbbfd6b1c0678c69f61f8a6b0d1f02f7de02f3a54
+$ docker pull library/ubuntu-debootstrap@sha256:f125f7ce43693d2d44e33b70d4f515a2d188bcdb317a6e6ca154f2bfeb684270
 ```
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
@@ -246,7 +246,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:latest`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:ed78270c3fc1aeaae5d4c1b25fea78d6e852468aedcbbc6a51a784d38f81183a
+$ docker pull library/ubuntu-debootstrap@sha256:8c8b2908236532820c2996d54a1a7aeff295b225ef5b0271c134ea71c9eb6cd8
 ```
 
 -	Total Virtual Size: 87.1 MB (87087291 bytes)
@@ -284,7 +284,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:15.04`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:18eae0c01e1d16d625cc14f837f552c31ef3cf395996acd3c9843875a97b937e
+$ docker pull library/ubuntu-debootstrap@sha256:43b6f6414cc5ecc06e679c138148c0d5334a59bf2d2b508a74f0f8339b699cd7
 ```
 
 -	Total Virtual Size: 110.2 MB (110150591 bytes)
@@ -322,7 +322,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:vivid`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:86782c9cc3520afb214061b577c2662686d87ad1a2175bcb604ca46f081026a2
+$ docker pull library/ubuntu-debootstrap@sha256:05379a3f2057bc4b5ae5813fda5782f09a2302cd074f688a24053373785e7321
 ```
 
 -	Total Virtual Size: 110.2 MB (110150591 bytes)
@@ -360,7 +360,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:15.10`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:2faebad82abe380c38477a7891b8e911cca87230ca645c031e133787b3ffd90c
+$ docker pull library/ubuntu-debootstrap@sha256:ab9ed370ec583b10f19d371fc63b22de5c9231660be7003f25e02f6db5277428
 ```
 
 -	Total Virtual Size: 111.0 MB (110989448 bytes)
@@ -398,7 +398,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:wily`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:100d9a11568c60151fec667a12aa708cc02e4d6f864d5f216bef58f8b995862f
+$ docker pull library/ubuntu-debootstrap@sha256:0d464ac0c99ecb124f5cc078b2f3db5e33699d030d90c27164af38a721a2b7f2
 ```
 
 -	Total Virtual Size: 111.0 MB (110989448 bytes)
@@ -436,7 +436,7 @@ CMD ["/bin/bash"]
 ## `ubuntu-debootstrap:devel`
 
 ```console
-$ docker pull library/ubuntu-debootstrap@sha256:a4dd17584661afb0d1baa5a5db076ddab0e6a0e4746be2796479e14c94df5231
+$ docker pull library/ubuntu-debootstrap@sha256:d140611d41b870bdfbc5bcaccbd59e33ee803c73be9472c5b764c80daad9de3d
 ```
 
 -	Total Virtual Size: 111.0 MB (110989451 bytes)
