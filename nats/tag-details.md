@@ -8,7 +8,7 @@
 ## `nats:0.6.8`
 
 ```console
-$ docker pull library/nats@sha256:18405d6df17d39b92711e7fd92e9962f073a37a4d9255e5cc9135837f81e2cd1
+$ docker pull library/nats@sha256:9cfe10092e5ea3faa7e83f26e53adc60b6aacce1215ea8d573c2fb006c4c0713
 ```
 
 -	Total Virtual Size: 6.6 MB (6612547 bytes)
@@ -102,7 +102,7 @@ CMD []
 ## `nats:latest`
 
 ```console
-$ docker pull library/nats@sha256:84d7f38148a470b2a9aae01f911f7f0cdcea555b455c9e2dd0a498d39ce87341
+$ docker pull library/nats@sha256:4e8e68369238ae671a695751945cf86f950dcca0ceebc8dfdeeeb0c1cf4be1e5
 ```
 
 -	Total Virtual Size: 6.6 MB (6612547 bytes)

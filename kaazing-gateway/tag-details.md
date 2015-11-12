@@ -8,42 +8,42 @@
 ## `kaazing-gateway:latest`
 
 ```console
-$ docker pull library/kaazing-gateway@sha256:6b3c92f32c9b80fd5197baf804d63c0d66291d8e04bb4e8993b3ed5d27266512
+$ docker pull library/kaazing-gateway@sha256:46220d55cccc8bc69271843e8e00fa75cda1519f5f2f0b8b4ff91e01cf9404cd
 ```
 
--	Total Virtual Size: 665.1 MB (665132207 bytes)
--	Total v2 Content-Length: 257.1 MB (257085401 bytes)
+-	Total Virtual Size: 665.1 MB (665139943 bytes)
+-	Total v2 Content-Length: 257.1 MB (257088853 bytes)
 
 ### Layers (22)
 
-#### `575489a51992d5d30976ff5ba7f7eabdc134acfb51c79ff48883089009594e64`
+#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
 
 ```dockerfile
-ADD file:5f0fca122586fe4ea79c5f22acef96c38632a6ce28da26dcc10aac32767cfeff in /
+ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 ```
 
--	Created: Thu, 22 Oct 2015 21:53:12 GMT
--	Docker Version: 1.8.2
+-	Created: Tue, 10 Nov 2015 00:31:06 GMT
+-	Docker Version: 1.9.0
 -	Virtual Size: 125.1 MB (125112192 bytes)
--	v2 Blob: `sha256:674ded4e0a754b70be8f9eabf401db21d6caaa2aba6305bcebdfbb67ea7e0424`
--	v2 Content-Length: 51.4 MB (51353018 bytes)
--	v2 Last-Modified: Thu, 22 Oct 2015 21:59:43 GMT
+-	v2 Blob: `sha256:237d5fcd25cfc217c7f2ddd2be7172e9fa5c181acc58d0a188de333bebec5f73`
+-	v2 Content-Length: 51.4 MB (51353062 bytes)
+-	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `6845b83c79fb642ed6af06cceaca042e155717ca8eb0b5cffa9c43f1f7f70348`
+#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 22 Oct 2015 21:53:15 GMT
--	Parent Layer: `575489a51992d5d30976ff5ba7f7eabdc134acfb51c79ff48883089009594e64`
--	Docker Version: 1.8.2
+-	Created: Tue, 10 Nov 2015 00:31:11 GMT
+-	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f9fffdafe16d7f3fdf0b54dcbd6a8be5d7d12e7772bd2cea5c7b73de3cc7af16`
+#### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -53,15 +53,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 22 Oct 2015 22:33:55 GMT
--	Parent Layer: `6845b83c79fb642ed6af06cceaca042e155717ca8eb0b5cffa9c43f1f7f70348`
--	Docker Version: 1.8.2
--	Virtual Size: 44.3 MB (44286489 bytes)
--	v2 Blob: `sha256:3fe37ed373c94706aac7a3bc7d9a892b176145a7ca7abd4b698b14a9bba5006d`
--	v2 Content-Length: 18.5 MB (18525189 bytes)
--	v2 Last-Modified: Thu, 22 Oct 2015 23:08:02 GMT
+-	Created: Tue, 10 Nov 2015 00:40:02 GMT
+-	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+-	Docker Version: 1.9.0
+-	Virtual Size: 44.3 MB (44292472 bytes)
+-	v2 Blob: `sha256:4f8b5616c86dbd6c294b3a7d8bfccf105121f38c257dbd53a3b7804472de2f54`
+-	v2 Content-Length: 18.5 MB (18528450 bytes)
+-	v2 Last-Modified: Tue, 10 Nov 2015 18:07:36 GMT
 
-#### `d63502d4fbd861fdd975cde9d394aeac57c362a5d15197717dbd856799ffb1e6`
+#### `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -73,99 +73,99 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 22 Oct 2015 22:34:58 GMT
--	Parent Layer: `f9fffdafe16d7f3fdf0b54dcbd6a8be5d7d12e7772bd2cea5c7b73de3cc7af16`
--	Docker Version: 1.8.2
--	Virtual Size: 122.2 MB (122248418 bytes)
--	v2 Blob: `sha256:ddf1745d8563f790e9ab8da8637460768736e806a96fa99ac007bc57f1ef4250`
--	v2 Content-Length: 42.3 MB (42324723 bytes)
--	v2 Last-Modified: Thu, 22 Oct 2015 23:09:52 GMT
+-	Created: Tue, 10 Nov 2015 00:41:34 GMT
+-	Parent Layer: `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
+-	Docker Version: 1.9.0
+-	Virtual Size: 122.2 MB (122248845 bytes)
+-	v2 Blob: `sha256:ba17e4708ba51b052979d916bc50873c251df3fe53ee9f022768e323a79fb7c1`
+-	v2 Content-Length: 42.3 MB (42324582 bytes)
+-	v2 Last-Modified: Tue, 10 Nov 2015 18:08:51 GMT
 
-#### `dc9c1ed36ebc845149c6d95d2c2c16e9534a87e91f6a4d90ace90f213774c976`
+#### `2c00a767497db890f83a302729f5922c597c1098bd9a8ff2236557eaccdd34f2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 06:16:20 GMT
--	Parent Layer: `d63502d4fbd861fdd975cde9d394aeac57c362a5d15197717dbd856799ffb1e6`
--	Docker Version: 1.8.2
--	Virtual Size: 790.8 KB (790776 bytes)
--	v2 Blob: `sha256:bd3317f867146fe03db7762ed76bef16a3088b02240d4f8b9988c636702a4aa2`
--	v2 Content-Length: 302.6 KB (302578 bytes)
--	v2 Last-Modified: Sat, 24 Oct 2015 20:52:16 GMT
+-	Created: Wed, 11 Nov 2015 07:00:47 GMT
+-	Parent Layer: `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
+-	Docker Version: 1.9.0
+-	Virtual Size: 791.6 KB (791577 bytes)
+-	v2 Blob: `sha256:cff61f55eca3d9581919c30c6d4a2f66f1e7ee74c352c8247bcac03dc094867a`
+-	v2 Content-Length: 302.9 KB (302933 bytes)
+-	v2 Last-Modified: Wed, 11 Nov 2015 19:39:46 GMT
 
-#### `083cf57e977e291841806510c0478aac6aaecbe44cd887e73d4dad946d7dd6c4`
+#### `696be707a6b046561a59277ec104d9254521b33dbae0b4ad0933c3fa694b2e3d`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Sat, 24 Oct 2015 06:26:34 GMT
--	Parent Layer: `dc9c1ed36ebc845149c6d95d2c2c16e9534a87e91f6a4d90ace90f213774c976`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:10:41 GMT
+-	Parent Layer: `2c00a767497db890f83a302729f5922c597c1098bd9a8ff2236557eaccdd34f2`
+-	Docker Version: 1.9.0
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:554f3e605bdc0c70e3f282637e846ac87cf0388ea159d91224dfc25c70a22689`
--	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Sat, 24 Oct 2015 20:52:12 GMT
+-	v2 Blob: `sha256:ebc6d278db0dbba4c0ff8b9d7c9de97df54a8f534fb765ad7402832fd9d164c0`
+-	v2 Content-Length: 218.0 B
+-	v2 Last-Modified: Wed, 11 Nov 2015 19:45:47 GMT
 
-#### `c6e04b3e8cc813a3e67ef85a8101af25d0a92f39a39e070c6971bbb0d5b424d6`
+#### `0c24696b360d047c5d288669a2ad51c9904fc16304105257e9745b1a813d7613`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Sat, 24 Oct 2015 06:26:34 GMT
--	Parent Layer: `083cf57e977e291841806510c0478aac6aaecbe44cd887e73d4dad946d7dd6c4`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:10:42 GMT
+-	Parent Layer: `696be707a6b046561a59277ec104d9254521b33dbae0b4ad0933c3fa694b2e3d`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9bad87c9e939b385ab91e99d0ad28f3904ef4449f64507c5a0e67f98024b0bee`
+#### `3a7cffa509309b29f9c7c424c05a0f57d6ee0de61df2374ac82e749a154f196b`
 
 ```dockerfile
 ENV JAVA_VERSION=8u66
 ```
 
--	Created: Sat, 24 Oct 2015 06:26:35 GMT
--	Parent Layer: `c6e04b3e8cc813a3e67ef85a8101af25d0a92f39a39e070c6971bbb0d5b424d6`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:10:42 GMT
+-	Parent Layer: `0c24696b360d047c5d288669a2ad51c9904fc16304105257e9745b1a813d7613`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d72d229450ef05f240a11441b30dcc1c29916f25753a706cf429d4c8619f76be`
+#### `48a0ef8001755f9a043debbf6594d112c5559041c1fc438985dbc65514ca6dee`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 ```
 
--	Created: Sat, 31 Oct 2015 23:00:59 GMT
--	Parent Layer: `9bad87c9e939b385ab91e99d0ad28f3904ef4449f64507c5a0e67f98024b0bee`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:10:43 GMT
+-	Parent Layer: `3a7cffa509309b29f9c7c424c05a0f57d6ee0de61df2374ac82e749a154f196b`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f32ae24da664ea5df8c1ed8d80356db7d6ecdbe49985419d9387792be0e6b33e`
+#### `f9194a57b559aa56fe0026542c9bec5730be07c2332799f3972b6b6ce59cf24a`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Sat, 31 Oct 2015 23:01:00 GMT
--	Parent Layer: `d72d229450ef05f240a11441b30dcc1c29916f25753a706cf429d4c8619f76be`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:10:43 GMT
+-	Parent Layer: `48a0ef8001755f9a043debbf6594d112c5559041c1fc438985dbc65514ca6dee`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9a6ea0a52f074e60d01f6662418b413875013af2c2ba929cc72b02784840b937`
+#### `97424a07faef40398607a8609b1944a70560d13e86d3811422ed3a5b38d91402`
 
 ```dockerfile
 RUN set -x \
@@ -176,99 +176,99 @@ RUN set -x \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 31 Oct 2015 23:02:54 GMT
--	Parent Layer: `f32ae24da664ea5df8c1ed8d80356db7d6ecdbe49985419d9387792be0e6b33e`
--	Docker Version: 1.8.2
--	Virtual Size: 349.1 MB (349087244 bytes)
--	v2 Blob: `sha256:2db6e3d149da43c1bff0acc4888de440583880af802db1e4dc494ee421297a83`
--	v2 Content-Length: 129.9 MB (129926554 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:40:14 GMT
+-	Created: Wed, 11 Nov 2015 07:12:17 GMT
+-	Parent Layer: `f9194a57b559aa56fe0026542c9bec5730be07c2332799f3972b6b6ce59cf24a`
+-	Docker Version: 1.9.0
+-	Virtual Size: 349.1 MB (349087769 bytes)
+-	v2 Blob: `sha256:a9941b44bccef3a7006674bdcedee013c6bd9ac924192d19831589afa44e031e`
+-	v2 Content-Length: 129.9 MB (129926497 bytes)
+-	v2 Last-Modified: Wed, 11 Nov 2015 19:45:28 GMT
 
-#### `c1ccce98b537bae1091dfd17c9aa5dc50ac5580bd135250f4f653e9ef348ff2d`
+#### `de4a13c84f531c94a4b686f6119a1e03cf767ad57041d68a7b02ea2f48887aaf`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Sat, 31 Oct 2015 23:03:00 GMT
--	Parent Layer: `9a6ea0a52f074e60d01f6662418b413875013af2c2ba929cc72b02784840b937`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:12:24 GMT
+-	Parent Layer: `97424a07faef40398607a8609b1944a70560d13e86d3811422ed3a5b38d91402`
+-	Docker Version: 1.9.0
 -	Virtual Size: 413.1 KB (413134 bytes)
--	v2 Blob: `sha256:4658e2763968872a623fd301eae979eb61a81229193648d56784bb81684e1598`
--	v2 Content-Length: 278.3 KB (278346 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:39:17 GMT
+-	v2 Blob: `sha256:1ac769334ced56a00eb3ef7bc9699af886cee2d1698fca9a1ebc92f56267d9dd`
+-	v2 Content-Length: 278.3 KB (278349 bytes)
+-	v2 Last-Modified: Wed, 11 Nov 2015 19:44:46 GMT
 
-#### `4f9366a1ea43d238ed89261b959c12e1fb5483902333e467540e7753e8ba859d`
+#### `4cf0bdeb796cc30f4e28638794ef477218f1d15a7a8e47177127eaa3eb4aa991`
 
 ```dockerfile
 MAINTAINER Kaazing Docker Maintainers, contact via github issues: https://github.com/kaazing/gateway.docker/issues
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:15 GMT
--	Parent Layer: `c1ccce98b537bae1091dfd17c9aa5dc50ac5580bd135250f4f653e9ef348ff2d`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:55:45 GMT
+-	Parent Layer: `de4a13c84f531c94a4b686f6119a1e03cf767ad57041d68a7b02ea2f48887aaf`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `cd423b42251920e8685ed59cac216935c4c6c17dc3182c1d2e979eb65012eaef`
+#### `d0c7f5df1ad808631c0a30e6750b1708ebabc0c1e1b41889fd4463736cf6a9a6`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 409EF88E5386FE7C68FC0B77B79592BE24BD9545
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:18 GMT
--	Parent Layer: `4f9366a1ea43d238ed89261b959c12e1fb5483902333e467540e7753e8ba859d`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:55:47 GMT
+-	Parent Layer: `4cf0bdeb796cc30f4e28638794ef477218f1d15a7a8e47177127eaa3eb4aa991`
+-	Docker Version: 1.9.0
 -	Virtual Size: 11.6 KB (11596 bytes)
--	v2 Blob: `sha256:87ca8abf9f5dd48c909bcc4a527f0dbbe45c510d8b7264e6820bb0aa9b981097`
--	v2 Content-Length: 5.6 KB (5607 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 05:21:53 GMT
+-	v2 Blob: `sha256:a2bc487b9f51d4fd22291ad3e4cdbe3315dea85478b05afdd71c120ddcebf0c4`
+-	v2 Content-Length: 5.6 KB (5609 bytes)
+-	v2 Last-Modified: Thu, 12 Nov 2015 00:55:27 GMT
 
-#### `5abdadada9be8bc73cc15162de00ceab49f104bc0b812ae5e73e245f744256b9`
+#### `78450e667f85da08d3cebb8319e4b2fa1e21562055b80fb42e4c5e433035bb3f`
 
 ```dockerfile
 ENV KAAZING_GATEWAY_VERSION=5.0.1.21
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:18 GMT
--	Parent Layer: `cd423b42251920e8685ed59cac216935c4c6c17dc3182c1d2e979eb65012eaef`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:55:48 GMT
+-	Parent Layer: `d0c7f5df1ad808631c0a30e6750b1708ebabc0c1e1b41889fd4463736cf6a9a6`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c7221e4a47d1050f7207cf8e57808b8a633e82db88904a8ecbc5e3d12877636f`
+#### `7d72a500b37206c7908767dd9be0094f4820c4f66302cc421f49a690e3370fc2`
 
 ```dockerfile
 ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.0.1.21/gateway.distribution-5.0.1.21.tar.gz
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:19 GMT
--	Parent Layer: `5abdadada9be8bc73cc15162de00ceab49f104bc0b812ae5e73e245f744256b9`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:55:48 GMT
+-	Parent Layer: `78450e667f85da08d3cebb8319e4b2fa1e21562055b80fb42e4c5e433035bb3f`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40de2b767bfdc1ac85f3b5c0d1eed2d317180a9bb933f6762eaec04c015eefff`
+#### `9f6162987ed9b649ae8326427499e6de8d91d7b8c4d8209a224005eff2fefc16`
 
 ```dockerfile
 WORKDIR /kaazing-gateway
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:19 GMT
--	Parent Layer: `c7221e4a47d1050f7207cf8e57808b8a633e82db88904a8ecbc5e3d12877636f`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:55:49 GMT
+-	Parent Layer: `7d72a500b37206c7908767dd9be0094f4820c4f66302cc421f49a690e3370fc2`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `359af2a2560f3e4c53a5e14f314b903db2496a17cb4e4e61ebeb5c2aee0fd1da`
+#### `afe52175a696d77224d39d28ab6952d291809fa4bbdd52e909f0aeb35b25d98e`
 
 ```dockerfile
 RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL \
@@ -278,65 +278,65 @@ RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL \
 	&& rm gateway.tar.gz*
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:24 GMT
--	Parent Layer: `40de2b767bfdc1ac85f3b5c0d1eed2d317180a9bb933f6762eaec04c015eefff`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:56:00 GMT
+-	Parent Layer: `9f6162987ed9b649ae8326427499e6de8d91d7b8c4d8209a224005eff2fefc16`
+-	Docker Version: 1.9.0
 -	Virtual Size: 23.2 MB (23182297 bytes)
--	v2 Blob: `sha256:7f10070277fb3eef12f58899c27fb10402a553d9bacdccb9f925f537a98b1946`
--	v2 Content-Length: 14.4 MB (14368751 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 05:21:41 GMT
+-	v2 Blob: `sha256:d68451924951046988357304c3afd611602364c5d22ef3a8cf6cc9d3e865cf6e`
+-	v2 Content-Length: 14.4 MB (14368737 bytes)
+-	v2 Last-Modified: Thu, 12 Nov 2015 00:55:16 GMT
 
-#### `5a29b506501fdfcc6c0eae5749d204c15fe6b108c60b81ee7299e6d6ee809396`
+#### `0632dd404715eebc80c0c38df4707d5ff8ed2e72187c4f639391ab71f38bc49a`
 
 ```dockerfile
 ENV GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:25 GMT
--	Parent Layer: `359af2a2560f3e4c53a5e14f314b903db2496a17cb4e4e61ebeb5c2aee0fd1da`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:56:01 GMT
+-	Parent Layer: `afe52175a696d77224d39d28ab6952d291809fa4bbdd52e909f0aeb35b25d98e`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2fdba84d0b340d65a34b765650f30b4b26642c36d834b2cab63cef8625220534`
+#### `c4bc2ca222cb4ee3464aab786508902bb7a0a2016fa127e6a077150fd2f5be60`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/kaazing-gateway/bin
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:25 GMT
--	Parent Layer: `5a29b506501fdfcc6c0eae5749d204c15fe6b108c60b81ee7299e6d6ee809396`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:56:01 GMT
+-	Parent Layer: `0632dd404715eebc80c0c38df4707d5ff8ed2e72187c4f639391ab71f38bc49a`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5237fe2c60f10887a0d07f109dac28081fd8692b388c4887624bc7801348f9bf`
+#### `17ad713d416c2f185f880d0e24c927a6888f03d1d0248cfc13e38f0442974314`
 
 ```dockerfile
 EXPOSE 8000/tcp
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:26 GMT
--	Parent Layer: `2fdba84d0b340d65a34b765650f30b4b26642c36d834b2cab63cef8625220534`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:56:02 GMT
+-	Parent Layer: `c4bc2ca222cb4ee3464aab786508902bb7a0a2016fa127e6a077150fd2f5be60`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3840549a3e6bc997e2164ebc0999c0ddb80cacff82f9e685543d903fafbd888c`
+#### `1a1cc65f5d2dd040dfc67e4c87b05a0fad50665da280aeaa35d1f36537513a65`
 
 ```dockerfile
 CMD ["gateway.start"]
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:26 GMT
--	Parent Layer: `5237fe2c60f10887a0d07f109dac28081fd8692b388c4887624bc7801348f9bf`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:56:02 GMT
+-	Parent Layer: `17ad713d416c2f185f880d0e24c927a6888f03d1d0248cfc13e38f0442974314`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -345,42 +345,42 @@ CMD ["gateway.start"]
 ## `kaazing-gateway:5.0.1.21`
 
 ```console
-$ docker pull library/kaazing-gateway@sha256:1f0cb1ff550ae83fae37c2ddad31e6ba891be9dd886f0438881440408e0c150c
+$ docker pull library/kaazing-gateway@sha256:d5abb444b6325e2758572b44d11605a2b20b8198b109fd034b6574f967933e98
 ```
 
--	Total Virtual Size: 665.1 MB (665132207 bytes)
--	Total v2 Content-Length: 257.1 MB (257085401 bytes)
+-	Total Virtual Size: 665.1 MB (665139943 bytes)
+-	Total v2 Content-Length: 257.1 MB (257088853 bytes)
 
 ### Layers (22)
 
-#### `575489a51992d5d30976ff5ba7f7eabdc134acfb51c79ff48883089009594e64`
+#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
 
 ```dockerfile
-ADD file:5f0fca122586fe4ea79c5f22acef96c38632a6ce28da26dcc10aac32767cfeff in /
+ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 ```
 
--	Created: Thu, 22 Oct 2015 21:53:12 GMT
--	Docker Version: 1.8.2
+-	Created: Tue, 10 Nov 2015 00:31:06 GMT
+-	Docker Version: 1.9.0
 -	Virtual Size: 125.1 MB (125112192 bytes)
--	v2 Blob: `sha256:674ded4e0a754b70be8f9eabf401db21d6caaa2aba6305bcebdfbb67ea7e0424`
--	v2 Content-Length: 51.4 MB (51353018 bytes)
--	v2 Last-Modified: Thu, 22 Oct 2015 21:59:43 GMT
+-	v2 Blob: `sha256:237d5fcd25cfc217c7f2ddd2be7172e9fa5c181acc58d0a188de333bebec5f73`
+-	v2 Content-Length: 51.4 MB (51353062 bytes)
+-	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `6845b83c79fb642ed6af06cceaca042e155717ca8eb0b5cffa9c43f1f7f70348`
+#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 22 Oct 2015 21:53:15 GMT
--	Parent Layer: `575489a51992d5d30976ff5ba7f7eabdc134acfb51c79ff48883089009594e64`
--	Docker Version: 1.8.2
+-	Created: Tue, 10 Nov 2015 00:31:11 GMT
+-	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f9fffdafe16d7f3fdf0b54dcbd6a8be5d7d12e7772bd2cea5c7b73de3cc7af16`
+#### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -390,15 +390,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 22 Oct 2015 22:33:55 GMT
--	Parent Layer: `6845b83c79fb642ed6af06cceaca042e155717ca8eb0b5cffa9c43f1f7f70348`
--	Docker Version: 1.8.2
--	Virtual Size: 44.3 MB (44286489 bytes)
--	v2 Blob: `sha256:3fe37ed373c94706aac7a3bc7d9a892b176145a7ca7abd4b698b14a9bba5006d`
--	v2 Content-Length: 18.5 MB (18525189 bytes)
--	v2 Last-Modified: Thu, 22 Oct 2015 23:08:02 GMT
+-	Created: Tue, 10 Nov 2015 00:40:02 GMT
+-	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+-	Docker Version: 1.9.0
+-	Virtual Size: 44.3 MB (44292472 bytes)
+-	v2 Blob: `sha256:4f8b5616c86dbd6c294b3a7d8bfccf105121f38c257dbd53a3b7804472de2f54`
+-	v2 Content-Length: 18.5 MB (18528450 bytes)
+-	v2 Last-Modified: Tue, 10 Nov 2015 18:07:36 GMT
 
-#### `d63502d4fbd861fdd975cde9d394aeac57c362a5d15197717dbd856799ffb1e6`
+#### `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -410,99 +410,99 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 22 Oct 2015 22:34:58 GMT
--	Parent Layer: `f9fffdafe16d7f3fdf0b54dcbd6a8be5d7d12e7772bd2cea5c7b73de3cc7af16`
--	Docker Version: 1.8.2
--	Virtual Size: 122.2 MB (122248418 bytes)
--	v2 Blob: `sha256:ddf1745d8563f790e9ab8da8637460768736e806a96fa99ac007bc57f1ef4250`
--	v2 Content-Length: 42.3 MB (42324723 bytes)
--	v2 Last-Modified: Thu, 22 Oct 2015 23:09:52 GMT
+-	Created: Tue, 10 Nov 2015 00:41:34 GMT
+-	Parent Layer: `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
+-	Docker Version: 1.9.0
+-	Virtual Size: 122.2 MB (122248845 bytes)
+-	v2 Blob: `sha256:ba17e4708ba51b052979d916bc50873c251df3fe53ee9f022768e323a79fb7c1`
+-	v2 Content-Length: 42.3 MB (42324582 bytes)
+-	v2 Last-Modified: Tue, 10 Nov 2015 18:08:51 GMT
 
-#### `dc9c1ed36ebc845149c6d95d2c2c16e9534a87e91f6a4d90ace90f213774c976`
+#### `2c00a767497db890f83a302729f5922c597c1098bd9a8ff2236557eaccdd34f2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 24 Oct 2015 06:16:20 GMT
--	Parent Layer: `d63502d4fbd861fdd975cde9d394aeac57c362a5d15197717dbd856799ffb1e6`
--	Docker Version: 1.8.2
--	Virtual Size: 790.8 KB (790776 bytes)
--	v2 Blob: `sha256:bd3317f867146fe03db7762ed76bef16a3088b02240d4f8b9988c636702a4aa2`
--	v2 Content-Length: 302.6 KB (302578 bytes)
--	v2 Last-Modified: Sat, 24 Oct 2015 20:52:16 GMT
+-	Created: Wed, 11 Nov 2015 07:00:47 GMT
+-	Parent Layer: `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
+-	Docker Version: 1.9.0
+-	Virtual Size: 791.6 KB (791577 bytes)
+-	v2 Blob: `sha256:cff61f55eca3d9581919c30c6d4a2f66f1e7ee74c352c8247bcac03dc094867a`
+-	v2 Content-Length: 302.9 KB (302933 bytes)
+-	v2 Last-Modified: Wed, 11 Nov 2015 19:39:46 GMT
 
-#### `083cf57e977e291841806510c0478aac6aaecbe44cd887e73d4dad946d7dd6c4`
+#### `696be707a6b046561a59277ec104d9254521b33dbae0b4ad0933c3fa694b2e3d`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Sat, 24 Oct 2015 06:26:34 GMT
--	Parent Layer: `dc9c1ed36ebc845149c6d95d2c2c16e9534a87e91f6a4d90ace90f213774c976`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:10:41 GMT
+-	Parent Layer: `2c00a767497db890f83a302729f5922c597c1098bd9a8ff2236557eaccdd34f2`
+-	Docker Version: 1.9.0
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:554f3e605bdc0c70e3f282637e846ac87cf0388ea159d91224dfc25c70a22689`
--	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Sat, 24 Oct 2015 20:52:12 GMT
+-	v2 Blob: `sha256:ebc6d278db0dbba4c0ff8b9d7c9de97df54a8f534fb765ad7402832fd9d164c0`
+-	v2 Content-Length: 218.0 B
+-	v2 Last-Modified: Wed, 11 Nov 2015 19:45:47 GMT
 
-#### `c6e04b3e8cc813a3e67ef85a8101af25d0a92f39a39e070c6971bbb0d5b424d6`
+#### `0c24696b360d047c5d288669a2ad51c9904fc16304105257e9745b1a813d7613`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Sat, 24 Oct 2015 06:26:34 GMT
--	Parent Layer: `083cf57e977e291841806510c0478aac6aaecbe44cd887e73d4dad946d7dd6c4`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:10:42 GMT
+-	Parent Layer: `696be707a6b046561a59277ec104d9254521b33dbae0b4ad0933c3fa694b2e3d`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9bad87c9e939b385ab91e99d0ad28f3904ef4449f64507c5a0e67f98024b0bee`
+#### `3a7cffa509309b29f9c7c424c05a0f57d6ee0de61df2374ac82e749a154f196b`
 
 ```dockerfile
 ENV JAVA_VERSION=8u66
 ```
 
--	Created: Sat, 24 Oct 2015 06:26:35 GMT
--	Parent Layer: `c6e04b3e8cc813a3e67ef85a8101af25d0a92f39a39e070c6971bbb0d5b424d6`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:10:42 GMT
+-	Parent Layer: `0c24696b360d047c5d288669a2ad51c9904fc16304105257e9745b1a813d7613`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `d72d229450ef05f240a11441b30dcc1c29916f25753a706cf429d4c8619f76be`
+#### `48a0ef8001755f9a043debbf6594d112c5559041c1fc438985dbc65514ca6dee`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 ```
 
--	Created: Sat, 31 Oct 2015 23:00:59 GMT
--	Parent Layer: `9bad87c9e939b385ab91e99d0ad28f3904ef4449f64507c5a0e67f98024b0bee`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:10:43 GMT
+-	Parent Layer: `3a7cffa509309b29f9c7c424c05a0f57d6ee0de61df2374ac82e749a154f196b`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `f32ae24da664ea5df8c1ed8d80356db7d6ecdbe49985419d9387792be0e6b33e`
+#### `f9194a57b559aa56fe0026542c9bec5730be07c2332799f3972b6b6ce59cf24a`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Sat, 31 Oct 2015 23:01:00 GMT
--	Parent Layer: `d72d229450ef05f240a11441b30dcc1c29916f25753a706cf429d4c8619f76be`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:10:43 GMT
+-	Parent Layer: `48a0ef8001755f9a043debbf6594d112c5559041c1fc438985dbc65514ca6dee`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `9a6ea0a52f074e60d01f6662418b413875013af2c2ba929cc72b02784840b937`
+#### `97424a07faef40398607a8609b1944a70560d13e86d3811422ed3a5b38d91402`
 
 ```dockerfile
 RUN set -x \
@@ -513,99 +513,99 @@ RUN set -x \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 31 Oct 2015 23:02:54 GMT
--	Parent Layer: `f32ae24da664ea5df8c1ed8d80356db7d6ecdbe49985419d9387792be0e6b33e`
--	Docker Version: 1.8.2
--	Virtual Size: 349.1 MB (349087244 bytes)
--	v2 Blob: `sha256:2db6e3d149da43c1bff0acc4888de440583880af802db1e4dc494ee421297a83`
--	v2 Content-Length: 129.9 MB (129926554 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:40:14 GMT
+-	Created: Wed, 11 Nov 2015 07:12:17 GMT
+-	Parent Layer: `f9194a57b559aa56fe0026542c9bec5730be07c2332799f3972b6b6ce59cf24a`
+-	Docker Version: 1.9.0
+-	Virtual Size: 349.1 MB (349087769 bytes)
+-	v2 Blob: `sha256:a9941b44bccef3a7006674bdcedee013c6bd9ac924192d19831589afa44e031e`
+-	v2 Content-Length: 129.9 MB (129926497 bytes)
+-	v2 Last-Modified: Wed, 11 Nov 2015 19:45:28 GMT
 
-#### `c1ccce98b537bae1091dfd17c9aa5dc50ac5580bd135250f4f653e9ef348ff2d`
+#### `de4a13c84f531c94a4b686f6119a1e03cf767ad57041d68a7b02ea2f48887aaf`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Sat, 31 Oct 2015 23:03:00 GMT
--	Parent Layer: `9a6ea0a52f074e60d01f6662418b413875013af2c2ba929cc72b02784840b937`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:12:24 GMT
+-	Parent Layer: `97424a07faef40398607a8609b1944a70560d13e86d3811422ed3a5b38d91402`
+-	Docker Version: 1.9.0
 -	Virtual Size: 413.1 KB (413134 bytes)
--	v2 Blob: `sha256:4658e2763968872a623fd301eae979eb61a81229193648d56784bb81684e1598`
--	v2 Content-Length: 278.3 KB (278346 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:39:17 GMT
+-	v2 Blob: `sha256:1ac769334ced56a00eb3ef7bc9699af886cee2d1698fca9a1ebc92f56267d9dd`
+-	v2 Content-Length: 278.3 KB (278349 bytes)
+-	v2 Last-Modified: Wed, 11 Nov 2015 19:44:46 GMT
 
-#### `4f9366a1ea43d238ed89261b959c12e1fb5483902333e467540e7753e8ba859d`
+#### `4cf0bdeb796cc30f4e28638794ef477218f1d15a7a8e47177127eaa3eb4aa991`
 
 ```dockerfile
 MAINTAINER Kaazing Docker Maintainers, contact via github issues: https://github.com/kaazing/gateway.docker/issues
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:15 GMT
--	Parent Layer: `c1ccce98b537bae1091dfd17c9aa5dc50ac5580bd135250f4f653e9ef348ff2d`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:55:45 GMT
+-	Parent Layer: `de4a13c84f531c94a4b686f6119a1e03cf767ad57041d68a7b02ea2f48887aaf`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `cd423b42251920e8685ed59cac216935c4c6c17dc3182c1d2e979eb65012eaef`
+#### `d0c7f5df1ad808631c0a30e6750b1708ebabc0c1e1b41889fd4463736cf6a9a6`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 409EF88E5386FE7C68FC0B77B79592BE24BD9545
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:18 GMT
--	Parent Layer: `4f9366a1ea43d238ed89261b959c12e1fb5483902333e467540e7753e8ba859d`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:55:47 GMT
+-	Parent Layer: `4cf0bdeb796cc30f4e28638794ef477218f1d15a7a8e47177127eaa3eb4aa991`
+-	Docker Version: 1.9.0
 -	Virtual Size: 11.6 KB (11596 bytes)
--	v2 Blob: `sha256:87ca8abf9f5dd48c909bcc4a527f0dbbe45c510d8b7264e6820bb0aa9b981097`
--	v2 Content-Length: 5.6 KB (5607 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 05:21:53 GMT
+-	v2 Blob: `sha256:a2bc487b9f51d4fd22291ad3e4cdbe3315dea85478b05afdd71c120ddcebf0c4`
+-	v2 Content-Length: 5.6 KB (5609 bytes)
+-	v2 Last-Modified: Thu, 12 Nov 2015 00:55:27 GMT
 
-#### `5abdadada9be8bc73cc15162de00ceab49f104bc0b812ae5e73e245f744256b9`
+#### `78450e667f85da08d3cebb8319e4b2fa1e21562055b80fb42e4c5e433035bb3f`
 
 ```dockerfile
 ENV KAAZING_GATEWAY_VERSION=5.0.1.21
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:18 GMT
--	Parent Layer: `cd423b42251920e8685ed59cac216935c4c6c17dc3182c1d2e979eb65012eaef`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:55:48 GMT
+-	Parent Layer: `d0c7f5df1ad808631c0a30e6750b1708ebabc0c1e1b41889fd4463736cf6a9a6`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `c7221e4a47d1050f7207cf8e57808b8a633e82db88904a8ecbc5e3d12877636f`
+#### `7d72a500b37206c7908767dd9be0094f4820c4f66302cc421f49a690e3370fc2`
 
 ```dockerfile
 ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.0.1.21/gateway.distribution-5.0.1.21.tar.gz
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:19 GMT
--	Parent Layer: `5abdadada9be8bc73cc15162de00ceab49f104bc0b812ae5e73e245f744256b9`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:55:48 GMT
+-	Parent Layer: `78450e667f85da08d3cebb8319e4b2fa1e21562055b80fb42e4c5e433035bb3f`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40de2b767bfdc1ac85f3b5c0d1eed2d317180a9bb933f6762eaec04c015eefff`
+#### `9f6162987ed9b649ae8326427499e6de8d91d7b8c4d8209a224005eff2fefc16`
 
 ```dockerfile
 WORKDIR /kaazing-gateway
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:19 GMT
--	Parent Layer: `c7221e4a47d1050f7207cf8e57808b8a633e82db88904a8ecbc5e3d12877636f`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:55:49 GMT
+-	Parent Layer: `7d72a500b37206c7908767dd9be0094f4820c4f66302cc421f49a690e3370fc2`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `359af2a2560f3e4c53a5e14f314b903db2496a17cb4e4e61ebeb5c2aee0fd1da`
+#### `afe52175a696d77224d39d28ab6952d291809fa4bbdd52e909f0aeb35b25d98e`
 
 ```dockerfile
 RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL \
@@ -615,65 +615,65 @@ RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL \
 	&& rm gateway.tar.gz*
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:24 GMT
--	Parent Layer: `40de2b767bfdc1ac85f3b5c0d1eed2d317180a9bb933f6762eaec04c015eefff`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:56:00 GMT
+-	Parent Layer: `9f6162987ed9b649ae8326427499e6de8d91d7b8c4d8209a224005eff2fefc16`
+-	Docker Version: 1.9.0
 -	Virtual Size: 23.2 MB (23182297 bytes)
--	v2 Blob: `sha256:7f10070277fb3eef12f58899c27fb10402a553d9bacdccb9f925f537a98b1946`
--	v2 Content-Length: 14.4 MB (14368751 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 05:21:41 GMT
+-	v2 Blob: `sha256:d68451924951046988357304c3afd611602364c5d22ef3a8cf6cc9d3e865cf6e`
+-	v2 Content-Length: 14.4 MB (14368737 bytes)
+-	v2 Last-Modified: Thu, 12 Nov 2015 00:55:16 GMT
 
-#### `5a29b506501fdfcc6c0eae5749d204c15fe6b108c60b81ee7299e6d6ee809396`
+#### `0632dd404715eebc80c0c38df4707d5ff8ed2e72187c4f639391ab71f38bc49a`
 
 ```dockerfile
 ENV GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:25 GMT
--	Parent Layer: `359af2a2560f3e4c53a5e14f314b903db2496a17cb4e4e61ebeb5c2aee0fd1da`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:56:01 GMT
+-	Parent Layer: `afe52175a696d77224d39d28ab6952d291809fa4bbdd52e909f0aeb35b25d98e`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `2fdba84d0b340d65a34b765650f30b4b26642c36d834b2cab63cef8625220534`
+#### `c4bc2ca222cb4ee3464aab786508902bb7a0a2016fa127e6a077150fd2f5be60`
 
 ```dockerfile
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/kaazing-gateway/bin
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:25 GMT
--	Parent Layer: `5a29b506501fdfcc6c0eae5749d204c15fe6b108c60b81ee7299e6d6ee809396`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:56:01 GMT
+-	Parent Layer: `0632dd404715eebc80c0c38df4707d5ff8ed2e72187c4f639391ab71f38bc49a`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `5237fe2c60f10887a0d07f109dac28081fd8692b388c4887624bc7801348f9bf`
+#### `17ad713d416c2f185f880d0e24c927a6888f03d1d0248cfc13e38f0442974314`
 
 ```dockerfile
 EXPOSE 8000/tcp
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:26 GMT
--	Parent Layer: `2fdba84d0b340d65a34b765650f30b4b26642c36d834b2cab63cef8625220534`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:56:02 GMT
+-	Parent Layer: `c4bc2ca222cb4ee3464aab786508902bb7a0a2016fa127e6a077150fd2f5be60`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `3840549a3e6bc997e2164ebc0999c0ddb80cacff82f9e685543d903fafbd888c`
+#### `1a1cc65f5d2dd040dfc67e4c87b05a0fad50665da280aeaa35d1f36537513a65`
 
 ```dockerfile
 CMD ["gateway.start"]
 ```
 
--	Created: Sat, 31 Oct 2015 23:43:26 GMT
--	Parent Layer: `5237fe2c60f10887a0d07f109dac28081fd8692b388c4887624bc7801348f9bf`
--	Docker Version: 1.8.2
+-	Created: Wed, 11 Nov 2015 07:56:02 GMT
+-	Parent Layer: `17ad713d416c2f185f880d0e24c927a6888f03d1d0248cfc13e38f0442974314`
+-	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B

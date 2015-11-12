@@ -7,7 +7,7 @@
 ## `hello-world:latest`
 
 ```console
-$ docker pull library/hello-world@sha256:517f03be3f8169d84711c9ffb2b3235a4d27c1eb4ad147f6248c8040adb93113
+$ docker pull library/hello-world@sha256:8be990ef2aeb16dbcb9271ddfe2610fa6658d13f6dfb8bc72074cc1ca36966a7
 ```
 
 -	Total Virtual Size: 960.0 B

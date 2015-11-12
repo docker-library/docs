@@ -13,7 +13,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull library/fedora@sha256:a220110e096cd1d6034699a5e30a012de6c55c83149d01658120918d01f1587a
+$ docker pull library/fedora@sha256:50432151312d9ed1af4becc4ab58ca1d26a36f4c345cd79cc3d9da79ae88be6e
 ```
 
 -	Total Virtual Size: 204.3 MB (204327031 bytes)
@@ -51,7 +51,7 @@ ADD file:645248c8f4322ab8342a87b417a8973f0781bcc29508fecc4bb31b38c53f614e in /
 ## `fedora:23`
 
 ```console
-$ docker pull library/fedora@sha256:a62ed896a44d74436c20b70e351cb2001122618a6097fe669d39f98fc5a49e61
+$ docker pull library/fedora@sha256:2bf38ebba88834b7a447c5582e3507fe27fb130ca7033ff870f3ed908d697756
 ```
 
 -	Total Virtual Size: 204.3 MB (204327031 bytes)
@@ -89,7 +89,7 @@ ADD file:645248c8f4322ab8342a87b417a8973f0781bcc29508fecc4bb31b38c53f614e in /
 ## `fedora:22`
 
 ```console
-$ docker pull library/fedora@sha256:e810d04288c384f54237ff52c4acaa84cf9468fb862c7620f6ce25d955b03c23
+$ docker pull library/fedora@sha256:6acac77cc134c673eda753de389551d10e7b8d014430bb562bcfd104b6123ee8
 ```
 
 -	Total Virtual Size: 186.5 MB (186515831 bytes)
@@ -110,15 +110,15 @@ MAINTAINER Lokesh Mandvekar <lsm5@fedoraproject.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `85f4e2af80d39fccfa3abd218732bc4fc1711665527c5fdd556fb0ff9139c789`
+#### `9eb9e09c9cb3f799f58f665b0932e38098135961ed2b2df53ad4d1fd1ff617e6`
 
 ```dockerfile
 ADD file:3d655151e60ee9ae6490fe44ec7e42f0e0117f0cd6728fd5281299c01638a492 in /
 ```
 
--	Created: Tue, 13 Oct 2015 23:39:52 GMT
+-	Created: Wed, 11 Nov 2015 18:39:12 GMT
 -	Parent Layer: `48ecf305d2cf7046c1f5f8fcbcd4994403173441d4a7f125b1bb0ceead9de731`
--	Docker Version: 1.8.2
+-	Docker Version: 1.9.0
 -	Virtual Size: 186.5 MB (186515831 bytes)
 -	v2 Blob: `sha256:4a0c618dec4dce9ce840e9771e0ded29f35c53ec2447e362e5825bfc101dd636`
 -	v2 Content-Length: 66.9 MB (66944370 bytes)
@@ -127,7 +127,7 @@ ADD file:3d655151e60ee9ae6490fe44ec7e42f0e0117f0cd6728fd5281299c01638a492 in /
 ## `fedora:21`
 
 ```console
-$ docker pull library/fedora@sha256:4010ecea49439c502afba7f2a59736fd3a7f0c1b787c50bc8c360430ca616709
+$ docker pull library/fedora@sha256:8cbba7b8a7c499c18f102e3ec507437e18d85953bf3096e7fe64d38751e07646
 ```
 
 -	Total Virtual Size: 241.3 MB (241325806 bytes)
@@ -165,11 +165,11 @@ ADD file:2b6b4dd824f8839345cb42c8adca14984638f822f64086114818e930f1cb7f0a in /
 ## `fedora:rawhide`
 
 ```console
-$ docker pull library/fedora@sha256:2050cc6144baf8f774e01781fc61cfd220c1fc9331ca5c56ef5bff6176fef720
+$ docker pull library/fedora@sha256:f19660764b2cc3725433efd3dfc9205f4e2f10b0369f93faa3359503cc263bbb
 ```
 
--	Total Virtual Size: 315.2 MB (315242201 bytes)
--	Total v2 Content-Length: 98.9 MB (98914589 bytes)
+-	Total Virtual Size: 211.7 MB (211678004 bytes)
+-	Total v2 Content-Length: 76.8 MB (76825775 bytes)
 
 ### Layers (2)
 
@@ -186,24 +186,24 @@ MAINTAINER Adam Miller <maxamillion@fedoraproject.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `40dfe4ae0620e1fe4139f579bfbc0a9fafa1c3c6e2cb501f383b5e34634d172a`
+#### `15644141f0a34d3335865e7ccccf0fc3ae153398e6d63ce76bff3b8d5a50990c`
 
 ```dockerfile
-ADD file:00adb731b9cf36950a3c4bd827c93c0aff863c0a5a8eaf28c09ce0a02634903b in /
+ADD file:5817a1702b2a1a3b7f7ba13e52c09b6e73b97e3ffc380b662b0674c26e21cc08 in /
 ```
 
--	Created: Tue, 13 Oct 2015 23:40:45 GMT
+-	Created: Wed, 11 Nov 2015 18:40:33 GMT
 -	Parent Layer: `b0082ba983ef3569aad347f923a9cec8ea764c239179081a1e2c47709788dc44`
--	Docker Version: 1.8.2
--	Virtual Size: 315.2 MB (315242201 bytes)
--	v2 Blob: `sha256:48d0e21923f1f187fd61c1e3c21895ba1a9528ecf399d701ffe8e5a070cb4d5a`
--	v2 Content-Length: 98.9 MB (98914557 bytes)
--	v2 Last-Modified: Wed, 14 Oct 2015 23:28:37 GMT
+-	Docker Version: 1.9.0
+-	Virtual Size: 211.7 MB (211678004 bytes)
+-	v2 Blob: `sha256:b2e6646f7fac70bd90c9c44a62a2e4afc2aa081b5cd4d4d37aa6a48483c2454b`
+-	v2 Content-Length: 76.8 MB (76825743 bytes)
+-	v2 Last-Modified: Wed, 11 Nov 2015 18:43:53 GMT
 
 ## `fedora:20`
 
 ```console
-$ docker pull library/fedora@sha256:3bc3c17b7fb900f8a35a22c36a05840d0b3a07896c4268e989558ef68279ecc2
+$ docker pull library/fedora@sha256:1c7e748fc0aebdb6c61048e0d1dcb66ca4e4ee2c9f00f104dc9bb0b6213d0591
 ```
 
 -	Total Virtual Size: 290.6 MB (290633327 bytes)
@@ -241,7 +241,7 @@ ADD file:768d95e3ff49ba14458f448dd9c246eb4408e2b488c9174c729320d0a793b723 in /
 ## `fedora:heisenbug`
 
 ```console
-$ docker pull library/fedora@sha256:cc62b761b55bded0f15c6a70d822a136c542f78997261e24bad87993f3bbc8cb
+$ docker pull library/fedora@sha256:d0621e01dd472b4856411bc68d5b5da03dde4399e714c7968baf02242904a55a
 ```
 
 -	Total Virtual Size: 290.6 MB (290633327 bytes)

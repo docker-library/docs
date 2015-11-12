@@ -12,7 +12,7 @@
 ## `alpine:2.6`
 
 ```console
-$ docker pull library/alpine@sha256:65602701d087c12acdcad42002bcf3552661a267fcc0b76a5ca3b7be3758f2bb
+$ docker pull library/alpine@sha256:df3488ad0dac4a3f665009b755176da8ed3856897f2a7a914b2a67125ac7f904
 ```
 
 -	Total Virtual Size: 4.5 MB (4502262 bytes)
@@ -36,7 +36,7 @@ ADD file:6b71acf68670a4291a15e8ea342ecb83c64bd89dcac503594b6aac459a2a7df6 in /
 ## `alpine:2.7`
 
 ```console
-$ docker pull library/alpine@sha256:afd6ce6086e0fac5d94c038e4ded8d5a5d86ed86838d5c96760ba332e36a42f5
+$ docker pull library/alpine@sha256:28c275b25ff6b22f8978bb6242221101ffc04cb8e9fbce085ec0e97e0f28abb5
 ```
 
 -	Total Virtual Size: 4.7 MB (4712974 bytes)
@@ -60,7 +60,7 @@ ADD file:ba0f96fc9e5bfd966eb8f2363a5b9109608adfabee57e2d56168ea758ced68d9 in /
 ## `alpine:3.1`
 
 ```console
-$ docker pull library/alpine@sha256:22b8b96ceccf4d484e4ca62363abb527fc5c2fe01a4097642395c4d830c3471f
+$ docker pull library/alpine@sha256:b41168e9fa69522768ecb88a5ea21274619d4f90c08e697f3dfac84147e474a0
 ```
 
 -	Total Virtual Size: 5.0 MB (5041128 bytes)
@@ -84,7 +84,7 @@ ADD file:f302eb46ca6d55d4baef4cb4aaff3a2266fb34d413bfaa21c0dd5da34b975b8b in /
 ## `alpine:3.2`
 
 ```console
-$ docker pull library/alpine@sha256:b4769592c47ebc65f85999c61cf33dcdd5f04a7660c4225b454f875c57ef79fd
+$ docker pull library/alpine@sha256:35263e39831e23388d2a617fc485ca8503215924f7e6373e4f5abd377d6fa551
 ```
 
 -	Total Virtual Size: 5.2 MB (5248903 bytes)
@@ -108,7 +108,7 @@ ADD file:43a95cc218d164ff589cb91519964373d53b607469f5ccce725631916392cd88 in /
 ## `alpine:latest`
 
 ```console
-$ docker pull library/alpine@sha256:fb9f16730ac6316afa4d97caa5130219927bfcecf0b0ce35c01dcb612f449739
+$ docker pull library/alpine@sha256:401028b33d21d06c21e585a061f1db2f16cf89ec285601f9136a5911a2583ea5
 ```
 
 -	Total Virtual Size: 5.2 MB (5248903 bytes)
@@ -132,7 +132,7 @@ ADD file:43a95cc218d164ff589cb91519964373d53b607469f5ccce725631916392cd88 in /
 ## `alpine:edge`
 
 ```console
-$ docker pull library/alpine@sha256:ff86433452752358a22a7ea4054b92d2ca0c310e5227074665215837d93f184b
+$ docker pull library/alpine@sha256:a710856a9af6c0de71f56cb6e460ef09e1d24655f45dbb93035aa1329fc0499c
 ```
 
 -	Total Virtual Size: 5.2 MB (5248796 bytes)
