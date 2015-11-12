@@ -8,7 +8,7 @@
 ## `sourcemage:latest`
 
 ```console
-$ docker pull library/sourcemage@sha256:678c5d434d1aed75da88b80d54dccac88e4fdb577ff17ab6738e36ed95859970
+$ docker pull library/sourcemage@sha256:457ccf71f6cb11ddaf6823d6381d11bd8f1ba0291be963cea2b5733f9a621ea8
 ```
 
 -	Total Virtual Size: 644.7 MB (644697190 bytes)
@@ -60,7 +60,7 @@ CMD ["/bin/bash"]
 ## `sourcemage:0.61`
 
 ```console
-$ docker pull library/sourcemage@sha256:44a3b72883eea2e2cffc964f62103b4b32d99b78a4b284a05a7155cf0b985bef
+$ docker pull library/sourcemage@sha256:b5b84fad5a6cf63a712788bd5941d550a70cf1ea43f7437684e6df1da073426a
 ```
 
 -	Total Virtual Size: 644.7 MB (644697190 bytes)

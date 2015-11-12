@@ -10,7 +10,7 @@
 ## `sonarqube:latest`
 
 ```console
-$ docker pull library/sonarqube@sha256:32efd1f35f1a76f82023aea8b3aa8fefe750bc374180b27d53243c0cc3899d4d
+$ docker pull library/sonarqube@sha256:35a9bc77219719984cf2f1a08e65d49f214d44366e0dfdb5863f611ffba5bb01
 ```
 
 -	Total Virtual Size: 942.5 MB (942507188 bytes)
@@ -393,7 +393,7 @@ ENTRYPOINT &{["./bin/run.sh"]}
 ## `sonarqube:5.2`
 
 ```console
-$ docker pull library/sonarqube@sha256:f3fc4c15dbe13786dcb4d31d6441b7b1eae7e8aec650fdf8c7556a2a2e58a74e
+$ docker pull library/sonarqube@sha256:9b26e0d389bc316ff864628f74a5d5e727b82d26cad1b85b08c0b51ab9e5bbe5
 ```
 
 -	Total Virtual Size: 942.5 MB (942507188 bytes)
@@ -776,7 +776,7 @@ ENTRYPOINT &{["./bin/run.sh"]}
 ## `sonarqube:lts`
 
 ```console
-$ docker pull library/sonarqube@sha256:775e8e0b2e9f3d643407a23ff7ecccc3832f7fbf7a4fdd9492e0dbc8e0ed72c4
+$ docker pull library/sonarqube@sha256:dcba30b401c854268e421b4a5dde3105cb6a90ef1255f86ebce04f8e23cf03a7
 ```
 
 -	Total Virtual Size: 924.3 MB (924341528 bytes)
@@ -1173,7 +1173,7 @@ ENTRYPOINT &{["./bin/run.sh"]}
 ## `sonarqube:4.5.6`
 
 ```console
-$ docker pull library/sonarqube@sha256:75c953892836251d56f95c5653a31c89536fdb06456da90b06cd6574114a3d78
+$ docker pull library/sonarqube@sha256:fd0c9da7a5e3e78c520fe4dd235591078a56af8f63b8b5289bd6cc793bd9fb7c
 ```
 
 -	Total Virtual Size: 924.3 MB (924341528 bytes)
