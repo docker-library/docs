@@ -4,9 +4,11 @@
 -	[`1.4.3-onbuild`, `1.4-onbuild` (*1.4/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/onbuild/Dockerfile)
 -	[`1.4.3-cross`, `1.4-cross` (*1.4/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/cross/Dockerfile)
 -	[`1.4.3-wheezy`, `1.4-wheezy` (*1.4/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/a4f3927494b48c7bdb6ea6edac8f89818853b45b/1.4/wheezy/Dockerfile)
+-	[`1.4.3-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/63a33bf151190592eaf0540dd4b7027a9ca13f9b/1.4/alpine/Dockerfile)
 -	[`1.5.1`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/51d6eacd41fe80d41105142b9ad32f575082970f/1.5/Dockerfile)
 -	[`1.5.1-onbuild`, `1.5-onbuild`, `1-onbuild`, `onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
 -	[`1.5.1-wheezy`, `1.5-wheezy`, `1-wheezy`, `wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/51d6eacd41fe80d41105142b9ad32f575082970f/1.5/wheezy/Dockerfile)
+-	[`1.5.1-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/63a33bf151190592eaf0540dd4b7027a9ca13f9b/1.5/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -82,6 +84,12 @@ The `golang` images come in many flavors, each designed for a specific use case.
 ## `golang:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `golang:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The only caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice.
 
 ## `golang:onbuild`
 
