@@ -57,7 +57,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -134,7 +134,7 @@ ENV REDIS_VERSION=2.6.17
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `701ee8727e42cd3a330bae5f446a7d3d7dfba1cf812d69eac6bdd614a8087606`
 
@@ -148,7 +148,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.6.17.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `63e7eeac2165c9c6aa13506b46995b74b49ab3b44328e3d64101e03ec9c22a1a`
 
@@ -162,7 +162,7 @@ ENV REDIS_DOWNLOAD_SHA1=b5423e1c423d502074cbd0b21bd4e820409d2003
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `cdd30f82ea2326316f5df76f25547da097e28fea93a9ada08fa7de6e2359ee28`
 
@@ -217,7 +217,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `7be0a88464c2dfc108525e390536f9b674ee61c00abcde4fa4434be1dfa1f7df`
 
@@ -231,7 +231,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `11edf02e0cdec3199d6f66b19e554a62e55db33ac711bff557d6c2e48f9918aa`
 
@@ -259,7 +259,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `928019230c79297fab6c61ce4e1f4413fd1dd09ef908f8de32ae554c281edd90`
 
@@ -273,7 +273,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4aa0a5575269d943895a6545285080f616fb19be5b6c3e82e207da037d875cb7`
 
@@ -287,7 +287,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2.6`
 
@@ -325,7 +325,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -402,7 +402,7 @@ ENV REDIS_VERSION=2.6.17
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `701ee8727e42cd3a330bae5f446a7d3d7dfba1cf812d69eac6bdd614a8087606`
 
@@ -416,7 +416,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.6.17.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `63e7eeac2165c9c6aa13506b46995b74b49ab3b44328e3d64101e03ec9c22a1a`
 
@@ -430,7 +430,7 @@ ENV REDIS_DOWNLOAD_SHA1=b5423e1c423d502074cbd0b21bd4e820409d2003
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `cdd30f82ea2326316f5df76f25547da097e28fea93a9ada08fa7de6e2359ee28`
 
@@ -485,7 +485,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `7be0a88464c2dfc108525e390536f9b674ee61c00abcde4fa4434be1dfa1f7df`
 
@@ -499,7 +499,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `11edf02e0cdec3199d6f66b19e554a62e55db33ac711bff557d6c2e48f9918aa`
 
@@ -527,7 +527,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `928019230c79297fab6c61ce4e1f4413fd1dd09ef908f8de32ae554c281edd90`
 
@@ -541,7 +541,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4aa0a5575269d943895a6545285080f616fb19be5b6c3e82e207da037d875cb7`
 
@@ -555,7 +555,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2.6.17-32bit`
 
@@ -593,7 +593,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -671,7 +671,7 @@ ENV REDIS_VERSION=2.6.17
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `72be2b68dad79a5dada203357d4bd5eb989f0deaa14d850e769d52289d7b863d`
 
@@ -685,7 +685,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.6.17.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `202f58df6b644f44ba254bbc54d3da230cef060333af20dc6bbfe9ebbc5105a0`
 
@@ -699,7 +699,7 @@ ENV REDIS_DOWNLOAD_SHA1=b5423e1c423d502074cbd0b21bd4e820409d2003
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `843b80728f74e76bee24d186b914e6eb6db1d850ef054cc72c6c12d5b27333ea`
 
@@ -754,7 +754,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `1ecdd9a97534ebdcaf821cd75e93b82b4782cd7ae53f37389b62c5826579e6bf`
 
@@ -768,7 +768,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `70591c54144413cd281c0ff56da5edfbd66d2ef2077a4868e2d8db4c261dcac7`
 
@@ -796,7 +796,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `afce1bd2a59dc264fc27da3eee32bc4a69bb2fc42317cad1ac791264f5261e17`
 
@@ -810,7 +810,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `fdb40a627cd11cb35535da7d32d720c45b159d22225d5625ad09db71af066282`
 
@@ -824,7 +824,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2.6-32bit`
 
@@ -862,7 +862,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -940,7 +940,7 @@ ENV REDIS_VERSION=2.6.17
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `72be2b68dad79a5dada203357d4bd5eb989f0deaa14d850e769d52289d7b863d`
 
@@ -954,7 +954,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.6.17.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `202f58df6b644f44ba254bbc54d3da230cef060333af20dc6bbfe9ebbc5105a0`
 
@@ -968,7 +968,7 @@ ENV REDIS_DOWNLOAD_SHA1=b5423e1c423d502074cbd0b21bd4e820409d2003
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `843b80728f74e76bee24d186b914e6eb6db1d850ef054cc72c6c12d5b27333ea`
 
@@ -1023,7 +1023,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `1ecdd9a97534ebdcaf821cd75e93b82b4782cd7ae53f37389b62c5826579e6bf`
 
@@ -1037,7 +1037,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `70591c54144413cd281c0ff56da5edfbd66d2ef2077a4868e2d8db4c261dcac7`
 
@@ -1065,7 +1065,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `afce1bd2a59dc264fc27da3eee32bc4a69bb2fc42317cad1ac791264f5261e17`
 
@@ -1079,7 +1079,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `fdb40a627cd11cb35535da7d32d720c45b159d22225d5625ad09db71af066282`
 
@@ -1093,7 +1093,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2.8.23`
 
@@ -1131,7 +1131,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -1208,7 +1208,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `13c8db30cbe8c4121edd7add40f12beaa42e9815fa1eb4465e728c083f6abb88`
 
@@ -1222,7 +1222,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `902582afa7b8a86256fa1ae6c81d4e3012283b71a4f937c4c5930adf056e9436`
 
@@ -1236,7 +1236,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `f9814915f10ab3a083b3212a1819cf012f08c075385d1671fb975e2821dae9cb`
 
@@ -1290,7 +1290,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `15ef6315e2dcf69966236170c4ea98a1a9a9ae4f368d3a06dd3bc3bf84a3df68`
 
@@ -1304,7 +1304,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `8c9e0bc17cd6534dac7cd92ba5d9c1976e1e5a5fbcf4cfca2e9772b7a6fb5c54`
 
@@ -1332,7 +1332,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `17406da71caf15ddc2d05ffaf67dab921bd7d33bdad871506341647bef713eed`
 
@@ -1346,7 +1346,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `e64b65dc04bacca5a7f0034b8e6ba2f1c7ec46afacabadc17c14703fd3489447`
 
@@ -1360,7 +1360,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2.8`
 
@@ -1398,7 +1398,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -1475,7 +1475,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `13c8db30cbe8c4121edd7add40f12beaa42e9815fa1eb4465e728c083f6abb88`
 
@@ -1489,7 +1489,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `902582afa7b8a86256fa1ae6c81d4e3012283b71a4f937c4c5930adf056e9436`
 
@@ -1503,7 +1503,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `f9814915f10ab3a083b3212a1819cf012f08c075385d1671fb975e2821dae9cb`
 
@@ -1557,7 +1557,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `15ef6315e2dcf69966236170c4ea98a1a9a9ae4f368d3a06dd3bc3bf84a3df68`
 
@@ -1571,7 +1571,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `8c9e0bc17cd6534dac7cd92ba5d9c1976e1e5a5fbcf4cfca2e9772b7a6fb5c54`
 
@@ -1599,7 +1599,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `17406da71caf15ddc2d05ffaf67dab921bd7d33bdad871506341647bef713eed`
 
@@ -1613,7 +1613,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `e64b65dc04bacca5a7f0034b8e6ba2f1c7ec46afacabadc17c14703fd3489447`
 
@@ -1627,7 +1627,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2`
 
@@ -1665,7 +1665,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -1742,7 +1742,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `13c8db30cbe8c4121edd7add40f12beaa42e9815fa1eb4465e728c083f6abb88`
 
@@ -1756,7 +1756,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `902582afa7b8a86256fa1ae6c81d4e3012283b71a4f937c4c5930adf056e9436`
 
@@ -1770,7 +1770,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `f9814915f10ab3a083b3212a1819cf012f08c075385d1671fb975e2821dae9cb`
 
@@ -1824,7 +1824,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `15ef6315e2dcf69966236170c4ea98a1a9a9ae4f368d3a06dd3bc3bf84a3df68`
 
@@ -1838,7 +1838,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `8c9e0bc17cd6534dac7cd92ba5d9c1976e1e5a5fbcf4cfca2e9772b7a6fb5c54`
 
@@ -1866,7 +1866,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `17406da71caf15ddc2d05ffaf67dab921bd7d33bdad871506341647bef713eed`
 
@@ -1880,7 +1880,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `e64b65dc04bacca5a7f0034b8e6ba2f1c7ec46afacabadc17c14703fd3489447`
 
@@ -1894,7 +1894,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2.8.23-32bit`
 
@@ -1932,7 +1932,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -2010,7 +2010,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `918f5ed21a5002de51fe9ba3e3d1bd54042bda2cb98a555bb72216ee483bfb82`
 
@@ -2024,7 +2024,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `85d698c0359d81d78e82c21f6ab53d0fb1fbf94584f99e564414124b9b127e9e`
 
@@ -2038,7 +2038,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `7144fbdca8952363f148fa46bf5f240745ded9d974506e9068a84ab54b1171ed`
 
@@ -2092,7 +2092,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `270cc6764cfab0ed570f51858b22cca8e2fd742b0f48f21a5a9895cb192b0b5d`
 
@@ -2106,7 +2106,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a8b55422cb378281489c906114456249e3180f2a7883449453cd04bc77e7ca66`
 
@@ -2134,7 +2134,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `47e7424e2510ca12f2a2feb58d25c1c8c40b3bb621aa0db36aa5417b719343ae`
 
@@ -2148,7 +2148,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6605ade1c1735c141c995a4b333b2cb2ed4f13bf0790de547b4ff1f6252c41bb`
 
@@ -2162,7 +2162,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2.8-32bit`
 
@@ -2200,7 +2200,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -2278,7 +2278,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `918f5ed21a5002de51fe9ba3e3d1bd54042bda2cb98a555bb72216ee483bfb82`
 
@@ -2292,7 +2292,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `85d698c0359d81d78e82c21f6ab53d0fb1fbf94584f99e564414124b9b127e9e`
 
@@ -2306,7 +2306,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `7144fbdca8952363f148fa46bf5f240745ded9d974506e9068a84ab54b1171ed`
 
@@ -2360,7 +2360,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `270cc6764cfab0ed570f51858b22cca8e2fd742b0f48f21a5a9895cb192b0b5d`
 
@@ -2374,7 +2374,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a8b55422cb378281489c906114456249e3180f2a7883449453cd04bc77e7ca66`
 
@@ -2402,7 +2402,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `47e7424e2510ca12f2a2feb58d25c1c8c40b3bb621aa0db36aa5417b719343ae`
 
@@ -2416,7 +2416,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6605ade1c1735c141c995a4b333b2cb2ed4f13bf0790de547b4ff1f6252c41bb`
 
@@ -2430,7 +2430,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:2-32bit`
 
@@ -2468,7 +2468,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -2546,7 +2546,7 @@ ENV REDIS_VERSION=2.8.23
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `918f5ed21a5002de51fe9ba3e3d1bd54042bda2cb98a555bb72216ee483bfb82`
 
@@ -2560,7 +2560,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-2.8.23.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `85d698c0359d81d78e82c21f6ab53d0fb1fbf94584f99e564414124b9b127e9e`
 
@@ -2574,7 +2574,7 @@ ENV REDIS_DOWNLOAD_SHA1=828fc5d4011e6141fabb2ad6ebc193e8f0d08cfa
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `7144fbdca8952363f148fa46bf5f240745ded9d974506e9068a84ab54b1171ed`
 
@@ -2628,7 +2628,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `270cc6764cfab0ed570f51858b22cca8e2fd742b0f48f21a5a9895cb192b0b5d`
 
@@ -2642,7 +2642,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a8b55422cb378281489c906114456249e3180f2a7883449453cd04bc77e7ca66`
 
@@ -2670,7 +2670,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `47e7424e2510ca12f2a2feb58d25c1c8c40b3bb621aa0db36aa5417b719343ae`
 
@@ -2684,7 +2684,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6605ade1c1735c141c995a4b333b2cb2ed4f13bf0790de547b4ff1f6252c41bb`
 
@@ -2698,7 +2698,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:3.0.5`
 
@@ -2736,7 +2736,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -2813,7 +2813,7 @@ ENV REDIS_VERSION=3.0.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `ef2bccd25a4a8266e2f3ea4884a39048c8adf3a9583a4c3f91cd4fd98e188e91`
 
@@ -2827,7 +2827,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.5.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4e60758bad1af814e53abcc6056c006f861855e12a0a3b12b45b530dddbd2c6d`
 
@@ -2841,7 +2841,7 @@ ENV REDIS_DOWNLOAD_SHA1=ad3ee178c42bfcfd310c72bbddffbbe35db9b4a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `81e45fc2a63c4bb4c57ee2a321885949a4cfc8e0049d66f1aed01cf7d7c4fa79`
 
@@ -2895,7 +2895,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `f6973cb64f5bde8d277380f14158e56cbeb146cc29a0b8417469f8401375ab2e`
 
@@ -2909,7 +2909,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `0ee99563e627459b856cb2db6ad2c79d9467d324b2ff65279618839f45529c8d`
 
@@ -2937,7 +2937,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `3190ac2a4dad5375f394df9151f60d7fd78f74a711a62d62c8819084edc3f9c4`
 
@@ -2951,7 +2951,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `e65f97c3eeb6744e76353067463a2fcd46664c18df4cdaaa0826051b5840f412`
 
@@ -2965,7 +2965,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:3.0`
 
@@ -3003,7 +3003,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -3080,7 +3080,7 @@ ENV REDIS_VERSION=3.0.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `ef2bccd25a4a8266e2f3ea4884a39048c8adf3a9583a4c3f91cd4fd98e188e91`
 
@@ -3094,7 +3094,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.5.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4e60758bad1af814e53abcc6056c006f861855e12a0a3b12b45b530dddbd2c6d`
 
@@ -3108,7 +3108,7 @@ ENV REDIS_DOWNLOAD_SHA1=ad3ee178c42bfcfd310c72bbddffbbe35db9b4a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `81e45fc2a63c4bb4c57ee2a321885949a4cfc8e0049d66f1aed01cf7d7c4fa79`
 
@@ -3162,7 +3162,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `f6973cb64f5bde8d277380f14158e56cbeb146cc29a0b8417469f8401375ab2e`
 
@@ -3176,7 +3176,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `0ee99563e627459b856cb2db6ad2c79d9467d324b2ff65279618839f45529c8d`
 
@@ -3204,7 +3204,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `3190ac2a4dad5375f394df9151f60d7fd78f74a711a62d62c8819084edc3f9c4`
 
@@ -3218,7 +3218,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `e65f97c3eeb6744e76353067463a2fcd46664c18df4cdaaa0826051b5840f412`
 
@@ -3232,7 +3232,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:3`
 
@@ -3270,7 +3270,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -3347,7 +3347,7 @@ ENV REDIS_VERSION=3.0.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `ef2bccd25a4a8266e2f3ea4884a39048c8adf3a9583a4c3f91cd4fd98e188e91`
 
@@ -3361,7 +3361,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.5.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4e60758bad1af814e53abcc6056c006f861855e12a0a3b12b45b530dddbd2c6d`
 
@@ -3375,7 +3375,7 @@ ENV REDIS_DOWNLOAD_SHA1=ad3ee178c42bfcfd310c72bbddffbbe35db9b4a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `81e45fc2a63c4bb4c57ee2a321885949a4cfc8e0049d66f1aed01cf7d7c4fa79`
 
@@ -3429,7 +3429,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `f6973cb64f5bde8d277380f14158e56cbeb146cc29a0b8417469f8401375ab2e`
 
@@ -3443,7 +3443,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `0ee99563e627459b856cb2db6ad2c79d9467d324b2ff65279618839f45529c8d`
 
@@ -3471,7 +3471,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `3190ac2a4dad5375f394df9151f60d7fd78f74a711a62d62c8819084edc3f9c4`
 
@@ -3485,7 +3485,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `e65f97c3eeb6744e76353067463a2fcd46664c18df4cdaaa0826051b5840f412`
 
@@ -3499,7 +3499,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:latest`
 
@@ -3537,7 +3537,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -3614,7 +3614,7 @@ ENV REDIS_VERSION=3.0.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `ef2bccd25a4a8266e2f3ea4884a39048c8adf3a9583a4c3f91cd4fd98e188e91`
 
@@ -3628,7 +3628,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.5.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4e60758bad1af814e53abcc6056c006f861855e12a0a3b12b45b530dddbd2c6d`
 
@@ -3642,7 +3642,7 @@ ENV REDIS_DOWNLOAD_SHA1=ad3ee178c42bfcfd310c72bbddffbbe35db9b4a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `81e45fc2a63c4bb4c57ee2a321885949a4cfc8e0049d66f1aed01cf7d7c4fa79`
 
@@ -3696,7 +3696,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `f6973cb64f5bde8d277380f14158e56cbeb146cc29a0b8417469f8401375ab2e`
 
@@ -3710,7 +3710,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `0ee99563e627459b856cb2db6ad2c79d9467d324b2ff65279618839f45529c8d`
 
@@ -3738,7 +3738,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `3190ac2a4dad5375f394df9151f60d7fd78f74a711a62d62c8819084edc3f9c4`
 
@@ -3752,7 +3752,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `e65f97c3eeb6744e76353067463a2fcd46664c18df4cdaaa0826051b5840f412`
 
@@ -3766,7 +3766,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:3.0.5-32bit`
 
@@ -3804,7 +3804,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -3882,7 +3882,7 @@ ENV REDIS_VERSION=3.0.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a58fca2beaa2c8744568cd3c4e4d98c74f0d065396d9265306fca0963dd3ffdd`
 
@@ -3896,7 +3896,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.5.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `51ed9234956b4fed72ee07885831922381bc3e4977fc56c4149f748ba4aaf5ca`
 
@@ -3910,7 +3910,7 @@ ENV REDIS_DOWNLOAD_SHA1=ad3ee178c42bfcfd310c72bbddffbbe35db9b4a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `7a53bdbdfce5ec918db50fe595ced9555caffd4943dbf1ed586c5fe796a4f6a7`
 
@@ -3964,7 +3964,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `28266b1fb4ace986601038d7cf512984ce417d32be644f8bf0bfa8fd0f6d3c95`
 
@@ -3978,7 +3978,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6b17936b7d321edef9ea986b12ec9b74fb0ba898c74cb8b6f02d5eafa13ae141`
 
@@ -4006,7 +4006,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6123cac7d77237eac836a1d07af38d0bc1c465e080d775d234ddc9f9d86626e8`
 
@@ -4020,7 +4020,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `c21150832e6111889d1314e7a45b55e2d05ec5fb2d04b2983c426994d147cde9`
 
@@ -4034,7 +4034,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:3.0-32bit`
 
@@ -4072,7 +4072,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -4150,7 +4150,7 @@ ENV REDIS_VERSION=3.0.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a58fca2beaa2c8744568cd3c4e4d98c74f0d065396d9265306fca0963dd3ffdd`
 
@@ -4164,7 +4164,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.5.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `51ed9234956b4fed72ee07885831922381bc3e4977fc56c4149f748ba4aaf5ca`
 
@@ -4178,7 +4178,7 @@ ENV REDIS_DOWNLOAD_SHA1=ad3ee178c42bfcfd310c72bbddffbbe35db9b4a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `7a53bdbdfce5ec918db50fe595ced9555caffd4943dbf1ed586c5fe796a4f6a7`
 
@@ -4232,7 +4232,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `28266b1fb4ace986601038d7cf512984ce417d32be644f8bf0bfa8fd0f6d3c95`
 
@@ -4246,7 +4246,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6b17936b7d321edef9ea986b12ec9b74fb0ba898c74cb8b6f02d5eafa13ae141`
 
@@ -4274,7 +4274,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6123cac7d77237eac836a1d07af38d0bc1c465e080d775d234ddc9f9d86626e8`
 
@@ -4288,7 +4288,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `c21150832e6111889d1314e7a45b55e2d05ec5fb2d04b2983c426994d147cde9`
 
@@ -4302,7 +4302,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:3-32bit`
 
@@ -4340,7 +4340,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -4418,7 +4418,7 @@ ENV REDIS_VERSION=3.0.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a58fca2beaa2c8744568cd3c4e4d98c74f0d065396d9265306fca0963dd3ffdd`
 
@@ -4432,7 +4432,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.5.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `51ed9234956b4fed72ee07885831922381bc3e4977fc56c4149f748ba4aaf5ca`
 
@@ -4446,7 +4446,7 @@ ENV REDIS_DOWNLOAD_SHA1=ad3ee178c42bfcfd310c72bbddffbbe35db9b4a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `7a53bdbdfce5ec918db50fe595ced9555caffd4943dbf1ed586c5fe796a4f6a7`
 
@@ -4500,7 +4500,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `28266b1fb4ace986601038d7cf512984ce417d32be644f8bf0bfa8fd0f6d3c95`
 
@@ -4514,7 +4514,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6b17936b7d321edef9ea986b12ec9b74fb0ba898c74cb8b6f02d5eafa13ae141`
 
@@ -4542,7 +4542,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6123cac7d77237eac836a1d07af38d0bc1c465e080d775d234ddc9f9d86626e8`
 
@@ -4556,7 +4556,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `c21150832e6111889d1314e7a45b55e2d05ec5fb2d04b2983c426994d147cde9`
 
@@ -4570,7 +4570,7 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `redis:32bit`
 
@@ -4608,7 +4608,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b2ac57b1124796daa73b511c7b4e948273c59d485a10ea33a58d571f9f8d442f`
 
@@ -4686,7 +4686,7 @@ ENV REDIS_VERSION=3.0.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a58fca2beaa2c8744568cd3c4e4d98c74f0d065396d9265306fca0963dd3ffdd`
 
@@ -4700,7 +4700,7 @@ ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.0.5.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `51ed9234956b4fed72ee07885831922381bc3e4977fc56c4149f748ba4aaf5ca`
 
@@ -4714,7 +4714,7 @@ ENV REDIS_DOWNLOAD_SHA1=ad3ee178c42bfcfd310c72bbddffbbe35db9b4a6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `7a53bdbdfce5ec918db50fe595ced9555caffd4943dbf1ed586c5fe796a4f6a7`
 
@@ -4768,7 +4768,7 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `28266b1fb4ace986601038d7cf512984ce417d32be644f8bf0bfa8fd0f6d3c95`
 
@@ -4782,7 +4782,7 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6b17936b7d321edef9ea986b12ec9b74fb0ba898c74cb8b6f02d5eafa13ae141`
 
@@ -4810,7 +4810,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6123cac7d77237eac836a1d07af38d0bc1c465e080d775d234ddc9f9d86626e8`
 
@@ -4824,7 +4824,7 @@ EXPOSE 6379/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `c21150832e6111889d1314e7a45b55e2d05ec5fb2d04b2983c426994d147cde9`
 
@@ -4838,4 +4838,4 @@ CMD ["redis-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
