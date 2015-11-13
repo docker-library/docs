@@ -2,20 +2,20 @@
 
 # Tags of `rails`
 
--	[`rails:4.2.4`](#rails424)
+-	[`rails:4.2.5`](#rails425)
 -	[`rails:4.2`](#rails42)
 -	[`rails:4`](#rails4)
 -	[`rails:latest`](#railslatest)
 -	[`rails:onbuild`](#railsonbuild)
 
-## `rails:4.2.4`
+## `rails:4.2.5`
 
 ```console
-$ docker pull library/rails@sha256:9d2e78c6fe34df179942c4450be8d772c0ff9c17dadf3fe3e6176e07c9b84052
+$ docker pull library/rails@sha256:cc1d53e6ad4ef5cc64fb9ae241d3fdda32c2e35d46a4595969b2999c4512af7b
 ```
 
--	Total Virtual Size: 825.2 MB (825152783 bytes)
--	Total v2 Content-Length: 314.5 MB (314545578 bytes)
+-	Total Virtual Size: 825.2 MB (825163707 bytes)
+-	Total v2 Content-Length: 314.6 MB (314552292 bytes)
 
 ### Layers (21)
 
@@ -346,13 +346,13 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 -	v2 Content-Length: 13.7 MB (13734135 bytes)
 -	v2 Last-Modified: Thu, 12 Nov 2015 03:37:19 GMT
 
-#### `6c23bed7c103cd0d193dab120daad4befa97c690fa78f24879d62c8fd139dc28`
+#### `b04be8e878d41af2f3d82482c22cfe1c61e0b3cb0ff8d2840a70e9ceffa65bcc`
 
 ```dockerfile
-ENV RAILS_VERSION=4.2.4
+ENV RAILS_VERSION=4.2.5
 ```
 
--	Created: Wed, 11 Nov 2015 13:27:55 GMT
+-	Created: Fri, 13 Nov 2015 01:11:12 GMT
 -	Parent Layer: `40f5ded87491a134965067c8e3450bdf6986c80f43d43afbcfc470112cce1edc`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
@@ -360,28 +360,28 @@ ENV RAILS_VERSION=4.2.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0e12902681d6b7c950cee6de79e48be6f426adf98c4c91278abd45ec883dd22a`
+#### `c4f78defd86724e0cb7a64bf1671bc72219776067e6ffbad060fd9ec2c2b01c3`
 
 ```dockerfile
 RUN gem install rails --version "$RAILS_VERSION"
 ```
 
--	Created: Wed, 11 Nov 2015 13:29:26 GMT
--	Parent Layer: `6c23bed7c103cd0d193dab120daad4befa97c690fa78f24879d62c8fd139dc28`
+-	Created: Fri, 13 Nov 2015 01:12:39 GMT
+-	Parent Layer: `b04be8e878d41af2f3d82482c22cfe1c61e0b3cb0ff8d2840a70e9ceffa65bcc`
 -	Docker Version: 1.9.0
--	Virtual Size: 53.2 MB (53231552 bytes)
--	v2 Blob: `sha256:4589837920d1fb0668308ea0feea3afc786281afa76be3d5755c3ea68844d7f9`
--	v2 Content-Length: 24.2 MB (24231592 bytes)
--	v2 Last-Modified: Thu, 12 Nov 2015 03:37:09 GMT
+-	Virtual Size: 53.2 MB (53242476 bytes)
+-	v2 Blob: `sha256:6a28a44327a65588db55219987741a3eaccdb293c45c2267ff70fdcaccfc68fc`
+-	v2 Content-Length: 24.2 MB (24238306 bytes)
+-	v2 Last-Modified: Fri, 13 Nov 2015 01:27:59 GMT
 
 ## `rails:4.2`
 
 ```console
-$ docker pull library/rails@sha256:4ec7da1935db108110f1391f10625f7ec156d9646d07bdd7d74aa5a009090bff
+$ docker pull library/rails@sha256:3cfdc5621ad881bf8884bde4d8fb090421793b350ac4086406a86e145e0e3779
 ```
 
--	Total Virtual Size: 825.2 MB (825152783 bytes)
--	Total v2 Content-Length: 314.5 MB (314545578 bytes)
+-	Total Virtual Size: 825.2 MB (825163707 bytes)
+-	Total v2 Content-Length: 314.6 MB (314552292 bytes)
 
 ### Layers (21)
 
@@ -712,13 +712,13 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 -	v2 Content-Length: 13.7 MB (13734135 bytes)
 -	v2 Last-Modified: Thu, 12 Nov 2015 03:37:19 GMT
 
-#### `6c23bed7c103cd0d193dab120daad4befa97c690fa78f24879d62c8fd139dc28`
+#### `b04be8e878d41af2f3d82482c22cfe1c61e0b3cb0ff8d2840a70e9ceffa65bcc`
 
 ```dockerfile
-ENV RAILS_VERSION=4.2.4
+ENV RAILS_VERSION=4.2.5
 ```
 
--	Created: Wed, 11 Nov 2015 13:27:55 GMT
+-	Created: Fri, 13 Nov 2015 01:11:12 GMT
 -	Parent Layer: `40f5ded87491a134965067c8e3450bdf6986c80f43d43afbcfc470112cce1edc`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
@@ -726,28 +726,28 @@ ENV RAILS_VERSION=4.2.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0e12902681d6b7c950cee6de79e48be6f426adf98c4c91278abd45ec883dd22a`
+#### `c4f78defd86724e0cb7a64bf1671bc72219776067e6ffbad060fd9ec2c2b01c3`
 
 ```dockerfile
 RUN gem install rails --version "$RAILS_VERSION"
 ```
 
--	Created: Wed, 11 Nov 2015 13:29:26 GMT
--	Parent Layer: `6c23bed7c103cd0d193dab120daad4befa97c690fa78f24879d62c8fd139dc28`
+-	Created: Fri, 13 Nov 2015 01:12:39 GMT
+-	Parent Layer: `b04be8e878d41af2f3d82482c22cfe1c61e0b3cb0ff8d2840a70e9ceffa65bcc`
 -	Docker Version: 1.9.0
--	Virtual Size: 53.2 MB (53231552 bytes)
--	v2 Blob: `sha256:4589837920d1fb0668308ea0feea3afc786281afa76be3d5755c3ea68844d7f9`
--	v2 Content-Length: 24.2 MB (24231592 bytes)
--	v2 Last-Modified: Thu, 12 Nov 2015 03:37:09 GMT
+-	Virtual Size: 53.2 MB (53242476 bytes)
+-	v2 Blob: `sha256:6a28a44327a65588db55219987741a3eaccdb293c45c2267ff70fdcaccfc68fc`
+-	v2 Content-Length: 24.2 MB (24238306 bytes)
+-	v2 Last-Modified: Fri, 13 Nov 2015 01:27:59 GMT
 
 ## `rails:4`
 
 ```console
-$ docker pull library/rails@sha256:5bf2631f3dbd4a39912e857d224e45607bd84076ebb95eb8f4e1053750a2f11c
+$ docker pull library/rails@sha256:4455746b40c95592cc5cb1c6670d555a9efcdbb25bf278ca77b7860802ab83c3
 ```
 
--	Total Virtual Size: 825.2 MB (825152783 bytes)
--	Total v2 Content-Length: 314.5 MB (314545578 bytes)
+-	Total Virtual Size: 825.2 MB (825163707 bytes)
+-	Total v2 Content-Length: 314.6 MB (314552292 bytes)
 
 ### Layers (21)
 
@@ -1078,13 +1078,13 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 -	v2 Content-Length: 13.7 MB (13734135 bytes)
 -	v2 Last-Modified: Thu, 12 Nov 2015 03:37:19 GMT
 
-#### `6c23bed7c103cd0d193dab120daad4befa97c690fa78f24879d62c8fd139dc28`
+#### `b04be8e878d41af2f3d82482c22cfe1c61e0b3cb0ff8d2840a70e9ceffa65bcc`
 
 ```dockerfile
-ENV RAILS_VERSION=4.2.4
+ENV RAILS_VERSION=4.2.5
 ```
 
--	Created: Wed, 11 Nov 2015 13:27:55 GMT
+-	Created: Fri, 13 Nov 2015 01:11:12 GMT
 -	Parent Layer: `40f5ded87491a134965067c8e3450bdf6986c80f43d43afbcfc470112cce1edc`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
@@ -1092,28 +1092,28 @@ ENV RAILS_VERSION=4.2.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0e12902681d6b7c950cee6de79e48be6f426adf98c4c91278abd45ec883dd22a`
+#### `c4f78defd86724e0cb7a64bf1671bc72219776067e6ffbad060fd9ec2c2b01c3`
 
 ```dockerfile
 RUN gem install rails --version "$RAILS_VERSION"
 ```
 
--	Created: Wed, 11 Nov 2015 13:29:26 GMT
--	Parent Layer: `6c23bed7c103cd0d193dab120daad4befa97c690fa78f24879d62c8fd139dc28`
+-	Created: Fri, 13 Nov 2015 01:12:39 GMT
+-	Parent Layer: `b04be8e878d41af2f3d82482c22cfe1c61e0b3cb0ff8d2840a70e9ceffa65bcc`
 -	Docker Version: 1.9.0
--	Virtual Size: 53.2 MB (53231552 bytes)
--	v2 Blob: `sha256:4589837920d1fb0668308ea0feea3afc786281afa76be3d5755c3ea68844d7f9`
--	v2 Content-Length: 24.2 MB (24231592 bytes)
--	v2 Last-Modified: Thu, 12 Nov 2015 03:37:09 GMT
+-	Virtual Size: 53.2 MB (53242476 bytes)
+-	v2 Blob: `sha256:6a28a44327a65588db55219987741a3eaccdb293c45c2267ff70fdcaccfc68fc`
+-	v2 Content-Length: 24.2 MB (24238306 bytes)
+-	v2 Last-Modified: Fri, 13 Nov 2015 01:27:59 GMT
 
 ## `rails:latest`
 
 ```console
-$ docker pull library/rails@sha256:e5d7a9edb9e946d5ad76b3e2575ceecd4d4a3c4f73a68e31695d4d14a8f5390b
+$ docker pull library/rails@sha256:fcf761963b33842867f6f1ee1d725efa05d137ded6c35afe96f310841d08713b
 ```
 
--	Total Virtual Size: 825.2 MB (825152783 bytes)
--	Total v2 Content-Length: 314.5 MB (314545578 bytes)
+-	Total Virtual Size: 825.2 MB (825163707 bytes)
+-	Total v2 Content-Length: 314.6 MB (314552292 bytes)
 
 ### Layers (21)
 
@@ -1444,13 +1444,13 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 -	v2 Content-Length: 13.7 MB (13734135 bytes)
 -	v2 Last-Modified: Thu, 12 Nov 2015 03:37:19 GMT
 
-#### `6c23bed7c103cd0d193dab120daad4befa97c690fa78f24879d62c8fd139dc28`
+#### `b04be8e878d41af2f3d82482c22cfe1c61e0b3cb0ff8d2840a70e9ceffa65bcc`
 
 ```dockerfile
-ENV RAILS_VERSION=4.2.4
+ENV RAILS_VERSION=4.2.5
 ```
 
--	Created: Wed, 11 Nov 2015 13:27:55 GMT
+-	Created: Fri, 13 Nov 2015 01:11:12 GMT
 -	Parent Layer: `40f5ded87491a134965067c8e3450bdf6986c80f43d43afbcfc470112cce1edc`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
@@ -1458,19 +1458,19 @@ ENV RAILS_VERSION=4.2.4
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
-#### `0e12902681d6b7c950cee6de79e48be6f426adf98c4c91278abd45ec883dd22a`
+#### `c4f78defd86724e0cb7a64bf1671bc72219776067e6ffbad060fd9ec2c2b01c3`
 
 ```dockerfile
 RUN gem install rails --version "$RAILS_VERSION"
 ```
 
--	Created: Wed, 11 Nov 2015 13:29:26 GMT
--	Parent Layer: `6c23bed7c103cd0d193dab120daad4befa97c690fa78f24879d62c8fd139dc28`
+-	Created: Fri, 13 Nov 2015 01:12:39 GMT
+-	Parent Layer: `b04be8e878d41af2f3d82482c22cfe1c61e0b3cb0ff8d2840a70e9ceffa65bcc`
 -	Docker Version: 1.9.0
--	Virtual Size: 53.2 MB (53231552 bytes)
--	v2 Blob: `sha256:4589837920d1fb0668308ea0feea3afc786281afa76be3d5755c3ea68844d7f9`
--	v2 Content-Length: 24.2 MB (24231592 bytes)
--	v2 Last-Modified: Thu, 12 Nov 2015 03:37:09 GMT
+-	Virtual Size: 53.2 MB (53242476 bytes)
+-	v2 Blob: `sha256:6a28a44327a65588db55219987741a3eaccdb293c45c2267ff70fdcaccfc68fc`
+-	v2 Content-Length: 24.2 MB (24238306 bytes)
+-	v2 Last-Modified: Fri, 13 Nov 2015 01:27:59 GMT
 
 ## `rails:onbuild`
 
