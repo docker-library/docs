@@ -8,7 +8,7 @@
 ## `crux:latest`
 
 ```console
-$ docker pull library/crux@sha256:c799bb524e4841949192c37024464e4d79291d9448b9635fcbf8b43b15de2aa8
+$ docker pull library/crux@sha256:f8f6605f25e99d3c1cebfda6e55f3c2c6403231059c6ac180172be7cd07b256e
 ```
 
 -	Total Virtual Size: 341.7 MB (341729815 bytes)
@@ -27,7 +27,7 @@ MAINTAINER James Mills, prologic at shortcircuit dot net dot au
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `638bccd2da44cbac9768f1f955adf7e7df4a717b4f902951e9076ce9fcd3f3c3`
 
@@ -55,7 +55,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `crux:3.1`
 
@@ -79,7 +79,7 @@ MAINTAINER James Mills, prologic at shortcircuit dot net dot au
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `638bccd2da44cbac9768f1f955adf7e7df4a717b4f902951e9076ce9fcd3f3c3`
 
@@ -107,4 +107,4 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT

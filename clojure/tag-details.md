@@ -10,7 +10,7 @@
 ## `clojure:latest`
 
 ```console
-$ docker pull library/clojure@sha256:3c5c062fd1ae9af1e6ac188f8c2ec20edd20207351446e7aeaa99c749b0e81bb
+$ docker pull library/clojure@sha256:622f57c641bbb9ab48dd698fa7e7e3ffcf5387371a328f015d6d530b28eff1d5
 ```
 
 -	Total Virtual Size: 657.7 MB (657732647 bytes)
@@ -315,7 +315,7 @@ RUN lein
 ## `clojure:onbuild`
 
 ```console
-$ docker pull library/clojure@sha256:f5c2b60c3185a7061d7509f6608c099ef5b7172c10c75cdae5382bc99061c0ac
+$ docker pull library/clojure@sha256:04fb45231265cfffc2a5c58225519de3ba96aed937d0fa1e282bb2de37ae9edf
 ```
 
 -	Total Virtual Size: 657.7 MB (657732647 bytes)

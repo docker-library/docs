@@ -8,7 +8,7 @@
 ## `cirros:latest`
 
 ```console
-$ docker pull library/cirros@sha256:034b16d319219eed6b505d6d0fe5ebdd42858da21e2691c5088d443615f5d6b3
+$ docker pull library/cirros@sha256:60906c7a6387f2a2205ad0dccc5ac20ab277f63919dfb1cb3b9998fd99fe5112
 ```
 
 -	Total Virtual Size: 7.7 MB (7698435 bytes)

@@ -11,7 +11,7 @@
 ## `glassfish:4.0-jdk7`
 
 ```console
-$ docker pull library/glassfish@sha256:4f2a35399c368589a15caaf5db72278814d2b2f1c1c635e1e850e3684e5a11c4
+$ docker pull library/glassfish@sha256:a9059f1cca524f70e9f682b9c2cfcb27fac8d0e3f74eaca4c3825e4f5b49b4e0
 ```
 
 -	Total Virtual Size: 713.9 MB (713856082 bytes)
@@ -535,7 +535,7 @@ CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ## `glassfish:4.1-jdk8`
 
 ```console
-$ docker pull library/glassfish@sha256:3bce1db6b6bcbac1f121a9b5a9bd2972119a2eed41ab4ba30ef7b8577947e41c
+$ docker pull library/glassfish@sha256:b6722642a08bfe2be60a01656b33efa1b82fe249d809553a35ef08292122cfa4
 ```
 
 -	Total Virtual Size: 774.3 MB (774294570 bytes)

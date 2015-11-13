@@ -5,7 +5,7 @@
 -	[`drupal:7.41`](#drupal741)
 -	[`drupal:7`](#drupal7)
 -	[`drupal:latest`](#drupallatest)
--	[`drupal:8.0.0-rc3`](#drupal800-rc3)
+-	[`drupal:8.0.0-rc4`](#drupal800-rc4)
 -	[`drupal:8.0.0`](#drupal800)
 -	[`drupal:8.0`](#drupal80)
 -	[`drupal:8`](#drupal8)
@@ -46,7 +46,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -88,7 +88,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -186,7 +186,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -200,7 +200,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -214,7 +214,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -245,7 +245,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -335,7 +335,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -349,7 +349,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -363,7 +363,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `0971ba4ca13c6695dca189bd9bea64ee7ef5b1474f95e76c3cad5d85b6833a65`
 
@@ -408,7 +408,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `642b245ce9ed1ccbc6eaa8e7ea927a89ebbeb5cc0ef7eb9550a928d8e7d85f25`
 
@@ -422,7 +422,7 @@ ENV DRUPAL_VERSION=7.41
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d18d6f7531be13f8605f1e34c37f71d95b08cf247165daa5eece6b2f416eb9d6`
 
@@ -436,7 +436,7 @@ ENV DRUPAL_MD5=7636e75e8be213455b4ac7911ce5801f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `da4eec3fe6d881e490f9946f6b693979107fafd3d92743f432adb63fd5b6cbfa`
 
@@ -492,7 +492,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -534,7 +534,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -632,7 +632,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -646,7 +646,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -660,7 +660,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -691,7 +691,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -781,7 +781,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -795,7 +795,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -809,7 +809,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `0971ba4ca13c6695dca189bd9bea64ee7ef5b1474f95e76c3cad5d85b6833a65`
 
@@ -854,7 +854,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `642b245ce9ed1ccbc6eaa8e7ea927a89ebbeb5cc0ef7eb9550a928d8e7d85f25`
 
@@ -868,7 +868,7 @@ ENV DRUPAL_VERSION=7.41
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d18d6f7531be13f8605f1e34c37f71d95b08cf247165daa5eece6b2f416eb9d6`
 
@@ -882,7 +882,7 @@ ENV DRUPAL_MD5=7636e75e8be213455b4ac7911ce5801f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `da4eec3fe6d881e490f9946f6b693979107fafd3d92743f432adb63fd5b6cbfa`
 
@@ -938,7 +938,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -980,7 +980,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -1078,7 +1078,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -1092,7 +1092,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -1106,7 +1106,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -1137,7 +1137,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -1227,7 +1227,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -1241,7 +1241,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -1255,7 +1255,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `0971ba4ca13c6695dca189bd9bea64ee7ef5b1474f95e76c3cad5d85b6833a65`
 
@@ -1300,7 +1300,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `642b245ce9ed1ccbc6eaa8e7ea927a89ebbeb5cc0ef7eb9550a928d8e7d85f25`
 
@@ -1314,7 +1314,7 @@ ENV DRUPAL_VERSION=7.41
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d18d6f7531be13f8605f1e34c37f71d95b08cf247165daa5eece6b2f416eb9d6`
 
@@ -1328,7 +1328,7 @@ ENV DRUPAL_MD5=7636e75e8be213455b4ac7911ce5801f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `da4eec3fe6d881e490f9946f6b693979107fafd3d92743f432adb63fd5b6cbfa`
 
@@ -1348,14 +1348,14 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	v2 Content-Length: 3.3 MB (3254963 bytes)
 -	v2 Last-Modified: Wed, 11 Nov 2015 22:33:51 GMT
 
-## `drupal:8.0.0-rc3`
+## `drupal:8.0.0-rc4`
 
 ```console
-$ docker pull library/drupal@sha256:4818392c5c9b98df67a3ea5f68a45cd0f430335df0f199dabfe90fc4f35b8eac
+$ docker pull library/drupal@sha256:21d91eed76c9b41dbad1ced97f61795731c93f449ff37432b250ee211b719ac1
 ```
 
--	Total Virtual Size: 570.3 MB (570298288 bytes)
--	Total v2 Content-Length: 187.5 MB (187477484 bytes)
+-	Total Virtual Size: 570.8 MB (570802757 bytes)
+-	Total v2 Content-Length: 187.6 MB (187619138 bytes)
 
 ### Layers (29)
 
@@ -1384,7 +1384,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -1426,7 +1426,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -1524,7 +1524,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -1538,7 +1538,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -1552,7 +1552,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -1583,7 +1583,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -1673,7 +1673,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -1687,7 +1687,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -1701,7 +1701,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `0971ba4ca13c6695dca189bd9bea64ee7ef5b1474f95e76c3cad5d85b6833a65`
 
@@ -1767,37 +1767,37 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `8b2bd3a66f4d4d3b8440473ef4753aab3ca3511e5e409ece13f5d8e2d24c18a5`
+#### `c57d82112ecd713a00eda800676dc3d1e442ae6b4a7a23d794728625de59b2e5`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-rc3
+ENV DRUPAL_VERSION=8.0.0-rc4
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:10 GMT
+-	Created: Fri, 13 Nov 2015 21:13:58 GMT
 -	Parent Layer: `b5943933bf8d8231c1ef46423ba3a479f11fcb8c77ec51eac6b74f9a715f462d`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `2d04be9decf645674dd58f9542c10eb1c0fa4c4b656f773843c8872743469ab0`
+#### `f64dabffe79071d17a4e612340693bc7a07cca622e816fc54f4c087567b734c5`
 
 ```dockerfile
-ENV DRUPAL_MD5=dedd68b8f39002d64fe64a0c5085e573
+ENV DRUPAL_MD5=33a4738989e4b571176e47d26443cb26
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:11 GMT
--	Parent Layer: `8b2bd3a66f4d4d3b8440473ef4753aab3ca3511e5e409ece13f5d8e2d24c18a5`
+-	Created: Fri, 13 Nov 2015 21:13:59 GMT
+-	Parent Layer: `c57d82112ecd713a00eda800676dc3d1e442ae6b4a7a23d794728625de59b2e5`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `72ea4c388d1d084dbb316158a1a6b107353f66342bef1005be4533df5e014f8b`
+#### `6a8587f9ab3f3ada327de4d0b69fd919190fe9b4d09ffbc55ba5b4297773f057`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -1807,22 +1807,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:14 GMT
--	Parent Layer: `2d04be9decf645674dd58f9542c10eb1c0fa4c4b656f773843c8872743469ab0`
+-	Created: Fri, 13 Nov 2015 21:14:02 GMT
+-	Parent Layer: `f64dabffe79071d17a4e612340693bc7a07cca622e816fc54f4c087567b734c5`
 -	Docker Version: 1.9.0
--	Virtual Size: 50.2 MB (50199321 bytes)
--	v2 Blob: `sha256:f78eecd19a31a3ac11995ef927159e31abd498af184630fbcc9ff81791b35c7c`
--	v2 Content-Length: 11.5 MB (11518230 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 22:38:38 GMT
+-	Virtual Size: 50.7 MB (50703790 bytes)
+-	v2 Blob: `sha256:358de34d0d177e0cbe52039e060dad47438e8638a596368558ac1c04935f8814`
+-	v2 Content-Length: 11.7 MB (11659884 bytes)
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:46:48 GMT
 
 ## `drupal:8.0.0`
 
 ```console
-$ docker pull library/drupal@sha256:c46a87d0eb8bd27e21ede77e534a9737a784be38dcdefd5688ce79cde9dc8c82
+$ docker pull library/drupal@sha256:86b185c5656e256c295de6249e0396ed2478d8a5dce6df045b8e72319614749e
 ```
 
--	Total Virtual Size: 570.3 MB (570298288 bytes)
--	Total v2 Content-Length: 187.5 MB (187477484 bytes)
+-	Total Virtual Size: 570.8 MB (570802757 bytes)
+-	Total v2 Content-Length: 187.6 MB (187619138 bytes)
 
 ### Layers (29)
 
@@ -1851,7 +1851,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -1893,7 +1893,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -1991,7 +1991,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -2005,7 +2005,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -2019,7 +2019,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -2050,7 +2050,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -2140,7 +2140,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -2154,7 +2154,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -2168,7 +2168,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `0971ba4ca13c6695dca189bd9bea64ee7ef5b1474f95e76c3cad5d85b6833a65`
 
@@ -2234,37 +2234,37 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `8b2bd3a66f4d4d3b8440473ef4753aab3ca3511e5e409ece13f5d8e2d24c18a5`
+#### `c57d82112ecd713a00eda800676dc3d1e442ae6b4a7a23d794728625de59b2e5`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-rc3
+ENV DRUPAL_VERSION=8.0.0-rc4
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:10 GMT
+-	Created: Fri, 13 Nov 2015 21:13:58 GMT
 -	Parent Layer: `b5943933bf8d8231c1ef46423ba3a479f11fcb8c77ec51eac6b74f9a715f462d`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `2d04be9decf645674dd58f9542c10eb1c0fa4c4b656f773843c8872743469ab0`
+#### `f64dabffe79071d17a4e612340693bc7a07cca622e816fc54f4c087567b734c5`
 
 ```dockerfile
-ENV DRUPAL_MD5=dedd68b8f39002d64fe64a0c5085e573
+ENV DRUPAL_MD5=33a4738989e4b571176e47d26443cb26
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:11 GMT
--	Parent Layer: `8b2bd3a66f4d4d3b8440473ef4753aab3ca3511e5e409ece13f5d8e2d24c18a5`
+-	Created: Fri, 13 Nov 2015 21:13:59 GMT
+-	Parent Layer: `c57d82112ecd713a00eda800676dc3d1e442ae6b4a7a23d794728625de59b2e5`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `72ea4c388d1d084dbb316158a1a6b107353f66342bef1005be4533df5e014f8b`
+#### `6a8587f9ab3f3ada327de4d0b69fd919190fe9b4d09ffbc55ba5b4297773f057`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -2274,22 +2274,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:14 GMT
--	Parent Layer: `2d04be9decf645674dd58f9542c10eb1c0fa4c4b656f773843c8872743469ab0`
+-	Created: Fri, 13 Nov 2015 21:14:02 GMT
+-	Parent Layer: `f64dabffe79071d17a4e612340693bc7a07cca622e816fc54f4c087567b734c5`
 -	Docker Version: 1.9.0
--	Virtual Size: 50.2 MB (50199321 bytes)
--	v2 Blob: `sha256:f78eecd19a31a3ac11995ef927159e31abd498af184630fbcc9ff81791b35c7c`
--	v2 Content-Length: 11.5 MB (11518230 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 22:38:38 GMT
+-	Virtual Size: 50.7 MB (50703790 bytes)
+-	v2 Blob: `sha256:358de34d0d177e0cbe52039e060dad47438e8638a596368558ac1c04935f8814`
+-	v2 Content-Length: 11.7 MB (11659884 bytes)
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:46:48 GMT
 
 ## `drupal:8.0`
 
 ```console
-$ docker pull library/drupal@sha256:624a4285844cdc102909b6bd6fc5cb52d19b19e8ed07c8250e4448e267b907a6
+$ docker pull library/drupal@sha256:2be790ee7b9f5ddbfb818094eb731830f3a56a9adadeeeae55c2713e17f3eb62
 ```
 
--	Total Virtual Size: 570.3 MB (570298288 bytes)
--	Total v2 Content-Length: 187.5 MB (187477484 bytes)
+-	Total Virtual Size: 570.8 MB (570802757 bytes)
+-	Total v2 Content-Length: 187.6 MB (187619138 bytes)
 
 ### Layers (29)
 
@@ -2318,7 +2318,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -2360,7 +2360,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -2458,7 +2458,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -2472,7 +2472,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -2486,7 +2486,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -2517,7 +2517,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -2607,7 +2607,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -2621,7 +2621,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -2635,7 +2635,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `0971ba4ca13c6695dca189bd9bea64ee7ef5b1474f95e76c3cad5d85b6833a65`
 
@@ -2701,37 +2701,37 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `8b2bd3a66f4d4d3b8440473ef4753aab3ca3511e5e409ece13f5d8e2d24c18a5`
+#### `c57d82112ecd713a00eda800676dc3d1e442ae6b4a7a23d794728625de59b2e5`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-rc3
+ENV DRUPAL_VERSION=8.0.0-rc4
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:10 GMT
+-	Created: Fri, 13 Nov 2015 21:13:58 GMT
 -	Parent Layer: `b5943933bf8d8231c1ef46423ba3a479f11fcb8c77ec51eac6b74f9a715f462d`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `2d04be9decf645674dd58f9542c10eb1c0fa4c4b656f773843c8872743469ab0`
+#### `f64dabffe79071d17a4e612340693bc7a07cca622e816fc54f4c087567b734c5`
 
 ```dockerfile
-ENV DRUPAL_MD5=dedd68b8f39002d64fe64a0c5085e573
+ENV DRUPAL_MD5=33a4738989e4b571176e47d26443cb26
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:11 GMT
--	Parent Layer: `8b2bd3a66f4d4d3b8440473ef4753aab3ca3511e5e409ece13f5d8e2d24c18a5`
+-	Created: Fri, 13 Nov 2015 21:13:59 GMT
+-	Parent Layer: `c57d82112ecd713a00eda800676dc3d1e442ae6b4a7a23d794728625de59b2e5`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `72ea4c388d1d084dbb316158a1a6b107353f66342bef1005be4533df5e014f8b`
+#### `6a8587f9ab3f3ada327de4d0b69fd919190fe9b4d09ffbc55ba5b4297773f057`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -2741,22 +2741,22 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:14 GMT
--	Parent Layer: `2d04be9decf645674dd58f9542c10eb1c0fa4c4b656f773843c8872743469ab0`
+-	Created: Fri, 13 Nov 2015 21:14:02 GMT
+-	Parent Layer: `f64dabffe79071d17a4e612340693bc7a07cca622e816fc54f4c087567b734c5`
 -	Docker Version: 1.9.0
--	Virtual Size: 50.2 MB (50199321 bytes)
--	v2 Blob: `sha256:f78eecd19a31a3ac11995ef927159e31abd498af184630fbcc9ff81791b35c7c`
--	v2 Content-Length: 11.5 MB (11518230 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 22:38:38 GMT
+-	Virtual Size: 50.7 MB (50703790 bytes)
+-	v2 Blob: `sha256:358de34d0d177e0cbe52039e060dad47438e8638a596368558ac1c04935f8814`
+-	v2 Content-Length: 11.7 MB (11659884 bytes)
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:46:48 GMT
 
 ## `drupal:8`
 
 ```console
-$ docker pull library/drupal@sha256:17b37c7a7bd141c15c431466936ffe93ca43a1b36ab3302ef09780b158a09d9d
+$ docker pull library/drupal@sha256:333201d73d48f9ade156a0c59ca08ed85f9fb64fbc3bc05fc0224df655c4a948
 ```
 
--	Total Virtual Size: 570.3 MB (570298288 bytes)
--	Total v2 Content-Length: 187.5 MB (187477484 bytes)
+-	Total Virtual Size: 570.8 MB (570802757 bytes)
+-	Total v2 Content-Length: 187.6 MB (187619138 bytes)
 
 ### Layers (29)
 
@@ -2785,7 +2785,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -2827,7 +2827,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -2925,7 +2925,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -2939,7 +2939,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -2953,7 +2953,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -2984,7 +2984,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -3074,7 +3074,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -3088,7 +3088,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -3102,7 +3102,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `0971ba4ca13c6695dca189bd9bea64ee7ef5b1474f95e76c3cad5d85b6833a65`
 
@@ -3168,37 +3168,37 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `8b2bd3a66f4d4d3b8440473ef4753aab3ca3511e5e409ece13f5d8e2d24c18a5`
+#### `c57d82112ecd713a00eda800676dc3d1e442ae6b4a7a23d794728625de59b2e5`
 
 ```dockerfile
-ENV DRUPAL_VERSION=8.0.0-rc3
+ENV DRUPAL_VERSION=8.0.0-rc4
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:10 GMT
+-	Created: Fri, 13 Nov 2015 21:13:58 GMT
 -	Parent Layer: `b5943933bf8d8231c1ef46423ba3a479f11fcb8c77ec51eac6b74f9a715f462d`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `2d04be9decf645674dd58f9542c10eb1c0fa4c4b656f773843c8872743469ab0`
+#### `f64dabffe79071d17a4e612340693bc7a07cca622e816fc54f4c087567b734c5`
 
 ```dockerfile
-ENV DRUPAL_MD5=dedd68b8f39002d64fe64a0c5085e573
+ENV DRUPAL_MD5=33a4738989e4b571176e47d26443cb26
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:11 GMT
--	Parent Layer: `8b2bd3a66f4d4d3b8440473ef4753aab3ca3511e5e409ece13f5d8e2d24c18a5`
+-	Created: Fri, 13 Nov 2015 21:13:59 GMT
+-	Parent Layer: `c57d82112ecd713a00eda800676dc3d1e442ae6b4a7a23d794728625de59b2e5`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `72ea4c388d1d084dbb316158a1a6b107353f66342bef1005be4533df5e014f8b`
+#### `6a8587f9ab3f3ada327de4d0b69fd919190fe9b4d09ffbc55ba5b4297773f057`
 
 ```dockerfile
 RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
@@ -3208,10 +3208,10 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 	&& chown -R www-data:www-data sites
 ```
 
--	Created: Wed, 11 Nov 2015 02:12:14 GMT
--	Parent Layer: `2d04be9decf645674dd58f9542c10eb1c0fa4c4b656f773843c8872743469ab0`
+-	Created: Fri, 13 Nov 2015 21:14:02 GMT
+-	Parent Layer: `f64dabffe79071d17a4e612340693bc7a07cca622e816fc54f4c087567b734c5`
 -	Docker Version: 1.9.0
--	Virtual Size: 50.2 MB (50199321 bytes)
--	v2 Blob: `sha256:f78eecd19a31a3ac11995ef927159e31abd498af184630fbcc9ff81791b35c7c`
--	v2 Content-Length: 11.5 MB (11518230 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 22:38:38 GMT
+-	Virtual Size: 50.7 MB (50703790 bytes)
+-	v2 Blob: `sha256:358de34d0d177e0cbe52039e060dad47438e8638a596368558ac1c04935f8814`
+-	v2 Content-Length: 11.7 MB (11659884 bytes)
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:46:48 GMT
