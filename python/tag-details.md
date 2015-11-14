@@ -54,7 +54,7 @@
 ## `python:2.7.10`
 
 ```console
-$ docker pull library/python@sha256:2e1ead65c221869d15df09be06bbf9238cc2b78fcdfa53f2e53d9ac26fd5f4a8
+$ docker pull library/python@sha256:c3de667c0e73da223a2b13f17f427c90b51edabab61db5efc16d0b5720d076ed
 ```
 
 -	Total Virtual Size: 675.2 MB (675186607 bytes)
@@ -62,7 +62,7 @@ $ docker pull library/python@sha256:2e1ead65c221869d15df09be06bbf9238cc2b78fcdfa
 
 ### Layers (13)
 
-#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+#### `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 
 ```dockerfile
 ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
@@ -75,21 +75,21 @@ ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 -	v2 Content-Length: 51.4 MB (51353062 bytes)
 -	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+#### `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
 -	Created: Tue, 10 Nov 2015 00:31:11 GMT
--	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Parent Layer: `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
+#### `371b8d572221402165770353f0489ff1a2b9ad7027d512de5a8d19173a50e3ab`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -100,211 +100,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ```
 
 -	Created: Tue, 10 Nov 2015 00:40:02 GMT
--	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+-	Parent Layer: `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 -	Docker Version: 1.9.0
 -	Virtual Size: 44.3 MB (44292472 bytes)
 -	v2 Blob: `sha256:4f8b5616c86dbd6c294b3a7d8bfccf105121f38c257dbd53a3b7804472de2f54`
 -	v2 Content-Length: 18.5 MB (18528450 bytes)
 -	v2 Last-Modified: Tue, 10 Nov 2015 18:07:36 GMT
-
-#### `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:41:34 GMT
--	Parent Layer: `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
--	Docker Version: 1.9.0
--	Virtual Size: 122.2 MB (122248845 bytes)
--	v2 Blob: `sha256:ba17e4708ba51b052979d916bc50873c251df3fe53ee9f022768e323a79fb7c1`
--	v2 Content-Length: 42.3 MB (42324582 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:08:51 GMT
-
-#### `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		autoconf \
-		automake \
-		bzip2 \
-		file \
-		g++ \
-		gcc \
-		imagemagick \
-		libbz2-dev \
-		libc6-dev \
-		libcurl4-openssl-dev \
-		libevent-dev \
-		libffi-dev \
-		libgeoip-dev \
-		libglib2.0-dev \
-		libjpeg-dev \
-		liblzma-dev \
-		libmagickcore-dev \
-		libmagickwand-dev \
-		libmysqlclient-dev \
-		libncurses-dev \
-		libpng-dev \
-		libpq-dev \
-		libreadline-dev \
-		libsqlite3-dev \
-		libssl-dev \
-		libtool \
-		libwebp-dev \
-		libxml2-dev \
-		libxslt-dev \
-		libyaml-dev \
-		make \
-		patch \
-		xz-utils \
-		zlib1g-dev \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:43:26 GMT
--	Parent Layer: `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
--	Docker Version: 1.9.0
--	Virtual Size: 314.6 MB (314625298 bytes)
--	v2 Blob: `sha256:9d60932092c3d0454cb2bf5d7c22c5e447534a1ecd656437493ce3d78e57483b`
--	v2 Content-Length: 128.6 MB (128553511 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:10:06 GMT
-
-#### `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Wed, 11 Nov 2015 10:06:46 GMT
--	Parent Layer: `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
--	Docker Version: 1.9.0
--	Virtual Size: 977.9 KB (977896 bytes)
--	v2 Blob: `sha256:557efb3765d6f02b67ae58b05989bd957e45df314ba9492c7ef4e6599588b141`
--	v2 Content-Length: 220.5 KB (220520 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:41:13 GMT
-
-#### `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Wed, 11 Nov 2015 10:06:47 GMT
--	Parent Layer: `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `25d6f9a46cb2795150aabb53e7fd8a3f1e6b1a251d4d5e9c7fa3f6f6a5fdc4c8`
-
-```dockerfile
-RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-```
-
--	Created: Wed, 11 Nov 2015 10:12:08 GMT
--	Parent Layer: `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
--	Docker Version: 1.9.0
--	Virtual Size: 28.1 KB (28050 bytes)
--	v2 Blob: `sha256:41e0317cb61ba1a99917bcc9c3daa93489acb1ddc66fa8420235d4594edf459d`
--	v2 Content-Length: 13.4 KB (13444 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:41:07 GMT
-
-#### `13b09d8e7429dea18582fad50dc6ab54b0495f9dbc2e0a26351cd620c8c3ba2d`
-
-```dockerfile
-ENV PYTHON_VERSION=2.7.10
-```
-
--	Created: Wed, 11 Nov 2015 10:12:08 GMT
--	Parent Layer: `25d6f9a46cb2795150aabb53e7fd8a3f1e6b1a251d4d5e9c7fa3f6f6a5fdc4c8`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `e27c2341abc40ce4d18453d1ea4688a2b019bf5f22d13bb98061802c1eaa1af3`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
-```
-
--	Created: Wed, 11 Nov 2015 10:12:09 GMT
--	Parent Layer: `13b09d8e7429dea18582fad50dc6ab54b0495f9dbc2e0a26351cd620c8c3ba2d`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `e667d6ef2385ecd5a39996a5c1aa8e82483735b1c557fb6559aa1f8ce1b64c7b`
-
-```dockerfile
-RUN set -x \
-	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
-	&& gpg --verify python.tar.xz.asc \
-	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
-	&& rm python.tar.xz* \
-	&& cd /usr/src/python \
-	&& ./configure --enable-shared --enable-unicode=ucs4 \
-	&& make -j$(nproc) \
-	&& make install \
-	&& ldconfig \
-	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python2 \
-	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
-	&& find /usr/local \
-		\( -type d -a -name test -o -name tests \) \
-		-o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
-		-exec rm -rf '{}' + \
-	&& rm -rf /usr/src/python
-```
-
--	Created: Wed, 11 Nov 2015 10:14:24 GMT
--	Parent Layer: `e27c2341abc40ce4d18453d1ea4688a2b019bf5f22d13bb98061802c1eaa1af3`
--	Docker Version: 1.9.0
--	Virtual Size: 62.1 MB (62051847 bytes)
--	v2 Blob: `sha256:58076f2a9b74f63cfd9fc77e12c5311eafef9053d947cb09f0349ee44825d466`
--	v2 Content-Length: 19.6 MB (19636114 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:40:57 GMT
-
-#### `37241fff5cc3d7625847abd145c5296211d81b78789474c0879e9d7aae312a00`
-
-```dockerfile
-RUN pip install --no-cache-dir virtualenv
-```
-
--	Created: Wed, 11 Nov 2015 10:14:28 GMT
--	Parent Layer: `e667d6ef2385ecd5a39996a5c1aa8e82483735b1c557fb6559aa1f8ce1b64c7b`
--	Docker Version: 1.9.0
--	Virtual Size: 5.9 MB (5850007 bytes)
--	v2 Blob: `sha256:438de9e1f02de668f69ddefa833a6ca664989197215afda3c3f11a22dae44f5e`
--	v2 Content-Length: 3.1 MB (3054941 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:40:45 GMT
-
-#### `aff5fe6ff08266d1b03d0d2391003ec7abc16d807915d94a19341c4ece04b6bf`
-
-```dockerfile
-CMD ["python2"]
-```
-
--	Created: Wed, 11 Nov 2015 10:14:29 GMT
--	Parent Layer: `37241fff5cc3d7625847abd145c5296211d81b78789474c0879e9d7aae312a00`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `python:2.7`
 
@@ -342,7 +143,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -457,7 +258,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `25d6f9a46cb2795150aabb53e7fd8a3f1e6b1a251d4d5e9c7fa3f6f6a5fdc4c8`
 
@@ -485,7 +286,7 @@ ENV PYTHON_VERSION=2.7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e27c2341abc40ce4d18453d1ea4688a2b019bf5f22d13bb98061802c1eaa1af3`
 
@@ -499,7 +300,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e667d6ef2385ecd5a39996a5c1aa8e82483735b1c557fb6559aa1f8ce1b64c7b`
 
@@ -559,7 +360,7 @@ CMD ["python2"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:2`
 
@@ -597,7 +398,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -712,7 +513,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `25d6f9a46cb2795150aabb53e7fd8a3f1e6b1a251d4d5e9c7fa3f6f6a5fdc4c8`
 
@@ -740,7 +541,7 @@ ENV PYTHON_VERSION=2.7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e27c2341abc40ce4d18453d1ea4688a2b019bf5f22d13bb98061802c1eaa1af3`
 
@@ -754,7 +555,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e667d6ef2385ecd5a39996a5c1aa8e82483735b1c557fb6559aa1f8ce1b64c7b`
 
@@ -814,12 +615,12 @@ CMD ["python2"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:2.7.10-onbuild`
 
 ```console
-$ docker pull library/python@sha256:22f29296ad4791ec0679eb7958c0b01e8bfd6eabf3962567c38a809a12af2c30
+$ docker pull library/python@sha256:a8fbd427c41a7a3f21f6e07f757b028b78b6305dd065e44a7e2bbe73ef0ddfb5
 ```
 
 -	Total Virtual Size: 675.2 MB (675186607 bytes)
@@ -827,7 +628,7 @@ $ docker pull library/python@sha256:22f29296ad4791ec0679eb7958c0b01e8bfd6eabf396
 
 ### Layers (18)
 
-#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+#### `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 
 ```dockerfile
 ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
@@ -840,21 +641,21 @@ ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 -	v2 Content-Length: 51.4 MB (51353062 bytes)
 -	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+#### `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
 -	Created: Tue, 10 Nov 2015 00:31:11 GMT
--	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Parent Layer: `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
+#### `371b8d572221402165770353f0489ff1a2b9ad7027d512de5a8d19173a50e3ab`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -865,281 +666,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ```
 
 -	Created: Tue, 10 Nov 2015 00:40:02 GMT
--	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+-	Parent Layer: `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 -	Docker Version: 1.9.0
 -	Virtual Size: 44.3 MB (44292472 bytes)
 -	v2 Blob: `sha256:4f8b5616c86dbd6c294b3a7d8bfccf105121f38c257dbd53a3b7804472de2f54`
 -	v2 Content-Length: 18.5 MB (18528450 bytes)
 -	v2 Last-Modified: Tue, 10 Nov 2015 18:07:36 GMT
-
-#### `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:41:34 GMT
--	Parent Layer: `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
--	Docker Version: 1.9.0
--	Virtual Size: 122.2 MB (122248845 bytes)
--	v2 Blob: `sha256:ba17e4708ba51b052979d916bc50873c251df3fe53ee9f022768e323a79fb7c1`
--	v2 Content-Length: 42.3 MB (42324582 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:08:51 GMT
-
-#### `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		autoconf \
-		automake \
-		bzip2 \
-		file \
-		g++ \
-		gcc \
-		imagemagick \
-		libbz2-dev \
-		libc6-dev \
-		libcurl4-openssl-dev \
-		libevent-dev \
-		libffi-dev \
-		libgeoip-dev \
-		libglib2.0-dev \
-		libjpeg-dev \
-		liblzma-dev \
-		libmagickcore-dev \
-		libmagickwand-dev \
-		libmysqlclient-dev \
-		libncurses-dev \
-		libpng-dev \
-		libpq-dev \
-		libreadline-dev \
-		libsqlite3-dev \
-		libssl-dev \
-		libtool \
-		libwebp-dev \
-		libxml2-dev \
-		libxslt-dev \
-		libyaml-dev \
-		make \
-		patch \
-		xz-utils \
-		zlib1g-dev \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:43:26 GMT
--	Parent Layer: `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
--	Docker Version: 1.9.0
--	Virtual Size: 314.6 MB (314625298 bytes)
--	v2 Blob: `sha256:9d60932092c3d0454cb2bf5d7c22c5e447534a1ecd656437493ce3d78e57483b`
--	v2 Content-Length: 128.6 MB (128553511 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:10:06 GMT
-
-#### `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Wed, 11 Nov 2015 10:06:46 GMT
--	Parent Layer: `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
--	Docker Version: 1.9.0
--	Virtual Size: 977.9 KB (977896 bytes)
--	v2 Blob: `sha256:557efb3765d6f02b67ae58b05989bd957e45df314ba9492c7ef4e6599588b141`
--	v2 Content-Length: 220.5 KB (220520 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:41:13 GMT
-
-#### `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Wed, 11 Nov 2015 10:06:47 GMT
--	Parent Layer: `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `25d6f9a46cb2795150aabb53e7fd8a3f1e6b1a251d4d5e9c7fa3f6f6a5fdc4c8`
-
-```dockerfile
-RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-```
-
--	Created: Wed, 11 Nov 2015 10:12:08 GMT
--	Parent Layer: `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
--	Docker Version: 1.9.0
--	Virtual Size: 28.1 KB (28050 bytes)
--	v2 Blob: `sha256:41e0317cb61ba1a99917bcc9c3daa93489acb1ddc66fa8420235d4594edf459d`
--	v2 Content-Length: 13.4 KB (13444 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:41:07 GMT
-
-#### `13b09d8e7429dea18582fad50dc6ab54b0495f9dbc2e0a26351cd620c8c3ba2d`
-
-```dockerfile
-ENV PYTHON_VERSION=2.7.10
-```
-
--	Created: Wed, 11 Nov 2015 10:12:08 GMT
--	Parent Layer: `25d6f9a46cb2795150aabb53e7fd8a3f1e6b1a251d4d5e9c7fa3f6f6a5fdc4c8`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `e27c2341abc40ce4d18453d1ea4688a2b019bf5f22d13bb98061802c1eaa1af3`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
-```
-
--	Created: Wed, 11 Nov 2015 10:12:09 GMT
--	Parent Layer: `13b09d8e7429dea18582fad50dc6ab54b0495f9dbc2e0a26351cd620c8c3ba2d`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `e667d6ef2385ecd5a39996a5c1aa8e82483735b1c557fb6559aa1f8ce1b64c7b`
-
-```dockerfile
-RUN set -x \
-	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
-	&& gpg --verify python.tar.xz.asc \
-	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
-	&& rm python.tar.xz* \
-	&& cd /usr/src/python \
-	&& ./configure --enable-shared --enable-unicode=ucs4 \
-	&& make -j$(nproc) \
-	&& make install \
-	&& ldconfig \
-	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python2 \
-	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
-	&& find /usr/local \
-		\( -type d -a -name test -o -name tests \) \
-		-o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
-		-exec rm -rf '{}' + \
-	&& rm -rf /usr/src/python
-```
-
--	Created: Wed, 11 Nov 2015 10:14:24 GMT
--	Parent Layer: `e27c2341abc40ce4d18453d1ea4688a2b019bf5f22d13bb98061802c1eaa1af3`
--	Docker Version: 1.9.0
--	Virtual Size: 62.1 MB (62051847 bytes)
--	v2 Blob: `sha256:58076f2a9b74f63cfd9fc77e12c5311eafef9053d947cb09f0349ee44825d466`
--	v2 Content-Length: 19.6 MB (19636114 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:40:57 GMT
-
-#### `37241fff5cc3d7625847abd145c5296211d81b78789474c0879e9d7aae312a00`
-
-```dockerfile
-RUN pip install --no-cache-dir virtualenv
-```
-
--	Created: Wed, 11 Nov 2015 10:14:28 GMT
--	Parent Layer: `e667d6ef2385ecd5a39996a5c1aa8e82483735b1c557fb6559aa1f8ce1b64c7b`
--	Docker Version: 1.9.0
--	Virtual Size: 5.9 MB (5850007 bytes)
--	v2 Blob: `sha256:438de9e1f02de668f69ddefa833a6ca664989197215afda3c3f11a22dae44f5e`
--	v2 Content-Length: 3.1 MB (3054941 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:40:45 GMT
-
-#### `aff5fe6ff08266d1b03d0d2391003ec7abc16d807915d94a19341c4ece04b6bf`
-
-```dockerfile
-CMD ["python2"]
-```
-
--	Created: Wed, 11 Nov 2015 10:14:29 GMT
--	Parent Layer: `37241fff5cc3d7625847abd145c5296211d81b78789474c0879e9d7aae312a00`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `1347318af622b95554afb8584cd725c9825baf58bbb63972f3c0aca16483953b`
-
-```dockerfile
-RUN mkdir -p /usr/src/app
-```
-
--	Created: Wed, 11 Nov 2015 10:15:17 GMT
--	Parent Layer: `aff5fe6ff08266d1b03d0d2391003ec7abc16d807915d94a19341c4ece04b6bf`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:991e9d7516e745bee428115c31f058d1fb1dcfef66c96759d4f17920eb2912e4`
--	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Wed, 11 Nov 2015 20:44:53 GMT
-
-#### `04300e008780e0842ddb82cd05cad42ac4fe8a26ef9728d065f34af3326ccf89`
-
-```dockerfile
-WORKDIR /usr/src/app
-```
-
--	Created: Wed, 11 Nov 2015 10:15:18 GMT
--	Parent Layer: `1347318af622b95554afb8584cd725c9825baf58bbb63972f3c0aca16483953b`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `26332093b787f54a4d8f763b56cdab2256bf7b27d5882dde93e0a161c49720a0`
-
-```dockerfile
-ONBUILD COPY requirements.txt /usr/src/app/
-```
-
--	Created: Wed, 11 Nov 2015 10:15:19 GMT
--	Parent Layer: `04300e008780e0842ddb82cd05cad42ac4fe8a26ef9728d065f34af3326ccf89`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `8df76a5267fef637e883616cf9c6ddc1fb8f7556a9a3b1cddca3ac46f4f97857`
-
-```dockerfile
-ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-```
-
--	Created: Wed, 11 Nov 2015 10:15:19 GMT
--	Parent Layer: `26332093b787f54a4d8f763b56cdab2256bf7b27d5882dde93e0a161c49720a0`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `094dab93567de6a9c7f9fe2982330df515b8d33b9e4a0327774c0d89dc0924c4`
-
-```dockerfile
-ONBUILD COPY . /usr/src/app
-```
-
--	Created: Wed, 11 Nov 2015 10:15:20 GMT
--	Parent Layer: `8df76a5267fef637e883616cf9c6ddc1fb8f7556a9a3b1cddca3ac46f4f97857`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `python:2.7-onbuild`
 
@@ -1177,7 +709,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -1292,7 +824,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `25d6f9a46cb2795150aabb53e7fd8a3f1e6b1a251d4d5e9c7fa3f6f6a5fdc4c8`
 
@@ -1320,7 +852,7 @@ ENV PYTHON_VERSION=2.7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e27c2341abc40ce4d18453d1ea4688a2b019bf5f22d13bb98061802c1eaa1af3`
 
@@ -1334,7 +866,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e667d6ef2385ecd5a39996a5c1aa8e82483735b1c557fb6559aa1f8ce1b64c7b`
 
@@ -1394,7 +926,7 @@ CMD ["python2"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `1347318af622b95554afb8584cd725c9825baf58bbb63972f3c0aca16483953b`
 
@@ -1422,7 +954,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `26332093b787f54a4d8f763b56cdab2256bf7b27d5882dde93e0a161c49720a0`
 
@@ -1436,7 +968,7 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8df76a5267fef637e883616cf9c6ddc1fb8f7556a9a3b1cddca3ac46f4f97857`
 
@@ -1450,7 +982,7 @@ ONBUILD RUN pip install --no-cache-dir -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `094dab93567de6a9c7f9fe2982330df515b8d33b9e4a0327774c0d89dc0924c4`
 
@@ -1464,7 +996,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:2-onbuild`
 
@@ -1502,7 +1034,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -1617,7 +1149,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `25d6f9a46cb2795150aabb53e7fd8a3f1e6b1a251d4d5e9c7fa3f6f6a5fdc4c8`
 
@@ -1645,7 +1177,7 @@ ENV PYTHON_VERSION=2.7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e27c2341abc40ce4d18453d1ea4688a2b019bf5f22d13bb98061802c1eaa1af3`
 
@@ -1659,7 +1191,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e667d6ef2385ecd5a39996a5c1aa8e82483735b1c557fb6559aa1f8ce1b64c7b`
 
@@ -1719,7 +1251,7 @@ CMD ["python2"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `1347318af622b95554afb8584cd725c9825baf58bbb63972f3c0aca16483953b`
 
@@ -1747,7 +1279,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `26332093b787f54a4d8f763b56cdab2256bf7b27d5882dde93e0a161c49720a0`
 
@@ -1761,7 +1293,7 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8df76a5267fef637e883616cf9c6ddc1fb8f7556a9a3b1cddca3ac46f4f97857`
 
@@ -1775,7 +1307,7 @@ ONBUILD RUN pip install --no-cache-dir -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `094dab93567de6a9c7f9fe2982330df515b8d33b9e4a0327774c0d89dc0924c4`
 
@@ -1789,12 +1321,12 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:2.7.10-slim`
 
 ```console
-$ docker pull library/python@sha256:a7b94b60466fc093ccbbe7fe7af9932248af120a3793a99addaaa0ecdea43094
+$ docker pull library/python@sha256:c89cb5a29af41385ed4fd2c89f8aaf6e631684e94a9f6842f6ae5eb6d02ac3ea
 ```
 
 -	Total Virtual Size: 204.9 MB (204869196 bytes)
@@ -1802,7 +1334,7 @@ $ docker pull library/python@sha256:a7b94b60466fc093ccbbe7fe7af9932248af120a3793
 
 ### Layers (11)
 
-#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+#### `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 
 ```dockerfile
 ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
@@ -1815,182 +1347,19 @@ ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 -	v2 Content-Length: 51.4 MB (51353062 bytes)
 -	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+#### `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
 -	Created: Tue, 10 Nov 2015 00:31:11 GMT
--	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Parent Layer: `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 10 Nov 2015 22:24:24 GMT
--	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 10 Nov 2015 22:24:24 GMT
--	Parent Layer: `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		libsqlite3-0 \
-		libssl1.0.0 \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 22:30:40 GMT
--	Parent Layer: `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
--	Docker Version: 1.9.0
--	Virtual Size: 7.4 MB (7371597 bytes)
--	v2 Blob: `sha256:67af04f3d17e66508f33bc72fba26004c31116a8f18745bba69b4bcfe7d43e91`
--	v2 Content-Length: 3.3 MB (3302051 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:46:12 GMT
-
-#### `6f71df692a8e6f7423880de9db7d510ac7abca9179503608065af4b53ce5a2d5`
-
-```dockerfile
-RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-```
-
--	Created: Tue, 10 Nov 2015 22:30:43 GMT
--	Parent Layer: `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
--	Docker Version: 1.9.0
--	Virtual Size: 28.1 KB (28050 bytes)
--	v2 Blob: `sha256:77438cb581f6e18c1a4c51e96804e1d4e0b959269d9a3bc3985b381429e07ad4`
--	v2 Content-Length: 13.4 KB (13450 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:46:08 GMT
-
-#### `a521c74a9ebac8f73de2287a0d3c92891a1b53ed784d010940a22d783d902150`
-
-```dockerfile
-ENV PYTHON_VERSION=2.7.10
-```
-
--	Created: Tue, 10 Nov 2015 22:30:44 GMT
--	Parent Layer: `6f71df692a8e6f7423880de9db7d510ac7abca9179503608065af4b53ce5a2d5`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `2a43aeb6c98a0db2e83fb0e034d096ccf884c17eb841a7db10f9cf6b1696aa18`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
-```
-
--	Created: Tue, 10 Nov 2015 22:30:44 GMT
--	Parent Layer: `a521c74a9ebac8f73de2287a0d3c92891a1b53ed784d010940a22d783d902150`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `1633524f5acbb722d887b906b1e7faf90dbda2a5737107c7bf4e3e60e71f89b6`
-
-```dockerfile
-RUN set -x \
-	&& buildDeps=' \
-		curl \
-		gcc \
-		libbz2-dev \
-		libc6-dev \
-		libncurses-dev \
-		libreadline-dev \
-		libsqlite3-dev \
-		libssl-dev \
-		make \
-		xz-utils \
-		zlib1g-dev \
-	' \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
-	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
-	&& gpg --verify python.tar.xz.asc \
-	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
-	&& rm python.tar.xz* \
-	&& cd /usr/src/python \
-	&& ./configure --enable-shared --enable-unicode=ucs4 \
-	&& make -j$(nproc) \
-	&& make install \
-	&& ldconfig \
-	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python2 \
-	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
-	&& find /usr/local \
-		\( -type d -a -name test -o -name tests \) \
-		-o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
-		-exec rm -rf '{}' + \
-	&& apt-get purge -y --auto-remove $buildDeps \
-	&& rm -rf /usr/src/python
-```
-
--	Created: Tue, 10 Nov 2015 22:34:04 GMT
--	Parent Layer: `2a43aeb6c98a0db2e83fb0e034d096ccf884c17eb841a7db10f9cf6b1696aa18`
--	Docker Version: 1.9.0
--	Virtual Size: 66.5 MB (66507354 bytes)
--	v2 Blob: `sha256:c214d14fbb8efaee340e21b50e68126aa9d649bb7371cfb636a205b5db606451`
--	v2 Content-Length: 21.8 MB (21763677 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:45:57 GMT
-
-#### `805f0dd6b5efe3cca3e5ebb0e08e71aac56ced565d030bf0773d27d9d20b248c`
-
-```dockerfile
-RUN pip install --no-cache-dir virtualenv
-```
-
--	Created: Tue, 10 Nov 2015 22:34:07 GMT
--	Parent Layer: `1633524f5acbb722d887b906b1e7faf90dbda2a5737107c7bf4e3e60e71f89b6`
--	Docker Version: 1.9.0
--	Virtual Size: 5.9 MB (5850003 bytes)
--	v2 Blob: `sha256:cc4d2d9ad9a2e1443761160960c31c8fa70517ad2f6bd3d14498d015ff0edc55`
--	v2 Content-Length: 3.1 MB (3054818 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:45:43 GMT
-
-#### `4175166f8eccd0e31776afc3eac4363227405eac31b11cc0155b23676bddfcdf`
-
-```dockerfile
-CMD ["python2"]
-```
-
--	Created: Tue, 10 Nov 2015 22:34:08 GMT
--	Parent Layer: `805f0dd6b5efe3cca3e5ebb0e08e71aac56ced565d030bf0773d27d9d20b248c`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:2.7-slim`
 
@@ -2028,7 +1397,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -2042,7 +1411,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -2056,7 +1425,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -2102,7 +1471,7 @@ ENV PYTHON_VERSION=2.7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2a43aeb6c98a0db2e83fb0e034d096ccf884c17eb841a7db10f9cf6b1696aa18`
 
@@ -2116,7 +1485,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `1633524f5acbb722d887b906b1e7faf90dbda2a5737107c7bf4e3e60e71f89b6`
 
@@ -2191,7 +1560,7 @@ CMD ["python2"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:2-slim`
 
@@ -2229,7 +1598,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -2243,7 +1612,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -2257,7 +1626,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -2303,7 +1672,7 @@ ENV PYTHON_VERSION=2.7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2a43aeb6c98a0db2e83fb0e034d096ccf884c17eb841a7db10f9cf6b1696aa18`
 
@@ -2317,7 +1686,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `1633524f5acbb722d887b906b1e7faf90dbda2a5737107c7bf4e3e60e71f89b6`
 
@@ -2392,7 +1761,7 @@ CMD ["python2"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:2.7.10-wheezy`
 
@@ -2430,7 +1799,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4dc19ad71d9e3baaa1750d2ec9aa458de0e875e7d3fb1cdd2272c7cbd17ea2d9`
 
@@ -2545,7 +1914,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4e2733df93fb21d20142e15e9d5d616e5293e5462b57b604ceaa767142eae4e1`
 
@@ -2573,7 +1942,7 @@ ENV PYTHON_VERSION=2.7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b61738ab8da5ef0c8bd015aca3bb119880196ac98a34ab810fcac1550bd830f7`
 
@@ -2587,7 +1956,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c2a1f0580b84da51678ae91b521e603bf1ea6ae59b5cc205edfd9f6b28ca0af4`
 
@@ -2647,7 +2016,7 @@ CMD ["python2"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:2.7-wheezy`
 
@@ -2685,7 +2054,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4dc19ad71d9e3baaa1750d2ec9aa458de0e875e7d3fb1cdd2272c7cbd17ea2d9`
 
@@ -2800,7 +2169,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4e2733df93fb21d20142e15e9d5d616e5293e5462b57b604ceaa767142eae4e1`
 
@@ -2828,7 +2197,7 @@ ENV PYTHON_VERSION=2.7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b61738ab8da5ef0c8bd015aca3bb119880196ac98a34ab810fcac1550bd830f7`
 
@@ -2842,7 +2211,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c2a1f0580b84da51678ae91b521e603bf1ea6ae59b5cc205edfd9f6b28ca0af4`
 
@@ -2902,7 +2271,7 @@ CMD ["python2"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:2-wheezy`
 
@@ -2940,7 +2309,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4dc19ad71d9e3baaa1750d2ec9aa458de0e875e7d3fb1cdd2272c7cbd17ea2d9`
 
@@ -3055,7 +2424,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4e2733df93fb21d20142e15e9d5d616e5293e5462b57b604ceaa767142eae4e1`
 
@@ -3083,7 +2452,7 @@ ENV PYTHON_VERSION=2.7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b61738ab8da5ef0c8bd015aca3bb119880196ac98a34ab810fcac1550bd830f7`
 
@@ -3097,7 +2466,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c2a1f0580b84da51678ae91b521e603bf1ea6ae59b5cc205edfd9f6b28ca0af4`
 
@@ -3157,12 +2526,12 @@ CMD ["python2"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.2.6`
 
 ```console
-$ docker pull library/python@sha256:d762608ca65876b8994ff714b1b5766f30f18657060b47990915ed8149246cb8
+$ docker pull library/python@sha256:a428d8fc6c78a5c4e9669d8a13fdce984bb34084052eb77bb84f3d19344c786a
 ```
 
 -	Total Virtual Size: 666.8 MB (666830896 bytes)
@@ -3170,7 +2539,7 @@ $ docker pull library/python@sha256:d762608ca65876b8994ff714b1b5766f30f18657060b
 
 ### Layers (13)
 
-#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+#### `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 
 ```dockerfile
 ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
@@ -3183,21 +2552,21 @@ ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 -	v2 Content-Length: 51.4 MB (51353062 bytes)
 -	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+#### `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
 -	Created: Tue, 10 Nov 2015 00:31:11 GMT
--	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Parent Layer: `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
+#### `371b8d572221402165770353f0489ff1a2b9ad7027d512de5a8d19173a50e3ab`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3208,215 +2577,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ```
 
 -	Created: Tue, 10 Nov 2015 00:40:02 GMT
--	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+-	Parent Layer: `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 -	Docker Version: 1.9.0
 -	Virtual Size: 44.3 MB (44292472 bytes)
 -	v2 Blob: `sha256:4f8b5616c86dbd6c294b3a7d8bfccf105121f38c257dbd53a3b7804472de2f54`
 -	v2 Content-Length: 18.5 MB (18528450 bytes)
 -	v2 Last-Modified: Tue, 10 Nov 2015 18:07:36 GMT
-
-#### `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:41:34 GMT
--	Parent Layer: `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
--	Docker Version: 1.9.0
--	Virtual Size: 122.2 MB (122248845 bytes)
--	v2 Blob: `sha256:ba17e4708ba51b052979d916bc50873c251df3fe53ee9f022768e323a79fb7c1`
--	v2 Content-Length: 42.3 MB (42324582 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:08:51 GMT
-
-#### `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		autoconf \
-		automake \
-		bzip2 \
-		file \
-		g++ \
-		gcc \
-		imagemagick \
-		libbz2-dev \
-		libc6-dev \
-		libcurl4-openssl-dev \
-		libevent-dev \
-		libffi-dev \
-		libgeoip-dev \
-		libglib2.0-dev \
-		libjpeg-dev \
-		liblzma-dev \
-		libmagickcore-dev \
-		libmagickwand-dev \
-		libmysqlclient-dev \
-		libncurses-dev \
-		libpng-dev \
-		libpq-dev \
-		libreadline-dev \
-		libsqlite3-dev \
-		libssl-dev \
-		libtool \
-		libwebp-dev \
-		libxml2-dev \
-		libxslt-dev \
-		libyaml-dev \
-		make \
-		patch \
-		xz-utils \
-		zlib1g-dev \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:43:26 GMT
--	Parent Layer: `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
--	Docker Version: 1.9.0
--	Virtual Size: 314.6 MB (314625298 bytes)
--	v2 Blob: `sha256:9d60932092c3d0454cb2bf5d7c22c5e447534a1ecd656437493ce3d78e57483b`
--	v2 Content-Length: 128.6 MB (128553511 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:10:06 GMT
-
-#### `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Wed, 11 Nov 2015 10:06:46 GMT
--	Parent Layer: `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
--	Docker Version: 1.9.0
--	Virtual Size: 977.9 KB (977896 bytes)
--	v2 Blob: `sha256:557efb3765d6f02b67ae58b05989bd957e45df314ba9492c7ef4e6599588b141`
--	v2 Content-Length: 220.5 KB (220520 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:41:13 GMT
-
-#### `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Wed, 11 Nov 2015 10:06:47 GMT
--	Parent Layer: `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
-
-```dockerfile
-RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 26DEA9D4613391EF3E25C9FF0A5B101836580288
-```
-
--	Created: Wed, 11 Nov 2015 10:19:05 GMT
--	Parent Layer: `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
--	Docker Version: 1.9.0
--	Virtual Size: 15.0 KB (14980 bytes)
--	v2 Blob: `sha256:00804ba1115864eb683673851d59d011a70179ceaf3404157869a68517acd1e1`
--	v2 Content-Length: 6.8 KB (6818 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:51:08 GMT
-
-#### `440dba2547de93bcf09c882482e9aec072e3042baa3932515d24949f32461abe`
-
-```dockerfile
-ENV PYTHON_VERSION=3.2.6
-```
-
--	Created: Wed, 11 Nov 2015 10:19:05 GMT
--	Parent Layer: `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `6cb5f61cf9da8899ebc45be9dfdec0b92d9e1a2b86855a2c21234bb9304c306c`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
-```
-
--	Created: Wed, 11 Nov 2015 10:19:06 GMT
--	Parent Layer: `440dba2547de93bcf09c882482e9aec072e3042baa3932515d24949f32461abe`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `b159763f22ab87d5359249161a921f8d0008aaca08e39f0621527db458aaa9ac`
-
-```dockerfile
-RUN set -x \
-	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
-	&& gpg --verify python.tar.xz.asc \
-	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
-	&& rm python.tar.xz* \
-	&& cd /usr/src/python \
-	&& ./configure --enable-shared --enable-unicode=ucs4 \
-	&& make -j$(nproc) \
-	&& make install \
-	&& ldconfig \
-	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python3 \
-	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
-	&& find /usr/local \
-		\( -type d -a -name test -o -name tests \) \
-		-o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
-		-exec rm -rf '{}' + \
-	&& rm -rf /usr/src/python
-```
-
--	Created: Wed, 11 Nov 2015 10:21:14 GMT
--	Parent Layer: `6cb5f61cf9da8899ebc45be9dfdec0b92d9e1a2b86855a2c21234bb9304c306c`
--	Docker Version: 1.9.0
--	Virtual Size: 59.6 MB (59559181 bytes)
--	v2 Blob: `sha256:d707a4c2be514d120500bf452df97edb06ad69408f5dabb16cc8999505dc31af`
--	v2 Content-Length: 17.6 MB (17609284 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:50:59 GMT
-
-#### `7fdbe0947c73e602320d77bfe19ed935a7c6fdd3d98ba39abec92bb89918032c`
-
-```dockerfile
-RUN cd /usr/local/bin \
-	&& ln -s idle3 idle \
-	&& ln -s pydoc3 pydoc \
-	&& ln -s python3 python \
-	&& ln -s python-config3 python-config
-```
-
--	Created: Wed, 11 Nov 2015 10:21:16 GMT
--	Parent Layer: `b159763f22ab87d5359249161a921f8d0008aaca08e39f0621527db458aaa9ac`
--	Docker Version: 1.9.0
--	Virtual Size: 32.0 B
--	v2 Blob: `sha256:42eb8d6e9a95158ab4260f2ea950a57674fce1254eed12823dca419ea9cc41ac`
--	v2 Content-Length: 237.0 B
--	v2 Last-Modified: Wed, 11 Nov 2015 20:50:48 GMT
-
-#### `30d0b798b385e038193e692dce94df169955fcca23202f5acfd377c43e6f36b2`
-
-```dockerfile
-CMD ["python3"]
-```
-
--	Created: Wed, 11 Nov 2015 10:21:17 GMT
--	Parent Layer: `7fdbe0947c73e602320d77bfe19ed935a7c6fdd3d98ba39abec92bb89918032c`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `python:3.2`
 
@@ -3454,7 +2620,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -3569,7 +2735,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
 
@@ -3597,7 +2763,7 @@ ENV PYTHON_VERSION=3.2.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `6cb5f61cf9da8899ebc45be9dfdec0b92d9e1a2b86855a2c21234bb9304c306c`
 
@@ -3611,7 +2777,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b159763f22ab87d5359249161a921f8d0008aaca08e39f0621527db458aaa9ac`
 
@@ -3675,12 +2841,12 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.2.6-onbuild`
 
 ```console
-$ docker pull library/python@sha256:6dcb02f2c00fba6c4c0c324cc88ec3ddc2a9a25d46836e9eb5213da087488eae
+$ docker pull library/python@sha256:8bb1600d020d02dff32026a239d91aae8221a4eda639f79104e30b141213b42e
 ```
 
 -	Total Virtual Size: 666.8 MB (666830896 bytes)
@@ -3688,7 +2854,7 @@ $ docker pull library/python@sha256:6dcb02f2c00fba6c4c0c324cc88ec3ddc2a9a25d4683
 
 ### Layers (18)
 
-#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+#### `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 
 ```dockerfile
 ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
@@ -3701,21 +2867,21 @@ ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 -	v2 Content-Length: 51.4 MB (51353062 bytes)
 -	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+#### `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
 -	Created: Tue, 10 Nov 2015 00:31:11 GMT
--	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Parent Layer: `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
+#### `371b8d572221402165770353f0489ff1a2b9ad7027d512de5a8d19173a50e3ab`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3726,285 +2892,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ```
 
 -	Created: Tue, 10 Nov 2015 00:40:02 GMT
--	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+-	Parent Layer: `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 -	Docker Version: 1.9.0
 -	Virtual Size: 44.3 MB (44292472 bytes)
 -	v2 Blob: `sha256:4f8b5616c86dbd6c294b3a7d8bfccf105121f38c257dbd53a3b7804472de2f54`
 -	v2 Content-Length: 18.5 MB (18528450 bytes)
 -	v2 Last-Modified: Tue, 10 Nov 2015 18:07:36 GMT
-
-#### `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:41:34 GMT
--	Parent Layer: `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
--	Docker Version: 1.9.0
--	Virtual Size: 122.2 MB (122248845 bytes)
--	v2 Blob: `sha256:ba17e4708ba51b052979d916bc50873c251df3fe53ee9f022768e323a79fb7c1`
--	v2 Content-Length: 42.3 MB (42324582 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:08:51 GMT
-
-#### `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		autoconf \
-		automake \
-		bzip2 \
-		file \
-		g++ \
-		gcc \
-		imagemagick \
-		libbz2-dev \
-		libc6-dev \
-		libcurl4-openssl-dev \
-		libevent-dev \
-		libffi-dev \
-		libgeoip-dev \
-		libglib2.0-dev \
-		libjpeg-dev \
-		liblzma-dev \
-		libmagickcore-dev \
-		libmagickwand-dev \
-		libmysqlclient-dev \
-		libncurses-dev \
-		libpng-dev \
-		libpq-dev \
-		libreadline-dev \
-		libsqlite3-dev \
-		libssl-dev \
-		libtool \
-		libwebp-dev \
-		libxml2-dev \
-		libxslt-dev \
-		libyaml-dev \
-		make \
-		patch \
-		xz-utils \
-		zlib1g-dev \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:43:26 GMT
--	Parent Layer: `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
--	Docker Version: 1.9.0
--	Virtual Size: 314.6 MB (314625298 bytes)
--	v2 Blob: `sha256:9d60932092c3d0454cb2bf5d7c22c5e447534a1ecd656437493ce3d78e57483b`
--	v2 Content-Length: 128.6 MB (128553511 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:10:06 GMT
-
-#### `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Wed, 11 Nov 2015 10:06:46 GMT
--	Parent Layer: `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
--	Docker Version: 1.9.0
--	Virtual Size: 977.9 KB (977896 bytes)
--	v2 Blob: `sha256:557efb3765d6f02b67ae58b05989bd957e45df314ba9492c7ef4e6599588b141`
--	v2 Content-Length: 220.5 KB (220520 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:41:13 GMT
-
-#### `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Wed, 11 Nov 2015 10:06:47 GMT
--	Parent Layer: `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
-
-```dockerfile
-RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 26DEA9D4613391EF3E25C9FF0A5B101836580288
-```
-
--	Created: Wed, 11 Nov 2015 10:19:05 GMT
--	Parent Layer: `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
--	Docker Version: 1.9.0
--	Virtual Size: 15.0 KB (14980 bytes)
--	v2 Blob: `sha256:00804ba1115864eb683673851d59d011a70179ceaf3404157869a68517acd1e1`
--	v2 Content-Length: 6.8 KB (6818 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:51:08 GMT
-
-#### `440dba2547de93bcf09c882482e9aec072e3042baa3932515d24949f32461abe`
-
-```dockerfile
-ENV PYTHON_VERSION=3.2.6
-```
-
--	Created: Wed, 11 Nov 2015 10:19:05 GMT
--	Parent Layer: `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `6cb5f61cf9da8899ebc45be9dfdec0b92d9e1a2b86855a2c21234bb9304c306c`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
-```
-
--	Created: Wed, 11 Nov 2015 10:19:06 GMT
--	Parent Layer: `440dba2547de93bcf09c882482e9aec072e3042baa3932515d24949f32461abe`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `b159763f22ab87d5359249161a921f8d0008aaca08e39f0621527db458aaa9ac`
-
-```dockerfile
-RUN set -x \
-	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
-	&& gpg --verify python.tar.xz.asc \
-	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
-	&& rm python.tar.xz* \
-	&& cd /usr/src/python \
-	&& ./configure --enable-shared --enable-unicode=ucs4 \
-	&& make -j$(nproc) \
-	&& make install \
-	&& ldconfig \
-	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python3 \
-	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
-	&& find /usr/local \
-		\( -type d -a -name test -o -name tests \) \
-		-o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
-		-exec rm -rf '{}' + \
-	&& rm -rf /usr/src/python
-```
-
--	Created: Wed, 11 Nov 2015 10:21:14 GMT
--	Parent Layer: `6cb5f61cf9da8899ebc45be9dfdec0b92d9e1a2b86855a2c21234bb9304c306c`
--	Docker Version: 1.9.0
--	Virtual Size: 59.6 MB (59559181 bytes)
--	v2 Blob: `sha256:d707a4c2be514d120500bf452df97edb06ad69408f5dabb16cc8999505dc31af`
--	v2 Content-Length: 17.6 MB (17609284 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:50:59 GMT
-
-#### `7fdbe0947c73e602320d77bfe19ed935a7c6fdd3d98ba39abec92bb89918032c`
-
-```dockerfile
-RUN cd /usr/local/bin \
-	&& ln -s idle3 idle \
-	&& ln -s pydoc3 pydoc \
-	&& ln -s python3 python \
-	&& ln -s python-config3 python-config
-```
-
--	Created: Wed, 11 Nov 2015 10:21:16 GMT
--	Parent Layer: `b159763f22ab87d5359249161a921f8d0008aaca08e39f0621527db458aaa9ac`
--	Docker Version: 1.9.0
--	Virtual Size: 32.0 B
--	v2 Blob: `sha256:42eb8d6e9a95158ab4260f2ea950a57674fce1254eed12823dca419ea9cc41ac`
--	v2 Content-Length: 237.0 B
--	v2 Last-Modified: Wed, 11 Nov 2015 20:50:48 GMT
-
-#### `30d0b798b385e038193e692dce94df169955fcca23202f5acfd377c43e6f36b2`
-
-```dockerfile
-CMD ["python3"]
-```
-
--	Created: Wed, 11 Nov 2015 10:21:17 GMT
--	Parent Layer: `7fdbe0947c73e602320d77bfe19ed935a7c6fdd3d98ba39abec92bb89918032c`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `16671cba0c20f3f11ad6fd41eea3f61bb098977dae33817bfdb1d42772ecd79d`
-
-```dockerfile
-RUN mkdir -p /usr/src/app
-```
-
--	Created: Wed, 11 Nov 2015 10:21:42 GMT
--	Parent Layer: `30d0b798b385e038193e692dce94df169955fcca23202f5acfd377c43e6f36b2`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:0853da85a06a594139a89397362effe3b714769ef73f1d03fdfffb5e1e55ae0c`
--	v2 Content-Length: 127.0 B
--	v2 Last-Modified: Wed, 11 Nov 2015 20:51:58 GMT
-
-#### `9f9f12570281cf214d7da8441e80a14c07e25d1af80eb3aeac7417af997367a7`
-
-```dockerfile
-WORKDIR /usr/src/app
-```
-
--	Created: Wed, 11 Nov 2015 10:21:43 GMT
--	Parent Layer: `16671cba0c20f3f11ad6fd41eea3f61bb098977dae33817bfdb1d42772ecd79d`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `10b1f9b4328e8e33ab40c3078bf51f501da9024522f8c04f9f3efa5648a2f4ef`
-
-```dockerfile
-ONBUILD COPY requirements.txt /usr/src/app/
-```
-
--	Created: Wed, 11 Nov 2015 10:21:43 GMT
--	Parent Layer: `9f9f12570281cf214d7da8441e80a14c07e25d1af80eb3aeac7417af997367a7`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `e7bc5fdffaead001dbdbeb273242a70ffcae7d728a0444e16b9dfc7fe7b2eeec`
-
-```dockerfile
-ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-```
-
--	Created: Wed, 11 Nov 2015 10:21:44 GMT
--	Parent Layer: `10b1f9b4328e8e33ab40c3078bf51f501da9024522f8c04f9f3efa5648a2f4ef`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `13223052e8cbd7ac7fbafdcf0eea769b1a2789a581815061fb032edc29b13eaa`
-
-```dockerfile
-ONBUILD COPY . /usr/src/app
-```
-
--	Created: Wed, 11 Nov 2015 10:21:44 GMT
--	Parent Layer: `e7bc5fdffaead001dbdbeb273242a70ffcae7d728a0444e16b9dfc7fe7b2eeec`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `python:3.2-onbuild`
 
@@ -4042,7 +2935,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -4157,7 +3050,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
 
@@ -4185,7 +3078,7 @@ ENV PYTHON_VERSION=3.2.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `6cb5f61cf9da8899ebc45be9dfdec0b92d9e1a2b86855a2c21234bb9304c306c`
 
@@ -4199,7 +3092,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b159763f22ab87d5359249161a921f8d0008aaca08e39f0621527db458aaa9ac`
 
@@ -4263,7 +3156,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `16671cba0c20f3f11ad6fd41eea3f61bb098977dae33817bfdb1d42772ecd79d`
 
@@ -4291,7 +3184,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `10b1f9b4328e8e33ab40c3078bf51f501da9024522f8c04f9f3efa5648a2f4ef`
 
@@ -4305,7 +3198,7 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e7bc5fdffaead001dbdbeb273242a70ffcae7d728a0444e16b9dfc7fe7b2eeec`
 
@@ -4319,7 +3212,7 @@ ONBUILD RUN pip install --no-cache-dir -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `13223052e8cbd7ac7fbafdcf0eea769b1a2789a581815061fb032edc29b13eaa`
 
@@ -4333,12 +3226,12 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.2.6-slim`
 
 ```console
-$ docker pull library/python@sha256:5b6eeb70cf831f5afaa0c28b7bc536c61fd192c6d2883f357903146f617b6dff
+$ docker pull library/python@sha256:0d9f8a9714a49c32c04dbecd80b60c601054d62d5dc3b9c5fb20d835e4090b3d
 ```
 
 -	Total Virtual Size: 196.5 MB (196513518 bytes)
@@ -4346,7 +3239,7 @@ $ docker pull library/python@sha256:5b6eeb70cf831f5afaa0c28b7bc536c61fd192c6d288
 
 ### Layers (11)
 
-#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+#### `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 
 ```dockerfile
 ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
@@ -4359,186 +3252,19 @@ ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 -	v2 Content-Length: 51.4 MB (51353062 bytes)
 -	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+#### `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
 -	Created: Tue, 10 Nov 2015 00:31:11 GMT
--	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Parent Layer: `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Tue, 10 Nov 2015 22:24:24 GMT
--	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Tue, 10 Nov 2015 22:24:24 GMT
--	Parent Layer: `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		libsqlite3-0 \
-		libssl1.0.0 \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 22:30:40 GMT
--	Parent Layer: `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
--	Docker Version: 1.9.0
--	Virtual Size: 7.4 MB (7371597 bytes)
--	v2 Blob: `sha256:67af04f3d17e66508f33bc72fba26004c31116a8f18745bba69b4bcfe7d43e91`
--	v2 Content-Length: 3.3 MB (3302051 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:46:12 GMT
-
-#### `0cb8650a13ed474a2dad10f64eb62c178d3672bdb79531df188533468b714e23`
-
-```dockerfile
-RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 26DEA9D4613391EF3E25C9FF0A5B101836580288
-```
-
--	Created: Tue, 10 Nov 2015 22:35:09 GMT
--	Parent Layer: `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
--	Docker Version: 1.9.0
--	Virtual Size: 15.0 KB (14980 bytes)
--	v2 Blob: `sha256:0dccd60be0dd3a573c765f274be2de356b754debd1e3249ec7bea9cce84d4315`
--	v2 Content-Length: 6.8 KB (6816 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:52:51 GMT
-
-#### `7547c8dfad307712f8b43e25f857ae31623c936e895348cd4cd2db2e40d3639d`
-
-```dockerfile
-ENV PYTHON_VERSION=3.2.6
-```
-
--	Created: Tue, 10 Nov 2015 22:35:10 GMT
--	Parent Layer: `0cb8650a13ed474a2dad10f64eb62c178d3672bdb79531df188533468b714e23`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `c51149e623e4120611da85692a4236d4b5837674377336ef8e66a31ac38b147e`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
-```
-
--	Created: Tue, 10 Nov 2015 22:35:10 GMT
--	Parent Layer: `7547c8dfad307712f8b43e25f857ae31623c936e895348cd4cd2db2e40d3639d`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `89fadf1f47313992f75e9d9eed2c1a304f22224024db175b293291a0c224a9b5`
-
-```dockerfile
-RUN set -x \
-	&& buildDeps=' \
-		curl \
-		gcc \
-		libbz2-dev \
-		libc6-dev \
-		libncurses-dev \
-		libreadline-dev \
-		libsqlite3-dev \
-		libssl-dev \
-		make \
-		xz-utils \
-		zlib1g-dev \
-	' \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
-	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
-	&& gpg --verify python.tar.xz.asc \
-	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
-	&& rm python.tar.xz* \
-	&& cd /usr/src/python \
-	&& ./configure --enable-shared --enable-unicode=ucs4 \
-	&& make -j$(nproc) \
-	&& make install \
-	&& ldconfig \
-	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python3 \
-	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
-	&& find /usr/local \
-		\( -type d -a -name test -o -name tests \) \
-		-o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
-		-exec rm -rf '{}' + \
-	&& apt-get purge -y --auto-remove $buildDeps \
-	&& rm -rf /usr/src/python
-```
-
--	Created: Tue, 10 Nov 2015 22:38:10 GMT
--	Parent Layer: `c51149e623e4120611da85692a4236d4b5837674377336ef8e66a31ac38b147e`
--	Docker Version: 1.9.0
--	Virtual Size: 64.0 MB (64014717 bytes)
--	v2 Blob: `sha256:b235ba00034685dbcabff9e56780a0f869785c705ad93f4b0798ebb88f62341b`
--	v2 Content-Length: 19.7 MB (19740221 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:52:42 GMT
-
-#### `1e2f038ff9f5d09abe42541949decf36a573bdc53437b0fb74df6a50ea0bbe98`
-
-```dockerfile
-RUN cd /usr/local/bin \
-	&& ln -s idle3 idle \
-	&& ln -s pydoc3 pydoc \
-	&& ln -s python3 python \
-	&& ln -s python-config3 python-config
-```
-
--	Created: Tue, 10 Nov 2015 22:38:13 GMT
--	Parent Layer: `89fadf1f47313992f75e9d9eed2c1a304f22224024db175b293291a0c224a9b5`
--	Docker Version: 1.9.0
--	Virtual Size: 32.0 B
--	v2 Blob: `sha256:c92616c7fac90090aefd123d3f4ebcb3c494d2cc83824a28913595cbde17d0c7`
--	v2 Content-Length: 237.0 B
--	v2 Last-Modified: Wed, 11 Nov 2015 20:52:31 GMT
-
-#### `4c0f2d0b247c9a88e5ec8aa01a7e8e08758843f9ac18d55c9a8d157378fab717`
-
-```dockerfile
-CMD ["python3"]
-```
-
--	Created: Tue, 10 Nov 2015 22:38:13 GMT
--	Parent Layer: `1e2f038ff9f5d09abe42541949decf36a573bdc53437b0fb74df6a50ea0bbe98`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.2-slim`
 
@@ -4576,7 +3302,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -4590,7 +3316,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -4604,7 +3330,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -4650,7 +3376,7 @@ ENV PYTHON_VERSION=3.2.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c51149e623e4120611da85692a4236d4b5837674377336ef8e66a31ac38b147e`
 
@@ -4664,7 +3390,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `89fadf1f47313992f75e9d9eed2c1a304f22224024db175b293291a0c224a9b5`
 
@@ -4743,7 +3469,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.2.6-wheezy`
 
@@ -4781,7 +3507,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4dc19ad71d9e3baaa1750d2ec9aa458de0e875e7d3fb1cdd2272c7cbd17ea2d9`
 
@@ -4896,7 +3622,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `488ecacd5c8ab41ff944f7034ad0751b2234dc05c6bb233de46e7504ee434cff`
 
@@ -4924,7 +3650,7 @@ ENV PYTHON_VERSION=3.2.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a5f69a3411adfa755acbc21215a8924330d4775ade6cb6cbb6f33dc5e68ee620`
 
@@ -4938,7 +3664,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68c0c11fdb1171c104f2c8f949f2c8e870bfd2169c36f2429aa5ad7a406983be`
 
@@ -5002,7 +3728,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.2-wheezy`
 
@@ -5040,7 +3766,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4dc19ad71d9e3baaa1750d2ec9aa458de0e875e7d3fb1cdd2272c7cbd17ea2d9`
 
@@ -5155,7 +3881,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `488ecacd5c8ab41ff944f7034ad0751b2234dc05c6bb233de46e7504ee434cff`
 
@@ -5183,7 +3909,7 @@ ENV PYTHON_VERSION=3.2.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a5f69a3411adfa755acbc21215a8924330d4775ade6cb6cbb6f33dc5e68ee620`
 
@@ -5197,7 +3923,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68c0c11fdb1171c104f2c8f949f2c8e870bfd2169c36f2429aa5ad7a406983be`
 
@@ -5261,12 +3987,12 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.3.6`
 
 ```console
-$ docker pull library/python@sha256:90a390f1402ba4e062ebcbcc237d3c1e11edb6a6684e8d0ce1d3e160a6145c1d
+$ docker pull library/python@sha256:242e44e7af79bb068896608263f0e140fb0fe260fec0ef7ef2af76f307b1dbd4
 ```
 
 -	Total Virtual Size: 678.9 MB (678948651 bytes)
@@ -5274,7 +4000,7 @@ $ docker pull library/python@sha256:90a390f1402ba4e062ebcbcc237d3c1e11edb6a6684e
 
 ### Layers (13)
 
-#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+#### `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 
 ```dockerfile
 ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
@@ -5287,21 +4013,21 @@ ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 -	v2 Content-Length: 51.4 MB (51353062 bytes)
 -	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+#### `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
 -	Created: Tue, 10 Nov 2015 00:31:11 GMT
--	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Parent Layer: `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
+#### `371b8d572221402165770353f0489ff1a2b9ad7027d512de5a8d19173a50e3ab`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5312,215 +4038,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ```
 
 -	Created: Tue, 10 Nov 2015 00:40:02 GMT
--	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+-	Parent Layer: `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 -	Docker Version: 1.9.0
 -	Virtual Size: 44.3 MB (44292472 bytes)
 -	v2 Blob: `sha256:4f8b5616c86dbd6c294b3a7d8bfccf105121f38c257dbd53a3b7804472de2f54`
 -	v2 Content-Length: 18.5 MB (18528450 bytes)
 -	v2 Last-Modified: Tue, 10 Nov 2015 18:07:36 GMT
-
-#### `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:41:34 GMT
--	Parent Layer: `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
--	Docker Version: 1.9.0
--	Virtual Size: 122.2 MB (122248845 bytes)
--	v2 Blob: `sha256:ba17e4708ba51b052979d916bc50873c251df3fe53ee9f022768e323a79fb7c1`
--	v2 Content-Length: 42.3 MB (42324582 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:08:51 GMT
-
-#### `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		autoconf \
-		automake \
-		bzip2 \
-		file \
-		g++ \
-		gcc \
-		imagemagick \
-		libbz2-dev \
-		libc6-dev \
-		libcurl4-openssl-dev \
-		libevent-dev \
-		libffi-dev \
-		libgeoip-dev \
-		libglib2.0-dev \
-		libjpeg-dev \
-		liblzma-dev \
-		libmagickcore-dev \
-		libmagickwand-dev \
-		libmysqlclient-dev \
-		libncurses-dev \
-		libpng-dev \
-		libpq-dev \
-		libreadline-dev \
-		libsqlite3-dev \
-		libssl-dev \
-		libtool \
-		libwebp-dev \
-		libxml2-dev \
-		libxslt-dev \
-		libyaml-dev \
-		make \
-		patch \
-		xz-utils \
-		zlib1g-dev \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:43:26 GMT
--	Parent Layer: `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
--	Docker Version: 1.9.0
--	Virtual Size: 314.6 MB (314625298 bytes)
--	v2 Blob: `sha256:9d60932092c3d0454cb2bf5d7c22c5e447534a1ecd656437493ce3d78e57483b`
--	v2 Content-Length: 128.6 MB (128553511 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:10:06 GMT
-
-#### `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Wed, 11 Nov 2015 10:06:46 GMT
--	Parent Layer: `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
--	Docker Version: 1.9.0
--	Virtual Size: 977.9 KB (977896 bytes)
--	v2 Blob: `sha256:557efb3765d6f02b67ae58b05989bd957e45df314ba9492c7ef4e6599588b141`
--	v2 Content-Length: 220.5 KB (220520 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:41:13 GMT
-
-#### `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Wed, 11 Nov 2015 10:06:47 GMT
--	Parent Layer: `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
-
-```dockerfile
-RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 26DEA9D4613391EF3E25C9FF0A5B101836580288
-```
-
--	Created: Wed, 11 Nov 2015 10:19:05 GMT
--	Parent Layer: `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
--	Docker Version: 1.9.0
--	Virtual Size: 15.0 KB (14980 bytes)
--	v2 Blob: `sha256:00804ba1115864eb683673851d59d011a70179ceaf3404157869a68517acd1e1`
--	v2 Content-Length: 6.8 KB (6818 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:51:08 GMT
-
-#### `d1c2e9268183f050ed0e8ce56d91d5acd065c20165b6a4ee64976de0d3aeea22`
-
-```dockerfile
-ENV PYTHON_VERSION=3.3.6
-```
-
--	Created: Wed, 11 Nov 2015 10:24:48 GMT
--	Parent Layer: `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `8b7300119dbe49465a8aa1f838c57f1677799932722b45882ec36c7c499c3732`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
-```
-
--	Created: Wed, 11 Nov 2015 10:24:48 GMT
--	Parent Layer: `d1c2e9268183f050ed0e8ce56d91d5acd065c20165b6a4ee64976de0d3aeea22`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `0d42ef488c5e35820ff189f8a6f4353fc0aaf10f39de4ea2deff600b75503bb9`
-
-```dockerfile
-RUN set -x \
-	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
-	&& gpg --verify python.tar.xz.asc \
-	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
-	&& rm python.tar.xz* \
-	&& cd /usr/src/python \
-	&& ./configure --enable-shared --enable-unicode=ucs4 \
-	&& make -j$(nproc) \
-	&& make install \
-	&& ldconfig \
-	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python3 \
-	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
-	&& find /usr/local \
-		\( -type d -a -name test -o -name tests \) \
-		-o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
-		-exec rm -rf '{}' + \
-	&& rm -rf /usr/src/python
-```
-
--	Created: Wed, 11 Nov 2015 10:27:24 GMT
--	Parent Layer: `8b7300119dbe49465a8aa1f838c57f1677799932722b45882ec36c7c499c3732`
--	Docker Version: 1.9.0
--	Virtual Size: 71.7 MB (71676936 bytes)
--	v2 Blob: `sha256:a24028f7ce0d1c568661a89947a830c06785cddf99ea8a0eb337d1828354039d`
--	v2 Content-Length: 20.6 MB (20627059 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:54:47 GMT
-
-#### `a62e993bb983315c680f996ef6e1bed28001691dcb4e6ef1e721e37cefcfd112`
-
-```dockerfile
-RUN cd /usr/local/bin \
-	&& ln -s idle3 idle \
-	&& ln -s pydoc3 pydoc \
-	&& ln -s python3 python \
-	&& ln -s python-config3 python-config
-```
-
--	Created: Wed, 11 Nov 2015 10:27:27 GMT
--	Parent Layer: `0d42ef488c5e35820ff189f8a6f4353fc0aaf10f39de4ea2deff600b75503bb9`
--	Docker Version: 1.9.0
--	Virtual Size: 32.0 B
--	v2 Blob: `sha256:888ed62458721ffb1d62d1e539365ed7273a17b5a04a109ab4ec9cfd9240ce95`
--	v2 Content-Length: 236.0 B
--	v2 Last-Modified: Wed, 11 Nov 2015 20:54:34 GMT
-
-#### `d6f2c2d52f99ea1933668edb58ed3f218c469f9b04ae75fc92215226a3fc2e50`
-
-```dockerfile
-CMD ["python3"]
-```
-
--	Created: Wed, 11 Nov 2015 10:27:27 GMT
--	Parent Layer: `a62e993bb983315c680f996ef6e1bed28001691dcb4e6ef1e721e37cefcfd112`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `python:3.3`
 
@@ -5558,7 +4081,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -5673,7 +4196,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
 
@@ -5701,7 +4224,7 @@ ENV PYTHON_VERSION=3.3.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8b7300119dbe49465a8aa1f838c57f1677799932722b45882ec36c7c499c3732`
 
@@ -5715,7 +4238,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `0d42ef488c5e35820ff189f8a6f4353fc0aaf10f39de4ea2deff600b75503bb9`
 
@@ -5779,12 +4302,12 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.3.6-onbuild`
 
 ```console
-$ docker pull library/python@sha256:26b1503ebcf1027aa2a3015429edb5527d7fd7c37aa8a08ee0edc7b9508b167b
+$ docker pull library/python@sha256:096ee50706423aee3cebb78af328326746de7694ae6c277b3bdd47d4f70a4210
 ```
 
 -	Total Virtual Size: 678.9 MB (678948651 bytes)
@@ -5792,7 +4315,7 @@ $ docker pull library/python@sha256:26b1503ebcf1027aa2a3015429edb5527d7fd7c37aa8
 
 ### Layers (18)
 
-#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+#### `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 
 ```dockerfile
 ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
@@ -5805,21 +4328,21 @@ ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 -	v2 Content-Length: 51.4 MB (51353062 bytes)
 -	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+#### `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
 -	Created: Tue, 10 Nov 2015 00:31:11 GMT
--	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Parent Layer: `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
-#### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
+#### `371b8d572221402165770353f0489ff1a2b9ad7027d512de5a8d19173a50e3ab`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5830,285 +4353,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ```
 
 -	Created: Tue, 10 Nov 2015 00:40:02 GMT
--	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+-	Parent Layer: `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 -	Docker Version: 1.9.0
 -	Virtual Size: 44.3 MB (44292472 bytes)
 -	v2 Blob: `sha256:4f8b5616c86dbd6c294b3a7d8bfccf105121f38c257dbd53a3b7804472de2f54`
 -	v2 Content-Length: 18.5 MB (18528450 bytes)
 -	v2 Last-Modified: Tue, 10 Nov 2015 18:07:36 GMT
-
-#### `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:41:34 GMT
--	Parent Layer: `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
--	Docker Version: 1.9.0
--	Virtual Size: 122.2 MB (122248845 bytes)
--	v2 Blob: `sha256:ba17e4708ba51b052979d916bc50873c251df3fe53ee9f022768e323a79fb7c1`
--	v2 Content-Length: 42.3 MB (42324582 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:08:51 GMT
-
-#### `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		autoconf \
-		automake \
-		bzip2 \
-		file \
-		g++ \
-		gcc \
-		imagemagick \
-		libbz2-dev \
-		libc6-dev \
-		libcurl4-openssl-dev \
-		libevent-dev \
-		libffi-dev \
-		libgeoip-dev \
-		libglib2.0-dev \
-		libjpeg-dev \
-		liblzma-dev \
-		libmagickcore-dev \
-		libmagickwand-dev \
-		libmysqlclient-dev \
-		libncurses-dev \
-		libpng-dev \
-		libpq-dev \
-		libreadline-dev \
-		libsqlite3-dev \
-		libssl-dev \
-		libtool \
-		libwebp-dev \
-		libxml2-dev \
-		libxslt-dev \
-		libyaml-dev \
-		make \
-		patch \
-		xz-utils \
-		zlib1g-dev \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 10 Nov 2015 00:43:26 GMT
--	Parent Layer: `dc921aeac8d06e7bd5b2d85b8684bb7c94ed08db3f18a9b6e897827810b289de`
--	Docker Version: 1.9.0
--	Virtual Size: 314.6 MB (314625298 bytes)
--	v2 Blob: `sha256:9d60932092c3d0454cb2bf5d7c22c5e447534a1ecd656437493ce3d78e57483b`
--	v2 Content-Length: 128.6 MB (128553511 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:10:06 GMT
-
-#### `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
-
-```dockerfile
-RUN apt-get purge -y python.*
-```
-
--	Created: Wed, 11 Nov 2015 10:06:46 GMT
--	Parent Layer: `c4af890297db0c2b9db9ea3848d10317f1002f547f67d805d4cbe563044a07a1`
--	Docker Version: 1.9.0
--	Virtual Size: 977.9 KB (977896 bytes)
--	v2 Blob: `sha256:557efb3765d6f02b67ae58b05989bd957e45df314ba9492c7ef4e6599588b141`
--	v2 Content-Length: 220.5 KB (220520 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:41:13 GMT
-
-#### `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
-
-```dockerfile
-ENV LANG=C.UTF-8
-```
-
--	Created: Wed, 11 Nov 2015 10:06:47 GMT
--	Parent Layer: `70a927d6a8e70f490132d32df90670df1e318ab4b6e4c99fab9971728fdf9c83`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
-
-```dockerfile
-RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 26DEA9D4613391EF3E25C9FF0A5B101836580288
-```
-
--	Created: Wed, 11 Nov 2015 10:19:05 GMT
--	Parent Layer: `a58e59632917680d7dbe7393a49b1809e1cc6d74bd463769b77dad41c4bb5df9`
--	Docker Version: 1.9.0
--	Virtual Size: 15.0 KB (14980 bytes)
--	v2 Blob: `sha256:00804ba1115864eb683673851d59d011a70179ceaf3404157869a68517acd1e1`
--	v2 Content-Length: 6.8 KB (6818 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:51:08 GMT
-
-#### `d1c2e9268183f050ed0e8ce56d91d5acd065c20165b6a4ee64976de0d3aeea22`
-
-```dockerfile
-ENV PYTHON_VERSION=3.3.6
-```
-
--	Created: Wed, 11 Nov 2015 10:24:48 GMT
--	Parent Layer: `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `8b7300119dbe49465a8aa1f838c57f1677799932722b45882ec36c7c499c3732`
-
-```dockerfile
-ENV PYTHON_PIP_VERSION=7.1.2
-```
-
--	Created: Wed, 11 Nov 2015 10:24:48 GMT
--	Parent Layer: `d1c2e9268183f050ed0e8ce56d91d5acd065c20165b6a4ee64976de0d3aeea22`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `0d42ef488c5e35820ff189f8a6f4353fc0aaf10f39de4ea2deff600b75503bb9`
-
-```dockerfile
-RUN set -x \
-	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
-	&& gpg --verify python.tar.xz.asc \
-	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
-	&& rm python.tar.xz* \
-	&& cd /usr/src/python \
-	&& ./configure --enable-shared --enable-unicode=ucs4 \
-	&& make -j$(nproc) \
-	&& make install \
-	&& ldconfig \
-	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python3 \
-	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
-	&& find /usr/local \
-		\( -type d -a -name test -o -name tests \) \
-		-o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
-		-exec rm -rf '{}' + \
-	&& rm -rf /usr/src/python
-```
-
--	Created: Wed, 11 Nov 2015 10:27:24 GMT
--	Parent Layer: `8b7300119dbe49465a8aa1f838c57f1677799932722b45882ec36c7c499c3732`
--	Docker Version: 1.9.0
--	Virtual Size: 71.7 MB (71676936 bytes)
--	v2 Blob: `sha256:a24028f7ce0d1c568661a89947a830c06785cddf99ea8a0eb337d1828354039d`
--	v2 Content-Length: 20.6 MB (20627059 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 20:54:47 GMT
-
-#### `a62e993bb983315c680f996ef6e1bed28001691dcb4e6ef1e721e37cefcfd112`
-
-```dockerfile
-RUN cd /usr/local/bin \
-	&& ln -s idle3 idle \
-	&& ln -s pydoc3 pydoc \
-	&& ln -s python3 python \
-	&& ln -s python-config3 python-config
-```
-
--	Created: Wed, 11 Nov 2015 10:27:27 GMT
--	Parent Layer: `0d42ef488c5e35820ff189f8a6f4353fc0aaf10f39de4ea2deff600b75503bb9`
--	Docker Version: 1.9.0
--	Virtual Size: 32.0 B
--	v2 Blob: `sha256:888ed62458721ffb1d62d1e539365ed7273a17b5a04a109ab4ec9cfd9240ce95`
--	v2 Content-Length: 236.0 B
--	v2 Last-Modified: Wed, 11 Nov 2015 20:54:34 GMT
-
-#### `d6f2c2d52f99ea1933668edb58ed3f218c469f9b04ae75fc92215226a3fc2e50`
-
-```dockerfile
-CMD ["python3"]
-```
-
--	Created: Wed, 11 Nov 2015 10:27:27 GMT
--	Parent Layer: `a62e993bb983315c680f996ef6e1bed28001691dcb4e6ef1e721e37cefcfd112`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `f7291063d2706ece65c46b3ca1a1ab4771de81f0399bc8cac89968216e2e1840`
-
-```dockerfile
-RUN mkdir -p /usr/src/app
-```
-
--	Created: Wed, 11 Nov 2015 10:27:53 GMT
--	Parent Layer: `d6f2c2d52f99ea1933668edb58ed3f218c469f9b04ae75fc92215226a3fc2e50`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:c2b6170e2c92b0c75acc1aff6f8a50c1e157fbc038c85d402e8e8ac1a1bf8d7a`
--	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Wed, 11 Nov 2015 20:55:40 GMT
-
-#### `3ee101f7d2b9c79b5d3269ea56bafed957dc1b78528963d35a10ceefb9b36694`
-
-```dockerfile
-WORKDIR /usr/src/app
-```
-
--	Created: Wed, 11 Nov 2015 10:27:53 GMT
--	Parent Layer: `f7291063d2706ece65c46b3ca1a1ab4771de81f0399bc8cac89968216e2e1840`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `3f0828555e48ab266a1914b79a46343f6fccd37ab62011a419fe82eebc985898`
-
-```dockerfile
-ONBUILD COPY requirements.txt /usr/src/app/
-```
-
--	Created: Wed, 11 Nov 2015 10:27:54 GMT
--	Parent Layer: `3ee101f7d2b9c79b5d3269ea56bafed957dc1b78528963d35a10ceefb9b36694`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `8711442fd9f9468d89f6216c3836d263750fb2093c1175efc42fd8afeec9ac31`
-
-```dockerfile
-ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-```
-
--	Created: Wed, 11 Nov 2015 10:27:55 GMT
--	Parent Layer: `3f0828555e48ab266a1914b79a46343f6fccd37ab62011a419fe82eebc985898`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `effef92540e9b951d8651f6089705037f38cc2fb5fe9fdfe1d99f6134c326523`
-
-```dockerfile
-ONBUILD COPY . /usr/src/app
-```
-
--	Created: Wed, 11 Nov 2015 10:27:55 GMT
--	Parent Layer: `8711442fd9f9468d89f6216c3836d263750fb2093c1175efc42fd8afeec9ac31`
--	Docker Version: 1.9.0
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `python:3.3-onbuild`
 
@@ -6146,7 +4396,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -6261,7 +4511,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8bde89b1b879132d234f30d15f3efdb25df80ba84820580e30187b929988e32d`
 
@@ -6289,7 +4539,7 @@ ENV PYTHON_VERSION=3.3.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8b7300119dbe49465a8aa1f838c57f1677799932722b45882ec36c7c499c3732`
 
@@ -6303,7 +4553,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `0d42ef488c5e35820ff189f8a6f4353fc0aaf10f39de4ea2deff600b75503bb9`
 
@@ -6367,7 +4617,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f7291063d2706ece65c46b3ca1a1ab4771de81f0399bc8cac89968216e2e1840`
 
@@ -6395,7 +4645,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `3f0828555e48ab266a1914b79a46343f6fccd37ab62011a419fe82eebc985898`
 
@@ -6409,7 +4659,7 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8711442fd9f9468d89f6216c3836d263750fb2093c1175efc42fd8afeec9ac31`
 
@@ -6423,7 +4673,7 @@ ONBUILD RUN pip install --no-cache-dir -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `effef92540e9b951d8651f6089705037f38cc2fb5fe9fdfe1d99f6134c326523`
 
@@ -6437,7 +4687,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.3.6-slim`
 
@@ -6475,7 +4725,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -6489,7 +4739,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -6503,7 +4753,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -6549,7 +4799,7 @@ ENV PYTHON_VERSION=3.3.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7b1506f8ef8e90eed4e50d02728225bcb96fa4fbda4e0cd21e301b68498a7bde`
 
@@ -6563,7 +4813,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d06a5b5edbeb673197f4bcd0a5cd3973cf5ecf4e985c53bbf4cc752e8d1678b1`
 
@@ -6642,7 +4892,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.3-slim`
 
@@ -6680,7 +4930,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -6694,7 +4944,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -6708,7 +4958,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -6754,7 +5004,7 @@ ENV PYTHON_VERSION=3.3.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7b1506f8ef8e90eed4e50d02728225bcb96fa4fbda4e0cd21e301b68498a7bde`
 
@@ -6768,7 +5018,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d06a5b5edbeb673197f4bcd0a5cd3973cf5ecf4e985c53bbf4cc752e8d1678b1`
 
@@ -6847,7 +5097,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.3.6-wheezy`
 
@@ -6885,7 +5135,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4dc19ad71d9e3baaa1750d2ec9aa458de0e875e7d3fb1cdd2272c7cbd17ea2d9`
 
@@ -7000,7 +5250,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `488ecacd5c8ab41ff944f7034ad0751b2234dc05c6bb233de46e7504ee434cff`
 
@@ -7028,7 +5278,7 @@ ENV PYTHON_VERSION=3.3.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ca8ffa6edac333a9126f01cc5cf49c97591c9a36664cd54c5cf5031e2395b69f`
 
@@ -7042,7 +5292,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `579d6923158a8aeebf42f1cdff53c5664b09aff97822334695cbc6364143010f`
 
@@ -7106,7 +5356,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.3-wheezy`
 
@@ -7144,7 +5394,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4dc19ad71d9e3baaa1750d2ec9aa458de0e875e7d3fb1cdd2272c7cbd17ea2d9`
 
@@ -7259,7 +5509,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `488ecacd5c8ab41ff944f7034ad0751b2234dc05c6bb233de46e7504ee434cff`
 
@@ -7287,7 +5537,7 @@ ENV PYTHON_VERSION=3.3.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ca8ffa6edac333a9126f01cc5cf49c97591c9a36664cd54c5cf5031e2395b69f`
 
@@ -7301,7 +5551,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `579d6923158a8aeebf42f1cdff53c5664b09aff97822334695cbc6364143010f`
 
@@ -7365,7 +5615,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.4.3`
 
@@ -7403,7 +5653,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -7518,7 +5768,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -7546,7 +5796,7 @@ ENV PYTHON_VERSION=3.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c670c1ec93fd2030c8e25ca08270f4fc9821e6c55eaf8a15e66b5ab8114ca51d`
 
@@ -7560,7 +5810,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dd30d3a8882d5574bb161826f74b042200155a668446b42aafc2daeb93a85980`
 
@@ -7624,7 +5874,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.4`
 
@@ -7662,7 +5912,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -7777,7 +6027,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -7805,7 +6055,7 @@ ENV PYTHON_VERSION=3.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c670c1ec93fd2030c8e25ca08270f4fc9821e6c55eaf8a15e66b5ab8114ca51d`
 
@@ -7819,7 +6069,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dd30d3a8882d5574bb161826f74b042200155a668446b42aafc2daeb93a85980`
 
@@ -7883,7 +6133,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.4.3-onbuild`
 
@@ -7921,7 +6171,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -8036,7 +6286,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -8064,7 +6314,7 @@ ENV PYTHON_VERSION=3.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c670c1ec93fd2030c8e25ca08270f4fc9821e6c55eaf8a15e66b5ab8114ca51d`
 
@@ -8078,7 +6328,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dd30d3a8882d5574bb161826f74b042200155a668446b42aafc2daeb93a85980`
 
@@ -8142,7 +6392,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b2c98d636f8977a993cd0cbc583869acec5dc95ebb80815c3f9c0304cef06c68`
 
@@ -8170,7 +6420,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `24a28866fec98f37727d097a3d29b9d8f779875bca648ea5463144f54bbb1994`
 
@@ -8184,7 +6434,7 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `57e1f2f5f87d6c9d7c5f764d6bfec08e238e4cde246d4c05c43798f9a296792a`
 
@@ -8198,7 +6448,7 @@ ONBUILD RUN pip install --no-cache-dir -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `540b4a39c7e2bd6adbc6af2add5673a7bc570f596cfdec3b01af58081d73ad0c`
 
@@ -8212,7 +6462,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.4-onbuild`
 
@@ -8250,7 +6500,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -8365,7 +6615,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -8393,7 +6643,7 @@ ENV PYTHON_VERSION=3.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c670c1ec93fd2030c8e25ca08270f4fc9821e6c55eaf8a15e66b5ab8114ca51d`
 
@@ -8407,7 +6657,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dd30d3a8882d5574bb161826f74b042200155a668446b42aafc2daeb93a85980`
 
@@ -8471,7 +6721,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b2c98d636f8977a993cd0cbc583869acec5dc95ebb80815c3f9c0304cef06c68`
 
@@ -8499,7 +6749,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `24a28866fec98f37727d097a3d29b9d8f779875bca648ea5463144f54bbb1994`
 
@@ -8513,7 +6763,7 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `57e1f2f5f87d6c9d7c5f764d6bfec08e238e4cde246d4c05c43798f9a296792a`
 
@@ -8527,7 +6777,7 @@ ONBUILD RUN pip install --no-cache-dir -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `540b4a39c7e2bd6adbc6af2add5673a7bc570f596cfdec3b01af58081d73ad0c`
 
@@ -8541,7 +6791,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.4.3-slim`
 
@@ -8579,7 +6829,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -8593,7 +6843,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -8607,7 +6857,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -8653,7 +6903,7 @@ ENV PYTHON_VERSION=3.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `cce4af3876ad140b2783d0393f5b46275c65aa35e4e61bb64c1811993095e7d9`
 
@@ -8667,7 +6917,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ce8c4b6520f15341c3bc9770c30ac4998c3b3d35abe0f84628a86730f9aca40b`
 
@@ -8746,7 +6996,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.4-slim`
 
@@ -8784,7 +7034,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -8798,7 +7048,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -8812,7 +7062,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -8858,7 +7108,7 @@ ENV PYTHON_VERSION=3.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `cce4af3876ad140b2783d0393f5b46275c65aa35e4e61bb64c1811993095e7d9`
 
@@ -8872,7 +7122,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ce8c4b6520f15341c3bc9770c30ac4998c3b3d35abe0f84628a86730f9aca40b`
 
@@ -8951,7 +7201,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.4.3-wheezy`
 
@@ -8989,7 +7239,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4dc19ad71d9e3baaa1750d2ec9aa458de0e875e7d3fb1cdd2272c7cbd17ea2d9`
 
@@ -9104,7 +7354,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `cca95fd95f5b16ad2f8ad3f8b47cdb0e161e12ac65a7bd0d2561890dcd1b1507`
 
@@ -9132,7 +7382,7 @@ ENV PYTHON_VERSION=3.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8575eda4c5d8935d03b684b271f2012e01916a703fbee8a76e671d9ca1ed8253`
 
@@ -9146,7 +7396,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b471c94a08c9aeeb684e0d87f85d22c6f8408f5e6ebd250441754eac0459faf6`
 
@@ -9210,7 +7460,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.4-wheezy`
 
@@ -9248,7 +7498,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4dc19ad71d9e3baaa1750d2ec9aa458de0e875e7d3fb1cdd2272c7cbd17ea2d9`
 
@@ -9363,7 +7613,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `cca95fd95f5b16ad2f8ad3f8b47cdb0e161e12ac65a7bd0d2561890dcd1b1507`
 
@@ -9391,7 +7641,7 @@ ENV PYTHON_VERSION=3.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8575eda4c5d8935d03b684b271f2012e01916a703fbee8a76e671d9ca1ed8253`
 
@@ -9405,7 +7655,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b471c94a08c9aeeb684e0d87f85d22c6f8408f5e6ebd250441754eac0459faf6`
 
@@ -9469,7 +7719,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.5.0`
 
@@ -9507,7 +7757,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -9622,7 +7872,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -9650,7 +7900,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `465ec8e981cc30ddf0feff52ff09c47f070a4c8f136a42b0aacbb71f93843f55`
 
@@ -9664,7 +7914,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ec92e08addb1dca973085c29469b741e3935cdbe19139ca22dbdb348fbcd5242`
 
@@ -9728,7 +7978,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.5`
 
@@ -9766,7 +8016,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -9881,7 +8131,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -9909,7 +8159,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `465ec8e981cc30ddf0feff52ff09c47f070a4c8f136a42b0aacbb71f93843f55`
 
@@ -9923,7 +8173,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ec92e08addb1dca973085c29469b741e3935cdbe19139ca22dbdb348fbcd5242`
 
@@ -9987,7 +8237,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3`
 
@@ -10025,7 +8275,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -10140,7 +8390,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -10168,7 +8418,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `465ec8e981cc30ddf0feff52ff09c47f070a4c8f136a42b0aacbb71f93843f55`
 
@@ -10182,7 +8432,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ec92e08addb1dca973085c29469b741e3935cdbe19139ca22dbdb348fbcd5242`
 
@@ -10246,7 +8496,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:latest`
 
@@ -10284,7 +8534,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -10399,7 +8649,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -10427,7 +8677,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `465ec8e981cc30ddf0feff52ff09c47f070a4c8f136a42b0aacbb71f93843f55`
 
@@ -10441,7 +8691,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ec92e08addb1dca973085c29469b741e3935cdbe19139ca22dbdb348fbcd5242`
 
@@ -10505,7 +8755,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.5.0-onbuild`
 
@@ -10543,7 +8793,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -10658,7 +8908,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -10686,7 +8936,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `465ec8e981cc30ddf0feff52ff09c47f070a4c8f136a42b0aacbb71f93843f55`
 
@@ -10700,7 +8950,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ec92e08addb1dca973085c29469b741e3935cdbe19139ca22dbdb348fbcd5242`
 
@@ -10764,7 +9014,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `55f048c7ae28752100ba3e49c44838832ada9d63082c134d76ff39c420ba507e`
 
@@ -10792,7 +9042,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2e1d7d94031404a5bdd67b78fdf6ea421be4d06f42b06ce26251eee60f310230`
 
@@ -10806,7 +9056,7 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `21f91b8e8bddd82d3cb3492ae00c0140a21382bf01035f9a2035e24cb85bb1a9`
 
@@ -10820,7 +9070,7 @@ ONBUILD RUN pip install --no-cache-dir -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f896d57cf5af6ceb92788c9a22ed22c2e5bb311d8431a699e0b9a062638b4773`
 
@@ -10834,7 +9084,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.5-onbuild`
 
@@ -10872,7 +9122,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -10987,7 +9237,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -11015,7 +9265,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `465ec8e981cc30ddf0feff52ff09c47f070a4c8f136a42b0aacbb71f93843f55`
 
@@ -11029,7 +9279,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ec92e08addb1dca973085c29469b741e3935cdbe19139ca22dbdb348fbcd5242`
 
@@ -11093,7 +9343,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `55f048c7ae28752100ba3e49c44838832ada9d63082c134d76ff39c420ba507e`
 
@@ -11121,7 +9371,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2e1d7d94031404a5bdd67b78fdf6ea421be4d06f42b06ce26251eee60f310230`
 
@@ -11135,7 +9385,7 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `21f91b8e8bddd82d3cb3492ae00c0140a21382bf01035f9a2035e24cb85bb1a9`
 
@@ -11149,7 +9399,7 @@ ONBUILD RUN pip install --no-cache-dir -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f896d57cf5af6ceb92788c9a22ed22c2e5bb311d8431a699e0b9a062638b4773`
 
@@ -11163,7 +9413,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3-onbuild`
 
@@ -11201,7 +9451,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -11316,7 +9566,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -11344,7 +9594,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `465ec8e981cc30ddf0feff52ff09c47f070a4c8f136a42b0aacbb71f93843f55`
 
@@ -11358,7 +9608,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ec92e08addb1dca973085c29469b741e3935cdbe19139ca22dbdb348fbcd5242`
 
@@ -11422,7 +9672,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `55f048c7ae28752100ba3e49c44838832ada9d63082c134d76ff39c420ba507e`
 
@@ -11450,7 +9700,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2e1d7d94031404a5bdd67b78fdf6ea421be4d06f42b06ce26251eee60f310230`
 
@@ -11464,7 +9714,7 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `21f91b8e8bddd82d3cb3492ae00c0140a21382bf01035f9a2035e24cb85bb1a9`
 
@@ -11478,7 +9728,7 @@ ONBUILD RUN pip install --no-cache-dir -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f896d57cf5af6ceb92788c9a22ed22c2e5bb311d8431a699e0b9a062638b4773`
 
@@ -11492,7 +9742,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:onbuild`
 
@@ -11530,7 +9780,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -11645,7 +9895,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7f87ae9f0d31d98fe03e76bf87415a398aef0922bfc8f79676a5234150ca075c`
 
@@ -11673,7 +9923,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `465ec8e981cc30ddf0feff52ff09c47f070a4c8f136a42b0aacbb71f93843f55`
 
@@ -11687,7 +9937,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ec92e08addb1dca973085c29469b741e3935cdbe19139ca22dbdb348fbcd5242`
 
@@ -11751,7 +10001,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `55f048c7ae28752100ba3e49c44838832ada9d63082c134d76ff39c420ba507e`
 
@@ -11779,7 +10029,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2e1d7d94031404a5bdd67b78fdf6ea421be4d06f42b06ce26251eee60f310230`
 
@@ -11793,7 +10043,7 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `21f91b8e8bddd82d3cb3492ae00c0140a21382bf01035f9a2035e24cb85bb1a9`
 
@@ -11807,7 +10057,7 @@ ONBUILD RUN pip install --no-cache-dir -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f896d57cf5af6ceb92788c9a22ed22c2e5bb311d8431a699e0b9a062638b4773`
 
@@ -11821,7 +10071,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.5.0-slim`
 
@@ -11859,7 +10109,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -11873,7 +10123,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -11887,7 +10137,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -11933,7 +10183,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `481f9d66de6c2c015dc72e0bffa14d92b802ea28438f8334e36deddb1202325d`
 
@@ -11947,7 +10197,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b8daab27b894619f975b8c14c74de28fd39ac6301c4dd74b8541c2c03742b972`
 
@@ -12026,7 +10276,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3.5-slim`
 
@@ -12064,7 +10314,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -12078,7 +10328,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -12092,7 +10342,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -12138,7 +10388,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `481f9d66de6c2c015dc72e0bffa14d92b802ea28438f8334e36deddb1202325d`
 
@@ -12152,7 +10402,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b8daab27b894619f975b8c14c74de28fd39ac6301c4dd74b8541c2c03742b972`
 
@@ -12231,7 +10481,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:3-slim`
 
@@ -12269,7 +10519,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -12283,7 +10533,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -12297,7 +10547,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -12343,7 +10593,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `481f9d66de6c2c015dc72e0bffa14d92b802ea28438f8334e36deddb1202325d`
 
@@ -12357,7 +10607,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b8daab27b894619f975b8c14c74de28fd39ac6301c4dd74b8541c2c03742b972`
 
@@ -12436,7 +10686,7 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `python:slim`
 
@@ -12474,7 +10724,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7c5108a910f47faa7233ae47f9ae4c0ae29a7d3856364e37e92cd063b624f4e9`
 
@@ -12488,7 +10738,7 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2d3a98ffc572b4e1ab80d78ce4c605277844c8b6949c4776c1e3be5d4ac84357`
 
@@ -12502,7 +10752,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `68e2ca1c1dbb67492ea0db634a51efb4665910d1858f6a07abd86bff196ac9e6`
 
@@ -12548,7 +10798,7 @@ ENV PYTHON_VERSION=3.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `481f9d66de6c2c015dc72e0bffa14d92b802ea28438f8334e36deddb1202325d`
 
@@ -12562,7 +10812,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b8daab27b894619f975b8c14c74de28fd39ac6301c4dd74b8541c2c03742b972`
 
@@ -12641,4 +10891,4 @@ CMD ["python3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
