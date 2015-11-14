@@ -29,7 +29,7 @@
 ## `debian:8.2`
 
 ```console
-$ docker pull library/debian@sha256:f9c3c77c9c7a6e8aa7874dd7fe90112181724eaa55886f3728e3cc39dc4b6199
+$ docker pull library/debian@sha256:3f082f764af2ad3b25ac8dd9df2abafcaffb0e79bdded898975ad33b91497795
 ```
 
 -	Total Virtual Size: 125.1 MB (125112192 bytes)
@@ -37,7 +37,7 @@ $ docker pull library/debian@sha256:f9c3c77c9c7a6e8aa7874dd7fe90112181724eaa5588
 
 ### Layers (2)
 
-#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+#### `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 
 ```dockerfile
 ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
@@ -50,19 +50,19 @@ ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 -	v2 Content-Length: 51.4 MB (51353062 bytes)
 -	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+#### `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
 -	Created: Tue, 10 Nov 2015 00:31:11 GMT
--	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Parent Layer: `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:8`
 
@@ -100,7 +100,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:jessie`
 
@@ -138,7 +138,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:latest`
 
@@ -176,12 +176,12 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:jessie-backports`
 
 ```console
-$ docker pull library/debian@sha256:7a952d8ca7ab6b79675c39d652116cb2aa18acab5364b0e501d6c26eead66896
+$ docker pull library/debian@sha256:e8cc4196b9287b044529bdbb541e79d44ed1593c09286399b67515cd3b51eb74
 ```
 
 -	Total Virtual Size: 125.1 MB (125112253 bytes)
@@ -189,7 +189,7 @@ $ docker pull library/debian@sha256:7a952d8ca7ab6b79675c39d652116cb2aa18acab5364
 
 ### Layers (3)
 
-#### `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+#### `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 
 ```dockerfile
 ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
@@ -202,33 +202,19 @@ ADD file:3037fa9e903e9ae5338ac1dd3adf8d3ff2d165d3a9b550c64879651582c77dc4 in /
 -	v2 Content-Length: 51.4 MB (51353062 bytes)
 -	v2 Last-Modified: Mon, 09 Nov 2015 21:52:26 GMT
 
-#### `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
+#### `21845f98d5b66b8eee26666d67bdb49015058557c3218bb9584f2be33a68c5d2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
 -	Created: Tue, 10 Nov 2015 00:31:11 GMT
--	Parent Layer: `ef2704e74ecc859442589f139553775bfa5a8a892afb40e480017fe23036eec8`
+-	Parent Layer: `16d3472bba115a7859ddcf4e33c5664449452e454146761a32e63fce879e8925`
 -	Docker Version: 1.9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
-
-#### `9e9e62af0532d0163b7c6fc979448202fc1c77e5601159458893aa57d9bf3fd6`
-
-```dockerfile
-RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
-```
-
--	Created: Tue, 10 Nov 2015 00:31:39 GMT
--	Parent Layer: `1d6f63d023f51ae1bbc8c5623bcde3de05751dbe9bba5ae4b3405005f8b856c9`
--	Docker Version: 1.9.0
--	Virtual Size: 61.0 B
--	v2 Blob: `sha256:f69e4e3a719871136bc9a59491dc2151a239bab3fdd99660cf0b319d165b67d9`
--	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 10 Nov 2015 17:53:18 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:oldstable`
 
@@ -266,7 +252,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:oldstable-backports`
 
@@ -304,7 +290,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `2c6615a1efa205d126da4f7ea6d31899adc25461d595d579b96f79b20065627d`
 
@@ -356,7 +342,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:6.0.10`
 
@@ -394,7 +380,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:6.0`
 
@@ -432,7 +418,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:6`
 
@@ -470,7 +456,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:squeeze`
 
@@ -508,7 +494,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:stable`
 
@@ -546,7 +532,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:stable-backports`
 
@@ -584,7 +570,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a781ff24eb2bbd3d0d85d991e4f71ba6174291439c567710a308c2ae4e03c94a`
 
@@ -636,7 +622,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:testing`
 
@@ -674,7 +660,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:unstable`
 
@@ -712,7 +698,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:7.9`
 
@@ -750,7 +736,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:7`
 
@@ -788,7 +774,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:wheezy`
 
@@ -826,7 +812,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `debian:wheezy-backports`
 
@@ -864,7 +850,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `9d8e46563b426fbeaf975b402929c39d4354dfd00fe604457beda647c270e058`
 
@@ -916,7 +902,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `0f646414411766a4f325f7dfe61a7164107cd22d2899af4fc219cfc79f89281e`
 
@@ -968,7 +954,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `bcbb09950787a5f5a3fb94c84495de2f753dcb39b53a5a9c2c89f372cc8aa1b0`
 
