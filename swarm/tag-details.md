@@ -69,7 +69,7 @@ ENV SWARM_HOST=:2375
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `2ea96b3590d84d1359e9767f210dbd11465d6888c3376eae81166109f903e44b`
 
@@ -83,7 +83,7 @@ EXPOSE 2375/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `12a239a7cb01a3098045aed89edd06724b5a80670f201dbc70ffaa2ff77aae01`
 
@@ -97,7 +97,7 @@ VOLUME [/.swarm]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `26b910067c5f19b5ec691e85b486cf508739ad60158d61f295c12e29d062dbaa`
 
@@ -111,7 +111,7 @@ ENTRYPOINT &{["/swarm"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `e12f8c5e4c3be1726390e991e8b203df7cdbf4bb61fb307c9d48023e366eebb6`
 
@@ -125,7 +125,7 @@ CMD ["--help"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `swarm:latest`
 
@@ -191,7 +191,7 @@ ENV SWARM_HOST=:2375
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `2ea96b3590d84d1359e9767f210dbd11465d6888c3376eae81166109f903e44b`
 
@@ -205,7 +205,7 @@ EXPOSE 2375/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `12a239a7cb01a3098045aed89edd06724b5a80670f201dbc70ffaa2ff77aae01`
 
@@ -219,7 +219,7 @@ VOLUME [/.swarm]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `26b910067c5f19b5ec691e85b486cf508739ad60158d61f295c12e29d062dbaa`
 
@@ -233,7 +233,7 @@ ENTRYPOINT &{["/swarm"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `e12f8c5e4c3be1726390e991e8b203df7cdbf4bb61fb307c9d48023e366eebb6`
 
@@ -247,4 +247,4 @@ CMD ["--help"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
