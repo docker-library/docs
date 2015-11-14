@@ -47,7 +47,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `79513532b284fb7c55dd35732a2c8f3e4b7cb31e1d8fbb10659fbf1c2205118b`
 
@@ -123,7 +123,7 @@ ENV KIBANA_VERSION=4.0.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a342d439cd29c7f2cb6beb6b41fcac8c094a65e0f212f99e9f923ee959f26198`
 
@@ -137,7 +137,7 @@ ENV KIBANA_SHA1=75312e930466430167a7e01be3ae41aeaf01a26c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4fe80341e393fb73dd8bf390170cac355a0b9b6366603a13c44ffc4c9dd57b57`
 
@@ -170,7 +170,7 @@ ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b84d8fceb8abbcf61040511b2e2a0e5378165c76385283c363726da68a189edf`
 
@@ -198,7 +198,7 @@ EXPOSE 5601/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `daf2936b072dbb7f4ce9791ca8fbb142e62db51446352e424b87a672dc714291`
 
@@ -212,7 +212,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `593fbad898488d0ee09ea93c8f9d6b087636312c71ed74d1a549aef39065281b`
 
@@ -226,7 +226,7 @@ CMD ["kibana"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:4.0`
 
@@ -264,7 +264,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `79513532b284fb7c55dd35732a2c8f3e4b7cb31e1d8fbb10659fbf1c2205118b`
 
@@ -340,7 +340,7 @@ ENV KIBANA_VERSION=4.0.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a342d439cd29c7f2cb6beb6b41fcac8c094a65e0f212f99e9f923ee959f26198`
 
@@ -354,7 +354,7 @@ ENV KIBANA_SHA1=75312e930466430167a7e01be3ae41aeaf01a26c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4fe80341e393fb73dd8bf390170cac355a0b9b6366603a13c44ffc4c9dd57b57`
 
@@ -387,7 +387,7 @@ ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `b84d8fceb8abbcf61040511b2e2a0e5378165c76385283c363726da68a189edf`
 
@@ -415,7 +415,7 @@ EXPOSE 5601/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `daf2936b072dbb7f4ce9791ca8fbb142e62db51446352e424b87a672dc714291`
 
@@ -429,7 +429,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `593fbad898488d0ee09ea93c8f9d6b087636312c71ed74d1a549aef39065281b`
 
@@ -443,7 +443,7 @@ CMD ["kibana"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:4.1.2`
 
@@ -481,7 +481,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `79513532b284fb7c55dd35732a2c8f3e4b7cb31e1d8fbb10659fbf1c2205118b`
 
@@ -557,7 +557,7 @@ ENV KIBANA_VERSION=4.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `65c664420467849cf8be8895a6ffaa0ec9a6f5425e1fd9b3cc6fd30f6d7024ef`
 
@@ -571,7 +571,7 @@ ENV KIBANA_SHA1=45e67114f7dac4ccac8118bf98ee8f6362c7a6a1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `784ed974b4c035f0b098461458fb025034d05d50e027ec6758511069d763bb91`
 
@@ -604,7 +604,7 @@ ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `10058b0549e0a5ced0bb3ea97d01119340d47b709887f3c0388b5735fc0922bc`
 
@@ -632,7 +632,7 @@ EXPOSE 5601/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `9a66683be8ef42228752b51f4312f33ca0584feb23170fe431e2902c495ea724`
 
@@ -646,7 +646,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a675fc6627724dd749b24475ebd51babc4685e70e091e154720a765735f10edc`
 
@@ -660,7 +660,7 @@ CMD ["kibana"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:4.1`
 
@@ -698,7 +698,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `79513532b284fb7c55dd35732a2c8f3e4b7cb31e1d8fbb10659fbf1c2205118b`
 
@@ -774,7 +774,7 @@ ENV KIBANA_VERSION=4.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `65c664420467849cf8be8895a6ffaa0ec9a6f5425e1fd9b3cc6fd30f6d7024ef`
 
@@ -788,7 +788,7 @@ ENV KIBANA_SHA1=45e67114f7dac4ccac8118bf98ee8f6362c7a6a1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `784ed974b4c035f0b098461458fb025034d05d50e027ec6758511069d763bb91`
 
@@ -821,7 +821,7 @@ ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `10058b0549e0a5ced0bb3ea97d01119340d47b709887f3c0388b5735fc0922bc`
 
@@ -849,7 +849,7 @@ EXPOSE 5601/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `9a66683be8ef42228752b51f4312f33ca0584feb23170fe431e2902c495ea724`
 
@@ -863,7 +863,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `a675fc6627724dd749b24475ebd51babc4685e70e091e154720a765735f10edc`
 
@@ -877,7 +877,7 @@ CMD ["kibana"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:4.2.0`
 
@@ -915,7 +915,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `d25c375e48f834683607aab15b2d23a7be240773ac28d2a7758c9d676b6ebd37`
 
@@ -991,7 +991,7 @@ ENV KIBANA_VERSION=4.2.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `01274ce03b8900ca0e4de3ac552bf1c9252a168db120752a9c9c0d3817b2ad85`
 
@@ -1005,7 +1005,7 @@ ENV KIBANA_SHA1=094e197c687012211ae0e291faf3111d47e714d9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `af87525399b2a96f97377e572821afaaad676a213cad328874a955bf4a8ec8bd`
 
@@ -1039,7 +1039,7 @@ ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `aa1f0caaa08cb276fa6c51a7f4ac3fc2aa89c575341a8a3cb68e033e574ac1f0`
 
@@ -1067,7 +1067,7 @@ EXPOSE 5601/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `ae484607f32306ac175262df1a7f009379b50f3bec8a15512e62f7c41299cf9c`
 
@@ -1081,7 +1081,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4cc803912990bcc1cbfc508f638353a119d4064bc889309b083a2874ded45df7`
 
@@ -1095,7 +1095,7 @@ CMD ["kibana"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:4.2`
 
@@ -1133,7 +1133,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `d25c375e48f834683607aab15b2d23a7be240773ac28d2a7758c9d676b6ebd37`
 
@@ -1209,7 +1209,7 @@ ENV KIBANA_VERSION=4.2.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `01274ce03b8900ca0e4de3ac552bf1c9252a168db120752a9c9c0d3817b2ad85`
 
@@ -1223,7 +1223,7 @@ ENV KIBANA_SHA1=094e197c687012211ae0e291faf3111d47e714d9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `af87525399b2a96f97377e572821afaaad676a213cad328874a955bf4a8ec8bd`
 
@@ -1257,7 +1257,7 @@ ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `aa1f0caaa08cb276fa6c51a7f4ac3fc2aa89c575341a8a3cb68e033e574ac1f0`
 
@@ -1285,7 +1285,7 @@ EXPOSE 5601/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `ae484607f32306ac175262df1a7f009379b50f3bec8a15512e62f7c41299cf9c`
 
@@ -1299,7 +1299,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4cc803912990bcc1cbfc508f638353a119d4064bc889309b083a2874ded45df7`
 
@@ -1313,7 +1313,7 @@ CMD ["kibana"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:4`
 
@@ -1351,7 +1351,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `d25c375e48f834683607aab15b2d23a7be240773ac28d2a7758c9d676b6ebd37`
 
@@ -1427,7 +1427,7 @@ ENV KIBANA_VERSION=4.2.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `01274ce03b8900ca0e4de3ac552bf1c9252a168db120752a9c9c0d3817b2ad85`
 
@@ -1441,7 +1441,7 @@ ENV KIBANA_SHA1=094e197c687012211ae0e291faf3111d47e714d9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `af87525399b2a96f97377e572821afaaad676a213cad328874a955bf4a8ec8bd`
 
@@ -1475,7 +1475,7 @@ ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `aa1f0caaa08cb276fa6c51a7f4ac3fc2aa89c575341a8a3cb68e033e574ac1f0`
 
@@ -1503,7 +1503,7 @@ EXPOSE 5601/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `ae484607f32306ac175262df1a7f009379b50f3bec8a15512e62f7c41299cf9c`
 
@@ -1517,7 +1517,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4cc803912990bcc1cbfc508f638353a119d4064bc889309b083a2874ded45df7`
 
@@ -1531,7 +1531,7 @@ CMD ["kibana"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `kibana:latest`
 
@@ -1569,7 +1569,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `d25c375e48f834683607aab15b2d23a7be240773ac28d2a7758c9d676b6ebd37`
 
@@ -1645,7 +1645,7 @@ ENV KIBANA_VERSION=4.2.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `01274ce03b8900ca0e4de3ac552bf1c9252a168db120752a9c9c0d3817b2ad85`
 
@@ -1659,7 +1659,7 @@ ENV KIBANA_SHA1=094e197c687012211ae0e291faf3111d47e714d9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `af87525399b2a96f97377e572821afaaad676a213cad328874a955bf4a8ec8bd`
 
@@ -1693,7 +1693,7 @@ ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `aa1f0caaa08cb276fa6c51a7f4ac3fc2aa89c575341a8a3cb68e033e574ac1f0`
 
@@ -1721,7 +1721,7 @@ EXPOSE 5601/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `ae484607f32306ac175262df1a7f009379b50f3bec8a15512e62f7c41299cf9c`
 
@@ -1735,7 +1735,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `4cc803912990bcc1cbfc508f638353a119d4064bc889309b083a2874ded45df7`
 
@@ -1749,4 +1749,4 @@ CMD ["kibana"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
