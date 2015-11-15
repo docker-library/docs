@@ -27,7 +27,7 @@ MAINTAINER Derek Collison <derek@apcera.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6b09ac146eeba1d46649ba43cea3d3e5fd64969f52fbfe9b62b2a6ce2028bf1e`
 
@@ -69,7 +69,7 @@ EXPOSE 4222/tcp 6222/tcp 8222/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `57d573fed7c7cda2b8736787def9ef023b228e67ff847d6649c95eb96b2c48f7`
 
@@ -83,7 +83,7 @@ ENTRYPOINT &{["/gnatsd" "-c" "/gnatsd.conf"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `506169ababa2d03785a01026293221eb38b5b0bc6da9351c4952cc70b765a74d`
 
@@ -97,7 +97,7 @@ CMD []
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 ## `nats:latest`
 
@@ -121,7 +121,7 @@ MAINTAINER Derek Collison <derek@apcera.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `6b09ac146eeba1d46649ba43cea3d3e5fd64969f52fbfe9b62b2a6ce2028bf1e`
 
@@ -163,7 +163,7 @@ EXPOSE 4222/tcp 6222/tcp 8222/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `57d573fed7c7cda2b8736787def9ef023b228e67ff847d6649c95eb96b2c48f7`
 
@@ -177,7 +177,7 @@ ENTRYPOINT &{["/gnatsd" "-c" "/gnatsd.conf"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
 
 #### `506169ababa2d03785a01026293221eb38b5b0bc6da9351c4952cc70b765a74d`
 
@@ -191,4 +191,4 @@ CMD []
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
