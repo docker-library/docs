@@ -42,7 +42,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `144a31229eb5845b8ef4cbcb3001d1561fe74dc0b5d8b71eca93605b89ae0b87`
 
@@ -56,7 +56,7 @@ MAINTAINER Adam Hawkins <adam@hawkins.io>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0beda11d27602a6853920ff379ea246ec44571ff98844d55b21e286389a38a28`
 
@@ -70,7 +70,7 @@ ENV THRIFT_VERSION=0.9.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `967e192c8f1aa0c99b6bdb5fe399978e902364de7d101c3f4a5f0fbb571a3b65`
 
@@ -131,7 +131,7 @@ CMD ["thrift"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `thrift:0.9.2`
 
@@ -169,7 +169,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `144a31229eb5845b8ef4cbcb3001d1561fe74dc0b5d8b71eca93605b89ae0b87`
 
@@ -183,7 +183,7 @@ MAINTAINER Adam Hawkins <adam@hawkins.io>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0beda11d27602a6853920ff379ea246ec44571ff98844d55b21e286389a38a28`
 
@@ -197,7 +197,7 @@ ENV THRIFT_VERSION=0.9.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `967e192c8f1aa0c99b6bdb5fe399978e902364de7d101c3f4a5f0fbb571a3b65`
 
@@ -258,7 +258,7 @@ CMD ["thrift"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `thrift:latest`
 
@@ -296,7 +296,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `144a31229eb5845b8ef4cbcb3001d1561fe74dc0b5d8b71eca93605b89ae0b87`
 
@@ -310,7 +310,7 @@ MAINTAINER Adam Hawkins <adam@hawkins.io>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0beda11d27602a6853920ff379ea246ec44571ff98844d55b21e286389a38a28`
 
@@ -324,7 +324,7 @@ ENV THRIFT_VERSION=0.9.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `967e192c8f1aa0c99b6bdb5fe399978e902364de7d101c3f4a5f0fbb571a3b65`
 
@@ -385,4 +385,4 @@ CMD ["thrift"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
