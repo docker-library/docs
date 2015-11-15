@@ -55,7 +55,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -115,7 +115,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -129,7 +129,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -143,7 +143,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -157,7 +157,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -232,7 +232,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -246,7 +246,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -274,7 +274,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -288,7 +288,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -319,7 +319,7 @@ ENV JETTY_VERSION=9.3.5.v20151012
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c899b317cf19491f0daca6bf54f5bc12800659eb004d05a968d618d80d250763`
 
@@ -333,7 +333,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dc50ff9ce58d6ca09cd68d1c50e5a5f7104c8cf6a93908c76f10b8e4b1bc5ee9`
 
@@ -368,7 +368,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `df1f4f68bff3f87edeb7eacaa6f976c24fddd52a241a01e00b1a830b8c34ee44`
 
@@ -396,7 +396,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b68c6a1550ccd87e2e60686a58c191fbbbd8b01cbab00e7eed8e7ea263b9d074`
 
@@ -426,7 +426,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d8849070d0360db36d54ebb7c4a47e2ba00c7607d2c6d786c647e60450ad5e7`
 
@@ -440,7 +440,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `60c8e33a33d25f8db28636f60302130c73d5ca5ae4d625ec9b0d01d07b6b81c1`
 
@@ -454,7 +454,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f05ebfdc9cb70dd8993e492b4dd30f787e23975d26b88d1f30005533e49b3af6`
 
@@ -498,7 +498,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6d61261558bb451237759bd8d1e16489b5109f766f3e4523d0200014334797d`
 
@@ -512,7 +512,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d3559896073acc84b82b3c63dfb3c139fbc6866dfc865f3c88dc10a016a2081`
 
@@ -526,7 +526,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9.3`
 
@@ -564,7 +564,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -624,7 +624,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -638,7 +638,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -652,7 +652,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -666,7 +666,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -741,7 +741,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -755,7 +755,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -783,7 +783,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -797,7 +797,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -828,7 +828,7 @@ ENV JETTY_VERSION=9.3.5.v20151012
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c899b317cf19491f0daca6bf54f5bc12800659eb004d05a968d618d80d250763`
 
@@ -842,7 +842,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dc50ff9ce58d6ca09cd68d1c50e5a5f7104c8cf6a93908c76f10b8e4b1bc5ee9`
 
@@ -877,7 +877,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `df1f4f68bff3f87edeb7eacaa6f976c24fddd52a241a01e00b1a830b8c34ee44`
 
@@ -905,7 +905,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b68c6a1550ccd87e2e60686a58c191fbbbd8b01cbab00e7eed8e7ea263b9d074`
 
@@ -935,7 +935,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d8849070d0360db36d54ebb7c4a47e2ba00c7607d2c6d786c647e60450ad5e7`
 
@@ -949,7 +949,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `60c8e33a33d25f8db28636f60302130c73d5ca5ae4d625ec9b0d01d07b6b81c1`
 
@@ -963,7 +963,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f05ebfdc9cb70dd8993e492b4dd30f787e23975d26b88d1f30005533e49b3af6`
 
@@ -1007,7 +1007,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6d61261558bb451237759bd8d1e16489b5109f766f3e4523d0200014334797d`
 
@@ -1021,7 +1021,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d3559896073acc84b82b3c63dfb3c139fbc6866dfc865f3c88dc10a016a2081`
 
@@ -1035,7 +1035,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9`
 
@@ -1073,7 +1073,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -1133,7 +1133,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -1147,7 +1147,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -1161,7 +1161,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -1175,7 +1175,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -1250,7 +1250,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -1264,7 +1264,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -1292,7 +1292,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -1306,7 +1306,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -1337,7 +1337,7 @@ ENV JETTY_VERSION=9.3.5.v20151012
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c899b317cf19491f0daca6bf54f5bc12800659eb004d05a968d618d80d250763`
 
@@ -1351,7 +1351,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dc50ff9ce58d6ca09cd68d1c50e5a5f7104c8cf6a93908c76f10b8e4b1bc5ee9`
 
@@ -1386,7 +1386,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `df1f4f68bff3f87edeb7eacaa6f976c24fddd52a241a01e00b1a830b8c34ee44`
 
@@ -1414,7 +1414,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b68c6a1550ccd87e2e60686a58c191fbbbd8b01cbab00e7eed8e7ea263b9d074`
 
@@ -1444,7 +1444,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d8849070d0360db36d54ebb7c4a47e2ba00c7607d2c6d786c647e60450ad5e7`
 
@@ -1458,7 +1458,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `60c8e33a33d25f8db28636f60302130c73d5ca5ae4d625ec9b0d01d07b6b81c1`
 
@@ -1472,7 +1472,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f05ebfdc9cb70dd8993e492b4dd30f787e23975d26b88d1f30005533e49b3af6`
 
@@ -1516,7 +1516,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6d61261558bb451237759bd8d1e16489b5109f766f3e4523d0200014334797d`
 
@@ -1530,7 +1530,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d3559896073acc84b82b3c63dfb3c139fbc6866dfc865f3c88dc10a016a2081`
 
@@ -1544,7 +1544,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9.3.5-jre8`
 
@@ -1582,7 +1582,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -1642,7 +1642,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -1656,7 +1656,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -1670,7 +1670,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -1684,7 +1684,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -1759,7 +1759,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -1773,7 +1773,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -1801,7 +1801,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -1815,7 +1815,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -1846,7 +1846,7 @@ ENV JETTY_VERSION=9.3.5.v20151012
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c899b317cf19491f0daca6bf54f5bc12800659eb004d05a968d618d80d250763`
 
@@ -1860,7 +1860,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dc50ff9ce58d6ca09cd68d1c50e5a5f7104c8cf6a93908c76f10b8e4b1bc5ee9`
 
@@ -1895,7 +1895,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `df1f4f68bff3f87edeb7eacaa6f976c24fddd52a241a01e00b1a830b8c34ee44`
 
@@ -1923,7 +1923,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b68c6a1550ccd87e2e60686a58c191fbbbd8b01cbab00e7eed8e7ea263b9d074`
 
@@ -1953,7 +1953,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d8849070d0360db36d54ebb7c4a47e2ba00c7607d2c6d786c647e60450ad5e7`
 
@@ -1967,7 +1967,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `60c8e33a33d25f8db28636f60302130c73d5ca5ae4d625ec9b0d01d07b6b81c1`
 
@@ -1981,7 +1981,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f05ebfdc9cb70dd8993e492b4dd30f787e23975d26b88d1f30005533e49b3af6`
 
@@ -2025,7 +2025,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6d61261558bb451237759bd8d1e16489b5109f766f3e4523d0200014334797d`
 
@@ -2039,7 +2039,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d3559896073acc84b82b3c63dfb3c139fbc6866dfc865f3c88dc10a016a2081`
 
@@ -2053,7 +2053,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9.3-jre8`
 
@@ -2091,7 +2091,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -2151,7 +2151,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -2165,7 +2165,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -2179,7 +2179,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -2193,7 +2193,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -2268,7 +2268,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -2282,7 +2282,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -2310,7 +2310,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -2324,7 +2324,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -2355,7 +2355,7 @@ ENV JETTY_VERSION=9.3.5.v20151012
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c899b317cf19491f0daca6bf54f5bc12800659eb004d05a968d618d80d250763`
 
@@ -2369,7 +2369,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dc50ff9ce58d6ca09cd68d1c50e5a5f7104c8cf6a93908c76f10b8e4b1bc5ee9`
 
@@ -2404,7 +2404,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `df1f4f68bff3f87edeb7eacaa6f976c24fddd52a241a01e00b1a830b8c34ee44`
 
@@ -2432,7 +2432,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b68c6a1550ccd87e2e60686a58c191fbbbd8b01cbab00e7eed8e7ea263b9d074`
 
@@ -2462,7 +2462,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d8849070d0360db36d54ebb7c4a47e2ba00c7607d2c6d786c647e60450ad5e7`
 
@@ -2476,7 +2476,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `60c8e33a33d25f8db28636f60302130c73d5ca5ae4d625ec9b0d01d07b6b81c1`
 
@@ -2490,7 +2490,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f05ebfdc9cb70dd8993e492b4dd30f787e23975d26b88d1f30005533e49b3af6`
 
@@ -2534,7 +2534,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6d61261558bb451237759bd8d1e16489b5109f766f3e4523d0200014334797d`
 
@@ -2548,7 +2548,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d3559896073acc84b82b3c63dfb3c139fbc6866dfc865f3c88dc10a016a2081`
 
@@ -2562,7 +2562,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9-jre8`
 
@@ -2600,7 +2600,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -2660,7 +2660,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -2674,7 +2674,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -2688,7 +2688,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -2702,7 +2702,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -2777,7 +2777,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -2791,7 +2791,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -2819,7 +2819,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -2833,7 +2833,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -2864,7 +2864,7 @@ ENV JETTY_VERSION=9.3.5.v20151012
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c899b317cf19491f0daca6bf54f5bc12800659eb004d05a968d618d80d250763`
 
@@ -2878,7 +2878,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dc50ff9ce58d6ca09cd68d1c50e5a5f7104c8cf6a93908c76f10b8e4b1bc5ee9`
 
@@ -2913,7 +2913,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `df1f4f68bff3f87edeb7eacaa6f976c24fddd52a241a01e00b1a830b8c34ee44`
 
@@ -2941,7 +2941,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b68c6a1550ccd87e2e60686a58c191fbbbd8b01cbab00e7eed8e7ea263b9d074`
 
@@ -2971,7 +2971,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d8849070d0360db36d54ebb7c4a47e2ba00c7607d2c6d786c647e60450ad5e7`
 
@@ -2985,7 +2985,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `60c8e33a33d25f8db28636f60302130c73d5ca5ae4d625ec9b0d01d07b6b81c1`
 
@@ -2999,7 +2999,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f05ebfdc9cb70dd8993e492b4dd30f787e23975d26b88d1f30005533e49b3af6`
 
@@ -3043,7 +3043,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6d61261558bb451237759bd8d1e16489b5109f766f3e4523d0200014334797d`
 
@@ -3057,7 +3057,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d3559896073acc84b82b3c63dfb3c139fbc6866dfc865f3c88dc10a016a2081`
 
@@ -3071,7 +3071,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:latest`
 
@@ -3109,7 +3109,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -3169,7 +3169,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -3183,7 +3183,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -3197,7 +3197,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -3211,7 +3211,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -3286,7 +3286,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -3300,7 +3300,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -3328,7 +3328,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -3342,7 +3342,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -3373,7 +3373,7 @@ ENV JETTY_VERSION=9.3.5.v20151012
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c899b317cf19491f0daca6bf54f5bc12800659eb004d05a968d618d80d250763`
 
@@ -3387,7 +3387,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dc50ff9ce58d6ca09cd68d1c50e5a5f7104c8cf6a93908c76f10b8e4b1bc5ee9`
 
@@ -3422,7 +3422,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `df1f4f68bff3f87edeb7eacaa6f976c24fddd52a241a01e00b1a830b8c34ee44`
 
@@ -3450,7 +3450,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b68c6a1550ccd87e2e60686a58c191fbbbd8b01cbab00e7eed8e7ea263b9d074`
 
@@ -3480,7 +3480,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d8849070d0360db36d54ebb7c4a47e2ba00c7607d2c6d786c647e60450ad5e7`
 
@@ -3494,7 +3494,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `60c8e33a33d25f8db28636f60302130c73d5ca5ae4d625ec9b0d01d07b6b81c1`
 
@@ -3508,7 +3508,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f05ebfdc9cb70dd8993e492b4dd30f787e23975d26b88d1f30005533e49b3af6`
 
@@ -3552,7 +3552,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6d61261558bb451237759bd8d1e16489b5109f766f3e4523d0200014334797d`
 
@@ -3566,7 +3566,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d3559896073acc84b82b3c63dfb3c139fbc6866dfc865f3c88dc10a016a2081`
 
@@ -3580,7 +3580,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:jre8`
 
@@ -3618,7 +3618,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -3678,7 +3678,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -3692,7 +3692,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -3706,7 +3706,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -3720,7 +3720,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -3795,7 +3795,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -3809,7 +3809,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -3837,7 +3837,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -3851,7 +3851,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -3882,7 +3882,7 @@ ENV JETTY_VERSION=9.3.5.v20151012
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c899b317cf19491f0daca6bf54f5bc12800659eb004d05a968d618d80d250763`
 
@@ -3896,7 +3896,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dc50ff9ce58d6ca09cd68d1c50e5a5f7104c8cf6a93908c76f10b8e4b1bc5ee9`
 
@@ -3931,7 +3931,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `df1f4f68bff3f87edeb7eacaa6f976c24fddd52a241a01e00b1a830b8c34ee44`
 
@@ -3959,7 +3959,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `b68c6a1550ccd87e2e60686a58c191fbbbd8b01cbab00e7eed8e7ea263b9d074`
 
@@ -3989,7 +3989,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d8849070d0360db36d54ebb7c4a47e2ba00c7607d2c6d786c647e60450ad5e7`
 
@@ -4003,7 +4003,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `60c8e33a33d25f8db28636f60302130c73d5ca5ae4d625ec9b0d01d07b6b81c1`
 
@@ -4017,7 +4017,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f05ebfdc9cb70dd8993e492b4dd30f787e23975d26b88d1f30005533e49b3af6`
 
@@ -4061,7 +4061,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6d61261558bb451237759bd8d1e16489b5109f766f3e4523d0200014334797d`
 
@@ -4075,7 +4075,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8d3559896073acc84b82b3c63dfb3c139fbc6866dfc865f3c88dc10a016a2081`
 
@@ -4089,7 +4089,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9.2.13`
 
@@ -4127,7 +4127,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -4187,7 +4187,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -4201,7 +4201,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -4215,7 +4215,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -4229,7 +4229,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -4304,7 +4304,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -4318,7 +4318,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -4346,7 +4346,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -4360,7 +4360,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -4391,7 +4391,7 @@ ENV JETTY_VERSION=9.2.13.v20150730
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9c8f70b4439b04259d541e43ea3610a0cc0d62fa0714317ee1e25c39d622bf69`
 
@@ -4405,7 +4405,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8b543cf4930766a2e924d83ea56de04563849c0247b0600f24d36d9ada1e0c1f`
 
@@ -4440,7 +4440,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a12ff0cf63e50268a4b8ca0516f1968127c8d8b2152aa292e4a0bdaa5a709461`
 
@@ -4468,7 +4468,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `1c9dc5e0ba2454a6c56d86c665f952d2c3eaf4bb8b15d9d299216e8b7c61bb92`
 
@@ -4498,7 +4498,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7bc80d49be330cc2f51c8357a0c66e4c85aa2cb556b676574617c502716b379e`
 
@@ -4512,7 +4512,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `97617c2159a05a4eac2468c2c190bcea795b9b091e47723f95924519eaabe87c`
 
@@ -4526,7 +4526,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `89c7d779f212e93fb04f8b463881649c5f3ae36c4eb6cb480d897c5f0e1f4824`
 
@@ -4570,7 +4570,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `658106b7106b211d168905643881f1b386fa35147d5591d110e69ae3f8db9839`
 
@@ -4584,7 +4584,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2a0f425435c42637a923ce68c6f4d674f4f747727d189461f4651f9436c07008`
 
@@ -4598,7 +4598,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9.2`
 
@@ -4636,7 +4636,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -4696,7 +4696,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -4710,7 +4710,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -4724,7 +4724,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -4738,7 +4738,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -4813,7 +4813,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -4827,7 +4827,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -4855,7 +4855,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -4869,7 +4869,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -4900,7 +4900,7 @@ ENV JETTY_VERSION=9.2.13.v20150730
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9c8f70b4439b04259d541e43ea3610a0cc0d62fa0714317ee1e25c39d622bf69`
 
@@ -4914,7 +4914,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8b543cf4930766a2e924d83ea56de04563849c0247b0600f24d36d9ada1e0c1f`
 
@@ -4949,7 +4949,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a12ff0cf63e50268a4b8ca0516f1968127c8d8b2152aa292e4a0bdaa5a709461`
 
@@ -4977,7 +4977,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `1c9dc5e0ba2454a6c56d86c665f952d2c3eaf4bb8b15d9d299216e8b7c61bb92`
 
@@ -5007,7 +5007,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7bc80d49be330cc2f51c8357a0c66e4c85aa2cb556b676574617c502716b379e`
 
@@ -5021,7 +5021,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `97617c2159a05a4eac2468c2c190bcea795b9b091e47723f95924519eaabe87c`
 
@@ -5035,7 +5035,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `89c7d779f212e93fb04f8b463881649c5f3ae36c4eb6cb480d897c5f0e1f4824`
 
@@ -5079,7 +5079,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `658106b7106b211d168905643881f1b386fa35147d5591d110e69ae3f8db9839`
 
@@ -5093,7 +5093,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2a0f425435c42637a923ce68c6f4d674f4f747727d189461f4651f9436c07008`
 
@@ -5107,7 +5107,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9.2.13-jre8`
 
@@ -5145,7 +5145,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -5205,7 +5205,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -5219,7 +5219,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -5233,7 +5233,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -5247,7 +5247,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -5322,7 +5322,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -5336,7 +5336,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -5364,7 +5364,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -5378,7 +5378,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -5409,7 +5409,7 @@ ENV JETTY_VERSION=9.2.13.v20150730
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9c8f70b4439b04259d541e43ea3610a0cc0d62fa0714317ee1e25c39d622bf69`
 
@@ -5423,7 +5423,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8b543cf4930766a2e924d83ea56de04563849c0247b0600f24d36d9ada1e0c1f`
 
@@ -5458,7 +5458,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a12ff0cf63e50268a4b8ca0516f1968127c8d8b2152aa292e4a0bdaa5a709461`
 
@@ -5486,7 +5486,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `1c9dc5e0ba2454a6c56d86c665f952d2c3eaf4bb8b15d9d299216e8b7c61bb92`
 
@@ -5516,7 +5516,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7bc80d49be330cc2f51c8357a0c66e4c85aa2cb556b676574617c502716b379e`
 
@@ -5530,7 +5530,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `97617c2159a05a4eac2468c2c190bcea795b9b091e47723f95924519eaabe87c`
 
@@ -5544,7 +5544,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `89c7d779f212e93fb04f8b463881649c5f3ae36c4eb6cb480d897c5f0e1f4824`
 
@@ -5588,7 +5588,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `658106b7106b211d168905643881f1b386fa35147d5591d110e69ae3f8db9839`
 
@@ -5602,7 +5602,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2a0f425435c42637a923ce68c6f4d674f4f747727d189461f4651f9436c07008`
 
@@ -5616,7 +5616,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9.2-jre8`
 
@@ -5654,7 +5654,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -5714,7 +5714,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `eebb76bb93ff3d4186c0cc7c96f327c96daeb703c7dcdff64e5e5baeeae43e86`
 
@@ -5728,7 +5728,7 @@ ENV JAVA_VERSION=8u66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2f8f21bba493d0740d14f7cb6906e2019641165be0b4af257946aca8ca0236b2`
 
@@ -5742,7 +5742,7 @@ ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f1cc4ccd823325e015e8541fa1c1c16f38adff864958ef7b463fff6f856ab39e`
 
@@ -5756,7 +5756,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d594b6f4f5d4c60f518f256dd378601f0ae797f95deae236e05bea51ab5657`
 
@@ -5831,7 +5831,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5961c112cb5773e06c75fbfd70d07296b7194536409048560da9c95c5edad01e`
 
@@ -5845,7 +5845,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `18259aca06786e2a1f86d5a456b6c67b8ba4c0f64d57a8a6ca91015b7c8e71dc`
 
@@ -5873,7 +5873,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a349ed647e890e242b0bb0b5ee3b6ab61aae2db96665fc92cbd483eeb7fd033e`
 
@@ -5887,7 +5887,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `628b9844ace603a48f4d9afdb9a7273cdd094dbdfb227712ab5add0af979ff5c`
 
@@ -5918,7 +5918,7 @@ ENV JETTY_VERSION=9.2.13.v20150730
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9c8f70b4439b04259d541e43ea3610a0cc0d62fa0714317ee1e25c39d622bf69`
 
@@ -5932,7 +5932,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8b543cf4930766a2e924d83ea56de04563849c0247b0600f24d36d9ada1e0c1f`
 
@@ -5967,7 +5967,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a12ff0cf63e50268a4b8ca0516f1968127c8d8b2152aa292e4a0bdaa5a709461`
 
@@ -5995,7 +5995,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `1c9dc5e0ba2454a6c56d86c665f952d2c3eaf4bb8b15d9d299216e8b7c61bb92`
 
@@ -6025,7 +6025,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7bc80d49be330cc2f51c8357a0c66e4c85aa2cb556b676574617c502716b379e`
 
@@ -6039,7 +6039,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `97617c2159a05a4eac2468c2c190bcea795b9b091e47723f95924519eaabe87c`
 
@@ -6053,7 +6053,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `89c7d779f212e93fb04f8b463881649c5f3ae36c4eb6cb480d897c5f0e1f4824`
 
@@ -6097,7 +6097,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `658106b7106b211d168905643881f1b386fa35147d5591d110e69ae3f8db9839`
 
@@ -6111,7 +6111,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `2a0f425435c42637a923ce68c6f4d674f4f747727d189461f4651f9436c07008`
 
@@ -6125,7 +6125,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9.2.13-jre7`
 
@@ -6163,7 +6163,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -6209,7 +6209,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9ca451982f56a6128a0f4f35d2622cd975de3283c76a8263fd5ca9479118bdde`
 
@@ -6223,7 +6223,7 @@ ENV JAVA_VERSION=7u85
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `75fc529176f0b0e33db226aa93f4526466eabee76108e25e95797ff96172ac7d`
 
@@ -6237,7 +6237,7 @@ ENV JAVA_DEBIAN_VERSION=7u85-2.6.1-6+deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d5a52e17ca1e2d0790091a0438f7697d1b65b3880b8c32b828c7a28adc6091`
 
@@ -6279,7 +6279,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6dba5b5246984edfa5236b0e1255b82eaf566931d1ccfb4f6eaed0cdc8f65e9`
 
@@ -6293,7 +6293,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `29a3ac7ab810dc6f43afc2c804dd870e212a71c5f73e22097d23f553b0af50b1`
 
@@ -6321,7 +6321,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c4501ed05fa430747cb844a831faf4ac34d44899b02008e7a019187755427b78`
 
@@ -6335,7 +6335,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `28f43d6465536e4a50a633acf908807dcd65e802206edb48ebda6eddd173ac54`
 
@@ -6366,7 +6366,7 @@ ENV JETTY_VERSION=9.2.13.v20150730
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a21ad9144ad5274a5200cd9f65e4797b688c07d5f6247bca79104fb4d4ee4e01`
 
@@ -6380,7 +6380,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `20ffd0b3eec15564c2e0e45749a17768bbffc881a0399b3ba5481bf8fa7b0d3e`
 
@@ -6415,7 +6415,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f54cf12e13991ba994254328806940cdef9e88141bbeedbcc4d80c394af349a1`
 
@@ -6443,7 +6443,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `fe40e5c1c982c64ee7b6c4c2f9dd39af4b31cffb55f5dbd61e543615f65a42aa`
 
@@ -6473,7 +6473,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `49bbfcffcc5a78c0b82b7c2702d9a016f8674849b8ef23d7ed1f59546e8f9cef`
 
@@ -6487,7 +6487,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ef9cf08573f0a1d689b665a489e2b3bb193fd8f6aed7580447d3f7c28329478b`
 
@@ -6501,7 +6501,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a243f07b8c5558b2c91ce65f8b03b195b9ec90083c13f74ff023cc022247fc6`
 
@@ -6545,7 +6545,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e5760c9bd85f4c2a33fd41cd5c84a9489718ba7c724a7e402cdd8a0ed4a741c4`
 
@@ -6559,7 +6559,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9cb3f19b1c8bbfe1d9f59e0e48578ba8a9e7d340aa992ab1e18ef6097f23f13c`
 
@@ -6573,7 +6573,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9.2-jre7`
 
@@ -6611,7 +6611,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -6657,7 +6657,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9ca451982f56a6128a0f4f35d2622cd975de3283c76a8263fd5ca9479118bdde`
 
@@ -6671,7 +6671,7 @@ ENV JAVA_VERSION=7u85
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `75fc529176f0b0e33db226aa93f4526466eabee76108e25e95797ff96172ac7d`
 
@@ -6685,7 +6685,7 @@ ENV JAVA_DEBIAN_VERSION=7u85-2.6.1-6+deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d5a52e17ca1e2d0790091a0438f7697d1b65b3880b8c32b828c7a28adc6091`
 
@@ -6727,7 +6727,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6dba5b5246984edfa5236b0e1255b82eaf566931d1ccfb4f6eaed0cdc8f65e9`
 
@@ -6741,7 +6741,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `29a3ac7ab810dc6f43afc2c804dd870e212a71c5f73e22097d23f553b0af50b1`
 
@@ -6769,7 +6769,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c4501ed05fa430747cb844a831faf4ac34d44899b02008e7a019187755427b78`
 
@@ -6783,7 +6783,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `28f43d6465536e4a50a633acf908807dcd65e802206edb48ebda6eddd173ac54`
 
@@ -6814,7 +6814,7 @@ ENV JETTY_VERSION=9.2.13.v20150730
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a21ad9144ad5274a5200cd9f65e4797b688c07d5f6247bca79104fb4d4ee4e01`
 
@@ -6828,7 +6828,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `20ffd0b3eec15564c2e0e45749a17768bbffc881a0399b3ba5481bf8fa7b0d3e`
 
@@ -6863,7 +6863,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f54cf12e13991ba994254328806940cdef9e88141bbeedbcc4d80c394af349a1`
 
@@ -6891,7 +6891,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `fe40e5c1c982c64ee7b6c4c2f9dd39af4b31cffb55f5dbd61e543615f65a42aa`
 
@@ -6921,7 +6921,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `49bbfcffcc5a78c0b82b7c2702d9a016f8674849b8ef23d7ed1f59546e8f9cef`
 
@@ -6935,7 +6935,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ef9cf08573f0a1d689b665a489e2b3bb193fd8f6aed7580447d3f7c28329478b`
 
@@ -6949,7 +6949,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a243f07b8c5558b2c91ce65f8b03b195b9ec90083c13f74ff023cc022247fc6`
 
@@ -6993,7 +6993,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e5760c9bd85f4c2a33fd41cd5c84a9489718ba7c724a7e402cdd8a0ed4a741c4`
 
@@ -7007,7 +7007,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9cb3f19b1c8bbfe1d9f59e0e48578ba8a9e7d340aa992ab1e18ef6097f23f13c`
 
@@ -7021,7 +7021,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:9-jre7`
 
@@ -7059,7 +7059,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -7105,7 +7105,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9ca451982f56a6128a0f4f35d2622cd975de3283c76a8263fd5ca9479118bdde`
 
@@ -7119,7 +7119,7 @@ ENV JAVA_VERSION=7u85
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `75fc529176f0b0e33db226aa93f4526466eabee76108e25e95797ff96172ac7d`
 
@@ -7133,7 +7133,7 @@ ENV JAVA_DEBIAN_VERSION=7u85-2.6.1-6+deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d5a52e17ca1e2d0790091a0438f7697d1b65b3880b8c32b828c7a28adc6091`
 
@@ -7175,7 +7175,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6dba5b5246984edfa5236b0e1255b82eaf566931d1ccfb4f6eaed0cdc8f65e9`
 
@@ -7189,7 +7189,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `29a3ac7ab810dc6f43afc2c804dd870e212a71c5f73e22097d23f553b0af50b1`
 
@@ -7217,7 +7217,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c4501ed05fa430747cb844a831faf4ac34d44899b02008e7a019187755427b78`
 
@@ -7231,7 +7231,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `28f43d6465536e4a50a633acf908807dcd65e802206edb48ebda6eddd173ac54`
 
@@ -7262,7 +7262,7 @@ ENV JETTY_VERSION=9.2.13.v20150730
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a21ad9144ad5274a5200cd9f65e4797b688c07d5f6247bca79104fb4d4ee4e01`
 
@@ -7276,7 +7276,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `20ffd0b3eec15564c2e0e45749a17768bbffc881a0399b3ba5481bf8fa7b0d3e`
 
@@ -7311,7 +7311,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f54cf12e13991ba994254328806940cdef9e88141bbeedbcc4d80c394af349a1`
 
@@ -7339,7 +7339,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `fe40e5c1c982c64ee7b6c4c2f9dd39af4b31cffb55f5dbd61e543615f65a42aa`
 
@@ -7369,7 +7369,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `49bbfcffcc5a78c0b82b7c2702d9a016f8674849b8ef23d7ed1f59546e8f9cef`
 
@@ -7383,7 +7383,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ef9cf08573f0a1d689b665a489e2b3bb193fd8f6aed7580447d3f7c28329478b`
 
@@ -7397,7 +7397,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a243f07b8c5558b2c91ce65f8b03b195b9ec90083c13f74ff023cc022247fc6`
 
@@ -7441,7 +7441,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e5760c9bd85f4c2a33fd41cd5c84a9489718ba7c724a7e402cdd8a0ed4a741c4`
 
@@ -7455,7 +7455,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9cb3f19b1c8bbfe1d9f59e0e48578ba8a9e7d340aa992ab1e18ef6097f23f13c`
 
@@ -7469,7 +7469,7 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `jetty:jre7`
 
@@ -7507,7 +7507,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -7553,7 +7553,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9ca451982f56a6128a0f4f35d2622cd975de3283c76a8263fd5ca9479118bdde`
 
@@ -7567,7 +7567,7 @@ ENV JAVA_VERSION=7u85
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `75fc529176f0b0e33db226aa93f4526466eabee76108e25e95797ff96172ac7d`
 
@@ -7581,7 +7581,7 @@ ENV JAVA_DEBIAN_VERSION=7u85-2.6.1-6+deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `30d5a52e17ca1e2d0790091a0438f7697d1b65b3880b8c32b828c7a28adc6091`
 
@@ -7623,7 +7623,7 @@ ENV JETTY_HOME=/usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d6dba5b5246984edfa5236b0e1255b82eaf566931d1ccfb4f6eaed0cdc8f65e9`
 
@@ -7637,7 +7637,7 @@ ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `29a3ac7ab810dc6f43afc2c804dd870e212a71c5f73e22097d23f553b0af50b1`
 
@@ -7665,7 +7665,7 @@ WORKDIR /usr/local/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c4501ed05fa430747cb844a831faf4ac34d44899b02008e7a019187755427b78`
 
@@ -7679,7 +7679,7 @@ ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `28f43d6465536e4a50a633acf908807dcd65e802206edb48ebda6eddd173ac54`
 
@@ -7710,7 +7710,7 @@ ENV JETTY_VERSION=9.2.13.v20150730
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `a21ad9144ad5274a5200cd9f65e4797b688c07d5f6247bca79104fb4d4ee4e01`
 
@@ -7724,7 +7724,7 @@ ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distrib
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `20ffd0b3eec15564c2e0e45749a17768bbffc881a0399b3ba5481bf8fa7b0d3e`
 
@@ -7759,7 +7759,7 @@ ENV JETTY_BASE=/var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `f54cf12e13991ba994254328806940cdef9e88141bbeedbcc4d80c394af349a1`
 
@@ -7787,7 +7787,7 @@ WORKDIR /var/lib/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `fe40e5c1c982c64ee7b6c4c2f9dd39af4b31cffb55f5dbd61e543615f65a42aa`
 
@@ -7817,7 +7817,7 @@ ENV JETTY_RUN=/run/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `49bbfcffcc5a78c0b82b7c2702d9a016f8674849b8ef23d7ed1f59546e8f9cef`
 
@@ -7831,7 +7831,7 @@ ENV JETTY_STATE=/run/jetty/jetty.state
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `ef9cf08573f0a1d689b665a489e2b3bb193fd8f6aed7580447d3f7c28329478b`
 
@@ -7845,7 +7845,7 @@ ENV TMPDIR=/tmp/jetty
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5a243f07b8c5558b2c91ce65f8b03b195b9ec90083c13f74ff023cc022247fc6`
 
@@ -7889,7 +7889,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e5760c9bd85f4c2a33fd41cd5c84a9489718ba7c724a7e402cdd8a0ed4a741c4`
 
@@ -7903,7 +7903,7 @@ ENTRYPOINT &{["/docker-entrypoint.bash"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `9cb3f19b1c8bbfe1d9f59e0e48578ba8a9e7d340aa992ab1e18ef6097f23f13c`
 
@@ -7917,4 +7917,4 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
