@@ -41,7 +41,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `da28c17924cedcee9a00e0605698c0bbc7762b07780fef1533dbde2766210cf2`
 
@@ -55,7 +55,7 @@ ENV AEROSPIKE_VERSION=3.6.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e68fdb7aa88eec6cd75476009bb5567c1e6b1589c903a3dfd9bfd20b700e8421`
 
@@ -69,7 +69,7 @@ ENV AEROSPIKE_SHA256=6bd5d425af19bd13ece1890b38cdce2a4941eff4764374774c767b04031
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7a53c82d1cb8ee7053f91a1d557e1f1edf18242a3b76ffe5f0d2f1dbc9c8d408`
 
@@ -111,7 +111,7 @@ VOLUME [/opt/aerospike/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d3827d75a5c522812281f362c7a7705622755f8b4c2929476062cae5ae820ffc`
 
@@ -125,7 +125,7 @@ EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `1557da4fb5fa87bbf467e44189163a231e697d26b2ee93bdf20f2e8a6753d99a`
 
@@ -139,7 +139,7 @@ CMD ["/usr/bin/asd" "--foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `aerospike:latest`
 
@@ -177,7 +177,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `da28c17924cedcee9a00e0605698c0bbc7762b07780fef1533dbde2766210cf2`
 
@@ -191,7 +191,7 @@ ENV AEROSPIKE_VERSION=3.6.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `e68fdb7aa88eec6cd75476009bb5567c1e6b1589c903a3dfd9bfd20b700e8421`
 
@@ -205,7 +205,7 @@ ENV AEROSPIKE_SHA256=6bd5d425af19bd13ece1890b38cdce2a4941eff4764374774c767b04031
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `7a53c82d1cb8ee7053f91a1d557e1f1edf18242a3b76ffe5f0d2f1dbc9c8d408`
 
@@ -247,7 +247,7 @@ VOLUME [/opt/aerospike/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `d3827d75a5c522812281f362c7a7705622755f8b4c2929476062cae5ae820ffc`
 
@@ -261,7 +261,7 @@ EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `1557da4fb5fa87bbf467e44189163a231e697d26b2ee93bdf20f2e8a6753d99a`
 
@@ -275,4 +275,4 @@ CMD ["/usr/bin/asd" "--foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
