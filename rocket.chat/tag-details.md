@@ -43,7 +43,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -164,7 +164,7 @@ ENV NODE_VERSION=0.10.40
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5fc5690a74827d4dc7da1e6388bf3c7e5dcf5244405802a7f7baf1bcf5f6c64c`
 
@@ -178,7 +178,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c66c6f548bb11433f22837a2c11abcb4874e0a49cb613c26bfc8c4846c475346`
 
@@ -213,7 +213,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `24be9dfd918166947056e2e3dac685185d55e04323290df896ec440907edd2e7`
 
@@ -227,7 +227,7 @@ MAINTAINER buildmaster@rocket.chat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `39041ea103495e365dd05d14fd08f817a089bc8788d1d2bc59184a47939b48b8`
 
@@ -269,7 +269,7 @@ ENV RC_VERSION=v0.7.1862
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8058dadccf23371675e38e3d0e7c3e215e1ad551a64bf8061aaf4d913adee5aa`
 
@@ -297,7 +297,7 @@ WORKDIR /bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4bd3385de7a347d4b42fa927de5dfec024f56f507e7cbfdc7b2897f274f22143`
 
@@ -311,7 +311,7 @@ USER [rocketchat]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dd2156d5fd0ebf40a31ce9522db032b44223867e8ba60f835baab1eaf14882db`
 
@@ -325,7 +325,7 @@ ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `92239c8bc23f757125557997262d5b09e68015660b34f18cdc322ed656979fd4`
 
@@ -339,7 +339,7 @@ EXPOSE 3000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `71a07a57e17e5bcc2a3a982ea84d70508b574300a9ca21c03022a48d73df62aa`
 
@@ -353,7 +353,7 @@ CMD ["node" "main.js"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `rocket.chat:0.7`
 
@@ -391,7 +391,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -512,7 +512,7 @@ ENV NODE_VERSION=0.10.40
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5fc5690a74827d4dc7da1e6388bf3c7e5dcf5244405802a7f7baf1bcf5f6c64c`
 
@@ -526,7 +526,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c66c6f548bb11433f22837a2c11abcb4874e0a49cb613c26bfc8c4846c475346`
 
@@ -561,7 +561,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `24be9dfd918166947056e2e3dac685185d55e04323290df896ec440907edd2e7`
 
@@ -575,7 +575,7 @@ MAINTAINER buildmaster@rocket.chat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `39041ea103495e365dd05d14fd08f817a089bc8788d1d2bc59184a47939b48b8`
 
@@ -617,7 +617,7 @@ ENV RC_VERSION=v0.7.1862
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8058dadccf23371675e38e3d0e7c3e215e1ad551a64bf8061aaf4d913adee5aa`
 
@@ -645,7 +645,7 @@ WORKDIR /bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4bd3385de7a347d4b42fa927de5dfec024f56f507e7cbfdc7b2897f274f22143`
 
@@ -659,7 +659,7 @@ USER [rocketchat]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dd2156d5fd0ebf40a31ce9522db032b44223867e8ba60f835baab1eaf14882db`
 
@@ -673,7 +673,7 @@ ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `92239c8bc23f757125557997262d5b09e68015660b34f18cdc322ed656979fd4`
 
@@ -687,7 +687,7 @@ EXPOSE 3000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `71a07a57e17e5bcc2a3a982ea84d70508b574300a9ca21c03022a48d73df62aa`
 
@@ -701,7 +701,7 @@ CMD ["node" "main.js"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `rocket.chat:0`
 
@@ -739,7 +739,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -860,7 +860,7 @@ ENV NODE_VERSION=0.10.40
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5fc5690a74827d4dc7da1e6388bf3c7e5dcf5244405802a7f7baf1bcf5f6c64c`
 
@@ -874,7 +874,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c66c6f548bb11433f22837a2c11abcb4874e0a49cb613c26bfc8c4846c475346`
 
@@ -909,7 +909,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `24be9dfd918166947056e2e3dac685185d55e04323290df896ec440907edd2e7`
 
@@ -923,7 +923,7 @@ MAINTAINER buildmaster@rocket.chat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `39041ea103495e365dd05d14fd08f817a089bc8788d1d2bc59184a47939b48b8`
 
@@ -965,7 +965,7 @@ ENV RC_VERSION=v0.7.1862
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8058dadccf23371675e38e3d0e7c3e215e1ad551a64bf8061aaf4d913adee5aa`
 
@@ -993,7 +993,7 @@ WORKDIR /bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4bd3385de7a347d4b42fa927de5dfec024f56f507e7cbfdc7b2897f274f22143`
 
@@ -1007,7 +1007,7 @@ USER [rocketchat]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dd2156d5fd0ebf40a31ce9522db032b44223867e8ba60f835baab1eaf14882db`
 
@@ -1021,7 +1021,7 @@ ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `92239c8bc23f757125557997262d5b09e68015660b34f18cdc322ed656979fd4`
 
@@ -1035,7 +1035,7 @@ EXPOSE 3000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `71a07a57e17e5bcc2a3a982ea84d70508b574300a9ca21c03022a48d73df62aa`
 
@@ -1049,7 +1049,7 @@ CMD ["node" "main.js"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 ## `rocket.chat:latest`
 
@@ -1087,7 +1087,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4c0cc976b7bbefe9abdfd8f0aae1bb3759004d3c9888c3164b38909b862c0cdf`
 
@@ -1208,7 +1208,7 @@ ENV NODE_VERSION=0.10.40
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `5fc5690a74827d4dc7da1e6388bf3c7e5dcf5244405802a7f7baf1bcf5f6c64c`
 
@@ -1222,7 +1222,7 @@ ENV NPM_VERSION=2.14.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `c66c6f548bb11433f22837a2c11abcb4874e0a49cb613c26bfc8c4846c475346`
 
@@ -1257,7 +1257,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `24be9dfd918166947056e2e3dac685185d55e04323290df896ec440907edd2e7`
 
@@ -1271,7 +1271,7 @@ MAINTAINER buildmaster@rocket.chat
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `39041ea103495e365dd05d14fd08f817a089bc8788d1d2bc59184a47939b48b8`
 
@@ -1313,7 +1313,7 @@ ENV RC_VERSION=v0.7.1862
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `8058dadccf23371675e38e3d0e7c3e215e1ad551a64bf8061aaf4d913adee5aa`
 
@@ -1341,7 +1341,7 @@ WORKDIR /bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `4bd3385de7a347d4b42fa927de5dfec024f56f507e7cbfdc7b2897f274f22143`
 
@@ -1355,7 +1355,7 @@ USER [rocketchat]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `dd2156d5fd0ebf40a31ce9522db032b44223867e8ba60f835baab1eaf14882db`
 
@@ -1369,7 +1369,7 @@ ENV MONGO_URL=mongodb://db:27017/meteor PORT=3000 ROOT_URL=http://localhost:3000
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `92239c8bc23f757125557997262d5b09e68015660b34f18cdc322ed656979fd4`
 
@@ -1383,7 +1383,7 @@ EXPOSE 3000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
 
 #### `71a07a57e17e5bcc2a3a982ea84d70508b574300a9ca21c03022a48d73df62aa`
 
@@ -1397,4 +1397,4 @@ CMD ["node" "main.js"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+-	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
