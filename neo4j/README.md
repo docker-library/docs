@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.3.0`, `latest` (*2.3.0/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/f424f2e0bbe0efca3608ffdc031e27c746da275d/2.3.0/Dockerfile)
--	[`2.3.0-enterprise`, `enterprise` (*2.3.0-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/f424f2e0bbe0efca3608ffdc031e27c746da275d/2.3.0-enterprise/Dockerfile)
+-	[`2.3.1`, `latest` (*2.3.1/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/026fcee712c5fd2596c7d41e14c2981404d94df2/2.3.1/Dockerfile)
+-	[`2.3.1-enterprise`, `enterprise` (*2.3.1-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/026fcee712c5fd2596c7d41e14c2981404d94df2/2.3.1-enterprise/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/neo4j`)](https://github.com/docker-library/official-images/blob/master/library/neo4j). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
