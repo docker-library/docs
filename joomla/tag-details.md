@@ -51,7 +51,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -93,7 +93,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -191,7 +191,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -205,7 +205,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -219,7 +219,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -250,7 +250,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -340,7 +340,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -354,7 +354,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -368,7 +368,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6890d3ab496798a2003ce812578d52a5678e4727a561bcb365df4036316d0a9`
 
@@ -382,7 +382,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2c21fa7f3064a584aa962b0a82ce05d046976ec6b9f862cc4f421941d6a596a5`
 
@@ -440,7 +440,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `17b8ac5180651b3a552f4548982f6e0fc29b90f2f8bc878b96cb97607e24bfaa`
 
@@ -454,7 +454,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `01a6c4383598089c1d9e5a573b3d7efb782a106dcf12f4902741308518113adb`
 
@@ -468,7 +468,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `116984b9e97564802007bc93814492cd40ecd4e578ff9c94afe3588eb5d2b4a0`
 
@@ -529,7 +529,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `02cdd2fa86f723c160449f109a71620ea6c56306d6e5ceee877c036d0b38807a`
 
@@ -543,7 +543,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:3.4.5`
 
@@ -581,7 +581,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -623,7 +623,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -721,7 +721,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -735,7 +735,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -749,7 +749,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -780,7 +780,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -870,7 +870,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -884,7 +884,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -898,7 +898,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6890d3ab496798a2003ce812578d52a5678e4727a561bcb365df4036316d0a9`
 
@@ -912,7 +912,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2c21fa7f3064a584aa962b0a82ce05d046976ec6b9f862cc4f421941d6a596a5`
 
@@ -970,7 +970,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `17b8ac5180651b3a552f4548982f6e0fc29b90f2f8bc878b96cb97607e24bfaa`
 
@@ -984,7 +984,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `01a6c4383598089c1d9e5a573b3d7efb782a106dcf12f4902741308518113adb`
 
@@ -998,7 +998,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `116984b9e97564802007bc93814492cd40ecd4e578ff9c94afe3588eb5d2b4a0`
 
@@ -1059,7 +1059,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `02cdd2fa86f723c160449f109a71620ea6c56306d6e5ceee877c036d0b38807a`
 
@@ -1073,7 +1073,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:3.4-apache`
 
@@ -1111,7 +1111,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -1153,7 +1153,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -1251,7 +1251,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -1265,7 +1265,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -1279,7 +1279,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -1310,7 +1310,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -1400,7 +1400,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -1414,7 +1414,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -1428,7 +1428,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6890d3ab496798a2003ce812578d52a5678e4727a561bcb365df4036316d0a9`
 
@@ -1442,7 +1442,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2c21fa7f3064a584aa962b0a82ce05d046976ec6b9f862cc4f421941d6a596a5`
 
@@ -1500,7 +1500,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `17b8ac5180651b3a552f4548982f6e0fc29b90f2f8bc878b96cb97607e24bfaa`
 
@@ -1514,7 +1514,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `01a6c4383598089c1d9e5a573b3d7efb782a106dcf12f4902741308518113adb`
 
@@ -1528,7 +1528,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `116984b9e97564802007bc93814492cd40ecd4e578ff9c94afe3588eb5d2b4a0`
 
@@ -1589,7 +1589,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `02cdd2fa86f723c160449f109a71620ea6c56306d6e5ceee877c036d0b38807a`
 
@@ -1603,7 +1603,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:3.4`
 
@@ -1641,7 +1641,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -1683,7 +1683,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -1781,7 +1781,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -1795,7 +1795,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -1809,7 +1809,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -1840,7 +1840,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -1930,7 +1930,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -1944,7 +1944,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -1958,7 +1958,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6890d3ab496798a2003ce812578d52a5678e4727a561bcb365df4036316d0a9`
 
@@ -1972,7 +1972,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2c21fa7f3064a584aa962b0a82ce05d046976ec6b9f862cc4f421941d6a596a5`
 
@@ -2030,7 +2030,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `17b8ac5180651b3a552f4548982f6e0fc29b90f2f8bc878b96cb97607e24bfaa`
 
@@ -2044,7 +2044,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `01a6c4383598089c1d9e5a573b3d7efb782a106dcf12f4902741308518113adb`
 
@@ -2058,7 +2058,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `116984b9e97564802007bc93814492cd40ecd4e578ff9c94afe3588eb5d2b4a0`
 
@@ -2119,7 +2119,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `02cdd2fa86f723c160449f109a71620ea6c56306d6e5ceee877c036d0b38807a`
 
@@ -2133,7 +2133,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:3-apache`
 
@@ -2171,7 +2171,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -2213,7 +2213,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -2311,7 +2311,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -2325,7 +2325,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -2339,7 +2339,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -2370,7 +2370,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -2460,7 +2460,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -2474,7 +2474,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -2488,7 +2488,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6890d3ab496798a2003ce812578d52a5678e4727a561bcb365df4036316d0a9`
 
@@ -2502,7 +2502,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2c21fa7f3064a584aa962b0a82ce05d046976ec6b9f862cc4f421941d6a596a5`
 
@@ -2560,7 +2560,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `17b8ac5180651b3a552f4548982f6e0fc29b90f2f8bc878b96cb97607e24bfaa`
 
@@ -2574,7 +2574,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `01a6c4383598089c1d9e5a573b3d7efb782a106dcf12f4902741308518113adb`
 
@@ -2588,7 +2588,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `116984b9e97564802007bc93814492cd40ecd4e578ff9c94afe3588eb5d2b4a0`
 
@@ -2649,7 +2649,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `02cdd2fa86f723c160449f109a71620ea6c56306d6e5ceee877c036d0b38807a`
 
@@ -2663,7 +2663,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:apache`
 
@@ -2701,7 +2701,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -2743,7 +2743,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -2841,7 +2841,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -2855,7 +2855,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -2869,7 +2869,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -2900,7 +2900,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -2990,7 +2990,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -3004,7 +3004,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -3018,7 +3018,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6890d3ab496798a2003ce812578d52a5678e4727a561bcb365df4036316d0a9`
 
@@ -3032,7 +3032,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2c21fa7f3064a584aa962b0a82ce05d046976ec6b9f862cc4f421941d6a596a5`
 
@@ -3090,7 +3090,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `17b8ac5180651b3a552f4548982f6e0fc29b90f2f8bc878b96cb97607e24bfaa`
 
@@ -3104,7 +3104,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `01a6c4383598089c1d9e5a573b3d7efb782a106dcf12f4902741308518113adb`
 
@@ -3118,7 +3118,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `116984b9e97564802007bc93814492cd40ecd4e578ff9c94afe3588eb5d2b4a0`
 
@@ -3179,7 +3179,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `02cdd2fa86f723c160449f109a71620ea6c56306d6e5ceee877c036d0b38807a`
 
@@ -3193,7 +3193,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:3`
 
@@ -3231,7 +3231,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -3273,7 +3273,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -3371,7 +3371,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -3385,7 +3385,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -3399,7 +3399,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -3430,7 +3430,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -3520,7 +3520,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -3534,7 +3534,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -3548,7 +3548,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6890d3ab496798a2003ce812578d52a5678e4727a561bcb365df4036316d0a9`
 
@@ -3562,7 +3562,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2c21fa7f3064a584aa962b0a82ce05d046976ec6b9f862cc4f421941d6a596a5`
 
@@ -3620,7 +3620,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `17b8ac5180651b3a552f4548982f6e0fc29b90f2f8bc878b96cb97607e24bfaa`
 
@@ -3634,7 +3634,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `01a6c4383598089c1d9e5a573b3d7efb782a106dcf12f4902741308518113adb`
 
@@ -3648,7 +3648,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `116984b9e97564802007bc93814492cd40ecd4e578ff9c94afe3588eb5d2b4a0`
 
@@ -3709,7 +3709,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `02cdd2fa86f723c160449f109a71620ea6c56306d6e5ceee877c036d0b38807a`
 
@@ -3723,7 +3723,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:latest`
 
@@ -3761,7 +3761,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -3803,7 +3803,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -3901,7 +3901,7 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a3eaec085df876b32a91b78f4ad4afc50339e7d7710a48ceb0e2004618962ec`
 
@@ -3915,7 +3915,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d2a8ac9e5182094396a538e7057e34402e399939f7d6bf0dcd04aa2ffbd6f9f`
 
@@ -3929,7 +3929,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a32f83bed68b218c4b5aa731abb1aca16bfce24aa038e70bda59a31d7fdc70b9`
 
@@ -3960,7 +3960,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `522079bfc37fd8d99a11327bf672754aceb09e8ca803a9dda30f1a2cf1ec731e`
 
@@ -4050,7 +4050,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8311a6c94fe70dc9c008994120783d8e424cdd801c955dce0aa41810babd4fe6`
 
@@ -4064,7 +4064,7 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96ac0ad96d222fcb00394269eb677aa639c224cbf20fff7533ea644ee260fd75`
 
@@ -4078,7 +4078,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6890d3ab496798a2003ce812578d52a5678e4727a561bcb365df4036316d0a9`
 
@@ -4092,7 +4092,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2c21fa7f3064a584aa962b0a82ce05d046976ec6b9f862cc4f421941d6a596a5`
 
@@ -4150,7 +4150,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `17b8ac5180651b3a552f4548982f6e0fc29b90f2f8bc878b96cb97607e24bfaa`
 
@@ -4164,7 +4164,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `01a6c4383598089c1d9e5a573b3d7efb782a106dcf12f4902741308518113adb`
 
@@ -4178,7 +4178,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `116984b9e97564802007bc93814492cd40ecd4e578ff9c94afe3588eb5d2b4a0`
 
@@ -4239,7 +4239,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `02cdd2fa86f723c160449f109a71620ea6c56306d6e5ceee877c036d0b38807a`
 
@@ -4253,7 +4253,7 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:3.4.5-fpm`
 
@@ -4291,7 +4291,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -4333,7 +4333,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -4361,7 +4361,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab21b1f436170a8bbb52f584198d0b1db56ce7339d916ad5d64ddb1ac374cac7`
 
@@ -4375,7 +4375,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d5fe177effde8958086ef0835cbcd2f1020f85bb0162e3b442ab45c61e76120`
 
@@ -4406,7 +4406,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4baf0cd1add8b402fb62db305cfb04d443fb16c6bc8236068d94b2694a6910f1`
 
@@ -4482,7 +4482,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f28cb136bf7bce92befaf47dcdfbfca0c19f4a66a256a2895fbab6cea057b7c7`
 
@@ -4510,7 +4510,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5085b18821cd649dda2ec09c87f4f0187008acd1e827c9f131d86ab2e9052ae3`
 
@@ -4524,7 +4524,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c25e55d0a2c550d5f54bdfe5bb0489c952a32ed42c49460d4c7e24a080ded891`
 
@@ -4538,7 +4538,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a70093a2ab77067d25f7bfe293a622f0a6c096647ac98492878aea7cd6f1db8c`
 
@@ -4582,7 +4582,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `30dec30fbf1d955881738e6f03f29e285d7b2d54a89e914f760939bc0b879e9e`
 
@@ -4596,7 +4596,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274ec26695acf37426078d70183108ae960d3c8a7ee9d73b7c52402f08ded9e8`
 
@@ -4610,7 +4610,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b88c52d8663e321f68ee2645eacedf2d27edddc08a61d4f47f5d5834c96118ed`
 
@@ -4671,7 +4671,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af735a7166e1977fcfefbc75b9119895900b198037144f4873a95e3df327c19f`
 
@@ -4685,7 +4685,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:3.4-fpm`
 
@@ -4723,7 +4723,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -4765,7 +4765,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -4793,7 +4793,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab21b1f436170a8bbb52f584198d0b1db56ce7339d916ad5d64ddb1ac374cac7`
 
@@ -4807,7 +4807,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d5fe177effde8958086ef0835cbcd2f1020f85bb0162e3b442ab45c61e76120`
 
@@ -4838,7 +4838,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4baf0cd1add8b402fb62db305cfb04d443fb16c6bc8236068d94b2694a6910f1`
 
@@ -4914,7 +4914,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f28cb136bf7bce92befaf47dcdfbfca0c19f4a66a256a2895fbab6cea057b7c7`
 
@@ -4942,7 +4942,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5085b18821cd649dda2ec09c87f4f0187008acd1e827c9f131d86ab2e9052ae3`
 
@@ -4956,7 +4956,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c25e55d0a2c550d5f54bdfe5bb0489c952a32ed42c49460d4c7e24a080ded891`
 
@@ -4970,7 +4970,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a70093a2ab77067d25f7bfe293a622f0a6c096647ac98492878aea7cd6f1db8c`
 
@@ -5014,7 +5014,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `30dec30fbf1d955881738e6f03f29e285d7b2d54a89e914f760939bc0b879e9e`
 
@@ -5028,7 +5028,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274ec26695acf37426078d70183108ae960d3c8a7ee9d73b7c52402f08ded9e8`
 
@@ -5042,7 +5042,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b88c52d8663e321f68ee2645eacedf2d27edddc08a61d4f47f5d5834c96118ed`
 
@@ -5103,7 +5103,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af735a7166e1977fcfefbc75b9119895900b198037144f4873a95e3df327c19f`
 
@@ -5117,7 +5117,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:3-fpm`
 
@@ -5155,7 +5155,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -5197,7 +5197,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -5225,7 +5225,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab21b1f436170a8bbb52f584198d0b1db56ce7339d916ad5d64ddb1ac374cac7`
 
@@ -5239,7 +5239,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d5fe177effde8958086ef0835cbcd2f1020f85bb0162e3b442ab45c61e76120`
 
@@ -5270,7 +5270,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4baf0cd1add8b402fb62db305cfb04d443fb16c6bc8236068d94b2694a6910f1`
 
@@ -5346,7 +5346,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f28cb136bf7bce92befaf47dcdfbfca0c19f4a66a256a2895fbab6cea057b7c7`
 
@@ -5374,7 +5374,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5085b18821cd649dda2ec09c87f4f0187008acd1e827c9f131d86ab2e9052ae3`
 
@@ -5388,7 +5388,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c25e55d0a2c550d5f54bdfe5bb0489c952a32ed42c49460d4c7e24a080ded891`
 
@@ -5402,7 +5402,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a70093a2ab77067d25f7bfe293a622f0a6c096647ac98492878aea7cd6f1db8c`
 
@@ -5446,7 +5446,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `30dec30fbf1d955881738e6f03f29e285d7b2d54a89e914f760939bc0b879e9e`
 
@@ -5460,7 +5460,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274ec26695acf37426078d70183108ae960d3c8a7ee9d73b7c52402f08ded9e8`
 
@@ -5474,7 +5474,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b88c52d8663e321f68ee2645eacedf2d27edddc08a61d4f47f5d5834c96118ed`
 
@@ -5535,7 +5535,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af735a7166e1977fcfefbc75b9119895900b198037144f4873a95e3df327c19f`
 
@@ -5549,7 +5549,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `joomla:fpm`
 
@@ -5587,7 +5587,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af86fc37e8e89b0445c256a813daf4b9360e0f3f695f5ada1257a921e2fe990`
 
@@ -5629,7 +5629,7 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83a845ae00a06979df211529c5537a3239edc7be0cab4a26d5076d57cc84da3f`
 
@@ -5657,7 +5657,7 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab21b1f436170a8bbb52f584198d0b1db56ce7339d916ad5d64ddb1ac374cac7`
 
@@ -5671,7 +5671,7 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d5fe177effde8958086ef0835cbcd2f1020f85bb0162e3b442ab45c61e76120`
 
@@ -5702,7 +5702,7 @@ ENV PHP_VERSION=5.6.15
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4baf0cd1add8b402fb62db305cfb04d443fb16c6bc8236068d94b2694a6910f1`
 
@@ -5778,7 +5778,7 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f28cb136bf7bce92befaf47dcdfbfca0c19f4a66a256a2895fbab6cea057b7c7`
 
@@ -5806,7 +5806,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5085b18821cd649dda2ec09c87f4f0187008acd1e827c9f131d86ab2e9052ae3`
 
@@ -5820,7 +5820,7 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c25e55d0a2c550d5f54bdfe5bb0489c952a32ed42c49460d4c7e24a080ded891`
 
@@ -5834,7 +5834,7 @@ MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a70093a2ab77067d25f7bfe293a622f0a6c096647ac98492878aea7cd6f1db8c`
 
@@ -5878,7 +5878,7 @@ VOLUME [/var/www/html]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `30dec30fbf1d955881738e6f03f29e285d7b2d54a89e914f760939bc0b879e9e`
 
@@ -5892,7 +5892,7 @@ ENV JOOMLA_VERSION=3.4.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `274ec26695acf37426078d70183108ae960d3c8a7ee9d73b7c52402f08ded9e8`
 
@@ -5906,7 +5906,7 @@ ENV JOOMLA_SHA1=098ce53f3bc44531be95c20a0faf7f80efe5fc88
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b88c52d8663e321f68ee2645eacedf2d27edddc08a61d4f47f5d5834c96118ed`
 
@@ -5967,7 +5967,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af735a7166e1977fcfefbc75b9119895900b198037144f4873a95e3df327c19f`
 
@@ -5981,4 +5981,4 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Thu, 12 Nov 2015 18:17:49 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
