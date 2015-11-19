@@ -1,6 +1,6 @@
 # What is Clojure?
 
-Clojure is a dialect of the Lisp programming language. It is a general-purpose programming language with an emphasis on functional programming. It runs on the Java Virtual Machine, Common Langauge Runtime, and JavaScript engines. Like other Lisps, Clojure treats code as data and has a macro system.
+Clojure is a dialect of the Lisp programming language. It is a general-purpose programming language with an emphasis on functional programming. It runs on the Java Virtual Machine, Common Language Runtime, and JavaScript engines. Like other Lisps, Clojure treats code as data and has a macro system.
 
 > [wikipedia.org/wiki/Clojure](http://en.wikipedia.org/wiki/Clojure)
 
