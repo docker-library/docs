@@ -6,6 +6,8 @@
 -	[`openjdk-7u85-jre`, `openjdk-7-jre`, `7u85-jre`, `7-jre` (*openjdk-7-jre/Dockerfile*)](https://github.com/docker-library/java/blob/41b92f2f30079cd364e9619d1fd4633ef138dca4/openjdk-7-jre/Dockerfile)
 -	[`openjdk-8u66-jdk`, `openjdk-8u66`, `openjdk-8-jdk`, `openjdk-8`, `8u66-jdk`, `8u66`, `8-jdk`, `8`, `jdk`, `latest` (*openjdk-8-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/200ecf22e5a23cb48cbb3ce47aa08aa3b49a0d2d/openjdk-8-jdk/Dockerfile)
 -	[`openjdk-8u66-jre`, `openjdk-8-jre`, `8u66-jre`, `8-jre`, `jre` (*openjdk-8-jre/Dockerfile*)](https://github.com/docker-library/java/blob/200ecf22e5a23cb48cbb3ce47aa08aa3b49a0d2d/openjdk-8-jre/Dockerfile)
+-	[`openjdk-9-b88-jdk`, `openjdk-9-b88`, `openjdk-9-jdk`, `openjdk-9`, `9-b88-jdk`, `9-b88`, `9-jdk`, `9` (*openjdk-9-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/680a4e3cb3f9f3c69ad58958d35975ae083e91c1/openjdk-9-jdk/Dockerfile)
+-	[`openjdk-9-b88-jre`, `openjdk-9-jre`, `9-b88-jre`, `9-jre` (*openjdk-9-jre/Dockerfile*)](https://github.com/docker-library/java/blob/680a4e3cb3f9f3c69ad58958d35975ae083e91c1/openjdk-9-jre/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

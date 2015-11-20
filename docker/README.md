@@ -1,11 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.1-rc1`, `1.9-rc` (*1.9-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/8fa02e5cb4249cf41263c29531566bd2ca99cf63/1.9-rc/Dockerfile)
--	[`1.9.1-rc1-dind`, `1.9-rc-dind` (*1.9-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/8fa02e5cb4249cf41263c29531566bd2ca99cf63/1.9-rc/dind/Dockerfile)
--	[`1.9.1-rc1-git`, `1.9-rc-git` (*1.9-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8fa02e5cb4249cf41263c29531566bd2ca99cf63/1.9-rc/git/Dockerfile)
--	[`1.9.0`, `1.9`, `1`, `latest` (*1.9/Dockerfile*)](https://github.com/docker-library/docker/blob/ed9933c9cd998b27a8d65efe810e8cd13c116316/1.9/Dockerfile)
--	[`1.9.0-dind`, `1.9-dind`, `1-dind`, `dind` (*1.9/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/31f5524efb43f05f57663c91de40be788c9d35a4/1.9/dind/Dockerfile)
--	[`1.9.0-git`, `1.9-git`, `1-git`, `git` (*1.9/git/Dockerfile*)](https://github.com/docker-library/docker/blob/ed9933c9cd998b27a8d65efe810e8cd13c116316/1.9/git/Dockerfile)
+-	[`1.9.1`, `1.9`, `1`, `latest` (*1.9/Dockerfile*)](https://github.com/docker-library/docker/blob/e33e7226872e53dfa88bee09f153704a66fc103d/1.9/Dockerfile)
+-	[`1.9.1-dind`, `1.9-dind`, `1-dind`, `dind` (*1.9/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/31f5524efb43f05f57663c91de40be788c9d35a4/1.9/dind/Dockerfile)
+-	[`1.9.1-git`, `1.9-git`, `1-git`, `git` (*1.9/git/Dockerfile*)](https://github.com/docker-library/docker/blob/ed9933c9cd998b27a8d65efe810e8cd13c116316/1.9/git/Dockerfile)
 -	[`1.8.3`, `1.8` (*1.8/Dockerfile*)](https://github.com/docker-library/docker/blob/460aea3b5f26709dc58252deb7cf31cd0a26383e/1.8/Dockerfile)
 -	[`1.8.3-dind`, `1.8-dind` (*1.8/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/31f5524efb43f05f57663c91de40be788c9d35a4/1.8/dind/Dockerfile)
 -	[`1.8.3-git`, `1.8-git` (*1.8/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a2614c9b94d3bae7d8d61a7cf4d56a42f6332104/1.8/git/Dockerfile)
