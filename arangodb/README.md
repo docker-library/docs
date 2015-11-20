@@ -144,7 +144,7 @@ $ docker run -d --name arangodb-persist -v /var/lib/arangodb alpine alpine
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.0.
+This image is officially supported on Docker version 1.9.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
