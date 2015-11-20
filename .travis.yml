@@ -1,5 +1,7 @@
 language: go
 
+sudo: false
+
 install:
   - mkdir -p "${GOPATH%%:*}/src/github.com/shurcooL/markdownfmt"
   - git clone https://github.com/tianon/markdownfmt.git "${GOPATH%%:*}/src/github.com/shurcooL/markdownfmt"
