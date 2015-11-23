@@ -8,7 +8,7 @@ The supported data models can be mixed in queries and allow ArangoDB to be the a
 
 %%LOGO%%
 
-##Key Features in ArangoDB
+## Key Features in ArangoDB
 
 **Multi-Model** Documents, graphs and key-value pairs — model your data as you see fit for your application.
 
