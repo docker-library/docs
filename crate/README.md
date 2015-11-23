@@ -9,9 +9,9 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # What is Crate?
 
-Crate is an Elastic SQL Data Store. Distributed by design, Crate makes centralized database servers obsolete. Realtime non-blocking SQL engine with full blown search. Highly available, massively scalable yet simple to use.
+Crate allows to query and compute data with SQL in real time by providing a distributed aggregation engine, native search and super simple scalability. It offers auto-sharding and replication, super-fast multi index queries, distributed aggregations and sort, superfast full-text search, and super simple cluster management.
 
-[Crate](https:/crate.io/)
+[Crate](https://crate.io/)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/crate/logo.png)
 
@@ -112,7 +112,7 @@ Documentation for this image is stored in the [`crate/` directory](https://githu
 
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/crate/docker-crate/issues).
 
-If you have any questions or suggestions we would be very happy to help you. So, feel free to swing by our IRC channel `#crate` on [Freenode](http://freenode.net).
+If you have any questions or suggestions we would be very happy to help you. So, feel free to join our [Gitter Channel](https://gitter.im/crate/crate).
 
 For further information and official contact please visit [https://crate.io](https://crate.io).
 

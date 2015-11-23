@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`18.1.3`, `18.1`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/70fd1e32745cbc68e894d340b105f30b387966c8/18/Dockerfile)
+-	[`18.1.4`, `18.1`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/20e41464075dc0fc76709be77701530eddb6fe33/18/Dockerfile)
+-	[`18.1.4-onbuild`, `18.1-onbuild`, `18-onbuild`, `onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/20e41464075dc0fc76709be77701530eddb6fe33/18/onbuild/Dockerfile)
 -	[`17.5.6.4`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/70fd1e32745cbc68e894d340b105f30b387966c8/17/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/erlang`)](https://github.com/docker-library/official-images/blob/master/library/erlang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
@@ -55,6 +56,22 @@ User switch command
 ```console
 $ docker run -it --rm --name erlang-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp erlang escript your-escript.erl
 ```
+
+# Image Variants
+
+The `erlang` images come in many flavors, each designed for a specific use case.
+
+## `erlang:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `erlang:onbuild`
+
+This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM erlang:onbuild` will be enough to create a stand-alone image for your project.
+
+While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
+
+Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
 
 # License
 
