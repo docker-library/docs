@@ -32,8 +32,7 @@ The most straightforward way to use this image is to use a Go container as both 
 FROM golang:1.3-onbuild
 ```
 
-This image includes multiple `ONBUILD` triggers which should cover most applications. The build will `COPY . /usr/src/app`, `RUN go get -d -v`, and `RUN
-go install -v`.
+This image includes multiple `ONBUILD` triggers which should cover most applications. The build will `COPY . /go/src/app`, `RUN go get -d -v`, and `RUN go install -v`.
 
 This image also includes the `CMD ["app"]` instruction which is the default command when running the image without arguments.
 
