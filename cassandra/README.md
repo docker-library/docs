@@ -151,10 +151,10 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `cassandra` container like this:
 
 	```console
-	$ docker run --name some-cassandra -v /my/own/datadir:/var/lib/cassandra/data -d cassandra:tag
+	$ docker run --name some-cassandra -v /my/own/datadir:/var/lib/cassandra -d cassandra:tag
 	```
 
-The `-v /my/own/datadir:/var/lib/cassandra/data` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/cassandra/data` inside the container, where Cassandra by default will write its data files.
+The `-v /my/own/datadir:/var/lib/cassandra` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/cassandra` inside the container, where Cassandra by default will write its data files.
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
 
