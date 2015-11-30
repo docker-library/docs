@@ -2,8 +2,6 @@
 
 -	[`0.7.2`, `0.7`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/0e550c2109f6fdf35cc5fc11cd3563d89f7f45bb/Dockerfile)
 
--	[`0.7.1` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/aa37feba750e93a0d3a07520ba45abca0ba4fb99/Dockerfile)
-
 For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ghost/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ghost/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
