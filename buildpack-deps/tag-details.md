@@ -145,11 +145,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:jessie-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:ab7883706efe8f99ae3cadd267fb69a6313298dfa047657b22ca5faa8c386c03
+$ docker pull library/buildpack-deps@sha256:ff4450479b106cc18ea6d62c3ef2a534de05b2ec53120d49a439d545283169b5
 ```
 
--	Total Virtual Size: 291.7 MB (291653509 bytes)
--	Total v2 Content-Length: 112.2 MB (112206221 bytes)
+-	Total Virtual Size: 291.7 MB (291653516 bytes)
+-	Total v2 Content-Length: 112.2 MB (112206597 bytes)
 
 ### Layers (4)
 
@@ -198,7 +198,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 18.5 MB (18528542 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:18:59 GMT
 
-#### `1db7de304924df3141ab63c868d0512845b42c159e17f84c6ab4381d998f0030`
+#### `1fc461f8452c588afa5a343be12818d4bc263cee8bc423f8b8e44c33f03d978a`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -207,25 +207,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:00:17 GMT
+-	Created: Wed, 25 Nov 2015 16:48:43 GMT
 -	Parent Layer: `0f062bc856621abde5e76ca7fcb8a1915e3fb89f4aa9b0bf42df0e67d9054397`
 -	Docker Version: 1.8.3
--	Virtual Size: 122.2 MB (122248845 bytes)
--	v2 Blob: `sha256:d037f43089a1c35b4c134cf46ed2f6e8ce05766265295a52e1f2adb00e9eb728`
--	v2 Content-Length: 42.3 MB (42324665 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:20:48 GMT
+-	Virtual Size: 122.2 MB (122248852 bytes)
+-	v2 Blob: `sha256:47b142d56ce3cc7766143d5fcd836541dac5006fa66076d4261e9e3d4a24a0cd`
+-	v2 Content-Length: 42.3 MB (42325041 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 17:58:35 GMT
 
 ## `buildpack-deps:scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:255c1775252e00d2e4cc753db74114f59b36efccfd708d149a3c70a62b91429e
+$ docker pull library/buildpack-deps@sha256:ccaaa54b441f9ad3aaff32198fec5cf923d1d16a1e1e84caa9df7afc57844441
 ```
 
--	Total Virtual Size: 291.7 MB (291653509 bytes)
--	Total v2 Content-Length: 112.2 MB (112206221 bytes)
+-	Total Virtual Size: 291.7 MB (291653516 bytes)
+-	Total v2 Content-Length: 112.2 MB (112206597 bytes)
 
 ### Layers (4)
 
@@ -274,7 +275,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 18.5 MB (18528542 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:18:59 GMT
 
-#### `1db7de304924df3141ab63c868d0512845b42c159e17f84c6ab4381d998f0030`
+#### `1fc461f8452c588afa5a343be12818d4bc263cee8bc423f8b8e44c33f03d978a`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -283,25 +284,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:00:17 GMT
+-	Created: Wed, 25 Nov 2015 16:48:43 GMT
 -	Parent Layer: `0f062bc856621abde5e76ca7fcb8a1915e3fb89f4aa9b0bf42df0e67d9054397`
 -	Docker Version: 1.8.3
--	Virtual Size: 122.2 MB (122248845 bytes)
--	v2 Blob: `sha256:d037f43089a1c35b4c134cf46ed2f6e8ce05766265295a52e1f2adb00e9eb728`
--	v2 Content-Length: 42.3 MB (42324665 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:20:48 GMT
+-	Virtual Size: 122.2 MB (122248852 bytes)
+-	v2 Blob: `sha256:47b142d56ce3cc7766143d5fcd836541dac5006fa66076d4261e9e3d4a24a0cd`
+-	v2 Content-Length: 42.3 MB (42325041 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 17:58:35 GMT
 
 ## `buildpack-deps:jessie`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:60a6628c1629534a5f55a4f501a7f3bd949c50a3ec458bcb2ac52ed2e279f51b
+$ docker pull library/buildpack-deps@sha256:b9a8d6840b5e6303c1d384b17d1eb67c6afd3123d997b06a7a1c714fa9cf9a78
 ```
 
--	Total Virtual Size: 606.3 MB (606279266 bytes)
--	Total v2 Content-Length: 240.8 MB (240761362 bytes)
+-	Total Virtual Size: 606.3 MB (606279280 bytes)
+-	Total v2 Content-Length: 240.8 MB (240761771 bytes)
 
 ### Layers (5)
 
@@ -350,7 +352,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 18.5 MB (18528542 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:18:59 GMT
 
-#### `1db7de304924df3141ab63c868d0512845b42c159e17f84c6ab4381d998f0030`
+#### `1fc461f8452c588afa5a343be12818d4bc263cee8bc423f8b8e44c33f03d978a`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -359,18 +361,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:00:17 GMT
+-	Created: Wed, 25 Nov 2015 16:48:43 GMT
 -	Parent Layer: `0f062bc856621abde5e76ca7fcb8a1915e3fb89f4aa9b0bf42df0e67d9054397`
 -	Docker Version: 1.8.3
--	Virtual Size: 122.2 MB (122248845 bytes)
--	v2 Blob: `sha256:d037f43089a1c35b4c134cf46ed2f6e8ce05766265295a52e1f2adb00e9eb728`
--	v2 Content-Length: 42.3 MB (42324665 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:20:48 GMT
+-	Virtual Size: 122.2 MB (122248852 bytes)
+-	v2 Blob: `sha256:47b142d56ce3cc7766143d5fcd836541dac5006fa66076d4261e9e3d4a24a0cd`
+-	v2 Content-Length: 42.3 MB (42325041 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 17:58:35 GMT
 
-#### `8c1a2b85e52bd3a9b43c67b119711d1eb7d7965577c5244d3ac0c7c8aaf92f6c`
+#### `490f51432816e8c1f82cee6dba9d47024d94559b9680196e6a2045b8a823bf14`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -411,22 +414,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:02:14 GMT
--	Parent Layer: `1db7de304924df3141ab63c868d0512845b42c159e17f84c6ab4381d998f0030`
+-	Created: Wed, 25 Nov 2015 16:50:43 GMT
+-	Parent Layer: `1fc461f8452c588afa5a343be12818d4bc263cee8bc423f8b8e44c33f03d978a`
 -	Docker Version: 1.8.3
--	Virtual Size: 314.6 MB (314625757 bytes)
--	v2 Blob: `sha256:4717f7a00ad0297585ff7d7d0cc9f74f8c0545e20e076d68b48c72576ec4cb6c`
--	v2 Content-Length: 128.6 MB (128555141 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:22:45 GMT
+-	Virtual Size: 314.6 MB (314625764 bytes)
+-	v2 Blob: `sha256:6397456b1db08c3b5fb104497d15eb849a317c35ffeb18b608e6013593b82300`
+-	v2 Content-Length: 128.6 MB (128555174 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:00:20 GMT
 
 ## `buildpack-deps:latest`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:4de73b4fd0f74f9a56874948fb7dd3df725f24c0572e36dfdec2176b3f79f923
+$ docker pull library/buildpack-deps@sha256:f6de6c37996383bf535373b6b9a2f41adf94c9e348a3a5e4b9ce6ec4026cfbe2
 ```
 
--	Total Virtual Size: 606.3 MB (606279266 bytes)
--	Total v2 Content-Length: 240.8 MB (240761362 bytes)
+-	Total Virtual Size: 606.3 MB (606279280 bytes)
+-	Total v2 Content-Length: 240.8 MB (240761771 bytes)
 
 ### Layers (5)
 
@@ -475,7 +478,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 18.5 MB (18528542 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:18:59 GMT
 
-#### `1db7de304924df3141ab63c868d0512845b42c159e17f84c6ab4381d998f0030`
+#### `1fc461f8452c588afa5a343be12818d4bc263cee8bc423f8b8e44c33f03d978a`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -484,18 +487,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:00:17 GMT
+-	Created: Wed, 25 Nov 2015 16:48:43 GMT
 -	Parent Layer: `0f062bc856621abde5e76ca7fcb8a1915e3fb89f4aa9b0bf42df0e67d9054397`
 -	Docker Version: 1.8.3
--	Virtual Size: 122.2 MB (122248845 bytes)
--	v2 Blob: `sha256:d037f43089a1c35b4c134cf46ed2f6e8ce05766265295a52e1f2adb00e9eb728`
--	v2 Content-Length: 42.3 MB (42324665 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:20:48 GMT
+-	Virtual Size: 122.2 MB (122248852 bytes)
+-	v2 Blob: `sha256:47b142d56ce3cc7766143d5fcd836541dac5006fa66076d4261e9e3d4a24a0cd`
+-	v2 Content-Length: 42.3 MB (42325041 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 17:58:35 GMT
 
-#### `8c1a2b85e52bd3a9b43c67b119711d1eb7d7965577c5244d3ac0c7c8aaf92f6c`
+#### `490f51432816e8c1f82cee6dba9d47024d94559b9680196e6a2045b8a823bf14`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -536,13 +540,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:02:14 GMT
--	Parent Layer: `1db7de304924df3141ab63c868d0512845b42c159e17f84c6ab4381d998f0030`
+-	Created: Wed, 25 Nov 2015 16:50:43 GMT
+-	Parent Layer: `1fc461f8452c588afa5a343be12818d4bc263cee8bc423f8b8e44c33f03d978a`
 -	Docker Version: 1.8.3
--	Virtual Size: 314.6 MB (314625757 bytes)
--	v2 Blob: `sha256:4717f7a00ad0297585ff7d7d0cc9f74f8c0545e20e076d68b48c72576ec4cb6c`
--	v2 Content-Length: 128.6 MB (128555141 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:22:45 GMT
+-	Virtual Size: 314.6 MB (314625764 bytes)
+-	v2 Blob: `sha256:6397456b1db08c3b5fb104497d15eb849a317c35ffeb18b608e6013593b82300`
+-	v2 Content-Length: 128.6 MB (128555174 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:00:20 GMT
 
 ## `buildpack-deps:precise-curl`
 
@@ -642,11 +646,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:precise-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:0fc69af1616cc1140b3a349ddefedfc0a4de65de74c2880adfaadce6d52d2616
+$ docker pull library/buildpack-deps@sha256:844d7be857b3bf59c7fc1cbd823ed510553a5989736673c7cd82d0a036a8422e
 ```
 
--	Total Virtual Size: 241.9 MB (241930371 bytes)
--	Total v2 Content-Length: 80.0 MB (80022172 bytes)
+-	Total Virtual Size: 241.9 MB (241930590 bytes)
+-	Total v2 Content-Length: 80.0 MB (80024001 bytes)
 
 ### Layers (6)
 
@@ -734,7 +738,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 5.1 MB (5101552 bytes)
 -	v2 Last-Modified: Tue, 10 Nov 2015 18:11:32 GMT
 
-#### `78f4f7d085c07ad22fde0a8f484166cc332933141c99ae7d34c5d125b815dd1a`
+#### `f4c1cb7e5f8f00d53cc530279d228240cdbd4a38ff7b0a0e9b042a75a11b29b0`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -743,25 +747,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 10 Nov 2015 17:33:31 GMT
+-	Created: Wed, 25 Nov 2015 16:51:49 GMT
 -	Parent Layer: `e3d25699ff8e4c5c4c589325f99229427d637cd53e9535d84a00b047dad5404c`
--	Docker Version: 1.9.0
--	Virtual Size: 94.3 MB (94323558 bytes)
--	v2 Blob: `sha256:22bcc5672e4328366c615082af6901073b768a9dbe29941c5228c62c0544dd47`
--	v2 Content-Length: 30.8 MB (30823742 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:12:45 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 94.3 MB (94323777 bytes)
+-	v2 Blob: `sha256:4f23e27417ae7522c252fee9fae539ac130ca5c132e49f863d7d7e0b9d0a78e9`
+-	v2 Content-Length: 30.8 MB (30825571 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:01:58 GMT
 
 ## `buildpack-deps:precise`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:ae3b094c9ae55de35d12039ebcc93caad61910ed95b0b2df1a75d5ecc94c2ae5
+$ docker pull library/buildpack-deps@sha256:67eb9f696e8f734c37352c3c9314bf9e909ca6828d9c4729fb624655f84c2359
 ```
 
--	Total Virtual Size: 490.1 MB (490116351 bytes)
--	Total v2 Content-Length: 161.3 MB (161278074 bytes)
+-	Total Virtual Size: 491.8 MB (491773385 bytes)
+-	Total v2 Content-Length: 162.0 MB (161968671 bytes)
 
 ### Layers (7)
 
@@ -849,7 +854,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 5.1 MB (5101552 bytes)
 -	v2 Last-Modified: Tue, 10 Nov 2015 18:11:32 GMT
 
-#### `78f4f7d085c07ad22fde0a8f484166cc332933141c99ae7d34c5d125b815dd1a`
+#### `f4c1cb7e5f8f00d53cc530279d228240cdbd4a38ff7b0a0e9b042a75a11b29b0`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -858,18 +863,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 10 Nov 2015 17:33:31 GMT
+-	Created: Wed, 25 Nov 2015 16:51:49 GMT
 -	Parent Layer: `e3d25699ff8e4c5c4c589325f99229427d637cd53e9535d84a00b047dad5404c`
--	Docker Version: 1.9.0
--	Virtual Size: 94.3 MB (94323558 bytes)
--	v2 Blob: `sha256:22bcc5672e4328366c615082af6901073b768a9dbe29941c5228c62c0544dd47`
--	v2 Content-Length: 30.8 MB (30823742 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:12:45 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 94.3 MB (94323777 bytes)
+-	v2 Blob: `sha256:4f23e27417ae7522c252fee9fae539ac130ca5c132e49f863d7d7e0b9d0a78e9`
+-	v2 Content-Length: 30.8 MB (30825571 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:01:58 GMT
 
-#### `a6c92ae6ea5107474df04d24dd15f3a692d3ef8e5eb68320582e7faa4cf88ac0`
+#### `21ff44474cfd70d2fcf26e7553c82a3ebb37643876c491d9c1c3d544fba86fb4`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -910,13 +916,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 10 Nov 2015 17:34:32 GMT
--	Parent Layer: `78f4f7d085c07ad22fde0a8f484166cc332933141c99ae7d34c5d125b815dd1a`
--	Docker Version: 1.9.0
--	Virtual Size: 248.2 MB (248185980 bytes)
--	v2 Blob: `sha256:1180b72f7c7a955871661c53c14e45a6294da6f179d68d915afe017d5d449cf1`
--	v2 Content-Length: 81.3 MB (81255902 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:13:43 GMT
+-	Created: Wed, 25 Nov 2015 16:53:03 GMT
+-	Parent Layer: `f4c1cb7e5f8f00d53cc530279d228240cdbd4a38ff7b0a0e9b042a75a11b29b0`
+-	Docker Version: 1.8.3
+-	Virtual Size: 249.8 MB (249842795 bytes)
+-	v2 Blob: `sha256:30755053263585ba6991191d0b839bbf398f048b24b1ed724a2f1c88259a3a50`
+-	v2 Content-Length: 81.9 MB (81944670 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:03:22 GMT
 
 ## `buildpack-deps:sid-curl`
 
@@ -977,11 +983,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:sid-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:79d1ac131e37fdec60081ba2d922b84795b5cf041ab9d12580512e3fa1a0888a
+$ docker pull library/buildpack-deps@sha256:f783b19738efa24cd8cdf3068ede8ac4bef339a7ffb2d5e9220eea0bf48cb5a4
 ```
 
--	Total Virtual Size: 292.9 MB (292906916 bytes)
--	Total v2 Content-Length: 116.2 MB (116239536 bytes)
+-	Total Virtual Size: 293.6 MB (293610810 bytes)
+-	Total v2 Content-Length: 116.6 MB (116590075 bytes)
 
 ### Layers (4)
 
@@ -1030,7 +1036,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 20.4 MB (20369922 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:25:19 GMT
 
-#### `d4ed8124d761ceb390f63050503663e26d3d5a1888409a732859f80995777098`
+#### `cf591b012131f10c708be2d8a16d941abc9e6720561657714282c7282f1b19c4`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1039,25 +1045,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:03:42 GMT
+-	Created: Wed, 25 Nov 2015 16:54:00 GMT
 -	Parent Layer: `1be2cbd8e155d3391ab25143ca5c896301691367a15362fc147224c2381808cc`
 -	Docker Version: 1.8.3
--	Virtual Size: 127.5 MB (127474000 bytes)
--	v2 Blob: `sha256:4d752bc0e23c31b09ab7f443049e344c79ea7e31317e4fce6ad107e27c60bc7a`
--	v2 Content-Length: 44.3 MB (44288552 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:27:03 GMT
+-	Virtual Size: 128.2 MB (128177894 bytes)
+-	v2 Blob: `sha256:8680516f1c16a80d12c126c35c7ec7e7f7f5fe38a0bebacfcc38e131f0561ee4`
+-	v2 Content-Length: 44.6 MB (44639091 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:04:51 GMT
 
 ## `buildpack-deps:sid`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:d53fb8029db664c7d046815e345e6296010c586b1a358fa0c29eb1a24b98a6e2
+$ docker pull library/buildpack-deps@sha256:4040b233ea208910781447502b77f492c3ad32fa9f166d1156d345706804b00f
 ```
 
--	Total Virtual Size: 993.0 MB (992991384 bytes)
--	Total v2 Content-Length: 387.3 MB (387275652 bytes)
+-	Total Virtual Size: 884.6 MB (884619581 bytes)
+-	Total v2 Content-Length: 345.1 MB (345147839 bytes)
 
 ### Layers (5)
 
@@ -1106,7 +1113,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 20.4 MB (20369922 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:25:19 GMT
 
-#### `d4ed8124d761ceb390f63050503663e26d3d5a1888409a732859f80995777098`
+#### `cf591b012131f10c708be2d8a16d941abc9e6720561657714282c7282f1b19c4`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1115,18 +1122,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:03:42 GMT
+-	Created: Wed, 25 Nov 2015 16:54:00 GMT
 -	Parent Layer: `1be2cbd8e155d3391ab25143ca5c896301691367a15362fc147224c2381808cc`
 -	Docker Version: 1.8.3
--	Virtual Size: 127.5 MB (127474000 bytes)
--	v2 Blob: `sha256:4d752bc0e23c31b09ab7f443049e344c79ea7e31317e4fce6ad107e27c60bc7a`
--	v2 Content-Length: 44.3 MB (44288552 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:27:03 GMT
+-	Virtual Size: 128.2 MB (128177894 bytes)
+-	v2 Blob: `sha256:8680516f1c16a80d12c126c35c7ec7e7f7f5fe38a0bebacfcc38e131f0561ee4`
+-	v2 Content-Length: 44.6 MB (44639091 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:04:51 GMT
 
-#### `50b7b8e6e6bcff8ec5921a0b8a31a8373ad685bb825fdf1fcd8d8bb103ae0eab`
+#### `efeb5f829b8eda4275504d9269091482386510acbe01e86743a15a7372baa09b`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1167,13 +1175,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:06:05 GMT
--	Parent Layer: `d4ed8124d761ceb390f63050503663e26d3d5a1888409a732859f80995777098`
+-	Created: Wed, 25 Nov 2015 16:55:25 GMT
+-	Parent Layer: `cf591b012131f10c708be2d8a16d941abc9e6720561657714282c7282f1b19c4`
 -	Docker Version: 1.8.3
--	Virtual Size: 700.1 MB (700084468 bytes)
--	v2 Blob: `sha256:8183444f6eb692530c949bc4cfa71108b689fc06d4968af97e99d24a0e42b57f`
--	v2 Content-Length: 271.0 MB (271036116 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:30:04 GMT
+-	Virtual Size: 591.0 MB (591008771 bytes)
+-	v2 Blob: `sha256:cd7a5015843f542bde6e4c521fe711e15b9ad9d4bee5daf7d1de3f0f11c4e088`
+-	v2 Content-Length: 228.6 MB (228557764 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:07:11 GMT
 
 ## `buildpack-deps:stretch-curl`
 
@@ -1234,11 +1242,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:stretch-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:5d800947ae8f379227aee7aa21dae711a29ec711f09123806385f8ea4de2b88e
+$ docker pull library/buildpack-deps@sha256:9ae675fd98cca5a42c1be070c0b16a96b481f55e9c8d76e6e50cc2e1ce8e779a
 ```
 
--	Total Virtual Size: 306.4 MB (306362529 bytes)
--	Total v2 Content-Length: 119.1 MB (119058278 bytes)
+-	Total Virtual Size: 306.4 MB (306364688 bytes)
+-	Total v2 Content-Length: 119.1 MB (119059381 bytes)
 
 ### Layers (4)
 
@@ -1287,7 +1295,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 20.3 MB (20326211 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:33:06 GMT
 
-#### `3e427368c8cce05280c721580a9f1d9a5d327c1dea257f9b966b6bd7b43fcbcc`
+#### `24f32719742955abfb513263ad17eb005735a6f8c8484a716f8e811b180b9a62`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1296,25 +1304,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:07:18 GMT
+-	Created: Wed, 25 Nov 2015 16:56:34 GMT
 -	Parent Layer: `0f6b19eae326bda711ac9305bc3881cc1d9f059cfc6f33d7301686e3cc3547cc`
 -	Docker Version: 1.8.3
--	Virtual Size: 127.3 MB (127315232 bytes)
--	v2 Blob: `sha256:3d60a963ea9e48b6ac836c48eaa4fde9fa59928da9a772f553c3d955d3b54f6d`
--	v2 Content-Length: 44.2 MB (44242523 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:35:12 GMT
+-	Virtual Size: 127.3 MB (127317391 bytes)
+-	v2 Blob: `sha256:3f2cbb2be971ca370380dbb89bad35e7492b54f51657617dd7c29d35212536a5`
+-	v2 Content-Length: 44.2 MB (44243626 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:09:57 GMT
 
 ## `buildpack-deps:stretch`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:791f906d554c87d4f1e3e14171d6f6df2793404fe28b55397bf6c21942216b3a
+$ docker pull library/buildpack-deps@sha256:feb58d0fb76111101421ec3a5e0fd4f0f74aef2f772016bf0c3d06636fd57263
 ```
 
--	Total Virtual Size: 1.0 GB (1003895917 bytes)
--	Total v2 Content-Length: 388.7 MB (388743236 bytes)
+-	Total Virtual Size: 1.0 GB (1005954264 bytes)
+-	Total v2 Content-Length: 390.0 MB (390007771 bytes)
 
 ### Layers (5)
 
@@ -1363,7 +1372,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 20.3 MB (20326211 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:33:06 GMT
 
-#### `3e427368c8cce05280c721580a9f1d9a5d327c1dea257f9b966b6bd7b43fcbcc`
+#### `24f32719742955abfb513263ad17eb005735a6f8c8484a716f8e811b180b9a62`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1372,18 +1381,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:07:18 GMT
+-	Created: Wed, 25 Nov 2015 16:56:34 GMT
 -	Parent Layer: `0f6b19eae326bda711ac9305bc3881cc1d9f059cfc6f33d7301686e3cc3547cc`
 -	Docker Version: 1.8.3
--	Virtual Size: 127.3 MB (127315232 bytes)
--	v2 Blob: `sha256:3d60a963ea9e48b6ac836c48eaa4fde9fa59928da9a772f553c3d955d3b54f6d`
--	v2 Content-Length: 44.2 MB (44242523 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:35:12 GMT
+-	Virtual Size: 127.3 MB (127317391 bytes)
+-	v2 Blob: `sha256:3f2cbb2be971ca370380dbb89bad35e7492b54f51657617dd7c29d35212536a5`
+-	v2 Content-Length: 44.2 MB (44243626 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:09:57 GMT
 
-#### `15ef675463bd3e5e5c827973e01e65e3b60b90ecb91aaab064ccef08e86681b0`
+#### `b322fde28fd848d73c49b02c88d7707d8912cd0963670fb03bb8601a972df731`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1424,13 +1434,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:09:01 GMT
--	Parent Layer: `3e427368c8cce05280c721580a9f1d9a5d327c1dea257f9b966b6bd7b43fcbcc`
+-	Created: Wed, 25 Nov 2015 16:58:39 GMT
+-	Parent Layer: `24f32719742955abfb513263ad17eb005735a6f8c8484a716f8e811b180b9a62`
 -	Docker Version: 1.8.3
--	Virtual Size: 697.5 MB (697533388 bytes)
--	v2 Blob: `sha256:139540f862a12bd655df1f3ec2b76ae5388e42282d2ef92a6210ed31fe09792a`
--	v2 Content-Length: 269.7 MB (269684958 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:38:18 GMT
+-	Virtual Size: 699.6 MB (699589576 bytes)
+-	v2 Blob: `sha256:bb31055e16665623ff61c32c2742172767accea137914c5f52567ee17cc8171a`
+-	v2 Content-Length: 270.9 MB (270948390 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:12:38 GMT
 
 ## `buildpack-deps:trusty-curl`
 
@@ -1530,11 +1540,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:trusty-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:429f8d6079e247536c5708b28f172b6c2a16d641c87c451e241ea4490d7eab2e
+$ docker pull library/buildpack-deps@sha256:2884d8a8f24db8f3c47c6e652c54a026c6bbf43dda0b832413fb2e7e47133d79
 ```
 
--	Total Virtual Size: 279.3 MB (279288385 bytes)
--	Total v2 Content-Length: 99.2 MB (99194317 bytes)
+-	Total Virtual Size: 279.3 MB (279288392 bytes)
+-	Total v2 Content-Length: 99.2 MB (99194206 bytes)
 
 ### Layers (6)
 
@@ -1622,7 +1632,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 4.6 MB (4600494 bytes)
 -	v2 Last-Modified: Tue, 10 Nov 2015 18:24:14 GMT
 
-#### `e04bcad69ef10c357356115a8fb30d184e3b376bad422306767ac519080dea1a`
+#### `ce6f2e6411a4eaeb00a81f2e1e4faba2e51b4510c5294497ff16492b50e48395`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1631,25 +1641,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 10 Nov 2015 17:41:38 GMT
+-	Created: Wed, 25 Nov 2015 17:00:35 GMT
 -	Parent Layer: `0faf2b60014515cfd3bdd5ca165eaec2056a688bf8c3015775db6e58d1eb7732`
--	Docker Version: 1.9.0
--	Virtual Size: 79.7 MB (79689735 bytes)
--	v2 Blob: `sha256:320f300bd4492d282e6e377bcf43f83b69a82d2b999b7740025a14463b98f644`
--	v2 Content-Length: 28.9 MB (28851034 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:25:38 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 79.7 MB (79689742 bytes)
+-	v2 Blob: `sha256:93841bea868e2431e845c87854dfc711a1edbc76c37b0ff70b7599283fb358c5`
+-	v2 Content-Length: 28.9 MB (28850923 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:15:45 GMT
 
 ## `buildpack-deps:trusty`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:91bb5596226d772b44dadc8188485d866124e17b0e25c3426e1f11db58ca617d
+$ docker pull library/buildpack-deps@sha256:9f54744e60f9a29a42abc74afefa5d2699cd6c3719b89a32d806c4a32fef51db
 ```
 
--	Total Virtual Size: 531.8 MB (531783534 bytes)
--	Total v2 Content-Length: 194.8 MB (194798018 bytes)
+-	Total Virtual Size: 533.7 MB (533683660 bytes)
+-	Total v2 Content-Length: 195.6 MB (195571376 bytes)
 
 ### Layers (7)
 
@@ -1737,7 +1748,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 4.6 MB (4600494 bytes)
 -	v2 Last-Modified: Tue, 10 Nov 2015 18:24:14 GMT
 
-#### `e04bcad69ef10c357356115a8fb30d184e3b376bad422306767ac519080dea1a`
+#### `ce6f2e6411a4eaeb00a81f2e1e4faba2e51b4510c5294497ff16492b50e48395`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1746,18 +1757,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 10 Nov 2015 17:41:38 GMT
+-	Created: Wed, 25 Nov 2015 17:00:35 GMT
 -	Parent Layer: `0faf2b60014515cfd3bdd5ca165eaec2056a688bf8c3015775db6e58d1eb7732`
--	Docker Version: 1.9.0
--	Virtual Size: 79.7 MB (79689735 bytes)
--	v2 Blob: `sha256:320f300bd4492d282e6e377bcf43f83b69a82d2b999b7740025a14463b98f644`
--	v2 Content-Length: 28.9 MB (28851034 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:25:38 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 79.7 MB (79689742 bytes)
+-	v2 Blob: `sha256:93841bea868e2431e845c87854dfc711a1edbc76c37b0ff70b7599283fb358c5`
+-	v2 Content-Length: 28.9 MB (28850923 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:15:45 GMT
 
-#### `a242318ad30472395de77e846912d8d17489853793eeb50fddca5c7a7ba139be`
+#### `69725df6cb1f17109ee454eafecd700d021d2c3c261e1d5d4491fd04a71540d9`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1798,13 +1810,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 10 Nov 2015 17:43:31 GMT
--	Parent Layer: `e04bcad69ef10c357356115a8fb30d184e3b376bad422306767ac519080dea1a`
--	Docker Version: 1.9.0
--	Virtual Size: 252.5 MB (252495149 bytes)
--	v2 Blob: `sha256:0ab40b02b821f4cb0daa56e6b3d5bc36bc380880d20c3f47bcbe3336e14c224a`
--	v2 Content-Length: 95.6 MB (95603701 bytes)
--	v2 Last-Modified: Tue, 10 Nov 2015 18:26:37 GMT
+-	Created: Wed, 25 Nov 2015 17:02:36 GMT
+-	Parent Layer: `ce6f2e6411a4eaeb00a81f2e1e4faba2e51b4510c5294497ff16492b50e48395`
+-	Docker Version: 1.8.3
+-	Virtual Size: 254.4 MB (254395268 bytes)
+-	v2 Blob: `sha256:1e978e043fa452d575955c98923422b454245f67dd8f379e8f6382ce3aedf340`
+-	v2 Content-Length: 96.4 MB (96377170 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:17:00 GMT
 
 ## `buildpack-deps:vivid-curl`
 
@@ -1904,11 +1916,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:vivid-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:632a875d1c82f3ab7c836ec1c509d424efd2cd50ef166fff4c026463685c7a9d
+$ docker pull library/buildpack-deps@sha256:3556ee105ad6c66af90e7e77e3eeb671bc2eddf763a631e38e5d65dba71db599
 ```
 
--	Total Virtual Size: 259.5 MB (259543241 bytes)
--	Total v2 Content-Length: 93.7 MB (93655805 bytes)
+-	Total Virtual Size: 259.5 MB (259543248 bytes)
+-	Total v2 Content-Length: 93.7 MB (93655875 bytes)
 
 ### Layers (6)
 
@@ -1996,7 +2008,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 6.8 MB (6838186 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:41:32 GMT
 
-#### `4c8fa7be53e9791eea79292b87352254bfc7f9c035543f12cddc838efdb164e6`
+#### `f1115ccafdf3fd2947ee00f0ae1571999992b328bfb6a45289c751f708b59284`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2005,25 +2017,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:13:14 GMT
+-	Created: Wed, 25 Nov 2015 17:04:02 GMT
 -	Parent Layer: `401596022d7ae8c775e489219fc94b34a3dbbffaddc0f73a6a324ef485ce249b`
 -	Docker Version: 1.8.3
--	Virtual Size: 112.1 MB (112122408 bytes)
--	v2 Blob: `sha256:f31b611dc750084e2f0303c2dcddec5e6a01c711afc51af265ce698afacd352a`
--	v2 Content-Length: 37.5 MB (37483743 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:43:30 GMT
+-	Virtual Size: 112.1 MB (112122415 bytes)
+-	v2 Blob: `sha256:4f77f03ad84164269a4dd1c5def3c1427d87961d81d6a4a0d8fce47a8a2040fa`
+-	v2 Content-Length: 37.5 MB (37483813 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:18:28 GMT
 
 ## `buildpack-deps:vivid`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:2ae12b5f79d287f17f1dcb6aa5fe1493275355ac88fc9459d8df2db4bbe4b938
+$ docker pull library/buildpack-deps@sha256:34d8df79c5d4794369672819e4149bfe171e0e31c17ca0e1474b0849703eb5ac
 ```
 
--	Total Virtual Size: 600.0 MB (600039777 bytes)
--	Total v2 Content-Length: 220.5 MB (220495876 bytes)
+-	Total Virtual Size: 600.0 MB (600039791 bytes)
+-	Total v2 Content-Length: 220.5 MB (220495936 bytes)
 
 ### Layers (7)
 
@@ -2111,7 +2124,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 6.8 MB (6838186 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:41:32 GMT
 
-#### `4c8fa7be53e9791eea79292b87352254bfc7f9c035543f12cddc838efdb164e6`
+#### `f1115ccafdf3fd2947ee00f0ae1571999992b328bfb6a45289c751f708b59284`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2120,18 +2133,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:13:14 GMT
+-	Created: Wed, 25 Nov 2015 17:04:02 GMT
 -	Parent Layer: `401596022d7ae8c775e489219fc94b34a3dbbffaddc0f73a6a324ef485ce249b`
 -	Docker Version: 1.8.3
--	Virtual Size: 112.1 MB (112122408 bytes)
--	v2 Blob: `sha256:f31b611dc750084e2f0303c2dcddec5e6a01c711afc51af265ce698afacd352a`
--	v2 Content-Length: 37.5 MB (37483743 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:43:30 GMT
+-	Virtual Size: 112.1 MB (112122415 bytes)
+-	v2 Blob: `sha256:4f77f03ad84164269a4dd1c5def3c1427d87961d81d6a4a0d8fce47a8a2040fa`
+-	v2 Content-Length: 37.5 MB (37483813 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:18:28 GMT
 
-#### `170f14767481a06cc87a9f32fe9a53c0d3174406f206ecbcb6196248e6bbb739`
+#### `2ffe4851a4d12bcb299aefd47bade3392d8e261ae021569c51e8aa9aca3d53bf`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2172,13 +2186,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:14:57 GMT
--	Parent Layer: `4c8fa7be53e9791eea79292b87352254bfc7f9c035543f12cddc838efdb164e6`
+-	Created: Wed, 25 Nov 2015 17:07:46 GMT
+-	Parent Layer: `f1115ccafdf3fd2947ee00f0ae1571999992b328bfb6a45289c751f708b59284`
 -	Docker Version: 1.8.3
--	Virtual Size: 340.5 MB (340496536 bytes)
--	v2 Blob: `sha256:f989241595ddf50318d70e0480b5352a4db854f9b3043cbc19a945419aca08e7`
--	v2 Content-Length: 126.8 MB (126840071 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:45:30 GMT
+-	Virtual Size: 340.5 MB (340496543 bytes)
+-	v2 Blob: `sha256:c7743d084391e17804e1e59de943156b9eaf3fce9c42a6180031184645ab4d26`
+-	v2 Content-Length: 126.8 MB (126840061 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:20:13 GMT
 
 ## `buildpack-deps:wheezy-curl`
 
@@ -2239,11 +2253,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:wheezy-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:eb02d3d9a112f8ca70605478946565940a7bccf7999259694f9daeff90694225
+$ docker pull library/buildpack-deps@sha256:3bbdf245bfddc22a28a028029d03a787749bccc276bed1af0cc6ce78a7acf3e6
 ```
 
--	Total Virtual Size: 208.4 MB (208445373 bytes)
--	Total v2 Content-Length: 80.9 MB (80946606 bytes)
+-	Total Virtual Size: 209.1 MB (209085074 bytes)
+-	Total v2 Content-Length: 81.3 MB (81268955 bytes)
 
 ### Layers (4)
 
@@ -2292,7 +2306,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 6.7 MB (6728705 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:47:21 GMT
 
-#### `8c87cc4569d87823895da410a93ffb007aa21aef6f056ceeab6d41b7fe615255`
+#### `eaa056172ce553435cabc42c09ac0653dcd65cc6b44e75511bc481de398e29da`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2301,25 +2315,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:15:51 GMT
+-	Created: Wed, 25 Nov 2015 17:09:04 GMT
 -	Parent Layer: `28c95cef3c9c7405353a575056020c196c8954ae1a09eb76bd37fc534afcc1d8`
 -	Docker Version: 1.8.3
--	Virtual Size: 109.4 MB (109369069 bytes)
--	v2 Blob: `sha256:ddd6534e515f08f7c3f3b5c9d972e571ca4771ec7a3fa52c49e8930c40b47e45`
--	v2 Content-Length: 37.0 MB (37032618 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:49:33 GMT
+-	Virtual Size: 110.0 MB (110008770 bytes)
+-	v2 Blob: `sha256:991d9b0b4e846aae8e66eb00993ab53283cf32dd299a3405d6ac68bf4b59b968`
+-	v2 Content-Length: 37.4 MB (37354967 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:22:11 GMT
 
 ## `buildpack-deps:wheezy`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:1f1b1d38df045fdf48dba7a91e0182c6e5985ef670cdf0c5ee06867662becd9c
+$ docker pull library/buildpack-deps@sha256:c1f1b6e388225961daa78c4957d534fa74d9c01806ef910458a91eb16a2a6464
 ```
 
--	Total Virtual Size: 459.0 MB (458995383 bytes)
--	Total v2 Content-Length: 175.2 MB (175226162 bytes)
+-	Total Virtual Size: 459.6 MB (459643655 bytes)
+-	Total v2 Content-Length: 175.6 MB (175552106 bytes)
 
 ### Layers (5)
 
@@ -2368,7 +2383,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 6.7 MB (6728705 bytes)
 -	v2 Last-Modified: Fri, 20 Nov 2015 05:47:21 GMT
 
-#### `8c87cc4569d87823895da410a93ffb007aa21aef6f056ceeab6d41b7fe615255`
+#### `eaa056172ce553435cabc42c09ac0653dcd65cc6b44e75511bc481de398e29da`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2377,18 +2392,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:15:51 GMT
+-	Created: Wed, 25 Nov 2015 17:09:04 GMT
 -	Parent Layer: `28c95cef3c9c7405353a575056020c196c8954ae1a09eb76bd37fc534afcc1d8`
 -	Docker Version: 1.8.3
--	Virtual Size: 109.4 MB (109369069 bytes)
--	v2 Blob: `sha256:ddd6534e515f08f7c3f3b5c9d972e571ca4771ec7a3fa52c49e8930c40b47e45`
--	v2 Content-Length: 37.0 MB (37032618 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:49:33 GMT
+-	Virtual Size: 110.0 MB (110008770 bytes)
+-	v2 Blob: `sha256:991d9b0b4e846aae8e66eb00993ab53283cf32dd299a3405d6ac68bf4b59b968`
+-	v2 Content-Length: 37.4 MB (37354967 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:22:11 GMT
 
-#### `23b327a378556baad4b6ad8cc5c232bd26d6e8905711aae962b8441812fd2124`
+#### `d968e166056d762f6b40824f67003d5a4242d5b500683fe1f693c50c0d1d37bb`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2429,13 +2445,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 20 Nov 2015 05:16:47 GMT
--	Parent Layer: `8c87cc4569d87823895da410a93ffb007aa21aef6f056ceeab6d41b7fe615255`
+-	Created: Wed, 25 Nov 2015 17:10:41 GMT
+-	Parent Layer: `eaa056172ce553435cabc42c09ac0653dcd65cc6b44e75511bc481de398e29da`
 -	Docker Version: 1.8.3
--	Virtual Size: 250.6 MB (250550010 bytes)
--	v2 Blob: `sha256:acbb110496af0f5083f6f09cd995586f407054bbc927c97a38bff4d0cfc3ffba`
--	v2 Content-Length: 94.3 MB (94279556 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 05:51:39 GMT
+-	Virtual Size: 250.6 MB (250558581 bytes)
+-	v2 Blob: `sha256:31c9c7f86998211334cb9154ec023f3efa40693f3152e7705d192daf318d66e3`
+-	v2 Content-Length: 94.3 MB (94283151 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:23:28 GMT
 
 ## `buildpack-deps:wily-curl`
 
@@ -2535,11 +2551,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:wily-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:c371e018ccb6564483d4b6562591dfd6e40ee3b7a1991dd316b47fd3eb5faf9e
+$ docker pull library/buildpack-deps@sha256:90746dd071db9cde731c22751343aec559db05f415b4b77415b790439fc2f93a
 ```
 
--	Total Virtual Size: 261.8 MB (261830545 bytes)
--	Total v2 Content-Length: 95.1 MB (95052996 bytes)
+-	Total Virtual Size: 261.8 MB (261830552 bytes)
+-	Total v2 Content-Length: 95.1 MB (95052525 bytes)
 
 ### Layers (6)
 
@@ -2627,7 +2643,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 7.2 MB (7224986 bytes)
 -	v2 Last-Modified: Thu, 22 Oct 2015 23:49:43 GMT
 
-#### `1421d7f2e649fb89d3ff6563480e625dcd45ef119f76462243cd6d37a73e063b`
+#### `a0a65171cc78af92ca9b4df427899f334083489dfc39a17a0b7eedc7d4bd467e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2636,25 +2652,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 22 Oct 2015 22:56:53 GMT
+-	Created: Wed, 25 Nov 2015 17:12:36 GMT
 -	Parent Layer: `f2deaace226318160a5a79a0592b562e48ef973e89ddaaa6b941f0ddd0cb0dbc`
--	Docker Version: 1.8.2
--	Virtual Size: 113.5 MB (113526090 bytes)
--	v2 Blob: `sha256:4eafa886a7be27f9dcb68760c3a8b8ea8e868c810cb150143bb2644dd74b6859`
--	v2 Content-Length: 38.0 MB (38010675 bytes)
--	v2 Last-Modified: Thu, 22 Oct 2015 23:52:15 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 113.5 MB (113526097 bytes)
+-	v2 Blob: `sha256:3ee27126c15e5b7321e3b50e06f6ed855fc3a60001d701c622272571b9c1f666`
+-	v2 Content-Length: 38.0 MB (38010204 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:25:09 GMT
 
 ## `buildpack-deps:wily`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:c8b7afe8b98d3ac20c636ecf99899b6d394e453b4627a3f587e87839d8ff3a6a
+$ docker pull library/buildpack-deps@sha256:6128366c554bc50df5a825cfe920cba77dfcc8e813fb39538716090c00d801c0
 ```
 
--	Total Virtual Size: 631.9 MB (631888757 bytes)
--	Total v2 Content-Length: 228.5 MB (228513244 bytes)
+-	Total Virtual Size: 633.6 MB (633626253 bytes)
+-	Total v2 Content-Length: 229.2 MB (229176443 bytes)
 
 ### Layers (7)
 
@@ -2742,7 +2759,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Content-Length: 7.2 MB (7224986 bytes)
 -	v2 Last-Modified: Thu, 22 Oct 2015 23:49:43 GMT
 
-#### `1421d7f2e649fb89d3ff6563480e625dcd45ef119f76462243cd6d37a73e063b`
+#### `a0a65171cc78af92ca9b4df427899f334083489dfc39a17a0b7eedc7d4bd467e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2751,18 +2768,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		mercurial \
 		openssh-client \
 		subversion \
+				procps \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 22 Oct 2015 22:56:53 GMT
+-	Created: Wed, 25 Nov 2015 17:12:36 GMT
 -	Parent Layer: `f2deaace226318160a5a79a0592b562e48ef973e89ddaaa6b941f0ddd0cb0dbc`
--	Docker Version: 1.8.2
--	Virtual Size: 113.5 MB (113526090 bytes)
--	v2 Blob: `sha256:4eafa886a7be27f9dcb68760c3a8b8ea8e868c810cb150143bb2644dd74b6859`
--	v2 Content-Length: 38.0 MB (38010675 bytes)
--	v2 Last-Modified: Thu, 22 Oct 2015 23:52:15 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 113.5 MB (113526097 bytes)
+-	v2 Blob: `sha256:3ee27126c15e5b7321e3b50e06f6ed855fc3a60001d701c622272571b9c1f666`
+-	v2 Content-Length: 38.0 MB (38010204 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:25:09 GMT
 
-#### `62f99a92c8ed68afa1d9befaa36717d90a09121182fcf771a593f4bfbc48ce63`
+#### `f2bf5ca6404ab2c05539a54c2dfd2d799cf4bdf78f87d7620af9fa41ef4da33c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2803,10 +2821,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 22 Oct 2015 22:58:04 GMT
--	Parent Layer: `1421d7f2e649fb89d3ff6563480e625dcd45ef119f76462243cd6d37a73e063b`
--	Docker Version: 1.8.2
--	Virtual Size: 370.1 MB (370058212 bytes)
--	v2 Blob: `sha256:04f6c5c0255d1c4cbad293eafed0896704eb11c79d386670608d30b0fbb6aaeb`
--	v2 Content-Length: 133.5 MB (133460248 bytes)
--	v2 Last-Modified: Thu, 22 Oct 2015 23:54:36 GMT
+-	Created: Wed, 25 Nov 2015 17:17:08 GMT
+-	Parent Layer: `a0a65171cc78af92ca9b4df427899f334083489dfc39a17a0b7eedc7d4bd467e`
+-	Docker Version: 1.8.3
+-	Virtual Size: 371.8 MB (371795701 bytes)
+-	v2 Blob: `sha256:dc0a7af973e955655e488ac9bff7bdd108d81cda04bef60e6eb8e30ec606f3aa`
+-	v2 Content-Length: 134.1 MB (134123918 bytes)
+-	v2 Last-Modified: Wed, 25 Nov 2015 18:26:46 GMT

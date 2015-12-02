@@ -8,7 +8,7 @@
 ## `crux:latest`
 
 ```console
-$ docker pull library/crux@sha256:f8f6605f25e99d3c1cebfda6e55f3c2c6403231059c6ac180172be7cd07b256e
+$ docker pull library/crux@sha256:c799bb524e4841949192c37024464e4d79291d9448b9635fcbf8b43b15de2aa8
 ```
 
 -	Total Virtual Size: 341.7 MB (341729815 bytes)

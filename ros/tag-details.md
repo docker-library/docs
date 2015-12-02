@@ -17,7 +17,7 @@
 ## `ros:indigo-ros-core`
 
 ```console
-$ docker pull library/ros@sha256:2a3e968fdcd2f2aa6208f8fe27c4810eb858310bcab5d76673004a00310c0444
+$ docker pull library/ros@sha256:f56a36bd9037db5c6f990a3aee0075e933f9ac9f7e8e18bb017f6aecb38441b4
 ```
 
 -	Total Virtual Size: 811.8 MB (811824356 bytes)
@@ -269,7 +269,7 @@ CMD ["bash"]
 ## `ros:indigo-ros-base`
 
 ```console
-$ docker pull library/ros@sha256:f3bb9422d580146c0d5bf16e6131f468e397c4fd32ec7e8fe6ab5ebba092e1d1
+$ docker pull library/ros@sha256:c9c19dbdfb06e548d82b53a84d4d3bd9b2922640c684401313126d0f384428c7
 ```
 
 -	Total Virtual Size: 826.3 MB (826284993 bytes)
@@ -551,7 +551,7 @@ RUN apt-get update && apt-get install -y\
 ## `ros:indigo-robot`
 
 ```console
-$ docker pull library/ros@sha256:70978c0a7ea36de9a44efb86d2da466dac7065453a50d89d14bd1928656b6d18
+$ docker pull library/ros@sha256:022632ca64be565fe51fad7516de50c19dc86ca2807ed853d305a7672b522d63
 ```
 
 -	Total Virtual Size: 1.0 GB (1036999810 bytes)
