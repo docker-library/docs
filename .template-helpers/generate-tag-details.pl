@@ -112,7 +112,7 @@ sub get_layer_data {
 	my $data = {
 		map({ $_ => $v1->{$_} } qw(id created parent docker_version)),
 		container_command => $v1->{container_config}{Cmd},
-		virtual_size => $v1->{Size},
+		virtual_size => $v1->{Size} // 0,
 		blob => $blob,
 	};
 	my $blobHeaders = get_blob_headers($repo, $blob);
