@@ -91,5 +91,5 @@ Remember, you must install dependencies for your extensions manually. If an exte
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
 ```console
-$ docker run -it --rm --name my-apache-php-app -v "$PWD":/var/www/html php:5.6-apache
+$ docker run -p 80:80 -it --rm --name my-apache-php-app -v "$PWD":/var/www/html php:5.6-apache
 ```
