@@ -2,7 +2,7 @@
 
 -	[`2.5.5`, `2.5` (*jessie/2.5.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/636cd874df38edd77a187c08e1803693b3d978d3/jessie/2.5.5/Dockerfile)
 -	[`2.6`, `2.6.10` (*jessie/2.6.10/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/803663b157696616d70e2bb44ce6e256f912e3a6/jessie/2.6.10/Dockerfile)
--	[`2.7`, `2.7.1`, `latest` (*jessie/2.7.1/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/313c56491780cc1835ab842fea425c73f7803f46/jessie/2.7.1/Dockerfile)
+-	[`2.7`, `2.7.2`, `latest` (*jessie/2.7.2/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/f57b71e11ed4cf2f74a18fb2ff80dcdb5a63df57/jessie/2.7.2/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/arangodb`)](https://github.com/docker-library/official-images/blob/master/library/arangodb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
