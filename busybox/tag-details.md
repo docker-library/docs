@@ -14,36 +14,36 @@
 ## `busybox:1.21.0-ubuntu`
 
 ```console
-$ docker pull library/busybox@sha256:e9ff9ad8b8c242935922761c55ae461bfc2f85d23a35734b6511774d15e954f4
+$ docker pull library/busybox@sha256:2e8bb1e3beca5840cbf49a9142262e5c8b4f0d0a47bea1ee8ab954a6c198fb20
 ```
 
 -	Total Virtual Size: 4.3 MB (4346790 bytes)
--	Total v2 Content-Length: 2.0 MB (1995622 bytes)
+-	Total v2 Content-Length: 2.0 MB (1995612 bytes)
 
 ### Layers (2)
 
-#### `6c21178ac8d26414c17e2d92654ec12759488f5201f4657dbe77960c656dde25`
+#### `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
 
 ```dockerfile
-ADD file:a8a249110680028f4f0c8cb4ccb0e532586b08f74d4c09c4495bc0e2b3cfbfbf in /
+ADD file:b333e2afa5aa1821be2beb361aee79cb39fb9e9273f7251813fb708c1ade12bb in /
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:04 GMT
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:26 GMT
+-	Docker Version: 1.8.3
 -	Virtual Size: 4.3 MB (4346790 bytes)
--	v2 Blob: `sha256:c6fba9be254dab8aeca196afe841889a718b39d8f0757b340a705a8d4b1a4f85`
--	v2 Content-Length: 2.0 MB (1995590 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:37:56 GMT
+-	v2 Blob: `sha256:082340653daf0364a24268c6ca0594f22766a683b3e17f49028ef564b229e835`
+-	v2 Content-Length: 2.0 MB (1995580 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 18:32:20 GMT
 
-#### `97c49c340b4d8cc986f8f706c8ddf0b65d0c1ea6efe4900c3538aaf0636042e1`
+#### `a6dbc8d6ddbb9e905518a9df65f414efce038de5f253a081b1205c6cea4bac17`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:05 GMT
--	Parent Layer: `6c21178ac8d26414c17e2d92654ec12759488f5201f4657dbe77960c656dde25`
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:26 GMT
+-	Parent Layer: `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -52,36 +52,36 @@ CMD ["sh"]
 ## `busybox:1.21-ubuntu`
 
 ```console
-$ docker pull library/busybox@sha256:86a7829a37fea81d6277e3b3c0e74af426eb806164d1eb5e70a791694683dbff
+$ docker pull library/busybox@sha256:0ffdec6e0a48323b9aa3dc533c5fdeccda83df67ab693f727cda120fc8aede88
 ```
 
 -	Total Virtual Size: 4.3 MB (4346790 bytes)
--	Total v2 Content-Length: 2.0 MB (1995622 bytes)
+-	Total v2 Content-Length: 2.0 MB (1995612 bytes)
 
 ### Layers (2)
 
-#### `6c21178ac8d26414c17e2d92654ec12759488f5201f4657dbe77960c656dde25`
+#### `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
 
 ```dockerfile
-ADD file:a8a249110680028f4f0c8cb4ccb0e532586b08f74d4c09c4495bc0e2b3cfbfbf in /
+ADD file:b333e2afa5aa1821be2beb361aee79cb39fb9e9273f7251813fb708c1ade12bb in /
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:04 GMT
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:26 GMT
+-	Docker Version: 1.8.3
 -	Virtual Size: 4.3 MB (4346790 bytes)
--	v2 Blob: `sha256:c6fba9be254dab8aeca196afe841889a718b39d8f0757b340a705a8d4b1a4f85`
--	v2 Content-Length: 2.0 MB (1995590 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:37:56 GMT
+-	v2 Blob: `sha256:082340653daf0364a24268c6ca0594f22766a683b3e17f49028ef564b229e835`
+-	v2 Content-Length: 2.0 MB (1995580 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 18:32:20 GMT
 
-#### `97c49c340b4d8cc986f8f706c8ddf0b65d0c1ea6efe4900c3538aaf0636042e1`
+#### `a6dbc8d6ddbb9e905518a9df65f414efce038de5f253a081b1205c6cea4bac17`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:05 GMT
--	Parent Layer: `6c21178ac8d26414c17e2d92654ec12759488f5201f4657dbe77960c656dde25`
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:26 GMT
+-	Parent Layer: `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -90,36 +90,36 @@ CMD ["sh"]
 ## `busybox:1-ubuntu`
 
 ```console
-$ docker pull library/busybox@sha256:a02530780f51adb7f929d74278160723a751cf44763e42c6fa86290677427d53
+$ docker pull library/busybox@sha256:148a142e0eb29d0c686e27dc08e399496cf46ca64ed6303839c339ed8dabd3ce
 ```
 
 -	Total Virtual Size: 4.3 MB (4346790 bytes)
--	Total v2 Content-Length: 2.0 MB (1995622 bytes)
+-	Total v2 Content-Length: 2.0 MB (1995612 bytes)
 
 ### Layers (2)
 
-#### `6c21178ac8d26414c17e2d92654ec12759488f5201f4657dbe77960c656dde25`
+#### `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
 
 ```dockerfile
-ADD file:a8a249110680028f4f0c8cb4ccb0e532586b08f74d4c09c4495bc0e2b3cfbfbf in /
+ADD file:b333e2afa5aa1821be2beb361aee79cb39fb9e9273f7251813fb708c1ade12bb in /
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:04 GMT
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:26 GMT
+-	Docker Version: 1.8.3
 -	Virtual Size: 4.3 MB (4346790 bytes)
--	v2 Blob: `sha256:c6fba9be254dab8aeca196afe841889a718b39d8f0757b340a705a8d4b1a4f85`
--	v2 Content-Length: 2.0 MB (1995590 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:37:56 GMT
+-	v2 Blob: `sha256:082340653daf0364a24268c6ca0594f22766a683b3e17f49028ef564b229e835`
+-	v2 Content-Length: 2.0 MB (1995580 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 18:32:20 GMT
 
-#### `97c49c340b4d8cc986f8f706c8ddf0b65d0c1ea6efe4900c3538aaf0636042e1`
+#### `a6dbc8d6ddbb9e905518a9df65f414efce038de5f253a081b1205c6cea4bac17`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:05 GMT
--	Parent Layer: `6c21178ac8d26414c17e2d92654ec12759488f5201f4657dbe77960c656dde25`
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:26 GMT
+-	Parent Layer: `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -128,36 +128,36 @@ CMD ["sh"]
 ## `busybox:ubuntu`
 
 ```console
-$ docker pull library/busybox@sha256:a5c199fad1a02d5faa424ec1e500d568b7d72e642bdee9b571a32e70993c270e
+$ docker pull library/busybox@sha256:8f1d9b6168120d917eb8539a8cc590c1161a2aa7cdda8ca62962d9ee012b29ef
 ```
 
 -	Total Virtual Size: 4.3 MB (4346790 bytes)
--	Total v2 Content-Length: 2.0 MB (1995622 bytes)
+-	Total v2 Content-Length: 2.0 MB (1995612 bytes)
 
 ### Layers (2)
 
-#### `6c21178ac8d26414c17e2d92654ec12759488f5201f4657dbe77960c656dde25`
+#### `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
 
 ```dockerfile
-ADD file:a8a249110680028f4f0c8cb4ccb0e532586b08f74d4c09c4495bc0e2b3cfbfbf in /
+ADD file:b333e2afa5aa1821be2beb361aee79cb39fb9e9273f7251813fb708c1ade12bb in /
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:04 GMT
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:26 GMT
+-	Docker Version: 1.8.3
 -	Virtual Size: 4.3 MB (4346790 bytes)
--	v2 Blob: `sha256:c6fba9be254dab8aeca196afe841889a718b39d8f0757b340a705a8d4b1a4f85`
--	v2 Content-Length: 2.0 MB (1995590 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:37:56 GMT
+-	v2 Blob: `sha256:082340653daf0364a24268c6ca0594f22766a683b3e17f49028ef564b229e835`
+-	v2 Content-Length: 2.0 MB (1995580 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 18:32:20 GMT
 
-#### `97c49c340b4d8cc986f8f706c8ddf0b65d0c1ea6efe4900c3538aaf0636042e1`
+#### `a6dbc8d6ddbb9e905518a9df65f414efce038de5f253a081b1205c6cea4bac17`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:05 GMT
--	Parent Layer: `6c21178ac8d26414c17e2d92654ec12759488f5201f4657dbe77960c656dde25`
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:26 GMT
+-	Parent Layer: `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -166,36 +166,36 @@ CMD ["sh"]
 ## `busybox:1.24.1`
 
 ```console
-$ docker pull library/busybox@sha256:7ba8fc532956b2c0f28a0b7407a973275d8b0cbb6ab27f27ce2f509270a316b0
+$ docker pull library/busybox@sha256:36cc43b43ec6398a04635c959aec1cde0fc69c0d2b69d62c9452428d98f546d5
 ```
 
--	Total Virtual Size: 1.1 MB (1108935 bytes)
--	Total v2 Content-Length: 674.3 KB (674290 bytes)
+-	Total Virtual Size: 1.1 MB (1113436 bytes)
+-	Total v2 Content-Length: 675.9 KB (675897 bytes)
 
 ### Layers (2)
 
-#### `d1592a710ac323612bd786fa8ac20727c58d8a67847e5a65177c594f43919498`
+#### `5c5fb281b01ee091a0fffa5b4a4c7fb7d358e7fb7c49c263d6d7a4e35d199fd0`
 
 ```dockerfile
-ADD file:a3bc1e842b69636f9df5256c49c5374fb4eef1e281fe3f282c65fb853ee171c5 in /
+ADD file:c295b0748bf05d4527f500b62ff269bfd0037f7515f1375d2ee474b830bad382 in /
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:54 GMT
--	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1108935 bytes)
--	v2 Blob: `sha256:55dc925c23d1ed82551fd018c27ac3ee731377b6bad3963a2a4e76e753d70e57`
--	v2 Content-Length: 674.3 KB (674258 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:38:25 GMT
+-	Created: Tue, 08 Dec 2015 18:31:50 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.1 MB (1113436 bytes)
+-	v2 Blob: `sha256:d7e8ec85c5abc60edf74bd4b8d68049350127e4102a084f22060f7321eac3586`
+-	v2 Content-Length: 675.9 KB (675865 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 18:32:57 GMT
 
-#### `17583c7dd0dae6244203b8029733bdb7d17fccbb2b5d93e2b24cf48b8bfd06e2`
+#### `fc0db02f30724abc777d7ae2b2404c6d074f1e2ceca19912352aea30a42f50b7`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:55 GMT
--	Parent Layer: `d1592a710ac323612bd786fa8ac20727c58d8a67847e5a65177c594f43919498`
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:51 GMT
+-	Parent Layer: `5c5fb281b01ee091a0fffa5b4a4c7fb7d358e7fb7c49c263d6d7a4e35d199fd0`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -204,36 +204,36 @@ CMD ["sh"]
 ## `busybox:1.24`
 
 ```console
-$ docker pull library/busybox@sha256:59dddbb6c1b45fdd082cbe975c2758412f8da1ab61b290671f9d814d6fdfabf3
+$ docker pull library/busybox@sha256:a1a1b49b24066fda26eadaf98dced32f0592575f2d300b8b1879c85e6085f230
 ```
 
--	Total Virtual Size: 1.1 MB (1108935 bytes)
--	Total v2 Content-Length: 674.3 KB (674290 bytes)
+-	Total Virtual Size: 1.1 MB (1113436 bytes)
+-	Total v2 Content-Length: 675.9 KB (675897 bytes)
 
 ### Layers (2)
 
-#### `d1592a710ac323612bd786fa8ac20727c58d8a67847e5a65177c594f43919498`
+#### `5c5fb281b01ee091a0fffa5b4a4c7fb7d358e7fb7c49c263d6d7a4e35d199fd0`
 
 ```dockerfile
-ADD file:a3bc1e842b69636f9df5256c49c5374fb4eef1e281fe3f282c65fb853ee171c5 in /
+ADD file:c295b0748bf05d4527f500b62ff269bfd0037f7515f1375d2ee474b830bad382 in /
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:54 GMT
--	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1108935 bytes)
--	v2 Blob: `sha256:55dc925c23d1ed82551fd018c27ac3ee731377b6bad3963a2a4e76e753d70e57`
--	v2 Content-Length: 674.3 KB (674258 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:38:25 GMT
+-	Created: Tue, 08 Dec 2015 18:31:50 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.1 MB (1113436 bytes)
+-	v2 Blob: `sha256:d7e8ec85c5abc60edf74bd4b8d68049350127e4102a084f22060f7321eac3586`
+-	v2 Content-Length: 675.9 KB (675865 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 18:32:57 GMT
 
-#### `17583c7dd0dae6244203b8029733bdb7d17fccbb2b5d93e2b24cf48b8bfd06e2`
+#### `fc0db02f30724abc777d7ae2b2404c6d074f1e2ceca19912352aea30a42f50b7`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:55 GMT
--	Parent Layer: `d1592a710ac323612bd786fa8ac20727c58d8a67847e5a65177c594f43919498`
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:51 GMT
+-	Parent Layer: `5c5fb281b01ee091a0fffa5b4a4c7fb7d358e7fb7c49c263d6d7a4e35d199fd0`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -242,36 +242,36 @@ CMD ["sh"]
 ## `busybox:1`
 
 ```console
-$ docker pull library/busybox@sha256:2b7da7b241e47dc2b7ad83ebb4c3bbc18378f5510a32c1f13b226b58f1f03275
+$ docker pull library/busybox@sha256:dd02546a8e34f9c1896ee13cac4f264707078b3f86ddef57e36584c3f66ecaf7
 ```
 
--	Total Virtual Size: 1.1 MB (1108935 bytes)
--	Total v2 Content-Length: 674.3 KB (674290 bytes)
+-	Total Virtual Size: 1.1 MB (1113436 bytes)
+-	Total v2 Content-Length: 675.9 KB (675897 bytes)
 
 ### Layers (2)
 
-#### `d1592a710ac323612bd786fa8ac20727c58d8a67847e5a65177c594f43919498`
+#### `5c5fb281b01ee091a0fffa5b4a4c7fb7d358e7fb7c49c263d6d7a4e35d199fd0`
 
 ```dockerfile
-ADD file:a3bc1e842b69636f9df5256c49c5374fb4eef1e281fe3f282c65fb853ee171c5 in /
+ADD file:c295b0748bf05d4527f500b62ff269bfd0037f7515f1375d2ee474b830bad382 in /
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:54 GMT
--	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1108935 bytes)
--	v2 Blob: `sha256:55dc925c23d1ed82551fd018c27ac3ee731377b6bad3963a2a4e76e753d70e57`
--	v2 Content-Length: 674.3 KB (674258 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:38:25 GMT
+-	Created: Tue, 08 Dec 2015 18:31:50 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.1 MB (1113436 bytes)
+-	v2 Blob: `sha256:d7e8ec85c5abc60edf74bd4b8d68049350127e4102a084f22060f7321eac3586`
+-	v2 Content-Length: 675.9 KB (675865 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 18:32:57 GMT
 
-#### `17583c7dd0dae6244203b8029733bdb7d17fccbb2b5d93e2b24cf48b8bfd06e2`
+#### `fc0db02f30724abc777d7ae2b2404c6d074f1e2ceca19912352aea30a42f50b7`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:55 GMT
--	Parent Layer: `d1592a710ac323612bd786fa8ac20727c58d8a67847e5a65177c594f43919498`
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:51 GMT
+-	Parent Layer: `5c5fb281b01ee091a0fffa5b4a4c7fb7d358e7fb7c49c263d6d7a4e35d199fd0`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -280,36 +280,36 @@ CMD ["sh"]
 ## `busybox:latest`
 
 ```console
-$ docker pull library/busybox@sha256:eb3c0d4680f9213ee5f348ea6d39489a1f85a318a2ae09e012c426f78252a6d2
+$ docker pull library/busybox@sha256:e4f93f6ed15a0cdd342f5aae387886fba0ab98af0a102da6276eaf24d6e6ade0
 ```
 
--	Total Virtual Size: 1.1 MB (1108935 bytes)
--	Total v2 Content-Length: 674.3 KB (674290 bytes)
+-	Total Virtual Size: 1.1 MB (1113436 bytes)
+-	Total v2 Content-Length: 675.9 KB (675897 bytes)
 
 ### Layers (2)
 
-#### `d1592a710ac323612bd786fa8ac20727c58d8a67847e5a65177c594f43919498`
+#### `5c5fb281b01ee091a0fffa5b4a4c7fb7d358e7fb7c49c263d6d7a4e35d199fd0`
 
 ```dockerfile
-ADD file:a3bc1e842b69636f9df5256c49c5374fb4eef1e281fe3f282c65fb853ee171c5 in /
+ADD file:c295b0748bf05d4527f500b62ff269bfd0037f7515f1375d2ee474b830bad382 in /
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:54 GMT
--	Docker Version: 1.8.2
--	Virtual Size: 1.1 MB (1108935 bytes)
--	v2 Blob: `sha256:55dc925c23d1ed82551fd018c27ac3ee731377b6bad3963a2a4e76e753d70e57`
--	v2 Content-Length: 674.3 KB (674258 bytes)
--	v2 Last-Modified: Sun, 01 Nov 2015 03:38:25 GMT
+-	Created: Tue, 08 Dec 2015 18:31:50 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.1 MB (1113436 bytes)
+-	v2 Blob: `sha256:d7e8ec85c5abc60edf74bd4b8d68049350127e4102a084f22060f7321eac3586`
+-	v2 Content-Length: 675.9 KB (675865 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 18:32:57 GMT
 
-#### `17583c7dd0dae6244203b8029733bdb7d17fccbb2b5d93e2b24cf48b8bfd06e2`
+#### `fc0db02f30724abc777d7ae2b2404c6d074f1e2ceca19912352aea30a42f50b7`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Sat, 31 Oct 2015 22:22:55 GMT
--	Parent Layer: `d1592a710ac323612bd786fa8ac20727c58d8a67847e5a65177c594f43919498`
--	Docker Version: 1.8.2
+-	Created: Tue, 08 Dec 2015 18:31:51 GMT
+-	Parent Layer: `5c5fb281b01ee091a0fffa5b4a4c7fb7d358e7fb7c49c263d6d7a4e35d199fd0`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
