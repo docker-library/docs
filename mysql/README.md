@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.46`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/6871ce6cdd55ecf09f81cf8f00dfac30b8c3ab1f/5.5/Dockerfile)
--	[`5.6.27`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/6871ce6cdd55ecf09f81cf8f00dfac30b8c3ab1f/5.6/Dockerfile)
+-	[`5.5.47`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/ac05512a1b788e8ae658d0f4a980ff7a01a51c93/5.5/Dockerfile)
+-	[`5.6.28`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/ac05512a1b788e8ae658d0f4a980ff7a01a51c93/5.6/Dockerfile)
 -	[`5.7.9`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/141b713b8c973a7a2592b5f6bf9c44693fedea36/5.7/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).

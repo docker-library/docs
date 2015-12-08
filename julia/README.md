@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.4.1`, `0.4`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/52b372536c3dd5d01a7aacdd90a7246c5bf85a3d/Dockerfile)
+-	[`0.4.2`, `0.4`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/a408dd5869f54f0adfc6b6950200f6781284d15e/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/julia`)](https://github.com/docker-library/official-images/blob/master/library/julia). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
