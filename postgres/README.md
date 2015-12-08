@@ -62,6 +62,10 @@ This optional environment variable is used in conjunction with `POSTGRES_PASSWOR
 
 This optional environment variable can be used to define another location - like a subdirectory - for the database files. The default is `/var/lib/postgresql/data`, but if the data volume you're using is a fs mountpoint (like with GCE persistent disks), Postgres `initdb` recommends a subdirectory (for example `/var/lib/postgresql/data/pgdata` ) be created to contain the data.
 
+### `POSTGRES_DB`
+
+This optional environment variable can be used to define a different name for the default database that is created when the image is first started. If it is not specified, than the value of `POSTGRES_USER` will be used.
+
 # How to extend this image
 
 If you would like to do additional initialization in an image derived from this one, add one or more `*.sql` or `*.sh` scripts under `/docker-entrypoint-initdb.d` (creating the directory if necessary). After the entrypoint calls `initdb` to create the default `postgres` user and database, it will run any `*.sql` files and source any `*.sh` scripts found in that directory to do further initialization before starting the service.
