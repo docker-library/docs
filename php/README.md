@@ -1,8 +1,5 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.45-cli`, `5.4-cli`, `5.4.45`, `5.4` (*5.4/Dockerfile*)](https://github.com/docker-library/php/blob/fec7f537f049aafd2102202519c3ca9cb9576707/5.4/Dockerfile)
--	[`5.4.45-apache`, `5.4-apache` (*5.4/apache/Dockerfile*)](https://github.com/docker-library/php/blob/fec7f537f049aafd2102202519c3ca9cb9576707/5.4/apache/Dockerfile)
--	[`5.4.45-fpm`, `5.4-fpm` (*5.4/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/fec7f537f049aafd2102202519c3ca9cb9576707/5.4/fpm/Dockerfile)
 -	[`5.5.30-cli`, `5.5-cli`, `5.5.30`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/fec7f537f049aafd2102202519c3ca9cb9576707/5.5/Dockerfile)
 -	[`5.5.30-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/fec7f537f049aafd2102202519c3ca9cb9576707/5.5/apache/Dockerfile)
 -	[`5.5.30-fpm`, `5.5-fpm` (*5.5/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/fec7f537f049aafd2102202519c3ca9cb9576707/5.5/fpm/Dockerfile)
