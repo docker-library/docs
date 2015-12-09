@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.6.8`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/09e3ad91cb1716629a24a731fc618028d995c9ea/Dockerfile)
+-	[`0.7.2`, `latest` (*Dockerfile*)](https://github.com/nats-io/nats-docker/blob/1b4a8d5b0e99f3983a71d54ddb70cecc1e8228a1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nats`)](https://github.com/docker-library/official-images/blob/master/library/nats). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -23,7 +23,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 # use -p or -P as needed.
 
 $ docker run -d --name nats-main nats
-[INF] Starting gnatsd version 0.6.6
+[INF] Starting gnatsd version 0.7.2
 [INF] Starting http monitor on port 8222
 [INF] Listening for route connections on 0.0.0.0:6222
 [INF] Listening for client connections on 0.0.0.0:4222
@@ -36,7 +36,7 @@ $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:
 
 # If you want to verify the routes are connected, try
 $ docker run -d --name=nats-2 --link nats-main nats --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
-[INF] Starting gnatsd version 0.6.6
+[INF] Starting gnatsd version 0.7.2
 [INF] Starting http monitor on port 8222
 [INF] Listening for route connections on :6222
 [INF] Listening for client connections on 0.0.0.0:4222
@@ -88,13 +88,14 @@ Server Options:
     -p, --port PORT                  Use PORT for clients (default: 4222)
     -P, --pid FILE                   File to store PID
     -m, --http_port PORT             Use HTTP PORT for monitoring
+    -ms,--https_port PORT            Use HTTPS PORT for monitoring
     -c, --config FILE                Configuration File
 
 Logging Options:
     -l, --log FILE                   File to redirect log output
     -T, --logtime                    Timestamp log entries (default: true)
-    -s, --syslog                     Enable syslog as log method.
-    -r, --remote_syslog              Syslog server addr (udp://localhost:514).
+    -s, --syslog                     Enable syslog as log method
+    -r, --remote_syslog              Syslog server addr (udp://localhost:514)
     -D, --debug                      Enable debugging output
     -V, --trace                      Trace the raw protocol
     -DV                              Debug and Trace
@@ -103,12 +104,20 @@ Authorization Options:
         --user user                  User required for connections
         --pass password              Password required for connections
 
+TLS Options:
+        --tls                        Enable TLS, do not verify clients (default: false)
+        --tlscert FILE               Server certificate file
+        --tlskey FILE                Private key for server certificate
+        --tlsverify                  Enable TLS, very client certificates
+        --tlscacert FILE             Client certificate CA for verification
+
 Cluster Options:
         --routes [rurl-1, rurl-2]    Routes to solicit and connect
 
 Common Options:
     -h, --help                       Show this message
     -v, --version                    Show version
+        --help_tls                   TLS help.
 ```
 
 # License
