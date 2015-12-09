@@ -12,11 +12,11 @@
 ## `httpd:2.2.31`
 
 ```console
-$ docker pull library/httpd@sha256:bc9ea2c9109f9ac0d4a67ab69d8b1e7e57471a7cdb531e8e1d907dee1836e04b
+$ docker pull library/httpd@sha256:550370fc12a29f14cde8cc56828114a6f8fcf82b28c610b24787847645cd797f
 ```
 
--	Total Virtual Size: 184.2 MB (184177984 bytes)
--	Total v2 Content-Length: 67.2 MB (67236054 bytes)
+-	Total Virtual Size: 185.1 MB (185114012 bytes)
+-	Total v2 Content-Length: 67.5 MB (67508607 bytes)
 
 ### Layers (14)
 
@@ -168,7 +168,7 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.2.31.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `daec75371fe5867b49a336a1bd6defacf5f1bda4eedd2b82128172e5e4f45fdd`
+#### `0d905de1cb4a38a01899fab1c290bc83870f1bf38f3d5a7c959f52d00a9fe876`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -191,7 +191,7 @@ RUN buildDeps=' \
 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 \
 	&& rm httpd.tar.bz2* \
 	&& cd src/httpd \
-	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX \
+	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most \
 	&& make -j"$(nproc)" \
 	&& make install \
 	&& cd ../../ \
@@ -203,50 +203,50 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 06:40:37 GMT
+-	Created: Tue, 08 Dec 2015 23:11:59 GMT
 -	Parent Layer: `d377109b31b9310ce8936c9d1a40ffca1008e3783e73e86269fd368486fb40b6`
 -	Docker Version: 1.8.3
--	Virtual Size: 17.9 MB (17861514 bytes)
--	v2 Blob: `sha256:83eebf3f02cc9cf077a4a5c8fbd2acf7e88425e8496ec980ae1efa5459046ca8`
--	v2 Content-Length: 4.1 MB (4093592 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 23:46:44 GMT
+-	Virtual Size: 18.8 MB (18797542 bytes)
+-	v2 Blob: `sha256:f0caf76ce9a4af3c0096a565f73014866ce068ff3b48ea2fc523e5791c5feb53`
+-	v2 Content-Length: 4.4 MB (4366147 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:01:20 GMT
 
-#### `c4fd6d95a268bd3d4e097e2513c59a6470c7d7787aecd37734222e0a681d8d74`
+#### `0454c7e5df5aaaf73e045b80e64a02e502ce59117043007985ae46ed265bdddb`
 
 ```dockerfile
 COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
 ```
 
--	Created: Sat, 05 Dec 2015 06:40:38 GMT
--	Parent Layer: `daec75371fe5867b49a336a1bd6defacf5f1bda4eedd2b82128172e5e4f45fdd`
+-	Created: Tue, 08 Dec 2015 23:12:00 GMT
+-	Parent Layer: `0d905de1cb4a38a01899fab1c290bc83870f1bf38f3d5a7c959f52d00a9fe876`
 -	Docker Version: 1.8.3
 -	Virtual Size: 135.0 B
--	v2 Blob: `sha256:e12e81f5f1765d18f3c50aa531838c72eee5f8ea575cc4bc4ec7e57c31d0405e`
--	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 23:46:37 GMT
+-	v2 Blob: `sha256:a1eda61c22e8f38616725165fe55c0ae65e356106edfddbf8bd1a10be53ecbba`
+-	v2 Content-Length: 292.0 B
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:01:11 GMT
 
-#### `7b5bc08e4b1f538beada965c5cfa2589ebf3fd189a9893ebea5735049f0ce750`
+#### `c7e8a4a85b8d1b3b106908ddd0412b044776d0b573debc90d2f8963131743a52`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:40:38 GMT
--	Parent Layer: `c4fd6d95a268bd3d4e097e2513c59a6470c7d7787aecd37734222e0a681d8d74`
+-	Created: Tue, 08 Dec 2015 23:12:00 GMT
+-	Parent Layer: `0454c7e5df5aaaf73e045b80e64a02e502ce59117043007985ae46ed265bdddb`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2ed5b881312839787d483a757f17aeea78e6ce4dd729e5f8c39f7ace277bb75c`
+#### `d515ed091caead5a10b3e2184133af0f731349a74b81e35d2c3b254be0bf12a7`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:40:39 GMT
--	Parent Layer: `7b5bc08e4b1f538beada965c5cfa2589ebf3fd189a9893ebea5735049f0ce750`
+-	Created: Tue, 08 Dec 2015 23:12:01 GMT
+-	Parent Layer: `c7e8a4a85b8d1b3b106908ddd0412b044776d0b573debc90d2f8963131743a52`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -256,11 +256,11 @@ CMD ["httpd-foreground"]
 ## `httpd:2.2`
 
 ```console
-$ docker pull library/httpd@sha256:330d10f60ff9cfef6d5454589baa61195ec8631b74709324ecd6db5631b1303d
+$ docker pull library/httpd@sha256:5bd0f7a62fad282fb94ca6fa945032de7c411e125386e6f1d0af264ca24cb95f
 ```
 
--	Total Virtual Size: 184.2 MB (184177984 bytes)
--	Total v2 Content-Length: 67.2 MB (67236054 bytes)
+-	Total Virtual Size: 185.1 MB (185114012 bytes)
+-	Total v2 Content-Length: 67.5 MB (67508607 bytes)
 
 ### Layers (14)
 
@@ -412,7 +412,7 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.2.31.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `daec75371fe5867b49a336a1bd6defacf5f1bda4eedd2b82128172e5e4f45fdd`
+#### `0d905de1cb4a38a01899fab1c290bc83870f1bf38f3d5a7c959f52d00a9fe876`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -435,7 +435,7 @@ RUN buildDeps=' \
 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 \
 	&& rm httpd.tar.bz2* \
 	&& cd src/httpd \
-	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX \
+	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most \
 	&& make -j"$(nproc)" \
 	&& make install \
 	&& cd ../../ \
@@ -447,50 +447,50 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 06:40:37 GMT
+-	Created: Tue, 08 Dec 2015 23:11:59 GMT
 -	Parent Layer: `d377109b31b9310ce8936c9d1a40ffca1008e3783e73e86269fd368486fb40b6`
 -	Docker Version: 1.8.3
--	Virtual Size: 17.9 MB (17861514 bytes)
--	v2 Blob: `sha256:83eebf3f02cc9cf077a4a5c8fbd2acf7e88425e8496ec980ae1efa5459046ca8`
--	v2 Content-Length: 4.1 MB (4093592 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 23:46:44 GMT
+-	Virtual Size: 18.8 MB (18797542 bytes)
+-	v2 Blob: `sha256:f0caf76ce9a4af3c0096a565f73014866ce068ff3b48ea2fc523e5791c5feb53`
+-	v2 Content-Length: 4.4 MB (4366147 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:01:20 GMT
 
-#### `c4fd6d95a268bd3d4e097e2513c59a6470c7d7787aecd37734222e0a681d8d74`
+#### `0454c7e5df5aaaf73e045b80e64a02e502ce59117043007985ae46ed265bdddb`
 
 ```dockerfile
 COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
 ```
 
--	Created: Sat, 05 Dec 2015 06:40:38 GMT
--	Parent Layer: `daec75371fe5867b49a336a1bd6defacf5f1bda4eedd2b82128172e5e4f45fdd`
+-	Created: Tue, 08 Dec 2015 23:12:00 GMT
+-	Parent Layer: `0d905de1cb4a38a01899fab1c290bc83870f1bf38f3d5a7c959f52d00a9fe876`
 -	Docker Version: 1.8.3
 -	Virtual Size: 135.0 B
--	v2 Blob: `sha256:e12e81f5f1765d18f3c50aa531838c72eee5f8ea575cc4bc4ec7e57c31d0405e`
--	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 23:46:37 GMT
+-	v2 Blob: `sha256:a1eda61c22e8f38616725165fe55c0ae65e356106edfddbf8bd1a10be53ecbba`
+-	v2 Content-Length: 292.0 B
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:01:11 GMT
 
-#### `7b5bc08e4b1f538beada965c5cfa2589ebf3fd189a9893ebea5735049f0ce750`
+#### `c7e8a4a85b8d1b3b106908ddd0412b044776d0b573debc90d2f8963131743a52`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:40:38 GMT
--	Parent Layer: `c4fd6d95a268bd3d4e097e2513c59a6470c7d7787aecd37734222e0a681d8d74`
+-	Created: Tue, 08 Dec 2015 23:12:00 GMT
+-	Parent Layer: `0454c7e5df5aaaf73e045b80e64a02e502ce59117043007985ae46ed265bdddb`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2ed5b881312839787d483a757f17aeea78e6ce4dd729e5f8c39f7ace277bb75c`
+#### `d515ed091caead5a10b3e2184133af0f731349a74b81e35d2c3b254be0bf12a7`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:40:39 GMT
--	Parent Layer: `7b5bc08e4b1f538beada965c5cfa2589ebf3fd189a9893ebea5735049f0ce750`
+-	Created: Tue, 08 Dec 2015 23:12:01 GMT
+-	Parent Layer: `c7e8a4a85b8d1b3b106908ddd0412b044776d0b573debc90d2f8963131743a52`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -500,11 +500,11 @@ CMD ["httpd-foreground"]
 ## `httpd:2.4.17`
 
 ```console
-$ docker pull library/httpd@sha256:0826cb11626797da66ec99a71d78149155e6e3db653b2711603b871ad5518245
+$ docker pull library/httpd@sha256:ff734d5b9bfc1d33936211a9564e1811665ee9487d7ab38732ae38180dd613b9
 ```
 
--	Total Virtual Size: 193.4 MB (193400373 bytes)
--	Total v2 Content-Length: 69.5 MB (69495262 bytes)
+-	Total Virtual Size: 193.4 MB (193400403 bytes)
+-	Total v2 Content-Length: 69.5 MB (69495230 bytes)
 
 ### Layers (14)
 
@@ -656,7 +656,7 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.4.17.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c37b9834c972902daa99f6b57394cc0e28628b0ab88efe887714d1b8e5815de2`
+#### `2ddebb61ba3396a15b4a5638080f5a2ccb7dc876674be4cb150414f5ad9e6a83`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -679,7 +679,7 @@ RUN buildDeps=' \
 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 \
 	&& rm httpd.tar.bz2* \
 	&& cd src/httpd \
-	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX \
+	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most \
 	&& make -j"$(nproc)" \
 	&& make install \
 	&& cd ../../ \
@@ -691,50 +691,50 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:52 GMT
+-	Created: Tue, 08 Dec 2015 23:15:18 GMT
 -	Parent Layer: `0f57978022755994c795df9ee5f2c3e196f4d2fb1e41c7a70afc033768c156cb`
 -	Docker Version: 1.8.3
--	Virtual Size: 27.1 MB (27080703 bytes)
--	v2 Blob: `sha256:fc49d5ed114ebe27bb7b195c4ab400b078f66cdefc57f8374b122e4f491e1c65`
--	v2 Content-Length: 6.3 MB (6340863 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 23:49:28 GMT
+-	Virtual Size: 27.1 MB (27080733 bytes)
+-	v2 Blob: `sha256:941e3ede8e0407b0c08a94e0e0c21ded8fd5e8576fe66b4b119f5cad244c9b44`
+-	v2 Content-Length: 6.3 MB (6340833 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:02:23 GMT
 
-#### `02b850b498537314550ab3220246409162714902918b80e4047becd174d93965`
+#### `ce72d2029e7441a1853a47ed95d7b3f752c6a5245d487690128783bf2ab5f69b`
 
 ```dockerfile
 COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:53 GMT
--	Parent Layer: `c37b9834c972902daa99f6b57394cc0e28628b0ab88efe887714d1b8e5815de2`
+-	Created: Tue, 08 Dec 2015 23:15:19 GMT
+-	Parent Layer: `2ddebb61ba3396a15b4a5638080f5a2ccb7dc876674be4cb150414f5ad9e6a83`
 -	Docker Version: 1.8.3
 -	Virtual Size: 135.0 B
--	v2 Blob: `sha256:830f929f73f24c2288fef674b97a435bfb50cea9e47748da90e94e37f09e5a07`
--	v2 Content-Length: 293.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 23:49:20 GMT
+-	v2 Blob: `sha256:88cea2fc0b144eded9b8a7bd95d9e70a1d7e21ca9a3cc76fe5abebdadbdc0044`
+-	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:02:15 GMT
 
-#### `9737ee551ad38f9bc3a83f88503098b2bfae9c882bad4a5c16ccb2d611dea1e7`
+#### `692f0e8a4adfc8f790873318d06d68a687b26600c46b29cb3fc1687895406136`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:53 GMT
--	Parent Layer: `02b850b498537314550ab3220246409162714902918b80e4047becd174d93965`
+-	Created: Tue, 08 Dec 2015 23:15:19 GMT
+-	Parent Layer: `ce72d2029e7441a1853a47ed95d7b3f752c6a5245d487690128783bf2ab5f69b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e47ea5bedf9ee587d9ac94e99fee4d1ff0baf22e1b5b029c1272c038cb3f724f`
+#### `1a0874eb1ba8f4c86ce0b995fcd00b4560a8a44cd2d6cc548e48be806962c195`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:54 GMT
--	Parent Layer: `9737ee551ad38f9bc3a83f88503098b2bfae9c882bad4a5c16ccb2d611dea1e7`
+-	Created: Tue, 08 Dec 2015 23:15:20 GMT
+-	Parent Layer: `692f0e8a4adfc8f790873318d06d68a687b26600c46b29cb3fc1687895406136`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -744,11 +744,11 @@ CMD ["httpd-foreground"]
 ## `httpd:2.4`
 
 ```console
-$ docker pull library/httpd@sha256:9c435e6d68592ddb95dbc8fe6e8014e4ce1fe78b166180d914453104264729a9
+$ docker pull library/httpd@sha256:538ee05f20506e5fc8ccbc7795a04960bec0e3e97f081ac891829ffeca777947
 ```
 
--	Total Virtual Size: 193.4 MB (193400373 bytes)
--	Total v2 Content-Length: 69.5 MB (69495262 bytes)
+-	Total Virtual Size: 193.4 MB (193400403 bytes)
+-	Total v2 Content-Length: 69.5 MB (69495230 bytes)
 
 ### Layers (14)
 
@@ -900,7 +900,7 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.4.17.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c37b9834c972902daa99f6b57394cc0e28628b0ab88efe887714d1b8e5815de2`
+#### `2ddebb61ba3396a15b4a5638080f5a2ccb7dc876674be4cb150414f5ad9e6a83`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -923,7 +923,7 @@ RUN buildDeps=' \
 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 \
 	&& rm httpd.tar.bz2* \
 	&& cd src/httpd \
-	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX \
+	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most \
 	&& make -j"$(nproc)" \
 	&& make install \
 	&& cd ../../ \
@@ -935,50 +935,50 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:52 GMT
+-	Created: Tue, 08 Dec 2015 23:15:18 GMT
 -	Parent Layer: `0f57978022755994c795df9ee5f2c3e196f4d2fb1e41c7a70afc033768c156cb`
 -	Docker Version: 1.8.3
--	Virtual Size: 27.1 MB (27080703 bytes)
--	v2 Blob: `sha256:fc49d5ed114ebe27bb7b195c4ab400b078f66cdefc57f8374b122e4f491e1c65`
--	v2 Content-Length: 6.3 MB (6340863 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 23:49:28 GMT
+-	Virtual Size: 27.1 MB (27080733 bytes)
+-	v2 Blob: `sha256:941e3ede8e0407b0c08a94e0e0c21ded8fd5e8576fe66b4b119f5cad244c9b44`
+-	v2 Content-Length: 6.3 MB (6340833 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:02:23 GMT
 
-#### `02b850b498537314550ab3220246409162714902918b80e4047becd174d93965`
+#### `ce72d2029e7441a1853a47ed95d7b3f752c6a5245d487690128783bf2ab5f69b`
 
 ```dockerfile
 COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:53 GMT
--	Parent Layer: `c37b9834c972902daa99f6b57394cc0e28628b0ab88efe887714d1b8e5815de2`
+-	Created: Tue, 08 Dec 2015 23:15:19 GMT
+-	Parent Layer: `2ddebb61ba3396a15b4a5638080f5a2ccb7dc876674be4cb150414f5ad9e6a83`
 -	Docker Version: 1.8.3
 -	Virtual Size: 135.0 B
--	v2 Blob: `sha256:830f929f73f24c2288fef674b97a435bfb50cea9e47748da90e94e37f09e5a07`
--	v2 Content-Length: 293.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 23:49:20 GMT
+-	v2 Blob: `sha256:88cea2fc0b144eded9b8a7bd95d9e70a1d7e21ca9a3cc76fe5abebdadbdc0044`
+-	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:02:15 GMT
 
-#### `9737ee551ad38f9bc3a83f88503098b2bfae9c882bad4a5c16ccb2d611dea1e7`
+#### `692f0e8a4adfc8f790873318d06d68a687b26600c46b29cb3fc1687895406136`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:53 GMT
--	Parent Layer: `02b850b498537314550ab3220246409162714902918b80e4047becd174d93965`
+-	Created: Tue, 08 Dec 2015 23:15:19 GMT
+-	Parent Layer: `ce72d2029e7441a1853a47ed95d7b3f752c6a5245d487690128783bf2ab5f69b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e47ea5bedf9ee587d9ac94e99fee4d1ff0baf22e1b5b029c1272c038cb3f724f`
+#### `1a0874eb1ba8f4c86ce0b995fcd00b4560a8a44cd2d6cc548e48be806962c195`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:54 GMT
--	Parent Layer: `9737ee551ad38f9bc3a83f88503098b2bfae9c882bad4a5c16ccb2d611dea1e7`
+-	Created: Tue, 08 Dec 2015 23:15:20 GMT
+-	Parent Layer: `692f0e8a4adfc8f790873318d06d68a687b26600c46b29cb3fc1687895406136`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -988,11 +988,11 @@ CMD ["httpd-foreground"]
 ## `httpd:2`
 
 ```console
-$ docker pull library/httpd@sha256:71292a6c2bf48a68a3038b5a8d9574e1c6f443638ce9be8d09b86ad2120fab72
+$ docker pull library/httpd@sha256:27ef3a31c2d50fbf18720e56b82426ff90f8d0b0ed12eddf756a19254d600674
 ```
 
--	Total Virtual Size: 193.4 MB (193400373 bytes)
--	Total v2 Content-Length: 69.5 MB (69495262 bytes)
+-	Total Virtual Size: 193.4 MB (193400403 bytes)
+-	Total v2 Content-Length: 69.5 MB (69495230 bytes)
 
 ### Layers (14)
 
@@ -1144,7 +1144,7 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.4.17.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c37b9834c972902daa99f6b57394cc0e28628b0ab88efe887714d1b8e5815de2`
+#### `2ddebb61ba3396a15b4a5638080f5a2ccb7dc876674be4cb150414f5ad9e6a83`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -1167,7 +1167,7 @@ RUN buildDeps=' \
 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 \
 	&& rm httpd.tar.bz2* \
 	&& cd src/httpd \
-	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX \
+	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most \
 	&& make -j"$(nproc)" \
 	&& make install \
 	&& cd ../../ \
@@ -1179,50 +1179,50 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:52 GMT
+-	Created: Tue, 08 Dec 2015 23:15:18 GMT
 -	Parent Layer: `0f57978022755994c795df9ee5f2c3e196f4d2fb1e41c7a70afc033768c156cb`
 -	Docker Version: 1.8.3
--	Virtual Size: 27.1 MB (27080703 bytes)
--	v2 Blob: `sha256:fc49d5ed114ebe27bb7b195c4ab400b078f66cdefc57f8374b122e4f491e1c65`
--	v2 Content-Length: 6.3 MB (6340863 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 23:49:28 GMT
+-	Virtual Size: 27.1 MB (27080733 bytes)
+-	v2 Blob: `sha256:941e3ede8e0407b0c08a94e0e0c21ded8fd5e8576fe66b4b119f5cad244c9b44`
+-	v2 Content-Length: 6.3 MB (6340833 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:02:23 GMT
 
-#### `02b850b498537314550ab3220246409162714902918b80e4047becd174d93965`
+#### `ce72d2029e7441a1853a47ed95d7b3f752c6a5245d487690128783bf2ab5f69b`
 
 ```dockerfile
 COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:53 GMT
--	Parent Layer: `c37b9834c972902daa99f6b57394cc0e28628b0ab88efe887714d1b8e5815de2`
+-	Created: Tue, 08 Dec 2015 23:15:19 GMT
+-	Parent Layer: `2ddebb61ba3396a15b4a5638080f5a2ccb7dc876674be4cb150414f5ad9e6a83`
 -	Docker Version: 1.8.3
 -	Virtual Size: 135.0 B
--	v2 Blob: `sha256:830f929f73f24c2288fef674b97a435bfb50cea9e47748da90e94e37f09e5a07`
--	v2 Content-Length: 293.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 23:49:20 GMT
+-	v2 Blob: `sha256:88cea2fc0b144eded9b8a7bd95d9e70a1d7e21ca9a3cc76fe5abebdadbdc0044`
+-	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:02:15 GMT
 
-#### `9737ee551ad38f9bc3a83f88503098b2bfae9c882bad4a5c16ccb2d611dea1e7`
+#### `692f0e8a4adfc8f790873318d06d68a687b26600c46b29cb3fc1687895406136`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:53 GMT
--	Parent Layer: `02b850b498537314550ab3220246409162714902918b80e4047becd174d93965`
+-	Created: Tue, 08 Dec 2015 23:15:19 GMT
+-	Parent Layer: `ce72d2029e7441a1853a47ed95d7b3f752c6a5245d487690128783bf2ab5f69b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e47ea5bedf9ee587d9ac94e99fee4d1ff0baf22e1b5b029c1272c038cb3f724f`
+#### `1a0874eb1ba8f4c86ce0b995fcd00b4560a8a44cd2d6cc548e48be806962c195`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:54 GMT
--	Parent Layer: `9737ee551ad38f9bc3a83f88503098b2bfae9c882bad4a5c16ccb2d611dea1e7`
+-	Created: Tue, 08 Dec 2015 23:15:20 GMT
+-	Parent Layer: `692f0e8a4adfc8f790873318d06d68a687b26600c46b29cb3fc1687895406136`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1232,11 +1232,11 @@ CMD ["httpd-foreground"]
 ## `httpd:latest`
 
 ```console
-$ docker pull library/httpd@sha256:590943b631c6f0a57f61e2721ff266243c5e590059e0559da658a119db2a9525
+$ docker pull library/httpd@sha256:b21ba3434b0e077f5bbd17f17b93e15b5d0c5d88dee0c51a2aa573f5882635f6
 ```
 
--	Total Virtual Size: 193.4 MB (193400373 bytes)
--	Total v2 Content-Length: 69.5 MB (69495262 bytes)
+-	Total Virtual Size: 193.4 MB (193400403 bytes)
+-	Total v2 Content-Length: 69.5 MB (69495230 bytes)
 
 ### Layers (14)
 
@@ -1388,7 +1388,7 @@ ENV HTTPD_BZ2_URL=https://www.apache.org/dist/httpd/httpd-2.4.17.tar.bz2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c37b9834c972902daa99f6b57394cc0e28628b0ab88efe887714d1b8e5815de2`
+#### `2ddebb61ba3396a15b4a5638080f5a2ccb7dc876674be4cb150414f5ad9e6a83`
 
 ```dockerfile
 RUN buildDeps=' \
@@ -1411,7 +1411,7 @@ RUN buildDeps=' \
 	&& tar -xvf httpd.tar.bz2 -C src/httpd --strip-components=1 \
 	&& rm httpd.tar.bz2* \
 	&& cd src/httpd \
-	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX \
+	&& ./configure --enable-so --enable-ssl --prefix=$HTTPD_PREFIX --enable-mods-shared=most \
 	&& make -j"$(nproc)" \
 	&& make install \
 	&& cd ../../ \
@@ -1423,50 +1423,50 @@ RUN buildDeps=' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:52 GMT
+-	Created: Tue, 08 Dec 2015 23:15:18 GMT
 -	Parent Layer: `0f57978022755994c795df9ee5f2c3e196f4d2fb1e41c7a70afc033768c156cb`
 -	Docker Version: 1.8.3
--	Virtual Size: 27.1 MB (27080703 bytes)
--	v2 Blob: `sha256:fc49d5ed114ebe27bb7b195c4ab400b078f66cdefc57f8374b122e4f491e1c65`
--	v2 Content-Length: 6.3 MB (6340863 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 23:49:28 GMT
+-	Virtual Size: 27.1 MB (27080733 bytes)
+-	v2 Blob: `sha256:941e3ede8e0407b0c08a94e0e0c21ded8fd5e8576fe66b4b119f5cad244c9b44`
+-	v2 Content-Length: 6.3 MB (6340833 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:02:23 GMT
 
-#### `02b850b498537314550ab3220246409162714902918b80e4047becd174d93965`
+#### `ce72d2029e7441a1853a47ed95d7b3f752c6a5245d487690128783bf2ab5f69b`
 
 ```dockerfile
 COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /usr/local/bin/
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:53 GMT
--	Parent Layer: `c37b9834c972902daa99f6b57394cc0e28628b0ab88efe887714d1b8e5815de2`
+-	Created: Tue, 08 Dec 2015 23:15:19 GMT
+-	Parent Layer: `2ddebb61ba3396a15b4a5638080f5a2ccb7dc876674be4cb150414f5ad9e6a83`
 -	Docker Version: 1.8.3
 -	Virtual Size: 135.0 B
--	v2 Blob: `sha256:830f929f73f24c2288fef674b97a435bfb50cea9e47748da90e94e37f09e5a07`
--	v2 Content-Length: 293.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 23:49:20 GMT
+-	v2 Blob: `sha256:88cea2fc0b144eded9b8a7bd95d9e70a1d7e21ca9a3cc76fe5abebdadbdc0044`
+-	v2 Content-Length: 291.0 B
+-	v2 Last-Modified: Wed, 09 Dec 2015 01:02:15 GMT
 
-#### `9737ee551ad38f9bc3a83f88503098b2bfae9c882bad4a5c16ccb2d611dea1e7`
+#### `692f0e8a4adfc8f790873318d06d68a687b26600c46b29cb3fc1687895406136`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:53 GMT
--	Parent Layer: `02b850b498537314550ab3220246409162714902918b80e4047becd174d93965`
+-	Created: Tue, 08 Dec 2015 23:15:19 GMT
+-	Parent Layer: `ce72d2029e7441a1853a47ed95d7b3f752c6a5245d487690128783bf2ab5f69b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e47ea5bedf9ee587d9ac94e99fee4d1ff0baf22e1b5b029c1272c038cb3f724f`
+#### `1a0874eb1ba8f4c86ce0b995fcd00b4560a8a44cd2d6cc548e48be806962c195`
 
 ```dockerfile
 CMD ["httpd-foreground"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:43:54 GMT
--	Parent Layer: `9737ee551ad38f9bc3a83f88503098b2bfae9c882bad4a5c16ccb2d611dea1e7`
+-	Created: Tue, 08 Dec 2015 23:15:20 GMT
+-	Parent Layer: `692f0e8a4adfc8f790873318d06d68a687b26600c46b29cb3fc1687895406136`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
