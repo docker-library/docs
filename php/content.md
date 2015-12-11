@@ -86,6 +86,16 @@ CMD ["php-fpm"]
 
 Remember, you must install dependencies for your extensions manually. If an extension needs custom `configure` arguments, you can use the `docker-php-ext-configure` script like this example.
 
+### How to install PECL extensions
+Some "extension" are in reality [PECL](https://pecl.php.net/) extension. To install a pecl extension you need to do this (for memcached) :
+
+```dockerfile
+FROM php:5.6-fpm
+# Install pecl extension
+RUN apt-get update && apt-get install -y libmemcached-dev && pecl install memcached
+CMD ["php-fpm"]
+```
+
 ### Without a `Dockerfile`
 
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
