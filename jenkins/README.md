@@ -1,8 +1,13 @@
-# Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.625.2` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/4fa9ebc13069fa8186728622cd63702cddf11162/Dockerfile)
+Current version: [`lts`,  (*Dockerfile*)](https://github.com/jenkinsci/docker/blob/master/Dockerfile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+Check [Tags](https://hub.docker.com/r/library/jenkins/tags/) for older LTS versions. 
+
+This Docker repository hosts only Jenkins LTS builds. For the latest Jenkins builds, see (JenkinsCI  repository)[https://hub.docker.com/r/jenkinsci/jenkins/)
+
+For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). 
+
+This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jenkins/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jenkins/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
