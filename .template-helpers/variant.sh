@@ -33,11 +33,11 @@ if [ "$text" ]; then
 		exit 0 # If not github or no latest tag, we are done here
 	fi
 	dockerfile='https://raw.githubusercontent.com/'"${latest[1]}"'/'"${latest[2]}"'/'"${latest[3]}"'/Dockerfile'
-	baseImage=$(curl -fsSL "$dockerfile" | awk -F '[:[:space:]]+' '$1 == "FROM" { print $2 }')
+	baseImage=$(curl -fsSL "$dockerfile" | awk -F '[: \t]+' '$1 == "FROM" { print $2 }')
 	# give a little space
 	echo
 	echo
-	if [ "$baseImage" = "buildpack-deps" ]; then
+	if [ "$baseImage" = 'buildpack-deps' ]; then
 		f='variant-buildpacks.md'
 	else
 		f='variant.md'
