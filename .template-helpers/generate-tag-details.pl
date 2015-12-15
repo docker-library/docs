@@ -82,6 +82,7 @@ sub get_manifest {
 	my $authorizationHeader = { Authorization => "Bearer $token" };
 
 	my $manifestTx = ua_req(get => "https://registry-1.docker.io/v2/$repo/manifests/$tag" => $authorizationHeader);
+	return () if $manifestTx->res->code == 404; # tag doesn't exist
 	die "failed to get manifest for $image" unless $manifestTx->success;
 	return (
 		$manifestTx->res->headers->header('Docker-Content-Digest'),
@@ -165,6 +166,12 @@ while (my $image = shift) {
 	my ($repo, $tag) = split_image_name($image);
 
 	my ($digest, $manifest) = get_manifest($repo, $tag);
+
+	unless (defined $digest && defined $manifest) {
+		# tag must not exist yet!
+		say "\n", '**does not exist** (yet?)';
+		next;
+	}
 
 	print "\n";
 	say '```console';
