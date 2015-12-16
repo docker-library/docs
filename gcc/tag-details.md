@@ -11,6 +11,8 @@
 -	[`gcc:5.1`](#gcc51)
 -	[`gcc:5.2.0`](#gcc520)
 -	[`gcc:5.2`](#gcc52)
+-	[`gcc:5.3.0`](#gcc530)
+-	[`gcc:5.3`](#gcc53)
 -	[`gcc:5`](#gcc5)
 -	[`gcc:latest`](#gcclatest)
 
@@ -2164,6 +2166,14 @@ RUN set -x \
 -	v2 Blob: `sha256:b23cc28225cbcd89533cfbdc92dd9a7f1e81b036d33b8bb45ce76c77bc46bdea`
 -	v2 Content-Length: 1.8 KB (1815 bytes)
 -	v2 Last-Modified: Mon, 07 Dec 2015 22:41:36 GMT
+
+## `gcc:5.3.0`
+
+**does not exist** (yet?)
+
+## `gcc:5.3`
+
+**does not exist** (yet?)
 
 ## `gcc:5`
 
