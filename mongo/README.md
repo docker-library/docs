@@ -3,7 +3,7 @@
 -	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.2/Dockerfile)
 -	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.4/Dockerfile)
 -	[`2.6.11`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.6/Dockerfile)
--	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/35d3a11dd6cee3675fb149593e7a20e42c76fa86/3.0/Dockerfile)
+-	[`3.0.8`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/d9b96ad7dfac1bb5203b549a676535351ee48d4d/3.0/Dockerfile)
 -	[`3.1.9`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/5216cf8aedcf7634172e607b0c9718cc332e0d71/3.1/Dockerfile)
 -	[`3.2.0`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/fcb9584617e63f1d3db8dc730fb8abb83653c7ad/3.2/Dockerfile)
 
