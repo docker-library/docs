@@ -4,11 +4,11 @@
 
 -	[`kibana:4.0.3`](#kibana403)
 -	[`kibana:4.0`](#kibana40)
--	[`kibana:4.1.3`](#kibana413)
+-	[`kibana:4.1.4`](#kibana414)
 -	[`kibana:4.1`](#kibana41)
--	[`kibana:4.2.1`](#kibana421)
+-	[`kibana:4.2.2`](#kibana422)
 -	[`kibana:4.2`](#kibana42)
--	[`kibana:4.3.0`](#kibana430)
+-	[`kibana:4.3.1`](#kibana431)
 -	[`kibana:4.3`](#kibana43)
 -	[`kibana:4`](#kibana4)
 -	[`kibana:latest`](#kibanalatest)
@@ -447,14 +447,14 @@ CMD ["kibana"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `kibana:4.1.3`
+## `kibana:4.1.4`
 
 ```console
-$ docker pull library/kibana@sha256:dabc7184d1cdbf3f54cba9e0c83e733317652e204ec17a9b510a0aaf1c70bab5
+$ docker pull library/kibana@sha256:fca43db85998274073644adfd37633a13c6d9a6552e4d25b3259374680e047d0
 ```
 
--	Total Virtual Size: 184.6 MB (184568444 bytes)
--	Total v2 Content-Length: 70.6 MB (70555882 bytes)
+-	Total Virtual Size: 184.6 MB (184594466 bytes)
+-	Total v2 Content-Length: 70.6 MB (70562001 bytes)
 
 ### Layers (14)
 
@@ -547,13 +547,13 @@ RUN arch="$(dpkg --print-architecture)" \
 -	v2 Content-Length: 654.4 KB (654434 bytes)
 -	v2 Last-Modified: Tue, 08 Dec 2015 01:33:48 GMT
 
-#### `f0bca89cb3f37045a996ee3a5e372b197903a831982b7efccde575529c6c7657`
+#### `ee024419ce68e927a969c611dc9456b8e4bc3f9d61ecfb85dfe9d4d430c29010`
 
 ```dockerfile
-ENV KIBANA_VERSION=4.1.3
+ENV KIBANA_VERSION=4.1.4
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:34 GMT
+-	Created: Thu, 17 Dec 2015 18:16:56 GMT
 -	Parent Layer: `16154494ebc4e9d186519a2e9d0b0a193cb725438d6b6bfda0eca80904015315`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -561,21 +561,21 @@ ENV KIBANA_VERSION=4.1.3
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `53ce406734c02f4a5b583adf37a605096d679e485cdcb4be7eca3bf36e950383`
+#### `dd601d5197d6e46228912a2ac15bd8ad2a4c9e17d72f055811efba4726c55c49`
 
 ```dockerfile
-ENV KIBANA_SHA1=fa93e63b425ed5a99af8ba929ffa4dd136206545
+ENV KIBANA_SHA1=f88a7ad612b4e7129a951cf0e64429e63d847ed9
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:34 GMT
--	Parent Layer: `f0bca89cb3f37045a996ee3a5e372b197903a831982b7efccde575529c6c7657`
+-	Created: Thu, 17 Dec 2015 18:16:56 GMT
+-	Parent Layer: `ee024419ce68e927a969c611dc9456b8e4bc3f9d61ecfb85dfe9d4d430c29010`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1dd55286f5ec209620fa01f4028e85b2eaa5411cc9c97eeb971914b68cc93cf1`
+#### `7aca0ec5b8f479e4dc1a75d7348cffb453f5cac6b1a52f2033855ff8d6d6c40a`
 
 ```dockerfile
 RUN set -x \
@@ -586,78 +586,78 @@ RUN set -x \
 	&& rm kibana.tar.gz
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:39 GMT
--	Parent Layer: `53ce406734c02f4a5b583adf37a605096d679e485cdcb4be7eca3bf36e950383`
+-	Created: Thu, 17 Dec 2015 18:17:01 GMT
+-	Parent Layer: `dd601d5197d6e46228912a2ac15bd8ad2a4c9e17d72f055811efba4726c55c49`
 -	Docker Version: 1.8.3
--	Virtual Size: 42.7 MB (42691904 bytes)
--	v2 Blob: `sha256:1c95fb6be8f6a523596e1dac7fc87dd123462ab5a1a31b7f8b1b49eaf4854b0a`
--	v2 Content-Length: 11.9 MB (11920935 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:36:19 GMT
+-	Virtual Size: 42.7 MB (42717926 bytes)
+-	v2 Blob: `sha256:d79872b46ff07b2f5365cd224dd0d4556eb648caaf6b686d72e0caffe6769eb5`
+-	v2 Content-Length: 11.9 MB (11927054 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 18:22:11 GMT
 
-#### `1a12e1035746a8c8a6ce59fbcbfa9c01315c9f019a42ae629870326c8c802a7f`
+#### `9327367cd31b35dcc5a9447e93d53a4f68e328f2ddf16216289769819d268969`
 
 ```dockerfile
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:42 GMT
--	Parent Layer: `1dd55286f5ec209620fa01f4028e85b2eaa5411cc9c97eeb971914b68cc93cf1`
+-	Created: Thu, 17 Dec 2015 18:17:03 GMT
+-	Parent Layer: `7aca0ec5b8f479e4dc1a75d7348cffb453f5cac6b1a52f2033855ff8d6d6c40a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4b744fec0e2b8832deb5b2f9b4a7a1135cd30df9c69f2d6ad3846d75e68b558d`
+#### `dfa78c2de301e81f49c8a2fff1f50d66c0737479facdc021c67fb189c7b17502`
 
 ```dockerfile
 COPY file:1bb1d9e65161c993b683faa28cd83b95f26d392a130e1ca558d3e7c26ccdd5ff in /
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:42 GMT
--	Parent Layer: `1a12e1035746a8c8a6ce59fbcbfa9c01315c9f019a42ae629870326c8c802a7f`
+-	Created: Thu, 17 Dec 2015 18:17:03 GMT
+-	Parent Layer: `9327367cd31b35dcc5a9447e93d53a4f68e328f2ddf16216289769819d268969`
 -	Docker Version: 1.8.3
 -	Virtual Size: 686.0 B
 -	v2 Blob: `sha256:2d8c4b3ddd3cd010b9d189b62ff43490b995c32ee1632968af3d74b89607254a`
 -	v2 Content-Length: 457.0 B
 -	v2 Last-Modified: Fri, 12 Jun 2015 22:30:36 GMT
 
-#### `a4302a91d84d7c173368628e5112e09916344f8d50214598cf79569aea8a0a9a`
+#### `681222abd4feced91226a96c98f97a27b506e6a36c5ecc77686c4cb2665a6c3e`
 
 ```dockerfile
 EXPOSE 5601/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:43 GMT
--	Parent Layer: `4b744fec0e2b8832deb5b2f9b4a7a1135cd30df9c69f2d6ad3846d75e68b558d`
+-	Created: Thu, 17 Dec 2015 18:17:04 GMT
+-	Parent Layer: `dfa78c2de301e81f49c8a2fff1f50d66c0737479facdc021c67fb189c7b17502`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e1d760bc7b40f5473792ec649782c2251cdd94aca77e43bb761c5bd51af153ad`
+#### `32116130bab8d079fd472583a99ab3ac366356082b529f3333a6d494487a7879`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:43 GMT
--	Parent Layer: `a4302a91d84d7c173368628e5112e09916344f8d50214598cf79569aea8a0a9a`
+-	Created: Thu, 17 Dec 2015 18:17:05 GMT
+-	Parent Layer: `681222abd4feced91226a96c98f97a27b506e6a36c5ecc77686c4cb2665a6c3e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `44635b0adec8221e18163268893ab7ae98e3d709bb5066ff54bf4ae0f789f50c`
+#### `a2d124ad4a12334a6f2b5793be003701c7d5a57a8f3e81e7e764931a14595950`
 
 ```dockerfile
 CMD ["kibana"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:44 GMT
--	Parent Layer: `e1d760bc7b40f5473792ec649782c2251cdd94aca77e43bb761c5bd51af153ad`
+-	Created: Thu, 17 Dec 2015 18:17:05 GMT
+-	Parent Layer: `32116130bab8d079fd472583a99ab3ac366356082b529f3333a6d494487a7879`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -667,11 +667,11 @@ CMD ["kibana"]
 ## `kibana:4.1`
 
 ```console
-$ docker pull library/kibana@sha256:f464ae5da309fdf66623143c1aa9f66b0e8c04387515838d0fd20761a4ba8fec
+$ docker pull library/kibana@sha256:582e6af980629ca092062abed4e84b9bdc78edc99853a2bf9a073f13c1edf9ab
 ```
 
--	Total Virtual Size: 184.6 MB (184568444 bytes)
--	Total v2 Content-Length: 70.6 MB (70555882 bytes)
+-	Total Virtual Size: 184.6 MB (184594466 bytes)
+-	Total v2 Content-Length: 70.6 MB (70562001 bytes)
 
 ### Layers (14)
 
@@ -764,13 +764,13 @@ RUN arch="$(dpkg --print-architecture)" \
 -	v2 Content-Length: 654.4 KB (654434 bytes)
 -	v2 Last-Modified: Tue, 08 Dec 2015 01:33:48 GMT
 
-#### `f0bca89cb3f37045a996ee3a5e372b197903a831982b7efccde575529c6c7657`
+#### `ee024419ce68e927a969c611dc9456b8e4bc3f9d61ecfb85dfe9d4d430c29010`
 
 ```dockerfile
-ENV KIBANA_VERSION=4.1.3
+ENV KIBANA_VERSION=4.1.4
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:34 GMT
+-	Created: Thu, 17 Dec 2015 18:16:56 GMT
 -	Parent Layer: `16154494ebc4e9d186519a2e9d0b0a193cb725438d6b6bfda0eca80904015315`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -778,21 +778,21 @@ ENV KIBANA_VERSION=4.1.3
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `53ce406734c02f4a5b583adf37a605096d679e485cdcb4be7eca3bf36e950383`
+#### `dd601d5197d6e46228912a2ac15bd8ad2a4c9e17d72f055811efba4726c55c49`
 
 ```dockerfile
-ENV KIBANA_SHA1=fa93e63b425ed5a99af8ba929ffa4dd136206545
+ENV KIBANA_SHA1=f88a7ad612b4e7129a951cf0e64429e63d847ed9
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:34 GMT
--	Parent Layer: `f0bca89cb3f37045a996ee3a5e372b197903a831982b7efccde575529c6c7657`
+-	Created: Thu, 17 Dec 2015 18:16:56 GMT
+-	Parent Layer: `ee024419ce68e927a969c611dc9456b8e4bc3f9d61ecfb85dfe9d4d430c29010`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1dd55286f5ec209620fa01f4028e85b2eaa5411cc9c97eeb971914b68cc93cf1`
+#### `7aca0ec5b8f479e4dc1a75d7348cffb453f5cac6b1a52f2033855ff8d6d6c40a`
 
 ```dockerfile
 RUN set -x \
@@ -803,92 +803,92 @@ RUN set -x \
 	&& rm kibana.tar.gz
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:39 GMT
--	Parent Layer: `53ce406734c02f4a5b583adf37a605096d679e485cdcb4be7eca3bf36e950383`
+-	Created: Thu, 17 Dec 2015 18:17:01 GMT
+-	Parent Layer: `dd601d5197d6e46228912a2ac15bd8ad2a4c9e17d72f055811efba4726c55c49`
 -	Docker Version: 1.8.3
--	Virtual Size: 42.7 MB (42691904 bytes)
--	v2 Blob: `sha256:1c95fb6be8f6a523596e1dac7fc87dd123462ab5a1a31b7f8b1b49eaf4854b0a`
--	v2 Content-Length: 11.9 MB (11920935 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:36:19 GMT
+-	Virtual Size: 42.7 MB (42717926 bytes)
+-	v2 Blob: `sha256:d79872b46ff07b2f5365cd224dd0d4556eb648caaf6b686d72e0caffe6769eb5`
+-	v2 Content-Length: 11.9 MB (11927054 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 18:22:11 GMT
 
-#### `1a12e1035746a8c8a6ce59fbcbfa9c01315c9f019a42ae629870326c8c802a7f`
+#### `9327367cd31b35dcc5a9447e93d53a4f68e328f2ddf16216289769819d268969`
 
 ```dockerfile
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:42 GMT
--	Parent Layer: `1dd55286f5ec209620fa01f4028e85b2eaa5411cc9c97eeb971914b68cc93cf1`
+-	Created: Thu, 17 Dec 2015 18:17:03 GMT
+-	Parent Layer: `7aca0ec5b8f479e4dc1a75d7348cffb453f5cac6b1a52f2033855ff8d6d6c40a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4b744fec0e2b8832deb5b2f9b4a7a1135cd30df9c69f2d6ad3846d75e68b558d`
+#### `dfa78c2de301e81f49c8a2fff1f50d66c0737479facdc021c67fb189c7b17502`
 
 ```dockerfile
 COPY file:1bb1d9e65161c993b683faa28cd83b95f26d392a130e1ca558d3e7c26ccdd5ff in /
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:42 GMT
--	Parent Layer: `1a12e1035746a8c8a6ce59fbcbfa9c01315c9f019a42ae629870326c8c802a7f`
+-	Created: Thu, 17 Dec 2015 18:17:03 GMT
+-	Parent Layer: `9327367cd31b35dcc5a9447e93d53a4f68e328f2ddf16216289769819d268969`
 -	Docker Version: 1.8.3
 -	Virtual Size: 686.0 B
 -	v2 Blob: `sha256:2d8c4b3ddd3cd010b9d189b62ff43490b995c32ee1632968af3d74b89607254a`
 -	v2 Content-Length: 457.0 B
 -	v2 Last-Modified: Fri, 12 Jun 2015 22:30:36 GMT
 
-#### `a4302a91d84d7c173368628e5112e09916344f8d50214598cf79569aea8a0a9a`
+#### `681222abd4feced91226a96c98f97a27b506e6a36c5ecc77686c4cb2665a6c3e`
 
 ```dockerfile
 EXPOSE 5601/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:43 GMT
--	Parent Layer: `4b744fec0e2b8832deb5b2f9b4a7a1135cd30df9c69f2d6ad3846d75e68b558d`
+-	Created: Thu, 17 Dec 2015 18:17:04 GMT
+-	Parent Layer: `dfa78c2de301e81f49c8a2fff1f50d66c0737479facdc021c67fb189c7b17502`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e1d760bc7b40f5473792ec649782c2251cdd94aca77e43bb761c5bd51af153ad`
+#### `32116130bab8d079fd472583a99ab3ac366356082b529f3333a6d494487a7879`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:43 GMT
--	Parent Layer: `a4302a91d84d7c173368628e5112e09916344f8d50214598cf79569aea8a0a9a`
+-	Created: Thu, 17 Dec 2015 18:17:05 GMT
+-	Parent Layer: `681222abd4feced91226a96c98f97a27b506e6a36c5ecc77686c4cb2665a6c3e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `44635b0adec8221e18163268893ab7ae98e3d709bb5066ff54bf4ae0f789f50c`
+#### `a2d124ad4a12334a6f2b5793be003701c7d5a57a8f3e81e7e764931a14595950`
 
 ```dockerfile
 CMD ["kibana"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:55:44 GMT
--	Parent Layer: `e1d760bc7b40f5473792ec649782c2251cdd94aca77e43bb761c5bd51af153ad`
+-	Created: Thu, 17 Dec 2015 18:17:05 GMT
+-	Parent Layer: `32116130bab8d079fd472583a99ab3ac366356082b529f3333a6d494487a7879`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `kibana:4.2.1`
+## `kibana:4.2.2`
 
 ```console
-$ docker pull library/kibana@sha256:d3dce811203068dd91b201d715ef00ce4dd1bf411f7837cd26119ea0a5b5d77f
+$ docker pull library/kibana@sha256:727605afdd0f5147f2be85091fa1e205d66e7b1f7dc864f0652b565bfde27e2c
 ```
 
--	Total Virtual Size: 260.5 MB (260539919 bytes)
--	Total v2 Content-Length: 89.6 MB (89576073 bytes)
+-	Total Virtual Size: 259.3 MB (259306179 bytes)
+-	Total v2 Content-Length: 89.1 MB (89135995 bytes)
 
 ### Layers (14)
 
@@ -981,13 +981,13 @@ RUN arch="$(dpkg --print-architecture)" \
 -	v2 Content-Length: 654.4 KB (654435 bytes)
 -	v2 Last-Modified: Tue, 08 Dec 2015 01:37:54 GMT
 
-#### `bad4d3379bb86b05abeba64f85fd559d3f20f4b9a077fd490f761bb9490e5462`
+#### `b30b7cf2ab33f6eae91a0a39d2cc8796a6d0ead80ec9a04d50072ae02893b3a9`
 
 ```dockerfile
-ENV KIBANA_VERSION=4.2.1
+ENV KIBANA_VERSION=4.2.2
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:19 GMT
+-	Created: Thu, 17 Dec 2015 18:17:59 GMT
 -	Parent Layer: `bf63ce2edf297afde5e73d01b4506d98c96faa25bdde17c511f01768c7d5dc9c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -995,21 +995,21 @@ ENV KIBANA_VERSION=4.2.1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `eb827be9497915aca4f9c06c31c793e79a6597b026c2e9e4529b7cbb41b43b0b`
+#### `c5b118480ef11d1439c99b5e76b844a2955bb5c6cc51ea66a64118a5d49b8773`
 
 ```dockerfile
-ENV KIBANA_SHA1=1c8d19d39a9ba10dc2431068e08497fbb416eba4
+ENV KIBANA_SHA1=f0daf9cd0b949c0ec7a3be300ee876fba17d1570
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:20 GMT
--	Parent Layer: `bad4d3379bb86b05abeba64f85fd559d3f20f4b9a077fd490f761bb9490e5462`
+-	Created: Thu, 17 Dec 2015 18:18:00 GMT
+-	Parent Layer: `b30b7cf2ab33f6eae91a0a39d2cc8796a6d0ead80ec9a04d50072ae02893b3a9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8ca48fff93c2794b67289d8c8832282309359c12682ecb39068c3ec1a4301dc`
+#### `151549f0b7c8c58e2e01a1aa4915c79f751403931d5c7bd68fafff4919cad9a4`
 
 ```dockerfile
 RUN set -x \
@@ -1021,78 +1021,78 @@ RUN set -x \
 	&& rm kibana.tar.gz
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:26 GMT
--	Parent Layer: `eb827be9497915aca4f9c06c31c793e79a6597b026c2e9e4529b7cbb41b43b0b`
+-	Created: Thu, 17 Dec 2015 18:18:07 GMT
+-	Parent Layer: `c5b118480ef11d1439c99b5e76b844a2955bb5c6cc51ea66a64118a5d49b8773`
 -	Docker Version: 1.8.3
--	Virtual Size: 118.7 MB (118658960 bytes)
--	v2 Blob: `sha256:2c41606af3b882769e4cab0292514817647fcb86a880bfca533ca0231a32dced`
--	v2 Content-Length: 30.9 MB (30938738 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:37:44 GMT
+-	Virtual Size: 117.4 MB (117425220 bytes)
+-	v2 Blob: `sha256:1ac340d830aa14808fbf2105da08ff9bc4e9d309ec2f32d0d581820b7f0a1223`
+-	v2 Content-Length: 30.5 MB (30498660 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 18:23:36 GMT
 
-#### `c925b2747e9358960a4904237362535e46965dc0979aa3e82f9877a6ea48bba8`
+#### `53c6e393f4611a1e4f12fb84798e4bb8295a9756642e2df8ef27b4147b588975`
 
 ```dockerfile
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:31 GMT
--	Parent Layer: `d8ca48fff93c2794b67289d8c8832282309359c12682ecb39068c3ec1a4301dc`
+-	Created: Thu, 17 Dec 2015 18:18:12 GMT
+-	Parent Layer: `151549f0b7c8c58e2e01a1aa4915c79f751403931d5c7bd68fafff4919cad9a4`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bbacb503e4b23391b846a1529bee2475d55f1b96b0f46540cae1b630fcd8dbd0`
+#### `4deef3934cd49e6ef8fb0cda5a8c499350a000a254ead580b21756702a3a8749`
 
 ```dockerfile
 COPY file:feb0647ca0aed966d0a39a28c004b4bef364dd8d9d0509fa809465be6831e3ee in /
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:32 GMT
--	Parent Layer: `c925b2747e9358960a4904237362535e46965dc0979aa3e82f9877a6ea48bba8`
+-	Created: Thu, 17 Dec 2015 18:18:12 GMT
+-	Parent Layer: `53c6e393f4611a1e4f12fb84798e4bb8295a9756642e2df8ef27b4147b588975`
 -	Docker Version: 1.8.3
 -	Virtual Size: 695.0 B
 -	v2 Blob: `sha256:52dbb47755ab5686ebe66108f58e268711bba73139651ca7e9b525859715422d`
 -	v2 Content-Length: 463.0 B
 -	v2 Last-Modified: Thu, 03 Sep 2015 23:23:25 GMT
 
-#### `a4ea5ca22cc67f3b41df710f7c0dbf7878801fd8e46b3969303aea1085261507`
+#### `dae9a7d67821df2333e64cee29b1c4db4100e3c36ebe04392e539f6dc07576a2`
 
 ```dockerfile
 EXPOSE 5601/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:32 GMT
--	Parent Layer: `bbacb503e4b23391b846a1529bee2475d55f1b96b0f46540cae1b630fcd8dbd0`
+-	Created: Thu, 17 Dec 2015 18:18:13 GMT
+-	Parent Layer: `4deef3934cd49e6ef8fb0cda5a8c499350a000a254ead580b21756702a3a8749`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `57d708b873ca6a303e1bc0542d307b8a9fbc8fea854adbc1cc99340206cefc26`
+#### `d0c8c5d8f2b66f2f0b735f26fdf8f90416177bde94962b9d70fbdbbdc816b387`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:33 GMT
--	Parent Layer: `a4ea5ca22cc67f3b41df710f7c0dbf7878801fd8e46b3969303aea1085261507`
+-	Created: Thu, 17 Dec 2015 18:18:13 GMT
+-	Parent Layer: `dae9a7d67821df2333e64cee29b1c4db4100e3c36ebe04392e539f6dc07576a2`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8ce3c3f2284eb3ad3e3458e003e1fc0090a29b3b698aca26bc7e254d1c3a198f`
+#### `ce8129da62ea442cb2b3e888d95089c393bd51bb163a9c91410a4f2e60721d03`
 
 ```dockerfile
 CMD ["kibana"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:33 GMT
--	Parent Layer: `57d708b873ca6a303e1bc0542d307b8a9fbc8fea854adbc1cc99340206cefc26`
+-	Created: Thu, 17 Dec 2015 18:18:14 GMT
+-	Parent Layer: `d0c8c5d8f2b66f2f0b735f26fdf8f90416177bde94962b9d70fbdbbdc816b387`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1102,11 +1102,11 @@ CMD ["kibana"]
 ## `kibana:4.2`
 
 ```console
-$ docker pull library/kibana@sha256:d6aa7e72c2c758931fe22b0877de4c6daf799c1de34ebc2e06a3375d9cbb9cc2
+$ docker pull library/kibana@sha256:a94ff934937af34b1c9287fbb68d9d9ae63599b499b1d46749f167db11bed2ec
 ```
 
--	Total Virtual Size: 260.5 MB (260539919 bytes)
--	Total v2 Content-Length: 89.6 MB (89576073 bytes)
+-	Total Virtual Size: 259.3 MB (259306179 bytes)
+-	Total v2 Content-Length: 89.1 MB (89135995 bytes)
 
 ### Layers (14)
 
@@ -1199,13 +1199,13 @@ RUN arch="$(dpkg --print-architecture)" \
 -	v2 Content-Length: 654.4 KB (654435 bytes)
 -	v2 Last-Modified: Tue, 08 Dec 2015 01:37:54 GMT
 
-#### `bad4d3379bb86b05abeba64f85fd559d3f20f4b9a077fd490f761bb9490e5462`
+#### `b30b7cf2ab33f6eae91a0a39d2cc8796a6d0ead80ec9a04d50072ae02893b3a9`
 
 ```dockerfile
-ENV KIBANA_VERSION=4.2.1
+ENV KIBANA_VERSION=4.2.2
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:19 GMT
+-	Created: Thu, 17 Dec 2015 18:17:59 GMT
 -	Parent Layer: `bf63ce2edf297afde5e73d01b4506d98c96faa25bdde17c511f01768c7d5dc9c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -1213,21 +1213,21 @@ ENV KIBANA_VERSION=4.2.1
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `eb827be9497915aca4f9c06c31c793e79a6597b026c2e9e4529b7cbb41b43b0b`
+#### `c5b118480ef11d1439c99b5e76b844a2955bb5c6cc51ea66a64118a5d49b8773`
 
 ```dockerfile
-ENV KIBANA_SHA1=1c8d19d39a9ba10dc2431068e08497fbb416eba4
+ENV KIBANA_SHA1=f0daf9cd0b949c0ec7a3be300ee876fba17d1570
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:20 GMT
--	Parent Layer: `bad4d3379bb86b05abeba64f85fd559d3f20f4b9a077fd490f761bb9490e5462`
+-	Created: Thu, 17 Dec 2015 18:18:00 GMT
+-	Parent Layer: `b30b7cf2ab33f6eae91a0a39d2cc8796a6d0ead80ec9a04d50072ae02893b3a9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8ca48fff93c2794b67289d8c8832282309359c12682ecb39068c3ec1a4301dc`
+#### `151549f0b7c8c58e2e01a1aa4915c79f751403931d5c7bd68fafff4919cad9a4`
 
 ```dockerfile
 RUN set -x \
@@ -1239,92 +1239,92 @@ RUN set -x \
 	&& rm kibana.tar.gz
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:26 GMT
--	Parent Layer: `eb827be9497915aca4f9c06c31c793e79a6597b026c2e9e4529b7cbb41b43b0b`
+-	Created: Thu, 17 Dec 2015 18:18:07 GMT
+-	Parent Layer: `c5b118480ef11d1439c99b5e76b844a2955bb5c6cc51ea66a64118a5d49b8773`
 -	Docker Version: 1.8.3
--	Virtual Size: 118.7 MB (118658960 bytes)
--	v2 Blob: `sha256:2c41606af3b882769e4cab0292514817647fcb86a880bfca533ca0231a32dced`
--	v2 Content-Length: 30.9 MB (30938738 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:37:44 GMT
+-	Virtual Size: 117.4 MB (117425220 bytes)
+-	v2 Blob: `sha256:1ac340d830aa14808fbf2105da08ff9bc4e9d309ec2f32d0d581820b7f0a1223`
+-	v2 Content-Length: 30.5 MB (30498660 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 18:23:36 GMT
 
-#### `c925b2747e9358960a4904237362535e46965dc0979aa3e82f9877a6ea48bba8`
+#### `53c6e393f4611a1e4f12fb84798e4bb8295a9756642e2df8ef27b4147b588975`
 
 ```dockerfile
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:31 GMT
--	Parent Layer: `d8ca48fff93c2794b67289d8c8832282309359c12682ecb39068c3ec1a4301dc`
+-	Created: Thu, 17 Dec 2015 18:18:12 GMT
+-	Parent Layer: `151549f0b7c8c58e2e01a1aa4915c79f751403931d5c7bd68fafff4919cad9a4`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bbacb503e4b23391b846a1529bee2475d55f1b96b0f46540cae1b630fcd8dbd0`
+#### `4deef3934cd49e6ef8fb0cda5a8c499350a000a254ead580b21756702a3a8749`
 
 ```dockerfile
 COPY file:feb0647ca0aed966d0a39a28c004b4bef364dd8d9d0509fa809465be6831e3ee in /
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:32 GMT
--	Parent Layer: `c925b2747e9358960a4904237362535e46965dc0979aa3e82f9877a6ea48bba8`
+-	Created: Thu, 17 Dec 2015 18:18:12 GMT
+-	Parent Layer: `53c6e393f4611a1e4f12fb84798e4bb8295a9756642e2df8ef27b4147b588975`
 -	Docker Version: 1.8.3
 -	Virtual Size: 695.0 B
 -	v2 Blob: `sha256:52dbb47755ab5686ebe66108f58e268711bba73139651ca7e9b525859715422d`
 -	v2 Content-Length: 463.0 B
 -	v2 Last-Modified: Thu, 03 Sep 2015 23:23:25 GMT
 
-#### `a4ea5ca22cc67f3b41df710f7c0dbf7878801fd8e46b3969303aea1085261507`
+#### `dae9a7d67821df2333e64cee29b1c4db4100e3c36ebe04392e539f6dc07576a2`
 
 ```dockerfile
 EXPOSE 5601/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:32 GMT
--	Parent Layer: `bbacb503e4b23391b846a1529bee2475d55f1b96b0f46540cae1b630fcd8dbd0`
+-	Created: Thu, 17 Dec 2015 18:18:13 GMT
+-	Parent Layer: `4deef3934cd49e6ef8fb0cda5a8c499350a000a254ead580b21756702a3a8749`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `57d708b873ca6a303e1bc0542d307b8a9fbc8fea854adbc1cc99340206cefc26`
+#### `d0c8c5d8f2b66f2f0b735f26fdf8f90416177bde94962b9d70fbdbbdc816b387`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:33 GMT
--	Parent Layer: `a4ea5ca22cc67f3b41df710f7c0dbf7878801fd8e46b3969303aea1085261507`
+-	Created: Thu, 17 Dec 2015 18:18:13 GMT
+-	Parent Layer: `dae9a7d67821df2333e64cee29b1c4db4100e3c36ebe04392e539f6dc07576a2`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8ce3c3f2284eb3ad3e3458e003e1fc0090a29b3b698aca26bc7e254d1c3a198f`
+#### `ce8129da62ea442cb2b3e888d95089c393bd51bb163a9c91410a4f2e60721d03`
 
 ```dockerfile
 CMD ["kibana"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:57:33 GMT
--	Parent Layer: `57d708b873ca6a303e1bc0542d307b8a9fbc8fea854adbc1cc99340206cefc26`
+-	Created: Thu, 17 Dec 2015 18:18:14 GMT
+-	Parent Layer: `d0c8c5d8f2b66f2f0b735f26fdf8f90416177bde94962b9d70fbdbbdc816b387`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `kibana:4.3.0`
+## `kibana:4.3.1`
 
 ```console
-$ docker pull library/kibana@sha256:498fd584cd5b4f958afa75e3ce6b3ee1821f0759d03f3cef5c43e35908073940
+$ docker pull library/kibana@sha256:1b76becd5bbed79d14f6f8141c6c6842ff6ca03f24b839069961956c148d3e2c
 ```
 
--	Total Virtual Size: 260.0 MB (259986630 bytes)
--	Total v2 Content-Length: 89.3 MB (89265328 bytes)
+-	Total Virtual Size: 259.8 MB (259806487 bytes)
+-	Total v2 Content-Length: 89.1 MB (89053726 bytes)
 
 ### Layers (14)
 
@@ -1417,13 +1417,13 @@ RUN arch="$(dpkg --print-architecture)" \
 -	v2 Content-Length: 654.4 KB (654435 bytes)
 -	v2 Last-Modified: Tue, 08 Dec 2015 01:37:54 GMT
 
-#### `759320f6f1892595fe988c076b03669419f46a6a65da101431876a009ee1fb89`
+#### `336d37ea490d452a002ff782c57383d774efca0d63ddc967c99e995347cee77b`
 
 ```dockerfile
-ENV KIBANA_VERSION=4.3.0
+ENV KIBANA_VERSION=4.3.1
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:21 GMT
+-	Created: Thu, 17 Dec 2015 18:19:08 GMT
 -	Parent Layer: `bf63ce2edf297afde5e73d01b4506d98c96faa25bdde17c511f01768c7d5dc9c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -1431,21 +1431,21 @@ ENV KIBANA_VERSION=4.3.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9f84fcc806b41eeaf7567fa970d35f54d930c3813e1e069542594dd2a7f98dc8`
+#### `fd36f449013ee60cf0ff7ba17276d9949a6ebcaff8f5d486e71d67e873a6ca28`
 
 ```dockerfile
-ENV KIBANA_SHA1=d64e1fc0ddeaaab85e168177de6c78ed82bb3a3b
+ENV KIBANA_SHA1=115ba22882df75eb5f07330b7ad8781a57569b00
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:21 GMT
--	Parent Layer: `759320f6f1892595fe988c076b03669419f46a6a65da101431876a009ee1fb89`
+-	Created: Thu, 17 Dec 2015 18:19:09 GMT
+-	Parent Layer: `336d37ea490d452a002ff782c57383d774efca0d63ddc967c99e995347cee77b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `92ee6c5f8934625f6147674a3ed8c73c57d33f504a7c79bb695170363e62528e`
+#### `c5b726dd12fb6688f04db37ce0d2883d7ce4ac44b47044c2fda6c2608768b29c`
 
 ```dockerfile
 RUN set -x \
@@ -1457,78 +1457,78 @@ RUN set -x \
 	&& rm kibana.tar.gz
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:28 GMT
--	Parent Layer: `9f84fcc806b41eeaf7567fa970d35f54d930c3813e1e069542594dd2a7f98dc8`
+-	Created: Thu, 17 Dec 2015 18:19:16 GMT
+-	Parent Layer: `fd36f449013ee60cf0ff7ba17276d9949a6ebcaff8f5d486e71d67e873a6ca28`
 -	Docker Version: 1.8.3
--	Virtual Size: 118.1 MB (118105671 bytes)
--	v2 Blob: `sha256:9c86992817c588df95e236ccb57020dd5eaf17a1fac27921ca345d1b45d268c2`
--	v2 Content-Length: 30.6 MB (30627991 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:40:03 GMT
+-	Virtual Size: 117.9 MB (117925528 bytes)
+-	v2 Blob: `sha256:0bb43946d321accb86c01ff9121b7e9710d11a5fd1f11508610a81e7135de361`
+-	v2 Content-Length: 30.4 MB (30416389 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 18:24:59 GMT
 
-#### `86f8a1034eb8deb40a7a1e3a59626fc61d9d6ba552339043670d8886bfb681e6`
+#### `01c5af6ea4b929a82292c340e49e46d1e98930f971a791873bb9a36b99263437`
 
 ```dockerfile
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:33 GMT
--	Parent Layer: `92ee6c5f8934625f6147674a3ed8c73c57d33f504a7c79bb695170363e62528e`
+-	Created: Thu, 17 Dec 2015 18:19:20 GMT
+-	Parent Layer: `c5b726dd12fb6688f04db37ce0d2883d7ce4ac44b47044c2fda6c2608768b29c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `abde7ea7d91d95ab45513ea0db5fa4052dd2833d5c7ab316827145e714817288`
+#### `9ef56f9ab9b670e5667415661dec6bc9019bdf4403f5b414692fcb50ba4def37`
 
 ```dockerfile
 COPY file:feb0647ca0aed966d0a39a28c004b4bef364dd8d9d0509fa809465be6831e3ee in /
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:33 GMT
--	Parent Layer: `86f8a1034eb8deb40a7a1e3a59626fc61d9d6ba552339043670d8886bfb681e6`
+-	Created: Thu, 17 Dec 2015 18:19:21 GMT
+-	Parent Layer: `01c5af6ea4b929a82292c340e49e46d1e98930f971a791873bb9a36b99263437`
 -	Docker Version: 1.8.3
 -	Virtual Size: 695.0 B
 -	v2 Blob: `sha256:c86173a5f0385904afb9ad41c0bfbacac18be4c8b1456ddf44c6a9415c519291`
 -	v2 Content-Length: 465.0 B
 -	v2 Last-Modified: Tue, 24 Nov 2015 20:02:58 GMT
 
-#### `f4601601e57985d817832ac7f289e11a7de5d6029a7ffc5e986aa78242529dc7`
+#### `862a84cc866e94c16c0ae92b25bc8fb9067f26d90dd7cc5d43fe719c32f33a19`
 
 ```dockerfile
 EXPOSE 5601/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:34 GMT
--	Parent Layer: `abde7ea7d91d95ab45513ea0db5fa4052dd2833d5c7ab316827145e714817288`
+-	Created: Thu, 17 Dec 2015 18:19:22 GMT
+-	Parent Layer: `9ef56f9ab9b670e5667415661dec6bc9019bdf4403f5b414692fcb50ba4def37`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `847c8d46c6e1ba371839a45e33f3d2e5c36c74c77a48bc1286dade0c124337f2`
+#### `29529f6690f49715c9b89521cd50364446ea33cfd61c8f9f2b759491af027c73`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:34 GMT
--	Parent Layer: `f4601601e57985d817832ac7f289e11a7de5d6029a7ffc5e986aa78242529dc7`
+-	Created: Thu, 17 Dec 2015 18:19:22 GMT
+-	Parent Layer: `862a84cc866e94c16c0ae92b25bc8fb9067f26d90dd7cc5d43fe719c32f33a19`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `97c0a7047f3d51f6efab152f69d0a49f254528cb0b88f60b25cfe5b7ed81914f`
+#### `219da12bf72083578237f64db837889a2beee1e3433ebeb5ffba9e037ec56217`
 
 ```dockerfile
 CMD ["kibana"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:35 GMT
--	Parent Layer: `847c8d46c6e1ba371839a45e33f3d2e5c36c74c77a48bc1286dade0c124337f2`
+-	Created: Thu, 17 Dec 2015 18:19:23 GMT
+-	Parent Layer: `29529f6690f49715c9b89521cd50364446ea33cfd61c8f9f2b759491af027c73`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1538,11 +1538,11 @@ CMD ["kibana"]
 ## `kibana:4.3`
 
 ```console
-$ docker pull library/kibana@sha256:3e98e2a560bca3fa2ded125a929a654c4cff558b4db4ca2455063188035f9cea
+$ docker pull library/kibana@sha256:b0a3f9f1d9d627b32291897bda16143a5d4afc65d6a0ea8c5a9959bc0d3ebfdb
 ```
 
--	Total Virtual Size: 260.0 MB (259986630 bytes)
--	Total v2 Content-Length: 89.3 MB (89265328 bytes)
+-	Total Virtual Size: 259.8 MB (259806487 bytes)
+-	Total v2 Content-Length: 89.1 MB (89053726 bytes)
 
 ### Layers (14)
 
@@ -1635,13 +1635,13 @@ RUN arch="$(dpkg --print-architecture)" \
 -	v2 Content-Length: 654.4 KB (654435 bytes)
 -	v2 Last-Modified: Tue, 08 Dec 2015 01:37:54 GMT
 
-#### `759320f6f1892595fe988c076b03669419f46a6a65da101431876a009ee1fb89`
+#### `336d37ea490d452a002ff782c57383d774efca0d63ddc967c99e995347cee77b`
 
 ```dockerfile
-ENV KIBANA_VERSION=4.3.0
+ENV KIBANA_VERSION=4.3.1
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:21 GMT
+-	Created: Thu, 17 Dec 2015 18:19:08 GMT
 -	Parent Layer: `bf63ce2edf297afde5e73d01b4506d98c96faa25bdde17c511f01768c7d5dc9c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -1649,21 +1649,21 @@ ENV KIBANA_VERSION=4.3.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9f84fcc806b41eeaf7567fa970d35f54d930c3813e1e069542594dd2a7f98dc8`
+#### `fd36f449013ee60cf0ff7ba17276d9949a6ebcaff8f5d486e71d67e873a6ca28`
 
 ```dockerfile
-ENV KIBANA_SHA1=d64e1fc0ddeaaab85e168177de6c78ed82bb3a3b
+ENV KIBANA_SHA1=115ba22882df75eb5f07330b7ad8781a57569b00
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:21 GMT
--	Parent Layer: `759320f6f1892595fe988c076b03669419f46a6a65da101431876a009ee1fb89`
+-	Created: Thu, 17 Dec 2015 18:19:09 GMT
+-	Parent Layer: `336d37ea490d452a002ff782c57383d774efca0d63ddc967c99e995347cee77b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `92ee6c5f8934625f6147674a3ed8c73c57d33f504a7c79bb695170363e62528e`
+#### `c5b726dd12fb6688f04db37ce0d2883d7ce4ac44b47044c2fda6c2608768b29c`
 
 ```dockerfile
 RUN set -x \
@@ -1675,78 +1675,78 @@ RUN set -x \
 	&& rm kibana.tar.gz
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:28 GMT
--	Parent Layer: `9f84fcc806b41eeaf7567fa970d35f54d930c3813e1e069542594dd2a7f98dc8`
+-	Created: Thu, 17 Dec 2015 18:19:16 GMT
+-	Parent Layer: `fd36f449013ee60cf0ff7ba17276d9949a6ebcaff8f5d486e71d67e873a6ca28`
 -	Docker Version: 1.8.3
--	Virtual Size: 118.1 MB (118105671 bytes)
--	v2 Blob: `sha256:9c86992817c588df95e236ccb57020dd5eaf17a1fac27921ca345d1b45d268c2`
--	v2 Content-Length: 30.6 MB (30627991 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:40:03 GMT
+-	Virtual Size: 117.9 MB (117925528 bytes)
+-	v2 Blob: `sha256:0bb43946d321accb86c01ff9121b7e9710d11a5fd1f11508610a81e7135de361`
+-	v2 Content-Length: 30.4 MB (30416389 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 18:24:59 GMT
 
-#### `86f8a1034eb8deb40a7a1e3a59626fc61d9d6ba552339043670d8886bfb681e6`
+#### `01c5af6ea4b929a82292c340e49e46d1e98930f971a791873bb9a36b99263437`
 
 ```dockerfile
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:33 GMT
--	Parent Layer: `92ee6c5f8934625f6147674a3ed8c73c57d33f504a7c79bb695170363e62528e`
+-	Created: Thu, 17 Dec 2015 18:19:20 GMT
+-	Parent Layer: `c5b726dd12fb6688f04db37ce0d2883d7ce4ac44b47044c2fda6c2608768b29c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `abde7ea7d91d95ab45513ea0db5fa4052dd2833d5c7ab316827145e714817288`
+#### `9ef56f9ab9b670e5667415661dec6bc9019bdf4403f5b414692fcb50ba4def37`
 
 ```dockerfile
 COPY file:feb0647ca0aed966d0a39a28c004b4bef364dd8d9d0509fa809465be6831e3ee in /
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:33 GMT
--	Parent Layer: `86f8a1034eb8deb40a7a1e3a59626fc61d9d6ba552339043670d8886bfb681e6`
+-	Created: Thu, 17 Dec 2015 18:19:21 GMT
+-	Parent Layer: `01c5af6ea4b929a82292c340e49e46d1e98930f971a791873bb9a36b99263437`
 -	Docker Version: 1.8.3
 -	Virtual Size: 695.0 B
 -	v2 Blob: `sha256:c86173a5f0385904afb9ad41c0bfbacac18be4c8b1456ddf44c6a9415c519291`
 -	v2 Content-Length: 465.0 B
 -	v2 Last-Modified: Tue, 24 Nov 2015 20:02:58 GMT
 
-#### `f4601601e57985d817832ac7f289e11a7de5d6029a7ffc5e986aa78242529dc7`
+#### `862a84cc866e94c16c0ae92b25bc8fb9067f26d90dd7cc5d43fe719c32f33a19`
 
 ```dockerfile
 EXPOSE 5601/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:34 GMT
--	Parent Layer: `abde7ea7d91d95ab45513ea0db5fa4052dd2833d5c7ab316827145e714817288`
+-	Created: Thu, 17 Dec 2015 18:19:22 GMT
+-	Parent Layer: `9ef56f9ab9b670e5667415661dec6bc9019bdf4403f5b414692fcb50ba4def37`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `847c8d46c6e1ba371839a45e33f3d2e5c36c74c77a48bc1286dade0c124337f2`
+#### `29529f6690f49715c9b89521cd50364446ea33cfd61c8f9f2b759491af027c73`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:34 GMT
--	Parent Layer: `f4601601e57985d817832ac7f289e11a7de5d6029a7ffc5e986aa78242529dc7`
+-	Created: Thu, 17 Dec 2015 18:19:22 GMT
+-	Parent Layer: `862a84cc866e94c16c0ae92b25bc8fb9067f26d90dd7cc5d43fe719c32f33a19`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `97c0a7047f3d51f6efab152f69d0a49f254528cb0b88f60b25cfe5b7ed81914f`
+#### `219da12bf72083578237f64db837889a2beee1e3433ebeb5ffba9e037ec56217`
 
 ```dockerfile
 CMD ["kibana"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:35 GMT
--	Parent Layer: `847c8d46c6e1ba371839a45e33f3d2e5c36c74c77a48bc1286dade0c124337f2`
+-	Created: Thu, 17 Dec 2015 18:19:23 GMT
+-	Parent Layer: `29529f6690f49715c9b89521cd50364446ea33cfd61c8f9f2b759491af027c73`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1756,11 +1756,11 @@ CMD ["kibana"]
 ## `kibana:4`
 
 ```console
-$ docker pull library/kibana@sha256:b9b8500626da19349f81bdf35b081ededf3070c9241c8a4b14f039725be5aca7
+$ docker pull library/kibana@sha256:000339cf479d4fdeb9715f2ee4d4bb27e6107ae311da9c3add2af579d9354873
 ```
 
--	Total Virtual Size: 260.0 MB (259986630 bytes)
--	Total v2 Content-Length: 89.3 MB (89265328 bytes)
+-	Total Virtual Size: 259.8 MB (259806487 bytes)
+-	Total v2 Content-Length: 89.1 MB (89053726 bytes)
 
 ### Layers (14)
 
@@ -1853,13 +1853,13 @@ RUN arch="$(dpkg --print-architecture)" \
 -	v2 Content-Length: 654.4 KB (654435 bytes)
 -	v2 Last-Modified: Tue, 08 Dec 2015 01:37:54 GMT
 
-#### `759320f6f1892595fe988c076b03669419f46a6a65da101431876a009ee1fb89`
+#### `336d37ea490d452a002ff782c57383d774efca0d63ddc967c99e995347cee77b`
 
 ```dockerfile
-ENV KIBANA_VERSION=4.3.0
+ENV KIBANA_VERSION=4.3.1
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:21 GMT
+-	Created: Thu, 17 Dec 2015 18:19:08 GMT
 -	Parent Layer: `bf63ce2edf297afde5e73d01b4506d98c96faa25bdde17c511f01768c7d5dc9c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -1867,21 +1867,21 @@ ENV KIBANA_VERSION=4.3.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9f84fcc806b41eeaf7567fa970d35f54d930c3813e1e069542594dd2a7f98dc8`
+#### `fd36f449013ee60cf0ff7ba17276d9949a6ebcaff8f5d486e71d67e873a6ca28`
 
 ```dockerfile
-ENV KIBANA_SHA1=d64e1fc0ddeaaab85e168177de6c78ed82bb3a3b
+ENV KIBANA_SHA1=115ba22882df75eb5f07330b7ad8781a57569b00
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:21 GMT
--	Parent Layer: `759320f6f1892595fe988c076b03669419f46a6a65da101431876a009ee1fb89`
+-	Created: Thu, 17 Dec 2015 18:19:09 GMT
+-	Parent Layer: `336d37ea490d452a002ff782c57383d774efca0d63ddc967c99e995347cee77b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `92ee6c5f8934625f6147674a3ed8c73c57d33f504a7c79bb695170363e62528e`
+#### `c5b726dd12fb6688f04db37ce0d2883d7ce4ac44b47044c2fda6c2608768b29c`
 
 ```dockerfile
 RUN set -x \
@@ -1893,78 +1893,78 @@ RUN set -x \
 	&& rm kibana.tar.gz
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:28 GMT
--	Parent Layer: `9f84fcc806b41eeaf7567fa970d35f54d930c3813e1e069542594dd2a7f98dc8`
+-	Created: Thu, 17 Dec 2015 18:19:16 GMT
+-	Parent Layer: `fd36f449013ee60cf0ff7ba17276d9949a6ebcaff8f5d486e71d67e873a6ca28`
 -	Docker Version: 1.8.3
--	Virtual Size: 118.1 MB (118105671 bytes)
--	v2 Blob: `sha256:9c86992817c588df95e236ccb57020dd5eaf17a1fac27921ca345d1b45d268c2`
--	v2 Content-Length: 30.6 MB (30627991 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:40:03 GMT
+-	Virtual Size: 117.9 MB (117925528 bytes)
+-	v2 Blob: `sha256:0bb43946d321accb86c01ff9121b7e9710d11a5fd1f11508610a81e7135de361`
+-	v2 Content-Length: 30.4 MB (30416389 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 18:24:59 GMT
 
-#### `86f8a1034eb8deb40a7a1e3a59626fc61d9d6ba552339043670d8886bfb681e6`
+#### `01c5af6ea4b929a82292c340e49e46d1e98930f971a791873bb9a36b99263437`
 
 ```dockerfile
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:33 GMT
--	Parent Layer: `92ee6c5f8934625f6147674a3ed8c73c57d33f504a7c79bb695170363e62528e`
+-	Created: Thu, 17 Dec 2015 18:19:20 GMT
+-	Parent Layer: `c5b726dd12fb6688f04db37ce0d2883d7ce4ac44b47044c2fda6c2608768b29c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `abde7ea7d91d95ab45513ea0db5fa4052dd2833d5c7ab316827145e714817288`
+#### `9ef56f9ab9b670e5667415661dec6bc9019bdf4403f5b414692fcb50ba4def37`
 
 ```dockerfile
 COPY file:feb0647ca0aed966d0a39a28c004b4bef364dd8d9d0509fa809465be6831e3ee in /
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:33 GMT
--	Parent Layer: `86f8a1034eb8deb40a7a1e3a59626fc61d9d6ba552339043670d8886bfb681e6`
+-	Created: Thu, 17 Dec 2015 18:19:21 GMT
+-	Parent Layer: `01c5af6ea4b929a82292c340e49e46d1e98930f971a791873bb9a36b99263437`
 -	Docker Version: 1.8.3
 -	Virtual Size: 695.0 B
 -	v2 Blob: `sha256:c86173a5f0385904afb9ad41c0bfbacac18be4c8b1456ddf44c6a9415c519291`
 -	v2 Content-Length: 465.0 B
 -	v2 Last-Modified: Tue, 24 Nov 2015 20:02:58 GMT
 
-#### `f4601601e57985d817832ac7f289e11a7de5d6029a7ffc5e986aa78242529dc7`
+#### `862a84cc866e94c16c0ae92b25bc8fb9067f26d90dd7cc5d43fe719c32f33a19`
 
 ```dockerfile
 EXPOSE 5601/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:34 GMT
--	Parent Layer: `abde7ea7d91d95ab45513ea0db5fa4052dd2833d5c7ab316827145e714817288`
+-	Created: Thu, 17 Dec 2015 18:19:22 GMT
+-	Parent Layer: `9ef56f9ab9b670e5667415661dec6bc9019bdf4403f5b414692fcb50ba4def37`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `847c8d46c6e1ba371839a45e33f3d2e5c36c74c77a48bc1286dade0c124337f2`
+#### `29529f6690f49715c9b89521cd50364446ea33cfd61c8f9f2b759491af027c73`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:34 GMT
--	Parent Layer: `f4601601e57985d817832ac7f289e11a7de5d6029a7ffc5e986aa78242529dc7`
+-	Created: Thu, 17 Dec 2015 18:19:22 GMT
+-	Parent Layer: `862a84cc866e94c16c0ae92b25bc8fb9067f26d90dd7cc5d43fe719c32f33a19`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `97c0a7047f3d51f6efab152f69d0a49f254528cb0b88f60b25cfe5b7ed81914f`
+#### `219da12bf72083578237f64db837889a2beee1e3433ebeb5ffba9e037ec56217`
 
 ```dockerfile
 CMD ["kibana"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:35 GMT
--	Parent Layer: `847c8d46c6e1ba371839a45e33f3d2e5c36c74c77a48bc1286dade0c124337f2`
+-	Created: Thu, 17 Dec 2015 18:19:23 GMT
+-	Parent Layer: `29529f6690f49715c9b89521cd50364446ea33cfd61c8f9f2b759491af027c73`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1974,11 +1974,11 @@ CMD ["kibana"]
 ## `kibana:latest`
 
 ```console
-$ docker pull library/kibana@sha256:bf9a55c12fd45d3e3508b94c2ae2d8e85bde0a7f6757dee0d0b307ee782092e4
+$ docker pull library/kibana@sha256:866380e0f8262d549b49ff53a15fee7aad55e337cb15b24e53cadf8d22181ce1
 ```
 
--	Total Virtual Size: 260.0 MB (259986630 bytes)
--	Total v2 Content-Length: 89.3 MB (89265328 bytes)
+-	Total Virtual Size: 259.8 MB (259806487 bytes)
+-	Total v2 Content-Length: 89.1 MB (89053726 bytes)
 
 ### Layers (14)
 
@@ -2071,13 +2071,13 @@ RUN arch="$(dpkg --print-architecture)" \
 -	v2 Content-Length: 654.4 KB (654435 bytes)
 -	v2 Last-Modified: Tue, 08 Dec 2015 01:37:54 GMT
 
-#### `759320f6f1892595fe988c076b03669419f46a6a65da101431876a009ee1fb89`
+#### `336d37ea490d452a002ff782c57383d774efca0d63ddc967c99e995347cee77b`
 
 ```dockerfile
-ENV KIBANA_VERSION=4.3.0
+ENV KIBANA_VERSION=4.3.1
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:21 GMT
+-	Created: Thu, 17 Dec 2015 18:19:08 GMT
 -	Parent Layer: `bf63ce2edf297afde5e73d01b4506d98c96faa25bdde17c511f01768c7d5dc9c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -2085,21 +2085,21 @@ ENV KIBANA_VERSION=4.3.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9f84fcc806b41eeaf7567fa970d35f54d930c3813e1e069542594dd2a7f98dc8`
+#### `fd36f449013ee60cf0ff7ba17276d9949a6ebcaff8f5d486e71d67e873a6ca28`
 
 ```dockerfile
-ENV KIBANA_SHA1=d64e1fc0ddeaaab85e168177de6c78ed82bb3a3b
+ENV KIBANA_SHA1=115ba22882df75eb5f07330b7ad8781a57569b00
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:21 GMT
--	Parent Layer: `759320f6f1892595fe988c076b03669419f46a6a65da101431876a009ee1fb89`
+-	Created: Thu, 17 Dec 2015 18:19:09 GMT
+-	Parent Layer: `336d37ea490d452a002ff782c57383d774efca0d63ddc967c99e995347cee77b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `92ee6c5f8934625f6147674a3ed8c73c57d33f504a7c79bb695170363e62528e`
+#### `c5b726dd12fb6688f04db37ce0d2883d7ce4ac44b47044c2fda6c2608768b29c`
 
 ```dockerfile
 RUN set -x \
@@ -2111,78 +2111,78 @@ RUN set -x \
 	&& rm kibana.tar.gz
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:28 GMT
--	Parent Layer: `9f84fcc806b41eeaf7567fa970d35f54d930c3813e1e069542594dd2a7f98dc8`
+-	Created: Thu, 17 Dec 2015 18:19:16 GMT
+-	Parent Layer: `fd36f449013ee60cf0ff7ba17276d9949a6ebcaff8f5d486e71d67e873a6ca28`
 -	Docker Version: 1.8.3
--	Virtual Size: 118.1 MB (118105671 bytes)
--	v2 Blob: `sha256:9c86992817c588df95e236ccb57020dd5eaf17a1fac27921ca345d1b45d268c2`
--	v2 Content-Length: 30.6 MB (30627991 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:40:03 GMT
+-	Virtual Size: 117.9 MB (117925528 bytes)
+-	v2 Blob: `sha256:0bb43946d321accb86c01ff9121b7e9710d11a5fd1f11508610a81e7135de361`
+-	v2 Content-Length: 30.4 MB (30416389 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 18:24:59 GMT
 
-#### `86f8a1034eb8deb40a7a1e3a59626fc61d9d6ba552339043670d8886bfb681e6`
+#### `01c5af6ea4b929a82292c340e49e46d1e98930f971a791873bb9a36b99263437`
 
 ```dockerfile
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:33 GMT
--	Parent Layer: `92ee6c5f8934625f6147674a3ed8c73c57d33f504a7c79bb695170363e62528e`
+-	Created: Thu, 17 Dec 2015 18:19:20 GMT
+-	Parent Layer: `c5b726dd12fb6688f04db37ce0d2883d7ce4ac44b47044c2fda6c2608768b29c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `abde7ea7d91d95ab45513ea0db5fa4052dd2833d5c7ab316827145e714817288`
+#### `9ef56f9ab9b670e5667415661dec6bc9019bdf4403f5b414692fcb50ba4def37`
 
 ```dockerfile
 COPY file:feb0647ca0aed966d0a39a28c004b4bef364dd8d9d0509fa809465be6831e3ee in /
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:33 GMT
--	Parent Layer: `86f8a1034eb8deb40a7a1e3a59626fc61d9d6ba552339043670d8886bfb681e6`
+-	Created: Thu, 17 Dec 2015 18:19:21 GMT
+-	Parent Layer: `01c5af6ea4b929a82292c340e49e46d1e98930f971a791873bb9a36b99263437`
 -	Docker Version: 1.8.3
 -	Virtual Size: 695.0 B
 -	v2 Blob: `sha256:c86173a5f0385904afb9ad41c0bfbacac18be4c8b1456ddf44c6a9415c519291`
 -	v2 Content-Length: 465.0 B
 -	v2 Last-Modified: Tue, 24 Nov 2015 20:02:58 GMT
 
-#### `f4601601e57985d817832ac7f289e11a7de5d6029a7ffc5e986aa78242529dc7`
+#### `862a84cc866e94c16c0ae92b25bc8fb9067f26d90dd7cc5d43fe719c32f33a19`
 
 ```dockerfile
 EXPOSE 5601/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:34 GMT
--	Parent Layer: `abde7ea7d91d95ab45513ea0db5fa4052dd2833d5c7ab316827145e714817288`
+-	Created: Thu, 17 Dec 2015 18:19:22 GMT
+-	Parent Layer: `9ef56f9ab9b670e5667415661dec6bc9019bdf4403f5b414692fcb50ba4def37`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `847c8d46c6e1ba371839a45e33f3d2e5c36c74c77a48bc1286dade0c124337f2`
+#### `29529f6690f49715c9b89521cd50364446ea33cfd61c8f9f2b759491af027c73`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:34 GMT
--	Parent Layer: `f4601601e57985d817832ac7f289e11a7de5d6029a7ffc5e986aa78242529dc7`
+-	Created: Thu, 17 Dec 2015 18:19:22 GMT
+-	Parent Layer: `862a84cc866e94c16c0ae92b25bc8fb9067f26d90dd7cc5d43fe719c32f33a19`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `97c0a7047f3d51f6efab152f69d0a49f254528cb0b88f60b25cfe5b7ed81914f`
+#### `219da12bf72083578237f64db837889a2beee1e3433ebeb5ffba9e037ec56217`
 
 ```dockerfile
 CMD ["kibana"]
 ```
 
--	Created: Sat, 05 Dec 2015 06:58:35 GMT
--	Parent Layer: `847c8d46c6e1ba371839a45e33f3d2e5c36c74c77a48bc1286dade0c124337f2`
+-	Created: Thu, 17 Dec 2015 18:19:23 GMT
+-	Parent Layer: `29529f6690f49715c9b89521cd50364446ea33cfd61c8f9f2b759491af027c73`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
