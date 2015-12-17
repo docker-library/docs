@@ -2169,20 +2169,490 @@ RUN set -x \
 
 ## `gcc:5.3.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull library/gcc@sha256:c8ca206905d45924702bbee38476f569b33e3985eda15a9b24217dac1eaef5d3
+```
+
+-	Total Virtual Size: 1.4 GB (1391492813 bytes)
+-	Total v2 Content-Length: 429.1 MB (429138724 bytes)
+
+### Layers (11)
+
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+
+```dockerfile
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+```
+
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 04 Dec 2015 19:32:32 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 44.3 MB (44293503 bytes)
+-	v2 Blob: `sha256:816152842605fe3ede1dc7c47f33e641f74cb4ae0d5c51a6c19cc8d85da934f3`
+-	v2 Content-Length: 18.5 MB (18528629 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:56:45 GMT
+
+#### `80887d1455318f25f3adaee1f9a584a3482ccec4b2a17d8891066d214c241da1`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+				procps \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 04 Dec 2015 19:33:37 GMT
+-	Parent Layer: `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+-	Docker Version: 1.8.3
+-	Virtual Size: 122.2 MB (122249827 bytes)
+-	v2 Blob: `sha256:5dcab2c7e430ea37e464f192c3e1b05476e4378af0ad362d932e03921b59c972`
+-	v2 Content-Length: 42.3 MB (42324527 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:58:25 GMT
+
+#### `efccf6dd12d43929909fd40d5847de568bbb6bc1250d4cdd60424c4b04356bd8`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		autoconf \
+		automake \
+		bzip2 \
+		file \
+		g++ \
+		gcc \
+		imagemagick \
+		libbz2-dev \
+		libc6-dev \
+		libcurl4-openssl-dev \
+		libevent-dev \
+		libffi-dev \
+		libgeoip-dev \
+		libglib2.0-dev \
+		libjpeg-dev \
+		liblzma-dev \
+		libmagickcore-dev \
+		libmagickwand-dev \
+		libmysqlclient-dev \
+		libncurses-dev \
+		libpng-dev \
+		libpq-dev \
+		libreadline-dev \
+		libsqlite3-dev \
+		libssl-dev \
+		libtool \
+		libwebp-dev \
+		libxml2-dev \
+		libxslt-dev \
+		libyaml-dev \
+		make \
+		patch \
+		xz-utils \
+		zlib1g-dev \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 04 Dec 2015 19:35:34 GMT
+-	Parent Layer: `80887d1455318f25f3adaee1f9a584a3482ccec4b2a17d8891066d214c241da1`
+-	Docker Version: 1.8.3
+-	Virtual Size: 314.6 MB (314626319 bytes)
+-	v2 Blob: `sha256:dc54ada22a60efb50d419685f87d5d5f43572ac73e1596e94bbbb08b2aab42a4`
+-	v2 Content-Length: 128.6 MB (128553751 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:59:57 GMT
+
+#### `baa524de0848c1b8854d06860e32613138c95b08f07c8de0709ee9eb2a164fdd`
+
+```dockerfile
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06
+```
+
+-	Created: Sat, 05 Dec 2015 16:33:04 GMT
+-	Parent Layer: `efccf6dd12d43929909fd40d5847de568bbb6bc1250d4cdd60424c4b04356bd8`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `50c4e33566cafab86ee79cbb67b4433352d76e5ede30b3e6652ecf8294918e8d`
+
+```dockerfile
+RUN set -xe \
+	&& for key in $GPG_KEYS; do \
+		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
+	done
+```
+
+-	Created: Sat, 05 Dec 2015 16:33:11 GMT
+-	Parent Layer: `baa524de0848c1b8854d06860e32613138c95b08f07c8de0709ee9eb2a164fdd`
+-	Docker Version: 1.8.3
+-	Virtual Size: 140.2 KB (140198 bytes)
+-	v2 Blob: `sha256:1755ccf1ce37c1315b977d699c5f1ca8c4cd3adab07d21c864e34054643664e8`
+-	v2 Content-Length: 97.8 KB (97750 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 22:44:29 GMT
+
+#### `b4ef1a8e14e02672515774a28dab96dfed359051d92869cfe53b5b57b133f113`
+
+```dockerfile
+ENV GCC_VERSION=5.3.0
+```
+
+-	Created: Wed, 16 Dec 2015 21:31:58 GMT
+-	Parent Layer: `50c4e33566cafab86ee79cbb67b4433352d76e5ede30b3e6652ecf8294918e8d`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `d8db74cb4cb02f199524ae2cc60fe0aeef435d4aaf36ecf592072a8b31dc7161`
+
+```dockerfile
+RUN buildDeps='flex' \
+	&& set -x \
+	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
+	&& rm -r /var/lib/apt/lists/* \
+	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 \
+	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig \
+	&& gpg --verify gcc.tar.bz2.sig \
+	&& mkdir -p /usr/src/gcc \
+	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 \
+	&& rm gcc.tar.bz2* \
+	&& cd /usr/src/gcc \
+	&& ./contrib/download_prerequisites \
+	&& { rm *.tar.* || true; } \
+	&& dir="$(mktemp -d)" \
+	&& cd "$dir" \
+	&& /usr/src/gcc/configure \
+		--disable-multilib \
+		--enable-languages=c,c++,go \
+	&& make -j"$(nproc)" \
+	&& make install-strip \
+	&& cd .. \
+	&& rm -rf "$dir" \
+	&& apt-get purge -y --auto-remove $buildDeps
+```
+
+-	Created: Wed, 16 Dec 2015 22:39:05 GMT
+-	Parent Layer: `b4ef1a8e14e02672515774a28dab96dfed359051d92869cfe53b5b57b133f113`
+-	Docker Version: 1.8.3
+-	Virtual Size: 785.0 MB (785008095 bytes)
+-	v2 Blob: `sha256:6b46c7f2f1e54b45812ccc4cb33558ef86349429ecfe687cf29f65a5e56b6d74`
+-	v2 Content-Length: 188.3 MB (188267400 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:50:07 GMT
+
+#### `cc06c363a22f8cb030c8744036f7d560484c99ca70bb22ce175eb99b87bca6ad`
+
+```dockerfile
+RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf \
+	&& ldconfig -v
+```
+
+-	Created: Wed, 16 Dec 2015 22:40:25 GMT
+-	Parent Layer: `d8db74cb4cb02f199524ae2cc60fe0aeef435d4aaf36ecf592072a8b31dc7161`
+-	Docker Version: 1.8.3
+-	Virtual Size: 49.6 KB (49605 bytes)
+-	v2 Blob: `sha256:3bb46e2aaf4586dbd6652c6e8149b2c0a428cd046e1c5b1665dba851234d3724`
+-	v2 Content-Length: 10.5 KB (10503 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:47:50 GMT
+
+#### `e766ec7f0d32124e4932313d24d16c5950fd5b6af9e8a2775fa23c4e6ef270e9`
+
+```dockerfile
+RUN set -x \
+	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc \
+	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ \
+	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
+```
+
+-	Created: Wed, 16 Dec 2015 22:40:27 GMT
+-	Parent Layer: `cc06c363a22f8cb030c8744036f7d560484c99ca70bb22ce175eb99b87bca6ad`
+-	Docker Version: 1.8.3
+-	Virtual Size: 10.0 KB (9999 bytes)
+-	v2 Blob: `sha256:4a016c6ca5cfb381af9184043d6968604f500d781712ff63b937d9fa9894cf62`
+-	v2 Content-Length: 1.8 KB (1812 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:47:46 GMT
 
 ## `gcc:5.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull library/gcc@sha256:d06c5c49b76fc326012c6029fa49352b6bd3a282663e398a92aa2b88cd359b20
+```
+
+-	Total Virtual Size: 1.4 GB (1391492813 bytes)
+-	Total v2 Content-Length: 429.1 MB (429138724 bytes)
+
+### Layers (11)
+
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+
+```dockerfile
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+```
+
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 04 Dec 2015 19:32:32 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 44.3 MB (44293503 bytes)
+-	v2 Blob: `sha256:816152842605fe3ede1dc7c47f33e641f74cb4ae0d5c51a6c19cc8d85da934f3`
+-	v2 Content-Length: 18.5 MB (18528629 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:56:45 GMT
+
+#### `80887d1455318f25f3adaee1f9a584a3482ccec4b2a17d8891066d214c241da1`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+				procps \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 04 Dec 2015 19:33:37 GMT
+-	Parent Layer: `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+-	Docker Version: 1.8.3
+-	Virtual Size: 122.2 MB (122249827 bytes)
+-	v2 Blob: `sha256:5dcab2c7e430ea37e464f192c3e1b05476e4378af0ad362d932e03921b59c972`
+-	v2 Content-Length: 42.3 MB (42324527 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:58:25 GMT
+
+#### `efccf6dd12d43929909fd40d5847de568bbb6bc1250d4cdd60424c4b04356bd8`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		autoconf \
+		automake \
+		bzip2 \
+		file \
+		g++ \
+		gcc \
+		imagemagick \
+		libbz2-dev \
+		libc6-dev \
+		libcurl4-openssl-dev \
+		libevent-dev \
+		libffi-dev \
+		libgeoip-dev \
+		libglib2.0-dev \
+		libjpeg-dev \
+		liblzma-dev \
+		libmagickcore-dev \
+		libmagickwand-dev \
+		libmysqlclient-dev \
+		libncurses-dev \
+		libpng-dev \
+		libpq-dev \
+		libreadline-dev \
+		libsqlite3-dev \
+		libssl-dev \
+		libtool \
+		libwebp-dev \
+		libxml2-dev \
+		libxslt-dev \
+		libyaml-dev \
+		make \
+		patch \
+		xz-utils \
+		zlib1g-dev \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Fri, 04 Dec 2015 19:35:34 GMT
+-	Parent Layer: `80887d1455318f25f3adaee1f9a584a3482ccec4b2a17d8891066d214c241da1`
+-	Docker Version: 1.8.3
+-	Virtual Size: 314.6 MB (314626319 bytes)
+-	v2 Blob: `sha256:dc54ada22a60efb50d419685f87d5d5f43572ac73e1596e94bbbb08b2aab42a4`
+-	v2 Content-Length: 128.6 MB (128553751 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:59:57 GMT
+
+#### `baa524de0848c1b8854d06860e32613138c95b08f07c8de0709ee9eb2a164fdd`
+
+```dockerfile
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06
+```
+
+-	Created: Sat, 05 Dec 2015 16:33:04 GMT
+-	Parent Layer: `efccf6dd12d43929909fd40d5847de568bbb6bc1250d4cdd60424c4b04356bd8`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `50c4e33566cafab86ee79cbb67b4433352d76e5ede30b3e6652ecf8294918e8d`
+
+```dockerfile
+RUN set -xe \
+	&& for key in $GPG_KEYS; do \
+		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
+	done
+```
+
+-	Created: Sat, 05 Dec 2015 16:33:11 GMT
+-	Parent Layer: `baa524de0848c1b8854d06860e32613138c95b08f07c8de0709ee9eb2a164fdd`
+-	Docker Version: 1.8.3
+-	Virtual Size: 140.2 KB (140198 bytes)
+-	v2 Blob: `sha256:1755ccf1ce37c1315b977d699c5f1ca8c4cd3adab07d21c864e34054643664e8`
+-	v2 Content-Length: 97.8 KB (97750 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 22:44:29 GMT
+
+#### `b4ef1a8e14e02672515774a28dab96dfed359051d92869cfe53b5b57b133f113`
+
+```dockerfile
+ENV GCC_VERSION=5.3.0
+```
+
+-	Created: Wed, 16 Dec 2015 21:31:58 GMT
+-	Parent Layer: `50c4e33566cafab86ee79cbb67b4433352d76e5ede30b3e6652ecf8294918e8d`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `d8db74cb4cb02f199524ae2cc60fe0aeef435d4aaf36ecf592072a8b31dc7161`
+
+```dockerfile
+RUN buildDeps='flex' \
+	&& set -x \
+	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends \
+	&& rm -r /var/lib/apt/lists/* \
+	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 \
+	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig \
+	&& gpg --verify gcc.tar.bz2.sig \
+	&& mkdir -p /usr/src/gcc \
+	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 \
+	&& rm gcc.tar.bz2* \
+	&& cd /usr/src/gcc \
+	&& ./contrib/download_prerequisites \
+	&& { rm *.tar.* || true; } \
+	&& dir="$(mktemp -d)" \
+	&& cd "$dir" \
+	&& /usr/src/gcc/configure \
+		--disable-multilib \
+		--enable-languages=c,c++,go \
+	&& make -j"$(nproc)" \
+	&& make install-strip \
+	&& cd .. \
+	&& rm -rf "$dir" \
+	&& apt-get purge -y --auto-remove $buildDeps
+```
+
+-	Created: Wed, 16 Dec 2015 22:39:05 GMT
+-	Parent Layer: `b4ef1a8e14e02672515774a28dab96dfed359051d92869cfe53b5b57b133f113`
+-	Docker Version: 1.8.3
+-	Virtual Size: 785.0 MB (785008095 bytes)
+-	v2 Blob: `sha256:6b46c7f2f1e54b45812ccc4cb33558ef86349429ecfe687cf29f65a5e56b6d74`
+-	v2 Content-Length: 188.3 MB (188267400 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:50:07 GMT
+
+#### `cc06c363a22f8cb030c8744036f7d560484c99ca70bb22ce175eb99b87bca6ad`
+
+```dockerfile
+RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf \
+	&& ldconfig -v
+```
+
+-	Created: Wed, 16 Dec 2015 22:40:25 GMT
+-	Parent Layer: `d8db74cb4cb02f199524ae2cc60fe0aeef435d4aaf36ecf592072a8b31dc7161`
+-	Docker Version: 1.8.3
+-	Virtual Size: 49.6 KB (49605 bytes)
+-	v2 Blob: `sha256:3bb46e2aaf4586dbd6652c6e8149b2c0a428cd046e1c5b1665dba851234d3724`
+-	v2 Content-Length: 10.5 KB (10503 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:47:50 GMT
+
+#### `e766ec7f0d32124e4932313d24d16c5950fd5b6af9e8a2775fa23c4e6ef270e9`
+
+```dockerfile
+RUN set -x \
+	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc \
+	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ \
+	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
+```
+
+-	Created: Wed, 16 Dec 2015 22:40:27 GMT
+-	Parent Layer: `cc06c363a22f8cb030c8744036f7d560484c99ca70bb22ce175eb99b87bca6ad`
+-	Docker Version: 1.8.3
+-	Virtual Size: 10.0 KB (9999 bytes)
+-	v2 Blob: `sha256:4a016c6ca5cfb381af9184043d6968604f500d781712ff63b937d9fa9894cf62`
+-	v2 Content-Length: 1.8 KB (1812 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:47:46 GMT
 
 ## `gcc:5`
 
 ```console
-$ docker pull library/gcc@sha256:aa633ce521fc85aacdf60b4bb10b51c92c95259b83b278fdad966085bab80c49
+$ docker pull library/gcc@sha256:ea3028d3848167cf5eee9ad8ed7493c588f7705c6a089e7ffb3434e5f94b4543
 ```
 
--	Total Virtual Size: 1.4 GB (1388418797 bytes)
--	Total v2 Content-Length: 428.5 MB (428488404 bytes)
+-	Total Virtual Size: 1.4 GB (1391492813 bytes)
+-	Total v2 Content-Length: 429.1 MB (429138724 bytes)
 
 ### Layers (11)
 
@@ -2332,13 +2802,13 @@ RUN set -xe \
 -	v2 Content-Length: 97.8 KB (97750 bytes)
 -	v2 Last-Modified: Mon, 07 Dec 2015 22:44:29 GMT
 
-#### `e0a82e650eb44f47bf4808c5307d99fa0e6c78f9105a8d2151c5552227cbc014`
+#### `b4ef1a8e14e02672515774a28dab96dfed359051d92869cfe53b5b57b133f113`
 
 ```dockerfile
-ENV GCC_VERSION=5.2.0
+ENV GCC_VERSION=5.3.0
 ```
 
--	Created: Sat, 05 Dec 2015 16:33:11 GMT
+-	Created: Wed, 16 Dec 2015 21:31:58 GMT
 -	Parent Layer: `50c4e33566cafab86ee79cbb67b4433352d76e5ede30b3e6652ecf8294918e8d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -2346,7 +2816,7 @@ ENV GCC_VERSION=5.2.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `31cb62d74935070a196f235ce98950944ff2b2b98180568201147d48d226bf7e`
+#### `d8db74cb4cb02f199524ae2cc60fe0aeef435d4aaf36ecf592072a8b31dc7161`
 
 ```dockerfile
 RUN buildDeps='flex' \
@@ -2374,30 +2844,30 @@ RUN buildDeps='flex' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 17:40:30 GMT
--	Parent Layer: `e0a82e650eb44f47bf4808c5307d99fa0e6c78f9105a8d2151c5552227cbc014`
+-	Created: Wed, 16 Dec 2015 22:39:05 GMT
+-	Parent Layer: `b4ef1a8e14e02672515774a28dab96dfed359051d92869cfe53b5b57b133f113`
 -	Docker Version: 1.8.3
--	Virtual Size: 781.9 MB (781934079 bytes)
--	v2 Blob: `sha256:3164d2cc753ae1b9f86785aa1f1301ec9b855f3c448245e2031c222cbc6f1f7b`
--	v2 Content-Length: 187.6 MB (187617073 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 22:44:16 GMT
+-	Virtual Size: 785.0 MB (785008095 bytes)
+-	v2 Blob: `sha256:6b46c7f2f1e54b45812ccc4cb33558ef86349429ecfe687cf29f65a5e56b6d74`
+-	v2 Content-Length: 188.3 MB (188267400 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:50:07 GMT
 
-#### `e1b3dd28077e7e3e2890d7ff3c873670281b078dd18cde7fc007b7bc50bf2701`
+#### `cc06c363a22f8cb030c8744036f7d560484c99ca70bb22ce175eb99b87bca6ad`
 
 ```dockerfile
 RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf \
 	&& ldconfig -v
 ```
 
--	Created: Sat, 05 Dec 2015 17:41:49 GMT
--	Parent Layer: `31cb62d74935070a196f235ce98950944ff2b2b98180568201147d48d226bf7e`
+-	Created: Wed, 16 Dec 2015 22:40:25 GMT
+-	Parent Layer: `d8db74cb4cb02f199524ae2cc60fe0aeef435d4aaf36ecf592072a8b31dc7161`
 -	Docker Version: 1.8.3
 -	Virtual Size: 49.6 KB (49605 bytes)
--	v2 Blob: `sha256:168c0522684f76e334c7861b4a61d5dff1d7f8a0ccad9b3c2869eebf4eec5a0e`
--	v2 Content-Length: 10.5 KB (10507 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 22:41:40 GMT
+-	v2 Blob: `sha256:3bb46e2aaf4586dbd6652c6e8149b2c0a428cd046e1c5b1665dba851234d3724`
+-	v2 Content-Length: 10.5 KB (10503 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:47:50 GMT
 
-#### `b2399b803cf168c7ea0840bf77c6a8fc6712d645a3c8348cc0f0914eab414b77`
+#### `e766ec7f0d32124e4932313d24d16c5950fd5b6af9e8a2775fa23c4e6ef270e9`
 
 ```dockerfile
 RUN set -x \
@@ -2406,22 +2876,22 @@ RUN set -x \
 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
 ```
 
--	Created: Sat, 05 Dec 2015 17:41:51 GMT
--	Parent Layer: `e1b3dd28077e7e3e2890d7ff3c873670281b078dd18cde7fc007b7bc50bf2701`
+-	Created: Wed, 16 Dec 2015 22:40:27 GMT
+-	Parent Layer: `cc06c363a22f8cb030c8744036f7d560484c99ca70bb22ce175eb99b87bca6ad`
 -	Docker Version: 1.8.3
 -	Virtual Size: 10.0 KB (9999 bytes)
--	v2 Blob: `sha256:b23cc28225cbcd89533cfbdc92dd9a7f1e81b036d33b8bb45ce76c77bc46bdea`
--	v2 Content-Length: 1.8 KB (1815 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 22:41:36 GMT
+-	v2 Blob: `sha256:4a016c6ca5cfb381af9184043d6968604f500d781712ff63b937d9fa9894cf62`
+-	v2 Content-Length: 1.8 KB (1812 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:47:46 GMT
 
 ## `gcc:latest`
 
 ```console
-$ docker pull library/gcc@sha256:331fa0f6132a54f04a385f293b3f1f229c1f8a379955c0323eb86c9514d7dfa1
+$ docker pull library/gcc@sha256:a0d3e7ab93808a0a148241a2b4b8c09c62b8f660814b87b990ea79513acb30df
 ```
 
--	Total Virtual Size: 1.4 GB (1388418797 bytes)
--	Total v2 Content-Length: 428.5 MB (428488404 bytes)
+-	Total Virtual Size: 1.4 GB (1391492813 bytes)
+-	Total v2 Content-Length: 429.1 MB (429138724 bytes)
 
 ### Layers (11)
 
@@ -2571,13 +3041,13 @@ RUN set -xe \
 -	v2 Content-Length: 97.8 KB (97750 bytes)
 -	v2 Last-Modified: Mon, 07 Dec 2015 22:44:29 GMT
 
-#### `e0a82e650eb44f47bf4808c5307d99fa0e6c78f9105a8d2151c5552227cbc014`
+#### `b4ef1a8e14e02672515774a28dab96dfed359051d92869cfe53b5b57b133f113`
 
 ```dockerfile
-ENV GCC_VERSION=5.2.0
+ENV GCC_VERSION=5.3.0
 ```
 
--	Created: Sat, 05 Dec 2015 16:33:11 GMT
+-	Created: Wed, 16 Dec 2015 21:31:58 GMT
 -	Parent Layer: `50c4e33566cafab86ee79cbb67b4433352d76e5ede30b3e6652ecf8294918e8d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -2585,7 +3055,7 @@ ENV GCC_VERSION=5.2.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `31cb62d74935070a196f235ce98950944ff2b2b98180568201147d48d226bf7e`
+#### `d8db74cb4cb02f199524ae2cc60fe0aeef435d4aaf36ecf592072a8b31dc7161`
 
 ```dockerfile
 RUN buildDeps='flex' \
@@ -2613,30 +3083,30 @@ RUN buildDeps='flex' \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 17:40:30 GMT
--	Parent Layer: `e0a82e650eb44f47bf4808c5307d99fa0e6c78f9105a8d2151c5552227cbc014`
+-	Created: Wed, 16 Dec 2015 22:39:05 GMT
+-	Parent Layer: `b4ef1a8e14e02672515774a28dab96dfed359051d92869cfe53b5b57b133f113`
 -	Docker Version: 1.8.3
--	Virtual Size: 781.9 MB (781934079 bytes)
--	v2 Blob: `sha256:3164d2cc753ae1b9f86785aa1f1301ec9b855f3c448245e2031c222cbc6f1f7b`
--	v2 Content-Length: 187.6 MB (187617073 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 22:44:16 GMT
+-	Virtual Size: 785.0 MB (785008095 bytes)
+-	v2 Blob: `sha256:6b46c7f2f1e54b45812ccc4cb33558ef86349429ecfe687cf29f65a5e56b6d74`
+-	v2 Content-Length: 188.3 MB (188267400 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:50:07 GMT
 
-#### `e1b3dd28077e7e3e2890d7ff3c873670281b078dd18cde7fc007b7bc50bf2701`
+#### `cc06c363a22f8cb030c8744036f7d560484c99ca70bb22ce175eb99b87bca6ad`
 
 ```dockerfile
 RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf \
 	&& ldconfig -v
 ```
 
--	Created: Sat, 05 Dec 2015 17:41:49 GMT
--	Parent Layer: `31cb62d74935070a196f235ce98950944ff2b2b98180568201147d48d226bf7e`
+-	Created: Wed, 16 Dec 2015 22:40:25 GMT
+-	Parent Layer: `d8db74cb4cb02f199524ae2cc60fe0aeef435d4aaf36ecf592072a8b31dc7161`
 -	Docker Version: 1.8.3
 -	Virtual Size: 49.6 KB (49605 bytes)
--	v2 Blob: `sha256:168c0522684f76e334c7861b4a61d5dff1d7f8a0ccad9b3c2869eebf4eec5a0e`
--	v2 Content-Length: 10.5 KB (10507 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 22:41:40 GMT
+-	v2 Blob: `sha256:3bb46e2aaf4586dbd6652c6e8149b2c0a428cd046e1c5b1665dba851234d3724`
+-	v2 Content-Length: 10.5 KB (10503 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:47:50 GMT
 
-#### `b2399b803cf168c7ea0840bf77c6a8fc6712d645a3c8348cc0f0914eab414b77`
+#### `e766ec7f0d32124e4932313d24d16c5950fd5b6af9e8a2775fa23c4e6ef270e9`
 
 ```dockerfile
 RUN set -x \
@@ -2645,10 +3115,10 @@ RUN set -x \
 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
 ```
 
--	Created: Sat, 05 Dec 2015 17:41:51 GMT
--	Parent Layer: `e1b3dd28077e7e3e2890d7ff3c873670281b078dd18cde7fc007b7bc50bf2701`
+-	Created: Wed, 16 Dec 2015 22:40:27 GMT
+-	Parent Layer: `cc06c363a22f8cb030c8744036f7d560484c99ca70bb22ce175eb99b87bca6ad`
 -	Docker Version: 1.8.3
 -	Virtual Size: 10.0 KB (9999 bytes)
--	v2 Blob: `sha256:b23cc28225cbcd89533cfbdc92dd9a7f1e81b036d33b8bb45ce76c77bc46bdea`
--	v2 Content-Length: 1.8 KB (1815 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 22:41:36 GMT
+-	v2 Blob: `sha256:4a016c6ca5cfb381af9184043d6968604f500d781712ff63b937d9fa9894cf62`
+-	v2 Content-Length: 1.8 KB (1812 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 02:47:46 GMT
