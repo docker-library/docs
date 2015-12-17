@@ -12,10 +12,10 @@
 -	[`4.2.3-onbuild`, `4.2-onbuild`, `4-onbuild`, `argon-onbuild` (*4.2/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/bb89224e0f2572e4894c50abfa8174ca65d6b28f/4.2/onbuild/Dockerfile)
 -	[`4.2.3-slim`, `4.2-slim`, `4-slim`, `argon-slim` (*4.2/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/bb89224e0f2572e4894c50abfa8174ca65d6b28f/4.2/slim/Dockerfile)
 -	[`4.2.3-wheezy`, `4.2-wheezy`, `4-wheezy`, `argon-wheezy` (*4.2/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/bb89224e0f2572e4894c50abfa8174ca65d6b28f/4.2/wheezy/Dockerfile)
--	[`5.2.0`, `5.2`, `5`, `latest` (*5.2/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5d433ece4d221fac7e38efbec25ffea2dea56286/5.2/Dockerfile)
--	[`5.2.0-onbuild`, `5.2-onbuild`, `5-onbuild`, `onbuild` (*5.2/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5d433ece4d221fac7e38efbec25ffea2dea56286/5.2/onbuild/Dockerfile)
--	[`5.2.0-slim`, `5.2-slim`, `5-slim`, `slim` (*5.2/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5d433ece4d221fac7e38efbec25ffea2dea56286/5.2/slim/Dockerfile)
--	[`5.2.0-wheezy`, `5.2-wheezy`, `5-wheezy`, `wheezy` (*5.2/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/5d433ece4d221fac7e38efbec25ffea2dea56286/5.2/wheezy/Dockerfile)
+-	[`5.3.0`, `5.3`, `5`, `latest` (*5.3/Dockerfile*)](https://github.com/nodejs/docker-node/blob/87993b5bb5b47a6dfc9f27b553406a4cb60f7050/5.3/Dockerfile)
+-	[`5.3.0-onbuild`, `5.3-onbuild`, `5-onbuild`, `onbuild` (*5.3/onbuild/Dockerfile*)](https://github.com/nodejs/docker-node/blob/87993b5bb5b47a6dfc9f27b553406a4cb60f7050/5.3/onbuild/Dockerfile)
+-	[`5.3.0-slim`, `5.3-slim`, `5-slim`, `slim` (*5.3/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/87993b5bb5b47a6dfc9f27b553406a4cb60f7050/5.3/slim/Dockerfile)
+-	[`5.3.0-wheezy`, `5.3-wheezy`, `5-wheezy`, `wheezy` (*5.3/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/87993b5bb5b47a6dfc9f27b553406a4cb60f7050/5.3/wheezy/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
