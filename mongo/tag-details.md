@@ -1546,16 +1546,12 @@ CMD ["mongod"]
 
 ## `mongo:3.0.8`
 
-**does not exist** (yet?)
-
-## `mongo:3.0`
-
 ```console
-$ docker pull library/mongo@sha256:9d2abf842572d36bd18c68162b151c0692b652d0479a35207e0327b3c22c4d94
+$ docker pull library/mongo@sha256:b6cc2cf296ac8914a7cb8467771b86285d3edad472ecf637683b78dd6ffdd1a7
 ```
 
--	Total Virtual Size: 261.6 MB (261570547 bytes)
--	Total v2 Content-Length: 95.8 MB (95752508 bytes)
+-	Total Virtual Size: 261.1 MB (261103420 bytes)
+-	Total v2 Content-Length: 95.9 MB (95908125 bytes)
 
 ### Layers (17)
 
@@ -1678,13 +1674,13 @@ ENV MONGO_MAJOR=3.0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b203ee64007316392a7d3ab0298fc17c162b14d9defa24c325592153bce91933`
+#### `2fd4518afe733a646503bd2bd95a68d92ec0507653274eb9142d1aac49999bb1`
 
 ```dockerfile
-ENV MONGO_VERSION=3.0.7
+ENV MONGO_VERSION=3.0.8
 ```
 
--	Created: Sat, 05 Dec 2015 07:13:25 GMT
+-	Created: Wed, 16 Dec 2015 23:19:49 GMT
 -	Parent Layer: `24e722b6885137ed39a3e3bbe8448435ef06a78a89100f29ac7396829935fced`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -1692,21 +1688,21 @@ ENV MONGO_VERSION=3.0.7
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3ab8dbb36176619626340c03ad94fa1aa5f63618be7cadbb86d245dae3106922`
+#### `859260ab16a262d8b7e32e2c9a78a7d141fbbb4621997d236ce2b616ca8e473b`
 
 ```dockerfile
 RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
 ```
 
--	Created: Sat, 05 Dec 2015 07:13:26 GMT
--	Parent Layer: `b203ee64007316392a7d3ab0298fc17c162b14d9defa24c325592153bce91933`
+-	Created: Wed, 16 Dec 2015 23:19:50 GMT
+-	Parent Layer: `2fd4518afe733a646503bd2bd95a68d92ec0507653274eb9142d1aac49999bb1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 67.0 B
--	v2 Blob: `sha256:b1d5c78e50505774eae0f2546dcb1391c274381e2b9ad747b0fd76b0f4312345`
--	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Tue, 08 Dec 2015 02:31:37 GMT
+-	v2 Blob: `sha256:3dc5968d14e151b566e0f64e5d33456ebc9439106b5996ba8563b498b8bd9a39`
+-	v2 Content-Length: 227.0 B
+-	v2 Last-Modified: Thu, 17 Dec 2015 03:14:34 GMT
 
-#### `42eb4a8c099c487ee8c3baa62077b80bbc6d7356f144cc0978056f8ab719fcf4`
+#### `dbebfbbeee469ea6cfd8c70982447a7418ed9c11f60408afda1b0672a5a3a9bc`
 
 ```dockerfile
 RUN set -x \
@@ -1722,92 +1718,358 @@ RUN set -x \
 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
 ```
 
--	Created: Sat, 05 Dec 2015 07:13:39 GMT
--	Parent Layer: `3ab8dbb36176619626340c03ad94fa1aa5f63618be7cadbb86d245dae3106922`
+-	Created: Wed, 16 Dec 2015 23:19:59 GMT
+-	Parent Layer: `859260ab16a262d8b7e32e2c9a78a7d141fbbb4621997d236ce2b616ca8e473b`
 -	Docker Version: 1.8.3
--	Virtual Size: 161.0 MB (161017738 bytes)
--	v2 Blob: `sha256:bcbf30bf1934b11038e12287535bc222582a5358ae30e1e3b5ab2c1d8a3a86d3`
--	v2 Content-Length: 51.6 MB (51619873 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 02:31:33 GMT
+-	Virtual Size: 160.6 MB (160550611 bytes)
+-	v2 Blob: `sha256:1f48beadab071b6a07a5722e555c1d8d6b3381e2ec51d33fc9ff2dd3f2ab2244`
+-	v2 Content-Length: 51.8 MB (51775487 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 03:14:30 GMT
 
-#### `c3fe31da84f2d1445af499b09ec73e63430777b4193d3e78a57726c94430d70d`
+#### `5cd2fbac6d2dcd23c4c004476077e0446ad624cb26271bf8d77088c0fdcad4b6`
 
 ```dockerfile
 RUN mkdir -p /data/db && chown -R mongodb:mongodb /data/db
 ```
 
--	Created: Sat, 05 Dec 2015 07:13:42 GMT
--	Parent Layer: `42eb4a8c099c487ee8c3baa62077b80bbc6d7356f144cc0978056f8ab719fcf4`
+-	Created: Wed, 16 Dec 2015 23:20:01 GMT
+-	Parent Layer: `dbebfbbeee469ea6cfd8c70982447a7418ed9c11f60408afda1b0672a5a3a9bc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:d0450bc5c6c8da6e4c2772f1722d16dc197a1390e0182b0b156da73be6decb02`
+-	v2 Blob: `sha256:723a6387d6b5e1286dab51c03cebcf55c8435d410a4da5c65c1cebdad8368406`
 -	v2 Content-Length: 117.0 B
--	v2 Last-Modified: Tue, 08 Dec 2015 02:31:03 GMT
+-	v2 Last-Modified: Thu, 17 Dec 2015 03:14:00 GMT
 
-#### `86e5fca13db99f4b7ed1d52b4dc8ef328aefc7e8930607bca79625af7956e83c`
+#### `9041621b83607c826290c552365ad04b64693383893c12229e71732acabc9a30`
 
 ```dockerfile
 VOLUME [/data/db]
 ```
 
--	Created: Sat, 05 Dec 2015 07:13:42 GMT
--	Parent Layer: `c3fe31da84f2d1445af499b09ec73e63430777b4193d3e78a57726c94430d70d`
+-	Created: Wed, 16 Dec 2015 23:20:02 GMT
+-	Parent Layer: `5cd2fbac6d2dcd23c4c004476077e0446ad624cb26271bf8d77088c0fdcad4b6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3cc10c25db6c85c245034b35c278c0bf938ea8663237089785c26ed8a90703f9`
+#### `6c3e2586221582979b358298785907e33b507773ec2eb4f735f9664e82c1f9fd`
 
 ```dockerfile
 COPY file:50ff82dffc60abfb55782f6a329b2ec2b9d2c20009f3be01968dcd4124c68df1 in /entrypoint.sh
 ```
 
--	Created: Sat, 05 Dec 2015 07:13:43 GMT
--	Parent Layer: `86e5fca13db99f4b7ed1d52b4dc8ef328aefc7e8930607bca79625af7956e83c`
+-	Created: Wed, 16 Dec 2015 23:20:02 GMT
+-	Parent Layer: `9041621b83607c826290c552365ad04b64693383893c12229e71732acabc9a30`
 -	Docker Version: 1.8.3
 -	Virtual Size: 261.0 B
 -	v2 Blob: `sha256:c185104550a90a870f46b57467797f10ab2fe95c3bdb00ee63f189c14fe6b7ee`
 -	v2 Content-Length: 272.0 B
 -	v2 Last-Modified: Tue, 07 Apr 2015 06:48:51 GMT
 
-#### `93676f03483d238a031530e9f2cce8780587749fe2055b6379ff0ed5ee065c1a`
+#### `a4c8f6cc30b0fddc50c7ed0161a4285804800732186e5cfd6a2722de63d2319a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Sat, 05 Dec 2015 07:13:43 GMT
--	Parent Layer: `3cc10c25db6c85c245034b35c278c0bf938ea8663237089785c26ed8a90703f9`
+-	Created: Wed, 16 Dec 2015 23:20:03 GMT
+-	Parent Layer: `6c3e2586221582979b358298785907e33b507773ec2eb4f735f9664e82c1f9fd`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `672e4a343db94ef56119f6f48ac5104dfbbe0b09ad12e92cf92fa05e695bc251`
+#### `0b0060559313974da0e84cbdfbf572db2fe1992166f2a2dacb75386df6e3345d`
 
 ```dockerfile
 EXPOSE 27017/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 07:13:44 GMT
--	Parent Layer: `93676f03483d238a031530e9f2cce8780587749fe2055b6379ff0ed5ee065c1a`
+-	Created: Wed, 16 Dec 2015 23:20:03 GMT
+-	Parent Layer: `a4c8f6cc30b0fddc50c7ed0161a4285804800732186e5cfd6a2722de63d2319a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6d40a8feeb98a1f83cc3d856e1d60c04a984970aba912fb5a90c44ca278a75f7`
+#### `c73d43c6cc0b1f97e1ef412aa7b041a2982a818be3e950a560ec27788ba1ca63`
 
 ```dockerfile
 CMD ["mongod"]
 ```
 
--	Created: Sat, 05 Dec 2015 07:13:44 GMT
--	Parent Layer: `672e4a343db94ef56119f6f48ac5104dfbbe0b09ad12e92cf92fa05e695bc251`
+-	Created: Wed, 16 Dec 2015 23:20:04 GMT
+-	Parent Layer: `0b0060559313974da0e84cbdfbf572db2fe1992166f2a2dacb75386df6e3345d`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `mongo:3.0`
+
+```console
+$ docker pull library/mongo@sha256:a5cc2fb4053c557df8a061c772039a0d5ee77612befa4021406ea3e3aad8a299
+```
+
+-	Total Virtual Size: 261.1 MB (261103420 bytes)
+-	Total v2 Content-Length: 95.9 MB (95908125 bytes)
+
+### Layers (17)
+
+#### `2c788329cf71b09863a2ba17dc0275d7f89c2890f04c0c6195313c5c37e09215`
+
+```dockerfile
+ADD file:ea7fb7f89a81c9be7ab4abf1bfb1310d2566104701c6543301bdf27818891015 in /
+```
+
+-	Created: Fri, 04 Dec 2015 19:31:07 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 84.9 MB (84894442 bytes)
+-	v2 Blob: `sha256:45a5ec39a81f3ae44630f998adad19965c29d5bfb3ae4caabefccf39159a9076`
+-	v2 Content-Length: 37.2 MB (37184719 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:55:23 GMT
+
+#### `c1661b87f43627a9e630109963c7c135ff6f5819a42c4e0fb14d1ea653d5ba29`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Fri, 04 Dec 2015 19:31:10 GMT
+-	Parent Layer: `2c788329cf71b09863a2ba17dc0275d7f89c2890f04c0c6195313c5c37e09215`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `c10500cc47982c3f6f5046384b3c8e9c912df384ac8a97f5109d9f29835391c4`
+
+```dockerfile
+RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
+```
+
+-	Created: Sat, 05 Dec 2015 07:09:13 GMT
+-	Parent Layer: `c1661b87f43627a9e630109963c7c135ff6f5819a42c4e0fb14d1ea653d5ba29`
+-	Docker Version: 1.8.3
+-	Virtual Size: 328.3 KB (328314 bytes)
+-	v2 Blob: `sha256:d1f83b34c8faadab54a1065a14e6c18f6674ad3b583d78ef4cbed30e4e060964`
+-	v2 Content-Length: 1.7 KB (1695 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 02:22:17 GMT
+
+#### `a747b0e60239b4e5abae70162fb7d35af0da51f50a7b9575b3296e8a5ecc4255`
+
+```dockerfile
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends \
+		ca-certificates curl \
+		numactl \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Sat, 05 Dec 2015 07:09:30 GMT
+-	Parent Layer: `c10500cc47982c3f6f5046384b3c8e9c912df384ac8a97f5109d9f29835391c4`
+-	Docker Version: 1.8.3
+-	Virtual Size: 12.5 MB (12454945 bytes)
+-	v2 Blob: `sha256:9a6050a755e56f76d2aec3f742353a89715e96ffa0448a0493f3557d4fca9101`
+-	v2 Content-Length: 6.0 MB (5998599 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 02:22:05 GMT
+
+#### `305e0eb8856912b44ed79127f524b5a97ac170933e95636d260f5e1550991eb3`
+
+```dockerfile
+RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
+```
+
+-	Created: Sat, 05 Dec 2015 07:09:33 GMT
+-	Parent Layer: `a747b0e60239b4e5abae70162fb7d35af0da51f50a7b9575b3296e8a5ecc4255`
+-	Docker Version: 1.8.3
+-	Virtual Size: 120.3 KB (120306 bytes)
+-	v2 Blob: `sha256:2b04fe9173a9c426c771779e95b9c35d44886d05a3aebc79dc8bd7702a758460`
+-	v2 Content-Length: 109.4 KB (109379 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 02:21:59 GMT
+
+#### `0953a02672c5aa7a02d85071fdafe0a78d1f2fde56a002edc247b48b53b017d4`
+
+```dockerfile
+RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --print-architecture)" \
+	&& curl -o /usr/local/bin/gosu.asc -SL "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --print-architecture).asc" \
+	&& gpg --verify /usr/local/bin/gosu.asc \
+	&& rm /usr/local/bin/gosu.asc \
+	&& chmod +x /usr/local/bin/gosu
+```
+
+-	Created: Sat, 05 Dec 2015 07:09:37 GMT
+-	Parent Layer: `305e0eb8856912b44ed79127f524b5a97ac170933e95636d260f5e1550991eb3`
+-	Docker Version: 1.8.3
+-	Virtual Size: 2.7 MB (2696536 bytes)
+-	v2 Blob: `sha256:5a318f31408d141b7310de87ea24376fefd593a58f1d38f83150a071b73bae4b`
+-	v2 Content-Length: 807.6 KB (807591 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 02:21:55 GMT
+
+#### `ce8de6056caae21f00e3c0abd4ccd4ba93ea419f7d5cf5603806edf13e9f985e`
+
+```dockerfile
+RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 492EAFE8CD016A07919F1D2B9ECBEC467F0CEB10
+```
+
+-	Created: Sat, 05 Dec 2015 07:13:24 GMT
+-	Parent Layer: `0953a02672c5aa7a02d85071fdafe0a78d1f2fde56a002edc247b48b53b017d4`
+-	Docker Version: 1.8.3
+-	Virtual Size: 57.9 KB (57938 bytes)
+-	v2 Blob: `sha256:06ff9b82c252737d34d7cd67aadd988325cf95e24818bea8927b66a28b20e75f`
+-	v2 Content-Length: 29.8 KB (29815 bytes)
+-	v2 Last-Modified: Tue, 08 Dec 2015 02:31:46 GMT
+
+#### `24e722b6885137ed39a3e3bbe8448435ef06a78a89100f29ac7396829935fced`
+
+```dockerfile
+ENV MONGO_MAJOR=3.0
+```
+
+-	Created: Sat, 05 Dec 2015 07:13:24 GMT
+-	Parent Layer: `ce8de6056caae21f00e3c0abd4ccd4ba93ea419f7d5cf5603806edf13e9f985e`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `2fd4518afe733a646503bd2bd95a68d92ec0507653274eb9142d1aac49999bb1`
+
+```dockerfile
+ENV MONGO_VERSION=3.0.8
+```
+
+-	Created: Wed, 16 Dec 2015 23:19:49 GMT
+-	Parent Layer: `24e722b6885137ed39a3e3bbe8448435ef06a78a89100f29ac7396829935fced`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `859260ab16a262d8b7e32e2c9a78a7d141fbbb4621997d236ce2b616ca8e473b`
+
+```dockerfile
+RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR main" > /etc/apt/sources.list.d/mongodb-org.list
+```
+
+-	Created: Wed, 16 Dec 2015 23:19:50 GMT
+-	Parent Layer: `2fd4518afe733a646503bd2bd95a68d92ec0507653274eb9142d1aac49999bb1`
+-	Docker Version: 1.8.3
+-	Virtual Size: 67.0 B
+-	v2 Blob: `sha256:3dc5968d14e151b566e0f64e5d33456ebc9439106b5996ba8563b498b8bd9a39`
+-	v2 Content-Length: 227.0 B
+-	v2 Last-Modified: Thu, 17 Dec 2015 03:14:34 GMT
+
+#### `dbebfbbeee469ea6cfd8c70982447a7418ed9c11f60408afda1b0672a5a3a9bc`
+
+```dockerfile
+RUN set -x \
+	&& apt-get update \
+	&& apt-get install -y \
+		mongodb-org=$MONGO_VERSION \
+		mongodb-org-server=$MONGO_VERSION \
+		mongodb-org-shell=$MONGO_VERSION \
+		mongodb-org-mongos=$MONGO_VERSION \
+		mongodb-org-tools=$MONGO_VERSION \
+	&& rm -rf /var/lib/apt/lists/* \
+	&& rm -rf /var/lib/mongodb \
+	&& mv /etc/mongod.conf /etc/mongod.conf.orig
+```
+
+-	Created: Wed, 16 Dec 2015 23:19:59 GMT
+-	Parent Layer: `859260ab16a262d8b7e32e2c9a78a7d141fbbb4621997d236ce2b616ca8e473b`
+-	Docker Version: 1.8.3
+-	Virtual Size: 160.6 MB (160550611 bytes)
+-	v2 Blob: `sha256:1f48beadab071b6a07a5722e555c1d8d6b3381e2ec51d33fc9ff2dd3f2ab2244`
+-	v2 Content-Length: 51.8 MB (51775487 bytes)
+-	v2 Last-Modified: Thu, 17 Dec 2015 03:14:30 GMT
+
+#### `5cd2fbac6d2dcd23c4c004476077e0446ad624cb26271bf8d77088c0fdcad4b6`
+
+```dockerfile
+RUN mkdir -p /data/db && chown -R mongodb:mongodb /data/db
+```
+
+-	Created: Wed, 16 Dec 2015 23:20:01 GMT
+-	Parent Layer: `dbebfbbeee469ea6cfd8c70982447a7418ed9c11f60408afda1b0672a5a3a9bc`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:723a6387d6b5e1286dab51c03cebcf55c8435d410a4da5c65c1cebdad8368406`
+-	v2 Content-Length: 117.0 B
+-	v2 Last-Modified: Thu, 17 Dec 2015 03:14:00 GMT
+
+#### `9041621b83607c826290c552365ad04b64693383893c12229e71732acabc9a30`
+
+```dockerfile
+VOLUME [/data/db]
+```
+
+-	Created: Wed, 16 Dec 2015 23:20:02 GMT
+-	Parent Layer: `5cd2fbac6d2dcd23c4c004476077e0446ad624cb26271bf8d77088c0fdcad4b6`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `6c3e2586221582979b358298785907e33b507773ec2eb4f735f9664e82c1f9fd`
+
+```dockerfile
+COPY file:50ff82dffc60abfb55782f6a329b2ec2b9d2c20009f3be01968dcd4124c68df1 in /entrypoint.sh
+```
+
+-	Created: Wed, 16 Dec 2015 23:20:02 GMT
+-	Parent Layer: `9041621b83607c826290c552365ad04b64693383893c12229e71732acabc9a30`
+-	Docker Version: 1.8.3
+-	Virtual Size: 261.0 B
+-	v2 Blob: `sha256:c185104550a90a870f46b57467797f10ab2fe95c3bdb00ee63f189c14fe6b7ee`
+-	v2 Content-Length: 272.0 B
+-	v2 Last-Modified: Tue, 07 Apr 2015 06:48:51 GMT
+
+#### `a4c8f6cc30b0fddc50c7ed0161a4285804800732186e5cfd6a2722de63d2319a`
+
+```dockerfile
+ENTRYPOINT &{["/entrypoint.sh"]}
+```
+
+-	Created: Wed, 16 Dec 2015 23:20:03 GMT
+-	Parent Layer: `6c3e2586221582979b358298785907e33b507773ec2eb4f735f9664e82c1f9fd`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `0b0060559313974da0e84cbdfbf572db2fe1992166f2a2dacb75386df6e3345d`
+
+```dockerfile
+EXPOSE 27017/tcp
+```
+
+-	Created: Wed, 16 Dec 2015 23:20:03 GMT
+-	Parent Layer: `a4c8f6cc30b0fddc50c7ed0161a4285804800732186e5cfd6a2722de63d2319a`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `c73d43c6cc0b1f97e1ef412aa7b041a2982a818be3e950a560ec27788ba1ca63`
+
+```dockerfile
+CMD ["mongod"]
+```
+
+-	Created: Wed, 16 Dec 2015 23:20:04 GMT
+-	Parent Layer: `0b0060559313974da0e84cbdfbf572db2fe1992166f2a2dacb75386df6e3345d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
