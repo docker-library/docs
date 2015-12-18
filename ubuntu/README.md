@@ -4,6 +4,7 @@
 -	[`14.04.3`, `14.04`, `trusty-20151208`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/3852ef7c7e841ea8c126c9b00e64eeca61fe5ab0/trusty/Dockerfile)
 -	[`15.04`, `vivid-20151208`, `vivid` (*vivid/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/3852ef7c7e841ea8c126c9b00e64eeca61fe5ab0/vivid/Dockerfile)
 -	[`15.10`, `wily-20151208`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/3852ef7c7e841ea8c126c9b00e64eeca61fe5ab0/wily/Dockerfile)
+-	[`16.04`, `xenial-20151218.1`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/8af9ba31ba5d204717f9aff66c9c033454d72ba5/xenial/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
