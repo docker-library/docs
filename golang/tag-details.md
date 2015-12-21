@@ -28,6 +28,14 @@
 -	[`golang:1.5-alpine`](#golang15-alpine)
 -	[`golang:1-alpine`](#golang1-alpine)
 -	[`golang:alpine`](#golangalpine)
+-	[`golang:1.6beta1`](#golang16beta1)
+-	[`golang:1.6`](#golang16)
+-	[`golang:1.6beta1-onbuild`](#golang16beta1-onbuild)
+-	[`golang:1.6-onbuild`](#golang16-onbuild)
+-	[`golang:1.6beta1-wheezy`](#golang16beta1-wheezy)
+-	[`golang:1.6-wheezy`](#golang16-wheezy)
+-	[`golang:1.6beta1-alpine`](#golang16beta1-alpine)
+-	[`golang:1.6-alpine`](#golang16-alpine)
 
 ## `golang:1.4.3`
 
@@ -6216,3 +6224,35 @@ WORKDIR /go
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `golang:1.6beta1`
+
+**does not exist** (yet?)
+
+## `golang:1.6`
+
+**does not exist** (yet?)
+
+## `golang:1.6beta1-onbuild`
+
+**does not exist** (yet?)
+
+## `golang:1.6-onbuild`
+
+**does not exist** (yet?)
+
+## `golang:1.6beta1-wheezy`
+
+**does not exist** (yet?)
+
+## `golang:1.6-wheezy`
+
+**does not exist** (yet?)
+
+## `golang:1.6beta1-alpine`
+
+**does not exist** (yet?)
+
+## `golang:1.6-alpine`
+
+**does not exist** (yet?)
