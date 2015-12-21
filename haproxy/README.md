@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.26`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/e06675f0670414932e659db5ba8f98f8a430a1d1/1.4/Dockerfile)
--	[`1.5.15`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c73ea45ca3defee81f16ca206d2c2ca8e79f167/1.5/Dockerfile)
--	[`1.6.2`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dbb1a9e1991643c64785dd359f67daa4201c034f/1.6/Dockerfile)
+-	[`1.4.26`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c1ab61d9ba298a8b40164ed91d8d0a797e7bb1c/1.4/Dockerfile)
+-	[`1.5.15`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c1ab61d9ba298a8b40164ed91d8d0a797e7bb1c/1.5/Dockerfile)
+-	[`1.6.2`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c1ab61d9ba298a8b40164ed91d8d0a797e7bb1c/1.6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
