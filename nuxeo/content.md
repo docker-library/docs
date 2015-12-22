@@ -14,6 +14,8 @@ $ docker run --name mynuxeo -p 8080:8080 -d nuxeo
 
 This image includes `EXPOSE 8080` (the nuxeo port). The default Nuxeo configuration is applied which feature an embedded database (H2), and an embedded Elasticsearch instance. This setup is not suitable for production. See below to know how to setup a production ready container by specifying environment variables.
 
+The Nuxeo platform is accesible at http://${DOCKER_HOST}:8080/ and default User and Password are Administrator/Administrator.
+
 ## Start a nuxeo with some additional packages
 
 ```console
