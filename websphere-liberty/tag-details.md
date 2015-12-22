@@ -3,16 +3,16 @@
 # Tags of `websphere-liberty`
 
 -	[`websphere-liberty:kernel`](#websphere-libertykernel)
--	[`websphere-liberty:8.5.5.7-kernel`](#websphere-liberty8557-kernel)
+-	[`websphere-liberty:8.5.5.8-kernel`](#websphere-liberty8558-kernel)
 -	[`websphere-liberty:common`](#websphere-libertycommon)
--	[`websphere-liberty:8.5.5.7-common`](#websphere-liberty8557-common)
+-	[`websphere-liberty:8.5.5.8-common`](#websphere-liberty8558-common)
 -	[`websphere-liberty:webProfile6`](#websphere-libertywebprofile6)
--	[`websphere-liberty:8.5.5.7-webProfile6`](#websphere-liberty8557-webprofile6)
+-	[`websphere-liberty:8.5.5.8-webProfile6`](#websphere-liberty8558-webprofile6)
 -	[`websphere-liberty:webProfile7`](#websphere-libertywebprofile7)
--	[`websphere-liberty:8.5.5.7-webProfile7`](#websphere-liberty8557-webprofile7)
+-	[`websphere-liberty:8.5.5.8-webProfile7`](#websphere-liberty8558-webprofile7)
 -	[`websphere-liberty:javaee7`](#websphere-libertyjavaee7)
--	[`websphere-liberty:8.5.5.7-javaee7`](#websphere-liberty8557-javaee7)
--	[`websphere-liberty:8.5.5.7`](#websphere-liberty8557)
+-	[`websphere-liberty:8.5.5.8-javaee7`](#websphere-liberty8558-javaee7)
+-	[`websphere-liberty:8.5.5.8`](#websphere-liberty8558)
 -	[`websphere-liberty:8.5.5`](#websphere-liberty855)
 -	[`websphere-liberty:latest`](#websphere-libertylatest)
 -	[`websphere-liberty:beta`](#websphere-libertybeta)
@@ -319,10 +319,10 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `websphere-liberty:8.5.5.7-kernel`
+## `websphere-liberty:8.5.5.8-kernel`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:abe59799ea2dfa470379ea666c5250a1bb35bc1419c06aef3dae28b3449d969c
+$ docker pull library/websphere-liberty@sha256:049532039d4ee6ba9829a398400533238446ea3735268dfbde23126e94fd9299
 ```
 
 -	Total Virtual Size: 445.3 MB (445311693 bytes)
@@ -937,10 +937,10 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	v2 Content-Length: 31.8 MB (31756772 bytes)
 -	v2 Last-Modified: Mon, 21 Dec 2015 18:49:55 GMT
 
-## `websphere-liberty:8.5.5.7-common`
+## `websphere-liberty:8.5.5.8-common`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:84cdf44505c61bf0793a22be44a5cfb0d7d543c396c4bd89585cf841b991cb38
+$ docker pull library/websphere-liberty@sha256:09ca3beb7dab210932913267acf836d486f47afbeaa4de9b1f69127a4cb51fc6
 ```
 
 -	Total Virtual Size: 481.6 MB (481572420 bytes)
@@ -1599,10 +1599,10 @@ RUN installUtility install --acceptLicense appSecurity-1.0 blueprint-1.0 concurr
 -	v2 Content-Length: 20.6 MB (20575026 bytes)
 -	v2 Last-Modified: Mon, 21 Dec 2015 18:51:01 GMT
 
-## `websphere-liberty:8.5.5.7-webProfile6`
+## `websphere-liberty:8.5.5.8-webProfile6`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:dcd1a520463f7927bb98cbcca66095b6005746d7c81bcdee879e5b0a7f074b86
+$ docker pull library/websphere-liberty@sha256:2a92387e107b2c16269a0bea7fb72ea86717a7b2a48c128409f2cab34bdda551
 ```
 
 -	Total Virtual Size: 505.5 MB (505471186 bytes)
@@ -2290,10 +2290,10 @@ RUN installUtility install --acceptLicense defaultServer\
 -	v2 Content-Length: 39.2 MB (39203111 bytes)
 -	v2 Last-Modified: Mon, 21 Dec 2015 18:52:16 GMT
 
-## `websphere-liberty:8.5.5.7-webProfile7`
+## `websphere-liberty:8.5.5.8-webProfile7`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:5cd8944b8c3897c249dcefa64f261da8a6e092222cbbe120a20d572060141d8e
+$ docker pull library/websphere-liberty@sha256:134194f5788e694aae34456318db7d1515ec957a1610301b487a98188bed6a7b
 ```
 
 -	Total Virtual Size: 525.9 MB (525887939 bytes)
@@ -3009,10 +3009,10 @@ RUN installUtility install --acceptLicense defaultServer\
 -	v2 Content-Length: 42.3 MB (42327472 bytes)
 -	v2 Last-Modified: Mon, 21 Dec 2015 18:54:26 GMT
 
-## `websphere-liberty:8.5.5.7-javaee7`
+## `websphere-liberty:8.5.5.8-javaee7`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:c1ecd892572ffae9b6dedf443c3fde2a9b8b9a96e0dede27204deac12eeddc69
+$ docker pull library/websphere-liberty@sha256:a72f0be02c6a241042997e90cc4b3eb10d7d245f2d4876d60aad5db4695f0786
 ```
 
 -	Total Virtual Size: 574.4 MB (574412417 bytes)
@@ -3383,10 +3383,10 @@ RUN installUtility install --acceptLicense defaultServer\
 -	v2 Content-Length: 42.3 MB (42327472 bytes)
 -	v2 Last-Modified: Mon, 21 Dec 2015 18:54:26 GMT
 
-## `websphere-liberty:8.5.5.7`
+## `websphere-liberty:8.5.5.8`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:42f9992dd8fdc99f60cfb7138609be19041f5c6605378833894f5bd6929b61ac
+$ docker pull library/websphere-liberty@sha256:df042e50a1fbacee728a578e37f0c995ef3eca1905fd0fc7d09c90638b27d90c
 ```
 
 -	Total Virtual Size: 574.4 MB (574412417 bytes)
