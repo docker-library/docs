@@ -54,6 +54,7 @@ declare -A otherRepos=(
 	[neurodebian]='https://github.com/neurodebian/dockerfiles'
 	[nginx]='https://github.com/nginxinc/docker-nginx'
 	[node]='https://github.com/nodejs/docker-node'
+	[nuxeo]='https://github.com/nuxeo/docker-nuxeor'
 	[odoo]='https://github.com/odoo/docker'
 	[opensuse]='https://github.com/openSUSE/docker-containers-build'
 	[oraclelinux]='https://github.com/oracle/docker'
