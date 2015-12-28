@@ -52,6 +52,7 @@ declare -A otherRepos=(
 	[mono]='https://github.com/mono/docker'
 	[neo4j]='https://github.com/neo4j/docker-neo4j'
 	[neurodebian]='https://github.com/neurodebian/dockerfiles'
+	[nevergreen]='https://github.com/build-canaries/nevergreen-docker'
 	[nginx]='https://github.com/nginxinc/docker-nginx'
 	[node]='https://github.com/nodejs/docker-node'
 	[nuxeo]='https://github.com/nuxeo/docker-nuxeor'
