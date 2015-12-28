@@ -2,17 +2,17 @@
 
 # Tags of `r-base`
 
--	[`r-base:3.2.2`](#r-base322)
+-	[`r-base:3.2.3`](#r-base323)
 -	[`r-base:latest`](#r-baselatest)
 
-## `r-base:3.2.2`
+## `r-base:3.2.3`
 
 ```console
-$ docker pull library/r-base@sha256:cc1ec9da7b7c26f0edfc9f15b4852777276c206d0eead09684aec2cda9ef3ca4
+$ docker pull library/r-base@sha256:eaf7c2a35accef2a3a38034650ac8d81d1b938e3b1636e38d31668657b439954
 ```
 
--	Total Virtual Size: 1.0 GB (1014218829 bytes)
--	Total v2 Content-Length: 410.7 MB (410650416 bytes)
+-	Total Virtual Size: 1.1 GB (1071060392 bytes)
+-	Total v2 Content-Length: 433.5 MB (433463369 bytes)
 
 ### Layers (12)
 
@@ -155,13 +155,13 @@ RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/
 -	v2 Content-Length: 292.0 B
 -	v2 Last-Modified: Tue, 08 Dec 2015 06:20:49 GMT
 
-#### `3785e18a96bcfb7708ae5677d8a3ee493cf7707b4f563a72a3634f23b56fb084`
+#### `93e82e82450ca78813364795bd628d750d7fab6965eb3782b58a161d6b2523ba`
 
 ```dockerfile
-ENV R_BASE_VERSION=3.2.2
+ENV R_BASE_VERSION=3.2.3
 ```
 
--	Created: Sat, 05 Dec 2015 10:42:30 GMT
+-	Created: Mon, 28 Dec 2015 16:54:38 GMT
 -	Parent Layer: `fd282a0bcbcee5bb08e552747df7f9e0c87bd2013a1ec29e894808843129641f`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -169,12 +169,13 @@ ENV R_BASE_VERSION=3.2.2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a50901fd4604c8e800126f6a8f58d94d97cf3aa48902444a280cebefe293f145`
+#### `394c06708fede55a986cd29290fd43e701290d9bf5fa2f2eb708a5debc141831`
 
 ```dockerfile
 RUN apt-get update \
 	&& apt-get install -t unstable -y --no-install-recommends \
-		littler/unstable \
+		littler/unstable\
+                 r-cran-littler/unstable \
 		r-base=${R_BASE_VERSION}* \
 		r-base-dev=${R_BASE_VERSION}* \
 		r-recommended=${R_BASE_VERSION}*\
@@ -189,22 +190,22 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 10:48:07 GMT
--	Parent Layer: `3785e18a96bcfb7708ae5677d8a3ee493cf7707b4f563a72a3634f23b56fb084`
+-	Created: Mon, 28 Dec 2015 16:59:57 GMT
+-	Parent Layer: `93e82e82450ca78813364795bd628d750d7fab6965eb3782b58a161d6b2523ba`
 -	Docker Version: 1.8.3
--	Virtual Size: 832.8 MB (832801263 bytes)
--	v2 Blob: `sha256:546e4e3098754be3f262bf488b7333438b416fe22be5fc15a961eca123ec9070`
--	v2 Content-Length: 333.3 MB (333300567 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 06:20:35 GMT
+-	Virtual Size: 889.6 MB (889642826 bytes)
+-	v2 Blob: `sha256:be7603fd86ae31c074a6a88e007c0d4f7f9ebb308c74713ff5a55d2e29c01d8e`
+-	v2 Content-Length: 356.1 MB (356113520 bytes)
+-	v2 Last-Modified: Mon, 28 Dec 2015 17:03:53 GMT
 
-#### `cf4383562b44dd4675f6bbb7d730685f6bbfe91deb80443ee941d02187718abe`
+#### `7939bc63acf904ec2fd7c86b7aedd3d53d7f9ab66a5978defb6bc2999dc9c12b`
 
 ```dockerfile
 CMD ["R"]
 ```
 
--	Created: Sat, 05 Dec 2015 10:48:15 GMT
--	Parent Layer: `a50901fd4604c8e800126f6a8f58d94d97cf3aa48902444a280cebefe293f145`
+-	Created: Mon, 28 Dec 2015 17:00:06 GMT
+-	Parent Layer: `394c06708fede55a986cd29290fd43e701290d9bf5fa2f2eb708a5debc141831`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -214,11 +215,11 @@ CMD ["R"]
 ## `r-base:latest`
 
 ```console
-$ docker pull library/r-base@sha256:bf045f6d75f89674acd35cbf046c8e8e2c288c1081c93733133b073180126b59
+$ docker pull library/r-base@sha256:2600aab01339bb89b45df7f7c532880d7e0635b98f57cfa89d3d656c6c126346
 ```
 
--	Total Virtual Size: 1.0 GB (1014218829 bytes)
--	Total v2 Content-Length: 410.7 MB (410650416 bytes)
+-	Total Virtual Size: 1.1 GB (1071060392 bytes)
+-	Total v2 Content-Length: 433.5 MB (433463369 bytes)
 
 ### Layers (12)
 
@@ -361,13 +362,13 @@ RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/
 -	v2 Content-Length: 292.0 B
 -	v2 Last-Modified: Tue, 08 Dec 2015 06:20:49 GMT
 
-#### `3785e18a96bcfb7708ae5677d8a3ee493cf7707b4f563a72a3634f23b56fb084`
+#### `93e82e82450ca78813364795bd628d750d7fab6965eb3782b58a161d6b2523ba`
 
 ```dockerfile
-ENV R_BASE_VERSION=3.2.2
+ENV R_BASE_VERSION=3.2.3
 ```
 
--	Created: Sat, 05 Dec 2015 10:42:30 GMT
+-	Created: Mon, 28 Dec 2015 16:54:38 GMT
 -	Parent Layer: `fd282a0bcbcee5bb08e552747df7f9e0c87bd2013a1ec29e894808843129641f`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
@@ -375,12 +376,13 @@ ENV R_BASE_VERSION=3.2.2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a50901fd4604c8e800126f6a8f58d94d97cf3aa48902444a280cebefe293f145`
+#### `394c06708fede55a986cd29290fd43e701290d9bf5fa2f2eb708a5debc141831`
 
 ```dockerfile
 RUN apt-get update \
 	&& apt-get install -t unstable -y --no-install-recommends \
-		littler/unstable \
+		littler/unstable\
+                 r-cran-littler/unstable \
 		r-base=${R_BASE_VERSION}* \
 		r-base-dev=${R_BASE_VERSION}* \
 		r-recommended=${R_BASE_VERSION}*\
@@ -395,22 +397,22 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 10:48:07 GMT
--	Parent Layer: `3785e18a96bcfb7708ae5677d8a3ee493cf7707b4f563a72a3634f23b56fb084`
+-	Created: Mon, 28 Dec 2015 16:59:57 GMT
+-	Parent Layer: `93e82e82450ca78813364795bd628d750d7fab6965eb3782b58a161d6b2523ba`
 -	Docker Version: 1.8.3
--	Virtual Size: 832.8 MB (832801263 bytes)
--	v2 Blob: `sha256:546e4e3098754be3f262bf488b7333438b416fe22be5fc15a961eca123ec9070`
--	v2 Content-Length: 333.3 MB (333300567 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 06:20:35 GMT
+-	Virtual Size: 889.6 MB (889642826 bytes)
+-	v2 Blob: `sha256:be7603fd86ae31c074a6a88e007c0d4f7f9ebb308c74713ff5a55d2e29c01d8e`
+-	v2 Content-Length: 356.1 MB (356113520 bytes)
+-	v2 Last-Modified: Mon, 28 Dec 2015 17:03:53 GMT
 
-#### `cf4383562b44dd4675f6bbb7d730685f6bbfe91deb80443ee941d02187718abe`
+#### `7939bc63acf904ec2fd7c86b7aedd3d53d7f9ab66a5978defb6bc2999dc9c12b`
 
 ```dockerfile
 CMD ["R"]
 ```
 
--	Created: Sat, 05 Dec 2015 10:48:15 GMT
--	Parent Layer: `a50901fd4604c8e800126f6a8f58d94d97cf3aa48902444a280cebefe293f145`
+-	Created: Mon, 28 Dec 2015 17:00:06 GMT
+-	Parent Layer: `394c06708fede55a986cd29290fd43e701290d9bf5fa2f2eb708a5debc141831`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
