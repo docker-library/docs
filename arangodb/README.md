@@ -16,7 +16,7 @@ The supported data models can be mixed in queries and allow ArangoDB to be the a
 
 > [arangodb.com](https://arangodb.com)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/arangodb/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/fc374e65196006a9b55da56446332f953f3c88b3/arangodb/logo.png)
 
 ## Key Features in ArangoDB
 

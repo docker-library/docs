@@ -9,7 +9,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # Swarm: a Docker-native clustering system
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/swarm/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/471fa6e4cb58062ccbf91afc111980f9c7004981/swarm/logo.png)
 
 `swarm` is a simple tool which controls a cluster of Docker hosts and exposes it as a single "virtual" host.
 

@@ -19,7 +19,7 @@ PyPy started out as a Python interpreter written in the Python language itself. 
 
 > [wikipedia.org/wiki/PyPy](https://en.wikipedia.org/wiki/PyPy)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/pypy/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/ff804ee81e3f94dab5cd207a0a0504e5e67606dd/pypy/logo.png)
 
 # How to use this image
 

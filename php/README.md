@@ -20,7 +20,7 @@ PHP is a server-side scripting language designed for web development, but which 
 
 > [wikipedia.org/wiki/PHP](http://en.wikipedia.org/wiki/PHP)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/php/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/php/logo.png)
 
 # How to use this image.
 

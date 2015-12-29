@@ -20,7 +20,7 @@ Elasticsearch is a registered trademark of Elasticsearch BV.
 
 > [wikipedia.org/wiki/Elasticsearch](https://en.wikipedia.org/wiki/Elasticsearch)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/elasticsearch/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7688e51a41c0c10dca4e6c376be886ce64b9620f/elasticsearch/logo.png)
 
 # How to use this image
 

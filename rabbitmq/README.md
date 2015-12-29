@@ -13,7 +13,7 @@ RabbitMQ is open source message broker software (sometimes called message-orient
 
 > [wikipedia.org/wiki/RabbitMQ](https://en.wikipedia.org/wiki/RabbitMQ)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/rabbitmq/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/81187b7b50f5af5bdb64d75882f4d9c782ad52c3/rabbitmq/logo.png)
 
 # How to use this image
 

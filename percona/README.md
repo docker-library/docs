@@ -15,7 +15,7 @@ It aims to retain close compatibility to the official MySQL releases, while focu
 
 > [wikipedia.org/wiki/Percona_Server](https://en.wikipedia.org/wiki/Percona_Server)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/percona/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/4743f11523a1d9c8dc28cc338447a4fd622f92b4/percona/logo.png)
 
 # How to use this image
 

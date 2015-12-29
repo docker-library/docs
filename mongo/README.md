@@ -19,7 +19,7 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 
 > [wikipedia.org/wiki/MongoDB](https://en.wikipedia.org/wiki/MongoDB)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/mongo/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/mongo/logo.png)
 
 # How to use this image
 

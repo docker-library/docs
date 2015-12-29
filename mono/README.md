@@ -22,7 +22,7 @@ Sponsored by Xamarin, Mono is an open source implementation of Microsoft's .NET 
 -	[Mono Project homepage](http://www.mono-project.com/)
 -	[http://en.wikipedia.org/wiki/Mono_(software)](http://en.wikipedia.org/wiki/Mono_%28software%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/mono/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/7413e5cdbaae1016411b9fc20950dd913a799e2c/mono/logo.png)
 
 # How to use this image
 

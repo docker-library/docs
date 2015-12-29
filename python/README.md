@@ -30,7 +30,7 @@ Python is an interpreted, interactive, object-oriented, open-source programming 
 
 > [wikipedia.org/wiki/Python_(programming_language)](https://en.wikipedia.org/wiki/Python_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/python/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/python/logo.png)
 
 # How to use this image
 

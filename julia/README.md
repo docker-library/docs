@@ -12,7 +12,7 @@ Julia is a high-level, high-performance dynamic programming language for technic
 
 > [julialang.org](http://julialang.org/)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/julia/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/520519ad7db3ea9fd5d3590e836c839a0ffd6f19/julia/logo.png)
 
 # How to use this image
 

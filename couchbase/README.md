@@ -22,7 +22,7 @@ Licensing information is covered towards the end of this guide.
 
 For support, please visit the [Couchbase support forum](https://forums.couchbase.com/) or `#couchbase` on irc.freenode.net.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/couchbase/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/00543c65b06a7f8f54aa4f7908f7d91705d8ddec/couchbase/logo.png)
 
 # How to use this image: QuickStart
 

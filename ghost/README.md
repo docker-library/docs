@@ -12,7 +12,7 @@ Ghost is a free and open source blogging platform written in JavaScript and dist
 
 > [wikipedia.org/wiki/Ghost_(blogging_platform)](http://en.wikipedia.org/wiki/Ghost_%28blogging_platform%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/ghost/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c5b6d94dc8f0557925ab37ca43141c0efc5cc363/ghost/logo.png)
 
 # How to use this image
 

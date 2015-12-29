@@ -26,7 +26,7 @@ Debian is an operating system which is composed primarily of free and open-sourc
 
 > [wikipedia.org/wiki/Debian](https://en.wikipedia.org/wiki/Debian)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/debian/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/debian/logo.png)
 
 # About this image
 

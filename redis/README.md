@@ -17,7 +17,7 @@ Redis is an open-source, networked, in-memory, key-value data store with optiona
 
 > [wikipedia.org/wiki/Redis](https://en.wikipedia.org/wiki/Redis)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/redis/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/redis/logo.png)
 
 # How to use this image
 

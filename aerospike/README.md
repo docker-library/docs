@@ -10,7 +10,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 Aerospike is an open source distributed database. Aerospike is built on a "shared nothing" architecture designed to reliably store terabytes of data with automatic fail-over, replication and cross data-center synchronization.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/aerospike/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/9944063c59872460e15f6ecb19c1419c8124752f/aerospike/logo.png)
 
 Documentation for Aerospike is available at [http://aerospike.com/docs](https://www.aerospike.com/docs).
 

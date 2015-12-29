@@ -13,7 +13,7 @@ Joomla is a free and open-source content management system (CMS) for publishing 
 
 > [wikipedia.org/wiki/Joomla](https://en.wikipedia.org/wiki/Joomla)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/joomla/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/593aeead7600f80c50ea4f0cdde05998f743789b/joomla/logo.png)
 
 # How to use this image
 

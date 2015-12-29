@@ -15,7 +15,7 @@ Logstash is a tool that can be used to collect, process and forward events and l
 
 > [wikitech.wikimedia.org/wiki/Logstash](https://wikitech.wikimedia.org/wiki/Logstash)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/logstash/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/3a5ee2af49550e2c692a15c339725b4967720db1/logstash/logo.png)
 
 # How to use this image
 

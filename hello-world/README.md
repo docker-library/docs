@@ -37,7 +37,7 @@ REPOSITORY   TAG     IMAGE ID      SIZE
 hello-world  latest  690ed74de00f  960 B
 ```
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/hello-world/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/hello-world/logo.png)
 
 # How is this image created?
 

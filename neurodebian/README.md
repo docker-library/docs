@@ -20,7 +20,7 @@ NeuroDebian provides a large collection of popular neuroscience research softwar
 
 > [neuro.debian.net](http://neuro.debian.net/)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/neurodebian/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/90ee9ce81aa27322936d7faf585ffc45b7def890/neurodebian/logo.png)
 
 # About this image
 

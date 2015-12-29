@@ -13,7 +13,7 @@ SonarQube is an open source platform for continuous inspection of code quality.
 
 > [wikipedia.org/wiki/SonarQube](http://en.wikipedia.org/wiki/SonarQube)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/sonarqube/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/84479f149eb7d748d5dc057665eb96f923e60dc1/sonarqube/logo.png)
 
 # How to use this image
 

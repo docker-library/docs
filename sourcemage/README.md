@@ -12,7 +12,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 All of our scripts are [GPL](https://www.gnu.org/licenses/gpl.html)'d and our package manager and packages are written in [bash](https://www.gnu.org/software/bash/), so they are easy to learn and modify. Sorcery supports custom packages maintained by users, which can override default packages and will never be touched by updates.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/sourcemage/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/e8be1b5dd0b212fda27669b12bedad702c184423/sourcemage/logo.png)
 
 # Images
 

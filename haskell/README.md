@@ -15,7 +15,7 @@ Haskell's [`ghc`](http://www.haskell.org/ghc) is a [portable](https://ghc.haskel
 
 A large number of production-quality Haskell libraries are available from [Hackage](https://hackage.haskell.org). The [`cabal`](https://www.fpcomplete.com/user/simonmichael/how-to-cabal-install) tool fetches packages and builds projects using the Hackage ecosystem.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/haskell/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/53e03448d5c2c33124ce24609f6179ddc94873f4/haskell/logo.png)
 
 ## About this image
 

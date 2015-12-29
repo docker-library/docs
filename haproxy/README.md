@@ -14,7 +14,7 @@ HAProxy is a free, open source high availability solution, providing load balanc
 
 > [wikipedia.org/wiki/HAProxy](https://en.wikipedia.org/wiki/HAProxy)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/haproxy/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/566c944ca5eb9d1947c8a2e8821f8de2b0fc144c/haproxy/logo.png)
 
 # How to use this image
 

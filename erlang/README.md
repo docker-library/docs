@@ -14,7 +14,7 @@ Erlang is a programming language used to build massively scalable soft real-time
 
 > [wikipedia.org/wiki/Erlang_(programming_language)](https://en.wikipedia.org/wiki/Erlang_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/erlang/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/4144083772e02655d41aa10d6467aaf1e99fa77b/erlang/logo.png)
 
 # How to use this image
 

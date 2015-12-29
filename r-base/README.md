@@ -18,7 +18,7 @@ R is a GNU project. The source code for the R software environment is written pr
 
 > [R FAQ](http://cran.r-project.org/doc/FAQ/R-FAQ.html#What-is-R_003f), [wikipedia.org/wiki/R_(programming_language)](http://en.wikipedia.org/wiki/R_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/r-base/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/878d695448f08584e0b90a88fb60614e4c346d6e/r-base/logo.png)
 
 # How to use this image
 

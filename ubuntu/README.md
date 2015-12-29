@@ -18,7 +18,7 @@ Development of Ubuntu is led by UK-based Canonical Ltd., a company owned by Sout
 
 > [wikipedia.org/wiki/Ubuntu_(operating_system)](https://en.wikipedia.org/wiki/Ubuntu_%28operating_system%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/ubuntu/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/ubuntu/logo.png)
 
 # What's in this image?
 

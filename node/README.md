@@ -31,7 +31,7 @@ Node.js internally uses the Google V8 JavaScript engine to execute code; a large
 
 > [wikipedia.org/wiki/Node.js](https://en.wikipedia.org/wiki/Node.js)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/node/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/node/logo.png)
 
 # How to use this image
 

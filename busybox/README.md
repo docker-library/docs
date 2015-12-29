@@ -15,7 +15,7 @@ BusyBox combines tiny versions of many common UNIX utilities into a single small
 
 > [wikipedia.org/wiki/BusyBox](https://en.wikipedia.org/wiki/BusyBox)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/busybox/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/8b984f7fe2aadc3e42ed2bbb89f0a72fff36d819/busybox/logo.png)
 
 # How to use this image
 

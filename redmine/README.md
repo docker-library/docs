@@ -15,7 +15,7 @@ Redmine is a free and open source, web-based project management and issue tracki
 
 > [wikipedia.org/wiki/Redmine](https://en.wikipedia.org/wiki/Redmine)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/redmine/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/969091c4c590befe236a71d4a7bce5823fff020d/redmine/logo.png)
 
 # How to use this image
 

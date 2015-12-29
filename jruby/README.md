@@ -21,7 +21,7 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source pro
 
 JRuby leverages the robustness and speed of the JVM while providing the same Ruby that you already know and love. With JRuby you are able to take advantage of real native threads, enhanced garbage collection, and even import and use java libraries.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/jruby/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/fbdaaa95f768de2cb4508dde956912f4081a824a/jruby/logo.png)
 
 # How to use this image
 

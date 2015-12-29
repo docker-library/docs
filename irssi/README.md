@@ -12,7 +12,7 @@ Irssi is a terminal based IRC client for UNIX systems. It also supports SILC and
 
 > [irssi.org](http://irssi.org)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/irssi/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/633afc6f794a31463888319d9f0c3cc0801d81e3/irssi/logo.png)
 
 # How to use this image
 
