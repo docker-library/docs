@@ -12,7 +12,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 The Nuxeo Platform is a highly customizable and extensible content management platform for building business applications.
 
-
+![logo](https://raw.githubusercontent.com/docker-library/docs/master/nuxeo/logo.png)
 
 # How to use this image
 
