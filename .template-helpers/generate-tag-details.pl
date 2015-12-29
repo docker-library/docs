@@ -82,8 +82,12 @@ sub get_manifest {
 	my $authorizationHeader = { Authorization => "Bearer $token" };
 
 	my $manifestTx = ua_req(get => "https://registry-1.docker.io/v2/$repo/manifests/$tag" => $authorizationHeader);
+	return () if $manifestTx->res->code == 404; # tag doesn't exist
 	die "failed to get manifest for $image" unless $manifestTx->success;
-	return $manifests{$image} = $manifestTx->res->json;
+	return (
+		$manifestTx->res->headers->header('Docker-Content-Digest'),
+		$manifests{$image} = $manifestTx->res->json,
+	);
 }
 
 sub get_blob_headers {
@@ -109,7 +113,7 @@ sub get_layer_data {
 	my $data = {
 		map({ $_ => $v1->{$_} } qw(id created parent docker_version)),
 		container_command => $v1->{container_config}{Cmd},
-		virtual_size => $v1->{Size},
+		virtual_size => $v1->{Size} // 0,
 		blob => $blob,
 	};
 	my $blobHeaders = get_blob_headers($repo, $blob);
@@ -161,7 +165,19 @@ while (my $image = shift) {
 	say '## `' . $image . '`';
 	my ($repo, $tag) = split_image_name($image);
 
-	my $manifest = get_manifest($repo, $tag);
+	my ($digest, $manifest) = get_manifest($repo, $tag);
+
+	unless (defined $digest && defined $manifest) {
+		# tag must not exist yet!
+		say "\n", '**does not exist** (yet?)';
+		next;
+	}
+
+	print "\n";
+	say '```console';
+	say '$ docker pull ' . $repo . '@' . $digest;
+	say '```';
+
 	my %parentChild;
 	my %totals = (
 		virtual_size => 0,

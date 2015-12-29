@@ -1,7 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`2.5.5`, `2.5` (*jessie/2.5.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/636cd874df38edd77a187c08e1803693b3d978d3/jessie/2.5.5/Dockerfile)
--	[`2.6`, `2.6.7`, `latest` (*jessie/2.6.7/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/53d4b1bb96473099fcb4a93e6be59d975dbcb3ab/jessie/2.6.7/Dockerfile)
+-	[`2.6`, `2.6.10` (*jessie/2.6.10/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/803663b157696616d70e2bb44ce6e256f912e3a6/jessie/2.6.10/Dockerfile)
+-	[`2.7`, `2.7.2`, `latest` (*jessie/2.7.2/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/f57b71e11ed4cf2f74a18fb2ff80dcdb5a63df57/jessie/2.7.2/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/arangodb`)](https://github.com/docker-library/official-images/blob/master/library/arangodb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -17,7 +18,7 @@ The supported data models can be mixed in queries and allow ArangoDB to be the a
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/arangodb/logo.png)
 
-##Key Features in ArangoDB
+## Key Features in ArangoDB
 
 **Multi-Model** Documents, graphs and key-value pairs — model your data as you see fit for your application.
 
@@ -143,9 +144,11 @@ $ docker run -d --name arangodb-persist -v /var/lib/arangodb alpine alpine
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

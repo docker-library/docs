@@ -1,12 +1,18 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.2`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/golang/blob/bcc3800fbed7f5116ff27ae82e0d881efd50aa69/1.4/Dockerfile)
--	[`1.4.2-onbuild`, `1.4-onbuild` (*1.4/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/onbuild/Dockerfile)
--	[`1.4.2-cross`, `1.4-cross` (*1.4/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/cross/Dockerfile)
--	[`1.4.2-wheezy`, `1.4-wheezy` (*1.4/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/bcc3800fbed7f5116ff27ae82e0d881efd50aa69/1.4/wheezy/Dockerfile)
--	[`1.5.1`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/137c5d9cacd3a2be7cc07be3c6bdcfddce737934/1.5/Dockerfile)
--	[`1.5.1-onbuild`, `1.5-onbuild`, `1-onbuild`, `onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
--	[`1.5.1-wheezy`, `1.5-wheezy`, `1-wheezy`, `wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/137c5d9cacd3a2be7cc07be3c6bdcfddce737934/1.5/wheezy/Dockerfile)
+-	[`1.4.3`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/golang/blob/a4f3927494b48c7bdb6ea6edac8f89818853b45b/1.4/Dockerfile)
+-	[`1.4.3-onbuild`, `1.4-onbuild` (*1.4/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/onbuild/Dockerfile)
+-	[`1.4.3-cross`, `1.4-cross` (*1.4/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/cross/Dockerfile)
+-	[`1.4.3-wheezy`, `1.4-wheezy` (*1.4/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/a4f3927494b48c7bdb6ea6edac8f89818853b45b/1.4/wheezy/Dockerfile)
+-	[`1.4.3-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/63a33bf151190592eaf0540dd4b7027a9ca13f9b/1.4/alpine/Dockerfile)
+-	[`1.5.2`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/e5ff96b1ab32db028f608f89eacf2b827b85f69e/1.5/Dockerfile)
+-	[`1.5.2-onbuild`, `1.5-onbuild`, `1-onbuild`, `onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
+-	[`1.5.2-wheezy`, `1.5-wheezy`, `1-wheezy`, `wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/e5ff96b1ab32db028f608f89eacf2b827b85f69e/1.5/wheezy/Dockerfile)
+-	[`1.5.2-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/e5ff96b1ab32db028f608f89eacf2b827b85f69e/1.5/alpine/Dockerfile)
+-	[`1.6beta1`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/Dockerfile)
+-	[`1.6beta1-onbuild`, `1.6-onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/onbuild/Dockerfile)
+-	[`1.6beta1-wheezy`, `1.6-wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/wheezy/Dockerfile)
+-	[`1.6beta1-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/alpine/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -30,8 +36,7 @@ The most straightforward way to use this image is to use a Go container as both 
 FROM golang:1.3-onbuild
 ```
 
-This image includes multiple `ONBUILD` triggers which should cover most applications. The build will `COPY . /usr/src/app`, `RUN go get -d -v`, and `RUN
-go install -v`.
+This image includes multiple `ONBUILD` triggers which should cover most applications. The build will `COPY . /go/src/app`, `RUN go get -d -v`, and `RUN go install -v`.
 
 This image also includes the `CMD ["app"]` instruction which is the default command when running the image without arguments.
 
@@ -83,6 +88,14 @@ The `golang` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
+## `golang:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The only caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice.
+
+To minimize image size, it's uncommon for additional related tools to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile.
+
 ## `golang:onbuild`
 
 This image makes building derivative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM golang:onbuild` will be enough to create a stand-alone image for your project.
@@ -97,9 +110,11 @@ View [license information](http://golang.org/LICENSE) for the software contained
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

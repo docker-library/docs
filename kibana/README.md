@@ -1,8 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.0.3`, `4.0` (*4.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/0ffeed9bb61036fca3f23fa4f9208b90a484f150/4.0/Dockerfile)
--	[`4.1.2`, `4.1`, `4`, `latest` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/e39420bcf5bb76cd4a11180532a44978d04cb485/4.1/Dockerfile)
--	[`4.2.0-beta1`, `4.2.0`, `4.2` (*4.2/Dockerfile*)](https://github.com/docker-library/kibana/blob/6447404cba714e9415a1f9f4e438fdc7c7682eff/4.2/Dockerfile)
+-	[`4.1.4`, `4.1` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/e4e44e6e91f1708d859f5275aad189fdb50dfd7a/4.1/Dockerfile)
+-	[`4.2.2`, `4.2` (*4.2/Dockerfile*)](https://github.com/docker-library/kibana/blob/63d41b40afc169c437fd44f2efc6048d2931e7e4/4.2/Dockerfile)
+-	[`4.3.1`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/docker-library/kibana/blob/a747babc86c0235f94dc7b65d23743f4cbfd7bca/4.3/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kibana`)](https://github.com/docker-library/official-images/blob/master/library/kibana). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -52,9 +53,11 @@ View [license information](https://github.com/elastic/kibana/blob/4557a6fc0ba08c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

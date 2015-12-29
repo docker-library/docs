@@ -33,8 +33,8 @@ For more examples and ideas, visit:
 
 
 $ docker images hello-world
-REPOSITORY   TAG     IMAGE ID      VIRTUAL SIZE
-hello-world  latest  af340544ed62  960 B
+REPOSITORY   TAG     IMAGE ID      SIZE
+hello-world  latest  690ed74de00f  960 B
 ```
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/hello-world/logo.png)
@@ -45,9 +45,11 @@ This image is a prime example of using the [`scratch`](https://registry.hub.dock
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

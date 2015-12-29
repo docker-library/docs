@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.4`, `4.2`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/7926577517fb974f9de9ca1511162d6d5e000435/Dockerfile)
+-	[`4.2.5`, `4.2`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/1d9e5d95eaff6030dd28be4de0b415cc415e0497/Dockerfile)
 -	[`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/9fb5d2b7e0f2e7029855028e07e86ab7ec54abaa/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
@@ -56,7 +56,7 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
 If you want to generate the scaffolding for a new Rails project, you can do the following:
 
 ```console
-$ docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new webapp
+$ docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new --skip-bundle webapp
 ```
 
 This will create a sub-directory named `webapp` inside your current directory.
@@ -83,9 +83,11 @@ View [license information](https://github.com/rails/rails#license) for the softw
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.15`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/72ffa717934d7b8b4a63a86537749cc43e42161a/Dockerfile)
+-	[`3.7.0.2`, `latest` (*Dockerfile*)](https://github.com/aerospike/aerospike-server.docker/blob/0d4c3aa07c2991a3fd507675f53c9731763566d3/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/aerospike`)](https://github.com/docker-library/official-images/blob/master/library/aerospike). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -93,9 +93,11 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

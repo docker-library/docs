@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.3.11`, `0.3`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/951fefea3d24b6d60f5e64447a1ee94f0b809448/Dockerfile)
+-	[`0.4.2`, `0.4`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/a408dd5869f54f0adfc6b6950200f6781284d15e/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/julia`)](https://github.com/docker-library/official-images/blob/master/library/julia). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -36,9 +36,11 @@ View [license information](http://julialang.org/) for the software contained in 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

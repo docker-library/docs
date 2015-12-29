@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5`, `5.22`, `5.22.0` (*5.022.000-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150602.0/5.022.000-64bit/Dockerfile)
--	[`5.20`, `5.20.2` (*5.020.002-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150602.0/5.020.002-64bit/Dockerfile)
--	[`threaded`, `5-threaded`, `5.22-threaded`, `5.22.0-threaded` (*5.022.000-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150602.0/5.022.000-64bit,threaded/Dockerfile)
--	[`5.20-threaded`, `5.20.2-threaded` (*5.020.002-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20150602.0/5.020.002-64bit,threaded/Dockerfile)
+-	[`latest`, `5`, `5.22`, `5.22.1` (*5.022.001-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20151213.0/5.022.001-64bit/Dockerfile)
+-	[`5.20`, `5.20.3` (*5.020.003-64bit/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20151213.0/5.020.003-64bit/Dockerfile)
+-	[`threaded`, `5-threaded`, `5.22-threaded`, `5.22.1-threaded` (*5.022.001-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20151213.0/5.022.001-64bit,threaded/Dockerfile)
+-	[`5.20-threaded`, `5.20.3-threaded` (*5.020.003-64bit,threaded/Dockerfile*)](https://github.com/perl/docker-perl/blob/r20151213.0/5.020.003-64bit,threaded/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/perl`)](https://github.com/docker-library/official-images/blob/master/library/perl). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -49,9 +49,11 @@ View [license information](http://dev.perl.org/licenses/) for the software conta
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

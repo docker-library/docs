@@ -38,7 +38,7 @@ for repo in "${repos[@]}"; do
 			href="#${href,,}"
 			echo $'-\t[`'"$tag"'`]('"$href"')'
 		done
-		docker run -i --rm -v "$PWD":/wtf:ro -w /wtf --entrypoint "$script" docker-library-docs "${tags[@]}"
+		docker run -i --rm --entrypoint "$script" docker-library-docs "${tags[@]}"
 	} > "$repo/tag-details.md"
 	echo 'done'
 done

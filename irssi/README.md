@@ -26,29 +26,24 @@ On a Linux system, build and launch a container named `my-running-irssi` like th
 
 ```console
 $ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
+    --log-driver=none \
     -v $HOME/.irssi:/home/user/.irssi:ro \
     -v /etc/localtime:/etc/localtime:ro \
     irssi
 ```
 
+We specify `--log-driver=none` to avoid storing useless interactive terminal data.
+
 On a Mac OS X system, run the same image using:
 
 ```console
 $ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
+    --log-driver=none \
     -v $HOME/.irssi:/home/user/.irssi:ro \
     irssi
 ```
 
 You omit `/etc/localtime` on Mac OS X because `boot2docker` doesn't use this file.
-
-Of course, you can name your image anything you like. In Docker 1.5 you can also use the `--read-only` mount flag. For example, on Linux:
-
-```console
-$ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
-    --read-only -v $HOME/.irssi:/home/user/.irssi \
-    -v /etc/localtime:/etc/localtime \
-    irssi
-```
 
 # License
 
@@ -56,9 +51,11 @@ View [license information](https://github.com/irssi/irssi/blob/master/COPYING) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

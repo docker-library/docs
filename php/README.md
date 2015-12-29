@@ -1,17 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.45-cli`, `5.4-cli`, `5.4.45`, `5.4` (*5.4/Dockerfile*)](https://github.com/docker-library/php/blob/cf1e938f3721632443e01734bcfcbcf1160ea539/5.4/Dockerfile)
--	[`5.4.45-apache`, `5.4-apache` (*5.4/apache/Dockerfile*)](https://github.com/docker-library/php/blob/cf1e938f3721632443e01734bcfcbcf1160ea539/5.4/apache/Dockerfile)
--	[`5.4.45-fpm`, `5.4-fpm` (*5.4/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/cf1e938f3721632443e01734bcfcbcf1160ea539/5.4/fpm/Dockerfile)
--	[`5.5.29-cli`, `5.5-cli`, `5.5.29`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/cf1e938f3721632443e01734bcfcbcf1160ea539/5.5/Dockerfile)
--	[`5.5.29-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/cf1e938f3721632443e01734bcfcbcf1160ea539/5.5/apache/Dockerfile)
--	[`5.5.29-fpm`, `5.5-fpm` (*5.5/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/cf1e938f3721632443e01734bcfcbcf1160ea539/5.5/fpm/Dockerfile)
--	[`5.6.13-cli`, `5.6-cli`, `5-cli`, `cli`, `5.6.13`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/cf1e938f3721632443e01734bcfcbcf1160ea539/5.6/Dockerfile)
--	[`5.6.13-apache`, `5.6-apache`, `5-apache`, `apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/cf1e938f3721632443e01734bcfcbcf1160ea539/5.6/apache/Dockerfile)
--	[`5.6.13-fpm`, `5.6-fpm`, `5-fpm`, `fpm` (*5.6/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/cf1e938f3721632443e01734bcfcbcf1160ea539/5.6/fpm/Dockerfile)
--	[`7.0.0RC2-cli`, `7.0-cli`, `7-cli`, `7.0.0RC2`, `7.0`, `7` (*7.0/Dockerfile*)](https://github.com/docker-library/php/blob/8c25cfb2c5773a02e98ad7488a65db5123d4f2f7/7.0/Dockerfile)
--	[`7.0.0RC2-apache`, `7.0-apache`, `7-apache` (*7.0/apache/Dockerfile*)](https://github.com/docker-library/php/blob/8c25cfb2c5773a02e98ad7488a65db5123d4f2f7/7.0/apache/Dockerfile)
--	[`7.0.0RC2-fpm`, `7.0-fpm`, `7-fpm` (*7.0/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/8c25cfb2c5773a02e98ad7488a65db5123d4f2f7/7.0/fpm/Dockerfile)
+-	[`5.5.30-cli`, `5.5-cli`, `5.5.30`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/php/blob/a9f7fed15bc6bb03aa3648560ef4cb0ac79fb612/5.5/Dockerfile)
+-	[`5.5.30-apache`, `5.5-apache` (*5.5/apache/Dockerfile*)](https://github.com/docker-library/php/blob/a9f7fed15bc6bb03aa3648560ef4cb0ac79fb612/5.5/apache/Dockerfile)
+-	[`5.5.30-fpm`, `5.5-fpm` (*5.5/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/a9f7fed15bc6bb03aa3648560ef4cb0ac79fb612/5.5/fpm/Dockerfile)
+-	[`5.6.16-cli`, `5.6-cli`, `5-cli`, `5.6.16`, `5.6`, `5` (*5.6/Dockerfile*)](https://github.com/docker-library/php/blob/a9f7fed15bc6bb03aa3648560ef4cb0ac79fb612/5.6/Dockerfile)
+-	[`5.6.16-apache`, `5.6-apache`, `5-apache` (*5.6/apache/Dockerfile*)](https://github.com/docker-library/php/blob/a9f7fed15bc6bb03aa3648560ef4cb0ac79fb612/5.6/apache/Dockerfile)
+-	[`5.6.16-fpm`, `5.6-fpm`, `5-fpm` (*5.6/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/a9f7fed15bc6bb03aa3648560ef4cb0ac79fb612/5.6/fpm/Dockerfile)
+-	[`7.0.1-cli`, `7.0-cli`, `7-cli`, `cli`, `7.0.1`, `7.0`, `7`, `latest` (*7.0/Dockerfile*)](https://github.com/docker-library/php/blob/914f1fc040ed55d6fca2af602bdf0bb6f6b3b319/7.0/Dockerfile)
+-	[`7.0.1-apache`, `7.0-apache`, `7-apache`, `apache` (*7.0/apache/Dockerfile*)](https://github.com/docker-library/php/blob/914f1fc040ed55d6fca2af602bdf0bb6f6b3b319/7.0/apache/Dockerfile)
+-	[`7.0.1-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/914f1fc040ed55d6fca2af602bdf0bb6f6b3b319/7.0/fpm/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -110,7 +107,7 @@ Remember, you must install dependencies for your extensions manually. If an exte
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
 ```console
-$ docker run -it --rm --name my-apache-php-app -v "$PWD":/var/www/html php:5.6-apache
+$ docker run -p 80:80 -it --rm --name my-apache-php-app -v "$PWD":/var/www/html php:5.6-apache
 ```
 
 # License
@@ -119,9 +116,11 @@ View [license information](http://php.net/license/) for the software contained i
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

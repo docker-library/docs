@@ -1,7 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.26`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/e06675f0670414932e659db5ba8f98f8a430a1d1/1.4/Dockerfile)
--	[`1.5.14`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/ba0dc92fc368edb8e1f4928662316435fe782348/1.5/Dockerfile)
+-	[`1.4.26`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c1ab61d9ba298a8b40164ed91d8d0a797e7bb1c/1.4/Dockerfile)
+-	[`1.5.15`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c1ab61d9ba298a8b40164ed91d8d0a797e7bb1c/1.5/Dockerfile)
+-	[`1.6.2`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c1ab61d9ba298a8b40164ed91d8d0a797e7bb1c/1.6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -51,9 +52,11 @@ View [license information](http://www.haproxy.org/download/1.5/doc/LICENSE) for 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

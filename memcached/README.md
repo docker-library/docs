@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.24`, `1.4`, `1`, `latest` (*Dockerfile*)](https://github.com/docker-library/memcached/blob/5c034b3b8ab7216181f3c25f080b4d1dbb8bf888/Dockerfile)
+-	[`1.4.25`, `1.4`, `1`, `latest` (*Dockerfile*)](https://github.com/docker-library/memcached/blob/1944b045661a2fabcf2b9677f7edaa07e04f8d8d/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/memcached`)](https://github.com/docker-library/official-images/blob/master/library/memcached). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -34,7 +34,7 @@ How to set the memory usage for memcached
 $ docker run --name my-memcache -d memcached memcached -m 64
 ```
 
-This would set the memcache server to use use 64 megabytes for storage.
+This would set the memcache server to use 64 megabytes for storage.
 
 For infomation on configuring your memcached server, see the extensive [wiki](https://code.google.com/p/memcached/wiki/NewStart).
 
@@ -44,9 +44,11 @@ View [license information](https://github.com/memcached/memcached/blob/master/LI
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

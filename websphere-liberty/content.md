@@ -1,6 +1,6 @@
 # Overview
 
-The images in this repository contain IBM WebSphere Application Server for Developers Liberty Profile. For more information on WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site. Due to the current lack of geographic export controls on Docker Hub it has been necessary to remove the IBM Java Runtime Environment from these images. The images now build on the Debian based `java:jre` OpenJRE official repository image. To build an Ubuntu image with the IBM JRE, use the Dockerfiles available in the [ibmjre](https://github.com/WASdev/ci.docker/tree/ibmjre/websphere-liberty/8.5.5) branch on GitHub.
+The images in this repository contain IBM WebSphere Application Server for Developers Liberty Profile and the IBM Java Runtime Environment. See the license section below for restrictions relating to the usage of this image. For more information on WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
 
 # Images
 
@@ -10,7 +10,7 @@ The `kernel` image contains just the Liberty kernel and no additional runtime fe
 
 ```dockerfile
 FROM websphere-liberty:kernel
-COPY server.xml /opt/ibm/wlp/usr/servers/defaultServer/
+COPY server.xml /config/
 RUN installUtility install --acceptLicense defaultServer
 ```
 
@@ -24,8 +24,6 @@ There are also corresponding image tags that contain the version number of the L
 
 # Usage
 
-In order to use any of the images, it is necessary to accept the terms of the WebSphere Application Server for Developers license. This is achieved by specifying the environment variable `LICENSE` equal to `accept` when running an image. You can also view the license terms by setting this variable to `view`. Failure to set the variable will result in the termination of the container with a usage statement.
-
 The images are designed to support a number of different usage patterns. The following examples are based on the Java EE6 Liberty [application deployment sample](https://developer.ibm.com/wasdev/docs/article_appdeployment/) and assume that [DefaultServletEngine.zip](https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/resource/DefaultServletEngine.zip) has been extracted to `/tmp` and the `server.xml` updated to accept HTTP connections from outside of the container by adding the following element inside the `server` stanza:
 
 ```xml
@@ -35,8 +33,8 @@ The images are designed to support a number of different usage patterns. The fol
 1.	Each image contains a default server configuration that specifies the corresponding features and exposes ports 9080 and 9443 for HTTP and HTTPS respectively. A WAR file can therefore be mounted in to the `dropins` directory of this server and run. The following example starts a container in the background running a WAR file from the host file system with the HTTP and HTTPS ports mapped to 80 and 443 respectively.
 
 	```console
-	$ docker run -e LICENSE=accept -d -p 80:9080 -p 443:9443 \
-	    -v /tmp/DefaultServletEngine/dropins/Sample1.war:/opt/ibm/wlp/usr/servers/defaultServer/dropins/Sample1.war \
+	$ docker run -d -p 80:9080 -p 443:9443 \
+	    -v /tmp/DefaultServletEngine/dropins/Sample1.war:/config/dropins/Sample1.war \
 	    websphere-liberty:webProfile6
 	```
 
@@ -47,17 +45,16 @@ The images are designed to support a number of different usage patterns. The fol
 2.	For greater flexibility over configuration, it is possible to mount an entire server configuration directory from the host and then specify the server name as a parameter to the run command. Note that this particular example server configuration only provides HTTP access.
 
 	```console
-	$ docker run -e LICENSE=accept -d -p 80:9080 \
-	  -v /tmp/DefaultServletEngine:/opt/ibm/wlp/usr/servers/DefaultServletEngine \
-	  websphere-liberty:webProfile6 /opt/ibm/wlp/bin/server run DefaultServletEngine
+	$ docker run -d -p 80:9080 \
+	  -v /tmp/DefaultServletEngine:/config \
+	  websphere-liberty:webProfile6
 	```
 
-3.	It is also possible to build an application layer on top of this image using either the default server configuration or a new server configuration and, optionally, accept the license as part of that build. Here we have copied the `Sample1.war` from `/tmp/DefaultServletEngine/dropins` to the same directory as the following Dockerfile.
+3.	It is also possible to build an application layer on top of this image using either the default server configuration or a new server configuration. Here we have copied the `Sample1.war` from `/tmp/DefaultServletEngine/dropins` to the same directory as the following Dockerfile.
 
 	```dockerfile
 	FROM websphere-liberty:webProfile6
-	ADD Sample1.war /opt/ibm/wlp/usr/servers/defaultServer/dropins/
-	ENV LICENSE accept
+	ADD Sample1.war /config/dropins/
 	```
 
 	This can then be built and run as follows:
@@ -73,20 +70,19 @@ The images are designed to support a number of different usage patterns. The fol
 
 	```dockerfile
 	FROM websphere-liberty:webProfile6
-	ADD DefaultServletEngine /opt/ibm/wlp/usr/servers/DefaultServletEngine
+	ADD DefaultServletEngine /config
 	```
 
 	```console
 	$ docker build -t app-image .
-	$ docker run -d -v /opt/ibm/wlp/usr/servers/DefaultServletEngine \
+	$ docker run -d -v /config \
 	    --name app app-image true
 	```
 
 	Run the WebSphere Liberty image with the volumes from the data volume container mounted:
 
 	```console
-	$ docker run -e LICENSE=accept -d -p 80:9080 \
-	  --volumes-from app websphere-liberty:webProfile6 \
-	  /opt/ibm/wlp/bin/server run DefaultServletEngine
+	$ docker run -d -p 80:9080 \
+	  --volumes-from app websphere-liberty:webProfile6
 	```
 

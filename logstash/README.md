@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.5-1-a2bacae`, `1.4.5-1`, `1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/29f240de10ac358dba1bed7e777ab35742029858/1.4/Dockerfile)
--	[`1.5.4-1`, `1.5.4`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/722165120c05043a69c0482d7fecaff404428e51/1.5/Dockerfile)
+-	[`1.4.5-1-a2bacae`, `1.4.5-1`, `1.4.5`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/logstash/blob/33bd21c3d91a54456606ebc950028af554c82aa7/1.4/Dockerfile)
+-	[`1.5.6-1`, `1.5.6`, `1.5`, `1` (*1.5/Dockerfile*)](https://github.com/docker-library/logstash/blob/1005054d7dbda0a68dffd55540dabd03649d7d9e/1.5/Dockerfile)
+-	[`2.0.0-1`, `2.0.0`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/logstash/blob/33bd21c3d91a54456606ebc950028af554c82aa7/2.0/Dockerfile)
+-	[`2.1.1-1`, `2.1.1`, `2.1`, `2`, `latest` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/1005054d7dbda0a68dffd55540dabd03649d7d9e/2.1/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -39,9 +41,11 @@ View [license information](https://github.com/elastic/logstash/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

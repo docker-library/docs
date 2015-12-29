@@ -25,8 +25,8 @@ For more examples and ideas, visit:
 
 
 $ docker images hello-world
-REPOSITORY   TAG     IMAGE ID      VIRTUAL SIZE
-hello-world  latest  af340544ed62  960 B
+REPOSITORY   TAG     IMAGE ID      SIZE
+hello-world  latest  690ed74de00f  960 B
 ```
 
 %%LOGO%%

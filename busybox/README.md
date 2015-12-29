@@ -1,9 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`buildroot-2013.08.1` (*Dockerfile*)](https://github.com/jpetazzo/docker-busybox/blob/220a689ce359914af3e08a698d1d74ec7aa0a444/Dockerfile)
--	[`buildroot-2014.02`, `latest` (*Dockerfile*)](https://github.com/jpetazzo/docker-busybox/blob/91641afe424df5e838bac254d43e09f051ab8c3e/Dockerfile)
--	[`ubuntu-12.04` (*Dockerfile*)](https://github.com/jpetazzo/docker-busybox/blob/4f6cb64c3b3255c58021dc75100da0088796a108/Dockerfile)
--	[`ubuntu-14.04` (*Dockerfile*)](https://github.com/jpetazzo/docker-busybox/blob/ca435164f45c40d761fad9ef9b5a76a6ba0d5f1a/Dockerfile)
+-	[`1.21.0-ubuntu`, `1.21-ubuntu`, `1-ubuntu`, `ubuntu` (*ubuntu/Dockerfile*)](https://github.com/docker-library/busybox/blob/b783e409ecd7f7d3682bd18d27d9ea4668fb3cd0/ubuntu/Dockerfile)
+-	[`1.24.1`, `1.24`, `1`, `latest` (*upstream/Dockerfile*)](https://github.com/docker-library/busybox/blob/b783e409ecd7f7d3682bd18d27d9ea4668fb3cd0/upstream/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/busybox`)](https://github.com/docker-library/official-images/blob/master/library/busybox). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -51,9 +49,11 @@ View [license information](http://www.busybox.net/license.html) for the software
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

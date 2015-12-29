@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.6`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/redmine/blob/bcd0f77f268bb86dafd4afba0a0b36f478cf767f/2.6/Dockerfile)
--	[`2.6.6-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/5941e7f2d55015dc90df0224c4cc4199e1f6a83d/2.6/passenger/Dockerfile)
--	[`3.0.4`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/bcd0f77f268bb86dafd4afba0a0b36f478cf767f/3.0/Dockerfile)
--	[`3.0.4-passenger`, `3.0-passenger`, `3-passenger`, `passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/5941e7f2d55015dc90df0224c4cc4199e1f6a83d/3.0/passenger/Dockerfile)
+-	[`2.6.9`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/redmine/blob/0b1bd12df7afc21ec18dd2abfc263f28a0eded4a/2.6/Dockerfile)
+-	[`2.6.9-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/5baaf21e90656d3db14574577de99a87527a1d58/2.6/passenger/Dockerfile)
+-	[`3.0.7`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/0b1bd12df7afc21ec18dd2abfc263f28a0eded4a/3.0/Dockerfile)
+-	[`3.0.7-passenger`, `3.0-passenger`, `3-passenger`, `passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/5baaf21e90656d3db14574577de99a87527a1d58/3.0/passenger/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -109,9 +109,11 @@ This variable is used to create an initial `config/secrets.yml` and set the `sec
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

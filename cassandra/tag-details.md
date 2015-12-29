@@ -2,476 +2,111 @@
 
 # Tags of `cassandra`
 
--	[`cassandra:2.0.16`](#cassandra2016)
--	[`cassandra:2.0`](#cassandra20)
--	[`cassandra:2.1.9`](#cassandra219)
+-	[`cassandra:2.1.12`](#cassandra2112)
 -	[`cassandra:2.1`](#cassandra21)
--	[`cassandra:2.2.1`](#cassandra221)
+-	[`cassandra:2.2.4`](#cassandra224)
 -	[`cassandra:2.2`](#cassandra22)
 -	[`cassandra:2`](#cassandra2)
+-	[`cassandra:3.0.2`](#cassandra302)
+-	[`cassandra:3.0`](#cassandra30)
+-	[`cassandra:3`](#cassandra3)
 -	[`cassandra:latest`](#cassandralatest)
 
-## `cassandra:2.0.16`
+## `cassandra:2.1.12`
 
--	Total Virtual Size: 347.3 MB (347317234 bytes)
--	Total v2 Content-Length: 160.4 MB (160405124 bytes)
+```console
+$ docker pull library/cassandra@sha256:503f4a0459e7c3c3ee70d4a6e89f73c9d3c250ec6523e24a468dff5ff8fb45b5
+```
+
+-	Total Virtual Size: 355.8 MB (355823163 bytes)
+-	Total v2 Content-Length: 166.1 MB (166115213 bytes)
 
 ### Layers (13)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
-
-```dockerfile
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-```
-
--	Created: Mon, 24 Aug 2015 23:44:07 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
--	Virtual Size: 2.8 KB (2762 bytes)
--	v2 Blob: `sha256:6e04d786eb511cf6eae7e0ff9b9c5dbeeb2d1b61b80908e19adb6a099436affb`
--	v2 Content-Length: 3.1 KB (3052 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:19 GMT
-
-#### `69c4ad23a718557fa072b8b6dc97fcf1c40bdbe5ea5d6ce13c185aa617500561`
+#### `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
 
 ```dockerfile
-RUN echo 'deb http://www.apache.org/dist/cassandra/debian 20x main' >> /etc/apt/sources.list.d/cassandra.list
+RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:44:09 GMT
--	Parent Layer: `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
--	Docker Version: 1.7.1
--	Virtual Size: 57.0 B
--	v2 Blob: `sha256:1280a5020f079889ffdd48892cb425d7e288cebcb8ed46db93d8a2962018e9b9`
+-	Created: Fri, 04 Dec 2015 19:28:53 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 61.0 B
+-	v2 Blob: `sha256:090f1bb609ec14975461546e2ed49a0d58e12c0e0b8d9a1eb8ab3970af57a4de`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:17 GMT
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:47:04 GMT
 
-#### `c4418f954446832dc8cc85d692257ebefed1f366922b2711bb28567bfd8234fc`
-
-```dockerfile
-ENV CASSANDRA_VERSION=2.0.16
-```
-
--	Created: Mon, 24 Aug 2015 23:44:10 GMT
--	Parent Layer: `69c4ad23a718557fa072b8b6dc97fcf1c40bdbe5ea5d6ce13c185aa617500561`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `7fc230cdeed17ce3bc030b3f8e9e7f2e96cdc3f42a725c1653f906c95a13b82b`
-
-```dockerfile
-RUN apt-get update \
-	&& apt-get install -y cassandra="$CASSANDRA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 24 Aug 2015 23:46:29 GMT
--	Parent Layer: `c4418f954446832dc8cc85d692257ebefed1f366922b2711bb28567bfd8234fc`
--	Docker Version: 1.7.1
--	Virtual Size: 222.1 MB (222104807 bytes)
--	v2 Blob: `sha256:113d35c5f194e09ff6154a4858682c0b54afce6430319eb3c009abe8dcaf7f66`
--	v2 Content-Length: 109.0 MB (109020479 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:11 GMT
-
-#### `c2074e5226c3eabc87f80e07224eb6f02ffcd24f345d9b4eee4c79b1be5fc29c`
-
-```dockerfile
-ENV CASSANDRA_CONFIG=/etc/cassandra
-```
-
--	Created: Mon, 24 Aug 2015 23:46:33 GMT
--	Parent Layer: `7fc230cdeed17ce3bc030b3f8e9e7f2e96cdc3f42a725c1653f906c95a13b82b`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `44b51599c70bae903031a2e204c30fc0f040654623176b37ebffda3ea0ea62cb`
-
-```dockerfile
-RUN sed -ri ' \
-		s/^(rpc_address:).*/\1 0.0.0.0/; \
-	' "$CASSANDRA_CONFIG/cassandra.yaml"
-```
-
--	Created: Mon, 24 Aug 2015 23:46:34 GMT
--	Parent Layer: `c2074e5226c3eabc87f80e07224eb6f02ffcd24f345d9b4eee4c79b1be5fc29c`
--	Docker Version: 1.7.1
--	Virtual Size: 33.4 KB (33358 bytes)
--	v2 Blob: `sha256:7cc30745dc68237b5a7498938d0a78233c6ae41d5689b103286a7f3f2a1d4433`
--	v2 Content-Length: 12.1 KB (12091 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:20:16 GMT
-
-#### `e1691970d4530d0a19ac95c9216025113e7351c36c9378a59ba516ba14931c74`
-
-```dockerfile
-COPY file:cb319c02ff70bfad4a12d233e5e89fc8ccb0304dedffa21506f99bf0975281fd in /docker-entrypoint.sh
-```
-
--	Created: Mon, 24 Aug 2015 23:46:35 GMT
--	Parent Layer: `44b51599c70bae903031a2e204c30fc0f040654623176b37ebffda3ea0ea62cb`
--	Docker Version: 1.7.1
--	Virtual Size: 1.3 KB (1346 bytes)
--	v2 Blob: `sha256:961bf01a73801fa438d7900391ca5940bd4cd8da68b5eb46260f1d46ba756b82`
--	v2 Content-Length: 649.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:06:34 GMT
-
-#### `3db125ffc1d598bf7c9bc33eff61a81fe14f6e67a4dbc1f6a6b9aa8100a74302`
-
-```dockerfile
-ENTRYPOINT &{["/docker-entrypoint.sh"]}
-```
-
--	Created: Mon, 24 Aug 2015 23:46:36 GMT
--	Parent Layer: `e1691970d4530d0a19ac95c9216025113e7351c36c9378a59ba516ba14931c74`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `19b2013322f1fb42cb8fc3dbf93d502cf9851af79b19bbf0fabd7e0db13dbeb3`
-
-```dockerfile
-VOLUME [/var/lib/cassandra]
-```
-
--	Created: Mon, 24 Aug 2015 23:46:36 GMT
--	Parent Layer: `3db125ffc1d598bf7c9bc33eff61a81fe14f6e67a4dbc1f6a6b9aa8100a74302`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `a1d64306beb7c2e09ee32802cf359a0a8bedc352424d62df8e5c422fdeeae4d9`
-
-```dockerfile
-EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-```
-
--	Created: Mon, 24 Aug 2015 23:46:37 GMT
--	Parent Layer: `19b2013322f1fb42cb8fc3dbf93d502cf9851af79b19bbf0fabd7e0db13dbeb3`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `2d142789c411929c201a70d89c3053e0020fb4c29af188f05a25c499633611be`
-
-```dockerfile
-CMD ["cassandra" "-f"]
-```
-
--	Created: Mon, 24 Aug 2015 23:46:38 GMT
--	Parent Layer: `a1d64306beb7c2e09ee32802cf359a0a8bedc352424d62df8e5c422fdeeae4d9`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-## `cassandra:2.0`
-
--	Total Virtual Size: 347.3 MB (347317234 bytes)
--	Total v2 Content-Length: 160.4 MB (160405124 bytes)
-
-### Layers (13)
-
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
-
-```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
-```
-
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
-
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
+#### `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
 ```
 
--	Created: Mon, 24 Aug 2015 23:44:07 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:49:00 GMT
+-	Parent Layer: `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+-	Docker Version: 1.8.3
 -	Virtual Size: 2.8 KB (2762 bytes)
--	v2 Blob: `sha256:6e04d786eb511cf6eae7e0ff9b9c5dbeeb2d1b61b80908e19adb6a099436affb`
--	v2 Content-Length: 3.1 KB (3052 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:19 GMT
+-	v2 Blob: `sha256:ed99cd635f44c400ab1a7583c7505cd3bb9f870442781d823ea0828693c57361`
+-	v2 Content-Length: 3.1 KB (3053 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:46 GMT
 
-#### `69c4ad23a718557fa072b8b6dc97fcf1c40bdbe5ea5d6ce13c185aa617500561`
-
-```dockerfile
-RUN echo 'deb http://www.apache.org/dist/cassandra/debian 20x main' >> /etc/apt/sources.list.d/cassandra.list
-```
-
--	Created: Mon, 24 Aug 2015 23:44:09 GMT
--	Parent Layer: `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
--	Docker Version: 1.7.1
--	Virtual Size: 57.0 B
--	v2 Blob: `sha256:1280a5020f079889ffdd48892cb425d7e288cebcb8ed46db93d8a2962018e9b9`
--	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:17 GMT
-
-#### `c4418f954446832dc8cc85d692257ebefed1f366922b2711bb28567bfd8234fc`
-
-```dockerfile
-ENV CASSANDRA_VERSION=2.0.16
-```
-
--	Created: Mon, 24 Aug 2015 23:44:10 GMT
--	Parent Layer: `69c4ad23a718557fa072b8b6dc97fcf1c40bdbe5ea5d6ce13c185aa617500561`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `7fc230cdeed17ce3bc030b3f8e9e7f2e96cdc3f42a725c1653f906c95a13b82b`
-
-```dockerfile
-RUN apt-get update \
-	&& apt-get install -y cassandra="$CASSANDRA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 24 Aug 2015 23:46:29 GMT
--	Parent Layer: `c4418f954446832dc8cc85d692257ebefed1f366922b2711bb28567bfd8234fc`
--	Docker Version: 1.7.1
--	Virtual Size: 222.1 MB (222104807 bytes)
--	v2 Blob: `sha256:113d35c5f194e09ff6154a4858682c0b54afce6430319eb3c009abe8dcaf7f66`
--	v2 Content-Length: 109.0 MB (109020479 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:11 GMT
-
-#### `c2074e5226c3eabc87f80e07224eb6f02ffcd24f345d9b4eee4c79b1be5fc29c`
-
-```dockerfile
-ENV CASSANDRA_CONFIG=/etc/cassandra
-```
-
--	Created: Mon, 24 Aug 2015 23:46:33 GMT
--	Parent Layer: `7fc230cdeed17ce3bc030b3f8e9e7f2e96cdc3f42a725c1653f906c95a13b82b`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `44b51599c70bae903031a2e204c30fc0f040654623176b37ebffda3ea0ea62cb`
-
-```dockerfile
-RUN sed -ri ' \
-		s/^(rpc_address:).*/\1 0.0.0.0/; \
-	' "$CASSANDRA_CONFIG/cassandra.yaml"
-```
-
--	Created: Mon, 24 Aug 2015 23:46:34 GMT
--	Parent Layer: `c2074e5226c3eabc87f80e07224eb6f02ffcd24f345d9b4eee4c79b1be5fc29c`
--	Docker Version: 1.7.1
--	Virtual Size: 33.4 KB (33358 bytes)
--	v2 Blob: `sha256:7cc30745dc68237b5a7498938d0a78233c6ae41d5689b103286a7f3f2a1d4433`
--	v2 Content-Length: 12.1 KB (12091 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:20:16 GMT
-
-#### `e1691970d4530d0a19ac95c9216025113e7351c36c9378a59ba516ba14931c74`
-
-```dockerfile
-COPY file:cb319c02ff70bfad4a12d233e5e89fc8ccb0304dedffa21506f99bf0975281fd in /docker-entrypoint.sh
-```
-
--	Created: Mon, 24 Aug 2015 23:46:35 GMT
--	Parent Layer: `44b51599c70bae903031a2e204c30fc0f040654623176b37ebffda3ea0ea62cb`
--	Docker Version: 1.7.1
--	Virtual Size: 1.3 KB (1346 bytes)
--	v2 Blob: `sha256:961bf01a73801fa438d7900391ca5940bd4cd8da68b5eb46260f1d46ba756b82`
--	v2 Content-Length: 649.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:06:34 GMT
-
-#### `3db125ffc1d598bf7c9bc33eff61a81fe14f6e67a4dbc1f6a6b9aa8100a74302`
-
-```dockerfile
-ENTRYPOINT &{["/docker-entrypoint.sh"]}
-```
-
--	Created: Mon, 24 Aug 2015 23:46:36 GMT
--	Parent Layer: `e1691970d4530d0a19ac95c9216025113e7351c36c9378a59ba516ba14931c74`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `19b2013322f1fb42cb8fc3dbf93d502cf9851af79b19bbf0fabd7e0db13dbeb3`
-
-```dockerfile
-VOLUME [/var/lib/cassandra]
-```
-
--	Created: Mon, 24 Aug 2015 23:46:36 GMT
--	Parent Layer: `3db125ffc1d598bf7c9bc33eff61a81fe14f6e67a4dbc1f6a6b9aa8100a74302`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `a1d64306beb7c2e09ee32802cf359a0a8bedc352424d62df8e5c422fdeeae4d9`
-
-```dockerfile
-EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-```
-
--	Created: Mon, 24 Aug 2015 23:46:37 GMT
--	Parent Layer: `19b2013322f1fb42cb8fc3dbf93d502cf9851af79b19bbf0fabd7e0db13dbeb3`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `2d142789c411929c201a70d89c3053e0020fb4c29af188f05a25c499633611be`
-
-```dockerfile
-CMD ["cassandra" "-f"]
-```
-
--	Created: Mon, 24 Aug 2015 23:46:38 GMT
--	Parent Layer: `a1d64306beb7c2e09ee32802cf359a0a8bedc352424d62df8e5c422fdeeae4d9`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-## `cassandra:2.1.9`
-
--	Total Virtual Size: 353.4 MB (353431977 bytes)
--	Total v2 Content-Length: 165.9 MB (165896226 bytes)
-
-### Layers (13)
-
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
-
-```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
-```
-
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
-
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
-
-#### `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
-
-```dockerfile
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
-```
-
--	Created: Mon, 24 Aug 2015 23:44:07 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
--	Virtual Size: 2.8 KB (2762 bytes)
--	v2 Blob: `sha256:6e04d786eb511cf6eae7e0ff9b9c5dbeeb2d1b61b80908e19adb6a099436affb`
--	v2 Content-Length: 3.1 KB (3052 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:19 GMT
-
-#### `40eb63aef93405b98562a0d05c30ac627be2926d4c7dd6bfade3094b6ac56e39`
+#### `50106e5829686b620a09092417a3a34e7e346e037d98635b0cd18146af79ea94`
 
 ```dockerfile
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 21x main' >> /etc/apt/sources.list.d/cassandra.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:48:00 GMT
--	Parent Layer: `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:49:02 GMT
+-	Parent Layer: `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+-	Docker Version: 1.8.3
 -	Virtual Size: 57.0 B
--	v2 Blob: `sha256:4d3552c873594fe91beeba0e595c93eed9898f02b6d535dfea7f34efdf7ed192`
--	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 18:24:49 GMT
+-	v2 Blob: `sha256:5706c4e7268a62aee80cdeb34a4eb40f7d52003f4982645b4088d196a507bb30`
+-	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:36 GMT
 
-#### `f0eb550f5f6622c6fee07d7403b51405bcb33a61b63429cb70fc2ea36fb9ee68`
+#### `0c2a9a6e8d9a7bc719a848284a64f953d7d902710d13d45078f39269f8a1bdb0`
 
 ```dockerfile
-ENV CASSANDRA_VERSION=2.1.9
+ENV CASSANDRA_VERSION=2.1.12
 ```
 
--	Created: Fri, 28 Aug 2015 22:14:49 GMT
--	Parent Layer: `40eb63aef93405b98562a0d05c30ac627be2926d4c7dd6bfade3094b6ac56e39`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:56:33 GMT
+-	Parent Layer: `50106e5829686b620a09092417a3a34e7e346e037d98635b0cd18146af79ea94`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `869104cb32f4cf034eabeb777a93c19763f3e0658259cd7d49b7e51ae3855f28`
+#### `bbb72a4dd15ddef91d45bea3515927e76c2c5ca56eb63b0c040b71f85153dfe7`
 
 ```dockerfile
 RUN apt-get update \
@@ -479,191 +114,193 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:29 GMT
--	Parent Layer: `f0eb550f5f6622c6fee07d7403b51405bcb33a61b63429cb70fc2ea36fb9ee68`
--	Docker Version: 1.7.1
--	Virtual Size: 228.2 MB (228215065 bytes)
--	v2 Blob: `sha256:b3ab962a76af9da22caabc52c43bf075f56875ac25a3629f759b6c4e9c1e642b`
--	v2 Content-Length: 114.5 MB (114510554 bytes)
--	v2 Last-Modified: Fri, 28 Aug 2015 22:59:48 GMT
+-	Created: Tue, 08 Dec 2015 22:58:01 GMT
+-	Parent Layer: `0c2a9a6e8d9a7bc719a848284a64f953d7d902710d13d45078f39269f8a1bdb0`
+-	Docker Version: 1.8.3
+-	Virtual Size: 230.7 MB (230703650 bytes)
+-	v2 Blob: `sha256:eed9ea18dbedfc4c3d3c58f31eb00fca7fb02b698a63d6a1dae2f96bec26a0b3`
+-	v2 Content-Length: 114.8 MB (114756606 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 00:54:32 GMT
 
-#### `c34075acd162275d315dcd627eb2d4c3d7652a8ae26ab945caba24794e717ced`
+#### `82143077d12bdba74d7e38e4274ddd2aaa976cfd03d8b1559b657b0abbf61425`
 
 ```dockerfile
 ENV CASSANDRA_CONFIG=/etc/cassandra
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:31 GMT
--	Parent Layer: `869104cb32f4cf034eabeb777a93c19763f3e0658259cd7d49b7e51ae3855f28`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:04 GMT
+-	Parent Layer: `bbb72a4dd15ddef91d45bea3515927e76c2c5ca56eb63b0c040b71f85153dfe7`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `28cb0c377c464e9fdfb120b935fa5f69120ea44c305a74a866d00a6ddef5fcad`
-
-```dockerfile
-RUN sed -ri ' \
-		s/^(rpc_address:).*/\1 0.0.0.0/; \
-	' "$CASSANDRA_CONFIG/cassandra.yaml"
-```
-
--	Created: Fri, 28 Aug 2015 22:16:32 GMT
--	Parent Layer: `c34075acd162275d315dcd627eb2d4c3d7652a8ae26ab945caba24794e717ced`
--	Docker Version: 1.7.1
--	Virtual Size: 37.8 KB (37843 bytes)
--	v2 Blob: `sha256:483c73078fe32715e100c68c909a01f6acfd67e580654fb0b39247a02cf73a5a`
--	v2 Content-Length: 13.1 KB (13120 bytes)
--	v2 Last-Modified: Fri, 28 Aug 2015 22:58:17 GMT
-
-#### `72d282db1b4a889977497199ebfd1a5f2bf432c9bf5461208b82dfb39c5dc060`
+#### `3e0e65d1ffe0eebf4dfe59950754bbd84c0abba1ccdb396f0d52ad48498c6ba3`
 
 ```dockerfile
-COPY file:cb319c02ff70bfad4a12d233e5e89fc8ccb0304dedffa21506f99bf0975281fd in /docker-entrypoint.sh
+COPY file:9b33d987889a913a585ac5c1347a14a3c9ef5e690128a41400b5f5f17f4b2320 in /docker-entrypoint.sh
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:32 GMT
--	Parent Layer: `28cb0c377c464e9fdfb120b935fa5f69120ea44c305a74a866d00a6ddef5fcad`
--	Docker Version: 1.7.1
--	Virtual Size: 1.3 KB (1346 bytes)
--	v2 Blob: `sha256:961bf01a73801fa438d7900391ca5940bd4cd8da68b5eb46260f1d46ba756b82`
--	v2 Content-Length: 649.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:06:34 GMT
+-	Created: Tue, 08 Dec 2015 22:58:05 GMT
+-	Parent Layer: `82143077d12bdba74d7e38e4274ddd2aaa976cfd03d8b1559b657b0abbf61425`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.4 KB (1366 bytes)
+-	v2 Blob: `sha256:efd03ff5c3e149ce414b4eee63d5d9dca5fd6fd5bc8d6da2e7f4c10f1bd26acd`
+-	v2 Content-Length: 635.0 B
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:38:26 GMT
 
-#### `76ee92d7fad2e006395a31df3e3b7f3e75c5be4df369a2aa08db2e58e025b362`
+#### `1efbb966c50fdd0206d74f1216013c066311348e7d5b3024aff99a7ff71329c8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:33 GMT
--	Parent Layer: `72d282db1b4a889977497199ebfd1a5f2bf432c9bf5461208b82dfb39c5dc060`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:05 GMT
+-	Parent Layer: `3e0e65d1ffe0eebf4dfe59950754bbd84c0abba1ccdb396f0d52ad48498c6ba3`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1f3ac37bfb1969414fac128f64fe1325fd9a35f41392b071a897dd7293f1b299`
+#### `4652720fa4bdf9209845c24fd2adec033e3d5f7c5abfc3a96ee4ee1c9fac099b`
 
 ```dockerfile
 VOLUME [/var/lib/cassandra]
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:33 GMT
--	Parent Layer: `76ee92d7fad2e006395a31df3e3b7f3e75c5be4df369a2aa08db2e58e025b362`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:06 GMT
+-	Parent Layer: `1efbb966c50fdd0206d74f1216013c066311348e7d5b3024aff99a7ff71329c8`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `485e374a457f52e4517ae00cf2436e21b704ab9e327382100556e3c459cf79e3`
+#### `c3bb54f0cfd763457a7a285b0a4c92955d3b0e801cc723c31fe9bc9c8ee2636a`
 
 ```dockerfile
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:33 GMT
--	Parent Layer: `1f3ac37bfb1969414fac128f64fe1325fd9a35f41392b071a897dd7293f1b299`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:06 GMT
+-	Parent Layer: `4652720fa4bdf9209845c24fd2adec033e3d5f7c5abfc3a96ee4ee1c9fac099b`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9dc35afd3af083e5b6b4660004496cae46f7b293ce32bf87c2ddb170d8028a32`
+#### `339d65d9ba6172b4966dc0e713e70b8a4abb7d49b038dc6f64464fbe56798e02`
 
 ```dockerfile
 CMD ["cassandra" "-f"]
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:34 GMT
--	Parent Layer: `485e374a457f52e4517ae00cf2436e21b704ab9e327382100556e3c459cf79e3`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:07 GMT
+-	Parent Layer: `c3bb54f0cfd763457a7a285b0a4c92955d3b0e801cc723c31fe9bc9c8ee2636a`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `cassandra:2.1`
 
--	Total Virtual Size: 353.4 MB (353431977 bytes)
--	Total v2 Content-Length: 165.9 MB (165896226 bytes)
+```console
+$ docker pull library/cassandra@sha256:cc5b112ee02148de9c877ef78e2dc9ba843873529492e6de0c338facfabc0b65
+```
+
+-	Total Virtual Size: 355.8 MB (355823163 bytes)
+-	Total v2 Content-Length: 166.1 MB (166115213 bytes)
 
 ### Layers (13)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
+#### `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+
+```dockerfile
+RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:53 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 61.0 B
+-	v2 Blob: `sha256:090f1bb609ec14975461546e2ed49a0d58e12c0e0b8d9a1eb8ab3970af57a4de`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:47:04 GMT
+
+#### `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
 ```
 
--	Created: Mon, 24 Aug 2015 23:44:07 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:49:00 GMT
+-	Parent Layer: `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+-	Docker Version: 1.8.3
 -	Virtual Size: 2.8 KB (2762 bytes)
--	v2 Blob: `sha256:6e04d786eb511cf6eae7e0ff9b9c5dbeeb2d1b61b80908e19adb6a099436affb`
--	v2 Content-Length: 3.1 KB (3052 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:19 GMT
+-	v2 Blob: `sha256:ed99cd635f44c400ab1a7583c7505cd3bb9f870442781d823ea0828693c57361`
+-	v2 Content-Length: 3.1 KB (3053 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:46 GMT
 
-#### `40eb63aef93405b98562a0d05c30ac627be2926d4c7dd6bfade3094b6ac56e39`
+#### `50106e5829686b620a09092417a3a34e7e346e037d98635b0cd18146af79ea94`
 
 ```dockerfile
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 21x main' >> /etc/apt/sources.list.d/cassandra.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:48:00 GMT
--	Parent Layer: `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:49:02 GMT
+-	Parent Layer: `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+-	Docker Version: 1.8.3
 -	Virtual Size: 57.0 B
--	v2 Blob: `sha256:4d3552c873594fe91beeba0e595c93eed9898f02b6d535dfea7f34efdf7ed192`
--	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 18:24:49 GMT
+-	v2 Blob: `sha256:5706c4e7268a62aee80cdeb34a4eb40f7d52003f4982645b4088d196a507bb30`
+-	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:36 GMT
 
-#### `f0eb550f5f6622c6fee07d7403b51405bcb33a61b63429cb70fc2ea36fb9ee68`
+#### `0c2a9a6e8d9a7bc719a848284a64f953d7d902710d13d45078f39269f8a1bdb0`
 
 ```dockerfile
-ENV CASSANDRA_VERSION=2.1.9
+ENV CASSANDRA_VERSION=2.1.12
 ```
 
--	Created: Fri, 28 Aug 2015 22:14:49 GMT
--	Parent Layer: `40eb63aef93405b98562a0d05c30ac627be2926d4c7dd6bfade3094b6ac56e39`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:56:33 GMT
+-	Parent Layer: `50106e5829686b620a09092417a3a34e7e346e037d98635b0cd18146af79ea94`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `869104cb32f4cf034eabeb777a93c19763f3e0658259cd7d49b7e51ae3855f28`
+#### `bbb72a4dd15ddef91d45bea3515927e76c2c5ca56eb63b0c040b71f85153dfe7`
 
 ```dockerfile
 RUN apt-get update \
@@ -671,191 +308,193 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:29 GMT
--	Parent Layer: `f0eb550f5f6622c6fee07d7403b51405bcb33a61b63429cb70fc2ea36fb9ee68`
--	Docker Version: 1.7.1
--	Virtual Size: 228.2 MB (228215065 bytes)
--	v2 Blob: `sha256:b3ab962a76af9da22caabc52c43bf075f56875ac25a3629f759b6c4e9c1e642b`
--	v2 Content-Length: 114.5 MB (114510554 bytes)
--	v2 Last-Modified: Fri, 28 Aug 2015 22:59:48 GMT
+-	Created: Tue, 08 Dec 2015 22:58:01 GMT
+-	Parent Layer: `0c2a9a6e8d9a7bc719a848284a64f953d7d902710d13d45078f39269f8a1bdb0`
+-	Docker Version: 1.8.3
+-	Virtual Size: 230.7 MB (230703650 bytes)
+-	v2 Blob: `sha256:eed9ea18dbedfc4c3d3c58f31eb00fca7fb02b698a63d6a1dae2f96bec26a0b3`
+-	v2 Content-Length: 114.8 MB (114756606 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 00:54:32 GMT
 
-#### `c34075acd162275d315dcd627eb2d4c3d7652a8ae26ab945caba24794e717ced`
+#### `82143077d12bdba74d7e38e4274ddd2aaa976cfd03d8b1559b657b0abbf61425`
 
 ```dockerfile
 ENV CASSANDRA_CONFIG=/etc/cassandra
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:31 GMT
--	Parent Layer: `869104cb32f4cf034eabeb777a93c19763f3e0658259cd7d49b7e51ae3855f28`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:04 GMT
+-	Parent Layer: `bbb72a4dd15ddef91d45bea3515927e76c2c5ca56eb63b0c040b71f85153dfe7`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `28cb0c377c464e9fdfb120b935fa5f69120ea44c305a74a866d00a6ddef5fcad`
-
-```dockerfile
-RUN sed -ri ' \
-		s/^(rpc_address:).*/\1 0.0.0.0/; \
-	' "$CASSANDRA_CONFIG/cassandra.yaml"
-```
-
--	Created: Fri, 28 Aug 2015 22:16:32 GMT
--	Parent Layer: `c34075acd162275d315dcd627eb2d4c3d7652a8ae26ab945caba24794e717ced`
--	Docker Version: 1.7.1
--	Virtual Size: 37.8 KB (37843 bytes)
--	v2 Blob: `sha256:483c73078fe32715e100c68c909a01f6acfd67e580654fb0b39247a02cf73a5a`
--	v2 Content-Length: 13.1 KB (13120 bytes)
--	v2 Last-Modified: Fri, 28 Aug 2015 22:58:17 GMT
-
-#### `72d282db1b4a889977497199ebfd1a5f2bf432c9bf5461208b82dfb39c5dc060`
+#### `3e0e65d1ffe0eebf4dfe59950754bbd84c0abba1ccdb396f0d52ad48498c6ba3`
 
 ```dockerfile
-COPY file:cb319c02ff70bfad4a12d233e5e89fc8ccb0304dedffa21506f99bf0975281fd in /docker-entrypoint.sh
+COPY file:9b33d987889a913a585ac5c1347a14a3c9ef5e690128a41400b5f5f17f4b2320 in /docker-entrypoint.sh
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:32 GMT
--	Parent Layer: `28cb0c377c464e9fdfb120b935fa5f69120ea44c305a74a866d00a6ddef5fcad`
--	Docker Version: 1.7.1
--	Virtual Size: 1.3 KB (1346 bytes)
--	v2 Blob: `sha256:961bf01a73801fa438d7900391ca5940bd4cd8da68b5eb46260f1d46ba756b82`
--	v2 Content-Length: 649.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:06:34 GMT
+-	Created: Tue, 08 Dec 2015 22:58:05 GMT
+-	Parent Layer: `82143077d12bdba74d7e38e4274ddd2aaa976cfd03d8b1559b657b0abbf61425`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.4 KB (1366 bytes)
+-	v2 Blob: `sha256:efd03ff5c3e149ce414b4eee63d5d9dca5fd6fd5bc8d6da2e7f4c10f1bd26acd`
+-	v2 Content-Length: 635.0 B
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:38:26 GMT
 
-#### `76ee92d7fad2e006395a31df3e3b7f3e75c5be4df369a2aa08db2e58e025b362`
+#### `1efbb966c50fdd0206d74f1216013c066311348e7d5b3024aff99a7ff71329c8`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:33 GMT
--	Parent Layer: `72d282db1b4a889977497199ebfd1a5f2bf432c9bf5461208b82dfb39c5dc060`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:05 GMT
+-	Parent Layer: `3e0e65d1ffe0eebf4dfe59950754bbd84c0abba1ccdb396f0d52ad48498c6ba3`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1f3ac37bfb1969414fac128f64fe1325fd9a35f41392b071a897dd7293f1b299`
+#### `4652720fa4bdf9209845c24fd2adec033e3d5f7c5abfc3a96ee4ee1c9fac099b`
 
 ```dockerfile
 VOLUME [/var/lib/cassandra]
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:33 GMT
--	Parent Layer: `76ee92d7fad2e006395a31df3e3b7f3e75c5be4df369a2aa08db2e58e025b362`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:06 GMT
+-	Parent Layer: `1efbb966c50fdd0206d74f1216013c066311348e7d5b3024aff99a7ff71329c8`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `485e374a457f52e4517ae00cf2436e21b704ab9e327382100556e3c459cf79e3`
+#### `c3bb54f0cfd763457a7a285b0a4c92955d3b0e801cc723c31fe9bc9c8ee2636a`
 
 ```dockerfile
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:33 GMT
--	Parent Layer: `1f3ac37bfb1969414fac128f64fe1325fd9a35f41392b071a897dd7293f1b299`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:06 GMT
+-	Parent Layer: `4652720fa4bdf9209845c24fd2adec033e3d5f7c5abfc3a96ee4ee1c9fac099b`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9dc35afd3af083e5b6b4660004496cae46f7b293ce32bf87c2ddb170d8028a32`
+#### `339d65d9ba6172b4966dc0e713e70b8a4abb7d49b038dc6f64464fbe56798e02`
 
 ```dockerfile
 CMD ["cassandra" "-f"]
 ```
 
--	Created: Fri, 28 Aug 2015 22:16:34 GMT
--	Parent Layer: `485e374a457f52e4517ae00cf2436e21b704ab9e327382100556e3c459cf79e3`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:07 GMT
+-	Parent Layer: `c3bb54f0cfd763457a7a285b0a4c92955d3b0e801cc723c31fe9bc9c8ee2636a`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `cassandra:2.2.1`
+## `cassandra:2.2.4`
 
--	Total Virtual Size: 362.6 MB (362634938 bytes)
--	Total v2 Content-Length: 170.1 MB (170098386 bytes)
+```console
+$ docker pull library/cassandra@sha256:051991cd3114d67faf3ba288b835375e70ade66700427144266582df64607f88
+```
+
+-	Total Virtual Size: 365.1 MB (365134882 bytes)
+-	Total v2 Content-Length: 170.3 MB (170341548 bytes)
 
 ### Layers (13)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
+#### `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+
+```dockerfile
+RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:53 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 61.0 B
+-	v2 Blob: `sha256:090f1bb609ec14975461546e2ed49a0d58e12c0e0b8d9a1eb8ab3970af57a4de`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:47:04 GMT
+
+#### `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
 ```
 
--	Created: Mon, 24 Aug 2015 23:44:07 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:49:00 GMT
+-	Parent Layer: `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+-	Docker Version: 1.8.3
 -	Virtual Size: 2.8 KB (2762 bytes)
--	v2 Blob: `sha256:6e04d786eb511cf6eae7e0ff9b9c5dbeeb2d1b61b80908e19adb6a099436affb`
--	v2 Content-Length: 3.1 KB (3052 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:19 GMT
+-	v2 Blob: `sha256:ed99cd635f44c400ab1a7583c7505cd3bb9f870442781d823ea0828693c57361`
+-	v2 Content-Length: 3.1 KB (3053 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:46 GMT
 
-#### `d15716c673172b6e382a734c709e5f19c8f5673b39c57fae42c7220b1d9db015`
+#### `37f0c09546c62f77b93478b099695136868ed4b44e262ae36f90bfd11e6d8333`
 
 ```dockerfile
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 22x main' >> /etc/apt/sources.list.d/cassandra.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:52:23 GMT
--	Parent Layer: `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:51:38 GMT
+-	Parent Layer: `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+-	Docker Version: 1.8.3
 -	Virtual Size: 57.0 B
--	v2 Blob: `sha256:c1c25a9e54c16e33aa1f603bb921fabddac053e7ccda729c2311fea581160405`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 18:27:22 GMT
+-	v2 Blob: `sha256:5a16ae02ade947a55ed0224b8120ef54a46c35dab321e5b200d491b4f9fd6063`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:40:50 GMT
 
-#### `494295f4855e9edfac8a4e4441cfacedaf2e8c5d923cd2f9e1cb510915a9261b`
+#### `a4da2a7fd9047e2547131734858b3b7a670abbef97e3f4e0a89fec611ab33444`
 
 ```dockerfile
-ENV CASSANDRA_VERSION=2.2.1
+ENV CASSANDRA_VERSION=2.2.4
 ```
 
--	Created: Wed, 02 Sep 2015 22:14:37 GMT
--	Parent Layer: `d15716c673172b6e382a734c709e5f19c8f5673b39c57fae42c7220b1d9db015`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:47 GMT
+-	Parent Layer: `37f0c09546c62f77b93478b099695136868ed4b44e262ae36f90bfd11e6d8333`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f84bfd6deeb88c0b4515b234077e077d3ed154b30aea6031efaeef9dba7f4e48`
+#### `59a50d269abfed5daf3cbe0a0461a9de905314bf5e152ff0e9cd30e50b2583ee`
 
 ```dockerfile
 RUN apt-get update \
@@ -863,191 +502,193 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Sep 2015 22:19:59 GMT
--	Parent Layer: `494295f4855e9edfac8a4e4441cfacedaf2e8c5d923cd2f9e1cb510915a9261b`
--	Docker Version: 1.7.1
--	Virtual Size: 237.4 MB (237414629 bytes)
--	v2 Blob: `sha256:0a1bbf2b35cfa301be98e430a855b83ed6bbe4ee6fa73263bfdd45bc5bd9b49b`
--	v2 Content-Length: 118.7 MB (118711723 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 17:39:51 GMT
+-	Created: Tue, 08 Dec 2015 23:04:48 GMT
+-	Parent Layer: `a4da2a7fd9047e2547131734858b3b7a670abbef97e3f4e0a89fec611ab33444`
+-	Docker Version: 1.8.3
+-	Virtual Size: 240.0 MB (240015369 bytes)
+-	v2 Blob: `sha256:e62b2dffa7369bc5ea5ef80a332671c51db00fb509c01dc37015d60a155e6601`
+-	v2 Content-Length: 119.0 MB (118982940 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 00:56:48 GMT
 
-#### `db230c02aac32467c8a2e1ef68e1b1f1fcc13e5025147cfb7418e22f89087c8c`
+#### `5eb613055d171340288cb30caf42d42987b24444ea18a0c228745f12bdbc06a9`
 
 ```dockerfile
 ENV CASSANDRA_CONFIG=/etc/cassandra
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:01 GMT
--	Parent Layer: `f84bfd6deeb88c0b4515b234077e077d3ed154b30aea6031efaeef9dba7f4e48`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:52 GMT
+-	Parent Layer: `59a50d269abfed5daf3cbe0a0461a9de905314bf5e152ff0e9cd30e50b2583ee`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `12e4eccb876297cded8e01c9f9dc955297d05f913cf37ec7a7052278c3db0a67`
-
-```dockerfile
-RUN sed -ri ' \
-		s/^(rpc_address:).*/\1 0.0.0.0/; \
-	' "$CASSANDRA_CONFIG/cassandra.yaml"
-```
-
--	Created: Wed, 02 Sep 2015 22:20:02 GMT
--	Parent Layer: `db230c02aac32467c8a2e1ef68e1b1f1fcc13e5025147cfb7418e22f89087c8c`
--	Docker Version: 1.7.1
--	Virtual Size: 41.2 KB (41240 bytes)
--	v2 Blob: `sha256:0fdc4e7ca61e10b81b3aca925b787ef9e3725af02f794cf879675f18e974a5ba`
--	v2 Content-Length: 14.1 KB (14107 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 17:39:06 GMT
-
-#### `9e4c8eaadc5531129a557fd89b6ddafeb8ade6d0757877d06f35976f6a05226e`
+#### `a01c0f65c82b1ebc81e9dfe218af5a876f4b1b43f8dc1d8e13ac7dfb6bde1a28`
 
 ```dockerfile
-COPY file:cb319c02ff70bfad4a12d233e5e89fc8ccb0304dedffa21506f99bf0975281fd in /docker-entrypoint.sh
+COPY file:9b33d987889a913a585ac5c1347a14a3c9ef5e690128a41400b5f5f17f4b2320 in /docker-entrypoint.sh
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:02 GMT
--	Parent Layer: `12e4eccb876297cded8e01c9f9dc955297d05f913cf37ec7a7052278c3db0a67`
--	Docker Version: 1.7.1
--	Virtual Size: 1.3 KB (1346 bytes)
--	v2 Blob: `sha256:961bf01a73801fa438d7900391ca5940bd4cd8da68b5eb46260f1d46ba756b82`
--	v2 Content-Length: 649.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:06:34 GMT
+-	Created: Tue, 08 Dec 2015 23:04:52 GMT
+-	Parent Layer: `5eb613055d171340288cb30caf42d42987b24444ea18a0c228745f12bdbc06a9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.4 KB (1366 bytes)
+-	v2 Blob: `sha256:efd03ff5c3e149ce414b4eee63d5d9dca5fd6fd5bc8d6da2e7f4c10f1bd26acd`
+-	v2 Content-Length: 635.0 B
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:38:26 GMT
 
-#### `36d0e3bcdfa9c1f3c3f37117c9dcedd297819dd43272baffb32fddcb8639497f`
+#### `94ac986f20ecc1d2bb700b84dfa290ce6e4bb3cd64b65035e6c2b87ce8cbe1ec`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `9e4c8eaadc5531129a557fd89b6ddafeb8ade6d0757877d06f35976f6a05226e`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:53 GMT
+-	Parent Layer: `a01c0f65c82b1ebc81e9dfe218af5a876f4b1b43f8dc1d8e13ac7dfb6bde1a28`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b04e722494b83740a18e520d1363ab522ab8664340a8c32c039830c261fc3cc`
+#### `1df39987051856c4a835003fdd8702f7f2a14b631d40fef805458604474c1048`
 
 ```dockerfile
 VOLUME [/var/lib/cassandra]
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `36d0e3bcdfa9c1f3c3f37117c9dcedd297819dd43272baffb32fddcb8639497f`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:53 GMT
+-	Parent Layer: `94ac986f20ecc1d2bb700b84dfa290ce6e4bb3cd64b65035e6c2b87ce8cbe1ec`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d99a538afe27bae03d8a0959d744c6f40e49aaba74fc9b087b20ee0046d7028e`
+#### `d10174a22567ba150974733d261c9b0581a4e50da558b0b9918e74a47970a3e5`
 
 ```dockerfile
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `9b04e722494b83740a18e520d1363ab522ab8664340a8c32c039830c261fc3cc`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:54 GMT
+-	Parent Layer: `1df39987051856c4a835003fdd8702f7f2a14b631d40fef805458604474c1048`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e33c1aeb498bd5c16d4d53f7d8f6bda356ed986622e01bb491078774b5cd54b3`
+#### `e81594098f47ebfc22ad606c994235d6257023f74d0c7512607585aa505589de`
 
 ```dockerfile
 CMD ["cassandra" "-f"]
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:04 GMT
--	Parent Layer: `d99a538afe27bae03d8a0959d744c6f40e49aaba74fc9b087b20ee0046d7028e`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:54 GMT
+-	Parent Layer: `d10174a22567ba150974733d261c9b0581a4e50da558b0b9918e74a47970a3e5`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `cassandra:2.2`
 
--	Total Virtual Size: 362.6 MB (362634938 bytes)
--	Total v2 Content-Length: 170.1 MB (170098386 bytes)
+```console
+$ docker pull library/cassandra@sha256:4690be27d4f15b15cbb2abfc7d5892034bc991cbce2127d2f122c6805801153b
+```
+
+-	Total Virtual Size: 365.1 MB (365134882 bytes)
+-	Total v2 Content-Length: 170.3 MB (170341548 bytes)
 
 ### Layers (13)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
+#### `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+
+```dockerfile
+RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:53 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 61.0 B
+-	v2 Blob: `sha256:090f1bb609ec14975461546e2ed49a0d58e12c0e0b8d9a1eb8ab3970af57a4de`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:47:04 GMT
+
+#### `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
 ```
 
--	Created: Mon, 24 Aug 2015 23:44:07 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:49:00 GMT
+-	Parent Layer: `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+-	Docker Version: 1.8.3
 -	Virtual Size: 2.8 KB (2762 bytes)
--	v2 Blob: `sha256:6e04d786eb511cf6eae7e0ff9b9c5dbeeb2d1b61b80908e19adb6a099436affb`
--	v2 Content-Length: 3.1 KB (3052 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:19 GMT
+-	v2 Blob: `sha256:ed99cd635f44c400ab1a7583c7505cd3bb9f870442781d823ea0828693c57361`
+-	v2 Content-Length: 3.1 KB (3053 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:46 GMT
 
-#### `d15716c673172b6e382a734c709e5f19c8f5673b39c57fae42c7220b1d9db015`
+#### `37f0c09546c62f77b93478b099695136868ed4b44e262ae36f90bfd11e6d8333`
 
 ```dockerfile
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 22x main' >> /etc/apt/sources.list.d/cassandra.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:52:23 GMT
--	Parent Layer: `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:51:38 GMT
+-	Parent Layer: `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+-	Docker Version: 1.8.3
 -	Virtual Size: 57.0 B
--	v2 Blob: `sha256:c1c25a9e54c16e33aa1f603bb921fabddac053e7ccda729c2311fea581160405`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 18:27:22 GMT
+-	v2 Blob: `sha256:5a16ae02ade947a55ed0224b8120ef54a46c35dab321e5b200d491b4f9fd6063`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:40:50 GMT
 
-#### `494295f4855e9edfac8a4e4441cfacedaf2e8c5d923cd2f9e1cb510915a9261b`
+#### `a4da2a7fd9047e2547131734858b3b7a670abbef97e3f4e0a89fec611ab33444`
 
 ```dockerfile
-ENV CASSANDRA_VERSION=2.2.1
+ENV CASSANDRA_VERSION=2.2.4
 ```
 
--	Created: Wed, 02 Sep 2015 22:14:37 GMT
--	Parent Layer: `d15716c673172b6e382a734c709e5f19c8f5673b39c57fae42c7220b1d9db015`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:47 GMT
+-	Parent Layer: `37f0c09546c62f77b93478b099695136868ed4b44e262ae36f90bfd11e6d8333`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f84bfd6deeb88c0b4515b234077e077d3ed154b30aea6031efaeef9dba7f4e48`
+#### `59a50d269abfed5daf3cbe0a0461a9de905314bf5e152ff0e9cd30e50b2583ee`
 
 ```dockerfile
 RUN apt-get update \
@@ -1055,191 +696,193 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Sep 2015 22:19:59 GMT
--	Parent Layer: `494295f4855e9edfac8a4e4441cfacedaf2e8c5d923cd2f9e1cb510915a9261b`
--	Docker Version: 1.7.1
--	Virtual Size: 237.4 MB (237414629 bytes)
--	v2 Blob: `sha256:0a1bbf2b35cfa301be98e430a855b83ed6bbe4ee6fa73263bfdd45bc5bd9b49b`
--	v2 Content-Length: 118.7 MB (118711723 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 17:39:51 GMT
+-	Created: Tue, 08 Dec 2015 23:04:48 GMT
+-	Parent Layer: `a4da2a7fd9047e2547131734858b3b7a670abbef97e3f4e0a89fec611ab33444`
+-	Docker Version: 1.8.3
+-	Virtual Size: 240.0 MB (240015369 bytes)
+-	v2 Blob: `sha256:e62b2dffa7369bc5ea5ef80a332671c51db00fb509c01dc37015d60a155e6601`
+-	v2 Content-Length: 119.0 MB (118982940 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 00:56:48 GMT
 
-#### `db230c02aac32467c8a2e1ef68e1b1f1fcc13e5025147cfb7418e22f89087c8c`
+#### `5eb613055d171340288cb30caf42d42987b24444ea18a0c228745f12bdbc06a9`
 
 ```dockerfile
 ENV CASSANDRA_CONFIG=/etc/cassandra
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:01 GMT
--	Parent Layer: `f84bfd6deeb88c0b4515b234077e077d3ed154b30aea6031efaeef9dba7f4e48`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:52 GMT
+-	Parent Layer: `59a50d269abfed5daf3cbe0a0461a9de905314bf5e152ff0e9cd30e50b2583ee`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `12e4eccb876297cded8e01c9f9dc955297d05f913cf37ec7a7052278c3db0a67`
-
-```dockerfile
-RUN sed -ri ' \
-		s/^(rpc_address:).*/\1 0.0.0.0/; \
-	' "$CASSANDRA_CONFIG/cassandra.yaml"
-```
-
--	Created: Wed, 02 Sep 2015 22:20:02 GMT
--	Parent Layer: `db230c02aac32467c8a2e1ef68e1b1f1fcc13e5025147cfb7418e22f89087c8c`
--	Docker Version: 1.7.1
--	Virtual Size: 41.2 KB (41240 bytes)
--	v2 Blob: `sha256:0fdc4e7ca61e10b81b3aca925b787ef9e3725af02f794cf879675f18e974a5ba`
--	v2 Content-Length: 14.1 KB (14107 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 17:39:06 GMT
-
-#### `9e4c8eaadc5531129a557fd89b6ddafeb8ade6d0757877d06f35976f6a05226e`
+#### `a01c0f65c82b1ebc81e9dfe218af5a876f4b1b43f8dc1d8e13ac7dfb6bde1a28`
 
 ```dockerfile
-COPY file:cb319c02ff70bfad4a12d233e5e89fc8ccb0304dedffa21506f99bf0975281fd in /docker-entrypoint.sh
+COPY file:9b33d987889a913a585ac5c1347a14a3c9ef5e690128a41400b5f5f17f4b2320 in /docker-entrypoint.sh
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:02 GMT
--	Parent Layer: `12e4eccb876297cded8e01c9f9dc955297d05f913cf37ec7a7052278c3db0a67`
--	Docker Version: 1.7.1
--	Virtual Size: 1.3 KB (1346 bytes)
--	v2 Blob: `sha256:961bf01a73801fa438d7900391ca5940bd4cd8da68b5eb46260f1d46ba756b82`
--	v2 Content-Length: 649.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:06:34 GMT
+-	Created: Tue, 08 Dec 2015 23:04:52 GMT
+-	Parent Layer: `5eb613055d171340288cb30caf42d42987b24444ea18a0c228745f12bdbc06a9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.4 KB (1366 bytes)
+-	v2 Blob: `sha256:efd03ff5c3e149ce414b4eee63d5d9dca5fd6fd5bc8d6da2e7f4c10f1bd26acd`
+-	v2 Content-Length: 635.0 B
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:38:26 GMT
 
-#### `36d0e3bcdfa9c1f3c3f37117c9dcedd297819dd43272baffb32fddcb8639497f`
+#### `94ac986f20ecc1d2bb700b84dfa290ce6e4bb3cd64b65035e6c2b87ce8cbe1ec`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `9e4c8eaadc5531129a557fd89b6ddafeb8ade6d0757877d06f35976f6a05226e`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:53 GMT
+-	Parent Layer: `a01c0f65c82b1ebc81e9dfe218af5a876f4b1b43f8dc1d8e13ac7dfb6bde1a28`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b04e722494b83740a18e520d1363ab522ab8664340a8c32c039830c261fc3cc`
+#### `1df39987051856c4a835003fdd8702f7f2a14b631d40fef805458604474c1048`
 
 ```dockerfile
 VOLUME [/var/lib/cassandra]
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `36d0e3bcdfa9c1f3c3f37117c9dcedd297819dd43272baffb32fddcb8639497f`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:53 GMT
+-	Parent Layer: `94ac986f20ecc1d2bb700b84dfa290ce6e4bb3cd64b65035e6c2b87ce8cbe1ec`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d99a538afe27bae03d8a0959d744c6f40e49aaba74fc9b087b20ee0046d7028e`
+#### `d10174a22567ba150974733d261c9b0581a4e50da558b0b9918e74a47970a3e5`
 
 ```dockerfile
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `9b04e722494b83740a18e520d1363ab522ab8664340a8c32c039830c261fc3cc`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:54 GMT
+-	Parent Layer: `1df39987051856c4a835003fdd8702f7f2a14b631d40fef805458604474c1048`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e33c1aeb498bd5c16d4d53f7d8f6bda356ed986622e01bb491078774b5cd54b3`
+#### `e81594098f47ebfc22ad606c994235d6257023f74d0c7512607585aa505589de`
 
 ```dockerfile
 CMD ["cassandra" "-f"]
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:04 GMT
--	Parent Layer: `d99a538afe27bae03d8a0959d744c6f40e49aaba74fc9b087b20ee0046d7028e`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:54 GMT
+-	Parent Layer: `d10174a22567ba150974733d261c9b0581a4e50da558b0b9918e74a47970a3e5`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `cassandra:2`
 
--	Total Virtual Size: 362.6 MB (362634938 bytes)
--	Total v2 Content-Length: 170.1 MB (170098386 bytes)
+```console
+$ docker pull library/cassandra@sha256:03e401190183246f0037decd028675d80df1cc0b85a53db43c629c7689582d9f
+```
+
+-	Total Virtual Size: 365.1 MB (365134882 bytes)
+-	Total v2 Content-Length: 170.3 MB (170341548 bytes)
 
 ### Layers (13)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
+#### `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+
+```dockerfile
+RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:53 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 61.0 B
+-	v2 Blob: `sha256:090f1bb609ec14975461546e2ed49a0d58e12c0e0b8d9a1eb8ab3970af57a4de`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:47:04 GMT
+
+#### `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
 ```
 
--	Created: Mon, 24 Aug 2015 23:44:07 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:49:00 GMT
+-	Parent Layer: `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+-	Docker Version: 1.8.3
 -	Virtual Size: 2.8 KB (2762 bytes)
--	v2 Blob: `sha256:6e04d786eb511cf6eae7e0ff9b9c5dbeeb2d1b61b80908e19adb6a099436affb`
--	v2 Content-Length: 3.1 KB (3052 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:19 GMT
+-	v2 Blob: `sha256:ed99cd635f44c400ab1a7583c7505cd3bb9f870442781d823ea0828693c57361`
+-	v2 Content-Length: 3.1 KB (3053 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:46 GMT
 
-#### `d15716c673172b6e382a734c709e5f19c8f5673b39c57fae42c7220b1d9db015`
+#### `37f0c09546c62f77b93478b099695136868ed4b44e262ae36f90bfd11e6d8333`
 
 ```dockerfile
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 22x main' >> /etc/apt/sources.list.d/cassandra.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:52:23 GMT
--	Parent Layer: `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:51:38 GMT
+-	Parent Layer: `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+-	Docker Version: 1.8.3
 -	Virtual Size: 57.0 B
--	v2 Blob: `sha256:c1c25a9e54c16e33aa1f603bb921fabddac053e7ccda729c2311fea581160405`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 18:27:22 GMT
+-	v2 Blob: `sha256:5a16ae02ade947a55ed0224b8120ef54a46c35dab321e5b200d491b4f9fd6063`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:40:50 GMT
 
-#### `494295f4855e9edfac8a4e4441cfacedaf2e8c5d923cd2f9e1cb510915a9261b`
+#### `a4da2a7fd9047e2547131734858b3b7a670abbef97e3f4e0a89fec611ab33444`
 
 ```dockerfile
-ENV CASSANDRA_VERSION=2.2.1
+ENV CASSANDRA_VERSION=2.2.4
 ```
 
--	Created: Wed, 02 Sep 2015 22:14:37 GMT
--	Parent Layer: `d15716c673172b6e382a734c709e5f19c8f5673b39c57fae42c7220b1d9db015`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 22:58:47 GMT
+-	Parent Layer: `37f0c09546c62f77b93478b099695136868ed4b44e262ae36f90bfd11e6d8333`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f84bfd6deeb88c0b4515b234077e077d3ed154b30aea6031efaeef9dba7f4e48`
+#### `59a50d269abfed5daf3cbe0a0461a9de905314bf5e152ff0e9cd30e50b2583ee`
 
 ```dockerfile
 RUN apt-get update \
@@ -1247,191 +890,775 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Sep 2015 22:19:59 GMT
--	Parent Layer: `494295f4855e9edfac8a4e4441cfacedaf2e8c5d923cd2f9e1cb510915a9261b`
--	Docker Version: 1.7.1
--	Virtual Size: 237.4 MB (237414629 bytes)
--	v2 Blob: `sha256:0a1bbf2b35cfa301be98e430a855b83ed6bbe4ee6fa73263bfdd45bc5bd9b49b`
--	v2 Content-Length: 118.7 MB (118711723 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 17:39:51 GMT
+-	Created: Tue, 08 Dec 2015 23:04:48 GMT
+-	Parent Layer: `a4da2a7fd9047e2547131734858b3b7a670abbef97e3f4e0a89fec611ab33444`
+-	Docker Version: 1.8.3
+-	Virtual Size: 240.0 MB (240015369 bytes)
+-	v2 Blob: `sha256:e62b2dffa7369bc5ea5ef80a332671c51db00fb509c01dc37015d60a155e6601`
+-	v2 Content-Length: 119.0 MB (118982940 bytes)
+-	v2 Last-Modified: Wed, 09 Dec 2015 00:56:48 GMT
 
-#### `db230c02aac32467c8a2e1ef68e1b1f1fcc13e5025147cfb7418e22f89087c8c`
+#### `5eb613055d171340288cb30caf42d42987b24444ea18a0c228745f12bdbc06a9`
 
 ```dockerfile
 ENV CASSANDRA_CONFIG=/etc/cassandra
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:01 GMT
--	Parent Layer: `f84bfd6deeb88c0b4515b234077e077d3ed154b30aea6031efaeef9dba7f4e48`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:52 GMT
+-	Parent Layer: `59a50d269abfed5daf3cbe0a0461a9de905314bf5e152ff0e9cd30e50b2583ee`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `12e4eccb876297cded8e01c9f9dc955297d05f913cf37ec7a7052278c3db0a67`
-
-```dockerfile
-RUN sed -ri ' \
-		s/^(rpc_address:).*/\1 0.0.0.0/; \
-	' "$CASSANDRA_CONFIG/cassandra.yaml"
-```
-
--	Created: Wed, 02 Sep 2015 22:20:02 GMT
--	Parent Layer: `db230c02aac32467c8a2e1ef68e1b1f1fcc13e5025147cfb7418e22f89087c8c`
--	Docker Version: 1.7.1
--	Virtual Size: 41.2 KB (41240 bytes)
--	v2 Blob: `sha256:0fdc4e7ca61e10b81b3aca925b787ef9e3725af02f794cf879675f18e974a5ba`
--	v2 Content-Length: 14.1 KB (14107 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 17:39:06 GMT
-
-#### `9e4c8eaadc5531129a557fd89b6ddafeb8ade6d0757877d06f35976f6a05226e`
+#### `a01c0f65c82b1ebc81e9dfe218af5a876f4b1b43f8dc1d8e13ac7dfb6bde1a28`
 
 ```dockerfile
-COPY file:cb319c02ff70bfad4a12d233e5e89fc8ccb0304dedffa21506f99bf0975281fd in /docker-entrypoint.sh
+COPY file:9b33d987889a913a585ac5c1347a14a3c9ef5e690128a41400b5f5f17f4b2320 in /docker-entrypoint.sh
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:02 GMT
--	Parent Layer: `12e4eccb876297cded8e01c9f9dc955297d05f913cf37ec7a7052278c3db0a67`
--	Docker Version: 1.7.1
--	Virtual Size: 1.3 KB (1346 bytes)
--	v2 Blob: `sha256:961bf01a73801fa438d7900391ca5940bd4cd8da68b5eb46260f1d46ba756b82`
--	v2 Content-Length: 649.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:06:34 GMT
+-	Created: Tue, 08 Dec 2015 23:04:52 GMT
+-	Parent Layer: `5eb613055d171340288cb30caf42d42987b24444ea18a0c228745f12bdbc06a9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.4 KB (1366 bytes)
+-	v2 Blob: `sha256:efd03ff5c3e149ce414b4eee63d5d9dca5fd6fd5bc8d6da2e7f4c10f1bd26acd`
+-	v2 Content-Length: 635.0 B
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:38:26 GMT
 
-#### `36d0e3bcdfa9c1f3c3f37117c9dcedd297819dd43272baffb32fddcb8639497f`
+#### `94ac986f20ecc1d2bb700b84dfa290ce6e4bb3cd64b65035e6c2b87ce8cbe1ec`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `9e4c8eaadc5531129a557fd89b6ddafeb8ade6d0757877d06f35976f6a05226e`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:53 GMT
+-	Parent Layer: `a01c0f65c82b1ebc81e9dfe218af5a876f4b1b43f8dc1d8e13ac7dfb6bde1a28`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b04e722494b83740a18e520d1363ab522ab8664340a8c32c039830c261fc3cc`
+#### `1df39987051856c4a835003fdd8702f7f2a14b631d40fef805458604474c1048`
 
 ```dockerfile
 VOLUME [/var/lib/cassandra]
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `36d0e3bcdfa9c1f3c3f37117c9dcedd297819dd43272baffb32fddcb8639497f`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:53 GMT
+-	Parent Layer: `94ac986f20ecc1d2bb700b84dfa290ce6e4bb3cd64b65035e6c2b87ce8cbe1ec`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d99a538afe27bae03d8a0959d744c6f40e49aaba74fc9b087b20ee0046d7028e`
+#### `d10174a22567ba150974733d261c9b0581a4e50da558b0b9918e74a47970a3e5`
 
 ```dockerfile
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `9b04e722494b83740a18e520d1363ab522ab8664340a8c32c039830c261fc3cc`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:54 GMT
+-	Parent Layer: `1df39987051856c4a835003fdd8702f7f2a14b631d40fef805458604474c1048`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e33c1aeb498bd5c16d4d53f7d8f6bda356ed986622e01bb491078774b5cd54b3`
+#### `e81594098f47ebfc22ad606c994235d6257023f74d0c7512607585aa505589de`
 
 ```dockerfile
 CMD ["cassandra" "-f"]
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:04 GMT
--	Parent Layer: `d99a538afe27bae03d8a0959d744c6f40e49aaba74fc9b087b20ee0046d7028e`
--	Docker Version: 1.7.1
+-	Created: Tue, 08 Dec 2015 23:04:54 GMT
+-	Parent Layer: `d10174a22567ba150974733d261c9b0581a4e50da558b0b9918e74a47970a3e5`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `cassandra:3.0.2`
+
+```console
+$ docker pull library/cassandra@sha256:a8155830db77e2c30ac0f56a583c704b4144b5a5fe83de2b258758fb21b2c7a6
+```
+
+-	Total Virtual Size: 374.8 MB (374826277 bytes)
+-	Total v2 Content-Length: 155.8 MB (155846415 bytes)
+
+### Layers (13)
+
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+
+```dockerfile
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+```
+
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+
+```dockerfile
+RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:53 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 61.0 B
+-	v2 Blob: `sha256:090f1bb609ec14975461546e2ed49a0d58e12c0e0b8d9a1eb8ab3970af57a4de`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:47:04 GMT
+
+#### `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+
+```dockerfile
+RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
+```
+
+-	Created: Sat, 05 Dec 2015 12:49:00 GMT
+-	Parent Layer: `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+-	Docker Version: 1.8.3
+-	Virtual Size: 2.8 KB (2762 bytes)
+-	v2 Blob: `sha256:ed99cd635f44c400ab1a7583c7505cd3bb9f870442781d823ea0828693c57361`
+-	v2 Content-Length: 3.1 KB (3053 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:46 GMT
+
+#### `24bac9698c7cccec34c30425a3383ea72d29a44dd5bac78bc7ce907743a67819`
+
+```dockerfile
+RUN echo 'deb http://www.apache.org/dist/cassandra/debian 30x main' >> /etc/apt/sources.list.d/cassandra.list
+```
+
+-	Created: Sat, 05 Dec 2015 12:54:30 GMT
+-	Parent Layer: `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+-	Docker Version: 1.8.3
+-	Virtual Size: 57.0 B
+-	v2 Blob: `sha256:96dfd3c95603c4fd0f494d997e1ec36f709193e9f60143b6f1fe39d0badc9609`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:44:45 GMT
+
+#### `9a0335adee0fcea6dbbffa110cee7e864df06c7d4d7293a0c14e4c38108d6604`
+
+```dockerfile
+ENV CASSANDRA_VERSION=3.0.2
+```
+
+-	Created: Tue, 22 Dec 2015 19:34:03 GMT
+-	Parent Layer: `24bac9698c7cccec34c30425a3383ea72d29a44dd5bac78bc7ce907743a67819`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `0f66f590e79a05019f4949af88e28062e33ecd4bebbabeb11b69de5cf359ad8c`
+
+```dockerfile
+RUN apt-get update \
+	&& apt-get install -y cassandra="$CASSANDRA_VERSION" \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 22 Dec 2015 19:35:46 GMT
+-	Parent Layer: `9a0335adee0fcea6dbbffa110cee7e864df06c7d4d7293a0c14e4c38108d6604`
+-	Docker Version: 1.8.3
+-	Virtual Size: 249.7 MB (249706764 bytes)
+-	v2 Blob: `sha256:95340008ed4972629d99e2736a105659e56f5a64e24bf063d01b3264e664bf1b`
+-	v2 Content-Length: 104.5 MB (104487807 bytes)
+-	v2 Last-Modified: Tue, 22 Dec 2015 20:34:48 GMT
+
+#### `26da2530fb531bfbe469fff94ff8281b8047b4376c11c2240313f219ffbc143f`
+
+```dockerfile
+ENV CASSANDRA_CONFIG=/etc/cassandra
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:00 GMT
+-	Parent Layer: `0f66f590e79a05019f4949af88e28062e33ecd4bebbabeb11b69de5cf359ad8c`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a4a9e242cbf83bcb5a463ed6d8c87fb34ac9fa561384fe6161fd244bdf490071`
+
+```dockerfile
+COPY file:9b33d987889a913a585ac5c1347a14a3c9ef5e690128a41400b5f5f17f4b2320 in /docker-entrypoint.sh
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:01 GMT
+-	Parent Layer: `26da2530fb531bfbe469fff94ff8281b8047b4376c11c2240313f219ffbc143f`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.4 KB (1366 bytes)
+-	v2 Blob: `sha256:efd03ff5c3e149ce414b4eee63d5d9dca5fd6fd5bc8d6da2e7f4c10f1bd26acd`
+-	v2 Content-Length: 635.0 B
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:38:26 GMT
+
+#### `cd74f18f54afe898134ff43a3b0db67d8cc3e1d87a4224008e293dd340e91b73`
+
+```dockerfile
+ENTRYPOINT &{["/docker-entrypoint.sh"]}
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:02 GMT
+-	Parent Layer: `a4a9e242cbf83bcb5a463ed6d8c87fb34ac9fa561384fe6161fd244bdf490071`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `6bc5f5937c3d2a04a309b4c491c7c6e0907a45cadb82f7f8b04670936a162d6f`
+
+```dockerfile
+VOLUME [/var/lib/cassandra]
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:03 GMT
+-	Parent Layer: `cd74f18f54afe898134ff43a3b0db67d8cc3e1d87a4224008e293dd340e91b73`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `9b8524af9164e7f0793a87d143c7daff5cd258e7e6f316c4e139a61a69d8a925`
+
+```dockerfile
+EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:04 GMT
+-	Parent Layer: `6bc5f5937c3d2a04a309b4c491c7c6e0907a45cadb82f7f8b04670936a162d6f`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `c668eb4b4a38db04fc119dddb545c2989bb06903425b070ae317356356cbcc59`
+
+```dockerfile
+CMD ["cassandra" "-f"]
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:05 GMT
+-	Parent Layer: `9b8524af9164e7f0793a87d143c7daff5cd258e7e6f316c4e139a61a69d8a925`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `cassandra:3.0`
+
+```console
+$ docker pull library/cassandra@sha256:949519d5ed2e7ac5bd40e43eac0ed456c4a40aa047cd130189c041aa479f37a1
+```
+
+-	Total Virtual Size: 374.8 MB (374826277 bytes)
+-	Total v2 Content-Length: 155.8 MB (155846415 bytes)
+
+### Layers (13)
+
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+
+```dockerfile
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+```
+
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+
+```dockerfile
+RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:53 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 61.0 B
+-	v2 Blob: `sha256:090f1bb609ec14975461546e2ed49a0d58e12c0e0b8d9a1eb8ab3970af57a4de`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:47:04 GMT
+
+#### `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+
+```dockerfile
+RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
+```
+
+-	Created: Sat, 05 Dec 2015 12:49:00 GMT
+-	Parent Layer: `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+-	Docker Version: 1.8.3
+-	Virtual Size: 2.8 KB (2762 bytes)
+-	v2 Blob: `sha256:ed99cd635f44c400ab1a7583c7505cd3bb9f870442781d823ea0828693c57361`
+-	v2 Content-Length: 3.1 KB (3053 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:46 GMT
+
+#### `24bac9698c7cccec34c30425a3383ea72d29a44dd5bac78bc7ce907743a67819`
+
+```dockerfile
+RUN echo 'deb http://www.apache.org/dist/cassandra/debian 30x main' >> /etc/apt/sources.list.d/cassandra.list
+```
+
+-	Created: Sat, 05 Dec 2015 12:54:30 GMT
+-	Parent Layer: `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+-	Docker Version: 1.8.3
+-	Virtual Size: 57.0 B
+-	v2 Blob: `sha256:96dfd3c95603c4fd0f494d997e1ec36f709193e9f60143b6f1fe39d0badc9609`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:44:45 GMT
+
+#### `9a0335adee0fcea6dbbffa110cee7e864df06c7d4d7293a0c14e4c38108d6604`
+
+```dockerfile
+ENV CASSANDRA_VERSION=3.0.2
+```
+
+-	Created: Tue, 22 Dec 2015 19:34:03 GMT
+-	Parent Layer: `24bac9698c7cccec34c30425a3383ea72d29a44dd5bac78bc7ce907743a67819`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `0f66f590e79a05019f4949af88e28062e33ecd4bebbabeb11b69de5cf359ad8c`
+
+```dockerfile
+RUN apt-get update \
+	&& apt-get install -y cassandra="$CASSANDRA_VERSION" \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 22 Dec 2015 19:35:46 GMT
+-	Parent Layer: `9a0335adee0fcea6dbbffa110cee7e864df06c7d4d7293a0c14e4c38108d6604`
+-	Docker Version: 1.8.3
+-	Virtual Size: 249.7 MB (249706764 bytes)
+-	v2 Blob: `sha256:95340008ed4972629d99e2736a105659e56f5a64e24bf063d01b3264e664bf1b`
+-	v2 Content-Length: 104.5 MB (104487807 bytes)
+-	v2 Last-Modified: Tue, 22 Dec 2015 20:34:48 GMT
+
+#### `26da2530fb531bfbe469fff94ff8281b8047b4376c11c2240313f219ffbc143f`
+
+```dockerfile
+ENV CASSANDRA_CONFIG=/etc/cassandra
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:00 GMT
+-	Parent Layer: `0f66f590e79a05019f4949af88e28062e33ecd4bebbabeb11b69de5cf359ad8c`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a4a9e242cbf83bcb5a463ed6d8c87fb34ac9fa561384fe6161fd244bdf490071`
+
+```dockerfile
+COPY file:9b33d987889a913a585ac5c1347a14a3c9ef5e690128a41400b5f5f17f4b2320 in /docker-entrypoint.sh
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:01 GMT
+-	Parent Layer: `26da2530fb531bfbe469fff94ff8281b8047b4376c11c2240313f219ffbc143f`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.4 KB (1366 bytes)
+-	v2 Blob: `sha256:efd03ff5c3e149ce414b4eee63d5d9dca5fd6fd5bc8d6da2e7f4c10f1bd26acd`
+-	v2 Content-Length: 635.0 B
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:38:26 GMT
+
+#### `cd74f18f54afe898134ff43a3b0db67d8cc3e1d87a4224008e293dd340e91b73`
+
+```dockerfile
+ENTRYPOINT &{["/docker-entrypoint.sh"]}
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:02 GMT
+-	Parent Layer: `a4a9e242cbf83bcb5a463ed6d8c87fb34ac9fa561384fe6161fd244bdf490071`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `6bc5f5937c3d2a04a309b4c491c7c6e0907a45cadb82f7f8b04670936a162d6f`
+
+```dockerfile
+VOLUME [/var/lib/cassandra]
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:03 GMT
+-	Parent Layer: `cd74f18f54afe898134ff43a3b0db67d8cc3e1d87a4224008e293dd340e91b73`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `9b8524af9164e7f0793a87d143c7daff5cd258e7e6f316c4e139a61a69d8a925`
+
+```dockerfile
+EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:04 GMT
+-	Parent Layer: `6bc5f5937c3d2a04a309b4c491c7c6e0907a45cadb82f7f8b04670936a162d6f`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `c668eb4b4a38db04fc119dddb545c2989bb06903425b070ae317356356cbcc59`
+
+```dockerfile
+CMD ["cassandra" "-f"]
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:05 GMT
+-	Parent Layer: `9b8524af9164e7f0793a87d143c7daff5cd258e7e6f316c4e139a61a69d8a925`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `cassandra:3`
+
+```console
+$ docker pull library/cassandra@sha256:7d012bc2ab277b5932ff86f476db003cc541ea960bbf01e0d7ecbe97e8b12dda
+```
+
+-	Total Virtual Size: 374.8 MB (374826277 bytes)
+-	Total v2 Content-Length: 155.8 MB (155846415 bytes)
+
+### Layers (13)
+
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+
+```dockerfile
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+```
+
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+
+```dockerfile
+RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:53 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 61.0 B
+-	v2 Blob: `sha256:090f1bb609ec14975461546e2ed49a0d58e12c0e0b8d9a1eb8ab3970af57a4de`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:47:04 GMT
+
+#### `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+
+```dockerfile
+RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
+```
+
+-	Created: Sat, 05 Dec 2015 12:49:00 GMT
+-	Parent Layer: `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+-	Docker Version: 1.8.3
+-	Virtual Size: 2.8 KB (2762 bytes)
+-	v2 Blob: `sha256:ed99cd635f44c400ab1a7583c7505cd3bb9f870442781d823ea0828693c57361`
+-	v2 Content-Length: 3.1 KB (3053 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:46 GMT
+
+#### `24bac9698c7cccec34c30425a3383ea72d29a44dd5bac78bc7ce907743a67819`
+
+```dockerfile
+RUN echo 'deb http://www.apache.org/dist/cassandra/debian 30x main' >> /etc/apt/sources.list.d/cassandra.list
+```
+
+-	Created: Sat, 05 Dec 2015 12:54:30 GMT
+-	Parent Layer: `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+-	Docker Version: 1.8.3
+-	Virtual Size: 57.0 B
+-	v2 Blob: `sha256:96dfd3c95603c4fd0f494d997e1ec36f709193e9f60143b6f1fe39d0badc9609`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:44:45 GMT
+
+#### `9a0335adee0fcea6dbbffa110cee7e864df06c7d4d7293a0c14e4c38108d6604`
+
+```dockerfile
+ENV CASSANDRA_VERSION=3.0.2
+```
+
+-	Created: Tue, 22 Dec 2015 19:34:03 GMT
+-	Parent Layer: `24bac9698c7cccec34c30425a3383ea72d29a44dd5bac78bc7ce907743a67819`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `0f66f590e79a05019f4949af88e28062e33ecd4bebbabeb11b69de5cf359ad8c`
+
+```dockerfile
+RUN apt-get update \
+	&& apt-get install -y cassandra="$CASSANDRA_VERSION" \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 22 Dec 2015 19:35:46 GMT
+-	Parent Layer: `9a0335adee0fcea6dbbffa110cee7e864df06c7d4d7293a0c14e4c38108d6604`
+-	Docker Version: 1.8.3
+-	Virtual Size: 249.7 MB (249706764 bytes)
+-	v2 Blob: `sha256:95340008ed4972629d99e2736a105659e56f5a64e24bf063d01b3264e664bf1b`
+-	v2 Content-Length: 104.5 MB (104487807 bytes)
+-	v2 Last-Modified: Tue, 22 Dec 2015 20:34:48 GMT
+
+#### `26da2530fb531bfbe469fff94ff8281b8047b4376c11c2240313f219ffbc143f`
+
+```dockerfile
+ENV CASSANDRA_CONFIG=/etc/cassandra
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:00 GMT
+-	Parent Layer: `0f66f590e79a05019f4949af88e28062e33ecd4bebbabeb11b69de5cf359ad8c`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `a4a9e242cbf83bcb5a463ed6d8c87fb34ac9fa561384fe6161fd244bdf490071`
+
+```dockerfile
+COPY file:9b33d987889a913a585ac5c1347a14a3c9ef5e690128a41400b5f5f17f4b2320 in /docker-entrypoint.sh
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:01 GMT
+-	Parent Layer: `26da2530fb531bfbe469fff94ff8281b8047b4376c11c2240313f219ffbc143f`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.4 KB (1366 bytes)
+-	v2 Blob: `sha256:efd03ff5c3e149ce414b4eee63d5d9dca5fd6fd5bc8d6da2e7f4c10f1bd26acd`
+-	v2 Content-Length: 635.0 B
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:38:26 GMT
+
+#### `cd74f18f54afe898134ff43a3b0db67d8cc3e1d87a4224008e293dd340e91b73`
+
+```dockerfile
+ENTRYPOINT &{["/docker-entrypoint.sh"]}
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:02 GMT
+-	Parent Layer: `a4a9e242cbf83bcb5a463ed6d8c87fb34ac9fa561384fe6161fd244bdf490071`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `6bc5f5937c3d2a04a309b4c491c7c6e0907a45cadb82f7f8b04670936a162d6f`
+
+```dockerfile
+VOLUME [/var/lib/cassandra]
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:03 GMT
+-	Parent Layer: `cd74f18f54afe898134ff43a3b0db67d8cc3e1d87a4224008e293dd340e91b73`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `9b8524af9164e7f0793a87d143c7daff5cd258e7e6f316c4e139a61a69d8a925`
+
+```dockerfile
+EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:04 GMT
+-	Parent Layer: `6bc5f5937c3d2a04a309b4c491c7c6e0907a45cadb82f7f8b04670936a162d6f`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `c668eb4b4a38db04fc119dddb545c2989bb06903425b070ae317356356cbcc59`
+
+```dockerfile
+CMD ["cassandra" "-f"]
+```
+
+-	Created: Tue, 22 Dec 2015 19:36:05 GMT
+-	Parent Layer: `9b8524af9164e7f0793a87d143c7daff5cd258e7e6f316c4e139a61a69d8a925`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `cassandra:latest`
 
--	Total Virtual Size: 362.6 MB (362634938 bytes)
--	Total v2 Content-Length: 170.1 MB (170098386 bytes)
+```console
+$ docker pull library/cassandra@sha256:7f20763a5284467a0afea813fef5deca16abaaae7a3c6fcc6f5031a63a71ec28
+```
+
+-	Total Virtual Size: 374.8 MB (374826277 bytes)
+-	Total v2 Content-Length: 155.8 MB (155846415 bytes)
 
 ### Layers (13)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
+#### `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+
+```dockerfile
+RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
+```
+
+-	Created: Fri, 04 Dec 2015 19:28:53 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
+-	Virtual Size: 61.0 B
+-	v2 Blob: `sha256:090f1bb609ec14975461546e2ed49a0d58e12c0e0b8d9a1eb8ab3970af57a4de`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:47:04 GMT
+
+#### `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57A16DD0047EC749D6EEC0353B12C
 ```
 
--	Created: Mon, 24 Aug 2015 23:44:07 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:49:00 GMT
+-	Parent Layer: `bb1cd0bbc936322935cb112d44a1fb98b453ed7b24307e6eb83498b6ba3dd405`
+-	Docker Version: 1.8.3
 -	Virtual Size: 2.8 KB (2762 bytes)
--	v2 Blob: `sha256:6e04d786eb511cf6eae7e0ff9b9c5dbeeb2d1b61b80908e19adb6a099436affb`
--	v2 Content-Length: 3.1 KB (3052 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 18:21:19 GMT
+-	v2 Blob: `sha256:ed99cd635f44c400ab1a7583c7505cd3bb9f870442781d823ea0828693c57361`
+-	v2 Content-Length: 3.1 KB (3053 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:35:46 GMT
 
-#### `d15716c673172b6e382a734c709e5f19c8f5673b39c57fae42c7220b1d9db015`
+#### `24bac9698c7cccec34c30425a3383ea72d29a44dd5bac78bc7ce907743a67819`
 
 ```dockerfile
-RUN echo 'deb http://www.apache.org/dist/cassandra/debian 22x main' >> /etc/apt/sources.list.d/cassandra.list
+RUN echo 'deb http://www.apache.org/dist/cassandra/debian 30x main' >> /etc/apt/sources.list.d/cassandra.list
 ```
 
--	Created: Mon, 24 Aug 2015 23:52:23 GMT
--	Parent Layer: `43f9f5495a1c683fcd8716c3035a7a751f07a162ec292de1f73332300580e361`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 12:54:30 GMT
+-	Parent Layer: `ab4cd70998da83a4470b9ad71548f7995ebdcdf4aa4b0071d1293c2e88084939`
+-	Docker Version: 1.8.3
 -	Virtual Size: 57.0 B
--	v2 Blob: `sha256:c1c25a9e54c16e33aa1f603bb921fabddac053e7ccda729c2311fea581160405`
--	v2 Content-Length: 222.0 B
--	v2 Last-Modified: Wed, 26 Aug 2015 18:27:22 GMT
+-	v2 Blob: `sha256:96dfd3c95603c4fd0f494d997e1ec36f709193e9f60143b6f1fe39d0badc9609`
+-	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Mon, 07 Dec 2015 20:44:45 GMT
 
-#### `494295f4855e9edfac8a4e4441cfacedaf2e8c5d923cd2f9e1cb510915a9261b`
+#### `9a0335adee0fcea6dbbffa110cee7e864df06c7d4d7293a0c14e4c38108d6604`
 
 ```dockerfile
-ENV CASSANDRA_VERSION=2.2.1
+ENV CASSANDRA_VERSION=3.0.2
 ```
 
--	Created: Wed, 02 Sep 2015 22:14:37 GMT
--	Parent Layer: `d15716c673172b6e382a734c709e5f19c8f5673b39c57fae42c7220b1d9db015`
--	Docker Version: 1.7.1
+-	Created: Tue, 22 Dec 2015 19:34:03 GMT
+-	Parent Layer: `24bac9698c7cccec34c30425a3383ea72d29a44dd5bac78bc7ce907743a67819`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f84bfd6deeb88c0b4515b234077e077d3ed154b30aea6031efaeef9dba7f4e48`
+#### `0f66f590e79a05019f4949af88e28062e33ecd4bebbabeb11b69de5cf359ad8c`
 
 ```dockerfile
 RUN apt-get update \
@@ -1439,110 +1666,94 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Sep 2015 22:19:59 GMT
--	Parent Layer: `494295f4855e9edfac8a4e4441cfacedaf2e8c5d923cd2f9e1cb510915a9261b`
--	Docker Version: 1.7.1
--	Virtual Size: 237.4 MB (237414629 bytes)
--	v2 Blob: `sha256:0a1bbf2b35cfa301be98e430a855b83ed6bbe4ee6fa73263bfdd45bc5bd9b49b`
--	v2 Content-Length: 118.7 MB (118711723 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 17:39:51 GMT
+-	Created: Tue, 22 Dec 2015 19:35:46 GMT
+-	Parent Layer: `9a0335adee0fcea6dbbffa110cee7e864df06c7d4d7293a0c14e4c38108d6604`
+-	Docker Version: 1.8.3
+-	Virtual Size: 249.7 MB (249706764 bytes)
+-	v2 Blob: `sha256:95340008ed4972629d99e2736a105659e56f5a64e24bf063d01b3264e664bf1b`
+-	v2 Content-Length: 104.5 MB (104487807 bytes)
+-	v2 Last-Modified: Tue, 22 Dec 2015 20:34:48 GMT
 
-#### `db230c02aac32467c8a2e1ef68e1b1f1fcc13e5025147cfb7418e22f89087c8c`
+#### `26da2530fb531bfbe469fff94ff8281b8047b4376c11c2240313f219ffbc143f`
 
 ```dockerfile
 ENV CASSANDRA_CONFIG=/etc/cassandra
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:01 GMT
--	Parent Layer: `f84bfd6deeb88c0b4515b234077e077d3ed154b30aea6031efaeef9dba7f4e48`
--	Docker Version: 1.7.1
+-	Created: Tue, 22 Dec 2015 19:36:00 GMT
+-	Parent Layer: `0f66f590e79a05019f4949af88e28062e33ecd4bebbabeb11b69de5cf359ad8c`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `12e4eccb876297cded8e01c9f9dc955297d05f913cf37ec7a7052278c3db0a67`
-
-```dockerfile
-RUN sed -ri ' \
-		s/^(rpc_address:).*/\1 0.0.0.0/; \
-	' "$CASSANDRA_CONFIG/cassandra.yaml"
-```
-
--	Created: Wed, 02 Sep 2015 22:20:02 GMT
--	Parent Layer: `db230c02aac32467c8a2e1ef68e1b1f1fcc13e5025147cfb7418e22f89087c8c`
--	Docker Version: 1.7.1
--	Virtual Size: 41.2 KB (41240 bytes)
--	v2 Blob: `sha256:0fdc4e7ca61e10b81b3aca925b787ef9e3725af02f794cf879675f18e974a5ba`
--	v2 Content-Length: 14.1 KB (14107 bytes)
--	v2 Last-Modified: Thu, 03 Sep 2015 17:39:06 GMT
-
-#### `9e4c8eaadc5531129a557fd89b6ddafeb8ade6d0757877d06f35976f6a05226e`
+#### `a4a9e242cbf83bcb5a463ed6d8c87fb34ac9fa561384fe6161fd244bdf490071`
 
 ```dockerfile
-COPY file:cb319c02ff70bfad4a12d233e5e89fc8ccb0304dedffa21506f99bf0975281fd in /docker-entrypoint.sh
+COPY file:9b33d987889a913a585ac5c1347a14a3c9ef5e690128a41400b5f5f17f4b2320 in /docker-entrypoint.sh
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:02 GMT
--	Parent Layer: `12e4eccb876297cded8e01c9f9dc955297d05f913cf37ec7a7052278c3db0a67`
--	Docker Version: 1.7.1
--	Virtual Size: 1.3 KB (1346 bytes)
--	v2 Blob: `sha256:961bf01a73801fa438d7900391ca5940bd4cd8da68b5eb46260f1d46ba756b82`
--	v2 Content-Length: 649.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:06:34 GMT
+-	Created: Tue, 22 Dec 2015 19:36:01 GMT
+-	Parent Layer: `26da2530fb531bfbe469fff94ff8281b8047b4376c11c2240313f219ffbc143f`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.4 KB (1366 bytes)
+-	v2 Blob: `sha256:efd03ff5c3e149ce414b4eee63d5d9dca5fd6fd5bc8d6da2e7f4c10f1bd26acd`
+-	v2 Content-Length: 635.0 B
+-	v2 Last-Modified: Fri, 13 Nov 2015 21:38:26 GMT
 
-#### `36d0e3bcdfa9c1f3c3f37117c9dcedd297819dd43272baffb32fddcb8639497f`
+#### `cd74f18f54afe898134ff43a3b0db67d8cc3e1d87a4224008e293dd340e91b73`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `9e4c8eaadc5531129a557fd89b6ddafeb8ade6d0757877d06f35976f6a05226e`
--	Docker Version: 1.7.1
+-	Created: Tue, 22 Dec 2015 19:36:02 GMT
+-	Parent Layer: `a4a9e242cbf83bcb5a463ed6d8c87fb34ac9fa561384fe6161fd244bdf490071`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9b04e722494b83740a18e520d1363ab522ab8664340a8c32c039830c261fc3cc`
+#### `6bc5f5937c3d2a04a309b4c491c7c6e0907a45cadb82f7f8b04670936a162d6f`
 
 ```dockerfile
 VOLUME [/var/lib/cassandra]
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `36d0e3bcdfa9c1f3c3f37117c9dcedd297819dd43272baffb32fddcb8639497f`
--	Docker Version: 1.7.1
+-	Created: Tue, 22 Dec 2015 19:36:03 GMT
+-	Parent Layer: `cd74f18f54afe898134ff43a3b0db67d8cc3e1d87a4224008e293dd340e91b73`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d99a538afe27bae03d8a0959d744c6f40e49aaba74fc9b087b20ee0046d7028e`
+#### `9b8524af9164e7f0793a87d143c7daff5cd258e7e6f316c4e139a61a69d8a925`
 
 ```dockerfile
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:03 GMT
--	Parent Layer: `9b04e722494b83740a18e520d1363ab522ab8664340a8c32c039830c261fc3cc`
--	Docker Version: 1.7.1
+-	Created: Tue, 22 Dec 2015 19:36:04 GMT
+-	Parent Layer: `6bc5f5937c3d2a04a309b4c491c7c6e0907a45cadb82f7f8b04670936a162d6f`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e33c1aeb498bd5c16d4d53f7d8f6bda356ed986622e01bb491078774b5cd54b3`
+#### `c668eb4b4a38db04fc119dddb545c2989bb06903425b070ae317356356cbcc59`
 
 ```dockerfile
 CMD ["cassandra" "-f"]
 ```
 
--	Created: Wed, 02 Sep 2015 22:20:04 GMT
--	Parent Layer: `d99a538afe27bae03d8a0959d744c6f40e49aaba74fc9b087b20ee0046d7028e`
--	Docker Version: 1.7.1
+-	Created: Tue, 22 Dec 2015 19:36:05 GMT
+-	Parent Layer: `9b8524af9164e7f0793a87d143c7daff5cd258e7e6f316c4e139a61a69d8a925`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

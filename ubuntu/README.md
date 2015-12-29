@@ -1,9 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`12.04.5`, `12.04`, `precise-20150813`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/6dba3ee12ff996640d1043139d5abf8c744862e2/precise/Dockerfile)
--	[`14.04.3`, `14.04`, `trusty-20150814`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/6dba3ee12ff996640d1043139d5abf8c744862e2/trusty/Dockerfile)
--	[`15.04`, `vivid-20150813`, `vivid` (*vivid/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/6dba3ee12ff996640d1043139d5abf8c744862e2/vivid/Dockerfile)
--	[`15.10`, `wily-20150829`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/6dba3ee12ff996640d1043139d5abf8c744862e2/wily/Dockerfile)
+-	[`12.04.5`, `12.04`, `precise-20151208`, `precise` (*precise/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/3852ef7c7e841ea8c126c9b00e64eeca61fe5ab0/precise/Dockerfile)
+-	[`14.04.3`, `14.04`, `trusty-20151208`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/3852ef7c7e841ea8c126c9b00e64eeca61fe5ab0/trusty/Dockerfile)
+-	[`15.04`, `vivid-20151208`, `vivid` (*vivid/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/3852ef7c7e841ea8c126c9b00e64eeca61fe5ab0/vivid/Dockerfile)
+-	[`15.10`, `wily-20151208`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/3852ef7c7e841ea8c126c9b00e64eeca61fe5ab0/wily/Dockerfile)
+-	[`16.04`, `xenial-20151218.1`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/8af9ba31ba5d204717f9aff66c9c033454d72ba5/xenial/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -71,9 +72,11 @@ deb-src http://archive.ubuntu.com/ubuntu/ precise-security universe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

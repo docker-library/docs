@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `lein-2.5.2` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/d7a27ab87b06a04d6ee0d3366d23df7b514166ea/Dockerfile)
--	[`onbuild`, `lein-2.5.2-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/d7a27ab87b06a04d6ee0d3366d23df7b514166ea/onbuild/Dockerfile)
+-	[`latest`, `lein-2.5.3` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a22cdfcdf10fd5c99fa4bb993c71847ab00ee2a9/Dockerfile)
+-	[`onbuild`, `lein-2.5.3-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a22cdfcdf10fd5c99fa4bb993c71847ab00ee2a9/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -9,7 +9,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # What is Clojure?
 
-Clojure is a dialect of the Lisp programming language. It is a general-purpose programming language with an emphasis on functional programming. It runs on the Java Virtual Machine, Common Langauge Runtime, and JavaScript engines. Like other Lisps, Clojure treats code as data and has a macro system.
+Clojure is a dialect of the Lisp programming language. It is a general-purpose programming language with an emphasis on functional programming. It runs on the Java Virtual Machine, Common Language Runtime, and JavaScript engines. Like other Lisps, Clojure treats code as data and has a macro system.
 
 > [wikipedia.org/wiki/Clojure](http://en.wikipedia.org/wiki/Clojure)
 
@@ -84,9 +84,11 @@ View [license information](http://clojure.org/license) for the software containe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

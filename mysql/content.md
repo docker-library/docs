@@ -1,10 +1,10 @@
-%%LOGO%%
-
 # What is MySQL?
 
 MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, covering the entire range from personal projects and websites, via e-commerce and information services, all the way to high profile web properties including Facebook, Twitter, YouTube, Yahoo! and many more.
 
 For more information and related downloads for MySQL Server and other MySQL products, please visit [www.mysql.com](http://www.mysql.com).
+
+%%LOGO%%
 
 # How to use this image
 
@@ -23,18 +23,18 @@ $ docker run --name some-%%REPO%% -e MYSQL_ROOT_PASSWORD=my-secret-pw -d %%REPO%
 This image exposes the standard MySQL port (3306), so container linking makes the MySQL instance available to other application containers. Start your application container like this in order to link it to the MySQL container:
 
 ```console
-$ docker run --name some-app --link some-%%REPO%%:mysql -d app-that-uses-mysql
+$ docker run --name some-app --link some-%%REPO%%:mysql -d application-that-uses-mysql
 ```
 
 ## Connect to MySQL from the MySQL command line client
 
-The following command starts another MySQL container instance and runs the `mysql` command line client against your original MySQL container, allowing you to execute SQL statements against your database instance:
+The following command starts another %%REPO%% container instance and runs the `mysql` command line client against your original %%REPO%% container, allowing you to execute SQL statements against your database instance:
 
 ```console
 $ docker run -it --link some-%%REPO%%:mysql --rm %%REPO%% sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
 ```
 
-... where `some-%%REPO%%` is the name of your original MySQL Server container.
+... where `some-%%REPO%%` is the name of your original %%REPO%% container.
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
@@ -91,6 +91,10 @@ Do note that there is no need to use this mechanism to create the root superuser
 ### `MYSQL_ALLOW_EMPTY_PASSWORD`
 
 This is an optional variable. Set to `yes` to allow the container to be started with a blank password for the root user. *NOTE*: Setting this variable to `yes` is not recommended unless you really know what you are doing, since this will leave your MySQL instance completely unprotected, allowing anyone to gain complete superuser access.
+
+# Initializing a fresh instance
+
+When a container is started for the first time, a new database `mysql` will be initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh` and `.sql` that are found in `/docker-entrypoint-initdb.d`. You can easily populate your %%REPO%% services by [mounting a SQL dump into that directory](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-file-as-a-data-volume) and provide [custom images](https://docs.docker.com/reference/builder/) with contributed data.
 
 # Caveats
 

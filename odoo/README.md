@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/0afa334549c20c2a00eb1b8f5540c2f35bd7cac4/8.0/Dockerfile)
+-	[`8.0`, `8` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/ad90fca59c9ac52f4f29a195535a3f8ebdddd30d/8.0/Dockerfile)
+-	[`9.0`, `9`, `latest` (*9.0/Dockerfile*)](https://github.com/odoo/docker/blob/ad90fca59c9ac52f4f29a195535a3f8ebdddd30d/9.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/odoo`)](https://github.com/docker-library/official-images/blob/master/library/odoo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -96,9 +97,11 @@ View [license information](https://raw.githubusercontent.com/odoo/odoo/8.0/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

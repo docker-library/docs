@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.16`, `2.0` (*2.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/ebbf1631a1d8fb4072bf61a0451a5f7b901e81ab/2.0/Dockerfile)
--	[`2.1.9`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/c7d43443c2e80ee9edd0814c8e8332781f7d93ae/2.1/Dockerfile)
--	[`2.2.1`, `2.2`, `2`, `latest` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/f1324a4a0938e3eb9f6c40f2065694f4dd22f719/2.2/Dockerfile)
+-	[`2.1.12`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e42689e24fa459f8a417931a5cd6b22b9bf1f31c/2.1/Dockerfile)
+-	[`2.2.4`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e42689e24fa459f8a417931a5cd6b22b9bf1f31c/2.2/Dockerfile)
+-	[`3.0.2`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/8daf9e78e24d741e37d8c9c2ee12ba2e70057c6e/3.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -45,6 +45,12 @@ $ docker run --name some-cassandra2 -d -e CASSANDRA_SEEDS="$(docker inspect --fo
 ```
 
 ... where `some-cassandra` is the name of your original Cassandra Server container, taking advantage of `docker inspect` to get the IP address of the other container.
+
+Or you may use the docker run --link option to tell the new node where the first is:
+
+```console
+$ docker run --name some-cassandra2 -d --link some-cassandra:cassandra cassandra:tag
+```
 
 For separate machines (ie, two VMs on a cloud provider), you need to tell Cassandra what IP address to advertise to the other nodes (since the address of the container is behind the docker bridge).
 
@@ -98,37 +104,43 @@ When you start the `cassandra` image, you can adjust the configuration of the Ca
 
 ### `CASSANDRA_LISTEN_ADDRESS`
 
-This variable is for controlling which IP address to listen for incoming connections on. The default value is `auto`, which will set the [`listen_address`](http://docs.datastax.com/en/cassandra/2.1/cassandra/configuration/configCassandra_yaml_r.html?scroll=reference_ds_qfg_n1r_1k__listen_address) option in `cassandra.yaml` to the IP address of the container as it starts. This default should work in most use cases.
+This variable is for controlling which IP address to listen for incoming connections on. The default value is `auto`, which will set the [`listen_address`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__listen_address) option in `cassandra.yaml` to the IP address of the container as it starts. This default should work in most use cases.
 
 ### `CASSANDRA_BROADCAST_ADDRESS`
 
-This variable is for controlling which IP address to advertise to other nodes. The default value is the velue of `CASSANDRA_LISTEN_ADDRESS`. It will set the [`broadcast_address`](http://docs.datastax.com/en/cassandra/2.1/cassandra/configuration/configCassandra_yaml_r.html?scroll=reference_ds_qfg_n1r_1k__broadcast_address) and [`broadcast_rpc_address`](http://docs.datastax.com/en/cassandra/2.1/cassandra/configuration/configCassandra_yaml_r.html?scroll=reference_ds_qfg_n1r_1k__broadcast_rpc_address) options in `cassandra.yaml`.
+This variable is for controlling which IP address to advertise to other nodes. The default value is the value of `CASSANDRA_LISTEN_ADDRESS`. It will set the [`broadcast_address`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__broadcast_address) and [`broadcast_rpc_address`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__broadcast_rpc_address) options in `cassandra.yaml`.
 
-**Note:** `rpc_address` is always set to the wildcard address (`0.0.0.0`), which means this value cannot be the wildcard address (and thus must be a specific address).
+### `CASSANDRA_RPC_ADDRESS`
+
+This variable is for controlling which address to bind the thrift rpc server to. If you do not specify an address, the wildcard address (`0.0.0.0`) will be used. It will set the [`rpc_address`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__rpc_address) option in `cassandra.yaml`.
+
+### `CASSANDRA_START_RPC`
+
+This variable is for controlling if the thrift rpc server is started. It will set the [`start_rpc`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__start_rpc) option in `cassandra.yaml`.
 
 ### `CASSANDRA_SEEDS`
 
-This variable is the comma-separated list of IP addresses used by gossip for bootstrapping new nodes joining a cluster. It will set the `seeds` value of the [`seed_provider`](http://docs.datastax.com/en/cassandra/2.1/cassandra/configuration/configCassandra_yaml_r.html?scroll=reference_ds_qfg_n1r_1k__seed_provider) option in `cassandra.yaml`. The `CASSANDRA_BROADCAST_ADDRESS` will be added the the seeds passed in so that the sever will talk to itself as well.
+This variable is the comma-separated list of IP addresses used by gossip for bootstrapping new nodes joining a cluster. It will set the `seeds` value of the [`seed_provider`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__seed_provider) option in `cassandra.yaml`. The `CASSANDRA_BROADCAST_ADDRESS` will be added the the seeds passed in so that the sever will talk to itself as well.
 
 ### `CASSANDRA_CLUSTER_NAME`
 
-This variable sets the name of the cluster and must be the same for all nodes in the cluster. It will set the [`cluster_name`](http://docs.datastax.com/en/cassandra/2.1/cassandra/configuration/configCassandra_yaml_r.html?scroll=reference_ds_qfg_n1r_1k__cluster_name) option of `cassandra.yaml`.
+This variable sets the name of the cluster and must be the same for all nodes in the cluster. It will set the [`cluster_name`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__cluster_name) option of `cassandra.yaml`.
 
 ### `CASSANDRA_NUM_TOKENS`
 
-This variable sets number of tokens for this node. It will set the [`num_tokens`](http://docs.datastax.com/en/cassandra/2.1/cassandra/configuration/configCassandra_yaml_r.html?scroll=reference_ds_qfg_n1r_1k__num_tokens) option of `cassandra.yaml`.
+This variable sets number of tokens for this node. It will set the [`num_tokens`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__num_tokens) option of `cassandra.yaml`.
 
 ### `CASSANDRA_DC`
 
-This variable sets the datacenter name of this node. It will set the [`dc`](http://docs.datastax.com/en/cassandra/2.1/cassandra/architecture/architectureSnitchGossipPF_c.html) option of `cassandra-rackdc.properties`.
+This variable sets the datacenter name of this node. It will set the [`dc`](http://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archsnitchGossipPF.html) option of `cassandra-rackdc.properties`.
 
 ### `CASSANDRA_RACK`
 
-This variable sets the rack name of this node. It will set the [`rack`](http://docs.datastax.com/en/cassandra/2.1/cassandra/architecture/architectureSnitchGossipPF_c.html) option of `cassandra-rackdc.properties`.
+This variable sets the rack name of this node. It will set the [`rack`](http://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archsnitchGossipPF.html) option of `cassandra-rackdc.properties`.
 
 ### `CASSANDRA_ENDPOINT_SNITCH`
 
-This variable sets the snitch implementation this node will use. It will set the [`endpoint_snitch`](http://docs.datastax.com/en/cassandra/2.1/cassandra/configuration/configCassandra_yaml_r.html?scroll=reference_ds_qfg_n1r_1k__endpoint_snitch) option of `cassandra.yml`.
+This variable sets the snitch implementation this node will use. It will set the [`endpoint_snitch`](http://docs.datastax.com/en/cassandra/3.0/cassandra/configuration/configCassandra_yaml.html?scroll=configCassandra_yaml__endpoint_snitch) option of `cassandra.yml`.
 
 # Caveats
 
@@ -145,10 +157,10 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `cassandra` container like this:
 
 	```console
-	$ docker run --name some-cassandra -v /my/own/datadir:/var/lib/cassandra/data -d cassandra:tag
+	$ docker run --name some-cassandra -v /my/own/datadir:/var/lib/cassandra -d cassandra:tag
 	```
 
-The `-v /my/own/datadir:/var/lib/cassandra/data` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/cassandra/data` inside the container, where Cassandra by default will write its data files.
+The `-v /my/own/datadir:/var/lib/cassandra` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/cassandra` inside the container, where Cassandra by default will write its data files.
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
 
@@ -162,9 +174,11 @@ If there is no database initialized when the container starts, then a default da
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

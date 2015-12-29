@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.50`, `0.50.5` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/afe4de88bbe1a55443f7daa91fc78b50b41eb8b8/Dockerfile)
--	[`0.49`, `0.49.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/8762d54054d9ed9d76a3bba0f9e6fa38acd34c2a/Dockerfile)
+-	[`latest`, `0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
+-	[`0.51`, `0.51.7` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/5d66f67b05395e9b7b4f55c2b3d682d43c7f59d9/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -9,9 +9,9 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # What is Crate?
 
-Crate is an Elastic SQL Data Store. Distributed by design, Crate makes centralized database servers obsolete. Realtime non-blocking SQL engine with full blown search. Highly available, massively scalable yet simple to use.
+Crate allows to query and compute data with SQL in real time by providing a distributed aggregation engine, native search and super simple scalability. It offers auto-sharding and replication, super-fast multi index queries, distributed aggregations and sort, superfast full-text search, and super simple cluster management.
 
-[Crate](https:/crate.io/)
+[Crate](https://crate.io/)
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/master/crate/logo.png)
 
@@ -96,9 +96,11 @@ View [license information](https://github.com/crate/crate/blob/master/LICENSE.tx
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
@@ -110,7 +112,7 @@ Documentation for this image is stored in the [`crate/` directory](https://githu
 
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/crate/docker-crate/issues).
 
-If you have any questions or suggestions we would be very happy to help you. So, feel free to swing by our IRC channel `#crate` on [Freenode](http://freenode.net).
+If you have any questions or suggestions we would be very happy to help you. So, feel free to join our public room on [HipChat](https://www.hipchat.com/g7Pc2CYwi).
 
 For further information and official contact please visit [https://crate.io](https://crate.io).
 

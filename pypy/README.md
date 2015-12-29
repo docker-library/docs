@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2-2.6.1`, `2-2.6`, `2-2`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/f1c1a5dd1248c044dafc52ddff7ff18be77d0ea8/2/Dockerfile)
--	[`2-2.6.1-onbuild`, `2-2.6-onbuild`, `2-2-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
--	[`2-2.6.1-slim`, `2-2.6-slim`, `2-2-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/f1c1a5dd1248c044dafc52ddff7ff18be77d0ea8/2/slim/Dockerfile)
+-	[`2-4.0.1`, `2-4.0`, `2-4`, `2` (*2/Dockerfile*)](https://github.com/docker-library/pypy/blob/3826e2d8095e0dda578aca3fa7fb72c3e7aaa47e/2/Dockerfile)
+-	[`2-4.0.1-onbuild`, `2-4.0-onbuild`, `2-4-onbuild`, `2-onbuild` (*2/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/2/onbuild/Dockerfile)
+-	[`2-4.0.1-slim`, `2-4.0-slim`, `2-4-slim`, `2-slim` (*2/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/3826e2d8095e0dda578aca3fa7fb72c3e7aaa47e/2/slim/Dockerfile)
 -	[`3-2.4.0`, `3-2.4`, `3-2`, `3`, `latest` (*3/Dockerfile*)](https://github.com/docker-library/pypy/blob/528795c882a9cb55e713586aeb3eb71707438c69/3/Dockerfile)
 -	[`3-2.4.0-onbuild`, `3-2.4-onbuild`, `3-2-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
 -	[`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/528795c882a9cb55e713586aeb3eb71707438c69/3/slim/Dockerfile)
@@ -86,9 +86,11 @@ View [license information](https://bitbucket.org/pypy/pypy/src/c3ff0dd6252b6ba0d
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

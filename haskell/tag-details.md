@@ -11,67 +11,71 @@
 
 ## `haskell:7.10.2`
 
--	Total Virtual Size: 714.0 MB (714047700 bytes)
--	Total v2 Content-Length: 174.4 MB (174402326 bytes)
+```console
+$ docker pull library/haskell@sha256:3bf27cb613fbaaa91d2988b077b7540de05fe86f768aea60edc0c5c6fa9a5953
+```
+
+-	Total Virtual Size: 713.9 MB (713919588 bytes)
+-	Total v2 Content-Length: 174.4 MB (174375103 bytes)
 
 ### Layers (7)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
+#### `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
 
 ```dockerfile
 MAINTAINER Chris Biscardi <chris@christopherbiscardi.com>
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
+#### `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `850f6bd9ddba387d527126a0dcb7784454aa8f7979bba261fdab37cd87de90f5`
+#### `18b8035531bf1f1b6852cc69e66a75c9b5e7680ebf9467047834bc86ea3cddbc`
 
 ```dockerfile
 RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/sources.list.d/ghc.list &&\
@@ -82,105 +86,109 @@ RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/so
      rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:24 GMT
--	Parent Layer: `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
--	Docker Version: 1.7.1
--	Virtual Size: 588.9 MB (588872796 bytes)
--	v2 Blob: `sha256:28c868198c8706a6615cfb2e8c5105604af489c795182e27501fa3cd2bf862ef`
--	v2 Content-Length: 123.0 MB (123033789 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:24:07 GMT
+-	Created: Sat, 05 Dec 2015 06:35:08 GMT
+-	Parent Layer: `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
+-	Docker Version: 1.8.3
+-	Virtual Size: 588.8 MB (588804321 bytes)
+-	v2 Blob: `sha256:3eb685da54684f106d26af5e43ccb6e5807a13efed0baeb2e2e013039c18b7a3`
+-	v2 Content-Length: 123.0 MB (123020687 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 23:39:01 GMT
 
-#### `2555c933bf3582c5456e8117d6fbd6f19db280f3780f2ad3ca23bb649d9a152c`
+#### `de359325875baeb8a3a51931907596d5febe26e91280c60eece87d4e413d9b0d`
 
 ```dockerfile
 ENV PATH=/root/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.2/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:27 GMT
--	Parent Layer: `850f6bd9ddba387d527126a0dcb7784454aa8f7979bba261fdab37cd87de90f5`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:35:13 GMT
+-	Parent Layer: `18b8035531bf1f1b6852cc69e66a75c9b5e7680ebf9467047834bc86ea3cddbc`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25c66f609f78090256fc02e1db1237c1f2d2c3b517f5237542d12d9b467a9716`
+#### `7e65568b6bda871f1c32af9cb1b00e50e3a204547ed92c048b25a208992b4b2e`
 
 ```dockerfile
 CMD ["ghci"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:27 GMT
--	Parent Layer: `2555c933bf3582c5456e8117d6fbd6f19db280f3780f2ad3ca23bb649d9a152c`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:35:13 GMT
+-	Parent Layer: `de359325875baeb8a3a51931907596d5febe26e91280c60eece87d4e413d9b0d`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haskell:7.10`
 
--	Total Virtual Size: 714.0 MB (714047700 bytes)
--	Total v2 Content-Length: 174.4 MB (174402358 bytes)
+```console
+$ docker pull library/haskell@sha256:d687139fc1f24c4e261d6c190bb99a10c928b43f092c76a6b0669533bc3144a5
+```
+
+-	Total Virtual Size: 713.9 MB (713919588 bytes)
+-	Total v2 Content-Length: 174.4 MB (174375103 bytes)
 
 ### Layers (7)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
+#### `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
 
 ```dockerfile
 MAINTAINER Chris Biscardi <chris@christopherbiscardi.com>
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
+#### `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `850f6bd9ddba387d527126a0dcb7784454aa8f7979bba261fdab37cd87de90f5`
+#### `18b8035531bf1f1b6852cc69e66a75c9b5e7680ebf9467047834bc86ea3cddbc`
 
 ```dockerfile
 RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/sources.list.d/ghc.list &&\
@@ -191,105 +199,109 @@ RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/so
      rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:24 GMT
--	Parent Layer: `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
--	Docker Version: 1.7.1
--	Virtual Size: 588.9 MB (588872796 bytes)
--	v2 Blob: `sha256:28c868198c8706a6615cfb2e8c5105604af489c795182e27501fa3cd2bf862ef`
--	v2 Content-Length: 123.0 MB (123033789 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:24:07 GMT
+-	Created: Sat, 05 Dec 2015 06:35:08 GMT
+-	Parent Layer: `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
+-	Docker Version: 1.8.3
+-	Virtual Size: 588.8 MB (588804321 bytes)
+-	v2 Blob: `sha256:3eb685da54684f106d26af5e43ccb6e5807a13efed0baeb2e2e013039c18b7a3`
+-	v2 Content-Length: 123.0 MB (123020687 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 23:39:01 GMT
 
-#### `2555c933bf3582c5456e8117d6fbd6f19db280f3780f2ad3ca23bb649d9a152c`
+#### `de359325875baeb8a3a51931907596d5febe26e91280c60eece87d4e413d9b0d`
 
 ```dockerfile
 ENV PATH=/root/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.2/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:27 GMT
--	Parent Layer: `850f6bd9ddba387d527126a0dcb7784454aa8f7979bba261fdab37cd87de90f5`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:35:13 GMT
+-	Parent Layer: `18b8035531bf1f1b6852cc69e66a75c9b5e7680ebf9467047834bc86ea3cddbc`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25c66f609f78090256fc02e1db1237c1f2d2c3b517f5237542d12d9b467a9716`
+#### `7e65568b6bda871f1c32af9cb1b00e50e3a204547ed92c048b25a208992b4b2e`
 
 ```dockerfile
 CMD ["ghci"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:27 GMT
--	Parent Layer: `2555c933bf3582c5456e8117d6fbd6f19db280f3780f2ad3ca23bb649d9a152c`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:35:13 GMT
+-	Parent Layer: `de359325875baeb8a3a51931907596d5febe26e91280c60eece87d4e413d9b0d`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haskell:7`
 
--	Total Virtual Size: 714.0 MB (714047700 bytes)
--	Total v2 Content-Length: 174.4 MB (174402358 bytes)
+```console
+$ docker pull library/haskell@sha256:0377106406f95bd4cfa046bc42ac49cd3b3e2839fcbc220c294ef0319492b66f
+```
+
+-	Total Virtual Size: 713.9 MB (713919588 bytes)
+-	Total v2 Content-Length: 174.4 MB (174375103 bytes)
 
 ### Layers (7)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
+#### `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
 
 ```dockerfile
 MAINTAINER Chris Biscardi <chris@christopherbiscardi.com>
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
+#### `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `850f6bd9ddba387d527126a0dcb7784454aa8f7979bba261fdab37cd87de90f5`
+#### `18b8035531bf1f1b6852cc69e66a75c9b5e7680ebf9467047834bc86ea3cddbc`
 
 ```dockerfile
 RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/sources.list.d/ghc.list &&\
@@ -300,105 +312,109 @@ RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/so
      rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:24 GMT
--	Parent Layer: `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
--	Docker Version: 1.7.1
--	Virtual Size: 588.9 MB (588872796 bytes)
--	v2 Blob: `sha256:28c868198c8706a6615cfb2e8c5105604af489c795182e27501fa3cd2bf862ef`
--	v2 Content-Length: 123.0 MB (123033789 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:24:07 GMT
+-	Created: Sat, 05 Dec 2015 06:35:08 GMT
+-	Parent Layer: `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
+-	Docker Version: 1.8.3
+-	Virtual Size: 588.8 MB (588804321 bytes)
+-	v2 Blob: `sha256:3eb685da54684f106d26af5e43ccb6e5807a13efed0baeb2e2e013039c18b7a3`
+-	v2 Content-Length: 123.0 MB (123020687 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 23:39:01 GMT
 
-#### `2555c933bf3582c5456e8117d6fbd6f19db280f3780f2ad3ca23bb649d9a152c`
+#### `de359325875baeb8a3a51931907596d5febe26e91280c60eece87d4e413d9b0d`
 
 ```dockerfile
 ENV PATH=/root/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.2/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:27 GMT
--	Parent Layer: `850f6bd9ddba387d527126a0dcb7784454aa8f7979bba261fdab37cd87de90f5`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:35:13 GMT
+-	Parent Layer: `18b8035531bf1f1b6852cc69e66a75c9b5e7680ebf9467047834bc86ea3cddbc`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25c66f609f78090256fc02e1db1237c1f2d2c3b517f5237542d12d9b467a9716`
+#### `7e65568b6bda871f1c32af9cb1b00e50e3a204547ed92c048b25a208992b4b2e`
 
 ```dockerfile
 CMD ["ghci"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:27 GMT
--	Parent Layer: `2555c933bf3582c5456e8117d6fbd6f19db280f3780f2ad3ca23bb649d9a152c`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:35:13 GMT
+-	Parent Layer: `de359325875baeb8a3a51931907596d5febe26e91280c60eece87d4e413d9b0d`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haskell:latest`
 
--	Total Virtual Size: 714.0 MB (714047700 bytes)
--	Total v2 Content-Length: 174.4 MB (174402358 bytes)
+```console
+$ docker pull library/haskell@sha256:52d715feb6e76dcce4ea7e285c8e614ae9f3011bdb1da147f57166189f457747
+```
+
+-	Total Virtual Size: 713.9 MB (713919588 bytes)
+-	Total v2 Content-Length: 174.4 MB (174375103 bytes)
 
 ### Layers (7)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
+#### `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
 
 ```dockerfile
 MAINTAINER Chris Biscardi <chris@christopherbiscardi.com>
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
+#### `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `850f6bd9ddba387d527126a0dcb7784454aa8f7979bba261fdab37cd87de90f5`
+#### `18b8035531bf1f1b6852cc69e66a75c9b5e7680ebf9467047834bc86ea3cddbc`
 
 ```dockerfile
 RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/sources.list.d/ghc.list &&\
@@ -409,105 +425,109 @@ RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/so
      rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:24 GMT
--	Parent Layer: `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
--	Docker Version: 1.7.1
--	Virtual Size: 588.9 MB (588872796 bytes)
--	v2 Blob: `sha256:28c868198c8706a6615cfb2e8c5105604af489c795182e27501fa3cd2bf862ef`
--	v2 Content-Length: 123.0 MB (123033789 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:24:07 GMT
+-	Created: Sat, 05 Dec 2015 06:35:08 GMT
+-	Parent Layer: `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
+-	Docker Version: 1.8.3
+-	Virtual Size: 588.8 MB (588804321 bytes)
+-	v2 Blob: `sha256:3eb685da54684f106d26af5e43ccb6e5807a13efed0baeb2e2e013039c18b7a3`
+-	v2 Content-Length: 123.0 MB (123020687 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 23:39:01 GMT
 
-#### `2555c933bf3582c5456e8117d6fbd6f19db280f3780f2ad3ca23bb649d9a152c`
+#### `de359325875baeb8a3a51931907596d5febe26e91280c60eece87d4e413d9b0d`
 
 ```dockerfile
 ENV PATH=/root/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.2/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:27 GMT
--	Parent Layer: `850f6bd9ddba387d527126a0dcb7784454aa8f7979bba261fdab37cd87de90f5`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:35:13 GMT
+-	Parent Layer: `18b8035531bf1f1b6852cc69e66a75c9b5e7680ebf9467047834bc86ea3cddbc`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `25c66f609f78090256fc02e1db1237c1f2d2c3b517f5237542d12d9b467a9716`
+#### `7e65568b6bda871f1c32af9cb1b00e50e3a204547ed92c048b25a208992b4b2e`
 
 ```dockerfile
 CMD ["ghci"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:21:27 GMT
--	Parent Layer: `2555c933bf3582c5456e8117d6fbd6f19db280f3780f2ad3ca23bb649d9a152c`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:35:13 GMT
+-	Parent Layer: `de359325875baeb8a3a51931907596d5febe26e91280c60eece87d4e413d9b0d`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haskell:7.8.4`
 
--	Total Virtual Size: 647.9 MB (647886519 bytes)
--	Total v2 Content-Length: 164.4 MB (164414504 bytes)
+```console
+$ docker pull library/haskell@sha256:013799a91006f9bfc41b4426cc5e3a5deb25703e0355717d9729e557fe42b09e
+```
+
+-	Total Virtual Size: 647.8 MB (647758407 bytes)
+-	Total v2 Content-Length: 164.4 MB (164387330 bytes)
 
 ### Layers (7)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
+#### `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
 
 ```dockerfile
 MAINTAINER Chris Biscardi <chris@christopherbiscardi.com>
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
+#### `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `562dfbdc371d3192c77851b3a10c83403e28761be52dd785aa2e4df5d5f04019`
+#### `8c11fb3cb4f1cb7a6a2b5e1847b539e4d219a11622a095db029247299bcad7fd`
 
 ```dockerfile
 RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/sources.list.d/ghc.list &&\
@@ -518,105 +538,109 @@ RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/so
      rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:23:36 GMT
--	Parent Layer: `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
--	Docker Version: 1.7.1
--	Virtual Size: 522.7 MB (522711615 bytes)
--	v2 Blob: `sha256:826e4aea7d2771f5a6b7b56e0b7112471a9e9d64d8a8ad9f7457b6c4c7c527b5`
--	v2 Content-Length: 113.0 MB (113045967 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:28:03 GMT
+-	Created: Sat, 05 Dec 2015 06:37:24 GMT
+-	Parent Layer: `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
+-	Docker Version: 1.8.3
+-	Virtual Size: 522.6 MB (522643140 bytes)
+-	v2 Blob: `sha256:6ec270a1c9e63722c2c0ca1c220d8eb641857092265cf5c1dc93a6fc6518d022`
+-	v2 Content-Length: 113.0 MB (113032914 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 23:43:09 GMT
 
-#### `12c95b8752866fe4e027f93c108b7b8fc897b25ec4f2b7f029e49a715f1780b1`
+#### `0b25478a919df6a0666ee817569328bef90bab6008a9627e7bc2c0c346d286d7`
 
 ```dockerfile
 ENV PATH=/root/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 18:23:38 GMT
--	Parent Layer: `562dfbdc371d3192c77851b3a10c83403e28761be52dd785aa2e4df5d5f04019`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:37:29 GMT
+-	Parent Layer: `8c11fb3cb4f1cb7a6a2b5e1847b539e4d219a11622a095db029247299bcad7fd`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5f613bc6487185afd74ba9d83bfbbef6198a1bd6c24798b5eadefebcf3a99c34`
+#### `888196595bacfa892571f2bae461c14561daa37aa351978f3dd3cd45dbef9151`
 
 ```dockerfile
 CMD ["ghci"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:23:39 GMT
--	Parent Layer: `12c95b8752866fe4e027f93c108b7b8fc897b25ec4f2b7f029e49a715f1780b1`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:37:29 GMT
+-	Parent Layer: `0b25478a919df6a0666ee817569328bef90bab6008a9627e7bc2c0c346d286d7`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haskell:7.8`
 
--	Total Virtual Size: 647.9 MB (647886519 bytes)
--	Total v2 Content-Length: 164.4 MB (164414536 bytes)
+```console
+$ docker pull library/haskell@sha256:561fa71f0d8b5c74c645841bff17d1149e98de4de0ab2419f1e9c70735d141cb
+```
+
+-	Total Virtual Size: 647.8 MB (647758407 bytes)
+-	Total v2 Content-Length: 164.4 MB (164387330 bytes)
 
 ### Layers (7)
 
-#### `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
+#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
 
 ```dockerfile
-ADD file:b770303e11edaa0ad0d8f43f6db4fa26673923912b5d5f7cb748ba025e6c4d3b in /
+ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
 ```
 
--	Created: Thu, 20 Aug 2015 20:17:59 GMT
--	Docker Version: 1.7.1
--	Virtual Size: 125.2 MB (125174904 bytes)
--	v2 Blob: `sha256:7ccc78f8af6db23a5013f7b90b5672b82d69dd2fb30d1e6736dba29209aceee7`
--	v2 Content-Length: 51.4 MB (51368377 bytes)
--	v2 Last-Modified: Thu, 20 Aug 2015 20:40:09 GMT
+-	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 125.1 MB (125115267 bytes)
+-	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
+-	v2 Content-Length: 51.4 MB (51354256 bytes)
+-	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
 
-#### `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
+#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 20 Aug 2015 20:18:01 GMT
--	Parent Layer: `2c49f83e0b13f73bf3d276c9fe26ba9aa94d2a1614e866642b95cb0245d0cdab`
--	Docker Version: 1.7.1
+-	Created: Fri, 04 Dec 2015 19:28:00 GMT
+-	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
+#### `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
 
 ```dockerfile
 MAINTAINER Chris Biscardi <chris@christopherbiscardi.com>
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `4a5e6db8c0693a16de88b7559ded7c1cb804018571b137e13abb1713ce6a71cf`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
+#### `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Mon, 24 Aug 2015 18:20:10 GMT
--	Parent Layer: `a685bf61fcc3d99364e77d595498adfadc9a5a226e5a19c81a1b2a5ea95376e5`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:33:54 GMT
+-	Parent Layer: `49825e86c46f5040f855baf1da346a541994abb41ceb9c52ed4371c0d32455a7`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `562dfbdc371d3192c77851b3a10c83403e28761be52dd785aa2e4df5d5f04019`
+#### `8c11fb3cb4f1cb7a6a2b5e1847b539e4d219a11622a095db029247299bcad7fd`
 
 ```dockerfile
 RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/sources.list.d/ghc.list &&\
@@ -627,38 +651,38 @@ RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/so
      rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 24 Aug 2015 18:23:36 GMT
--	Parent Layer: `f12ae4afdeee26eb8dc7feb642181365592a9383dc7656016e3b0be4da8e73fa`
--	Docker Version: 1.7.1
--	Virtual Size: 522.7 MB (522711615 bytes)
--	v2 Blob: `sha256:826e4aea7d2771f5a6b7b56e0b7112471a9e9d64d8a8ad9f7457b6c4c7c527b5`
--	v2 Content-Length: 113.0 MB (113045967 bytes)
--	v2 Last-Modified: Wed, 26 Aug 2015 22:28:03 GMT
+-	Created: Sat, 05 Dec 2015 06:37:24 GMT
+-	Parent Layer: `47fd942998f5ac6a611a56b6657cce6b1c31ced5075892c1b492596943e48b02`
+-	Docker Version: 1.8.3
+-	Virtual Size: 522.6 MB (522643140 bytes)
+-	v2 Blob: `sha256:6ec270a1c9e63722c2c0ca1c220d8eb641857092265cf5c1dc93a6fc6518d022`
+-	v2 Content-Length: 113.0 MB (113032914 bytes)
+-	v2 Last-Modified: Mon, 07 Dec 2015 23:43:09 GMT
 
-#### `12c95b8752866fe4e027f93c108b7b8fc897b25ec4f2b7f029e49a715f1780b1`
+#### `0b25478a919df6a0666ee817569328bef90bab6008a9627e7bc2c0c346d286d7`
 
 ```dockerfile
 ENV PATH=/root/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 24 Aug 2015 18:23:38 GMT
--	Parent Layer: `562dfbdc371d3192c77851b3a10c83403e28761be52dd785aa2e4df5d5f04019`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:37:29 GMT
+-	Parent Layer: `8c11fb3cb4f1cb7a6a2b5e1847b539e4d219a11622a095db029247299bcad7fd`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5f613bc6487185afd74ba9d83bfbbef6198a1bd6c24798b5eadefebcf3a99c34`
+#### `888196595bacfa892571f2bae461c14561daa37aa351978f3dd3cd45dbef9151`
 
 ```dockerfile
 CMD ["ghci"]
 ```
 
--	Created: Mon, 24 Aug 2015 18:23:39 GMT
--	Parent Layer: `12c95b8752866fe4e027f93c108b7b8fc897b25ec4f2b7f029e49a715f1780b1`
--	Docker Version: 1.7.1
+-	Created: Sat, 05 Dec 2015 06:37:29 GMT
+-	Parent Layer: `0b25478a919df6a0666ee817569328bef90bab6008a9627e7bc2c0c346d286d7`
+-	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Fri, 27 Mar 2015 17:18:47 GMT
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

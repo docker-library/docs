@@ -6,7 +6,7 @@ Documentation for this image is stored in the [`%%REPO%%/` directory](https://gi
 
 If you have any problems with or questions about this image, please contact us %%MAILING-LIST%% through a [GitHub issue](%%GITHUB-REPO%%/issues).
 
-If you have any questions or suggestions we would be very happy to help you. So, feel free to swing by our IRC channel `#crate` on [Freenode](http://freenode.net).
+If you have any questions or suggestions we would be very happy to help you. So, feel free to join our public room on [HipChat](https://www.hipchat.com/g7Pc2CYwi).
 
 For further information and official contact please visit [https://crate.io](https://crate.io).
 

@@ -2,7 +2,7 @@
 
 -	[`latest`, `0.9.1` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.9.1/Dockerfile)
 -	[`0.8.1` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.8.1/Dockerfile)
--	[`2`, `2.1`, `2.1.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/0258654c749c96ca876b1d9ce456bee42b6794de/Dockerfile)
+-	[`2`, `2.2`, `2.2.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/3aadce6abde20374ff286d444b24a0ac8949ba65/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -39,11 +39,17 @@ $ docker run \
 
 NOTE: The container will try to allocate the port 5000. If the port is already taken, find out which container is already using it by running `docker ps`.
 
+# Support
+
+If you are interested in commercial support, the [Docker Trusted Registry](https://www.docker.com/docker-trusted-registry) provides an image registry, LDAP/Active Directory integration, security certificates, and more in a solution that includes commercial support.
+
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 

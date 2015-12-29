@@ -1,14 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.2-rc1`, `1.8-rc`, `rc` (*1.8-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/6c4acc40ebc56a539fd33e7799187641dc1e27b0/1.8-rc/Dockerfile)
--	[`1.8.2-rc1-dind`, `1.8-rc-dind`, `rc-dind` (*1.8-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/5c4db83ebdc26e4303fc3a6adf916367d440eea2/1.8-rc/dind/Dockerfile)
--	[`1.8.2-rc1-git`, `1.8-rc-git`, `rc-git` (*1.8-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/5c4db83ebdc26e4303fc3a6adf916367d440eea2/1.8-rc/git/Dockerfile)
--	[`1.8.1`, `1.8`, `1`, `latest` (*1.8/Dockerfile*)](https://github.com/docker-library/docker/blob/6c4acc40ebc56a539fd33e7799187641dc1e27b0/1.8/Dockerfile)
--	[`1.8.1-dind`, `1.8-dind`, `1-dind`, `dind` (*1.8/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/251cf235760a2ba6db1cf1ddc8ccb3d4da5ec99d/1.8/dind/Dockerfile)
--	[`1.8.1-git`, `1.8-git`, `1-git`, `git` (*1.8/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a2614c9b94d3bae7d8d61a7cf4d56a42f6332104/1.8/git/Dockerfile)
--	[`1.7.1`, `1.7` (*1.7/Dockerfile*)](https://github.com/docker-library/docker/blob/6c4acc40ebc56a539fd33e7799187641dc1e27b0/1.7/Dockerfile)
--	[`1.7.1-dind`, `1.7-dind` (*1.7/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/251cf235760a2ba6db1cf1ddc8ccb3d4da5ec99d/1.7/dind/Dockerfile)
--	[`1.7.1-git`, `1.7-git` (*1.7/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a98e0c42a96497670c36f4b2dcad2bcc81f18f35/1.7/git/Dockerfile)
+-	[`1.9.1`, `1.9`, `1`, `latest` (*1.9/Dockerfile*)](https://github.com/docker-library/docker/blob/e33e7226872e53dfa88bee09f153704a66fc103d/1.9/Dockerfile)
+-	[`1.9.1-dind`, `1.9-dind`, `1-dind`, `dind` (*1.9/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/31f5524efb43f05f57663c91de40be788c9d35a4/1.9/dind/Dockerfile)
+-	[`1.9.1-git`, `1.9-git`, `1-git`, `git` (*1.9/git/Dockerfile*)](https://github.com/docker-library/docker/blob/ed9933c9cd998b27a8d65efe810e8cd13c116316/1.9/git/Dockerfile)
+-	[`1.8.3`, `1.8` (*1.8/Dockerfile*)](https://github.com/docker-library/docker/blob/460aea3b5f26709dc58252deb7cf31cd0a26383e/1.8/Dockerfile)
+-	[`1.8.3-dind`, `1.8-dind` (*1.8/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/31f5524efb43f05f57663c91de40be788c9d35a4/1.8/dind/Dockerfile)
+-	[`1.8.3-git`, `1.8-git` (*1.8/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a2614c9b94d3bae7d8d61a7cf4d56a42f6332104/1.8/git/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -155,9 +152,11 @@ View [license information](https://github.com/docker/docker/blob/eb7b2ed6bbe3fbe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.8.1.
+This image is officially supported on Docker version 1.9.1.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to 1.6) is provided on a best-effort basis.
+
+Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 # User Feedback
 
