@@ -107,11 +107,21 @@ for repo in "${repos[@]}"; do
 		fi
 		
 		logo=
-		if [ -e "$repo/logo.png" ]; then
-			logo="![logo](https://raw.githubusercontent.com/docker-library/docs/master/$repo/logo.png)"
-		elif [ -e "$repo/logo.svg" ]; then
-			# rawgit.com because: http://stackoverflow.com/a/16462143/433558
-			logo="![logo](https://rawgit.com/docker-library/docs/master/$repo/logo.svg)"
+		logoFile=
+		for f in png svg; do
+			if [ -e "$repo/logo.$f" ]; then
+				logoFile="$repo/logo.$f"
+				break
+			fi
+		done
+		if [ "$logoFile" ]; then
+			logoCommit="$(git log -1 --format='format:%H' -- "$logoFile" 2>/dev/null || true)"
+			[ "$logoCommit" ] || logoCommit='master'
+			if [ "${logoFile##*.}" = 'svg' ]; then
+				logo="![logo](https://rawgit.com/docker-library/docs/$logoCommit/$logoFile)"
+			else
+				logo="![logo](https://raw.githubusercontent.com/docker-library/docs/$logoCommit/$logoFile)"
+			fi
 		fi
 		
 		compose=
