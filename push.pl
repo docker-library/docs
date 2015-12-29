@@ -118,6 +118,8 @@ while (my $repo = shift) { # '/library/hylang', '/tianon/perl', etc
 	warn 'failed to get: ' . $repoUrl and next unless $repoTx->success;
 	
 	my $repoDetails = $repoTx->res->json;
+	$repoDetails->{description} //= '';
+	$repoDetails->{full_description} //= '';
 	
 	my $hubShort = prompt_for_edit($repoDetails->{description}, $repoName . '/README-short.txt');
 	my $hubLong = prompt_for_edit($repoDetails->{full_description}, $repoName . '/README.md', $hubLengthLimit);
