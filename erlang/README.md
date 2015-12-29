@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`18.1.4`, `18.1`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/20e41464075dc0fc76709be77701530eddb6fe33/18/Dockerfile)
--	[`18.1.4-onbuild`, `18.1-onbuild`, `18-onbuild`, `onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/20e41464075dc0fc76709be77701530eddb6fe33/18/onbuild/Dockerfile)
--	[`17.5.6.4`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/70fd1e32745cbc68e894d340b105f30b387966c8/17/Dockerfile)
+-	[`18.2.1`, `18.2`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/4ccaeb1b709c227bea0a712c25f974350242d6d6/18/Dockerfile)
+-	[`18.2.1-onbuild`, `18.2-onbuild`, `18-onbuild`, `onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/4ccaeb1b709c227bea0a712c25f974350242d6d6/18/onbuild/Dockerfile)
+-	[`17.5.6.7`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/4ccaeb1b709c227bea0a712c25f974350242d6d6/17/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/erlang`)](https://github.com/docker-library/official-images/blob/master/library/erlang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
