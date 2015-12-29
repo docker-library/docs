@@ -12,7 +12,7 @@ The Jenkins Continuous Integration and Delivery server.
 
 This is a fully functional Jenkins server, based on the Long Term Support release [http://jenkins-ci.org/](http://jenkins-ci.org/).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/jenkins/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/3ab4dafb41dd0e959ff9322b3c50af2519af6d85/jenkins/logo.png)
 
 # How to use this image
 
