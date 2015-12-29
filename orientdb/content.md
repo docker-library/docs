@@ -32,19 +32,19 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
     orientdb:latest
 ```
-### Running console
+### Running OrientDB tools
 
 The OrientDB image contains a full fledge installation, so it is possible to run the [console](http://orientdb.com/docs/last/Console-Commands.html)
 
- ```console
+```console
   $docker run --rm -it orientdb:latest /orientdb/bin/console.sh
-  ```
+```
 
- or even the etl
+or even the etl
 
- ```console
+```console
   docker run  --rm -it -v <config_path>:/orientdb/config orientdb:latest /orientdb/bin/oetl.sh ../config/oetl-config.json
-  ```
+```
 
 ### Override configuration parameters
 
