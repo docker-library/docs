@@ -13,7 +13,7 @@ Drupal is a free and open-source content-management framework written in PHP and
 
 > [wikipedia.org/wiki/Drupal](https://en.wikipedia.org/wiki/Drupal)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/drupal/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/a0f37ddfd711f858bb968d6c85715f5bc1f7393f/drupal/logo.png)
 
 # How to use this image
 

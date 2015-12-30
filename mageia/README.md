@@ -11,7 +11,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 [Mageia](http://www.mageia.org) is a GNU/Linux-based, Free Software operating system.It is a [community](https://www.mageia.org/en/community/) project, supported by [a nonprofit organisation](https://www.mageia.org/en/about/#mageia.org) of elected contributors.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/mageia/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/ab6a17739272608c925f896ecf1c8feb18f0ec1a/mageia/logo.png)
 
 Our mission: to build great tools for people.
 

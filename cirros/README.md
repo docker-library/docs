@@ -12,7 +12,7 @@ CirrOS is a Tiny OS that specializes in running on a cloud.
 
 > [launchpad.net/cirros](https://launchpad.net/cirros)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/cirros/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/cirros/logo.png)
 
 # Supported Docker versions
 

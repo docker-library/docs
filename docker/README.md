@@ -17,7 +17,7 @@ Docker is an open-source project that automates the deployment of applications i
 
 > [wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_%28software%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/docker/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c350af05d3fac7b5c3f6327ac82fe4d990d8729c/docker/logo.png)
 
 # How to use this image
 

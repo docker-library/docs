@@ -16,7 +16,7 @@ The intent is also to maintain high compatibility with MySQL, ensuring a "drop-i
 
 > [wikipedia.org/wiki/MariaDB](https://en.wikipedia.org/wiki/MariaDB)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/mariadb/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/74e3b3d4d60389208732dbd2c95145868111d959/mariadb/logo.png)
 
 # How to use this image
 

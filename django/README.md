@@ -15,7 +15,7 @@ Django is a free and open source web application framework, written in Python, w
 
 > [wikipedia.org/wiki/Django_(web_framework)](https://en.wikipedia.org/wiki/Django_%28web_framework%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/django/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/164cc29281655dc81242824d1b4f90b4e6d8d7eb/django/logo.png)
 
 # How to use this image
 

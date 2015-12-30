@@ -23,7 +23,7 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source pro
 
 > [wikipedia.org/wiki/Ruby_(programming_language)](https://en.wikipedia.org/wiki/Ruby_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/ruby/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/ruby/logo.png)
 
 # How to use this image
 

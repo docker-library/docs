@@ -13,7 +13,7 @@ Odoo, formerly known as OpenERP, is a suite of open-source business apps written
 
 > [www.odoo.com](https://www.odoo.com)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/odoo/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/a11348f9798f9c5e51e92409ebf4d5b39988fd13/odoo/logo.png)
 
 # How to use this image
 

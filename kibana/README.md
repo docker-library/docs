@@ -17,7 +17,7 @@ Kibana is a registered trademark of Elasticsearch BV.
 
 > [wikipedia.org/wiki/Kibana](https://en.wikipedia.org/wiki/Kibana)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/kibana/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/8965672c23522a2196bba6a431a8746c10116304/kibana/logo.png)
 
 # How to use this image
 

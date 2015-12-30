@@ -10,7 +10,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 The Kaazing Gateway is a network gateway created to provide a single access point for real-time web based protocols that supports load balancing, clustering, and security management. It is designed to provide scalable and secure bidirectional event-based communication over the web; on every platform, browser, and device.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/kaazing-gateway/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/ba0031dd881f3b95d30ebf1d6094e99985d8eb6d/kaazing-gateway/logo.png)
 
 # How to use this image
 

@@ -12,7 +12,7 @@ Hy (a.k.a., Hylang) is a dialect of the Lisp programming language designed to in
 
 > [wikipedia.org/wiki/Hy](https://en.wikipedia.org/wiki/Hy)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/hylang/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c097f38c6ee48cd13456df8cd853a9d806fff429/hylang/logo.png)
 
 # How to use this image
 

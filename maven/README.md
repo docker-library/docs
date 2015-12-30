@@ -13,7 +13,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 [Apache Maven](http://maven.apache.org) is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/maven/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/e2782b8942c1af41419536078c8d0176665a005d/maven/logo.png)
 
 # How to use this image
 

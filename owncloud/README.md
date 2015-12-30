@@ -19,7 +19,7 @@ ownCloud is a self-hosted file sync and share server. It provides access to your
 
 > [owncloud.org](https://owncloud.org/)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/owncloud/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/9d36b4ed7cabc35dbd3849272ba2bd7abe482172/owncloud/logo.png)
 
 # How to use this image
 

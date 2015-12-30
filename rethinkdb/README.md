@@ -30,7 +30,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 RethinkDB is an open-source, distributed database built to store JSON documents and effortlessly scale to multiple machines. It's easy to set up and learn and features a simple but powerful query language that supports table joins, groupings, aggregations, and functions.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/rethinkdb/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/af9f91fe186f3ea3afee511d0a53b50088fdc381/rethinkdb/logo.png)
 
 # How to use this image
 

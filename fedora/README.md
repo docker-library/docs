@@ -14,7 +14,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 This image serves as the `official Fedora image` for `Fedora 22`, `Fedora 21` and as a semi-official image for Fedora 20 (heisenbug) and rawhide.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/fedora/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/fedora/logo.png)
 
 The `fedora:latest` tag will always point to the latest stable release, currently [Fedora 22](https://getfedora.org/). `fedora:latest` is now the same as `fedora:22`.
 

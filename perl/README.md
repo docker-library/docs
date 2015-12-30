@@ -15,7 +15,7 @@ Perl is a high-level, general-purpose, interpreted, dynamic programming language
 
 > [wikipedia.org/wiki/Perl](https://en.wikipedia.org/wiki/Perl)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/perl/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/2f0c63f66919d5f310ba8357cec5f12d93ef4208/perl/logo.png)
 
 # How to use this image
 

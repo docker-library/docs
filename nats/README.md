@@ -8,7 +8,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # [NATS](https://nats.io): A high-performance cloud native messaging system.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/nats/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/45d33e1726fed03a2a40363a9699e0587e713c55/nats/logo.png)
 
 `nats` is a high performance server for the NATS Messaging System.
 

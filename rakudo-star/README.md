@@ -20,7 +20,7 @@ Perl 6 Language Specification: [http://design.perl6.org/](http://design.perl6.or
 
 Perl 6 Language Documentation: [http://doc.perl6.org/](http://doc.perl6.org/)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/rakudo-star/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/48ac05ac94903844bfbdea1fb361676a904f9d85/rakudo-star/logo.png)
 
 # How to use this image
 

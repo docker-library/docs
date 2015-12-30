@@ -19,7 +19,7 @@ PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant a
 
 > [wikipedia.org/wiki/PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/postgres/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/postgres/logo.png)
 
 # How to use this image
 

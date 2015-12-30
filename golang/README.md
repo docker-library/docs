@@ -24,7 +24,7 @@ Go (a.k.a., Golang) is a programming language first developed at Google. It is a
 
 > [wikipedia.org/wiki/Go_(programming_language)](http://en.wikipedia.org/wiki/Go_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/golang/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/golang/logo.png)
 
 # How to use this image
 

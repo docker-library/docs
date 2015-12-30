@@ -11,7 +11,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 Neo4j is a highly scalable, robust, native graph database. It is used in mission-critical apps by thousands of leading startups, enterprises, and governments around the world. You can learn more [here](http://neo4j.com/developer).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/neo4j/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c8e2434fd7f640cfb78070c28729693ad1a1d46c/neo4j/logo.png)
 
 # How to use this image
 

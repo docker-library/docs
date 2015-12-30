@@ -13,7 +13,7 @@ Clojure is a dialect of the Lisp programming language. It is a general-purpose p
 
 > [wikipedia.org/wiki/Clojure](http://en.wikipedia.org/wiki/Clojure)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/clojure/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/665526c3b12cedfd721234cedb61e8433f73b75a/clojure/logo.png)
 
 # How to use this image
 

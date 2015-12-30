@@ -24,7 +24,7 @@ This project aims to continue development of io.js under an "open governance mod
 
 > [iojs.org/faq.html](https://iojs.org/faq.html)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/iojs/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/935af30d59b926af599eb7405ef2988b31280179/iojs/logo.png)
 
 # How to use this image
 

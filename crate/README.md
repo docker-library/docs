@@ -13,7 +13,7 @@ Crate allows to query and compute data with SQL in real time by providing a dist
 
 [Crate](https://crate.io/)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/crate/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/de809758bd3f9724caa5377695f161795f3eb8a1/crate/logo.png)
 
 ## How to use this image
 

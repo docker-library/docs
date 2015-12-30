@@ -17,7 +17,7 @@ Robot simulation is an essential tool in every roboticist's toolbox. A well-desi
 
 > [wikipedia.org/wiki/Gazebo_simulator](https://en.wikipedia.org/wiki/Gazebo_simulator)
 
-[![logo](https://raw.githubusercontent.com/docker-library/docs/master/gazebo/logo.png)](http://www.gazebosim.org/)
+[![logo](https://raw.githubusercontent.com/docker-library/docs/54c75ffef879ebb659bb82d5bc690bdb299c60c4/gazebo/logo.png)](http://www.gazebosim.org/)
 
 # How to use this image
 

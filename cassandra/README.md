@@ -14,7 +14,7 @@ Apache Cassandra is an open source distributed database management system design
 
 > [wikipedia.org/wiki/Apache_Cassandra](https://en.wikipedia.org/wiki/Apache_Cassandra)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/cassandra/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/fb8596d619703fc556e6d56e12584d8bfdf13785/cassandra/logo.png)
 
 # How to use this image
 

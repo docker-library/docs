@@ -14,7 +14,7 @@ Upstart is an event-based replacement for the traditional init daemon – the me
 
 > [wikipedia.org/wiki/Upstart](https://en.wikipedia.org/wiki/Upstart)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/ubuntu-upstart/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/9a6eb1db57c8882706a010edb9d340045029382a/ubuntu-upstart/logo.png)
 
 # Supported Docker versions
 
