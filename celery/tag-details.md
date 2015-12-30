@@ -10,11 +10,11 @@
 ## `celery:3.1.19`
 
 ```console
-$ docker pull library/celery@sha256:f3891729c80906cc4d41fa27410d1956cf67e5c5e43b2704f1a0770e8be408ff
+$ docker pull library/celery@sha256:a00b1343b7ae33df31ad695f3b14981bd86124d8c7c022bd8b7fb5203ebea250
 ```
 
--	Total Virtual Size: 233.1 MB (233145464 bytes)
--	Total v2 Content-Length: 85.7 MB (85668974 bytes)
+-	Total Virtual Size: 233.1 MB (233145022 bytes)
+-	Total v2 Content-Length: 85.7 MB (85668576 bytes)
 
 ### Layers (20)
 
@@ -133,7 +133,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `541e87b6f7860b144bc06045db42cbe6e47fd554dd77942ac1b4a77868cb65e9`
+#### `6cce9069f63b1fcad30d1a76faf7c36d7f6cae488aa1674a42b9167dd1e1b75a`
 
 ```dockerfile
 RUN set -x \
@@ -152,8 +152,8 @@ RUN set -x \
 	' \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
 	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
+	&& curl -fSL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
+	&& curl -fSL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
 	&& gpg --verify python.tar.xz.asc \
 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
 	&& rm python.tar.xz* \
@@ -171,15 +171,15 @@ RUN set -x \
 	&& rm -rf /usr/src/python
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:18 GMT
+-	Created: Wed, 30 Dec 2015 01:44:49 GMT
 -	Parent Layer: `a11c940c46d5a2f1fa095c91ee789afe0e7fb4f1eec3fb702ae7d436f1641968`
 -	Docker Version: 1.8.3
 -	Virtual Size: 82.7 MB (82747061 bytes)
--	v2 Blob: `sha256:0d858f9ac5fafd1d15d3456e1dd2d3300c458617fc46475d8eccdb31789b2fa1`
--	v2 Content-Length: 24.0 MB (24018398 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:44:29 GMT
+-	v2 Blob: `sha256:237dfd1796f0d1227de89cfc343f492686865643f465448046cbd8d1a0742a3b`
+-	v2 Content-Length: 24.0 MB (24018286 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:31:30 GMT
 
-#### `8d925e12cb37ff7a61053c1f284e72e0667c278db94dcff6ec1552badc76c283`
+#### `ae20fee46f42cbcf7c132afa2fd2f72b41c97ea73c5458e7451d42bc038c7f4e`
 
 ```dockerfile
 RUN cd /usr/local/bin \
@@ -190,99 +190,99 @@ RUN cd /usr/local/bin \
 	&& ln -s python-config3 python-config
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:26 GMT
--	Parent Layer: `541e87b6f7860b144bc06045db42cbe6e47fd554dd77942ac1b4a77868cb65e9`
+-	Created: Wed, 30 Dec 2015 01:44:52 GMT
+-	Parent Layer: `6cce9069f63b1fcad30d1a76faf7c36d7f6cae488aa1674a42b9167dd1e1b75a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 48.0 B
--	v2 Blob: `sha256:e2f23c1529642743194f538763474ecc54d41d3a9d2fe8a04cfbac84977f3f37`
+-	v2 Blob: `sha256:5fb5b7a896d40cde835f71a12acc903e033fcf72445d54e821ba6e2acbf7378c`
 -	v2 Content-Length: 270.0 B
--	v2 Last-Modified: Tue, 22 Dec 2015 20:44:11 GMT
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:31:14 GMT
 
-#### `004bd8cd4611cba4ab6076a74d66b5b1f3cf4c9dfc3bc7947e9f20170327a179`
+#### `2840fc7f44683f9582c0e54f57226afb78f418065ec5b6d38e127de2c9820901`
 
 ```dockerfile
 CMD ["python3"]
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:26 GMT
--	Parent Layer: `8d925e12cb37ff7a61053c1f284e72e0667c278db94dcff6ec1552badc76c283`
+-	Created: Wed, 30 Dec 2015 01:44:52 GMT
+-	Parent Layer: `ae20fee46f42cbcf7c132afa2fd2f72b41c97ea73c5458e7451d42bc038c7f4e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2a603bf3c1816522c98f27055d64bdc83304bcf34a0aba4ff0580f0fc56cc7f5`
+#### `8ef77944734681b4a78981e5e8e1ba9d1cbbe6c699e356cc9cb1bd66df4a75ed`
 
 ```dockerfile
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:47 GMT
--	Parent Layer: `004bd8cd4611cba4ab6076a74d66b5b1f3cf4c9dfc3bc7947e9f20170327a179`
+-	Created: Wed, 30 Dec 2015 04:33:38 GMT
+-	Parent Layer: `2840fc7f44683f9582c0e54f57226afb78f418065ec5b6d38e127de2c9820901`
 -	Docker Version: 1.8.3
 -	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:a99a8fef850af5536c8b8ca2b4854c703eaf2884aee3cd990dced59caa94ebc2`
--	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:50:12 GMT
+-	v2 Blob: `sha256:d0d122482df171802ccb3018f5c382098fb1884d48e4d7993181375a0ee3dd20`
+-	v2 Content-Length: 4.3 KB (4347 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:31 GMT
 
-#### `7fe86d0775d0bf356acb09419abc6e2418aa7915352b3cf1745a9f42ba8f3a20`
+#### `62dbd11d0a205e0e2af3c923f26f17a19657e01cc612eeaa99b88ce0c6a5d4b2`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:48 GMT
--	Parent Layer: `2a603bf3c1816522c98f27055d64bdc83304bcf34a0aba4ff0580f0fc56cc7f5`
+-	Created: Wed, 30 Dec 2015 04:33:39 GMT
+-	Parent Layer: `8ef77944734681b4a78981e5e8e1ba9d1cbbe6c699e356cc9cb1bd66df4a75ed`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8350b44c7b2bb181aae2bf07eb49609ac02ec620f7be54bb0106e772a702c9b`
+#### `808d67b02cb6e61869f8c3d92d364f5027bb66d37a6b92f6dcb26544f043901d`
 
 ```dockerfile
 RUN pip install redis
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:52 GMT
--	Parent Layer: `7fe86d0775d0bf356acb09419abc6e2418aa7915352b3cf1745a9f42ba8f3a20`
+-	Created: Wed, 30 Dec 2015 04:33:41 GMT
+-	Parent Layer: `62dbd11d0a205e0e2af3c923f26f17a19657e01cc612eeaa99b88ce0c6a5d4b2`
 -	Docker Version: 1.8.3
--	Virtual Size: 4.3 MB (4298645 bytes)
--	v2 Blob: `sha256:e177f5ac53650ecddc94b682cfd437442a744a5376487a34004b1e1134a5fea7`
--	v2 Content-Length: 1.6 MB (1640574 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:50:06 GMT
+-	Virtual Size: 4.3 MB (4298736 bytes)
+-	v2 Blob: `sha256:8fad4b5862650b0eaa3837b3584a7c80e64e15b37d779bb10054be83181cb007`
+-	v2 Content-Length: 1.6 MB (1640543 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:26 GMT
 
-#### `1ff1422f00b0aa9aed6c5345104b4f7eb812dcb7f970a7a522012b8d2ecec082`
+#### `101bba0ecca0391c1f8cc8a54a5d52e1243777ecc4defd3f3ec54a01183c965a`
 
 ```dockerfile
 ENV CELERY_VERSION=3.1.19
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:53 GMT
--	Parent Layer: `d8350b44c7b2bb181aae2bf07eb49609ac02ec620f7be54bb0106e772a702c9b`
+-	Created: Wed, 30 Dec 2015 04:33:42 GMT
+-	Parent Layer: `808d67b02cb6e61869f8c3d92d364f5027bb66d37a6b92f6dcb26544f043901d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3a9e50c28aefaa60502742c11adcf05320b628d5d1034bb712321ded10b78389`
+#### `785e9f25a963f1e4a2146313e671b1468b124fab28b1bf2ef18becef7fd63e00`
 
 ```dockerfile
 RUN pip install celery=="$CELERY_VERSION"
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:02 GMT
--	Parent Layer: `1ff1422f00b0aa9aed6c5345104b4f7eb812dcb7f970a7a522012b8d2ecec082`
+-	Created: Wed, 30 Dec 2015 04:33:48 GMT
+-	Parent Layer: `101bba0ecca0391c1f8cc8a54a5d52e1243777ecc4defd3f3ec54a01183c965a`
 -	Docker Version: 1.8.3
--	Virtual Size: 13.3 MB (13260722 bytes)
--	v2 Blob: `sha256:c33c13784936b0743856e40cd2fc0d1a010b3ba4145d4eaad605ea78fbb9d026`
--	v2 Content-Length: 5.3 MB (5341244 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:49:58 GMT
+-	Virtual Size: 13.3 MB (13260189 bytes)
+-	v2 Blob: `sha256:e8b56383ad74412cf56fe8c95754536d75be3dd80a204b7a013ce27beddf7eb5`
+-	v2 Content-Length: 5.3 MB (5340986 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:19 GMT
 
-#### `c1909049ba81a34414804f7a7837ca04d97c28f0f8fb7c82cf6b21782470e021`
+#### `f0a577b2f28d46f788934b641e7456fe612d38f2160f9b4437642c7a0693456a`
 
 ```dockerfile
 RUN { \
@@ -290,50 +290,50 @@ RUN { \
 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:07 GMT
--	Parent Layer: `3a9e50c28aefaa60502742c11adcf05320b628d5d1034bb712321ded10b78389`
+-	Created: Wed, 30 Dec 2015 04:33:51 GMT
+-	Parent Layer: `785e9f25a963f1e4a2146313e671b1468b124fab28b1bf2ef18becef7fd63e00`
 -	Docker Version: 1.8.3
 -	Virtual Size: 70.0 B
--	v2 Blob: `sha256:001730a354b81e2d1a28c109ef9ad0768f049267bc03c682a1d3964596800b8b`
--	v2 Content-Length: 233.0 B
--	v2 Last-Modified: Tue, 22 Dec 2015 20:49:52 GMT
+-	v2 Blob: `sha256:bd0582e2e518dc6277f067e516a25c1903f50e8d687efbb42227ebdd99e01a6d`
+-	v2 Content-Length: 232.0 B
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:11 GMT
 
-#### `7e7e8f9da72eddcc6f184b27147ec10e5aaf16fa92d8ac2899f962104aefad11`
+#### `4f2ad9f6ff1231f32b66f714ac6ea6e4535ae42a35db2daadf51e910039e26be`
 
 ```dockerfile
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:08 GMT
--	Parent Layer: `c1909049ba81a34414804f7a7837ca04d97c28f0f8fb7c82cf6b21782470e021`
+-	Created: Wed, 30 Dec 2015 04:33:51 GMT
+-	Parent Layer: `f0a577b2f28d46f788934b641e7456fe612d38f2160f9b4437642c7a0693456a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `435ec15bb624c9000b84ec6a2e81c5596710dc9ce4094b2e40d4df9987cf2444`
+#### `4aa8dcbcd39375c14a822f1c22b3df3199825b91b02fd36399aa2485a1e2d4b7`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:08 GMT
--	Parent Layer: `7e7e8f9da72eddcc6f184b27147ec10e5aaf16fa92d8ac2899f962104aefad11`
+-	Created: Wed, 30 Dec 2015 04:33:52 GMT
+-	Parent Layer: `4f2ad9f6ff1231f32b66f714ac6ea6e4535ae42a35db2daadf51e910039e26be`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6e21d26db209a700af7c7d1fe74b0325e52bcc1ef4581144112ad63b6e6767a6`
+#### `0fde39e97cd47ad8f6fedb288f72cdfd3bb20ba2ea3892e250becc9c35a3bbf8`
 
 ```dockerfile
 CMD ["celery" "worker"]
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:09 GMT
--	Parent Layer: `435ec15bb624c9000b84ec6a2e81c5596710dc9ce4094b2e40d4df9987cf2444`
+-	Created: Wed, 30 Dec 2015 04:33:52 GMT
+-	Parent Layer: `4aa8dcbcd39375c14a822f1c22b3df3199825b91b02fd36399aa2485a1e2d4b7`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -343,11 +343,11 @@ CMD ["celery" "worker"]
 ## `celery:3.1`
 
 ```console
-$ docker pull library/celery@sha256:b8e8fc05a67ea128eeac7df9ee67e1e2b610f6617ce8c92b4f813b34c0445f48
+$ docker pull library/celery@sha256:682071034d43afd53e717882ce51367938d332852f048d7bb679701501f1148f
 ```
 
--	Total Virtual Size: 233.1 MB (233145464 bytes)
--	Total v2 Content-Length: 85.7 MB (85668974 bytes)
+-	Total Virtual Size: 233.1 MB (233145022 bytes)
+-	Total v2 Content-Length: 85.7 MB (85668576 bytes)
 
 ### Layers (20)
 
@@ -466,7 +466,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `541e87b6f7860b144bc06045db42cbe6e47fd554dd77942ac1b4a77868cb65e9`
+#### `6cce9069f63b1fcad30d1a76faf7c36d7f6cae488aa1674a42b9167dd1e1b75a`
 
 ```dockerfile
 RUN set -x \
@@ -485,8 +485,8 @@ RUN set -x \
 	' \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
 	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
+	&& curl -fSL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
+	&& curl -fSL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
 	&& gpg --verify python.tar.xz.asc \
 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
 	&& rm python.tar.xz* \
@@ -504,15 +504,15 @@ RUN set -x \
 	&& rm -rf /usr/src/python
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:18 GMT
+-	Created: Wed, 30 Dec 2015 01:44:49 GMT
 -	Parent Layer: `a11c940c46d5a2f1fa095c91ee789afe0e7fb4f1eec3fb702ae7d436f1641968`
 -	Docker Version: 1.8.3
 -	Virtual Size: 82.7 MB (82747061 bytes)
--	v2 Blob: `sha256:0d858f9ac5fafd1d15d3456e1dd2d3300c458617fc46475d8eccdb31789b2fa1`
--	v2 Content-Length: 24.0 MB (24018398 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:44:29 GMT
+-	v2 Blob: `sha256:237dfd1796f0d1227de89cfc343f492686865643f465448046cbd8d1a0742a3b`
+-	v2 Content-Length: 24.0 MB (24018286 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:31:30 GMT
 
-#### `8d925e12cb37ff7a61053c1f284e72e0667c278db94dcff6ec1552badc76c283`
+#### `ae20fee46f42cbcf7c132afa2fd2f72b41c97ea73c5458e7451d42bc038c7f4e`
 
 ```dockerfile
 RUN cd /usr/local/bin \
@@ -523,99 +523,99 @@ RUN cd /usr/local/bin \
 	&& ln -s python-config3 python-config
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:26 GMT
--	Parent Layer: `541e87b6f7860b144bc06045db42cbe6e47fd554dd77942ac1b4a77868cb65e9`
+-	Created: Wed, 30 Dec 2015 01:44:52 GMT
+-	Parent Layer: `6cce9069f63b1fcad30d1a76faf7c36d7f6cae488aa1674a42b9167dd1e1b75a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 48.0 B
--	v2 Blob: `sha256:e2f23c1529642743194f538763474ecc54d41d3a9d2fe8a04cfbac84977f3f37`
+-	v2 Blob: `sha256:5fb5b7a896d40cde835f71a12acc903e033fcf72445d54e821ba6e2acbf7378c`
 -	v2 Content-Length: 270.0 B
--	v2 Last-Modified: Tue, 22 Dec 2015 20:44:11 GMT
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:31:14 GMT
 
-#### `004bd8cd4611cba4ab6076a74d66b5b1f3cf4c9dfc3bc7947e9f20170327a179`
+#### `2840fc7f44683f9582c0e54f57226afb78f418065ec5b6d38e127de2c9820901`
 
 ```dockerfile
 CMD ["python3"]
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:26 GMT
--	Parent Layer: `8d925e12cb37ff7a61053c1f284e72e0667c278db94dcff6ec1552badc76c283`
+-	Created: Wed, 30 Dec 2015 01:44:52 GMT
+-	Parent Layer: `ae20fee46f42cbcf7c132afa2fd2f72b41c97ea73c5458e7451d42bc038c7f4e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2a603bf3c1816522c98f27055d64bdc83304bcf34a0aba4ff0580f0fc56cc7f5`
+#### `8ef77944734681b4a78981e5e8e1ba9d1cbbe6c699e356cc9cb1bd66df4a75ed`
 
 ```dockerfile
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:47 GMT
--	Parent Layer: `004bd8cd4611cba4ab6076a74d66b5b1f3cf4c9dfc3bc7947e9f20170327a179`
+-	Created: Wed, 30 Dec 2015 04:33:38 GMT
+-	Parent Layer: `2840fc7f44683f9582c0e54f57226afb78f418065ec5b6d38e127de2c9820901`
 -	Docker Version: 1.8.3
 -	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:a99a8fef850af5536c8b8ca2b4854c703eaf2884aee3cd990dced59caa94ebc2`
--	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:50:12 GMT
+-	v2 Blob: `sha256:d0d122482df171802ccb3018f5c382098fb1884d48e4d7993181375a0ee3dd20`
+-	v2 Content-Length: 4.3 KB (4347 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:31 GMT
 
-#### `7fe86d0775d0bf356acb09419abc6e2418aa7915352b3cf1745a9f42ba8f3a20`
+#### `62dbd11d0a205e0e2af3c923f26f17a19657e01cc612eeaa99b88ce0c6a5d4b2`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:48 GMT
--	Parent Layer: `2a603bf3c1816522c98f27055d64bdc83304bcf34a0aba4ff0580f0fc56cc7f5`
+-	Created: Wed, 30 Dec 2015 04:33:39 GMT
+-	Parent Layer: `8ef77944734681b4a78981e5e8e1ba9d1cbbe6c699e356cc9cb1bd66df4a75ed`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8350b44c7b2bb181aae2bf07eb49609ac02ec620f7be54bb0106e772a702c9b`
+#### `808d67b02cb6e61869f8c3d92d364f5027bb66d37a6b92f6dcb26544f043901d`
 
 ```dockerfile
 RUN pip install redis
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:52 GMT
--	Parent Layer: `7fe86d0775d0bf356acb09419abc6e2418aa7915352b3cf1745a9f42ba8f3a20`
+-	Created: Wed, 30 Dec 2015 04:33:41 GMT
+-	Parent Layer: `62dbd11d0a205e0e2af3c923f26f17a19657e01cc612eeaa99b88ce0c6a5d4b2`
 -	Docker Version: 1.8.3
--	Virtual Size: 4.3 MB (4298645 bytes)
--	v2 Blob: `sha256:e177f5ac53650ecddc94b682cfd437442a744a5376487a34004b1e1134a5fea7`
--	v2 Content-Length: 1.6 MB (1640574 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:50:06 GMT
+-	Virtual Size: 4.3 MB (4298736 bytes)
+-	v2 Blob: `sha256:8fad4b5862650b0eaa3837b3584a7c80e64e15b37d779bb10054be83181cb007`
+-	v2 Content-Length: 1.6 MB (1640543 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:26 GMT
 
-#### `1ff1422f00b0aa9aed6c5345104b4f7eb812dcb7f970a7a522012b8d2ecec082`
+#### `101bba0ecca0391c1f8cc8a54a5d52e1243777ecc4defd3f3ec54a01183c965a`
 
 ```dockerfile
 ENV CELERY_VERSION=3.1.19
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:53 GMT
--	Parent Layer: `d8350b44c7b2bb181aae2bf07eb49609ac02ec620f7be54bb0106e772a702c9b`
+-	Created: Wed, 30 Dec 2015 04:33:42 GMT
+-	Parent Layer: `808d67b02cb6e61869f8c3d92d364f5027bb66d37a6b92f6dcb26544f043901d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3a9e50c28aefaa60502742c11adcf05320b628d5d1034bb712321ded10b78389`
+#### `785e9f25a963f1e4a2146313e671b1468b124fab28b1bf2ef18becef7fd63e00`
 
 ```dockerfile
 RUN pip install celery=="$CELERY_VERSION"
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:02 GMT
--	Parent Layer: `1ff1422f00b0aa9aed6c5345104b4f7eb812dcb7f970a7a522012b8d2ecec082`
+-	Created: Wed, 30 Dec 2015 04:33:48 GMT
+-	Parent Layer: `101bba0ecca0391c1f8cc8a54a5d52e1243777ecc4defd3f3ec54a01183c965a`
 -	Docker Version: 1.8.3
--	Virtual Size: 13.3 MB (13260722 bytes)
--	v2 Blob: `sha256:c33c13784936b0743856e40cd2fc0d1a010b3ba4145d4eaad605ea78fbb9d026`
--	v2 Content-Length: 5.3 MB (5341244 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:49:58 GMT
+-	Virtual Size: 13.3 MB (13260189 bytes)
+-	v2 Blob: `sha256:e8b56383ad74412cf56fe8c95754536d75be3dd80a204b7a013ce27beddf7eb5`
+-	v2 Content-Length: 5.3 MB (5340986 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:19 GMT
 
-#### `c1909049ba81a34414804f7a7837ca04d97c28f0f8fb7c82cf6b21782470e021`
+#### `f0a577b2f28d46f788934b641e7456fe612d38f2160f9b4437642c7a0693456a`
 
 ```dockerfile
 RUN { \
@@ -623,50 +623,50 @@ RUN { \
 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:07 GMT
--	Parent Layer: `3a9e50c28aefaa60502742c11adcf05320b628d5d1034bb712321ded10b78389`
+-	Created: Wed, 30 Dec 2015 04:33:51 GMT
+-	Parent Layer: `785e9f25a963f1e4a2146313e671b1468b124fab28b1bf2ef18becef7fd63e00`
 -	Docker Version: 1.8.3
 -	Virtual Size: 70.0 B
--	v2 Blob: `sha256:001730a354b81e2d1a28c109ef9ad0768f049267bc03c682a1d3964596800b8b`
--	v2 Content-Length: 233.0 B
--	v2 Last-Modified: Tue, 22 Dec 2015 20:49:52 GMT
+-	v2 Blob: `sha256:bd0582e2e518dc6277f067e516a25c1903f50e8d687efbb42227ebdd99e01a6d`
+-	v2 Content-Length: 232.0 B
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:11 GMT
 
-#### `7e7e8f9da72eddcc6f184b27147ec10e5aaf16fa92d8ac2899f962104aefad11`
+#### `4f2ad9f6ff1231f32b66f714ac6ea6e4535ae42a35db2daadf51e910039e26be`
 
 ```dockerfile
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:08 GMT
--	Parent Layer: `c1909049ba81a34414804f7a7837ca04d97c28f0f8fb7c82cf6b21782470e021`
+-	Created: Wed, 30 Dec 2015 04:33:51 GMT
+-	Parent Layer: `f0a577b2f28d46f788934b641e7456fe612d38f2160f9b4437642c7a0693456a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `435ec15bb624c9000b84ec6a2e81c5596710dc9ce4094b2e40d4df9987cf2444`
+#### `4aa8dcbcd39375c14a822f1c22b3df3199825b91b02fd36399aa2485a1e2d4b7`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:08 GMT
--	Parent Layer: `7e7e8f9da72eddcc6f184b27147ec10e5aaf16fa92d8ac2899f962104aefad11`
+-	Created: Wed, 30 Dec 2015 04:33:52 GMT
+-	Parent Layer: `4f2ad9f6ff1231f32b66f714ac6ea6e4535ae42a35db2daadf51e910039e26be`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6e21d26db209a700af7c7d1fe74b0325e52bcc1ef4581144112ad63b6e6767a6`
+#### `0fde39e97cd47ad8f6fedb288f72cdfd3bb20ba2ea3892e250becc9c35a3bbf8`
 
 ```dockerfile
 CMD ["celery" "worker"]
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:09 GMT
--	Parent Layer: `435ec15bb624c9000b84ec6a2e81c5596710dc9ce4094b2e40d4df9987cf2444`
+-	Created: Wed, 30 Dec 2015 04:33:52 GMT
+-	Parent Layer: `4aa8dcbcd39375c14a822f1c22b3df3199825b91b02fd36399aa2485a1e2d4b7`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -676,11 +676,11 @@ CMD ["celery" "worker"]
 ## `celery:3`
 
 ```console
-$ docker pull library/celery@sha256:ed9d37240e7d64ff070c54a7e5e414cef9269e8eeb746af10e75a9e7a73a4870
+$ docker pull library/celery@sha256:767e273b83c3b912df6eb30811cd945c1b106ba49fb823e01766ab9823cb6497
 ```
 
--	Total Virtual Size: 233.1 MB (233145464 bytes)
--	Total v2 Content-Length: 85.7 MB (85668974 bytes)
+-	Total Virtual Size: 233.1 MB (233145022 bytes)
+-	Total v2 Content-Length: 85.7 MB (85668576 bytes)
 
 ### Layers (20)
 
@@ -799,7 +799,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `541e87b6f7860b144bc06045db42cbe6e47fd554dd77942ac1b4a77868cb65e9`
+#### `6cce9069f63b1fcad30d1a76faf7c36d7f6cae488aa1674a42b9167dd1e1b75a`
 
 ```dockerfile
 RUN set -x \
@@ -818,8 +818,8 @@ RUN set -x \
 	' \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
 	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
+	&& curl -fSL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
+	&& curl -fSL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
 	&& gpg --verify python.tar.xz.asc \
 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
 	&& rm python.tar.xz* \
@@ -837,15 +837,15 @@ RUN set -x \
 	&& rm -rf /usr/src/python
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:18 GMT
+-	Created: Wed, 30 Dec 2015 01:44:49 GMT
 -	Parent Layer: `a11c940c46d5a2f1fa095c91ee789afe0e7fb4f1eec3fb702ae7d436f1641968`
 -	Docker Version: 1.8.3
 -	Virtual Size: 82.7 MB (82747061 bytes)
--	v2 Blob: `sha256:0d858f9ac5fafd1d15d3456e1dd2d3300c458617fc46475d8eccdb31789b2fa1`
--	v2 Content-Length: 24.0 MB (24018398 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:44:29 GMT
+-	v2 Blob: `sha256:237dfd1796f0d1227de89cfc343f492686865643f465448046cbd8d1a0742a3b`
+-	v2 Content-Length: 24.0 MB (24018286 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:31:30 GMT
 
-#### `8d925e12cb37ff7a61053c1f284e72e0667c278db94dcff6ec1552badc76c283`
+#### `ae20fee46f42cbcf7c132afa2fd2f72b41c97ea73c5458e7451d42bc038c7f4e`
 
 ```dockerfile
 RUN cd /usr/local/bin \
@@ -856,99 +856,99 @@ RUN cd /usr/local/bin \
 	&& ln -s python-config3 python-config
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:26 GMT
--	Parent Layer: `541e87b6f7860b144bc06045db42cbe6e47fd554dd77942ac1b4a77868cb65e9`
+-	Created: Wed, 30 Dec 2015 01:44:52 GMT
+-	Parent Layer: `6cce9069f63b1fcad30d1a76faf7c36d7f6cae488aa1674a42b9167dd1e1b75a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 48.0 B
--	v2 Blob: `sha256:e2f23c1529642743194f538763474ecc54d41d3a9d2fe8a04cfbac84977f3f37`
+-	v2 Blob: `sha256:5fb5b7a896d40cde835f71a12acc903e033fcf72445d54e821ba6e2acbf7378c`
 -	v2 Content-Length: 270.0 B
--	v2 Last-Modified: Tue, 22 Dec 2015 20:44:11 GMT
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:31:14 GMT
 
-#### `004bd8cd4611cba4ab6076a74d66b5b1f3cf4c9dfc3bc7947e9f20170327a179`
+#### `2840fc7f44683f9582c0e54f57226afb78f418065ec5b6d38e127de2c9820901`
 
 ```dockerfile
 CMD ["python3"]
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:26 GMT
--	Parent Layer: `8d925e12cb37ff7a61053c1f284e72e0667c278db94dcff6ec1552badc76c283`
+-	Created: Wed, 30 Dec 2015 01:44:52 GMT
+-	Parent Layer: `ae20fee46f42cbcf7c132afa2fd2f72b41c97ea73c5458e7451d42bc038c7f4e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2a603bf3c1816522c98f27055d64bdc83304bcf34a0aba4ff0580f0fc56cc7f5`
+#### `8ef77944734681b4a78981e5e8e1ba9d1cbbe6c699e356cc9cb1bd66df4a75ed`
 
 ```dockerfile
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:47 GMT
--	Parent Layer: `004bd8cd4611cba4ab6076a74d66b5b1f3cf4c9dfc3bc7947e9f20170327a179`
+-	Created: Wed, 30 Dec 2015 04:33:38 GMT
+-	Parent Layer: `2840fc7f44683f9582c0e54f57226afb78f418065ec5b6d38e127de2c9820901`
 -	Docker Version: 1.8.3
 -	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:a99a8fef850af5536c8b8ca2b4854c703eaf2884aee3cd990dced59caa94ebc2`
--	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:50:12 GMT
+-	v2 Blob: `sha256:d0d122482df171802ccb3018f5c382098fb1884d48e4d7993181375a0ee3dd20`
+-	v2 Content-Length: 4.3 KB (4347 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:31 GMT
 
-#### `7fe86d0775d0bf356acb09419abc6e2418aa7915352b3cf1745a9f42ba8f3a20`
+#### `62dbd11d0a205e0e2af3c923f26f17a19657e01cc612eeaa99b88ce0c6a5d4b2`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:48 GMT
--	Parent Layer: `2a603bf3c1816522c98f27055d64bdc83304bcf34a0aba4ff0580f0fc56cc7f5`
+-	Created: Wed, 30 Dec 2015 04:33:39 GMT
+-	Parent Layer: `8ef77944734681b4a78981e5e8e1ba9d1cbbe6c699e356cc9cb1bd66df4a75ed`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8350b44c7b2bb181aae2bf07eb49609ac02ec620f7be54bb0106e772a702c9b`
+#### `808d67b02cb6e61869f8c3d92d364f5027bb66d37a6b92f6dcb26544f043901d`
 
 ```dockerfile
 RUN pip install redis
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:52 GMT
--	Parent Layer: `7fe86d0775d0bf356acb09419abc6e2418aa7915352b3cf1745a9f42ba8f3a20`
+-	Created: Wed, 30 Dec 2015 04:33:41 GMT
+-	Parent Layer: `62dbd11d0a205e0e2af3c923f26f17a19657e01cc612eeaa99b88ce0c6a5d4b2`
 -	Docker Version: 1.8.3
--	Virtual Size: 4.3 MB (4298645 bytes)
--	v2 Blob: `sha256:e177f5ac53650ecddc94b682cfd437442a744a5376487a34004b1e1134a5fea7`
--	v2 Content-Length: 1.6 MB (1640574 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:50:06 GMT
+-	Virtual Size: 4.3 MB (4298736 bytes)
+-	v2 Blob: `sha256:8fad4b5862650b0eaa3837b3584a7c80e64e15b37d779bb10054be83181cb007`
+-	v2 Content-Length: 1.6 MB (1640543 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:26 GMT
 
-#### `1ff1422f00b0aa9aed6c5345104b4f7eb812dcb7f970a7a522012b8d2ecec082`
+#### `101bba0ecca0391c1f8cc8a54a5d52e1243777ecc4defd3f3ec54a01183c965a`
 
 ```dockerfile
 ENV CELERY_VERSION=3.1.19
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:53 GMT
--	Parent Layer: `d8350b44c7b2bb181aae2bf07eb49609ac02ec620f7be54bb0106e772a702c9b`
+-	Created: Wed, 30 Dec 2015 04:33:42 GMT
+-	Parent Layer: `808d67b02cb6e61869f8c3d92d364f5027bb66d37a6b92f6dcb26544f043901d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3a9e50c28aefaa60502742c11adcf05320b628d5d1034bb712321ded10b78389`
+#### `785e9f25a963f1e4a2146313e671b1468b124fab28b1bf2ef18becef7fd63e00`
 
 ```dockerfile
 RUN pip install celery=="$CELERY_VERSION"
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:02 GMT
--	Parent Layer: `1ff1422f00b0aa9aed6c5345104b4f7eb812dcb7f970a7a522012b8d2ecec082`
+-	Created: Wed, 30 Dec 2015 04:33:48 GMT
+-	Parent Layer: `101bba0ecca0391c1f8cc8a54a5d52e1243777ecc4defd3f3ec54a01183c965a`
 -	Docker Version: 1.8.3
--	Virtual Size: 13.3 MB (13260722 bytes)
--	v2 Blob: `sha256:c33c13784936b0743856e40cd2fc0d1a010b3ba4145d4eaad605ea78fbb9d026`
--	v2 Content-Length: 5.3 MB (5341244 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:49:58 GMT
+-	Virtual Size: 13.3 MB (13260189 bytes)
+-	v2 Blob: `sha256:e8b56383ad74412cf56fe8c95754536d75be3dd80a204b7a013ce27beddf7eb5`
+-	v2 Content-Length: 5.3 MB (5340986 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:19 GMT
 
-#### `c1909049ba81a34414804f7a7837ca04d97c28f0f8fb7c82cf6b21782470e021`
+#### `f0a577b2f28d46f788934b641e7456fe612d38f2160f9b4437642c7a0693456a`
 
 ```dockerfile
 RUN { \
@@ -956,50 +956,50 @@ RUN { \
 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:07 GMT
--	Parent Layer: `3a9e50c28aefaa60502742c11adcf05320b628d5d1034bb712321ded10b78389`
+-	Created: Wed, 30 Dec 2015 04:33:51 GMT
+-	Parent Layer: `785e9f25a963f1e4a2146313e671b1468b124fab28b1bf2ef18becef7fd63e00`
 -	Docker Version: 1.8.3
 -	Virtual Size: 70.0 B
--	v2 Blob: `sha256:001730a354b81e2d1a28c109ef9ad0768f049267bc03c682a1d3964596800b8b`
--	v2 Content-Length: 233.0 B
--	v2 Last-Modified: Tue, 22 Dec 2015 20:49:52 GMT
+-	v2 Blob: `sha256:bd0582e2e518dc6277f067e516a25c1903f50e8d687efbb42227ebdd99e01a6d`
+-	v2 Content-Length: 232.0 B
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:11 GMT
 
-#### `7e7e8f9da72eddcc6f184b27147ec10e5aaf16fa92d8ac2899f962104aefad11`
+#### `4f2ad9f6ff1231f32b66f714ac6ea6e4535ae42a35db2daadf51e910039e26be`
 
 ```dockerfile
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:08 GMT
--	Parent Layer: `c1909049ba81a34414804f7a7837ca04d97c28f0f8fb7c82cf6b21782470e021`
+-	Created: Wed, 30 Dec 2015 04:33:51 GMT
+-	Parent Layer: `f0a577b2f28d46f788934b641e7456fe612d38f2160f9b4437642c7a0693456a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `435ec15bb624c9000b84ec6a2e81c5596710dc9ce4094b2e40d4df9987cf2444`
+#### `4aa8dcbcd39375c14a822f1c22b3df3199825b91b02fd36399aa2485a1e2d4b7`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:08 GMT
--	Parent Layer: `7e7e8f9da72eddcc6f184b27147ec10e5aaf16fa92d8ac2899f962104aefad11`
+-	Created: Wed, 30 Dec 2015 04:33:52 GMT
+-	Parent Layer: `4f2ad9f6ff1231f32b66f714ac6ea6e4535ae42a35db2daadf51e910039e26be`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6e21d26db209a700af7c7d1fe74b0325e52bcc1ef4581144112ad63b6e6767a6`
+#### `0fde39e97cd47ad8f6fedb288f72cdfd3bb20ba2ea3892e250becc9c35a3bbf8`
 
 ```dockerfile
 CMD ["celery" "worker"]
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:09 GMT
--	Parent Layer: `435ec15bb624c9000b84ec6a2e81c5596710dc9ce4094b2e40d4df9987cf2444`
+-	Created: Wed, 30 Dec 2015 04:33:52 GMT
+-	Parent Layer: `4aa8dcbcd39375c14a822f1c22b3df3199825b91b02fd36399aa2485a1e2d4b7`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1009,11 +1009,11 @@ CMD ["celery" "worker"]
 ## `celery:latest`
 
 ```console
-$ docker pull library/celery@sha256:01bf5766dcef526e5817569520c57473b2c3cfd0921c008911065cd1e3eb4348
+$ docker pull library/celery@sha256:aff805bf21f6c691396cd6d680fa38c768893e1a638b9cd131f01ccd2ecdf4ba
 ```
 
--	Total Virtual Size: 233.1 MB (233145464 bytes)
--	Total v2 Content-Length: 85.7 MB (85668974 bytes)
+-	Total Virtual Size: 233.1 MB (233145022 bytes)
+-	Total v2 Content-Length: 85.7 MB (85668576 bytes)
 
 ### Layers (20)
 
@@ -1132,7 +1132,7 @@ ENV PYTHON_PIP_VERSION=7.1.2
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `541e87b6f7860b144bc06045db42cbe6e47fd554dd77942ac1b4a77868cb65e9`
+#### `6cce9069f63b1fcad30d1a76faf7c36d7f6cae488aa1674a42b9167dd1e1b75a`
 
 ```dockerfile
 RUN set -x \
@@ -1151,8 +1151,8 @@ RUN set -x \
 	' \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
 	&& mkdir -p /usr/src/python \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
-	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
+	&& curl -fSL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
+	&& curl -fSL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc \
 	&& gpg --verify python.tar.xz.asc \
 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \
 	&& rm python.tar.xz* \
@@ -1170,15 +1170,15 @@ RUN set -x \
 	&& rm -rf /usr/src/python
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:18 GMT
+-	Created: Wed, 30 Dec 2015 01:44:49 GMT
 -	Parent Layer: `a11c940c46d5a2f1fa095c91ee789afe0e7fb4f1eec3fb702ae7d436f1641968`
 -	Docker Version: 1.8.3
 -	Virtual Size: 82.7 MB (82747061 bytes)
--	v2 Blob: `sha256:0d858f9ac5fafd1d15d3456e1dd2d3300c458617fc46475d8eccdb31789b2fa1`
--	v2 Content-Length: 24.0 MB (24018398 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:44:29 GMT
+-	v2 Blob: `sha256:237dfd1796f0d1227de89cfc343f492686865643f465448046cbd8d1a0742a3b`
+-	v2 Content-Length: 24.0 MB (24018286 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:31:30 GMT
 
-#### `8d925e12cb37ff7a61053c1f284e72e0667c278db94dcff6ec1552badc76c283`
+#### `ae20fee46f42cbcf7c132afa2fd2f72b41c97ea73c5458e7451d42bc038c7f4e`
 
 ```dockerfile
 RUN cd /usr/local/bin \
@@ -1189,99 +1189,99 @@ RUN cd /usr/local/bin \
 	&& ln -s python-config3 python-config
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:26 GMT
--	Parent Layer: `541e87b6f7860b144bc06045db42cbe6e47fd554dd77942ac1b4a77868cb65e9`
+-	Created: Wed, 30 Dec 2015 01:44:52 GMT
+-	Parent Layer: `6cce9069f63b1fcad30d1a76faf7c36d7f6cae488aa1674a42b9167dd1e1b75a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 48.0 B
--	v2 Blob: `sha256:e2f23c1529642743194f538763474ecc54d41d3a9d2fe8a04cfbac84977f3f37`
+-	v2 Blob: `sha256:5fb5b7a896d40cde835f71a12acc903e033fcf72445d54e821ba6e2acbf7378c`
 -	v2 Content-Length: 270.0 B
--	v2 Last-Modified: Tue, 22 Dec 2015 20:44:11 GMT
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:31:14 GMT
 
-#### `004bd8cd4611cba4ab6076a74d66b5b1f3cf4c9dfc3bc7947e9f20170327a179`
+#### `2840fc7f44683f9582c0e54f57226afb78f418065ec5b6d38e127de2c9820901`
 
 ```dockerfile
 CMD ["python3"]
 ```
 
--	Created: Tue, 22 Dec 2015 19:59:26 GMT
--	Parent Layer: `8d925e12cb37ff7a61053c1f284e72e0667c278db94dcff6ec1552badc76c283`
+-	Created: Wed, 30 Dec 2015 01:44:52 GMT
+-	Parent Layer: `ae20fee46f42cbcf7c132afa2fd2f72b41c97ea73c5458e7451d42bc038c7f4e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2a603bf3c1816522c98f27055d64bdc83304bcf34a0aba4ff0580f0fc56cc7f5`
+#### `8ef77944734681b4a78981e5e8e1ba9d1cbbe6c699e356cc9cb1bd66df4a75ed`
 
 ```dockerfile
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:47 GMT
--	Parent Layer: `004bd8cd4611cba4ab6076a74d66b5b1f3cf4c9dfc3bc7947e9f20170327a179`
+-	Created: Wed, 30 Dec 2015 04:33:38 GMT
+-	Parent Layer: `2840fc7f44683f9582c0e54f57226afb78f418065ec5b6d38e127de2c9820901`
 -	Docker Version: 1.8.3
 -	Virtual Size: 335.1 KB (335105 bytes)
--	v2 Blob: `sha256:a99a8fef850af5536c8b8ca2b4854c703eaf2884aee3cd990dced59caa94ebc2`
--	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:50:12 GMT
+-	v2 Blob: `sha256:d0d122482df171802ccb3018f5c382098fb1884d48e4d7993181375a0ee3dd20`
+-	v2 Content-Length: 4.3 KB (4347 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:31 GMT
 
-#### `7fe86d0775d0bf356acb09419abc6e2418aa7915352b3cf1745a9f42ba8f3a20`
+#### `62dbd11d0a205e0e2af3c923f26f17a19657e01cc612eeaa99b88ce0c6a5d4b2`
 
 ```dockerfile
 WORKDIR /home/user
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:48 GMT
--	Parent Layer: `2a603bf3c1816522c98f27055d64bdc83304bcf34a0aba4ff0580f0fc56cc7f5`
+-	Created: Wed, 30 Dec 2015 04:33:39 GMT
+-	Parent Layer: `8ef77944734681b4a78981e5e8e1ba9d1cbbe6c699e356cc9cb1bd66df4a75ed`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d8350b44c7b2bb181aae2bf07eb49609ac02ec620f7be54bb0106e772a702c9b`
+#### `808d67b02cb6e61869f8c3d92d364f5027bb66d37a6b92f6dcb26544f043901d`
 
 ```dockerfile
 RUN pip install redis
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:52 GMT
--	Parent Layer: `7fe86d0775d0bf356acb09419abc6e2418aa7915352b3cf1745a9f42ba8f3a20`
+-	Created: Wed, 30 Dec 2015 04:33:41 GMT
+-	Parent Layer: `62dbd11d0a205e0e2af3c923f26f17a19657e01cc612eeaa99b88ce0c6a5d4b2`
 -	Docker Version: 1.8.3
--	Virtual Size: 4.3 MB (4298645 bytes)
--	v2 Blob: `sha256:e177f5ac53650ecddc94b682cfd437442a744a5376487a34004b1e1134a5fea7`
--	v2 Content-Length: 1.6 MB (1640574 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:50:06 GMT
+-	Virtual Size: 4.3 MB (4298736 bytes)
+-	v2 Blob: `sha256:8fad4b5862650b0eaa3837b3584a7c80e64e15b37d779bb10054be83181cb007`
+-	v2 Content-Length: 1.6 MB (1640543 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:26 GMT
 
-#### `1ff1422f00b0aa9aed6c5345104b4f7eb812dcb7f970a7a522012b8d2ecec082`
+#### `101bba0ecca0391c1f8cc8a54a5d52e1243777ecc4defd3f3ec54a01183c965a`
 
 ```dockerfile
 ENV CELERY_VERSION=3.1.19
 ```
 
--	Created: Tue, 22 Dec 2015 20:13:53 GMT
--	Parent Layer: `d8350b44c7b2bb181aae2bf07eb49609ac02ec620f7be54bb0106e772a702c9b`
+-	Created: Wed, 30 Dec 2015 04:33:42 GMT
+-	Parent Layer: `808d67b02cb6e61869f8c3d92d364f5027bb66d37a6b92f6dcb26544f043901d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3a9e50c28aefaa60502742c11adcf05320b628d5d1034bb712321ded10b78389`
+#### `785e9f25a963f1e4a2146313e671b1468b124fab28b1bf2ef18becef7fd63e00`
 
 ```dockerfile
 RUN pip install celery=="$CELERY_VERSION"
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:02 GMT
--	Parent Layer: `1ff1422f00b0aa9aed6c5345104b4f7eb812dcb7f970a7a522012b8d2ecec082`
+-	Created: Wed, 30 Dec 2015 04:33:48 GMT
+-	Parent Layer: `101bba0ecca0391c1f8cc8a54a5d52e1243777ecc4defd3f3ec54a01183c965a`
 -	Docker Version: 1.8.3
--	Virtual Size: 13.3 MB (13260722 bytes)
--	v2 Blob: `sha256:c33c13784936b0743856e40cd2fc0d1a010b3ba4145d4eaad605ea78fbb9d026`
--	v2 Content-Length: 5.3 MB (5341244 bytes)
--	v2 Last-Modified: Tue, 22 Dec 2015 20:49:58 GMT
+-	Virtual Size: 13.3 MB (13260189 bytes)
+-	v2 Blob: `sha256:e8b56383ad74412cf56fe8c95754536d75be3dd80a204b7a013ce27beddf7eb5`
+-	v2 Content-Length: 5.3 MB (5340986 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:19 GMT
 
-#### `c1909049ba81a34414804f7a7837ca04d97c28f0f8fb7c82cf6b21782470e021`
+#### `f0a577b2f28d46f788934b641e7456fe612d38f2160f9b4437642c7a0693456a`
 
 ```dockerfile
 RUN { \
@@ -1289,50 +1289,50 @@ RUN { \
 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:07 GMT
--	Parent Layer: `3a9e50c28aefaa60502742c11adcf05320b628d5d1034bb712321ded10b78389`
+-	Created: Wed, 30 Dec 2015 04:33:51 GMT
+-	Parent Layer: `785e9f25a963f1e4a2146313e671b1468b124fab28b1bf2ef18becef7fd63e00`
 -	Docker Version: 1.8.3
 -	Virtual Size: 70.0 B
--	v2 Blob: `sha256:001730a354b81e2d1a28c109ef9ad0768f049267bc03c682a1d3964596800b8b`
--	v2 Content-Length: 233.0 B
--	v2 Last-Modified: Tue, 22 Dec 2015 20:49:52 GMT
+-	v2 Blob: `sha256:bd0582e2e518dc6277f067e516a25c1903f50e8d687efbb42227ebdd99e01a6d`
+-	v2 Content-Length: 232.0 B
+-	v2 Last-Modified: Wed, 30 Dec 2015 04:58:11 GMT
 
-#### `7e7e8f9da72eddcc6f184b27147ec10e5aaf16fa92d8ac2899f962104aefad11`
+#### `4f2ad9f6ff1231f32b66f714ac6ea6e4535ae42a35db2daadf51e910039e26be`
 
 ```dockerfile
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:08 GMT
--	Parent Layer: `c1909049ba81a34414804f7a7837ca04d97c28f0f8fb7c82cf6b21782470e021`
+-	Created: Wed, 30 Dec 2015 04:33:51 GMT
+-	Parent Layer: `f0a577b2f28d46f788934b641e7456fe612d38f2160f9b4437642c7a0693456a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `435ec15bb624c9000b84ec6a2e81c5596710dc9ce4094b2e40d4df9987cf2444`
+#### `4aa8dcbcd39375c14a822f1c22b3df3199825b91b02fd36399aa2485a1e2d4b7`
 
 ```dockerfile
 USER [user]
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:08 GMT
--	Parent Layer: `7e7e8f9da72eddcc6f184b27147ec10e5aaf16fa92d8ac2899f962104aefad11`
+-	Created: Wed, 30 Dec 2015 04:33:52 GMT
+-	Parent Layer: `4f2ad9f6ff1231f32b66f714ac6ea6e4535ae42a35db2daadf51e910039e26be`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6e21d26db209a700af7c7d1fe74b0325e52bcc1ef4581144112ad63b6e6767a6`
+#### `0fde39e97cd47ad8f6fedb288f72cdfd3bb20ba2ea3892e250becc9c35a3bbf8`
 
 ```dockerfile
 CMD ["celery" "worker"]
 ```
 
--	Created: Tue, 22 Dec 2015 20:14:09 GMT
--	Parent Layer: `435ec15bb624c9000b84ec6a2e81c5596710dc9ce4094b2e40d4df9987cf2444`
+-	Created: Wed, 30 Dec 2015 04:33:52 GMT
+-	Parent Layer: `4aa8dcbcd39375c14a822f1c22b3df3199825b91b02fd36399aa2485a1e2d4b7`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`

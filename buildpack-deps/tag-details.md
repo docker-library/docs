@@ -2834,12 +2834,376 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ## `buildpack-deps:xenial-curl`
 
-**does not exist** (yet?)
+```console
+$ docker pull library/buildpack-deps@sha256:fb0bbe6d74796f67fc891de5a4508af08a3692c33b45d4df2716e076f772ea66
+```
+
+-	Total Virtual Size: 134.4 MB (134359700 bytes)
+-	Total v2 Content-Length: 54.6 MB (54601000 bytes)
+
+### Layers (5)
+
+#### `3f0c39d8c6fe4fff093224914bc919c7f9f1e27ec492132afe9e13a334d5ca78`
+
+```dockerfile
+ADD file:fb080847a1c13af4ed62bd562afeccd2e9fdbd85af0a9d18c8f755c9112d9346 in /
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:45 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 117.5 MB (117535359 bytes)
+-	v2 Blob: `sha256:1c29e860f3e9efea7e347a1ec49c3f0556b6133f11b83830bcd882e78e191e38`
+-	v2 Content-Length: 47.4 MB (47438193 bytes)
+-	v2 Last-Modified: Fri, 18 Dec 2015 18:28:17 GMT
+
+#### `34d5933e49114a485f116005a46076ec96f1b2f251b5f1ca0418ebbdda84e612`
+
+```dockerfile
+RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
+	&& chmod +x /usr/sbin/policy-rc.d \
+		&& dpkg-divert --local --rename --add /sbin/initctl \
+	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \
+	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \
+		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \
+		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean \
+	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean \
+	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean \
+		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages \
+		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:48 GMT
+-	Parent Layer: `3f0c39d8c6fe4fff093224914bc919c7f9f1e27ec492132afe9e13a334d5ca78`
+-	Docker Version: 1.8.3
+-	Virtual Size: 701.0 B
+-	v2 Blob: `sha256:4c72106c4a992c317783abf419bdfd1fe91aa879dd044d5ecbdbcfaf80c8dfd7`
+-	v2 Content-Length: 758.0 B
+-	v2 Last-Modified: Fri, 18 Dec 2015 18:27:53 GMT
+
+#### `7402eda82e23e62333e9856997c0ea67a16ad21e41ee6fcfc52f18c08a5092ed`
+
+```dockerfile
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:50 GMT
+-	Parent Layer: `34d5933e49114a485f116005a46076ec96f1b2f251b5f1ca0418ebbdda84e612`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.9 KB (1895 bytes)
+-	v2 Blob: `sha256:164dadcd42c70a6ca6e82b9b4e677b64a2b39bfcf2cabc44376ce97f2d445529`
+-	v2 Content-Length: 679.0 B
+-	v2 Last-Modified: Fri, 18 Dec 2015 18:27:50 GMT
+
+#### `db856b418882f8c58c543bca37139f1e21f7abe5526543976888ccdf79f4fae4`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:51 GMT
+-	Parent Layer: `7402eda82e23e62333e9856997c0ea67a16ad21e41ee6fcfc52f18c08a5092ed`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `633c414b6ee409e99afe84741b7e05c4334f0fadb3eb927b8fb188795c0b3e14`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 30 Dec 2015 00:40:07 GMT
+-	Parent Layer: `db856b418882f8c58c543bca37139f1e21f7abe5526543976888ccdf79f4fae4`
+-	Docker Version: 1.8.3
+-	Virtual Size: 16.8 MB (16821745 bytes)
+-	v2 Blob: `sha256:e1987e9d83598614b5c137653ce7834b32aec305be1304c3bd3e2cfc703c920e`
+-	v2 Content-Length: 7.2 MB (7161338 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:00:15 GMT
 
 ## `buildpack-deps:xenial-scm`
 
-**does not exist** (yet?)
+```console
+$ docker pull library/buildpack-deps@sha256:3336746ddefd9c895683f2a031997249b59ab311679e365d78acefe9a4723540
+```
+
+-	Total Virtual Size: 251.3 MB (251297640 bytes)
+-	Total v2 Content-Length: 93.8 MB (93770598 bytes)
+
+### Layers (6)
+
+#### `3f0c39d8c6fe4fff093224914bc919c7f9f1e27ec492132afe9e13a334d5ca78`
+
+```dockerfile
+ADD file:fb080847a1c13af4ed62bd562afeccd2e9fdbd85af0a9d18c8f755c9112d9346 in /
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:45 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 117.5 MB (117535359 bytes)
+-	v2 Blob: `sha256:1c29e860f3e9efea7e347a1ec49c3f0556b6133f11b83830bcd882e78e191e38`
+-	v2 Content-Length: 47.4 MB (47438193 bytes)
+-	v2 Last-Modified: Fri, 18 Dec 2015 18:28:17 GMT
+
+#### `34d5933e49114a485f116005a46076ec96f1b2f251b5f1ca0418ebbdda84e612`
+
+```dockerfile
+RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
+	&& chmod +x /usr/sbin/policy-rc.d \
+		&& dpkg-divert --local --rename --add /sbin/initctl \
+	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \
+	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \
+		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \
+		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean \
+	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean \
+	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean \
+		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages \
+		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:48 GMT
+-	Parent Layer: `3f0c39d8c6fe4fff093224914bc919c7f9f1e27ec492132afe9e13a334d5ca78`
+-	Docker Version: 1.8.3
+-	Virtual Size: 701.0 B
+-	v2 Blob: `sha256:4c72106c4a992c317783abf419bdfd1fe91aa879dd044d5ecbdbcfaf80c8dfd7`
+-	v2 Content-Length: 758.0 B
+-	v2 Last-Modified: Fri, 18 Dec 2015 18:27:53 GMT
+
+#### `7402eda82e23e62333e9856997c0ea67a16ad21e41ee6fcfc52f18c08a5092ed`
+
+```dockerfile
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:50 GMT
+-	Parent Layer: `34d5933e49114a485f116005a46076ec96f1b2f251b5f1ca0418ebbdda84e612`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.9 KB (1895 bytes)
+-	v2 Blob: `sha256:164dadcd42c70a6ca6e82b9b4e677b64a2b39bfcf2cabc44376ce97f2d445529`
+-	v2 Content-Length: 679.0 B
+-	v2 Last-Modified: Fri, 18 Dec 2015 18:27:50 GMT
+
+#### `db856b418882f8c58c543bca37139f1e21f7abe5526543976888ccdf79f4fae4`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:51 GMT
+-	Parent Layer: `7402eda82e23e62333e9856997c0ea67a16ad21e41ee6fcfc52f18c08a5092ed`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `633c414b6ee409e99afe84741b7e05c4334f0fadb3eb927b8fb188795c0b3e14`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 30 Dec 2015 00:40:07 GMT
+-	Parent Layer: `db856b418882f8c58c543bca37139f1e21f7abe5526543976888ccdf79f4fae4`
+-	Docker Version: 1.8.3
+-	Virtual Size: 16.8 MB (16821745 bytes)
+-	v2 Blob: `sha256:e1987e9d83598614b5c137653ce7834b32aec305be1304c3bd3e2cfc703c920e`
+-	v2 Content-Length: 7.2 MB (7161338 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:00:15 GMT
+
+#### `38677bc3d7c5e814208d71d581fa0919e1b9c40274e94e749de21518fbeb939c`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+				procps \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 30 Dec 2015 00:44:09 GMT
+-	Parent Layer: `633c414b6ee409e99afe84741b7e05c4334f0fadb3eb927b8fb188795c0b3e14`
+-	Docker Version: 1.8.3
+-	Virtual Size: 116.9 MB (116937940 bytes)
+-	v2 Blob: `sha256:63d46aefd36db7568b6c1fc00c4306f480b12370ba51e86da612408f8371e040`
+-	v2 Content-Length: 39.2 MB (39169598 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:02:09 GMT
 
 ## `buildpack-deps:xenial`
 
-**does not exist** (yet?)
+```console
+$ docker pull library/buildpack-deps@sha256:f62b6f20c1f74355f6a1783f0b70fa9c8e095e6099e89e3f682770eccd696636
+```
+
+-	Total Virtual Size: 974.8 MB (974778279 bytes)
+-	Total v2 Content-Length: 358.3 MB (358312953 bytes)
+
+### Layers (7)
+
+#### `3f0c39d8c6fe4fff093224914bc919c7f9f1e27ec492132afe9e13a334d5ca78`
+
+```dockerfile
+ADD file:fb080847a1c13af4ed62bd562afeccd2e9fdbd85af0a9d18c8f755c9112d9346 in /
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:45 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 117.5 MB (117535359 bytes)
+-	v2 Blob: `sha256:1c29e860f3e9efea7e347a1ec49c3f0556b6133f11b83830bcd882e78e191e38`
+-	v2 Content-Length: 47.4 MB (47438193 bytes)
+-	v2 Last-Modified: Fri, 18 Dec 2015 18:28:17 GMT
+
+#### `34d5933e49114a485f116005a46076ec96f1b2f251b5f1ca0418ebbdda84e612`
+
+```dockerfile
+RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
+	&& chmod +x /usr/sbin/policy-rc.d \
+		&& dpkg-divert --local --rename --add /sbin/initctl \
+	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \
+	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \
+		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \
+		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean \
+	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean \
+	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean \
+		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages \
+		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:48 GMT
+-	Parent Layer: `3f0c39d8c6fe4fff093224914bc919c7f9f1e27ec492132afe9e13a334d5ca78`
+-	Docker Version: 1.8.3
+-	Virtual Size: 701.0 B
+-	v2 Blob: `sha256:4c72106c4a992c317783abf419bdfd1fe91aa879dd044d5ecbdbcfaf80c8dfd7`
+-	v2 Content-Length: 758.0 B
+-	v2 Last-Modified: Fri, 18 Dec 2015 18:27:53 GMT
+
+#### `7402eda82e23e62333e9856997c0ea67a16ad21e41ee6fcfc52f18c08a5092ed`
+
+```dockerfile
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:50 GMT
+-	Parent Layer: `34d5933e49114a485f116005a46076ec96f1b2f251b5f1ca0418ebbdda84e612`
+-	Docker Version: 1.8.3
+-	Virtual Size: 1.9 KB (1895 bytes)
+-	v2 Blob: `sha256:164dadcd42c70a6ca6e82b9b4e677b64a2b39bfcf2cabc44376ce97f2d445529`
+-	v2 Content-Length: 679.0 B
+-	v2 Last-Modified: Fri, 18 Dec 2015 18:27:50 GMT
+
+#### `db856b418882f8c58c543bca37139f1e21f7abe5526543976888ccdf79f4fae4`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Fri, 18 Dec 2015 18:25:51 GMT
+-	Parent Layer: `7402eda82e23e62333e9856997c0ea67a16ad21e41ee6fcfc52f18c08a5092ed`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `633c414b6ee409e99afe84741b7e05c4334f0fadb3eb927b8fb188795c0b3e14`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 30 Dec 2015 00:40:07 GMT
+-	Parent Layer: `db856b418882f8c58c543bca37139f1e21f7abe5526543976888ccdf79f4fae4`
+-	Docker Version: 1.8.3
+-	Virtual Size: 16.8 MB (16821745 bytes)
+-	v2 Blob: `sha256:e1987e9d83598614b5c137653ce7834b32aec305be1304c3bd3e2cfc703c920e`
+-	v2 Content-Length: 7.2 MB (7161338 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:00:15 GMT
+
+#### `38677bc3d7c5e814208d71d581fa0919e1b9c40274e94e749de21518fbeb939c`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+				procps \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 30 Dec 2015 00:44:09 GMT
+-	Parent Layer: `633c414b6ee409e99afe84741b7e05c4334f0fadb3eb927b8fb188795c0b3e14`
+-	Docker Version: 1.8.3
+-	Virtual Size: 116.9 MB (116937940 bytes)
+-	v2 Blob: `sha256:63d46aefd36db7568b6c1fc00c4306f480b12370ba51e86da612408f8371e040`
+-	v2 Content-Length: 39.2 MB (39169598 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:02:09 GMT
+
+#### `73da7086f3c8873230f630a3c54e966d0ecc6408ac57bce55c03d396b13669a4`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		autoconf \
+		automake \
+		bzip2 \
+		file \
+		g++ \
+		gcc \
+		imagemagick \
+		libbz2-dev \
+		libc6-dev \
+		libcurl4-openssl-dev \
+		libevent-dev \
+		libffi-dev \
+		libgeoip-dev \
+		libglib2.0-dev \
+		libjpeg-dev \
+		liblzma-dev \
+		libmagickcore-dev \
+		libmagickwand-dev \
+		libmysqlclient-dev \
+		libncurses-dev \
+		libpng-dev \
+		libpq-dev \
+		libreadline-dev \
+		libsqlite3-dev \
+		libssl-dev \
+		libtool \
+		libwebp-dev \
+		libxml2-dev \
+		libxslt-dev \
+		libyaml-dev \
+		make \
+		patch \
+		xz-utils \
+		zlib1g-dev \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 30 Dec 2015 00:46:53 GMT
+-	Parent Layer: `38677bc3d7c5e814208d71d581fa0919e1b9c40274e94e749de21518fbeb939c`
+-	Docker Version: 1.8.3
+-	Virtual Size: 723.5 MB (723480639 bytes)
+-	v2 Blob: `sha256:3a4bcd75d81e6d371db8a1fe16474505918703f00705d1189cc2645590d590d5`
+-	v2 Content-Length: 264.5 MB (264542355 bytes)
+-	v2 Last-Modified: Wed, 30 Dec 2015 03:04:58 GMT
