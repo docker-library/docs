@@ -29,6 +29,9 @@
 -	[`buildpack-deps:wily-curl`](#buildpack-depswily-curl)
 -	[`buildpack-deps:wily-scm`](#buildpack-depswily-scm)
 -	[`buildpack-deps:wily`](#buildpack-depswily)
+-	[`buildpack-deps:xenial-curl`](#buildpack-depsxenial-curl)
+-	[`buildpack-deps:xenial-scm`](#buildpack-depsxenial-scm)
+-	[`buildpack-deps:xenial`](#buildpack-depsxenial)
 
 ## `buildpack-deps:jessie-curl`
 
@@ -2828,3 +2831,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:a524e9ebec49dc546a2657214c870f836fff0a4ffaafcf14d77754099648fd5a`
 -	v2 Content-Length: 133.5 MB (133492820 bytes)
 -	v2 Last-Modified: Tue, 08 Dec 2015 19:25:22 GMT
+
+## `buildpack-deps:xenial-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:xenial-scm`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:xenial`
+
+**does not exist** (yet?)

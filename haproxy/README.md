@@ -2,7 +2,7 @@
 
 -	[`1.4.26`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c1ab61d9ba298a8b40164ed91d8d0a797e7bb1c/1.4/Dockerfile)
 -	[`1.5.15`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c1ab61d9ba298a8b40164ed91d8d0a797e7bb1c/1.5/Dockerfile)
--	[`1.6.2`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c1ab61d9ba298a8b40164ed91d8d0a797e7bb1c/1.6/Dockerfile)
+-	[`1.6.3`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/7998146d9fb15e16c0550d978064e82619bf7702/1.6/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
