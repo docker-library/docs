@@ -24,6 +24,9 @@
 -	[`wily-curl` (*wily/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/af914a5bde2a749884177393c8140384048dc5f9/wily/curl/Dockerfile)
 -	[`wily-scm` (*wily/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/wily/scm/Dockerfile)
 -	[`wily` (*wily/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/ca0f463579583f030cb5c8eb2c8dac207709feb5/wily/Dockerfile)
+-	[`xenial-curl` (*xenial/curl/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/curl/Dockerfile)
+-	[`xenial-scm` (*xenial/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/scm/Dockerfile)
+-	[`xenial` (*xenial/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
