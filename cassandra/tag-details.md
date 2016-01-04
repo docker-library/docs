@@ -9,6 +9,8 @@
 -	[`cassandra:2`](#cassandra2)
 -	[`cassandra:3.0.2`](#cassandra302)
 -	[`cassandra:3.0`](#cassandra30)
+-	[`cassandra:3.1.1`](#cassandra311)
+-	[`cassandra:3.1`](#cassandra31)
 -	[`cassandra:3`](#cassandra3)
 -	[`cassandra:latest`](#cassandralatest)
 
@@ -1369,6 +1371,14 @@ CMD ["cassandra" "-f"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `cassandra:3.1.1`
+
+**does not exist** (yet?)
+
+## `cassandra:3.1`
+
+**does not exist** (yet?)
 
 ## `cassandra:3`
 

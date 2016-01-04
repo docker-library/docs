@@ -2,10 +2,13 @@
 
 # Tags of `django`
 
+-	[`django:1.9.1-python2`](#django191-python2)
 -	[`django:1.9-python2`](#django19-python2)
 -	[`django:1-python2`](#django1-python2)
 -	[`django:python2`](#djangopython2)
 -	[`django:python2-onbuild`](#djangopython2-onbuild)
+-	[`django:1.9.1-python3`](#django191-python3)
+-	[`django:1.9.1`](#django191)
 -	[`django:1.9-python3`](#django19-python3)
 -	[`django:1.9`](#django19)
 -	[`django:1-python3`](#django1-python3)
@@ -14,6 +17,10 @@
 -	[`django:latest`](#djangolatest)
 -	[`django:python3-onbuild`](#djangopython3-onbuild)
 -	[`django:onbuild`](#djangoonbuild)
+
+## `django:1.9.1-python2`
+
+**does not exist** (yet?)
 
 ## `django:1.9-python2`
 
@@ -1135,6 +1142,14 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `django:1.9.1-python3`
+
+**does not exist** (yet?)
+
+## `django:1.9.1`
+
+**does not exist** (yet?)
 
 ## `django:1.9-python3`
 
