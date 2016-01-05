@@ -1,6 +1,6 @@
 # What is this?
 
-This repository contains the docs for each of the Docker official images. See [docker-library/official-images](https://github.com/docker-library/official-images) for the configuration how the images are built. To see all of the official images go to the [hub](https://registry.hub.docker.com/repos/stackbrew/?&s=alphabetical).
+This repository contains the docs for each of the Docker official images. See [docker-library/official-images](https://github.com/docker-library/official-images) for the configuration how the images are built. To see all of the official images go to the [hub](https://hub.docker.com/explore/).
 
 All Markdown files here are run through [tianon's fork of `markdownfmt`](https://github.com/tianon/markdownfmt) (only forked to add some smaller-diff preference and minor DockerHub-compatibility changes), and verified as formatted correctly via Travis-CI.
 
