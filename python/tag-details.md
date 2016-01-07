@@ -50,6 +50,10 @@
 -	[`python:3.5-slim`](#python35-slim)
 -	[`python:3-slim`](#python3-slim)
 -	[`python:slim`](#pythonslim)
+-	[`python:3.5.1-alpine`](#python351-alpine)
+-	[`python:3.5-alpine`](#python35-alpine)
+-	[`python:3-alpine`](#python3-alpine)
+-	[`python:alpine`](#pythonalpine)
 
 ## `python:2.7.11`
 
@@ -12677,3 +12681,19 @@ CMD ["python3"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `python:3.5.1-alpine`
+
+**does not exist** (yet?)
+
+## `python:3.5-alpine`
+
+**does not exist** (yet?)
+
+## `python:3-alpine`
+
+**does not exist** (yet?)
+
+## `python:alpine`
+
+**does not exist** (yet?)
