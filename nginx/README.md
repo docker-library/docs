@@ -77,8 +77,6 @@ $ docker run --name some-nginx -d some-custom-nginx
 If virtualhosts are a necessity for you, it should come as no surprise that Debian doesn't include this configuration out of the box.
 
 ```console
-mkdir /etc/nginx/sites-available
-mkdir /etc/nginx/sites-enabled
 cat > /tmp/virtualhosts.patch <<EOF
 --- /etc/nginx/nginx.conf
 +++ /etc/nginx/nginx.conf
