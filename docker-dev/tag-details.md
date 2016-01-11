@@ -9,11 +9,11 @@
 ## `docker-dev:1.9.1`
 
 ```console
-$ docker pull library/docker-dev@sha256:11a8ba7645c61b28b40b0de171df2c2123ff54548c11bbc9607f51a252c1fcf2
+$ docker pull library/docker-dev@sha256:0d5652d1218135d6f108ab6a68a90d6727a070b562ff959f939d173679bbea04
 ```
 
 -	Total Virtual Size: 1.9 GB (1936262087 bytes)
--	Total v2 Content-Length: 651.1 MB (651129840 bytes)
+-	Total v2 Content-Length: 651.1 MB (651129921 bytes)
 
 ### Layers (50)
 
@@ -800,28 +800,28 @@ ENTRYPOINT &{["hack/dind"]}
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ba0fff7293fcedcdc74c6d3a2484e36b37928c7fc3cb48fe3f676afa9e789bf1`
+#### `0f1e7bae9a39f88d8eeabe9597d48a6ac5e3344087b9bf3aa9d6789043f93394`
 
 ```dockerfile
-COPY dir:f4547e2d3c865bd89c99f17c822a6fc26c81985d1631df68f7c9d4edf0453d23 in /go/src/github.com/docker/docker
+COPY dir:4137a476ea0509a474bc35680e0325f5c3ee722c34ef67bf22860ff589b60ada in /go/src/github.com/docker/docker
 ```
 
--	Created: Mon, 04 Jan 2016 19:16:55 GMT
+-	Created: Fri, 08 Jan 2016 09:14:36 GMT
 -	Parent Layer: `898057ab9b1da6f5f88048f54c21fe85d9861821a71ba38960c28bffd8998215`
 -	Docker Version: 1.8.3
 -	Virtual Size: 114.9 MB (114939724 bytes)
--	v2 Blob: `sha256:4258472fedac31d49d7fffd4275409170588cbae205943ac4e25a781c98570fe`
--	v2 Content-Length: 97.0 MB (96956343 bytes)
--	v2 Last-Modified: Tue, 05 Jan 2016 05:21:44 GMT
+-	v2 Blob: `sha256:4f4d8b459186910dd76622f647b7efc4e8efe2d8050395c3216f73c6bfb6440c`
+-	v2 Content-Length: 97.0 MB (96956424 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 16:28:39 GMT
 
 ## `docker-dev:1.9`
 
 ```console
-$ docker pull library/docker-dev@sha256:ac38450759c1d962ec7689364756dc1a3d3b7d59333c912470393727c7bafe6c
+$ docker pull library/docker-dev@sha256:4a699b8d6d3b5750ed807347bbc7d1776a09f430ab4d5fe6aea4069068b1342f
 ```
 
 -	Total Virtual Size: 1.9 GB (1936262087 bytes)
--	Total v2 Content-Length: 651.1 MB (651129889 bytes)
+-	Total v2 Content-Length: 651.1 MB (651129698 bytes)
 
 ### Layers (50)
 
@@ -1608,28 +1608,28 @@ ENTRYPOINT &{["hack/dind"]}
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b87a8739a40f5b5e6507b71e581fc195a39b8bd7ec3a83db30b7c2f88a45e881`
+#### `f7e5aab8192a7c6d4f93179a33e4bfbfc7d407f818ec8e6caf44d90331b2c6c5`
 
 ```dockerfile
-COPY dir:4a3e6104b0bb92fe2a9dae0951643d8983ea82946bb6589081cd09176df4bd9e in /go/src/github.com/docker/docker
+COPY dir:488f52b3ae7e9753d3b39da91b15f022102e15721bd96b1ccef4a76a5ebd3302 in /go/src/github.com/docker/docker
 ```
 
--	Created: Mon, 04 Jan 2016 19:25:49 GMT
+-	Created: Fri, 08 Jan 2016 09:20:18 GMT
 -	Parent Layer: `898057ab9b1da6f5f88048f54c21fe85d9861821a71ba38960c28bffd8998215`
 -	Docker Version: 1.8.3
 -	Virtual Size: 114.9 MB (114939724 bytes)
--	v2 Blob: `sha256:0e3bcc11e74eba0a8bc246083be2659907f90518c32d5b8f183ae72a2a981033`
--	v2 Content-Length: 97.0 MB (96956392 bytes)
--	v2 Last-Modified: Tue, 05 Jan 2016 05:38:43 GMT
+-	v2 Blob: `sha256:dbb7674e29d368ea0f490b44e47fd5551d00dfbee38341c28c8723a4819eb7a3`
+-	v2 Content-Length: 97.0 MB (96956201 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 16:30:33 GMT
 
 ## `docker-dev:1`
 
 ```console
-$ docker pull library/docker-dev@sha256:b9ec6b88c91a71d38b5d8bb5b430dbf3aae2117f1ccb193ac14f23552ce95cb7
+$ docker pull library/docker-dev@sha256:e80d5a32481b4c5cf72733bd24218265c88c1bee2e4b707af2e01fd3854501ad
 ```
 
 -	Total Virtual Size: 1.9 GB (1936262087 bytes)
--	Total v2 Content-Length: 651.1 MB (651129845 bytes)
+-	Total v2 Content-Length: 651.1 MB (651129644 bytes)
 
 ### Layers (50)
 
@@ -2416,16 +2416,16 @@ ENTRYPOINT &{["hack/dind"]}
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `065ef8c673bce550ee603a2be2a48d40dc3cd6d86247f1e6cd6495f2dcd05b7d`
+#### `bc9354f6851beef9773ac7b22c7706eda639f04c23d69aa382b2ada133f75587`
 
 ```dockerfile
-COPY dir:1494a3a793d504b1a44c4e4528315bdc118a3857fd5b986c64fe9aeaf42094e1 in /go/src/github.com/docker/docker
+COPY dir:ee5fb8b9b8b4376ba613e53b1b5a1930ee599e4f121a32d33018c59fa0e856b4 in /go/src/github.com/docker/docker
 ```
 
--	Created: Mon, 04 Jan 2016 19:34:36 GMT
+-	Created: Fri, 08 Jan 2016 09:25:58 GMT
 -	Parent Layer: `898057ab9b1da6f5f88048f54c21fe85d9861821a71ba38960c28bffd8998215`
 -	Docker Version: 1.8.3
 -	Virtual Size: 114.9 MB (114939724 bytes)
--	v2 Blob: `sha256:befb188ac164d18cf9e01619d06a087d2c24a6f0587b43b80ac0df34aa6afb0a`
--	v2 Content-Length: 97.0 MB (96956348 bytes)
--	v2 Last-Modified: Tue, 05 Jan 2016 05:40:25 GMT
+-	v2 Blob: `sha256:9f53bd585af4eb53f02b24aa6cea2773ec80e41a348c300af3020d79f3cfc9c9`
+-	v2 Content-Length: 97.0 MB (96956147 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 16:32:58 GMT
