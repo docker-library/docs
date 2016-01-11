@@ -72,6 +72,28 @@ Then, build with `docker build -t some-custom-nginx .` and run:
 $ docker run --name some-nginx -d some-custom-nginx
 ```
 
+## virtualhost configuration
+
+If virtualhosts are a necessity for you, it should come as no surprise that Debian doesn't include this configuration out of the box.
+
+```console
+mkdir /etc/nginx/sites-available
+mkdir /etc/nginx/sites-enabled
+cat > /tmp/virtualhosts.patch <<EOF
+--- /etc/nginx/nginx.conf
++++ /etc/nginx/nginx.conf
+@@ -29,4 +29,5 @@
+     #gzip  on;
+
+     include /etc/nginx/conf.d/*.conf;
++    include /etc/nginx/sites-enabled/*;
+ }
+EOF
+cd /
+# TODO install & later remove patch
+patch -p0 -F 100 < /tmp/virtualhosts.patch
+```
+
 # Supported Docker versions
 
 This image is officially supported on Docker version 1.9.1.
