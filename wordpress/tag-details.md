@@ -18,11 +18,11 @@
 ## `wordpress:4.4.1-apache`
 
 ```console
-$ docker pull library/wordpress@sha256:4c3938b920a702b67a59d32162e09eb4a159a48de236d4c0ccde11d7e36741b2
+$ docker pull library/wordpress@sha256:54018616c86bc8b84643284878d2004f9c3812eae1e2c3aa9a3aaa6a357bad6a
 ```
 
--	Total Virtual Size: 516.2 MB (516158647 bytes)
--	Total v2 Content-Length: 175.1 MB (175129171 bytes)
+-	Total Virtual Size: 516.2 MB (516158923 bytes)
+-	Total v2 Content-Length: 175.1 MB (175129329 bytes)
 
 ### Layers (34)
 
@@ -510,42 +510,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:28:18 GMT
 
-#### `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+#### `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
+-	Created: Mon, 11 Jan 2016 17:20:04 GMT
 -	Parent Layer: `fefa28e91f17a07a0f6ea9c4844de42dc43852600dd631d8c8df9abd347cf0c6`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+#### `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
--	Parent Layer: `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fd00e63b11b6928b9bdffbd95d88faa6b82d4e68a5b0c47e9bf8e25b43da9b6`
+#### `be1b51191d9729a22d64a75f7fcd4bc741ab45adb310312be2b04392a060e206`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:45 GMT
--	Parent Layer: `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -555,11 +555,11 @@ CMD ["apache2-foreground"]
 ## `wordpress:4.4.1`
 
 ```console
-$ docker pull library/wordpress@sha256:4ca1ab0ac4a515007037a4cd94018387849e7ceb51ae6d81c1b8f2c908d1546f
+$ docker pull library/wordpress@sha256:36433efb407e7e9ec56db7200f4ba7f91d1e80e08a83d420ad59fc7b22819b3a
 ```
 
--	Total Virtual Size: 516.2 MB (516158647 bytes)
--	Total v2 Content-Length: 175.1 MB (175129171 bytes)
+-	Total Virtual Size: 516.2 MB (516158923 bytes)
+-	Total v2 Content-Length: 175.1 MB (175129329 bytes)
 
 ### Layers (34)
 
@@ -1047,42 +1047,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:28:18 GMT
 
-#### `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+#### `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
+-	Created: Mon, 11 Jan 2016 17:20:04 GMT
 -	Parent Layer: `fefa28e91f17a07a0f6ea9c4844de42dc43852600dd631d8c8df9abd347cf0c6`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+#### `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
--	Parent Layer: `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fd00e63b11b6928b9bdffbd95d88faa6b82d4e68a5b0c47e9bf8e25b43da9b6`
+#### `be1b51191d9729a22d64a75f7fcd4bc741ab45adb310312be2b04392a060e206`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:45 GMT
--	Parent Layer: `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1092,11 +1092,11 @@ CMD ["apache2-foreground"]
 ## `wordpress:4.4-apache`
 
 ```console
-$ docker pull library/wordpress@sha256:c51e7eb02be6c644b586e196cedf5d7280482dfce81ee3d71f7f721b60c375b2
+$ docker pull library/wordpress@sha256:5dc1511b60471c4a991376e67efb227c5f383c3bd822bc48d86e9abd8b6a6ae5
 ```
 
--	Total Virtual Size: 516.2 MB (516158647 bytes)
--	Total v2 Content-Length: 175.1 MB (175129171 bytes)
+-	Total Virtual Size: 516.2 MB (516158923 bytes)
+-	Total v2 Content-Length: 175.1 MB (175129329 bytes)
 
 ### Layers (34)
 
@@ -1584,42 +1584,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:28:18 GMT
 
-#### `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+#### `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
+-	Created: Mon, 11 Jan 2016 17:20:04 GMT
 -	Parent Layer: `fefa28e91f17a07a0f6ea9c4844de42dc43852600dd631d8c8df9abd347cf0c6`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+#### `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
--	Parent Layer: `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fd00e63b11b6928b9bdffbd95d88faa6b82d4e68a5b0c47e9bf8e25b43da9b6`
+#### `be1b51191d9729a22d64a75f7fcd4bc741ab45adb310312be2b04392a060e206`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:45 GMT
--	Parent Layer: `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1629,11 +1629,11 @@ CMD ["apache2-foreground"]
 ## `wordpress:4.4`
 
 ```console
-$ docker pull library/wordpress@sha256:42821e74c939bdaacb065499544599aca851ff0158870911eb5af9de5a52bc9e
+$ docker pull library/wordpress@sha256:f6f33fbd789f82db5abc410c05698d76d94c5e05928b4a0ad2db5404a074dbb5
 ```
 
--	Total Virtual Size: 516.2 MB (516158647 bytes)
--	Total v2 Content-Length: 175.1 MB (175129171 bytes)
+-	Total Virtual Size: 516.2 MB (516158923 bytes)
+-	Total v2 Content-Length: 175.1 MB (175129329 bytes)
 
 ### Layers (34)
 
@@ -2121,42 +2121,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:28:18 GMT
 
-#### `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+#### `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
+-	Created: Mon, 11 Jan 2016 17:20:04 GMT
 -	Parent Layer: `fefa28e91f17a07a0f6ea9c4844de42dc43852600dd631d8c8df9abd347cf0c6`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+#### `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
--	Parent Layer: `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fd00e63b11b6928b9bdffbd95d88faa6b82d4e68a5b0c47e9bf8e25b43da9b6`
+#### `be1b51191d9729a22d64a75f7fcd4bc741ab45adb310312be2b04392a060e206`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:45 GMT
--	Parent Layer: `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2166,11 +2166,11 @@ CMD ["apache2-foreground"]
 ## `wordpress:4-apache`
 
 ```console
-$ docker pull library/wordpress@sha256:f6619df6dca3d498cbd424c1bf56686f66c82cbabd7c347b0167ee7332d6fec5
+$ docker pull library/wordpress@sha256:8112f2455707326fd75570498ad6bd868669fe757d0ec2725bfcd2f69999c3b0
 ```
 
--	Total Virtual Size: 516.2 MB (516158647 bytes)
--	Total v2 Content-Length: 175.1 MB (175129171 bytes)
+-	Total Virtual Size: 516.2 MB (516158923 bytes)
+-	Total v2 Content-Length: 175.1 MB (175129329 bytes)
 
 ### Layers (34)
 
@@ -2658,42 +2658,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:28:18 GMT
 
-#### `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+#### `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
+-	Created: Mon, 11 Jan 2016 17:20:04 GMT
 -	Parent Layer: `fefa28e91f17a07a0f6ea9c4844de42dc43852600dd631d8c8df9abd347cf0c6`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+#### `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
--	Parent Layer: `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fd00e63b11b6928b9bdffbd95d88faa6b82d4e68a5b0c47e9bf8e25b43da9b6`
+#### `be1b51191d9729a22d64a75f7fcd4bc741ab45adb310312be2b04392a060e206`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:45 GMT
--	Parent Layer: `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2703,11 +2703,11 @@ CMD ["apache2-foreground"]
 ## `wordpress:apache`
 
 ```console
-$ docker pull library/wordpress@sha256:d8cc9b0bf897bd52b252f8b5f1f3ecf51cea6744c7f117437fbee8fcb8153bc6
+$ docker pull library/wordpress@sha256:73e2748fbda3e87a616bc8666dbbeb9782c86595fe30f9cc8773ea2584712639
 ```
 
--	Total Virtual Size: 516.2 MB (516158647 bytes)
--	Total v2 Content-Length: 175.1 MB (175129171 bytes)
+-	Total Virtual Size: 516.2 MB (516158923 bytes)
+-	Total v2 Content-Length: 175.1 MB (175129329 bytes)
 
 ### Layers (34)
 
@@ -3195,42 +3195,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:28:18 GMT
 
-#### `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+#### `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
+-	Created: Mon, 11 Jan 2016 17:20:04 GMT
 -	Parent Layer: `fefa28e91f17a07a0f6ea9c4844de42dc43852600dd631d8c8df9abd347cf0c6`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+#### `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
--	Parent Layer: `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fd00e63b11b6928b9bdffbd95d88faa6b82d4e68a5b0c47e9bf8e25b43da9b6`
+#### `be1b51191d9729a22d64a75f7fcd4bc741ab45adb310312be2b04392a060e206`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:45 GMT
--	Parent Layer: `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3240,11 +3240,11 @@ CMD ["apache2-foreground"]
 ## `wordpress:4`
 
 ```console
-$ docker pull library/wordpress@sha256:59a10445ac355f0d9ec1d33a1957cfed82193b3c68f033ed3f46963c7ce5929b
+$ docker pull library/wordpress@sha256:aea41e62b51e0bb75f623db9bf3606f90824140f2ef5707b2805f5c32a0d9695
 ```
 
--	Total Virtual Size: 516.2 MB (516158647 bytes)
--	Total v2 Content-Length: 175.1 MB (175129171 bytes)
+-	Total Virtual Size: 516.2 MB (516158923 bytes)
+-	Total v2 Content-Length: 175.1 MB (175129329 bytes)
 
 ### Layers (34)
 
@@ -3732,42 +3732,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:28:18 GMT
 
-#### `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+#### `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
+-	Created: Mon, 11 Jan 2016 17:20:04 GMT
 -	Parent Layer: `fefa28e91f17a07a0f6ea9c4844de42dc43852600dd631d8c8df9abd347cf0c6`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+#### `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
--	Parent Layer: `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fd00e63b11b6928b9bdffbd95d88faa6b82d4e68a5b0c47e9bf8e25b43da9b6`
+#### `be1b51191d9729a22d64a75f7fcd4bc741ab45adb310312be2b04392a060e206`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:45 GMT
--	Parent Layer: `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3777,11 +3777,11 @@ CMD ["apache2-foreground"]
 ## `wordpress:latest`
 
 ```console
-$ docker pull library/wordpress@sha256:972f54aec6c0bda46961a6bb680b1e30bfb21a37448535f94ec2bba1e4a1800b
+$ docker pull library/wordpress@sha256:250f8e009bb5dc124b034e91f6f767f7075c576180dbd274fcc38282ac0aa4f4
 ```
 
--	Total Virtual Size: 516.2 MB (516158647 bytes)
--	Total v2 Content-Length: 175.1 MB (175129171 bytes)
+-	Total Virtual Size: 516.2 MB (516158923 bytes)
+-	Total v2 Content-Length: 175.1 MB (175129329 bytes)
 
 ### Layers (34)
 
@@ -4269,42 +4269,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:28:18 GMT
 
-#### `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+#### `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
+-	Created: Mon, 11 Jan 2016 17:20:04 GMT
 -	Parent Layer: `fefa28e91f17a07a0f6ea9c4844de42dc43852600dd631d8c8df9abd347cf0c6`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+#### `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:44 GMT
--	Parent Layer: `ff4da5371d98b711901aa3c7b8093d74ff7310dd3e52232f077e0dbe410b13f9`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `ea3fe538919058bce1d2ed94d45deefad1dd4e8e571bd453638ae6a546408094`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5fd00e63b11b6928b9bdffbd95d88faa6b82d4e68a5b0c47e9bf8e25b43da9b6`
+#### `be1b51191d9729a22d64a75f7fcd4bc741ab45adb310312be2b04392a060e206`
 
 ```dockerfile
 CMD ["apache2-foreground"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:50:45 GMT
--	Parent Layer: `757d177970ccd888cc8927d17b7a2fd534c1a674e2e74603c1c0daaa071c69db`
+-	Created: Mon, 11 Jan 2016 17:20:05 GMT
+-	Parent Layer: `feb30738f40755650cef6b5949c2d53f93bbcb88f5b5b77a5b56d6b434f0f08b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4314,11 +4314,11 @@ CMD ["apache2-foreground"]
 ## `wordpress:4.4.1-fpm`
 
 ```console
-$ docker pull library/wordpress@sha256:758dc35003bdc3d37059b6d172c89abff75913712f281df9a5dd0fd0ac701666
+$ docker pull library/wordpress@sha256:37d107629e3a742e5387e7221aa7fe7791271fe30323d146f91161ce4855c6d7
 ```
 
--	Total Virtual Size: 489.5 MB (489467679 bytes)
--	Total v2 Content-Length: 165.8 MB (165780117 bytes)
+-	Total Virtual Size: 489.5 MB (489467955 bytes)
+-	Total v2 Content-Length: 165.8 MB (165780275 bytes)
 
 ### Layers (27)
 
@@ -4708,42 +4708,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:37:59 GMT
 
-#### `9412fcef71d670b45aa140d929ca7ad50352551a7ff693e9b15f312a3e2f5fc1`
+#### `147a3f357849a7e128a95278e82f4fa30bae41b1ea9f685194fc73347c2d12aa`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:45 GMT
+-	Created: Mon, 11 Jan 2016 17:26:29 GMT
 -	Parent Layer: `3e07a1dc2ab022f51ed4f818944ab9478273b81b1d55d296f3b771c28b16d398`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `52ef11be50ba796d0258c024805a67280d9be61ba20dc92be9e9b60a1811a192`
+#### `cc3864ce78b5740f015cd8ac8435220ff63d0b2b3afa1bde2990a9819468836a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:46 GMT
--	Parent Layer: `9412fcef71d670b45aa140d929ca7ad50352551a7ff693e9b15f312a3e2f5fc1`
+-	Created: Mon, 11 Jan 2016 17:26:29 GMT
+-	Parent Layer: `147a3f357849a7e128a95278e82f4fa30bae41b1ea9f685194fc73347c2d12aa`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `075a79979126b4b284197101e03398bf377afdd633bf364667b5e4af8597cfe3`
+#### `3330acad6420c71d6a85372d8c7489be614ba10a0198e800e65bc48496a84d6f`
 
 ```dockerfile
 CMD ["php-fpm"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:46 GMT
--	Parent Layer: `52ef11be50ba796d0258c024805a67280d9be61ba20dc92be9e9b60a1811a192`
+-	Created: Mon, 11 Jan 2016 17:26:30 GMT
+-	Parent Layer: `cc3864ce78b5740f015cd8ac8435220ff63d0b2b3afa1bde2990a9819468836a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4753,11 +4753,11 @@ CMD ["php-fpm"]
 ## `wordpress:4.4-fpm`
 
 ```console
-$ docker pull library/wordpress@sha256:f1deef00d464e4aedf3a7e7c6d8bfcac22b8f52731750684c0249fdbd80a10e0
+$ docker pull library/wordpress@sha256:6b3ce4c015978bc8d9710ae0a33e9322f86b81b4b20a28268ccd53b8bb524b86
 ```
 
--	Total Virtual Size: 489.5 MB (489467679 bytes)
--	Total v2 Content-Length: 165.8 MB (165780117 bytes)
+-	Total Virtual Size: 489.5 MB (489467955 bytes)
+-	Total v2 Content-Length: 165.8 MB (165780275 bytes)
 
 ### Layers (27)
 
@@ -5147,42 +5147,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:37:59 GMT
 
-#### `9412fcef71d670b45aa140d929ca7ad50352551a7ff693e9b15f312a3e2f5fc1`
+#### `147a3f357849a7e128a95278e82f4fa30bae41b1ea9f685194fc73347c2d12aa`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:45 GMT
+-	Created: Mon, 11 Jan 2016 17:26:29 GMT
 -	Parent Layer: `3e07a1dc2ab022f51ed4f818944ab9478273b81b1d55d296f3b771c28b16d398`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `52ef11be50ba796d0258c024805a67280d9be61ba20dc92be9e9b60a1811a192`
+#### `cc3864ce78b5740f015cd8ac8435220ff63d0b2b3afa1bde2990a9819468836a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:46 GMT
--	Parent Layer: `9412fcef71d670b45aa140d929ca7ad50352551a7ff693e9b15f312a3e2f5fc1`
+-	Created: Mon, 11 Jan 2016 17:26:29 GMT
+-	Parent Layer: `147a3f357849a7e128a95278e82f4fa30bae41b1ea9f685194fc73347c2d12aa`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `075a79979126b4b284197101e03398bf377afdd633bf364667b5e4af8597cfe3`
+#### `3330acad6420c71d6a85372d8c7489be614ba10a0198e800e65bc48496a84d6f`
 
 ```dockerfile
 CMD ["php-fpm"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:46 GMT
--	Parent Layer: `52ef11be50ba796d0258c024805a67280d9be61ba20dc92be9e9b60a1811a192`
+-	Created: Mon, 11 Jan 2016 17:26:30 GMT
+-	Parent Layer: `cc3864ce78b5740f015cd8ac8435220ff63d0b2b3afa1bde2990a9819468836a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -5192,11 +5192,11 @@ CMD ["php-fpm"]
 ## `wordpress:4-fpm`
 
 ```console
-$ docker pull library/wordpress@sha256:b5f1c4671c4e2c70706f7eaf44d68ef24420568c3852de3cbf33c1d2adad8fd2
+$ docker pull library/wordpress@sha256:a34ced47a123e935b29a5cd07e5cfbd0812ae8a0c70c4d64756453cc33367b42
 ```
 
--	Total Virtual Size: 489.5 MB (489467679 bytes)
--	Total v2 Content-Length: 165.8 MB (165780117 bytes)
+-	Total Virtual Size: 489.5 MB (489467955 bytes)
+-	Total v2 Content-Length: 165.8 MB (165780275 bytes)
 
 ### Layers (27)
 
@@ -5586,42 +5586,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:37:59 GMT
 
-#### `9412fcef71d670b45aa140d929ca7ad50352551a7ff693e9b15f312a3e2f5fc1`
+#### `147a3f357849a7e128a95278e82f4fa30bae41b1ea9f685194fc73347c2d12aa`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:45 GMT
+-	Created: Mon, 11 Jan 2016 17:26:29 GMT
 -	Parent Layer: `3e07a1dc2ab022f51ed4f818944ab9478273b81b1d55d296f3b771c28b16d398`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `52ef11be50ba796d0258c024805a67280d9be61ba20dc92be9e9b60a1811a192`
+#### `cc3864ce78b5740f015cd8ac8435220ff63d0b2b3afa1bde2990a9819468836a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:46 GMT
--	Parent Layer: `9412fcef71d670b45aa140d929ca7ad50352551a7ff693e9b15f312a3e2f5fc1`
+-	Created: Mon, 11 Jan 2016 17:26:29 GMT
+-	Parent Layer: `147a3f357849a7e128a95278e82f4fa30bae41b1ea9f685194fc73347c2d12aa`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `075a79979126b4b284197101e03398bf377afdd633bf364667b5e4af8597cfe3`
+#### `3330acad6420c71d6a85372d8c7489be614ba10a0198e800e65bc48496a84d6f`
 
 ```dockerfile
 CMD ["php-fpm"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:46 GMT
--	Parent Layer: `52ef11be50ba796d0258c024805a67280d9be61ba20dc92be9e9b60a1811a192`
+-	Created: Mon, 11 Jan 2016 17:26:30 GMT
+-	Parent Layer: `cc3864ce78b5740f015cd8ac8435220ff63d0b2b3afa1bde2990a9819468836a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -5631,11 +5631,11 @@ CMD ["php-fpm"]
 ## `wordpress:fpm`
 
 ```console
-$ docker pull library/wordpress@sha256:02c8e6e20e761432adba00b415d507ef773ede1c0c52357c9c73d16a9a28fffc
+$ docker pull library/wordpress@sha256:825f08d9e11f6be99ad6b2e46e5a7b7501bec163c5f350efbe2cfec3d09cadbc
 ```
 
--	Total Virtual Size: 489.5 MB (489467679 bytes)
--	Total v2 Content-Length: 165.8 MB (165780117 bytes)
+-	Total Virtual Size: 489.5 MB (489467955 bytes)
+-	Total v2 Content-Length: 165.8 MB (165780275 bytes)
 
 ### Layers (27)
 
@@ -6025,42 +6025,42 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	v2 Content-Length: 6.9 MB (6938277 bytes)
 -	v2 Last-Modified: Fri, 08 Jan 2016 03:37:59 GMT
 
-#### `9412fcef71d670b45aa140d929ca7ad50352551a7ff693e9b15f312a3e2f5fc1`
+#### `147a3f357849a7e128a95278e82f4fa30bae41b1ea9f685194fc73347c2d12aa`
 
 ```dockerfile
-COPY file:8a51d47e2839ca1ba66b56fb00b5116e8135eca3e8b7b8adf19d2caa03fc137c in /entrypoint.sh
+COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /entrypoint.sh
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:45 GMT
+-	Created: Mon, 11 Jan 2016 17:26:29 GMT
 -	Parent Layer: `3e07a1dc2ab022f51ed4f818944ab9478273b81b1d55d296f3b771c28b16d398`
 -	Docker Version: 1.8.3
--	Virtual Size: 5.5 KB (5459 bytes)
--	v2 Blob: `sha256:34dfe9e58407ba76de54ad8cf50bc47cd885bbade1780a08dc34868f4eee62f9`
--	v2 Content-Length: 2.5 KB (2485 bytes)
--	v2 Last-Modified: Thu, 17 Dec 2015 03:43:22 GMT
+-	Virtual Size: 5.7 KB (5735 bytes)
+-	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
+-	v2 Content-Length: 2.6 KB (2643 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
-#### `52ef11be50ba796d0258c024805a67280d9be61ba20dc92be9e9b60a1811a192`
+#### `cc3864ce78b5740f015cd8ac8435220ff63d0b2b3afa1bde2990a9819468836a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:46 GMT
--	Parent Layer: `9412fcef71d670b45aa140d929ca7ad50352551a7ff693e9b15f312a3e2f5fc1`
+-	Created: Mon, 11 Jan 2016 17:26:29 GMT
+-	Parent Layer: `147a3f357849a7e128a95278e82f4fa30bae41b1ea9f685194fc73347c2d12aa`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `075a79979126b4b284197101e03398bf377afdd633bf364667b5e4af8597cfe3`
+#### `3330acad6420c71d6a85372d8c7489be614ba10a0198e800e65bc48496a84d6f`
 
 ```dockerfile
 CMD ["php-fpm"]
 ```
 
--	Created: Fri, 08 Jan 2016 00:55:46 GMT
--	Parent Layer: `52ef11be50ba796d0258c024805a67280d9be61ba20dc92be9e9b60a1811a192`
+-	Created: Mon, 11 Jan 2016 17:26:30 GMT
+-	Parent Layer: `cc3864ce78b5740f015cd8ac8435220ff63d0b2b3afa1bde2990a9819468836a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
