@@ -12,42 +12,42 @@
 ## `solr:5.3.1`
 
 ```console
-$ docker pull library/solr@sha256:4b1bf7659ffe54e291b0cf7b32a5940fb5071be889becf4bb8df9d36378afbee
+$ docker pull library/solr@sha256:879cb8c5c68d362a89a3c7c9a6c0711100249088a828303e768400ec25ad204f
 ```
 
--	Total Virtual Size: 562.8 MB (562779494 bytes)
--	Total v2 Content-Length: 268.8 MB (268770287 bytes)
+-	Total Virtual Size: 562.8 MB (562776364 bytes)
+-	Total v2 Content-Length: 268.8 MB (268769542 bytes)
 
-### Layers (27)
+### Layers (28)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+#### `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -57,99 +57,133 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 04 Dec 2015 19:32:32 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 01:23:12 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.3 MB (44293503 bytes)
--	v2 Blob: `sha256:816152842605fe3ede1dc7c47f33e641f74cb4ae0d5c51a6c19cc8d85da934f3`
--	v2 Content-Length: 18.5 MB (18528629 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:56:45 GMT
+-	v2 Blob: `sha256:5a4693d81fc51b1594bf4437320c840a794a421a6bb71bb006d28a7394060722`
+-	v2 Content-Length: 18.5 MB (18528699 bytes)
+-	v2 Last-Modified: Thu, 07 Jan 2016 01:34:13 GMT
 
-#### `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+#### `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 18:19:56 GMT
--	Parent Layer: `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+-	Created: Thu, 07 Jan 2016 21:53:20 GMT
+-	Parent Layer: `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 681.7 KB (681684 bytes)
--	v2 Blob: `sha256:78b9e3c01ea48aaa24c846b994ce9cd08b89bbda022dd3af29795dad64206533`
--	v2 Content-Length: 277.4 KB (277355 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:28 GMT
+-	v2 Blob: `sha256:4eb8ae21c936eb5da653fdceace1aeb5fd4d3d031963d6f806d0b07113035ded`
+-	v2 Content-Length: 277.4 KB (277427 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:39:07 GMT
 
-#### `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+#### `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:38 GMT
--	Parent Layer: `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+-	Created: Thu, 07 Jan 2016 22:06:10 GMT
+-	Parent Layer: `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:03f01b5df3859d775ef5c36d4c417b132d9bbd963355db4437b2d49fc70435f2`
+-	v2 Blob: `sha256:45cca2aff21f4a391801267b5fb098eeec5c807958e68e99edf7795d3c0ef95b`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:24 GMT
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:15 GMT
 
-#### `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+#### `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+-	Created: Thu, 07 Jan 2016 22:06:11 GMT
+-	Parent Layer: `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+#### `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+
+```dockerfile
+RUN { \
+		echo '#!/bin/bash'; \
+		echo 'set -e'; \
+		echo; \
+		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
+	} > /usr/local/bin/docker-java-home \
+	&& chmod +x /usr/local/bin/docker-java-home
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:12 GMT
+-	Parent Layer: `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
+-	Docker Version: 1.8.3
+-	Virtual Size: 89.0 B
+-	v2 Blob: `sha256:b4e0097655688b9f63f510bc0c5af6fef4a830e860aab59a67e73fe82967a23a`
+-	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:06 GMT
+
+#### `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
+
+```dockerfile
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 
 ```dockerfile
 ENV JAVA_VERSION=8u66
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+#### `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+-	Created: Thu, 07 Jan 2016 22:06:14 GMT
+-	Parent Layer: `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+#### `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+-	Created: Thu, 07 Jan 2016 22:06:15 GMT
+-	Parent Layer: `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+#### `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 
 ```dockerfile
 RUN set -x \
@@ -157,186 +191,173 @@ RUN set -x \
 	&& apt-get install -y \
 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/*
+	&& rm -rf /var/lib/apt/lists/* \
+	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:36 GMT
--	Parent Layer: `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+-	Created: Thu, 07 Jan 2016 22:07:16 GMT
+-	Parent Layer: `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 140.0 MB (139969408 bytes)
--	v2 Blob: `sha256:2464058c255a21e49f60906f3d012584b359be2839a785c59ea2d216998eff90`
--	v2 Content-Length: 53.3 MB (53334451 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:58 GMT
+-	v2 Blob: `sha256:5d7743cf349ea019627308835763c00520815de228bf674c925882b411ed2b8d`
+-	v2 Content-Length: 53.3 MB (53334558 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:46 GMT
 
-#### `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
+#### `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:40 GMT
--	Parent Layer: `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+-	Created: Thu, 07 Jan 2016 22:07:20 GMT
+-	Parent Layer: `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 413.1 KB (413134 bytes)
--	v2 Blob: `sha256:20ae76d672fc2b0ab4c6698434e92773d1ce13708b12e71e9c2f70eef2e8e7fb`
--	v2 Content-Length: 278.4 KB (278362 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:32 GMT
+-	v2 Blob: `sha256:ea123b540978caae45fff07cd8fd90ca21626e4b63f493702187f856ff2d9f26`
+-	v2 Content-Length: 278.3 KB (278342 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:21 GMT
 
-#### `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends libfontconfig1 && rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Sat, 05 Dec 2015 18:32:08 GMT
--	Parent Layer: `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
--	Docker Version: 1.8.3
--	Virtual Size: 3.2 KB (3219 bytes)
--	v2 Blob: `sha256:d34e22497ac0e2e4213dbd2c55013b79d006d0ed06dd76650dc11f1b22bc943f`
--	v2 Content-Length: 624.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:29 GMT
-
-#### `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+#### `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 
 ```dockerfile
 MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 ```
 
--	Created: Sat, 05 Dec 2015 23:14:21 GMT
--	Parent Layer: `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
+-	Created: Fri, 08 Jan 2016 20:53:25 GMT
+-	Parent Layer: `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+#### `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 
 ```dockerfile
 RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:06 GMT
--	Parent Layer: `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+-	Created: Fri, 08 Jan 2016 20:54:13 GMT
+-	Parent Layer: `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 -	Docker Version: 1.8.3
 -	Virtual Size: 36.8 MB (36782900 bytes)
--	v2 Blob: `sha256:df77117089ff64908502a61112aae095fc1496b4b740360a05af9e70af0629b0`
--	v2 Content-Length: 10.1 MB (10072789 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:20 GMT
+-	v2 Blob: `sha256:a4def462424d838987f6e6383d29e4410d36cd823692c0477ed63ad24f8aaaee`
+-	v2 Content-Length: 10.1 MB (10072471 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:28:41 GMT
 
-#### `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+#### `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 
 ```dockerfile
 ENV SOLR_USER=solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:07 GMT
--	Parent Layer: `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+#### `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 
 ```dockerfile
 ENV SOLR_UID=8983
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:08 GMT
--	Parent Layer: `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+#### `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 
 ```dockerfile
 RUN groupadd -r $SOLR_USER &&   useradd -r -u $SOLR_UID -g $SOLR_USER $SOLR_USER
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:10 GMT
--	Parent Layer: `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+-	Created: Fri, 08 Jan 2016 20:54:17 GMT
+-	Parent Layer: `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.9 MB (2917498 bytes)
--	v2 Blob: `sha256:8831d45f6a2ec3f11c0b1b103aff64ffc3d7b198a531b035042c53dd6c0bdc5f`
--	v2 Content-Length: 4.6 KB (4638 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:06 GMT
+-	v2 Blob: `sha256:5cf9f7d30ffafb92a38b69e2945f36b36145d6f80f001eb2ad793e71e4e63293`
+-	v2 Content-Length: 4.6 KB (4645 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:27:30 GMT
 
-#### `1f486b6ed5d4150930036af78b73555cdacd9942b9ce5a6e9627a3f970de742b`
+#### `1c9c9b1cb28daaf17df1fa9aa6639104108e1fb0fa014cb6b867bd19221bf997`
 
 ```dockerfile
 ENV SOLR_KEY=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:10 GMT
--	Parent Layer: `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+-	Created: Fri, 08 Jan 2016 20:54:18 GMT
+-	Parent Layer: `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e7a7be4d802f2e4d73356be3d7c4ca4a67ac8d5452cb1587901eec40455bc4ac`
+#### `e29944c039d027ac85768c13fcd4088c49080295664386cb827cb52a2edeb6bb`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$SOLR_KEY"
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:13 GMT
--	Parent Layer: `1f486b6ed5d4150930036af78b73555cdacd9942b9ce5a6e9627a3f970de742b`
+-	Created: Fri, 08 Jan 2016 20:54:20 GMT
+-	Parent Layer: `1c9c9b1cb28daaf17df1fa9aa6639104108e1fb0fa014cb6b867bd19221bf997`
 -	Docker Version: 1.8.3
 -	Virtual Size: 12.6 KB (12618 bytes)
--	v2 Blob: `sha256:b7017dfed76a058ee99ed0e422232136cc5c9477a30e91abd40f435ca6411341`
--	v2 Content-Length: 6.8 KB (6754 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:00 GMT
+-	v2 Blob: `sha256:856241d6df949434ba48da388534e9efb965b2b7e63469b8f0761c136de84ea6`
+-	v2 Content-Length: 6.8 KB (6758 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:27:23 GMT
 
-#### `df22d8e2c3fc79245590582b5151f051f019a7f8be09f025b589adf809fce658`
+#### `2a5f28a74c4b9389087ac3e3ed18538fff1ce1830258cd6de6b128b687ffe119`
 
 ```dockerfile
 ENV SOLR_VERSION=5.3.1
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:13 GMT
--	Parent Layer: `e7a7be4d802f2e4d73356be3d7c4ca4a67ac8d5452cb1587901eec40455bc4ac`
+-	Created: Fri, 08 Jan 2016 20:54:21 GMT
+-	Parent Layer: `e29944c039d027ac85768c13fcd4088c49080295664386cb827cb52a2edeb6bb`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1b0c3313e80b85e31dd2c72f87c7b6bb58cd6586e78d602306c9bb1a0085f669`
+#### `c287f814c21a0a6a29493c0dd69df31434eb81a0eae1a15b93e629daff889355`
 
 ```dockerfile
 ENV SOLR_SHA256=34ddcac071226acd6974a392af7671f687990aa1f9eb4b181d533ca6dca6f42d
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:13 GMT
--	Parent Layer: `df22d8e2c3fc79245590582b5151f051f019a7f8be09f025b589adf809fce658`
+-	Created: Fri, 08 Jan 2016 20:54:21 GMT
+-	Parent Layer: `2a5f28a74c4b9389087ac3e3ed18538fff1ce1830258cd6de6b128b687ffe119`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3f136aeb031c21798980de762fb8f1c2c87a92489434845226d7dbfd70c8d152`
+#### `4c3efa190786386705876e4615c85267107bbfcdce6789c762b30686caeb46db`
 
 ```dockerfile
 RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz &&   wget -nv --output-document=/opt/solr.tgz.asc http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz.asc &&   gpg --verify /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   mkdir -p /opt/solr/server/solr/lib &&   chown -R $SOLR_USER:$SOLR_USER /opt/solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:29 GMT
--	Parent Layer: `1b0c3313e80b85e31dd2c72f87c7b6bb58cd6586e78d602306c9bb1a0085f669`
+-	Created: Fri, 08 Jan 2016 20:55:00 GMT
+-	Parent Layer: `c287f814c21a0a6a29493c0dd69df31434eb81a0eae1a15b93e629daff889355`
 -	Docker Version: 1.8.3
 -	Virtual Size: 212.5 MB (212542438 bytes)
--	v2 Blob: `sha256:bc4a8ab268f34b60c9006e25082116168c611e50cb7ef721bf25ea88b180512d`
--	v2 Content-Length: 134.9 MB (134899492 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:17:47 GMT
+-	v2 Blob: `sha256:dc05bca67aca88d6992988d2605bafb9714e19ef3b9f243501a8d3c6f40fea2e`
+-	v2 Content-Length: 134.9 MB (134899416 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:26:49 GMT
 
-#### `3dcb3e89ff5db7f5d45a03db1dbcc1941faa81376aeba85a5f8643fb243d06a9`
+#### `20d84f3061a5a64996180e66e57825870bd85cda1233d33509dd6e99c9b3a18c`
 
 ```dockerfile
 RUN sed --in-place -e 's/^\
@@ -344,64 +365,64 @@ RUN sed --in-place -e 's/^\
     exec "$JAVA" "${SOLR_START_OPTS[@]}" $SOLR_ADDL_ARGS -jar start.jar "${SOLR_JETTY_CONFIG[@]}"/' /opt/solr/bin/solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:33 GMT
--	Parent Layer: `3f136aeb031c21798980de762fb8f1c2c87a92489434845226d7dbfd70c8d152`
+-	Created: Fri, 08 Jan 2016 20:55:04 GMT
+-	Parent Layer: `4c3efa190786386705876e4615c85267107bbfcdce6789c762b30686caeb46db`
 -	Docker Version: 1.8.3
 -	Virtual Size: 47.8 KB (47764 bytes)
--	v2 Blob: `sha256:c73c2341e6ffab13130765b65ac8f91d930928eaef04b52fb7477371e409edf7`
--	v2 Content-Length: 12.2 KB (12238 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:17:05 GMT
+-	v2 Blob: `sha256:e2fc8aba341fe35d1ec3c3add36fc8cf035c4996c0759d551ce959d2366dcbfa`
+-	v2 Content-Length: 12.2 KB (12234 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:26:05 GMT
 
-#### `46cd294a1cfcaa9d442588390bc9b34070d1e3c1d19a536561233a0621688873`
+#### `46f6a2fe77d0d75875b1f05f438185d75a2f7613970186eefe4c5376e6e88b3c`
 
 ```dockerfile
 EXPOSE 8983/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:33 GMT
--	Parent Layer: `3dcb3e89ff5db7f5d45a03db1dbcc1941faa81376aeba85a5f8643fb243d06a9`
+-	Created: Fri, 08 Jan 2016 20:55:05 GMT
+-	Parent Layer: `20d84f3061a5a64996180e66e57825870bd85cda1233d33509dd6e99c9b3a18c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `162a755292d071eb27ff32cf061e804a0fcb9956c995f59401e8102877ff90ef`
+#### `4817524a519fdc311a09ebe8fe32952dd0d9bda06d24476960d6c5f14e0e8f4e`
 
 ```dockerfile
 WORKDIR /opt/solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:34 GMT
--	Parent Layer: `46cd294a1cfcaa9d442588390bc9b34070d1e3c1d19a536561233a0621688873`
+-	Created: Fri, 08 Jan 2016 20:55:05 GMT
+-	Parent Layer: `46f6a2fe77d0d75875b1f05f438185d75a2f7613970186eefe4c5376e6e88b3c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e732ca6d8beaa0907e99c27b3c5122565be383dd4e2da2cc8a1643b2b37bb66e`
+#### `f250d7c6fa5c70f34a413782f4cd512d49bb94193a930905b4ffb3362987965e`
 
 ```dockerfile
 USER [solr]
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:34 GMT
--	Parent Layer: `162a755292d071eb27ff32cf061e804a0fcb9956c995f59401e8102877ff90ef`
+-	Created: Fri, 08 Jan 2016 20:55:06 GMT
+-	Parent Layer: `4817524a519fdc311a09ebe8fe32952dd0d9bda06d24476960d6c5f14e0e8f4e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6687e715cbf176d7f208eaf16a6191e75c3cf6eb6b9b2cf28a48409aaf6676f2`
+#### `01bfff298bfda65061fe7748acf4243d383f6b47b83928acf61e9183896fca49`
 
 ```dockerfile
 CMD ["/opt/solr/bin/solr" "-f"]
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:35 GMT
--	Parent Layer: `e732ca6d8beaa0907e99c27b3c5122565be383dd4e2da2cc8a1643b2b37bb66e`
+-	Created: Fri, 08 Jan 2016 20:55:06 GMT
+-	Parent Layer: `f250d7c6fa5c70f34a413782f4cd512d49bb94193a930905b4ffb3362987965e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -411,42 +432,42 @@ CMD ["/opt/solr/bin/solr" "-f"]
 ## `solr:5.3`
 
 ```console
-$ docker pull library/solr@sha256:219666e442b5a0716cad070317f80a919b58b35d4c7ef3b23db1c89c77c6d727
+$ docker pull library/solr@sha256:5bd745c0c5eb6bcd765ca84aa8fbf1c21ac18e9776c65f7605907a995d3a03e5
 ```
 
--	Total Virtual Size: 562.8 MB (562779494 bytes)
--	Total v2 Content-Length: 268.8 MB (268770287 bytes)
+-	Total Virtual Size: 562.8 MB (562776364 bytes)
+-	Total v2 Content-Length: 268.8 MB (268769542 bytes)
 
-### Layers (27)
+### Layers (28)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+#### `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -456,99 +477,133 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 04 Dec 2015 19:32:32 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 01:23:12 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.3 MB (44293503 bytes)
--	v2 Blob: `sha256:816152842605fe3ede1dc7c47f33e641f74cb4ae0d5c51a6c19cc8d85da934f3`
--	v2 Content-Length: 18.5 MB (18528629 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:56:45 GMT
+-	v2 Blob: `sha256:5a4693d81fc51b1594bf4437320c840a794a421a6bb71bb006d28a7394060722`
+-	v2 Content-Length: 18.5 MB (18528699 bytes)
+-	v2 Last-Modified: Thu, 07 Jan 2016 01:34:13 GMT
 
-#### `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+#### `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 18:19:56 GMT
--	Parent Layer: `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+-	Created: Thu, 07 Jan 2016 21:53:20 GMT
+-	Parent Layer: `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 681.7 KB (681684 bytes)
--	v2 Blob: `sha256:78b9e3c01ea48aaa24c846b994ce9cd08b89bbda022dd3af29795dad64206533`
--	v2 Content-Length: 277.4 KB (277355 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:28 GMT
+-	v2 Blob: `sha256:4eb8ae21c936eb5da653fdceace1aeb5fd4d3d031963d6f806d0b07113035ded`
+-	v2 Content-Length: 277.4 KB (277427 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:39:07 GMT
 
-#### `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+#### `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:38 GMT
--	Parent Layer: `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+-	Created: Thu, 07 Jan 2016 22:06:10 GMT
+-	Parent Layer: `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:03f01b5df3859d775ef5c36d4c417b132d9bbd963355db4437b2d49fc70435f2`
+-	v2 Blob: `sha256:45cca2aff21f4a391801267b5fb098eeec5c807958e68e99edf7795d3c0ef95b`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:24 GMT
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:15 GMT
 
-#### `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+#### `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+-	Created: Thu, 07 Jan 2016 22:06:11 GMT
+-	Parent Layer: `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+#### `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+
+```dockerfile
+RUN { \
+		echo '#!/bin/bash'; \
+		echo 'set -e'; \
+		echo; \
+		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
+	} > /usr/local/bin/docker-java-home \
+	&& chmod +x /usr/local/bin/docker-java-home
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:12 GMT
+-	Parent Layer: `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
+-	Docker Version: 1.8.3
+-	Virtual Size: 89.0 B
+-	v2 Blob: `sha256:b4e0097655688b9f63f510bc0c5af6fef4a830e860aab59a67e73fe82967a23a`
+-	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:06 GMT
+
+#### `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
+
+```dockerfile
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 
 ```dockerfile
 ENV JAVA_VERSION=8u66
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+#### `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+-	Created: Thu, 07 Jan 2016 22:06:14 GMT
+-	Parent Layer: `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+#### `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+-	Created: Thu, 07 Jan 2016 22:06:15 GMT
+-	Parent Layer: `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+#### `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 
 ```dockerfile
 RUN set -x \
@@ -556,186 +611,173 @@ RUN set -x \
 	&& apt-get install -y \
 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/*
+	&& rm -rf /var/lib/apt/lists/* \
+	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:36 GMT
--	Parent Layer: `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+-	Created: Thu, 07 Jan 2016 22:07:16 GMT
+-	Parent Layer: `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 140.0 MB (139969408 bytes)
--	v2 Blob: `sha256:2464058c255a21e49f60906f3d012584b359be2839a785c59ea2d216998eff90`
--	v2 Content-Length: 53.3 MB (53334451 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:58 GMT
+-	v2 Blob: `sha256:5d7743cf349ea019627308835763c00520815de228bf674c925882b411ed2b8d`
+-	v2 Content-Length: 53.3 MB (53334558 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:46 GMT
 
-#### `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
+#### `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:40 GMT
--	Parent Layer: `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+-	Created: Thu, 07 Jan 2016 22:07:20 GMT
+-	Parent Layer: `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 413.1 KB (413134 bytes)
--	v2 Blob: `sha256:20ae76d672fc2b0ab4c6698434e92773d1ce13708b12e71e9c2f70eef2e8e7fb`
--	v2 Content-Length: 278.4 KB (278362 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:32 GMT
+-	v2 Blob: `sha256:ea123b540978caae45fff07cd8fd90ca21626e4b63f493702187f856ff2d9f26`
+-	v2 Content-Length: 278.3 KB (278342 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:21 GMT
 
-#### `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends libfontconfig1 && rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Sat, 05 Dec 2015 18:32:08 GMT
--	Parent Layer: `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
--	Docker Version: 1.8.3
--	Virtual Size: 3.2 KB (3219 bytes)
--	v2 Blob: `sha256:d34e22497ac0e2e4213dbd2c55013b79d006d0ed06dd76650dc11f1b22bc943f`
--	v2 Content-Length: 624.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:29 GMT
-
-#### `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+#### `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 
 ```dockerfile
 MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 ```
 
--	Created: Sat, 05 Dec 2015 23:14:21 GMT
--	Parent Layer: `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
+-	Created: Fri, 08 Jan 2016 20:53:25 GMT
+-	Parent Layer: `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+#### `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 
 ```dockerfile
 RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:06 GMT
--	Parent Layer: `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+-	Created: Fri, 08 Jan 2016 20:54:13 GMT
+-	Parent Layer: `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 -	Docker Version: 1.8.3
 -	Virtual Size: 36.8 MB (36782900 bytes)
--	v2 Blob: `sha256:df77117089ff64908502a61112aae095fc1496b4b740360a05af9e70af0629b0`
--	v2 Content-Length: 10.1 MB (10072789 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:20 GMT
+-	v2 Blob: `sha256:a4def462424d838987f6e6383d29e4410d36cd823692c0477ed63ad24f8aaaee`
+-	v2 Content-Length: 10.1 MB (10072471 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:28:41 GMT
 
-#### `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+#### `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 
 ```dockerfile
 ENV SOLR_USER=solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:07 GMT
--	Parent Layer: `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+#### `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 
 ```dockerfile
 ENV SOLR_UID=8983
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:08 GMT
--	Parent Layer: `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+#### `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 
 ```dockerfile
 RUN groupadd -r $SOLR_USER &&   useradd -r -u $SOLR_UID -g $SOLR_USER $SOLR_USER
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:10 GMT
--	Parent Layer: `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+-	Created: Fri, 08 Jan 2016 20:54:17 GMT
+-	Parent Layer: `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.9 MB (2917498 bytes)
--	v2 Blob: `sha256:8831d45f6a2ec3f11c0b1b103aff64ffc3d7b198a531b035042c53dd6c0bdc5f`
--	v2 Content-Length: 4.6 KB (4638 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:06 GMT
+-	v2 Blob: `sha256:5cf9f7d30ffafb92a38b69e2945f36b36145d6f80f001eb2ad793e71e4e63293`
+-	v2 Content-Length: 4.6 KB (4645 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:27:30 GMT
 
-#### `1f486b6ed5d4150930036af78b73555cdacd9942b9ce5a6e9627a3f970de742b`
+#### `1c9c9b1cb28daaf17df1fa9aa6639104108e1fb0fa014cb6b867bd19221bf997`
 
 ```dockerfile
 ENV SOLR_KEY=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:10 GMT
--	Parent Layer: `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+-	Created: Fri, 08 Jan 2016 20:54:18 GMT
+-	Parent Layer: `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e7a7be4d802f2e4d73356be3d7c4ca4a67ac8d5452cb1587901eec40455bc4ac`
+#### `e29944c039d027ac85768c13fcd4088c49080295664386cb827cb52a2edeb6bb`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$SOLR_KEY"
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:13 GMT
--	Parent Layer: `1f486b6ed5d4150930036af78b73555cdacd9942b9ce5a6e9627a3f970de742b`
+-	Created: Fri, 08 Jan 2016 20:54:20 GMT
+-	Parent Layer: `1c9c9b1cb28daaf17df1fa9aa6639104108e1fb0fa014cb6b867bd19221bf997`
 -	Docker Version: 1.8.3
 -	Virtual Size: 12.6 KB (12618 bytes)
--	v2 Blob: `sha256:b7017dfed76a058ee99ed0e422232136cc5c9477a30e91abd40f435ca6411341`
--	v2 Content-Length: 6.8 KB (6754 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:00 GMT
+-	v2 Blob: `sha256:856241d6df949434ba48da388534e9efb965b2b7e63469b8f0761c136de84ea6`
+-	v2 Content-Length: 6.8 KB (6758 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:27:23 GMT
 
-#### `df22d8e2c3fc79245590582b5151f051f019a7f8be09f025b589adf809fce658`
+#### `2a5f28a74c4b9389087ac3e3ed18538fff1ce1830258cd6de6b128b687ffe119`
 
 ```dockerfile
 ENV SOLR_VERSION=5.3.1
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:13 GMT
--	Parent Layer: `e7a7be4d802f2e4d73356be3d7c4ca4a67ac8d5452cb1587901eec40455bc4ac`
+-	Created: Fri, 08 Jan 2016 20:54:21 GMT
+-	Parent Layer: `e29944c039d027ac85768c13fcd4088c49080295664386cb827cb52a2edeb6bb`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1b0c3313e80b85e31dd2c72f87c7b6bb58cd6586e78d602306c9bb1a0085f669`
+#### `c287f814c21a0a6a29493c0dd69df31434eb81a0eae1a15b93e629daff889355`
 
 ```dockerfile
 ENV SOLR_SHA256=34ddcac071226acd6974a392af7671f687990aa1f9eb4b181d533ca6dca6f42d
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:13 GMT
--	Parent Layer: `df22d8e2c3fc79245590582b5151f051f019a7f8be09f025b589adf809fce658`
+-	Created: Fri, 08 Jan 2016 20:54:21 GMT
+-	Parent Layer: `2a5f28a74c4b9389087ac3e3ed18538fff1ce1830258cd6de6b128b687ffe119`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `3f136aeb031c21798980de762fb8f1c2c87a92489434845226d7dbfd70c8d152`
+#### `4c3efa190786386705876e4615c85267107bbfcdce6789c762b30686caeb46db`
 
 ```dockerfile
 RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz &&   wget -nv --output-document=/opt/solr.tgz.asc http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz.asc &&   gpg --verify /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   mkdir -p /opt/solr/server/solr/lib &&   chown -R $SOLR_USER:$SOLR_USER /opt/solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:29 GMT
--	Parent Layer: `1b0c3313e80b85e31dd2c72f87c7b6bb58cd6586e78d602306c9bb1a0085f669`
+-	Created: Fri, 08 Jan 2016 20:55:00 GMT
+-	Parent Layer: `c287f814c21a0a6a29493c0dd69df31434eb81a0eae1a15b93e629daff889355`
 -	Docker Version: 1.8.3
 -	Virtual Size: 212.5 MB (212542438 bytes)
--	v2 Blob: `sha256:bc4a8ab268f34b60c9006e25082116168c611e50cb7ef721bf25ea88b180512d`
--	v2 Content-Length: 134.9 MB (134899492 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:17:47 GMT
+-	v2 Blob: `sha256:dc05bca67aca88d6992988d2605bafb9714e19ef3b9f243501a8d3c6f40fea2e`
+-	v2 Content-Length: 134.9 MB (134899416 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:26:49 GMT
 
-#### `3dcb3e89ff5db7f5d45a03db1dbcc1941faa81376aeba85a5f8643fb243d06a9`
+#### `20d84f3061a5a64996180e66e57825870bd85cda1233d33509dd6e99c9b3a18c`
 
 ```dockerfile
 RUN sed --in-place -e 's/^\
@@ -743,64 +785,64 @@ RUN sed --in-place -e 's/^\
     exec "$JAVA" "${SOLR_START_OPTS[@]}" $SOLR_ADDL_ARGS -jar start.jar "${SOLR_JETTY_CONFIG[@]}"/' /opt/solr/bin/solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:33 GMT
--	Parent Layer: `3f136aeb031c21798980de762fb8f1c2c87a92489434845226d7dbfd70c8d152`
+-	Created: Fri, 08 Jan 2016 20:55:04 GMT
+-	Parent Layer: `4c3efa190786386705876e4615c85267107bbfcdce6789c762b30686caeb46db`
 -	Docker Version: 1.8.3
 -	Virtual Size: 47.8 KB (47764 bytes)
--	v2 Blob: `sha256:c73c2341e6ffab13130765b65ac8f91d930928eaef04b52fb7477371e409edf7`
--	v2 Content-Length: 12.2 KB (12238 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:17:05 GMT
+-	v2 Blob: `sha256:e2fc8aba341fe35d1ec3c3add36fc8cf035c4996c0759d551ce959d2366dcbfa`
+-	v2 Content-Length: 12.2 KB (12234 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:26:05 GMT
 
-#### `46cd294a1cfcaa9d442588390bc9b34070d1e3c1d19a536561233a0621688873`
+#### `46f6a2fe77d0d75875b1f05f438185d75a2f7613970186eefe4c5376e6e88b3c`
 
 ```dockerfile
 EXPOSE 8983/tcp
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:33 GMT
--	Parent Layer: `3dcb3e89ff5db7f5d45a03db1dbcc1941faa81376aeba85a5f8643fb243d06a9`
+-	Created: Fri, 08 Jan 2016 20:55:05 GMT
+-	Parent Layer: `20d84f3061a5a64996180e66e57825870bd85cda1233d33509dd6e99c9b3a18c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `162a755292d071eb27ff32cf061e804a0fcb9956c995f59401e8102877ff90ef`
+#### `4817524a519fdc311a09ebe8fe32952dd0d9bda06d24476960d6c5f14e0e8f4e`
 
 ```dockerfile
 WORKDIR /opt/solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:34 GMT
--	Parent Layer: `46cd294a1cfcaa9d442588390bc9b34070d1e3c1d19a536561233a0621688873`
+-	Created: Fri, 08 Jan 2016 20:55:05 GMT
+-	Parent Layer: `46f6a2fe77d0d75875b1f05f438185d75a2f7613970186eefe4c5376e6e88b3c`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e732ca6d8beaa0907e99c27b3c5122565be383dd4e2da2cc8a1643b2b37bb66e`
+#### `f250d7c6fa5c70f34a413782f4cd512d49bb94193a930905b4ffb3362987965e`
 
 ```dockerfile
 USER [solr]
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:34 GMT
--	Parent Layer: `162a755292d071eb27ff32cf061e804a0fcb9956c995f59401e8102877ff90ef`
+-	Created: Fri, 08 Jan 2016 20:55:06 GMT
+-	Parent Layer: `4817524a519fdc311a09ebe8fe32952dd0d9bda06d24476960d6c5f14e0e8f4e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6687e715cbf176d7f208eaf16a6191e75c3cf6eb6b9b2cf28a48409aaf6676f2`
+#### `01bfff298bfda65061fe7748acf4243d383f6b47b83928acf61e9183896fca49`
 
 ```dockerfile
 CMD ["/opt/solr/bin/solr" "-f"]
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:35 GMT
--	Parent Layer: `e732ca6d8beaa0907e99c27b3c5122565be383dd4e2da2cc8a1643b2b37bb66e`
+-	Created: Fri, 08 Jan 2016 20:55:06 GMT
+-	Parent Layer: `f250d7c6fa5c70f34a413782f4cd512d49bb94193a930905b4ffb3362987965e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -810,42 +852,42 @@ CMD ["/opt/solr/bin/solr" "-f"]
 ## `solr:5.4.0`
 
 ```console
-$ docker pull library/solr@sha256:8bc15bf8ee075bc6a2fa3083f9fa661ed04c24e0a6fe36d594ac36a78ba1c847
+$ docker pull library/solr@sha256:2dc70a56ef43a8cd019c6423a3f952d55616ed856f6d936912935fdeef078af6
 ```
 
--	Total Virtual Size: 565.6 MB (565643997 bytes)
--	Total v2 Content-Length: 270.2 MB (270161494 bytes)
+-	Total Virtual Size: 565.6 MB (565640867 bytes)
+-	Total v2 Content-Length: 270.2 MB (270161159 bytes)
 
-### Layers (26)
+### Layers (27)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+#### `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -855,99 +897,133 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 04 Dec 2015 19:32:32 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 01:23:12 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.3 MB (44293503 bytes)
--	v2 Blob: `sha256:816152842605fe3ede1dc7c47f33e641f74cb4ae0d5c51a6c19cc8d85da934f3`
--	v2 Content-Length: 18.5 MB (18528629 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:56:45 GMT
+-	v2 Blob: `sha256:5a4693d81fc51b1594bf4437320c840a794a421a6bb71bb006d28a7394060722`
+-	v2 Content-Length: 18.5 MB (18528699 bytes)
+-	v2 Last-Modified: Thu, 07 Jan 2016 01:34:13 GMT
 
-#### `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+#### `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 18:19:56 GMT
--	Parent Layer: `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+-	Created: Thu, 07 Jan 2016 21:53:20 GMT
+-	Parent Layer: `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 681.7 KB (681684 bytes)
--	v2 Blob: `sha256:78b9e3c01ea48aaa24c846b994ce9cd08b89bbda022dd3af29795dad64206533`
--	v2 Content-Length: 277.4 KB (277355 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:28 GMT
+-	v2 Blob: `sha256:4eb8ae21c936eb5da653fdceace1aeb5fd4d3d031963d6f806d0b07113035ded`
+-	v2 Content-Length: 277.4 KB (277427 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:39:07 GMT
 
-#### `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+#### `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:38 GMT
--	Parent Layer: `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+-	Created: Thu, 07 Jan 2016 22:06:10 GMT
+-	Parent Layer: `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:03f01b5df3859d775ef5c36d4c417b132d9bbd963355db4437b2d49fc70435f2`
+-	v2 Blob: `sha256:45cca2aff21f4a391801267b5fb098eeec5c807958e68e99edf7795d3c0ef95b`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:24 GMT
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:15 GMT
 
-#### `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+#### `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+-	Created: Thu, 07 Jan 2016 22:06:11 GMT
+-	Parent Layer: `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+#### `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+
+```dockerfile
+RUN { \
+		echo '#!/bin/bash'; \
+		echo 'set -e'; \
+		echo; \
+		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
+	} > /usr/local/bin/docker-java-home \
+	&& chmod +x /usr/local/bin/docker-java-home
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:12 GMT
+-	Parent Layer: `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
+-	Docker Version: 1.8.3
+-	Virtual Size: 89.0 B
+-	v2 Blob: `sha256:b4e0097655688b9f63f510bc0c5af6fef4a830e860aab59a67e73fe82967a23a`
+-	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:06 GMT
+
+#### `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
+
+```dockerfile
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 
 ```dockerfile
 ENV JAVA_VERSION=8u66
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+#### `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+-	Created: Thu, 07 Jan 2016 22:06:14 GMT
+-	Parent Layer: `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+#### `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+-	Created: Thu, 07 Jan 2016 22:06:15 GMT
+-	Parent Layer: `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+#### `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 
 ```dockerfile
 RUN set -x \
@@ -955,235 +1031,222 @@ RUN set -x \
 	&& apt-get install -y \
 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/*
+	&& rm -rf /var/lib/apt/lists/* \
+	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:36 GMT
--	Parent Layer: `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+-	Created: Thu, 07 Jan 2016 22:07:16 GMT
+-	Parent Layer: `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 140.0 MB (139969408 bytes)
--	v2 Blob: `sha256:2464058c255a21e49f60906f3d012584b359be2839a785c59ea2d216998eff90`
--	v2 Content-Length: 53.3 MB (53334451 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:58 GMT
+-	v2 Blob: `sha256:5d7743cf349ea019627308835763c00520815de228bf674c925882b411ed2b8d`
+-	v2 Content-Length: 53.3 MB (53334558 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:46 GMT
 
-#### `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
+#### `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:40 GMT
--	Parent Layer: `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+-	Created: Thu, 07 Jan 2016 22:07:20 GMT
+-	Parent Layer: `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 413.1 KB (413134 bytes)
--	v2 Blob: `sha256:20ae76d672fc2b0ab4c6698434e92773d1ce13708b12e71e9c2f70eef2e8e7fb`
--	v2 Content-Length: 278.4 KB (278362 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:32 GMT
+-	v2 Blob: `sha256:ea123b540978caae45fff07cd8fd90ca21626e4b63f493702187f856ff2d9f26`
+-	v2 Content-Length: 278.3 KB (278342 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:21 GMT
 
-#### `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends libfontconfig1 && rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Sat, 05 Dec 2015 18:32:08 GMT
--	Parent Layer: `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
--	Docker Version: 1.8.3
--	Virtual Size: 3.2 KB (3219 bytes)
--	v2 Blob: `sha256:d34e22497ac0e2e4213dbd2c55013b79d006d0ed06dd76650dc11f1b22bc943f`
--	v2 Content-Length: 624.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:29 GMT
-
-#### `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+#### `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 
 ```dockerfile
 MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 ```
 
--	Created: Sat, 05 Dec 2015 23:14:21 GMT
--	Parent Layer: `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
+-	Created: Fri, 08 Jan 2016 20:53:25 GMT
+-	Parent Layer: `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+#### `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 
 ```dockerfile
 RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:06 GMT
--	Parent Layer: `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+-	Created: Fri, 08 Jan 2016 20:54:13 GMT
+-	Parent Layer: `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 -	Docker Version: 1.8.3
 -	Virtual Size: 36.8 MB (36782900 bytes)
--	v2 Blob: `sha256:df77117089ff64908502a61112aae095fc1496b4b740360a05af9e70af0629b0`
--	v2 Content-Length: 10.1 MB (10072789 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:20 GMT
+-	v2 Blob: `sha256:a4def462424d838987f6e6383d29e4410d36cd823692c0477ed63ad24f8aaaee`
+-	v2 Content-Length: 10.1 MB (10072471 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:28:41 GMT
 
-#### `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+#### `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 
 ```dockerfile
 ENV SOLR_USER=solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:07 GMT
--	Parent Layer: `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+#### `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 
 ```dockerfile
 ENV SOLR_UID=8983
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:08 GMT
--	Parent Layer: `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+#### `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 
 ```dockerfile
 RUN groupadd -r $SOLR_USER &&   useradd -r -u $SOLR_UID -g $SOLR_USER $SOLR_USER
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:10 GMT
--	Parent Layer: `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+-	Created: Fri, 08 Jan 2016 20:54:17 GMT
+-	Parent Layer: `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.9 MB (2917498 bytes)
--	v2 Blob: `sha256:8831d45f6a2ec3f11c0b1b103aff64ffc3d7b198a531b035042c53dd6c0bdc5f`
--	v2 Content-Length: 4.6 KB (4638 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:06 GMT
+-	v2 Blob: `sha256:5cf9f7d30ffafb92a38b69e2945f36b36145d6f80f001eb2ad793e71e4e63293`
+-	v2 Content-Length: 4.6 KB (4645 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:27:30 GMT
 
-#### `a2da5c08b1378586b8d9934bc4a51c768fa56b56d5ad4460ac9ef2d8b5a040d3`
+#### `d80d5aa129f586964f6b7fc0c4955fcc5d3c9e427a021328f35a82fbf81462cc`
 
 ```dockerfile
 ENV SOLR_KEY=25C13C58807E90004AB8597AE48025ED13E57FFC
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:46 GMT
--	Parent Layer: `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+-	Created: Fri, 08 Jan 2016 20:56:13 GMT
+-	Parent Layer: `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `058637c69095515e382e6702e7bafe197e537267eff264262eeaebed187b65da`
+#### `eb711196b0be358ff33128ee9ae46effa4bd9b1fb9dd9d598e8c5f28e07b7961`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$SOLR_KEY"
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:48 GMT
--	Parent Layer: `a2da5c08b1378586b8d9934bc4a51c768fa56b56d5ad4460ac9ef2d8b5a040d3`
+-	Created: Fri, 08 Jan 2016 20:56:16 GMT
+-	Parent Layer: `d80d5aa129f586964f6b7fc0c4955fcc5d3c9e427a021328f35a82fbf81462cc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 15.9 KB (15900 bytes)
--	v2 Blob: `sha256:a94e38ed9c45b205b85e144861585bc9ade18d943a15bf2ed793e3c6c7764428`
+-	v2 Blob: `sha256:7f70baa568fce8f4a35e19710dad5be651f2d8235f47975af956e25d1e918f22`
 -	v2 Content-Length: 7.4 KB (7377 bytes)
--	v2 Last-Modified: Wed, 16 Dec 2015 01:06:26 GMT
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:35:01 GMT
 
-#### `bb0cb9cd397f37aeb86639a64c83731e2a24e73ae82f1c90606bf755bdda3668`
+#### `8f13baaa56016fe0997e267abf5c986ea1a6be9e6f6b49ac65b84d92d0d958ec`
 
 ```dockerfile
 ENV SOLR_VERSION=5.4.0
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:49 GMT
--	Parent Layer: `058637c69095515e382e6702e7bafe197e537267eff264262eeaebed187b65da`
+-	Created: Fri, 08 Jan 2016 20:56:16 GMT
+-	Parent Layer: `eb711196b0be358ff33128ee9ae46effa4bd9b1fb9dd9d598e8c5f28e07b7961`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a17d6dafa40f53f1e197a206238f00c1403517b6b7b97b66e1d305c36a698d19`
+#### `5dab7380793c9a71bf37727a072ed95bc3b165573e1c7f0bb2194221695a5e65`
 
 ```dockerfile
 ENV SOLR_SHA256=84c0f04a23047946f54618a092d4510d88d7205a756b948208de9e5afb42f7cd
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:49 GMT
--	Parent Layer: `bb0cb9cd397f37aeb86639a64c83731e2a24e73ae82f1c90606bf755bdda3668`
+-	Created: Fri, 08 Jan 2016 20:56:17 GMT
+-	Parent Layer: `8f13baaa56016fe0997e267abf5c986ea1a6be9e6f6b49ac65b84d92d0d958ec`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d55c4ca59292602d0955adeec0cdde9d79c4845b552d57eabed2c9e062637fbc`
+#### `657c1284fcaa4ab97bfac17e92cdaae1bff9bf8689b93ea050e1e8934bace53a`
 
 ```dockerfile
 RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz &&   wget -nv --output-document=/opt/solr.tgz.asc http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz.asc &&   gpg --verify /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   mkdir -p /opt/solr/server/solr/lib &&   chown -R $SOLR_USER:$SOLR_USER /opt/solr
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:04 GMT
--	Parent Layer: `a17d6dafa40f53f1e197a206238f00c1403517b6b7b97b66e1d305c36a698d19`
+-	Created: Fri, 08 Jan 2016 20:56:37 GMT
+-	Parent Layer: `5dab7380793c9a71bf37727a072ed95bc3b165573e1c7f0bb2194221695a5e65`
 -	Docker Version: 1.8.3
 -	Virtual Size: 215.5 MB (215451423 bytes)
--	v2 Blob: `sha256:952dbf8d99e50ff80f565a6310074babec9a11012cb62066be57111962ccb6ad`
--	v2 Content-Length: 136.3 MB (136302314 bytes)
--	v2 Last-Modified: Wed, 16 Dec 2015 01:06:00 GMT
+-	v2 Blob: `sha256:e6fe1a12e6597f3ffdea9de8a98e9f62f94a00f815c3e1c4cc21904666efffe4`
+-	v2 Content-Length: 136.3 MB (136302648 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:34:46 GMT
 
-#### `bf30442dd338e7c3eb24986a79a81717b45ae668aba2e518ca5af8c13cbb0557`
+#### `8278da0ff001cb40e0dc2e748fb63f4fb243f7c713e671ee5e16083327a0620e`
 
 ```dockerfile
 EXPOSE 8983/tcp
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:07 GMT
--	Parent Layer: `d55c4ca59292602d0955adeec0cdde9d79c4845b552d57eabed2c9e062637fbc`
+-	Created: Fri, 08 Jan 2016 20:56:40 GMT
+-	Parent Layer: `657c1284fcaa4ab97bfac17e92cdaae1bff9bf8689b93ea050e1e8934bace53a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `312e102e269d9f97d437854f767c5a641e4b590e044953c98f46e8808c1aa935`
+#### `e3abf9827948074f2db550e8592ec1fe0bea637505c3568aafb4d71c3251f3e9`
 
 ```dockerfile
 WORKDIR /opt/solr
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:08 GMT
--	Parent Layer: `bf30442dd338e7c3eb24986a79a81717b45ae668aba2e518ca5af8c13cbb0557`
+-	Created: Fri, 08 Jan 2016 20:56:41 GMT
+-	Parent Layer: `8278da0ff001cb40e0dc2e748fb63f4fb243f7c713e671ee5e16083327a0620e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fe2362b04946c0dbbd05ed974b84c5af07dbc18df9540d93974d0e247db36ba0`
+#### `7772983516c0e626611558d776c9b745e9797fa8e4ab25e238e0c5e66d22f8e9`
 
 ```dockerfile
 USER [solr]
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:08 GMT
--	Parent Layer: `312e102e269d9f97d437854f767c5a641e4b590e044953c98f46e8808c1aa935`
+-	Created: Fri, 08 Jan 2016 20:56:41 GMT
+-	Parent Layer: `e3abf9827948074f2db550e8592ec1fe0bea637505c3568aafb4d71c3251f3e9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d37768ee7f6207d495975ec892d72f51e6322a5053ec1ffda4a4fe01f027d691`
+#### `af352dd291bfb690c7345160dbea5048abe377aaed824f36dd457d4226362107`
 
 ```dockerfile
 CMD ["/opt/solr/bin/solr" "-f"]
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:09 GMT
--	Parent Layer: `fe2362b04946c0dbbd05ed974b84c5af07dbc18df9540d93974d0e247db36ba0`
+-	Created: Fri, 08 Jan 2016 20:56:42 GMT
+-	Parent Layer: `7772983516c0e626611558d776c9b745e9797fa8e4ab25e238e0c5e66d22f8e9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1193,42 +1256,42 @@ CMD ["/opt/solr/bin/solr" "-f"]
 ## `solr:5.4`
 
 ```console
-$ docker pull library/solr@sha256:6ac4a3a42e77c197f50d7f15e5e8e59ba44fadf4bf05c6ffa005e0b061f1d7aa
+$ docker pull library/solr@sha256:a05c8a04f8e544325252d37580e0dff31666fbd857e81d35d50638286b816d77
 ```
 
--	Total Virtual Size: 565.6 MB (565643997 bytes)
--	Total v2 Content-Length: 270.2 MB (270161494 bytes)
+-	Total Virtual Size: 565.6 MB (565640867 bytes)
+-	Total v2 Content-Length: 270.2 MB (270161159 bytes)
 
-### Layers (26)
+### Layers (27)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+#### `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1238,99 +1301,133 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 04 Dec 2015 19:32:32 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 01:23:12 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.3 MB (44293503 bytes)
--	v2 Blob: `sha256:816152842605fe3ede1dc7c47f33e641f74cb4ae0d5c51a6c19cc8d85da934f3`
--	v2 Content-Length: 18.5 MB (18528629 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:56:45 GMT
+-	v2 Blob: `sha256:5a4693d81fc51b1594bf4437320c840a794a421a6bb71bb006d28a7394060722`
+-	v2 Content-Length: 18.5 MB (18528699 bytes)
+-	v2 Last-Modified: Thu, 07 Jan 2016 01:34:13 GMT
 
-#### `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+#### `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 18:19:56 GMT
--	Parent Layer: `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+-	Created: Thu, 07 Jan 2016 21:53:20 GMT
+-	Parent Layer: `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 681.7 KB (681684 bytes)
--	v2 Blob: `sha256:78b9e3c01ea48aaa24c846b994ce9cd08b89bbda022dd3af29795dad64206533`
--	v2 Content-Length: 277.4 KB (277355 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:28 GMT
+-	v2 Blob: `sha256:4eb8ae21c936eb5da653fdceace1aeb5fd4d3d031963d6f806d0b07113035ded`
+-	v2 Content-Length: 277.4 KB (277427 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:39:07 GMT
 
-#### `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+#### `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:38 GMT
--	Parent Layer: `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+-	Created: Thu, 07 Jan 2016 22:06:10 GMT
+-	Parent Layer: `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:03f01b5df3859d775ef5c36d4c417b132d9bbd963355db4437b2d49fc70435f2`
+-	v2 Blob: `sha256:45cca2aff21f4a391801267b5fb098eeec5c807958e68e99edf7795d3c0ef95b`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:24 GMT
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:15 GMT
 
-#### `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+#### `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+-	Created: Thu, 07 Jan 2016 22:06:11 GMT
+-	Parent Layer: `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+#### `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+
+```dockerfile
+RUN { \
+		echo '#!/bin/bash'; \
+		echo 'set -e'; \
+		echo; \
+		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
+	} > /usr/local/bin/docker-java-home \
+	&& chmod +x /usr/local/bin/docker-java-home
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:12 GMT
+-	Parent Layer: `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
+-	Docker Version: 1.8.3
+-	Virtual Size: 89.0 B
+-	v2 Blob: `sha256:b4e0097655688b9f63f510bc0c5af6fef4a830e860aab59a67e73fe82967a23a`
+-	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:06 GMT
+
+#### `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
+
+```dockerfile
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 
 ```dockerfile
 ENV JAVA_VERSION=8u66
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+#### `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+-	Created: Thu, 07 Jan 2016 22:06:14 GMT
+-	Parent Layer: `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+#### `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+-	Created: Thu, 07 Jan 2016 22:06:15 GMT
+-	Parent Layer: `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+#### `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 
 ```dockerfile
 RUN set -x \
@@ -1338,235 +1435,222 @@ RUN set -x \
 	&& apt-get install -y \
 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/*
+	&& rm -rf /var/lib/apt/lists/* \
+	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:36 GMT
--	Parent Layer: `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+-	Created: Thu, 07 Jan 2016 22:07:16 GMT
+-	Parent Layer: `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 140.0 MB (139969408 bytes)
--	v2 Blob: `sha256:2464058c255a21e49f60906f3d012584b359be2839a785c59ea2d216998eff90`
--	v2 Content-Length: 53.3 MB (53334451 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:58 GMT
+-	v2 Blob: `sha256:5d7743cf349ea019627308835763c00520815de228bf674c925882b411ed2b8d`
+-	v2 Content-Length: 53.3 MB (53334558 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:46 GMT
 
-#### `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
+#### `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:40 GMT
--	Parent Layer: `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+-	Created: Thu, 07 Jan 2016 22:07:20 GMT
+-	Parent Layer: `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 413.1 KB (413134 bytes)
--	v2 Blob: `sha256:20ae76d672fc2b0ab4c6698434e92773d1ce13708b12e71e9c2f70eef2e8e7fb`
--	v2 Content-Length: 278.4 KB (278362 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:32 GMT
+-	v2 Blob: `sha256:ea123b540978caae45fff07cd8fd90ca21626e4b63f493702187f856ff2d9f26`
+-	v2 Content-Length: 278.3 KB (278342 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:21 GMT
 
-#### `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends libfontconfig1 && rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Sat, 05 Dec 2015 18:32:08 GMT
--	Parent Layer: `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
--	Docker Version: 1.8.3
--	Virtual Size: 3.2 KB (3219 bytes)
--	v2 Blob: `sha256:d34e22497ac0e2e4213dbd2c55013b79d006d0ed06dd76650dc11f1b22bc943f`
--	v2 Content-Length: 624.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:29 GMT
-
-#### `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+#### `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 
 ```dockerfile
 MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 ```
 
--	Created: Sat, 05 Dec 2015 23:14:21 GMT
--	Parent Layer: `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
+-	Created: Fri, 08 Jan 2016 20:53:25 GMT
+-	Parent Layer: `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+#### `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 
 ```dockerfile
 RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:06 GMT
--	Parent Layer: `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+-	Created: Fri, 08 Jan 2016 20:54:13 GMT
+-	Parent Layer: `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 -	Docker Version: 1.8.3
 -	Virtual Size: 36.8 MB (36782900 bytes)
--	v2 Blob: `sha256:df77117089ff64908502a61112aae095fc1496b4b740360a05af9e70af0629b0`
--	v2 Content-Length: 10.1 MB (10072789 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:20 GMT
+-	v2 Blob: `sha256:a4def462424d838987f6e6383d29e4410d36cd823692c0477ed63ad24f8aaaee`
+-	v2 Content-Length: 10.1 MB (10072471 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:28:41 GMT
 
-#### `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+#### `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 
 ```dockerfile
 ENV SOLR_USER=solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:07 GMT
--	Parent Layer: `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+#### `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 
 ```dockerfile
 ENV SOLR_UID=8983
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:08 GMT
--	Parent Layer: `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+#### `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 
 ```dockerfile
 RUN groupadd -r $SOLR_USER &&   useradd -r -u $SOLR_UID -g $SOLR_USER $SOLR_USER
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:10 GMT
--	Parent Layer: `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+-	Created: Fri, 08 Jan 2016 20:54:17 GMT
+-	Parent Layer: `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.9 MB (2917498 bytes)
--	v2 Blob: `sha256:8831d45f6a2ec3f11c0b1b103aff64ffc3d7b198a531b035042c53dd6c0bdc5f`
--	v2 Content-Length: 4.6 KB (4638 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:06 GMT
+-	v2 Blob: `sha256:5cf9f7d30ffafb92a38b69e2945f36b36145d6f80f001eb2ad793e71e4e63293`
+-	v2 Content-Length: 4.6 KB (4645 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:27:30 GMT
 
-#### `a2da5c08b1378586b8d9934bc4a51c768fa56b56d5ad4460ac9ef2d8b5a040d3`
+#### `d80d5aa129f586964f6b7fc0c4955fcc5d3c9e427a021328f35a82fbf81462cc`
 
 ```dockerfile
 ENV SOLR_KEY=25C13C58807E90004AB8597AE48025ED13E57FFC
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:46 GMT
--	Parent Layer: `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+-	Created: Fri, 08 Jan 2016 20:56:13 GMT
+-	Parent Layer: `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `058637c69095515e382e6702e7bafe197e537267eff264262eeaebed187b65da`
+#### `eb711196b0be358ff33128ee9ae46effa4bd9b1fb9dd9d598e8c5f28e07b7961`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$SOLR_KEY"
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:48 GMT
--	Parent Layer: `a2da5c08b1378586b8d9934bc4a51c768fa56b56d5ad4460ac9ef2d8b5a040d3`
+-	Created: Fri, 08 Jan 2016 20:56:16 GMT
+-	Parent Layer: `d80d5aa129f586964f6b7fc0c4955fcc5d3c9e427a021328f35a82fbf81462cc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 15.9 KB (15900 bytes)
--	v2 Blob: `sha256:a94e38ed9c45b205b85e144861585bc9ade18d943a15bf2ed793e3c6c7764428`
+-	v2 Blob: `sha256:7f70baa568fce8f4a35e19710dad5be651f2d8235f47975af956e25d1e918f22`
 -	v2 Content-Length: 7.4 KB (7377 bytes)
--	v2 Last-Modified: Wed, 16 Dec 2015 01:06:26 GMT
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:35:01 GMT
 
-#### `bb0cb9cd397f37aeb86639a64c83731e2a24e73ae82f1c90606bf755bdda3668`
+#### `8f13baaa56016fe0997e267abf5c986ea1a6be9e6f6b49ac65b84d92d0d958ec`
 
 ```dockerfile
 ENV SOLR_VERSION=5.4.0
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:49 GMT
--	Parent Layer: `058637c69095515e382e6702e7bafe197e537267eff264262eeaebed187b65da`
+-	Created: Fri, 08 Jan 2016 20:56:16 GMT
+-	Parent Layer: `eb711196b0be358ff33128ee9ae46effa4bd9b1fb9dd9d598e8c5f28e07b7961`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a17d6dafa40f53f1e197a206238f00c1403517b6b7b97b66e1d305c36a698d19`
+#### `5dab7380793c9a71bf37727a072ed95bc3b165573e1c7f0bb2194221695a5e65`
 
 ```dockerfile
 ENV SOLR_SHA256=84c0f04a23047946f54618a092d4510d88d7205a756b948208de9e5afb42f7cd
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:49 GMT
--	Parent Layer: `bb0cb9cd397f37aeb86639a64c83731e2a24e73ae82f1c90606bf755bdda3668`
+-	Created: Fri, 08 Jan 2016 20:56:17 GMT
+-	Parent Layer: `8f13baaa56016fe0997e267abf5c986ea1a6be9e6f6b49ac65b84d92d0d958ec`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d55c4ca59292602d0955adeec0cdde9d79c4845b552d57eabed2c9e062637fbc`
+#### `657c1284fcaa4ab97bfac17e92cdaae1bff9bf8689b93ea050e1e8934bace53a`
 
 ```dockerfile
 RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz &&   wget -nv --output-document=/opt/solr.tgz.asc http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz.asc &&   gpg --verify /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   mkdir -p /opt/solr/server/solr/lib &&   chown -R $SOLR_USER:$SOLR_USER /opt/solr
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:04 GMT
--	Parent Layer: `a17d6dafa40f53f1e197a206238f00c1403517b6b7b97b66e1d305c36a698d19`
+-	Created: Fri, 08 Jan 2016 20:56:37 GMT
+-	Parent Layer: `5dab7380793c9a71bf37727a072ed95bc3b165573e1c7f0bb2194221695a5e65`
 -	Docker Version: 1.8.3
 -	Virtual Size: 215.5 MB (215451423 bytes)
--	v2 Blob: `sha256:952dbf8d99e50ff80f565a6310074babec9a11012cb62066be57111962ccb6ad`
--	v2 Content-Length: 136.3 MB (136302314 bytes)
--	v2 Last-Modified: Wed, 16 Dec 2015 01:06:00 GMT
+-	v2 Blob: `sha256:e6fe1a12e6597f3ffdea9de8a98e9f62f94a00f815c3e1c4cc21904666efffe4`
+-	v2 Content-Length: 136.3 MB (136302648 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:34:46 GMT
 
-#### `bf30442dd338e7c3eb24986a79a81717b45ae668aba2e518ca5af8c13cbb0557`
+#### `8278da0ff001cb40e0dc2e748fb63f4fb243f7c713e671ee5e16083327a0620e`
 
 ```dockerfile
 EXPOSE 8983/tcp
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:07 GMT
--	Parent Layer: `d55c4ca59292602d0955adeec0cdde9d79c4845b552d57eabed2c9e062637fbc`
+-	Created: Fri, 08 Jan 2016 20:56:40 GMT
+-	Parent Layer: `657c1284fcaa4ab97bfac17e92cdaae1bff9bf8689b93ea050e1e8934bace53a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `312e102e269d9f97d437854f767c5a641e4b590e044953c98f46e8808c1aa935`
+#### `e3abf9827948074f2db550e8592ec1fe0bea637505c3568aafb4d71c3251f3e9`
 
 ```dockerfile
 WORKDIR /opt/solr
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:08 GMT
--	Parent Layer: `bf30442dd338e7c3eb24986a79a81717b45ae668aba2e518ca5af8c13cbb0557`
+-	Created: Fri, 08 Jan 2016 20:56:41 GMT
+-	Parent Layer: `8278da0ff001cb40e0dc2e748fb63f4fb243f7c713e671ee5e16083327a0620e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fe2362b04946c0dbbd05ed974b84c5af07dbc18df9540d93974d0e247db36ba0`
+#### `7772983516c0e626611558d776c9b745e9797fa8e4ab25e238e0c5e66d22f8e9`
 
 ```dockerfile
 USER [solr]
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:08 GMT
--	Parent Layer: `312e102e269d9f97d437854f767c5a641e4b590e044953c98f46e8808c1aa935`
+-	Created: Fri, 08 Jan 2016 20:56:41 GMT
+-	Parent Layer: `e3abf9827948074f2db550e8592ec1fe0bea637505c3568aafb4d71c3251f3e9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d37768ee7f6207d495975ec892d72f51e6322a5053ec1ffda4a4fe01f027d691`
+#### `af352dd291bfb690c7345160dbea5048abe377aaed824f36dd457d4226362107`
 
 ```dockerfile
 CMD ["/opt/solr/bin/solr" "-f"]
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:09 GMT
--	Parent Layer: `fe2362b04946c0dbbd05ed974b84c5af07dbc18df9540d93974d0e247db36ba0`
+-	Created: Fri, 08 Jan 2016 20:56:42 GMT
+-	Parent Layer: `7772983516c0e626611558d776c9b745e9797fa8e4ab25e238e0c5e66d22f8e9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1576,42 +1660,42 @@ CMD ["/opt/solr/bin/solr" "-f"]
 ## `solr:5`
 
 ```console
-$ docker pull library/solr@sha256:ad38004c287bcd286a6d52892364a342d1cc677cb014b16d318a09b4edd4dd03
+$ docker pull library/solr@sha256:f83ac80df7e8947e78d27c508b0a18c9593c08f2348208d2de8854ff7c0c665b
 ```
 
--	Total Virtual Size: 565.6 MB (565643997 bytes)
--	Total v2 Content-Length: 270.2 MB (270161494 bytes)
+-	Total Virtual Size: 565.6 MB (565640867 bytes)
+-	Total v2 Content-Length: 270.2 MB (270161159 bytes)
 
-### Layers (26)
+### Layers (27)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+#### `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1621,99 +1705,133 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 04 Dec 2015 19:32:32 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 01:23:12 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.3 MB (44293503 bytes)
--	v2 Blob: `sha256:816152842605fe3ede1dc7c47f33e641f74cb4ae0d5c51a6c19cc8d85da934f3`
--	v2 Content-Length: 18.5 MB (18528629 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:56:45 GMT
+-	v2 Blob: `sha256:5a4693d81fc51b1594bf4437320c840a794a421a6bb71bb006d28a7394060722`
+-	v2 Content-Length: 18.5 MB (18528699 bytes)
+-	v2 Last-Modified: Thu, 07 Jan 2016 01:34:13 GMT
 
-#### `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+#### `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 18:19:56 GMT
--	Parent Layer: `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+-	Created: Thu, 07 Jan 2016 21:53:20 GMT
+-	Parent Layer: `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 681.7 KB (681684 bytes)
--	v2 Blob: `sha256:78b9e3c01ea48aaa24c846b994ce9cd08b89bbda022dd3af29795dad64206533`
--	v2 Content-Length: 277.4 KB (277355 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:28 GMT
+-	v2 Blob: `sha256:4eb8ae21c936eb5da653fdceace1aeb5fd4d3d031963d6f806d0b07113035ded`
+-	v2 Content-Length: 277.4 KB (277427 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:39:07 GMT
 
-#### `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+#### `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:38 GMT
--	Parent Layer: `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+-	Created: Thu, 07 Jan 2016 22:06:10 GMT
+-	Parent Layer: `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:03f01b5df3859d775ef5c36d4c417b132d9bbd963355db4437b2d49fc70435f2`
+-	v2 Blob: `sha256:45cca2aff21f4a391801267b5fb098eeec5c807958e68e99edf7795d3c0ef95b`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:24 GMT
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:15 GMT
 
-#### `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+#### `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+-	Created: Thu, 07 Jan 2016 22:06:11 GMT
+-	Parent Layer: `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+#### `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+
+```dockerfile
+RUN { \
+		echo '#!/bin/bash'; \
+		echo 'set -e'; \
+		echo; \
+		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
+	} > /usr/local/bin/docker-java-home \
+	&& chmod +x /usr/local/bin/docker-java-home
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:12 GMT
+-	Parent Layer: `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
+-	Docker Version: 1.8.3
+-	Virtual Size: 89.0 B
+-	v2 Blob: `sha256:b4e0097655688b9f63f510bc0c5af6fef4a830e860aab59a67e73fe82967a23a`
+-	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:06 GMT
+
+#### `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
+
+```dockerfile
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 
 ```dockerfile
 ENV JAVA_VERSION=8u66
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+#### `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+-	Created: Thu, 07 Jan 2016 22:06:14 GMT
+-	Parent Layer: `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+#### `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+-	Created: Thu, 07 Jan 2016 22:06:15 GMT
+-	Parent Layer: `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+#### `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 
 ```dockerfile
 RUN set -x \
@@ -1721,235 +1839,222 @@ RUN set -x \
 	&& apt-get install -y \
 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/*
+	&& rm -rf /var/lib/apt/lists/* \
+	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:36 GMT
--	Parent Layer: `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+-	Created: Thu, 07 Jan 2016 22:07:16 GMT
+-	Parent Layer: `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 140.0 MB (139969408 bytes)
--	v2 Blob: `sha256:2464058c255a21e49f60906f3d012584b359be2839a785c59ea2d216998eff90`
--	v2 Content-Length: 53.3 MB (53334451 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:58 GMT
+-	v2 Blob: `sha256:5d7743cf349ea019627308835763c00520815de228bf674c925882b411ed2b8d`
+-	v2 Content-Length: 53.3 MB (53334558 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:46 GMT
 
-#### `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
+#### `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:40 GMT
--	Parent Layer: `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+-	Created: Thu, 07 Jan 2016 22:07:20 GMT
+-	Parent Layer: `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 413.1 KB (413134 bytes)
--	v2 Blob: `sha256:20ae76d672fc2b0ab4c6698434e92773d1ce13708b12e71e9c2f70eef2e8e7fb`
--	v2 Content-Length: 278.4 KB (278362 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:32 GMT
+-	v2 Blob: `sha256:ea123b540978caae45fff07cd8fd90ca21626e4b63f493702187f856ff2d9f26`
+-	v2 Content-Length: 278.3 KB (278342 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:21 GMT
 
-#### `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends libfontconfig1 && rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Sat, 05 Dec 2015 18:32:08 GMT
--	Parent Layer: `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
--	Docker Version: 1.8.3
--	Virtual Size: 3.2 KB (3219 bytes)
--	v2 Blob: `sha256:d34e22497ac0e2e4213dbd2c55013b79d006d0ed06dd76650dc11f1b22bc943f`
--	v2 Content-Length: 624.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:29 GMT
-
-#### `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+#### `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 
 ```dockerfile
 MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 ```
 
--	Created: Sat, 05 Dec 2015 23:14:21 GMT
--	Parent Layer: `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
+-	Created: Fri, 08 Jan 2016 20:53:25 GMT
+-	Parent Layer: `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+#### `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 
 ```dockerfile
 RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:06 GMT
--	Parent Layer: `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+-	Created: Fri, 08 Jan 2016 20:54:13 GMT
+-	Parent Layer: `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 -	Docker Version: 1.8.3
 -	Virtual Size: 36.8 MB (36782900 bytes)
--	v2 Blob: `sha256:df77117089ff64908502a61112aae095fc1496b4b740360a05af9e70af0629b0`
--	v2 Content-Length: 10.1 MB (10072789 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:20 GMT
+-	v2 Blob: `sha256:a4def462424d838987f6e6383d29e4410d36cd823692c0477ed63ad24f8aaaee`
+-	v2 Content-Length: 10.1 MB (10072471 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:28:41 GMT
 
-#### `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+#### `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 
 ```dockerfile
 ENV SOLR_USER=solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:07 GMT
--	Parent Layer: `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+#### `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 
 ```dockerfile
 ENV SOLR_UID=8983
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:08 GMT
--	Parent Layer: `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+#### `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 
 ```dockerfile
 RUN groupadd -r $SOLR_USER &&   useradd -r -u $SOLR_UID -g $SOLR_USER $SOLR_USER
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:10 GMT
--	Parent Layer: `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+-	Created: Fri, 08 Jan 2016 20:54:17 GMT
+-	Parent Layer: `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.9 MB (2917498 bytes)
--	v2 Blob: `sha256:8831d45f6a2ec3f11c0b1b103aff64ffc3d7b198a531b035042c53dd6c0bdc5f`
--	v2 Content-Length: 4.6 KB (4638 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:06 GMT
+-	v2 Blob: `sha256:5cf9f7d30ffafb92a38b69e2945f36b36145d6f80f001eb2ad793e71e4e63293`
+-	v2 Content-Length: 4.6 KB (4645 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:27:30 GMT
 
-#### `a2da5c08b1378586b8d9934bc4a51c768fa56b56d5ad4460ac9ef2d8b5a040d3`
+#### `d80d5aa129f586964f6b7fc0c4955fcc5d3c9e427a021328f35a82fbf81462cc`
 
 ```dockerfile
 ENV SOLR_KEY=25C13C58807E90004AB8597AE48025ED13E57FFC
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:46 GMT
--	Parent Layer: `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+-	Created: Fri, 08 Jan 2016 20:56:13 GMT
+-	Parent Layer: `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `058637c69095515e382e6702e7bafe197e537267eff264262eeaebed187b65da`
+#### `eb711196b0be358ff33128ee9ae46effa4bd9b1fb9dd9d598e8c5f28e07b7961`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$SOLR_KEY"
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:48 GMT
--	Parent Layer: `a2da5c08b1378586b8d9934bc4a51c768fa56b56d5ad4460ac9ef2d8b5a040d3`
+-	Created: Fri, 08 Jan 2016 20:56:16 GMT
+-	Parent Layer: `d80d5aa129f586964f6b7fc0c4955fcc5d3c9e427a021328f35a82fbf81462cc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 15.9 KB (15900 bytes)
--	v2 Blob: `sha256:a94e38ed9c45b205b85e144861585bc9ade18d943a15bf2ed793e3c6c7764428`
+-	v2 Blob: `sha256:7f70baa568fce8f4a35e19710dad5be651f2d8235f47975af956e25d1e918f22`
 -	v2 Content-Length: 7.4 KB (7377 bytes)
--	v2 Last-Modified: Wed, 16 Dec 2015 01:06:26 GMT
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:35:01 GMT
 
-#### `bb0cb9cd397f37aeb86639a64c83731e2a24e73ae82f1c90606bf755bdda3668`
+#### `8f13baaa56016fe0997e267abf5c986ea1a6be9e6f6b49ac65b84d92d0d958ec`
 
 ```dockerfile
 ENV SOLR_VERSION=5.4.0
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:49 GMT
--	Parent Layer: `058637c69095515e382e6702e7bafe197e537267eff264262eeaebed187b65da`
+-	Created: Fri, 08 Jan 2016 20:56:16 GMT
+-	Parent Layer: `eb711196b0be358ff33128ee9ae46effa4bd9b1fb9dd9d598e8c5f28e07b7961`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a17d6dafa40f53f1e197a206238f00c1403517b6b7b97b66e1d305c36a698d19`
+#### `5dab7380793c9a71bf37727a072ed95bc3b165573e1c7f0bb2194221695a5e65`
 
 ```dockerfile
 ENV SOLR_SHA256=84c0f04a23047946f54618a092d4510d88d7205a756b948208de9e5afb42f7cd
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:49 GMT
--	Parent Layer: `bb0cb9cd397f37aeb86639a64c83731e2a24e73ae82f1c90606bf755bdda3668`
+-	Created: Fri, 08 Jan 2016 20:56:17 GMT
+-	Parent Layer: `8f13baaa56016fe0997e267abf5c986ea1a6be9e6f6b49ac65b84d92d0d958ec`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d55c4ca59292602d0955adeec0cdde9d79c4845b552d57eabed2c9e062637fbc`
+#### `657c1284fcaa4ab97bfac17e92cdaae1bff9bf8689b93ea050e1e8934bace53a`
 
 ```dockerfile
 RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz &&   wget -nv --output-document=/opt/solr.tgz.asc http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz.asc &&   gpg --verify /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   mkdir -p /opt/solr/server/solr/lib &&   chown -R $SOLR_USER:$SOLR_USER /opt/solr
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:04 GMT
--	Parent Layer: `a17d6dafa40f53f1e197a206238f00c1403517b6b7b97b66e1d305c36a698d19`
+-	Created: Fri, 08 Jan 2016 20:56:37 GMT
+-	Parent Layer: `5dab7380793c9a71bf37727a072ed95bc3b165573e1c7f0bb2194221695a5e65`
 -	Docker Version: 1.8.3
 -	Virtual Size: 215.5 MB (215451423 bytes)
--	v2 Blob: `sha256:952dbf8d99e50ff80f565a6310074babec9a11012cb62066be57111962ccb6ad`
--	v2 Content-Length: 136.3 MB (136302314 bytes)
--	v2 Last-Modified: Wed, 16 Dec 2015 01:06:00 GMT
+-	v2 Blob: `sha256:e6fe1a12e6597f3ffdea9de8a98e9f62f94a00f815c3e1c4cc21904666efffe4`
+-	v2 Content-Length: 136.3 MB (136302648 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:34:46 GMT
 
-#### `bf30442dd338e7c3eb24986a79a81717b45ae668aba2e518ca5af8c13cbb0557`
+#### `8278da0ff001cb40e0dc2e748fb63f4fb243f7c713e671ee5e16083327a0620e`
 
 ```dockerfile
 EXPOSE 8983/tcp
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:07 GMT
--	Parent Layer: `d55c4ca59292602d0955adeec0cdde9d79c4845b552d57eabed2c9e062637fbc`
+-	Created: Fri, 08 Jan 2016 20:56:40 GMT
+-	Parent Layer: `657c1284fcaa4ab97bfac17e92cdaae1bff9bf8689b93ea050e1e8934bace53a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `312e102e269d9f97d437854f767c5a641e4b590e044953c98f46e8808c1aa935`
+#### `e3abf9827948074f2db550e8592ec1fe0bea637505c3568aafb4d71c3251f3e9`
 
 ```dockerfile
 WORKDIR /opt/solr
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:08 GMT
--	Parent Layer: `bf30442dd338e7c3eb24986a79a81717b45ae668aba2e518ca5af8c13cbb0557`
+-	Created: Fri, 08 Jan 2016 20:56:41 GMT
+-	Parent Layer: `8278da0ff001cb40e0dc2e748fb63f4fb243f7c713e671ee5e16083327a0620e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fe2362b04946c0dbbd05ed974b84c5af07dbc18df9540d93974d0e247db36ba0`
+#### `7772983516c0e626611558d776c9b745e9797fa8e4ab25e238e0c5e66d22f8e9`
 
 ```dockerfile
 USER [solr]
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:08 GMT
--	Parent Layer: `312e102e269d9f97d437854f767c5a641e4b590e044953c98f46e8808c1aa935`
+-	Created: Fri, 08 Jan 2016 20:56:41 GMT
+-	Parent Layer: `e3abf9827948074f2db550e8592ec1fe0bea637505c3568aafb4d71c3251f3e9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d37768ee7f6207d495975ec892d72f51e6322a5053ec1ffda4a4fe01f027d691`
+#### `af352dd291bfb690c7345160dbea5048abe377aaed824f36dd457d4226362107`
 
 ```dockerfile
 CMD ["/opt/solr/bin/solr" "-f"]
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:09 GMT
--	Parent Layer: `fe2362b04946c0dbbd05ed974b84c5af07dbc18df9540d93974d0e247db36ba0`
+-	Created: Fri, 08 Jan 2016 20:56:42 GMT
+-	Parent Layer: `7772983516c0e626611558d776c9b745e9797fa8e4ab25e238e0c5e66d22f8e9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1959,42 +2064,42 @@ CMD ["/opt/solr/bin/solr" "-f"]
 ## `solr:latest`
 
 ```console
-$ docker pull library/solr@sha256:2c6912cf3a42defcde70f4e714bd6ea31d247b1b5badc883cedc9bae70a281a6
+$ docker pull library/solr@sha256:51120a4806e666b4802ce02c9b5a742c1897727ec22fa5c71cea6fda41e8e985
 ```
 
--	Total Virtual Size: 565.6 MB (565643997 bytes)
--	Total v2 Content-Length: 270.2 MB (270161494 bytes)
+-	Total Virtual Size: 565.6 MB (565640867 bytes)
+-	Total v2 Content-Length: 270.2 MB (270161159 bytes)
 
-### Layers (26)
+### Layers (27)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+#### `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2004,99 +2109,133 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Fri, 04 Dec 2015 19:32:32 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 01:23:12 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.3 MB (44293503 bytes)
--	v2 Blob: `sha256:816152842605fe3ede1dc7c47f33e641f74cb4ae0d5c51a6c19cc8d85da934f3`
--	v2 Content-Length: 18.5 MB (18528629 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:56:45 GMT
+-	v2 Blob: `sha256:5a4693d81fc51b1594bf4437320c840a794a421a6bb71bb006d28a7394060722`
+-	v2 Content-Length: 18.5 MB (18528699 bytes)
+-	v2 Last-Modified: Thu, 07 Jan 2016 01:34:13 GMT
 
-#### `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+#### `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 18:19:56 GMT
--	Parent Layer: `2e05a52ffd47e52854ef8b2d0989e08d41301926baf7b3aeb8d5c370e0b11566`
+-	Created: Thu, 07 Jan 2016 21:53:20 GMT
+-	Parent Layer: `706c9f1cbd8cd495ede6616faa1010202e8941e237666b2095b70a89c554c67e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 681.7 KB (681684 bytes)
--	v2 Blob: `sha256:78b9e3c01ea48aaa24c846b994ce9cd08b89bbda022dd3af29795dad64206533`
--	v2 Content-Length: 277.4 KB (277355 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:28 GMT
+-	v2 Blob: `sha256:4eb8ae21c936eb5da653fdceace1aeb5fd4d3d031963d6f806d0b07113035ded`
+-	v2 Content-Length: 277.4 KB (277427 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:39:07 GMT
 
-#### `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+#### `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:38 GMT
--	Parent Layer: `9fdaeae348bb9051720b1986577d0afefc59314837ded7de030221de1d684bcf`
+-	Created: Thu, 07 Jan 2016 22:06:10 GMT
+-	Parent Layer: `4abeef0c20e4e546eb19ec7625e318879e800f49cc431d772ab696ff6a8363f6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:03f01b5df3859d775ef5c36d4c417b132d9bbd963355db4437b2d49fc70435f2`
+-	v2 Blob: `sha256:45cca2aff21f4a391801267b5fb098eeec5c807958e68e99edf7795d3c0ef95b`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:06:24 GMT
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:15 GMT
 
-#### `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+#### `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `27c8fd8b3722563b0b88b9b77e094cdf290029b7a3299895668c34064afb1f0f`
+-	Created: Thu, 07 Jan 2016 22:06:11 GMT
+-	Parent Layer: `c5861d946ba3e3b137eb8f0eb94ecaecefdff0745d998bbd53cf395edf3384ae`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+#### `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+
+```dockerfile
+RUN { \
+		echo '#!/bin/bash'; \
+		echo 'set -e'; \
+		echo; \
+		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
+	} > /usr/local/bin/docker-java-home \
+	&& chmod +x /usr/local/bin/docker-java-home
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:12 GMT
+-	Parent Layer: `54c15543a6dcf7e1eca71aec7263742a6a112a321900c510e16b73ab51052cfb`
+-	Docker Version: 1.8.3
+-	Virtual Size: 89.0 B
+-	v2 Blob: `sha256:b4e0097655688b9f63f510bc0c5af6fef4a830e860aab59a67e73fe82967a23a`
+-	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:46:06 GMT
+
+#### `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
+
+```dockerfile
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+```
+
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `945fc26b7230e29aba5ea933d55348f2bf638a7367d5c0ba518e4bef43a9d56b`
+-	Docker Version: 1.8.3
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+#### `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 
 ```dockerfile
 ENV JAVA_VERSION=8u66
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:39 GMT
--	Parent Layer: `c8f7da0a5426ad17523fadb7a3ea4b1a07b5ef422b9b0cab6d0c0736142c8b1a`
+-	Created: Thu, 07 Jan 2016 22:06:13 GMT
+-	Parent Layer: `e7122512e63b343c72d5e6c2b887105c4b445a9360da854a6b0c2dfd015c3cf1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+#### `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u66-b17-1~bpo8+1
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `808b2dac07bc01b25dba82b059d77779824ba80627514097e41909e67e6427cf`
+-	Created: Thu, 07 Jan 2016 22:06:14 GMT
+-	Parent Layer: `cd9537ef22312d77757c2044bc7fe6ea990c900c477ee9519e4580663339fc25`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+#### `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Sat, 05 Dec 2015 18:30:40 GMT
--	Parent Layer: `cfb004923f4c74d60abd8b54959a710283d56cdb5da156f67bb3e7f1af9ad2c2`
+-	Created: Thu, 07 Jan 2016 22:06:15 GMT
+-	Parent Layer: `c7300f77c6869289a12967a218266392e3243fda2bdfe19fc1938a26e67dafbf`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+#### `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 
 ```dockerfile
 RUN set -x \
@@ -2104,235 +2243,222 @@ RUN set -x \
 	&& apt-get install -y \
 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
-	&& rm -rf /var/lib/apt/lists/*
+	&& rm -rf /var/lib/apt/lists/* \
+	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:36 GMT
--	Parent Layer: `037e4a7b8b8ea06e42ad562e6d5e2656a1c04142c04b80793698328ac0bfedc4`
+-	Created: Thu, 07 Jan 2016 22:07:16 GMT
+-	Parent Layer: `dc5b50dd49ca9840dd07ce25a1197c8970afae22e3c309c81d09dd51c8f673c1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 140.0 MB (139969408 bytes)
--	v2 Blob: `sha256:2464058c255a21e49f60906f3d012584b359be2839a785c59ea2d216998eff90`
--	v2 Content-Length: 53.3 MB (53334451 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:58 GMT
+-	v2 Blob: `sha256:5d7743cf349ea019627308835763c00520815de228bf674c925882b411ed2b8d`
+-	v2 Content-Length: 53.3 MB (53334558 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:46 GMT
 
-#### `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
+#### `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Sat, 05 Dec 2015 18:31:40 GMT
--	Parent Layer: `baa5ed6bf5a91b2a8075c1c97382839eac61ea04cf597893e5f53d5e2ae09238`
+-	Created: Thu, 07 Jan 2016 22:07:20 GMT
+-	Parent Layer: `57fbdb82e383fc0a9f278dd1ad0f465ef6a917bad2856a95fade534e3833dbf6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 413.1 KB (413134 bytes)
--	v2 Blob: `sha256:20ae76d672fc2b0ab4c6698434e92773d1ce13708b12e71e9c2f70eef2e8e7fb`
--	v2 Content-Length: 278.4 KB (278362 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:32 GMT
+-	v2 Blob: `sha256:ea123b540978caae45fff07cd8fd90ca21626e4b63f493702187f856ff2d9f26`
+-	v2 Content-Length: 278.3 KB (278342 bytes)
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:45:21 GMT
 
-#### `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends libfontconfig1 && rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Sat, 05 Dec 2015 18:32:08 GMT
--	Parent Layer: `33e0720ac4f87a636eb4ef6b8be925285bbe5fdf13dabc17dfde7f18b566e91f`
--	Docker Version: 1.8.3
--	Virtual Size: 3.2 KB (3219 bytes)
--	v2 Blob: `sha256:d34e22497ac0e2e4213dbd2c55013b79d006d0ed06dd76650dc11f1b22bc943f`
--	v2 Content-Length: 624.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:05:29 GMT
-
-#### `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+#### `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 
 ```dockerfile
 MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 ```
 
--	Created: Sat, 05 Dec 2015 23:14:21 GMT
--	Parent Layer: `abd304f6890769a26bfebc301d8c3d3521d5b8ade78da9caebc95c0852968feb`
+-	Created: Fri, 08 Jan 2016 20:53:25 GMT
+-	Parent Layer: `304b88f144f5cdb5548342ed3621f7dcd412e679c4c78b4c2bd0547e6b6b1962`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+#### `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 
 ```dockerfile
 RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:06 GMT
--	Parent Layer: `eec98bf98d8b6e87a0cc0285eb34c7dbe754f97ce47dd0c49506ddc26c22e7e2`
+-	Created: Fri, 08 Jan 2016 20:54:13 GMT
+-	Parent Layer: `bbb24998a0172b9e6ef7583384b92e9db6c3fcd37161be2c6697830be4a49f76`
 -	Docker Version: 1.8.3
 -	Virtual Size: 36.8 MB (36782900 bytes)
--	v2 Blob: `sha256:df77117089ff64908502a61112aae095fc1496b4b740360a05af9e70af0629b0`
--	v2 Content-Length: 10.1 MB (10072789 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:20 GMT
+-	v2 Blob: `sha256:a4def462424d838987f6e6383d29e4410d36cd823692c0477ed63ad24f8aaaee`
+-	v2 Content-Length: 10.1 MB (10072471 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:28:41 GMT
 
-#### `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+#### `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 
 ```dockerfile
 ENV SOLR_USER=solr
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:07 GMT
--	Parent Layer: `8bf84708922a9bd6312fc3d5bbdaf40414bdf7b1c8a81477355c73d836a91662`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `63a2b810b45340280ff493cb80e583683b2d77cb22359116c2c0b3e70664e64f`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+#### `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 
 ```dockerfile
 ENV SOLR_UID=8983
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:08 GMT
--	Parent Layer: `51d3b1dbc5a47e32806c7b336d54c6d46e71f4a0cfea21879ca0b6ce626edb82`
+-	Created: Fri, 08 Jan 2016 20:54:15 GMT
+-	Parent Layer: `bc2cad52f0368508abfab9c1558d46736d3237055719836a7b5800257a241bbc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+#### `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 
 ```dockerfile
 RUN groupadd -r $SOLR_USER &&   useradd -r -u $SOLR_UID -g $SOLR_USER $SOLR_USER
 ```
 
--	Created: Sat, 05 Dec 2015 23:15:10 GMT
--	Parent Layer: `f67b9469e8b6a678afe28c81b4e3eda1798219d69888e88bf5d8f0311946674f`
+-	Created: Fri, 08 Jan 2016 20:54:17 GMT
+-	Parent Layer: `0124fea4f7861f20f454d00e8892b2806b21d8c9120ef67e8bbdbbbb930f5a35`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.9 MB (2917498 bytes)
--	v2 Blob: `sha256:8831d45f6a2ec3f11c0b1b103aff64ffc3d7b198a531b035042c53dd6c0bdc5f`
--	v2 Content-Length: 4.6 KB (4638 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:18:06 GMT
+-	v2 Blob: `sha256:5cf9f7d30ffafb92a38b69e2945f36b36145d6f80f001eb2ad793e71e4e63293`
+-	v2 Content-Length: 4.6 KB (4645 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:27:30 GMT
 
-#### `a2da5c08b1378586b8d9934bc4a51c768fa56b56d5ad4460ac9ef2d8b5a040d3`
+#### `d80d5aa129f586964f6b7fc0c4955fcc5d3c9e427a021328f35a82fbf81462cc`
 
 ```dockerfile
 ENV SOLR_KEY=25C13C58807E90004AB8597AE48025ED13E57FFC
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:46 GMT
--	Parent Layer: `381f4dba6842b4c541a9b8c8c0162353d0c331afe55e66cf78aa59321f862eb2`
+-	Created: Fri, 08 Jan 2016 20:56:13 GMT
+-	Parent Layer: `1f8017b608a826ab0be0880ec850a7dba33e49e50a379058e5bf1c1d8eea3707`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `058637c69095515e382e6702e7bafe197e537267eff264262eeaebed187b65da`
+#### `eb711196b0be358ff33128ee9ae46effa4bd9b1fb9dd9d598e8c5f28e07b7961`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$SOLR_KEY"
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:48 GMT
--	Parent Layer: `a2da5c08b1378586b8d9934bc4a51c768fa56b56d5ad4460ac9ef2d8b5a040d3`
+-	Created: Fri, 08 Jan 2016 20:56:16 GMT
+-	Parent Layer: `d80d5aa129f586964f6b7fc0c4955fcc5d3c9e427a021328f35a82fbf81462cc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 15.9 KB (15900 bytes)
--	v2 Blob: `sha256:a94e38ed9c45b205b85e144861585bc9ade18d943a15bf2ed793e3c6c7764428`
+-	v2 Blob: `sha256:7f70baa568fce8f4a35e19710dad5be651f2d8235f47975af956e25d1e918f22`
 -	v2 Content-Length: 7.4 KB (7377 bytes)
--	v2 Last-Modified: Wed, 16 Dec 2015 01:06:26 GMT
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:35:01 GMT
 
-#### `bb0cb9cd397f37aeb86639a64c83731e2a24e73ae82f1c90606bf755bdda3668`
+#### `8f13baaa56016fe0997e267abf5c986ea1a6be9e6f6b49ac65b84d92d0d958ec`
 
 ```dockerfile
 ENV SOLR_VERSION=5.4.0
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:49 GMT
--	Parent Layer: `058637c69095515e382e6702e7bafe197e537267eff264262eeaebed187b65da`
+-	Created: Fri, 08 Jan 2016 20:56:16 GMT
+-	Parent Layer: `eb711196b0be358ff33128ee9ae46effa4bd9b1fb9dd9d598e8c5f28e07b7961`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a17d6dafa40f53f1e197a206238f00c1403517b6b7b97b66e1d305c36a698d19`
+#### `5dab7380793c9a71bf37727a072ed95bc3b165573e1c7f0bb2194221695a5e65`
 
 ```dockerfile
 ENV SOLR_SHA256=84c0f04a23047946f54618a092d4510d88d7205a756b948208de9e5afb42f7cd
 ```
 
--	Created: Wed, 16 Dec 2015 01:01:49 GMT
--	Parent Layer: `bb0cb9cd397f37aeb86639a64c83731e2a24e73ae82f1c90606bf755bdda3668`
+-	Created: Fri, 08 Jan 2016 20:56:17 GMT
+-	Parent Layer: `8f13baaa56016fe0997e267abf5c986ea1a6be9e6f6b49ac65b84d92d0d958ec`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d55c4ca59292602d0955adeec0cdde9d79c4845b552d57eabed2c9e062637fbc`
+#### `657c1284fcaa4ab97bfac17e92cdaae1bff9bf8689b93ea050e1e8934bace53a`
 
 ```dockerfile
 RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz &&   wget -nv --output-document=/opt/solr.tgz.asc http://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz.asc &&   gpg --verify /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   mkdir -p /opt/solr/server/solr/lib &&   chown -R $SOLR_USER:$SOLR_USER /opt/solr
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:04 GMT
--	Parent Layer: `a17d6dafa40f53f1e197a206238f00c1403517b6b7b97b66e1d305c36a698d19`
+-	Created: Fri, 08 Jan 2016 20:56:37 GMT
+-	Parent Layer: `5dab7380793c9a71bf37727a072ed95bc3b165573e1c7f0bb2194221695a5e65`
 -	Docker Version: 1.8.3
 -	Virtual Size: 215.5 MB (215451423 bytes)
--	v2 Blob: `sha256:952dbf8d99e50ff80f565a6310074babec9a11012cb62066be57111962ccb6ad`
--	v2 Content-Length: 136.3 MB (136302314 bytes)
--	v2 Last-Modified: Wed, 16 Dec 2015 01:06:00 GMT
+-	v2 Blob: `sha256:e6fe1a12e6597f3ffdea9de8a98e9f62f94a00f815c3e1c4cc21904666efffe4`
+-	v2 Content-Length: 136.3 MB (136302648 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 03:34:46 GMT
 
-#### `bf30442dd338e7c3eb24986a79a81717b45ae668aba2e518ca5af8c13cbb0557`
+#### `8278da0ff001cb40e0dc2e748fb63f4fb243f7c713e671ee5e16083327a0620e`
 
 ```dockerfile
 EXPOSE 8983/tcp
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:07 GMT
--	Parent Layer: `d55c4ca59292602d0955adeec0cdde9d79c4845b552d57eabed2c9e062637fbc`
+-	Created: Fri, 08 Jan 2016 20:56:40 GMT
+-	Parent Layer: `657c1284fcaa4ab97bfac17e92cdaae1bff9bf8689b93ea050e1e8934bace53a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `312e102e269d9f97d437854f767c5a641e4b590e044953c98f46e8808c1aa935`
+#### `e3abf9827948074f2db550e8592ec1fe0bea637505c3568aafb4d71c3251f3e9`
 
 ```dockerfile
 WORKDIR /opt/solr
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:08 GMT
--	Parent Layer: `bf30442dd338e7c3eb24986a79a81717b45ae668aba2e518ca5af8c13cbb0557`
+-	Created: Fri, 08 Jan 2016 20:56:41 GMT
+-	Parent Layer: `8278da0ff001cb40e0dc2e748fb63f4fb243f7c713e671ee5e16083327a0620e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `fe2362b04946c0dbbd05ed974b84c5af07dbc18df9540d93974d0e247db36ba0`
+#### `7772983516c0e626611558d776c9b745e9797fa8e4ab25e238e0c5e66d22f8e9`
 
 ```dockerfile
 USER [solr]
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:08 GMT
--	Parent Layer: `312e102e269d9f97d437854f767c5a641e4b590e044953c98f46e8808c1aa935`
+-	Created: Fri, 08 Jan 2016 20:56:41 GMT
+-	Parent Layer: `e3abf9827948074f2db550e8592ec1fe0bea637505c3568aafb4d71c3251f3e9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d37768ee7f6207d495975ec892d72f51e6322a5053ec1ffda4a4fe01f027d691`
+#### `af352dd291bfb690c7345160dbea5048abe377aaed824f36dd457d4226362107`
 
 ```dockerfile
 CMD ["/opt/solr/bin/solr" "-f"]
 ```
 
--	Created: Wed, 16 Dec 2015 01:02:09 GMT
--	Parent Layer: `fe2362b04946c0dbbd05ed974b84c5af07dbc18df9540d93974d0e247db36ba0`
+-	Created: Fri, 08 Jan 2016 20:56:42 GMT
+-	Parent Layer: `7772983516c0e626611558d776c9b745e9797fa8e4ab25e238e0c5e66d22f8e9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
