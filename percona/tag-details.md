@@ -12,126 +12,126 @@
 ## `percona:5.5.46`
 
 ```console
-$ docker pull library/percona@sha256:97772b5d9c5bbd11c72f5344c0f9d129dd9af8f8715104797b1d0b2790c89e37
+$ docker pull library/percona@sha256:3cf3066e9ffb7003703864067b06586d28dc2ce8c9b6d0192860472556e08a23
 ```
 
 -	Total Virtual Size: 284.0 MB (283955071 bytes)
--	Total v2 Content-Length: 97.4 MB (97426871 bytes)
+-	Total v2 Content-Length: 97.4 MB (97426275 bytes)
 
 ### Layers (15)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+#### `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 
 ```dockerfile
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:39 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 16:40:16 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 330.4 KB (330368 bytes)
--	v2 Blob: `sha256:01588229585e588f32e3836fec717035814b21b3fbe4872e7141bb0b366b019b`
--	v2 Content-Length: 2.0 KB (2046 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:43 GMT
+-	v2 Blob: `sha256:a3d65163f3cefcf13255789d8243b284304dc83f62800e3d023e09550ffef45c`
+-	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:28 GMT
 
-#### `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+#### `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 
 ```dockerfile
 RUN mkdir /docker-entrypoint-initdb.d
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:40 GMT
--	Parent Layer: `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+-	Created: Thu, 07 Jan 2016 16:40:17 GMT
+-	Parent Layer: `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:ada32b818a1a4129d6ff4539c7f4a8b5b7738d3d71fed510ac87477b9950c0c4`
--	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:40 GMT
+-	v2 Blob: `sha256:fad16773a430d74c603c4b2dac03c06ae543f4b9d1cb1386f4a5e662044ccb5d`
+-	v2 Content-Length: 114.0 B
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:25 GMT
 
-#### `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+#### `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:47 GMT
--	Parent Layer: `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+-	Created: Thu, 07 Jan 2016 17:48:23 GMT
+-	Parent Layer: `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 -	Docker Version: 1.8.3
 -	Virtual Size: 1.2 KB (1186 bytes)
--	v2 Blob: `sha256:b90a0367378f1b40a104c35521e402728d3f8dc3fd2344332a7a8579b3c25eac`
--	v2 Content-Length: 1.4 KB (1438 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:37 GMT
+-	v2 Blob: `sha256:11eb75c39d3c87b7097a16dd6459241aac699c3c549e8a59d4c5380c7a29d0d1`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:41 GMT
 
-#### `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+#### `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 
 ```dockerfile
 RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d/percona.list
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:49 GMT
--	Parent Layer: `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+-	Created: Thu, 07 Jan 2016 17:48:24 GMT
+-	Parent Layer: `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.0 B
--	v2 Blob: `sha256:cb9a3e19930f957672d1178f8a3ec4f54c3da8fb6fdecb0b32b72a6de53c8c2e`
--	v2 Content-Length: 210.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:34 GMT
+-	v2 Blob: `sha256:9694e6fac5eb01dabd4f4eb6503e978465c2c7bb2c5aad7ac14962c3a5866b99`
+-	v2 Content-Length: 208.0 B
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:38 GMT
 
-#### `3e09c01e8a5f63bb1228b3972165309b86e2ebe15caefd0371107f639e7763f6`
+#### `8ec54c713a192e0c8edffa4a280a1a1c2b4af043ca9ff1ffcdc937636f1d793d`
 
 ```dockerfile
 ENV PERCONA_MAJOR=5.5
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:49 GMT
--	Parent Layer: `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+-	Created: Thu, 07 Jan 2016 17:48:25 GMT
+-	Parent Layer: `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4938cb87f6aae7832ba8f94d1a5877fc0cf5938cd24506ecc6c294a868823879`
+#### `5793d5305c5f925cc31367ff5ad1893950d46ad9ac40b0d2d4f5c3bf8ead0112`
 
 ```dockerfile
 ENV PERCONA_VERSION=5.5.46-rel37.6-1.jessie
 ```
 
--	Created: Mon, 07 Dec 2015 18:56:03 GMT
--	Parent Layer: `3e09c01e8a5f63bb1228b3972165309b86e2ebe15caefd0371107f639e7763f6`
+-	Created: Thu, 07 Jan 2016 17:48:25 GMT
+-	Parent Layer: `8ec54c713a192e0c8edffa4a280a1a1c2b4af043ca9ff1ffcdc937636f1d793d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0c514324cdf30b569c8b49e63ff348028b5985b038c136e1fa74be5908c2547b`
+#### `2648efdf6068ce1a5c056cbe1d640415977e051b292a93194fd5e1d0e74f2c48`
 
 ```dockerfile
 RUN { \
@@ -146,15 +146,15 @@ RUN { \
 	&& mkdir /var/lib/mysql
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:30 GMT
--	Parent Layer: `4938cb87f6aae7832ba8f94d1a5877fc0cf5938cd24506ecc6c294a868823879`
+-	Created: Thu, 07 Jan 2016 17:49:49 GMT
+-	Parent Layer: `5793d5305c5f925cc31367ff5ad1893950d46ad9ac40b0d2d4f5c3bf8ead0112`
 -	Docker Version: 1.8.3
 -	Virtual Size: 158.5 MB (158501966 bytes)
--	v2 Blob: `sha256:76f16710620a8c7ca3ce4451e0c7132bb71ebd2f1b77712826740eb730657886`
--	v2 Content-Length: 46.1 MB (46065385 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:17 GMT
+-	v2 Blob: `sha256:4d82b730dd5c9f7f9c24307cb73a268e3b19e386d6fdf5ba7185878671a424ec`
+-	v2 Content-Length: 46.1 MB (46065035 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:25 GMT
 
-#### `85a148f4fe02cd1155df308ad5d7daa622c6e9564d46e173f8669fb8134448a3`
+#### `b9fc7526464e5cd7d8ba4c2bdd478728fd0b00d07e7c1bd8acf8572e723203e8`
 
 ```dockerfile
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
@@ -162,78 +162,78 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:33 GMT
--	Parent Layer: `0c514324cdf30b569c8b49e63ff348028b5985b038c136e1fa74be5908c2547b`
+-	Created: Thu, 07 Jan 2016 17:49:52 GMT
+-	Parent Layer: `2648efdf6068ce1a5c056cbe1d640415977e051b292a93194fd5e1d0e74f2c48`
 -	Docker Version: 1.8.3
 -	Virtual Size: 3.6 KB (3569 bytes)
--	v2 Blob: `sha256:7d4d65454f6a3148c04902abd9f0b47e3ece0c5fc365837f304dbb74ecd22621`
+-	v2 Blob: `sha256:f5e34f53ca83da10dc315f0ad77662104eabd44af22288e57640fc1feffb1052`
 -	v2 Content-Length: 1.9 KB (1889 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:13:53 GMT
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:18:58 GMT
 
-#### `c92fd2466a19a3d1060583f8c2cf8a33ceebdd74cac0cd7e050e73b89c196fae`
+#### `2cb4bb0179f029ccaf1820e930e31538833e86825d6798875f1c4e86f3cc6621`
 
 ```dockerfile
 VOLUME [/var/lib/mysql /var/log/mysql]
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:34 GMT
--	Parent Layer: `85a148f4fe02cd1155df308ad5d7daa622c6e9564d46e173f8669fb8134448a3`
+-	Created: Thu, 07 Jan 2016 17:49:53 GMT
+-	Parent Layer: `b9fc7526464e5cd7d8ba4c2bdd478728fd0b00d07e7c1bd8acf8572e723203e8`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `07624fe53b5f0fe96818f61d923e5516fe07814fb4fd70a106b33f1d254021be`
+#### `57a4c9a2dc14ca4edba363ba4e14c911897ef4440c670fe1ffcbb3c92893a257`
 
 ```dockerfile
 COPY file:653d148324ac92cb1ff8c2416ff37a80c47a210c572f0cd9c1f6b34bd6e5dbd8 in /
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:35 GMT
--	Parent Layer: `c92fd2466a19a3d1060583f8c2cf8a33ceebdd74cac0cd7e050e73b89c196fae`
+-	Created: Thu, 07 Jan 2016 17:49:53 GMT
+-	Parent Layer: `2cb4bb0179f029ccaf1820e930e31538833e86825d6798875f1c4e86f3cc6621`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.7 KB (2671 bytes)
 -	v2 Blob: `sha256:15ab927426cc47c9b689fdf4d1361c39133d2d5c18276a2d2ef9272ef1af71f4`
 -	v2 Content-Length: 1.3 KB (1310 bytes)
 -	v2 Last-Modified: Fri, 23 Oct 2015 01:05:51 GMT
 
-#### `8fdd4b5e739aebb78ba7f12cfd5046f1b9a404696a6e983248ac14a1381ad855`
+#### `b0ba495aff7035bf7f6acac11544d45de392ee833f5586f074c58c49223bac50`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:35 GMT
--	Parent Layer: `07624fe53b5f0fe96818f61d923e5516fe07814fb4fd70a106b33f1d254021be`
+-	Created: Thu, 07 Jan 2016 17:49:54 GMT
+-	Parent Layer: `57a4c9a2dc14ca4edba363ba4e14c911897ef4440c670fe1ffcbb3c92893a257`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9ca7379ecbb815f60ab65908b82927725155969c6e796a3e0e2d1cfebb553223`
+#### `eb94079e5c578386e85a1f836279c97b5cedf2a8b116c21b9bfa1848138029dc`
 
 ```dockerfile
 EXPOSE 3306/tcp
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:36 GMT
--	Parent Layer: `8fdd4b5e739aebb78ba7f12cfd5046f1b9a404696a6e983248ac14a1381ad855`
+-	Created: Thu, 07 Jan 2016 17:49:55 GMT
+-	Parent Layer: `b0ba495aff7035bf7f6acac11544d45de392ee833f5586f074c58c49223bac50`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a024c0b079b825a9606017ceebc52c2922bb55c6494017b78cb9ec047b4c0824`
+#### `97a291771ec9f880bf31503260c531c07cb67bbbd3f8d9169bcb514cfebe1a8c`
 
 ```dockerfile
 CMD ["mysqld"]
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:36 GMT
--	Parent Layer: `9ca7379ecbb815f60ab65908b82927725155969c6e796a3e0e2d1cfebb553223`
+-	Created: Thu, 07 Jan 2016 17:49:55 GMT
+-	Parent Layer: `eb94079e5c578386e85a1f836279c97b5cedf2a8b116c21b9bfa1848138029dc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -243,126 +243,126 @@ CMD ["mysqld"]
 ## `percona:5.5`
 
 ```console
-$ docker pull library/percona@sha256:81519c426de36a044ccd30dd9ff91e144f4472191993280ccb8567825b28f9f9
+$ docker pull library/percona@sha256:08fd3ba18ddb6b1884bee42088cc69af1129d378bbe79c28dade988106330a92
 ```
 
 -	Total Virtual Size: 284.0 MB (283955071 bytes)
--	Total v2 Content-Length: 97.4 MB (97426871 bytes)
+-	Total v2 Content-Length: 97.4 MB (97426275 bytes)
 
 ### Layers (15)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+#### `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 
 ```dockerfile
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:39 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 16:40:16 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 330.4 KB (330368 bytes)
--	v2 Blob: `sha256:01588229585e588f32e3836fec717035814b21b3fbe4872e7141bb0b366b019b`
--	v2 Content-Length: 2.0 KB (2046 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:43 GMT
+-	v2 Blob: `sha256:a3d65163f3cefcf13255789d8243b284304dc83f62800e3d023e09550ffef45c`
+-	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:28 GMT
 
-#### `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+#### `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 
 ```dockerfile
 RUN mkdir /docker-entrypoint-initdb.d
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:40 GMT
--	Parent Layer: `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+-	Created: Thu, 07 Jan 2016 16:40:17 GMT
+-	Parent Layer: `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:ada32b818a1a4129d6ff4539c7f4a8b5b7738d3d71fed510ac87477b9950c0c4`
--	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:40 GMT
+-	v2 Blob: `sha256:fad16773a430d74c603c4b2dac03c06ae543f4b9d1cb1386f4a5e662044ccb5d`
+-	v2 Content-Length: 114.0 B
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:25 GMT
 
-#### `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+#### `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:47 GMT
--	Parent Layer: `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+-	Created: Thu, 07 Jan 2016 17:48:23 GMT
+-	Parent Layer: `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 -	Docker Version: 1.8.3
 -	Virtual Size: 1.2 KB (1186 bytes)
--	v2 Blob: `sha256:b90a0367378f1b40a104c35521e402728d3f8dc3fd2344332a7a8579b3c25eac`
--	v2 Content-Length: 1.4 KB (1438 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:37 GMT
+-	v2 Blob: `sha256:11eb75c39d3c87b7097a16dd6459241aac699c3c549e8a59d4c5380c7a29d0d1`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:41 GMT
 
-#### `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+#### `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 
 ```dockerfile
 RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d/percona.list
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:49 GMT
--	Parent Layer: `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+-	Created: Thu, 07 Jan 2016 17:48:24 GMT
+-	Parent Layer: `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.0 B
--	v2 Blob: `sha256:cb9a3e19930f957672d1178f8a3ec4f54c3da8fb6fdecb0b32b72a6de53c8c2e`
--	v2 Content-Length: 210.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:34 GMT
+-	v2 Blob: `sha256:9694e6fac5eb01dabd4f4eb6503e978465c2c7bb2c5aad7ac14962c3a5866b99`
+-	v2 Content-Length: 208.0 B
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:38 GMT
 
-#### `3e09c01e8a5f63bb1228b3972165309b86e2ebe15caefd0371107f639e7763f6`
+#### `8ec54c713a192e0c8edffa4a280a1a1c2b4af043ca9ff1ffcdc937636f1d793d`
 
 ```dockerfile
 ENV PERCONA_MAJOR=5.5
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:49 GMT
--	Parent Layer: `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+-	Created: Thu, 07 Jan 2016 17:48:25 GMT
+-	Parent Layer: `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4938cb87f6aae7832ba8f94d1a5877fc0cf5938cd24506ecc6c294a868823879`
+#### `5793d5305c5f925cc31367ff5ad1893950d46ad9ac40b0d2d4f5c3bf8ead0112`
 
 ```dockerfile
 ENV PERCONA_VERSION=5.5.46-rel37.6-1.jessie
 ```
 
--	Created: Mon, 07 Dec 2015 18:56:03 GMT
--	Parent Layer: `3e09c01e8a5f63bb1228b3972165309b86e2ebe15caefd0371107f639e7763f6`
+-	Created: Thu, 07 Jan 2016 17:48:25 GMT
+-	Parent Layer: `8ec54c713a192e0c8edffa4a280a1a1c2b4af043ca9ff1ffcdc937636f1d793d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0c514324cdf30b569c8b49e63ff348028b5985b038c136e1fa74be5908c2547b`
+#### `2648efdf6068ce1a5c056cbe1d640415977e051b292a93194fd5e1d0e74f2c48`
 
 ```dockerfile
 RUN { \
@@ -377,15 +377,15 @@ RUN { \
 	&& mkdir /var/lib/mysql
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:30 GMT
--	Parent Layer: `4938cb87f6aae7832ba8f94d1a5877fc0cf5938cd24506ecc6c294a868823879`
+-	Created: Thu, 07 Jan 2016 17:49:49 GMT
+-	Parent Layer: `5793d5305c5f925cc31367ff5ad1893950d46ad9ac40b0d2d4f5c3bf8ead0112`
 -	Docker Version: 1.8.3
 -	Virtual Size: 158.5 MB (158501966 bytes)
--	v2 Blob: `sha256:76f16710620a8c7ca3ce4451e0c7132bb71ebd2f1b77712826740eb730657886`
--	v2 Content-Length: 46.1 MB (46065385 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:17 GMT
+-	v2 Blob: `sha256:4d82b730dd5c9f7f9c24307cb73a268e3b19e386d6fdf5ba7185878671a424ec`
+-	v2 Content-Length: 46.1 MB (46065035 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:25 GMT
 
-#### `85a148f4fe02cd1155df308ad5d7daa622c6e9564d46e173f8669fb8134448a3`
+#### `b9fc7526464e5cd7d8ba4c2bdd478728fd0b00d07e7c1bd8acf8572e723203e8`
 
 ```dockerfile
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
@@ -393,78 +393,78 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:33 GMT
--	Parent Layer: `0c514324cdf30b569c8b49e63ff348028b5985b038c136e1fa74be5908c2547b`
+-	Created: Thu, 07 Jan 2016 17:49:52 GMT
+-	Parent Layer: `2648efdf6068ce1a5c056cbe1d640415977e051b292a93194fd5e1d0e74f2c48`
 -	Docker Version: 1.8.3
 -	Virtual Size: 3.6 KB (3569 bytes)
--	v2 Blob: `sha256:7d4d65454f6a3148c04902abd9f0b47e3ece0c5fc365837f304dbb74ecd22621`
+-	v2 Blob: `sha256:f5e34f53ca83da10dc315f0ad77662104eabd44af22288e57640fc1feffb1052`
 -	v2 Content-Length: 1.9 KB (1889 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:13:53 GMT
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:18:58 GMT
 
-#### `c92fd2466a19a3d1060583f8c2cf8a33ceebdd74cac0cd7e050e73b89c196fae`
+#### `2cb4bb0179f029ccaf1820e930e31538833e86825d6798875f1c4e86f3cc6621`
 
 ```dockerfile
 VOLUME [/var/lib/mysql /var/log/mysql]
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:34 GMT
--	Parent Layer: `85a148f4fe02cd1155df308ad5d7daa622c6e9564d46e173f8669fb8134448a3`
+-	Created: Thu, 07 Jan 2016 17:49:53 GMT
+-	Parent Layer: `b9fc7526464e5cd7d8ba4c2bdd478728fd0b00d07e7c1bd8acf8572e723203e8`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `07624fe53b5f0fe96818f61d923e5516fe07814fb4fd70a106b33f1d254021be`
+#### `57a4c9a2dc14ca4edba363ba4e14c911897ef4440c670fe1ffcbb3c92893a257`
 
 ```dockerfile
 COPY file:653d148324ac92cb1ff8c2416ff37a80c47a210c572f0cd9c1f6b34bd6e5dbd8 in /
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:35 GMT
--	Parent Layer: `c92fd2466a19a3d1060583f8c2cf8a33ceebdd74cac0cd7e050e73b89c196fae`
+-	Created: Thu, 07 Jan 2016 17:49:53 GMT
+-	Parent Layer: `2cb4bb0179f029ccaf1820e930e31538833e86825d6798875f1c4e86f3cc6621`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.7 KB (2671 bytes)
 -	v2 Blob: `sha256:15ab927426cc47c9b689fdf4d1361c39133d2d5c18276a2d2ef9272ef1af71f4`
 -	v2 Content-Length: 1.3 KB (1310 bytes)
 -	v2 Last-Modified: Fri, 23 Oct 2015 01:05:51 GMT
 
-#### `8fdd4b5e739aebb78ba7f12cfd5046f1b9a404696a6e983248ac14a1381ad855`
+#### `b0ba495aff7035bf7f6acac11544d45de392ee833f5586f074c58c49223bac50`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:35 GMT
--	Parent Layer: `07624fe53b5f0fe96818f61d923e5516fe07814fb4fd70a106b33f1d254021be`
+-	Created: Thu, 07 Jan 2016 17:49:54 GMT
+-	Parent Layer: `57a4c9a2dc14ca4edba363ba4e14c911897ef4440c670fe1ffcbb3c92893a257`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9ca7379ecbb815f60ab65908b82927725155969c6e796a3e0e2d1cfebb553223`
+#### `eb94079e5c578386e85a1f836279c97b5cedf2a8b116c21b9bfa1848138029dc`
 
 ```dockerfile
 EXPOSE 3306/tcp
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:36 GMT
--	Parent Layer: `8fdd4b5e739aebb78ba7f12cfd5046f1b9a404696a6e983248ac14a1381ad855`
+-	Created: Thu, 07 Jan 2016 17:49:55 GMT
+-	Parent Layer: `b0ba495aff7035bf7f6acac11544d45de392ee833f5586f074c58c49223bac50`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a024c0b079b825a9606017ceebc52c2922bb55c6494017b78cb9ec047b4c0824`
+#### `97a291771ec9f880bf31503260c531c07cb67bbbd3f8d9169bcb514cfebe1a8c`
 
 ```dockerfile
 CMD ["mysqld"]
 ```
 
--	Created: Mon, 07 Dec 2015 18:57:36 GMT
--	Parent Layer: `9ca7379ecbb815f60ab65908b82927725155969c6e796a3e0e2d1cfebb553223`
+-	Created: Thu, 07 Jan 2016 17:49:55 GMT
+-	Parent Layer: `eb94079e5c578386e85a1f836279c97b5cedf2a8b116c21b9bfa1848138029dc`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -474,126 +474,126 @@ CMD ["mysqld"]
 ## `percona:5.6.27`
 
 ```console
-$ docker pull library/percona@sha256:e730154f02a91a8801cb66f7bf3fe459cc7f9ffbbae8092941a5ac420b018ee2
+$ docker pull library/percona@sha256:077d8a8bc1215bdbcfdc68df1e593a15ab4d70f411d8649d2772552ec209ff05
 ```
 
 -	Total Virtual Size: 308.6 MB (308646502 bytes)
--	Total v2 Content-Length: 104.0 MB (103986203 bytes)
+-	Total v2 Content-Length: 104.0 MB (103985613 bytes)
 
 ### Layers (15)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+#### `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 
 ```dockerfile
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:39 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 16:40:16 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 330.4 KB (330368 bytes)
--	v2 Blob: `sha256:01588229585e588f32e3836fec717035814b21b3fbe4872e7141bb0b366b019b`
--	v2 Content-Length: 2.0 KB (2046 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:43 GMT
+-	v2 Blob: `sha256:a3d65163f3cefcf13255789d8243b284304dc83f62800e3d023e09550ffef45c`
+-	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:28 GMT
 
-#### `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+#### `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 
 ```dockerfile
 RUN mkdir /docker-entrypoint-initdb.d
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:40 GMT
--	Parent Layer: `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+-	Created: Thu, 07 Jan 2016 16:40:17 GMT
+-	Parent Layer: `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:ada32b818a1a4129d6ff4539c7f4a8b5b7738d3d71fed510ac87477b9950c0c4`
--	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:40 GMT
+-	v2 Blob: `sha256:fad16773a430d74c603c4b2dac03c06ae543f4b9d1cb1386f4a5e662044ccb5d`
+-	v2 Content-Length: 114.0 B
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:25 GMT
 
-#### `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+#### `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:47 GMT
--	Parent Layer: `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+-	Created: Thu, 07 Jan 2016 17:48:23 GMT
+-	Parent Layer: `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 -	Docker Version: 1.8.3
 -	Virtual Size: 1.2 KB (1186 bytes)
--	v2 Blob: `sha256:b90a0367378f1b40a104c35521e402728d3f8dc3fd2344332a7a8579b3c25eac`
--	v2 Content-Length: 1.4 KB (1438 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:37 GMT
+-	v2 Blob: `sha256:11eb75c39d3c87b7097a16dd6459241aac699c3c549e8a59d4c5380c7a29d0d1`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:41 GMT
 
-#### `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+#### `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 
 ```dockerfile
 RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d/percona.list
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:49 GMT
--	Parent Layer: `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+-	Created: Thu, 07 Jan 2016 17:48:24 GMT
+-	Parent Layer: `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.0 B
--	v2 Blob: `sha256:cb9a3e19930f957672d1178f8a3ec4f54c3da8fb6fdecb0b32b72a6de53c8c2e`
--	v2 Content-Length: 210.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:34 GMT
+-	v2 Blob: `sha256:9694e6fac5eb01dabd4f4eb6503e978465c2c7bb2c5aad7ac14962c3a5866b99`
+-	v2 Content-Length: 208.0 B
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:38 GMT
 
-#### `12c97ee9591d294811aad6d096545d3e591ca89848a1aedb6053e8ffa2e61438`
+#### `cf5cfe1fa94303dc593cf303ed36995685454ee42a296710c2d1faf6cdb025db`
 
 ```dockerfile
 ENV PERCONA_MAJOR=5.6
 ```
 
--	Created: Sat, 05 Dec 2015 08:09:52 GMT
--	Parent Layer: `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+-	Created: Thu, 07 Jan 2016 17:50:50 GMT
+-	Parent Layer: `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5c413911302be276c1dd56e67fdaa838543b73b8d24f122d33c7e334cedf4b4c`
+#### `8552d49bc70259dc440d67b0aace2ed562477194965f973a00d9794a6cb0771b`
 
 ```dockerfile
 ENV PERCONA_VERSION=5.6.27-76.0-1.jessie
 ```
 
--	Created: Mon, 07 Dec 2015 18:59:14 GMT
--	Parent Layer: `12c97ee9591d294811aad6d096545d3e591ca89848a1aedb6053e8ffa2e61438`
+-	Created: Thu, 07 Jan 2016 17:50:50 GMT
+-	Parent Layer: `cf5cfe1fa94303dc593cf303ed36995685454ee42a296710c2d1faf6cdb025db`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bff4159c56a9776ed2a8d787fc59290f19aaf7ba3003382878a4578bdedd8740`
+#### `94c8a466cec85d27a2358a347f98d03834c787119f954479178cbbbf08a8b961`
 
 ```dockerfile
 RUN { \
@@ -608,15 +608,15 @@ RUN { \
 	&& mkdir /var/lib/mysql
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:24 GMT
--	Parent Layer: `5c413911302be276c1dd56e67fdaa838543b73b8d24f122d33c7e334cedf4b4c`
+-	Created: Thu, 07 Jan 2016 17:51:56 GMT
+-	Parent Layer: `8552d49bc70259dc440d67b0aace2ed562477194965f973a00d9794a6cb0771b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 183.2 MB (183193397 bytes)
--	v2 Blob: `sha256:4aba84511d6740daa5246b58f9f9eda487ac976fa2f9d1d40761403b33cfa57c`
--	v2 Content-Length: 52.6 MB (52624716 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:17:28 GMT
+-	v2 Blob: `sha256:99afc4253aa4dbe78bf987e45a26929170d10b74f8a222f4ccbf98ae45a10304`
+-	v2 Content-Length: 52.6 MB (52624372 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:22:49 GMT
 
-#### `3a9e48e3715c735d595d167c59f2918c345566cf1ade5e2f0e4846ad0ee4b282`
+#### `a5b8ea07926080e48b1a26403f9323277e1428a83cfc7e4d6c3effba9faf0383`
 
 ```dockerfile
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
@@ -624,78 +624,78 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:33 GMT
--	Parent Layer: `bff4159c56a9776ed2a8d787fc59290f19aaf7ba3003382878a4578bdedd8740`
+-	Created: Thu, 07 Jan 2016 17:51:59 GMT
+-	Parent Layer: `94c8a466cec85d27a2358a347f98d03834c787119f954479178cbbbf08a8b961`
 -	Docker Version: 1.8.3
 -	Virtual Size: 3.6 KB (3569 bytes)
--	v2 Blob: `sha256:5c64e8cb7bd2ca4820d8fce688f41e37367f904a86ac2f4d05be9f8d8976aa46`
+-	v2 Blob: `sha256:c198f15318097096426050beca43560e96cf7790bd3938f671a43d66d7544616`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:17:01 GMT
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:22:19 GMT
 
-#### `32ce2497afda0b2ccf2ac5c288f35b73ab098fb408a2b59e74fb1a8a99865e69`
+#### `f614ef95b26c6c560f6f2fb340020b3e0f40916fb945e1bfaa17138bffe8a5f8`
 
 ```dockerfile
 VOLUME [/var/lib/mysql /var/log/mysql]
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:34 GMT
--	Parent Layer: `3a9e48e3715c735d595d167c59f2918c345566cf1ade5e2f0e4846ad0ee4b282`
+-	Created: Thu, 07 Jan 2016 17:52:00 GMT
+-	Parent Layer: `a5b8ea07926080e48b1a26403f9323277e1428a83cfc7e4d6c3effba9faf0383`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0dfbfa14c50ced00b9bdd29b0babbcc98d551f3f136e38105e521cf67baf27bc`
+#### `688cbbbb8ddb2115efbff84b0281ec5483cd31f172c8765f49b662623351447d`
 
 ```dockerfile
 COPY file:653d148324ac92cb1ff8c2416ff37a80c47a210c572f0cd9c1f6b34bd6e5dbd8 in /
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:35 GMT
--	Parent Layer: `32ce2497afda0b2ccf2ac5c288f35b73ab098fb408a2b59e74fb1a8a99865e69`
+-	Created: Thu, 07 Jan 2016 17:52:01 GMT
+-	Parent Layer: `f614ef95b26c6c560f6f2fb340020b3e0f40916fb945e1bfaa17138bffe8a5f8`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.7 KB (2671 bytes)
 -	v2 Blob: `sha256:15ab927426cc47c9b689fdf4d1361c39133d2d5c18276a2d2ef9272ef1af71f4`
 -	v2 Content-Length: 1.3 KB (1310 bytes)
 -	v2 Last-Modified: Fri, 23 Oct 2015 01:05:51 GMT
 
-#### `4fc26a096f7d51a99a84694c07d66cccc7ab0c3fc4c5c14f64922a1809f356a5`
+#### `8dc2434acf4e455f04bc2783302a9709aeac2b705fb12cac32aca1a79b299096`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:35 GMT
--	Parent Layer: `0dfbfa14c50ced00b9bdd29b0babbcc98d551f3f136e38105e521cf67baf27bc`
+-	Created: Thu, 07 Jan 2016 17:52:01 GMT
+-	Parent Layer: `688cbbbb8ddb2115efbff84b0281ec5483cd31f172c8765f49b662623351447d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `91897cdf6dfe85fe74b1465fff2d0b90d0f0d9e5d35650105e2e0be9036c02f6`
+#### `a817efb4c168849539953a588ddf95eed247b09857ea4182855b0890664c1e82`
 
 ```dockerfile
 EXPOSE 3306/tcp
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:36 GMT
--	Parent Layer: `4fc26a096f7d51a99a84694c07d66cccc7ab0c3fc4c5c14f64922a1809f356a5`
+-	Created: Thu, 07 Jan 2016 17:52:02 GMT
+-	Parent Layer: `8dc2434acf4e455f04bc2783302a9709aeac2b705fb12cac32aca1a79b299096`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70588d0c4cd4ec46e75000349a2b115e59c165cc212ed161b79e94c8a4c21b5c`
+#### `fbbdd37e4f40d54e47647c21a6e268100e2206f11ae063b825f3bdc79cdd76fb`
 
 ```dockerfile
 CMD ["mysqld"]
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:37 GMT
--	Parent Layer: `91897cdf6dfe85fe74b1465fff2d0b90d0f0d9e5d35650105e2e0be9036c02f6`
+-	Created: Thu, 07 Jan 2016 17:52:03 GMT
+-	Parent Layer: `a817efb4c168849539953a588ddf95eed247b09857ea4182855b0890664c1e82`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -705,126 +705,126 @@ CMD ["mysqld"]
 ## `percona:5.6`
 
 ```console
-$ docker pull library/percona@sha256:2472768cc8563f9f2131ed21290dbfa30d5e5ba610b45daa28c4ef098c2fd367
+$ docker pull library/percona@sha256:9571a61c226592b6b38285c892849f358ba8e613f0f8cbc866baed9413f2a53a
 ```
 
 -	Total Virtual Size: 308.6 MB (308646502 bytes)
--	Total v2 Content-Length: 104.0 MB (103986203 bytes)
+-	Total v2 Content-Length: 104.0 MB (103985613 bytes)
 
 ### Layers (15)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+#### `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 
 ```dockerfile
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:39 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 16:40:16 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 330.4 KB (330368 bytes)
--	v2 Blob: `sha256:01588229585e588f32e3836fec717035814b21b3fbe4872e7141bb0b366b019b`
--	v2 Content-Length: 2.0 KB (2046 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:43 GMT
+-	v2 Blob: `sha256:a3d65163f3cefcf13255789d8243b284304dc83f62800e3d023e09550ffef45c`
+-	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:28 GMT
 
-#### `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+#### `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 
 ```dockerfile
 RUN mkdir /docker-entrypoint-initdb.d
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:40 GMT
--	Parent Layer: `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+-	Created: Thu, 07 Jan 2016 16:40:17 GMT
+-	Parent Layer: `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:ada32b818a1a4129d6ff4539c7f4a8b5b7738d3d71fed510ac87477b9950c0c4`
--	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:40 GMT
+-	v2 Blob: `sha256:fad16773a430d74c603c4b2dac03c06ae543f4b9d1cb1386f4a5e662044ccb5d`
+-	v2 Content-Length: 114.0 B
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:25 GMT
 
-#### `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+#### `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:47 GMT
--	Parent Layer: `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+-	Created: Thu, 07 Jan 2016 17:48:23 GMT
+-	Parent Layer: `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 -	Docker Version: 1.8.3
 -	Virtual Size: 1.2 KB (1186 bytes)
--	v2 Blob: `sha256:b90a0367378f1b40a104c35521e402728d3f8dc3fd2344332a7a8579b3c25eac`
--	v2 Content-Length: 1.4 KB (1438 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:37 GMT
+-	v2 Blob: `sha256:11eb75c39d3c87b7097a16dd6459241aac699c3c549e8a59d4c5380c7a29d0d1`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:41 GMT
 
-#### `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+#### `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 
 ```dockerfile
 RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d/percona.list
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:49 GMT
--	Parent Layer: `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+-	Created: Thu, 07 Jan 2016 17:48:24 GMT
+-	Parent Layer: `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.0 B
--	v2 Blob: `sha256:cb9a3e19930f957672d1178f8a3ec4f54c3da8fb6fdecb0b32b72a6de53c8c2e`
--	v2 Content-Length: 210.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:34 GMT
+-	v2 Blob: `sha256:9694e6fac5eb01dabd4f4eb6503e978465c2c7bb2c5aad7ac14962c3a5866b99`
+-	v2 Content-Length: 208.0 B
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:38 GMT
 
-#### `12c97ee9591d294811aad6d096545d3e591ca89848a1aedb6053e8ffa2e61438`
+#### `cf5cfe1fa94303dc593cf303ed36995685454ee42a296710c2d1faf6cdb025db`
 
 ```dockerfile
 ENV PERCONA_MAJOR=5.6
 ```
 
--	Created: Sat, 05 Dec 2015 08:09:52 GMT
--	Parent Layer: `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+-	Created: Thu, 07 Jan 2016 17:50:50 GMT
+-	Parent Layer: `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5c413911302be276c1dd56e67fdaa838543b73b8d24f122d33c7e334cedf4b4c`
+#### `8552d49bc70259dc440d67b0aace2ed562477194965f973a00d9794a6cb0771b`
 
 ```dockerfile
 ENV PERCONA_VERSION=5.6.27-76.0-1.jessie
 ```
 
--	Created: Mon, 07 Dec 2015 18:59:14 GMT
--	Parent Layer: `12c97ee9591d294811aad6d096545d3e591ca89848a1aedb6053e8ffa2e61438`
+-	Created: Thu, 07 Jan 2016 17:50:50 GMT
+-	Parent Layer: `cf5cfe1fa94303dc593cf303ed36995685454ee42a296710c2d1faf6cdb025db`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bff4159c56a9776ed2a8d787fc59290f19aaf7ba3003382878a4578bdedd8740`
+#### `94c8a466cec85d27a2358a347f98d03834c787119f954479178cbbbf08a8b961`
 
 ```dockerfile
 RUN { \
@@ -839,15 +839,15 @@ RUN { \
 	&& mkdir /var/lib/mysql
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:24 GMT
--	Parent Layer: `5c413911302be276c1dd56e67fdaa838543b73b8d24f122d33c7e334cedf4b4c`
+-	Created: Thu, 07 Jan 2016 17:51:56 GMT
+-	Parent Layer: `8552d49bc70259dc440d67b0aace2ed562477194965f973a00d9794a6cb0771b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 183.2 MB (183193397 bytes)
--	v2 Blob: `sha256:4aba84511d6740daa5246b58f9f9eda487ac976fa2f9d1d40761403b33cfa57c`
--	v2 Content-Length: 52.6 MB (52624716 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:17:28 GMT
+-	v2 Blob: `sha256:99afc4253aa4dbe78bf987e45a26929170d10b74f8a222f4ccbf98ae45a10304`
+-	v2 Content-Length: 52.6 MB (52624372 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:22:49 GMT
 
-#### `3a9e48e3715c735d595d167c59f2918c345566cf1ade5e2f0e4846ad0ee4b282`
+#### `a5b8ea07926080e48b1a26403f9323277e1428a83cfc7e4d6c3effba9faf0383`
 
 ```dockerfile
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
@@ -855,78 +855,78 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:33 GMT
--	Parent Layer: `bff4159c56a9776ed2a8d787fc59290f19aaf7ba3003382878a4578bdedd8740`
+-	Created: Thu, 07 Jan 2016 17:51:59 GMT
+-	Parent Layer: `94c8a466cec85d27a2358a347f98d03834c787119f954479178cbbbf08a8b961`
 -	Docker Version: 1.8.3
 -	Virtual Size: 3.6 KB (3569 bytes)
--	v2 Blob: `sha256:5c64e8cb7bd2ca4820d8fce688f41e37367f904a86ac2f4d05be9f8d8976aa46`
+-	v2 Blob: `sha256:c198f15318097096426050beca43560e96cf7790bd3938f671a43d66d7544616`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:17:01 GMT
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:22:19 GMT
 
-#### `32ce2497afda0b2ccf2ac5c288f35b73ab098fb408a2b59e74fb1a8a99865e69`
+#### `f614ef95b26c6c560f6f2fb340020b3e0f40916fb945e1bfaa17138bffe8a5f8`
 
 ```dockerfile
 VOLUME [/var/lib/mysql /var/log/mysql]
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:34 GMT
--	Parent Layer: `3a9e48e3715c735d595d167c59f2918c345566cf1ade5e2f0e4846ad0ee4b282`
+-	Created: Thu, 07 Jan 2016 17:52:00 GMT
+-	Parent Layer: `a5b8ea07926080e48b1a26403f9323277e1428a83cfc7e4d6c3effba9faf0383`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0dfbfa14c50ced00b9bdd29b0babbcc98d551f3f136e38105e521cf67baf27bc`
+#### `688cbbbb8ddb2115efbff84b0281ec5483cd31f172c8765f49b662623351447d`
 
 ```dockerfile
 COPY file:653d148324ac92cb1ff8c2416ff37a80c47a210c572f0cd9c1f6b34bd6e5dbd8 in /
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:35 GMT
--	Parent Layer: `32ce2497afda0b2ccf2ac5c288f35b73ab098fb408a2b59e74fb1a8a99865e69`
+-	Created: Thu, 07 Jan 2016 17:52:01 GMT
+-	Parent Layer: `f614ef95b26c6c560f6f2fb340020b3e0f40916fb945e1bfaa17138bffe8a5f8`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.7 KB (2671 bytes)
 -	v2 Blob: `sha256:15ab927426cc47c9b689fdf4d1361c39133d2d5c18276a2d2ef9272ef1af71f4`
 -	v2 Content-Length: 1.3 KB (1310 bytes)
 -	v2 Last-Modified: Fri, 23 Oct 2015 01:05:51 GMT
 
-#### `4fc26a096f7d51a99a84694c07d66cccc7ab0c3fc4c5c14f64922a1809f356a5`
+#### `8dc2434acf4e455f04bc2783302a9709aeac2b705fb12cac32aca1a79b299096`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:35 GMT
--	Parent Layer: `0dfbfa14c50ced00b9bdd29b0babbcc98d551f3f136e38105e521cf67baf27bc`
+-	Created: Thu, 07 Jan 2016 17:52:01 GMT
+-	Parent Layer: `688cbbbb8ddb2115efbff84b0281ec5483cd31f172c8765f49b662623351447d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `91897cdf6dfe85fe74b1465fff2d0b90d0f0d9e5d35650105e2e0be9036c02f6`
+#### `a817efb4c168849539953a588ddf95eed247b09857ea4182855b0890664c1e82`
 
 ```dockerfile
 EXPOSE 3306/tcp
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:36 GMT
--	Parent Layer: `4fc26a096f7d51a99a84694c07d66cccc7ab0c3fc4c5c14f64922a1809f356a5`
+-	Created: Thu, 07 Jan 2016 17:52:02 GMT
+-	Parent Layer: `8dc2434acf4e455f04bc2783302a9709aeac2b705fb12cac32aca1a79b299096`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70588d0c4cd4ec46e75000349a2b115e59c165cc212ed161b79e94c8a4c21b5c`
+#### `fbbdd37e4f40d54e47647c21a6e268100e2206f11ae063b825f3bdc79cdd76fb`
 
 ```dockerfile
 CMD ["mysqld"]
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:37 GMT
--	Parent Layer: `91897cdf6dfe85fe74b1465fff2d0b90d0f0d9e5d35650105e2e0be9036c02f6`
+-	Created: Thu, 07 Jan 2016 17:52:03 GMT
+-	Parent Layer: `a817efb4c168849539953a588ddf95eed247b09857ea4182855b0890664c1e82`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -936,126 +936,126 @@ CMD ["mysqld"]
 ## `percona:5`
 
 ```console
-$ docker pull library/percona@sha256:6c2ee53f2bc141d49e1f02387264a3e2c138467400792f084efeb7c435c5b21e
+$ docker pull library/percona@sha256:61917e20bd637e3e161eb7b3ad05b024976774c5464b75a7f57a8e9d96b76df7
 ```
 
 -	Total Virtual Size: 308.6 MB (308646502 bytes)
--	Total v2 Content-Length: 104.0 MB (103986203 bytes)
+-	Total v2 Content-Length: 104.0 MB (103985613 bytes)
 
 ### Layers (15)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+#### `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 
 ```dockerfile
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:39 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 16:40:16 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 330.4 KB (330368 bytes)
--	v2 Blob: `sha256:01588229585e588f32e3836fec717035814b21b3fbe4872e7141bb0b366b019b`
--	v2 Content-Length: 2.0 KB (2046 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:43 GMT
+-	v2 Blob: `sha256:a3d65163f3cefcf13255789d8243b284304dc83f62800e3d023e09550ffef45c`
+-	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:28 GMT
 
-#### `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+#### `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 
 ```dockerfile
 RUN mkdir /docker-entrypoint-initdb.d
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:40 GMT
--	Parent Layer: `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+-	Created: Thu, 07 Jan 2016 16:40:17 GMT
+-	Parent Layer: `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:ada32b818a1a4129d6ff4539c7f4a8b5b7738d3d71fed510ac87477b9950c0c4`
--	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:40 GMT
+-	v2 Blob: `sha256:fad16773a430d74c603c4b2dac03c06ae543f4b9d1cb1386f4a5e662044ccb5d`
+-	v2 Content-Length: 114.0 B
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:25 GMT
 
-#### `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+#### `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:47 GMT
--	Parent Layer: `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+-	Created: Thu, 07 Jan 2016 17:48:23 GMT
+-	Parent Layer: `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 -	Docker Version: 1.8.3
 -	Virtual Size: 1.2 KB (1186 bytes)
--	v2 Blob: `sha256:b90a0367378f1b40a104c35521e402728d3f8dc3fd2344332a7a8579b3c25eac`
--	v2 Content-Length: 1.4 KB (1438 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:37 GMT
+-	v2 Blob: `sha256:11eb75c39d3c87b7097a16dd6459241aac699c3c549e8a59d4c5380c7a29d0d1`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:41 GMT
 
-#### `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+#### `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 
 ```dockerfile
 RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d/percona.list
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:49 GMT
--	Parent Layer: `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+-	Created: Thu, 07 Jan 2016 17:48:24 GMT
+-	Parent Layer: `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.0 B
--	v2 Blob: `sha256:cb9a3e19930f957672d1178f8a3ec4f54c3da8fb6fdecb0b32b72a6de53c8c2e`
--	v2 Content-Length: 210.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:34 GMT
+-	v2 Blob: `sha256:9694e6fac5eb01dabd4f4eb6503e978465c2c7bb2c5aad7ac14962c3a5866b99`
+-	v2 Content-Length: 208.0 B
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:38 GMT
 
-#### `12c97ee9591d294811aad6d096545d3e591ca89848a1aedb6053e8ffa2e61438`
+#### `cf5cfe1fa94303dc593cf303ed36995685454ee42a296710c2d1faf6cdb025db`
 
 ```dockerfile
 ENV PERCONA_MAJOR=5.6
 ```
 
--	Created: Sat, 05 Dec 2015 08:09:52 GMT
--	Parent Layer: `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+-	Created: Thu, 07 Jan 2016 17:50:50 GMT
+-	Parent Layer: `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5c413911302be276c1dd56e67fdaa838543b73b8d24f122d33c7e334cedf4b4c`
+#### `8552d49bc70259dc440d67b0aace2ed562477194965f973a00d9794a6cb0771b`
 
 ```dockerfile
 ENV PERCONA_VERSION=5.6.27-76.0-1.jessie
 ```
 
--	Created: Mon, 07 Dec 2015 18:59:14 GMT
--	Parent Layer: `12c97ee9591d294811aad6d096545d3e591ca89848a1aedb6053e8ffa2e61438`
+-	Created: Thu, 07 Jan 2016 17:50:50 GMT
+-	Parent Layer: `cf5cfe1fa94303dc593cf303ed36995685454ee42a296710c2d1faf6cdb025db`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bff4159c56a9776ed2a8d787fc59290f19aaf7ba3003382878a4578bdedd8740`
+#### `94c8a466cec85d27a2358a347f98d03834c787119f954479178cbbbf08a8b961`
 
 ```dockerfile
 RUN { \
@@ -1070,15 +1070,15 @@ RUN { \
 	&& mkdir /var/lib/mysql
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:24 GMT
--	Parent Layer: `5c413911302be276c1dd56e67fdaa838543b73b8d24f122d33c7e334cedf4b4c`
+-	Created: Thu, 07 Jan 2016 17:51:56 GMT
+-	Parent Layer: `8552d49bc70259dc440d67b0aace2ed562477194965f973a00d9794a6cb0771b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 183.2 MB (183193397 bytes)
--	v2 Blob: `sha256:4aba84511d6740daa5246b58f9f9eda487ac976fa2f9d1d40761403b33cfa57c`
--	v2 Content-Length: 52.6 MB (52624716 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:17:28 GMT
+-	v2 Blob: `sha256:99afc4253aa4dbe78bf987e45a26929170d10b74f8a222f4ccbf98ae45a10304`
+-	v2 Content-Length: 52.6 MB (52624372 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:22:49 GMT
 
-#### `3a9e48e3715c735d595d167c59f2918c345566cf1ade5e2f0e4846ad0ee4b282`
+#### `a5b8ea07926080e48b1a26403f9323277e1428a83cfc7e4d6c3effba9faf0383`
 
 ```dockerfile
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
@@ -1086,78 +1086,78 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:33 GMT
--	Parent Layer: `bff4159c56a9776ed2a8d787fc59290f19aaf7ba3003382878a4578bdedd8740`
+-	Created: Thu, 07 Jan 2016 17:51:59 GMT
+-	Parent Layer: `94c8a466cec85d27a2358a347f98d03834c787119f954479178cbbbf08a8b961`
 -	Docker Version: 1.8.3
 -	Virtual Size: 3.6 KB (3569 bytes)
--	v2 Blob: `sha256:5c64e8cb7bd2ca4820d8fce688f41e37367f904a86ac2f4d05be9f8d8976aa46`
+-	v2 Blob: `sha256:c198f15318097096426050beca43560e96cf7790bd3938f671a43d66d7544616`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:17:01 GMT
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:22:19 GMT
 
-#### `32ce2497afda0b2ccf2ac5c288f35b73ab098fb408a2b59e74fb1a8a99865e69`
+#### `f614ef95b26c6c560f6f2fb340020b3e0f40916fb945e1bfaa17138bffe8a5f8`
 
 ```dockerfile
 VOLUME [/var/lib/mysql /var/log/mysql]
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:34 GMT
--	Parent Layer: `3a9e48e3715c735d595d167c59f2918c345566cf1ade5e2f0e4846ad0ee4b282`
+-	Created: Thu, 07 Jan 2016 17:52:00 GMT
+-	Parent Layer: `a5b8ea07926080e48b1a26403f9323277e1428a83cfc7e4d6c3effba9faf0383`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0dfbfa14c50ced00b9bdd29b0babbcc98d551f3f136e38105e521cf67baf27bc`
+#### `688cbbbb8ddb2115efbff84b0281ec5483cd31f172c8765f49b662623351447d`
 
 ```dockerfile
 COPY file:653d148324ac92cb1ff8c2416ff37a80c47a210c572f0cd9c1f6b34bd6e5dbd8 in /
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:35 GMT
--	Parent Layer: `32ce2497afda0b2ccf2ac5c288f35b73ab098fb408a2b59e74fb1a8a99865e69`
+-	Created: Thu, 07 Jan 2016 17:52:01 GMT
+-	Parent Layer: `f614ef95b26c6c560f6f2fb340020b3e0f40916fb945e1bfaa17138bffe8a5f8`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.7 KB (2671 bytes)
 -	v2 Blob: `sha256:15ab927426cc47c9b689fdf4d1361c39133d2d5c18276a2d2ef9272ef1af71f4`
 -	v2 Content-Length: 1.3 KB (1310 bytes)
 -	v2 Last-Modified: Fri, 23 Oct 2015 01:05:51 GMT
 
-#### `4fc26a096f7d51a99a84694c07d66cccc7ab0c3fc4c5c14f64922a1809f356a5`
+#### `8dc2434acf4e455f04bc2783302a9709aeac2b705fb12cac32aca1a79b299096`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:35 GMT
--	Parent Layer: `0dfbfa14c50ced00b9bdd29b0babbcc98d551f3f136e38105e521cf67baf27bc`
+-	Created: Thu, 07 Jan 2016 17:52:01 GMT
+-	Parent Layer: `688cbbbb8ddb2115efbff84b0281ec5483cd31f172c8765f49b662623351447d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `91897cdf6dfe85fe74b1465fff2d0b90d0f0d9e5d35650105e2e0be9036c02f6`
+#### `a817efb4c168849539953a588ddf95eed247b09857ea4182855b0890664c1e82`
 
 ```dockerfile
 EXPOSE 3306/tcp
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:36 GMT
--	Parent Layer: `4fc26a096f7d51a99a84694c07d66cccc7ab0c3fc4c5c14f64922a1809f356a5`
+-	Created: Thu, 07 Jan 2016 17:52:02 GMT
+-	Parent Layer: `8dc2434acf4e455f04bc2783302a9709aeac2b705fb12cac32aca1a79b299096`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70588d0c4cd4ec46e75000349a2b115e59c165cc212ed161b79e94c8a4c21b5c`
+#### `fbbdd37e4f40d54e47647c21a6e268100e2206f11ae063b825f3bdc79cdd76fb`
 
 ```dockerfile
 CMD ["mysqld"]
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:37 GMT
--	Parent Layer: `91897cdf6dfe85fe74b1465fff2d0b90d0f0d9e5d35650105e2e0be9036c02f6`
+-	Created: Thu, 07 Jan 2016 17:52:03 GMT
+-	Parent Layer: `a817efb4c168849539953a588ddf95eed247b09857ea4182855b0890664c1e82`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1167,126 +1167,126 @@ CMD ["mysqld"]
 ## `percona:latest`
 
 ```console
-$ docker pull library/percona@sha256:2421477f42b6c669e35b9ee32098eebdb6a03948cb13c26be10bc27cf46da14c
+$ docker pull library/percona@sha256:297c36927d8b5efa23a492eecbca3ca27b807b93a45eef7df39ff20c4ae3492a
 ```
 
 -	Total Virtual Size: 308.6 MB (308646502 bytes)
--	Total v2 Content-Length: 104.0 MB (103986203 bytes)
+-	Total v2 Content-Length: 104.0 MB (103985613 bytes)
 
 ### Layers (15)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Thu, 07 Jan 2016 01:07:09 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
+-	v2 Content-Length: 51.4 MB (51354018 bytes)
+-	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Thu, 07 Jan 2016 01:07:11 GMT
+-	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+#### `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 
 ```dockerfile
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:39 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Thu, 07 Jan 2016 16:40:16 GMT
+-	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
 -	Docker Version: 1.8.3
 -	Virtual Size: 330.4 KB (330368 bytes)
--	v2 Blob: `sha256:01588229585e588f32e3836fec717035814b21b3fbe4872e7141bb0b366b019b`
--	v2 Content-Length: 2.0 KB (2046 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:43 GMT
+-	v2 Blob: `sha256:a3d65163f3cefcf13255789d8243b284304dc83f62800e3d023e09550ffef45c`
+-	v2 Content-Length: 2.0 KB (2043 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:28 GMT
 
-#### `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+#### `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 
 ```dockerfile
 RUN mkdir /docker-entrypoint-initdb.d
 ```
 
--	Created: Sat, 05 Dec 2015 07:00:40 GMT
--	Parent Layer: `410c2fae228373995a6040797eb0e804b68079088ec7b7e006fc9b4b1d14f7f3`
+-	Created: Thu, 07 Jan 2016 16:40:17 GMT
+-	Parent Layer: `75575d9a171d68b2085e4460de6e97f5ba0e4315cfd585853e7c3ddae37f223a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:ada32b818a1a4129d6ff4539c7f4a8b5b7738d3d71fed510ac87477b9950c0c4`
--	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:40 GMT
+-	v2 Blob: `sha256:fad16773a430d74c603c4b2dac03c06ae543f4b9d1cb1386f4a5e662044ccb5d`
+-	v2 Content-Length: 114.0 B
+-	v2 Last-Modified: Mon, 11 Jan 2016 21:21:25 GMT
 
-#### `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+#### `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 
 ```dockerfile
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:47 GMT
--	Parent Layer: `e3a6552a83c279e9b24b65bd271e491003a2ea48320e41fc4103522d2430faea`
+-	Created: Thu, 07 Jan 2016 17:48:23 GMT
+-	Parent Layer: `25bdc35437c5236657d69391e57ccd56cc8d8e94d9d063d7fcb965430a7fe5a3`
 -	Docker Version: 1.8.3
 -	Virtual Size: 1.2 KB (1186 bytes)
--	v2 Blob: `sha256:b90a0367378f1b40a104c35521e402728d3f8dc3fd2344332a7a8579b3c25eac`
--	v2 Content-Length: 1.4 KB (1438 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:37 GMT
+-	v2 Blob: `sha256:11eb75c39d3c87b7097a16dd6459241aac699c3c549e8a59d4c5380c7a29d0d1`
+-	v2 Content-Length: 1.4 KB (1434 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:41 GMT
 
-#### `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+#### `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 
 ```dockerfile
 RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d/percona.list
 ```
 
--	Created: Sat, 05 Dec 2015 08:03:49 GMT
--	Parent Layer: `888b2d0606c7c879f65c8f601caae54739d38e55422a95cde1b430d105df36cf`
+-	Created: Thu, 07 Jan 2016 17:48:24 GMT
+-	Parent Layer: `496c133eb61b2819f053ca81562defe0dba7106dcaa9fa2ea8a36d98eadf7739`
 -	Docker Version: 1.8.3
 -	Virtual Size: 44.0 B
--	v2 Blob: `sha256:cb9a3e19930f957672d1178f8a3ec4f54c3da8fb6fdecb0b32b72a6de53c8c2e`
--	v2 Content-Length: 210.0 B
--	v2 Last-Modified: Mon, 07 Dec 2015 19:14:34 GMT
+-	v2 Blob: `sha256:9694e6fac5eb01dabd4f4eb6503e978465c2c7bb2c5aad7ac14962c3a5866b99`
+-	v2 Content-Length: 208.0 B
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:19:38 GMT
 
-#### `12c97ee9591d294811aad6d096545d3e591ca89848a1aedb6053e8ffa2e61438`
+#### `cf5cfe1fa94303dc593cf303ed36995685454ee42a296710c2d1faf6cdb025db`
 
 ```dockerfile
 ENV PERCONA_MAJOR=5.6
 ```
 
--	Created: Sat, 05 Dec 2015 08:09:52 GMT
--	Parent Layer: `eb89c26cfb9b685d6a44d72056defa423eb65ea6188362e398611d81fd5b24a8`
+-	Created: Thu, 07 Jan 2016 17:50:50 GMT
+-	Parent Layer: `de3ab7dcf17482d425561e0ab35dc2ccaa6762dd081c4b4d4d13e2d18fb627e6`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5c413911302be276c1dd56e67fdaa838543b73b8d24f122d33c7e334cedf4b4c`
+#### `8552d49bc70259dc440d67b0aace2ed562477194965f973a00d9794a6cb0771b`
 
 ```dockerfile
 ENV PERCONA_VERSION=5.6.27-76.0-1.jessie
 ```
 
--	Created: Mon, 07 Dec 2015 18:59:14 GMT
--	Parent Layer: `12c97ee9591d294811aad6d096545d3e591ca89848a1aedb6053e8ffa2e61438`
+-	Created: Thu, 07 Jan 2016 17:50:50 GMT
+-	Parent Layer: `cf5cfe1fa94303dc593cf303ed36995685454ee42a296710c2d1faf6cdb025db`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bff4159c56a9776ed2a8d787fc59290f19aaf7ba3003382878a4578bdedd8740`
+#### `94c8a466cec85d27a2358a347f98d03834c787119f954479178cbbbf08a8b961`
 
 ```dockerfile
 RUN { \
@@ -1301,15 +1301,15 @@ RUN { \
 	&& mkdir /var/lib/mysql
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:24 GMT
--	Parent Layer: `5c413911302be276c1dd56e67fdaa838543b73b8d24f122d33c7e334cedf4b4c`
+-	Created: Thu, 07 Jan 2016 17:51:56 GMT
+-	Parent Layer: `8552d49bc70259dc440d67b0aace2ed562477194965f973a00d9794a6cb0771b`
 -	Docker Version: 1.8.3
 -	Virtual Size: 183.2 MB (183193397 bytes)
--	v2 Blob: `sha256:4aba84511d6740daa5246b58f9f9eda487ac976fa2f9d1d40761403b33cfa57c`
--	v2 Content-Length: 52.6 MB (52624716 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:17:28 GMT
+-	v2 Blob: `sha256:99afc4253aa4dbe78bf987e45a26929170d10b74f8a222f4ccbf98ae45a10304`
+-	v2 Content-Length: 52.6 MB (52624372 bytes)
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:22:49 GMT
 
-#### `3a9e48e3715c735d595d167c59f2918c345566cf1ade5e2f0e4846ad0ee4b282`
+#### `a5b8ea07926080e48b1a26403f9323277e1428a83cfc7e4d6c3effba9faf0383`
 
 ```dockerfile
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
@@ -1317,78 +1317,78 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:33 GMT
--	Parent Layer: `bff4159c56a9776ed2a8d787fc59290f19aaf7ba3003382878a4578bdedd8740`
+-	Created: Thu, 07 Jan 2016 17:51:59 GMT
+-	Parent Layer: `94c8a466cec85d27a2358a347f98d03834c787119f954479178cbbbf08a8b961`
 -	Docker Version: 1.8.3
 -	Virtual Size: 3.6 KB (3569 bytes)
--	v2 Blob: `sha256:5c64e8cb7bd2ca4820d8fce688f41e37367f904a86ac2f4d05be9f8d8976aa46`
+-	v2 Blob: `sha256:c198f15318097096426050beca43560e96cf7790bd3938f671a43d66d7544616`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Mon, 07 Dec 2015 19:17:01 GMT
+-	v2 Last-Modified: Tue, 12 Jan 2016 00:22:19 GMT
 
-#### `32ce2497afda0b2ccf2ac5c288f35b73ab098fb408a2b59e74fb1a8a99865e69`
+#### `f614ef95b26c6c560f6f2fb340020b3e0f40916fb945e1bfaa17138bffe8a5f8`
 
 ```dockerfile
 VOLUME [/var/lib/mysql /var/log/mysql]
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:34 GMT
--	Parent Layer: `3a9e48e3715c735d595d167c59f2918c345566cf1ade5e2f0e4846ad0ee4b282`
+-	Created: Thu, 07 Jan 2016 17:52:00 GMT
+-	Parent Layer: `a5b8ea07926080e48b1a26403f9323277e1428a83cfc7e4d6c3effba9faf0383`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0dfbfa14c50ced00b9bdd29b0babbcc98d551f3f136e38105e521cf67baf27bc`
+#### `688cbbbb8ddb2115efbff84b0281ec5483cd31f172c8765f49b662623351447d`
 
 ```dockerfile
 COPY file:653d148324ac92cb1ff8c2416ff37a80c47a210c572f0cd9c1f6b34bd6e5dbd8 in /
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:35 GMT
--	Parent Layer: `32ce2497afda0b2ccf2ac5c288f35b73ab098fb408a2b59e74fb1a8a99865e69`
+-	Created: Thu, 07 Jan 2016 17:52:01 GMT
+-	Parent Layer: `f614ef95b26c6c560f6f2fb340020b3e0f40916fb945e1bfaa17138bffe8a5f8`
 -	Docker Version: 1.8.3
 -	Virtual Size: 2.7 KB (2671 bytes)
 -	v2 Blob: `sha256:15ab927426cc47c9b689fdf4d1361c39133d2d5c18276a2d2ef9272ef1af71f4`
 -	v2 Content-Length: 1.3 KB (1310 bytes)
 -	v2 Last-Modified: Fri, 23 Oct 2015 01:05:51 GMT
 
-#### `4fc26a096f7d51a99a84694c07d66cccc7ab0c3fc4c5c14f64922a1809f356a5`
+#### `8dc2434acf4e455f04bc2783302a9709aeac2b705fb12cac32aca1a79b299096`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:35 GMT
--	Parent Layer: `0dfbfa14c50ced00b9bdd29b0babbcc98d551f3f136e38105e521cf67baf27bc`
+-	Created: Thu, 07 Jan 2016 17:52:01 GMT
+-	Parent Layer: `688cbbbb8ddb2115efbff84b0281ec5483cd31f172c8765f49b662623351447d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `91897cdf6dfe85fe74b1465fff2d0b90d0f0d9e5d35650105e2e0be9036c02f6`
+#### `a817efb4c168849539953a588ddf95eed247b09857ea4182855b0890664c1e82`
 
 ```dockerfile
 EXPOSE 3306/tcp
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:36 GMT
--	Parent Layer: `4fc26a096f7d51a99a84694c07d66cccc7ab0c3fc4c5c14f64922a1809f356a5`
+-	Created: Thu, 07 Jan 2016 17:52:02 GMT
+-	Parent Layer: `8dc2434acf4e455f04bc2783302a9709aeac2b705fb12cac32aca1a79b299096`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70588d0c4cd4ec46e75000349a2b115e59c165cc212ed161b79e94c8a4c21b5c`
+#### `fbbdd37e4f40d54e47647c21a6e268100e2206f11ae063b825f3bdc79cdd76fb`
 
 ```dockerfile
 CMD ["mysqld"]
 ```
 
--	Created: Mon, 07 Dec 2015 19:00:37 GMT
--	Parent Layer: `91897cdf6dfe85fe74b1465fff2d0b90d0f0d9e5d35650105e2e0be9036c02f6`
+-	Created: Thu, 07 Jan 2016 17:52:03 GMT
+-	Parent Layer: `a817efb4c168849539953a588ddf95eed247b09857ea4182855b0890664c1e82`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
