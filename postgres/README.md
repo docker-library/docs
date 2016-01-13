@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.22`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/d1644850949964935c418a73e0a7dc36f4f12dd9/9.0/Dockerfile)
--	[`9.1.19`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/d1644850949964935c418a73e0a7dc36f4f12dd9/9.1/Dockerfile)
--	[`9.2.14`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/d1644850949964935c418a73e0a7dc36f4f12dd9/9.2/Dockerfile)
--	[`9.3.10`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/d1644850949964935c418a73e0a7dc36f4f12dd9/9.3/Dockerfile)
--	[`9.4.5`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/d1644850949964935c418a73e0a7dc36f4f12dd9/9.4/Dockerfile)
--	[`9.5.0`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/2c72165e4f9dc66a61998111f69b5eba0b6b71f4/9.5/Dockerfile)
+-	[`9.0.22`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.0/Dockerfile)
+-	[`9.1.19`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.1/Dockerfile)
+-	[`9.2.14`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.2/Dockerfile)
+-	[`9.3.10`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.3/Dockerfile)
+-	[`9.4.5`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.4/Dockerfile)
+-	[`9.5.0`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/9737ce4eeb7d580de8bd6831d8144ba08c316197/9.5/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
