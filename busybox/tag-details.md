@@ -2,166 +2,58 @@
 
 # Tags of `busybox`
 
--	[`busybox:1.21.0-ubuntu`](#busybox1210-ubuntu)
--	[`busybox:1.21-ubuntu`](#busybox121-ubuntu)
--	[`busybox:1-ubuntu`](#busybox1-ubuntu)
--	[`busybox:ubuntu`](#busyboxubuntu)
+-	[`busybox:1.24.1-glibc`](#busybox1241-glibc)
+-	[`busybox:1.24-glibc`](#busybox124-glibc)
+-	[`busybox:1-glibc`](#busybox1-glibc)
+-	[`busybox:glibc`](#busyboxglibc)
+-	[`busybox:1.24.1-musl`](#busybox1241-musl)
+-	[`busybox:1.24-musl`](#busybox124-musl)
+-	[`busybox:1-musl`](#busybox1-musl)
+-	[`busybox:musl`](#busyboxmusl)
+-	[`busybox:1.24.1-uclibc`](#busybox1241-uclibc)
 -	[`busybox:1.24.1`](#busybox1241)
+-	[`busybox:1.24-uclibc`](#busybox124-uclibc)
 -	[`busybox:1.24`](#busybox124)
+-	[`busybox:1-uclibc`](#busybox1-uclibc)
 -	[`busybox:1`](#busybox1)
+-	[`busybox:uclibc`](#busyboxuclibc)
 -	[`busybox:latest`](#busyboxlatest)
 
-## `busybox:1.21.0-ubuntu`
+## `busybox:1.24.1-glibc`
 
-```console
-$ docker pull library/busybox@sha256:2e8bb1e3beca5840cbf49a9142262e5c8b4f0d0a47bea1ee8ab954a6c198fb20
-```
+**does not exist** (yet?)
 
--	Total Virtual Size: 4.3 MB (4346790 bytes)
--	Total v2 Content-Length: 2.0 MB (1995612 bytes)
+## `busybox:1.24-glibc`
 
-### Layers (2)
+**does not exist** (yet?)
 
-#### `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
+## `busybox:1-glibc`
 
-```dockerfile
-ADD file:b333e2afa5aa1821be2beb361aee79cb39fb9e9273f7251813fb708c1ade12bb in /
-```
+**does not exist** (yet?)
 
--	Created: Tue, 08 Dec 2015 18:31:26 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.3 MB (4346790 bytes)
--	v2 Blob: `sha256:082340653daf0364a24268c6ca0594f22766a683b3e17f49028ef564b229e835`
--	v2 Content-Length: 2.0 MB (1995580 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 18:32:20 GMT
+## `busybox:glibc`
 
-#### `a6dbc8d6ddbb9e905518a9df65f414efce038de5f253a081b1205c6cea4bac17`
+**does not exist** (yet?)
 
-```dockerfile
-CMD ["sh"]
-```
+## `busybox:1.24.1-musl`
 
--	Created: Tue, 08 Dec 2015 18:31:26 GMT
--	Parent Layer: `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+**does not exist** (yet?)
 
-## `busybox:1.21-ubuntu`
+## `busybox:1.24-musl`
 
-```console
-$ docker pull library/busybox@sha256:0ffdec6e0a48323b9aa3dc533c5fdeccda83df67ab693f727cda120fc8aede88
-```
+**does not exist** (yet?)
 
--	Total Virtual Size: 4.3 MB (4346790 bytes)
--	Total v2 Content-Length: 2.0 MB (1995612 bytes)
+## `busybox:1-musl`
 
-### Layers (2)
+**does not exist** (yet?)
 
-#### `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
+## `busybox:musl`
 
-```dockerfile
-ADD file:b333e2afa5aa1821be2beb361aee79cb39fb9e9273f7251813fb708c1ade12bb in /
-```
+**does not exist** (yet?)
 
--	Created: Tue, 08 Dec 2015 18:31:26 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.3 MB (4346790 bytes)
--	v2 Blob: `sha256:082340653daf0364a24268c6ca0594f22766a683b3e17f49028ef564b229e835`
--	v2 Content-Length: 2.0 MB (1995580 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 18:32:20 GMT
+## `busybox:1.24.1-uclibc`
 
-#### `a6dbc8d6ddbb9e905518a9df65f414efce038de5f253a081b1205c6cea4bac17`
-
-```dockerfile
-CMD ["sh"]
-```
-
--	Created: Tue, 08 Dec 2015 18:31:26 GMT
--	Parent Layer: `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `busybox:1-ubuntu`
-
-```console
-$ docker pull library/busybox@sha256:148a142e0eb29d0c686e27dc08e399496cf46ca64ed6303839c339ed8dabd3ce
-```
-
--	Total Virtual Size: 4.3 MB (4346790 bytes)
--	Total v2 Content-Length: 2.0 MB (1995612 bytes)
-
-### Layers (2)
-
-#### `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
-
-```dockerfile
-ADD file:b333e2afa5aa1821be2beb361aee79cb39fb9e9273f7251813fb708c1ade12bb in /
-```
-
--	Created: Tue, 08 Dec 2015 18:31:26 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.3 MB (4346790 bytes)
--	v2 Blob: `sha256:082340653daf0364a24268c6ca0594f22766a683b3e17f49028ef564b229e835`
--	v2 Content-Length: 2.0 MB (1995580 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 18:32:20 GMT
-
-#### `a6dbc8d6ddbb9e905518a9df65f414efce038de5f253a081b1205c6cea4bac17`
-
-```dockerfile
-CMD ["sh"]
-```
-
--	Created: Tue, 08 Dec 2015 18:31:26 GMT
--	Parent Layer: `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `busybox:ubuntu`
-
-```console
-$ docker pull library/busybox@sha256:8f1d9b6168120d917eb8539a8cc590c1161a2aa7cdda8ca62962d9ee012b29ef
-```
-
--	Total Virtual Size: 4.3 MB (4346790 bytes)
--	Total v2 Content-Length: 2.0 MB (1995612 bytes)
-
-### Layers (2)
-
-#### `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
-
-```dockerfile
-ADD file:b333e2afa5aa1821be2beb361aee79cb39fb9e9273f7251813fb708c1ade12bb in /
-```
-
--	Created: Tue, 08 Dec 2015 18:31:26 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.3 MB (4346790 bytes)
--	v2 Blob: `sha256:082340653daf0364a24268c6ca0594f22766a683b3e17f49028ef564b229e835`
--	v2 Content-Length: 2.0 MB (1995580 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 18:32:20 GMT
-
-#### `a6dbc8d6ddbb9e905518a9df65f414efce038de5f253a081b1205c6cea4bac17`
-
-```dockerfile
-CMD ["sh"]
-```
-
--	Created: Tue, 08 Dec 2015 18:31:26 GMT
--	Parent Layer: `79e69b372961d11d555c12fe0e2f0e8893abffb38ef43ef3eb479a3b654ae265`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+**does not exist** (yet?)
 
 ## `busybox:1.24.1`
 
@@ -201,6 +93,10 @@ CMD ["sh"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
+## `busybox:1.24-uclibc`
+
+**does not exist** (yet?)
+
 ## `busybox:1.24`
 
 ```console
@@ -239,6 +135,10 @@ CMD ["sh"]
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
+## `busybox:1-uclibc`
+
+**does not exist** (yet?)
+
 ## `busybox:1`
 
 ```console
@@ -276,6 +176,10 @@ CMD ["sh"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `busybox:uclibc`
+
+**does not exist** (yet?)
 
 ## `busybox:latest`
 
