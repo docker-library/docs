@@ -28,15 +28,21 @@ Below are some press releases that might be helpful:
 
 Run the default TomEE server (`CMD ["catalina.sh", "run"]`):
 
-	docker run -it --rm tomee:<java-version>\-<tomeeversion>\-<flavour>
+```console
+$ docker run -it --rm tomee:<java-version>\-<tomeeversion>\-<flavour>
+```
 
 For example running Apache TomEE 1.7.2 with JRE 8 and Webprofile flavour will be:
 
-	docker run -it --rm tomee:8-jre-1.7.2-webprofile
+```console
+$ docker run -it --rm tomee:8-jre-1.7.2-webprofile
+```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
-	docker run -it --rm -p 8888:8080 tomee:<java-version>\-<tomeeversion>\-<flavour>
+```console
+$ docker run -it --rm -p 8888:8080 tomee:<java-version>\-<tomeeversion>\-<flavour>
+```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
 

@@ -85,4 +85,3 @@ The images are designed to support a number of different usage patterns. The fol
 	$ docker run -d -p 80:9080 \
 	  --volumes-from app websphere-liberty:webProfile6
 	```
-

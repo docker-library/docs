@@ -10,11 +10,13 @@ Neo4j is a highly scalable, robust, native graph database. It is used in mission
 
 The image exposes two ports (`7474` and `7473`) for HTTP and HTTPS access to the Neo4j API and a volume (`/data`) to allow the database to be persisted outside its container.
 
-	docker run \
-	    --detach \
-	    --publish=7474:7474 \
-	    --volume=$HOME/neo4j/data:/data \
-	    neo4j
+```console
+$ docker run \
+    --detach \
+    --publish=7474:7474 \
+    --volume=$HOME/neo4j/data:/data \
+    neo4j
+```
 
 Point your browser at `http://localhost:7474` on Linux or `http://$(docker-machine ip default):7474` on OSX.
 
@@ -40,17 +42,21 @@ Docker controls the number of open file descriptors in a container; the limit de
 
 To check the limit on your system, run this command:
 
-	docker run neo4j \
-	    bash -c 'echo Soft limit: $(ulimit -Sn); echo Hard limit: $(ulimit -Hn)'
+```console
+$ docker run neo4j \
+    bash -c 'echo Soft limit: $(ulimit -Sn); echo Hard limit: $(ulimit -Hn)'
+```
 
 To override the default configuration for a single container, use the `--ulimit` option like this:
 
-	docker run \
-	    --detach \
-	    --publish=7474:7474 \
-	    --volume=$HOME/neo4j/data:/data \
-	    --ulimit=nofile=40000:40000
-	    neo4j
+```console
+$ docker run \
+    --detach \
+    --publish=7474:7474 \
+    --volume=$HOME/neo4j/data:/data \
+    --ulimit=nofile=40000:40000
+    neo4j
+```
 
 ## Neo4j configuration
 
@@ -62,12 +68,14 @@ There are three ways to modify the configuration depending on how much you need 
 
 Pass environment variables to the container when you run it.
 
-	docker run \
-	    --detach \
-	    --publish=7474:7474 \
-	    --volume=$HOME/neo4j/data:/data \
-	    --env=NEO4J_CACHE_MEMORY=4G \
-	    neo4j
+```console
+$ docker run \
+    --detach \
+    --publish=7474:7474 \
+    --volume=$HOME/neo4j/data:/data \
+    --env=NEO4J_CACHE_MEMORY=4G \
+    neo4j
+```
 
 The following environment variables are available:
 
@@ -90,26 +98,32 @@ The following settings control features that are only available in the Enterpris
 
 To make arbitrary modifications to the Neo4j configuration, provide the container with a `/conf` volume.
 
-	docker run \
-	    --detach \
-	    --publish=7474:7474 \
-	    --volume=$HOME/neo4j/data:/data \
-	    --volume=$HOME/neo4j/conf:/conf \
-	    neo4j
+```console
+$ docker run \
+    --detach \
+    --publish=7474:7474 \
+    --volume=$HOME/neo4j/data:/data \
+    --volume=$HOME/neo4j/conf:/conf \
+    neo4j
+```
 
 Any configuration files in the `/conf` volume will override files provided by the image. This includes values that may have been set in response to environment variables passed to the container by Docker. So if you want to change one value in a file you must ensure that the rest of the file is complete and correct.
 
 To dump an initial set of configuration files, run the image with the `dump-config` command.
 
-	docker run --rm\
-	    --volume=$HOME/neo4j/conf:/conf \
-	    neo4j dump-config
+```console
+$ docker run --rm\
+    --volume=$HOME/neo4j/conf:/conf \
+    neo4j dump-config
+```
 
 ### Build a new image
 
 For more complex customization of the image you can create a new image based on this one.
 
-	FROM neo4j
+```dockerfile
+FROM neo4j
+```
 
 ## Neo4j HA
 
@@ -140,9 +154,11 @@ Within a single Docker host, this can be achieved as follows.
 
 To install a plugin or unmanaged extension, provide a `/plugins` volume containing the jars. For unmanged extensions you also need to provide an environment variable specifying a URI mapping.
 
-	docker run --publish 7474:7474 --volume=$HOME/neo4j/plugins:/plugins \
-	    --env=NEO4J_THIRDPARTY_JAXRS_CLASSES=com.example.extension=/example
-	    neo4j
+```console
+$ docker run --publish 7474:7474 --volume=$HOME/neo4j/plugins:/plugins \
+    --env=NEO4J_THIRDPARTY_JAXRS_CLASSES=com.example.extension=/example
+    neo4j
+```
 
 See the [manual](http://neo4j.com/docs/stable/server-extending.html) for more details on plugins and unmanaged extensions.
 
@@ -150,4 +166,6 @@ See the [manual](http://neo4j.com/docs/stable/server-extending.html) for more de
 
 The Neo4j shell can be run locally within a container using a command like this:
 
-	docker exec --interactive <container> bin/neo4j-shell
+```console
+$ docker exec --interactive <container> bin/neo4j-shell
+```
