@@ -25,7 +25,7 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 3.	If this is a new database, you'll need to run `upgrade`
 
 	```console
-	$ docker run -it --rm --link sentry-postgres:postgres --link sentry-postgres:redis sentry upgrade
+	$ docker run -it --rm --link sentry-postgres:postgres --link sentry-redis:redis sentry upgrade
 	```
 
 	**Note: the `-it` is important as the initial upgrade will prompt to create an initial user and will fail without it**
@@ -52,7 +52,7 @@ If you'd like to be able to access the instance from the host without the contai
 If you did not create a superuser during `upgrade`, use the following to create one:
 
 ```console
-$ docker run -it --rm --link sentry-redis:redis --link some-postgres:postgres sentry createuser
+$ docker run -it --rm --link sentry-redis:redis --link sentry-postgres:postgres sentry createuser
 ```
 
 ## Environment variables
