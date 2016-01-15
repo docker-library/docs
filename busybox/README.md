@@ -1,7 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.21.0-ubuntu`, `1.21-ubuntu`, `1-ubuntu`, `ubuntu` (*ubuntu/Dockerfile*)](https://github.com/docker-library/busybox/blob/b783e409ecd7f7d3682bd18d27d9ea4668fb3cd0/ubuntu/Dockerfile)
--	[`1.24.1`, `1.24`, `1`, `latest` (*upstream/Dockerfile*)](https://github.com/docker-library/busybox/blob/b783e409ecd7f7d3682bd18d27d9ea4668fb3cd0/upstream/Dockerfile)
+-	[`1.24.1-glibc`, `1.24-glibc`, `1-glibc`, `glibc` (*glibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/81c593a39bec858e92bfa2c239aa57e7b988ba37/glibc/Dockerfile)
+-	[`1.24.1-musl`, `1.24-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/81c593a39bec858e92bfa2c239aa57e7b988ba37/musl/Dockerfile)
+-	[`1.24.1-uclibc`, `1.24.1`, `1.24-uclibc`, `1.24`, `1-uclibc`, `1`, `uclibc`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/81c593a39bec858e92bfa2c239aa57e7b988ba37/uclibc/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/busybox`)](https://github.com/docker-library/official-images/blob/master/library/busybox). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
