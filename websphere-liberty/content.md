@@ -1,10 +1,10 @@
 # Overview
 
-The images in this repository contain IBM WebSphere Application Server for Developers Liberty Profile and the IBM Java Runtime Environment. See the license section below for restrictions relating to the usage of this image. For more information on WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
+The images in this repository contain IBM WebSphere Application Server Liberty for Developers and the IBM Java Runtime Environment. See the license section below for restrictions relating to the usage of this image. For more information on WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
 
 # Images
 
-There are multiple images available in this repository. The image with the tag `beta` contains the contents of the runtime JAR for the latest monthly beta. The other images are all based on the latest generally available fix pack.
+There are multiple images available in this repository. The image with the tag `beta` contains the contents of the install archive for the latest monthly beta. The other images are all based on the latest generally available fix pack.
 
 The `kernel` image contains just the Liberty kernel and no additional runtime features. This image can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `installUtility` command to download those features from the online repository.
 
