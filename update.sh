@@ -59,6 +59,7 @@ declare -A otherRepos=(
 	[opensuse]='https://github.com/openSUSE/docker-containers-build'
 	[oraclelinux]='https://github.com/oracle/docker'
 	[perl]='https://github.com/Perl/docker-perl'
+	[photon]='https://github.com/frapposelli/photon-docker-image'
 	[r-base]='https://github.com/rocker-org/rocker'
 	[rakudo]='https://github.com/perl6/docker'
 	[registry]='https://github.com/docker/docker-registry'
