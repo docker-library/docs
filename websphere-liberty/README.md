@@ -5,7 +5,7 @@
 -	[`webProfile6`, `8.5.5.8-webProfile6` (*websphere-liberty/8.5.5/developer/webProfile6/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/086dcba5e235a1c87b11742c833aeb41c6ac11a8/websphere-liberty/8.5.5/developer/webProfile6/Dockerfile)
 -	[`webProfile7`, `8.5.5.8-webProfile7` (*websphere-liberty/8.5.5/developer/webProfile7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/086dcba5e235a1c87b11742c833aeb41c6ac11a8/websphere-liberty/8.5.5/developer/webProfile7/Dockerfile)
 -	[`javaee7`, `8.5.5.8-javaee7`, `8.5.5.8`, `8.5.5`, `latest` (*websphere-liberty/8.5.5/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/086dcba5e235a1c87b11742c833aeb41c6ac11a8/websphere-liberty/8.5.5/developer/javaee7/Dockerfile)
--	[`beta` (*websphere-liberty/beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/086dcba5e235a1c87b11742c833aeb41c6ac11a8/websphere-liberty/beta/Dockerfile)
+-	[`beta` (*websphere-liberty/beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c201526abbe14137dde7e2f9eed03375343d2783/websphere-liberty/beta/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -13,11 +13,11 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # Overview
 
-The images in this repository contain IBM WebSphere Application Server for Developers Liberty Profile and the IBM Java Runtime Environment. See the license section below for restrictions relating to the usage of this image. For more information on WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
+The images in this repository contain IBM WebSphere Application Server Liberty for Developers and the IBM Java Runtime Environment. See the license section below for restrictions relating to the usage of this image. For more information on WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
 
 # Images
 
-There are multiple images available in this repository. The image with the tag `beta` contains the contents of the runtime JAR for the latest monthly beta. The other images are all based on the latest generally available fix pack.
+There are multiple images available in this repository. The image with the tag `beta` contains the contents of the install archive for the latest monthly beta. The other images are all based on the latest generally available fix pack.
 
 The `kernel` image contains just the Liberty kernel and no additional runtime features. This image can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `installUtility` command to download those features from the online repository.
 
@@ -106,10 +106,10 @@ The Dockerfiles and associated scripts are licensed under the [Apache License 2.
 Licenses for the products installed within the images are as follows:
 
 -	[IBM JRE](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?la_formnum=&li_formnum=L-JWOD-9SYNCP&title=IBM%C2%AE+SDK%2C+Java+Technology+Edition%2C+Version+8.0&l=en) (International License Agreement for Non-Warranted Programs)
--	[IBM WebSphere Application Server](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/8.5.5.5/lafiles/runtime/en.html) in the `latest`/`8.5.5` image (International License Agreement for Non-Warranted Programs)
--	[IBM WebSphere Application Server Liberty v9 Beta with Java EE 7](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/beta/lafiles/en.html) in the `beta` image (International License Agreement for Early Release of Programs)
+-	[IBM WebSphere Application Server](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/8.5.5.8/lafiles/runtime/en.html) in the non-beta images (International License Agreement for Non-Warranted Programs)
+-	[IBM WebSphere Application Server Liberty Beta](https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/beta/lafiles/en.html) in the `beta` image (International License Agreement for Early Release of Programs)
 
-Note that these licenses do not permit further distribution and that the terms for WebSphere Application Server in the `latest`/`8.5.5` image restrict usage to a developer machine or build server only, or subject to a maximum 2 gigabyte heap usage across all instances. Instructions are available to enable entitled customers to [upgrade](https://github.com/WASdev/ci.docker/tree/master/websphere-liberty/8.5.5/production-upgrade) the Docker Hub image for production use or [build](https://github.com/WASdev/ci.docker/tree/master/websphere-liberty/8.5.5/production-install) their own production licensed image.
+Note that these licenses do not permit further distribution and that the terms for WebSphere Application Server in the non-beta images restrict usage to a developer machine or build server only, or subject to a maximum 2 gigabyte heap usage across all instances. Instructions are available to enable entitled customers to [upgrade](https://github.com/WASdev/ci.docker/tree/master/websphere-liberty/8.5.5/production-upgrade) the Docker Hub image for production use or [build](https://github.com/WASdev/ci.docker/tree/master/websphere-liberty/8.5.5/production-install) their own production licensed image.
 
 # Supported Docker versions
 
