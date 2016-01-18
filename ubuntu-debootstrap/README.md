@@ -1,3 +1,7 @@
+# **DEPRECATED**
+
+This image is officially deprecated in favor of [the standard `ubuntu` image](https://hub.docker.com/_/ubuntu/), and will receive no further updates. Please adjust your usage accordingly.
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/12.04/Dockerfile)

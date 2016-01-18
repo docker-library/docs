@@ -1,3 +1,7 @@
+# **DEPRECATED**
+
+This image is officially deprecated (especially now that Upstart is no longer the default init system for Ubuntu) and will receive no further updates. Please adjust your usage accordingly.
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`12.04`, `precise` (*sbin-init/ubuntu/upstart/12.04/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/4d24a12b54b75b3e0904d8a285900d88d3326361/sbin-init/ubuntu/upstart/12.04/Dockerfile)
