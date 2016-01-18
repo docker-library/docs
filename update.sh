@@ -132,7 +132,14 @@ for repo in "${repos[@]}"; do
 			composeYml=$'```yaml\n'"$(cat "$repo/docker-compose.yml")"$'\n```'
 		fi
 		
-		cp -v "$helperDir/template.md" "$repo/README.md"
+		deprecated=
+		if [ -f "$repo/deprecated.md" ]; then
+			deprecated=$'# **DEPRECATED**\n\n'
+			deprecated+="$(cat "$repo/deprecated.md")"
+			deprecated+=$'\n\n'
+		fi
+		
+		{ echo -n "$deprecated"; cat "$helperDir/template.md"; } > "$repo/README.md"
 		
 		echo '  TAGS => generate-dockerfile-links-partial.sh'
 		partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"
