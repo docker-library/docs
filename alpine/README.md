@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6` (*versions/library-2.6/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/f1be5937be41a66c10518086467c89abdf8cc2c3/versions/library-2.6/Dockerfile)
--	[`2.7` (*versions/library-2.7/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/1750cff66863408905aaea6615d5201207242f20/versions/library-2.7/Dockerfile)
--	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/2527003a07aa519063640803d21d20aafaab987e/versions/library-3.1/Dockerfile)
--	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/205c2df4031400a89969298706abfb613af8f4de/versions/library-3.2/Dockerfile)
--	[`3.3`, `latest` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/45c47810b54f7a5802df2ad3a5b92f3194a04bbd/versions/library-3.3/Dockerfile)
--	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/bbe53d3fa194ff8c6eff3128a89edce90fb52d55/versions/library-edge/Dockerfile)
+-	[`2.6` (*versions/library-2.6/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/356f821e086d189fb1e052fd2cb79363454fda71/versions/library-2.6/Dockerfile)
+-	[`2.7` (*versions/library-2.7/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/d73b633bf4ede2872ce72d8c3dc63af093bde454/versions/library-2.7/Dockerfile)
+-	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/9bd05ed23c4bbfd63ad4dfc2944e561f20ac060f/versions/library-3.1/Dockerfile)
+-	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/769f9a3432028eb1b306bcc807514d2358f0d691/versions/library-3.2/Dockerfile)
+-	[`3.3`, `latest` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/9ad8b8d1bb062e54ed8d71f351a60dd01341ae1a/versions/library-3.3/Dockerfile)
+-	[`edge` (*versions/library-edge/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/309793a38f9b677f6a869d9c840cf45cfb53bc9f/versions/library-edge/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/alpine`)](https://github.com/docker-library/official-images/blob/master/library/alpine). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
