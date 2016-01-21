@@ -77,7 +77,7 @@ Starting with version 9.3, Jetty comes with built-in support for HTTP/2. However
 ```Dockerfile
 FROM jetty
 
-RUN java -jar \$JETTY_HOME/start.jar --add-to-startd=http2 --approve-all-licenses
+RUN java -jar $JETTY_HOME/start.jar --add-to-startd=http2 --approve-all-licenses
 ```
 
 This will add an `http2.ini` file to the `$JETTY_BASE/start.d` directory and download the required ALPN libraries into `$JETTY_BASE/lib/alpn`, allowing the use of HTTP/2. HTTP/2 connections should be made via the same port as normal HTTPS connections (container port 8443). If you would like to enable the `http2` module via `$JETTY_BASE/start.ini` instead, substitute `--add-to-start` in place of `--add-to-startd` in the `RUN` command above.
