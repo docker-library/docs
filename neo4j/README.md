@@ -93,6 +93,7 @@ The following environment variables are available:
 -	`NEO4J_KEEP_LOGICAL_LOGS`: the retention policy for logical logs, defaults to `100M size`
 -	`NEO4J_AUTH`: controls authentication, set to `none` to disable authentication or `neo4j/<password>` to override the default password (see documentation [here](http://neo4j.com/docs/stable/rest-api-security.html))
 -	`NEO4J_THIRDPARTY_JAXRS_CLASSES`: URI mappings for unmanaged extensions (see below)
+-	`NEO4J_ALLOW_STORE_UPGRADE`: set to `true` to enable upgrades, defaults to `false` (see the [manual](http://neo4j.com/docs/stable/deployment-upgrading.html) for details)
 
 #### Enterprise Edition
 
@@ -134,6 +135,20 @@ For more complex customization of the image you can create a new image based on 
 FROM neo4j
 ```
 
+If you need to make your own configuration changes, we provide a hook so you can do that in a script:
+
+```dockerfile
+COPY extra_conf.sh /extra_conf.sh
+```
+
+Then you can pass in the `EXTENSION_SCRIPT` environment variable at runtime to source the script:
+
+```console
+$ docker run -e "EXTENSION_SCRIPT=/extra_conf.sh" cafe12345678
+```
+
+When the extension script is sourced, the current working directory will be the root of the Neo4j installation.
+
 ## Neo4j HA
 
 (This feature is only available in Neo4j Enterprise Edition.)
@@ -142,22 +157,30 @@ In order to run Neo4j in HA mode under Docker you need to wire up the containers
 
 Within a single Docker host, this can be achieved as follows.
 
-	docker network create --driver=bridge cluster
-	
-	docker run --name=instance1 --detach --publish=7474:7474 --net=cluster --hostname=instance1 \
-	    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance1 --env=NEO4J_SERVER_ID=1 \
-	    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
-	    neo4j:enterprise
-	
-	docker run --name=instance2 --detach --publish 7475:7474 --net=cluster --hostname=instance2 \
-	    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance2 --env=NEO4J_SERVER_ID=2 \
-	    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
-	    neo4j:enterprise
-	
-	docker run --name=instance3 --detach --publish 7476:7474 --net=cluster --hostname=instance3 \
-	    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance3 --env=NEO4J_SERVER_ID=3 \
-	    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
-	    neo4j:enterprise
+```console
+$ docker network create --driver=bridge cluster
+```
+
+```console
+$ docker run --name=instance1 --detach --publish=7474:7474 --net=cluster --hostname=instance1 \
+    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance1 --env=NEO4J_SERVER_ID=1 \
+    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
+    neo4j:enterprise
+```
+
+```console
+$ docker run --name=instance2 --detach --publish 7475:7474 --net=cluster --hostname=instance2 \
+    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance2 --env=NEO4J_SERVER_ID=2 \
+    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
+    neo4j:enterprise
+```
+
+```console
+$ docker run --name=instance3 --detach --publish 7476:7474 --net=cluster --hostname=instance3 \
+    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance3 --env=NEO4J_SERVER_ID=3 \
+    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
+    neo4j:enterprise
+```
 
 ## Plugins and unmanaged extensions
 
@@ -177,6 +200,26 @@ The Neo4j shell can be run locally within a container using a command like this:
 
 ```console
 $ docker exec --interactive <container> bin/neo4j-shell
+```
+
+## AppArmor
+
+Neo4j currently makes use of `lsof` to ensure the server is running and accepting connections on a given port. Some AppArmor configurations (specifically the default configuration on Linux Mint) prevent `lsof` from working as expected.
+
+A workaround is to run the docker image in privileged mode, by adding `--privileged=true` to the docker command line. This is a workaround that disables the security provided by AppArmor, and is not recommended for deployments.
+
+The current best known solution is to enable the use of ptrace in the docker profile of AppArmor. Do this by adding the following line to `/etc/init.d/docker`:
+
+`ptrace peer=docker-default,`
+
+Add this line before the last curly brace, and restart docker.
+
+## HTTPS support
+
+To use your own key and certificate, provide an `/ssl` volume with the key and certificate inside. The key filename must end in `.key`, and the certificate in `.cert`. Only one of each file may be present. You must also publish port `7473` to access the HTTPS endpoint.
+
+```console
+$ docker run --publish 7473:7473 --volume $HOME/neo4j/ssl:/ssl neo4j
 ```
 
 # Supported Docker versions
