@@ -118,7 +118,7 @@ As it contains some non-free Codecs, we dont't ship a binary version of `ffmpeg`
 FROM nuxeo:7.10
 
 RUN echo "deb http://httpredir.debian.org/debian jessie non-free" >> /etc/apt/sources.list
-RUN apt-get update && apt-get install -y --no-install-recommends libfaac-dev
+RUN apt-get update && apt-get install -y --no-install-recommends libfaac-dev sudo git
 
 WORKDIR /tmp
 # Build ffmpeg
