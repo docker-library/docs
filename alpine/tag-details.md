@@ -133,26 +133,26 @@ ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /
 ## `alpine:latest`
 
 ```console
-$ docker pull library/alpine@sha256:e38fe1b7467c337ec823034ebb681c1d930fa922b4a3da8d440d0f0db344dd31
+$ docker pull library/alpine@sha256:d7201bdfa765bebed9a79c385db4378f55593e50dc8d002b9713810320ad93b9
 ```
 
--	Total Virtual Size: 0.0 B
--	Total v2 Content-Length: 2.5 MB (2489689 bytes)
+-	Total Virtual Size: 4.8 MB (4793939 bytes)
+-	Total v2 Content-Length: 2.3 MB (2318895 bytes)
 
 ### Layers (1)
 
-#### `5fb4e141622bf5a5f669291fca121e66b613403ae0f06a1d6409fa52c76577af`
+#### `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
 
 ```dockerfile
-ADD file:43a95cc218d164ff589cb91519964373d53b607469f5ccce725631916392cd88 in /
+ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /
 ```
 
--	Created: Mon, 14 Sep 2015 20:01:14 GMT
--	Docker Version: 1.8.2
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:12b41071e6ce9005c70d448cb8035486489f9d50134a1b04206b46e413ac3a3f`
--	v2 Content-Length: 2.5 MB (2489689 bytes)
--	v2 Last-Modified: Mon, 14 Sep 2015 20:37:51 GMT
+-	Created: Mon, 18 Jan 2016 18:33:12 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 4.8 MB (4793939 bytes)
+-	v2 Blob: `sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598`
+-	v2 Content-Length: 2.3 MB (2318895 bytes)
+-	v2 Last-Modified: Mon, 18 Jan 2016 18:34:49 GMT
 
 ## `alpine:edge`
 
