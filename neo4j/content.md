@@ -140,7 +140,6 @@ $ docker run -e "EXTENSION_SCRIPT=/extra_conf.sh" cafe12345678
 
 When the extension script is sourced, the current working directory will be the root of the Neo4j installation.
 
-
 ## Neo4j HA
 
 (This feature is only available in Neo4j Enterprise Edition.)
