@@ -104,9 +104,7 @@ If you need database access from your php app, you may need to install mysqli ex
 ```dockerfile
 FROM php:5.6-apache
 # Install modules
-RUN apt-get update && apt-get install -y \
-        php5-mysql \
-        && docker-php-ext-install -j$(nproc) mysqli
+RUN docker-php-ext-install mysqli
 CMD ["apache2-foreground"]
 ```
 
