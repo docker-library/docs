@@ -51,7 +51,7 @@ This optional environment variable can be used to define another location - like
 
 ### `POSTGRES_DB`
 
-This optional environment variable can be used to define a different name for the default database that is created when the image is first started. If it is not specified, than the value of `POSTGRES_USER` will be used.
+This optional environment variable can be used to define a different name for the default database that is created when the image is first started. If it is not specified, then the value of `POSTGRES_USER` will be used.
 
 # How to extend this image
 
