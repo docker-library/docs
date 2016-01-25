@@ -2,7 +2,7 @@
 
 # Tags of `debian`
 
--	[`debian:8.2`](#debian82)
+-	[`debian:8.3`](#debian83)
 -	[`debian:8`](#debian8)
 -	[`debian:jessie`](#debianjessie)
 -	[`debian:latest`](#debianlatest)
@@ -26,43 +26,9 @@
 -	[`debian:rc-buggy`](#debianrc-buggy)
 -	[`debian:experimental`](#debianexperimental)
 
-## `debian:8.2`
+## `debian:8.3`
 
-```console
-$ docker pull library/debian@sha256:3aa657c392fa424c0325eccb9d961d34a2a2e8f95463068441e87c7e6f03f7ee
-```
-
--	Total Virtual Size: 125.1 MB (125115267 bytes)
--	Total v2 Content-Length: 51.4 MB (51354050 bytes)
-
-### Layers (2)
-
-#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
-
-```dockerfile
-ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
-```
-
--	Created: Thu, 07 Jan 2016 01:07:09 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
--	v2 Content-Length: 51.4 MB (51354018 bytes)
--	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
-
-#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Thu, 07 Jan 2016 01:07:11 GMT
--	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+**does not exist** (yet?)
 
 ## `debian:8`
 
