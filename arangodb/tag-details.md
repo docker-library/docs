@@ -1797,154 +1797,154 @@ CMD ["/usr/sbin/arangod"]
 ## `arangodb:latest`
 
 ```console
-$ docker pull library/arangodb@sha256:28a0f1f83485565add205d84f70bfa5bb13f499878aacfee98f29cf43fe3fd50
+$ docker pull library/arangodb@sha256:a09f798ee70a517aec0ae97fa757f6b10b7a4c381548ee682fd9fbdbf5431c9e
 ```
 
--	Total Virtual Size: 334.6 MB (334629928 bytes)
--	Total v2 Content-Length: 127.0 MB (127031564 bytes)
+-	Total Virtual Size: 284.5 MB (284481498 bytes)
+-	Total v2 Content-Length: 110.1 MB (110094315 bytes)
 
 ### Layers (14)
 
-#### `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
+#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
 
 ```dockerfile
-ADD file:0098703cdfd5b5eda3aececc4d4600b0fb4b753e19c832c73df4f9d5fdcf3598 in /
+ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
 ```
 
--	Created: Thu, 07 Jan 2016 01:07:09 GMT
+-	Created: Mon, 25 Jan 2016 22:24:35 GMT
 -	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:81cc5f26a6a083c024fb4138326e4d00f9a73f60c0e2a4399e1f7617ebe8c6c9`
--	v2 Content-Length: 51.4 MB (51354018 bytes)
--	v2 Last-Modified: Wed, 06 Jan 2016 23:31:51 GMT
+-	Virtual Size: 125.1 MB (125082947 bytes)
+-	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
+-	v2 Content-Length: 51.4 MB (51358904 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
 
-#### `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
+#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 07 Jan 2016 01:07:11 GMT
--	Parent Layer: `cb6fb082434ea9d7f25798e96abc06cb176cbe910970ec86874555e7c9fbc04a`
+-	Created: Mon, 25 Jan 2016 22:24:37 GMT
+-	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9e4378f312c3a3aa71643695fe125876b545be6ca490cb5603a29e2220ebf1be`
+#### `345ffba915a8d871bfe75989ed980f2502b7abc8ef728ded8235a188c69d897d`
 
 ```dockerfile
 MAINTAINER Frank Celler <info@arangodb.com>
 ```
 
--	Created: Fri, 08 Jan 2016 08:14:38 GMT
--	Parent Layer: `d4b2ba78e3b4b44bdfab5b625c210d6e410debba50446520fe1c3e1a5ee9cdea`
+-	Created: Tue, 26 Jan 2016 07:49:04 GMT
+-	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2aa86d543cd7b6ee7f68d6a8dffcd6ce66edf68dbff59ba5ba3f832781b9d600`
+#### `61d2ccb973f1e82ebe4db39e9f64dea0911f0738df5659742b5ab4d5cc2afd9a`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
 ```
 
--	Created: Fri, 08 Jan 2016 08:14:40 GMT
--	Parent Layer: `9e4378f312c3a3aa71643695fe125876b545be6ca490cb5603a29e2220ebf1be`
+-	Created: Tue, 26 Jan 2016 07:49:06 GMT
+-	Parent Layer: `345ffba915a8d871bfe75989ed980f2502b7abc8ef728ded8235a188c69d897d`
 -	Docker Version: 1.8.3
 -	Virtual Size: 12.6 KB (12644 bytes)
--	v2 Blob: `sha256:bb3fb48827ac174e015f0e6e7f3b785965c76dce8ea41b3b3bc088731e11ca44`
--	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 15:09:33 GMT
+-	v2 Blob: `sha256:50621e5380be7c37dc79909f9109de028ff3afa86edbac4ae902b388b290371a`
+-	v2 Content-Length: 6.8 KB (6767 bytes)
+-	v2 Last-Modified: Tue, 26 Jan 2016 18:43:55 GMT
 
-#### `4efd4502e1a7e798c345d87fed8dabc59de0337cb99d4efa94dfafdc6783747c`
+#### `7f2f5ceae19685964c8829205eec0210678e0a0e54f3c8d46be13652c38357d1`
 
 ```dockerfile
 ENV ARCHITECTURE=amd64
 ```
 
--	Created: Fri, 08 Jan 2016 08:14:41 GMT
--	Parent Layer: `2aa86d543cd7b6ee7f68d6a8dffcd6ce66edf68dbff59ba5ba3f832781b9d600`
+-	Created: Tue, 26 Jan 2016 07:49:06 GMT
+-	Parent Layer: `61d2ccb973f1e82ebe4db39e9f64dea0911f0738df5659742b5ab4d5cc2afd9a`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `161c1a0bc7269f3237aadcea916263cf230587953a86a5f6566117d02e86eb83`
+#### `5d083753bbf3c30f58e6847fd5c4d9f2b6bcacbf8ead4e1befe397ea7e5379db`
 
 ```dockerfile
-ENV ARANGO_VERSION=2.7.2
+ENV ARANGO_VERSION=2.8.0
 ```
 
--	Created: Fri, 08 Jan 2016 08:22:38 GMT
--	Parent Layer: `4efd4502e1a7e798c345d87fed8dabc59de0337cb99d4efa94dfafdc6783747c`
+-	Created: Tue, 26 Jan 2016 18:24:41 GMT
+-	Parent Layer: `7f2f5ceae19685964c8829205eec0210678e0a0e54f3c8d46be13652c38357d1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2651c5ea4ae6a0651e197370c27f355e0f35ef7953f95d88cb749ee90132532b`
+#### `9a68a83985d069b7fb35c7e848ce5d2414f4b1be9fba8552b96cd597a49de3b2`
 
 ```dockerfile
 ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0
 ```
 
--	Created: Fri, 08 Jan 2016 08:22:38 GMT
--	Parent Layer: `161c1a0bc7269f3237aadcea916263cf230587953a86a5f6566117d02e86eb83`
+-	Created: Tue, 26 Jan 2016 18:24:42 GMT
+-	Parent Layer: `5d083753bbf3c30f58e6847fd5c4d9f2b6bcacbf8ead4e1befe397ea7e5379db`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `08d6c84bd7c45bb2613ccc7eee7435088c8d1a635bd80cd06e880081d832932d`
+#### `cc3a51c98ad78371982c83282f3580fb324fc155305f3d4f1ab80a2f751b82e7`
 
 ```dockerfile
-ENV ARANGO_PACKAGE=arangodb_2.7.2_amd64.deb
+ENV ARANGO_PACKAGE=arangodb_2.8.0_amd64.deb
 ```
 
--	Created: Fri, 08 Jan 2016 08:22:39 GMT
--	Parent Layer: `2651c5ea4ae6a0651e197370c27f355e0f35ef7953f95d88cb749ee90132532b`
+-	Created: Tue, 26 Jan 2016 18:24:43 GMT
+-	Parent Layer: `9a68a83985d069b7fb35c7e848ce5d2414f4b1be9fba8552b96cd597a49de3b2`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `78de62ed72d24be2070eb6910c635269517de2bf264b87df67f12f27b2dc92e0`
+#### `d827c10580feeb098b15d3681c126a6710819e6688853ab9e46c1068ba85344e`
 
 ```dockerfile
-ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.7.2_amd64.deb
+ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.8.0_amd64.deb
 ```
 
--	Created: Fri, 08 Jan 2016 08:22:39 GMT
--	Parent Layer: `08d6c84bd7c45bb2613ccc7eee7435088c8d1a635bd80cd06e880081d832932d`
+-	Created: Tue, 26 Jan 2016 18:24:45 GMT
+-	Parent Layer: `cc3a51c98ad78371982c83282f3580fb324fc155305f3d4f1ab80a2f751b82e7`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b672c6b1c3aecdd1bf8e7955f1b8b87e299a912fd63245073f86f7f8ef56e4b8`
+#### `7e6f1c441ec77fc316423edb2e047dd28f795d4de5ef32e04c1e9bcef43b8a3f`
 
 ```dockerfile
-ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.7.2_amd64.deb.asc
+ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb2/Debian_8.0/amd64/arangodb_2.8.0_amd64.deb.asc
 ```
 
--	Created: Fri, 08 Jan 2016 08:22:40 GMT
--	Parent Layer: `78de62ed72d24be2070eb6910c635269517de2bf264b87df67f12f27b2dc92e0`
+-	Created: Tue, 26 Jan 2016 18:24:46 GMT
+-	Parent Layer: `d827c10580feeb098b15d3681c126a6710819e6688853ab9e46c1068ba85344e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e9d0ca035de80206a8fc3403bde4eecaa267e7e50bb5c09a982ff916452a519f`
+#### `1e0b694176fe7e4e7d1123f9e3b716d48175cecf538586cbf890a1db44060bb1`
 
 ```dockerfile
 RUN apt-get update &&\
@@ -1967,50 +1967,50 @@ RUN apt-get update &&\
      rm -f ${ARANGO_PACKAGE}*
 ```
 
--	Created: Fri, 08 Jan 2016 08:26:00 GMT
--	Parent Layer: `b672c6b1c3aecdd1bf8e7955f1b8b87e299a912fd63245073f86f7f8ef56e4b8`
+-	Created: Tue, 26 Jan 2016 18:28:15 GMT
+-	Parent Layer: `7e6f1c441ec77fc316423edb2e047dd28f795d4de5ef32e04c1e9bcef43b8a3f`
 -	Docker Version: 1.8.3
--	Virtual Size: 209.5 MB (209502017 bytes)
--	v2 Blob: `sha256:4b2e8e870d0509146aed5e77b80ee1d7155944151f1c252d0a6f837f016de264`
--	v2 Content-Length: 75.7 MB (75670425 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 15:14:59 GMT
+-	Virtual Size: 159.4 MB (159385907 bytes)
+-	v2 Blob: `sha256:79719f7969e20509220a5833dcea713d6144b3292e7751d532770e1a0f753a0a`
+-	v2 Content-Length: 58.7 MB (58728292 bytes)
+-	v2 Last-Modified: Tue, 26 Jan 2016 19:00:44 GMT
 
-#### `dd6bd6451499b8c8afe9c7722a694f60aa506b5b71aaaf8910d81b78f067dec4`
+#### `9b1e3de89b46032cc41862321909fbaa6a5433c82cb216bb00a97921041ccebd`
 
 ```dockerfile
 VOLUME [/var/lib/arangodb /var/lib/arangodb-apps]
 ```
 
--	Created: Fri, 08 Jan 2016 08:26:02 GMT
--	Parent Layer: `e9d0ca035de80206a8fc3403bde4eecaa267e7e50bb5c09a982ff916452a519f`
+-	Created: Tue, 26 Jan 2016 18:29:08 GMT
+-	Parent Layer: `1e0b694176fe7e4e7d1123f9e3b716d48175cecf538586cbf890a1db44060bb1`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f9fc7960e66967528414654f64a7094b090fb61fb8847d32c7ca205d5306d3e0`
+#### `88d62c4ac370043006437e7d47e1afb602996b5bbf414ee096b50ebfed204d2e`
 
 ```dockerfile
 EXPOSE 8529/tcp
 ```
 
--	Created: Fri, 08 Jan 2016 08:26:03 GMT
--	Parent Layer: `dd6bd6451499b8c8afe9c7722a694f60aa506b5b71aaaf8910d81b78f067dec4`
+-	Created: Tue, 26 Jan 2016 18:29:09 GMT
+-	Parent Layer: `9b1e3de89b46032cc41862321909fbaa6a5433c82cb216bb00a97921041ccebd`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `6207ba9c93f9e3db139fde6fe441f06e7247b9ee24df08982ae76eb6ca4b7b5d`
+#### `72343142439f367492015ec2a25d4162bb231cd556a6957752b06e4e40dc038c`
 
 ```dockerfile
 CMD ["/usr/sbin/arangod"]
 ```
 
--	Created: Fri, 08 Jan 2016 08:26:04 GMT
--	Parent Layer: `f9fc7960e66967528414654f64a7094b090fb61fb8847d32c7ca205d5306d3e0`
+-	Created: Tue, 26 Jan 2016 18:29:11 GMT
+-	Parent Layer: `88d62c4ac370043006437e7d47e1afb602996b5bbf414ee096b50ebfed204d2e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
