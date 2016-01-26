@@ -3,9 +3,9 @@
 -	[`1.7`, `1.7.24`, `latest`, `1.7-jre`, `1.7.24-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3205a2257cebd730fefa2f187faae94dddf84598/1.7/jre/Dockerfile)
 -	[`1.7-jdk`, `1.7.24-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3205a2257cebd730fefa2f187faae94dddf84598/1.7/jdk/Dockerfile)
 -	[`1.7-onbuild`, `1.7.24-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3205a2257cebd730fefa2f187faae94dddf84598/1.7/onbuild/Dockerfile)
--	[`9`, `9.0`, `9.0-jre`, `9.0.4`, `9.0.4-jre`, `9.0.4.0`, `9.0.4.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3f9cf4a89153f5911b20ab71804b587f4c7ec347/9000/jre/Dockerfile)
--	[`9.0-jdk`, `9.0.4-jdk`, `9.0.4.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3f9cf4a89153f5911b20ab71804b587f4c7ec347/9000/jdk/Dockerfile)
--	[`9-onbuild`, `9.0-onbuild`, `9.0.4-onbuild`, `9.0.4.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3f9cf4a89153f5911b20ab71804b587f4c7ec347/9000/onbuild/Dockerfile)
+-	[`9`, `9.0`, `9.0-jre`, `9.0.5`, `9.0.5-jre`, `9.0.5.0`, `9.0.5.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/13bf6136f584d533fabbdecc7233983e95fa66e2/9000/jre/Dockerfile)
+-	[`9.0-jdk`, `9.0.5-jdk`, `9.0.5.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/13bf6136f584d533fabbdecc7233983e95fa66e2/9000/jdk/Dockerfile)
+-	[`9-onbuild`, `9.0-onbuild`, `9.0.5-onbuild`, `9.0.5.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/13bf6136f584d533fabbdecc7233983e95fa66e2/9000/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
