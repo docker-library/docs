@@ -2,11 +2,16 @@
 
 # Tags of `rails`
 
+-	[`rails:4.2.5.1`](#rails4251)
 -	[`rails:4.2.5`](#rails425)
 -	[`rails:4.2`](#rails42)
 -	[`rails:4`](#rails4)
 -	[`rails:latest`](#railslatest)
 -	[`rails:onbuild`](#railsonbuild)
+
+## `rails:4.2.5.1`
+
+**does not exist** (yet?)
 
 ## `rails:4.2.5`
 
