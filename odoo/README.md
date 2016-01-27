@@ -79,17 +79,14 @@ $ docker run -p 127.0.0.1:8071:8069 --name odoo3 --link db:db -t odoo
 
 Please note that for plain use of mails and reports functionalities, when the host and container ports differ (e.g. 8070 and 8069), one has to set, in Odoo, Settings->Parameters->System Parameters (requires technical features), web.base.url to the container port (e.g. 127.0.0.1:8069).
 
-# How to upgrade this image
+# Upgrade
 
-Suppose you created a database from an Odoo instance named old-odoo, and you want to access this database from a new Odoo instance named new-odoo, e.g. because you've just downloaded a newer Odoo image.
+Be advise that you can't upgrade this image to a newer version.
+For instance if you run the version 8, and you want to upgrade to version 9, you can't.
 
-By default, Odoo 8.0 uses a filestore (located at /var/lib/odoo/filestore/) for attachments. You should restore this filestore in your new Odoo instance by running
+The only way to upgrade for now is to pay [odoo services](https://upgrade.odoo.com/database/upload) and upload your data to their system (yes, it is a bit scary for the privacy of your business).
 
-```console
-$ docker run --volumes-from old-odoo -p 127.0.0.1:8070:8069 --name new-odoo --link db:db -t odoo
-```
-
-You can also simply prevent Odoo from using the filestore by setting the system parameter `ir_attachment.location` to `db-storage` in Settings->Parameters->System Parameters (requires technical features).
+If you are about to take the decision wether to use odoo or not for your business, please consifer this information that could greatly impact your business. Indeed, a non up to date software is dangerous for the security of your business also.
 
 # License
 
