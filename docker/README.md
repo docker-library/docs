@@ -6,9 +6,9 @@
 -	[`1.8.3`, `1.8` (*1.8/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.8/Dockerfile)
 -	[`1.8.3-dind`, `1.8-dind` (*1.8/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.8/dind/Dockerfile)
 -	[`1.8.3-git`, `1.8-git` (*1.8/git/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.8/git/Dockerfile)
--	[`1.10.0-rc1`, `1.10-rc`, `rc` (*1.10-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/945f73423dd843ee587567712b6657d5780307da/1.10-rc/Dockerfile)
--	[`1.10.0-rc1-dind`, `1.10-rc-dind`, `rc-dind` (*1.10-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/945f73423dd843ee587567712b6657d5780307da/1.10-rc/dind/Dockerfile)
--	[`1.10.0-rc1-git`, `1.10-rc-git`, `rc-git` (*1.10-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/945f73423dd843ee587567712b6657d5780307da/1.10-rc/git/Dockerfile)
+-	[`1.10.0-rc2`, `1.10-rc`, `rc` (*1.10-rc/Dockerfile*)](https://github.com/docker-library/docker/blob/abd4b429d8479c35ef05bca4eb52faf8ea49dba0/1.10-rc/Dockerfile)
+-	[`1.10.0-rc2-dind`, `1.10-rc-dind`, `rc-dind` (*1.10-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/945f73423dd843ee587567712b6657d5780307da/1.10-rc/dind/Dockerfile)
+-	[`1.10.0-rc2-git`, `1.10-rc-git`, `rc-git` (*1.10-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/945f73423dd843ee587567712b6657d5780307da/1.10-rc/git/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
