@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.7.4`, `7.7`, `7` (*7.7/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/e60211c46e9fd4b4f9ee679946bc9915ae2bf0c0/7.7/Dockerfile)
--	[`8.0.4`, `8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/11730f93790b6593ce6ecb81f1ca7652197f99ce/8.0/Dockerfile)
--	[`8.0.4-onbuild`, `8.0-onbuild`, `8-onbuild`, `onbuild` (*8.0/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/e60211c46e9fd4b4f9ee679946bc9915ae2bf0c0/8.0/onbuild/Dockerfile)
+-	[`8.0.5`, `8.0`, `8`, `latest` (*8.0/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/2e70636f1cd75b67c05823d49ead23eda29ddb0d/8.0/Dockerfile)
+-	[`8.0.5-onbuild`, `8.0-onbuild`, `8-onbuild`, `onbuild` (*8.0/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/e60211c46e9fd4b4f9ee679946bc9915ae2bf0c0/8.0/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
