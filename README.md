@@ -14,17 +14,14 @@ All Markdown files here are run through [tianon's fork of `markdownfmt`](https:/
 -	create a `license.md` (required)
 -	add a `logo.png` (recommended)
 -	edit `update.sh` as needed (see below)
-
-Optionally: (we run this periodically, especially before pushing updated descriptions)
-
--	run `./update.sh myimage` to generate `myimage/README.md`
--	run `./markdownfmt.sh -l myimage` to verify whether format of your markdown files is compliant to `tianon/markdownfmt`. In case you see any file names, markdownfmt detected some issues, which might result in a failed build during continuous integration.
+-	run `./markdownfmt.sh -l myimage` to verify that the format of your markdown files is compliant with `tianon/markdownfmt`. In case you see any file names, markdownfmt detected some issues, which might result in a failed build during continuous integration.
+-	optionally run `./update.sh myimage` to generate `myimage/README.md` for review. **Note:** do not actually commit the `README.md` file; it is automatically generated/committed before being uploaded to DockerHub.
 
 # What are all these files?
 
 ## `update.sh`
 
-This is the main script used to generate the `README.md` files for each image. The generated file is committed along with the files used to generate it (see below on what customizations are available). When a new image is added that is not under the `docker-library` namespace on GitHub, a new entry must be added to the `otherRepos` array in this script. Accepted arguments are which image(s) you want to update and no arguments to update all of them.
+This is the main script used to generate the `README.md` files for each image. When a new image is added that is not under the `docker-library` namespace on GitHub, a new entry must be added to the `otherRepos` array in this script. Accepted arguments are which image(s) you want to update and no arguments to update all of them.
 
 ## `generate-repo-stub-readme.sh`
 
@@ -99,6 +96,6 @@ on the [mailing list](http://www.postgresql.org/community/lists/subscribe/) or
 
 # Issues and Contributing
 
-If you would like to make a new Official Image, be sure to follow the [guidelines](https://docs.docker.com/docker-hub/official_repos/) and talk to partners@docker.com.
+If you would like to make a new Official Image, be sure to follow the [guidelines](https://docs.docker.com/docker-hub/official_repos/) and optionally talk to officialrepos@docker.com.
 
 Feel free to make a pull request for fixes and improvements to current documentation. For questions or problems on this repo come talk to us via the `#docker-library` IRC channel on [Freenode](https://freenode.net) or open up an issue.
