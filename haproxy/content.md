@@ -23,7 +23,10 @@ FROM haproxy:1.5
 COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
 ```
 
-Build and run:
+## Test the configuration file	
+	docker run -it --rm  --name my-running-haproxy -v /path/to/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro haproxy:1.5 haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
+	
+## Build and run
 
 ```console
 $ docker build -t my-haproxy .
