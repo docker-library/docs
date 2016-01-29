@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/0edfc5e01d2699dd781f25a6b1ee76dcf7e41e31/2.2/Dockerfile)
--	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/0edfc5e01d2699dd781f25a6b1ee76dcf7e41e31/2.4/Dockerfile)
--	[`2.6.11`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/0edfc5e01d2699dd781f25a6b1ee76dcf7e41e31/2.6/Dockerfile)
--	[`3.0.9`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/890eccb3cb0ddd402c7c13862182914746bfaa56/3.0/Dockerfile)
--	[`3.1.9`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/0edfc5e01d2699dd781f25a6b1ee76dcf7e41e31/3.1/Dockerfile)
--	[`3.2.1`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/0edfc5e01d2699dd781f25a6b1ee76dcf7e41e31/3.2/Dockerfile)
+-	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/2.2/Dockerfile)
+-	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/2.4/Dockerfile)
+-	[`2.6.11`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/2.6/Dockerfile)
+-	[`3.0.9`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/3.0/Dockerfile)
+-	[`3.1.9`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/3.1/Dockerfile)
+-	[`3.2.1`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/3.2/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
