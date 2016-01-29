@@ -85,3 +85,27 @@ The images are designed to support a number of different usage patterns. The fol
 	$ docker run -d -p 80:9080 \
 	  --volumes-from app websphere-liberty:webProfile6
 	```
+
+# Using IBM JRE Class data sharing
+
+The IBM JRE provides a feature [Class data sharing](http://www-01.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/understanding/shared_classes.html) which offers transparent and dynamic sharing of data between multiple Java Virtual Machines running on the same host using shared memory backed by a file. When running the Liberty Docker image, it looks for the file at `/opt/ibm/wlp/output/.classCache`. To benefit from Class data sharing, this location needs to be shared between containers either via the host or a data volume container.
+
+Taking the application image from example 3 above, containers can share the host file location (containing the shared cache) `/tmp/websphere-liberty/classCache` as follows:
+
+```console
+docker run -d -p 80:9080 -p 443:9443 \
+    -v /tmp/websphere-liberty/classCache:/opt/ibm/wlp/output/.classCache app
+```
+
+Alternatively, create a named data volume container that exposes a volume at the location of the shared file:
+
+```console
+docker run -e LICENSE=accept -v /opt/ibm/wlp/output/.classCache \
+    --name classcache websphere-liberty true
+```
+
+Then run the WebSphere Liberty image with the volumes from the data volume container classcache mounted as follows:
+
+```console
+docker run -d -p 80:9080 -p 443:9443 --volumes-from classcache app
+```
