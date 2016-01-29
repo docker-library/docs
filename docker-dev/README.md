@@ -1,3 +1,7 @@
+# **DEPRECATED**
+
+This image is officially deprecated in favor of [the `dockercore/docker` automated build](https://hub.docker.com/r/dockercore/docker/), and will receive no further updates. Please adjust your usage accordingly.
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.9.1`, `1.9`, `1` (*Dockerfile*)](https://github.com/docker/docker/blob/a34a1d598c6096ed8b5ce5219e77d68e5cd85462/Dockerfile)
