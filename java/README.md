@@ -4,8 +4,8 @@
 -	[`openjdk-6b36-jre`, `openjdk-6-jre`, `6b36-jre`, `6-jre` (*openjdk-6-jre/Dockerfile*)](https://github.com/docker-library/java/blob/c046a7da2ac56f0ee5b870590de3e5a1cce569a7/openjdk-6-jre/Dockerfile)
 -	[`openjdk-7u95-jdk`, `openjdk-7u95`, `openjdk-7-jdk`, `openjdk-7`, `7u95-jdk`, `7u95`, `7-jdk`, `7` (*openjdk-7-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/f71d77ba3fe01cbfc625e38c1841531870f0538c/openjdk-7-jdk/Dockerfile)
 -	[`openjdk-7u95-jre`, `openjdk-7-jre`, `7u95-jre`, `7-jre` (*openjdk-7-jre/Dockerfile*)](https://github.com/docker-library/java/blob/f71d77ba3fe01cbfc625e38c1841531870f0538c/openjdk-7-jre/Dockerfile)
--	[`openjdk-8u66-jdk`, `openjdk-8u66`, `openjdk-8-jdk`, `openjdk-8`, `8u66-jdk`, `8u66`, `8-jdk`, `8`, `jdk`, `latest` (*openjdk-8-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/c046a7da2ac56f0ee5b870590de3e5a1cce569a7/openjdk-8-jdk/Dockerfile)
--	[`openjdk-8u66-jre`, `openjdk-8-jre`, `8u66-jre`, `8-jre`, `jre` (*openjdk-8-jre/Dockerfile*)](https://github.com/docker-library/java/blob/c046a7da2ac56f0ee5b870590de3e5a1cce569a7/openjdk-8-jre/Dockerfile)
+-	[`openjdk-8u72-jdk`, `openjdk-8u72`, `openjdk-8-jdk`, `openjdk-8`, `8u72-jdk`, `8u72`, `8-jdk`, `8`, `jdk`, `latest` (*openjdk-8-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/2dd0496901a9c01c78895d0e6618b36c08f78bde/openjdk-8-jdk/Dockerfile)
+-	[`openjdk-8u72-jre`, `openjdk-8-jre`, `8u72-jre`, `8-jre`, `jre` (*openjdk-8-jre/Dockerfile*)](https://github.com/docker-library/java/blob/2dd0496901a9c01c78895d0e6618b36c08f78bde/openjdk-8-jre/Dockerfile)
 -	[`openjdk-9-b102-jdk`, `openjdk-9-b102`, `openjdk-9-jdk`, `openjdk-9`, `9-b102-jdk`, `9-b102`, `9-jdk`, `9` (*openjdk-9-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/0235b70854cf9251ab4a1479696975412320a9bd/openjdk-9-jdk/Dockerfile)
 -	[`openjdk-9-b102-jre`, `openjdk-9-jre`, `9-b102-jre`, `9-jre` (*openjdk-9-jre/Dockerfile*)](https://github.com/docker-library/java/blob/0235b70854cf9251ab4a1479696975412320a9bd/openjdk-9-jre/Dockerfile)
 

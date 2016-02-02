@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.1-python2`, `1.9-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/72cb89ce2a563a495619de41b2b5bb0cb52b28dc/2.7/Dockerfile)
+-	[`1.9.2-python2`, `1.9-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/c5e6eb31208f4645a5c01c4bb6f602b8bd0b2bfe/2.7/Dockerfile)
 -	[`python2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/2.7/onbuild/Dockerfile)
--	[`1.9.1-python3`, `1.9.1`, `1.9-python3`, `1.9`, `1-python3`, `1`, `python3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/72cb89ce2a563a495619de41b2b5bb0cb52b28dc/3.4/Dockerfile)
+-	[`1.9.2-python3`, `1.9.2`, `1.9-python3`, `1.9`, `1-python3`, `1`, `python3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/c5e6eb31208f4645a5c01c4bb6f602b8bd0b2bfe/3.4/Dockerfile)
 -	[`python3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/3.4/onbuild/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
