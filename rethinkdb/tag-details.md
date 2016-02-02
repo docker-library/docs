@@ -24,11 +24,13 @@
 -	[`rethinkdb:2.1.3`](#rethinkdb213)
 -	[`rethinkdb:2.1.4`](#rethinkdb214)
 -	[`rethinkdb:2.1.5`](#rethinkdb215)
+-	[`rethinkdb:2.1.6`](#rethinkdb216)
 -	[`rethinkdb:2.1`](#rethinkdb21)
 -	[`rethinkdb:2.2.0`](#rethinkdb220)
 -	[`rethinkdb:2.2.1`](#rethinkdb221)
 -	[`rethinkdb:2.2.2`](#rethinkdb222)
 -	[`rethinkdb:2.2.3`](#rethinkdb223)
+-	[`rethinkdb:2.2.4`](#rethinkdb224)
 -	[`rethinkdb:2.2`](#rethinkdb22)
 -	[`rethinkdb:2`](#rethinkdb2)
 -	[`rethinkdb:latest`](#rethinkdblatest)
@@ -3685,6 +3687,10 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
+## `rethinkdb:2.1.6`
+
+**does not exist** (yet?)
+
 ## `rethinkdb:2.1`
 
 ```console
@@ -4514,6 +4520,10 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `rethinkdb:2.2.4`
+
+**does not exist** (yet?)
 
 ## `rethinkdb:2.2`
 
