@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/7.10/Dockerfile)
+-	[`latest`, `FT`, `8`, `8.1` (*8.1/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b20a7c5cdafa3b999b83f21dd26b98bf4082d13d/8.1/Dockerfile)
+-	[`LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/7.10/Dockerfile)
 -	[`7.4` (*7.4/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/7.4/Dockerfile)
 -	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/6.0/Dockerfile)
 
