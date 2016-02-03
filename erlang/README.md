@@ -1,10 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`18.2.2`, `18.2`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/a44b506d60f417c1135257789244f9c3f7941118/18/Dockerfile)
--	[`18.2-slim`, `18-slim`, `slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/5deb27b20bb30e0ff5c3d8d8c96df06462ed5909/18/slim/Dockerfile)
--	[`18.2.2-onbuild`, `18.2-onbuild`, `18-onbuild`, `onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/5deb27b20bb30e0ff5c3d8d8c96df06462ed5909/18/onbuild/Dockerfile)
--	[`17.5.6.8`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/5deb27b20bb30e0ff5c3d8d8c96df06462ed5909/17/Dockerfile)
--	[`17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/5deb27b20bb30e0ff5c3d8d8c96df06462ed5909/17/slim/Dockerfile)
+-	[`18.2.3`, `18.2`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/18/Dockerfile)
+-	[`18.2-slim`, `18-slim`, `slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/18/slim/Dockerfile)
+-	[`18.2.3-onbuild`, `18.2-onbuild`, `18-onbuild`, `onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/18/onbuild/Dockerfile)
+-	[`17.5.6.8`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/Dockerfile)
+-	[`17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/slim/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/erlang`)](https://github.com/docker-library/official-images/blob/master/library/erlang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
