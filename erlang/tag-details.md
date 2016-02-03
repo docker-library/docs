@@ -2857,11 +2857,11 @@ CMD ["rebar3" "shell"]
 ## `erlang:17.5.6.8`
 
 ```console
-$ docker pull library/erlang@sha256:891337fc691e285c30ac2ca78dac9846a6e1e0ed667226ff0778ada87e988dee
+$ docker pull library/erlang@sha256:2bdf53daa48588d029b50637878e1ebdbf5ca5ebc23f9a365ca772d2ce8b1ec8
 ```
 
--	Total Virtual Size: 740.2 MB (740186296 bytes)
--	Total v2 Content-Length: 297.0 MB (297032964 bytes)
+-	Total Virtual Size: 742.9 MB (742883809 bytes)
+-	Total v2 Content-Length: 297.8 MB (297841698 bytes)
 
 ### Layers (8)
 
@@ -2994,7 +2994,7 @@ ENV OTP_VERSION=17.5.6.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ee15e0b856fab382bb30ab4cf971c97aeae896a7dd81f417e468a6f6905c5530`
+#### `635a3f0a80eac82f80d766e17331e2aa8018abb7d4cac9fd9639de97e43e4119`
 
 ```dockerfile
 RUN set -xe \
@@ -3013,27 +3013,26 @@ RUN set -xe \
 	&& make -j$(nproc) \
 	&& make install \
 	&& find /usr/local -name examples |xargs rm -rf \
-	&& apt-get purge -y --auto-remove $buildDeps \
 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 28 Jan 2016 19:59:40 GMT
+-	Created: Wed, 03 Feb 2016 21:54:22 GMT
 -	Parent Layer: `2ac66d255f83aa7151d4fb925fa01bd3256ca003c8110198eec5df76433e3ffe`
--	Docker Version: 1.8.3
--	Virtual Size: 133.6 MB (133569701 bytes)
--	v2 Blob: `sha256:fbc46555aa12c0598410d9312960efccc9c9f0ebec1de18352802ea45733f143`
--	v2 Content-Length: 56.1 MB (56065619 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 20:23:18 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 136.3 MB (136267214 bytes)
+-	v2 Blob: `sha256:2bbe706597826afe9dd79c25feed6d89a13a777189c4e031e325932bbb4f639e`
+-	v2 Content-Length: 56.9 MB (56874353 bytes)
+-	v2 Last-Modified: Wed, 03 Feb 2016 22:08:01 GMT
 
-#### `90d10106d5ddf2ce3d4a3160f6d5c53a0f8f9bf30539d32c39f35996aa1991cd`
+#### `520f8075a35f29895cff8af7029f4e63aa168c6927b1b90235cd38d553d2b18c`
 
 ```dockerfile
 CMD ["erl"]
 ```
 
--	Created: Thu, 28 Jan 2016 19:59:42 GMT
--	Parent Layer: `ee15e0b856fab382bb30ab4cf971c97aeae896a7dd81f417e468a6f6905c5530`
--	Docker Version: 1.8.3
+-	Created: Wed, 03 Feb 2016 21:54:24 GMT
+-	Parent Layer: `635a3f0a80eac82f80d766e17331e2aa8018abb7d4cac9fd9639de97e43e4119`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3042,11 +3041,11 @@ CMD ["erl"]
 ## `erlang:17.5`
 
 ```console
-$ docker pull library/erlang@sha256:13ed2b7425ff4a26070f8fcae5e1510e588dadfe818496c51a294ee3f36d1d80
+$ docker pull library/erlang@sha256:e1550ba6a7ebba3bc53c7fbf8aa48237ad0b9aeece2685880e530bf1a305401e
 ```
 
--	Total Virtual Size: 740.2 MB (740186296 bytes)
--	Total v2 Content-Length: 297.0 MB (297032964 bytes)
+-	Total Virtual Size: 742.9 MB (742883809 bytes)
+-	Total v2 Content-Length: 297.8 MB (297841698 bytes)
 
 ### Layers (8)
 
@@ -3179,7 +3178,7 @@ ENV OTP_VERSION=17.5.6.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ee15e0b856fab382bb30ab4cf971c97aeae896a7dd81f417e468a6f6905c5530`
+#### `635a3f0a80eac82f80d766e17331e2aa8018abb7d4cac9fd9639de97e43e4119`
 
 ```dockerfile
 RUN set -xe \
@@ -3198,27 +3197,26 @@ RUN set -xe \
 	&& make -j$(nproc) \
 	&& make install \
 	&& find /usr/local -name examples |xargs rm -rf \
-	&& apt-get purge -y --auto-remove $buildDeps \
 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 28 Jan 2016 19:59:40 GMT
+-	Created: Wed, 03 Feb 2016 21:54:22 GMT
 -	Parent Layer: `2ac66d255f83aa7151d4fb925fa01bd3256ca003c8110198eec5df76433e3ffe`
--	Docker Version: 1.8.3
--	Virtual Size: 133.6 MB (133569701 bytes)
--	v2 Blob: `sha256:fbc46555aa12c0598410d9312960efccc9c9f0ebec1de18352802ea45733f143`
--	v2 Content-Length: 56.1 MB (56065619 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 20:23:18 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 136.3 MB (136267214 bytes)
+-	v2 Blob: `sha256:2bbe706597826afe9dd79c25feed6d89a13a777189c4e031e325932bbb4f639e`
+-	v2 Content-Length: 56.9 MB (56874353 bytes)
+-	v2 Last-Modified: Wed, 03 Feb 2016 22:08:01 GMT
 
-#### `90d10106d5ddf2ce3d4a3160f6d5c53a0f8f9bf30539d32c39f35996aa1991cd`
+#### `520f8075a35f29895cff8af7029f4e63aa168c6927b1b90235cd38d553d2b18c`
 
 ```dockerfile
 CMD ["erl"]
 ```
 
--	Created: Thu, 28 Jan 2016 19:59:42 GMT
--	Parent Layer: `ee15e0b856fab382bb30ab4cf971c97aeae896a7dd81f417e468a6f6905c5530`
--	Docker Version: 1.8.3
+-	Created: Wed, 03 Feb 2016 21:54:24 GMT
+-	Parent Layer: `635a3f0a80eac82f80d766e17331e2aa8018abb7d4cac9fd9639de97e43e4119`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3227,11 +3225,11 @@ CMD ["erl"]
 ## `erlang:17`
 
 ```console
-$ docker pull library/erlang@sha256:91067e30d77f9268bcdb86ac98f350b706ac72b0e550321a0746133a05e88fae
+$ docker pull library/erlang@sha256:9645db5ec4145e33cfa985ff0831c271b94ba564a695caa2e7ada2dd1b234289
 ```
 
--	Total Virtual Size: 740.2 MB (740186296 bytes)
--	Total v2 Content-Length: 297.0 MB (297032964 bytes)
+-	Total Virtual Size: 742.9 MB (742883809 bytes)
+-	Total v2 Content-Length: 297.8 MB (297841698 bytes)
 
 ### Layers (8)
 
@@ -3364,7 +3362,7 @@ ENV OTP_VERSION=17.5.6.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ee15e0b856fab382bb30ab4cf971c97aeae896a7dd81f417e468a6f6905c5530`
+#### `635a3f0a80eac82f80d766e17331e2aa8018abb7d4cac9fd9639de97e43e4119`
 
 ```dockerfile
 RUN set -xe \
@@ -3383,27 +3381,26 @@ RUN set -xe \
 	&& make -j$(nproc) \
 	&& make install \
 	&& find /usr/local -name examples |xargs rm -rf \
-	&& apt-get purge -y --auto-remove $buildDeps \
 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 28 Jan 2016 19:59:40 GMT
+-	Created: Wed, 03 Feb 2016 21:54:22 GMT
 -	Parent Layer: `2ac66d255f83aa7151d4fb925fa01bd3256ca003c8110198eec5df76433e3ffe`
--	Docker Version: 1.8.3
--	Virtual Size: 133.6 MB (133569701 bytes)
--	v2 Blob: `sha256:fbc46555aa12c0598410d9312960efccc9c9f0ebec1de18352802ea45733f143`
--	v2 Content-Length: 56.1 MB (56065619 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 20:23:18 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 136.3 MB (136267214 bytes)
+-	v2 Blob: `sha256:2bbe706597826afe9dd79c25feed6d89a13a777189c4e031e325932bbb4f639e`
+-	v2 Content-Length: 56.9 MB (56874353 bytes)
+-	v2 Last-Modified: Wed, 03 Feb 2016 22:08:01 GMT
 
-#### `90d10106d5ddf2ce3d4a3160f6d5c53a0f8f9bf30539d32c39f35996aa1991cd`
+#### `520f8075a35f29895cff8af7029f4e63aa168c6927b1b90235cd38d553d2b18c`
 
 ```dockerfile
 CMD ["erl"]
 ```
 
--	Created: Thu, 28 Jan 2016 19:59:42 GMT
--	Parent Layer: `ee15e0b856fab382bb30ab4cf971c97aeae896a7dd81f417e468a6f6905c5530`
--	Docker Version: 1.8.3
+-	Created: Wed, 03 Feb 2016 21:54:24 GMT
+-	Parent Layer: `635a3f0a80eac82f80d766e17331e2aa8018abb7d4cac9fd9639de97e43e4119`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3412,11 +3409,11 @@ CMD ["erl"]
 ## `erlang:17.5-slim`
 
 ```console
-$ docker pull library/erlang@sha256:0004fbbf7086460f3c1868820cea415122325de6b0e4085ec11e8be1ea958d5a
+$ docker pull library/erlang@sha256:1d6a5216e5bd4334e26ad82edfec87a8962aee9abcb3c1be634ae5854c5f7175
 ```
 
--	Total Virtual Size: 280.7 MB (280701010 bytes)
--	Total v2 Content-Length: 114.7 MB (114733378 bytes)
+-	Total Virtual Size: 284.5 MB (284508767 bytes)
+-	Total v2 Content-Length: 116.3 MB (116323671 bytes)
 
 ### Layers (5)
 
@@ -3461,34 +3458,33 @@ ENV OTP_VERSION=17.5.6.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ba4080cd07519d6f1e38d06887dbec3d586fdd7fea3485e74b047361d9cb49df`
+#### `79681c143ced140aeb0cec56ad2ad064936058f9b267d758dabd0d80b6b4ee0c`
 
 ```dockerfile
 RUN set -xe \
-	&& OTP_DOWNLOAD_SHA1=6ac61061519572aeec01e307dc7960e0fe5e7daf \
+	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" \
+	&& OTP_DOWNLOAD_SHA1="6ac61061519572aeec01e307dc7960e0fe5e7daf" \
+	&& runtimeDeps=' \
+		libodbc1 \
+		libssl1.0.0 \
+	' \
 	&& buildDeps=' \
-		autoconf \
-		bison \
-		ca-certificates \
 		curl \
+		ca-certificates \
+		autoconf \
 		gcc \
 		g++ \
-		libbz2-dev \
-		libgdbm-dev \
-		libglib2.0-dev \
-		libncurses-dev \
-		libreadline-dev \
-		libssl-dev \
-		libxml2-dev \
-		libxslt-dev \
-		unixodbc-dev \
 		make \
+		libncurses-dev \
+		unixodbc-dev \
+		libssl-dev \
 	' \
 	&& apt-get update \
+	&& apt-get install -y --no-install-recommends $runtimeDeps \
 	&& apt-get install -y --no-install-recommends $buildDeps \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& mkdir -p /usr/src/otp-src \
-	&& curl -fSL -o otp-src.tar.gz "https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" \
+	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" \
 	&& echo "$OTP_DOWNLOAD_SHA1 otp-src.tar.gz" | sha1sum -c - \
 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 \
 	&& rm otp-src.tar.gz \
@@ -3502,23 +3498,23 @@ RUN set -xe \
 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 28 Jan 2016 20:10:02 GMT
+-	Created: Wed, 03 Feb 2016 22:04:20 GMT
 -	Parent Layer: `8930ddd3b7c7bd5095bbcd3991c318718d700c9cfd04344732c2fad5e31b3c21`
--	Docker Version: 1.8.3
--	Virtual Size: 155.6 MB (155618063 bytes)
--	v2 Blob: `sha256:ce60a7971dac9994ffbf4704caf04398010256660949cdf253555ea16dee7b46`
--	v2 Content-Length: 63.4 MB (63374378 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 20:24:47 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 159.4 MB (159425820 bytes)
+-	v2 Blob: `sha256:b969782218f8a457337a6f04b11d2a22ed1c85430d9e77a281fc2ada17ccb3bd`
+-	v2 Content-Length: 65.0 MB (64964671 bytes)
+-	v2 Last-Modified: Wed, 03 Feb 2016 22:08:34 GMT
 
-#### `b12d88c3c7a4d03d04f8391d914c72b3e388c8b57f0cc258699a506b90047e46`
+#### `cfb2f9f17dfbc2454991782d47931167dce0d6c45a99560d8e044002da93e229`
 
 ```dockerfile
 CMD ["erl"]
 ```
 
--	Created: Thu, 28 Jan 2016 20:10:04 GMT
--	Parent Layer: `ba4080cd07519d6f1e38d06887dbec3d586fdd7fea3485e74b047361d9cb49df`
--	Docker Version: 1.8.3
+-	Created: Wed, 03 Feb 2016 22:04:23 GMT
+-	Parent Layer: `79681c143ced140aeb0cec56ad2ad064936058f9b267d758dabd0d80b6b4ee0c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -3527,11 +3523,11 @@ CMD ["erl"]
 ## `erlang:17-slim`
 
 ```console
-$ docker pull library/erlang@sha256:9501cf82b58460c28e729eb7ded527b5a7cc7583cfff7de38291bfc99a254b53
+$ docker pull library/erlang@sha256:7b671659827730678b9c7ea7627f901a75e65c72b9d0eab16c1f6f6555d3aea8
 ```
 
--	Total Virtual Size: 280.7 MB (280701010 bytes)
--	Total v2 Content-Length: 114.7 MB (114733378 bytes)
+-	Total Virtual Size: 284.5 MB (284508767 bytes)
+-	Total v2 Content-Length: 116.3 MB (116323671 bytes)
 
 ### Layers (5)
 
@@ -3576,34 +3572,33 @@ ENV OTP_VERSION=17.5.6.8
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ba4080cd07519d6f1e38d06887dbec3d586fdd7fea3485e74b047361d9cb49df`
+#### `79681c143ced140aeb0cec56ad2ad064936058f9b267d758dabd0d80b6b4ee0c`
 
 ```dockerfile
 RUN set -xe \
-	&& OTP_DOWNLOAD_SHA1=6ac61061519572aeec01e307dc7960e0fe5e7daf \
+	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" \
+	&& OTP_DOWNLOAD_SHA1="6ac61061519572aeec01e307dc7960e0fe5e7daf" \
+	&& runtimeDeps=' \
+		libodbc1 \
+		libssl1.0.0 \
+	' \
 	&& buildDeps=' \
-		autoconf \
-		bison \
-		ca-certificates \
 		curl \
+		ca-certificates \
+		autoconf \
 		gcc \
 		g++ \
-		libbz2-dev \
-		libgdbm-dev \
-		libglib2.0-dev \
-		libncurses-dev \
-		libreadline-dev \
-		libssl-dev \
-		libxml2-dev \
-		libxslt-dev \
-		unixodbc-dev \
 		make \
+		libncurses-dev \
+		unixodbc-dev \
+		libssl-dev \
 	' \
 	&& apt-get update \
+	&& apt-get install -y --no-install-recommends $runtimeDeps \
 	&& apt-get install -y --no-install-recommends $buildDeps \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& mkdir -p /usr/src/otp-src \
-	&& curl -fSL -o otp-src.tar.gz "https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" \
+	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" \
 	&& echo "$OTP_DOWNLOAD_SHA1 otp-src.tar.gz" | sha1sum -c - \
 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 \
 	&& rm otp-src.tar.gz \
@@ -3617,23 +3612,23 @@ RUN set -xe \
 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 28 Jan 2016 20:10:02 GMT
+-	Created: Wed, 03 Feb 2016 22:04:20 GMT
 -	Parent Layer: `8930ddd3b7c7bd5095bbcd3991c318718d700c9cfd04344732c2fad5e31b3c21`
--	Docker Version: 1.8.3
--	Virtual Size: 155.6 MB (155618063 bytes)
--	v2 Blob: `sha256:ce60a7971dac9994ffbf4704caf04398010256660949cdf253555ea16dee7b46`
--	v2 Content-Length: 63.4 MB (63374378 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 20:24:47 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 159.4 MB (159425820 bytes)
+-	v2 Blob: `sha256:b969782218f8a457337a6f04b11d2a22ed1c85430d9e77a281fc2ada17ccb3bd`
+-	v2 Content-Length: 65.0 MB (64964671 bytes)
+-	v2 Last-Modified: Wed, 03 Feb 2016 22:08:34 GMT
 
-#### `b12d88c3c7a4d03d04f8391d914c72b3e388c8b57f0cc258699a506b90047e46`
+#### `cfb2f9f17dfbc2454991782d47931167dce0d6c45a99560d8e044002da93e229`
 
 ```dockerfile
 CMD ["erl"]
 ```
 
--	Created: Thu, 28 Jan 2016 20:10:04 GMT
--	Parent Layer: `ba4080cd07519d6f1e38d06887dbec3d586fdd7fea3485e74b047361d9cb49df`
--	Docker Version: 1.8.3
+-	Created: Wed, 03 Feb 2016 22:04:23 GMT
+-	Parent Layer: `79681c143ced140aeb0cec56ad2ad064936058f9b267d758dabd0d80b6b4ee0c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
