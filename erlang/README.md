@@ -6,6 +6,8 @@
 -	[`17.5.6.8`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/Dockerfile)
 -	[`17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/slim/Dockerfile)
 
+[![](https://badge.imagelayers.io/erlang:latest.svg)](https://imagelayers.io/?images=erlang:18.2.3,erlang:18.2-slim,erlang:18.2.3-onbuild,erlang:17.5.6.8,erlang:17.5-slim)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/erlang`)](https://github.com/docker-library/official-images/blob/master/library/erlang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `erlang/tag-details.md` file](https://github.com/docker-library/docs/blob/master/erlang/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

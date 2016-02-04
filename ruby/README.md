@@ -16,6 +16,8 @@
 -	[`2.3.0-slim`, `2.3-slim`, `2-slim`, `slim` (*2.3/slim/Dockerfile*)](https://github.com/docker-library/ruby/blob/ccbf9e54f60ba2455f4f18e223c5745a14657bdb/2.3/slim/Dockerfile)
 -	[`2.3.0-alpine`, `2.3-alpine`, `2-alpine`, `alpine` (*2.3/alpine/Dockerfile*)](https://github.com/docker-library/ruby/blob/ccbf9e54f60ba2455f4f18e223c5745a14657bdb/2.3/alpine/Dockerfile)
 
+[![](https://badge.imagelayers.io/ruby:latest.svg)](https://imagelayers.io/?images=ruby:2.0.0-p648,ruby:2.0.0-p648-onbuild,ruby:2.0.0-p648-slim,ruby:2.1.8,ruby:2.1.8-onbuild,ruby:2.1.8-slim,ruby:2.1.8-alpine,ruby:2.2.4,ruby:2.2.4-onbuild,ruby:2.2.4-slim,ruby:2.2.4-alpine,ruby:2.3.0,ruby:2.3.0-onbuild,ruby:2.3.0-slim,ruby:2.3.0-alpine)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/ruby`)](https://github.com/docker-library/official-images/blob/master/library/ruby). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ruby/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ruby/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

@@ -2,6 +2,8 @@
 
 -	[`7.10.3`, `7.10`, `7`, `latest` (*7.10/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/a396f0d9b35cabeb60920abd87a8b2612530cb1b/7.10/Dockerfile)
 
+[![](https://badge.imagelayers.io/haskell:latest.svg)](https://imagelayers.io/?images=haskell:7.10.3)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/haskell`)](https://github.com/docker-library/official-images/blob/master/library/haskell). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `haskell/tag-details.md` file](https://github.com/docker-library/docs/blob/master/haskell/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

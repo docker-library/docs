@@ -6,6 +6,8 @@
 -	[`5.2.0`, `5.2` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/2db1810f653d5a2b6135f81ed0d1f7659e462d7b/5.2/Dockerfile)
 -	[`5.3.0`, `5.3`, `5`, `latest` (*5.3/Dockerfile*)](https://github.com/docker-library/gcc/blob/aeeaf564ad8cbce6eb1d6e7749d8394475e7d345/5.3/Dockerfile)
 
+[![](https://badge.imagelayers.io/gcc:latest.svg)](https://imagelayers.io/?images=gcc:4.8.5,gcc:4.9.3,gcc:5.1.0,gcc:5.2.0,gcc:5.3.0)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `gcc/tag-details.md` file](https://github.com/docker-library/docs/blob/master/gcc/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

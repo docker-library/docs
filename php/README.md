@@ -13,6 +13,8 @@
 -	[`7.0.2-fpm`, `7.0-fpm`, `7-fpm`, `fpm` (*7.0/fpm/Dockerfile*)](https://github.com/docker-library/php/blob/e1292bb6ec9c0939abd0b8878bf6f7b8d29595d8/7.0/fpm/Dockerfile)
 -	[`7.0.2-zts`, `7.0-zts`, `7-zts`, `zts` (*7.0/zts/Dockerfile*)](https://github.com/docker-library/php/blob/5e9ec6fb4613524418b8773ced4494c5bea62fdd/7.0/zts/Dockerfile)
 
+[![](https://badge.imagelayers.io/php:latest.svg)](https://imagelayers.io/?images=php:5.5.31-cli,php:5.5.31-apache,php:5.5.31-fpm,php:5.5.31-zts,php:5.6.17-cli,php:5.6.17-apache,php:5.6.17-fpm,php:5.6.17-zts,php:7.0.2-cli,php:7.0.2-apache,php:7.0.2-fpm,php:7.0.2-zts)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `php/tag-details.md` file](https://github.com/docker-library/docs/blob/master/php/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

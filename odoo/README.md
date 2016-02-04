@@ -3,6 +3,8 @@
 -	[`8.0`, `8` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/ad90fca59c9ac52f4f29a195535a3f8ebdddd30d/8.0/Dockerfile)
 -	[`9.0`, `9`, `latest` (*9.0/Dockerfile*)](https://github.com/odoo/docker/blob/ad90fca59c9ac52f4f29a195535a3f8ebdddd30d/9.0/Dockerfile)
 
+[![](https://badge.imagelayers.io/odoo:latest.svg)](https://imagelayers.io/?images=odoo:8.0,odoo:9.0)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/odoo`)](https://github.com/docker-library/official-images/blob/master/library/odoo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `odoo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/odoo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

@@ -4,6 +4,8 @@
 -	[`5.6.28`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/ed198ce2e8aa78613c615f20c5c4dd09fa450f66/5.6/Dockerfile)
 -	[`5.7.10`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/ed198ce2e8aa78613c615f20c5c4dd09fa450f66/5.7/Dockerfile)
 
+[![](https://badge.imagelayers.io/mysql:latest.svg)](https://imagelayers.io/?images=mysql:5.5.47,mysql:5.6.28,mysql:5.7.10)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mysql/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mysql/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

@@ -4,6 +4,8 @@
 -	[`0.8.1` (*Dockerfile*)](https://github.com/docker/docker-registry/blob/0.8.1/Dockerfile)
 -	[`2`, `2.2`, `2.2.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/3aadce6abde20374ff286d444b24a0ac8949ba65/Dockerfile)
 
+[![](https://badge.imagelayers.io/registry:latest.svg)](https://imagelayers.io/?images=registry:latest,registry:0.8.1,registry:2)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/registry`)](https://github.com/docker-library/official-images/blob/master/library/registry). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `registry/tag-details.md` file](https://github.com/docker-library/docs/blob/master/registry/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

@@ -2,6 +2,8 @@
 
 -	[`latest`, `1`, `1.9`, `1.9.10` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/aecb18605af6a33c1968c51df44e01e5f5a821e6/Dockerfile)
 
+[![](https://badge.imagelayers.io/nginx:latest.svg)](https://imagelayers.io/?images=nginx:latest)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/nginx`)](https://github.com/docker-library/official-images/blob/master/library/nginx). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nginx/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nginx/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

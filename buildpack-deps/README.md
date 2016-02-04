@@ -28,6 +28,8 @@
 -	[`xenial-scm` (*xenial/scm/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/scm/Dockerfile)
 -	[`xenial` (*xenial/Dockerfile*)](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/Dockerfile)
 
+[![](https://badge.imagelayers.io/buildpack-deps:latest.svg)](https://imagelayers.io/?images=buildpack-deps:jessie-curl,buildpack-deps:jessie-scm,buildpack-deps:jessie,buildpack-deps:precise-curl,buildpack-deps:precise-scm,buildpack-deps:precise,buildpack-deps:sid-curl,buildpack-deps:sid-scm,buildpack-deps:sid,buildpack-deps:stretch-curl,buildpack-deps:stretch-scm,buildpack-deps:stretch,buildpack-deps:trusty-curl,buildpack-deps:trusty-scm,buildpack-deps:trusty,buildpack-deps:vivid-curl,buildpack-deps:vivid-scm,buildpack-deps:vivid,buildpack-deps:wheezy-curl,buildpack-deps:wheezy-scm,buildpack-deps:wheezy,buildpack-deps:wily-curl,buildpack-deps:wily-scm,buildpack-deps:wily,buildpack-deps:xenial-curl,buildpack-deps:xenial-scm,buildpack-deps:xenial)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/buildpack-deps`)](https://github.com/docker-library/official-images/blob/master/library/buildpack-deps). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `buildpack-deps/tag-details.md` file](https://github.com/docker-library/docs/blob/master/buildpack-deps/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

@@ -3,6 +3,8 @@
 -	[`latest`, `5` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/0de4791998e295f9b71ff4d079dea424fe397853/5/Dockerfile)
 -	[`4` (*4/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/0de4791998e295f9b71ff4d079dea424fe397853/4/Dockerfile)
 
+[![](https://badge.imagelayers.io/mageia:latest.svg)](https://imagelayers.io/?images=mageia:latest,mageia:4)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/mageia`)](https://github.com/docker-library/official-images/blob/master/library/mageia). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mageia/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mageia/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

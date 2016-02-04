@@ -6,6 +6,8 @@
 -	[`8.1.1`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/f759f5bf89b510e3b9c9c7c3692fcb14c0260aa7/8.1/Dockerfile)
 -	[`8.1.1-onbuild`, `8.1-onbuild`, `8-onbuild`, `onbuild` (*8.1/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/07e387f3a5644638ca3e2f8235a1f8f647b3f03c/8.1/onbuild/Dockerfile)
 
+[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:7.7.4,sentry:8.0.6,sentry:8.0.6-onbuild,sentry:8.1.1,sentry:8.1.1-onbuild)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sentry/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sentry/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

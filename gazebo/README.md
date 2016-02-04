@@ -7,6 +7,8 @@
 -	[`gzserver6` (*gazebo/gazebo6/gzserver6/Dockerfile*)](https://github.com/osrf/docker_images/blob/892f4973b5016fc101ae7974be2a9571ea962dff/gazebo/gazebo6/gzserver6/Dockerfile)
 -	[`libgazebo6`, `latest` (*gazebo/gazebo6/libgazebo6/Dockerfile*)](https://github.com/osrf/docker_images/blob/892f4973b5016fc101ae7974be2a9571ea962dff/gazebo/gazebo6/libgazebo6/Dockerfile)
 
+[![](https://badge.imagelayers.io/gazebo:latest.svg)](https://imagelayers.io/?images=gazebo:gzserver4,gazebo:libgazebo4,gazebo:gzserver5,gazebo:libgazebo5,gazebo:gzserver6,gazebo:libgazebo6)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/gazebo`)](https://github.com/docker-library/official-images/blob/master/library/gazebo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `gazebo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/gazebo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

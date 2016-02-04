@@ -6,6 +6,8 @@
 -	[`15.10`, `wily-20160121`, `wily` (*wily/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e406914e5f648003dfe8329b512c30c9ad0d2f9c/wily/Dockerfile)
 -	[`16.04`, `xenial-20160125`, `xenial` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/e406914e5f648003dfe8329b512c30c9ad0d2f9c/xenial/Dockerfile)
 
+[![](https://badge.imagelayers.io/ubuntu:latest.svg)](https://imagelayers.io/?images=ubuntu:12.04.5,ubuntu:14.04.3,ubuntu:15.04,ubuntu:15.10,ubuntu:16.04)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ubuntu/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ubuntu/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

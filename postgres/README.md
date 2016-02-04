@@ -6,6 +6,8 @@
 -	[`9.4.5`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.4/Dockerfile)
 -	[`9.5.0`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.5/Dockerfile)
 
+[![](https://badge.imagelayers.io/postgres:latest.svg)](https://imagelayers.io/?images=postgres:9.1.19,postgres:9.2.14,postgres:9.3.10,postgres:9.4.5,postgres:9.5.0)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `postgres/tag-details.md` file](https://github.com/docker-library/docs/blob/master/postgres/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

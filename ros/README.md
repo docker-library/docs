@@ -9,6 +9,8 @@
 -	[`jade-robot` (*ros/jade/jade-robot/Dockerfile*)](https://github.com/osrf/docker_images/blob/d579b9325fd8546a29dfc064661b005cfbc9cf8b/ros/jade/jade-robot/Dockerfile)
 -	[`jade-perception` (*ros/jade/jade-perception/Dockerfile*)](https://github.com/osrf/docker_images/blob/d579b9325fd8546a29dfc064661b005cfbc9cf8b/ros/jade/jade-perception/Dockerfile)
 
+[![](https://badge.imagelayers.io/ros:latest.svg)](https://imagelayers.io/?images=ros:indigo-ros-core,ros:indigo-ros-base,ros:indigo-robot,ros:indigo-perception,ros:jade-ros-core,ros:jade-ros-base,ros:jade-robot,ros:jade-perception)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/ros`)](https://github.com/docker-library/official-images/blob/master/library/ros). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `ros/tag-details.md` file](https://github.com/docker-library/docs/blob/master/ros/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

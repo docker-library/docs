@@ -2,6 +2,8 @@
 
 -	[`2015.11`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/1b836bce1461a6aac6cad32d3d33c12d9187f68f/Dockerfile)
 
+[![](https://badge.imagelayers.io/rakudo-star:latest.svg)](https://imagelayers.io/?images=rakudo-star:2015.11)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/rakudo-star`)](https://github.com/docker-library/official-images/blob/master/library/rakudo-star). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rakudo-star/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rakudo-star/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

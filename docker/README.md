@@ -10,6 +10,8 @@
 -	[`1.10.0-rc3-dind`, `1.10-rc-dind`, `rc-dind` (*1.10-rc/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/945f73423dd843ee587567712b6657d5780307da/1.10-rc/dind/Dockerfile)
 -	[`1.10.0-rc3-git`, `1.10-rc-git`, `rc-git` (*1.10-rc/git/Dockerfile*)](https://github.com/docker-library/docker/blob/945f73423dd843ee587567712b6657d5780307da/1.10-rc/git/Dockerfile)
 
+[![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.9.1,docker:1.9.1-dind,docker:1.9.1-git,docker:1.8.3,docker:1.8.3-dind,docker:1.8.3-git,docker:1.10.0-rc3,docker:1.10.0-rc3-dind,docker:1.10.0-rc3-git)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `docker/tag-details.md` file](https://github.com/docker-library/docs/blob/master/docker/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

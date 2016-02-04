@@ -7,6 +7,8 @@
 -	[`3-2.4.0-onbuild`, `3-2.4-onbuild`, `3-2-onbuild`, `3-onbuild`, `onbuild` (*3/onbuild/Dockerfile*)](https://github.com/docker-library/pypy/blob/b48e8489ab794a2bacfd396c2f8e1a5b06d6ae48/3/onbuild/Dockerfile)
 -	[`3-2.4.0-slim`, `3-2.4-slim`, `3-2-slim`, `3-slim`, `slim` (*3/slim/Dockerfile*)](https://github.com/docker-library/pypy/blob/528795c882a9cb55e713586aeb3eb71707438c69/3/slim/Dockerfile)
 
+[![](https://badge.imagelayers.io/pypy:latest.svg)](https://imagelayers.io/?images=pypy:2-4.0.1,pypy:2-4.0.1-onbuild,pypy:2-4.0.1-slim,pypy:3-2.4.0,pypy:3-2.4.0-onbuild,pypy:3-2.4.0-slim)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/pypy`)](https://github.com/docker-library/official-images/blob/master/library/pypy). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `pypy/tag-details.md` file](https://github.com/docker-library/docs/blob/master/pypy/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

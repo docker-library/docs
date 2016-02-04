@@ -3,6 +3,8 @@
 -	[`3.6.0`, `3.6`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/90918b05b23b85014454c24782518ccfd9fc4c68/Dockerfile)
 -	[`3.6.0-management`, `3.6-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/90918b05b23b85014454c24782518ccfd9fc4c68/management/Dockerfile)
 
+[![](https://badge.imagelayers.io/rabbitmq:latest.svg)](https://imagelayers.io/?images=rabbitmq:3.6.0,rabbitmq:3.6.0-management)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rabbitmq/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rabbitmq/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

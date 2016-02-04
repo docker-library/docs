@@ -6,6 +6,8 @@
 -	[`4.3.1`, `4.3` (*4.3/Dockerfile*)](https://github.com/docker-library/kibana/blob/a747babc86c0235f94dc7b65d23743f4cbfd7bca/4.3/Dockerfile)
 -	[`4.4.0`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/docker-library/kibana/blob/4888e0caa9e4f9eb783fd05cec9b82c7f657e1e6/4.4/Dockerfile)
 
+[![](https://badge.imagelayers.io/kibana:latest.svg)](https://imagelayers.io/?images=kibana:4.0.3,kibana:4.1.4,kibana:4.2.2,kibana:4.3.1,kibana:4.4.0)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/kibana`)](https://github.com/docker-library/official-images/blob/master/library/kibana). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `kibana/tag-details.md` file](https://github.com/docker-library/docs/blob/master/kibana/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

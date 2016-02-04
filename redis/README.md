@@ -6,6 +6,8 @@
 -	[`3.0.7-32bit`, `3.0-32bit`, `3-32bit`, `32bit` (*3.0/32bit/Dockerfile*)](https://github.com/docker-library/redis/blob/b375650fb69b7db819e90c0033433c705b28656e/3.0/32bit/Dockerfile)
 -	[`3.0.7-alpine`, `3.0-alpine`, `3-alpine`, `alpine` (*3.0/alpine/Dockerfile*)](https://github.com/docker-library/redis/blob/b375650fb69b7db819e90c0033433c705b28656e/3.0/alpine/Dockerfile)
 
+[![](https://badge.imagelayers.io/redis:latest.svg)](https://imagelayers.io/?images=redis:2.8.23,redis:2.8.23-32bit,redis:3.0.7,redis:3.0.7-32bit,redis:3.0.7-alpine)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/redis`)](https://github.com/docker-library/official-images/blob/master/library/redis). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `redis/tag-details.md` file](https://github.com/docker-library/docs/blob/master/redis/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

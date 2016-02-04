@@ -6,6 +6,8 @@ This image is officially deprecated in favor of [the `dockercore/docker` automat
 
 -	[`1.9.1`, `1.9`, `1` (*Dockerfile*)](https://github.com/docker/docker/blob/a34a1d598c6096ed8b5ce5219e77d68e5cd85462/Dockerfile)
 
+[![](https://badge.imagelayers.io/docker-dev:1.9.1.svg)](https://imagelayers.io/?images=docker-dev:1.9.1)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `docker-dev/tag-details.md` file](https://github.com/docker-library/docs/blob/master/docker-dev/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

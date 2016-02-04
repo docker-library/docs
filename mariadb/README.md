@@ -4,6 +4,8 @@
 -	[`10.0.23`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/4a577108e44be5a7482dc98f163f6d3ac453fc76/10.0/Dockerfile)
 -	[`5.5.47`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/4a577108e44be5a7482dc98f163f6d3ac453fc76/5.5/Dockerfile)
 
+[![](https://badge.imagelayers.io/mariadb:latest.svg)](https://imagelayers.io/?images=mariadb:10.1.11,mariadb:10.0.23,mariadb:5.5.47)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `mariadb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/mariadb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

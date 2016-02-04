@@ -9,6 +9,8 @@
 -	[`3.2.0`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/eca5b843e275dc5fb69c2f37854ceffe0ec994a0/3.2/Dockerfile)
 -	[`3.2.0-passenger`, `3.2-passenger`, `3-passenger`, `passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/82efd8f4c09afcc9910a62752488e79df1dc0829/3.2/passenger/Dockerfile)
 
+[![](https://badge.imagelayers.io/redmine:latest.svg)](https://imagelayers.io/?images=redmine:2.6.9,redmine:2.6.9-passenger,redmine:3.0.7,redmine:3.0.7-passenger,redmine:3.1.3,redmine:3.1.3-passenger,redmine:3.2.0,redmine:3.2.0-passenger)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `redmine/tag-details.md` file](https://github.com/docker-library/docs/blob/master/redmine/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

@@ -9,6 +9,8 @@
 -	[`8.2.2-apache`, `8.2.2`, `8.2-apache`, `8.2`, `8-apache`, `8`, `apache`, `latest` (*8.2/apache/Dockerfile*)](https://github.com/docker-library/owncloud/blob/bd378401607bc61274b8beb460d1b2b11797ef8e/8.2/apache/Dockerfile)
 -	[`8.2.2-fpm`, `8.2-fpm`, `8-fpm`, `fpm` (*8.2/fpm/Dockerfile*)](https://github.com/docker-library/owncloud/blob/bd378401607bc61274b8beb460d1b2b11797ef8e/8.2/fpm/Dockerfile)
 
+[![](https://badge.imagelayers.io/owncloud:latest.svg)](https://imagelayers.io/?images=owncloud:7.0.12-apache,owncloud:7.0.12-fpm,owncloud:8.0.10-apache,owncloud:8.0.10-fpm,owncloud:8.1.5-apache,owncloud:8.1.5-fpm,owncloud:8.2.2-apache,owncloud:8.2.2-fpm)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/owncloud`)](https://github.com/docker-library/official-images/blob/master/library/owncloud). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `owncloud/tag-details.md` file](https://github.com/docker-library/docs/blob/master/owncloud/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

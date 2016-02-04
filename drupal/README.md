@@ -3,6 +3,8 @@
 -	[`7.42`, `7` (*7/Dockerfile*)](https://github.com/docker-library/drupal/blob/e1b4c2b894645c6919849de16d82a2a0da2ea5c3/7/Dockerfile)
 -	[`8.0.3`, `8.0`, `8`, `latest` (*8/Dockerfile*)](https://github.com/docker-library/drupal/blob/3b7218a46cdd867a93b6ab7dde514555c05a8018/8/Dockerfile)
 
+[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.42,drupal:8.0.3)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `drupal/tag-details.md` file](https://github.com/docker-library/docs/blob/master/drupal/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

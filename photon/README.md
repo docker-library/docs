@@ -3,6 +3,8 @@
 -	[`1.0RC`, `latest` (*1.0RC/Dockerfile*)](https://github.com/frapposelli/photon-docker-image/blob/ef1d8be98877d927b6058c09364834692b7aa0fc/1.0RC/Dockerfile)
 -	[`1.0TP2` (*1.0TP2/Dockerfile*)](https://github.com/frapposelli/photon-docker-image/blob/ef1d8be98877d927b6058c09364834692b7aa0fc/1.0TP2/Dockerfile)
 
+[![](https://badge.imagelayers.io/photon:latest.svg)](https://imagelayers.io/?images=photon:1.0RC,photon:1.0TP2)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/photon`)](https://github.com/docker-library/official-images/blob/master/library/photon). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `photon/tag-details.md` file](https://github.com/docker-library/docs/blob/master/photon/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

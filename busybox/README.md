@@ -4,6 +4,8 @@
 -	[`1.24.1-musl`, `1.24-musl`, `1-musl`, `musl` (*musl/Dockerfile*)](https://github.com/docker-library/busybox/blob/81c593a39bec858e92bfa2c239aa57e7b988ba37/musl/Dockerfile)
 -	[`1.24.1-uclibc`, `1.24.1`, `1.24-uclibc`, `1.24`, `1-uclibc`, `1`, `uclibc`, `latest` (*uclibc/Dockerfile*)](https://github.com/docker-library/busybox/blob/81c593a39bec858e92bfa2c239aa57e7b988ba37/uclibc/Dockerfile)
 
+[![](https://badge.imagelayers.io/busybox:latest.svg)](https://imagelayers.io/?images=busybox:1.24.1-glibc,busybox:1.24.1-musl,busybox:1.24.1-uclibc)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/busybox`)](https://github.com/docker-library/official-images/blob/master/library/busybox). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `busybox/tag-details.md` file](https://github.com/docker-library/docs/blob/master/busybox/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

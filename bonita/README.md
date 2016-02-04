@@ -5,6 +5,8 @@
 -	[`7.0.2` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/c5df61351f71d8691e7746a171b8294f58555338/7.0/Dockerfile)
 -	[`7.0.3`, `latest` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/cdbbd1c8fce49255116b63799fa939afd3ee7641/7.0/Dockerfile)
 
+[![](https://badge.imagelayers.io/bonita:latest.svg)](https://imagelayers.io/?images=bonita:7.0.0,bonita:7.0.1,bonita:7.0.2,bonita:7.0.3)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/bonita`)](https://github.com/docker-library/official-images/blob/master/library/bonita). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `bonita/tag-details.md` file](https://github.com/docker-library/docs/blob/master/bonita/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

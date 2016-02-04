@@ -3,6 +3,8 @@
 -	[`3.4.8-apache`, `3.4.8`, `3.4-apache`, `3.4`, `3-apache`, `apache`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/287ab579259158e356dcaf874dc0aaaa421c5ac0/apache/Dockerfile)
 -	[`3.4.8-fpm`, `3.4-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/287ab579259158e356dcaf874dc0aaaa421c5ac0/fpm/Dockerfile)
 
+[![](https://badge.imagelayers.io/joomla:latest.svg)](https://imagelayers.io/?images=joomla:3.4.8-apache,joomla:3.4.8-fpm)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `joomla/tag-details.md` file](https://github.com/docker-library/docs/blob/master/joomla/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

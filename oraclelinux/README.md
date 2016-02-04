@@ -7,6 +7,8 @@
 -	[`6.6` (*OracleLinux/6.6/Dockerfile*)](https://github.com/oracle/docker-images/blob/051054d1c799a07ca9999f7232d357f97d50ce24/OracleLinux/6.6/Dockerfile)
 -	[`5`, `5.11` (*OracleLinux/5.11/Dockerfile*)](https://github.com/oracle/docker-images/blob/051054d1c799a07ca9999f7232d357f97d50ce24/OracleLinux/5.11/Dockerfile)
 
+[![](https://badge.imagelayers.io/oraclelinux:latest.svg)](https://imagelayers.io/?images=oraclelinux:latest,oraclelinux:7.1,oraclelinux:7.0,oraclelinux:6,oraclelinux:6.6,oraclelinux:5)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/oraclelinux`)](https://github.com/docker-library/official-images/blob/master/library/oraclelinux). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `oraclelinux/tag-details.md` file](https://github.com/docker-library/docs/blob/master/oraclelinux/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

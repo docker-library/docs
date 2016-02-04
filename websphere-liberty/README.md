@@ -7,6 +7,8 @@
 -	[`javaee7`, `8.5.5.8-javaee7`, `8.5.5.8`, `8.5.5`, `latest` (*websphere-liberty/8.5.5/developer/javaee7/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c0ccc06d923102c8a8cb5eb7fe70d79fe3a48a72/websphere-liberty/8.5.5/developer/javaee7/Dockerfile)
 -	[`beta` (*websphere-liberty/beta/Dockerfile*)](https://github.com/WASdev/ci.docker/blob/c0ccc06d923102c8a8cb5eb7fe70d79fe3a48a72/websphere-liberty/beta/Dockerfile)
 
+[![](https://badge.imagelayers.io/websphere-liberty:latest.svg)](https://imagelayers.io/?images=websphere-liberty:kernel,websphere-liberty:common,websphere-liberty:webProfile6,websphere-liberty:webProfile7,websphere-liberty:javaee7,websphere-liberty:beta)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/websphere-liberty`)](https://github.com/docker-library/official-images/blob/master/library/websphere-liberty). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `websphere-liberty/tag-details.md` file](https://github.com/docker-library/docs/blob/master/websphere-liberty/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

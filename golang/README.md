@@ -14,6 +14,8 @@
 -	[`1.6rc1-wheezy`, `1.6-wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/de005b1ff6dc41f6c0f18ae06bbd2ef36da964bb/1.6/wheezy/Dockerfile)
 -	[`1.6rc1-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/de005b1ff6dc41f6c0f18ae06bbd2ef36da964bb/1.6/alpine/Dockerfile)
 
+[![](https://badge.imagelayers.io/golang:latest.svg)](https://imagelayers.io/?images=golang:1.4.3,golang:1.4.3-onbuild,golang:1.4.3-cross,golang:1.4.3-wheezy,golang:1.4.3-alpine,golang:1.5.3,golang:1.5.3-onbuild,golang:1.5.3-wheezy,golang:1.5.3-alpine,golang:1.6rc1,golang:1.6rc1-onbuild,golang:1.6rc1-wheezy,golang:1.6rc1-alpine)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `golang/tag-details.md` file](https://github.com/docker-library/docs/blob/master/golang/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

@@ -5,6 +5,8 @@
 -	[`7.4` (*7.4/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/7.4/Dockerfile)
 -	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/6.0/Dockerfile)
 
+[![](https://badge.imagelayers.io/nuxeo:latest.svg)](https://imagelayers.io/?images=nuxeo:latest,nuxeo:LTS-2015,nuxeo:7.4,nuxeo:LTS-2014)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/nuxeo`)](https://github.com/docker-library/official-images/blob/master/library/nuxeo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `nuxeo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/nuxeo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

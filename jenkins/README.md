@@ -2,6 +2,8 @@
 
 -	[`latest`, `1.642.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/62de121e41ddd92ef34e9999162932334b05f0d7/Dockerfile)
 
+[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jenkins/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jenkins/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

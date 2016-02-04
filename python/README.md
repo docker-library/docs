@@ -20,6 +20,8 @@
 -	[`3.5.1-slim`, `3.5-slim`, `3-slim`, `slim` (*3.5/slim/Dockerfile*)](https://github.com/docker-library/python/blob/326d146f38fd2bbdaed8c37442a81d6486b5bf2b/3.5/slim/Dockerfile)
 -	[`3.5.1-alpine`, `3.5-alpine`, `3-alpine`, `alpine` (*3.5/alpine/Dockerfile*)](https://github.com/docker-library/python/blob/326d146f38fd2bbdaed8c37442a81d6486b5bf2b/3.5/alpine/Dockerfile)
 
+[![](https://badge.imagelayers.io/python:latest.svg)](https://imagelayers.io/?images=python:2.7.11,python:2.7.11-onbuild,python:2.7.11-slim,python:2.7.11-alpine,python:2.7.11-wheezy,python:3.3.6,python:3.3.6-onbuild,python:3.3.6-slim,python:3.3.6-alpine,python:3.3.6-wheezy,python:3.4.4,python:3.4.4-onbuild,python:3.4.4-slim,python:3.4.4-alpine,python:3.4.4-wheezy,python:3.5.1,python:3.5.1-onbuild,python:3.5.1-slim,python:3.5.1-alpine)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `python/tag-details.md` file](https://github.com/docker-library/docs/blob/master/python/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

@@ -17,6 +17,8 @@
 -	[`5.5.0-slim`, `5.5-slim`, `5-slim`, `slim` (*5.5/slim/Dockerfile*)](https://github.com/nodejs/docker-node/blob/31bb0d89ab3d67ddb9a998e4bf655c3cd98f445c/5.5/slim/Dockerfile)
 -	[`5.5.0-wheezy`, `5.5-wheezy`, `5-wheezy`, `wheezy` (*5.5/wheezy/Dockerfile*)](https://github.com/nodejs/docker-node/blob/31bb0d89ab3d67ddb9a998e4bf655c3cd98f445c/5.5/wheezy/Dockerfile)
 
+[![](https://badge.imagelayers.io/node:latest.svg)](https://imagelayers.io/?images=node:0.10.41,node:0.10.41-onbuild,node:0.10.41-slim,node:0.10.41-wheezy,node:0.12.9,node:0.12.9-onbuild,node:0.12.9-slim,node:0.12.9-wheezy,node:4.2.6,node:4.2.6-onbuild,node:4.2.6-slim,node:4.2.6-wheezy,node:5.5.0,node:5.5.0-onbuild,node:5.5.0-slim,node:5.5.0-wheezy)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/node`)](https://github.com/docker-library/official-images/blob/master/library/node). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `node/tag-details.md` file](https://github.com/docker-library/docs/blob/master/node/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

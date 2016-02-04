@@ -19,6 +19,8 @@
 -	[`8-jre-7.0.0-M1-plus` (*8-jre-7.0.0-M1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/382ce3542c12417f2594c09c009bae9f6a7ce547/8-jre-7.0.0-M1-plus/Dockerfile)
 -	[`8-jre-7.0.0-M1-webprofile` (*8-jre-7.0.0-M1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/382ce3542c12417f2594c09c009bae9f6a7ce547/8-jre-7.0.0-M1-webprofile/Dockerfile)
 
+[![](https://badge.imagelayers.io/tomee:6-jre-1.7.3-jaxrs.svg)](https://imagelayers.io/?images=tomee:6-jre-1.7.3-jaxrs,tomee:6-jre-1.7.3-plume,tomee:6-jre-1.7.3-plus,tomee:6-jre-1.7.3-webprofile,tomee:7-jre-1.7.3-jaxrs,tomee:7-jre-1.7.3-plume,tomee:7-jre-1.7.3-plus,tomee:7-jre-1.7.3-webprofile,tomee:7-jre-7.0.0-M1-plume,tomee:7-jre-7.0.0-M1-plus,tomee:7-jre-7.0.0-M1-webprofile,tomee:8-jre-1.7.3-jaxrs,tomee:8-jre-1.7.3-plume,tomee:8-jre-1.7.3-plus,tomee:8-jre-1.7.3-webprofile,tomee:8-jre-7.0.0-M1-plume,tomee:8-jre-7.0.0-M1-plus,tomee:8-jre-7.0.0-M1-webprofile)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/tomee`)](https://github.com/docker-library/official-images/blob/master/library/tomee). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `tomee/tag-details.md` file](https://github.com/docker-library/docs/blob/master/tomee/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

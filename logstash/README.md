@@ -6,6 +6,8 @@
 -	[`2.1.2-1`, `2.1.2`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/logstash/blob/b0506df9000e2289f8c378523e9d5afdc42617dd/2.1/Dockerfile)
 -	[`2.2.0-1`, `2.2.0`, `2.2`, `2`, `latest` (*2.2/Dockerfile*)](https://github.com/docker-library/logstash/blob/b0506df9000e2289f8c378523e9d5afdc42617dd/2.2/Dockerfile)
 
+[![](https://badge.imagelayers.io/logstash:latest.svg)](https://imagelayers.io/?images=logstash:1.4.5-1-a2bacae,logstash:1.5.6-1,logstash:2.0.0-1,logstash:2.1.2-1,logstash:2.2.0-1)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/logstash`)](https://github.com/docker-library/official-images/blob/master/library/logstash). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `logstash/tag-details.md` file](https://github.com/docker-library/docs/blob/master/logstash/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

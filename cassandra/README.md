@@ -6,6 +6,8 @@
 -	[`3.1.1`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e57caf5f7dc58160846753096016f81224bc0a80/3.1/Dockerfile)
 -	[`3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e57caf5f7dc58160846753096016f81224bc0a80/3.2/Dockerfile)
 
+[![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.12,cassandra:2.2.4,cassandra:3.0.2,cassandra:3.1.1,cassandra:3.2)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `cassandra/tag-details.md` file](https://github.com/docker-library/docs/blob/master/cassandra/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).

@@ -2,6 +2,8 @@
 
 -	[`0.9`, `0.9.3`, `latest` (*0.9/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/d322572f7dd6ea468a14a4d832fbec26f152c71e/0.9/Dockerfile)
 
+[![](https://badge.imagelayers.io/thrift:latest.svg)](https://imagelayers.io/?images=thrift:0.9)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/thrift`)](https://github.com/docker-library/official-images/blob/master/library/thrift). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `thrift/tag-details.md` file](https://github.com/docker-library/docs/blob/master/thrift/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
