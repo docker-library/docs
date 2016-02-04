@@ -2,17 +2,17 @@
 
 # Tags of `rakudo-star`
 
--	[`rakudo-star:2015.11`](#rakudo-star201511)
+-	[`rakudo-star:2016.01`](#rakudo-star201601)
 -	[`rakudo-star:latest`](#rakudo-starlatest)
 
-## `rakudo-star:2015.11`
+## `rakudo-star:2016.01`
 
 ```console
-$ docker pull library/rakudo-star@sha256:8a74b6bc68e0a2fd006965fd54ca63ae73ff18a949fa79a4f11a395ca4e6e2ff
+$ docker pull library/rakudo-star@sha256:1a80d9cdeac0d3e97b8f467a8249a16fe34a913a7d19bd5c6bd7c6861f0a9e3c
 ```
 
--	Total Virtual Size: 320.4 MB (320372046 bytes)
--	Total v2 Content-Length: 119.3 MB (119260564 bytes)
+-	Total Virtual Size: 333.6 MB (333591963 bytes)
+-	Total v2 Content-Length: 123.5 MB (123450115 bytes)
 
 ### Layers (9)
 
@@ -110,21 +110,21 @@ RUN groupadd -r perl6 && useradd -r -g perl6 perl6
 -	v2 Content-Length: 2.1 KB (2055 bytes)
 -	v2 Last-Modified: Tue, 02 Feb 2016 17:37:26 GMT
 
-#### `e5fb100e2cdeb2d79372ff437d901805b1d6a2823f7240be030610057e6cebaa`
+#### `77f7e6abe3e4c71260d3bdd1c334a8468e383c350d3ee42041e9613cc4d6817e`
 
 ```dockerfile
-ENV rakudo_version=2015.11
+ENV rakudo_version=2016.01
 ```
 
--	Created: Tue, 26 Jan 2016 21:01:32 GMT
+-	Created: Thu, 04 Feb 2016 18:16:10 GMT
 -	Parent Layer: `c4a35a063492d9b7e1a2e836092b0be4faf5ea167762014556a0d9dee1bb2e01`
--	Docker Version: 1.8.3
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70a83064a1715886fdcd1fb45049f48ee383e4da7bdb78db7385d82c0d575c31`
+#### `86a0fc5a377de0bdbee85d9ebb3632220f46b3f244bb0cd8fad3d504ae88db5e`
 
 ```dockerfile
 RUN buildDeps='\
@@ -143,29 +143,29 @@ RUN buildDeps='\
      && (\
          cd /root/rakudo\
          && perl Configure.pl --prefix=/usr --gen-moar\
-         && make -j"$(nproc)" install\
+         && make install\
      )\
      && rm -rf /rakudo.tar.gz /root/rakudo\
      && apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 26 Jan 2016 21:06:59 GMT
--	Parent Layer: `e5fb100e2cdeb2d79372ff437d901805b1d6a2823f7240be030610057e6cebaa`
--	Docker Version: 1.8.3
--	Virtual Size: 28.1 MB (28081864 bytes)
--	v2 Blob: `sha256:914d6c2ec3386dbd0f164e50a0304643077c5fae8b4ac4bd4861c615ef5c6861`
--	v2 Content-Length: 6.9 MB (6878918 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 17:37:21 GMT
+-	Created: Thu, 04 Feb 2016 18:31:18 GMT
+-	Parent Layer: `77f7e6abe3e4c71260d3bdd1c334a8468e383c350d3ee42041e9613cc4d6817e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 41.3 MB (41301781 bytes)
+-	v2 Blob: `sha256:b21d63efc9022cd51f205bf383d485d4851aaef6fd3dc8201a4cceca55107ff8`
+-	v2 Content-Length: 11.1 MB (11068469 bytes)
+-	v2 Last-Modified: Thu, 04 Feb 2016 18:31:41 GMT
 
-#### `629e8f070bf86cca345eb64836465c77fa3f9f44743ed80b79d6e48aa86574d9`
+#### `df7f50610423590fd97a72864a86184e8e49809fb281f7d360e3dee1b1f6cf0e`
 
 ```dockerfile
 CMD ["rlwrap" "perl6"]
 ```
 
--	Created: Tue, 26 Jan 2016 21:07:03 GMT
--	Parent Layer: `70a83064a1715886fdcd1fb45049f48ee383e4da7bdb78db7385d82c0d575c31`
--	Docker Version: 1.8.3
+-	Created: Thu, 04 Feb 2016 18:31:19 GMT
+-	Parent Layer: `86a0fc5a377de0bdbee85d9ebb3632220f46b3f244bb0cd8fad3d504ae88db5e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -174,11 +174,11 @@ CMD ["rlwrap" "perl6"]
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull library/rakudo-star@sha256:642e6a0cdf588a3671a67eef8c78ac028047360f1e66c7ceaca44a08eed40cc3
+$ docker pull library/rakudo-star@sha256:607198e26f9dad3a20f9d106517c7e98d7f9e04eaa38647f938fef125c1d3bf9
 ```
 
--	Total Virtual Size: 320.4 MB (320372046 bytes)
--	Total v2 Content-Length: 119.3 MB (119260564 bytes)
+-	Total Virtual Size: 333.6 MB (333591963 bytes)
+-	Total v2 Content-Length: 123.5 MB (123450115 bytes)
 
 ### Layers (9)
 
@@ -276,21 +276,21 @@ RUN groupadd -r perl6 && useradd -r -g perl6 perl6
 -	v2 Content-Length: 2.1 KB (2055 bytes)
 -	v2 Last-Modified: Tue, 02 Feb 2016 17:37:26 GMT
 
-#### `e5fb100e2cdeb2d79372ff437d901805b1d6a2823f7240be030610057e6cebaa`
+#### `77f7e6abe3e4c71260d3bdd1c334a8468e383c350d3ee42041e9613cc4d6817e`
 
 ```dockerfile
-ENV rakudo_version=2015.11
+ENV rakudo_version=2016.01
 ```
 
--	Created: Tue, 26 Jan 2016 21:01:32 GMT
+-	Created: Thu, 04 Feb 2016 18:16:10 GMT
 -	Parent Layer: `c4a35a063492d9b7e1a2e836092b0be4faf5ea167762014556a0d9dee1bb2e01`
--	Docker Version: 1.8.3
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `70a83064a1715886fdcd1fb45049f48ee383e4da7bdb78db7385d82c0d575c31`
+#### `86a0fc5a377de0bdbee85d9ebb3632220f46b3f244bb0cd8fad3d504ae88db5e`
 
 ```dockerfile
 RUN buildDeps='\
@@ -309,29 +309,29 @@ RUN buildDeps='\
      && (\
          cd /root/rakudo\
          && perl Configure.pl --prefix=/usr --gen-moar\
-         && make -j"$(nproc)" install\
+         && make install\
      )\
      && rm -rf /rakudo.tar.gz /root/rakudo\
      && apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Tue, 26 Jan 2016 21:06:59 GMT
--	Parent Layer: `e5fb100e2cdeb2d79372ff437d901805b1d6a2823f7240be030610057e6cebaa`
--	Docker Version: 1.8.3
--	Virtual Size: 28.1 MB (28081864 bytes)
--	v2 Blob: `sha256:914d6c2ec3386dbd0f164e50a0304643077c5fae8b4ac4bd4861c615ef5c6861`
--	v2 Content-Length: 6.9 MB (6878918 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 17:37:21 GMT
+-	Created: Thu, 04 Feb 2016 18:31:18 GMT
+-	Parent Layer: `77f7e6abe3e4c71260d3bdd1c334a8468e383c350d3ee42041e9613cc4d6817e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 41.3 MB (41301781 bytes)
+-	v2 Blob: `sha256:b21d63efc9022cd51f205bf383d485d4851aaef6fd3dc8201a4cceca55107ff8`
+-	v2 Content-Length: 11.1 MB (11068469 bytes)
+-	v2 Last-Modified: Thu, 04 Feb 2016 18:31:41 GMT
 
-#### `629e8f070bf86cca345eb64836465c77fa3f9f44743ed80b79d6e48aa86574d9`
+#### `df7f50610423590fd97a72864a86184e8e49809fb281f7d360e3dee1b1f6cf0e`
 
 ```dockerfile
 CMD ["rlwrap" "perl6"]
 ```
 
--	Created: Tue, 26 Jan 2016 21:07:03 GMT
--	Parent Layer: `70a83064a1715886fdcd1fb45049f48ee383e4da7bdb78db7385d82c0d575c31`
--	Docker Version: 1.8.3
+-	Created: Thu, 04 Feb 2016 18:31:19 GMT
+-	Parent Layer: `86a0fc5a377de0bdbee85d9ebb3632220f46b3f244bb0cd8fad3d504ae88db5e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
