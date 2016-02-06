@@ -1,7 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.0.0` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/84c0d7d2d98d5f4f4178e517523925c1d5ebe7cc/Dockerfile)
--	[`1.0.1`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/8fc43f5ab8f0a25872bb7ed6237f68dd673c1e79/Dockerfile)
+-	[`1.0.1` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/8fc43f5ab8f0a25872bb7ed6237f68dd673c1e79/Dockerfile)
+-	[`1.1.0`, `latest` (*Dockerfile*)](https://github.com/docker/swarm-library-image/blob/d33db37e1b31d202ac7c05104bf7b5e3faa70fc9/Dockerfile)
+
+[![](https://badge.imagelayers.io/swarm:latest.svg)](https://imagelayers.io/?images=swarm:1.0.0,swarm:1.0.1,swarm:1.1.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/swarm`)](https://github.com/docker-library/official-images/blob/master/library/swarm). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -9,7 +12,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # Swarm: a Docker-native clustering system
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/swarm/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/471fa6e4cb58062ccbf91afc111980f9c7004981/swarm/logo.png)
 
 `swarm` is a simple tool which controls a cluster of Docker hosts and exposes it as a single "virtual" host.
 
@@ -68,7 +71,7 @@ View [license information](https://github.com/docker/swarm/blob/master/LICENSE) 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

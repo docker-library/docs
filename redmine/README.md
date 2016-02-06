@@ -1,9 +1,15 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.6.9`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/redmine/blob/0b1bd12df7afc21ec18dd2abfc263f28a0eded4a/2.6/Dockerfile)
--	[`2.6.9-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/5baaf21e90656d3db14574577de99a87527a1d58/2.6/passenger/Dockerfile)
--	[`3.0.7`, `3.0`, `3`, `latest` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/0b1bd12df7afc21ec18dd2abfc263f28a0eded4a/3.0/Dockerfile)
--	[`3.0.7-passenger`, `3.0-passenger`, `3-passenger`, `passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/5baaf21e90656d3db14574577de99a87527a1d58/3.0/passenger/Dockerfile)
+-	[`2.6.9`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/redmine/blob/eca5b843e275dc5fb69c2f37854ceffe0ec994a0/2.6/Dockerfile)
+-	[`2.6.9-passenger`, `2.6-passenger`, `2-passenger` (*2.6/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/82efd8f4c09afcc9910a62752488e79df1dc0829/2.6/passenger/Dockerfile)
+-	[`3.0.7`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/redmine/blob/eca5b843e275dc5fb69c2f37854ceffe0ec994a0/3.0/Dockerfile)
+-	[`3.0.7-passenger`, `3.0-passenger` (*3.0/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/82efd8f4c09afcc9910a62752488e79df1dc0829/3.0/passenger/Dockerfile)
+-	[`3.1.3`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/redmine/blob/eca5b843e275dc5fb69c2f37854ceffe0ec994a0/3.1/Dockerfile)
+-	[`3.1.3-passenger`, `3.1-passenger` (*3.1/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/82efd8f4c09afcc9910a62752488e79df1dc0829/3.1/passenger/Dockerfile)
+-	[`3.2.0`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/redmine/blob/eca5b843e275dc5fb69c2f37854ceffe0ec994a0/3.2/Dockerfile)
+-	[`3.2.0-passenger`, `3.2-passenger`, `3-passenger`, `passenger` (*3.2/passenger/Dockerfile*)](https://github.com/docker-library/redmine/blob/82efd8f4c09afcc9910a62752488e79df1dc0829/3.2/passenger/Dockerfile)
+
+[![](https://badge.imagelayers.io/redmine:latest.svg)](https://imagelayers.io/?images=redmine:2.6.9,redmine:2.6.9-passenger,redmine:3.0.7,redmine:3.0.7-passenger,redmine:3.1.3,redmine:3.1.3-passenger,redmine:3.2.0,redmine:3.2.0-passenger)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -15,7 +21,7 @@ Redmine is a free and open source, web-based project management and issue tracki
 
 > [wikipedia.org/wiki/Redmine](https://en.wikipedia.org/wiki/Redmine)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/redmine/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/969091c4c590befe236a71d4a7bce5823fff020d/redmine/logo.png)
 
 # How to use this image
 
@@ -109,7 +115,7 @@ This variable is used to create an initial `config/secrets.yml` and set the `sec
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

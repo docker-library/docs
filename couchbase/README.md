@@ -10,6 +10,8 @@
 -	[`2.5.2`, `enterprise-2.5.2` (*enterprise/couchbase-server/2.5.2/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/enterprise/couchbase-server/2.5.2/Dockerfile)
 -	[`community-2.2.0` (*community/couchbase-server/2.2.0/Dockerfile*)](https://github.com/couchbase/docker/blob/7eb049d012eed3821ead1d8a728a07bf33db85a1/community/couchbase-server/2.2.0/Dockerfile)
 
+[![](https://badge.imagelayers.io/couchbase:latest.svg)](https://imagelayers.io/?images=couchbase:latest,couchbase:4.0.0,couchbase:community-4.0.0,couchbase:3.1.0,couchbase:3.0.3,couchbase:3.0.2,couchbase:community-3.0.1,couchbase:2.5.2,couchbase:community-2.2.0)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/couchbase`)](https://github.com/docker-library/official-images/blob/master/library/couchbase). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `couchbase/tag-details.md` file](https://github.com/docker-library/docs/blob/master/couchbase/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -22,7 +24,7 @@ Licensing information is covered towards the end of this guide.
 
 For support, please visit the [Couchbase support forum](https://forums.couchbase.com/) or `#couchbase` on irc.freenode.net.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/couchbase/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/00543c65b06a7f8f54aa4f7908f7d91705d8ddec/couchbase/logo.png)
 
 # How to use this image: QuickStart
 
@@ -268,7 +270,7 @@ By default, the `latest` Docker tag points to the latest Enterprise Edition, as 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -4,7 +4,7 @@ The Jenkins Continuous Integration and Delivery server.
 
 This is a fully functional Jenkins server, based on the Long Term Support release [http://jenkins-ci.org/](http://jenkins-ci.org/).
 
-![logo](http://jenkins-ci.org/sites/default/files/jenkins_logo.png)
+%%LOGO%%
 
 # How to use this image
 
@@ -84,7 +84,9 @@ docker run --name myjenkins -p 8080:8080 -p 50000:50000 --env JAVA_OPTS="-Djava.
 
 Argument you pass to docker running the jenkins image are passed to jenkins launcher, so you can run for sample :
 
-	docker run jenkins --version
+```console
+$ docker run jenkins --version
+```
 
 This will dump Jenkins version, just like when you run jenkins as an executable war.
 
@@ -108,7 +110,9 @@ ENV JENKINS_SLAVE_AGENT_PORT 50001
 
 or as a parameter to docker,
 
-	docker run --name myjenkins -p 8080:8080 -p 50001:50001 --env JENKINS_SLAVE_AGENT_PORT=50001 jenkins
+```console
+$ docker run --name myjenkins -p 8080:8080 -p 50001:50001 --env JENKINS_SLAVE_AGENT_PORT=50001 jenkins
+```
 
 # Installing more tools
 

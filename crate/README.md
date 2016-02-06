@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
--	[`0.51`, `0.51.7` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/5d66f67b05395e9b7b4f55c2b3d682d43c7f59d9/Dockerfile)
+-	[`latest`, `0.54`, `0.54.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/921b64f8b8ad1711a246dafcdcd126343b0b7cad/Dockerfile)
+-	[`0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
+
+[![](https://badge.imagelayers.io/crate:latest.svg)](https://imagelayers.io/?images=crate:latest,crate:0.52)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/crate`)](https://github.com/docker-library/official-images/blob/master/library/crate). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -13,7 +15,7 @@ Crate allows to query and compute data with SQL in real time by providing a dist
 
 [Crate](https://crate.io/)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/crate/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/de809758bd3f9724caa5377695f161795f3eb8a1/crate/logo.png)
 
 ## How to use this image
 
@@ -96,7 +98,7 @@ View [license information](https://github.com/crate/crate/blob/master/LICENSE.tx
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

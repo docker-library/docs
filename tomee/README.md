@@ -19,6 +19,8 @@
 -	[`8-jre-7.0.0-M1-plus` (*8-jre-7.0.0-M1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/382ce3542c12417f2594c09c009bae9f6a7ce547/8-jre-7.0.0-M1-plus/Dockerfile)
 -	[`8-jre-7.0.0-M1-webprofile` (*8-jre-7.0.0-M1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/382ce3542c12417f2594c09c009bae9f6a7ce547/8-jre-7.0.0-M1-webprofile/Dockerfile)
 
+[![](https://badge.imagelayers.io/tomee:6-jre-1.7.3-jaxrs.svg)](https://imagelayers.io/?images=tomee:6-jre-1.7.3-jaxrs,tomee:6-jre-1.7.3-plume,tomee:6-jre-1.7.3-plus,tomee:6-jre-1.7.3-webprofile,tomee:7-jre-1.7.3-jaxrs,tomee:7-jre-1.7.3-plume,tomee:7-jre-1.7.3-plus,tomee:7-jre-1.7.3-webprofile,tomee:7-jre-7.0.0-M1-plume,tomee:7-jre-7.0.0-M1-plus,tomee:7-jre-7.0.0-M1-webprofile,tomee:8-jre-1.7.3-jaxrs,tomee:8-jre-1.7.3-plume,tomee:8-jre-1.7.3-plus,tomee:8-jre-1.7.3-webprofile,tomee:8-jre-7.0.0-M1-plume,tomee:8-jre-7.0.0-M1-plus,tomee:8-jre-7.0.0-M1-webprofile)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/tomee`)](https://github.com/docker-library/official-images/blob/master/library/tomee). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `tomee/tag-details.md` file](https://github.com/docker-library/docs/blob/master/tomee/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -27,7 +29,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 Apache TomEE, pronounced "Tommy", is an all-Apache Java EE Web Profile certified stack where Apache Tomcat is top dog. Apache TomEE is assembled from a vanilla Apache Tomcat zip file. We start with Apache Tomcat, add our jars and zip up the rest. The result is Tomcat with added EE features - TomEE.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/tomee/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/4a10a52c08621b68c1b1b53b561f819d9e78c2e0/tomee/logo.png)
 
 Apache TomEE comes with four different flavors, Web Profile, JAX-RS, Plus and Plume.
 
@@ -53,15 +55,21 @@ Below are some press releases that might be helpful:
 
 Run the default TomEE server (`CMD ["catalina.sh", "run"]`):
 
-	docker run -it --rm tomee:<java-version>\-<tomeeversion>\-<flavour>
+```console
+$ docker run -it --rm tomee:<java-version>\-<tomeeversion>\-<flavour>
+```
 
 For example running Apache TomEE 1.7.2 with JRE 8 and Webprofile flavour will be:
 
-	docker run -it --rm tomee:8-jre-1.7.2-webprofile
+```console
+$ docker run -it --rm tomee:8-jre-1.7.2-webprofile
+```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
-	docker run -it --rm -p 8888:8080 tomee:<java-version>\-<tomeeversion>\-<flavour>
+```console
+$ docker run -it --rm -p 8888:8080 tomee:<java-version>\-<tomeeversion>\-<flavour>
+```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
 
@@ -77,7 +85,7 @@ View [license information](http://www.apache.org/licenses/LICENSE-2.0) for the s
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

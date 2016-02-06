@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/dcfc8240410bd423516832e16b4d69f21be082ee/2.7/Dockerfile)
+-	[`1.9.2-python2`, `1.9-python2`, `1-python2`, `python2` (*2.7/Dockerfile*)](https://github.com/docker-library/django/blob/c5e6eb31208f4645a5c01c4bb6f602b8bd0b2bfe/2.7/Dockerfile)
 -	[`python2-onbuild` (*2.7/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/2.7/onbuild/Dockerfile)
--	[`1.9-python3`, `1.9`, `1-python3`, `1`, `python3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/dcfc8240410bd423516832e16b4d69f21be082ee/3.4/Dockerfile)
+-	[`1.9.2-python3`, `1.9.2`, `1.9-python3`, `1.9`, `1-python3`, `1`, `python3`, `latest` (*3.4/Dockerfile*)](https://github.com/docker-library/django/blob/c5e6eb31208f4645a5c01c4bb6f602b8bd0b2bfe/3.4/Dockerfile)
 -	[`python3-onbuild`, `onbuild` (*3.4/onbuild/Dockerfile*)](https://github.com/docker-library/django/blob/cecbb2bbbcb69d1b8358398eaf8d9638e3bdd447/3.4/onbuild/Dockerfile)
+
+[![](https://badge.imagelayers.io/django:latest.svg)](https://imagelayers.io/?images=django:1.9.2-python2,django:python2-onbuild,django:1.9.2-python3,django:python3-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/django`)](https://github.com/docker-library/official-images/blob/master/library/django). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -15,7 +17,7 @@ Django is a free and open source web application framework, written in Python, w
 
 > [wikipedia.org/wiki/Django_(web_framework)](https://en.wikipedia.org/wiki/Django_%28web_framework%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/django/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/164cc29281655dc81242824d1b4f90b4e6d8d7eb/django/logo.png)
 
 # How to use this image
 
@@ -82,7 +84,7 @@ View [license information](https://github.com/django/django/blob/master/LICENSE)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

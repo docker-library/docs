@@ -1,8 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/7.10/Dockerfile)
+-	[`latest`, `FT`, `8`, `8.1` (*8.1/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/b20a7c5cdafa3b999b83f21dd26b98bf4082d13d/8.1/Dockerfile)
+-	[`LTS-2015`, `LTS`, `7.10`, `7` (*7.10/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/7.10/Dockerfile)
 -	[`7.4` (*7.4/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/7.4/Dockerfile)
 -	[`LTS-2014`, `6`, `6.0` (*6.0/Dockerfile*)](https://github.com/nuxeo/docker-nuxeo/blob/4cc03581b627ec94a7a2a7253a7b37363fb15a7d/6.0/Dockerfile)
+
+[![](https://badge.imagelayers.io/nuxeo:latest.svg)](https://imagelayers.io/?images=nuxeo:latest,nuxeo:LTS-2015,nuxeo:7.4,nuxeo:LTS-2014)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/nuxeo`)](https://github.com/docker-library/official-images/blob/master/library/nuxeo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -12,7 +15,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 The Nuxeo Platform is a highly customizable and extensible content management platform for building business applications.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/nuxeo/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/78776b9252a6639e40a3ed15cb5ff5e88a1f6dbf/nuxeo/logo.png)
 
 # How to use this image
 
@@ -169,7 +172,7 @@ View [license information](http://doc.nuxeo.com/x/gIK7) for the software contain
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

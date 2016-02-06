@@ -5,6 +5,8 @@
 -	[`3.3.3-jdk-8`, `3.3.3`, `3.3-jdk-8`, `3.3`, `3-jdk-8`, `3`, `latest` (*jdk-8/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/8ab542b907e69c5269942bcc0915d8dffcc7e9fa/jdk-8/Dockerfile)
 -	[`3.3.3-jdk-8-onbuild`, `3.3.3-onbuild`, `3.3-jdk-8-onbuild`, `3.3-onbuild`, `3-jdk-8-onbuild`, `3-onbuild`, `onbuild` (*jdk-8/onbuild/Dockerfile*)](https://github.com/carlossg/docker-maven/blob/8ab542b907e69c5269942bcc0915d8dffcc7e9fa/jdk-8/onbuild/Dockerfile)
 
+[![](https://badge.imagelayers.io/maven:latest.svg)](https://imagelayers.io/?images=maven:3.3.3-jdk-7,maven:3.3.3-jdk-7-onbuild,maven:3.3.3-jdk-8,maven:3.3.3-jdk-8-onbuild)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/maven`)](https://github.com/docker-library/official-images/blob/master/library/maven). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `maven/tag-details.md` file](https://github.com/docker-library/docs/blob/master/maven/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -13,7 +15,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 [Apache Maven](http://maven.apache.org) is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/maven/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/e2782b8942c1af41419536078c8d0176665a005d/maven/logo.png)
 
 # How to use this image
 
@@ -65,7 +67,7 @@ View [license information](https://www.apache.org/licenses/) for the software co
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

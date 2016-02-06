@@ -7,6 +7,8 @@
 -	[`gzserver6` (*gazebo/gazebo6/gzserver6/Dockerfile*)](https://github.com/osrf/docker_images/blob/892f4973b5016fc101ae7974be2a9571ea962dff/gazebo/gazebo6/gzserver6/Dockerfile)
 -	[`libgazebo6`, `latest` (*gazebo/gazebo6/libgazebo6/Dockerfile*)](https://github.com/osrf/docker_images/blob/892f4973b5016fc101ae7974be2a9571ea962dff/gazebo/gazebo6/libgazebo6/Dockerfile)
 
+[![](https://badge.imagelayers.io/gazebo:latest.svg)](https://imagelayers.io/?images=gazebo:gzserver4,gazebo:libgazebo4,gazebo:gzserver5,gazebo:libgazebo5,gazebo:gzserver6,gazebo:libgazebo6)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/gazebo`)](https://github.com/docker-library/official-images/blob/master/library/gazebo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `gazebo/tag-details.md` file](https://github.com/docker-library/docs/blob/master/gazebo/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -17,7 +19,7 @@ Robot simulation is an essential tool in every roboticist's toolbox. A well-desi
 
 > [wikipedia.org/wiki/Gazebo_simulator](https://en.wikipedia.org/wiki/Gazebo_simulator)
 
-[![logo](https://raw.githubusercontent.com/docker-library/docs/master/gazebo/logo.png)](http://www.gazebosim.org/)
+[![logo](https://raw.githubusercontent.com/docker-library/docs/54c75ffef879ebb659bb82d5bc690bdb299c60c4/gazebo/logo.png)](http://www.gazebosim.org/)
 
 # How to use this image
 
@@ -158,7 +160,7 @@ Gazebo is open-source licensed under [Apache 2.0](http://opensource.org/licenses
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

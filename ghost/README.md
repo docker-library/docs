@@ -1,6 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.7.4`, `0.7`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/16a6fd356668cb69086eddd6e2d62addcbc8bca0/Dockerfile)
+-	[`0.7.6`, `0.7`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/1e4098ce8840142afb2b95e63acdfc7aa329b61b/Dockerfile)
+
+[![](https://badge.imagelayers.io/ghost:latest.svg)](https://imagelayers.io/?images=ghost:0.7.6)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -12,7 +14,7 @@ Ghost is a free and open source blogging platform written in JavaScript and dist
 
 > [wikipedia.org/wiki/Ghost_(blogging_platform)](http://en.wikipedia.org/wiki/Ghost_%28blogging_platform%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/ghost/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c5b6d94dc8f0557925ab37ca43141c0efc5cc363/ghost/logo.png)
 
 # How to use this image
 
@@ -44,7 +46,7 @@ $ docker run --name some-ghost --volumes-from some-ghost-data ghost
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

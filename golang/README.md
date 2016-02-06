@@ -4,15 +4,17 @@
 -	[`1.4.3-onbuild`, `1.4-onbuild` (*1.4/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/onbuild/Dockerfile)
 -	[`1.4.3-cross`, `1.4-cross` (*1.4/cross/Dockerfile*)](https://github.com/docker-library/golang/blob/3427e88341de17a4d8921b859180a2649e1ab96e/1.4/cross/Dockerfile)
 -	[`1.4.3-wheezy`, `1.4-wheezy` (*1.4/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/a4f3927494b48c7bdb6ea6edac8f89818853b45b/1.4/wheezy/Dockerfile)
--	[`1.4.3-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/63a33bf151190592eaf0540dd4b7027a9ca13f9b/1.4/alpine/Dockerfile)
--	[`1.5.2`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/e5ff96b1ab32db028f608f89eacf2b827b85f69e/1.5/Dockerfile)
--	[`1.5.2-onbuild`, `1.5-onbuild`, `1-onbuild`, `onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
--	[`1.5.2-wheezy`, `1.5-wheezy`, `1-wheezy`, `wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/e5ff96b1ab32db028f608f89eacf2b827b85f69e/1.5/wheezy/Dockerfile)
--	[`1.5.2-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/e5ff96b1ab32db028f608f89eacf2b827b85f69e/1.5/alpine/Dockerfile)
--	[`1.6beta1`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/Dockerfile)
--	[`1.6beta1-onbuild`, `1.6-onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/onbuild/Dockerfile)
--	[`1.6beta1-wheezy`, `1.6-wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/wheezy/Dockerfile)
--	[`1.6beta1-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/alpine/Dockerfile)
+-	[`1.4.3-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/5fc9acac9ae394e055cdc2e80400bf78e360cd2c/1.4/alpine/Dockerfile)
+-	[`1.5.3`, `1.5`, `1`, `latest` (*1.5/Dockerfile*)](https://github.com/docker-library/golang/blob/1eab0db63794152b4516dbcb70270eb9dced4cbd/1.5/Dockerfile)
+-	[`1.5.3-onbuild`, `1.5-onbuild`, `1-onbuild`, `onbuild` (*1.5/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/f1f65c0ab0097a5e3d079d5a74e2468e8d47563d/1.5/onbuild/Dockerfile)
+-	[`1.5.3-wheezy`, `1.5-wheezy`, `1-wheezy`, `wheezy` (*1.5/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/1eab0db63794152b4516dbcb70270eb9dced4cbd/1.5/wheezy/Dockerfile)
+-	[`1.5.3-alpine`, `1.5-alpine`, `1-alpine`, `alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/1689df433a45bd787990f2982fb28345ec27f733/1.5/alpine/Dockerfile)
+-	[`1.6rc2`, `1.6` (*1.6/Dockerfile*)](https://github.com/docker-library/golang/blob/79e2ef7426433df214a0592cc49b7544658811b2/1.6/Dockerfile)
+-	[`1.6rc2-onbuild`, `1.6-onbuild` (*1.6/onbuild/Dockerfile*)](https://github.com/docker-library/golang/blob/ce284e14cdee73fbaa8fb680011a812f272eae2e/1.6/onbuild/Dockerfile)
+-	[`1.6rc2-wheezy`, `1.6-wheezy` (*1.6/wheezy/Dockerfile*)](https://github.com/docker-library/golang/blob/79e2ef7426433df214a0592cc49b7544658811b2/1.6/wheezy/Dockerfile)
+-	[`1.6rc2-alpine`, `1.6-alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/golang/blob/79e2ef7426433df214a0592cc49b7544658811b2/1.6/alpine/Dockerfile)
+
+[![](https://badge.imagelayers.io/golang:latest.svg)](https://imagelayers.io/?images=golang:1.4.3,golang:1.4.3-onbuild,golang:1.4.3-cross,golang:1.4.3-wheezy,golang:1.4.3-alpine,golang:1.5.3,golang:1.5.3-onbuild,golang:1.5.3-wheezy,golang:1.5.3-alpine,golang:1.6rc2,golang:1.6rc2-onbuild,golang:1.6rc2-wheezy,golang:1.6rc2-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/golang`)](https://github.com/docker-library/official-images/blob/master/library/golang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -24,7 +26,7 @@ Go (a.k.a., Golang) is a programming language first developed at Google. It is a
 
 > [wikipedia.org/wiki/Go_(programming_language)](http://en.wikipedia.org/wiki/Go_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/golang/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/golang/logo.png)
 
 # How to use this image
 
@@ -47,6 +49,8 @@ $ docker build -t my-golang-app .
 $ docker run -it --rm --name my-running-app my-golang-app
 ```
 
+*Note:* the default command in `golang:onbuild` is actually `go-wrapper run`, which includes `set -x` so the binary name is printed to stderr on application startup. If this behavior is undesirable, then adding `CMD ["app"]` (or `CMD ["myapp"]` if a [Go custom import path](https://golang.org/s/go14customimport) is in use) will silence it by running the built binary directly.
+
 ## Compile your app inside the Docker container
 
 There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
@@ -58,7 +62,7 @@ $ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.3 go build
 This will add your current directory as a volume to the container, set the working directory to the volume, and run the command `go build` which will tell go to compile the project in the working directory and output the executable to `myapp`. Alternatively, if you have a `Makefile`, you can run the `make` command inside your container.
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.3 make
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.3 bash -c make
 ```
 
 ## Cross-compile your app inside the Docker container
@@ -92,9 +96,9 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
-This variant is highly recommended when final image size being as small as possible is desired. The only caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice.
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
-To minimize image size, it's uncommon for additional related tools to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile.
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 ## `golang:onbuild`
 
@@ -110,7 +114,7 @@ View [license information](http://golang.org/LICENSE) for the software contained
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

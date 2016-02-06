@@ -1,10 +1,10 @@
 # Overview
 
-The images in this repository contain IBM WebSphere Application Server for Developers Liberty Profile and the IBM Java Runtime Environment. See the license section below for restrictions relating to the usage of this image. For more information on WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
+The images in this repository contain IBM WebSphere Application Server Liberty for Developers and the IBM Java Runtime Environment. See the license section below for restrictions relating to the usage of this image. For more information on WebSphere Application Server Liberty, see the [WASdev](https://developer.ibm.com/wasdev/docs/category/getting-started/) site.
 
 # Images
 
-There are multiple images available in this repository. The image with the tag `beta` contains the contents of the runtime JAR for the latest monthly beta. The other images are all based on the latest generally available fix pack.
+There are multiple images available in this repository. The image with the tag `beta` contains the contents of the install archive for the latest monthly beta. The other images are all based on the latest generally available fix pack.
 
 The `kernel` image contains just the Liberty kernel and no additional runtime features. This image can be used as the basis for custom built images that contain only the features required for a specific application. For example, the following Dockerfile starts with this image, copies in the `server.xml` that lists the features required by the application, and then uses the `installUtility` command to download those features from the online repository.
 
@@ -86,3 +86,26 @@ The images are designed to support a number of different usage patterns. The fol
 	  --volumes-from app websphere-liberty:webProfile6
 	```
 
+# Using IBM JRE Class data sharing
+
+The IBM JRE provides a feature [Class data sharing](http://www-01.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/understanding/shared_classes.html) which offers transparent and dynamic sharing of data between multiple Java Virtual Machines running on the same host using shared memory backed by a file. When running the Liberty Docker image, it looks for the file at `/opt/ibm/wlp/output/.classCache`. To benefit from Class data sharing, this location needs to be shared between containers either via the host or a data volume container.
+
+Taking the application image from example 3 above, containers can share the host file location (containing the shared cache) `/tmp/websphere-liberty/classCache` as follows:
+
+```console
+docker run -d -p 80:9080 -p 443:9443 \
+    -v /tmp/websphere-liberty/classCache:/opt/ibm/wlp/output/.classCache app
+```
+
+Alternatively, create a named data volume container that exposes a volume at the location of the shared file:
+
+```console
+docker run -e LICENSE=accept -v /opt/ibm/wlp/output/.classCache \
+    --name classcache websphere-liberty true
+```
+
+Then run the WebSphere Liberty image with the volumes from the data volume container classcache mounted as follows:
+
+```console
+docker run -d -p 80:9080 -p 443:9443 --volumes-from classcache app
+```

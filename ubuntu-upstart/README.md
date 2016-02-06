@@ -1,8 +1,14 @@
+# **DEPRECATED**
+
+This image is officially deprecated (especially now that Upstart is no longer the default init system for Ubuntu) and will receive no further updates. Please adjust your usage accordingly.
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`12.04`, `precise` (*sbin-init/ubuntu/upstart/12.04/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/4d24a12b54b75b3e0904d8a285900d88d3326361/sbin-init/ubuntu/upstart/12.04/Dockerfile)
 -	[`14.04`, `trusty`, `latest` (*sbin-init/ubuntu/upstart/14.04/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/4d24a12b54b75b3e0904d8a285900d88d3326361/sbin-init/ubuntu/upstart/14.04/Dockerfile)
 -	[`14.10`, `utopic` (*sbin-init/ubuntu/upstart/14.10/Dockerfile*)](https://github.com/tianon/dockerfiles/blob/4d24a12b54b75b3e0904d8a285900d88d3326361/sbin-init/ubuntu/upstart/14.10/Dockerfile)
+
+[![](https://badge.imagelayers.io/ubuntu-upstart:latest.svg)](https://imagelayers.io/?images=ubuntu-upstart:12.04,ubuntu-upstart:14.04,ubuntu-upstart:14.10)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu-upstart`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-upstart). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -14,11 +20,11 @@ Upstart is an event-based replacement for the traditional init daemon – the me
 
 > [wikipedia.org/wiki/Upstart](https://en.wikipedia.org/wiki/Upstart)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/ubuntu-upstart/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/9a6eb1db57c8882706a010edb9d340045029382a/ubuntu-upstart/logo.png)
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

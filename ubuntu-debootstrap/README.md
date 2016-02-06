@@ -1,3 +1,7 @@
+# **DEPRECATED**
+
+This image is officially deprecated in favor of [the standard `ubuntu` image](https://hub.docker.com/_/ubuntu/), and will receive no further updates. Please adjust your usage accordingly.
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`12.04.5`, `12.04`, `precise` (*12.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/12.04/Dockerfile)
@@ -5,6 +9,8 @@
 -	[`15.04`, `vivid` (*15.04/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/15.04/Dockerfile)
 -	[`15.10`, `wily` (*15.10/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/15.10/Dockerfile)
 -	[`devel` (*devel/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-debootstrap/blob/61e5df54c69a8d3943546e26b15d3fff80254e45/devel/Dockerfile)
+
+[![](https://badge.imagelayers.io/ubuntu-debootstrap:latest.svg)](https://imagelayers.io/?images=ubuntu-debootstrap:12.04.5,ubuntu-debootstrap:14.04.3,ubuntu-debootstrap:15.04,ubuntu-debootstrap:15.10,ubuntu-debootstrap:devel)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ubuntu-debootstrap`)](https://github.com/docker-library/official-images/blob/master/library/ubuntu-debootstrap). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -16,7 +22,7 @@ This image is the result of running `debootstrap --variant=minbase` against the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.4.0-apache`, `4.4.0`, `4.4-apache`, `4.4`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/d0638d3fc8aab0453fadb3d314420bf3ab0e899b/apache/Dockerfile)
--	[`4.4.0-fpm`, `4.4-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/d0638d3fc8aab0453fadb3d314420bf3ab0e899b/fpm/Dockerfile)
+-	[`4.4.2-apache`, `4.4.2`, `4.4-apache`, `4.4`, `4-apache`, `apache`, `4`, `latest` (*apache/Dockerfile*)](https://github.com/docker-library/wordpress/blob/df190dc9c5752fd09317d836bd2bdcd09ee379a5/apache/Dockerfile)
+-	[`4.4.2-fpm`, `4.4-fpm`, `4-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/docker-library/wordpress/blob/df190dc9c5752fd09317d836bd2bdcd09ee379a5/fpm/Dockerfile)
+
+[![](https://badge.imagelayers.io/wordpress:latest.svg)](https://imagelayers.io/?images=wordpress:4.4.2-apache,wordpress:4.4.2-fpm)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/wordpress`)](https://github.com/docker-library/official-images/blob/master/library/wordpress). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -13,7 +15,7 @@ WordPress is a free and open source blogging tool and a content management syste
 
 > [wikipedia.org/wiki/WordPress](https://en.wikipedia.org/wiki/WordPress)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/wordpress/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/wordpress/logo.png)
 
 # How to use this image
 
@@ -80,7 +82,7 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

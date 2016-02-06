@@ -2,6 +2,8 @@
 
 -	[`latest`, `0`, `0.11`, `0.11.1` (*Dockerfile*)](https://github.com/hylang/hy/blob/0.11.1/Dockerfile)
 
+[![](https://badge.imagelayers.io/hylang:latest.svg)](https://imagelayers.io/?images=hylang:latest)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/hylang`)](https://github.com/docker-library/official-images/blob/master/library/hylang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `hylang/tag-details.md` file](https://github.com/docker-library/docs/blob/master/hylang/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -12,7 +14,7 @@ Hy (a.k.a., Hylang) is a dialect of the Lisp programming language designed to in
 
 > [wikipedia.org/wiki/Hy](https://en.wikipedia.org/wiki/Hy)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/hylang/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c097f38c6ee48cd13456df8cd853a9d806fff429/hylang/logo.png)
 
 # How to use this image
 
@@ -46,7 +48,7 @@ View [license information](https://github.com/hylang/hy/blob/master/LICENSE) for
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,11 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.22`, `9.0` (*9.0/Dockerfile*)](https://github.com/docker-library/postgres/blob/8f8c0bbc5236e0deedd35595c504e5fd380b1233/9.0/Dockerfile)
--	[`9.1.19`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/ed23320582f4ec5b0e5e35c99d98966dacbc6ed8/9.1/Dockerfile)
--	[`9.2.14`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/ed23320582f4ec5b0e5e35c99d98966dacbc6ed8/9.2/Dockerfile)
--	[`9.3.10`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/ed23320582f4ec5b0e5e35c99d98966dacbc6ed8/9.3/Dockerfile)
--	[`9.4.5`, `9.4`, `9`, `latest` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/ed23320582f4ec5b0e5e35c99d98966dacbc6ed8/9.4/Dockerfile)
--	[`9.5-rc1`, `9.5` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/d74474439c5ce1b0d7a2e17a310e53ae975e519b/9.5/Dockerfile)
+-	[`9.1.19`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.1/Dockerfile)
+-	[`9.2.14`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.2/Dockerfile)
+-	[`9.3.10`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.3/Dockerfile)
+-	[`9.4.5`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.4/Dockerfile)
+-	[`9.5.0`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.5/Dockerfile)
+
+[![](https://badge.imagelayers.io/postgres:latest.svg)](https://imagelayers.io/?images=postgres:9.1.19,postgres:9.2.14,postgres:9.3.10,postgres:9.4.5,postgres:9.5.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -19,7 +20,7 @@ PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant a
 
 > [wikipedia.org/wiki/PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/postgres/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/postgres/logo.png)
 
 # How to use this image
 
@@ -64,7 +65,7 @@ This optional environment variable can be used to define another location - like
 
 ### `POSTGRES_DB`
 
-This optional environment variable can be used to define a different name for the default database that is created when the image is first started. If it is not specified, than the value of `POSTGRES_USER` will be used.
+This optional environment variable can be used to define a different name for the default database that is created when the image is first started. If it is not specified, then the value of `POSTGRES_USER` will be used.
 
 # How to extend this image
 
@@ -88,7 +89,7 @@ If there is no database when `postgres` starts in a container, then `postgres` w
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,11 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.9.1`, `1.9`, `1`, `latest` (*1.9/Dockerfile*)](https://github.com/docker-library/docker/blob/e33e7226872e53dfa88bee09f153704a66fc103d/1.9/Dockerfile)
--	[`1.9.1-dind`, `1.9-dind`, `1-dind`, `dind` (*1.9/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/31f5524efb43f05f57663c91de40be788c9d35a4/1.9/dind/Dockerfile)
--	[`1.9.1-git`, `1.9-git`, `1-git`, `git` (*1.9/git/Dockerfile*)](https://github.com/docker-library/docker/blob/ed9933c9cd998b27a8d65efe810e8cd13c116316/1.9/git/Dockerfile)
--	[`1.8.3`, `1.8` (*1.8/Dockerfile*)](https://github.com/docker-library/docker/blob/460aea3b5f26709dc58252deb7cf31cd0a26383e/1.8/Dockerfile)
--	[`1.8.3-dind`, `1.8-dind` (*1.8/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/31f5524efb43f05f57663c91de40be788c9d35a4/1.8/dind/Dockerfile)
--	[`1.8.3-git`, `1.8-git` (*1.8/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a2614c9b94d3bae7d8d61a7cf4d56a42f6332104/1.8/git/Dockerfile)
+-	[`1.9.1`, `1.9` (*1.9/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.9/Dockerfile)
+-	[`1.9.1-dind`, `1.9-dind` (*1.9/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.9/dind/Dockerfile)
+-	[`1.9.1-git`, `1.9-git` (*1.9/git/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.9/git/Dockerfile)
+-	[`1.10.0`, `1.10`, `1`, `latest` (*1.10/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/Dockerfile)
+-	[`1.10.0-dind`, `1.10-dind`, `1-dind`, `dind` (*1.10/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/dind/Dockerfile)
+-	[`1.10.0-git`, `1.10-git`, `1-git`, `git` (*1.10/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/git/Dockerfile)
+
+[![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.9.1,docker:1.9.1-dind,docker:1.9.1-git,docker:1.10.0,docker:1.10.0-dind,docker:1.10.0-git)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -17,7 +19,7 @@ Docker is an open-source project that automates the deployment of applications i
 
 > [wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_%28software%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/docker/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c350af05d3fac7b5c3f6327ac82fe4d990d8729c/docker/logo.png)
 
 # How to use this image
 
@@ -152,7 +154,7 @@ View [license information](https://github.com/docker/docker/blob/eb7b2ed6bbe3fbe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

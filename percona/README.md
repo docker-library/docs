@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.46`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/ee41cc830ff124c4a5c9de605b1a7e338ca6db91/5.5/Dockerfile)
--	[`5.6.27`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/ee41cc830ff124c4a5c9de605b1a7e338ca6db91/5.6/Dockerfile)
+-	[`5.5.47`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/percona/blob/b6f99e07367c193d96b29ac720fe9bfff231fde8/5.5/Dockerfile)
+-	[`5.6.28`, `5.6`, `5`, `latest` (*5.6/Dockerfile*)](https://github.com/docker-library/percona/blob/b6f99e07367c193d96b29ac720fe9bfff231fde8/5.6/Dockerfile)
+
+[![](https://badge.imagelayers.io/percona:latest.svg)](https://imagelayers.io/?images=percona:5.5.47,percona:5.6.28)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/percona`)](https://github.com/docker-library/official-images/blob/master/library/percona). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -15,7 +17,7 @@ It aims to retain close compatibility to the official MySQL releases, while focu
 
 > [wikipedia.org/wiki/Percona_Server](https://en.wikipedia.org/wiki/Percona_Server)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/percona/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/4743f11523a1d9c8dc28cc338447a4fd622f92b4/percona/logo.png)
 
 # How to use this image
 
@@ -143,7 +145,7 @@ If you start your `percona` container instance with a data directory that alread
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.0`, `3.6`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/ec1f618a64a518ba54ea9e9511b4dad444bda8f3/Dockerfile)
--	[`3.6.0-management`, `3.6-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/ec1f618a64a518ba54ea9e9511b4dad444bda8f3/management/Dockerfile)
+-	[`3.6.0`, `3.6`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/90918b05b23b85014454c24782518ccfd9fc4c68/Dockerfile)
+-	[`3.6.0-management`, `3.6-management`, `3-management`, `management` (*management/Dockerfile*)](https://github.com/docker-library/rabbitmq/blob/90918b05b23b85014454c24782518ccfd9fc4c68/management/Dockerfile)
+
+[![](https://badge.imagelayers.io/rabbitmq:latest.svg)](https://imagelayers.io/?images=rabbitmq:3.6.0,rabbitmq:3.6.0-management)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rabbitmq`)](https://github.com/docker-library/official-images/blob/master/library/rabbitmq). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -13,7 +15,7 @@ RabbitMQ is open source message broker software (sometimes called message-orient
 
 > [wikipedia.org/wiki/RabbitMQ](https://en.wikipedia.org/wiki/RabbitMQ)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/rabbitmq/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/81187b7b50f5af5bdb64d75882f4d9c782ad52c3/rabbitmq/logo.png)
 
 # How to use this image
 
@@ -112,7 +114,7 @@ View [license information](https://www.rabbitmq.com/mpl.html) for the software c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

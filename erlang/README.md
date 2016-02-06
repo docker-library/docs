@@ -1,8 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`18.2.1`, `18.2`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/4ccaeb1b709c227bea0a712c25f974350242d6d6/18/Dockerfile)
--	[`18.2.1-onbuild`, `18.2-onbuild`, `18-onbuild`, `onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/4ccaeb1b709c227bea0a712c25f974350242d6d6/18/onbuild/Dockerfile)
--	[`17.5.6.7`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/4ccaeb1b709c227bea0a712c25f974350242d6d6/17/Dockerfile)
+-	[`18.2.3`, `18.2`, `18`, `latest` (*18/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/18/Dockerfile)
+-	[`18.2-slim`, `18-slim`, `slim` (*18/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/18/slim/Dockerfile)
+-	[`18.2.3-onbuild`, `18.2-onbuild`, `18-onbuild`, `onbuild` (*18/onbuild/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/18/onbuild/Dockerfile)
+-	[`17.5.6.8`, `17.5`, `17` (*17/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/Dockerfile)
+-	[`17.5-slim`, `17-slim` (*17/slim/Dockerfile*)](https://github.com/c0b/docker-erlang-otp/blob/7b450cd7f43203d34c10ae0d35e9f8ea67257415/17/slim/Dockerfile)
+
+[![](https://badge.imagelayers.io/erlang:latest.svg)](https://imagelayers.io/?images=erlang:18.2.3,erlang:18.2-slim,erlang:18.2.3-onbuild,erlang:17.5.6.8,erlang:17.5-slim)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/erlang`)](https://github.com/docker-library/official-images/blob/master/library/erlang). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -14,7 +18,7 @@ Erlang is a programming language used to build massively scalable soft real-time
 
 > [wikipedia.org/wiki/Erlang_(programming_language)](https://en.wikipedia.org/wiki/Erlang_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/erlang/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/4144083772e02655d41aa10d6467aaf1e99fa77b/erlang/logo.png)
 
 # How to use this image
 
@@ -73,6 +77,10 @@ While the `onbuild` variant is really useful for "getting off the ground running
 
 Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
 
+## `erlang:slim`
+
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `erlang`. Unless you are working in an environment where *only* the erlang image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+
 # License
 
 View [license information](http://www.erlang.org/about.html) for the software contained in this image.
@@ -82,7 +90,7 @@ View [license information](http://www.erlang.org/about.html) for the software co
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

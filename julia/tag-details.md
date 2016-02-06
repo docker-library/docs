@@ -2,49 +2,49 @@
 
 # Tags of `julia`
 
--	[`julia:0.4.2`](#julia042)
+-	[`julia:0.4.3`](#julia043)
 -	[`julia:0.4`](#julia04)
 -	[`julia:latest`](#julialatest)
 
-## `julia:0.4.2`
+## `julia:0.4.3`
 
 ```console
-$ docker pull library/julia@sha256:b0af70bc0a03d5a5468515813db0c2be58eeeb448f78e7382bff4ceaa4d9c0e9
+$ docker pull library/julia@sha256:b76dcec75c4595b2059588c8cd60939bd490373ae0be2661a119954b06ec4104
 ```
 
--	Total Virtual Size: 380.1 MB (380143860 bytes)
--	Total v2 Content-Length: 129.1 MB (129124525 bytes)
+-	Total Virtual Size: 381.3 MB (381342036 bytes)
+-	Total v2 Content-Length: 129.9 MB (129857300 bytes)
 
 ### Layers (9)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Mon, 25 Jan 2016 22:24:35 GMT
 -	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	Virtual Size: 125.1 MB (125082947 bytes)
+-	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
+-	v2 Content-Length: 51.4 MB (51358904 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Mon, 25 Jan 2016 22:24:37 GMT
+-	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `69196ae8eee3a43d5cd8781ec6578b37db231a230c64c362ed0f9a9e8e279653`
+#### `d63336cf7479e1d06da2fe0c44583bae900ba4555ccfc10f63bfe9bd60ff6d29`
 
 ```dockerfile
 RUN apt-get update \
@@ -52,57 +52,57 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 06:51:47 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Tue, 26 Jan 2016 01:42:33 GMT
+-	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 -	Docker Version: 1.8.3
--	Virtual Size: 69.8 MB (69825555 bytes)
--	v2 Blob: `sha256:cbc2972336694e61ec05c567ac6f4dd1386f89f53d00a002d4c029a5c8fab1a8`
--	v2 Content-Length: 26.6 MB (26580320 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:24:10 GMT
+-	Virtual Size: 70.1 MB (70147371 bytes)
+-	v2 Blob: `sha256:d3d2a63f71f61ead294d5aaa50e4af9b719abc74338949c4ca2106f7621cf853`
+-	v2 Content-Length: 26.8 MB (26760191 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 22:50:27 GMT
 
-#### `7abcbce0bf426e325b79d0f55c425e48db5bc98505585b0a5e797cf9f8c20284`
+#### `e389decb7fa7db395b6e4241249ac97bbd0481f0edd712ccc811fcb998d6e146`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3673DF529D9049477F76B37566E3C7DC03D6E495
 ```
 
--	Created: Sat, 05 Dec 2015 06:51:51 GMT
--	Parent Layer: `69196ae8eee3a43d5cd8781ec6578b37db231a230c64c362ed0f9a9e8e279653`
+-	Created: Tue, 26 Jan 2016 01:42:41 GMT
+-	Parent Layer: `d63336cf7479e1d06da2fe0c44583bae900ba4555ccfc10f63bfe9bd60ff6d29`
 -	Docker Version: 1.8.3
 -	Virtual Size: 12.6 KB (12622 bytes)
--	v2 Blob: `sha256:1ce999e45396410c233c760ff53a9bba2e302599c14bb5f5bded7cf2253a38df`
--	v2 Content-Length: 6.7 KB (6743 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:23:52 GMT
+-	v2 Blob: `sha256:267f860dffb7509890d849754df34f186034e59da77355895550bd72c51cdf48`
+-	v2 Content-Length: 6.7 KB (6749 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 22:50:14 GMT
 
-#### `ce7d96d4bea52f298eeddcd77227c42d950859e88950d74c7cc853d9fec6bde5`
+#### `195a5e554e81414b518069828cb400e3c490d12f229be831382ae2edc65c7fe9`
 
 ```dockerfile
 ENV JULIA_PATH=/usr/local/julia
 ```
 
--	Created: Sat, 05 Dec 2015 06:51:51 GMT
--	Parent Layer: `7abcbce0bf426e325b79d0f55c425e48db5bc98505585b0a5e797cf9f8c20284`
+-	Created: Tue, 26 Jan 2016 01:42:42 GMT
+-	Parent Layer: `e389decb7fa7db395b6e4241249ac97bbd0481f0edd712ccc811fcb998d6e146`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bd351e71ad64e7dd06814d6fdf6707dc7077425f5ee3cdd12c1b8b225484833d`
+#### `cb790bea29089808f8bc7684bd24bdb693070295c37a3babec0750e7ceec38f2`
 
 ```dockerfile
-ENV JULIA_VERSION=0.4.2
+ENV JULIA_VERSION=0.4.3
 ```
 
--	Created: Tue, 08 Dec 2015 23:17:21 GMT
--	Parent Layer: `ce7d96d4bea52f298eeddcd77227c42d950859e88950d74c7cc853d9fec6bde5`
+-	Created: Tue, 26 Jan 2016 01:42:43 GMT
+-	Parent Layer: `195a5e554e81414b518069828cb400e3c490d12f229be831382ae2edc65c7fe9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0b9a66447035bcde6958c64ff4dc67cd2b850de543d0df208b5cdfa99dd71d5b`
+#### `5bc45779349eee4e3ad7fdfd37c3e79301a9d96a5618cf4ee8b86e3c22309e16`
 
 ```dockerfile
 RUN mkdir $JULIA_PATH \
@@ -111,42 +111,40 @@ RUN mkdir $JULIA_PATH \
 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz.asc" -o julia.tar.gz.asc \
 	&& gpg --verify julia.tar.gz.asc \
 	&& tar -xzf julia.tar.gz -C $JULIA_PATH --strip-components 1 \
-	&& apt-get purge -y --auto-remove \
-		curl \
 	&& rm -rf /var/lib/apt/lists/* julia.tar.gz*
 ```
 
--	Created: Tue, 08 Dec 2015 23:18:13 GMT
--	Parent Layer: `bd351e71ad64e7dd06814d6fdf6707dc7077425f5ee3cdd12c1b8b225484833d`
--	Docker Version: 1.8.3
--	Virtual Size: 185.2 MB (185190416 bytes)
--	v2 Blob: `sha256:2d7afc9dd5c298acb77026151b5502e1690978768633fd6b26ca53ca5545d159`
--	v2 Content-Length: 51.2 MB (51183046 bytes)
--	v2 Last-Modified: Wed, 09 Dec 2015 01:04:11 GMT
+-	Created: Fri, 05 Feb 2016 00:31:51 GMT
+-	Parent Layer: `cb790bea29089808f8bc7684bd24bdb693070295c37a3babec0750e7ceec38f2`
+-	Docker Version: 1.9.1
+-	Virtual Size: 186.1 MB (186099096 bytes)
+-	v2 Blob: `sha256:870bdba4f987ce23c59fd5da944fef61319a17b39bfa2d3face9671141ec72fd`
+-	v2 Content-Length: 51.7 MB (51731296 bytes)
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:43:05 GMT
 
-#### `6ccff97f0cc02d1c233a490729c4f49a6d5f1d738ffa7585acf46ae333219fb0`
+#### `23be2be6677557235b05b205a814faa55998985f88625570a191f1f30ac4b716`
 
 ```dockerfile
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 08 Dec 2015 23:18:15 GMT
--	Parent Layer: `0b9a66447035bcde6958c64ff4dc67cd2b850de543d0df208b5cdfa99dd71d5b`
--	Docker Version: 1.8.3
+-	Created: Fri, 05 Feb 2016 00:31:53 GMT
+-	Parent Layer: `5bc45779349eee4e3ad7fdfd37c3e79301a9d96a5618cf4ee8b86e3c22309e16`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e886afd4216390f1999ff19b405707facd7b8293dd72bdc479f2008d33454995`
+#### `43c7fe1066dbbec68d02310dd75b3d2d7aa55f297a9230bd1c38e5fc8d7ffd65`
 
 ```dockerfile
 CMD ["julia"]
 ```
 
--	Created: Tue, 08 Dec 2015 23:18:15 GMT
--	Parent Layer: `6ccff97f0cc02d1c233a490729c4f49a6d5f1d738ffa7585acf46ae333219fb0`
--	Docker Version: 1.8.3
+-	Created: Fri, 05 Feb 2016 00:31:53 GMT
+-	Parent Layer: `23be2be6677557235b05b205a814faa55998985f88625570a191f1f30ac4b716`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -155,42 +153,42 @@ CMD ["julia"]
 ## `julia:0.4`
 
 ```console
-$ docker pull library/julia@sha256:cb93dab60feae684bc5eb8086d0593eca243bc57a20a04df279007b2a7248a68
+$ docker pull library/julia@sha256:ef1156637e868b7a7261dd26240f92c9afecc85a5ba56f9f8e6b575abebaf6d8
 ```
 
--	Total Virtual Size: 380.1 MB (380143860 bytes)
--	Total v2 Content-Length: 129.1 MB (129124525 bytes)
+-	Total Virtual Size: 381.3 MB (381342036 bytes)
+-	Total v2 Content-Length: 129.9 MB (129857300 bytes)
 
 ### Layers (9)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Mon, 25 Jan 2016 22:24:35 GMT
 -	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	Virtual Size: 125.1 MB (125082947 bytes)
+-	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
+-	v2 Content-Length: 51.4 MB (51358904 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Mon, 25 Jan 2016 22:24:37 GMT
+-	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `69196ae8eee3a43d5cd8781ec6578b37db231a230c64c362ed0f9a9e8e279653`
+#### `d63336cf7479e1d06da2fe0c44583bae900ba4555ccfc10f63bfe9bd60ff6d29`
 
 ```dockerfile
 RUN apt-get update \
@@ -198,57 +196,57 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 06:51:47 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Tue, 26 Jan 2016 01:42:33 GMT
+-	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 -	Docker Version: 1.8.3
--	Virtual Size: 69.8 MB (69825555 bytes)
--	v2 Blob: `sha256:cbc2972336694e61ec05c567ac6f4dd1386f89f53d00a002d4c029a5c8fab1a8`
--	v2 Content-Length: 26.6 MB (26580320 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:24:10 GMT
+-	Virtual Size: 70.1 MB (70147371 bytes)
+-	v2 Blob: `sha256:d3d2a63f71f61ead294d5aaa50e4af9b719abc74338949c4ca2106f7621cf853`
+-	v2 Content-Length: 26.8 MB (26760191 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 22:50:27 GMT
 
-#### `7abcbce0bf426e325b79d0f55c425e48db5bc98505585b0a5e797cf9f8c20284`
+#### `e389decb7fa7db395b6e4241249ac97bbd0481f0edd712ccc811fcb998d6e146`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3673DF529D9049477F76B37566E3C7DC03D6E495
 ```
 
--	Created: Sat, 05 Dec 2015 06:51:51 GMT
--	Parent Layer: `69196ae8eee3a43d5cd8781ec6578b37db231a230c64c362ed0f9a9e8e279653`
+-	Created: Tue, 26 Jan 2016 01:42:41 GMT
+-	Parent Layer: `d63336cf7479e1d06da2fe0c44583bae900ba4555ccfc10f63bfe9bd60ff6d29`
 -	Docker Version: 1.8.3
 -	Virtual Size: 12.6 KB (12622 bytes)
--	v2 Blob: `sha256:1ce999e45396410c233c760ff53a9bba2e302599c14bb5f5bded7cf2253a38df`
--	v2 Content-Length: 6.7 KB (6743 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:23:52 GMT
+-	v2 Blob: `sha256:267f860dffb7509890d849754df34f186034e59da77355895550bd72c51cdf48`
+-	v2 Content-Length: 6.7 KB (6749 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 22:50:14 GMT
 
-#### `ce7d96d4bea52f298eeddcd77227c42d950859e88950d74c7cc853d9fec6bde5`
+#### `195a5e554e81414b518069828cb400e3c490d12f229be831382ae2edc65c7fe9`
 
 ```dockerfile
 ENV JULIA_PATH=/usr/local/julia
 ```
 
--	Created: Sat, 05 Dec 2015 06:51:51 GMT
--	Parent Layer: `7abcbce0bf426e325b79d0f55c425e48db5bc98505585b0a5e797cf9f8c20284`
+-	Created: Tue, 26 Jan 2016 01:42:42 GMT
+-	Parent Layer: `e389decb7fa7db395b6e4241249ac97bbd0481f0edd712ccc811fcb998d6e146`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bd351e71ad64e7dd06814d6fdf6707dc7077425f5ee3cdd12c1b8b225484833d`
+#### `cb790bea29089808f8bc7684bd24bdb693070295c37a3babec0750e7ceec38f2`
 
 ```dockerfile
-ENV JULIA_VERSION=0.4.2
+ENV JULIA_VERSION=0.4.3
 ```
 
--	Created: Tue, 08 Dec 2015 23:17:21 GMT
--	Parent Layer: `ce7d96d4bea52f298eeddcd77227c42d950859e88950d74c7cc853d9fec6bde5`
+-	Created: Tue, 26 Jan 2016 01:42:43 GMT
+-	Parent Layer: `195a5e554e81414b518069828cb400e3c490d12f229be831382ae2edc65c7fe9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0b9a66447035bcde6958c64ff4dc67cd2b850de543d0df208b5cdfa99dd71d5b`
+#### `5bc45779349eee4e3ad7fdfd37c3e79301a9d96a5618cf4ee8b86e3c22309e16`
 
 ```dockerfile
 RUN mkdir $JULIA_PATH \
@@ -257,42 +255,40 @@ RUN mkdir $JULIA_PATH \
 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz.asc" -o julia.tar.gz.asc \
 	&& gpg --verify julia.tar.gz.asc \
 	&& tar -xzf julia.tar.gz -C $JULIA_PATH --strip-components 1 \
-	&& apt-get purge -y --auto-remove \
-		curl \
 	&& rm -rf /var/lib/apt/lists/* julia.tar.gz*
 ```
 
--	Created: Tue, 08 Dec 2015 23:18:13 GMT
--	Parent Layer: `bd351e71ad64e7dd06814d6fdf6707dc7077425f5ee3cdd12c1b8b225484833d`
--	Docker Version: 1.8.3
--	Virtual Size: 185.2 MB (185190416 bytes)
--	v2 Blob: `sha256:2d7afc9dd5c298acb77026151b5502e1690978768633fd6b26ca53ca5545d159`
--	v2 Content-Length: 51.2 MB (51183046 bytes)
--	v2 Last-Modified: Wed, 09 Dec 2015 01:04:11 GMT
+-	Created: Fri, 05 Feb 2016 00:31:51 GMT
+-	Parent Layer: `cb790bea29089808f8bc7684bd24bdb693070295c37a3babec0750e7ceec38f2`
+-	Docker Version: 1.9.1
+-	Virtual Size: 186.1 MB (186099096 bytes)
+-	v2 Blob: `sha256:870bdba4f987ce23c59fd5da944fef61319a17b39bfa2d3face9671141ec72fd`
+-	v2 Content-Length: 51.7 MB (51731296 bytes)
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:43:05 GMT
 
-#### `6ccff97f0cc02d1c233a490729c4f49a6d5f1d738ffa7585acf46ae333219fb0`
+#### `23be2be6677557235b05b205a814faa55998985f88625570a191f1f30ac4b716`
 
 ```dockerfile
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 08 Dec 2015 23:18:15 GMT
--	Parent Layer: `0b9a66447035bcde6958c64ff4dc67cd2b850de543d0df208b5cdfa99dd71d5b`
--	Docker Version: 1.8.3
+-	Created: Fri, 05 Feb 2016 00:31:53 GMT
+-	Parent Layer: `5bc45779349eee4e3ad7fdfd37c3e79301a9d96a5618cf4ee8b86e3c22309e16`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e886afd4216390f1999ff19b405707facd7b8293dd72bdc479f2008d33454995`
+#### `43c7fe1066dbbec68d02310dd75b3d2d7aa55f297a9230bd1c38e5fc8d7ffd65`
 
 ```dockerfile
 CMD ["julia"]
 ```
 
--	Created: Tue, 08 Dec 2015 23:18:15 GMT
--	Parent Layer: `6ccff97f0cc02d1c233a490729c4f49a6d5f1d738ffa7585acf46ae333219fb0`
--	Docker Version: 1.8.3
+-	Created: Fri, 05 Feb 2016 00:31:53 GMT
+-	Parent Layer: `23be2be6677557235b05b205a814faa55998985f88625570a191f1f30ac4b716`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
@@ -301,42 +297,42 @@ CMD ["julia"]
 ## `julia:latest`
 
 ```console
-$ docker pull library/julia@sha256:ebbd9e1e99c5fca3466b9b5bb304f62fff3628368c60445b7a2f709eea11bb45
+$ docker pull library/julia@sha256:70a0d0b65b3f91b2f462b4a0a32883707c204a3b47b47f6e7b6e18aa23dbb913
 ```
 
--	Total Virtual Size: 380.1 MB (380143860 bytes)
--	Total v2 Content-Length: 129.1 MB (129124525 bytes)
+-	Total Virtual Size: 381.3 MB (381342036 bytes)
+-	Total v2 Content-Length: 129.9 MB (129857300 bytes)
 
 ### Layers (9)
 
-#### `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
 
 ```dockerfile
-ADD file:863d6edd178364362a93f49103aa75c1bd03a37e83bfe0b051a3881c9333d238 in /
+ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:27:57 GMT
+-	Created: Mon, 25 Jan 2016 22:24:35 GMT
 -	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125115267 bytes)
--	v2 Blob: `sha256:d4bce7fd68df2e8bb04e317e7cb7899e981159a4da89339e38c8bf30e6c318f0`
--	v2 Content-Length: 51.4 MB (51354256 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:45:49 GMT
+-	Virtual Size: 125.1 MB (125082947 bytes)
+-	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
+-	v2 Content-Length: 51.4 MB (51358904 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
 
-#### `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:28:00 GMT
--	Parent Layer: `6d1ae97ee388924068b7a4797d995d57d1e6194843e7e2178e592a880bf6c7ad`
+-	Created: Mon, 25 Jan 2016 22:24:37 GMT
+-	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `69196ae8eee3a43d5cd8781ec6578b37db231a230c64c362ed0f9a9e8e279653`
+#### `d63336cf7479e1d06da2fe0c44583bae900ba4555ccfc10f63bfe9bd60ff6d29`
 
 ```dockerfile
 RUN apt-get update \
@@ -344,57 +340,57 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Sat, 05 Dec 2015 06:51:47 GMT
--	Parent Layer: `8b9a99209d5c8f3fc5b4c01573f0508d1ddaa01c4f83c587e03b67497566aab9`
+-	Created: Tue, 26 Jan 2016 01:42:33 GMT
+-	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 -	Docker Version: 1.8.3
--	Virtual Size: 69.8 MB (69825555 bytes)
--	v2 Blob: `sha256:cbc2972336694e61ec05c567ac6f4dd1386f89f53d00a002d4c029a5c8fab1a8`
--	v2 Content-Length: 26.6 MB (26580320 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:24:10 GMT
+-	Virtual Size: 70.1 MB (70147371 bytes)
+-	v2 Blob: `sha256:d3d2a63f71f61ead294d5aaa50e4af9b719abc74338949c4ca2106f7621cf853`
+-	v2 Content-Length: 26.8 MB (26760191 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 22:50:27 GMT
 
-#### `7abcbce0bf426e325b79d0f55c425e48db5bc98505585b0a5e797cf9f8c20284`
+#### `e389decb7fa7db395b6e4241249ac97bbd0481f0edd712ccc811fcb998d6e146`
 
 ```dockerfile
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3673DF529D9049477F76B37566E3C7DC03D6E495
 ```
 
--	Created: Sat, 05 Dec 2015 06:51:51 GMT
--	Parent Layer: `69196ae8eee3a43d5cd8781ec6578b37db231a230c64c362ed0f9a9e8e279653`
+-	Created: Tue, 26 Jan 2016 01:42:41 GMT
+-	Parent Layer: `d63336cf7479e1d06da2fe0c44583bae900ba4555ccfc10f63bfe9bd60ff6d29`
 -	Docker Version: 1.8.3
 -	Virtual Size: 12.6 KB (12622 bytes)
--	v2 Blob: `sha256:1ce999e45396410c233c760ff53a9bba2e302599c14bb5f5bded7cf2253a38df`
--	v2 Content-Length: 6.7 KB (6743 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 01:23:52 GMT
+-	v2 Blob: `sha256:267f860dffb7509890d849754df34f186034e59da77355895550bd72c51cdf48`
+-	v2 Content-Length: 6.7 KB (6749 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 22:50:14 GMT
 
-#### `ce7d96d4bea52f298eeddcd77227c42d950859e88950d74c7cc853d9fec6bde5`
+#### `195a5e554e81414b518069828cb400e3c490d12f229be831382ae2edc65c7fe9`
 
 ```dockerfile
 ENV JULIA_PATH=/usr/local/julia
 ```
 
--	Created: Sat, 05 Dec 2015 06:51:51 GMT
--	Parent Layer: `7abcbce0bf426e325b79d0f55c425e48db5bc98505585b0a5e797cf9f8c20284`
+-	Created: Tue, 26 Jan 2016 01:42:42 GMT
+-	Parent Layer: `e389decb7fa7db395b6e4241249ac97bbd0481f0edd712ccc811fcb998d6e146`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bd351e71ad64e7dd06814d6fdf6707dc7077425f5ee3cdd12c1b8b225484833d`
+#### `cb790bea29089808f8bc7684bd24bdb693070295c37a3babec0750e7ceec38f2`
 
 ```dockerfile
-ENV JULIA_VERSION=0.4.2
+ENV JULIA_VERSION=0.4.3
 ```
 
--	Created: Tue, 08 Dec 2015 23:17:21 GMT
--	Parent Layer: `ce7d96d4bea52f298eeddcd77227c42d950859e88950d74c7cc853d9fec6bde5`
+-	Created: Tue, 26 Jan 2016 01:42:43 GMT
+-	Parent Layer: `195a5e554e81414b518069828cb400e3c490d12f229be831382ae2edc65c7fe9`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0b9a66447035bcde6958c64ff4dc67cd2b850de543d0df208b5cdfa99dd71d5b`
+#### `5bc45779349eee4e3ad7fdfd37c3e79301a9d96a5618cf4ee8b86e3c22309e16`
 
 ```dockerfile
 RUN mkdir $JULIA_PATH \
@@ -403,42 +399,40 @@ RUN mkdir $JULIA_PATH \
 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz.asc" -o julia.tar.gz.asc \
 	&& gpg --verify julia.tar.gz.asc \
 	&& tar -xzf julia.tar.gz -C $JULIA_PATH --strip-components 1 \
-	&& apt-get purge -y --auto-remove \
-		curl \
 	&& rm -rf /var/lib/apt/lists/* julia.tar.gz*
 ```
 
--	Created: Tue, 08 Dec 2015 23:18:13 GMT
--	Parent Layer: `bd351e71ad64e7dd06814d6fdf6707dc7077425f5ee3cdd12c1b8b225484833d`
--	Docker Version: 1.8.3
--	Virtual Size: 185.2 MB (185190416 bytes)
--	v2 Blob: `sha256:2d7afc9dd5c298acb77026151b5502e1690978768633fd6b26ca53ca5545d159`
--	v2 Content-Length: 51.2 MB (51183046 bytes)
--	v2 Last-Modified: Wed, 09 Dec 2015 01:04:11 GMT
+-	Created: Fri, 05 Feb 2016 00:31:51 GMT
+-	Parent Layer: `cb790bea29089808f8bc7684bd24bdb693070295c37a3babec0750e7ceec38f2`
+-	Docker Version: 1.9.1
+-	Virtual Size: 186.1 MB (186099096 bytes)
+-	v2 Blob: `sha256:870bdba4f987ce23c59fd5da944fef61319a17b39bfa2d3face9671141ec72fd`
+-	v2 Content-Length: 51.7 MB (51731296 bytes)
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:43:05 GMT
 
-#### `6ccff97f0cc02d1c233a490729c4f49a6d5f1d738ffa7585acf46ae333219fb0`
+#### `23be2be6677557235b05b205a814faa55998985f88625570a191f1f30ac4b716`
 
 ```dockerfile
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 08 Dec 2015 23:18:15 GMT
--	Parent Layer: `0b9a66447035bcde6958c64ff4dc67cd2b850de543d0df208b5cdfa99dd71d5b`
--	Docker Version: 1.8.3
+-	Created: Fri, 05 Feb 2016 00:31:53 GMT
+-	Parent Layer: `5bc45779349eee4e3ad7fdfd37c3e79301a9d96a5618cf4ee8b86e3c22309e16`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e886afd4216390f1999ff19b405707facd7b8293dd72bdc479f2008d33454995`
+#### `43c7fe1066dbbec68d02310dd75b3d2d7aa55f297a9230bd1c38e5fc8d7ffd65`
 
 ```dockerfile
 CMD ["julia"]
 ```
 
--	Created: Tue, 08 Dec 2015 23:18:15 GMT
--	Parent Layer: `6ccff97f0cc02d1c233a490729c4f49a6d5f1d738ffa7585acf46ae333219fb0`
--	Docker Version: 1.8.3
+-	Created: Fri, 05 Feb 2016 00:31:53 GMT
+-	Parent Layer: `23be2be6677557235b05b205a814faa55998985f88625570a191f1f30ac4b716`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B

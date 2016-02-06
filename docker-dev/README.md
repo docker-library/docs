@@ -1,6 +1,12 @@
+# **DEPRECATED**
+
+This image is officially deprecated in favor of [the `dockercore/docker` automated build](https://hub.docker.com/r/dockercore/docker/), and will receive no further updates. Please adjust your usage accordingly.
+
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.9.1`, `1.9`, `1` (*Dockerfile*)](https://github.com/docker/docker/blob/a34a1d598c6096ed8b5ce5219e77d68e5cd85462/Dockerfile)
+
+[![](https://badge.imagelayers.io/docker-dev:1.9.1.svg)](https://imagelayers.io/?images=docker-dev:1.9.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -12,7 +18,7 @@ Docker is an open-source project that automates the deployment of applications i
 
 > [wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_%28software%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/docker-dev/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/docker-dev/logo.png)
 
 # About this image
 
@@ -22,7 +28,7 @@ If you are looking for an up-to-date development environment for doing developme
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

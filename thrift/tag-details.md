@@ -3,76 +3,76 @@
 # Tags of `thrift`
 
 -	[`thrift:0.9`](#thrift09)
--	[`thrift:0.9.2`](#thrift092)
+-	[`thrift:0.9.3`](#thrift093)
 -	[`thrift:latest`](#thriftlatest)
 
 ## `thrift:0.9`
 
 ```console
-$ docker pull library/thrift@sha256:6536662a7facf357b5df8721ad5dac1e72eae687109bcfdc48b3a276ec3510c7
+$ docker pull library/thrift@sha256:a89f16cdc84bcc72de7d15badd99c9c21fb6404bb31cd78133d91ea5307e998d
 ```
 
--	Total Virtual Size: 135.1 MB (135085504 bytes)
--	Total v2 Content-Length: 48.5 MB (48456422 bytes)
+-	Total Virtual Size: 138.1 MB (138097973 bytes)
+-	Total v2 Content-Length: 49.1 MB (49057523 bytes)
 
 ### Layers (6)
 
-#### `2c788329cf71b09863a2ba17dc0275d7f89c2890f04c0c6195313c5c37e09215`
+#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
 
 ```dockerfile
-ADD file:ea7fb7f89a81c9be7ab4abf1bfb1310d2566104701c6543301bdf27818891015 in /
+ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:31:07 GMT
+-	Created: Mon, 25 Jan 2016 22:26:48 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:45a5ec39a81f3ae44630f998adad19965c29d5bfb3ae4caabefccf39159a9076`
--	v2 Content-Length: 37.2 MB (37184719 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:55:23 GMT
+-	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
+-	v2 Content-Length: 37.2 MB (37184894 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
 
-#### `c1661b87f43627a9e630109963c7c135ff6f5819a42c4e0fb14d1ea653d5ba29`
+#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:31:10 GMT
--	Parent Layer: `2c788329cf71b09863a2ba17dc0275d7f89c2890f04c0c6195313c5c37e09215`
+-	Created: Mon, 25 Jan 2016 22:26:50 GMT
+-	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `be87f16df39b54e77ceb07f632b12bf17496ddb899b228277be0a15117397a82`
+#### `20dfe10a33bac1b1efe6589013756ea6dfbdaa0bc58e00aa05c5d8af3c357dbf`
 
 ```dockerfile
 MAINTAINER Adam Hawkins <adam@hawkins.io>
 ```
 
--	Created: Sat, 05 Dec 2015 12:04:08 GMT
--	Parent Layer: `c1661b87f43627a9e630109963c7c135ff6f5819a42c4e0fb14d1ea653d5ba29`
+-	Created: Tue, 26 Jan 2016 07:23:15 GMT
+-	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9ba5df2693002167bb42f425db10ad9e58620bb668e763f4e64a79a601bb0030`
+#### `2dab0161f4da370daf554295672cf8c83d0c180bca11103e6880b10d9e572c78`
 
 ```dockerfile
-ENV THRIFT_VERSION=0.9.2
+ENV THRIFT_VERSION=0.9.3
 ```
 
--	Created: Sat, 05 Dec 2015 12:04:09 GMT
--	Parent Layer: `be87f16df39b54e77ceb07f632b12bf17496ddb899b228277be0a15117397a82`
+-	Created: Thu, 28 Jan 2016 00:20:34 GMT
+-	Parent Layer: `20dfe10a33bac1b1efe6589013756ea6dfbdaa0bc58e00aa05c5d8af3c357dbf`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9a6aaa730458e7334daee701c763d50a68491181992c82de2ac350b0aeddcf75`
+#### `8270f24cd1b0d0ec7e41fac2323538577cd4e00a2102f8dc5febe63ece85e8df`
 
 ```dockerfile
 RUN buildDeps=" \
@@ -111,95 +111,95 @@ RUN buildDeps=" \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 12:07:28 GMT
--	Parent Layer: `9ba5df2693002167bb42f425db10ad9e58620bb668e763f4e64a79a601bb0030`
+-	Created: Thu, 28 Jan 2016 00:26:45 GMT
+-	Parent Layer: `2dab0161f4da370daf554295672cf8c83d0c180bca11103e6880b10d9e572c78`
 -	Docker Version: 1.8.3
--	Virtual Size: 50.2 MB (50191062 bytes)
--	v2 Blob: `sha256:086fd1b377bdb490d5898076fe6ffbda6804cd683e9c52ec2b51e8d312811754`
--	v2 Content-Length: 11.3 MB (11271575 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:25:40 GMT
+-	Virtual Size: 53.2 MB (53203531 bytes)
+-	v2 Blob: `sha256:d86c01a2189805ed6e25ce7ca98e3ca7034c69ddfbc8b7ffbc9293ee7017a76c`
+-	v2 Content-Length: 11.9 MB (11872501 bytes)
+-	v2 Last-Modified: Thu, 28 Jan 2016 00:28:55 GMT
 
-#### `5808377d712f5d74f6da458f1cdfa7919fd8fd72981cd4808ac900d786818476`
+#### `6c6a11450e5c8c3c8f6b92c0dde65eb4f84bb6aadb3a9be53fdd1a3462bbb994`
 
 ```dockerfile
 CMD ["thrift"]
 ```
 
--	Created: Sat, 05 Dec 2015 12:07:29 GMT
--	Parent Layer: `9a6aaa730458e7334daee701c763d50a68491181992c82de2ac350b0aeddcf75`
+-	Created: Thu, 28 Jan 2016 00:26:49 GMT
+-	Parent Layer: `8270f24cd1b0d0ec7e41fac2323538577cd4e00a2102f8dc5febe63ece85e8df`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `thrift:0.9.2`
+## `thrift:0.9.3`
 
 ```console
-$ docker pull library/thrift@sha256:6cdf7f9be6e34284f808b6115be0c94e0dc40ffb1211922dd5e88b4ce5697255
+$ docker pull library/thrift@sha256:137a197460c4335abf42568d2d762f2d73ad48bde9a5f4abcbb68c5ab0b1781b
 ```
 
--	Total Virtual Size: 135.1 MB (135085504 bytes)
--	Total v2 Content-Length: 48.5 MB (48456422 bytes)
+-	Total Virtual Size: 138.1 MB (138097973 bytes)
+-	Total v2 Content-Length: 49.1 MB (49057523 bytes)
 
 ### Layers (6)
 
-#### `2c788329cf71b09863a2ba17dc0275d7f89c2890f04c0c6195313c5c37e09215`
+#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
 
 ```dockerfile
-ADD file:ea7fb7f89a81c9be7ab4abf1bfb1310d2566104701c6543301bdf27818891015 in /
+ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:31:07 GMT
+-	Created: Mon, 25 Jan 2016 22:26:48 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:45a5ec39a81f3ae44630f998adad19965c29d5bfb3ae4caabefccf39159a9076`
--	v2 Content-Length: 37.2 MB (37184719 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:55:23 GMT
+-	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
+-	v2 Content-Length: 37.2 MB (37184894 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
 
-#### `c1661b87f43627a9e630109963c7c135ff6f5819a42c4e0fb14d1ea653d5ba29`
+#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:31:10 GMT
--	Parent Layer: `2c788329cf71b09863a2ba17dc0275d7f89c2890f04c0c6195313c5c37e09215`
+-	Created: Mon, 25 Jan 2016 22:26:50 GMT
+-	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `be87f16df39b54e77ceb07f632b12bf17496ddb899b228277be0a15117397a82`
+#### `20dfe10a33bac1b1efe6589013756ea6dfbdaa0bc58e00aa05c5d8af3c357dbf`
 
 ```dockerfile
 MAINTAINER Adam Hawkins <adam@hawkins.io>
 ```
 
--	Created: Sat, 05 Dec 2015 12:04:08 GMT
--	Parent Layer: `c1661b87f43627a9e630109963c7c135ff6f5819a42c4e0fb14d1ea653d5ba29`
+-	Created: Tue, 26 Jan 2016 07:23:15 GMT
+-	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9ba5df2693002167bb42f425db10ad9e58620bb668e763f4e64a79a601bb0030`
+#### `2dab0161f4da370daf554295672cf8c83d0c180bca11103e6880b10d9e572c78`
 
 ```dockerfile
-ENV THRIFT_VERSION=0.9.2
+ENV THRIFT_VERSION=0.9.3
 ```
 
--	Created: Sat, 05 Dec 2015 12:04:09 GMT
--	Parent Layer: `be87f16df39b54e77ceb07f632b12bf17496ddb899b228277be0a15117397a82`
+-	Created: Thu, 28 Jan 2016 00:20:34 GMT
+-	Parent Layer: `20dfe10a33bac1b1efe6589013756ea6dfbdaa0bc58e00aa05c5d8af3c357dbf`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9a6aaa730458e7334daee701c763d50a68491181992c82de2ac350b0aeddcf75`
+#### `8270f24cd1b0d0ec7e41fac2323538577cd4e00a2102f8dc5febe63ece85e8df`
 
 ```dockerfile
 RUN buildDeps=" \
@@ -238,22 +238,22 @@ RUN buildDeps=" \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 12:07:28 GMT
--	Parent Layer: `9ba5df2693002167bb42f425db10ad9e58620bb668e763f4e64a79a601bb0030`
+-	Created: Thu, 28 Jan 2016 00:26:45 GMT
+-	Parent Layer: `2dab0161f4da370daf554295672cf8c83d0c180bca11103e6880b10d9e572c78`
 -	Docker Version: 1.8.3
--	Virtual Size: 50.2 MB (50191062 bytes)
--	v2 Blob: `sha256:086fd1b377bdb490d5898076fe6ffbda6804cd683e9c52ec2b51e8d312811754`
--	v2 Content-Length: 11.3 MB (11271575 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:25:40 GMT
+-	Virtual Size: 53.2 MB (53203531 bytes)
+-	v2 Blob: `sha256:d86c01a2189805ed6e25ce7ca98e3ca7034c69ddfbc8b7ffbc9293ee7017a76c`
+-	v2 Content-Length: 11.9 MB (11872501 bytes)
+-	v2 Last-Modified: Thu, 28 Jan 2016 00:28:55 GMT
 
-#### `5808377d712f5d74f6da458f1cdfa7919fd8fd72981cd4808ac900d786818476`
+#### `6c6a11450e5c8c3c8f6b92c0dde65eb4f84bb6aadb3a9be53fdd1a3462bbb994`
 
 ```dockerfile
 CMD ["thrift"]
 ```
 
--	Created: Sat, 05 Dec 2015 12:07:29 GMT
--	Parent Layer: `9a6aaa730458e7334daee701c763d50a68491181992c82de2ac350b0aeddcf75`
+-	Created: Thu, 28 Jan 2016 00:26:49 GMT
+-	Parent Layer: `8270f24cd1b0d0ec7e41fac2323538577cd4e00a2102f8dc5febe63ece85e8df`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -263,70 +263,70 @@ CMD ["thrift"]
 ## `thrift:latest`
 
 ```console
-$ docker pull library/thrift@sha256:2c9f0dbb17f01246d1563afdd4010606f4a793a58140bb83865a894f04f3e576
+$ docker pull library/thrift@sha256:b7af92f1d3cf5f66252381095239f85be27ee5eb842a689bf08c6fbe544fca2d
 ```
 
--	Total Virtual Size: 135.1 MB (135085504 bytes)
--	Total v2 Content-Length: 48.5 MB (48456422 bytes)
+-	Total Virtual Size: 138.1 MB (138097973 bytes)
+-	Total v2 Content-Length: 49.1 MB (49057523 bytes)
 
 ### Layers (6)
 
-#### `2c788329cf71b09863a2ba17dc0275d7f89c2890f04c0c6195313c5c37e09215`
+#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
 
 ```dockerfile
-ADD file:ea7fb7f89a81c9be7ab4abf1bfb1310d2566104701c6543301bdf27818891015 in /
+ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
 ```
 
--	Created: Fri, 04 Dec 2015 19:31:07 GMT
+-	Created: Mon, 25 Jan 2016 22:26:48 GMT
 -	Docker Version: 1.8.3
 -	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:45a5ec39a81f3ae44630f998adad19965c29d5bfb3ae4caabefccf39159a9076`
--	v2 Content-Length: 37.2 MB (37184719 bytes)
--	v2 Last-Modified: Fri, 04 Dec 2015 19:55:23 GMT
+-	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
+-	v2 Content-Length: 37.2 MB (37184894 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
 
-#### `c1661b87f43627a9e630109963c7c135ff6f5819a42c4e0fb14d1ea653d5ba29`
+#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Fri, 04 Dec 2015 19:31:10 GMT
--	Parent Layer: `2c788329cf71b09863a2ba17dc0275d7f89c2890f04c0c6195313c5c37e09215`
+-	Created: Mon, 25 Jan 2016 22:26:50 GMT
+-	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `be87f16df39b54e77ceb07f632b12bf17496ddb899b228277be0a15117397a82`
+#### `20dfe10a33bac1b1efe6589013756ea6dfbdaa0bc58e00aa05c5d8af3c357dbf`
 
 ```dockerfile
 MAINTAINER Adam Hawkins <adam@hawkins.io>
 ```
 
--	Created: Sat, 05 Dec 2015 12:04:08 GMT
--	Parent Layer: `c1661b87f43627a9e630109963c7c135ff6f5819a42c4e0fb14d1ea653d5ba29`
+-	Created: Tue, 26 Jan 2016 07:23:15 GMT
+-	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9ba5df2693002167bb42f425db10ad9e58620bb668e763f4e64a79a601bb0030`
+#### `2dab0161f4da370daf554295672cf8c83d0c180bca11103e6880b10d9e572c78`
 
 ```dockerfile
-ENV THRIFT_VERSION=0.9.2
+ENV THRIFT_VERSION=0.9.3
 ```
 
--	Created: Sat, 05 Dec 2015 12:04:09 GMT
--	Parent Layer: `be87f16df39b54e77ceb07f632b12bf17496ddb899b228277be0a15117397a82`
+-	Created: Thu, 28 Jan 2016 00:20:34 GMT
+-	Parent Layer: `20dfe10a33bac1b1efe6589013756ea6dfbdaa0bc58e00aa05c5d8af3c357dbf`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9a6aaa730458e7334daee701c763d50a68491181992c82de2ac350b0aeddcf75`
+#### `8270f24cd1b0d0ec7e41fac2323538577cd4e00a2102f8dc5febe63ece85e8df`
 
 ```dockerfile
 RUN buildDeps=" \
@@ -365,22 +365,22 @@ RUN buildDeps=" \
 	&& apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Sat, 05 Dec 2015 12:07:28 GMT
--	Parent Layer: `9ba5df2693002167bb42f425db10ad9e58620bb668e763f4e64a79a601bb0030`
+-	Created: Thu, 28 Jan 2016 00:26:45 GMT
+-	Parent Layer: `2dab0161f4da370daf554295672cf8c83d0c180bca11103e6880b10d9e572c78`
 -	Docker Version: 1.8.3
--	Virtual Size: 50.2 MB (50191062 bytes)
--	v2 Blob: `sha256:086fd1b377bdb490d5898076fe6ffbda6804cd683e9c52ec2b51e8d312811754`
--	v2 Content-Length: 11.3 MB (11271575 bytes)
--	v2 Last-Modified: Tue, 08 Dec 2015 08:25:40 GMT
+-	Virtual Size: 53.2 MB (53203531 bytes)
+-	v2 Blob: `sha256:d86c01a2189805ed6e25ce7ca98e3ca7034c69ddfbc8b7ffbc9293ee7017a76c`
+-	v2 Content-Length: 11.9 MB (11872501 bytes)
+-	v2 Last-Modified: Thu, 28 Jan 2016 00:28:55 GMT
 
-#### `5808377d712f5d74f6da458f1cdfa7919fd8fd72981cd4808ac900d786818476`
+#### `6c6a11450e5c8c3c8f6b92c0dde65eb4f84bb6aadb3a9be53fdd1a3462bbb994`
 
 ```dockerfile
 CMD ["thrift"]
 ```
 
--	Created: Sat, 05 Dec 2015 12:07:29 GMT
--	Parent Layer: `9a6aaa730458e7334daee701c763d50a68491181992c82de2ac350b0aeddcf75`
+-	Created: Thu, 28 Jan 2016 00:26:49 GMT
+-	Parent Layer: `8270f24cd1b0d0ec7e41fac2323538577cd4e00a2102f8dc5febe63ece85e8df`
 -	Docker Version: 1.8.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`

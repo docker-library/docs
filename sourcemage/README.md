@@ -2,6 +2,8 @@
 
 -	[`latest`, `0.61` (*stable/Dockerfile*)](https://github.com/vaygr/docker-sourcemage/blob/2d7efdca5633554194e2b12fae334ac4b6804b25/stable/Dockerfile)
 
+[![](https://badge.imagelayers.io/sourcemage:latest.svg)](https://imagelayers.io/?images=sourcemage:latest)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/sourcemage`)](https://github.com/docker-library/official-images/blob/master/library/sourcemage). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `sourcemage/tag-details.md` file](https://github.com/docker-library/docs/blob/master/sourcemage/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -12,7 +14,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 All of our scripts are [GPL](https://www.gnu.org/licenses/gpl.html)'d and our package manager and packages are written in [bash](https://www.gnu.org/software/bash/), so they are easy to learn and modify. Sorcery supports custom packages maintained by users, which can override default packages and will never be touched by updates.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/sourcemage/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/e8be1b5dd0b212fda27669b12bedad702c184423/sourcemage/logo.png)
 
 # Images
 
@@ -43,7 +45,7 @@ All Source Mage code released under the [GNU General Public License 2.0](https:/
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

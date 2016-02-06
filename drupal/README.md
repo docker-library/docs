@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.41`, `7` (*7/Dockerfile*)](https://github.com/docker-library/drupal/blob/9e1ff6c719c7a6dec88b1089f9128dab428c4eed/7/Dockerfile)
--	[`8.0.1`, `8.0`, `8`, `latest` (*8/Dockerfile*)](https://github.com/docker-library/drupal/blob/ca201ee97093e5407f14f6cdad875cb5ea64e08a/8/Dockerfile)
+-	[`7.42`, `7` (*7/Dockerfile*)](https://github.com/docker-library/drupal/blob/e1b4c2b894645c6919849de16d82a2a0da2ea5c3/7/Dockerfile)
+-	[`8.0.3`, `8.0`, `8`, `latest` (*8/Dockerfile*)](https://github.com/docker-library/drupal/blob/3b7218a46cdd867a93b6ab7dde514555c05a8018/8/Dockerfile)
+
+[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.42,drupal:8.0.3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -13,7 +15,7 @@ Drupal is a free and open-source content-management framework written in PHP and
 
 > [wikipedia.org/wiki/Drupal](https://en.wikipedia.org/wiki/Drupal)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/drupal/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/a0f37ddfd711f858bb968d6c85715f5bc1f7393f/drupal/logo.png)
 
 # How to use this image
 
@@ -72,7 +74,7 @@ View [license information](https://www.drupal.org/licensing/faq) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

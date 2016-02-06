@@ -1,9 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5`, `8.5-php5.5` (*8.5/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/c22a43f96210b1f00bbbda1e6d46b442c1f68101/8.5/5.5/Dockerfile)
--	[`5.6`, `8.5-php5.6`, `8.5`, `latest` (*8.5/5.6/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/c22a43f96210b1f00bbbda1e6d46b442c1f68101/8.5/5.6/Dockerfile)
--	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/c22a43f96210b1f00bbbda1e6d46b442c1f68101/7.0/5.4/Dockerfile)
--	[`9.0rc9-php7.0GA` (*9.0/7.0/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/c22a43f96210b1f00bbbda1e6d46b442c1f68101/9.0/7.0/Dockerfile)
+-	[`5.5`, `8.5-php5.5` (*8.5/5.5/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/6590c650b46b02982a27a186f27f700d3ac15907/8.5/5.5/Dockerfile)
+-	[`5.6`, `8.5-php5.6`, `8.5`, `latest` (*8.5/5.6/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/6590c650b46b02982a27a186f27f700d3ac15907/8.5/5.6/Dockerfile)
+-	[`5.4`, `7.0-php5.4` (*7.0/5.4/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/6590c650b46b02982a27a186f27f700d3ac15907/7.0/5.4/Dockerfile)
+-	[`9.0-techpreview2-php7.0GA` (*9.0/7.0/Dockerfile*)](https://github.com/zendtech/php-zendserver-docker/blob/6590c650b46b02982a27a186f27f700d3ac15907/9.0/7.0/Dockerfile)
+
+[![](https://badge.imagelayers.io/php-zendserver:latest.svg)](https://imagelayers.io/?images=php-zendserver:5.5,php-zendserver:5.6,php-zendserver:5.4,php-zendserver:9.0-techpreview2-php7.0GA)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/php-zendserver`)](https://github.com/docker-library/official-images/blob/master/library/php-zendserver). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -91,7 +93,7 @@ To specify a pre-purchased license use the following env vars: - ZEND_LICENSE_KE
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

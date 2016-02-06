@@ -1,10 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `23` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/db18a22ed1747dab659aa5a31b4ec577dba55af4/Dockerfile)
+-	[`latest`, `23` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/a079b0713dca2db8bce3a07c9a2caae0e276bebf/Dockerfile)
 -	[`22` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/e5a0a567230ca8350d2be9b100604858fc898c0b/Dockerfile)
 -	[`21` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/e32493b9601c3535cd6e0d0a8ff61d8fa95afb83/Dockerfile)
--	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/7dc7792e087787d4787855ae1e303bcd498eb619/Dockerfile)
+-	[`rawhide` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/3c8996c44e7876c7987199e3bf0346e824605a54/Dockerfile)
 -	[`20`, `heisenbug` (*Dockerfile*)](https://github.com/fedora-cloud/docker-brew-fedora/blob/10ada29063147fde9e39190f4c2344b6e6e659e6/Dockerfile)
+
+[![](https://badge.imagelayers.io/fedora:latest.svg)](https://imagelayers.io/?images=fedora:latest,fedora:22,fedora:21,fedora:rawhide,fedora:20)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/fedora`)](https://github.com/docker-library/official-images/blob/master/library/fedora). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -14,7 +16,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 This image serves as the `official Fedora image` for `Fedora 22`, `Fedora 21` and as a semi-official image for Fedora 20 (heisenbug) and rawhide.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/fedora/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/b449be7df57e9ed9086bb5821bfb5d6cdc5d67a4/fedora/logo.png)
 
 The `fedora:latest` tag will always point to the latest stable release, currently [Fedora 22](https://getfedora.org/). `fedora:latest` is now the same as `fedora:22`.
 
@@ -31,7 +33,7 @@ metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasev
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

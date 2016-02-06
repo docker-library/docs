@@ -1,11 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.7`, `1.7.22`, `latest`, `1.7-jre`, `1.7.22-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/1f289ddb5d77c41b9f096384bdc412efa76e3d63/1.7/jre/Dockerfile)
--	[`1.7-jdk`, `1.7.22-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/1f289ddb5d77c41b9f096384bdc412efa76e3d63/1.7/jdk/Dockerfile)
--	[`1.7-onbuild`, `1.7.22-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/1f289ddb5d77c41b9f096384bdc412efa76e3d63/1.7/onbuild/Dockerfile)
--	[`9`, `9.0`, `9.0-jre`, `9.0.4`, `9.0.4-jre`, `9.0.4.0`, `9.0.4.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3f9cf4a89153f5911b20ab71804b587f4c7ec347/9000/jre/Dockerfile)
--	[`9.0-jdk`, `9.0.4-jdk`, `9.0.4.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3f9cf4a89153f5911b20ab71804b587f4c7ec347/9000/jdk/Dockerfile)
--	[`9-onbuild`, `9.0-onbuild`, `9.0.4-onbuild`, `9.0.4.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3f9cf4a89153f5911b20ab71804b587f4c7ec347/9000/onbuild/Dockerfile)
+-	[`1.7`, `1.7.24`, `latest`, `1.7-jre`, `1.7.24-jre` (*1.7/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3205a2257cebd730fefa2f187faae94dddf84598/1.7/jre/Dockerfile)
+-	[`1.7-jdk`, `1.7.24-jdk` (*1.7/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3205a2257cebd730fefa2f187faae94dddf84598/1.7/jdk/Dockerfile)
+-	[`1.7-onbuild`, `1.7.24-onbuild` (*1.7/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/3205a2257cebd730fefa2f187faae94dddf84598/1.7/onbuild/Dockerfile)
+-	[`9`, `9.0`, `9.0-jre`, `9.0.5`, `9.0.5-jre`, `9.0.5.0`, `9.0.5.0-jre` (*9000/jre/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/13bf6136f584d533fabbdecc7233983e95fa66e2/9000/jre/Dockerfile)
+-	[`9.0-jdk`, `9.0.5-jdk`, `9.0.5.0-jdk` (*9000/jdk/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/13bf6136f584d533fabbdecc7233983e95fa66e2/9000/jdk/Dockerfile)
+-	[`9-onbuild`, `9.0-onbuild`, `9.0.5-onbuild`, `9.0.5.0-onbuild` (*9000/onbuild/Dockerfile*)](https://github.com/cpuguy83/docker-jruby/blob/13bf6136f584d533fabbdecc7233983e95fa66e2/9000/onbuild/Dockerfile)
+
+[![](https://badge.imagelayers.io/jruby:latest.svg)](https://imagelayers.io/?images=jruby:1.7,jruby:1.7-jdk,jruby:1.7-onbuild,jruby:9,jruby:9.0-jdk,jruby:9-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jruby`)](https://github.com/docker-library/official-images/blob/master/library/jruby). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -21,7 +23,7 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source pro
 
 JRuby leverages the robustness and speed of the JVM while providing the same Ruby that you already know and love. With JRuby you are able to take advantage of real native threads, enhanced garbage collection, and even import and use java libraries.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/jruby/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/fbdaaa95f768de2cb4508dde956912f4081a824a/jruby/logo.png)
 
 # How to use this image
 
@@ -65,7 +67,7 @@ View [license information](https://github.com/jruby/jruby/blob/master/COPYING) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

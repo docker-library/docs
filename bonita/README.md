@@ -5,6 +5,8 @@
 -	[`7.0.2` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/c5df61351f71d8691e7746a171b8294f58555338/7.0/Dockerfile)
 -	[`7.0.3`, `latest` (*7.0/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/cdbbd1c8fce49255116b63799fa939afd3ee7641/7.0/Dockerfile)
 
+[![](https://badge.imagelayers.io/bonita:latest.svg)](https://imagelayers.io/?images=bonita:7.0.0,bonita:7.0.1,bonita:7.0.2,bonita:7.0.3)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/bonita`)](https://github.com/docker-library/official-images/blob/master/library/bonita). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `bonita/tag-details.md` file](https://github.com/docker-library/docs/blob/master/bonita/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -15,13 +17,15 @@ Bonita BPM is an open-source business process management and workflow suite crea
 
 > [wikipedia.org/wiki/Bonita_BPM](http://en.wikipedia.org/wiki/Bonita_BPM)
 
-![logo](https://raw.githubusercontent.com/Bonitasoft-Community/docker_docs/master/bonita/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/80895cf1afe8e9f46a59cb66f89ed4de121cb9e3/bonita/logo.png)
 
 # How to use this image
 
 ## Quick start
 
-	docker run --name bonita -d -p 8080:8080 bonita
+```console
+$ docker run --name bonita -d -p 8080:8080 bonita
+```
 
 This will start a container running the [Tomcat Bundle](http://documentation.bonitasoft.com/tomcat-bundle-2) with Bonita BPM Engine + Bonita BPM Portal. With no environment variables specified, it's as like if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita BPM uses a H2 database here.
 
@@ -42,11 +46,15 @@ PostgreSQL is the recommanded database.
 
 Mount that directory location as /docker-entrypoint-initdb.d inside the PostgreSQL container:
 
-	docker run --name mydbpostgres -v "$PWD"/custom_postgres/:/docker-entrypoint-initdb.d -e POSTGRES_PASSWORD=mysecretpassword -d postgres:9.3
+```console
+$ docker run --name mydbpostgres -v "$PWD"/custom_postgres/:/docker-entrypoint-initdb.d -e POSTGRES_PASSWORD=mysecretpassword -d postgres:9.3
+```
 
 See the [official PostgreSQL documentation](https://registry.hub.docker.com/_/postgres/) for more details.
 
-	docker run --name bonita_postgres --link mydbpostgres:postgres -d -p 8080:8080 bonita
+```console
+$ docker run --name bonita_postgres --link mydbpostgres:postgres -d -p 8080:8080 bonita
+```
 
 ### MySQL
 
@@ -60,17 +68,23 @@ There are known issues with the management of XA transactions by MySQL engine an
 
 Mount that directory location as /etc/mysql/conf.d inside the MySQL container:
 
-	docker run --name mydbmysql -v "$PWD"/custom_mysql/:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql:5.5
+```console
+$ docker run --name mydbmysql -v "$PWD"/custom_mysql/:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql:5.5
+```
 
 See the [official MySQL documentation](https://registry.hub.docker.com/_/mysql/) for more details.
 
 Start your application container to link it to the MySQL container:
 
-	docker run --name bonita_mysql --link mydbmysql:mysql -d -p 8080:8080 bonita
+```console
+$ docker run --name bonita_mysql --link mydbmysql:mysql -d -p 8080:8080 bonita
+```
 
 ## Modify default credentials
 
-	docker run --name=bonita -e "TENANT_LOGIN=tech_user" -e "TENANT_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 bonita
+```console
+$ docker run --name=bonita -e "TENANT_LOGIN=tech_user" -e "TENANT_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 bonita
+```
 
 Now you can access the Bonita BPM Portal on localhost:8080/bonita and login using: tech_user / secret
 
@@ -94,27 +108,33 @@ The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/dat
 
 Note that users on host systems with SELinux enabled may see issues with this. The current workaround is to assign the relevant SELinux policy type to the new data directory so that the container will be allowed to access it:
 
-	chcon -Rt svirt_sandbox_file_t /my/own/datadir
+```console
+$ chcon -Rt svirt_sandbox_file_t /my/own/datadir
+```
 
 ## Migrate from an earlier version of Bonita BPM
 
 1.	Stop the container to perform a backup
 
-		docker stop bonita_7.0.0_postgres
+	```console
+	$ docker stop bonita_7.0.0_postgres
+	```
 
 2.	Check where your data are stored
 
-		docker inspect bonita_7.0.0_postgres
-		[...]
-		    "Mounts": [
-		        {
-		            "Source": "/home/user/Documents/Docker/Volumes/bonita_7.0.0_postgres",
-		            "Destination": "/opt/bonita",
-		            "Mode": "",
-		            "RW": true
-		        }
-		    ],
-		[...]
+	```console
+	$ docker inspect bonita_7.0.0_postgres
+	[...]
+	    "Mounts": [
+	        {
+	            "Source": "/home/user/Documents/Docker/Volumes/bonita_7.0.0_postgres",
+	            "Destination": "/opt/bonita",
+	            "Mode": "",
+	            "RW": true
+	        }
+	    ],
+	[...]
+	```
 
 3.	Copy data from the filesystem
 
@@ -122,8 +142,10 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 
 4.	Retrieve the DB container IP
 
-		docker inspect --format '{{ .NetworkSettings.IPAddress }}' mydbpostgres
-		172.17.0.26
+	```console
+	$ docker inspect --format '{{ .NetworkSettings.IPAddress }}' mydbpostgres
+	172.17.0.26
+	```
 
 5.	Dump the database
 
@@ -180,7 +202,9 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 
 11.	Launch the new container pointing towards the copy of DB and filesystem
 
-		docker run --name=bonita_7.0.3_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v "$PWD"/bonita_7.0.3_postgres:/opt/bonita/ -d -p 8081:8080 bonita:7.0.3
+	```console
+	$ docker run --name=bonita_7.0.3_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v "$PWD"/bonita_7.0.3_postgres:/opt/bonita/ -d -p 8081:8080 bonita:7.0.3
+	```
 
 For more details regarding Bonita migration, see the [documentation](http://documentation.bonitasoft.com/migrate-earlier-version-bonita-bpm-0).
 
@@ -198,7 +222,9 @@ This Docker image activates both static and dynamic authorization checks by defa
 
 For specific needs you can override this behavior by setting HTTP_API to true and REST_API_DYN_AUTH_CHECKS to false:
 
-	docker run  -e HTTP_API=true -e REST_API_DYN_AUTH_CHECKS=false --name bonita -d -p 8080:8080 bonita
+```console
+$ docker run  -e HTTP_API=true -e REST_API_DYN_AUTH_CHECKS=false --name bonita -d -p 8080:8080 bonita
+```
 
 ## Environment variables
 
@@ -287,8 +313,10 @@ For example, you can increase the log level :
 
 Note: There are several ways to check the `bonita` logs. One of them is
 
-	docker exec -ti bonita_custom /bin/bash
-	tail -f /opt/bonita/BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/logs/bonita.`date +%Y-%m-%d`.log
+```console
+$ docker exec -ti bonita_custom /bin/bash
+tail -f /opt/bonita/BonitaBPMCommunity-7.0.0-Tomcat-7.0.55/logs/bonita.`date +%Y-%m-%d`.log
+```
 
 # License
 
@@ -300,7 +328,7 @@ Bonita BPM image includes two parts :
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

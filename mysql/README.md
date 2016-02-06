@@ -1,8 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.47`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/ac05512a1b788e8ae658d0f4a980ff7a01a51c93/5.5/Dockerfile)
--	[`5.6.28`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/a1a948c19137b7843ff0c7de0c95d22b74ecfefd/5.6/Dockerfile)
--	[`5.7.10`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/ee6ac037ab647e0de9dbeb4e064610a95cb6df4a/5.7/Dockerfile)
+-	[`5.5.47`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/ed198ce2e8aa78613c615f20c5c4dd09fa450f66/5.5/Dockerfile)
+-	[`5.6.28`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/ed198ce2e8aa78613c615f20c5c4dd09fa450f66/5.6/Dockerfile)
+-	[`5.7.10`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/ed198ce2e8aa78613c615f20c5c4dd09fa450f66/5.7/Dockerfile)
+
+[![](https://badge.imagelayers.io/mysql:latest.svg)](https://imagelayers.io/?images=mysql:5.5.47,mysql:5.6.28,mysql:5.7.10)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mysql`)](https://github.com/docker-library/official-images/blob/master/library/mysql). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -14,7 +16,7 @@ MySQL is the world's most popular open source database. With its proven performa
 
 For more information and related downloads for MySQL Server and other MySQL products, please visit [www.mysql.com](http://www.mysql.com).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/c408469abbac35ad1e4a50a6618836420eb9502e/mysql/logo.png)
 
 # How to use this image
 
@@ -142,7 +144,7 @@ If you start your `mysql` container instance with a data directory that already 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

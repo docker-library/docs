@@ -4,6 +4,8 @@
 -	[`42.1`, `leap`, `latest` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/70d5db31fd5357d4d36170570d215120800b4f3c/docker/Dockerfile)
 -	[`tumbleweed` (*docker/Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/9afc04abd28f91bb954057bc32d7b2687adc9f03/docker/Dockerfile)
 
+[![](https://badge.imagelayers.io/opensuse:latest.svg)](https://imagelayers.io/?images=opensuse:13.2,opensuse:42.1,opensuse:tumbleweed)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/opensuse`)](https://github.com/docker-library/official-images/blob/master/library/opensuse). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `opensuse/tag-details.md` file](https://github.com/docker-library/docs/blob/master/opensuse/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -33,7 +35,7 @@ However the following repositories are already part of the image:
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

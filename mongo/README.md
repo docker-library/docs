@@ -1,11 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.2/Dockerfile)
--	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.4/Dockerfile)
--	[`2.6.11`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/982328582c74dd2f0a9c8c77b84006f291f974c3/2.6/Dockerfile)
--	[`3.0.8`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/d9b96ad7dfac1bb5203b549a676535351ee48d4d/3.0/Dockerfile)
--	[`3.1.9`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/5216cf8aedcf7634172e607b0c9718cc332e0d71/3.1/Dockerfile)
--	[`3.2.0`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/fcb9584617e63f1d3db8dc730fb8abb83653c7ad/3.2/Dockerfile)
+-	[`2.2.7`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/2.2/Dockerfile)
+-	[`2.4.14`, `2.4` (*2.4/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/2.4/Dockerfile)
+-	[`2.6.11`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/2.6/Dockerfile)
+-	[`3.0.9`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/3.0/Dockerfile)
+-	[`3.1.9`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/3.1/Dockerfile)
+-	[`3.2.1`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/3.2/Dockerfile)
+
+[![](https://badge.imagelayers.io/mongo:latest.svg)](https://imagelayers.io/?images=mongo:2.2.7,mongo:2.4.14,mongo:2.6.11,mongo:3.0.9,mongo:3.1.9,mongo:3.2.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -19,7 +21,7 @@ First developed by the software company 10gen (now MongoDB Inc.) in October 2007
 
 > [wikipedia.org/wiki/MongoDB](https://en.wikipedia.org/wiki/MongoDB)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/mongo/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/mongo/logo.png)
 
 # How to use this image
 
@@ -60,7 +62,7 @@ Important note: There are several ways to store data used by applications that r
 -	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
-**WARNING**: because MongoDB uses memory mapped files it is not possible to use it through vboxsf to your host ([vbox bug](https://www.virtualbox.org/ticket/819)).
+**WARNING**: because MongoDB uses memory mapped files it is not possible to use it through vboxsf to your host ([vbox bug](https://www.virtualbox.org/ticket/819)). VirtualBox shared folders are not supported by MongoDB (see [docs.mongodb.org](https://docs.mongodb.org/manual/administration/production-notes/#fsync-on-directories) and related [jira.mongodb.org](https://jira.mongodb.org/browse/SERVER-8600) bug). This means that it is not possible with the default setup using Docker Toolbox to run a MongoDB container with the data directory mapped to the host.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -85,7 +87,7 @@ View [license information](https://github.com/mongodb/mongo/blob/7c3cfac300cfcca
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

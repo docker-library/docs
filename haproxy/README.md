@@ -4,6 +4,8 @@
 -	[`1.5.15`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/2c1ab61d9ba298a8b40164ed91d8d0a797e7bb1c/1.5/Dockerfile)
 -	[`1.6.3`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/7998146d9fb15e16c0550d978064e82619bf7702/1.6/Dockerfile)
 
+[![](https://badge.imagelayers.io/haproxy:latest.svg)](https://imagelayers.io/?images=haproxy:1.4.26,haproxy:1.5.15,haproxy:1.6.3)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `haproxy/tag-details.md` file](https://github.com/docker-library/docs/blob/master/haproxy/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -14,7 +16,7 @@ HAProxy is a free, open source high availability solution, providing load balanc
 
 > [wikipedia.org/wiki/HAProxy](https://en.wikipedia.org/wiki/HAProxy)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/haproxy/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/566c944ca5eb9d1947c8a2e8821f8de2b0fc144c/haproxy/logo.png)
 
 # How to use this image
 
@@ -52,7 +54,7 @@ View [license information](http://www.haproxy.org/download/1.5/doc/LICENSE) for 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

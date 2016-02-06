@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.0`, `8` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/ad90fca59c9ac52f4f29a195535a3f8ebdddd30d/8.0/Dockerfile)
--	[`9.0`, `9`, `latest` (*9.0/Dockerfile*)](https://github.com/odoo/docker/blob/ad90fca59c9ac52f4f29a195535a3f8ebdddd30d/9.0/Dockerfile)
+-	[`8.0`, `8` (*8.0/Dockerfile*)](https://github.com/odoo/docker/blob/d5392866c185d52497fee5e2f6decbe99c416d9d/8.0/Dockerfile)
+-	[`9.0`, `9`, `latest` (*9.0/Dockerfile*)](https://github.com/odoo/docker/blob/d5392866c185d52497fee5e2f6decbe99c416d9d/9.0/Dockerfile)
+
+[![](https://badge.imagelayers.io/odoo:latest.svg)](https://imagelayers.io/?images=odoo:8.0,odoo:9.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/odoo`)](https://github.com/docker-library/official-images/blob/master/library/odoo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -13,7 +15,7 @@ Odoo, formerly known as OpenERP, is a suite of open-source business apps written
 
 > [www.odoo.com](https://www.odoo.com)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/odoo/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/a11348f9798f9c5e51e92409ebf4d5b39988fd13/odoo/logo.png)
 
 # How to use this image
 
@@ -81,6 +83,8 @@ Please note that for plain use of mails and reports functionalities, when the ho
 
 # How to upgrade this image
 
+Odoo images are updated on a regular basis to make them use recent releases (a new release of each version of Odoo is built [every night](http://nightly.odoo.com/)). Please be aware that what follows is about upgrading from an old release to the latest one provided of the same major version, as upgrading from a major version to another is a much more complex process requiring elaborated migration scripts (see [Odoo Enterprise Upgrade page](https://upgrade.odoo.com/database/upload) or this [community project](https://doc.therp.nl/openupgrade/) which aims to write those scripts).
+
 Suppose you created a database from an Odoo instance named old-odoo, and you want to access this database from a new Odoo instance named new-odoo, e.g. because you've just downloaded a newer Odoo image.
 
 By default, Odoo 8.0 uses a filestore (located at /var/lib/odoo/filestore/) for attachments. You should restore this filestore in your new Odoo instance by running
@@ -97,7 +101,7 @@ View [license information](https://raw.githubusercontent.com/odoo/odoo/8.0/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

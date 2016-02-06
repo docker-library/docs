@@ -4,6 +4,8 @@
 -	[`9.2.14`, `9.2`, `9.2.14-jre8`, `9.2-jre8` (*9.2-jre8/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/072c632652b4c13ceb78db302411d57d612086b9/9.2-jre8/Dockerfile)
 -	[`9.2.14-jre7`, `9.2-jre7`, `9-jre7`, `jre7` (*9.2-jre7/Dockerfile*)](https://github.com/appropriate/docker-jetty/blob/072c632652b4c13ceb78db302411d57d612086b9/9.2-jre7/Dockerfile)
 
+[![](https://badge.imagelayers.io/jetty:latest.svg)](https://imagelayers.io/?images=jetty:9.3.6,jetty:9.2.14,jetty:9.2.14-jre7)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/jetty`)](https://github.com/docker-library/official-images/blob/master/library/jetty). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `jetty/tag-details.md` file](https://github.com/docker-library/docs/blob/master/jetty/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -14,7 +16,7 @@ Jetty is a pure Java-based HTTP (Web) server and Java Servlet container. While W
 
 > [wikipedia.org/wiki/Jetty_(web_server)](https://en.wikipedia.org/wiki/Jetty_%28web_server%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/jetty/logo.png)Logo &copy; Eclipse Foundation
+![logo](https://raw.githubusercontent.com/docker-library/docs/c14d620ba7dbd254b6a44f753ee1ba4e700906f0/jetty/logo.png)Logo &copy; Eclipse Foundation
 
 # How to use this image.
 
@@ -87,7 +89,7 @@ Starting with version 9.3, Jetty comes with built-in support for HTTP/2. However
 ```Dockerfile
 FROM jetty
 
-RUN java -jar \$JETTY_HOME/start.jar --add-to-startd=http2 --approve-all-licenses
+RUN java -jar $JETTY_HOME/start.jar --add-to-startd=http2 --approve-all-licenses
 ```
 
 This will add an `http2.ini` file to the `$JETTY_BASE/start.d` directory and download the required ALPN libraries into `$JETTY_BASE/lib/alpn`, allowing the use of HTTP/2. HTTP/2 connections should be made via the same port as normal HTTPS connections (container port 8443). If you would like to enable the `http2` module via `$JETTY_BASE/start.ini` instead, substitute `--add-to-start` in place of `--add-to-startd` in the `RUN` command above.
@@ -110,7 +112,7 @@ View [license information](http://eclipse.org/jetty/licenses.php) for the softwa
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

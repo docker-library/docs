@@ -3,6 +3,8 @@
 -	[`latest`, `lein-2.5.3` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a22cdfcdf10fd5c99fa4bb993c71847ab00ee2a9/Dockerfile)
 -	[`onbuild`, `lein-2.5.3-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a22cdfcdf10fd5c99fa4bb993c71847ab00ee2a9/onbuild/Dockerfile)
 
+[![](https://badge.imagelayers.io/clojure:latest.svg)](https://imagelayers.io/?images=clojure:latest,clojure:onbuild)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `clojure/tag-details.md` file](https://github.com/docker-library/docs/blob/master/clojure/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -13,7 +15,7 @@ Clojure is a dialect of the Lisp programming language. It is a general-purpose p
 
 > [wikipedia.org/wiki/Clojure](http://en.wikipedia.org/wiki/Clojure)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/clojure/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/665526c3b12cedfd721234cedb61e8433f73b75a/clojure/logo.png)
 
 # How to use this image
 
@@ -84,7 +86,7 @@ View [license information](http://clojure.org/license) for the software containe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

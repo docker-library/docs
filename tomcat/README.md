@@ -7,6 +7,8 @@
 -	[`8.0.30-jre7`, `8.0-jre7`, `8-jre7`, `jre7`, `8.0.30`, `8.0`, `8`, `latest` (*8-jre7/Dockerfile*)](https://github.com/docker-library/tomcat/blob/e36c4044b7ece1361f124aaf3560c2efd888b62f/8-jre7/Dockerfile)
 -	[`8.0.30-jre8`, `8.0-jre8`, `8-jre8`, `jre8` (*8-jre8/Dockerfile*)](https://github.com/docker-library/tomcat/blob/e36c4044b7ece1361f124aaf3560c2efd888b62f/8-jre8/Dockerfile)
 
+[![](https://badge.imagelayers.io/tomcat:latest.svg)](https://imagelayers.io/?images=tomcat:6.0.44-jre7,tomcat:6.0.44-jre8,tomcat:7.0.67-jre7,tomcat:7.0.67-jre8,tomcat:8.0.30-jre7,tomcat:8.0.30-jre8)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/tomcat`)](https://github.com/docker-library/official-images/blob/master/library/tomcat). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `tomcat/tag-details.md` file](https://github.com/docker-library/docs/blob/master/tomcat/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -17,7 +19,7 @@ Apache Tomcat (or simply Tomcat) is an open source web server and servlet contai
 
 > [wikipedia.org/wiki/Apache_Tomcat](https://en.wikipedia.org/wiki/Apache_Tomcat)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/master/tomcat/logo.png)Logo &copy; Apache Software Fountation
+![logo](https://raw.githubusercontent.com/docker-library/docs/8e31eb93a02d504d0cfe1da435aa31b377fc627d/tomcat/logo.png)Logo &copy; Apache Software Fountation
 
 # How to use this image.
 
@@ -59,7 +61,7 @@ View [license information](https://www.apache.org/licenses/LICENSE-2.0) for the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.0.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

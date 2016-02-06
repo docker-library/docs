@@ -13,11 +13,11 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull library/fedora@sha256:237d6fd422d500ece1cae903c5147b4bfbec26970b6a5cce02bc3eb80ba567bf
+$ docker pull library/fedora@sha256:7d916d5d3ab2d92147e515d3c09cb47a0431e2fff9d550fd9bcc4fed379af9ea
 ```
 
--	Total Virtual Size: 204.0 MB (204010813 bytes)
--	Total v2 Content-Length: 74.1 MB (74136317 bytes)
+-	Total Virtual Size: 206.3 MB (206294206 bytes)
+-	Total v2 Content-Length: 74.2 MB (74248094 bytes)
 
 ### Layers (2)
 
@@ -34,28 +34,28 @@ MAINTAINER Adam Miller <maxamillion@fedoraproject.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `109b72e23ca54e40832eb5f5d0a38676e4c8c798631cef59fa5d64045db168df`
+#### `0721f2b3cb1684686c400969e0f617c7ddcc2f8c190a8344efd69e44a0cb51b1`
 
 ```dockerfile
-ADD file:f867e28f7b12f9d64dd89e66483663858366508c80ac073ddd73548f4ad628f1 in /
+ADD file:b028ccee96c12c106da1e17b9cd93f3dbce86b888b2114116a481b289a46def8 in /
 ```
 
--	Created: Fri, 20 Nov 2015 23:08:57 GMT
+-	Created: Mon, 04 Jan 2016 21:26:31 GMT
 -	Parent Layer: `b0082ba983ef3569aad347f923a9cec8ea764c239179081a1e2c47709788dc44`
 -	Docker Version: 1.8.3
--	Virtual Size: 204.0 MB (204010813 bytes)
--	v2 Blob: `sha256:b0afedb6056e993a048606918d78c2f9686c231bb9f33478e79d2540022df9db`
--	v2 Content-Length: 74.1 MB (74136285 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 23:14:03 GMT
+-	Virtual Size: 206.3 MB (206294206 bytes)
+-	v2 Blob: `sha256:57c018ee1aa839f8460f7064c743ed535f46223e7328cf3bb972b21ca7d70a7c`
+-	v2 Content-Length: 74.2 MB (74248062 bytes)
+-	v2 Last-Modified: Mon, 04 Jan 2016 21:29:57 GMT
 
 ## `fedora:23`
 
 ```console
-$ docker pull library/fedora@sha256:1ff6a16a751bff06dc5043c6e7a54c02a41f69c53ab1158fe6e379a3cc67439f
+$ docker pull library/fedora@sha256:41d1d2f0db0517258a1d4bd531c1f7af535529ebeb7d2088fec3e174beb04d65
 ```
 
--	Total Virtual Size: 204.0 MB (204010813 bytes)
--	Total v2 Content-Length: 74.1 MB (74136317 bytes)
+-	Total Virtual Size: 206.3 MB (206294206 bytes)
+-	Total v2 Content-Length: 74.2 MB (74248094 bytes)
 
 ### Layers (2)
 
@@ -72,19 +72,19 @@ MAINTAINER Adam Miller <maxamillion@fedoraproject.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `109b72e23ca54e40832eb5f5d0a38676e4c8c798631cef59fa5d64045db168df`
+#### `0721f2b3cb1684686c400969e0f617c7ddcc2f8c190a8344efd69e44a0cb51b1`
 
 ```dockerfile
-ADD file:f867e28f7b12f9d64dd89e66483663858366508c80ac073ddd73548f4ad628f1 in /
+ADD file:b028ccee96c12c106da1e17b9cd93f3dbce86b888b2114116a481b289a46def8 in /
 ```
 
--	Created: Fri, 20 Nov 2015 23:08:57 GMT
+-	Created: Mon, 04 Jan 2016 21:26:31 GMT
 -	Parent Layer: `b0082ba983ef3569aad347f923a9cec8ea764c239179081a1e2c47709788dc44`
 -	Docker Version: 1.8.3
--	Virtual Size: 204.0 MB (204010813 bytes)
--	v2 Blob: `sha256:b0afedb6056e993a048606918d78c2f9686c231bb9f33478e79d2540022df9db`
--	v2 Content-Length: 74.1 MB (74136285 bytes)
--	v2 Last-Modified: Fri, 20 Nov 2015 23:14:03 GMT
+-	Virtual Size: 206.3 MB (206294206 bytes)
+-	v2 Blob: `sha256:57c018ee1aa839f8460f7064c743ed535f46223e7328cf3bb972b21ca7d70a7c`
+-	v2 Content-Length: 74.2 MB (74248062 bytes)
+-	v2 Last-Modified: Mon, 04 Jan 2016 21:29:57 GMT
 
 ## `fedora:22`
 
@@ -165,11 +165,11 @@ ADD file:2b6b4dd824f8839345cb42c8adca14984638f822f64086114818e930f1cb7f0a in /
 ## `fedora:rawhide`
 
 ```console
-$ docker pull library/fedora@sha256:f19660764b2cc3725433efd3dfc9205f4e2f10b0369f93faa3359503cc263bbb
+$ docker pull library/fedora@sha256:905b4846938c8aef94f52f3e41a11398ae5b40f5855fb0e40ed9c157e721d7f8
 ```
 
--	Total Virtual Size: 211.7 MB (211678004 bytes)
--	Total v2 Content-Length: 76.8 MB (76825775 bytes)
+-	Total Virtual Size: 227.9 MB (227916436 bytes)
+-	Total v2 Content-Length: 80.1 MB (80078724 bytes)
 
 ### Layers (2)
 
@@ -186,19 +186,19 @@ MAINTAINER Adam Miller <maxamillion@fedoraproject.org>
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `15644141f0a34d3335865e7ccccf0fc3ae153398e6d63ce76bff3b8d5a50990c`
+#### `6093980bd989244d45e8c65489d9ee56f3330fb920624e82571a009f9c94def4`
 
 ```dockerfile
-ADD file:5817a1702b2a1a3b7f7ba13e52c09b6e73b97e3ffc380b662b0674c26e21cc08 in /
+ADD file:82bc199deb5f30428b4f832e3622b6f860fbb177bc7a9f6789a4722a492df17e in /
 ```
 
--	Created: Wed, 11 Nov 2015 18:40:33 GMT
+-	Created: Mon, 04 Jan 2016 21:27:47 GMT
 -	Parent Layer: `b0082ba983ef3569aad347f923a9cec8ea764c239179081a1e2c47709788dc44`
--	Docker Version: 1.9.0
--	Virtual Size: 211.7 MB (211678004 bytes)
--	v2 Blob: `sha256:b2e6646f7fac70bd90c9c44a62a2e4afc2aa081b5cd4d4d37aa6a48483c2454b`
--	v2 Content-Length: 76.8 MB (76825743 bytes)
--	v2 Last-Modified: Wed, 11 Nov 2015 18:43:53 GMT
+-	Docker Version: 1.8.3
+-	Virtual Size: 227.9 MB (227916436 bytes)
+-	v2 Blob: `sha256:a802b56798f2e2af581eb8d16cb83b9996e7129398507fd3d53a19e56f37806d`
+-	v2 Content-Length: 80.1 MB (80078692 bytes)
+-	v2 Last-Modified: Mon, 04 Jan 2016 21:31:49 GMT
 
 ## `fedora:20`
 
