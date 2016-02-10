@@ -60,6 +60,7 @@ declare -A otherRepos=(
 	[oraclelinux]='https://github.com/oracle/docker'
 	[perl]='https://github.com/Perl/docker-perl'
 	[photon]='https://github.com/frapposelli/photon-docker-image'
+	[plone]='https://github.com/plone/plone.docker'
 	[r-base]='https://github.com/rocker-org/rocker'
 	[rakudo]='https://github.com/perl6/docker'
 	[registry]='https://github.com/docker/docker-registry'
@@ -84,29 +85,29 @@ for repo in "${repos[@]}"; do
 	if [ -x "$repo/update.sh" ]; then
 		( set -x; "$repo/update.sh" )
 	fi
-	
+
 	if [ -e "$repo/content.md" ]; then
 		gitRepo="${otherRepos[$repo]}"
 		if [ -z "$gitRepo" ]; then
 			gitRepo="https://github.com/docker-library/$repo"
 		fi
-		
+
 		mailingList="$(cat "$repo/mailing-list.md" 2>/dev/null || true)"
 		if [ "$mailingList" ]; then
 			mailingList=" $mailingList "
 		else
 			mailingList=' '
 		fi
-		
+
 		dockerVersions="$(cat "$repo/docker-versions.md" 2>/dev/null || cat "$helperDir/docker-versions.md")"
-		
+
 		userFeedback="$(cat "$repo/user-feedback.md" 2>/dev/null || cat "$helperDir/user-feedback.md")"
-		
+
 		license="$(cat "$repo/license.md" 2>/dev/null || true)"
 		if [ "$license" ]; then
 			license=$'\n\n''# License'$'\n\n'"$license"
 		fi
-		
+
 		logo=
 		logoFile=
 		for f in png svg; do
@@ -124,65 +125,65 @@ for repo in "${repos[@]}"; do
 				logo="![logo](https://raw.githubusercontent.com/docker-library/docs/$logoCommit/$logoFile)"
 			fi
 		fi
-		
+
 		compose=
 		composeYml=
 		if [ -f "$repo/docker-compose.yml" ]; then
 			compose="$(cat "$repo/compose.md" 2>/dev/null || cat "$helperDir/compose.md")"
 			composeYml=$'```yaml\n'"$(cat "$repo/docker-compose.yml")"$'\n```'
 		fi
-		
+
 		deprecated=
 		if [ -f "$repo/deprecated.md" ]; then
 			deprecated=$'# **DEPRECATED**\n\n'
 			deprecated+="$(cat "$repo/deprecated.md")"
 			deprecated+=$'\n\n'
 		fi
-		
+
 		{ echo -n "$deprecated"; cat "$helperDir/template.md"; } > "$repo/README.md"
-		
+
 		echo '  TAGS => generate-dockerfile-links-partial.sh'
 		partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"
 		[ "$partial" ]
 		replace_field "$repo" 'TAGS' "$partial"
-		
+
 		echo '  CONTENT => '"$repo"'/content.md'
 		replace_field "$repo" 'CONTENT' "$(cat "$repo/content.md")"
-		
+
 		echo '  VARIANT => variant.sh'
 		replace_field "$repo" 'VARIANT' "$("$helperDir/variant.sh" "$repo")"
-		
+
 		# has to be after CONTENT because it's contained in content.md
 		echo "  LOGO => $logo"
 		replace_field "$repo" 'LOGO' "$logo" '\s*'
-		
+
 		echo '  COMPOSE => '"$repo"'/compose.md'
 		replace_field "$repo" 'COMPOSE' "$compose"
-		
+
 		echo '  COMPOSE-YML => '"$repo"'/docker-compose.yml'
 		replace_field "$repo" 'COMPOSE-YML' "$composeYml"
-		
+
 		echo '  DOCKER-VERSIONS => '"$repo"'/docker-versions.md'
 		replace_field "$repo" 'DOCKER-VERSIONS' "$dockerVersions"
-		
+
 		echo '  DOCKER-LATEST => "'"$dockerLatest"'"'
 		replace_field "$repo" 'DOCKER-LATEST' "$dockerLatest"
-		
+
 		echo '  LICENSE => '"$repo"'/license.md'
 		replace_field "$repo" 'LICENSE' "$license"
-		
+
 		echo '  USER-FEEDBACK => '"$repo"'/user-feedback.md'
 		replace_field "$repo" 'USER-FEEDBACK' "$userFeedback"
-		
+
 		echo '  MAILING-LIST => '"$repo"'/mailing-list.md'
 		replace_field "$repo" 'MAILING-LIST' "$mailingList" '\s*'
-		
+
 		echo '  REPO => "'"$repo"'"'
 		replace_field "$repo" 'REPO' "$repo"
-		
+
 		echo '  GITHUB-REPO => "'"$gitRepo"'"'
 		replace_field "$repo" 'GITHUB-REPO' "$gitRepo"
-		
+
 		echo
 	else
 		echo >&2 "skipping $repo: missing repo/content.md"
