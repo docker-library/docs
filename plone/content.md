@@ -56,7 +56,6 @@ $ docker exec -it my_running_plone bash
   $ bin/instance fg
 ```
 
-
 ## Environment Variables
 
 ### `ZEO_ADDRESS`
@@ -107,8 +106,8 @@ Important note: There are several ways to store data used by applications that r
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
-- Create a data directories on a suitable volume on your host system, e.g. `/path/to/filestorage` and `/path/to/blobstorage`
-- Start your `plone` container like this:
+-	Create a data directories on a suitable volume on your host system, e.g. `/path/to/filestorage` and `/path/to/blobstorage`
+-	Start your `plone` container like this:
 
 	```console
 	$ docker run -v /path/to/filestorage:/data/filestorage -v /path/to/blobstorage:/data/blobstorage -d plone
