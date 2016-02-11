@@ -72,7 +72,7 @@ Where `src/` is the directory containing all your php code. Then, run the comman
 
 ```console
 $ docker build -t my-php-app .
-$ docker run -it --rm --name my-running-app my-php-app
+$ docker run -d --name my-running-app my-php-app
 ```
 
 We recommend that you add a custom `php.ini` configuration. `COPY` it into `/usr/local/etc/php` by adding one more line to the Dockerfile above and running the same commands to build and run:
@@ -144,7 +144,7 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
 ```console
-$ docker run -p 80:80 -it --rm --name my-apache-php-app -v "$PWD":/var/www/html php:5.6-apache
+$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:5.6-apache
 ```
 
 # License
