@@ -3,7 +3,7 @@
 -	[`2.5.5`, `2.5` (*jessie/2.5.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/636cd874df38edd77a187c08e1803693b3d978d3/jessie/2.5.5/Dockerfile)
 -	[`2.6`, `2.6.10` (*jessie/2.6.10/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/803663b157696616d70e2bb44ce6e256f912e3a6/jessie/2.6.10/Dockerfile)
 -	[`2.7`, `2.7.5` (*jessie/2.7.5/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/dbfcc5f3edb37f622a2acd221b58106547b05fae/jessie/2.7.5/Dockerfile)
--	[`2.8`, `2.8.1`, `latest` (*jessie/2.8.1/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/694aacf25b43e79ad3be658fe33f4ee9455e17cf/jessie/2.8.1/Dockerfile)
+-	[`2.8`, `2.8.2`, `latest` (*jessie/2.8.2/Dockerfile*)](https://github.com/arangodb/arangodb-docker/blob/344a0f230bda0b944bfd46a19a638e7d54a0dc8e/jessie/2.8.2/Dockerfile)
 
 [![](https://badge.imagelayers.io/arangodb:latest.svg)](https://imagelayers.io/?images=arangodb:2.5.5,arangodb:2.6,arangodb:2.7,arangodb:2.8)
 
