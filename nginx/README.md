@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1`, `1.9`, `1.9.10` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/aecb18605af6a33c1968c51df44e01e5f5a821e6/Dockerfile)
+-	[`latest`, `1`, `1.9`, `1.9.11` (*Dockerfile*)](https://github.com/nginxinc/docker-nginx/blob/e82e776e7507868a887178bc7eaae5c1ed7aa47f/Dockerfile)
 
 [![](https://badge.imagelayers.io/nginx:latest.svg)](https://imagelayers.io/?images=nginx:latest)
 
