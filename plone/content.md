@@ -58,9 +58,31 @@ $ docker exec -it my_running_plone bash
 
 ## Environment Variables
 
+The Plone image uses several environment variable that allow to specify a more specific setup.
+
 ### `ZEO_ADDRESS`
 
 This environment variable allows you to run Plone image as a ZEO client.
+
+### `ZEO_READ_ONLY`
+
+Defaults to `off`. Run Plone as a read-only ZEO client.
+
+### `ZEO_CLIENT_READ_ONLY_FALLBACK`
+
+Defaults to `false`. A flag indicating whether a read-only remote storage should be acceptable as a fallback when no writable storages are available.
+
+### `ZEO_SHARED_BLOB_DIR`
+
+Defaults to `off`. Set this to on if the ZEO server and the instance have access to the same directory.
+
+### `ZEO_STORAGE`
+
+Defaults to `1`. Set the storage number of the ZEO storage.
+
+### `ZEO_CLIENT_CACHE_SIZE`
+
+Defaults to `128MB`. Set the size of the ZEO client cache.
 
 ## How to extend this image
 
