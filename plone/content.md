@@ -122,7 +122,7 @@ Let Docker manage the storage of your database data [by writing the database fil
 	$ docker run --name plone_one \
 	             --volumes-from plone_data \
 	             -p 8080:8080 \
-           plone
+	         plone
 	```
 
 Or with [Docker Compose](https://docs.docker.com/compose/)
@@ -130,18 +130,18 @@ Or with [Docker Compose](https://docs.docker.com/compose/)
 -	Add docker-compose.yml file
 
 	```console
-	plone:
-	  image: plone
-	volumes_from:
-	  - plone_data
-	ports:
-	  - "8080:8080"
-	plone_data:
-	  image: busybox
-	  volumes:
-	  - /data/filestorage
-	  - /data/blobstorage
-	  command: ['chown', '-R', '500:500', '/data']
+	  plone:
+	    image: plone
+	    volumes_from:
+	    - plone_data
+	    ports:
+	    - "8080:8080"
+	  plone_data:
+	    image: busybox
+	    volumes:
+	    - /data/filestorage
+	    - /data/blobstorage
+	    command: ['chown', '-R', '500:500', '/data']
 	```
 
 -	Start Plone stack
