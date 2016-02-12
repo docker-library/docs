@@ -4261,11 +4261,11 @@ RUN installUtility install --acceptLicense defaultServer\
 ## `websphere-liberty:beta`
 
 ```console
-$ docker pull library/websphere-liberty@sha256:64e7aa81c53d00b46f821fdc114fa78112b05781852032519022e61ad1761603
+$ docker pull library/websphere-liberty@sha256:2ef921903e88a2fe38fbca619206e866601b77ed84dbb5c875f1a266a58294b2
 ```
 
--	Total Virtual Size: 476.4 MB (476401482 bytes)
--	Total v2 Content-Length: 271.5 MB (271535646 bytes)
+-	Total Virtual Size: 475.0 MB (474998751 bytes)
+-	Total v2 Content-Length: 270.6 MB (270602075 bytes)
 
 ### Layers (18)
 
@@ -4424,13 +4424,13 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ae7038ab9be912515ef21b51c68af0f6ae63b684215d64f3e2d44e3240a04cc7`
+#### `18aa6d9b038f0f68863dee4d466cb492fe0972bc6906ad898285b2e6ee27e918`
 
 ```dockerfile
-ENV LIBERTY_VERSION=2016.1.0_0
+ENV LIBERTY_VERSION=2016.2.0_0
 ```
 
--	Created: Thu, 11 Feb 2016 19:48:37 GMT
+-	Created: Fri, 12 Feb 2016 17:45:16 GMT
 -	Parent Layer: `3005e01025f413b1412407500c77fcb2024ea686f55bc1e1acf9fd9f85a47bc5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
@@ -4438,7 +4438,7 @@ ENV LIBERTY_VERSION=2016.1.0_0
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `28150b53e78ecba13dc2e423109e9c6c683f21dfe50d1654a317fc3bdb6fcc3d`
+#### `7f94e6d971cc5ce0c4ae8c7d1b93e56bf33392c9a143672627241b3cdfa8251e`
 
 ```dockerfile
 RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/index.yml  | grep $LIBERTY_VERSION -A 6 | sed -n 's/\s*webProfile7:\s//p' | tr -d '\r')\
@@ -4447,108 +4447,108 @@ RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/softw
      && rm /tmp/wlp-beta.zip
 ```
 
--	Created: Thu, 11 Feb 2016 19:48:46 GMT
--	Parent Layer: `ae7038ab9be912515ef21b51c68af0f6ae63b684215d64f3e2d44e3240a04cc7`
+-	Created: Fri, 12 Feb 2016 17:45:27 GMT
+-	Parent Layer: `18aa6d9b038f0f68863dee4d466cb492fe0972bc6906ad898285b2e6ee27e918`
 -	Docker Version: 1.9.1
--	Virtual Size: 110.4 MB (110423738 bytes)
--	v2 Blob: `sha256:b1095643ebb71e1faf00ae936d08b5af9a4c8487f8484cfd7523fcfab01e0afa`
--	v2 Content-Length: 93.5 MB (93512222 bytes)
--	v2 Last-Modified: Thu, 11 Feb 2016 19:52:40 GMT
+-	Virtual Size: 109.0 MB (109020094 bytes)
+-	v2 Blob: `sha256:8ef060b3dcd31099adc1efeb28c11dd39c736024380b5a8fc15746e3928a1e4a`
+-	v2 Content-Length: 92.6 MB (92578426 bytes)
+-	v2 Last-Modified: Fri, 12 Feb 2016 17:48:30 GMT
 
-#### `50ec7cbc73392f200de850f7a74b4a7d453d46db4dd3472cb39de88e69a27113`
+#### `0da4f897f27eea07508cf9daba49a8bfc4f1d8c86b1eee4e65a40e90e416019b`
 
 ```dockerfile
 ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 11 Feb 2016 19:48:47 GMT
--	Parent Layer: `28150b53e78ecba13dc2e423109e9c6c683f21dfe50d1654a317fc3bdb6fcc3d`
+-	Created: Fri, 12 Feb 2016 17:45:28 GMT
+-	Parent Layer: `7f94e6d971cc5ce0c4ae8c7d1b93e56bf33392c9a143672627241b3cdfa8251e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c2c14d4f97085daaa8c2f184a0e5239319b30abbc7e2d8ed56d690582af7d7dc`
+#### `e9c2176184ead53369dca67fd3ced1e0898ddaab19dd32dd4e7cd4aa0423c4cf`
 
 ```dockerfile
 ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 ```
 
--	Created: Thu, 11 Feb 2016 19:48:48 GMT
--	Parent Layer: `50ec7cbc73392f200de850f7a74b4a7d453d46db4dd3472cb39de88e69a27113`
+-	Created: Fri, 12 Feb 2016 17:45:29 GMT
+-	Parent Layer: `0da4f897f27eea07508cf9daba49a8bfc4f1d8c86b1eee4e65a40e90e416019b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `141602b57ac32f86ec061d9c846bef5b31e99a842158ed422a49fcd023e07ff4`
+#### `49816c626ffce552156cee4fd3a08c285100569b688be5ed94c6644a3094622e`
 
 ```dockerfile
 RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
      && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config
 ```
 
--	Created: Thu, 11 Feb 2016 19:48:49 GMT
--	Parent Layer: `c2c14d4f97085daaa8c2f184a0e5239319b30abbc7e2d8ed56d690582af7d7dc`
+-	Created: Fri, 12 Feb 2016 17:45:30 GMT
+-	Parent Layer: `e9c2176184ead53369dca67fd3ced1e0898ddaab19dd32dd4e7cd4aa0423c4cf`
 -	Docker Version: 1.9.1
 -	Virtual Size: 71.0 B
--	v2 Blob: `sha256:4cc0f4ec71d2058719ca4f264e9230ae15da8d4cc57eea391c39be35fd406d8b`
--	v2 Content-Length: 152.0 B
--	v2 Last-Modified: Thu, 11 Feb 2016 19:52:21 GMT
+-	v2 Blob: `sha256:3494c0f6e75c8f196c02f911e5fe7dc2a04513d8146f3eea77b0b3fc8b78ddf1`
+-	v2 Content-Length: 153.0 B
+-	v2 Last-Modified: Fri, 12 Feb 2016 17:48:05 GMT
 
-#### `a9cf0fd34b07bc7109b9ed2a76aa5e8b8ef92e0854f2c273ef961af48906078b`
+#### `52bb87caf7995ada47d79cd07a4996337f2b53c7ff860bc98fe864b424165b86`
 
 ```dockerfile
 RUN /opt/ibm/wlp/bin/server create\
      && rm -rf $WLP_OUTPUT_DIR/.classCache
 ```
 
--	Created: Thu, 11 Feb 2016 19:48:51 GMT
--	Parent Layer: `141602b57ac32f86ec061d9c846bef5b31e99a842158ed422a49fcd023e07ff4`
+-	Created: Fri, 12 Feb 2016 17:45:32 GMT
+-	Parent Layer: `49816c626ffce552156cee4fd3a08c285100569b688be5ed94c6644a3094622e`
 -	Docker Version: 1.9.1
--	Virtual Size: 2.0 KB (2003 bytes)
--	v2 Blob: `sha256:09910b74d3988c8c637058f848aff07485925c3f1ea235084049826ccb899a42`
--	v2 Content-Length: 1.3 KB (1298 bytes)
--	v2 Last-Modified: Thu, 11 Feb 2016 19:52:16 GMT
+-	Virtual Size: 2.9 KB (2916 bytes)
+-	v2 Blob: `sha256:efde3cd34e37fe5333513dfdea6aa0b33e33e4bbe976bf96d4bebb88f3447ac9`
+-	v2 Content-Length: 1.5 KB (1525 bytes)
+-	v2 Last-Modified: Fri, 12 Feb 2016 17:48:01 GMT
 
-#### `6b42ad8616f9938e1aa307f767772e85a623ff91ce47593231ae4a57db04a3eb`
+#### `a036012c5aebcbd8603639417bfc82e44696f0d8442c241b90a78891a9e1506f`
 
 ```dockerfile
 COPY file:d1fc238c7f4739ce91d5acc6d63a965a03fe2fe2b9ae3ef55fc7ee3166b64bad in /opt/ibm/wlp/usr/servers/defaultServer/
 ```
 
--	Created: Thu, 11 Feb 2016 19:48:52 GMT
--	Parent Layer: `a9cf0fd34b07bc7109b9ed2a76aa5e8b8ef92e0854f2c273ef961af48906078b`
+-	Created: Fri, 12 Feb 2016 17:45:32 GMT
+-	Parent Layer: `52bb87caf7995ada47d79cd07a4996337f2b53c7ff860bc98fe864b424165b86`
 -	Docker Version: 1.9.1
 -	Virtual Size: 336.0 B
--	v2 Blob: `sha256:275e585e0e89f84afaa568d86e403c5057cd322847ecfe9b8bcf45dcbe76138b`
--	v2 Content-Length: 401.0 B
--	v2 Last-Modified: Thu, 11 Feb 2016 19:52:13 GMT
+-	v2 Blob: `sha256:d99bb33d5a8db211c28c85a32b0f0f20863dd641820d7a1df59e7c1ee24f5577`
+-	v2 Content-Length: 398.0 B
+-	v2 Last-Modified: Fri, 12 Feb 2016 17:47:57 GMT
 
-#### `c2af0736133181e67430cca76a3872930e53be1555b73f35d02531876b885a6e`
+#### `fbc095053894dba6e0335dd3190bdda62f162ec2da3bea907b0f7781f9601c48`
 
 ```dockerfile
 EXPOSE 9080/tcp 9443/tcp
 ```
 
--	Created: Thu, 11 Feb 2016 19:48:52 GMT
--	Parent Layer: `6b42ad8616f9938e1aa307f767772e85a623ff91ce47593231ae4a57db04a3eb`
+-	Created: Fri, 12 Feb 2016 17:45:33 GMT
+-	Parent Layer: `a036012c5aebcbd8603639417bfc82e44696f0d8442c241b90a78891a9e1506f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 -	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `21c96a1a5e6c592c2e0e3ad6ffda8377b613781103fbf87966e0fcc0cda69fbd`
+#### `bd6654698ba551630906f38ac8fb65c21ce5e044480b5f5e0a8977a3b04a1392`
 
 ```dockerfile
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ```
 
--	Created: Thu, 11 Feb 2016 19:48:53 GMT
--	Parent Layer: `c2af0736133181e67430cca76a3872930e53be1555b73f35d02531876b885a6e`
+-	Created: Fri, 12 Feb 2016 17:45:34 GMT
+-	Parent Layer: `fbc095053894dba6e0335dd3190bdda62f162ec2da3bea907b0f7781f9601c48`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
