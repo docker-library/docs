@@ -58,6 +58,7 @@ declare -A otherRepos=(
 	[odoo]='https://github.com/odoo/docker'
 	[opensuse]='https://github.com/openSUSE/docker-containers-build'
 	[oraclelinux]='https://github.com/oracle/docker'
+	[orientdb]='https://github.com/orientechnologies/orientdb-docker'
 	[perl]='https://github.com/Perl/docker-perl'
 	[photon]='https://github.com/frapposelli/photon-docker-image'
 	[r-base]='https://github.com/rocker-org/rocker'
