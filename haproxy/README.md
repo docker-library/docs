@@ -35,10 +35,21 @@ FROM haproxy:1.5
 COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
 ```
 
-Build and run:
+## Build the container
 
 ```console
 $ docker build -t my-haproxy .
+```
+
+## Test the configuration file
+
+```console
+$ docker run -it --rm --name haproxy-syntax-check haproxy:1.5 haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
+```
+
+## Run the container
+
+```console
 $ docker run -d --name my-running-haproxy my-haproxy
 ```
 
@@ -54,7 +65,7 @@ View [license information](http://www.haproxy.org/download/1.5/doc/LICENSE) for 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2016.01`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/ee6c27fe526dd73e2531ba3888ac3bfdcd0f4078/Dockerfile)
+-	[`2016.01`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/68589fca92aaad50e7beb3da100e399ad41df17e/Dockerfile)
 
 [![](https://badge.imagelayers.io/rakudo-star:latest.svg)](https://imagelayers.io/?images=rakudo-star:2016.01)
 
@@ -52,7 +52,7 @@ View [license information](https://github.com/rakudo/star/blob/master/LICENSE) f
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.0.
+This image is officially supported on Docker version 1.10.1.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
