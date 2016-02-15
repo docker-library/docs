@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`4.0.3`, `4.0` (*4.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/d7600122303543f39b8fb8d2af10d2b5ebee59ef/4.0/Dockerfile)
--	[`4.1.4`, `4.1` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/d7600122303543f39b8fb8d2af10d2b5ebee59ef/4.1/Dockerfile)
+-	[`4.1.5`, `4.1` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/279f41998ff62b33fc5ce2b348fe297b4231854b/4.1/Dockerfile)
 -	[`4.2.2`, `4.2` (*4.2/Dockerfile*)](https://github.com/docker-library/kibana/blob/cc8525104d855645462ad1a2b502b5f589eeec19/4.2/Dockerfile)
--	[`4.3.1`, `4.3` (*4.3/Dockerfile*)](https://github.com/docker-library/kibana/blob/cc8525104d855645462ad1a2b502b5f589eeec19/4.3/Dockerfile)
--	[`4.4.0`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/docker-library/kibana/blob/559199ccb087316815bb65283841e6f42ce221a6/4.4/Dockerfile)
+-	[`4.3.2`, `4.3` (*4.3/Dockerfile*)](https://github.com/docker-library/kibana/blob/279f41998ff62b33fc5ce2b348fe297b4231854b/4.3/Dockerfile)
+-	[`4.4.1`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/docker-library/kibana/blob/279f41998ff62b33fc5ce2b348fe297b4231854b/4.4/Dockerfile)
 
-[![](https://badge.imagelayers.io/kibana:latest.svg)](https://imagelayers.io/?images=kibana:4.0.3,kibana:4.1.4,kibana:4.2.2,kibana:4.3.1,kibana:4.4.0)
+[![](https://badge.imagelayers.io/kibana:latest.svg)](https://imagelayers.io/?images=kibana:4.0.3,kibana:4.1.5,kibana:4.2.2,kibana:4.3.2,kibana:4.4.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kibana`)](https://github.com/docker-library/official-images/blob/master/library/kibana). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
