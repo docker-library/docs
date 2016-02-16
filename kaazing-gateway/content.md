@@ -2,7 +2,7 @@
 
 The Kaazing Gateway is a network gateway created to provide a single access point for real-time web based protocols that supports load balancing, clustering, and security management. It is designed to provide scalable and secure bidirectional event-based communication over the web; on every platform, browser, and device.
 
-In addition to providing web messaging, the Kaazing Gateway can be configured to deliver simple, secure, hybrid cloud or machine to machine IP connectivity via [KWIC](http://kaazing.com/kwic/).  This is akin to Dockers ["ambassador pattern"](https://docs.docker.com/engine/admin/ambassador_pattern_linking/) but with WebSocket being the transport layer, providing:
+In addition to providing web messaging, the Kaazing Gateway can be configured to deliver simple, secure, hybrid cloud or machine to machine IP connectivity via [KWIC](http://kaazing.com/kwic/). This is akin to Dockers ["ambassador pattern"](https://docs.docker.com/engine/admin/ambassador_pattern_linking/) but with WebSocket being the transport layer, providing:
 
 1.	Access and reuse of standard http ports (80 or 443)
 2.	Multiplexing one or more tcp connections over a single port, thereby allowing the gateway to be an ambassador to many different containers
