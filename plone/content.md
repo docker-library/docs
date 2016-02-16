@@ -101,7 +101,7 @@ eggs += plone.awesome.addon
 
 ```dockerfile
 FROM plone:5
-COPY site.cfg /plone/
+COPY site.cfg /plone/instance/
 RUN bin/buildout -c site.cfg
 ```
 
