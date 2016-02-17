@@ -65,14 +65,14 @@ The following illustrates the [ambassador pattern](https://docs.docker.com/engin
 $ docker run -d --name backend --hostname backend kaazing-gateway ./bin/gateway.start --config conf/echo-config.xml
 
 # Sets up ambassador
-$ docker run -d --name ambassador-server --link backend:backend -p 443:443 kaazing-gateway start ambassador-server -service echo backend:8000
+$ docker run -d --name ambassador-server --link backend:backend -p 443:443 kaazing-gateway ambassador-server -service echo backend:8000
 ```
 
 #### On docker host 2 (Client)
 
 ```console
 # Sets up ambassador
-$ docker run -d --name ambassador-client kaazing-gateway start ambassador-client ${ip-of-server-ambassador} -service echo 8000
+$ docker run -d --name ambassador-client kaazing-gateway ambassador-client ${ip-of-server-ambassador} -service echo 8000
 
 # Runs up client
 $ docker run --rm -i -t --link ambassador-client:ambassador-client multicloud/netcat ambassador-client 8000
