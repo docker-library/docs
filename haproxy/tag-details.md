@@ -657,6 +657,7 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 9.3 MB (9343975 bytes)
 -	v2 Blob: `sha256:867e6a4bf142454e1e43fe7fe296fcdc349e3199733976bcab3275cb5e17c24a`
 -	v2 Content-Length: 4.3 MB (4339029 bytes)
+-	v2 Last-Modified: Wed, 17 Feb 2016 19:27:27 GMT
 
 #### `282affe0f2b974179311c4346e790991139159e9d4a7de046c53290f6329abfe`
 
@@ -789,6 +790,7 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 9.3 MB (9343975 bytes)
 -	v2 Blob: `sha256:867e6a4bf142454e1e43fe7fe296fcdc349e3199733976bcab3275cb5e17c24a`
 -	v2 Content-Length: 4.3 MB (4339029 bytes)
+-	v2 Last-Modified: Wed, 17 Feb 2016 19:27:27 GMT
 
 #### `282affe0f2b974179311c4346e790991139159e9d4a7de046c53290f6329abfe`
 
@@ -921,6 +923,7 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 9.3 MB (9343975 bytes)
 -	v2 Blob: `sha256:867e6a4bf142454e1e43fe7fe296fcdc349e3199733976bcab3275cb5e17c24a`
 -	v2 Content-Length: 4.3 MB (4339029 bytes)
+-	v2 Last-Modified: Wed, 17 Feb 2016 19:27:27 GMT
 
 #### `282affe0f2b974179311c4346e790991139159e9d4a7de046c53290f6329abfe`
 
@@ -1053,6 +1056,7 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 9.3 MB (9343975 bytes)
 -	v2 Blob: `sha256:867e6a4bf142454e1e43fe7fe296fcdc349e3199733976bcab3275cb5e17c24a`
 -	v2 Content-Length: 4.3 MB (4339029 bytes)
+-	v2 Last-Modified: Wed, 17 Feb 2016 19:27:27 GMT
 
 #### `282affe0f2b974179311c4346e790991139159e9d4a7de046c53290f6329abfe`
 
