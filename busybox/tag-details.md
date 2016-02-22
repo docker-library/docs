@@ -41,7 +41,6 @@ ADD file:e891d75859065a96297ee72d7990b67f36fa5315e59160ad70ab0b56e25dff99 in /
 -	Virtual Size: 4.2 MB (4179779 bytes)
 -	v2 Blob: `sha256:8de1ce8dd4705d9b33c3a3665fb1914035a230939e7b78cd19185e6c7a4cb2de`
 -	v2 Content-Length: 2.2 MB (2202404 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:22 GMT
 
 #### `17f9eb2bd2b5516249f6b5d9b32197cf752c893963c2d9072f8d389ac7f6655a`
 
@@ -55,7 +54,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1.24-glibc`
 
@@ -79,7 +77,6 @@ ADD file:e891d75859065a96297ee72d7990b67f36fa5315e59160ad70ab0b56e25dff99 in /
 -	Virtual Size: 4.2 MB (4179779 bytes)
 -	v2 Blob: `sha256:8de1ce8dd4705d9b33c3a3665fb1914035a230939e7b78cd19185e6c7a4cb2de`
 -	v2 Content-Length: 2.2 MB (2202404 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:22 GMT
 
 #### `17f9eb2bd2b5516249f6b5d9b32197cf752c893963c2d9072f8d389ac7f6655a`
 
@@ -93,7 +90,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1-glibc`
 
@@ -117,7 +113,6 @@ ADD file:e891d75859065a96297ee72d7990b67f36fa5315e59160ad70ab0b56e25dff99 in /
 -	Virtual Size: 4.2 MB (4179779 bytes)
 -	v2 Blob: `sha256:8de1ce8dd4705d9b33c3a3665fb1914035a230939e7b78cd19185e6c7a4cb2de`
 -	v2 Content-Length: 2.2 MB (2202404 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:22 GMT
 
 #### `17f9eb2bd2b5516249f6b5d9b32197cf752c893963c2d9072f8d389ac7f6655a`
 
@@ -131,7 +126,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:glibc`
 
@@ -155,7 +149,6 @@ ADD file:e891d75859065a96297ee72d7990b67f36fa5315e59160ad70ab0b56e25dff99 in /
 -	Virtual Size: 4.2 MB (4179779 bytes)
 -	v2 Blob: `sha256:8de1ce8dd4705d9b33c3a3665fb1914035a230939e7b78cd19185e6c7a4cb2de`
 -	v2 Content-Length: 2.2 MB (2202404 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:22 GMT
 
 #### `17f9eb2bd2b5516249f6b5d9b32197cf752c893963c2d9072f8d389ac7f6655a`
 
@@ -169,7 +162,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1.24.1-musl`
 
@@ -193,7 +185,6 @@ ADD file:674801efae720f7d5a89d74c194a7dc74a5b0e71a7e52cb9444169f67ea76720 in /
 -	Virtual Size: 1.2 MB (1204671 bytes)
 -	v2 Blob: `sha256:15c9579745a34029e0ce3acaef96438e11d9f711757a452db7007f039c8cfcd9`
 -	v2 Content-Length: 686.3 KB (686294 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:37 GMT
 
 #### `68fe08cb962c7ab4f996acc759d75a49412e84afc57a377aadec375db8f1a1e0`
 
@@ -207,7 +198,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1.24-musl`
 
@@ -231,7 +221,6 @@ ADD file:674801efae720f7d5a89d74c194a7dc74a5b0e71a7e52cb9444169f67ea76720 in /
 -	Virtual Size: 1.2 MB (1204671 bytes)
 -	v2 Blob: `sha256:15c9579745a34029e0ce3acaef96438e11d9f711757a452db7007f039c8cfcd9`
 -	v2 Content-Length: 686.3 KB (686294 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:37 GMT
 
 #### `68fe08cb962c7ab4f996acc759d75a49412e84afc57a377aadec375db8f1a1e0`
 
@@ -245,7 +234,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1-musl`
 
@@ -269,7 +257,6 @@ ADD file:674801efae720f7d5a89d74c194a7dc74a5b0e71a7e52cb9444169f67ea76720 in /
 -	Virtual Size: 1.2 MB (1204671 bytes)
 -	v2 Blob: `sha256:15c9579745a34029e0ce3acaef96438e11d9f711757a452db7007f039c8cfcd9`
 -	v2 Content-Length: 686.3 KB (686294 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:37 GMT
 
 #### `68fe08cb962c7ab4f996acc759d75a49412e84afc57a377aadec375db8f1a1e0`
 
@@ -283,7 +270,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:musl`
 
@@ -307,7 +293,6 @@ ADD file:674801efae720f7d5a89d74c194a7dc74a5b0e71a7e52cb9444169f67ea76720 in /
 -	Virtual Size: 1.2 MB (1204671 bytes)
 -	v2 Blob: `sha256:15c9579745a34029e0ce3acaef96438e11d9f711757a452db7007f039c8cfcd9`
 -	v2 Content-Length: 686.3 KB (686294 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:37 GMT
 
 #### `68fe08cb962c7ab4f996acc759d75a49412e84afc57a377aadec375db8f1a1e0`
 
@@ -321,7 +306,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1.24.1-uclibc`
 
@@ -345,7 +329,6 @@ ADD file:7cdf7a89f6a004b2e9501317bd72bd863d93a51255d8f83b2ed3058d385a4938 in /
 -	Virtual Size: 1.1 MB (1113554 bytes)
 -	v2 Blob: `sha256:f810322bba2c5f0a6dd58ba31eba0543baabb4533e479ab2db376aaa8064be55`
 -	v2 Content-Length: 675.9 KB (675929 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:50 GMT
 
 #### `fef924a0204a00b3ec67318e2ed337b189c99ea19e2bf10ed30a13b87c5e17ab`
 
@@ -359,7 +342,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1.24.1`
 
@@ -383,7 +365,6 @@ ADD file:7cdf7a89f6a004b2e9501317bd72bd863d93a51255d8f83b2ed3058d385a4938 in /
 -	Virtual Size: 1.1 MB (1113554 bytes)
 -	v2 Blob: `sha256:f810322bba2c5f0a6dd58ba31eba0543baabb4533e479ab2db376aaa8064be55`
 -	v2 Content-Length: 675.9 KB (675929 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:50 GMT
 
 #### `fef924a0204a00b3ec67318e2ed337b189c99ea19e2bf10ed30a13b87c5e17ab`
 
@@ -397,7 +378,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1.24-uclibc`
 
@@ -421,7 +401,6 @@ ADD file:7cdf7a89f6a004b2e9501317bd72bd863d93a51255d8f83b2ed3058d385a4938 in /
 -	Virtual Size: 1.1 MB (1113554 bytes)
 -	v2 Blob: `sha256:f810322bba2c5f0a6dd58ba31eba0543baabb4533e479ab2db376aaa8064be55`
 -	v2 Content-Length: 675.9 KB (675929 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:50 GMT
 
 #### `fef924a0204a00b3ec67318e2ed337b189c99ea19e2bf10ed30a13b87c5e17ab`
 
@@ -435,7 +414,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1.24`
 
@@ -459,7 +437,6 @@ ADD file:7cdf7a89f6a004b2e9501317bd72bd863d93a51255d8f83b2ed3058d385a4938 in /
 -	Virtual Size: 1.1 MB (1113554 bytes)
 -	v2 Blob: `sha256:f810322bba2c5f0a6dd58ba31eba0543baabb4533e479ab2db376aaa8064be55`
 -	v2 Content-Length: 675.9 KB (675929 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:50 GMT
 
 #### `fef924a0204a00b3ec67318e2ed337b189c99ea19e2bf10ed30a13b87c5e17ab`
 
@@ -473,7 +450,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1-uclibc`
 
@@ -497,7 +473,6 @@ ADD file:7cdf7a89f6a004b2e9501317bd72bd863d93a51255d8f83b2ed3058d385a4938 in /
 -	Virtual Size: 1.1 MB (1113554 bytes)
 -	v2 Blob: `sha256:f810322bba2c5f0a6dd58ba31eba0543baabb4533e479ab2db376aaa8064be55`
 -	v2 Content-Length: 675.9 KB (675929 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:50 GMT
 
 #### `fef924a0204a00b3ec67318e2ed337b189c99ea19e2bf10ed30a13b87c5e17ab`
 
@@ -511,7 +486,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:1`
 
@@ -535,7 +509,6 @@ ADD file:7cdf7a89f6a004b2e9501317bd72bd863d93a51255d8f83b2ed3058d385a4938 in /
 -	Virtual Size: 1.1 MB (1113554 bytes)
 -	v2 Blob: `sha256:f810322bba2c5f0a6dd58ba31eba0543baabb4533e479ab2db376aaa8064be55`
 -	v2 Content-Length: 675.9 KB (675929 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:50 GMT
 
 #### `fef924a0204a00b3ec67318e2ed337b189c99ea19e2bf10ed30a13b87c5e17ab`
 
@@ -549,7 +522,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:uclibc`
 
@@ -573,7 +545,6 @@ ADD file:7cdf7a89f6a004b2e9501317bd72bd863d93a51255d8f83b2ed3058d385a4938 in /
 -	Virtual Size: 1.1 MB (1113554 bytes)
 -	v2 Blob: `sha256:f810322bba2c5f0a6dd58ba31eba0543baabb4533e479ab2db376aaa8064be55`
 -	v2 Content-Length: 675.9 KB (675929 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:50 GMT
 
 #### `fef924a0204a00b3ec67318e2ed337b189c99ea19e2bf10ed30a13b87c5e17ab`
 
@@ -587,7 +558,6 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `busybox:latest`
 
@@ -611,7 +581,6 @@ ADD file:7cdf7a89f6a004b2e9501317bd72bd863d93a51255d8f83b2ed3058d385a4938 in /
 -	Virtual Size: 1.1 MB (1113554 bytes)
 -	v2 Blob: `sha256:f810322bba2c5f0a6dd58ba31eba0543baabb4533e479ab2db376aaa8064be55`
 -	v2 Content-Length: 675.9 KB (675929 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 23:00:50 GMT
 
 #### `fef924a0204a00b3ec67318e2ed337b189c99ea19e2bf10ed30a13b87c5e17ab`
 
@@ -625,4 +594,3 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

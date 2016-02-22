@@ -48,7 +48,6 @@ ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 -	Virtual Size: 125.1 MB (125109771 bytes)
 -	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
 -	v2 Content-Length: 51.4 MB (51366659 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:01 GMT
 
 #### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
@@ -62,7 +61,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:8`
 
@@ -86,7 +84,6 @@ ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 -	Virtual Size: 125.1 MB (125109771 bytes)
 -	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
 -	v2 Content-Length: 51.4 MB (51366659 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:01 GMT
 
 #### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
@@ -100,7 +97,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:jessie`
 
@@ -124,7 +120,6 @@ ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 -	Virtual Size: 125.1 MB (125109771 bytes)
 -	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
 -	v2 Content-Length: 51.4 MB (51366659 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:01 GMT
 
 #### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
@@ -138,7 +133,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:latest`
 
@@ -162,7 +156,6 @@ ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 -	Virtual Size: 125.1 MB (125109771 bytes)
 -	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
 -	v2 Content-Length: 51.4 MB (51366659 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:01 GMT
 
 #### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
@@ -176,7 +169,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:jessie-backports`
 
@@ -200,7 +192,6 @@ ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 -	Virtual Size: 125.1 MB (125109771 bytes)
 -	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
 -	v2 Content-Length: 51.4 MB (51366659 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:01 GMT
 
 #### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
@@ -214,7 +205,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f6f972d433115b7129184d789252ce507cd4a20dca5ce5cad28640a51dab00e`
 
@@ -228,7 +218,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:87758b36d07fe5d8e6055692661fcd1c97df382f218fa4034e74150e42b9020d`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 16 Feb 2016 21:27:17 GMT
 
 ## `debian:oldstable`
 
@@ -252,7 +241,6 @@ ADD file:24b387cf1ae193e037f74e0d8b6285a5b5b7fbddfd1c8871ffcc56cd58e8ecd8 in /
 -	Virtual Size: 84.9 MB (84905073 bytes)
 -	v2 Blob: `sha256:3a9418230db17d48fd6d58e7da9fa48b3ea1ca772e31d327ca5711ccba8870d6`
 -	v2 Content-Length: 37.2 MB (37189376 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:47 GMT
 
 #### `cd6abb6b7aef52a9fcbda950cca7a4d8f912ca5b5b432dd38c4ddf9eec16e9b3`
 
@@ -266,7 +254,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:oldstable-backports`
 
@@ -290,7 +277,6 @@ ADD file:24b387cf1ae193e037f74e0d8b6285a5b5b7fbddfd1c8871ffcc56cd58e8ecd8 in /
 -	Virtual Size: 84.9 MB (84905073 bytes)
 -	v2 Blob: `sha256:3a9418230db17d48fd6d58e7da9fa48b3ea1ca772e31d327ca5711ccba8870d6`
 -	v2 Content-Length: 37.2 MB (37189376 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:47 GMT
 
 #### `cd6abb6b7aef52a9fcbda950cca7a4d8f912ca5b5b432dd38c4ddf9eec16e9b3`
 
@@ -304,7 +290,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f667e259802baf8ffd099c902e87cf4f5ddaef874815489ac4df12582165ecf6`
 
@@ -318,7 +303,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 64.0 B
 -	v2 Blob: `sha256:45a275d6021d2dc534e7c2981fa54c319f8842e0392d59a79783bedf48d7d5c0`
 -	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Tue, 16 Feb 2016 21:27:38 GMT
 
 ## `debian:sid`
 
@@ -342,7 +326,6 @@ ADD file:3d2c5f1688fcf2682ecfc8ca74df197ab25052ec78727bf376eae7e9a040b978 in /
 -	Virtual Size: 118.9 MB (118873357 bytes)
 -	v2 Blob: `sha256:092c97d90101a5c572421b252f223fc1d622fcf713ee35420b91bb735e68a713`
 -	v2 Content-Length: 52.4 MB (52434685 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:05 GMT
 
 #### `cc3385f76c5dbfe9dbcb3c4719e986f00e8d3c3498b78323b18776377fe85b07`
 
@@ -356,7 +339,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:6.0.10`
 
@@ -380,7 +362,6 @@ ADD file:09d717d62608e18d79af6b6cd5aae36f675bd5c4f34452ab1693b56bfbfe2520 in /
 -	Virtual Size: 76.5 MB (76534288 bytes)
 -	v2 Blob: `sha256:069873d23334d65630bbe5e303ced0c68181b694c7f5506b54bf5d8115b5af20`
 -	v2 Content-Length: 33.8 MB (33843146 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:55 GMT
 
 #### `ff11dd0897b8ded12196819a787b5bd6d5bf886d9a7836c21b070efb5d9e77e4`
 
@@ -394,7 +375,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:6.0`
 
@@ -418,7 +398,6 @@ ADD file:09d717d62608e18d79af6b6cd5aae36f675bd5c4f34452ab1693b56bfbfe2520 in /
 -	Virtual Size: 76.5 MB (76534288 bytes)
 -	v2 Blob: `sha256:069873d23334d65630bbe5e303ced0c68181b694c7f5506b54bf5d8115b5af20`
 -	v2 Content-Length: 33.8 MB (33843146 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:55 GMT
 
 #### `ff11dd0897b8ded12196819a787b5bd6d5bf886d9a7836c21b070efb5d9e77e4`
 
@@ -432,7 +411,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:6`
 
@@ -456,7 +434,6 @@ ADD file:09d717d62608e18d79af6b6cd5aae36f675bd5c4f34452ab1693b56bfbfe2520 in /
 -	Virtual Size: 76.5 MB (76534288 bytes)
 -	v2 Blob: `sha256:069873d23334d65630bbe5e303ced0c68181b694c7f5506b54bf5d8115b5af20`
 -	v2 Content-Length: 33.8 MB (33843146 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:55 GMT
 
 #### `ff11dd0897b8ded12196819a787b5bd6d5bf886d9a7836c21b070efb5d9e77e4`
 
@@ -470,7 +447,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:squeeze`
 
@@ -494,7 +470,6 @@ ADD file:09d717d62608e18d79af6b6cd5aae36f675bd5c4f34452ab1693b56bfbfe2520 in /
 -	Virtual Size: 76.5 MB (76534288 bytes)
 -	v2 Blob: `sha256:069873d23334d65630bbe5e303ced0c68181b694c7f5506b54bf5d8115b5af20`
 -	v2 Content-Length: 33.8 MB (33843146 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:55 GMT
 
 #### `ff11dd0897b8ded12196819a787b5bd6d5bf886d9a7836c21b070efb5d9e77e4`
 
@@ -508,7 +483,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:stable`
 
@@ -532,7 +506,6 @@ ADD file:2a1b70324aad9e67208ccd37f3d12ba9558938dc68ae51ae01075d8934d995cc in /
 -	Virtual Size: 125.1 MB (125128169 bytes)
 -	v2 Blob: `sha256:7a2d89457c2fa310cb58e418fc48293ce1fccd265b647dae4da3d551df70cbaa`
 -	v2 Content-Length: 51.4 MB (51368280 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:07 GMT
 
 #### `de6e1ece5d0c556a9037303726cca414e5f429585e273362df945f51849bf047`
 
@@ -546,7 +519,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:stable-backports`
 
@@ -570,7 +542,6 @@ ADD file:2a1b70324aad9e67208ccd37f3d12ba9558938dc68ae51ae01075d8934d995cc in /
 -	Virtual Size: 125.1 MB (125128169 bytes)
 -	v2 Blob: `sha256:7a2d89457c2fa310cb58e418fc48293ce1fccd265b647dae4da3d551df70cbaa`
 -	v2 Content-Length: 51.4 MB (51368280 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:07 GMT
 
 #### `de6e1ece5d0c556a9037303726cca414e5f429585e273362df945f51849bf047`
 
@@ -584,7 +555,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a5c95ca333d4c7af875daaf4f56a007acf5215a5d8c1b08d05872d29bc422f18`
 
@@ -598,7 +568,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:52a56922e0864f930b8209d49237a4e61d323dd444f3cb07cdb38bb31f611405`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 16 Feb 2016 21:28:50 GMT
 
 ## `debian:stretch`
 
@@ -622,7 +591,6 @@ ADD file:d4ea07b51721e648d86c94389e4ddcb785bd5269ef8b7d2d5c63d299ce19022a in /
 -	Virtual Size: 117.8 MB (117778038 bytes)
 -	v2 Blob: `sha256:3fb103290e9b320b99f2f4d0aa3b98c30ab4f9c3cc20355efd8e28cbf6ad5d71`
 -	v2 Content-Length: 52.0 MB (51986560 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:29:12 GMT
 
 #### `682afddb200235e084675a106ac71c8f7fa4254968dcba2b92d45e887a416722`
 
@@ -636,7 +604,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:testing`
 
@@ -660,7 +627,6 @@ ADD file:d21e6ede3e853a619df3cb5c570d3dcccae30c4a89a536b6ee73deefe3984181 in /
 -	Virtual Size: 117.8 MB (117778038 bytes)
 -	v2 Blob: `sha256:d68f3d788ad3e219d1842d056d20f27ced1e00b65fe3bb9ef5c560231e5ae42b`
 -	v2 Content-Length: 52.0 MB (51986435 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:46 GMT
 
 #### `11afe415d147d990cae70118d8963b0ed2e97f5f07f9e605a49c861923288394`
 
@@ -674,7 +640,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:unstable`
 
@@ -698,7 +663,6 @@ ADD file:f05c20696c9097e1f8167b4f3dfd5b154192a3f62d4d25b1cef775f3ff6b738d in /
 -	Virtual Size: 118.9 MB (118873362 bytes)
 -	v2 Blob: `sha256:a08988e8b084764cffac3f5cffd8797d05b589d20a7fc868580efa479457f75e`
 -	v2 Content-Length: 52.4 MB (52434485 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:17 GMT
 
 #### `53778a546843e6255012e99a477616bbffff31f21bbdcedb29387e7821c670f0`
 
@@ -712,7 +676,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:7.9`
 
@@ -736,7 +699,6 @@ ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
 -	Virtual Size: 84.9 MB (84905064 bytes)
 -	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
 -	v2 Content-Length: 37.2 MB (37189267 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:58 GMT
 
 #### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
 
@@ -750,7 +712,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:7`
 
@@ -774,7 +735,6 @@ ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
 -	Virtual Size: 84.9 MB (84905064 bytes)
 -	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
 -	v2 Content-Length: 37.2 MB (37189267 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:58 GMT
 
 #### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
 
@@ -788,7 +748,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:wheezy`
 
@@ -812,7 +771,6 @@ ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
 -	Virtual Size: 84.9 MB (84905064 bytes)
 -	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
 -	v2 Content-Length: 37.2 MB (37189267 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:58 GMT
 
 #### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
 
@@ -826,7 +784,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `debian:wheezy-backports`
 
@@ -850,7 +807,6 @@ ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
 -	Virtual Size: 84.9 MB (84905064 bytes)
 -	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
 -	v2 Content-Length: 37.2 MB (37189267 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:13:58 GMT
 
 #### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
 
@@ -864,7 +820,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a56a7c13ed4115e367b971f100859de29dba9365c5399867867389013706b72`
 
@@ -878,7 +833,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:c5804fb09d2deb60f1da842c4e75621bd51f2d1afb37b2b1596ee2ce586b66d3`
 -	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Tue, 16 Feb 2016 21:30:25 GMT
 
 ## `debian:rc-buggy`
 
@@ -902,7 +856,6 @@ ADD file:3d2c5f1688fcf2682ecfc8ca74df197ab25052ec78727bf376eae7e9a040b978 in /
 -	Virtual Size: 118.9 MB (118873357 bytes)
 -	v2 Blob: `sha256:092c97d90101a5c572421b252f223fc1d622fcf713ee35420b91bb735e68a713`
 -	v2 Content-Length: 52.4 MB (52434685 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:05 GMT
 
 #### `cc3385f76c5dbfe9dbcb3c4719e986f00e8d3c3498b78323b18776377fe85b07`
 
@@ -916,7 +869,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fce8b8fef162a6be5467233fe217264e7ade4096a4fea897e52a8ffb267f411e`
 
@@ -930,7 +882,6 @@ RUN awk '$1 ~ "^deb" { $3 = "rc-buggy"; print; exit }' /etc/apt/sources.list > /
 -	Virtual Size: 53.0 B
 -	v2 Blob: `sha256:838835679bdc8800bb8497a5a683b43f7677a871fac4f9049faaa2b56debe528`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Tue, 16 Feb 2016 21:30:30 GMT
 
 ## `debian:experimental`
 
@@ -954,7 +905,6 @@ ADD file:f05c20696c9097e1f8167b4f3dfd5b154192a3f62d4d25b1cef775f3ff6b738d in /
 -	Virtual Size: 118.9 MB (118873362 bytes)
 -	v2 Blob: `sha256:a08988e8b084764cffac3f5cffd8797d05b589d20a7fc868580efa479457f75e`
 -	v2 Content-Length: 52.4 MB (52434485 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 21:14:17 GMT
 
 #### `53778a546843e6255012e99a477616bbffff31f21bbdcedb29387e7821c670f0`
 
@@ -968,7 +918,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `90c1498b2415ffad7c8bc5a89bc76a97a59a4562ef2bae61ae7b35c3cefbef9f`
 
@@ -982,4 +931,3 @@ RUN awk '$1 ~ "^deb" { $3 = "experimental"; print; exit }' /etc/apt/sources.list
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:1f2bd3edbf0324b0943a42eec7875b20332f27941631f690487178a7ab3eab27`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Tue, 16 Feb 2016 21:30:35 GMT

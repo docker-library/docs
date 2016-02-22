@@ -40,7 +40,6 @@ ADD file:1e94527a68d0fb5efa75b830710e99d8d14918467e0c3eedb2855c134419af9f in /
 -	Virtual Size: 137.6 MB (137593590 bytes)
 -	v2 Blob: `sha256:4883bf13a7132a7d7ca2a12d24f0ef956edfce21b644a804ed2b5912e0da18fe`
 -	v2 Content-Length: 44.2 MB (44172327 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:19:39 GMT
 
 #### `1aa718d1ec681dba980d678d4c72e3d2191a07da15150f1ab09b761792840f8c`
 
@@ -65,7 +64,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:65ae9cc833bbf04f01f45210828effdaf470eff943429ddb94d1be4ad2babb66`
 -	v2 Content-Length: 57.9 KB (57862 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:19:04 GMT
 
 #### `b4ea107dea6abcbfd79e51f8a29df19dc1c0ae3c553c205b64e8d0adb86564bd`
 
@@ -79,7 +77,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:ac2841ebb20cb633ed05d352f9ba57a63356fbd57afd250c939914372d2ffdbb`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:18:58 GMT
 
 #### `aaf78e4d1fd06f31df417943525ae3252bc9e118e0319682d0932e71c1236110`
 
@@ -93,7 +90,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:12.04`
 
@@ -117,7 +113,6 @@ ADD file:1e94527a68d0fb5efa75b830710e99d8d14918467e0c3eedb2855c134419af9f in /
 -	Virtual Size: 137.6 MB (137593590 bytes)
 -	v2 Blob: `sha256:4883bf13a7132a7d7ca2a12d24f0ef956edfce21b644a804ed2b5912e0da18fe`
 -	v2 Content-Length: 44.2 MB (44172327 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:19:39 GMT
 
 #### `1aa718d1ec681dba980d678d4c72e3d2191a07da15150f1ab09b761792840f8c`
 
@@ -142,7 +137,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:65ae9cc833bbf04f01f45210828effdaf470eff943429ddb94d1be4ad2babb66`
 -	v2 Content-Length: 57.9 KB (57862 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:19:04 GMT
 
 #### `b4ea107dea6abcbfd79e51f8a29df19dc1c0ae3c553c205b64e8d0adb86564bd`
 
@@ -156,7 +150,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:ac2841ebb20cb633ed05d352f9ba57a63356fbd57afd250c939914372d2ffdbb`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:18:58 GMT
 
 #### `aaf78e4d1fd06f31df417943525ae3252bc9e118e0319682d0932e71c1236110`
 
@@ -170,7 +163,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:precise-20160217`
 
@@ -194,7 +186,6 @@ ADD file:1e94527a68d0fb5efa75b830710e99d8d14918467e0c3eedb2855c134419af9f in /
 -	Virtual Size: 137.6 MB (137593590 bytes)
 -	v2 Blob: `sha256:4883bf13a7132a7d7ca2a12d24f0ef956edfce21b644a804ed2b5912e0da18fe`
 -	v2 Content-Length: 44.2 MB (44172327 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:19:39 GMT
 
 #### `1aa718d1ec681dba980d678d4c72e3d2191a07da15150f1ab09b761792840f8c`
 
@@ -219,7 +210,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:65ae9cc833bbf04f01f45210828effdaf470eff943429ddb94d1be4ad2babb66`
 -	v2 Content-Length: 57.9 KB (57862 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:19:04 GMT
 
 #### `b4ea107dea6abcbfd79e51f8a29df19dc1c0ae3c553c205b64e8d0adb86564bd`
 
@@ -233,7 +223,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:ac2841ebb20cb633ed05d352f9ba57a63356fbd57afd250c939914372d2ffdbb`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:18:58 GMT
 
 #### `aaf78e4d1fd06f31df417943525ae3252bc9e118e0319682d0932e71c1236110`
 
@@ -247,7 +236,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:precise`
 
@@ -271,7 +259,6 @@ ADD file:1e94527a68d0fb5efa75b830710e99d8d14918467e0c3eedb2855c134419af9f in /
 -	Virtual Size: 137.6 MB (137593590 bytes)
 -	v2 Blob: `sha256:4883bf13a7132a7d7ca2a12d24f0ef956edfce21b644a804ed2b5912e0da18fe`
 -	v2 Content-Length: 44.2 MB (44172327 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:19:39 GMT
 
 #### `1aa718d1ec681dba980d678d4c72e3d2191a07da15150f1ab09b761792840f8c`
 
@@ -296,7 +283,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:65ae9cc833bbf04f01f45210828effdaf470eff943429ddb94d1be4ad2babb66`
 -	v2 Content-Length: 57.9 KB (57862 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:19:04 GMT
 
 #### `b4ea107dea6abcbfd79e51f8a29df19dc1c0ae3c553c205b64e8d0adb86564bd`
 
@@ -310,7 +296,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:ac2841ebb20cb633ed05d352f9ba57a63356fbd57afd250c939914372d2ffdbb`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:18:58 GMT
 
 #### `aaf78e4d1fd06f31df417943525ae3252bc9e118e0319682d0932e71c1236110`
 
@@ -324,7 +309,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:14.04.4`
 
@@ -348,7 +332,6 @@ ADD file:620b1d9842ebe18eaad59bf1f3819427cfe2fd26ccbf54d3688e01e6ac98e1e0 in /
 -	Virtual Size: 187.8 MB (187753795 bytes)
 -	v2 Blob: `sha256:a64038a0eeaa782fedb5762a37742005751e88406836d67375c1d7a438f5940e`
 -	v2 Content-Length: 65.7 MB (65687630 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:06:01 GMT
 
 #### `dbcf09c742a7231a963b6e8765c3fe4cd917df10e981e7f224fb4df475258afe`
 
@@ -373,7 +356,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ec6e7edf8a811ebaae85ecdf01664c36962f1c2c4c36e4590737b4641500906`
 -	v2 Content-Length: 71.5 KB (71476 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:20:26 GMT
 
 #### `40964da1bf475b05d38b509bc53e2304fd405af0fbfb7144157bf9aa18ebb4c8`
 
@@ -387,7 +369,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:0a5fb6c3c94b5b07376a58ee3a44b5adfa0a2074d64d584bd33b268a1c79c4c0`
 -	v2 Content-Length: 683.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:20:21 GMT
 
 #### `c29e52d44f6950f3cd33faf8d7745a552896b2a64c4c98110f92c23e6c1e0c8b`
 
@@ -401,7 +382,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:14.04`
 
@@ -425,7 +405,6 @@ ADD file:620b1d9842ebe18eaad59bf1f3819427cfe2fd26ccbf54d3688e01e6ac98e1e0 in /
 -	Virtual Size: 187.8 MB (187753795 bytes)
 -	v2 Blob: `sha256:a64038a0eeaa782fedb5762a37742005751e88406836d67375c1d7a438f5940e`
 -	v2 Content-Length: 65.7 MB (65687630 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:06:01 GMT
 
 #### `dbcf09c742a7231a963b6e8765c3fe4cd917df10e981e7f224fb4df475258afe`
 
@@ -450,7 +429,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ec6e7edf8a811ebaae85ecdf01664c36962f1c2c4c36e4590737b4641500906`
 -	v2 Content-Length: 71.5 KB (71476 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:20:26 GMT
 
 #### `40964da1bf475b05d38b509bc53e2304fd405af0fbfb7144157bf9aa18ebb4c8`
 
@@ -464,7 +442,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:0a5fb6c3c94b5b07376a58ee3a44b5adfa0a2074d64d584bd33b268a1c79c4c0`
 -	v2 Content-Length: 683.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:20:21 GMT
 
 #### `c29e52d44f6950f3cd33faf8d7745a552896b2a64c4c98110f92c23e6c1e0c8b`
 
@@ -478,7 +455,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:trusty-20160217`
 
@@ -502,7 +478,6 @@ ADD file:620b1d9842ebe18eaad59bf1f3819427cfe2fd26ccbf54d3688e01e6ac98e1e0 in /
 -	Virtual Size: 187.8 MB (187753795 bytes)
 -	v2 Blob: `sha256:a64038a0eeaa782fedb5762a37742005751e88406836d67375c1d7a438f5940e`
 -	v2 Content-Length: 65.7 MB (65687630 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:06:01 GMT
 
 #### `dbcf09c742a7231a963b6e8765c3fe4cd917df10e981e7f224fb4df475258afe`
 
@@ -527,7 +502,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ec6e7edf8a811ebaae85ecdf01664c36962f1c2c4c36e4590737b4641500906`
 -	v2 Content-Length: 71.5 KB (71476 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:20:26 GMT
 
 #### `40964da1bf475b05d38b509bc53e2304fd405af0fbfb7144157bf9aa18ebb4c8`
 
@@ -541,7 +515,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:0a5fb6c3c94b5b07376a58ee3a44b5adfa0a2074d64d584bd33b268a1c79c4c0`
 -	v2 Content-Length: 683.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:20:21 GMT
 
 #### `c29e52d44f6950f3cd33faf8d7745a552896b2a64c4c98110f92c23e6c1e0c8b`
 
@@ -555,7 +528,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:trusty`
 
@@ -579,7 +551,6 @@ ADD file:620b1d9842ebe18eaad59bf1f3819427cfe2fd26ccbf54d3688e01e6ac98e1e0 in /
 -	Virtual Size: 187.8 MB (187753795 bytes)
 -	v2 Blob: `sha256:a64038a0eeaa782fedb5762a37742005751e88406836d67375c1d7a438f5940e`
 -	v2 Content-Length: 65.7 MB (65687630 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:06:01 GMT
 
 #### `dbcf09c742a7231a963b6e8765c3fe4cd917df10e981e7f224fb4df475258afe`
 
@@ -604,7 +575,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ec6e7edf8a811ebaae85ecdf01664c36962f1c2c4c36e4590737b4641500906`
 -	v2 Content-Length: 71.5 KB (71476 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:20:26 GMT
 
 #### `40964da1bf475b05d38b509bc53e2304fd405af0fbfb7144157bf9aa18ebb4c8`
 
@@ -618,7 +588,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:0a5fb6c3c94b5b07376a58ee3a44b5adfa0a2074d64d584bd33b268a1c79c4c0`
 -	v2 Content-Length: 683.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:20:21 GMT
 
 #### `c29e52d44f6950f3cd33faf8d7745a552896b2a64c4c98110f92c23e6c1e0c8b`
 
@@ -632,7 +601,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:latest`
 
@@ -656,7 +624,6 @@ ADD file:620b1d9842ebe18eaad59bf1f3819427cfe2fd26ccbf54d3688e01e6ac98e1e0 in /
 -	Virtual Size: 187.8 MB (187753795 bytes)
 -	v2 Blob: `sha256:a64038a0eeaa782fedb5762a37742005751e88406836d67375c1d7a438f5940e`
 -	v2 Content-Length: 65.7 MB (65687630 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:06:01 GMT
 
 #### `dbcf09c742a7231a963b6e8765c3fe4cd917df10e981e7f224fb4df475258afe`
 
@@ -681,7 +648,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ec6e7edf8a811ebaae85ecdf01664c36962f1c2c4c36e4590737b4641500906`
 -	v2 Content-Length: 71.5 KB (71476 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:20:26 GMT
 
 #### `40964da1bf475b05d38b509bc53e2304fd405af0fbfb7144157bf9aa18ebb4c8`
 
@@ -695,7 +661,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:0a5fb6c3c94b5b07376a58ee3a44b5adfa0a2074d64d584bd33b268a1c79c4c0`
 -	v2 Content-Length: 683.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:20:21 GMT
 
 #### `c29e52d44f6950f3cd33faf8d7745a552896b2a64c4c98110f92c23e6c1e0c8b`
 
@@ -709,7 +674,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:15.10`
 
@@ -733,7 +697,6 @@ ADD file:d414ae5cf7124194a78d70e7fa1cd2ada07252e070c1204e7757c2533bc2ea6d in /
 -	Virtual Size: 135.5 MB (135544971 bytes)
 -	v2 Blob: `sha256:68fa6376ac2dfb8d0818d579a8dd753ffab7132f61a69624e13388cb8ccb64e2`
 -	v2 Content-Length: 50.7 MB (50714486 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:22:36 GMT
 
 #### `84ea6cb97c83a34a580efe2044f3f531b8f7e7c20c906ffe1e6c0e71fb835252`
 
@@ -758,7 +721,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:47e44b4a4bafcdb7e70128a8ca737a7d2c45ff8c2ed5ae9a40fd6a24cbb98efb`
 -	v2 Content-Length: 757.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:21:52 GMT
 
 #### `591d9776916c51cabb989de86be7a5475121d04f456c14df69c9d4ba5078c389`
 
@@ -772,7 +734,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1863 bytes)
 -	v2 Blob: `sha256:12f4002284f88626118ec2e235b5e9d777119b0d7a6ed34ed25c0e29c7f92773`
 -	v2 Content-Length: 679.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:21:46 GMT
 
 #### `aa01e040cd0ffb3953dfd6e1a0e8da0a186dd07156d595aea18ba25ee05fc57f`
 
@@ -786,7 +747,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:wily-20160217`
 
@@ -810,7 +770,6 @@ ADD file:d414ae5cf7124194a78d70e7fa1cd2ada07252e070c1204e7757c2533bc2ea6d in /
 -	Virtual Size: 135.5 MB (135544971 bytes)
 -	v2 Blob: `sha256:68fa6376ac2dfb8d0818d579a8dd753ffab7132f61a69624e13388cb8ccb64e2`
 -	v2 Content-Length: 50.7 MB (50714486 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:22:36 GMT
 
 #### `84ea6cb97c83a34a580efe2044f3f531b8f7e7c20c906ffe1e6c0e71fb835252`
 
@@ -835,7 +794,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:47e44b4a4bafcdb7e70128a8ca737a7d2c45ff8c2ed5ae9a40fd6a24cbb98efb`
 -	v2 Content-Length: 757.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:21:52 GMT
 
 #### `591d9776916c51cabb989de86be7a5475121d04f456c14df69c9d4ba5078c389`
 
@@ -849,7 +807,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1863 bytes)
 -	v2 Blob: `sha256:12f4002284f88626118ec2e235b5e9d777119b0d7a6ed34ed25c0e29c7f92773`
 -	v2 Content-Length: 679.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:21:46 GMT
 
 #### `aa01e040cd0ffb3953dfd6e1a0e8da0a186dd07156d595aea18ba25ee05fc57f`
 
@@ -863,7 +820,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:wily`
 
@@ -887,7 +843,6 @@ ADD file:d414ae5cf7124194a78d70e7fa1cd2ada07252e070c1204e7757c2533bc2ea6d in /
 -	Virtual Size: 135.5 MB (135544971 bytes)
 -	v2 Blob: `sha256:68fa6376ac2dfb8d0818d579a8dd753ffab7132f61a69624e13388cb8ccb64e2`
 -	v2 Content-Length: 50.7 MB (50714486 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:22:36 GMT
 
 #### `84ea6cb97c83a34a580efe2044f3f531b8f7e7c20c906ffe1e6c0e71fb835252`
 
@@ -912,7 +867,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:47e44b4a4bafcdb7e70128a8ca737a7d2c45ff8c2ed5ae9a40fd6a24cbb98efb`
 -	v2 Content-Length: 757.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:21:52 GMT
 
 #### `591d9776916c51cabb989de86be7a5475121d04f456c14df69c9d4ba5078c389`
 
@@ -926,7 +880,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1863 bytes)
 -	v2 Blob: `sha256:12f4002284f88626118ec2e235b5e9d777119b0d7a6ed34ed25c0e29c7f92773`
 -	v2 Content-Length: 679.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:21:46 GMT
 
 #### `aa01e040cd0ffb3953dfd6e1a0e8da0a186dd07156d595aea18ba25ee05fc57f`
 
@@ -940,7 +893,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:16.04`
 
@@ -964,7 +916,6 @@ ADD file:1034e2c9d4acfbb1045a0848005f3276e6562127acde034d232098cac49c100a in /
 -	Virtual Size: 118.9 MB (118898768 bytes)
 -	v2 Blob: `sha256:2a1db20354b5c975680b7d8348dc029ba566a62fc062f7de391fe9277d08026b`
 -	v2 Content-Length: 47.7 MB (47742043 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:23:33 GMT
 
 #### `6f896eb28998201517e67110cc8dc1aafb3c4db33d845c1b2ce0a00fbc8433fd`
 
@@ -989,7 +940,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:173848b0c856caea5b90a0a6f94e1044b5e24b1d1b92abc02c6177adcd6b2478`
 -	v2 Content-Length: 758.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:23:02 GMT
 
 #### `cc8d62edf59bd867f31e6e545ae046ced3e82aba81f665944608c3d1d1b0c51e`
 
@@ -1003,7 +953,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1c5732fa568fd24a327330ab20bb1e49ad461bcc09b22996a852b11ea687cd2d`
 -	v2 Content-Length: 683.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:22:58 GMT
 
 #### `a3369c5c4b691550cf951f86e08d86a81db78a788dd7123da5e9926b7f294d05`
 
@@ -1017,7 +966,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:xenial-20160217.2`
 
@@ -1041,7 +989,6 @@ ADD file:1034e2c9d4acfbb1045a0848005f3276e6562127acde034d232098cac49c100a in /
 -	Virtual Size: 118.9 MB (118898768 bytes)
 -	v2 Blob: `sha256:2a1db20354b5c975680b7d8348dc029ba566a62fc062f7de391fe9277d08026b`
 -	v2 Content-Length: 47.7 MB (47742043 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:23:33 GMT
 
 #### `6f896eb28998201517e67110cc8dc1aafb3c4db33d845c1b2ce0a00fbc8433fd`
 
@@ -1066,7 +1013,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:173848b0c856caea5b90a0a6f94e1044b5e24b1d1b92abc02c6177adcd6b2478`
 -	v2 Content-Length: 758.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:23:02 GMT
 
 #### `cc8d62edf59bd867f31e6e545ae046ced3e82aba81f665944608c3d1d1b0c51e`
 
@@ -1080,7 +1026,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1c5732fa568fd24a327330ab20bb1e49ad461bcc09b22996a852b11ea687cd2d`
 -	v2 Content-Length: 683.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:22:58 GMT
 
 #### `a3369c5c4b691550cf951f86e08d86a81db78a788dd7123da5e9926b7f294d05`
 
@@ -1094,7 +1039,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:xenial`
 
@@ -1118,7 +1062,6 @@ ADD file:1034e2c9d4acfbb1045a0848005f3276e6562127acde034d232098cac49c100a in /
 -	Virtual Size: 118.9 MB (118898768 bytes)
 -	v2 Blob: `sha256:2a1db20354b5c975680b7d8348dc029ba566a62fc062f7de391fe9277d08026b`
 -	v2 Content-Length: 47.7 MB (47742043 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 16:23:33 GMT
 
 #### `6f896eb28998201517e67110cc8dc1aafb3c4db33d845c1b2ce0a00fbc8433fd`
 
@@ -1143,7 +1086,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:173848b0c856caea5b90a0a6f94e1044b5e24b1d1b92abc02c6177adcd6b2478`
 -	v2 Content-Length: 758.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:23:02 GMT
 
 #### `cc8d62edf59bd867f31e6e545ae046ced3e82aba81f665944608c3d1d1b0c51e`
 
@@ -1157,7 +1099,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1c5732fa568fd24a327330ab20bb1e49ad461bcc09b22996a852b11ea687cd2d`
 -	v2 Content-Length: 683.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 16:22:58 GMT
 
 #### `a3369c5c4b691550cf951f86e08d86a81db78a788dd7123da5e9926b7f294d05`
 
@@ -1171,4 +1112,3 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

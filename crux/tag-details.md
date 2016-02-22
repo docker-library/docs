@@ -8,7 +8,7 @@
 ## `crux:latest`
 
 ```console
-$ docker pull library/crux@sha256:f8f6605f25e99d3c1cebfda6e55f3c2c6403231059c6ac180172be7cd07b256e
+$ docker pull library/crux@sha256:c799bb524e4841949192c37024464e4d79291d9448b9635fcbf8b43b15de2aa8
 ```
 
 -	Total Virtual Size: 341.7 MB (341729815 bytes)
@@ -27,7 +27,6 @@ MAINTAINER James Mills, prologic at shortcircuit dot net dot au
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `638bccd2da44cbac9768f1f955adf7e7df4a717b4f902951e9076ce9fcd3f3c3`
 
@@ -41,7 +40,6 @@ ADD file:e60e2e7a8739aba25a581ced1031f5e6e8eaa6ada8a207fbdd3c27fc719b7840 in /
 -	Virtual Size: 341.7 MB (341729815 bytes)
 -	v2 Blob: `sha256:4a073de8a536a568bbf8d0f30c6946d4aa0e6f951d8791f710e22e1eec6143e0`
 -	v2 Content-Length: 122.3 MB (122252467 bytes)
--	v2 Last-Modified: Mon, 31 Aug 2015 16:55:18 GMT
 
 #### `07631e5f17e1f1be38339684ac125125f48bebbb08ca9c8d81da1fe73bb846bc`
 
@@ -55,12 +53,11 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `crux:3.1`
 
 ```console
-$ docker pull library/crux@sha256:f9a92de29bd88987d74192b70f9f81fddcc92f033f6c19869655858fe8a9693a
+$ docker pull library/crux@sha256:80ecd7037af09b1e8e8ffd744d51632f6ab5e5b4a810c23f7491011d9b8b1451
 ```
 
 -	Total Virtual Size: 341.7 MB (341729815 bytes)
@@ -79,7 +76,6 @@ MAINTAINER James Mills, prologic at shortcircuit dot net dot au
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `638bccd2da44cbac9768f1f955adf7e7df4a717b4f902951e9076ce9fcd3f3c3`
 
@@ -93,7 +89,6 @@ ADD file:e60e2e7a8739aba25a581ced1031f5e6e8eaa6ada8a207fbdd3c27fc719b7840 in /
 -	Virtual Size: 341.7 MB (341729815 bytes)
 -	v2 Blob: `sha256:4a073de8a536a568bbf8d0f30c6946d4aa0e6f951d8791f710e22e1eec6143e0`
 -	v2 Content-Length: 122.3 MB (122252467 bytes)
--	v2 Last-Modified: Mon, 31 Aug 2015 16:55:18 GMT
 
 #### `07631e5f17e1f1be38339684ac125125f48bebbb08ca9c8d81da1fe73bb846bc`
 
@@ -107,4 +102,3 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

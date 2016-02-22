@@ -12,11 +12,11 @@
 ## `opensuse:13.2`
 
 ```console
-$ docker pull library/opensuse@sha256:0c56bb4b0c106768c4a594071b9a0291213070a89da31b1b3911674278a023f4
+$ docker pull library/opensuse@sha256:41ed51f49aa38d6dd2c5e360a9224a163088469d1742e92a5af2dc1ae4381042
 ```
 
--	Total Virtual Size: 94.4 MB (94447000 bytes)
--	Total v2 Content-Length: 37.1 MB (37148800 bytes)
+-	Total Virtual Size: 96.2 MB (96192671 bytes)
+-	Total v2 Content-Length: 38.1 MB (38089159 bytes)
 
 ### Layers (2)
 
@@ -31,30 +31,28 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `91f72064ea1fd2153db0f713746b18e3971b4e1d007f2bcacd8af5092fb03888`
+#### `52921bf4b389c905331c943cb19fc59419b5a26cf87411ec4ff766843868bed7`
 
 ```dockerfile
-ADD file:40bc992ae1d85978d2b4c22552d889fbef77044b4635009e5f634dfe43c15c03 in /
+ADD file:ba5ad807bbc7a6cb070d664f14281d877858636db20f782cf0df35fc696434b8 in /
 ```
 
--	Created: Wed, 09 Dec 2015 17:32:52 GMT
+-	Created: Fri, 19 Feb 2016 20:07:43 GMT
 -	Parent Layer: `5b8dd08af89b84564b09fc0dfe96cfdfee0ff650d50cf4f3683c6367a1295317`
--	Docker Version: 1.8.3
--	Virtual Size: 94.4 MB (94447000 bytes)
--	v2 Blob: `sha256:e8cff6015154bc7cbc6bc0fa67062485fdf2a54622b6fda48c3e6affd313b70e`
--	v2 Content-Length: 37.1 MB (37148768 bytes)
--	v2 Last-Modified: Wed, 09 Dec 2015 17:34:10 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 96.2 MB (96192671 bytes)
+-	v2 Blob: `sha256:85c0465a2f94929f240d63fe036c644aa8ca66ba9b091d57fc6dc6ea8f06ee53`
+-	v2 Content-Length: 38.1 MB (38089127 bytes)
 
 ## `opensuse:harlequin`
 
 ```console
-$ docker pull library/opensuse@sha256:169b9e7c077b96fe7d5acce7f3573bca56b7a9342b9e06e714d842263067877c
+$ docker pull library/opensuse@sha256:5c0da3827273f3f2ffadd3ece4cc2d5f36d108b2ccc20da8f06ef5a2afe553d4
 ```
 
--	Total Virtual Size: 94.4 MB (94447000 bytes)
--	Total v2 Content-Length: 37.1 MB (37148800 bytes)
+-	Total Virtual Size: 96.2 MB (96192671 bytes)
+-	Total v2 Content-Length: 38.1 MB (38089159 bytes)
 
 ### Layers (2)
 
@@ -69,30 +67,28 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `91f72064ea1fd2153db0f713746b18e3971b4e1d007f2bcacd8af5092fb03888`
+#### `52921bf4b389c905331c943cb19fc59419b5a26cf87411ec4ff766843868bed7`
 
 ```dockerfile
-ADD file:40bc992ae1d85978d2b4c22552d889fbef77044b4635009e5f634dfe43c15c03 in /
+ADD file:ba5ad807bbc7a6cb070d664f14281d877858636db20f782cf0df35fc696434b8 in /
 ```
 
--	Created: Wed, 09 Dec 2015 17:32:52 GMT
+-	Created: Fri, 19 Feb 2016 20:07:43 GMT
 -	Parent Layer: `5b8dd08af89b84564b09fc0dfe96cfdfee0ff650d50cf4f3683c6367a1295317`
--	Docker Version: 1.8.3
--	Virtual Size: 94.4 MB (94447000 bytes)
--	v2 Blob: `sha256:e8cff6015154bc7cbc6bc0fa67062485fdf2a54622b6fda48c3e6affd313b70e`
--	v2 Content-Length: 37.1 MB (37148768 bytes)
--	v2 Last-Modified: Wed, 09 Dec 2015 17:34:10 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 96.2 MB (96192671 bytes)
+-	v2 Blob: `sha256:85c0465a2f94929f240d63fe036c644aa8ca66ba9b091d57fc6dc6ea8f06ee53`
+-	v2 Content-Length: 38.1 MB (38089127 bytes)
 
 ## `opensuse:42.1`
 
 ```console
-$ docker pull library/opensuse@sha256:a52a1c40af0ce96cba96818175e712f58d0c203f03e37f133b04a67a1ddae1de
+$ docker pull library/opensuse@sha256:4bea7eaa7160aa668be8eb53956c11fe49d79f90f27a98b36ea0706e55750066
 ```
 
--	Total Virtual Size: 96.2 MB (96150161 bytes)
--	Total v2 Content-Length: 37.0 MB (37012191 bytes)
+-	Total Virtual Size: 97.6 MB (97643440 bytes)
+-	Total v2 Content-Length: 37.9 MB (37863345 bytes)
 
 ### Layers (2)
 
@@ -107,30 +103,28 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e7802cfc85c1a572faecd5b3e5bd88aa2e58ce983175edaf520bb716570fd742`
+#### `ea4b2761326c1a6e21f8053c162450ebee57c73753b72beebdbbc8d6754179bb`
 
 ```dockerfile
-ADD file:f15847ff959641baf625ece3c784459227363b5ea9506194788bda4023c0484e in /
+ADD file:98737b968b157b30b42bd50876a21db539938705ef7309bcf6a844b39c2ca4f8 in /
 ```
 
--	Created: Wed, 09 Dec 2015 17:33:12 GMT
+-	Created: Thu, 18 Feb 2016 23:33:59 GMT
 -	Parent Layer: `5b8dd08af89b84564b09fc0dfe96cfdfee0ff650d50cf4f3683c6367a1295317`
--	Docker Version: 1.8.3
--	Virtual Size: 96.2 MB (96150161 bytes)
--	v2 Blob: `sha256:3086d1e58340852fb5e585674d21ffa53c7ff0ceb1c3e3b49e7075f74904fa39`
--	v2 Content-Length: 37.0 MB (37012159 bytes)
--	v2 Last-Modified: Wed, 09 Dec 2015 17:35:07 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 97.6 MB (97643440 bytes)
+-	v2 Blob: `sha256:fb4c7b23849522871b9478da2f3c42faaac10657958abccd2642d876a6644a77`
+-	v2 Content-Length: 37.9 MB (37863313 bytes)
 
 ## `opensuse:leap`
 
 ```console
-$ docker pull library/opensuse@sha256:100e4a787565cae1fae296228ab595cc90b74254e6636b4bc7c5e63f4a0c61cb
+$ docker pull library/opensuse@sha256:0e35a9f006c99b0589c7b1125caf65b44d7b9d6e0139749592ac153f8f08c3b1
 ```
 
--	Total Virtual Size: 96.2 MB (96150161 bytes)
--	Total v2 Content-Length: 37.0 MB (37012191 bytes)
+-	Total Virtual Size: 97.6 MB (97643440 bytes)
+-	Total v2 Content-Length: 37.9 MB (37863345 bytes)
 
 ### Layers (2)
 
@@ -145,30 +139,28 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e7802cfc85c1a572faecd5b3e5bd88aa2e58ce983175edaf520bb716570fd742`
+#### `ea4b2761326c1a6e21f8053c162450ebee57c73753b72beebdbbc8d6754179bb`
 
 ```dockerfile
-ADD file:f15847ff959641baf625ece3c784459227363b5ea9506194788bda4023c0484e in /
+ADD file:98737b968b157b30b42bd50876a21db539938705ef7309bcf6a844b39c2ca4f8 in /
 ```
 
--	Created: Wed, 09 Dec 2015 17:33:12 GMT
+-	Created: Thu, 18 Feb 2016 23:33:59 GMT
 -	Parent Layer: `5b8dd08af89b84564b09fc0dfe96cfdfee0ff650d50cf4f3683c6367a1295317`
--	Docker Version: 1.8.3
--	Virtual Size: 96.2 MB (96150161 bytes)
--	v2 Blob: `sha256:3086d1e58340852fb5e585674d21ffa53c7ff0ceb1c3e3b49e7075f74904fa39`
--	v2 Content-Length: 37.0 MB (37012159 bytes)
--	v2 Last-Modified: Wed, 09 Dec 2015 17:35:07 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 97.6 MB (97643440 bytes)
+-	v2 Blob: `sha256:fb4c7b23849522871b9478da2f3c42faaac10657958abccd2642d876a6644a77`
+-	v2 Content-Length: 37.9 MB (37863313 bytes)
 
 ## `opensuse:latest`
 
 ```console
-$ docker pull library/opensuse@sha256:23d1b732bf1238ab83ae73500b509726d2b225363212aac43e6a6de7b81e9693
+$ docker pull library/opensuse@sha256:ce43183598320110b4bd502531901d2cff721d66e9461d47cb4cbb8060d1b4cf
 ```
 
--	Total Virtual Size: 96.2 MB (96150161 bytes)
--	Total v2 Content-Length: 37.0 MB (37012191 bytes)
+-	Total Virtual Size: 97.6 MB (97643440 bytes)
+-	Total v2 Content-Length: 37.9 MB (37863345 bytes)
 
 ### Layers (2)
 
@@ -183,30 +175,28 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e7802cfc85c1a572faecd5b3e5bd88aa2e58ce983175edaf520bb716570fd742`
+#### `ea4b2761326c1a6e21f8053c162450ebee57c73753b72beebdbbc8d6754179bb`
 
 ```dockerfile
-ADD file:f15847ff959641baf625ece3c784459227363b5ea9506194788bda4023c0484e in /
+ADD file:98737b968b157b30b42bd50876a21db539938705ef7309bcf6a844b39c2ca4f8 in /
 ```
 
--	Created: Wed, 09 Dec 2015 17:33:12 GMT
+-	Created: Thu, 18 Feb 2016 23:33:59 GMT
 -	Parent Layer: `5b8dd08af89b84564b09fc0dfe96cfdfee0ff650d50cf4f3683c6367a1295317`
--	Docker Version: 1.8.3
--	Virtual Size: 96.2 MB (96150161 bytes)
--	v2 Blob: `sha256:3086d1e58340852fb5e585674d21ffa53c7ff0ceb1c3e3b49e7075f74904fa39`
--	v2 Content-Length: 37.0 MB (37012159 bytes)
--	v2 Last-Modified: Wed, 09 Dec 2015 17:35:07 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 97.6 MB (97643440 bytes)
+-	v2 Blob: `sha256:fb4c7b23849522871b9478da2f3c42faaac10657958abccd2642d876a6644a77`
+-	v2 Content-Length: 37.9 MB (37863313 bytes)
 
 ## `opensuse:tumbleweed`
 
 ```console
-$ docker pull library/opensuse@sha256:36f3ab69012fa53b6c8f56d8844d665217393f557dcf5a2b13d531c52e8167eb
+$ docker pull library/opensuse@sha256:967b7320e9bd0cec2184b045c1a635480176987ba78266694c7d936776fa8f36
 ```
 
--	Total Virtual Size: 116.1 MB (116077753 bytes)
--	Total v2 Content-Length: 39.9 MB (39916785 bytes)
+-	Total Virtual Size: 148.5 MB (148453032 bytes)
+-	Total v2 Content-Length: 53.9 MB (53924167 bytes)
 
 ### Layers (3)
 
@@ -221,32 +211,29 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2e4a0481e645ec5cf98657ee559d47d772b1f031d30346be30e425aa30218b54`
+#### `3b863d88eee0ae63b0fe419cf02b6e021605f6cb080faf4f04ab84a7429feaf6`
 
 ```dockerfile
-ADD file:9268988b27d991396ba1930cf2e926831955060f58c5a5aa8069aaf508bd62f4 in /
+ADD file:40caa9259bae23265fa5c0a87cc423032bd8bd22b4f676cd4fee18d01a207e94 in /
 ```
 
--	Created: Wed, 09 Dec 2015 17:33:41 GMT
+-	Created: Thu, 18 Feb 2016 23:34:22 GMT
 -	Parent Layer: `5b8dd08af89b84564b09fc0dfe96cfdfee0ff650d50cf4f3683c6367a1295317`
--	Docker Version: 1.8.3
--	Virtual Size: 115.7 MB (115730395 bytes)
--	v2 Blob: `sha256:cdc4cad44a262f565b2439886c7a6d474a77efdc59a413cb42c7d10b822dd867`
--	v2 Content-Length: 39.8 MB (39805393 bytes)
--	v2 Last-Modified: Wed, 09 Dec 2015 17:36:10 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 148.1 MB (148079367 bytes)
+-	v2 Blob: `sha256:d5e4ba3c480ccd897956cc407376de60e7dde22dafac1b15f25747aed1c30564`
+-	v2 Content-Length: 53.8 MB (53801292 bytes)
 
-#### `becca405b8983e053b9b19704046aa79cbecfde2b8c3953ff3cbcde0bf7c2091`
+#### `c2076039ba3c4d7e930547348fad10f8908d7da37ea71390c5b74e696be6ce01`
 
 ```dockerfile
 RUN zypper -n ar -f http://download.opensuse.org/factory/repo/oss/ OSS
 ```
 
--	Created: Wed, 09 Dec 2015 17:33:47 GMT
--	Parent Layer: `2e4a0481e645ec5cf98657ee559d47d772b1f031d30346be30e425aa30218b54`
--	Docker Version: 1.8.3
--	Virtual Size: 347.4 KB (347358 bytes)
--	v2 Blob: `sha256:310d21d484f3a1a21b3cd609411e5245e8a61a08b8c7da73f90163e962250d5b`
--	v2 Content-Length: 111.4 KB (111360 bytes)
--	v2 Last-Modified: Wed, 09 Dec 2015 17:35:47 GMT
+-	Created: Thu, 18 Feb 2016 23:34:28 GMT
+-	Parent Layer: `3b863d88eee0ae63b0fe419cf02b6e021605f6cb080faf4f04ab84a7429feaf6`
+-	Docker Version: 1.9.1
+-	Virtual Size: 373.7 KB (373665 bytes)
+-	v2 Blob: `sha256:7d7262a3770d4d57afd014179bdf2f7dcd6c5bde194ca4a2a3fca4ac6d5eaeed`
+-	v2 Content-Length: 122.8 KB (122843 bytes)
