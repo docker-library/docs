@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.7.6`, `0.7`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/1e4098ce8840142afb2b95e63acdfc7aa329b61b/Dockerfile)
+-	[`0.7.8`, `0.7`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/bb7274f3cc712ecc1997fd96b5994d08af4ebf46/Dockerfile)
 
-[![](https://badge.imagelayers.io/ghost:latest.svg)](https://imagelayers.io/?images=ghost:0.7.6)
+[![](https://badge.imagelayers.io/ghost:latest.svg)](https://imagelayers.io/?images=ghost:0.7.8)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/ghost`)](https://github.com/docker-library/official-images/blob/master/library/ghost). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
