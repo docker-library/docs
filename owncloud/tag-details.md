@@ -3561,6 +3561,7 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33528858 bytes)
 -	v2 Blob: `sha256:fdd376e5f49ce2c48681d5927325176212e6f3227fa65d36b4f94a8ba09bbcea`
 -	v2 Content-Length: 9.0 MB (9025254 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 08:14:35 GMT
 
 #### `77f9a52aa171eae9fb820c0d81ae24b64ef44a3b9f583ec52f6ee1086895a971`
 
@@ -4029,6 +4030,7 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33528858 bytes)
 -	v2 Blob: `sha256:fdd376e5f49ce2c48681d5927325176212e6f3227fa65d36b4f94a8ba09bbcea`
 -	v2 Content-Length: 9.0 MB (9025254 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 08:14:35 GMT
 
 #### `77f9a52aa171eae9fb820c0d81ae24b64ef44a3b9f583ec52f6ee1086895a971`
 
@@ -4497,6 +4499,7 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33528858 bytes)
 -	v2 Blob: `sha256:fdd376e5f49ce2c48681d5927325176212e6f3227fa65d36b4f94a8ba09bbcea`
 -	v2 Content-Length: 9.0 MB (9025254 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 08:14:35 GMT
 
 #### `77f9a52aa171eae9fb820c0d81ae24b64ef44a3b9f583ec52f6ee1086895a971`
 
@@ -7129,6 +7132,7 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33528858 bytes)
 -	v2 Blob: `sha256:fdd376e5f49ce2c48681d5927325176212e6f3227fa65d36b4f94a8ba09bbcea`
 -	v2 Content-Length: 9.0 MB (9025254 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 08:14:35 GMT
 
 #### `77f9a52aa171eae9fb820c0d81ae24b64ef44a3b9f583ec52f6ee1086895a971`
 
@@ -7611,6 +7615,7 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33528858 bytes)
 -	v2 Blob: `sha256:fdd376e5f49ce2c48681d5927325176212e6f3227fa65d36b4f94a8ba09bbcea`
 -	v2 Content-Length: 9.0 MB (9025254 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 08:14:35 GMT
 
 #### `77f9a52aa171eae9fb820c0d81ae24b64ef44a3b9f583ec52f6ee1086895a971`
 
