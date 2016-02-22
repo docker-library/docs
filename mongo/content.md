@@ -40,6 +40,41 @@ Just add the `--storageEngine` argument if you want to use the WiredTiger storag
 $ docker run --name some-mongo -d mongo --storageEngine wiredTiger
 ```
 
+### Authentication and Authorization
+
+MongoDB does not require authentication by default, but it can be configured to do so. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.org/manual/core/authentication/) and [authorization](https://docs.mongodb.org/manual/core/authorization/) in more detail.
+
+#### Start the Database
+
+```console
+$ docker run --name some-mongo -d mongo --auth
+```
+
+#### Add the Initial Admin User
+
+```console
+$ docker exec -it some-mongo mongo admin
+connecting to: admin
+> db.createUser({ user: 'jsmith', pwd: 'some-initial-password', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
+Successfully added user: {
+	"user" : "jsmith",
+	"roles" : [
+		{
+			"role" : "userAdminAnyDatabase",
+			"db" : "admin"
+		}
+	]
+}
+```
+
+#### Connect Externally
+
+```console
+$ docker run -it --rm --link some-mongo:mongo mongo mongo -u jsmith -p some-initial-password --authenticationDatabase admin some-mongo/some-db
+> db.getName();
+some-db
+```
+
 ## Where to Store Data
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `%%REPO%%` images to familiarize themselves with the options available, including:
