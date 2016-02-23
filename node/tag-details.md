@@ -38,20 +38,20 @@
 -	[`node:4.3-wheezy`](#node43-wheezy)
 -	[`node:4-wheezy`](#node4-wheezy)
 -	[`node:argon-wheezy`](#nodeargon-wheezy)
--	[`node:5.6.0`](#node560)
--	[`node:5.6`](#node56)
+-	[`node:5.7.0`](#node570)
+-	[`node:5.7`](#node57)
 -	[`node:5`](#node5)
 -	[`node:latest`](#nodelatest)
--	[`node:5.6.0-onbuild`](#node560-onbuild)
--	[`node:5.6-onbuild`](#node56-onbuild)
+-	[`node:5.7.0-onbuild`](#node570-onbuild)
+-	[`node:5.7-onbuild`](#node57-onbuild)
 -	[`node:5-onbuild`](#node5-onbuild)
 -	[`node:onbuild`](#nodeonbuild)
--	[`node:5.6.0-slim`](#node560-slim)
--	[`node:5.6-slim`](#node56-slim)
+-	[`node:5.7.0-slim`](#node570-slim)
+-	[`node:5.7-slim`](#node57-slim)
 -	[`node:5-slim`](#node5-slim)
 -	[`node:slim`](#nodeslim)
--	[`node:5.6.0-wheezy`](#node560-wheezy)
--	[`node:5.6-wheezy`](#node56-wheezy)
+-	[`node:5.7.0-wheezy`](#node570-wheezy)
+-	[`node:5.7-wheezy`](#node57-wheezy)
 -	[`node:5-wheezy`](#node5-wheezy)
 -	[`node:wheezy`](#nodewheezy)
 
@@ -7105,14 +7105,14 @@ CMD ["node"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-## `node:5.6.0`
+## `node:5.7.0`
 
 ```console
-$ docker pull library/node@sha256:efdd15393df6574213c3efdfedf2040e6d9bb6715304573954ce05955642c59e
+$ docker pull library/node@sha256:b7feb8c8ee504bf442b9c03abe6b96c5356ad8ede9fedf33a8232270ac34a61d
 ```
 
--	Total Virtual Size: 644.3 MB (644288550 bytes)
--	Total v2 Content-Length: 253.3 MB (253265087 bytes)
+-	Total Virtual Size: 644.3 MB (644271150 bytes)
+-	Total v2 Content-Length: 253.3 MB (253276607 bytes)
 
 ### Layers (10)
 
@@ -7261,53 +7261,53 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+#### `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:20 GMT
+-	Created: Tue, 23 Feb 2016 20:32:55 GMT
 -	Parent Layer: `f967d5769a5ff9b6964fddbf7dadfb7276d9ff1ddc6a0928c74884e6f4fd3d47`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+#### `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:25 GMT
--	Parent Layer: `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+-	Created: Tue, 23 Feb 2016 20:33:01 GMT
+-	Parent Layer: `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:ad86930c50cb92417aafefcef1dca426fef8f5ac72fe98ad36d9442ca17ea642`
--	v2 Content-Length: 12.2 MB (12242973 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:e2b4ae7488321bc796a9af578e67e188811b466fc00e6d5773579a927a45217a`
+-	v2 Content-Length: 12.3 MB (12254493 bytes)
 
-#### `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+#### `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:26 GMT
--	Parent Layer: `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+-	Created: Tue, 23 Feb 2016 20:33:03 GMT
+-	Parent Layer: `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-## `node:5.6`
+## `node:5.7`
 
 ```console
-$ docker pull library/node@sha256:cedb4753fa2cdab779247e457378c6b4271483d643d9d078241622d42c162e6e
+$ docker pull library/node@sha256:0a9ee4f7f99f2ae848d3c9b01349a4a07142182e73deadd8324f275b78634e1b
 ```
 
--	Total Virtual Size: 644.3 MB (644288550 bytes)
--	Total v2 Content-Length: 253.3 MB (253265087 bytes)
+-	Total Virtual Size: 644.3 MB (644271150 bytes)
+-	Total v2 Content-Length: 253.3 MB (253276607 bytes)
 
 ### Layers (10)
 
@@ -7456,40 +7456,40 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+#### `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:20 GMT
+-	Created: Tue, 23 Feb 2016 20:32:55 GMT
 -	Parent Layer: `f967d5769a5ff9b6964fddbf7dadfb7276d9ff1ddc6a0928c74884e6f4fd3d47`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+#### `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:25 GMT
--	Parent Layer: `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+-	Created: Tue, 23 Feb 2016 20:33:01 GMT
+-	Parent Layer: `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:ad86930c50cb92417aafefcef1dca426fef8f5ac72fe98ad36d9442ca17ea642`
--	v2 Content-Length: 12.2 MB (12242973 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:e2b4ae7488321bc796a9af578e67e188811b466fc00e6d5773579a927a45217a`
+-	v2 Content-Length: 12.3 MB (12254493 bytes)
 
-#### `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+#### `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:26 GMT
--	Parent Layer: `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+-	Created: Tue, 23 Feb 2016 20:33:03 GMT
+-	Parent Layer: `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -7498,11 +7498,11 @@ CMD ["node"]
 ## `node:5`
 
 ```console
-$ docker pull library/node@sha256:a637bc86b46cb157fb454c78f52b8e0c3d1a64280ed3ea36ed142f750be1d91c
+$ docker pull library/node@sha256:8568cd7f7651caa755258bb0e17f531bb18ba8c13c5062220284eb12342b046a
 ```
 
--	Total Virtual Size: 644.3 MB (644288550 bytes)
--	Total v2 Content-Length: 253.3 MB (253265087 bytes)
+-	Total Virtual Size: 644.3 MB (644271150 bytes)
+-	Total v2 Content-Length: 253.3 MB (253276607 bytes)
 
 ### Layers (10)
 
@@ -7651,40 +7651,40 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+#### `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:20 GMT
+-	Created: Tue, 23 Feb 2016 20:32:55 GMT
 -	Parent Layer: `f967d5769a5ff9b6964fddbf7dadfb7276d9ff1ddc6a0928c74884e6f4fd3d47`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+#### `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:25 GMT
--	Parent Layer: `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+-	Created: Tue, 23 Feb 2016 20:33:01 GMT
+-	Parent Layer: `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:ad86930c50cb92417aafefcef1dca426fef8f5ac72fe98ad36d9442ca17ea642`
--	v2 Content-Length: 12.2 MB (12242973 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:e2b4ae7488321bc796a9af578e67e188811b466fc00e6d5773579a927a45217a`
+-	v2 Content-Length: 12.3 MB (12254493 bytes)
 
-#### `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+#### `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:26 GMT
--	Parent Layer: `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+-	Created: Tue, 23 Feb 2016 20:33:03 GMT
+-	Parent Layer: `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -7693,11 +7693,11 @@ CMD ["node"]
 ## `node:latest`
 
 ```console
-$ docker pull library/node@sha256:9ff3bc4ab9d8f825446b2fe31bc8eba358eb47e258ae6042b4fdbf9194e30f07
+$ docker pull library/node@sha256:c1dc1fccbd5b2275534e05fb2c293316241057066d2c26b5db6bc3b3dd8269be
 ```
 
--	Total Virtual Size: 644.3 MB (644288550 bytes)
--	Total v2 Content-Length: 253.3 MB (253265087 bytes)
+-	Total Virtual Size: 644.3 MB (644271150 bytes)
+-	Total v2 Content-Length: 253.3 MB (253276607 bytes)
 
 ### Layers (10)
 
@@ -7846,53 +7846,53 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+#### `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:20 GMT
+-	Created: Tue, 23 Feb 2016 20:32:55 GMT
 -	Parent Layer: `f967d5769a5ff9b6964fddbf7dadfb7276d9ff1ddc6a0928c74884e6f4fd3d47`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+#### `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:25 GMT
--	Parent Layer: `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+-	Created: Tue, 23 Feb 2016 20:33:01 GMT
+-	Parent Layer: `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:ad86930c50cb92417aafefcef1dca426fef8f5ac72fe98ad36d9442ca17ea642`
--	v2 Content-Length: 12.2 MB (12242973 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:e2b4ae7488321bc796a9af578e67e188811b466fc00e6d5773579a927a45217a`
+-	v2 Content-Length: 12.3 MB (12254493 bytes)
 
-#### `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+#### `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:26 GMT
--	Parent Layer: `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+-	Created: Tue, 23 Feb 2016 20:33:03 GMT
+-	Parent Layer: `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-## `node:5.6.0-onbuild`
+## `node:5.7.0-onbuild`
 
 ```console
-$ docker pull library/node@sha256:f231b21d6d1e2d3bb0296fab347a2dffc27226ba5f3fd0a53d4e6554190ad209
+$ docker pull library/node@sha256:59891a43818a51dd36bff08223d26c033afb260259b1b4198c5b8375b5f646da
 ```
 
--	Total Virtual Size: 644.3 MB (644288550 bytes)
--	Total v2 Content-Length: 253.3 MB (253265373 bytes)
+-	Total Virtual Size: 644.3 MB (644271150 bytes)
+-	Total v2 Content-Length: 253.3 MB (253276893 bytes)
 
 ### Layers (16)
 
@@ -8041,131 +8041,131 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+#### `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:20 GMT
+-	Created: Tue, 23 Feb 2016 20:32:55 GMT
 -	Parent Layer: `f967d5769a5ff9b6964fddbf7dadfb7276d9ff1ddc6a0928c74884e6f4fd3d47`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+#### `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:25 GMT
--	Parent Layer: `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+-	Created: Tue, 23 Feb 2016 20:33:01 GMT
+-	Parent Layer: `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:ad86930c50cb92417aafefcef1dca426fef8f5ac72fe98ad36d9442ca17ea642`
--	v2 Content-Length: 12.2 MB (12242973 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:e2b4ae7488321bc796a9af578e67e188811b466fc00e6d5773579a927a45217a`
+-	v2 Content-Length: 12.3 MB (12254493 bytes)
 
-#### `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+#### `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:26 GMT
--	Parent Layer: `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+-	Created: Tue, 23 Feb 2016 20:33:03 GMT
+-	Parent Layer: `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `15c21d46c6316285e835c3d72463e7429fd9d02294478f45c9df10c8e72a0233`
+#### `bc3eca27ff2afa4c15e3c9478ab407907514fe483277e5cbb98579369298ccf1`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:07 GMT
--	Parent Layer: `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+-	Created: Tue, 23 Feb 2016 20:33:41 GMT
+-	Parent Layer: `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:e44fdcdacd94c7e201770465206e294b01be495861685ed842fb4ea4acfa0ab7`
+-	v2 Blob: `sha256:f590d0b9416064d194d28f023cb907a5d973efffc848653e6ea309906b1b80b8`
 -	v2 Content-Length: 126.0 B
 
-#### `dbf27f7b6f65392c38b3f40ab6815387878f692dfc823e008a1a1d470a96f44e`
+#### `02c339011555cbc37777d1a97ef5f0329b0dc143f7166b97e66529df00e3d662`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:08 GMT
--	Parent Layer: `15c21d46c6316285e835c3d72463e7429fd9d02294478f45c9df10c8e72a0233`
+-	Created: Tue, 23 Feb 2016 20:33:42 GMT
+-	Parent Layer: `bc3eca27ff2afa4c15e3c9478ab407907514fe483277e5cbb98579369298ccf1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `0dd479d9a5a40be56dea49e75380b2c0bfec05b6019f5e7993ddb1f35637927b`
+#### `454880cf34c6d03d814214a09335e67f9cf848de7c52d96d55ad8403b88528b3`
 
 ```dockerfile
 ONBUILD COPY package.json /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:09 GMT
--	Parent Layer: `dbf27f7b6f65392c38b3f40ab6815387878f692dfc823e008a1a1d470a96f44e`
+-	Created: Tue, 23 Feb 2016 20:33:42 GMT
+-	Parent Layer: `02c339011555cbc37777d1a97ef5f0329b0dc143f7166b97e66529df00e3d662`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f54aeda5ef44e58e8a237a2a8f803fe19c71b29acdcc8e235829d0f89f219586`
+#### `6255b58dc63387b5d3d00d2cb248875f5f6bfcfb8111773e7fd9acb625c59e96`
 
 ```dockerfile
 ONBUILD RUN npm install
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:09 GMT
--	Parent Layer: `0dd479d9a5a40be56dea49e75380b2c0bfec05b6019f5e7993ddb1f35637927b`
+-	Created: Tue, 23 Feb 2016 20:33:43 GMT
+-	Parent Layer: `454880cf34c6d03d814214a09335e67f9cf848de7c52d96d55ad8403b88528b3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a0d0b84550e5a6b0637d99d6d0087db1f1b524ff0b14cf121181eea66cadcbf2`
+#### `7b0a1816f10e87afde8bad0dde726ebacceaef5aa7ca8ecf8127d40a02aec47f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:10 GMT
--	Parent Layer: `f54aeda5ef44e58e8a237a2a8f803fe19c71b29acdcc8e235829d0f89f219586`
+-	Created: Tue, 23 Feb 2016 20:33:44 GMT
+-	Parent Layer: `6255b58dc63387b5d3d00d2cb248875f5f6bfcfb8111773e7fd9acb625c59e96`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ca2976a4a634fcd40fbde748a2626820726351838a5f847952d402127668193d`
+#### `4817912fe72cb6dac219666d374b670712230c4ea8efaac441143df19fee006f`
 
 ```dockerfile
 CMD ["npm" "start"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:10 GMT
--	Parent Layer: `a0d0b84550e5a6b0637d99d6d0087db1f1b524ff0b14cf121181eea66cadcbf2`
+-	Created: Tue, 23 Feb 2016 20:33:44 GMT
+-	Parent Layer: `7b0a1816f10e87afde8bad0dde726ebacceaef5aa7ca8ecf8127d40a02aec47f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-## `node:5.6-onbuild`
+## `node:5.7-onbuild`
 
 ```console
-$ docker pull library/node@sha256:789b4d7de52b61416a8ae5e777043765e46374a966cc241f80576d9ee14b2b55
+$ docker pull library/node@sha256:be89aaddb530356c5be87b0c56629a0e4980f8ef376065de3de2e5b89b5c178f
 ```
 
--	Total Virtual Size: 644.3 MB (644288550 bytes)
--	Total v2 Content-Length: 253.3 MB (253265373 bytes)
+-	Total Virtual Size: 644.3 MB (644271150 bytes)
+-	Total v2 Content-Length: 253.3 MB (253276893 bytes)
 
 ### Layers (16)
 
@@ -8314,118 +8314,118 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+#### `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:20 GMT
+-	Created: Tue, 23 Feb 2016 20:32:55 GMT
 -	Parent Layer: `f967d5769a5ff9b6964fddbf7dadfb7276d9ff1ddc6a0928c74884e6f4fd3d47`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+#### `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:25 GMT
--	Parent Layer: `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+-	Created: Tue, 23 Feb 2016 20:33:01 GMT
+-	Parent Layer: `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:ad86930c50cb92417aafefcef1dca426fef8f5ac72fe98ad36d9442ca17ea642`
--	v2 Content-Length: 12.2 MB (12242973 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:e2b4ae7488321bc796a9af578e67e188811b466fc00e6d5773579a927a45217a`
+-	v2 Content-Length: 12.3 MB (12254493 bytes)
 
-#### `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+#### `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:26 GMT
--	Parent Layer: `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+-	Created: Tue, 23 Feb 2016 20:33:03 GMT
+-	Parent Layer: `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `15c21d46c6316285e835c3d72463e7429fd9d02294478f45c9df10c8e72a0233`
+#### `bc3eca27ff2afa4c15e3c9478ab407907514fe483277e5cbb98579369298ccf1`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:07 GMT
--	Parent Layer: `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+-	Created: Tue, 23 Feb 2016 20:33:41 GMT
+-	Parent Layer: `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:e44fdcdacd94c7e201770465206e294b01be495861685ed842fb4ea4acfa0ab7`
+-	v2 Blob: `sha256:f590d0b9416064d194d28f023cb907a5d973efffc848653e6ea309906b1b80b8`
 -	v2 Content-Length: 126.0 B
 
-#### `dbf27f7b6f65392c38b3f40ab6815387878f692dfc823e008a1a1d470a96f44e`
+#### `02c339011555cbc37777d1a97ef5f0329b0dc143f7166b97e66529df00e3d662`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:08 GMT
--	Parent Layer: `15c21d46c6316285e835c3d72463e7429fd9d02294478f45c9df10c8e72a0233`
+-	Created: Tue, 23 Feb 2016 20:33:42 GMT
+-	Parent Layer: `bc3eca27ff2afa4c15e3c9478ab407907514fe483277e5cbb98579369298ccf1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `0dd479d9a5a40be56dea49e75380b2c0bfec05b6019f5e7993ddb1f35637927b`
+#### `454880cf34c6d03d814214a09335e67f9cf848de7c52d96d55ad8403b88528b3`
 
 ```dockerfile
 ONBUILD COPY package.json /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:09 GMT
--	Parent Layer: `dbf27f7b6f65392c38b3f40ab6815387878f692dfc823e008a1a1d470a96f44e`
+-	Created: Tue, 23 Feb 2016 20:33:42 GMT
+-	Parent Layer: `02c339011555cbc37777d1a97ef5f0329b0dc143f7166b97e66529df00e3d662`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f54aeda5ef44e58e8a237a2a8f803fe19c71b29acdcc8e235829d0f89f219586`
+#### `6255b58dc63387b5d3d00d2cb248875f5f6bfcfb8111773e7fd9acb625c59e96`
 
 ```dockerfile
 ONBUILD RUN npm install
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:09 GMT
--	Parent Layer: `0dd479d9a5a40be56dea49e75380b2c0bfec05b6019f5e7993ddb1f35637927b`
+-	Created: Tue, 23 Feb 2016 20:33:43 GMT
+-	Parent Layer: `454880cf34c6d03d814214a09335e67f9cf848de7c52d96d55ad8403b88528b3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a0d0b84550e5a6b0637d99d6d0087db1f1b524ff0b14cf121181eea66cadcbf2`
+#### `7b0a1816f10e87afde8bad0dde726ebacceaef5aa7ca8ecf8127d40a02aec47f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:10 GMT
--	Parent Layer: `f54aeda5ef44e58e8a237a2a8f803fe19c71b29acdcc8e235829d0f89f219586`
+-	Created: Tue, 23 Feb 2016 20:33:44 GMT
+-	Parent Layer: `6255b58dc63387b5d3d00d2cb248875f5f6bfcfb8111773e7fd9acb625c59e96`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ca2976a4a634fcd40fbde748a2626820726351838a5f847952d402127668193d`
+#### `4817912fe72cb6dac219666d374b670712230c4ea8efaac441143df19fee006f`
 
 ```dockerfile
 CMD ["npm" "start"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:10 GMT
--	Parent Layer: `a0d0b84550e5a6b0637d99d6d0087db1f1b524ff0b14cf121181eea66cadcbf2`
+-	Created: Tue, 23 Feb 2016 20:33:44 GMT
+-	Parent Layer: `7b0a1816f10e87afde8bad0dde726ebacceaef5aa7ca8ecf8127d40a02aec47f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -8434,11 +8434,11 @@ CMD ["npm" "start"]
 ## `node:5-onbuild`
 
 ```console
-$ docker pull library/node@sha256:5f7ad1ca62c19026e592afdce4fe54343ba46d10fceb2d161d6e090350feda7a
+$ docker pull library/node@sha256:04bd260c25c99a31e1a2a91f002d7cb688cfd7a0a8075a29ca1dde3c39f29704
 ```
 
--	Total Virtual Size: 644.3 MB (644288550 bytes)
--	Total v2 Content-Length: 253.3 MB (253265373 bytes)
+-	Total Virtual Size: 644.3 MB (644271150 bytes)
+-	Total v2 Content-Length: 253.3 MB (253276893 bytes)
 
 ### Layers (16)
 
@@ -8587,118 +8587,118 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+#### `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:20 GMT
+-	Created: Tue, 23 Feb 2016 20:32:55 GMT
 -	Parent Layer: `f967d5769a5ff9b6964fddbf7dadfb7276d9ff1ddc6a0928c74884e6f4fd3d47`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+#### `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:25 GMT
--	Parent Layer: `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+-	Created: Tue, 23 Feb 2016 20:33:01 GMT
+-	Parent Layer: `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:ad86930c50cb92417aafefcef1dca426fef8f5ac72fe98ad36d9442ca17ea642`
--	v2 Content-Length: 12.2 MB (12242973 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:e2b4ae7488321bc796a9af578e67e188811b466fc00e6d5773579a927a45217a`
+-	v2 Content-Length: 12.3 MB (12254493 bytes)
 
-#### `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+#### `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:26 GMT
--	Parent Layer: `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+-	Created: Tue, 23 Feb 2016 20:33:03 GMT
+-	Parent Layer: `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `15c21d46c6316285e835c3d72463e7429fd9d02294478f45c9df10c8e72a0233`
+#### `bc3eca27ff2afa4c15e3c9478ab407907514fe483277e5cbb98579369298ccf1`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:07 GMT
--	Parent Layer: `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+-	Created: Tue, 23 Feb 2016 20:33:41 GMT
+-	Parent Layer: `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:e44fdcdacd94c7e201770465206e294b01be495861685ed842fb4ea4acfa0ab7`
+-	v2 Blob: `sha256:f590d0b9416064d194d28f023cb907a5d973efffc848653e6ea309906b1b80b8`
 -	v2 Content-Length: 126.0 B
 
-#### `dbf27f7b6f65392c38b3f40ab6815387878f692dfc823e008a1a1d470a96f44e`
+#### `02c339011555cbc37777d1a97ef5f0329b0dc143f7166b97e66529df00e3d662`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:08 GMT
--	Parent Layer: `15c21d46c6316285e835c3d72463e7429fd9d02294478f45c9df10c8e72a0233`
+-	Created: Tue, 23 Feb 2016 20:33:42 GMT
+-	Parent Layer: `bc3eca27ff2afa4c15e3c9478ab407907514fe483277e5cbb98579369298ccf1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `0dd479d9a5a40be56dea49e75380b2c0bfec05b6019f5e7993ddb1f35637927b`
+#### `454880cf34c6d03d814214a09335e67f9cf848de7c52d96d55ad8403b88528b3`
 
 ```dockerfile
 ONBUILD COPY package.json /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:09 GMT
--	Parent Layer: `dbf27f7b6f65392c38b3f40ab6815387878f692dfc823e008a1a1d470a96f44e`
+-	Created: Tue, 23 Feb 2016 20:33:42 GMT
+-	Parent Layer: `02c339011555cbc37777d1a97ef5f0329b0dc143f7166b97e66529df00e3d662`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f54aeda5ef44e58e8a237a2a8f803fe19c71b29acdcc8e235829d0f89f219586`
+#### `6255b58dc63387b5d3d00d2cb248875f5f6bfcfb8111773e7fd9acb625c59e96`
 
 ```dockerfile
 ONBUILD RUN npm install
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:09 GMT
--	Parent Layer: `0dd479d9a5a40be56dea49e75380b2c0bfec05b6019f5e7993ddb1f35637927b`
+-	Created: Tue, 23 Feb 2016 20:33:43 GMT
+-	Parent Layer: `454880cf34c6d03d814214a09335e67f9cf848de7c52d96d55ad8403b88528b3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a0d0b84550e5a6b0637d99d6d0087db1f1b524ff0b14cf121181eea66cadcbf2`
+#### `7b0a1816f10e87afde8bad0dde726ebacceaef5aa7ca8ecf8127d40a02aec47f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:10 GMT
--	Parent Layer: `f54aeda5ef44e58e8a237a2a8f803fe19c71b29acdcc8e235829d0f89f219586`
+-	Created: Tue, 23 Feb 2016 20:33:44 GMT
+-	Parent Layer: `6255b58dc63387b5d3d00d2cb248875f5f6bfcfb8111773e7fd9acb625c59e96`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ca2976a4a634fcd40fbde748a2626820726351838a5f847952d402127668193d`
+#### `4817912fe72cb6dac219666d374b670712230c4ea8efaac441143df19fee006f`
 
 ```dockerfile
 CMD ["npm" "start"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:10 GMT
--	Parent Layer: `a0d0b84550e5a6b0637d99d6d0087db1f1b524ff0b14cf121181eea66cadcbf2`
+-	Created: Tue, 23 Feb 2016 20:33:44 GMT
+-	Parent Layer: `7b0a1816f10e87afde8bad0dde726ebacceaef5aa7ca8ecf8127d40a02aec47f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -8707,11 +8707,11 @@ CMD ["npm" "start"]
 ## `node:onbuild`
 
 ```console
-$ docker pull library/node@sha256:696d06f4432a9c37969f4e9acea35908393b945b0fdc467791ca7e1379bd78bd
+$ docker pull library/node@sha256:52c0bfd072df07568c0e475c47ed9a44c9176f93535ccda5e423bf7023d25a23
 ```
 
--	Total Virtual Size: 644.3 MB (644288550 bytes)
--	Total v2 Content-Length: 253.3 MB (253265373 bytes)
+-	Total Virtual Size: 644.3 MB (644271150 bytes)
+-	Total v2 Content-Length: 253.3 MB (253276893 bytes)
 
 ### Layers (16)
 
@@ -8860,131 +8860,131 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+#### `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:20 GMT
+-	Created: Tue, 23 Feb 2016 20:32:55 GMT
 -	Parent Layer: `f967d5769a5ff9b6964fddbf7dadfb7276d9ff1ddc6a0928c74884e6f4fd3d47`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+#### `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:25 GMT
--	Parent Layer: `128aa91757801f01ef10c5f6065828b3028cab49cd19b5b00fc4d76713de5dcd`
+-	Created: Tue, 23 Feb 2016 20:33:01 GMT
+-	Parent Layer: `0ddbb8db1d6f3508981c8f79ddfda91a7aef9413d28f4e067606938ed26d0ad1`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:ad86930c50cb92417aafefcef1dca426fef8f5ac72fe98ad36d9442ca17ea642`
--	v2 Content-Length: 12.2 MB (12242973 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:e2b4ae7488321bc796a9af578e67e188811b466fc00e6d5773579a927a45217a`
+-	v2 Content-Length: 12.3 MB (12254493 bytes)
 
-#### `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+#### `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:00:26 GMT
--	Parent Layer: `6f09cdf761dbdd5ece32c05787a90cd46a84a5e823f5bce4e35e6914c306845a`
+-	Created: Tue, 23 Feb 2016 20:33:03 GMT
+-	Parent Layer: `73699e5a4d399ca9cba08fbe07bd8ff658183a235bf65e3634a7f49661db0e67`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `15c21d46c6316285e835c3d72463e7429fd9d02294478f45c9df10c8e72a0233`
+#### `bc3eca27ff2afa4c15e3c9478ab407907514fe483277e5cbb98579369298ccf1`
 
 ```dockerfile
 RUN mkdir -p /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:07 GMT
--	Parent Layer: `48ea10c2b5cdcc17502be234b34701282705df6cfcc11e9babafb0b941e6fd3d`
+-	Created: Tue, 23 Feb 2016 20:33:41 GMT
+-	Parent Layer: `e9bdbaa37b45a0b4b5aee55bbab9ff27b6d67f830c862a63cb58e27d9bc98708`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:e44fdcdacd94c7e201770465206e294b01be495861685ed842fb4ea4acfa0ab7`
+-	v2 Blob: `sha256:f590d0b9416064d194d28f023cb907a5d973efffc848653e6ea309906b1b80b8`
 -	v2 Content-Length: 126.0 B
 
-#### `dbf27f7b6f65392c38b3f40ab6815387878f692dfc823e008a1a1d470a96f44e`
+#### `02c339011555cbc37777d1a97ef5f0329b0dc143f7166b97e66529df00e3d662`
 
 ```dockerfile
 WORKDIR /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:08 GMT
--	Parent Layer: `15c21d46c6316285e835c3d72463e7429fd9d02294478f45c9df10c8e72a0233`
+-	Created: Tue, 23 Feb 2016 20:33:42 GMT
+-	Parent Layer: `bc3eca27ff2afa4c15e3c9478ab407907514fe483277e5cbb98579369298ccf1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `0dd479d9a5a40be56dea49e75380b2c0bfec05b6019f5e7993ddb1f35637927b`
+#### `454880cf34c6d03d814214a09335e67f9cf848de7c52d96d55ad8403b88528b3`
 
 ```dockerfile
 ONBUILD COPY package.json /usr/src/app/
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:09 GMT
--	Parent Layer: `dbf27f7b6f65392c38b3f40ab6815387878f692dfc823e008a1a1d470a96f44e`
+-	Created: Tue, 23 Feb 2016 20:33:42 GMT
+-	Parent Layer: `02c339011555cbc37777d1a97ef5f0329b0dc143f7166b97e66529df00e3d662`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f54aeda5ef44e58e8a237a2a8f803fe19c71b29acdcc8e235829d0f89f219586`
+#### `6255b58dc63387b5d3d00d2cb248875f5f6bfcfb8111773e7fd9acb625c59e96`
 
 ```dockerfile
 ONBUILD RUN npm install
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:09 GMT
--	Parent Layer: `0dd479d9a5a40be56dea49e75380b2c0bfec05b6019f5e7993ddb1f35637927b`
+-	Created: Tue, 23 Feb 2016 20:33:43 GMT
+-	Parent Layer: `454880cf34c6d03d814214a09335e67f9cf848de7c52d96d55ad8403b88528b3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a0d0b84550e5a6b0637d99d6d0087db1f1b524ff0b14cf121181eea66cadcbf2`
+#### `7b0a1816f10e87afde8bad0dde726ebacceaef5aa7ca8ecf8127d40a02aec47f`
 
 ```dockerfile
 ONBUILD COPY . /usr/src/app
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:10 GMT
--	Parent Layer: `f54aeda5ef44e58e8a237a2a8f803fe19c71b29acdcc8e235829d0f89f219586`
+-	Created: Tue, 23 Feb 2016 20:33:44 GMT
+-	Parent Layer: `6255b58dc63387b5d3d00d2cb248875f5f6bfcfb8111773e7fd9acb625c59e96`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ca2976a4a634fcd40fbde748a2626820726351838a5f847952d402127668193d`
+#### `4817912fe72cb6dac219666d374b670712230c4ea8efaac441143df19fee006f`
 
 ```dockerfile
 CMD ["npm" "start"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:01:10 GMT
--	Parent Layer: `a0d0b84550e5a6b0637d99d6d0087db1f1b524ff0b14cf121181eea66cadcbf2`
+-	Created: Tue, 23 Feb 2016 20:33:44 GMT
+-	Parent Layer: `7b0a1816f10e87afde8bad0dde726ebacceaef5aa7ca8ecf8127d40a02aec47f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-## `node:5.6.0-slim`
+## `node:5.7.0-slim`
 
 ```console
-$ docker pull library/node@sha256:3b65fc03d473278499cd9da1405b5073a1b10dd8acd9059e79c477c9a3a4f15c
+$ docker pull library/node@sha256:8b3dd1686c69dfd00319102aa703959d527ac41e205d75f98b0eafd0009128c4
 ```
 
--	Total Virtual Size: 207.4 MB (207350848 bytes)
--	Total v2 Content-Length: 82.2 MB (82248362 bytes)
+-	Total Virtual Size: 207.3 MB (207333448 bytes)
+-	Total v2 Content-Length: 82.3 MB (82259816 bytes)
 
 ### Layers (8)
 
@@ -9065,20 +9065,20 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d0a4b39a1d6e44ee0ba133a2f35703cd5a94471f257538764aded08e03534781`
+#### `3ee353e06c9c541dbd0e4794f5e936e80241e9ee248ff96e5ae7be0c72230782`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:05 GMT
+-	Created: Tue, 23 Feb 2016 20:34:36 GMT
 -	Parent Layer: `b922c1ec403f66bf57c897bfcda9130d6c952e108f8aeaffe8048039c802d3ba`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7f4741dd3ebbcc483c731647df280358047448a5213c4e78ec72ea68613acfff`
+#### `6800974c4d2fc007b1c685cbc3cb5f9e9565e29a1bc0a6d8c0c7075e4ce4ce78`
 
 ```dockerfile
 RUN buildDeps='xz-utils'\
@@ -9094,34 +9094,34 @@ RUN buildDeps='xz-utils'\
      && apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:49 GMT
--	Parent Layer: `d0a4b39a1d6e44ee0ba133a2f35703cd5a94471f257538764aded08e03534781`
+-	Created: Tue, 23 Feb 2016 20:35:37 GMT
+-	Parent Layer: `3ee353e06c9c541dbd0e4794f5e936e80241e9ee248ff96e5ae7be0c72230782`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.9 MB (37878435 bytes)
--	v2 Blob: `sha256:caa77f3d5373b7c77a7440298a30cd189830cd8c8d12b0e6ad8473ac1002a082`
--	v2 Content-Length: 12.3 MB (12321973 bytes)
+-	Virtual Size: 37.9 MB (37861035 bytes)
+-	v2 Blob: `sha256:7c59bfc8a8ff52caecd1504e36bfc8c203858a10adc0e2230243a1af6e7499a0`
+-	v2 Content-Length: 12.3 MB (12333427 bytes)
 
-#### `2294f2431cbdfb29ce08d776d9d78a7ed907c2a81657c3e606707a9c4daf2cfe`
+#### `2c88c398ab632f9e91f52018ecd07a010b75ea0cba1ec1c774b5980e301c27b1`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:51 GMT
--	Parent Layer: `7f4741dd3ebbcc483c731647df280358047448a5213c4e78ec72ea68613acfff`
+-	Created: Tue, 23 Feb 2016 20:35:39 GMT
+-	Parent Layer: `6800974c4d2fc007b1c685cbc3cb5f9e9565e29a1bc0a6d8c0c7075e4ce4ce78`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-## `node:5.6-slim`
+## `node:5.7-slim`
 
 ```console
-$ docker pull library/node@sha256:ab20ae49a861fe703ddb17ad466d91aae78895e1572d02cd254d97a8896ad126
+$ docker pull library/node@sha256:0208a3814052fca3e28a9b32b0df71dc2ce3f94f2b313848f4e02569c420b465
 ```
 
--	Total Virtual Size: 207.4 MB (207350848 bytes)
--	Total v2 Content-Length: 82.2 MB (82248362 bytes)
+-	Total Virtual Size: 207.3 MB (207333448 bytes)
+-	Total v2 Content-Length: 82.3 MB (82259816 bytes)
 
 ### Layers (8)
 
@@ -9202,20 +9202,20 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d0a4b39a1d6e44ee0ba133a2f35703cd5a94471f257538764aded08e03534781`
+#### `3ee353e06c9c541dbd0e4794f5e936e80241e9ee248ff96e5ae7be0c72230782`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:05 GMT
+-	Created: Tue, 23 Feb 2016 20:34:36 GMT
 -	Parent Layer: `b922c1ec403f66bf57c897bfcda9130d6c952e108f8aeaffe8048039c802d3ba`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7f4741dd3ebbcc483c731647df280358047448a5213c4e78ec72ea68613acfff`
+#### `6800974c4d2fc007b1c685cbc3cb5f9e9565e29a1bc0a6d8c0c7075e4ce4ce78`
 
 ```dockerfile
 RUN buildDeps='xz-utils'\
@@ -9231,21 +9231,21 @@ RUN buildDeps='xz-utils'\
      && apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:49 GMT
--	Parent Layer: `d0a4b39a1d6e44ee0ba133a2f35703cd5a94471f257538764aded08e03534781`
+-	Created: Tue, 23 Feb 2016 20:35:37 GMT
+-	Parent Layer: `3ee353e06c9c541dbd0e4794f5e936e80241e9ee248ff96e5ae7be0c72230782`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.9 MB (37878435 bytes)
--	v2 Blob: `sha256:caa77f3d5373b7c77a7440298a30cd189830cd8c8d12b0e6ad8473ac1002a082`
--	v2 Content-Length: 12.3 MB (12321973 bytes)
+-	Virtual Size: 37.9 MB (37861035 bytes)
+-	v2 Blob: `sha256:7c59bfc8a8ff52caecd1504e36bfc8c203858a10adc0e2230243a1af6e7499a0`
+-	v2 Content-Length: 12.3 MB (12333427 bytes)
 
-#### `2294f2431cbdfb29ce08d776d9d78a7ed907c2a81657c3e606707a9c4daf2cfe`
+#### `2c88c398ab632f9e91f52018ecd07a010b75ea0cba1ec1c774b5980e301c27b1`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:51 GMT
--	Parent Layer: `7f4741dd3ebbcc483c731647df280358047448a5213c4e78ec72ea68613acfff`
+-	Created: Tue, 23 Feb 2016 20:35:39 GMT
+-	Parent Layer: `6800974c4d2fc007b1c685cbc3cb5f9e9565e29a1bc0a6d8c0c7075e4ce4ce78`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -9254,11 +9254,11 @@ CMD ["node"]
 ## `node:5-slim`
 
 ```console
-$ docker pull library/node@sha256:67a5a09fc10acd138f12e5b489b3c17d144379fa48043913a5e68f33cb2f5783
+$ docker pull library/node@sha256:13c4d7aa23aa5278c1d670e0c33192211926a66dd1c81417f013500deaf8680a
 ```
 
--	Total Virtual Size: 207.4 MB (207350848 bytes)
--	Total v2 Content-Length: 82.2 MB (82248362 bytes)
+-	Total Virtual Size: 207.3 MB (207333448 bytes)
+-	Total v2 Content-Length: 82.3 MB (82259816 bytes)
 
 ### Layers (8)
 
@@ -9339,20 +9339,20 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d0a4b39a1d6e44ee0ba133a2f35703cd5a94471f257538764aded08e03534781`
+#### `3ee353e06c9c541dbd0e4794f5e936e80241e9ee248ff96e5ae7be0c72230782`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:05 GMT
+-	Created: Tue, 23 Feb 2016 20:34:36 GMT
 -	Parent Layer: `b922c1ec403f66bf57c897bfcda9130d6c952e108f8aeaffe8048039c802d3ba`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7f4741dd3ebbcc483c731647df280358047448a5213c4e78ec72ea68613acfff`
+#### `6800974c4d2fc007b1c685cbc3cb5f9e9565e29a1bc0a6d8c0c7075e4ce4ce78`
 
 ```dockerfile
 RUN buildDeps='xz-utils'\
@@ -9368,21 +9368,21 @@ RUN buildDeps='xz-utils'\
      && apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:49 GMT
--	Parent Layer: `d0a4b39a1d6e44ee0ba133a2f35703cd5a94471f257538764aded08e03534781`
+-	Created: Tue, 23 Feb 2016 20:35:37 GMT
+-	Parent Layer: `3ee353e06c9c541dbd0e4794f5e936e80241e9ee248ff96e5ae7be0c72230782`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.9 MB (37878435 bytes)
--	v2 Blob: `sha256:caa77f3d5373b7c77a7440298a30cd189830cd8c8d12b0e6ad8473ac1002a082`
--	v2 Content-Length: 12.3 MB (12321973 bytes)
+-	Virtual Size: 37.9 MB (37861035 bytes)
+-	v2 Blob: `sha256:7c59bfc8a8ff52caecd1504e36bfc8c203858a10adc0e2230243a1af6e7499a0`
+-	v2 Content-Length: 12.3 MB (12333427 bytes)
 
-#### `2294f2431cbdfb29ce08d776d9d78a7ed907c2a81657c3e606707a9c4daf2cfe`
+#### `2c88c398ab632f9e91f52018ecd07a010b75ea0cba1ec1c774b5980e301c27b1`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:51 GMT
--	Parent Layer: `7f4741dd3ebbcc483c731647df280358047448a5213c4e78ec72ea68613acfff`
+-	Created: Tue, 23 Feb 2016 20:35:39 GMT
+-	Parent Layer: `6800974c4d2fc007b1c685cbc3cb5f9e9565e29a1bc0a6d8c0c7075e4ce4ce78`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -9391,11 +9391,11 @@ CMD ["node"]
 ## `node:slim`
 
 ```console
-$ docker pull library/node@sha256:991a6d507e7d474bad23ac6d01c3f3e3e9f4cbabec00c2c4a8bbf31a3b12fd27
+$ docker pull library/node@sha256:db89d9de70ee90b15ebbea2cef5de11d7e05c01c7217e1676fa0f53653a42292
 ```
 
--	Total Virtual Size: 207.4 MB (207350848 bytes)
--	Total v2 Content-Length: 82.2 MB (82248362 bytes)
+-	Total Virtual Size: 207.3 MB (207333448 bytes)
+-	Total v2 Content-Length: 82.3 MB (82259816 bytes)
 
 ### Layers (8)
 
@@ -9476,20 +9476,20 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d0a4b39a1d6e44ee0ba133a2f35703cd5a94471f257538764aded08e03534781`
+#### `3ee353e06c9c541dbd0e4794f5e936e80241e9ee248ff96e5ae7be0c72230782`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:05 GMT
+-	Created: Tue, 23 Feb 2016 20:34:36 GMT
 -	Parent Layer: `b922c1ec403f66bf57c897bfcda9130d6c952e108f8aeaffe8048039c802d3ba`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7f4741dd3ebbcc483c731647df280358047448a5213c4e78ec72ea68613acfff`
+#### `6800974c4d2fc007b1c685cbc3cb5f9e9565e29a1bc0a6d8c0c7075e4ce4ce78`
 
 ```dockerfile
 RUN buildDeps='xz-utils'\
@@ -9505,34 +9505,34 @@ RUN buildDeps='xz-utils'\
      && apt-get purge -y --auto-remove $buildDeps
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:49 GMT
--	Parent Layer: `d0a4b39a1d6e44ee0ba133a2f35703cd5a94471f257538764aded08e03534781`
+-	Created: Tue, 23 Feb 2016 20:35:37 GMT
+-	Parent Layer: `3ee353e06c9c541dbd0e4794f5e936e80241e9ee248ff96e5ae7be0c72230782`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.9 MB (37878435 bytes)
--	v2 Blob: `sha256:caa77f3d5373b7c77a7440298a30cd189830cd8c8d12b0e6ad8473ac1002a082`
--	v2 Content-Length: 12.3 MB (12321973 bytes)
+-	Virtual Size: 37.9 MB (37861035 bytes)
+-	v2 Blob: `sha256:7c59bfc8a8ff52caecd1504e36bfc8c203858a10adc0e2230243a1af6e7499a0`
+-	v2 Content-Length: 12.3 MB (12333427 bytes)
 
-#### `2294f2431cbdfb29ce08d776d9d78a7ed907c2a81657c3e606707a9c4daf2cfe`
+#### `2c88c398ab632f9e91f52018ecd07a010b75ea0cba1ec1c774b5980e301c27b1`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:02:51 GMT
--	Parent Layer: `7f4741dd3ebbcc483c731647df280358047448a5213c4e78ec72ea68613acfff`
+-	Created: Tue, 23 Feb 2016 20:35:39 GMT
+-	Parent Layer: `6800974c4d2fc007b1c685cbc3cb5f9e9565e29a1bc0a6d8c0c7075e4ce4ce78`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-## `node:5.6.0-wheezy`
+## `node:5.7.0-wheezy`
 
 ```console
-$ docker pull library/node@sha256:b5c580d9657bd25191b6189fb2ca728a251b94127d7a137253f224940d521029
+$ docker pull library/node@sha256:6d720dee5821f9d7bd3fdc5019cdbf44bfff90edcfc8e2239fa4700b231d70d0
 ```
 
--	Total Virtual Size: 497.3 MB (497295871 bytes)
--	Total v2 Content-Length: 187.9 MB (187858273 bytes)
+-	Total Virtual Size: 497.3 MB (497278471 bytes)
+-	Total v2 Content-Length: 187.9 MB (187869804 bytes)
 
 ### Layers (10)
 
@@ -9681,53 +9681,53 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `39bd16bc3d99431e3451084b10aa42ffed98da149e79346a68ede97e26d94fb3`
+#### `56657826ae9172e0001eb61e3656fa7e0a33d915f2ff3bb9b10e349b68cd3bc7`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:38 GMT
+-	Created: Tue, 23 Feb 2016 20:36:24 GMT
 -	Parent Layer: `7dd568470552b1c71c4bc3b80731c8a142d29b600731b825e6386404cabb19ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a6fd256aaea16cddda6d72479692cc9bdf4a4e044dd6b0461ffa86daff87853c`
+#### `40422b6867579d5a4847c093ce6880abd444258db6bbcb2d004841960dfefd26`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:44 GMT
--	Parent Layer: `39bd16bc3d99431e3451084b10aa42ffed98da149e79346a68ede97e26d94fb3`
+-	Created: Tue, 23 Feb 2016 20:36:28 GMT
+-	Parent Layer: `56657826ae9172e0001eb61e3656fa7e0a33d915f2ff3bb9b10e349b68cd3bc7`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:c1027272a7441228ac986471d1f0f17c5dd7fb9ede296c881c1ed0f255abe8a4`
--	v2 Content-Length: 12.2 MB (12242965 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:d6e6e67d6aac0f0eb4511c35a7e11ee6e5c20d5d8228de776eb69c3a798d38db`
+-	v2 Content-Length: 12.3 MB (12254496 bytes)
 
-#### `0be3040ae481afcf6c9eaff2dbdfda460033a50d395d1bb8723e4c669123fd32`
+#### `e9ef0a5df79eda75e9f81646941921af6a10ba193986fdc87ce849ebdcf39843`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:46 GMT
--	Parent Layer: `a6fd256aaea16cddda6d72479692cc9bdf4a4e044dd6b0461ffa86daff87853c`
+-	Created: Tue, 23 Feb 2016 20:36:30 GMT
+-	Parent Layer: `40422b6867579d5a4847c093ce6880abd444258db6bbcb2d004841960dfefd26`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-## `node:5.6-wheezy`
+## `node:5.7-wheezy`
 
 ```console
-$ docker pull library/node@sha256:3d3688f8a81d0defe6873175805eb3ae2f79795db5c21ed1bbccf247662c484c
+$ docker pull library/node@sha256:313cd668ad6a30120fe008f067b92e93ab20faac9b00f125e538985409ab39d9
 ```
 
--	Total Virtual Size: 497.3 MB (497295871 bytes)
--	Total v2 Content-Length: 187.9 MB (187858273 bytes)
+-	Total Virtual Size: 497.3 MB (497278471 bytes)
+-	Total v2 Content-Length: 187.9 MB (187869804 bytes)
 
 ### Layers (10)
 
@@ -9876,40 +9876,40 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `39bd16bc3d99431e3451084b10aa42ffed98da149e79346a68ede97e26d94fb3`
+#### `56657826ae9172e0001eb61e3656fa7e0a33d915f2ff3bb9b10e349b68cd3bc7`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:38 GMT
+-	Created: Tue, 23 Feb 2016 20:36:24 GMT
 -	Parent Layer: `7dd568470552b1c71c4bc3b80731c8a142d29b600731b825e6386404cabb19ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a6fd256aaea16cddda6d72479692cc9bdf4a4e044dd6b0461ffa86daff87853c`
+#### `40422b6867579d5a4847c093ce6880abd444258db6bbcb2d004841960dfefd26`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:44 GMT
--	Parent Layer: `39bd16bc3d99431e3451084b10aa42ffed98da149e79346a68ede97e26d94fb3`
+-	Created: Tue, 23 Feb 2016 20:36:28 GMT
+-	Parent Layer: `56657826ae9172e0001eb61e3656fa7e0a33d915f2ff3bb9b10e349b68cd3bc7`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:c1027272a7441228ac986471d1f0f17c5dd7fb9ede296c881c1ed0f255abe8a4`
--	v2 Content-Length: 12.2 MB (12242965 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:d6e6e67d6aac0f0eb4511c35a7e11ee6e5c20d5d8228de776eb69c3a798d38db`
+-	v2 Content-Length: 12.3 MB (12254496 bytes)
 
-#### `0be3040ae481afcf6c9eaff2dbdfda460033a50d395d1bb8723e4c669123fd32`
+#### `e9ef0a5df79eda75e9f81646941921af6a10ba193986fdc87ce849ebdcf39843`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:46 GMT
--	Parent Layer: `a6fd256aaea16cddda6d72479692cc9bdf4a4e044dd6b0461ffa86daff87853c`
+-	Created: Tue, 23 Feb 2016 20:36:30 GMT
+-	Parent Layer: `40422b6867579d5a4847c093ce6880abd444258db6bbcb2d004841960dfefd26`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -9918,11 +9918,11 @@ CMD ["node"]
 ## `node:5-wheezy`
 
 ```console
-$ docker pull library/node@sha256:896e2a364a345d4dde95563e4eead04ef676a9fab2880d87d3512d9c7172daa7
+$ docker pull library/node@sha256:48d873dbf86105db71b1533a6371625e05f297f65a9db624b232344ff3a3a017
 ```
 
--	Total Virtual Size: 497.3 MB (497295871 bytes)
--	Total v2 Content-Length: 187.9 MB (187858273 bytes)
+-	Total Virtual Size: 497.3 MB (497278471 bytes)
+-	Total v2 Content-Length: 187.9 MB (187869804 bytes)
 
 ### Layers (10)
 
@@ -10071,40 +10071,40 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `39bd16bc3d99431e3451084b10aa42ffed98da149e79346a68ede97e26d94fb3`
+#### `56657826ae9172e0001eb61e3656fa7e0a33d915f2ff3bb9b10e349b68cd3bc7`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:38 GMT
+-	Created: Tue, 23 Feb 2016 20:36:24 GMT
 -	Parent Layer: `7dd568470552b1c71c4bc3b80731c8a142d29b600731b825e6386404cabb19ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a6fd256aaea16cddda6d72479692cc9bdf4a4e044dd6b0461ffa86daff87853c`
+#### `40422b6867579d5a4847c093ce6880abd444258db6bbcb2d004841960dfefd26`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:44 GMT
--	Parent Layer: `39bd16bc3d99431e3451084b10aa42ffed98da149e79346a68ede97e26d94fb3`
+-	Created: Tue, 23 Feb 2016 20:36:28 GMT
+-	Parent Layer: `56657826ae9172e0001eb61e3656fa7e0a33d915f2ff3bb9b10e349b68cd3bc7`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:c1027272a7441228ac986471d1f0f17c5dd7fb9ede296c881c1ed0f255abe8a4`
--	v2 Content-Length: 12.2 MB (12242965 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:d6e6e67d6aac0f0eb4511c35a7e11ee6e5c20d5d8228de776eb69c3a798d38db`
+-	v2 Content-Length: 12.3 MB (12254496 bytes)
 
-#### `0be3040ae481afcf6c9eaff2dbdfda460033a50d395d1bb8723e4c669123fd32`
+#### `e9ef0a5df79eda75e9f81646941921af6a10ba193986fdc87ce849ebdcf39843`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:46 GMT
--	Parent Layer: `a6fd256aaea16cddda6d72479692cc9bdf4a4e044dd6b0461ffa86daff87853c`
+-	Created: Tue, 23 Feb 2016 20:36:30 GMT
+-	Parent Layer: `40422b6867579d5a4847c093ce6880abd444258db6bbcb2d004841960dfefd26`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -10113,11 +10113,11 @@ CMD ["node"]
 ## `node:wheezy`
 
 ```console
-$ docker pull library/node@sha256:df1490bcf27edbf760bdff45ddaf797508eee138c087aa6229cd95d154d3602f
+$ docker pull library/node@sha256:a21354525b2c8e481a3950045edaf59d2d45fe99a131a9f1eed41f093b2fbe65
 ```
 
--	Total Virtual Size: 497.3 MB (497295871 bytes)
--	Total v2 Content-Length: 187.9 MB (187858273 bytes)
+-	Total Virtual Size: 497.3 MB (497278471 bytes)
+-	Total v2 Content-Length: 187.9 MB (187869804 bytes)
 
 ### Layers (10)
 
@@ -10266,40 +10266,40 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `39bd16bc3d99431e3451084b10aa42ffed98da149e79346a68ede97e26d94fb3`
+#### `56657826ae9172e0001eb61e3656fa7e0a33d915f2ff3bb9b10e349b68cd3bc7`
 
 ```dockerfile
-ENV NODE_VERSION=5.6.0
+ENV NODE_VERSION=5.7.0
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:38 GMT
+-	Created: Tue, 23 Feb 2016 20:36:24 GMT
 -	Parent Layer: `7dd568470552b1c71c4bc3b80731c8a142d29b600731b825e6386404cabb19ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a6fd256aaea16cddda6d72479692cc9bdf4a4e044dd6b0461ffa86daff87853c`
+#### `40422b6867579d5a4847c093ce6880abd444258db6bbcb2d004841960dfefd26`
 
 ```dockerfile
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:44 GMT
--	Parent Layer: `39bd16bc3d99431e3451084b10aa42ffed98da149e79346a68ede97e26d94fb3`
+-	Created: Tue, 23 Feb 2016 20:36:28 GMT
+-	Parent Layer: `56657826ae9172e0001eb61e3656fa7e0a33d915f2ff3bb9b10e349b68cd3bc7`
 -	Docker Version: 1.9.1
--	Virtual Size: 37.5 MB (37536149 bytes)
--	v2 Blob: `sha256:c1027272a7441228ac986471d1f0f17c5dd7fb9ede296c881c1ed0f255abe8a4`
--	v2 Content-Length: 12.2 MB (12242965 bytes)
+-	Virtual Size: 37.5 MB (37518749 bytes)
+-	v2 Blob: `sha256:d6e6e67d6aac0f0eb4511c35a7e11ee6e5c20d5d8228de776eb69c3a798d38db`
+-	v2 Content-Length: 12.3 MB (12254496 bytes)
 
-#### `0be3040ae481afcf6c9eaff2dbdfda460033a50d395d1bb8723e4c669123fd32`
+#### `e9ef0a5df79eda75e9f81646941921af6a10ba193986fdc87ce849ebdcf39843`
 
 ```dockerfile
 CMD ["node"]
 ```
 
--	Created: Wed, 17 Feb 2016 14:03:46 GMT
--	Parent Layer: `a6fd256aaea16cddda6d72479692cc9bdf4a4e044dd6b0461ffa86daff87853c`
+-	Created: Tue, 23 Feb 2016 20:36:30 GMT
+-	Parent Layer: `40422b6867579d5a4847c093ce6880abd444258db6bbcb2d004841960dfefd26`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`

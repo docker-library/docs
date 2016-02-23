@@ -128,6 +128,7 @@ RUN echo 'deb http://packages.erlang-solutions.com/debian jessie contrib' > /etc
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:b2270794d91eb403483de43141f36ef81d6d3111d5ce12139dc2688c6a46d31d`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:50:20 GMT
 
 #### `2f096b132773af665b878390b23cfff4efde2db43c6dfb65cbc9265a1fae989e`
 
@@ -472,6 +473,7 @@ RUN echo 'deb http://packages.erlang-solutions.com/debian jessie contrib' > /etc
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:b2270794d91eb403483de43141f36ef81d6d3111d5ce12139dc2688c6a46d31d`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:50:20 GMT
 
 #### `2f096b132773af665b878390b23cfff4efde2db43c6dfb65cbc9265a1fae989e`
 
@@ -816,6 +818,7 @@ RUN echo 'deb http://packages.erlang-solutions.com/debian jessie contrib' > /etc
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:b2270794d91eb403483de43141f36ef81d6d3111d5ce12139dc2688c6a46d31d`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:50:20 GMT
 
 #### `2f096b132773af665b878390b23cfff4efde2db43c6dfb65cbc9265a1fae989e`
 
@@ -1160,6 +1163,7 @@ RUN echo 'deb http://packages.erlang-solutions.com/debian jessie contrib' > /etc
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:b2270794d91eb403483de43141f36ef81d6d3111d5ce12139dc2688c6a46d31d`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:50:20 GMT
 
 #### `2f096b132773af665b878390b23cfff4efde2db43c6dfb65cbc9265a1fae989e`
 
@@ -1504,6 +1508,7 @@ RUN echo 'deb http://packages.erlang-solutions.com/debian jessie contrib' > /etc
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:b2270794d91eb403483de43141f36ef81d6d3111d5ce12139dc2688c6a46d31d`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:50:20 GMT
 
 #### `2f096b132773af665b878390b23cfff4efde2db43c6dfb65cbc9265a1fae989e`
 
@@ -1874,6 +1879,7 @@ RUN echo 'deb http://packages.erlang-solutions.com/debian jessie contrib' > /etc
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:b2270794d91eb403483de43141f36ef81d6d3111d5ce12139dc2688c6a46d31d`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:50:20 GMT
 
 #### `2f096b132773af665b878390b23cfff4efde2db43c6dfb65cbc9265a1fae989e`
 
@@ -2244,6 +2250,7 @@ RUN echo 'deb http://packages.erlang-solutions.com/debian jessie contrib' > /etc
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:b2270794d91eb403483de43141f36ef81d6d3111d5ce12139dc2688c6a46d31d`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:50:20 GMT
 
 #### `2f096b132773af665b878390b23cfff4efde2db43c6dfb65cbc9265a1fae989e`
 
@@ -2614,6 +2621,7 @@ RUN echo 'deb http://packages.erlang-solutions.com/debian jessie contrib' > /etc
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:b2270794d91eb403483de43141f36ef81d6d3111d5ce12139dc2688c6a46d31d`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:50:20 GMT
 
 #### `2f096b132773af665b878390b23cfff4efde2db43c6dfb65cbc9265a1fae989e`
 
