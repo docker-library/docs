@@ -209,7 +209,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -638,7 +637,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -1067,7 +1065,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -1496,7 +1493,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -1925,7 +1921,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -2353,7 +2348,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -2781,7 +2775,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -3209,7 +3202,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -3637,7 +3629,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -4065,7 +4056,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -4493,7 +4483,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
@@ -4921,7 +4910,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:9b665e0e45bc1c2c6b0500733f49130f37749399edbe98b306547dfee60d065a`
 -	v2 Content-Length: 284.3 KB (284332 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:02:41 GMT
 
 #### `ffc71c21720348089db2ab52e4ba024011f4f11ecb2c7801bcba442f6f808358`
 
