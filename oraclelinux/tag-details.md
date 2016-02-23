@@ -16,7 +16,7 @@
 ## `oraclelinux:latest`
 
 ```console
-$ docker pull library/oraclelinux@sha256:4b5abd36faf0ca0ef749c115942d5e52e0c3d7fc93bd8909ab6e890960c463b6
+$ docker pull library/oraclelinux@sha256:77c946f76bee445308f09b637a08b88c362799a3abfbe9801846574d5c7470b6
 ```
 
 -	Total Virtual Size: 205.9 MB (205899673 bytes)
@@ -65,7 +65,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7`
 
 ```console
-$ docker pull library/oraclelinux@sha256:5a62bf2c7c12e4851838457898e520dfab399e748228a008f190c20b667f4ac0
+$ docker pull library/oraclelinux@sha256:5087f301d631ae92d307e531aff8193ac4db4bd039a0b1bc6a57e7498b3cfbb2
 ```
 
 -	Total Virtual Size: 205.9 MB (205899673 bytes)
@@ -114,7 +114,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7.2`
 
 ```console
-$ docker pull library/oraclelinux@sha256:bdb08a8427d6ae45436a32f1750c622d730b6722d30f540c8e08dbd0f9929161
+$ docker pull library/oraclelinux@sha256:a19b126d2002724f8b8d8ad1af8fb91debb58e2c52fc83543f444bbd6c8caab2
 ```
 
 -	Total Virtual Size: 205.9 MB (205899673 bytes)
@@ -163,7 +163,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7.1`
 
 ```console
-$ docker pull library/oraclelinux@sha256:71ce109655b6546111d4904c3307faabdef789e536629acef85ebc13b9a8bd66
+$ docker pull library/oraclelinux@sha256:3317f32a59fcc37b72cdb6065a7a7142285c939e7d544593e0896621062bd3bf
 ```
 
 -	Total Virtual Size: 189.6 MB (189646645 bytes)
@@ -212,7 +212,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:7.0`
 
 ```console
-$ docker pull library/oraclelinux@sha256:c152f2a9eaeacf45e8285996fa04bf79c24ae5c232e3e18adbf3f7574ab6843c
+$ docker pull library/oraclelinux@sha256:00d2fdad5e6150cb1ded6cf98690741629b7ba9c6b9fc402e5a180ae15b36b84
 ```
 
 -	Total Virtual Size: 197.2 MB (197214828 bytes)
@@ -261,7 +261,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:6`
 
 ```console
-$ docker pull library/oraclelinux@sha256:7960136d89aeb345d81c1d29112eb8ce7e711faeb85f7b952bf53e1da63d95c2
+$ docker pull library/oraclelinux@sha256:8360aef0292d9de6571a61c171dc14288bef781d296b70f26f4cb86660437bbc
 ```
 
 -	Total Virtual Size: 156.2 MB (156204237 bytes)
@@ -310,7 +310,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:6.7`
 
 ```console
-$ docker pull library/oraclelinux@sha256:5714a4f8b4209edbf2aece879ac262509ebc0d2e51d79f43b64cc8cc65936acc
+$ docker pull library/oraclelinux@sha256:3e4ee809b3b9b97a021c1c7e3168c58e26e725162980509c4a578bd14da55c0b
 ```
 
 -	Total Virtual Size: 156.2 MB (156204237 bytes)
@@ -359,7 +359,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:6.6`
 
 ```console
-$ docker pull library/oraclelinux@sha256:cff637db4ae3a1fe10e8d56b97b56fc8f80a0ca934790f971ca3aac24fb75715
+$ docker pull library/oraclelinux@sha256:3aca0909d54f4c1b60061b0f872e4148c1775a2e7452c39fab93a021b8dcac99
 ```
 
 -	Total Virtual Size: 157.8 MB (157752322 bytes)
@@ -408,7 +408,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:5`
 
 ```console
-$ docker pull library/oraclelinux@sha256:2bbab6e04a8da28e3d0fda8db5d760ba0db8003cbda8dcdba7ca8c4223727c21
+$ docker pull library/oraclelinux@sha256:03bfc96f8f7c72eaf42004bb6d076092df4ec8581794fc5401259c6ccb6b9a9e
 ```
 
 -	Total Virtual Size: 489.4 MB (489388004 bytes)
@@ -457,7 +457,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:5.11`
 
 ```console
-$ docker pull library/oraclelinux@sha256:28f746b4313d40cce8a12be1fd267c5f7dee594bfd0c05e496651ec5292f3338
+$ docker pull library/oraclelinux@sha256:c2413a4701d564540ae77e99fa60fc8de80eb6474858451026e9643e29e02553
 ```
 
 -	Total Virtual Size: 489.4 MB (489388004 bytes)
