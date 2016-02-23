@@ -145,7 +145,7 @@ If you start your `percona` container instance with a data directory that alread
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
