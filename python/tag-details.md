@@ -285,7 +285,6 @@ RUN pip install --no-cache-dir virtualenv
 -	Virtual Size: 5.9 MB (5897791 bytes)
 -	v2 Blob: `sha256:8d0181509e016e0b1f610dd67eee50506b31ddffa129bd09f3a9154a51c4f0e4`
 -	v2 Content-Length: 3.1 MB (3140997 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:36:57 GMT
 
 #### `ad2aa58e21cc348d674567708c9ea791d1cf72044b6c75725129109b27603485`
 
@@ -531,7 +530,6 @@ RUN pip install --no-cache-dir virtualenv
 -	Virtual Size: 5.9 MB (5897791 bytes)
 -	v2 Blob: `sha256:8d0181509e016e0b1f610dd67eee50506b31ddffa129bd09f3a9154a51c4f0e4`
 -	v2 Content-Length: 3.1 MB (3140997 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:36:57 GMT
 
 #### `ad2aa58e21cc348d674567708c9ea791d1cf72044b6c75725129109b27603485`
 
@@ -777,7 +775,6 @@ RUN pip install --no-cache-dir virtualenv
 -	Virtual Size: 5.9 MB (5897791 bytes)
 -	v2 Blob: `sha256:8d0181509e016e0b1f610dd67eee50506b31ddffa129bd09f3a9154a51c4f0e4`
 -	v2 Content-Length: 3.1 MB (3140997 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:36:57 GMT
 
 #### `ad2aa58e21cc348d674567708c9ea791d1cf72044b6c75725129109b27603485`
 
@@ -1023,7 +1020,6 @@ RUN pip install --no-cache-dir virtualenv
 -	Virtual Size: 5.9 MB (5897791 bytes)
 -	v2 Blob: `sha256:8d0181509e016e0b1f610dd67eee50506b31ddffa129bd09f3a9154a51c4f0e4`
 -	v2 Content-Length: 3.1 MB (3140997 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:36:57 GMT
 
 #### `ad2aa58e21cc348d674567708c9ea791d1cf72044b6c75725129109b27603485`
 
@@ -1334,7 +1330,6 @@ RUN pip install --no-cache-dir virtualenv
 -	Virtual Size: 5.9 MB (5897791 bytes)
 -	v2 Blob: `sha256:8d0181509e016e0b1f610dd67eee50506b31ddffa129bd09f3a9154a51c4f0e4`
 -	v2 Content-Length: 3.1 MB (3140997 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:36:57 GMT
 
 #### `ad2aa58e21cc348d674567708c9ea791d1cf72044b6c75725129109b27603485`
 
@@ -1645,7 +1640,6 @@ RUN pip install --no-cache-dir virtualenv
 -	Virtual Size: 5.9 MB (5897791 bytes)
 -	v2 Blob: `sha256:8d0181509e016e0b1f610dd67eee50506b31ddffa129bd09f3a9154a51c4f0e4`
 -	v2 Content-Length: 3.1 MB (3140997 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:36:57 GMT
 
 #### `ad2aa58e21cc348d674567708c9ea791d1cf72044b6c75725129109b27603485`
 
