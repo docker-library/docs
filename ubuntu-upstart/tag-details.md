@@ -659,7 +659,6 @@ RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 -	Virtual Size: 2.5 KB (2528 bytes)
 -	v2 Blob: `sha256:4fcc22d7b2a11189fcb70a5032798d7a3afd74c64ab638916b20a19995c79554`
 -	v2 Content-Length: 1.3 KB (1306 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:42 GMT
 
 #### `d25879e50b284cae5958fb43bd795b491110f5baa1aa435c966da2865909a69d`
 
@@ -894,7 +893,6 @@ RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 -	Virtual Size: 2.5 KB (2528 bytes)
 -	v2 Blob: `sha256:4fcc22d7b2a11189fcb70a5032798d7a3afd74c64ab638916b20a19995c79554`
 -	v2 Content-Length: 1.3 KB (1306 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:42 GMT
 
 #### `d25879e50b284cae5958fb43bd795b491110f5baa1aa435c966da2865909a69d`
 
@@ -1129,7 +1127,6 @@ RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 -	Virtual Size: 2.5 KB (2528 bytes)
 -	v2 Blob: `sha256:4fcc22d7b2a11189fcb70a5032798d7a3afd74c64ab638916b20a19995c79554`
 -	v2 Content-Length: 1.3 KB (1306 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:42 GMT
 
 #### `d25879e50b284cae5958fb43bd795b491110f5baa1aa435c966da2865909a69d`
 
