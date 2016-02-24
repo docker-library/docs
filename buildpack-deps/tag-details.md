@@ -1375,7 +1375,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 731.5 MB (731545216 bytes)
 -	v2 Blob: `sha256:1dba63d32fd220f72c47dfcc47b7e0e894fc5aeadabaf98aaaf2b2e3b110ba03`
 -	v2 Content-Length: 277.7 MB (277721651 bytes)
--	v2 Last-Modified: Tue, 16 Feb 2016 22:00:43 GMT
 
 ## `buildpack-deps:trusty-curl`
 
