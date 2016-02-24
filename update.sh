@@ -71,6 +71,7 @@ declare -A otherRepos=(
 	[sourcemage]='https://github.com/vaygr/docker-sourcemage'
 	[swarm]='https://github.com/docker/swarm-library-image'
 	[thrift]='https://github.com/ahawkins/docker-thrift'
+	[traefik]='https://github.com/containous/traefik-library-image'
 	[ubuntu-debootstrap]='https://github.com/tianon/docker-brew-ubuntu-debootstrap'
 	[ubuntu-upstart]='https://github.com/tianon/dockerfiles'
 	[ubuntu]='https://github.com/tianon/docker-brew-ubuntu-core'
