@@ -90,6 +90,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:12.04`
 
@@ -163,6 +164,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:precise-20160217`
 
@@ -236,6 +238,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:precise`
 
@@ -309,6 +312,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:14.04.4`
 
@@ -382,6 +386,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:14.04`
 
@@ -455,6 +460,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:trusty-20160217`
 
@@ -528,6 +534,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:trusty`
 
@@ -601,6 +608,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:latest`
 
@@ -674,6 +682,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:15.10`
 
@@ -747,6 +756,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:wily-20160217`
 
@@ -820,6 +830,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:wily`
 
@@ -893,6 +904,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:16.04`
 
@@ -966,6 +978,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:xenial-20160217.2`
 
@@ -1039,6 +1052,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:xenial`
 
@@ -1112,3 +1126,4 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

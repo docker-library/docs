@@ -995,7 +995,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0c33812a58e54b6f39042f623cfd3baa8824d81d3772ed7336d89eb023c2b80c`
 -	v2 Content-Length: 158.0 B
--	v2 Last-Modified: Mon, 11 Jan 2016 21:36:22 GMT
 
 #### `660d4169827e67ede49c69155bba9fda3e128745236fd60ae7bea66a37beb82f`
 
@@ -1288,7 +1287,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0c33812a58e54b6f39042f623cfd3baa8824d81d3772ed7336d89eb023c2b80c`
 -	v2 Content-Length: 158.0 B
--	v2 Last-Modified: Mon, 11 Jan 2016 21:36:22 GMT
 
 #### `660d4169827e67ede49c69155bba9fda3e128745236fd60ae7bea66a37beb82f`
 
@@ -1581,7 +1579,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0c33812a58e54b6f39042f623cfd3baa8824d81d3772ed7336d89eb023c2b80c`
 -	v2 Content-Length: 158.0 B
--	v2 Last-Modified: Mon, 11 Jan 2016 21:36:22 GMT
 
 #### `660d4169827e67ede49c69155bba9fda3e128745236fd60ae7bea66a37beb82f`
 

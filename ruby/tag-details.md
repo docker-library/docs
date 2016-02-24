@@ -4715,6 +4715,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:315a16fdc778e498822bd7c743850f7a90bf8d82a2bada72b50171899854a381`
 -	v2 Content-Length: 162.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:57:13 GMT
 
 #### `a532a327db04f04fc142a244e26bbc75ca28b32db12a724c9a3f84c09d3c6b79`
 
@@ -4980,6 +4981,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:315a16fdc778e498822bd7c743850f7a90bf8d82a2bada72b50171899854a381`
 -	v2 Content-Length: 162.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:57:13 GMT
 
 #### `a532a327db04f04fc142a244e26bbc75ca28b32db12a724c9a3f84c09d3c6b79`
 
