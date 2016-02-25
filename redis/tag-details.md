@@ -24,11 +24,11 @@
 ## `redis:2.8.23`
 
 ```console
-$ docker pull library/redis@sha256:0eb7c5102915ae3f7fcd94ff0e2d09987ac552801528b8b05cb4a201a3891c59
+$ docker pull library/redis@sha256:fc7b243f4515121742849f0873345f3cdbb09173cfd1983cad4e3554ac2c337f
 ```
 
--	Total Virtual Size: 151.1 MB (151065474 bytes)
--	Total v2 Content-Length: 61.7 MB (61692488 bytes)
+-	Total Virtual Size: 151.1 MB (151065559 bytes)
+-	Total v2 Content-Length: 61.7 MB (61692550 bytes)
 
 ### Layers (17)
 
@@ -219,53 +219,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d2dc323ef9b7972c2b68beb926c583e1867bbf2b039632e11417b2f5c21e128a`
+#### `83134fbde0977d255b5c19228850098fea04862e6619c2fd5656ae94ef4c1101`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:10 GMT
+-	Created: Wed, 24 Feb 2016 23:12:17 GMT
 -	Parent Layer: `bdc075001b824b3d51b93c3250a0d7470c6023b48849197b04c71b7b05c969b3`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:2a13df011fbc6fb648ee267e89848bd05b6bc2bca9bd94d47873bb5ce3ff5f39`
--	v2 Content-Length: 198.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `8567dcc6fdc4de5ae41855fe24266dc51a124e0889cba6346c730721c778a076`
+#### `5be963b1094561cb831f39a5146891ea9d7e0502f578a94680674a9e29d51128`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:10 GMT
--	Parent Layer: `d2dc323ef9b7972c2b68beb926c583e1867bbf2b039632e11417b2f5c21e128a`
+-	Created: Wed, 24 Feb 2016 23:12:18 GMT
+-	Parent Layer: `83134fbde0977d255b5c19228850098fea04862e6619c2fd5656ae94ef4c1101`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `1b1054b27a1bee4c21e7f897aec38973ef527506655984aeb994f13a6a26f29b`
+#### `06eb8d54a54d3e055a78efa7a8e2a6421646266422c7ced699f456f6c4c7ee19`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:11 GMT
--	Parent Layer: `8567dcc6fdc4de5ae41855fe24266dc51a124e0889cba6346c730721c778a076`
+-	Created: Wed, 24 Feb 2016 23:12:18 GMT
+-	Parent Layer: `5be963b1094561cb831f39a5146891ea9d7e0502f578a94680674a9e29d51128`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `1d6bbba6a3fd57eb015daaf6244787dee6aff18ece030f8b8f52a2ee0a4c19e6`
+#### `02dbdfb6473bb6f6be1b593e894f47000bdfb222f7dcc42cdf4dadbcf98d9c0c`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:12 GMT
--	Parent Layer: `1b1054b27a1bee4c21e7f897aec38973ef527506655984aeb994f13a6a26f29b`
+-	Created: Wed, 24 Feb 2016 23:12:19 GMT
+-	Parent Layer: `06eb8d54a54d3e055a78efa7a8e2a6421646266422c7ced699f456f6c4c7ee19`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -274,11 +274,11 @@ CMD ["redis-server"]
 ## `redis:2.8`
 
 ```console
-$ docker pull library/redis@sha256:fb4681f5ed441dd21d4973df973f47f61219443fa679c59bc7a299f17bd9b077
+$ docker pull library/redis@sha256:f5e580393ea57ec82414c17bae9250d4edad4dbd2ff39b4e3005f452a5be19a1
 ```
 
--	Total Virtual Size: 151.1 MB (151065474 bytes)
--	Total v2 Content-Length: 61.7 MB (61692488 bytes)
+-	Total Virtual Size: 151.1 MB (151065559 bytes)
+-	Total v2 Content-Length: 61.7 MB (61692550 bytes)
 
 ### Layers (17)
 
@@ -469,53 +469,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d2dc323ef9b7972c2b68beb926c583e1867bbf2b039632e11417b2f5c21e128a`
+#### `83134fbde0977d255b5c19228850098fea04862e6619c2fd5656ae94ef4c1101`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:10 GMT
+-	Created: Wed, 24 Feb 2016 23:12:17 GMT
 -	Parent Layer: `bdc075001b824b3d51b93c3250a0d7470c6023b48849197b04c71b7b05c969b3`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:2a13df011fbc6fb648ee267e89848bd05b6bc2bca9bd94d47873bb5ce3ff5f39`
--	v2 Content-Length: 198.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `8567dcc6fdc4de5ae41855fe24266dc51a124e0889cba6346c730721c778a076`
+#### `5be963b1094561cb831f39a5146891ea9d7e0502f578a94680674a9e29d51128`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:10 GMT
--	Parent Layer: `d2dc323ef9b7972c2b68beb926c583e1867bbf2b039632e11417b2f5c21e128a`
+-	Created: Wed, 24 Feb 2016 23:12:18 GMT
+-	Parent Layer: `83134fbde0977d255b5c19228850098fea04862e6619c2fd5656ae94ef4c1101`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `1b1054b27a1bee4c21e7f897aec38973ef527506655984aeb994f13a6a26f29b`
+#### `06eb8d54a54d3e055a78efa7a8e2a6421646266422c7ced699f456f6c4c7ee19`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:11 GMT
--	Parent Layer: `8567dcc6fdc4de5ae41855fe24266dc51a124e0889cba6346c730721c778a076`
+-	Created: Wed, 24 Feb 2016 23:12:18 GMT
+-	Parent Layer: `5be963b1094561cb831f39a5146891ea9d7e0502f578a94680674a9e29d51128`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `1d6bbba6a3fd57eb015daaf6244787dee6aff18ece030f8b8f52a2ee0a4c19e6`
+#### `02dbdfb6473bb6f6be1b593e894f47000bdfb222f7dcc42cdf4dadbcf98d9c0c`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:12 GMT
--	Parent Layer: `1b1054b27a1bee4c21e7f897aec38973ef527506655984aeb994f13a6a26f29b`
+-	Created: Wed, 24 Feb 2016 23:12:19 GMT
+-	Parent Layer: `06eb8d54a54d3e055a78efa7a8e2a6421646266422c7ced699f456f6c4c7ee19`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -524,11 +524,11 @@ CMD ["redis-server"]
 ## `redis:2`
 
 ```console
-$ docker pull library/redis@sha256:1da626d23663ea258e7f937809198d27858fa663d3eef52d4d5c622a48918a16
+$ docker pull library/redis@sha256:2efa5cd8dd31e539b8749ecb008c61a882597175a87df482933eb06dcdbcd57a
 ```
 
--	Total Virtual Size: 151.1 MB (151065474 bytes)
--	Total v2 Content-Length: 61.7 MB (61692488 bytes)
+-	Total Virtual Size: 151.1 MB (151065559 bytes)
+-	Total v2 Content-Length: 61.7 MB (61692550 bytes)
 
 ### Layers (17)
 
@@ -719,53 +719,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d2dc323ef9b7972c2b68beb926c583e1867bbf2b039632e11417b2f5c21e128a`
+#### `83134fbde0977d255b5c19228850098fea04862e6619c2fd5656ae94ef4c1101`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:10 GMT
+-	Created: Wed, 24 Feb 2016 23:12:17 GMT
 -	Parent Layer: `bdc075001b824b3d51b93c3250a0d7470c6023b48849197b04c71b7b05c969b3`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:2a13df011fbc6fb648ee267e89848bd05b6bc2bca9bd94d47873bb5ce3ff5f39`
--	v2 Content-Length: 198.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `8567dcc6fdc4de5ae41855fe24266dc51a124e0889cba6346c730721c778a076`
+#### `5be963b1094561cb831f39a5146891ea9d7e0502f578a94680674a9e29d51128`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:10 GMT
--	Parent Layer: `d2dc323ef9b7972c2b68beb926c583e1867bbf2b039632e11417b2f5c21e128a`
+-	Created: Wed, 24 Feb 2016 23:12:18 GMT
+-	Parent Layer: `83134fbde0977d255b5c19228850098fea04862e6619c2fd5656ae94ef4c1101`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `1b1054b27a1bee4c21e7f897aec38973ef527506655984aeb994f13a6a26f29b`
+#### `06eb8d54a54d3e055a78efa7a8e2a6421646266422c7ced699f456f6c4c7ee19`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:11 GMT
--	Parent Layer: `8567dcc6fdc4de5ae41855fe24266dc51a124e0889cba6346c730721c778a076`
+-	Created: Wed, 24 Feb 2016 23:12:18 GMT
+-	Parent Layer: `5be963b1094561cb831f39a5146891ea9d7e0502f578a94680674a9e29d51128`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `1d6bbba6a3fd57eb015daaf6244787dee6aff18ece030f8b8f52a2ee0a4c19e6`
+#### `02dbdfb6473bb6f6be1b593e894f47000bdfb222f7dcc42cdf4dadbcf98d9c0c`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:15:12 GMT
--	Parent Layer: `1b1054b27a1bee4c21e7f897aec38973ef527506655984aeb994f13a6a26f29b`
+-	Created: Wed, 24 Feb 2016 23:12:19 GMT
+-	Parent Layer: `06eb8d54a54d3e055a78efa7a8e2a6421646266422c7ced699f456f6c4c7ee19`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -774,11 +774,11 @@ CMD ["redis-server"]
 ## `redis:2.8.23-32bit`
 
 ```console
-$ docker pull library/redis@sha256:d0f8f772eb7d58691195094be9b0f4eea1ec3b4efbb1618014a3e8210bb76105
+$ docker pull library/redis@sha256:d603b1116c022b055166214ddf3138bebfac45f5ab81b45240f8d4eaa1c51dbb
 ```
 
--	Total Virtual Size: 158.8 MB (158794035 bytes)
--	Total v2 Content-Length: 65.5 MB (65541046 bytes)
+-	Total Virtual Size: 158.8 MB (158794120 bytes)
+-	Total v2 Content-Length: 65.5 MB (65541107 bytes)
 
 ### Layers (17)
 
@@ -970,53 +970,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `829b716ed629deb9c82365b644979376fa0134b8f9971f66c49c4439e7528dc3`
+#### `96c16bb974140c4a46314f94874e3b23364cd89968af369fad3a6769247e452c`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:05 GMT
+-	Created: Wed, 24 Feb 2016 23:13:59 GMT
 -	Parent Layer: `c0fe2dfff20e9b60aa3d099cc300f59e8ace5bbe9ce28e20b95ef647d914ac75`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:d56ed431390d028d69d2e0bde0dce713052d63edcd5fb8f1057b92a32ff5d2cf`
--	v2 Content-Length: 199.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `4ea12bfc24b6caec1d457fd0d9205f1d1f47e1e296569cc3d993989eb2ca0229`
+#### `ae331537c6e298da0e6e8da7d236763581819330ba73033b1e443132d73d6b53`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:06 GMT
--	Parent Layer: `829b716ed629deb9c82365b644979376fa0134b8f9971f66c49c4439e7528dc3`
+-	Created: Wed, 24 Feb 2016 23:14:00 GMT
+-	Parent Layer: `96c16bb974140c4a46314f94874e3b23364cd89968af369fad3a6769247e452c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `84da04f8707f62060318e05acf51467367cdf6005d4cd18e471208b25e72e840`
+#### `d50a11b5fe81a4cfd03f5510ede0e4745ce1773d87cbac6c41764b697b4d1913`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:06 GMT
--	Parent Layer: `4ea12bfc24b6caec1d457fd0d9205f1d1f47e1e296569cc3d993989eb2ca0229`
+-	Created: Wed, 24 Feb 2016 23:14:01 GMT
+-	Parent Layer: `ae331537c6e298da0e6e8da7d236763581819330ba73033b1e443132d73d6b53`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `456e6e0667c8cc3f3e48848e790e7fb90c8b55314bb2b598fbf0774106a86a97`
+#### `0645f3226485262c033938f1bd170235eb11847d672ff58bf7723fad0f44e797`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:07 GMT
--	Parent Layer: `84da04f8707f62060318e05acf51467367cdf6005d4cd18e471208b25e72e840`
+-	Created: Wed, 24 Feb 2016 23:14:01 GMT
+-	Parent Layer: `d50a11b5fe81a4cfd03f5510ede0e4745ce1773d87cbac6c41764b697b4d1913`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1025,11 +1025,11 @@ CMD ["redis-server"]
 ## `redis:2.8-32bit`
 
 ```console
-$ docker pull library/redis@sha256:92664f945e66b8fce4d180c5352fbe47bb38fc4df187eab05cca75980bb9881f
+$ docker pull library/redis@sha256:ccf0ccf52fca55508a73bbcb6dfd902955271a7fba085de19e78b9acf6d0c8e4
 ```
 
--	Total Virtual Size: 158.8 MB (158794035 bytes)
--	Total v2 Content-Length: 65.5 MB (65541046 bytes)
+-	Total Virtual Size: 158.8 MB (158794120 bytes)
+-	Total v2 Content-Length: 65.5 MB (65541107 bytes)
 
 ### Layers (17)
 
@@ -1221,53 +1221,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `829b716ed629deb9c82365b644979376fa0134b8f9971f66c49c4439e7528dc3`
+#### `96c16bb974140c4a46314f94874e3b23364cd89968af369fad3a6769247e452c`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:05 GMT
+-	Created: Wed, 24 Feb 2016 23:13:59 GMT
 -	Parent Layer: `c0fe2dfff20e9b60aa3d099cc300f59e8ace5bbe9ce28e20b95ef647d914ac75`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:d56ed431390d028d69d2e0bde0dce713052d63edcd5fb8f1057b92a32ff5d2cf`
--	v2 Content-Length: 199.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `4ea12bfc24b6caec1d457fd0d9205f1d1f47e1e296569cc3d993989eb2ca0229`
+#### `ae331537c6e298da0e6e8da7d236763581819330ba73033b1e443132d73d6b53`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:06 GMT
--	Parent Layer: `829b716ed629deb9c82365b644979376fa0134b8f9971f66c49c4439e7528dc3`
+-	Created: Wed, 24 Feb 2016 23:14:00 GMT
+-	Parent Layer: `96c16bb974140c4a46314f94874e3b23364cd89968af369fad3a6769247e452c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `84da04f8707f62060318e05acf51467367cdf6005d4cd18e471208b25e72e840`
+#### `d50a11b5fe81a4cfd03f5510ede0e4745ce1773d87cbac6c41764b697b4d1913`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:06 GMT
--	Parent Layer: `4ea12bfc24b6caec1d457fd0d9205f1d1f47e1e296569cc3d993989eb2ca0229`
+-	Created: Wed, 24 Feb 2016 23:14:01 GMT
+-	Parent Layer: `ae331537c6e298da0e6e8da7d236763581819330ba73033b1e443132d73d6b53`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `456e6e0667c8cc3f3e48848e790e7fb90c8b55314bb2b598fbf0774106a86a97`
+#### `0645f3226485262c033938f1bd170235eb11847d672ff58bf7723fad0f44e797`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:07 GMT
--	Parent Layer: `84da04f8707f62060318e05acf51467367cdf6005d4cd18e471208b25e72e840`
+-	Created: Wed, 24 Feb 2016 23:14:01 GMT
+-	Parent Layer: `d50a11b5fe81a4cfd03f5510ede0e4745ce1773d87cbac6c41764b697b4d1913`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1276,11 +1276,11 @@ CMD ["redis-server"]
 ## `redis:2-32bit`
 
 ```console
-$ docker pull library/redis@sha256:e91173417b790094bff8b5e7d871222ad959d18e4f66f9ba3dba4454ca90e446
+$ docker pull library/redis@sha256:ada6994a6d68401cb848c0ca0caa18d8e513aed91185a8f92d7999e7dcc4405b
 ```
 
--	Total Virtual Size: 158.8 MB (158794035 bytes)
--	Total v2 Content-Length: 65.5 MB (65541046 bytes)
+-	Total Virtual Size: 158.8 MB (158794120 bytes)
+-	Total v2 Content-Length: 65.5 MB (65541107 bytes)
 
 ### Layers (17)
 
@@ -1472,53 +1472,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `829b716ed629deb9c82365b644979376fa0134b8f9971f66c49c4439e7528dc3`
+#### `96c16bb974140c4a46314f94874e3b23364cd89968af369fad3a6769247e452c`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:05 GMT
+-	Created: Wed, 24 Feb 2016 23:13:59 GMT
 -	Parent Layer: `c0fe2dfff20e9b60aa3d099cc300f59e8ace5bbe9ce28e20b95ef647d914ac75`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:d56ed431390d028d69d2e0bde0dce713052d63edcd5fb8f1057b92a32ff5d2cf`
--	v2 Content-Length: 199.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `4ea12bfc24b6caec1d457fd0d9205f1d1f47e1e296569cc3d993989eb2ca0229`
+#### `ae331537c6e298da0e6e8da7d236763581819330ba73033b1e443132d73d6b53`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:06 GMT
--	Parent Layer: `829b716ed629deb9c82365b644979376fa0134b8f9971f66c49c4439e7528dc3`
+-	Created: Wed, 24 Feb 2016 23:14:00 GMT
+-	Parent Layer: `96c16bb974140c4a46314f94874e3b23364cd89968af369fad3a6769247e452c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `84da04f8707f62060318e05acf51467367cdf6005d4cd18e471208b25e72e840`
+#### `d50a11b5fe81a4cfd03f5510ede0e4745ce1773d87cbac6c41764b697b4d1913`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:06 GMT
--	Parent Layer: `4ea12bfc24b6caec1d457fd0d9205f1d1f47e1e296569cc3d993989eb2ca0229`
+-	Created: Wed, 24 Feb 2016 23:14:01 GMT
+-	Parent Layer: `ae331537c6e298da0e6e8da7d236763581819330ba73033b1e443132d73d6b53`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `456e6e0667c8cc3f3e48848e790e7fb90c8b55314bb2b598fbf0774106a86a97`
+#### `0645f3226485262c033938f1bd170235eb11847d672ff58bf7723fad0f44e797`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:20:07 GMT
--	Parent Layer: `84da04f8707f62060318e05acf51467367cdf6005d4cd18e471208b25e72e840`
+-	Created: Wed, 24 Feb 2016 23:14:01 GMT
+-	Parent Layer: `d50a11b5fe81a4cfd03f5510ede0e4745ce1773d87cbac6c41764b697b4d1913`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1527,11 +1527,11 @@ CMD ["redis-server"]
 ## `redis:3.0.7`
 
 ```console
-$ docker pull library/redis@sha256:ff3d42ca769804ad5ebaa3f665f338683a72731ce2d25e2e675ef1d490a1970f
+$ docker pull library/redis@sha256:2fe8d96a427bb2469ef1b38d49fd6c3862328384b0b7b6632d06951089ede4a2
 ```
 
--	Total Virtual Size: 151.3 MB (151331474 bytes)
--	Total v2 Content-Length: 61.8 MB (61801133 bytes)
+-	Total Virtual Size: 151.3 MB (151331559 bytes)
+-	Total v2 Content-Length: 61.8 MB (61801197 bytes)
 
 ### Layers (17)
 
@@ -1722,53 +1722,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b973ccd5e249483e158e22bc0ba5e7b4ab1ead8b10df50e3a5e094cf3eabdc7e`
+#### `14dc0c78f3ae90554a4b7711eb9c15527ae4af6af58eab22476e879e9512a23d`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:07 GMT
+-	Created: Wed, 24 Feb 2016 23:15:42 GMT
 -	Parent Layer: `dd52a970460bca5d60a9f99ecfa2a8ae71c543c8347753ccd5ea54835f321453`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:a1a961e320bc549c80d2b5ba9ba1cb8d2d4a8b73f1bebe8715b7b398508e2d3e`
--	v2 Content-Length: 196.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `6018782c00edc2ca748daceee250ded1a8fdb6f99384b7a2ffeffd5df9848f93`
+#### `d9d4ee0d4f37e12b8eecbdea83cc0a21529c369c810df0880c4c49176b52551a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:08 GMT
--	Parent Layer: `b973ccd5e249483e158e22bc0ba5e7b4ab1ead8b10df50e3a5e094cf3eabdc7e`
+-	Created: Wed, 24 Feb 2016 23:15:42 GMT
+-	Parent Layer: `14dc0c78f3ae90554a4b7711eb9c15527ae4af6af58eab22476e879e9512a23d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `842fb035cd1fd49211cbb846be044af44115793284e84ea73abfea9279cf69ef`
+#### `cd2f51e684003d89d0e6de931d6ab4198bb932fed603aea4623316682a887ac2`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:08 GMT
--	Parent Layer: `6018782c00edc2ca748daceee250ded1a8fdb6f99384b7a2ffeffd5df9848f93`
+-	Created: Wed, 24 Feb 2016 23:15:43 GMT
+-	Parent Layer: `d9d4ee0d4f37e12b8eecbdea83cc0a21529c369c810df0880c4c49176b52551a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a99b701e483934b05c3bc74bd651626104bd2cd9cf02e192ab10a6dfccc824ff`
+#### `56b1d94012a94090c62b3b607c283737d0f508b0ecc6bbcbf9297b2876b86a95`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:09 GMT
--	Parent Layer: `842fb035cd1fd49211cbb846be044af44115793284e84ea73abfea9279cf69ef`
+-	Created: Wed, 24 Feb 2016 23:15:43 GMT
+-	Parent Layer: `cd2f51e684003d89d0e6de931d6ab4198bb932fed603aea4623316682a887ac2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1777,11 +1777,11 @@ CMD ["redis-server"]
 ## `redis:3.0`
 
 ```console
-$ docker pull library/redis@sha256:da36ce3b4a7aaad6a02615b784f6fe219d7e1aa545310f559b81438f3f12cc4f
+$ docker pull library/redis@sha256:399e922fee062994660b1fd7c75c5b35ca872095cec0b67c820cdc9cbc74a738
 ```
 
--	Total Virtual Size: 151.3 MB (151331474 bytes)
--	Total v2 Content-Length: 61.8 MB (61801133 bytes)
+-	Total Virtual Size: 151.3 MB (151331559 bytes)
+-	Total v2 Content-Length: 61.8 MB (61801197 bytes)
 
 ### Layers (17)
 
@@ -1972,53 +1972,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b973ccd5e249483e158e22bc0ba5e7b4ab1ead8b10df50e3a5e094cf3eabdc7e`
+#### `14dc0c78f3ae90554a4b7711eb9c15527ae4af6af58eab22476e879e9512a23d`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:07 GMT
+-	Created: Wed, 24 Feb 2016 23:15:42 GMT
 -	Parent Layer: `dd52a970460bca5d60a9f99ecfa2a8ae71c543c8347753ccd5ea54835f321453`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:a1a961e320bc549c80d2b5ba9ba1cb8d2d4a8b73f1bebe8715b7b398508e2d3e`
--	v2 Content-Length: 196.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `6018782c00edc2ca748daceee250ded1a8fdb6f99384b7a2ffeffd5df9848f93`
+#### `d9d4ee0d4f37e12b8eecbdea83cc0a21529c369c810df0880c4c49176b52551a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:08 GMT
--	Parent Layer: `b973ccd5e249483e158e22bc0ba5e7b4ab1ead8b10df50e3a5e094cf3eabdc7e`
+-	Created: Wed, 24 Feb 2016 23:15:42 GMT
+-	Parent Layer: `14dc0c78f3ae90554a4b7711eb9c15527ae4af6af58eab22476e879e9512a23d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `842fb035cd1fd49211cbb846be044af44115793284e84ea73abfea9279cf69ef`
+#### `cd2f51e684003d89d0e6de931d6ab4198bb932fed603aea4623316682a887ac2`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:08 GMT
--	Parent Layer: `6018782c00edc2ca748daceee250ded1a8fdb6f99384b7a2ffeffd5df9848f93`
+-	Created: Wed, 24 Feb 2016 23:15:43 GMT
+-	Parent Layer: `d9d4ee0d4f37e12b8eecbdea83cc0a21529c369c810df0880c4c49176b52551a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a99b701e483934b05c3bc74bd651626104bd2cd9cf02e192ab10a6dfccc824ff`
+#### `56b1d94012a94090c62b3b607c283737d0f508b0ecc6bbcbf9297b2876b86a95`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:09 GMT
--	Parent Layer: `842fb035cd1fd49211cbb846be044af44115793284e84ea73abfea9279cf69ef`
+-	Created: Wed, 24 Feb 2016 23:15:43 GMT
+-	Parent Layer: `cd2f51e684003d89d0e6de931d6ab4198bb932fed603aea4623316682a887ac2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2027,11 +2027,11 @@ CMD ["redis-server"]
 ## `redis:3`
 
 ```console
-$ docker pull library/redis@sha256:63a7f212eb7367726fd504f2c9cdac50f1edd1264e834dc30438a858e5fcefce
+$ docker pull library/redis@sha256:0c63cf48f4c548c9293a371d97f6f81bc170ef3a412c65a99a2a2d3d2671fce9
 ```
 
--	Total Virtual Size: 151.3 MB (151331474 bytes)
--	Total v2 Content-Length: 61.8 MB (61801133 bytes)
+-	Total Virtual Size: 151.3 MB (151331559 bytes)
+-	Total v2 Content-Length: 61.8 MB (61801197 bytes)
 
 ### Layers (17)
 
@@ -2222,53 +2222,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b973ccd5e249483e158e22bc0ba5e7b4ab1ead8b10df50e3a5e094cf3eabdc7e`
+#### `14dc0c78f3ae90554a4b7711eb9c15527ae4af6af58eab22476e879e9512a23d`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:07 GMT
+-	Created: Wed, 24 Feb 2016 23:15:42 GMT
 -	Parent Layer: `dd52a970460bca5d60a9f99ecfa2a8ae71c543c8347753ccd5ea54835f321453`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:a1a961e320bc549c80d2b5ba9ba1cb8d2d4a8b73f1bebe8715b7b398508e2d3e`
--	v2 Content-Length: 196.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `6018782c00edc2ca748daceee250ded1a8fdb6f99384b7a2ffeffd5df9848f93`
+#### `d9d4ee0d4f37e12b8eecbdea83cc0a21529c369c810df0880c4c49176b52551a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:08 GMT
--	Parent Layer: `b973ccd5e249483e158e22bc0ba5e7b4ab1ead8b10df50e3a5e094cf3eabdc7e`
+-	Created: Wed, 24 Feb 2016 23:15:42 GMT
+-	Parent Layer: `14dc0c78f3ae90554a4b7711eb9c15527ae4af6af58eab22476e879e9512a23d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `842fb035cd1fd49211cbb846be044af44115793284e84ea73abfea9279cf69ef`
+#### `cd2f51e684003d89d0e6de931d6ab4198bb932fed603aea4623316682a887ac2`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:08 GMT
--	Parent Layer: `6018782c00edc2ca748daceee250ded1a8fdb6f99384b7a2ffeffd5df9848f93`
+-	Created: Wed, 24 Feb 2016 23:15:43 GMT
+-	Parent Layer: `d9d4ee0d4f37e12b8eecbdea83cc0a21529c369c810df0880c4c49176b52551a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a99b701e483934b05c3bc74bd651626104bd2cd9cf02e192ab10a6dfccc824ff`
+#### `56b1d94012a94090c62b3b607c283737d0f508b0ecc6bbcbf9297b2876b86a95`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:09 GMT
--	Parent Layer: `842fb035cd1fd49211cbb846be044af44115793284e84ea73abfea9279cf69ef`
+-	Created: Wed, 24 Feb 2016 23:15:43 GMT
+-	Parent Layer: `cd2f51e684003d89d0e6de931d6ab4198bb932fed603aea4623316682a887ac2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2277,11 +2277,11 @@ CMD ["redis-server"]
 ## `redis:latest`
 
 ```console
-$ docker pull library/redis@sha256:39140f3a10eca0cd62b9078c96948eea77e2e267075e4967c714ad1185ef4b42
+$ docker pull library/redis@sha256:11b4db3e6e6215399c62b2430e77ae1d910669e7be16d4e8bc77783c400be47a
 ```
 
--	Total Virtual Size: 151.3 MB (151331474 bytes)
--	Total v2 Content-Length: 61.8 MB (61801133 bytes)
+-	Total Virtual Size: 151.3 MB (151331559 bytes)
+-	Total v2 Content-Length: 61.8 MB (61801197 bytes)
 
 ### Layers (17)
 
@@ -2472,53 +2472,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b973ccd5e249483e158e22bc0ba5e7b4ab1ead8b10df50e3a5e094cf3eabdc7e`
+#### `14dc0c78f3ae90554a4b7711eb9c15527ae4af6af58eab22476e879e9512a23d`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:07 GMT
+-	Created: Wed, 24 Feb 2016 23:15:42 GMT
 -	Parent Layer: `dd52a970460bca5d60a9f99ecfa2a8ae71c543c8347753ccd5ea54835f321453`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:a1a961e320bc549c80d2b5ba9ba1cb8d2d4a8b73f1bebe8715b7b398508e2d3e`
--	v2 Content-Length: 196.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `6018782c00edc2ca748daceee250ded1a8fdb6f99384b7a2ffeffd5df9848f93`
+#### `d9d4ee0d4f37e12b8eecbdea83cc0a21529c369c810df0880c4c49176b52551a`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:08 GMT
--	Parent Layer: `b973ccd5e249483e158e22bc0ba5e7b4ab1ead8b10df50e3a5e094cf3eabdc7e`
+-	Created: Wed, 24 Feb 2016 23:15:42 GMT
+-	Parent Layer: `14dc0c78f3ae90554a4b7711eb9c15527ae4af6af58eab22476e879e9512a23d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `842fb035cd1fd49211cbb846be044af44115793284e84ea73abfea9279cf69ef`
+#### `cd2f51e684003d89d0e6de931d6ab4198bb932fed603aea4623316682a887ac2`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:08 GMT
--	Parent Layer: `6018782c00edc2ca748daceee250ded1a8fdb6f99384b7a2ffeffd5df9848f93`
+-	Created: Wed, 24 Feb 2016 23:15:43 GMT
+-	Parent Layer: `d9d4ee0d4f37e12b8eecbdea83cc0a21529c369c810df0880c4c49176b52551a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a99b701e483934b05c3bc74bd651626104bd2cd9cf02e192ab10a6dfccc824ff`
+#### `56b1d94012a94090c62b3b607c283737d0f508b0ecc6bbcbf9297b2876b86a95`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:23:09 GMT
--	Parent Layer: `842fb035cd1fd49211cbb846be044af44115793284e84ea73abfea9279cf69ef`
+-	Created: Wed, 24 Feb 2016 23:15:43 GMT
+-	Parent Layer: `cd2f51e684003d89d0e6de931d6ab4198bb932fed603aea4623316682a887ac2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2527,11 +2527,11 @@ CMD ["redis-server"]
 ## `redis:3.0.7-32bit`
 
 ```console
-$ docker pull library/redis@sha256:b95d84fe645e050da032fa44346ae7bd5dd9fc68a03dd75024b5bddecbbae527
+$ docker pull library/redis@sha256:519c56f59862eb8ccb7af40f672a962838d753bc5c88a522193459c141de6ce5
 ```
 
--	Total Virtual Size: 159.0 MB (158984395 bytes)
--	Total v2 Content-Length: 65.6 MB (65640100 bytes)
+-	Total Virtual Size: 159.0 MB (158984480 bytes)
+-	Total v2 Content-Length: 65.6 MB (65640161 bytes)
 
 ### Layers (17)
 
@@ -2723,53 +2723,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2c32cf4cec6bc59327d5577dd31773fd59724cfb42dd0dcbf95e4fc8daf99b73`
+#### `8b4ba7068a5517ea047e235b38e28ae86485d02bb2e31bb2d7fa14b164bb2a55`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:54 GMT
+-	Created: Wed, 24 Feb 2016 23:18:00 GMT
 -	Parent Layer: `49dfc1fada1cc0f953418fdb6fa5e82cfe21973c827eaf878e2c7e94c5a7d6de`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:d56ed431390d028d69d2e0bde0dce713052d63edcd5fb8f1057b92a32ff5d2cf`
--	v2 Content-Length: 199.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `f9f2400c59429e6add7956afc0f3691358a784cf4879f9fe1080fc7feb8332bb`
+#### `2f6915c85728dd8f935f430fb98a1d29614763bbc51af74ec1a95023d4269c7b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:55 GMT
--	Parent Layer: `2c32cf4cec6bc59327d5577dd31773fd59724cfb42dd0dcbf95e4fc8daf99b73`
+-	Created: Wed, 24 Feb 2016 23:18:00 GMT
+-	Parent Layer: `8b4ba7068a5517ea047e235b38e28ae86485d02bb2e31bb2d7fa14b164bb2a55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `733dd6ec4bc726fb273dd2dd1af122a66461d156da9985deed5b49ad8f07a18a`
+#### `761cbdfd2930c47924514a298b9007ccf3183d5a0b1a76dedd9112e9b25562d1`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:55 GMT
--	Parent Layer: `f9f2400c59429e6add7956afc0f3691358a784cf4879f9fe1080fc7feb8332bb`
+-	Created: Wed, 24 Feb 2016 23:18:01 GMT
+-	Parent Layer: `2f6915c85728dd8f935f430fb98a1d29614763bbc51af74ec1a95023d4269c7b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ebf96d9b1eedda9c1001102be9deddcd89067e3fb32122375b64f017f4742658`
+#### `e1f3d294d1c9dc4c364b1f0fc69f15d27a09ac443ef10cb6c736379128d30c29`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:56 GMT
--	Parent Layer: `733dd6ec4bc726fb273dd2dd1af122a66461d156da9985deed5b49ad8f07a18a`
+-	Created: Wed, 24 Feb 2016 23:18:01 GMT
+-	Parent Layer: `761cbdfd2930c47924514a298b9007ccf3183d5a0b1a76dedd9112e9b25562d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2778,11 +2778,11 @@ CMD ["redis-server"]
 ## `redis:3.0-32bit`
 
 ```console
-$ docker pull library/redis@sha256:51811739bc20bbebc7b3b320c192832347ecdb8753e83f1e2c957428f2bd6758
+$ docker pull library/redis@sha256:685c32750105e3748efd87ca35cda1ad4328f736ccd042a7475f74e14f3b239e
 ```
 
--	Total Virtual Size: 159.0 MB (158984395 bytes)
--	Total v2 Content-Length: 65.6 MB (65640100 bytes)
+-	Total Virtual Size: 159.0 MB (158984480 bytes)
+-	Total v2 Content-Length: 65.6 MB (65640161 bytes)
 
 ### Layers (17)
 
@@ -2974,53 +2974,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2c32cf4cec6bc59327d5577dd31773fd59724cfb42dd0dcbf95e4fc8daf99b73`
+#### `8b4ba7068a5517ea047e235b38e28ae86485d02bb2e31bb2d7fa14b164bb2a55`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:54 GMT
+-	Created: Wed, 24 Feb 2016 23:18:00 GMT
 -	Parent Layer: `49dfc1fada1cc0f953418fdb6fa5e82cfe21973c827eaf878e2c7e94c5a7d6de`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:d56ed431390d028d69d2e0bde0dce713052d63edcd5fb8f1057b92a32ff5d2cf`
--	v2 Content-Length: 199.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `f9f2400c59429e6add7956afc0f3691358a784cf4879f9fe1080fc7feb8332bb`
+#### `2f6915c85728dd8f935f430fb98a1d29614763bbc51af74ec1a95023d4269c7b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:55 GMT
--	Parent Layer: `2c32cf4cec6bc59327d5577dd31773fd59724cfb42dd0dcbf95e4fc8daf99b73`
+-	Created: Wed, 24 Feb 2016 23:18:00 GMT
+-	Parent Layer: `8b4ba7068a5517ea047e235b38e28ae86485d02bb2e31bb2d7fa14b164bb2a55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `733dd6ec4bc726fb273dd2dd1af122a66461d156da9985deed5b49ad8f07a18a`
+#### `761cbdfd2930c47924514a298b9007ccf3183d5a0b1a76dedd9112e9b25562d1`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:55 GMT
--	Parent Layer: `f9f2400c59429e6add7956afc0f3691358a784cf4879f9fe1080fc7feb8332bb`
+-	Created: Wed, 24 Feb 2016 23:18:01 GMT
+-	Parent Layer: `2f6915c85728dd8f935f430fb98a1d29614763bbc51af74ec1a95023d4269c7b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ebf96d9b1eedda9c1001102be9deddcd89067e3fb32122375b64f017f4742658`
+#### `e1f3d294d1c9dc4c364b1f0fc69f15d27a09ac443ef10cb6c736379128d30c29`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:56 GMT
--	Parent Layer: `733dd6ec4bc726fb273dd2dd1af122a66461d156da9985deed5b49ad8f07a18a`
+-	Created: Wed, 24 Feb 2016 23:18:01 GMT
+-	Parent Layer: `761cbdfd2930c47924514a298b9007ccf3183d5a0b1a76dedd9112e9b25562d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3029,11 +3029,11 @@ CMD ["redis-server"]
 ## `redis:3-32bit`
 
 ```console
-$ docker pull library/redis@sha256:a237bdde2c3f8c4f1ede382d9f4e6eb1c8180d5b18988e02ffdb75638e9b31e4
+$ docker pull library/redis@sha256:a6e3ee88025c0d24723abe11a1abf1eff42409edcf8a92ba7475b937b7e784d9
 ```
 
--	Total Virtual Size: 159.0 MB (158984395 bytes)
--	Total v2 Content-Length: 65.6 MB (65640100 bytes)
+-	Total Virtual Size: 159.0 MB (158984480 bytes)
+-	Total v2 Content-Length: 65.6 MB (65640161 bytes)
 
 ### Layers (17)
 
@@ -3225,53 +3225,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2c32cf4cec6bc59327d5577dd31773fd59724cfb42dd0dcbf95e4fc8daf99b73`
+#### `8b4ba7068a5517ea047e235b38e28ae86485d02bb2e31bb2d7fa14b164bb2a55`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:54 GMT
+-	Created: Wed, 24 Feb 2016 23:18:00 GMT
 -	Parent Layer: `49dfc1fada1cc0f953418fdb6fa5e82cfe21973c827eaf878e2c7e94c5a7d6de`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:d56ed431390d028d69d2e0bde0dce713052d63edcd5fb8f1057b92a32ff5d2cf`
--	v2 Content-Length: 199.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `f9f2400c59429e6add7956afc0f3691358a784cf4879f9fe1080fc7feb8332bb`
+#### `2f6915c85728dd8f935f430fb98a1d29614763bbc51af74ec1a95023d4269c7b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:55 GMT
--	Parent Layer: `2c32cf4cec6bc59327d5577dd31773fd59724cfb42dd0dcbf95e4fc8daf99b73`
+-	Created: Wed, 24 Feb 2016 23:18:00 GMT
+-	Parent Layer: `8b4ba7068a5517ea047e235b38e28ae86485d02bb2e31bb2d7fa14b164bb2a55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `733dd6ec4bc726fb273dd2dd1af122a66461d156da9985deed5b49ad8f07a18a`
+#### `761cbdfd2930c47924514a298b9007ccf3183d5a0b1a76dedd9112e9b25562d1`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:55 GMT
--	Parent Layer: `f9f2400c59429e6add7956afc0f3691358a784cf4879f9fe1080fc7feb8332bb`
+-	Created: Wed, 24 Feb 2016 23:18:01 GMT
+-	Parent Layer: `2f6915c85728dd8f935f430fb98a1d29614763bbc51af74ec1a95023d4269c7b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ebf96d9b1eedda9c1001102be9deddcd89067e3fb32122375b64f017f4742658`
+#### `e1f3d294d1c9dc4c364b1f0fc69f15d27a09ac443ef10cb6c736379128d30c29`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:56 GMT
--	Parent Layer: `733dd6ec4bc726fb273dd2dd1af122a66461d156da9985deed5b49ad8f07a18a`
+-	Created: Wed, 24 Feb 2016 23:18:01 GMT
+-	Parent Layer: `761cbdfd2930c47924514a298b9007ccf3183d5a0b1a76dedd9112e9b25562d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3280,11 +3280,11 @@ CMD ["redis-server"]
 ## `redis:32bit`
 
 ```console
-$ docker pull library/redis@sha256:bed1dff771b849374ed32488a7fec68a12ee1b6805896c59e6e0f513bb9d0e8a
+$ docker pull library/redis@sha256:1f9e5aa61c8486f57a0a6b214a657485b703c6e7d5c0e919428b9a9c17d4e53a
 ```
 
--	Total Virtual Size: 159.0 MB (158984395 bytes)
--	Total v2 Content-Length: 65.6 MB (65640100 bytes)
+-	Total Virtual Size: 159.0 MB (158984480 bytes)
+-	Total v2 Content-Length: 65.6 MB (65640161 bytes)
 
 ### Layers (17)
 
@@ -3476,53 +3476,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2c32cf4cec6bc59327d5577dd31773fd59724cfb42dd0dcbf95e4fc8daf99b73`
+#### `8b4ba7068a5517ea047e235b38e28ae86485d02bb2e31bb2d7fa14b164bb2a55`
 
 ```dockerfile
-COPY file:005b4fdd83cc15dfc9b52be34397df27bb1dc197c3f33850ac7eb4d326b77c65 in /entrypoint.sh
+COPY file:b5518eb80d5d1a35e1750a619dc98b82723dec4357bb55e23250518d9c406290 in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:54 GMT
+-	Created: Wed, 24 Feb 2016 23:18:00 GMT
 -	Parent Layer: `49dfc1fada1cc0f953418fdb6fa5e82cfe21973c827eaf878e2c7e94c5a7d6de`
 -	Docker Version: 1.9.1
--	Virtual Size: 109.0 B
--	v2 Blob: `sha256:d56ed431390d028d69d2e0bde0dce713052d63edcd5fb8f1057b92a32ff5d2cf`
--	v2 Content-Length: 199.0 B
+-	Virtual Size: 194.0 B
+-	v2 Blob: `sha256:8f359895dbf8bd1dfb5c422651d438a7e26d3f5d630caadd0f30b094b6cef4c7`
+-	v2 Content-Length: 260.0 B
 
-#### `f9f2400c59429e6add7956afc0f3691358a784cf4879f9fe1080fc7feb8332bb`
+#### `2f6915c85728dd8f935f430fb98a1d29614763bbc51af74ec1a95023d4269c7b`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:55 GMT
--	Parent Layer: `2c32cf4cec6bc59327d5577dd31773fd59724cfb42dd0dcbf95e4fc8daf99b73`
+-	Created: Wed, 24 Feb 2016 23:18:00 GMT
+-	Parent Layer: `8b4ba7068a5517ea047e235b38e28ae86485d02bb2e31bb2d7fa14b164bb2a55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `733dd6ec4bc726fb273dd2dd1af122a66461d156da9985deed5b49ad8f07a18a`
+#### `761cbdfd2930c47924514a298b9007ccf3183d5a0b1a76dedd9112e9b25562d1`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:55 GMT
--	Parent Layer: `f9f2400c59429e6add7956afc0f3691358a784cf4879f9fe1080fc7feb8332bb`
+-	Created: Wed, 24 Feb 2016 23:18:01 GMT
+-	Parent Layer: `2f6915c85728dd8f935f430fb98a1d29614763bbc51af74ec1a95023d4269c7b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ebf96d9b1eedda9c1001102be9deddcd89067e3fb32122375b64f017f4742658`
+#### `e1f3d294d1c9dc4c364b1f0fc69f15d27a09ac443ef10cb6c736379128d30c29`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 03:26:56 GMT
--	Parent Layer: `733dd6ec4bc726fb273dd2dd1af122a66461d156da9985deed5b49ad8f07a18a`
+-	Created: Wed, 24 Feb 2016 23:18:01 GMT
+-	Parent Layer: `761cbdfd2930c47924514a298b9007ccf3183d5a0b1a76dedd9112e9b25562d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3531,11 +3531,11 @@ CMD ["redis-server"]
 ## `redis:3.0.7-alpine`
 
 ```console
-$ docker pull library/redis@sha256:e6010765f3176fdbd643dd0b6e138e4586268639f7c1781b6bfa326d2df0aae9
+$ docker pull library/redis@sha256:e5ddf2a5b993dc1c20b16da945460f4ba4769046d23c9f62ff6948fc91616c89
 ```
 
--	Total Virtual Size: 16.0 MB (15950631 bytes)
--	Total v2 Content-Length: 6.0 MB (5976161 bytes)
+-	Total Virtual Size: 16.0 MB (15950706 bytes)
+-	Total v2 Content-Length: 6.0 MB (5976208 bytes)
 
 ### Layers (16)
 
@@ -3720,53 +3720,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9b8e5ead6790e5526c649e426911b79afd77b3dda655ef8c746b1d8bd2629238`
+#### `749b9156b8382346da4f390184452a93c635b1963c7b434675c33afdcbae338b`
 
 ```dockerfile
-COPY file:adb37b91831e728bde0ff40515bc580f159d7821840f64fca80e23c0fc08282c in /entrypoint.sh
+COPY file:439eb3f0b5599dea9962c4d9ceaf5bebb4c0c7e376292e21ca0f83decd967e4d in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:51 GMT
+-	Created: Wed, 24 Feb 2016 23:20:17 GMT
 -	Parent Layer: `add71e50da7d000b16f5321c430dee7caca787e424fdce8df5a038a175324918`
 -	Docker Version: 1.9.1
--	Virtual Size: 107.0 B
--	v2 Blob: `sha256:25ea54d054ffa585636f44d7901d2da7dce5e4ee54aad2d3c88c4dd66a7fbacd`
--	v2 Content-Length: 197.0 B
+-	Virtual Size: 182.0 B
+-	v2 Blob: `sha256:6fedafd6ed95c205896c61b1acf8524d827f3812a7fd34acf8a6780dc88b7e68`
+-	v2 Content-Length: 244.0 B
 
-#### `6399cb700ad241ac06959209a3d676d9f7cb5225bccb906f76d211f2bea86579`
+#### `8f2944094d07b1e205da9c5f410ef58059d5f8f7b39523f45750270e3570cd28`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:51 GMT
--	Parent Layer: `9b8e5ead6790e5526c649e426911b79afd77b3dda655ef8c746b1d8bd2629238`
+-	Created: Wed, 24 Feb 2016 23:20:18 GMT
+-	Parent Layer: `749b9156b8382346da4f390184452a93c635b1963c7b434675c33afdcbae338b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7192a573a14ea51c6062bc783d42d9cd18eab663f55cb86cc56434bd9bd31d0d`
+#### `8000fa9f7186f0a5ab9f600a594920b5868b706dc987ab2a3cad5f17cc83f368`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:52 GMT
--	Parent Layer: `6399cb700ad241ac06959209a3d676d9f7cb5225bccb906f76d211f2bea86579`
+-	Created: Wed, 24 Feb 2016 23:20:19 GMT
+-	Parent Layer: `8f2944094d07b1e205da9c5f410ef58059d5f8f7b39523f45750270e3570cd28`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e5101bb4cf01b2f911c361a2a3d09ee34a8f23213bdb644a3a10d19a4508a91d`
+#### `267a606f80f0940cd27876951e9d5a13aab995f461bc93286f6806453217c8e6`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:53 GMT
--	Parent Layer: `7192a573a14ea51c6062bc783d42d9cd18eab663f55cb86cc56434bd9bd31d0d`
+-	Created: Wed, 24 Feb 2016 23:20:19 GMT
+-	Parent Layer: `8000fa9f7186f0a5ab9f600a594920b5868b706dc987ab2a3cad5f17cc83f368`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3775,11 +3775,11 @@ CMD ["redis-server"]
 ## `redis:3.0-alpine`
 
 ```console
-$ docker pull library/redis@sha256:929e533f904cdb92bcbb14732464b2ff91b9af264bbefc24c9d29585d578aaac
+$ docker pull library/redis@sha256:29f8541837f50db8ed3c43a8a81df03990195d0e9823cb632515895184e1c71b
 ```
 
--	Total Virtual Size: 16.0 MB (15950631 bytes)
--	Total v2 Content-Length: 6.0 MB (5976161 bytes)
+-	Total Virtual Size: 16.0 MB (15950706 bytes)
+-	Total v2 Content-Length: 6.0 MB (5976208 bytes)
 
 ### Layers (16)
 
@@ -3964,53 +3964,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9b8e5ead6790e5526c649e426911b79afd77b3dda655ef8c746b1d8bd2629238`
+#### `749b9156b8382346da4f390184452a93c635b1963c7b434675c33afdcbae338b`
 
 ```dockerfile
-COPY file:adb37b91831e728bde0ff40515bc580f159d7821840f64fca80e23c0fc08282c in /entrypoint.sh
+COPY file:439eb3f0b5599dea9962c4d9ceaf5bebb4c0c7e376292e21ca0f83decd967e4d in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:51 GMT
+-	Created: Wed, 24 Feb 2016 23:20:17 GMT
 -	Parent Layer: `add71e50da7d000b16f5321c430dee7caca787e424fdce8df5a038a175324918`
 -	Docker Version: 1.9.1
--	Virtual Size: 107.0 B
--	v2 Blob: `sha256:25ea54d054ffa585636f44d7901d2da7dce5e4ee54aad2d3c88c4dd66a7fbacd`
--	v2 Content-Length: 197.0 B
+-	Virtual Size: 182.0 B
+-	v2 Blob: `sha256:6fedafd6ed95c205896c61b1acf8524d827f3812a7fd34acf8a6780dc88b7e68`
+-	v2 Content-Length: 244.0 B
 
-#### `6399cb700ad241ac06959209a3d676d9f7cb5225bccb906f76d211f2bea86579`
+#### `8f2944094d07b1e205da9c5f410ef58059d5f8f7b39523f45750270e3570cd28`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:51 GMT
--	Parent Layer: `9b8e5ead6790e5526c649e426911b79afd77b3dda655ef8c746b1d8bd2629238`
+-	Created: Wed, 24 Feb 2016 23:20:18 GMT
+-	Parent Layer: `749b9156b8382346da4f390184452a93c635b1963c7b434675c33afdcbae338b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7192a573a14ea51c6062bc783d42d9cd18eab663f55cb86cc56434bd9bd31d0d`
+#### `8000fa9f7186f0a5ab9f600a594920b5868b706dc987ab2a3cad5f17cc83f368`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:52 GMT
--	Parent Layer: `6399cb700ad241ac06959209a3d676d9f7cb5225bccb906f76d211f2bea86579`
+-	Created: Wed, 24 Feb 2016 23:20:19 GMT
+-	Parent Layer: `8f2944094d07b1e205da9c5f410ef58059d5f8f7b39523f45750270e3570cd28`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e5101bb4cf01b2f911c361a2a3d09ee34a8f23213bdb644a3a10d19a4508a91d`
+#### `267a606f80f0940cd27876951e9d5a13aab995f461bc93286f6806453217c8e6`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:53 GMT
--	Parent Layer: `7192a573a14ea51c6062bc783d42d9cd18eab663f55cb86cc56434bd9bd31d0d`
+-	Created: Wed, 24 Feb 2016 23:20:19 GMT
+-	Parent Layer: `8000fa9f7186f0a5ab9f600a594920b5868b706dc987ab2a3cad5f17cc83f368`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4019,11 +4019,11 @@ CMD ["redis-server"]
 ## `redis:3-alpine`
 
 ```console
-$ docker pull library/redis@sha256:088347995be1976afab73f13371a28505322913ddea78aeadbd2587f8e46b448
+$ docker pull library/redis@sha256:c2f492af312054c9a653ac7e857f530f354f623845b807c35db78df3fd11a291
 ```
 
--	Total Virtual Size: 16.0 MB (15950631 bytes)
--	Total v2 Content-Length: 6.0 MB (5976161 bytes)
+-	Total Virtual Size: 16.0 MB (15950706 bytes)
+-	Total v2 Content-Length: 6.0 MB (5976208 bytes)
 
 ### Layers (16)
 
@@ -4208,53 +4208,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9b8e5ead6790e5526c649e426911b79afd77b3dda655ef8c746b1d8bd2629238`
+#### `749b9156b8382346da4f390184452a93c635b1963c7b434675c33afdcbae338b`
 
 ```dockerfile
-COPY file:adb37b91831e728bde0ff40515bc580f159d7821840f64fca80e23c0fc08282c in /entrypoint.sh
+COPY file:439eb3f0b5599dea9962c4d9ceaf5bebb4c0c7e376292e21ca0f83decd967e4d in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:51 GMT
+-	Created: Wed, 24 Feb 2016 23:20:17 GMT
 -	Parent Layer: `add71e50da7d000b16f5321c430dee7caca787e424fdce8df5a038a175324918`
 -	Docker Version: 1.9.1
--	Virtual Size: 107.0 B
--	v2 Blob: `sha256:25ea54d054ffa585636f44d7901d2da7dce5e4ee54aad2d3c88c4dd66a7fbacd`
--	v2 Content-Length: 197.0 B
+-	Virtual Size: 182.0 B
+-	v2 Blob: `sha256:6fedafd6ed95c205896c61b1acf8524d827f3812a7fd34acf8a6780dc88b7e68`
+-	v2 Content-Length: 244.0 B
 
-#### `6399cb700ad241ac06959209a3d676d9f7cb5225bccb906f76d211f2bea86579`
+#### `8f2944094d07b1e205da9c5f410ef58059d5f8f7b39523f45750270e3570cd28`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:51 GMT
--	Parent Layer: `9b8e5ead6790e5526c649e426911b79afd77b3dda655ef8c746b1d8bd2629238`
+-	Created: Wed, 24 Feb 2016 23:20:18 GMT
+-	Parent Layer: `749b9156b8382346da4f390184452a93c635b1963c7b434675c33afdcbae338b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7192a573a14ea51c6062bc783d42d9cd18eab663f55cb86cc56434bd9bd31d0d`
+#### `8000fa9f7186f0a5ab9f600a594920b5868b706dc987ab2a3cad5f17cc83f368`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:52 GMT
--	Parent Layer: `6399cb700ad241ac06959209a3d676d9f7cb5225bccb906f76d211f2bea86579`
+-	Created: Wed, 24 Feb 2016 23:20:19 GMT
+-	Parent Layer: `8f2944094d07b1e205da9c5f410ef58059d5f8f7b39523f45750270e3570cd28`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e5101bb4cf01b2f911c361a2a3d09ee34a8f23213bdb644a3a10d19a4508a91d`
+#### `267a606f80f0940cd27876951e9d5a13aab995f461bc93286f6806453217c8e6`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:53 GMT
--	Parent Layer: `7192a573a14ea51c6062bc783d42d9cd18eab663f55cb86cc56434bd9bd31d0d`
+-	Created: Wed, 24 Feb 2016 23:20:19 GMT
+-	Parent Layer: `8000fa9f7186f0a5ab9f600a594920b5868b706dc987ab2a3cad5f17cc83f368`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4263,11 +4263,11 @@ CMD ["redis-server"]
 ## `redis:alpine`
 
 ```console
-$ docker pull library/redis@sha256:491f46618297b21fa23e9f9c0480e1a773b08bfa821211bca140553a1f90b4d5
+$ docker pull library/redis@sha256:012c17a7b69c54c60a421f45cd99cfcc22ba0d04b54e583273c43b4b8a901e51
 ```
 
--	Total Virtual Size: 16.0 MB (15950631 bytes)
--	Total v2 Content-Length: 6.0 MB (5976161 bytes)
+-	Total Virtual Size: 16.0 MB (15950706 bytes)
+-	Total v2 Content-Length: 6.0 MB (5976208 bytes)
 
 ### Layers (16)
 
@@ -4452,53 +4452,53 @@ WORKDIR /data
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9b8e5ead6790e5526c649e426911b79afd77b3dda655ef8c746b1d8bd2629238`
+#### `749b9156b8382346da4f390184452a93c635b1963c7b434675c33afdcbae338b`
 
 ```dockerfile
-COPY file:adb37b91831e728bde0ff40515bc580f159d7821840f64fca80e23c0fc08282c in /entrypoint.sh
+COPY file:439eb3f0b5599dea9962c4d9ceaf5bebb4c0c7e376292e21ca0f83decd967e4d in /entrypoint.sh
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:51 GMT
+-	Created: Wed, 24 Feb 2016 23:20:17 GMT
 -	Parent Layer: `add71e50da7d000b16f5321c430dee7caca787e424fdce8df5a038a175324918`
 -	Docker Version: 1.9.1
--	Virtual Size: 107.0 B
--	v2 Blob: `sha256:25ea54d054ffa585636f44d7901d2da7dce5e4ee54aad2d3c88c4dd66a7fbacd`
--	v2 Content-Length: 197.0 B
+-	Virtual Size: 182.0 B
+-	v2 Blob: `sha256:6fedafd6ed95c205896c61b1acf8524d827f3812a7fd34acf8a6780dc88b7e68`
+-	v2 Content-Length: 244.0 B
 
-#### `6399cb700ad241ac06959209a3d676d9f7cb5225bccb906f76d211f2bea86579`
+#### `8f2944094d07b1e205da9c5f410ef58059d5f8f7b39523f45750270e3570cd28`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:51 GMT
--	Parent Layer: `9b8e5ead6790e5526c649e426911b79afd77b3dda655ef8c746b1d8bd2629238`
+-	Created: Wed, 24 Feb 2016 23:20:18 GMT
+-	Parent Layer: `749b9156b8382346da4f390184452a93c635b1963c7b434675c33afdcbae338b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7192a573a14ea51c6062bc783d42d9cd18eab663f55cb86cc56434bd9bd31d0d`
+#### `8000fa9f7186f0a5ab9f600a594920b5868b706dc987ab2a3cad5f17cc83f368`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:52 GMT
--	Parent Layer: `6399cb700ad241ac06959209a3d676d9f7cb5225bccb906f76d211f2bea86579`
+-	Created: Wed, 24 Feb 2016 23:20:19 GMT
+-	Parent Layer: `8f2944094d07b1e205da9c5f410ef58059d5f8f7b39523f45750270e3570cd28`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e5101bb4cf01b2f911c361a2a3d09ee34a8f23213bdb644a3a10d19a4508a91d`
+#### `267a606f80f0940cd27876951e9d5a13aab995f461bc93286f6806453217c8e6`
 
 ```dockerfile
 CMD ["redis-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 17:13:53 GMT
--	Parent Layer: `7192a573a14ea51c6062bc783d42d9cd18eab663f55cb86cc56434bd9bd31d0d`
+-	Created: Wed, 24 Feb 2016 23:20:19 GMT
+-	Parent Layer: `8000fa9f7186f0a5ab9f600a594920b5868b706dc987ab2a3cad5f17cc83f368`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
