@@ -85,7 +85,6 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 9.5 MB (9507615 bytes)
 -	v2 Blob: `sha256:4556039530882c8c93686aa4b816d29f2061bc01fae1772563f53fbe0c5fbfe6`
 -	v2 Content-Length: 4.1 MB (4087288 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 20:34:44 GMT
 
 #### `556c463c2460c0b65505bcba6a37b74030ecdd96d4a7ca5f1cf2efc535b9df7f`
 
@@ -205,7 +204,6 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 9.5 MB (9507615 bytes)
 -	v2 Blob: `sha256:4556039530882c8c93686aa4b816d29f2061bc01fae1772563f53fbe0c5fbfe6`
 -	v2 Content-Length: 4.1 MB (4087288 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 20:34:44 GMT
 
 #### `556c463c2460c0b65505bcba6a37b74030ecdd96d4a7ca5f1cf2efc535b9df7f`
 
@@ -325,7 +323,6 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 9.5 MB (9507615 bytes)
 -	v2 Blob: `sha256:4556039530882c8c93686aa4b816d29f2061bc01fae1772563f53fbe0c5fbfe6`
 -	v2 Content-Length: 4.1 MB (4087288 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 20:34:44 GMT
 
 #### `556c463c2460c0b65505bcba6a37b74030ecdd96d4a7ca5f1cf2efc535b9df7f`
 
@@ -445,7 +442,6 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 9.5 MB (9507615 bytes)
 -	v2 Blob: `sha256:4556039530882c8c93686aa4b816d29f2061bc01fae1772563f53fbe0c5fbfe6`
 -	v2 Content-Length: 4.1 MB (4087288 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 20:34:44 GMT
 
 #### `556c463c2460c0b65505bcba6a37b74030ecdd96d4a7ca5f1cf2efc535b9df7f`
 
