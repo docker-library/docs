@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.8.17`, `0.8`, `0`, `latest` (*Dockerfile*)](https://github.com/jfrazelle/irssi/blob/18b53336a61b495c2f76f9a71d433de4792395c6/Dockerfile)
+-	[`0.8.17`, `0.8`, `0`, `latest` (*Dockerfile*)](https://github.com/jfrazelle/irssi/blob/187c976470c1371b47cfed29cde9811a2d143b57/Dockerfile)
 
 [![](https://badge.imagelayers.io/irssi:latest.svg)](https://imagelayers.io/?images=irssi:0.8.17)
 
