@@ -53,7 +53,6 @@ ADD file:87d3e1d72c34c8ac82a646dbcc0a9471b3d8b978366f9d041a865fccc06fbb21 in /gn
 -	Virtual Size: 675.0 B
 -	v2 Blob: `sha256:3f9c4e15d7dcbe265a38cca404cb0525dbf1124b34b15bed9f4df5cdfbf82370`
 -	v2 Content-Length: 483.0 B
--	v2 Last-Modified: Tue, 11 Aug 2015 23:44:34 GMT
 
 #### `09d616ca5e38669d8b8f07896b3aaffc4d5e74b3d83b48fc0fbdf842cfb1b86e`
 
@@ -142,7 +141,6 @@ ADD file:87d3e1d72c34c8ac82a646dbcc0a9471b3d8b978366f9d041a865fccc06fbb21 in /gn
 -	Virtual Size: 675.0 B
 -	v2 Blob: `sha256:3f9c4e15d7dcbe265a38cca404cb0525dbf1124b34b15bed9f4df5cdfbf82370`
 -	v2 Content-Length: 483.0 B
--	v2 Last-Modified: Tue, 11 Aug 2015 23:44:34 GMT
 
 #### `09d616ca5e38669d8b8f07896b3aaffc4d5e74b3d83b48fc0fbdf842cfb1b86e`
 
