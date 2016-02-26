@@ -628,7 +628,6 @@ COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tm
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:418fe09e10134a128adcdc798250e8726a4a95b866c765eb7655ae835568e0c2`
 -	v2 Content-Length: 131.0 B
--	v2 Last-Modified: Thu, 18 Feb 2016 19:40:40 GMT
 
 #### `3d756a8cfd0f88f975b3f9266986e5b0b2ac8844a7f0782d515618b114f7afe7`
 
@@ -743,7 +742,6 @@ COPY dir:b76b2255a3b423981af78c58ce721e784495fe9dcbc71e271550f928e58092db in /tm
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:418fe09e10134a128adcdc798250e8726a4a95b866c765eb7655ae835568e0c2`
 -	v2 Content-Length: 131.0 B
--	v2 Last-Modified: Thu, 18 Feb 2016 19:40:40 GMT
 
 #### `3d756a8cfd0f88f975b3f9266986e5b0b2ac8844a7f0782d515618b114f7afe7`
 
