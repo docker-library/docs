@@ -2098,7 +2098,6 @@ RUN echo "deb http://packages.elastic.co/kibana/${KIBANA_MAJOR}/debian stable ma
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bddd7d12359062ee5301923ff81693422d91fef1823846d1d22fd1c0270b5feb`
 -	v2 Content-Length: 221.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 19:42:22 GMT
 
 #### `0a28fdb0f2900f40c3e45f1b81da7e79ba11ab2808df953f6d16e4ecb1deea10`
 
@@ -2361,7 +2360,6 @@ RUN echo "deb http://packages.elastic.co/kibana/${KIBANA_MAJOR}/debian stable ma
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bddd7d12359062ee5301923ff81693422d91fef1823846d1d22fd1c0270b5feb`
 -	v2 Content-Length: 221.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 19:42:22 GMT
 
 #### `0a28fdb0f2900f40c3e45f1b81da7e79ba11ab2808df953f6d16e4ecb1deea10`
 
@@ -2624,7 +2622,6 @@ RUN echo "deb http://packages.elastic.co/kibana/${KIBANA_MAJOR}/debian stable ma
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bddd7d12359062ee5301923ff81693422d91fef1823846d1d22fd1c0270b5feb`
 -	v2 Content-Length: 221.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 19:42:22 GMT
 
 #### `0a28fdb0f2900f40c3e45f1b81da7e79ba11ab2808df953f6d16e4ecb1deea10`
 
@@ -2887,7 +2884,6 @@ RUN echo "deb http://packages.elastic.co/kibana/${KIBANA_MAJOR}/debian stable ma
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bddd7d12359062ee5301923ff81693422d91fef1823846d1d22fd1c0270b5feb`
 -	v2 Content-Length: 221.0 B
--	v2 Last-Modified: Wed, 17 Feb 2016 19:42:22 GMT
 
 #### `0a28fdb0f2900f40c3e45f1b81da7e79ba11ab2808df953f6d16e4ecb1deea10`
 
