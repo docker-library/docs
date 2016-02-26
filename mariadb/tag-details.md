@@ -60,7 +60,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:e5a99361f38c4216de88299bf72bfa1fc1f4886138aebd40845aeae18f712a03`
 -	v2 Content-Length: 2.0 KB (2042 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 19:44:34 GMT
 
 #### `8472f3ba235bf0e8ab85ae84f3d9cdb565fc1aed338c3154ea88f16556049430`
 
@@ -295,7 +294,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:e5a99361f38c4216de88299bf72bfa1fc1f4886138aebd40845aeae18f712a03`
 -	v2 Content-Length: 2.0 KB (2042 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 19:44:34 GMT
 
 #### `8472f3ba235bf0e8ab85ae84f3d9cdb565fc1aed338c3154ea88f16556049430`
 
@@ -530,7 +528,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:e5a99361f38c4216de88299bf72bfa1fc1f4886138aebd40845aeae18f712a03`
 -	v2 Content-Length: 2.0 KB (2042 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 19:44:34 GMT
 
 #### `8472f3ba235bf0e8ab85ae84f3d9cdb565fc1aed338c3154ea88f16556049430`
 
@@ -765,7 +762,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:e5a99361f38c4216de88299bf72bfa1fc1f4886138aebd40845aeae18f712a03`
 -	v2 Content-Length: 2.0 KB (2042 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 19:44:34 GMT
 
 #### `8472f3ba235bf0e8ab85ae84f3d9cdb565fc1aed338c3154ea88f16556049430`
 
@@ -1000,7 +996,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:e5a99361f38c4216de88299bf72bfa1fc1f4886138aebd40845aeae18f712a03`
 -	v2 Content-Length: 2.0 KB (2042 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 19:44:34 GMT
 
 #### `8472f3ba235bf0e8ab85ae84f3d9cdb565fc1aed338c3154ea88f16556049430`
 
@@ -1235,7 +1230,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:e5a99361f38c4216de88299bf72bfa1fc1f4886138aebd40845aeae18f712a03`
 -	v2 Content-Length: 2.0 KB (2042 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 19:44:34 GMT
 
 #### `8472f3ba235bf0e8ab85ae84f3d9cdb565fc1aed338c3154ea88f16556049430`
 
