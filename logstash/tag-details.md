@@ -277,6 +277,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -653,6 +654,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -1029,6 +1031,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -1405,6 +1408,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -1781,6 +1785,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -2157,6 +2162,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -2533,6 +2539,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -2909,6 +2916,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -3285,6 +3293,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -3661,6 +3670,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -4037,6 +4047,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -4413,6 +4424,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -4789,6 +4801,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -5165,6 +5178,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -5541,6 +5555,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -5917,6 +5932,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -6293,6 +6309,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -6669,6 +6686,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
@@ -7045,6 +7063,7 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:60d7c094d06455f9f4579c59adb73ea5e3d99147711ff80bfea4a6630920ccf4`
 -	v2 Content-Length: 654.4 KB (654437 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 01:30:14 GMT
 
 #### `04a1b1efda324c9718997ac8afabaa4ec3cdbb57ed36132a2241b8d6fba7da12`
 
