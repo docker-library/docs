@@ -373,6 +373,7 @@ RUN git clone https://github.com/golang/tools.git /go/src/golang.org/x/tools \
 -	Virtual Size: 25.4 MB (25420215 bytes)
 -	v2 Blob: `sha256:4df9f8db4dd21d888094532b8ab85f11f193cc27deb1e90d16d898ce66bdb94f`
 -	v2 Content-Length: 11.4 MB (11357179 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:25 GMT
 
 #### `d7bb750a09f92e7db02c7e9517b65f9826b62cc66b3c841ed58480842ccf97e2`
 
@@ -1131,6 +1132,7 @@ RUN git clone https://github.com/golang/tools.git /go/src/golang.org/x/tools \
 -	Virtual Size: 25.4 MB (25420215 bytes)
 -	v2 Blob: `sha256:4df9f8db4dd21d888094532b8ab85f11f193cc27deb1e90d16d898ce66bdb94f`
 -	v2 Content-Length: 11.4 MB (11357179 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:25 GMT
 
 #### `d7bb750a09f92e7db02c7e9517b65f9826b62cc66b3c841ed58480842ccf97e2`
 
@@ -1889,6 +1891,7 @@ RUN git clone https://github.com/golang/tools.git /go/src/golang.org/x/tools \
 -	Virtual Size: 25.4 MB (25420215 bytes)
 -	v2 Blob: `sha256:4df9f8db4dd21d888094532b8ab85f11f193cc27deb1e90d16d898ce66bdb94f`
 -	v2 Content-Length: 11.4 MB (11357179 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:25 GMT
 
 #### `d7bb750a09f92e7db02c7e9517b65f9826b62cc66b3c841ed58480842ccf97e2`
 
