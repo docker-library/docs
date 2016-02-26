@@ -142,6 +142,7 @@ RUN npm install -g ./hipache --production
 -	Virtual Size: 1.6 MB (1597968 bytes)
 -	v2 Blob: `sha256:c570108ced3ed606c207361fa6a3341f1218550d4d0b7e215c04fe9d060bbf47`
 -	v2 Content-Length: 575.9 KB (575937 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 07:32:50 GMT
 
 #### `a6ac6a7129cd897e729e73ab18f77f7142e3cab2cd1d67d8c8bcf982842f5ca1`
 

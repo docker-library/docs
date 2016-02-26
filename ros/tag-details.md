@@ -181,7 +181,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89890066 bytes)
 -	v2 Blob: `sha256:90346fc9f4f6bd490fe9853d52858ab6f3b471a3f1853f063f8e06b57d03c1f4`
 -	v2 Content-Length: 31.9 MB (31918894 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 22:22:12 GMT
 
 #### `a4d121e51698c5366273607f790579fa1f04457f5eaac176fd8aa1c3ab48b1e1`
 
@@ -418,7 +417,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89890066 bytes)
 -	v2 Blob: `sha256:90346fc9f4f6bd490fe9853d52858ab6f3b471a3f1853f063f8e06b57d03c1f4`
 -	v2 Content-Length: 31.9 MB (31918894 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 22:22:12 GMT
 
 #### `a4d121e51698c5366273607f790579fa1f04457f5eaac176fd8aa1c3ab48b1e1`
 
@@ -683,7 +681,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89890066 bytes)
 -	v2 Blob: `sha256:90346fc9f4f6bd490fe9853d52858ab6f3b471a3f1853f063f8e06b57d03c1f4`
 -	v2 Content-Length: 31.9 MB (31918894 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 22:22:12 GMT
 
 #### `a4d121e51698c5366273607f790579fa1f04457f5eaac176fd8aa1c3ab48b1e1`
 
@@ -976,7 +973,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89890066 bytes)
 -	v2 Blob: `sha256:90346fc9f4f6bd490fe9853d52858ab6f3b471a3f1853f063f8e06b57d03c1f4`
 -	v2 Content-Length: 31.9 MB (31918894 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 22:22:12 GMT
 
 #### `a4d121e51698c5366273607f790579fa1f04457f5eaac176fd8aa1c3ab48b1e1`
 
@@ -1269,7 +1265,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89890066 bytes)
 -	v2 Blob: `sha256:90346fc9f4f6bd490fe9853d52858ab6f3b471a3f1853f063f8e06b57d03c1f4`
 -	v2 Content-Length: 31.9 MB (31918894 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 22:22:12 GMT
 
 #### `a4d121e51698c5366273607f790579fa1f04457f5eaac176fd8aa1c3ab48b1e1`
 
@@ -1534,7 +1529,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89890066 bytes)
 -	v2 Blob: `sha256:90346fc9f4f6bd490fe9853d52858ab6f3b471a3f1853f063f8e06b57d03c1f4`
 -	v2 Content-Length: 31.9 MB (31918894 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 22:22:12 GMT
 
 #### `a4d121e51698c5366273607f790579fa1f04457f5eaac176fd8aa1c3ab48b1e1`
 
