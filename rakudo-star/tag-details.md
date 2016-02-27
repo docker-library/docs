@@ -103,7 +103,6 @@ RUN groupadd -r perl6 && useradd -r -g perl6 perl6
 -	Virtual Size: 330.4 KB (330406 bytes)
 -	v2 Blob: `sha256:ad9f87f3c8dac37c92981b82177a3a5db20ae5d8d4c0f44f09f47ada900fba8f`
 -	v2 Content-Length: 2.0 KB (2050 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:47:20 GMT
 
 #### `b4a8b2135181767f22078bfd5f82c3d7b75ff432fc5a2d17d6f7108c02b2bb6c`
 
@@ -274,7 +273,6 @@ RUN groupadd -r perl6 && useradd -r -g perl6 perl6
 -	Virtual Size: 330.4 KB (330406 bytes)
 -	v2 Blob: `sha256:ad9f87f3c8dac37c92981b82177a3a5db20ae5d8d4c0f44f09f47ada900fba8f`
 -	v2 Content-Length: 2.0 KB (2050 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 21:47:20 GMT
 
 #### `b4a8b2135181767f22078bfd5f82c3d7b75ff432fc5a2d17d6f7108c02b2bb6c`
 
