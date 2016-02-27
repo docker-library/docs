@@ -92,7 +92,6 @@ RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 796.5 KB (796483 bytes)
 -	v2 Blob: `sha256:3c1db5f0dd6d2d0ebd5079892f0ffecb17676a216d7aade91bc0be76e1fdb3c6`
 -	v2 Content-Length: 303.1 KB (303087 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 20:54:10 GMT
 
 #### `1d1c3cb05d7cc8194b68c157187b438215017f060f8216ecf9263943f38220f9`
 
@@ -412,7 +411,6 @@ RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 796.5 KB (796483 bytes)
 -	v2 Blob: `sha256:3c1db5f0dd6d2d0ebd5079892f0ffecb17676a216d7aade91bc0be76e1fdb3c6`
 -	v2 Content-Length: 303.1 KB (303087 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 20:54:10 GMT
 
 #### `1d1c3cb05d7cc8194b68c157187b438215017f060f8216ecf9263943f38220f9`
 
@@ -810,7 +808,6 @@ RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 796.5 KB (796483 bytes)
 -	v2 Blob: `sha256:3c1db5f0dd6d2d0ebd5079892f0ffecb17676a216d7aade91bc0be76e1fdb3c6`
 -	v2 Content-Length: 303.1 KB (303087 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 20:54:10 GMT
 
 #### `1d1c3cb05d7cc8194b68c157187b438215017f060f8216ecf9263943f38220f9`
 
@@ -1130,7 +1127,6 @@ RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 796.5 KB (796483 bytes)
 -	v2 Blob: `sha256:3c1db5f0dd6d2d0ebd5079892f0ffecb17676a216d7aade91bc0be76e1fdb3c6`
 -	v2 Content-Length: 303.1 KB (303087 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 20:54:10 GMT
 
 #### `1d1c3cb05d7cc8194b68c157187b438215017f060f8216ecf9263943f38220f9`
 
