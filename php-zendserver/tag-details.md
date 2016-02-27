@@ -2556,6 +2556,7 @@ RUN rm /var/www/html/index.html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:36839ab6e0a31417810f5091c1f822b777f27a326bb8f350cf7325b6efb8956c`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Wed, 17 Feb 2016 21:32:40 GMT
 
 #### `e45e941b899d45d44623f8fadc1b9c74ec1f2f87a558b9e007e4ae86ac120013`
 
