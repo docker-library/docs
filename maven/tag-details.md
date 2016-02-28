@@ -1749,6 +1749,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -2029,6 +2030,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -2309,6 +2311,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -2589,6 +2592,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -2869,6 +2873,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -3149,6 +3154,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -3429,6 +3435,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -3709,6 +3716,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -4041,6 +4049,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -4373,6 +4382,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -4705,6 +4715,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -5037,6 +5048,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -5369,6 +5381,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
@@ -5701,6 +5714,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:7bacded07491bfedcdf09b39e3efbe8fec93044f61c6f5b76f9b304f7e07ef65`
 -	v2 Content-Length: 243.0 B
+-	v2 Last-Modified: Fri, 08 Jan 2016 01:41:54 GMT
 
 #### `c45cc5b65dff3f7aec0d08a2e91d6a8796acb16d474a6aa11693b378d8e1f995`
 
