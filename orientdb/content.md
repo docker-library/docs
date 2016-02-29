@@ -6,8 +6,7 @@
 
 ## How to use this image
 
-When OrientDB starts it asks for the root password. The root user is able to manage the OrientDB server: create new databases, manage users and roles.
-The root password can be passed to the container using an environment property:
+When OrientDB starts it asks for the root password. The root user is able to manage the OrientDB server: create new databases, manage users and roles. The root password can be passed to the container using an environment property:
 
 ```console
 $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 -e ORIENTDB_ROOT_PASSWORD=rootpwd orientdb:latest
@@ -17,12 +16,9 @@ The [Studio](http://orientdb.com/docs/last/Home-page.html) is accessible to http
 
 ### Attach persistent volumes
 
-The docker image contains an OrientDB installation with basic configuration.
-If you need to provide your own config folder from which OrientDB will read its startup settings, simply attach a persistent volume for configuration folder.
-Providing a configuration folder enables integration with software configuration tools such as Ansible or Puppet.
+The docker image contains an OrientDB installation with basic configuration. If you need to provide your own config folder from which OrientDB will read its startup settings, simply attach a persistent volume for configuration folder. Providing a configuration folder enables integration with software configuration tools such as Ansible or Puppet.
 
-The same applies for the databases folder which if local to the running container would go away as soon as it died/you killed it.
-Obviously use volumes from dedicated data container is another option.
+The same applies for the databases folder which if local to the running container would go away as soon as it died/you killed it. Obviously use volumes from dedicated data container is another option.
 
 ```console
 $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
@@ -32,18 +28,19 @@ $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
     -e ORIENTDB_ROOT_PASSWORD=rootpwd \
     orientdb:latest
 ```
+
 ### Running OrientDB tools
 
 The OrientDB image contains a full fledge installation, so it is possible to run the [console](http://orientdb.com/docs/last/Console-Commands.html)
 
 ```console
-  $docker run --rm -it orientdb:latest /orientdb/bin/console.sh
+$ docker run --rm -it orientdb:latest /orientdb/bin/console.sh
 ```
 
 or even the etl
 
 ```console
-  docker run  --rm -it -v <config_path>:/orientdb/config orientdb:latest /orientdb/bin/oetl.sh ../config/oetl-config.json
+$ docker run  --rm -it -v <config_path>:/orientdb/config orientdb:latest /orientdb/bin/oetl.sh ../config/oetl-config.json
 ```
 
 ### Override configuration parameters
@@ -65,7 +62,6 @@ For further configuration options please refer to the [Configuration](http://ori
 ### Environment
 
 Environment parameters such as heap size could be passed via command line:
-
 
 ```console
 $ docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
