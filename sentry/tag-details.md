@@ -314,6 +314,7 @@ RUN pip install python-memcached
 -	Virtual Size: 213.5 KB (213484 bytes)
 -	v2 Blob: `sha256:f9a8015cf94296616c07344853a896ecdee933169c9bb9b41d07ec65d18f8a94`
 -	v2 Content-Length: 85.3 KB (85308 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 09:00:24 GMT
 
 #### `3f0876cd79a82d32246f70e0a705cde471f1674cf8c4e947d6044e39b89c1f35`
 
@@ -742,6 +743,7 @@ RUN pip install python-memcached
 -	Virtual Size: 213.5 KB (213484 bytes)
 -	v2 Blob: `sha256:f9a8015cf94296616c07344853a896ecdee933169c9bb9b41d07ec65d18f8a94`
 -	v2 Content-Length: 85.3 KB (85308 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 09:00:24 GMT
 
 #### `3f0876cd79a82d32246f70e0a705cde471f1674cf8c4e947d6044e39b89c1f35`
 
@@ -1170,6 +1172,7 @@ RUN pip install python-memcached
 -	Virtual Size: 213.5 KB (213484 bytes)
 -	v2 Blob: `sha256:f9a8015cf94296616c07344853a896ecdee933169c9bb9b41d07ec65d18f8a94`
 -	v2 Content-Length: 85.3 KB (85308 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 09:00:24 GMT
 
 #### `3f0876cd79a82d32246f70e0a705cde471f1674cf8c4e947d6044e39b89c1f35`
 
