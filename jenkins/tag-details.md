@@ -8,11 +8,11 @@
 ## `jenkins:latest`
 
 ```console
-$ docker pull library/jenkins@sha256:c7b65f2740a56646dfeae2790b4c7adc65690e22dc90f7b92b8d35df32eac8ed
+$ docker pull library/jenkins@sha256:dfa34367f5c1487cafe1f19f80c009fd98ceb9b1f98b9e555f1416d2e856580a
 ```
 
--	Total Virtual Size: 708.6 MB (708642688 bytes)
--	Total v2 Content-Length: 307.3 MB (307268749 bytes)
+-	Total Virtual Size: 708.6 MB (708642698 bytes)
+-	Total v2 Content-Length: 307.3 MB (307268760 bytes)
 
 ### Layers (35)
 
@@ -454,53 +454,53 @@ USER [jenkins]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d3821c8e24da96ae3c13bfcd6f550ff6663ecf6f4d8549bf937432ca6b866dc4`
+#### `abfdbf0402481fc83e99909fbd9ebccb5937d51b5bec08aeef6f7436862af631`
 
 ```dockerfile
-COPY file:ba9e77ccfc567755a514a1cff68f9be705b596ccd2c5e4bbd402ea44becf6c4d in /usr/local/bin/jenkins.sh
+COPY file:b250e70b64f98c04aa7934d935e815ad2082e8b68fd20c23ac1c37c3eb7530ad in /usr/local/bin/jenkins.sh
 ```
 
--	Created: Sun, 28 Feb 2016 16:32:11 GMT
+-	Created: Mon, 29 Feb 2016 18:29:50 GMT
 -	Parent Layer: `6a9ada63ba4c8271d918e155d0607b44d01ba7f54f14c2e2b9ac76e82741de58`
 -	Docker Version: 1.9.1
--	Virtual Size: 1.4 KB (1434 bytes)
--	v2 Blob: `sha256:610a61858d980cc42de9cf706b3302b1c0b79c4b3fd486c138127d85257e2bd8`
--	v2 Content-Length: 925.0 B
+-	Virtual Size: 1.4 KB (1444 bytes)
+-	v2 Blob: `sha256:6a91a69fbd69127ac414aa05cbeee918f6f2bd719b12ac6b470f037e94493bd1`
+-	v2 Content-Length: 936.0 B
 
-#### `072d0a51900392f7bc2b98739497f90f1fefb14ee80d31abbd2862467d77fc2b`
+#### `625c2ec702b58ce389b4ae7b53cb3f6fb938fffd96bbf398b66ce7bffed88dfb`
 
 ```dockerfile
 ENTRYPOINT &{["/bin/tini" "--" "/usr/local/bin/jenkins.sh"]}
 ```
 
--	Created: Sun, 28 Feb 2016 16:32:12 GMT
--	Parent Layer: `d3821c8e24da96ae3c13bfcd6f550ff6663ecf6f4d8549bf937432ca6b866dc4`
+-	Created: Mon, 29 Feb 2016 18:29:51 GMT
+-	Parent Layer: `abfdbf0402481fc83e99909fbd9ebccb5937d51b5bec08aeef6f7436862af631`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ec661320b0de2c5c6e35cd93fe1f43875b246f3b6d9834d7192b4b2c0c009e49`
+#### `a4a190593b0deeaf3ee322fe40b37bbdac9c7b72546cccced6a57c45c74b31f3`
 
 ```dockerfile
 COPY file:d2bb5d9af57b0440ae2def135067cdff23596d25b8e324b3f66687c2fbbc317f in /usr/local/bin/plugins.sh
 ```
 
--	Created: Sun, 28 Feb 2016 16:32:13 GMT
--	Parent Layer: `072d0a51900392f7bc2b98739497f90f1fefb14ee80d31abbd2862467d77fc2b`
+-	Created: Mon, 29 Feb 2016 18:29:52 GMT
+-	Parent Layer: `625c2ec702b58ce389b4ae7b53cb3f6fb938fffd96bbf398b66ce7bffed88dfb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 861.0 B
--	v2 Blob: `sha256:aaa1e6a753b59176cf50bcbdd7874ef8d0ddaf7cb4f4c586afe3bf8df778a344`
+-	v2 Blob: `sha256:35af88b1ffff5c7001ba71e382b8df02c64bf3003569b5485779e11d02c53a92`
 -	v2 Content-Length: 628.0 B
 
 ## `jenkins:1.642.2`
 
 ```console
-$ docker pull library/jenkins@sha256:e10f7910ecc49eda80992cb6e29003dc49eef7bb55fb8d0bfcefb41b02c6fe4f
+$ docker pull library/jenkins@sha256:e240eab81081382f1840d9318cab1e019aa7acf65c84faac4ad1f2050758ade2
 ```
 
--	Total Virtual Size: 708.6 MB (708642688 bytes)
--	Total v2 Content-Length: 307.3 MB (307268749 bytes)
+-	Total Virtual Size: 708.6 MB (708642698 bytes)
+-	Total v2 Content-Length: 307.3 MB (307268760 bytes)
 
 ### Layers (35)
 
@@ -942,41 +942,41 @@ USER [jenkins]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d3821c8e24da96ae3c13bfcd6f550ff6663ecf6f4d8549bf937432ca6b866dc4`
+#### `abfdbf0402481fc83e99909fbd9ebccb5937d51b5bec08aeef6f7436862af631`
 
 ```dockerfile
-COPY file:ba9e77ccfc567755a514a1cff68f9be705b596ccd2c5e4bbd402ea44becf6c4d in /usr/local/bin/jenkins.sh
+COPY file:b250e70b64f98c04aa7934d935e815ad2082e8b68fd20c23ac1c37c3eb7530ad in /usr/local/bin/jenkins.sh
 ```
 
--	Created: Sun, 28 Feb 2016 16:32:11 GMT
+-	Created: Mon, 29 Feb 2016 18:29:50 GMT
 -	Parent Layer: `6a9ada63ba4c8271d918e155d0607b44d01ba7f54f14c2e2b9ac76e82741de58`
 -	Docker Version: 1.9.1
--	Virtual Size: 1.4 KB (1434 bytes)
--	v2 Blob: `sha256:610a61858d980cc42de9cf706b3302b1c0b79c4b3fd486c138127d85257e2bd8`
--	v2 Content-Length: 925.0 B
+-	Virtual Size: 1.4 KB (1444 bytes)
+-	v2 Blob: `sha256:6a91a69fbd69127ac414aa05cbeee918f6f2bd719b12ac6b470f037e94493bd1`
+-	v2 Content-Length: 936.0 B
 
-#### `072d0a51900392f7bc2b98739497f90f1fefb14ee80d31abbd2862467d77fc2b`
+#### `625c2ec702b58ce389b4ae7b53cb3f6fb938fffd96bbf398b66ce7bffed88dfb`
 
 ```dockerfile
 ENTRYPOINT &{["/bin/tini" "--" "/usr/local/bin/jenkins.sh"]}
 ```
 
--	Created: Sun, 28 Feb 2016 16:32:12 GMT
--	Parent Layer: `d3821c8e24da96ae3c13bfcd6f550ff6663ecf6f4d8549bf937432ca6b866dc4`
+-	Created: Mon, 29 Feb 2016 18:29:51 GMT
+-	Parent Layer: `abfdbf0402481fc83e99909fbd9ebccb5937d51b5bec08aeef6f7436862af631`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ec661320b0de2c5c6e35cd93fe1f43875b246f3b6d9834d7192b4b2c0c009e49`
+#### `a4a190593b0deeaf3ee322fe40b37bbdac9c7b72546cccced6a57c45c74b31f3`
 
 ```dockerfile
 COPY file:d2bb5d9af57b0440ae2def135067cdff23596d25b8e324b3f66687c2fbbc317f in /usr/local/bin/plugins.sh
 ```
 
--	Created: Sun, 28 Feb 2016 16:32:13 GMT
--	Parent Layer: `072d0a51900392f7bc2b98739497f90f1fefb14ee80d31abbd2862467d77fc2b`
+-	Created: Mon, 29 Feb 2016 18:29:52 GMT
+-	Parent Layer: `625c2ec702b58ce389b4ae7b53cb3f6fb938fffd96bbf398b66ce7bffed88dfb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 861.0 B
--	v2 Blob: `sha256:aaa1e6a753b59176cf50bcbdd7874ef8d0ddaf7cb4f4c586afe3bf8df778a344`
+-	v2 Blob: `sha256:35af88b1ffff5c7001ba71e382b8df02c64bf3003569b5485779e11d02c53a92`
 -	v2 Content-Length: 628.0 B
