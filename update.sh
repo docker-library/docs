@@ -25,7 +25,6 @@ declare -A otherRepos=(
 	[alpine]='https://github.com/gliderlabs/docker-alpine'
 	[arangodb]='https://github.com/arangodb/arangodb-docker'
 	[bonita]='https://github.com/Bonitasoft-Community/docker_bonita'
-	[busybox]='https://github.com/jpetazzo/docker-busybox'
 	[centos]='https://github.com/CentOS/sig-cloud-instance-images'
 	[cirros]='https://github.com/ewindisch/docker-cirros'
 	[clojure]='https://github.com/Quantisan/docker-clojure'

@@ -30,31 +30,37 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 	$ docker run -d --name sentry-redis redis
 	```
 
-2.	Start a Postgres container:
+2.	Start a Postgres container
 
 		```console
 		$ docker run -d --name sentry-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=sentry postgres
 		```
 
-3.	If this is a new database, you'll need to run `upgrade`
+3.	Generate a new secret key to be shared by all `sentry` containers. This value will then be used as the `SENTRY_SECRET_KEY` environment variable.
+
+		```console
+		$ docker run --rm sentry generate-secret-key
+		```
+
+4.	If this is a new database, you'll need to run `upgrade`
 
 	```console
-	$ docker run -it --rm --link sentry-postgres:postgres --link sentry-redis:redis sentry upgrade
+	$ docker run -it --rm -e SENTRY_SECRET_KEY <secret-key> --link sentry-postgres:postgres --link sentry-redis:redis sentry upgrade
 	```
 
 	**Note: the `-it` is important as the initial upgrade will prompt to create an initial user and will fail without it**
 
-4.	Now start up Sentry server
+5.	Now start up Sentry server
 
 	```console
-	$ docker run -d --name my-sentry --link sentry-redis:redis --link sentry-postgres:postgres sentry
+	$ docker run -d --name my-sentry -e SENTRY_SECRET_KEY <secret-key> --link sentry-redis:redis --link sentry-postgres:postgres sentry
 	```
 
-5.	The default config needs a celery beat and celery workers, start as many workers as you need (each with a unique name)
+6.	The default config needs a celery beat and celery workers, start as many workers as you need (each with a unique name)
 
 	```console
-	$ docker run -d --name sentry-celery-beat --link sentry-postgres:postgres --link sentry-redis:redis sentry celery beat
-	$ docker run -d --name sentry-celery1 --link sentry-postgres:postgres --link sentry-redis:redis sentry celery worker
+	$ docker run -d --name sentry-celery-beat -e SENTRY_SECRET_KEY <secret-key> --link sentry-postgres:postgres --link sentry-redis:redis sentry celery beat
+	$ docker run -d --name sentry-celery1 -e SENTRY_SECRET_KEY <secret-key> --link sentry-postgres:postgres --link sentry-redis:redis sentry celery worker
 	```
 
 ### Port mapping
@@ -66,7 +72,7 @@ If you'd like to be able to access the instance from the host without the contai
 If you did not create a superuser during `upgrade`, use the following to create one:
 
 ```console
-$ docker run -it --rm --link sentry-redis:redis --link sentry-postgres:postgres sentry createuser
+$ docker run -it --rm -e SENTRY_SECRET_KEY <secret-key> --link sentry-redis:redis --link sentry-postgres:postgres sentry createuser
 ```
 
 ## Environment variables
@@ -78,7 +84,7 @@ When you start the `sentry` image, you can adjust the configuration of the Sentr
 A secret key used for cryptographic functions within Sentry. This key should be unique and consistent across all running instances. You can generate a new secret key doing something like:
 
 ```console
-$ docker run --rm -it debian:jessie cat /proc/sys/kernel/random/uuid
+$ docker run --rm sentry generate-secret-key
 ```
 
 ### `SENTRY_POSTGRES_HOST`, `SENTRY_POSTGRES_PORT`, `SENTRY_DB_NAME`, `SENTRY_DB_USER`, `SENTRY_DB_PASSWORD`
@@ -131,7 +137,7 @@ View [license information](https://github.com/getsentry/sentry/blob/master/LICEN
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,12 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`9.1.19`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.1/Dockerfile)
--	[`9.2.14`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.2/Dockerfile)
--	[`9.3.10`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.3/Dockerfile)
--	[`9.4.5`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.4/Dockerfile)
--	[`9.5.0`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/916a840510b481e7d3f0f74fa04fde3edfdfbd04/9.5/Dockerfile)
+-	[`9.1.20`, `9.1` (*9.1/Dockerfile*)](https://github.com/docker-library/postgres/blob/443c7947d548b1c607e06f7a75ca475de7ff3284/9.1/Dockerfile)
+-	[`9.2.15`, `9.2` (*9.2/Dockerfile*)](https://github.com/docker-library/postgres/blob/443c7947d548b1c607e06f7a75ca475de7ff3284/9.2/Dockerfile)
+-	[`9.3.11`, `9.3` (*9.3/Dockerfile*)](https://github.com/docker-library/postgres/blob/443c7947d548b1c607e06f7a75ca475de7ff3284/9.3/Dockerfile)
+-	[`9.4.6`, `9.4` (*9.4/Dockerfile*)](https://github.com/docker-library/postgres/blob/443c7947d548b1c607e06f7a75ca475de7ff3284/9.4/Dockerfile)
+-	[`9.5.1`, `9.5`, `9`, `latest` (*9.5/Dockerfile*)](https://github.com/docker-library/postgres/blob/443c7947d548b1c607e06f7a75ca475de7ff3284/9.5/Dockerfile)
 
-[![](https://badge.imagelayers.io/postgres:latest.svg)](https://imagelayers.io/?images=postgres:9.1.19,postgres:9.2.14,postgres:9.3.10,postgres:9.4.5,postgres:9.5.0)
+[![](https://badge.imagelayers.io/postgres:latest.svg)](https://imagelayers.io/?images=postgres:9.1.20,postgres:9.2.15,postgres:9.3.11,postgres:9.4.6,postgres:9.5.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/postgres`)](https://github.com/docker-library/official-images/blob/master/library/postgres). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -89,7 +89,7 @@ If there is no database when `postgres` starts in a container, then `postgres` w
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

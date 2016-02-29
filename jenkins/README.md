@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.642.1` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/62de121e41ddd92ef34e9999162932334b05f0d7/Dockerfile)
+-	[`latest`, `1.642.2` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/5fc9cd06a5adb213cebfe3fcfc9113578f0fc43d/Dockerfile)
 
 [![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest)
 
@@ -174,7 +174,7 @@ As always - please ensure that you know how to drive docker - especially volume 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

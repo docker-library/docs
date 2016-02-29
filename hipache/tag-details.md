@@ -8,28 +8,27 @@
 ## `hipache:latest`
 
 ```console
-$ docker pull library/hipache@sha256:931b61abfdcb2bc66ce28291dcfef4ef24feac56dc95285c13b7d3f2f0bbda11
+$ docker pull library/hipache@sha256:0014b69a4f8be57aa3848269a2ad456a7365969d65a01793db2ac1d2b9348458
 ```
 
--	Total Virtual Size: 367.7 MB (367685295 bytes)
--	Total v2 Content-Length: 150.5 MB (150469400 bytes)
+-	Total Virtual Size: 371.0 MB (370976189 bytes)
+-	Total v2 Content-Length: 153.7 MB (153745119 bytes)
 
 ### Layers (14)
 
-#### `f15ce52fc004a5c3eab9128a78f7c0c2135d4f726bc54f1373120ab3ff291bcc`
+#### `8aa2fc7185e20bacda32d815eaae32cbc1c0457dc160ed5b3995ab79a8c7fd98`
 
 ```dockerfile
-ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
+ADD file:ea70c09b264ee09dcdd03ed51184a3aad20effbb166cffcf6411faa51b576672 in /
 ```
 
--	Created: Tue, 19 Jan 2016 23:31:14 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 187.7 MB (187728797 bytes)
--	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
--	v2 Content-Length: 65.7 MB (65675795 bytes)
--	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
+-	Created: Fri, 26 Feb 2016 22:10:53 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 187.8 MB (187754000 bytes)
+-	v2 Blob: `sha256:118aadd1f859b3ff05e978659db7ddda9810d0ae3058c09361efa4ca26c1f3bb`
+-	v2 Content-Length: 65.7 MB (65687771 bytes)
 
-#### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
+#### `13a8e55f2d20aee3c842842ebadcbda69347bb657a4cde1b851719b8f896c596`
 
 ```dockerfile
 RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
@@ -46,207 +45,193 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Tue, 19 Jan 2016 23:31:23 GMT
--	Parent Layer: `f15ce52fc004a5c3eab9128a78f7c0c2135d4f726bc54f1373120ab3ff291bcc`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 22:10:58 GMT
+-	Parent Layer: `8aa2fc7185e20bacda32d815eaae32cbc1c0457dc160ed5b3995ab79a8c7fd98`
+-	Docker Version: 1.9.1
 -	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:3b52deaaf0edb8a0282a08dd9c9e25da2050a75739b832ecc6e29941394933a6`
--	v2 Content-Length: 71.5 KB (71484 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:56 GMT
+-	v2 Blob: `sha256:41402770caf28a7ecc80ae742e685779e952fb88693bd6b015b8761c5536a4da`
+-	v2 Content-Length: 71.5 KB (71481 bytes)
 
-#### `a4c5be5b6e596241b4530ade26294afa8d8a4a2b9163c30e36c87f879b0f5073`
+#### `1b1999356dda739315854eb57a482e92405660e84fd71b6c59f777377b5bd2dc`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Tue, 19 Jan 2016 23:31:24 GMT
--	Parent Layer: `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 22:11:00 GMT
+-	Parent Layer: `13a8e55f2d20aee3c842842ebadcbda69347bb657a4cde1b851719b8f896c596`
+-	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
+-	v2 Blob: `sha256:a5051dd98acdd5bc70ba98a55807acc224aa88e18c45db1ad1f289c5be2fc0a2`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
-#### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
+#### `1997914a7c23c0f2f77ba6570032f8e74292224d24b9e13228244561ac304020`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 19 Jan 2016 23:31:24 GMT
--	Parent Layer: `a4c5be5b6e596241b4530ade26294afa8d8a4a2b9163c30e36c87f879b0f5073`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 22:11:00 GMT
+-	Parent Layer: `1b1999356dda739315854eb57a482e92405660e84fd71b6c59f777377b5bd2dc`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `02324b5ab316b528675491f7466f0494d4172cd7f93735c0315e53e224a87d27`
+#### `7cec882ce16ebac883a7ac19699d437733d17d2d671d2284bb2a57881acdbab4`
 
 ```dockerfile
 RUN apt-get -y update
 ```
 
--	Created: Wed, 20 Jan 2016 01:31:15 GMT
--	Parent Layer: `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
--	Docker Version: 1.8.3
--	Virtual Size: 21.5 MB (21483764 bytes)
--	v2 Blob: `sha256:83110f2bf985e97b1d196d14b8d69e306bfd6477c71358341c8348931d886780`
--	v2 Content-Length: 21.4 MB (21353605 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 17:02:18 GMT
+-	Created: Fri, 26 Feb 2016 23:33:49 GMT
+-	Parent Layer: `1997914a7c23c0f2f77ba6570032f8e74292224d24b9e13228244561ac304020`
+-	Docker Version: 1.9.1
+-	Virtual Size: 21.6 MB (21567960 bytes)
+-	v2 Blob: `sha256:136084a04503e34a78d044f805053cfddf9ef9d79e7e428634741f16b40eca5c`
+-	v2 Content-Length: 21.4 MB (21437619 bytes)
 
-#### `d8658d5360328567572f3161bed0ee804248a253966372a0964f4ae166f42bde`
+#### `54e9a9fc6774bf18a96ae17b2d5937f7c8be05fd6b403878272a19eedbdc6952`
 
 ```dockerfile
 RUN apt-get -y install supervisor nodejs npm redis-server
 ```
 
--	Created: Wed, 20 Jan 2016 01:32:41 GMT
--	Parent Layer: `02324b5ab316b528675491f7466f0494d4172cd7f93735c0315e53e224a87d27`
--	Docker Version: 1.8.3
--	Virtual Size: 156.1 MB (156134176 bytes)
--	v2 Blob: `sha256:48096639e9f4a29d5d05f3960d699bfb601b9ff50db64bf5c5a7505d33fb929d`
--	v2 Content-Length: 62.4 MB (62387346 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 17:02:03 GMT
+-	Created: Fri, 26 Feb 2016 23:34:52 GMT
+-	Parent Layer: `7cec882ce16ebac883a7ac19699d437733d17d2d671d2284bb2a57881acdbab4`
+-	Docker Version: 1.9.1
+-	Virtual Size: 159.3 MB (159315420 bytes)
+-	v2 Blob: `sha256:71e1318a9759d13b0268e8c6defdc3d510cdf5253c30d7756492b837bce31eaa`
+-	v2 Content-Length: 65.6 MB (65566800 bytes)
 
-#### `6f79b2a32f189c9d19290dc6fac459b98f1b0999830cd2a5be00ac9b5edf6a6a`
+#### `cc586e4869fc68bb5b079f2cc0e3ea4ed75c40ed454c6a754788c7c43d0f01cb`
 
 ```dockerfile
 RUN mkdir ./hipache
 ```
 
--	Created: Wed, 20 Jan 2016 01:32:45 GMT
--	Parent Layer: `d8658d5360328567572f3161bed0ee804248a253966372a0964f4ae166f42bde`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:34:56 GMT
+-	Parent Layer: `54e9a9fc6774bf18a96ae17b2d5937f7c8be05fd6b403878272a19eedbdc6952`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:fef8b532a55e27a6bcb1e97678b96796233d67635991c111d4b40a38ca455577`
--	v2 Content-Length: 95.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 17:01:28 GMT
+-	v2 Blob: `sha256:43543f0463c2be35b2939428765f203bd3bc87276dd6c43ba541cd1ea02cc764`
+-	v2 Content-Length: 94.0 B
 
-#### `09c08ba43aee4c08b4e5d00a3d11aba3986a54faa143b6513f17354e1a399881`
+#### `7fa955259c2205b1ef9da40247db66d0e6bd03ba6328a0840b78d0a4e01035f9`
 
 ```dockerfile
-ADD dir:dd73055c3b6addb8ff16a60c4cab0ad7289c312d5ae41927c119228e79d4c336 in ./hipache
+ADD dir:45308b5e7a39589e099132076949444fef1564d42b005f6d2595edcef38427bf in ./hipache
 ```
 
--	Created: Tue, 26 Jan 2016 14:21:50 GMT
--	Parent Layer: `6f79b2a32f189c9d19290dc6fac459b98f1b0999830cd2a5be00ac9b5edf6a6a`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:15 GMT
+-	Parent Layer: `cc586e4869fc68bb5b079f2cc0e3ea4ed75c40ed454c6a754788c7c43d0f01cb`
+-	Docker Version: 1.9.1
 -	Virtual Size: 543.9 KB (543889 bytes)
--	v2 Blob: `sha256:ccc2199733f19a77f26be6786576a72529208fe79bbf2dd0ed3154753efb6764`
--	v2 Content-Length: 404.2 KB (404171 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:35:29 GMT
+-	v2 Blob: `sha256:e74af816424a0f51b71cbac16b4f7c3a91ebbeedd146cd34cfc0d605730bf3a3`
+-	v2 Content-Length: 404.2 KB (404179 bytes)
 
-#### `cd2fe1f28830e197fd9bdbf1f32c95d362bba406143e206cfac19bd972b70e1f`
+#### `ffca3d193b318d67491d6056c2d0001a1dbe6daab3fe213a60bfe9afefd98e04`
 
 ```dockerfile
 RUN npm install -g ./hipache --production
 ```
 
--	Created: Tue, 26 Jan 2016 14:21:53 GMT
--	Parent Layer: `09c08ba43aee4c08b4e5d00a3d11aba3986a54faa143b6513f17354e1a399881`
--	Docker Version: 1.8.3
--	Virtual Size: 1.6 MB (1597785 bytes)
--	v2 Blob: `sha256:1dd10206212762f2b1d8c6104e7b788044b2a997158683223af36e0a3a2b0eb0`
--	v2 Content-Length: 575.7 KB (575718 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:35:26 GMT
+-	Created: Fri, 26 Feb 2016 23:35:19 GMT
+-	Parent Layer: `7fa955259c2205b1ef9da40247db66d0e6bd03ba6328a0840b78d0a4e01035f9`
+-	Docker Version: 1.9.1
+-	Virtual Size: 1.6 MB (1598036 bytes)
+-	v2 Blob: `sha256:313aefe7d9d64869458dda6cd59d6607fd27cbc52723856d66d79d6be186941c`
+-	v2 Content-Length: 576.0 KB (575990 bytes)
 
-#### `5d242a8bad3a4fa51607919eb1ad12e944ea9455f88eeefe372c6d4da6af715a`
+#### `85c29f8bfd6c0af690f62034ad8db3551884e498bc6b0e905289df7d3067feca`
 
 ```dockerfile
 ENV NODE_ENV=production
 ```
 
--	Created: Tue, 26 Jan 2016 14:21:54 GMT
--	Parent Layer: `cd2fe1f28830e197fd9bdbf1f32c95d362bba406143e206cfac19bd972b70e1f`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:20 GMT
+-	Parent Layer: `ffca3d193b318d67491d6056c2d0001a1dbe6daab3fe213a60bfe9afefd98e04`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `71532da9ce51743f43f77f5a6827fbd446c8912421687be3e186f83d73aca9d2`
+#### `63ed1d4c2a0818a12ba5f905a7bb4de9ab867c53bd37846d583294a07f434f09`
 
 ```dockerfile
 ADD file:a6192eeb65186b26b914a86f28baaf6db40bde5c3fb479c2aceca29e4e9e40a2 in /etc/supervisor/conf.d/supervisord.conf
 ```
 
--	Created: Tue, 26 Jan 2016 14:21:55 GMT
--	Parent Layer: `5d242a8bad3a4fa51607919eb1ad12e944ea9455f88eeefe372c6d4da6af715a`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:20 GMT
+-	Parent Layer: `85c29f8bfd6c0af690f62034ad8db3551884e498bc6b0e905289df7d3067feca`
+-	Docker Version: 1.9.1
 -	Virtual Size: 456.0 B
--	v2 Blob: `sha256:6dca9a638d2f396e9e3f62dcffe2d19799ba20ea205cbd23b53c5c66d6d04e69`
--	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Mon, 01 Feb 2016 21:35:21 GMT
+-	v2 Blob: `sha256:fd31ffdfa37ffcdb3e9f793a9e8ae91e83950efb60b4d644376a84239b6027ec`
+-	v2 Content-Length: 344.0 B
 
-#### `20a335b829046f26e2485451a60c2c340c7939845682591f53f5376d92d50454`
+#### `320b869075155dc1addc9b496f7880f03704f47b6a5dc485b6efa43f847b19e1`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Tue, 26 Jan 2016 14:21:55 GMT
--	Parent Layer: `71532da9ce51743f43f77f5a6827fbd446c8912421687be3e186f83d73aca9d2`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:21 GMT
+-	Parent Layer: `63ed1d4c2a0818a12ba5f905a7bb4de9ab867c53bd37846d583294a07f434f09`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e210a8b53d00c36daae2e0afe6ba8b16657d62544576849f0d95447c89871828`
+#### `8c0f220a0dd0f1c8010ad421d833e5f9e50585853a83cf169edf691fc3f564db`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Tue, 26 Jan 2016 14:21:56 GMT
--	Parent Layer: `20a335b829046f26e2485451a60c2c340c7939845682591f53f5376d92d50454`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:22 GMT
+-	Parent Layer: `320b869075155dc1addc9b496f7880f03704f47b6a5dc485b6efa43f847b19e1`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5312ffafa1d9f5301a1f54b9d6e3fb8ab4ce3ccf98121f930a7ac4e88ef30684`
+#### `c5528778c1d249f400e802e80dbdab1e5bf469681e12012047c8321fa024c5dc`
 
 ```dockerfile
 CMD ["supervisord" "-n"]
 ```
 
--	Created: Tue, 26 Jan 2016 14:21:56 GMT
--	Parent Layer: `e210a8b53d00c36daae2e0afe6ba8b16657d62544576849f0d95447c89871828`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:22 GMT
+-	Parent Layer: `8c0f220a0dd0f1c8010ad421d833e5f9e50585853a83cf169edf691fc3f564db`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `hipache:0.3.1`
 
 ```console
-$ docker pull library/hipache@sha256:70dd46026d46afdfeda33ac0c795a7d8fe2a3ae7d82df1a3dd7e1462d94db3b2
+$ docker pull library/hipache@sha256:f5d5021bd1e40723e82e40bfdc594a73a11eb78e4e0f983fcaf65c4b12b657bd
 ```
 
--	Total Virtual Size: 367.7 MB (367685295 bytes)
--	Total v2 Content-Length: 150.5 MB (150469428 bytes)
+-	Total Virtual Size: 371.0 MB (370976189 bytes)
+-	Total v2 Content-Length: 153.7 MB (153745103 bytes)
 
 ### Layers (14)
 
-#### `f15ce52fc004a5c3eab9128a78f7c0c2135d4f726bc54f1373120ab3ff291bcc`
+#### `8aa2fc7185e20bacda32d815eaae32cbc1c0457dc160ed5b3995ab79a8c7fd98`
 
 ```dockerfile
-ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
+ADD file:ea70c09b264ee09dcdd03ed51184a3aad20effbb166cffcf6411faa51b576672 in /
 ```
 
--	Created: Tue, 19 Jan 2016 23:31:14 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 187.7 MB (187728797 bytes)
--	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
--	v2 Content-Length: 65.7 MB (65675795 bytes)
--	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
+-	Created: Fri, 26 Feb 2016 22:10:53 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 187.8 MB (187754000 bytes)
+-	v2 Blob: `sha256:118aadd1f859b3ff05e978659db7ddda9810d0ae3058c09361efa4ca26c1f3bb`
+-	v2 Content-Length: 65.7 MB (65687771 bytes)
 
-#### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
+#### `13a8e55f2d20aee3c842842ebadcbda69347bb657a4cde1b851719b8f896c596`
 
 ```dockerfile
 RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
@@ -263,178 +248,165 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Tue, 19 Jan 2016 23:31:23 GMT
--	Parent Layer: `f15ce52fc004a5c3eab9128a78f7c0c2135d4f726bc54f1373120ab3ff291bcc`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 22:10:58 GMT
+-	Parent Layer: `8aa2fc7185e20bacda32d815eaae32cbc1c0457dc160ed5b3995ab79a8c7fd98`
+-	Docker Version: 1.9.1
 -	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:3b52deaaf0edb8a0282a08dd9c9e25da2050a75739b832ecc6e29941394933a6`
--	v2 Content-Length: 71.5 KB (71484 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:56 GMT
+-	v2 Blob: `sha256:41402770caf28a7ecc80ae742e685779e952fb88693bd6b015b8761c5536a4da`
+-	v2 Content-Length: 71.5 KB (71481 bytes)
 
-#### `a4c5be5b6e596241b4530ade26294afa8d8a4a2b9163c30e36c87f879b0f5073`
+#### `1b1999356dda739315854eb57a482e92405660e84fd71b6c59f777377b5bd2dc`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Tue, 19 Jan 2016 23:31:24 GMT
--	Parent Layer: `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 22:11:00 GMT
+-	Parent Layer: `13a8e55f2d20aee3c842842ebadcbda69347bb657a4cde1b851719b8f896c596`
+-	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
+-	v2 Blob: `sha256:a5051dd98acdd5bc70ba98a55807acc224aa88e18c45db1ad1f289c5be2fc0a2`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
-#### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
+#### `1997914a7c23c0f2f77ba6570032f8e74292224d24b9e13228244561ac304020`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 19 Jan 2016 23:31:24 GMT
--	Parent Layer: `a4c5be5b6e596241b4530ade26294afa8d8a4a2b9163c30e36c87f879b0f5073`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 22:11:00 GMT
+-	Parent Layer: `1b1999356dda739315854eb57a482e92405660e84fd71b6c59f777377b5bd2dc`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `02324b5ab316b528675491f7466f0494d4172cd7f93735c0315e53e224a87d27`
+#### `7cec882ce16ebac883a7ac19699d437733d17d2d671d2284bb2a57881acdbab4`
 
 ```dockerfile
 RUN apt-get -y update
 ```
 
--	Created: Wed, 20 Jan 2016 01:31:15 GMT
--	Parent Layer: `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
--	Docker Version: 1.8.3
--	Virtual Size: 21.5 MB (21483764 bytes)
--	v2 Blob: `sha256:83110f2bf985e97b1d196d14b8d69e306bfd6477c71358341c8348931d886780`
--	v2 Content-Length: 21.4 MB (21353605 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 17:02:18 GMT
+-	Created: Fri, 26 Feb 2016 23:33:49 GMT
+-	Parent Layer: `1997914a7c23c0f2f77ba6570032f8e74292224d24b9e13228244561ac304020`
+-	Docker Version: 1.9.1
+-	Virtual Size: 21.6 MB (21567960 bytes)
+-	v2 Blob: `sha256:136084a04503e34a78d044f805053cfddf9ef9d79e7e428634741f16b40eca5c`
+-	v2 Content-Length: 21.4 MB (21437619 bytes)
 
-#### `d8658d5360328567572f3161bed0ee804248a253966372a0964f4ae166f42bde`
+#### `54e9a9fc6774bf18a96ae17b2d5937f7c8be05fd6b403878272a19eedbdc6952`
 
 ```dockerfile
 RUN apt-get -y install supervisor nodejs npm redis-server
 ```
 
--	Created: Wed, 20 Jan 2016 01:32:41 GMT
--	Parent Layer: `02324b5ab316b528675491f7466f0494d4172cd7f93735c0315e53e224a87d27`
--	Docker Version: 1.8.3
--	Virtual Size: 156.1 MB (156134176 bytes)
--	v2 Blob: `sha256:48096639e9f4a29d5d05f3960d699bfb601b9ff50db64bf5c5a7505d33fb929d`
--	v2 Content-Length: 62.4 MB (62387346 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 17:02:03 GMT
+-	Created: Fri, 26 Feb 2016 23:34:52 GMT
+-	Parent Layer: `7cec882ce16ebac883a7ac19699d437733d17d2d671d2284bb2a57881acdbab4`
+-	Docker Version: 1.9.1
+-	Virtual Size: 159.3 MB (159315420 bytes)
+-	v2 Blob: `sha256:71e1318a9759d13b0268e8c6defdc3d510cdf5253c30d7756492b837bce31eaa`
+-	v2 Content-Length: 65.6 MB (65566800 bytes)
 
-#### `6f79b2a32f189c9d19290dc6fac459b98f1b0999830cd2a5be00ac9b5edf6a6a`
+#### `cc586e4869fc68bb5b079f2cc0e3ea4ed75c40ed454c6a754788c7c43d0f01cb`
 
 ```dockerfile
 RUN mkdir ./hipache
 ```
 
--	Created: Wed, 20 Jan 2016 01:32:45 GMT
--	Parent Layer: `d8658d5360328567572f3161bed0ee804248a253966372a0964f4ae166f42bde`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:34:56 GMT
+-	Parent Layer: `54e9a9fc6774bf18a96ae17b2d5937f7c8be05fd6b403878272a19eedbdc6952`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:fef8b532a55e27a6bcb1e97678b96796233d67635991c111d4b40a38ca455577`
--	v2 Content-Length: 95.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 17:01:28 GMT
+-	v2 Blob: `sha256:43543f0463c2be35b2939428765f203bd3bc87276dd6c43ba541cd1ea02cc764`
+-	v2 Content-Length: 94.0 B
 
-#### `51687acbf6ac5294c1fe5fcf743bc4ae6eb1fd117b297965d2d310b0236db0d2`
+#### `4523d6521fa6f20be9663a90cb74c730ae2f33c26517ed066479f0be07362394`
 
 ```dockerfile
-ADD dir:4f2d3e4bc962c1178d1c075d6524ec056992d2867ab72ccb00a90d2fbd146829 in ./hipache
+ADD dir:ad06a28db2d4c2d78417435d4e4d393dde3032b7d3859a2b4bbe233a0b2370b2 in ./hipache
 ```
 
--	Created: Tue, 26 Jan 2016 14:22:09 GMT
--	Parent Layer: `6f79b2a32f189c9d19290dc6fac459b98f1b0999830cd2a5be00ac9b5edf6a6a`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:34:57 GMT
+-	Parent Layer: `cc586e4869fc68bb5b079f2cc0e3ea4ed75c40ed454c6a754788c7c43d0f01cb`
+-	Docker Version: 1.9.1
 -	Virtual Size: 543.9 KB (543889 bytes)
--	v2 Blob: `sha256:eff4377c8f422105014fb41a85674af1b91072ccdb0212b255de29f46add778b`
--	v2 Content-Length: 404.2 KB (404171 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:36:45 GMT
+-	v2 Blob: `sha256:520ad62e968c1e049d3788d4cf3cce5ad50510acca90d3cf692f0fd66f96560d`
+-	v2 Content-Length: 404.2 KB (404180 bytes)
 
-#### `afcc465f401b161dc62c9e79cf73d8ef23392f78a337a89cd6fb67d6f0b93b0b`
+#### `d958a228ac9f3e34a5fc4d42afdf1b61430c07d5c3a5e36fc676904a4ead2fe2`
 
 ```dockerfile
 RUN npm install -g ./hipache --production
 ```
 
--	Created: Tue, 26 Jan 2016 14:22:13 GMT
--	Parent Layer: `51687acbf6ac5294c1fe5fcf743bc4ae6eb1fd117b297965d2d310b0236db0d2`
--	Docker Version: 1.8.3
--	Virtual Size: 1.6 MB (1597785 bytes)
--	v2 Blob: `sha256:befc3a10b07d7ace87b428e79aa34f7537c369df84d65b906ea01aef3496f7b9`
--	v2 Content-Length: 575.7 KB (575748 bytes)
--	v2 Last-Modified: Mon, 01 Feb 2016 21:36:42 GMT
+-	Created: Fri, 26 Feb 2016 23:35:01 GMT
+-	Parent Layer: `4523d6521fa6f20be9663a90cb74c730ae2f33c26517ed066479f0be07362394`
+-	Docker Version: 1.9.1
+-	Virtual Size: 1.6 MB (1598036 bytes)
+-	v2 Blob: `sha256:bd9e4e0a82f3420f3b6db0d05bb613395d3449d28db3a7469a2f06393ea24d1d`
+-	v2 Content-Length: 576.0 KB (575973 bytes)
 
-#### `663ef53bb0d648de130a6662f76801e1c94db61f248db7c7aa6d87e3a3fbaf67`
+#### `7954a4b5da06644b41005a5dffe6119d943b05fd25927775ce9d11288dafd96a`
 
 ```dockerfile
 ENV NODE_ENV=production
 ```
 
--	Created: Tue, 26 Jan 2016 14:22:13 GMT
--	Parent Layer: `afcc465f401b161dc62c9e79cf73d8ef23392f78a337a89cd6fb67d6f0b93b0b`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:01 GMT
+-	Parent Layer: `d958a228ac9f3e34a5fc4d42afdf1b61430c07d5c3a5e36fc676904a4ead2fe2`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bb6f49fc479b12d8073e841726daa94f97f437a57fc3882b3960ebe3e8046d41`
+#### `cda355161865752c4a04369539a954be95025111ea13a62efe3eb45d708305c3`
 
 ```dockerfile
 ADD file:a6192eeb65186b26b914a86f28baaf6db40bde5c3fb479c2aceca29e4e9e40a2 in /etc/supervisor/conf.d/supervisord.conf
 ```
 
--	Created: Tue, 26 Jan 2016 14:22:14 GMT
--	Parent Layer: `663ef53bb0d648de130a6662f76801e1c94db61f248db7c7aa6d87e3a3fbaf67`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:02 GMT
+-	Parent Layer: `7954a4b5da06644b41005a5dffe6119d943b05fd25927775ce9d11288dafd96a`
+-	Docker Version: 1.9.1
 -	Virtual Size: 456.0 B
--	v2 Blob: `sha256:d8674df0b4053c4beb6fed40f03fda8181170ef1a1107f998065a7d05395f790`
--	v2 Content-Length: 343.0 B
--	v2 Last-Modified: Mon, 01 Feb 2016 21:36:35 GMT
+-	v2 Blob: `sha256:e933a10fef49ff8e74b4c7e4b18f3ebc45fd482e549d7b59b5baf6d054d3aa18`
+-	v2 Content-Length: 344.0 B
 
-#### `237c6411a8a52eca70d5e8446c110adf2c34f6c3fa02dd9a5ee4c348e3c08f27`
+#### `3196edaa08d8168c13045387a50858ddd45de8b7f7a898691dfcbaeabbe0ae48`
 
 ```dockerfile
 EXPOSE 80/tcp
 ```
 
--	Created: Tue, 26 Jan 2016 14:22:14 GMT
--	Parent Layer: `bb6f49fc479b12d8073e841726daa94f97f437a57fc3882b3960ebe3e8046d41`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:03 GMT
+-	Parent Layer: `cda355161865752c4a04369539a954be95025111ea13a62efe3eb45d708305c3`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `49e07b85e89930df5e0443bafed9f0e857ee297943c2718f4a7a71137db11a31`
+#### `1b34ae4a38bb187621a82eebe1362f670751e0ae201020e040bae393ea81f321`
 
 ```dockerfile
 EXPOSE 6379/tcp
 ```
 
--	Created: Tue, 26 Jan 2016 14:22:15 GMT
--	Parent Layer: `237c6411a8a52eca70d5e8446c110adf2c34f6c3fa02dd9a5ee4c348e3c08f27`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:03 GMT
+-	Parent Layer: `3196edaa08d8168c13045387a50858ddd45de8b7f7a898691dfcbaeabbe0ae48`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `edfeeb379241dfb88acb7afa74d891d441299da139f604dc2f38ab26af612c8b`
+#### `a78e69d619ad7f444a983c71d7805c9dab8ec658a27611a9b7aeee8ffc734673`
 
 ```dockerfile
 CMD ["supervisord" "-n"]
 ```
 
--	Created: Tue, 26 Jan 2016 14:22:15 GMT
--	Parent Layer: `49e07b85e89930df5e0443bafed9f0e857ee297943c2718f4a7a71137db11a31`
--	Docker Version: 1.8.3
+-	Created: Fri, 26 Feb 2016 23:35:04 GMT
+-	Parent Layer: `1b34ae4a38bb187621a82eebe1362f670751e0ae201020e040bae393ea81f321`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

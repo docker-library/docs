@@ -1,12 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.12`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e57caf5f7dc58160846753096016f81224bc0a80/2.1/Dockerfile)
--	[`2.2.4`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e57caf5f7dc58160846753096016f81224bc0a80/2.2/Dockerfile)
--	[`3.0.2`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e57caf5f7dc58160846753096016f81224bc0a80/3.0/Dockerfile)
+-	[`2.1.13`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d0a316423d957077b59f5d37ace76b5f4cc84a4c/2.1/Dockerfile)
+-	[`2.2.5`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d0a316423d957077b59f5d37ace76b5f4cc84a4c/2.2/Dockerfile)
+-	[`3.0.3`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d0a316423d957077b59f5d37ace76b5f4cc84a4c/3.0/Dockerfile)
 -	[`3.1.1`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e57caf5f7dc58160846753096016f81224bc0a80/3.1/Dockerfile)
--	[`3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/e57caf5f7dc58160846753096016f81224bc0a80/3.2/Dockerfile)
+-	[`3.2.1`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/59ea86ef4380e2ad76f0b7a3c46019046b445ada/3.2/Dockerfile)
+-	[`3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/cassandra/blob/13a08c6fb1f02a68060d632ac75b2caed92500e7/3.3/Dockerfile)
 
-[![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.12,cassandra:2.2.4,cassandra:3.0.2,cassandra:3.1.1,cassandra:3.2)
+[![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.13,cassandra:2.2.5,cassandra:3.0.3,cassandra:3.1.1,cassandra:3.2.1,cassandra:3.3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -178,7 +179,7 @@ If there is no database initialized when the container starts, then a default da
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -2,2450 +2,68 @@
 
 # Tags of `golang`
 
--	[`golang:1.4.3`](#golang143)
--	[`golang:1.4`](#golang14)
--	[`golang:1.4.3-onbuild`](#golang143-onbuild)
--	[`golang:1.4-onbuild`](#golang14-onbuild)
--	[`golang:1.4.3-cross`](#golang143-cross)
--	[`golang:1.4-cross`](#golang14-cross)
--	[`golang:1.4.3-wheezy`](#golang143-wheezy)
--	[`golang:1.4-wheezy`](#golang14-wheezy)
--	[`golang:1.4.3-alpine`](#golang143-alpine)
--	[`golang:1.4-alpine`](#golang14-alpine)
 -	[`golang:1.5.3`](#golang153)
 -	[`golang:1.5`](#golang15)
--	[`golang:1`](#golang1)
--	[`golang:latest`](#golanglatest)
 -	[`golang:1.5.3-onbuild`](#golang153-onbuild)
 -	[`golang:1.5-onbuild`](#golang15-onbuild)
--	[`golang:1-onbuild`](#golang1-onbuild)
--	[`golang:onbuild`](#golangonbuild)
 -	[`golang:1.5.3-wheezy`](#golang153-wheezy)
 -	[`golang:1.5-wheezy`](#golang15-wheezy)
--	[`golang:1-wheezy`](#golang1-wheezy)
--	[`golang:wheezy`](#golangwheezy)
 -	[`golang:1.5.3-alpine`](#golang153-alpine)
 -	[`golang:1.5-alpine`](#golang15-alpine)
+-	[`golang:1.6.0`](#golang160)
+-	[`golang:1.6`](#golang16)
+-	[`golang:1`](#golang1)
+-	[`golang:latest`](#golanglatest)
+-	[`golang:1.6.0-onbuild`](#golang160-onbuild)
+-	[`golang:1.6-onbuild`](#golang16-onbuild)
+-	[`golang:1-onbuild`](#golang1-onbuild)
+-	[`golang:onbuild`](#golangonbuild)
+-	[`golang:1.6.0-wheezy`](#golang160-wheezy)
+-	[`golang:1.6-wheezy`](#golang16-wheezy)
+-	[`golang:1-wheezy`](#golang1-wheezy)
+-	[`golang:wheezy`](#golangwheezy)
+-	[`golang:1.6.0-alpine`](#golang160-alpine)
+-	[`golang:1.6-alpine`](#golang16-alpine)
 -	[`golang:1-alpine`](#golang1-alpine)
 -	[`golang:alpine`](#golangalpine)
--	[`golang:1.6rc2`](#golang16rc2)
--	[`golang:1.6`](#golang16)
--	[`golang:1.6rc2-onbuild`](#golang16rc2-onbuild)
--	[`golang:1.6-onbuild`](#golang16-onbuild)
--	[`golang:1.6rc2-wheezy`](#golang16rc2-wheezy)
--	[`golang:1.6-wheezy`](#golang16-wheezy)
--	[`golang:1.6rc2-alpine`](#golang16rc2-alpine)
--	[`golang:1.6-alpine`](#golang16-alpine)
-
-## `golang:1.4.3`
-
-```console
-$ docker pull library/golang@sha256:3fcb82239317d88f1b2d6c1cd177523188d72b8894ecf5245b47f6e3fd512c65
-```
-
--	Total Virtual Size: 563.0 MB (563044710 bytes)
--	Total v2 Content-Length: 204.7 MB (204686207 bytes)
-
-### Layers (14)
-
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
-
-```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
-```
-
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
-
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
-
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
-
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
-
-#### `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
-
-```dockerfile
-ENV GOLANG_VERSION=1.4.3
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Tue, 26 Jan 2016 14:04:01 GMT
--	Parent Layer: `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/src -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/src/go/src && ./make.bash --no-clean 2>&1
-```
-
--	Created: Tue, 26 Jan 2016 14:04:36 GMT
--	Parent Layer: `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
--	Docker Version: 1.8.3
--	Virtual Size: 137.1 MB (137066739 bytes)
--	v2 Blob: `sha256:eb4db151364688ca0d826279cab49cb5311f952e9fa26aa2af33bf985659c5bb`
--	v2 Content-Length: 35.4 MB (35418058 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:05:10 GMT
-
-#### `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:38 GMT
--	Parent Layer: `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/src/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:04:39 GMT
--	Parent Layer: `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:04:40 GMT
--	Parent Layer: `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:16c05672b95328a74f9633d20b6bd0902d95b25955533ccf8ff223e452dea5ca`
--	v2 Content-Length: 121.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:15 GMT
-
-#### `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8486dfbe8bbef7c061fdec6e069dbeba184b6c01ab955deb031000d8d311346`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:0b30ffa8606d64a66337cc8882b3485f0a4e47ccc305ab811ca996eb4fc30f08`
--	v2 Content-Length: 1.4 KB (1357 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:08 GMT
-
-## `golang:1.4`
-
-```console
-$ docker pull library/golang@sha256:98bfd58d2404883a539fb1af8f0bcffe6261b0e6994f3650c2c3f8c6a2684d6e
-```
-
--	Total Virtual Size: 563.0 MB (563044710 bytes)
--	Total v2 Content-Length: 204.7 MB (204686207 bytes)
-
-### Layers (14)
-
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
-
-```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
-```
-
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
-
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
-
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
-
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
-
-#### `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
-
-```dockerfile
-ENV GOLANG_VERSION=1.4.3
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Tue, 26 Jan 2016 14:04:01 GMT
--	Parent Layer: `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/src -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/src/go/src && ./make.bash --no-clean 2>&1
-```
-
--	Created: Tue, 26 Jan 2016 14:04:36 GMT
--	Parent Layer: `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
--	Docker Version: 1.8.3
--	Virtual Size: 137.1 MB (137066739 bytes)
--	v2 Blob: `sha256:eb4db151364688ca0d826279cab49cb5311f952e9fa26aa2af33bf985659c5bb`
--	v2 Content-Length: 35.4 MB (35418058 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:05:10 GMT
-
-#### `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:38 GMT
--	Parent Layer: `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/src/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:04:39 GMT
--	Parent Layer: `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:04:40 GMT
--	Parent Layer: `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:16c05672b95328a74f9633d20b6bd0902d95b25955533ccf8ff223e452dea5ca`
--	v2 Content-Length: 121.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:15 GMT
-
-#### `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8486dfbe8bbef7c061fdec6e069dbeba184b6c01ab955deb031000d8d311346`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:0b30ffa8606d64a66337cc8882b3485f0a4e47ccc305ab811ca996eb4fc30f08`
--	v2 Content-Length: 1.4 KB (1357 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:08 GMT
-
-## `golang:1.4.3-onbuild`
-
-```console
-$ docker pull library/golang@sha256:3f54b673d64c30aa95e92132e6bc3d69b2e82981854ca4db52cd73281c375bd4
-```
-
--	Total Virtual Size: 563.0 MB (563044710 bytes)
--	Total v2 Content-Length: 204.7 MB (204686499 bytes)
-
-### Layers (20)
-
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
-
-```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
-```
-
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
-
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
-
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
-
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
-
-#### `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
-
-```dockerfile
-ENV GOLANG_VERSION=1.4.3
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Tue, 26 Jan 2016 14:04:01 GMT
--	Parent Layer: `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/src -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/src/go/src && ./make.bash --no-clean 2>&1
-```
-
--	Created: Tue, 26 Jan 2016 14:04:36 GMT
--	Parent Layer: `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
--	Docker Version: 1.8.3
--	Virtual Size: 137.1 MB (137066739 bytes)
--	v2 Blob: `sha256:eb4db151364688ca0d826279cab49cb5311f952e9fa26aa2af33bf985659c5bb`
--	v2 Content-Length: 35.4 MB (35418058 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:05:10 GMT
-
-#### `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:38 GMT
--	Parent Layer: `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/src/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:04:39 GMT
--	Parent Layer: `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:04:40 GMT
--	Parent Layer: `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:16c05672b95328a74f9633d20b6bd0902d95b25955533ccf8ff223e452dea5ca`
--	v2 Content-Length: 121.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:15 GMT
-
-#### `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8486dfbe8bbef7c061fdec6e069dbeba184b6c01ab955deb031000d8d311346`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:0b30ffa8606d64a66337cc8882b3485f0a4e47ccc305ab811ca996eb4fc30f08`
--	v2 Content-Length: 1.4 KB (1357 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:08 GMT
-
-#### `4cde7823f6d4f3f7d36e6b2634eb9dd8daef7f86baa8fc9bbcd5a2505ccadbb6`
-
-```dockerfile
-RUN mkdir -p /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:05:15 GMT
--	Parent Layer: `a8486dfbe8bbef7c061fdec6e069dbeba184b6c01ab955deb031000d8d311346`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:51bd34a902a35a60b60a40de43df111fbf9b32aef26fc008fedf1e4edb7dcbb9`
--	v2 Content-Length: 132.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:10:19 GMT
-
-#### `8a44719542e92dc16de027cfb59299909b29b6ba6db6ac093f458c6522b9fcc7`
-
-```dockerfile
-WORKDIR /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:05:16 GMT
--	Parent Layer: `4cde7823f6d4f3f7d36e6b2634eb9dd8daef7f86baa8fc9bbcd5a2505ccadbb6`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `18d58e8467560b8413f9b38b0f4f21bf1e996429b5a00fa61dbfa8a2cfef4b7e`
-
-```dockerfile
-CMD ["go-wrapper" "run"]
-```
-
--	Created: Tue, 26 Jan 2016 14:05:16 GMT
--	Parent Layer: `8a44719542e92dc16de027cfb59299909b29b6ba6db6ac093f458c6522b9fcc7`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `bf03917c3876aeb5fc5e3891935d20671bf2af94e508937ab961bf79021e7ff3`
-
-```dockerfile
-ONBUILD COPY . /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:05:17 GMT
--	Parent Layer: `18d58e8467560b8413f9b38b0f4f21bf1e996429b5a00fa61dbfa8a2cfef4b7e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `57979ef43a74136259570213600d77cd6c5e1d466b70c7e2643c3073c1ce574b`
-
-```dockerfile
-ONBUILD RUN go-wrapper download
-```
-
--	Created: Tue, 26 Jan 2016 14:05:17 GMT
--	Parent Layer: `bf03917c3876aeb5fc5e3891935d20671bf2af94e508937ab961bf79021e7ff3`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `5e642cf671cab4a5b8ec9d679ac368457a6846c22ee0a15c25cff93bd785c8ff`
-
-```dockerfile
-ONBUILD RUN go-wrapper install
-```
-
--	Created: Tue, 26 Jan 2016 14:05:18 GMT
--	Parent Layer: `57979ef43a74136259570213600d77cd6c5e1d466b70c7e2643c3073c1ce574b`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `golang:1.4-onbuild`
-
-```console
-$ docker pull library/golang@sha256:78a853645390130ed44c9febca8a5114995d744434120abb1e6c2069ce0a1e92
-```
-
--	Total Virtual Size: 563.0 MB (563044710 bytes)
--	Total v2 Content-Length: 204.7 MB (204686499 bytes)
-
-### Layers (20)
-
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
-
-```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
-```
-
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
-
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
-
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
-
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
-
-#### `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
-
-```dockerfile
-ENV GOLANG_VERSION=1.4.3
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Tue, 26 Jan 2016 14:04:01 GMT
--	Parent Layer: `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/src -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/src/go/src && ./make.bash --no-clean 2>&1
-```
-
--	Created: Tue, 26 Jan 2016 14:04:36 GMT
--	Parent Layer: `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
--	Docker Version: 1.8.3
--	Virtual Size: 137.1 MB (137066739 bytes)
--	v2 Blob: `sha256:eb4db151364688ca0d826279cab49cb5311f952e9fa26aa2af33bf985659c5bb`
--	v2 Content-Length: 35.4 MB (35418058 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:05:10 GMT
-
-#### `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:38 GMT
--	Parent Layer: `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/src/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:04:39 GMT
--	Parent Layer: `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:04:40 GMT
--	Parent Layer: `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:16c05672b95328a74f9633d20b6bd0902d95b25955533ccf8ff223e452dea5ca`
--	v2 Content-Length: 121.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:15 GMT
-
-#### `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8486dfbe8bbef7c061fdec6e069dbeba184b6c01ab955deb031000d8d311346`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:0b30ffa8606d64a66337cc8882b3485f0a4e47ccc305ab811ca996eb4fc30f08`
--	v2 Content-Length: 1.4 KB (1357 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:08 GMT
-
-#### `4cde7823f6d4f3f7d36e6b2634eb9dd8daef7f86baa8fc9bbcd5a2505ccadbb6`
-
-```dockerfile
-RUN mkdir -p /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:05:15 GMT
--	Parent Layer: `a8486dfbe8bbef7c061fdec6e069dbeba184b6c01ab955deb031000d8d311346`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:51bd34a902a35a60b60a40de43df111fbf9b32aef26fc008fedf1e4edb7dcbb9`
--	v2 Content-Length: 132.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:10:19 GMT
-
-#### `8a44719542e92dc16de027cfb59299909b29b6ba6db6ac093f458c6522b9fcc7`
-
-```dockerfile
-WORKDIR /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:05:16 GMT
--	Parent Layer: `4cde7823f6d4f3f7d36e6b2634eb9dd8daef7f86baa8fc9bbcd5a2505ccadbb6`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `18d58e8467560b8413f9b38b0f4f21bf1e996429b5a00fa61dbfa8a2cfef4b7e`
-
-```dockerfile
-CMD ["go-wrapper" "run"]
-```
-
--	Created: Tue, 26 Jan 2016 14:05:16 GMT
--	Parent Layer: `8a44719542e92dc16de027cfb59299909b29b6ba6db6ac093f458c6522b9fcc7`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `bf03917c3876aeb5fc5e3891935d20671bf2af94e508937ab961bf79021e7ff3`
-
-```dockerfile
-ONBUILD COPY . /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:05:17 GMT
--	Parent Layer: `18d58e8467560b8413f9b38b0f4f21bf1e996429b5a00fa61dbfa8a2cfef4b7e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `57979ef43a74136259570213600d77cd6c5e1d466b70c7e2643c3073c1ce574b`
-
-```dockerfile
-ONBUILD RUN go-wrapper download
-```
-
--	Created: Tue, 26 Jan 2016 14:05:17 GMT
--	Parent Layer: `bf03917c3876aeb5fc5e3891935d20671bf2af94e508937ab961bf79021e7ff3`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `5e642cf671cab4a5b8ec9d679ac368457a6846c22ee0a15c25cff93bd785c8ff`
-
-```dockerfile
-ONBUILD RUN go-wrapper install
-```
-
--	Created: Tue, 26 Jan 2016 14:05:18 GMT
--	Parent Layer: `57979ef43a74136259570213600d77cd6c5e1d466b70c7e2643c3073c1ce574b`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `golang:1.4.3-cross`
-
-```console
-$ docker pull library/golang@sha256:7fdd6443adc64ae40ccf02f706559ad62219d5bf66bcb32480644b2d3c049809
-```
-
--	Total Virtual Size: 2.4 GB (2384834439 bytes)
--	Total v2 Content-Length: 665.2 MB (665219842 bytes)
-
-### Layers (17)
-
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
-
-```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
-```
-
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
-
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
-
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
-
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
-
-#### `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
-
-```dockerfile
-ENV GOLANG_VERSION=1.4.3
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Tue, 26 Jan 2016 14:04:01 GMT
--	Parent Layer: `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/src -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/src/go/src && ./make.bash --no-clean 2>&1
-```
-
--	Created: Tue, 26 Jan 2016 14:04:36 GMT
--	Parent Layer: `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
--	Docker Version: 1.8.3
--	Virtual Size: 137.1 MB (137066739 bytes)
--	v2 Blob: `sha256:eb4db151364688ca0d826279cab49cb5311f952e9fa26aa2af33bf985659c5bb`
--	v2 Content-Length: 35.4 MB (35418058 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:05:10 GMT
-
-#### `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:38 GMT
--	Parent Layer: `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/src/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:04:39 GMT
--	Parent Layer: `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:04:40 GMT
--	Parent Layer: `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:16c05672b95328a74f9633d20b6bd0902d95b25955533ccf8ff223e452dea5ca`
--	v2 Content-Length: 121.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:15 GMT
-
-#### `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8486dfbe8bbef7c061fdec6e069dbeba184b6c01ab955deb031000d8d311346`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:0b30ffa8606d64a66337cc8882b3485f0a4e47ccc305ab811ca996eb4fc30f08`
--	v2 Content-Length: 1.4 KB (1357 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:08 GMT
-
-#### `7a864dc22c98e371a011e6a1d2b7b5c3398f29672c5f7642c01b350c4b7f4d02`
-
-```dockerfile
-ENV GOLANG_CROSSPLATFORMS=darwin/386 darwin/amd64 	dragonfly/386 dragonfly/amd64 	freebsd/386 freebsd/amd64 freebsd/arm 	linux/386 linux/amd64 linux/arm 	nacl/386 nacl/amd64p32 nacl/arm 	netbsd/386 netbsd/amd64 netbsd/arm 	openbsd/386 openbsd/amd64 	plan9/386 plan9/amd64 	solaris/amd64 	windows/386 windows/amd64
-```
-
--	Created: Tue, 26 Jan 2016 14:05:39 GMT
--	Parent Layer: `a8486dfbe8bbef7c061fdec6e069dbeba184b6c01ab955deb031000d8d311346`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `47debdc32abc65c78c6363bc3892d07ea144a4bccc5d5a7643ecef4c3127d25a`
-
-```dockerfile
-ENV GOARM=5
-```
-
--	Created: Tue, 26 Jan 2016 14:05:40 GMT
--	Parent Layer: `7a864dc22c98e371a011e6a1d2b7b5c3398f29672c5f7642c01b350c4b7f4d02`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `58fdf4133d20bff4a54f083b2cd9fb34e04d6c87c28d41a775ef4e385e6ff516`
-
-```dockerfile
-RUN cd /usr/src/go/src \
-	&& set -ex \
-	&& for platform in $GOLANG_CROSSPLATFORMS; do \
-		GOOS=${platform%/*} \
-		GOARCH=${platform##*/} \
-		./make.bash --no-clean 2>&1; \
-	done
-```
-
--	Created: Tue, 26 Jan 2016 14:12:58 GMT
--	Parent Layer: `47debdc32abc65c78c6363bc3892d07ea144a4bccc5d5a7643ecef4c3127d25a`
--	Docker Version: 1.8.3
--	Virtual Size: 1.8 GB (1821789729 bytes)
--	v2 Blob: `sha256:faddd905ed183527ecc5f82dccd699dce488ba350ceefe6d2df58ba3c51e5e97`
--	v2 Content-Length: 460.5 MB (460533571 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:15:25 GMT
-
-## `golang:1.4-cross`
-
-```console
-$ docker pull library/golang@sha256:13882f4e539a376b73f9c718f49a75801f4843518b78b29a3e04501cbc14e885
-```
-
--	Total Virtual Size: 2.4 GB (2384834439 bytes)
--	Total v2 Content-Length: 665.2 MB (665219842 bytes)
-
-### Layers (17)
-
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
-
-```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
-```
-
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
-
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
-
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
-
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
-
-#### `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
-
-```dockerfile
-ENV GOLANG_VERSION=1.4.3
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:04:00 GMT
--	Parent Layer: `8c5cd12cb8bd69ebf20329200b8e6cb8d1ef7a6bc5cd891a27f7620ab9a408e0`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Tue, 26 Jan 2016 14:04:01 GMT
--	Parent Layer: `39cd9b1b49f83deb4325bfdb477e5a91b8c233cbf8bbf28774c770b3c7fa07fb`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/src -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/src/go/src && ./make.bash --no-clean 2>&1
-```
-
--	Created: Tue, 26 Jan 2016 14:04:36 GMT
--	Parent Layer: `e4e71deaff1ad124935f8fa43125032da4b54a95c447dd0d53625633a8e7f6e5`
--	Docker Version: 1.8.3
--	Virtual Size: 137.1 MB (137066739 bytes)
--	v2 Blob: `sha256:eb4db151364688ca0d826279cab49cb5311f952e9fa26aa2af33bf985659c5bb`
--	v2 Content-Length: 35.4 MB (35418058 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:05:10 GMT
-
-#### `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:38 GMT
--	Parent Layer: `05c2ea2d81bceeddc2881beb63d2ee26537593de9f47b4613c0d5afb1353f7df`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/src/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:04:39 GMT
--	Parent Layer: `4da49b396850a0d0d1e21ea5c0a0f2d1c8a2ddca57a5d2f318636ebb677b3995`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:04:40 GMT
--	Parent Layer: `1fde1d33b29dea2c84a49a8d640e061aeaabdec4075803b42f3ecfdbb2f736ac`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:16c05672b95328a74f9633d20b6bd0902d95b25955533ccf8ff223e452dea5ca`
--	v2 Content-Length: 121.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:15 GMT
-
-#### `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d295079ad33667e730fec66f28266a25e62a3adb1d1c00cd2bee9fb3dabad8d9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a8486dfbe8bbef7c061fdec6e069dbeba184b6c01ab955deb031000d8d311346`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:04:41 GMT
--	Parent Layer: `d66518869e500533b9c2cad268df9a22fe74c39f44cd6100f46c076d278f4866`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:0b30ffa8606d64a66337cc8882b3485f0a4e47ccc305ab811ca996eb4fc30f08`
--	v2 Content-Length: 1.4 KB (1357 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:02:08 GMT
-
-#### `7a864dc22c98e371a011e6a1d2b7b5c3398f29672c5f7642c01b350c4b7f4d02`
-
-```dockerfile
-ENV GOLANG_CROSSPLATFORMS=darwin/386 darwin/amd64 	dragonfly/386 dragonfly/amd64 	freebsd/386 freebsd/amd64 freebsd/arm 	linux/386 linux/amd64 linux/arm 	nacl/386 nacl/amd64p32 nacl/arm 	netbsd/386 netbsd/amd64 netbsd/arm 	openbsd/386 openbsd/amd64 	plan9/386 plan9/amd64 	solaris/amd64 	windows/386 windows/amd64
-```
-
--	Created: Tue, 26 Jan 2016 14:05:39 GMT
--	Parent Layer: `a8486dfbe8bbef7c061fdec6e069dbeba184b6c01ab955deb031000d8d311346`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `47debdc32abc65c78c6363bc3892d07ea144a4bccc5d5a7643ecef4c3127d25a`
-
-```dockerfile
-ENV GOARM=5
-```
-
--	Created: Tue, 26 Jan 2016 14:05:40 GMT
--	Parent Layer: `7a864dc22c98e371a011e6a1d2b7b5c3398f29672c5f7642c01b350c4b7f4d02`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `58fdf4133d20bff4a54f083b2cd9fb34e04d6c87c28d41a775ef4e385e6ff516`
-
-```dockerfile
-RUN cd /usr/src/go/src \
-	&& set -ex \
-	&& for platform in $GOLANG_CROSSPLATFORMS; do \
-		GOOS=${platform%/*} \
-		GOARCH=${platform##*/} \
-		./make.bash --no-clean 2>&1; \
-	done
-```
-
--	Created: Tue, 26 Jan 2016 14:12:58 GMT
--	Parent Layer: `47debdc32abc65c78c6363bc3892d07ea144a4bccc5d5a7643ecef4c3127d25a`
--	Docker Version: 1.8.3
--	Virtual Size: 1.8 GB (1821789729 bytes)
--	v2 Blob: `sha256:faddd905ed183527ecc5f82dccd699dce488ba350ceefe6d2df58ba3c51e5e97`
--	v2 Content-Length: 460.5 MB (460533571 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:15:25 GMT
-
-## `golang:1.4.3-wheezy`
-
-```console
-$ docker pull library/golang@sha256:e9be8ffdeda2fffaab9cb417bf72b18bf9bbc9219bc079e6f250fc197183e8c9
-```
-
--	Total Virtual Size: 437.8 MB (437806295 bytes)
--	Total v2 Content-Length: 150.8 MB (150831670 bytes)
-
-### Layers (14)
-
-#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
-
-```dockerfile
-ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
-```
-
--	Created: Mon, 25 Jan 2016 22:26:48 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
--	v2 Content-Length: 37.2 MB (37184894 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
-
-#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:26:50 GMT
--	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:36:47 GMT
--	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
--	Docker Version: 1.8.3
--	Virtual Size: 14.2 MB (14185017 bytes)
--	v2 Blob: `sha256:454edf61cfa65c7f2f412ceb1f54d055f5061fbd6e197853f844dbfb1570cdad`
--	v2 Content-Length: 6.7 MB (6728657 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:32:10 GMT
-
-#### `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:37:15 GMT
--	Parent Layer: `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
--	Docker Version: 1.8.3
--	Virtual Size: 110.0 MB (110024273 bytes)
--	v2 Blob: `sha256:6df3bbe21be65da47a2ede366521b6a04aa8afa4974ce781981d0b2bcff9b3cb`
--	v2 Content-Length: 37.4 MB (37365406 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:33:30 GMT
-
-#### `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:13:45 GMT
--	Parent Layer: `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
--	Docker Version: 1.8.3
--	Virtual Size: 90.8 MB (90804284 bytes)
--	v2 Blob: `sha256:ed2b7b9b470f804eba2b4b49132be6d98e5a0cab327f31ecf39297862d9aec27`
--	v2 Content-Length: 33.9 MB (33931904 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:24:20 GMT
-
-#### `bf711c22fab0c62c9091e47e45f0cc77960a4726cde0056219256597f9b7f268`
-
-```dockerfile
-ENV GOLANG_VERSION=1.4.3
-```
-
--	Created: Tue, 26 Jan 2016 14:13:46 GMT
--	Parent Layer: `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ffbe923dadcf71e9251ed3875a5b3cc01969bd0e7bf50b1fb46427fa737a40e8`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:13:47 GMT
--	Parent Layer: `bf711c22fab0c62c9091e47e45f0cc77960a4726cde0056219256597f9b7f268`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f9bfc5d1b1e649d24b052849c0db591697b8e3bdba0821aaaad83a475ae40f3a`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Tue, 26 Jan 2016 14:13:47 GMT
--	Parent Layer: `ffbe923dadcf71e9251ed3875a5b3cc01969bd0e7bf50b1fb46427fa737a40e8`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e5232da04dc9a5edb8834ec8127574032ddf6815995e75cc83b17e59e6a579a4`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/src -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/src/go/src && ./make.bash --no-clean 2>&1
-```
-
--	Created: Tue, 26 Jan 2016 14:14:20 GMT
--	Parent Layer: `f9bfc5d1b1e649d24b052849c0db591697b8e3bdba0821aaaad83a475ae40f3a`
--	Docker Version: 1.8.3
--	Virtual Size: 137.9 MB (137895798 bytes)
--	v2 Blob: `sha256:16d562bb949b8586ca73d5ae24103b201f7dc09a79cbc0fa287a2e631e425401`
--	v2 Content-Length: 35.6 MB (35619111 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:23:48 GMT
-
-#### `1d401c2aa771f42f6336ad15ab8d6840649aeee052a3b9e2891b4e3e6e9cdaca`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:14:22 GMT
--	Parent Layer: `e5232da04dc9a5edb8834ec8127574032ddf6815995e75cc83b17e59e6a579a4`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f82741c5f570fea4cda745fe5d423d24949fa1dbe64cc45ed0ddd10d6fbc08ca`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/src/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:14:23 GMT
--	Parent Layer: `1d401c2aa771f42f6336ad15ab8d6840649aeee052a3b9e2891b4e3e6e9cdaca`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `0954ec9d908890a101d9d61ba6974f8e1022e6d87dabf06171b795f70423d7e8`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:14:24 GMT
--	Parent Layer: `f82741c5f570fea4cda745fe5d423d24949fa1dbe64cc45ed0ddd10d6fbc08ca`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:196bdac9e50f366b45e828de60a61ec41f83df3be6986a2e63f7b25b735ccf1b`
--	v2 Content-Length: 121.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:23:14 GMT
-
-#### `3b60140ecc050cca4bbe00137b5dca31008c0d27524b13685539af39624901a2`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:14:25 GMT
--	Parent Layer: `0954ec9d908890a101d9d61ba6974f8e1022e6d87dabf06171b795f70423d7e8`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `461cee1cbc09aea29e00b139acab0ba5dd3a216602f69c158498a1f81deae32f`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:14:25 GMT
--	Parent Layer: `3b60140ecc050cca4bbe00137b5dca31008c0d27524b13685539af39624901a2`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:00ba9e776ee4ee5f3e87bc5eb808ec99fb2ad1a26cd5c6e878625cdd7dcd3f41`
--	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:20:48 GMT
-
-## `golang:1.4-wheezy`
-
-```console
-$ docker pull library/golang@sha256:bc72fad489bf423f30e388b0ac8d31c1f705e1fb913a01ae25afe6353c821744
-```
-
--	Total Virtual Size: 437.8 MB (437806295 bytes)
--	Total v2 Content-Length: 150.8 MB (150831670 bytes)
-
-### Layers (14)
-
-#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
-
-```dockerfile
-ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
-```
-
--	Created: Mon, 25 Jan 2016 22:26:48 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
--	v2 Content-Length: 37.2 MB (37184894 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
-
-#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:26:50 GMT
--	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:36:47 GMT
--	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
--	Docker Version: 1.8.3
--	Virtual Size: 14.2 MB (14185017 bytes)
--	v2 Blob: `sha256:454edf61cfa65c7f2f412ceb1f54d055f5061fbd6e197853f844dbfb1570cdad`
--	v2 Content-Length: 6.7 MB (6728657 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:32:10 GMT
-
-#### `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:37:15 GMT
--	Parent Layer: `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
--	Docker Version: 1.8.3
--	Virtual Size: 110.0 MB (110024273 bytes)
--	v2 Blob: `sha256:6df3bbe21be65da47a2ede366521b6a04aa8afa4974ce781981d0b2bcff9b3cb`
--	v2 Content-Length: 37.4 MB (37365406 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:33:30 GMT
-
-#### `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:13:45 GMT
--	Parent Layer: `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
--	Docker Version: 1.8.3
--	Virtual Size: 90.8 MB (90804284 bytes)
--	v2 Blob: `sha256:ed2b7b9b470f804eba2b4b49132be6d98e5a0cab327f31ecf39297862d9aec27`
--	v2 Content-Length: 33.9 MB (33931904 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:24:20 GMT
-
-#### `bf711c22fab0c62c9091e47e45f0cc77960a4726cde0056219256597f9b7f268`
-
-```dockerfile
-ENV GOLANG_VERSION=1.4.3
-```
-
--	Created: Tue, 26 Jan 2016 14:13:46 GMT
--	Parent Layer: `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ffbe923dadcf71e9251ed3875a5b3cc01969bd0e7bf50b1fb46427fa737a40e8`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:13:47 GMT
--	Parent Layer: `bf711c22fab0c62c9091e47e45f0cc77960a4726cde0056219256597f9b7f268`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f9bfc5d1b1e649d24b052849c0db591697b8e3bdba0821aaaad83a475ae40f3a`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Tue, 26 Jan 2016 14:13:47 GMT
--	Parent Layer: `ffbe923dadcf71e9251ed3875a5b3cc01969bd0e7bf50b1fb46427fa737a40e8`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e5232da04dc9a5edb8834ec8127574032ddf6815995e75cc83b17e59e6a579a4`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/src -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/src/go/src && ./make.bash --no-clean 2>&1
-```
-
--	Created: Tue, 26 Jan 2016 14:14:20 GMT
--	Parent Layer: `f9bfc5d1b1e649d24b052849c0db591697b8e3bdba0821aaaad83a475ae40f3a`
--	Docker Version: 1.8.3
--	Virtual Size: 137.9 MB (137895798 bytes)
--	v2 Blob: `sha256:16d562bb949b8586ca73d5ae24103b201f7dc09a79cbc0fa287a2e631e425401`
--	v2 Content-Length: 35.6 MB (35619111 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:23:48 GMT
-
-#### `1d401c2aa771f42f6336ad15ab8d6840649aeee052a3b9e2891b4e3e6e9cdaca`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:14:22 GMT
--	Parent Layer: `e5232da04dc9a5edb8834ec8127574032ddf6815995e75cc83b17e59e6a579a4`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `f82741c5f570fea4cda745fe5d423d24949fa1dbe64cc45ed0ddd10d6fbc08ca`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/src/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:14:23 GMT
--	Parent Layer: `1d401c2aa771f42f6336ad15ab8d6840649aeee052a3b9e2891b4e3e6e9cdaca`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `0954ec9d908890a101d9d61ba6974f8e1022e6d87dabf06171b795f70423d7e8`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:14:24 GMT
--	Parent Layer: `f82741c5f570fea4cda745fe5d423d24949fa1dbe64cc45ed0ddd10d6fbc08ca`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:196bdac9e50f366b45e828de60a61ec41f83df3be6986a2e63f7b25b735ccf1b`
--	v2 Content-Length: 121.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:23:14 GMT
-
-#### `3b60140ecc050cca4bbe00137b5dca31008c0d27524b13685539af39624901a2`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:14:25 GMT
--	Parent Layer: `0954ec9d908890a101d9d61ba6974f8e1022e6d87dabf06171b795f70423d7e8`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `461cee1cbc09aea29e00b139acab0ba5dd3a216602f69c158498a1f81deae32f`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:14:25 GMT
--	Parent Layer: `3b60140ecc050cca4bbe00137b5dca31008c0d27524b13685539af39624901a2`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:00ba9e776ee4ee5f3e87bc5eb808ec99fb2ad1a26cd5c6e878625cdd7dcd3f41`
--	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:20:48 GMT
-
-## `golang:1.4.3-alpine`
-
-```console
-$ docker pull library/golang@sha256:9102621fd0d261e4f42d74ec944068fc4d9afe1c164ddb72f5ecf47f8bbeda05
-```
-
--	Total Virtual Size: 143.7 MB (143698854 bytes)
--	Total v2 Content-Length: 38.5 MB (38480548 bytes)
-
-### Layers (9)
-
-#### `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
-
-```dockerfile
-ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /
-```
-
--	Created: Mon, 18 Jan 2016 18:33:12 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.8 MB (4793939 bytes)
--	v2 Blob: `sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598`
--	v2 Content-Length: 2.3 MB (2318895 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 18:34:49 GMT
-
-#### `1643c7a489ebd843a4b5d73aad583f49f07a3f2bc74a5330df6438bb760d1d44`
-
-```dockerfile
-ENV GOLANG_VERSION=1.4.3
-```
-
--	Created: Tue, 26 Jan 2016 00:36:07 GMT
--	Parent Layer: `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `282526abff6cf1f84cca881340d10fb18e60cc7655393eedfc53d0540868a546`
-
-```dockerfile
-ENV GOLANG_SRC_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 00:36:08 GMT
--	Parent Layer: `1643c7a489ebd843a4b5d73aad583f49f07a3f2bc74a5330df6438bb760d1d44`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `c22b28bc20ae090d19cca40894639d7dfd2eb726aa0709d426a72e2fe61e883a`
-
-```dockerfile
-ENV GOLANG_SRC_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Tue, 26 Jan 2016 00:36:09 GMT
--	Parent Layer: `282526abff6cf1f84cca881340d10fb18e60cc7655393eedfc53d0540868a546`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `117c9a993431d301db5be7352c118d7fe3f380b506b1928b36f319326116a042`
-
-```dockerfile
-RUN set -ex \
-	&& apk add --no-cache --virtual .build-deps \
-		bash \
-		ca-certificates \
-		gcc \
-		musl-dev \
-		openssl \
-		&& wget -q "$GOLANG_SRC_URL" -O golang.tar.gz \
-	&& echo "$GOLANG_SRC_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/local -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/local/go/src \
-	&& ./make.bash \
-		&& apk del .build-deps
-```
-
--	Created: Tue, 26 Jan 2016 00:37:11 GMT
--	Parent Layer: `c22b28bc20ae090d19cca40894639d7dfd2eb726aa0709d426a72e2fe61e883a`
--	Docker Version: 1.8.3
--	Virtual Size: 138.9 MB (138904915 bytes)
--	v2 Blob: `sha256:4ba7afaca621043318b4b74561a06c45dfef53d4e0829128fd7254372fe77504`
--	v2 Content-Length: 36.2 MB (36161338 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:28:13 GMT
-
-#### `95c00fb35f338ab3591baa983eb8b302b0c14efa69c346de5330467ee42fe7f9`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 00:37:22 GMT
--	Parent Layer: `117c9a993431d301db5be7352c118d7fe3f380b506b1928b36f319326116a042`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `84e99f069ead57d1cdfde62ddd295cd02695296cf46daa090b7fd1a2260d243c`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 00:37:23 GMT
--	Parent Layer: `95c00fb35f338ab3591baa983eb8b302b0c14efa69c346de5330467ee42fe7f9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9f57bfd24699f23a67490a278525a52f1d735ef6c79031eabcd1ed01d0462b44`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 00:37:25 GMT
--	Parent Layer: `84e99f069ead57d1cdfde62ddd295cd02695296cf46daa090b7fd1a2260d243c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9cf49437f412e50a64e7ffa80ad5fc84b342d2b18442bb82f11c273f087b1629`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:27:41 GMT
-
-#### `e80b6f9d5a42a16878b26246f709c4b3980c0d79a38e4c83c86e1d2b473aeca8`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 00:37:26 GMT
--	Parent Layer: `9f57bfd24699f23a67490a278525a52f1d735ef6c79031eabcd1ed01d0462b44`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `golang:1.4-alpine`
-
-```console
-$ docker pull library/golang@sha256:6f446f2bae366dda5c46dffddf7abfb4928c2bb421bf82fadebe03e670c5bb6d
-```
-
--	Total Virtual Size: 143.7 MB (143698854 bytes)
--	Total v2 Content-Length: 38.5 MB (38480548 bytes)
-
-### Layers (9)
-
-#### `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
-
-```dockerfile
-ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /
-```
-
--	Created: Mon, 18 Jan 2016 18:33:12 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.8 MB (4793939 bytes)
--	v2 Blob: `sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598`
--	v2 Content-Length: 2.3 MB (2318895 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 18:34:49 GMT
-
-#### `1643c7a489ebd843a4b5d73aad583f49f07a3f2bc74a5330df6438bb760d1d44`
-
-```dockerfile
-ENV GOLANG_VERSION=1.4.3
-```
-
--	Created: Tue, 26 Jan 2016 00:36:07 GMT
--	Parent Layer: `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `282526abff6cf1f84cca881340d10fb18e60cc7655393eedfc53d0540868a546`
-
-```dockerfile
-ENV GOLANG_SRC_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 00:36:08 GMT
--	Parent Layer: `1643c7a489ebd843a4b5d73aad583f49f07a3f2bc74a5330df6438bb760d1d44`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `c22b28bc20ae090d19cca40894639d7dfd2eb726aa0709d426a72e2fe61e883a`
-
-```dockerfile
-ENV GOLANG_SRC_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Tue, 26 Jan 2016 00:36:09 GMT
--	Parent Layer: `282526abff6cf1f84cca881340d10fb18e60cc7655393eedfc53d0540868a546`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `117c9a993431d301db5be7352c118d7fe3f380b506b1928b36f319326116a042`
-
-```dockerfile
-RUN set -ex \
-	&& apk add --no-cache --virtual .build-deps \
-		bash \
-		ca-certificates \
-		gcc \
-		musl-dev \
-		openssl \
-		&& wget -q "$GOLANG_SRC_URL" -O golang.tar.gz \
-	&& echo "$GOLANG_SRC_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/local -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/local/go/src \
-	&& ./make.bash \
-		&& apk del .build-deps
-```
-
--	Created: Tue, 26 Jan 2016 00:37:11 GMT
--	Parent Layer: `c22b28bc20ae090d19cca40894639d7dfd2eb726aa0709d426a72e2fe61e883a`
--	Docker Version: 1.8.3
--	Virtual Size: 138.9 MB (138904915 bytes)
--	v2 Blob: `sha256:4ba7afaca621043318b4b74561a06c45dfef53d4e0829128fd7254372fe77504`
--	v2 Content-Length: 36.2 MB (36161338 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:28:13 GMT
-
-#### `95c00fb35f338ab3591baa983eb8b302b0c14efa69c346de5330467ee42fe7f9`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 00:37:22 GMT
--	Parent Layer: `117c9a993431d301db5be7352c118d7fe3f380b506b1928b36f319326116a042`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `84e99f069ead57d1cdfde62ddd295cd02695296cf46daa090b7fd1a2260d243c`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 00:37:23 GMT
--	Parent Layer: `95c00fb35f338ab3591baa983eb8b302b0c14efa69c346de5330467ee42fe7f9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9f57bfd24699f23a67490a278525a52f1d735ef6c79031eabcd1ed01d0462b44`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 00:37:25 GMT
--	Parent Layer: `84e99f069ead57d1cdfde62ddd295cd02695296cf46daa090b7fd1a2260d243c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9cf49437f412e50a64e7ffa80ad5fc84b342d2b18442bb82f11c273f087b1629`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:27:41 GMT
-
-#### `e80b6f9d5a42a16878b26246f709c4b3980c0d79a38e4c83c86e1d2b473aeca8`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 00:37:26 GMT
--	Parent Layer: `9f57bfd24699f23a67490a278525a52f1d735ef6c79031eabcd1ed01d0462b44`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.5.3`
 
 ```console
-$ docker pull library/golang@sha256:d7d0d2c60393ae5b3315bfe0b4eb3770b460c276cdfb9dd32d69e03db159e00e
+$ docker pull library/golang@sha256:d8d404d3e66d0b335927ab7232e8e005c01567a390bb0d26f3634dd225f00fbc
 ```
 
--	Total Virtual Size: 725.1 MB (725119343 bytes)
--	Total v2 Content-Length: 249.4 MB (249416964 bytes)
+-	Total Virtual Size: 725.2 MB (725171563 bytes)
+-	Total v2 Content-Length: 249.4 MB (249432655 bytes)
 
 ### Layers (14)
 
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
 
 ```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
 
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2455,15 +73,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
 
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2476,15 +93,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
 
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2495,57 +111,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
 
-#### `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
+#### `ddc7fb80ba7553a2d57a55ec818ae88c68a1975fe21090be6513d61f288e749f`
 
 ```dockerfile
 ENV GOLANG_VERSION=1.5.3
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:06 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
+#### `e12ca1a4e4adac00ff174327748faa34367aa812ad36703cc8fed4e46447e46e`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:07 GMT
+-	Parent Layer: `ddc7fb80ba7553a2d57a55ec818ae88c68a1975fe21090be6513d61f288e749f`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
+#### `a70c445dcf1733f06b9fce0bcb0d89ae110597613c74029c9feeabd5af62d4c8`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:03 GMT
--	Parent Layer: `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:07 GMT
+-	Parent Layer: `e12ca1a4e4adac00ff174327748faa34367aa812ad36703cc8fed4e46447e46e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
+#### `d3fd7546dc694dfa907a8957560e7177ba91c6f36b9e2a940f055f816d7ce081`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -2554,123 +166,115 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:08 GMT
--	Parent Layer: `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:13 GMT
+-	Parent Layer: `a70c445dcf1733f06b9fce0bcb0d89ae110597613c74029c9feeabd5af62d4c8`
+-	Docker Version: 1.9.1
 -	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:8ccc76a74787d0def6e21e7bd5c014bc75bded41bd37d2ea4492ccce95c260a4`
--	v2 Content-Length: 80.1 MB (80148817 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:30:31 GMT
+-	v2 Blob: `sha256:6bc21125721d5d88281137735e175c2d1884963c9c7a492a7667b5c44b5866db`
+-	v2 Content-Length: 80.1 MB (80148872 bytes)
 
-#### `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
+#### `216fe96699ee6a8eb183c7f0ee972f1f42b3de287b6f39005b4908b24d119a5e`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:16 GMT
+-	Parent Layer: `d3fd7546dc694dfa907a8957560e7177ba91c6f36b9e2a940f055f816d7ce081`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
+#### `d5a21a8e332d8519ecd581f520b0505723355846749034dffab5c2fa67ca55a2`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:17 GMT
+-	Parent Layer: `216fe96699ee6a8eb183c7f0ee972f1f42b3de287b6f39005b4908b24d119a5e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
+#### `b62cfd1c9a513b5429989ac21f2d89c1d2b86e10f8cb7f5e6c7dac5252c7a72a`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:18 GMT
+-	Parent Layer: `d5a21a8e332d8519ecd581f520b0505723355846749034dffab5c2fa67ca55a2`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:70fd525fbd3fb5fae81b0d04b54c9de77f84feb002cf5bb6c95d3235d34f0de1`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:38 GMT
+-	v2 Blob: `sha256:9f6cd8a486ee76ac9ca3fad4b014e1ceeec353bf8c2d3150556fc23573f7995b`
+-	v2 Content-Length: 121.0 B
 
-#### `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
+#### `11fdcbffb051bff41e8425a88e0af47d164ebcef12c97693435ea2b942e79e10`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:19 GMT
+-	Parent Layer: `b62cfd1c9a513b5429989ac21f2d89c1d2b86e10f8cb7f5e6c7dac5252c7a72a`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
+#### `aabf889ae2c7efc41da8519eb468088d05f8ba8dc4ad83baa259aaa5735f4109`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:15 GMT
--	Parent Layer: `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:19 GMT
+-	Parent Layer: `11fdcbffb051bff41e8425a88e0af47d164ebcef12c97693435ea2b942e79e10`
+-	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:61b488f1b0638ca80fe43ebde29e993b64515e29d439c028f9c2ecfb9862f651`
+-	v2 Blob: `sha256:a5cacb8aaf90a043e08f2fd217670ec9b31f4ae6975a6aa692b99143bf5971f6`
 -	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:31 GMT
 
 ## `golang:1.5`
 
 ```console
-$ docker pull library/golang@sha256:2eebf8da6f7b761a8a0f725aec82e9fb044525166c2edc0aba74c219bcd173fb
+$ docker pull library/golang@sha256:13d12e6cc7b066e26288915cbee72d44ff74482ab4810a2fb218801b3ed8c56e
 ```
 
--	Total Virtual Size: 725.1 MB (725119343 bytes)
--	Total v2 Content-Length: 249.4 MB (249416964 bytes)
+-	Total Virtual Size: 725.2 MB (725171563 bytes)
+-	Total v2 Content-Length: 249.4 MB (249432655 bytes)
 
 ### Layers (14)
 
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
 
 ```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
 
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2680,15 +284,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
 
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2701,240 +304,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
 
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
-
-#### `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
-
-```dockerfile
-ENV GOLANG_VERSION=1.5.3
-```
-
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
-```
-
--	Created: Tue, 26 Jan 2016 14:15:03 GMT
--	Parent Layer: `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
-	&& tar -C /usr/local -xzf golang.tar.gz \
-	&& rm golang.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:15:08 GMT
--	Parent Layer: `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
--	Docker Version: 1.8.3
--	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:8ccc76a74787d0def6e21e7bd5c014bc75bded41bd37d2ea4492ccce95c260a4`
--	v2 Content-Length: 80.1 MB (80148817 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:30:31 GMT
-
-#### `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:70fd525fbd3fb5fae81b0d04b54c9de77f84feb002cf5bb6c95d3235d34f0de1`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:38 GMT
-
-#### `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:15:15 GMT
--	Parent Layer: `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:61b488f1b0638ca80fe43ebde29e993b64515e29d439c028f9c2ecfb9862f651`
--	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:31 GMT
-
-## `golang:1`
-
-```console
-$ docker pull library/golang@sha256:45a00e437b1d6854efd6065ba98911492c9d32292bb4c57d0ba3643519126233
-```
-
--	Total Virtual Size: 725.1 MB (725119343 bytes)
--	Total v2 Content-Length: 249.4 MB (249416964 bytes)
-
-### Layers (14)
-
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
-
-```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
-```
-
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
-
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
-
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
-
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2945,57 +322,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
 
-#### `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
+#### `ddc7fb80ba7553a2d57a55ec818ae88c68a1975fe21090be6513d61f288e749f`
 
 ```dockerfile
 ENV GOLANG_VERSION=1.5.3
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:06 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
+#### `e12ca1a4e4adac00ff174327748faa34367aa812ad36703cc8fed4e46447e46e`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:07 GMT
+-	Parent Layer: `ddc7fb80ba7553a2d57a55ec818ae88c68a1975fe21090be6513d61f288e749f`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
+#### `a70c445dcf1733f06b9fce0bcb0d89ae110597613c74029c9feeabd5af62d4c8`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:03 GMT
--	Parent Layer: `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:07 GMT
+-	Parent Layer: `e12ca1a4e4adac00ff174327748faa34367aa812ad36703cc8fed4e46447e46e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
+#### `d3fd7546dc694dfa907a8957560e7177ba91c6f36b9e2a940f055f816d7ce081`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -3004,348 +377,115 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:08 GMT
--	Parent Layer: `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:13 GMT
+-	Parent Layer: `a70c445dcf1733f06b9fce0bcb0d89ae110597613c74029c9feeabd5af62d4c8`
+-	Docker Version: 1.9.1
 -	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:8ccc76a74787d0def6e21e7bd5c014bc75bded41bd37d2ea4492ccce95c260a4`
--	v2 Content-Length: 80.1 MB (80148817 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:30:31 GMT
+-	v2 Blob: `sha256:6bc21125721d5d88281137735e175c2d1884963c9c7a492a7667b5c44b5866db`
+-	v2 Content-Length: 80.1 MB (80148872 bytes)
 
-#### `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
+#### `216fe96699ee6a8eb183c7f0ee972f1f42b3de287b6f39005b4908b24d119a5e`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:16 GMT
+-	Parent Layer: `d3fd7546dc694dfa907a8957560e7177ba91c6f36b9e2a940f055f816d7ce081`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
+#### `d5a21a8e332d8519ecd581f520b0505723355846749034dffab5c2fa67ca55a2`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:17 GMT
+-	Parent Layer: `216fe96699ee6a8eb183c7f0ee972f1f42b3de287b6f39005b4908b24d119a5e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
+#### `b62cfd1c9a513b5429989ac21f2d89c1d2b86e10f8cb7f5e6c7dac5252c7a72a`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:18 GMT
+-	Parent Layer: `d5a21a8e332d8519ecd581f520b0505723355846749034dffab5c2fa67ca55a2`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:70fd525fbd3fb5fae81b0d04b54c9de77f84feb002cf5bb6c95d3235d34f0de1`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:38 GMT
+-	v2 Blob: `sha256:9f6cd8a486ee76ac9ca3fad4b014e1ceeec353bf8c2d3150556fc23573f7995b`
+-	v2 Content-Length: 121.0 B
 
-#### `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
+#### `11fdcbffb051bff41e8425a88e0af47d164ebcef12c97693435ea2b942e79e10`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:19 GMT
+-	Parent Layer: `b62cfd1c9a513b5429989ac21f2d89c1d2b86e10f8cb7f5e6c7dac5252c7a72a`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
+#### `aabf889ae2c7efc41da8519eb468088d05f8ba8dc4ad83baa259aaa5735f4109`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:15 GMT
--	Parent Layer: `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:19 GMT
+-	Parent Layer: `11fdcbffb051bff41e8425a88e0af47d164ebcef12c97693435ea2b942e79e10`
+-	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:61b488f1b0638ca80fe43ebde29e993b64515e29d439c028f9c2ecfb9862f651`
+-	v2 Blob: `sha256:a5cacb8aaf90a043e08f2fd217670ec9b31f4ae6975a6aa692b99143bf5971f6`
 -	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:31 GMT
-
-## `golang:latest`
-
-```console
-$ docker pull library/golang@sha256:2242a664699c7dd1aaf3c380107d20bff45cbbe39d92e848c4c83240adc4169f
-```
-
--	Total Virtual Size: 725.1 MB (725119343 bytes)
--	Total v2 Content-Length: 249.4 MB (249416964 bytes)
-
-### Layers (14)
-
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
-
-```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
-```
-
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
-
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
-
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
-
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
-
-#### `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
-
-```dockerfile
-ENV GOLANG_VERSION=1.5.3
-```
-
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
-```
-
--	Created: Tue, 26 Jan 2016 14:15:03 GMT
--	Parent Layer: `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
-	&& tar -C /usr/local -xzf golang.tar.gz \
-	&& rm golang.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:15:08 GMT
--	Parent Layer: `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
--	Docker Version: 1.8.3
--	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:8ccc76a74787d0def6e21e7bd5c014bc75bded41bd37d2ea4492ccce95c260a4`
--	v2 Content-Length: 80.1 MB (80148817 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:30:31 GMT
-
-#### `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:70fd525fbd3fb5fae81b0d04b54c9de77f84feb002cf5bb6c95d3235d34f0de1`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:38 GMT
-
-#### `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:15:15 GMT
--	Parent Layer: `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:61b488f1b0638ca80fe43ebde29e993b64515e29d439c028f9c2ecfb9862f651`
--	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:31 GMT
 
 ## `golang:1.5.3-onbuild`
 
 ```console
-$ docker pull library/golang@sha256:c04760ff45ce3dfc586520139fac30acd365f1dcf633f89f26d114c24a332379
+$ docker pull library/golang@sha256:ca9755446b3ea87916e6b23b8a1b52d1f226329605be88b91d5b20441f49a928
 ```
 
--	Total Virtual Size: 725.1 MB (725119343 bytes)
--	Total v2 Content-Length: 249.4 MB (249417255 bytes)
+-	Total Virtual Size: 725.2 MB (725171563 bytes)
+-	Total v2 Content-Length: 249.4 MB (249432948 bytes)
 
 ### Layers (20)
 
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
 
 ```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
 
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3355,15 +495,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
 
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3376,15 +515,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
 
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3395,57 +533,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
 
-#### `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
+#### `ddc7fb80ba7553a2d57a55ec818ae88c68a1975fe21090be6513d61f288e749f`
 
 ```dockerfile
 ENV GOLANG_VERSION=1.5.3
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:06 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
+#### `e12ca1a4e4adac00ff174327748faa34367aa812ad36703cc8fed4e46447e46e`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:07 GMT
+-	Parent Layer: `ddc7fb80ba7553a2d57a55ec818ae88c68a1975fe21090be6513d61f288e749f`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
+#### `a70c445dcf1733f06b9fce0bcb0d89ae110597613c74029c9feeabd5af62d4c8`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:03 GMT
--	Parent Layer: `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:07 GMT
+-	Parent Layer: `e12ca1a4e4adac00ff174327748faa34367aa812ad36703cc8fed4e46447e46e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
+#### `d3fd7546dc694dfa907a8957560e7177ba91c6f36b9e2a940f055f816d7ce081`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -3454,207 +588,193 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:08 GMT
--	Parent Layer: `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:13 GMT
+-	Parent Layer: `a70c445dcf1733f06b9fce0bcb0d89ae110597613c74029c9feeabd5af62d4c8`
+-	Docker Version: 1.9.1
 -	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:8ccc76a74787d0def6e21e7bd5c014bc75bded41bd37d2ea4492ccce95c260a4`
--	v2 Content-Length: 80.1 MB (80148817 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:30:31 GMT
+-	v2 Blob: `sha256:6bc21125721d5d88281137735e175c2d1884963c9c7a492a7667b5c44b5866db`
+-	v2 Content-Length: 80.1 MB (80148872 bytes)
 
-#### `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
+#### `216fe96699ee6a8eb183c7f0ee972f1f42b3de287b6f39005b4908b24d119a5e`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:16 GMT
+-	Parent Layer: `d3fd7546dc694dfa907a8957560e7177ba91c6f36b9e2a940f055f816d7ce081`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
+#### `d5a21a8e332d8519ecd581f520b0505723355846749034dffab5c2fa67ca55a2`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:17 GMT
+-	Parent Layer: `216fe96699ee6a8eb183c7f0ee972f1f42b3de287b6f39005b4908b24d119a5e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
+#### `b62cfd1c9a513b5429989ac21f2d89c1d2b86e10f8cb7f5e6c7dac5252c7a72a`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:18 GMT
+-	Parent Layer: `d5a21a8e332d8519ecd581f520b0505723355846749034dffab5c2fa67ca55a2`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:70fd525fbd3fb5fae81b0d04b54c9de77f84feb002cf5bb6c95d3235d34f0de1`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:38 GMT
+-	v2 Blob: `sha256:9f6cd8a486ee76ac9ca3fad4b014e1ceeec353bf8c2d3150556fc23573f7995b`
+-	v2 Content-Length: 121.0 B
 
-#### `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
+#### `11fdcbffb051bff41e8425a88e0af47d164ebcef12c97693435ea2b942e79e10`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:19 GMT
+-	Parent Layer: `b62cfd1c9a513b5429989ac21f2d89c1d2b86e10f8cb7f5e6c7dac5252c7a72a`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
+#### `aabf889ae2c7efc41da8519eb468088d05f8ba8dc4ad83baa259aaa5735f4109`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:15 GMT
--	Parent Layer: `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:19 GMT
+-	Parent Layer: `11fdcbffb051bff41e8425a88e0af47d164ebcef12c97693435ea2b942e79e10`
+-	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:61b488f1b0638ca80fe43ebde29e993b64515e29d439c028f9c2ecfb9862f651`
+-	v2 Blob: `sha256:a5cacb8aaf90a043e08f2fd217670ec9b31f4ae6975a6aa692b99143bf5971f6`
 -	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:31 GMT
 
-#### `e2fd46c41652b1fbb3895aa9b3f1588a37edc885dbabdcc71c9589343703aa79`
+#### `9d642891f984fe9ea90f10ee15afc2ad5d203567d9dc68ccd0e3b1ce11a69a2a`
 
 ```dockerfile
 RUN mkdir -p /go/src/app
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:47 GMT
--	Parent Layer: `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:35 GMT
+-	Parent Layer: `aabf889ae2c7efc41da8519eb468088d05f8ba8dc4ad83baa259aaa5735f4109`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:463d0a144ef3516d3084965c5308d7b96d312bc2e2459f8199af307b228218d7`
--	v2 Content-Length: 131.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:32:57 GMT
+-	v2 Blob: `sha256:7e0517107291d17314f877677fbfda1a24f7d1fa050618a7f0b33720a6b9ac6e`
+-	v2 Content-Length: 133.0 B
 
-#### `f0066d306bfe03d144b23a07f188488833273e405a0459b04b280a845d25cb8f`
+#### `3dc0fa81ba5adffe200d03bf96932de803c33c2623f617c930c595009c267ef7`
 
 ```dockerfile
 WORKDIR /go/src/app
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:48 GMT
--	Parent Layer: `e2fd46c41652b1fbb3895aa9b3f1588a37edc885dbabdcc71c9589343703aa79`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:36 GMT
+-	Parent Layer: `9d642891f984fe9ea90f10ee15afc2ad5d203567d9dc68ccd0e3b1ce11a69a2a`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `77da8ca07f5cfa904cc4273b20e0c5c5ab60ce65def15ea3a8b5bff288f75efd`
+#### `827d700ca4ab446a309b4f94758a7827d0f22cb2d5ca0048adf6f009e8e8f702`
 
 ```dockerfile
 CMD ["go-wrapper" "run"]
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:48 GMT
--	Parent Layer: `f0066d306bfe03d144b23a07f188488833273e405a0459b04b280a845d25cb8f`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:37 GMT
+-	Parent Layer: `3dc0fa81ba5adffe200d03bf96932de803c33c2623f617c930c595009c267ef7`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d4a27c41f927d43a454d2a0ebf0898c227e225ef555b1375a48db244ba21ca90`
+#### `8858e6b3666828b860a782545e8a671bfd9a10a153776b3e5f0b58e9661b062c`
 
 ```dockerfile
 ONBUILD COPY . /go/src/app
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:49 GMT
--	Parent Layer: `77da8ca07f5cfa904cc4273b20e0c5c5ab60ce65def15ea3a8b5bff288f75efd`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:37 GMT
+-	Parent Layer: `827d700ca4ab446a309b4f94758a7827d0f22cb2d5ca0048adf6f009e8e8f702`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `98f179410d732167a0a9e998952239147a79e9029c9a5f8e2152c696f83e2054`
+#### `213a93c21d64874193efa14663afe3074264051e2fc3deb3671118bfa0bf47f8`
 
 ```dockerfile
 ONBUILD RUN go-wrapper download
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:49 GMT
--	Parent Layer: `d4a27c41f927d43a454d2a0ebf0898c227e225ef555b1375a48db244ba21ca90`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:38 GMT
+-	Parent Layer: `8858e6b3666828b860a782545e8a671bfd9a10a153776b3e5f0b58e9661b062c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `afdc944b31f230391a09727b68533f5fd08fb11305d3c37c79548aded7bd9a64`
+#### `25985bbf752469b4512d96967e3fe7e3e60fd237b165161f8512b0454f93a8e1`
 
 ```dockerfile
 ONBUILD RUN go-wrapper install
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:50 GMT
--	Parent Layer: `98f179410d732167a0a9e998952239147a79e9029c9a5f8e2152c696f83e2054`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:38 GMT
+-	Parent Layer: `213a93c21d64874193efa14663afe3074264051e2fc3deb3671118bfa0bf47f8`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.5-onbuild`
 
 ```console
-$ docker pull library/golang@sha256:b49ddd03ce237a95d5f31c685d79e3de0a26f3b729f6e46a51a0974f664aa08a
+$ docker pull library/golang@sha256:545556ae132b6716d948832424126d2b0a608c5dd5de0aea7330babe3cbe8de0
 ```
 
--	Total Virtual Size: 725.1 MB (725119343 bytes)
--	Total v2 Content-Length: 249.4 MB (249417255 bytes)
+-	Total Virtual Size: 725.2 MB (725171563 bytes)
+-	Total v2 Content-Length: 249.4 MB (249432948 bytes)
 
 ### Layers (20)
 
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
 
 ```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
 
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3664,15 +784,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
 
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3685,15 +804,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
 
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -3704,57 +822,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
 
-#### `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
+#### `ddc7fb80ba7553a2d57a55ec818ae88c68a1975fe21090be6513d61f288e749f`
 
 ```dockerfile
 ENV GOLANG_VERSION=1.5.3
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:06 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
+#### `e12ca1a4e4adac00ff174327748faa34367aa812ad36703cc8fed4e46447e46e`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:07 GMT
+-	Parent Layer: `ddc7fb80ba7553a2d57a55ec818ae88c68a1975fe21090be6513d61f288e749f`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
+#### `a70c445dcf1733f06b9fce0bcb0d89ae110597613c74029c9feeabd5af62d4c8`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:03 GMT
--	Parent Layer: `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:07 GMT
+-	Parent Layer: `e12ca1a4e4adac00ff174327748faa34367aa812ad36703cc8fed4e46447e46e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
+#### `d3fd7546dc694dfa907a8957560e7177ba91c6f36b9e2a940f055f816d7ce081`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -3763,825 +877,193 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:08 GMT
--	Parent Layer: `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:13 GMT
+-	Parent Layer: `a70c445dcf1733f06b9fce0bcb0d89ae110597613c74029c9feeabd5af62d4c8`
+-	Docker Version: 1.9.1
 -	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:8ccc76a74787d0def6e21e7bd5c014bc75bded41bd37d2ea4492ccce95c260a4`
--	v2 Content-Length: 80.1 MB (80148817 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:30:31 GMT
+-	v2 Blob: `sha256:6bc21125721d5d88281137735e175c2d1884963c9c7a492a7667b5c44b5866db`
+-	v2 Content-Length: 80.1 MB (80148872 bytes)
 
-#### `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
+#### `216fe96699ee6a8eb183c7f0ee972f1f42b3de287b6f39005b4908b24d119a5e`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:16 GMT
+-	Parent Layer: `d3fd7546dc694dfa907a8957560e7177ba91c6f36b9e2a940f055f816d7ce081`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
+#### `d5a21a8e332d8519ecd581f520b0505723355846749034dffab5c2fa67ca55a2`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:17 GMT
+-	Parent Layer: `216fe96699ee6a8eb183c7f0ee972f1f42b3de287b6f39005b4908b24d119a5e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
+#### `b62cfd1c9a513b5429989ac21f2d89c1d2b86e10f8cb7f5e6c7dac5252c7a72a`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:18 GMT
+-	Parent Layer: `d5a21a8e332d8519ecd581f520b0505723355846749034dffab5c2fa67ca55a2`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:70fd525fbd3fb5fae81b0d04b54c9de77f84feb002cf5bb6c95d3235d34f0de1`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:38 GMT
+-	v2 Blob: `sha256:9f6cd8a486ee76ac9ca3fad4b014e1ceeec353bf8c2d3150556fc23573f7995b`
+-	v2 Content-Length: 121.0 B
 
-#### `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
+#### `11fdcbffb051bff41e8425a88e0af47d164ebcef12c97693435ea2b942e79e10`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:19 GMT
+-	Parent Layer: `b62cfd1c9a513b5429989ac21f2d89c1d2b86e10f8cb7f5e6c7dac5252c7a72a`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
+#### `aabf889ae2c7efc41da8519eb468088d05f8ba8dc4ad83baa259aaa5735f4109`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Tue, 26 Jan 2016 14:15:15 GMT
--	Parent Layer: `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:03:19 GMT
+-	Parent Layer: `11fdcbffb051bff41e8425a88e0af47d164ebcef12c97693435ea2b942e79e10`
+-	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:61b488f1b0638ca80fe43ebde29e993b64515e29d439c028f9c2ecfb9862f651`
+-	v2 Blob: `sha256:a5cacb8aaf90a043e08f2fd217670ec9b31f4ae6975a6aa692b99143bf5971f6`
 -	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:31 GMT
 
-#### `e2fd46c41652b1fbb3895aa9b3f1588a37edc885dbabdcc71c9589343703aa79`
+#### `9d642891f984fe9ea90f10ee15afc2ad5d203567d9dc68ccd0e3b1ce11a69a2a`
 
 ```dockerfile
 RUN mkdir -p /go/src/app
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:47 GMT
--	Parent Layer: `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:35 GMT
+-	Parent Layer: `aabf889ae2c7efc41da8519eb468088d05f8ba8dc4ad83baa259aaa5735f4109`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:463d0a144ef3516d3084965c5308d7b96d312bc2e2459f8199af307b228218d7`
--	v2 Content-Length: 131.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:32:57 GMT
+-	v2 Blob: `sha256:7e0517107291d17314f877677fbfda1a24f7d1fa050618a7f0b33720a6b9ac6e`
+-	v2 Content-Length: 133.0 B
 
-#### `f0066d306bfe03d144b23a07f188488833273e405a0459b04b280a845d25cb8f`
+#### `3dc0fa81ba5adffe200d03bf96932de803c33c2623f617c930c595009c267ef7`
 
 ```dockerfile
 WORKDIR /go/src/app
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:48 GMT
--	Parent Layer: `e2fd46c41652b1fbb3895aa9b3f1588a37edc885dbabdcc71c9589343703aa79`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:36 GMT
+-	Parent Layer: `9d642891f984fe9ea90f10ee15afc2ad5d203567d9dc68ccd0e3b1ce11a69a2a`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `77da8ca07f5cfa904cc4273b20e0c5c5ab60ce65def15ea3a8b5bff288f75efd`
+#### `827d700ca4ab446a309b4f94758a7827d0f22cb2d5ca0048adf6f009e8e8f702`
 
 ```dockerfile
 CMD ["go-wrapper" "run"]
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:48 GMT
--	Parent Layer: `f0066d306bfe03d144b23a07f188488833273e405a0459b04b280a845d25cb8f`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:37 GMT
+-	Parent Layer: `3dc0fa81ba5adffe200d03bf96932de803c33c2623f617c930c595009c267ef7`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d4a27c41f927d43a454d2a0ebf0898c227e225ef555b1375a48db244ba21ca90`
+#### `8858e6b3666828b860a782545e8a671bfd9a10a153776b3e5f0b58e9661b062c`
 
 ```dockerfile
 ONBUILD COPY . /go/src/app
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:49 GMT
--	Parent Layer: `77da8ca07f5cfa904cc4273b20e0c5c5ab60ce65def15ea3a8b5bff288f75efd`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:37 GMT
+-	Parent Layer: `827d700ca4ab446a309b4f94758a7827d0f22cb2d5ca0048adf6f009e8e8f702`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `98f179410d732167a0a9e998952239147a79e9029c9a5f8e2152c696f83e2054`
+#### `213a93c21d64874193efa14663afe3074264051e2fc3deb3671118bfa0bf47f8`
 
 ```dockerfile
 ONBUILD RUN go-wrapper download
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:49 GMT
--	Parent Layer: `d4a27c41f927d43a454d2a0ebf0898c227e225ef555b1375a48db244ba21ca90`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:38 GMT
+-	Parent Layer: `8858e6b3666828b860a782545e8a671bfd9a10a153776b3e5f0b58e9661b062c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `afdc944b31f230391a09727b68533f5fd08fb11305d3c37c79548aded7bd9a64`
+#### `25985bbf752469b4512d96967e3fe7e3e60fd237b165161f8512b0454f93a8e1`
 
 ```dockerfile
 ONBUILD RUN go-wrapper install
 ```
 
--	Created: Tue, 26 Jan 2016 14:16:50 GMT
--	Parent Layer: `98f179410d732167a0a9e998952239147a79e9029c9a5f8e2152c696f83e2054`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:04:38 GMT
+-	Parent Layer: `213a93c21d64874193efa14663afe3074264051e2fc3deb3671118bfa0bf47f8`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `golang:1-onbuild`
-
-```console
-$ docker pull library/golang@sha256:37e3ee3ed2ea5650977a31c04b151ffc0b9c323581f609a1ac91b9fe292addfd
-```
-
--	Total Virtual Size: 725.1 MB (725119343 bytes)
--	Total v2 Content-Length: 249.4 MB (249417255 bytes)
-
-### Layers (20)
-
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
-
-```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
-```
-
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
-
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
-
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
-
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
-
-#### `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
-
-```dockerfile
-ENV GOLANG_VERSION=1.5.3
-```
-
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
-```
-
--	Created: Tue, 26 Jan 2016 14:15:03 GMT
--	Parent Layer: `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
-	&& tar -C /usr/local -xzf golang.tar.gz \
-	&& rm golang.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:15:08 GMT
--	Parent Layer: `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
--	Docker Version: 1.8.3
--	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:8ccc76a74787d0def6e21e7bd5c014bc75bded41bd37d2ea4492ccce95c260a4`
--	v2 Content-Length: 80.1 MB (80148817 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:30:31 GMT
-
-#### `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:70fd525fbd3fb5fae81b0d04b54c9de77f84feb002cf5bb6c95d3235d34f0de1`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:38 GMT
-
-#### `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:15:15 GMT
--	Parent Layer: `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:61b488f1b0638ca80fe43ebde29e993b64515e29d439c028f9c2ecfb9862f651`
--	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:31 GMT
-
-#### `e2fd46c41652b1fbb3895aa9b3f1588a37edc885dbabdcc71c9589343703aa79`
-
-```dockerfile
-RUN mkdir -p /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:16:47 GMT
--	Parent Layer: `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:463d0a144ef3516d3084965c5308d7b96d312bc2e2459f8199af307b228218d7`
--	v2 Content-Length: 131.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:32:57 GMT
-
-#### `f0066d306bfe03d144b23a07f188488833273e405a0459b04b280a845d25cb8f`
-
-```dockerfile
-WORKDIR /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:16:48 GMT
--	Parent Layer: `e2fd46c41652b1fbb3895aa9b3f1588a37edc885dbabdcc71c9589343703aa79`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `77da8ca07f5cfa904cc4273b20e0c5c5ab60ce65def15ea3a8b5bff288f75efd`
-
-```dockerfile
-CMD ["go-wrapper" "run"]
-```
-
--	Created: Tue, 26 Jan 2016 14:16:48 GMT
--	Parent Layer: `f0066d306bfe03d144b23a07f188488833273e405a0459b04b280a845d25cb8f`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `d4a27c41f927d43a454d2a0ebf0898c227e225ef555b1375a48db244ba21ca90`
-
-```dockerfile
-ONBUILD COPY . /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:16:49 GMT
--	Parent Layer: `77da8ca07f5cfa904cc4273b20e0c5c5ab60ce65def15ea3a8b5bff288f75efd`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `98f179410d732167a0a9e998952239147a79e9029c9a5f8e2152c696f83e2054`
-
-```dockerfile
-ONBUILD RUN go-wrapper download
-```
-
--	Created: Tue, 26 Jan 2016 14:16:49 GMT
--	Parent Layer: `d4a27c41f927d43a454d2a0ebf0898c227e225ef555b1375a48db244ba21ca90`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `afdc944b31f230391a09727b68533f5fd08fb11305d3c37c79548aded7bd9a64`
-
-```dockerfile
-ONBUILD RUN go-wrapper install
-```
-
--	Created: Tue, 26 Jan 2016 14:16:50 GMT
--	Parent Layer: `98f179410d732167a0a9e998952239147a79e9029c9a5f8e2152c696f83e2054`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `golang:onbuild`
-
-```console
-$ docker pull library/golang@sha256:285e801ad32c2d847f25d950135e3b7d7914650a0dd017ca5a371b25d58f03b3
-```
-
--	Total Virtual Size: 725.1 MB (725119343 bytes)
--	Total v2 Content-Length: 249.4 MB (249417255 bytes)
-
-### Layers (20)
-
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
-
-```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
-```
-
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
-
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
-
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
-
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
-
-#### `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
-
-```dockerfile
-ENV GOLANG_VERSION=1.5.3
-```
-
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:15:02 GMT
--	Parent Layer: `d03ab12fee9d5065e79fdd67a1e50c1d5cf270cdc2ecfae1d72e62f2921a46cf`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
-```
-
--	Created: Tue, 26 Jan 2016 14:15:03 GMT
--	Parent Layer: `4d3d31720ea28eed845d35e68cb88e1ab11bb643905bfc775477f02eabd3953e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
-	&& tar -C /usr/local -xzf golang.tar.gz \
-	&& rm golang.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:15:08 GMT
--	Parent Layer: `cb556ccd0c360732b3172cacec61e740a9afff7cbf69bafafd7414d7c6e7d414`
--	Docker Version: 1.8.3
--	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:8ccc76a74787d0def6e21e7bd5c014bc75bded41bd37d2ea4492ccce95c260a4`
--	v2 Content-Length: 80.1 MB (80148817 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:30:31 GMT
-
-#### `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `2be2652c144c706f9ed71638691242a0db77492742db68aa0ec42bfcb0430982`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:15:12 GMT
--	Parent Layer: `8eabd3e86e1453ed9bbb8b4c8589dc5b91bb6b88c720437682b21a6a1181ab64`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `65824f33ae562286d24366760a891cd5983490ee491365f68099ee0d70a5798b`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:70fd525fbd3fb5fae81b0d04b54c9de77f84feb002cf5bb6c95d3235d34f0de1`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:38 GMT
-
-#### `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:15:14 GMT
--	Parent Layer: `17b5b2b26fc0367754e5c6aaa184b6c2ce7e6b7d2f3e1491efa9468d16dc1199`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:15:15 GMT
--	Parent Layer: `5eeff163910fc8fefe1553632b74d4df4e44370a65d8570c71a26e93e2dff3a0`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:61b488f1b0638ca80fe43ebde29e993b64515e29d439c028f9c2ecfb9862f651`
--	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:29:31 GMT
-
-#### `e2fd46c41652b1fbb3895aa9b3f1588a37edc885dbabdcc71c9589343703aa79`
-
-```dockerfile
-RUN mkdir -p /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:16:47 GMT
--	Parent Layer: `7f45edff87e9acd3babd39dcf36cc5abb98ea238fc476d781d2f4bad8fd4aae6`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:463d0a144ef3516d3084965c5308d7b96d312bc2e2459f8199af307b228218d7`
--	v2 Content-Length: 131.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:32:57 GMT
-
-#### `f0066d306bfe03d144b23a07f188488833273e405a0459b04b280a845d25cb8f`
-
-```dockerfile
-WORKDIR /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:16:48 GMT
--	Parent Layer: `e2fd46c41652b1fbb3895aa9b3f1588a37edc885dbabdcc71c9589343703aa79`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `77da8ca07f5cfa904cc4273b20e0c5c5ab60ce65def15ea3a8b5bff288f75efd`
-
-```dockerfile
-CMD ["go-wrapper" "run"]
-```
-
--	Created: Tue, 26 Jan 2016 14:16:48 GMT
--	Parent Layer: `f0066d306bfe03d144b23a07f188488833273e405a0459b04b280a845d25cb8f`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `d4a27c41f927d43a454d2a0ebf0898c227e225ef555b1375a48db244ba21ca90`
-
-```dockerfile
-ONBUILD COPY . /go/src/app
-```
-
--	Created: Tue, 26 Jan 2016 14:16:49 GMT
--	Parent Layer: `77da8ca07f5cfa904cc4273b20e0c5c5ab60ce65def15ea3a8b5bff288f75efd`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `98f179410d732167a0a9e998952239147a79e9029c9a5f8e2152c696f83e2054`
-
-```dockerfile
-ONBUILD RUN go-wrapper download
-```
-
--	Created: Tue, 26 Jan 2016 14:16:49 GMT
--	Parent Layer: `d4a27c41f927d43a454d2a0ebf0898c227e225ef555b1375a48db244ba21ca90`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `afdc944b31f230391a09727b68533f5fd08fb11305d3c37c79548aded7bd9a64`
-
-```dockerfile
-ONBUILD RUN go-wrapper install
-```
-
--	Created: Tue, 26 Jan 2016 14:16:50 GMT
--	Parent Layer: `98f179410d732167a0a9e998952239147a79e9029c9a5f8e2152c696f83e2054`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.5.3-wheezy`
 
 ```console
-$ docker pull library/golang@sha256:4bcd7c877f502cf67ca8e1812be95974c6188826e4358dc88bac566262691216
+$ docker pull library/golang@sha256:ceeda162b8b3c9264bf3ee1f19d062f5effe0542262dbcea6efa9f76b2b99dfb
 ```
 
--	Total Virtual Size: 599.1 MB (599051869 bytes)
--	Total v2 Content-Length: 195.4 MB (195361442 bytes)
+-	Total Virtual Size: 599.1 MB (599081449 bytes)
+-	Total v2 Content-Length: 195.4 MB (195368975 bytes)
 
 ### Layers (14)
 
-#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
+#### `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
 
 ```dockerfile
-ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
+ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:26:48 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
--	v2 Content-Length: 37.2 MB (37184894 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
+-	Created: Tue, 16 Feb 2016 21:26:25 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 84.9 MB (84905064 bytes)
+-	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
+-	v2 Content-Length: 37.2 MB (37189267 bytes)
 
-#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
+#### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:26:50 GMT
--	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:26:28 GMT
+-	Parent Layer: `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
+#### `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4591,15 +1073,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:36:47 GMT
--	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
--	Docker Version: 1.8.3
--	Virtual Size: 14.2 MB (14185017 bytes)
--	v2 Blob: `sha256:454edf61cfa65c7f2f412ceb1f54d055f5061fbd6e197853f844dbfb1570cdad`
--	v2 Content-Length: 6.7 MB (6728657 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:32:10 GMT
+-	Created: Tue, 16 Feb 2016 21:45:00 GMT
+-	Parent Layer: `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+-	Docker Version: 1.9.1
+-	Virtual Size: 14.2 MB (14186974 bytes)
+-	v2 Blob: `sha256:82ef5d5f4bfd83493b8c559d349dd5020cc3b53c9888ed303e63c0bc014b5787`
+-	v2 Content-Length: 6.7 MB (6728197 bytes)
 
-#### `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
+#### `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4612,15 +1093,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:37:15 GMT
--	Parent Layer: `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
--	Docker Version: 1.8.3
--	Virtual Size: 110.0 MB (110024273 bytes)
--	v2 Blob: `sha256:6df3bbe21be65da47a2ede366521b6a04aa8afa4974ce781981d0b2bcff9b3cb`
--	v2 Content-Length: 37.4 MB (37365406 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:33:30 GMT
+-	Created: Tue, 16 Feb 2016 21:45:39 GMT
+-	Parent Layer: `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
+-	Docker Version: 1.9.1
+-	Virtual Size: 110.0 MB (110025116 bytes)
+-	v2 Blob: `sha256:b41267d9121c5c2525748e60d9601c15be4d4b73640954673f5128bf740c3e7c`
+-	v2 Content-Length: 37.4 MB (37364680 bytes)
 
-#### `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
+#### `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4631,57 +1111,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:13:45 GMT
--	Parent Layer: `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
--	Docker Version: 1.8.3
--	Virtual Size: 90.8 MB (90804284 bytes)
--	v2 Blob: `sha256:ed2b7b9b470f804eba2b4b49132be6d98e5a0cab327f31ecf39297862d9aec27`
--	v2 Content-Length: 33.9 MB (33931904 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:24:20 GMT
+-	Created: Wed, 17 Feb 2016 12:01:54 GMT
+-	Parent Layer: `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
+-	Docker Version: 1.9.1
+-	Virtual Size: 90.8 MB (90820442 bytes)
+-	v2 Blob: `sha256:cc3bd5a35058ff3fd5c6990506a5e0205f560434eb4e61dac20fcc67f18883c0`
+-	v2 Content-Length: 33.9 MB (33936254 bytes)
 
-#### `9f791221ed8d299ab189241209f00ab10fb8c8310254b550fd4971794ba9e564`
+#### `53f55474dd594d5d4804bbe8eefa113dd5159476a5226fb50126ecd51f7aa757`
 
 ```dockerfile
 ENV GOLANG_VERSION=1.5.3
 ```
 
--	Created: Tue, 26 Jan 2016 14:17:50 GMT
--	Parent Layer: `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:29 GMT
+-	Parent Layer: `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c46d5a08042a6996361875c916f3d7dbfbed7e55d585ea22d11970a54fcb168e`
+#### `c3742fbdabd01c6d9a649ed74acd7fcf69a93eba4fa75ef33d4e93928998b8f9`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:17:50 GMT
--	Parent Layer: `9f791221ed8d299ab189241209f00ab10fb8c8310254b550fd4971794ba9e564`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:30 GMT
+-	Parent Layer: `53f55474dd594d5d4804bbe8eefa113dd5159476a5226fb50126ecd51f7aa757`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9aa88b44688c2e5e966c2465227c460a43320deda2a5db02688e53043cff861c`
+#### `10e893a2498d21c801d346c80c917840ae0249948ba29899a43ee2daba288cdd`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
 ```
 
--	Created: Tue, 26 Jan 2016 14:17:51 GMT
--	Parent Layer: `c46d5a08042a6996361875c916f3d7dbfbed7e55d585ea22d11970a54fcb168e`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:30 GMT
+-	Parent Layer: `c3742fbdabd01c6d9a649ed74acd7fcf69a93eba4fa75ef33d4e93928998b8f9`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `60cd1f189cb9816efcc5215e38f5f048e90e39bbb19802e8e463488605697f9a`
+#### `c727f0071a1aa527e613c8d28a593cba02dff3ed3f96938004327a04bdfa4b70`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -4690,123 +1166,115 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:17:56 GMT
--	Parent Layer: `9aa88b44688c2e5e966c2465227c460a43320deda2a5db02688e53043cff861c`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:36 GMT
+-	Parent Layer: `10e893a2498d21c801d346c80c917840ae0249948ba29899a43ee2daba288cdd`
+-	Docker Version: 1.9.1
 -	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:d6cb63003cab2f40791bae0f5160f5f0d81c910cfc1f00353e68699aa704ffaf`
--	v2 Content-Length: 80.1 MB (80148880 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:38:06 GMT
+-	v2 Blob: `sha256:5c2dfc3df3918988d6dbdc6afab786c0ab872f28153478a667912b5b8295e1f1`
+-	v2 Content-Length: 80.1 MB (80148879 bytes)
 
-#### `ea6ae2daab11517e96281b79186d3c152071d3d9e2187796f8d71bb770f4e82d`
+#### `0ec8b579363e9e00ae1fa7def433c9a8eeae58039cbdfd8588496c60344b5973`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Tue, 26 Jan 2016 14:18:00 GMT
--	Parent Layer: `60cd1f189cb9816efcc5215e38f5f048e90e39bbb19802e8e463488605697f9a`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:40 GMT
+-	Parent Layer: `c727f0071a1aa527e613c8d28a593cba02dff3ed3f96938004327a04bdfa4b70`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e4fc5e99f0c0cbc7574cc196bf276ee6290a5515057502b326337bee3d99aaf3`
+#### `3978b6d943b133abf5e7b2bae1f6bd246ca22741099dc3723138952fe283490e`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 26 Jan 2016 14:18:00 GMT
--	Parent Layer: `ea6ae2daab11517e96281b79186d3c152071d3d9e2187796f8d71bb770f4e82d`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:40 GMT
+-	Parent Layer: `0ec8b579363e9e00ae1fa7def433c9a8eeae58039cbdfd8588496c60344b5973`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ec35d754444c4f7a0b823af8edadcb4a0ff82e729ff651fd69ebe3dac3c81903`
+#### `c119334bfffc0e8853c99e711d15bf6fa4ee6aba8deba4f77e8d31a6eaf704a7`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Tue, 26 Jan 2016 14:18:02 GMT
--	Parent Layer: `e4fc5e99f0c0cbc7574cc196bf276ee6290a5515057502b326337bee3d99aaf3`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:42 GMT
+-	Parent Layer: `3978b6d943b133abf5e7b2bae1f6bd246ca22741099dc3723138952fe283490e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:b62dd9f94024bcdfc38f973a168c9201cba82b8651868929e8c7b8664d5a22e2`
+-	v2 Blob: `sha256:ca5f35d00c08018aed0a576422fd07c3c2bcc01274656194bf6a7e8de3c8926c`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:35:28 GMT
 
-#### `418535db526930fccafd21d64c8d48a5dd2d5f78a3bd3ba8acb607f7f398aec1`
+#### `4cc9b6c3a8dfa92cf508b100b86a56975fa9101826a6319139e1cfcebd138c54`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Tue, 26 Jan 2016 14:18:02 GMT
--	Parent Layer: `ec35d754444c4f7a0b823af8edadcb4a0ff82e729ff651fd69ebe3dac3c81903`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:42 GMT
+-	Parent Layer: `c119334bfffc0e8853c99e711d15bf6fa4ee6aba8deba4f77e8d31a6eaf704a7`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7f0509ee5bd7a87820491b39906a5e363e50176d68e3609798c9972718064ce1`
+#### `bbd4b51e9f4ca523f4b4a9017fd029a3e789b39677cea9acb273fd7fb517d60e`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Tue, 26 Jan 2016 14:18:03 GMT
--	Parent Layer: `418535db526930fccafd21d64c8d48a5dd2d5f78a3bd3ba8acb607f7f398aec1`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:43 GMT
+-	Parent Layer: `4cc9b6c3a8dfa92cf508b100b86a56975fa9101826a6319139e1cfcebd138c54`
+-	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:215b547c54f1cf902941d6f9edc652e8af02e175afc6f2ecc70c9cffc3d95fab`
--	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:35:22 GMT
+-	v2 Blob: `sha256:36eb3f8aac025af9dd33973935b7144a3c7347e3fa727cf1918174dcc20f4604`
+-	v2 Content-Length: 1.4 KB (1352 bytes)
 
 ## `golang:1.5-wheezy`
 
 ```console
-$ docker pull library/golang@sha256:ef66e18634cb2a40455123eeda0f27fce637cf2a5dd2ca391a20db59640f7949
+$ docker pull library/golang@sha256:4562bd7a49cb2f3e077ba317cf6f756dd656c125828c4e884816eea399a21ce3
 ```
 
--	Total Virtual Size: 599.1 MB (599051869 bytes)
--	Total v2 Content-Length: 195.4 MB (195361442 bytes)
+-	Total Virtual Size: 599.1 MB (599081449 bytes)
+-	Total v2 Content-Length: 195.4 MB (195368975 bytes)
 
 ### Layers (14)
 
-#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
+#### `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
 
 ```dockerfile
-ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
+ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:26:48 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
--	v2 Content-Length: 37.2 MB (37184894 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
+-	Created: Tue, 16 Feb 2016 21:26:25 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 84.9 MB (84905064 bytes)
+-	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
+-	v2 Content-Length: 37.2 MB (37189267 bytes)
 
-#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
+#### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:26:50 GMT
--	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:26:28 GMT
+-	Parent Layer: `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
+#### `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4816,15 +1284,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:36:47 GMT
--	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
--	Docker Version: 1.8.3
--	Virtual Size: 14.2 MB (14185017 bytes)
--	v2 Blob: `sha256:454edf61cfa65c7f2f412ceb1f54d055f5061fbd6e197853f844dbfb1570cdad`
--	v2 Content-Length: 6.7 MB (6728657 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:32:10 GMT
+-	Created: Tue, 16 Feb 2016 21:45:00 GMT
+-	Parent Layer: `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+-	Docker Version: 1.9.1
+-	Virtual Size: 14.2 MB (14186974 bytes)
+-	v2 Blob: `sha256:82ef5d5f4bfd83493b8c559d349dd5020cc3b53c9888ed303e63c0bc014b5787`
+-	v2 Content-Length: 6.7 MB (6728197 bytes)
 
-#### `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
+#### `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -4837,240 +1304,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:37:15 GMT
--	Parent Layer: `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
--	Docker Version: 1.8.3
--	Virtual Size: 110.0 MB (110024273 bytes)
--	v2 Blob: `sha256:6df3bbe21be65da47a2ede366521b6a04aa8afa4974ce781981d0b2bcff9b3cb`
--	v2 Content-Length: 37.4 MB (37365406 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:33:30 GMT
+-	Created: Tue, 16 Feb 2016 21:45:39 GMT
+-	Parent Layer: `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
+-	Docker Version: 1.9.1
+-	Virtual Size: 110.0 MB (110025116 bytes)
+-	v2 Blob: `sha256:b41267d9121c5c2525748e60d9601c15be4d4b73640954673f5128bf740c3e7c`
+-	v2 Content-Length: 37.4 MB (37364680 bytes)
 
-#### `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:13:45 GMT
--	Parent Layer: `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
--	Docker Version: 1.8.3
--	Virtual Size: 90.8 MB (90804284 bytes)
--	v2 Blob: `sha256:ed2b7b9b470f804eba2b4b49132be6d98e5a0cab327f31ecf39297862d9aec27`
--	v2 Content-Length: 33.9 MB (33931904 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:24:20 GMT
-
-#### `9f791221ed8d299ab189241209f00ab10fb8c8310254b550fd4971794ba9e564`
-
-```dockerfile
-ENV GOLANG_VERSION=1.5.3
-```
-
--	Created: Tue, 26 Jan 2016 14:17:50 GMT
--	Parent Layer: `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `c46d5a08042a6996361875c916f3d7dbfbed7e55d585ea22d11970a54fcb168e`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:17:50 GMT
--	Parent Layer: `9f791221ed8d299ab189241209f00ab10fb8c8310254b550fd4971794ba9e564`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9aa88b44688c2e5e966c2465227c460a43320deda2a5db02688e53043cff861c`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
-```
-
--	Created: Tue, 26 Jan 2016 14:17:51 GMT
--	Parent Layer: `c46d5a08042a6996361875c916f3d7dbfbed7e55d585ea22d11970a54fcb168e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `60cd1f189cb9816efcc5215e38f5f048e90e39bbb19802e8e463488605697f9a`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
-	&& tar -C /usr/local -xzf golang.tar.gz \
-	&& rm golang.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:17:56 GMT
--	Parent Layer: `9aa88b44688c2e5e966c2465227c460a43320deda2a5db02688e53043cff861c`
--	Docker Version: 1.8.3
--	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:d6cb63003cab2f40791bae0f5160f5f0d81c910cfc1f00353e68699aa704ffaf`
--	v2 Content-Length: 80.1 MB (80148880 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:38:06 GMT
-
-#### `ea6ae2daab11517e96281b79186d3c152071d3d9e2187796f8d71bb770f4e82d`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:18:00 GMT
--	Parent Layer: `60cd1f189cb9816efcc5215e38f5f048e90e39bbb19802e8e463488605697f9a`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e4fc5e99f0c0cbc7574cc196bf276ee6290a5515057502b326337bee3d99aaf3`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:18:00 GMT
--	Parent Layer: `ea6ae2daab11517e96281b79186d3c152071d3d9e2187796f8d71bb770f4e82d`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ec35d754444c4f7a0b823af8edadcb4a0ff82e729ff651fd69ebe3dac3c81903`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:18:02 GMT
--	Parent Layer: `e4fc5e99f0c0cbc7574cc196bf276ee6290a5515057502b326337bee3d99aaf3`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:b62dd9f94024bcdfc38f973a168c9201cba82b8651868929e8c7b8664d5a22e2`
--	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:35:28 GMT
-
-#### `418535db526930fccafd21d64c8d48a5dd2d5f78a3bd3ba8acb607f7f398aec1`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:18:02 GMT
--	Parent Layer: `ec35d754444c4f7a0b823af8edadcb4a0ff82e729ff651fd69ebe3dac3c81903`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7f0509ee5bd7a87820491b39906a5e363e50176d68e3609798c9972718064ce1`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:18:03 GMT
--	Parent Layer: `418535db526930fccafd21d64c8d48a5dd2d5f78a3bd3ba8acb607f7f398aec1`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:215b547c54f1cf902941d6f9edc652e8af02e175afc6f2ecc70c9cffc3d95fab`
--	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:35:22 GMT
-
-## `golang:1-wheezy`
-
-```console
-$ docker pull library/golang@sha256:cd8f3d07ddc163aeb5026bd26610999a4e605ac90db8e8c7ac5485f9984fd9f7
-```
-
--	Total Virtual Size: 599.1 MB (599051869 bytes)
--	Total v2 Content-Length: 195.4 MB (195361442 bytes)
-
-### Layers (14)
-
-#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
-
-```dockerfile
-ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
-```
-
--	Created: Mon, 25 Jan 2016 22:26:48 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
--	v2 Content-Length: 37.2 MB (37184894 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
-
-#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:26:50 GMT
--	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:36:47 GMT
--	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
--	Docker Version: 1.8.3
--	Virtual Size: 14.2 MB (14185017 bytes)
--	v2 Blob: `sha256:454edf61cfa65c7f2f412ceb1f54d055f5061fbd6e197853f844dbfb1570cdad`
--	v2 Content-Length: 6.7 MB (6728657 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:32:10 GMT
-
-#### `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:37:15 GMT
--	Parent Layer: `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
--	Docker Version: 1.8.3
--	Virtual Size: 110.0 MB (110024273 bytes)
--	v2 Blob: `sha256:6df3bbe21be65da47a2ede366521b6a04aa8afa4974ce781981d0b2bcff9b3cb`
--	v2 Content-Length: 37.4 MB (37365406 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:33:30 GMT
-
-#### `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
+#### `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -5081,57 +1322,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:13:45 GMT
--	Parent Layer: `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
--	Docker Version: 1.8.3
--	Virtual Size: 90.8 MB (90804284 bytes)
--	v2 Blob: `sha256:ed2b7b9b470f804eba2b4b49132be6d98e5a0cab327f31ecf39297862d9aec27`
--	v2 Content-Length: 33.9 MB (33931904 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:24:20 GMT
+-	Created: Wed, 17 Feb 2016 12:01:54 GMT
+-	Parent Layer: `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
+-	Docker Version: 1.9.1
+-	Virtual Size: 90.8 MB (90820442 bytes)
+-	v2 Blob: `sha256:cc3bd5a35058ff3fd5c6990506a5e0205f560434eb4e61dac20fcc67f18883c0`
+-	v2 Content-Length: 33.9 MB (33936254 bytes)
 
-#### `9f791221ed8d299ab189241209f00ab10fb8c8310254b550fd4971794ba9e564`
+#### `53f55474dd594d5d4804bbe8eefa113dd5159476a5226fb50126ecd51f7aa757`
 
 ```dockerfile
 ENV GOLANG_VERSION=1.5.3
 ```
 
--	Created: Tue, 26 Jan 2016 14:17:50 GMT
--	Parent Layer: `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:29 GMT
+-	Parent Layer: `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `c46d5a08042a6996361875c916f3d7dbfbed7e55d585ea22d11970a54fcb168e`
+#### `c3742fbdabd01c6d9a649ed74acd7fcf69a93eba4fa75ef33d4e93928998b8f9`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:17:50 GMT
--	Parent Layer: `9f791221ed8d299ab189241209f00ab10fb8c8310254b550fd4971794ba9e564`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:30 GMT
+-	Parent Layer: `53f55474dd594d5d4804bbe8eefa113dd5159476a5226fb50126ecd51f7aa757`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9aa88b44688c2e5e966c2465227c460a43320deda2a5db02688e53043cff861c`
+#### `10e893a2498d21c801d346c80c917840ae0249948ba29899a43ee2daba288cdd`
 
 ```dockerfile
 ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
 ```
 
--	Created: Tue, 26 Jan 2016 14:17:51 GMT
--	Parent Layer: `c46d5a08042a6996361875c916f3d7dbfbed7e55d585ea22d11970a54fcb168e`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:30 GMT
+-	Parent Layer: `c3742fbdabd01c6d9a649ed74acd7fcf69a93eba4fa75ef33d4e93928998b8f9`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `60cd1f189cb9816efcc5215e38f5f048e90e39bbb19802e8e463488605697f9a`
+#### `c727f0071a1aa527e613c8d28a593cba02dff3ed3f96938004327a04bdfa4b70`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -5140,418 +1377,180 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Tue, 26 Jan 2016 14:17:56 GMT
--	Parent Layer: `9aa88b44688c2e5e966c2465227c460a43320deda2a5db02688e53043cff861c`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:36 GMT
+-	Parent Layer: `10e893a2498d21c801d346c80c917840ae0249948ba29899a43ee2daba288cdd`
+-	Docker Version: 1.9.1
 -	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:d6cb63003cab2f40791bae0f5160f5f0d81c910cfc1f00353e68699aa704ffaf`
--	v2 Content-Length: 80.1 MB (80148880 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:38:06 GMT
+-	v2 Blob: `sha256:5c2dfc3df3918988d6dbdc6afab786c0ab872f28153478a667912b5b8295e1f1`
+-	v2 Content-Length: 80.1 MB (80148879 bytes)
 
-#### `ea6ae2daab11517e96281b79186d3c152071d3d9e2187796f8d71bb770f4e82d`
+#### `0ec8b579363e9e00ae1fa7def433c9a8eeae58039cbdfd8588496c60344b5973`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Tue, 26 Jan 2016 14:18:00 GMT
--	Parent Layer: `60cd1f189cb9816efcc5215e38f5f048e90e39bbb19802e8e463488605697f9a`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:40 GMT
+-	Parent Layer: `c727f0071a1aa527e613c8d28a593cba02dff3ed3f96938004327a04bdfa4b70`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `e4fc5e99f0c0cbc7574cc196bf276ee6290a5515057502b326337bee3d99aaf3`
+#### `3978b6d943b133abf5e7b2bae1f6bd246ca22741099dc3723138952fe283490e`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Tue, 26 Jan 2016 14:18:00 GMT
--	Parent Layer: `ea6ae2daab11517e96281b79186d3c152071d3d9e2187796f8d71bb770f4e82d`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:40 GMT
+-	Parent Layer: `0ec8b579363e9e00ae1fa7def433c9a8eeae58039cbdfd8588496c60344b5973`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `ec35d754444c4f7a0b823af8edadcb4a0ff82e729ff651fd69ebe3dac3c81903`
+#### `c119334bfffc0e8853c99e711d15bf6fa4ee6aba8deba4f77e8d31a6eaf704a7`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Tue, 26 Jan 2016 14:18:02 GMT
--	Parent Layer: `e4fc5e99f0c0cbc7574cc196bf276ee6290a5515057502b326337bee3d99aaf3`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:42 GMT
+-	Parent Layer: `3978b6d943b133abf5e7b2bae1f6bd246ca22741099dc3723138952fe283490e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:b62dd9f94024bcdfc38f973a168c9201cba82b8651868929e8c7b8664d5a22e2`
+-	v2 Blob: `sha256:ca5f35d00c08018aed0a576422fd07c3c2bcc01274656194bf6a7e8de3c8926c`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:35:28 GMT
 
-#### `418535db526930fccafd21d64c8d48a5dd2d5f78a3bd3ba8acb607f7f398aec1`
+#### `4cc9b6c3a8dfa92cf508b100b86a56975fa9101826a6319139e1cfcebd138c54`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Tue, 26 Jan 2016 14:18:02 GMT
--	Parent Layer: `ec35d754444c4f7a0b823af8edadcb4a0ff82e729ff651fd69ebe3dac3c81903`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:42 GMT
+-	Parent Layer: `c119334bfffc0e8853c99e711d15bf6fa4ee6aba8deba4f77e8d31a6eaf704a7`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7f0509ee5bd7a87820491b39906a5e363e50176d68e3609798c9972718064ce1`
+#### `bbd4b51e9f4ca523f4b4a9017fd029a3e789b39677cea9acb273fd7fb517d60e`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Tue, 26 Jan 2016 14:18:03 GMT
--	Parent Layer: `418535db526930fccafd21d64c8d48a5dd2d5f78a3bd3ba8acb607f7f398aec1`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 12:05:43 GMT
+-	Parent Layer: `4cc9b6c3a8dfa92cf508b100b86a56975fa9101826a6319139e1cfcebd138c54`
+-	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:215b547c54f1cf902941d6f9edc652e8af02e175afc6f2ecc70c9cffc3d95fab`
--	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:35:22 GMT
-
-## `golang:wheezy`
-
-```console
-$ docker pull library/golang@sha256:e4f77548912cfdb798800482c95f4f87637345c20a5dbcf12ca8f4f6d5135f54
-```
-
--	Total Virtual Size: 599.1 MB (599051869 bytes)
--	Total v2 Content-Length: 195.4 MB (195361442 bytes)
-
-### Layers (14)
-
-#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
-
-```dockerfile
-ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
-```
-
--	Created: Mon, 25 Jan 2016 22:26:48 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
--	v2 Content-Length: 37.2 MB (37184894 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
-
-#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Mon, 25 Jan 2016 22:26:50 GMT
--	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		wget \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:36:47 GMT
--	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
--	Docker Version: 1.8.3
--	Virtual Size: 14.2 MB (14185017 bytes)
--	v2 Blob: `sha256:454edf61cfa65c7f2f412ceb1f54d055f5061fbd6e197853f844dbfb1570cdad`
--	v2 Content-Length: 6.7 MB (6728657 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:32:10 GMT
-
-#### `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzr \
-		git \
-		mercurial \
-		openssh-client \
-		subversion \
-				procps \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Mon, 25 Jan 2016 22:37:15 GMT
--	Parent Layer: `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
--	Docker Version: 1.8.3
--	Virtual Size: 110.0 MB (110024273 bytes)
--	v2 Blob: `sha256:6df3bbe21be65da47a2ede366521b6a04aa8afa4974ce781981d0b2bcff9b3cb`
--	v2 Content-Length: 37.4 MB (37365406 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:33:30 GMT
-
-#### `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
-
-```dockerfile
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		g++ \
-		gcc \
-		libc6-dev \
-		make \
-	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Created: Tue, 26 Jan 2016 14:13:45 GMT
--	Parent Layer: `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
--	Docker Version: 1.8.3
--	Virtual Size: 90.8 MB (90804284 bytes)
--	v2 Blob: `sha256:ed2b7b9b470f804eba2b4b49132be6d98e5a0cab327f31ecf39297862d9aec27`
--	v2 Content-Length: 33.9 MB (33931904 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:24:20 GMT
-
-#### `9f791221ed8d299ab189241209f00ab10fb8c8310254b550fd4971794ba9e564`
-
-```dockerfile
-ENV GOLANG_VERSION=1.5.3
-```
-
--	Created: Tue, 26 Jan 2016 14:17:50 GMT
--	Parent Layer: `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `c46d5a08042a6996361875c916f3d7dbfbed7e55d585ea22d11970a54fcb168e`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:17:50 GMT
--	Parent Layer: `9f791221ed8d299ab189241209f00ab10fb8c8310254b550fd4971794ba9e564`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `9aa88b44688c2e5e966c2465227c460a43320deda2a5db02688e53043cff861c`
-
-```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
-```
-
--	Created: Tue, 26 Jan 2016 14:17:51 GMT
--	Parent Layer: `c46d5a08042a6996361875c916f3d7dbfbed7e55d585ea22d11970a54fcb168e`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `60cd1f189cb9816efcc5215e38f5f048e90e39bbb19802e8e463488605697f9a`
-
-```dockerfile
-RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
-	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
-	&& tar -C /usr/local -xzf golang.tar.gz \
-	&& rm golang.tar.gz
-```
-
--	Created: Tue, 26 Jan 2016 14:17:56 GMT
--	Parent Layer: `9aa88b44688c2e5e966c2465227c460a43320deda2a5db02688e53043cff861c`
--	Docker Version: 1.8.3
--	Virtual Size: 299.1 MB (299141372 bytes)
--	v2 Blob: `sha256:d6cb63003cab2f40791bae0f5160f5f0d81c910cfc1f00353e68699aa704ffaf`
--	v2 Content-Length: 80.1 MB (80148880 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:38:06 GMT
-
-#### `ea6ae2daab11517e96281b79186d3c152071d3d9e2187796f8d71bb770f4e82d`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Tue, 26 Jan 2016 14:18:00 GMT
--	Parent Layer: `60cd1f189cb9816efcc5215e38f5f048e90e39bbb19802e8e463488605697f9a`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `e4fc5e99f0c0cbc7574cc196bf276ee6290a5515057502b326337bee3d99aaf3`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Tue, 26 Jan 2016 14:18:00 GMT
--	Parent Layer: `ea6ae2daab11517e96281b79186d3c152071d3d9e2187796f8d71bb770f4e82d`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `ec35d754444c4f7a0b823af8edadcb4a0ff82e729ff651fd69ebe3dac3c81903`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Tue, 26 Jan 2016 14:18:02 GMT
--	Parent Layer: `e4fc5e99f0c0cbc7574cc196bf276ee6290a5515057502b326337bee3d99aaf3`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:b62dd9f94024bcdfc38f973a168c9201cba82b8651868929e8c7b8664d5a22e2`
--	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Thu, 28 Jan 2016 18:35:28 GMT
-
-#### `418535db526930fccafd21d64c8d48a5dd2d5f78a3bd3ba8acb607f7f398aec1`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Tue, 26 Jan 2016 14:18:02 GMT
--	Parent Layer: `ec35d754444c4f7a0b823af8edadcb4a0ff82e729ff651fd69ebe3dac3c81903`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7f0509ee5bd7a87820491b39906a5e363e50176d68e3609798c9972718064ce1`
-
-```dockerfile
-COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
-```
-
--	Created: Tue, 26 Jan 2016 14:18:03 GMT
--	Parent Layer: `418535db526930fccafd21d64c8d48a5dd2d5f78a3bd3ba8acb607f7f398aec1`
--	Docker Version: 1.8.3
--	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:215b547c54f1cf902941d6f9edc652e8af02e175afc6f2ecc70c9cffc3d95fab`
--	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:35:22 GMT
+-	v2 Blob: `sha256:36eb3f8aac025af9dd33973935b7144a3c7347e3fa727cf1918174dcc20f4604`
+-	v2 Content-Length: 1.4 KB (1352 bytes)
 
 ## `golang:1.5.3-alpine`
 
 ```console
-$ docker pull library/golang@sha256:b26fd8c4bbb1344cce6001e29fad6ec092040ba1183d9b704e7dba5837e1968c
+$ docker pull library/golang@sha256:68bfb0fdad45d4fab04186bfadb9eb2d192f6ee2381bcd9328157bc4dda3a50e
 ```
 
--	Total Virtual Size: 224.6 MB (224556950 bytes)
--	Total v2 Content-Length: 58.7 MB (58662996 bytes)
+-	Total Virtual Size: 224.6 MB (224556878 bytes)
+-	Total v2 Content-Length: 58.7 MB (58664071 bytes)
 
 ### Layers (12)
 
-#### `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
+#### `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
 
 ```dockerfile
-ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /
+ADD file:0f9cfb2e848f093649aca9cc67927e4d04a74e150e0d92f4ad18ee583a287bf2 in /
 ```
 
--	Created: Mon, 18 Jan 2016 18:33:12 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.8 MB (4793939 bytes)
--	v2 Blob: `sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598`
--	v2 Content-Length: 2.3 MB (2318895 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 18:34:49 GMT
+-	Created: Wed, 17 Feb 2016 15:51:37 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 4.8 MB (4793867 bytes)
+-	v2 Blob: `sha256:ee54741ab35b188477c19fddc30356317b091177966da94c2e9391de49fc7f43`
+-	v2 Content-Length: 2.3 MB (2318983 bytes)
 
-#### `1a571b72b7f18306628e6ee6ae1986248dc690bfa8a28e636ff809e75649f3c5`
+#### `d090dc5f05b00c1e0b66ab70d6fd0ec671a9ac36fa3f0c48394de077fb865e9c`
 
 ```dockerfile
 ENV GOLANG_VERSION=1.5.3
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:07 GMT
--	Parent Layer: `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:18 GMT
+-	Parent Layer: `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `13445b634e34d40111cea5048f8feea57565c56320704d0f7bb61f1e2d3538e3`
+#### `15d472f29b394962c08b4c1c14bd26188672fe49fec457dc8c7f65859533597f`
 
 ```dockerfile
 ENV GOLANG_SRC_URL=https://golang.org/dl/go1.5.3.src.tar.gz
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:07 GMT
--	Parent Layer: `1a571b72b7f18306628e6ee6ae1986248dc690bfa8a28e636ff809e75649f3c5`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:19 GMT
+-	Parent Layer: `d090dc5f05b00c1e0b66ab70d6fd0ec671a9ac36fa3f0c48394de077fb865e9c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `463135448e0888b1b30a524110505626daa83965658a20c95fb4008dcf2231b5`
+#### `514b7db3f912610fc53b5cfa9abbcaebf3b783b542dca0a2f60e915c3fa34b6a`
 
 ```dockerfile
 ENV GOLANG_SRC_SHA256=754e06dab1c31ab168fc9db9e32596734015ea9e24bc44cae7f237f417ce4efe
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:08 GMT
--	Parent Layer: `13445b634e34d40111cea5048f8feea57565c56320704d0f7bb61f1e2d3538e3`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:20 GMT
+-	Parent Layer: `15d472f29b394962c08b4c1c14bd26188672fe49fec457dc8c7f65859533597f`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `562161298a08d3aa7e67a8e0f20ebe056250b702048c36601b2451758d9c95a0`
+#### `57603a1fb981d29fcca9ab63085968b34571d9c9092b956ce61aa3f46d5b9642`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:08 GMT
--	Parent Layer: `463135448e0888b1b30a524110505626daa83965658a20c95fb4008dcf2231b5`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:21 GMT
+-	Parent Layer: `514b7db3f912610fc53b5cfa9abbcaebf3b783b542dca0a2f60e915c3fa34b6a`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `46984a1aa99203a5dc07476e869a791e667718194888522a0ef71cab6b2745bd`
+#### `4f9bb2d6c9f864d9bb9dd162c8b451a35475647048a0cd2b02bf3bbe9d7005fd`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:09 GMT
--	Parent Layer: `562161298a08d3aa7e67a8e0f20ebe056250b702048c36601b2451758d9c95a0`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:22 GMT
+-	Parent Layer: `57603a1fb981d29fcca9ab63085968b34571d9c9092b956ce61aa3f46d5b9642`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1f29a668038fe05036e6c42d6ec4ff5a8c1c807e6fce0a85235a8b4fcb618559`
+#### `3e095428312bcee1d7a25135c4c44f106524f43d2077b8e3e77183a6cbb07806`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:09 GMT
--	Parent Layer: `46984a1aa99203a5dc07476e869a791e667718194888522a0ef71cab6b2745bd`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:24 GMT
+-	Parent Layer: `4f9bb2d6c9f864d9bb9dd162c8b451a35475647048a0cd2b02bf3bbe9d7005fd`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d1fd742b180af3bc48ce204bf35876d12d0de722e62b71d14c9a20ad0e19079c`
+#### `5e2081fec7f11342a9d5e0397b9579af39212633297d0faf95fd3e3f8d481800`
 
 ```dockerfile
 RUN set -ex \
@@ -5579,179 +1578,167 @@ RUN set -ex \
 	&& apk del .build-deps
 ```
 
--	Created: Mon, 18 Jan 2016 18:37:59 GMT
--	Parent Layer: `1f29a668038fe05036e6c42d6ec4ff5a8c1c807e6fce0a85235a8b4fcb618559`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:09:16 GMT
+-	Parent Layer: `3e095428312bcee1d7a25135c4c44f106524f43d2077b8e3e77183a6cbb07806`
+-	Docker Version: 1.9.1
 -	Virtual Size: 219.8 MB (219763011 bytes)
--	v2 Blob: `sha256:bf6171382f0f5a170e514b342a2da39a2165a6cfba04e8314a291da0dac779b1`
--	v2 Content-Length: 56.3 MB (56343690 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 20:24:10 GMT
+-	v2 Blob: `sha256:06d8cbed1ebc84bbb74b29dde2274ccef55834dd80447e512e7c5ed8bc50057f`
+-	v2 Content-Length: 56.3 MB (56344677 bytes)
 
-#### `95a07dc494d4c631454c4fb51741d76da1c0a0bc62c746101c03b9fa91be8add`
+#### `667449f2f8c4e4cb888496d6f9686783c170227cf71cbf647e122c1e8fd51c1c`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Mon, 18 Jan 2016 18:38:01 GMT
--	Parent Layer: `d1fd742b180af3bc48ce204bf35876d12d0de722e62b71d14c9a20ad0e19079c`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:09:20 GMT
+-	Parent Layer: `5e2081fec7f11342a9d5e0397b9579af39212633297d0faf95fd3e3f8d481800`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a658a371b0c5038efa094df735e90449805831558fd9471a7a87bda137eb82c3`
+#### `980c77456ea154d3b0bba4b6ee5ea6a48265090defebd3e1b927bd88c5100559`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 18 Jan 2016 18:38:02 GMT
--	Parent Layer: `95a07dc494d4c631454c4fb51741d76da1c0a0bc62c746101c03b9fa91be8add`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:09:20 GMT
+-	Parent Layer: `667449f2f8c4e4cb888496d6f9686783c170227cf71cbf647e122c1e8fd51c1c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7f8a15308b41390169ac697f538a51f55501c8a26f96d4bf1e395028ea0a2bcf`
+#### `05118abe38d4864ab74218eb524d308972119a11bd07ae37277490c517ee8dba`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Mon, 18 Jan 2016 18:38:03 GMT
--	Parent Layer: `a658a371b0c5038efa094df735e90449805831558fd9471a7a87bda137eb82c3`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:09:22 GMT
+-	Parent Layer: `980c77456ea154d3b0bba4b6ee5ea6a48265090defebd3e1b927bd88c5100559`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:108efa53cdaaab29bad39c1a68b9522ca3aa3b320674c64c8cd04fed0f05d679`
+-	v2 Blob: `sha256:c3033dc0b8035e3db82affe6d40c357e9d27f270d3e8ff1395e2c0a8ad6f855d`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Mon, 18 Jan 2016 20:23:31 GMT
 
-#### `ff3e7e8ec9cea673d973dcf88c147148795620ee0cbf68d8f29c6bd4f14ca7e7`
+#### `6923b555ce09603d5f258942bd1c364ed2c0c373479a7ed45c7f99bebca575b7`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Mon, 18 Jan 2016 18:38:04 GMT
--	Parent Layer: `7f8a15308b41390169ac697f538a51f55501c8a26f96d4bf1e395028ea0a2bcf`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:09:23 GMT
+-	Parent Layer: `05118abe38d4864ab74218eb524d308972119a11bd07ae37277490c517ee8dba`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.5-alpine`
 
 ```console
-$ docker pull library/golang@sha256:5f2283002ce27e0324f072ec96b3e1d1ae5bb776b96af99c5a689d9fcc8c62f8
+$ docker pull library/golang@sha256:98d68e0dcb3c165ef0a0d3f4e87cc1b13e00be81078fecb251b931f5b3f862cb
 ```
 
--	Total Virtual Size: 224.6 MB (224556950 bytes)
--	Total v2 Content-Length: 58.7 MB (58662996 bytes)
+-	Total Virtual Size: 224.6 MB (224556878 bytes)
+-	Total v2 Content-Length: 58.7 MB (58664071 bytes)
 
 ### Layers (12)
 
-#### `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
+#### `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
 
 ```dockerfile
-ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /
+ADD file:0f9cfb2e848f093649aca9cc67927e4d04a74e150e0d92f4ad18ee583a287bf2 in /
 ```
 
--	Created: Mon, 18 Jan 2016 18:33:12 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.8 MB (4793939 bytes)
--	v2 Blob: `sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598`
--	v2 Content-Length: 2.3 MB (2318895 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 18:34:49 GMT
+-	Created: Wed, 17 Feb 2016 15:51:37 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 4.8 MB (4793867 bytes)
+-	v2 Blob: `sha256:ee54741ab35b188477c19fddc30356317b091177966da94c2e9391de49fc7f43`
+-	v2 Content-Length: 2.3 MB (2318983 bytes)
 
-#### `1a571b72b7f18306628e6ee6ae1986248dc690bfa8a28e636ff809e75649f3c5`
+#### `d090dc5f05b00c1e0b66ab70d6fd0ec671a9ac36fa3f0c48394de077fb865e9c`
 
 ```dockerfile
 ENV GOLANG_VERSION=1.5.3
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:07 GMT
--	Parent Layer: `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:18 GMT
+-	Parent Layer: `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `13445b634e34d40111cea5048f8feea57565c56320704d0f7bb61f1e2d3538e3`
+#### `15d472f29b394962c08b4c1c14bd26188672fe49fec457dc8c7f65859533597f`
 
 ```dockerfile
 ENV GOLANG_SRC_URL=https://golang.org/dl/go1.5.3.src.tar.gz
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:07 GMT
--	Parent Layer: `1a571b72b7f18306628e6ee6ae1986248dc690bfa8a28e636ff809e75649f3c5`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:19 GMT
+-	Parent Layer: `d090dc5f05b00c1e0b66ab70d6fd0ec671a9ac36fa3f0c48394de077fb865e9c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `463135448e0888b1b30a524110505626daa83965658a20c95fb4008dcf2231b5`
+#### `514b7db3f912610fc53b5cfa9abbcaebf3b783b542dca0a2f60e915c3fa34b6a`
 
 ```dockerfile
 ENV GOLANG_SRC_SHA256=754e06dab1c31ab168fc9db9e32596734015ea9e24bc44cae7f237f417ce4efe
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:08 GMT
--	Parent Layer: `13445b634e34d40111cea5048f8feea57565c56320704d0f7bb61f1e2d3538e3`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:20 GMT
+-	Parent Layer: `15d472f29b394962c08b4c1c14bd26188672fe49fec457dc8c7f65859533597f`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `562161298a08d3aa7e67a8e0f20ebe056250b702048c36601b2451758d9c95a0`
+#### `57603a1fb981d29fcca9ab63085968b34571d9c9092b956ce61aa3f46d5b9642`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:08 GMT
--	Parent Layer: `463135448e0888b1b30a524110505626daa83965658a20c95fb4008dcf2231b5`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:21 GMT
+-	Parent Layer: `514b7db3f912610fc53b5cfa9abbcaebf3b783b542dca0a2f60e915c3fa34b6a`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `46984a1aa99203a5dc07476e869a791e667718194888522a0ef71cab6b2745bd`
+#### `4f9bb2d6c9f864d9bb9dd162c8b451a35475647048a0cd2b02bf3bbe9d7005fd`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:09 GMT
--	Parent Layer: `562161298a08d3aa7e67a8e0f20ebe056250b702048c36601b2451758d9c95a0`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:22 GMT
+-	Parent Layer: `57603a1fb981d29fcca9ab63085968b34571d9c9092b956ce61aa3f46d5b9642`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `1f29a668038fe05036e6c42d6ec4ff5a8c1c807e6fce0a85235a8b4fcb618559`
+#### `3e095428312bcee1d7a25135c4c44f106524f43d2077b8e3e77183a6cbb07806`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
 ```
 
--	Created: Mon, 18 Jan 2016 18:36:09 GMT
--	Parent Layer: `46984a1aa99203a5dc07476e869a791e667718194888522a0ef71cab6b2745bd`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:01:24 GMT
+-	Parent Layer: `4f9bb2d6c9f864d9bb9dd162c8b451a35475647048a0cd2b02bf3bbe9d7005fd`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `d1fd742b180af3bc48ce204bf35876d12d0de722e62b71d14c9a20ad0e19079c`
+#### `5e2081fec7f11342a9d5e0397b9579af39212633297d0faf95fd3e3f8d481800`
 
 ```dockerfile
 RUN set -ex \
@@ -5779,509 +1766,102 @@ RUN set -ex \
 	&& apk del .build-deps
 ```
 
--	Created: Mon, 18 Jan 2016 18:37:59 GMT
--	Parent Layer: `1f29a668038fe05036e6c42d6ec4ff5a8c1c807e6fce0a85235a8b4fcb618559`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:09:16 GMT
+-	Parent Layer: `3e095428312bcee1d7a25135c4c44f106524f43d2077b8e3e77183a6cbb07806`
+-	Docker Version: 1.9.1
 -	Virtual Size: 219.8 MB (219763011 bytes)
--	v2 Blob: `sha256:bf6171382f0f5a170e514b342a2da39a2165a6cfba04e8314a291da0dac779b1`
--	v2 Content-Length: 56.3 MB (56343690 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 20:24:10 GMT
+-	v2 Blob: `sha256:06d8cbed1ebc84bbb74b29dde2274ccef55834dd80447e512e7c5ed8bc50057f`
+-	v2 Content-Length: 56.3 MB (56344677 bytes)
 
-#### `95a07dc494d4c631454c4fb51741d76da1c0a0bc62c746101c03b9fa91be8add`
+#### `667449f2f8c4e4cb888496d6f9686783c170227cf71cbf647e122c1e8fd51c1c`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Mon, 18 Jan 2016 18:38:01 GMT
--	Parent Layer: `d1fd742b180af3bc48ce204bf35876d12d0de722e62b71d14c9a20ad0e19079c`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:09:20 GMT
+-	Parent Layer: `5e2081fec7f11342a9d5e0397b9579af39212633297d0faf95fd3e3f8d481800`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a658a371b0c5038efa094df735e90449805831558fd9471a7a87bda137eb82c3`
+#### `980c77456ea154d3b0bba4b6ee5ea6a48265090defebd3e1b927bd88c5100559`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Mon, 18 Jan 2016 18:38:02 GMT
--	Parent Layer: `95a07dc494d4c631454c4fb51741d76da1c0a0bc62c746101c03b9fa91be8add`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:09:20 GMT
+-	Parent Layer: `667449f2f8c4e4cb888496d6f9686783c170227cf71cbf647e122c1e8fd51c1c`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `7f8a15308b41390169ac697f538a51f55501c8a26f96d4bf1e395028ea0a2bcf`
+#### `05118abe38d4864ab74218eb524d308972119a11bd07ae37277490c517ee8dba`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Mon, 18 Jan 2016 18:38:03 GMT
--	Parent Layer: `a658a371b0c5038efa094df735e90449805831558fd9471a7a87bda137eb82c3`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:09:22 GMT
+-	Parent Layer: `980c77456ea154d3b0bba4b6ee5ea6a48265090defebd3e1b927bd88c5100559`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:108efa53cdaaab29bad39c1a68b9522ca3aa3b320674c64c8cd04fed0f05d679`
+-	v2 Blob: `sha256:c3033dc0b8035e3db82affe6d40c357e9d27f270d3e8ff1395e2c0a8ad6f855d`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Mon, 18 Jan 2016 20:23:31 GMT
 
-#### `ff3e7e8ec9cea673d973dcf88c147148795620ee0cbf68d8f29c6bd4f14ca7e7`
+#### `6923b555ce09603d5f258942bd1c364ed2c0c373479a7ed45c7f99bebca575b7`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Mon, 18 Jan 2016 18:38:04 GMT
--	Parent Layer: `7f8a15308b41390169ac697f538a51f55501c8a26f96d4bf1e395028ea0a2bcf`
--	Docker Version: 1.8.3
+-	Created: Wed, 17 Feb 2016 17:09:23 GMT
+-	Parent Layer: `05118abe38d4864ab74218eb524d308972119a11bd07ae37277490c517ee8dba`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `golang:1-alpine`
+## `golang:1.6.0`
 
 ```console
-$ docker pull library/golang@sha256:85d0c057622f1e1880a71b384efcbb3b9d5be2be4a9230475f1c77540a3de80e
+$ docker pull library/golang@sha256:2ada9cac09bb53444cb4b9cc1465307f1e1f06a9fcb191f0050eedfe467f04de
 ```
 
--	Total Virtual Size: 224.6 MB (224556950 bytes)
--	Total v2 Content-Length: 58.7 MB (58662996 bytes)
-
-### Layers (12)
-
-#### `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
-
-```dockerfile
-ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /
-```
-
--	Created: Mon, 18 Jan 2016 18:33:12 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.8 MB (4793939 bytes)
--	v2 Blob: `sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598`
--	v2 Content-Length: 2.3 MB (2318895 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 18:34:49 GMT
-
-#### `1a571b72b7f18306628e6ee6ae1986248dc690bfa8a28e636ff809e75649f3c5`
-
-```dockerfile
-ENV GOLANG_VERSION=1.5.3
-```
-
--	Created: Mon, 18 Jan 2016 18:36:07 GMT
--	Parent Layer: `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `13445b634e34d40111cea5048f8feea57565c56320704d0f7bb61f1e2d3538e3`
-
-```dockerfile
-ENV GOLANG_SRC_URL=https://golang.org/dl/go1.5.3.src.tar.gz
-```
-
--	Created: Mon, 18 Jan 2016 18:36:07 GMT
--	Parent Layer: `1a571b72b7f18306628e6ee6ae1986248dc690bfa8a28e636ff809e75649f3c5`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `463135448e0888b1b30a524110505626daa83965658a20c95fb4008dcf2231b5`
-
-```dockerfile
-ENV GOLANG_SRC_SHA256=754e06dab1c31ab168fc9db9e32596734015ea9e24bc44cae7f237f417ce4efe
-```
-
--	Created: Mon, 18 Jan 2016 18:36:08 GMT
--	Parent Layer: `13445b634e34d40111cea5048f8feea57565c56320704d0f7bb61f1e2d3538e3`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `562161298a08d3aa7e67a8e0f20ebe056250b702048c36601b2451758d9c95a0`
-
-```dockerfile
-ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
-```
-
--	Created: Mon, 18 Jan 2016 18:36:08 GMT
--	Parent Layer: `463135448e0888b1b30a524110505626daa83965658a20c95fb4008dcf2231b5`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `46984a1aa99203a5dc07476e869a791e667718194888522a0ef71cab6b2745bd`
-
-```dockerfile
-ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Mon, 18 Jan 2016 18:36:09 GMT
--	Parent Layer: `562161298a08d3aa7e67a8e0f20ebe056250b702048c36601b2451758d9c95a0`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `1f29a668038fe05036e6c42d6ec4ff5a8c1c807e6fce0a85235a8b4fcb618559`
-
-```dockerfile
-ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Mon, 18 Jan 2016 18:36:09 GMT
--	Parent Layer: `46984a1aa99203a5dc07476e869a791e667718194888522a0ef71cab6b2745bd`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `d1fd742b180af3bc48ce204bf35876d12d0de722e62b71d14c9a20ad0e19079c`
-
-```dockerfile
-RUN set -ex \
-	&& apk add --no-cache --virtual .build-deps \
-		bash \
-		ca-certificates \
-		gcc \
-		musl-dev \
-		openssl \
-		&& mkdir -p /usr/local/bootstrap \
-	&& wget -q "$GOLANG_BOOTSTRAP_URL" -O golang.tar.gz \
-	&& echo "$GOLANG_BOOTSTRAP_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/local/bootstrap -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/local/bootstrap/go/src \
-	&& ./make.bash \
-	&& export GOROOT_BOOTSTRAP=/usr/local/bootstrap/go \
-		&& wget -q "$GOLANG_SRC_URL" -O golang.tar.gz \
-	&& echo "$GOLANG_SRC_SHA256  golang.tar.gz" | sha256sum -c - \
-	&& tar -C /usr/local -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/local/go/src \
-	&& ./make.bash \
-		&& rm -rf /usr/local/bootstrap /usr/local/go/pkg/bootstrap \
-	&& apk del .build-deps
-```
-
--	Created: Mon, 18 Jan 2016 18:37:59 GMT
--	Parent Layer: `1f29a668038fe05036e6c42d6ec4ff5a8c1c807e6fce0a85235a8b4fcb618559`
--	Docker Version: 1.8.3
--	Virtual Size: 219.8 MB (219763011 bytes)
--	v2 Blob: `sha256:bf6171382f0f5a170e514b342a2da39a2165a6cfba04e8314a291da0dac779b1`
--	v2 Content-Length: 56.3 MB (56343690 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 20:24:10 GMT
-
-#### `95a07dc494d4c631454c4fb51741d76da1c0a0bc62c746101c03b9fa91be8add`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Mon, 18 Jan 2016 18:38:01 GMT
--	Parent Layer: `d1fd742b180af3bc48ce204bf35876d12d0de722e62b71d14c9a20ad0e19079c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a658a371b0c5038efa094df735e90449805831558fd9471a7a87bda137eb82c3`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Mon, 18 Jan 2016 18:38:02 GMT
--	Parent Layer: `95a07dc494d4c631454c4fb51741d76da1c0a0bc62c746101c03b9fa91be8add`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7f8a15308b41390169ac697f538a51f55501c8a26f96d4bf1e395028ea0a2bcf`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Mon, 18 Jan 2016 18:38:03 GMT
--	Parent Layer: `a658a371b0c5038efa094df735e90449805831558fd9471a7a87bda137eb82c3`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:108efa53cdaaab29bad39c1a68b9522ca3aa3b320674c64c8cd04fed0f05d679`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Mon, 18 Jan 2016 20:23:31 GMT
-
-#### `ff3e7e8ec9cea673d973dcf88c147148795620ee0cbf68d8f29c6bd4f14ca7e7`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Mon, 18 Jan 2016 18:38:04 GMT
--	Parent Layer: `7f8a15308b41390169ac697f538a51f55501c8a26f96d4bf1e395028ea0a2bcf`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `golang:alpine`
-
-```console
-$ docker pull library/golang@sha256:f870e26f34ba1a744491a749f1996d494f1534175040aa5b1cf68d6eef6088f4
-```
-
--	Total Virtual Size: 224.6 MB (224556950 bytes)
--	Total v2 Content-Length: 58.7 MB (58662996 bytes)
-
-### Layers (12)
-
-#### `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
-
-```dockerfile
-ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /
-```
-
--	Created: Mon, 18 Jan 2016 18:33:12 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.8 MB (4793939 bytes)
--	v2 Blob: `sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598`
--	v2 Content-Length: 2.3 MB (2318895 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 18:34:49 GMT
-
-#### `1a571b72b7f18306628e6ee6ae1986248dc690bfa8a28e636ff809e75649f3c5`
-
-```dockerfile
-ENV GOLANG_VERSION=1.5.3
-```
-
--	Created: Mon, 18 Jan 2016 18:36:07 GMT
--	Parent Layer: `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `13445b634e34d40111cea5048f8feea57565c56320704d0f7bb61f1e2d3538e3`
-
-```dockerfile
-ENV GOLANG_SRC_URL=https://golang.org/dl/go1.5.3.src.tar.gz
-```
-
--	Created: Mon, 18 Jan 2016 18:36:07 GMT
--	Parent Layer: `1a571b72b7f18306628e6ee6ae1986248dc690bfa8a28e636ff809e75649f3c5`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `463135448e0888b1b30a524110505626daa83965658a20c95fb4008dcf2231b5`
-
-```dockerfile
-ENV GOLANG_SRC_SHA256=754e06dab1c31ab168fc9db9e32596734015ea9e24bc44cae7f237f417ce4efe
-```
-
--	Created: Mon, 18 Jan 2016 18:36:08 GMT
--	Parent Layer: `13445b634e34d40111cea5048f8feea57565c56320704d0f7bb61f1e2d3538e3`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `562161298a08d3aa7e67a8e0f20ebe056250b702048c36601b2451758d9c95a0`
-
-```dockerfile
-ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
-```
-
--	Created: Mon, 18 Jan 2016 18:36:08 GMT
--	Parent Layer: `463135448e0888b1b30a524110505626daa83965658a20c95fb4008dcf2231b5`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `46984a1aa99203a5dc07476e869a791e667718194888522a0ef71cab6b2745bd`
-
-```dockerfile
-ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
-```
-
--	Created: Mon, 18 Jan 2016 18:36:09 GMT
--	Parent Layer: `562161298a08d3aa7e67a8e0f20ebe056250b702048c36601b2451758d9c95a0`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `1f29a668038fe05036e6c42d6ec4ff5a8c1c807e6fce0a85235a8b4fcb618559`
-
-```dockerfile
-ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
-```
-
--	Created: Mon, 18 Jan 2016 18:36:09 GMT
--	Parent Layer: `46984a1aa99203a5dc07476e869a791e667718194888522a0ef71cab6b2745bd`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `d1fd742b180af3bc48ce204bf35876d12d0de722e62b71d14c9a20ad0e19079c`
-
-```dockerfile
-RUN set -ex \
-	&& apk add --no-cache --virtual .build-deps \
-		bash \
-		ca-certificates \
-		gcc \
-		musl-dev \
-		openssl \
-		&& mkdir -p /usr/local/bootstrap \
-	&& wget -q "$GOLANG_BOOTSTRAP_URL" -O golang.tar.gz \
-	&& echo "$GOLANG_BOOTSTRAP_SHA1  golang.tar.gz" | sha1sum -c - \
-	&& tar -C /usr/local/bootstrap -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/local/bootstrap/go/src \
-	&& ./make.bash \
-	&& export GOROOT_BOOTSTRAP=/usr/local/bootstrap/go \
-		&& wget -q "$GOLANG_SRC_URL" -O golang.tar.gz \
-	&& echo "$GOLANG_SRC_SHA256  golang.tar.gz" | sha256sum -c - \
-	&& tar -C /usr/local -xzf golang.tar.gz \
-	&& rm golang.tar.gz \
-	&& cd /usr/local/go/src \
-	&& ./make.bash \
-		&& rm -rf /usr/local/bootstrap /usr/local/go/pkg/bootstrap \
-	&& apk del .build-deps
-```
-
--	Created: Mon, 18 Jan 2016 18:37:59 GMT
--	Parent Layer: `1f29a668038fe05036e6c42d6ec4ff5a8c1c807e6fce0a85235a8b4fcb618559`
--	Docker Version: 1.8.3
--	Virtual Size: 219.8 MB (219763011 bytes)
--	v2 Blob: `sha256:bf6171382f0f5a170e514b342a2da39a2165a6cfba04e8314a291da0dac779b1`
--	v2 Content-Length: 56.3 MB (56343690 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 20:24:10 GMT
-
-#### `95a07dc494d4c631454c4fb51741d76da1c0a0bc62c746101c03b9fa91be8add`
-
-```dockerfile
-ENV GOPATH=/go
-```
-
--	Created: Mon, 18 Jan 2016 18:38:01 GMT
--	Parent Layer: `d1fd742b180af3bc48ce204bf35876d12d0de722e62b71d14c9a20ad0e19079c`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `a658a371b0c5038efa094df735e90449805831558fd9471a7a87bda137eb82c3`
-
-```dockerfile
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-```
-
--	Created: Mon, 18 Jan 2016 18:38:02 GMT
--	Parent Layer: `95a07dc494d4c631454c4fb51741d76da1c0a0bc62c746101c03b9fa91be8add`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-#### `7f8a15308b41390169ac697f538a51f55501c8a26f96d4bf1e395028ea0a2bcf`
-
-```dockerfile
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-```
-
--	Created: Mon, 18 Jan 2016 18:38:03 GMT
--	Parent Layer: `a658a371b0c5038efa094df735e90449805831558fd9471a7a87bda137eb82c3`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:108efa53cdaaab29bad39c1a68b9522ca3aa3b320674c64c8cd04fed0f05d679`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Mon, 18 Jan 2016 20:23:31 GMT
-
-#### `ff3e7e8ec9cea673d973dcf88c147148795620ee0cbf68d8f29c6bd4f14ca7e7`
-
-```dockerfile
-WORKDIR /go
-```
-
--	Created: Mon, 18 Jan 2016 18:38:04 GMT
--	Parent Layer: `7f8a15308b41390169ac697f538a51f55501c8a26f96d4bf1e395028ea0a2bcf`
--	Docker Version: 1.8.3
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
-
-## `golang:1.6rc2`
-
-```console
-$ docker pull library/golang@sha256:acd23fa192913ba8f49701ffb04f2f6a104affd480ff4b72457de0da52a3e15d
-```
-
--	Total Virtual Size: 743.7 MB (743734165 bytes)
--	Total v2 Content-Length: 254.0 MB (254036859 bytes)
+-	Total Virtual Size: 744.0 MB (743991869 bytes)
+-	Total v2 Content-Length: 254.1 MB (254098147 bytes)
 
 ### Layers (14)
 
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
 
 ```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
 
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6291,15 +1871,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
 
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6312,15 +1891,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
 
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6331,57 +1909,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
 
-#### `ee60a5011912f578491055d7a2415e072b991db1c781267cbd383b4be648f8ff`
+#### `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
 
 ```dockerfile
-ENV GOLANG_VERSION=1.6rc2
+ENV GOLANG_VERSION=1.6
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:58 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+-	Created: Thu, 18 Feb 2016 00:18:34 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cebc1fea32532da2ea9359efb311ec50769f47efcd197b66ab27a4516d08f527`
+#### `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6rc2.linux-amd64.tar.gz
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:58 GMT
--	Parent Layer: `ee60a5011912f578491055d7a2415e072b991db1c781267cbd383b4be648f8ff`
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f5c613569d6284b2d159fe08820733c44b616368269e4a64800993ac5d7b1c60`
+#### `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=9c19fa0fe32ee9bff79123d47147a5fd15fec451806bf5644a01173a86a8a4b9
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:59 GMT
--	Parent Layer: `cebc1fea32532da2ea9359efb311ec50769f47efcd197b66ab27a4516d08f527`
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b9ec46e173f1535e497e64743af6cdfb00c819a6f4754d4baa980f1946a9c183`
+#### `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -6390,123 +1964,115 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:04 GMT
--	Parent Layer: `f5c613569d6284b2d159fe08820733c44b616368269e4a64800993ac5d7b1c60`
+-	Created: Thu, 18 Feb 2016 00:18:42 GMT
+-	Parent Layer: `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
 -	Docker Version: 1.9.1
--	Virtual Size: 317.8 MB (317756194 bytes)
--	v2 Blob: `sha256:5c24b37f1177a4792ceecd6005cfd0d71d25f6876825175b31d6906dac044bc1`
--	v2 Content-Length: 84.8 MB (84768715 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:11:27 GMT
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:3c0458acec93933bf3c63130cb444caf11267cac6d57e648b35ae6d7f14cc1bf`
+-	v2 Content-Length: 84.8 MB (84814366 bytes)
 
-#### `644d82ca0a1ee86d4d0db597043ae30c5890401ab39a4133f5a94dcda3e2b401`
+#### `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:08 GMT
--	Parent Layer: `b9ec46e173f1535e497e64743af6cdfb00c819a6f4754d4baa980f1946a9c183`
+-	Created: Thu, 18 Feb 2016 00:19:01 GMT
+-	Parent Layer: `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `82bcbe3613a4a23563bcbe323a904d0b30b82a1f55f87784ad73d1f925cc939d`
+#### `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:08 GMT
--	Parent Layer: `644d82ca0a1ee86d4d0db597043ae30c5890401ab39a4133f5a94dcda3e2b401`
+-	Created: Thu, 18 Feb 2016 00:19:04 GMT
+-	Parent Layer: `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `104ef921b57ef12fffd1503d4c70705a79bc69b7fae928a38f614a49bbd6f3a0`
+#### `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:10 GMT
--	Parent Layer: `82bcbe3613a4a23563bcbe323a904d0b30b82a1f55f87784ad73d1f925cc939d`
+-	Created: Thu, 18 Feb 2016 00:19:06 GMT
+-	Parent Layer: `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:0abff63b02275240a6be37dca1aee9a01bb3ca5044c262e4e8c99337a9b2d5b8`
+-	v2 Blob: `sha256:312d8dc0bff10effa4756bd375ca311d7963a7f9bbc0cf4bfe923b81d4e67dd6`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:10:43 GMT
 
-#### `0b064b7278f972abbb40533adbf2357762a3dab3611d0321c0aa3289f84bbc0d`
+#### `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:10 GMT
--	Parent Layer: `104ef921b57ef12fffd1503d4c70705a79bc69b7fae928a38f614a49bbd6f3a0`
+-	Created: Thu, 18 Feb 2016 00:19:07 GMT
+-	Parent Layer: `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a94a437427894e4930646eb69e96a53fbf809211f0a933a19039645476e56a7f`
+#### `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:11 GMT
--	Parent Layer: `0b064b7278f972abbb40533adbf2357762a3dab3611d0321c0aa3289f84bbc0d`
+-	Created: Thu, 18 Feb 2016 00:19:08 GMT
+-	Parent Layer: `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:5226d9626ab05c8d60805825fd50b19fcc67710ff4af56889246cf815b392aaa`
--	v2 Content-Length: 1.4 KB (1351 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:10:38 GMT
+-	v2 Blob: `sha256:9d76f8609ef9657a45f0b47731c41dfd0c1b5b34e9d996945c0f3cdeb66359f5`
+-	v2 Content-Length: 1.4 KB (1350 bytes)
 
 ## `golang:1.6`
 
 ```console
-$ docker pull library/golang@sha256:e2be3808397415db7523c0d525f2dd6301ce70bd6d03b3cc9ba9600754261f79
+$ docker pull library/golang@sha256:bf9c6e96109d5b6db3789f5a2e93305481fb50485e34fac97eb28867aeaa8605
 ```
 
--	Total Virtual Size: 743.7 MB (743734165 bytes)
--	Total v2 Content-Length: 254.0 MB (254036859 bytes)
+-	Total Virtual Size: 744.0 MB (743991869 bytes)
+-	Total v2 Content-Length: 254.1 MB (254098147 bytes)
 
 ### Layers (14)
 
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
 
 ```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
 
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6516,15 +2082,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
 
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6537,15 +2102,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
 
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6556,57 +2120,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
 
-#### `ee60a5011912f578491055d7a2415e072b991db1c781267cbd383b4be648f8ff`
+#### `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
 
 ```dockerfile
-ENV GOLANG_VERSION=1.6rc2
+ENV GOLANG_VERSION=1.6
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:58 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+-	Created: Thu, 18 Feb 2016 00:18:34 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cebc1fea32532da2ea9359efb311ec50769f47efcd197b66ab27a4516d08f527`
+#### `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6rc2.linux-amd64.tar.gz
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:58 GMT
--	Parent Layer: `ee60a5011912f578491055d7a2415e072b991db1c781267cbd383b4be648f8ff`
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f5c613569d6284b2d159fe08820733c44b616368269e4a64800993ac5d7b1c60`
+#### `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=9c19fa0fe32ee9bff79123d47147a5fd15fec451806bf5644a01173a86a8a4b9
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:59 GMT
--	Parent Layer: `cebc1fea32532da2ea9359efb311ec50769f47efcd197b66ab27a4516d08f527`
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b9ec46e173f1535e497e64743af6cdfb00c819a6f4754d4baa980f1946a9c183`
+#### `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -6615,123 +2175,537 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:04 GMT
--	Parent Layer: `f5c613569d6284b2d159fe08820733c44b616368269e4a64800993ac5d7b1c60`
+-	Created: Thu, 18 Feb 2016 00:18:42 GMT
+-	Parent Layer: `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
 -	Docker Version: 1.9.1
--	Virtual Size: 317.8 MB (317756194 bytes)
--	v2 Blob: `sha256:5c24b37f1177a4792ceecd6005cfd0d71d25f6876825175b31d6906dac044bc1`
--	v2 Content-Length: 84.8 MB (84768715 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:11:27 GMT
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:3c0458acec93933bf3c63130cb444caf11267cac6d57e648b35ae6d7f14cc1bf`
+-	v2 Content-Length: 84.8 MB (84814366 bytes)
 
-#### `644d82ca0a1ee86d4d0db597043ae30c5890401ab39a4133f5a94dcda3e2b401`
+#### `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:08 GMT
--	Parent Layer: `b9ec46e173f1535e497e64743af6cdfb00c819a6f4754d4baa980f1946a9c183`
+-	Created: Thu, 18 Feb 2016 00:19:01 GMT
+-	Parent Layer: `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `82bcbe3613a4a23563bcbe323a904d0b30b82a1f55f87784ad73d1f925cc939d`
+#### `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:08 GMT
--	Parent Layer: `644d82ca0a1ee86d4d0db597043ae30c5890401ab39a4133f5a94dcda3e2b401`
+-	Created: Thu, 18 Feb 2016 00:19:04 GMT
+-	Parent Layer: `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `104ef921b57ef12fffd1503d4c70705a79bc69b7fae928a38f614a49bbd6f3a0`
+#### `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:10 GMT
--	Parent Layer: `82bcbe3613a4a23563bcbe323a904d0b30b82a1f55f87784ad73d1f925cc939d`
+-	Created: Thu, 18 Feb 2016 00:19:06 GMT
+-	Parent Layer: `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:0abff63b02275240a6be37dca1aee9a01bb3ca5044c262e4e8c99337a9b2d5b8`
+-	v2 Blob: `sha256:312d8dc0bff10effa4756bd375ca311d7963a7f9bbc0cf4bfe923b81d4e67dd6`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:10:43 GMT
 
-#### `0b064b7278f972abbb40533adbf2357762a3dab3611d0321c0aa3289f84bbc0d`
+#### `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:10 GMT
--	Parent Layer: `104ef921b57ef12fffd1503d4c70705a79bc69b7fae928a38f614a49bbd6f3a0`
+-	Created: Thu, 18 Feb 2016 00:19:07 GMT
+-	Parent Layer: `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a94a437427894e4930646eb69e96a53fbf809211f0a933a19039645476e56a7f`
+#### `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:11 GMT
--	Parent Layer: `0b064b7278f972abbb40533adbf2357762a3dab3611d0321c0aa3289f84bbc0d`
+-	Created: Thu, 18 Feb 2016 00:19:08 GMT
+-	Parent Layer: `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:5226d9626ab05c8d60805825fd50b19fcc67710ff4af56889246cf815b392aaa`
--	v2 Content-Length: 1.4 KB (1351 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:10:38 GMT
+-	v2 Blob: `sha256:9d76f8609ef9657a45f0b47731c41dfd0c1b5b34e9d996945c0f3cdeb66359f5`
+-	v2 Content-Length: 1.4 KB (1350 bytes)
 
-## `golang:1.6rc2-onbuild`
+## `golang:1`
 
 ```console
-$ docker pull library/golang@sha256:f45cb08368066361dc68298ea7c3ea35751c3bda948451ba3863913cae7e890f
+$ docker pull library/golang@sha256:62a46375efcec32615be0505f7246f51b31f1f2e493827a1815904197a50865c
 ```
 
--	Total Virtual Size: 743.7 MB (743734165 bytes)
--	Total v2 Content-Length: 254.0 MB (254037151 bytes)
+-	Total Virtual Size: 744.0 MB (743991869 bytes)
+-	Total v2 Content-Length: 254.1 MB (254098147 bytes)
+
+### Layers (14)
+
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+
+```dockerfile
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+```
+
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
+
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
+
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+				procps \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
+
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		g++ \
+		gcc \
+		libc6-dev \
+		make \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
+
+#### `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
+
+```dockerfile
+ENV GOLANG_VERSION=1.6
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:34 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
+
+```dockerfile
+RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
+	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
+	&& tar -C /usr/local -xzf golang.tar.gz \
+	&& rm golang.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:42 GMT
+-	Parent Layer: `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
+-	Docker Version: 1.9.1
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:3c0458acec93933bf3c63130cb444caf11267cac6d57e648b35ae6d7f14cc1bf`
+-	v2 Content-Length: 84.8 MB (84814366 bytes)
+
+#### `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
+
+```dockerfile
+ENV GOPATH=/go
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:01 GMT
+-	Parent Layer: `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
+
+```dockerfile
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:04 GMT
+-	Parent Layer: `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
+
+```dockerfile
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:06 GMT
+-	Parent Layer: `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:312d8dc0bff10effa4756bd375ca311d7963a7f9bbc0cf4bfe923b81d4e67dd6`
+-	v2 Content-Length: 122.0 B
+
+#### `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
+
+```dockerfile
+WORKDIR /go
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:07 GMT
+-	Parent Layer: `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
+
+```dockerfile
+COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:08 GMT
+-	Parent Layer: `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.5 KB (2481 bytes)
+-	v2 Blob: `sha256:9d76f8609ef9657a45f0b47731c41dfd0c1b5b34e9d996945c0f3cdeb66359f5`
+-	v2 Content-Length: 1.4 KB (1350 bytes)
+
+## `golang:latest`
+
+```console
+$ docker pull library/golang@sha256:0325944f1c19cacc2d039cc8933d7cd4ed4651466a0765a23a127c6866a660da
+```
+
+-	Total Virtual Size: 744.0 MB (743991869 bytes)
+-	Total v2 Content-Length: 254.1 MB (254098147 bytes)
+
+### Layers (14)
+
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+
+```dockerfile
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+```
+
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
+
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
+
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+				procps \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
+
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		g++ \
+		gcc \
+		libc6-dev \
+		make \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
+
+#### `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
+
+```dockerfile
+ENV GOLANG_VERSION=1.6
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:34 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
+
+```dockerfile
+RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
+	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
+	&& tar -C /usr/local -xzf golang.tar.gz \
+	&& rm golang.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:42 GMT
+-	Parent Layer: `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
+-	Docker Version: 1.9.1
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:3c0458acec93933bf3c63130cb444caf11267cac6d57e648b35ae6d7f14cc1bf`
+-	v2 Content-Length: 84.8 MB (84814366 bytes)
+
+#### `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
+
+```dockerfile
+ENV GOPATH=/go
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:01 GMT
+-	Parent Layer: `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
+
+```dockerfile
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:04 GMT
+-	Parent Layer: `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
+
+```dockerfile
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:06 GMT
+-	Parent Layer: `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:312d8dc0bff10effa4756bd375ca311d7963a7f9bbc0cf4bfe923b81d4e67dd6`
+-	v2 Content-Length: 122.0 B
+
+#### `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
+
+```dockerfile
+WORKDIR /go
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:07 GMT
+-	Parent Layer: `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
+
+```dockerfile
+COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:08 GMT
+-	Parent Layer: `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.5 KB (2481 bytes)
+-	v2 Blob: `sha256:9d76f8609ef9657a45f0b47731c41dfd0c1b5b34e9d996945c0f3cdeb66359f5`
+-	v2 Content-Length: 1.4 KB (1350 bytes)
+
+## `golang:1.6.0-onbuild`
+
+```console
+$ docker pull library/golang@sha256:e2dd64fab2bf4ab295375323210b2c6c6fc5d020443c086ef49015cfcf30dfe4
+```
+
+-	Total Virtual Size: 744.0 MB (743991869 bytes)
+-	Total v2 Content-Length: 254.1 MB (254098438 bytes)
 
 ### Layers (20)
 
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
 
 ```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
 
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6741,15 +2715,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
 
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6762,15 +2735,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
 
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -6781,57 +2753,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
 
-#### `ee60a5011912f578491055d7a2415e072b991db1c781267cbd383b4be648f8ff`
+#### `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
 
 ```dockerfile
-ENV GOLANG_VERSION=1.6rc2
+ENV GOLANG_VERSION=1.6
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:58 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+-	Created: Thu, 18 Feb 2016 00:18:34 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cebc1fea32532da2ea9359efb311ec50769f47efcd197b66ab27a4516d08f527`
+#### `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6rc2.linux-amd64.tar.gz
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:58 GMT
--	Parent Layer: `ee60a5011912f578491055d7a2415e072b991db1c781267cbd383b4be648f8ff`
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f5c613569d6284b2d159fe08820733c44b616368269e4a64800993ac5d7b1c60`
+#### `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=9c19fa0fe32ee9bff79123d47147a5fd15fec451806bf5644a01173a86a8a4b9
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:59 GMT
--	Parent Layer: `cebc1fea32532da2ea9359efb311ec50769f47efcd197b66ab27a4516d08f527`
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b9ec46e173f1535e497e64743af6cdfb00c819a6f4754d4baa980f1946a9c183`
+#### `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -6840,207 +2808,193 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:04 GMT
--	Parent Layer: `f5c613569d6284b2d159fe08820733c44b616368269e4a64800993ac5d7b1c60`
+-	Created: Thu, 18 Feb 2016 00:18:42 GMT
+-	Parent Layer: `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
 -	Docker Version: 1.9.1
--	Virtual Size: 317.8 MB (317756194 bytes)
--	v2 Blob: `sha256:5c24b37f1177a4792ceecd6005cfd0d71d25f6876825175b31d6906dac044bc1`
--	v2 Content-Length: 84.8 MB (84768715 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:11:27 GMT
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:3c0458acec93933bf3c63130cb444caf11267cac6d57e648b35ae6d7f14cc1bf`
+-	v2 Content-Length: 84.8 MB (84814366 bytes)
 
-#### `644d82ca0a1ee86d4d0db597043ae30c5890401ab39a4133f5a94dcda3e2b401`
+#### `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:08 GMT
--	Parent Layer: `b9ec46e173f1535e497e64743af6cdfb00c819a6f4754d4baa980f1946a9c183`
+-	Created: Thu, 18 Feb 2016 00:19:01 GMT
+-	Parent Layer: `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `82bcbe3613a4a23563bcbe323a904d0b30b82a1f55f87784ad73d1f925cc939d`
+#### `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:08 GMT
--	Parent Layer: `644d82ca0a1ee86d4d0db597043ae30c5890401ab39a4133f5a94dcda3e2b401`
+-	Created: Thu, 18 Feb 2016 00:19:04 GMT
+-	Parent Layer: `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `104ef921b57ef12fffd1503d4c70705a79bc69b7fae928a38f614a49bbd6f3a0`
+#### `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:10 GMT
--	Parent Layer: `82bcbe3613a4a23563bcbe323a904d0b30b82a1f55f87784ad73d1f925cc939d`
+-	Created: Thu, 18 Feb 2016 00:19:06 GMT
+-	Parent Layer: `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:0abff63b02275240a6be37dca1aee9a01bb3ca5044c262e4e8c99337a9b2d5b8`
+-	v2 Blob: `sha256:312d8dc0bff10effa4756bd375ca311d7963a7f9bbc0cf4bfe923b81d4e67dd6`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:10:43 GMT
 
-#### `0b064b7278f972abbb40533adbf2357762a3dab3611d0321c0aa3289f84bbc0d`
+#### `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:10 GMT
--	Parent Layer: `104ef921b57ef12fffd1503d4c70705a79bc69b7fae928a38f614a49bbd6f3a0`
+-	Created: Thu, 18 Feb 2016 00:19:07 GMT
+-	Parent Layer: `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a94a437427894e4930646eb69e96a53fbf809211f0a933a19039645476e56a7f`
+#### `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:11 GMT
--	Parent Layer: `0b064b7278f972abbb40533adbf2357762a3dab3611d0321c0aa3289f84bbc0d`
+-	Created: Thu, 18 Feb 2016 00:19:08 GMT
+-	Parent Layer: `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:5226d9626ab05c8d60805825fd50b19fcc67710ff4af56889246cf815b392aaa`
--	v2 Content-Length: 1.4 KB (1351 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:10:38 GMT
+-	v2 Blob: `sha256:9d76f8609ef9657a45f0b47731c41dfd0c1b5b34e9d996945c0f3cdeb66359f5`
+-	v2 Content-Length: 1.4 KB (1350 bytes)
 
-#### `21aa773b05eaa460245122ec5aba8803d1aafdf31f9c6df20089fe63d5d27982`
+#### `7bcf7eda5e8492647932541fe4f6e2a232d13155b951b0eeaf2529d0da484ed1`
 
 ```dockerfile
 RUN mkdir -p /go/src/app
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:35 GMT
--	Parent Layer: `a94a437427894e4930646eb69e96a53fbf809211f0a933a19039645476e56a7f`
+-	Created: Thu, 18 Feb 2016 00:21:32 GMT
+-	Parent Layer: `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:8df03c9df32f3962e71896d91c5e5b850dd085672627d155548405b22488515e`
--	v2 Content-Length: 132.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:12:01 GMT
+-	v2 Blob: `sha256:839a46bccafd153311e9e24601fe21e7ff37674bc4c64ba72ecb1b35bb47602c`
+-	v2 Content-Length: 131.0 B
 
-#### `755919dc27d376eef11a8a2b9c38fe6239f68f048f9e01675b3c673538d38c72`
+#### `10f71087013830f46f87c3233bec856de93d67eec8a63b5a29174b753c3f76f5`
 
 ```dockerfile
 WORKDIR /go/src/app
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:36 GMT
--	Parent Layer: `21aa773b05eaa460245122ec5aba8803d1aafdf31f9c6df20089fe63d5d27982`
+-	Created: Thu, 18 Feb 2016 00:21:32 GMT
+-	Parent Layer: `7bcf7eda5e8492647932541fe4f6e2a232d13155b951b0eeaf2529d0da484ed1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `89265b8068682cc12cd79bde7ccfdada23c7449c3d2066c8d35ed0d81c24792d`
+#### `929b3fd3dbc89e198511b57027f172f6ce8c27e9307420646d5fd381ed7775db`
 
 ```dockerfile
 CMD ["go-wrapper" "run"]
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:37 GMT
--	Parent Layer: `755919dc27d376eef11a8a2b9c38fe6239f68f048f9e01675b3c673538d38c72`
+-	Created: Thu, 18 Feb 2016 00:21:33 GMT
+-	Parent Layer: `10f71087013830f46f87c3233bec856de93d67eec8a63b5a29174b753c3f76f5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `29451f34dad733d54cf55458d4dcaf1f6e9270b75e095171bb74eca9cc9266fb`
+#### `3830f87760ae501fc686ccdb1d74b4064b4f6486ad6cf2644fdab639d69da6be`
 
 ```dockerfile
 ONBUILD COPY . /go/src/app
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:37 GMT
--	Parent Layer: `89265b8068682cc12cd79bde7ccfdada23c7449c3d2066c8d35ed0d81c24792d`
+-	Created: Thu, 18 Feb 2016 00:21:34 GMT
+-	Parent Layer: `929b3fd3dbc89e198511b57027f172f6ce8c27e9307420646d5fd381ed7775db`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bfa1a8a2b9dfe8a0acc047e4ea9cae46f8eb88966dce2bccc732fecdcbb08c48`
+#### `b4ddb0524a00a89359c6e98cae64e8f9f67faec991de5ac7e96dc5342fa63dc6`
 
 ```dockerfile
 ONBUILD RUN go-wrapper download
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:38 GMT
--	Parent Layer: `29451f34dad733d54cf55458d4dcaf1f6e9270b75e095171bb74eca9cc9266fb`
+-	Created: Thu, 18 Feb 2016 00:21:35 GMT
+-	Parent Layer: `3830f87760ae501fc686ccdb1d74b4064b4f6486ad6cf2644fdab639d69da6be`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0c5ab1f8235444390dd1fbb055b1c77207bea0369dca90d59d7e6d2d8b7aefdf`
+#### `6452d640052c412201eb7b68bd83f0bd6e3d3adf6b2de7a14e100e73e83754ca`
 
 ```dockerfile
 ONBUILD RUN go-wrapper install
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:38 GMT
--	Parent Layer: `bfa1a8a2b9dfe8a0acc047e4ea9cae46f8eb88966dce2bccc732fecdcbb08c48`
+-	Created: Thu, 18 Feb 2016 00:21:36 GMT
+-	Parent Layer: `b4ddb0524a00a89359c6e98cae64e8f9f67faec991de5ac7e96dc5342fa63dc6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.6-onbuild`
 
 ```console
-$ docker pull library/golang@sha256:b3136b2ed121251a966fb595014b04e6b6b4f9c22ea50467358d8fc4919c4733
+$ docker pull library/golang@sha256:f90e195bdac2dc31b601586a658e7ba55234e562035bab2ba4f8e51394d87d48
 ```
 
--	Total Virtual Size: 743.7 MB (743734165 bytes)
--	Total v2 Content-Length: 254.0 MB (254037151 bytes)
+-	Total Virtual Size: 744.0 MB (743991869 bytes)
+-	Total v2 Content-Length: 254.1 MB (254098438 bytes)
 
 ### Layers (20)
 
-#### `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
 
 ```dockerfile
-ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:35 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 125.1 MB (125082947 bytes)
--	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
--	v2 Content-Length: 51.4 MB (51358904 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
 
-#### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:24:37 GMT
--	Parent Layer: `77e39ee8211729e81d1f83f0c64fdef97979b930a97ddc8194b8ea46d49f7b50`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7050,15 +3004,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:28:10 GMT
--	Parent Layer: `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
--	Docker Version: 1.8.3
--	Virtual Size: 44.3 MB (44300304 bytes)
--	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
--	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
 
-#### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7071,15 +3024,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:29:12 GMT
--	Parent Layer: `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
--	Docker Version: 1.8.3
--	Virtual Size: 122.6 MB (122576525 bytes)
--	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
--	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
 
-#### `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7090,57 +3042,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:03:58 GMT
--	Parent Layer: `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
--	Docker Version: 1.8.3
--	Virtual Size: 134.0 MB (134015714 bytes)
--	v2 Blob: `sha256:2e4b04ba35cee6216156a6ee45a5c8f73988bbd1a6f55c75fdb5afce31f548e4`
--	v2 Content-Length: 56.9 MB (56886984 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:06:01 GMT
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
 
-#### `ee60a5011912f578491055d7a2415e072b991db1c781267cbd383b4be648f8ff`
+#### `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
 
 ```dockerfile
-ENV GOLANG_VERSION=1.6rc2
+ENV GOLANG_VERSION=1.6
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:58 GMT
--	Parent Layer: `f83d11c41a93a5e8f47b8432d805a44f089e137578327fd5ff165fdcc07a8e5c`
+-	Created: Thu, 18 Feb 2016 00:18:34 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `cebc1fea32532da2ea9359efb311ec50769f47efcd197b66ab27a4516d08f527`
+#### `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6rc2.linux-amd64.tar.gz
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:58 GMT
--	Parent Layer: `ee60a5011912f578491055d7a2415e072b991db1c781267cbd383b4be648f8ff`
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `f5c613569d6284b2d159fe08820733c44b616368269e4a64800993ac5d7b1c60`
+#### `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=9c19fa0fe32ee9bff79123d47147a5fd15fec451806bf5644a01173a86a8a4b9
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
 ```
 
--	Created: Fri, 05 Feb 2016 00:26:59 GMT
--	Parent Layer: `cebc1fea32532da2ea9359efb311ec50769f47efcd197b66ab27a4516d08f527`
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b9ec46e173f1535e497e64743af6cdfb00c819a6f4754d4baa980f1946a9c183`
+#### `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -7149,207 +3097,193 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:04 GMT
--	Parent Layer: `f5c613569d6284b2d159fe08820733c44b616368269e4a64800993ac5d7b1c60`
+-	Created: Thu, 18 Feb 2016 00:18:42 GMT
+-	Parent Layer: `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
 -	Docker Version: 1.9.1
--	Virtual Size: 317.8 MB (317756194 bytes)
--	v2 Blob: `sha256:5c24b37f1177a4792ceecd6005cfd0d71d25f6876825175b31d6906dac044bc1`
--	v2 Content-Length: 84.8 MB (84768715 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:11:27 GMT
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:3c0458acec93933bf3c63130cb444caf11267cac6d57e648b35ae6d7f14cc1bf`
+-	v2 Content-Length: 84.8 MB (84814366 bytes)
 
-#### `644d82ca0a1ee86d4d0db597043ae30c5890401ab39a4133f5a94dcda3e2b401`
+#### `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:08 GMT
--	Parent Layer: `b9ec46e173f1535e497e64743af6cdfb00c819a6f4754d4baa980f1946a9c183`
+-	Created: Thu, 18 Feb 2016 00:19:01 GMT
+-	Parent Layer: `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `82bcbe3613a4a23563bcbe323a904d0b30b82a1f55f87784ad73d1f925cc939d`
+#### `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:08 GMT
--	Parent Layer: `644d82ca0a1ee86d4d0db597043ae30c5890401ab39a4133f5a94dcda3e2b401`
+-	Created: Thu, 18 Feb 2016 00:19:04 GMT
+-	Parent Layer: `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `104ef921b57ef12fffd1503d4c70705a79bc69b7fae928a38f614a49bbd6f3a0`
+#### `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:10 GMT
--	Parent Layer: `82bcbe3613a4a23563bcbe323a904d0b30b82a1f55f87784ad73d1f925cc939d`
+-	Created: Thu, 18 Feb 2016 00:19:06 GMT
+-	Parent Layer: `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:0abff63b02275240a6be37dca1aee9a01bb3ca5044c262e4e8c99337a9b2d5b8`
+-	v2 Blob: `sha256:312d8dc0bff10effa4756bd375ca311d7963a7f9bbc0cf4bfe923b81d4e67dd6`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:10:43 GMT
 
-#### `0b064b7278f972abbb40533adbf2357762a3dab3611d0321c0aa3289f84bbc0d`
+#### `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:10 GMT
--	Parent Layer: `104ef921b57ef12fffd1503d4c70705a79bc69b7fae928a38f614a49bbd6f3a0`
+-	Created: Thu, 18 Feb 2016 00:19:07 GMT
+-	Parent Layer: `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a94a437427894e4930646eb69e96a53fbf809211f0a933a19039645476e56a7f`
+#### `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:11 GMT
--	Parent Layer: `0b064b7278f972abbb40533adbf2357762a3dab3611d0321c0aa3289f84bbc0d`
+-	Created: Thu, 18 Feb 2016 00:19:08 GMT
+-	Parent Layer: `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:5226d9626ab05c8d60805825fd50b19fcc67710ff4af56889246cf815b392aaa`
--	v2 Content-Length: 1.4 KB (1351 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:10:38 GMT
+-	v2 Blob: `sha256:9d76f8609ef9657a45f0b47731c41dfd0c1b5b34e9d996945c0f3cdeb66359f5`
+-	v2 Content-Length: 1.4 KB (1350 bytes)
 
-#### `21aa773b05eaa460245122ec5aba8803d1aafdf31f9c6df20089fe63d5d27982`
+#### `7bcf7eda5e8492647932541fe4f6e2a232d13155b951b0eeaf2529d0da484ed1`
 
 ```dockerfile
 RUN mkdir -p /go/src/app
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:35 GMT
--	Parent Layer: `a94a437427894e4930646eb69e96a53fbf809211f0a933a19039645476e56a7f`
+-	Created: Thu, 18 Feb 2016 00:21:32 GMT
+-	Parent Layer: `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:8df03c9df32f3962e71896d91c5e5b850dd085672627d155548405b22488515e`
--	v2 Content-Length: 132.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:12:01 GMT
+-	v2 Blob: `sha256:839a46bccafd153311e9e24601fe21e7ff37674bc4c64ba72ecb1b35bb47602c`
+-	v2 Content-Length: 131.0 B
 
-#### `755919dc27d376eef11a8a2b9c38fe6239f68f048f9e01675b3c673538d38c72`
+#### `10f71087013830f46f87c3233bec856de93d67eec8a63b5a29174b753c3f76f5`
 
 ```dockerfile
 WORKDIR /go/src/app
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:36 GMT
--	Parent Layer: `21aa773b05eaa460245122ec5aba8803d1aafdf31f9c6df20089fe63d5d27982`
+-	Created: Thu, 18 Feb 2016 00:21:32 GMT
+-	Parent Layer: `7bcf7eda5e8492647932541fe4f6e2a232d13155b951b0eeaf2529d0da484ed1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `89265b8068682cc12cd79bde7ccfdada23c7449c3d2066c8d35ed0d81c24792d`
+#### `929b3fd3dbc89e198511b57027f172f6ce8c27e9307420646d5fd381ed7775db`
 
 ```dockerfile
 CMD ["go-wrapper" "run"]
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:37 GMT
--	Parent Layer: `755919dc27d376eef11a8a2b9c38fe6239f68f048f9e01675b3c673538d38c72`
+-	Created: Thu, 18 Feb 2016 00:21:33 GMT
+-	Parent Layer: `10f71087013830f46f87c3233bec856de93d67eec8a63b5a29174b753c3f76f5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `29451f34dad733d54cf55458d4dcaf1f6e9270b75e095171bb74eca9cc9266fb`
+#### `3830f87760ae501fc686ccdb1d74b4064b4f6486ad6cf2644fdab639d69da6be`
 
 ```dockerfile
 ONBUILD COPY . /go/src/app
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:37 GMT
--	Parent Layer: `89265b8068682cc12cd79bde7ccfdada23c7449c3d2066c8d35ed0d81c24792d`
+-	Created: Thu, 18 Feb 2016 00:21:34 GMT
+-	Parent Layer: `929b3fd3dbc89e198511b57027f172f6ce8c27e9307420646d5fd381ed7775db`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bfa1a8a2b9dfe8a0acc047e4ea9cae46f8eb88966dce2bccc732fecdcbb08c48`
+#### `b4ddb0524a00a89359c6e98cae64e8f9f67faec991de5ac7e96dc5342fa63dc6`
 
 ```dockerfile
 ONBUILD RUN go-wrapper download
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:38 GMT
--	Parent Layer: `29451f34dad733d54cf55458d4dcaf1f6e9270b75e095171bb74eca9cc9266fb`
+-	Created: Thu, 18 Feb 2016 00:21:35 GMT
+-	Parent Layer: `3830f87760ae501fc686ccdb1d74b4064b4f6486ad6cf2644fdab639d69da6be`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0c5ab1f8235444390dd1fbb055b1c77207bea0369dca90d59d7e6d2d8b7aefdf`
+#### `6452d640052c412201eb7b68bd83f0bd6e3d3adf6b2de7a14e100e73e83754ca`
 
 ```dockerfile
 ONBUILD RUN go-wrapper install
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:38 GMT
--	Parent Layer: `bfa1a8a2b9dfe8a0acc047e4ea9cae46f8eb88966dce2bccc732fecdcbb08c48`
+-	Created: Thu, 18 Feb 2016 00:21:36 GMT
+-	Parent Layer: `b4ddb0524a00a89359c6e98cae64e8f9f67faec991de5ac7e96dc5342fa63dc6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-## `golang:1.6rc2-wheezy`
+## `golang:1-onbuild`
 
 ```console
-$ docker pull library/golang@sha256:e781426e6c62f60d216a04895fe9d64f05e476bf2a253a6392f80b4851f7c93d
+$ docker pull library/golang@sha256:6519b8c97e438b65e3be8acabb18a8bdf528c871234a852dc83b5e013591e18d
 ```
 
--	Total Virtual Size: 617.7 MB (617666691 bytes)
--	Total v2 Content-Length: 200.0 MB (199981244 bytes)
+-	Total Virtual Size: 744.0 MB (743991869 bytes)
+-	Total v2 Content-Length: 254.1 MB (254098438 bytes)
 
-### Layers (14)
+### Layers (20)
 
-#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
 
 ```dockerfile
-ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:26:48 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
--	v2 Content-Length: 37.2 MB (37184894 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
 
-#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:26:50 GMT
--	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7359,15 +3293,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:36:47 GMT
--	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
--	Docker Version: 1.8.3
--	Virtual Size: 14.2 MB (14185017 bytes)
--	v2 Blob: `sha256:454edf61cfa65c7f2f412ceb1f54d055f5061fbd6e197853f844dbfb1570cdad`
--	v2 Content-Length: 6.7 MB (6728657 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:32:10 GMT
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
 
-#### `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7380,15 +3313,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:37:15 GMT
--	Parent Layer: `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
--	Docker Version: 1.8.3
--	Virtual Size: 110.0 MB (110024273 bytes)
--	v2 Blob: `sha256:6df3bbe21be65da47a2ede366521b6a04aa8afa4974ce781981d0b2bcff9b3cb`
--	v2 Content-Length: 37.4 MB (37365406 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:33:30 GMT
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
 
-#### `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7399,57 +3331,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:13:45 GMT
--	Parent Layer: `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
--	Docker Version: 1.8.3
--	Virtual Size: 90.8 MB (90804284 bytes)
--	v2 Blob: `sha256:ed2b7b9b470f804eba2b4b49132be6d98e5a0cab327f31ecf39297862d9aec27`
--	v2 Content-Length: 33.9 MB (33931904 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:24:20 GMT
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
 
-#### `f7e059d42411437ae68ae3ef9baf29bf6f708bfa00efe88ed1f9aad69d95cf9c`
+#### `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
 
 ```dockerfile
-ENV GOLANG_VERSION=1.6rc2
+ENV GOLANG_VERSION=1.6
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:57 GMT
--	Parent Layer: `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
+-	Created: Thu, 18 Feb 2016 00:18:34 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `32fa7a21e188b67aeb0c0e995f548364d1754f1efd047b9d80dd1aa6adfdc273`
+#### `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6rc2.linux-amd64.tar.gz
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:57 GMT
--	Parent Layer: `f7e059d42411437ae68ae3ef9baf29bf6f708bfa00efe88ed1f9aad69d95cf9c`
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `200bdaec8530e8731d0dd6f2c735a1fb9bad2f73380b1dff6d5ccb09f4b33959`
+#### `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=9c19fa0fe32ee9bff79123d47147a5fd15fec451806bf5644a01173a86a8a4b9
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:58 GMT
--	Parent Layer: `32fa7a21e188b67aeb0c0e995f548364d1754f1efd047b9d80dd1aa6adfdc273`
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `92fe192493de71d0dc55c3ba84dfd78ed620c8fbc680ef440291cf1b03fa1e0f`
+#### `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -7458,123 +3386,693 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:06 GMT
--	Parent Layer: `200bdaec8530e8731d0dd6f2c735a1fb9bad2f73380b1dff6d5ccb09f4b33959`
+-	Created: Thu, 18 Feb 2016 00:18:42 GMT
+-	Parent Layer: `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
 -	Docker Version: 1.9.1
--	Virtual Size: 317.8 MB (317756194 bytes)
--	v2 Blob: `sha256:07e6c297430b7761131d25c5cb2add20401a08ef554ad4d2a2cc1f76121d319b`
--	v2 Content-Length: 84.8 MB (84768684 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:13:17 GMT
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:3c0458acec93933bf3c63130cb444caf11267cac6d57e648b35ae6d7f14cc1bf`
+-	v2 Content-Length: 84.8 MB (84814366 bytes)
 
-#### `f0259a3f5055f85fc44dd37cf6f5e4bc84959c0bb41f635304dbd9f57016f7af`
+#### `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:09 GMT
--	Parent Layer: `92fe192493de71d0dc55c3ba84dfd78ed620c8fbc680ef440291cf1b03fa1e0f`
+-	Created: Thu, 18 Feb 2016 00:19:01 GMT
+-	Parent Layer: `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a52594bf205e4712a0999f863ecb6a582d659597077121a8a047327edecee2dd`
+#### `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:10 GMT
--	Parent Layer: `f0259a3f5055f85fc44dd37cf6f5e4bc84959c0bb41f635304dbd9f57016f7af`
+-	Created: Thu, 18 Feb 2016 00:19:04 GMT
+-	Parent Layer: `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `75fea453bdcb7088859fcf210e496b40dd51c806ffae5892e9802d80b897931b`
+#### `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:11 GMT
--	Parent Layer: `a52594bf205e4712a0999f863ecb6a582d659597077121a8a047327edecee2dd`
+-	Created: Thu, 18 Feb 2016 00:19:06 GMT
+-	Parent Layer: `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a5958cec926c2190d2f74adad8b497c1b97c38311d8fe03653c1ac1dd02f15d9`
+-	v2 Blob: `sha256:312d8dc0bff10effa4756bd375ca311d7963a7f9bbc0cf4bfe923b81d4e67dd6`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:12:16 GMT
 
-#### `f7d2ec3d4530a8d107c5d5c0e81196fc1ae7b7f351d104bf16550c114a6e2e78`
+#### `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:12 GMT
--	Parent Layer: `75fea453bdcb7088859fcf210e496b40dd51c806ffae5892e9802d80b897931b`
+-	Created: Thu, 18 Feb 2016 00:19:07 GMT
+-	Parent Layer: `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `65cea8bd35253aa12c84cfb90824b11fe155472c4545105eaa5bf9248c38a7aa`
+#### `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:12 GMT
--	Parent Layer: `f7d2ec3d4530a8d107c5d5c0e81196fc1ae7b7f351d104bf16550c114a6e2e78`
+-	Created: Thu, 18 Feb 2016 00:19:08 GMT
+-	Parent Layer: `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:42fb67ba2537777c8e4f08929ae084d1941b01cfb990b0555597125d0cf34a2d`
--	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:12:12 GMT
+-	v2 Blob: `sha256:9d76f8609ef9657a45f0b47731c41dfd0c1b5b34e9d996945c0f3cdeb66359f5`
+-	v2 Content-Length: 1.4 KB (1350 bytes)
+
+#### `7bcf7eda5e8492647932541fe4f6e2a232d13155b951b0eeaf2529d0da484ed1`
+
+```dockerfile
+RUN mkdir -p /go/src/app
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:32 GMT
+-	Parent Layer: `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:839a46bccafd153311e9e24601fe21e7ff37674bc4c64ba72ecb1b35bb47602c`
+-	v2 Content-Length: 131.0 B
+
+#### `10f71087013830f46f87c3233bec856de93d67eec8a63b5a29174b753c3f76f5`
+
+```dockerfile
+WORKDIR /go/src/app
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:32 GMT
+-	Parent Layer: `7bcf7eda5e8492647932541fe4f6e2a232d13155b951b0eeaf2529d0da484ed1`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `929b3fd3dbc89e198511b57027f172f6ce8c27e9307420646d5fd381ed7775db`
+
+```dockerfile
+CMD ["go-wrapper" "run"]
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:33 GMT
+-	Parent Layer: `10f71087013830f46f87c3233bec856de93d67eec8a63b5a29174b753c3f76f5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `3830f87760ae501fc686ccdb1d74b4064b4f6486ad6cf2644fdab639d69da6be`
+
+```dockerfile
+ONBUILD COPY . /go/src/app
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:34 GMT
+-	Parent Layer: `929b3fd3dbc89e198511b57027f172f6ce8c27e9307420646d5fd381ed7775db`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `b4ddb0524a00a89359c6e98cae64e8f9f67faec991de5ac7e96dc5342fa63dc6`
+
+```dockerfile
+ONBUILD RUN go-wrapper download
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:35 GMT
+-	Parent Layer: `3830f87760ae501fc686ccdb1d74b4064b4f6486ad6cf2644fdab639d69da6be`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `6452d640052c412201eb7b68bd83f0bd6e3d3adf6b2de7a14e100e73e83754ca`
+
+```dockerfile
+ONBUILD RUN go-wrapper install
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:36 GMT
+-	Parent Layer: `b4ddb0524a00a89359c6e98cae64e8f9f67faec991de5ac7e96dc5342fa63dc6`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+## `golang:onbuild`
+
+```console
+$ docker pull library/golang@sha256:bc4d76ebe193bd44ea1422ac4f880647d0a3e0a4ac590e55b7405648fb4349c5
+```
+
+-	Total Virtual Size: 744.0 MB (743991869 bytes)
+-	Total v2 Content-Length: 254.1 MB (254098438 bytes)
+
+### Layers (20)
+
+#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+
+```dockerfile
+ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+```
+
+-	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 125.1 MB (125109771 bytes)
+-	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
+-	v2 Content-Length: 51.4 MB (51366659 bytes)
+
+#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Tue, 16 Feb 2016 21:24:37 GMT
+-	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:38:42 GMT
+-	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Docker Version: 1.9.1
+-	Virtual Size: 44.3 MB (44310889 bytes)
+-	v2 Blob: `sha256:d9a49bc2b1b0cdba4093d4ef5d276883a81a3141f05bdb46eb8bacb5b5d94acf`
+-	v2 Content-Length: 18.5 MB (18532668 bytes)
+
+#### `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+				procps \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:39:39 GMT
+-	Parent Layer: `9b0523a037ca8f59f5826f92f1cd8ff78b3fadcc2378b26b2ec3a318e9a7a2bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 122.6 MB (122585576 bytes)
+-	v2 Blob: `sha256:b965864d2d455f06e4ad8165d12456219dcaeed2e49b0f13ada623aa00d9e822`
+-	v2 Content-Length: 42.5 MB (42494759 bytes)
+
+#### `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		g++ \
+		gcc \
+		libc6-dev \
+		make \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 17 Feb 2016 11:52:24 GMT
+-	Parent Layer: `8b3e1599852d7d55f26345755c98ac28762c51fdb24d80f9f2d1199395662b00`
+-	Docker Version: 1.9.1
+-	Virtual Size: 134.0 MB (134021474 bytes)
+-	v2 Blob: `sha256:bad3f2daf720952bee23d5dc4baf526bfaac8f0629de7db640058c3d8f632c3e`
+-	v2 Content-Length: 56.9 MB (56887999 bytes)
+
+#### `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
+
+```dockerfile
+ENV GOLANG_VERSION=1.6
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:34 GMT
+-	Parent Layer: `338e77ed3a326de630cde99b8cc1c8d9b6f24a6255e58e4962a6d9217f41bfb5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `eebbf01be3d01807f95d129f901eb4adc67e7477fb77d7aa4b5afe75d82f7702`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:35 GMT
+-	Parent Layer: `8d95ee58161edcac737617fe0fbd53f2417c24f7bfd21d367ec78fb39d10808f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
+
+```dockerfile
+RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
+	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
+	&& tar -C /usr/local -xzf golang.tar.gz \
+	&& rm golang.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:18:42 GMT
+-	Parent Layer: `5aca912b35f087194b3b685ca32d82fcac4bc74e022e72c67963fc6c739002e3`
+-	Docker Version: 1.9.1
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:3c0458acec93933bf3c63130cb444caf11267cac6d57e648b35ae6d7f14cc1bf`
+-	v2 Content-Length: 84.8 MB (84814366 bytes)
+
+#### `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
+
+```dockerfile
+ENV GOPATH=/go
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:01 GMT
+-	Parent Layer: `09a5baea69e9c781d64df5366c36492d53d507048035abd68632264dc23a1edb`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
+
+```dockerfile
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:04 GMT
+-	Parent Layer: `f9767cae14f372c98900f15bb07cb40b8e1a6d1507912489e1342db499313d32`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
+
+```dockerfile
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:06 GMT
+-	Parent Layer: `98afc8f553d53624200550d0fdf4ad54f0452ab45482ab0e295fdc540daa87bc`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:312d8dc0bff10effa4756bd375ca311d7963a7f9bbc0cf4bfe923b81d4e67dd6`
+-	v2 Content-Length: 122.0 B
+
+#### `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
+
+```dockerfile
+WORKDIR /go
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:07 GMT
+-	Parent Layer: `529f76fe55c50df8c5d969fbfb9f24bffa1fa2beb10c223cf9c5ab91ca83fffa`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
+
+```dockerfile
+COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
+```
+
+-	Created: Thu, 18 Feb 2016 00:19:08 GMT
+-	Parent Layer: `28a29ba12cfff22ec0c8182ea0066cc1876de7d11ba37d120e463909844af6f5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.5 KB (2481 bytes)
+-	v2 Blob: `sha256:9d76f8609ef9657a45f0b47731c41dfd0c1b5b34e9d996945c0f3cdeb66359f5`
+-	v2 Content-Length: 1.4 KB (1350 bytes)
+
+#### `7bcf7eda5e8492647932541fe4f6e2a232d13155b951b0eeaf2529d0da484ed1`
+
+```dockerfile
+RUN mkdir -p /go/src/app
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:32 GMT
+-	Parent Layer: `55b29e5089ce942c69af93ba1a44f34d92b0e8ad8ed3a8b4c2cd6f45dd73d852`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:839a46bccafd153311e9e24601fe21e7ff37674bc4c64ba72ecb1b35bb47602c`
+-	v2 Content-Length: 131.0 B
+
+#### `10f71087013830f46f87c3233bec856de93d67eec8a63b5a29174b753c3f76f5`
+
+```dockerfile
+WORKDIR /go/src/app
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:32 GMT
+-	Parent Layer: `7bcf7eda5e8492647932541fe4f6e2a232d13155b951b0eeaf2529d0da484ed1`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `929b3fd3dbc89e198511b57027f172f6ce8c27e9307420646d5fd381ed7775db`
+
+```dockerfile
+CMD ["go-wrapper" "run"]
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:33 GMT
+-	Parent Layer: `10f71087013830f46f87c3233bec856de93d67eec8a63b5a29174b753c3f76f5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `3830f87760ae501fc686ccdb1d74b4064b4f6486ad6cf2644fdab639d69da6be`
+
+```dockerfile
+ONBUILD COPY . /go/src/app
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:34 GMT
+-	Parent Layer: `929b3fd3dbc89e198511b57027f172f6ce8c27e9307420646d5fd381ed7775db`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `b4ddb0524a00a89359c6e98cae64e8f9f67faec991de5ac7e96dc5342fa63dc6`
+
+```dockerfile
+ONBUILD RUN go-wrapper download
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:35 GMT
+-	Parent Layer: `3830f87760ae501fc686ccdb1d74b4064b4f6486ad6cf2644fdab639d69da6be`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `6452d640052c412201eb7b68bd83f0bd6e3d3adf6b2de7a14e100e73e83754ca`
+
+```dockerfile
+ONBUILD RUN go-wrapper install
+```
+
+-	Created: Thu, 18 Feb 2016 00:21:36 GMT
+-	Parent Layer: `b4ddb0524a00a89359c6e98cae64e8f9f67faec991de5ac7e96dc5342fa63dc6`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+## `golang:1.6.0-wheezy`
+
+```console
+$ docker pull library/golang@sha256:d9c1f60e663f4bbad78208aac9eb05dbca92b98d88cc00556ce45936fd841b46
+```
+
+-	Total Virtual Size: 617.9 MB (617901755 bytes)
+-	Total v2 Content-Length: 200.0 MB (200034421 bytes)
+
+### Layers (14)
+
+#### `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+
+```dockerfile
+ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
+```
+
+-	Created: Tue, 16 Feb 2016 21:26:25 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 84.9 MB (84905064 bytes)
+-	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
+-	v2 Content-Length: 37.2 MB (37189267 bytes)
+
+#### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Tue, 16 Feb 2016 21:26:28 GMT
+-	Parent Layer: `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:45:00 GMT
+-	Parent Layer: `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+-	Docker Version: 1.9.1
+-	Virtual Size: 14.2 MB (14186974 bytes)
+-	v2 Blob: `sha256:82ef5d5f4bfd83493b8c559d349dd5020cc3b53c9888ed303e63c0bc014b5787`
+-	v2 Content-Length: 6.7 MB (6728197 bytes)
+
+#### `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+				procps \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:45:39 GMT
+-	Parent Layer: `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
+-	Docker Version: 1.9.1
+-	Virtual Size: 110.0 MB (110025116 bytes)
+-	v2 Blob: `sha256:b41267d9121c5c2525748e60d9601c15be4d4b73640954673f5128bf740c3e7c`
+-	v2 Content-Length: 37.4 MB (37364680 bytes)
+
+#### `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		g++ \
+		gcc \
+		libc6-dev \
+		make \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 17 Feb 2016 12:01:54 GMT
+-	Parent Layer: `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
+-	Docker Version: 1.9.1
+-	Virtual Size: 90.8 MB (90820442 bytes)
+-	v2 Blob: `sha256:cc3bd5a35058ff3fd5c6990506a5e0205f560434eb4e61dac20fcc67f18883c0`
+-	v2 Content-Length: 33.9 MB (33936254 bytes)
+
+#### `5688e1e24d7dd1a86f5b64ad789523d135e6badb3f45e8b19537242ee5a778f7`
+
+```dockerfile
+ENV GOLANG_VERSION=1.6
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:11 GMT
+-	Parent Layer: `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `86800de4310cb181575c1c59c424c119abfc68b6dc0f98a382723c5738c5727e`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:12 GMT
+-	Parent Layer: `5688e1e24d7dd1a86f5b64ad789523d135e6badb3f45e8b19537242ee5a778f7`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `2539178c6cfeb43b87c1ee5828769cc71ee6a2ba29d100482d3dbb716a315a79`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:13 GMT
+-	Parent Layer: `86800de4310cb181575c1c59c424c119abfc68b6dc0f98a382723c5738c5727e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `9c605fecbd03660340dd1c3e0f5d7438079b7fb5514d32c74c7233a5f414b224`
+
+```dockerfile
+RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
+	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
+	&& tar -C /usr/local -xzf golang.tar.gz \
+	&& rm golang.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:20 GMT
+-	Parent Layer: `2539178c6cfeb43b87c1ee5828769cc71ee6a2ba29d100482d3dbb716a315a79`
+-	Docker Version: 1.9.1
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:cd714999e3c164ed85ff4ae3ea6de0f93a3f00fdf0e628eab92d9f3b83c6f009`
+-	v2 Content-Length: 84.8 MB (84814325 bytes)
+
+#### `15b1f9294534467ed72c9b8239a0ff8c366c6dc992e3340e30648890beb5808c`
+
+```dockerfile
+ENV GOPATH=/go
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:38 GMT
+-	Parent Layer: `9c605fecbd03660340dd1c3e0f5d7438079b7fb5514d32c74c7233a5f414b224`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `578b91e1a960f44ab42cf5deb1467cad7b6959b4519231617012969b8ed0526a`
+
+```dockerfile
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:41 GMT
+-	Parent Layer: `15b1f9294534467ed72c9b8239a0ff8c366c6dc992e3340e30648890beb5808c`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `c3397fa467a27cfc7c74061700caac4ecb3690d0f82db59eda4a28ea23148b8f`
+
+```dockerfile
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:43 GMT
+-	Parent Layer: `578b91e1a960f44ab42cf5deb1467cad7b6959b4519231617012969b8ed0526a`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:f077ec5d70539c666b074c6af2036196f615352014d6ed23ea67a972e4e23d72`
+-	v2 Content-Length: 122.0 B
+
+#### `16b581ab8de890e37f62d187ec55c6f396d923d111361a0fd18b49d2747ffaff`
+
+```dockerfile
+WORKDIR /go
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:44 GMT
+-	Parent Layer: `c3397fa467a27cfc7c74061700caac4ecb3690d0f82db59eda4a28ea23148b8f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `13125ef1f589140547aa1e7dd10f87d5ca44e67a1ebe446011f0b4b5c73429ce`
+
+```dockerfile
+COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:45 GMT
+-	Parent Layer: `16b581ab8de890e37f62d187ec55c6f396d923d111361a0fd18b49d2747ffaff`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.5 KB (2481 bytes)
+-	v2 Blob: `sha256:8343b1ab0db29fa97064700cc7fc0310208f33f9c3666ecf8deab4f3f598e788`
+-	v2 Content-Length: 1.4 KB (1352 bytes)
 
 ## `golang:1.6-wheezy`
 
 ```console
-$ docker pull library/golang@sha256:4fb33d8cd0881719391a6dfca122ad3da75dddb745d98aad54aba08f3b3f8f61
+$ docker pull library/golang@sha256:2d1330ae0a231cb8dddfa0bb67e4132d5764db24da84dbd2f894de76eb401ed5
 ```
 
--	Total Virtual Size: 617.7 MB (617666691 bytes)
--	Total v2 Content-Length: 200.0 MB (199981244 bytes)
+-	Total Virtual Size: 617.9 MB (617901755 bytes)
+-	Total v2 Content-Length: 200.0 MB (200034421 bytes)
 
 ### Layers (14)
 
-#### `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
+#### `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
 
 ```dockerfile
-ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /
+ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
 ```
 
--	Created: Mon, 25 Jan 2016 22:26:48 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 84.9 MB (84894442 bytes)
--	v2 Blob: `sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7`
--	v2 Content-Length: 37.2 MB (37184894 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 17:23:44 GMT
+-	Created: Tue, 16 Feb 2016 21:26:25 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 84.9 MB (84905064 bytes)
+-	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
+-	v2 Content-Length: 37.2 MB (37189267 bytes)
 
-#### `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
+#### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Mon, 25 Jan 2016 22:26:50 GMT
--	Parent Layer: `87512b380d2ae5c7f333637d13a023574d9cba24b45c5b2245c0611fbacb655e`
--	Docker Version: 1.8.3
+-	Created: Tue, 16 Feb 2016 21:26:28 GMT
+-	Parent Layer: `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+-	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
+#### `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7584,15 +4082,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:36:47 GMT
--	Parent Layer: `3a8f34ffee934b962517a631f977a17bbab3b1bd34406197be74fa46993c3df2`
--	Docker Version: 1.8.3
--	Virtual Size: 14.2 MB (14185017 bytes)
--	v2 Blob: `sha256:454edf61cfa65c7f2f412ceb1f54d055f5061fbd6e197853f844dbfb1570cdad`
--	v2 Content-Length: 6.7 MB (6728657 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:32:10 GMT
+-	Created: Tue, 16 Feb 2016 21:45:00 GMT
+-	Parent Layer: `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+-	Docker Version: 1.9.1
+-	Virtual Size: 14.2 MB (14186974 bytes)
+-	v2 Blob: `sha256:82ef5d5f4bfd83493b8c559d349dd5020cc3b53c9888ed303e63c0bc014b5787`
+-	v2 Content-Length: 6.7 MB (6728197 bytes)
 
-#### `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
+#### `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7605,15 +4102,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Mon, 25 Jan 2016 22:37:15 GMT
--	Parent Layer: `5ccb1f8e33eca9303fa0068a6bc815e20b5c87d77424b3f2e4fad06901b01298`
--	Docker Version: 1.8.3
--	Virtual Size: 110.0 MB (110024273 bytes)
--	v2 Blob: `sha256:6df3bbe21be65da47a2ede366521b6a04aa8afa4974ce781981d0b2bcff9b3cb`
--	v2 Content-Length: 37.4 MB (37365406 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:33:30 GMT
+-	Created: Tue, 16 Feb 2016 21:45:39 GMT
+-	Parent Layer: `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
+-	Docker Version: 1.9.1
+-	Virtual Size: 110.0 MB (110025116 bytes)
+-	v2 Blob: `sha256:b41267d9121c5c2525748e60d9601c15be4d4b73640954673f5128bf740c3e7c`
+-	v2 Content-Length: 37.4 MB (37364680 bytes)
 
-#### `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
+#### `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -7624,57 +4120,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Tue, 26 Jan 2016 14:13:45 GMT
--	Parent Layer: `5a86660ecb0143c634fac48e8e1657470ac4a423c66c503009d1e9b94b7469cb`
--	Docker Version: 1.8.3
--	Virtual Size: 90.8 MB (90804284 bytes)
--	v2 Blob: `sha256:ed2b7b9b470f804eba2b4b49132be6d98e5a0cab327f31ecf39297862d9aec27`
--	v2 Content-Length: 33.9 MB (33931904 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 18:24:20 GMT
+-	Created: Wed, 17 Feb 2016 12:01:54 GMT
+-	Parent Layer: `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
+-	Docker Version: 1.9.1
+-	Virtual Size: 90.8 MB (90820442 bytes)
+-	v2 Blob: `sha256:cc3bd5a35058ff3fd5c6990506a5e0205f560434eb4e61dac20fcc67f18883c0`
+-	v2 Content-Length: 33.9 MB (33936254 bytes)
 
-#### `f7e059d42411437ae68ae3ef9baf29bf6f708bfa00efe88ed1f9aad69d95cf9c`
+#### `5688e1e24d7dd1a86f5b64ad789523d135e6badb3f45e8b19537242ee5a778f7`
 
 ```dockerfile
-ENV GOLANG_VERSION=1.6rc2
+ENV GOLANG_VERSION=1.6
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:57 GMT
--	Parent Layer: `54864092ada99d06b9e22d9aef6625a72fa548b297fa6da257909b3accaf7b30`
+-	Created: Thu, 18 Feb 2016 00:23:11 GMT
+-	Parent Layer: `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `32fa7a21e188b67aeb0c0e995f548364d1754f1efd047b9d80dd1aa6adfdc273`
+#### `86800de4310cb181575c1c59c424c119abfc68b6dc0f98a382723c5738c5727e`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6rc2.linux-amd64.tar.gz
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:57 GMT
--	Parent Layer: `f7e059d42411437ae68ae3ef9baf29bf6f708bfa00efe88ed1f9aad69d95cf9c`
+-	Created: Thu, 18 Feb 2016 00:23:12 GMT
+-	Parent Layer: `5688e1e24d7dd1a86f5b64ad789523d135e6badb3f45e8b19537242ee5a778f7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `200bdaec8530e8731d0dd6f2c735a1fb9bad2f73380b1dff6d5ccb09f4b33959`
+#### `2539178c6cfeb43b87c1ee5828769cc71ee6a2ba29d100482d3dbb716a315a79`
 
 ```dockerfile
-ENV GOLANG_DOWNLOAD_SHA256=9c19fa0fe32ee9bff79123d47147a5fd15fec451806bf5644a01173a86a8a4b9
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
 ```
 
--	Created: Fri, 05 Feb 2016 00:27:58 GMT
--	Parent Layer: `32fa7a21e188b67aeb0c0e995f548364d1754f1efd047b9d80dd1aa6adfdc273`
+-	Created: Thu, 18 Feb 2016 00:23:13 GMT
+-	Parent Layer: `86800de4310cb181575c1c59c424c119abfc68b6dc0f98a382723c5738c5727e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `92fe192493de71d0dc55c3ba84dfd78ed620c8fbc680ef440291cf1b03fa1e0f`
+#### `9c605fecbd03660340dd1c3e0f5d7438079b7fb5514d32c74c7233a5f414b224`
 
 ```dockerfile
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
@@ -7683,193 +4175,602 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 	&& rm golang.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:06 GMT
--	Parent Layer: `200bdaec8530e8731d0dd6f2c735a1fb9bad2f73380b1dff6d5ccb09f4b33959`
+-	Created: Thu, 18 Feb 2016 00:23:20 GMT
+-	Parent Layer: `2539178c6cfeb43b87c1ee5828769cc71ee6a2ba29d100482d3dbb716a315a79`
 -	Docker Version: 1.9.1
--	Virtual Size: 317.8 MB (317756194 bytes)
--	v2 Blob: `sha256:07e6c297430b7761131d25c5cb2add20401a08ef554ad4d2a2cc1f76121d319b`
--	v2 Content-Length: 84.8 MB (84768684 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:13:17 GMT
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:cd714999e3c164ed85ff4ae3ea6de0f93a3f00fdf0e628eab92d9f3b83c6f009`
+-	v2 Content-Length: 84.8 MB (84814325 bytes)
 
-#### `f0259a3f5055f85fc44dd37cf6f5e4bc84959c0bb41f635304dbd9f57016f7af`
+#### `15b1f9294534467ed72c9b8239a0ff8c366c6dc992e3340e30648890beb5808c`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:09 GMT
--	Parent Layer: `92fe192493de71d0dc55c3ba84dfd78ed620c8fbc680ef440291cf1b03fa1e0f`
+-	Created: Thu, 18 Feb 2016 00:23:38 GMT
+-	Parent Layer: `9c605fecbd03660340dd1c3e0f5d7438079b7fb5514d32c74c7233a5f414b224`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `a52594bf205e4712a0999f863ecb6a582d659597077121a8a047327edecee2dd`
+#### `578b91e1a960f44ab42cf5deb1467cad7b6959b4519231617012969b8ed0526a`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:10 GMT
--	Parent Layer: `f0259a3f5055f85fc44dd37cf6f5e4bc84959c0bb41f635304dbd9f57016f7af`
+-	Created: Thu, 18 Feb 2016 00:23:41 GMT
+-	Parent Layer: `15b1f9294534467ed72c9b8239a0ff8c366c6dc992e3340e30648890beb5808c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `75fea453bdcb7088859fcf210e496b40dd51c806ffae5892e9802d80b897931b`
+#### `c3397fa467a27cfc7c74061700caac4ecb3690d0f82db59eda4a28ea23148b8f`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:11 GMT
--	Parent Layer: `a52594bf205e4712a0999f863ecb6a582d659597077121a8a047327edecee2dd`
+-	Created: Thu, 18 Feb 2016 00:23:43 GMT
+-	Parent Layer: `578b91e1a960f44ab42cf5deb1467cad7b6959b4519231617012969b8ed0526a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a5958cec926c2190d2f74adad8b497c1b97c38311d8fe03653c1ac1dd02f15d9`
+-	v2 Blob: `sha256:f077ec5d70539c666b074c6af2036196f615352014d6ed23ea67a972e4e23d72`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:12:16 GMT
 
-#### `f7d2ec3d4530a8d107c5d5c0e81196fc1ae7b7f351d104bf16550c114a6e2e78`
+#### `16b581ab8de890e37f62d187ec55c6f396d923d111361a0fd18b49d2747ffaff`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:12 GMT
--	Parent Layer: `75fea453bdcb7088859fcf210e496b40dd51c806ffae5892e9802d80b897931b`
+-	Created: Thu, 18 Feb 2016 00:23:44 GMT
+-	Parent Layer: `c3397fa467a27cfc7c74061700caac4ecb3690d0f82db59eda4a28ea23148b8f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `65cea8bd35253aa12c84cfb90824b11fe155472c4545105eaa5bf9248c38a7aa`
+#### `13125ef1f589140547aa1e7dd10f87d5ca44e67a1ebe446011f0b4b5c73429ce`
 
 ```dockerfile
 COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:12 GMT
--	Parent Layer: `f7d2ec3d4530a8d107c5d5c0e81196fc1ae7b7f351d104bf16550c114a6e2e78`
+-	Created: Thu, 18 Feb 2016 00:23:45 GMT
+-	Parent Layer: `16b581ab8de890e37f62d187ec55c6f396d923d111361a0fd18b49d2747ffaff`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.5 KB (2481 bytes)
--	v2 Blob: `sha256:42fb67ba2537777c8e4f08929ae084d1941b01cfb990b0555597125d0cf34a2d`
--	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:12:12 GMT
+-	v2 Blob: `sha256:8343b1ab0db29fa97064700cc7fc0310208f33f9c3666ecf8deab4f3f598e788`
+-	v2 Content-Length: 1.4 KB (1352 bytes)
 
-## `golang:1.6rc2-alpine`
+## `golang:1-wheezy`
 
 ```console
-$ docker pull library/golang@sha256:70e802ccac218f266e3a14378ff1900bcc60cfae7da302b59b61c1552bf9594b
+$ docker pull library/golang@sha256:bfafa458ed25e2f341fd31ec2276a0d5cc07609cf9f82a872e22a6ffa75f126c
 ```
 
--	Total Virtual Size: 238.5 MB (238506938 bytes)
--	Total v2 Content-Length: 62.3 MB (62295057 bytes)
+-	Total Virtual Size: 617.9 MB (617901755 bytes)
+-	Total v2 Content-Length: 200.0 MB (200034421 bytes)
+
+### Layers (14)
+
+#### `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+
+```dockerfile
+ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
+```
+
+-	Created: Tue, 16 Feb 2016 21:26:25 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 84.9 MB (84905064 bytes)
+-	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
+-	v2 Content-Length: 37.2 MB (37189267 bytes)
+
+#### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Tue, 16 Feb 2016 21:26:28 GMT
+-	Parent Layer: `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:45:00 GMT
+-	Parent Layer: `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+-	Docker Version: 1.9.1
+-	Virtual Size: 14.2 MB (14186974 bytes)
+-	v2 Blob: `sha256:82ef5d5f4bfd83493b8c559d349dd5020cc3b53c9888ed303e63c0bc014b5787`
+-	v2 Content-Length: 6.7 MB (6728197 bytes)
+
+#### `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+				procps \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:45:39 GMT
+-	Parent Layer: `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
+-	Docker Version: 1.9.1
+-	Virtual Size: 110.0 MB (110025116 bytes)
+-	v2 Blob: `sha256:b41267d9121c5c2525748e60d9601c15be4d4b73640954673f5128bf740c3e7c`
+-	v2 Content-Length: 37.4 MB (37364680 bytes)
+
+#### `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		g++ \
+		gcc \
+		libc6-dev \
+		make \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 17 Feb 2016 12:01:54 GMT
+-	Parent Layer: `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
+-	Docker Version: 1.9.1
+-	Virtual Size: 90.8 MB (90820442 bytes)
+-	v2 Blob: `sha256:cc3bd5a35058ff3fd5c6990506a5e0205f560434eb4e61dac20fcc67f18883c0`
+-	v2 Content-Length: 33.9 MB (33936254 bytes)
+
+#### `5688e1e24d7dd1a86f5b64ad789523d135e6badb3f45e8b19537242ee5a778f7`
+
+```dockerfile
+ENV GOLANG_VERSION=1.6
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:11 GMT
+-	Parent Layer: `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `86800de4310cb181575c1c59c424c119abfc68b6dc0f98a382723c5738c5727e`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:12 GMT
+-	Parent Layer: `5688e1e24d7dd1a86f5b64ad789523d135e6badb3f45e8b19537242ee5a778f7`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `2539178c6cfeb43b87c1ee5828769cc71ee6a2ba29d100482d3dbb716a315a79`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:13 GMT
+-	Parent Layer: `86800de4310cb181575c1c59c424c119abfc68b6dc0f98a382723c5738c5727e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `9c605fecbd03660340dd1c3e0f5d7438079b7fb5514d32c74c7233a5f414b224`
+
+```dockerfile
+RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
+	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
+	&& tar -C /usr/local -xzf golang.tar.gz \
+	&& rm golang.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:20 GMT
+-	Parent Layer: `2539178c6cfeb43b87c1ee5828769cc71ee6a2ba29d100482d3dbb716a315a79`
+-	Docker Version: 1.9.1
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:cd714999e3c164ed85ff4ae3ea6de0f93a3f00fdf0e628eab92d9f3b83c6f009`
+-	v2 Content-Length: 84.8 MB (84814325 bytes)
+
+#### `15b1f9294534467ed72c9b8239a0ff8c366c6dc992e3340e30648890beb5808c`
+
+```dockerfile
+ENV GOPATH=/go
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:38 GMT
+-	Parent Layer: `9c605fecbd03660340dd1c3e0f5d7438079b7fb5514d32c74c7233a5f414b224`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `578b91e1a960f44ab42cf5deb1467cad7b6959b4519231617012969b8ed0526a`
+
+```dockerfile
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:41 GMT
+-	Parent Layer: `15b1f9294534467ed72c9b8239a0ff8c366c6dc992e3340e30648890beb5808c`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `c3397fa467a27cfc7c74061700caac4ecb3690d0f82db59eda4a28ea23148b8f`
+
+```dockerfile
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:43 GMT
+-	Parent Layer: `578b91e1a960f44ab42cf5deb1467cad7b6959b4519231617012969b8ed0526a`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:f077ec5d70539c666b074c6af2036196f615352014d6ed23ea67a972e4e23d72`
+-	v2 Content-Length: 122.0 B
+
+#### `16b581ab8de890e37f62d187ec55c6f396d923d111361a0fd18b49d2747ffaff`
+
+```dockerfile
+WORKDIR /go
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:44 GMT
+-	Parent Layer: `c3397fa467a27cfc7c74061700caac4ecb3690d0f82db59eda4a28ea23148b8f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `13125ef1f589140547aa1e7dd10f87d5ca44e67a1ebe446011f0b4b5c73429ce`
+
+```dockerfile
+COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:45 GMT
+-	Parent Layer: `16b581ab8de890e37f62d187ec55c6f396d923d111361a0fd18b49d2747ffaff`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.5 KB (2481 bytes)
+-	v2 Blob: `sha256:8343b1ab0db29fa97064700cc7fc0310208f33f9c3666ecf8deab4f3f598e788`
+-	v2 Content-Length: 1.4 KB (1352 bytes)
+
+## `golang:wheezy`
+
+```console
+$ docker pull library/golang@sha256:5a73d05d0695a96902315a92e873c963435d1d69e74e7bbde5351db4054b6b6d
+```
+
+-	Total Virtual Size: 617.9 MB (617901755 bytes)
+-	Total v2 Content-Length: 200.0 MB (200034421 bytes)
+
+### Layers (14)
+
+#### `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+
+```dockerfile
+ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
+```
+
+-	Created: Tue, 16 Feb 2016 21:26:25 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 84.9 MB (84905064 bytes)
+-	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
+-	v2 Content-Length: 37.2 MB (37189267 bytes)
+
+#### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+
+```dockerfile
+CMD ["/bin/bash"]
+```
+
+-	Created: Tue, 16 Feb 2016 21:26:28 GMT
+-	Parent Layer: `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		wget \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:45:00 GMT
+-	Parent Layer: `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+-	Docker Version: 1.9.1
+-	Virtual Size: 14.2 MB (14186974 bytes)
+-	v2 Blob: `sha256:82ef5d5f4bfd83493b8c559d349dd5020cc3b53c9888ed303e63c0bc014b5787`
+-	v2 Content-Length: 6.7 MB (6728197 bytes)
+
+#### `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzr \
+		git \
+		mercurial \
+		openssh-client \
+		subversion \
+				procps \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Tue, 16 Feb 2016 21:45:39 GMT
+-	Parent Layer: `4d72220a703b44ff7a21d24c6fc79a1c6bec0e50ab1fc2151093c2dc24cdab88`
+-	Docker Version: 1.9.1
+-	Virtual Size: 110.0 MB (110025116 bytes)
+-	v2 Blob: `sha256:b41267d9121c5c2525748e60d9601c15be4d4b73640954673f5128bf740c3e7c`
+-	v2 Content-Length: 37.4 MB (37364680 bytes)
+
+#### `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		g++ \
+		gcc \
+		libc6-dev \
+		make \
+	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Created: Wed, 17 Feb 2016 12:01:54 GMT
+-	Parent Layer: `317b7c33f5f611d2c77c0b102f1411cde20e8401d96a8678806dc61a2163b843`
+-	Docker Version: 1.9.1
+-	Virtual Size: 90.8 MB (90820442 bytes)
+-	v2 Blob: `sha256:cc3bd5a35058ff3fd5c6990506a5e0205f560434eb4e61dac20fcc67f18883c0`
+-	v2 Content-Length: 33.9 MB (33936254 bytes)
+
+#### `5688e1e24d7dd1a86f5b64ad789523d135e6badb3f45e8b19537242ee5a778f7`
+
+```dockerfile
+ENV GOLANG_VERSION=1.6
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:11 GMT
+-	Parent Layer: `2e24a539ddd6b658aaf27829e2d4cbd078b69fbb7a429c6a2fbe737240b401b2`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `86800de4310cb181575c1c59c424c119abfc68b6dc0f98a382723c5738c5727e`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:12 GMT
+-	Parent Layer: `5688e1e24d7dd1a86f5b64ad789523d135e6badb3f45e8b19537242ee5a778f7`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `2539178c6cfeb43b87c1ee5828769cc71ee6a2ba29d100482d3dbb716a315a79`
+
+```dockerfile
+ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:13 GMT
+-	Parent Layer: `86800de4310cb181575c1c59c424c119abfc68b6dc0f98a382723c5738c5727e`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `9c605fecbd03660340dd1c3e0f5d7438079b7fb5514d32c74c7233a5f414b224`
+
+```dockerfile
+RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
+	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - \
+	&& tar -C /usr/local -xzf golang.tar.gz \
+	&& rm golang.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:20 GMT
+-	Parent Layer: `2539178c6cfeb43b87c1ee5828769cc71ee6a2ba29d100482d3dbb716a315a79`
+-	Docker Version: 1.9.1
+-	Virtual Size: 318.0 MB (317961678 bytes)
+-	v2 Blob: `sha256:cd714999e3c164ed85ff4ae3ea6de0f93a3f00fdf0e628eab92d9f3b83c6f009`
+-	v2 Content-Length: 84.8 MB (84814325 bytes)
+
+#### `15b1f9294534467ed72c9b8239a0ff8c366c6dc992e3340e30648890beb5808c`
+
+```dockerfile
+ENV GOPATH=/go
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:38 GMT
+-	Parent Layer: `9c605fecbd03660340dd1c3e0f5d7438079b7fb5514d32c74c7233a5f414b224`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `578b91e1a960f44ab42cf5deb1467cad7b6959b4519231617012969b8ed0526a`
+
+```dockerfile
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:41 GMT
+-	Parent Layer: `15b1f9294534467ed72c9b8239a0ff8c366c6dc992e3340e30648890beb5808c`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `c3397fa467a27cfc7c74061700caac4ecb3690d0f82db59eda4a28ea23148b8f`
+
+```dockerfile
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:43 GMT
+-	Parent Layer: `578b91e1a960f44ab42cf5deb1467cad7b6959b4519231617012969b8ed0526a`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:f077ec5d70539c666b074c6af2036196f615352014d6ed23ea67a972e4e23d72`
+-	v2 Content-Length: 122.0 B
+
+#### `16b581ab8de890e37f62d187ec55c6f396d923d111361a0fd18b49d2747ffaff`
+
+```dockerfile
+WORKDIR /go
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:44 GMT
+-	Parent Layer: `c3397fa467a27cfc7c74061700caac4ecb3690d0f82db59eda4a28ea23148b8f`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `13125ef1f589140547aa1e7dd10f87d5ca44e67a1ebe446011f0b4b5c73429ce`
+
+```dockerfile
+COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /usr/local/bin/
+```
+
+-	Created: Thu, 18 Feb 2016 00:23:45 GMT
+-	Parent Layer: `16b581ab8de890e37f62d187ec55c6f396d923d111361a0fd18b49d2747ffaff`
+-	Docker Version: 1.9.1
+-	Virtual Size: 2.5 KB (2481 bytes)
+-	v2 Blob: `sha256:8343b1ab0db29fa97064700cc7fc0310208f33f9c3666ecf8deab4f3f598e788`
+-	v2 Content-Length: 1.4 KB (1352 bytes)
+
+## `golang:1.6.0-alpine`
+
+```console
+$ docker pull library/golang@sha256:359e8d8401e14007c885ff8010c2a8f59de212e64d38eb8cbc9c9e8f0b2b28d1
+```
+
+-	Total Virtual Size: 238.0 MB (237993844 bytes)
+-	Total v2 Content-Length: 61.9 MB (61940530 bytes)
 
 ### Layers (12)
 
-#### `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
+#### `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
 
 ```dockerfile
-ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /
+ADD file:0f9cfb2e848f093649aca9cc67927e4d04a74e150e0d92f4ad18ee583a287bf2 in /
 ```
 
--	Created: Mon, 18 Jan 2016 18:33:12 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.8 MB (4793939 bytes)
--	v2 Blob: `sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598`
--	v2 Content-Length: 2.3 MB (2318895 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 18:34:49 GMT
+-	Created: Wed, 17 Feb 2016 15:51:37 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 4.8 MB (4793867 bytes)
+-	v2 Blob: `sha256:ee54741ab35b188477c19fddc30356317b091177966da94c2e9391de49fc7f43`
+-	v2 Content-Length: 2.3 MB (2318983 bytes)
 
-#### `cbb74206c86601a45030851f2363d137a17bff98a8731249dcd0419f55b6a1a4`
+#### `ff9ee6545c3c67e12c27f27462bf1cabb628e034e5e09883cd1eef2f91ebf5b0`
 
 ```dockerfile
-ENV GOLANG_VERSION=1.6rc2
+ENV GOLANG_VERSION=1.6
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:38 GMT
--	Parent Layer: `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
+-	Created: Thu, 18 Feb 2016 00:26:11 GMT
+-	Parent Layer: `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `38199c86a23a28b0c223c68433062a6748d8f78cf9b594f327cbc360d9466090`
+#### `592c4eace63422b4c249f4f62502b4d9c5dd36a2e8fb06c7755f953d68290484`
 
 ```dockerfile
-ENV GOLANG_SRC_URL=https://golang.org/dl/go1.6rc2.src.tar.gz
+ENV GOLANG_SRC_URL=https://golang.org/dl/go1.6.src.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:38 GMT
--	Parent Layer: `cbb74206c86601a45030851f2363d137a17bff98a8731249dcd0419f55b6a1a4`
+-	Created: Thu, 18 Feb 2016 00:26:12 GMT
+-	Parent Layer: `ff9ee6545c3c67e12c27f27462bf1cabb628e034e5e09883cd1eef2f91ebf5b0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `14c203e61524de695f6d815b2c8b23ec96e0aac96755309a4592bf6601d0b985`
+#### `3c3e8c0aa381a892ed4923d3cd67357119ff429331488cdc598e3bdec7071694`
 
 ```dockerfile
-ENV GOLANG_SRC_SHA256=92914a23cde7e34e1d017175d785e5850fbb28f323a145028e2e26053ef1a598
+ENV GOLANG_SRC_SHA256=a96cce8ce43a9bf9b2a4c7d470bc7ee0cb00410da815980681c8353218dcf146
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:39 GMT
--	Parent Layer: `38199c86a23a28b0c223c68433062a6748d8f78cf9b594f327cbc360d9466090`
+-	Created: Thu, 18 Feb 2016 00:26:12 GMT
+-	Parent Layer: `592c4eace63422b4c249f4f62502b4d9c5dd36a2e8fb06c7755f953d68290484`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b34db367a94cb2d0813bba2539d530399fc71f6b76536be3f342dc03ac9b1174`
+#### `48a35b0b17c2da676240f35b7a6749b39f74df999d8d708a3966f0015f11a064`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:40 GMT
--	Parent Layer: `14c203e61524de695f6d815b2c8b23ec96e0aac96755309a4592bf6601d0b985`
+-	Created: Thu, 18 Feb 2016 00:26:13 GMT
+-	Parent Layer: `3c3e8c0aa381a892ed4923d3cd67357119ff429331488cdc598e3bdec7071694`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `745f0f2e1127e71b56323876e2768ba21065814911fe867dd7c042e7520400b1`
+#### `a95013ca0148b2dfa191dda4bb754e6a9a832d028bbdb051e23ef0cb82023b27`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:40 GMT
--	Parent Layer: `b34db367a94cb2d0813bba2539d530399fc71f6b76536be3f342dc03ac9b1174`
+-	Created: Thu, 18 Feb 2016 00:26:14 GMT
+-	Parent Layer: `48a35b0b17c2da676240f35b7a6749b39f74df999d8d708a3966f0015f11a064`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0ee073121dd08ebb790c815c599985e04e7136c6874b6c9ddb992ad8289d31e0`
+#### `6b8e692a2883a58fafd14545963a65bf0094f745025dcac0e4429b8daa9613ef`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:41 GMT
--	Parent Layer: `745f0f2e1127e71b56323876e2768ba21065814911fe867dd7c042e7520400b1`
+-	Created: Thu, 18 Feb 2016 00:26:15 GMT
+-	Parent Layer: `a95013ca0148b2dfa191dda4bb754e6a9a832d028bbdb051e23ef0cb82023b27`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `192a73733fb13443190e9ba94dcab0091dcb4522c6e4fd70e9d8386a1effa007`
+#### `4a9dca4b76af673ddfa5e7fd0ef17979ffc5dd47e8cf1d99ba58a818a390e0e6`
 
 ```dockerfile
 RUN set -ex \
@@ -7897,179 +4798,167 @@ RUN set -ex \
 	&& apk del .build-deps
 ```
 
--	Created: Fri, 05 Feb 2016 00:30:31 GMT
--	Parent Layer: `0ee073121dd08ebb790c815c599985e04e7136c6874b6c9ddb992ad8289d31e0`
+-	Created: Thu, 18 Feb 2016 00:28:16 GMT
+-	Parent Layer: `6b8e692a2883a58fafd14545963a65bf0094f745025dcac0e4429b8daa9613ef`
 -	Docker Version: 1.9.1
--	Virtual Size: 233.7 MB (233712999 bytes)
--	v2 Blob: `sha256:b97c9a1bd9457fc7b8b02fc6331bf4320b28cd5b06251fcd94035a264d485343`
--	v2 Content-Length: 60.0 MB (59975751 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:14:11 GMT
+-	Virtual Size: 233.2 MB (233199977 bytes)
+-	v2 Blob: `sha256:76d45871cc716c5f8f4e94880a399074ee9112deeac08cd147f2fedc1d9351dc`
+-	v2 Content-Length: 59.6 MB (59621137 bytes)
 
-#### `d27f209a7ef0359c62726e5fa4c5fefc423a6f047c54620f29f8fb1701f40ce3`
+#### `68730692564ddaca3c7172ce3fbe665b3d758a95653f2fb09eabbf45530be41a`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Fri, 05 Feb 2016 00:30:34 GMT
--	Parent Layer: `192a73733fb13443190e9ba94dcab0091dcb4522c6e4fd70e9d8386a1effa007`
+-	Created: Thu, 18 Feb 2016 00:28:30 GMT
+-	Parent Layer: `4a9dca4b76af673ddfa5e7fd0ef17979ffc5dd47e8cf1d99ba58a818a390e0e6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `439a2ff4cab36379782d39cb6b39335b30522555e033c87f42852b5a421cefa4`
+#### `31454b25dc8c70ee78823894b51b60ca6b612dddc682a3c181e9fd1d2b106799`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 05 Feb 2016 00:30:35 GMT
--	Parent Layer: `d27f209a7ef0359c62726e5fa4c5fefc423a6f047c54620f29f8fb1701f40ce3`
+-	Created: Thu, 18 Feb 2016 00:28:31 GMT
+-	Parent Layer: `68730692564ddaca3c7172ce3fbe665b3d758a95653f2fb09eabbf45530be41a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bd62d0003988d6767f975a23a9d6651f101e86383567a4136e7a08b232b55464`
+#### `967fc98e7cbeb9925676bfc3791b3354c1053cb13ea1c8d383a233910cada314`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Fri, 05 Feb 2016 00:30:36 GMT
--	Parent Layer: `439a2ff4cab36379782d39cb6b39335b30522555e033c87f42852b5a421cefa4`
+-	Created: Thu, 18 Feb 2016 00:28:33 GMT
+-	Parent Layer: `31454b25dc8c70ee78823894b51b60ca6b612dddc682a3c181e9fd1d2b106799`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6e267be98956994a6548b92f99180648cd28b6c1995a4c1669220d463520a042`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:13:39 GMT
+-	v2 Blob: `sha256:c72444438452f97908d46973f4a188a4257c0481d11437f0d0e39cc41fee28f2`
+-	v2 Content-Length: 122.0 B
 
-#### `58a3f62c22c26a63ef10f324eca613dab0428c981ee8d436a73ae39772cd18d5`
+#### `3523f1ddd5726b0800c0c6d15da6d7c6bdb10ef22462cb644f6c854c9e796b73`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Fri, 05 Feb 2016 00:30:37 GMT
--	Parent Layer: `bd62d0003988d6767f975a23a9d6651f101e86383567a4136e7a08b232b55464`
+-	Created: Thu, 18 Feb 2016 00:28:34 GMT
+-	Parent Layer: `967fc98e7cbeb9925676bfc3791b3354c1053cb13ea1c8d383a233910cada314`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.6-alpine`
 
 ```console
-$ docker pull library/golang@sha256:9010b06fd7828a9451c671161c04a5074fd98f94e92cc3620f87c2b6c6ae2d58
+$ docker pull library/golang@sha256:41821177dca740c1cb619af58ba6ebd725d5991f968c52764486498ab68916b9
 ```
 
--	Total Virtual Size: 238.5 MB (238506938 bytes)
--	Total v2 Content-Length: 62.3 MB (62295057 bytes)
+-	Total Virtual Size: 238.0 MB (237993844 bytes)
+-	Total v2 Content-Length: 61.9 MB (61940530 bytes)
 
 ### Layers (12)
 
-#### `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
+#### `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
 
 ```dockerfile
-ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /
+ADD file:0f9cfb2e848f093649aca9cc67927e4d04a74e150e0d92f4ad18ee583a287bf2 in /
 ```
 
--	Created: Mon, 18 Jan 2016 18:33:12 GMT
--	Docker Version: 1.8.3
--	Virtual Size: 4.8 MB (4793939 bytes)
--	v2 Blob: `sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598`
--	v2 Content-Length: 2.3 MB (2318895 bytes)
--	v2 Last-Modified: Mon, 18 Jan 2016 18:34:49 GMT
+-	Created: Wed, 17 Feb 2016 15:51:37 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 4.8 MB (4793867 bytes)
+-	v2 Blob: `sha256:ee54741ab35b188477c19fddc30356317b091177966da94c2e9391de49fc7f43`
+-	v2 Content-Length: 2.3 MB (2318983 bytes)
 
-#### `cbb74206c86601a45030851f2363d137a17bff98a8731249dcd0419f55b6a1a4`
+#### `ff9ee6545c3c67e12c27f27462bf1cabb628e034e5e09883cd1eef2f91ebf5b0`
 
 ```dockerfile
-ENV GOLANG_VERSION=1.6rc2
+ENV GOLANG_VERSION=1.6
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:38 GMT
--	Parent Layer: `463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9`
+-	Created: Thu, 18 Feb 2016 00:26:11 GMT
+-	Parent Layer: `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `38199c86a23a28b0c223c68433062a6748d8f78cf9b594f327cbc360d9466090`
+#### `592c4eace63422b4c249f4f62502b4d9c5dd36a2e8fb06c7755f953d68290484`
 
 ```dockerfile
-ENV GOLANG_SRC_URL=https://golang.org/dl/go1.6rc2.src.tar.gz
+ENV GOLANG_SRC_URL=https://golang.org/dl/go1.6.src.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:38 GMT
--	Parent Layer: `cbb74206c86601a45030851f2363d137a17bff98a8731249dcd0419f55b6a1a4`
+-	Created: Thu, 18 Feb 2016 00:26:12 GMT
+-	Parent Layer: `ff9ee6545c3c67e12c27f27462bf1cabb628e034e5e09883cd1eef2f91ebf5b0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `14c203e61524de695f6d815b2c8b23ec96e0aac96755309a4592bf6601d0b985`
+#### `3c3e8c0aa381a892ed4923d3cd67357119ff429331488cdc598e3bdec7071694`
 
 ```dockerfile
-ENV GOLANG_SRC_SHA256=92914a23cde7e34e1d017175d785e5850fbb28f323a145028e2e26053ef1a598
+ENV GOLANG_SRC_SHA256=a96cce8ce43a9bf9b2a4c7d470bc7ee0cb00410da815980681c8353218dcf146
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:39 GMT
--	Parent Layer: `38199c86a23a28b0c223c68433062a6748d8f78cf9b594f327cbc360d9466090`
+-	Created: Thu, 18 Feb 2016 00:26:12 GMT
+-	Parent Layer: `592c4eace63422b4c249f4f62502b4d9c5dd36a2e8fb06c7755f953d68290484`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `b34db367a94cb2d0813bba2539d530399fc71f6b76536be3f342dc03ac9b1174`
+#### `48a35b0b17c2da676240f35b7a6749b39f74df999d8d708a3966f0015f11a064`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:40 GMT
--	Parent Layer: `14c203e61524de695f6d815b2c8b23ec96e0aac96755309a4592bf6601d0b985`
+-	Created: Thu, 18 Feb 2016 00:26:13 GMT
+-	Parent Layer: `3c3e8c0aa381a892ed4923d3cd67357119ff429331488cdc598e3bdec7071694`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `745f0f2e1127e71b56323876e2768ba21065814911fe867dd7c042e7520400b1`
+#### `a95013ca0148b2dfa191dda4bb754e6a9a832d028bbdb051e23ef0cb82023b27`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:40 GMT
--	Parent Layer: `b34db367a94cb2d0813bba2539d530399fc71f6b76536be3f342dc03ac9b1174`
+-	Created: Thu, 18 Feb 2016 00:26:14 GMT
+-	Parent Layer: `48a35b0b17c2da676240f35b7a6749b39f74df999d8d708a3966f0015f11a064`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `0ee073121dd08ebb790c815c599985e04e7136c6874b6c9ddb992ad8289d31e0`
+#### `6b8e692a2883a58fafd14545963a65bf0094f745025dcac0e4429b8daa9613ef`
 
 ```dockerfile
 ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
 ```
 
--	Created: Fri, 05 Feb 2016 00:28:41 GMT
--	Parent Layer: `745f0f2e1127e71b56323876e2768ba21065814911fe867dd7c042e7520400b1`
+-	Created: Thu, 18 Feb 2016 00:26:15 GMT
+-	Parent Layer: `a95013ca0148b2dfa191dda4bb754e6a9a832d028bbdb051e23ef0cb82023b27`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `192a73733fb13443190e9ba94dcab0091dcb4522c6e4fd70e9d8386a1effa007`
+#### `4a9dca4b76af673ddfa5e7fd0ef17979ffc5dd47e8cf1d99ba58a818a390e0e6`
 
 ```dockerfile
 RUN set -ex \
@@ -8097,66 +4986,437 @@ RUN set -ex \
 	&& apk del .build-deps
 ```
 
--	Created: Fri, 05 Feb 2016 00:30:31 GMT
--	Parent Layer: `0ee073121dd08ebb790c815c599985e04e7136c6874b6c9ddb992ad8289d31e0`
+-	Created: Thu, 18 Feb 2016 00:28:16 GMT
+-	Parent Layer: `6b8e692a2883a58fafd14545963a65bf0094f745025dcac0e4429b8daa9613ef`
 -	Docker Version: 1.9.1
--	Virtual Size: 233.7 MB (233712999 bytes)
--	v2 Blob: `sha256:b97c9a1bd9457fc7b8b02fc6331bf4320b28cd5b06251fcd94035a264d485343`
--	v2 Content-Length: 60.0 MB (59975751 bytes)
--	v2 Last-Modified: Fri, 05 Feb 2016 01:14:11 GMT
+-	Virtual Size: 233.2 MB (233199977 bytes)
+-	v2 Blob: `sha256:76d45871cc716c5f8f4e94880a399074ee9112deeac08cd147f2fedc1d9351dc`
+-	v2 Content-Length: 59.6 MB (59621137 bytes)
 
-#### `d27f209a7ef0359c62726e5fa4c5fefc423a6f047c54620f29f8fb1701f40ce3`
+#### `68730692564ddaca3c7172ce3fbe665b3d758a95653f2fb09eabbf45530be41a`
 
 ```dockerfile
 ENV GOPATH=/go
 ```
 
--	Created: Fri, 05 Feb 2016 00:30:34 GMT
--	Parent Layer: `192a73733fb13443190e9ba94dcab0091dcb4522c6e4fd70e9d8386a1effa007`
+-	Created: Thu, 18 Feb 2016 00:28:30 GMT
+-	Parent Layer: `4a9dca4b76af673ddfa5e7fd0ef17979ffc5dd47e8cf1d99ba58a818a390e0e6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `439a2ff4cab36379782d39cb6b39335b30522555e033c87f42852b5a421cefa4`
+#### `31454b25dc8c70ee78823894b51b60ca6b612dddc682a3c181e9fd1d2b106799`
 
 ```dockerfile
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Fri, 05 Feb 2016 00:30:35 GMT
--	Parent Layer: `d27f209a7ef0359c62726e5fa4c5fefc423a6f047c54620f29f8fb1701f40ce3`
+-	Created: Thu, 18 Feb 2016 00:28:31 GMT
+-	Parent Layer: `68730692564ddaca3c7172ce3fbe665b3d758a95653f2fb09eabbf45530be41a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
-#### `bd62d0003988d6767f975a23a9d6651f101e86383567a4136e7a08b232b55464`
+#### `967fc98e7cbeb9925676bfc3791b3354c1053cb13ea1c8d383a233910cada314`
 
 ```dockerfile
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 ```
 
--	Created: Fri, 05 Feb 2016 00:30:36 GMT
--	Parent Layer: `439a2ff4cab36379782d39cb6b39335b30522555e033c87f42852b5a421cefa4`
+-	Created: Thu, 18 Feb 2016 00:28:33 GMT
+-	Parent Layer: `31454b25dc8c70ee78823894b51b60ca6b612dddc682a3c181e9fd1d2b106799`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6e267be98956994a6548b92f99180648cd28b6c1995a4c1669220d463520a042`
--	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:13:39 GMT
+-	v2 Blob: `sha256:c72444438452f97908d46973f4a188a4257c0481d11437f0d0e39cc41fee28f2`
+-	v2 Content-Length: 122.0 B
 
-#### `58a3f62c22c26a63ef10f324eca613dab0428c981ee8d436a73ae39772cd18d5`
+#### `3523f1ddd5726b0800c0c6d15da6d7c6bdb10ef22462cb644f6c854c9e796b73`
 
 ```dockerfile
 WORKDIR /go
 ```
 
--	Created: Fri, 05 Feb 2016 00:30:37 GMT
--	Parent Layer: `bd62d0003988d6767f975a23a9d6651f101e86383567a4136e7a08b232b55464`
+-	Created: Thu, 18 Feb 2016 00:28:34 GMT
+-	Parent Layer: `967fc98e7cbeb9925676bfc3791b3354c1053cb13ea1c8d383a233910cada314`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
+
+## `golang:1-alpine`
+
+```console
+$ docker pull library/golang@sha256:68045f54fa893798c990228290d2dc6ced6da676e7a2e52544c4d10ed9603849
+```
+
+-	Total Virtual Size: 238.0 MB (237993844 bytes)
+-	Total v2 Content-Length: 61.9 MB (61940530 bytes)
+
+### Layers (12)
+
+#### `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
+
+```dockerfile
+ADD file:0f9cfb2e848f093649aca9cc67927e4d04a74e150e0d92f4ad18ee583a287bf2 in /
+```
+
+-	Created: Wed, 17 Feb 2016 15:51:37 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 4.8 MB (4793867 bytes)
+-	v2 Blob: `sha256:ee54741ab35b188477c19fddc30356317b091177966da94c2e9391de49fc7f43`
+-	v2 Content-Length: 2.3 MB (2318983 bytes)
+
+#### `ff9ee6545c3c67e12c27f27462bf1cabb628e034e5e09883cd1eef2f91ebf5b0`
+
+```dockerfile
+ENV GOLANG_VERSION=1.6
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:11 GMT
+-	Parent Layer: `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `592c4eace63422b4c249f4f62502b4d9c5dd36a2e8fb06c7755f953d68290484`
+
+```dockerfile
+ENV GOLANG_SRC_URL=https://golang.org/dl/go1.6.src.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:12 GMT
+-	Parent Layer: `ff9ee6545c3c67e12c27f27462bf1cabb628e034e5e09883cd1eef2f91ebf5b0`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `3c3e8c0aa381a892ed4923d3cd67357119ff429331488cdc598e3bdec7071694`
+
+```dockerfile
+ENV GOLANG_SRC_SHA256=a96cce8ce43a9bf9b2a4c7d470bc7ee0cb00410da815980681c8353218dcf146
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:12 GMT
+-	Parent Layer: `592c4eace63422b4c249f4f62502b4d9c5dd36a2e8fb06c7755f953d68290484`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `48a35b0b17c2da676240f35b7a6749b39f74df999d8d708a3966f0015f11a064`
+
+```dockerfile
+ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:13 GMT
+-	Parent Layer: `3c3e8c0aa381a892ed4923d3cd67357119ff429331488cdc598e3bdec7071694`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `a95013ca0148b2dfa191dda4bb754e6a9a832d028bbdb051e23ef0cb82023b27`
+
+```dockerfile
+ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:14 GMT
+-	Parent Layer: `48a35b0b17c2da676240f35b7a6749b39f74df999d8d708a3966f0015f11a064`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `6b8e692a2883a58fafd14545963a65bf0094f745025dcac0e4429b8daa9613ef`
+
+```dockerfile
+ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:15 GMT
+-	Parent Layer: `a95013ca0148b2dfa191dda4bb754e6a9a832d028bbdb051e23ef0cb82023b27`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `4a9dca4b76af673ddfa5e7fd0ef17979ffc5dd47e8cf1d99ba58a818a390e0e6`
+
+```dockerfile
+RUN set -ex \
+	&& apk add --no-cache --virtual .build-deps \
+		bash \
+		ca-certificates \
+		gcc \
+		musl-dev \
+		openssl \
+		&& mkdir -p /usr/local/bootstrap \
+	&& wget -q "$GOLANG_BOOTSTRAP_URL" -O golang.tar.gz \
+	&& echo "$GOLANG_BOOTSTRAP_SHA1  golang.tar.gz" | sha1sum -c - \
+	&& tar -C /usr/local/bootstrap -xzf golang.tar.gz \
+	&& rm golang.tar.gz \
+	&& cd /usr/local/bootstrap/go/src \
+	&& ./make.bash \
+	&& export GOROOT_BOOTSTRAP=/usr/local/bootstrap/go \
+		&& wget -q "$GOLANG_SRC_URL" -O golang.tar.gz \
+	&& echo "$GOLANG_SRC_SHA256  golang.tar.gz" | sha256sum -c - \
+	&& tar -C /usr/local -xzf golang.tar.gz \
+	&& rm golang.tar.gz \
+	&& cd /usr/local/go/src \
+	&& ./make.bash \
+		&& rm -rf /usr/local/bootstrap /usr/local/go/pkg/bootstrap \
+	&& apk del .build-deps
+```
+
+-	Created: Thu, 18 Feb 2016 00:28:16 GMT
+-	Parent Layer: `6b8e692a2883a58fafd14545963a65bf0094f745025dcac0e4429b8daa9613ef`
+-	Docker Version: 1.9.1
+-	Virtual Size: 233.2 MB (233199977 bytes)
+-	v2 Blob: `sha256:76d45871cc716c5f8f4e94880a399074ee9112deeac08cd147f2fedc1d9351dc`
+-	v2 Content-Length: 59.6 MB (59621137 bytes)
+
+#### `68730692564ddaca3c7172ce3fbe665b3d758a95653f2fb09eabbf45530be41a`
+
+```dockerfile
+ENV GOPATH=/go
+```
+
+-	Created: Thu, 18 Feb 2016 00:28:30 GMT
+-	Parent Layer: `4a9dca4b76af673ddfa5e7fd0ef17979ffc5dd47e8cf1d99ba58a818a390e0e6`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `31454b25dc8c70ee78823894b51b60ca6b612dddc682a3c181e9fd1d2b106799`
+
+```dockerfile
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Created: Thu, 18 Feb 2016 00:28:31 GMT
+-	Parent Layer: `68730692564ddaca3c7172ce3fbe665b3d758a95653f2fb09eabbf45530be41a`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `967fc98e7cbeb9925676bfc3791b3354c1053cb13ea1c8d383a233910cada314`
+
+```dockerfile
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+```
+
+-	Created: Thu, 18 Feb 2016 00:28:33 GMT
+-	Parent Layer: `31454b25dc8c70ee78823894b51b60ca6b612dddc682a3c181e9fd1d2b106799`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:c72444438452f97908d46973f4a188a4257c0481d11437f0d0e39cc41fee28f2`
+-	v2 Content-Length: 122.0 B
+
+#### `3523f1ddd5726b0800c0c6d15da6d7c6bdb10ef22462cb644f6c854c9e796b73`
+
+```dockerfile
+WORKDIR /go
+```
+
+-	Created: Thu, 18 Feb 2016 00:28:34 GMT
+-	Parent Layer: `967fc98e7cbeb9925676bfc3791b3354c1053cb13ea1c8d383a233910cada314`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+## `golang:alpine`
+
+```console
+$ docker pull library/golang@sha256:80ba354431ed945d3eb156dc25b8656ce9c0efbfc6a7ea5acdd4428f4f3b001b
+```
+
+-	Total Virtual Size: 238.0 MB (237993844 bytes)
+-	Total v2 Content-Length: 61.9 MB (61940530 bytes)
+
+### Layers (12)
+
+#### `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
+
+```dockerfile
+ADD file:0f9cfb2e848f093649aca9cc67927e4d04a74e150e0d92f4ad18ee583a287bf2 in /
+```
+
+-	Created: Wed, 17 Feb 2016 15:51:37 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 4.8 MB (4793867 bytes)
+-	v2 Blob: `sha256:ee54741ab35b188477c19fddc30356317b091177966da94c2e9391de49fc7f43`
+-	v2 Content-Length: 2.3 MB (2318983 bytes)
+
+#### `ff9ee6545c3c67e12c27f27462bf1cabb628e034e5e09883cd1eef2f91ebf5b0`
+
+```dockerfile
+ENV GOLANG_VERSION=1.6
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:11 GMT
+-	Parent Layer: `9d710148acd0066166bf3ce04894072b2f3caed24d0295ae2fa136fb7f602605`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `592c4eace63422b4c249f4f62502b4d9c5dd36a2e8fb06c7755f953d68290484`
+
+```dockerfile
+ENV GOLANG_SRC_URL=https://golang.org/dl/go1.6.src.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:12 GMT
+-	Parent Layer: `ff9ee6545c3c67e12c27f27462bf1cabb628e034e5e09883cd1eef2f91ebf5b0`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `3c3e8c0aa381a892ed4923d3cd67357119ff429331488cdc598e3bdec7071694`
+
+```dockerfile
+ENV GOLANG_SRC_SHA256=a96cce8ce43a9bf9b2a4c7d470bc7ee0cb00410da815980681c8353218dcf146
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:12 GMT
+-	Parent Layer: `592c4eace63422b4c249f4f62502b4d9c5dd36a2e8fb06c7755f953d68290484`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `48a35b0b17c2da676240f35b7a6749b39f74df999d8d708a3966f0015f11a064`
+
+```dockerfile
+ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:13 GMT
+-	Parent Layer: `3c3e8c0aa381a892ed4923d3cd67357119ff429331488cdc598e3bdec7071694`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `a95013ca0148b2dfa191dda4bb754e6a9a832d028bbdb051e23ef0cb82023b27`
+
+```dockerfile
+ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:14 GMT
+-	Parent Layer: `48a35b0b17c2da676240f35b7a6749b39f74df999d8d708a3966f0015f11a064`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `6b8e692a2883a58fafd14545963a65bf0094f745025dcac0e4429b8daa9613ef`
+
+```dockerfile
+ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
+```
+
+-	Created: Thu, 18 Feb 2016 00:26:15 GMT
+-	Parent Layer: `a95013ca0148b2dfa191dda4bb754e6a9a832d028bbdb051e23ef0cb82023b27`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `4a9dca4b76af673ddfa5e7fd0ef17979ffc5dd47e8cf1d99ba58a818a390e0e6`
+
+```dockerfile
+RUN set -ex \
+	&& apk add --no-cache --virtual .build-deps \
+		bash \
+		ca-certificates \
+		gcc \
+		musl-dev \
+		openssl \
+		&& mkdir -p /usr/local/bootstrap \
+	&& wget -q "$GOLANG_BOOTSTRAP_URL" -O golang.tar.gz \
+	&& echo "$GOLANG_BOOTSTRAP_SHA1  golang.tar.gz" | sha1sum -c - \
+	&& tar -C /usr/local/bootstrap -xzf golang.tar.gz \
+	&& rm golang.tar.gz \
+	&& cd /usr/local/bootstrap/go/src \
+	&& ./make.bash \
+	&& export GOROOT_BOOTSTRAP=/usr/local/bootstrap/go \
+		&& wget -q "$GOLANG_SRC_URL" -O golang.tar.gz \
+	&& echo "$GOLANG_SRC_SHA256  golang.tar.gz" | sha256sum -c - \
+	&& tar -C /usr/local -xzf golang.tar.gz \
+	&& rm golang.tar.gz \
+	&& cd /usr/local/go/src \
+	&& ./make.bash \
+		&& rm -rf /usr/local/bootstrap /usr/local/go/pkg/bootstrap \
+	&& apk del .build-deps
+```
+
+-	Created: Thu, 18 Feb 2016 00:28:16 GMT
+-	Parent Layer: `6b8e692a2883a58fafd14545963a65bf0094f745025dcac0e4429b8daa9613ef`
+-	Docker Version: 1.9.1
+-	Virtual Size: 233.2 MB (233199977 bytes)
+-	v2 Blob: `sha256:76d45871cc716c5f8f4e94880a399074ee9112deeac08cd147f2fedc1d9351dc`
+-	v2 Content-Length: 59.6 MB (59621137 bytes)
+
+#### `68730692564ddaca3c7172ce3fbe665b3d758a95653f2fb09eabbf45530be41a`
+
+```dockerfile
+ENV GOPATH=/go
+```
+
+-	Created: Thu, 18 Feb 2016 00:28:30 GMT
+-	Parent Layer: `4a9dca4b76af673ddfa5e7fd0ef17979ffc5dd47e8cf1d99ba58a818a390e0e6`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `31454b25dc8c70ee78823894b51b60ca6b612dddc682a3c181e9fd1d2b106799`
+
+```dockerfile
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+-	Created: Thu, 18 Feb 2016 00:28:31 GMT
+-	Parent Layer: `68730692564ddaca3c7172ce3fbe665b3d758a95653f2fb09eabbf45530be41a`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+#### `967fc98e7cbeb9925676bfc3791b3354c1053cb13ea1c8d383a233910cada314`
+
+```dockerfile
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+```
+
+-	Created: Thu, 18 Feb 2016 00:28:33 GMT
+-	Parent Layer: `31454b25dc8c70ee78823894b51b60ca6b612dddc682a3c181e9fd1d2b106799`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:c72444438452f97908d46973f4a188a4257c0481d11437f0d0e39cc41fee28f2`
+-	v2 Content-Length: 122.0 B
+
+#### `3523f1ddd5726b0800c0c6d15da6d7c6bdb10ef22462cb644f6c854c9e796b73`
+
+```dockerfile
+WORKDIR /go
+```
+
+-	Created: Thu, 18 Feb 2016 00:28:34 GMT
+-	Parent Layer: `967fc98e7cbeb9925676bfc3791b3354c1053cb13ea1c8d383a233910cada314`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B

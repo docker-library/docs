@@ -5,9 +5,9 @@
 -	[`2.6.11`, `2.6`, `2` (*2.6/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/2.6/Dockerfile)
 -	[`3.0.9`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/3.0/Dockerfile)
 -	[`3.1.9`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/3.1/Dockerfile)
--	[`3.2.1`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/7da0e6d6520607c99d40cf71a2e4b0a2da0beca9/3.2/Dockerfile)
+-	[`3.2.3`, `3.2`, `3`, `latest` (*3.2/Dockerfile*)](https://github.com/docker-library/mongo/blob/8db153365063d518bbb23e9420b39798d2947222/3.2/Dockerfile)
 
-[![](https://badge.imagelayers.io/mongo:latest.svg)](https://imagelayers.io/?images=mongo:2.2.7,mongo:2.4.14,mongo:2.6.11,mongo:3.0.9,mongo:3.1.9,mongo:3.2.1)
+[![](https://badge.imagelayers.io/mongo:latest.svg)](https://imagelayers.io/?images=mongo:2.2.7,mongo:2.4.14,mongo:2.6.11,mongo:3.0.9,mongo:3.1.9,mongo:3.2.3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mongo`)](https://github.com/docker-library/official-images/blob/master/library/mongo). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -55,6 +55,41 @@ Just add the `--storageEngine` argument if you want to use the WiredTiger storag
 $ docker run --name some-mongo -d mongo --storageEngine wiredTiger
 ```
 
+### Authentication and Authorization
+
+MongoDB does not require authentication by default, but it can be configured to do so. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.org/manual/core/authentication/) and [authorization](https://docs.mongodb.org/manual/core/authorization/) in more detail.
+
+#### Start the Database
+
+```console
+$ docker run --name some-mongo -d mongo --auth
+```
+
+#### Add the Initial Admin User
+
+```console
+$ docker exec -it some-mongo mongo admin
+connecting to: admin
+> db.createUser({ user: 'jsmith', pwd: 'some-initial-password', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
+Successfully added user: {
+	"user" : "jsmith",
+	"roles" : [
+		{
+			"role" : "userAdminAnyDatabase",
+			"db" : "admin"
+		}
+	]
+}
+```
+
+#### Connect Externally
+
+```console
+$ docker run -it --rm --link some-mongo:mongo mongo mongo -u jsmith -p some-initial-password --authenticationDatabase admin some-mongo/some-db
+> db.getName();
+some-db
+```
+
 ## Where to Store Data
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `mongo` images to familiarize themselves with the options available, including:
@@ -87,7 +122,7 @@ View [license information](https://github.com/mongodb/mongo/blob/7c3cfac300cfcca
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
+-	[`1.10.2`, `1.10`, `1`, `latest` (*1.10/Dockerfile*)](https://github.com/docker-library/docker/blob/8d8a46bbe4c018a262df473d844d548689787d6e/1.10/Dockerfile)
+-	[`1.10.2-dind`, `1.10-dind`, `1-dind`, `dind` (*1.10/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/dind/Dockerfile)
+-	[`1.10.2-git`, `1.10-git`, `1-git`, `git` (*1.10/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/git/Dockerfile)
 -	[`1.9.1`, `1.9` (*1.9/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.9/Dockerfile)
 -	[`1.9.1-dind`, `1.9-dind` (*1.9/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.9/dind/Dockerfile)
 -	[`1.9.1-git`, `1.9-git` (*1.9/git/Dockerfile*)](https://github.com/docker-library/docker/blob/7a61b09b70b0aba202019c6325821437981126f4/1.9/git/Dockerfile)
--	[`1.10.1`, `1.10`, `1`, `latest` (*1.10/Dockerfile*)](https://github.com/docker-library/docker/blob/43163c26853bcec4b5ac7865ad760fe67aa5d100/1.10/Dockerfile)
--	[`1.10.1-dind`, `1.10-dind`, `1-dind`, `dind` (*1.10/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/dind/Dockerfile)
--	[`1.10.1-git`, `1.10-git`, `1-git`, `git` (*1.10/git/Dockerfile*)](https://github.com/docker-library/docker/blob/8d7aa4652e4f677765947f19232eb17b1601f81c/1.10/git/Dockerfile)
 
-[![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.9.1,docker:1.9.1-dind,docker:1.9.1-git,docker:1.10.1,docker:1.10.1-dind,docker:1.10.1-git)
+[![](https://badge.imagelayers.io/docker:latest.svg)](https://imagelayers.io/?images=docker:1.10.2,docker:1.10.2-dind,docker:1.10.2-git,docker:1.9.1,docker:1.9.1-dind,docker:1.9.1-git)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/docker`)](https://github.com/docker-library/official-images/blob/master/library/docker). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -154,7 +154,7 @@ View [license information](https://github.com/docker/docker/blob/eb7b2ed6bbe3fbe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

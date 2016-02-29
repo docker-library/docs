@@ -1,13 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`openjdk-6b38-jdk`, `openjdk-6b38`, `openjdk-6-jdk`, `openjdk-6`, `6b38-jdk`, `6b38`, `6-jdk`, `6` (*openjdk-6-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/193df6f21c76adb7bf23c0a6791fcbc28f6ec5fc/openjdk-6-jdk/Dockerfile)
--	[`openjdk-6b38-jre`, `openjdk-6-jre`, `6b38-jre`, `6-jre` (*openjdk-6-jre/Dockerfile*)](https://github.com/docker-library/java/blob/193df6f21c76adb7bf23c0a6791fcbc28f6ec5fc/openjdk-6-jre/Dockerfile)
--	[`openjdk-7u95-jdk`, `openjdk-7u95`, `openjdk-7-jdk`, `openjdk-7`, `7u95-jdk`, `7u95`, `7-jdk`, `7` (*openjdk-7-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/f71d77ba3fe01cbfc625e38c1841531870f0538c/openjdk-7-jdk/Dockerfile)
--	[`openjdk-7u95-jre`, `openjdk-7-jre`, `7u95-jre`, `7-jre` (*openjdk-7-jre/Dockerfile*)](https://github.com/docker-library/java/blob/f71d77ba3fe01cbfc625e38c1841531870f0538c/openjdk-7-jre/Dockerfile)
--	[`openjdk-8u72-jdk`, `openjdk-8u72`, `openjdk-8-jdk`, `openjdk-8`, `8u72-jdk`, `8u72`, `8-jdk`, `8`, `jdk`, `latest` (*openjdk-8-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/2dd0496901a9c01c78895d0e6618b36c08f78bde/openjdk-8-jdk/Dockerfile)
--	[`openjdk-8u72-jre`, `openjdk-8-jre`, `8u72-jre`, `8-jre`, `jre` (*openjdk-8-jre/Dockerfile*)](https://github.com/docker-library/java/blob/2dd0496901a9c01c78895d0e6618b36c08f78bde/openjdk-8-jre/Dockerfile)
--	[`openjdk-9-b102-jdk`, `openjdk-9-b102`, `openjdk-9-jdk`, `openjdk-9`, `9-b102-jdk`, `9-b102`, `9-jdk`, `9` (*openjdk-9-jdk/Dockerfile*)](https://github.com/docker-library/java/blob/0235b70854cf9251ab4a1479696975412320a9bd/openjdk-9-jdk/Dockerfile)
--	[`openjdk-9-b102-jre`, `openjdk-9-jre`, `9-b102-jre`, `9-jre` (*openjdk-9-jre/Dockerfile*)](https://github.com/docker-library/java/blob/0235b70854cf9251ab4a1479696975412320a9bd/openjdk-9-jre/Dockerfile)
+-	[`openjdk-6b38-jdk`, `openjdk-6b38`, `openjdk-6-jdk`, `openjdk-6`, `6b38-jdk`, `6b38`, `6-jdk`, `6` (*openjdk-6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/193df6f21c76adb7bf23c0a6791fcbc28f6ec5fc/openjdk-6-jdk/Dockerfile)
+-	[`openjdk-6b38-jre`, `openjdk-6-jre`, `6b38-jre`, `6-jre` (*openjdk-6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/193df6f21c76adb7bf23c0a6791fcbc28f6ec5fc/openjdk-6-jre/Dockerfile)
+-	[`openjdk-7u95-jdk`, `openjdk-7u95`, `openjdk-7-jdk`, `openjdk-7`, `7u95-jdk`, `7u95`, `7-jdk`, `7` (*openjdk-7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/f71d77ba3fe01cbfc625e38c1841531870f0538c/openjdk-7-jdk/Dockerfile)
+-	[`openjdk-7u95-jre`, `openjdk-7-jre`, `7u95-jre`, `7-jre` (*openjdk-7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/f71d77ba3fe01cbfc625e38c1841531870f0538c/openjdk-7-jre/Dockerfile)
+-	[`openjdk-8u72-jdk`, `openjdk-8u72`, `openjdk-8-jdk`, `openjdk-8`, `8u72-jdk`, `8u72`, `8-jdk`, `8`, `jdk`, `latest` (*openjdk-8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2dd0496901a9c01c78895d0e6618b36c08f78bde/openjdk-8-jdk/Dockerfile)
+-	[`openjdk-8u72-jre`, `openjdk-8-jre`, `8u72-jre`, `8-jre`, `jre` (*openjdk-8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2dd0496901a9c01c78895d0e6618b36c08f78bde/openjdk-8-jre/Dockerfile)
+-	[`openjdk-9-b102-jdk`, `openjdk-9-b102`, `openjdk-9-jdk`, `openjdk-9`, `9-b102-jdk`, `9-b102`, `9-jdk`, `9` (*openjdk-9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0235b70854cf9251ab4a1479696975412320a9bd/openjdk-9-jdk/Dockerfile)
+-	[`openjdk-9-b102-jre`, `openjdk-9-jre`, `9-b102-jre`, `9-jre` (*openjdk-9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0235b70854cf9251ab4a1479696975412320a9bd/openjdk-9-jre/Dockerfile)
 
 [![](https://badge.imagelayers.io/java:latest.svg)](https://imagelayers.io/?images=java:openjdk-6b38-jdk,java:openjdk-6b38-jre,java:openjdk-7u95-jdk,java:openjdk-7u95-jre,java:openjdk-8u72-jdk,java:openjdk-8u72-jre,java:openjdk-9-b102-jdk,java:openjdk-9-b102-jre)
 
@@ -73,7 +73,7 @@ View [license information](http://openjdk.java.net/legal/gplv2+ce.html) for the 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

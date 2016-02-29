@@ -1,9 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/0de4791998e295f9b71ff4d079dea424fe397853/5/Dockerfile)
--	[`4` (*4/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/0de4791998e295f9b71ff4d079dea424fe397853/4/Dockerfile)
+-	[`latest`, `5` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/4da7cfe586ac0ef3fe3856d48d0410bf83c0cbe2/5/Dockerfile)
 
-[![](https://badge.imagelayers.io/mageia:latest.svg)](https://imagelayers.io/?images=mageia:latest,mageia:4)
+[![](https://badge.imagelayers.io/mageia:latest.svg)](https://imagelayers.io/?images=mageia:latest)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mageia`)](https://github.com/docker-library/official-images/blob/master/library/mageia). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -46,7 +45,7 @@ All images install the following packages:
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.10.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
