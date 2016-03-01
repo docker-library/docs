@@ -19,6 +19,7 @@ Point your browser to `http://localhost` and watch the Welcome page showing real
 ## Custom settings
 
 It is possibile to customize each aspect of the Lightstreamer instance running into the container.
+
 For example, a specific configuration file may be supplied as follows:
 
 ```console
