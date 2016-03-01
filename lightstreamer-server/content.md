@@ -11,7 +11,7 @@ Lightstreamer is a real-time messaging server optimized for the Internet. Blendi
 Launch the container with the default configuration:
 
 ```console
-$ docker run --rm --name ls-server -d -p 80:8080 lightstreamer-server
+$ docker run --name ls-server -d -p 80:8080 lightstreamer-server
 ```
 
 Point your browser to `http://localhost` and watch the Welcome page showing real time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
@@ -22,19 +22,19 @@ It is possibile to customize each aspect of the Lightstreamer instance runnning 
 For example, a specific configuration file may be supplied as follows:
 
 ```console
-$ docker run --name ls-server --rm -v /path/to/custom-config/lightstreamer-conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer-server
+$ docker run --name ls-server -v /path/to/custom-config/lightstreamer-conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer-server
 ```
 
 In the same way, you could provide a custom logging configuration, maybe in this case also specifiyng a dedicated volume to ensure both the persistence of log files and better performance of the container:
 
 ```console
-$ docker run --name ls-server --rm -v /path/to/custom/lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/logs:/lightstreamer/logs -d -p 80:8080 lightstreamer-server
+$ docker run --name ls-server -v /path/to/custom/lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/logs:/lightstreamer/logs -d -p 80:8080 lightstreamer-server
 ```
 
 If you also change your `lightstreamer_log_conf.xml` file the default logging path from `../logs` to `/path/to/dest/logs`:
 
 ```console
-$ docker run --name ls-server --rm -v /path/to/custom/lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/hosted/logs:/path/to/dest/logs -d -p 80:8080 lightstreamer-server
+$ docker run --name ls-server -v /path/to/custom/lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/hosted/logs:/path/to/dest/logs -d -p 80:8080 lightstreamer-server
 ```
 
 Alternatevely, the above tasks can be executed by deriving a new image through a `Dockerfile` as the following:
@@ -57,7 +57,7 @@ and a new container will be built along with the provided files.
 After that, launch the container:
 
 ```console
-$ docker run --rm --name ls-server -d -p 80:8080 my-lightstreamer-server
+$ docker run --name ls-server -d -p 80:8080 my-lightstreamer-server
 ```
 
 To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the lighstreamer_conf.xml and lighstreamer_log_conf.xml files you can find under the "conf" folder of installation directory.
