@@ -14,7 +14,7 @@ Launch the container with the default configuration:
 $ docker run --name ls-server -d -p 80:8080 lightstreamer-server
 ```
 
-Point your browser to http://localhost and watch the Welcome page showing real time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
+Point your browser to `http://localhost` and watch the Welcome page showing real time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
 
 ## Custom Settings
 
@@ -31,7 +31,7 @@ In the same way, you could provide a custom logging configuration, maybe in this
 $ docker run --name ls-server -v /path/to/custom/lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/logs:/lightstreamer/logs -d -p 80:8080 lightstreamer-server
 ```
 
-If you also change your lightstreamer_log_conf.xml file the default logging path from "../logs" to "/path/to/dest/logs":
+If you also change your `lightstreamer_log_conf.xml` file the default logging path from `../logs` to `/path/to/dest/logs`:
 
 ```console
 $ docker run --name ls-server -v /path/to/custom/lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/hosted/logs:/path/to/dest/logs -d -p 80:8080 lightstreamer-server
