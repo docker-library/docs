@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `0.54`, `0.54.5` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/f1aa66b6f18e73e2c36c4820a0affacf8447d747/Dockerfile)
+-	[`latest`, `0.54`, `0.54.6` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/a29b70f1ede442ea70e77b628dd631a27ca776e8/Dockerfile)
 -	[`0.52`, `0.52.4` (*Dockerfile*)](https://github.com/crate/docker-crate/blob/cce8f796ba8936250eb380235cde47be494d1e95/Dockerfile)
 
 [![](https://badge.imagelayers.io/crate:latest.svg)](https://imagelayers.io/?images=crate:latest,crate:0.52)
