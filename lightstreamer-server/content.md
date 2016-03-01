@@ -18,36 +18,36 @@ Point your browser to `http://localhost` and watch the Welcome page showing real
 
 ## Custom Settings
 
-It is possibile to customize each aspect of the Lightstreamer instance runnning into the container.
+It is possibile to customize each aspect of the Lightstreamer instance running into the container.
 For example, a specific configuration file may be supplied as follows:
 
 ```console
-$ docker run --name ls-server -v /path/to/custom-config/lightstreamer-conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer-server
+$ docker run --name ls-server -v /path/to/my-lightstreamer-conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer-server
 ```
 
-In the same way, you could provide a custom logging configuration, maybe in this case also specifiyng a dedicated volume to ensure both the persistence of log files and better performance of the container:
+In the same way, you could provide a custom logging configuration, maybe in this case also specifying a dedicated volume to ensure both the persistence of log files and better performance of the container:
 
 ```console
-$ docker run --name ls-server -v /path/to/custom/lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/logs:/lightstreamer/logs -d -p 80:8080 lightstreamer-server
+$ docker run --name ls-server -v /path/to/my-lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/logs:/lightstreamer/logs -d -p 80:8080 lightstreamer-server
 ```
 
-If you also change your `lightstreamer_log_conf.xml` file the default logging path from `../logs` to `/path/to/dest/logs`:
+If you also change in your `my-lightstreamer_log_conf.xml` file the default logging path from `../logs` to `/path/to/dest/logs`:
 
 ```console
-$ docker run --name ls-server -v /path/to/custom/lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/hosted/logs:/path/to/dest/logs -d -p 80:8080 lightstreamer-server
+$ docker run --name ls-server -v /path/to/my-lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/hosted/logs:/path/to/dest/logs -d -p 80:8080 lightstreamer-server
 ```
 
-Alternatevely, the above tasks can be executed by deriving a new image through a `Dockerfile` as the following:
+Alternatively, the above tasks can be executed by deriving a new image through a `Dockerfile` as the following:
 
 ```dockerfile
 FROM lightstreamer-server
 
-# Copy only required custom configuration files
-COPY lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
-COPY lightsttreamer_log.xml /lightstreamer/conf/lightstreamer_log_conf.xml
+# Please specify a COPY command only for the the required custom configuration file
+COPY my-lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
+COPY my-lightsttreamer_log.xml /lightstreamer/conf/lightstreamer_log_conf.xml
 ```
 
-where `lightstreamer_conf.xml` and `lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory of the Dockerfile. Simply run the command:
+where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile. Simply run the command:
 
 ```
 $ docker build -t my-lightstreamer-server
@@ -60,34 +60,35 @@ After that, launch the container:
 $ docker run --name ls-server -d -p 80:8080 my-lightstreamer-server
 ```
 
-To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the lighstreamer_conf.xml and lighstreamer_log_conf.xml files you can find under the "conf" folder of installation directory.
+To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the `lighstreamer_conf.xml` and `lighstreamer_log_conf.xml` files you can find under the `conf` folder of installation directory.
 
 ## Deploying Adapter Sets
 You might want to use this image even with any Adapter Set, either developed by yourself or provided by third parties.
-To accomplish such goal, you may use similar strategies as illustrated above:
+To accomplish such goal, you may use similar strategies to those illustrated above:
 
 ### Deploy a new Adapter Set
 
 To deploy a single custom Adapter Set, the simplest way is to attach its files into the factory adapters folder, as follows:
 
 ```console
-$ docker run --name ls-server -v /path/to/my/adapter-set:/lightstreamer/adapters/my-adapter-set -d -p 80:8080 lightstreamer-server
+$ docker run --name ls-server -v /path/to/my-adapter-set:/lightstreamer/adapters/my-adapter-set -d -p 80:8080 lightstreamer-server
 ```
 ### Full replace of the "adapters" folder
 
 In the case you have many custom Adapter Sets to deploy, a more appropriate strategy is to replace the factory adapters folder with the one in your host machine:
 
 ```console
-$ docker run --name ls-server -v /path/to/my/adapters:/lightstreamer/adapters -d -p 80:8080 lightstreamer-server
+$ docker run --name ls-server -v /path/to/my-adapters:/lightstreamer/adapters -d -p 80:8080 lightstreamer-server
 ```
-In this case, the /path/to/my-adapters folder has to be structured with the required layout for an adapters folder:
+In this case, the `/path/to/my-adapters` folder has to be structured with the required layout for an adapters folder:
 ```
-/path/to/my/adapters/+
+/path/to/my-adapters/+
                      + my_adapter_set_1
                      + my_adapter_set_2
                      + ...
                      + my_adapter_set_N
 ```
+
 ### Generate a new image 
 Once again, a linear and clean technique is to generate a new image including all needed files. In this case, you could write a simple Docker file in which the list of all your Adapter Sets is provided:
 
@@ -102,12 +103,12 @@ COPY my-adapter-set-3 /lightstreamer/adapters/my-adapter-set-3
 Then, just build and start the container as already explained.
 
 ## Deploy web server pages
-There might be some circumstances where youd would like provide custom pages for the internal web server of the Lightstreamer Server.
-Even in this case, it is possible to customize the container by employing similar techniques as above.
+There might be some circumstances where you would like provide custom pages for the internal web server of the Lightstreamer Server.
+Even in this case, it is possible to customize the container by employing the same techniques as above.
 
 For example, with the following command you will be able to fully replace the factory `pages` folder:
 
 ```console
-$ docker run --name ls-server -v /path/to/my/custom/pages:/lightstreamer/pages -d -p 80:8080 lightstreamer-server
+$ docker run --name ls-server -v /path/to/custom/pages:/lightstreamer/pages -d -p 80:8080 lightstreamer-server
 ```
-where `/path/to/my/custom/pages` is the path in your host machine containing the replacing web content files.
+where `/path/to/custom/pages` is the path in your host machine containing the replacing web content files.
