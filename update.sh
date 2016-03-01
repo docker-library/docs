@@ -46,6 +46,7 @@ declare -A otherRepos=(
 	[jetty]='https://github.com/appropriate/docker-jetty'
 	[joomla]='https://github.com/joomla/docker-joomla'
 	[jruby]='https://github.com/cpuguy83/docker-jruby'
+        [lightstreamer-server]='https://github.com/Lightstreamer/Docker'
 	[kaazing-gateway]='https://github.com/kaazing/gateway.docker'
 	[mageia]='https://github.com/juanluisbaptiste/docker-brew-mageia'
 	[maven]='https://github.com/carlossg/docker-maven'
@@ -80,6 +81,7 @@ declare -A otherRepos=(
 dockerLatest="$(curl -fsSL 'https://get.docker.com/latest')"
 
 for repo in "${repos[@]}"; do
+	echo "Processing: $repo"
 	if [ -x "$repo/update.sh" ]; then
 		( set -x; "$repo/update.sh" )
 	fi
