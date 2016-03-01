@@ -48,13 +48,16 @@ COPY my-lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
 COPY my-lightsttreamer_log.xml /lightstreamer/conf/lightstreamer_log_conf.xml
 ```
 
-where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile. By simplying running the command:
+where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile.
+
+By simplying running the command:
 
 ```
 $ docker build -t my-lightstreamer-server
 ```
 
 the new image will be built along with the provided files.
+
 After that, launch the container:
 
 ```console
@@ -65,6 +68,7 @@ To get more detailed information on how to configure the Lightstreamer server, p
 
 ## Deployment of Adapter Sets
 You might want to use this image even with any Adapter Set, either developed by yourself or provided by third parties.
+
 To accomplish such goal, you may use similar strategies to those illustrated above:
 
 ### Deployment of a single Adapter Set
@@ -91,7 +95,9 @@ In this case, the `/path/to/my-adapters` folder has to be structured with the re
 ```
 
 ### Building a new image 
-Once again, a linear and clean approach is to make a new image including all needed files. In this case, you could write a simple Docker file in which the list of all your Adapter Sets configuration files is provided:
+Once again, a linear and clean approach is to make a new image including all needed files.
+
+In this case, you could write a simple Docker file in which the list of all your Adapter Sets configuration files is provided:
 
 ```dockerfile
 FROM lightstreamer-server
@@ -105,6 +111,7 @@ Then, just build and start the container as already explained.
 
 ## Deployment of web server pages
 There might be some circumstances where you would like provide custom pages for the internal web server of the Lightstreamer Server.
+
 Even in this case, it is possible to customize the container by employing the same techniques as above.
 
 For example, with the following command you will be able to fully replace the factory `pages` folder:
