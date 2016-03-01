@@ -10,10 +10,6 @@
 -	[`debian:oldstable`](#debianoldstable)
 -	[`debian:oldstable-backports`](#debianoldstable-backports)
 -	[`debian:sid`](#debiansid)
--	[`debian:6.0.10`](#debian6010)
--	[`debian:6.0`](#debian60)
--	[`debian:6`](#debian6)
--	[`debian:squeeze`](#debiansqueeze)
 -	[`debian:stable`](#debianstable)
 -	[`debian:stable-backports`](#debianstable-backports)
 -	[`debian:stretch`](#debianstretch)
@@ -29,34 +25,34 @@
 ## `debian:8.3`
 
 ```console
-$ docker pull library/debian@sha256:3ab36580a4fff1413ff50c4095f17f9365196a695893443dd02355faf107fd6e
+$ docker pull library/debian@sha256:0a2584122bc0b7c87b7c0e5fe2ae789c8b99bde3e2e53461da56b4b7c9108a08
 ```
 
--	Total Virtual Size: 125.1 MB (125109771 bytes)
--	Total v2 Content-Length: 51.4 MB (51366691 bytes)
+-	Total Virtual Size: 125.1 MB (125110803 bytes)
+-	Total v2 Content-Length: 51.4 MB (51367747 bytes)
 
 ### Layers (2)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -65,34 +61,34 @@ CMD ["/bin/bash"]
 ## `debian:8`
 
 ```console
-$ docker pull library/debian@sha256:4bb8bc69ba5f94950109adcecc0cd1ed3f9febec847acb567a813d3caea093ec
+$ docker pull library/debian@sha256:da3ee2b9ab18bdb2718e802680c549739a4f88fbbfccd611cc6699029735f806
 ```
 
--	Total Virtual Size: 125.1 MB (125109771 bytes)
--	Total v2 Content-Length: 51.4 MB (51366691 bytes)
+-	Total Virtual Size: 125.1 MB (125110803 bytes)
+-	Total v2 Content-Length: 51.4 MB (51367747 bytes)
 
 ### Layers (2)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -101,34 +97,34 @@ CMD ["/bin/bash"]
 ## `debian:jessie`
 
 ```console
-$ docker pull library/debian@sha256:f4261eae2011306946bca423ae16940467fa6bee6e9c2c549189d9d83ca22112
+$ docker pull library/debian@sha256:a9c958be96d7d40df920e7041608f2f017af81800ca5ad23e327bc402626b58e
 ```
 
--	Total Virtual Size: 125.1 MB (125109771 bytes)
--	Total v2 Content-Length: 51.4 MB (51366691 bytes)
+-	Total Virtual Size: 125.1 MB (125110803 bytes)
+-	Total v2 Content-Length: 51.4 MB (51367747 bytes)
 
 ### Layers (2)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -137,34 +133,34 @@ CMD ["/bin/bash"]
 ## `debian:latest`
 
 ```console
-$ docker pull library/debian@sha256:60ea1fc595f0da2afd6fc1d39efb7a00b8d7138a30932673b1adce0500107c5f
+$ docker pull library/debian@sha256:e7d38b3517548a1c71e41bffe9c8ae6d6d29546ce46bf62159837aad072c90aa
 ```
 
--	Total Virtual Size: 125.1 MB (125109771 bytes)
--	Total v2 Content-Length: 51.4 MB (51366691 bytes)
+-	Total Virtual Size: 125.1 MB (125110803 bytes)
+-	Total v2 Content-Length: 51.4 MB (51367747 bytes)
 
 ### Layers (2)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -173,83 +169,83 @@ CMD ["/bin/bash"]
 ## `debian:jessie-backports`
 
 ```console
-$ docker pull library/debian@sha256:d45054d827d9295700dbdbc8208cb2850fbbbe34c022153b35476019ce05a7e3
+$ docker pull library/debian@sha256:3c91239372f91c340d7549fe37ab26c38d91512c62d714757626a74396010e17
 ```
 
--	Total Virtual Size: 125.1 MB (125109832 bytes)
--	Total v2 Content-Length: 51.4 MB (51366910 bytes)
+-	Total Virtual Size: 125.1 MB (125110864 bytes)
+-	Total v2 Content-Length: 51.4 MB (51367965 bytes)
 
 ### Layers (3)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7f6f972d433115b7129184d789252ce507cd4a20dca5ce5cad28640a51dab00e`
+#### `1ca47dc25cc1ba1d4bee2f01562f7dc4fb5dd35fb84d2bf706325df350ea895a`
 
 ```dockerfile
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:56 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Tue, 01 Mar 2016 18:51:34 GMT
+-	Parent Layer: `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:87758b36d07fe5d8e6055692661fcd1c97df382f218fa4034e74150e42b9020d`
--	v2 Content-Length: 219.0 B
+-	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
+-	v2 Content-Length: 218.0 B
 
 ## `debian:oldstable`
 
 ```console
-$ docker pull library/debian@sha256:ad8601fbf9e2b3f986779ed8c9e01a8ec63ee70d4d3a05b6507bc57328adbfa8
+$ docker pull library/debian@sha256:211b6fc3ad4ec0987797f2dc6e256eb9e688454723f93d9f7af168644ab687f2
 ```
 
--	Total Virtual Size: 84.9 MB (84905073 bytes)
--	Total v2 Content-Length: 37.2 MB (37189408 bytes)
+-	Total Virtual Size: 84.9 MB (84906269 bytes)
+-	Total v2 Content-Length: 37.2 MB (37190569 bytes)
 
 ### Layers (2)
 
-#### `be37037ba777ad6d561304c1664af7894adabc2a93591f45f82a35d5fb82da6a`
+#### `9cb7223085c2cddd9d010168c65b3b4ad3b3ef5738342f3c9e1f8a2af18583a9`
 
 ```dockerfile
-ADD file:24b387cf1ae193e037f74e0d8b6285a5b5b7fbddfd1c8871ffcc56cd58e8ecd8 in /
+ADD file:57ae4fa55a6992ec0bf4a90a6f400f81e6fae5bf998d063820d872000b7ee2a0 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:25:02 GMT
+-	Created: Tue, 01 Mar 2016 18:51:40 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84905073 bytes)
--	v2 Blob: `sha256:3a9418230db17d48fd6d58e7da9fa48b3ea1ca772e31d327ca5711ccba8870d6`
--	v2 Content-Length: 37.2 MB (37189376 bytes)
+-	Virtual Size: 84.9 MB (84906269 bytes)
+-	v2 Blob: `sha256:4291b363c778948bbea3ae870b1c808b6ce3623d995e59290044e65cff91856c`
+-	v2 Content-Length: 37.2 MB (37190537 bytes)
 
-#### `cd6abb6b7aef52a9fcbda950cca7a4d8f912ca5b5b432dd38c4ddf9eec16e9b3`
+#### `e834edb83fdff7033a477807a161596d56829863454f245df94671bbe17f18b3`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:25:05 GMT
--	Parent Layer: `be37037ba777ad6d561304c1664af7894adabc2a93591f45f82a35d5fb82da6a`
+-	Created: Tue, 01 Mar 2016 18:51:42 GMT
+-	Parent Layer: `9cb7223085c2cddd9d010168c65b3b4ad3b3ef5738342f3c9e1f8a2af18583a9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -258,51 +254,51 @@ CMD ["/bin/bash"]
 ## `debian:oldstable-backports`
 
 ```console
-$ docker pull library/debian@sha256:ae018e3af9aa1c923dcf1e243de6275f31ec0896f1e4586e73daf81e2b882877
+$ docker pull library/debian@sha256:dc5e46699e7e7cbe5a9b41d51da64e5bd44217b05db662baf9cbddb9d03fbbc2
 ```
 
--	Total Virtual Size: 84.9 MB (84905137 bytes)
--	Total v2 Content-Length: 37.2 MB (37189631 bytes)
+-	Total Virtual Size: 84.9 MB (84906333 bytes)
+-	Total v2 Content-Length: 37.2 MB (37190790 bytes)
 
 ### Layers (3)
 
-#### `be37037ba777ad6d561304c1664af7894adabc2a93591f45f82a35d5fb82da6a`
+#### `9cb7223085c2cddd9d010168c65b3b4ad3b3ef5738342f3c9e1f8a2af18583a9`
 
 ```dockerfile
-ADD file:24b387cf1ae193e037f74e0d8b6285a5b5b7fbddfd1c8871ffcc56cd58e8ecd8 in /
+ADD file:57ae4fa55a6992ec0bf4a90a6f400f81e6fae5bf998d063820d872000b7ee2a0 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:25:02 GMT
+-	Created: Tue, 01 Mar 2016 18:51:40 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84905073 bytes)
--	v2 Blob: `sha256:3a9418230db17d48fd6d58e7da9fa48b3ea1ca772e31d327ca5711ccba8870d6`
--	v2 Content-Length: 37.2 MB (37189376 bytes)
+-	Virtual Size: 84.9 MB (84906269 bytes)
+-	v2 Blob: `sha256:4291b363c778948bbea3ae870b1c808b6ce3623d995e59290044e65cff91856c`
+-	v2 Content-Length: 37.2 MB (37190537 bytes)
 
-#### `cd6abb6b7aef52a9fcbda950cca7a4d8f912ca5b5b432dd38c4ddf9eec16e9b3`
+#### `e834edb83fdff7033a477807a161596d56829863454f245df94671bbe17f18b3`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:25:05 GMT
--	Parent Layer: `be37037ba777ad6d561304c1664af7894adabc2a93591f45f82a35d5fb82da6a`
+-	Created: Tue, 01 Mar 2016 18:51:42 GMT
+-	Parent Layer: `9cb7223085c2cddd9d010168c65b3b4ad3b3ef5738342f3c9e1f8a2af18583a9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f667e259802baf8ffd099c902e87cf4f5ddaef874815489ac4df12582165ecf6`
+#### `08171a9b34290f6bc903b38a6f777269f3d60c8036a3b7fd21910fe2d287f70e`
 
 ```dockerfile
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
--	Created: Tue, 16 Feb 2016 21:25:06 GMT
--	Parent Layer: `cd6abb6b7aef52a9fcbda950cca7a4d8f912ca5b5b432dd38c4ddf9eec16e9b3`
+-	Created: Tue, 01 Mar 2016 18:51:44 GMT
+-	Parent Layer: `e834edb83fdff7033a477807a161596d56829863454f245df94671bbe17f18b3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 64.0 B
--	v2 Blob: `sha256:45a275d6021d2dc534e7c2981fa54c319f8842e0392d59a79783bedf48d7d5c0`
--	v2 Content-Length: 223.0 B
+-	v2 Blob: `sha256:09b4926ce2f61a3d627d2593b7068ace30c05725b0395e5866a3a3779bc99ad7`
+-	v2 Content-Length: 221.0 B
 
 ## `debian:sid`
 
@@ -340,181 +336,37 @@ CMD ["/bin/bash"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-## `debian:6.0.10`
-
-```console
-$ docker pull library/debian@sha256:f5836a4b20089fa5808c34ac452be28667ce78106f2f1526d0ba7f5a9ea28e1e
-```
-
--	Total Virtual Size: 76.5 MB (76534288 bytes)
--	Total v2 Content-Length: 33.8 MB (33843178 bytes)
-
-### Layers (2)
-
-#### `4e507d091336a8ec91e1b0fd0e33f11625d8bf3494765d3dbec37ec17387cbf5`
-
-```dockerfile
-ADD file:09d717d62608e18d79af6b6cd5aae36f675bd5c4f34452ab1693b56bfbfe2520 in /
-```
-
--	Created: Tue, 16 Feb 2016 21:25:21 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 76.5 MB (76534288 bytes)
--	v2 Blob: `sha256:069873d23334d65630bbe5e303ced0c68181b694c7f5506b54bf5d8115b5af20`
--	v2 Content-Length: 33.8 MB (33843146 bytes)
-
-#### `ff11dd0897b8ded12196819a787b5bd6d5bf886d9a7836c21b070efb5d9e77e4`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Tue, 16 Feb 2016 21:25:24 GMT
--	Parent Layer: `4e507d091336a8ec91e1b0fd0e33f11625d8bf3494765d3dbec37ec17387cbf5`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
-
-## `debian:6.0`
-
-```console
-$ docker pull library/debian@sha256:c1c8313fae17e4e14f8367e97868667f0902d3ace64ba0e773b0625236e5c761
-```
-
--	Total Virtual Size: 76.5 MB (76534288 bytes)
--	Total v2 Content-Length: 33.8 MB (33843178 bytes)
-
-### Layers (2)
-
-#### `4e507d091336a8ec91e1b0fd0e33f11625d8bf3494765d3dbec37ec17387cbf5`
-
-```dockerfile
-ADD file:09d717d62608e18d79af6b6cd5aae36f675bd5c4f34452ab1693b56bfbfe2520 in /
-```
-
--	Created: Tue, 16 Feb 2016 21:25:21 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 76.5 MB (76534288 bytes)
--	v2 Blob: `sha256:069873d23334d65630bbe5e303ced0c68181b694c7f5506b54bf5d8115b5af20`
--	v2 Content-Length: 33.8 MB (33843146 bytes)
-
-#### `ff11dd0897b8ded12196819a787b5bd6d5bf886d9a7836c21b070efb5d9e77e4`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Tue, 16 Feb 2016 21:25:24 GMT
--	Parent Layer: `4e507d091336a8ec91e1b0fd0e33f11625d8bf3494765d3dbec37ec17387cbf5`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
-
-## `debian:6`
-
-```console
-$ docker pull library/debian@sha256:f3ef067962554c3352dc0c659ca563f73cc396fe0dea2a2c23a7964c6290f782
-```
-
--	Total Virtual Size: 76.5 MB (76534288 bytes)
--	Total v2 Content-Length: 33.8 MB (33843178 bytes)
-
-### Layers (2)
-
-#### `4e507d091336a8ec91e1b0fd0e33f11625d8bf3494765d3dbec37ec17387cbf5`
-
-```dockerfile
-ADD file:09d717d62608e18d79af6b6cd5aae36f675bd5c4f34452ab1693b56bfbfe2520 in /
-```
-
--	Created: Tue, 16 Feb 2016 21:25:21 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 76.5 MB (76534288 bytes)
--	v2 Blob: `sha256:069873d23334d65630bbe5e303ced0c68181b694c7f5506b54bf5d8115b5af20`
--	v2 Content-Length: 33.8 MB (33843146 bytes)
-
-#### `ff11dd0897b8ded12196819a787b5bd6d5bf886d9a7836c21b070efb5d9e77e4`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Tue, 16 Feb 2016 21:25:24 GMT
--	Parent Layer: `4e507d091336a8ec91e1b0fd0e33f11625d8bf3494765d3dbec37ec17387cbf5`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
-
-## `debian:squeeze`
-
-```console
-$ docker pull library/debian@sha256:f028d90e41fbfc9e453c6df47fa4bf45b12314319788ddffd52e951ddc51ed29
-```
-
--	Total Virtual Size: 76.5 MB (76534288 bytes)
--	Total v2 Content-Length: 33.8 MB (33843178 bytes)
-
-### Layers (2)
-
-#### `4e507d091336a8ec91e1b0fd0e33f11625d8bf3494765d3dbec37ec17387cbf5`
-
-```dockerfile
-ADD file:09d717d62608e18d79af6b6cd5aae36f675bd5c4f34452ab1693b56bfbfe2520 in /
-```
-
--	Created: Tue, 16 Feb 2016 21:25:21 GMT
--	Docker Version: 1.9.1
--	Virtual Size: 76.5 MB (76534288 bytes)
--	v2 Blob: `sha256:069873d23334d65630bbe5e303ced0c68181b694c7f5506b54bf5d8115b5af20`
--	v2 Content-Length: 33.8 MB (33843146 bytes)
-
-#### `ff11dd0897b8ded12196819a787b5bd6d5bf886d9a7836c21b070efb5d9e77e4`
-
-```dockerfile
-CMD ["/bin/bash"]
-```
-
--	Created: Tue, 16 Feb 2016 21:25:24 GMT
--	Parent Layer: `4e507d091336a8ec91e1b0fd0e33f11625d8bf3494765d3dbec37ec17387cbf5`
--	Docker Version: 1.9.1
--	Virtual Size: 0.0 B
--	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
--	v2 Content-Length: 32.0 B
-
 ## `debian:stable`
 
 ```console
-$ docker pull library/debian@sha256:9e074dd3f3e32a44380326d4e898c3fe9aad1a634cdaf6bc1f5ab0b7356654b9
+$ docker pull library/debian@sha256:ce1ad780e3fc369a7ba8231f84a36d0fe485f0cb73639dc99d4d440b7a08783c
 ```
 
--	Total Virtual Size: 125.1 MB (125128169 bytes)
--	Total v2 Content-Length: 51.4 MB (51368312 bytes)
+-	Total Virtual Size: 125.1 MB (125129201 bytes)
+-	Total v2 Content-Length: 51.4 MB (51368833 bytes)
 
 ### Layers (2)
 
-#### `53c34d26183dde97ae6609194d05e28a52eed6b148f0fa0ee41694f5c459fa0a`
+#### `61e07b5c862cd13d9a2003ab33eeaab08d9c736472f7699218b4e1e0dce583ca`
 
 ```dockerfile
-ADD file:2a1b70324aad9e67208ccd37f3d12ba9558938dc68ae51ae01075d8934d995cc in /
+ADD file:a3185e5319d5afaf3f7830c621c9cdefa2a9e6a3c132486450099bc92ef6bfb4 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:25:47 GMT
+-	Created: Tue, 01 Mar 2016 18:51:52 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125128169 bytes)
--	v2 Blob: `sha256:7a2d89457c2fa310cb58e418fc48293ce1fccd265b647dae4da3d551df70cbaa`
--	v2 Content-Length: 51.4 MB (51368280 bytes)
+-	Virtual Size: 125.1 MB (125129201 bytes)
+-	v2 Blob: `sha256:3246083118e968cb1d7b8ba69df00a1a680c91b553577042d4e5472e99cdcec2`
+-	v2 Content-Length: 51.4 MB (51368801 bytes)
 
-#### `de6e1ece5d0c556a9037303726cca414e5f429585e273362df945f51849bf047`
+#### `1a8c5074a5a3cd336fe219c15e29a5446b18550290aedad0f628f9c0a3b6cb78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:25:49 GMT
--	Parent Layer: `53c34d26183dde97ae6609194d05e28a52eed6b148f0fa0ee41694f5c459fa0a`
+-	Created: Tue, 01 Mar 2016 18:51:55 GMT
+-	Parent Layer: `61e07b5c862cd13d9a2003ab33eeaab08d9c736472f7699218b4e1e0dce583ca`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -523,50 +375,50 @@ CMD ["/bin/bash"]
 ## `debian:stable-backports`
 
 ```console
-$ docker pull library/debian@sha256:77cee92f617a46ac264122ec1f4f1fe3ac30d8a6acabbca96116242946655ddb
+$ docker pull library/debian@sha256:21364efc00cbadeb3be5ceba6ad9c7968afa4832b90a8d29ac1616fae9aa603c
 ```
 
--	Total Virtual Size: 125.1 MB (125128230 bytes)
--	Total v2 Content-Length: 51.4 MB (51368531 bytes)
+-	Total Virtual Size: 125.1 MB (125129262 bytes)
+-	Total v2 Content-Length: 51.4 MB (51369052 bytes)
 
 ### Layers (3)
 
-#### `53c34d26183dde97ae6609194d05e28a52eed6b148f0fa0ee41694f5c459fa0a`
+#### `61e07b5c862cd13d9a2003ab33eeaab08d9c736472f7699218b4e1e0dce583ca`
 
 ```dockerfile
-ADD file:2a1b70324aad9e67208ccd37f3d12ba9558938dc68ae51ae01075d8934d995cc in /
+ADD file:a3185e5319d5afaf3f7830c621c9cdefa2a9e6a3c132486450099bc92ef6bfb4 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:25:47 GMT
+-	Created: Tue, 01 Mar 2016 18:51:52 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125128169 bytes)
--	v2 Blob: `sha256:7a2d89457c2fa310cb58e418fc48293ce1fccd265b647dae4da3d551df70cbaa`
--	v2 Content-Length: 51.4 MB (51368280 bytes)
+-	Virtual Size: 125.1 MB (125129201 bytes)
+-	v2 Blob: `sha256:3246083118e968cb1d7b8ba69df00a1a680c91b553577042d4e5472e99cdcec2`
+-	v2 Content-Length: 51.4 MB (51368801 bytes)
 
-#### `de6e1ece5d0c556a9037303726cca414e5f429585e273362df945f51849bf047`
+#### `1a8c5074a5a3cd336fe219c15e29a5446b18550290aedad0f628f9c0a3b6cb78`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:25:49 GMT
--	Parent Layer: `53c34d26183dde97ae6609194d05e28a52eed6b148f0fa0ee41694f5c459fa0a`
+-	Created: Tue, 01 Mar 2016 18:51:55 GMT
+-	Parent Layer: `61e07b5c862cd13d9a2003ab33eeaab08d9c736472f7699218b4e1e0dce583ca`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a5c95ca333d4c7af875daaf4f56a007acf5215a5d8c1b08d05872d29bc422f18`
+#### `829331b5d4a368503da7cf1386893632f5f67ddaa8e75e0748a022cf7e0c7226`
 
 ```dockerfile
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
--	Created: Tue, 16 Feb 2016 21:25:51 GMT
--	Parent Layer: `de6e1ece5d0c556a9037303726cca414e5f429585e273362df945f51849bf047`
+-	Created: Tue, 01 Mar 2016 18:51:57 GMT
+-	Parent Layer: `1a8c5074a5a3cd336fe219c15e29a5446b18550290aedad0f628f9c0a3b6cb78`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:52a56922e0864f930b8209d49237a4e61d323dd444f3cb07cdb38bb31f611405`
+-	v2 Blob: `sha256:8df537a1dd5bf8577ca2320e5a47df135809228f0e0662053d830a0083df61b6`
 -	v2 Content-Length: 219.0 B
 
 ## `debian:stretch`
@@ -680,34 +532,34 @@ CMD ["/bin/bash"]
 ## `debian:7.9`
 
 ```console
-$ docker pull library/debian@sha256:8b2b267682f31a8ede83d2f6c8ef3445ba9cf1a8a95f18df0bbff628a896d2d4
+$ docker pull library/debian@sha256:222a359803e413775354c7273429b6fb7bceaf97a6262120c5328a911f3f98ba
 ```
 
--	Total Virtual Size: 84.9 MB (84905064 bytes)
--	Total v2 Content-Length: 37.2 MB (37189299 bytes)
+-	Total Virtual Size: 84.9 MB (84906260 bytes)
+-	Total v2 Content-Length: 37.2 MB (37190660 bytes)
 
 ### Layers (2)
 
-#### `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+#### `002a4599f1ba54b8cd359ee3a01f936c16b7beeb0d38cbed43229cdbe93a25ea`
 
 ```dockerfile
-ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
+ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:26:25 GMT
+-	Created: Tue, 01 Mar 2016 18:52:03 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84905064 bytes)
--	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
--	v2 Content-Length: 37.2 MB (37189267 bytes)
+-	Virtual Size: 84.9 MB (84906260 bytes)
+-	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
+-	v2 Content-Length: 37.2 MB (37190628 bytes)
 
-#### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+#### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:26:28 GMT
--	Parent Layer: `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+-	Created: Tue, 01 Mar 2016 18:52:06 GMT
+-	Parent Layer: `002a4599f1ba54b8cd359ee3a01f936c16b7beeb0d38cbed43229cdbe93a25ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -716,34 +568,34 @@ CMD ["/bin/bash"]
 ## `debian:7`
 
 ```console
-$ docker pull library/debian@sha256:d371f4eeef3bc772b3146bba43a4ad79adfdfb6bf7c68447e95f9a69ddacfda9
+$ docker pull library/debian@sha256:f65fd04f53939e173cd92b554a389916de291065370676c1629bd87b492f3a82
 ```
 
--	Total Virtual Size: 84.9 MB (84905064 bytes)
--	Total v2 Content-Length: 37.2 MB (37189299 bytes)
+-	Total Virtual Size: 84.9 MB (84906260 bytes)
+-	Total v2 Content-Length: 37.2 MB (37190660 bytes)
 
 ### Layers (2)
 
-#### `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+#### `002a4599f1ba54b8cd359ee3a01f936c16b7beeb0d38cbed43229cdbe93a25ea`
 
 ```dockerfile
-ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
+ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:26:25 GMT
+-	Created: Tue, 01 Mar 2016 18:52:03 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84905064 bytes)
--	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
--	v2 Content-Length: 37.2 MB (37189267 bytes)
+-	Virtual Size: 84.9 MB (84906260 bytes)
+-	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
+-	v2 Content-Length: 37.2 MB (37190628 bytes)
 
-#### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+#### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:26:28 GMT
--	Parent Layer: `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+-	Created: Tue, 01 Mar 2016 18:52:06 GMT
+-	Parent Layer: `002a4599f1ba54b8cd359ee3a01f936c16b7beeb0d38cbed43229cdbe93a25ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -752,34 +604,34 @@ CMD ["/bin/bash"]
 ## `debian:wheezy`
 
 ```console
-$ docker pull library/debian@sha256:476ea5d2cdef80b3f1cf8f5122bc01ca706dac7f7e153a45f7fc15c7bee624c2
+$ docker pull library/debian@sha256:3319ebf616335a0e8aae3ea15a7a4a4f24ebb46a660c2c2567a68c83857a21ce
 ```
 
--	Total Virtual Size: 84.9 MB (84905064 bytes)
--	Total v2 Content-Length: 37.2 MB (37189299 bytes)
+-	Total Virtual Size: 84.9 MB (84906260 bytes)
+-	Total v2 Content-Length: 37.2 MB (37190660 bytes)
 
 ### Layers (2)
 
-#### `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+#### `002a4599f1ba54b8cd359ee3a01f936c16b7beeb0d38cbed43229cdbe93a25ea`
 
 ```dockerfile
-ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
+ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:26:25 GMT
+-	Created: Tue, 01 Mar 2016 18:52:03 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84905064 bytes)
--	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
--	v2 Content-Length: 37.2 MB (37189267 bytes)
+-	Virtual Size: 84.9 MB (84906260 bytes)
+-	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
+-	v2 Content-Length: 37.2 MB (37190628 bytes)
 
-#### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+#### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:26:28 GMT
--	Parent Layer: `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+-	Created: Tue, 01 Mar 2016 18:52:06 GMT
+-	Parent Layer: `002a4599f1ba54b8cd359ee3a01f936c16b7beeb0d38cbed43229cdbe93a25ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -788,51 +640,51 @@ CMD ["/bin/bash"]
 ## `debian:wheezy-backports`
 
 ```console
-$ docker pull library/debian@sha256:814117377fe67135beacb7acb8ec1b103be11eb40f2e48f36bb0ded0c52a2244
+$ docker pull library/debian@sha256:0fb015b521738ef1c1b9d20ef09461daf61b64f26867a3ee5ef90399cb86a92a
 ```
 
--	Total Virtual Size: 84.9 MB (84905125 bytes)
--	Total v2 Content-Length: 37.2 MB (37189522 bytes)
+-	Total Virtual Size: 84.9 MB (84906321 bytes)
+-	Total v2 Content-Length: 37.2 MB (37190881 bytes)
 
 ### Layers (3)
 
-#### `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+#### `002a4599f1ba54b8cd359ee3a01f936c16b7beeb0d38cbed43229cdbe93a25ea`
 
 ```dockerfile
-ADD file:cb001719127c42426c129a25cf075d941330e851947e24618ddd5f6148c2760c in /
+ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:26:25 GMT
+-	Created: Tue, 01 Mar 2016 18:52:03 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 84.9 MB (84905064 bytes)
--	v2 Blob: `sha256:604d05dfd165400f078428d5ac1f849b0e9cc45644893ebe4f58bf8dfc728433`
--	v2 Content-Length: 37.2 MB (37189267 bytes)
+-	Virtual Size: 84.9 MB (84906260 bytes)
+-	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
+-	v2 Content-Length: 37.2 MB (37190628 bytes)
 
-#### `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+#### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:26:28 GMT
--	Parent Layer: `99e2837b24a020ecc51d8d36a09d0e5f1a9bbefad4b3af8cd0cf2562e29ffb5e`
+-	Created: Tue, 01 Mar 2016 18:52:06 GMT
+-	Parent Layer: `002a4599f1ba54b8cd359ee3a01f936c16b7beeb0d38cbed43229cdbe93a25ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `4a56a7c13ed4115e367b971f100859de29dba9365c5399867867389013706b72`
+#### `92c8f46e671c29c9f2a89fc3ac64ce7a3c09a0d903c87435e118be0e80693a28`
 
 ```dockerfile
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
--	Created: Tue, 16 Feb 2016 21:26:41 GMT
--	Parent Layer: `ca41cd7c8fab8dc4bacc9a9a041fa20be137043d8aa1a0e92167bde62084f625`
+-	Created: Tue, 01 Mar 2016 18:52:19 GMT
+-	Parent Layer: `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:c5804fb09d2deb60f1da842c4e75621bd51f2d1afb37b2b1596ee2ce586b66d3`
--	v2 Content-Length: 223.0 B
+-	v2 Blob: `sha256:b362aac50004cfcebca2f50a3adb6fa357bcf8cfa851f5dd0995d0e9cef405d1`
+-	v2 Content-Length: 221.0 B
 
 ## `debian:rc-buggy`
 
