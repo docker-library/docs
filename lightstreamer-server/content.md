@@ -89,7 +89,7 @@ In this case, the /path/to/my-adapters folder has to be structured with the requ
                      + my_adapter_set_N
 ```
 ### Generate a new image 
-As always, a linear and clean technique is to generate a new image including all needed files. In this case, you could write a simple Docker file in which the list of all your Adapter Sets is provided (the example shows two possible ways of providing the required files):
+Once again, a linear and clean technique is to generate a new image including all needed files. In this case, you could write a simple Docker file in which the list of all your Adapter Sets is provided:
 
 ```dockerfile
 FROM lightstreamer-server
@@ -98,9 +98,6 @@ FROM lightstreamer-server
 COPY my-adapter-set-1 /lightstreamer/adapters/my-adapter-set-1
 COPY my-adapter-set-2 /lightstreamer/adapters/my-adapter-set-2
 COPY my-adapter-set-3 /lightstreamer/adapters/my-adapter-set-3
-
-# Alternatevely, fully replace the adapters folder
-# COPY my-adapter-sets /lightstreamer/adapters
 ```
 Then, just build and start the container as already explained.
 
@@ -114,19 +111,3 @@ For example, with the following command you will be able to fully replace the fa
 $ docker run --name ls-server -v /path/to/my/custom/pages:/lightstreamer/pages -d -p 80:8080 lightstreamer-server
 ```
 where `/path/to/my/custom/pages` is the path in your host machine containing the replacing web content files.
-
-Or you might want to build a brand new image by creating a Dockerfile:
-```dockerfile
-FROM lightstreamer-server
-
-# Will copy the contents of N Adapter Sets into the factory adapters folder
-COPY custom-pages /lightstreamer/pages
-COPY my-adapter-set-2 /lightstreamer/adapters/my-adapter-set-2
-COPY my-adapter-set-3 /lightstreamer/adapters/my-adapter-set-3
-
-# Alternatevely, fully replace the adapters folder
-# COPY my-adapter-sets /lightstreamer/adapters
-```
-
-
-
