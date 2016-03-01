@@ -81,7 +81,6 @@ declare -A otherRepos=(
 dockerLatest="$(curl -fsSL 'https://get.docker.com/latest')"
 
 for repo in "${repos[@]}"; do
-	echo "Processing: $repo"
 	if [ -x "$repo/update.sh" ]; then
 		( set -x; "$repo/update.sh" )
 	fi
