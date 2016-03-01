@@ -80,9 +80,11 @@ You can also use `couchdb` as the base image for your own couchdb instance and p
 
 Example Dockerfile:
 
-	FROM couchdb:latest
-	
-	COPY local.ini /usr/local/etc/couchdb/
+```dockerfile
+FROM couchdb:latest
+
+COPY local.ini /usr/local/etc/couchdb/
+```
 
 and then build and run
 
