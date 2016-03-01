@@ -75,7 +75,7 @@ $ docker run --name ls-server -v /path/to/my-adapter-set:/lightstreamer/adapters
 ```
 ### Full replace of the "adapters" folder
 
-In the case you have many custom Adapter Sets to deploy, a more appropriate strategy is to replace the factory adapters folder with the one in your host machine:
+In the case you have many custom Adapter Sets to deploy, a more appropriate strategy is to replace the factory adapters folder with the one located in your host machine:
 
 ```console
 $ docker run --name ls-server -v /path/to/my-adapters:/lightstreamer/adapters -d -p 80:8080 lightstreamer-server
