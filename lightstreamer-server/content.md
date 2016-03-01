@@ -16,7 +16,7 @@ $ docker run --name ls-server -d -p 80:8080 lightstreamer-server
 
 Point your browser to `http://localhost` and watch the Welcome page showing real time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](http://demos.lightstreamer.com).
 
-## Custom Settings
+## Custom settings
 
 It is possibile to customize each aspect of the Lightstreamer instance running into the container.
 For example, a specific configuration file may be supplied as follows:
@@ -47,13 +47,13 @@ COPY my-lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
 COPY my-lightsttreamer_log.xml /lightstreamer/conf/lightstreamer_log_conf.xml
 ```
 
-where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile. Simply run the command:
+where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile. By simplying running the command:
 
 ```
 $ docker build -t my-lightstreamer-server
 ```
 
-and a new container will be built along with the provided files.
+the new image will be built along with the provided files.
 After that, launch the container:
 
 ```console
@@ -62,18 +62,18 @@ $ docker run --name ls-server -d -p 80:8080 my-lightstreamer-server
 
 To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the `lighstreamer_conf.xml` and `lighstreamer_log_conf.xml` files you can find under the `conf` folder of installation directory.
 
-## Deploying Adapter Sets
+## Deployment of Adapter Sets
 You might want to use this image even with any Adapter Set, either developed by yourself or provided by third parties.
 To accomplish such goal, you may use similar strategies to those illustrated above:
 
-### Deploy a new Adapter Set
+### Deployment of a single Adapter Set
 
 To deploy a single custom Adapter Set, the simplest way is to attach its files into the factory adapters folder, as follows:
 
 ```console
 $ docker run --name ls-server -v /path/to/my-adapter-set:/lightstreamer/adapters/my-adapter-set -d -p 80:8080 lightstreamer-server
 ```
-### Full replace of the "adapters" folder
+### Full replacement of the "adapters" folder
 
 In the case you have many custom Adapter Sets to deploy, a more appropriate strategy is to replace the factory adapters folder with the one located in your host machine:
 
@@ -89,8 +89,8 @@ In this case, the `/path/to/my-adapters` folder has to be structured with the re
                      + my_adapter_set_N
 ```
 
-### Generate a new image 
-Once again, a linear and clean technique is to generate a new image including all needed files. In this case, you could write a simple Docker file in which the list of all your Adapter Sets is provided:
+### Building a new image 
+Once again, a linear and clean approach is to make a new image including all needed files. In this case, you could write a simple Docker file in which the list of all your Adapter Sets configuration files is provided:
 
 ```dockerfile
 FROM lightstreamer-server
@@ -102,7 +102,7 @@ COPY my-adapter-set-3 /lightstreamer/adapters/my-adapter-set-3
 ```
 Then, just build and start the container as already explained.
 
-## Deploy web server pages
+## Deployment of web server pages
 There might be some circumstances where you would like provide custom pages for the internal web server of the Lightstreamer Server.
 Even in this case, it is possible to customize the container by employing the same techniques as above.
 
