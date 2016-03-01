@@ -60,7 +60,7 @@ After that, launch the container:
 $ docker run --name ls-server -d -p 80:8080 my-lightstreamer-server
 ```
 
-To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the `lighstreamer_conf.xml` and `lighstreamer_log_conf.xml` files you can find under the `conf` folder of installation directory.
+To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the `lighstreamer_conf.xml` and `lighstreamer_log_conf.xml` files you can find under the `conf` folder of the installation directory.
 
 ## Deployment of Adapter Sets
 You might want to use this image even with any Adapter Set, either developed by yourself or provided by third parties.
