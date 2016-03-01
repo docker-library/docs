@@ -81,13 +81,13 @@ In the case you have many custom Adapter Sets to deploy, a more appropriate stra
 $ docker run --name ls-server -v /path/to/my/adapters:/lightstreamer/adapters -d -p 80:8080 lightstreamer-server
 ```
 In this case, the /path/to/my-adapters folder has to be structured with the required layout for an adapters folder:
-
+```
 /path/to/my/adapters/+
                      + my_adapter_set_1
                      + my_adapter_set_2
                      + ...
                      + my_adapter_set_N
-
+```
 ### Generate a new image 
 A new image including all your Adapter Sets can be built through a simple Docker file:
 
