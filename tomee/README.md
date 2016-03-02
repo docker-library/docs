@@ -1,25 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`6-jre-1.7.3-jaxrs` (*6-jre-1.7.3-jaxrs/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/6-jre-1.7.3-jaxrs/Dockerfile)
--	[`6-jre-1.7.3-plume` (*6-jre-1.7.3-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/6-jre-1.7.3-plume/Dockerfile)
--	[`6-jre-1.7.3-plus` (*6-jre-1.7.3-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/6-jre-1.7.3-plus/Dockerfile)
--	[`6-jre-1.7.3-webprofile` (*6-jre-1.7.3-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/6-jre-1.7.3-webprofile/Dockerfile)
--	[`7-jre-1.7.3-jaxrs` (*7-jre-1.7.3-jaxrs/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/7-jre-1.7.3-jaxrs/Dockerfile)
--	[`7-jre-1.7.3-plume` (*7-jre-1.7.3-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/7-jre-1.7.3-plume/Dockerfile)
--	[`7-jre-1.7.3-plus` (*7-jre-1.7.3-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/7-jre-1.7.3-plus/Dockerfile)
--	[`7-jre-1.7.3-webprofile` (*7-jre-1.7.3-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/7-jre-1.7.3-webprofile/Dockerfile)
--	[`7-jre-7.0.0-M1-plume` (*7-jre-7.0.0-M1-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/382ce3542c12417f2594c09c009bae9f6a7ce547/7-jre-7.0.0-M1-plume/Dockerfile)
--	[`7-jre-7.0.0-M1-plus` (*7-jre-7.0.0-M1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/382ce3542c12417f2594c09c009bae9f6a7ce547/7-jre-7.0.0-M1-plus/Dockerfile)
--	[`7-jre-7.0.0-M1-webprofile` (*7-jre-7.0.0-M1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/382ce3542c12417f2594c09c009bae9f6a7ce547/7-jre-7.0.0-M1-webprofile/Dockerfile)
--	[`8-jre-1.7.3-jaxrs` (*8-jre-1.7.3-jaxrs/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/8-jre-1.7.3-jaxrs/Dockerfile)
--	[`8-jre-1.7.3-plume` (*8-jre-1.7.3-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/8-jre-1.7.3-plume/Dockerfile)
--	[`8-jre-1.7.3-plus` (*8-jre-1.7.3-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/8-jre-1.7.3-plus/Dockerfile)
--	[`8-jre-1.7.3-webprofile` (*8-jre-1.7.3-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/cc2d1271c971b636f2adaf810d4a50a731e538ec/8-jre-1.7.3-webprofile/Dockerfile)
--	[`8-jre-7.0.0-M1-plume` (*8-jre-7.0.0-M1-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/382ce3542c12417f2594c09c009bae9f6a7ce547/8-jre-7.0.0-M1-plume/Dockerfile)
--	[`8-jre-7.0.0-M1-plus` (*8-jre-7.0.0-M1-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/382ce3542c12417f2594c09c009bae9f6a7ce547/8-jre-7.0.0-M1-plus/Dockerfile)
--	[`8-jre-7.0.0-M1-webprofile` (*8-jre-7.0.0-M1-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/382ce3542c12417f2594c09c009bae9f6a7ce547/8-jre-7.0.0-M1-webprofile/Dockerfile)
+-	[`8-jre-7.0.0-M2-plume` (*8-jre-7.0.0-M2-plume/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/ff05e36987a72369f88da83a6aeaa77e32d5ec2b/8-jre-7.0.0-M2-plume/Dockerfile)
+-	[`8-jre-7.0.0-M2-plus` (*8-jre-7.0.0-M2-plus/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/ff05e36987a72369f88da83a6aeaa77e32d5ec2b/8-jre-7.0.0-M2-plus/Dockerfile)
+-	[`8-jre-7.0.0-M2-webprofile` (*8-jre-7.0.0-M2-webprofile/Dockerfile*)](https://github.com/tomitribe/docker-tomee/blob/ff05e36987a72369f88da83a6aeaa77e32d5ec2b/8-jre-7.0.0-M2-webprofile/Dockerfile)
 
-[![](https://badge.imagelayers.io/tomee:6-jre-1.7.3-jaxrs.svg)](https://imagelayers.io/?images=tomee:6-jre-1.7.3-jaxrs,tomee:6-jre-1.7.3-plume,tomee:6-jre-1.7.3-plus,tomee:6-jre-1.7.3-webprofile,tomee:7-jre-1.7.3-jaxrs,tomee:7-jre-1.7.3-plume,tomee:7-jre-1.7.3-plus,tomee:7-jre-1.7.3-webprofile,tomee:7-jre-7.0.0-M1-plume,tomee:7-jre-7.0.0-M1-plus,tomee:7-jre-7.0.0-M1-webprofile,tomee:8-jre-1.7.3-jaxrs,tomee:8-jre-1.7.3-plume,tomee:8-jre-1.7.3-plus,tomee:8-jre-1.7.3-webprofile,tomee:8-jre-7.0.0-M1-plume,tomee:8-jre-7.0.0-M1-plus,tomee:8-jre-7.0.0-M1-webprofile)
+[![](https://badge.imagelayers.io/tomee:8-jre-7.0.0-M2-plume.svg)](https://imagelayers.io/?images=tomee:8-jre-7.0.0-M2-plume,tomee:8-jre-7.0.0-M2-plus,tomee:8-jre-7.0.0-M2-webprofile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/tomee`)](https://github.com/docker-library/official-images/blob/master/library/tomee). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
