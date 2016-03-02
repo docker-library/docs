@@ -1451,6 +1451,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 27.0 MB (27030802 bytes)
 -	v2 Blob: `sha256:bcf4238e78f2603bf5fbfc980b975b8921d02204674e9f32d2d2391ce1aecd23`
 -	v2 Content-Length: 10.2 MB (10161213 bytes)
+-	v2 Last-Modified: Wed, 17 Feb 2016 16:26:01 GMT
 
 #### `73b4669c57a5c31217dabab2693d2271961cbf8795f085ee3664d388ee115099`
 
@@ -1653,6 +1654,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 27.0 MB (27030802 bytes)
 -	v2 Blob: `sha256:bcf4238e78f2603bf5fbfc980b975b8921d02204674e9f32d2d2391ce1aecd23`
 -	v2 Content-Length: 10.2 MB (10161213 bytes)
+-	v2 Last-Modified: Wed, 17 Feb 2016 16:26:01 GMT
 
 #### `73b4669c57a5c31217dabab2693d2271961cbf8795f085ee3664d388ee115099`
 
