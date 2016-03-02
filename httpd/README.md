@@ -1,7 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.31`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/01b9f786daeace767c57c82d7289f4a8490d1035/2.2/Dockerfile)
--	[`2.4.18`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/1f1f7d39d5fe5aebeedea6872786b4e3ce0ebcc9/2.4/Dockerfile)
+-	[`2.2.31`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/bc72e42914f671e725d85a01ff037ce87c827f46/2.2/Dockerfile)
+-	[`2.4.18`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/bc72e42914f671e725d85a01ff037ce87c827f46/2.4/Dockerfile)
 
 [![](https://badge.imagelayers.io/httpd:latest.svg)](https://imagelayers.io/?images=httpd:2.2.31,httpd:2.4.18)
 

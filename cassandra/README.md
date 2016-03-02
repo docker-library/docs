@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.13`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/2f08d4a6eb283d0ff81785cf1c6745ceb5535e72/2.1/Dockerfile)
--	[`2.2.5`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/2f08d4a6eb283d0ff81785cf1c6745ceb5535e72/2.2/Dockerfile)
--	[`3.0.3`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/2f08d4a6eb283d0ff81785cf1c6745ceb5535e72/3.0/Dockerfile)
--	[`3.1.1`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/453a8dff57e4a34a3c12d8800d307483e877a531/3.1/Dockerfile)
--	[`3.2.1`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/2f08d4a6eb283d0ff81785cf1c6745ceb5535e72/3.2/Dockerfile)
--	[`3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/cassandra/blob/d93f3ec5c720277d9258a5bf3cbc24fe0e800fba/3.3/Dockerfile)
+-	[`2.1.13`, `2.1` (*2.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/2.1/Dockerfile)
+-	[`2.2.5`, `2.2`, `2` (*2.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/2.2/Dockerfile)
+-	[`3.0.3`, `3.0` (*3.0/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/3.0/Dockerfile)
+-	[`3.1.1`, `3.1` (*3.1/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/3.1/Dockerfile)
+-	[`3.2.1`, `3.2` (*3.2/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/3.2/Dockerfile)
+-	[`3.3`, `3`, `latest` (*3.3/Dockerfile*)](https://github.com/docker-library/cassandra/blob/90ba62c6d8859abc5f38a6d47c9da0661be04171/3.3/Dockerfile)
 
 [![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.13,cassandra:2.2.5,cassandra:3.0.3,cassandra:3.1.1,cassandra:3.2.1,cassandra:3.3)
 
