@@ -117,6 +117,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:00:16 GMT
 
 #### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
 
@@ -514,6 +515,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:00:16 GMT
 
 #### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
 
@@ -911,6 +913,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:00:16 GMT
 
 #### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
 
@@ -1308,6 +1311,7 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:00:16 GMT
 
 #### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
 
