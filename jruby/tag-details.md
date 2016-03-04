@@ -7487,6 +7487,7 @@ RUN gem install bundler
 -	Virtual Size: 1.2 MB (1181375 bytes)
 -	v2 Blob: `sha256:f6baa68b833867b3ca953733e4562fdba8ce0f8beb22b6056f885c870a98ce68`
 -	v2 Content-Length: 522.7 KB (522654 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 19:10:05 GMT
 
 #### `a0647547dab5d70885ac7c1b82efea55e7d47dd4bfad6d905276afdb38254d46`
 
@@ -7863,6 +7864,7 @@ RUN gem install bundler
 -	Virtual Size: 1.2 MB (1181375 bytes)
 -	v2 Blob: `sha256:f6baa68b833867b3ca953733e4562fdba8ce0f8beb22b6056f885c870a98ce68`
 -	v2 Content-Length: 522.7 KB (522654 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 19:10:05 GMT
 
 #### `a0647547dab5d70885ac7c1b82efea55e7d47dd4bfad6d905276afdb38254d46`
 
@@ -8239,6 +8241,7 @@ RUN gem install bundler
 -	Virtual Size: 1.2 MB (1181375 bytes)
 -	v2 Blob: `sha256:f6baa68b833867b3ca953733e4562fdba8ce0f8beb22b6056f885c870a98ce68`
 -	v2 Content-Length: 522.7 KB (522654 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 19:10:05 GMT
 
 #### `a0647547dab5d70885ac7c1b82efea55e7d47dd4bfad6d905276afdb38254d46`
 
@@ -8693,6 +8696,7 @@ RUN gem install bundler
 -	Virtual Size: 1.2 MB (1181375 bytes)
 -	v2 Blob: `sha256:f6baa68b833867b3ca953733e4562fdba8ce0f8beb22b6056f885c870a98ce68`
 -	v2 Content-Length: 522.7 KB (522654 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 19:10:05 GMT
 
 #### `a0647547dab5d70885ac7c1b82efea55e7d47dd4bfad6d905276afdb38254d46`
 
