@@ -262,6 +262,7 @@ RUN buildDeps=' \
 -	Virtual Size: 145.4 MB (145428726 bytes)
 -	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
 -	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
 #### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
@@ -609,6 +610,7 @@ RUN buildDeps=' \
 -	Virtual Size: 145.4 MB (145428726 bytes)
 -	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
 -	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
 #### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
@@ -956,6 +958,7 @@ RUN buildDeps=' \
 -	Virtual Size: 145.4 MB (145428726 bytes)
 -	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
 -	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
 #### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
@@ -1303,6 +1306,7 @@ RUN buildDeps=' \
 -	Virtual Size: 145.4 MB (145428726 bytes)
 -	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
 -	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
 #### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
