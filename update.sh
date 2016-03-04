@@ -32,6 +32,7 @@ declare -A otherRepos=(
 	[crux]='https://github.com/therealprologic/docker-crux'
 	[debian]='https://github.com/tianon/docker-brew-debian'
 	[docker-dev]='https://github.com/docker/docker'
+	[elixir]='https://github.com/c0b/docker-elixir'
 	[erlang]='https://github.com/c0b/docker-erlang-otp'
 	[fedora]='https://github.com/lsm5/docker-brew-fedora'
 	[gazebo]='https://github.com/osrf/docker_images'
