@@ -38,7 +38,7 @@ Additionally, these entry points run consul with two [configuration directories]
 
 Since Consul is almost always run with `--net=host` in Docker, some care is required when configuring Consul's IP addresses. Consul has the concept of its cluster address as well as its client address. The cluster address is the address at which other Consul agents may contact a given agent. The client address is the address where other processes on the host contact Consul in order to make HTTP or DNS requests. You will typically need to tell Consul what its cluster address is when starting so that it binds to the correct interface and advertises a workable interface to the rest of the Consul agents. You'll see this in the examples below as the `-bind=<external ip>` argument to Consul.
 
-The entry point also includes a small utility to look up a bind address by interface name. To use this, set the `CONSUL_BIND_INTERFACE` environment variable to the name of the interface you'd like Consul to bind to and a `-bind=<interface ip>` argument will be computed and passed to Consul at startup.
+The entry point also includes a small utility to look up a client or bind address by interface name. To use this, set the `CONSUL_CLIENT_INTERFACE` and/or `CONSUL_BIND_INTERFACE` environment variables to the name of the interface you'd like Consul to use and a `-client=<interface ip>` and/or `-bind=<interface ip>` argument will be computed and passed to Consul at startup.
 
 ## Running Consul for Development
 
