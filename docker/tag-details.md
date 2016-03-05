@@ -2167,6 +2167,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -2296,6 +2297,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -2425,6 +2427,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -2663,6 +2666,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -2901,6 +2905,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -3045,6 +3050,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
