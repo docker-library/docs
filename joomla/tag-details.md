@@ -154,7 +154,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -678,7 +677,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -1202,7 +1200,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -1726,7 +1723,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -2250,7 +2246,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -2774,7 +2769,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -3298,7 +3292,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -3822,7 +3815,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -4548,7 +4540,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 -	Virtual Size: 9.8 MB (9773690 bytes)
 -	v2 Blob: `sha256:23f60ae212b03e9e60aa62954ef04d345ebd683231792b35af98cd7dbbf421e0`
 -	v2 Content-Length: 3.4 MB (3364929 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 19:06:40 GMT
 
 #### `7744e72db0d34f577e4318070ce508eb00b8ccd6b5e6f9d6c8a0952ab4ae5156`
 
@@ -5013,7 +5004,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 -	Virtual Size: 9.8 MB (9773690 bytes)
 -	v2 Blob: `sha256:23f60ae212b03e9e60aa62954ef04d345ebd683231792b35af98cd7dbbf421e0`
 -	v2 Content-Length: 3.4 MB (3364929 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 19:06:40 GMT
 
 #### `7744e72db0d34f577e4318070ce508eb00b8ccd6b5e6f9d6c8a0952ab4ae5156`
 
@@ -5478,7 +5468,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 -	Virtual Size: 9.8 MB (9773690 bytes)
 -	v2 Blob: `sha256:23f60ae212b03e9e60aa62954ef04d345ebd683231792b35af98cd7dbbf421e0`
 -	v2 Content-Length: 3.4 MB (3364929 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 19:06:40 GMT
 
 #### `7744e72db0d34f577e4318070ce508eb00b8ccd6b5e6f9d6c8a0952ab4ae5156`
 
@@ -5943,7 +5932,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev zip unzip && r
 -	Virtual Size: 9.8 MB (9773690 bytes)
 -	v2 Blob: `sha256:23f60ae212b03e9e60aa62954ef04d345ebd683231792b35af98cd7dbbf421e0`
 -	v2 Content-Length: 3.4 MB (3364929 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 19:06:40 GMT
 
 #### `7744e72db0d34f577e4318070ce508eb00b8ccd6b5e6f9d6c8a0952ab4ae5156`
 

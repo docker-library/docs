@@ -204,6 +204,7 @@ RUN rm /etc/rc3.d/S40-network
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4aaa72e15498ecbac1d4cf825041a9526ad9c3e683340522d45020eeed2e63de`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:39:28 GMT
 
 #### `28575877dc7ea2b6df807d4a85030c808d4c42978f147ef7170395f6b24bb57a`
 
