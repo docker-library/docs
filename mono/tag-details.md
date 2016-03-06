@@ -2468,7 +2468,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 ## `mono:4.0.5`
 
@@ -2563,7 +2562,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 ## `mono:4.0`
 
@@ -2658,7 +2656,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 ## `mono:4.0.5.1-onbuild`
 
@@ -2753,7 +2750,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 #### `10985774f899a2a048afec001587e63f02c18c3dc827e373dfc9c851146b8fb1`
 
@@ -2939,7 +2935,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 #### `10985774f899a2a048afec001587e63f02c18c3dc827e373dfc9c851146b8fb1`
 
@@ -3125,7 +3120,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 #### `10985774f899a2a048afec001587e63f02c18c3dc827e373dfc9c851146b8fb1`
 
