@@ -4009,6 +4009,7 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5230467ddf4b4935b2107bd6b3fe3726776fa922870c86f53c49d7c2da62f9e8`
 -	v2 Content-Length: 122.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:23:27 GMT
 
 #### `30b4c164ea62839e0bcdd1d12cb20fc5cc2a2c17e7fbf404592810000a581770`
 
@@ -4220,6 +4221,7 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5230467ddf4b4935b2107bd6b3fe3726776fa922870c86f53c49d7c2da62f9e8`
 -	v2 Content-Length: 122.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:23:27 GMT
 
 #### `30b4c164ea62839e0bcdd1d12cb20fc5cc2a2c17e7fbf404592810000a581770`
 
@@ -4431,6 +4433,7 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5230467ddf4b4935b2107bd6b3fe3726776fa922870c86f53c49d7c2da62f9e8`
 -	v2 Content-Length: 122.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:23:27 GMT
 
 #### `30b4c164ea62839e0bcdd1d12cb20fc5cc2a2c17e7fbf404592810000a581770`
 
@@ -4642,6 +4645,7 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5230467ddf4b4935b2107bd6b3fe3726776fa922870c86f53c49d7c2da62f9e8`
 -	v2 Content-Length: 122.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:23:27 GMT
 
 #### `30b4c164ea62839e0bcdd1d12cb20fc5cc2a2c17e7fbf404592810000a581770`
 
