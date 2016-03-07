@@ -488,6 +488,7 @@ COPY file:513b8c9f56b4041a6416ffddee013606620874958309f261c84d3453dde1a661 in /s
 -	Virtual Size: 17.8 MB (17830121 bytes)
 -	v2 Blob: `sha256:01987f9f15e92534758a058e9a866902e8480e09651130d8bf3c0cca79652cfa`
 -	v2 Content-Length: 4.4 MB (4415743 bytes)
+-	v2 Last-Modified: Thu, 18 Feb 2016 19:40:47 GMT
 
 #### `c8115d2d26515c96e262ce5dbac0f87794b7ca7a5aaefc60d02036e624ea4858`
 
