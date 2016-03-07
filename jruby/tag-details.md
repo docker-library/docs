@@ -7444,6 +7444,7 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 37.5 MB (37464457 bytes)
 -	v2 Blob: `sha256:e5b61594097bb2dd33b7c27be790a7cbf21e7cd17f7bdf76d2c1deacff6f1d55`
 -	v2 Content-Length: 21.6 MB (21608169 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 19:10:17 GMT
 
 #### `e32306727edc57d55ebf8a16e8881abe746b1fbdf88996d29d1187072ffe7172`
 
@@ -7820,6 +7821,7 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 37.5 MB (37464457 bytes)
 -	v2 Blob: `sha256:e5b61594097bb2dd33b7c27be790a7cbf21e7cd17f7bdf76d2c1deacff6f1d55`
 -	v2 Content-Length: 21.6 MB (21608169 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 19:10:17 GMT
 
 #### `e32306727edc57d55ebf8a16e8881abe746b1fbdf88996d29d1187072ffe7172`
 
@@ -8196,6 +8198,7 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 37.5 MB (37464457 bytes)
 -	v2 Blob: `sha256:e5b61594097bb2dd33b7c27be790a7cbf21e7cd17f7bdf76d2c1deacff6f1d55`
 -	v2 Content-Length: 21.6 MB (21608169 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 19:10:17 GMT
 
 #### `e32306727edc57d55ebf8a16e8881abe746b1fbdf88996d29d1187072ffe7172`
 
@@ -8650,6 +8653,7 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 37.5 MB (37464457 bytes)
 -	v2 Blob: `sha256:e5b61594097bb2dd33b7c27be790a7cbf21e7cd17f7bdf76d2c1deacff6f1d55`
 -	v2 Content-Length: 21.6 MB (21608169 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 19:10:17 GMT
 
 #### `e32306727edc57d55ebf8a16e8881abe746b1fbdf88996d29d1187072ffe7172`
 
