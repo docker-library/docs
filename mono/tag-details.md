@@ -145,6 +145,7 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:bd194c5c1d4af40940319e5ef8ef0b76b15b44c6d03b8f61e519c8f0ca5fcc5e`
 -	v2 Content-Length: 101.1 KB (101059 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:01:51 GMT
 
 ## `mono:3.10`
 
@@ -252,6 +253,7 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:bd194c5c1d4af40940319e5ef8ef0b76b15b44c6d03b8f61e519c8f0ca5fcc5e`
 -	v2 Content-Length: 101.1 KB (101059 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:01:51 GMT
 
 ## `mono:3.10.0-onbuild`
 
@@ -359,6 +361,7 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:bd194c5c1d4af40940319e5ef8ef0b76b15b44c6d03b8f61e519c8f0ca5fcc5e`
 -	v2 Content-Length: 101.1 KB (101059 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:01:51 GMT
 
 #### `dbf78c9aa7f5f20f09fed35b3a039a90774fc9c580c2efcfd7d1da3d031fb457`
 
@@ -557,6 +560,7 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:bd194c5c1d4af40940319e5ef8ef0b76b15b44c6d03b8f61e519c8f0ca5fcc5e`
 -	v2 Content-Length: 101.1 KB (101059 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:01:51 GMT
 
 #### `dbf78c9aa7f5f20f09fed35b3a039a90774fc9c580c2efcfd7d1da3d031fb457`
 
