@@ -65,7 +65,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -311,7 +310,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -557,7 +555,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -803,7 +800,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -1049,7 +1045,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -1295,7 +1290,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -1541,7 +1535,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -1787,7 +1780,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -2033,7 +2025,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -2279,7 +2270,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -2525,7 +2515,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -2771,7 +2760,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -3017,7 +3005,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 
@@ -3263,7 +3250,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:f46903976053031aade887161fbe832583a64b602fbff419d720ffbd8416647e`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:52 GMT
 
 #### `bd6c52d471f3e787a8ec00ba45254b6c5be826f1ec5a5f22a22d43b4c101ad65`
 

@@ -148,6 +148,7 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:8d2a6021712339f7a4187e2ac0a8c8555d02d0a29adea4ce96588382164c86d0`
 -	v2 Content-Length: 1.7 KB (1689 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 01:08:37 GMT
 
 #### `1e061b4abfb82f6100cb89f55141b8ac40d737958776ca1ef72cb4d428a91516`
 
@@ -369,6 +370,7 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:8d2a6021712339f7a4187e2ac0a8c8555d02d0a29adea4ce96588382164c86d0`
 -	v2 Content-Length: 1.7 KB (1689 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 01:08:37 GMT
 
 #### `1e061b4abfb82f6100cb89f55141b8ac40d737958776ca1ef72cb4d428a91516`
 
@@ -590,6 +592,7 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:8d2a6021712339f7a4187e2ac0a8c8555d02d0a29adea4ce96588382164c86d0`
 -	v2 Content-Length: 1.7 KB (1689 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 01:08:37 GMT
 
 #### `1e061b4abfb82f6100cb89f55141b8ac40d737958776ca1ef72cb4d428a91516`
 
@@ -811,6 +814,7 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:8d2a6021712339f7a4187e2ac0a8c8555d02d0a29adea4ce96588382164c86d0`
 -	v2 Content-Length: 1.7 KB (1689 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 01:08:37 GMT
 
 #### `1e061b4abfb82f6100cb89f55141b8ac40d737958776ca1ef72cb4d428a91516`
 
