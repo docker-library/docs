@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2`, `2.3`, `2.3.0` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/93b4a90b491342c3906980192826adeabe59a34c/Dockerfile)
+-	[`2`, `2.3`, `2.3.1` (*Dockerfile*)](https://github.com/docker/distribution-library-image/blob/b518c35ff6498b007bfccb13d03519d188125689/Dockerfile)
 
 [![](https://badge.imagelayers.io/registry:2.svg)](https://imagelayers.io/?images=registry:2)
 
