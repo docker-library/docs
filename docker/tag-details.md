@@ -1632,6 +1632,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 18.6 MB (18608671 bytes)
 -	v2 Blob: `sha256:c3765ef7aeeebcc34852b69dd0173e424488b2c4dcff8dd3e83edc652bea4708`
 -	v2 Content-Length: 9.0 MB (9047974 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:26:19 GMT
 
 ## `docker:1.10-git`
 
@@ -1776,6 +1777,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 18.6 MB (18608671 bytes)
 -	v2 Blob: `sha256:c3765ef7aeeebcc34852b69dd0173e424488b2c4dcff8dd3e83edc652bea4708`
 -	v2 Content-Length: 9.0 MB (9047974 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:26:19 GMT
 
 ## `docker:1-git`
 
@@ -1920,6 +1922,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 18.6 MB (18608671 bytes)
 -	v2 Blob: `sha256:c3765ef7aeeebcc34852b69dd0173e424488b2c4dcff8dd3e83edc652bea4708`
 -	v2 Content-Length: 9.0 MB (9047974 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:26:19 GMT
 
 ## `docker:git`
 
@@ -2064,6 +2067,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 18.6 MB (18608671 bytes)
 -	v2 Blob: `sha256:c3765ef7aeeebcc34852b69dd0173e424488b2c4dcff8dd3e83edc652bea4708`
 -	v2 Content-Length: 9.0 MB (9047974 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:26:19 GMT
 
 ## `docker:1.9.1`
 
