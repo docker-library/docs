@@ -1937,6 +1937,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 69.8 KB (69817 bytes)
 -	v2 Blob: `sha256:2b36930ba752105e0fd6522734fa1ed561f82e48543d4b4614f7c15ecaf711ad`
 -	v2 Content-Length: 23.2 KB (23223 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:54:54 GMT
 
 #### `7a27970a4615535251b86e3106d87742fe487aaf2f5050e42bc85f7fdc5179cc`
 
@@ -2182,6 +2183,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 69.8 KB (69817 bytes)
 -	v2 Blob: `sha256:2b36930ba752105e0fd6522734fa1ed561f82e48543d4b4614f7c15ecaf711ad`
 -	v2 Content-Length: 23.2 KB (23223 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:54:54 GMT
 
 #### `7a27970a4615535251b86e3106d87742fe487aaf2f5050e42bc85f7fdc5179cc`
 
