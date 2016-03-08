@@ -2279,7 +2279,6 @@ RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf \
 -	Virtual Size: 49.6 KB (49605 bytes)
 -	v2 Blob: `sha256:da39fcedec4d07f6b2cfa5e988e7a1de2dda5b7173b7a12ca5ce07555f2894ea`
 -	v2 Content-Length: 10.5 KB (10511 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:09:03 GMT
 
 #### `61a8930132a0842d5f29e571253251ae374dd05f304fa15f42b97125bad140f5`
 
@@ -2508,7 +2507,6 @@ RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf \
 -	Virtual Size: 49.6 KB (49605 bytes)
 -	v2 Blob: `sha256:da39fcedec4d07f6b2cfa5e988e7a1de2dda5b7173b7a12ca5ce07555f2894ea`
 -	v2 Content-Length: 10.5 KB (10511 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:09:03 GMT
 
 #### `61a8930132a0842d5f29e571253251ae374dd05f304fa15f42b97125bad140f5`
 
@@ -2737,7 +2735,6 @@ RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf \
 -	Virtual Size: 49.6 KB (49605 bytes)
 -	v2 Blob: `sha256:da39fcedec4d07f6b2cfa5e988e7a1de2dda5b7173b7a12ca5ce07555f2894ea`
 -	v2 Content-Length: 10.5 KB (10511 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:09:03 GMT
 
 #### `61a8930132a0842d5f29e571253251ae374dd05f304fa15f42b97125bad140f5`
 
@@ -2966,7 +2963,6 @@ RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf \
 -	Virtual Size: 49.6 KB (49605 bytes)
 -	v2 Blob: `sha256:da39fcedec4d07f6b2cfa5e988e7a1de2dda5b7173b7a12ca5ce07555f2894ea`
 -	v2 Content-Length: 10.5 KB (10511 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:09:03 GMT
 
 #### `61a8930132a0842d5f29e571253251ae374dd05f304fa15f42b97125bad140f5`
 
