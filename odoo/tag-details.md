@@ -688,7 +688,6 @@ RUN mkdir -p /mnt/extra-addons\
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:dc14bd177ffaded56b769a72ff12eb79b7b0b9766367e4479f50ee4e3653f154`
 -	v2 Content-Length: 124.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:17:50 GMT
 
 #### `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 
@@ -942,7 +941,6 @@ RUN mkdir -p /mnt/extra-addons\
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:dc14bd177ffaded56b769a72ff12eb79b7b0b9766367e4479f50ee4e3653f154`
 -	v2 Content-Length: 124.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:17:50 GMT
 
 #### `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 
@@ -1196,7 +1194,6 @@ RUN mkdir -p /mnt/extra-addons\
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:dc14bd177ffaded56b769a72ff12eb79b7b0b9766367e4479f50ee4e3653f154`
 -	v2 Content-Length: 124.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:17:50 GMT
 
 #### `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 
