@@ -54,7 +54,6 @@ RUN rm /etc/rc3.d/S40-network
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e6cc72aea3e6702f07dc862041195b47deb7def56984860d1b4ff912fb458333`
 -	v2 Content-Length: 153.0 B
--	v2 Last-Modified: Mon, 04 Jan 2016 21:28:36 GMT
 
 #### `7725b0aea0a1124fba2a0ee33cd6c73822cfdb78ab14fdb6c612325f5ed7e8e4`
 
@@ -130,7 +129,6 @@ RUN rm /etc/rc3.d/S40-network
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e6cc72aea3e6702f07dc862041195b47deb7def56984860d1b4ff912fb458333`
 -	v2 Content-Length: 153.0 B
--	v2 Last-Modified: Mon, 04 Jan 2016 21:28:36 GMT
 
 #### `7725b0aea0a1124fba2a0ee33cd6c73822cfdb78ab14fdb6c612325f5ed7e8e4`
 
