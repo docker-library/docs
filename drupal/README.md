@@ -2,10 +2,10 @@
 
 -	[`7.43-apache`, `7.43`, `7-apache`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/865f61938fe7f37359d8feeb13bb03bff8f11387/7/apache/Dockerfile)
 -	[`7.43-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/865f61938fe7f37359d8feeb13bb03bff8f11387/7/fpm/Dockerfile)
--	[`8.0.5-apache`, `8.0.5`, `8.0-apache`, `8.0`, `8-apache`, `8`, `apache`, `latest` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/4fe7a837c7de5ea753070be21e64f0cb971493a7/8.0/apache/Dockerfile)
--	[`8.0.5-fpm`, `8.0-fpm`, `8-fpm`, `fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/4fe7a837c7de5ea753070be21e64f0cb971493a7/8.0/fpm/Dockerfile)
--	[`8.1.0-beta1-apache`, `8.1.0-beta1`, `8.1.0-apache`, `8.1.0`, `8.1-apache`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/4fe7a837c7de5ea753070be21e64f0cb971493a7/8.1/apache/Dockerfile)
--	[`8.1.0-beta1-fpm`, `8.1.0-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/4fe7a837c7de5ea753070be21e64f0cb971493a7/8.1/fpm/Dockerfile)
+-	[`8.0.5-apache`, `8.0.5`, `8.0-apache`, `8.0`, `8-apache`, `8`, `apache`, `latest` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/907aa1ebada751931dde5b23666b60bbeb39de09/8.0/apache/Dockerfile)
+-	[`8.0.5-fpm`, `8.0-fpm`, `8-fpm`, `fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/907aa1ebada751931dde5b23666b60bbeb39de09/8.0/fpm/Dockerfile)
+-	[`8.1.0-beta1-apache`, `8.1.0-beta1`, `8.1.0-apache`, `8.1.0`, `8.1-apache`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/907aa1ebada751931dde5b23666b60bbeb39de09/8.1/apache/Dockerfile)
+-	[`8.1.0-beta1-fpm`, `8.1.0-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/907aa1ebada751931dde5b23666b60bbeb39de09/8.1/fpm/Dockerfile)
 
 [![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.43-apache,drupal:7.43-fpm,drupal:8.0.5-apache,drupal:8.0.5-fpm,drupal:8.1.0-beta1-apache,drupal:8.1.0-beta1-fpm)
 
