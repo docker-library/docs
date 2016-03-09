@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.31`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/01b9f786daeace767c57c82d7289f4a8490d1035/2.2/Dockerfile)
--	[`2.4.18`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/1f1f7d39d5fe5aebeedea6872786b4e3ce0ebcc9/2.4/Dockerfile)
+-	[`2.2.31`, `2.2` (*2.2/Dockerfile*)](https://github.com/docker-library/httpd/blob/bc72e42914f671e725d85a01ff037ce87c827f46/2.2/Dockerfile)
+-	[`2.4.18`, `2.4`, `2`, `latest` (*2.4/Dockerfile*)](https://github.com/docker-library/httpd/blob/bc72e42914f671e725d85a01ff037ce87c827f46/2.4/Dockerfile)
+
+[![](https://badge.imagelayers.io/httpd:latest.svg)](https://imagelayers.io/?images=httpd:2.2.31,httpd:2.4.18)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/httpd`)](https://github.com/docker-library/official-images/blob/master/library/httpd). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -62,7 +64,7 @@ View [license information](https://www.apache.org/licenses/) for the software co
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

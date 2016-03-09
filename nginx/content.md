@@ -63,3 +63,26 @@ Then, build with `docker build -t some-custom-nginx .` and run:
 ```console
 $ docker run --name some-nginx -d some-custom-nginx
 ```
+
+### using environment variables in nginx configuration
+
+Out-of-the-box, Nginx doesn't support using environment variables inside most configuration blocks. But `envsubst` may be used as a workaround if you need to generate your nginx configuration dynamically before nginx starts.
+
+Here is an example using docker-compose.yml:
+
+```web:
+  image: nginx
+  volumes:
+   - ./mysite.template:/etc/nginx/conf.d/mysite.template
+  ports:
+   - "8080:80"
+  environment:
+   - NGINX_HOST=foobar.com
+   - NGINX_PORT=80
+  command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+```
+
+The `mysite.template` file may then contain variable references like this :
+
+`listen       ${NGINX_PORT};
+`

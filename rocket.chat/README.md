@@ -1,6 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.9.0`, `0.9`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/28f1ccabf676fc21eba3bcb631bc8da6fda68eea/Dockerfile)
+-	[`0.21.0`, `0.21`, `0`, `latest` (*Dockerfile*)](https://github.com/RocketChat/Docker.Official.Image/blob/a59723b313dbdf190e104d8590cb9c015cfae6de/Dockerfile)
+
+[![](https://badge.imagelayers.io/rocket.chat:latest.svg)](https://imagelayers.io/?images=rocket.chat:0.21.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rocket.chat`)](https://github.com/docker-library/official-images/blob/master/library/rocket.chat). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -18,23 +20,31 @@ It is a great solution for communities and companies wanting to privately host t
 
 First, start an instance of mongo:
 
-	docker run --name db -d mongo --smallfiles
+```console
+$ docker run --name db -d mongo --smallfiles
+```
 
 Then start Rocket.Chat linked to this mongo instance:
 
-	docker run --name rocketchat --link db -d rocket.chat
+```console
+$ docker run --name rocketchat --link db -d rocket.chat
+```
 
 This will start a Rocket.Chat instance listening on the default Meteor port of 3000 on the container.
 
 If you'd like to be able to access the instance directly at standard port on the host machine:
 
-	docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --link db -d rocket.chat
+```console
+$ docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --link db -d rocket.chat
+```
 
 Then, access it via `http://localhost` in a browser. Replace `localhost` in `ROOT_URL` with your own domain name if you are hosting at your own domain.
 
 If you're using a third party Mongo provider, or working with Kubernetes, you need to override the `MONGO_URL` environment variable:
 
-	docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --env MONGO_URL=mongodb://mymongourl/mydb -d rocket.chat
+```console
+$ docker run --name rocketchat -p 80:3000 --env ROOT_URL=http://localhost --env MONGO_URL=mongodb://mymongourl/mydb -d rocket.chat
+```
 
 # License
 
@@ -42,7 +52,7 @@ View [license information](https://github.com/RocketChat/Rocket.Chat/blob/master
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

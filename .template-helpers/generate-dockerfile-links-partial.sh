@@ -20,16 +20,26 @@ fi
 repoDirs=()
 declare -A repoDirTags=()
 
+latest=
+uniqImages=()
 for line in "${lines[@]}"; do
 	tag="$(echo "$line" | awk -F ': +' '{ print $1 }')"
+	if [ -z "$latest" -o "$tag" = 'latest' ]; then
+		latest="$tag"
+	fi
 	repoDir="$(echo "$line" | awk -F ': +' '{ print $2 }')"
 	if [ -z "${repoDirTags[$repoDir]}" ]; then
 		repoDirs+=( "$repoDir" )
+		uniqImages+=( "$repo:$tag" )
 	else
 		repoDirTags["$repoDir"]+=', '
 	fi
 	repoDirTags["$repoDir"]+='`'"$tag"'`'
 done
+
+IFS=','
+imageLayers="https://imagelayers.io/?images=${uniqImages[*]}"
+unset IFS
 
 for repoDir in "${repoDirs[@]}"; do
 	if [[ "$repoDir" != *github.com* ]]; then
@@ -59,4 +69,6 @@ for repoDir in "${repoDirs[@]}"; do
 	echo $'-\t['"${repoDirTags["$repoDir"]}"' (*'"${dir}Dockerfile"'*)]('"$url"')'
 done
 
+echo
+echo "[![](https://badge.imagelayers.io/$repo:$latest.svg)]($imageLayers)"
 echo

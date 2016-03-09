@@ -1,0 +1,1 @@
+This image is officially deprecated in favor of [the `dockercore/docker` automated build](https://hub.docker.com/r/dockercore/docker/), and will receive no further updates. Please adjust your usage accordingly.

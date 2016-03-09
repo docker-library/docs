@@ -1,6 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.4.2`, `0.4`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/a408dd5869f54f0adfc6b6950200f6781284d15e/Dockerfile)
+-	[`0.4.3`, `0.4`, `latest` (*Dockerfile*)](https://github.com/docker-library/julia/blob/4c64514dc0f1aa0aed906af3a9a135d684c7d49e/Dockerfile)
+
+[![](https://badge.imagelayers.io/julia:latest.svg)](https://imagelayers.io/?images=julia:0.4.3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/julia`)](https://github.com/docker-library/official-images/blob/master/library/julia). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -36,7 +38,7 @@ View [license information](http://julialang.org/) for the software contained in 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `lein-2.5.3` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a22cdfcdf10fd5c99fa4bb993c71847ab00ee2a9/Dockerfile)
--	[`onbuild`, `lein-2.5.3-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/a22cdfcdf10fd5c99fa4bb993c71847ab00ee2a9/onbuild/Dockerfile)
+-	[`latest`, `lein-2.5.3` (*Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/b21db2ba56eef392c7dfab6cd85168153f17e2cc/Dockerfile)
+-	[`onbuild`, `lein-2.5.3-onbuild` (*onbuild/Dockerfile*)](https://github.com/Quantisan/docker-clojure/blob/b21db2ba56eef392c7dfab6cd85168153f17e2cc/onbuild/Dockerfile)
+
+[![](https://badge.imagelayers.io/clojure:latest.svg)](https://imagelayers.io/?images=clojure:latest,clojure:onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/clojure`)](https://github.com/docker-library/official-images/blob/master/library/clojure). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -84,7 +86,7 @@ View [license information](http://clojure.org/license) for the software containe
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -2,6 +2,8 @@
 
 -	[`latest`, `3.1` (*Dockerfile*)](https://github.com/prologic/docker-crux/blob/c614d61c53c05c02a43a34187fa1370db2c61524/Dockerfile)
 
+[![](https://badge.imagelayers.io/crux:latest.svg)](https://imagelayers.io/?images=crux:latest)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/crux`)](https://github.com/docker-library/official-images/blob/master/library/crux). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `crux/tag-details.md` file](https://github.com/docker-library/docs/blob/master/crux/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -24,7 +26,7 @@ Finally, it strives to use new features as they become available, as long as the
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

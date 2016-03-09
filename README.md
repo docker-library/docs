@@ -1,6 +1,6 @@
 # What is this?
 
-This repository contains the docs for each of the Docker official images. See [docker-library/official-images](https://github.com/docker-library/official-images) for the configuration how the images are built. To see all of the official images go to the [hub](https://registry.hub.docker.com/repos/stackbrew/?&s=alphabetical).
+This repository contains the docs for each of the Docker official images. See [docker-library/official-images](https://github.com/docker-library/official-images) for the configuration how the images are built. To see all of the official images go to the [hub](https://hub.docker.com/explore/).
 
 All Markdown files here are run through [tianon's fork of `markdownfmt`](https://github.com/tianon/markdownfmt) (only forked to add some smaller-diff preference and minor DockerHub-compatibility changes), and verified as formatted correctly via Travis-CI.
 
@@ -75,7 +75,7 @@ This is the short description for the docker hub, limited to 100 characters in a
 
 ## `<image name>/logo.png`
 
-Logo for the contained software. Specifications can be found in the docs on [Official Repos](https://docs.docker.com/docker-hub/official_repos/#a-logo)
+Logo for the contained software. While there are not hard rules on formatting, most existing logos are square or landscape and stay within a few hundred pixels of width.
 
 ## `<image name>/license.md`
 

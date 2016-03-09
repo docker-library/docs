@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`2.3.1`, `latest` (*2.3.1/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/026fcee712c5fd2596c7d41e14c2981404d94df2/2.3.1/Dockerfile)
--	[`2.3.1-enterprise`, `enterprise` (*2.3.1-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/026fcee712c5fd2596c7d41e14c2981404d94df2/2.3.1-enterprise/Dockerfile)
+-	[`2.3.2`, `latest` (*2.3.2/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/0ec755c62a0d6efc0f0d580376f12c42b36aa6f9/2.3.2/Dockerfile)
+-	[`2.3.2-enterprise`, `enterprise` (*2.3.2-enterprise/Dockerfile*)](https://github.com/neo4j/docker-neo4j/blob/0ec755c62a0d6efc0f0d580376f12c42b36aa6f9/2.3.2-enterprise/Dockerfile)
+
+[![](https://badge.imagelayers.io/neo4j:latest.svg)](https://imagelayers.io/?images=neo4j:2.3.2,neo4j:2.3.2-enterprise)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/neo4j`)](https://github.com/docker-library/official-images/blob/master/library/neo4j). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -19,11 +21,13 @@ Neo4j is a highly scalable, robust, native graph database. It is used in mission
 
 The image exposes two ports (`7474` and `7473`) for HTTP and HTTPS access to the Neo4j API and a volume (`/data`) to allow the database to be persisted outside its container.
 
-	docker run \
-	    --detach \
-	    --publish=7474:7474 \
-	    --volume=$HOME/neo4j/data:/data \
-	    neo4j
+```console
+$ docker run \
+    --detach \
+    --publish=7474:7474 \
+    --volume=$HOME/neo4j/data:/data \
+    neo4j
+```
 
 Point your browser at `http://localhost:7474` on Linux or `http://$(docker-machine ip default):7474` on OSX.
 
@@ -49,17 +53,21 @@ Docker controls the number of open file descriptors in a container; the limit de
 
 To check the limit on your system, run this command:
 
-	docker run neo4j \
-	    bash -c 'echo Soft limit: $(ulimit -Sn); echo Hard limit: $(ulimit -Hn)'
+```console
+$ docker run neo4j \
+    bash -c 'echo Soft limit: $(ulimit -Sn); echo Hard limit: $(ulimit -Hn)'
+```
 
 To override the default configuration for a single container, use the `--ulimit` option like this:
 
-	docker run \
-	    --detach \
-	    --publish=7474:7474 \
-	    --volume=$HOME/neo4j/data:/data \
-	    --ulimit=nofile=40000:40000
-	    neo4j
+```console
+$ docker run \
+    --detach \
+    --publish=7474:7474 \
+    --volume=$HOME/neo4j/data:/data \
+    --ulimit=nofile=40000:40000
+    neo4j
+```
 
 ## Neo4j configuration
 
@@ -71,12 +79,14 @@ There are three ways to modify the configuration depending on how much you need 
 
 Pass environment variables to the container when you run it.
 
-	docker run \
-	    --detach \
-	    --publish=7474:7474 \
-	    --volume=$HOME/neo4j/data:/data \
-	    --env=NEO4J_CACHE_MEMORY=4G \
-	    neo4j
+```console
+$ docker run \
+    --detach \
+    --publish=7474:7474 \
+    --volume=$HOME/neo4j/data:/data \
+    --env=NEO4J_CACHE_MEMORY=4G \
+    neo4j
+```
 
 The following environment variables are available:
 
@@ -85,6 +95,7 @@ The following environment variables are available:
 -	`NEO4J_KEEP_LOGICAL_LOGS`: the retention policy for logical logs, defaults to `100M size`
 -	`NEO4J_AUTH`: controls authentication, set to `none` to disable authentication or `neo4j/<password>` to override the default password (see documentation [here](http://neo4j.com/docs/stable/rest-api-security.html))
 -	`NEO4J_THIRDPARTY_JAXRS_CLASSES`: URI mappings for unmanaged extensions (see below)
+-	`NEO4J_ALLOW_STORE_UPGRADE`: set to `true` to enable upgrades, defaults to `false` (see the [manual](http://neo4j.com/docs/stable/deployment-upgrading.html) for details)
 
 #### Enterprise Edition
 
@@ -99,26 +110,46 @@ The following settings control features that are only available in the Enterpris
 
 To make arbitrary modifications to the Neo4j configuration, provide the container with a `/conf` volume.
 
-	docker run \
-	    --detach \
-	    --publish=7474:7474 \
-	    --volume=$HOME/neo4j/data:/data \
-	    --volume=$HOME/neo4j/conf:/conf \
-	    neo4j
+```console
+$ docker run \
+    --detach \
+    --publish=7474:7474 \
+    --volume=$HOME/neo4j/data:/data \
+    --volume=$HOME/neo4j/conf:/conf \
+    neo4j
+```
 
 Any configuration files in the `/conf` volume will override files provided by the image. This includes values that may have been set in response to environment variables passed to the container by Docker. So if you want to change one value in a file you must ensure that the rest of the file is complete and correct.
 
 To dump an initial set of configuration files, run the image with the `dump-config` command.
 
-	docker run --rm\
-	    --volume=$HOME/neo4j/conf:/conf \
-	    neo4j dump-config
+```console
+$ docker run --rm\
+    --volume=$HOME/neo4j/conf:/conf \
+    neo4j dump-config
+```
 
 ### Build a new image
 
 For more complex customization of the image you can create a new image based on this one.
 
-	FROM neo4j
+```dockerfile
+FROM neo4j
+```
+
+If you need to make your own configuration changes, we provide a hook so you can do that in a script:
+
+```dockerfile
+COPY extra_conf.sh /extra_conf.sh
+```
+
+Then you can pass in the `EXTENSION_SCRIPT` environment variable at runtime to source the script:
+
+```console
+$ docker run -e "EXTENSION_SCRIPT=/extra_conf.sh" cafe12345678
+```
+
+When the extension script is sourced, the current working directory will be the root of the Neo4j installation.
 
 ## Neo4j HA
 
@@ -128,30 +159,40 @@ In order to run Neo4j in HA mode under Docker you need to wire up the containers
 
 Within a single Docker host, this can be achieved as follows.
 
-	docker network create --driver=bridge cluster
-	
-	docker run --name=instance1 --detach --publish=7474:7474 --net=cluster --hostname=instance1 \
-	    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance1 --env=NEO4J_SERVER_ID=1 \
-	    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
-	    neo4j:enterprise
-	
-	docker run --name=instance2 --detach --publish 7475:7474 --net=cluster --hostname=instance2 \
-	    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance2 --env=NEO4J_SERVER_ID=2 \
-	    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
-	    neo4j:enterprise
-	
-	docker run --name=instance3 --detach --publish 7476:7474 --net=cluster --hostname=instance3 \
-	    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance3 --env=NEO4J_SERVER_ID=3 \
-	    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
-	    neo4j:enterprise
+```console
+$ docker network create --driver=bridge cluster
+```
+
+```console
+$ docker run --name=instance1 --detach --publish=7474:7474 --net=cluster --hostname=instance1 \
+    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance1 --env=NEO4J_SERVER_ID=1 \
+    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
+    neo4j:enterprise
+```
+
+```console
+$ docker run --name=instance2 --detach --publish 7475:7474 --net=cluster --hostname=instance2 \
+    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance2 --env=NEO4J_SERVER_ID=2 \
+    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
+    neo4j:enterprise
+```
+
+```console
+$ docker run --name=instance3 --detach --publish 7476:7474 --net=cluster --hostname=instance3 \
+    --env=NEO4J_DATABASE_MODE=HA --env=NEO4J_HA_ADDRESS=instance3 --env=NEO4J_SERVER_ID=3 \
+    --env=NEO4J_INITIAL_HOSTS=instance1:5001,instance2:5001,instance3:5001 \
+    neo4j:enterprise
+```
 
 ## Plugins and unmanaged extensions
 
 To install a plugin or unmanaged extension, provide a `/plugins` volume containing the jars. For unmanged extensions you also need to provide an environment variable specifying a URI mapping.
 
-	docker run --publish 7474:7474 --volume=$HOME/neo4j/plugins:/plugins \
-	    --env=NEO4J_THIRDPARTY_JAXRS_CLASSES=com.example.extension=/example
-	    neo4j
+```console
+$ docker run --publish 7474:7474 --volume=$HOME/neo4j/plugins:/plugins \
+    --env=NEO4J_THIRDPARTY_JAXRS_CLASSES=com.example.extension=/example
+    neo4j
+```
 
 See the [manual](http://neo4j.com/docs/stable/server-extending.html) for more details on plugins and unmanaged extensions.
 
@@ -159,11 +200,33 @@ See the [manual](http://neo4j.com/docs/stable/server-extending.html) for more de
 
 The Neo4j shell can be run locally within a container using a command like this:
 
-	docker exec --interactive <container> bin/neo4j-shell
+```console
+$ docker exec --interactive <container> bin/neo4j-shell
+```
+
+## AppArmor
+
+Neo4j currently makes use of `lsof` to ensure the server is running and accepting connections on a given port. Some AppArmor configurations (specifically the default configuration on Linux Mint) prevent `lsof` from working as expected.
+
+A workaround is to run the docker image in privileged mode, by adding `--privileged=true` to the docker command line. This is a workaround that disables the security provided by AppArmor, and is not recommended for deployments.
+
+The current best known solution is to enable the use of ptrace in the docker profile of AppArmor. Do this by adding the following line to `/etc/init.d/docker`:
+
+`ptrace peer=docker-default,`
+
+Add this line before the last curly brace, and restart docker.
+
+## HTTPS support
+
+To use your own key and certificate, provide an `/ssl` volume with the key and certificate inside. The key filename must end in `.key`, and the certificate in `.cert`. Only one of each file may be present. You must also publish port `7473` to access the HTTPS endpoint.
+
+```console
+$ docker run --publish 7473:7473 --volume $HOME/neo4j/ssl:/ssl neo4j
+```
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

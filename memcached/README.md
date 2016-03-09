@@ -1,6 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.25`, `1.4`, `1`, `latest` (*Dockerfile*)](https://github.com/docker-library/memcached/blob/1944b045661a2fabcf2b9677f7edaa07e04f8d8d/Dockerfile)
+-	[`1.4.25`, `1.4`, `1`, `latest` (*Dockerfile*)](https://github.com/docker-library/memcached/blob/a8c4206768821aa47579c6413be85be914875caa/Dockerfile)
+
+[![](https://badge.imagelayers.io/memcached:latest.svg)](https://imagelayers.io/?images=memcached:1.4.25)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/memcached`)](https://github.com/docker-library/official-images/blob/master/library/memcached). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -44,7 +46,7 @@ View [license information](https://github.com/memcached/memcached/blob/master/LI
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

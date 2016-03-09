@@ -1,6 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1.19`, `3.1`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/celery/blob/e2bc6ae91c1b584fd6c2b65976e0ccb42c17db4e/Dockerfile)
+-	[`3.1.22`, `3.1`, `3`, `latest` (*Dockerfile*)](https://github.com/docker-library/celery/blob/3a598dfe1b9cbe9adde5f8c4d28009d295dcbc39/Dockerfile)
+
+[![](https://badge.imagelayers.io/celery:latest.svg)](https://imagelayers.io/?images=celery:3.1.22)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/celery`)](https://github.com/docker-library/official-images/blob/master/library/celery). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -40,7 +42,7 @@ $ docker run --link some-redis:redis -e CELERY_BROKER_URL=redis://redis --rm cel
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

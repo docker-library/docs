@@ -1,9 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.3`, `4.0` (*4.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/0ffeed9bb61036fca3f23fa4f9208b90a484f150/4.0/Dockerfile)
--	[`4.1.4`, `4.1` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/e4e44e6e91f1708d859f5275aad189fdb50dfd7a/4.1/Dockerfile)
--	[`4.2.2`, `4.2` (*4.2/Dockerfile*)](https://github.com/docker-library/kibana/blob/63d41b40afc169c437fd44f2efc6048d2931e7e4/4.2/Dockerfile)
--	[`4.3.1`, `4.3`, `4`, `latest` (*4.3/Dockerfile*)](https://github.com/docker-library/kibana/blob/a747babc86c0235f94dc7b65d23743f4cbfd7bca/4.3/Dockerfile)
+-	[`4.0.3`, `4.0` (*4.0/Dockerfile*)](https://github.com/docker-library/kibana/blob/b606ae998472df66e0c8e769ed070129edad12be/4.0/Dockerfile)
+-	[`4.1.5`, `4.1` (*4.1/Dockerfile*)](https://github.com/docker-library/kibana/blob/b606ae998472df66e0c8e769ed070129edad12be/4.1/Dockerfile)
+-	[`4.2.2`, `4.2` (*4.2/Dockerfile*)](https://github.com/docker-library/kibana/blob/b606ae998472df66e0c8e769ed070129edad12be/4.2/Dockerfile)
+-	[`4.3.2`, `4.3` (*4.3/Dockerfile*)](https://github.com/docker-library/kibana/blob/b606ae998472df66e0c8e769ed070129edad12be/4.3/Dockerfile)
+-	[`4.4.1`, `4.4`, `4`, `latest` (*4.4/Dockerfile*)](https://github.com/docker-library/kibana/blob/b606ae998472df66e0c8e769ed070129edad12be/4.4/Dockerfile)
+
+[![](https://badge.imagelayers.io/kibana:latest.svg)](https://imagelayers.io/?images=kibana:4.0.3,kibana:4.1.5,kibana:4.2.2,kibana:4.3.2,kibana:4.4.1)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/kibana`)](https://github.com/docker-library/official-images/blob/master/library/kibana). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -53,7 +56,7 @@ View [license information](https://github.com/elastic/kibana/blob/4557a6fc0ba08c
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

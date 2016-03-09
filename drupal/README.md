@@ -1,7 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.41`, `7` (*7/Dockerfile*)](https://github.com/docker-library/drupal/blob/9e1ff6c719c7a6dec88b1089f9128dab428c4eed/7/Dockerfile)
--	[`8.0.1`, `8.0`, `8`, `latest` (*8/Dockerfile*)](https://github.com/docker-library/drupal/blob/ca201ee97093e5407f14f6cdad875cb5ea64e08a/8/Dockerfile)
+-	[`7.43-apache`, `7.43`, `7-apache`, `7` (*7/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/865f61938fe7f37359d8feeb13bb03bff8f11387/7/apache/Dockerfile)
+-	[`7.43-fpm`, `7-fpm` (*7/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/865f61938fe7f37359d8feeb13bb03bff8f11387/7/fpm/Dockerfile)
+-	[`8.0.5-apache`, `8.0.5`, `8.0-apache`, `8.0`, `8-apache`, `8`, `apache`, `latest` (*8.0/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/907aa1ebada751931dde5b23666b60bbeb39de09/8.0/apache/Dockerfile)
+-	[`8.0.5-fpm`, `8.0-fpm`, `8-fpm`, `fpm` (*8.0/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/907aa1ebada751931dde5b23666b60bbeb39de09/8.0/fpm/Dockerfile)
+-	[`8.1.0-beta1-apache`, `8.1.0-beta1`, `8.1.0-apache`, `8.1.0`, `8.1-apache`, `8.1` (*8.1/apache/Dockerfile*)](https://github.com/docker-library/drupal/blob/907aa1ebada751931dde5b23666b60bbeb39de09/8.1/apache/Dockerfile)
+-	[`8.1.0-beta1-fpm`, `8.1.0-fpm`, `8.1-fpm` (*8.1/fpm/Dockerfile*)](https://github.com/docker-library/drupal/blob/907aa1ebada751931dde5b23666b60bbeb39de09/8.1/fpm/Dockerfile)
+
+[![](https://badge.imagelayers.io/drupal:latest.svg)](https://imagelayers.io/?images=drupal:7.43-apache,drupal:7.43-fpm,drupal:8.0.5-apache,drupal:8.0.5-fpm,drupal:8.1.0-beta1-apache,drupal:8.1.0-beta1-fpm)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/drupal`)](https://github.com/docker-library/official-images/blob/master/library/drupal). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -72,7 +78,7 @@ View [license information](https://www.drupal.org/licensing/faq) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

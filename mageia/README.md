@@ -1,7 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/0de4791998e295f9b71ff4d079dea424fe397853/5/Dockerfile)
--	[`4` (*4/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/0de4791998e295f9b71ff4d079dea424fe397853/4/Dockerfile)
+-	[`latest`, `5` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/85a4253a175cde455b9926b4a83fb8d5ceea096f/5/Dockerfile)
+
+[![](https://badge.imagelayers.io/mageia:latest.svg)](https://imagelayers.io/?images=mageia:latest)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mageia`)](https://github.com/docker-library/official-images/blob/master/library/mageia). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -9,7 +10,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # What is Mageia?
 
-[Mageia](http://www.mageia.org) is a GNU/Linux-based, Free Software operating system.It is a [community](https://www.mageia.org/en/community/) project, supported by [a nonprofit organisation](https://www.mageia.org/en/about/#mageia.org) of elected contributors.
+[Mageia](http://www.mageia.org) is a GNU/Linux-based, Free Software operating system. It is a [community](https://www.mageia.org/en/community/) project, supported by [a non-profit organisation](https://www.mageia.org/en/about/#mageia.org) of elected contributors.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/ab6a17739272608c925f896ecf1c8feb18f0ec1a/mageia/logo.png)
 
@@ -21,14 +22,14 @@ To date, Mageia:
 
 -	[started in September 2010 as a fork](https://www.mageia.org/en/about/2010-sept-announcement.html) of Mandriva Linux;
 -	gathered hundreds of careful individuals and several companies worldwide,who coproduce the infrastructure, the distribution itself, [documentation](https://wiki.mageia.org/), [delivery](https://www.mageia.org/en/downloads/) and [support](https://www.mageia.org/en/support/), using Free Software tools;
--	released four major stable releases in June 2011, in May 2012, in May 2013 and in February 2014.
+-	released major stable releases every year since 2011
 
 # How to use this image
 
 ## Create a Dockerfile for your container
 
 ```dockerfile
-FROM mageia:4
+FROM mageia:5
 MAINTAINER  "Foo Bar" <foo@bar.com>
 CMD [ "bash" ]
 ```
@@ -44,7 +45,7 @@ All images install the following packages:
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

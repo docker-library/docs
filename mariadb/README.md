@@ -1,8 +1,10 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`10.1.10`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/d960d3cd750accc47d620886cff901d87a600d37/10.1/Dockerfile)
--	[`10.0.23`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/2a8c48a54d8210241861740ea76b5aedf4da681f/10.0/Dockerfile)
--	[`5.5.47`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/de4c20ffb8cb11baa7a522f8e0d98316dc95f2cb/5.5/Dockerfile)
+-	[`10.1.12`, `10.1`, `10`, `latest` (*10.1/Dockerfile*)](https://github.com/docker-library/mariadb/blob/9430efcac9f75793dd2e368bc9517c21a96c07ef/10.1/Dockerfile)
+-	[`10.0.24`, `10.0` (*10.0/Dockerfile*)](https://github.com/docker-library/mariadb/blob/a3da203091c235a827467d5bcb10bc4b06903295/10.0/Dockerfile)
+-	[`5.5.48`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-library/mariadb/blob/a3da203091c235a827467d5bcb10bc4b06903295/5.5/Dockerfile)
+
+[![](https://badge.imagelayers.io/mariadb:latest.svg)](https://imagelayers.io/?images=mariadb:10.1.12,mariadb:10.0.24,mariadb:5.5.48)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/mariadb`)](https://github.com/docker-library/official-images/blob/master/library/mariadb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -144,7 +146,7 @@ If you start your `mariadb` container instance with a data directory that alread
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

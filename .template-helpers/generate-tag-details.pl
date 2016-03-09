@@ -216,7 +216,7 @@ while (my $image = shift) {
 		say "-\t" . 'Virtual Size: ' . size($data->{virtual_size});
 		say "-\t" . 'v2 Blob: `' . $data->{blob} . '`';
 		say "-\t" . 'v2 Content-Length: ' . size($data->{blob_content_length});
-		say "-\t" . 'v2 Last-Modified: ' . date($data->{blob_last_modified});
+		say "-\t" . 'v2 Last-Modified: ' . date($data->{blob_last_modified}) if $data->{blob_last_modified};
 		$cur = $parentChild{$cur};
 	}
 }

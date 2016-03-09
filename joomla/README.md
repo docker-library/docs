@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`3.4.5-apache`, `3.4.5`, `3.4-apache`, `3.4`, `3-apache`, `apache`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/fe2fb4aa4cbab28d3a44ff757895d8664a4c04b4/apache/Dockerfile)
--	[`3.4.5-fpm`, `3.4-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/fe2fb4aa4cbab28d3a44ff757895d8664a4c04b4/fpm/Dockerfile)
+-	[`3.4.8-apache`, `3.4.8`, `3.4-apache`, `3.4`, `3-apache`, `apache`, `3`, `latest` (*apache/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/287ab579259158e356dcaf874dc0aaaa421c5ac0/apache/Dockerfile)
+-	[`3.4.8-fpm`, `3.4-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/287ab579259158e356dcaf874dc0aaaa421c5ac0/fpm/Dockerfile)
+
+[![](https://badge.imagelayers.io/joomla:latest.svg)](https://imagelayers.io/?images=joomla:3.4.8-apache,joomla:3.4.8-fpm)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/joomla`)](https://github.com/docker-library/official-images/blob/master/library/joomla). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -82,7 +84,7 @@ View [license information](http://www.gnu.org/licenses/gpl-2.0.txt) for the soft
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

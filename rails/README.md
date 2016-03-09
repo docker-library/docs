@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.5`, `4.2`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/1d9e5d95eaff6030dd28be4de0b415cc415e0497/Dockerfile)
+-	[`4.2.6`, `4.2`, `4`, `latest` (*Dockerfile*)](https://github.com/docker-library/rails/blob/09ca1187b57df26d1ba3fb04874806bdd47109f8/Dockerfile)
 -	[`onbuild` (*onbuild/Dockerfile*)](https://github.com/docker-library/rails/blob/9fb5d2b7e0f2e7029855028e07e86ab7ec54abaa/onbuild/Dockerfile)
+
+[![](https://badge.imagelayers.io/rails:latest.svg)](https://imagelayers.io/?images=rails:4.2.6,rails:onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/rails`)](https://github.com/docker-library/official-images/blob/master/library/rails). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -83,7 +85,7 @@ View [license information](https://github.com/rails/rails#license) for the softw
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

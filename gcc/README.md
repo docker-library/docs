@@ -1,10 +1,12 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.8.5`, `4.8` (*4.8/Dockerfile*)](https://github.com/docker-library/gcc/blob/d7108b41b79e9cdfee2d59bcd84b8bb65ae424d5/4.8/Dockerfile)
--	[`4.9.3`, `4.9`, `4` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/d7108b41b79e9cdfee2d59bcd84b8bb65ae424d5/4.9/Dockerfile)
--	[`5.1.0`, `5.1` (*5.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/d7108b41b79e9cdfee2d59bcd84b8bb65ae424d5/5.1/Dockerfile)
--	[`5.2.0`, `5.2` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/2db1810f653d5a2b6135f81ed0d1f7659e462d7b/5.2/Dockerfile)
--	[`5.3.0`, `5.3`, `5`, `latest` (*5.3/Dockerfile*)](https://github.com/docker-library/gcc/blob/aeeaf564ad8cbce6eb1d6e7749d8394475e7d345/5.3/Dockerfile)
+-	[`4.8.5`, `4.8` (*4.8/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/4.8/Dockerfile)
+-	[`4.9.3`, `4.9`, `4` (*4.9/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/4.9/Dockerfile)
+-	[`5.1.0`, `5.1` (*5.1/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/5.1/Dockerfile)
+-	[`5.2.0`, `5.2` (*5.2/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/5.2/Dockerfile)
+-	[`5.3.0`, `5.3`, `5`, `latest` (*5.3/Dockerfile*)](https://github.com/docker-library/gcc/blob/5e3781575c04f31812375822f4f28fbb39da5dc3/5.3/Dockerfile)
+
+[![](https://badge.imagelayers.io/gcc:latest.svg)](https://imagelayers.io/?images=gcc:4.8.5,gcc:4.9.3,gcc:5.1.0,gcc:5.2.0,gcc:5.3.0)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/gcc`)](https://github.com/docker-library/official-images/blob/master/library/gcc). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -59,7 +61,7 @@ View [license information](https://gcc.gnu.org/viewcvs/gcc/trunk/gcc/COPYING3?vi
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

@@ -25,7 +25,6 @@ declare -A otherRepos=(
 	[alpine]='https://github.com/gliderlabs/docker-alpine'
 	[arangodb]='https://github.com/arangodb/arangodb-docker'
 	[bonita]='https://github.com/Bonitasoft-Community/docker_bonita'
-	[busybox]='https://github.com/jpetazzo/docker-busybox'
 	[centos]='https://github.com/CentOS/sig-cloud-instance-images'
 	[cirros]='https://github.com/ewindisch/docker-cirros'
 	[clojure]='https://github.com/Quantisan/docker-clojure'
@@ -33,6 +32,7 @@ declare -A otherRepos=(
 	[crux]='https://github.com/therealprologic/docker-crux'
 	[debian]='https://github.com/tianon/docker-brew-debian'
 	[docker-dev]='https://github.com/docker/docker'
+	[elixir]='https://github.com/c0b/docker-elixir'
 	[erlang]='https://github.com/c0b/docker-erlang-otp'
 	[fedora]='https://github.com/lsm5/docker-brew-fedora'
 	[gazebo]='https://github.com/osrf/docker_images'
@@ -59,6 +59,8 @@ declare -A otherRepos=(
 	[opensuse]='https://github.com/openSUSE/docker-containers-build'
 	[oraclelinux]='https://github.com/oracle/docker'
 	[perl]='https://github.com/Perl/docker-perl'
+	[photon]='https://github.com/frapposelli/photon-docker-image'
+	[piwik]='https://github.com/piwik/docker-piwik'
 	[r-base]='https://github.com/rocker-org/rocker'
 	[rakudo]='https://github.com/perl6/docker'
 	[registry]='https://github.com/docker/docker-registry'
@@ -131,7 +133,14 @@ for repo in "${repos[@]}"; do
 			composeYml=$'```yaml\n'"$(cat "$repo/docker-compose.yml")"$'\n```'
 		fi
 		
-		cp -v "$helperDir/template.md" "$repo/README.md"
+		deprecated=
+		if [ -f "$repo/deprecated.md" ]; then
+			deprecated=$'# **DEPRECATED**\n\n'
+			deprecated+="$(cat "$repo/deprecated.md")"
+			deprecated+=$'\n\n'
+		fi
+		
+		{ echo -n "$deprecated"; cat "$helperDir/template.md"; } > "$repo/README.md"
 		
 		echo '  TAGS => generate-dockerfile-links-partial.sh'
 		partial="$("$helperDir/generate-dockerfile-links-partial.sh" "$repo")"

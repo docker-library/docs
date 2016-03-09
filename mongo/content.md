@@ -40,6 +40,41 @@ Just add the `--storageEngine` argument if you want to use the WiredTiger storag
 $ docker run --name some-mongo -d mongo --storageEngine wiredTiger
 ```
 
+### Authentication and Authorization
+
+MongoDB does not require authentication by default, but it can be configured to do so. For more details about the functionality described here, please see the sections in the official documentation which describe [authentication](https://docs.mongodb.org/manual/core/authentication/) and [authorization](https://docs.mongodb.org/manual/core/authorization/) in more detail.
+
+#### Start the Database
+
+```console
+$ docker run --name some-mongo -d mongo --auth
+```
+
+#### Add the Initial Admin User
+
+```console
+$ docker exec -it some-mongo mongo admin
+connecting to: admin
+> db.createUser({ user: 'jsmith', pwd: 'some-initial-password', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
+Successfully added user: {
+	"user" : "jsmith",
+	"roles" : [
+		{
+			"role" : "userAdminAnyDatabase",
+			"db" : "admin"
+		}
+	]
+}
+```
+
+#### Connect Externally
+
+```console
+$ docker run -it --rm --link some-mongo:mongo mongo mongo -u jsmith -p some-initial-password --authenticationDatabase admin some-mongo/some-db
+> db.getName();
+some-db
+```
+
 ## Where to Store Data
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `%%REPO%%` images to familiarize themselves with the options available, including:
@@ -47,7 +82,7 @@ Important note: There are several ways to store data used by applications that r
 -	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/userguide/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/userguide/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
-**WARNING**: because MongoDB uses memory mapped files it is not possible to use it through vboxsf to your host ([vbox bug](https://www.virtualbox.org/ticket/819)).
+**WARNING**: because MongoDB uses memory mapped files it is not possible to use it through vboxsf to your host ([vbox bug](https://www.virtualbox.org/ticket/819)). VirtualBox shared folders are not supported by MongoDB (see [docs.mongodb.org](https://docs.mongodb.org/manual/administration/production-notes/#fsync-on-directories) and related [jira.mongodb.org](https://jira.mongodb.org/browse/SERVER-8600) bug). This means that it is not possible with the default setup using Docker Toolbox to run a MongoDB container with the data directory mapped to the host.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 

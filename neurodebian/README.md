@@ -10,6 +10,8 @@
 -	[`stretch`, `nd90` (*dockerfiles/stretch/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/stretch/Dockerfile)
 -	[`sid`, `nd` (*dockerfiles/sid/Dockerfile*)](https://github.com/neurodebian/dockerfiles/blob/dc947232d6c7bf67d1dba642fdb1234fbaa95ab7/dockerfiles/sid/Dockerfile)
 
+[![](https://badge.imagelayers.io/neurodebian:latest.svg)](https://imagelayers.io/?images=neurodebian:precise,neurodebian:trusty,neurodebian:vivid,neurodebian:wily,neurodebian:squeeze,neurodebian:wheezy,neurodebian:jessie,neurodebian:stretch,neurodebian:sid)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/neurodebian`)](https://github.com/docker-library/official-images/blob/master/library/neurodebian). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `neurodebian/tag-details.md` file](https://github.com/docker-library/docs/blob/master/neurodebian/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -43,7 +45,7 @@ deb http://neuro.debian.net/debian data main
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

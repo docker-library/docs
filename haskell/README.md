@@ -1,7 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.10.2`, `7.10`, `7`, `latest` (*7.10/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/da915d2dd59b7a9817606a2bb5d32d1d305bc1da/7.10/Dockerfile)
--	[`7.8.4`, `7.8` (*7.8/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/da915d2dd59b7a9817606a2bb5d32d1d305bc1da/7.8/Dockerfile)
+-	[`7.10.3`, `7.10`, `7`, `latest` (*7.10/Dockerfile*)](https://github.com/freebroccolo/docker-haskell/blob/a396f0d9b35cabeb60920abd87a8b2612530cb1b/7.10/Dockerfile)
+
+[![](https://badge.imagelayers.io/haskell:latest.svg)](https://imagelayers.io/?images=haskell:7.10.3)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haskell`)](https://github.com/docker-library/official-images/blob/master/library/haskell). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -13,7 +14,7 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 Haskell's [`ghc`](http://www.haskell.org/ghc) is a [portable](https://ghc.haskell.org/trac/ghc/wiki/Platforms), [optimizing](http://benchmarksgame.alioth.debian.org/u64q/haskell.php) compiler with a foreign-function interface ([FFI](http://en.wikibooks.org/wiki/Haskell/FFI)), an [LLVM backend](https://www.haskell.org/ghc/docs/7.8.3/html/users_guide/code-generators.html), and sophisticated runtime support for [concurrency](http://en.wikibooks.org/wiki/Haskell/Concurrency), explicit/implicit [parallelism](http://community.haskell.org/~simonmar/pcph/), runtime [profiling](http://www.haskell.org/haskellwiki/ThreadScope), etc. Other Haskell tools like [`criterion`](http://www.serpentine.com/criterion/tutorial.html), [`quickcheck`](https://www.fpcomplete.com/user/pbv/an-introduction-to-quickcheck-testing), [`hpc`](http://www.haskell.org/haskellwiki/Haskell_program_coverage#Examples), and [`haddock`](http://en.wikipedia.org/wiki/Haddock_%28software%29) provide advanced benchmarking, property-based testing, code coverage, and documentation generation.
 
-A large number of production-quality Haskell libraries are available from [Hackage](https://hackage.haskell.org). The [`cabal`](https://www.fpcomplete.com/user/simonmichael/how-to-cabal-install) tool fetches packages and builds projects using the Hackage ecosystem.
+A large number of production-quality Haskell libraries are available from [Hackage](https://hackage.haskell.org) in the form of [Cabal](https://www.haskell.org/cabal/) packages. The traditional [`cabal`](https://www.fpcomplete.com/user/simonmichael/how-to-cabal-install) tool, or the more recent [`stack`](http://docs.haskellstack.org/en/stable/README.html) tool (available in `7.10.3`+) can be used to streamline working with Cabal packages. The key differences are summarized [here](https://www.fpcomplete.com/blog/2015/06/why-is-stack-not-cabal). New users are encouraged to start with `stack`.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/53e03448d5c2c33124ce24609f6179ddc94873f4/haskell/logo.png)
 
@@ -26,56 +27,63 @@ This image ships a minimal Haskell toolchain with the following packages from th
 -	`cabal-install`
 -	`happy`
 
-The most recent GHC release in the 7.8 series is also available, though no longer receiving updates from upstream, so users are encouraged to upgrade to 7.10.
+As of `7.10.3`, the `stack` tool is included via FPComplete's Debian repository.
+
+Note: The GHC developers do not support legacy release branches (i.e. `7.8.x`). While older GHC release tags are available in this DockerHub repository, only the latest stable release (or upcoming release candidates) will be shown in the "Supported tags ..." section at the top of this page.
 
 ## How to use this image
 
 Start an interactive interpreter session with `ghci`:
 
 ```console
-$ docker run -it --rm haskell:7.10
-GHCi, version 7.10.1: http://www.haskell.org/ghc/  :? for help
+$ docker run -it --rm haskell:7.10.3
+GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
 
-Dockerize a [Hackage](http://hackage.haskell.org) app with a Dockerfile inheriting from the base image:
+Dockerize an application from Hackage with a `Dockerfile`:
 
 ```dockerfile
-FROM haskell:7.8
-RUN cabal update && cabal install MazesOfMonad
-VOLUME /root/.MazesOfMonad
-ENTRYPOINT ["/root/.cabal/bin/mazesofmonad"]
+FROM haskell:7
+RUN stack install pandoc pandoc-citeproc
+ENTRYPOINT ["pandoc"]
 ```
 
-Iteratively develop then ship a Haskell app with a Dockerfile utilizing the build cache:
+Alternatively, using `cabal`:
 
 ```dockerfile
-FROM haskell:7.8
+FROM haskell:7
+RUN cabal update && cabal install pandoc pandoc-citeproc
+ENTRYPOINT ["pandoc"]
+```
+
+Iteratively develop a Haskell application with a `Dockerfile` utilizing the build cache:
+
+```dockerfile
+FROM haskell:7.10
+
+WORKDIR /opt/server
 
 RUN cabal update
 
-# Add .cabal file
-ADD ./server/snap-example.cabal /opt/server/snap-example.cabal
+# Add just the .cabal file to capture dependencies
+COPY ./snap-example.cabal /opt/server/snap-example.cabal
 
 # Docker will cache this command as a layer, freeing us up to
 # modify source code without re-installing dependencies
-RUN cd /opt/server && cabal install --only-dependencies -j4
+# (unless the .cabal file changes!)
+RUN cabal install --only-dependencies -j4
 
 # Add and Install Application Code
-ADD ./server /opt/server
-RUN cd /opt/server && cabal install
+COPY . /opt/server
+RUN cabal install
 
-# Add installed cabal executables to PATH
-ENV PATH /root/.cabal/bin:$PATH
-
-# Default Command for Container
-WORKDIR /opt/server
 CMD ["snap-example"]
 ```
 
 ### Examples
 
-See the application snippet above in more detail in the [example snap application](https://github.com/freebroccolo/docker-haskell/tree/master/examples/7.8.3/snap).
+See the application snippet above in more detail in the [example snap application](https://github.com/freebroccolo/docker-haskell/tree/master/examples/7.10/snap).
 
 # License
 
@@ -83,7 +91,7 @@ This image is licensed under the MIT License (see [LICENSE](https://github.com/d
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

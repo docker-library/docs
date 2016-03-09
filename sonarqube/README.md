@@ -1,7 +1,9 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5.2` (*5.2/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/2f7cc2f6ef7f0206b697c37df09fe2e0fd36c8f4/5.2/Dockerfile)
+-	[`latest`, `5.3` (*5.3/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/f13192265920c40f8a50ec55f7c2af7a412c4c88/5.3/Dockerfile)
 -	[`lts`, `4.5.6` (*4.5.6/Dockerfile*)](https://github.com/SonarSource/docker-sonarqube/blob/2f7cc2f6ef7f0206b697c37df09fe2e0fd36c8f4/4.5.6/Dockerfile)
+
+[![](https://badge.imagelayers.io/sonarqube:latest.svg)](https://imagelayers.io/?images=sonarqube:latest,sonarqube:lts)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sonarqube`)](https://github.com/docker-library/official-images/blob/master/library/sonarqube). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -62,7 +64,7 @@ View [license information](http://www.gnu.org/licenses/lgpl.txt) for the softwar
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

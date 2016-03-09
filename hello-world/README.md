@@ -2,6 +2,8 @@
 
 -	[`latest` (*Dockerfile*)](https://github.com/docker-library/hello-world/blob/22ecfe456f254d5babe6e413bed2de77cfaba047/Dockerfile)
 
+[![](https://badge.imagelayers.io/hello-world:latest.svg)](https://imagelayers.io/?images=hello-world:latest)
+
 For more information about this image and its history, please see [the relevant manifest file (`library/hello-world`)](https://github.com/docker-library/official-images/blob/master/library/hello-world). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `hello-world/tag-details.md` file](https://github.com/docker-library/docs/blob/master/hello-world/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
@@ -45,7 +47,7 @@ This image is a prime example of using the [`scratch`](https://registry.hub.dock
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 

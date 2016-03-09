@@ -1,6 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `1.625.3` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/83ce6f6070f1670563a00d0f61d04edd62b78f4f/Dockerfile)
+-	[`latest`, `1.642.2` (*Dockerfile*)](https://github.com/jenkinsci/jenkins-ci.org-docker/blob/e7d56fa71d44ace1f1d8258ef216bba64f266cca/Dockerfile)
+
+[![](https://badge.imagelayers.io/jenkins:latest.svg)](https://imagelayers.io/?images=jenkins:latest)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/jenkins`)](https://github.com/docker-library/official-images/blob/master/library/jenkins). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -92,7 +94,9 @@ docker run --name myjenkins -p 8080:8080 -p 50000:50000 --env JAVA_OPTS="-Djava.
 
 Argument you pass to docker running the jenkins image are passed to jenkins launcher, so you can run for sample :
 
-	docker run jenkins --version
+```console
+$ docker run jenkins --version
+```
 
 This will dump Jenkins version, just like when you run jenkins as an executable war.
 
@@ -116,7 +120,9 @@ ENV JENKINS_SLAVE_AGENT_PORT 50001
 
 or as a parameter to docker,
 
-	docker run --name myjenkins -p 8080:8080 -p 50001:50001 --env JENKINS_SLAVE_AGENT_PORT=50001 jenkins
+```console
+$ docker run --name myjenkins -p 8080:8080 -p 50001:50001 --env JENKINS_SLAVE_AGENT_PORT=50001 jenkins
+```
 
 # Installing more tools
 
@@ -168,7 +174,7 @@ As always - please ensure that you know how to drive docker - especially volume 
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.9.1.
+This image is officially supported on Docker version 1.10.2.
 
 Support for older versions (down to 1.6) is provided on a best-effort basis.
 
