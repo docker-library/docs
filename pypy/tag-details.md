@@ -2759,7 +2759,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13573020 bytes)
 -	v2 Blob: `sha256:69445c74680b8b41907da772f6fb692735e38f574c04dfae677f5b35c2380382`
 -	v2 Content-Length: 5.5 MB (5450344 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:06 GMT
 
 #### `3f6c16541b7cba2de92cd0d889aa55077571fd3061c8803df5909f90d0356840`
 
@@ -2975,7 +2974,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13573020 bytes)
 -	v2 Blob: `sha256:69445c74680b8b41907da772f6fb692735e38f574c04dfae677f5b35c2380382`
 -	v2 Content-Length: 5.5 MB (5450344 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:06 GMT
 
 #### `3f6c16541b7cba2de92cd0d889aa55077571fd3061c8803df5909f90d0356840`
 
@@ -3191,7 +3189,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13573020 bytes)
 -	v2 Blob: `sha256:69445c74680b8b41907da772f6fb692735e38f574c04dfae677f5b35c2380382`
 -	v2 Content-Length: 5.5 MB (5450344 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:06 GMT
 
 #### `3f6c16541b7cba2de92cd0d889aa55077571fd3061c8803df5909f90d0356840`
 
@@ -3407,7 +3404,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13573020 bytes)
 -	v2 Blob: `sha256:69445c74680b8b41907da772f6fb692735e38f574c04dfae677f5b35c2380382`
 -	v2 Content-Length: 5.5 MB (5450344 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:06 GMT
 
 #### `3f6c16541b7cba2de92cd0d889aa55077571fd3061c8803df5909f90d0356840`
 
@@ -3623,7 +3619,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13573020 bytes)
 -	v2 Blob: `sha256:69445c74680b8b41907da772f6fb692735e38f574c04dfae677f5b35c2380382`
 -	v2 Content-Length: 5.5 MB (5450344 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:06 GMT
 
 #### `3f6c16541b7cba2de92cd0d889aa55077571fd3061c8803df5909f90d0356840`
 
@@ -3839,7 +3834,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13573020 bytes)
 -	v2 Blob: `sha256:69445c74680b8b41907da772f6fb692735e38f574c04dfae677f5b35c2380382`
 -	v2 Content-Length: 5.5 MB (5450344 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:06 GMT
 
 #### `3f6c16541b7cba2de92cd0d889aa55077571fd3061c8803df5909f90d0356840`
 
@@ -4120,7 +4114,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13573020 bytes)
 -	v2 Blob: `sha256:69445c74680b8b41907da772f6fb692735e38f574c04dfae677f5b35c2380382`
 -	v2 Content-Length: 5.5 MB (5450344 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:06 GMT
 
 #### `3f6c16541b7cba2de92cd0d889aa55077571fd3061c8803df5909f90d0356840`
 
@@ -4401,7 +4394,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13573020 bytes)
 -	v2 Blob: `sha256:69445c74680b8b41907da772f6fb692735e38f574c04dfae677f5b35c2380382`
 -	v2 Content-Length: 5.5 MB (5450344 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:06 GMT
 
 #### `3f6c16541b7cba2de92cd0d889aa55077571fd3061c8803df5909f90d0356840`
 
@@ -4682,7 +4674,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13573020 bytes)
 -	v2 Blob: `sha256:69445c74680b8b41907da772f6fb692735e38f574c04dfae677f5b35c2380382`
 -	v2 Content-Length: 5.5 MB (5450344 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:06 GMT
 
 #### `3f6c16541b7cba2de92cd0d889aa55077571fd3061c8803df5909f90d0356840`
 
@@ -4963,7 +4954,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13573020 bytes)
 -	v2 Blob: `sha256:69445c74680b8b41907da772f6fb692735e38f574c04dfae677f5b35c2380382`
 -	v2 Content-Length: 5.5 MB (5450344 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:06 GMT
 
 #### `3f6c16541b7cba2de92cd0d889aa55077571fd3061c8803df5909f90d0356840`
 
