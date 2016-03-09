@@ -10,9 +10,9 @@ The Oracle Linux images are intended for use in the **FROM** field of an applica
 
 ## Official Resources
 
--	[Learn more about Oracle Linux](http://oracle.com/linux)
+-	[Learn more about Oracle Linux](https://oracle.com/linux)
 -	[Unbreakable Linux Network](https://linux.oracle.com)
--	[Oracle Public Yum](http://public-yum.oracle.com)
+-	[Oracle Linux Yum Server](http://yum.oracle.com)
 
 ## Social media resources
 
