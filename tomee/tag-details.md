@@ -226,7 +226,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:95d3263a346b332a8ee5df26519010d5e4f4158498c935b100542e7cd03127d5`
 -	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 20:12:04 GMT
 
 #### `45bb21af7ef807866f884d501a307f8fc0d05a729da015b8cea75f5044ca4e42`
 
@@ -537,7 +536,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:95d3263a346b332a8ee5df26519010d5e4f4158498c935b100542e7cd03127d5`
 -	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 20:12:04 GMT
 
 #### `45bb21af7ef807866f884d501a307f8fc0d05a729da015b8cea75f5044ca4e42`
 
@@ -848,7 +846,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:95d3263a346b332a8ee5df26519010d5e4f4158498c935b100542e7cd03127d5`
 -	v2 Content-Length: 146.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 20:12:04 GMT
 
 #### `45bb21af7ef807866f884d501a307f8fc0d05a729da015b8cea75f5044ca4e42`
 
