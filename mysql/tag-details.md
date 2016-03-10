@@ -582,7 +582,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCB
 -	Virtual Size: 20.8 KB (20809 bytes)
 -	v2 Blob: `sha256:15e1bcfe2437bd6a9ba3cc6008316a63f5669d30502cd605c2255d815ca7b031`
 -	v2 Content-Length: 19.0 KB (19019 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:00 GMT
 
 #### `ddca72d5f7505a93aed739e5c22479f6bb9ccce54b88cc51329f04502ac14540`
 
@@ -810,7 +809,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCB
 -	Virtual Size: 20.8 KB (20809 bytes)
 -	v2 Blob: `sha256:15e1bcfe2437bd6a9ba3cc6008316a63f5669d30502cd605c2255d815ca7b031`
 -	v2 Content-Length: 19.0 KB (19019 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:00 GMT
 
 #### `ddca72d5f7505a93aed739e5c22479f6bb9ccce54b88cc51329f04502ac14540`
 
@@ -1038,7 +1036,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCB
 -	Virtual Size: 20.8 KB (20809 bytes)
 -	v2 Blob: `sha256:15e1bcfe2437bd6a9ba3cc6008316a63f5669d30502cd605c2255d815ca7b031`
 -	v2 Content-Length: 19.0 KB (19019 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:00 GMT
 
 #### `25270607d74851f0910dc6b9685c3aeb236b5dbcd162f581a502a3bd7fd8a5b7`
 
@@ -1266,7 +1263,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCB
 -	Virtual Size: 20.8 KB (20809 bytes)
 -	v2 Blob: `sha256:15e1bcfe2437bd6a9ba3cc6008316a63f5669d30502cd605c2255d815ca7b031`
 -	v2 Content-Length: 19.0 KB (19019 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:00 GMT
 
 #### `25270607d74851f0910dc6b9685c3aeb236b5dbcd162f581a502a3bd7fd8a5b7`
 
@@ -1494,7 +1490,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCB
 -	Virtual Size: 20.8 KB (20809 bytes)
 -	v2 Blob: `sha256:15e1bcfe2437bd6a9ba3cc6008316a63f5669d30502cd605c2255d815ca7b031`
 -	v2 Content-Length: 19.0 KB (19019 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:00 GMT
 
 #### `25270607d74851f0910dc6b9685c3aeb236b5dbcd162f581a502a3bd7fd8a5b7`
 
@@ -1722,7 +1717,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCB
 -	Virtual Size: 20.8 KB (20809 bytes)
 -	v2 Blob: `sha256:15e1bcfe2437bd6a9ba3cc6008316a63f5669d30502cd605c2255d815ca7b031`
 -	v2 Content-Length: 19.0 KB (19019 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:00 GMT
 
 #### `25270607d74851f0910dc6b9685c3aeb236b5dbcd162f581a502a3bd7fd8a5b7`
 
