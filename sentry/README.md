@@ -1,12 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`7.7.4`, `7.7`, `7` (*7.7/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/e60211c46e9fd4b4f9ee679946bc9915ae2bf0c0/7.7/Dockerfile)
--	[`8.0.6`, `8.0` (*8.0/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/2b4e8b3b6eafe9c0b44e5c21eee2918e45ebb84e/8.0/Dockerfile)
--	[`8.0.6-onbuild`, `8.0-onbuild` (*8.0/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/e60211c46e9fd4b4f9ee679946bc9915ae2bf0c0/8.0/onbuild/Dockerfile)
--	[`8.1.2`, `8.1`, `8`, `latest` (*8.1/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/1e5786a158efb11c826410a9533ad7819e647a75/8.1/Dockerfile)
--	[`8.1.2-onbuild`, `8.1-onbuild`, `8-onbuild`, `onbuild` (*8.1/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/07e387f3a5644638ca3e2f8235a1f8f647b3f03c/8.1/onbuild/Dockerfile)
+-	[`8.1.4`, `8.1` (*8.1/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/642b1b8906851708cc309ac2af71033ac260f32e/8.1/Dockerfile)
+-	[`8.1.4-onbuild`, `8.1-onbuild` (*8.1/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/6870e0f6469f2c17f00d25324311df5d46a2791c/8.1/onbuild/Dockerfile)
+-	[`8.2.2`, `8.2`, `8`, `latest` (*8.2/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/642b1b8906851708cc309ac2af71033ac260f32e/8.2/Dockerfile)
+-	[`8.2.2-onbuild`, `8.2-onbuild`, `8-onbuild`, `onbuild` (*8.2/onbuild/Dockerfile*)](https://github.com/getsentry/docker-sentry/blob/1ef759405e541ac9552fb92f2f293c8496e10d07/8.2/onbuild/Dockerfile)
 
-[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:7.7.4,sentry:8.0.6,sentry:8.0.6-onbuild,sentry:8.1.2,sentry:8.1.2-onbuild)
+[![](https://badge.imagelayers.io/sentry:latest.svg)](https://imagelayers.io/?images=sentry:8.1.4,sentry:8.1.4-onbuild,sentry:8.2.2,sentry:8.2.2-onbuild)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/sentry`)](https://github.com/docker-library/official-images/blob/master/library/sentry). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 

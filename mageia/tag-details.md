@@ -8,11 +8,11 @@
 ## `mageia:latest`
 
 ```console
-$ docker pull library/mageia@sha256:73b3d42ea8f36a512ae88de7a0f57771d4c08e7cbf31e70bbbd2206cbbf351d1
+$ docker pull library/mageia@sha256:15011b22a222ee0be4be48feba3c05433e845d86c9bae359fb1505f81d3d6693
 ```
 
--	Total Virtual Size: 192.9 MB (192895221 bytes)
--	Total v2 Content-Length: 72.4 MB (72351554 bytes)
+-	Total Virtual Size: 193.1 MB (193078371 bytes)
+-	Total v2 Content-Length: 72.4 MB (72358243 bytes)
 
 ### Layers (2)
 
@@ -28,27 +28,27 @@ MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `326c787b9a0c11e37d98355ba42e602ae979215ffac5bbd45979775d3d06a377`
+#### `e3162a9a45a24922b58acb93ed4a09460ec7d194a7beefad5a09644a051411f5`
 
 ```dockerfile
-ADD file:52b5e35899fde6fe3060ea5d65ad831e356f86913fc7713ce4fbab07798e21cc in /
+ADD file:73ee62b144bac8d9d72c5dc76bf703a276337f870e3642587989993e1a174e52 in /
 ```
 
--	Created: Mon, 22 Feb 2016 19:01:43 GMT
+-	Created: Fri, 04 Mar 2016 17:42:57 GMT
 -	Parent Layer: `51a901f30e330f61cbb652fc39b1d0ef50c8d82b857e2d5897c24017d3905462`
 -	Docker Version: 1.9.1
--	Virtual Size: 192.9 MB (192895221 bytes)
--	v2 Blob: `sha256:c6b8cbb22e60bfdbfe24db0cd0bbd9f5bd49f3a789e4d7f1ac70ef52628c183e`
--	v2 Content-Length: 72.4 MB (72351522 bytes)
+-	Virtual Size: 193.1 MB (193078371 bytes)
+-	v2 Blob: `sha256:4ebd5f6e5b3a697ae43287a11a7a93c4b2b10745f6b3cce61e5d9b624ff0f303`
+-	v2 Content-Length: 72.4 MB (72358211 bytes)
 
 ## `mageia:5`
 
 ```console
-$ docker pull library/mageia@sha256:9ad2a441b570618ffbf00f0c985a8a7df2580c2632f821b97459b9a8eb7e7200
+$ docker pull library/mageia@sha256:3dc0cfa97710251c7b07a1a8be77f005e66b52e0602851fdeaf56965970c4e29
 ```
 
--	Total Virtual Size: 192.9 MB (192895221 bytes)
--	Total v2 Content-Length: 72.4 MB (72351554 bytes)
+-	Total Virtual Size: 193.1 MB (193078371 bytes)
+-	Total v2 Content-Length: 72.4 MB (72358243 bytes)
 
 ### Layers (2)
 
@@ -64,15 +64,15 @@ MAINTAINER "Juan Luis Baptiste" <juancho@mageia.org>
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `326c787b9a0c11e37d98355ba42e602ae979215ffac5bbd45979775d3d06a377`
+#### `e3162a9a45a24922b58acb93ed4a09460ec7d194a7beefad5a09644a051411f5`
 
 ```dockerfile
-ADD file:52b5e35899fde6fe3060ea5d65ad831e356f86913fc7713ce4fbab07798e21cc in /
+ADD file:73ee62b144bac8d9d72c5dc76bf703a276337f870e3642587989993e1a174e52 in /
 ```
 
--	Created: Mon, 22 Feb 2016 19:01:43 GMT
+-	Created: Fri, 04 Mar 2016 17:42:57 GMT
 -	Parent Layer: `51a901f30e330f61cbb652fc39b1d0ef50c8d82b857e2d5897c24017d3905462`
 -	Docker Version: 1.9.1
--	Virtual Size: 192.9 MB (192895221 bytes)
--	v2 Blob: `sha256:c6b8cbb22e60bfdbfe24db0cd0bbd9f5bd49f3a789e4d7f1ac70ef52628c183e`
--	v2 Content-Length: 72.4 MB (72351522 bytes)
+-	Virtual Size: 193.1 MB (193078371 bytes)
+-	v2 Blob: `sha256:4ebd5f6e5b3a697ae43287a11a7a93c4b2b10745f6b3cce61e5d9b624ff0f303`
+-	v2 Content-Length: 72.4 MB (72358211 bytes)

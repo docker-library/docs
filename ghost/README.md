@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`0.7.8`, `0.7`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/bb7274f3cc712ecc1997fd96b5994d08af4ebf46/Dockerfile)
+-	[`0.7.8`, `0.7`, `0`, `latest` (*Dockerfile*)](https://github.com/docker-library/ghost/blob/8c0d010d4f6c0aa91b16ad1b9dcc09ee2a287549/Dockerfile)
 
 [![](https://badge.imagelayers.io/ghost:latest.svg)](https://imagelayers.io/?images=ghost:0.7.8)
 

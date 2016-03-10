@@ -11,53 +11,53 @@
 ## `odoo:8.0`
 
 ```console
-$ docker pull library/odoo@sha256:2a2d3ceb875e622497028e5b86d0e0b492bacefd842acdce6963c804fcc70b9d
+$ docker pull library/odoo@sha256:40de156556f7b46aa20fc81c3f5d6dd34d1971c417a0625bdf0234c3809f2bde
 ```
 
--	Total Virtual Size: 822.3 MB (822347866 bytes)
--	Total v2 Content-Length: 264.8 MB (264817918 bytes)
+-	Total Virtual Size: 822.4 MB (822355269 bytes)
+-	Total v2 Content-Length: 264.8 MB (264823046 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `264a8d750523101d90b9ba53bc979be86827498c11f6918bc0bdefc8b90c07f8`
+#### `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 
 ```dockerfile
 MAINTAINER Odoo S.A. <info@odoo.com>
 ```
 
--	Created: Wed, 17 Feb 2016 00:31:15 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Wed, 02 Mar 2016 11:13:02 GMT
+-	Parent Layer: `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e96316a3fc04f335ae2c47805100d4f16ea2f84f2750e82f1f6bf0f96dcf74af`
+#### `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 
 ```dockerfile
 RUN set -x;\
@@ -78,40 +78,40 @@ RUN set -x;\
          && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 ```
 
--	Created: Wed, 17 Feb 2016 00:32:46 GMT
--	Parent Layer: `264a8d750523101d90b9ba53bc979be86827498c11f6918bc0bdefc8b90c07f8`
+-	Created: Wed, 02 Mar 2016 11:14:34 GMT
+-	Parent Layer: `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 -	Docker Version: 1.9.1
--	Virtual Size: 200.2 MB (200183879 bytes)
--	v2 Blob: `sha256:296eac936afd1edf2b643e6735d9249671d931d920686670dcef852c862d9604`
--	v2 Content-Length: 83.8 MB (83771766 bytes)
+-	Virtual Size: 200.2 MB (200188332 bytes)
+-	v2 Blob: `sha256:050c9aa75173f42a81caf988347012416b8d924a7995e5b4018269c8519ee914`
+-	v2 Content-Length: 83.8 MB (83772029 bytes)
 
-#### `f6c024a7462ee7219cf9d7cf0e6219f5fea88d0708c2f11e86ef0e98c2cec591`
+#### `4c99a9eacb1c7da61f101c469e017ca3d07f660881fd14d687fe9a4c00942522`
 
 ```dockerfile
 ENV ODOO_VERSION=8.0
 ```
 
--	Created: Wed, 17 Feb 2016 00:32:48 GMT
--	Parent Layer: `e96316a3fc04f335ae2c47805100d4f16ea2f84f2750e82f1f6bf0f96dcf74af`
+-	Created: Wed, 02 Mar 2016 11:14:36 GMT
+-	Parent Layer: `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `544005bc5a806d2a33d8bf20c31d28d0de77eccb5dc2e30c263b59707687b060`
+#### `467551ca965a09e2c98e5b94d4c138f00ec703b150d60754091f0636be248f49`
 
 ```dockerfile
 ENV ODOO_RELEASE=20160204
 ```
 
--	Created: Wed, 17 Feb 2016 00:32:49 GMT
--	Parent Layer: `f6c024a7462ee7219cf9d7cf0e6219f5fea88d0708c2f11e86ef0e98c2cec591`
+-	Created: Wed, 02 Mar 2016 11:14:37 GMT
+-	Parent Layer: `4c99a9eacb1c7da61f101c469e017ca3d07f660881fd14d687fe9a4c00942522`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `c58fa156a75a8b8e08eaea56910f73a2a3af84f2dfd28880c049174ba36691bd`
+#### `e9ec7247a47d5f33c1a9f210fa50cfc06fd04a94162a23a2a4cc35aafc05a87f`
 
 ```dockerfile
 RUN set -x;\
@@ -123,139 +123,139 @@ RUN set -x;\
          && rm -rf /var/lib/apt/lists/* odoo.deb
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:34 GMT
--	Parent Layer: `544005bc5a806d2a33d8bf20c31d28d0de77eccb5dc2e30c263b59707687b060`
+-	Created: Wed, 02 Mar 2016 11:16:25 GMT
+-	Parent Layer: `467551ca965a09e2c98e5b94d4c138f00ec703b150d60754091f0636be248f49`
 -	Docker Version: 1.9.1
--	Virtual Size: 497.1 MB (497052051 bytes)
--	v2 Blob: `sha256:479c884939c57ed331054b079c3d7d0e6fcd6f406fd5ce870911d6b9a9e7b905`
--	v2 Content-Length: 129.7 MB (129677525 bytes)
+-	Virtual Size: 497.1 MB (497053969 bytes)
+-	v2 Blob: `sha256:8d2a50ee19c2783f2ced5a31f6eff4a06342ad9ba73b80330d252014cf3fea65`
+-	v2 Content-Length: 129.7 MB (129681331 bytes)
 
-#### `9b5fd2e4583987f978e2a082f6f787d31d52ba5839c883ec367ad6df6b2af9a5`
+#### `a7dc2799db2391da389a271cc638685e87bff59587402a7d2bb961cb6990bc9b`
 
 ```dockerfile
 COPY file:3a1bf91711eb55f536989442ee439abce1fa8126b99577784a0aaeabd24e1454 in /
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:43 GMT
--	Parent Layer: `c58fa156a75a8b8e08eaea56910f73a2a3af84f2dfd28880c049174ba36691bd`
+-	Created: Wed, 02 Mar 2016 11:16:35 GMT
+-	Parent Layer: `e9ec7247a47d5f33c1a9f210fa50cfc06fd04a94162a23a2a4cc35aafc05a87f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 399.0 B
 -	v2 Blob: `sha256:87973af7e4f9d78ab637f08da67cdadba4d9bcc5b5902975c5013e1c8f76bb87`
 -	v2 Content-Length: 343.0 B
 
-#### `8c80fb6da0fcc122513c6a546e1e8f14ea4052680e1677c639d83adea1e5de56`
+#### `8587e1cf2e54308a0483339597b68ab0c60819db48016047b169bc1a09f74846`
 
 ```dockerfile
 COPY file:8835af7f1cff467015a91e733dd0f8e13fcebf89656b72cdeaaf5359b2a1ef9f in /etc/odoo/
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:43 GMT
--	Parent Layer: `9b5fd2e4583987f978e2a082f6f787d31d52ba5839c883ec367ad6df6b2af9a5`
+-	Created: Wed, 02 Mar 2016 11:16:35 GMT
+-	Parent Layer: `a7dc2799db2391da389a271cc638685e87bff59587402a7d2bb961cb6990bc9b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 883.0 B
--	v2 Blob: `sha256:a74b505c1f4ade5fe9cb7e40d0f42d4966a06a46f226d8eb45f55c26e9b4363b`
--	v2 Content-Length: 590.0 B
+-	v2 Blob: `sha256:eb64b36ac0553bf542b76a3d78107fdd23274ba691dedf054eaa73a2763d7793`
+-	v2 Content-Length: 591.0 B
 
-#### `2b4cf5b6179b0b2f3559d0f058b75d163b860878d8ca1c7ce8cd6119f87a1e84`
+#### `5518257e5977e7a5bb16f8c97160f0b35930e6062af539e5e29c5c87b941fa72`
 
 ```dockerfile
 RUN chown odoo /etc/odoo/openerp-server.conf
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:45 GMT
--	Parent Layer: `8c80fb6da0fcc122513c6a546e1e8f14ea4052680e1677c639d83adea1e5de56`
+-	Created: Wed, 02 Mar 2016 11:16:37 GMT
+-	Parent Layer: `8587e1cf2e54308a0483339597b68ab0c60819db48016047b169bc1a09f74846`
 -	Docker Version: 1.9.1
 -	Virtual Size: 883.0 B
--	v2 Blob: `sha256:ed7e20b5800e0b09fb4b381e63436f25774662ca6b656bc4523007630a028d1d`
--	v2 Content-Length: 592.0 B
+-	v2 Blob: `sha256:8fe369d228da06aa7e9863ba2cb9620a92f5919bc73855f2cb041d45ce9abb89`
+-	v2 Content-Length: 593.0 B
 
-#### `257cd4545d6e87043e4fd8f5143c75bab638f21b625c49657f618e6279286d13`
+#### `c56f4317a48517ab44df2c896aaa9a66d82b9e0cc04f40f0de7cb1a7034da64a`
 
 ```dockerfile
 RUN mkdir -p /mnt/extra-addons\
          && chown -R odoo /mnt/extra-addons
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:46 GMT
--	Parent Layer: `2b4cf5b6179b0b2f3559d0f058b75d163b860878d8ca1c7ce8cd6119f87a1e84`
+-	Created: Wed, 02 Mar 2016 11:16:39 GMT
+-	Parent Layer: `5518257e5977e7a5bb16f8c97160f0b35930e6062af539e5e29c5c87b941fa72`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:960cedf40d7f1a6436b840a420826210a29d145ad0da7e735d20b40db0507297`
--	v2 Content-Length: 123.0 B
+-	v2 Blob: `sha256:bbd28dfb58783a37e7ce414b264f501d1c91c55fcd5293b3efd8ad212834478d`
+-	v2 Content-Length: 124.0 B
 
-#### `9fe779ebacf9adc5b467bac3c99ffa39c0aaa949ad1064288a36a4caab4f74a3`
+#### `c4d1c530842c890871fd32513dc75fcf4933d66457a3e4349c3e236799d34817`
 
 ```dockerfile
 VOLUME [/var/lib/odoo /mnt/extra-addons]
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:47 GMT
--	Parent Layer: `257cd4545d6e87043e4fd8f5143c75bab638f21b625c49657f618e6279286d13`
+-	Created: Wed, 02 Mar 2016 11:16:39 GMT
+-	Parent Layer: `c56f4317a48517ab44df2c896aaa9a66d82b9e0cc04f40f0de7cb1a7034da64a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9d419b84597a331f2ecd4ba1098fde2460a0cb4a338d3cf57d5ccca443e7ef80`
+#### `ab8f6778285939630b0d2b3555f8eb140b5503380080e59aa38e4c454f7a84de`
 
 ```dockerfile
 EXPOSE 8069/tcp 8071/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:47 GMT
--	Parent Layer: `9fe779ebacf9adc5b467bac3c99ffa39c0aaa949ad1064288a36a4caab4f74a3`
+-	Created: Wed, 02 Mar 2016 11:16:40 GMT
+-	Parent Layer: `c4d1c530842c890871fd32513dc75fcf4933d66457a3e4349c3e236799d34817`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `195077308d2991be39312f58f1d7a66821e4311474fb55fde3938a7d78b43175`
+#### `6ff6a4cd66354fbaca6cb36b4bf1c007a7c864ec882e6c24f731e1ab90110048`
 
 ```dockerfile
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:48 GMT
--	Parent Layer: `9d419b84597a331f2ecd4ba1098fde2460a0cb4a338d3cf57d5ccca443e7ef80`
+-	Created: Wed, 02 Mar 2016 11:16:41 GMT
+-	Parent Layer: `ab8f6778285939630b0d2b3555f8eb140b5503380080e59aa38e4c454f7a84de`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ba1bc1e718bbddf0d4773af553a4f71d49a185b4ed51a19bd0e9a0b21eba6eca`
+#### `7886789d52fb187d952a95fc8746fbcc91855c29f9959d30dd327c76d90d16a5`
 
 ```dockerfile
 USER [odoo]
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:49 GMT
--	Parent Layer: `195077308d2991be39312f58f1d7a66821e4311474fb55fde3938a7d78b43175`
+-	Created: Wed, 02 Mar 2016 11:16:41 GMT
+-	Parent Layer: `6ff6a4cd66354fbaca6cb36b4bf1c007a7c864ec882e6c24f731e1ab90110048`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ed7e8616af800abb7a3d7e074d9cc9bde936db474dc630b066c4602cbeda2892`
+#### `1270659ce5435ebce2c7e56b43213ad990289473ff520fb3dc0bc53107704b1f`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:49 GMT
--	Parent Layer: `ba1bc1e718bbddf0d4773af553a4f71d49a185b4ed51a19bd0e9a0b21eba6eca`
+-	Created: Wed, 02 Mar 2016 11:16:42 GMT
+-	Parent Layer: `7886789d52fb187d952a95fc8746fbcc91855c29f9959d30dd327c76d90d16a5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `da3a6b917837452300d17bad838821c9ea4ef45e2b64b30f2383e71a0530023b`
+#### `1366a6cc3fc20266a08ea0b1a2ff876636ba755078d4d1ad32783082f84236eb`
 
 ```dockerfile
 CMD ["openerp-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:50 GMT
--	Parent Layer: `ed7e8616af800abb7a3d7e074d9cc9bde936db474dc630b066c4602cbeda2892`
+-	Created: Wed, 02 Mar 2016 11:16:43 GMT
+-	Parent Layer: `1270659ce5435ebce2c7e56b43213ad990289473ff520fb3dc0bc53107704b1f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -264,53 +264,53 @@ CMD ["openerp-server"]
 ## `odoo:8`
 
 ```console
-$ docker pull library/odoo@sha256:5b0b19c04c0c9c0b881241a8ce91e8efc3bff4bdabaf7fe95bdfee97c6e8bbb0
+$ docker pull library/odoo@sha256:d5774d479adc79a02e70843e341033d170efa2e41b60f21456fe9a464b12b50b
 ```
 
--	Total Virtual Size: 822.3 MB (822347866 bytes)
--	Total v2 Content-Length: 264.8 MB (264817918 bytes)
+-	Total Virtual Size: 822.4 MB (822355269 bytes)
+-	Total v2 Content-Length: 264.8 MB (264823046 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `264a8d750523101d90b9ba53bc979be86827498c11f6918bc0bdefc8b90c07f8`
+#### `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 
 ```dockerfile
 MAINTAINER Odoo S.A. <info@odoo.com>
 ```
 
--	Created: Wed, 17 Feb 2016 00:31:15 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Wed, 02 Mar 2016 11:13:02 GMT
+-	Parent Layer: `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e96316a3fc04f335ae2c47805100d4f16ea2f84f2750e82f1f6bf0f96dcf74af`
+#### `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 
 ```dockerfile
 RUN set -x;\
@@ -331,40 +331,40 @@ RUN set -x;\
          && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 ```
 
--	Created: Wed, 17 Feb 2016 00:32:46 GMT
--	Parent Layer: `264a8d750523101d90b9ba53bc979be86827498c11f6918bc0bdefc8b90c07f8`
+-	Created: Wed, 02 Mar 2016 11:14:34 GMT
+-	Parent Layer: `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 -	Docker Version: 1.9.1
--	Virtual Size: 200.2 MB (200183879 bytes)
--	v2 Blob: `sha256:296eac936afd1edf2b643e6735d9249671d931d920686670dcef852c862d9604`
--	v2 Content-Length: 83.8 MB (83771766 bytes)
+-	Virtual Size: 200.2 MB (200188332 bytes)
+-	v2 Blob: `sha256:050c9aa75173f42a81caf988347012416b8d924a7995e5b4018269c8519ee914`
+-	v2 Content-Length: 83.8 MB (83772029 bytes)
 
-#### `f6c024a7462ee7219cf9d7cf0e6219f5fea88d0708c2f11e86ef0e98c2cec591`
+#### `4c99a9eacb1c7da61f101c469e017ca3d07f660881fd14d687fe9a4c00942522`
 
 ```dockerfile
 ENV ODOO_VERSION=8.0
 ```
 
--	Created: Wed, 17 Feb 2016 00:32:48 GMT
--	Parent Layer: `e96316a3fc04f335ae2c47805100d4f16ea2f84f2750e82f1f6bf0f96dcf74af`
+-	Created: Wed, 02 Mar 2016 11:14:36 GMT
+-	Parent Layer: `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `544005bc5a806d2a33d8bf20c31d28d0de77eccb5dc2e30c263b59707687b060`
+#### `467551ca965a09e2c98e5b94d4c138f00ec703b150d60754091f0636be248f49`
 
 ```dockerfile
 ENV ODOO_RELEASE=20160204
 ```
 
--	Created: Wed, 17 Feb 2016 00:32:49 GMT
--	Parent Layer: `f6c024a7462ee7219cf9d7cf0e6219f5fea88d0708c2f11e86ef0e98c2cec591`
+-	Created: Wed, 02 Mar 2016 11:14:37 GMT
+-	Parent Layer: `4c99a9eacb1c7da61f101c469e017ca3d07f660881fd14d687fe9a4c00942522`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `c58fa156a75a8b8e08eaea56910f73a2a3af84f2dfd28880c049174ba36691bd`
+#### `e9ec7247a47d5f33c1a9f210fa50cfc06fd04a94162a23a2a4cc35aafc05a87f`
 
 ```dockerfile
 RUN set -x;\
@@ -376,139 +376,139 @@ RUN set -x;\
          && rm -rf /var/lib/apt/lists/* odoo.deb
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:34 GMT
--	Parent Layer: `544005bc5a806d2a33d8bf20c31d28d0de77eccb5dc2e30c263b59707687b060`
+-	Created: Wed, 02 Mar 2016 11:16:25 GMT
+-	Parent Layer: `467551ca965a09e2c98e5b94d4c138f00ec703b150d60754091f0636be248f49`
 -	Docker Version: 1.9.1
--	Virtual Size: 497.1 MB (497052051 bytes)
--	v2 Blob: `sha256:479c884939c57ed331054b079c3d7d0e6fcd6f406fd5ce870911d6b9a9e7b905`
--	v2 Content-Length: 129.7 MB (129677525 bytes)
+-	Virtual Size: 497.1 MB (497053969 bytes)
+-	v2 Blob: `sha256:8d2a50ee19c2783f2ced5a31f6eff4a06342ad9ba73b80330d252014cf3fea65`
+-	v2 Content-Length: 129.7 MB (129681331 bytes)
 
-#### `9b5fd2e4583987f978e2a082f6f787d31d52ba5839c883ec367ad6df6b2af9a5`
+#### `a7dc2799db2391da389a271cc638685e87bff59587402a7d2bb961cb6990bc9b`
 
 ```dockerfile
 COPY file:3a1bf91711eb55f536989442ee439abce1fa8126b99577784a0aaeabd24e1454 in /
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:43 GMT
--	Parent Layer: `c58fa156a75a8b8e08eaea56910f73a2a3af84f2dfd28880c049174ba36691bd`
+-	Created: Wed, 02 Mar 2016 11:16:35 GMT
+-	Parent Layer: `e9ec7247a47d5f33c1a9f210fa50cfc06fd04a94162a23a2a4cc35aafc05a87f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 399.0 B
 -	v2 Blob: `sha256:87973af7e4f9d78ab637f08da67cdadba4d9bcc5b5902975c5013e1c8f76bb87`
 -	v2 Content-Length: 343.0 B
 
-#### `8c80fb6da0fcc122513c6a546e1e8f14ea4052680e1677c639d83adea1e5de56`
+#### `8587e1cf2e54308a0483339597b68ab0c60819db48016047b169bc1a09f74846`
 
 ```dockerfile
 COPY file:8835af7f1cff467015a91e733dd0f8e13fcebf89656b72cdeaaf5359b2a1ef9f in /etc/odoo/
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:43 GMT
--	Parent Layer: `9b5fd2e4583987f978e2a082f6f787d31d52ba5839c883ec367ad6df6b2af9a5`
+-	Created: Wed, 02 Mar 2016 11:16:35 GMT
+-	Parent Layer: `a7dc2799db2391da389a271cc638685e87bff59587402a7d2bb961cb6990bc9b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 883.0 B
--	v2 Blob: `sha256:a74b505c1f4ade5fe9cb7e40d0f42d4966a06a46f226d8eb45f55c26e9b4363b`
--	v2 Content-Length: 590.0 B
+-	v2 Blob: `sha256:eb64b36ac0553bf542b76a3d78107fdd23274ba691dedf054eaa73a2763d7793`
+-	v2 Content-Length: 591.0 B
 
-#### `2b4cf5b6179b0b2f3559d0f058b75d163b860878d8ca1c7ce8cd6119f87a1e84`
+#### `5518257e5977e7a5bb16f8c97160f0b35930e6062af539e5e29c5c87b941fa72`
 
 ```dockerfile
 RUN chown odoo /etc/odoo/openerp-server.conf
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:45 GMT
--	Parent Layer: `8c80fb6da0fcc122513c6a546e1e8f14ea4052680e1677c639d83adea1e5de56`
+-	Created: Wed, 02 Mar 2016 11:16:37 GMT
+-	Parent Layer: `8587e1cf2e54308a0483339597b68ab0c60819db48016047b169bc1a09f74846`
 -	Docker Version: 1.9.1
 -	Virtual Size: 883.0 B
--	v2 Blob: `sha256:ed7e20b5800e0b09fb4b381e63436f25774662ca6b656bc4523007630a028d1d`
--	v2 Content-Length: 592.0 B
+-	v2 Blob: `sha256:8fe369d228da06aa7e9863ba2cb9620a92f5919bc73855f2cb041d45ce9abb89`
+-	v2 Content-Length: 593.0 B
 
-#### `257cd4545d6e87043e4fd8f5143c75bab638f21b625c49657f618e6279286d13`
+#### `c56f4317a48517ab44df2c896aaa9a66d82b9e0cc04f40f0de7cb1a7034da64a`
 
 ```dockerfile
 RUN mkdir -p /mnt/extra-addons\
          && chown -R odoo /mnt/extra-addons
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:46 GMT
--	Parent Layer: `2b4cf5b6179b0b2f3559d0f058b75d163b860878d8ca1c7ce8cd6119f87a1e84`
+-	Created: Wed, 02 Mar 2016 11:16:39 GMT
+-	Parent Layer: `5518257e5977e7a5bb16f8c97160f0b35930e6062af539e5e29c5c87b941fa72`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:960cedf40d7f1a6436b840a420826210a29d145ad0da7e735d20b40db0507297`
--	v2 Content-Length: 123.0 B
+-	v2 Blob: `sha256:bbd28dfb58783a37e7ce414b264f501d1c91c55fcd5293b3efd8ad212834478d`
+-	v2 Content-Length: 124.0 B
 
-#### `9fe779ebacf9adc5b467bac3c99ffa39c0aaa949ad1064288a36a4caab4f74a3`
+#### `c4d1c530842c890871fd32513dc75fcf4933d66457a3e4349c3e236799d34817`
 
 ```dockerfile
 VOLUME [/var/lib/odoo /mnt/extra-addons]
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:47 GMT
--	Parent Layer: `257cd4545d6e87043e4fd8f5143c75bab638f21b625c49657f618e6279286d13`
+-	Created: Wed, 02 Mar 2016 11:16:39 GMT
+-	Parent Layer: `c56f4317a48517ab44df2c896aaa9a66d82b9e0cc04f40f0de7cb1a7034da64a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9d419b84597a331f2ecd4ba1098fde2460a0cb4a338d3cf57d5ccca443e7ef80`
+#### `ab8f6778285939630b0d2b3555f8eb140b5503380080e59aa38e4c454f7a84de`
 
 ```dockerfile
 EXPOSE 8069/tcp 8071/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:47 GMT
--	Parent Layer: `9fe779ebacf9adc5b467bac3c99ffa39c0aaa949ad1064288a36a4caab4f74a3`
+-	Created: Wed, 02 Mar 2016 11:16:40 GMT
+-	Parent Layer: `c4d1c530842c890871fd32513dc75fcf4933d66457a3e4349c3e236799d34817`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `195077308d2991be39312f58f1d7a66821e4311474fb55fde3938a7d78b43175`
+#### `6ff6a4cd66354fbaca6cb36b4bf1c007a7c864ec882e6c24f731e1ab90110048`
 
 ```dockerfile
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:48 GMT
--	Parent Layer: `9d419b84597a331f2ecd4ba1098fde2460a0cb4a338d3cf57d5ccca443e7ef80`
+-	Created: Wed, 02 Mar 2016 11:16:41 GMT
+-	Parent Layer: `ab8f6778285939630b0d2b3555f8eb140b5503380080e59aa38e4c454f7a84de`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ba1bc1e718bbddf0d4773af553a4f71d49a185b4ed51a19bd0e9a0b21eba6eca`
+#### `7886789d52fb187d952a95fc8746fbcc91855c29f9959d30dd327c76d90d16a5`
 
 ```dockerfile
 USER [odoo]
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:49 GMT
--	Parent Layer: `195077308d2991be39312f58f1d7a66821e4311474fb55fde3938a7d78b43175`
+-	Created: Wed, 02 Mar 2016 11:16:41 GMT
+-	Parent Layer: `6ff6a4cd66354fbaca6cb36b4bf1c007a7c864ec882e6c24f731e1ab90110048`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ed7e8616af800abb7a3d7e074d9cc9bde936db474dc630b066c4602cbeda2892`
+#### `1270659ce5435ebce2c7e56b43213ad990289473ff520fb3dc0bc53107704b1f`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:49 GMT
--	Parent Layer: `ba1bc1e718bbddf0d4773af553a4f71d49a185b4ed51a19bd0e9a0b21eba6eca`
+-	Created: Wed, 02 Mar 2016 11:16:42 GMT
+-	Parent Layer: `7886789d52fb187d952a95fc8746fbcc91855c29f9959d30dd327c76d90d16a5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `da3a6b917837452300d17bad838821c9ea4ef45e2b64b30f2383e71a0530023b`
+#### `1366a6cc3fc20266a08ea0b1a2ff876636ba755078d4d1ad32783082f84236eb`
 
 ```dockerfile
 CMD ["openerp-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 00:34:50 GMT
--	Parent Layer: `ed7e8616af800abb7a3d7e074d9cc9bde936db474dc630b066c4602cbeda2892`
+-	Created: Wed, 02 Mar 2016 11:16:43 GMT
+-	Parent Layer: `1270659ce5435ebce2c7e56b43213ad990289473ff520fb3dc0bc53107704b1f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -517,53 +517,53 @@ CMD ["openerp-server"]
 ## `odoo:9.0`
 
 ```console
-$ docker pull library/odoo@sha256:fe0871bc35564d19a4e41ba5a0de45e69b0b1c96074a6227e9a7bb552bd09e4a
+$ docker pull library/odoo@sha256:8b3797165c860c314b522d9657ce90a34da7607999db0ce0560005397657761f
 ```
 
--	Total Virtual Size: 841.1 MB (841115439 bytes)
--	Total v2 Content-Length: 269.1 MB (269057888 bytes)
+-	Total Virtual Size: 841.1 MB (841122842 bytes)
+-	Total v2 Content-Length: 269.1 MB (269057286 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `264a8d750523101d90b9ba53bc979be86827498c11f6918bc0bdefc8b90c07f8`
+#### `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 
 ```dockerfile
 MAINTAINER Odoo S.A. <info@odoo.com>
 ```
 
--	Created: Wed, 17 Feb 2016 00:31:15 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Wed, 02 Mar 2016 11:13:02 GMT
+-	Parent Layer: `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e96316a3fc04f335ae2c47805100d4f16ea2f84f2750e82f1f6bf0f96dcf74af`
+#### `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 
 ```dockerfile
 RUN set -x;\
@@ -584,40 +584,40 @@ RUN set -x;\
          && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 ```
 
--	Created: Wed, 17 Feb 2016 00:32:46 GMT
--	Parent Layer: `264a8d750523101d90b9ba53bc979be86827498c11f6918bc0bdefc8b90c07f8`
+-	Created: Wed, 02 Mar 2016 11:14:34 GMT
+-	Parent Layer: `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 -	Docker Version: 1.9.1
--	Virtual Size: 200.2 MB (200183879 bytes)
--	v2 Blob: `sha256:296eac936afd1edf2b643e6735d9249671d931d920686670dcef852c862d9604`
--	v2 Content-Length: 83.8 MB (83771766 bytes)
+-	Virtual Size: 200.2 MB (200188332 bytes)
+-	v2 Blob: `sha256:050c9aa75173f42a81caf988347012416b8d924a7995e5b4018269c8519ee914`
+-	v2 Content-Length: 83.8 MB (83772029 bytes)
 
-#### `bcfe1cd02cdf173e7d8381116a1482c324fbfc686cdff49ee5e4703f48fb11f6`
+#### `1e5ad7f7f2b69309aeb0c6401c73648a87255fbcce7abb3955d0660f443f0682`
 
 ```dockerfile
 ENV ODOO_VERSION=9.0
 ```
 
--	Created: Wed, 17 Feb 2016 00:35:33 GMT
--	Parent Layer: `e96316a3fc04f335ae2c47805100d4f16ea2f84f2750e82f1f6bf0f96dcf74af`
+-	Created: Wed, 02 Mar 2016 11:17:31 GMT
+-	Parent Layer: `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81e963bf8e6fab4e7cfa530d77598645796fc93eb0d4cc745a2d70a7cc2ebe13`
+#### `d4cc72673721ff4902df894839888eac5cb835d284d4628c9406b5c8dcfd19eb`
 
 ```dockerfile
 ENV ODOO_RELEASE=20160204
 ```
 
--	Created: Wed, 17 Feb 2016 00:35:33 GMT
--	Parent Layer: `bcfe1cd02cdf173e7d8381116a1482c324fbfc686cdff49ee5e4703f48fb11f6`
+-	Created: Wed, 02 Mar 2016 11:17:31 GMT
+-	Parent Layer: `1e5ad7f7f2b69309aeb0c6401c73648a87255fbcce7abb3955d0660f443f0682`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ad02911ec123f669bbdee46784fcb87a51978781885523f58b9191106ed48442`
+#### `9a0374e525252d6cd3d8792b43a21f384c119bfdb0c55f55a892244887981947`
 
 ```dockerfile
 RUN set -x;\
@@ -629,139 +629,139 @@ RUN set -x;\
          && rm -rf /var/lib/apt/lists/* odoo.deb
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:48 GMT
--	Parent Layer: `81e963bf8e6fab4e7cfa530d77598645796fc93eb0d4cc745a2d70a7cc2ebe13`
+-	Created: Wed, 02 Mar 2016 11:19:32 GMT
+-	Parent Layer: `d4cc72673721ff4902df894839888eac5cb835d284d4628c9406b5c8dcfd19eb`
 -	Docker Version: 1.9.1
--	Virtual Size: 515.8 MB (515819624 bytes)
--	v2 Blob: `sha256:cc8641ca5241cf71a257fce1652454af17eeeabf9422b58ddaf68ae36760a7a4`
--	v2 Content-Length: 133.9 MB (133917495 bytes)
+-	Virtual Size: 515.8 MB (515821542 bytes)
+-	v2 Blob: `sha256:9ff27d68929db19f82d0bafd90af947ba88c3d593deb90889fb2c2df7fed79f3`
+-	v2 Content-Length: 133.9 MB (133915572 bytes)
 
-#### `f1fe21f381d9a58f2b0e4d09312d75c35e033a9f82f2251525fb5419aeb3bd69`
+#### `6c30e6b22014df1d12b1db695c10c41218d907e50e58b81b73fb4305cd257736`
 
 ```dockerfile
 COPY file:3a1bf91711eb55f536989442ee439abce1fa8126b99577784a0aaeabd24e1454 in /
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:57 GMT
--	Parent Layer: `ad02911ec123f669bbdee46784fcb87a51978781885523f58b9191106ed48442`
+-	Created: Wed, 02 Mar 2016 11:19:42 GMT
+-	Parent Layer: `9a0374e525252d6cd3d8792b43a21f384c119bfdb0c55f55a892244887981947`
 -	Docker Version: 1.9.1
 -	Virtual Size: 399.0 B
 -	v2 Blob: `sha256:3207a3c8a00132d640a64dc3b6e7fedf12d1d01fac1f8dd07045a377b4738dec`
 -	v2 Content-Length: 342.0 B
 
-#### `40cc0d431b27c3c86678b3e4caeefcfa097b28661ba32372cdedec6e9af18732`
+#### `b59f9b9f72b358f74fedcdf325077e6a8c2d2827a32efbeeec6278189f8f483f`
 
 ```dockerfile
 COPY file:8835af7f1cff467015a91e733dd0f8e13fcebf89656b72cdeaaf5359b2a1ef9f in /etc/odoo/
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:58 GMT
--	Parent Layer: `f1fe21f381d9a58f2b0e4d09312d75c35e033a9f82f2251525fb5419aeb3bd69`
+-	Created: Wed, 02 Mar 2016 11:19:43 GMT
+-	Parent Layer: `6c30e6b22014df1d12b1db695c10c41218d907e50e58b81b73fb4305cd257736`
 -	Docker Version: 1.9.1
 -	Virtual Size: 883.0 B
--	v2 Blob: `sha256:5058a528d344e142f8f5895bdc5cd40a7287e7a8ea2a3f9c1b7de5612688f6a9`
--	v2 Content-Length: 591.0 B
+-	v2 Blob: `sha256:5b1ff5b183ae2228125d7e1b3a521831fcd093687336eafacacb13cb912b2f32`
+-	v2 Content-Length: 590.0 B
 
-#### `19da049f511424e29047b44e8a436aba22148d98c0d453c25617bc1cbe5bf4c0`
+#### `ed3240c0c610a7fbcc18492efcde00634eabda5951a841f3b2a1ccebe363e2ce`
 
 ```dockerfile
 RUN chown odoo /etc/odoo/openerp-server.conf
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:59 GMT
--	Parent Layer: `40cc0d431b27c3c86678b3e4caeefcfa097b28661ba32372cdedec6e9af18732`
+-	Created: Wed, 02 Mar 2016 11:19:44 GMT
+-	Parent Layer: `b59f9b9f72b358f74fedcdf325077e6a8c2d2827a32efbeeec6278189f8f483f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 883.0 B
--	v2 Blob: `sha256:664286ceee4e6f131837446389058bed57b3b8c993034a7f6301c1a0a304637c`
--	v2 Content-Length: 593.0 B
+-	v2 Blob: `sha256:32e082fafec5d3e225d97ff95651c6ce44962735eee3d66623249aabcbf4d66b`
+-	v2 Content-Length: 594.0 B
 
-#### `8930b5e20dc2319518b41fb8eb3055d609afa5ac362dc2b8470f3a4108983a78`
+#### `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 
 ```dockerfile
 RUN mkdir -p /mnt/extra-addons\
          && chown -R odoo /mnt/extra-addons
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:00 GMT
--	Parent Layer: `19da049f511424e29047b44e8a436aba22148d98c0d453c25617bc1cbe5bf4c0`
+-	Created: Wed, 02 Mar 2016 11:19:46 GMT
+-	Parent Layer: `ed3240c0c610a7fbcc18492efcde00634eabda5951a841f3b2a1ccebe363e2ce`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:b3e4d41a8d5893e845082aba84b57ba63dc2215224216525a5ad801655e3c95d`
--	v2 Content-Length: 122.0 B
+-	v2 Blob: `sha256:dc14bd177ffaded56b769a72ff12eb79b7b0b9766367e4479f50ee4e3653f154`
+-	v2 Content-Length: 124.0 B
 
-#### `03140f44266f1f539934a88266e0a0c0a3bc0ead952a89773b97a2273aad9936`
+#### `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 
 ```dockerfile
 VOLUME [/var/lib/odoo /mnt/extra-addons]
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:01 GMT
--	Parent Layer: `8930b5e20dc2319518b41fb8eb3055d609afa5ac362dc2b8470f3a4108983a78`
+-	Created: Wed, 02 Mar 2016 11:19:46 GMT
+-	Parent Layer: `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `70d29cfef05d7de46ecf4f099fa92435050745ec7d5df612c3e66b96577eb4da`
+#### `3ef23d8e53e359428dae8c4d39c1a0ff63f08875490b33fdb49a4e09b626a9dc`
 
 ```dockerfile
 EXPOSE 8069/tcp 8071/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:02 GMT
--	Parent Layer: `03140f44266f1f539934a88266e0a0c0a3bc0ead952a89773b97a2273aad9936`
+-	Created: Wed, 02 Mar 2016 11:19:47 GMT
+-	Parent Layer: `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `755b9dd9abce72cc7c619d28c50eddc01f285131708a2ec57431cdf3e3c521ec`
+#### `bd91c339da6658b5bc2d658d8581c4703b14c2d333c9b0ef41a786e0e2542e46`
 
 ```dockerfile
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:02 GMT
--	Parent Layer: `70d29cfef05d7de46ecf4f099fa92435050745ec7d5df612c3e66b96577eb4da`
+-	Created: Wed, 02 Mar 2016 11:19:48 GMT
+-	Parent Layer: `3ef23d8e53e359428dae8c4d39c1a0ff63f08875490b33fdb49a4e09b626a9dc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `07f47acac7328803e7f458f5ae43f7b757f4cbe0dbe3d50469352ec2cb34f0be`
+#### `1193d8ad79d611b0b45e81676ebb7c4b3bd0d52707cdf5aef47ef6f58b81f6b4`
 
 ```dockerfile
 USER [odoo]
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:03 GMT
--	Parent Layer: `755b9dd9abce72cc7c619d28c50eddc01f285131708a2ec57431cdf3e3c521ec`
+-	Created: Wed, 02 Mar 2016 11:19:48 GMT
+-	Parent Layer: `bd91c339da6658b5bc2d658d8581c4703b14c2d333c9b0ef41a786e0e2542e46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `95e1dd324954e12be0b1656c60827412960e1207c3db333d7f51aee1496f9d0f`
+#### `1034463d0e8c18bf074a801f64011ef28fc97e21824fe96c55df4395c2db8489`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:03 GMT
--	Parent Layer: `07f47acac7328803e7f458f5ae43f7b757f4cbe0dbe3d50469352ec2cb34f0be`
+-	Created: Wed, 02 Mar 2016 11:19:49 GMT
+-	Parent Layer: `1193d8ad79d611b0b45e81676ebb7c4b3bd0d52707cdf5aef47ef6f58b81f6b4`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a79366b3f5854591114621cfcb356276004ff72af6196b06fe5dc075859979e9`
+#### `a8e3ef9eb83b7cacbad4793c4a291f2566e744a25e8819dd1995202d6812988b`
 
 ```dockerfile
 CMD ["openerp-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:04 GMT
--	Parent Layer: `95e1dd324954e12be0b1656c60827412960e1207c3db333d7f51aee1496f9d0f`
+-	Created: Wed, 02 Mar 2016 11:19:50 GMT
+-	Parent Layer: `1034463d0e8c18bf074a801f64011ef28fc97e21824fe96c55df4395c2db8489`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -770,53 +770,53 @@ CMD ["openerp-server"]
 ## `odoo:9`
 
 ```console
-$ docker pull library/odoo@sha256:b1ef9459f669a6403d7416351413a93c1566373cb33706108bd08cec604f3639
+$ docker pull library/odoo@sha256:b440cf67867387e760978443fcb9a53b5e33b3b39a8700eb084c7e88402208a4
 ```
 
--	Total Virtual Size: 841.1 MB (841115439 bytes)
--	Total v2 Content-Length: 269.1 MB (269057888 bytes)
+-	Total Virtual Size: 841.1 MB (841122842 bytes)
+-	Total v2 Content-Length: 269.1 MB (269057286 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `264a8d750523101d90b9ba53bc979be86827498c11f6918bc0bdefc8b90c07f8`
+#### `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 
 ```dockerfile
 MAINTAINER Odoo S.A. <info@odoo.com>
 ```
 
--	Created: Wed, 17 Feb 2016 00:31:15 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Wed, 02 Mar 2016 11:13:02 GMT
+-	Parent Layer: `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e96316a3fc04f335ae2c47805100d4f16ea2f84f2750e82f1f6bf0f96dcf74af`
+#### `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 
 ```dockerfile
 RUN set -x;\
@@ -837,40 +837,40 @@ RUN set -x;\
          && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 ```
 
--	Created: Wed, 17 Feb 2016 00:32:46 GMT
--	Parent Layer: `264a8d750523101d90b9ba53bc979be86827498c11f6918bc0bdefc8b90c07f8`
+-	Created: Wed, 02 Mar 2016 11:14:34 GMT
+-	Parent Layer: `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 -	Docker Version: 1.9.1
--	Virtual Size: 200.2 MB (200183879 bytes)
--	v2 Blob: `sha256:296eac936afd1edf2b643e6735d9249671d931d920686670dcef852c862d9604`
--	v2 Content-Length: 83.8 MB (83771766 bytes)
+-	Virtual Size: 200.2 MB (200188332 bytes)
+-	v2 Blob: `sha256:050c9aa75173f42a81caf988347012416b8d924a7995e5b4018269c8519ee914`
+-	v2 Content-Length: 83.8 MB (83772029 bytes)
 
-#### `bcfe1cd02cdf173e7d8381116a1482c324fbfc686cdff49ee5e4703f48fb11f6`
+#### `1e5ad7f7f2b69309aeb0c6401c73648a87255fbcce7abb3955d0660f443f0682`
 
 ```dockerfile
 ENV ODOO_VERSION=9.0
 ```
 
--	Created: Wed, 17 Feb 2016 00:35:33 GMT
--	Parent Layer: `e96316a3fc04f335ae2c47805100d4f16ea2f84f2750e82f1f6bf0f96dcf74af`
+-	Created: Wed, 02 Mar 2016 11:17:31 GMT
+-	Parent Layer: `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81e963bf8e6fab4e7cfa530d77598645796fc93eb0d4cc745a2d70a7cc2ebe13`
+#### `d4cc72673721ff4902df894839888eac5cb835d284d4628c9406b5c8dcfd19eb`
 
 ```dockerfile
 ENV ODOO_RELEASE=20160204
 ```
 
--	Created: Wed, 17 Feb 2016 00:35:33 GMT
--	Parent Layer: `bcfe1cd02cdf173e7d8381116a1482c324fbfc686cdff49ee5e4703f48fb11f6`
+-	Created: Wed, 02 Mar 2016 11:17:31 GMT
+-	Parent Layer: `1e5ad7f7f2b69309aeb0c6401c73648a87255fbcce7abb3955d0660f443f0682`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ad02911ec123f669bbdee46784fcb87a51978781885523f58b9191106ed48442`
+#### `9a0374e525252d6cd3d8792b43a21f384c119bfdb0c55f55a892244887981947`
 
 ```dockerfile
 RUN set -x;\
@@ -882,139 +882,139 @@ RUN set -x;\
          && rm -rf /var/lib/apt/lists/* odoo.deb
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:48 GMT
--	Parent Layer: `81e963bf8e6fab4e7cfa530d77598645796fc93eb0d4cc745a2d70a7cc2ebe13`
+-	Created: Wed, 02 Mar 2016 11:19:32 GMT
+-	Parent Layer: `d4cc72673721ff4902df894839888eac5cb835d284d4628c9406b5c8dcfd19eb`
 -	Docker Version: 1.9.1
--	Virtual Size: 515.8 MB (515819624 bytes)
--	v2 Blob: `sha256:cc8641ca5241cf71a257fce1652454af17eeeabf9422b58ddaf68ae36760a7a4`
--	v2 Content-Length: 133.9 MB (133917495 bytes)
+-	Virtual Size: 515.8 MB (515821542 bytes)
+-	v2 Blob: `sha256:9ff27d68929db19f82d0bafd90af947ba88c3d593deb90889fb2c2df7fed79f3`
+-	v2 Content-Length: 133.9 MB (133915572 bytes)
 
-#### `f1fe21f381d9a58f2b0e4d09312d75c35e033a9f82f2251525fb5419aeb3bd69`
+#### `6c30e6b22014df1d12b1db695c10c41218d907e50e58b81b73fb4305cd257736`
 
 ```dockerfile
 COPY file:3a1bf91711eb55f536989442ee439abce1fa8126b99577784a0aaeabd24e1454 in /
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:57 GMT
--	Parent Layer: `ad02911ec123f669bbdee46784fcb87a51978781885523f58b9191106ed48442`
+-	Created: Wed, 02 Mar 2016 11:19:42 GMT
+-	Parent Layer: `9a0374e525252d6cd3d8792b43a21f384c119bfdb0c55f55a892244887981947`
 -	Docker Version: 1.9.1
 -	Virtual Size: 399.0 B
 -	v2 Blob: `sha256:3207a3c8a00132d640a64dc3b6e7fedf12d1d01fac1f8dd07045a377b4738dec`
 -	v2 Content-Length: 342.0 B
 
-#### `40cc0d431b27c3c86678b3e4caeefcfa097b28661ba32372cdedec6e9af18732`
+#### `b59f9b9f72b358f74fedcdf325077e6a8c2d2827a32efbeeec6278189f8f483f`
 
 ```dockerfile
 COPY file:8835af7f1cff467015a91e733dd0f8e13fcebf89656b72cdeaaf5359b2a1ef9f in /etc/odoo/
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:58 GMT
--	Parent Layer: `f1fe21f381d9a58f2b0e4d09312d75c35e033a9f82f2251525fb5419aeb3bd69`
+-	Created: Wed, 02 Mar 2016 11:19:43 GMT
+-	Parent Layer: `6c30e6b22014df1d12b1db695c10c41218d907e50e58b81b73fb4305cd257736`
 -	Docker Version: 1.9.1
 -	Virtual Size: 883.0 B
--	v2 Blob: `sha256:5058a528d344e142f8f5895bdc5cd40a7287e7a8ea2a3f9c1b7de5612688f6a9`
--	v2 Content-Length: 591.0 B
+-	v2 Blob: `sha256:5b1ff5b183ae2228125d7e1b3a521831fcd093687336eafacacb13cb912b2f32`
+-	v2 Content-Length: 590.0 B
 
-#### `19da049f511424e29047b44e8a436aba22148d98c0d453c25617bc1cbe5bf4c0`
+#### `ed3240c0c610a7fbcc18492efcde00634eabda5951a841f3b2a1ccebe363e2ce`
 
 ```dockerfile
 RUN chown odoo /etc/odoo/openerp-server.conf
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:59 GMT
--	Parent Layer: `40cc0d431b27c3c86678b3e4caeefcfa097b28661ba32372cdedec6e9af18732`
+-	Created: Wed, 02 Mar 2016 11:19:44 GMT
+-	Parent Layer: `b59f9b9f72b358f74fedcdf325077e6a8c2d2827a32efbeeec6278189f8f483f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 883.0 B
--	v2 Blob: `sha256:664286ceee4e6f131837446389058bed57b3b8c993034a7f6301c1a0a304637c`
--	v2 Content-Length: 593.0 B
+-	v2 Blob: `sha256:32e082fafec5d3e225d97ff95651c6ce44962735eee3d66623249aabcbf4d66b`
+-	v2 Content-Length: 594.0 B
 
-#### `8930b5e20dc2319518b41fb8eb3055d609afa5ac362dc2b8470f3a4108983a78`
+#### `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 
 ```dockerfile
 RUN mkdir -p /mnt/extra-addons\
          && chown -R odoo /mnt/extra-addons
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:00 GMT
--	Parent Layer: `19da049f511424e29047b44e8a436aba22148d98c0d453c25617bc1cbe5bf4c0`
+-	Created: Wed, 02 Mar 2016 11:19:46 GMT
+-	Parent Layer: `ed3240c0c610a7fbcc18492efcde00634eabda5951a841f3b2a1ccebe363e2ce`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:b3e4d41a8d5893e845082aba84b57ba63dc2215224216525a5ad801655e3c95d`
--	v2 Content-Length: 122.0 B
+-	v2 Blob: `sha256:dc14bd177ffaded56b769a72ff12eb79b7b0b9766367e4479f50ee4e3653f154`
+-	v2 Content-Length: 124.0 B
 
-#### `03140f44266f1f539934a88266e0a0c0a3bc0ead952a89773b97a2273aad9936`
+#### `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 
 ```dockerfile
 VOLUME [/var/lib/odoo /mnt/extra-addons]
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:01 GMT
--	Parent Layer: `8930b5e20dc2319518b41fb8eb3055d609afa5ac362dc2b8470f3a4108983a78`
+-	Created: Wed, 02 Mar 2016 11:19:46 GMT
+-	Parent Layer: `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `70d29cfef05d7de46ecf4f099fa92435050745ec7d5df612c3e66b96577eb4da`
+#### `3ef23d8e53e359428dae8c4d39c1a0ff63f08875490b33fdb49a4e09b626a9dc`
 
 ```dockerfile
 EXPOSE 8069/tcp 8071/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:02 GMT
--	Parent Layer: `03140f44266f1f539934a88266e0a0c0a3bc0ead952a89773b97a2273aad9936`
+-	Created: Wed, 02 Mar 2016 11:19:47 GMT
+-	Parent Layer: `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `755b9dd9abce72cc7c619d28c50eddc01f285131708a2ec57431cdf3e3c521ec`
+#### `bd91c339da6658b5bc2d658d8581c4703b14c2d333c9b0ef41a786e0e2542e46`
 
 ```dockerfile
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:02 GMT
--	Parent Layer: `70d29cfef05d7de46ecf4f099fa92435050745ec7d5df612c3e66b96577eb4da`
+-	Created: Wed, 02 Mar 2016 11:19:48 GMT
+-	Parent Layer: `3ef23d8e53e359428dae8c4d39c1a0ff63f08875490b33fdb49a4e09b626a9dc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `07f47acac7328803e7f458f5ae43f7b757f4cbe0dbe3d50469352ec2cb34f0be`
+#### `1193d8ad79d611b0b45e81676ebb7c4b3bd0d52707cdf5aef47ef6f58b81f6b4`
 
 ```dockerfile
 USER [odoo]
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:03 GMT
--	Parent Layer: `755b9dd9abce72cc7c619d28c50eddc01f285131708a2ec57431cdf3e3c521ec`
+-	Created: Wed, 02 Mar 2016 11:19:48 GMT
+-	Parent Layer: `bd91c339da6658b5bc2d658d8581c4703b14c2d333c9b0ef41a786e0e2542e46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `95e1dd324954e12be0b1656c60827412960e1207c3db333d7f51aee1496f9d0f`
+#### `1034463d0e8c18bf074a801f64011ef28fc97e21824fe96c55df4395c2db8489`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:03 GMT
--	Parent Layer: `07f47acac7328803e7f458f5ae43f7b757f4cbe0dbe3d50469352ec2cb34f0be`
+-	Created: Wed, 02 Mar 2016 11:19:49 GMT
+-	Parent Layer: `1193d8ad79d611b0b45e81676ebb7c4b3bd0d52707cdf5aef47ef6f58b81f6b4`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a79366b3f5854591114621cfcb356276004ff72af6196b06fe5dc075859979e9`
+#### `a8e3ef9eb83b7cacbad4793c4a291f2566e744a25e8819dd1995202d6812988b`
 
 ```dockerfile
 CMD ["openerp-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:04 GMT
--	Parent Layer: `95e1dd324954e12be0b1656c60827412960e1207c3db333d7f51aee1496f9d0f`
+-	Created: Wed, 02 Mar 2016 11:19:50 GMT
+-	Parent Layer: `1034463d0e8c18bf074a801f64011ef28fc97e21824fe96c55df4395c2db8489`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1023,53 +1023,53 @@ CMD ["openerp-server"]
 ## `odoo:latest`
 
 ```console
-$ docker pull library/odoo@sha256:66b73aa463cc5704ecb500a0797c1c87344e3353a9e71c1789396bee443613de
+$ docker pull library/odoo@sha256:6508a4e17592899fa40a3e44dd1a5c707348ada0576f9ae095568f68e7f10fc3
 ```
 
--	Total Virtual Size: 841.1 MB (841115439 bytes)
--	Total v2 Content-Length: 269.1 MB (269057888 bytes)
+-	Total Virtual Size: 841.1 MB (841122842 bytes)
+-	Total v2 Content-Length: 269.1 MB (269057286 bytes)
 
 ### Layers (17)
 
-#### `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+#### `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 
 ```dockerfile
-ADD file:6e3677c176d6d774f006ce8f0dcd1e60753af9613eef0e7f707691290d6f6808 in /
+ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:34 GMT
+-	Created: Tue, 01 Mar 2016 18:51:11 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 125.1 MB (125109771 bytes)
--	v2 Blob: `sha256:7268d8f794c449e593d3a48f62e7e22b7c3a4b6e615caaf9494ec3cb2d48f503`
--	v2 Content-Length: 51.4 MB (51366659 bytes)
+-	Virtual Size: 125.1 MB (125110803 bytes)
+-	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
+-	v2 Content-Length: 51.4 MB (51367715 bytes)
 
-#### `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+#### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Tue, 16 Feb 2016 21:24:37 GMT
--	Parent Layer: `1e58eecba27a40984958e0c33718bbd4c6650d5300066ee94f4b9b77014956e5`
+-	Created: Tue, 01 Mar 2016 18:51:14 GMT
+-	Parent Layer: `d8bd0657b25f17eef81a3d52b53da5bda4de0cf5cca3dcafec277634ae4b38fb`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `264a8d750523101d90b9ba53bc979be86827498c11f6918bc0bdefc8b90c07f8`
+#### `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 
 ```dockerfile
 MAINTAINER Odoo S.A. <info@odoo.com>
 ```
 
--	Created: Wed, 17 Feb 2016 00:31:15 GMT
--	Parent Layer: `a0e9fe2f88030b979685b3bff31fcd97f0138aeb50f33754074538da4bdfba44`
+-	Created: Wed, 02 Mar 2016 11:13:02 GMT
+-	Parent Layer: `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e96316a3fc04f335ae2c47805100d4f16ea2f84f2750e82f1f6bf0f96dcf74af`
+#### `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 
 ```dockerfile
 RUN set -x;\
@@ -1090,40 +1090,40 @@ RUN set -x;\
          && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 ```
 
--	Created: Wed, 17 Feb 2016 00:32:46 GMT
--	Parent Layer: `264a8d750523101d90b9ba53bc979be86827498c11f6918bc0bdefc8b90c07f8`
+-	Created: Wed, 02 Mar 2016 11:14:34 GMT
+-	Parent Layer: `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 -	Docker Version: 1.9.1
--	Virtual Size: 200.2 MB (200183879 bytes)
--	v2 Blob: `sha256:296eac936afd1edf2b643e6735d9249671d931d920686670dcef852c862d9604`
--	v2 Content-Length: 83.8 MB (83771766 bytes)
+-	Virtual Size: 200.2 MB (200188332 bytes)
+-	v2 Blob: `sha256:050c9aa75173f42a81caf988347012416b8d924a7995e5b4018269c8519ee914`
+-	v2 Content-Length: 83.8 MB (83772029 bytes)
 
-#### `bcfe1cd02cdf173e7d8381116a1482c324fbfc686cdff49ee5e4703f48fb11f6`
+#### `1e5ad7f7f2b69309aeb0c6401c73648a87255fbcce7abb3955d0660f443f0682`
 
 ```dockerfile
 ENV ODOO_VERSION=9.0
 ```
 
--	Created: Wed, 17 Feb 2016 00:35:33 GMT
--	Parent Layer: `e96316a3fc04f335ae2c47805100d4f16ea2f84f2750e82f1f6bf0f96dcf74af`
+-	Created: Wed, 02 Mar 2016 11:17:31 GMT
+-	Parent Layer: `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81e963bf8e6fab4e7cfa530d77598645796fc93eb0d4cc745a2d70a7cc2ebe13`
+#### `d4cc72673721ff4902df894839888eac5cb835d284d4628c9406b5c8dcfd19eb`
 
 ```dockerfile
 ENV ODOO_RELEASE=20160204
 ```
 
--	Created: Wed, 17 Feb 2016 00:35:33 GMT
--	Parent Layer: `bcfe1cd02cdf173e7d8381116a1482c324fbfc686cdff49ee5e4703f48fb11f6`
+-	Created: Wed, 02 Mar 2016 11:17:31 GMT
+-	Parent Layer: `1e5ad7f7f2b69309aeb0c6401c73648a87255fbcce7abb3955d0660f443f0682`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ad02911ec123f669bbdee46784fcb87a51978781885523f58b9191106ed48442`
+#### `9a0374e525252d6cd3d8792b43a21f384c119bfdb0c55f55a892244887981947`
 
 ```dockerfile
 RUN set -x;\
@@ -1135,139 +1135,139 @@ RUN set -x;\
          && rm -rf /var/lib/apt/lists/* odoo.deb
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:48 GMT
--	Parent Layer: `81e963bf8e6fab4e7cfa530d77598645796fc93eb0d4cc745a2d70a7cc2ebe13`
+-	Created: Wed, 02 Mar 2016 11:19:32 GMT
+-	Parent Layer: `d4cc72673721ff4902df894839888eac5cb835d284d4628c9406b5c8dcfd19eb`
 -	Docker Version: 1.9.1
--	Virtual Size: 515.8 MB (515819624 bytes)
--	v2 Blob: `sha256:cc8641ca5241cf71a257fce1652454af17eeeabf9422b58ddaf68ae36760a7a4`
--	v2 Content-Length: 133.9 MB (133917495 bytes)
+-	Virtual Size: 515.8 MB (515821542 bytes)
+-	v2 Blob: `sha256:9ff27d68929db19f82d0bafd90af947ba88c3d593deb90889fb2c2df7fed79f3`
+-	v2 Content-Length: 133.9 MB (133915572 bytes)
 
-#### `f1fe21f381d9a58f2b0e4d09312d75c35e033a9f82f2251525fb5419aeb3bd69`
+#### `6c30e6b22014df1d12b1db695c10c41218d907e50e58b81b73fb4305cd257736`
 
 ```dockerfile
 COPY file:3a1bf91711eb55f536989442ee439abce1fa8126b99577784a0aaeabd24e1454 in /
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:57 GMT
--	Parent Layer: `ad02911ec123f669bbdee46784fcb87a51978781885523f58b9191106ed48442`
+-	Created: Wed, 02 Mar 2016 11:19:42 GMT
+-	Parent Layer: `9a0374e525252d6cd3d8792b43a21f384c119bfdb0c55f55a892244887981947`
 -	Docker Version: 1.9.1
 -	Virtual Size: 399.0 B
 -	v2 Blob: `sha256:3207a3c8a00132d640a64dc3b6e7fedf12d1d01fac1f8dd07045a377b4738dec`
 -	v2 Content-Length: 342.0 B
 
-#### `40cc0d431b27c3c86678b3e4caeefcfa097b28661ba32372cdedec6e9af18732`
+#### `b59f9b9f72b358f74fedcdf325077e6a8c2d2827a32efbeeec6278189f8f483f`
 
 ```dockerfile
 COPY file:8835af7f1cff467015a91e733dd0f8e13fcebf89656b72cdeaaf5359b2a1ef9f in /etc/odoo/
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:58 GMT
--	Parent Layer: `f1fe21f381d9a58f2b0e4d09312d75c35e033a9f82f2251525fb5419aeb3bd69`
+-	Created: Wed, 02 Mar 2016 11:19:43 GMT
+-	Parent Layer: `6c30e6b22014df1d12b1db695c10c41218d907e50e58b81b73fb4305cd257736`
 -	Docker Version: 1.9.1
 -	Virtual Size: 883.0 B
--	v2 Blob: `sha256:5058a528d344e142f8f5895bdc5cd40a7287e7a8ea2a3f9c1b7de5612688f6a9`
--	v2 Content-Length: 591.0 B
+-	v2 Blob: `sha256:5b1ff5b183ae2228125d7e1b3a521831fcd093687336eafacacb13cb912b2f32`
+-	v2 Content-Length: 590.0 B
 
-#### `19da049f511424e29047b44e8a436aba22148d98c0d453c25617bc1cbe5bf4c0`
+#### `ed3240c0c610a7fbcc18492efcde00634eabda5951a841f3b2a1ccebe363e2ce`
 
 ```dockerfile
 RUN chown odoo /etc/odoo/openerp-server.conf
 ```
 
--	Created: Wed, 17 Feb 2016 00:37:59 GMT
--	Parent Layer: `40cc0d431b27c3c86678b3e4caeefcfa097b28661ba32372cdedec6e9af18732`
+-	Created: Wed, 02 Mar 2016 11:19:44 GMT
+-	Parent Layer: `b59f9b9f72b358f74fedcdf325077e6a8c2d2827a32efbeeec6278189f8f483f`
 -	Docker Version: 1.9.1
 -	Virtual Size: 883.0 B
--	v2 Blob: `sha256:664286ceee4e6f131837446389058bed57b3b8c993034a7f6301c1a0a304637c`
--	v2 Content-Length: 593.0 B
+-	v2 Blob: `sha256:32e082fafec5d3e225d97ff95651c6ce44962735eee3d66623249aabcbf4d66b`
+-	v2 Content-Length: 594.0 B
 
-#### `8930b5e20dc2319518b41fb8eb3055d609afa5ac362dc2b8470f3a4108983a78`
+#### `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 
 ```dockerfile
 RUN mkdir -p /mnt/extra-addons\
          && chown -R odoo /mnt/extra-addons
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:00 GMT
--	Parent Layer: `19da049f511424e29047b44e8a436aba22148d98c0d453c25617bc1cbe5bf4c0`
+-	Created: Wed, 02 Mar 2016 11:19:46 GMT
+-	Parent Layer: `ed3240c0c610a7fbcc18492efcde00634eabda5951a841f3b2a1ccebe363e2ce`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:b3e4d41a8d5893e845082aba84b57ba63dc2215224216525a5ad801655e3c95d`
--	v2 Content-Length: 122.0 B
+-	v2 Blob: `sha256:dc14bd177ffaded56b769a72ff12eb79b7b0b9766367e4479f50ee4e3653f154`
+-	v2 Content-Length: 124.0 B
 
-#### `03140f44266f1f539934a88266e0a0c0a3bc0ead952a89773b97a2273aad9936`
+#### `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 
 ```dockerfile
 VOLUME [/var/lib/odoo /mnt/extra-addons]
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:01 GMT
--	Parent Layer: `8930b5e20dc2319518b41fb8eb3055d609afa5ac362dc2b8470f3a4108983a78`
+-	Created: Wed, 02 Mar 2016 11:19:46 GMT
+-	Parent Layer: `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `70d29cfef05d7de46ecf4f099fa92435050745ec7d5df612c3e66b96577eb4da`
+#### `3ef23d8e53e359428dae8c4d39c1a0ff63f08875490b33fdb49a4e09b626a9dc`
 
 ```dockerfile
 EXPOSE 8069/tcp 8071/tcp
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:02 GMT
--	Parent Layer: `03140f44266f1f539934a88266e0a0c0a3bc0ead952a89773b97a2273aad9936`
+-	Created: Wed, 02 Mar 2016 11:19:47 GMT
+-	Parent Layer: `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `755b9dd9abce72cc7c619d28c50eddc01f285131708a2ec57431cdf3e3c521ec`
+#### `bd91c339da6658b5bc2d658d8581c4703b14c2d333c9b0ef41a786e0e2542e46`
 
 ```dockerfile
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:02 GMT
--	Parent Layer: `70d29cfef05d7de46ecf4f099fa92435050745ec7d5df612c3e66b96577eb4da`
+-	Created: Wed, 02 Mar 2016 11:19:48 GMT
+-	Parent Layer: `3ef23d8e53e359428dae8c4d39c1a0ff63f08875490b33fdb49a4e09b626a9dc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `07f47acac7328803e7f458f5ae43f7b757f4cbe0dbe3d50469352ec2cb34f0be`
+#### `1193d8ad79d611b0b45e81676ebb7c4b3bd0d52707cdf5aef47ef6f58b81f6b4`
 
 ```dockerfile
 USER [odoo]
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:03 GMT
--	Parent Layer: `755b9dd9abce72cc7c619d28c50eddc01f285131708a2ec57431cdf3e3c521ec`
+-	Created: Wed, 02 Mar 2016 11:19:48 GMT
+-	Parent Layer: `bd91c339da6658b5bc2d658d8581c4703b14c2d333c9b0ef41a786e0e2542e46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `95e1dd324954e12be0b1656c60827412960e1207c3db333d7f51aee1496f9d0f`
+#### `1034463d0e8c18bf074a801f64011ef28fc97e21824fe96c55df4395c2db8489`
 
 ```dockerfile
 ENTRYPOINT &{["/entrypoint.sh"]}
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:03 GMT
--	Parent Layer: `07f47acac7328803e7f458f5ae43f7b757f4cbe0dbe3d50469352ec2cb34f0be`
+-	Created: Wed, 02 Mar 2016 11:19:49 GMT
+-	Parent Layer: `1193d8ad79d611b0b45e81676ebb7c4b3bd0d52707cdf5aef47ef6f58b81f6b4`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a79366b3f5854591114621cfcb356276004ff72af6196b06fe5dc075859979e9`
+#### `a8e3ef9eb83b7cacbad4793c4a291f2566e744a25e8819dd1995202d6812988b`
 
 ```dockerfile
 CMD ["openerp-server"]
 ```
 
--	Created: Wed, 17 Feb 2016 00:38:04 GMT
--	Parent Layer: `95e1dd324954e12be0b1656c60827412960e1207c3db333d7f51aee1496f9d0f`
+-	Created: Wed, 02 Mar 2016 11:19:50 GMT
+-	Parent Layer: `1034463d0e8c18bf074a801f64011ef28fc97e21824fe96c55df4395c2db8489`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`

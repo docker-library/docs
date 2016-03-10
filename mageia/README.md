@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `5` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/4da7cfe586ac0ef3fe3856d48d0410bf83c0cbe2/5/Dockerfile)
+-	[`latest`, `5` (*5/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/85a4253a175cde455b9926b4a83fb8d5ceea096f/5/Dockerfile)
 
 [![](https://badge.imagelayers.io/mageia:latest.svg)](https://imagelayers.io/?images=mageia:latest)
 
