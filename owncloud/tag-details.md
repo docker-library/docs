@@ -7077,6 +7077,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 72.1 MB (72083562 bytes)
 -	v2 Blob: `sha256:46c12ffefef6bfbafc52c8e443115e9e3f8e04bc44ac6fb9c49df6cf79e26e33`
 -	v2 Content-Length: 27.0 MB (27025048 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:47:43 GMT
 
 #### `ea68ba0ecb6c2804fd6b010ecf0e43894981d15150446bc0d48cca18a9bc04d9`
 
@@ -7549,6 +7550,7 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 72.1 MB (72083562 bytes)
 -	v2 Blob: `sha256:46c12ffefef6bfbafc52c8e443115e9e3f8e04bc44ac6fb9c49df6cf79e26e33`
 -	v2 Content-Length: 27.0 MB (27025048 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:47:43 GMT
 
 #### `ea68ba0ecb6c2804fd6b010ecf0e43894981d15150446bc0d48cca18a9bc04d9`
 
