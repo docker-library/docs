@@ -1733,6 +1733,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 255.7 MB (255686017 bytes)
 -	v2 Blob: `sha256:556836ec2c4f3d0d5471dc10ba72919c6a9641ffe93f569c96641e449e161fac`
 -	v2 Content-Length: 98.8 MB (98787429 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 22:22:27 GMT
 
 ## `buildpack-deps:wheezy-curl`
 
