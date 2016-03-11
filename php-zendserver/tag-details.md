@@ -2409,7 +2409,6 @@ RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-
 -	Virtual Size: 533.7 MB (533677776 bytes)
 -	v2 Blob: `sha256:0af5aff65a83054ac7dfea09929f77d3ecd48441e94e4bd430ed72f29d6ed94a`
 -	v2 Content-Length: 243.2 MB (243248596 bytes)
--	v2 Last-Modified: Fri, 04 Mar 2016 01:32:25 GMT
 
 #### `363fd35e2009d6122df94df0fb0d4cd744a46dff2c6a5f6a6b474ee74eb0ba21`
 
