@@ -1090,7 +1090,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:9b927868ec515fb8917e7d04c80f8fe298ab803d089828ecfd34cb8b45fd7256`
 -	v2 Content-Length: 1.9 KB (1887 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:29 GMT
 
 #### `a518ea82c54b6226d2e94b3be35b5a0605c2ee4200d5615d709bcef50731a56c`
 
@@ -1320,7 +1319,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:9b927868ec515fb8917e7d04c80f8fe298ab803d089828ecfd34cb8b45fd7256`
 -	v2 Content-Length: 1.9 KB (1887 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:29 GMT
 
 #### `a518ea82c54b6226d2e94b3be35b5a0605c2ee4200d5615d709bcef50731a56c`
 
@@ -1550,7 +1548,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:9b927868ec515fb8917e7d04c80f8fe298ab803d089828ecfd34cb8b45fd7256`
 -	v2 Content-Length: 1.9 KB (1887 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:29 GMT
 
 #### `a518ea82c54b6226d2e94b3be35b5a0605c2ee4200d5615d709bcef50731a56c`
 
@@ -1780,7 +1777,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:9b927868ec515fb8917e7d04c80f8fe298ab803d089828ecfd34cb8b45fd7256`
 -	v2 Content-Length: 1.9 KB (1887 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:29 GMT
 
 #### `a518ea82c54b6226d2e94b3be35b5a0605c2ee4200d5615d709bcef50731a56c`
 
