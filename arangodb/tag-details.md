@@ -1449,7 +1449,6 @@ RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3e584a92444915896a1bcc09d1990a8ea226d439e3a7403e2c341e808973049c`
 -	v2 Content-Length: 165.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 22:48:11 GMT
 
 #### `031a643f8b38c50e47e3dbed384d9a668d4777de6fe9208d027da93d1cbbc39b`
 
@@ -1714,7 +1713,6 @@ RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3e584a92444915896a1bcc09d1990a8ea226d439e3a7403e2c341e808973049c`
 -	v2 Content-Length: 165.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 22:48:11 GMT
 
 #### `031a643f8b38c50e47e3dbed384d9a668d4777de6fe9208d027da93d1cbbc39b`
 
@@ -1979,7 +1977,6 @@ RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3e584a92444915896a1bcc09d1990a8ea226d439e3a7403e2c341e808973049c`
 -	v2 Content-Length: 165.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 22:48:11 GMT
 
 #### `031a643f8b38c50e47e3dbed384d9a668d4777de6fe9208d027da93d1cbbc39b`
 
