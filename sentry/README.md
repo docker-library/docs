@@ -31,15 +31,15 @@ Sentry is a realtime event logging and aggregation platform. It specializes in m
 
 2.	Start a Postgres container
 
-	```console
-	$ docker run -d --name sentry-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=sentry postgres
-	```
+		```console
+		$ docker run -d --name sentry-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_USER=sentry postgres
+		```
 
 3.	Generate a new secret key to be shared by all `sentry` containers. This value will then be used as the `SENTRY_SECRET_KEY` environment variable.
 
-	```console
-	$ docker run --rm sentry generate-secret-key
-	```
+		```console
+		$ docker run --rm sentry generate-secret-key
+		```
 
 4.	If this is a new database, you'll need to run `upgrade`
 
