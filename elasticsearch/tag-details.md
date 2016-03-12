@@ -2995,7 +2995,6 @@ RUN set -ex \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:607a64db41ad81f6c3c6a3161c8e6b3f1e4d79d533f19aedb9b95999c7af05f8`
 -	v2 Content-Length: 214.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 20:02:56 GMT
 
 #### `396e3506771ff259dd7ef6d53d5778ef8485b89704bb3b2e5e4cb1d22541361b`
 
@@ -3432,7 +3431,6 @@ RUN set -ex \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:607a64db41ad81f6c3c6a3161c8e6b3f1e4d79d533f19aedb9b95999c7af05f8`
 -	v2 Content-Length: 214.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 20:02:56 GMT
 
 #### `396e3506771ff259dd7ef6d53d5778ef8485b89704bb3b2e5e4cb1d22541361b`
 
