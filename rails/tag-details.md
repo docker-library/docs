@@ -1813,6 +1813,7 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:4f9ba79e044e0e99a24685fa12f6e527d3a01f4473e299b1cb3ae8cb0f08db8c`
 -	v2 Content-Length: 184.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:41:48 GMT
 
 #### `06e016ccf5ca1e86ec164de253af7eb7710a1dcf17dc991c618b0154480b7c46`
 
