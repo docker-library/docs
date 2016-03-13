@@ -1398,7 +1398,6 @@ COPY file:1dae87a36d6862e59cd93d1216d4082e4ca1c5eb3b761e913863d7be88565b07 in /o
 -	Virtual Size: 336.0 B
 -	v2 Blob: `sha256:d7b2b656c1cf46fda3ecacd75210fa241c6230c8019365383d8820ef90af7af0`
 -	v2 Content-Length: 403.0 B
--	v2 Last-Modified: Fri, 04 Mar 2016 01:53:25 GMT
 
 #### `0e0ed91b063a491f6e15c3d08c3072556a25a6dc6f2578adba1ab8363eb82600`
 
@@ -1706,7 +1705,6 @@ COPY file:1dae87a36d6862e59cd93d1216d4082e4ca1c5eb3b761e913863d7be88565b07 in /o
 -	Virtual Size: 336.0 B
 -	v2 Blob: `sha256:d7b2b656c1cf46fda3ecacd75210fa241c6230c8019365383d8820ef90af7af0`
 -	v2 Content-Length: 403.0 B
--	v2 Last-Modified: Fri, 04 Mar 2016 01:53:25 GMT
 
 #### `0e0ed91b063a491f6e15c3d08c3072556a25a6dc6f2578adba1ab8363eb82600`
 
