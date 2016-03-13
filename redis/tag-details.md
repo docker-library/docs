@@ -933,6 +933,7 @@ RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && r
 -	Virtual Size: 10.2 MB (10159692 bytes)
 -	v2 Blob: `sha256:1c8007651bf4a180da4ddb3a6fab575ffe5ebe971b7974489341c4626838da74`
 -	v2 Content-Length: 4.2 MB (4224817 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:08 GMT
 
 #### `42ba8ccf34add5835697d7750f7a9453ee5203240a9bd7d67156d171b47c3a13`
 
@@ -1200,6 +1201,7 @@ RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && r
 -	Virtual Size: 10.2 MB (10159692 bytes)
 -	v2 Blob: `sha256:1c8007651bf4a180da4ddb3a6fab575ffe5ebe971b7974489341c4626838da74`
 -	v2 Content-Length: 4.2 MB (4224817 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:08 GMT
 
 #### `42ba8ccf34add5835697d7750f7a9453ee5203240a9bd7d67156d171b47c3a13`
 
@@ -1467,6 +1469,7 @@ RUN apt-get update && apt-get install -y libc6-i386 --no-install-recommends && r
 -	Virtual Size: 10.2 MB (10159692 bytes)
 -	v2 Blob: `sha256:1c8007651bf4a180da4ddb3a6fab575ffe5ebe971b7974489341c4626838da74`
 -	v2 Content-Length: 4.2 MB (4224817 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:08 GMT
 
 #### `42ba8ccf34add5835697d7750f7a9453ee5203240a9bd7d67156d171b47c3a13`
 
