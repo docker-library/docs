@@ -173,6 +173,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -366,6 +367,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -559,6 +561,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -752,6 +755,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -1023,6 +1027,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -1294,6 +1299,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -1940,6 +1946,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -2133,6 +2140,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -2326,6 +2334,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -2519,6 +2528,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -2790,6 +2800,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -3061,6 +3072,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -3707,6 +3719,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -3900,6 +3913,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -4093,6 +4107,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -4286,6 +4301,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -4479,6 +4495,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -4750,6 +4767,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -5021,6 +5039,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -5292,6 +5311,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
