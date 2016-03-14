@@ -231,7 +231,6 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36788851 bytes)
 -	v2 Blob: `sha256:1cfcd57536411681ccead71754f132fc4438cc09691c253023ccb111926945dd`
 -	v2 Content-Length: 10.1 MB (10074302 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 20:00:06 GMT
 
 #### `a4d8ae775660735e5fe6aff27f707b6a6e07564441e13a305a30735aedf297ca`
 
@@ -609,7 +608,6 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36788851 bytes)
 -	v2 Blob: `sha256:1cfcd57536411681ccead71754f132fc4438cc09691c253023ccb111926945dd`
 -	v2 Content-Length: 10.1 MB (10074302 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 20:00:06 GMT
 
 #### `a4d8ae775660735e5fe6aff27f707b6a6e07564441e13a305a30735aedf297ca`
 
@@ -987,7 +985,6 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36788851 bytes)
 -	v2 Blob: `sha256:1cfcd57536411681ccead71754f132fc4438cc09691c253023ccb111926945dd`
 -	v2 Content-Length: 10.1 MB (10074302 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 20:00:06 GMT
 
 #### `a4d8ae775660735e5fe6aff27f707b6a6e07564441e13a305a30735aedf297ca`
 
@@ -1365,7 +1362,6 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36788851 bytes)
 -	v2 Blob: `sha256:1cfcd57536411681ccead71754f132fc4438cc09691c253023ccb111926945dd`
 -	v2 Content-Length: 10.1 MB (10074302 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 20:00:06 GMT
 
 #### `a4d8ae775660735e5fe6aff27f707b6a6e07564441e13a305a30735aedf297ca`
 
@@ -1743,7 +1739,6 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36788851 bytes)
 -	v2 Blob: `sha256:1cfcd57536411681ccead71754f132fc4438cc09691c253023ccb111926945dd`
 -	v2 Content-Length: 10.1 MB (10074302 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 20:00:06 GMT
 
 #### `a4d8ae775660735e5fe6aff27f707b6a6e07564441e13a305a30735aedf297ca`
 
@@ -2121,7 +2116,6 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36788851 bytes)
 -	v2 Blob: `sha256:1cfcd57536411681ccead71754f132fc4438cc09691c253023ccb111926945dd`
 -	v2 Content-Length: 10.1 MB (10074302 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 20:00:06 GMT
 
 #### `a4d8ae775660735e5fe6aff27f707b6a6e07564441e13a305a30735aedf297ca`
 
@@ -2499,7 +2493,6 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36788851 bytes)
 -	v2 Blob: `sha256:1cfcd57536411681ccead71754f132fc4438cc09691c253023ccb111926945dd`
 -	v2 Content-Length: 10.1 MB (10074302 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 20:00:06 GMT
 
 #### `a4d8ae775660735e5fe6aff27f707b6a6e07564441e13a305a30735aedf297ca`
 
@@ -2877,7 +2870,6 @@ RUN apt-get update &&   apt-get -y install lsof &&   rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 36.8 MB (36788851 bytes)
 -	v2 Blob: `sha256:1cfcd57536411681ccead71754f132fc4438cc09691c253023ccb111926945dd`
 -	v2 Content-Length: 10.1 MB (10074302 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 20:00:06 GMT
 
 #### `a4d8ae775660735e5fe6aff27f707b6a6e07564441e13a305a30735aedf297ca`
 
