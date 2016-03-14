@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`5.5.48`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/496aaa6c7a888360410b625fc709b3acfb78587f/5.5/Dockerfile)
--	[`5.6.29`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/ace4c65b8e97f0145616386916aabaec518d4e08/5.6/Dockerfile)
--	[`5.7.11`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/4e022c06314ff6047dabc4abee2f222ae9ce564d/5.7/Dockerfile)
+-	[`5.5.48`, `5.5` (*5.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/a93628500589d5a584f523fd168360ec16d81655/5.5/Dockerfile)
+-	[`5.6.29`, `5.6` (*5.6/Dockerfile*)](https://github.com/docker-library/mysql/blob/3288a66368f16deb6f2768ce373ab36f92553cfa/5.6/Dockerfile)
+-	[`5.7.11`, `5.7`, `5`, `latest` (*5.7/Dockerfile*)](https://github.com/docker-library/mysql/blob/3288a66368f16deb6f2768ce373ab36f92553cfa/5.7/Dockerfile)
 
 [![](https://badge.imagelayers.io/mysql:latest.svg)](https://imagelayers.io/?images=mysql:5.5.48,mysql:5.6.29,mysql:5.7.11)
 

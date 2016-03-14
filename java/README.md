@@ -1,15 +1,19 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`openjdk-6b38-jdk`, `openjdk-6b38`, `openjdk-6-jdk`, `openjdk-6`, `6b38-jdk`, `6b38`, `6-jdk`, `6` (*openjdk-6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/193df6f21c76adb7bf23c0a6791fcbc28f6ec5fc/openjdk-6-jdk/Dockerfile)
--	[`openjdk-6b38-jre`, `openjdk-6-jre`, `6b38-jre`, `6-jre` (*openjdk-6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/193df6f21c76adb7bf23c0a6791fcbc28f6ec5fc/openjdk-6-jre/Dockerfile)
--	[`openjdk-7u95-jdk`, `openjdk-7u95`, `openjdk-7-jdk`, `openjdk-7`, `7u95-jdk`, `7u95`, `7-jdk`, `7` (*openjdk-7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/f71d77ba3fe01cbfc625e38c1841531870f0538c/openjdk-7-jdk/Dockerfile)
--	[`openjdk-7u95-jre`, `openjdk-7-jre`, `7u95-jre`, `7-jre` (*openjdk-7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/f71d77ba3fe01cbfc625e38c1841531870f0538c/openjdk-7-jre/Dockerfile)
--	[`openjdk-8u72-jdk`, `openjdk-8u72`, `openjdk-8-jdk`, `openjdk-8`, `8u72-jdk`, `8u72`, `8-jdk`, `8`, `jdk`, `latest` (*openjdk-8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2dd0496901a9c01c78895d0e6618b36c08f78bde/openjdk-8-jdk/Dockerfile)
--	[`openjdk-8u72-jre`, `openjdk-8-jre`, `8u72-jre`, `8-jre`, `jre` (*openjdk-8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/2dd0496901a9c01c78895d0e6618b36c08f78bde/openjdk-8-jre/Dockerfile)
--	[`openjdk-9-b102-jdk`, `openjdk-9-b102`, `openjdk-9-jdk`, `openjdk-9`, `9-b102-jdk`, `9-b102`, `9-jdk`, `9` (*openjdk-9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0235b70854cf9251ab4a1479696975412320a9bd/openjdk-9-jdk/Dockerfile)
--	[`openjdk-9-b102-jre`, `openjdk-9-jre`, `9-b102-jre`, `9-jre` (*openjdk-9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/0235b70854cf9251ab4a1479696975412320a9bd/openjdk-9-jre/Dockerfile)
+-	[`openjdk-6b38-jdk`, `openjdk-6b38`, `openjdk-6-jdk`, `openjdk-6`, `6b38-jdk`, `6b38`, `6-jdk`, `6` (*6-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jdk/Dockerfile)
+-	[`openjdk-6b38-jre`, `openjdk-6-jre`, `6b38-jre`, `6-jre` (*6-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/6-jre/Dockerfile)
+-	[`openjdk-7u95-jdk`, `openjdk-7u95`, `openjdk-7-jdk`, `openjdk-7`, `7u95-jdk`, `7u95`, `7-jdk`, `7` (*7-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/7-jdk/Dockerfile)
+-	[`openjdk-7u95-jdk-alpine`, `openjdk-7u95-alpine`, `openjdk-7-jdk-alpine`, `openjdk-7-alpine`, `7u95-jdk-alpine`, `7u95-alpine`, `7-jdk-alpine`, `7-alpine` (*7-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b118fdc1e9b1aebdc178537551101dffe1f612a3/7-jdk/alpine/Dockerfile)
+-	[`openjdk-7u95-jre`, `openjdk-7-jre`, `7u95-jre`, `7-jre` (*7-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/7-jre/Dockerfile)
+-	[`openjdk-7u95-jre-alpine`, `openjdk-7-jre-alpine`, `7u95-jre-alpine`, `7-jre-alpine` (*7-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b118fdc1e9b1aebdc178537551101dffe1f612a3/7-jre/alpine/Dockerfile)
+-	[`openjdk-8u72-jdk`, `openjdk-8u72`, `openjdk-8-jdk`, `openjdk-8`, `8u72-jdk`, `8u72`, `8-jdk`, `8`, `jdk`, `latest` (*8-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/8-jdk/Dockerfile)
+-	[`openjdk-8u72-jdk-alpine`, `openjdk-8u72-alpine`, `openjdk-8-jdk-alpine`, `openjdk-8-alpine`, `8u72-jdk-alpine`, `8u72-alpine`, `8-jdk-alpine`, `8-alpine`, `jdk-alpine`, `alpine` (*8-jdk/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b118fdc1e9b1aebdc178537551101dffe1f612a3/8-jdk/alpine/Dockerfile)
+-	[`openjdk-8u72-jre`, `openjdk-8-jre`, `8u72-jre`, `8-jre`, `jre` (*8-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/8-jre/Dockerfile)
+-	[`openjdk-8u72-jre-alpine`, `openjdk-8-jre-alpine`, `8u72-jre-alpine`, `8-jre-alpine`, `jre-alpine` (*8-jre/alpine/Dockerfile*)](https://github.com/docker-library/openjdk/blob/b118fdc1e9b1aebdc178537551101dffe1f612a3/8-jre/alpine/Dockerfile)
+-	[`openjdk-9-b107-jdk`, `openjdk-9-b107`, `openjdk-9-jdk`, `openjdk-9`, `9-b107-jdk`, `9-b107`, `9-jdk`, `9` (*9-jdk/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/9-jdk/Dockerfile)
+-	[`openjdk-9-b107-jre`, `openjdk-9-jre`, `9-b107-jre`, `9-jre` (*9-jre/Dockerfile*)](https://github.com/docker-library/openjdk/blob/89851f0abc3a83cfad5248102f379d6a0bd3951a/9-jre/Dockerfile)
 
-[![](https://badge.imagelayers.io/java:latest.svg)](https://imagelayers.io/?images=java:openjdk-6b38-jdk,java:openjdk-6b38-jre,java:openjdk-7u95-jdk,java:openjdk-7u95-jre,java:openjdk-8u72-jdk,java:openjdk-8u72-jre,java:openjdk-9-b102-jdk,java:openjdk-9-b102-jre)
+[![](https://badge.imagelayers.io/java:latest.svg)](https://imagelayers.io/?images=java:openjdk-6b38-jdk,java:openjdk-6b38-jre,java:openjdk-7u95-jdk,java:openjdk-7u95-jdk-alpine,java:openjdk-7u95-jre,java:openjdk-7u95-jre-alpine,java:openjdk-8u72-jdk,java:openjdk-8u72-jdk-alpine,java:openjdk-8u72-jre,java:openjdk-8u72-jre-alpine,java:openjdk-9-b107-jdk,java:openjdk-9-b107-jre)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/java`)](https://github.com/docker-library/official-images/blob/master/library/java). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -66,6 +70,22 @@ As all of the major upstream Linux distributions are unwilling to redistribute O
 -	Gentoo has a *fetch-restriction* that requires the user to go to the Oracle website to download the Java tar manually which inclues accepting the license ([wiki.gentoo.org](https://wiki.gentoo.org/wiki/Java)).
 -	CentOS requires users to go and download the rpm provided by Oracle at java.com and thus accept the Oracle license ([wiki.centos.org](https://wiki.centos.org/HowTos/JavaRuntimeEnvironment)).
 -	RedHat provides instructions to add a repo that is maintained by Oracle ([access.redhat.com](https://access.redhat.com/solutions/732883)).
+
+# Image Variants
+
+The `java` images come in many flavors, each designed for a specific use case.
+
+## `java:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of. This tag is based off of [`buildpack-deps`](https://registry.hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+
+## `java:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
