@@ -160,6 +160,7 @@ RUN echo 'deb http://www.rabbitmq.com/debian testing main' > /etc/apt/sources.li
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:98efe6ed938916a6ffe60b253a6d6e1ad37d2ec247c81973ca19237a8eec6e43`
 -	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:07 GMT
 
 #### `bfa8a03685bb66970892c0122af6dbc1490d4350b91f58014ddd992055852eb3`
 
@@ -497,6 +498,7 @@ RUN echo 'deb http://www.rabbitmq.com/debian testing main' > /etc/apt/sources.li
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:98efe6ed938916a6ffe60b253a6d6e1ad37d2ec247c81973ca19237a8eec6e43`
 -	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:07 GMT
 
 #### `bfa8a03685bb66970892c0122af6dbc1490d4350b91f58014ddd992055852eb3`
 
@@ -834,6 +836,7 @@ RUN echo 'deb http://www.rabbitmq.com/debian testing main' > /etc/apt/sources.li
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:98efe6ed938916a6ffe60b253a6d6e1ad37d2ec247c81973ca19237a8eec6e43`
 -	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:07 GMT
 
 #### `bfa8a03685bb66970892c0122af6dbc1490d4350b91f58014ddd992055852eb3`
 
@@ -1171,6 +1174,7 @@ RUN echo 'deb http://www.rabbitmq.com/debian testing main' > /etc/apt/sources.li
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:98efe6ed938916a6ffe60b253a6d6e1ad37d2ec247c81973ca19237a8eec6e43`
 -	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:07 GMT
 
 #### `bfa8a03685bb66970892c0122af6dbc1490d4350b91f58014ddd992055852eb3`
 
@@ -1508,6 +1512,7 @@ RUN echo 'deb http://www.rabbitmq.com/debian testing main' > /etc/apt/sources.li
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:98efe6ed938916a6ffe60b253a6d6e1ad37d2ec247c81973ca19237a8eec6e43`
 -	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:07 GMT
 
 #### `bfa8a03685bb66970892c0122af6dbc1490d4350b91f58014ddd992055852eb3`
 
@@ -1871,6 +1876,7 @@ RUN echo 'deb http://www.rabbitmq.com/debian testing main' > /etc/apt/sources.li
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:98efe6ed938916a6ffe60b253a6d6e1ad37d2ec247c81973ca19237a8eec6e43`
 -	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:07 GMT
 
 #### `bfa8a03685bb66970892c0122af6dbc1490d4350b91f58014ddd992055852eb3`
 
@@ -2234,6 +2240,7 @@ RUN echo 'deb http://www.rabbitmq.com/debian testing main' > /etc/apt/sources.li
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:98efe6ed938916a6ffe60b253a6d6e1ad37d2ec247c81973ca19237a8eec6e43`
 -	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:07 GMT
 
 #### `bfa8a03685bb66970892c0122af6dbc1490d4350b91f58014ddd992055852eb3`
 
@@ -2597,6 +2604,7 @@ RUN echo 'deb http://www.rabbitmq.com/debian testing main' > /etc/apt/sources.li
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:98efe6ed938916a6ffe60b253a6d6e1ad37d2ec247c81973ca19237a8eec6e43`
 -	v2 Content-Length: 214.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:08:07 GMT
 
 #### `bfa8a03685bb66970892c0122af6dbc1490d4350b91f58014ddd992055852eb3`
 

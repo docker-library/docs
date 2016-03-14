@@ -1162,6 +1162,7 @@ RUN addgroup -S nginx \
 -	Virtual Size: 8.2 MB (8174359 bytes)
 -	v2 Blob: `sha256:f8e631ebf414d2852d0610f281f2d6d100f90d7f60e447d16b5628c59c90d3bf`
 -	v2 Content-Length: 3.3 MB (3301687 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:39:27 GMT
 
 #### `9bb500e55cdb4160f1867c8468d737bfec4bb610589e1066c74e1329c3a1f894`
 
@@ -1327,6 +1328,7 @@ RUN addgroup -S nginx \
 -	Virtual Size: 8.2 MB (8174359 bytes)
 -	v2 Blob: `sha256:f8e631ebf414d2852d0610f281f2d6d100f90d7f60e447d16b5628c59c90d3bf`
 -	v2 Content-Length: 3.3 MB (3301687 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:39:27 GMT
 
 #### `9bb500e55cdb4160f1867c8468d737bfec4bb610589e1066c74e1329c3a1f894`
 
