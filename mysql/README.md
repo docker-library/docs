@@ -82,6 +82,20 @@ Note that users on host systems with SELinux enabled may see issues with this. T
 $ chcon -Rt svirt_sandbox_file_t /my/custom
 ```
 
+### Configuration without a `cnf` file
+
+Many configuration options can be passed as flags to `mysqld`. This will give you the flexibility to customize the container without needing a `cnf` file. For example, if you want to change the default encoding and collation for all tables to use UTF-8 (`utf8mb4`) just run the following:
+
+```console
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+```
+
+If you would like to see a complete list of available options, just run:
+
+```console
+$ docker run -it --rm mysql:tag --verbose --help
+```
+
 ## Environment Variables
 
 When you start the `mysql` image, you can adjust the configuration of the MySQL instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
