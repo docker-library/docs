@@ -2745,7 +2745,6 @@ RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/post
 -	Virtual Size: 21.7 KB (21661 bytes)
 -	v2 Blob: `sha256:edefda0343730a1391b4a668f83d761b37c382b86816893e8880f87aed187b42`
 -	v2 Content-Length: 7.0 KB (6986 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:11:23 GMT
 
 #### `7b05e13e9e212a59b5e906cc4e69d49a6446f82dacb35b0eb5392a2d49ba1858`
 
@@ -3061,7 +3060,6 @@ RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/post
 -	Virtual Size: 21.7 KB (21661 bytes)
 -	v2 Blob: `sha256:edefda0343730a1391b4a668f83d761b37c382b86816893e8880f87aed187b42`
 -	v2 Content-Length: 7.0 KB (6986 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:11:23 GMT
 
 #### `7b05e13e9e212a59b5e906cc4e69d49a6446f82dacb35b0eb5392a2d49ba1858`
 
@@ -3377,7 +3375,6 @@ RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/post
 -	Virtual Size: 21.7 KB (21661 bytes)
 -	v2 Blob: `sha256:edefda0343730a1391b4a668f83d761b37c382b86816893e8880f87aed187b42`
 -	v2 Content-Length: 7.0 KB (6986 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:11:23 GMT
 
 #### `7b05e13e9e212a59b5e906cc4e69d49a6446f82dacb35b0eb5392a2d49ba1858`
 
@@ -3693,7 +3690,6 @@ RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/post
 -	Virtual Size: 21.7 KB (21661 bytes)
 -	v2 Blob: `sha256:edefda0343730a1391b4a668f83d761b37c382b86816893e8880f87aed187b42`
 -	v2 Content-Length: 7.0 KB (6986 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:11:23 GMT
 
 #### `7b05e13e9e212a59b5e906cc4e69d49a6446f82dacb35b0eb5392a2d49ba1858`
 
