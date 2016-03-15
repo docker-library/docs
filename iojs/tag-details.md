@@ -1979,7 +1979,6 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -2173,7 +2172,6 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -2367,7 +2365,6 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -2561,7 +2558,6 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -2833,7 +2829,6 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -3105,7 +3100,6 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
