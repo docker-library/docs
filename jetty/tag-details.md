@@ -217,6 +217,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -371,6 +372,7 @@ RUN mkdir -p "$JETTY_BASE"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:55:50 GMT
 
 #### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
@@ -704,6 +706,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -858,6 +861,7 @@ RUN mkdir -p "$JETTY_BASE"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:55:50 GMT
 
 #### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
@@ -1191,6 +1195,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -1345,6 +1350,7 @@ RUN mkdir -p "$JETTY_BASE"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:55:50 GMT
 
 #### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
@@ -1678,6 +1684,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -1832,6 +1839,7 @@ RUN mkdir -p "$JETTY_BASE"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:55:50 GMT
 
 #### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
@@ -2165,6 +2173,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -2319,6 +2328,7 @@ RUN mkdir -p "$JETTY_BASE"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:55:50 GMT
 
 #### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
@@ -2652,6 +2662,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -2806,6 +2817,7 @@ RUN mkdir -p "$JETTY_BASE"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:55:50 GMT
 
 #### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
@@ -3139,6 +3151,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -3293,6 +3306,7 @@ RUN mkdir -p "$JETTY_BASE"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:55:50 GMT
 
 #### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
@@ -3626,6 +3640,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -3780,6 +3795,7 @@ RUN mkdir -p "$JETTY_BASE"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:55:50 GMT
 
 #### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
@@ -4113,6 +4129,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -4600,6 +4617,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -5087,6 +5105,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
@@ -5574,6 +5593,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
