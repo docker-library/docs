@@ -22,11 +22,11 @@
 ## `jetty:9.3.7`
 
 ```console
-$ docker pull library/jetty@sha256:626f49a50a808a301be47fbecf1d42b771973bc2c94469d7e668abd078de9cb4
+$ docker pull library/jetty@sha256:4b61a963a9712daa0d837b45da69f9f3857dfedf2433f86ffbf9ef8afdc4d3e0
 ```
 
--	Total Virtual Size: 319.8 MB (319797817 bytes)
--	Total v2 Content-Length: 131.6 MB (131633059 bytes)
+-	Total Virtual Size: 320.3 MB (320296200 bytes)
+-	Total v2 Content-Length: 131.9 MB (131923716 bytes)
 
 ### Layers (34)
 
@@ -72,50 +72,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -123,66 +127,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -194,131 +198,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+#### `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 
 ```dockerfile
 ENV JETTY_VERSION=9.3.7.v20160115
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:25:08 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+#### `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.7.v20160115/jetty-distribution-9.3.7.v20160115.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+#### `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:38 GMT
--	Parent Layer: `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+#### `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 
 ```dockerfile
 RUN set -xe \
@@ -335,53 +339,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:42 GMT
--	Parent Layer: `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 8.9 MB (8925361 bytes)
--	v2 Blob: `sha256:c63394d6e2d5ac861d094c083dca03c68056db452605db57025242a414663a84`
--	v2 Content-Length: 7.8 MB (7822768 bytes)
+-	v2 Blob: `sha256:b1457a83269a66adbf1481c9f9b0f91441f125d61215b3a803901dfbb202e1ad`
+-	v2 Content-Length: 7.8 MB (7822776 bytes)
 
-#### `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+#### `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:43 GMT
--	Parent Layer: `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+#### `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+-	Created: Tue, 15 Mar 2016 18:25:15 GMT
+-	Parent Layer: `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d7df74248f7176ab5719d94addfbfa77e894c5318dd11bef2c07e71c0333c68`
+-	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
 
-#### `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+#### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+-	Created: Tue, 15 Mar 2016 18:25:16 GMT
+-	Parent Layer: `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+#### `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -389,53 +393,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:47 GMT
--	Parent Layer: `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:4519fd8eca569a5d42b91b70cfea29c46d8ea0e1068cb79dd330137a1adae1fa`
--	v2 Content-Length: 1.7 KB (1702 bytes)
+-	v2 Blob: `sha256:f7962995018864b704e9e9bd3b5547b98d58ac35154a517acc44312be25dfad5`
+-	v2 Content-Length: 1.7 KB (1704 bytes)
 
-#### `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+#### `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:48 GMT
--	Parent Layer: `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+#### `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+-	Created: Tue, 15 Mar 2016 18:25:19 GMT
+-	Parent Layer: `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+#### `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+-	Created: Tue, 15 Mar 2016 18:25:20 GMT
+-	Parent Layer: `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+#### `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 
 ```dockerfile
 RUN set -xe \
@@ -443,60 +447,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:51 GMT
--	Parent Layer: `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+-	Created: Tue, 15 Mar 2016 18:25:21 GMT
+-	Parent Layer: `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:de52036e3665014e6bc2dbbeead5c5488b857d8a31e27c04ebd0910dd328e2a4`
--	v2 Content-Length: 1.7 KB (1728 bytes)
+-	v2 Blob: `sha256:afa11a770f1fe06bd92e9e48fdb5b5ecc9a60158b3eab0c6722a7ff40dd911d8`
+-	v2 Content-Length: 1.7 KB (1726 bytes)
 
-#### `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+#### `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+-	Created: Tue, 15 Mar 2016 18:25:22 GMT
+-	Parent Layer: `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+#### `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+-	Created: Tue, 15 Mar 2016 18:25:23 GMT
+-	Parent Layer: `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+#### `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:53 GMT
--	Parent Layer: `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+-	Created: Tue, 15 Mar 2016 18:25:24 GMT
+-	Parent Layer: `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3d7ef12acbeeeeffe52860a567d68f8f76684931c2d60279eeda67212fc5f6bb`
+#### `e22345b81b1d430957c8d63b9edff5e82e41435f9f74336ff0479e3429e74486`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:54 GMT
--	Parent Layer: `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+-	Created: Tue, 15 Mar 2016 18:25:25 GMT
+-	Parent Layer: `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -505,11 +509,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.3`
 
 ```console
-$ docker pull library/jetty@sha256:2a3edd5d140cdf10eb626827259aa70caedf9f248732aa346580b1ea849f89bd
+$ docker pull library/jetty@sha256:f2c0fddb7eabd4a4260d56ca4160bb1081803c63c07eac52dab5966ae5bf912b
 ```
 
--	Total Virtual Size: 319.8 MB (319797817 bytes)
--	Total v2 Content-Length: 131.6 MB (131633059 bytes)
+-	Total Virtual Size: 320.3 MB (320296200 bytes)
+-	Total v2 Content-Length: 131.9 MB (131923716 bytes)
 
 ### Layers (34)
 
@@ -555,50 +559,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -606,66 +614,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -677,131 +685,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+#### `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 
 ```dockerfile
 ENV JETTY_VERSION=9.3.7.v20160115
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:25:08 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+#### `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.7.v20160115/jetty-distribution-9.3.7.v20160115.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+#### `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:38 GMT
--	Parent Layer: `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+#### `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 
 ```dockerfile
 RUN set -xe \
@@ -818,53 +826,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:42 GMT
--	Parent Layer: `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 8.9 MB (8925361 bytes)
--	v2 Blob: `sha256:c63394d6e2d5ac861d094c083dca03c68056db452605db57025242a414663a84`
--	v2 Content-Length: 7.8 MB (7822768 bytes)
+-	v2 Blob: `sha256:b1457a83269a66adbf1481c9f9b0f91441f125d61215b3a803901dfbb202e1ad`
+-	v2 Content-Length: 7.8 MB (7822776 bytes)
 
-#### `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+#### `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:43 GMT
--	Parent Layer: `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+#### `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+-	Created: Tue, 15 Mar 2016 18:25:15 GMT
+-	Parent Layer: `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d7df74248f7176ab5719d94addfbfa77e894c5318dd11bef2c07e71c0333c68`
+-	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
 
-#### `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+#### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+-	Created: Tue, 15 Mar 2016 18:25:16 GMT
+-	Parent Layer: `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+#### `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -872,53 +880,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:47 GMT
--	Parent Layer: `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:4519fd8eca569a5d42b91b70cfea29c46d8ea0e1068cb79dd330137a1adae1fa`
--	v2 Content-Length: 1.7 KB (1702 bytes)
+-	v2 Blob: `sha256:f7962995018864b704e9e9bd3b5547b98d58ac35154a517acc44312be25dfad5`
+-	v2 Content-Length: 1.7 KB (1704 bytes)
 
-#### `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+#### `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:48 GMT
--	Parent Layer: `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+#### `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+-	Created: Tue, 15 Mar 2016 18:25:19 GMT
+-	Parent Layer: `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+#### `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+-	Created: Tue, 15 Mar 2016 18:25:20 GMT
+-	Parent Layer: `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+#### `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 
 ```dockerfile
 RUN set -xe \
@@ -926,60 +934,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:51 GMT
--	Parent Layer: `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+-	Created: Tue, 15 Mar 2016 18:25:21 GMT
+-	Parent Layer: `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:de52036e3665014e6bc2dbbeead5c5488b857d8a31e27c04ebd0910dd328e2a4`
--	v2 Content-Length: 1.7 KB (1728 bytes)
+-	v2 Blob: `sha256:afa11a770f1fe06bd92e9e48fdb5b5ecc9a60158b3eab0c6722a7ff40dd911d8`
+-	v2 Content-Length: 1.7 KB (1726 bytes)
 
-#### `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+#### `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+-	Created: Tue, 15 Mar 2016 18:25:22 GMT
+-	Parent Layer: `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+#### `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+-	Created: Tue, 15 Mar 2016 18:25:23 GMT
+-	Parent Layer: `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+#### `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:53 GMT
--	Parent Layer: `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+-	Created: Tue, 15 Mar 2016 18:25:24 GMT
+-	Parent Layer: `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3d7ef12acbeeeeffe52860a567d68f8f76684931c2d60279eeda67212fc5f6bb`
+#### `e22345b81b1d430957c8d63b9edff5e82e41435f9f74336ff0479e3429e74486`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:54 GMT
--	Parent Layer: `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+-	Created: Tue, 15 Mar 2016 18:25:25 GMT
+-	Parent Layer: `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -988,11 +996,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9`
 
 ```console
-$ docker pull library/jetty@sha256:58a2b7ca4e1a8ce7fb5623abc07ec682dc932b0f0c80bb69c18089eed16dec63
+$ docker pull library/jetty@sha256:4672185d24d2e6da2d152e0373aaed7b68eb0be16d9553ac586b5bb5baef10ac
 ```
 
--	Total Virtual Size: 319.8 MB (319797817 bytes)
--	Total v2 Content-Length: 131.6 MB (131633059 bytes)
+-	Total Virtual Size: 320.3 MB (320296200 bytes)
+-	Total v2 Content-Length: 131.9 MB (131923716 bytes)
 
 ### Layers (34)
 
@@ -1038,50 +1046,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -1089,66 +1101,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -1160,131 +1172,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+#### `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 
 ```dockerfile
 ENV JETTY_VERSION=9.3.7.v20160115
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:25:08 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+#### `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.7.v20160115/jetty-distribution-9.3.7.v20160115.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+#### `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:38 GMT
--	Parent Layer: `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+#### `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 
 ```dockerfile
 RUN set -xe \
@@ -1301,53 +1313,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:42 GMT
--	Parent Layer: `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 8.9 MB (8925361 bytes)
--	v2 Blob: `sha256:c63394d6e2d5ac861d094c083dca03c68056db452605db57025242a414663a84`
--	v2 Content-Length: 7.8 MB (7822768 bytes)
+-	v2 Blob: `sha256:b1457a83269a66adbf1481c9f9b0f91441f125d61215b3a803901dfbb202e1ad`
+-	v2 Content-Length: 7.8 MB (7822776 bytes)
 
-#### `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+#### `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:43 GMT
--	Parent Layer: `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+#### `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+-	Created: Tue, 15 Mar 2016 18:25:15 GMT
+-	Parent Layer: `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d7df74248f7176ab5719d94addfbfa77e894c5318dd11bef2c07e71c0333c68`
+-	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
 
-#### `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+#### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+-	Created: Tue, 15 Mar 2016 18:25:16 GMT
+-	Parent Layer: `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+#### `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -1355,53 +1367,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:47 GMT
--	Parent Layer: `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:4519fd8eca569a5d42b91b70cfea29c46d8ea0e1068cb79dd330137a1adae1fa`
--	v2 Content-Length: 1.7 KB (1702 bytes)
+-	v2 Blob: `sha256:f7962995018864b704e9e9bd3b5547b98d58ac35154a517acc44312be25dfad5`
+-	v2 Content-Length: 1.7 KB (1704 bytes)
 
-#### `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+#### `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:48 GMT
--	Parent Layer: `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+#### `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+-	Created: Tue, 15 Mar 2016 18:25:19 GMT
+-	Parent Layer: `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+#### `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+-	Created: Tue, 15 Mar 2016 18:25:20 GMT
+-	Parent Layer: `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+#### `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 
 ```dockerfile
 RUN set -xe \
@@ -1409,60 +1421,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:51 GMT
--	Parent Layer: `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+-	Created: Tue, 15 Mar 2016 18:25:21 GMT
+-	Parent Layer: `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:de52036e3665014e6bc2dbbeead5c5488b857d8a31e27c04ebd0910dd328e2a4`
--	v2 Content-Length: 1.7 KB (1728 bytes)
+-	v2 Blob: `sha256:afa11a770f1fe06bd92e9e48fdb5b5ecc9a60158b3eab0c6722a7ff40dd911d8`
+-	v2 Content-Length: 1.7 KB (1726 bytes)
 
-#### `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+#### `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+-	Created: Tue, 15 Mar 2016 18:25:22 GMT
+-	Parent Layer: `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+#### `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+-	Created: Tue, 15 Mar 2016 18:25:23 GMT
+-	Parent Layer: `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+#### `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:53 GMT
--	Parent Layer: `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+-	Created: Tue, 15 Mar 2016 18:25:24 GMT
+-	Parent Layer: `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3d7ef12acbeeeeffe52860a567d68f8f76684931c2d60279eeda67212fc5f6bb`
+#### `e22345b81b1d430957c8d63b9edff5e82e41435f9f74336ff0479e3429e74486`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:54 GMT
--	Parent Layer: `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+-	Created: Tue, 15 Mar 2016 18:25:25 GMT
+-	Parent Layer: `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1471,11 +1483,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.3.7-jre8`
 
 ```console
-$ docker pull library/jetty@sha256:4afc5cb75f7600cde53e018ae929d0e6458284dc20bd2b23f86880f44221ab40
+$ docker pull library/jetty@sha256:bd0cc0ac9cb62b3fef1514e5d79f5e79dbeda37dc441b72fdda6a94257ec074e
 ```
 
--	Total Virtual Size: 319.8 MB (319797817 bytes)
--	Total v2 Content-Length: 131.6 MB (131633059 bytes)
+-	Total Virtual Size: 320.3 MB (320296200 bytes)
+-	Total v2 Content-Length: 131.9 MB (131923716 bytes)
 
 ### Layers (34)
 
@@ -1521,50 +1533,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -1572,66 +1588,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -1643,131 +1659,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+#### `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 
 ```dockerfile
 ENV JETTY_VERSION=9.3.7.v20160115
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:25:08 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+#### `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.7.v20160115/jetty-distribution-9.3.7.v20160115.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+#### `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:38 GMT
--	Parent Layer: `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+#### `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 
 ```dockerfile
 RUN set -xe \
@@ -1784,53 +1800,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:42 GMT
--	Parent Layer: `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 8.9 MB (8925361 bytes)
--	v2 Blob: `sha256:c63394d6e2d5ac861d094c083dca03c68056db452605db57025242a414663a84`
--	v2 Content-Length: 7.8 MB (7822768 bytes)
+-	v2 Blob: `sha256:b1457a83269a66adbf1481c9f9b0f91441f125d61215b3a803901dfbb202e1ad`
+-	v2 Content-Length: 7.8 MB (7822776 bytes)
 
-#### `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+#### `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:43 GMT
--	Parent Layer: `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+#### `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+-	Created: Tue, 15 Mar 2016 18:25:15 GMT
+-	Parent Layer: `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d7df74248f7176ab5719d94addfbfa77e894c5318dd11bef2c07e71c0333c68`
+-	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
 
-#### `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+#### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+-	Created: Tue, 15 Mar 2016 18:25:16 GMT
+-	Parent Layer: `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+#### `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -1838,53 +1854,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:47 GMT
--	Parent Layer: `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:4519fd8eca569a5d42b91b70cfea29c46d8ea0e1068cb79dd330137a1adae1fa`
--	v2 Content-Length: 1.7 KB (1702 bytes)
+-	v2 Blob: `sha256:f7962995018864b704e9e9bd3b5547b98d58ac35154a517acc44312be25dfad5`
+-	v2 Content-Length: 1.7 KB (1704 bytes)
 
-#### `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+#### `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:48 GMT
--	Parent Layer: `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+#### `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+-	Created: Tue, 15 Mar 2016 18:25:19 GMT
+-	Parent Layer: `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+#### `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+-	Created: Tue, 15 Mar 2016 18:25:20 GMT
+-	Parent Layer: `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+#### `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 
 ```dockerfile
 RUN set -xe \
@@ -1892,60 +1908,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:51 GMT
--	Parent Layer: `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+-	Created: Tue, 15 Mar 2016 18:25:21 GMT
+-	Parent Layer: `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:de52036e3665014e6bc2dbbeead5c5488b857d8a31e27c04ebd0910dd328e2a4`
--	v2 Content-Length: 1.7 KB (1728 bytes)
+-	v2 Blob: `sha256:afa11a770f1fe06bd92e9e48fdb5b5ecc9a60158b3eab0c6722a7ff40dd911d8`
+-	v2 Content-Length: 1.7 KB (1726 bytes)
 
-#### `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+#### `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+-	Created: Tue, 15 Mar 2016 18:25:22 GMT
+-	Parent Layer: `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+#### `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+-	Created: Tue, 15 Mar 2016 18:25:23 GMT
+-	Parent Layer: `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+#### `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:53 GMT
--	Parent Layer: `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+-	Created: Tue, 15 Mar 2016 18:25:24 GMT
+-	Parent Layer: `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3d7ef12acbeeeeffe52860a567d68f8f76684931c2d60279eeda67212fc5f6bb`
+#### `e22345b81b1d430957c8d63b9edff5e82e41435f9f74336ff0479e3429e74486`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:54 GMT
--	Parent Layer: `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+-	Created: Tue, 15 Mar 2016 18:25:25 GMT
+-	Parent Layer: `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -1954,11 +1970,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.3-jre8`
 
 ```console
-$ docker pull library/jetty@sha256:b668d3c3229d3e522139f7dc192bdb9121d43076c751a2d4cf8840b451f5e502
+$ docker pull library/jetty@sha256:fe5988720ff0d5a6649a70aa52c34ffbe2d8794dd1639eacc74c01ff71a764a2
 ```
 
--	Total Virtual Size: 319.8 MB (319797817 bytes)
--	Total v2 Content-Length: 131.6 MB (131633059 bytes)
+-	Total Virtual Size: 320.3 MB (320296200 bytes)
+-	Total v2 Content-Length: 131.9 MB (131923716 bytes)
 
 ### Layers (34)
 
@@ -2004,50 +2020,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -2055,66 +2075,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -2126,131 +2146,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+#### `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 
 ```dockerfile
 ENV JETTY_VERSION=9.3.7.v20160115
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:25:08 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+#### `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.7.v20160115/jetty-distribution-9.3.7.v20160115.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+#### `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:38 GMT
--	Parent Layer: `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+#### `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 
 ```dockerfile
 RUN set -xe \
@@ -2267,53 +2287,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:42 GMT
--	Parent Layer: `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 8.9 MB (8925361 bytes)
--	v2 Blob: `sha256:c63394d6e2d5ac861d094c083dca03c68056db452605db57025242a414663a84`
--	v2 Content-Length: 7.8 MB (7822768 bytes)
+-	v2 Blob: `sha256:b1457a83269a66adbf1481c9f9b0f91441f125d61215b3a803901dfbb202e1ad`
+-	v2 Content-Length: 7.8 MB (7822776 bytes)
 
-#### `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+#### `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:43 GMT
--	Parent Layer: `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+#### `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+-	Created: Tue, 15 Mar 2016 18:25:15 GMT
+-	Parent Layer: `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d7df74248f7176ab5719d94addfbfa77e894c5318dd11bef2c07e71c0333c68`
+-	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
 
-#### `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+#### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+-	Created: Tue, 15 Mar 2016 18:25:16 GMT
+-	Parent Layer: `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+#### `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -2321,53 +2341,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:47 GMT
--	Parent Layer: `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:4519fd8eca569a5d42b91b70cfea29c46d8ea0e1068cb79dd330137a1adae1fa`
--	v2 Content-Length: 1.7 KB (1702 bytes)
+-	v2 Blob: `sha256:f7962995018864b704e9e9bd3b5547b98d58ac35154a517acc44312be25dfad5`
+-	v2 Content-Length: 1.7 KB (1704 bytes)
 
-#### `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+#### `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:48 GMT
--	Parent Layer: `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+#### `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+-	Created: Tue, 15 Mar 2016 18:25:19 GMT
+-	Parent Layer: `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+#### `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+-	Created: Tue, 15 Mar 2016 18:25:20 GMT
+-	Parent Layer: `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+#### `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 
 ```dockerfile
 RUN set -xe \
@@ -2375,60 +2395,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:51 GMT
--	Parent Layer: `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+-	Created: Tue, 15 Mar 2016 18:25:21 GMT
+-	Parent Layer: `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:de52036e3665014e6bc2dbbeead5c5488b857d8a31e27c04ebd0910dd328e2a4`
--	v2 Content-Length: 1.7 KB (1728 bytes)
+-	v2 Blob: `sha256:afa11a770f1fe06bd92e9e48fdb5b5ecc9a60158b3eab0c6722a7ff40dd911d8`
+-	v2 Content-Length: 1.7 KB (1726 bytes)
 
-#### `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+#### `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+-	Created: Tue, 15 Mar 2016 18:25:22 GMT
+-	Parent Layer: `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+#### `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+-	Created: Tue, 15 Mar 2016 18:25:23 GMT
+-	Parent Layer: `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+#### `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:53 GMT
--	Parent Layer: `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+-	Created: Tue, 15 Mar 2016 18:25:24 GMT
+-	Parent Layer: `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3d7ef12acbeeeeffe52860a567d68f8f76684931c2d60279eeda67212fc5f6bb`
+#### `e22345b81b1d430957c8d63b9edff5e82e41435f9f74336ff0479e3429e74486`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:54 GMT
--	Parent Layer: `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+-	Created: Tue, 15 Mar 2016 18:25:25 GMT
+-	Parent Layer: `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2437,11 +2457,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9-jre8`
 
 ```console
-$ docker pull library/jetty@sha256:baa8c9a1b1b72a28a7ad9eaf51679997a0b1a6ce5ce55db265fa40bda4d23ee2
+$ docker pull library/jetty@sha256:6cdf141ef3cd720710df3f72faaf7b2785a3ff3cd7ca82355d205ce7e99c9805
 ```
 
--	Total Virtual Size: 319.8 MB (319797817 bytes)
--	Total v2 Content-Length: 131.6 MB (131633059 bytes)
+-	Total Virtual Size: 320.3 MB (320296200 bytes)
+-	Total v2 Content-Length: 131.9 MB (131923716 bytes)
 
 ### Layers (34)
 
@@ -2487,50 +2507,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -2538,66 +2562,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -2609,131 +2633,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+#### `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 
 ```dockerfile
 ENV JETTY_VERSION=9.3.7.v20160115
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:25:08 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+#### `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.7.v20160115/jetty-distribution-9.3.7.v20160115.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+#### `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:38 GMT
--	Parent Layer: `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+#### `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 
 ```dockerfile
 RUN set -xe \
@@ -2750,53 +2774,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:42 GMT
--	Parent Layer: `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 8.9 MB (8925361 bytes)
--	v2 Blob: `sha256:c63394d6e2d5ac861d094c083dca03c68056db452605db57025242a414663a84`
--	v2 Content-Length: 7.8 MB (7822768 bytes)
+-	v2 Blob: `sha256:b1457a83269a66adbf1481c9f9b0f91441f125d61215b3a803901dfbb202e1ad`
+-	v2 Content-Length: 7.8 MB (7822776 bytes)
 
-#### `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+#### `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:43 GMT
--	Parent Layer: `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+#### `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+-	Created: Tue, 15 Mar 2016 18:25:15 GMT
+-	Parent Layer: `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d7df74248f7176ab5719d94addfbfa77e894c5318dd11bef2c07e71c0333c68`
+-	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
 
-#### `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+#### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+-	Created: Tue, 15 Mar 2016 18:25:16 GMT
+-	Parent Layer: `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+#### `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -2804,53 +2828,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:47 GMT
--	Parent Layer: `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:4519fd8eca569a5d42b91b70cfea29c46d8ea0e1068cb79dd330137a1adae1fa`
--	v2 Content-Length: 1.7 KB (1702 bytes)
+-	v2 Blob: `sha256:f7962995018864b704e9e9bd3b5547b98d58ac35154a517acc44312be25dfad5`
+-	v2 Content-Length: 1.7 KB (1704 bytes)
 
-#### `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+#### `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:48 GMT
--	Parent Layer: `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+#### `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+-	Created: Tue, 15 Mar 2016 18:25:19 GMT
+-	Parent Layer: `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+#### `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+-	Created: Tue, 15 Mar 2016 18:25:20 GMT
+-	Parent Layer: `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+#### `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 
 ```dockerfile
 RUN set -xe \
@@ -2858,60 +2882,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:51 GMT
--	Parent Layer: `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+-	Created: Tue, 15 Mar 2016 18:25:21 GMT
+-	Parent Layer: `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:de52036e3665014e6bc2dbbeead5c5488b857d8a31e27c04ebd0910dd328e2a4`
--	v2 Content-Length: 1.7 KB (1728 bytes)
+-	v2 Blob: `sha256:afa11a770f1fe06bd92e9e48fdb5b5ecc9a60158b3eab0c6722a7ff40dd911d8`
+-	v2 Content-Length: 1.7 KB (1726 bytes)
 
-#### `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+#### `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+-	Created: Tue, 15 Mar 2016 18:25:22 GMT
+-	Parent Layer: `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+#### `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+-	Created: Tue, 15 Mar 2016 18:25:23 GMT
+-	Parent Layer: `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+#### `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:53 GMT
--	Parent Layer: `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+-	Created: Tue, 15 Mar 2016 18:25:24 GMT
+-	Parent Layer: `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3d7ef12acbeeeeffe52860a567d68f8f76684931c2d60279eeda67212fc5f6bb`
+#### `e22345b81b1d430957c8d63b9edff5e82e41435f9f74336ff0479e3429e74486`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:54 GMT
--	Parent Layer: `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+-	Created: Tue, 15 Mar 2016 18:25:25 GMT
+-	Parent Layer: `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -2920,11 +2944,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:latest`
 
 ```console
-$ docker pull library/jetty@sha256:2296186ae0c54c5515ea001a25bcdb449e58d54ace949ad0de635e9ae328d145
+$ docker pull library/jetty@sha256:7a6b36b7e2fd3cdb00367d81ca3918e7b3ab8df79d6c1fbe8ff3d6fb9e615ad2
 ```
 
--	Total Virtual Size: 319.8 MB (319797817 bytes)
--	Total v2 Content-Length: 131.6 MB (131633059 bytes)
+-	Total Virtual Size: 320.3 MB (320296200 bytes)
+-	Total v2 Content-Length: 131.9 MB (131923716 bytes)
 
 ### Layers (34)
 
@@ -2970,50 +2994,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -3021,66 +3049,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -3092,131 +3120,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+#### `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 
 ```dockerfile
 ENV JETTY_VERSION=9.3.7.v20160115
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:25:08 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+#### `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.7.v20160115/jetty-distribution-9.3.7.v20160115.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+#### `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:38 GMT
--	Parent Layer: `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+#### `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 
 ```dockerfile
 RUN set -xe \
@@ -3233,53 +3261,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:42 GMT
--	Parent Layer: `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 8.9 MB (8925361 bytes)
--	v2 Blob: `sha256:c63394d6e2d5ac861d094c083dca03c68056db452605db57025242a414663a84`
--	v2 Content-Length: 7.8 MB (7822768 bytes)
+-	v2 Blob: `sha256:b1457a83269a66adbf1481c9f9b0f91441f125d61215b3a803901dfbb202e1ad`
+-	v2 Content-Length: 7.8 MB (7822776 bytes)
 
-#### `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+#### `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:43 GMT
--	Parent Layer: `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+#### `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+-	Created: Tue, 15 Mar 2016 18:25:15 GMT
+-	Parent Layer: `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d7df74248f7176ab5719d94addfbfa77e894c5318dd11bef2c07e71c0333c68`
+-	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
 
-#### `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+#### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+-	Created: Tue, 15 Mar 2016 18:25:16 GMT
+-	Parent Layer: `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+#### `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -3287,53 +3315,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:47 GMT
--	Parent Layer: `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:4519fd8eca569a5d42b91b70cfea29c46d8ea0e1068cb79dd330137a1adae1fa`
--	v2 Content-Length: 1.7 KB (1702 bytes)
+-	v2 Blob: `sha256:f7962995018864b704e9e9bd3b5547b98d58ac35154a517acc44312be25dfad5`
+-	v2 Content-Length: 1.7 KB (1704 bytes)
 
-#### `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+#### `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:48 GMT
--	Parent Layer: `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+#### `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+-	Created: Tue, 15 Mar 2016 18:25:19 GMT
+-	Parent Layer: `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+#### `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+-	Created: Tue, 15 Mar 2016 18:25:20 GMT
+-	Parent Layer: `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+#### `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 
 ```dockerfile
 RUN set -xe \
@@ -3341,60 +3369,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:51 GMT
--	Parent Layer: `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+-	Created: Tue, 15 Mar 2016 18:25:21 GMT
+-	Parent Layer: `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:de52036e3665014e6bc2dbbeead5c5488b857d8a31e27c04ebd0910dd328e2a4`
--	v2 Content-Length: 1.7 KB (1728 bytes)
+-	v2 Blob: `sha256:afa11a770f1fe06bd92e9e48fdb5b5ecc9a60158b3eab0c6722a7ff40dd911d8`
+-	v2 Content-Length: 1.7 KB (1726 bytes)
 
-#### `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+#### `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+-	Created: Tue, 15 Mar 2016 18:25:22 GMT
+-	Parent Layer: `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+#### `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+-	Created: Tue, 15 Mar 2016 18:25:23 GMT
+-	Parent Layer: `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+#### `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:53 GMT
--	Parent Layer: `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+-	Created: Tue, 15 Mar 2016 18:25:24 GMT
+-	Parent Layer: `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3d7ef12acbeeeeffe52860a567d68f8f76684931c2d60279eeda67212fc5f6bb`
+#### `e22345b81b1d430957c8d63b9edff5e82e41435f9f74336ff0479e3429e74486`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:54 GMT
--	Parent Layer: `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+-	Created: Tue, 15 Mar 2016 18:25:25 GMT
+-	Parent Layer: `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3403,11 +3431,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:jre8`
 
 ```console
-$ docker pull library/jetty@sha256:5b9d0302053e62c096db92f0f9203ea22aba32598c8c943dba0bccdf44a95d28
+$ docker pull library/jetty@sha256:a2775ef930d20052647da9311174d7caffa54a18d8107fa48fb8a616db36c313
 ```
 
--	Total Virtual Size: 319.8 MB (319797817 bytes)
--	Total v2 Content-Length: 131.6 MB (131633059 bytes)
+-	Total Virtual Size: 320.3 MB (320296200 bytes)
+-	Total v2 Content-Length: 131.9 MB (131923716 bytes)
 
 ### Layers (34)
 
@@ -3453,50 +3481,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -3504,66 +3536,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -3575,131 +3607,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+#### `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 
 ```dockerfile
 ENV JETTY_VERSION=9.3.7.v20160115
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:25:08 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+#### `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.7.v20160115/jetty-distribution-9.3.7.v20160115.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:37 GMT
--	Parent Layer: `3a4f641912924e3f2eafe6011ce272e06ec3b2e3b570804b7bfb4f2a6af50be1`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `201e5d806364bcbab0baade9b39e7519e2371f67955d16338bdd96fe58a9a5e6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+#### `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:38 GMT
--	Parent Layer: `53a8f81474b8666fa8cbc71d99955285fbe9521d9e4e659bf8cd2b78c57d7b56`
+-	Created: Tue, 15 Mar 2016 18:25:09 GMT
+-	Parent Layer: `91fdca5cc3e3ced89aa8938e7ca0c27cf8af829c74eae0053d9ee18b069c93ab`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+#### `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 
 ```dockerfile
 RUN set -xe \
@@ -3716,53 +3748,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:42 GMT
--	Parent Layer: `6d0944eb3ebea4c2eaab91a1163728743cdef6c9fb519f878d1895e5baadf40b`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `3d871d274a4c1e5b929447a82b6f45cc978a7373763781f40ecfe3a02e7f41e0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 8.9 MB (8925361 bytes)
--	v2 Blob: `sha256:c63394d6e2d5ac861d094c083dca03c68056db452605db57025242a414663a84`
--	v2 Content-Length: 7.8 MB (7822768 bytes)
+-	v2 Blob: `sha256:b1457a83269a66adbf1481c9f9b0f91441f125d61215b3a803901dfbb202e1ad`
+-	v2 Content-Length: 7.8 MB (7822776 bytes)
 
-#### `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+#### `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:43 GMT
--	Parent Layer: `e9ef11e1572fb2c95514bcc691dc7596bd5a46b4de75b47a5d29ae25032560a7`
+-	Created: Tue, 15 Mar 2016 18:25:13 GMT
+-	Parent Layer: `9dd8ab30c70fc231f1b4f56e52c5d5a82a4c0faadd291a054f687177876514fa`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+#### `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `e3f38ec3b351e190b52fd1c3918fb489711ef98e305d6aafcb8b0ef1ec65a4e1`
+-	Created: Tue, 15 Mar 2016 18:25:15 GMT
+-	Parent Layer: `98519dc8f0e715d526d4758b4f1945622e7859e96d29be67f891cdb190c9a84b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d7df74248f7176ab5719d94addfbfa77e894c5318dd11bef2c07e71c0333c68`
+-	v2 Blob: `sha256:76f194afd3f6493fd2ce0c4e508533c83a0995babe3d7b8d9ae4070f13fc9104`
 -	v2 Content-Length: 130.0 B
 
-#### `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+#### `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:45 GMT
--	Parent Layer: `d1f0301ffabba2a7638f7ec7c01afb39b349edb2807839b34c9745c2cc466dc2`
+-	Created: Tue, 15 Mar 2016 18:25:16 GMT
+-	Parent Layer: `1fbe76a54978929e43fa400db9409c677db003e965913bf2978b16cba826db55`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+#### `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -3770,53 +3802,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:47 GMT
--	Parent Layer: `3763f8de89e9dfc31fddf261cadba71db42016eea728c33f1365580951298b24`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `834e97e3a47e39784b90466dc1efe9fb072998234c86881e3ece2e2aa14637c9`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:4519fd8eca569a5d42b91b70cfea29c46d8ea0e1068cb79dd330137a1adae1fa`
--	v2 Content-Length: 1.7 KB (1702 bytes)
+-	v2 Blob: `sha256:f7962995018864b704e9e9bd3b5547b98d58ac35154a517acc44312be25dfad5`
+-	v2 Content-Length: 1.7 KB (1704 bytes)
 
-#### `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+#### `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:48 GMT
--	Parent Layer: `2115464d3fd4547e09c9136c10c553ae4096a6769e1777a62a55e59e259d1fd5`
+-	Created: Tue, 15 Mar 2016 18:25:18 GMT
+-	Parent Layer: `d24600c237572250b71ac5c5f1f0f7d8c594c9b9cc3c10295fd4359494b4f7b8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+#### `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `ea6d88138e44ce87b2fa4aa20ca9c7d9b04ddf7462c905145e1b48f1c60eaed2`
+-	Created: Tue, 15 Mar 2016 18:25:19 GMT
+-	Parent Layer: `a3b3f85594a62598ae3d8ccb3be4e38d039d91f3d78fa0ebc3b85e2990f24e66`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+#### `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:49 GMT
--	Parent Layer: `3ff6409ba5bad6947cb5158d4b1f286c78ec36bb51285c88c73a9f0e4e0867b8`
+-	Created: Tue, 15 Mar 2016 18:25:20 GMT
+-	Parent Layer: `cccfb502e7606f197f0d9490a2adcb93eb4d376e26f844ad15109ac28451ddc3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+#### `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 
 ```dockerfile
 RUN set -xe \
@@ -3824,60 +3856,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:51 GMT
--	Parent Layer: `30b05f1de5a84fe578eb0b62bcf53431c9e81617646933516889df713a8eaea4`
+-	Created: Tue, 15 Mar 2016 18:25:21 GMT
+-	Parent Layer: `4bce5d9d7fdd1c26140dfa056c56f2da7d4414e45486a58d26ab90a0ccb25373`
 -	Docker Version: 1.9.1
 -	Virtual Size: 3.7 KB (3661 bytes)
--	v2 Blob: `sha256:de52036e3665014e6bc2dbbeead5c5488b857d8a31e27c04ebd0910dd328e2a4`
--	v2 Content-Length: 1.7 KB (1728 bytes)
+-	v2 Blob: `sha256:afa11a770f1fe06bd92e9e48fdb5b5ecc9a60158b3eab0c6722a7ff40dd911d8`
+-	v2 Content-Length: 1.7 KB (1726 bytes)
 
-#### `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+#### `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `81c2ea88b6edd8f1e31e07371c98ccf5952cddc93e15dc92b44d0d2d0f8217c3`
+-	Created: Tue, 15 Mar 2016 18:25:22 GMT
+-	Parent Layer: `a94e4589c2d7e376ffd77f78622662c5d742c8efc1e8cf8a2be8002b932cdd03`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+#### `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:52 GMT
--	Parent Layer: `fe3f8d146c61ef6b8bffef350b6c7307d306c6ddaee2b972af2d7f3d61ecd161`
+-	Created: Tue, 15 Mar 2016 18:25:23 GMT
+-	Parent Layer: `8fe1f13c713663c863ea92ac7ea6e69fc954591e783770f738052f53f22a9529`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+#### `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:53 GMT
--	Parent Layer: `e4a3771fc147d47703efcad101bf046c63d2659239a98b266f9d2e7624a40407`
+-	Created: Tue, 15 Mar 2016 18:25:24 GMT
+-	Parent Layer: `d58b1a5f7591f3cfb3c9da2e5b4cb237ca5588678f544cdac76c489ab5c04ca1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `3d7ef12acbeeeeffe52860a567d68f8f76684931c2d60279eeda67212fc5f6bb`
+#### `e22345b81b1d430957c8d63b9edff5e82e41435f9f74336ff0479e3429e74486`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:46:54 GMT
--	Parent Layer: `d46388e2c000f0b8a2f40c179447032733e55d116f04d7f9cc58090abb2af73e`
+-	Created: Tue, 15 Mar 2016 18:25:25 GMT
+-	Parent Layer: `0d4e4d62dda5dd8dbb6b98b8282c13eea67b87d97cf86d89b66865cb59e9e5cc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -3886,11 +3918,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.2.15`
 
 ```console
-$ docker pull library/jetty@sha256:ecbbfd29ee26d06c7348e380cfb97ef4a242a9409afd391c4f2901a8792f7750
+$ docker pull library/jetty@sha256:73b3f3a60160885a662aea6d39adfc57f4114e00a38ed03ee73d5164f8f418dd
 ```
 
--	Total Virtual Size: 322.1 MB (322089130 bytes)
--	Total v2 Content-Length: 133.8 MB (133794967 bytes)
+-	Total Virtual Size: 322.6 MB (322587513 bytes)
+-	Total v2 Content-Length: 134.1 MB (134085626 bytes)
 
 ### Layers (34)
 
@@ -3936,50 +3968,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -3987,66 +4023,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -4058,131 +4094,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `87989a7240ce5466871a280ef174656e0212cb02b619fb1dab4bc881534aa44b`
+#### `1936d21d15e3361c5220cad583f254c31ac89cc734e15def60c1ce9dee35d3af`
 
 ```dockerfile
 ENV JETTY_VERSION=9.2.15.v20160210
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:32:05 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7953132888b6e3470d7bc1891e3232e346be3af630b78306887e450a0a046bc5`
+#### `1b853d84c1c2f37677f6fb1caf35155a1b5b5ad0d4b02a85b06807ca6774e0f3`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.15.v20160210/jetty-distribution-9.2.15.v20160210.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:37 GMT
--	Parent Layer: `87989a7240ce5466871a280ef174656e0212cb02b619fb1dab4bc881534aa44b`
+-	Created: Tue, 15 Mar 2016 18:32:06 GMT
+-	Parent Layer: `1936d21d15e3361c5220cad583f254c31ac89cc734e15def60c1ce9dee35d3af`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `285185e0b7f0336b214f053cf40cb3477cdacd46a988d4eb9c7af3933121ca20`
+#### `4880dec23f2b26c107ce511654ae01ee84f5b1d3b2ba9ba477ee1f06fe108df5`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:38 GMT
--	Parent Layer: `7953132888b6e3470d7bc1891e3232e346be3af630b78306887e450a0a046bc5`
+-	Created: Tue, 15 Mar 2016 18:32:06 GMT
+-	Parent Layer: `1b853d84c1c2f37677f6fb1caf35155a1b5b5ad0d4b02a85b06807ca6774e0f3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `8a585db4f18dee730e87fa4a8f089b2d0a5da42a68f236325803d729fa114a50`
+#### `840041f60923975ee355f8b635785eac7576f3ebeeddfdfab19531da9ad979d8`
 
 ```dockerfile
 RUN set -xe \
@@ -4199,53 +4235,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:41 GMT
--	Parent Layer: `285185e0b7f0336b214f053cf40cb3477cdacd46a988d4eb9c7af3933121ca20`
+-	Created: Tue, 15 Mar 2016 18:32:10 GMT
+-	Parent Layer: `4880dec23f2b26c107ce511654ae01ee84f5b1d3b2ba9ba477ee1f06fe108df5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.2 MB (11218224 bytes)
--	v2 Blob: `sha256:7e7e1d692cb0d39722134baf338a546ec106c14a044af302338cc94ce24a0cbf`
--	v2 Content-Length: 10.0 MB (9984942 bytes)
+-	v2 Blob: `sha256:449a23555a20bb42b37a69696b8f8278e0e10cb4f5e056d83dee65e625ace36a`
+-	v2 Content-Length: 10.0 MB (9984947 bytes)
 
-#### `cbb2ce99bbd912248719835d2b6d7499cceb865f314ae9fc8b7445dd0b73b9f9`
+#### `0d4fbc6e83485366ba1ed602c5d93a4efde1142e6f11df08c0057f702fd0b00d`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:42 GMT
--	Parent Layer: `8a585db4f18dee730e87fa4a8f089b2d0a5da42a68f236325803d729fa114a50`
+-	Created: Tue, 15 Mar 2016 18:32:11 GMT
+-	Parent Layer: `840041f60923975ee355f8b635785eac7576f3ebeeddfdfab19531da9ad979d8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b4a6f5d2b221b1fada3d4e610974f9f0eb0ba974da317fd694a42bbd09e9285d`
+#### `363fca6118de24ea7fae8e1be05c9d22d5902a611c217cc136c5ce9ec219bf1a`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:44 GMT
--	Parent Layer: `cbb2ce99bbd912248719835d2b6d7499cceb865f314ae9fc8b7445dd0b73b9f9`
+-	Created: Tue, 15 Mar 2016 18:32:12 GMT
+-	Parent Layer: `0d4fbc6e83485366ba1ed602c5d93a4efde1142e6f11df08c0057f702fd0b00d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d62161a5d6ca4a70ef90e4ecf0ff9d3b249be573c7068833ad02b697839f08f`
--	v2 Content-Length: 131.0 B
+-	v2 Blob: `sha256:fa2ce575d67596e7b83b1a40284cbcfcd7bef6a779c2e7f7cf703e2d86f5a1fd`
+-	v2 Content-Length: 130.0 B
 
-#### `5426e742a1ff0b365af4a68c5abf76c121ebad27d7987ca6147264732dc385c0`
+#### `c96dba99694f8942d73f493ddc17eeecf7de6eb1cbcea2dc22089d3657a9affc`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:44 GMT
--	Parent Layer: `b4a6f5d2b221b1fada3d4e610974f9f0eb0ba974da317fd694a42bbd09e9285d`
+-	Created: Tue, 15 Mar 2016 18:32:13 GMT
+-	Parent Layer: `363fca6118de24ea7fae8e1be05c9d22d5902a611c217cc136c5ce9ec219bf1a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `fd09730642b6f2342b0a7757fd51e95c3b481edfaf8d759165a92e3d485b02b3`
+#### `abb5412e5178ac3feaf55e1094fec530e0678a51f70568dc26072dc6e32cc749`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -4253,53 +4289,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:46 GMT
--	Parent Layer: `5426e742a1ff0b365af4a68c5abf76c121ebad27d7987ca6147264732dc385c0`
+-	Created: Tue, 15 Mar 2016 18:32:15 GMT
+-	Parent Layer: `c96dba99694f8942d73f493ddc17eeecf7de6eb1cbcea2dc22089d3657a9affc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:78c360e2cc355b4c501080f138742a85d6604bc6d7c5c02b711ad15483db7915`
+-	v2 Blob: `sha256:81270fcf0c456b480927c2971b23734a94dd74e0c5b78be8d3f2ac66e47c496b`
 -	v2 Content-Length: 1.6 KB (1574 bytes)
 
-#### `5c8759fa179b3aa44437680329648ca31855783f7ecd880545d5c81c39ebe06a`
+#### `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:47 GMT
--	Parent Layer: `fd09730642b6f2342b0a7757fd51e95c3b481edfaf8d759165a92e3d485b02b3`
+-	Created: Tue, 15 Mar 2016 18:32:16 GMT
+-	Parent Layer: `abb5412e5178ac3feaf55e1094fec530e0678a51f70568dc26072dc6e32cc749`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `1afc91470c2261fdb3078c1d86fb6a00283ecb2ea9e7ff76331480e8db9b8e40`
+#### `9184e80f96e0be90cdb1512640e87c14cb4f782dfd4402ab2634522a9daf5e4b`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:47 GMT
--	Parent Layer: `5c8759fa179b3aa44437680329648ca31855783f7ecd880545d5c81c39ebe06a`
+-	Created: Tue, 15 Mar 2016 18:32:17 GMT
+-	Parent Layer: `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `764671b036811033be049d62826876246a36d7b37cf8a0e896c069f8405c669b`
+#### `f4812fd838ef8b8fe0b62aacd6a1695f72a5a63079a7fff6e014ae862d3f0962`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:48 GMT
--	Parent Layer: `1afc91470c2261fdb3078c1d86fb6a00283ecb2ea9e7ff76331480e8db9b8e40`
+-	Created: Tue, 15 Mar 2016 18:32:17 GMT
+-	Parent Layer: `9184e80f96e0be90cdb1512640e87c14cb4f782dfd4402ab2634522a9daf5e4b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `c131df442bcb7ae7df4d941873efa3949b4a0dd2d11b5ed626518f8ecf73b840`
+#### `9fe8137002be7bbe5a4633a66a6febc14ce7c859b2ebd4a57ff8042312ca8869`
 
 ```dockerfile
 RUN set -xe \
@@ -4307,60 +4343,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:50 GMT
--	Parent Layer: `764671b036811033be049d62826876246a36d7b37cf8a0e896c069f8405c669b`
+-	Created: Tue, 15 Mar 2016 18:32:19 GMT
+-	Parent Layer: `f4812fd838ef8b8fe0b62aacd6a1695f72a5a63079a7fff6e014ae862d3f0962`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:b64bf5b49d609f2ebfebce6d3aed09068742f6401334127065cbe8c48881400d`
--	v2 Content-Length: 1.6 KB (1589 bytes)
+-	v2 Blob: `sha256:9c81c31dac0d1dafe6f893790d284811b70877579b1e2247c488ba8e2f28cc63`
+-	v2 Content-Length: 1.6 KB (1595 bytes)
 
-#### `7741189fbcc08db6db8ffb29f5fd2b3fd8533122674537f31438c9fd3e97aa32`
+#### `f72468aa2bdf84e6198f3ad7194a78d5590410d59b7b4d8701e22fa7559d285c`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:50 GMT
--	Parent Layer: `c131df442bcb7ae7df4d941873efa3949b4a0dd2d11b5ed626518f8ecf73b840`
+-	Created: Tue, 15 Mar 2016 18:32:20 GMT
+-	Parent Layer: `9fe8137002be7bbe5a4633a66a6febc14ce7c859b2ebd4a57ff8042312ca8869`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `442ea239356448a1661ae498e19bc159013bff9c9973ddfc89663406527e5f8b`
+#### `10ae4304c8fcf0bcaab75b3ac6ccddba550b0af6610fb2f6fdc7d1a66c5261ec`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:51 GMT
--	Parent Layer: `7741189fbcc08db6db8ffb29f5fd2b3fd8533122674537f31438c9fd3e97aa32`
+-	Created: Tue, 15 Mar 2016 18:32:20 GMT
+-	Parent Layer: `f72468aa2bdf84e6198f3ad7194a78d5590410d59b7b4d8701e22fa7559d285c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `597a0d75f1ca60f4f5310f8b8d150367f6f056b7d78f9fcc90439cb8b383d5ce`
+#### `70769257e95701b5afbf971d0eb3b471136ab0942a9d3bfa5593d348454994a3`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:52 GMT
--	Parent Layer: `442ea239356448a1661ae498e19bc159013bff9c9973ddfc89663406527e5f8b`
+-	Created: Tue, 15 Mar 2016 18:32:21 GMT
+-	Parent Layer: `10ae4304c8fcf0bcaab75b3ac6ccddba550b0af6610fb2f6fdc7d1a66c5261ec`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6c47c56701b7be8463739a28bf79c3efd3fd252a3a058b99000365363999875f`
+#### `d2e0c2ff56f6254a78c65999bc638a0c05f656db2889f6a7a6787e9735549973`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:52 GMT
--	Parent Layer: `597a0d75f1ca60f4f5310f8b8d150367f6f056b7d78f9fcc90439cb8b383d5ce`
+-	Created: Tue, 15 Mar 2016 18:32:22 GMT
+-	Parent Layer: `70769257e95701b5afbf971d0eb3b471136ab0942a9d3bfa5593d348454994a3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4369,11 +4405,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.2`
 
 ```console
-$ docker pull library/jetty@sha256:bce34e7edc8f7ec7fc4877018d62c7858c0f4af84ac75293c12790bbfa30306b
+$ docker pull library/jetty@sha256:3fd2b52d5bb311816c1ae16253bd7fe7df036b7e0b4e2424bf2f878c0d240f02
 ```
 
--	Total Virtual Size: 322.1 MB (322089130 bytes)
--	Total v2 Content-Length: 133.8 MB (133794967 bytes)
+-	Total Virtual Size: 322.6 MB (322587513 bytes)
+-	Total v2 Content-Length: 134.1 MB (134085626 bytes)
 
 ### Layers (34)
 
@@ -4419,50 +4455,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -4470,66 +4510,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -4541,131 +4581,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `87989a7240ce5466871a280ef174656e0212cb02b619fb1dab4bc881534aa44b`
+#### `1936d21d15e3361c5220cad583f254c31ac89cc734e15def60c1ce9dee35d3af`
 
 ```dockerfile
 ENV JETTY_VERSION=9.2.15.v20160210
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:32:05 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7953132888b6e3470d7bc1891e3232e346be3af630b78306887e450a0a046bc5`
+#### `1b853d84c1c2f37677f6fb1caf35155a1b5b5ad0d4b02a85b06807ca6774e0f3`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.15.v20160210/jetty-distribution-9.2.15.v20160210.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:37 GMT
--	Parent Layer: `87989a7240ce5466871a280ef174656e0212cb02b619fb1dab4bc881534aa44b`
+-	Created: Tue, 15 Mar 2016 18:32:06 GMT
+-	Parent Layer: `1936d21d15e3361c5220cad583f254c31ac89cc734e15def60c1ce9dee35d3af`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `285185e0b7f0336b214f053cf40cb3477cdacd46a988d4eb9c7af3933121ca20`
+#### `4880dec23f2b26c107ce511654ae01ee84f5b1d3b2ba9ba477ee1f06fe108df5`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:38 GMT
--	Parent Layer: `7953132888b6e3470d7bc1891e3232e346be3af630b78306887e450a0a046bc5`
+-	Created: Tue, 15 Mar 2016 18:32:06 GMT
+-	Parent Layer: `1b853d84c1c2f37677f6fb1caf35155a1b5b5ad0d4b02a85b06807ca6774e0f3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `8a585db4f18dee730e87fa4a8f089b2d0a5da42a68f236325803d729fa114a50`
+#### `840041f60923975ee355f8b635785eac7576f3ebeeddfdfab19531da9ad979d8`
 
 ```dockerfile
 RUN set -xe \
@@ -4682,53 +4722,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:41 GMT
--	Parent Layer: `285185e0b7f0336b214f053cf40cb3477cdacd46a988d4eb9c7af3933121ca20`
+-	Created: Tue, 15 Mar 2016 18:32:10 GMT
+-	Parent Layer: `4880dec23f2b26c107ce511654ae01ee84f5b1d3b2ba9ba477ee1f06fe108df5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.2 MB (11218224 bytes)
--	v2 Blob: `sha256:7e7e1d692cb0d39722134baf338a546ec106c14a044af302338cc94ce24a0cbf`
--	v2 Content-Length: 10.0 MB (9984942 bytes)
+-	v2 Blob: `sha256:449a23555a20bb42b37a69696b8f8278e0e10cb4f5e056d83dee65e625ace36a`
+-	v2 Content-Length: 10.0 MB (9984947 bytes)
 
-#### `cbb2ce99bbd912248719835d2b6d7499cceb865f314ae9fc8b7445dd0b73b9f9`
+#### `0d4fbc6e83485366ba1ed602c5d93a4efde1142e6f11df08c0057f702fd0b00d`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:42 GMT
--	Parent Layer: `8a585db4f18dee730e87fa4a8f089b2d0a5da42a68f236325803d729fa114a50`
+-	Created: Tue, 15 Mar 2016 18:32:11 GMT
+-	Parent Layer: `840041f60923975ee355f8b635785eac7576f3ebeeddfdfab19531da9ad979d8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b4a6f5d2b221b1fada3d4e610974f9f0eb0ba974da317fd694a42bbd09e9285d`
+#### `363fca6118de24ea7fae8e1be05c9d22d5902a611c217cc136c5ce9ec219bf1a`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:44 GMT
--	Parent Layer: `cbb2ce99bbd912248719835d2b6d7499cceb865f314ae9fc8b7445dd0b73b9f9`
+-	Created: Tue, 15 Mar 2016 18:32:12 GMT
+-	Parent Layer: `0d4fbc6e83485366ba1ed602c5d93a4efde1142e6f11df08c0057f702fd0b00d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d62161a5d6ca4a70ef90e4ecf0ff9d3b249be573c7068833ad02b697839f08f`
--	v2 Content-Length: 131.0 B
+-	v2 Blob: `sha256:fa2ce575d67596e7b83b1a40284cbcfcd7bef6a779c2e7f7cf703e2d86f5a1fd`
+-	v2 Content-Length: 130.0 B
 
-#### `5426e742a1ff0b365af4a68c5abf76c121ebad27d7987ca6147264732dc385c0`
+#### `c96dba99694f8942d73f493ddc17eeecf7de6eb1cbcea2dc22089d3657a9affc`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:44 GMT
--	Parent Layer: `b4a6f5d2b221b1fada3d4e610974f9f0eb0ba974da317fd694a42bbd09e9285d`
+-	Created: Tue, 15 Mar 2016 18:32:13 GMT
+-	Parent Layer: `363fca6118de24ea7fae8e1be05c9d22d5902a611c217cc136c5ce9ec219bf1a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `fd09730642b6f2342b0a7757fd51e95c3b481edfaf8d759165a92e3d485b02b3`
+#### `abb5412e5178ac3feaf55e1094fec530e0678a51f70568dc26072dc6e32cc749`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -4736,53 +4776,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:46 GMT
--	Parent Layer: `5426e742a1ff0b365af4a68c5abf76c121ebad27d7987ca6147264732dc385c0`
+-	Created: Tue, 15 Mar 2016 18:32:15 GMT
+-	Parent Layer: `c96dba99694f8942d73f493ddc17eeecf7de6eb1cbcea2dc22089d3657a9affc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:78c360e2cc355b4c501080f138742a85d6604bc6d7c5c02b711ad15483db7915`
+-	v2 Blob: `sha256:81270fcf0c456b480927c2971b23734a94dd74e0c5b78be8d3f2ac66e47c496b`
 -	v2 Content-Length: 1.6 KB (1574 bytes)
 
-#### `5c8759fa179b3aa44437680329648ca31855783f7ecd880545d5c81c39ebe06a`
+#### `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:47 GMT
--	Parent Layer: `fd09730642b6f2342b0a7757fd51e95c3b481edfaf8d759165a92e3d485b02b3`
+-	Created: Tue, 15 Mar 2016 18:32:16 GMT
+-	Parent Layer: `abb5412e5178ac3feaf55e1094fec530e0678a51f70568dc26072dc6e32cc749`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `1afc91470c2261fdb3078c1d86fb6a00283ecb2ea9e7ff76331480e8db9b8e40`
+#### `9184e80f96e0be90cdb1512640e87c14cb4f782dfd4402ab2634522a9daf5e4b`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:47 GMT
--	Parent Layer: `5c8759fa179b3aa44437680329648ca31855783f7ecd880545d5c81c39ebe06a`
+-	Created: Tue, 15 Mar 2016 18:32:17 GMT
+-	Parent Layer: `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `764671b036811033be049d62826876246a36d7b37cf8a0e896c069f8405c669b`
+#### `f4812fd838ef8b8fe0b62aacd6a1695f72a5a63079a7fff6e014ae862d3f0962`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:48 GMT
--	Parent Layer: `1afc91470c2261fdb3078c1d86fb6a00283ecb2ea9e7ff76331480e8db9b8e40`
+-	Created: Tue, 15 Mar 2016 18:32:17 GMT
+-	Parent Layer: `9184e80f96e0be90cdb1512640e87c14cb4f782dfd4402ab2634522a9daf5e4b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `c131df442bcb7ae7df4d941873efa3949b4a0dd2d11b5ed626518f8ecf73b840`
+#### `9fe8137002be7bbe5a4633a66a6febc14ce7c859b2ebd4a57ff8042312ca8869`
 
 ```dockerfile
 RUN set -xe \
@@ -4790,60 +4830,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:50 GMT
--	Parent Layer: `764671b036811033be049d62826876246a36d7b37cf8a0e896c069f8405c669b`
+-	Created: Tue, 15 Mar 2016 18:32:19 GMT
+-	Parent Layer: `f4812fd838ef8b8fe0b62aacd6a1695f72a5a63079a7fff6e014ae862d3f0962`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:b64bf5b49d609f2ebfebce6d3aed09068742f6401334127065cbe8c48881400d`
--	v2 Content-Length: 1.6 KB (1589 bytes)
+-	v2 Blob: `sha256:9c81c31dac0d1dafe6f893790d284811b70877579b1e2247c488ba8e2f28cc63`
+-	v2 Content-Length: 1.6 KB (1595 bytes)
 
-#### `7741189fbcc08db6db8ffb29f5fd2b3fd8533122674537f31438c9fd3e97aa32`
+#### `f72468aa2bdf84e6198f3ad7194a78d5590410d59b7b4d8701e22fa7559d285c`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:50 GMT
--	Parent Layer: `c131df442bcb7ae7df4d941873efa3949b4a0dd2d11b5ed626518f8ecf73b840`
+-	Created: Tue, 15 Mar 2016 18:32:20 GMT
+-	Parent Layer: `9fe8137002be7bbe5a4633a66a6febc14ce7c859b2ebd4a57ff8042312ca8869`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `442ea239356448a1661ae498e19bc159013bff9c9973ddfc89663406527e5f8b`
+#### `10ae4304c8fcf0bcaab75b3ac6ccddba550b0af6610fb2f6fdc7d1a66c5261ec`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:51 GMT
--	Parent Layer: `7741189fbcc08db6db8ffb29f5fd2b3fd8533122674537f31438c9fd3e97aa32`
+-	Created: Tue, 15 Mar 2016 18:32:20 GMT
+-	Parent Layer: `f72468aa2bdf84e6198f3ad7194a78d5590410d59b7b4d8701e22fa7559d285c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `597a0d75f1ca60f4f5310f8b8d150367f6f056b7d78f9fcc90439cb8b383d5ce`
+#### `70769257e95701b5afbf971d0eb3b471136ab0942a9d3bfa5593d348454994a3`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:52 GMT
--	Parent Layer: `442ea239356448a1661ae498e19bc159013bff9c9973ddfc89663406527e5f8b`
+-	Created: Tue, 15 Mar 2016 18:32:21 GMT
+-	Parent Layer: `10ae4304c8fcf0bcaab75b3ac6ccddba550b0af6610fb2f6fdc7d1a66c5261ec`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6c47c56701b7be8463739a28bf79c3efd3fd252a3a058b99000365363999875f`
+#### `d2e0c2ff56f6254a78c65999bc638a0c05f656db2889f6a7a6787e9735549973`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:52 GMT
--	Parent Layer: `597a0d75f1ca60f4f5310f8b8d150367f6f056b7d78f9fcc90439cb8b383d5ce`
+-	Created: Tue, 15 Mar 2016 18:32:22 GMT
+-	Parent Layer: `70769257e95701b5afbf971d0eb3b471136ab0942a9d3bfa5593d348454994a3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -4852,11 +4892,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.2.15-jre8`
 
 ```console
-$ docker pull library/jetty@sha256:0bbcc8b316e89efbdaa1cb3db68e196d81625f8067619571f22eddd2b02bec5f
+$ docker pull library/jetty@sha256:ff3188fe0f17ec4965843d2e44b879eb82c7b024016fc841d4e5b288054c4d95
 ```
 
--	Total Virtual Size: 322.1 MB (322089130 bytes)
--	Total v2 Content-Length: 133.8 MB (133794967 bytes)
+-	Total Virtual Size: 322.6 MB (322587513 bytes)
+-	Total v2 Content-Length: 134.1 MB (134085626 bytes)
 
 ### Layers (34)
 
@@ -4902,50 +4942,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -4953,66 +4997,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -5024,131 +5068,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `87989a7240ce5466871a280ef174656e0212cb02b619fb1dab4bc881534aa44b`
+#### `1936d21d15e3361c5220cad583f254c31ac89cc734e15def60c1ce9dee35d3af`
 
 ```dockerfile
 ENV JETTY_VERSION=9.2.15.v20160210
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:32:05 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7953132888b6e3470d7bc1891e3232e346be3af630b78306887e450a0a046bc5`
+#### `1b853d84c1c2f37677f6fb1caf35155a1b5b5ad0d4b02a85b06807ca6774e0f3`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.15.v20160210/jetty-distribution-9.2.15.v20160210.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:37 GMT
--	Parent Layer: `87989a7240ce5466871a280ef174656e0212cb02b619fb1dab4bc881534aa44b`
+-	Created: Tue, 15 Mar 2016 18:32:06 GMT
+-	Parent Layer: `1936d21d15e3361c5220cad583f254c31ac89cc734e15def60c1ce9dee35d3af`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `285185e0b7f0336b214f053cf40cb3477cdacd46a988d4eb9c7af3933121ca20`
+#### `4880dec23f2b26c107ce511654ae01ee84f5b1d3b2ba9ba477ee1f06fe108df5`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:38 GMT
--	Parent Layer: `7953132888b6e3470d7bc1891e3232e346be3af630b78306887e450a0a046bc5`
+-	Created: Tue, 15 Mar 2016 18:32:06 GMT
+-	Parent Layer: `1b853d84c1c2f37677f6fb1caf35155a1b5b5ad0d4b02a85b06807ca6774e0f3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `8a585db4f18dee730e87fa4a8f089b2d0a5da42a68f236325803d729fa114a50`
+#### `840041f60923975ee355f8b635785eac7576f3ebeeddfdfab19531da9ad979d8`
 
 ```dockerfile
 RUN set -xe \
@@ -5165,53 +5209,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:41 GMT
--	Parent Layer: `285185e0b7f0336b214f053cf40cb3477cdacd46a988d4eb9c7af3933121ca20`
+-	Created: Tue, 15 Mar 2016 18:32:10 GMT
+-	Parent Layer: `4880dec23f2b26c107ce511654ae01ee84f5b1d3b2ba9ba477ee1f06fe108df5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.2 MB (11218224 bytes)
--	v2 Blob: `sha256:7e7e1d692cb0d39722134baf338a546ec106c14a044af302338cc94ce24a0cbf`
--	v2 Content-Length: 10.0 MB (9984942 bytes)
+-	v2 Blob: `sha256:449a23555a20bb42b37a69696b8f8278e0e10cb4f5e056d83dee65e625ace36a`
+-	v2 Content-Length: 10.0 MB (9984947 bytes)
 
-#### `cbb2ce99bbd912248719835d2b6d7499cceb865f314ae9fc8b7445dd0b73b9f9`
+#### `0d4fbc6e83485366ba1ed602c5d93a4efde1142e6f11df08c0057f702fd0b00d`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:42 GMT
--	Parent Layer: `8a585db4f18dee730e87fa4a8f089b2d0a5da42a68f236325803d729fa114a50`
+-	Created: Tue, 15 Mar 2016 18:32:11 GMT
+-	Parent Layer: `840041f60923975ee355f8b635785eac7576f3ebeeddfdfab19531da9ad979d8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b4a6f5d2b221b1fada3d4e610974f9f0eb0ba974da317fd694a42bbd09e9285d`
+#### `363fca6118de24ea7fae8e1be05c9d22d5902a611c217cc136c5ce9ec219bf1a`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:44 GMT
--	Parent Layer: `cbb2ce99bbd912248719835d2b6d7499cceb865f314ae9fc8b7445dd0b73b9f9`
+-	Created: Tue, 15 Mar 2016 18:32:12 GMT
+-	Parent Layer: `0d4fbc6e83485366ba1ed602c5d93a4efde1142e6f11df08c0057f702fd0b00d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d62161a5d6ca4a70ef90e4ecf0ff9d3b249be573c7068833ad02b697839f08f`
--	v2 Content-Length: 131.0 B
+-	v2 Blob: `sha256:fa2ce575d67596e7b83b1a40284cbcfcd7bef6a779c2e7f7cf703e2d86f5a1fd`
+-	v2 Content-Length: 130.0 B
 
-#### `5426e742a1ff0b365af4a68c5abf76c121ebad27d7987ca6147264732dc385c0`
+#### `c96dba99694f8942d73f493ddc17eeecf7de6eb1cbcea2dc22089d3657a9affc`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:44 GMT
--	Parent Layer: `b4a6f5d2b221b1fada3d4e610974f9f0eb0ba974da317fd694a42bbd09e9285d`
+-	Created: Tue, 15 Mar 2016 18:32:13 GMT
+-	Parent Layer: `363fca6118de24ea7fae8e1be05c9d22d5902a611c217cc136c5ce9ec219bf1a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `fd09730642b6f2342b0a7757fd51e95c3b481edfaf8d759165a92e3d485b02b3`
+#### `abb5412e5178ac3feaf55e1094fec530e0678a51f70568dc26072dc6e32cc749`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -5219,53 +5263,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:46 GMT
--	Parent Layer: `5426e742a1ff0b365af4a68c5abf76c121ebad27d7987ca6147264732dc385c0`
+-	Created: Tue, 15 Mar 2016 18:32:15 GMT
+-	Parent Layer: `c96dba99694f8942d73f493ddc17eeecf7de6eb1cbcea2dc22089d3657a9affc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:78c360e2cc355b4c501080f138742a85d6604bc6d7c5c02b711ad15483db7915`
+-	v2 Blob: `sha256:81270fcf0c456b480927c2971b23734a94dd74e0c5b78be8d3f2ac66e47c496b`
 -	v2 Content-Length: 1.6 KB (1574 bytes)
 
-#### `5c8759fa179b3aa44437680329648ca31855783f7ecd880545d5c81c39ebe06a`
+#### `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:47 GMT
--	Parent Layer: `fd09730642b6f2342b0a7757fd51e95c3b481edfaf8d759165a92e3d485b02b3`
+-	Created: Tue, 15 Mar 2016 18:32:16 GMT
+-	Parent Layer: `abb5412e5178ac3feaf55e1094fec530e0678a51f70568dc26072dc6e32cc749`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `1afc91470c2261fdb3078c1d86fb6a00283ecb2ea9e7ff76331480e8db9b8e40`
+#### `9184e80f96e0be90cdb1512640e87c14cb4f782dfd4402ab2634522a9daf5e4b`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:47 GMT
--	Parent Layer: `5c8759fa179b3aa44437680329648ca31855783f7ecd880545d5c81c39ebe06a`
+-	Created: Tue, 15 Mar 2016 18:32:17 GMT
+-	Parent Layer: `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `764671b036811033be049d62826876246a36d7b37cf8a0e896c069f8405c669b`
+#### `f4812fd838ef8b8fe0b62aacd6a1695f72a5a63079a7fff6e014ae862d3f0962`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:48 GMT
--	Parent Layer: `1afc91470c2261fdb3078c1d86fb6a00283ecb2ea9e7ff76331480e8db9b8e40`
+-	Created: Tue, 15 Mar 2016 18:32:17 GMT
+-	Parent Layer: `9184e80f96e0be90cdb1512640e87c14cb4f782dfd4402ab2634522a9daf5e4b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `c131df442bcb7ae7df4d941873efa3949b4a0dd2d11b5ed626518f8ecf73b840`
+#### `9fe8137002be7bbe5a4633a66a6febc14ce7c859b2ebd4a57ff8042312ca8869`
 
 ```dockerfile
 RUN set -xe \
@@ -5273,60 +5317,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:50 GMT
--	Parent Layer: `764671b036811033be049d62826876246a36d7b37cf8a0e896c069f8405c669b`
+-	Created: Tue, 15 Mar 2016 18:32:19 GMT
+-	Parent Layer: `f4812fd838ef8b8fe0b62aacd6a1695f72a5a63079a7fff6e014ae862d3f0962`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:b64bf5b49d609f2ebfebce6d3aed09068742f6401334127065cbe8c48881400d`
--	v2 Content-Length: 1.6 KB (1589 bytes)
+-	v2 Blob: `sha256:9c81c31dac0d1dafe6f893790d284811b70877579b1e2247c488ba8e2f28cc63`
+-	v2 Content-Length: 1.6 KB (1595 bytes)
 
-#### `7741189fbcc08db6db8ffb29f5fd2b3fd8533122674537f31438c9fd3e97aa32`
+#### `f72468aa2bdf84e6198f3ad7194a78d5590410d59b7b4d8701e22fa7559d285c`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:50 GMT
--	Parent Layer: `c131df442bcb7ae7df4d941873efa3949b4a0dd2d11b5ed626518f8ecf73b840`
+-	Created: Tue, 15 Mar 2016 18:32:20 GMT
+-	Parent Layer: `9fe8137002be7bbe5a4633a66a6febc14ce7c859b2ebd4a57ff8042312ca8869`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `442ea239356448a1661ae498e19bc159013bff9c9973ddfc89663406527e5f8b`
+#### `10ae4304c8fcf0bcaab75b3ac6ccddba550b0af6610fb2f6fdc7d1a66c5261ec`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:51 GMT
--	Parent Layer: `7741189fbcc08db6db8ffb29f5fd2b3fd8533122674537f31438c9fd3e97aa32`
+-	Created: Tue, 15 Mar 2016 18:32:20 GMT
+-	Parent Layer: `f72468aa2bdf84e6198f3ad7194a78d5590410d59b7b4d8701e22fa7559d285c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `597a0d75f1ca60f4f5310f8b8d150367f6f056b7d78f9fcc90439cb8b383d5ce`
+#### `70769257e95701b5afbf971d0eb3b471136ab0942a9d3bfa5593d348454994a3`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:52 GMT
--	Parent Layer: `442ea239356448a1661ae498e19bc159013bff9c9973ddfc89663406527e5f8b`
+-	Created: Tue, 15 Mar 2016 18:32:21 GMT
+-	Parent Layer: `10ae4304c8fcf0bcaab75b3ac6ccddba550b0af6610fb2f6fdc7d1a66c5261ec`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6c47c56701b7be8463739a28bf79c3efd3fd252a3a058b99000365363999875f`
+#### `d2e0c2ff56f6254a78c65999bc638a0c05f656db2889f6a7a6787e9735549973`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:52 GMT
--	Parent Layer: `597a0d75f1ca60f4f5310f8b8d150367f6f056b7d78f9fcc90439cb8b383d5ce`
+-	Created: Tue, 15 Mar 2016 18:32:22 GMT
+-	Parent Layer: `70769257e95701b5afbf971d0eb3b471136ab0942a9d3bfa5593d348454994a3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -5335,11 +5379,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.2-jre8`
 
 ```console
-$ docker pull library/jetty@sha256:c5bd1c70037e5ffb03d3aaff5c9e956e181eb2dbdae25cb0168760f6b0fd4873
+$ docker pull library/jetty@sha256:84421e4915d125abd60b5d9ca3ce2364f8b5f94c1f28fb819094c711e11ba1fd
 ```
 
--	Total Virtual Size: 322.1 MB (322089130 bytes)
--	Total v2 Content-Length: 133.8 MB (133794967 bytes)
+-	Total Virtual Size: 322.6 MB (322587513 bytes)
+-	Total v2 Content-Length: 134.1 MB (134085626 bytes)
 
 ### Layers (34)
 
@@ -5385,50 +5429,54 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+#### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
 ```dockerfile
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:51 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 61.0 B
--	v2 Blob: `sha256:a7df6b0e192862e9fba7af4956dd2a7bc9d063b7ce3096868d0fdaaa5677545d`
--	v2 Content-Length: 218.0 B
+-	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
+-	v2 Content-Length: 219.0 B
 
-#### `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+#### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:52 GMT
--	Parent Layer: `0e9f76bfd13890922d0d20e8b77aa2f84f2739137eb8385aa4effc65809bab60`
+-	Created: Mon, 14 Mar 2016 23:22:46 GMT
+-	Parent Layer: `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+#### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -5436,66 +5484,66 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:53 GMT
--	Parent Layer: `bd4d68197a1531e97d897cb4e4e25cc763fced28b847a470d3a9f912c081df32`
+-	Created: Mon, 14 Mar 2016 23:22:48 GMT
+-	Parent Layer: `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:e3f5c6e4eb7cffb5df1c5e3607ba99dfc987dd05b6b7dc1fa4f86e807b5c0817`
--	v2 Content-Length: 242.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
+-	v2 Content-Length: 241.0 B
 
-#### `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+#### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:54 GMT
--	Parent Layer: `d90f957fe349e9ee786dbc27ef518281527c849a3c1a26e176ecda6e07cea051`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+#### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
 ```dockerfile
 ENV JAVA_VERSION=8u72
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `39fd7a042d0f7f61a15b5c5be5226e77f83bff8c98d39586a837dd4b8a12a0c0`
+-	Created: Mon, 14 Mar 2016 23:22:49 GMT
+-	Parent Layer: `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+#### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:55 GMT
--	Parent Layer: `f951389e7ff5bee99ed624596a6802c19c0d3a76ebad13f96874fa62b72f7c30`
+-	Created: Mon, 14 Mar 2016 23:22:50 GMT
+-	Parent Layer: `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+#### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
 ```dockerfile
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 ```
 
--	Created: Wed, 02 Mar 2016 09:52:56 GMT
--	Parent Layer: `130415f602ebdb444032f6ebc4d65b1a5186a33aeba159c5aa7c97589dced1a9`
+-	Created: Mon, 14 Mar 2016 23:22:51 GMT
+-	Parent Layer: `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+#### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
 ```dockerfile
 RUN set -x \
@@ -5507,131 +5555,131 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:49 GMT
--	Parent Layer: `5798d9c367fb82911f73b3c4ae49d15e580ba95003e7aef303cd78616fb4c63b`
+-	Created: Mon, 14 Mar 2016 23:23:54 GMT
+-	Parent Layer: `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 -	Docker Version: 1.9.1
--	Virtual Size: 140.0 MB (140003030 bytes)
--	v2 Blob: `sha256:078144e1612be36c19a0350fe7ae4f35e35e64577fa45f584b310ca33bc613dc`
--	v2 Content-Length: 53.3 MB (53339123 bytes)
+-	Virtual Size: 140.0 MB (140011005 bytes)
+-	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
+-	v2 Content-Length: 53.3 MB (53340644 bytes)
 
-#### `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+#### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
 ```dockerfile
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
--	Created: Wed, 02 Mar 2016 09:53:53 GMT
--	Parent Layer: `cfecd7abd014c5a210df0e30b2e91c75df654515de2684c622d91b2fc1cddea1`
+-	Created: Mon, 14 Mar 2016 23:23:58 GMT
+-	Parent Layer: `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 -	Docker Version: 1.9.1
 -	Virtual Size: 418.2 KB (418216 bytes)
--	v2 Blob: `sha256:ff7dd9deb98076d74174d658d369ea2e11f8f1e3a3c10ad7c692766e351d9961`
--	v2 Content-Length: 284.3 KB (284337 bytes)
+-	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
+-	v2 Content-Length: 284.3 KB (284334 bytes)
 
-#### `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+#### `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:33 GMT
--	Parent Layer: `b75efb75e0264018e3274058ac1a47dc281f6195dc5c8855deecacf7d58a9be3`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:037c83cd93cfc9bf841aa8d6a2a156b0ac72b885e01a0bbc6c4fd44ff3b64cd8`
--	v2 Content-Length: 2.1 KB (2085 bytes)
+-	v2 Blob: `sha256:888202dcdcc4f6e7a908e67e8fd484259cb06cda593b3c44001c8e8672e21563`
+-	v2 Content-Length: 2.1 KB (2094 bytes)
 
-#### `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+#### `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `abf1a6619c1bd6467d600da2a63dfc96938f6f0f0ffa7ccc1e893a1780ea6bc9`
+-	Created: Tue, 15 Mar 2016 18:25:04 GMT
+-	Parent Layer: `63d5c977402994427dfefac0bfb1b4d500192d109b16189f870d161a5364b4a8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+#### `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:34 GMT
--	Parent Layer: `fc1def316a4aceb153a70ccbf41bd67aae296c8a22b83c065d6fd67f3d64ae1c`
+-	Created: Tue, 15 Mar 2016 18:25:05 GMT
+-	Parent Layer: `fb52b55aae652f3b52a9ce1d3d780ac42a5cb0bab8cae01346264680539d459e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+#### `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `b444d57fd3025b2ed92456de1c193fe7d0fdd448b913db4a953e90fc2ad60444`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `91c8fee442842c67878037f69ae4b5a23fd6ff4834315f2a6abc852d68ca4b75`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:6a67dca954fe96f9654edd7c8dc7f23d45cb632ecc4651613f1d54dddd590ab0`
+-	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
 
-#### `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+#### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:45:36 GMT
--	Parent Layer: `f9be44eb60182f113245655a07b653752db6356236146a0ddabecfe80ce19b51`
+-	Created: Tue, 15 Mar 2016 18:25:07 GMT
+-	Parent Layer: `67390b94826ac8e514f70ac0081dd24577504052db2ffccce1aef09d82187053`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `87989a7240ce5466871a280ef174656e0212cb02b619fb1dab4bc881534aa44b`
+#### `1936d21d15e3361c5220cad583f254c31ac89cc734e15def60c1ce9dee35d3af`
 
 ```dockerfile
 ENV JETTY_VERSION=9.2.15.v20160210
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:37 GMT
--	Parent Layer: `bd5b9ca74d25a60cad9d96a0c9529dfcc6e86e67bb450a1526b119195bae8723`
+-	Created: Tue, 15 Mar 2016 18:32:05 GMT
+-	Parent Layer: `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `7953132888b6e3470d7bc1891e3232e346be3af630b78306887e450a0a046bc5`
+#### `1b853d84c1c2f37677f6fb1caf35155a1b5b5ad0d4b02a85b06807ca6774e0f3`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.15.v20160210/jetty-distribution-9.2.15.v20160210.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:37 GMT
--	Parent Layer: `87989a7240ce5466871a280ef174656e0212cb02b619fb1dab4bc881534aa44b`
+-	Created: Tue, 15 Mar 2016 18:32:06 GMT
+-	Parent Layer: `1936d21d15e3361c5220cad583f254c31ac89cc734e15def60c1ce9dee35d3af`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `285185e0b7f0336b214f053cf40cb3477cdacd46a988d4eb9c7af3933121ca20`
+#### `4880dec23f2b26c107ce511654ae01ee84f5b1d3b2ba9ba477ee1f06fe108df5`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:38 GMT
--	Parent Layer: `7953132888b6e3470d7bc1891e3232e346be3af630b78306887e450a0a046bc5`
+-	Created: Tue, 15 Mar 2016 18:32:06 GMT
+-	Parent Layer: `1b853d84c1c2f37677f6fb1caf35155a1b5b5ad0d4b02a85b06807ca6774e0f3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `8a585db4f18dee730e87fa4a8f089b2d0a5da42a68f236325803d729fa114a50`
+#### `840041f60923975ee355f8b635785eac7576f3ebeeddfdfab19531da9ad979d8`
 
 ```dockerfile
 RUN set -xe \
@@ -5648,53 +5696,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:41 GMT
--	Parent Layer: `285185e0b7f0336b214f053cf40cb3477cdacd46a988d4eb9c7af3933121ca20`
+-	Created: Tue, 15 Mar 2016 18:32:10 GMT
+-	Parent Layer: `4880dec23f2b26c107ce511654ae01ee84f5b1d3b2ba9ba477ee1f06fe108df5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.2 MB (11218224 bytes)
--	v2 Blob: `sha256:7e7e1d692cb0d39722134baf338a546ec106c14a044af302338cc94ce24a0cbf`
--	v2 Content-Length: 10.0 MB (9984942 bytes)
+-	v2 Blob: `sha256:449a23555a20bb42b37a69696b8f8278e0e10cb4f5e056d83dee65e625ace36a`
+-	v2 Content-Length: 10.0 MB (9984947 bytes)
 
-#### `cbb2ce99bbd912248719835d2b6d7499cceb865f314ae9fc8b7445dd0b73b9f9`
+#### `0d4fbc6e83485366ba1ed602c5d93a4efde1142e6f11df08c0057f702fd0b00d`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:42 GMT
--	Parent Layer: `8a585db4f18dee730e87fa4a8f089b2d0a5da42a68f236325803d729fa114a50`
+-	Created: Tue, 15 Mar 2016 18:32:11 GMT
+-	Parent Layer: `840041f60923975ee355f8b635785eac7576f3ebeeddfdfab19531da9ad979d8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b4a6f5d2b221b1fada3d4e610974f9f0eb0ba974da317fd694a42bbd09e9285d`
+#### `363fca6118de24ea7fae8e1be05c9d22d5902a611c217cc136c5ce9ec219bf1a`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:44 GMT
--	Parent Layer: `cbb2ce99bbd912248719835d2b6d7499cceb865f314ae9fc8b7445dd0b73b9f9`
+-	Created: Tue, 15 Mar 2016 18:32:12 GMT
+-	Parent Layer: `0d4fbc6e83485366ba1ed602c5d93a4efde1142e6f11df08c0057f702fd0b00d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:9d62161a5d6ca4a70ef90e4ecf0ff9d3b249be573c7068833ad02b697839f08f`
--	v2 Content-Length: 131.0 B
+-	v2 Blob: `sha256:fa2ce575d67596e7b83b1a40284cbcfcd7bef6a779c2e7f7cf703e2d86f5a1fd`
+-	v2 Content-Length: 130.0 B
 
-#### `5426e742a1ff0b365af4a68c5abf76c121ebad27d7987ca6147264732dc385c0`
+#### `c96dba99694f8942d73f493ddc17eeecf7de6eb1cbcea2dc22089d3657a9affc`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:44 GMT
--	Parent Layer: `b4a6f5d2b221b1fada3d4e610974f9f0eb0ba974da317fd694a42bbd09e9285d`
+-	Created: Tue, 15 Mar 2016 18:32:13 GMT
+-	Parent Layer: `363fca6118de24ea7fae8e1be05c9d22d5902a611c217cc136c5ce9ec219bf1a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `fd09730642b6f2342b0a7757fd51e95c3b481edfaf8d759165a92e3d485b02b3`
+#### `abb5412e5178ac3feaf55e1094fec530e0678a51f70568dc26072dc6e32cc749`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -5702,53 +5750,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:46 GMT
--	Parent Layer: `5426e742a1ff0b365af4a68c5abf76c121ebad27d7987ca6147264732dc385c0`
+-	Created: Tue, 15 Mar 2016 18:32:15 GMT
+-	Parent Layer: `c96dba99694f8942d73f493ddc17eeecf7de6eb1cbcea2dc22089d3657a9affc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:78c360e2cc355b4c501080f138742a85d6604bc6d7c5c02b711ad15483db7915`
+-	v2 Blob: `sha256:81270fcf0c456b480927c2971b23734a94dd74e0c5b78be8d3f2ac66e47c496b`
 -	v2 Content-Length: 1.6 KB (1574 bytes)
 
-#### `5c8759fa179b3aa44437680329648ca31855783f7ecd880545d5c81c39ebe06a`
+#### `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:47 GMT
--	Parent Layer: `fd09730642b6f2342b0a7757fd51e95c3b481edfaf8d759165a92e3d485b02b3`
+-	Created: Tue, 15 Mar 2016 18:32:16 GMT
+-	Parent Layer: `abb5412e5178ac3feaf55e1094fec530e0678a51f70568dc26072dc6e32cc749`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `1afc91470c2261fdb3078c1d86fb6a00283ecb2ea9e7ff76331480e8db9b8e40`
+#### `9184e80f96e0be90cdb1512640e87c14cb4f782dfd4402ab2634522a9daf5e4b`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:47 GMT
--	Parent Layer: `5c8759fa179b3aa44437680329648ca31855783f7ecd880545d5c81c39ebe06a`
+-	Created: Tue, 15 Mar 2016 18:32:17 GMT
+-	Parent Layer: `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `764671b036811033be049d62826876246a36d7b37cf8a0e896c069f8405c669b`
+#### `f4812fd838ef8b8fe0b62aacd6a1695f72a5a63079a7fff6e014ae862d3f0962`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:48 GMT
--	Parent Layer: `1afc91470c2261fdb3078c1d86fb6a00283ecb2ea9e7ff76331480e8db9b8e40`
+-	Created: Tue, 15 Mar 2016 18:32:17 GMT
+-	Parent Layer: `9184e80f96e0be90cdb1512640e87c14cb4f782dfd4402ab2634522a9daf5e4b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `c131df442bcb7ae7df4d941873efa3949b4a0dd2d11b5ed626518f8ecf73b840`
+#### `9fe8137002be7bbe5a4633a66a6febc14ce7c859b2ebd4a57ff8042312ca8869`
 
 ```dockerfile
 RUN set -xe \
@@ -5756,60 +5804,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:50 GMT
--	Parent Layer: `764671b036811033be049d62826876246a36d7b37cf8a0e896c069f8405c669b`
+-	Created: Tue, 15 Mar 2016 18:32:19 GMT
+-	Parent Layer: `f4812fd838ef8b8fe0b62aacd6a1695f72a5a63079a7fff6e014ae862d3f0962`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:b64bf5b49d609f2ebfebce6d3aed09068742f6401334127065cbe8c48881400d`
--	v2 Content-Length: 1.6 KB (1589 bytes)
+-	v2 Blob: `sha256:9c81c31dac0d1dafe6f893790d284811b70877579b1e2247c488ba8e2f28cc63`
+-	v2 Content-Length: 1.6 KB (1595 bytes)
 
-#### `7741189fbcc08db6db8ffb29f5fd2b3fd8533122674537f31438c9fd3e97aa32`
+#### `f72468aa2bdf84e6198f3ad7194a78d5590410d59b7b4d8701e22fa7559d285c`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:50 GMT
--	Parent Layer: `c131df442bcb7ae7df4d941873efa3949b4a0dd2d11b5ed626518f8ecf73b840`
+-	Created: Tue, 15 Mar 2016 18:32:20 GMT
+-	Parent Layer: `9fe8137002be7bbe5a4633a66a6febc14ce7c859b2ebd4a57ff8042312ca8869`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `442ea239356448a1661ae498e19bc159013bff9c9973ddfc89663406527e5f8b`
+#### `10ae4304c8fcf0bcaab75b3ac6ccddba550b0af6610fb2f6fdc7d1a66c5261ec`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:51 GMT
--	Parent Layer: `7741189fbcc08db6db8ffb29f5fd2b3fd8533122674537f31438c9fd3e97aa32`
+-	Created: Tue, 15 Mar 2016 18:32:20 GMT
+-	Parent Layer: `f72468aa2bdf84e6198f3ad7194a78d5590410d59b7b4d8701e22fa7559d285c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `597a0d75f1ca60f4f5310f8b8d150367f6f056b7d78f9fcc90439cb8b383d5ce`
+#### `70769257e95701b5afbf971d0eb3b471136ab0942a9d3bfa5593d348454994a3`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:52 GMT
--	Parent Layer: `442ea239356448a1661ae498e19bc159013bff9c9973ddfc89663406527e5f8b`
+-	Created: Tue, 15 Mar 2016 18:32:21 GMT
+-	Parent Layer: `10ae4304c8fcf0bcaab75b3ac6ccddba550b0af6610fb2f6fdc7d1a66c5261ec`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6c47c56701b7be8463739a28bf79c3efd3fd252a3a058b99000365363999875f`
+#### `d2e0c2ff56f6254a78c65999bc638a0c05f656db2889f6a7a6787e9735549973`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:53:52 GMT
--	Parent Layer: `597a0d75f1ca60f4f5310f8b8d150367f6f056b7d78f9fcc90439cb8b383d5ce`
+-	Created: Tue, 15 Mar 2016 18:32:22 GMT
+-	Parent Layer: `70769257e95701b5afbf971d0eb3b471136ab0942a9d3bfa5593d348454994a3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -5818,11 +5866,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.2.15-jre7`
 
 ```console
-$ docker pull library/jetty@sha256:3a7de52f19d3c08f9ace2e580d8387eca8ea22721d26c0d83a6f0ec3c9241bf9
+$ docker pull library/jetty@sha256:874441c8dc7fa8c8da45b926124de67d40a9870805e91dd6857d92a27b608eb6
 ```
 
--	Total Virtual Size: 355.3 MB (355309777 bytes)
--	Total v2 Content-Length: 164.2 MB (164180121 bytes)
+-	Total Virtual Size: 355.8 MB (355808160 bytes)
+-	Total v2 Content-Length: 164.5 MB (164471383 bytes)
 
 ### Layers (31)
 
@@ -5868,37 +5916,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `1907842cbf8853d279f3b153093c30332c6000079f8f49b103705bf16920630a`
+#### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:54 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:09:14 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9d063dbc01b7af35e1c4e56442d8fd6711cdc1d27442eeb67667094709f46604`
+#### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -5906,53 +5958,53 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:56 GMT
--	Parent Layer: `1907842cbf8853d279f3b153093c30332c6000079f8f49b103705bf16920630a`
+-	Created: Mon, 14 Mar 2016 23:09:17 GMT
+-	Parent Layer: `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:a403c4f8e12daf87617743c104825a5396a40706560930979d53a334d23dc013`
--	v2 Content-Length: 243.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
+-	v2 Content-Length: 241.0 B
 
-#### `43224db9783c9d24611746e2009559a15fedb31477ea3b98d100be46336b51d2`
+#### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:56 GMT
--	Parent Layer: `9d063dbc01b7af35e1c4e56442d8fd6711cdc1d27442eeb67667094709f46604`
+-	Created: Mon, 14 Mar 2016 23:09:17 GMT
+-	Parent Layer: `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `994155f8299d56979efc3061cc8c17ec1c4728badafc1c88d3cb8f348a2570fb`
+#### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
 ```dockerfile
 ENV JAVA_VERSION=7u95
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:57 GMT
--	Parent Layer: `43224db9783c9d24611746e2009559a15fedb31477ea3b98d100be46336b51d2`
+-	Created: Mon, 14 Mar 2016 23:09:18 GMT
+-	Parent Layer: `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b2b3be5fa04f0a8c0b998d59f20ae9e91f3c59ab12ab295e21a606ad1236be64`
+#### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:58 GMT
--	Parent Layer: `994155f8299d56979efc3061cc8c17ec1c4728badafc1c88d3cb8f348a2570fb`
+-	Created: Mon, 14 Mar 2016 23:09:19 GMT
+-	Parent Layer: `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `c4971abe0561644d72325ef159b5b2e3151ec5af1f64ee05bba031e6031ad566`
+#### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
 ```dockerfile
 RUN set -x \
@@ -5963,118 +6015,118 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:48:12 GMT
--	Parent Layer: `b2b3be5fa04f0a8c0b998d59f20ae9e91f3c59ab12ab295e21a606ad1236be64`
+-	Created: Mon, 14 Mar 2016 23:10:34 GMT
+-	Parent Layer: `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 -	Docker Version: 1.9.1
--	Virtual Size: 173.6 MB (173641954 bytes)
--	v2 Blob: `sha256:dce02c288275e22a23c3e5b1f23223ddb3ae7702971e3a35911d4c0dbe6512a2`
--	v2 Content-Length: 84.0 MB (84008822 bytes)
+-	Virtual Size: 173.6 MB (173649929 bytes)
+-	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
+-	v2 Content-Length: 84.0 MB (84010983 bytes)
 
-#### `972aaf6713d237640879c98cb1fd1c07e29c3ab28647f0bdcce457ebd530a4f5`
+#### `244bcde37ed0133d45a3e18a4a58fd7d8aba0200057653dc9a8fa51d73a79acc`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:40 GMT
--	Parent Layer: `c4971abe0561644d72325ef159b5b2e3151ec5af1f64ee05bba031e6031ad566`
+-	Created: Tue, 15 Mar 2016 18:35:08 GMT
+-	Parent Layer: `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:a146e57a32f1a6e28ea06c775e56e0984a2bdba8cd97a2c0b3f091efb5586e13`
--	v2 Content-Length: 2.1 KB (2088 bytes)
+-	v2 Blob: `sha256:306b008f5116e86343248c88882e1207e2b5d1439257e88cda2d4851c643cc04`
+-	v2 Content-Length: 2.1 KB (2087 bytes)
 
-#### `d0bc873f45c4a7367f47c85435b58472a63aceb85e3785efcb0b86547ee2db96`
+#### `7e4e213e83e603a962a489a851fdb46f0edde13cbb24f19fad8d4d4639bb5ce6`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:41 GMT
--	Parent Layer: `972aaf6713d237640879c98cb1fd1c07e29c3ab28647f0bdcce457ebd530a4f5`
+-	Created: Tue, 15 Mar 2016 18:35:09 GMT
+-	Parent Layer: `244bcde37ed0133d45a3e18a4a58fd7d8aba0200057653dc9a8fa51d73a79acc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `660613f5fc63d2e2d0eef3721deafc847f950d92fc2763e6b29a807fd32dc5f8`
+#### `3a24fa98e71a843d555eb2935800fbb2d3f3291064abaeaeba5d6091c4a2c2cf`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:42 GMT
--	Parent Layer: `d0bc873f45c4a7367f47c85435b58472a63aceb85e3785efcb0b86547ee2db96`
+-	Created: Tue, 15 Mar 2016 18:35:10 GMT
+-	Parent Layer: `7e4e213e83e603a962a489a851fdb46f0edde13cbb24f19fad8d4d4639bb5ce6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6eaf38357dd1784e268d00994a9d55a22c1422cd407429f37da48d718867a6b1`
+#### `f06a529b88e42ef78fb195c27c5725b9c36c313b8787d86c515f5f6c7df5d745`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:43 GMT
--	Parent Layer: `660613f5fc63d2e2d0eef3721deafc847f950d92fc2763e6b29a807fd32dc5f8`
+-	Created: Tue, 15 Mar 2016 18:35:11 GMT
+-	Parent Layer: `3a24fa98e71a843d555eb2935800fbb2d3f3291064abaeaeba5d6091c4a2c2cf`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:54bb71cb7b3f77dd65a3a34754eccfab4a50c4c972dba245bfdcf1d00b3554a9`
+-	v2 Blob: `sha256:f862ea6c9f3280d48595747fff4f5c95bf17ed0ff71ddc666749bc04818b8ad9`
 -	v2 Content-Length: 147.0 B
 
-#### `c53e415898872e1e59b81ea659083b66e4f53861ae595ebc023992fea4b0e078`
+#### `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:44 GMT
--	Parent Layer: `6eaf38357dd1784e268d00994a9d55a22c1422cd407429f37da48d718867a6b1`
+-	Created: Tue, 15 Mar 2016 18:35:12 GMT
+-	Parent Layer: `f06a529b88e42ef78fb195c27c5725b9c36c313b8787d86c515f5f6c7df5d745`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2cad80b2dcfd1cbfc5b8105484f950644ff2489d9a8441a9f5d034e96acdf239`
+#### `0c7dbfd8c7c6e34a4ca49a872663eb4de01f10bb6c020afb2204833116deed4e`
 
 ```dockerfile
 ENV JETTY_VERSION=9.2.15.v20160210
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:44 GMT
--	Parent Layer: `c53e415898872e1e59b81ea659083b66e4f53861ae595ebc023992fea4b0e078`
+-	Created: Tue, 15 Mar 2016 18:35:13 GMT
+-	Parent Layer: `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d4460a8cec8e1c350180effa63486491f8c37ebf5189cc84eb83cc03456f2a5d`
+#### `aa211ef0728092ca471bc90952fc304b414b72741fa0b348f7b59d98c4b8905a`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.15.v20160210/jetty-distribution-9.2.15.v20160210.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:45 GMT
--	Parent Layer: `2cad80b2dcfd1cbfc5b8105484f950644ff2489d9a8441a9f5d034e96acdf239`
+-	Created: Tue, 15 Mar 2016 18:35:13 GMT
+-	Parent Layer: `0c7dbfd8c7c6e34a4ca49a872663eb4de01f10bb6c020afb2204833116deed4e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `466919503a1d095a9d1dc4ec286ed6e2682901c6ed4ef4f0ca9ad5585b51a6aa`
+#### `d3ffaf809c3ccde82f2acc969f459a46d28ec19bc0bdf174b34a2862449b613b`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:46 GMT
--	Parent Layer: `d4460a8cec8e1c350180effa63486491f8c37ebf5189cc84eb83cc03456f2a5d`
+-	Created: Tue, 15 Mar 2016 18:35:14 GMT
+-	Parent Layer: `aa211ef0728092ca471bc90952fc304b414b72741fa0b348f7b59d98c4b8905a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `75cd63a731c9eba59aefdc0505c1044c8c629ffc36bb2729bc970de1728e3cf8`
+#### `1964c1f0932c58e1352d5380358ec9167e4c88a686a7c9bd9b8e0a580f40f81e`
 
 ```dockerfile
 RUN set -xe \
@@ -6091,53 +6143,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:49 GMT
--	Parent Layer: `466919503a1d095a9d1dc4ec286ed6e2682901c6ed4ef4f0ca9ad5585b51a6aa`
+-	Created: Tue, 15 Mar 2016 18:35:18 GMT
+-	Parent Layer: `d3ffaf809c3ccde82f2acc969f459a46d28ec19bc0bdf174b34a2862449b613b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.2 MB (11218224 bytes)
--	v2 Blob: `sha256:5406a0bb829917e24d25ef8264abd753574dea38bb0c216131aa6a66d6f45d9b`
--	v2 Content-Length: 10.0 MB (9984974 bytes)
+-	v2 Blob: `sha256:0dbf427ba34a6fbdb4f0b910824c2d2c2d908284e301f4284a71a3de85bc43de`
+-	v2 Content-Length: 10.0 MB (9984963 bytes)
 
-#### `b6404ceef9ed0fb2d21fe1c1d62225f92f522e4b12d590e9931930ec128e90ba`
+#### `de22e7f04b59281b0c8f796fd665acf4424591537ccaf6c8ba2ae43ed5a49d24`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:50 GMT
--	Parent Layer: `75cd63a731c9eba59aefdc0505c1044c8c629ffc36bb2729bc970de1728e3cf8`
+-	Created: Tue, 15 Mar 2016 18:35:18 GMT
+-	Parent Layer: `1964c1f0932c58e1352d5380358ec9167e4c88a686a7c9bd9b8e0a580f40f81e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6c192ce0210575e26495d7da5374513cb572ed7f8f4ed728d21d51f0c99be534`
+#### `e610a9de5e0d4c78c3ccc1754bf8cc1c6bdac99431cceb1120e832269c9ffde6`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:52 GMT
--	Parent Layer: `b6404ceef9ed0fb2d21fe1c1d62225f92f522e4b12d590e9931930ec128e90ba`
+-	Created: Tue, 15 Mar 2016 18:35:20 GMT
+-	Parent Layer: `de22e7f04b59281b0c8f796fd665acf4424591537ccaf6c8ba2ae43ed5a49d24`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:e637494f4323d223d4f0109c37f4949c2bc8c84ee60288fb5c210048dc6dfd35`
--	v2 Content-Length: 131.0 B
+-	v2 Blob: `sha256:3c54be18591e63a222d0fc5e01e9c9193e37ee932b4189e557475c5d087d2928`
+-	v2 Content-Length: 129.0 B
 
-#### `7f8fb588eff07f514174277fd0f3231963e6bd747dc7dee2d3211b81e363f74f`
+#### `ae9b8ddfd9c32a8ed112812127e7bc80397ad00e65caee76f5011c07c9840095`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:52 GMT
--	Parent Layer: `6c192ce0210575e26495d7da5374513cb572ed7f8f4ed728d21d51f0c99be534`
+-	Created: Tue, 15 Mar 2016 18:35:21 GMT
+-	Parent Layer: `e610a9de5e0d4c78c3ccc1754bf8cc1c6bdac99431cceb1120e832269c9ffde6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `135ab881e30f3e9301b2989e8c3f3b2f72aeac3877254f1a270f596ec5cff410`
+#### `75e8302c15713d4503b8c240754f3addbfda46442b3e5d95d90be329ad43c0f0`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -6145,53 +6197,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:55 GMT
--	Parent Layer: `7f8fb588eff07f514174277fd0f3231963e6bd747dc7dee2d3211b81e363f74f`
+-	Created: Tue, 15 Mar 2016 18:35:23 GMT
+-	Parent Layer: `ae9b8ddfd9c32a8ed112812127e7bc80397ad00e65caee76f5011c07c9840095`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:4d1b43e95d282fb605f59953a30870b960a3d31633787e09b1c1373b6e5b42d5`
--	v2 Content-Length: 1.6 KB (1574 bytes)
+-	v2 Blob: `sha256:4cc5d704f959c2d58d364168522508b607f3847fcd085a957ebff5226cc8e555`
+-	v2 Content-Length: 1.6 KB (1572 bytes)
 
-#### `0712bb58ce70a0a47dc48d3dace5297d0af7c37e5ebeafbcf5c8962168ce56bb`
+#### `e0842630d2f27875c4730faad9a2f96f2c457484732541716ac01b6d5d1e89ae`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:55 GMT
--	Parent Layer: `135ab881e30f3e9301b2989e8c3f3b2f72aeac3877254f1a270f596ec5cff410`
+-	Created: Tue, 15 Mar 2016 18:35:24 GMT
+-	Parent Layer: `75e8302c15713d4503b8c240754f3addbfda46442b3e5d95d90be329ad43c0f0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `843d69542293e9595b3110a130cb0d77d43fafe396da141b7f6229530f281038`
+#### `3f4e377502b8f35087c91c94b0f2339ee14cf4844391531863f513af207c9a4e`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:56 GMT
--	Parent Layer: `0712bb58ce70a0a47dc48d3dace5297d0af7c37e5ebeafbcf5c8962168ce56bb`
+-	Created: Tue, 15 Mar 2016 18:35:24 GMT
+-	Parent Layer: `e0842630d2f27875c4730faad9a2f96f2c457484732541716ac01b6d5d1e89ae`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ff8649a904fbd7cb3c4810a49eaab0fa412d551042bc397f8681b9b193624845`
+#### `dc0497b9e38fd2b61bb744b30e578cf8ca4ccf11d2e5f5ec616dbccf46189b43`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:57 GMT
--	Parent Layer: `843d69542293e9595b3110a130cb0d77d43fafe396da141b7f6229530f281038`
+-	Created: Tue, 15 Mar 2016 18:35:25 GMT
+-	Parent Layer: `3f4e377502b8f35087c91c94b0f2339ee14cf4844391531863f513af207c9a4e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9e9a69a64f977c81541c6310ea30d7df58090f681d9fe6d4da420c2bc0675910`
+#### `eaafb79f599e86345292aa402d97a1ac8690ec20687fdfc3e1968eab1d840e46`
 
 ```dockerfile
 RUN set -xe \
@@ -6199,60 +6251,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:58 GMT
--	Parent Layer: `ff8649a904fbd7cb3c4810a49eaab0fa412d551042bc397f8681b9b193624845`
+-	Created: Tue, 15 Mar 2016 18:35:27 GMT
+-	Parent Layer: `dc0497b9e38fd2b61bb744b30e578cf8ca4ccf11d2e5f5ec616dbccf46189b43`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:606a44dc577df19a8a73a56ed31a9f45978466af542e270e72a8de13df512577`
--	v2 Content-Length: 1.6 KB (1595 bytes)
+-	v2 Blob: `sha256:40429b72c7d7917e1c0d3a68e5e9ff9a1b62a7290053d3c6518f4785d5e2cb18`
+-	v2 Content-Length: 1.6 KB (1592 bytes)
 
-#### `d12ec51c546312786940cd287dca94e1572e2940a99ec495ed5369e86eeb44fc`
+#### `8aacd06442fa273ad10bbc79e432d6ceb9df8aa428abac69314db2dc9ea0d626`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:59 GMT
--	Parent Layer: `9e9a69a64f977c81541c6310ea30d7df58090f681d9fe6d4da420c2bc0675910`
+-	Created: Tue, 15 Mar 2016 18:35:28 GMT
+-	Parent Layer: `eaafb79f599e86345292aa402d97a1ac8690ec20687fdfc3e1968eab1d840e46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `df4529d48d733e6896c2897b28599ff9323e8bef7071bc1c010482f1c3c8268b`
+#### `3895a919b700383f6a4924fb89c8a2a6834835f6edbe2eb658d060c7b644093e`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:00 GMT
--	Parent Layer: `d12ec51c546312786940cd287dca94e1572e2940a99ec495ed5369e86eeb44fc`
+-	Created: Tue, 15 Mar 2016 18:35:28 GMT
+-	Parent Layer: `8aacd06442fa273ad10bbc79e432d6ceb9df8aa428abac69314db2dc9ea0d626`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `77a88cf2d4bfd7baea18df5a36a59f9317997197a801c3c0fc83144618a14fb3`
+#### `cde0c365449eb2ad1771a18fdcd6ddc1741f0b7a7a970d0ba2862a174c62a71e`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:00 GMT
--	Parent Layer: `df4529d48d733e6896c2897b28599ff9323e8bef7071bc1c010482f1c3c8268b`
+-	Created: Tue, 15 Mar 2016 18:35:29 GMT
+-	Parent Layer: `3895a919b700383f6a4924fb89c8a2a6834835f6edbe2eb658d060c7b644093e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `77ab3043ce3d70e105fadcd8813239ad1d985745634cfa8a8c8364a1663c8b14`
+#### `2113a128577e3245eb70c2d9867adee0918d126d311abe849ac4bc8fd5395f1c`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:01 GMT
--	Parent Layer: `77a88cf2d4bfd7baea18df5a36a59f9317997197a801c3c0fc83144618a14fb3`
+-	Created: Tue, 15 Mar 2016 18:35:30 GMT
+-	Parent Layer: `cde0c365449eb2ad1771a18fdcd6ddc1741f0b7a7a970d0ba2862a174c62a71e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -6261,11 +6313,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.2-jre7`
 
 ```console
-$ docker pull library/jetty@sha256:affb25ca594faa1a8d8c46b566cd588160afc7b69236c23c1667b0bc4651cb0b
+$ docker pull library/jetty@sha256:fe43fd2483252d8d0d548c4a5bbed8aaf3301941be90fc8cd79bcc52ac4b31b0
 ```
 
--	Total Virtual Size: 355.3 MB (355309777 bytes)
--	Total v2 Content-Length: 164.2 MB (164180121 bytes)
+-	Total Virtual Size: 355.8 MB (355808160 bytes)
+-	Total v2 Content-Length: 164.5 MB (164471383 bytes)
 
 ### Layers (31)
 
@@ -6311,37 +6363,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `1907842cbf8853d279f3b153093c30332c6000079f8f49b103705bf16920630a`
+#### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:54 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:09:14 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9d063dbc01b7af35e1c4e56442d8fd6711cdc1d27442eeb67667094709f46604`
+#### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -6349,53 +6405,53 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:56 GMT
--	Parent Layer: `1907842cbf8853d279f3b153093c30332c6000079f8f49b103705bf16920630a`
+-	Created: Mon, 14 Mar 2016 23:09:17 GMT
+-	Parent Layer: `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:a403c4f8e12daf87617743c104825a5396a40706560930979d53a334d23dc013`
--	v2 Content-Length: 243.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
+-	v2 Content-Length: 241.0 B
 
-#### `43224db9783c9d24611746e2009559a15fedb31477ea3b98d100be46336b51d2`
+#### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:56 GMT
--	Parent Layer: `9d063dbc01b7af35e1c4e56442d8fd6711cdc1d27442eeb67667094709f46604`
+-	Created: Mon, 14 Mar 2016 23:09:17 GMT
+-	Parent Layer: `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `994155f8299d56979efc3061cc8c17ec1c4728badafc1c88d3cb8f348a2570fb`
+#### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
 ```dockerfile
 ENV JAVA_VERSION=7u95
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:57 GMT
--	Parent Layer: `43224db9783c9d24611746e2009559a15fedb31477ea3b98d100be46336b51d2`
+-	Created: Mon, 14 Mar 2016 23:09:18 GMT
+-	Parent Layer: `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b2b3be5fa04f0a8c0b998d59f20ae9e91f3c59ab12ab295e21a606ad1236be64`
+#### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:58 GMT
--	Parent Layer: `994155f8299d56979efc3061cc8c17ec1c4728badafc1c88d3cb8f348a2570fb`
+-	Created: Mon, 14 Mar 2016 23:09:19 GMT
+-	Parent Layer: `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `c4971abe0561644d72325ef159b5b2e3151ec5af1f64ee05bba031e6031ad566`
+#### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
 ```dockerfile
 RUN set -x \
@@ -6406,118 +6462,118 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:48:12 GMT
--	Parent Layer: `b2b3be5fa04f0a8c0b998d59f20ae9e91f3c59ab12ab295e21a606ad1236be64`
+-	Created: Mon, 14 Mar 2016 23:10:34 GMT
+-	Parent Layer: `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 -	Docker Version: 1.9.1
--	Virtual Size: 173.6 MB (173641954 bytes)
--	v2 Blob: `sha256:dce02c288275e22a23c3e5b1f23223ddb3ae7702971e3a35911d4c0dbe6512a2`
--	v2 Content-Length: 84.0 MB (84008822 bytes)
+-	Virtual Size: 173.6 MB (173649929 bytes)
+-	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
+-	v2 Content-Length: 84.0 MB (84010983 bytes)
 
-#### `972aaf6713d237640879c98cb1fd1c07e29c3ab28647f0bdcce457ebd530a4f5`
+#### `244bcde37ed0133d45a3e18a4a58fd7d8aba0200057653dc9a8fa51d73a79acc`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:40 GMT
--	Parent Layer: `c4971abe0561644d72325ef159b5b2e3151ec5af1f64ee05bba031e6031ad566`
+-	Created: Tue, 15 Mar 2016 18:35:08 GMT
+-	Parent Layer: `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:a146e57a32f1a6e28ea06c775e56e0984a2bdba8cd97a2c0b3f091efb5586e13`
--	v2 Content-Length: 2.1 KB (2088 bytes)
+-	v2 Blob: `sha256:306b008f5116e86343248c88882e1207e2b5d1439257e88cda2d4851c643cc04`
+-	v2 Content-Length: 2.1 KB (2087 bytes)
 
-#### `d0bc873f45c4a7367f47c85435b58472a63aceb85e3785efcb0b86547ee2db96`
+#### `7e4e213e83e603a962a489a851fdb46f0edde13cbb24f19fad8d4d4639bb5ce6`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:41 GMT
--	Parent Layer: `972aaf6713d237640879c98cb1fd1c07e29c3ab28647f0bdcce457ebd530a4f5`
+-	Created: Tue, 15 Mar 2016 18:35:09 GMT
+-	Parent Layer: `244bcde37ed0133d45a3e18a4a58fd7d8aba0200057653dc9a8fa51d73a79acc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `660613f5fc63d2e2d0eef3721deafc847f950d92fc2763e6b29a807fd32dc5f8`
+#### `3a24fa98e71a843d555eb2935800fbb2d3f3291064abaeaeba5d6091c4a2c2cf`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:42 GMT
--	Parent Layer: `d0bc873f45c4a7367f47c85435b58472a63aceb85e3785efcb0b86547ee2db96`
+-	Created: Tue, 15 Mar 2016 18:35:10 GMT
+-	Parent Layer: `7e4e213e83e603a962a489a851fdb46f0edde13cbb24f19fad8d4d4639bb5ce6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6eaf38357dd1784e268d00994a9d55a22c1422cd407429f37da48d718867a6b1`
+#### `f06a529b88e42ef78fb195c27c5725b9c36c313b8787d86c515f5f6c7df5d745`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:43 GMT
--	Parent Layer: `660613f5fc63d2e2d0eef3721deafc847f950d92fc2763e6b29a807fd32dc5f8`
+-	Created: Tue, 15 Mar 2016 18:35:11 GMT
+-	Parent Layer: `3a24fa98e71a843d555eb2935800fbb2d3f3291064abaeaeba5d6091c4a2c2cf`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:54bb71cb7b3f77dd65a3a34754eccfab4a50c4c972dba245bfdcf1d00b3554a9`
+-	v2 Blob: `sha256:f862ea6c9f3280d48595747fff4f5c95bf17ed0ff71ddc666749bc04818b8ad9`
 -	v2 Content-Length: 147.0 B
 
-#### `c53e415898872e1e59b81ea659083b66e4f53861ae595ebc023992fea4b0e078`
+#### `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:44 GMT
--	Parent Layer: `6eaf38357dd1784e268d00994a9d55a22c1422cd407429f37da48d718867a6b1`
+-	Created: Tue, 15 Mar 2016 18:35:12 GMT
+-	Parent Layer: `f06a529b88e42ef78fb195c27c5725b9c36c313b8787d86c515f5f6c7df5d745`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2cad80b2dcfd1cbfc5b8105484f950644ff2489d9a8441a9f5d034e96acdf239`
+#### `0c7dbfd8c7c6e34a4ca49a872663eb4de01f10bb6c020afb2204833116deed4e`
 
 ```dockerfile
 ENV JETTY_VERSION=9.2.15.v20160210
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:44 GMT
--	Parent Layer: `c53e415898872e1e59b81ea659083b66e4f53861ae595ebc023992fea4b0e078`
+-	Created: Tue, 15 Mar 2016 18:35:13 GMT
+-	Parent Layer: `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d4460a8cec8e1c350180effa63486491f8c37ebf5189cc84eb83cc03456f2a5d`
+#### `aa211ef0728092ca471bc90952fc304b414b72741fa0b348f7b59d98c4b8905a`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.15.v20160210/jetty-distribution-9.2.15.v20160210.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:45 GMT
--	Parent Layer: `2cad80b2dcfd1cbfc5b8105484f950644ff2489d9a8441a9f5d034e96acdf239`
+-	Created: Tue, 15 Mar 2016 18:35:13 GMT
+-	Parent Layer: `0c7dbfd8c7c6e34a4ca49a872663eb4de01f10bb6c020afb2204833116deed4e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `466919503a1d095a9d1dc4ec286ed6e2682901c6ed4ef4f0ca9ad5585b51a6aa`
+#### `d3ffaf809c3ccde82f2acc969f459a46d28ec19bc0bdf174b34a2862449b613b`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:46 GMT
--	Parent Layer: `d4460a8cec8e1c350180effa63486491f8c37ebf5189cc84eb83cc03456f2a5d`
+-	Created: Tue, 15 Mar 2016 18:35:14 GMT
+-	Parent Layer: `aa211ef0728092ca471bc90952fc304b414b72741fa0b348f7b59d98c4b8905a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `75cd63a731c9eba59aefdc0505c1044c8c629ffc36bb2729bc970de1728e3cf8`
+#### `1964c1f0932c58e1352d5380358ec9167e4c88a686a7c9bd9b8e0a580f40f81e`
 
 ```dockerfile
 RUN set -xe \
@@ -6534,53 +6590,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:49 GMT
--	Parent Layer: `466919503a1d095a9d1dc4ec286ed6e2682901c6ed4ef4f0ca9ad5585b51a6aa`
+-	Created: Tue, 15 Mar 2016 18:35:18 GMT
+-	Parent Layer: `d3ffaf809c3ccde82f2acc969f459a46d28ec19bc0bdf174b34a2862449b613b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.2 MB (11218224 bytes)
--	v2 Blob: `sha256:5406a0bb829917e24d25ef8264abd753574dea38bb0c216131aa6a66d6f45d9b`
--	v2 Content-Length: 10.0 MB (9984974 bytes)
+-	v2 Blob: `sha256:0dbf427ba34a6fbdb4f0b910824c2d2c2d908284e301f4284a71a3de85bc43de`
+-	v2 Content-Length: 10.0 MB (9984963 bytes)
 
-#### `b6404ceef9ed0fb2d21fe1c1d62225f92f522e4b12d590e9931930ec128e90ba`
+#### `de22e7f04b59281b0c8f796fd665acf4424591537ccaf6c8ba2ae43ed5a49d24`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:50 GMT
--	Parent Layer: `75cd63a731c9eba59aefdc0505c1044c8c629ffc36bb2729bc970de1728e3cf8`
+-	Created: Tue, 15 Mar 2016 18:35:18 GMT
+-	Parent Layer: `1964c1f0932c58e1352d5380358ec9167e4c88a686a7c9bd9b8e0a580f40f81e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6c192ce0210575e26495d7da5374513cb572ed7f8f4ed728d21d51f0c99be534`
+#### `e610a9de5e0d4c78c3ccc1754bf8cc1c6bdac99431cceb1120e832269c9ffde6`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:52 GMT
--	Parent Layer: `b6404ceef9ed0fb2d21fe1c1d62225f92f522e4b12d590e9931930ec128e90ba`
+-	Created: Tue, 15 Mar 2016 18:35:20 GMT
+-	Parent Layer: `de22e7f04b59281b0c8f796fd665acf4424591537ccaf6c8ba2ae43ed5a49d24`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:e637494f4323d223d4f0109c37f4949c2bc8c84ee60288fb5c210048dc6dfd35`
--	v2 Content-Length: 131.0 B
+-	v2 Blob: `sha256:3c54be18591e63a222d0fc5e01e9c9193e37ee932b4189e557475c5d087d2928`
+-	v2 Content-Length: 129.0 B
 
-#### `7f8fb588eff07f514174277fd0f3231963e6bd747dc7dee2d3211b81e363f74f`
+#### `ae9b8ddfd9c32a8ed112812127e7bc80397ad00e65caee76f5011c07c9840095`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:52 GMT
--	Parent Layer: `6c192ce0210575e26495d7da5374513cb572ed7f8f4ed728d21d51f0c99be534`
+-	Created: Tue, 15 Mar 2016 18:35:21 GMT
+-	Parent Layer: `e610a9de5e0d4c78c3ccc1754bf8cc1c6bdac99431cceb1120e832269c9ffde6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `135ab881e30f3e9301b2989e8c3f3b2f72aeac3877254f1a270f596ec5cff410`
+#### `75e8302c15713d4503b8c240754f3addbfda46442b3e5d95d90be329ad43c0f0`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -6588,53 +6644,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:55 GMT
--	Parent Layer: `7f8fb588eff07f514174277fd0f3231963e6bd747dc7dee2d3211b81e363f74f`
+-	Created: Tue, 15 Mar 2016 18:35:23 GMT
+-	Parent Layer: `ae9b8ddfd9c32a8ed112812127e7bc80397ad00e65caee76f5011c07c9840095`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:4d1b43e95d282fb605f59953a30870b960a3d31633787e09b1c1373b6e5b42d5`
--	v2 Content-Length: 1.6 KB (1574 bytes)
+-	v2 Blob: `sha256:4cc5d704f959c2d58d364168522508b607f3847fcd085a957ebff5226cc8e555`
+-	v2 Content-Length: 1.6 KB (1572 bytes)
 
-#### `0712bb58ce70a0a47dc48d3dace5297d0af7c37e5ebeafbcf5c8962168ce56bb`
+#### `e0842630d2f27875c4730faad9a2f96f2c457484732541716ac01b6d5d1e89ae`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:55 GMT
--	Parent Layer: `135ab881e30f3e9301b2989e8c3f3b2f72aeac3877254f1a270f596ec5cff410`
+-	Created: Tue, 15 Mar 2016 18:35:24 GMT
+-	Parent Layer: `75e8302c15713d4503b8c240754f3addbfda46442b3e5d95d90be329ad43c0f0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `843d69542293e9595b3110a130cb0d77d43fafe396da141b7f6229530f281038`
+#### `3f4e377502b8f35087c91c94b0f2339ee14cf4844391531863f513af207c9a4e`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:56 GMT
--	Parent Layer: `0712bb58ce70a0a47dc48d3dace5297d0af7c37e5ebeafbcf5c8962168ce56bb`
+-	Created: Tue, 15 Mar 2016 18:35:24 GMT
+-	Parent Layer: `e0842630d2f27875c4730faad9a2f96f2c457484732541716ac01b6d5d1e89ae`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ff8649a904fbd7cb3c4810a49eaab0fa412d551042bc397f8681b9b193624845`
+#### `dc0497b9e38fd2b61bb744b30e578cf8ca4ccf11d2e5f5ec616dbccf46189b43`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:57 GMT
--	Parent Layer: `843d69542293e9595b3110a130cb0d77d43fafe396da141b7f6229530f281038`
+-	Created: Tue, 15 Mar 2016 18:35:25 GMT
+-	Parent Layer: `3f4e377502b8f35087c91c94b0f2339ee14cf4844391531863f513af207c9a4e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9e9a69a64f977c81541c6310ea30d7df58090f681d9fe6d4da420c2bc0675910`
+#### `eaafb79f599e86345292aa402d97a1ac8690ec20687fdfc3e1968eab1d840e46`
 
 ```dockerfile
 RUN set -xe \
@@ -6642,60 +6698,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:58 GMT
--	Parent Layer: `ff8649a904fbd7cb3c4810a49eaab0fa412d551042bc397f8681b9b193624845`
+-	Created: Tue, 15 Mar 2016 18:35:27 GMT
+-	Parent Layer: `dc0497b9e38fd2b61bb744b30e578cf8ca4ccf11d2e5f5ec616dbccf46189b43`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:606a44dc577df19a8a73a56ed31a9f45978466af542e270e72a8de13df512577`
--	v2 Content-Length: 1.6 KB (1595 bytes)
+-	v2 Blob: `sha256:40429b72c7d7917e1c0d3a68e5e9ff9a1b62a7290053d3c6518f4785d5e2cb18`
+-	v2 Content-Length: 1.6 KB (1592 bytes)
 
-#### `d12ec51c546312786940cd287dca94e1572e2940a99ec495ed5369e86eeb44fc`
+#### `8aacd06442fa273ad10bbc79e432d6ceb9df8aa428abac69314db2dc9ea0d626`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:59 GMT
--	Parent Layer: `9e9a69a64f977c81541c6310ea30d7df58090f681d9fe6d4da420c2bc0675910`
+-	Created: Tue, 15 Mar 2016 18:35:28 GMT
+-	Parent Layer: `eaafb79f599e86345292aa402d97a1ac8690ec20687fdfc3e1968eab1d840e46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `df4529d48d733e6896c2897b28599ff9323e8bef7071bc1c010482f1c3c8268b`
+#### `3895a919b700383f6a4924fb89c8a2a6834835f6edbe2eb658d060c7b644093e`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:00 GMT
--	Parent Layer: `d12ec51c546312786940cd287dca94e1572e2940a99ec495ed5369e86eeb44fc`
+-	Created: Tue, 15 Mar 2016 18:35:28 GMT
+-	Parent Layer: `8aacd06442fa273ad10bbc79e432d6ceb9df8aa428abac69314db2dc9ea0d626`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `77a88cf2d4bfd7baea18df5a36a59f9317997197a801c3c0fc83144618a14fb3`
+#### `cde0c365449eb2ad1771a18fdcd6ddc1741f0b7a7a970d0ba2862a174c62a71e`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:00 GMT
--	Parent Layer: `df4529d48d733e6896c2897b28599ff9323e8bef7071bc1c010482f1c3c8268b`
+-	Created: Tue, 15 Mar 2016 18:35:29 GMT
+-	Parent Layer: `3895a919b700383f6a4924fb89c8a2a6834835f6edbe2eb658d060c7b644093e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `77ab3043ce3d70e105fadcd8813239ad1d985745634cfa8a8c8364a1663c8b14`
+#### `2113a128577e3245eb70c2d9867adee0918d126d311abe849ac4bc8fd5395f1c`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:01 GMT
--	Parent Layer: `77a88cf2d4bfd7baea18df5a36a59f9317997197a801c3c0fc83144618a14fb3`
+-	Created: Tue, 15 Mar 2016 18:35:30 GMT
+-	Parent Layer: `cde0c365449eb2ad1771a18fdcd6ddc1741f0b7a7a970d0ba2862a174c62a71e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -6704,11 +6760,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9-jre7`
 
 ```console
-$ docker pull library/jetty@sha256:3bd13f2f1ee7ec25ea7b04ac381363e0084df33c79174a83e2ad25db79941f09
+$ docker pull library/jetty@sha256:01cd646fd135757f19f273af95db236b4d66b5735c40ed9ecafe343b2814f07e
 ```
 
--	Total Virtual Size: 355.3 MB (355309777 bytes)
--	Total v2 Content-Length: 164.2 MB (164180121 bytes)
+-	Total Virtual Size: 355.8 MB (355808160 bytes)
+-	Total v2 Content-Length: 164.5 MB (164471383 bytes)
 
 ### Layers (31)
 
@@ -6754,37 +6810,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `1907842cbf8853d279f3b153093c30332c6000079f8f49b103705bf16920630a`
+#### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:54 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:09:14 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9d063dbc01b7af35e1c4e56442d8fd6711cdc1d27442eeb67667094709f46604`
+#### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -6792,53 +6852,53 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:56 GMT
--	Parent Layer: `1907842cbf8853d279f3b153093c30332c6000079f8f49b103705bf16920630a`
+-	Created: Mon, 14 Mar 2016 23:09:17 GMT
+-	Parent Layer: `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:a403c4f8e12daf87617743c104825a5396a40706560930979d53a334d23dc013`
--	v2 Content-Length: 243.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
+-	v2 Content-Length: 241.0 B
 
-#### `43224db9783c9d24611746e2009559a15fedb31477ea3b98d100be46336b51d2`
+#### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:56 GMT
--	Parent Layer: `9d063dbc01b7af35e1c4e56442d8fd6711cdc1d27442eeb67667094709f46604`
+-	Created: Mon, 14 Mar 2016 23:09:17 GMT
+-	Parent Layer: `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `994155f8299d56979efc3061cc8c17ec1c4728badafc1c88d3cb8f348a2570fb`
+#### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
 ```dockerfile
 ENV JAVA_VERSION=7u95
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:57 GMT
--	Parent Layer: `43224db9783c9d24611746e2009559a15fedb31477ea3b98d100be46336b51d2`
+-	Created: Mon, 14 Mar 2016 23:09:18 GMT
+-	Parent Layer: `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b2b3be5fa04f0a8c0b998d59f20ae9e91f3c59ab12ab295e21a606ad1236be64`
+#### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:58 GMT
--	Parent Layer: `994155f8299d56979efc3061cc8c17ec1c4728badafc1c88d3cb8f348a2570fb`
+-	Created: Mon, 14 Mar 2016 23:09:19 GMT
+-	Parent Layer: `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `c4971abe0561644d72325ef159b5b2e3151ec5af1f64ee05bba031e6031ad566`
+#### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
 ```dockerfile
 RUN set -x \
@@ -6849,118 +6909,118 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:48:12 GMT
--	Parent Layer: `b2b3be5fa04f0a8c0b998d59f20ae9e91f3c59ab12ab295e21a606ad1236be64`
+-	Created: Mon, 14 Mar 2016 23:10:34 GMT
+-	Parent Layer: `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 -	Docker Version: 1.9.1
--	Virtual Size: 173.6 MB (173641954 bytes)
--	v2 Blob: `sha256:dce02c288275e22a23c3e5b1f23223ddb3ae7702971e3a35911d4c0dbe6512a2`
--	v2 Content-Length: 84.0 MB (84008822 bytes)
+-	Virtual Size: 173.6 MB (173649929 bytes)
+-	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
+-	v2 Content-Length: 84.0 MB (84010983 bytes)
 
-#### `972aaf6713d237640879c98cb1fd1c07e29c3ab28647f0bdcce457ebd530a4f5`
+#### `244bcde37ed0133d45a3e18a4a58fd7d8aba0200057653dc9a8fa51d73a79acc`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:40 GMT
--	Parent Layer: `c4971abe0561644d72325ef159b5b2e3151ec5af1f64ee05bba031e6031ad566`
+-	Created: Tue, 15 Mar 2016 18:35:08 GMT
+-	Parent Layer: `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:a146e57a32f1a6e28ea06c775e56e0984a2bdba8cd97a2c0b3f091efb5586e13`
--	v2 Content-Length: 2.1 KB (2088 bytes)
+-	v2 Blob: `sha256:306b008f5116e86343248c88882e1207e2b5d1439257e88cda2d4851c643cc04`
+-	v2 Content-Length: 2.1 KB (2087 bytes)
 
-#### `d0bc873f45c4a7367f47c85435b58472a63aceb85e3785efcb0b86547ee2db96`
+#### `7e4e213e83e603a962a489a851fdb46f0edde13cbb24f19fad8d4d4639bb5ce6`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:41 GMT
--	Parent Layer: `972aaf6713d237640879c98cb1fd1c07e29c3ab28647f0bdcce457ebd530a4f5`
+-	Created: Tue, 15 Mar 2016 18:35:09 GMT
+-	Parent Layer: `244bcde37ed0133d45a3e18a4a58fd7d8aba0200057653dc9a8fa51d73a79acc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `660613f5fc63d2e2d0eef3721deafc847f950d92fc2763e6b29a807fd32dc5f8`
+#### `3a24fa98e71a843d555eb2935800fbb2d3f3291064abaeaeba5d6091c4a2c2cf`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:42 GMT
--	Parent Layer: `d0bc873f45c4a7367f47c85435b58472a63aceb85e3785efcb0b86547ee2db96`
+-	Created: Tue, 15 Mar 2016 18:35:10 GMT
+-	Parent Layer: `7e4e213e83e603a962a489a851fdb46f0edde13cbb24f19fad8d4d4639bb5ce6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6eaf38357dd1784e268d00994a9d55a22c1422cd407429f37da48d718867a6b1`
+#### `f06a529b88e42ef78fb195c27c5725b9c36c313b8787d86c515f5f6c7df5d745`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:43 GMT
--	Parent Layer: `660613f5fc63d2e2d0eef3721deafc847f950d92fc2763e6b29a807fd32dc5f8`
+-	Created: Tue, 15 Mar 2016 18:35:11 GMT
+-	Parent Layer: `3a24fa98e71a843d555eb2935800fbb2d3f3291064abaeaeba5d6091c4a2c2cf`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:54bb71cb7b3f77dd65a3a34754eccfab4a50c4c972dba245bfdcf1d00b3554a9`
+-	v2 Blob: `sha256:f862ea6c9f3280d48595747fff4f5c95bf17ed0ff71ddc666749bc04818b8ad9`
 -	v2 Content-Length: 147.0 B
 
-#### `c53e415898872e1e59b81ea659083b66e4f53861ae595ebc023992fea4b0e078`
+#### `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:44 GMT
--	Parent Layer: `6eaf38357dd1784e268d00994a9d55a22c1422cd407429f37da48d718867a6b1`
+-	Created: Tue, 15 Mar 2016 18:35:12 GMT
+-	Parent Layer: `f06a529b88e42ef78fb195c27c5725b9c36c313b8787d86c515f5f6c7df5d745`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2cad80b2dcfd1cbfc5b8105484f950644ff2489d9a8441a9f5d034e96acdf239`
+#### `0c7dbfd8c7c6e34a4ca49a872663eb4de01f10bb6c020afb2204833116deed4e`
 
 ```dockerfile
 ENV JETTY_VERSION=9.2.15.v20160210
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:44 GMT
--	Parent Layer: `c53e415898872e1e59b81ea659083b66e4f53861ae595ebc023992fea4b0e078`
+-	Created: Tue, 15 Mar 2016 18:35:13 GMT
+-	Parent Layer: `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d4460a8cec8e1c350180effa63486491f8c37ebf5189cc84eb83cc03456f2a5d`
+#### `aa211ef0728092ca471bc90952fc304b414b72741fa0b348f7b59d98c4b8905a`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.15.v20160210/jetty-distribution-9.2.15.v20160210.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:45 GMT
--	Parent Layer: `2cad80b2dcfd1cbfc5b8105484f950644ff2489d9a8441a9f5d034e96acdf239`
+-	Created: Tue, 15 Mar 2016 18:35:13 GMT
+-	Parent Layer: `0c7dbfd8c7c6e34a4ca49a872663eb4de01f10bb6c020afb2204833116deed4e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `466919503a1d095a9d1dc4ec286ed6e2682901c6ed4ef4f0ca9ad5585b51a6aa`
+#### `d3ffaf809c3ccde82f2acc969f459a46d28ec19bc0bdf174b34a2862449b613b`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:46 GMT
--	Parent Layer: `d4460a8cec8e1c350180effa63486491f8c37ebf5189cc84eb83cc03456f2a5d`
+-	Created: Tue, 15 Mar 2016 18:35:14 GMT
+-	Parent Layer: `aa211ef0728092ca471bc90952fc304b414b72741fa0b348f7b59d98c4b8905a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `75cd63a731c9eba59aefdc0505c1044c8c629ffc36bb2729bc970de1728e3cf8`
+#### `1964c1f0932c58e1352d5380358ec9167e4c88a686a7c9bd9b8e0a580f40f81e`
 
 ```dockerfile
 RUN set -xe \
@@ -6977,53 +7037,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:49 GMT
--	Parent Layer: `466919503a1d095a9d1dc4ec286ed6e2682901c6ed4ef4f0ca9ad5585b51a6aa`
+-	Created: Tue, 15 Mar 2016 18:35:18 GMT
+-	Parent Layer: `d3ffaf809c3ccde82f2acc969f459a46d28ec19bc0bdf174b34a2862449b613b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.2 MB (11218224 bytes)
--	v2 Blob: `sha256:5406a0bb829917e24d25ef8264abd753574dea38bb0c216131aa6a66d6f45d9b`
--	v2 Content-Length: 10.0 MB (9984974 bytes)
+-	v2 Blob: `sha256:0dbf427ba34a6fbdb4f0b910824c2d2c2d908284e301f4284a71a3de85bc43de`
+-	v2 Content-Length: 10.0 MB (9984963 bytes)
 
-#### `b6404ceef9ed0fb2d21fe1c1d62225f92f522e4b12d590e9931930ec128e90ba`
+#### `de22e7f04b59281b0c8f796fd665acf4424591537ccaf6c8ba2ae43ed5a49d24`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:50 GMT
--	Parent Layer: `75cd63a731c9eba59aefdc0505c1044c8c629ffc36bb2729bc970de1728e3cf8`
+-	Created: Tue, 15 Mar 2016 18:35:18 GMT
+-	Parent Layer: `1964c1f0932c58e1352d5380358ec9167e4c88a686a7c9bd9b8e0a580f40f81e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6c192ce0210575e26495d7da5374513cb572ed7f8f4ed728d21d51f0c99be534`
+#### `e610a9de5e0d4c78c3ccc1754bf8cc1c6bdac99431cceb1120e832269c9ffde6`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:52 GMT
--	Parent Layer: `b6404ceef9ed0fb2d21fe1c1d62225f92f522e4b12d590e9931930ec128e90ba`
+-	Created: Tue, 15 Mar 2016 18:35:20 GMT
+-	Parent Layer: `de22e7f04b59281b0c8f796fd665acf4424591537ccaf6c8ba2ae43ed5a49d24`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:e637494f4323d223d4f0109c37f4949c2bc8c84ee60288fb5c210048dc6dfd35`
--	v2 Content-Length: 131.0 B
+-	v2 Blob: `sha256:3c54be18591e63a222d0fc5e01e9c9193e37ee932b4189e557475c5d087d2928`
+-	v2 Content-Length: 129.0 B
 
-#### `7f8fb588eff07f514174277fd0f3231963e6bd747dc7dee2d3211b81e363f74f`
+#### `ae9b8ddfd9c32a8ed112812127e7bc80397ad00e65caee76f5011c07c9840095`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:52 GMT
--	Parent Layer: `6c192ce0210575e26495d7da5374513cb572ed7f8f4ed728d21d51f0c99be534`
+-	Created: Tue, 15 Mar 2016 18:35:21 GMT
+-	Parent Layer: `e610a9de5e0d4c78c3ccc1754bf8cc1c6bdac99431cceb1120e832269c9ffde6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `135ab881e30f3e9301b2989e8c3f3b2f72aeac3877254f1a270f596ec5cff410`
+#### `75e8302c15713d4503b8c240754f3addbfda46442b3e5d95d90be329ad43c0f0`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -7031,53 +7091,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:55 GMT
--	Parent Layer: `7f8fb588eff07f514174277fd0f3231963e6bd747dc7dee2d3211b81e363f74f`
+-	Created: Tue, 15 Mar 2016 18:35:23 GMT
+-	Parent Layer: `ae9b8ddfd9c32a8ed112812127e7bc80397ad00e65caee76f5011c07c9840095`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:4d1b43e95d282fb605f59953a30870b960a3d31633787e09b1c1373b6e5b42d5`
--	v2 Content-Length: 1.6 KB (1574 bytes)
+-	v2 Blob: `sha256:4cc5d704f959c2d58d364168522508b607f3847fcd085a957ebff5226cc8e555`
+-	v2 Content-Length: 1.6 KB (1572 bytes)
 
-#### `0712bb58ce70a0a47dc48d3dace5297d0af7c37e5ebeafbcf5c8962168ce56bb`
+#### `e0842630d2f27875c4730faad9a2f96f2c457484732541716ac01b6d5d1e89ae`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:55 GMT
--	Parent Layer: `135ab881e30f3e9301b2989e8c3f3b2f72aeac3877254f1a270f596ec5cff410`
+-	Created: Tue, 15 Mar 2016 18:35:24 GMT
+-	Parent Layer: `75e8302c15713d4503b8c240754f3addbfda46442b3e5d95d90be329ad43c0f0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `843d69542293e9595b3110a130cb0d77d43fafe396da141b7f6229530f281038`
+#### `3f4e377502b8f35087c91c94b0f2339ee14cf4844391531863f513af207c9a4e`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:56 GMT
--	Parent Layer: `0712bb58ce70a0a47dc48d3dace5297d0af7c37e5ebeafbcf5c8962168ce56bb`
+-	Created: Tue, 15 Mar 2016 18:35:24 GMT
+-	Parent Layer: `e0842630d2f27875c4730faad9a2f96f2c457484732541716ac01b6d5d1e89ae`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ff8649a904fbd7cb3c4810a49eaab0fa412d551042bc397f8681b9b193624845`
+#### `dc0497b9e38fd2b61bb744b30e578cf8ca4ccf11d2e5f5ec616dbccf46189b43`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:57 GMT
--	Parent Layer: `843d69542293e9595b3110a130cb0d77d43fafe396da141b7f6229530f281038`
+-	Created: Tue, 15 Mar 2016 18:35:25 GMT
+-	Parent Layer: `3f4e377502b8f35087c91c94b0f2339ee14cf4844391531863f513af207c9a4e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9e9a69a64f977c81541c6310ea30d7df58090f681d9fe6d4da420c2bc0675910`
+#### `eaafb79f599e86345292aa402d97a1ac8690ec20687fdfc3e1968eab1d840e46`
 
 ```dockerfile
 RUN set -xe \
@@ -7085,60 +7145,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:58 GMT
--	Parent Layer: `ff8649a904fbd7cb3c4810a49eaab0fa412d551042bc397f8681b9b193624845`
+-	Created: Tue, 15 Mar 2016 18:35:27 GMT
+-	Parent Layer: `dc0497b9e38fd2b61bb744b30e578cf8ca4ccf11d2e5f5ec616dbccf46189b43`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:606a44dc577df19a8a73a56ed31a9f45978466af542e270e72a8de13df512577`
--	v2 Content-Length: 1.6 KB (1595 bytes)
+-	v2 Blob: `sha256:40429b72c7d7917e1c0d3a68e5e9ff9a1b62a7290053d3c6518f4785d5e2cb18`
+-	v2 Content-Length: 1.6 KB (1592 bytes)
 
-#### `d12ec51c546312786940cd287dca94e1572e2940a99ec495ed5369e86eeb44fc`
+#### `8aacd06442fa273ad10bbc79e432d6ceb9df8aa428abac69314db2dc9ea0d626`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:59 GMT
--	Parent Layer: `9e9a69a64f977c81541c6310ea30d7df58090f681d9fe6d4da420c2bc0675910`
+-	Created: Tue, 15 Mar 2016 18:35:28 GMT
+-	Parent Layer: `eaafb79f599e86345292aa402d97a1ac8690ec20687fdfc3e1968eab1d840e46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `df4529d48d733e6896c2897b28599ff9323e8bef7071bc1c010482f1c3c8268b`
+#### `3895a919b700383f6a4924fb89c8a2a6834835f6edbe2eb658d060c7b644093e`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:00 GMT
--	Parent Layer: `d12ec51c546312786940cd287dca94e1572e2940a99ec495ed5369e86eeb44fc`
+-	Created: Tue, 15 Mar 2016 18:35:28 GMT
+-	Parent Layer: `8aacd06442fa273ad10bbc79e432d6ceb9df8aa428abac69314db2dc9ea0d626`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `77a88cf2d4bfd7baea18df5a36a59f9317997197a801c3c0fc83144618a14fb3`
+#### `cde0c365449eb2ad1771a18fdcd6ddc1741f0b7a7a970d0ba2862a174c62a71e`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:00 GMT
--	Parent Layer: `df4529d48d733e6896c2897b28599ff9323e8bef7071bc1c010482f1c3c8268b`
+-	Created: Tue, 15 Mar 2016 18:35:29 GMT
+-	Parent Layer: `3895a919b700383f6a4924fb89c8a2a6834835f6edbe2eb658d060c7b644093e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `77ab3043ce3d70e105fadcd8813239ad1d985745634cfa8a8c8364a1663c8b14`
+#### `2113a128577e3245eb70c2d9867adee0918d126d311abe849ac4bc8fd5395f1c`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:01 GMT
--	Parent Layer: `77a88cf2d4bfd7baea18df5a36a59f9317997197a801c3c0fc83144618a14fb3`
+-	Created: Tue, 15 Mar 2016 18:35:30 GMT
+-	Parent Layer: `cde0c365449eb2ad1771a18fdcd6ddc1741f0b7a7a970d0ba2862a174c62a71e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -7147,11 +7207,11 @@ CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:jre7`
 
 ```console
-$ docker pull library/jetty@sha256:711df0b7103f6650e14373152e66e694c1bd2768a403c3101c9b733c71b0b6d0
+$ docker pull library/jetty@sha256:3ef43060175454495574295087b64fe4977146dedb214428f1656c0a6816c481
 ```
 
--	Total Virtual Size: 355.3 MB (355309777 bytes)
--	Total v2 Content-Length: 164.2 MB (164180121 bytes)
+-	Total Virtual Size: 355.8 MB (355808160 bytes)
+-	Total v2 Content-Length: 164.5 MB (164471383 bytes)
 
 ### Layers (31)
 
@@ -7197,37 +7257,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
 
-#### `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+#### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
 ```dockerfile
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		bzip2 \
+		unzip \
+		xz-utils \
+	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:53 GMT
+-	Created: Mon, 14 Mar 2016 23:09:13 GMT
 -	Parent Layer: `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 -	Docker Version: 1.9.1
--	Virtual Size: 686.3 KB (686320 bytes)
--	v2 Blob: `sha256:44091295bce9dcb40303ada1db757bbbcd6d7a2af6efdee7be156f483316d6da`
--	v2 Content-Length: 277.7 KB (277694 bytes)
+-	Virtual Size: 1.2 MB (1176730 bytes)
+-	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
+-	v2 Content-Length: 566.8 KB (566816 bytes)
 
-#### `1907842cbf8853d279f3b153093c30332c6000079f8f49b103705bf16920630a`
+#### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
 ```dockerfile
 ENV LANG=C.UTF-8
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:54 GMT
--	Parent Layer: `028bde369389add000af0e90c6ed1e17bdc1574dc3961adda95ba5d2bcc64b5f`
+-	Created: Mon, 14 Mar 2016 23:09:14 GMT
+-	Parent Layer: `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9d063dbc01b7af35e1c4e56442d8fd6711cdc1d27442eeb67667094709f46604`
+#### `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 
 ```dockerfile
 RUN { \
-		echo '#!/bin/bash'; \
+		echo '#!/bin/sh'; \
 		echo 'set -e'; \
 		echo; \
 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
@@ -7235,53 +7299,53 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:56 GMT
--	Parent Layer: `1907842cbf8853d279f3b153093c30332c6000079f8f49b103705bf16920630a`
+-	Created: Mon, 14 Mar 2016 23:09:17 GMT
+-	Parent Layer: `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 -	Docker Version: 1.9.1
--	Virtual Size: 89.0 B
--	v2 Blob: `sha256:a403c4f8e12daf87617743c104825a5396a40706560930979d53a334d23dc013`
--	v2 Content-Length: 243.0 B
+-	Virtual Size: 87.0 B
+-	v2 Blob: `sha256:6645cef1ef7392ecf86d6d1726e86d6a18edd03cf96bbc3a7cbaac191d0dd75e`
+-	v2 Content-Length: 241.0 B
 
-#### `43224db9783c9d24611746e2009559a15fedb31477ea3b98d100be46336b51d2`
+#### `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 
 ```dockerfile
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:56 GMT
--	Parent Layer: `9d063dbc01b7af35e1c4e56442d8fd6711cdc1d27442eeb67667094709f46604`
+-	Created: Mon, 14 Mar 2016 23:09:17 GMT
+-	Parent Layer: `4a7c225b60efe287d788a7718ec4dcc5378ade9d5165abc8a30920203dbee0d0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `994155f8299d56979efc3061cc8c17ec1c4728badafc1c88d3cb8f348a2570fb`
+#### `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 
 ```dockerfile
 ENV JAVA_VERSION=7u95
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:57 GMT
--	Parent Layer: `43224db9783c9d24611746e2009559a15fedb31477ea3b98d100be46336b51d2`
+-	Created: Mon, 14 Mar 2016 23:09:18 GMT
+-	Parent Layer: `1248e62e6109331e429404c3f7a5dd3d3483a1550c63cf8a60727d92d8e500a7`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `b2b3be5fa04f0a8c0b998d59f20ae9e91f3c59ab12ab295e21a606ad1236be64`
+#### `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 
 ```dockerfile
 ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 ```
 
--	Created: Wed, 02 Mar 2016 09:46:58 GMT
--	Parent Layer: `994155f8299d56979efc3061cc8c17ec1c4728badafc1c88d3cb8f348a2570fb`
+-	Created: Mon, 14 Mar 2016 23:09:19 GMT
+-	Parent Layer: `383b0f52246564369ba19020bf73d66cc48bf6ca9dedb9564299a2cc86b0ff18`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `c4971abe0561644d72325ef159b5b2e3151ec5af1f64ee05bba031e6031ad566`
+#### `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 
 ```dockerfile
 RUN set -x \
@@ -7292,118 +7356,118 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
--	Created: Wed, 02 Mar 2016 09:48:12 GMT
--	Parent Layer: `b2b3be5fa04f0a8c0b998d59f20ae9e91f3c59ab12ab295e21a606ad1236be64`
+-	Created: Mon, 14 Mar 2016 23:10:34 GMT
+-	Parent Layer: `9fd1c1bc00dff17516b1a801be6683ee02493d190c6e78adb53a23cc540fcf3c`
 -	Docker Version: 1.9.1
--	Virtual Size: 173.6 MB (173641954 bytes)
--	v2 Blob: `sha256:dce02c288275e22a23c3e5b1f23223ddb3ae7702971e3a35911d4c0dbe6512a2`
--	v2 Content-Length: 84.0 MB (84008822 bytes)
+-	Virtual Size: 173.6 MB (173649929 bytes)
+-	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
+-	v2 Content-Length: 84.0 MB (84010983 bytes)
 
-#### `972aaf6713d237640879c98cb1fd1c07e29c3ab28647f0bdcce457ebd530a4f5`
+#### `244bcde37ed0133d45a3e18a4a58fd7d8aba0200057653dc9a8fa51d73a79acc`
 
 ```dockerfile
 RUN groupadd -r jetty && useradd -r -g jetty jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:40 GMT
--	Parent Layer: `c4971abe0561644d72325ef159b5b2e3151ec5af1f64ee05bba031e6031ad566`
+-	Created: Tue, 15 Mar 2016 18:35:08 GMT
+-	Parent Layer: `8bcbd4b55f100e431422263e8a5fbdfef6bbf22f51093380d5e181da1dacca46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 330.7 KB (330688 bytes)
--	v2 Blob: `sha256:a146e57a32f1a6e28ea06c775e56e0984a2bdba8cd97a2c0b3f091efb5586e13`
--	v2 Content-Length: 2.1 KB (2088 bytes)
+-	v2 Blob: `sha256:306b008f5116e86343248c88882e1207e2b5d1439257e88cda2d4851c643cc04`
+-	v2 Content-Length: 2.1 KB (2087 bytes)
 
-#### `d0bc873f45c4a7367f47c85435b58472a63aceb85e3785efcb0b86547ee2db96`
+#### `7e4e213e83e603a962a489a851fdb46f0edde13cbb24f19fad8d4d4639bb5ce6`
 
 ```dockerfile
 ENV JETTY_HOME=/usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:41 GMT
--	Parent Layer: `972aaf6713d237640879c98cb1fd1c07e29c3ab28647f0bdcce457ebd530a4f5`
+-	Created: Tue, 15 Mar 2016 18:35:09 GMT
+-	Parent Layer: `244bcde37ed0133d45a3e18a4a58fd7d8aba0200057653dc9a8fa51d73a79acc`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `660613f5fc63d2e2d0eef3721deafc847f950d92fc2763e6b29a807fd32dc5f8`
+#### `3a24fa98e71a843d555eb2935800fbb2d3f3291064abaeaeba5d6091c4a2c2cf`
 
 ```dockerfile
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:42 GMT
--	Parent Layer: `d0bc873f45c4a7367f47c85435b58472a63aceb85e3785efcb0b86547ee2db96`
+-	Created: Tue, 15 Mar 2016 18:35:10 GMT
+-	Parent Layer: `7e4e213e83e603a962a489a851fdb46f0edde13cbb24f19fad8d4d4639bb5ce6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6eaf38357dd1784e268d00994a9d55a22c1422cd407429f37da48d718867a6b1`
+#### `f06a529b88e42ef78fb195c27c5725b9c36c313b8787d86c515f5f6c7df5d745`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_HOME"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:43 GMT
--	Parent Layer: `660613f5fc63d2e2d0eef3721deafc847f950d92fc2763e6b29a807fd32dc5f8`
+-	Created: Tue, 15 Mar 2016 18:35:11 GMT
+-	Parent Layer: `3a24fa98e71a843d555eb2935800fbb2d3f3291064abaeaeba5d6091c4a2c2cf`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:54bb71cb7b3f77dd65a3a34754eccfab4a50c4c972dba245bfdcf1d00b3554a9`
+-	v2 Blob: `sha256:f862ea6c9f3280d48595747fff4f5c95bf17ed0ff71ddc666749bc04818b8ad9`
 -	v2 Content-Length: 147.0 B
 
-#### `c53e415898872e1e59b81ea659083b66e4f53861ae595ebc023992fea4b0e078`
+#### `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 
 ```dockerfile
 WORKDIR /usr/local/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:44 GMT
--	Parent Layer: `6eaf38357dd1784e268d00994a9d55a22c1422cd407429f37da48d718867a6b1`
+-	Created: Tue, 15 Mar 2016 18:35:12 GMT
+-	Parent Layer: `f06a529b88e42ef78fb195c27c5725b9c36c313b8787d86c515f5f6c7df5d745`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `2cad80b2dcfd1cbfc5b8105484f950644ff2489d9a8441a9f5d034e96acdf239`
+#### `0c7dbfd8c7c6e34a4ca49a872663eb4de01f10bb6c020afb2204833116deed4e`
 
 ```dockerfile
 ENV JETTY_VERSION=9.2.15.v20160210
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:44 GMT
--	Parent Layer: `c53e415898872e1e59b81ea659083b66e4f53861ae595ebc023992fea4b0e078`
+-	Created: Tue, 15 Mar 2016 18:35:13 GMT
+-	Parent Layer: `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `d4460a8cec8e1c350180effa63486491f8c37ebf5189cc84eb83cc03456f2a5d`
+#### `aa211ef0728092ca471bc90952fc304b414b72741fa0b348f7b59d98c4b8905a`
 
 ```dockerfile
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.15.v20160210/jetty-distribution-9.2.15.v20160210.tar.gz
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:45 GMT
--	Parent Layer: `2cad80b2dcfd1cbfc5b8105484f950644ff2489d9a8441a9f5d034e96acdf239`
+-	Created: Tue, 15 Mar 2016 18:35:13 GMT
+-	Parent Layer: `0c7dbfd8c7c6e34a4ca49a872663eb4de01f10bb6c020afb2204833116deed4e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `466919503a1d095a9d1dc4ec286ed6e2682901c6ed4ef4f0ca9ad5585b51a6aa`
+#### `d3ffaf809c3ccde82f2acc969f459a46d28ec19bc0bdf174b34a2862449b613b`
 
 ```dockerfile
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC        5DE533CB43DAF8BC3E372283E7AE839CD7C58886
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:46 GMT
--	Parent Layer: `d4460a8cec8e1c350180effa63486491f8c37ebf5189cc84eb83cc03456f2a5d`
+-	Created: Tue, 15 Mar 2016 18:35:14 GMT
+-	Parent Layer: `aa211ef0728092ca471bc90952fc304b414b72741fa0b348f7b59d98c4b8905a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `75cd63a731c9eba59aefdc0505c1044c8c629ffc36bb2729bc970de1728e3cf8`
+#### `1964c1f0932c58e1352d5380358ec9167e4c88a686a7c9bd9b8e0a580f40f81e`
 
 ```dockerfile
 RUN set -xe \
@@ -7420,53 +7484,53 @@ RUN set -xe \
 	&& rm jetty.tar.gz*
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:49 GMT
--	Parent Layer: `466919503a1d095a9d1dc4ec286ed6e2682901c6ed4ef4f0ca9ad5585b51a6aa`
+-	Created: Tue, 15 Mar 2016 18:35:18 GMT
+-	Parent Layer: `d3ffaf809c3ccde82f2acc969f459a46d28ec19bc0bdf174b34a2862449b613b`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.2 MB (11218224 bytes)
--	v2 Blob: `sha256:5406a0bb829917e24d25ef8264abd753574dea38bb0c216131aa6a66d6f45d9b`
--	v2 Content-Length: 10.0 MB (9984974 bytes)
+-	v2 Blob: `sha256:0dbf427ba34a6fbdb4f0b910824c2d2c2d908284e301f4284a71a3de85bc43de`
+-	v2 Content-Length: 10.0 MB (9984963 bytes)
 
-#### `b6404ceef9ed0fb2d21fe1c1d62225f92f522e4b12d590e9931930ec128e90ba`
+#### `de22e7f04b59281b0c8f796fd665acf4424591537ccaf6c8ba2ae43ed5a49d24`
 
 ```dockerfile
 ENV JETTY_BASE=/var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:50 GMT
--	Parent Layer: `75cd63a731c9eba59aefdc0505c1044c8c629ffc36bb2729bc970de1728e3cf8`
+-	Created: Tue, 15 Mar 2016 18:35:18 GMT
+-	Parent Layer: `1964c1f0932c58e1352d5380358ec9167e4c88a686a7c9bd9b8e0a580f40f81e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `6c192ce0210575e26495d7da5374513cb572ed7f8f4ed728d21d51f0c99be534`
+#### `e610a9de5e0d4c78c3ccc1754bf8cc1c6bdac99431cceb1120e832269c9ffde6`
 
 ```dockerfile
 RUN mkdir -p "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:52 GMT
--	Parent Layer: `b6404ceef9ed0fb2d21fe1c1d62225f92f522e4b12d590e9931930ec128e90ba`
+-	Created: Tue, 15 Mar 2016 18:35:20 GMT
+-	Parent Layer: `de22e7f04b59281b0c8f796fd665acf4424591537ccaf6c8ba2ae43ed5a49d24`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
--	v2 Blob: `sha256:e637494f4323d223d4f0109c37f4949c2bc8c84ee60288fb5c210048dc6dfd35`
--	v2 Content-Length: 131.0 B
+-	v2 Blob: `sha256:3c54be18591e63a222d0fc5e01e9c9193e37ee932b4189e557475c5d087d2928`
+-	v2 Content-Length: 129.0 B
 
-#### `7f8fb588eff07f514174277fd0f3231963e6bd747dc7dee2d3211b81e363f74f`
+#### `ae9b8ddfd9c32a8ed112812127e7bc80397ad00e65caee76f5011c07c9840095`
 
 ```dockerfile
 WORKDIR /var/lib/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:52 GMT
--	Parent Layer: `6c192ce0210575e26495d7da5374513cb572ed7f8f4ed728d21d51f0c99be534`
+-	Created: Tue, 15 Mar 2016 18:35:21 GMT
+-	Parent Layer: `e610a9de5e0d4c78c3ccc1754bf8cc1c6bdac99431cceb1120e832269c9ffde6`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `135ab881e30f3e9301b2989e8c3f3b2f72aeac3877254f1a270f596ec5cff410`
+#### `75e8302c15713d4503b8c240754f3addbfda46442b3e5d95d90be329ad43c0f0`
 
 ```dockerfile
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" \
@@ -7474,53 +7538,53 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:55 GMT
--	Parent Layer: `7f8fb588eff07f514174277fd0f3231963e6bd747dc7dee2d3211b81e363f74f`
+-	Created: Tue, 15 Mar 2016 18:35:23 GMT
+-	Parent Layer: `ae9b8ddfd9c32a8ed112812127e7bc80397ad00e65caee76f5011c07c9840095`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:4d1b43e95d282fb605f59953a30870b960a3d31633787e09b1c1373b6e5b42d5`
--	v2 Content-Length: 1.6 KB (1574 bytes)
+-	v2 Blob: `sha256:4cc5d704f959c2d58d364168522508b607f3847fcd085a957ebff5226cc8e555`
+-	v2 Content-Length: 1.6 KB (1572 bytes)
 
-#### `0712bb58ce70a0a47dc48d3dace5297d0af7c37e5ebeafbcf5c8962168ce56bb`
+#### `e0842630d2f27875c4730faad9a2f96f2c457484732541716ac01b6d5d1e89ae`
 
 ```dockerfile
 ENV JETTY_RUN=/run/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:55 GMT
--	Parent Layer: `135ab881e30f3e9301b2989e8c3f3b2f72aeac3877254f1a270f596ec5cff410`
+-	Created: Tue, 15 Mar 2016 18:35:24 GMT
+-	Parent Layer: `75e8302c15713d4503b8c240754f3addbfda46442b3e5d95d90be329ad43c0f0`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `843d69542293e9595b3110a130cb0d77d43fafe396da141b7f6229530f281038`
+#### `3f4e377502b8f35087c91c94b0f2339ee14cf4844391531863f513af207c9a4e`
 
 ```dockerfile
 ENV JETTY_STATE=/run/jetty/jetty.state
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:56 GMT
--	Parent Layer: `0712bb58ce70a0a47dc48d3dace5297d0af7c37e5ebeafbcf5c8962168ce56bb`
+-	Created: Tue, 15 Mar 2016 18:35:24 GMT
+-	Parent Layer: `e0842630d2f27875c4730faad9a2f96f2c457484732541716ac01b6d5d1e89ae`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ff8649a904fbd7cb3c4810a49eaab0fa412d551042bc397f8681b9b193624845`
+#### `dc0497b9e38fd2b61bb744b30e578cf8ca4ccf11d2e5f5ec616dbccf46189b43`
 
 ```dockerfile
 ENV TMPDIR=/tmp/jetty
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:57 GMT
--	Parent Layer: `843d69542293e9595b3110a130cb0d77d43fafe396da141b7f6229530f281038`
+-	Created: Tue, 15 Mar 2016 18:35:25 GMT
+-	Parent Layer: `3f4e377502b8f35087c91c94b0f2339ee14cf4844391531863f513af207c9a4e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `9e9a69a64f977c81541c6310ea30d7df58090f681d9fe6d4da420c2bc0675910`
+#### `eaafb79f599e86345292aa402d97a1ac8690ec20687fdfc3e1968eab1d840e46`
 
 ```dockerfile
 RUN set -xe \
@@ -7528,60 +7592,60 @@ RUN set -xe \
 	&& chown -R jetty:jetty "$JETTY_RUN" "$TMPDIR" "$JETTY_BASE"
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:58 GMT
--	Parent Layer: `ff8649a904fbd7cb3c4810a49eaab0fa412d551042bc397f8681b9b193624845`
+-	Created: Tue, 15 Mar 2016 18:35:27 GMT
+-	Parent Layer: `dc0497b9e38fd2b61bb744b30e578cf8ca4ccf11d2e5f5ec616dbccf46189b43`
 -	Docker Version: 1.9.1
 -	Virtual Size: 2.9 KB (2886 bytes)
--	v2 Blob: `sha256:606a44dc577df19a8a73a56ed31a9f45978466af542e270e72a8de13df512577`
--	v2 Content-Length: 1.6 KB (1595 bytes)
+-	v2 Blob: `sha256:40429b72c7d7917e1c0d3a68e5e9ff9a1b62a7290053d3c6518f4785d5e2cb18`
+-	v2 Content-Length: 1.6 KB (1592 bytes)
 
-#### `d12ec51c546312786940cd287dca94e1572e2940a99ec495ed5369e86eeb44fc`
+#### `8aacd06442fa273ad10bbc79e432d6ceb9df8aa428abac69314db2dc9ea0d626`
 
 ```dockerfile
 COPY file:aa208da8cde538c5bdb6adcf9ee5e6b3ba99ca94d5f4547a92f506447b96a37a in /
 ```
 
--	Created: Thu, 03 Mar 2016 08:56:59 GMT
--	Parent Layer: `9e9a69a64f977c81541c6310ea30d7df58090f681d9fe6d4da420c2bc0675910`
+-	Created: Tue, 15 Mar 2016 18:35:28 GMT
+-	Parent Layer: `eaafb79f599e86345292aa402d97a1ac8690ec20687fdfc3e1968eab1d840e46`
 -	Docker Version: 1.9.1
 -	Virtual Size: 585.0 B
 -	v2 Blob: `sha256:1f66fb389df2be9e3762afb6a0614d52b8656c8e518794edabaee1624ccd3bdb`
 -	v2 Content-Length: 432.0 B
 
-#### `df4529d48d733e6896c2897b28599ff9323e8bef7071bc1c010482f1c3c8268b`
+#### `3895a919b700383f6a4924fb89c8a2a6834835f6edbe2eb658d060c7b644093e`
 
 ```dockerfile
 EXPOSE 8080/tcp
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:00 GMT
--	Parent Layer: `d12ec51c546312786940cd287dca94e1572e2940a99ec495ed5369e86eeb44fc`
+-	Created: Tue, 15 Mar 2016 18:35:28 GMT
+-	Parent Layer: `8aacd06442fa273ad10bbc79e432d6ceb9df8aa428abac69314db2dc9ea0d626`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `77a88cf2d4bfd7baea18df5a36a59f9317997197a801c3c0fc83144618a14fb3`
+#### `cde0c365449eb2ad1771a18fdcd6ddc1741f0b7a7a970d0ba2862a174c62a71e`
 
 ```dockerfile
 ENTRYPOINT &{["/docker-entrypoint.bash"]}
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:00 GMT
--	Parent Layer: `df4529d48d733e6896c2897b28599ff9323e8bef7071bc1c010482f1c3c8268b`
+-	Created: Tue, 15 Mar 2016 18:35:29 GMT
+-	Parent Layer: `3895a919b700383f6a4924fb89c8a2a6834835f6edbe2eb658d060c7b644093e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `77ab3043ce3d70e105fadcd8813239ad1d985745634cfa8a8c8364a1663c8b14`
+#### `2113a128577e3245eb70c2d9867adee0918d126d311abe849ac4bc8fd5395f1c`
 
 ```dockerfile
 CMD ["java" "-Djava.io.tmpdir=/tmp/jetty" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
--	Created: Thu, 03 Mar 2016 08:57:01 GMT
--	Parent Layer: `77a88cf2d4bfd7baea18df5a36a59f9317997197a801c3c0fc83144618a14fb3`
+-	Created: Tue, 15 Mar 2016 18:35:30 GMT
+-	Parent Layer: `cde0c365449eb2ad1771a18fdcd6ddc1741f0b7a7a970d0ba2862a174c62a71e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`

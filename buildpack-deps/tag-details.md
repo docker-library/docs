@@ -527,30 +527,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:precise-curl`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:93d176c8aab086a46cbeb8904e2c49e96979273a7d88100e10718b1a87be5cf8
+$ docker pull library/buildpack-deps@sha256:3e3b4f258b0f5663d7fe5d4b505909828f4916e00cfc0d2046aea96c07da7803
 ```
 
--	Total Virtual Size: 149.6 MB (149589812 bytes)
--	Total v2 Content-Length: 49.4 MB (49374600 bytes)
+-	Total Virtual Size: 149.6 MB (149606322 bytes)
+-	Total v2 Content-Length: 49.4 MB (49377900 bytes)
 
 ### Layers (5)
 
-#### `d36853104a96f725356e236732e83b395d69eb9399eef03de12907595690181e`
+#### `0ac018a4c975914a58ebec70aa3a6c77e1e3007a81f580bfcec6dc1af4a86bee`
 
 ```dockerfile
-ADD file:0eef5dbf45d5dc860424fff326e44afa32e29a88ca83df3eb7eb7b07ba726d2f in /
+ADD file:550b878b1b62172343ff02e247af272e3e8278f4487aae4a6d1b607ffa754e7f in /
 ```
 
--	Created: Thu, 03 Mar 2016 21:37:59 GMT
+-	Created: Tue, 15 Mar 2016 23:02:16 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 137.9 MB (137879301 bytes)
--	v2 Blob: `sha256:bdba161e38a3974e56a2dc2ab53900fbc03ea47b84c366f491ede15d0255ae55`
--	v2 Content-Length: 44.2 MB (44207015 bytes)
+-	Virtual Size: 137.9 MB (137895811 bytes)
+-	v2 Blob: `sha256:c8a1a7c651d922c187a2c0278910edfff779b00fa3b687c08089b0a40cbd580a`
+-	v2 Content-Length: 44.2 MB (44210256 bytes)
 
-#### `7bd636defce2e245aa33f28beae5103163cbe7e456eeb70ea7d3a36b6894ab78`
+#### `2306a5fbe60b1bd8d8daf54ec0153bb223aa5aed57efa7b7f5ab5fa05b6dc01d`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -564,40 +565,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:03 GMT
--	Parent Layer: `d36853104a96f725356e236732e83b395d69eb9399eef03de12907595690181e`
+-	Created: Tue, 15 Mar 2016 23:02:19 GMT
+-	Parent Layer: `0ac018a4c975914a58ebec70aa3a6c77e1e3007a81f580bfcec6dc1af4a86bee`
 -	Docker Version: 1.9.1
 -	Virtual Size: 156.2 KB (156213 bytes)
--	v2 Blob: `sha256:0be59402b6e8f9ce80007016d213dc16e75c68610ec2781f5807c48476e6c23e`
--	v2 Content-Length: 57.9 KB (57859 bytes)
+-	v2 Blob: `sha256:db1a0f82c13766ce3ae84bc1d10402ece06d6afa1283045f9a189e58297a5657`
+-	v2 Content-Length: 57.9 KB (57866 bytes)
 
-#### `66dd5c38ddb741a0438b860a5d767de6d2d7ff7ba333dc44312d42c2fd237cda`
+#### `8f949476691d944e1a220c38f40fc5574fd58651cb90b330c0e05d7c0565be90`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:04 GMT
--	Parent Layer: `7bd636defce2e245aa33f28beae5103163cbe7e456eeb70ea7d3a36b6894ab78`
+-	Created: Tue, 15 Mar 2016 23:02:21 GMT
+-	Parent Layer: `2306a5fbe60b1bd8d8daf54ec0153bb223aa5aed57efa7b7f5ab5fa05b6dc01d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1911 bytes)
--	v2 Blob: `sha256:56c7e8e7f9b5efbdc0d0f14de24b27ce0cd7ae4dd82ccee11f1f10cc37d9a1d5`
--	v2 Content-Length: 680.0 B
+-	v2 Blob: `sha256:ced3157b95b210255b647d8ec87873e48462e0c1868bb03d653e6dc5084e1ede`
+-	v2 Content-Length: 682.0 B
 
-#### `f8440fa556355151e6e73deaed01405b89f389e3df4494f41790778548ac3b0a`
+#### `af263f35884627ee72ce89d7695b6f5a461fa15d118c43ffd6aadf9f9dbbb960`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:05 GMT
--	Parent Layer: `66dd5c38ddb741a0438b860a5d767de6d2d7ff7ba333dc44312d42c2fd237cda`
+-	Created: Tue, 15 Mar 2016 23:02:21 GMT
+-	Parent Layer: `8f949476691d944e1a220c38f40fc5574fd58651cb90b330c0e05d7c0565be90`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `0c987cbf25c6505b3c2a35640333687754d305b1d5d3933a9aa583da640af14c`
+#### `e96f4f25f695ae10818873f36b5a3aadd7be22a2420a4deb7b28031cbb4e7710`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -607,40 +608,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:43:58 GMT
--	Parent Layer: `f8440fa556355151e6e73deaed01405b89f389e3df4494f41790778548ac3b0a`
+-	Created: Tue, 15 Mar 2016 23:08:23 GMT
+-	Parent Layer: `af263f35884627ee72ce89d7695b6f5a461fa15d118c43ffd6aadf9f9dbbb960`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.6 MB (11552387 bytes)
--	v2 Blob: `sha256:d4eee7a051478a8c83edec46537e688e4aaf2df0f042aee76b4a4b432e38ee33`
--	v2 Content-Length: 5.1 MB (5109014 bytes)
+-	v2 Blob: `sha256:b8a627aa7f97a18aac192c696970f27edcaaff1933a87ee23e523e825780472f`
+-	v2 Content-Length: 5.1 MB (5109064 bytes)
 
 ## `buildpack-deps:precise-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:10daddabe8a3f365587eaab48acbe559c1815923b7c9331057059624a7a5f6e2
+$ docker pull library/buildpack-deps@sha256:3eb1352d81911d14cbf87e1a3bef97a071e505a9eff4678d803592a02108bd87
 ```
 
--	Total Virtual Size: 243.9 MB (243942423 bytes)
--	Total v2 Content-Length: 80.2 MB (80217153 bytes)
+-	Total Virtual Size: 244.0 MB (243958933 bytes)
+-	Total v2 Content-Length: 80.2 MB (80220425 bytes)
 
 ### Layers (6)
 
-#### `d36853104a96f725356e236732e83b395d69eb9399eef03de12907595690181e`
+#### `0ac018a4c975914a58ebec70aa3a6c77e1e3007a81f580bfcec6dc1af4a86bee`
 
 ```dockerfile
-ADD file:0eef5dbf45d5dc860424fff326e44afa32e29a88ca83df3eb7eb7b07ba726d2f in /
+ADD file:550b878b1b62172343ff02e247af272e3e8278f4487aae4a6d1b607ffa754e7f in /
 ```
 
--	Created: Thu, 03 Mar 2016 21:37:59 GMT
+-	Created: Tue, 15 Mar 2016 23:02:16 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 137.9 MB (137879301 bytes)
--	v2 Blob: `sha256:bdba161e38a3974e56a2dc2ab53900fbc03ea47b84c366f491ede15d0255ae55`
--	v2 Content-Length: 44.2 MB (44207015 bytes)
+-	Virtual Size: 137.9 MB (137895811 bytes)
+-	v2 Blob: `sha256:c8a1a7c651d922c187a2c0278910edfff779b00fa3b687c08089b0a40cbd580a`
+-	v2 Content-Length: 44.2 MB (44210256 bytes)
 
-#### `7bd636defce2e245aa33f28beae5103163cbe7e456eeb70ea7d3a36b6894ab78`
+#### `2306a5fbe60b1bd8d8daf54ec0153bb223aa5aed57efa7b7f5ab5fa05b6dc01d`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -654,40 +656,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:03 GMT
--	Parent Layer: `d36853104a96f725356e236732e83b395d69eb9399eef03de12907595690181e`
+-	Created: Tue, 15 Mar 2016 23:02:19 GMT
+-	Parent Layer: `0ac018a4c975914a58ebec70aa3a6c77e1e3007a81f580bfcec6dc1af4a86bee`
 -	Docker Version: 1.9.1
 -	Virtual Size: 156.2 KB (156213 bytes)
--	v2 Blob: `sha256:0be59402b6e8f9ce80007016d213dc16e75c68610ec2781f5807c48476e6c23e`
--	v2 Content-Length: 57.9 KB (57859 bytes)
+-	v2 Blob: `sha256:db1a0f82c13766ce3ae84bc1d10402ece06d6afa1283045f9a189e58297a5657`
+-	v2 Content-Length: 57.9 KB (57866 bytes)
 
-#### `66dd5c38ddb741a0438b860a5d767de6d2d7ff7ba333dc44312d42c2fd237cda`
+#### `8f949476691d944e1a220c38f40fc5574fd58651cb90b330c0e05d7c0565be90`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:04 GMT
--	Parent Layer: `7bd636defce2e245aa33f28beae5103163cbe7e456eeb70ea7d3a36b6894ab78`
+-	Created: Tue, 15 Mar 2016 23:02:21 GMT
+-	Parent Layer: `2306a5fbe60b1bd8d8daf54ec0153bb223aa5aed57efa7b7f5ab5fa05b6dc01d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1911 bytes)
--	v2 Blob: `sha256:56c7e8e7f9b5efbdc0d0f14de24b27ce0cd7ae4dd82ccee11f1f10cc37d9a1d5`
--	v2 Content-Length: 680.0 B
+-	v2 Blob: `sha256:ced3157b95b210255b647d8ec87873e48462e0c1868bb03d653e6dc5084e1ede`
+-	v2 Content-Length: 682.0 B
 
-#### `f8440fa556355151e6e73deaed01405b89f389e3df4494f41790778548ac3b0a`
+#### `af263f35884627ee72ce89d7695b6f5a461fa15d118c43ffd6aadf9f9dbbb960`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:05 GMT
--	Parent Layer: `66dd5c38ddb741a0438b860a5d767de6d2d7ff7ba333dc44312d42c2fd237cda`
+-	Created: Tue, 15 Mar 2016 23:02:21 GMT
+-	Parent Layer: `8f949476691d944e1a220c38f40fc5574fd58651cb90b330c0e05d7c0565be90`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `0c987cbf25c6505b3c2a35640333687754d305b1d5d3933a9aa583da640af14c`
+#### `e96f4f25f695ae10818873f36b5a3aadd7be22a2420a4deb7b28031cbb4e7710`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -697,14 +699,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:43:58 GMT
--	Parent Layer: `f8440fa556355151e6e73deaed01405b89f389e3df4494f41790778548ac3b0a`
+-	Created: Tue, 15 Mar 2016 23:08:23 GMT
+-	Parent Layer: `af263f35884627ee72ce89d7695b6f5a461fa15d118c43ffd6aadf9f9dbbb960`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.6 MB (11552387 bytes)
--	v2 Blob: `sha256:d4eee7a051478a8c83edec46537e688e4aaf2df0f042aee76b4a4b432e38ee33`
--	v2 Content-Length: 5.1 MB (5109014 bytes)
+-	v2 Blob: `sha256:b8a627aa7f97a18aac192c696970f27edcaaff1933a87ee23e523e825780472f`
+-	v2 Content-Length: 5.1 MB (5109064 bytes)
 
-#### `96faebf4af8275fbb9a701d21ffe7e48a1180b8e7f457741f94cc11f9d178747`
+#### `59747dc91581e12da07198cec8a9bfd3ac97a57518f810f53945abac89f75ff4`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -717,40 +719,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:48:49 GMT
--	Parent Layer: `0c987cbf25c6505b3c2a35640333687754d305b1d5d3933a9aa583da640af14c`
+-	Created: Tue, 15 Mar 2016 23:09:35 GMT
+-	Parent Layer: `e96f4f25f695ae10818873f36b5a3aadd7be22a2420a4deb7b28031cbb4e7710`
 -	Docker Version: 1.9.1
 -	Virtual Size: 94.4 MB (94352611 bytes)
--	v2 Blob: `sha256:7c2490b1b12c36779fc6b50f0ec3b8fde1f9520e7629fd6ed3884988558e663d`
--	v2 Content-Length: 30.8 MB (30842553 bytes)
+-	v2 Blob: `sha256:7537b47809df14d863c207151e4854c9cf4ae5590de25f226e74b72a96bc510a`
+-	v2 Content-Length: 30.8 MB (30842525 bytes)
 
 ## `buildpack-deps:precise`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:295771f709d2d29625c8cccf64db9f9c5949dd89550610533e93e2ed6e238660
+$ docker pull library/buildpack-deps@sha256:4d099ba09b4cfd59204d72265b5eaeb293b3929cc16b36181395e84711a8f0be
 ```
 
--	Total Virtual Size: 492.1 MB (492148787 bytes)
--	Total v2 Content-Length: 161.5 MB (161479858 bytes)
+-	Total Virtual Size: 492.2 MB (492165266 bytes)
+-	Total v2 Content-Length: 161.5 MB (161483595 bytes)
 
 ### Layers (7)
 
-#### `d36853104a96f725356e236732e83b395d69eb9399eef03de12907595690181e`
+#### `0ac018a4c975914a58ebec70aa3a6c77e1e3007a81f580bfcec6dc1af4a86bee`
 
 ```dockerfile
-ADD file:0eef5dbf45d5dc860424fff326e44afa32e29a88ca83df3eb7eb7b07ba726d2f in /
+ADD file:550b878b1b62172343ff02e247af272e3e8278f4487aae4a6d1b607ffa754e7f in /
 ```
 
--	Created: Thu, 03 Mar 2016 21:37:59 GMT
+-	Created: Tue, 15 Mar 2016 23:02:16 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 137.9 MB (137879301 bytes)
--	v2 Blob: `sha256:bdba161e38a3974e56a2dc2ab53900fbc03ea47b84c366f491ede15d0255ae55`
--	v2 Content-Length: 44.2 MB (44207015 bytes)
+-	Virtual Size: 137.9 MB (137895811 bytes)
+-	v2 Blob: `sha256:c8a1a7c651d922c187a2c0278910edfff779b00fa3b687c08089b0a40cbd580a`
+-	v2 Content-Length: 44.2 MB (44210256 bytes)
 
-#### `7bd636defce2e245aa33f28beae5103163cbe7e456eeb70ea7d3a36b6894ab78`
+#### `2306a5fbe60b1bd8d8daf54ec0153bb223aa5aed57efa7b7f5ab5fa05b6dc01d`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -764,40 +767,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:03 GMT
--	Parent Layer: `d36853104a96f725356e236732e83b395d69eb9399eef03de12907595690181e`
+-	Created: Tue, 15 Mar 2016 23:02:19 GMT
+-	Parent Layer: `0ac018a4c975914a58ebec70aa3a6c77e1e3007a81f580bfcec6dc1af4a86bee`
 -	Docker Version: 1.9.1
 -	Virtual Size: 156.2 KB (156213 bytes)
--	v2 Blob: `sha256:0be59402b6e8f9ce80007016d213dc16e75c68610ec2781f5807c48476e6c23e`
--	v2 Content-Length: 57.9 KB (57859 bytes)
+-	v2 Blob: `sha256:db1a0f82c13766ce3ae84bc1d10402ece06d6afa1283045f9a189e58297a5657`
+-	v2 Content-Length: 57.9 KB (57866 bytes)
 
-#### `66dd5c38ddb741a0438b860a5d767de6d2d7ff7ba333dc44312d42c2fd237cda`
+#### `8f949476691d944e1a220c38f40fc5574fd58651cb90b330c0e05d7c0565be90`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:04 GMT
--	Parent Layer: `7bd636defce2e245aa33f28beae5103163cbe7e456eeb70ea7d3a36b6894ab78`
+-	Created: Tue, 15 Mar 2016 23:02:21 GMT
+-	Parent Layer: `2306a5fbe60b1bd8d8daf54ec0153bb223aa5aed57efa7b7f5ab5fa05b6dc01d`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1911 bytes)
--	v2 Blob: `sha256:56c7e8e7f9b5efbdc0d0f14de24b27ce0cd7ae4dd82ccee11f1f10cc37d9a1d5`
--	v2 Content-Length: 680.0 B
+-	v2 Blob: `sha256:ced3157b95b210255b647d8ec87873e48462e0c1868bb03d653e6dc5084e1ede`
+-	v2 Content-Length: 682.0 B
 
-#### `f8440fa556355151e6e73deaed01405b89f389e3df4494f41790778548ac3b0a`
+#### `af263f35884627ee72ce89d7695b6f5a461fa15d118c43ffd6aadf9f9dbbb960`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:05 GMT
--	Parent Layer: `66dd5c38ddb741a0438b860a5d767de6d2d7ff7ba333dc44312d42c2fd237cda`
+-	Created: Tue, 15 Mar 2016 23:02:21 GMT
+-	Parent Layer: `8f949476691d944e1a220c38f40fc5574fd58651cb90b330c0e05d7c0565be90`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `0c987cbf25c6505b3c2a35640333687754d305b1d5d3933a9aa583da640af14c`
+#### `e96f4f25f695ae10818873f36b5a3aadd7be22a2420a4deb7b28031cbb4e7710`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -807,14 +810,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:43:58 GMT
--	Parent Layer: `f8440fa556355151e6e73deaed01405b89f389e3df4494f41790778548ac3b0a`
+-	Created: Tue, 15 Mar 2016 23:08:23 GMT
+-	Parent Layer: `af263f35884627ee72ce89d7695b6f5a461fa15d118c43ffd6aadf9f9dbbb960`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.6 MB (11552387 bytes)
--	v2 Blob: `sha256:d4eee7a051478a8c83edec46537e688e4aaf2df0f042aee76b4a4b432e38ee33`
--	v2 Content-Length: 5.1 MB (5109014 bytes)
+-	v2 Blob: `sha256:b8a627aa7f97a18aac192c696970f27edcaaff1933a87ee23e523e825780472f`
+-	v2 Content-Length: 5.1 MB (5109064 bytes)
 
-#### `96faebf4af8275fbb9a701d21ffe7e48a1180b8e7f457741f94cc11f9d178747`
+#### `59747dc91581e12da07198cec8a9bfd3ac97a57518f810f53945abac89f75ff4`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -827,14 +830,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:48:49 GMT
--	Parent Layer: `0c987cbf25c6505b3c2a35640333687754d305b1d5d3933a9aa583da640af14c`
+-	Created: Tue, 15 Mar 2016 23:09:35 GMT
+-	Parent Layer: `e96f4f25f695ae10818873f36b5a3aadd7be22a2420a4deb7b28031cbb4e7710`
 -	Docker Version: 1.9.1
 -	Virtual Size: 94.4 MB (94352611 bytes)
--	v2 Blob: `sha256:7c2490b1b12c36779fc6b50f0ec3b8fde1f9520e7629fd6ed3884988558e663d`
--	v2 Content-Length: 30.8 MB (30842553 bytes)
+-	v2 Blob: `sha256:7537b47809df14d863c207151e4854c9cf4ae5590de25f226e74b72a96bc510a`
+-	v2 Content-Length: 30.8 MB (30842525 bytes)
 
-#### `2a08ad43e1c6dde097c36fadd89316c4c380756360796d25afd210d002ec4d23`
+#### `340931d9136c7762a588ccb4d2fcd46e9661403583e789998703765acf0dcf5f`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -875,50 +878,50 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:55:14 GMT
--	Parent Layer: `96faebf4af8275fbb9a701d21ffe7e48a1180b8e7f457741f94cc11f9d178747`
+-	Created: Tue, 15 Mar 2016 23:11:37 GMT
+-	Parent Layer: `59747dc91581e12da07198cec8a9bfd3ac97a57518f810f53945abac89f75ff4`
 -	Docker Version: 1.9.1
--	Virtual Size: 248.2 MB (248206364 bytes)
--	v2 Blob: `sha256:d8309e54c6aebe62ddb24c4a17e789a4b553da9f508a2e78d621142274cce284`
--	v2 Content-Length: 81.3 MB (81262705 bytes)
+-	Virtual Size: 248.2 MB (248206333 bytes)
+-	v2 Blob: `sha256:175a09ce0f4cf0ab8dda598b2aa2751a7e03e64680ed06bf95d167436c7b01e2`
+-	v2 Content-Length: 81.3 MB (81263170 bytes)
 
 ## `buildpack-deps:sid-curl`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:2a43b198a3c610d1293c07e07e5efbe90faa966b83db2a1ae0073fe6a8d9b209
+$ docker pull library/buildpack-deps@sha256:4f3e1523cbdb15a989a9032a0b77c1c8e48f9eb57980011ef8d1d310e5b9bf1a
 ```
 
--	Total Virtual Size: 167.8 MB (167753450 bytes)
--	Total v2 Content-Length: 72.9 MB (72871193 bytes)
+-	Total Virtual Size: 167.9 MB (167939506 bytes)
+-	Total v2 Content-Length: 73.0 MB (73007488 bytes)
 
 ### Layers (3)
 
-#### `b5de930e7040ae58792b231db29dd5211ae2ff4a8f50d22b708b71e469a97614`
+#### `7251332b2e31b56d266cb906249879c3e6d3b1b97e3d424ff463c6bc54922da8`
 
 ```dockerfile
-ADD file:40abe7b4f03f6f20a03be0a7bb4d087284a78bb1ad38b1bd2fe0a5667b035578 in /
+ADD file:f3f29e42c464a73fe139c47dd24fa18ca3fd066034ad463ea931c54b04894c1b in /
 ```
 
--	Created: Wed, 24 Feb 2016 17:24:56 GMT
+-	Created: Tue, 15 Mar 2016 23:06:31 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 118.9 MB (118856892 bytes)
--	v2 Blob: `sha256:dab5cddabf2c6b3306236231d50697d84827770ad029144d254edec4ee1f2878`
--	v2 Content-Length: 52.4 MB (52439799 bytes)
+-	Virtual Size: 119.0 MB (119017877 bytes)
+-	v2 Blob: `sha256:ca2616d8b7a07eb0a3364795a68d37d76767337558c133ad4372855865634c99`
+-	v2 Content-Length: 52.6 MB (52552190 bytes)
 
-#### `8456ed0918aa0d8291b003f5913023e4b0de2afd5c186ced31b60e99376fd91f`
+#### `6eac02ac30e147385251764904dfcaa03da03ffde169bc79c43458c303de0b67`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Wed, 24 Feb 2016 17:24:58 GMT
--	Parent Layer: `b5de930e7040ae58792b231db29dd5211ae2ff4a8f50d22b708b71e469a97614`
+-	Created: Tue, 15 Mar 2016 23:06:34 GMT
+-	Parent Layer: `7251332b2e31b56d266cb906249879c3e6d3b1b97e3d424ff463c6bc54922da8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a0ef1fad306c7308e372307194f930841502c021ce386cd380135a8f8dbc29cc`
+#### `f3fdb905ad578906af69c4bd1cfae97091386b6640a08bf5c5b024753d215e81`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -928,50 +931,50 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 24 Feb 2016 17:34:04 GMT
--	Parent Layer: `8456ed0918aa0d8291b003f5913023e4b0de2afd5c186ced31b60e99376fd91f`
+-	Created: Tue, 15 Mar 2016 23:11:57 GMT
+-	Parent Layer: `6eac02ac30e147385251764904dfcaa03da03ffde169bc79c43458c303de0b67`
 -	Docker Version: 1.9.1
--	Virtual Size: 48.9 MB (48896558 bytes)
--	v2 Blob: `sha256:8b50b0d03c6fc003e13986b91f64295b0f02b1a28bd5e658876a054021ceaa62`
--	v2 Content-Length: 20.4 MB (20431362 bytes)
+-	Virtual Size: 48.9 MB (48921629 bytes)
+-	v2 Blob: `sha256:43baca9203f0d170ec87278f9e701571ea005f0e3d7a5445ff37ecb202145492`
+-	v2 Content-Length: 20.5 MB (20455266 bytes)
 
 ## `buildpack-deps:sid-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:44c8d394971750f06092de72092767ed0d51fe76ae3c7d2ff122430d6a99a66f
+$ docker pull library/buildpack-deps@sha256:c6557955a271ee37ab3a3220135efbb4c58b50434b6d9db4329d01642861012c
 ```
 
--	Total Virtual Size: 302.3 MB (302303132 bytes)
--	Total v2 Content-Length: 119.5 MB (119504544 bytes)
+-	Total Virtual Size: 302.7 MB (302650252 bytes)
+-	Total v2 Content-Length: 119.7 MB (119747592 bytes)
 
 ### Layers (4)
 
-#### `b5de930e7040ae58792b231db29dd5211ae2ff4a8f50d22b708b71e469a97614`
+#### `7251332b2e31b56d266cb906249879c3e6d3b1b97e3d424ff463c6bc54922da8`
 
 ```dockerfile
-ADD file:40abe7b4f03f6f20a03be0a7bb4d087284a78bb1ad38b1bd2fe0a5667b035578 in /
+ADD file:f3f29e42c464a73fe139c47dd24fa18ca3fd066034ad463ea931c54b04894c1b in /
 ```
 
--	Created: Wed, 24 Feb 2016 17:24:56 GMT
+-	Created: Tue, 15 Mar 2016 23:06:31 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 118.9 MB (118856892 bytes)
--	v2 Blob: `sha256:dab5cddabf2c6b3306236231d50697d84827770ad029144d254edec4ee1f2878`
--	v2 Content-Length: 52.4 MB (52439799 bytes)
+-	Virtual Size: 119.0 MB (119017877 bytes)
+-	v2 Blob: `sha256:ca2616d8b7a07eb0a3364795a68d37d76767337558c133ad4372855865634c99`
+-	v2 Content-Length: 52.6 MB (52552190 bytes)
 
-#### `8456ed0918aa0d8291b003f5913023e4b0de2afd5c186ced31b60e99376fd91f`
+#### `6eac02ac30e147385251764904dfcaa03da03ffde169bc79c43458c303de0b67`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Wed, 24 Feb 2016 17:24:58 GMT
--	Parent Layer: `b5de930e7040ae58792b231db29dd5211ae2ff4a8f50d22b708b71e469a97614`
+-	Created: Tue, 15 Mar 2016 23:06:34 GMT
+-	Parent Layer: `7251332b2e31b56d266cb906249879c3e6d3b1b97e3d424ff463c6bc54922da8`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `a0ef1fad306c7308e372307194f930841502c021ce386cd380135a8f8dbc29cc`
+#### `f3fdb905ad578906af69c4bd1cfae97091386b6640a08bf5c5b024753d215e81`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -981,14 +984,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 24 Feb 2016 17:34:04 GMT
--	Parent Layer: `8456ed0918aa0d8291b003f5913023e4b0de2afd5c186ced31b60e99376fd91f`
+-	Created: Tue, 15 Mar 2016 23:11:57 GMT
+-	Parent Layer: `6eac02ac30e147385251764904dfcaa03da03ffde169bc79c43458c303de0b67`
 -	Docker Version: 1.9.1
--	Virtual Size: 48.9 MB (48896558 bytes)
--	v2 Blob: `sha256:8b50b0d03c6fc003e13986b91f64295b0f02b1a28bd5e658876a054021ceaa62`
--	v2 Content-Length: 20.4 MB (20431362 bytes)
+-	Virtual Size: 48.9 MB (48921629 bytes)
+-	v2 Blob: `sha256:43baca9203f0d170ec87278f9e701571ea005f0e3d7a5445ff37ecb202145492`
+-	v2 Content-Length: 20.5 MB (20455266 bytes)
 
-#### `0fc6db373f0e511bf53aeede13f9296f6fb4460dcdd16545ba66ed6a38b7e744`
+#### `f1518ec684ad3c75fc3e713002805f95607336ddd1dd80f700a27e87484aca7a`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1001,12 +1004,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 24 Feb 2016 17:42:38 GMT
--	Parent Layer: `a0ef1fad306c7308e372307194f930841502c021ce386cd380135a8f8dbc29cc`
+-	Created: Tue, 15 Mar 2016 23:12:20 GMT
+-	Parent Layer: `f3fdb905ad578906af69c4bd1cfae97091386b6640a08bf5c5b024753d215e81`
 -	Docker Version: 1.9.1
--	Virtual Size: 134.5 MB (134549682 bytes)
--	v2 Blob: `sha256:4cc3510f64956cf5b7d4de215343ed1cc5a96845152431e4d1d1a578fb1450dc`
--	v2 Content-Length: 46.6 MB (46633351 bytes)
+-	Virtual Size: 134.7 MB (134710746 bytes)
+-	v2 Blob: `sha256:31913b692a7b1cb479377c15b67c258d8d8e32f4de88f89f8e4ca46d7a5db1a8`
+-	v2 Content-Length: 46.7 MB (46740104 bytes)
 
 ## `buildpack-deps:sid`
 
@@ -1258,40 +1261,40 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:stretch`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:f1929f3a5095a16389c0feeafd8183391705f76f0c4a6f83c24a649358001b55
+$ docker pull library/buildpack-deps@sha256:8b8f9ad926e7134ff0eea9992c9f5872af2448d99c4df83bcd582068d062f3da
 ```
 
--	Total Virtual Size: 1.0 GB (1032370523 bytes)
--	Total v2 Content-Length: 396.6 MB (396602254 bytes)
+-	Total Virtual Size: 1.0 GB (1039837702 bytes)
+-	Total v2 Content-Length: 402.6 MB (402561453 bytes)
 
 ### Layers (5)
 
-#### `b2bd9374a48ad4aa88ece5db4644416b695fc346229c950c80602382311efb16`
+#### `404209cfd5984ab1ccbb73969f8c30c2fc33d4d6ef29d88be6bb293d7ab34567`
 
 ```dockerfile
-ADD file:004cef740abab0cb9670a1dfca1888dfc9770a4573f2f3f9e8434fd3e52b0274 in /
+ADD file:8bbf26f4e2103f6b61689ac2999b18414fd2bc18e605cda797d2bc2c07914ba8 in /
 ```
 
--	Created: Wed, 24 Feb 2016 17:25:25 GMT
+-	Created: Tue, 15 Mar 2016 23:06:51 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 117.8 MB (117814189 bytes)
--	v2 Blob: `sha256:619fc8039ade0d1b49506c453de90770425ed97e94dc8ef859df91216ae14f8f`
--	v2 Content-Length: 52.0 MB (52002942 bytes)
+-	Virtual Size: 118.8 MB (118843679 bytes)
+-	v2 Blob: `sha256:e6c9867e62e224629b5d3f295c0bf42a6714b9e002d5bb3331ad43e291982bcc`
+-	v2 Content-Length: 52.4 MB (52440658 bytes)
 
-#### `a07bd52eb6e62dfc41eab0626c59949ed705110ff24ffc11c9741848fd36d394`
+#### `4897fac71597188dea86c54072e2534de0fd779c27b231bd7f747dd2ddcf566d`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Wed, 24 Feb 2016 17:25:28 GMT
--	Parent Layer: `b2bd9374a48ad4aa88ece5db4644416b695fc346229c950c80602382311efb16`
+-	Created: Tue, 15 Mar 2016 23:06:54 GMT
+-	Parent Layer: `404209cfd5984ab1ccbb73969f8c30c2fc33d4d6ef29d88be6bb293d7ab34567`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `dd3009b586b51a5807e2de2b4c8cb9c40a77c583769ce42275a96716dca1b86d`
+#### `f84d5da4a3021d81b96d02024fb656757bb809ed1e3b993ef90441f559e47fc1`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1301,14 +1304,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 24 Feb 2016 17:34:23 GMT
--	Parent Layer: `a07bd52eb6e62dfc41eab0626c59949ed705110ff24ffc11c9741848fd36d394`
+-	Created: Tue, 15 Mar 2016 23:14:11 GMT
+-	Parent Layer: `4897fac71597188dea86c54072e2534de0fd779c27b231bd7f747dd2ddcf566d`
 -	Docker Version: 1.9.1
--	Virtual Size: 48.9 MB (48895256 bytes)
--	v2 Blob: `sha256:e6943f7fdd8e0e9f2e8a23bf89fc79605bd3ddb20b0dff34a314c07125e6f41d`
--	v2 Content-Length: 20.4 MB (20432409 bytes)
+-	Virtual Size: 48.9 MB (48929073 bytes)
+-	v2 Blob: `sha256:ad55f5a695ed0f2552a818f91d50e57fd5ef628e8439b38bb1d57de8289da1db`
+-	v2 Content-Length: 20.5 MB (20455930 bytes)
 
-#### `07366a413c12fb692006e2f88a6cc7327c4410905eab906fd12e40cf74951598`
+#### `fa0de0113cf8b98b00c2aa9c35b8e22bfd786a0b531bf2de293abf3c6090d517`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1321,14 +1324,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 24 Feb 2016 17:43:02 GMT
--	Parent Layer: `dd3009b586b51a5807e2de2b4c8cb9c40a77c583769ce42275a96716dca1b86d`
+-	Created: Tue, 15 Mar 2016 23:14:33 GMT
+-	Parent Layer: `f84d5da4a3021d81b96d02024fb656757bb809ed1e3b993ef90441f559e47fc1`
 -	Docker Version: 1.9.1
--	Virtual Size: 134.1 MB (134087280 bytes)
--	v2 Blob: `sha256:b2196a963aa426482f4e15b5860274eb3efd93b104e49b68bdaef4b991b7910f`
--	v2 Content-Length: 46.4 MB (46428563 bytes)
+-	Virtual Size: 134.0 MB (134016032 bytes)
+-	v2 Blob: `sha256:ee7c089bf38e990eb6dfa08967c83448721466f3cb18a73a108a2095f55d050d`
+-	v2 Content-Length: 46.5 MB (46492551 bytes)
 
-#### `468b0bbac4599c6bbcb9c5c8a55652c7fbd76b49796ec620154af49778bb6442`
+#### `4b910c7c9e014c5edde9d1ed2d8c89b909120ff0e78552c67af0db3377ebbb31`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1369,40 +1372,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Wed, 24 Feb 2016 17:47:51 GMT
--	Parent Layer: `07366a413c12fb692006e2f88a6cc7327c4410905eab906fd12e40cf74951598`
+-	Created: Tue, 15 Mar 2016 23:15:34 GMT
+-	Parent Layer: `fa0de0113cf8b98b00c2aa9c35b8e22bfd786a0b531bf2de293abf3c6090d517`
 -	Docker Version: 1.9.1
--	Virtual Size: 731.6 MB (731573798 bytes)
--	v2 Blob: `sha256:29324efbdca932948e576ed170f5951b65c8a6f821af7da14708c6330dd63357`
--	v2 Content-Length: 277.7 MB (277738308 bytes)
+-	Virtual Size: 738.0 MB (738048918 bytes)
+-	v2 Blob: `sha256:4ce25dec3b48964b420911d494d4f737a4a03d68eed67719a9fcb08a1416291a`
+-	v2 Content-Length: 283.2 MB (283172282 bytes)
 
 ## `buildpack-deps:trusty-curl`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:40dc1944137f7e7129823cee19b9e9f699761acdc6799709bd001541e8e6ef33
+$ docker pull library/buildpack-deps@sha256:fdf5d35aea40f603dd6772e2efd936af50a9d1ff51c47a861b98ee4cf98db6bd
 ```
 
--	Total Virtual Size: 199.6 MB (199648831 bytes)
--	Total v2 Content-Length: 70.4 MB (70363078 bytes)
+-	Total Virtual Size: 199.6 MB (199648832 bytes)
+-	Total v2 Content-Length: 70.4 MB (70362772 bytes)
 
 ### Layers (5)
 
-#### `454970bd163ba95435b50e963edd63b2b2fff4c1845e5d3cd03d5ba8afb8a08d`
+#### `1b19f5a8e3aac7b4738d14654a72ff05541a4f0c44f028dfb22044b107483a02`
 
 ```dockerfile
-ADD file:b9504126dc55908988977286e89c43c7ea73a506d43fae82c29ef132e21b6ece in /
+ADD file:d272e313f84c4fc8a1b525afe487d06b7dc98732ebeb6f3eaea3228778b16d11 in /
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:46 GMT
+-	Created: Tue, 15 Mar 2016 23:03:10 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 187.8 MB (187763841 bytes)
--	v2 Blob: `sha256:5a132a7e7af11f304041e93efb9cb2a0a7839bccaec5a03cfbdc9a3f5d0eb481`
--	v2 Content-Length: 65.7 MB (65688471 bytes)
+-	Virtual Size: 187.8 MB (187763842 bytes)
+-	v2 Blob: `sha256:faecf96fd5abda415f967e78ccdf3c1f10dd4cd67ecadd44cc5bed4e7f234a5b`
+-	v2 Content-Length: 65.7 MB (65688118 bytes)
 
-#### `38112156678df7d8001ae944f118d283009565540dc0cd88fb39fccc88c3c7f2`
+#### `09694f91574ea3fca8558306c55abbbd47e01b8cb9ae782c66b9682a95c7f71e`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -1416,40 +1420,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:51 GMT
--	Parent Layer: `454970bd163ba95435b50e963edd63b2b2fff4c1845e5d3cd03d5ba8afb8a08d`
+-	Created: Tue, 15 Mar 2016 23:03:15 GMT
+-	Parent Layer: `1b19f5a8e3aac7b4738d14654a72ff05541a4f0c44f028dfb22044b107483a02`
 -	Docker Version: 1.9.1
 -	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:fd2731e4c50ce221d785d4ce26a8430bca9a95bfe4162fafc997a1cc65682cce`
--	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Blob: `sha256:995977506e98ae413f1ee6bd9ffb8c22ae166bc81c5ce37dae4af42bb333ca14`
+-	v2 Content-Length: 71.5 KB (71480 bytes)
 
-#### `4e1f7c524148bf80fcc4ce9991e88d708048d38440e3e3a14d56e72c17ddccc7`
+#### `27955ff53489ad82d352105f6d9cb7fb0524f774b30580884fbf429b73839516`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:53 GMT
--	Parent Layer: `38112156678df7d8001ae944f118d283009565540dc0cd88fb39fccc88c3c7f2`
+-	Created: Tue, 15 Mar 2016 23:03:16 GMT
+-	Parent Layer: `09694f91574ea3fca8558306c55abbbd47e01b8cb9ae782c66b9682a95c7f71e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:28a2f68d1120598986362662445c47dce7ec13c2662479e7aab9f0ecad4a7416`
+-	v2 Blob: `sha256:efb63fb8dcb6a68070f734bd51cf3699c9931c585675067371fd04aaffdaaf6e`
 -	v2 Content-Length: 681.0 B
 
-#### `56063ad57855f2632f641a622efa81a0feda1731bfadda497b1288d11feef4da`
+#### `c917d6497f55cc4f4e9c33a327d6608f5c133891baba50e43a4dd941754344e3`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:53 GMT
--	Parent Layer: `4e1f7c524148bf80fcc4ce9991e88d708048d38440e3e3a14d56e72c17ddccc7`
+-	Created: Tue, 15 Mar 2016 23:03:17 GMT
+-	Parent Layer: `27955ff53489ad82d352105f6d9cb7fb0524f774b30580884fbf429b73839516`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5d26022646c4a2ffb2ea51188f5b7c7bea52b00ead098b65519e9f5ff23aaba1`
+#### `5fcef070df0c24044f61af56411afbfa0ee30cf6284168b1c77c64c69a3f7fc5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1459,40 +1463,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:45:40 GMT
--	Parent Layer: `56063ad57855f2632f641a622efa81a0feda1731bfadda497b1288d11feef4da`
+-	Created: Tue, 15 Mar 2016 23:17:52 GMT
+-	Parent Layer: `c917d6497f55cc4f4e9c33a327d6608f5c133891baba50e43a4dd941754344e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.7 MB (11688562 bytes)
--	v2 Blob: `sha256:cbd49bdc83cdf0a5ddb0e6b0c8312ca9fd8597e740524cff20303c2358b19a5f`
--	v2 Content-Length: 4.6 MB (4602411 bytes)
+-	v2 Blob: `sha256:93a3764178b489ef6030c434a1e0cfa66fd857a0b90b690f7323d57880bb2cb5`
+-	v2 Content-Length: 4.6 MB (4602461 bytes)
 
 ## `buildpack-deps:trusty-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:8fff1e2d8e60bed67bdebd13a54e719058a41e40a5da615f50dba0c9be67c3b5
+$ docker pull library/buildpack-deps@sha256:4aef1bfede21783c8b9499789e79c709cd390d8432cebfbb18c7514edaf8fece
 ```
 
--	Total Virtual Size: 279.6 MB (279645494 bytes)
--	Total v2 Content-Length: 99.4 MB (99373049 bytes)
+-	Total Virtual Size: 279.6 MB (279645495 bytes)
+-	Total v2 Content-Length: 99.4 MB (99372732 bytes)
 
 ### Layers (6)
 
-#### `454970bd163ba95435b50e963edd63b2b2fff4c1845e5d3cd03d5ba8afb8a08d`
+#### `1b19f5a8e3aac7b4738d14654a72ff05541a4f0c44f028dfb22044b107483a02`
 
 ```dockerfile
-ADD file:b9504126dc55908988977286e89c43c7ea73a506d43fae82c29ef132e21b6ece in /
+ADD file:d272e313f84c4fc8a1b525afe487d06b7dc98732ebeb6f3eaea3228778b16d11 in /
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:46 GMT
+-	Created: Tue, 15 Mar 2016 23:03:10 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 187.8 MB (187763841 bytes)
--	v2 Blob: `sha256:5a132a7e7af11f304041e93efb9cb2a0a7839bccaec5a03cfbdc9a3f5d0eb481`
--	v2 Content-Length: 65.7 MB (65688471 bytes)
+-	Virtual Size: 187.8 MB (187763842 bytes)
+-	v2 Blob: `sha256:faecf96fd5abda415f967e78ccdf3c1f10dd4cd67ecadd44cc5bed4e7f234a5b`
+-	v2 Content-Length: 65.7 MB (65688118 bytes)
 
-#### `38112156678df7d8001ae944f118d283009565540dc0cd88fb39fccc88c3c7f2`
+#### `09694f91574ea3fca8558306c55abbbd47e01b8cb9ae782c66b9682a95c7f71e`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -1506,40 +1511,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:51 GMT
--	Parent Layer: `454970bd163ba95435b50e963edd63b2b2fff4c1845e5d3cd03d5ba8afb8a08d`
+-	Created: Tue, 15 Mar 2016 23:03:15 GMT
+-	Parent Layer: `1b19f5a8e3aac7b4738d14654a72ff05541a4f0c44f028dfb22044b107483a02`
 -	Docker Version: 1.9.1
 -	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:fd2731e4c50ce221d785d4ce26a8430bca9a95bfe4162fafc997a1cc65682cce`
--	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Blob: `sha256:995977506e98ae413f1ee6bd9ffb8c22ae166bc81c5ce37dae4af42bb333ca14`
+-	v2 Content-Length: 71.5 KB (71480 bytes)
 
-#### `4e1f7c524148bf80fcc4ce9991e88d708048d38440e3e3a14d56e72c17ddccc7`
+#### `27955ff53489ad82d352105f6d9cb7fb0524f774b30580884fbf429b73839516`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:53 GMT
--	Parent Layer: `38112156678df7d8001ae944f118d283009565540dc0cd88fb39fccc88c3c7f2`
+-	Created: Tue, 15 Mar 2016 23:03:16 GMT
+-	Parent Layer: `09694f91574ea3fca8558306c55abbbd47e01b8cb9ae782c66b9682a95c7f71e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:28a2f68d1120598986362662445c47dce7ec13c2662479e7aab9f0ecad4a7416`
+-	v2 Blob: `sha256:efb63fb8dcb6a68070f734bd51cf3699c9931c585675067371fd04aaffdaaf6e`
 -	v2 Content-Length: 681.0 B
 
-#### `56063ad57855f2632f641a622efa81a0feda1731bfadda497b1288d11feef4da`
+#### `c917d6497f55cc4f4e9c33a327d6608f5c133891baba50e43a4dd941754344e3`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:53 GMT
--	Parent Layer: `4e1f7c524148bf80fcc4ce9991e88d708048d38440e3e3a14d56e72c17ddccc7`
+-	Created: Tue, 15 Mar 2016 23:03:17 GMT
+-	Parent Layer: `27955ff53489ad82d352105f6d9cb7fb0524f774b30580884fbf429b73839516`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5d26022646c4a2ffb2ea51188f5b7c7bea52b00ead098b65519e9f5ff23aaba1`
+#### `5fcef070df0c24044f61af56411afbfa0ee30cf6284168b1c77c64c69a3f7fc5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1549,14 +1554,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:45:40 GMT
--	Parent Layer: `56063ad57855f2632f641a622efa81a0feda1731bfadda497b1288d11feef4da`
+-	Created: Tue, 15 Mar 2016 23:17:52 GMT
+-	Parent Layer: `c917d6497f55cc4f4e9c33a327d6608f5c133891baba50e43a4dd941754344e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.7 MB (11688562 bytes)
--	v2 Blob: `sha256:cbd49bdc83cdf0a5ddb0e6b0c8312ca9fd8597e740524cff20303c2358b19a5f`
--	v2 Content-Length: 4.6 MB (4602411 bytes)
+-	v2 Blob: `sha256:93a3764178b489ef6030c434a1e0cfa66fd857a0b90b690f7323d57880bb2cb5`
+-	v2 Content-Length: 4.6 MB (4602461 bytes)
 
-#### `48f1a209b2d4e2ecca58bd0e2b005b30090413fe42530cd25c390c24c5db6fb2`
+#### `17d8ac594ed341502322fb2f554fb1725479ceb6f864fba082edab8d88fdcc08`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1569,40 +1574,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:50:50 GMT
--	Parent Layer: `5d26022646c4a2ffb2ea51188f5b7c7bea52b00ead098b65519e9f5ff23aaba1`
+-	Created: Tue, 15 Mar 2016 23:19:56 GMT
+-	Parent Layer: `5fcef070df0c24044f61af56411afbfa0ee30cf6284168b1c77c64c69a3f7fc5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 80.0 MB (79996663 bytes)
--	v2 Blob: `sha256:40c75769eb053a37f49d8f3db25fa2cf65d66ccd12d655da80afe0758af4f7e7`
--	v2 Content-Length: 29.0 MB (29009971 bytes)
+-	v2 Blob: `sha256:fb56229e83c18ae03dfc72393d43ef26f2fc602008a589778feb22006669d8af`
+-	v2 Content-Length: 29.0 MB (29009960 bytes)
 
 ## `buildpack-deps:trusty`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:4a3dbb54136b2f55af19b4325f98eef8d4b1a9f0c7f0bb8000fa14066fbb41aa
+$ docker pull library/buildpack-deps@sha256:6df177641cb5bf6444f69251d809542de2a2a7fc5556cc064ae7507174aed3ce
 ```
 
--	Total Virtual Size: 535.3 MB (535331511 bytes)
--	Total v2 Content-Length: 198.2 MB (198160478 bytes)
+-	Total Virtual Size: 535.4 MB (535373914 bytes)
+-	Total v2 Content-Length: 198.2 MB (198177555 bytes)
 
 ### Layers (7)
 
-#### `454970bd163ba95435b50e963edd63b2b2fff4c1845e5d3cd03d5ba8afb8a08d`
+#### `1b19f5a8e3aac7b4738d14654a72ff05541a4f0c44f028dfb22044b107483a02`
 
 ```dockerfile
-ADD file:b9504126dc55908988977286e89c43c7ea73a506d43fae82c29ef132e21b6ece in /
+ADD file:d272e313f84c4fc8a1b525afe487d06b7dc98732ebeb6f3eaea3228778b16d11 in /
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:46 GMT
+-	Created: Tue, 15 Mar 2016 23:03:10 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 187.8 MB (187763841 bytes)
--	v2 Blob: `sha256:5a132a7e7af11f304041e93efb9cb2a0a7839bccaec5a03cfbdc9a3f5d0eb481`
--	v2 Content-Length: 65.7 MB (65688471 bytes)
+-	Virtual Size: 187.8 MB (187763842 bytes)
+-	v2 Blob: `sha256:faecf96fd5abda415f967e78ccdf3c1f10dd4cd67ecadd44cc5bed4e7f234a5b`
+-	v2 Content-Length: 65.7 MB (65688118 bytes)
 
-#### `38112156678df7d8001ae944f118d283009565540dc0cd88fb39fccc88c3c7f2`
+#### `09694f91574ea3fca8558306c55abbbd47e01b8cb9ae782c66b9682a95c7f71e`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -1616,40 +1622,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:51 GMT
--	Parent Layer: `454970bd163ba95435b50e963edd63b2b2fff4c1845e5d3cd03d5ba8afb8a08d`
+-	Created: Tue, 15 Mar 2016 23:03:15 GMT
+-	Parent Layer: `1b19f5a8e3aac7b4738d14654a72ff05541a4f0c44f028dfb22044b107483a02`
 -	Docker Version: 1.9.1
 -	Virtual Size: 194.5 KB (194533 bytes)
--	v2 Blob: `sha256:fd2731e4c50ce221d785d4ce26a8430bca9a95bfe4162fafc997a1cc65682cce`
--	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Blob: `sha256:995977506e98ae413f1ee6bd9ffb8c22ae166bc81c5ce37dae4af42bb333ca14`
+-	v2 Content-Length: 71.5 KB (71480 bytes)
 
-#### `4e1f7c524148bf80fcc4ce9991e88d708048d38440e3e3a14d56e72c17ddccc7`
+#### `27955ff53489ad82d352105f6d9cb7fb0524f774b30580884fbf429b73839516`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:53 GMT
--	Parent Layer: `38112156678df7d8001ae944f118d283009565540dc0cd88fb39fccc88c3c7f2`
+-	Created: Tue, 15 Mar 2016 23:03:16 GMT
+-	Parent Layer: `09694f91574ea3fca8558306c55abbbd47e01b8cb9ae782c66b9682a95c7f71e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:28a2f68d1120598986362662445c47dce7ec13c2662479e7aab9f0ecad4a7416`
+-	v2 Blob: `sha256:efb63fb8dcb6a68070f734bd51cf3699c9931c585675067371fd04aaffdaaf6e`
 -	v2 Content-Length: 681.0 B
 
-#### `56063ad57855f2632f641a622efa81a0feda1731bfadda497b1288d11feef4da`
+#### `c917d6497f55cc4f4e9c33a327d6608f5c133891baba50e43a4dd941754344e3`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:38:53 GMT
--	Parent Layer: `4e1f7c524148bf80fcc4ce9991e88d708048d38440e3e3a14d56e72c17ddccc7`
+-	Created: Tue, 15 Mar 2016 23:03:17 GMT
+-	Parent Layer: `27955ff53489ad82d352105f6d9cb7fb0524f774b30580884fbf429b73839516`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `5d26022646c4a2ffb2ea51188f5b7c7bea52b00ead098b65519e9f5ff23aaba1`
+#### `5fcef070df0c24044f61af56411afbfa0ee30cf6284168b1c77c64c69a3f7fc5`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1659,14 +1665,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:45:40 GMT
--	Parent Layer: `56063ad57855f2632f641a622efa81a0feda1731bfadda497b1288d11feef4da`
+-	Created: Tue, 15 Mar 2016 23:17:52 GMT
+-	Parent Layer: `c917d6497f55cc4f4e9c33a327d6608f5c133891baba50e43a4dd941754344e3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 11.7 MB (11688562 bytes)
--	v2 Blob: `sha256:cbd49bdc83cdf0a5ddb0e6b0c8312ca9fd8597e740524cff20303c2358b19a5f`
--	v2 Content-Length: 4.6 MB (4602411 bytes)
+-	v2 Blob: `sha256:93a3764178b489ef6030c434a1e0cfa66fd857a0b90b690f7323d57880bb2cb5`
+-	v2 Content-Length: 4.6 MB (4602461 bytes)
 
-#### `48f1a209b2d4e2ecca58bd0e2b005b30090413fe42530cd25c390c24c5db6fb2`
+#### `17d8ac594ed341502322fb2f554fb1725479ceb6f864fba082edab8d88fdcc08`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1679,14 +1685,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:50:50 GMT
--	Parent Layer: `5d26022646c4a2ffb2ea51188f5b7c7bea52b00ead098b65519e9f5ff23aaba1`
+-	Created: Tue, 15 Mar 2016 23:19:56 GMT
+-	Parent Layer: `5fcef070df0c24044f61af56411afbfa0ee30cf6284168b1c77c64c69a3f7fc5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 80.0 MB (79996663 bytes)
--	v2 Blob: `sha256:40c75769eb053a37f49d8f3db25fa2cf65d66ccd12d655da80afe0758af4f7e7`
--	v2 Content-Length: 29.0 MB (29009971 bytes)
+-	v2 Blob: `sha256:fb56229e83c18ae03dfc72393d43ef26f2fc602008a589778feb22006669d8af`
+-	v2 Content-Length: 29.0 MB (29009960 bytes)
 
-#### `b5f10acad9e70cf9ab7de24a8e49ab5bc55de41277a276137290168d0b7ae2fe`
+#### `18c53c7d1c4407d1e7f512702964bbb367d638bd03e87ed5e60d999c71040fc9`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -1727,12 +1733,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:56:59 GMT
--	Parent Layer: `48f1a209b2d4e2ecca58bd0e2b005b30090413fe42530cd25c390c24c5db6fb2`
+-	Created: Tue, 15 Mar 2016 23:21:39 GMT
+-	Parent Layer: `17d8ac594ed341502322fb2f554fb1725479ceb6f864fba082edab8d88fdcc08`
 -	Docker Version: 1.9.1
--	Virtual Size: 255.7 MB (255686017 bytes)
--	v2 Blob: `sha256:556836ec2c4f3d0d5471dc10ba72919c6a9641ffe93f569c96641e449e161fac`
--	v2 Content-Length: 98.8 MB (98787429 bytes)
+-	Virtual Size: 255.7 MB (255728419 bytes)
+-	v2 Blob: `sha256:4cda5af337fad72ec456812a0504bcae80b912576d007677e0a379b523e47062`
+-	v2 Content-Length: 98.8 MB (98804823 bytes)
 
 ## `buildpack-deps:wheezy-curl`
 
@@ -1984,11 +1990,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## `buildpack-deps:wily-curl`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:d9b2e90c049540c10f76e821f5acf9404d9050c70b728ee2c5a5eb811ac3ac89
+$ docker pull library/buildpack-deps@sha256:be5fb52bf0bb9c19de49303e4149b5b023413054696faed915787d4928e15346
 ```
 
 -	Total Virtual Size: 152.7 MB (152698474 bytes)
--	Total v2 Content-Length: 58.0 MB (57973554 bytes)
+-	Total v2 Content-Length: 58.0 MB (57973472 bytes)
 
 ### Layers (5)
 
@@ -2004,10 +2010,11 @@ ADD file:5844b26ad5bb5ea9c063f417dfe74ba57668d03d1409ae79d17658b7e46af346 in /
 -	v2 Blob: `sha256:d9aca89b88099bfa357926705a78408223de75a12f3db4de11c98ae118cd6a96`
 -	v2 Content-Length: 50.8 MB (50775070 bytes)
 
-#### `558961dc2bf66624e9f4225002d659c46ccd812482d284539e6ddcb00879da7d`
+#### `c924f7370d195b684e845a7e654ca751cc43fa995c710619c3cbc236129d8334`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -2021,40 +2028,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:39:48 GMT
+-	Created: Tue, 15 Mar 2016 23:04:44 GMT
 -	Parent Layer: `6436dd1812cca6f329c9ddf56e7b958ba20a0ed7030fde4db22297b3883cfc7e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 701.0 B
--	v2 Blob: `sha256:094907597129b72a761708006fe5a12e5fec31dceada33dd188288fddef46258`
--	v2 Content-Length: 761.0 B
+-	v2 Blob: `sha256:a9d344cc6f06e7fc9a8e7fe1a1d32e179a4e9d5436fa09187c60c579869d1d25`
+-	v2 Content-Length: 759.0 B
 
-#### `fc92aa221006fd347daabd56d6aa058a1f840aa557a894d46d9eb60d9b734595`
+#### `1f3eb929a1305b33b41b37a556a02a28ca2a5aff8cce1c12396edfb8e50b295a`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:39:50 GMT
--	Parent Layer: `558961dc2bf66624e9f4225002d659c46ccd812482d284539e6ddcb00879da7d`
+-	Created: Tue, 15 Mar 2016 23:04:46 GMT
+-	Parent Layer: `c924f7370d195b684e845a7e654ca751cc43fa995c710619c3cbc236129d8334`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1863 bytes)
--	v2 Blob: `sha256:02c431b6e99fd955d60f15fc1020c529b2505ccd2e71d2bcf1001be04ebd6696`
--	v2 Content-Length: 680.0 B
+-	v2 Blob: `sha256:27e2ab7f0ea324d9e001ce03a4ba63f0466c1a0153aa8ee4d3e6c56ee6a248b7`
+-	v2 Content-Length: 681.0 B
 
-#### `3c751ae18eeac8108e6ed3a09d96225181ddf8c0fc1ec14beacb1eb42eda688b`
+#### `ff954877fd67c0521fc1a7b60590ca3d7994dfa439e54c6710af3ec85b342988`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:39:51 GMT
--	Parent Layer: `fc92aa221006fd347daabd56d6aa058a1f840aa557a894d46d9eb60d9b734595`
+-	Created: Tue, 15 Mar 2016 23:04:46 GMT
+-	Parent Layer: `1f3eb929a1305b33b41b37a556a02a28ca2a5aff8cce1c12396edfb8e50b295a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `eca50826ea6b2800cd380c938525d42a91b8145e43ad1e7c41fd530740b93c56`
+#### `1e947f4dcfcce1330043a8d9a597def3d8b7d0b6d2405e9756eec866f5047eb3`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2064,21 +2071,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:46:06 GMT
--	Parent Layer: `3c751ae18eeac8108e6ed3a09d96225181ddf8c0fc1ec14beacb1eb42eda688b`
+-	Created: Tue, 15 Mar 2016 23:22:50 GMT
+-	Parent Layer: `ff954877fd67c0521fc1a7b60590ca3d7994dfa439e54c6710af3ec85b342988`
 -	Docker Version: 1.9.1
 -	Virtual Size: 16.8 MB (16846960 bytes)
--	v2 Blob: `sha256:cf4631fc8b36512f5d07e92920d5ef530e25564d5c54d8de44c2be51fa727d61`
--	v2 Content-Length: 7.2 MB (7197011 bytes)
+-	v2 Blob: `sha256:8052f863e1a3b09348fd8825dd19a92f6f947a73b6a7b1f5c5ee8435c316425d`
+-	v2 Content-Length: 7.2 MB (7196930 bytes)
 
 ## `buildpack-deps:wily-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:9cbe8fd55a2986470ae80bbff0b653e9dae1ffe1bdd9fe0724f01eea8226fb42
+$ docker pull library/buildpack-deps@sha256:3f718ccf6dfd0051b93df27e105696eb20e6459784b4792131beb7b588701080
 ```
 
 -	Total Virtual Size: 266.5 MB (266507053 bytes)
--	Total v2 Content-Length: 96.2 MB (96207956 bytes)
+-	Total v2 Content-Length: 96.2 MB (96207902 bytes)
 
 ### Layers (6)
 
@@ -2094,10 +2101,11 @@ ADD file:5844b26ad5bb5ea9c063f417dfe74ba57668d03d1409ae79d17658b7e46af346 in /
 -	v2 Blob: `sha256:d9aca89b88099bfa357926705a78408223de75a12f3db4de11c98ae118cd6a96`
 -	v2 Content-Length: 50.8 MB (50775070 bytes)
 
-#### `558961dc2bf66624e9f4225002d659c46ccd812482d284539e6ddcb00879da7d`
+#### `c924f7370d195b684e845a7e654ca751cc43fa995c710619c3cbc236129d8334`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -2111,40 +2119,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:39:48 GMT
+-	Created: Tue, 15 Mar 2016 23:04:44 GMT
 -	Parent Layer: `6436dd1812cca6f329c9ddf56e7b958ba20a0ed7030fde4db22297b3883cfc7e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 701.0 B
--	v2 Blob: `sha256:094907597129b72a761708006fe5a12e5fec31dceada33dd188288fddef46258`
--	v2 Content-Length: 761.0 B
+-	v2 Blob: `sha256:a9d344cc6f06e7fc9a8e7fe1a1d32e179a4e9d5436fa09187c60c579869d1d25`
+-	v2 Content-Length: 759.0 B
 
-#### `fc92aa221006fd347daabd56d6aa058a1f840aa557a894d46d9eb60d9b734595`
+#### `1f3eb929a1305b33b41b37a556a02a28ca2a5aff8cce1c12396edfb8e50b295a`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:39:50 GMT
--	Parent Layer: `558961dc2bf66624e9f4225002d659c46ccd812482d284539e6ddcb00879da7d`
+-	Created: Tue, 15 Mar 2016 23:04:46 GMT
+-	Parent Layer: `c924f7370d195b684e845a7e654ca751cc43fa995c710619c3cbc236129d8334`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1863 bytes)
--	v2 Blob: `sha256:02c431b6e99fd955d60f15fc1020c529b2505ccd2e71d2bcf1001be04ebd6696`
--	v2 Content-Length: 680.0 B
+-	v2 Blob: `sha256:27e2ab7f0ea324d9e001ce03a4ba63f0466c1a0153aa8ee4d3e6c56ee6a248b7`
+-	v2 Content-Length: 681.0 B
 
-#### `3c751ae18eeac8108e6ed3a09d96225181ddf8c0fc1ec14beacb1eb42eda688b`
+#### `ff954877fd67c0521fc1a7b60590ca3d7994dfa439e54c6710af3ec85b342988`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:39:51 GMT
--	Parent Layer: `fc92aa221006fd347daabd56d6aa058a1f840aa557a894d46d9eb60d9b734595`
+-	Created: Tue, 15 Mar 2016 23:04:46 GMT
+-	Parent Layer: `1f3eb929a1305b33b41b37a556a02a28ca2a5aff8cce1c12396edfb8e50b295a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `eca50826ea6b2800cd380c938525d42a91b8145e43ad1e7c41fd530740b93c56`
+#### `1e947f4dcfcce1330043a8d9a597def3d8b7d0b6d2405e9756eec866f5047eb3`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2154,14 +2162,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:46:06 GMT
--	Parent Layer: `3c751ae18eeac8108e6ed3a09d96225181ddf8c0fc1ec14beacb1eb42eda688b`
+-	Created: Tue, 15 Mar 2016 23:22:50 GMT
+-	Parent Layer: `ff954877fd67c0521fc1a7b60590ca3d7994dfa439e54c6710af3ec85b342988`
 -	Docker Version: 1.9.1
 -	Virtual Size: 16.8 MB (16846960 bytes)
--	v2 Blob: `sha256:cf4631fc8b36512f5d07e92920d5ef530e25564d5c54d8de44c2be51fa727d61`
--	v2 Content-Length: 7.2 MB (7197011 bytes)
+-	v2 Blob: `sha256:8052f863e1a3b09348fd8825dd19a92f6f947a73b6a7b1f5c5ee8435c316425d`
+-	v2 Content-Length: 7.2 MB (7196930 bytes)
 
-#### `f41ebe8c7666c1d1d10e50317fde8f257f62df736a83c2ba2a6988d4c478ec57`
+#### `6681492988ac82d8f2a8783ad52e1fd399ce4ba1927fb2f12500414810b0ce2c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2174,21 +2182,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:52:23 GMT
--	Parent Layer: `eca50826ea6b2800cd380c938525d42a91b8145e43ad1e7c41fd530740b93c56`
+-	Created: Tue, 15 Mar 2016 23:23:47 GMT
+-	Parent Layer: `1e947f4dcfcce1330043a8d9a597def3d8b7d0b6d2405e9756eec866f5047eb3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 113.8 MB (113808579 bytes)
--	v2 Blob: `sha256:fabaff0c834936b688fdb6f8cc99cbf1afa5ca1edd68212ecccd7634f516098d`
--	v2 Content-Length: 38.2 MB (38234402 bytes)
+-	v2 Blob: `sha256:5687d396af9f6b2b8ea7f37e06d9edfdb51ef859e755913bf0f78cf16fcf1008`
+-	v2 Content-Length: 38.2 MB (38234430 bytes)
 
 ## `buildpack-deps:wily`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:d60b93750f120708de14f2ea3cce8d3f9d9b0a04134de57039b117bbd9a1f6a8
+$ docker pull library/buildpack-deps@sha256:3a837487194c7b08ccf8d830925f1626b9a6b5ce9918c18382f406c302cc6233
 ```
 
--	Total Virtual Size: 636.3 MB (636274080 bytes)
--	Total v2 Content-Length: 229.7 MB (229681162 bytes)
+-	Total Virtual Size: 636.3 MB (636306542 bytes)
+-	Total v2 Content-Length: 229.7 MB (229710237 bytes)
 
 ### Layers (7)
 
@@ -2204,10 +2212,11 @@ ADD file:5844b26ad5bb5ea9c063f417dfe74ba57668d03d1409ae79d17658b7e46af346 in /
 -	v2 Blob: `sha256:d9aca89b88099bfa357926705a78408223de75a12f3db4de11c98ae118cd6a96`
 -	v2 Content-Length: 50.8 MB (50775070 bytes)
 
-#### `558961dc2bf66624e9f4225002d659c46ccd812482d284539e6ddcb00879da7d`
+#### `c924f7370d195b684e845a7e654ca751cc43fa995c710619c3cbc236129d8334`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -2221,40 +2230,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:39:48 GMT
+-	Created: Tue, 15 Mar 2016 23:04:44 GMT
 -	Parent Layer: `6436dd1812cca6f329c9ddf56e7b958ba20a0ed7030fde4db22297b3883cfc7e`
 -	Docker Version: 1.9.1
 -	Virtual Size: 701.0 B
--	v2 Blob: `sha256:094907597129b72a761708006fe5a12e5fec31dceada33dd188288fddef46258`
--	v2 Content-Length: 761.0 B
+-	v2 Blob: `sha256:a9d344cc6f06e7fc9a8e7fe1a1d32e179a4e9d5436fa09187c60c579869d1d25`
+-	v2 Content-Length: 759.0 B
 
-#### `fc92aa221006fd347daabd56d6aa058a1f840aa557a894d46d9eb60d9b734595`
+#### `1f3eb929a1305b33b41b37a556a02a28ca2a5aff8cce1c12396edfb8e50b295a`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:39:50 GMT
--	Parent Layer: `558961dc2bf66624e9f4225002d659c46ccd812482d284539e6ddcb00879da7d`
+-	Created: Tue, 15 Mar 2016 23:04:46 GMT
+-	Parent Layer: `c924f7370d195b684e845a7e654ca751cc43fa995c710619c3cbc236129d8334`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1863 bytes)
--	v2 Blob: `sha256:02c431b6e99fd955d60f15fc1020c529b2505ccd2e71d2bcf1001be04ebd6696`
--	v2 Content-Length: 680.0 B
+-	v2 Blob: `sha256:27e2ab7f0ea324d9e001ce03a4ba63f0466c1a0153aa8ee4d3e6c56ee6a248b7`
+-	v2 Content-Length: 681.0 B
 
-#### `3c751ae18eeac8108e6ed3a09d96225181ddf8c0fc1ec14beacb1eb42eda688b`
+#### `ff954877fd67c0521fc1a7b60590ca3d7994dfa439e54c6710af3ec85b342988`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:39:51 GMT
--	Parent Layer: `fc92aa221006fd347daabd56d6aa058a1f840aa557a894d46d9eb60d9b734595`
+-	Created: Tue, 15 Mar 2016 23:04:46 GMT
+-	Parent Layer: `1f3eb929a1305b33b41b37a556a02a28ca2a5aff8cce1c12396edfb8e50b295a`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `eca50826ea6b2800cd380c938525d42a91b8145e43ad1e7c41fd530740b93c56`
+#### `1e947f4dcfcce1330043a8d9a597def3d8b7d0b6d2405e9756eec866f5047eb3`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2264,14 +2273,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:46:06 GMT
--	Parent Layer: `3c751ae18eeac8108e6ed3a09d96225181ddf8c0fc1ec14beacb1eb42eda688b`
+-	Created: Tue, 15 Mar 2016 23:22:50 GMT
+-	Parent Layer: `ff954877fd67c0521fc1a7b60590ca3d7994dfa439e54c6710af3ec85b342988`
 -	Docker Version: 1.9.1
 -	Virtual Size: 16.8 MB (16846960 bytes)
--	v2 Blob: `sha256:cf4631fc8b36512f5d07e92920d5ef530e25564d5c54d8de44c2be51fa727d61`
--	v2 Content-Length: 7.2 MB (7197011 bytes)
+-	v2 Blob: `sha256:8052f863e1a3b09348fd8825dd19a92f6f947a73b6a7b1f5c5ee8435c316425d`
+-	v2 Content-Length: 7.2 MB (7196930 bytes)
 
-#### `f41ebe8c7666c1d1d10e50317fde8f257f62df736a83c2ba2a6988d4c478ec57`
+#### `6681492988ac82d8f2a8783ad52e1fd399ce4ba1927fb2f12500414810b0ce2c`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2284,14 +2293,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:52:23 GMT
--	Parent Layer: `eca50826ea6b2800cd380c938525d42a91b8145e43ad1e7c41fd530740b93c56`
+-	Created: Tue, 15 Mar 2016 23:23:47 GMT
+-	Parent Layer: `1e947f4dcfcce1330043a8d9a597def3d8b7d0b6d2405e9756eec866f5047eb3`
 -	Docker Version: 1.9.1
 -	Virtual Size: 113.8 MB (113808579 bytes)
--	v2 Blob: `sha256:fabaff0c834936b688fdb6f8cc99cbf1afa5ca1edd68212ecccd7634f516098d`
--	v2 Content-Length: 38.2 MB (38234402 bytes)
+-	v2 Blob: `sha256:5687d396af9f6b2b8ea7f37e06d9edfdb51ef859e755913bf0f78cf16fcf1008`
+-	v2 Content-Length: 38.2 MB (38234430 bytes)
 
-#### `c4abd78394a56d7fe21de128d3a2e18427292152031986fbcafd3b5261a86bf5`
+#### `4bcdc3ed899b2c281599358cff9fe90da826ab46c46a379e7fd51366d734d0f1`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2332,40 +2341,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:58:36 GMT
--	Parent Layer: `f41ebe8c7666c1d1d10e50317fde8f257f62df736a83c2ba2a6988d4c478ec57`
+-	Created: Tue, 15 Mar 2016 23:31:41 GMT
+-	Parent Layer: `6681492988ac82d8f2a8783ad52e1fd399ce4ba1927fb2f12500414810b0ce2c`
 -	Docker Version: 1.9.1
--	Virtual Size: 369.8 MB (369767027 bytes)
--	v2 Blob: `sha256:ac4d59278eadaececc75a1940283b48e746ab1a5d81fc5cc7c7036cd92e1158f`
--	v2 Content-Length: 133.5 MB (133473206 bytes)
+-	Virtual Size: 369.8 MB (369799489 bytes)
+-	v2 Blob: `sha256:d0a78e9496039c2ec46e40979385d51cb749b92114913fa8dfb8e49b92e6da61`
+-	v2 Content-Length: 133.5 MB (133502335 bytes)
 
 ## `buildpack-deps:xenial-curl`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:e0ef2be63b95b40f074044738bcb2a795de088a4ff0a4e5173c50f13496e29ed
+$ docker pull library/buildpack-deps@sha256:52a57f519a98785be331ce85b0c10ead6af6605d8e1a92a329bb3fb43e2f209b
 ```
 
--	Total Virtual Size: 135.6 MB (135623658 bytes)
--	Total v2 Content-Length: 55.0 MB (54957350 bytes)
+-	Total Virtual Size: 135.9 MB (135862048 bytes)
+-	Total v2 Content-Length: 55.0 MB (55028718 bytes)
 
 ### Layers (5)
 
-#### `63f86c9900ccb231dc8732880b3b28c1ce6d1dbc530c3a25236b7cad22c1f313`
+#### `7f36c2c4ebb0ea8fdd2360db299141518387e79545281dbed3cf7d52a0de57dd`
 
 ```dockerfile
-ADD file:a119b6d2ca492104dbcd1720a3a6cf9996a4385f3d05a52f8c45837a94d6ac7d in /
+ADD file:87c671c742e653fafc3617a0a461c4280415aaa0c7f3a57229c2b35cf8f2612c in /
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:19 GMT
+-	Created: Tue, 15 Mar 2016 23:05:15 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 118.7 MB (118724534 bytes)
--	v2 Blob: `sha256:9f2e23c8721698025ad4cd88f5168d51f2f511e5ffb54caadc5bec4611c8bc9b`
--	v2 Content-Length: 47.8 MB (47758053 bytes)
+-	Virtual Size: 119.0 MB (118954894 bytes)
+-	v2 Blob: `sha256:275cd1a9b490a59b9911f0fe9798dbd622a39823132d941d41a468e79417935f`
+-	v2 Content-Length: 47.8 MB (47827139 bytes)
 
-#### `8f9feab8059c87c403dd8e2cd1b963e90b8466ecdb3def6b390adfd0ad4fd8cd`
+#### `100db5b177dd031138a321b98a1a7348fe93fea033a2a73892dd831211728cd4`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -2379,40 +2389,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:23 GMT
--	Parent Layer: `63f86c9900ccb231dc8732880b3b28c1ce6d1dbc530c3a25236b7cad22c1f313`
+-	Created: Tue, 15 Mar 2016 23:05:18 GMT
+-	Parent Layer: `7f36c2c4ebb0ea8fdd2360db299141518387e79545281dbed3cf7d52a0de57dd`
 -	Docker Version: 1.9.1
 -	Virtual Size: 701.0 B
--	v2 Blob: `sha256:442f742437b40eccb3327129820a9d6ea72b48ee30c2c46bf677f17194104957`
--	v2 Content-Length: 756.0 B
+-	v2 Blob: `sha256:2248354a45ef9116042a9aee8d7c1e99daecca6e7b9c26f6e01302646bc56a7c`
+-	v2 Content-Length: 760.0 B
 
-#### `cde27f5b40eca33335dec23cdb2028f0faef4056242fe79f658c713ae4e9c1f0`
+#### `194ae1ae9ec80ba170586ffa8b6073428b13f465eb36e5b8fad41432ad4c9a38`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:25 GMT
--	Parent Layer: `8f9feab8059c87c403dd8e2cd1b963e90b8466ecdb3def6b390adfd0ad4fd8cd`
+-	Created: Tue, 15 Mar 2016 23:05:20 GMT
+-	Parent Layer: `100db5b177dd031138a321b98a1a7348fe93fea033a2a73892dd831211728cd4`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:ef8abf8991b689454d90bbf1f78f8a4c0693ee3bafd17be308a45327925244ae`
--	v2 Content-Length: 681.0 B
+-	v2 Blob: `sha256:4c57d9a537408b9fc64d25bd570e8d963475022ed3a05304df6df8d0ffc279ca`
+-	v2 Content-Length: 682.0 B
 
-#### `d53d8719646f87889556c2b50207cf2ac7db79c90eb8b6dde44584e9feec3c2a`
+#### `5a8c670c310b6897b37c1e14ab3c178816fa8f95972165d1791c66f13eb952cc`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:26 GMT
--	Parent Layer: `cde27f5b40eca33335dec23cdb2028f0faef4056242fe79f658c713ae4e9c1f0`
+-	Created: Tue, 15 Mar 2016 23:05:20 GMT
+-	Parent Layer: `194ae1ae9ec80ba170586ffa8b6073428b13f465eb36e5b8fad41432ad4c9a38`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `0450ff67d220cb6a272e636aeced52ac8b88d89647c624c035e965e4514ba6ce`
+#### `6a8df3b7cd5b5860d0f86fe3654508ba93306f1c02af41f5c10e7ba3865bd273`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2422,40 +2432,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:46:20 GMT
--	Parent Layer: `d53d8719646f87889556c2b50207cf2ac7db79c90eb8b6dde44584e9feec3c2a`
+-	Created: Tue, 15 Mar 2016 23:33:35 GMT
+-	Parent Layer: `5a8c670c310b6897b37c1e14ab3c178816fa8f95972165d1791c66f13eb952cc`
 -	Docker Version: 1.9.1
--	Virtual Size: 16.9 MB (16896528 bytes)
--	v2 Blob: `sha256:17fce0ab935f6ec12950933c73d7c4d28957bc62ae5e0db675bf3a216e2d62ec`
--	v2 Content-Length: 7.2 MB (7197828 bytes)
+-	Virtual Size: 16.9 MB (16904558 bytes)
+-	v2 Blob: `sha256:a522a5639615f88898e24da2164715c01dfd1700eb4d3a0a4e818245a5489746`
+-	v2 Content-Length: 7.2 MB (7200105 bytes)
 
 ## `buildpack-deps:xenial-scm`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:316f9d18421873581a08ca23b2069a28a8e71be772dd012d62ece72d4464b571
+$ docker pull library/buildpack-deps@sha256:e3c012350458eb39ff9e3a470106e187f6a23117e4fb74fff640c38645c61cda
 ```
 
--	Total Virtual Size: 258.1 MB (258076909 bytes)
--	Total v2 Content-Length: 95.9 MB (95877178 bytes)
+-	Total Virtual Size: 258.4 MB (258350282 bytes)
+-	Total v2 Content-Length: 96.0 MB (95950492 bytes)
 
 ### Layers (6)
 
-#### `63f86c9900ccb231dc8732880b3b28c1ce6d1dbc530c3a25236b7cad22c1f313`
+#### `7f36c2c4ebb0ea8fdd2360db299141518387e79545281dbed3cf7d52a0de57dd`
 
 ```dockerfile
-ADD file:a119b6d2ca492104dbcd1720a3a6cf9996a4385f3d05a52f8c45837a94d6ac7d in /
+ADD file:87c671c742e653fafc3617a0a461c4280415aaa0c7f3a57229c2b35cf8f2612c in /
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:19 GMT
+-	Created: Tue, 15 Mar 2016 23:05:15 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 118.7 MB (118724534 bytes)
--	v2 Blob: `sha256:9f2e23c8721698025ad4cd88f5168d51f2f511e5ffb54caadc5bec4611c8bc9b`
--	v2 Content-Length: 47.8 MB (47758053 bytes)
+-	Virtual Size: 119.0 MB (118954894 bytes)
+-	v2 Blob: `sha256:275cd1a9b490a59b9911f0fe9798dbd622a39823132d941d41a468e79417935f`
+-	v2 Content-Length: 47.8 MB (47827139 bytes)
 
-#### `8f9feab8059c87c403dd8e2cd1b963e90b8466ecdb3def6b390adfd0ad4fd8cd`
+#### `100db5b177dd031138a321b98a1a7348fe93fea033a2a73892dd831211728cd4`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -2469,40 +2480,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:23 GMT
--	Parent Layer: `63f86c9900ccb231dc8732880b3b28c1ce6d1dbc530c3a25236b7cad22c1f313`
+-	Created: Tue, 15 Mar 2016 23:05:18 GMT
+-	Parent Layer: `7f36c2c4ebb0ea8fdd2360db299141518387e79545281dbed3cf7d52a0de57dd`
 -	Docker Version: 1.9.1
 -	Virtual Size: 701.0 B
--	v2 Blob: `sha256:442f742437b40eccb3327129820a9d6ea72b48ee30c2c46bf677f17194104957`
--	v2 Content-Length: 756.0 B
+-	v2 Blob: `sha256:2248354a45ef9116042a9aee8d7c1e99daecca6e7b9c26f6e01302646bc56a7c`
+-	v2 Content-Length: 760.0 B
 
-#### `cde27f5b40eca33335dec23cdb2028f0faef4056242fe79f658c713ae4e9c1f0`
+#### `194ae1ae9ec80ba170586ffa8b6073428b13f465eb36e5b8fad41432ad4c9a38`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:25 GMT
--	Parent Layer: `8f9feab8059c87c403dd8e2cd1b963e90b8466ecdb3def6b390adfd0ad4fd8cd`
+-	Created: Tue, 15 Mar 2016 23:05:20 GMT
+-	Parent Layer: `100db5b177dd031138a321b98a1a7348fe93fea033a2a73892dd831211728cd4`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:ef8abf8991b689454d90bbf1f78f8a4c0693ee3bafd17be308a45327925244ae`
--	v2 Content-Length: 681.0 B
+-	v2 Blob: `sha256:4c57d9a537408b9fc64d25bd570e8d963475022ed3a05304df6df8d0ffc279ca`
+-	v2 Content-Length: 682.0 B
 
-#### `d53d8719646f87889556c2b50207cf2ac7db79c90eb8b6dde44584e9feec3c2a`
+#### `5a8c670c310b6897b37c1e14ab3c178816fa8f95972165d1791c66f13eb952cc`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:26 GMT
--	Parent Layer: `cde27f5b40eca33335dec23cdb2028f0faef4056242fe79f658c713ae4e9c1f0`
+-	Created: Tue, 15 Mar 2016 23:05:20 GMT
+-	Parent Layer: `194ae1ae9ec80ba170586ffa8b6073428b13f465eb36e5b8fad41432ad4c9a38`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `0450ff67d220cb6a272e636aeced52ac8b88d89647c624c035e965e4514ba6ce`
+#### `6a8df3b7cd5b5860d0f86fe3654508ba93306f1c02af41f5c10e7ba3865bd273`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2512,14 +2523,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:46:20 GMT
--	Parent Layer: `d53d8719646f87889556c2b50207cf2ac7db79c90eb8b6dde44584e9feec3c2a`
+-	Created: Tue, 15 Mar 2016 23:33:35 GMT
+-	Parent Layer: `5a8c670c310b6897b37c1e14ab3c178816fa8f95972165d1791c66f13eb952cc`
 -	Docker Version: 1.9.1
--	Virtual Size: 16.9 MB (16896528 bytes)
--	v2 Blob: `sha256:17fce0ab935f6ec12950933c73d7c4d28957bc62ae5e0db675bf3a216e2d62ec`
--	v2 Content-Length: 7.2 MB (7197828 bytes)
+-	Virtual Size: 16.9 MB (16904558 bytes)
+-	v2 Blob: `sha256:a522a5639615f88898e24da2164715c01dfd1700eb4d3a0a4e818245a5489746`
+-	v2 Content-Length: 7.2 MB (7200105 bytes)
 
-#### `022c463d700d073d20b2c36206574c96632a39e47c5bce03d2323ce3bdd7536b`
+#### `8f1b8eb8c05f67190daa4b8a24317a6a1e43fd1d489ae3eeff184252f37c6c10`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2532,40 +2543,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:52:43 GMT
--	Parent Layer: `0450ff67d220cb6a272e636aeced52ac8b88d89647c624c035e965e4514ba6ce`
+-	Created: Tue, 15 Mar 2016 23:35:09 GMT
+-	Parent Layer: `6a8df3b7cd5b5860d0f86fe3654508ba93306f1c02af41f5c10e7ba3865bd273`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.5 MB (122453251 bytes)
--	v2 Blob: `sha256:551c4816be0e778042117c227f083d32be31567bfc5a031e082fa08655b7d2eb`
--	v2 Content-Length: 40.9 MB (40919828 bytes)
+-	Virtual Size: 122.5 MB (122488234 bytes)
+-	v2 Blob: `sha256:5c6348ef12500b8da8002161a71e7fe0b5eef3caad305aaf5807c0a76c006809`
+-	v2 Content-Length: 40.9 MB (40921774 bytes)
 
 ## `buildpack-deps:xenial`
 
 ```console
-$ docker pull library/buildpack-deps@sha256:8fb0e9e7b5376cf26fd22b8462a1c8ce0b707581fc83d5c258a59884b21002a7
+$ docker pull library/buildpack-deps@sha256:40bcd619323c370d5214defb1b9402073815c4ce97aa9255289596924dd9fff7
 ```
 
--	Total Virtual Size: 980.1 MB (980126917 bytes)
--	Total v2 Content-Length: 359.9 MB (359919151 bytes)
+-	Total Virtual Size: 981.1 MB (981079477 bytes)
+-	Total v2 Content-Length: 360.2 MB (360176625 bytes)
 
 ### Layers (7)
 
-#### `63f86c9900ccb231dc8732880b3b28c1ce6d1dbc530c3a25236b7cad22c1f313`
+#### `7f36c2c4ebb0ea8fdd2360db299141518387e79545281dbed3cf7d52a0de57dd`
 
 ```dockerfile
-ADD file:a119b6d2ca492104dbcd1720a3a6cf9996a4385f3d05a52f8c45837a94d6ac7d in /
+ADD file:87c671c742e653fafc3617a0a461c4280415aaa0c7f3a57229c2b35cf8f2612c in /
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:19 GMT
+-	Created: Tue, 15 Mar 2016 23:05:15 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 118.7 MB (118724534 bytes)
--	v2 Blob: `sha256:9f2e23c8721698025ad4cd88f5168d51f2f511e5ffb54caadc5bec4611c8bc9b`
--	v2 Content-Length: 47.8 MB (47758053 bytes)
+-	Virtual Size: 119.0 MB (118954894 bytes)
+-	v2 Blob: `sha256:275cd1a9b490a59b9911f0fe9798dbd622a39823132d941d41a468e79417935f`
+-	v2 Content-Length: 47.8 MB (47827139 bytes)
 
-#### `8f9feab8059c87c403dd8e2cd1b963e90b8466ecdb3def6b390adfd0ad4fd8cd`
+#### `100db5b177dd031138a321b98a1a7348fe93fea033a2a73892dd831211728cd4`
 
 ```dockerfile
-RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+RUN set -xe \
+		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d \
 	&& chmod +x /usr/sbin/policy-rc.d \
 		&& dpkg-divert --local --rename --add /sbin/initctl \
@@ -2579,40 +2591,40 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:23 GMT
--	Parent Layer: `63f86c9900ccb231dc8732880b3b28c1ce6d1dbc530c3a25236b7cad22c1f313`
+-	Created: Tue, 15 Mar 2016 23:05:18 GMT
+-	Parent Layer: `7f36c2c4ebb0ea8fdd2360db299141518387e79545281dbed3cf7d52a0de57dd`
 -	Docker Version: 1.9.1
 -	Virtual Size: 701.0 B
--	v2 Blob: `sha256:442f742437b40eccb3327129820a9d6ea72b48ee30c2c46bf677f17194104957`
--	v2 Content-Length: 756.0 B
+-	v2 Blob: `sha256:2248354a45ef9116042a9aee8d7c1e99daecca6e7b9c26f6e01302646bc56a7c`
+-	v2 Content-Length: 760.0 B
 
-#### `cde27f5b40eca33335dec23cdb2028f0faef4056242fe79f658c713ae4e9c1f0`
+#### `194ae1ae9ec80ba170586ffa8b6073428b13f465eb36e5b8fad41432ad4c9a38`
 
 ```dockerfile
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:25 GMT
--	Parent Layer: `8f9feab8059c87c403dd8e2cd1b963e90b8466ecdb3def6b390adfd0ad4fd8cd`
+-	Created: Tue, 15 Mar 2016 23:05:20 GMT
+-	Parent Layer: `100db5b177dd031138a321b98a1a7348fe93fea033a2a73892dd831211728cd4`
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.9 KB (1895 bytes)
--	v2 Blob: `sha256:ef8abf8991b689454d90bbf1f78f8a4c0693ee3bafd17be308a45327925244ae`
--	v2 Content-Length: 681.0 B
+-	v2 Blob: `sha256:4c57d9a537408b9fc64d25bd570e8d963475022ed3a05304df6df8d0ffc279ca`
+-	v2 Content-Length: 682.0 B
 
-#### `d53d8719646f87889556c2b50207cf2ac7db79c90eb8b6dde44584e9feec3c2a`
+#### `5a8c670c310b6897b37c1e14ab3c178816fa8f95972165d1791c66f13eb952cc`
 
 ```dockerfile
 CMD ["/bin/bash"]
 ```
 
--	Created: Thu, 03 Mar 2016 21:40:26 GMT
--	Parent Layer: `cde27f5b40eca33335dec23cdb2028f0faef4056242fe79f658c713ae4e9c1f0`
+-	Created: Tue, 15 Mar 2016 23:05:20 GMT
+-	Parent Layer: `194ae1ae9ec80ba170586ffa8b6073428b13f465eb36e5b8fad41432ad4c9a38`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `0450ff67d220cb6a272e636aeced52ac8b88d89647c624c035e965e4514ba6ce`
+#### `6a8df3b7cd5b5860d0f86fe3654508ba93306f1c02af41f5c10e7ba3865bd273`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2622,14 +2634,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:46:20 GMT
--	Parent Layer: `d53d8719646f87889556c2b50207cf2ac7db79c90eb8b6dde44584e9feec3c2a`
+-	Created: Tue, 15 Mar 2016 23:33:35 GMT
+-	Parent Layer: `5a8c670c310b6897b37c1e14ab3c178816fa8f95972165d1791c66f13eb952cc`
 -	Docker Version: 1.9.1
--	Virtual Size: 16.9 MB (16896528 bytes)
--	v2 Blob: `sha256:17fce0ab935f6ec12950933c73d7c4d28957bc62ae5e0db675bf3a216e2d62ec`
--	v2 Content-Length: 7.2 MB (7197828 bytes)
+-	Virtual Size: 16.9 MB (16904558 bytes)
+-	v2 Blob: `sha256:a522a5639615f88898e24da2164715c01dfd1700eb4d3a0a4e818245a5489746`
+-	v2 Content-Length: 7.2 MB (7200105 bytes)
 
-#### `022c463d700d073d20b2c36206574c96632a39e47c5bce03d2323ce3bdd7536b`
+#### `8f1b8eb8c05f67190daa4b8a24317a6a1e43fd1d489ae3eeff184252f37c6c10`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2642,14 +2654,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 21:52:43 GMT
--	Parent Layer: `0450ff67d220cb6a272e636aeced52ac8b88d89647c624c035e965e4514ba6ce`
+-	Created: Tue, 15 Mar 2016 23:35:09 GMT
+-	Parent Layer: `6a8df3b7cd5b5860d0f86fe3654508ba93306f1c02af41f5c10e7ba3865bd273`
 -	Docker Version: 1.9.1
--	Virtual Size: 122.5 MB (122453251 bytes)
--	v2 Blob: `sha256:551c4816be0e778042117c227f083d32be31567bfc5a031e082fa08655b7d2eb`
--	v2 Content-Length: 40.9 MB (40919828 bytes)
+-	Virtual Size: 122.5 MB (122488234 bytes)
+-	v2 Blob: `sha256:5c6348ef12500b8da8002161a71e7fe0b5eef3caad305aaf5807c0a76c006809`
+-	v2 Content-Length: 40.9 MB (40921774 bytes)
 
-#### `f115ae5045814e3b1f9e5545294ec99146997b4f14a78ab79dd59414a636e48f`
+#### `21ea8c8b2dc5b15e938d1ae9709a23c4bd69acc6fc74e67ac691de9ec10a30f8`
 
 ```dockerfile
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -2690,9 +2702,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 ```
 
--	Created: Thu, 03 Mar 2016 22:00:43 GMT
--	Parent Layer: `022c463d700d073d20b2c36206574c96632a39e47c5bce03d2323ce3bdd7536b`
+-	Created: Tue, 15 Mar 2016 23:45:39 GMT
+-	Parent Layer: `8f1b8eb8c05f67190daa4b8a24317a6a1e43fd1d489ae3eeff184252f37c6c10`
 -	Docker Version: 1.9.1
--	Virtual Size: 722.1 MB (722050008 bytes)
--	v2 Blob: `sha256:86455aa8111e1794ddca0c8653274496501bb0488b733996649642c30597b668`
--	v2 Content-Length: 264.0 MB (264041973 bytes)
+-	Virtual Size: 722.7 MB (722729195 bytes)
+-	v2 Blob: `sha256:28c4e382a665bde06e68b77efb9c2b8ef70fd9582e6c3c946e0438d5566d14bc`
+-	v2 Content-Length: 264.2 MB (264226133 bytes)
