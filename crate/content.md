@@ -6,7 +6,13 @@ Crate allows to query and compute data with SQL in real time by providing a dist
 
 %%LOGO%%
 
+## Crate on Docker
+
+Learn more about Crate and Docker and visit our [Docker page](https://crate.io/c/docker) at [crate.io](https://crate.io). You can also contact us on [Slack](https://crate.io/docs/support/slackin/).
+
 ## How to use this image
+
+Simply run the latest Crate version in a Docker container with the following command. Crate ships with an [Admin UI](https://crate.io/docs/connect/admin_ui/) that provides an overview of your cluster, nodes, tables and much more. With the above command it is accessible via port `4200`.
 
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 crate:latest
@@ -14,11 +20,15 @@ $ docker run -d -p 4200:4200 -p 4300:4300 crate:latest
 
 ### Attach persistent data directory
 
+If you want to attach a persistent data directory, add the following parameter.
+
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 -v <data-dir>:/data crate
 ```
 
 ### Use custom Crate configuration
+
+Use the following parameter to provide your custom [Crate configuration file](https://crate.io/docs/reference/configuration.html).
 
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 crate -Des.config=/path/to/crate.yml
@@ -29,8 +39,6 @@ Any configuration settings may be specified upon startup using the `-D` option p
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 crate crate -Des.cluster.name=cluster
 ```
-
-For further configuration options please refer to the [Configuration](https://crate.io/docs/stable/configuration.html) section of the online documentation.
 
 ### Environment
 
