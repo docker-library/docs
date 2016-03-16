@@ -15,9 +15,15 @@ Crate allows to query and compute data with SQL in real time by providing a dist
 
 [Crate](https://crate.io/)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/de809758bd3f9724caa5377695f161795f3eb8a1/crate/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/2517900006ae5f4c03c1d43235930c59f4614394/crate/logo.png)
+
+## Crate on Docker
+
+Learn more about Crate and Docker and visit our [Docker page](https://crate.io/c/docker) at [crate.io](https://crate.io). You can also contact us on [Slack](https://crate.io/docs/support/slackin/).
 
 ## How to use this image
+
+Simply run the latest Crate version in a Docker container with the following command. Crate ships with an [Admin UI](https://crate.io/docs/connect/admin_ui/) that provides an overview of your cluster, nodes, tables and much more. With the above command it is accessible via port `4200`.
 
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 crate:latest
@@ -25,11 +31,15 @@ $ docker run -d -p 4200:4200 -p 4300:4300 crate:latest
 
 ### Attach persistent data directory
 
+If you want to attach a persistent data directory, add the following parameter.
+
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 -v <data-dir>:/data crate
 ```
 
 ### Use custom Crate configuration
+
+Use the following parameter to provide your custom [Crate configuration file](https://crate.io/docs/reference/configuration.html).
 
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 crate -Des.config=/path/to/crate.yml
@@ -40,8 +50,6 @@ Any configuration settings may be specified upon startup using the `-D` option p
 ```console
 $ docker run -d -p 4200:4200 -p 4300:4300 crate crate -Des.cluster.name=cluster
 ```
-
-For further configuration options please refer to the [Configuration](https://crate.io/docs/stable/configuration.html) section of the online documentation.
 
 ### Environment
 
@@ -110,11 +118,13 @@ Please see [the Docker installation documentation](https://docs.docker.com/insta
 
 Documentation for this image is stored in the [`crate/` directory](https://github.com/docker-library/docs/tree/master/crate) of the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `REAMDE.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
 
+Visit [Crate on Docker](https://crate.io/docs/install/containers/docker/) and get further documentation about how to get started with Crate.
+
 ## Issues
 
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/crate/docker-crate/issues).
 
-If you have any questions or suggestions we would be very happy to help you. So, feel free to join our public room on [HipChat](https://www.hipchat.com/g7Pc2CYwi).
+If you have any questions or suggestions we would be very happy to help you. So, feel free to join our public room on [Slack](https://crate.io/docs/support/slackin/).
 
 For further information and official contact please visit [https://crate.io](https://crate.io).
 
