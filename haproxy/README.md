@@ -1,10 +1,13 @@
 # Supported tags and respective `Dockerfile` links
 
 -	[`1.4.27`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dddcbc797defcdad1189931986851572d3b5894e/1.4/Dockerfile)
+-	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/60d34669b97c528199d3b372ea8347aaf308de8a/1.4/alpine/Dockerfile)
 -	[`1.5.16`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dddcbc797defcdad1189931986851572d3b5894e/1.5/Dockerfile)
+-	[`1.5.16-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/48ab27a7ce0ec802aff02ed789f1195fcafd9558/1.5/alpine/Dockerfile)
 -	[`1.6.4`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dddcbc797defcdad1189931986851572d3b5894e/1.6/Dockerfile)
+-	[`1.6.4-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/88fddd524fdd36baf040fa686a2c02a49be88d43/1.6/alpine/Dockerfile)
 
-[![](https://badge.imagelayers.io/haproxy:latest.svg)](https://imagelayers.io/?images=haproxy:1.4.27,haproxy:1.5.16,haproxy:1.6.4)
+[![](https://badge.imagelayers.io/haproxy:latest.svg)](https://imagelayers.io/?images=haproxy:1.4.27,haproxy:1.4.27-alpine,haproxy:1.5.16,haproxy:1.5.16-alpine,haproxy:1.6.4,haproxy:1.6.4-alpine)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/haproxy`)](https://github.com/docker-library/official-images/blob/master/library/haproxy). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
 
@@ -58,6 +61,22 @@ $ docker run -d --name my-running-haproxy my-haproxy
 ```console
 $ docker run -d --name my-running-haproxy -v /path/to/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro haproxy:1.5
 ```
+
+# Image Variants
+
+The `haproxy` images come in many flavors, each designed for a specific use case.
+
+## `haproxy:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `haproxy:alpine`
+
+This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
+This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
+
+To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
