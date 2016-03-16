@@ -1,11 +1,11 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.4.27`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dddcbc797defcdad1189931986851572d3b5894e/1.4/Dockerfile)
--	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/60d34669b97c528199d3b372ea8347aaf308de8a/1.4/alpine/Dockerfile)
--	[`1.5.16`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dddcbc797defcdad1189931986851572d3b5894e/1.5/Dockerfile)
--	[`1.5.16-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/48ab27a7ce0ec802aff02ed789f1195fcafd9558/1.5/alpine/Dockerfile)
--	[`1.6.4`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/dddcbc797defcdad1189931986851572d3b5894e/1.6/Dockerfile)
--	[`1.6.4-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/88fddd524fdd36baf040fa686a2c02a49be88d43/1.6/alpine/Dockerfile)
+-	[`1.4.27`, `1.4` (*1.4/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.4/Dockerfile)
+-	[`1.4.27-alpine`, `1.4-alpine` (*1.4/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.4/alpine/Dockerfile)
+-	[`1.5.16`, `1.5` (*1.5/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.5/Dockerfile)
+-	[`1.5.16-alpine`, `1.5-alpine` (*1.5/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.5/alpine/Dockerfile)
+-	[`1.6.4`, `1.6`, `1`, `latest` (*1.6/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.6/Dockerfile)
+-	[`1.6.4-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/docker-library/haproxy/blob/a11db1597f9be5365028673df4d05b2ea854b3ed/1.6/alpine/Dockerfile)
 
 [![](https://badge.imagelayers.io/haproxy:latest.svg)](https://imagelayers.io/?images=haproxy:1.4.27,haproxy:1.4.27-alpine,haproxy:1.5.16,haproxy:1.5.16-alpine,haproxy:1.6.4,haproxy:1.6.4-alpine)
 
