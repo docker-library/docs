@@ -21,7 +21,7 @@
 
 [![](https://badge.imagelayers.io/tomee:latest.svg)](https://imagelayers.io/?images=tomee:6-jre-1.7.4-jaxrs,tomee:6-jre-1.7.4-plume,tomee:6-jre-1.7.4-plus,tomee:6-jre-1.7.4-webprofile,tomee:7-jre-1.7.4-jaxrs,tomee:7-jre-1.7.4-plume,tomee:7-jre-1.7.4-plus,tomee:7-jre-1.7.4-webprofile,tomee:8-jre-1.7.4-jaxrs,tomee:8-jre-1.7.4-plume,tomee:8-jre-1.7.4-plus,tomee:8-jre-1.7.4-webprofile,tomee:7-jre-7.0.0-M3-plume,tomee:7-jre-7.0.0-M3-plus,tomee:7-jre-7.0.0-M3-webprofile,tomee:8-jre-7.0.0-M3-plume,tomee:8-jre-7.0.0-M3-plus,tomee:8-jre-7.0.0-M3-webprofile)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/tomee`)](https://github.com/docker-library/official-images/blob/master/library/tomee). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/tomee`)](https://github.com/docker-library/official-images/blob/master/library/tomee). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Ftomee).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `tomee/tag-details.md` file](https://github.com/docker-library/docs/blob/master/tomee/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -99,7 +99,7 @@ Documentation for this image is stored in the [`tomee/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/tomee/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/tomee/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

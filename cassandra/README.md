@@ -9,7 +9,7 @@
 
 [![](https://badge.imagelayers.io/cassandra:latest.svg)](https://imagelayers.io/?images=cassandra:2.1.13,cassandra:2.2.5,cassandra:3.0.4,cassandra:3.1.1,cassandra:3.2.1,cassandra:3.3)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/cassandra`)](https://github.com/docker-library/official-images/blob/master/library/cassandra). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fcassandra).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `cassandra/tag-details.md` file](https://github.com/docker-library/docs/blob/master/cassandra/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -193,7 +193,7 @@ Documentation for this image is stored in the [`cassandra/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/cassandra/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/cassandra/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

@@ -15,7 +15,7 @@
 
 [![](https://badge.imagelayers.io/php:latest.svg)](https://imagelayers.io/?images=php:5.5.33-cli,php:5.5.33-apache,php:5.5.33-fpm,php:5.5.33-zts,php:5.6.19-cli,php:5.6.19-apache,php:5.6.19-fpm,php:5.6.19-zts,php:7.0.4-cli,php:7.0.4-apache,php:7.0.4-fpm,php:7.0.4-zts)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/php`)](https://github.com/docker-library/official-images/blob/master/library/php). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fphp).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `php/tag-details.md` file](https://github.com/docker-library/docs/blob/master/php/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -167,7 +167,7 @@ Documentation for this image is stored in the [`php/` directory](https://github.
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/php/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/php/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

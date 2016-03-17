@@ -4,7 +4,7 @@
 
 [![](https://badge.imagelayers.io/piwik:latest.svg)](https://imagelayers.io/?images=piwik:2.16.0)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/piwik`)](https://github.com/docker-library/official-images/blob/master/library/piwik). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/piwik`)](https://github.com/docker-library/official-images/blob/master/library/piwik). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpiwik).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `piwik/tag-details.md` file](https://github.com/docker-library/docs/blob/master/piwik/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -77,7 +77,7 @@ Documentation for this image is stored in the [`piwik/` directory](https://githu
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/piwik/docker-piwik/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/piwik/docker-piwik/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

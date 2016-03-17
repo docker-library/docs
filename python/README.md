@@ -22,7 +22,7 @@
 
 [![](https://badge.imagelayers.io/python:latest.svg)](https://imagelayers.io/?images=python:2.7.11,python:2.7.11-onbuild,python:2.7.11-slim,python:2.7.11-alpine,python:2.7.11-wheezy,python:3.3.6,python:3.3.6-onbuild,python:3.3.6-slim,python:3.3.6-alpine,python:3.3.6-wheezy,python:3.4.4,python:3.4.4-onbuild,python:3.4.4-slim,python:3.4.4-alpine,python:3.4.4-wheezy,python:3.5.1,python:3.5.1-onbuild,python:3.5.1-slim,python:3.5.1-alpine)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/python`)](https://github.com/docker-library/official-images/blob/master/library/python). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fpython).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `python/tag-details.md` file](https://github.com/docker-library/docs/blob/master/python/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -121,7 +121,7 @@ Documentation for this image is stored in the [`python/` directory](https://gith
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/python/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/python/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

@@ -5,7 +5,7 @@
 
 [![](https://badge.imagelayers.io/neo4j:latest.svg)](https://imagelayers.io/?images=neo4j:2.3.2,neo4j:2.3.2-enterprise)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/neo4j`)](https://github.com/docker-library/official-images/blob/master/library/neo4j). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/neo4j`)](https://github.com/docker-library/official-images/blob/master/library/neo4j). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fneo4j).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `neo4j/tag-details.md` file](https://github.com/docker-library/docs/blob/master/neo4j/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 

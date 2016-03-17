@@ -11,7 +11,7 @@
 
 [![](https://badge.imagelayers.io/redmine:latest.svg)](https://imagelayers.io/?images=redmine:2.6.10,redmine:2.6.10-passenger,redmine:3.0.7,redmine:3.0.7-passenger,redmine:3.1.4,redmine:3.1.4-passenger,redmine:3.2.1,redmine:3.2.1-passenger)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/redmine`)](https://github.com/docker-library/official-images/blob/master/library/redmine). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fredmine).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `redmine/tag-details.md` file](https://github.com/docker-library/docs/blob/master/redmine/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -129,7 +129,7 @@ Documentation for this image is stored in the [`redmine/` directory](https://git
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/redmine/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker-library/redmine/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

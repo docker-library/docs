@@ -8,7 +8,7 @@ This image is officially deprecated in favor of [the `dockercore/docker` automat
 
 [![](https://badge.imagelayers.io/docker-dev:1.9.1.svg)](https://imagelayers.io/?images=docker-dev:1.9.1)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/docker-dev`)](https://github.com/docker-library/official-images/blob/master/library/docker-dev). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fdocker-dev).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `docker-dev/tag-details.md` file](https://github.com/docker-library/docs/blob/master/docker-dev/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -42,7 +42,7 @@ Documentation for this image is stored in the [`docker-dev/` directory](https://
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/docker/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/docker/docker/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 

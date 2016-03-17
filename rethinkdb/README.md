@@ -28,7 +28,7 @@
 
 [![](https://badge.imagelayers.io/rethinkdb:latest.svg)](https://imagelayers.io/?images=rethinkdb:1.15.1,rethinkdb:1.15.2,rethinkdb:1.15.3,rethinkdb:1.16.0,rethinkdb:1.16.1,rethinkdb:1.16.2,rethinkdb:1.16.3,rethinkdb:2.0.0,rethinkdb:2.0.1,rethinkdb:2.0.2,rethinkdb:2.0.3,rethinkdb:2.0.4,rethinkdb:2.1.0,rethinkdb:2.1.1,rethinkdb:2.1.2,rethinkdb:2.1.3,rethinkdb:2.1.4,rethinkdb:2.1.5,rethinkdb:2.1.6,rethinkdb:2.2.0,rethinkdb:2.2.1,rethinkdb:2.2.2,rethinkdb:2.2.3,rethinkdb:2.2.4,rethinkdb:2.2.5)
 
-For more information about this image and its history, please see [the relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb). This image is updated via pull requests to [the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images).
+For more information about this image and its history, please see [the relevant manifest file (`library/rethinkdb`)](https://github.com/docker-library/official-images/blob/master/library/rethinkdb). This image is updated via [pull requests to the `docker-library/official-images` GitHub repo](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Frethinkdb).
 
 For detailed information about the virtual/transfer sizes and individual layers of each of the above supported tags, please see [the `rethinkdb/tag-details.md` file](https://github.com/docker-library/docs/blob/master/rethinkdb/tag-details.md) in [the `docker-library/docs` GitHub repo](https://github.com/docker-library/docs).
 
@@ -101,7 +101,7 @@ Documentation for this image is stored in the [`rethinkdb/` directory](https://g
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/stuartpb/rethinkdb-dockerfiles/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/stuartpb/rethinkdb-dockerfiles/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
