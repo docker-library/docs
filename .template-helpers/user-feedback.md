@@ -4,7 +4,7 @@ Documentation for this image is stored in the [`%%REPO%%/` directory](https://gi
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us %%MAILING-LIST%% through a [GitHub issue](%%GITHUB-REPO%%/issues).
+If you have any problems with or questions about this image, please contact us %%MAILING-LIST%% through a [GitHub issue](%%GITHUB-REPO%%/issues). If the issue is related to a CVE, please check for [a `cve-tracker` issue on the `official-images` repository first](https://github.com/docker-library/official-images/issues?q=label%3Acve-tracker).
 
 You can also reach many of the official image maintainers via the `#docker-library` IRC channel on [Freenode](https://freenode.net).
 
