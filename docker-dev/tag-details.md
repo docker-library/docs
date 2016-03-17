@@ -117,6 +117,7 @@ RUN echo deb http://ppa.launchpad.net/zfs-native/stable/ubuntu trusty main > /et
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:d7e93a9e180521e59bd863e47b71629f7bd457385276adefa823eaeda87e11c9`
 -	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:30:59 GMT
 
 #### `6e690218c2f8015e9630eba4a63ab074ffab7afd5719c4f2d32c34dfaeda6a0b`
 
@@ -875,6 +876,7 @@ RUN echo deb http://ppa.launchpad.net/zfs-native/stable/ubuntu trusty main > /et
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:d7e93a9e180521e59bd863e47b71629f7bd457385276adefa823eaeda87e11c9`
 -	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:30:59 GMT
 
 #### `6e690218c2f8015e9630eba4a63ab074ffab7afd5719c4f2d32c34dfaeda6a0b`
 
@@ -1633,6 +1635,7 @@ RUN echo deb http://ppa.launchpad.net/zfs-native/stable/ubuntu trusty main > /et
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:d7e93a9e180521e59bd863e47b71629f7bd457385276adefa823eaeda87e11c9`
 -	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:30:59 GMT
 
 #### `6e690218c2f8015e9630eba4a63ab074ffab7afd5719c4f2d32c34dfaeda6a0b`
 
