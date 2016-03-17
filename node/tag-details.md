@@ -3116,7 +3116,6 @@ RUN buildDeps='curl ca-certificates xz-utils' \
 -	Virtual Size: 36.1 MB (36078743 bytes)
 -	v2 Blob: `sha256:992dbaa1666745fd8fdc075f7f4fd5a316831d76d2e476b880d99e53a483c97f`
 -	v2 Content-Length: 12.3 MB (12264347 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 18:37:11 GMT
 
 #### `8a598342646f38124aa77b6ea52d27b7f31a0a68f400ac2649d77e577fd99972`
 
@@ -3224,7 +3223,6 @@ RUN buildDeps='curl ca-certificates xz-utils' \
 -	Virtual Size: 36.1 MB (36078743 bytes)
 -	v2 Blob: `sha256:992dbaa1666745fd8fdc075f7f4fd5a316831d76d2e476b880d99e53a483c97f`
 -	v2 Content-Length: 12.3 MB (12264347 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 18:37:11 GMT
 
 #### `8a598342646f38124aa77b6ea52d27b7f31a0a68f400ac2649d77e577fd99972`
 
@@ -3332,7 +3330,6 @@ RUN buildDeps='curl ca-certificates xz-utils' \
 -	Virtual Size: 36.1 MB (36078743 bytes)
 -	v2 Blob: `sha256:992dbaa1666745fd8fdc075f7f4fd5a316831d76d2e476b880d99e53a483c97f`
 -	v2 Content-Length: 12.3 MB (12264347 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 18:37:11 GMT
 
 #### `8a598342646f38124aa77b6ea52d27b7f31a0a68f400ac2649d77e577fd99972`
 
