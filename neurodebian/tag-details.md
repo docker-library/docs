@@ -383,6 +383,7 @@ RUN echo '#deb-src http://neuro.debian.net/debian-devel trusty main' >> /etc/apt
 -	Virtual Size: 150.0 B
 -	v2 Blob: `sha256:486ae3ea1c5b035df107579b9d495412462f976dac65f99aa44aa4b236e64e7e`
 -	v2 Content-Length: 238.0 B
+-	v2 Last-Modified: Fri, 04 Mar 2016 01:21:24 GMT
 
 #### `f736220eb69220af5984d419386b6399a8ca8af35c29bebb3f40c6f0b2f9875e`
 
@@ -508,6 +509,7 @@ RUN echo '#deb-src http://neuro.debian.net/debian-devel trusty main' >> /etc/apt
 -	Virtual Size: 150.0 B
 -	v2 Blob: `sha256:486ae3ea1c5b035df107579b9d495412462f976dac65f99aa44aa4b236e64e7e`
 -	v2 Content-Length: 238.0 B
+-	v2 Last-Modified: Fri, 04 Mar 2016 01:21:24 GMT
 
 #### `f736220eb69220af5984d419386b6399a8ca8af35c29bebb3f40c6f0b2f9875e`
 
