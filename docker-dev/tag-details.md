@@ -189,7 +189,6 @@ RUN cd /usr/local/lvm2 \
 -	Virtual Size: 5.0 MB (5002140 bytes)
 -	v2 Blob: `sha256:38c0f3f02b7fd2cf08d481d7402205f01f0e246fb316731ebd1ade3deefb8e1a`
 -	v2 Content-Length: 1.8 MB (1761377 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:29:06 GMT
 
 #### `2a6cf8b25d84185ddb3b2322170c2d0dc777aa8a46e407eccc2a4e1a0b44790b`
 
@@ -948,7 +947,6 @@ RUN cd /usr/local/lvm2 \
 -	Virtual Size: 5.0 MB (5002140 bytes)
 -	v2 Blob: `sha256:38c0f3f02b7fd2cf08d481d7402205f01f0e246fb316731ebd1ade3deefb8e1a`
 -	v2 Content-Length: 1.8 MB (1761377 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:29:06 GMT
 
 #### `2a6cf8b25d84185ddb3b2322170c2d0dc777aa8a46e407eccc2a4e1a0b44790b`
 
@@ -1707,7 +1705,6 @@ RUN cd /usr/local/lvm2 \
 -	Virtual Size: 5.0 MB (5002140 bytes)
 -	v2 Blob: `sha256:38c0f3f02b7fd2cf08d481d7402205f01f0e246fb316731ebd1ade3deefb8e1a`
 -	v2 Content-Length: 1.8 MB (1761377 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:29:06 GMT
 
 #### `2a6cf8b25d84185ddb3b2322170c2d0dc777aa8a46e407eccc2a4e1a0b44790b`
 
