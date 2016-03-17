@@ -1422,7 +1422,6 @@ RUN echo 'deb http://neuro.debian.net/debian jessie main' > /etc/apt/sources.lis
 -	Virtual Size: 47.0 B
 -	v2 Blob: `sha256:7c3deb4cfde91a55ce8fc9ec1a2ca941e2e5f5ee5883025ed8a4ee0363442e55`
 -	v2 Content-Length: 214.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:11:38 GMT
 
 #### `703a91da853eb56b2d687ee4337b0bfe6951d316fdce84b936f2b2c6c620f764`
 
@@ -1511,7 +1510,6 @@ RUN echo 'deb http://neuro.debian.net/debian jessie main' > /etc/apt/sources.lis
 -	Virtual Size: 47.0 B
 -	v2 Blob: `sha256:7c3deb4cfde91a55ce8fc9ec1a2ca941e2e5f5ee5883025ed8a4ee0363442e55`
 -	v2 Content-Length: 214.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:11:38 GMT
 
 #### `703a91da853eb56b2d687ee4337b0bfe6951d316fdce84b936f2b2c6c620f764`
 
@@ -1600,7 +1598,6 @@ RUN echo 'deb http://neuro.debian.net/debian jessie main' > /etc/apt/sources.lis
 -	Virtual Size: 47.0 B
 -	v2 Blob: `sha256:7c3deb4cfde91a55ce8fc9ec1a2ca941e2e5f5ee5883025ed8a4ee0363442e55`
 -	v2 Content-Length: 214.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:11:38 GMT
 
 #### `703a91da853eb56b2d687ee4337b0bfe6951d316fdce84b936f2b2c6c620f764`
 
