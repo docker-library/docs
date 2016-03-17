@@ -913,6 +913,7 @@ RUN apt-get update \
 -	Virtual Size: 54.2 MB (54178050 bytes)
 -	v2 Blob: `sha256:e151a8679b5606d3da18e86fd06c6d21ad7d6cec0541d30966d94d69811244f5`
 -	v2 Content-Length: 23.3 MB (23322061 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:17:38 GMT
 
 #### `dca2a56eced96cda68c35813b9f93193807225db740cea9e5c37142fdedf10ab`
 
