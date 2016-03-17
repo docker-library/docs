@@ -674,6 +674,7 @@ RUN chown odoo /etc/odoo/openerp-server.conf
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:32e082fafec5d3e225d97ff95651c6ce44962735eee3d66623249aabcbf4d66b`
 -	v2 Content-Length: 594.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:53 GMT
 
 #### `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 
@@ -927,6 +928,7 @@ RUN chown odoo /etc/odoo/openerp-server.conf
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:32e082fafec5d3e225d97ff95651c6ce44962735eee3d66623249aabcbf4d66b`
 -	v2 Content-Length: 594.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:53 GMT
 
 #### `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 
@@ -1180,6 +1182,7 @@ RUN chown odoo /etc/odoo/openerp-server.conf
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:32e082fafec5d3e225d97ff95651c6ce44962735eee3d66623249aabcbf4d66b`
 -	v2 Content-Length: 594.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:53 GMT
 
 #### `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 
