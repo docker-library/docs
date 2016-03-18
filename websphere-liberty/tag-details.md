@@ -89,7 +89,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -103,7 +102,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -132,7 +130,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -176,7 +173,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -190,7 +186,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -220,7 +215,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -234,7 +228,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -276,7 +269,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -290,7 +282,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `websphere-liberty:8.5.5.8-kernel`
 
@@ -364,7 +355,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -378,7 +368,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -407,7 +396,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -451,7 +439,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -465,7 +452,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -495,7 +481,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -509,7 +494,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -551,7 +535,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -565,7 +548,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `websphere-liberty:common`
 
@@ -639,7 +621,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -653,7 +634,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -682,7 +662,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -726,7 +705,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -740,7 +718,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -770,7 +747,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -784,7 +760,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -826,7 +801,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -840,7 +814,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -927,7 +900,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -941,7 +913,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -970,7 +941,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -1014,7 +984,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -1028,7 +997,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -1058,7 +1026,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -1072,7 +1039,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -1114,7 +1080,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -1128,7 +1093,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -1215,7 +1179,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -1229,7 +1192,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -1258,7 +1220,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -1302,7 +1263,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -1316,7 +1276,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -1346,7 +1305,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -1360,7 +1318,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -1402,7 +1359,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -1416,7 +1372,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -1531,7 +1486,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -1545,7 +1499,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -1574,7 +1527,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -1618,7 +1570,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -1632,7 +1583,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -1662,7 +1612,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -1676,7 +1625,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -1718,7 +1666,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -1732,7 +1679,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -1847,7 +1793,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -1861,7 +1806,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -1890,7 +1834,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -1934,7 +1877,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -1948,7 +1890,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -1978,7 +1919,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -1992,7 +1932,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -2034,7 +1973,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -2048,7 +1986,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -2162,7 +2099,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -2176,7 +2112,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -2205,7 +2140,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -2249,7 +2183,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -2263,7 +2196,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -2293,7 +2225,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -2307,7 +2238,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -2349,7 +2279,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -2363,7 +2292,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -2477,7 +2405,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -2491,7 +2418,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -2520,7 +2446,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -2564,7 +2489,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -2578,7 +2502,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -2608,7 +2531,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -2622,7 +2544,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -2664,7 +2585,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -2678,7 +2598,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -2819,7 +2738,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -2833,7 +2751,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -2862,7 +2779,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -2906,7 +2822,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -2920,7 +2835,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -2950,7 +2864,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -2964,7 +2877,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -3006,7 +2918,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -3020,7 +2931,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -3161,7 +3071,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -3175,7 +3084,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -3204,7 +3112,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -3248,7 +3155,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -3262,7 +3168,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -3292,7 +3197,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -3306,7 +3210,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -3348,7 +3251,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -3362,7 +3264,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -3503,7 +3404,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -3517,7 +3417,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -3546,7 +3445,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -3590,7 +3488,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -3604,7 +3501,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -3634,7 +3530,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -3648,7 +3543,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -3690,7 +3584,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -3704,7 +3597,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -3845,7 +3737,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b60267b5d045bbad365619204f7c0ae79a19d4218cadd87a3b6a4163d417a51`
 
@@ -3859,7 +3750,6 @@ MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1230b84ed5a3da202a4405b2b1e3dee41cb4631a6d5886ddbdbbff67a9658004`
 
@@ -3888,7 +3778,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e036e5e8df086cbea5f7781336e2eb7159fa1a1568e4a72c1d73daef42f6940`
 
@@ -3932,7 +3821,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5892d89a8ae7145ce9edf0e54a67752fb0e44790dd523a3e9419060f92112a18`
 
@@ -3946,7 +3834,6 @@ ENV LIBERTY_VERSION=8.5.5_08
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c98f774c30b4c0d5a3e5171763eb66af0925a0a50eaa5af6891450d576f900b`
 
@@ -3976,7 +3863,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d905dbd7bb4fbefa1cec1d055d0b4341ce831409b1ad94ea7d75f60be428e355`
 
@@ -3990,7 +3876,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e5bf32b405d922a0e40ea44a96c079727c688f31ab2d070647cbe8d4e2e912d`
 
@@ -4032,7 +3917,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65c8a5398e3d4564c530d1d79d05a24a16cda2c0b9744e884d0c2417c3eeeb8f`
 
@@ -4046,7 +3930,6 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56d6a6c9f20e228f43e3049f772d92543a20e2ecb27476b54164116c4b3ceb8e`
 
@@ -4187,7 +4070,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c73b43843adf5a8d479f1708d2f7cc0ea9e2292c463d993b77bc3488bd4539a`
 
@@ -4201,7 +4083,6 @@ MAINTAINER David Currie <david_currie@uk.ibm.com> (@dcurrie)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8ffc10bdd6772e0f2209c5ff335a1c617dd9d05700321f8aff84ecc8ae48df77`
 
@@ -4230,7 +4111,6 @@ ENV JAVA_VER=8 JAVA_REL=0 JAVA_MF=2.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `57d3efe1337f941942129824ffd0b9fcda387f9c7e2beff7e53ec6aa65ac1fee`
 
@@ -4274,7 +4154,6 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/loca
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `59e502daead6bc7d9059946643e47741a791d299734472f8d84c4867cbcd905e`
 
@@ -4288,7 +4167,6 @@ ENV LIBERTY_VERSION=2016.3.0_0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `37fdf1a6cdd6e34fc93027fba3d1759fb1b40f74976bf3a9d01c3f3d095ee23c`
 
@@ -4318,7 +4196,6 @@ ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0d5d4b2d19b51caf91a24197ee9fe1dcfbac42f76bd273017d64fed9ff062921`
 
@@ -4332,7 +4209,6 @@ ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d798ca509677f608fee3211ecd548b318fccd1a8e3bcf409c4b29750287cb589`
 
@@ -4387,7 +4263,6 @@ EXPOSE 9080/tcp 9443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72e37b3af83a66c12ce58ef4af175a6f9b9bb972165b25dc691d4bbb4ff7ba94`
 
@@ -4401,4 +4276,3 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
