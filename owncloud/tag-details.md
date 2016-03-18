@@ -4964,7 +4964,6 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:54920921089314a4c6c76bdd16a68624178704334711db5af2131c37680b2457`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:46:37 GMT
 
 #### `d31e0c72cefd8cd60f5dd39a2e91859de7e4d03f3717b5c36b3a1f3be9fc9ed2`
 
@@ -5496,7 +5495,6 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:54920921089314a4c6c76bdd16a68624178704334711db5af2131c37680b2457`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:46:37 GMT
 
 #### `d31e0c72cefd8cd60f5dd39a2e91859de7e4d03f3717b5c36b3a1f3be9fc9ed2`
 
@@ -6028,7 +6026,6 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:54920921089314a4c6c76bdd16a68624178704334711db5af2131c37680b2457`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:46:37 GMT
 
 #### `d31e0c72cefd8cd60f5dd39a2e91859de7e4d03f3717b5c36b3a1f3be9fc9ed2`
 
@@ -6560,7 +6557,6 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:54920921089314a4c6c76bdd16a68624178704334711db5af2131c37680b2457`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:46:37 GMT
 
 #### `d31e0c72cefd8cd60f5dd39a2e91859de7e4d03f3717b5c36b3a1f3be9fc9ed2`
 

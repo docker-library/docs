@@ -21,39 +21,71 @@
 
 ## `busybox:1.24.2-glibc`
 
-**does not exist** (yet?)
-
-## `busybox:1.24-glibc`
-
 ```console
-$ docker pull library/busybox@sha256:dc6d00b0eba5b9bf7488c94b6d91bfb629c38d627484e9fe6d706acc2846a2a8
+$ docker pull library/busybox@sha256:cf3e26a4629a3f42dd3ecc3bc6826e8f0486a903533856af2dac5c7f3c8c7d09
 ```
 
--	Total Virtual Size: 4.2 MB (4179779 bytes)
--	Total v2 Content-Length: 2.2 MB (2202424 bytes)
+-	Total Virtual Size: 4.2 MB (4179843 bytes)
+-	Total v2 Content-Length: 2.2 MB (2202447 bytes)
 
 ### Layers (2)
 
-#### `4db501ca0880e5791368fa81e339ebb86ec2f2f6354abfe6b44f4b0304fadb00`
+#### `1d82e69a1324d53e756d762d6330894f75c18a1ad91f2efead811da632ba58ec`
 
 ```dockerfile
-ADD file:eb9d334b51eab9d526189c556dadfd20b78f584fecda72d47095a867c8d587b1 in /
+ADD file:1e63e0123a756d00cc1c842490705b5f8081b8b96cfbc46402df40848049f98f in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:03 GMT
+-	Created: Fri, 18 Mar 2016 18:22:07 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 4.2 MB (4179779 bytes)
--	v2 Blob: `sha256:10ded1850c8ef507fc7550eb1664b1f7a22f40c9a52ea27332b86bdbdf99c6fe`
--	v2 Content-Length: 2.2 MB (2202392 bytes)
+-	Virtual Size: 4.2 MB (4179843 bytes)
+-	v2 Blob: `sha256:ffc8a12d3678ba8f82b54c3a9ca8260f56ce4be47748743658d89d8f39e80a04`
+-	v2 Content-Length: 2.2 MB (2202415 bytes)
 
-#### `118a2fc47f99753bb828e50ef6d586c9013ade6f8739b9b64650ad1b3ecd0eb2`
+#### `2437be9826eb202d7107f00a29671fd248439b1025223d8c569b5dcbc05c0dbf`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:03 GMT
--	Parent Layer: `4db501ca0880e5791368fa81e339ebb86ec2f2f6354abfe6b44f4b0304fadb00`
+-	Created: Fri, 18 Mar 2016 18:22:07 GMT
+-	Parent Layer: `1d82e69a1324d53e756d762d6330894f75c18a1ad91f2efead811da632ba58ec`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+## `busybox:1.24-glibc`
+
+```console
+$ docker pull library/busybox@sha256:35a7a9febf087febc03d75d22766a7b8db4205ff5f40ab2178004fb4dfe35f88
+```
+
+-	Total Virtual Size: 4.2 MB (4179843 bytes)
+-	Total v2 Content-Length: 2.2 MB (2202447 bytes)
+
+### Layers (2)
+
+#### `1d82e69a1324d53e756d762d6330894f75c18a1ad91f2efead811da632ba58ec`
+
+```dockerfile
+ADD file:1e63e0123a756d00cc1c842490705b5f8081b8b96cfbc46402df40848049f98f in /
+```
+
+-	Created: Fri, 18 Mar 2016 18:22:07 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 4.2 MB (4179843 bytes)
+-	v2 Blob: `sha256:ffc8a12d3678ba8f82b54c3a9ca8260f56ce4be47748743658d89d8f39e80a04`
+-	v2 Content-Length: 2.2 MB (2202415 bytes)
+
+#### `2437be9826eb202d7107f00a29671fd248439b1025223d8c569b5dcbc05c0dbf`
+
+```dockerfile
+CMD ["sh"]
+```
+
+-	Created: Fri, 18 Mar 2016 18:22:07 GMT
+-	Parent Layer: `1d82e69a1324d53e756d762d6330894f75c18a1ad91f2efead811da632ba58ec`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -62,34 +94,34 @@ CMD ["sh"]
 ## `busybox:1-glibc`
 
 ```console
-$ docker pull library/busybox@sha256:d697a027f47b6554a208b128c7ab79b311c7837dc52559f0c0c96ccd8794debd
+$ docker pull library/busybox@sha256:5a6c5eca0a4d1db5355b98c7a628eeafc6829abb47926ce977bb894c1b2a3da6
 ```
 
--	Total Virtual Size: 4.2 MB (4179779 bytes)
--	Total v2 Content-Length: 2.2 MB (2202424 bytes)
+-	Total Virtual Size: 4.2 MB (4179843 bytes)
+-	Total v2 Content-Length: 2.2 MB (2202447 bytes)
 
 ### Layers (2)
 
-#### `4db501ca0880e5791368fa81e339ebb86ec2f2f6354abfe6b44f4b0304fadb00`
+#### `1d82e69a1324d53e756d762d6330894f75c18a1ad91f2efead811da632ba58ec`
 
 ```dockerfile
-ADD file:eb9d334b51eab9d526189c556dadfd20b78f584fecda72d47095a867c8d587b1 in /
+ADD file:1e63e0123a756d00cc1c842490705b5f8081b8b96cfbc46402df40848049f98f in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:03 GMT
+-	Created: Fri, 18 Mar 2016 18:22:07 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 4.2 MB (4179779 bytes)
--	v2 Blob: `sha256:10ded1850c8ef507fc7550eb1664b1f7a22f40c9a52ea27332b86bdbdf99c6fe`
--	v2 Content-Length: 2.2 MB (2202392 bytes)
+-	Virtual Size: 4.2 MB (4179843 bytes)
+-	v2 Blob: `sha256:ffc8a12d3678ba8f82b54c3a9ca8260f56ce4be47748743658d89d8f39e80a04`
+-	v2 Content-Length: 2.2 MB (2202415 bytes)
 
-#### `118a2fc47f99753bb828e50ef6d586c9013ade6f8739b9b64650ad1b3ecd0eb2`
+#### `2437be9826eb202d7107f00a29671fd248439b1025223d8c569b5dcbc05c0dbf`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:03 GMT
--	Parent Layer: `4db501ca0880e5791368fa81e339ebb86ec2f2f6354abfe6b44f4b0304fadb00`
+-	Created: Fri, 18 Mar 2016 18:22:07 GMT
+-	Parent Layer: `1d82e69a1324d53e756d762d6330894f75c18a1ad91f2efead811da632ba58ec`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -98,34 +130,34 @@ CMD ["sh"]
 ## `busybox:glibc`
 
 ```console
-$ docker pull library/busybox@sha256:f7dce7bd8ffe1cdd15d7d4c2adf49bad824c8d02b83c21c373da4d7a263cfe79
+$ docker pull library/busybox@sha256:c758ff229ade2e5b5cb8a292589cda70e89070d625a0aa0a5a0f3d2c4cbebb65
 ```
 
--	Total Virtual Size: 4.2 MB (4179779 bytes)
--	Total v2 Content-Length: 2.2 MB (2202424 bytes)
+-	Total Virtual Size: 4.2 MB (4179843 bytes)
+-	Total v2 Content-Length: 2.2 MB (2202447 bytes)
 
 ### Layers (2)
 
-#### `4db501ca0880e5791368fa81e339ebb86ec2f2f6354abfe6b44f4b0304fadb00`
+#### `1d82e69a1324d53e756d762d6330894f75c18a1ad91f2efead811da632ba58ec`
 
 ```dockerfile
-ADD file:eb9d334b51eab9d526189c556dadfd20b78f584fecda72d47095a867c8d587b1 in /
+ADD file:1e63e0123a756d00cc1c842490705b5f8081b8b96cfbc46402df40848049f98f in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:03 GMT
+-	Created: Fri, 18 Mar 2016 18:22:07 GMT
 -	Docker Version: 1.9.1
--	Virtual Size: 4.2 MB (4179779 bytes)
--	v2 Blob: `sha256:10ded1850c8ef507fc7550eb1664b1f7a22f40c9a52ea27332b86bdbdf99c6fe`
--	v2 Content-Length: 2.2 MB (2202392 bytes)
+-	Virtual Size: 4.2 MB (4179843 bytes)
+-	v2 Blob: `sha256:ffc8a12d3678ba8f82b54c3a9ca8260f56ce4be47748743658d89d8f39e80a04`
+-	v2 Content-Length: 2.2 MB (2202415 bytes)
 
-#### `118a2fc47f99753bb828e50ef6d586c9013ade6f8739b9b64650ad1b3ecd0eb2`
+#### `2437be9826eb202d7107f00a29671fd248439b1025223d8c569b5dcbc05c0dbf`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:03 GMT
--	Parent Layer: `4db501ca0880e5791368fa81e339ebb86ec2f2f6354abfe6b44f4b0304fadb00`
+-	Created: Fri, 18 Mar 2016 18:22:07 GMT
+-	Parent Layer: `1d82e69a1324d53e756d762d6330894f75c18a1ad91f2efead811da632ba58ec`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -133,39 +165,71 @@ CMD ["sh"]
 
 ## `busybox:1.24.2-musl`
 
-**does not exist** (yet?)
-
-## `busybox:1.24-musl`
-
 ```console
-$ docker pull library/busybox@sha256:d716d9d9c01337c2abd2376bf1361240b9c317c80db5f4e75530ffff834c831a
+$ docker pull library/busybox@sha256:9ff618bc0ce146347fd785284406b121597f2e8f0d391a943bd14dcd8516e9e6
 ```
 
 -	Total Virtual Size: 1.2 MB (1204671 bytes)
--	Total v2 Content-Length: 686.3 KB (686328 bytes)
+-	Total v2 Content-Length: 686.3 KB (686307 bytes)
 
 ### Layers (2)
 
-#### `b84f77d69dcdac49a32315fde9274b726472505cd5edb0bdf112eadb64de060c`
+#### `a3a510dbad2a7ff043f2d339f66130bfd04f64a9463ce41986cc348174322d5c`
 
 ```dockerfile
-ADD file:602cd16ec3147eaad06d2a32e78c9030ef2e5dacaa4706754c76a6a2ab2ae962 in /
+ADD file:dc0b1e70703cd24c7c5c9f0b57e1e8d79d7ad0bdcecb7f82b9a59e5f6de17fa3 in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:24 GMT
+-	Created: Fri, 18 Mar 2016 18:22:27 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.2 MB (1204671 bytes)
--	v2 Blob: `sha256:c36a718939dc3233b8cfcf54e83bcfcd0def2f9d8aadb7f217f097c35baaa7b2`
--	v2 Content-Length: 686.3 KB (686296 bytes)
+-	v2 Blob: `sha256:f5c4e6c495776bf839ba15ab1a68dc7ef2f491ec4c258431a107445812ecd65d`
+-	v2 Content-Length: 686.3 KB (686275 bytes)
 
-#### `29017da868fba2d82fca0c416f5a91d3744bc8269a8b8ad0968a31837bf018bd`
+#### `785d7401a39d4f6d8663b8d84c787a4c136a3f9706220082c9cb9c9f7fb54c52`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:24 GMT
--	Parent Layer: `b84f77d69dcdac49a32315fde9274b726472505cd5edb0bdf112eadb64de060c`
+-	Created: Fri, 18 Mar 2016 18:22:28 GMT
+-	Parent Layer: `a3a510dbad2a7ff043f2d339f66130bfd04f64a9463ce41986cc348174322d5c`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+## `busybox:1.24-musl`
+
+```console
+$ docker pull library/busybox@sha256:23e286403d4a3ecbeddf40ca9d38208acc8661b5e4982989b98611ef0c47546f
+```
+
+-	Total Virtual Size: 1.2 MB (1204671 bytes)
+-	Total v2 Content-Length: 686.3 KB (686307 bytes)
+
+### Layers (2)
+
+#### `a3a510dbad2a7ff043f2d339f66130bfd04f64a9463ce41986cc348174322d5c`
+
+```dockerfile
+ADD file:dc0b1e70703cd24c7c5c9f0b57e1e8d79d7ad0bdcecb7f82b9a59e5f6de17fa3 in /
+```
+
+-	Created: Fri, 18 Mar 2016 18:22:27 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 1.2 MB (1204671 bytes)
+-	v2 Blob: `sha256:f5c4e6c495776bf839ba15ab1a68dc7ef2f491ec4c258431a107445812ecd65d`
+-	v2 Content-Length: 686.3 KB (686275 bytes)
+
+#### `785d7401a39d4f6d8663b8d84c787a4c136a3f9706220082c9cb9c9f7fb54c52`
+
+```dockerfile
+CMD ["sh"]
+```
+
+-	Created: Fri, 18 Mar 2016 18:22:28 GMT
+-	Parent Layer: `a3a510dbad2a7ff043f2d339f66130bfd04f64a9463ce41986cc348174322d5c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -174,34 +238,34 @@ CMD ["sh"]
 ## `busybox:1-musl`
 
 ```console
-$ docker pull library/busybox@sha256:ba9d2e9dd1e76cd65e6eab3b3845ad9aad882cbc7312ea8b3f89229d5b777218
+$ docker pull library/busybox@sha256:62a5d2502f7029ad44f2e21ab075075ea4440ab4078f7725007504a31adda0e1
 ```
 
 -	Total Virtual Size: 1.2 MB (1204671 bytes)
--	Total v2 Content-Length: 686.3 KB (686328 bytes)
+-	Total v2 Content-Length: 686.3 KB (686307 bytes)
 
 ### Layers (2)
 
-#### `b84f77d69dcdac49a32315fde9274b726472505cd5edb0bdf112eadb64de060c`
+#### `a3a510dbad2a7ff043f2d339f66130bfd04f64a9463ce41986cc348174322d5c`
 
 ```dockerfile
-ADD file:602cd16ec3147eaad06d2a32e78c9030ef2e5dacaa4706754c76a6a2ab2ae962 in /
+ADD file:dc0b1e70703cd24c7c5c9f0b57e1e8d79d7ad0bdcecb7f82b9a59e5f6de17fa3 in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:24 GMT
+-	Created: Fri, 18 Mar 2016 18:22:27 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.2 MB (1204671 bytes)
--	v2 Blob: `sha256:c36a718939dc3233b8cfcf54e83bcfcd0def2f9d8aadb7f217f097c35baaa7b2`
--	v2 Content-Length: 686.3 KB (686296 bytes)
+-	v2 Blob: `sha256:f5c4e6c495776bf839ba15ab1a68dc7ef2f491ec4c258431a107445812ecd65d`
+-	v2 Content-Length: 686.3 KB (686275 bytes)
 
-#### `29017da868fba2d82fca0c416f5a91d3744bc8269a8b8ad0968a31837bf018bd`
+#### `785d7401a39d4f6d8663b8d84c787a4c136a3f9706220082c9cb9c9f7fb54c52`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:24 GMT
--	Parent Layer: `b84f77d69dcdac49a32315fde9274b726472505cd5edb0bdf112eadb64de060c`
+-	Created: Fri, 18 Mar 2016 18:22:28 GMT
+-	Parent Layer: `a3a510dbad2a7ff043f2d339f66130bfd04f64a9463ce41986cc348174322d5c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -210,34 +274,34 @@ CMD ["sh"]
 ## `busybox:musl`
 
 ```console
-$ docker pull library/busybox@sha256:e579ce5bd7811544daf157a20ff4e9bdb365034b0f2187e4fe54bf65a509936f
+$ docker pull library/busybox@sha256:0316f59332f96025ae68340855890520eef39e5028bcd709b8b535bee7c94875
 ```
 
 -	Total Virtual Size: 1.2 MB (1204671 bytes)
--	Total v2 Content-Length: 686.3 KB (686328 bytes)
+-	Total v2 Content-Length: 686.3 KB (686307 bytes)
 
 ### Layers (2)
 
-#### `b84f77d69dcdac49a32315fde9274b726472505cd5edb0bdf112eadb64de060c`
+#### `a3a510dbad2a7ff043f2d339f66130bfd04f64a9463ce41986cc348174322d5c`
 
 ```dockerfile
-ADD file:602cd16ec3147eaad06d2a32e78c9030ef2e5dacaa4706754c76a6a2ab2ae962 in /
+ADD file:dc0b1e70703cd24c7c5c9f0b57e1e8d79d7ad0bdcecb7f82b9a59e5f6de17fa3 in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:24 GMT
+-	Created: Fri, 18 Mar 2016 18:22:27 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.2 MB (1204671 bytes)
--	v2 Blob: `sha256:c36a718939dc3233b8cfcf54e83bcfcd0def2f9d8aadb7f217f097c35baaa7b2`
--	v2 Content-Length: 686.3 KB (686296 bytes)
+-	v2 Blob: `sha256:f5c4e6c495776bf839ba15ab1a68dc7ef2f491ec4c258431a107445812ecd65d`
+-	v2 Content-Length: 686.3 KB (686275 bytes)
 
-#### `29017da868fba2d82fca0c416f5a91d3744bc8269a8b8ad0968a31837bf018bd`
+#### `785d7401a39d4f6d8663b8d84c787a4c136a3f9706220082c9cb9c9f7fb54c52`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:24 GMT
--	Parent Layer: `b84f77d69dcdac49a32315fde9274b726472505cd5edb0bdf112eadb64de060c`
+-	Created: Fri, 18 Mar 2016 18:22:28 GMT
+-	Parent Layer: `a3a510dbad2a7ff043f2d339f66130bfd04f64a9463ce41986cc348174322d5c`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -245,43 +309,107 @@ CMD ["sh"]
 
 ## `busybox:1.24.2-uclibc`
 
-**does not exist** (yet?)
-
-## `busybox:1.24.2`
-
-**does not exist** (yet?)
-
-## `busybox:1.24-uclibc`
-
 ```console
-$ docker pull library/busybox@sha256:2d705144c0eb23b871d806469afa905e86c97df6c339b9011aabcae1d48eefda
+$ docker pull library/busybox@sha256:7dc388969495689a04e9bfdffd682905fcfc6cdae52968b0a1a3427295488b94
 ```
 
 -	Total Virtual Size: 1.1 MB (1112820 bytes)
--	Total v2 Content-Length: 676.0 KB (676025 bytes)
+-	Total v2 Content-Length: 676.0 KB (676024 bytes)
 
 ### Layers (2)
 
-#### `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+#### `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 
 ```dockerfile
-ADD file:beb7a24137a3d572c159d72b59be46d43a3809c4c13a75a8a887a6c356e11f44 in /
+ADD file:47ca6e777c36a4cfffe3f918b64a445c8f32300deeb9dfa5cc47261bd7b75d21 in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:48 GMT
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.1 MB (1112820 bytes)
--	v2 Blob: `sha256:328210fcd5e06225fa533b54de726689228d729e62f2a117eaf97126acffd279`
--	v2 Content-Length: 676.0 KB (675993 bytes)
+-	v2 Blob: `sha256:385e281300cc6d88bdd155e0931fbdfbb1801c2b0265340a40481ee2b733ae66`
+-	v2 Content-Length: 676.0 KB (675992 bytes)
 
-#### `f1e4b055fb652a75379f41aee7b23a23a5f6dcc3b07e61f181d542ebb04f2ac9`
+#### `bc744c4ab376115cc45c610d53f529dd2d4249ae6b35e5d6e7a96e58863545aa`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:49 GMT
--	Parent Layer: `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
+-	Parent Layer: `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+## `busybox:1.24.2`
+
+```console
+$ docker pull library/busybox@sha256:c7b0d3b33565b01409b53dc02d6064094778ea508f7d349767a6f125cdb38003
+```
+
+-	Total Virtual Size: 1.1 MB (1112820 bytes)
+-	Total v2 Content-Length: 676.0 KB (676024 bytes)
+
+### Layers (2)
+
+#### `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
+
+```dockerfile
+ADD file:47ca6e777c36a4cfffe3f918b64a445c8f32300deeb9dfa5cc47261bd7b75d21 in /
+```
+
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 1.1 MB (1112820 bytes)
+-	v2 Blob: `sha256:385e281300cc6d88bdd155e0931fbdfbb1801c2b0265340a40481ee2b733ae66`
+-	v2 Content-Length: 676.0 KB (675992 bytes)
+
+#### `bc744c4ab376115cc45c610d53f529dd2d4249ae6b35e5d6e7a96e58863545aa`
+
+```dockerfile
+CMD ["sh"]
+```
+
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
+-	Parent Layer: `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
+-	Docker Version: 1.9.1
+-	Virtual Size: 0.0 B
+-	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
+-	v2 Content-Length: 32.0 B
+
+## `busybox:1.24-uclibc`
+
+```console
+$ docker pull library/busybox@sha256:52a808516df2231b2d9fefd6de03d272d10f02414b8546d92f194bce2a478286
+```
+
+-	Total Virtual Size: 1.1 MB (1112820 bytes)
+-	Total v2 Content-Length: 676.0 KB (676024 bytes)
+
+### Layers (2)
+
+#### `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
+
+```dockerfile
+ADD file:47ca6e777c36a4cfffe3f918b64a445c8f32300deeb9dfa5cc47261bd7b75d21 in /
+```
+
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
+-	Docker Version: 1.9.1
+-	Virtual Size: 1.1 MB (1112820 bytes)
+-	v2 Blob: `sha256:385e281300cc6d88bdd155e0931fbdfbb1801c2b0265340a40481ee2b733ae66`
+-	v2 Content-Length: 676.0 KB (675992 bytes)
+
+#### `bc744c4ab376115cc45c610d53f529dd2d4249ae6b35e5d6e7a96e58863545aa`
+
+```dockerfile
+CMD ["sh"]
+```
+
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
+-	Parent Layer: `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -290,34 +418,34 @@ CMD ["sh"]
 ## `busybox:1.24`
 
 ```console
-$ docker pull library/busybox@sha256:aab6dcda6afed81afcec62d97ec493255f1618aff200301d25a3b6d3bf9d9e71
+$ docker pull library/busybox@sha256:b42780136ec20501905986041ee8f5ebcdc9a1178e4e564337bd1b2bd7ee148d
 ```
 
 -	Total Virtual Size: 1.1 MB (1112820 bytes)
--	Total v2 Content-Length: 676.0 KB (676025 bytes)
+-	Total v2 Content-Length: 676.0 KB (676024 bytes)
 
 ### Layers (2)
 
-#### `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+#### `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 
 ```dockerfile
-ADD file:beb7a24137a3d572c159d72b59be46d43a3809c4c13a75a8a887a6c356e11f44 in /
+ADD file:47ca6e777c36a4cfffe3f918b64a445c8f32300deeb9dfa5cc47261bd7b75d21 in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:48 GMT
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.1 MB (1112820 bytes)
--	v2 Blob: `sha256:328210fcd5e06225fa533b54de726689228d729e62f2a117eaf97126acffd279`
--	v2 Content-Length: 676.0 KB (675993 bytes)
+-	v2 Blob: `sha256:385e281300cc6d88bdd155e0931fbdfbb1801c2b0265340a40481ee2b733ae66`
+-	v2 Content-Length: 676.0 KB (675992 bytes)
 
-#### `f1e4b055fb652a75379f41aee7b23a23a5f6dcc3b07e61f181d542ebb04f2ac9`
+#### `bc744c4ab376115cc45c610d53f529dd2d4249ae6b35e5d6e7a96e58863545aa`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:49 GMT
--	Parent Layer: `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
+-	Parent Layer: `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -326,34 +454,34 @@ CMD ["sh"]
 ## `busybox:1-uclibc`
 
 ```console
-$ docker pull library/busybox@sha256:6facc79af06816e793887a3c5a2961a43fbf3e530db9324be5a839628ab6e412
+$ docker pull library/busybox@sha256:f078bd74d0bd5a38ab8afb53798eb2663a7ab5650f83a95b2c3781e808772606
 ```
 
 -	Total Virtual Size: 1.1 MB (1112820 bytes)
--	Total v2 Content-Length: 676.0 KB (676025 bytes)
+-	Total v2 Content-Length: 676.0 KB (676024 bytes)
 
 ### Layers (2)
 
-#### `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+#### `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 
 ```dockerfile
-ADD file:beb7a24137a3d572c159d72b59be46d43a3809c4c13a75a8a887a6c356e11f44 in /
+ADD file:47ca6e777c36a4cfffe3f918b64a445c8f32300deeb9dfa5cc47261bd7b75d21 in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:48 GMT
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.1 MB (1112820 bytes)
--	v2 Blob: `sha256:328210fcd5e06225fa533b54de726689228d729e62f2a117eaf97126acffd279`
--	v2 Content-Length: 676.0 KB (675993 bytes)
+-	v2 Blob: `sha256:385e281300cc6d88bdd155e0931fbdfbb1801c2b0265340a40481ee2b733ae66`
+-	v2 Content-Length: 676.0 KB (675992 bytes)
 
-#### `f1e4b055fb652a75379f41aee7b23a23a5f6dcc3b07e61f181d542ebb04f2ac9`
+#### `bc744c4ab376115cc45c610d53f529dd2d4249ae6b35e5d6e7a96e58863545aa`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:49 GMT
--	Parent Layer: `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
+-	Parent Layer: `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -362,34 +490,34 @@ CMD ["sh"]
 ## `busybox:1`
 
 ```console
-$ docker pull library/busybox@sha256:23086e6fca4736563a2e3154fa2e32a41c48a50233bcf5fb732d5208be6eaeb9
+$ docker pull library/busybox@sha256:c1faa582ad156146570edb7c3c15fac217f1599dd456b30956e8bf89ca4c4c88
 ```
 
 -	Total Virtual Size: 1.1 MB (1112820 bytes)
--	Total v2 Content-Length: 676.0 KB (676025 bytes)
+-	Total v2 Content-Length: 676.0 KB (676024 bytes)
 
 ### Layers (2)
 
-#### `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+#### `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 
 ```dockerfile
-ADD file:beb7a24137a3d572c159d72b59be46d43a3809c4c13a75a8a887a6c356e11f44 in /
+ADD file:47ca6e777c36a4cfffe3f918b64a445c8f32300deeb9dfa5cc47261bd7b75d21 in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:48 GMT
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.1 MB (1112820 bytes)
--	v2 Blob: `sha256:328210fcd5e06225fa533b54de726689228d729e62f2a117eaf97126acffd279`
--	v2 Content-Length: 676.0 KB (675993 bytes)
+-	v2 Blob: `sha256:385e281300cc6d88bdd155e0931fbdfbb1801c2b0265340a40481ee2b733ae66`
+-	v2 Content-Length: 676.0 KB (675992 bytes)
 
-#### `f1e4b055fb652a75379f41aee7b23a23a5f6dcc3b07e61f181d542ebb04f2ac9`
+#### `bc744c4ab376115cc45c610d53f529dd2d4249ae6b35e5d6e7a96e58863545aa`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:49 GMT
--	Parent Layer: `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
+-	Parent Layer: `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -398,34 +526,34 @@ CMD ["sh"]
 ## `busybox:uclibc`
 
 ```console
-$ docker pull library/busybox@sha256:64af56dd17cbbe5ec7fef6c11d9fd7d434e42c0e3d52a98422e59088d117ce8e
+$ docker pull library/busybox@sha256:048259e711ee6519d9480f1cdf93efb7fc6cda9b7dafbc0ba5fdcb514c32ec1b
 ```
 
 -	Total Virtual Size: 1.1 MB (1112820 bytes)
--	Total v2 Content-Length: 676.0 KB (676025 bytes)
+-	Total v2 Content-Length: 676.0 KB (676024 bytes)
 
 ### Layers (2)
 
-#### `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+#### `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 
 ```dockerfile
-ADD file:beb7a24137a3d572c159d72b59be46d43a3809c4c13a75a8a887a6c356e11f44 in /
+ADD file:47ca6e777c36a4cfffe3f918b64a445c8f32300deeb9dfa5cc47261bd7b75d21 in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:48 GMT
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.1 MB (1112820 bytes)
--	v2 Blob: `sha256:328210fcd5e06225fa533b54de726689228d729e62f2a117eaf97126acffd279`
--	v2 Content-Length: 676.0 KB (675993 bytes)
+-	v2 Blob: `sha256:385e281300cc6d88bdd155e0931fbdfbb1801c2b0265340a40481ee2b733ae66`
+-	v2 Content-Length: 676.0 KB (675992 bytes)
 
-#### `f1e4b055fb652a75379f41aee7b23a23a5f6dcc3b07e61f181d542ebb04f2ac9`
+#### `bc744c4ab376115cc45c610d53f529dd2d4249ae6b35e5d6e7a96e58863545aa`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:49 GMT
--	Parent Layer: `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
+-	Parent Layer: `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
@@ -434,34 +562,34 @@ CMD ["sh"]
 ## `busybox:latest`
 
 ```console
-$ docker pull library/busybox@sha256:0326ccfeddaaa974a3de8a21db451e782a306a46d5c597eee743c91a93d36bb7
+$ docker pull library/busybox@sha256:4a887a2326ec9e0fa90cce7b4764b0e627b5d6afcb81a3f73c85dc29cea00048
 ```
 
 -	Total Virtual Size: 1.1 MB (1112820 bytes)
--	Total v2 Content-Length: 676.0 KB (676025 bytes)
+-	Total v2 Content-Length: 676.0 KB (676024 bytes)
 
 ### Layers (2)
 
-#### `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+#### `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 
 ```dockerfile
-ADD file:beb7a24137a3d572c159d72b59be46d43a3809c4c13a75a8a887a6c356e11f44 in /
+ADD file:47ca6e777c36a4cfffe3f918b64a445c8f32300deeb9dfa5cc47261bd7b75d21 in /
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:48 GMT
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
 -	Docker Version: 1.9.1
 -	Virtual Size: 1.1 MB (1112820 bytes)
--	v2 Blob: `sha256:328210fcd5e06225fa533b54de726689228d729e62f2a117eaf97126acffd279`
--	v2 Content-Length: 676.0 KB (675993 bytes)
+-	v2 Blob: `sha256:385e281300cc6d88bdd155e0931fbdfbb1801c2b0265340a40481ee2b733ae66`
+-	v2 Content-Length: 676.0 KB (675992 bytes)
 
-#### `f1e4b055fb652a75379f41aee7b23a23a5f6dcc3b07e61f181d542ebb04f2ac9`
+#### `bc744c4ab376115cc45c610d53f529dd2d4249ae6b35e5d6e7a96e58863545aa`
 
 ```dockerfile
 CMD ["sh"]
 ```
 
--	Created: Tue, 15 Mar 2016 23:40:49 GMT
--	Parent Layer: `c2ddbea624bdf70a9c1b1e843d48065509f4a631d8723aa347b401aebbf7ec98`
+-	Created: Fri, 18 Mar 2016 18:22:48 GMT
+-	Parent Layer: `56ed16bd6310cca65920c653a9bb22de6b235990dcaa1742ff839867aed730e5`
 -	Docker Version: 1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
