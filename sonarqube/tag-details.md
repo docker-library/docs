@@ -104,6 +104,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:955b1afcc2be88feba1ee7a48b9f71fe2e5a90cce6b974e0a77cb81ebc9f2f0e`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:37 GMT
 
 #### `8859a87b61601c983df259f21a493b97424efb6030d88f07f8f3c260714d1e73`
 
@@ -462,6 +463,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:955b1afcc2be88feba1ee7a48b9f71fe2e5a90cce6b974e0a77cb81ebc9f2f0e`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:37 GMT
 
 #### `8859a87b61601c983df259f21a493b97424efb6030d88f07f8f3c260714d1e73`
 
@@ -820,6 +822,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:955b1afcc2be88feba1ee7a48b9f71fe2e5a90cce6b974e0a77cb81ebc9f2f0e`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:37 GMT
 
 #### `8859a87b61601c983df259f21a493b97424efb6030d88f07f8f3c260714d1e73`
 
@@ -1191,6 +1194,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:955b1afcc2be88feba1ee7a48b9f71fe2e5a90cce6b974e0a77cb81ebc9f2f0e`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:37 GMT
 
 #### `8859a87b61601c983df259f21a493b97424efb6030d88f07f8f3c260714d1e73`
 
