@@ -603,7 +603,6 @@ RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621310 bytes)
 -	v2 Blob: `sha256:437038dc2fba4b6e42e5435236bbc45d0ef1465aae09069c2a83000ee7d28561`
 -	v2 Content-Length: 329.1 KB (329139 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:51 GMT
 
 #### `8ffc964e617838c48d0c35e2cdb8a472e8ea5542e378e6e1c7e7cb74b3f08192`
 
@@ -838,7 +837,6 @@ RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621310 bytes)
 -	v2 Blob: `sha256:437038dc2fba4b6e42e5435236bbc45d0ef1465aae09069c2a83000ee7d28561`
 -	v2 Content-Length: 329.1 KB (329139 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:51 GMT
 
 #### `8ffc964e617838c48d0c35e2cdb8a472e8ea5542e378e6e1c7e7cb74b3f08192`
 
@@ -1073,7 +1071,6 @@ RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621310 bytes)
 -	v2 Blob: `sha256:437038dc2fba4b6e42e5435236bbc45d0ef1465aae09069c2a83000ee7d28561`
 -	v2 Content-Length: 329.1 KB (329139 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:51 GMT
 
 #### `8ffc964e617838c48d0c35e2cdb8a472e8ea5542e378e6e1c7e7cb74b3f08192`
 
