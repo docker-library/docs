@@ -1238,7 +1238,6 @@ RUN apt-get update && apt-get install -y rebar make  && mkdir -p /usr/local/lib/
 -	Virtual Size: 11.7 MB (11707885 bytes)
 -	v2 Blob: `sha256:cba2195126c369adac5cba3ab8655b9c9e2c69628611ffc69f3edc71542d5b91`
 -	v2 Content-Length: 9.9 MB (9903170 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:31:15 GMT
 
 ## `couchdb:1.6-couchperuser`
 
@@ -1516,7 +1515,6 @@ RUN apt-get update && apt-get install -y rebar make  && mkdir -p /usr/local/lib/
 -	Virtual Size: 11.7 MB (11707885 bytes)
 -	v2 Blob: `sha256:cba2195126c369adac5cba3ab8655b9c9e2c69628611ffc69f3edc71542d5b91`
 -	v2 Content-Length: 9.9 MB (9903170 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:31:15 GMT
 
 ## `couchdb:1-couchperuser`
 
@@ -1794,4 +1792,3 @@ RUN apt-get update && apt-get install -y rebar make  && mkdir -p /usr/local/lib/
 -	Virtual Size: 11.7 MB (11707885 bytes)
 -	v2 Blob: `sha256:cba2195126c369adac5cba3ab8655b9c9e2c69628611ffc69f3edc71542d5b91`
 -	v2 Content-Length: 9.9 MB (9903170 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:31:15 GMT
