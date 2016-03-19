@@ -1117,7 +1117,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:96d48891ab12aab701da18a514cb8401d13a1bd310a7a0609ed05157e26897f8`
 -	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:54 GMT
 
 #### `7f285ad7c64049a67b4daf5a206c23682051587a55ecf62bcd3f3a5f22b3558b`
 
@@ -1398,7 +1397,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:96d48891ab12aab701da18a514cb8401d13a1bd310a7a0609ed05157e26897f8`
 -	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:54 GMT
 
 #### `7f285ad7c64049a67b4daf5a206c23682051587a55ecf62bcd3f3a5f22b3558b`
 
@@ -1679,7 +1677,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:96d48891ab12aab701da18a514cb8401d13a1bd310a7a0609ed05157e26897f8`
 -	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:54 GMT
 
 #### `7f285ad7c64049a67b4daf5a206c23682051587a55ecf62bcd3f3a5f22b3558b`
 
@@ -1960,7 +1957,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:96d48891ab12aab701da18a514cb8401d13a1bd310a7a0609ed05157e26897f8`
 -	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:54 GMT
 
 #### `7f285ad7c64049a67b4daf5a206c23682051587a55ecf62bcd3f3a5f22b3558b`
 
