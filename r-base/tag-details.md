@@ -105,6 +105,7 @@ RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
 -	Virtual Size: 1.6 MB (1616850 bytes)
 -	v2 Blob: `sha256:b30e47c1e5ba7326326c2abfee99fbb832f31ea9b0fd49bda5a1daa1ad9ca94d`
 -	v2 Content-Length: 325.5 KB (325452 bytes)
+-	v2 Last-Modified: Wed, 24 Feb 2016 17:56:54 GMT
 
 #### `e889bbf7d1ccb92baea2d374c7537e5eb521d0bec10a5ffd58c4d103427072c7`
 
@@ -300,6 +301,7 @@ RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
 -	Virtual Size: 1.6 MB (1616850 bytes)
 -	v2 Blob: `sha256:b30e47c1e5ba7326326c2abfee99fbb832f31ea9b0fd49bda5a1daa1ad9ca94d`
 -	v2 Content-Length: 325.5 KB (325452 bytes)
+-	v2 Last-Modified: Wed, 24 Feb 2016 17:56:54 GMT
 
 #### `e889bbf7d1ccb92baea2d374c7537e5eb521d0bec10a5ffd58c4d103427072c7`
 
