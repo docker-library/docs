@@ -4537,6 +4537,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:b4d94c13be95de810e1ae48b02781ae5e6d47fcd6aec4c4089fb5d140d357413`
 -	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:15:25 GMT
 
 #### `09f4172af602c5372ec0630933e21f103a2788bd6d2b0fcbd3672b437bbb5acf`
 
@@ -4919,6 +4920,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:b4d94c13be95de810e1ae48b02781ae5e6d47fcd6aec4c4089fb5d140d357413`
 -	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:15:25 GMT
 
 #### `09f4172af602c5372ec0630933e21f103a2788bd6d2b0fcbd3672b437bbb5acf`
 
@@ -5301,6 +5303,7 @@ RUN echo "deb http://packages.elasticsearch.org/logstash/${LOGSTASH_MAJOR}/debia
 -	Virtual Size: 70.0 B
 -	v2 Blob: `sha256:b4d94c13be95de810e1ae48b02781ae5e6d47fcd6aec4c4089fb5d140d357413`
 -	v2 Content-Length: 229.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:15:25 GMT
 
 #### `09f4172af602c5372ec0630933e21f103a2788bd6d2b0fcbd3672b437bbb5acf`
 
