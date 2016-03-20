@@ -289,6 +289,7 @@ COPY dir:1bf4f163091133a9e6147b81120df8e6bad4ab82e46b60adce16c1dd28ae7201 in /op
 -	Virtual Size: 35.4 KB (35398 bytes)
 -	v2 Blob: `sha256:3c5b05aba1355732c082dd9e46caa1372096e6e11cc2e92c43cf1fb33c143ac7`
 -	v2 Content-Length: 5.7 KB (5723 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:13:51 GMT
 
 #### `125055e1ce429a163150fa9780c69a2da410cb53505f1eb7f253156b8f845b4e`
 

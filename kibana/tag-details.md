@@ -2186,7 +2186,6 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:08b715014fee0ef49b7b83f2853dc9309030b8230f8a1659f427b8b598266727`
 -	v2 Content-Length: 472.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:17:52 GMT
 
 #### `61c539121c2f7b37b551b1ce2b1ab61a89784fc94899e76b1f028eae5abb1166`
 
@@ -2454,7 +2453,6 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:08b715014fee0ef49b7b83f2853dc9309030b8230f8a1659f427b8b598266727`
 -	v2 Content-Length: 472.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:17:52 GMT
 
 #### `61c539121c2f7b37b551b1ce2b1ab61a89784fc94899e76b1f028eae5abb1166`
 
@@ -2722,7 +2720,6 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:08b715014fee0ef49b7b83f2853dc9309030b8230f8a1659f427b8b598266727`
 -	v2 Content-Length: 472.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:17:52 GMT
 
 #### `61c539121c2f7b37b551b1ce2b1ab61a89784fc94899e76b1f028eae5abb1166`
 
@@ -2990,7 +2987,6 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:08b715014fee0ef49b7b83f2853dc9309030b8230f8a1659f427b8b598266727`
 -	v2 Content-Length: 472.0 B
--	v2 Last-Modified: Fri, 05 Feb 2016 01:17:52 GMT
 
 #### `61c539121c2f7b37b551b1ce2b1ab61a89784fc94899e76b1f028eae5abb1166`
 
