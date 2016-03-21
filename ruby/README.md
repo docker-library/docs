@@ -59,12 +59,6 @@ The `onbuild` tag expects a `Gemfile.lock` in your app directory. This `docker r
 $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:2.1 bundle install
 ```
 
-### Encoding 
-
-If you need to use any encoding different than the default ``US-ASCII`` then make sure you specify on your Dockerfile the following: 
-
-``ENV LANG C.UTF-8``
-
 ## Run a single Ruby script
 
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a Ruby script by using the Ruby Docker image directly:
