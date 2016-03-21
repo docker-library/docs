@@ -13,21 +13,36 @@ For detailed information about the virtual/transfer sizes and individual layers 
 
 # What is Zend Server?
 
-Zend Server is the integrated application platform for PHP mobile and web apps. Zend Server provides you with a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the all-new Z-Ray. ###Boost your Development with Z-Ray Using Zend Server Z-Ray is akin to wearing X-Ray goggles, effortlessly giving developers deep insight into how their code is running as they are developing it – all without having to change any of their habits or workflow. With Z-Ray, developers can immediately understand the impact of their code changes, enabling them to both improve quality and solve issues long before their code reaches production. In addition to the obvious benefits of this ‘Left Shifting’ – better performance, fewer production issues and faster recovery times – using Z-Ray is also downright fun! ###Powering Continuous Delivery Zend Server is the platform that enables Continuous Delivery, which provides consistency, automation and collaboration capabilities throughout the application delivery cycle. Patterns are available to integrate Zend Server with: Chef, Jenkins, Nagios, Vmware, Puppet.
+Zend Server is the integrated application platform for PHP mobile and web apps. Zend Server provides you with a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the all-new Z-Ray.
 
-###Additional Resources http://www.zend.com/ http://kb.zend.com/ http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm http://files.zend.com/help/Zend-Server/zend-server.htm#getting_started.htm
+### Boost your Development with Z-Ray
+
+Using Zend Server Z-Ray is akin to wearing X-Ray goggles, effortlessly giving developers deep insight into how their code is running as they are developing it—all without having to change any of their habits or workflow. With Z-Ray, developers can immediately understand the impact of their code changes, enabling them to both improve quality and solve issues long before their code reaches production. In addition to the obvious benefits of this ‘Left Shifting’—better performance, fewer production issues and faster recovery times—using Z-Ray is also downright fun!
+
+### Powering Continuous Delivery
+
+Zend Server is the platform that enables Continuous Delivery, which provides consistency, automation and collaboration capabilities throughout the application delivery cycle. Patterns are available to integrate Zend Server with: Chef, Jenkins, Nagios, Vmware, Puppet.
+
+### Additional Resources
+
+-	http://www.zend.com/
+-	http://kb.zend.com/
+-	http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm
+-	http://files.zend.com/help/Zend-Server/zend-server.htm#getting_started.htm
 
 # PHP-ZendServer
 
-This is a cluster-enabled version of a Dockerized Zend Server 7.0 container. With Zend Server on Docker, you'll get your PHP applications up and running on a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the new and innovative new technology - Z-Ray. Z-Ray gives developers unprecedented visibility into their code by tracking and displaying in a toolbar live and detailed info on how the various elements constructing their page are performing.
+This is a cluster-enabled version of a Dockerized Zend Server 7.0 container. With Zend Server on Docker, you'll get your PHP applications up and running on a highly available PHP production environment which includes, amongst other features, a highly reliable PHP stack, application monitoring, troubleshooting, and the new and innovative new technology—Z-Ray. Z-Ray gives developers unprecedented visibility into their code by tracking and displaying in a toolbar live and detailed info on how the various elements constructing their page are performing.
 
 ## Usage
 
 #### Launching the Container from Docker-Hub
 
-Zend Server is shared on [Docker-Hub](https://registry.hub.docker.com/_/php-zendserver/) as **php-zendserver**. - To start a single Zend Server instance, execute:
+Zend Server is shared on [Docker-Hub](https://registry.hub.docker.com/_/php-zendserver/) as **php-zendserver**.
 
-	    $ docker run php-zendserver
+-	To start a single Zend Server instance, execute:
+
+		$ docker run php-zendserver
 
 -	You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;' to the 'docker run' command. Availible PHP version are 5.4 & 5.5 (5.5 is the default) and Zend Server 7 (for example: php-zendserver:7.0-php5.4).
 
@@ -77,11 +92,22 @@ Env variables are passed in the run command with the "-e" switch.
 
 ##### Optional env-variables:
 
-To specify a pre-defined admin password for Zend Server use: - ZS_ADMIN_PASSWORD
+To specify a pre-defined admin password for Zend Server use:
 
-MySQL vars for clustered ops. *ALL* are required for the node to properly join a cluster: - MYSQL_HOSTNAME - ip or hostname of MySQL database - MYSQL_PORT - MySQL listening port - MYSQL_USERNAME - MYSQL_PASSWORD - MYSQL_DBNAME - Name of the database Zend Server will use for cluster ops (created automatically if it does not exist).
+-	ZS_ADMIN_PASSWORD
 
-To specify a pre-purchased license use the following env vars: - ZEND_LICENSE_KEY - ZEND_LICENSE_ORDER
+MySQL vars for clustered ops. *ALL* are required for the node to properly join a cluster:
+
+-	MYSQL_HOSTNAME - ip or hostname of MySQL database
+-	MYSQL_PORT - MySQL listening port
+-	MYSQL_USERNAME
+-	MYSQL_PASSWORD
+-	MYSQL_DBNAME - Name of the database Zend Server will use for cluster ops (created automatically if it does not exist).
+
+To specify a pre-purchased license use the following env vars:
+
+-	ZEND_LICENSE_KEY
+-	ZEND_LICENSE_ORDER
 
 ### Minimal Requirements
 
