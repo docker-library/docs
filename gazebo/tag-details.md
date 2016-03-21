@@ -85,7 +85,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fac8e7c71b0f149edfd7324c1bf819e106c1491fedecd7244c552c0a5de8ab86`
 
@@ -99,7 +98,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `180ec6f022da22562b4ca78086505dc38d71799cf9fc3462d808f9eefcf763cd`
 
@@ -141,7 +139,6 @@ RUN apt-get update && apt-get install -q -y\
 -	Virtual Size: 341.2 MB (341221812 bytes)
 -	v2 Blob: `sha256:5d41ee03b912467d51d314a80cb245935798b3835cb56d135474a811f10d9e05`
 -	v2 Content-Length: 143.9 MB (143877009 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:42:34 GMT
 
 #### `6d9ab9914a017456daf2bfd2424b35de3bb6d7dec88625f70dad90949096932d`
 
@@ -155,7 +152,6 @@ EXPOSE 11345/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f9c7000de906fc507cdf1cef3cfdb1fd6f96e2609c52784ac7d9098e53b87c42`
 
@@ -169,7 +165,6 @@ COPY file:cf363986766dbc3a89db72970f261ead18c8314539e0041f16f3f35c98e6a424 in /
 -	Virtual Size: 93.0 B
 -	v2 Blob: `sha256:c2d11fc7053715b17bb3201f8b7f0e6d49b325314350828de77b8ad7c757fd0a`
 -	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Thu, 20 Aug 2015 01:38:05 GMT
 
 #### `4442bdfd01d97c89a1ec6668aa08a7e10933812a1ca2da92f86c6f9eadcf2bcc`
 
@@ -183,7 +178,6 @@ ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6249f05aafb85a5b93936324ab3f85aca8903a7c0ad15a2bfc047bfa3b45b10a`
 
@@ -197,7 +191,6 @@ CMD ["gzserver"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `gazebo:libgazebo4`
 
@@ -272,7 +265,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fac8e7c71b0f149edfd7324c1bf819e106c1491fedecd7244c552c0a5de8ab86`
 
@@ -286,7 +278,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `180ec6f022da22562b4ca78086505dc38d71799cf9fc3462d808f9eefcf763cd`
 
@@ -328,7 +319,6 @@ RUN apt-get update && apt-get install -q -y\
 -	Virtual Size: 341.2 MB (341221812 bytes)
 -	v2 Blob: `sha256:5d41ee03b912467d51d314a80cb245935798b3835cb56d135474a811f10d9e05`
 -	v2 Content-Length: 143.9 MB (143877009 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:42:34 GMT
 
 #### `6d9ab9914a017456daf2bfd2424b35de3bb6d7dec88625f70dad90949096932d`
 
@@ -342,7 +332,6 @@ EXPOSE 11345/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f9c7000de906fc507cdf1cef3cfdb1fd6f96e2609c52784ac7d9098e53b87c42`
 
@@ -356,7 +345,6 @@ COPY file:cf363986766dbc3a89db72970f261ead18c8314539e0041f16f3f35c98e6a424 in /
 -	Virtual Size: 93.0 B
 -	v2 Blob: `sha256:c2d11fc7053715b17bb3201f8b7f0e6d49b325314350828de77b8ad7c757fd0a`
 -	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Thu, 20 Aug 2015 01:38:05 GMT
 
 #### `4442bdfd01d97c89a1ec6668aa08a7e10933812a1ca2da92f86c6f9eadcf2bcc`
 
@@ -370,7 +358,6 @@ ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6249f05aafb85a5b93936324ab3f85aca8903a7c0ad15a2bfc047bfa3b45b10a`
 
@@ -384,7 +371,6 @@ CMD ["gzserver"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4367c81eee94d9882c8eae3ba3d17e4008a7d7127ba9b88d1630df0ad818f69c`
 
@@ -398,7 +384,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a67219f99982b77e656e510a96aa6d8e9a41e0c8422d87acd9d40081d94acd66`
 
@@ -488,7 +473,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fac8e7c71b0f149edfd7324c1bf819e106c1491fedecd7244c552c0a5de8ab86`
 
@@ -502,7 +486,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `180ec6f022da22562b4ca78086505dc38d71799cf9fc3462d808f9eefcf763cd`
 
@@ -557,7 +540,6 @@ EXPOSE 11345/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ede5eef82836798097b0bfe092372d8308ff94a3c2a1e3ad769cf62854c8772a`
 
@@ -584,7 +566,6 @@ ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab2142543e96e7d63f6925b842b256a3161662bcde50faf81a5ad0d07e7b8738`
 
@@ -598,7 +579,6 @@ CMD ["gzserver"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `gazebo:libgazebo5`
 
@@ -673,7 +653,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fac8e7c71b0f149edfd7324c1bf819e106c1491fedecd7244c552c0a5de8ab86`
 
@@ -687,7 +666,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `180ec6f022da22562b4ca78086505dc38d71799cf9fc3462d808f9eefcf763cd`
 
@@ -742,7 +720,6 @@ EXPOSE 11345/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ede5eef82836798097b0bfe092372d8308ff94a3c2a1e3ad769cf62854c8772a`
 
@@ -769,7 +746,6 @@ ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab2142543e96e7d63f6925b842b256a3161662bcde50faf81a5ad0d07e7b8738`
 
@@ -783,7 +759,6 @@ CMD ["gzserver"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `916426a183b3e6adf48a06f83060eb2c7f8dfe05de08bf272002f3daf1997581`
 
@@ -797,7 +772,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3fe8123a66735093a4d404c188e4fd9ecf62fa4eedb21b055f8b65055e693997`
 
@@ -813,7 +787,6 @@ RUN apt-get update && apt-get install -q -y\
 -	Virtual Size: 853.7 MB (853659216 bytes)
 -	v2 Blob: `sha256:88e060a6be6293234faf159be6aa84be3d67e55a26b154435184ca5eb5b328e1`
 -	v2 Content-Length: 259.9 MB (259883247 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:48:07 GMT
 
 ## `gazebo:gzserver6`
 
@@ -888,7 +861,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fac8e7c71b0f149edfd7324c1bf819e106c1491fedecd7244c552c0a5de8ab86`
 
@@ -902,7 +874,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `180ec6f022da22562b4ca78086505dc38d71799cf9fc3462d808f9eefcf763cd`
 
@@ -944,7 +915,6 @@ RUN apt-get update && apt-get install -q -y\
 -	Virtual Size: 384.2 MB (384248059 bytes)
 -	v2 Blob: `sha256:1a7c1c9ff12f862e387473ab6fa5471edcd1f48080c293b16ddb209519971504`
 -	v2 Content-Length: 168.5 MB (168518208 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:49:20 GMT
 
 #### `6dfc5ccb273ef117595fd3e40dc231d810f44f0fd5ef0fe9ff172bdc77e4d634`
 
@@ -958,7 +928,6 @@ EXPOSE 11345/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `184fa1aa7ca2490b44537c278b5d4c5475f6d409f8b39c64a25c3e5153608b8c`
 
@@ -972,7 +941,6 @@ COPY file:cf363986766dbc3a89db72970f261ead18c8314539e0041f16f3f35c98e6a424 in /
 -	Virtual Size: 93.0 B
 -	v2 Blob: `sha256:8f83acea8ae81a4fb50470c802b710dfd2221762b4c5a04704858ad71d3bde8e`
 -	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 28 Jul 2015 18:26:09 GMT
 
 #### `a7c576dd37543abb47afc4d71b55449328b8b8ec182a0699464e2d7ad4eac5e5`
 
@@ -986,7 +954,6 @@ ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e815d8e00f6fff423319e528ec75cad131b86fad5f79a51a58f1748c3ee83eaa`
 
@@ -1000,7 +967,6 @@ CMD ["gzserver"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `gazebo:libgazebo6`
 
@@ -1075,7 +1041,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fac8e7c71b0f149edfd7324c1bf819e106c1491fedecd7244c552c0a5de8ab86`
 
@@ -1089,7 +1054,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `180ec6f022da22562b4ca78086505dc38d71799cf9fc3462d808f9eefcf763cd`
 
@@ -1131,7 +1095,6 @@ RUN apt-get update && apt-get install -q -y\
 -	Virtual Size: 384.2 MB (384248059 bytes)
 -	v2 Blob: `sha256:1a7c1c9ff12f862e387473ab6fa5471edcd1f48080c293b16ddb209519971504`
 -	v2 Content-Length: 168.5 MB (168518208 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:49:20 GMT
 
 #### `6dfc5ccb273ef117595fd3e40dc231d810f44f0fd5ef0fe9ff172bdc77e4d634`
 
@@ -1145,7 +1108,6 @@ EXPOSE 11345/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `184fa1aa7ca2490b44537c278b5d4c5475f6d409f8b39c64a25c3e5153608b8c`
 
@@ -1159,7 +1121,6 @@ COPY file:cf363986766dbc3a89db72970f261ead18c8314539e0041f16f3f35c98e6a424 in /
 -	Virtual Size: 93.0 B
 -	v2 Blob: `sha256:8f83acea8ae81a4fb50470c802b710dfd2221762b4c5a04704858ad71d3bde8e`
 -	v2 Content-Length: 191.0 B
--	v2 Last-Modified: Tue, 28 Jul 2015 18:26:09 GMT
 
 #### `a7c576dd37543abb47afc4d71b55449328b8b8ec182a0699464e2d7ad4eac5e5`
 
@@ -1173,7 +1134,6 @@ ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e815d8e00f6fff423319e528ec75cad131b86fad5f79a51a58f1748c3ee83eaa`
 
@@ -1187,7 +1147,6 @@ CMD ["gzserver"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e270e23be5f81e8e514d577c010c5aa7d7cb5acdee1ce16a8bab49de11a63913`
 
@@ -1201,7 +1160,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75405ed83da9c49671c196bd41e2e4d699c19f787cf16f26c3b72930fdaf6bb6`
 
@@ -1291,7 +1249,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fac8e7c71b0f149edfd7324c1bf819e106c1491fedecd7244c552c0a5de8ab86`
 
@@ -1305,7 +1262,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `180ec6f022da22562b4ca78086505dc38d71799cf9fc3462d808f9eefcf763cd`
 
@@ -1347,7 +1303,6 @@ RUN apt-get update && apt-get install -q -y\
 -	Virtual Size: 427.5 MB (427471283 bytes)
 -	v2 Blob: `sha256:aa61ef59f819b55038ee2af2917a3310af55013cc0b4bc7e35d6ebc78c5be066`
 -	v2 Content-Length: 175.9 MB (175891876 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:52:30 GMT
 
 #### `ebf891c13922e1812d37209b9a5f1ad64bd1e6c7d2af423503828202a90f7134`
 
@@ -1361,7 +1316,6 @@ EXPOSE 11345/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9285cb3cc6ba4da3e874d2d9ae7ec11b08886dfd02225c6fab3ee2cc565ff3ea`
 
@@ -1388,7 +1342,6 @@ ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377c5f9364ec4158a3750cd1d99d2a4b6bc4990ea7fbbefb37125f909c52f6da`
 
@@ -1402,7 +1355,6 @@ CMD ["gzserver"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `gazebo:libgazebo7`
 
@@ -1477,7 +1429,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fac8e7c71b0f149edfd7324c1bf819e106c1491fedecd7244c552c0a5de8ab86`
 
@@ -1491,7 +1442,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `180ec6f022da22562b4ca78086505dc38d71799cf9fc3462d808f9eefcf763cd`
 
@@ -1533,7 +1483,6 @@ RUN apt-get update && apt-get install -q -y\
 -	Virtual Size: 427.5 MB (427471283 bytes)
 -	v2 Blob: `sha256:aa61ef59f819b55038ee2af2917a3310af55013cc0b4bc7e35d6ebc78c5be066`
 -	v2 Content-Length: 175.9 MB (175891876 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:52:30 GMT
 
 #### `ebf891c13922e1812d37209b9a5f1ad64bd1e6c7d2af423503828202a90f7134`
 
@@ -1547,7 +1496,6 @@ EXPOSE 11345/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9285cb3cc6ba4da3e874d2d9ae7ec11b08886dfd02225c6fab3ee2cc565ff3ea`
 
@@ -1574,7 +1522,6 @@ ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377c5f9364ec4158a3750cd1d99d2a4b6bc4990ea7fbbefb37125f909c52f6da`
 
@@ -1588,7 +1535,6 @@ CMD ["gzserver"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ee2754a4fc030ce0ff1649e0fa184474d5670d875feba3d092c439a72a0ea2c`
 
@@ -1602,7 +1548,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7cd2977f8efb59ecfd5d1a40a71101e1012294541d939b3f8b15d4e0246f77a5`
 
@@ -1692,7 +1637,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fac8e7c71b0f149edfd7324c1bf819e106c1491fedecd7244c552c0a5de8ab86`
 
@@ -1706,7 +1650,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `180ec6f022da22562b4ca78086505dc38d71799cf9fc3462d808f9eefcf763cd`
 
@@ -1748,7 +1691,6 @@ RUN apt-get update && apt-get install -q -y\
 -	Virtual Size: 427.5 MB (427471283 bytes)
 -	v2 Blob: `sha256:aa61ef59f819b55038ee2af2917a3310af55013cc0b4bc7e35d6ebc78c5be066`
 -	v2 Content-Length: 175.9 MB (175891876 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:52:30 GMT
 
 #### `ebf891c13922e1812d37209b9a5f1ad64bd1e6c7d2af423503828202a90f7134`
 
@@ -1762,7 +1704,6 @@ EXPOSE 11345/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9285cb3cc6ba4da3e874d2d9ae7ec11b08886dfd02225c6fab3ee2cc565ff3ea`
 
@@ -1789,7 +1730,6 @@ ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377c5f9364ec4158a3750cd1d99d2a4b6bc4990ea7fbbefb37125f909c52f6da`
 
@@ -1803,7 +1743,6 @@ CMD ["gzserver"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ee2754a4fc030ce0ff1649e0fa184474d5670d875feba3d092c439a72a0ea2c`
 
@@ -1817,7 +1756,6 @@ MAINTAINER Nate Koenig nkoenig@osrfoundation.org
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7cd2977f8efb59ecfd5d1a40a71101e1012294541d939b3f8b15d4e0246f77a5`
 

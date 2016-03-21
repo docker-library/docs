@@ -73,7 +73,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -181,7 +180,6 @@ RUN apt-get update &&\
 -	Virtual Size: 177.5 MB (177513374 bytes)
 -	v2 Blob: `sha256:f2253e9c52dc9761314ddbe7540689b917e50770c09336bedfb01694e6b12188`
 -	v2 Content-Length: 55.1 MB (55096739 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:44:44 GMT
 
 #### `0d43b4376b4a95a6f5931fdaeefcb217753330bce6e2b306c47b3af220c0fb25`
 
@@ -283,7 +281,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -391,7 +388,6 @@ RUN apt-get update &&\
 -	Virtual Size: 177.5 MB (177513374 bytes)
 -	v2 Blob: `sha256:f2253e9c52dc9761314ddbe7540689b917e50770c09336bedfb01694e6b12188`
 -	v2 Content-Length: 55.1 MB (55096739 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:44:44 GMT
 
 #### `0d43b4376b4a95a6f5931fdaeefcb217753330bce6e2b306c47b3af220c0fb25`
 
@@ -493,7 +489,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -703,7 +698,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -913,7 +907,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1022,7 +1015,6 @@ RUN apt-get update &&\
 -	Virtual Size: 209.6 MB (209556048 bytes)
 -	v2 Blob: `sha256:29bc091aea33dcd2860751fa1efb179585be712c591cecc28ddeb12440bfbe56`
 -	v2 Content-Length: 75.7 MB (75692813 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:47:36 GMT
 
 #### `8dbf0a84a8a9c4e5e85715b15f77c4135729c38d0d07de91b49d7be48444faaa`
 
@@ -1124,7 +1116,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1233,7 +1224,6 @@ RUN apt-get update &&\
 -	Virtual Size: 209.6 MB (209556048 bytes)
 -	v2 Blob: `sha256:29bc091aea33dcd2860751fa1efb179585be712c591cecc28ddeb12440bfbe56`
 -	v2 Content-Length: 75.7 MB (75692813 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:47:36 GMT
 
 #### `8dbf0a84a8a9c4e5e85715b15f77c4135729c38d0d07de91b49d7be48444faaa`
 
@@ -1335,7 +1325,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1600,7 +1589,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1865,7 +1853,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 

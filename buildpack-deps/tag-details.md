@@ -937,7 +937,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 48.9 MB (48921629 bytes)
 -	v2 Blob: `sha256:43baca9203f0d170ec87278f9e701571ea005f0e3d7a5445ff37ecb202145492`
 -	v2 Content-Length: 20.5 MB (20455266 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:54:10 GMT
 
 ## `buildpack-deps:sid-scm`
 
@@ -991,7 +990,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 48.9 MB (48921629 bytes)
 -	v2 Blob: `sha256:43baca9203f0d170ec87278f9e701571ea005f0e3d7a5445ff37ecb202145492`
 -	v2 Content-Length: 20.5 MB (20455266 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:54:10 GMT
 
 #### `f1518ec684ad3c75fc3e713002805f95607336ddd1dd80f700a27e87484aca7a`
 
@@ -1012,7 +1010,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.7 MB (134710746 bytes)
 -	v2 Blob: `sha256:31913b692a7b1cb479377c15b67c258d8d8e32f4de88f89f8e4ca46d7a5db1a8`
 -	v2 Content-Length: 46.7 MB (46740104 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:55:27 GMT
 
 ## `buildpack-deps:sid`
 
@@ -1066,7 +1063,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 48.9 MB (48921629 bytes)
 -	v2 Blob: `sha256:43baca9203f0d170ec87278f9e701571ea005f0e3d7a5445ff37ecb202145492`
 -	v2 Content-Length: 20.5 MB (20455266 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:54:10 GMT
 
 #### `f1518ec684ad3c75fc3e713002805f95607336ddd1dd80f700a27e87484aca7a`
 
@@ -1087,7 +1083,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.7 MB (134710746 bytes)
 -	v2 Blob: `sha256:31913b692a7b1cb479377c15b67c258d8d8e32f4de88f89f8e4ca46d7a5db1a8`
 -	v2 Content-Length: 46.7 MB (46740104 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:55:27 GMT
 
 #### `a352c22280bfe0819e3953b6ed5ed796bead20dbfb5fcb858d328d7720058b05`
 
@@ -1431,7 +1426,6 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1523,7 +1517,6 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1635,7 +1628,6 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1770,7 +1762,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1801,7 +1792,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 ## `buildpack-deps:wheezy-scm`
 
@@ -1825,7 +1815,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1856,7 +1845,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `61be0c81cc289935f157f07b2efe5dfb0f722796aa7e0d65cfbe3202d4baa032`
 
@@ -1877,7 +1865,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026607 bytes)
 -	v2 Blob: `sha256:e6e4db7c3583498ce25903846cc636d5adfc54e912c43d46e19556a0799371fa`
 -	v2 Content-Length: 37.4 MB (37365585 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:04 GMT
 
 ## `buildpack-deps:wheezy`
 
@@ -1901,7 +1888,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1932,7 +1918,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `61be0c81cc289935f157f07b2efe5dfb0f722796aa7e0d65cfbe3202d4baa032`
 
@@ -1953,7 +1938,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026607 bytes)
 -	v2 Blob: `sha256:e6e4db7c3583498ce25903846cc636d5adfc54e912c43d46e19556a0799371fa`
 -	v2 Content-Length: 37.4 MB (37365585 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:04 GMT
 
 #### `e3b5d15a56b42d65657451f398151cc01f433d4e1769753789af97941fadcc1d`
 
@@ -2050,7 +2034,6 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:287750ad6625760ef25bd47da291cac277a7baa3345062658889a887e3b8e8f2`
 -	v2 Content-Length: 758.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:29:42 GMT
 
 #### `b22092cbe71356c61077501f31df49511bc53c9dbe00aceb5af3e869bc7d4abc`
 
@@ -2142,7 +2125,6 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:287750ad6625760ef25bd47da291cac277a7baa3345062658889a887e3b8e8f2`
 -	v2 Content-Length: 758.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:29:42 GMT
 
 #### `b22092cbe71356c61077501f31df49511bc53c9dbe00aceb5af3e869bc7d4abc`
 
@@ -2206,7 +2188,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 113.8 MB (113809471 bytes)
 -	v2 Blob: `sha256:d8ef0fce0b91df714e0c61a4808c671b07433a26ef1861251e3458e58bea642b`
 -	v2 Content-Length: 38.2 MB (38233286 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:22:38 GMT
 
 ## `buildpack-deps:wily`
 
@@ -2255,7 +2236,6 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:287750ad6625760ef25bd47da291cac277a7baa3345062658889a887e3b8e8f2`
 -	v2 Content-Length: 758.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:29:42 GMT
 
 #### `b22092cbe71356c61077501f31df49511bc53c9dbe00aceb5af3e869bc7d4abc`
 
@@ -2319,7 +2299,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 113.8 MB (113809471 bytes)
 -	v2 Blob: `sha256:d8ef0fce0b91df714e0c61a4808c671b07433a26ef1861251e3458e58bea642b`
 -	v2 Content-Length: 38.2 MB (38233286 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:22:38 GMT
 
 #### `64bc9bedb931a39cedda1906ad0c9b3fb2d1ee643e86cc0b175ed85aec11fb06`
 
@@ -2429,7 +2408,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1d99b95ffc1c3f05905d00ee8fbd9256850435f8b9ebdebc7f6e8976b4cf4cec`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:30:33 GMT
 
 #### `e0e03236f2d978612dae8da250eceffdf6fe7d62eb2fd440c39f978e10f57d75`
 
@@ -2521,7 +2499,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1d99b95ffc1c3f05905d00ee8fbd9256850435f8b9ebdebc7f6e8976b4cf4cec`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:30:33 GMT
 
 #### `e0e03236f2d978612dae8da250eceffdf6fe7d62eb2fd440c39f978e10f57d75`
 
@@ -2572,7 +2549,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122622317 bytes)
 -	v2 Blob: `sha256:6900d133b4de55d8b70ce387c7bb2ddc10917f7e832dcd9218635a2ba0c0db4a`
 -	v2 Content-Length: 41.0 MB (40984007 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:24:30 GMT
 
 ## `buildpack-deps:xenial`
 
@@ -2634,7 +2610,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1d99b95ffc1c3f05905d00ee8fbd9256850435f8b9ebdebc7f6e8976b4cf4cec`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:30:33 GMT
 
 #### `e0e03236f2d978612dae8da250eceffdf6fe7d62eb2fd440c39f978e10f57d75`
 
@@ -2685,7 +2660,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122622317 bytes)
 -	v2 Blob: `sha256:6900d133b4de55d8b70ce387c7bb2ddc10917f7e832dcd9218635a2ba0c0db4a`
 -	v2 Content-Length: 41.0 MB (40984007 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:24:30 GMT
 
 #### `13d4280eeff91d1572e140b2332339dae7f6edb95cd828b9327d3600c7e64e0f`
 
@@ -2734,4 +2708,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 724.1 MB (724060671 bytes)
 -	v2 Blob: `sha256:cc60a8f88ad9f65656495dbce592d42c81e666a660492d6ed0f8b4ccebfd5ae3`
 -	v2 Content-Length: 264.6 MB (264571277 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:26:09 GMT

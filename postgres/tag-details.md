@@ -225,7 +225,6 @@ RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/post
 -	Virtual Size: 19.2 KB (19159 bytes)
 -	v2 Blob: `sha256:95abf5e7225c2571d5982eacd0ea147c5b07057163b824d35b8e8439b107a644`
 -	v2 Content-Length: 6.3 KB (6297 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:09:09 GMT
 
 #### `1b90ce519974e0295fa54d85c2f23cbbb0ea2f8256e5d676343ce7c2bc862423`
 
@@ -541,7 +540,6 @@ RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/post
 -	Virtual Size: 19.2 KB (19159 bytes)
 -	v2 Blob: `sha256:95abf5e7225c2571d5982eacd0ea147c5b07057163b824d35b8e8439b107a644`
 -	v2 Content-Length: 6.3 KB (6297 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:09:09 GMT
 
 #### `1b90ce519974e0295fa54d85c2f23cbbb0ea2f8256e5d676343ce7c2bc862423`
 
@@ -842,7 +840,6 @@ RUN apt-get update \
 -	Virtual Size: 113.0 MB (113040062 bytes)
 -	v2 Blob: `sha256:9f8a0c3c677a28057a241e98986df7e4499e979e05c97edd9b274a2640ee877e`
 -	v2 Content-Length: 40.4 MB (40357320 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:49:52 GMT
 
 #### `27a8a200c33add7a386716fe177c6f7dd5693ec6f6cb57ac63b5ba7c3a6c36b6`
 
@@ -858,7 +855,6 @@ RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/post
 -	Virtual Size: 19.6 KB (19602 bytes)
 -	v2 Blob: `sha256:c07ff8d9cbd70c3fb28965688f2505b8b50d20145b65007066a90838909ec37f`
 -	v2 Content-Length: 6.5 KB (6471 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:09:44 GMT
 
 #### `32e2d0f050750778e27892ff751d5ac56667e7b896952283dd2f65cb7662720f`
 
@@ -1159,7 +1155,6 @@ RUN apt-get update \
 -	Virtual Size: 113.0 MB (113040062 bytes)
 -	v2 Blob: `sha256:9f8a0c3c677a28057a241e98986df7e4499e979e05c97edd9b274a2640ee877e`
 -	v2 Content-Length: 40.4 MB (40357320 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:49:52 GMT
 
 #### `27a8a200c33add7a386716fe177c6f7dd5693ec6f6cb57ac63b5ba7c3a6c36b6`
 
@@ -1175,7 +1170,6 @@ RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/post
 -	Virtual Size: 19.6 KB (19602 bytes)
 -	v2 Blob: `sha256:c07ff8d9cbd70c3fb28965688f2505b8b50d20145b65007066a90838909ec37f`
 -	v2 Content-Length: 6.5 KB (6471 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:09:44 GMT
 
 #### `32e2d0f050750778e27892ff751d5ac56667e7b896952283dd2f65cb7662720f`
 
@@ -1457,7 +1451,6 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:0db366680a803b1d6288915691299f1378baaf9d4401799dfbc48d2da2881a7d`
 -	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:51:52 GMT
 
 #### `fa5ca26848d1319e2d96344a01adcd0385f53609eb8af3763324d4af09404a6a`
 
@@ -1773,7 +1766,6 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:0db366680a803b1d6288915691299f1378baaf9d4401799dfbc48d2da2881a7d`
 -	v2 Content-Length: 224.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:51:52 GMT
 
 #### `fa5ca26848d1319e2d96344a01adcd0385f53609eb8af3763324d4af09404a6a`
 
@@ -2089,7 +2081,6 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:de5fec809feb84b70b1ed6f59ba6959c37db4bc5e25a201c476ab50f5851666a`
 -	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:53:31 GMT
 
 #### `28250a68e8629b7ba53d755820861c401d64e1a6f5cc50488e7e2ebf86f10bc5`
 
@@ -2405,7 +2396,6 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:de5fec809feb84b70b1ed6f59ba6959c37db4bc5e25a201c476ab50f5851666a`
 -	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:53:31 GMT
 
 #### `28250a68e8629b7ba53d755820861c401d64e1a6f5cc50488e7e2ebf86f10bc5`
 
@@ -2768,7 +2758,6 @@ RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5fe4bba523f09d2a722460ae141937b40767cd5465129cf7099c8282eaa149b7`
 -	v2 Content-Length: 135.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:11:20 GMT
 
 #### `7c887c50d8e7f0bf6b97ec77ba514cc4b2ba17c33bc89aa297838ab179b3a981`
 
@@ -3084,7 +3073,6 @@ RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5fe4bba523f09d2a722460ae141937b40767cd5465129cf7099c8282eaa149b7`
 -	v2 Content-Length: 135.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:11:20 GMT
 
 #### `7c887c50d8e7f0bf6b97ec77ba514cc4b2ba17c33bc89aa297838ab179b3a981`
 
@@ -3400,7 +3388,6 @@ RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5fe4bba523f09d2a722460ae141937b40767cd5465129cf7099c8282eaa149b7`
 -	v2 Content-Length: 135.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:11:20 GMT
 
 #### `7c887c50d8e7f0bf6b97ec77ba514cc4b2ba17c33bc89aa297838ab179b3a981`
 
@@ -3716,7 +3703,6 @@ RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5fe4bba523f09d2a722460ae141937b40767cd5465129cf7099c8282eaa149b7`
 -	v2 Content-Length: 135.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:11:20 GMT
 
 #### `7c887c50d8e7f0bf6b97ec77ba514cc4b2ba17c33bc89aa297838ab179b3a981`
 

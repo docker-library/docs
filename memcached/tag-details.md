@@ -42,7 +42,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b2170f1e785a7432b9e4e0257513b10ce8b2cb775241b4f86592e6bf61e4d94c`
 
@@ -84,7 +83,6 @@ ENV MEMCACHED_VERSION=1.4.25
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea39f3d8f5ae8f67d42b3b6f8b042d3de0c380a9864db2bf2e9a7ce68faf4964`
 
@@ -98,7 +96,6 @@ ENV MEMCACHED_SHA1=7fd0ba9283c61204f196638ecf2e9295688b2314
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbfaff8424571fb4347d32606532c06de6c3f66804a22162b66109dc7eecc559`
 
@@ -152,7 +149,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `43858a69bf0dd54c092611b07395b8fe9fb702cafb171c95f5c32a6fa33e6e33`
 
@@ -166,7 +162,6 @@ USER [memcache]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0be8dc26b62f4bce1d14649e2dbad678e3ba8431c9e50aff858271c619473fca`
 
@@ -180,7 +175,6 @@ EXPOSE 11211/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9df794a0454d7a5aa93f81b85765083da7f047ab68e180c18c40d9ef1f53184`
 
@@ -194,7 +188,6 @@ CMD ["memcached"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `memcached:1.4`
 
@@ -231,7 +224,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b2170f1e785a7432b9e4e0257513b10ce8b2cb775241b4f86592e6bf61e4d94c`
 
@@ -273,7 +265,6 @@ ENV MEMCACHED_VERSION=1.4.25
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea39f3d8f5ae8f67d42b3b6f8b042d3de0c380a9864db2bf2e9a7ce68faf4964`
 
@@ -287,7 +278,6 @@ ENV MEMCACHED_SHA1=7fd0ba9283c61204f196638ecf2e9295688b2314
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbfaff8424571fb4347d32606532c06de6c3f66804a22162b66109dc7eecc559`
 
@@ -341,7 +331,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `43858a69bf0dd54c092611b07395b8fe9fb702cafb171c95f5c32a6fa33e6e33`
 
@@ -355,7 +344,6 @@ USER [memcache]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0be8dc26b62f4bce1d14649e2dbad678e3ba8431c9e50aff858271c619473fca`
 
@@ -369,7 +357,6 @@ EXPOSE 11211/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9df794a0454d7a5aa93f81b85765083da7f047ab68e180c18c40d9ef1f53184`
 
@@ -383,7 +370,6 @@ CMD ["memcached"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `memcached:1`
 
@@ -420,7 +406,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b2170f1e785a7432b9e4e0257513b10ce8b2cb775241b4f86592e6bf61e4d94c`
 
@@ -462,7 +447,6 @@ ENV MEMCACHED_VERSION=1.4.25
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea39f3d8f5ae8f67d42b3b6f8b042d3de0c380a9864db2bf2e9a7ce68faf4964`
 
@@ -476,7 +460,6 @@ ENV MEMCACHED_SHA1=7fd0ba9283c61204f196638ecf2e9295688b2314
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbfaff8424571fb4347d32606532c06de6c3f66804a22162b66109dc7eecc559`
 
@@ -530,7 +513,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `43858a69bf0dd54c092611b07395b8fe9fb702cafb171c95f5c32a6fa33e6e33`
 
@@ -544,7 +526,6 @@ USER [memcache]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0be8dc26b62f4bce1d14649e2dbad678e3ba8431c9e50aff858271c619473fca`
 
@@ -558,7 +539,6 @@ EXPOSE 11211/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9df794a0454d7a5aa93f81b85765083da7f047ab68e180c18c40d9ef1f53184`
 
@@ -572,7 +552,6 @@ CMD ["memcached"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `memcached:latest`
 
@@ -609,7 +588,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b2170f1e785a7432b9e4e0257513b10ce8b2cb775241b4f86592e6bf61e4d94c`
 
@@ -651,7 +629,6 @@ ENV MEMCACHED_VERSION=1.4.25
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea39f3d8f5ae8f67d42b3b6f8b042d3de0c380a9864db2bf2e9a7ce68faf4964`
 
@@ -665,7 +642,6 @@ ENV MEMCACHED_SHA1=7fd0ba9283c61204f196638ecf2e9295688b2314
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbfaff8424571fb4347d32606532c06de6c3f66804a22162b66109dc7eecc559`
 
@@ -719,7 +695,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `43858a69bf0dd54c092611b07395b8fe9fb702cafb171c95f5c32a6fa33e6e33`
 
@@ -733,7 +708,6 @@ USER [memcache]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0be8dc26b62f4bce1d14649e2dbad678e3ba8431c9e50aff858271c619473fca`
 
@@ -747,7 +721,6 @@ EXPOSE 11211/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9df794a0454d7a5aa93f81b85765083da7f047ab68e180c18c40d9ef1f53184`
 
@@ -761,4 +734,3 @@ CMD ["memcached"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

@@ -1875,7 +1875,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:f534510ae79d3243de3f7d3bfa9b8ca1956faceeb1e4c609eca1b4a19163a77e`
 -	v2 Content-Length: 101.1 KB (101052 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:46 GMT
 
 ## `mono:3.8`
 
@@ -1983,7 +1982,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:f534510ae79d3243de3f7d3bfa9b8ca1956faceeb1e4c609eca1b4a19163a77e`
 -	v2 Content-Length: 101.1 KB (101052 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:46 GMT
 
 ## `mono:3.8.0-onbuild`
 
@@ -2091,7 +2089,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:f534510ae79d3243de3f7d3bfa9b8ca1956faceeb1e4c609eca1b4a19163a77e`
 -	v2 Content-Length: 101.1 KB (101052 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:46 GMT
 
 #### `b200b84f0aa75a7a97ec88d1436ea1f0471bc3fc2d52da8bfd5cd594574032ad`
 
@@ -2290,7 +2287,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:f534510ae79d3243de3f7d3bfa9b8ca1956faceeb1e4c609eca1b4a19163a77e`
 -	v2 Content-Length: 101.1 KB (101052 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:46 GMT
 
 #### `b200b84f0aa75a7a97ec88d1436ea1f0471bc3fc2d52da8bfd5cd594574032ad`
 
@@ -4420,7 +4416,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 ## `mono:4.2.3`
 
@@ -4514,7 +4509,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 ## `mono:4.2`
 
@@ -4608,7 +4602,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 ## `mono:4`
 
@@ -4702,7 +4695,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 ## `mono:latest`
 
@@ -4796,7 +4788,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 ## `mono:4.2.3.4-onbuild`
 
@@ -4890,7 +4881,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 #### `c9c5668f68d5fdad599fc75d331d5609bf773404fe48b1f656e059d184b01d95`
 
@@ -5075,7 +5065,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 #### `c9c5668f68d5fdad599fc75d331d5609bf773404fe48b1f656e059d184b01d95`
 
@@ -5260,7 +5249,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 #### `c9c5668f68d5fdad599fc75d331d5609bf773404fe48b1f656e059d184b01d95`
 
@@ -5445,7 +5433,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 #### `c9c5668f68d5fdad599fc75d331d5609bf773404fe48b1f656e059d184b01d95`
 
@@ -5630,7 +5617,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 #### `c9c5668f68d5fdad599fc75d331d5609bf773404fe48b1f656e059d184b01d95`
 

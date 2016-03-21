@@ -151,7 +151,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -384,7 +383,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -617,7 +615,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -850,7 +847,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -1050,7 +1046,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -1081,7 +1076,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -1287,7 +1281,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -1318,7 +1311,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -1557,7 +1549,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -1597,7 +1588,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -1637,7 +1627,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:db76819621f2d97a8f918480a46e525a12da7161b76258476e2185320d77101b`
 -	v2 Content-Length: 3.4 KB (3363 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:59 GMT
 
 #### `a377d235589253a9d7935232deb951b0f1a6717a06b6f95644c3d44e65295682`
 
@@ -1780,7 +1769,6 @@ RUN set -xe \
 -	Virtual Size: 149.0 MB (148961087 bytes)
 -	v2 Blob: `sha256:3a4659b0e7b7c3b836057219f5433dc94b08062795d4a3fbb0a661c047042249`
 -	v2 Content-Length: 30.9 MB (30888594 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:36 GMT
 
 #### `98e0056e9463845fcca82143b573cab0570203778a482135fef7e1b0e3589639`
 
@@ -1794,7 +1782,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:51683b67950213470078e6ae6bccbc05b65ba040f857fda0692a8b0de1b5dc8b`
 -	v2 Content-Length: 1.5 KB (1546 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:11 GMT
 
 #### `2ac3090623d6c38e1dd29e09ebb174a5c903af9f31ddb72e8ee8868ce35ac3b7`
 
@@ -1924,7 +1911,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -1964,7 +1950,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -2004,7 +1989,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:db76819621f2d97a8f918480a46e525a12da7161b76258476e2185320d77101b`
 -	v2 Content-Length: 3.4 KB (3363 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:59 GMT
 
 #### `a377d235589253a9d7935232deb951b0f1a6717a06b6f95644c3d44e65295682`
 
@@ -2147,7 +2131,6 @@ RUN set -xe \
 -	Virtual Size: 149.0 MB (148961087 bytes)
 -	v2 Blob: `sha256:3a4659b0e7b7c3b836057219f5433dc94b08062795d4a3fbb0a661c047042249`
 -	v2 Content-Length: 30.9 MB (30888594 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:36 GMT
 
 #### `98e0056e9463845fcca82143b573cab0570203778a482135fef7e1b0e3589639`
 
@@ -2161,7 +2144,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:51683b67950213470078e6ae6bccbc05b65ba040f857fda0692a8b0de1b5dc8b`
 -	v2 Content-Length: 1.5 KB (1546 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:11 GMT
 
 #### `2ac3090623d6c38e1dd29e09ebb174a5c903af9f31ddb72e8ee8868ce35ac3b7`
 
@@ -2291,7 +2273,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -2608,7 +2589,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -2892,7 +2872,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -2923,7 +2902,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -3213,7 +3191,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -3244,7 +3221,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -3567,7 +3543,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -3813,7 +3788,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -4026,7 +4000,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -4057,7 +4030,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -4206,7 +4178,6 @@ RUN set -xe \
 -	Virtual Size: 128.0 MB (128028288 bytes)
 -	v2 Blob: `sha256:bb9b5fd34976a125d1a02a56f52089c382af39fc06fc129031fd2cae3346b76c`
 -	v2 Content-Length: 23.6 MB (23632917 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:06:29 GMT
 
 #### `de13179485dc73cd4ee0e8123b375a02c6a1b9ea7ae35767a502815e31851655`
 
@@ -4220,7 +4191,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:baab641eb9763b892b57418ffcc5fbb666abf1a4260673445d57fdf399443ea8`
 -	v2 Content-Length: 1.5 KB (1536 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:06:06 GMT
 
 #### `071f55fb48c3621a5f88b7a53e9af053ed365341b250da58847127dd499135a3`
 
@@ -4278,7 +4248,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -4309,7 +4278,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -4458,7 +4426,6 @@ RUN set -xe \
 -	Virtual Size: 128.0 MB (128028288 bytes)
 -	v2 Blob: `sha256:bb9b5fd34976a125d1a02a56f52089c382af39fc06fc129031fd2cae3346b76c`
 -	v2 Content-Length: 23.6 MB (23632917 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:06:29 GMT
 
 #### `de13179485dc73cd4ee0e8123b375a02c6a1b9ea7ae35767a502815e31851655`
 
@@ -4472,7 +4439,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:baab641eb9763b892b57418ffcc5fbb666abf1a4260673445d57fdf399443ea8`
 -	v2 Content-Length: 1.5 KB (1536 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:06:06 GMT
 
 #### `071f55fb48c3621a5f88b7a53e9af053ed365341b250da58847127dd499135a3`
 
@@ -4563,7 +4529,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -4796,7 +4761,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -5029,7 +4993,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -5262,7 +5225,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -5495,7 +5457,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -5728,7 +5689,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -5928,7 +5888,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -5959,7 +5918,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -6165,7 +6123,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -6196,7 +6153,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -6402,7 +6358,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -6433,7 +6388,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -6672,7 +6626,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -6712,7 +6665,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -6752,7 +6704,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:db76819621f2d97a8f918480a46e525a12da7161b76258476e2185320d77101b`
 -	v2 Content-Length: 3.4 KB (3363 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:59 GMT
 
 #### `a377d235589253a9d7935232deb951b0f1a6717a06b6f95644c3d44e65295682`
 
@@ -6921,7 +6872,6 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:32d4d7a73f2848c8653d148a59f64f1f5e709629d9138fd09a02bab678740b20`
 -	v2 Content-Length: 291.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:08:55 GMT
 
 #### `ddbe117d8e4fb0235fd1e73cb2b57cf7b3352706a0991823424efed2cee6921a`
 
@@ -7038,7 +6988,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -7078,7 +7027,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -7118,7 +7066,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:db76819621f2d97a8f918480a46e525a12da7161b76258476e2185320d77101b`
 -	v2 Content-Length: 3.4 KB (3363 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:59 GMT
 
 #### `a377d235589253a9d7935232deb951b0f1a6717a06b6f95644c3d44e65295682`
 
@@ -7287,7 +7234,6 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:32d4d7a73f2848c8653d148a59f64f1f5e709629d9138fd09a02bab678740b20`
 -	v2 Content-Length: 291.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:08:55 GMT
 
 #### `ddbe117d8e4fb0235fd1e73cb2b57cf7b3352706a0991823424efed2cee6921a`
 
@@ -7404,7 +7350,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -7444,7 +7389,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -7484,7 +7428,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:db76819621f2d97a8f918480a46e525a12da7161b76258476e2185320d77101b`
 -	v2 Content-Length: 3.4 KB (3363 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:59 GMT
 
 #### `a377d235589253a9d7935232deb951b0f1a6717a06b6f95644c3d44e65295682`
 
@@ -7653,7 +7596,6 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:32d4d7a73f2848c8653d148a59f64f1f5e709629d9138fd09a02bab678740b20`
 -	v2 Content-Length: 291.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:08:55 GMT
 
 #### `ddbe117d8e4fb0235fd1e73cb2b57cf7b3352706a0991823424efed2cee6921a`
 
@@ -7770,7 +7712,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -8087,7 +8028,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -8404,7 +8344,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -8688,7 +8627,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -8719,7 +8657,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -9009,7 +8946,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -9040,7 +8976,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -9330,7 +9265,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -9361,7 +9295,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -9684,7 +9617,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -9930,7 +9862,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -10176,7 +10107,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -10389,7 +10319,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -10420,7 +10349,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -10569,7 +10497,6 @@ RUN set -xe \
 -	Virtual Size: 131.8 MB (131818886 bytes)
 -	v2 Blob: `sha256:536bf1c5feb0fa0cdca4b1baac62b9e667ec57d211bc0f878608413b37ed45c7`
 -	v2 Content-Length: 24.3 MB (24277357 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:04 GMT
 
 #### `5899baa20d72f923997d68b209db566635ae0a985500567f402ea05437896c94`
 
@@ -10640,7 +10567,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -10671,7 +10597,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -10820,7 +10745,6 @@ RUN set -xe \
 -	Virtual Size: 131.8 MB (131818886 bytes)
 -	v2 Blob: `sha256:536bf1c5feb0fa0cdca4b1baac62b9e667ec57d211bc0f878608413b37ed45c7`
 -	v2 Content-Length: 24.3 MB (24277357 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:04 GMT
 
 #### `5899baa20d72f923997d68b209db566635ae0a985500567f402ea05437896c94`
 
@@ -10891,7 +10815,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -10922,7 +10845,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -11071,7 +10993,6 @@ RUN set -xe \
 -	Virtual Size: 131.8 MB (131818886 bytes)
 -	v2 Blob: `sha256:536bf1c5feb0fa0cdca4b1baac62b9e667ec57d211bc0f878608413b37ed45c7`
 -	v2 Content-Length: 24.3 MB (24277357 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:04 GMT
 
 #### `5899baa20d72f923997d68b209db566635ae0a985500567f402ea05437896c94`
 
@@ -11175,7 +11096,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -11318,7 +11238,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:6d7c00c29f57273764d43be3febf428445ccb98216760bc56ee7795beeff4f0f`
 -	v2 Content-Length: 1.5 KB (1542 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:31 GMT
 
 #### `dc72bf0ed496b8643fff075fef5e9f6dd847fda07382c9c770ebbd2a098cf569`
 
@@ -11409,7 +11328,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -11552,7 +11470,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:6d7c00c29f57273764d43be3febf428445ccb98216760bc56ee7795beeff4f0f`
 -	v2 Content-Length: 1.5 KB (1542 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:31 GMT
 
 #### `dc72bf0ed496b8643fff075fef5e9f6dd847fda07382c9c770ebbd2a098cf569`
 
@@ -11643,7 +11560,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -11786,7 +11702,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:6d7c00c29f57273764d43be3febf428445ccb98216760bc56ee7795beeff4f0f`
 -	v2 Content-Length: 1.5 KB (1542 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:31 GMT
 
 #### `dc72bf0ed496b8643fff075fef5e9f6dd847fda07382c9c770ebbd2a098cf569`
 
@@ -11877,7 +11792,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -12020,7 +11934,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:6d7c00c29f57273764d43be3febf428445ccb98216760bc56ee7795beeff4f0f`
 -	v2 Content-Length: 1.5 KB (1542 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:31 GMT
 
 #### `dc72bf0ed496b8643fff075fef5e9f6dd847fda07382c9c770ebbd2a098cf569`
 
@@ -12111,7 +12024,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -12254,7 +12166,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:6d7c00c29f57273764d43be3febf428445ccb98216760bc56ee7795beeff4f0f`
 -	v2 Content-Length: 1.5 KB (1542 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:31 GMT
 
 #### `dc72bf0ed496b8643fff075fef5e9f6dd847fda07382c9c770ebbd2a098cf569`
 
@@ -12345,7 +12256,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -12488,7 +12398,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:6d7c00c29f57273764d43be3febf428445ccb98216760bc56ee7795beeff4f0f`
 -	v2 Content-Length: 1.5 KB (1542 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:31 GMT
 
 #### `dc72bf0ed496b8643fff075fef5e9f6dd847fda07382c9c770ebbd2a098cf569`
 
@@ -12579,7 +12488,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -12722,7 +12630,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:6d7c00c29f57273764d43be3febf428445ccb98216760bc56ee7795beeff4f0f`
 -	v2 Content-Length: 1.5 KB (1542 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:31 GMT
 
 #### `dc72bf0ed496b8643fff075fef5e9f6dd847fda07382c9c770ebbd2a098cf569`
 
@@ -12813,7 +12720,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -12956,7 +12862,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:6d7c00c29f57273764d43be3febf428445ccb98216760bc56ee7795beeff4f0f`
 -	v2 Content-Length: 1.5 KB (1542 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:13:31 GMT
 
 #### `dc72bf0ed496b8643fff075fef5e9f6dd847fda07382c9c770ebbd2a098cf569`
 
@@ -13014,7 +12919,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -13045,7 +12949,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -13181,7 +13084,6 @@ RUN set -xe \
 -	Virtual Size: 175.2 MB (175236658 bytes)
 -	v2 Blob: `sha256:6e652add7146837e95087815f57bfa35ca614ba65794ae09ca121b3c2ff5775e`
 -	v2 Content-Length: 37.5 MB (37454725 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:15:14 GMT
 
 #### `719cb6190013a88f558e47033bb483bc7814fc5edc9ba2c3d33c053554269549`
 
@@ -13195,7 +13097,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:3d175a97414711284b836ef0a9c1c7ab1ed288715f46e63bc5051eb6eddc1bb1`
 -	v2 Content-Length: 1.5 KB (1543 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:14:46 GMT
 
 #### `60bf272175b972a00d5ac3d27235b2ce488b528dfe51bfaeb48e8caa8c92e526`
 
@@ -13253,7 +13154,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -13284,7 +13184,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -13420,7 +13319,6 @@ RUN set -xe \
 -	Virtual Size: 175.2 MB (175236658 bytes)
 -	v2 Blob: `sha256:6e652add7146837e95087815f57bfa35ca614ba65794ae09ca121b3c2ff5775e`
 -	v2 Content-Length: 37.5 MB (37454725 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:15:14 GMT
 
 #### `719cb6190013a88f558e47033bb483bc7814fc5edc9ba2c3d33c053554269549`
 
@@ -13434,7 +13332,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:3d175a97414711284b836ef0a9c1c7ab1ed288715f46e63bc5051eb6eddc1bb1`
 -	v2 Content-Length: 1.5 KB (1543 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:14:46 GMT
 
 #### `60bf272175b972a00d5ac3d27235b2ce488b528dfe51bfaeb48e8caa8c92e526`
 
@@ -13492,7 +13389,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -13523,7 +13419,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -13659,7 +13554,6 @@ RUN set -xe \
 -	Virtual Size: 175.2 MB (175236658 bytes)
 -	v2 Blob: `sha256:6e652add7146837e95087815f57bfa35ca614ba65794ae09ca121b3c2ff5775e`
 -	v2 Content-Length: 37.5 MB (37454725 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:15:14 GMT
 
 #### `719cb6190013a88f558e47033bb483bc7814fc5edc9ba2c3d33c053554269549`
 
@@ -13673,7 +13567,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:3d175a97414711284b836ef0a9c1c7ab1ed288715f46e63bc5051eb6eddc1bb1`
 -	v2 Content-Length: 1.5 KB (1543 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:14:46 GMT
 
 #### `60bf272175b972a00d5ac3d27235b2ce488b528dfe51bfaeb48e8caa8c92e526`
 
@@ -13731,7 +13624,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -13762,7 +13654,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -13898,7 +13789,6 @@ RUN set -xe \
 -	Virtual Size: 175.2 MB (175236658 bytes)
 -	v2 Blob: `sha256:6e652add7146837e95087815f57bfa35ca614ba65794ae09ca121b3c2ff5775e`
 -	v2 Content-Length: 37.5 MB (37454725 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:15:14 GMT
 
 #### `719cb6190013a88f558e47033bb483bc7814fc5edc9ba2c3d33c053554269549`
 
@@ -13912,7 +13802,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:3d175a97414711284b836ef0a9c1c7ab1ed288715f46e63bc5051eb6eddc1bb1`
 -	v2 Content-Length: 1.5 KB (1543 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:14:46 GMT
 
 #### `60bf272175b972a00d5ac3d27235b2ce488b528dfe51bfaeb48e8caa8c92e526`
 
@@ -14003,7 +13892,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -14043,7 +13931,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -14083,7 +13970,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:db76819621f2d97a8f918480a46e525a12da7161b76258476e2185320d77101b`
 -	v2 Content-Length: 3.4 KB (3363 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:59 GMT
 
 #### `a377d235589253a9d7935232deb951b0f1a6717a06b6f95644c3d44e65295682`
 
@@ -14368,7 +14254,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -14408,7 +14293,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -14448,7 +14332,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:db76819621f2d97a8f918480a46e525a12da7161b76258476e2185320d77101b`
 -	v2 Content-Length: 3.4 KB (3363 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:59 GMT
 
 #### `a377d235589253a9d7935232deb951b0f1a6717a06b6f95644c3d44e65295682`
 
@@ -14733,7 +14616,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -14773,7 +14655,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -14813,7 +14694,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:db76819621f2d97a8f918480a46e525a12da7161b76258476e2185320d77101b`
 -	v2 Content-Length: 3.4 KB (3363 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:59 GMT
 
 #### `a377d235589253a9d7935232deb951b0f1a6717a06b6f95644c3d44e65295682`
 
@@ -15098,7 +14978,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -15138,7 +15017,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -15178,7 +15056,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:db76819621f2d97a8f918480a46e525a12da7161b76258476e2185320d77101b`
 -	v2 Content-Length: 3.4 KB (3363 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:59 GMT
 
 #### `a377d235589253a9d7935232deb951b0f1a6717a06b6f95644c3d44e65295682`
 
@@ -15463,7 +15340,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -15780,7 +15656,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -16097,7 +15972,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -16414,7 +16288,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -16698,7 +16571,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -16729,7 +16601,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -17019,7 +16890,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -17050,7 +16920,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -17340,7 +17209,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -17371,7 +17239,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -17661,7 +17528,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -17692,7 +17558,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -18015,7 +17880,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -18171,7 +18035,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:b5e9ac93c3b3a6f9fc4f08fa14ed80a0c8be97000e3f73038a7515cf0ef400bc`
 -	v2 Content-Length: 1.5 KB (1548 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:19:19 GMT
 
 #### `0d3bf037cec386338bb359cccd6569f36b4f843bb367afb5a1727c09e54a8643`
 
@@ -18262,7 +18125,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -18418,7 +18280,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:b5e9ac93c3b3a6f9fc4f08fa14ed80a0c8be97000e3f73038a7515cf0ef400bc`
 -	v2 Content-Length: 1.5 KB (1548 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:19:19 GMT
 
 #### `0d3bf037cec386338bb359cccd6569f36b4f843bb367afb5a1727c09e54a8643`
 
@@ -18509,7 +18370,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -18665,7 +18525,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:b5e9ac93c3b3a6f9fc4f08fa14ed80a0c8be97000e3f73038a7515cf0ef400bc`
 -	v2 Content-Length: 1.5 KB (1548 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:19:19 GMT
 
 #### `0d3bf037cec386338bb359cccd6569f36b4f843bb367afb5a1727c09e54a8643`
 
@@ -18756,7 +18615,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -18912,7 +18770,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:b5e9ac93c3b3a6f9fc4f08fa14ed80a0c8be97000e3f73038a7515cf0ef400bc`
 -	v2 Content-Length: 1.5 KB (1548 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:19:19 GMT
 
 #### `0d3bf037cec386338bb359cccd6569f36b4f843bb367afb5a1727c09e54a8643`
 
@@ -18970,7 +18827,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -19001,7 +18857,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -19150,7 +19005,6 @@ RUN set -xe \
 -	Virtual Size: 175.6 MB (175555628 bytes)
 -	v2 Blob: `sha256:27c6e2b8ac34807fec48c5bc2198735862c81e992cf7519511767e9c2ee0dbea`
 -	v2 Content-Length: 37.5 MB (37473655 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:20:50 GMT
 
 #### `7c9f2ed4fa301a5fb342528a03f9eb6f35c4f102e24dc35ac1d42731420a5225`
 
@@ -19164,7 +19018,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:dd7b1864461a97608ea9f8d450afcbd22136baf01a5dc05ba78ebb3bfa8764d2`
 -	v2 Content-Length: 1.5 KB (1539 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:20:20 GMT
 
 #### `ac81d9e9b1833cae335b675866500747bd9097a66f934b16986184e1b19f6974`
 
@@ -19222,7 +19075,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -19253,7 +19105,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -19402,7 +19253,6 @@ RUN set -xe \
 -	Virtual Size: 175.6 MB (175555628 bytes)
 -	v2 Blob: `sha256:27c6e2b8ac34807fec48c5bc2198735862c81e992cf7519511767e9c2ee0dbea`
 -	v2 Content-Length: 37.5 MB (37473655 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:20:50 GMT
 
 #### `7c9f2ed4fa301a5fb342528a03f9eb6f35c4f102e24dc35ac1d42731420a5225`
 
@@ -19416,7 +19266,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:dd7b1864461a97608ea9f8d450afcbd22136baf01a5dc05ba78ebb3bfa8764d2`
 -	v2 Content-Length: 1.5 KB (1539 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:20:20 GMT
 
 #### `ac81d9e9b1833cae335b675866500747bd9097a66f934b16986184e1b19f6974`
 
@@ -19474,7 +19323,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -19505,7 +19353,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -19654,7 +19501,6 @@ RUN set -xe \
 -	Virtual Size: 175.6 MB (175555628 bytes)
 -	v2 Blob: `sha256:27c6e2b8ac34807fec48c5bc2198735862c81e992cf7519511767e9c2ee0dbea`
 -	v2 Content-Length: 37.5 MB (37473655 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:20:50 GMT
 
 #### `7c9f2ed4fa301a5fb342528a03f9eb6f35c4f102e24dc35ac1d42731420a5225`
 
@@ -19668,7 +19514,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:dd7b1864461a97608ea9f8d450afcbd22136baf01a5dc05ba78ebb3bfa8764d2`
 -	v2 Content-Length: 1.5 KB (1539 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:20:20 GMT
 
 #### `ac81d9e9b1833cae335b675866500747bd9097a66f934b16986184e1b19f6974`
 
@@ -19726,7 +19571,6 @@ RUN apk add --no-cache --virtual .phpize-deps \
 -	Virtual Size: 194.2 MB (194180909 bytes)
 -	v2 Blob: `sha256:6ca6ec8944a45b9b28e4a99b1488639ca66da66ff57d69a01992146f10a28bf2`
 -	v2 Content-Length: 57.0 MB (56979663 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:48 GMT
 
 #### `061612790ccaa14ad54c77c23ed4728b35ba755b8a0f2374006c86641949e0b8`
 
@@ -19757,7 +19601,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -19906,7 +19749,6 @@ RUN set -xe \
 -	Virtual Size: 175.6 MB (175555628 bytes)
 -	v2 Blob: `sha256:27c6e2b8ac34807fec48c5bc2198735862c81e992cf7519511767e9c2ee0dbea`
 -	v2 Content-Length: 37.5 MB (37473655 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:20:50 GMT
 
 #### `7c9f2ed4fa301a5fb342528a03f9eb6f35c4f102e24dc35ac1d42731420a5225`
 
@@ -19920,7 +19762,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:dd7b1864461a97608ea9f8d450afcbd22136baf01a5dc05ba78ebb3bfa8764d2`
 -	v2 Content-Length: 1.5 KB (1539 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:20:20 GMT
 
 #### `ac81d9e9b1833cae335b675866500747bd9097a66f934b16986184e1b19f6974`
 

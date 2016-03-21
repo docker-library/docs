@@ -59,7 +59,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `d10b70a30ff1a799a6d3abd7def7ef4e505102c567f64f05e5718f615140d994`
 
@@ -302,7 +301,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `d10b70a30ff1a799a6d3abd7def7ef4e505102c567f64f05e5718f615140d994`
 
@@ -545,7 +543,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `d10b70a30ff1a799a6d3abd7def7ef4e505102c567f64f05e5718f615140d994`
 
@@ -572,7 +569,6 @@ RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && r
 -	Virtual Size: 32.9 MB (32874994 bytes)
 -	v2 Blob: `sha256:f3e6609e3bc3f141114c4497f4c38b89bc08228bee404bd63e370724ba34870c`
 -	v2 Content-Length: 8.2 MB (8242046 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:06 GMT
 
 #### `0c73937e713b779e845d82ecd38e61b036503c96fe3c7256980b3c3ff1d34880`
 
@@ -774,7 +770,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `d10b70a30ff1a799a6d3abd7def7ef4e505102c567f64f05e5718f615140d994`
 
@@ -801,7 +796,6 @@ RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && r
 -	Virtual Size: 32.9 MB (32874994 bytes)
 -	v2 Blob: `sha256:f3e6609e3bc3f141114c4497f4c38b89bc08228bee404bd63e370724ba34870c`
 -	v2 Content-Length: 8.2 MB (8242046 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:06 GMT
 
 #### `0c73937e713b779e845d82ecd38e61b036503c96fe3c7256980b3c3ff1d34880`
 
@@ -1003,7 +997,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `d10b70a30ff1a799a6d3abd7def7ef4e505102c567f64f05e5718f615140d994`
 
@@ -1030,7 +1023,6 @@ RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && r
 -	Virtual Size: 32.9 MB (32874994 bytes)
 -	v2 Blob: `sha256:f3e6609e3bc3f141114c4497f4c38b89bc08228bee404bd63e370724ba34870c`
 -	v2 Content-Length: 8.2 MB (8242046 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:06 GMT
 
 #### `0c73937e713b779e845d82ecd38e61b036503c96fe3c7256980b3c3ff1d34880`
 
@@ -1118,7 +1110,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 1.8 KB (1771 bytes)
 -	v2 Blob: `sha256:ed7cc70659fd390001115f80ecdde1ee8d699214f56a448671fb319a27053095`
 -	v2 Content-Length: 1.1 KB (1123 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:08:24 GMT
 
 #### `92ba15de5dbab7aa9daa5bdf3ee5e86b1abeaaf75e4f10ddfa38c34561886dc0`
 
@@ -1233,7 +1224,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `d10b70a30ff1a799a6d3abd7def7ef4e505102c567f64f05e5718f615140d994`
 
@@ -1260,7 +1250,6 @@ RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && r
 -	Virtual Size: 32.9 MB (32874994 bytes)
 -	v2 Blob: `sha256:f3e6609e3bc3f141114c4497f4c38b89bc08228bee404bd63e370724ba34870c`
 -	v2 Content-Length: 8.2 MB (8242046 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:06 GMT
 
 #### `0c73937e713b779e845d82ecd38e61b036503c96fe3c7256980b3c3ff1d34880`
 
@@ -1348,7 +1337,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 1.8 KB (1771 bytes)
 -	v2 Blob: `sha256:ed7cc70659fd390001115f80ecdde1ee8d699214f56a448671fb319a27053095`
 -	v2 Content-Length: 1.1 KB (1123 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:08:24 GMT
 
 #### `92ba15de5dbab7aa9daa5bdf3ee5e86b1abeaaf75e4f10ddfa38c34561886dc0`
 
@@ -1463,7 +1451,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `d10b70a30ff1a799a6d3abd7def7ef4e505102c567f64f05e5718f615140d994`
 
@@ -1490,7 +1477,6 @@ RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && r
 -	Virtual Size: 32.9 MB (32874994 bytes)
 -	v2 Blob: `sha256:f3e6609e3bc3f141114c4497f4c38b89bc08228bee404bd63e370724ba34870c`
 -	v2 Content-Length: 8.2 MB (8242046 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:06 GMT
 
 #### `0c73937e713b779e845d82ecd38e61b036503c96fe3c7256980b3c3ff1d34880`
 
@@ -1578,7 +1564,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 1.8 KB (1771 bytes)
 -	v2 Blob: `sha256:ed7cc70659fd390001115f80ecdde1ee8d699214f56a448671fb319a27053095`
 -	v2 Content-Length: 1.1 KB (1123 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:08:24 GMT
 
 #### `92ba15de5dbab7aa9daa5bdf3ee5e86b1abeaaf75e4f10ddfa38c34561886dc0`
 
@@ -1693,7 +1678,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `d10b70a30ff1a799a6d3abd7def7ef4e505102c567f64f05e5718f615140d994`
 
@@ -1720,7 +1704,6 @@ RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && r
 -	Virtual Size: 32.9 MB (32874994 bytes)
 -	v2 Blob: `sha256:f3e6609e3bc3f141114c4497f4c38b89bc08228bee404bd63e370724ba34870c`
 -	v2 Content-Length: 8.2 MB (8242046 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:09:06 GMT
 
 #### `0c73937e713b779e845d82ecd38e61b036503c96fe3c7256980b3c3ff1d34880`
 
@@ -1808,7 +1791,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 1.8 KB (1771 bytes)
 -	v2 Blob: `sha256:ed7cc70659fd390001115f80ecdde1ee8d699214f56a448671fb319a27053095`
 -	v2 Content-Length: 1.1 KB (1123 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:08:24 GMT
 
 #### `92ba15de5dbab7aa9daa5bdf3ee5e86b1abeaaf75e4f10ddfa38c34561886dc0`
 

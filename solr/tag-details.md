@@ -33,7 +33,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -47,7 +46,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -108,7 +106,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -128,7 +125,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -142,7 +138,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -156,7 +151,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -170,7 +164,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -184,7 +177,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -230,7 +222,6 @@ MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0428c9d5c46ca4cd5a64241d11cb78adda6b18328673be58837a125ab3ffd97b`
 
@@ -257,7 +248,6 @@ ENV SOLR_USER=solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5c67ebd293853ba5b104e7592175be08b8212cf02ebf26a1adea378e4a00c2e`
 
@@ -271,7 +261,6 @@ ENV SOLR_UID=8983
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6dbc2e0886ef8c79fcd9acd4e7435937047987aaf84c0ff409b2c1fe6b96aa2a`
 
@@ -298,7 +287,6 @@ ENV SOLR_KEY=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `beaeaf30e95512cf156d24efcba7f83dff96b5c94e558c187166604499afbbc5`
 
@@ -325,7 +313,6 @@ ENV SOLR_VERSION=5.3.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `76eca7f02fc3d23af414c22549888547d398c9f9e3f94c80b64eb878bf0f255e`
 
@@ -339,7 +326,6 @@ ENV SOLR_SHA256=7c26601229ed712c639d00882f35304d87e0032028be4754d098a9b694877f48
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f7896dc4e7f416f66f139365b5097e74fc4e8cafcdb835175dcce00ef025600`
 
@@ -366,7 +352,6 @@ EXPOSE 8983/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19c39e81287e6ce93986910bc7a77c0a89c111fc47e90a257bf7f2cac0fdae31`
 
@@ -380,7 +365,6 @@ WORKDIR /opt/solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c693e64c397f88ebdf273cc30e0b5abb07c3e168e8556407fb0f292b5fa4f56`
 
@@ -394,7 +378,6 @@ USER [solr]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `92034b3f94c9a5aef3fb3efc3ca17519a96d0f96ac13f010cfaab6390b816d74`
 
@@ -408,7 +391,6 @@ CMD ["/opt/solr/bin/solr" "-f"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `solr:5.3`
 
@@ -432,7 +414,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -446,7 +427,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -507,7 +487,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -527,7 +506,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -541,7 +519,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -555,7 +532,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -569,7 +545,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -583,7 +558,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -629,7 +603,6 @@ MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0428c9d5c46ca4cd5a64241d11cb78adda6b18328673be58837a125ab3ffd97b`
 
@@ -656,7 +629,6 @@ ENV SOLR_USER=solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5c67ebd293853ba5b104e7592175be08b8212cf02ebf26a1adea378e4a00c2e`
 
@@ -670,7 +642,6 @@ ENV SOLR_UID=8983
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6dbc2e0886ef8c79fcd9acd4e7435937047987aaf84c0ff409b2c1fe6b96aa2a`
 
@@ -697,7 +668,6 @@ ENV SOLR_KEY=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `beaeaf30e95512cf156d24efcba7f83dff96b5c94e558c187166604499afbbc5`
 
@@ -724,7 +694,6 @@ ENV SOLR_VERSION=5.3.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `76eca7f02fc3d23af414c22549888547d398c9f9e3f94c80b64eb878bf0f255e`
 
@@ -738,7 +707,6 @@ ENV SOLR_SHA256=7c26601229ed712c639d00882f35304d87e0032028be4754d098a9b694877f48
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f7896dc4e7f416f66f139365b5097e74fc4e8cafcdb835175dcce00ef025600`
 
@@ -765,7 +733,6 @@ EXPOSE 8983/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19c39e81287e6ce93986910bc7a77c0a89c111fc47e90a257bf7f2cac0fdae31`
 
@@ -779,7 +746,6 @@ WORKDIR /opt/solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c693e64c397f88ebdf273cc30e0b5abb07c3e168e8556407fb0f292b5fa4f56`
 
@@ -793,7 +759,6 @@ USER [solr]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `92034b3f94c9a5aef3fb3efc3ca17519a96d0f96ac13f010cfaab6390b816d74`
 
@@ -807,7 +772,6 @@ CMD ["/opt/solr/bin/solr" "-f"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `solr:5.4.1`
 
@@ -831,7 +795,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -845,7 +808,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -906,7 +868,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -926,7 +887,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -940,7 +900,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -954,7 +913,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -968,7 +926,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -982,7 +939,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -1028,7 +984,6 @@ MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0428c9d5c46ca4cd5a64241d11cb78adda6b18328673be58837a125ab3ffd97b`
 
@@ -1055,7 +1010,6 @@ ENV SOLR_USER=solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5c67ebd293853ba5b104e7592175be08b8212cf02ebf26a1adea378e4a00c2e`
 
@@ -1069,7 +1023,6 @@ ENV SOLR_UID=8983
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6dbc2e0886ef8c79fcd9acd4e7435937047987aaf84c0ff409b2c1fe6b96aa2a`
 
@@ -1096,7 +1049,6 @@ ENV SOLR_KEY=E6E21FFCDCEA14C95910EA65051A0FAF76BC6507
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26968ba2961c9b2990ea1f0abbb35ba6bfcdc514f7981a3d01bea3cf004c32d9`
 
@@ -1110,7 +1062,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$SOLR_KEY"
 -	Virtual Size: 15.9 KB (15950 bytes)
 -	v2 Blob: `sha256:9949c2b869862ccf2a75116604d775b90c36ba142ed9abb0ebd9b74d0fc63bdb`
 -	v2 Content-Length: 7.4 KB (7397 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:39 GMT
 
 #### `cea17d2a91f139ddc5ed37e128a66b458c7a9d7c260a4590f0e22bc7c10670a5`
 
@@ -1124,7 +1075,6 @@ ENV SOLR_VERSION=5.4.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa3cc2accd87ec0f3d940505b0af258589115d5d61471478e3a6a65fdd577bd7`
 
@@ -1138,7 +1088,6 @@ ENV SOLR_SHA256=3e4b4ec7bd728b49b2ebc3dbe8f3d1ef89fded4ab86b9e2f856bedd58c99f28b
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1aeac9a92dd4c1afb4c97669985d6b2ea859d26f76b3cddbf161bce2d2c38e08`
 
@@ -1165,7 +1114,6 @@ EXPOSE 8983/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39f7426708e5ffb03a2cc30c12ea2e8745c4b8f82f56f796d011d61f2e838b74`
 
@@ -1179,7 +1127,6 @@ WORKDIR /opt/solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a8b0de095054510b8f5dcaf88cfbff6a1b04dd99dcb635ae9b1901ca64b7b3d`
 
@@ -1193,7 +1140,6 @@ USER [solr]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b680f5994d8881912bea44fa57dc1b3cc88697cd4ea9430e5cef6bac51906473`
 
@@ -1207,7 +1153,6 @@ CMD ["/opt/solr/bin/solr" "-f"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `solr:5.4`
 
@@ -1231,7 +1176,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1245,7 +1189,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1306,7 +1249,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -1326,7 +1268,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1340,7 +1281,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -1354,7 +1294,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -1368,7 +1307,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -1382,7 +1320,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -1428,7 +1365,6 @@ MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0428c9d5c46ca4cd5a64241d11cb78adda6b18328673be58837a125ab3ffd97b`
 
@@ -1455,7 +1391,6 @@ ENV SOLR_USER=solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5c67ebd293853ba5b104e7592175be08b8212cf02ebf26a1adea378e4a00c2e`
 
@@ -1469,7 +1404,6 @@ ENV SOLR_UID=8983
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6dbc2e0886ef8c79fcd9acd4e7435937047987aaf84c0ff409b2c1fe6b96aa2a`
 
@@ -1496,7 +1430,6 @@ ENV SOLR_KEY=E6E21FFCDCEA14C95910EA65051A0FAF76BC6507
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26968ba2961c9b2990ea1f0abbb35ba6bfcdc514f7981a3d01bea3cf004c32d9`
 
@@ -1510,7 +1443,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$SOLR_KEY"
 -	Virtual Size: 15.9 KB (15950 bytes)
 -	v2 Blob: `sha256:9949c2b869862ccf2a75116604d775b90c36ba142ed9abb0ebd9b74d0fc63bdb`
 -	v2 Content-Length: 7.4 KB (7397 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:39 GMT
 
 #### `cea17d2a91f139ddc5ed37e128a66b458c7a9d7c260a4590f0e22bc7c10670a5`
 
@@ -1524,7 +1456,6 @@ ENV SOLR_VERSION=5.4.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa3cc2accd87ec0f3d940505b0af258589115d5d61471478e3a6a65fdd577bd7`
 
@@ -1538,7 +1469,6 @@ ENV SOLR_SHA256=3e4b4ec7bd728b49b2ebc3dbe8f3d1ef89fded4ab86b9e2f856bedd58c99f28b
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1aeac9a92dd4c1afb4c97669985d6b2ea859d26f76b3cddbf161bce2d2c38e08`
 
@@ -1565,7 +1495,6 @@ EXPOSE 8983/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39f7426708e5ffb03a2cc30c12ea2e8745c4b8f82f56f796d011d61f2e838b74`
 
@@ -1579,7 +1508,6 @@ WORKDIR /opt/solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a8b0de095054510b8f5dcaf88cfbff6a1b04dd99dcb635ae9b1901ca64b7b3d`
 
@@ -1593,7 +1521,6 @@ USER [solr]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b680f5994d8881912bea44fa57dc1b3cc88697cd4ea9430e5cef6bac51906473`
 
@@ -1607,7 +1534,6 @@ CMD ["/opt/solr/bin/solr" "-f"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `solr:5.5.0`
 
@@ -1631,7 +1557,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1645,7 +1570,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1706,7 +1630,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -1726,7 +1649,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1740,7 +1662,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -1754,7 +1675,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -1768,7 +1688,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -1782,7 +1701,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -1828,7 +1746,6 @@ MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0428c9d5c46ca4cd5a64241d11cb78adda6b18328673be58837a125ab3ffd97b`
 
@@ -1855,7 +1772,6 @@ ENV SOLR_USER=solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5c67ebd293853ba5b104e7592175be08b8212cf02ebf26a1adea378e4a00c2e`
 
@@ -1869,7 +1785,6 @@ ENV SOLR_UID=8983
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6dbc2e0886ef8c79fcd9acd4e7435937047987aaf84c0ff409b2c1fe6b96aa2a`
 
@@ -1896,7 +1811,6 @@ ENV SOLR_KEY=2C72EB1397733A551DDB60CCF119941F6E68DA61
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7259c6ac5e08dfcc0f4bbccdaf09f3c44d1d70927551e057bf78d9e6ae247f91`
 
@@ -1923,7 +1837,6 @@ ENV SOLR_VERSION=5.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32b36212c27357a1ea5608ef9e1d6a4aaf7b2a854b038c71634f698bc35ddbef`
 
@@ -1937,7 +1850,6 @@ ENV SOLR_SHA256=c5fa5cb996fe1432e09bb2f6053ffbeb095436db4a77e9c6488b531db726b04d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e56cacab9f583699faf0052becb95c68bde622c67eb12c2dc2f0229b5212f74`
 
@@ -1951,7 +1863,6 @@ RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://arch
 -	Virtual Size: 217.4 MB (217391342 bytes)
 -	v2 Blob: `sha256:246eefc5d93cd21d153640d246e9344fbb2b7df35db729cb17d0741eb9fc977d`
 -	v2 Content-Length: 136.8 MB (136753424 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:35:44 GMT
 
 #### `51df31544e372a5975f6441da6ec1a113531681891236aee8f539af33593b24c`
 
@@ -1965,7 +1876,6 @@ EXPOSE 8983/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ebbb24de606e9e7879394dc08fafbc5dbc6e9630f7bcef551a0fe36ec88eced5`
 
@@ -1979,7 +1889,6 @@ WORKDIR /opt/solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7244d0195847521700c6138143b84ecc3a221f33cbc345e82a6447d5751e77b7`
 
@@ -1993,7 +1902,6 @@ USER [solr]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5328b1196187dacd9ceb54637adba8db293e53533e10a0861b59bfc2b58900c6`
 
@@ -2007,7 +1915,6 @@ CMD ["/opt/solr/bin/solr" "-f"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `solr:5.5`
 
@@ -2031,7 +1938,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2045,7 +1951,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2106,7 +2011,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2126,7 +2030,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2140,7 +2043,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2154,7 +2056,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2168,7 +2069,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2182,7 +2082,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2228,7 +2127,6 @@ MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0428c9d5c46ca4cd5a64241d11cb78adda6b18328673be58837a125ab3ffd97b`
 
@@ -2255,7 +2153,6 @@ ENV SOLR_USER=solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5c67ebd293853ba5b104e7592175be08b8212cf02ebf26a1adea378e4a00c2e`
 
@@ -2269,7 +2166,6 @@ ENV SOLR_UID=8983
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6dbc2e0886ef8c79fcd9acd4e7435937047987aaf84c0ff409b2c1fe6b96aa2a`
 
@@ -2296,7 +2192,6 @@ ENV SOLR_KEY=2C72EB1397733A551DDB60CCF119941F6E68DA61
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7259c6ac5e08dfcc0f4bbccdaf09f3c44d1d70927551e057bf78d9e6ae247f91`
 
@@ -2323,7 +2218,6 @@ ENV SOLR_VERSION=5.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32b36212c27357a1ea5608ef9e1d6a4aaf7b2a854b038c71634f698bc35ddbef`
 
@@ -2337,7 +2231,6 @@ ENV SOLR_SHA256=c5fa5cb996fe1432e09bb2f6053ffbeb095436db4a77e9c6488b531db726b04d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e56cacab9f583699faf0052becb95c68bde622c67eb12c2dc2f0229b5212f74`
 
@@ -2351,7 +2244,6 @@ RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://arch
 -	Virtual Size: 217.4 MB (217391342 bytes)
 -	v2 Blob: `sha256:246eefc5d93cd21d153640d246e9344fbb2b7df35db729cb17d0741eb9fc977d`
 -	v2 Content-Length: 136.8 MB (136753424 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:35:44 GMT
 
 #### `51df31544e372a5975f6441da6ec1a113531681891236aee8f539af33593b24c`
 
@@ -2365,7 +2257,6 @@ EXPOSE 8983/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ebbb24de606e9e7879394dc08fafbc5dbc6e9630f7bcef551a0fe36ec88eced5`
 
@@ -2379,7 +2270,6 @@ WORKDIR /opt/solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7244d0195847521700c6138143b84ecc3a221f33cbc345e82a6447d5751e77b7`
 
@@ -2393,7 +2283,6 @@ USER [solr]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5328b1196187dacd9ceb54637adba8db293e53533e10a0861b59bfc2b58900c6`
 
@@ -2407,7 +2296,6 @@ CMD ["/opt/solr/bin/solr" "-f"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `solr:5`
 
@@ -2431,7 +2319,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2445,7 +2332,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2506,7 +2392,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2526,7 +2411,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2540,7 +2424,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2554,7 +2437,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2568,7 +2450,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2582,7 +2463,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2628,7 +2508,6 @@ MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0428c9d5c46ca4cd5a64241d11cb78adda6b18328673be58837a125ab3ffd97b`
 
@@ -2655,7 +2534,6 @@ ENV SOLR_USER=solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5c67ebd293853ba5b104e7592175be08b8212cf02ebf26a1adea378e4a00c2e`
 
@@ -2669,7 +2547,6 @@ ENV SOLR_UID=8983
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6dbc2e0886ef8c79fcd9acd4e7435937047987aaf84c0ff409b2c1fe6b96aa2a`
 
@@ -2696,7 +2573,6 @@ ENV SOLR_KEY=2C72EB1397733A551DDB60CCF119941F6E68DA61
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7259c6ac5e08dfcc0f4bbccdaf09f3c44d1d70927551e057bf78d9e6ae247f91`
 
@@ -2723,7 +2599,6 @@ ENV SOLR_VERSION=5.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32b36212c27357a1ea5608ef9e1d6a4aaf7b2a854b038c71634f698bc35ddbef`
 
@@ -2737,7 +2612,6 @@ ENV SOLR_SHA256=c5fa5cb996fe1432e09bb2f6053ffbeb095436db4a77e9c6488b531db726b04d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e56cacab9f583699faf0052becb95c68bde622c67eb12c2dc2f0229b5212f74`
 
@@ -2751,7 +2625,6 @@ RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://arch
 -	Virtual Size: 217.4 MB (217391342 bytes)
 -	v2 Blob: `sha256:246eefc5d93cd21d153640d246e9344fbb2b7df35db729cb17d0741eb9fc977d`
 -	v2 Content-Length: 136.8 MB (136753424 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:35:44 GMT
 
 #### `51df31544e372a5975f6441da6ec1a113531681891236aee8f539af33593b24c`
 
@@ -2765,7 +2638,6 @@ EXPOSE 8983/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ebbb24de606e9e7879394dc08fafbc5dbc6e9630f7bcef551a0fe36ec88eced5`
 
@@ -2779,7 +2651,6 @@ WORKDIR /opt/solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7244d0195847521700c6138143b84ecc3a221f33cbc345e82a6447d5751e77b7`
 
@@ -2793,7 +2664,6 @@ USER [solr]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5328b1196187dacd9ceb54637adba8db293e53533e10a0861b59bfc2b58900c6`
 
@@ -2807,7 +2677,6 @@ CMD ["/opt/solr/bin/solr" "-f"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `solr:latest`
 
@@ -2831,7 +2700,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2845,7 +2713,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2906,7 +2773,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2926,7 +2792,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2940,7 +2805,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2954,7 +2818,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2968,7 +2831,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2982,7 +2844,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -3028,7 +2889,6 @@ MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0428c9d5c46ca4cd5a64241d11cb78adda6b18328673be58837a125ab3ffd97b`
 
@@ -3055,7 +2915,6 @@ ENV SOLR_USER=solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5c67ebd293853ba5b104e7592175be08b8212cf02ebf26a1adea378e4a00c2e`
 
@@ -3069,7 +2928,6 @@ ENV SOLR_UID=8983
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6dbc2e0886ef8c79fcd9acd4e7435937047987aaf84c0ff409b2c1fe6b96aa2a`
 
@@ -3096,7 +2954,6 @@ ENV SOLR_KEY=2C72EB1397733A551DDB60CCF119941F6E68DA61
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7259c6ac5e08dfcc0f4bbccdaf09f3c44d1d70927551e057bf78d9e6ae247f91`
 
@@ -3123,7 +2980,6 @@ ENV SOLR_VERSION=5.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32b36212c27357a1ea5608ef9e1d6a4aaf7b2a854b038c71634f698bc35ddbef`
 
@@ -3137,7 +2993,6 @@ ENV SOLR_SHA256=c5fa5cb996fe1432e09bb2f6053ffbeb095436db4a77e9c6488b531db726b04d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e56cacab9f583699faf0052becb95c68bde622c67eb12c2dc2f0229b5212f74`
 
@@ -3151,7 +3006,6 @@ RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://arch
 -	Virtual Size: 217.4 MB (217391342 bytes)
 -	v2 Blob: `sha256:246eefc5d93cd21d153640d246e9344fbb2b7df35db729cb17d0741eb9fc977d`
 -	v2 Content-Length: 136.8 MB (136753424 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:35:44 GMT
 
 #### `51df31544e372a5975f6441da6ec1a113531681891236aee8f539af33593b24c`
 
@@ -3165,7 +3019,6 @@ EXPOSE 8983/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ebbb24de606e9e7879394dc08fafbc5dbc6e9630f7bcef551a0fe36ec88eced5`
 
@@ -3179,7 +3032,6 @@ WORKDIR /opt/solr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7244d0195847521700c6138143b84ecc3a221f33cbc345e82a6447d5751e77b7`
 
@@ -3193,7 +3045,6 @@ USER [solr]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5328b1196187dacd9ceb54637adba8db293e53533e10a0861b59bfc2b58900c6`
 
@@ -3207,4 +3058,3 @@ CMD ["/opt/solr/bin/solr" "-f"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

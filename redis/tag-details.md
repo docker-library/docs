@@ -1759,7 +1759,6 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5db2b51ce0e977688653eb1ee2e2ce3741d751a12d6135542b754fb6000fb16b`
 -	v2 Content-Length: 98.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:12:47 GMT
 
 #### `cb30f8d3ec9c08a138c73a96ee25ce23d5108c6792704a4e343ab9862c6eb837`
 
@@ -2014,7 +2013,6 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5db2b51ce0e977688653eb1ee2e2ce3741d751a12d6135542b754fb6000fb16b`
 -	v2 Content-Length: 98.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:12:47 GMT
 
 #### `cb30f8d3ec9c08a138c73a96ee25ce23d5108c6792704a4e343ab9862c6eb837`
 
@@ -2269,7 +2267,6 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5db2b51ce0e977688653eb1ee2e2ce3741d751a12d6135542b754fb6000fb16b`
 -	v2 Content-Length: 98.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:12:47 GMT
 
 #### `cb30f8d3ec9c08a138c73a96ee25ce23d5108c6792704a4e343ab9862c6eb837`
 
@@ -2524,7 +2521,6 @@ RUN mkdir /data && chown redis:redis /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:5db2b51ce0e977688653eb1ee2e2ce3741d751a12d6135542b754fb6000fb16b`
 -	v2 Content-Length: 98.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:12:47 GMT
 
 #### `cb30f8d3ec9c08a138c73a96ee25ce23d5108c6792704a4e343ab9862c6eb837`
 
@@ -2779,7 +2775,6 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.8 MB (6792760 bytes)
 -	v2 Blob: `sha256:9b2e5bbe8f653d8ac5c3d1540b841c9478d83f2459d8c12bcff99df6ea42347a`
 -	v2 Content-Length: 2.7 MB (2669588 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:13:24 GMT
 
 #### `51ca2290faac3415d2e235c4db2a43a806cddb8911ae87d1b49932b314acbb19`
 
@@ -3047,7 +3042,6 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.8 MB (6792760 bytes)
 -	v2 Blob: `sha256:9b2e5bbe8f653d8ac5c3d1540b841c9478d83f2459d8c12bcff99df6ea42347a`
 -	v2 Content-Length: 2.7 MB (2669588 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:13:24 GMT
 
 #### `51ca2290faac3415d2e235c4db2a43a806cddb8911ae87d1b49932b314acbb19`
 
@@ -3315,7 +3309,6 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.8 MB (6792760 bytes)
 -	v2 Blob: `sha256:9b2e5bbe8f653d8ac5c3d1540b841c9478d83f2459d8c12bcff99df6ea42347a`
 -	v2 Content-Length: 2.7 MB (2669588 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:13:24 GMT
 
 #### `51ca2290faac3415d2e235c4db2a43a806cddb8911ae87d1b49932b314acbb19`
 
@@ -3583,7 +3576,6 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.8 MB (6792760 bytes)
 -	v2 Blob: `sha256:9b2e5bbe8f653d8ac5c3d1540b841c9478d83f2459d8c12bcff99df6ea42347a`
 -	v2 Content-Length: 2.7 MB (2669588 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:13:24 GMT
 
 #### `51ca2290faac3415d2e235c4db2a43a806cddb8911ae87d1b49932b314acbb19`
 
@@ -3698,7 +3690,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `bbc29d5712c3e53db4ed3bfabcd9ed65411f8955aa09076056a3fe1fff2cc144`
 
@@ -3751,7 +3742,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2716367 bytes)
 -	v2 Blob: `sha256:10d0b5c4aea4d3c6086d7c09920b27bbcb23ede6809f7e3fb5e026a558113907`
 -	v2 Content-Length: 815.1 KB (815062 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:22:10 GMT
 
 #### `01e06c3a4e5f4f50da3cb3d325388481e2defff42e0cebfad7f0a8a99648de91`
 
@@ -3933,7 +3923,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `bbc29d5712c3e53db4ed3bfabcd9ed65411f8955aa09076056a3fe1fff2cc144`
 
@@ -3986,7 +3975,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2716367 bytes)
 -	v2 Blob: `sha256:10d0b5c4aea4d3c6086d7c09920b27bbcb23ede6809f7e3fb5e026a558113907`
 -	v2 Content-Length: 815.1 KB (815062 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:22:10 GMT
 
 #### `01e06c3a4e5f4f50da3cb3d325388481e2defff42e0cebfad7f0a8a99648de91`
 
@@ -4168,7 +4156,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `bbc29d5712c3e53db4ed3bfabcd9ed65411f8955aa09076056a3fe1fff2cc144`
 
@@ -4221,7 +4208,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2716367 bytes)
 -	v2 Blob: `sha256:10d0b5c4aea4d3c6086d7c09920b27bbcb23ede6809f7e3fb5e026a558113907`
 -	v2 Content-Length: 815.1 KB (815062 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:22:10 GMT
 
 #### `01e06c3a4e5f4f50da3cb3d325388481e2defff42e0cebfad7f0a8a99648de91`
 
@@ -4403,7 +4389,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `bbc29d5712c3e53db4ed3bfabcd9ed65411f8955aa09076056a3fe1fff2cc144`
 
@@ -4456,7 +4441,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2716367 bytes)
 -	v2 Blob: `sha256:10d0b5c4aea4d3c6086d7c09920b27bbcb23ede6809f7e3fb5e026a558113907`
 -	v2 Content-Length: 815.1 KB (815062 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:22:10 GMT
 
 #### `01e06c3a4e5f4f50da3cb3d325388481e2defff42e0cebfad7f0a8a99648de91`
 

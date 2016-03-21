@@ -46,7 +46,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc6f923886548630f6ca46728e058e2641a365b1ceae5b9f30ea3bbee66f0df`
 
@@ -73,7 +72,6 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e7f383634b84c916bd305bfa532bc5cf904b7cfa51be9620aa16afc934ff10e1`
 
@@ -97,7 +95,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:7b912f1c2e6ecb862dee71c39cdb1fc3ee7df2fd7f94bd7da50d954c321a6125`
 -	v2 Content-Length: 1.2 MB (1218742 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 20:08:19 GMT
 
 #### `940bfc51a070c0cb6584fa40829df366cde3014545d28d5aaddc14ddf05a07ad`
 
@@ -137,7 +134,6 @@ ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `95221a1359c69aa3dfd34cb1d16dd4b44c590d3c9dbfec45189a4868ed1d4dce`
 
@@ -177,7 +173,6 @@ ENV RABBITMQ_VERSION=3.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f50c6391f0831a63af73254b8f6fce8d8642fdb4edc816a33bfd3a8ac28cb7b6`
 
@@ -191,7 +186,6 @@ ENV RABBITMQ_DEBIAN_VERSION=3.6.1-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5e5c4247895e51ed15ac597bb214de51b6e72fafccc05dfdbbdc1c1e30fbba4`
 
@@ -221,7 +215,6 @@ ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b61772bd47fc7e90bfe444e528b3d6481949c4593fce7271a411f82aa4754c19`
 
@@ -248,7 +241,6 @@ ENV HOME=/var/lib/rabbitmq
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eda54ed39b023cca5f37e8594bff83d270ae4ac69c6ee0023c1bc688925e8a27`
 
@@ -277,7 +269,6 @@ VOLUME [/var/lib/rabbitmq]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `baface10dfd048502119668eca14c3f9336be85a771c2decd4c2977fc2996e75`
 
@@ -317,7 +308,6 @@ COPY file:3aa5f9b9b751a08a72f6fd896ceb00f94ed4266d81492ee06213539ed97f109c in /
 -	Virtual Size: 3.8 KB (3846 bytes)
 -	v2 Blob: `sha256:247fd320765ca70aa7c221fbb4bba591a457bb7995f9dd8760f7f0f68ba49584`
 -	v2 Content-Length: 1.5 KB (1484 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:07:00 GMT
 
 #### `46cd84ba8c90836288c8aa219ed4d0ad9334cc58ae8e0df87fd4cf74bb6913de`
 
@@ -331,7 +321,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4b4e9bb6d4f6b370a32dd9e66b1f03186c81709ee8cb74aaea4a4ae0e4ae90b2`
 
@@ -345,7 +334,6 @@ EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fccf07bb4e9a4d8969805102c3c6b3bc9ec882f00578db9e6430e44c5207c24b`
 
@@ -359,7 +347,6 @@ CMD ["rabbitmq-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rabbitmq:3.6`
 
@@ -396,7 +383,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc6f923886548630f6ca46728e058e2641a365b1ceae5b9f30ea3bbee66f0df`
 
@@ -423,7 +409,6 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e7f383634b84c916bd305bfa532bc5cf904b7cfa51be9620aa16afc934ff10e1`
 
@@ -447,7 +432,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:7b912f1c2e6ecb862dee71c39cdb1fc3ee7df2fd7f94bd7da50d954c321a6125`
 -	v2 Content-Length: 1.2 MB (1218742 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 20:08:19 GMT
 
 #### `940bfc51a070c0cb6584fa40829df366cde3014545d28d5aaddc14ddf05a07ad`
 
@@ -487,7 +471,6 @@ ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `95221a1359c69aa3dfd34cb1d16dd4b44c590d3c9dbfec45189a4868ed1d4dce`
 
@@ -527,7 +510,6 @@ ENV RABBITMQ_VERSION=3.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f50c6391f0831a63af73254b8f6fce8d8642fdb4edc816a33bfd3a8ac28cb7b6`
 
@@ -541,7 +523,6 @@ ENV RABBITMQ_DEBIAN_VERSION=3.6.1-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5e5c4247895e51ed15ac597bb214de51b6e72fafccc05dfdbbdc1c1e30fbba4`
 
@@ -571,7 +552,6 @@ ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b61772bd47fc7e90bfe444e528b3d6481949c4593fce7271a411f82aa4754c19`
 
@@ -598,7 +578,6 @@ ENV HOME=/var/lib/rabbitmq
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eda54ed39b023cca5f37e8594bff83d270ae4ac69c6ee0023c1bc688925e8a27`
 
@@ -627,7 +606,6 @@ VOLUME [/var/lib/rabbitmq]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `baface10dfd048502119668eca14c3f9336be85a771c2decd4c2977fc2996e75`
 
@@ -667,7 +645,6 @@ COPY file:3aa5f9b9b751a08a72f6fd896ceb00f94ed4266d81492ee06213539ed97f109c in /
 -	Virtual Size: 3.8 KB (3846 bytes)
 -	v2 Blob: `sha256:247fd320765ca70aa7c221fbb4bba591a457bb7995f9dd8760f7f0f68ba49584`
 -	v2 Content-Length: 1.5 KB (1484 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:07:00 GMT
 
 #### `46cd84ba8c90836288c8aa219ed4d0ad9334cc58ae8e0df87fd4cf74bb6913de`
 
@@ -681,7 +658,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4b4e9bb6d4f6b370a32dd9e66b1f03186c81709ee8cb74aaea4a4ae0e4ae90b2`
 
@@ -695,7 +671,6 @@ EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fccf07bb4e9a4d8969805102c3c6b3bc9ec882f00578db9e6430e44c5207c24b`
 
@@ -709,7 +684,6 @@ CMD ["rabbitmq-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rabbitmq:3`
 
@@ -746,7 +720,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc6f923886548630f6ca46728e058e2641a365b1ceae5b9f30ea3bbee66f0df`
 
@@ -773,7 +746,6 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e7f383634b84c916bd305bfa532bc5cf904b7cfa51be9620aa16afc934ff10e1`
 
@@ -797,7 +769,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:7b912f1c2e6ecb862dee71c39cdb1fc3ee7df2fd7f94bd7da50d954c321a6125`
 -	v2 Content-Length: 1.2 MB (1218742 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 20:08:19 GMT
 
 #### `940bfc51a070c0cb6584fa40829df366cde3014545d28d5aaddc14ddf05a07ad`
 
@@ -837,7 +808,6 @@ ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `95221a1359c69aa3dfd34cb1d16dd4b44c590d3c9dbfec45189a4868ed1d4dce`
 
@@ -877,7 +847,6 @@ ENV RABBITMQ_VERSION=3.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f50c6391f0831a63af73254b8f6fce8d8642fdb4edc816a33bfd3a8ac28cb7b6`
 
@@ -891,7 +860,6 @@ ENV RABBITMQ_DEBIAN_VERSION=3.6.1-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5e5c4247895e51ed15ac597bb214de51b6e72fafccc05dfdbbdc1c1e30fbba4`
 
@@ -921,7 +889,6 @@ ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b61772bd47fc7e90bfe444e528b3d6481949c4593fce7271a411f82aa4754c19`
 
@@ -948,7 +915,6 @@ ENV HOME=/var/lib/rabbitmq
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eda54ed39b023cca5f37e8594bff83d270ae4ac69c6ee0023c1bc688925e8a27`
 
@@ -977,7 +943,6 @@ VOLUME [/var/lib/rabbitmq]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `baface10dfd048502119668eca14c3f9336be85a771c2decd4c2977fc2996e75`
 
@@ -1017,7 +982,6 @@ COPY file:3aa5f9b9b751a08a72f6fd896ceb00f94ed4266d81492ee06213539ed97f109c in /
 -	Virtual Size: 3.8 KB (3846 bytes)
 -	v2 Blob: `sha256:247fd320765ca70aa7c221fbb4bba591a457bb7995f9dd8760f7f0f68ba49584`
 -	v2 Content-Length: 1.5 KB (1484 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:07:00 GMT
 
 #### `46cd84ba8c90836288c8aa219ed4d0ad9334cc58ae8e0df87fd4cf74bb6913de`
 
@@ -1031,7 +995,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4b4e9bb6d4f6b370a32dd9e66b1f03186c81709ee8cb74aaea4a4ae0e4ae90b2`
 
@@ -1045,7 +1008,6 @@ EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fccf07bb4e9a4d8969805102c3c6b3bc9ec882f00578db9e6430e44c5207c24b`
 
@@ -1059,7 +1021,6 @@ CMD ["rabbitmq-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rabbitmq:latest`
 
@@ -1096,7 +1057,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc6f923886548630f6ca46728e058e2641a365b1ceae5b9f30ea3bbee66f0df`
 
@@ -1123,7 +1083,6 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e7f383634b84c916bd305bfa532bc5cf904b7cfa51be9620aa16afc934ff10e1`
 
@@ -1147,7 +1106,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:7b912f1c2e6ecb862dee71c39cdb1fc3ee7df2fd7f94bd7da50d954c321a6125`
 -	v2 Content-Length: 1.2 MB (1218742 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 20:08:19 GMT
 
 #### `940bfc51a070c0cb6584fa40829df366cde3014545d28d5aaddc14ddf05a07ad`
 
@@ -1187,7 +1145,6 @@ ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `95221a1359c69aa3dfd34cb1d16dd4b44c590d3c9dbfec45189a4868ed1d4dce`
 
@@ -1227,7 +1184,6 @@ ENV RABBITMQ_VERSION=3.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f50c6391f0831a63af73254b8f6fce8d8642fdb4edc816a33bfd3a8ac28cb7b6`
 
@@ -1241,7 +1197,6 @@ ENV RABBITMQ_DEBIAN_VERSION=3.6.1-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5e5c4247895e51ed15ac597bb214de51b6e72fafccc05dfdbbdc1c1e30fbba4`
 
@@ -1271,7 +1226,6 @@ ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b61772bd47fc7e90bfe444e528b3d6481949c4593fce7271a411f82aa4754c19`
 
@@ -1298,7 +1252,6 @@ ENV HOME=/var/lib/rabbitmq
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eda54ed39b023cca5f37e8594bff83d270ae4ac69c6ee0023c1bc688925e8a27`
 
@@ -1327,7 +1280,6 @@ VOLUME [/var/lib/rabbitmq]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `baface10dfd048502119668eca14c3f9336be85a771c2decd4c2977fc2996e75`
 
@@ -1367,7 +1319,6 @@ COPY file:3aa5f9b9b751a08a72f6fd896ceb00f94ed4266d81492ee06213539ed97f109c in /
 -	Virtual Size: 3.8 KB (3846 bytes)
 -	v2 Blob: `sha256:247fd320765ca70aa7c221fbb4bba591a457bb7995f9dd8760f7f0f68ba49584`
 -	v2 Content-Length: 1.5 KB (1484 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:07:00 GMT
 
 #### `46cd84ba8c90836288c8aa219ed4d0ad9334cc58ae8e0df87fd4cf74bb6913de`
 
@@ -1381,7 +1332,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4b4e9bb6d4f6b370a32dd9e66b1f03186c81709ee8cb74aaea4a4ae0e4ae90b2`
 
@@ -1395,7 +1345,6 @@ EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fccf07bb4e9a4d8969805102c3c6b3bc9ec882f00578db9e6430e44c5207c24b`
 
@@ -1409,7 +1358,6 @@ CMD ["rabbitmq-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rabbitmq:3.6.1-management`
 
@@ -1446,7 +1394,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc6f923886548630f6ca46728e058e2641a365b1ceae5b9f30ea3bbee66f0df`
 
@@ -1473,7 +1420,6 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e7f383634b84c916bd305bfa532bc5cf904b7cfa51be9620aa16afc934ff10e1`
 
@@ -1497,7 +1443,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:7b912f1c2e6ecb862dee71c39cdb1fc3ee7df2fd7f94bd7da50d954c321a6125`
 -	v2 Content-Length: 1.2 MB (1218742 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 20:08:19 GMT
 
 #### `940bfc51a070c0cb6584fa40829df366cde3014545d28d5aaddc14ddf05a07ad`
 
@@ -1537,7 +1482,6 @@ ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `95221a1359c69aa3dfd34cb1d16dd4b44c590d3c9dbfec45189a4868ed1d4dce`
 
@@ -1577,7 +1521,6 @@ ENV RABBITMQ_VERSION=3.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f50c6391f0831a63af73254b8f6fce8d8642fdb4edc816a33bfd3a8ac28cb7b6`
 
@@ -1591,7 +1534,6 @@ ENV RABBITMQ_DEBIAN_VERSION=3.6.1-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5e5c4247895e51ed15ac597bb214de51b6e72fafccc05dfdbbdc1c1e30fbba4`
 
@@ -1621,7 +1563,6 @@ ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b61772bd47fc7e90bfe444e528b3d6481949c4593fce7271a411f82aa4754c19`
 
@@ -1648,7 +1589,6 @@ ENV HOME=/var/lib/rabbitmq
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eda54ed39b023cca5f37e8594bff83d270ae4ac69c6ee0023c1bc688925e8a27`
 
@@ -1677,7 +1617,6 @@ VOLUME [/var/lib/rabbitmq]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `baface10dfd048502119668eca14c3f9336be85a771c2decd4c2977fc2996e75`
 
@@ -1717,7 +1656,6 @@ COPY file:3aa5f9b9b751a08a72f6fd896ceb00f94ed4266d81492ee06213539ed97f109c in /
 -	Virtual Size: 3.8 KB (3846 bytes)
 -	v2 Blob: `sha256:247fd320765ca70aa7c221fbb4bba591a457bb7995f9dd8760f7f0f68ba49584`
 -	v2 Content-Length: 1.5 KB (1484 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:07:00 GMT
 
 #### `46cd84ba8c90836288c8aa219ed4d0ad9334cc58ae8e0df87fd4cf74bb6913de`
 
@@ -1731,7 +1669,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4b4e9bb6d4f6b370a32dd9e66b1f03186c81709ee8cb74aaea4a4ae0e4ae90b2`
 
@@ -1745,7 +1682,6 @@ EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fccf07bb4e9a4d8969805102c3c6b3bc9ec882f00578db9e6430e44c5207c24b`
 
@@ -1759,7 +1695,6 @@ CMD ["rabbitmq-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86e5d7f25fe00e8d572d78ac32781c067e8fd96ee2b718ecbbf7ecf355a04555`
 
@@ -1786,7 +1721,6 @@ EXPOSE 15671/tcp 15672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rabbitmq:3.6-management`
 
@@ -1823,7 +1757,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc6f923886548630f6ca46728e058e2641a365b1ceae5b9f30ea3bbee66f0df`
 
@@ -1850,7 +1783,6 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e7f383634b84c916bd305bfa532bc5cf904b7cfa51be9620aa16afc934ff10e1`
 
@@ -1874,7 +1806,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:7b912f1c2e6ecb862dee71c39cdb1fc3ee7df2fd7f94bd7da50d954c321a6125`
 -	v2 Content-Length: 1.2 MB (1218742 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 20:08:19 GMT
 
 #### `940bfc51a070c0cb6584fa40829df366cde3014545d28d5aaddc14ddf05a07ad`
 
@@ -1914,7 +1845,6 @@ ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `95221a1359c69aa3dfd34cb1d16dd4b44c590d3c9dbfec45189a4868ed1d4dce`
 
@@ -1954,7 +1884,6 @@ ENV RABBITMQ_VERSION=3.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f50c6391f0831a63af73254b8f6fce8d8642fdb4edc816a33bfd3a8ac28cb7b6`
 
@@ -1968,7 +1897,6 @@ ENV RABBITMQ_DEBIAN_VERSION=3.6.1-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5e5c4247895e51ed15ac597bb214de51b6e72fafccc05dfdbbdc1c1e30fbba4`
 
@@ -1998,7 +1926,6 @@ ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b61772bd47fc7e90bfe444e528b3d6481949c4593fce7271a411f82aa4754c19`
 
@@ -2025,7 +1952,6 @@ ENV HOME=/var/lib/rabbitmq
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eda54ed39b023cca5f37e8594bff83d270ae4ac69c6ee0023c1bc688925e8a27`
 
@@ -2054,7 +1980,6 @@ VOLUME [/var/lib/rabbitmq]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `baface10dfd048502119668eca14c3f9336be85a771c2decd4c2977fc2996e75`
 
@@ -2094,7 +2019,6 @@ COPY file:3aa5f9b9b751a08a72f6fd896ceb00f94ed4266d81492ee06213539ed97f109c in /
 -	Virtual Size: 3.8 KB (3846 bytes)
 -	v2 Blob: `sha256:247fd320765ca70aa7c221fbb4bba591a457bb7995f9dd8760f7f0f68ba49584`
 -	v2 Content-Length: 1.5 KB (1484 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:07:00 GMT
 
 #### `46cd84ba8c90836288c8aa219ed4d0ad9334cc58ae8e0df87fd4cf74bb6913de`
 
@@ -2108,7 +2032,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4b4e9bb6d4f6b370a32dd9e66b1f03186c81709ee8cb74aaea4a4ae0e4ae90b2`
 
@@ -2122,7 +2045,6 @@ EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fccf07bb4e9a4d8969805102c3c6b3bc9ec882f00578db9e6430e44c5207c24b`
 
@@ -2136,7 +2058,6 @@ CMD ["rabbitmq-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86e5d7f25fe00e8d572d78ac32781c067e8fd96ee2b718ecbbf7ecf355a04555`
 
@@ -2163,7 +2084,6 @@ EXPOSE 15671/tcp 15672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rabbitmq:3-management`
 
@@ -2200,7 +2120,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc6f923886548630f6ca46728e058e2641a365b1ceae5b9f30ea3bbee66f0df`
 
@@ -2227,7 +2146,6 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e7f383634b84c916bd305bfa532bc5cf904b7cfa51be9620aa16afc934ff10e1`
 
@@ -2251,7 +2169,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:7b912f1c2e6ecb862dee71c39cdb1fc3ee7df2fd7f94bd7da50d954c321a6125`
 -	v2 Content-Length: 1.2 MB (1218742 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 20:08:19 GMT
 
 #### `940bfc51a070c0cb6584fa40829df366cde3014545d28d5aaddc14ddf05a07ad`
 
@@ -2291,7 +2208,6 @@ ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `95221a1359c69aa3dfd34cb1d16dd4b44c590d3c9dbfec45189a4868ed1d4dce`
 
@@ -2331,7 +2247,6 @@ ENV RABBITMQ_VERSION=3.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f50c6391f0831a63af73254b8f6fce8d8642fdb4edc816a33bfd3a8ac28cb7b6`
 
@@ -2345,7 +2260,6 @@ ENV RABBITMQ_DEBIAN_VERSION=3.6.1-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5e5c4247895e51ed15ac597bb214de51b6e72fafccc05dfdbbdc1c1e30fbba4`
 
@@ -2375,7 +2289,6 @@ ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b61772bd47fc7e90bfe444e528b3d6481949c4593fce7271a411f82aa4754c19`
 
@@ -2402,7 +2315,6 @@ ENV HOME=/var/lib/rabbitmq
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eda54ed39b023cca5f37e8594bff83d270ae4ac69c6ee0023c1bc688925e8a27`
 
@@ -2431,7 +2343,6 @@ VOLUME [/var/lib/rabbitmq]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `baface10dfd048502119668eca14c3f9336be85a771c2decd4c2977fc2996e75`
 
@@ -2471,7 +2382,6 @@ COPY file:3aa5f9b9b751a08a72f6fd896ceb00f94ed4266d81492ee06213539ed97f109c in /
 -	Virtual Size: 3.8 KB (3846 bytes)
 -	v2 Blob: `sha256:247fd320765ca70aa7c221fbb4bba591a457bb7995f9dd8760f7f0f68ba49584`
 -	v2 Content-Length: 1.5 KB (1484 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:07:00 GMT
 
 #### `46cd84ba8c90836288c8aa219ed4d0ad9334cc58ae8e0df87fd4cf74bb6913de`
 
@@ -2485,7 +2395,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4b4e9bb6d4f6b370a32dd9e66b1f03186c81709ee8cb74aaea4a4ae0e4ae90b2`
 
@@ -2499,7 +2408,6 @@ EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fccf07bb4e9a4d8969805102c3c6b3bc9ec882f00578db9e6430e44c5207c24b`
 
@@ -2513,7 +2421,6 @@ CMD ["rabbitmq-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86e5d7f25fe00e8d572d78ac32781c067e8fd96ee2b718ecbbf7ecf355a04555`
 
@@ -2540,7 +2447,6 @@ EXPOSE 15671/tcp 15672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rabbitmq:management`
 
@@ -2577,7 +2483,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ecc6f923886548630f6ca46728e058e2641a365b1ceae5b9f30ea3bbee66f0df`
 
@@ -2604,7 +2509,6 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e7f383634b84c916bd305bfa532bc5cf904b7cfa51be9620aa16afc934ff10e1`
 
@@ -2628,7 +2532,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:7b912f1c2e6ecb862dee71c39cdb1fc3ee7df2fd7f94bd7da50d954c321a6125`
 -	v2 Content-Length: 1.2 MB (1218742 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 20:08:19 GMT
 
 #### `940bfc51a070c0cb6584fa40829df366cde3014545d28d5aaddc14ddf05a07ad`
 
@@ -2668,7 +2571,6 @@ ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `95221a1359c69aa3dfd34cb1d16dd4b44c590d3c9dbfec45189a4868ed1d4dce`
 
@@ -2708,7 +2610,6 @@ ENV RABBITMQ_VERSION=3.6.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f50c6391f0831a63af73254b8f6fce8d8642fdb4edc816a33bfd3a8ac28cb7b6`
 
@@ -2722,7 +2623,6 @@ ENV RABBITMQ_DEBIAN_VERSION=3.6.1-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5e5c4247895e51ed15ac597bb214de51b6e72fafccc05dfdbbdc1c1e30fbba4`
 
@@ -2752,7 +2652,6 @@ ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b61772bd47fc7e90bfe444e528b3d6481949c4593fce7271a411f82aa4754c19`
 
@@ -2779,7 +2678,6 @@ ENV HOME=/var/lib/rabbitmq
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `eda54ed39b023cca5f37e8594bff83d270ae4ac69c6ee0023c1bc688925e8a27`
 
@@ -2808,7 +2706,6 @@ VOLUME [/var/lib/rabbitmq]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `baface10dfd048502119668eca14c3f9336be85a771c2decd4c2977fc2996e75`
 
@@ -2848,7 +2745,6 @@ COPY file:3aa5f9b9b751a08a72f6fd896ceb00f94ed4266d81492ee06213539ed97f109c in /
 -	Virtual Size: 3.8 KB (3846 bytes)
 -	v2 Blob: `sha256:247fd320765ca70aa7c221fbb4bba591a457bb7995f9dd8760f7f0f68ba49584`
 -	v2 Content-Length: 1.5 KB (1484 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:07:00 GMT
 
 #### `46cd84ba8c90836288c8aa219ed4d0ad9334cc58ae8e0df87fd4cf74bb6913de`
 
@@ -2862,7 +2758,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4b4e9bb6d4f6b370a32dd9e66b1f03186c81709ee8cb74aaea4a4ae0e4ae90b2`
 
@@ -2876,7 +2771,6 @@ EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fccf07bb4e9a4d8969805102c3c6b3bc9ec882f00578db9e6430e44c5207c24b`
 
@@ -2890,7 +2784,6 @@ CMD ["rabbitmq-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86e5d7f25fe00e8d572d78ac32781c067e8fd96ee2b718ecbbf7ecf355a04555`
 
@@ -2917,4 +2810,3 @@ EXPOSE 15671/tcp 15672/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

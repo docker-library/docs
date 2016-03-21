@@ -113,7 +113,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -351,7 +350,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -617,7 +615,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -911,7 +908,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -1105,7 +1101,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 920.4 MB (920444121 bytes)
 -	v2 Blob: `sha256:c8d1eef9d61694feb0d62818d1317fc16547b7ffdf7a7e1c6f751fe80200522e`
 -	v2 Content-Length: 267.8 MB (267792358 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:15:08 GMT
 
 ## `ros:indigo`
 
@@ -1206,7 +1201,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -1472,7 +1466,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -1738,7 +1731,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -1837,7 +1829,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:63836bb8a11ebca9ce64c5952ceeeab92556bc4056691e06b818ded161588274`
 -	v2 Content-Length: 151.8 MB (151773885 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:16:47 GMT
 
 #### `4d48db3d0e3abbaf7644be7c1d66baaf7eb3f72e6225fc7a54585704b4cdc100`
 
@@ -1851,7 +1842,6 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:de527462fcc35dfb21c76a53397692e48b9ce65c5dc1b3e9a8fa4fbc6dea7b91`
 -	v2 Content-Length: 198.0 B
--	v2 Last-Modified: Thu, 11 Jun 2015 23:24:43 GMT
 
 #### `703d0075014b087c8aa70d5673e73c6a1ad2d2469c387f99d3e98c28f0873541`
 
@@ -1978,7 +1968,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -2077,7 +2066,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:63836bb8a11ebca9ce64c5952ceeeab92556bc4056691e06b818ded161588274`
 -	v2 Content-Length: 151.8 MB (151773885 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:16:47 GMT
 
 #### `4d48db3d0e3abbaf7644be7c1d66baaf7eb3f72e6225fc7a54585704b4cdc100`
 
@@ -2091,7 +2079,6 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:de527462fcc35dfb21c76a53397692e48b9ce65c5dc1b3e9a8fa4fbc6dea7b91`
 -	v2 Content-Length: 198.0 B
--	v2 Last-Modified: Thu, 11 Jun 2015 23:24:43 GMT
 
 #### `703d0075014b087c8aa70d5673e73c6a1ad2d2469c387f99d3e98c28f0873541`
 
@@ -2246,7 +2233,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -2345,7 +2331,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:63836bb8a11ebca9ce64c5952ceeeab92556bc4056691e06b818ded161588274`
 -	v2 Content-Length: 151.8 MB (151773885 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:16:47 GMT
 
 #### `4d48db3d0e3abbaf7644be7c1d66baaf7eb3f72e6225fc7a54585704b4cdc100`
 
@@ -2359,7 +2344,6 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:de527462fcc35dfb21c76a53397692e48b9ce65c5dc1b3e9a8fa4fbc6dea7b91`
 -	v2 Content-Length: 198.0 B
--	v2 Last-Modified: Thu, 11 Jun 2015 23:24:43 GMT
 
 #### `703d0075014b087c8aa70d5673e73c6a1ad2d2469c387f99d3e98c28f0873541`
 
@@ -2442,7 +2426,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 210.5 MB (210504016 bytes)
 -	v2 Blob: `sha256:f25651170bf496e8331d3546e32315ff6879517925514271bdc7e82bc5aa4d52`
 -	v2 Content-Length: 68.0 MB (68018827 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:18:05 GMT
 
 ## `ros:jade-perception`
 
@@ -2543,7 +2526,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -2642,7 +2624,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:63836bb8a11ebca9ce64c5952ceeeab92556bc4056691e06b818ded161588274`
 -	v2 Content-Length: 151.8 MB (151773885 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:16:47 GMT
 
 #### `4d48db3d0e3abbaf7644be7c1d66baaf7eb3f72e6225fc7a54585704b4cdc100`
 
@@ -2656,7 +2637,6 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:de527462fcc35dfb21c76a53397692e48b9ce65c5dc1b3e9a8fa4fbc6dea7b91`
 -	v2 Content-Length: 198.0 B
--	v2 Last-Modified: Thu, 11 Jun 2015 23:24:43 GMT
 
 #### `703d0075014b087c8aa70d5673e73c6a1ad2d2469c387f99d3e98c28f0873541`
 
@@ -2739,7 +2719,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 919.6 MB (919631486 bytes)
 -	v2 Blob: `sha256:106bbdcbbf0d5adfbfa4c27b79a741a23aab38b40b906cc373fd93ed320dd71a`
 -	v2 Content-Length: 267.6 MB (267566689 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:19:53 GMT
 
 ## `ros:jade`
 
@@ -2840,7 +2819,6 @@ RUN locale-gen en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621258 bytes)
 -	v2 Blob: `sha256:23d0a2fc07baddd2c48b147d0cc0cbc315e59225e1a3f4c4ab64c0ce5f2cea1a`
 -	v2 Content-Length: 329.2 KB (329185 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:01 GMT
 
 #### `be7e3203450ce3e583519f3c7dc8ca0b692978403665acd67ccae43fc471bff9`
 
@@ -2939,7 +2917,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:63836bb8a11ebca9ce64c5952ceeeab92556bc4056691e06b818ded161588274`
 -	v2 Content-Length: 151.8 MB (151773885 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:16:47 GMT
 
 #### `4d48db3d0e3abbaf7644be7c1d66baaf7eb3f72e6225fc7a54585704b4cdc100`
 
@@ -2953,7 +2930,6 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:de527462fcc35dfb21c76a53397692e48b9ce65c5dc1b3e9a8fa4fbc6dea7b91`
 -	v2 Content-Length: 198.0 B
--	v2 Last-Modified: Thu, 11 Jun 2015 23:24:43 GMT
 
 #### `703d0075014b087c8aa70d5673e73c6a1ad2d2469c387f99d3e98c28f0873541`
 

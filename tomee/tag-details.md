@@ -123,7 +123,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:02702c987a43acf3852ca35d98acc6386b48b6f79c536f811eee33364a8a6c8e`
 -	v2 Content-Length: 240.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:40:52 GMT
 
 #### `16c2e29015c1a71468e53b57590472ade9fbd2015a0a929bcb59bf8e9b40aea6`
 
@@ -181,7 +180,6 @@ RUN set -x \
 -	Virtual Size: 94.5 MB (94513309 bytes)
 -	v2 Blob: `sha256:217a00aef732104ba5f922f9edb8c6a6686886dda67362b169e64b1466e6b2b9`
 -	v2 Content-Length: 52.6 MB (52578173 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:40:40 GMT
 
 #### `2ac6dbc57540ce58d8bbf04691d10d01c077503b67f037b681fd2f0ac9560ef2`
 
@@ -208,7 +206,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9363f17c43cecadc8eedae8a92ece063085e4ef5ba6721cb7c7946ac9e9470e1`
 -	v2 Content-Length: 144.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:44:31 GMT
 
 #### `d149c258b0f084e97e81389b8a3442e3380954296ef90d1725b3b16ac22f1424`
 
@@ -272,7 +269,6 @@ RUN set -x \
 -	Virtual Size: 41.4 MB (41362178 bytes)
 -	v2 Blob: `sha256:24a8e91feb1291a842d757def1a7848140a72eab5d5adaf562aecbbaa6ed3b20`
 -	v2 Content-Length: 34.6 MB (34585589 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:44:15 GMT
 
 #### `91f31d0a845bd0f28dcd4ec9d9e64f0a43793eadefd95ecc9220407309aa324b`
 
@@ -401,7 +397,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:02702c987a43acf3852ca35d98acc6386b48b6f79c536f811eee33364a8a6c8e`
 -	v2 Content-Length: 240.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:40:52 GMT
 
 #### `16c2e29015c1a71468e53b57590472ade9fbd2015a0a929bcb59bf8e9b40aea6`
 
@@ -459,7 +454,6 @@ RUN set -x \
 -	Virtual Size: 94.5 MB (94513309 bytes)
 -	v2 Blob: `sha256:217a00aef732104ba5f922f9edb8c6a6686886dda67362b169e64b1466e6b2b9`
 -	v2 Content-Length: 52.6 MB (52578173 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:40:40 GMT
 
 #### `2ac6dbc57540ce58d8bbf04691d10d01c077503b67f037b681fd2f0ac9560ef2`
 
@@ -486,7 +480,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9363f17c43cecadc8eedae8a92ece063085e4ef5ba6721cb7c7946ac9e9470e1`
 -	v2 Content-Length: 144.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:44:31 GMT
 
 #### `d149c258b0f084e97e81389b8a3442e3380954296ef90d1725b3b16ac22f1424`
 
@@ -550,7 +543,6 @@ RUN set -x \
 -	Virtual Size: 60.2 MB (60167790 bytes)
 -	v2 Blob: `sha256:f70e1defc47fbf30c3049800ed30bc74d38d501e3bf878e19bf0956ead56d637`
 -	v2 Content-Length: 51.5 MB (51526170 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:45:11 GMT
 
 #### `f20816d5c274ab744d8d207c63cce21c15f92ae64f14e71a08da90ce3c63e77f`
 
@@ -679,7 +671,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:02702c987a43acf3852ca35d98acc6386b48b6f79c536f811eee33364a8a6c8e`
 -	v2 Content-Length: 240.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:40:52 GMT
 
 #### `16c2e29015c1a71468e53b57590472ade9fbd2015a0a929bcb59bf8e9b40aea6`
 
@@ -737,7 +728,6 @@ RUN set -x \
 -	Virtual Size: 94.5 MB (94513309 bytes)
 -	v2 Blob: `sha256:217a00aef732104ba5f922f9edb8c6a6686886dda67362b169e64b1466e6b2b9`
 -	v2 Content-Length: 52.6 MB (52578173 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:40:40 GMT
 
 #### `2ac6dbc57540ce58d8bbf04691d10d01c077503b67f037b681fd2f0ac9560ef2`
 
@@ -764,7 +754,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9363f17c43cecadc8eedae8a92ece063085e4ef5ba6721cb7c7946ac9e9470e1`
 -	v2 Content-Length: 144.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:44:31 GMT
 
 #### `d149c258b0f084e97e81389b8a3442e3380954296ef90d1725b3b16ac22f1424`
 
@@ -956,7 +945,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:02702c987a43acf3852ca35d98acc6386b48b6f79c536f811eee33364a8a6c8e`
 -	v2 Content-Length: 240.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:40:52 GMT
 
 #### `16c2e29015c1a71468e53b57590472ade9fbd2015a0a929bcb59bf8e9b40aea6`
 
@@ -1014,7 +1002,6 @@ RUN set -x \
 -	Virtual Size: 94.5 MB (94513309 bytes)
 -	v2 Blob: `sha256:217a00aef732104ba5f922f9edb8c6a6686886dda67362b169e64b1466e6b2b9`
 -	v2 Content-Length: 52.6 MB (52578173 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:40:40 GMT
 
 #### `2ac6dbc57540ce58d8bbf04691d10d01c077503b67f037b681fd2f0ac9560ef2`
 
@@ -1041,7 +1028,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9363f17c43cecadc8eedae8a92ece063085e4ef5ba6721cb7c7946ac9e9470e1`
 -	v2 Content-Length: 144.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:44:31 GMT
 
 #### `d149c258b0f084e97e81389b8a3442e3380954296ef90d1725b3b16ac22f1424`
 
@@ -1154,7 +1140,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1359,7 +1344,6 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:df9a11e88af70c2bcb92c0a22b01a43fa0e3bf0d376661f84cf8f1d0a0ee76b6`
 -	v2 Content-Length: 29.7 KB (29735 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:46:13 GMT
 
 #### `6d9cd0b54119d5ca4f01980bf18800fbbb1f8d9fa30a87577c792cd610c38474`
 
@@ -1381,7 +1365,6 @@ RUN set -x \
 -	Virtual Size: 41.4 MB (41362178 bytes)
 -	v2 Blob: `sha256:7a2eb65ee70236c1f43a4190fd2275ad6ce0175434fb61922cfd07d14da52bbc`
 -	v2 Content-Length: 34.6 MB (34585571 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:46:07 GMT
 
 #### `a544b8847cb502d6513dfaa5ee1bbf2a5f6e02788c440781bf82a2a60d0dee48`
 
@@ -1431,7 +1414,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1636,7 +1618,6 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:df9a11e88af70c2bcb92c0a22b01a43fa0e3bf0d376661f84cf8f1d0a0ee76b6`
 -	v2 Content-Length: 29.7 KB (29735 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:46:13 GMT
 
 #### `17385be14ffb18e874091431ad52b0b8edf58219dac872754bbca83e5b9fc27d`
 
@@ -1707,7 +1688,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1912,7 +1892,6 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:df9a11e88af70c2bcb92c0a22b01a43fa0e3bf0d376661f84cf8f1d0a0ee76b6`
 -	v2 Content-Length: 29.7 KB (29735 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:46:13 GMT
 
 #### `f62bc43ee538e2652b124a3af2cf063412dc767c07de2609b6662f12bb316d17`
 
@@ -1983,7 +1962,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2188,7 +2166,6 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:df9a11e88af70c2bcb92c0a22b01a43fa0e3bf0d376661f84cf8f1d0a0ee76b6`
 -	v2 Content-Length: 29.7 KB (29735 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:46:13 GMT
 
 #### `e9883ed4b3f9866b0a44bc625c4a6c2d29f0de60c8883faa3a675b64f36dd868`
 
@@ -2259,7 +2236,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2423,7 +2399,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2463,7 +2438,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -2527,7 +2501,6 @@ RUN set -x \
 -	Virtual Size: 41.4 MB (41362178 bytes)
 -	v2 Blob: `sha256:3cf1caca9b1cbec8a7266e09be1740b82fec95c5117bcfd03d400508403de9c0`
 -	v2 Content-Length: 34.6 MB (34585629 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:12 GMT
 
 #### `bcd2bf75a221983a4ffb8cdd804c9b358faeff820be0ab027e1b979a0ed56084`
 
@@ -2577,7 +2550,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2741,7 +2713,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2781,7 +2752,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -2894,7 +2864,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3058,7 +3027,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3098,7 +3066,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -3211,7 +3178,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3375,7 +3341,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3415,7 +3380,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -3479,7 +3443,6 @@ RUN set -x \
 -	Virtual Size: 37.6 MB (37573546 bytes)
 -	v2 Blob: `sha256:90ee64b2aff3454972bfd11907e1ebb56a4f299b5d093f422175d1dd585a2b6f`
 -	v2 Content-Length: 31.1 MB (31141835 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:50:11 GMT
 
 #### `fe1533c0348d788dde5378457836d63a03aedd1100fcb100e6e7aebc43e33387`
 
@@ -3529,7 +3492,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3734,7 +3696,6 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:df9a11e88af70c2bcb92c0a22b01a43fa0e3bf0d376661f84cf8f1d0a0ee76b6`
 -	v2 Content-Length: 29.7 KB (29735 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:46:13 GMT
 
 #### `57748f85e9e8a6a6bafd0ff9b05a792a9ce2ab3346647f24653a0ad8d349c939`
 
@@ -3805,7 +3766,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4010,7 +3970,6 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:df9a11e88af70c2bcb92c0a22b01a43fa0e3bf0d376661f84cf8f1d0a0ee76b6`
 -	v2 Content-Length: 29.7 KB (29735 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:46:13 GMT
 
 #### `ed9f46c1480c3d90e13b96bf6cd4fe381d6d653a85644c5159a7bcb6af7ed7fb`
 
@@ -4081,7 +4040,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4286,7 +4244,6 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:df9a11e88af70c2bcb92c0a22b01a43fa0e3bf0d376661f84cf8f1d0a0ee76b6`
 -	v2 Content-Length: 29.7 KB (29735 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:46:13 GMT
 
 #### `604835c27a2ec656be2ffd639e53556c7bbf3bd0ed2c32dc494aa32602aa53c0`
 
@@ -4357,7 +4314,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4521,7 +4477,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -4561,7 +4516,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -4674,7 +4628,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4838,7 +4791,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -4878,7 +4830,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -4991,7 +4942,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5155,7 +5105,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5195,7 +5144,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -5259,7 +5207,6 @@ RUN set -x \
 -	Virtual Size: 41.0 MB (41020366 bytes)
 -	v2 Blob: `sha256:59fd5bf19e19653281d639a3e1ffa40eedc2b8487afb1f18737291e149ec3ae1`
 -	v2 Content-Length: 34.9 MB (34944354 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:52:35 GMT
 
 #### `3e71272aec71b92b5ce065615473306a64a3add551d7f54357b39838523b5921`
 
@@ -5309,7 +5256,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5473,7 +5419,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5513,7 +5458,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -5577,7 +5521,6 @@ RUN set -x \
 -	Virtual Size: 41.0 MB (41020366 bytes)
 -	v2 Blob: `sha256:59fd5bf19e19653281d639a3e1ffa40eedc2b8487afb1f18737291e149ec3ae1`
 -	v2 Content-Length: 34.9 MB (34944354 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:52:35 GMT
 
 #### `3e71272aec71b92b5ce065615473306a64a3add551d7f54357b39838523b5921`
 

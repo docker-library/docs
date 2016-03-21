@@ -34,7 +34,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -61,7 +60,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -182,7 +180,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 5.3 KB (5271 bytes)
 -	v2 Blob: `sha256:9643f0599420975256679b1e5733b76304a706b3f3dcda876debc27e134b6357`
 -	v2 Content-Length: 2.6 KB (2646 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:49:22 GMT
 
 #### `1a5fbccf7f451501a9910c3b673645c10bbe5ae78fa36633fac34accda3d16a5`
 
@@ -271,7 +268,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -298,7 +294,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -419,7 +414,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 5.3 KB (5271 bytes)
 -	v2 Blob: `sha256:9643f0599420975256679b1e5733b76304a706b3f3dcda876debc27e134b6357`
 -	v2 Content-Length: 2.6 KB (2646 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:49:22 GMT
 
 #### `1a5fbccf7f451501a9910c3b673645c10bbe5ae78fa36633fac34accda3d16a5`
 
@@ -508,7 +502,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -535,7 +528,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -656,7 +648,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 5.3 KB (5271 bytes)
 -	v2 Blob: `sha256:9643f0599420975256679b1e5733b76304a706b3f3dcda876debc27e134b6357`
 -	v2 Content-Length: 2.6 KB (2646 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:49:22 GMT
 
 #### `1a5fbccf7f451501a9910c3b673645c10bbe5ae78fa36633fac34accda3d16a5`
 
@@ -745,7 +736,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -772,7 +762,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -893,7 +882,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 5.3 KB (5271 bytes)
 -	v2 Blob: `sha256:9643f0599420975256679b1e5733b76304a706b3f3dcda876debc27e134b6357`
 -	v2 Content-Length: 2.6 KB (2646 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:49:22 GMT
 
 #### `1a5fbccf7f451501a9910c3b673645c10bbe5ae78fa36633fac34accda3d16a5`
 
@@ -982,7 +970,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1009,7 +996,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1218,7 +1204,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1245,7 +1230,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1454,7 +1438,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1481,7 +1464,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 328.3 KB (328304 bytes)
 -	v2 Blob: `sha256:7892d3a002f04a0eeac9c0c59ac9ba80c405917d85a3d030707930d3f9498e25`
 -	v2 Content-Length: 1.7 KB (1693 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:52:30 GMT
 
 #### `7510d6a284923395bb5e3d6194d96bd4ac50d28b740571784f74fad06ef767f9`
 
@@ -1495,7 +1477,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 373.0 KB (373000 bytes)
 -	v2 Blob: `sha256:9c7e19b2b14f723d2e2c25ce5023bbfae41b87a0ff53e0f132aa25cdac9c86d5`
 -	v2 Content-Length: 106.4 KB (106351 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:52:28 GMT
 
 #### `4e28e5f0cb96805db998ebcf5bac62a11a09466108daa9ddeb8dcaa75b6b28f3`
 
@@ -1566,7 +1547,6 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian wheez
 -	Virtual Size: 118.0 B
 -	v2 Blob: `sha256:1abf387004599fb92d7ab96e75e9625ab8ac7b83d2fab2ca07a517fc7cbbcc7b`
 -	v2 Content-Length: 321.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:52:16 GMT
 
 #### `b5b6bac1732e21c44b035b9a039776a21b7b87ff1c8e7022f54c9b1428f03f6f`
 
@@ -1692,7 +1672,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1719,7 +1698,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 328.3 KB (328304 bytes)
 -	v2 Blob: `sha256:7892d3a002f04a0eeac9c0c59ac9ba80c405917d85a3d030707930d3f9498e25`
 -	v2 Content-Length: 1.7 KB (1693 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:52:30 GMT
 
 #### `7510d6a284923395bb5e3d6194d96bd4ac50d28b740571784f74fad06ef767f9`
 
@@ -1733,7 +1711,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 373.0 KB (373000 bytes)
 -	v2 Blob: `sha256:9c7e19b2b14f723d2e2c25ce5023bbfae41b87a0ff53e0f132aa25cdac9c86d5`
 -	v2 Content-Length: 106.4 KB (106351 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:52:28 GMT
 
 #### `4e28e5f0cb96805db998ebcf5bac62a11a09466108daa9ddeb8dcaa75b6b28f3`
 
@@ -1804,7 +1781,6 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian wheez
 -	Virtual Size: 118.0 B
 -	v2 Blob: `sha256:1abf387004599fb92d7ab96e75e9625ab8ac7b83d2fab2ca07a517fc7cbbcc7b`
 -	v2 Content-Length: 321.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:52:16 GMT
 
 #### `b5b6bac1732e21c44b035b9a039776a21b7b87ff1c8e7022f54c9b1428f03f6f`
 
@@ -1930,7 +1906,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1957,7 +1932,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 328.3 KB (328304 bytes)
 -	v2 Blob: `sha256:7892d3a002f04a0eeac9c0c59ac9ba80c405917d85a3d030707930d3f9498e25`
 -	v2 Content-Length: 1.7 KB (1693 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:52:30 GMT
 
 #### `7510d6a284923395bb5e3d6194d96bd4ac50d28b740571784f74fad06ef767f9`
 
@@ -1971,7 +1945,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 373.0 KB (373000 bytes)
 -	v2 Blob: `sha256:9c7e19b2b14f723d2e2c25ce5023bbfae41b87a0ff53e0f132aa25cdac9c86d5`
 -	v2 Content-Length: 106.4 KB (106351 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:52:28 GMT
 
 #### `4e28e5f0cb96805db998ebcf5bac62a11a09466108daa9ddeb8dcaa75b6b28f3`
 
@@ -2042,7 +2015,6 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian wheez
 -	Virtual Size: 118.0 B
 -	v2 Blob: `sha256:1abf387004599fb92d7ab96e75e9625ab8ac7b83d2fab2ca07a517fc7cbbcc7b`
 -	v2 Content-Length: 321.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:52:16 GMT
 
 #### `b5b6bac1732e21c44b035b9a039776a21b7b87ff1c8e7022f54c9b1428f03f6f`
 
