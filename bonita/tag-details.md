@@ -146,6 +146,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 126.0 KB (125986 bytes)
 -	v2 Blob: `sha256:6fcaf8f95f9cd4ba74da47e1399e64cac2d64f787475df5e30f325e87102d757`
 -	v2 Content-Length: 114.8 KB (114792 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:30 GMT
 
 #### `f21a1dab18213cca213a94fee967c3dddcc9e4c58c397a2208f6cb70b8980298`
 
@@ -467,6 +468,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 126.0 KB (125986 bytes)
 -	v2 Blob: `sha256:6fcaf8f95f9cd4ba74da47e1399e64cac2d64f787475df5e30f325e87102d757`
 -	v2 Content-Length: 114.8 KB (114792 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:30 GMT
 
 #### `f21a1dab18213cca213a94fee967c3dddcc9e4c58c397a2208f6cb70b8980298`
 
@@ -610,6 +612,7 @@ COPY dir:1bf4f163091133a9e6147b81120df8e6bad4ab82e46b60adce16c1dd28ae7201 in /op
 -	Virtual Size: 35.4 KB (35398 bytes)
 -	v2 Blob: `sha256:dc343cc433a4527490ca3c4c17852b4d7dfb892bf77bd1797ab1ecdf7b4ed77f`
 -	v2 Content-Length: 5.7 KB (5723 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:15:41 GMT
 
 #### `b3cf9c7c6707dd6c56178231e92c8df7079652a6001ca6b550fb79eb273a9034`
 
@@ -788,6 +791,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 126.0 KB (125986 bytes)
 -	v2 Blob: `sha256:6fcaf8f95f9cd4ba74da47e1399e64cac2d64f787475df5e30f325e87102d757`
 -	v2 Content-Length: 114.8 KB (114792 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:30 GMT
 
 #### `f21a1dab18213cca213a94fee967c3dddcc9e4c58c397a2208f6cb70b8980298`
 
@@ -905,6 +909,7 @@ RUN wget -q http://download.forge.ow2.org/bonita/BonitaBPMCommunity-${BONITA_VER
 -	Virtual Size: 70.8 MB (70849692 bytes)
 -	v2 Blob: `sha256:12b4f427ec5c741b87da59c851d47cf23827ea8e626289ae908f92f6c95b78ae`
 -	v2 Content-Length: 70.6 MB (70583603 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:16:39 GMT
 
 #### `ab15699a3829f103ee0c384ea7dcc62fc43b9d296f6bb51e2883ea061912354b`
 
@@ -931,6 +936,7 @@ COPY dir:1f07f904e6255e5d7941e89b875e11d0ba41baf086df1314acc67bf0d02ac405 in /op
 -	Virtual Size: 36.1 KB (36134 bytes)
 -	v2 Blob: `sha256:bae0b74330f6799dbb8d5cccb22db766102be2c1821942b4bab4a99a44c06e43`
 -	v2 Content-Length: 5.8 KB (5801 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:16:29 GMT
 
 #### `08db45ca4f60ce589f71e4dcdcea11947dcedfcccb19a07e11d5715f094c5f39`
 
@@ -944,6 +950,7 @@ COPY dir:3d8bb8a36892f56dce1a6d478bab52fa906fd1761d0f993762a669780ab02b6f in /op
 -	Virtual Size: 7.3 KB (7334 bytes)
 -	v2 Blob: `sha256:df23d76f08741b2beb393fb878bf39ecc9913028b4a78c13b249adc1f9165a7b`
 -	v2 Content-Length: 2.2 KB (2198 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:16:26 GMT
 
 #### `ec4f14de9a65324eea26c5e27d7370e36113926f31a020b0cbfac7ded86cd31d`
 
@@ -1109,6 +1116,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 126.0 KB (125986 bytes)
 -	v2 Blob: `sha256:6fcaf8f95f9cd4ba74da47e1399e64cac2d64f787475df5e30f325e87102d757`
 -	v2 Content-Length: 114.8 KB (114792 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:30 GMT
 
 #### `f21a1dab18213cca213a94fee967c3dddcc9e4c58c397a2208f6cb70b8980298`
 
@@ -1430,6 +1438,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 126.0 KB (125986 bytes)
 -	v2 Blob: `sha256:6fcaf8f95f9cd4ba74da47e1399e64cac2d64f787475df5e30f325e87102d757`
 -	v2 Content-Length: 114.8 KB (114792 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:30 GMT
 
 #### `f21a1dab18213cca213a94fee967c3dddcc9e4c58c397a2208f6cb70b8980298`
 

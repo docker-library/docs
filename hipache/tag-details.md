@@ -91,6 +91,7 @@ RUN apt-get -y update
 -	Virtual Size: 21.6 MB (21624999 bytes)
 -	v2 Blob: `sha256:7ddabdf74d08f0ffc8e12df39ddaba6fcf0789870f270f04a56089ec6f00b5e2`
 -	v2 Content-Length: 21.5 MB (21492218 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:55:22 GMT
 
 #### `44530eaa5598cece5369a156a9788e65a49c07922f26b92d23050142cea39580`
 
@@ -117,6 +118,7 @@ RUN mkdir ./hipache
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6631a6b4be7e1250142c433202da92de41872674bea8614f094bbb2a1a1f2e0e`
 -	v2 Content-Length: 95.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:54:49 GMT
 
 #### `3da23dbf979c83117840b3821fd5df8476d1f3d7a5b95f83381eb45acfdc45a3`
 
@@ -143,6 +145,7 @@ RUN npm install -g ./hipache --production
 -	Virtual Size: 1.6 MB (1611403 bytes)
 -	v2 Blob: `sha256:65dab929035f48d778e1629c7280dce76fc3c872b4e613fa957bcf7661b8f2d3`
 -	v2 Content-Length: 579.5 KB (579516 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:54:44 GMT
 
 #### `70ad49f4099ea7d142ea1a7d7d69e5898fe29a8f92644b13f6f7876cb92c5084`
 
@@ -169,6 +172,7 @@ ADD file:a6192eeb65186b26b914a86f28baaf6db40bde5c3fb479c2aceca29e4e9e40a2 in /et
 -	Virtual Size: 456.0 B
 -	v2 Blob: `sha256:a30777bb3bae0126086081aa2fb122c211cdef262db99806509f66a07c20d10d`
 -	v2 Content-Length: 344.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:54:38 GMT
 
 #### `b56034d6506b817a28fcf7a2413f09fc9cb591883ab6756bcbe66c1698886530`
 
@@ -295,6 +299,7 @@ RUN apt-get -y update
 -	Virtual Size: 21.6 MB (21624999 bytes)
 -	v2 Blob: `sha256:7ddabdf74d08f0ffc8e12df39ddaba6fcf0789870f270f04a56089ec6f00b5e2`
 -	v2 Content-Length: 21.5 MB (21492218 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:55:22 GMT
 
 #### `44530eaa5598cece5369a156a9788e65a49c07922f26b92d23050142cea39580`
 
@@ -321,6 +326,7 @@ RUN mkdir ./hipache
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6631a6b4be7e1250142c433202da92de41872674bea8614f094bbb2a1a1f2e0e`
 -	v2 Content-Length: 95.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:54:49 GMT
 
 #### `64d8234f2f139f43587832c3f3eacfe99bbaa7bace8b9d0e441aad844a16b541`
 

@@ -41,6 +41,7 @@ ADD file:65515284d0bebdd40442eb13bb6a9e6596ff52e7a6c847363d82844ed88a169e in /
 -	Virtual Size: 7.7 MB (7733076 bytes)
 -	v2 Blob: `sha256:8c4568d4063684a72abcc5dbf16b74750d74ee600d4f520a5fad77308de9e195`
 -	v2 Content-Length: 3.5 MB (3542150 bytes)
+-	v2 Last-Modified: Mon, 04 Jan 2016 16:49:49 GMT
 
 #### `cb5c6009bac1a5b3cddddf031d6d37c18dd7a45fae51517b20bf5f27ffbd5714`
 
@@ -54,6 +55,7 @@ RUN rm /etc/rc3.d/S40-network
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e6cc72aea3e6702f07dc862041195b47deb7def56984860d1b4ff912fb458333`
 -	v2 Content-Length: 153.0 B
+-	v2 Last-Modified: Mon, 04 Jan 2016 21:28:36 GMT
 
 #### `7725b0aea0a1124fba2a0ee33cd6c73822cfdb78ab14fdb6c612325f5ed7e8e4`
 
@@ -116,6 +118,7 @@ ADD file:65515284d0bebdd40442eb13bb6a9e6596ff52e7a6c847363d82844ed88a169e in /
 -	Virtual Size: 7.7 MB (7733076 bytes)
 -	v2 Blob: `sha256:8c4568d4063684a72abcc5dbf16b74750d74ee600d4f520a5fad77308de9e195`
 -	v2 Content-Length: 3.5 MB (3542150 bytes)
+-	v2 Last-Modified: Mon, 04 Jan 2016 16:49:49 GMT
 
 #### `cb5c6009bac1a5b3cddddf031d6d37c18dd7a45fae51517b20bf5f27ffbd5714`
 
@@ -129,6 +132,7 @@ RUN rm /etc/rc3.d/S40-network
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e6cc72aea3e6702f07dc862041195b47deb7def56984860d1b4ff912fb458333`
 -	v2 Content-Length: 153.0 B
+-	v2 Last-Modified: Mon, 04 Jan 2016 21:28:36 GMT
 
 #### `7725b0aea0a1124fba2a0ee33cd6c73822cfdb78ab14fdb6c612325f5ed7e8e4`
 
@@ -217,6 +221,7 @@ RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit
 -	Virtual Size: 2.3 KB (2289 bytes)
 -	v2 Blob: `sha256:0fbcaa8da3adaf959c0d33cc62528831a3b21c5b27290f694d02e7f819efab1b`
 -	v2 Content-Length: 1.2 KB (1231 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 21:39:23 GMT
 
 #### `37e06986c438630213a63bc5e104d2558eb38d246ca1dcd45504187c2db2a951`
 

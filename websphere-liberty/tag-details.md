@@ -77,6 +77,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -243,6 +244,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -257,6 +259,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -344,6 +347,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -510,6 +514,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -524,6 +529,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -611,6 +617,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -777,6 +784,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -791,6 +799,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -830,6 +839,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 ## `websphere-liberty:8.5.5.9-common`
 
@@ -891,6 +901,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1057,6 +1068,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1071,6 +1083,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -1110,6 +1123,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 ## `websphere-liberty:webProfile6`
 
@@ -1171,6 +1185,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1337,6 +1352,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1351,6 +1367,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -1390,6 +1407,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `dec17fcaf3b09b95816d0669481c6888ec52e8798c4cd82e899ca363e3968242`
 
@@ -1403,6 +1421,7 @@ COPY file:1dae87a36d6862e59cd93d1216d4082e4ca1c5eb3b761e913863d7be88565b07 in /o
 -	Virtual Size: 336.0 B
 -	v2 Blob: `sha256:85b66447f12d6dce9d69a583cc456d81b6df3c480eba1eedfde55835d2fa2a8f`
 -	v2 Content-Length: 401.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:54 GMT
 
 #### `c51ceeffdc31f52f35e0dea5881d9b9735afd59d0c8d214007d1dca6aeefbdcc`
 
@@ -1479,6 +1498,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1645,6 +1665,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1659,6 +1680,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -1698,6 +1720,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `dec17fcaf3b09b95816d0669481c6888ec52e8798c4cd82e899ca363e3968242`
 
@@ -1711,6 +1734,7 @@ COPY file:1dae87a36d6862e59cd93d1216d4082e4ca1c5eb3b761e913863d7be88565b07 in /o
 -	Virtual Size: 336.0 B
 -	v2 Blob: `sha256:85b66447f12d6dce9d69a583cc456d81b6df3c480eba1eedfde55835d2fa2a8f`
 -	v2 Content-Length: 401.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:54 GMT
 
 #### `c51ceeffdc31f52f35e0dea5881d9b9735afd59d0c8d214007d1dca6aeefbdcc`
 
@@ -1787,6 +1811,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1953,6 +1978,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1967,6 +1993,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -2006,6 +2033,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -2033,6 +2061,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 ## `websphere-liberty:8.5.5.9-webProfile7`
 
@@ -2094,6 +2123,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2260,6 +2290,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -2274,6 +2305,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -2313,6 +2345,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -2340,6 +2373,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 ## `websphere-liberty:javaee7`
 
@@ -2401,6 +2435,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2567,6 +2602,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -2581,6 +2617,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -2620,6 +2657,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -2647,6 +2685,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 #### `352f74ef0d2f5b11a0806c728849a1cb8a29ba25e07f46b3bb1e868b7be54803`
 
@@ -2660,6 +2699,7 @@ COPY file:d5f14068deb99ace05ddf572baecd0a7f6fe9eff21ae6f72087a3177ac4bad17 in /o
 -	Virtual Size: 457.0 B
 -	v2 Blob: `sha256:0ab6d6d16eba53beb18dd3ef6848adeacbb1928890ee0cab1f4879b3c03f2376`
 -	v2 Content-Length: 470.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:16 GMT
 
 #### `f4da57ee44f5d20b553ea68e7c13d85868f3d68204cfe7cc838b897e7dcc80c8`
 
@@ -2735,6 +2775,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2901,6 +2942,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -2915,6 +2957,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -2954,6 +2997,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -2981,6 +3025,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 #### `352f74ef0d2f5b11a0806c728849a1cb8a29ba25e07f46b3bb1e868b7be54803`
 
@@ -2994,6 +3039,7 @@ COPY file:d5f14068deb99ace05ddf572baecd0a7f6fe9eff21ae6f72087a3177ac4bad17 in /o
 -	Virtual Size: 457.0 B
 -	v2 Blob: `sha256:0ab6d6d16eba53beb18dd3ef6848adeacbb1928890ee0cab1f4879b3c03f2376`
 -	v2 Content-Length: 470.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:16 GMT
 
 #### `f4da57ee44f5d20b553ea68e7c13d85868f3d68204cfe7cc838b897e7dcc80c8`
 
@@ -3069,6 +3115,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -3235,6 +3282,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -3249,6 +3297,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -3288,6 +3337,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -3315,6 +3365,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 #### `352f74ef0d2f5b11a0806c728849a1cb8a29ba25e07f46b3bb1e868b7be54803`
 
@@ -3328,6 +3379,7 @@ COPY file:d5f14068deb99ace05ddf572baecd0a7f6fe9eff21ae6f72087a3177ac4bad17 in /o
 -	Virtual Size: 457.0 B
 -	v2 Blob: `sha256:0ab6d6d16eba53beb18dd3ef6848adeacbb1928890ee0cab1f4879b3c03f2376`
 -	v2 Content-Length: 470.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:16 GMT
 
 #### `f4da57ee44f5d20b553ea68e7c13d85868f3d68204cfe7cc838b897e7dcc80c8`
 
@@ -3403,6 +3455,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -3569,6 +3622,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -3583,6 +3637,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -3622,6 +3677,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -3649,6 +3705,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 #### `352f74ef0d2f5b11a0806c728849a1cb8a29ba25e07f46b3bb1e868b7be54803`
 
@@ -3662,6 +3719,7 @@ COPY file:d5f14068deb99ace05ddf572baecd0a7f6fe9eff21ae6f72087a3177ac4bad17 in /o
 -	Virtual Size: 457.0 B
 -	v2 Blob: `sha256:0ab6d6d16eba53beb18dd3ef6848adeacbb1928890ee0cab1f4879b3c03f2376`
 -	v2 Content-Length: 470.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:16 GMT
 
 #### `f4da57ee44f5d20b553ea68e7c13d85868f3d68204cfe7cc838b897e7dcc80c8`
 
@@ -3737,6 +3795,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -3903,6 +3962,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -3917,6 +3977,7 @@ RUN /opt/ibm/wlp/bin/server create\
 -	Virtual Size: 218.0 B
 -	v2 Blob: `sha256:49195e7ad1cce9a01b994d37c41175272247cb521ab9b89a2c6cafbe74b37d31`
 -	v2 Content-Length: 612.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:15 GMT
 
 #### `096166c35aabd251846a32e721fb9f8ede95598c6c2fa9d6d108a44b6a241935`
 
@@ -3956,6 +4017,7 @@ RUN installUtility install --acceptLicense collectiveMember-1.0 monitor-1.0 webC
 -	Virtual Size: 36.6 MB (36577407 bytes)
 -	v2 Blob: `sha256:afd8b4abd2650f085b00f26b4c730eb0af26be25a2dbf9d0e6ddf3744f278089`
 -	v2 Content-Length: 32.0 MB (32017848 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:54:22 GMT
 
 #### `4351aae7e650710ed7d3611252e61494141a61655e09ab5988ef758a3e0172ec`
 
@@ -3983,6 +4045,7 @@ RUN installUtility install --acceptLicense defaultServer\
 -	Virtual Size: 44.5 MB (44530140 bytes)
 -	v2 Blob: `sha256:86c3973b3221bc2a8b2a746459d8b466da254e473932ba09e6f69a91e0a76f7f`
 -	v2 Content-Length: 39.3 MB (39331571 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:55:21 GMT
 
 #### `352f74ef0d2f5b11a0806c728849a1cb8a29ba25e07f46b3bb1e868b7be54803`
 
@@ -3996,6 +4059,7 @@ COPY file:d5f14068deb99ace05ddf572baecd0a7f6fe9eff21ae6f72087a3177ac4bad17 in /o
 -	Virtual Size: 457.0 B
 -	v2 Blob: `sha256:0ab6d6d16eba53beb18dd3ef6848adeacbb1928890ee0cab1f4879b3c03f2376`
 -	v2 Content-Length: 470.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:56:16 GMT
 
 #### `f4da57ee44f5d20b553ea68e7c13d85868f3d68204cfe7cc838b897e7dcc80c8`
 
@@ -4071,6 +4135,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -4112,6 +4177,7 @@ RUN apt-get update\
 -	Virtual Size: 6.4 MB (6409055 bytes)
 -	v2 Blob: `sha256:0c4aaa2a3f0a86a90157e4e5eb48c4a8eae61f2bbb5f635140e9a07f51f4c605`
 -	v2 Content-Length: 2.6 MB (2578154 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:24:59 GMT
 
 #### `fb6ad3fdc546b7a343723318b1ce7b2cacd93a3a04fe12e8ca07c77ff4d3ac77`
 
@@ -4155,6 +4221,7 @@ RUN TARGET_ARCH=$(uname -m)\
 -	Virtual Size: 171.6 MB (171648669 bytes)
 -	v2 Blob: `sha256:9cd1a6e074c72116c75ec3c3c572c2b50f58bd2a1fce89a8e9349e02bb36c40d`
 -	v2 Content-Length: 109.7 MB (109701492 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:24:43 GMT
 
 #### `5c83ce0bcc8e6f709de44a6ff366c55b0cd1e57d9ecf4b1dd727abefd52d88a1`
 

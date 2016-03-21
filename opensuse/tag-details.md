@@ -31,6 +31,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f2da88b7a66ec55db9b9a1e28f3589c5d1a30af6a4cf2609298967a487fd9210`
 
@@ -67,6 +68,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f2da88b7a66ec55db9b9a1e28f3589c5d1a30af6a4cf2609298967a487fd9210`
 
@@ -103,6 +105,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d81e08fa7819755c792657e19525f55bf27000b368d37878a7694f47589e112c`
 
@@ -139,6 +142,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d81e08fa7819755c792657e19525f55bf27000b368d37878a7694f47589e112c`
 
@@ -175,6 +179,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d81e08fa7819755c792657e19525f55bf27000b368d37878a7694f47589e112c`
 
@@ -211,6 +216,7 @@ MAINTAINER Flavio Castelli <fcastelli@suse.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `80530af1ad33b0f43a4279492e2382f709d8d34e0e387a5f209601a9f93a9489`
 

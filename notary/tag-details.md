@@ -42,6 +42,7 @@ EXPOSE 4443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f4c763117d00ed1ef414e988e1571675abfd31830079387f007b9990dcafc56`
 
@@ -94,6 +95,7 @@ WORKDIR /notary/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1ef4dcaf591b11ee64072fc893de108e8db3b4151226355e7c72a1e416691b3`
 
@@ -120,6 +122,7 @@ USER [notary]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7f783108a3e28e4f5823d7da058e1846577b325e29c14b280c93750f100ad02`
 
@@ -133,6 +136,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/se
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c5aba40b0c7e91a0a3638dac538a421adabc1205a8d291751249462a7281ea4`
 
@@ -146,6 +150,7 @@ ENTRYPOINT &{["entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `712386e51b3f35002fe8ee52db7ba8f4f947547f3cc1295e4dae7cd8f3567b12`
 
@@ -159,6 +164,7 @@ CMD ["notary-server" "--help"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `notary:server-0.2.0`
 
@@ -195,6 +201,7 @@ EXPOSE 4443/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f4c763117d00ed1ef414e988e1571675abfd31830079387f007b9990dcafc56`
 
@@ -247,6 +254,7 @@ WORKDIR /notary/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1ef4dcaf591b11ee64072fc893de108e8db3b4151226355e7c72a1e416691b3`
 
@@ -273,6 +281,7 @@ USER [notary]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7f783108a3e28e4f5823d7da058e1846577b325e29c14b280c93750f100ad02`
 
@@ -286,6 +295,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/se
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8c5aba40b0c7e91a0a3638dac538a421adabc1205a8d291751249462a7281ea4`
 
@@ -299,6 +309,7 @@ ENTRYPOINT &{["entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `712386e51b3f35002fe8ee52db7ba8f4f947547f3cc1295e4dae7cd8f3567b12`
 
@@ -312,6 +323,7 @@ CMD ["notary-server" "--help"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `notary:signer`
 
@@ -348,6 +360,7 @@ EXPOSE 4444/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0140f028ab404835c6bb55751c6c446b3763eb98f1c41b7abdfdd6c531ee1eb0`
 
@@ -361,6 +374,7 @@ EXPOSE 7899/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f8decf1a9651bfb64a9c25c3989b2ee525411f3b5faa1e1d0a832cdb0a111d01`
 
@@ -413,6 +427,7 @@ WORKDIR /notary/signer
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8493fff9258b569ab472f0c3e113d77903060fe30be88eb7413392e3d4a04edd`
 
@@ -439,6 +454,7 @@ USER [notary]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14b2f3f1924ffb6e611e921ef17ca546c74cd839f7e15d9cc8c844f6fd7476e6`
 
@@ -452,6 +468,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/si
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5e55e7ed4f793e98cde2de4d0acd150c630ce6af6fc1798248c5b857aa4b5ae9`
 
@@ -465,6 +482,7 @@ ENTRYPOINT &{["entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2bc0b004a447ad9bf660cbe299e1b2755b14e080c0bcdca80a3af9bc9cda7fef`
 
@@ -478,6 +496,7 @@ CMD ["notary-signer" "--help"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `notary:signer-0.2.0`
 
@@ -514,6 +533,7 @@ EXPOSE 4444/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0140f028ab404835c6bb55751c6c446b3763eb98f1c41b7abdfdd6c531ee1eb0`
 
@@ -527,6 +547,7 @@ EXPOSE 7899/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f8decf1a9651bfb64a9c25c3989b2ee525411f3b5faa1e1d0a832cdb0a111d01`
 
@@ -579,6 +600,7 @@ WORKDIR /notary/signer
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8493fff9258b569ab472f0c3e113d77903060fe30be88eb7413392e3d4a04edd`
 
@@ -605,6 +627,7 @@ USER [notary]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14b2f3f1924ffb6e611e921ef17ca546c74cd839f7e15d9cc8c844f6fd7476e6`
 
@@ -618,6 +641,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/si
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5e55e7ed4f793e98cde2de4d0acd150c630ce6af6fc1798248c5b857aa4b5ae9`
 
@@ -631,6 +655,7 @@ ENTRYPOINT &{["entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2bc0b004a447ad9bf660cbe299e1b2755b14e080c0bcdca80a3af9bc9cda7fef`
 
@@ -644,3 +669,4 @@ CMD ["notary-signer" "--help"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

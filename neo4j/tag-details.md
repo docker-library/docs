@@ -1117,6 +1117,7 @@ RUN curl --fail --silent --show-error --location --output neo4j.tar.gz $NEO4J_UR
 -	Virtual Size: 69.5 MB (69545030 bytes)
 -	v2 Blob: `sha256:4afddf24c299d362383467bc6077317a21ed4e9d42bbd03f2011b107efe820ee`
 -	v2 Content-Length: 61.5 MB (61530601 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:21:09 GMT
 
 #### `24cb2810f9289f2be1ade1cb70902aa3e04f122e13c402b22ac2d27239db6036`
 
@@ -1518,6 +1519,7 @@ RUN curl --fail --silent --show-error --location --output neo4j.tar.gz $NEO4J_UR
 -	Virtual Size: 69.5 MB (69545030 bytes)
 -	v2 Blob: `sha256:4afddf24c299d362383467bc6077317a21ed4e9d42bbd03f2011b107efe820ee`
 -	v2 Content-Length: 61.5 MB (61530601 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:21:09 GMT
 
 #### `24cb2810f9289f2be1ade1cb70902aa3e04f122e13c402b22ac2d27239db6036`
 

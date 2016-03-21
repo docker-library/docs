@@ -127,6 +127,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `30790f0b429789b3db12d3f0f5c6730983a3c03a477596a947cb1044b8ed4c98`
 
@@ -222,6 +223,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 59.9 KB (59855 bytes)
 -	v2 Blob: `sha256:01951d626d2c024c13d3e6afcd46d95f3e9d4f30a42b1d67ee551390ec87173c`
 -	v2 Content-Length: 20.1 KB (20118 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:48 GMT
 
 #### `23690012b4ce8922a8a4e9916ebe3540d98ffe7b48456b487c094edd5e4d38a8`
 
@@ -372,6 +374,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `30790f0b429789b3db12d3f0f5c6730983a3c03a477596a947cb1044b8ed4c98`
 
@@ -467,6 +470,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 59.9 KB (59855 bytes)
 -	v2 Blob: `sha256:01951d626d2c024c13d3e6afcd46d95f3e9d4f30a42b1d67ee551390ec87173c`
 -	v2 Content-Length: 20.1 KB (20118 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:48 GMT
 
 #### `23690012b4ce8922a8a4e9916ebe3540d98ffe7b48456b487c094edd5e4d38a8`
 
@@ -617,6 +621,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `1ee99845051154ac134ddd9794cdc43b435a5bd2620445bf514730688364dd4c`
 
@@ -630,6 +635,7 @@ RUN echo 'deb http://www.apache.org/dist/cassandra/debian 22x main' >> /etc/apt/
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e8e072404d3bcf425a5f3f399b0af60f2582f623fe3a9fcbddf57b6abc827fe9`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:05 GMT
 
 #### `7d9c8a59a8235847cca5631a601d7598276f74c1540462372aeb48e8fc3021c0`
 
@@ -712,6 +718,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 63.6 KB (63642 bytes)
 -	v2 Blob: `sha256:414af59054bfc6b43508f61bb764f84ceed0e5f61242f00f24a945a08dd6b90e`
 -	v2 Content-Length: 21.0 KB (21025 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:50:21 GMT
 
 #### `744a31c337f34bc15b9f62a98ba1897fd2fa5510807e28ffb227be946f539904`
 
@@ -862,6 +869,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `1ee99845051154ac134ddd9794cdc43b435a5bd2620445bf514730688364dd4c`
 
@@ -875,6 +883,7 @@ RUN echo 'deb http://www.apache.org/dist/cassandra/debian 22x main' >> /etc/apt/
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e8e072404d3bcf425a5f3f399b0af60f2582f623fe3a9fcbddf57b6abc827fe9`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:05 GMT
 
 #### `7d9c8a59a8235847cca5631a601d7598276f74c1540462372aeb48e8fc3021c0`
 
@@ -957,6 +966,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 63.6 KB (63642 bytes)
 -	v2 Blob: `sha256:414af59054bfc6b43508f61bb764f84ceed0e5f61242f00f24a945a08dd6b90e`
 -	v2 Content-Length: 21.0 KB (21025 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:50:21 GMT
 
 #### `744a31c337f34bc15b9f62a98ba1897fd2fa5510807e28ffb227be946f539904`
 
@@ -1107,6 +1117,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `1ee99845051154ac134ddd9794cdc43b435a5bd2620445bf514730688364dd4c`
 
@@ -1120,6 +1131,7 @@ RUN echo 'deb http://www.apache.org/dist/cassandra/debian 22x main' >> /etc/apt/
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e8e072404d3bcf425a5f3f399b0af60f2582f623fe3a9fcbddf57b6abc827fe9`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:05 GMT
 
 #### `7d9c8a59a8235847cca5631a601d7598276f74c1540462372aeb48e8fc3021c0`
 
@@ -1202,6 +1214,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 63.6 KB (63642 bytes)
 -	v2 Blob: `sha256:414af59054bfc6b43508f61bb764f84ceed0e5f61242f00f24a945a08dd6b90e`
 -	v2 Content-Length: 21.0 KB (21025 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:50:21 GMT
 
 #### `744a31c337f34bc15b9f62a98ba1897fd2fa5510807e28ffb227be946f539904`
 
@@ -1352,6 +1365,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `3b073e92fd0e71b69baa712c9f8274423ad11ca94beab939bbb1b647371d62f9`
 
@@ -1393,6 +1407,7 @@ RUN apt-get update \
 -	Virtual Size: 250.0 MB (250044353 bytes)
 -	v2 Blob: `sha256:9267e8fdabceffe9a18396de29635761803d20b43b03196570ebd6a5b4ab2a08`
 -	v2 Content-Length: 104.4 MB (104423016 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:23:29 GMT
 
 #### `bf2a37d0366d6fbf19dd656fee3f7628daa0b3f9512aaff1c91a650216d3b6dd`
 
@@ -1597,6 +1612,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `3b073e92fd0e71b69baa712c9f8274423ad11ca94beab939bbb1b647371d62f9`
 
@@ -1638,6 +1654,7 @@ RUN apt-get update \
 -	Virtual Size: 250.0 MB (250044353 bytes)
 -	v2 Blob: `sha256:9267e8fdabceffe9a18396de29635761803d20b43b03196570ebd6a5b4ab2a08`
 -	v2 Content-Length: 104.4 MB (104423016 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:23:29 GMT
 
 #### `bf2a37d0366d6fbf19dd656fee3f7628daa0b3f9512aaff1c91a650216d3b6dd`
 
@@ -1842,6 +1859,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `5ba5636e826cb306851e2fe981ecde505db91ee72a5a97202fe88accbdcb531f`
 
@@ -2087,6 +2105,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `5ba5636e826cb306851e2fe981ecde505db91ee72a5a97202fe88accbdcb531f`
 
@@ -2332,6 +2351,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `7b7a61beb67ddcef11a3a493488557656c3ac91003aa2a10d7a10a58828623a2`
 
@@ -2577,6 +2597,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `7b7a61beb67ddcef11a3a493488557656c3ac91003aa2a10d7a10a58828623a2`
 
@@ -2822,6 +2843,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `550a742ae1a9a84d1145c12d2cf2bbc133dd2903a271f9ae65e36f9f64099e7c`
 
@@ -3067,6 +3089,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `550a742ae1a9a84d1145c12d2cf2bbc133dd2903a271f9ae65e36f9f64099e7c`
 
@@ -3312,6 +3335,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 514A2AD631A57
 -	Virtual Size: 2.8 KB (2762 bytes)
 -	v2 Blob: `sha256:6494badb6c0cbe277a59cb8e8ee085bf383a9cbcb8de5f46c3e18bc81535a5ac`
 -	v2 Content-Length: 3.1 KB (3051 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:07 GMT
 
 #### `550a742ae1a9a84d1145c12d2cf2bbc133dd2903a271f9ae65e36f9f64099e7c`
 

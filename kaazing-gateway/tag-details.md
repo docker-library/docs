@@ -27,6 +27,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -210,6 +211,7 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -223,6 +225,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `204f55ff248428c44f5fb6ff755c567d2af1c2c95d437d3e0f2549e2c94d9d71`
 
@@ -380,6 +383,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -563,6 +567,7 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -576,6 +581,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `204f55ff248428c44f5fb6ff755c567d2af1c2c95d437d3e0f2549e2c94d9d71`
 

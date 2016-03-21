@@ -329,6 +329,7 @@ RUN lein
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e333bb525345b7ee7ca382b5e1c58a0ff0e39f69c617a25e9683b2171feb48bc`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:27 GMT
 
 ## `clojure:onbuild`
 
@@ -652,6 +653,7 @@ RUN lein
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e333bb525345b7ee7ca382b5e1c58a0ff0e39f69c617a25e9683b2171feb48bc`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:27 GMT
 
 #### `d5e391fa223c345771da88b6569c3429aaf21cfa789a32cd26baf99094f10c0e`
 
@@ -1053,6 +1055,7 @@ RUN lein
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e333bb525345b7ee7ca382b5e1c58a0ff0e39f69c617a25e9683b2171feb48bc`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:27 GMT
 
 ## `clojure:lein-2.5.3-onbuild`
 
@@ -1376,6 +1379,7 @@ RUN lein
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e333bb525345b7ee7ca382b5e1c58a0ff0e39f69c617a25e9683b2171feb48bc`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:27 GMT
 
 #### `d5e391fa223c345771da88b6569c3429aaf21cfa789a32cd26baf99094f10c0e`
 

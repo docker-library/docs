@@ -98,6 +98,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -137,6 +138,7 @@ COPY file:64d436903fe0e304b48d37e1c6021813b9996ed62041a3149ab98298461376d6 in /e
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:61783e9d71db8268d186eddc1b7e30ff76225d151fbb75d0be98bf01e31808bb`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:01:20 GMT
 
 #### `4ec51c3cba035c6763118bf571b6ddd35035a0b27d3ffa9c187be55101041ed3`
 
@@ -176,6 +178,7 @@ RUN apt-get install -y curl
 -	Virtual Size: 1.7 MB (1676995 bytes)
 -	v2 Blob: `sha256:ed8f314ffe657406caf795a2bfc9798b097fb524df3c420e5dc600ec98e7bbf1`
 -	v2 Content-Length: 471.3 KB (471308 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:01:14 GMT
 
 #### `9d561114f3f18d65e86e7206ec736a5dfb0c71025a7d99fdf96231e7fb30446f`
 
@@ -232,6 +235,7 @@ RUN /usr/local/zend/bin/php composer.phar update
 -	Virtual Size: 34.2 MB (34220851 bytes)
 -	v2 Blob: `sha256:4985eaa66163cbea055ffdb85aac17153d78ff29eda06e26a685fc2e1ed716fc`
 -	v2 Content-Length: 7.9 MB (7931307 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:01:02 GMT
 
 #### `a32cdbb74565c0d4dbd048b8da606f4197fb740612874a46b1b05abfa4435992`
 
@@ -258,6 +262,7 @@ COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /us
 -	Virtual Size: 2.9 KB (2934 bytes)
 -	v2 Blob: `sha256:4be5827c05b824a454bd3b0582d437e6e9fab74c2c8cfa59c9f3904420d29021`
 -	v2 Content-Length: 2.5 KB (2511 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:00:54 GMT
 
 #### `386f882aaa88b583263e6985250693c76c53d98f2b63debe67ce948040b81f8e`
 
@@ -449,6 +454,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -488,6 +494,7 @@ COPY file:64d436903fe0e304b48d37e1c6021813b9996ed62041a3149ab98298461376d6 in /e
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:61783e9d71db8268d186eddc1b7e30ff76225d151fbb75d0be98bf01e31808bb`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:01:20 GMT
 
 #### `4ec51c3cba035c6763118bf571b6ddd35035a0b27d3ffa9c187be55101041ed3`
 
@@ -527,6 +534,7 @@ RUN apt-get install -y curl
 -	Virtual Size: 1.7 MB (1676995 bytes)
 -	v2 Blob: `sha256:ed8f314ffe657406caf795a2bfc9798b097fb524df3c420e5dc600ec98e7bbf1`
 -	v2 Content-Length: 471.3 KB (471308 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:01:14 GMT
 
 #### `9d561114f3f18d65e86e7206ec736a5dfb0c71025a7d99fdf96231e7fb30446f`
 
@@ -583,6 +591,7 @@ RUN /usr/local/zend/bin/php composer.phar update
 -	Virtual Size: 34.2 MB (34220851 bytes)
 -	v2 Blob: `sha256:4985eaa66163cbea055ffdb85aac17153d78ff29eda06e26a685fc2e1ed716fc`
 -	v2 Content-Length: 7.9 MB (7931307 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:01:02 GMT
 
 #### `a32cdbb74565c0d4dbd048b8da606f4197fb740612874a46b1b05abfa4435992`
 
@@ -609,6 +618,7 @@ COPY dir:aa08ab021f5378fe0200877c962ab250c916b2eb99222d44481d7d323df449a3 in /us
 -	Virtual Size: 2.9 KB (2934 bytes)
 -	v2 Blob: `sha256:4be5827c05b824a454bd3b0582d437e6e9fab74c2c8cfa59c9f3904420d29021`
 -	v2 Content-Length: 2.5 KB (2511 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:00:54 GMT
 
 #### `386f882aaa88b583263e6985250693c76c53d98f2b63debe67ce948040b81f8e`
 
@@ -800,6 +810,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -921,6 +932,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581791 bytes)
 -	v2 Blob: `sha256:7b4fd3af022812f8ed4fe79d25f467739aeed88a74343291eb5bc08bd9c4a794`
 -	v2 Content-Length: 426.5 KB (426462 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:57 GMT
 
 #### `957666f5a716bcaa0ccf796d7b566f33208a7e198aa1230c6374e279be8fc99a`
 
@@ -934,6 +946,7 @@ RUN /usr/local/zend/bin/php composer.phar update
 -	Virtual Size: 34.2 MB (34220851 bytes)
 -	v2 Blob: `sha256:4e345b2f66f90c23d9235f1e4af5941ed3854a326f682704b9a5be140d8135bd`
 -	v2 Content-Length: 7.9 MB (7931350 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:53 GMT
 
 #### `f4d1402baf0ecd48ad29cf6691261c778335dc10abb9c49dfa54d28f69883b81`
 
@@ -1151,6 +1164,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -1272,6 +1286,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581791 bytes)
 -	v2 Blob: `sha256:7b4fd3af022812f8ed4fe79d25f467739aeed88a74343291eb5bc08bd9c4a794`
 -	v2 Content-Length: 426.5 KB (426462 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:57 GMT
 
 #### `957666f5a716bcaa0ccf796d7b566f33208a7e198aa1230c6374e279be8fc99a`
 
@@ -1285,6 +1300,7 @@ RUN /usr/local/zend/bin/php composer.phar update
 -	Virtual Size: 34.2 MB (34220851 bytes)
 -	v2 Blob: `sha256:4e345b2f66f90c23d9235f1e4af5941ed3854a326f682704b9a5be140d8135bd`
 -	v2 Content-Length: 7.9 MB (7931350 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:53 GMT
 
 #### `f4d1402baf0ecd48ad29cf6691261c778335dc10abb9c49dfa54d28f69883b81`
 
@@ -1502,6 +1518,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -1623,6 +1640,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581791 bytes)
 -	v2 Blob: `sha256:7b4fd3af022812f8ed4fe79d25f467739aeed88a74343291eb5bc08bd9c4a794`
 -	v2 Content-Length: 426.5 KB (426462 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:57 GMT
 
 #### `957666f5a716bcaa0ccf796d7b566f33208a7e198aa1230c6374e279be8fc99a`
 
@@ -1636,6 +1654,7 @@ RUN /usr/local/zend/bin/php composer.phar update
 -	Virtual Size: 34.2 MB (34220851 bytes)
 -	v2 Blob: `sha256:4e345b2f66f90c23d9235f1e4af5941ed3854a326f682704b9a5be140d8135bd`
 -	v2 Content-Length: 7.9 MB (7931350 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:53 GMT
 
 #### `f4d1402baf0ecd48ad29cf6691261c778335dc10abb9c49dfa54d28f69883b81`
 
@@ -1853,6 +1872,7 @@ COPY file:f92232ab09cbbaedba2ac7d52508bce591dd60565dc09ab8c4cd17afff7179e6 in /u
 -	Virtual Size: 2.3 KB (2320 bytes)
 -	v2 Blob: `sha256:9afbc19d0c8a58dd5882b12572ad2eb46fcfb31f03c2fd4c42f7843af2afebce`
 -	v2 Content-Length: 1.0 KB (1007 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:07:37 GMT
 
 #### `63f19913d7187e1d6820ad1cf03616fd9d81fe575f7317112f27acfa1531c37f`
 
@@ -1866,6 +1886,7 @@ COPY file:b41779e1f854d0cbd9f908d776d0b3a06d6d01a6cbd70347c053a657292d7cae in /u
 -	Virtual Size: 29.6 KB (29576 bytes)
 -	v2 Blob: `sha256:ba4d80d6fddb3c65665731a99c4296fa8802f01752412476b62d1971003c4ece`
 -	v2 Content-Length: 11.7 KB (11704 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:07:35 GMT
 
 #### `350f25aae3cb3e2b0f5a438b92a69d679159d353e0abdaef2d5db8cd4d53cf4f`
 
@@ -2122,6 +2143,7 @@ COPY file:f92232ab09cbbaedba2ac7d52508bce591dd60565dc09ab8c4cd17afff7179e6 in /u
 -	Virtual Size: 2.3 KB (2320 bytes)
 -	v2 Blob: `sha256:9afbc19d0c8a58dd5882b12572ad2eb46fcfb31f03c2fd4c42f7843af2afebce`
 -	v2 Content-Length: 1.0 KB (1007 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:07:37 GMT
 
 #### `63f19913d7187e1d6820ad1cf03616fd9d81fe575f7317112f27acfa1531c37f`
 
@@ -2135,6 +2157,7 @@ COPY file:b41779e1f854d0cbd9f908d776d0b3a06d6d01a6cbd70347c053a657292d7cae in /u
 -	Virtual Size: 29.6 KB (29576 bytes)
 -	v2 Blob: `sha256:ba4d80d6fddb3c65665731a99c4296fa8802f01752412476b62d1971003c4ece`
 -	v2 Content-Length: 11.7 KB (11704 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:07:35 GMT
 
 #### `350f25aae3cb3e2b0f5a438b92a69d679159d353e0abdaef2d5db8cd4d53cf4f`
 
@@ -2391,6 +2414,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `e2ddebfc44efea9ed988106874982ead3d286b5c4c0902b5e94ce0b9811ec29b`
 
@@ -2512,6 +2536,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581797 bytes)
 -	v2 Blob: `sha256:691dcc24fac678a4bb57b336756b477fca5d39114ebcdc6e5fa2d7858b9b6932`
 -	v2 Content-Length: 426.7 KB (426709 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:08:19 GMT
 
 #### `981ed8555b660fc169d3cd5b6dfc603d6ae8cb9ffc6b3045cc046a23dfd20631`
 
@@ -2564,6 +2589,7 @@ RUN rm /var/www/html/index.html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:55762d319efa6b3d56c154ae848b45de510a6c63d090df0a8f010587be57a2b9`
 -	v2 Content-Length: 169.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:08:04 GMT
 
 #### `59bf3b75f5692b93458ce37235fda77f4a325ee7ca0da51671a8a54e7a92e71b`
 
@@ -2742,6 +2768,7 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1
 -	Virtual Size: 25.8 KB (25830 bytes)
 -	v2 Blob: `sha256:b241d3ce43f470336a6c11e17ae1c8a1ecc7d7b4c25fafaa8457714756bcf9cf`
 -	v2 Content-Length: 13.1 KB (13055 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:02:46 GMT
 
 #### `b56d3cec2117cc83a03a0610dd94aeca35b8e58c3928faaf8b6b252b28a06cdc`
 
@@ -2863,6 +2890,7 @@ RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" 
 -	Virtual Size: 1.6 MB (1581791 bytes)
 -	v2 Blob: `sha256:7b4fd3af022812f8ed4fe79d25f467739aeed88a74343291eb5bc08bd9c4a794`
 -	v2 Content-Length: 426.5 KB (426462 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:57 GMT
 
 #### `957666f5a716bcaa0ccf796d7b566f33208a7e198aa1230c6374e279be8fc99a`
 
@@ -2876,6 +2904,7 @@ RUN /usr/local/zend/bin/php composer.phar update
 -	Virtual Size: 34.2 MB (34220851 bytes)
 -	v2 Blob: `sha256:4e345b2f66f90c23d9235f1e4af5941ed3854a326f682704b9a5be140d8135bd`
 -	v2 Content-Length: 7.9 MB (7931350 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:03:53 GMT
 
 #### `f4d1402baf0ecd48ad29cf6691261c778335dc10abb9c49dfa54d28f69883b81`
 

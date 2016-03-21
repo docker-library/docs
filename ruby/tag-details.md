@@ -70,6 +70,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -185,6 +186,7 @@ ENV RUBY_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fad09c55a948eeae8de96966608d67ab04d7b48d6c5048c1d8adf2c1be475add`
 
@@ -198,6 +200,7 @@ ENV RUBY_VERSION=2.1.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `408144632f3ee11251b1915061d0785529c07a2b9ccc70330e0685728c575cd5`
 
@@ -211,6 +214,7 @@ ENV RUBY_DOWNLOAD_SHA256=afd832b8d5ecb2e3e1477ec6a9408fdf9898ee73e4c5df17a2b2cb3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3709c4cbe2e540b52e31b5e5e865dd1b9171593dd9f0c94313ebc6bcdec41689`
 
@@ -224,6 +228,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09b1ffdc64a8ae5aa111132de7f6be1e34b70d0640ae738214b7258ea4e150e3`
 
@@ -272,6 +277,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `681be98f9cb54307fa4a97dcf41ea4aa2807a58a43dc698465ad2915116da0c5`
 
@@ -298,6 +304,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c725342295e98c27f2e4f3183b84eefb9473789393119637a8e8cd05416e2be`
 
@@ -311,6 +318,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6494481b872b5c356f19f5a37c2026ed413443787601ad61e8e71d68393f86ee`
 
@@ -324,6 +332,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6bb660120bc76467207f14c793bc09f44af9dfeccb7879e17813f9f12aabf0a6`
 
@@ -351,6 +360,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.1`
 
@@ -387,6 +397,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -502,6 +513,7 @@ ENV RUBY_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fad09c55a948eeae8de96966608d67ab04d7b48d6c5048c1d8adf2c1be475add`
 
@@ -515,6 +527,7 @@ ENV RUBY_VERSION=2.1.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `408144632f3ee11251b1915061d0785529c07a2b9ccc70330e0685728c575cd5`
 
@@ -528,6 +541,7 @@ ENV RUBY_DOWNLOAD_SHA256=afd832b8d5ecb2e3e1477ec6a9408fdf9898ee73e4c5df17a2b2cb3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3709c4cbe2e540b52e31b5e5e865dd1b9171593dd9f0c94313ebc6bcdec41689`
 
@@ -541,6 +555,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09b1ffdc64a8ae5aa111132de7f6be1e34b70d0640ae738214b7258ea4e150e3`
 
@@ -589,6 +604,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `681be98f9cb54307fa4a97dcf41ea4aa2807a58a43dc698465ad2915116da0c5`
 
@@ -615,6 +631,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c725342295e98c27f2e4f3183b84eefb9473789393119637a8e8cd05416e2be`
 
@@ -628,6 +645,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6494481b872b5c356f19f5a37c2026ed413443787601ad61e8e71d68393f86ee`
 
@@ -641,6 +659,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6bb660120bc76467207f14c793bc09f44af9dfeccb7879e17813f9f12aabf0a6`
 
@@ -668,6 +687,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.1.8-onbuild`
 
@@ -704,6 +724,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -819,6 +840,7 @@ ENV RUBY_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fad09c55a948eeae8de96966608d67ab04d7b48d6c5048c1d8adf2c1be475add`
 
@@ -832,6 +854,7 @@ ENV RUBY_VERSION=2.1.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `408144632f3ee11251b1915061d0785529c07a2b9ccc70330e0685728c575cd5`
 
@@ -845,6 +868,7 @@ ENV RUBY_DOWNLOAD_SHA256=afd832b8d5ecb2e3e1477ec6a9408fdf9898ee73e4c5df17a2b2cb3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3709c4cbe2e540b52e31b5e5e865dd1b9171593dd9f0c94313ebc6bcdec41689`
 
@@ -858,6 +882,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09b1ffdc64a8ae5aa111132de7f6be1e34b70d0640ae738214b7258ea4e150e3`
 
@@ -906,6 +931,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `681be98f9cb54307fa4a97dcf41ea4aa2807a58a43dc698465ad2915116da0c5`
 
@@ -932,6 +958,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c725342295e98c27f2e4f3183b84eefb9473789393119637a8e8cd05416e2be`
 
@@ -945,6 +972,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6494481b872b5c356f19f5a37c2026ed413443787601ad61e8e71d68393f86ee`
 
@@ -958,6 +986,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6bb660120bc76467207f14c793bc09f44af9dfeccb7879e17813f9f12aabf0a6`
 
@@ -985,6 +1014,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0db30230acf88f063c68de3683e6a888e189a241185cc82841427c583a167488`
 
@@ -998,6 +1028,7 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:30d58d5573d4338a93399345ded82c1fd8cdfa00461b767ec134b808b95c2208`
 -	v2 Content-Length: 186.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:46:38 GMT
 
 #### `1078591e913f2c2aabaee87c804b9d477671dedfffc1dc7cdf3861e093fdffb3`
 
@@ -1024,6 +1055,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7bee7afe841a9612de7a3d74839db68dd7913bcb66f0cf9cc9364f3fa6ca840`
 
@@ -1037,6 +1069,7 @@ ONBUILD COPY Gemfile /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `682f2eb3afa03391afaee276b05a9b2e9077d0158ccceec2da32f14af2dd4778`
 
@@ -1050,6 +1083,7 @@ ONBUILD COPY Gemfile.lock /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef2b035c7a5fb9d0fe5014e6401d98a5d804f078052ccf51568ce9df5589e5bf`
 
@@ -1063,6 +1097,7 @@ ONBUILD RUN bundle install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0e0a63da39b9028b37bd17c5b0bca1f12ddc83df52684e8b00c2cbddc627fe82`
 
@@ -1076,6 +1111,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.1-onbuild`
 
@@ -1112,6 +1148,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1227,6 +1264,7 @@ ENV RUBY_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fad09c55a948eeae8de96966608d67ab04d7b48d6c5048c1d8adf2c1be475add`
 
@@ -1240,6 +1278,7 @@ ENV RUBY_VERSION=2.1.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `408144632f3ee11251b1915061d0785529c07a2b9ccc70330e0685728c575cd5`
 
@@ -1253,6 +1292,7 @@ ENV RUBY_DOWNLOAD_SHA256=afd832b8d5ecb2e3e1477ec6a9408fdf9898ee73e4c5df17a2b2cb3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3709c4cbe2e540b52e31b5e5e865dd1b9171593dd9f0c94313ebc6bcdec41689`
 
@@ -1266,6 +1306,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09b1ffdc64a8ae5aa111132de7f6be1e34b70d0640ae738214b7258ea4e150e3`
 
@@ -1314,6 +1355,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `681be98f9cb54307fa4a97dcf41ea4aa2807a58a43dc698465ad2915116da0c5`
 
@@ -1340,6 +1382,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c725342295e98c27f2e4f3183b84eefb9473789393119637a8e8cd05416e2be`
 
@@ -1353,6 +1396,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6494481b872b5c356f19f5a37c2026ed413443787601ad61e8e71d68393f86ee`
 
@@ -1366,6 +1410,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6bb660120bc76467207f14c793bc09f44af9dfeccb7879e17813f9f12aabf0a6`
 
@@ -1393,6 +1438,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0db30230acf88f063c68de3683e6a888e189a241185cc82841427c583a167488`
 
@@ -1406,6 +1452,7 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:30d58d5573d4338a93399345ded82c1fd8cdfa00461b767ec134b808b95c2208`
 -	v2 Content-Length: 186.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:46:38 GMT
 
 #### `1078591e913f2c2aabaee87c804b9d477671dedfffc1dc7cdf3861e093fdffb3`
 
@@ -1432,6 +1479,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7bee7afe841a9612de7a3d74839db68dd7913bcb66f0cf9cc9364f3fa6ca840`
 
@@ -1445,6 +1493,7 @@ ONBUILD COPY Gemfile /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `682f2eb3afa03391afaee276b05a9b2e9077d0158ccceec2da32f14af2dd4778`
 
@@ -1458,6 +1507,7 @@ ONBUILD COPY Gemfile.lock /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef2b035c7a5fb9d0fe5014e6401d98a5d804f078052ccf51568ce9df5589e5bf`
 
@@ -1471,6 +1521,7 @@ ONBUILD RUN bundle install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0e0a63da39b9028b37bd17c5b0bca1f12ddc83df52684e8b00c2cbddc627fe82`
 
@@ -1484,6 +1535,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.1.8-slim`
 
@@ -1520,6 +1572,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae7c36464f9aadc2e2b481dcd9b58962aedb3b183bd40d56bac44464899c8ba4`
 
@@ -1574,6 +1627,7 @@ ENV RUBY_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3361efb5878ed713730f983258e105aedfd87bf46ff092dedf9092eb40945f06`
 
@@ -1587,6 +1641,7 @@ ENV RUBY_VERSION=2.1.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `106c76afdd63d5b3b5a92a816ddee8f1cc45a20014cae2714022a0e4440a0868`
 
@@ -1600,6 +1655,7 @@ ENV RUBY_DOWNLOAD_SHA256=afd832b8d5ecb2e3e1477ec6a9408fdf9898ee73e4c5df17a2b2cb3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1cf2652484871e71865847febde576c01f292cb2c05711f09a54b1c173222400`
 
@@ -1613,6 +1669,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `98989860fcf7dcd88c9a2ed813bf0ff6a6a082afe591a3ec3491317b3c8a1d16`
 
@@ -1657,6 +1714,7 @@ RUN set -ex \
 -	Virtual Size: 112.2 MB (112178690 bytes)
 -	v2 Blob: `sha256:858cbe0b307b9321c8cc5f92904149755f5f88a136ba5d6ddd04bc360723ff4d`
 -	v2 Content-Length: 32.3 MB (32329373 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:47:22 GMT
 
 #### `4eb451e0373665b3b517053f068800ba66e0d8a93b9784f74104fe5f5f8aa5c7`
 
@@ -1670,6 +1728,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85e2b3c5a96462da659d1519379b866e3a02dacbf570c54937412e5168162db5`
 
@@ -1696,6 +1755,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `375f9135e7a630602ba215813d200fe0e10f0a1a7add37a3bcd12e9860b836ed`
 
@@ -1709,6 +1769,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8cf09b1e0ad677fb2cb05ecc98d9409671b8e21a645754061849196c17da00c7`
 
@@ -1722,6 +1783,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d65758f1dc11c4532f86a971554ea74520a06b793ed0e49c376cc999a9e5d68`
 
@@ -1749,6 +1811,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.1-slim`
 
@@ -1785,6 +1848,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae7c36464f9aadc2e2b481dcd9b58962aedb3b183bd40d56bac44464899c8ba4`
 
@@ -1839,6 +1903,7 @@ ENV RUBY_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3361efb5878ed713730f983258e105aedfd87bf46ff092dedf9092eb40945f06`
 
@@ -1852,6 +1917,7 @@ ENV RUBY_VERSION=2.1.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `106c76afdd63d5b3b5a92a816ddee8f1cc45a20014cae2714022a0e4440a0868`
 
@@ -1865,6 +1931,7 @@ ENV RUBY_DOWNLOAD_SHA256=afd832b8d5ecb2e3e1477ec6a9408fdf9898ee73e4c5df17a2b2cb3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1cf2652484871e71865847febde576c01f292cb2c05711f09a54b1c173222400`
 
@@ -1878,6 +1945,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `98989860fcf7dcd88c9a2ed813bf0ff6a6a082afe591a3ec3491317b3c8a1d16`
 
@@ -1922,6 +1990,7 @@ RUN set -ex \
 -	Virtual Size: 112.2 MB (112178690 bytes)
 -	v2 Blob: `sha256:858cbe0b307b9321c8cc5f92904149755f5f88a136ba5d6ddd04bc360723ff4d`
 -	v2 Content-Length: 32.3 MB (32329373 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:47:22 GMT
 
 #### `4eb451e0373665b3b517053f068800ba66e0d8a93b9784f74104fe5f5f8aa5c7`
 
@@ -1935,6 +2004,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85e2b3c5a96462da659d1519379b866e3a02dacbf570c54937412e5168162db5`
 
@@ -1961,6 +2031,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `375f9135e7a630602ba215813d200fe0e10f0a1a7add37a3bcd12e9860b836ed`
 
@@ -1974,6 +2045,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8cf09b1e0ad677fb2cb05ecc98d9409671b8e21a645754061849196c17da00c7`
 
@@ -1987,6 +2059,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d65758f1dc11c4532f86a971554ea74520a06b793ed0e49c376cc999a9e5d68`
 
@@ -2014,6 +2087,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.1.8-alpine`
 
@@ -2037,6 +2111,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `168d6480f3ac1c26e33d0838e04ec06b3a5477553b96584eaa9881dfea76011c`
 
@@ -2067,6 +2142,7 @@ ENV RUBY_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee2259ba254879e621b38a8982c1f2ed39db810bbb1194282f8a81861b97b3ff`
 
@@ -2080,6 +2156,7 @@ ENV RUBY_VERSION=2.1.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fed2e196f6ca6594f51bb947f034e54db5a16a952aef95e731e74f9740314423`
 
@@ -2093,6 +2170,7 @@ ENV RUBY_DOWNLOAD_SHA256=afd832b8d5ecb2e3e1477ec6a9408fdf9898ee73e4c5df17a2b2cb3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f95ebf15ffc4631c0e5471c63d42a08a992fd23f55c204aa136165367cf5fb8`
 
@@ -2106,6 +2184,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41432f21db4e83c1edfa049b197a12ac1726150f22e7b831d4d3353690b48dcd`
 
@@ -2188,6 +2267,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5db96948839b2a12d2c593441f24847428fd222b02aea796c82e13f2470d5c68`
 
@@ -2214,6 +2294,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b43ac7f5da15f069e04c2c3ff36415ebf17cdf89d6b596a7753d5bf1b9e174b2`
 
@@ -2227,6 +2308,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7814652f4228d1e4270ef12e0cf50b167469ee52feb03d664142ee134e22bf40`
 
@@ -2240,6 +2322,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0afc414ebcdceeb08274e2c02b67a5f7d96e2991825359c1b42621ab128281a`
 
@@ -2267,6 +2350,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.1-alpine`
 
@@ -2290,6 +2374,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `168d6480f3ac1c26e33d0838e04ec06b3a5477553b96584eaa9881dfea76011c`
 
@@ -2320,6 +2405,7 @@ ENV RUBY_MAJOR=2.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee2259ba254879e621b38a8982c1f2ed39db810bbb1194282f8a81861b97b3ff`
 
@@ -2333,6 +2419,7 @@ ENV RUBY_VERSION=2.1.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fed2e196f6ca6594f51bb947f034e54db5a16a952aef95e731e74f9740314423`
 
@@ -2346,6 +2433,7 @@ ENV RUBY_DOWNLOAD_SHA256=afd832b8d5ecb2e3e1477ec6a9408fdf9898ee73e4c5df17a2b2cb3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f95ebf15ffc4631c0e5471c63d42a08a992fd23f55c204aa136165367cf5fb8`
 
@@ -2359,6 +2447,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41432f21db4e83c1edfa049b197a12ac1726150f22e7b831d4d3353690b48dcd`
 
@@ -2441,6 +2530,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5db96948839b2a12d2c593441f24847428fd222b02aea796c82e13f2470d5c68`
 
@@ -2467,6 +2557,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b43ac7f5da15f069e04c2c3ff36415ebf17cdf89d6b596a7753d5bf1b9e174b2`
 
@@ -2480,6 +2571,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7814652f4228d1e4270ef12e0cf50b167469ee52feb03d664142ee134e22bf40`
 
@@ -2493,6 +2585,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0afc414ebcdceeb08274e2c02b67a5f7d96e2991825359c1b42621ab128281a`
 
@@ -2520,6 +2613,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.2.4`
 
@@ -2556,6 +2650,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2671,6 +2766,7 @@ ENV RUBY_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8b371bff3b41bd7e9f1ee1a2d288a53a0a785c2027659ec7f91abee525dcea9b`
 
@@ -2684,6 +2780,7 @@ ENV RUBY_VERSION=2.2.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96f6aa3d4c982741ab1a2d5947992ad7d0e1ee9bb90fb436641c85b6321b664f`
 
@@ -2697,6 +2794,7 @@ ENV RUBY_DOWNLOAD_SHA256=b6eff568b48e0fda76e5a36333175df049b204e91217aa32a65153c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa75dd4b706ded5c0805c11fe55ee517684c94089af76fc05206f7bb973e80b4`
 
@@ -2710,6 +2808,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51b2210b24e48112c0b7b925443ce5a9dfa3533d26297a9fa70e8b37cb756249`
 
@@ -2758,6 +2857,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49ae76723f2891751a82faa171af2c4a26d129b4985ed816b941aaff1c8a4b50`
 
@@ -2784,6 +2884,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d43200502235a3bcd25d127dde47e4001f61fe221f5dea57a44110cbadfa3f5d`
 
@@ -2797,6 +2898,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d426aeabe65a96764ba460583ff34ba21e88b825621251fd09338ad5b803d390`
 
@@ -2810,6 +2912,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `363d461b69363c7ae1083c03259dd0f5f15bd523e52af4ae626242ebe41e115e`
 
@@ -2837,6 +2940,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.2`
 
@@ -2873,6 +2977,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2988,6 +3093,7 @@ ENV RUBY_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8b371bff3b41bd7e9f1ee1a2d288a53a0a785c2027659ec7f91abee525dcea9b`
 
@@ -3001,6 +3107,7 @@ ENV RUBY_VERSION=2.2.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96f6aa3d4c982741ab1a2d5947992ad7d0e1ee9bb90fb436641c85b6321b664f`
 
@@ -3014,6 +3121,7 @@ ENV RUBY_DOWNLOAD_SHA256=b6eff568b48e0fda76e5a36333175df049b204e91217aa32a65153c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa75dd4b706ded5c0805c11fe55ee517684c94089af76fc05206f7bb973e80b4`
 
@@ -3027,6 +3135,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51b2210b24e48112c0b7b925443ce5a9dfa3533d26297a9fa70e8b37cb756249`
 
@@ -3075,6 +3184,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49ae76723f2891751a82faa171af2c4a26d129b4985ed816b941aaff1c8a4b50`
 
@@ -3101,6 +3211,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d43200502235a3bcd25d127dde47e4001f61fe221f5dea57a44110cbadfa3f5d`
 
@@ -3114,6 +3225,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d426aeabe65a96764ba460583ff34ba21e88b825621251fd09338ad5b803d390`
 
@@ -3127,6 +3239,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `363d461b69363c7ae1083c03259dd0f5f15bd523e52af4ae626242ebe41e115e`
 
@@ -3154,6 +3267,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.2.4-onbuild`
 
@@ -3190,6 +3304,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3305,6 +3420,7 @@ ENV RUBY_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8b371bff3b41bd7e9f1ee1a2d288a53a0a785c2027659ec7f91abee525dcea9b`
 
@@ -3318,6 +3434,7 @@ ENV RUBY_VERSION=2.2.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96f6aa3d4c982741ab1a2d5947992ad7d0e1ee9bb90fb436641c85b6321b664f`
 
@@ -3331,6 +3448,7 @@ ENV RUBY_DOWNLOAD_SHA256=b6eff568b48e0fda76e5a36333175df049b204e91217aa32a65153c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa75dd4b706ded5c0805c11fe55ee517684c94089af76fc05206f7bb973e80b4`
 
@@ -3344,6 +3462,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51b2210b24e48112c0b7b925443ce5a9dfa3533d26297a9fa70e8b37cb756249`
 
@@ -3392,6 +3511,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49ae76723f2891751a82faa171af2c4a26d129b4985ed816b941aaff1c8a4b50`
 
@@ -3418,6 +3538,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d43200502235a3bcd25d127dde47e4001f61fe221f5dea57a44110cbadfa3f5d`
 
@@ -3431,6 +3552,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d426aeabe65a96764ba460583ff34ba21e88b825621251fd09338ad5b803d390`
 
@@ -3444,6 +3566,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `363d461b69363c7ae1083c03259dd0f5f15bd523e52af4ae626242ebe41e115e`
 
@@ -3471,6 +3594,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d91476aab79b9299f6728a8fb7800ec2694e9a74d51eb1ec809ee89ce68e41f6`
 
@@ -3510,6 +3634,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7ecafafc3756178a03a6cc4c707a6393f03c0045ded68d9052eaa3dcadd9a875`
 
@@ -3523,6 +3648,7 @@ ONBUILD COPY Gemfile /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c5613a05fde2a581609159a7febd1e0b47b44aa6df852856f2c25c5db2c5df2`
 
@@ -3536,6 +3662,7 @@ ONBUILD COPY Gemfile.lock /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a8c437f1cf0293778cde2134ec81e1e0242fc367f426467e3b1bda2cdb057417`
 
@@ -3549,6 +3676,7 @@ ONBUILD RUN bundle install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dddaf49a18817c0df89f441ee85009a5b0e46d10e5e21c7d85ae85696ff99314`
 
@@ -3562,6 +3690,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.2-onbuild`
 
@@ -3598,6 +3727,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3713,6 +3843,7 @@ ENV RUBY_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8b371bff3b41bd7e9f1ee1a2d288a53a0a785c2027659ec7f91abee525dcea9b`
 
@@ -3726,6 +3857,7 @@ ENV RUBY_VERSION=2.2.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `96f6aa3d4c982741ab1a2d5947992ad7d0e1ee9bb90fb436641c85b6321b664f`
 
@@ -3739,6 +3871,7 @@ ENV RUBY_DOWNLOAD_SHA256=b6eff568b48e0fda76e5a36333175df049b204e91217aa32a65153c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa75dd4b706ded5c0805c11fe55ee517684c94089af76fc05206f7bb973e80b4`
 
@@ -3752,6 +3885,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51b2210b24e48112c0b7b925443ce5a9dfa3533d26297a9fa70e8b37cb756249`
 
@@ -3800,6 +3934,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49ae76723f2891751a82faa171af2c4a26d129b4985ed816b941aaff1c8a4b50`
 
@@ -3826,6 +3961,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d43200502235a3bcd25d127dde47e4001f61fe221f5dea57a44110cbadfa3f5d`
 
@@ -3839,6 +3975,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d426aeabe65a96764ba460583ff34ba21e88b825621251fd09338ad5b803d390`
 
@@ -3852,6 +3989,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `363d461b69363c7ae1083c03259dd0f5f15bd523e52af4ae626242ebe41e115e`
 
@@ -3879,6 +4017,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d91476aab79b9299f6728a8fb7800ec2694e9a74d51eb1ec809ee89ce68e41f6`
 
@@ -3918,6 +4057,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7ecafafc3756178a03a6cc4c707a6393f03c0045ded68d9052eaa3dcadd9a875`
 
@@ -3931,6 +4071,7 @@ ONBUILD COPY Gemfile /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c5613a05fde2a581609159a7febd1e0b47b44aa6df852856f2c25c5db2c5df2`
 
@@ -3944,6 +4085,7 @@ ONBUILD COPY Gemfile.lock /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a8c437f1cf0293778cde2134ec81e1e0242fc367f426467e3b1bda2cdb057417`
 
@@ -3957,6 +4099,7 @@ ONBUILD RUN bundle install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dddaf49a18817c0df89f441ee85009a5b0e46d10e5e21c7d85ae85696ff99314`
 
@@ -3970,6 +4113,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.2.4-slim`
 
@@ -4006,6 +4150,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae7c36464f9aadc2e2b481dcd9b58962aedb3b183bd40d56bac44464899c8ba4`
 
@@ -4060,6 +4205,7 @@ ENV RUBY_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f1c350546a6e576461894cdf1d9cc142b0df22e7a2e6860e761d2688c151f19`
 
@@ -4073,6 +4219,7 @@ ENV RUBY_VERSION=2.2.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `52b78d05513279aa719033b2fae3e5374c53c0130db40d083bbe0a8eeb1bb9fa`
 
@@ -4086,6 +4233,7 @@ ENV RUBY_DOWNLOAD_SHA256=b6eff568b48e0fda76e5a36333175df049b204e91217aa32a65153c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `178283a73257784035c0d87462bd9af8f4b789a32b5029aa6f9cd6caafa439e3`
 
@@ -4099,6 +4247,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `63a2f2db3f801ad7ecce83e28a2048764f898d8580637ece85ba9965f31afdeb`
 
@@ -4156,6 +4305,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c260f414044955a4970af187a7c7b9c32fcb6384c9354be1468a54912520f4e8`
 
@@ -4182,6 +4332,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f77750fe8792e45be536bd49ac005fbec198b1308803794e12ecafe8429b03f2`
 
@@ -4195,6 +4346,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `574c5f7981da97abd6f9a06a9e1f90af7958f62d300a565e505c334777c2c2f5`
 
@@ -4208,6 +4360,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f454055a81c28d2672d5f4627de8de20b53ebe60eb1fa056446fe732e6b102ee`
 
@@ -4222,6 +4375,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -4235,6 +4389,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.2-slim`
 
@@ -4271,6 +4426,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae7c36464f9aadc2e2b481dcd9b58962aedb3b183bd40d56bac44464899c8ba4`
 
@@ -4325,6 +4481,7 @@ ENV RUBY_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f1c350546a6e576461894cdf1d9cc142b0df22e7a2e6860e761d2688c151f19`
 
@@ -4338,6 +4495,7 @@ ENV RUBY_VERSION=2.2.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `52b78d05513279aa719033b2fae3e5374c53c0130db40d083bbe0a8eeb1bb9fa`
 
@@ -4351,6 +4509,7 @@ ENV RUBY_DOWNLOAD_SHA256=b6eff568b48e0fda76e5a36333175df049b204e91217aa32a65153c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `178283a73257784035c0d87462bd9af8f4b789a32b5029aa6f9cd6caafa439e3`
 
@@ -4364,6 +4523,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `63a2f2db3f801ad7ecce83e28a2048764f898d8580637ece85ba9965f31afdeb`
 
@@ -4421,6 +4581,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c260f414044955a4970af187a7c7b9c32fcb6384c9354be1468a54912520f4e8`
 
@@ -4447,6 +4608,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f77750fe8792e45be536bd49ac005fbec198b1308803794e12ecafe8429b03f2`
 
@@ -4460,6 +4622,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `574c5f7981da97abd6f9a06a9e1f90af7958f62d300a565e505c334777c2c2f5`
 
@@ -4473,6 +4636,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f454055a81c28d2672d5f4627de8de20b53ebe60eb1fa056446fe732e6b102ee`
 
@@ -4487,6 +4651,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -4500,6 +4665,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.2.4-alpine`
 
@@ -4523,6 +4689,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `168d6480f3ac1c26e33d0838e04ec06b3a5477553b96584eaa9881dfea76011c`
 
@@ -4553,6 +4720,7 @@ ENV RUBY_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bab25dc1ce78f871cddcbd8cde20676ab413a31b946f9a8e8b72541d7e6002f3`
 
@@ -4566,6 +4734,7 @@ ENV RUBY_VERSION=2.2.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ecc0dcacbdb9ac08b01113d243faa3d9d03f71389e1732fb47cf976d14ab7c3`
 
@@ -4579,6 +4748,7 @@ ENV RUBY_DOWNLOAD_SHA256=b6eff568b48e0fda76e5a36333175df049b204e91217aa32a65153c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a5bccea76d3ccb6835cbba96ec52960e07273c24d51b1888eb25c972bfa3a8b`
 
@@ -4592,6 +4762,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35c9194dddb6b3ff1ef008f1a1fecf660f42929925ffc1bf278958eed2df196d`
 
@@ -4674,6 +4845,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00fa8c45e2857f2093e4448b6c73d011f858de8e4bc839e81ba75559ed38c810`
 
@@ -4687,6 +4859,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3dc3362b01c925a37088a6b0b0e7c9d29b8438c09427e6209b0c8c0ce3785c9b`
 -	v2 Content-Length: 522.8 KB (522777 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:50:22 GMT
 
 #### `e022cfaddf6c194392a1983ad890db45decee782f2dcd32c1fb3fe587f822819`
 
@@ -4700,6 +4873,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6413e9eff225d3891d22da1ddec5e2d266717761c1bd2446925c5157d7ff6276`
 
@@ -4713,6 +4887,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `def1d8a446cf5700b2da719fc46a9cb8cbb054a9cf112de9608353b528c723d5`
 
@@ -4726,6 +4901,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dedc870ec492c0d25b81afae530297c694d199e7910426b247e486a187bad89c`
 
@@ -4753,6 +4929,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.2-alpine`
 
@@ -4776,6 +4953,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `168d6480f3ac1c26e33d0838e04ec06b3a5477553b96584eaa9881dfea76011c`
 
@@ -4806,6 +4984,7 @@ ENV RUBY_MAJOR=2.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bab25dc1ce78f871cddcbd8cde20676ab413a31b946f9a8e8b72541d7e6002f3`
 
@@ -4819,6 +4998,7 @@ ENV RUBY_VERSION=2.2.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ecc0dcacbdb9ac08b01113d243faa3d9d03f71389e1732fb47cf976d14ab7c3`
 
@@ -4832,6 +5012,7 @@ ENV RUBY_DOWNLOAD_SHA256=b6eff568b48e0fda76e5a36333175df049b204e91217aa32a65153c
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a5bccea76d3ccb6835cbba96ec52960e07273c24d51b1888eb25c972bfa3a8b`
 
@@ -4845,6 +5026,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35c9194dddb6b3ff1ef008f1a1fecf660f42929925ffc1bf278958eed2df196d`
 
@@ -4927,6 +5109,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00fa8c45e2857f2093e4448b6c73d011f858de8e4bc839e81ba75559ed38c810`
 
@@ -4940,6 +5123,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3dc3362b01c925a37088a6b0b0e7c9d29b8438c09427e6209b0c8c0ce3785c9b`
 -	v2 Content-Length: 522.8 KB (522777 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:50:22 GMT
 
 #### `e022cfaddf6c194392a1983ad890db45decee782f2dcd32c1fb3fe587f822819`
 
@@ -4953,6 +5137,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6413e9eff225d3891d22da1ddec5e2d266717761c1bd2446925c5157d7ff6276`
 
@@ -4966,6 +5151,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `def1d8a446cf5700b2da719fc46a9cb8cbb054a9cf112de9608353b528c723d5`
 
@@ -4979,6 +5165,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dedc870ec492c0d25b81afae530297c694d199e7910426b247e486a187bad89c`
 
@@ -5006,6 +5193,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.3.0`
 
@@ -5042,6 +5230,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5157,6 +5346,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42d29d58749a5dd127b4b5831e5fac22a10e92b8dea776bcea8ca6dc2391bea2`
 
@@ -5170,6 +5360,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1d8b316fa396de817dd5ccd84a6f9945e563066677832bc0a56a5800c1330ef`
 
@@ -5183,6 +5374,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f19863a5b6241cc308d31334d7fcd5a121f6941fae2008b39f2d948374463122`
 
@@ -5196,6 +5388,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `395c8a5d9c0f7248c8c1630af8f69bd24c490a686e8289cbb43f0bdf896f993b`
 
@@ -5231,6 +5424,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -5244,6 +5438,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf28ddc1ec672bd3573bf6eb3046f7891a4e901a397f7551f3a392f7d8373c26`
 
@@ -5257,6 +5452,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -5270,6 +5466,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51fe8751ee1177cf1ab19ea5c40c333c23db8371c3bbb116e87952bc033f2c7f`
 
@@ -5283,6 +5480,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44450d5ecc7687ed263a0c7c43dc8474450a05b2c822ea31b5f20190e42bb1b3`
 
@@ -5296,6 +5494,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c8df721aaf8e1ecb281b9f66fa6928757966e6863de20c35181ef5d33d83456`
 
@@ -5310,6 +5509,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37483f6b7eb538ee56a13d77062f7d43a7a2a4f3aae68521a63f3c2a0454bddd`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:03 GMT
 
 #### `09dc14677e49198e9eefcf6b64da5c7e9dcc4b81dfdcd99d1d0e56442ee23b34`
 
@@ -5323,6 +5523,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.3`
 
@@ -5359,6 +5560,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5474,6 +5676,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42d29d58749a5dd127b4b5831e5fac22a10e92b8dea776bcea8ca6dc2391bea2`
 
@@ -5487,6 +5690,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1d8b316fa396de817dd5ccd84a6f9945e563066677832bc0a56a5800c1330ef`
 
@@ -5500,6 +5704,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f19863a5b6241cc308d31334d7fcd5a121f6941fae2008b39f2d948374463122`
 
@@ -5513,6 +5718,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `395c8a5d9c0f7248c8c1630af8f69bd24c490a686e8289cbb43f0bdf896f993b`
 
@@ -5548,6 +5754,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -5561,6 +5768,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf28ddc1ec672bd3573bf6eb3046f7891a4e901a397f7551f3a392f7d8373c26`
 
@@ -5574,6 +5782,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -5587,6 +5796,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51fe8751ee1177cf1ab19ea5c40c333c23db8371c3bbb116e87952bc033f2c7f`
 
@@ -5600,6 +5810,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44450d5ecc7687ed263a0c7c43dc8474450a05b2c822ea31b5f20190e42bb1b3`
 
@@ -5613,6 +5824,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c8df721aaf8e1ecb281b9f66fa6928757966e6863de20c35181ef5d33d83456`
 
@@ -5627,6 +5839,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37483f6b7eb538ee56a13d77062f7d43a7a2a4f3aae68521a63f3c2a0454bddd`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:03 GMT
 
 #### `09dc14677e49198e9eefcf6b64da5c7e9dcc4b81dfdcd99d1d0e56442ee23b34`
 
@@ -5640,6 +5853,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2`
 
@@ -5676,6 +5890,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5791,6 +6006,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42d29d58749a5dd127b4b5831e5fac22a10e92b8dea776bcea8ca6dc2391bea2`
 
@@ -5804,6 +6020,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1d8b316fa396de817dd5ccd84a6f9945e563066677832bc0a56a5800c1330ef`
 
@@ -5817,6 +6034,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f19863a5b6241cc308d31334d7fcd5a121f6941fae2008b39f2d948374463122`
 
@@ -5830,6 +6048,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `395c8a5d9c0f7248c8c1630af8f69bd24c490a686e8289cbb43f0bdf896f993b`
 
@@ -5865,6 +6084,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -5878,6 +6098,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf28ddc1ec672bd3573bf6eb3046f7891a4e901a397f7551f3a392f7d8373c26`
 
@@ -5891,6 +6112,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -5904,6 +6126,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51fe8751ee1177cf1ab19ea5c40c333c23db8371c3bbb116e87952bc033f2c7f`
 
@@ -5917,6 +6140,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44450d5ecc7687ed263a0c7c43dc8474450a05b2c822ea31b5f20190e42bb1b3`
 
@@ -5930,6 +6154,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c8df721aaf8e1ecb281b9f66fa6928757966e6863de20c35181ef5d33d83456`
 
@@ -5944,6 +6169,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37483f6b7eb538ee56a13d77062f7d43a7a2a4f3aae68521a63f3c2a0454bddd`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:03 GMT
 
 #### `09dc14677e49198e9eefcf6b64da5c7e9dcc4b81dfdcd99d1d0e56442ee23b34`
 
@@ -5957,6 +6183,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:latest`
 
@@ -5993,6 +6220,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6108,6 +6336,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42d29d58749a5dd127b4b5831e5fac22a10e92b8dea776bcea8ca6dc2391bea2`
 
@@ -6121,6 +6350,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1d8b316fa396de817dd5ccd84a6f9945e563066677832bc0a56a5800c1330ef`
 
@@ -6134,6 +6364,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f19863a5b6241cc308d31334d7fcd5a121f6941fae2008b39f2d948374463122`
 
@@ -6147,6 +6378,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `395c8a5d9c0f7248c8c1630af8f69bd24c490a686e8289cbb43f0bdf896f993b`
 
@@ -6182,6 +6414,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -6195,6 +6428,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf28ddc1ec672bd3573bf6eb3046f7891a4e901a397f7551f3a392f7d8373c26`
 
@@ -6208,6 +6442,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -6221,6 +6456,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51fe8751ee1177cf1ab19ea5c40c333c23db8371c3bbb116e87952bc033f2c7f`
 
@@ -6234,6 +6470,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44450d5ecc7687ed263a0c7c43dc8474450a05b2c822ea31b5f20190e42bb1b3`
 
@@ -6247,6 +6484,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c8df721aaf8e1ecb281b9f66fa6928757966e6863de20c35181ef5d33d83456`
 
@@ -6261,6 +6499,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37483f6b7eb538ee56a13d77062f7d43a7a2a4f3aae68521a63f3c2a0454bddd`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:03 GMT
 
 #### `09dc14677e49198e9eefcf6b64da5c7e9dcc4b81dfdcd99d1d0e56442ee23b34`
 
@@ -6274,6 +6513,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.3.0-onbuild`
 
@@ -6310,6 +6550,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6425,6 +6666,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42d29d58749a5dd127b4b5831e5fac22a10e92b8dea776bcea8ca6dc2391bea2`
 
@@ -6438,6 +6680,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1d8b316fa396de817dd5ccd84a6f9945e563066677832bc0a56a5800c1330ef`
 
@@ -6451,6 +6694,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f19863a5b6241cc308d31334d7fcd5a121f6941fae2008b39f2d948374463122`
 
@@ -6464,6 +6708,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `395c8a5d9c0f7248c8c1630af8f69bd24c490a686e8289cbb43f0bdf896f993b`
 
@@ -6499,6 +6744,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -6512,6 +6758,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf28ddc1ec672bd3573bf6eb3046f7891a4e901a397f7551f3a392f7d8373c26`
 
@@ -6525,6 +6772,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -6538,6 +6786,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51fe8751ee1177cf1ab19ea5c40c333c23db8371c3bbb116e87952bc033f2c7f`
 
@@ -6551,6 +6800,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44450d5ecc7687ed263a0c7c43dc8474450a05b2c822ea31b5f20190e42bb1b3`
 
@@ -6564,6 +6814,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c8df721aaf8e1ecb281b9f66fa6928757966e6863de20c35181ef5d33d83456`
 
@@ -6578,6 +6829,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37483f6b7eb538ee56a13d77062f7d43a7a2a4f3aae68521a63f3c2a0454bddd`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:03 GMT
 
 #### `09dc14677e49198e9eefcf6b64da5c7e9dcc4b81dfdcd99d1d0e56442ee23b34`
 
@@ -6591,6 +6843,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e1dd53960658bbf996f68317e5802349b50cb4ba9d7d6d915ad9dae3c5391468`
 
@@ -6630,6 +6883,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7c644f7e21e07670a43df823cde05966c81905c0fd4b9cf0f4b7b8523342a69`
 
@@ -6643,6 +6897,7 @@ ONBUILD COPY Gemfile /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f13bcfaf61676318cb4dd7bebf688c07bc2b4c7d7bdd64146db94aab0b8b501b`
 
@@ -6656,6 +6911,7 @@ ONBUILD COPY Gemfile.lock /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `add33732397fe6a9427868daa96da025ec001c73148150819eef9dbc3f7947d0`
 
@@ -6669,6 +6925,7 @@ ONBUILD RUN bundle install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `58e818621152f896c2c868df0f81894f72306392615dfad5894d7ae33031c808`
 
@@ -6682,6 +6939,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.3-onbuild`
 
@@ -6718,6 +6976,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6833,6 +7092,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42d29d58749a5dd127b4b5831e5fac22a10e92b8dea776bcea8ca6dc2391bea2`
 
@@ -6846,6 +7106,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1d8b316fa396de817dd5ccd84a6f9945e563066677832bc0a56a5800c1330ef`
 
@@ -6859,6 +7120,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f19863a5b6241cc308d31334d7fcd5a121f6941fae2008b39f2d948374463122`
 
@@ -6872,6 +7134,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `395c8a5d9c0f7248c8c1630af8f69bd24c490a686e8289cbb43f0bdf896f993b`
 
@@ -6907,6 +7170,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -6920,6 +7184,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf28ddc1ec672bd3573bf6eb3046f7891a4e901a397f7551f3a392f7d8373c26`
 
@@ -6933,6 +7198,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -6946,6 +7212,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51fe8751ee1177cf1ab19ea5c40c333c23db8371c3bbb116e87952bc033f2c7f`
 
@@ -6959,6 +7226,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44450d5ecc7687ed263a0c7c43dc8474450a05b2c822ea31b5f20190e42bb1b3`
 
@@ -6972,6 +7240,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c8df721aaf8e1ecb281b9f66fa6928757966e6863de20c35181ef5d33d83456`
 
@@ -6986,6 +7255,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37483f6b7eb538ee56a13d77062f7d43a7a2a4f3aae68521a63f3c2a0454bddd`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:03 GMT
 
 #### `09dc14677e49198e9eefcf6b64da5c7e9dcc4b81dfdcd99d1d0e56442ee23b34`
 
@@ -6999,6 +7269,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e1dd53960658bbf996f68317e5802349b50cb4ba9d7d6d915ad9dae3c5391468`
 
@@ -7038,6 +7309,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7c644f7e21e07670a43df823cde05966c81905c0fd4b9cf0f4b7b8523342a69`
 
@@ -7051,6 +7323,7 @@ ONBUILD COPY Gemfile /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f13bcfaf61676318cb4dd7bebf688c07bc2b4c7d7bdd64146db94aab0b8b501b`
 
@@ -7064,6 +7337,7 @@ ONBUILD COPY Gemfile.lock /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `add33732397fe6a9427868daa96da025ec001c73148150819eef9dbc3f7947d0`
 
@@ -7077,6 +7351,7 @@ ONBUILD RUN bundle install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `58e818621152f896c2c868df0f81894f72306392615dfad5894d7ae33031c808`
 
@@ -7090,6 +7365,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2-onbuild`
 
@@ -7126,6 +7402,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7241,6 +7518,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42d29d58749a5dd127b4b5831e5fac22a10e92b8dea776bcea8ca6dc2391bea2`
 
@@ -7254,6 +7532,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1d8b316fa396de817dd5ccd84a6f9945e563066677832bc0a56a5800c1330ef`
 
@@ -7267,6 +7546,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f19863a5b6241cc308d31334d7fcd5a121f6941fae2008b39f2d948374463122`
 
@@ -7280,6 +7560,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `395c8a5d9c0f7248c8c1630af8f69bd24c490a686e8289cbb43f0bdf896f993b`
 
@@ -7315,6 +7596,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -7328,6 +7610,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf28ddc1ec672bd3573bf6eb3046f7891a4e901a397f7551f3a392f7d8373c26`
 
@@ -7341,6 +7624,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -7354,6 +7638,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51fe8751ee1177cf1ab19ea5c40c333c23db8371c3bbb116e87952bc033f2c7f`
 
@@ -7367,6 +7652,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44450d5ecc7687ed263a0c7c43dc8474450a05b2c822ea31b5f20190e42bb1b3`
 
@@ -7380,6 +7666,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c8df721aaf8e1ecb281b9f66fa6928757966e6863de20c35181ef5d33d83456`
 
@@ -7394,6 +7681,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37483f6b7eb538ee56a13d77062f7d43a7a2a4f3aae68521a63f3c2a0454bddd`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:03 GMT
 
 #### `09dc14677e49198e9eefcf6b64da5c7e9dcc4b81dfdcd99d1d0e56442ee23b34`
 
@@ -7407,6 +7695,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e1dd53960658bbf996f68317e5802349b50cb4ba9d7d6d915ad9dae3c5391468`
 
@@ -7446,6 +7735,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7c644f7e21e07670a43df823cde05966c81905c0fd4b9cf0f4b7b8523342a69`
 
@@ -7459,6 +7749,7 @@ ONBUILD COPY Gemfile /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f13bcfaf61676318cb4dd7bebf688c07bc2b4c7d7bdd64146db94aab0b8b501b`
 
@@ -7472,6 +7763,7 @@ ONBUILD COPY Gemfile.lock /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `add33732397fe6a9427868daa96da025ec001c73148150819eef9dbc3f7947d0`
 
@@ -7485,6 +7777,7 @@ ONBUILD RUN bundle install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `58e818621152f896c2c868df0f81894f72306392615dfad5894d7ae33031c808`
 
@@ -7498,6 +7791,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:onbuild`
 
@@ -7534,6 +7828,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7649,6 +7944,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42d29d58749a5dd127b4b5831e5fac22a10e92b8dea776bcea8ca6dc2391bea2`
 
@@ -7662,6 +7958,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1d8b316fa396de817dd5ccd84a6f9945e563066677832bc0a56a5800c1330ef`
 
@@ -7675,6 +7972,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f19863a5b6241cc308d31334d7fcd5a121f6941fae2008b39f2d948374463122`
 
@@ -7688,6 +7986,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `395c8a5d9c0f7248c8c1630af8f69bd24c490a686e8289cbb43f0bdf896f993b`
 
@@ -7723,6 +8022,7 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -7736,6 +8036,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf28ddc1ec672bd3573bf6eb3046f7891a4e901a397f7551f3a392f7d8373c26`
 
@@ -7749,6 +8050,7 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -7762,6 +8064,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51fe8751ee1177cf1ab19ea5c40c333c23db8371c3bbb116e87952bc033f2c7f`
 
@@ -7775,6 +8078,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `44450d5ecc7687ed263a0c7c43dc8474450a05b2c822ea31b5f20190e42bb1b3`
 
@@ -7788,6 +8092,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c8df721aaf8e1ecb281b9f66fa6928757966e6863de20c35181ef5d33d83456`
 
@@ -7802,6 +8107,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37483f6b7eb538ee56a13d77062f7d43a7a2a4f3aae68521a63f3c2a0454bddd`
 -	v2 Content-Length: 161.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:51:03 GMT
 
 #### `09dc14677e49198e9eefcf6b64da5c7e9dcc4b81dfdcd99d1d0e56442ee23b34`
 
@@ -7815,6 +8121,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e1dd53960658bbf996f68317e5802349b50cb4ba9d7d6d915ad9dae3c5391468`
 
@@ -7854,6 +8161,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7c644f7e21e07670a43df823cde05966c81905c0fd4b9cf0f4b7b8523342a69`
 
@@ -7867,6 +8175,7 @@ ONBUILD COPY Gemfile /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f13bcfaf61676318cb4dd7bebf688c07bc2b4c7d7bdd64146db94aab0b8b501b`
 
@@ -7880,6 +8189,7 @@ ONBUILD COPY Gemfile.lock /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `add33732397fe6a9427868daa96da025ec001c73148150819eef9dbc3f7947d0`
 
@@ -7893,6 +8203,7 @@ ONBUILD RUN bundle install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `58e818621152f896c2c868df0f81894f72306392615dfad5894d7ae33031c808`
 
@@ -7906,6 +8217,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.3.0-slim`
 
@@ -7942,6 +8254,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae7c36464f9aadc2e2b481dcd9b58962aedb3b183bd40d56bac44464899c8ba4`
 
@@ -7996,6 +8309,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8ddd74aaef1d7f3e422873d54e2ae9457f7d616e51820c41860fb8ffbc56875f`
 
@@ -8009,6 +8323,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d6db04da3e089f4bfe9f5d04f556d4e1db8dcd84d7c968b18a98b6500395076`
 
@@ -8022,6 +8337,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf824e9b9462eacc2e1e6ffc3cc396563f198e11b929175002b6908c32b3035e`
 
@@ -8035,6 +8351,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `69f3ed685b862c9d543c17a8aa7218ec3de2115adb5076de876320434ed798ad`
 
@@ -8092,6 +8409,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f0f8bb86227b6ec92b5b971ce26edc470adf8db0a763d43b316eaeccad84b388`
 
@@ -8118,6 +8436,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1dea42157c8fac6cd9b8c936d8f6e5cfcf7a124a5524388bb8e0006356d4332`
 
@@ -8131,6 +8450,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ca04fb90109635b77fb3452c6a933ac085962708c784b690503b6eeb52198a2a`
 
@@ -8144,6 +8464,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b86b27ca196497004963f21943d2f42ec3878b669cf27acdc0aa5af7b02a86bc`
 
@@ -8171,6 +8492,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.3-slim`
 
@@ -8207,6 +8529,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae7c36464f9aadc2e2b481dcd9b58962aedb3b183bd40d56bac44464899c8ba4`
 
@@ -8261,6 +8584,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8ddd74aaef1d7f3e422873d54e2ae9457f7d616e51820c41860fb8ffbc56875f`
 
@@ -8274,6 +8598,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d6db04da3e089f4bfe9f5d04f556d4e1db8dcd84d7c968b18a98b6500395076`
 
@@ -8287,6 +8612,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf824e9b9462eacc2e1e6ffc3cc396563f198e11b929175002b6908c32b3035e`
 
@@ -8300,6 +8626,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `69f3ed685b862c9d543c17a8aa7218ec3de2115adb5076de876320434ed798ad`
 
@@ -8357,6 +8684,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f0f8bb86227b6ec92b5b971ce26edc470adf8db0a763d43b316eaeccad84b388`
 
@@ -8383,6 +8711,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1dea42157c8fac6cd9b8c936d8f6e5cfcf7a124a5524388bb8e0006356d4332`
 
@@ -8396,6 +8725,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ca04fb90109635b77fb3452c6a933ac085962708c784b690503b6eeb52198a2a`
 
@@ -8409,6 +8739,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b86b27ca196497004963f21943d2f42ec3878b669cf27acdc0aa5af7b02a86bc`
 
@@ -8436,6 +8767,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2-slim`
 
@@ -8472,6 +8804,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae7c36464f9aadc2e2b481dcd9b58962aedb3b183bd40d56bac44464899c8ba4`
 
@@ -8526,6 +8859,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8ddd74aaef1d7f3e422873d54e2ae9457f7d616e51820c41860fb8ffbc56875f`
 
@@ -8539,6 +8873,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d6db04da3e089f4bfe9f5d04f556d4e1db8dcd84d7c968b18a98b6500395076`
 
@@ -8552,6 +8887,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf824e9b9462eacc2e1e6ffc3cc396563f198e11b929175002b6908c32b3035e`
 
@@ -8565,6 +8901,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `69f3ed685b862c9d543c17a8aa7218ec3de2115adb5076de876320434ed798ad`
 
@@ -8622,6 +8959,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f0f8bb86227b6ec92b5b971ce26edc470adf8db0a763d43b316eaeccad84b388`
 
@@ -8648,6 +8986,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1dea42157c8fac6cd9b8c936d8f6e5cfcf7a124a5524388bb8e0006356d4332`
 
@@ -8661,6 +9000,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ca04fb90109635b77fb3452c6a933ac085962708c784b690503b6eeb52198a2a`
 
@@ -8674,6 +9014,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b86b27ca196497004963f21943d2f42ec3878b669cf27acdc0aa5af7b02a86bc`
 
@@ -8701,6 +9042,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:slim`
 
@@ -8737,6 +9079,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ae7c36464f9aadc2e2b481dcd9b58962aedb3b183bd40d56bac44464899c8ba4`
 
@@ -8791,6 +9134,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8ddd74aaef1d7f3e422873d54e2ae9457f7d616e51820c41860fb8ffbc56875f`
 
@@ -8804,6 +9148,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d6db04da3e089f4bfe9f5d04f556d4e1db8dcd84d7c968b18a98b6500395076`
 
@@ -8817,6 +9162,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf824e9b9462eacc2e1e6ffc3cc396563f198e11b929175002b6908c32b3035e`
 
@@ -8830,6 +9176,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `69f3ed685b862c9d543c17a8aa7218ec3de2115adb5076de876320434ed798ad`
 
@@ -8887,6 +9234,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f0f8bb86227b6ec92b5b971ce26edc470adf8db0a763d43b316eaeccad84b388`
 
@@ -8913,6 +9261,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1dea42157c8fac6cd9b8c936d8f6e5cfcf7a124a5524388bb8e0006356d4332`
 
@@ -8926,6 +9275,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ca04fb90109635b77fb3452c6a933ac085962708c784b690503b6eeb52198a2a`
 
@@ -8939,6 +9289,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b86b27ca196497004963f21943d2f42ec3878b669cf27acdc0aa5af7b02a86bc`
 
@@ -8966,6 +9317,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.3.0-alpine`
 
@@ -8989,6 +9341,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `168d6480f3ac1c26e33d0838e04ec06b3a5477553b96584eaa9881dfea76011c`
 
@@ -9019,6 +9372,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb57d65427dbcab5b358a8a61f0b1409f27e49fbb2df51fc298f95fd4a37b424`
 
@@ -9032,6 +9386,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a58f5c2aa27c52256587f178aac31aa9df96744763a8f6b1a06bc3b2f4fe9eec`
 
@@ -9045,6 +9400,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a4c62331d5bfc75cb4de1783a67f84f482ad4dce501a90893d09ebd15c40cd2`
 
@@ -9058,6 +9414,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `681c9bbf800a25272e97ad981ea3eff1f0651722cd81c221fca754ee5fa372a9`
 
@@ -9140,6 +9497,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e8f6997ac4ea4b722a173e743fc83271d39d585b9c4428f25f35ee442bb2dbd0`
 
@@ -9166,6 +9524,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `30b8174dbf4edc93f71bbbee20e11e26111afce25e3756ec89fb86174e988324`
 
@@ -9179,6 +9538,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `25a5f56fdb70c10cf09587c1490eb2c96d52a3fc64752a8d89b537e01dd6b5f5`
 
@@ -9192,6 +9552,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1fef0de41953707652bde38bc680687203abc2816651b4a86d953d0582a60a95`
 
@@ -9219,6 +9580,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2.3-alpine`
 
@@ -9242,6 +9604,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `168d6480f3ac1c26e33d0838e04ec06b3a5477553b96584eaa9881dfea76011c`
 
@@ -9272,6 +9635,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb57d65427dbcab5b358a8a61f0b1409f27e49fbb2df51fc298f95fd4a37b424`
 
@@ -9285,6 +9649,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a58f5c2aa27c52256587f178aac31aa9df96744763a8f6b1a06bc3b2f4fe9eec`
 
@@ -9298,6 +9663,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a4c62331d5bfc75cb4de1783a67f84f482ad4dce501a90893d09ebd15c40cd2`
 
@@ -9311,6 +9677,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `681c9bbf800a25272e97ad981ea3eff1f0651722cd81c221fca754ee5fa372a9`
 
@@ -9393,6 +9760,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e8f6997ac4ea4b722a173e743fc83271d39d585b9c4428f25f35ee442bb2dbd0`
 
@@ -9419,6 +9787,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `30b8174dbf4edc93f71bbbee20e11e26111afce25e3756ec89fb86174e988324`
 
@@ -9432,6 +9801,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `25a5f56fdb70c10cf09587c1490eb2c96d52a3fc64752a8d89b537e01dd6b5f5`
 
@@ -9445,6 +9815,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1fef0de41953707652bde38bc680687203abc2816651b4a86d953d0582a60a95`
 
@@ -9472,6 +9843,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:2-alpine`
 
@@ -9495,6 +9867,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `168d6480f3ac1c26e33d0838e04ec06b3a5477553b96584eaa9881dfea76011c`
 
@@ -9525,6 +9898,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb57d65427dbcab5b358a8a61f0b1409f27e49fbb2df51fc298f95fd4a37b424`
 
@@ -9538,6 +9912,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a58f5c2aa27c52256587f178aac31aa9df96744763a8f6b1a06bc3b2f4fe9eec`
 
@@ -9551,6 +9926,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a4c62331d5bfc75cb4de1783a67f84f482ad4dce501a90893d09ebd15c40cd2`
 
@@ -9564,6 +9940,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `681c9bbf800a25272e97ad981ea3eff1f0651722cd81c221fca754ee5fa372a9`
 
@@ -9646,6 +10023,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e8f6997ac4ea4b722a173e743fc83271d39d585b9c4428f25f35ee442bb2dbd0`
 
@@ -9672,6 +10050,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `30b8174dbf4edc93f71bbbee20e11e26111afce25e3756ec89fb86174e988324`
 
@@ -9685,6 +10064,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `25a5f56fdb70c10cf09587c1490eb2c96d52a3fc64752a8d89b537e01dd6b5f5`
 
@@ -9698,6 +10078,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1fef0de41953707652bde38bc680687203abc2816651b4a86d953d0582a60a95`
 
@@ -9725,6 +10106,7 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ruby:alpine`
 
@@ -9748,6 +10130,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `168d6480f3ac1c26e33d0838e04ec06b3a5477553b96584eaa9881dfea76011c`
 
@@ -9778,6 +10161,7 @@ ENV RUBY_MAJOR=2.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb57d65427dbcab5b358a8a61f0b1409f27e49fbb2df51fc298f95fd4a37b424`
 
@@ -9791,6 +10175,7 @@ ENV RUBY_VERSION=2.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a58f5c2aa27c52256587f178aac31aa9df96744763a8f6b1a06bc3b2f4fe9eec`
 
@@ -9804,6 +10189,7 @@ ENV RUBY_DOWNLOAD_SHA256=ba5ba60e5f1aa21b4ef8e9bf35b9ddb57286cb546aac4b5a28c71f4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a4c62331d5bfc75cb4de1783a67f84f482ad4dce501a90893d09ebd15c40cd2`
 
@@ -9817,6 +10203,7 @@ ENV RUBYGEMS_VERSION=2.6.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `681c9bbf800a25272e97ad981ea3eff1f0651722cd81c221fca754ee5fa372a9`
 
@@ -9899,6 +10286,7 @@ ENV BUNDLER_VERSION=1.11.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e8f6997ac4ea4b722a173e743fc83271d39d585b9c4428f25f35ee442bb2dbd0`
 
@@ -9925,6 +10313,7 @@ ENV GEM_HOME=/usr/local/bundle
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `30b8174dbf4edc93f71bbbee20e11e26111afce25e3756ec89fb86174e988324`
 
@@ -9938,6 +10327,7 @@ ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENC
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `25a5f56fdb70c10cf09587c1490eb2c96d52a3fc64752a8d89b537e01dd6b5f5`
 
@@ -9951,6 +10341,7 @@ ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1fef0de41953707652bde38bc680687203abc2816651b4a86d953d0582a60a95`
 
@@ -9978,3 +10369,4 @@ CMD ["irb"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

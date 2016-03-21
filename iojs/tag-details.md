@@ -212,6 +212,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -405,6 +406,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -598,6 +600,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -791,6 +794,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -1062,6 +1066,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -1333,6 +1338,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -3746,6 +3752,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -3939,6 +3946,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -4132,6 +4140,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -4325,6 +4334,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -4518,6 +4528,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -4789,6 +4800,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -5060,6 +5072,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -5331,6 +5344,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 

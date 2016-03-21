@@ -65,6 +65,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -160,6 +161,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 543.1 MB (543062146 bytes)
 -	v2 Blob: `sha256:0fcbf8fa06508bd824cff1b99e1b2d963a45f36d17406798bbe37a820fa1c081`
 -	v2 Content-Length: 182.3 MB (182313531 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:30:45 GMT
 
 #### `d49b0f263f274c67d6f2455b92b35d8f83291f7efa6e79d0e620cb769b021023`
 
@@ -173,6 +175,7 @@ RUN git clone -b v2_02_103 https://git.fedorahosted.org/git/lvm2.git /usr/local/
 -	Virtual Size: 24.5 MB (24491215 bytes)
 -	v2 Blob: `sha256:c1346c179e08ea7dc54703b809822bf0b5f346851fddfa70b78c979bdc2b5aef`
 -	v2 Content-Length: 19.3 MB (19282332 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:29:16 GMT
 
 #### `34e7005ea03910e285e160b459f4e1850faf485056d5875b27806da875f5b7a5`
 
@@ -216,6 +219,7 @@ RUN mkdir -p /usr/src/lxc \
 -	Virtual Size: 3.9 MB (3851799 bytes)
 -	v2 Blob: `sha256:928f88545f7a581cb70a7be3c036b90bbd2af435706ee445509d491777bbce1d`
 -	v2 Content-Length: 839.9 KB (839903 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:28:57 GMT
 
 #### `1ae91a28e1cee23434fc3da890e1e403b966305d1911d92afbf60dd9724f8227`
 
@@ -299,6 +303,7 @@ RUN cd /usr/local/go/src && ./make.bash --no-clean 2>&1
 -	Virtual Size: 98.0 MB (98011777 bytes)
 -	v2 Blob: `sha256:48395fa61d6c3a30963ea3e01b39c5eece3fa6a3b8417a9be3ccca8c2ede5b0b`
 -	v2 Content-Length: 24.7 MB (24713735 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:27:31 GMT
 
 #### `5e145db5eb9709054f73eafdf074b7cbec1f7df986142975838d0e04ea8abf08`
 
@@ -373,6 +378,7 @@ RUN git clone https://github.com/golang/tools.git /go/src/golang.org/x/tools \
 -	Virtual Size: 25.4 MB (25420215 bytes)
 -	v2 Blob: `sha256:4df9f8db4dd21d888094532b8ab85f11f193cc27deb1e90d16d898ce66bdb94f`
 -	v2 Content-Length: 11.4 MB (11357179 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:25 GMT
 
 #### `d7bb750a09f92e7db02c7e9517b65f9826b62cc66b3c841ed58480842ccf97e2`
 
@@ -401,6 +407,7 @@ RUN git clone https://github.com/golang/lint.git /go/src/github.com/golang/lint 
 -	Virtual Size: 6.6 MB (6586951 bytes)
 -	v2 Blob: `sha256:249c1dbe14050ea81e1f1369b63aa8fa170075304412005fe4a89c117849505a`
 -	v2 Content-Length: 2.0 MB (1984712 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:12 GMT
 
 #### `ed6689d79d85051c2c34fa723011713dc92caf1c2e2830196c9a31104fc5ef6b`
 
@@ -615,6 +622,7 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 -	Virtual Size: 40.0 B
 -	v2 Blob: `sha256:9ba5cf79eef13753a295a88709edb3c2d827974a9e628c86b60e4fc6f039fabf`
 -	v2 Content-Length: 263.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:06 GMT
 
 #### `36c4ce0cead884be66f09311b60f6dd4c38b617796075326658f0be43ae23822`
 
@@ -641,6 +649,7 @@ COPY file:d2241750b272d955bafffdbd3029cd3022f56d0ef655111394d10339d5145ebd in /g
 -	Virtual Size: 3.9 KB (3866 bytes)
 -	v2 Blob: `sha256:e659cb3282f3c06cabc9213f6023d826c5845e43b932c948575ca80c7dffe472`
 -	v2 Content-Length: 1.8 KB (1773 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:22:58 GMT
 
 #### `4637c56e92c2616dbc27c671bba37bd608ff1951c8fe201e569cdc15a8534822`
 
@@ -737,6 +746,7 @@ RUN set -x\
 -	Virtual Size: 4.5 MB (4463504 bytes)
 -	v2 Blob: `sha256:6a884cee083f9172159176f9e1ce5502d83556cb7c7e99a8484cc13ee44e805a`
 -	v2 Content-Length: 2.1 MB (2052199 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:22:35 GMT
 
 #### `8bee69c16341b5abfd1bc18107b0248b865808e33075617fe4d8b6d72a866425`
 
@@ -823,6 +833,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -918,6 +929,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 543.1 MB (543062146 bytes)
 -	v2 Blob: `sha256:0fcbf8fa06508bd824cff1b99e1b2d963a45f36d17406798bbe37a820fa1c081`
 -	v2 Content-Length: 182.3 MB (182313531 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:30:45 GMT
 
 #### `d49b0f263f274c67d6f2455b92b35d8f83291f7efa6e79d0e620cb769b021023`
 
@@ -931,6 +943,7 @@ RUN git clone -b v2_02_103 https://git.fedorahosted.org/git/lvm2.git /usr/local/
 -	Virtual Size: 24.5 MB (24491215 bytes)
 -	v2 Blob: `sha256:c1346c179e08ea7dc54703b809822bf0b5f346851fddfa70b78c979bdc2b5aef`
 -	v2 Content-Length: 19.3 MB (19282332 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:29:16 GMT
 
 #### `34e7005ea03910e285e160b459f4e1850faf485056d5875b27806da875f5b7a5`
 
@@ -974,6 +987,7 @@ RUN mkdir -p /usr/src/lxc \
 -	Virtual Size: 3.9 MB (3851799 bytes)
 -	v2 Blob: `sha256:928f88545f7a581cb70a7be3c036b90bbd2af435706ee445509d491777bbce1d`
 -	v2 Content-Length: 839.9 KB (839903 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:28:57 GMT
 
 #### `1ae91a28e1cee23434fc3da890e1e403b966305d1911d92afbf60dd9724f8227`
 
@@ -1057,6 +1071,7 @@ RUN cd /usr/local/go/src && ./make.bash --no-clean 2>&1
 -	Virtual Size: 98.0 MB (98011777 bytes)
 -	v2 Blob: `sha256:48395fa61d6c3a30963ea3e01b39c5eece3fa6a3b8417a9be3ccca8c2ede5b0b`
 -	v2 Content-Length: 24.7 MB (24713735 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:27:31 GMT
 
 #### `5e145db5eb9709054f73eafdf074b7cbec1f7df986142975838d0e04ea8abf08`
 
@@ -1131,6 +1146,7 @@ RUN git clone https://github.com/golang/tools.git /go/src/golang.org/x/tools \
 -	Virtual Size: 25.4 MB (25420215 bytes)
 -	v2 Blob: `sha256:4df9f8db4dd21d888094532b8ab85f11f193cc27deb1e90d16d898ce66bdb94f`
 -	v2 Content-Length: 11.4 MB (11357179 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:25 GMT
 
 #### `d7bb750a09f92e7db02c7e9517b65f9826b62cc66b3c841ed58480842ccf97e2`
 
@@ -1159,6 +1175,7 @@ RUN git clone https://github.com/golang/lint.git /go/src/github.com/golang/lint 
 -	Virtual Size: 6.6 MB (6586951 bytes)
 -	v2 Blob: `sha256:249c1dbe14050ea81e1f1369b63aa8fa170075304412005fe4a89c117849505a`
 -	v2 Content-Length: 2.0 MB (1984712 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:12 GMT
 
 #### `ed6689d79d85051c2c34fa723011713dc92caf1c2e2830196c9a31104fc5ef6b`
 
@@ -1373,6 +1390,7 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 -	Virtual Size: 40.0 B
 -	v2 Blob: `sha256:9ba5cf79eef13753a295a88709edb3c2d827974a9e628c86b60e4fc6f039fabf`
 -	v2 Content-Length: 263.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:06 GMT
 
 #### `36c4ce0cead884be66f09311b60f6dd4c38b617796075326658f0be43ae23822`
 
@@ -1399,6 +1417,7 @@ COPY file:d2241750b272d955bafffdbd3029cd3022f56d0ef655111394d10339d5145ebd in /g
 -	Virtual Size: 3.9 KB (3866 bytes)
 -	v2 Blob: `sha256:e659cb3282f3c06cabc9213f6023d826c5845e43b932c948575ca80c7dffe472`
 -	v2 Content-Length: 1.8 KB (1773 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:22:58 GMT
 
 #### `4637c56e92c2616dbc27c671bba37bd608ff1951c8fe201e569cdc15a8534822`
 
@@ -1495,6 +1514,7 @@ RUN set -x\
 -	Virtual Size: 4.5 MB (4463504 bytes)
 -	v2 Blob: `sha256:6a884cee083f9172159176f9e1ce5502d83556cb7c7e99a8484cc13ee44e805a`
 -	v2 Content-Length: 2.1 MB (2052199 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:22:35 GMT
 
 #### `8bee69c16341b5abfd1bc18107b0248b865808e33075617fe4d8b6d72a866425`
 
@@ -1581,6 +1601,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -1676,6 +1697,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 543.1 MB (543062146 bytes)
 -	v2 Blob: `sha256:0fcbf8fa06508bd824cff1b99e1b2d963a45f36d17406798bbe37a820fa1c081`
 -	v2 Content-Length: 182.3 MB (182313531 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:30:45 GMT
 
 #### `d49b0f263f274c67d6f2455b92b35d8f83291f7efa6e79d0e620cb769b021023`
 
@@ -1689,6 +1711,7 @@ RUN git clone -b v2_02_103 https://git.fedorahosted.org/git/lvm2.git /usr/local/
 -	Virtual Size: 24.5 MB (24491215 bytes)
 -	v2 Blob: `sha256:c1346c179e08ea7dc54703b809822bf0b5f346851fddfa70b78c979bdc2b5aef`
 -	v2 Content-Length: 19.3 MB (19282332 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:29:16 GMT
 
 #### `34e7005ea03910e285e160b459f4e1850faf485056d5875b27806da875f5b7a5`
 
@@ -1732,6 +1755,7 @@ RUN mkdir -p /usr/src/lxc \
 -	Virtual Size: 3.9 MB (3851799 bytes)
 -	v2 Blob: `sha256:928f88545f7a581cb70a7be3c036b90bbd2af435706ee445509d491777bbce1d`
 -	v2 Content-Length: 839.9 KB (839903 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:28:57 GMT
 
 #### `1ae91a28e1cee23434fc3da890e1e403b966305d1911d92afbf60dd9724f8227`
 
@@ -1815,6 +1839,7 @@ RUN cd /usr/local/go/src && ./make.bash --no-clean 2>&1
 -	Virtual Size: 98.0 MB (98011777 bytes)
 -	v2 Blob: `sha256:48395fa61d6c3a30963ea3e01b39c5eece3fa6a3b8417a9be3ccca8c2ede5b0b`
 -	v2 Content-Length: 24.7 MB (24713735 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:27:31 GMT
 
 #### `5e145db5eb9709054f73eafdf074b7cbec1f7df986142975838d0e04ea8abf08`
 
@@ -1889,6 +1914,7 @@ RUN git clone https://github.com/golang/tools.git /go/src/golang.org/x/tools \
 -	Virtual Size: 25.4 MB (25420215 bytes)
 -	v2 Blob: `sha256:4df9f8db4dd21d888094532b8ab85f11f193cc27deb1e90d16d898ce66bdb94f`
 -	v2 Content-Length: 11.4 MB (11357179 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:25 GMT
 
 #### `d7bb750a09f92e7db02c7e9517b65f9826b62cc66b3c841ed58480842ccf97e2`
 
@@ -1917,6 +1943,7 @@ RUN git clone https://github.com/golang/lint.git /go/src/github.com/golang/lint 
 -	Virtual Size: 6.6 MB (6586951 bytes)
 -	v2 Blob: `sha256:249c1dbe14050ea81e1f1369b63aa8fa170075304412005fe4a89c117849505a`
 -	v2 Content-Length: 2.0 MB (1984712 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:12 GMT
 
 #### `ed6689d79d85051c2c34fa723011713dc92caf1c2e2830196c9a31104fc5ef6b`
 
@@ -2131,6 +2158,7 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 -	Virtual Size: 40.0 B
 -	v2 Blob: `sha256:9ba5cf79eef13753a295a88709edb3c2d827974a9e628c86b60e4fc6f039fabf`
 -	v2 Content-Length: 263.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:06 GMT
 
 #### `36c4ce0cead884be66f09311b60f6dd4c38b617796075326658f0be43ae23822`
 
@@ -2157,6 +2185,7 @@ COPY file:d2241750b272d955bafffdbd3029cd3022f56d0ef655111394d10339d5145ebd in /g
 -	Virtual Size: 3.9 KB (3866 bytes)
 -	v2 Blob: `sha256:e659cb3282f3c06cabc9213f6023d826c5845e43b932c948575ca80c7dffe472`
 -	v2 Content-Length: 1.8 KB (1773 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:22:58 GMT
 
 #### `4637c56e92c2616dbc27c671bba37bd608ff1951c8fe201e569cdc15a8534822`
 
@@ -2253,6 +2282,7 @@ RUN set -x\
 -	Virtual Size: 4.5 MB (4463504 bytes)
 -	v2 Blob: `sha256:6a884cee083f9172159176f9e1ce5502d83556cb7c7e99a8484cc13ee44e805a`
 -	v2 Content-Length: 2.1 MB (2052199 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:22:35 GMT
 
 #### `8bee69c16341b5abfd1bc18107b0248b865808e33075617fe4d8b6d72a866425`
 

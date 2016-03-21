@@ -44,6 +44,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6fdebd7b0eb5e0695812a42189609799fd743ea37dd55d4dc374eca0c57924cc`
 
@@ -57,6 +58,7 @@ ADD file:72852fc7626d233343a04e4eae70b5bc2925271b42cbe823aa0aca0a75a153dd in /
 -	Virtual Size: 196.6 MB (196624598 bytes)
 -	v2 Blob: `sha256:196355c4b639d30f63444b2b00b2a5f24cfc8b274cefd2428294c06da0e0ba5d`
 -	v2 Content-Length: 70.6 MB (70555736 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 17:49:00 GMT
 
 #### `a63aae4d216f12e186c191cdb2dbe01008863590c00e8f163c8fca229d889e18`
 
@@ -70,6 +72,7 @@ LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-04
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb3d629a7cbc1ded0a8fdeb3756433ecea97f50f7c715f6995905567ecb4b6ac`
 
@@ -83,6 +86,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:centos7`
 
@@ -106,6 +110,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6fdebd7b0eb5e0695812a42189609799fd743ea37dd55d4dc374eca0c57924cc`
 
@@ -119,6 +124,7 @@ ADD file:72852fc7626d233343a04e4eae70b5bc2925271b42cbe823aa0aca0a75a153dd in /
 -	Virtual Size: 196.6 MB (196624598 bytes)
 -	v2 Blob: `sha256:196355c4b639d30f63444b2b00b2a5f24cfc8b274cefd2428294c06da0e0ba5d`
 -	v2 Content-Length: 70.6 MB (70555736 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 17:49:00 GMT
 
 #### `a63aae4d216f12e186c191cdb2dbe01008863590c00e8f163c8fca229d889e18`
 
@@ -132,6 +138,7 @@ LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-04
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb3d629a7cbc1ded0a8fdeb3756433ecea97f50f7c715f6995905567ecb4b6ac`
 
@@ -145,6 +152,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:7`
 
@@ -168,6 +176,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6fdebd7b0eb5e0695812a42189609799fd743ea37dd55d4dc374eca0c57924cc`
 
@@ -181,6 +190,7 @@ ADD file:72852fc7626d233343a04e4eae70b5bc2925271b42cbe823aa0aca0a75a153dd in /
 -	Virtual Size: 196.6 MB (196624598 bytes)
 -	v2 Blob: `sha256:196355c4b639d30f63444b2b00b2a5f24cfc8b274cefd2428294c06da0e0ba5d`
 -	v2 Content-Length: 70.6 MB (70555736 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 17:49:00 GMT
 
 #### `a63aae4d216f12e186c191cdb2dbe01008863590c00e8f163c8fca229d889e18`
 
@@ -194,6 +204,7 @@ LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-04
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb3d629a7cbc1ded0a8fdeb3756433ecea97f50f7c715f6995905567ecb4b6ac`
 
@@ -207,6 +218,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:centos6`
 
@@ -230,6 +242,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85c0cc8455d6e862b3f59d263c125ed56d02e347a1ff8eeb8ea2627452982a9e`
 
@@ -243,6 +256,7 @@ ADD file:de20fbb4fe344f0ff5ca4dad061aef88bfb92c74b0470daf2dfd6358d5953e1d in /
 -	Virtual Size: 228.9 MB (228940052 bytes)
 -	v2 Blob: `sha256:204c9415d16d707c683308d02c8153bc97a3fbcee4613937767fe979530cffc2`
 -	v2 Content-Length: 90.1 MB (90102494 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 17:50:27 GMT
 
 #### `362ef9f9960d25d827954cf653bff9c61ded02b90b885221deb139d0e80b2f29`
 
@@ -256,6 +270,7 @@ LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-04
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e93f19d1d37460779a92fa50242a8724b460e2f8f7272f13a17d537047d16a1`
 
@@ -269,6 +284,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:6`
 
@@ -292,6 +308,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85c0cc8455d6e862b3f59d263c125ed56d02e347a1ff8eeb8ea2627452982a9e`
 
@@ -305,6 +322,7 @@ ADD file:de20fbb4fe344f0ff5ca4dad061aef88bfb92c74b0470daf2dfd6358d5953e1d in /
 -	Virtual Size: 228.9 MB (228940052 bytes)
 -	v2 Blob: `sha256:204c9415d16d707c683308d02c8153bc97a3fbcee4613937767fe979530cffc2`
 -	v2 Content-Length: 90.1 MB (90102494 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 17:50:27 GMT
 
 #### `362ef9f9960d25d827954cf653bff9c61ded02b90b885221deb139d0e80b2f29`
 
@@ -318,6 +336,7 @@ LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-04
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e93f19d1d37460779a92fa50242a8724b460e2f8f7272f13a17d537047d16a1`
 
@@ -331,6 +350,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:centos5`
 
@@ -354,6 +374,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8418970fbb5946ff2446b85ae1417411660dc950758db48b325b57ec392902b8`
 
@@ -390,6 +411,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8418970fbb5946ff2446b85ae1417411660dc950758db48b325b57ec392902b8`
 
@@ -426,6 +448,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `913f2dea1430aba86ba3cda6f358d2e78e5c3cefd3eb5a1b99849f212cbc19c0`
 
@@ -452,6 +475,7 @@ LABEL name=CentOS Base Image
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec59ce5defdca8fea0234a6e1196ff64781236b024180edd4f7e14e36f6e9fc8`
 
@@ -465,6 +489,7 @@ LABEL vendor=CentOS
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d16051f61d95102f090d660987f804c371791c3384cfea6b99fdf8df1072709d`
 
@@ -478,6 +503,7 @@ LABEL license=GPLv2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83ee614b834e4a51ea51f78ab8fd9c3caacc87fcaf74db4c3c0d33fb88ba401f`
 
@@ -491,6 +517,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:7.2.1511`
 
@@ -514,6 +541,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `913f2dea1430aba86ba3cda6f358d2e78e5c3cefd3eb5a1b99849f212cbc19c0`
 
@@ -540,6 +568,7 @@ LABEL name=CentOS Base Image
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec59ce5defdca8fea0234a6e1196ff64781236b024180edd4f7e14e36f6e9fc8`
 
@@ -553,6 +582,7 @@ LABEL vendor=CentOS
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d16051f61d95102f090d660987f804c371791c3384cfea6b99fdf8df1072709d`
 
@@ -566,6 +596,7 @@ LABEL license=GPLv2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83ee614b834e4a51ea51f78ab8fd9c3caacc87fcaf74db4c3c0d33fb88ba401f`
 
@@ -579,6 +610,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:centos7.1.1503`
 
@@ -602,6 +634,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `172633e384200b683dd587c350fd568fbc50758b54bdba44c03666f9b4089daf`
 
@@ -628,6 +661,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:7.1.1503`
 
@@ -651,6 +685,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `172633e384200b683dd587c350fd568fbc50758b54bdba44c03666f9b4089daf`
 
@@ -677,6 +712,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:centos7.0.1406`
 
@@ -700,6 +736,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `539eca37badeb3097ad1cfc1b90e9892a8fb95523cd58fd03633c9d217207b9a`
 
@@ -736,6 +773,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `539eca37badeb3097ad1cfc1b90e9892a8fb95523cd58fd03633c9d217207b9a`
 
@@ -772,6 +810,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fc6f5013018fd5f1e84a3b5d304f03cfb81b6131ca20c968262bc60c2edb107`
 
@@ -798,6 +837,7 @@ LABEL Vendor=CentOS
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b89573a5b116e61624906884fc48ba0cd7037a72cf1d2757c77fbd73f03c150a`
 
@@ -811,6 +851,7 @@ LABEL License=GPLv2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3fba1048142f7f89f67f2b6b11256053a3beaa280b97538dd85d51d4f0a65961`
 
@@ -824,6 +865,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:6.7`
 
@@ -847,6 +889,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5fc6f5013018fd5f1e84a3b5d304f03cfb81b6131ca20c968262bc60c2edb107`
 
@@ -873,6 +916,7 @@ LABEL Vendor=CentOS
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b89573a5b116e61624906884fc48ba0cd7037a72cf1d2757c77fbd73f03c150a`
 
@@ -886,6 +930,7 @@ LABEL License=GPLv2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3fba1048142f7f89f67f2b6b11256053a3beaa280b97538dd85d51d4f0a65961`
 
@@ -899,6 +944,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `centos:centos6.6`
 
@@ -922,6 +968,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `12c9d795d85aa792be67bd42aa564e5c44d0cbf6759b66bf0ae99b2ec4c552d6`
 
@@ -958,6 +1005,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `12c9d795d85aa792be67bd42aa564e5c44d0cbf6759b66bf0ae99b2ec4c552d6`
 
@@ -994,6 +1042,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `90226a24e71de785ebd02b24b6a67b66fd82aad45c5878fed330b26052caf154`
 
@@ -1030,6 +1079,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `90226a24e71de785ebd02b24b6a67b66fd82aad45c5878fed330b26052caf154`
 
