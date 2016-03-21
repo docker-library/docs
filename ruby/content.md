@@ -27,6 +27,12 @@ $ docker build -t my-ruby-app .
 $ docker run -it --name my-running-script my-ruby-app
 ```
 
+## Encoding
+
+If you need to use any encoding different than the default ``US-ASCII`` then make sure you specify on your Dockerfile the following:
+
+``ENV LANG C.UTF-8``
+
 ### Generate a `Gemfile.lock`
 
 The `onbuild` tag expects a `Gemfile.lock` in your app directory. This `docker run` will help you generate one. Run it in the root of your app, next to the `Gemfile`:
