@@ -958,6 +958,7 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.6 MB (6602400 bytes)
 -	v2 Blob: `sha256:4bc68ec2dbcedcbb2ae88bc97359d52d56169f5b248c49f19c313592bd17c2d9`
 -	v2 Content-Length: 2.6 MB (2570099 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:04 GMT
 
 #### `588e02fc4faaf86bfc6586bc57fdd2e11e72122d95dc87fad924c44e2a4e0d7e`
 
@@ -1225,6 +1226,7 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.6 MB (6602400 bytes)
 -	v2 Blob: `sha256:4bc68ec2dbcedcbb2ae88bc97359d52d56169f5b248c49f19c313592bd17c2d9`
 -	v2 Content-Length: 2.6 MB (2570099 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:04 GMT
 
 #### `588e02fc4faaf86bfc6586bc57fdd2e11e72122d95dc87fad924c44e2a4e0d7e`
 
@@ -1492,6 +1494,7 @@ RUN buildDeps='gcc gcc-multilib libc6-dev-i386 make' \
 -	Virtual Size: 6.6 MB (6602400 bytes)
 -	v2 Blob: `sha256:4bc68ec2dbcedcbb2ae88bc97359d52d56169f5b248c49f19c313592bd17c2d9`
 -	v2 Content-Length: 2.6 MB (2570099 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:12:04 GMT
 
 #### `588e02fc4faaf86bfc6586bc57fdd2e11e72122d95dc87fad924c44e2a4e0d7e`
 

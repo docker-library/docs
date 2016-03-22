@@ -69,6 +69,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -82,6 +83,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -95,6 +97,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -136,6 +139,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -149,6 +153,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:1.10`
 
@@ -198,6 +203,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -211,6 +217,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -224,6 +231,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -265,6 +273,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -278,6 +287,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:1`
 
@@ -327,6 +337,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -340,6 +351,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -353,6 +365,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -394,6 +407,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -407,6 +421,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:latest`
 
@@ -456,6 +471,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -469,6 +485,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -482,6 +499,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -523,6 +541,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -536,6 +555,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:1.10.3-dind`
 
@@ -585,6 +605,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -598,6 +619,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -611,6 +633,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -652,6 +675,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -665,6 +689,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `785228dc4cccb1ceae0860091f5bc461362f07d96e5cf14dbc0902c1d69d4db6`
 
@@ -695,6 +720,7 @@ ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `423831ea6d2e86845e64e192310fa72a12e36af515281701a46d84d95f074182`
 
@@ -722,6 +748,7 @@ COPY file:a7c704a32fcef663e045b3b4c62ff28a25afb92372f1ca2e35fc5c74206acb7d in /u
 -	Virtual Size: 413.0 B
 -	v2 Blob: `sha256:1f348d52d424e09f2f714d0e97ced9ebee65af121361644be64c64a877261ce4`
 -	v2 Content-Length: 439.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:15 GMT
 
 #### `27f8d80dee094fbdfd4b41a3916dc4e2cfd6b2784a51c83215c3145ea168ad30`
 
@@ -735,6 +762,7 @@ VOLUME [/var/lib/docker]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e193b69dd2f326bbe3a4fd4053dbfa7fe0b7219c444cfee6c658a154c2cddb48`
 
@@ -748,6 +776,7 @@ EXPOSE 2375/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d43a00dc72420c25186d0fd8c768b1334499070b89cde68c8c808b5aface0e1d`
 
@@ -761,6 +790,7 @@ ENTRYPOINT &{["dockerd-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `18ed9056b49f1d7a0b59ae056e4866290a2909a7f5922ed37487dd8514f6e1ff`
 
@@ -774,6 +804,7 @@ CMD []
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:1.10-dind`
 
@@ -823,6 +854,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -836,6 +868,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -849,6 +882,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -890,6 +924,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -903,6 +938,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `785228dc4cccb1ceae0860091f5bc461362f07d96e5cf14dbc0902c1d69d4db6`
 
@@ -933,6 +969,7 @@ ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `423831ea6d2e86845e64e192310fa72a12e36af515281701a46d84d95f074182`
 
@@ -960,6 +997,7 @@ COPY file:a7c704a32fcef663e045b3b4c62ff28a25afb92372f1ca2e35fc5c74206acb7d in /u
 -	Virtual Size: 413.0 B
 -	v2 Blob: `sha256:1f348d52d424e09f2f714d0e97ced9ebee65af121361644be64c64a877261ce4`
 -	v2 Content-Length: 439.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:15 GMT
 
 #### `27f8d80dee094fbdfd4b41a3916dc4e2cfd6b2784a51c83215c3145ea168ad30`
 
@@ -973,6 +1011,7 @@ VOLUME [/var/lib/docker]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e193b69dd2f326bbe3a4fd4053dbfa7fe0b7219c444cfee6c658a154c2cddb48`
 
@@ -986,6 +1025,7 @@ EXPOSE 2375/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d43a00dc72420c25186d0fd8c768b1334499070b89cde68c8c808b5aface0e1d`
 
@@ -999,6 +1039,7 @@ ENTRYPOINT &{["dockerd-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `18ed9056b49f1d7a0b59ae056e4866290a2909a7f5922ed37487dd8514f6e1ff`
 
@@ -1012,6 +1053,7 @@ CMD []
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:1-dind`
 
@@ -1061,6 +1103,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -1074,6 +1117,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -1087,6 +1131,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -1128,6 +1173,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -1141,6 +1187,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `785228dc4cccb1ceae0860091f5bc461362f07d96e5cf14dbc0902c1d69d4db6`
 
@@ -1171,6 +1218,7 @@ ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `423831ea6d2e86845e64e192310fa72a12e36af515281701a46d84d95f074182`
 
@@ -1198,6 +1246,7 @@ COPY file:a7c704a32fcef663e045b3b4c62ff28a25afb92372f1ca2e35fc5c74206acb7d in /u
 -	Virtual Size: 413.0 B
 -	v2 Blob: `sha256:1f348d52d424e09f2f714d0e97ced9ebee65af121361644be64c64a877261ce4`
 -	v2 Content-Length: 439.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:15 GMT
 
 #### `27f8d80dee094fbdfd4b41a3916dc4e2cfd6b2784a51c83215c3145ea168ad30`
 
@@ -1211,6 +1260,7 @@ VOLUME [/var/lib/docker]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e193b69dd2f326bbe3a4fd4053dbfa7fe0b7219c444cfee6c658a154c2cddb48`
 
@@ -1224,6 +1274,7 @@ EXPOSE 2375/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d43a00dc72420c25186d0fd8c768b1334499070b89cde68c8c808b5aface0e1d`
 
@@ -1237,6 +1288,7 @@ ENTRYPOINT &{["dockerd-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `18ed9056b49f1d7a0b59ae056e4866290a2909a7f5922ed37487dd8514f6e1ff`
 
@@ -1250,6 +1302,7 @@ CMD []
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:dind`
 
@@ -1299,6 +1352,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -1312,6 +1366,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -1325,6 +1380,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -1366,6 +1422,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -1379,6 +1436,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `785228dc4cccb1ceae0860091f5bc461362f07d96e5cf14dbc0902c1d69d4db6`
 
@@ -1409,6 +1467,7 @@ ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `423831ea6d2e86845e64e192310fa72a12e36af515281701a46d84d95f074182`
 
@@ -1436,6 +1495,7 @@ COPY file:a7c704a32fcef663e045b3b4c62ff28a25afb92372f1ca2e35fc5c74206acb7d in /u
 -	Virtual Size: 413.0 B
 -	v2 Blob: `sha256:1f348d52d424e09f2f714d0e97ced9ebee65af121361644be64c64a877261ce4`
 -	v2 Content-Length: 439.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:15 GMT
 
 #### `27f8d80dee094fbdfd4b41a3916dc4e2cfd6b2784a51c83215c3145ea168ad30`
 
@@ -1449,6 +1509,7 @@ VOLUME [/var/lib/docker]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e193b69dd2f326bbe3a4fd4053dbfa7fe0b7219c444cfee6c658a154c2cddb48`
 
@@ -1462,6 +1523,7 @@ EXPOSE 2375/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d43a00dc72420c25186d0fd8c768b1334499070b89cde68c8c808b5aface0e1d`
 
@@ -1475,6 +1537,7 @@ ENTRYPOINT &{["dockerd-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `18ed9056b49f1d7a0b59ae056e4866290a2909a7f5922ed37487dd8514f6e1ff`
 
@@ -1488,6 +1551,7 @@ CMD []
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:1.10.3-git`
 
@@ -1537,6 +1601,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -1550,6 +1615,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -1563,6 +1629,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -1604,6 +1671,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -1617,6 +1685,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `212f1ad44070af647a58f506640c7a95e6b90c9adc4bdecd5c81dc34eaf5c67b`
 
@@ -1681,6 +1750,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -1694,6 +1764,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -1707,6 +1778,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -1748,6 +1820,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -1761,6 +1834,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `212f1ad44070af647a58f506640c7a95e6b90c9adc4bdecd5c81dc34eaf5c67b`
 
@@ -1825,6 +1899,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -1838,6 +1913,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -1851,6 +1927,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -1892,6 +1969,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -1905,6 +1983,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `212f1ad44070af647a58f506640c7a95e6b90c9adc4bdecd5c81dc34eaf5c67b`
 
@@ -1969,6 +2048,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bda1875fc107e5a5a8ba29d6fcaadb9925a2813432a5cc54c33c883e38de7007`
 
@@ -1982,6 +2062,7 @@ ENV DOCKER_VERSION=1.10.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15a24ead1b5784c80ad55b6dfd7c67d56a54959ddcff41ea3deec6bee9147d3b`
 
@@ -1995,6 +2076,7 @@ ENV DOCKER_SHA256=d0df512afa109006a450f41873634951e19ddabf8c7bd419caeb5a526032d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42ac7d32a31f5ac37dd3bad0701124f5dcaba2209f3a7588b472dde694cf6b7d`
 
@@ -2036,6 +2118,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 
@@ -2049,6 +2132,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `212f1ad44070af647a58f506640c7a95e6b90c9adc4bdecd5c81dc34eaf5c67b`
 
@@ -2113,6 +2197,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `507f5a019f2169d8256314716c89964324f01c96cbafb61f3f9169a77bd0edb1`
 
@@ -2126,6 +2211,7 @@ ENV DOCKER_VERSION=1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21ab80dee8c740450866f2dac74ab30d35268d21a9daaf053ad99adca0b7f8c1`
 
@@ -2139,6 +2225,7 @@ ENV DOCKER_SHA256=52286a92999f003e1129422e78be3e1049f963be1888afc3c9a99d5a9af046
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bff49286e7404716b7b40a015d28410c9f38e66af50c8c7d93c3ca736bf9d287`
 
@@ -2167,6 +2254,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -2180,6 +2268,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `475604a2e12b485814d8cc088723af35fef927d2bf7b23671dbc7ff8d90da4f6`
 
@@ -2193,6 +2282,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:1.9`
 
@@ -2242,6 +2332,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `507f5a019f2169d8256314716c89964324f01c96cbafb61f3f9169a77bd0edb1`
 
@@ -2255,6 +2346,7 @@ ENV DOCKER_VERSION=1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21ab80dee8c740450866f2dac74ab30d35268d21a9daaf053ad99adca0b7f8c1`
 
@@ -2268,6 +2360,7 @@ ENV DOCKER_SHA256=52286a92999f003e1129422e78be3e1049f963be1888afc3c9a99d5a9af046
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bff49286e7404716b7b40a015d28410c9f38e66af50c8c7d93c3ca736bf9d287`
 
@@ -2296,6 +2389,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -2309,6 +2403,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `475604a2e12b485814d8cc088723af35fef927d2bf7b23671dbc7ff8d90da4f6`
 
@@ -2322,6 +2417,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:1.9.1-dind`
 
@@ -2371,6 +2467,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `507f5a019f2169d8256314716c89964324f01c96cbafb61f3f9169a77bd0edb1`
 
@@ -2384,6 +2481,7 @@ ENV DOCKER_VERSION=1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21ab80dee8c740450866f2dac74ab30d35268d21a9daaf053ad99adca0b7f8c1`
 
@@ -2397,6 +2495,7 @@ ENV DOCKER_SHA256=52286a92999f003e1129422e78be3e1049f963be1888afc3c9a99d5a9af046
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bff49286e7404716b7b40a015d28410c9f38e66af50c8c7d93c3ca736bf9d287`
 
@@ -2425,6 +2524,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -2438,6 +2538,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `475604a2e12b485814d8cc088723af35fef927d2bf7b23671dbc7ff8d90da4f6`
 
@@ -2451,6 +2552,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ec382355f9d3f144a3560b8b80db60d56c43eb99f44f1bf3596a180bd359474`
 
@@ -2481,6 +2583,7 @@ ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe0d6c66d91808f931ae63375b97528f26c004cc284f4dc5d1c1ded4aadb6cfc`
 
@@ -2508,6 +2611,7 @@ COPY file:a7c704a32fcef663e045b3b4c62ff28a25afb92372f1ca2e35fc5c74206acb7d in /u
 -	Virtual Size: 413.0 B
 -	v2 Blob: `sha256:3d883526b97b8619ccb9d13efb97fd021ab49e22af81a899b2b5f1933a6f3b33`
 -	v2 Content-Length: 440.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:26:52 GMT
 
 #### `87fbf7209fe20300afa1e52356745d7a9fbd5f0fb12c717b6ea03d60557bb1bf`
 
@@ -2521,6 +2625,7 @@ VOLUME [/var/lib/docker]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d32f62628a52c01e3b0be017a4cea7730a657cecc14a737bee90ca1227e6c0b`
 
@@ -2534,6 +2639,7 @@ EXPOSE 2375/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d270dd1478e3e20e5dfa7208f503bb84f511c24ab3ac6e8fec8582c9bdc3b1e0`
 
@@ -2547,6 +2653,7 @@ ENTRYPOINT &{["dockerd-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `17c7c9abf26c80f357c3bc4d5d9a6858898176c8c604125ef4f3157a8d1cec0c`
 
@@ -2560,6 +2667,7 @@ CMD []
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:1.9-dind`
 
@@ -2609,6 +2717,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `507f5a019f2169d8256314716c89964324f01c96cbafb61f3f9169a77bd0edb1`
 
@@ -2622,6 +2731,7 @@ ENV DOCKER_VERSION=1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21ab80dee8c740450866f2dac74ab30d35268d21a9daaf053ad99adca0b7f8c1`
 
@@ -2635,6 +2745,7 @@ ENV DOCKER_SHA256=52286a92999f003e1129422e78be3e1049f963be1888afc3c9a99d5a9af046
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bff49286e7404716b7b40a015d28410c9f38e66af50c8c7d93c3ca736bf9d287`
 
@@ -2663,6 +2774,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -2676,6 +2788,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `475604a2e12b485814d8cc088723af35fef927d2bf7b23671dbc7ff8d90da4f6`
 
@@ -2689,6 +2802,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ec382355f9d3f144a3560b8b80db60d56c43eb99f44f1bf3596a180bd359474`
 
@@ -2719,6 +2833,7 @@ ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe0d6c66d91808f931ae63375b97528f26c004cc284f4dc5d1c1ded4aadb6cfc`
 
@@ -2746,6 +2861,7 @@ COPY file:a7c704a32fcef663e045b3b4c62ff28a25afb92372f1ca2e35fc5c74206acb7d in /u
 -	Virtual Size: 413.0 B
 -	v2 Blob: `sha256:3d883526b97b8619ccb9d13efb97fd021ab49e22af81a899b2b5f1933a6f3b33`
 -	v2 Content-Length: 440.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:26:52 GMT
 
 #### `87fbf7209fe20300afa1e52356745d7a9fbd5f0fb12c717b6ea03d60557bb1bf`
 
@@ -2759,6 +2875,7 @@ VOLUME [/var/lib/docker]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d32f62628a52c01e3b0be017a4cea7730a657cecc14a737bee90ca1227e6c0b`
 
@@ -2772,6 +2889,7 @@ EXPOSE 2375/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d270dd1478e3e20e5dfa7208f503bb84f511c24ab3ac6e8fec8582c9bdc3b1e0`
 
@@ -2785,6 +2903,7 @@ ENTRYPOINT &{["dockerd-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `17c7c9abf26c80f357c3bc4d5d9a6858898176c8c604125ef4f3157a8d1cec0c`
 
@@ -2798,6 +2917,7 @@ CMD []
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `docker:1.9.1-git`
 
@@ -2847,6 +2967,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `507f5a019f2169d8256314716c89964324f01c96cbafb61f3f9169a77bd0edb1`
 
@@ -2860,6 +2981,7 @@ ENV DOCKER_VERSION=1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21ab80dee8c740450866f2dac74ab30d35268d21a9daaf053ad99adca0b7f8c1`
 
@@ -2873,6 +2995,7 @@ ENV DOCKER_SHA256=52286a92999f003e1129422e78be3e1049f963be1888afc3c9a99d5a9af046
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bff49286e7404716b7b40a015d28410c9f38e66af50c8c7d93c3ca736bf9d287`
 
@@ -2901,6 +3024,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -2914,6 +3038,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `475604a2e12b485814d8cc088723af35fef927d2bf7b23671dbc7ff8d90da4f6`
 
@@ -2927,6 +3052,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ad5a202f2e3129e5caf7b90eb96e4c7da97df783f31a462080662e1b93322465`
 
@@ -2991,6 +3117,7 @@ ENV DOCKER_BUCKET=get.docker.com
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `507f5a019f2169d8256314716c89964324f01c96cbafb61f3f9169a77bd0edb1`
 
@@ -3004,6 +3131,7 @@ ENV DOCKER_VERSION=1.9.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21ab80dee8c740450866f2dac74ab30d35268d21a9daaf053ad99adca0b7f8c1`
 
@@ -3017,6 +3145,7 @@ ENV DOCKER_SHA256=52286a92999f003e1129422e78be3e1049f963be1888afc3c9a99d5a9af046
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bff49286e7404716b7b40a015d28410c9f38e66af50c8c7d93c3ca736bf9d287`
 
@@ -3045,6 +3174,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:0e452ef5783c828527aa39ab13d59c704534a00484f11fdf6d8c69da98fe6781`
 -	v2 Content-Length: 467.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:15 GMT
 
 #### `e054a6bdb7b7cee7a5f03e942d5bdb6d92eeea4f21676aa8e02b29d212686d23`
 
@@ -3058,6 +3188,7 @@ ENTRYPOINT &{["docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `475604a2e12b485814d8cc088723af35fef927d2bf7b23671dbc7ff8d90da4f6`
 
@@ -3071,6 +3202,7 @@ CMD ["sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ad5a202f2e3129e5caf7b90eb96e4c7da97df783f31a462080662e1b93322465`
 

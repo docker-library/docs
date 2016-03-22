@@ -59,6 +59,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44300304 bytes)
 -	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
 -	v2 Content-Length: 18.5 MB (18528188 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
 
 #### `ddb562126cd2a152685e5db65ee928df94196c3bfa5de81c075a138afa27beb7`
 
@@ -288,6 +289,7 @@ RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:564b28ac945e012f2989f7b0a694354d34beee5170e81dba819799764fdfae5f`
 -	v2 Content-Length: 137.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:17 GMT
 
 #### `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 
@@ -406,6 +408,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44300304 bytes)
 -	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
 -	v2 Content-Length: 18.5 MB (18528188 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
 
 #### `ddb562126cd2a152685e5db65ee928df94196c3bfa5de81c075a138afa27beb7`
 
@@ -635,6 +638,7 @@ RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:564b28ac945e012f2989f7b0a694354d34beee5170e81dba819799764fdfae5f`
 -	v2 Content-Length: 137.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:17 GMT
 
 #### `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 
@@ -753,6 +757,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44300304 bytes)
 -	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
 -	v2 Content-Length: 18.5 MB (18528188 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
 
 #### `ddb562126cd2a152685e5db65ee928df94196c3bfa5de81c075a138afa27beb7`
 
@@ -982,6 +987,7 @@ RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:564b28ac945e012f2989f7b0a694354d34beee5170e81dba819799764fdfae5f`
 -	v2 Content-Length: 137.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:17 GMT
 
 #### `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 
@@ -1100,6 +1106,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44300304 bytes)
 -	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
 -	v2 Content-Length: 18.5 MB (18528188 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
 
 #### `ddb562126cd2a152685e5db65ee928df94196c3bfa5de81c075a138afa27beb7`
 
@@ -1329,6 +1336,7 @@ RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:564b28ac945e012f2989f7b0a694354d34beee5170e81dba819799764fdfae5f`
 -	v2 Content-Length: 137.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:17 GMT
 
 #### `940b3f01c26a26d4c6b6fc8dc57a7d7e49b3a9be0586b729723d95fac50b7b30`
 

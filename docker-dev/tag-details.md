@@ -28,6 +28,7 @@ ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
 -	Virtual Size: 187.7 MB (187728797 bytes)
 -	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
 -	v2 Content-Length: 65.7 MB (65675795 bytes)
+-	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
 
 #### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
 
@@ -216,6 +217,7 @@ RUN mkdir -p /usr/src/lxc \
 -	Virtual Size: 3.9 MB (3851799 bytes)
 -	v2 Blob: `sha256:928f88545f7a581cb70a7be3c036b90bbd2af435706ee445509d491777bbce1d`
 -	v2 Content-Length: 839.9 KB (839903 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:28:57 GMT
 
 #### `1ae91a28e1cee23434fc3da890e1e403b966305d1911d92afbf60dd9724f8227`
 
@@ -344,6 +346,7 @@ RUN cd /usr/local/go/src \
 -	Virtual Size: 797.8 MB (797798326 bytes)
 -	v2 Blob: `sha256:ef8e6c5532f6a7309d865338cbc3f4e65de35853c9035e2cbeb027fae81594c8`
 -	v2 Content-Length: 205.1 MB (205121223 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:26:21 GMT
 
 #### `016d4ed8d29ad2b9293ff99f60d7b80ec3086f1f05d647c91173289a7620da46`
 
@@ -401,6 +404,7 @@ RUN git clone https://github.com/golang/lint.git /go/src/github.com/golang/lint 
 -	Virtual Size: 6.6 MB (6586951 bytes)
 -	v2 Blob: `sha256:249c1dbe14050ea81e1f1369b63aa8fa170075304412005fe4a89c117849505a`
 -	v2 Content-Length: 2.0 MB (1984712 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:12 GMT
 
 #### `ed6689d79d85051c2c34fa723011713dc92caf1c2e2830196c9a31104fc5ef6b`
 
@@ -563,6 +567,7 @@ RUN useradd --create-home --gid docker unprivilegeduser
 -	Virtual Size: 332.0 KB (331983 bytes)
 -	v2 Blob: `sha256:b2b5a7f5f58f39bbc48d31cf3704603d24b7155b04b824bc83d6ffdb5be14881`
 -	v2 Content-Length: 3.7 KB (3735 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:21 GMT
 
 #### `0abe9c57c0c24038ad5c360f810a2b9463c5e16f95475ca20cc13872ebcd2590`
 
@@ -615,6 +620,7 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 -	Virtual Size: 40.0 B
 -	v2 Blob: `sha256:9ba5cf79eef13753a295a88709edb3c2d827974a9e628c86b60e4fc6f039fabf`
 -	v2 Content-Length: 263.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:06 GMT
 
 #### `36c4ce0cead884be66f09311b60f6dd4c38b617796075326658f0be43ae23822`
 
@@ -737,6 +743,7 @@ RUN set -x\
 -	Virtual Size: 4.5 MB (4463504 bytes)
 -	v2 Blob: `sha256:6a884cee083f9172159176f9e1ce5502d83556cb7c7e99a8484cc13ee44e805a`
 -	v2 Content-Length: 2.1 MB (2052199 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:22:35 GMT
 
 #### `8bee69c16341b5abfd1bc18107b0248b865808e33075617fe4d8b6d72a866425`
 
@@ -763,6 +770,7 @@ COPY dir:21a69391d2e1b2dc249cb9c7188f1475f5b8811c44bcc59b25af9976d9efbfe8 in /go
 -	Virtual Size: 114.9 MB (114939724 bytes)
 -	v2 Blob: `sha256:310f26981a6789d567ad2d64e6b41bea00f6c07128bbb8da686e6342cf6f4c65`
 -	v2 Content-Length: 97.0 MB (96956108 bytes)
+-	v2 Last-Modified: Wed, 17 Feb 2016 19:18:25 GMT
 
 ## `docker-dev:1.9`
 
@@ -786,6 +794,7 @@ ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
 -	Virtual Size: 187.7 MB (187728797 bytes)
 -	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
 -	v2 Content-Length: 65.7 MB (65675795 bytes)
+-	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
 
 #### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
 
@@ -974,6 +983,7 @@ RUN mkdir -p /usr/src/lxc \
 -	Virtual Size: 3.9 MB (3851799 bytes)
 -	v2 Blob: `sha256:928f88545f7a581cb70a7be3c036b90bbd2af435706ee445509d491777bbce1d`
 -	v2 Content-Length: 839.9 KB (839903 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:28:57 GMT
 
 #### `1ae91a28e1cee23434fc3da890e1e403b966305d1911d92afbf60dd9724f8227`
 
@@ -1102,6 +1112,7 @@ RUN cd /usr/local/go/src \
 -	Virtual Size: 797.8 MB (797798326 bytes)
 -	v2 Blob: `sha256:ef8e6c5532f6a7309d865338cbc3f4e65de35853c9035e2cbeb027fae81594c8`
 -	v2 Content-Length: 205.1 MB (205121223 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:26:21 GMT
 
 #### `016d4ed8d29ad2b9293ff99f60d7b80ec3086f1f05d647c91173289a7620da46`
 
@@ -1159,6 +1170,7 @@ RUN git clone https://github.com/golang/lint.git /go/src/github.com/golang/lint 
 -	Virtual Size: 6.6 MB (6586951 bytes)
 -	v2 Blob: `sha256:249c1dbe14050ea81e1f1369b63aa8fa170075304412005fe4a89c117849505a`
 -	v2 Content-Length: 2.0 MB (1984712 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:12 GMT
 
 #### `ed6689d79d85051c2c34fa723011713dc92caf1c2e2830196c9a31104fc5ef6b`
 
@@ -1321,6 +1333,7 @@ RUN useradd --create-home --gid docker unprivilegeduser
 -	Virtual Size: 332.0 KB (331983 bytes)
 -	v2 Blob: `sha256:b2b5a7f5f58f39bbc48d31cf3704603d24b7155b04b824bc83d6ffdb5be14881`
 -	v2 Content-Length: 3.7 KB (3735 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:21 GMT
 
 #### `0abe9c57c0c24038ad5c360f810a2b9463c5e16f95475ca20cc13872ebcd2590`
 
@@ -1373,6 +1386,7 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 -	Virtual Size: 40.0 B
 -	v2 Blob: `sha256:9ba5cf79eef13753a295a88709edb3c2d827974a9e628c86b60e4fc6f039fabf`
 -	v2 Content-Length: 263.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:06 GMT
 
 #### `36c4ce0cead884be66f09311b60f6dd4c38b617796075326658f0be43ae23822`
 
@@ -1495,6 +1509,7 @@ RUN set -x\
 -	Virtual Size: 4.5 MB (4463504 bytes)
 -	v2 Blob: `sha256:6a884cee083f9172159176f9e1ce5502d83556cb7c7e99a8484cc13ee44e805a`
 -	v2 Content-Length: 2.1 MB (2052199 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:22:35 GMT
 
 #### `8bee69c16341b5abfd1bc18107b0248b865808e33075617fe4d8b6d72a866425`
 
@@ -1544,6 +1559,7 @@ ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
 -	Virtual Size: 187.7 MB (187728797 bytes)
 -	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
 -	v2 Content-Length: 65.7 MB (65675795 bytes)
+-	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
 
 #### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
 
@@ -1732,6 +1748,7 @@ RUN mkdir -p /usr/src/lxc \
 -	Virtual Size: 3.9 MB (3851799 bytes)
 -	v2 Blob: `sha256:928f88545f7a581cb70a7be3c036b90bbd2af435706ee445509d491777bbce1d`
 -	v2 Content-Length: 839.9 KB (839903 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:28:57 GMT
 
 #### `1ae91a28e1cee23434fc3da890e1e403b966305d1911d92afbf60dd9724f8227`
 
@@ -1860,6 +1877,7 @@ RUN cd /usr/local/go/src \
 -	Virtual Size: 797.8 MB (797798326 bytes)
 -	v2 Blob: `sha256:ef8e6c5532f6a7309d865338cbc3f4e65de35853c9035e2cbeb027fae81594c8`
 -	v2 Content-Length: 205.1 MB (205121223 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:26:21 GMT
 
 #### `016d4ed8d29ad2b9293ff99f60d7b80ec3086f1f05d647c91173289a7620da46`
 
@@ -1917,6 +1935,7 @@ RUN git clone https://github.com/golang/lint.git /go/src/github.com/golang/lint 
 -	Virtual Size: 6.6 MB (6586951 bytes)
 -	v2 Blob: `sha256:249c1dbe14050ea81e1f1369b63aa8fa170075304412005fe4a89c117849505a`
 -	v2 Content-Length: 2.0 MB (1984712 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:24:12 GMT
 
 #### `ed6689d79d85051c2c34fa723011713dc92caf1c2e2830196c9a31104fc5ef6b`
 
@@ -2079,6 +2098,7 @@ RUN useradd --create-home --gid docker unprivilegeduser
 -	Virtual Size: 332.0 KB (331983 bytes)
 -	v2 Blob: `sha256:b2b5a7f5f58f39bbc48d31cf3704603d24b7155b04b824bc83d6ffdb5be14881`
 -	v2 Content-Length: 3.7 KB (3735 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:21 GMT
 
 #### `0abe9c57c0c24038ad5c360f810a2b9463c5e16f95475ca20cc13872ebcd2590`
 
@@ -2131,6 +2151,7 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 -	Virtual Size: 40.0 B
 -	v2 Blob: `sha256:9ba5cf79eef13753a295a88709edb3c2d827974a9e628c86b60e4fc6f039fabf`
 -	v2 Content-Length: 263.0 B
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:23:06 GMT
 
 #### `36c4ce0cead884be66f09311b60f6dd4c38b617796075326658f0be43ae23822`
 
@@ -2253,6 +2274,7 @@ RUN set -x\
 -	Virtual Size: 4.5 MB (4463504 bytes)
 -	v2 Blob: `sha256:6a884cee083f9172159176f9e1ce5502d83556cb7c7e99a8484cc13ee44e805a`
 -	v2 Content-Length: 2.1 MB (2052199 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:22:35 GMT
 
 #### `8bee69c16341b5abfd1bc18107b0248b865808e33075617fe4d8b6d72a866425`
 

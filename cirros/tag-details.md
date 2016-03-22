@@ -67,6 +67,7 @@ RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit
 -	Virtual Size: 2.3 KB (2289 bytes)
 -	v2 Blob: `sha256:b5a1edf1e076b8cd0a1befe7124b256c5757da5497a188c908d53643262047e1`
 -	v2 Content-Length: 1.2 KB (1233 bytes)
+-	v2 Last-Modified: Mon, 04 Jan 2016 21:28:33 GMT
 
 #### `64a920f750376d7d51d804f5be50c03916b825704afb68d59fdd580bbafa0a93`
 
@@ -142,6 +143,7 @@ RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit
 -	Virtual Size: 2.3 KB (2289 bytes)
 -	v2 Blob: `sha256:b5a1edf1e076b8cd0a1befe7124b256c5757da5497a188c908d53643262047e1`
 -	v2 Content-Length: 1.2 KB (1233 bytes)
+-	v2 Last-Modified: Mon, 04 Jan 2016 21:28:33 GMT
 
 #### `64a920f750376d7d51d804f5be50c03916b825704afb68d59fdd580bbafa0a93`
 
@@ -191,6 +193,7 @@ ADD file:31b7d60ecb46a910225aabb36376a1df2376dd86433a28b24df3f67bb2d4d618 in /
 -	Virtual Size: 7.7 MB (7696146 bytes)
 -	v2 Blob: `sha256:78f3e58e2da9224cc693e476556047a957225ec4ef911a38f6cb05adea713035`
 -	v2 Content-Length: 3.5 MB (3527868 bytes)
+-	v2 Last-Modified: Fri, 17 Apr 2015 01:21:45 GMT
 
 #### `ac86fdec5230216c8b6d7541506887c2daf8c2998092f2773f5d44323daf6a99`
 

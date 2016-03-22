@@ -282,6 +282,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -619,6 +620,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -956,6 +958,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -1293,6 +1296,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -1630,6 +1634,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -1993,6 +1998,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -2356,6 +2362,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 
@@ -2719,6 +2726,7 @@ RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 -	Virtual Size: 32.0 B
 -	v2 Blob: `sha256:2070a87898040780d9f8c059d4e406105ad6b7f53c539584240ae68a404be9e8`
 -	v2 Content-Length: 149.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 20:07:19 GMT
 
 #### `ca3cf4c1ba80e720110be46aa208b20c86b32700b1937fc310fb6c53859ca9ba`
 

@@ -591,6 +591,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 8.2 MB (8222887 bytes)
 -	v2 Blob: `sha256:6e0199a452711642a89464b4d013ba59983fd8cc47efcdb40b24073af9213cb5`
 -	v2 Content-Length: 3.5 MB (3523659 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:46 GMT
 
 #### `31548d3264b59535ff0a720606d8816c15317b1d339260c5e4e9f1b32883aa76`
 
@@ -605,6 +606,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:ed8649d0f26457cc5d9c9ea32a090d5c0432ac48c85f918b52b8ac73d6881565`
 -	v2 Content-Length: 196.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:41 GMT
 
 #### `617b38ee1c7667f832fd2922c9c1d9aa7f97485530da24601c9de4f543f9ad98`
 
@@ -710,6 +712,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 8.2 MB (8222887 bytes)
 -	v2 Blob: `sha256:6e0199a452711642a89464b4d013ba59983fd8cc47efcdb40b24073af9213cb5`
 -	v2 Content-Length: 3.5 MB (3523659 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:46 GMT
 
 #### `31548d3264b59535ff0a720606d8816c15317b1d339260c5e4e9f1b32883aa76`
 
@@ -724,6 +727,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:ed8649d0f26457cc5d9c9ea32a090d5c0432ac48c85f918b52b8ac73d6881565`
 -	v2 Content-Length: 196.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:41 GMT
 
 #### `617b38ee1c7667f832fd2922c9c1d9aa7f97485530da24601c9de4f543f9ad98`
 
@@ -829,6 +833,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 -	Virtual Size: 8.2 MB (8222887 bytes)
 -	v2 Blob: `sha256:6e0199a452711642a89464b4d013ba59983fd8cc47efcdb40b24073af9213cb5`
 -	v2 Content-Length: 3.5 MB (3523659 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:46 GMT
 
 #### `31548d3264b59535ff0a720606d8816c15317b1d339260c5e4e9f1b32883aa76`
 
@@ -843,6 +848,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:ed8649d0f26457cc5d9c9ea32a090d5c0432ac48c85f918b52b8ac73d6881565`
 -	v2 Content-Length: 196.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:38:41 GMT
 
 #### `617b38ee1c7667f832fd2922c9c1d9aa7f97485530da24601c9de4f543f9ad98`
 
@@ -997,6 +1003,7 @@ RUN addgroup -S nginx \
 -	Virtual Size: 2.7 MB (2667872 bytes)
 -	v2 Blob: `sha256:8a2061630efcda291926dc13ec467ed1ddd84faa54cef04f6d45a19d64604f15`
 -	v2 Content-Length: 1.1 MB (1108666 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 21:39:03 GMT
 
 #### `85cad9484b9ce4774e2fb0de2841fc5973e413c1483c804af47bebee466ab1fa`
 

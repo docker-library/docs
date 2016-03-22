@@ -1826,6 +1826,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1d63ce32b0eb4ba35b4f1a8c8058a821233ebc476240e96f893203c9ab73a2b6`
 -	v2 Content-Length: 128.0 B
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:52:09 GMT
 
 #### `5def21cbeceea1bc4607aa7a6058921a96ff5b5385355c8bd5bef92c576aaea7`
 

@@ -115,6 +115,7 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -387,6 +388,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -422,6 +424,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -478,6 +481,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -618,6 +622,7 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -890,6 +895,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -925,6 +931,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -981,6 +988,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -1121,6 +1129,7 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -1393,6 +1402,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -1428,6 +1438,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -1484,6 +1495,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -1624,6 +1636,7 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -1896,6 +1909,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -1931,6 +1945,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -1987,6 +2002,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -2127,6 +2143,7 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -2399,6 +2416,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -2434,6 +2452,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -2490,6 +2509,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -2630,6 +2650,7 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -2902,6 +2923,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -2937,6 +2959,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -2993,6 +3016,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -3133,6 +3157,7 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -3405,6 +3430,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -3440,6 +3466,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -3496,6 +3523,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 
@@ -3636,6 +3664,7 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -3908,6 +3937,7 @@ RUN a2enmod rewrite expires
 -	Virtual Size: 60.0 B
 -	v2 Blob: `sha256:a5c7e6ead07c87909e8bc2a7e9ca4e11dbed1c7ce82eeca511357033d204029d`
 -	v2 Content-Length: 327.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:26 GMT
 
 #### `611919b3d4bec2cfd3ff791937fcd798d950d5bef4760c8b9b912d0f5197cce3`
 
@@ -3943,6 +3973,7 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -3999,6 +4030,7 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:35d564cafd69384c2de05bd1eac0cc0fff00424facce2121ef7b6f798b2e3dcf`
 -	v2 Content-Length: 6.9 MB (6939504 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 06:34:10 GMT
 
 #### `f70905b9ca20a64a4cec58efd099d31c2aea280d57b1bf8e179760ccb3e08f1e`
 

@@ -79,6 +79,7 @@ RUN apt-get update -y   && apt-get install -y wget logrotate ca-certificates   &
 -	Virtual Size: 68.3 MB (68285273 bytes)
 -	v2 Blob: `sha256:6f8303477e8137f735d301a213afd77f43eea5b0057d1bdbbf5db8236248bd27`
 -	v2 Content-Length: 23.2 MB (23163858 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:43:32 GMT
 
 #### `094040486f11747f6c2d674fb7671067ada4d48b6e504db0bc4e144212292bf7`
 
@@ -105,6 +106,7 @@ COPY file:a56a25ca3982cb979b46b952cf972b33567474a961c6114888756f6658c318c1 in /e
 -	Virtual Size: 363.0 B
 -	v2 Blob: `sha256:aa3fc7a39f4251be32e13108e532a22b0cd9cc1fa90448d3798a2ca17a8e69d7`
 -	v2 Content-Length: 310.0 B
+-	v2 Last-Modified: Thu, 17 Dec 2015 00:52:48 GMT
 
 #### `4f30e0daf51113900e757bcf4c88b627791e7f2620fc41f17f8aeec58fe228a5`
 
@@ -232,6 +234,7 @@ RUN apt-get update -y   && apt-get install -y wget logrotate ca-certificates   &
 -	Virtual Size: 68.3 MB (68285273 bytes)
 -	v2 Blob: `sha256:6f8303477e8137f735d301a213afd77f43eea5b0057d1bdbbf5db8236248bd27`
 -	v2 Content-Length: 23.2 MB (23163858 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 22:43:32 GMT
 
 #### `094040486f11747f6c2d674fb7671067ada4d48b6e504db0bc4e144212292bf7`
 
@@ -258,6 +261,7 @@ COPY file:a56a25ca3982cb979b46b952cf972b33567474a961c6114888756f6658c318c1 in /e
 -	Virtual Size: 363.0 B
 -	v2 Blob: `sha256:aa3fc7a39f4251be32e13108e532a22b0cd9cc1fa90448d3798a2ca17a8e69d7`
 -	v2 Content-Length: 310.0 B
+-	v2 Last-Modified: Thu, 17 Dec 2015 00:52:48 GMT
 
 #### `4f30e0daf51113900e757bcf4c88b627791e7f2620fc41f17f8aeec58fe228a5`
 

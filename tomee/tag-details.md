@@ -123,6 +123,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:02702c987a43acf3852ca35d98acc6386b48b6f79c536f811eee33364a8a6c8e`
 -	v2 Content-Length: 240.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:40:52 GMT
 
 #### `16c2e29015c1a71468e53b57590472ade9fbd2015a0a929bcb59bf8e9b40aea6`
 
@@ -397,6 +398,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:02702c987a43acf3852ca35d98acc6386b48b6f79c536f811eee33364a8a6c8e`
 -	v2 Content-Length: 240.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:40:52 GMT
 
 #### `16c2e29015c1a71468e53b57590472ade9fbd2015a0a929bcb59bf8e9b40aea6`
 
@@ -671,6 +673,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:02702c987a43acf3852ca35d98acc6386b48b6f79c536f811eee33364a8a6c8e`
 -	v2 Content-Length: 240.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:40:52 GMT
 
 #### `16c2e29015c1a71468e53b57590472ade9fbd2015a0a929bcb59bf8e9b40aea6`
 
@@ -817,6 +820,7 @@ RUN set -x \
 -	Virtual Size: 51.9 MB (51857029 bytes)
 -	v2 Blob: `sha256:3813b21d5682bd585a655ac1b773ecfbdef27f693ad809bdbfc52c4151d717d6`
 -	v2 Content-Length: 43.9 MB (43870911 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:45:29 GMT
 
 #### `0f7858ae98e40d63988cf926c3fe357e23ce7f7465363c4b5295a726b0016182`
 
@@ -945,6 +949,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:02702c987a43acf3852ca35d98acc6386b48b6f79c536f811eee33364a8a6c8e`
 -	v2 Content-Length: 240.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:40:52 GMT
 
 #### `16c2e29015c1a71468e53b57590472ade9fbd2015a0a929bcb59bf8e9b40aea6`
 
@@ -2480,6 +2485,7 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:526fca36bef7e04db9cc04d2c3f6da57fac8598575e95623649d2ee67732b784`
 -	v2 Content-Length: 29.7 KB (29743 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:48:19 GMT
 
 #### `db10deae32963c74be978c0b297f4b4416423919e59dbb29917d59613139b9c2`
 
@@ -2794,6 +2800,7 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:526fca36bef7e04db9cc04d2c3f6da57fac8598575e95623649d2ee67732b784`
 -	v2 Content-Length: 29.7 KB (29743 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:48:19 GMT
 
 #### `1e1672db1ca3c4cff3d30fb9773b17aa1100c2d5edf1db46a0f2fd9832e2238f`
 
@@ -3108,6 +3115,7 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:526fca36bef7e04db9cc04d2c3f6da57fac8598575e95623649d2ee67732b784`
 -	v2 Content-Length: 29.7 KB (29743 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:48:19 GMT
 
 #### `f5b4291d9ea32b32dfc990d1aecc1c9013ba7b8803e65197500745a22a778050`
 
@@ -3422,6 +3430,7 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:526fca36bef7e04db9cc04d2c3f6da57fac8598575e95623649d2ee67732b784`
 -	v2 Content-Length: 29.7 KB (29743 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:48:19 GMT
 
 #### `93f238eb68ed2f0d906cb7dc6c7d52b82bb681c8b23637965d251440ef66fe39`
 
@@ -4558,6 +4567,7 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:526fca36bef7e04db9cc04d2c3f6da57fac8598575e95623649d2ee67732b784`
 -	v2 Content-Length: 29.7 KB (29743 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:48:19 GMT
 
 #### `0acac5e1da94df0d5cf2f15ae91186e8bad5eabc9b622e800ed4a9131e2b8168`
 
@@ -4872,6 +4882,7 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:526fca36bef7e04db9cc04d2c3f6da57fac8598575e95623649d2ee67732b784`
 -	v2 Content-Length: 29.7 KB (29743 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:48:19 GMT
 
 #### `d289fec2f21d0b8279466e5123e43468620d696aa0edd0f2f656fb1f6d346b35`
 
@@ -5186,6 +5197,7 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:526fca36bef7e04db9cc04d2c3f6da57fac8598575e95623649d2ee67732b784`
 -	v2 Content-Length: 29.7 KB (29743 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:48:19 GMT
 
 #### `e4df70fbcaebb5d701f731818be86bd115c0b387f37a33b6e10d34b4eec056b6`
 
@@ -5500,6 +5512,7 @@ RUN set -xe \
 -	Virtual Size: 60.4 KB (60377 bytes)
 -	v2 Blob: `sha256:526fca36bef7e04db9cc04d2c3f6da57fac8598575e95623649d2ee67732b784`
 -	v2 Content-Length: 29.7 KB (29743 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 23:48:19 GMT
 
 #### `e4df70fbcaebb5d701f731818be86bd115c0b387f37a33b6e10d34b4eec056b6`
 

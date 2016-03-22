@@ -2711,6 +2711,7 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:4d4c6707d860f7d789ae5eb768d90677f34950f45b306d3abec4f085087d479f`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:41:43 GMT
 
 #### `adf658a6b808c3b71bb09ef32389fe9cd0b7165cbd3089ce2fab98624a7fcbab`
 
@@ -3026,6 +3027,7 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:4d4c6707d860f7d789ae5eb768d90677f34950f45b306d3abec4f085087d479f`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:41:43 GMT
 
 #### `adf658a6b808c3b71bb09ef32389fe9cd0b7165cbd3089ce2fab98624a7fcbab`
 
@@ -3341,6 +3343,7 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:4d4c6707d860f7d789ae5eb768d90677f34950f45b306d3abec4f085087d479f`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:41:43 GMT
 
 #### `adf658a6b808c3b71bb09ef32389fe9cd0b7165cbd3089ce2fab98624a7fcbab`
 
@@ -3656,6 +3659,7 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:4d4c6707d860f7d789ae5eb768d90677f34950f45b306d3abec4f085087d479f`
 -	v2 Content-Length: 226.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:41:43 GMT
 
 #### `adf658a6b808c3b71bb09ef32389fe9cd0b7165cbd3089ce2fab98624a7fcbab`
 

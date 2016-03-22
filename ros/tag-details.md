@@ -36,6 +36,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -61,6 +62,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -74,6 +76,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -182,6 +185,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -196,6 +200,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1683326 bytes)
 -	v2 Blob: `sha256:677dc8caab94e74df47dec63e6e3b271b61d514549b4b480169ab316f40acc4e`
 -	v2 Content-Length: 536.9 KB (536890 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:32 GMT
 
 #### `e86b3d92046d25ac0dcb668d3995c7cb3c6941c5ada20547841cb820510f6049`
 
@@ -224,6 +229,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `08fac6ec5b7392633c1f5314157468a38c9df69613371b1d6f05ba4d3ecabf79`
 
@@ -273,6 +279,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -298,6 +305,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -311,6 +319,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -419,6 +428,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -433,6 +443,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1683326 bytes)
 -	v2 Blob: `sha256:677dc8caab94e74df47dec63e6e3b271b61d514549b4b480169ab316f40acc4e`
 -	v2 Content-Length: 536.9 KB (536890 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:32 GMT
 
 #### `e86b3d92046d25ac0dcb668d3995c7cb3c6941c5ada20547841cb820510f6049`
 
@@ -461,6 +472,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `08fac6ec5b7392633c1f5314157468a38c9df69613371b1d6f05ba4d3ecabf79`
 
@@ -515,6 +527,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:693dab8df30ac2e716ad5316968b4cfb0de68e4a5c3a854636c2db33124a8f6e`
 -	v2 Content-Length: 3.4 MB (3406800 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:12:41 GMT
 
 ## `ros:indigo-robot`
 
@@ -538,6 +551,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -563,6 +577,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -576,6 +591,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -684,6 +700,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -698,6 +715,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1683326 bytes)
 -	v2 Blob: `sha256:677dc8caab94e74df47dec63e6e3b271b61d514549b4b480169ab316f40acc4e`
 -	v2 Content-Length: 536.9 KB (536890 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:32 GMT
 
 #### `e86b3d92046d25ac0dcb668d3995c7cb3c6941c5ada20547841cb820510f6049`
 
@@ -726,6 +744,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `08fac6ec5b7392633c1f5314157468a38c9df69613371b1d6f05ba4d3ecabf79`
 
@@ -780,6 +799,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:693dab8df30ac2e716ad5316968b4cfb0de68e4a5c3a854636c2db33124a8f6e`
 -	v2 Content-Length: 3.4 MB (3406800 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:12:41 GMT
 
 #### `11203ae4cc3dc0fd07105505cfd274135e1a147ac76403556dd7ee2eba80d0cd`
 
@@ -808,6 +828,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 210.9 MB (210872280 bytes)
 -	v2 Blob: `sha256:10159aea6defc67ee2b3dd13bbd3d362cbb5ae078f96e3a1436ee2da1e88c96a`
 -	v2 Content-Length: 68.1 MB (68125073 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:13:19 GMT
 
 ## `ros:indigo-perception`
 
@@ -831,6 +852,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -856,6 +878,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -869,6 +892,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -977,6 +1001,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -991,6 +1016,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1683326 bytes)
 -	v2 Blob: `sha256:677dc8caab94e74df47dec63e6e3b271b61d514549b4b480169ab316f40acc4e`
 -	v2 Content-Length: 536.9 KB (536890 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:32 GMT
 
 #### `e86b3d92046d25ac0dcb668d3995c7cb3c6941c5ada20547841cb820510f6049`
 
@@ -1019,6 +1045,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `08fac6ec5b7392633c1f5314157468a38c9df69613371b1d6f05ba4d3ecabf79`
 
@@ -1073,6 +1100,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:693dab8df30ac2e716ad5316968b4cfb0de68e4a5c3a854636c2db33124a8f6e`
 -	v2 Content-Length: 3.4 MB (3406800 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:12:41 GMT
 
 #### `11203ae4cc3dc0fd07105505cfd274135e1a147ac76403556dd7ee2eba80d0cd`
 
@@ -1124,6 +1152,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -1149,6 +1178,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1162,6 +1192,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1270,6 +1301,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -1284,6 +1316,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1683326 bytes)
 -	v2 Blob: `sha256:677dc8caab94e74df47dec63e6e3b271b61d514549b4b480169ab316f40acc4e`
 -	v2 Content-Length: 536.9 KB (536890 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:32 GMT
 
 #### `e86b3d92046d25ac0dcb668d3995c7cb3c6941c5ada20547841cb820510f6049`
 
@@ -1312,6 +1345,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `08fac6ec5b7392633c1f5314157468a38c9df69613371b1d6f05ba4d3ecabf79`
 
@@ -1366,6 +1400,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:693dab8df30ac2e716ad5316968b4cfb0de68e4a5c3a854636c2db33124a8f6e`
 -	v2 Content-Length: 3.4 MB (3406800 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:12:41 GMT
 
 ## `ros:latest`
 
@@ -1389,6 +1424,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -1414,6 +1450,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1427,6 +1464,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1535,6 +1573,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -1549,6 +1588,7 @@ RUN rosdep init\
 -	Virtual Size: 1.7 MB (1683326 bytes)
 -	v2 Blob: `sha256:677dc8caab94e74df47dec63e6e3b271b61d514549b4b480169ab316f40acc4e`
 -	v2 Content-Length: 536.9 KB (536890 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:11:32 GMT
 
 #### `e86b3d92046d25ac0dcb668d3995c7cb3c6941c5ada20547841cb820510f6049`
 
@@ -1577,6 +1617,7 @@ COPY file:5e239e5268e9210765c90f9a2b5ed75c75de0061b44a06a32d9299c94b832ddf in /
 -	Virtual Size: 95.0 B
 -	v2 Blob: `sha256:6eec5fc93cc922cdca45b8603a20bdefdd3d45566db9befc733163592e83a18d`
 -	v2 Content-Length: 197.0 B
+-	v2 Last-Modified: Wed, 03 Jun 2015 02:59:16 GMT
 
 #### `08fac6ec5b7392633c1f5314157468a38c9df69613371b1d6f05ba4d3ecabf79`
 
@@ -1631,6 +1672,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:693dab8df30ac2e716ad5316968b4cfb0de68e4a5c3a854636c2db33124a8f6e`
 -	v2 Content-Length: 3.4 MB (3406800 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:12:41 GMT
 
 ## `ros:jade-ros-core`
 
@@ -1654,6 +1696,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -1679,6 +1722,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1692,6 +1736,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1829,6 +1874,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:63836bb8a11ebca9ce64c5952ceeeab92556bc4056691e06b818ded161588274`
 -	v2 Content-Length: 151.8 MB (151773885 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:16:47 GMT
 
 #### `4d48db3d0e3abbaf7644be7c1d66baaf7eb3f72e6225fc7a54585704b4cdc100`
 
@@ -1891,6 +1937,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -1916,6 +1963,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1929,6 +1977,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2066,6 +2115,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:63836bb8a11ebca9ce64c5952ceeeab92556bc4056691e06b818ded161588274`
 -	v2 Content-Length: 151.8 MB (151773885 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:16:47 GMT
 
 #### `4d48db3d0e3abbaf7644be7c1d66baaf7eb3f72e6225fc7a54585704b4cdc100`
 
@@ -2156,6 +2206,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -2181,6 +2232,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2194,6 +2246,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2331,6 +2384,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:63836bb8a11ebca9ce64c5952ceeeab92556bc4056691e06b818ded161588274`
 -	v2 Content-Length: 151.8 MB (151773885 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:16:47 GMT
 
 #### `4d48db3d0e3abbaf7644be7c1d66baaf7eb3f72e6225fc7a54585704b4cdc100`
 
@@ -2449,6 +2503,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -2474,6 +2529,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2487,6 +2543,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2624,6 +2681,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:63836bb8a11ebca9ce64c5952ceeeab92556bc4056691e06b818ded161588274`
 -	v2 Content-Length: 151.8 MB (151773885 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:16:47 GMT
 
 #### `4d48db3d0e3abbaf7644be7c1d66baaf7eb3f72e6225fc7a54585704b4cdc100`
 
@@ -2719,6 +2777,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 919.6 MB (919631486 bytes)
 -	v2 Blob: `sha256:106bbdcbbf0d5adfbfa4c27b79a741a23aab38b40b906cc373fd93ed320dd71a`
 -	v2 Content-Length: 267.6 MB (267566689 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:19:53 GMT
 
 ## `ros:jade`
 
@@ -2742,6 +2801,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -2767,6 +2827,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -2780,6 +2841,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -2917,6 +2979,7 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 532.0 MB (531967164 bytes)
 -	v2 Blob: `sha256:63836bb8a11ebca9ce64c5952ceeeab92556bc4056691e06b818ded161588274`
 -	v2 Content-Length: 151.8 MB (151773885 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 21:16:47 GMT
 
 #### `4d48db3d0e3abbaf7644be7c1d66baaf7eb3f72e6225fc7a54585704b4cdc100`
 

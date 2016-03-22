@@ -27,6 +27,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -52,6 +53,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -104,6 +106,7 @@ RUN apt-get -y install supervisor nodejs npm redis-server
 -	Virtual Size: 159.3 MB (159327039 bytes)
 -	v2 Blob: `sha256:e809e296b87fad7428f64c46b36578a08e0a0a62286bd40499d859ba973f0a85`
 -	v2 Content-Length: 65.6 MB (65566510 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:55:14 GMT
 
 #### `091dc52f6802a82074939c4c2dd099b107e809dc63a3eabb2f39a39ba25f478c`
 
@@ -143,6 +146,7 @@ RUN npm install -g ./hipache --production
 -	Virtual Size: 1.6 MB (1611403 bytes)
 -	v2 Blob: `sha256:65dab929035f48d778e1629c7280dce76fc3c872b4e613fa957bcf7661b8f2d3`
 -	v2 Content-Length: 579.5 KB (579516 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:54:44 GMT
 
 #### `70ad49f4099ea7d142ea1a7d7d69e5898fe29a8f92644b13f6f7876cb92c5084`
 
@@ -169,6 +173,7 @@ ADD file:a6192eeb65186b26b914a86f28baaf6db40bde5c3fb479c2aceca29e4e9e40a2 in /et
 -	Virtual Size: 456.0 B
 -	v2 Blob: `sha256:a30777bb3bae0126086081aa2fb122c211cdef262db99806509f66a07c20d10d`
 -	v2 Content-Length: 344.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:54:38 GMT
 
 #### `b56034d6506b817a28fcf7a2413f09fc9cb591883ab6756bcbe66c1698886530`
 
@@ -231,6 +236,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -256,6 +262,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -308,6 +315,7 @@ RUN apt-get -y install supervisor nodejs npm redis-server
 -	Virtual Size: 159.3 MB (159327039 bytes)
 -	v2 Blob: `sha256:e809e296b87fad7428f64c46b36578a08e0a0a62286bd40499d859ba973f0a85`
 -	v2 Content-Length: 65.6 MB (65566510 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:55:14 GMT
 
 #### `091dc52f6802a82074939c4c2dd099b107e809dc63a3eabb2f39a39ba25f478c`
 
@@ -373,6 +381,7 @@ ADD file:a6192eeb65186b26b914a86f28baaf6db40bde5c3fb479c2aceca29e4e9e40a2 in /et
 -	Virtual Size: 456.0 B
 -	v2 Blob: `sha256:48985f983b36fec96ffa7c1b27ac61d215f1632fc409a19210651b8d52a62346`
 -	v2 Content-Length: 343.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:56:07 GMT
 
 #### `c5d46429ce5c4ff4efde12111106d363a8ee0605e4fad38cb8207d926e8eb7f6`
 

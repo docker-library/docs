@@ -563,6 +563,7 @@ RUN apt-get update && apt-get install -y ssh
 -	Virtual Size: 63.5 MB (63512035 bytes)
 -	v2 Blob: `sha256:a6dc1658c730c7a8278f1f69eecaa43cb356d161f0702603a5eddde6a7843140`
 -	v2 Content-Length: 35.5 MB (35534859 bytes)
+-	v2 Last-Modified: Tue, 02 Feb 2016 19:03:11 GMT
 
 #### `df767937e91fe997d4fc30ef60b9ff824a9426b9f70a5fa89dec845262964605`
 
@@ -797,6 +798,7 @@ RUN apt-get update && apt-get install -y ssh
 -	Virtual Size: 63.5 MB (63512035 bytes)
 -	v2 Blob: `sha256:a6dc1658c730c7a8278f1f69eecaa43cb356d161f0702603a5eddde6a7843140`
 -	v2 Content-Length: 35.5 MB (35534859 bytes)
+-	v2 Last-Modified: Tue, 02 Feb 2016 19:03:11 GMT
 
 #### `df767937e91fe997d4fc30ef60b9ff824a9426b9f70a5fa89dec845262964605`
 
@@ -1031,6 +1033,7 @@ RUN apt-get update && apt-get install -y ssh
 -	Virtual Size: 63.5 MB (63512035 bytes)
 -	v2 Blob: `sha256:a6dc1658c730c7a8278f1f69eecaa43cb356d161f0702603a5eddde6a7843140`
 -	v2 Content-Length: 35.5 MB (35534859 bytes)
+-	v2 Last-Modified: Tue, 02 Feb 2016 19:03:11 GMT
 
 #### `df767937e91fe997d4fc30ef60b9ff824a9426b9f70a5fa89dec845262964605`
 

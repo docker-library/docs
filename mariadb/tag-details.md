@@ -1079,6 +1079,7 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessi
 -	Virtual Size: 119.0 B
 -	v2 Blob: `sha256:d4f6ca74bb5800dbfb7b2193139406341ae32caf98d3a779cf9eb93136ec5350`
 -	v2 Content-Length: 318.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:51:10 GMT
 
 #### `b7f3759a3a97445af135366bf49446fd3285fe8343a043f580f53a122ec04562`
 
@@ -1116,6 +1117,7 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 4.9 KB (4921 bytes)
 -	v2 Blob: `sha256:9be449a7f18b7d19b76baf663448f85aba1a0460090dc517dddbafcf43c18324`
 -	v2 Content-Length: 2.5 KB (2491 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:46 GMT
 
 #### `7a5628250ab45dfd1a6c286cdec5d50c69bced43f6716c05fa601dddeb2d1193`
 
@@ -1313,6 +1315,7 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessi
 -	Virtual Size: 119.0 B
 -	v2 Blob: `sha256:d4f6ca74bb5800dbfb7b2193139406341ae32caf98d3a779cf9eb93136ec5350`
 -	v2 Content-Length: 318.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:51:10 GMT
 
 #### `b7f3759a3a97445af135366bf49446fd3285fe8343a043f580f53a122ec04562`
 
@@ -1350,6 +1353,7 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 4.9 KB (4921 bytes)
 -	v2 Blob: `sha256:9be449a7f18b7d19b76baf663448f85aba1a0460090dc517dddbafcf43c18324`
 -	v2 Content-Length: 2.5 KB (2491 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:46 GMT
 
 #### `7a5628250ab45dfd1a6c286cdec5d50c69bced43f6716c05fa601dddeb2d1193`
 
@@ -1569,6 +1573,7 @@ RUN { \
 -	Virtual Size: 153.1 MB (153123367 bytes)
 -	v2 Blob: `sha256:e5792e567850a5eb826d5ce72602755499fd2897b99a67079f865433e683b293`
 -	v2 Content-Length: 44.4 MB (44402868 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:12 GMT
 
 #### `0c54e3bd59a691939679b20200070ae102d7dfdaa4724e5e64d559bff9f7e4ab`
 
@@ -1803,6 +1808,7 @@ RUN { \
 -	Virtual Size: 153.1 MB (153123367 bytes)
 -	v2 Blob: `sha256:e5792e567850a5eb826d5ce72602755499fd2897b99a67079f865433e683b293`
 -	v2 Content-Length: 44.4 MB (44402868 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:12 GMT
 
 #### `0c54e3bd59a691939679b20200070ae102d7dfdaa4724e5e64d559bff9f7e4ab`
 
@@ -2037,6 +2043,7 @@ RUN { \
 -	Virtual Size: 153.1 MB (153123367 bytes)
 -	v2 Blob: `sha256:e5792e567850a5eb826d5ce72602755499fd2897b99a67079f865433e683b293`
 -	v2 Content-Length: 44.4 MB (44402868 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:12 GMT
 
 #### `0c54e3bd59a691939679b20200070ae102d7dfdaa4724e5e64d559bff9f7e4ab`
 

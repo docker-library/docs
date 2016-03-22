@@ -60,6 +60,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -77,6 +78,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -122,6 +124,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -235,6 +238,7 @@ RUN apt-get update &&\
 -	Virtual Size: 30.4 MB (30445599 bytes)
 -	v2 Blob: `sha256:c3189c842f201166ee9b68e68ab060bf4a97776d89e073ba4964adff7942c0d0`
 -	v2 Content-Length: 9.5 MB (9505671 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:49 GMT
 
 #### `dd4d6d00adfd495da01bd0cddc311c8988b35de83cac20495b0f83634721dbe7`
 
@@ -261,6 +265,7 @@ RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/cra
 -	Virtual Size: 57.4 MB (57416447 bytes)
 -	v2 Blob: `sha256:098c4aa68118dd43aa3ba699cfe73b9ffa9882aadc2066a46b675aa011f99644`
 -	v2 Content-Length: 46.4 MB (46439894 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:36 GMT
 
 #### `2c4015127a6bca65f0c46086840307823261b73669747cb099ff3311756a9a05`
 
@@ -300,6 +305,7 @@ ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /cr
 -	Virtual Size: 100.0 B
 -	v2 Blob: `sha256:9f14b50aa6e7f379253588546339c40fec9f5319ab03bcbe57b071bedbd7ef79`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:23 GMT
 
 #### `3039981107e9221c6ac222e5c1fbe04f8b36630b9bee4ff694dcc0d7a9c603ea`
 
@@ -405,6 +411,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -422,6 +429,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -467,6 +475,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -580,6 +589,7 @@ RUN apt-get update &&\
 -	Virtual Size: 30.4 MB (30445599 bytes)
 -	v2 Blob: `sha256:c3189c842f201166ee9b68e68ab060bf4a97776d89e073ba4964adff7942c0d0`
 -	v2 Content-Length: 9.5 MB (9505671 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:49 GMT
 
 #### `563df976e4ab1a14083f1194f3b6a1b75c6ef7ed219312d33e53e2be3af34832`
 
@@ -606,6 +616,7 @@ RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/cra
 -	Virtual Size: 60.9 MB (60863478 bytes)
 -	v2 Blob: `sha256:3180a62fa5b51d39071572819b11a622d9ee7e620a5668062807505be2701e52`
 -	v2 Content-Length: 47.3 MB (47311890 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:47:44 GMT
 
 #### `53167bc25f22ee6932b9d5f6274be5c8552b009c7289263ab0d6e950ae0faee5`
 
@@ -645,6 +656,7 @@ ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /cr
 -	Virtual Size: 100.0 B
 -	v2 Blob: `sha256:755d607afdfbf665f70e5760764540e9432428797a8339071408837b67d4696c`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:47:32 GMT
 
 #### `b67436a15c7e37b54d0fed29950bdbff2af69d20c9987b90fee4d5f3dda1de6c`
 
@@ -750,6 +762,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -767,6 +780,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -812,6 +826,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -925,6 +940,7 @@ RUN apt-get update &&\
 -	Virtual Size: 30.4 MB (30445599 bytes)
 -	v2 Blob: `sha256:c3189c842f201166ee9b68e68ab060bf4a97776d89e073ba4964adff7942c0d0`
 -	v2 Content-Length: 9.5 MB (9505671 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:49 GMT
 
 #### `563df976e4ab1a14083f1194f3b6a1b75c6ef7ed219312d33e53e2be3af34832`
 
@@ -951,6 +967,7 @@ RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/cra
 -	Virtual Size: 60.9 MB (60863478 bytes)
 -	v2 Blob: `sha256:3180a62fa5b51d39071572819b11a622d9ee7e620a5668062807505be2701e52`
 -	v2 Content-Length: 47.3 MB (47311890 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:47:44 GMT
 
 #### `53167bc25f22ee6932b9d5f6274be5c8552b009c7289263ab0d6e950ae0faee5`
 
@@ -990,6 +1007,7 @@ ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /cr
 -	Virtual Size: 100.0 B
 -	v2 Blob: `sha256:755d607afdfbf665f70e5760764540e9432428797a8339071408837b67d4696c`
 -	v2 Content-Length: 230.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:47:32 GMT
 
 #### `b67436a15c7e37b54d0fed29950bdbff2af69d20c9987b90fee4d5f3dda1de6c`
 
@@ -1095,6 +1113,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1112,6 +1131,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -1157,6 +1177,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1270,6 +1291,7 @@ RUN apt-get update &&\
 -	Virtual Size: 30.4 MB (30445599 bytes)
 -	v2 Blob: `sha256:c3189c842f201166ee9b68e68ab060bf4a97776d89e073ba4964adff7942c0d0`
 -	v2 Content-Length: 9.5 MB (9505671 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:49 GMT
 
 #### `dd4d6d00adfd495da01bd0cddc311c8988b35de83cac20495b0f83634721dbe7`
 
@@ -1296,6 +1318,7 @@ RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/cra
 -	Virtual Size: 57.4 MB (57416447 bytes)
 -	v2 Blob: `sha256:098c4aa68118dd43aa3ba699cfe73b9ffa9882aadc2066a46b675aa011f99644`
 -	v2 Content-Length: 46.4 MB (46439894 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:36 GMT
 
 #### `2c4015127a6bca65f0c46086840307823261b73669747cb099ff3311756a9a05`
 
@@ -1335,6 +1358,7 @@ ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /cr
 -	Virtual Size: 100.0 B
 -	v2 Blob: `sha256:9f14b50aa6e7f379253588546339c40fec9f5319ab03bcbe57b071bedbd7ef79`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:23 GMT
 
 #### `3039981107e9221c6ac222e5c1fbe04f8b36630b9bee4ff694dcc0d7a9c603ea`
 
@@ -1440,6 +1464,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1457,6 +1482,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -1502,6 +1528,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1615,6 +1642,7 @@ RUN apt-get update &&\
 -	Virtual Size: 30.4 MB (30445599 bytes)
 -	v2 Blob: `sha256:c3189c842f201166ee9b68e68ab060bf4a97776d89e073ba4964adff7942c0d0`
 -	v2 Content-Length: 9.5 MB (9505671 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:49 GMT
 
 #### `dd4d6d00adfd495da01bd0cddc311c8988b35de83cac20495b0f83634721dbe7`
 
@@ -1641,6 +1669,7 @@ RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/cra
 -	Virtual Size: 57.4 MB (57416447 bytes)
 -	v2 Blob: `sha256:098c4aa68118dd43aa3ba699cfe73b9ffa9882aadc2066a46b675aa011f99644`
 -	v2 Content-Length: 46.4 MB (46439894 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:36 GMT
 
 #### `2c4015127a6bca65f0c46086840307823261b73669747cb099ff3311756a9a05`
 
@@ -1680,6 +1709,7 @@ ADD file:7997dbe1d5375b72bd9679f2833bb5e1a48c10055cce48fa30b8c93645cb2ab4 in /cr
 -	Virtual Size: 100.0 B
 -	v2 Blob: `sha256:9f14b50aa6e7f379253588546339c40fec9f5319ab03bcbe57b071bedbd7ef79`
 -	v2 Content-Length: 231.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:46:23 GMT
 
 #### `3039981107e9221c6ac222e5c1fbe04f8b36630b9bee4ff694dcc0d7a9c603ea`
 

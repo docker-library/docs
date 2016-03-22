@@ -68,6 +68,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -81,6 +82,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `362ce440fea9e4ef40fabbb95bc80a4006a535388722a20072147f470a74aff6`
 
@@ -94,6 +96,7 @@ MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6748862f5ffab7802886a22ede0592fe6eb4eedb43ae0a874210048e36d1039`
 
@@ -107,6 +110,7 @@ RUN apt-get update && apt-get install -y   mysql-client-core-5.5   openjdk-7-jre
 -	Virtual Size: 127.9 MB (127922049 bytes)
 -	v2 Blob: `sha256:4a78ec2b73012f58529bd5d59609db0465b9dfa0e55a2cc32db385b10934290f`
 -	v2 Content-Length: 64.8 MB (64821340 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:51 GMT
 
 #### `65811abfc07ddeb8e458c824780bfc8ca1846a827e99748dc02344ef6184c31f`
 
@@ -120,6 +124,7 @@ RUN mkdir /opt/custom-init.d/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ece2baaa0626cd668b89b478ae1aadcfc59c9b6f74f3d06da26b37c494e737da`
 -	v2 Content-Length: 120.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:35 GMT
 
 #### `18d6bc4546ade468e96fb3768aa1be8d4a201de434e982d4ee3ba57757288289`
 
@@ -172,6 +177,7 @@ ENV BONITA_VERSION=7.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ad28aea1cb93d4f8816943fbcb23f3240131a08d7af441a9b7c5858e67c4272e`
 
@@ -185,6 +191,7 @@ ENV BONITA_SHA256=6eba7a2f513a455ada897a177117aa06b47c0fe8f79254891d0b5bd21116c4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `50fb7dce76e61060743145395e34cb0648c5a0203140c3a104436078adcbdea7`
 
@@ -198,6 +205,7 @@ ENV POSTGRES_JDBC_DRIVER=postgresql-9.3-1102.jdbc41.jar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d98a7784acf5b401f84a2c4de14565257eb22bf12b2bf8f6fe3827853f44cc21`
 
@@ -211,6 +219,7 @@ ENV POSTGRES_SHA256=b78749d536da75c382d0a71c717cde6850df64e16594676fc7cacb5a7454
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14f9d213ac8bd6a86b5c56acbbde2e1e943832623b61623349e15fd6f982360d`
 
@@ -224,6 +233,7 @@ ENV MYSQL_JDBC_DRIVER=mysql-connector-java-5.1.26
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee2176c188f76c86e9c5809148593f8bb731d81a4331169b1760955daf0c5930`
 
@@ -237,6 +247,7 @@ ENV MYSQL_SHA256=40b2d49f6f2551cc7fa54552af806e8026bf8405f03342205852e57a3205a86
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e1ad11b6a5c4afcc4995c65515706a98efe506dcc14c7e0a633357b5736d618`
 
@@ -276,6 +287,7 @@ VOLUME [/opt/bonita]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6c055ac07c3052bc355f87a5e756a2e479715840a2f75b9798bd948c773443a`
 
@@ -302,6 +314,7 @@ COPY dir:3d8bb8a36892f56dce1a6d478bab52fa906fd1761d0f993762a669780ab02b6f in /op
 -	Virtual Size: 7.3 KB (7334 bytes)
 -	v2 Blob: `sha256:1fb11ea5ec375dab6e0716376aec604b719fa7880e5a9341d89fc9bb3327cf3d`
 -	v2 Content-Length: 2.2 KB (2201 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:13:49 GMT
 
 #### `3d9f9379d2aadb9b7a6a00dd090ca8b86be482e46f9917d5773c6f4d23c7c05d`
 
@@ -315,6 +328,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ef4053f31ff8d13c5dd8e4716352773c24b7976e55e66c8c4d877ef540dcb8bf`
 
@@ -328,6 +342,7 @@ CMD ["/opt/files/startup.sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `bonita:7.0.1`
 
@@ -389,6 +404,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -402,6 +418,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `362ce440fea9e4ef40fabbb95bc80a4006a535388722a20072147f470a74aff6`
 
@@ -415,6 +432,7 @@ MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6748862f5ffab7802886a22ede0592fe6eb4eedb43ae0a874210048e36d1039`
 
@@ -428,6 +446,7 @@ RUN apt-get update && apt-get install -y   mysql-client-core-5.5   openjdk-7-jre
 -	Virtual Size: 127.9 MB (127922049 bytes)
 -	v2 Blob: `sha256:4a78ec2b73012f58529bd5d59609db0465b9dfa0e55a2cc32db385b10934290f`
 -	v2 Content-Length: 64.8 MB (64821340 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:51 GMT
 
 #### `65811abfc07ddeb8e458c824780bfc8ca1846a827e99748dc02344ef6184c31f`
 
@@ -441,6 +460,7 @@ RUN mkdir /opt/custom-init.d/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ece2baaa0626cd668b89b478ae1aadcfc59c9b6f74f3d06da26b37c494e737da`
 -	v2 Content-Length: 120.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:35 GMT
 
 #### `18d6bc4546ade468e96fb3768aa1be8d4a201de434e982d4ee3ba57757288289`
 
@@ -493,6 +513,7 @@ ENV BONITA_VERSION=7.0.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cc102673382d077fc62534a373b1f596d5a1e22702a29a6c8921c6545aaa710c`
 
@@ -506,6 +527,7 @@ ENV BONITA_SHA256=1f26f6f219d860dcb268c795a2b0e11961bd8257e138de0337ae8c6c0ba683
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `757b14bcc82abbb9f6b0b74a93c284bc72aebe58826c73e47b0af1b6f287679d`
 
@@ -519,6 +541,7 @@ ENV POSTGRES_JDBC_DRIVER=postgresql-9.3-1102.jdbc41.jar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b9772c400db42fa9a579f1797de65f98867cece894765bbb87b35d2a9e1478bd`
 
@@ -532,6 +555,7 @@ ENV POSTGRES_SHA256=b78749d536da75c382d0a71c717cde6850df64e16594676fc7cacb5a7454
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `401b968882eb2121c49c593d3715f296f6e97894f189ef5f1a5a7ceac2dfb1bc`
 
@@ -545,6 +569,7 @@ ENV MYSQL_JDBC_DRIVER=mysql-connector-java-5.1.26
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c309664970f6474951439e2cd5dc5525b7290b56daa74edb5481a9c2d3ea3b32`
 
@@ -558,6 +583,7 @@ ENV MYSQL_SHA256=40b2d49f6f2551cc7fa54552af806e8026bf8405f03342205852e57a3205a86
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dea1358555a38004b69f07bd3712fb68b29384ea43cb9540eca5b5442a4aad27`
 
@@ -597,6 +623,7 @@ VOLUME [/opt/bonita]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `97843333ee78119804a10922844ece9a3adf76be39664f4caae46138f7a15880`
 
@@ -610,6 +637,7 @@ COPY dir:1bf4f163091133a9e6147b81120df8e6bad4ab82e46b60adce16c1dd28ae7201 in /op
 -	Virtual Size: 35.4 KB (35398 bytes)
 -	v2 Blob: `sha256:dc343cc433a4527490ca3c4c17852b4d7dfb892bf77bd1797ab1ecdf7b4ed77f`
 -	v2 Content-Length: 5.7 KB (5723 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:15:41 GMT
 
 #### `b3cf9c7c6707dd6c56178231e92c8df7079652a6001ca6b550fb79eb273a9034`
 
@@ -636,6 +664,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d83d9b220a9437f977b8732cc7c8a6b141607035eccd02694fd4fd1bbe56b59b`
 
@@ -649,6 +678,7 @@ CMD ["/opt/files/startup.sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `bonita:7.0.2`
 
@@ -710,6 +740,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -723,6 +754,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `362ce440fea9e4ef40fabbb95bc80a4006a535388722a20072147f470a74aff6`
 
@@ -736,6 +768,7 @@ MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6748862f5ffab7802886a22ede0592fe6eb4eedb43ae0a874210048e36d1039`
 
@@ -749,6 +782,7 @@ RUN apt-get update && apt-get install -y   mysql-client-core-5.5   openjdk-7-jre
 -	Virtual Size: 127.9 MB (127922049 bytes)
 -	v2 Blob: `sha256:4a78ec2b73012f58529bd5d59609db0465b9dfa0e55a2cc32db385b10934290f`
 -	v2 Content-Length: 64.8 MB (64821340 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:51 GMT
 
 #### `65811abfc07ddeb8e458c824780bfc8ca1846a827e99748dc02344ef6184c31f`
 
@@ -762,6 +796,7 @@ RUN mkdir /opt/custom-init.d/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ece2baaa0626cd668b89b478ae1aadcfc59c9b6f74f3d06da26b37c494e737da`
 -	v2 Content-Length: 120.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:35 GMT
 
 #### `18d6bc4546ade468e96fb3768aa1be8d4a201de434e982d4ee3ba57757288289`
 
@@ -814,6 +849,7 @@ ENV BONITA_VERSION=7.0.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f142eb7b7bde08aa57cf607b4795037ca7ae2369d68a8b1f5a1644aa36e78413`
 
@@ -827,6 +863,7 @@ ENV BONITA_SHA256=e0f8df786f09781307b5c42d6562bfd178246db2b2cde8ec31ff6ce4481e17
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f43e9219dce376de3c0a34d800e586b24caac345a7989a59948b02867963f06f`
 
@@ -840,6 +877,7 @@ ENV POSTGRES_JDBC_DRIVER=postgresql-9.3-1102.jdbc41.jar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed962f9bf1068cfe4594cb414ef7c2f3a3cb872ecd66bf086a5c0a64eb726cb0`
 
@@ -853,6 +891,7 @@ ENV POSTGRES_SHA256=b78749d536da75c382d0a71c717cde6850df64e16594676fc7cacb5a7454
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0176ebd66e031e44c14104cb26187d73ae1bc08f84e58a1056f6abdd94b5cf81`
 
@@ -866,6 +905,7 @@ ENV MYSQL_JDBC_DRIVER=mysql-connector-java-5.1.26
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `36b6f3e02edce56c629f02db4578c46e4f9778de193a6d41a70ee484f94c656a`
 
@@ -879,6 +919,7 @@ ENV MYSQL_SHA256=40b2d49f6f2551cc7fa54552af806e8026bf8405f03342205852e57a3205a86
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `53267af3b15cb6252d9b05e678e04f1dfa1a0b3a9a56a37a8eef8745a8c1fc8c`
 
@@ -918,6 +959,7 @@ VOLUME [/opt/bonita]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9193e441d9ee50166adcf27282d05d17fdc127a16d6dcc560cd4b7ab770b1821`
 
@@ -944,6 +986,7 @@ COPY dir:3d8bb8a36892f56dce1a6d478bab52fa906fd1761d0f993762a669780ab02b6f in /op
 -	Virtual Size: 7.3 KB (7334 bytes)
 -	v2 Blob: `sha256:df23d76f08741b2beb393fb878bf39ecc9913028b4a78c13b249adc1f9165a7b`
 -	v2 Content-Length: 2.2 KB (2198 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:16:26 GMT
 
 #### `ec4f14de9a65324eea26c5e27d7370e36113926f31a020b0cbfac7ded86cd31d`
 
@@ -957,6 +1000,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `424126a912dddce12ff5e554073066f4cc287dfc8f792e5fb9dc8402d89895a9`
 
@@ -970,6 +1014,7 @@ CMD ["/opt/files/startup.sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `bonita:7.0.3`
 
@@ -1031,6 +1076,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1044,6 +1090,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `362ce440fea9e4ef40fabbb95bc80a4006a535388722a20072147f470a74aff6`
 
@@ -1057,6 +1104,7 @@ MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6748862f5ffab7802886a22ede0592fe6eb4eedb43ae0a874210048e36d1039`
 
@@ -1070,6 +1118,7 @@ RUN apt-get update && apt-get install -y   mysql-client-core-5.5   openjdk-7-jre
 -	Virtual Size: 127.9 MB (127922049 bytes)
 -	v2 Blob: `sha256:4a78ec2b73012f58529bd5d59609db0465b9dfa0e55a2cc32db385b10934290f`
 -	v2 Content-Length: 64.8 MB (64821340 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:51 GMT
 
 #### `65811abfc07ddeb8e458c824780bfc8ca1846a827e99748dc02344ef6184c31f`
 
@@ -1083,6 +1132,7 @@ RUN mkdir /opt/custom-init.d/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ece2baaa0626cd668b89b478ae1aadcfc59c9b6f74f3d06da26b37c494e737da`
 -	v2 Content-Length: 120.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:35 GMT
 
 #### `18d6bc4546ade468e96fb3768aa1be8d4a201de434e982d4ee3ba57757288289`
 
@@ -1135,6 +1185,7 @@ ENV BONITA_VERSION=7.0.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c0259a12c19477a0a77fd5ec3956c2a7abf86bbf79d968fffefea31deb04a3c3`
 
@@ -1148,6 +1199,7 @@ ENV BONITA_SHA256=4f4a1498ce2fd8e00eb7e2e79bdaa52bd5ad7449dcff8a7ce177b989c53d53
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c6683a9c45d0e1a21aa49b4ec0a96684edd61e3b2e90696c722036e319cbc313`
 
@@ -1161,6 +1213,7 @@ ENV POSTGRES_JDBC_DRIVER=postgresql-9.3-1102.jdbc41.jar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ba951275f93b6122522ad8a25cb27b7ae77a9041618b601c0c7c32e7d4d6f41`
 
@@ -1174,6 +1227,7 @@ ENV POSTGRES_SHA256=b78749d536da75c382d0a71c717cde6850df64e16594676fc7cacb5a7454
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cb1a11bb57cacaa8fb8fe986a9fca7d12eb11c608e6194928e670f4f8a08877c`
 
@@ -1187,6 +1241,7 @@ ENV MYSQL_JDBC_DRIVER=mysql-connector-java-5.1.26
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a43b1ced040c7f3d4ab2c56431dfd0a4962da35066652548d9f1948db27ffecb`
 
@@ -1200,6 +1255,7 @@ ENV MYSQL_SHA256=40b2d49f6f2551cc7fa54552af806e8026bf8405f03342205852e57a3205a86
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `13eb222ed4cb4d7e098b22853d88b294b5c8b5a7559c52d24e1c6aef8e6fcbde`
 
@@ -1239,6 +1295,7 @@ VOLUME [/opt/bonita]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1781c3c719f7b278c5226c90f3b8d69e0e1d5aec8e249803b776184a2885c770`
 
@@ -1278,6 +1335,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0a32697388a2eef0e7a30698f233babb579aefdfc6465a1833fd37de524db8fb`
 
@@ -1291,6 +1349,7 @@ CMD ["/opt/files/startup.sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `bonita:latest`
 
@@ -1352,6 +1411,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -1365,6 +1425,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `362ce440fea9e4ef40fabbb95bc80a4006a535388722a20072147f470a74aff6`
 
@@ -1378,6 +1439,7 @@ MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6748862f5ffab7802886a22ede0592fe6eb4eedb43ae0a874210048e36d1039`
 
@@ -1391,6 +1453,7 @@ RUN apt-get update && apt-get install -y   mysql-client-core-5.5   openjdk-7-jre
 -	Virtual Size: 127.9 MB (127922049 bytes)
 -	v2 Blob: `sha256:4a78ec2b73012f58529bd5d59609db0465b9dfa0e55a2cc32db385b10934290f`
 -	v2 Content-Length: 64.8 MB (64821340 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:51 GMT
 
 #### `65811abfc07ddeb8e458c824780bfc8ca1846a827e99748dc02344ef6184c31f`
 
@@ -1404,6 +1467,7 @@ RUN mkdir /opt/custom-init.d/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ece2baaa0626cd668b89b478ae1aadcfc59c9b6f74f3d06da26b37c494e737da`
 -	v2 Content-Length: 120.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:35 GMT
 
 #### `18d6bc4546ade468e96fb3768aa1be8d4a201de434e982d4ee3ba57757288289`
 
@@ -1456,6 +1520,7 @@ ENV BONITA_VERSION=7.0.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c0259a12c19477a0a77fd5ec3956c2a7abf86bbf79d968fffefea31deb04a3c3`
 
@@ -1469,6 +1534,7 @@ ENV BONITA_SHA256=4f4a1498ce2fd8e00eb7e2e79bdaa52bd5ad7449dcff8a7ce177b989c53d53
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c6683a9c45d0e1a21aa49b4ec0a96684edd61e3b2e90696c722036e319cbc313`
 
@@ -1482,6 +1548,7 @@ ENV POSTGRES_JDBC_DRIVER=postgresql-9.3-1102.jdbc41.jar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ba951275f93b6122522ad8a25cb27b7ae77a9041618b601c0c7c32e7d4d6f41`
 
@@ -1495,6 +1562,7 @@ ENV POSTGRES_SHA256=b78749d536da75c382d0a71c717cde6850df64e16594676fc7cacb5a7454
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cb1a11bb57cacaa8fb8fe986a9fca7d12eb11c608e6194928e670f4f8a08877c`
 
@@ -1508,6 +1576,7 @@ ENV MYSQL_JDBC_DRIVER=mysql-connector-java-5.1.26
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a43b1ced040c7f3d4ab2c56431dfd0a4962da35066652548d9f1948db27ffecb`
 
@@ -1521,6 +1590,7 @@ ENV MYSQL_SHA256=40b2d49f6f2551cc7fa54552af806e8026bf8405f03342205852e57a3205a86
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `13eb222ed4cb4d7e098b22853d88b294b5c8b5a7559c52d24e1c6aef8e6fcbde`
 
@@ -1560,6 +1630,7 @@ VOLUME [/opt/bonita]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1781c3c719f7b278c5226c90f3b8d69e0e1d5aec8e249803b776184a2885c770`
 
@@ -1599,6 +1670,7 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0a32697388a2eef0e7a30698f233babb579aefdfc6465a1833fd37de524db8fb`
 
@@ -1612,3 +1684,4 @@ CMD ["/opt/files/startup.sh"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

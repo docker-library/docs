@@ -78,6 +78,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -194,6 +195,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `e4505e337f239754b86afc5039bfbe6f0483fc2e6156284aba3e1bc7d493dfe0`
 
@@ -323,6 +325,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -439,6 +442,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `e4505e337f239754b86afc5039bfbe6f0483fc2e6156284aba3e1bc7d493dfe0`
 
@@ -568,6 +572,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -684,6 +689,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `5677b1bd5e3f6046951d4ab7063fc5944f9b7d18c1059017146ab968ff2afd61`
 
@@ -712,6 +718,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 63.6 KB (63642 bytes)
 -	v2 Blob: `sha256:414af59054bfc6b43508f61bb764f84ceed0e5f61242f00f24a945a08dd6b90e`
 -	v2 Content-Length: 21.0 KB (21025 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:50:21 GMT
 
 #### `744a31c337f34bc15b9f62a98ba1897fd2fa5510807e28ffb227be946f539904`
 
@@ -813,6 +820,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -929,6 +937,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `5677b1bd5e3f6046951d4ab7063fc5944f9b7d18c1059017146ab968ff2afd61`
 
@@ -957,6 +966,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 63.6 KB (63642 bytes)
 -	v2 Blob: `sha256:414af59054bfc6b43508f61bb764f84ceed0e5f61242f00f24a945a08dd6b90e`
 -	v2 Content-Length: 21.0 KB (21025 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:50:21 GMT
 
 #### `744a31c337f34bc15b9f62a98ba1897fd2fa5510807e28ffb227be946f539904`
 
@@ -1058,6 +1068,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -1174,6 +1185,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `5677b1bd5e3f6046951d4ab7063fc5944f9b7d18c1059017146ab968ff2afd61`
 
@@ -1202,6 +1214,7 @@ RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" \
 -	Virtual Size: 63.6 KB (63642 bytes)
 -	v2 Blob: `sha256:414af59054bfc6b43508f61bb764f84ceed0e5f61242f00f24a945a08dd6b90e`
 -	v2 Content-Length: 21.0 KB (21025 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:50:21 GMT
 
 #### `744a31c337f34bc15b9f62a98ba1897fd2fa5510807e28ffb227be946f539904`
 
@@ -1303,6 +1316,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -1419,6 +1433,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `8114a06b281db0a9b922588d44e515c787a78b2ffe14927a844b8efb96277773`
 
@@ -1548,6 +1563,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -1664,6 +1680,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `8114a06b281db0a9b922588d44e515c787a78b2ffe14927a844b8efb96277773`
 
@@ -1793,6 +1810,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -1909,6 +1927,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `d019d5848e1a46dcbc0ab36d8a6a05baba5990136ad0e14a0cc8f9fa731f34ce`
 
@@ -2038,6 +2057,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -2154,6 +2174,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `d019d5848e1a46dcbc0ab36d8a6a05baba5990136ad0e14a0cc8f9fa731f34ce`
 
@@ -2283,6 +2304,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -2399,6 +2421,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `67ce7713146fafff9a690fff5850913824ba7f3755342a3a75f8879846be8da2`
 
@@ -2528,6 +2551,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -2644,6 +2668,7 @@ COPY file:0c263a7bd0109d172694ef4957017b377b4344523cc80fed43eec338b9312db9 in /d
 -	Virtual Size: 1.6 KB (1591 bytes)
 -	v2 Blob: `sha256:f0664e7f156054c5ef1a8d0727fcc95fa3307ea727ca331eedca2891a180484e`
 -	v2 Content-Length: 731.0 B
+-	v2 Last-Modified: Mon, 29 Feb 2016 22:56:49 GMT
 
 #### `67ce7713146fafff9a690fff5850913824ba7f3755342a3a75f8879846be8da2`
 
@@ -2773,6 +2798,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -3018,6 +3044,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
@@ -3263,6 +3290,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 -	Virtual Size: 330.4 KB (330396 bytes)
 -	v2 Blob: `sha256:0b4d44d757b18eca70780efa7b1ed0cc99c7dc9751d69825cb175bca8f78162d`
 -	v2 Content-Length: 2.0 KB (2037 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:51:15 GMT
 
 #### `700ad3044148a453155ae1a1480f6cc54fa5c6b1a906b9b3644609940b8ac450`
 
