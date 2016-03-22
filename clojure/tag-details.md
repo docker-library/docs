@@ -29,6 +29,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -42,6 +43,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -59,6 +61,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -79,6 +82,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -96,6 +100,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -109,6 +114,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -122,6 +128,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -141,6 +148,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -154,6 +162,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -167,6 +176,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -180,6 +190,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -193,6 +204,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -212,6 +224,7 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -225,6 +238,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `bfbc1863caf1828756be03f8baf128f5914732e24d92cd876b84536428638ae3`
 
@@ -238,6 +252,7 @@ MAINTAINER Paul Lam <paul@quantisan.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b16eb1352a8cd7ca365d8eed3529c1939be18530f38adc6b88129e32e388f55e`
 
@@ -251,6 +266,7 @@ ENV LEIN_VERSION=2.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `056acfd96a17e5db927846a7ad13e486461c892a9daedabf691618ba745b407c`
 
@@ -264,6 +280,7 @@ ENV LEIN_INSTALL=/usr/local/bin/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2b7106b86137d478472fd7f454a565dfa60e22f46ec1bdffdf02b177f6df3026`
 
@@ -277,6 +294,7 @@ WORKDIR /tmp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b571998b0653519b2b861750c3f9de584dcf84b6c26ba4a6d4947169d293b71a`
 
@@ -290,6 +308,7 @@ RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/lein
 -	Virtual Size: 16.7 MB (16680105 bytes)
 -	v2 Blob: `sha256:157bc403d0a0211f21ce221017b0debdcd6a5af0c96856cecdc644aace05e1b1`
 -	v2 Content-Length: 14.4 MB (14381013 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:37 GMT
 
 #### `2228328ea7c9ddf07aa85b6ddc3b6d0d7fcb6591c6d78d4a1999df969f7b3c16`
 
@@ -303,6 +322,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33ac63b86a18b2ce4c97359ce32b0923ba1fb4843ffb7559547297b435c14b69`
 
@@ -316,6 +336,7 @@ ENV LEIN_ROOT=1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3130b59767fe61ef2a54efdde0c6a4e6df9c8cb68f7c29124abca80e7c346f8`
 
@@ -329,6 +350,7 @@ RUN lein
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e333bb525345b7ee7ca382b5e1c58a0ff0e39f69c617a25e9683b2171feb48bc`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:27 GMT
 
 ## `clojure:onbuild`
 
@@ -352,6 +374,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -365,6 +388,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -382,6 +406,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -402,6 +427,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -419,6 +445,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -432,6 +459,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -445,6 +473,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -464,6 +493,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -477,6 +507,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -490,6 +521,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -503,6 +535,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -516,6 +549,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -535,6 +569,7 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -548,6 +583,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `bfbc1863caf1828756be03f8baf128f5914732e24d92cd876b84536428638ae3`
 
@@ -561,6 +597,7 @@ MAINTAINER Paul Lam <paul@quantisan.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b16eb1352a8cd7ca365d8eed3529c1939be18530f38adc6b88129e32e388f55e`
 
@@ -574,6 +611,7 @@ ENV LEIN_VERSION=2.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `056acfd96a17e5db927846a7ad13e486461c892a9daedabf691618ba745b407c`
 
@@ -587,6 +625,7 @@ ENV LEIN_INSTALL=/usr/local/bin/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2b7106b86137d478472fd7f454a565dfa60e22f46ec1bdffdf02b177f6df3026`
 
@@ -600,6 +639,7 @@ WORKDIR /tmp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b571998b0653519b2b861750c3f9de584dcf84b6c26ba4a6d4947169d293b71a`
 
@@ -613,6 +653,7 @@ RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/lein
 -	Virtual Size: 16.7 MB (16680105 bytes)
 -	v2 Blob: `sha256:157bc403d0a0211f21ce221017b0debdcd6a5af0c96856cecdc644aace05e1b1`
 -	v2 Content-Length: 14.4 MB (14381013 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:37 GMT
 
 #### `2228328ea7c9ddf07aa85b6ddc3b6d0d7fcb6591c6d78d4a1999df969f7b3c16`
 
@@ -626,6 +667,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33ac63b86a18b2ce4c97359ce32b0923ba1fb4843ffb7559547297b435c14b69`
 
@@ -639,6 +681,7 @@ ENV LEIN_ROOT=1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3130b59767fe61ef2a54efdde0c6a4e6df9c8cb68f7c29124abca80e7c346f8`
 
@@ -652,6 +695,7 @@ RUN lein
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e333bb525345b7ee7ca382b5e1c58a0ff0e39f69c617a25e9683b2171feb48bc`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:27 GMT
 
 #### `d5e391fa223c345771da88b6569c3429aaf21cfa789a32cd26baf99094f10c0e`
 
@@ -665,6 +709,7 @@ MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1fe6a772a79c7c210ec9195709918cffa930810d456ae736311f134e1ccdaf0`
 
@@ -678,6 +723,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9faa28b3f6f5e1790ff77b083280b542369e40da97c9f1a4d8945594f5db29eb`
 
@@ -691,6 +737,7 @@ ONBUILD COPY project.clj /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2aa128026f78c92ff6fdea55b18157bf78c3d06f84632fd097366142b7e96b86`
 
@@ -704,6 +751,7 @@ ONBUILD RUN lein deps
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7244fd53da389c6bd54b098770b7cb3137283181cd04bb7d35b638ddd8831871`
 
@@ -717,6 +765,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5863bc31c43447d11f0f87213f48071bff648bbd74c5dd5ea29928e59d0d3d3f`
 
@@ -730,6 +779,7 @@ CMD ["lein" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `clojure:lein-2.5.3`
 
@@ -753,6 +803,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -766,6 +817,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -783,6 +835,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -803,6 +856,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -820,6 +874,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -833,6 +888,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -846,6 +902,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -865,6 +922,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -878,6 +936,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -891,6 +950,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -904,6 +964,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -917,6 +978,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -936,6 +998,7 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -949,6 +1012,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `bfbc1863caf1828756be03f8baf128f5914732e24d92cd876b84536428638ae3`
 
@@ -962,6 +1026,7 @@ MAINTAINER Paul Lam <paul@quantisan.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b16eb1352a8cd7ca365d8eed3529c1939be18530f38adc6b88129e32e388f55e`
 
@@ -975,6 +1040,7 @@ ENV LEIN_VERSION=2.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `056acfd96a17e5db927846a7ad13e486461c892a9daedabf691618ba745b407c`
 
@@ -988,6 +1054,7 @@ ENV LEIN_INSTALL=/usr/local/bin/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2b7106b86137d478472fd7f454a565dfa60e22f46ec1bdffdf02b177f6df3026`
 
@@ -1001,6 +1068,7 @@ WORKDIR /tmp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b571998b0653519b2b861750c3f9de584dcf84b6c26ba4a6d4947169d293b71a`
 
@@ -1014,6 +1082,7 @@ RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/lein
 -	Virtual Size: 16.7 MB (16680105 bytes)
 -	v2 Blob: `sha256:157bc403d0a0211f21ce221017b0debdcd6a5af0c96856cecdc644aace05e1b1`
 -	v2 Content-Length: 14.4 MB (14381013 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:37 GMT
 
 #### `2228328ea7c9ddf07aa85b6ddc3b6d0d7fcb6591c6d78d4a1999df969f7b3c16`
 
@@ -1027,6 +1096,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33ac63b86a18b2ce4c97359ce32b0923ba1fb4843ffb7559547297b435c14b69`
 
@@ -1040,6 +1110,7 @@ ENV LEIN_ROOT=1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3130b59767fe61ef2a54efdde0c6a4e6df9c8cb68f7c29124abca80e7c346f8`
 
@@ -1053,6 +1124,7 @@ RUN lein
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e333bb525345b7ee7ca382b5e1c58a0ff0e39f69c617a25e9683b2171feb48bc`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:27 GMT
 
 ## `clojure:lein-2.5.3-onbuild`
 
@@ -1076,6 +1148,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1089,6 +1162,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1106,6 +1180,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1126,6 +1201,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -1143,6 +1219,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -1156,6 +1233,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -1169,6 +1247,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -1188,6 +1267,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -1201,6 +1281,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -1214,6 +1295,7 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -1227,6 +1309,7 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -1240,6 +1323,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -1259,6 +1343,7 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -1272,6 +1357,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `bfbc1863caf1828756be03f8baf128f5914732e24d92cd876b84536428638ae3`
 
@@ -1285,6 +1371,7 @@ MAINTAINER Paul Lam <paul@quantisan.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b16eb1352a8cd7ca365d8eed3529c1939be18530f38adc6b88129e32e388f55e`
 
@@ -1298,6 +1385,7 @@ ENV LEIN_VERSION=2.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `056acfd96a17e5db927846a7ad13e486461c892a9daedabf691618ba745b407c`
 
@@ -1311,6 +1399,7 @@ ENV LEIN_INSTALL=/usr/local/bin/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2b7106b86137d478472fd7f454a565dfa60e22f46ec1bdffdf02b177f6df3026`
 
@@ -1324,6 +1413,7 @@ WORKDIR /tmp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b571998b0653519b2b861750c3f9de584dcf84b6c26ba4a6d4947169d293b71a`
 
@@ -1337,6 +1427,7 @@ RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/lein
 -	Virtual Size: 16.7 MB (16680105 bytes)
 -	v2 Blob: `sha256:157bc403d0a0211f21ce221017b0debdcd6a5af0c96856cecdc644aace05e1b1`
 -	v2 Content-Length: 14.4 MB (14381013 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:37 GMT
 
 #### `2228328ea7c9ddf07aa85b6ddc3b6d0d7fcb6591c6d78d4a1999df969f7b3c16`
 
@@ -1350,6 +1441,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33ac63b86a18b2ce4c97359ce32b0923ba1fb4843ffb7559547297b435c14b69`
 
@@ -1363,6 +1455,7 @@ ENV LEIN_ROOT=1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e3130b59767fe61ef2a54efdde0c6a4e6df9c8cb68f7c29124abca80e7c346f8`
 
@@ -1376,6 +1469,7 @@ RUN lein
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e333bb525345b7ee7ca382b5e1c58a0ff0e39f69c617a25e9683b2171feb48bc`
 -	v2 Content-Length: 164.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:44:27 GMT
 
 #### `d5e391fa223c345771da88b6569c3429aaf21cfa789a32cd26baf99094f10c0e`
 
@@ -1389,6 +1483,7 @@ MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1fe6a772a79c7c210ec9195709918cffa930810d456ae736311f134e1ccdaf0`
 
@@ -1402,6 +1497,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9faa28b3f6f5e1790ff77b083280b542369e40da97c9f1a4d8945594f5db29eb`
 
@@ -1415,6 +1511,7 @@ ONBUILD COPY project.clj /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2aa128026f78c92ff6fdea55b18157bf78c3d06f84632fd097366142b7e96b86`
 
@@ -1428,6 +1525,7 @@ ONBUILD RUN lein deps
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7244fd53da389c6bd54b098770b7cb3137283181cd04bb7d35b638ddd8831871`
 
@@ -1441,6 +1539,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5863bc31c43447d11f0f87213f48071bff648bbd74c5dd5ea29928e59d0d3d3f`
 
@@ -1454,3 +1553,4 @@ CMD ["lein" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

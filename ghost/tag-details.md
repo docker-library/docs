@@ -29,6 +29,7 @@ ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
 -	Virtual Size: 125.1 MB (125082947 bytes)
 -	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
 -	v2 Content-Length: 51.4 MB (51358904 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
 
 #### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 
@@ -42,6 +43,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
 
@@ -82,6 +84,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:a89fca3492257825c46b5b726695cb0e02096397b6a871489463d35ce509bf14`
 -	v2 Content-Length: 26.9 KB (26933 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:56 GMT
 
 #### `101ca5298eab16893deaea5a1090922ac10620fb2fe50af76836297151bc27f2`
 
@@ -95,6 +98,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5251f21819aabf24114b02dd6e86d1fdf5353ae49661536ed8b3168d2b44061`
 
@@ -108,6 +112,7 @@ ENV NODE_VERSION=4.2.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2677b4083309cf80d2804fe60ac8c530c05519d65d41847afae2b8e86398f52a`
 
@@ -121,6 +126,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 36.0 MB (35996283 bytes)
 -	v2 Blob: `sha256:000e1d971a0343d30d9e0fab71d1f11bfca1022716bcd483f3a299e940628d75`
 -	v2 Content-Length: 11.9 MB (11871476 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:47 GMT
 
 #### `f1d0bfedd488562d65f33c7fbbf8ff0ce2bc81ff592a2440ae1bf03fa2466223`
 
@@ -134,6 +140,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `10ecd54f2163ee8f8cbf61c37541672aa13a3cc52a26344b85a42887773ad916`
 
@@ -147,6 +154,7 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:4989e4db40ecc25d1f2d40d887eb7563b3fb34a30f24a0af6bebd00f3fc3ce98`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:36 GMT
 
 #### `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 
@@ -163,6 +171,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18a2909c4b728bf681e5dce1e567abce3b174b60e206f95632ead4d3498e9bc8`
 -	v2 Content-Length: 167.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:58 GMT
 
 #### `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
 
@@ -176,6 +185,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
 
@@ -197,6 +207,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:f4c1dbadb4eb248a39747802bf2162b215a0000280d29584ae3a7ace424a03e0`
 -	v2 Content-Length: 807.9 KB (807938 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:53 GMT
 
 #### `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
 
@@ -210,6 +221,7 @@ ENV GHOST_SOURCE=/usr/src/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
 
@@ -223,6 +235,7 @@ WORKDIR /usr/src/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
 
@@ -236,6 +249,7 @@ ENV GHOST_VERSION=0.7.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 
@@ -263,6 +277,7 @@ RUN buildDeps=' \
 -	Virtual Size: 145.4 MB (145428726 bytes)
 -	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
 -	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
 #### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
@@ -276,6 +291,7 @@ ENV GHOST_CONTENT=/var/lib/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 
@@ -303,6 +319,7 @@ VOLUME [/var/lib/ghost]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 
@@ -316,6 +333,7 @@ COPY file:b41fe7c683843b65a8ed24dad23de5e0d8320d0944dc2d48ad5905cfd0ef7959 in /e
 -	Virtual Size: 696.0 B
 -	v2 Blob: `sha256:500d2054b4fc9ee6b81cc48f4312353a62ab287312b79de82914ef7bd81e98d9`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:13 GMT
 
 #### `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 
@@ -329,6 +347,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 
@@ -342,6 +361,7 @@ EXPOSE 2368/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7e07760ac7a10a3a5fa832400ba3c992cd2f2a2a6a2143fc56994ac433ffa574`
 
@@ -355,6 +375,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ghost:0.7`
 
@@ -378,6 +399,7 @@ ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
 -	Virtual Size: 125.1 MB (125082947 bytes)
 -	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
 -	v2 Content-Length: 51.4 MB (51358904 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
 
 #### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 
@@ -391,6 +413,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
 
@@ -431,6 +454,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:a89fca3492257825c46b5b726695cb0e02096397b6a871489463d35ce509bf14`
 -	v2 Content-Length: 26.9 KB (26933 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:56 GMT
 
 #### `101ca5298eab16893deaea5a1090922ac10620fb2fe50af76836297151bc27f2`
 
@@ -444,6 +468,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5251f21819aabf24114b02dd6e86d1fdf5353ae49661536ed8b3168d2b44061`
 
@@ -457,6 +482,7 @@ ENV NODE_VERSION=4.2.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2677b4083309cf80d2804fe60ac8c530c05519d65d41847afae2b8e86398f52a`
 
@@ -470,6 +496,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 36.0 MB (35996283 bytes)
 -	v2 Blob: `sha256:000e1d971a0343d30d9e0fab71d1f11bfca1022716bcd483f3a299e940628d75`
 -	v2 Content-Length: 11.9 MB (11871476 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:47 GMT
 
 #### `f1d0bfedd488562d65f33c7fbbf8ff0ce2bc81ff592a2440ae1bf03fa2466223`
 
@@ -483,6 +510,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `10ecd54f2163ee8f8cbf61c37541672aa13a3cc52a26344b85a42887773ad916`
 
@@ -496,6 +524,7 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:4989e4db40ecc25d1f2d40d887eb7563b3fb34a30f24a0af6bebd00f3fc3ce98`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:36 GMT
 
 #### `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 
@@ -512,6 +541,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18a2909c4b728bf681e5dce1e567abce3b174b60e206f95632ead4d3498e9bc8`
 -	v2 Content-Length: 167.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:58 GMT
 
 #### `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
 
@@ -525,6 +555,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
 
@@ -546,6 +577,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:f4c1dbadb4eb248a39747802bf2162b215a0000280d29584ae3a7ace424a03e0`
 -	v2 Content-Length: 807.9 KB (807938 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:53 GMT
 
 #### `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
 
@@ -559,6 +591,7 @@ ENV GHOST_SOURCE=/usr/src/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
 
@@ -572,6 +605,7 @@ WORKDIR /usr/src/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
 
@@ -585,6 +619,7 @@ ENV GHOST_VERSION=0.7.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 
@@ -612,6 +647,7 @@ RUN buildDeps=' \
 -	Virtual Size: 145.4 MB (145428726 bytes)
 -	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
 -	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
 #### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
@@ -625,6 +661,7 @@ ENV GHOST_CONTENT=/var/lib/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 
@@ -652,6 +689,7 @@ VOLUME [/var/lib/ghost]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 
@@ -665,6 +703,7 @@ COPY file:b41fe7c683843b65a8ed24dad23de5e0d8320d0944dc2d48ad5905cfd0ef7959 in /e
 -	Virtual Size: 696.0 B
 -	v2 Blob: `sha256:500d2054b4fc9ee6b81cc48f4312353a62ab287312b79de82914ef7bd81e98d9`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:13 GMT
 
 #### `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 
@@ -678,6 +717,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 
@@ -691,6 +731,7 @@ EXPOSE 2368/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7e07760ac7a10a3a5fa832400ba3c992cd2f2a2a6a2143fc56994ac433ffa574`
 
@@ -704,6 +745,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ghost:0`
 
@@ -727,6 +769,7 @@ ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
 -	Virtual Size: 125.1 MB (125082947 bytes)
 -	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
 -	v2 Content-Length: 51.4 MB (51358904 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
 
 #### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 
@@ -740,6 +783,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
 
@@ -780,6 +824,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:a89fca3492257825c46b5b726695cb0e02096397b6a871489463d35ce509bf14`
 -	v2 Content-Length: 26.9 KB (26933 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:56 GMT
 
 #### `101ca5298eab16893deaea5a1090922ac10620fb2fe50af76836297151bc27f2`
 
@@ -793,6 +838,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5251f21819aabf24114b02dd6e86d1fdf5353ae49661536ed8b3168d2b44061`
 
@@ -806,6 +852,7 @@ ENV NODE_VERSION=4.2.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2677b4083309cf80d2804fe60ac8c530c05519d65d41847afae2b8e86398f52a`
 
@@ -819,6 +866,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 36.0 MB (35996283 bytes)
 -	v2 Blob: `sha256:000e1d971a0343d30d9e0fab71d1f11bfca1022716bcd483f3a299e940628d75`
 -	v2 Content-Length: 11.9 MB (11871476 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:47 GMT
 
 #### `f1d0bfedd488562d65f33c7fbbf8ff0ce2bc81ff592a2440ae1bf03fa2466223`
 
@@ -832,6 +880,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `10ecd54f2163ee8f8cbf61c37541672aa13a3cc52a26344b85a42887773ad916`
 
@@ -845,6 +894,7 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:4989e4db40ecc25d1f2d40d887eb7563b3fb34a30f24a0af6bebd00f3fc3ce98`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:36 GMT
 
 #### `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 
@@ -861,6 +911,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18a2909c4b728bf681e5dce1e567abce3b174b60e206f95632ead4d3498e9bc8`
 -	v2 Content-Length: 167.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:58 GMT
 
 #### `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
 
@@ -874,6 +925,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
 
@@ -895,6 +947,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:f4c1dbadb4eb248a39747802bf2162b215a0000280d29584ae3a7ace424a03e0`
 -	v2 Content-Length: 807.9 KB (807938 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:53 GMT
 
 #### `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
 
@@ -908,6 +961,7 @@ ENV GHOST_SOURCE=/usr/src/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
 
@@ -921,6 +975,7 @@ WORKDIR /usr/src/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
 
@@ -934,6 +989,7 @@ ENV GHOST_VERSION=0.7.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 
@@ -961,6 +1017,7 @@ RUN buildDeps=' \
 -	Virtual Size: 145.4 MB (145428726 bytes)
 -	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
 -	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
 #### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
@@ -974,6 +1031,7 @@ ENV GHOST_CONTENT=/var/lib/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 
@@ -1001,6 +1059,7 @@ VOLUME [/var/lib/ghost]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 
@@ -1014,6 +1073,7 @@ COPY file:b41fe7c683843b65a8ed24dad23de5e0d8320d0944dc2d48ad5905cfd0ef7959 in /e
 -	Virtual Size: 696.0 B
 -	v2 Blob: `sha256:500d2054b4fc9ee6b81cc48f4312353a62ab287312b79de82914ef7bd81e98d9`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:13 GMT
 
 #### `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 
@@ -1027,6 +1087,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 
@@ -1040,6 +1101,7 @@ EXPOSE 2368/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7e07760ac7a10a3a5fa832400ba3c992cd2f2a2a6a2143fc56994ac433ffa574`
 
@@ -1053,6 +1115,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ghost:latest`
 
@@ -1076,6 +1139,7 @@ ADD file:e5a3d20748c5d3dd5fa11542dfa4ef8b72a0bb78ce09f6dae30eff5d045c67aa in /
 -	Virtual Size: 125.1 MB (125082947 bytes)
 -	v2 Blob: `sha256:03e1855d4f316edea9545408dcac38be93e9ea6aba6e85610edf76db7ccbbfa7`
 -	v2 Content-Length: 51.4 MB (51358904 bytes)
+-	v2 Last-Modified: Mon, 25 Jan 2016 17:23:59 GMT
 
 #### `5eb1402f041415f4d72ec331c9388e4981420dfe88ef4e9bdf904d4687e4de09`
 
@@ -1089,6 +1153,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9287fae7a16e8788603ae069270aa825457065062247f4c04d4983f00eba37a6`
 
@@ -1129,6 +1194,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:a89fca3492257825c46b5b726695cb0e02096397b6a871489463d35ce509bf14`
 -	v2 Content-Length: 26.9 KB (26933 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:56 GMT
 
 #### `101ca5298eab16893deaea5a1090922ac10620fb2fe50af76836297151bc27f2`
 
@@ -1142,6 +1208,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5251f21819aabf24114b02dd6e86d1fdf5353ae49661536ed8b3168d2b44061`
 
@@ -1155,6 +1222,7 @@ ENV NODE_VERSION=4.2.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2677b4083309cf80d2804fe60ac8c530c05519d65d41847afae2b8e86398f52a`
 
@@ -1168,6 +1236,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 -	Virtual Size: 36.0 MB (35996283 bytes)
 -	v2 Blob: `sha256:000e1d971a0343d30d9e0fab71d1f11bfca1022716bcd483f3a299e940628d75`
 -	v2 Content-Length: 11.9 MB (11871476 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:47 GMT
 
 #### `f1d0bfedd488562d65f33c7fbbf8ff0ce2bc81ff592a2440ae1bf03fa2466223`
 
@@ -1181,6 +1250,7 @@ CMD ["node"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `10ecd54f2163ee8f8cbf61c37541672aa13a3cc52a26344b85a42887773ad916`
 
@@ -1194,6 +1264,7 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 -	Virtual Size: 335.1 KB (335105 bytes)
 -	v2 Blob: `sha256:4989e4db40ecc25d1f2d40d887eb7563b3fb34a30f24a0af6bebd00f3fc3ce98`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Mon, 01 Feb 2016 21:09:36 GMT
 
 #### `514d76401cec709c610d06f5c5d6a5f5f388537c92639ae01e622c4f5afb2b9c`
 
@@ -1210,6 +1281,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18a2909c4b728bf681e5dce1e567abce3b174b60e206f95632ead4d3498e9bc8`
 -	v2 Content-Length: 167.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:58 GMT
 
 #### `0d3e4e65d67a4d0881cd7e9a4fbaf75273eda61c5c9063d5eef5bb507f6be57f`
 
@@ -1223,6 +1295,7 @@ ENV GOSU_VERSION=1.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `685e297090ee11ab0546347483fc10ce3f9b17cf0d6b6f0c20f14c3f85a727c4`
 
@@ -1244,6 +1317,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:f4c1dbadb4eb248a39747802bf2162b215a0000280d29584ae3a7ace424a03e0`
 -	v2 Content-Length: 807.9 KB (807938 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:53 GMT
 
 #### `3f19dc927eed55dbd22bd14d5fe3891905e6fe7eab2565658548df5899f22870`
 
@@ -1257,6 +1331,7 @@ ENV GHOST_SOURCE=/usr/src/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cdc2eede315a74723fa67254c84ec8d8dbd133a3e4455e5a2b867471ccd3ffe8`
 
@@ -1270,6 +1345,7 @@ WORKDIR /usr/src/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00a5dc4a4a3e43a593ec26e1cfb3c1c3b963019b3be73d0a049b82ad5af1407f`
 
@@ -1283,6 +1359,7 @@ ENV GHOST_VERSION=0.7.8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbcb020e81eeedb9a2d9e65b21c2beb4ac175517252a13af4623cd461e7ff911`
 
@@ -1310,6 +1387,7 @@ RUN buildDeps=' \
 -	Virtual Size: 145.4 MB (145428726 bytes)
 -	v2 Blob: `sha256:a62441ae666f80f012c4192141197a0e203e7513bfa276cca620d47f84bf963a`
 -	v2 Content-Length: 23.5 MB (23470615 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:42 GMT
 
 #### `0089d6929aea99de236320a19c6635ad424a2d31be49f40385f79feb1f33c736`
 
@@ -1323,6 +1401,7 @@ ENV GHOST_CONTENT=/var/lib/ghost
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9f60fd14fb5842237593286f2da7ceb4365820321f470c7a258b23cef6f04037`
 
@@ -1350,6 +1429,7 @@ VOLUME [/var/lib/ghost]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b04490b8ae81a21520ef2167dfd93052fd410fff9583350e02b6db91687e5b50`
 
@@ -1363,6 +1443,7 @@ COPY file:b41fe7c683843b65a8ed24dad23de5e0d8320d0944dc2d48ad5905cfd0ef7959 in /e
 -	Virtual Size: 696.0 B
 -	v2 Blob: `sha256:500d2054b4fc9ee6b81cc48f4312353a62ab287312b79de82914ef7bd81e98d9`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:37:13 GMT
 
 #### `52d268b4b37ed68c0762534873045549fc5327f7ef09bf25a28f6fb463ddd3b1`
 
@@ -1376,6 +1457,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7820eddd0d38b8efe1bad8e101f2da249da3a39e5319260fb30e98980196378b`
 
@@ -1389,6 +1471,7 @@ EXPOSE 2368/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7e07760ac7a10a3a5fa832400ba3c992cd2f2a2a6a2143fc56994ac433ffa574`
 
@@ -1402,3 +1485,4 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

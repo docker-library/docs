@@ -28,6 +28,7 @@ MAINTAINER Fabio Rapposelli <fabio@vmware.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7d41096d06c78235a35f549572d46daf906658e9e0da6e1df73e5211c6187e3`
 
@@ -41,6 +42,7 @@ ADD file:6c713f1ee432812d5c5574824db8874bc153eafcf885446123ccc56e5f91f47b in /
 -	Virtual Size: 119.1 MB (119126903 bytes)
 -	v2 Blob: `sha256:6e39dbd9bad46f3d8143b5991b48c355c55da1eadeabdbe8912039f8a6a0d4bd`
 -	v2 Content-Length: 43.1 MB (43092630 bytes)
+-	v2 Last-Modified: Fri, 15 Jan 2016 17:07:15 GMT
 
 #### `b12b5ead0dad7bd8bf02889ccf7eacc82ce89c7ed4bad48e9d5c9f7ac110fdc2`
 
@@ -54,6 +56,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `photon:latest`
 
@@ -77,6 +80,7 @@ MAINTAINER Fabio Rapposelli <fabio@vmware.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7d41096d06c78235a35f549572d46daf906658e9e0da6e1df73e5211c6187e3`
 
@@ -90,6 +94,7 @@ ADD file:6c713f1ee432812d5c5574824db8874bc153eafcf885446123ccc56e5f91f47b in /
 -	Virtual Size: 119.1 MB (119126903 bytes)
 -	v2 Blob: `sha256:6e39dbd9bad46f3d8143b5991b48c355c55da1eadeabdbe8912039f8a6a0d4bd`
 -	v2 Content-Length: 43.1 MB (43092630 bytes)
+-	v2 Last-Modified: Fri, 15 Jan 2016 17:07:15 GMT
 
 #### `b12b5ead0dad7bd8bf02889ccf7eacc82ce89c7ed4bad48e9d5c9f7ac110fdc2`
 
@@ -103,6 +108,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `photon:1.0TP2`
 
@@ -126,6 +132,7 @@ MAINTAINER Fabio Rapposelli <fabio@vmware.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `590b61c4886f0443b9d1ebacf5949e365735cc391beb4fb41a055aa450a79883`
 
@@ -153,3 +160,4 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

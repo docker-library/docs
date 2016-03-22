@@ -30,6 +30,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -82,6 +83,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -99,6 +101,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `2ec18ad09e7db36879ebe6c314f02e4391d940e19f72b045bbc3e17b6b549a66`
 
@@ -132,6 +135,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:f5ae3a8c0650f746b35474250b03c0955998988d27a5e14fbedd379d3483ea19`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:41:59 GMT
 
 #### `0c429ca59e91be7561fc11ab6c00cd6720cb1da5e9bd0284567846b4c27a5b40`
 
@@ -250,6 +254,7 @@ RUN apt-get update &&\
 -	Virtual Size: 1.6 MB (1593305 bytes)
 -	v2 Blob: `sha256:d55a813f42dbde338929193ebf4030ecede949747c0129480d0b5d161f45dd50`
 -	v2 Content-Length: 577.5 KB (577493 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:50:55 GMT
 
 #### `e432710e36e749afc0c12be259237908e6530184ed894d45ba4c68593c3861ae`
 
@@ -265,6 +270,7 @@ RUN curl -L -o /tmp/glassfish-4.0.zip http://download.java.net/glassfish/4.0/rel
 -	Virtual Size: 124.7 MB (124661519 bytes)
 -	v2 Blob: `sha256:31a963a488c0efef1c143985f9b71be3fa3401e0aa4e1716b75239c97b8a6c3f`
 -	v2 Content-Length: 101.1 MB (101107437 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:50:47 GMT
 
 #### `9329c0d80f75124a50cf200e5c43c765a21325faa5e4443b9a6a784c4976f3ed`
 
@@ -330,6 +336,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -382,6 +389,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -399,6 +407,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `2ec18ad09e7db36879ebe6c314f02e4391d940e19f72b045bbc3e17b6b549a66`
 
@@ -432,6 +441,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:f5ae3a8c0650f746b35474250b03c0955998988d27a5e14fbedd379d3483ea19`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:41:59 GMT
 
 #### `0c429ca59e91be7561fc11ab6c00cd6720cb1da5e9bd0284567846b4c27a5b40`
 
@@ -550,6 +560,7 @@ RUN apt-get update &&\
 -	Virtual Size: 1.6 MB (1593305 bytes)
 -	v2 Blob: `sha256:d55a813f42dbde338929193ebf4030ecede949747c0129480d0b5d161f45dd50`
 -	v2 Content-Length: 577.5 KB (577493 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:50:55 GMT
 
 #### `e432710e36e749afc0c12be259237908e6530184ed894d45ba4c68593c3861ae`
 
@@ -565,6 +576,7 @@ RUN curl -L -o /tmp/glassfish-4.0.zip http://download.java.net/glassfish/4.0/rel
 -	Virtual Size: 124.7 MB (124661519 bytes)
 -	v2 Blob: `sha256:31a963a488c0efef1c143985f9b71be3fa3401e0aa4e1716b75239c97b8a6c3f`
 -	v2 Content-Length: 101.1 MB (101107437 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:50:47 GMT
 
 #### `9329c0d80f75124a50cf200e5c43c765a21325faa5e4443b9a6a784c4976f3ed`
 
@@ -630,6 +642,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -682,6 +695,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -699,6 +713,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -712,6 +727,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -745,6 +761,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -820,6 +837,7 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -833,6 +851,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `994c65c6eb589ef430445170a2b265116d9b73052be260439446277e04e8fdbc`
 
@@ -890,6 +909,7 @@ RUN apt-get update &&\
 -	Virtual Size: 1.6 MB (1584045 bytes)
 -	v2 Blob: `sha256:d6bd0c56ee53fd2d9ca885191dad8e6e7320dade6102631d9c9326e6f504b3b7`
 -	v2 Content-Length: 575.7 KB (575748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:52:23 GMT
 
 #### `63a7511b6ebf411f9055a57abe06df841a31bc230a08bf637f7c7a666d9bcdfa`
 
@@ -905,6 +925,7 @@ RUN curl -L -o /tmp/glassfish-4.1.zip http://download.java.net/glassfish/4.1/rel
 -	Virtual Size: 130.8 MB (130777277 bytes)
 -	v2 Blob: `sha256:9849e362ebcda7af0f67cd4c557032911aa4739989c5b49f8cd3ab6e0dabef15`
 -	v2 Content-Length: 106.7 MB (106678882 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:52:14 GMT
 
 #### `a3a3d9a2164b6812aa6ea0769bd3e9f5f6df86532b6de39a4c74283a920a4485`
 
@@ -970,6 +991,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1022,6 +1044,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -1039,6 +1062,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -1052,6 +1076,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -1085,6 +1110,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -1160,6 +1186,7 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -1173,6 +1200,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `994c65c6eb589ef430445170a2b265116d9b73052be260439446277e04e8fdbc`
 
@@ -1230,6 +1258,7 @@ RUN apt-get update &&\
 -	Virtual Size: 1.6 MB (1584045 bytes)
 -	v2 Blob: `sha256:d6bd0c56ee53fd2d9ca885191dad8e6e7320dade6102631d9c9326e6f504b3b7`
 -	v2 Content-Length: 575.7 KB (575748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:52:23 GMT
 
 #### `63a7511b6ebf411f9055a57abe06df841a31bc230a08bf637f7c7a666d9bcdfa`
 
@@ -1245,6 +1274,7 @@ RUN curl -L -o /tmp/glassfish-4.1.zip http://download.java.net/glassfish/4.1/rel
 -	Virtual Size: 130.8 MB (130777277 bytes)
 -	v2 Blob: `sha256:9849e362ebcda7af0f67cd4c557032911aa4739989c5b49f8cd3ab6e0dabef15`
 -	v2 Content-Length: 106.7 MB (106678882 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:52:14 GMT
 
 #### `a3a3d9a2164b6812aa6ea0769bd3e9f5f6df86532b6de39a4c74283a920a4485`
 
@@ -1310,6 +1340,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1362,6 +1393,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -1379,6 +1411,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -1392,6 +1425,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -1425,6 +1459,7 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -1500,6 +1535,7 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -1513,6 +1549,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `994c65c6eb589ef430445170a2b265116d9b73052be260439446277e04e8fdbc`
 
@@ -1570,6 +1607,7 @@ RUN apt-get update &&\
 -	Virtual Size: 1.6 MB (1584045 bytes)
 -	v2 Blob: `sha256:d6bd0c56ee53fd2d9ca885191dad8e6e7320dade6102631d9c9326e6f504b3b7`
 -	v2 Content-Length: 575.7 KB (575748 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:52:23 GMT
 
 #### `63a7511b6ebf411f9055a57abe06df841a31bc230a08bf637f7c7a666d9bcdfa`
 
@@ -1585,6 +1623,7 @@ RUN curl -L -o /tmp/glassfish-4.1.zip http://download.java.net/glassfish/4.1/rel
 -	Virtual Size: 130.8 MB (130777277 bytes)
 -	v2 Blob: `sha256:9849e362ebcda7af0f67cd4c557032911aa4739989c5b49f8cd3ab6e0dabef15`
 -	v2 Content-Length: 106.7 MB (106678882 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:52:14 GMT
 
 #### `a3a3d9a2164b6812aa6ea0769bd3e9f5f6df86532b6de39a4c74283a920a4485`
 

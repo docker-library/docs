@@ -30,6 +30,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -43,6 +44,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 
@@ -56,6 +58,7 @@ MAINTAINER Odoo S.A. <info@odoo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 
@@ -84,6 +87,7 @@ RUN set -x;\
 -	Virtual Size: 200.2 MB (200188332 bytes)
 -	v2 Blob: `sha256:050c9aa75173f42a81caf988347012416b8d924a7995e5b4018269c8519ee914`
 -	v2 Content-Length: 83.8 MB (83772029 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:07 GMT
 
 #### `4c99a9eacb1c7da61f101c469e017ca3d07f660881fd14d687fe9a4c00942522`
 
@@ -97,6 +101,7 @@ ENV ODOO_VERSION=8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467551ca965a09e2c98e5b94d4c138f00ec703b150d60754091f0636be248f49`
 
@@ -110,6 +115,7 @@ ENV ODOO_RELEASE=20160204
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e9ec7247a47d5f33c1a9f210fa50cfc06fd04a94162a23a2a4cc35aafc05a87f`
 
@@ -129,6 +135,7 @@ RUN set -x;\
 -	Virtual Size: 497.1 MB (497053969 bytes)
 -	v2 Blob: `sha256:8d2a50ee19c2783f2ced5a31f6eff4a06342ad9ba73b80330d252014cf3fea65`
 -	v2 Content-Length: 129.7 MB (129681331 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:16:33 GMT
 
 #### `a7dc2799db2391da389a271cc638685e87bff59587402a7d2bb961cb6990bc9b`
 
@@ -142,6 +149,7 @@ COPY file:3a1bf91711eb55f536989442ee439abce1fa8126b99577784a0aaeabd24e1454 in /
 -	Virtual Size: 399.0 B
 -	v2 Blob: `sha256:87973af7e4f9d78ab637f08da67cdadba4d9bcc5b5902975c5013e1c8f76bb87`
 -	v2 Content-Length: 343.0 B
+-	v2 Last-Modified: Tue, 07 Apr 2015 08:15:20 GMT
 
 #### `8587e1cf2e54308a0483339597b68ab0c60819db48016047b169bc1a09f74846`
 
@@ -155,6 +163,7 @@ COPY file:8835af7f1cff467015a91e733dd0f8e13fcebf89656b72cdeaaf5359b2a1ef9f in /e
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:eb64b36ac0553bf542b76a3d78107fdd23274ba691dedf054eaa73a2763d7793`
 -	v2 Content-Length: 591.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:15:33 GMT
 
 #### `5518257e5977e7a5bb16f8c97160f0b35930e6062af539e5e29c5c87b941fa72`
 
@@ -168,6 +177,7 @@ RUN chown odoo /etc/odoo/openerp-server.conf
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:8fe369d228da06aa7e9863ba2cb9620a92f5919bc73855f2cb041d45ce9abb89`
 -	v2 Content-Length: 593.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:15:30 GMT
 
 #### `c56f4317a48517ab44df2c896aaa9a66d82b9e0cc04f40f0de7cb1a7034da64a`
 
@@ -182,6 +192,7 @@ RUN mkdir -p /mnt/extra-addons\
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:bbd28dfb58783a37e7ce414b264f501d1c91c55fcd5293b3efd8ad212834478d`
 -	v2 Content-Length: 124.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:15:27 GMT
 
 #### `c4d1c530842c890871fd32513dc75fcf4933d66457a3e4349c3e236799d34817`
 
@@ -195,6 +206,7 @@ VOLUME [/var/lib/odoo /mnt/extra-addons]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab8f6778285939630b0d2b3555f8eb140b5503380080e59aa38e4c454f7a84de`
 
@@ -208,6 +220,7 @@ EXPOSE 8069/tcp 8071/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ff6a4cd66354fbaca6cb36b4bf1c007a7c864ec882e6c24f731e1ab90110048`
 
@@ -221,6 +234,7 @@ ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7886789d52fb187d952a95fc8746fbcc91855c29f9959d30dd327c76d90d16a5`
 
@@ -234,6 +248,7 @@ USER [odoo]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1270659ce5435ebce2c7e56b43213ad990289473ff520fb3dc0bc53107704b1f`
 
@@ -247,6 +262,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1366a6cc3fc20266a08ea0b1a2ff876636ba755078d4d1ad32783082f84236eb`
 
@@ -260,6 +276,7 @@ CMD ["openerp-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `odoo:8`
 
@@ -283,6 +300,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -296,6 +314,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 
@@ -309,6 +328,7 @@ MAINTAINER Odoo S.A. <info@odoo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 
@@ -337,6 +357,7 @@ RUN set -x;\
 -	Virtual Size: 200.2 MB (200188332 bytes)
 -	v2 Blob: `sha256:050c9aa75173f42a81caf988347012416b8d924a7995e5b4018269c8519ee914`
 -	v2 Content-Length: 83.8 MB (83772029 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:07 GMT
 
 #### `4c99a9eacb1c7da61f101c469e017ca3d07f660881fd14d687fe9a4c00942522`
 
@@ -350,6 +371,7 @@ ENV ODOO_VERSION=8.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467551ca965a09e2c98e5b94d4c138f00ec703b150d60754091f0636be248f49`
 
@@ -363,6 +385,7 @@ ENV ODOO_RELEASE=20160204
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e9ec7247a47d5f33c1a9f210fa50cfc06fd04a94162a23a2a4cc35aafc05a87f`
 
@@ -382,6 +405,7 @@ RUN set -x;\
 -	Virtual Size: 497.1 MB (497053969 bytes)
 -	v2 Blob: `sha256:8d2a50ee19c2783f2ced5a31f6eff4a06342ad9ba73b80330d252014cf3fea65`
 -	v2 Content-Length: 129.7 MB (129681331 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:16:33 GMT
 
 #### `a7dc2799db2391da389a271cc638685e87bff59587402a7d2bb961cb6990bc9b`
 
@@ -395,6 +419,7 @@ COPY file:3a1bf91711eb55f536989442ee439abce1fa8126b99577784a0aaeabd24e1454 in /
 -	Virtual Size: 399.0 B
 -	v2 Blob: `sha256:87973af7e4f9d78ab637f08da67cdadba4d9bcc5b5902975c5013e1c8f76bb87`
 -	v2 Content-Length: 343.0 B
+-	v2 Last-Modified: Tue, 07 Apr 2015 08:15:20 GMT
 
 #### `8587e1cf2e54308a0483339597b68ab0c60819db48016047b169bc1a09f74846`
 
@@ -408,6 +433,7 @@ COPY file:8835af7f1cff467015a91e733dd0f8e13fcebf89656b72cdeaaf5359b2a1ef9f in /e
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:eb64b36ac0553bf542b76a3d78107fdd23274ba691dedf054eaa73a2763d7793`
 -	v2 Content-Length: 591.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:15:33 GMT
 
 #### `5518257e5977e7a5bb16f8c97160f0b35930e6062af539e5e29c5c87b941fa72`
 
@@ -421,6 +447,7 @@ RUN chown odoo /etc/odoo/openerp-server.conf
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:8fe369d228da06aa7e9863ba2cb9620a92f5919bc73855f2cb041d45ce9abb89`
 -	v2 Content-Length: 593.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:15:30 GMT
 
 #### `c56f4317a48517ab44df2c896aaa9a66d82b9e0cc04f40f0de7cb1a7034da64a`
 
@@ -435,6 +462,7 @@ RUN mkdir -p /mnt/extra-addons\
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:bbd28dfb58783a37e7ce414b264f501d1c91c55fcd5293b3efd8ad212834478d`
 -	v2 Content-Length: 124.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:15:27 GMT
 
 #### `c4d1c530842c890871fd32513dc75fcf4933d66457a3e4349c3e236799d34817`
 
@@ -448,6 +476,7 @@ VOLUME [/var/lib/odoo /mnt/extra-addons]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab8f6778285939630b0d2b3555f8eb140b5503380080e59aa38e4c454f7a84de`
 
@@ -461,6 +490,7 @@ EXPOSE 8069/tcp 8071/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ff6a4cd66354fbaca6cb36b4bf1c007a7c864ec882e6c24f731e1ab90110048`
 
@@ -474,6 +504,7 @@ ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7886789d52fb187d952a95fc8746fbcc91855c29f9959d30dd327c76d90d16a5`
 
@@ -487,6 +518,7 @@ USER [odoo]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1270659ce5435ebce2c7e56b43213ad990289473ff520fb3dc0bc53107704b1f`
 
@@ -500,6 +532,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1366a6cc3fc20266a08ea0b1a2ff876636ba755078d4d1ad32783082f84236eb`
 
@@ -513,6 +546,7 @@ CMD ["openerp-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `odoo:9.0`
 
@@ -536,6 +570,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -549,6 +584,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 
@@ -562,6 +598,7 @@ MAINTAINER Odoo S.A. <info@odoo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 
@@ -590,6 +627,7 @@ RUN set -x;\
 -	Virtual Size: 200.2 MB (200188332 bytes)
 -	v2 Blob: `sha256:050c9aa75173f42a81caf988347012416b8d924a7995e5b4018269c8519ee914`
 -	v2 Content-Length: 83.8 MB (83772029 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:07 GMT
 
 #### `1e5ad7f7f2b69309aeb0c6401c73648a87255fbcce7abb3955d0660f443f0682`
 
@@ -603,6 +641,7 @@ ENV ODOO_VERSION=9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d4cc72673721ff4902df894839888eac5cb835d284d4628c9406b5c8dcfd19eb`
 
@@ -616,6 +655,7 @@ ENV ODOO_RELEASE=20160204
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a0374e525252d6cd3d8792b43a21f384c119bfdb0c55f55a892244887981947`
 
@@ -635,6 +675,7 @@ RUN set -x;\
 -	Virtual Size: 515.8 MB (515821542 bytes)
 -	v2 Blob: `sha256:9ff27d68929db19f82d0bafd90af947ba88c3d593deb90889fb2c2df7fed79f3`
 -	v2 Content-Length: 133.9 MB (133915572 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:18:54 GMT
 
 #### `6c30e6b22014df1d12b1db695c10c41218d907e50e58b81b73fb4305cd257736`
 
@@ -648,6 +689,7 @@ COPY file:3a1bf91711eb55f536989442ee439abce1fa8126b99577784a0aaeabd24e1454 in /
 -	Virtual Size: 399.0 B
 -	v2 Blob: `sha256:3207a3c8a00132d640a64dc3b6e7fedf12d1d01fac1f8dd07045a377b4738dec`
 -	v2 Content-Length: 342.0 B
+-	v2 Last-Modified: Thu, 08 Oct 2015 18:25:02 GMT
 
 #### `b59f9b9f72b358f74fedcdf325077e6a8c2d2827a32efbeeec6278189f8f483f`
 
@@ -661,6 +703,7 @@ COPY file:8835af7f1cff467015a91e733dd0f8e13fcebf89656b72cdeaaf5359b2a1ef9f in /e
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:5b1ff5b183ae2228125d7e1b3a521831fcd093687336eafacacb13cb912b2f32`
 -	v2 Content-Length: 590.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:55 GMT
 
 #### `ed3240c0c610a7fbcc18492efcde00634eabda5951a841f3b2a1ccebe363e2ce`
 
@@ -674,6 +717,7 @@ RUN chown odoo /etc/odoo/openerp-server.conf
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:32e082fafec5d3e225d97ff95651c6ce44962735eee3d66623249aabcbf4d66b`
 -	v2 Content-Length: 594.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:53 GMT
 
 #### `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 
@@ -688,6 +732,7 @@ RUN mkdir -p /mnt/extra-addons\
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:dc14bd177ffaded56b769a72ff12eb79b7b0b9766367e4479f50ee4e3653f154`
 -	v2 Content-Length: 124.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:50 GMT
 
 #### `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 
@@ -701,6 +746,7 @@ VOLUME [/var/lib/odoo /mnt/extra-addons]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ef23d8e53e359428dae8c4d39c1a0ff63f08875490b33fdb49a4e09b626a9dc`
 
@@ -714,6 +760,7 @@ EXPOSE 8069/tcp 8071/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd91c339da6658b5bc2d658d8581c4703b14c2d333c9b0ef41a786e0e2542e46`
 
@@ -727,6 +774,7 @@ ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1193d8ad79d611b0b45e81676ebb7c4b3bd0d52707cdf5aef47ef6f58b81f6b4`
 
@@ -740,6 +788,7 @@ USER [odoo]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1034463d0e8c18bf074a801f64011ef28fc97e21824fe96c55df4395c2db8489`
 
@@ -753,6 +802,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a8e3ef9eb83b7cacbad4793c4a291f2566e744a25e8819dd1995202d6812988b`
 
@@ -766,6 +816,7 @@ CMD ["openerp-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `odoo:9`
 
@@ -789,6 +840,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -802,6 +854,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 
@@ -815,6 +868,7 @@ MAINTAINER Odoo S.A. <info@odoo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 
@@ -843,6 +897,7 @@ RUN set -x;\
 -	Virtual Size: 200.2 MB (200188332 bytes)
 -	v2 Blob: `sha256:050c9aa75173f42a81caf988347012416b8d924a7995e5b4018269c8519ee914`
 -	v2 Content-Length: 83.8 MB (83772029 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:07 GMT
 
 #### `1e5ad7f7f2b69309aeb0c6401c73648a87255fbcce7abb3955d0660f443f0682`
 
@@ -856,6 +911,7 @@ ENV ODOO_VERSION=9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d4cc72673721ff4902df894839888eac5cb835d284d4628c9406b5c8dcfd19eb`
 
@@ -869,6 +925,7 @@ ENV ODOO_RELEASE=20160204
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a0374e525252d6cd3d8792b43a21f384c119bfdb0c55f55a892244887981947`
 
@@ -888,6 +945,7 @@ RUN set -x;\
 -	Virtual Size: 515.8 MB (515821542 bytes)
 -	v2 Blob: `sha256:9ff27d68929db19f82d0bafd90af947ba88c3d593deb90889fb2c2df7fed79f3`
 -	v2 Content-Length: 133.9 MB (133915572 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:18:54 GMT
 
 #### `6c30e6b22014df1d12b1db695c10c41218d907e50e58b81b73fb4305cd257736`
 
@@ -901,6 +959,7 @@ COPY file:3a1bf91711eb55f536989442ee439abce1fa8126b99577784a0aaeabd24e1454 in /
 -	Virtual Size: 399.0 B
 -	v2 Blob: `sha256:3207a3c8a00132d640a64dc3b6e7fedf12d1d01fac1f8dd07045a377b4738dec`
 -	v2 Content-Length: 342.0 B
+-	v2 Last-Modified: Thu, 08 Oct 2015 18:25:02 GMT
 
 #### `b59f9b9f72b358f74fedcdf325077e6a8c2d2827a32efbeeec6278189f8f483f`
 
@@ -914,6 +973,7 @@ COPY file:8835af7f1cff467015a91e733dd0f8e13fcebf89656b72cdeaaf5359b2a1ef9f in /e
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:5b1ff5b183ae2228125d7e1b3a521831fcd093687336eafacacb13cb912b2f32`
 -	v2 Content-Length: 590.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:55 GMT
 
 #### `ed3240c0c610a7fbcc18492efcde00634eabda5951a841f3b2a1ccebe363e2ce`
 
@@ -927,6 +987,7 @@ RUN chown odoo /etc/odoo/openerp-server.conf
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:32e082fafec5d3e225d97ff95651c6ce44962735eee3d66623249aabcbf4d66b`
 -	v2 Content-Length: 594.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:53 GMT
 
 #### `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 
@@ -941,6 +1002,7 @@ RUN mkdir -p /mnt/extra-addons\
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:dc14bd177ffaded56b769a72ff12eb79b7b0b9766367e4479f50ee4e3653f154`
 -	v2 Content-Length: 124.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:50 GMT
 
 #### `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 
@@ -954,6 +1016,7 @@ VOLUME [/var/lib/odoo /mnt/extra-addons]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ef23d8e53e359428dae8c4d39c1a0ff63f08875490b33fdb49a4e09b626a9dc`
 
@@ -967,6 +1030,7 @@ EXPOSE 8069/tcp 8071/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd91c339da6658b5bc2d658d8581c4703b14c2d333c9b0ef41a786e0e2542e46`
 
@@ -980,6 +1044,7 @@ ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1193d8ad79d611b0b45e81676ebb7c4b3bd0d52707cdf5aef47ef6f58b81f6b4`
 
@@ -993,6 +1058,7 @@ USER [odoo]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1034463d0e8c18bf074a801f64011ef28fc97e21824fe96c55df4395c2db8489`
 
@@ -1006,6 +1072,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a8e3ef9eb83b7cacbad4793c4a291f2566e744a25e8819dd1995202d6812988b`
 
@@ -1019,6 +1086,7 @@ CMD ["openerp-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `odoo:latest`
 
@@ -1042,6 +1110,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1055,6 +1124,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f04f72cbf3bd79994f855a0abb07768d5815034561d837578117c415576074a9`
 
@@ -1068,6 +1138,7 @@ MAINTAINER Odoo S.A. <info@odoo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `343bcf71c8d739b396e0302ac203583f4d55b7e31dbd001b3ca5d1fea52becea`
 
@@ -1096,6 +1167,7 @@ RUN set -x;\
 -	Virtual Size: 200.2 MB (200188332 bytes)
 -	v2 Blob: `sha256:050c9aa75173f42a81caf988347012416b8d924a7995e5b4018269c8519ee914`
 -	v2 Content-Length: 83.8 MB (83772029 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:07 GMT
 
 #### `1e5ad7f7f2b69309aeb0c6401c73648a87255fbcce7abb3955d0660f443f0682`
 
@@ -1109,6 +1181,7 @@ ENV ODOO_VERSION=9.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d4cc72673721ff4902df894839888eac5cb835d284d4628c9406b5c8dcfd19eb`
 
@@ -1122,6 +1195,7 @@ ENV ODOO_RELEASE=20160204
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a0374e525252d6cd3d8792b43a21f384c119bfdb0c55f55a892244887981947`
 
@@ -1141,6 +1215,7 @@ RUN set -x;\
 -	Virtual Size: 515.8 MB (515821542 bytes)
 -	v2 Blob: `sha256:9ff27d68929db19f82d0bafd90af947ba88c3d593deb90889fb2c2df7fed79f3`
 -	v2 Content-Length: 133.9 MB (133915572 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:18:54 GMT
 
 #### `6c30e6b22014df1d12b1db695c10c41218d907e50e58b81b73fb4305cd257736`
 
@@ -1154,6 +1229,7 @@ COPY file:3a1bf91711eb55f536989442ee439abce1fa8126b99577784a0aaeabd24e1454 in /
 -	Virtual Size: 399.0 B
 -	v2 Blob: `sha256:3207a3c8a00132d640a64dc3b6e7fedf12d1d01fac1f8dd07045a377b4738dec`
 -	v2 Content-Length: 342.0 B
+-	v2 Last-Modified: Thu, 08 Oct 2015 18:25:02 GMT
 
 #### `b59f9b9f72b358f74fedcdf325077e6a8c2d2827a32efbeeec6278189f8f483f`
 
@@ -1167,6 +1243,7 @@ COPY file:8835af7f1cff467015a91e733dd0f8e13fcebf89656b72cdeaaf5359b2a1ef9f in /e
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:5b1ff5b183ae2228125d7e1b3a521831fcd093687336eafacacb13cb912b2f32`
 -	v2 Content-Length: 590.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:55 GMT
 
 #### `ed3240c0c610a7fbcc18492efcde00634eabda5951a841f3b2a1ccebe363e2ce`
 
@@ -1180,6 +1257,7 @@ RUN chown odoo /etc/odoo/openerp-server.conf
 -	Virtual Size: 883.0 B
 -	v2 Blob: `sha256:32e082fafec5d3e225d97ff95651c6ce44962735eee3d66623249aabcbf4d66b`
 -	v2 Content-Length: 594.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:53 GMT
 
 #### `ebc5eacaab6a99bfc3ba9cca4d29e4f2118740cb04e4f9dedb1864ec93f6532b`
 
@@ -1194,6 +1272,7 @@ RUN mkdir -p /mnt/extra-addons\
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:dc14bd177ffaded56b769a72ff12eb79b7b0b9766367e4479f50ee4e3653f154`
 -	v2 Content-Length: 124.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 17:17:50 GMT
 
 #### `090ff52183c0cf6473c7adffb133c2838b7be297ed4061bfdd013907bcee4aca`
 
@@ -1207,6 +1286,7 @@ VOLUME [/var/lib/odoo /mnt/extra-addons]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3ef23d8e53e359428dae8c4d39c1a0ff63f08875490b33fdb49a4e09b626a9dc`
 
@@ -1220,6 +1300,7 @@ EXPOSE 8069/tcp 8071/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd91c339da6658b5bc2d658d8581c4703b14c2d333c9b0ef41a786e0e2542e46`
 
@@ -1233,6 +1314,7 @@ ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1193d8ad79d611b0b45e81676ebb7c4b3bd0d52707cdf5aef47ef6f58b81f6b4`
 
@@ -1246,6 +1328,7 @@ USER [odoo]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1034463d0e8c18bf074a801f64011ef28fc97e21824fe96c55df4395c2db8489`
 
@@ -1259,6 +1342,7 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a8e3ef9eb83b7cacbad4793c4a291f2566e744a25e8819dd1995202d6812988b`
 
@@ -1272,3 +1356,4 @@ CMD ["openerp-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

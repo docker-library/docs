@@ -30,6 +30,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -55,6 +56,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -138,6 +140,7 @@ RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/
 -	Virtual Size: 329.3 KB (329277 bytes)
 -	v2 Blob: `sha256:d911af510afcf0e57f36ce3fe5c3ee18668c9113994da0af3679adc66b81f3e4`
 -	v2 Content-Length: 1.8 KB (1784 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:33 GMT
 
 #### `21fa681a33a81cd77890ac96b678b10728b55e107642b33eaace49cb440095f8`
 
@@ -151,6 +154,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 126.0 KB (125986 bytes)
 -	v2 Blob: `sha256:6fcaf8f95f9cd4ba74da47e1399e64cac2d64f787475df5e30f325e87102d757`
 -	v2 Content-Length: 114.8 KB (114792 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:30 GMT
 
 #### `f21a1dab18213cca213a94fee967c3dddcc9e4c58c397a2208f6cb70b8980298`
 
@@ -164,6 +168,7 @@ RUN wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --
 -	Virtual Size: 2.7 MB (2696536 bytes)
 -	v2 Blob: `sha256:aad84703ba505ff729acfab0e3176f565645f4b81c9e1ac6fed2997180ae7a42`
 -	v2 Content-Length: 807.6 KB (807587 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:27 GMT
 
 #### `f96d9214e2a44ba3905a1276d422aa70ea3ad81a5c33b3cad9303e3c13ecbe35`
 
@@ -261,6 +266,7 @@ RUN mkdir /opt/files   && wget -q https://jdbc.postgresql.org/download/${POSTGRE
 -	Virtual Size: 1.4 MB (1448270 bytes)
 -	v2 Blob: `sha256:b0699dec7304ab3cd4383a89389870f2820e21a8b950bb025783ea43e56b050f`
 -	v2 Content-Length: 1.4 MB (1382493 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:10 GMT
 
 #### `603acb83b685c4f2f2e7bd5490987fe83bfd896b60449b1c93cd8f02e164fd5d`
 
@@ -274,6 +280,7 @@ RUN wget -q http://download.forge.ow2.org/bonita/BonitaBPMCommunity-${BONITA_VER
 -	Virtual Size: 70.8 MB (70833115 bytes)
 -	v2 Blob: `sha256:8c09a4f14e9ca07fa0d417a2e55eda2f7345453a0260e1ffe47bc9004a81cb3f`
 -	v2 Content-Length: 70.6 MB (70572944 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:05 GMT
 
 #### `3ec4735398ef5d657de5c79e6504125766efe93ebc4af3469f25c816ae7e90d9`
 
@@ -301,6 +308,7 @@ COPY dir:1bf4f163091133a9e6147b81120df8e6bad4ab82e46b60adce16c1dd28ae7201 in /op
 -	Virtual Size: 35.4 KB (35398 bytes)
 -	v2 Blob: `sha256:3c5b05aba1355732c082dd9e46caa1372096e6e11cc2e92c43cf1fb33c143ac7`
 -	v2 Content-Length: 5.7 KB (5723 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:13:51 GMT
 
 #### `125055e1ce429a163150fa9780c69a2da410cb53505f1eb7f253156b8f845b4e`
 
@@ -366,6 +374,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -391,6 +400,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -474,6 +484,7 @@ RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/
 -	Virtual Size: 329.3 KB (329277 bytes)
 -	v2 Blob: `sha256:d911af510afcf0e57f36ce3fe5c3ee18668c9113994da0af3679adc66b81f3e4`
 -	v2 Content-Length: 1.8 KB (1784 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:33 GMT
 
 #### `21fa681a33a81cd77890ac96b678b10728b55e107642b33eaace49cb440095f8`
 
@@ -487,6 +498,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 126.0 KB (125986 bytes)
 -	v2 Blob: `sha256:6fcaf8f95f9cd4ba74da47e1399e64cac2d64f787475df5e30f325e87102d757`
 -	v2 Content-Length: 114.8 KB (114792 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:30 GMT
 
 #### `f21a1dab18213cca213a94fee967c3dddcc9e4c58c397a2208f6cb70b8980298`
 
@@ -500,6 +512,7 @@ RUN wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --
 -	Virtual Size: 2.7 MB (2696536 bytes)
 -	v2 Blob: `sha256:aad84703ba505ff729acfab0e3176f565645f4b81c9e1ac6fed2997180ae7a42`
 -	v2 Content-Length: 807.6 KB (807587 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:27 GMT
 
 #### `99fa6d9afacc19c522e86487b7dc25c4e5db7cec9e6acf6f1e3589251507a821`
 
@@ -597,6 +610,7 @@ RUN mkdir /opt/files   && wget -q https://jdbc.postgresql.org/download/${POSTGRE
 -	Virtual Size: 1.4 MB (1448270 bytes)
 -	v2 Blob: `sha256:de03a3ad8e312e9e36ef98500588d5495c9c05d300c021c5759057be02fae011`
 -	v2 Content-Length: 1.4 MB (1382494 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:15:59 GMT
 
 #### `c3f0824c93bdaec1cfd3dae05b1e8912a2610d7c16ab2b1c10bc10340fa283e4`
 
@@ -610,6 +624,7 @@ RUN wget -q http://download.forge.ow2.org/bonita/BonitaBPMCommunity-${BONITA_VER
 -	Virtual Size: 70.9 MB (70877156 bytes)
 -	v2 Blob: `sha256:0fd7a2aaa596219f925b00dea23db7552e4b3217b0da4e1c040d4a3e9ae0e922`
 -	v2 Content-Length: 70.6 MB (70610743 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:15:53 GMT
 
 #### `3de0a8d8b7baf9df503d0d8230fab4089e3c8bd5525e5d0671ff396f0e702563`
 
@@ -651,6 +666,7 @@ COPY dir:3d8bb8a36892f56dce1a6d478bab52fa906fd1761d0f993762a669780ab02b6f in /op
 -	Virtual Size: 7.3 KB (7334 bytes)
 -	v2 Blob: `sha256:d4f93902d9da85fdbcf200cdb7807945c1a0ee96aef6783f58bb733a4b866726`
 -	v2 Content-Length: 2.2 KB (2196 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:15:39 GMT
 
 #### `e8b5dfabe28321810af350f3c24fe5d7870f842d03536a701deb08cba234fffc`
 
@@ -702,6 +718,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -727,6 +744,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -810,6 +828,7 @@ RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/
 -	Virtual Size: 329.3 KB (329277 bytes)
 -	v2 Blob: `sha256:d911af510afcf0e57f36ce3fe5c3ee18668c9113994da0af3679adc66b81f3e4`
 -	v2 Content-Length: 1.8 KB (1784 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:33 GMT
 
 #### `21fa681a33a81cd77890ac96b678b10728b55e107642b33eaace49cb440095f8`
 
@@ -823,6 +842,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 126.0 KB (125986 bytes)
 -	v2 Blob: `sha256:6fcaf8f95f9cd4ba74da47e1399e64cac2d64f787475df5e30f325e87102d757`
 -	v2 Content-Length: 114.8 KB (114792 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:30 GMT
 
 #### `f21a1dab18213cca213a94fee967c3dddcc9e4c58c397a2208f6cb70b8980298`
 
@@ -836,6 +856,7 @@ RUN wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --
 -	Virtual Size: 2.7 MB (2696536 bytes)
 -	v2 Blob: `sha256:aad84703ba505ff729acfab0e3176f565645f4b81c9e1ac6fed2997180ae7a42`
 -	v2 Content-Length: 807.6 KB (807587 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:27 GMT
 
 #### `8862f4f8ddf463bf9392884fa6dba3cb24c080db5dbf02b0b61fcd9d77478294`
 
@@ -933,6 +954,7 @@ RUN mkdir /opt/files   && wget -q https://jdbc.postgresql.org/download/${POSTGRE
 -	Virtual Size: 1.4 MB (1448270 bytes)
 -	v2 Blob: `sha256:169478b799c9da6820b585d9fb8ac0a8e8122f73c0be65abf4ead3925b5a971d`
 -	v2 Content-Length: 1.4 MB (1382494 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:16:45 GMT
 
 #### `31811fd15438cba0df628bf66274980599d261dc212272446b659e9bb2a90455`
 
@@ -946,6 +968,7 @@ RUN wget -q http://download.forge.ow2.org/bonita/BonitaBPMCommunity-${BONITA_VER
 -	Virtual Size: 70.8 MB (70849692 bytes)
 -	v2 Blob: `sha256:12b4f427ec5c741b87da59c851d47cf23827ea8e626289ae908f92f6c95b78ae`
 -	v2 Content-Length: 70.6 MB (70583603 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:16:39 GMT
 
 #### `ab15699a3829f103ee0c384ea7dcc62fc43b9d296f6bb51e2883ea061912354b`
 
@@ -973,6 +996,7 @@ COPY dir:1f07f904e6255e5d7941e89b875e11d0ba41baf086df1314acc67bf0d02ac405 in /op
 -	Virtual Size: 36.1 KB (36134 bytes)
 -	v2 Blob: `sha256:bae0b74330f6799dbb8d5cccb22db766102be2c1821942b4bab4a99a44c06e43`
 -	v2 Content-Length: 5.8 KB (5801 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:16:29 GMT
 
 #### `08db45ca4f60ce589f71e4dcdcea11947dcedfcccb19a07e11d5715f094c5f39`
 
@@ -1038,6 +1062,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -1063,6 +1088,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1146,6 +1172,7 @@ RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/
 -	Virtual Size: 329.3 KB (329277 bytes)
 -	v2 Blob: `sha256:d911af510afcf0e57f36ce3fe5c3ee18668c9113994da0af3679adc66b81f3e4`
 -	v2 Content-Length: 1.8 KB (1784 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:33 GMT
 
 #### `21fa681a33a81cd77890ac96b678b10728b55e107642b33eaace49cb440095f8`
 
@@ -1159,6 +1186,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 126.0 KB (125986 bytes)
 -	v2 Blob: `sha256:6fcaf8f95f9cd4ba74da47e1399e64cac2d64f787475df5e30f325e87102d757`
 -	v2 Content-Length: 114.8 KB (114792 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:30 GMT
 
 #### `f21a1dab18213cca213a94fee967c3dddcc9e4c58c397a2208f6cb70b8980298`
 
@@ -1172,6 +1200,7 @@ RUN wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --
 -	Virtual Size: 2.7 MB (2696536 bytes)
 -	v2 Blob: `sha256:aad84703ba505ff729acfab0e3176f565645f4b81c9e1ac6fed2997180ae7a42`
 -	v2 Content-Length: 807.6 KB (807587 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:27 GMT
 
 #### `7bccf0c1e400cc2d7d1e2867bbb9094852d353a4860ed6df5a62c5799c7f1f66`
 
@@ -1269,6 +1298,7 @@ RUN mkdir /opt/files   && wget -q https://jdbc.postgresql.org/download/${POSTGRE
 -	Virtual Size: 1.4 MB (1448270 bytes)
 -	v2 Blob: `sha256:80d8ea7ebb2225a603302e8c1b4281fc9247e649935a7b3cef00f7fb81c0950d`
 -	v2 Content-Length: 1.4 MB (1382492 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:17:31 GMT
 
 #### `00c888c9614ccb59eeb101a3e85d0726526aabc47404886ee2c956477f2cb8c0`
 
@@ -1282,6 +1312,7 @@ RUN wget -q http://download.forge.ow2.org/bonita/BonitaBPMCommunity-${BONITA_VER
 -	Virtual Size: 70.9 MB (70856507 bytes)
 -	v2 Blob: `sha256:08f3f5cc7f26477f61718e317e11e01829814020a68e4c2bf7f885a044211c2d`
 -	v2 Content-Length: 70.6 MB (70589929 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:17:24 GMT
 
 #### `1273740894c34a1aa698c95b2f65aa0ee1ed171c8d7bf814f602e5689371ea93`
 
@@ -1309,6 +1340,7 @@ COPY dir:1f07f904e6255e5d7941e89b875e11d0ba41baf086df1314acc67bf0d02ac405 in /op
 -	Virtual Size: 36.1 KB (36134 bytes)
 -	v2 Blob: `sha256:afa25fa59099a9e57c0b4a51b6c2afa15f5f9c05ba700247d4c29599fb4bff65`
 -	v2 Content-Length: 5.8 KB (5801 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:17:13 GMT
 
 #### `fc802570fff9bf984f8ecc1ec7e7242613441ff54b525eae0397e0e77e8111c9`
 
@@ -1322,6 +1354,7 @@ COPY dir:3d8bb8a36892f56dce1a6d478bab52fa906fd1761d0f993762a669780ab02b6f in /op
 -	Virtual Size: 7.3 KB (7334 bytes)
 -	v2 Blob: `sha256:77fbece1044c6e8f052449050923c01eff352ec5db8fd38c931fea101c8343e9`
 -	v2 Content-Length: 2.2 KB (2204 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:17:10 GMT
 
 #### `7ee6b6a4a027157cb9aaed1aeebb1dea9d80a0ab814a52c329f92c05b38d1029`
 
@@ -1373,6 +1406,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -1398,6 +1432,7 @@ RUN set -xe \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2`
 -	v2 Content-Length: 71.5 KB (71483 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:30 GMT
 
 #### `d28d8a6a946d1a1b25a6f4b438d1e92858a17bc58e15c5945d3ae12753a2883d`
 
@@ -1481,6 +1516,7 @@ RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/
 -	Virtual Size: 329.3 KB (329277 bytes)
 -	v2 Blob: `sha256:d911af510afcf0e57f36ce3fe5c3ee18668c9113994da0af3679adc66b81f3e4`
 -	v2 Content-Length: 1.8 KB (1784 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:33 GMT
 
 #### `21fa681a33a81cd77890ac96b678b10728b55e107642b33eaace49cb440095f8`
 
@@ -1494,6 +1530,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 126.0 KB (125986 bytes)
 -	v2 Blob: `sha256:6fcaf8f95f9cd4ba74da47e1399e64cac2d64f787475df5e30f325e87102d757`
 -	v2 Content-Length: 114.8 KB (114792 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:30 GMT
 
 #### `f21a1dab18213cca213a94fee967c3dddcc9e4c58c397a2208f6cb70b8980298`
 
@@ -1507,6 +1544,7 @@ RUN wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --
 -	Virtual Size: 2.7 MB (2696536 bytes)
 -	v2 Blob: `sha256:aad84703ba505ff729acfab0e3176f565645f4b81c9e1ac6fed2997180ae7a42`
 -	v2 Content-Length: 807.6 KB (807587 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:14:27 GMT
 
 #### `7bccf0c1e400cc2d7d1e2867bbb9094852d353a4860ed6df5a62c5799c7f1f66`
 
@@ -1604,6 +1642,7 @@ RUN mkdir /opt/files   && wget -q https://jdbc.postgresql.org/download/${POSTGRE
 -	Virtual Size: 1.4 MB (1448270 bytes)
 -	v2 Blob: `sha256:80d8ea7ebb2225a603302e8c1b4281fc9247e649935a7b3cef00f7fb81c0950d`
 -	v2 Content-Length: 1.4 MB (1382492 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:17:31 GMT
 
 #### `00c888c9614ccb59eeb101a3e85d0726526aabc47404886ee2c956477f2cb8c0`
 
@@ -1617,6 +1656,7 @@ RUN wget -q http://download.forge.ow2.org/bonita/BonitaBPMCommunity-${BONITA_VER
 -	Virtual Size: 70.9 MB (70856507 bytes)
 -	v2 Blob: `sha256:08f3f5cc7f26477f61718e317e11e01829814020a68e4c2bf7f885a044211c2d`
 -	v2 Content-Length: 70.6 MB (70589929 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:17:24 GMT
 
 #### `1273740894c34a1aa698c95b2f65aa0ee1ed171c8d7bf814f602e5689371ea93`
 
@@ -1644,6 +1684,7 @@ COPY dir:1f07f904e6255e5d7941e89b875e11d0ba41baf086df1314acc67bf0d02ac405 in /op
 -	Virtual Size: 36.1 KB (36134 bytes)
 -	v2 Blob: `sha256:afa25fa59099a9e57c0b4a51b6c2afa15f5f9c05ba700247d4c29599fb4bff65`
 -	v2 Content-Length: 5.8 KB (5801 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:17:13 GMT
 
 #### `fc802570fff9bf984f8ecc1ec7e7242613441ff54b525eae0397e0e77e8111c9`
 
@@ -1657,6 +1698,7 @@ COPY dir:3d8bb8a36892f56dce1a6d478bab52fa906fd1761d0f993762a669780ab02b6f in /op
 -	Virtual Size: 7.3 KB (7334 bytes)
 -	v2 Blob: `sha256:77fbece1044c6e8f052449050923c01eff352ec5db8fd38c931fea101c8343e9`
 -	v2 Content-Length: 2.2 KB (2204 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:17:10 GMT
 
 #### `7ee6b6a4a027157cb9aaed1aeebb1dea9d80a0ab814a52c329f92c05b38d1029`
 

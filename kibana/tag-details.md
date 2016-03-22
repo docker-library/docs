@@ -37,6 +37,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -64,6 +65,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -80,6 +82,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -115,6 +118,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -150,6 +154,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `054bd3f253882938ecd63f11f29a78c8a22067bf20e2cc2e906fe4205f241d98`
 
@@ -197,6 +202,7 @@ RUN set -x \
 -	Virtual Size: 53.5 MB (53514851 bytes)
 -	v2 Blob: `sha256:a212216a9d6c463a66d968a39d1a542a8170d92285bfee21c2023e25ccb3ad18`
 -	v2 Content-Length: 14.4 MB (14443121 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:46:22 GMT
 
 #### `517850566ce51d243f236f660b46245ef2ab333f01a7e5ec1f14b3fe25650c56`
 
@@ -224,6 +230,7 @@ COPY file:68680b0f5fad948ee4efdf068802de37e247123301046acaa6a6ebae2df8e271 in /
 -	Virtual Size: 702.0 B
 -	v2 Blob: `sha256:b96e9af2610d508a5fe325d55d99d369db8e71911a8a7809ca9548349fc65389`
 -	v2 Content-Length: 470.0 B
+-	v2 Last-Modified: Mon, 15 Feb 2016 18:32:55 GMT
 
 #### `fef4a0b456c7c5a2780acf6152e714e0cf0540ea1b0275fcfd680e7774da0cec`
 
@@ -289,6 +296,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -316,6 +324,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -332,6 +341,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -367,6 +377,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -402,6 +413,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `054bd3f253882938ecd63f11f29a78c8a22067bf20e2cc2e906fe4205f241d98`
 
@@ -449,6 +461,7 @@ RUN set -x \
 -	Virtual Size: 53.5 MB (53514851 bytes)
 -	v2 Blob: `sha256:a212216a9d6c463a66d968a39d1a542a8170d92285bfee21c2023e25ccb3ad18`
 -	v2 Content-Length: 14.4 MB (14443121 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:46:22 GMT
 
 #### `517850566ce51d243f236f660b46245ef2ab333f01a7e5ec1f14b3fe25650c56`
 
@@ -476,6 +489,7 @@ COPY file:68680b0f5fad948ee4efdf068802de37e247123301046acaa6a6ebae2df8e271 in /
 -	Virtual Size: 702.0 B
 -	v2 Blob: `sha256:b96e9af2610d508a5fe325d55d99d369db8e71911a8a7809ca9548349fc65389`
 -	v2 Content-Length: 470.0 B
+-	v2 Last-Modified: Mon, 15 Feb 2016 18:32:55 GMT
 
 #### `fef4a0b456c7c5a2780acf6152e714e0cf0540ea1b0275fcfd680e7774da0cec`
 
@@ -541,6 +555,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -568,6 +583,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -584,6 +600,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -619,6 +636,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -654,6 +672,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `0478aaa9ec2bfbcb98f8b2d3674e6070a4ddb0fd97a769732231c4cb20cafa16`
 
@@ -701,6 +720,7 @@ RUN set -x \
 -	Virtual Size: 63.7 MB (63718393 bytes)
 -	v2 Blob: `sha256:53f25a29517c66019e93d3db6841b279e96cdce80881f8042df047dac08b5c2f`
 -	v2 Content-Length: 18.6 MB (18635651 bytes)
+-	v2 Last-Modified: Fri, 11 Mar 2016 23:08:46 GMT
 
 #### `49b7376f790be9e2850c66cbc867d52e91b26716eb00cdc972d3799ce0a5eb6c`
 
@@ -728,6 +748,7 @@ COPY file:68680b0f5fad948ee4efdf068802de37e247123301046acaa6a6ebae2df8e271 in /
 -	Virtual Size: 702.0 B
 -	v2 Blob: `sha256:b96e9af2610d508a5fe325d55d99d369db8e71911a8a7809ca9548349fc65389`
 -	v2 Content-Length: 470.0 B
+-	v2 Last-Modified: Mon, 15 Feb 2016 18:32:55 GMT
 
 #### `7e7144c97b6c646568070b908d6c61f099c573bb714e234f5f88630d3d7f223e`
 
@@ -793,6 +814,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -820,6 +842,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -836,6 +859,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -871,6 +895,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -906,6 +931,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `0478aaa9ec2bfbcb98f8b2d3674e6070a4ddb0fd97a769732231c4cb20cafa16`
 
@@ -953,6 +979,7 @@ RUN set -x \
 -	Virtual Size: 63.7 MB (63718393 bytes)
 -	v2 Blob: `sha256:53f25a29517c66019e93d3db6841b279e96cdce80881f8042df047dac08b5c2f`
 -	v2 Content-Length: 18.6 MB (18635651 bytes)
+-	v2 Last-Modified: Fri, 11 Mar 2016 23:08:46 GMT
 
 #### `49b7376f790be9e2850c66cbc867d52e91b26716eb00cdc972d3799ce0a5eb6c`
 
@@ -980,6 +1007,7 @@ COPY file:68680b0f5fad948ee4efdf068802de37e247123301046acaa6a6ebae2df8e271 in /
 -	Virtual Size: 702.0 B
 -	v2 Blob: `sha256:b96e9af2610d508a5fe325d55d99d369db8e71911a8a7809ca9548349fc65389`
 -	v2 Content-Length: 470.0 B
+-	v2 Last-Modified: Mon, 15 Feb 2016 18:32:55 GMT
 
 #### `7e7144c97b6c646568070b908d6c61f099c573bb714e234f5f88630d3d7f223e`
 
@@ -1045,6 +1073,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1072,6 +1101,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -1088,6 +1118,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -1123,6 +1154,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -1158,6 +1190,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `b9b9a1bf81a3ee2746ca5a1b5667b48f2d0d2e8402aabe20d29f71a0454032e7`
 
@@ -1205,6 +1238,7 @@ RUN set -x \
 -	Virtual Size: 117.4 MB (117425220 bytes)
 -	v2 Blob: `sha256:e28a33a67d23e69064bc23088fb83ead6b69442e891cc269bb811f13f45e9bb8`
 -	v2 Content-Length: 30.5 MB (30500471 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:47:45 GMT
 
 #### `3dd8b493023a8be96f9e6372c5696c1fc796a2ed40c9c151d562b4924e2b1a1e`
 
@@ -1232,6 +1266,7 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:39376e664a52d0d98d8d8ffe40ddbc107036f829b57534593caed5455d0cb2ff`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:16:15 GMT
 
 #### `0fc4723d824eedbdfc3bf83268804ce5bad8429094cbd3f615a278af854e2d27`
 
@@ -1297,6 +1332,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1324,6 +1360,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -1340,6 +1377,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -1375,6 +1413,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -1410,6 +1449,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `b9b9a1bf81a3ee2746ca5a1b5667b48f2d0d2e8402aabe20d29f71a0454032e7`
 
@@ -1457,6 +1497,7 @@ RUN set -x \
 -	Virtual Size: 117.4 MB (117425220 bytes)
 -	v2 Blob: `sha256:e28a33a67d23e69064bc23088fb83ead6b69442e891cc269bb811f13f45e9bb8`
 -	v2 Content-Length: 30.5 MB (30500471 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:47:45 GMT
 
 #### `3dd8b493023a8be96f9e6372c5696c1fc796a2ed40c9c151d562b4924e2b1a1e`
 
@@ -1484,6 +1525,7 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:39376e664a52d0d98d8d8ffe40ddbc107036f829b57534593caed5455d0cb2ff`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:16:15 GMT
 
 #### `0fc4723d824eedbdfc3bf83268804ce5bad8429094cbd3f615a278af854e2d27`
 
@@ -1549,6 +1591,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1576,6 +1619,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -1592,6 +1636,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -1627,6 +1672,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -1662,6 +1708,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `75cd9c32e70ffb4a090fd90de266ab0f986c6a904ab4e7616812f5c2595c04b3`
 
@@ -1709,6 +1756,7 @@ RUN set -x \
 -	Virtual Size: 123.6 MB (123613590 bytes)
 -	v2 Blob: `sha256:9c313205285ca277e3771045c25ce5af82ec80f2b53a9e0e7d12d2e78a81521b`
 -	v2 Content-Length: 32.5 MB (32526997 bytes)
+-	v2 Last-Modified: Fri, 11 Mar 2016 23:09:36 GMT
 
 #### `5e9aed17f5002e18e6d129f255b40afe881504659f2cb51d118befc4e23a8c72`
 
@@ -1736,6 +1784,7 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:39376e664a52d0d98d8d8ffe40ddbc107036f829b57534593caed5455d0cb2ff`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:16:15 GMT
 
 #### `3532f21de378a2766e35dc9bcccb286228f9f425a994560cc69107ce1a72a1da`
 
@@ -1801,6 +1850,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1828,6 +1878,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -1844,6 +1895,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -1879,6 +1931,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -1914,6 +1967,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `75cd9c32e70ffb4a090fd90de266ab0f986c6a904ab4e7616812f5c2595c04b3`
 
@@ -1961,6 +2015,7 @@ RUN set -x \
 -	Virtual Size: 123.6 MB (123613590 bytes)
 -	v2 Blob: `sha256:9c313205285ca277e3771045c25ce5af82ec80f2b53a9e0e7d12d2e78a81521b`
 -	v2 Content-Length: 32.5 MB (32526997 bytes)
+-	v2 Last-Modified: Fri, 11 Mar 2016 23:09:36 GMT
 
 #### `5e9aed17f5002e18e6d129f255b40afe881504659f2cb51d118befc4e23a8c72`
 
@@ -1988,6 +2043,7 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:39376e664a52d0d98d8d8ffe40ddbc107036f829b57534593caed5455d0cb2ff`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:16:15 GMT
 
 #### `3532f21de378a2766e35dc9bcccb286228f9f425a994560cc69107ce1a72a1da`
 
@@ -2053,6 +2109,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2080,6 +2137,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -2096,6 +2154,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -2131,6 +2190,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -2166,6 +2226,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `310d83f96b182db5f6cc00934623b876db48e79f2aed9f7bc65c132de38f04f4`
 
@@ -2239,6 +2300,7 @@ RUN set -x \
 -	Virtual Size: 126.8 MB (126821096 bytes)
 -	v2 Blob: `sha256:655f3b5ac4d5febb11eef71a099b3a131e70d1f40a9703e58508e62f423a31ad`
 -	v2 Content-Length: 33.0 MB (33046675 bytes)
+-	v2 Last-Modified: Fri, 11 Mar 2016 23:10:17 GMT
 
 #### `9eb89d55dddc98d7081fa11ff00c9b341ddcb0706f9294150bc4c330e9834e6b`
 
@@ -2266,6 +2328,7 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:08b715014fee0ef49b7b83f2853dc9309030b8230f8a1659f427b8b598266727`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:17:52 GMT
 
 #### `61c539121c2f7b37b551b1ce2b1ab61a89784fc94899e76b1f028eae5abb1166`
 
@@ -2331,6 +2394,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2358,6 +2422,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -2374,6 +2439,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -2409,6 +2475,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -2444,6 +2511,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `310d83f96b182db5f6cc00934623b876db48e79f2aed9f7bc65c132de38f04f4`
 
@@ -2517,6 +2585,7 @@ RUN set -x \
 -	Virtual Size: 126.8 MB (126821096 bytes)
 -	v2 Blob: `sha256:655f3b5ac4d5febb11eef71a099b3a131e70d1f40a9703e58508e62f423a31ad`
 -	v2 Content-Length: 33.0 MB (33046675 bytes)
+-	v2 Last-Modified: Fri, 11 Mar 2016 23:10:17 GMT
 
 #### `9eb89d55dddc98d7081fa11ff00c9b341ddcb0706f9294150bc4c330e9834e6b`
 
@@ -2544,6 +2613,7 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:08b715014fee0ef49b7b83f2853dc9309030b8230f8a1659f427b8b598266727`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:17:52 GMT
 
 #### `61c539121c2f7b37b551b1ce2b1ab61a89784fc94899e76b1f028eae5abb1166`
 
@@ -2609,6 +2679,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2636,6 +2707,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -2652,6 +2724,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -2687,6 +2760,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -2722,6 +2796,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `310d83f96b182db5f6cc00934623b876db48e79f2aed9f7bc65c132de38f04f4`
 
@@ -2795,6 +2870,7 @@ RUN set -x \
 -	Virtual Size: 126.8 MB (126821096 bytes)
 -	v2 Blob: `sha256:655f3b5ac4d5febb11eef71a099b3a131e70d1f40a9703e58508e62f423a31ad`
 -	v2 Content-Length: 33.0 MB (33046675 bytes)
+-	v2 Last-Modified: Fri, 11 Mar 2016 23:10:17 GMT
 
 #### `9eb89d55dddc98d7081fa11ff00c9b341ddcb0706f9294150bc4c330e9834e6b`
 
@@ -2822,6 +2898,7 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:08b715014fee0ef49b7b83f2853dc9309030b8230f8a1659f427b8b598266727`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:17:52 GMT
 
 #### `61c539121c2f7b37b551b1ce2b1ab61a89784fc94899e76b1f028eae5abb1166`
 
@@ -2887,6 +2964,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2914,6 +2992,7 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -2930,6 +3009,7 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 40.5 MB (40465677 bytes)
 -	v2 Blob: `sha256:dccad68014a9a9c80ffff6e49bee5987bb8795a32495f8ec4223c4f42c066f6b`
 -	v2 Content-Length: 16.6 MB (16617744 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:36 GMT
 
 #### `bd72a9fdf6392d08223b0330a083fe16476f895d73bbf2de852fca2621b8401b`
 
@@ -2965,6 +3045,7 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -3000,6 +3081,7 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:3f73b86af689fbc5b85f94a88227069dc809556c39b1443e214ec1df0ca15282`
 -	v2 Content-Length: 7.1 KB (7115 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:45:21 GMT
 
 #### `310d83f96b182db5f6cc00934623b876db48e79f2aed9f7bc65c132de38f04f4`
 
@@ -3073,6 +3155,7 @@ RUN set -x \
 -	Virtual Size: 126.8 MB (126821096 bytes)
 -	v2 Blob: `sha256:655f3b5ac4d5febb11eef71a099b3a131e70d1f40a9703e58508e62f423a31ad`
 -	v2 Content-Length: 33.0 MB (33046675 bytes)
+-	v2 Last-Modified: Fri, 11 Mar 2016 23:10:17 GMT
 
 #### `9eb89d55dddc98d7081fa11ff00c9b341ddcb0706f9294150bc4c330e9834e6b`
 
@@ -3100,6 +3183,7 @@ COPY file:ac203c92efc515b79d5bfd92815c40785103aea77ca52a65ea1474e29625bf4b in /
 -	Virtual Size: 703.0 B
 -	v2 Blob: `sha256:08b715014fee0ef49b7b83f2853dc9309030b8230f8a1659f427b8b598266727`
 -	v2 Content-Length: 472.0 B
+-	v2 Last-Modified: Fri, 05 Feb 2016 01:17:52 GMT
 
 #### `61c539121c2f7b37b551b1ce2b1ab61a89784fc94899e76b1f028eae5abb1166`
 

@@ -55,6 +55,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -68,6 +69,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -85,6 +87,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -105,6 +108,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -153,6 +157,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -173,6 +178,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -186,6 +192,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9dbe906e06e5829d85b2bcabf8568b713cc3aa950ce17b52813739ac3b9f6ec0`
 
@@ -199,6 +206,7 @@ ENV IOJS_VERSION=1.8.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd00d653d2725af2284ff141bde62fdec5eed6af3b76a3e62c7178c7dfab71d8`
 
@@ -212,6 +220,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -225,6 +234,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:1.8`
 
@@ -248,6 +258,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -261,6 +272,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -278,6 +290,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -298,6 +311,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -346,6 +360,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -366,6 +381,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -379,6 +395,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9dbe906e06e5829d85b2bcabf8568b713cc3aa950ce17b52813739ac3b9f6ec0`
 
@@ -392,6 +409,7 @@ ENV IOJS_VERSION=1.8.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd00d653d2725af2284ff141bde62fdec5eed6af3b76a3e62c7178c7dfab71d8`
 
@@ -405,6 +423,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -418,6 +437,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:1`
 
@@ -441,6 +461,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -454,6 +475,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -471,6 +493,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -491,6 +514,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -539,6 +563,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -559,6 +584,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -572,6 +598,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9dbe906e06e5829d85b2bcabf8568b713cc3aa950ce17b52813739ac3b9f6ec0`
 
@@ -585,6 +612,7 @@ ENV IOJS_VERSION=1.8.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd00d653d2725af2284ff141bde62fdec5eed6af3b76a3e62c7178c7dfab71d8`
 
@@ -598,6 +626,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -611,6 +640,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:1.8.4-onbuild`
 
@@ -634,6 +664,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -647,6 +678,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -664,6 +696,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -684,6 +717,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -732,6 +766,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -752,6 +787,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -765,6 +801,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9dbe906e06e5829d85b2bcabf8568b713cc3aa950ce17b52813739ac3b9f6ec0`
 
@@ -778,6 +815,7 @@ ENV IOJS_VERSION=1.8.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd00d653d2725af2284ff141bde62fdec5eed6af3b76a3e62c7178c7dfab71d8`
 
@@ -791,6 +829,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -804,6 +843,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa11b0bde7330d1110ef78e2e549873e1af54c13a3e99d27ede49394c747fc5d`
 
@@ -831,6 +871,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af536ce4a0aeff063aee0710392a127c54efbd2371f087f3126db6f41638eb0a`
 
@@ -844,6 +885,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1664d5f02f99c23fe4c2b4a6ac2a24c98d680dbdb08971068fb6f1f95eba0f52`
 
@@ -857,6 +899,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `947083a3a53824ca4c5a95d7b51024cbcc116649b23eb08941a966e96cc0c0f1`
 
@@ -870,6 +913,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c81fdf672dabd616accbbfe3602db98c61ee0d7a3491a9c18340c119565ce5a0`
 
@@ -883,6 +927,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:1.8-onbuild`
 
@@ -906,6 +951,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -919,6 +965,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -936,6 +983,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -956,6 +1004,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -1004,6 +1053,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -1024,6 +1074,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -1037,6 +1088,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9dbe906e06e5829d85b2bcabf8568b713cc3aa950ce17b52813739ac3b9f6ec0`
 
@@ -1050,6 +1102,7 @@ ENV IOJS_VERSION=1.8.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd00d653d2725af2284ff141bde62fdec5eed6af3b76a3e62c7178c7dfab71d8`
 
@@ -1063,6 +1116,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -1076,6 +1130,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa11b0bde7330d1110ef78e2e549873e1af54c13a3e99d27ede49394c747fc5d`
 
@@ -1103,6 +1158,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af536ce4a0aeff063aee0710392a127c54efbd2371f087f3126db6f41638eb0a`
 
@@ -1116,6 +1172,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1664d5f02f99c23fe4c2b4a6ac2a24c98d680dbdb08971068fb6f1f95eba0f52`
 
@@ -1129,6 +1186,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `947083a3a53824ca4c5a95d7b51024cbcc116649b23eb08941a966e96cc0c0f1`
 
@@ -1142,6 +1200,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c81fdf672dabd616accbbfe3602db98c61ee0d7a3491a9c18340c119565ce5a0`
 
@@ -1155,6 +1214,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:1-onbuild`
 
@@ -1178,6 +1238,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1191,6 +1252,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1208,6 +1270,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1228,6 +1291,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -1276,6 +1340,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -1296,6 +1361,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -1309,6 +1375,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9dbe906e06e5829d85b2bcabf8568b713cc3aa950ce17b52813739ac3b9f6ec0`
 
@@ -1322,6 +1389,7 @@ ENV IOJS_VERSION=1.8.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd00d653d2725af2284ff141bde62fdec5eed6af3b76a3e62c7178c7dfab71d8`
 
@@ -1335,6 +1403,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:8311e8271e6b407f664d2cb3fec3a4931b467bc6846acde7f7bc960ac1b43d4b`
 -	v2 Content-Length: 8.9 MB (8858079 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:40 GMT
 
 #### `4a993b945344f2f74ce9be2a0bea0ae80d7a4417ab1929a601f6037201a4879d`
 
@@ -1348,6 +1417,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa11b0bde7330d1110ef78e2e549873e1af54c13a3e99d27ede49394c747fc5d`
 
@@ -1375,6 +1445,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af536ce4a0aeff063aee0710392a127c54efbd2371f087f3126db6f41638eb0a`
 
@@ -1388,6 +1459,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1664d5f02f99c23fe4c2b4a6ac2a24c98d680dbdb08971068fb6f1f95eba0f52`
 
@@ -1401,6 +1473,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `947083a3a53824ca4c5a95d7b51024cbcc116649b23eb08941a966e96cc0c0f1`
 
@@ -1414,6 +1487,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c81fdf672dabd616accbbfe3602db98c61ee0d7a3491a9c18340c119565ce5a0`
 
@@ -1427,6 +1501,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:1.8.4-slim`
 
@@ -1450,6 +1525,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1463,6 +1539,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1480,6 +1557,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `a86c26ed3982a2f30f5f6d1a3497b31abfc484553ad5ebd2ae8c3fa77bd2a103`
 
@@ -1500,6 +1578,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:71fa1c649007114469b2063cd549c5ed4a09632de5face136b06065d4a2c0499`
 -	v2 Content-Length: 19.8 KB (19849 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:33 GMT
 
 #### `e6235c5f0db4ee4c9d6a48ee38d8250b0cb05eba8bf7dd65bdba150cbde8b1b0`
 
@@ -1513,6 +1592,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5afe9cf7ad3f33ff53d1fd1fb9000fd86fe5d6249298372ce5f7b05b8e8e508f`
 
@@ -1526,6 +1606,7 @@ ENV IOJS_VERSION=1.8.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3030926b43a0b807fcfc8ae9d2706d40ad25337a52bd01094917b5b7b5128a12`
 
@@ -1539,6 +1620,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:a63d18a4f42749001ca1a6d3d0e293ca05d9d168619882c6e16be9f5fe859996`
 -	v2 Content-Length: 8.9 MB (8858055 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:25 GMT
 
 #### `f978a0cbf56d6ec85ae8389f078f3edee42a253230ac5fe5db42a42b5545ffd6`
 
@@ -1552,6 +1634,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:1.8-slim`
 
@@ -1575,6 +1658,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1588,6 +1672,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1605,6 +1690,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `a86c26ed3982a2f30f5f6d1a3497b31abfc484553ad5ebd2ae8c3fa77bd2a103`
 
@@ -1625,6 +1711,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:71fa1c649007114469b2063cd549c5ed4a09632de5face136b06065d4a2c0499`
 -	v2 Content-Length: 19.8 KB (19849 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:33 GMT
 
 #### `e6235c5f0db4ee4c9d6a48ee38d8250b0cb05eba8bf7dd65bdba150cbde8b1b0`
 
@@ -1638,6 +1725,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5afe9cf7ad3f33ff53d1fd1fb9000fd86fe5d6249298372ce5f7b05b8e8e508f`
 
@@ -1651,6 +1739,7 @@ ENV IOJS_VERSION=1.8.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3030926b43a0b807fcfc8ae9d2706d40ad25337a52bd01094917b5b7b5128a12`
 
@@ -1664,6 +1753,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:a63d18a4f42749001ca1a6d3d0e293ca05d9d168619882c6e16be9f5fe859996`
 -	v2 Content-Length: 8.9 MB (8858055 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:25 GMT
 
 #### `f978a0cbf56d6ec85ae8389f078f3edee42a253230ac5fe5db42a42b5545ffd6`
 
@@ -1677,6 +1767,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:1-slim`
 
@@ -1700,6 +1791,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1713,6 +1805,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1730,6 +1823,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `a86c26ed3982a2f30f5f6d1a3497b31abfc484553ad5ebd2ae8c3fa77bd2a103`
 
@@ -1750,6 +1844,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:71fa1c649007114469b2063cd549c5ed4a09632de5face136b06065d4a2c0499`
 -	v2 Content-Length: 19.8 KB (19849 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:33 GMT
 
 #### `e6235c5f0db4ee4c9d6a48ee38d8250b0cb05eba8bf7dd65bdba150cbde8b1b0`
 
@@ -1763,6 +1858,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5afe9cf7ad3f33ff53d1fd1fb9000fd86fe5d6249298372ce5f7b05b8e8e508f`
 
@@ -1776,6 +1872,7 @@ ENV IOJS_VERSION=1.8.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3030926b43a0b807fcfc8ae9d2706d40ad25337a52bd01094917b5b7b5128a12`
 
@@ -1789,6 +1886,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 27.7 MB (27739327 bytes)
 -	v2 Blob: `sha256:a63d18a4f42749001ca1a6d3d0e293ca05d9d168619882c6e16be9f5fe859996`
 -	v2 Content-Length: 8.9 MB (8858055 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:25 GMT
 
 #### `f978a0cbf56d6ec85ae8389f078f3edee42a253230ac5fe5db42a42b5545ffd6`
 
@@ -1802,6 +1900,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:2.5.0`
 
@@ -1825,6 +1924,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1838,6 +1938,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1855,6 +1956,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1875,6 +1977,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -1923,6 +2026,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -1943,6 +2047,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -1956,6 +2061,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b91822bd420382e27e982e93c7780dd879e478d442b4d3b421925db926708b20`
 
@@ -1969,6 +2075,7 @@ ENV IOJS_VERSION=2.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `be0dad38c3a34490f96479490330e06e1feab6cd35f2d1a6d01935d782f6c73e`
 
@@ -1982,6 +2089,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -1995,6 +2103,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:2.5`
 
@@ -2018,6 +2127,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2031,6 +2141,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2048,6 +2159,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -2068,6 +2180,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -2116,6 +2229,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -2136,6 +2250,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -2149,6 +2264,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b91822bd420382e27e982e93c7780dd879e478d442b4d3b421925db926708b20`
 
@@ -2162,6 +2278,7 @@ ENV IOJS_VERSION=2.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `be0dad38c3a34490f96479490330e06e1feab6cd35f2d1a6d01935d782f6c73e`
 
@@ -2175,6 +2292,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -2188,6 +2306,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:2`
 
@@ -2211,6 +2330,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2224,6 +2344,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2241,6 +2362,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -2261,6 +2383,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -2309,6 +2432,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -2329,6 +2453,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -2342,6 +2467,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b91822bd420382e27e982e93c7780dd879e478d442b4d3b421925db926708b20`
 
@@ -2355,6 +2481,7 @@ ENV IOJS_VERSION=2.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `be0dad38c3a34490f96479490330e06e1feab6cd35f2d1a6d01935d782f6c73e`
 
@@ -2368,6 +2495,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -2381,6 +2509,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:2.5.0-onbuild`
 
@@ -2404,6 +2533,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2417,6 +2547,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2434,6 +2565,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -2454,6 +2586,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -2502,6 +2635,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -2522,6 +2656,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -2535,6 +2670,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b91822bd420382e27e982e93c7780dd879e478d442b4d3b421925db926708b20`
 
@@ -2548,6 +2684,7 @@ ENV IOJS_VERSION=2.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `be0dad38c3a34490f96479490330e06e1feab6cd35f2d1a6d01935d782f6c73e`
 
@@ -2561,6 +2698,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -2574,6 +2712,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84623e3ce04bcbe3b5600faac18c9a9c3f46a40d459b6fdc5d55f7d008a77c8a`
 
@@ -2587,6 +2726,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:cb34171b4146cfd365b6eeca59f6b92df46b208d0644199bc6bdc57a8ffaef37`
 -	v2 Content-Length: 126.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:54:31 GMT
 
 #### `89a39d06f58baeeca97f0691b4144154ea2a9263d54560a511ab58eb213df521`
 
@@ -2600,6 +2740,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c22ca728fc80a1dc6d67bc7ffd3506360d5206741d293b005e1a468f1e50ebf2`
 
@@ -2613,6 +2754,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d866ec8ecd7f5c5876c6062cde55d8d5c1c88e4faab8221772d8767bd3c35fcc`
 
@@ -2626,6 +2768,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6300d4fb9ea0545e7738951ccdf39499a76b2a297dbe78f83b58c163f11be049`
 
@@ -2639,6 +2782,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d93cfde4868277c4f70aea089391b2bc45c62aa3d799f6e6e1c3282372035d67`
 
@@ -2652,6 +2796,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:2.5-onbuild`
 
@@ -2675,6 +2820,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2688,6 +2834,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2705,6 +2852,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -2725,6 +2873,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -2773,6 +2922,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -2793,6 +2943,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -2806,6 +2957,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b91822bd420382e27e982e93c7780dd879e478d442b4d3b421925db926708b20`
 
@@ -2819,6 +2971,7 @@ ENV IOJS_VERSION=2.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `be0dad38c3a34490f96479490330e06e1feab6cd35f2d1a6d01935d782f6c73e`
 
@@ -2832,6 +2985,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -2845,6 +2999,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84623e3ce04bcbe3b5600faac18c9a9c3f46a40d459b6fdc5d55f7d008a77c8a`
 
@@ -2858,6 +3013,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:cb34171b4146cfd365b6eeca59f6b92df46b208d0644199bc6bdc57a8ffaef37`
 -	v2 Content-Length: 126.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:54:31 GMT
 
 #### `89a39d06f58baeeca97f0691b4144154ea2a9263d54560a511ab58eb213df521`
 
@@ -2871,6 +3027,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c22ca728fc80a1dc6d67bc7ffd3506360d5206741d293b005e1a468f1e50ebf2`
 
@@ -2884,6 +3041,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d866ec8ecd7f5c5876c6062cde55d8d5c1c88e4faab8221772d8767bd3c35fcc`
 
@@ -2897,6 +3055,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6300d4fb9ea0545e7738951ccdf39499a76b2a297dbe78f83b58c163f11be049`
 
@@ -2910,6 +3069,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d93cfde4868277c4f70aea089391b2bc45c62aa3d799f6e6e1c3282372035d67`
 
@@ -2923,6 +3083,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:2-onbuild`
 
@@ -2946,6 +3107,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2959,6 +3121,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2976,6 +3139,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -2996,6 +3160,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -3044,6 +3209,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -3064,6 +3230,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -3077,6 +3244,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b91822bd420382e27e982e93c7780dd879e478d442b4d3b421925db926708b20`
 
@@ -3090,6 +3258,7 @@ ENV IOJS_VERSION=2.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `be0dad38c3a34490f96479490330e06e1feab6cd35f2d1a6d01935d782f6c73e`
 
@@ -3103,6 +3272,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 28.9 MB (28932947 bytes)
 -	v2 Blob: `sha256:265ff37a3932d84bb94f0881e180bdeb75eea616bdc407797f51ef33c736663c`
 -	v2 Content-Length: 9.3 MB (9251247 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:51 GMT
 
 #### `287698d9b5535e9094c2471d5f51b03e7f824a7907e9aeb1587763c40e274a3a`
 
@@ -3116,6 +3286,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `84623e3ce04bcbe3b5600faac18c9a9c3f46a40d459b6fdc5d55f7d008a77c8a`
 
@@ -3129,6 +3300,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:cb34171b4146cfd365b6eeca59f6b92df46b208d0644199bc6bdc57a8ffaef37`
 -	v2 Content-Length: 126.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:54:31 GMT
 
 #### `89a39d06f58baeeca97f0691b4144154ea2a9263d54560a511ab58eb213df521`
 
@@ -3142,6 +3314,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c22ca728fc80a1dc6d67bc7ffd3506360d5206741d293b005e1a468f1e50ebf2`
 
@@ -3155,6 +3328,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d866ec8ecd7f5c5876c6062cde55d8d5c1c88e4faab8221772d8767bd3c35fcc`
 
@@ -3168,6 +3342,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6300d4fb9ea0545e7738951ccdf39499a76b2a297dbe78f83b58c163f11be049`
 
@@ -3181,6 +3356,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d93cfde4868277c4f70aea089391b2bc45c62aa3d799f6e6e1c3282372035d67`
 
@@ -3194,6 +3370,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:2.5.0-slim`
 
@@ -3217,6 +3394,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3230,6 +3408,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3247,6 +3426,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `a86c26ed3982a2f30f5f6d1a3497b31abfc484553ad5ebd2ae8c3fa77bd2a103`
 
@@ -3267,6 +3447,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:71fa1c649007114469b2063cd549c5ed4a09632de5face136b06065d4a2c0499`
 -	v2 Content-Length: 19.8 KB (19849 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:33 GMT
 
 #### `e6235c5f0db4ee4c9d6a48ee38d8250b0cb05eba8bf7dd65bdba150cbde8b1b0`
 
@@ -3280,6 +3461,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f807900cce808b9b02f6c77b12883b620d9cb5dc270a3691de99d9c0d39876`
 
@@ -3293,6 +3475,7 @@ ENV IOJS_VERSION=2.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d433670b1b39e605bb2c9bb745502d793ff4ee2fae0709e6e1949f1efcf4bdb4`
 
@@ -3320,6 +3503,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:2.5-slim`
 
@@ -3343,6 +3527,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3356,6 +3541,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3373,6 +3559,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `a86c26ed3982a2f30f5f6d1a3497b31abfc484553ad5ebd2ae8c3fa77bd2a103`
 
@@ -3393,6 +3580,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:71fa1c649007114469b2063cd549c5ed4a09632de5face136b06065d4a2c0499`
 -	v2 Content-Length: 19.8 KB (19849 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:33 GMT
 
 #### `e6235c5f0db4ee4c9d6a48ee38d8250b0cb05eba8bf7dd65bdba150cbde8b1b0`
 
@@ -3406,6 +3594,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f807900cce808b9b02f6c77b12883b620d9cb5dc270a3691de99d9c0d39876`
 
@@ -3419,6 +3608,7 @@ ENV IOJS_VERSION=2.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d433670b1b39e605bb2c9bb745502d793ff4ee2fae0709e6e1949f1efcf4bdb4`
 
@@ -3446,6 +3636,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:2-slim`
 
@@ -3469,6 +3660,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3482,6 +3674,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3499,6 +3692,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `a86c26ed3982a2f30f5f6d1a3497b31abfc484553ad5ebd2ae8c3fa77bd2a103`
 
@@ -3519,6 +3713,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:71fa1c649007114469b2063cd549c5ed4a09632de5face136b06065d4a2c0499`
 -	v2 Content-Length: 19.8 KB (19849 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:33 GMT
 
 #### `e6235c5f0db4ee4c9d6a48ee38d8250b0cb05eba8bf7dd65bdba150cbde8b1b0`
 
@@ -3532,6 +3727,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33f807900cce808b9b02f6c77b12883b620d9cb5dc270a3691de99d9c0d39876`
 
@@ -3545,6 +3741,7 @@ ENV IOJS_VERSION=2.5.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d433670b1b39e605bb2c9bb745502d793ff4ee2fae0709e6e1949f1efcf4bdb4`
 
@@ -3572,6 +3769,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:3.3.0`
 
@@ -3595,6 +3793,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3608,6 +3807,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3625,6 +3825,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3645,6 +3846,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -3693,6 +3895,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -3713,6 +3916,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -3726,6 +3930,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597eb5a254427f7e04da62f8c10934416b5b38efea6aa197477d76b2b159592a`
 
@@ -3739,6 +3944,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b58d5286344d7e5c8f518846a7cec93dd45eecafd7514a0bc91bc26475a93c`
 
@@ -3752,6 +3958,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -3765,6 +3972,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:3.3`
 
@@ -3788,6 +3996,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3801,6 +4010,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3818,6 +4028,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3838,6 +4049,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -3886,6 +4098,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -3906,6 +4119,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -3919,6 +4133,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597eb5a254427f7e04da62f8c10934416b5b38efea6aa197477d76b2b159592a`
 
@@ -3932,6 +4147,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b58d5286344d7e5c8f518846a7cec93dd45eecafd7514a0bc91bc26475a93c`
 
@@ -3945,6 +4161,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -3958,6 +4175,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:3`
 
@@ -3981,6 +4199,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3994,6 +4213,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4011,6 +4231,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -4031,6 +4252,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -4079,6 +4301,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -4099,6 +4322,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -4112,6 +4336,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597eb5a254427f7e04da62f8c10934416b5b38efea6aa197477d76b2b159592a`
 
@@ -4125,6 +4350,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b58d5286344d7e5c8f518846a7cec93dd45eecafd7514a0bc91bc26475a93c`
 
@@ -4138,6 +4364,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -4151,6 +4378,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:latest`
 
@@ -4174,6 +4402,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4187,6 +4416,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4204,6 +4434,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -4224,6 +4455,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -4272,6 +4504,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -4292,6 +4525,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -4305,6 +4539,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597eb5a254427f7e04da62f8c10934416b5b38efea6aa197477d76b2b159592a`
 
@@ -4318,6 +4553,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b58d5286344d7e5c8f518846a7cec93dd45eecafd7514a0bc91bc26475a93c`
 
@@ -4331,6 +4567,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -4344,6 +4581,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:3.3.0-onbuild`
 
@@ -4367,6 +4605,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4380,6 +4619,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4397,6 +4637,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -4417,6 +4658,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -4465,6 +4707,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -4485,6 +4728,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -4498,6 +4742,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597eb5a254427f7e04da62f8c10934416b5b38efea6aa197477d76b2b159592a`
 
@@ -4511,6 +4756,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b58d5286344d7e5c8f518846a7cec93dd45eecafd7514a0bc91bc26475a93c`
 
@@ -4524,6 +4770,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -4537,6 +4784,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8aa07d3a267a0c75b7ef82a42ab1429d82bd1ce49f3ffcb1283fb32ab33a3f0b`
 
@@ -4550,6 +4798,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e4ef4fe1d6487c6b671c21259a0e1f81f122dfbbcc450ae72e64640807482bdf`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:54:57 GMT
 
 #### `bc97a566ea43c0bc7fc4d713f236d591dfe5926ffa3fc9f0089c1a9140752e32`
 
@@ -4563,6 +4812,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb623531522e5373c849fa918ba47f726697da397036f82ef028ac9c70a69ad2`
 
@@ -4576,6 +4826,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e63f7d93f0b6c220062b441994e85345d49f2af58e12690d42f622c9d693fd7a`
 
@@ -4589,6 +4840,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `475eeb64ecb0b9e0a6b6438691a08707fb788095a2d764350a1d1065ee74f34e`
 
@@ -4602,6 +4854,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b7fb1b9da296a65a5f07fab81579b8867cb9535b381c7c5a87dac8fc7c97a848`
 
@@ -4615,6 +4868,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:3.3-onbuild`
 
@@ -4638,6 +4892,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4651,6 +4906,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4668,6 +4924,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -4688,6 +4945,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -4736,6 +4994,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -4756,6 +5015,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -4769,6 +5029,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597eb5a254427f7e04da62f8c10934416b5b38efea6aa197477d76b2b159592a`
 
@@ -4782,6 +5043,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b58d5286344d7e5c8f518846a7cec93dd45eecafd7514a0bc91bc26475a93c`
 
@@ -4795,6 +5057,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -4808,6 +5071,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8aa07d3a267a0c75b7ef82a42ab1429d82bd1ce49f3ffcb1283fb32ab33a3f0b`
 
@@ -4821,6 +5085,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e4ef4fe1d6487c6b671c21259a0e1f81f122dfbbcc450ae72e64640807482bdf`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:54:57 GMT
 
 #### `bc97a566ea43c0bc7fc4d713f236d591dfe5926ffa3fc9f0089c1a9140752e32`
 
@@ -4834,6 +5099,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb623531522e5373c849fa918ba47f726697da397036f82ef028ac9c70a69ad2`
 
@@ -4847,6 +5113,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e63f7d93f0b6c220062b441994e85345d49f2af58e12690d42f622c9d693fd7a`
 
@@ -4860,6 +5127,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `475eeb64ecb0b9e0a6b6438691a08707fb788095a2d764350a1d1065ee74f34e`
 
@@ -4873,6 +5141,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b7fb1b9da296a65a5f07fab81579b8867cb9535b381c7c5a87dac8fc7c97a848`
 
@@ -4886,6 +5155,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:3-onbuild`
 
@@ -4909,6 +5179,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4922,6 +5193,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4939,6 +5211,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -4959,6 +5232,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -5007,6 +5281,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -5027,6 +5302,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -5040,6 +5316,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597eb5a254427f7e04da62f8c10934416b5b38efea6aa197477d76b2b159592a`
 
@@ -5053,6 +5330,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b58d5286344d7e5c8f518846a7cec93dd45eecafd7514a0bc91bc26475a93c`
 
@@ -5066,6 +5344,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -5079,6 +5358,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8aa07d3a267a0c75b7ef82a42ab1429d82bd1ce49f3ffcb1283fb32ab33a3f0b`
 
@@ -5092,6 +5372,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e4ef4fe1d6487c6b671c21259a0e1f81f122dfbbcc450ae72e64640807482bdf`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:54:57 GMT
 
 #### `bc97a566ea43c0bc7fc4d713f236d591dfe5926ffa3fc9f0089c1a9140752e32`
 
@@ -5105,6 +5386,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb623531522e5373c849fa918ba47f726697da397036f82ef028ac9c70a69ad2`
 
@@ -5118,6 +5400,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e63f7d93f0b6c220062b441994e85345d49f2af58e12690d42f622c9d693fd7a`
 
@@ -5131,6 +5414,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `475eeb64ecb0b9e0a6b6438691a08707fb788095a2d764350a1d1065ee74f34e`
 
@@ -5144,6 +5428,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b7fb1b9da296a65a5f07fab81579b8867cb9535b381c7c5a87dac8fc7c97a848`
 
@@ -5157,6 +5442,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:onbuild`
 
@@ -5180,6 +5466,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5193,6 +5480,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5210,6 +5498,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -5230,6 +5519,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -5278,6 +5568,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `77185d31cbe95a627d41bb34dfbca7c1489bb3a2082de50aa90ec9b645622d96`
 
@@ -5298,6 +5589,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:992a817b4857aa8ff600a4ac8fa2667f34cd1784efe0cd9a250e6e63b4af3537`
 -	v2 Content-Length: 19.9 KB (19855 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:29:47 GMT
 
 #### `5c9dadc43e6726a6bbd83b947a28171aa6e48962093b55b75438c598c4b7af3f`
 
@@ -5311,6 +5603,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597eb5a254427f7e04da62f8c10934416b5b38efea6aa197477d76b2b159592a`
 
@@ -5324,6 +5617,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b58d5286344d7e5c8f518846a7cec93dd45eecafd7514a0bc91bc26475a93c`
 
@@ -5337,6 +5631,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
 -	Virtual Size: 34.7 MB (34650067 bytes)
 -	v2 Blob: `sha256:1a54cfde3b55d969580b216aff38860b5746e315d5d534ea062597cd0abcc280`
 -	v2 Content-Length: 11.5 MB (11482311 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:32:38 GMT
 
 #### `ece7be6cfc794267da5738b1ff911484e125960f66bd512bdd9635ab69d5aa82`
 
@@ -5350,6 +5645,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8aa07d3a267a0c75b7ef82a42ab1429d82bd1ce49f3ffcb1283fb32ab33a3f0b`
 
@@ -5363,6 +5659,7 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e4ef4fe1d6487c6b671c21259a0e1f81f122dfbbcc450ae72e64640807482bdf`
 -	v2 Content-Length: 127.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 18:54:57 GMT
 
 #### `bc97a566ea43c0bc7fc4d713f236d591dfe5926ffa3fc9f0089c1a9140752e32`
 
@@ -5376,6 +5673,7 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bb623531522e5373c849fa918ba47f726697da397036f82ef028ac9c70a69ad2`
 
@@ -5389,6 +5687,7 @@ ONBUILD COPY package.json /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e63f7d93f0b6c220062b441994e85345d49f2af58e12690d42f622c9d693fd7a`
 
@@ -5402,6 +5701,7 @@ ONBUILD RUN npm install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `475eeb64ecb0b9e0a6b6438691a08707fb788095a2d764350a1d1065ee74f34e`
 
@@ -5415,6 +5715,7 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b7fb1b9da296a65a5f07fab81579b8867cb9535b381c7c5a87dac8fc7c97a848`
 
@@ -5428,6 +5729,7 @@ CMD ["npm" "start"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:3.3.0-slim`
 
@@ -5451,6 +5753,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5464,6 +5767,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5481,6 +5785,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `a86c26ed3982a2f30f5f6d1a3497b31abfc484553ad5ebd2ae8c3fa77bd2a103`
 
@@ -5501,6 +5806,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:71fa1c649007114469b2063cd549c5ed4a09632de5face136b06065d4a2c0499`
 -	v2 Content-Length: 19.8 KB (19849 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:33 GMT
 
 #### `e6235c5f0db4ee4c9d6a48ee38d8250b0cb05eba8bf7dd65bdba150cbde8b1b0`
 
@@ -5514,6 +5820,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1da89f652940bd9290e2de05b97445a45a64c474fd6dfa76baaa3df3da4613a2`
 
@@ -5527,6 +5834,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f31a3162032adc6a34707fbc35e8c37ffcefbec6a4e5c57ad8df88cf6fa8758c`
 
@@ -5554,6 +5862,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:3.3-slim`
 
@@ -5577,6 +5886,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5590,6 +5900,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5607,6 +5918,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `a86c26ed3982a2f30f5f6d1a3497b31abfc484553ad5ebd2ae8c3fa77bd2a103`
 
@@ -5627,6 +5939,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:71fa1c649007114469b2063cd549c5ed4a09632de5face136b06065d4a2c0499`
 -	v2 Content-Length: 19.8 KB (19849 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:33 GMT
 
 #### `e6235c5f0db4ee4c9d6a48ee38d8250b0cb05eba8bf7dd65bdba150cbde8b1b0`
 
@@ -5640,6 +5953,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1da89f652940bd9290e2de05b97445a45a64c474fd6dfa76baaa3df3da4613a2`
 
@@ -5653,6 +5967,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f31a3162032adc6a34707fbc35e8c37ffcefbec6a4e5c57ad8df88cf6fa8758c`
 
@@ -5680,6 +5995,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:3-slim`
 
@@ -5703,6 +6019,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5716,6 +6033,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5733,6 +6051,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `a86c26ed3982a2f30f5f6d1a3497b31abfc484553ad5ebd2ae8c3fa77bd2a103`
 
@@ -5753,6 +6072,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:71fa1c649007114469b2063cd549c5ed4a09632de5face136b06065d4a2c0499`
 -	v2 Content-Length: 19.8 KB (19849 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:33 GMT
 
 #### `e6235c5f0db4ee4c9d6a48ee38d8250b0cb05eba8bf7dd65bdba150cbde8b1b0`
 
@@ -5766,6 +6086,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1da89f652940bd9290e2de05b97445a45a64c474fd6dfa76baaa3df3da4613a2`
 
@@ -5779,6 +6100,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f31a3162032adc6a34707fbc35e8c37ffcefbec6a4e5c57ad8df88cf6fa8758c`
 
@@ -5806,6 +6128,7 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `iojs:slim`
 
@@ -5829,6 +6152,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5842,6 +6166,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5859,6 +6184,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `a86c26ed3982a2f30f5f6d1a3497b31abfc484553ad5ebd2ae8c3fa77bd2a103`
 
@@ -5879,6 +6205,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 39.4 KB (39419 bytes)
 -	v2 Blob: `sha256:71fa1c649007114469b2063cd549c5ed4a09632de5face136b06065d4a2c0499`
 -	v2 Content-Length: 19.8 KB (19849 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:31:33 GMT
 
 #### `e6235c5f0db4ee4c9d6a48ee38d8250b0cb05eba8bf7dd65bdba150cbde8b1b0`
 
@@ -5892,6 +6219,7 @@ ENV NPM_CONFIG_LOGLEVEL=info
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1da89f652940bd9290e2de05b97445a45a64c474fd6dfa76baaa3df3da4613a2`
 
@@ -5905,6 +6233,7 @@ ENV IOJS_VERSION=3.3.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f31a3162032adc6a34707fbc35e8c37ffcefbec6a4e5c57ad8df88cf6fa8758c`
 
@@ -5932,3 +6261,4 @@ CMD ["iojs"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

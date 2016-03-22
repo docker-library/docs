@@ -40,6 +40,7 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -79,6 +80,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -92,6 +94,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:12.04`
 
@@ -115,6 +118,7 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -154,6 +158,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -167,6 +172,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:precise-20160318`
 
@@ -190,6 +196,7 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -229,6 +236,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -242,6 +250,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:precise`
 
@@ -265,6 +274,7 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -304,6 +314,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -317,6 +328,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:14.04.4`
 
@@ -340,6 +352,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -379,6 +392,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -392,6 +406,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:14.04`
 
@@ -415,6 +430,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -454,6 +470,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -467,6 +484,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:trusty-20160317`
 
@@ -490,6 +508,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -529,6 +548,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -542,6 +562,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:trusty`
 
@@ -565,6 +586,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -604,6 +626,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -617,6 +640,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:latest`
 
@@ -640,6 +664,7 @@ ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /
 -	Virtual Size: 187.8 MB (187769020 bytes)
 -	v2 Blob: `sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06`
 -	v2 Content-Length: 65.7 MB (65687381 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:00 GMT
 
 #### `267903aa9bd1cfd4c09c1e71493a83642fb5852546833e652c5979a7b2fca43c`
 
@@ -679,6 +704,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f`
 -	v2 Content-Length: 681.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:28:27 GMT
 
 #### `ab035c88d533b656f25574a9f6f6dde8e8a9badf004d748690e9ee0b17205781`
 
@@ -692,6 +718,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:15.10`
 
@@ -741,6 +768,7 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:287750ad6625760ef25bd47da291cac277a7baa3345062658889a887e3b8e8f2`
 -	v2 Content-Length: 758.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:42 GMT
 
 #### `b22092cbe71356c61077501f31df49511bc53c9dbe00aceb5af3e869bc7d4abc`
 
@@ -754,6 +782,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1863 bytes)
 -	v2 Blob: `sha256:ca98bdf222fa2bddfe033130a5ce3ce7f23b5b61635b122c09662dd6942d7c0f`
 -	v2 Content-Length: 680.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:38 GMT
 
 #### `6ed4652370be8b2b3099ce40a9102e20c043f69a7953251511c85b776e31c61c`
 
@@ -767,6 +796,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:wily-20160316`
 
@@ -816,6 +846,7 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:287750ad6625760ef25bd47da291cac277a7baa3345062658889a887e3b8e8f2`
 -	v2 Content-Length: 758.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:42 GMT
 
 #### `b22092cbe71356c61077501f31df49511bc53c9dbe00aceb5af3e869bc7d4abc`
 
@@ -829,6 +860,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1863 bytes)
 -	v2 Blob: `sha256:ca98bdf222fa2bddfe033130a5ce3ce7f23b5b61635b122c09662dd6942d7c0f`
 -	v2 Content-Length: 680.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:38 GMT
 
 #### `6ed4652370be8b2b3099ce40a9102e20c043f69a7953251511c85b776e31c61c`
 
@@ -842,6 +874,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:wily`
 
@@ -891,6 +924,7 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:287750ad6625760ef25bd47da291cac277a7baa3345062658889a887e3b8e8f2`
 -	v2 Content-Length: 758.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:42 GMT
 
 #### `b22092cbe71356c61077501f31df49511bc53c9dbe00aceb5af3e869bc7d4abc`
 
@@ -904,6 +938,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1863 bytes)
 -	v2 Blob: `sha256:ca98bdf222fa2bddfe033130a5ce3ce7f23b5b61635b122c09662dd6942d7c0f`
 -	v2 Content-Length: 680.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:29:38 GMT
 
 #### `6ed4652370be8b2b3099ce40a9102e20c043f69a7953251511c85b776e31c61c`
 
@@ -917,6 +952,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:16.04`
 
@@ -940,6 +976,7 @@ ADD file:39732bb59a63cf3a2c72079cc5b413aa9d3249fdf5f8e4ef0b69c5e846a60020 in /
 -	Virtual Size: 119.0 MB (118969428 bytes)
 -	v2 Blob: `sha256:6d3a6d998241c6b3c2411061495b8310299b2bc3e672ca68cf4fff4ddf32be42`
 -	v2 Content-Length: 47.8 MB (47847189 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:31:01 GMT
 
 #### `001f01f2afb4835b770cd340941c06d8e260143193479bb0cf59f5a133e8b301`
 
@@ -965,6 +1002,7 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:606b08bdd0f39abcb0006fc193320cb50d6293c21ca08069696b9fdb75be2d75`
 -	v2 Content-Length: 760.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:30:38 GMT
 
 #### `794837a7e2e404491783eddf98d423f5bcfc6d8aa76def5d6d5a3de05ab107ff`
 
@@ -978,6 +1016,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1d99b95ffc1c3f05905d00ee8fbd9256850435f8b9ebdebc7f6e8976b4cf4cec`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:30:33 GMT
 
 #### `e0e03236f2d978612dae8da250eceffdf6fe7d62eb2fd440c39f978e10f57d75`
 
@@ -991,6 +1030,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:xenial-20160317`
 
@@ -1014,6 +1054,7 @@ ADD file:39732bb59a63cf3a2c72079cc5b413aa9d3249fdf5f8e4ef0b69c5e846a60020 in /
 -	Virtual Size: 119.0 MB (118969428 bytes)
 -	v2 Blob: `sha256:6d3a6d998241c6b3c2411061495b8310299b2bc3e672ca68cf4fff4ddf32be42`
 -	v2 Content-Length: 47.8 MB (47847189 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:31:01 GMT
 
 #### `001f01f2afb4835b770cd340941c06d8e260143193479bb0cf59f5a133e8b301`
 
@@ -1039,6 +1080,7 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:606b08bdd0f39abcb0006fc193320cb50d6293c21ca08069696b9fdb75be2d75`
 -	v2 Content-Length: 760.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:30:38 GMT
 
 #### `794837a7e2e404491783eddf98d423f5bcfc6d8aa76def5d6d5a3de05ab107ff`
 
@@ -1052,6 +1094,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1d99b95ffc1c3f05905d00ee8fbd9256850435f8b9ebdebc7f6e8976b4cf4cec`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:30:33 GMT
 
 #### `e0e03236f2d978612dae8da250eceffdf6fe7d62eb2fd440c39f978e10f57d75`
 
@@ -1065,6 +1108,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu:xenial`
 
@@ -1088,6 +1132,7 @@ ADD file:39732bb59a63cf3a2c72079cc5b413aa9d3249fdf5f8e4ef0b69c5e846a60020 in /
 -	Virtual Size: 119.0 MB (118969428 bytes)
 -	v2 Blob: `sha256:6d3a6d998241c6b3c2411061495b8310299b2bc3e672ca68cf4fff4ddf32be42`
 -	v2 Content-Length: 47.8 MB (47847189 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:31:01 GMT
 
 #### `001f01f2afb4835b770cd340941c06d8e260143193479bb0cf59f5a133e8b301`
 
@@ -1113,6 +1158,7 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:606b08bdd0f39abcb0006fc193320cb50d6293c21ca08069696b9fdb75be2d75`
 -	v2 Content-Length: 760.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:30:38 GMT
 
 #### `794837a7e2e404491783eddf98d423f5bcfc6d8aa76def5d6d5a3de05ab107ff`
 
@@ -1126,6 +1172,7 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1d99b95ffc1c3f05905d00ee8fbd9256850435f8b9ebdebc7f6e8976b4cf4cec`
 -	v2 Content-Length: 682.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 18:30:33 GMT
 
 #### `e0e03236f2d978612dae8da250eceffdf6fe7d62eb2fd440c39f978e10f57d75`
 
@@ -1139,3 +1186,4 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

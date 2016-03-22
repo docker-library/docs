@@ -34,6 +34,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -47,6 +48,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -60,6 +62,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -73,6 +76,7 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -86,6 +90,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `4baadc338bebba7ecf3a509457dbdb004937fc05bd471e955fa88f451d9e4bc8`
 
@@ -99,6 +104,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 -	Virtual Size: 16.2 KB (16196 bytes)
 -	v2 Blob: `sha256:e35651814623500c46528b78433c6f18fd722535753684df886a07c104881c4b`
 -	v2 Content-Length: 15.9 KB (15904 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:04 GMT
 
 #### `e5b3a6898fafced6c0c21d335a37cc2231e92c7afb52ab6a1b4d7a5069f78a04`
 
@@ -112,6 +118,7 @@ ENV MARIADB_MAJOR=10.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00138afa950ae632d0a6a2b8805b27299f24570c390dd09a00deb5c70e7101f8`
 
@@ -125,6 +132,7 @@ ENV MARIADB_VERSION=10.1.12+maria-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49b0f510881b422165afd5c4f9d18857efe9859b1a67554adc5fc30befda70ea`
 
@@ -143,6 +151,7 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessi
 -	Virtual Size: 119.0 B
 -	v2 Blob: `sha256:12cafcc1e597d6cfcbf840fc141ede120d1b59ffb318077de502b374c7cf89fe`
 -	v2 Content-Length: 319.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:53 GMT
 
 #### `ae6b74c91fc63a3ef367a8cfb7dfabc476151784bda78eb248f62a3d0fabcf21`
 
@@ -165,6 +174,7 @@ RUN { \
 -	Virtual Size: 221.4 MB (221410966 bytes)
 -	v2 Blob: `sha256:b12059a0fd60c0518188af0b19121cece1a557252fc558ddbc9b3d006edc82d9`
 -	v2 Content-Length: 65.1 MB (65066447 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:46 GMT
 
 #### `2d927f914dd14c2f1da7d7b611f3b9d28b8225e9ebe31b67cfafcc627c0322bc`
 
@@ -180,6 +190,7 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 5.3 KB (5271 bytes)
 -	v2 Blob: `sha256:9643f0599420975256679b1e5733b76304a706b3f3dcda876debc27e134b6357`
 -	v2 Content-Length: 2.6 KB (2646 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:22 GMT
 
 #### `1a5fbccf7f451501a9910c3b673645c10bbe5ae78fa36633fac34accda3d16a5`
 
@@ -193,6 +204,7 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b57182ccdffcd8a07a862e4118d55ca6f504cd70e9b59b083a5b44dc2883d00b`
 
@@ -206,6 +218,7 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:0d4b5b846b2ce77672a2d1a77b0f6c363eafdc1b97324cc561a51a213c504fa8`
 -	v2 Content-Length: 1.5 KB (1519 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:14:40 GMT
 
 #### `ca6acce3aa0a12e0c0f86250319895469c2f9d67cac161c5714564e0a2a2b65a`
 
@@ -219,6 +232,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ec877de1c7c2955db17acbdba55d9b7d1f688ff5720fc190af7a63531618cb7`
 
@@ -232,6 +246,7 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e788a8b1baa0cb56f5e6f79a9af0408cfe1cd532eed70203d79936464f7ce54d`
 
@@ -245,6 +260,7 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mariadb:10.1`
 
@@ -268,6 +284,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -281,6 +298,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -294,6 +312,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -307,6 +326,7 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -320,6 +340,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `4baadc338bebba7ecf3a509457dbdb004937fc05bd471e955fa88f451d9e4bc8`
 
@@ -333,6 +354,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 -	Virtual Size: 16.2 KB (16196 bytes)
 -	v2 Blob: `sha256:e35651814623500c46528b78433c6f18fd722535753684df886a07c104881c4b`
 -	v2 Content-Length: 15.9 KB (15904 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:04 GMT
 
 #### `e5b3a6898fafced6c0c21d335a37cc2231e92c7afb52ab6a1b4d7a5069f78a04`
 
@@ -346,6 +368,7 @@ ENV MARIADB_MAJOR=10.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00138afa950ae632d0a6a2b8805b27299f24570c390dd09a00deb5c70e7101f8`
 
@@ -359,6 +382,7 @@ ENV MARIADB_VERSION=10.1.12+maria-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49b0f510881b422165afd5c4f9d18857efe9859b1a67554adc5fc30befda70ea`
 
@@ -377,6 +401,7 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessi
 -	Virtual Size: 119.0 B
 -	v2 Blob: `sha256:12cafcc1e597d6cfcbf840fc141ede120d1b59ffb318077de502b374c7cf89fe`
 -	v2 Content-Length: 319.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:53 GMT
 
 #### `ae6b74c91fc63a3ef367a8cfb7dfabc476151784bda78eb248f62a3d0fabcf21`
 
@@ -399,6 +424,7 @@ RUN { \
 -	Virtual Size: 221.4 MB (221410966 bytes)
 -	v2 Blob: `sha256:b12059a0fd60c0518188af0b19121cece1a557252fc558ddbc9b3d006edc82d9`
 -	v2 Content-Length: 65.1 MB (65066447 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:46 GMT
 
 #### `2d927f914dd14c2f1da7d7b611f3b9d28b8225e9ebe31b67cfafcc627c0322bc`
 
@@ -414,6 +440,7 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 5.3 KB (5271 bytes)
 -	v2 Blob: `sha256:9643f0599420975256679b1e5733b76304a706b3f3dcda876debc27e134b6357`
 -	v2 Content-Length: 2.6 KB (2646 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:22 GMT
 
 #### `1a5fbccf7f451501a9910c3b673645c10bbe5ae78fa36633fac34accda3d16a5`
 
@@ -427,6 +454,7 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b57182ccdffcd8a07a862e4118d55ca6f504cd70e9b59b083a5b44dc2883d00b`
 
@@ -440,6 +468,7 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:0d4b5b846b2ce77672a2d1a77b0f6c363eafdc1b97324cc561a51a213c504fa8`
 -	v2 Content-Length: 1.5 KB (1519 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:14:40 GMT
 
 #### `ca6acce3aa0a12e0c0f86250319895469c2f9d67cac161c5714564e0a2a2b65a`
 
@@ -453,6 +482,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ec877de1c7c2955db17acbdba55d9b7d1f688ff5720fc190af7a63531618cb7`
 
@@ -466,6 +496,7 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e788a8b1baa0cb56f5e6f79a9af0408cfe1cd532eed70203d79936464f7ce54d`
 
@@ -479,6 +510,7 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mariadb:10`
 
@@ -502,6 +534,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -515,6 +548,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -528,6 +562,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -541,6 +576,7 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -554,6 +590,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `4baadc338bebba7ecf3a509457dbdb004937fc05bd471e955fa88f451d9e4bc8`
 
@@ -567,6 +604,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 -	Virtual Size: 16.2 KB (16196 bytes)
 -	v2 Blob: `sha256:e35651814623500c46528b78433c6f18fd722535753684df886a07c104881c4b`
 -	v2 Content-Length: 15.9 KB (15904 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:04 GMT
 
 #### `e5b3a6898fafced6c0c21d335a37cc2231e92c7afb52ab6a1b4d7a5069f78a04`
 
@@ -580,6 +618,7 @@ ENV MARIADB_MAJOR=10.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00138afa950ae632d0a6a2b8805b27299f24570c390dd09a00deb5c70e7101f8`
 
@@ -593,6 +632,7 @@ ENV MARIADB_VERSION=10.1.12+maria-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49b0f510881b422165afd5c4f9d18857efe9859b1a67554adc5fc30befda70ea`
 
@@ -611,6 +651,7 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessi
 -	Virtual Size: 119.0 B
 -	v2 Blob: `sha256:12cafcc1e597d6cfcbf840fc141ede120d1b59ffb318077de502b374c7cf89fe`
 -	v2 Content-Length: 319.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:53 GMT
 
 #### `ae6b74c91fc63a3ef367a8cfb7dfabc476151784bda78eb248f62a3d0fabcf21`
 
@@ -633,6 +674,7 @@ RUN { \
 -	Virtual Size: 221.4 MB (221410966 bytes)
 -	v2 Blob: `sha256:b12059a0fd60c0518188af0b19121cece1a557252fc558ddbc9b3d006edc82d9`
 -	v2 Content-Length: 65.1 MB (65066447 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:46 GMT
 
 #### `2d927f914dd14c2f1da7d7b611f3b9d28b8225e9ebe31b67cfafcc627c0322bc`
 
@@ -648,6 +690,7 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 5.3 KB (5271 bytes)
 -	v2 Blob: `sha256:9643f0599420975256679b1e5733b76304a706b3f3dcda876debc27e134b6357`
 -	v2 Content-Length: 2.6 KB (2646 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:22 GMT
 
 #### `1a5fbccf7f451501a9910c3b673645c10bbe5ae78fa36633fac34accda3d16a5`
 
@@ -661,6 +704,7 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b57182ccdffcd8a07a862e4118d55ca6f504cd70e9b59b083a5b44dc2883d00b`
 
@@ -674,6 +718,7 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:0d4b5b846b2ce77672a2d1a77b0f6c363eafdc1b97324cc561a51a213c504fa8`
 -	v2 Content-Length: 1.5 KB (1519 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:14:40 GMT
 
 #### `ca6acce3aa0a12e0c0f86250319895469c2f9d67cac161c5714564e0a2a2b65a`
 
@@ -687,6 +732,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ec877de1c7c2955db17acbdba55d9b7d1f688ff5720fc190af7a63531618cb7`
 
@@ -700,6 +746,7 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e788a8b1baa0cb56f5e6f79a9af0408cfe1cd532eed70203d79936464f7ce54d`
 
@@ -713,6 +760,7 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mariadb:latest`
 
@@ -736,6 +784,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -749,6 +798,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -762,6 +812,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -775,6 +826,7 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -788,6 +840,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `4baadc338bebba7ecf3a509457dbdb004937fc05bd471e955fa88f451d9e4bc8`
 
@@ -801,6 +854,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 -	Virtual Size: 16.2 KB (16196 bytes)
 -	v2 Blob: `sha256:e35651814623500c46528b78433c6f18fd722535753684df886a07c104881c4b`
 -	v2 Content-Length: 15.9 KB (15904 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:04 GMT
 
 #### `e5b3a6898fafced6c0c21d335a37cc2231e92c7afb52ab6a1b4d7a5069f78a04`
 
@@ -814,6 +868,7 @@ ENV MARIADB_MAJOR=10.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00138afa950ae632d0a6a2b8805b27299f24570c390dd09a00deb5c70e7101f8`
 
@@ -827,6 +882,7 @@ ENV MARIADB_VERSION=10.1.12+maria-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `49b0f510881b422165afd5c4f9d18857efe9859b1a67554adc5fc30befda70ea`
 
@@ -845,6 +901,7 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessi
 -	Virtual Size: 119.0 B
 -	v2 Blob: `sha256:12cafcc1e597d6cfcbf840fc141ede120d1b59ffb318077de502b374c7cf89fe`
 -	v2 Content-Length: 319.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:53 GMT
 
 #### `ae6b74c91fc63a3ef367a8cfb7dfabc476151784bda78eb248f62a3d0fabcf21`
 
@@ -867,6 +924,7 @@ RUN { \
 -	Virtual Size: 221.4 MB (221410966 bytes)
 -	v2 Blob: `sha256:b12059a0fd60c0518188af0b19121cece1a557252fc558ddbc9b3d006edc82d9`
 -	v2 Content-Length: 65.1 MB (65066447 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:46 GMT
 
 #### `2d927f914dd14c2f1da7d7b611f3b9d28b8225e9ebe31b67cfafcc627c0322bc`
 
@@ -882,6 +940,7 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 5.3 KB (5271 bytes)
 -	v2 Blob: `sha256:9643f0599420975256679b1e5733b76304a706b3f3dcda876debc27e134b6357`
 -	v2 Content-Length: 2.6 KB (2646 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:49:22 GMT
 
 #### `1a5fbccf7f451501a9910c3b673645c10bbe5ae78fa36633fac34accda3d16a5`
 
@@ -895,6 +954,7 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b57182ccdffcd8a07a862e4118d55ca6f504cd70e9b59b083a5b44dc2883d00b`
 
@@ -908,6 +968,7 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:0d4b5b846b2ce77672a2d1a77b0f6c363eafdc1b97324cc561a51a213c504fa8`
 -	v2 Content-Length: 1.5 KB (1519 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:14:40 GMT
 
 #### `ca6acce3aa0a12e0c0f86250319895469c2f9d67cac161c5714564e0a2a2b65a`
 
@@ -921,6 +982,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ec877de1c7c2955db17acbdba55d9b7d1f688ff5720fc190af7a63531618cb7`
 
@@ -934,6 +996,7 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e788a8b1baa0cb56f5e6f79a9af0408cfe1cd532eed70203d79936464f7ce54d`
 
@@ -947,6 +1010,7 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mariadb:10.0.24`
 
@@ -970,6 +1034,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -983,6 +1048,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -996,6 +1062,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1009,6 +1076,7 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -1022,6 +1090,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `4baadc338bebba7ecf3a509457dbdb004937fc05bd471e955fa88f451d9e4bc8`
 
@@ -1035,6 +1104,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 -	Virtual Size: 16.2 KB (16196 bytes)
 -	v2 Blob: `sha256:e35651814623500c46528b78433c6f18fd722535753684df886a07c104881c4b`
 -	v2 Content-Length: 15.9 KB (15904 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:04 GMT
 
 #### `26647e62d3ab8abeabdce88f416cefac527fa04936ee05192524c6e4f91a805f`
 
@@ -1048,6 +1118,7 @@ ENV MARIADB_MAJOR=10.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d6e829af882b11e516b36204060bc1195c4c165683be62268b11a4498b92e85`
 
@@ -1061,6 +1132,7 @@ ENV MARIADB_VERSION=10.0.24+maria-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `03810ad60a7ad075cb99a87b9de039e00b7753c24a4021cdb02d77d0ed9282a3`
 
@@ -1102,6 +1174,7 @@ RUN { \
 -	Virtual Size: 176.7 MB (176743650 bytes)
 -	v2 Blob: `sha256:773d4c54ebce5133442ea097d493a72131be2f95dad126c87f18a42f2e1ce4f4`
 -	v2 Content-Length: 51.4 MB (51415069 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:51:06 GMT
 
 #### `3c6e061f58df6522a58db1785ba7c8d5256d08059a9ace2d03357d78c3848420`
 
@@ -1131,6 +1204,7 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1dd277025cad9dd75393e84aaf8e0530513a9a934418ceea6669be4e4b68587d`
 
@@ -1144,6 +1218,7 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:0d4b5b846b2ce77672a2d1a77b0f6c363eafdc1b97324cc561a51a213c504fa8`
 -	v2 Content-Length: 1.5 KB (1519 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:14:40 GMT
 
 #### `f4c44350b0764e21cabd6f4a42a4489db982f58b5059de9641d273b7aac435be`
 
@@ -1157,6 +1232,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d7db8089c4a8a57f2afbb738e02eba661946e52829df5e6b976687e2b4af246b`
 
@@ -1170,6 +1246,7 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `69210af2671d06fed8fcd2b272dac195e53e3565515cdae0f877dc4cbae86bf6`
 
@@ -1183,6 +1260,7 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mariadb:10.0`
 
@@ -1206,6 +1284,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1219,6 +1298,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -1232,6 +1312,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1245,6 +1326,7 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -1258,6 +1340,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `4baadc338bebba7ecf3a509457dbdb004937fc05bd471e955fa88f451d9e4bc8`
 
@@ -1271,6 +1354,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 -	Virtual Size: 16.2 KB (16196 bytes)
 -	v2 Blob: `sha256:e35651814623500c46528b78433c6f18fd722535753684df886a07c104881c4b`
 -	v2 Content-Length: 15.9 KB (15904 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:50:04 GMT
 
 #### `26647e62d3ab8abeabdce88f416cefac527fa04936ee05192524c6e4f91a805f`
 
@@ -1284,6 +1368,7 @@ ENV MARIADB_MAJOR=10.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d6e829af882b11e516b36204060bc1195c4c165683be62268b11a4498b92e85`
 
@@ -1297,6 +1382,7 @@ ENV MARIADB_VERSION=10.0.24+maria-1~jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `03810ad60a7ad075cb99a87b9de039e00b7753c24a4021cdb02d77d0ed9282a3`
 
@@ -1338,6 +1424,7 @@ RUN { \
 -	Virtual Size: 176.7 MB (176743650 bytes)
 -	v2 Blob: `sha256:773d4c54ebce5133442ea097d493a72131be2f95dad126c87f18a42f2e1ce4f4`
 -	v2 Content-Length: 51.4 MB (51415069 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:51:06 GMT
 
 #### `3c6e061f58df6522a58db1785ba7c8d5256d08059a9ace2d03357d78c3848420`
 
@@ -1367,6 +1454,7 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1dd277025cad9dd75393e84aaf8e0530513a9a934418ceea6669be4e4b68587d`
 
@@ -1380,6 +1468,7 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:0d4b5b846b2ce77672a2d1a77b0f6c363eafdc1b97324cc561a51a213c504fa8`
 -	v2 Content-Length: 1.5 KB (1519 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:14:40 GMT
 
 #### `f4c44350b0764e21cabd6f4a42a4489db982f58b5059de9641d273b7aac435be`
 
@@ -1393,6 +1482,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d7db8089c4a8a57f2afbb738e02eba661946e52829df5e6b976687e2b4af246b`
 
@@ -1406,6 +1496,7 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `69210af2671d06fed8fcd2b272dac195e53e3565515cdae0f877dc4cbae86bf6`
 
@@ -1419,6 +1510,7 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mariadb:5.5.48`
 
@@ -1442,6 +1534,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1455,6 +1548,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3001dd328be9d049b80fdd7684f7a1594c9c019755fdb049b8c5022ea75cad70`
 
@@ -1468,6 +1562,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 328.3 KB (328304 bytes)
 -	v2 Blob: `sha256:7892d3a002f04a0eeac9c0c59ac9ba80c405917d85a3d030707930d3f9498e25`
 -	v2 Content-Length: 1.7 KB (1693 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:30 GMT
 
 #### `7510d6a284923395bb5e3d6194d96bd4ac50d28b740571784f74fad06ef767f9`
 
@@ -1481,6 +1576,7 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 373.0 KB (373000 bytes)
 -	v2 Blob: `sha256:9c7e19b2b14f723d2e2c25ce5023bbfae41b87a0ff53e0f132aa25cdac9c86d5`
 -	v2 Content-Length: 106.4 KB (106351 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:28 GMT
 
 #### `4e28e5f0cb96805db998ebcf5bac62a11a09466108daa9ddeb8dcaa75b6b28f3`
 
@@ -1494,6 +1590,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:c352d0faad1f1b89d688c24926b4a579a3418c2c60524707010d9e59b7bf9c5e`
 -	v2 Content-Length: 114.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:26 GMT
 
 #### `b3a7774a64155668ae57bb8a6da8489f35c7d3b639fdbad03a6d304358b5199d`
 
@@ -1507,6 +1604,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 -	Virtual Size: 86.8 KB (86848 bytes)
 -	v2 Blob: `sha256:88b98815518132a62ffca8ca45989475325987aeb7a08f700296faf018480ab5`
 -	v2 Content-Length: 57.7 KB (57688 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:24 GMT
 
 #### `eacfa8f019f6ccd7e3436d4e425fbea8ad2c9eac49798d99a9b2f94458750baf`
 
@@ -1520,6 +1618,7 @@ ENV MARIADB_MAJOR=5.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab7b1986cbb472df8d1170fc2752cd27659a4ab00880805ffe85f94e1ff9c4e7`
 
@@ -1533,6 +1632,7 @@ ENV MARIADB_VERSION=5.5.48+maria-1~wheezy
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5113165a1b132d8db41da5c3ff93ef7743b1777974a4769ede4c31b9d6b499a`
 
@@ -1551,6 +1651,7 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian wheez
 -	Virtual Size: 118.0 B
 -	v2 Blob: `sha256:1abf387004599fb92d7ab96e75e9625ab8ac7b83d2fab2ca07a517fc7cbbcc7b`
 -	v2 Content-Length: 321.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:16 GMT
 
 #### `b5b6bac1732e21c44b035b9a039776a21b7b87ff1c8e7022f54c9b1428f03f6f`
 
@@ -1589,6 +1690,7 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 4.9 KB (4921 bytes)
 -	v2 Blob: `sha256:1b33ec9223db2824acd1f8e356645ae1aae85027d7d3f6df9ef8a61835adbc8f`
 -	v2 Content-Length: 2.5 KB (2492 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:51:54 GMT
 
 #### `aaf2987b3544b332a3354a92659d598716387859bda280f0ff8483cc140894d8`
 
@@ -1602,6 +1704,7 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f240e47b0dd3bd07cab676dc45789d17816849f8ae3d068b7a03de72ec709c62`
 
@@ -1615,6 +1718,7 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:0d4b5b846b2ce77672a2d1a77b0f6c363eafdc1b97324cc561a51a213c504fa8`
 -	v2 Content-Length: 1.5 KB (1519 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:14:40 GMT
 
 #### `ee53462f442bd544d9259e675df3dac08c5a24bf704603220e34a9157d1e7b28`
 
@@ -1628,6 +1732,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9760e1685ee577d2b415e79f0de101d52807765a304936186a5fa42b166c52e5`
 
@@ -1641,6 +1746,7 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c559103165b25e61f5c020675fbc4e701e5a75401180752fdec23157363d117`
 
@@ -1654,6 +1760,7 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mariadb:5.5`
 
@@ -1677,6 +1784,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1690,6 +1798,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3001dd328be9d049b80fdd7684f7a1594c9c019755fdb049b8c5022ea75cad70`
 
@@ -1703,6 +1812,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 328.3 KB (328304 bytes)
 -	v2 Blob: `sha256:7892d3a002f04a0eeac9c0c59ac9ba80c405917d85a3d030707930d3f9498e25`
 -	v2 Content-Length: 1.7 KB (1693 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:30 GMT
 
 #### `7510d6a284923395bb5e3d6194d96bd4ac50d28b740571784f74fad06ef767f9`
 
@@ -1716,6 +1826,7 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 373.0 KB (373000 bytes)
 -	v2 Blob: `sha256:9c7e19b2b14f723d2e2c25ce5023bbfae41b87a0ff53e0f132aa25cdac9c86d5`
 -	v2 Content-Length: 106.4 KB (106351 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:28 GMT
 
 #### `4e28e5f0cb96805db998ebcf5bac62a11a09466108daa9ddeb8dcaa75b6b28f3`
 
@@ -1729,6 +1840,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:c352d0faad1f1b89d688c24926b4a579a3418c2c60524707010d9e59b7bf9c5e`
 -	v2 Content-Length: 114.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:26 GMT
 
 #### `b3a7774a64155668ae57bb8a6da8489f35c7d3b639fdbad03a6d304358b5199d`
 
@@ -1742,6 +1854,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 -	Virtual Size: 86.8 KB (86848 bytes)
 -	v2 Blob: `sha256:88b98815518132a62ffca8ca45989475325987aeb7a08f700296faf018480ab5`
 -	v2 Content-Length: 57.7 KB (57688 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:24 GMT
 
 #### `eacfa8f019f6ccd7e3436d4e425fbea8ad2c9eac49798d99a9b2f94458750baf`
 
@@ -1755,6 +1868,7 @@ ENV MARIADB_MAJOR=5.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab7b1986cbb472df8d1170fc2752cd27659a4ab00880805ffe85f94e1ff9c4e7`
 
@@ -1768,6 +1882,7 @@ ENV MARIADB_VERSION=5.5.48+maria-1~wheezy
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5113165a1b132d8db41da5c3ff93ef7743b1777974a4769ede4c31b9d6b499a`
 
@@ -1786,6 +1901,7 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian wheez
 -	Virtual Size: 118.0 B
 -	v2 Blob: `sha256:1abf387004599fb92d7ab96e75e9625ab8ac7b83d2fab2ca07a517fc7cbbcc7b`
 -	v2 Content-Length: 321.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:16 GMT
 
 #### `b5b6bac1732e21c44b035b9a039776a21b7b87ff1c8e7022f54c9b1428f03f6f`
 
@@ -1824,6 +1940,7 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 4.9 KB (4921 bytes)
 -	v2 Blob: `sha256:1b33ec9223db2824acd1f8e356645ae1aae85027d7d3f6df9ef8a61835adbc8f`
 -	v2 Content-Length: 2.5 KB (2492 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:51:54 GMT
 
 #### `aaf2987b3544b332a3354a92659d598716387859bda280f0ff8483cc140894d8`
 
@@ -1837,6 +1954,7 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f240e47b0dd3bd07cab676dc45789d17816849f8ae3d068b7a03de72ec709c62`
 
@@ -1850,6 +1968,7 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:0d4b5b846b2ce77672a2d1a77b0f6c363eafdc1b97324cc561a51a213c504fa8`
 -	v2 Content-Length: 1.5 KB (1519 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:14:40 GMT
 
 #### `ee53462f442bd544d9259e675df3dac08c5a24bf704603220e34a9157d1e7b28`
 
@@ -1863,6 +1982,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9760e1685ee577d2b415e79f0de101d52807765a304936186a5fa42b166c52e5`
 
@@ -1876,6 +1996,7 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c559103165b25e61f5c020675fbc4e701e5a75401180752fdec23157363d117`
 
@@ -1889,6 +2010,7 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mariadb:5`
 
@@ -1912,6 +2034,7 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1925,6 +2048,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3001dd328be9d049b80fdd7684f7a1594c9c019755fdb049b8c5022ea75cad70`
 
@@ -1938,6 +2062,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 328.3 KB (328304 bytes)
 -	v2 Blob: `sha256:7892d3a002f04a0eeac9c0c59ac9ba80c405917d85a3d030707930d3f9498e25`
 -	v2 Content-Length: 1.7 KB (1693 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:30 GMT
 
 #### `7510d6a284923395bb5e3d6194d96bd4ac50d28b740571784f74fad06ef767f9`
 
@@ -1951,6 +2076,7 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 373.0 KB (373000 bytes)
 -	v2 Blob: `sha256:9c7e19b2b14f723d2e2c25ce5023bbfae41b87a0ff53e0f132aa25cdac9c86d5`
 -	v2 Content-Length: 106.4 KB (106351 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:28 GMT
 
 #### `4e28e5f0cb96805db998ebcf5bac62a11a09466108daa9ddeb8dcaa75b6b28f3`
 
@@ -1964,6 +2090,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:c352d0faad1f1b89d688c24926b4a579a3418c2c60524707010d9e59b7bf9c5e`
 -	v2 Content-Length: 114.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:26 GMT
 
 #### `b3a7774a64155668ae57bb8a6da8489f35c7d3b639fdbad03a6d304358b5199d`
 
@@ -1977,6 +2104,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 199369E5404BD
 -	Virtual Size: 86.8 KB (86848 bytes)
 -	v2 Blob: `sha256:88b98815518132a62ffca8ca45989475325987aeb7a08f700296faf018480ab5`
 -	v2 Content-Length: 57.7 KB (57688 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:24 GMT
 
 #### `eacfa8f019f6ccd7e3436d4e425fbea8ad2c9eac49798d99a9b2f94458750baf`
 
@@ -1990,6 +2118,7 @@ ENV MARIADB_MAJOR=5.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab7b1986cbb472df8d1170fc2752cd27659a4ab00880805ffe85f94e1ff9c4e7`
 
@@ -2003,6 +2132,7 @@ ENV MARIADB_VERSION=5.5.48+maria-1~wheezy
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5113165a1b132d8db41da5c3ff93ef7743b1777974a4769ede4c31b9d6b499a`
 
@@ -2021,6 +2151,7 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian wheez
 -	Virtual Size: 118.0 B
 -	v2 Blob: `sha256:1abf387004599fb92d7ab96e75e9625ab8ac7b83d2fab2ca07a517fc7cbbcc7b`
 -	v2 Content-Length: 321.0 B
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:52:16 GMT
 
 #### `b5b6bac1732e21c44b035b9a039776a21b7b87ff1c8e7022f54c9b1428f03f6f`
 
@@ -2059,6 +2190,7 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 4.9 KB (4921 bytes)
 -	v2 Blob: `sha256:1b33ec9223db2824acd1f8e356645ae1aae85027d7d3f6df9ef8a61835adbc8f`
 -	v2 Content-Length: 2.5 KB (2492 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:51:54 GMT
 
 #### `aaf2987b3544b332a3354a92659d598716387859bda280f0ff8483cc140894d8`
 
@@ -2072,6 +2204,7 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f240e47b0dd3bd07cab676dc45789d17816849f8ae3d068b7a03de72ec709c62`
 
@@ -2085,6 +2218,7 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:0d4b5b846b2ce77672a2d1a77b0f6c363eafdc1b97324cc561a51a213c504fa8`
 -	v2 Content-Length: 1.5 KB (1519 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:14:40 GMT
 
 #### `ee53462f442bd544d9259e675df3dac08c5a24bf704603220e34a9157d1e7b28`
 
@@ -2098,6 +2232,7 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9760e1685ee577d2b415e79f0de101d52807765a304936186a5fa42b166c52e5`
 
@@ -2111,6 +2246,7 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c559103165b25e61f5c020675fbc4e701e5a75401180752fdec23157363d117`
 
@@ -2124,3 +2260,4 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

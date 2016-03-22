@@ -43,6 +43,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -56,6 +57,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -113,6 +115,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -126,6 +129,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -177,6 +181,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -190,6 +195,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -247,6 +253,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -260,6 +267,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -311,6 +319,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -324,6 +333,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -381,6 +391,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -394,6 +405,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -445,6 +457,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -458,6 +471,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -515,6 +529,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -528,6 +543,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -579,6 +595,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -592,6 +609,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -649,6 +667,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -662,6 +681,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -707,6 +727,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 3.3 MB (3276820 bytes)
 -	v2 Blob: `sha256:e53d01f11e6b302de4df02eb0881480ac76d7f179426c37ea3be9a8ea2e624fe`
 -	v2 Content-Length: 1.2 MB (1246857 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:26 GMT
 
 #### `e081fd252168a7203a7bc1d5bad7f246bb41606ea49be600c0866f68e7787611`
 
@@ -735,6 +756,7 @@ RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/di
 -	Virtual Size: 3.7 KB (3702 bytes)
 -	v2 Blob: `sha256:f181f1cd4ef52c9192cd146d60ab649fdcc70eac9088cd517463ae14b94a9343`
 -	v2 Content-Length: 1.8 KB (1818 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:18 GMT
 
 #### `4c09290ba219fffdfa08b58654aba819544e5f56ff2a72f469e7160d36b41b79`
 
@@ -828,6 +850,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -841,6 +864,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -898,6 +922,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -911,6 +936,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -956,6 +982,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 3.3 MB (3276820 bytes)
 -	v2 Blob: `sha256:e53d01f11e6b302de4df02eb0881480ac76d7f179426c37ea3be9a8ea2e624fe`
 -	v2 Content-Length: 1.2 MB (1246857 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:26 GMT
 
 #### `e081fd252168a7203a7bc1d5bad7f246bb41606ea49be600c0866f68e7787611`
 
@@ -984,6 +1011,7 @@ RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/di
 -	Virtual Size: 3.7 KB (3702 bytes)
 -	v2 Blob: `sha256:f181f1cd4ef52c9192cd146d60ab649fdcc70eac9088cd517463ae14b94a9343`
 -	v2 Content-Length: 1.8 KB (1818 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:18 GMT
 
 #### `4c09290ba219fffdfa08b58654aba819544e5f56ff2a72f469e7160d36b41b79`
 
@@ -1077,6 +1105,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -1090,6 +1119,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -1147,6 +1177,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -1160,6 +1191,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -1205,6 +1237,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 3.3 MB (3276820 bytes)
 -	v2 Blob: `sha256:e53d01f11e6b302de4df02eb0881480ac76d7f179426c37ea3be9a8ea2e624fe`
 -	v2 Content-Length: 1.2 MB (1246857 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:26 GMT
 
 #### `e081fd252168a7203a7bc1d5bad7f246bb41606ea49be600c0866f68e7787611`
 
@@ -1233,6 +1266,7 @@ RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/di
 -	Virtual Size: 3.7 KB (3702 bytes)
 -	v2 Blob: `sha256:f181f1cd4ef52c9192cd146d60ab649fdcc70eac9088cd517463ae14b94a9343`
 -	v2 Content-Length: 1.8 KB (1818 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:18 GMT
 
 #### `4c09290ba219fffdfa08b58654aba819544e5f56ff2a72f469e7160d36b41b79`
 
@@ -1326,6 +1360,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -1339,6 +1374,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -1396,6 +1432,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -1409,6 +1446,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -1454,6 +1492,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 3.3 MB (3276820 bytes)
 -	v2 Blob: `sha256:e53d01f11e6b302de4df02eb0881480ac76d7f179426c37ea3be9a8ea2e624fe`
 -	v2 Content-Length: 1.2 MB (1246857 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:26 GMT
 
 #### `e081fd252168a7203a7bc1d5bad7f246bb41606ea49be600c0866f68e7787611`
 
@@ -1482,6 +1521,7 @@ RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/di
 -	Virtual Size: 3.7 KB (3702 bytes)
 -	v2 Blob: `sha256:f181f1cd4ef52c9192cd146d60ab649fdcc70eac9088cd517463ae14b94a9343`
 -	v2 Content-Length: 1.8 KB (1818 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:18 GMT
 
 #### `4c09290ba219fffdfa08b58654aba819544e5f56ff2a72f469e7160d36b41b79`
 
@@ -1575,6 +1615,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -1588,6 +1629,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -1645,6 +1687,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -1658,6 +1701,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -1701,6 +1745,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 18.6 MB (18608671 bytes)
 -	v2 Blob: `sha256:bb54c8a605391abb76fa3a98c6c3812909e8a84ab8c7e09d1d6ce297391ef2ac`
 -	v2 Content-Length: 9.0 MB (9047973 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:54 GMT
 
 ## `docker:1.10-git`
 
@@ -1724,6 +1769,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -1737,6 +1783,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -1794,6 +1841,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -1807,6 +1855,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -1850,6 +1899,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 18.6 MB (18608671 bytes)
 -	v2 Blob: `sha256:bb54c8a605391abb76fa3a98c6c3812909e8a84ab8c7e09d1d6ce297391ef2ac`
 -	v2 Content-Length: 9.0 MB (9047973 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:54 GMT
 
 ## `docker:1-git`
 
@@ -1873,6 +1923,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -1886,6 +1937,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -1943,6 +1995,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -1956,6 +2009,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -1999,6 +2053,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 18.6 MB (18608671 bytes)
 -	v2 Blob: `sha256:bb54c8a605391abb76fa3a98c6c3812909e8a84ab8c7e09d1d6ce297391ef2ac`
 -	v2 Content-Length: 9.0 MB (9047973 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:54 GMT
 
 ## `docker:git`
 
@@ -2022,6 +2077,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -2035,6 +2091,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -2092,6 +2149,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 34.9 MB (34898096 bytes)
 -	v2 Blob: `sha256:72ac951a881e1d0d322c580340d8d99ebf6e25ba8e4228fa3bbf3641eae7f34b`
 -	v2 Content-Length: 9.9 MB (9861649 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:32 GMT
 
 #### `02863f06f170e61d3bb06f82e2fce3a9ac7ecdda376a1bf1b204a221713d78cf`
 
@@ -2105,6 +2163,7 @@ COPY file:c8628794693d565da9740d2fa5462f66c6ab5d9c3b171cc234deb9f6c1dbf9ab in /u
 -	Virtual Size: 485.0 B
 -	v2 Blob: `sha256:e15c2ba2f3c79d9e94b6b4c42b346a0cfd0e97b5ecf41fb4250c8f27607af35b`
 -	v2 Content-Length: 468.0 B
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:12:24 GMT
 
 #### `f935e983a4099d1f9eed3b08163e2751cfaafa9d4f7617d2f92023810fd4cbf1`
 
@@ -2148,6 +2207,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 18.6 MB (18608671 bytes)
 -	v2 Blob: `sha256:bb54c8a605391abb76fa3a98c6c3812909e8a84ab8c7e09d1d6ce297391ef2ac`
 -	v2 Content-Length: 9.0 MB (9047973 bytes)
+-	v2 Last-Modified: Mon, 14 Mar 2016 23:13:54 GMT
 
 ## `docker:1.9.1`
 
@@ -2171,6 +2231,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -2184,6 +2245,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -2241,6 +2303,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 30.2 MB (30222575 bytes)
 -	v2 Blob: `sha256:9798e0e4a42a83e4f1341a67dd5660fb7ce869054a7f2ab07392a1ad67abd89d`
 -	v2 Content-Length: 8.4 MB (8355125 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:24 GMT
 
 #### `f13e3e2badd31c7dce013aed6a8fd559063cb19a4a7ae003e305260168d6fb29`
 
@@ -2306,6 +2369,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -2319,6 +2383,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -2376,6 +2441,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 30.2 MB (30222575 bytes)
 -	v2 Blob: `sha256:9798e0e4a42a83e4f1341a67dd5660fb7ce869054a7f2ab07392a1ad67abd89d`
 -	v2 Content-Length: 8.4 MB (8355125 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:24 GMT
 
 #### `f13e3e2badd31c7dce013aed6a8fd559063cb19a4a7ae003e305260168d6fb29`
 
@@ -2441,6 +2507,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -2454,6 +2521,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -2511,6 +2579,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 30.2 MB (30222575 bytes)
 -	v2 Blob: `sha256:9798e0e4a42a83e4f1341a67dd5660fb7ce869054a7f2ab07392a1ad67abd89d`
 -	v2 Content-Length: 8.4 MB (8355125 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:24 GMT
 
 #### `f13e3e2badd31c7dce013aed6a8fd559063cb19a4a7ae003e305260168d6fb29`
 
@@ -2570,6 +2639,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 3.3 MB (3276820 bytes)
 -	v2 Blob: `sha256:3a53fe7116058b7e2510014fdf4cf868c7107adb76c49d0745eb36b2ef5786ab`
 -	v2 Content-Length: 1.2 MB (1246852 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:27:00 GMT
 
 #### `fdd56623d4768c74967744c5d97b665a676167f37fbc14ef10e50d43cc9f348d`
 
@@ -2598,6 +2668,7 @@ RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/di
 -	Virtual Size: 3.7 KB (3702 bytes)
 -	v2 Blob: `sha256:2bf575fb430689d77494a45f77b84f452f91b2082d2b95c75c9cbc2c54638fef`
 -	v2 Content-Length: 1.8 KB (1820 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:26:55 GMT
 
 #### `091b3288b67cbaa19b452bd791d3f8206d93aec042a9dc696ca5999c0af5efac`
 
@@ -2691,6 +2762,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -2704,6 +2776,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -2761,6 +2834,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 30.2 MB (30222575 bytes)
 -	v2 Blob: `sha256:9798e0e4a42a83e4f1341a67dd5660fb7ce869054a7f2ab07392a1ad67abd89d`
 -	v2 Content-Length: 8.4 MB (8355125 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:24 GMT
 
 #### `f13e3e2badd31c7dce013aed6a8fd559063cb19a4a7ae003e305260168d6fb29`
 
@@ -2820,6 +2894,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 3.3 MB (3276820 bytes)
 -	v2 Blob: `sha256:3a53fe7116058b7e2510014fdf4cf868c7107adb76c49d0745eb36b2ef5786ab`
 -	v2 Content-Length: 1.2 MB (1246852 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:27:00 GMT
 
 #### `fdd56623d4768c74967744c5d97b665a676167f37fbc14ef10e50d43cc9f348d`
 
@@ -2848,6 +2923,7 @@ RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/di
 -	Virtual Size: 3.7 KB (3702 bytes)
 -	v2 Blob: `sha256:2bf575fb430689d77494a45f77b84f452f91b2082d2b95c75c9cbc2c54638fef`
 -	v2 Content-Length: 1.8 KB (1820 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:26:55 GMT
 
 #### `091b3288b67cbaa19b452bd791d3f8206d93aec042a9dc696ca5999c0af5efac`
 
@@ -2941,6 +3017,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -2954,6 +3031,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -3011,6 +3089,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 30.2 MB (30222575 bytes)
 -	v2 Blob: `sha256:9798e0e4a42a83e4f1341a67dd5660fb7ce869054a7f2ab07392a1ad67abd89d`
 -	v2 Content-Length: 8.4 MB (8355125 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:24 GMT
 
 #### `f13e3e2badd31c7dce013aed6a8fd559063cb19a4a7ae003e305260168d6fb29`
 
@@ -3068,6 +3147,7 @@ RUN apk add --no-cache \
 -	Virtual Size: 18.6 MB (18608671 bytes)
 -	v2 Blob: `sha256:084fd6836a3dcea1c720ba0c2b4c6f6762118124d83e24404b52d0c968d561ba`
 -	v2 Content-Length: 9.0 MB (9047993 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:27:08 GMT
 
 ## `docker:1.9-git`
 
@@ -3091,6 +3171,7 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `dbc24676ef06256c32092406f888c3e5e1a9038d6bd53322808ad970c3706425`
 
@@ -3104,6 +3185,7 @@ RUN apk add --no-cache curl
 -	Virtual Size: 1.9 MB (1877747 bytes)
 -	v2 Blob: `sha256:99e9f5d463c9b56470dadef3f6829e316c83679de2dee2a7b35ed15ca0f69dea`
 -	v2 Content-Length: 926.4 KB (926388 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:13:55 GMT
 
 #### `07bb506be0f635f4269425e73a0a1b3723bf4c16d36e9c58979a3d1cb2a70a25`
 
@@ -3161,6 +3243,7 @@ RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-$DOCKER_VERSI
 -	Virtual Size: 30.2 MB (30222575 bytes)
 -	v2 Blob: `sha256:9798e0e4a42a83e4f1341a67dd5660fb7ce869054a7f2ab07392a1ad67abd89d`
 -	v2 Content-Length: 8.4 MB (8355125 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:14:24 GMT
 
 #### `f13e3e2badd31c7dce013aed6a8fd559063cb19a4a7ae003e305260168d6fb29`
 
@@ -3218,3 +3301,4 @@ RUN apk add --no-cache \
 -	Virtual Size: 18.6 MB (18608671 bytes)
 -	v2 Blob: `sha256:084fd6836a3dcea1c720ba0c2b4c6f6762118124d83e24404b52d0c968d561ba`
 -	v2 Content-Length: 9.0 MB (9047993 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 18:27:08 GMT

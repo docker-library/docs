@@ -29,6 +29,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -60,6 +61,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -129,6 +131,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `1a333ae26010565f616d1f77a0ac4c88c11bc677288db6d3eaf06e09eef7bb1e`
 
@@ -151,6 +154,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b52090f6ca009920f912ca84362aa053fbc6b4841a66c1c416cdd3f523f5ff5d`
 -	v2 Content-Length: 26.9 KB (26934 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:43:00 GMT
 
 #### `6b1971eeab056993acd385e7faba8dbdcbc44759ee9e87d46b791a93c92c866e`
 
@@ -241,6 +245,7 @@ RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 -	Virtual Size: 330.4 KB (330441 bytes)
 -	v2 Blob: `sha256:1544a735a010e5e9b79063daf357b8ab8e7247d07923716ddc5262954d2a17d0`
 -	v2 Content-Length: 2.1 KB (2053 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 05:32:07 GMT
 
 #### `f31bc51875b7109d75484976f4f7813b61bfe8167d5e6324bdaa8179c5bb38d7`
 
@@ -268,6 +273,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EB
 -	Virtual Size: 47.6 KB (47579 bytes)
 -	v2 Blob: `sha256:7354ddba287e0a2450125e815ac87d59d6142197bdff28eb7a99ce9b71ad05f6`
 -	v2 Content-Length: 24.5 KB (24467 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 05:32:02 GMT
 
 #### `831277f806787a5e14a668a2c32c9f7a7c326881f5731a06f14ca881cd42e69b`
 
@@ -309,6 +315,7 @@ RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.ch
 -	Virtual Size: 103.6 MB (103572462 bytes)
 -	v2 Blob: `sha256:0d0015b4c88619793191bf216f73b5f36e1980ace369d356db1850a6a7492255`
 -	v2 Content-Length: 30.3 MB (30280064 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 17:24:52 GMT
 
 #### `8683fb72620e3d2a53035978738d2268a33a13a88c26c39b307abf1c71bad3cf`
 
@@ -402,6 +409,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -433,6 +441,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -502,6 +511,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `1a333ae26010565f616d1f77a0ac4c88c11bc677288db6d3eaf06e09eef7bb1e`
 
@@ -524,6 +534,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b52090f6ca009920f912ca84362aa053fbc6b4841a66c1c416cdd3f523f5ff5d`
 -	v2 Content-Length: 26.9 KB (26934 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:43:00 GMT
 
 #### `6b1971eeab056993acd385e7faba8dbdcbc44759ee9e87d46b791a93c92c866e`
 
@@ -614,6 +625,7 @@ RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 -	Virtual Size: 330.4 KB (330441 bytes)
 -	v2 Blob: `sha256:1544a735a010e5e9b79063daf357b8ab8e7247d07923716ddc5262954d2a17d0`
 -	v2 Content-Length: 2.1 KB (2053 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 05:32:07 GMT
 
 #### `f31bc51875b7109d75484976f4f7813b61bfe8167d5e6324bdaa8179c5bb38d7`
 
@@ -641,6 +653,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EB
 -	Virtual Size: 47.6 KB (47579 bytes)
 -	v2 Blob: `sha256:7354ddba287e0a2450125e815ac87d59d6142197bdff28eb7a99ce9b71ad05f6`
 -	v2 Content-Length: 24.5 KB (24467 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 05:32:02 GMT
 
 #### `831277f806787a5e14a668a2c32c9f7a7c326881f5731a06f14ca881cd42e69b`
 
@@ -682,6 +695,7 @@ RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.ch
 -	Virtual Size: 103.6 MB (103572462 bytes)
 -	v2 Blob: `sha256:0d0015b4c88619793191bf216f73b5f36e1980ace369d356db1850a6a7492255`
 -	v2 Content-Length: 30.3 MB (30280064 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 17:24:52 GMT
 
 #### `8683fb72620e3d2a53035978738d2268a33a13a88c26c39b307abf1c71bad3cf`
 
@@ -775,6 +789,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -806,6 +821,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -875,6 +891,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `1a333ae26010565f616d1f77a0ac4c88c11bc677288db6d3eaf06e09eef7bb1e`
 
@@ -897,6 +914,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b52090f6ca009920f912ca84362aa053fbc6b4841a66c1c416cdd3f523f5ff5d`
 -	v2 Content-Length: 26.9 KB (26934 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:43:00 GMT
 
 #### `6b1971eeab056993acd385e7faba8dbdcbc44759ee9e87d46b791a93c92c866e`
 
@@ -987,6 +1005,7 @@ RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 -	Virtual Size: 330.4 KB (330441 bytes)
 -	v2 Blob: `sha256:1544a735a010e5e9b79063daf357b8ab8e7247d07923716ddc5262954d2a17d0`
 -	v2 Content-Length: 2.1 KB (2053 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 05:32:07 GMT
 
 #### `f31bc51875b7109d75484976f4f7813b61bfe8167d5e6324bdaa8179c5bb38d7`
 
@@ -1014,6 +1033,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EB
 -	Virtual Size: 47.6 KB (47579 bytes)
 -	v2 Blob: `sha256:7354ddba287e0a2450125e815ac87d59d6142197bdff28eb7a99ce9b71ad05f6`
 -	v2 Content-Length: 24.5 KB (24467 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 05:32:02 GMT
 
 #### `831277f806787a5e14a668a2c32c9f7a7c326881f5731a06f14ca881cd42e69b`
 
@@ -1055,6 +1075,7 @@ RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.ch
 -	Virtual Size: 103.6 MB (103572462 bytes)
 -	v2 Blob: `sha256:0d0015b4c88619793191bf216f73b5f36e1980ace369d356db1850a6a7492255`
 -	v2 Content-Length: 30.3 MB (30280064 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 17:24:52 GMT
 
 #### `8683fb72620e3d2a53035978738d2268a33a13a88c26c39b307abf1c71bad3cf`
 
@@ -1148,6 +1169,7 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1179,6 +1201,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1248,6 +1271,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `1a333ae26010565f616d1f77a0ac4c88c11bc677288db6d3eaf06e09eef7bb1e`
 
@@ -1270,6 +1294,7 @@ RUN set -ex   && for key in\
 -	Virtual Size: 51.8 KB (51753 bytes)
 -	v2 Blob: `sha256:b52090f6ca009920f912ca84362aa053fbc6b4841a66c1c416cdd3f523f5ff5d`
 -	v2 Content-Length: 26.9 KB (26934 bytes)
+-	v2 Last-Modified: Wed, 02 Mar 2016 19:43:00 GMT
 
 #### `6b1971eeab056993acd385e7faba8dbdcbc44759ee9e87d46b791a93c92c866e`
 
@@ -1360,6 +1385,7 @@ RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 -	Virtual Size: 330.4 KB (330441 bytes)
 -	v2 Blob: `sha256:1544a735a010e5e9b79063daf357b8ab8e7247d07923716ddc5262954d2a17d0`
 -	v2 Content-Length: 2.1 KB (2053 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 05:32:07 GMT
 
 #### `f31bc51875b7109d75484976f4f7813b61bfe8167d5e6324bdaa8179c5bb38d7`
 
@@ -1387,6 +1413,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EB
 -	Virtual Size: 47.6 KB (47579 bytes)
 -	v2 Blob: `sha256:7354ddba287e0a2450125e815ac87d59d6142197bdff28eb7a99ce9b71ad05f6`
 -	v2 Content-Length: 24.5 KB (24467 bytes)
+-	v2 Last-Modified: Fri, 04 Mar 2016 05:32:02 GMT
 
 #### `831277f806787a5e14a668a2c32c9f7a7c326881f5731a06f14ca881cd42e69b`
 
@@ -1428,6 +1455,7 @@ RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.ch
 -	Virtual Size: 103.6 MB (103572462 bytes)
 -	v2 Blob: `sha256:0d0015b4c88619793191bf216f73b5f36e1980ace369d356db1850a6a7492255`
 -	v2 Content-Length: 30.3 MB (30280064 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 17:24:52 GMT
 
 #### `8683fb72620e3d2a53035978738d2268a33a13a88c26c39b307abf1c71bad3cf`
 

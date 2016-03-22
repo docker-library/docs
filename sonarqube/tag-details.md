@@ -29,6 +29,7 @@ ADD file:e1dd18493a216ecd0c624b2237bc1882c99431ec76905f013f17cc7209790601 in /
 -	Virtual Size: 125.2 MB (125176143 bytes)
 -	v2 Blob: `sha256:4d2e9ae40c411dd421f35dd20c133152bed21f8f9b903ba265a5d77c69a79edc`
 -	v2 Content-Length: 51.4 MB (51368892 bytes)
+-	v2 Last-Modified: Mon, 13 Jul 2015 19:33:00 GMT
 
 #### `9a61b6b1315e6b457c31a03346ab94486a2f5397f4a82219bee01eead1c34c2e`
 
@@ -42,6 +43,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ff9f26f09fb1bc7b5955c269b1042429e86d7891c653f52f3e48f1e0365d7df`
 
@@ -59,6 +61,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.4 MB (44359719 bytes)
 -	v2 Blob: `sha256:7c8152785df568006148a08519717d0de6a6bdfed18d0d599213d9124950746c`
 -	v2 Content-Length: 18.5 MB (18538564 bytes)
+-	v2 Last-Modified: Thu, 16 Jul 2015 20:31:09 GMT
 
 #### `607e965985c11e6a23270feec487908aeaa9af763d24a2986866a41537770c8c`
 
@@ -78,6 +81,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.3 MB (122330493 bytes)
 -	v2 Blob: `sha256:8b04aafd7cd87aa98ed28895e8e7b3bd5ad40510743c4e60387b40e8bfcf3cfb`
 -	v2 Content-Length: 42.3 MB (42342801 bytes)
+-	v2 Last-Modified: Mon, 13 Jul 2015 19:45:20 GMT
 
 #### `682b997ad926b777bec364b77941c608d45d45d4305252ac6880f167e25bc837`
 
@@ -105,6 +109,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:955b1afcc2be88feba1ee7a48b9f71fe2e5a90cce6b974e0a77cb81ebc9f2f0e`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:37 GMT
 
 #### `8859a87b61601c983df259f21a493b97424efb6030d88f07f8f3c260714d1e73`
 
@@ -118,6 +123,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9dd7ba0ee3fed1f346b6682285c61459ab83953b44348cd37faae04c407a4aa0`
 
@@ -131,6 +137,7 @@ ENV JAVA_VERSION=8u45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93934c1ae19e8d1518a9a1386bed88db8fd9d80548bf43ac4908a3d6bf6f072f`
 
@@ -144,6 +151,7 @@ ENV JAVA_DEBIAN_VERSION=8u45-b14-2~bpo8+2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2262501f7b5a50fdc1c99ee6a50343067539004bc34b0de77386da9afa005159`
 
@@ -157,6 +165,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bfb63b0f4db181bf1151cd55a86ef458500350de8301ee4c84d94cd1eba36379`
 
@@ -175,6 +184,7 @@ RUN set -x \
 -	Virtual Size: 523.4 MB (523361353 bytes)
 -	v2 Blob: `sha256:e0be7174c34603b1ce2bd072254039ad44567ff636a926ebbf7d619e6f8d94ec`
 -	v2 Content-Length: 199.1 MB (199149431 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:24 GMT
 
 #### `49ebfec495e1ad8595cc28c60b70cdaaef8d2dae4f28251e4e82064687d10b9a`
 
@@ -188,6 +198,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 413.1 KB (413134 bytes)
 -	v2 Blob: `sha256:5e16677fc2b771bd712865ff981e3d7c610e6c7e2ccac027c2500cafd506e36b`
 -	v2 Content-Length: 278.3 KB (278346 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:30:01 GMT
 
 #### `cce91f304f15763568d31e840ea606ff1caad8b1498568c89a9943ddf4647971`
 
@@ -201,6 +212,7 @@ MAINTAINER David Gageot <david.gageot@sonarsource.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f8ee3b9e2b6bb5492468159dd20a95d121fcf3b6b2f0e53310316d8bca63a696`
 
@@ -214,6 +226,7 @@ ENV SONARQUBE_HOME=/opt/sonarqube
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f98f8ac60858c17862e0db01238e7f526fd63983281c0ff0fe79576f1b868a58`
 
@@ -227,6 +240,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8f983d50e7149d19955febf201ad00087e1f3612701da1b90841fff3148668f7`
 
@@ -240,6 +254,7 @@ ENV SONARQUBE_JDBC_USERNAME=sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3bb45b0a6cef5932e90291149d193f6c253ac315efb0b7f068733b70a4a53edc`
 
@@ -253,6 +268,7 @@ ENV SONARQUBE_JDBC_PASSWORD=sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `69195694dd6fd6600c2f37992ab4c35032b000ff5cb6e515b32189d617981c22`
 
@@ -266,6 +282,7 @@ ENV SONARQUBE_JDBC_URL=jdbc:h2:tcp://localhost:9092/sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b0bdc146493ca06ac99aaf01f047032438ee08493906062529e0b24a950c0e64`
 
@@ -279,6 +296,7 @@ ENV SONAR_VERSION=5.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `69686c9c7bec1ab4d1288fd46ec184d4b4182e2bb286eb78c44bcfc8b074bdef`
 
@@ -328,6 +346,7 @@ VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9da5656a7237e8d42a70ecb00d3cfe14e071ea8e9262b21b6c2d74d30a6a3e48`
 
@@ -341,6 +360,7 @@ WORKDIR /opt/sonarqube
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ca386a63ff42fc931d669bbf3426a90e7f7b3223995bf5f37bac4ae76a977ed`
 
@@ -354,6 +374,7 @@ COPY file:75a1e489e832cdb87849d864b21177f35accc66edd48824452bc6f5e8e7d67ac in /o
 -	Virtual Size: 385.0 B
 -	v2 Blob: `sha256:c4a4c8f6e4b3ab65c417e7725bd2b874513563cb3412fbc9f79d54a5638ec93f`
 -	v2 Content-Length: 424.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 23:16:18 GMT
 
 #### `0e80f82d1ad67393362953fac814c4c38c726c4d8e5bd99b3f3822afc8fd41e0`
 
@@ -367,6 +388,7 @@ ENTRYPOINT &{["./bin/run.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `sonarqube:5.4`
 
@@ -390,6 +412,7 @@ ADD file:e1dd18493a216ecd0c624b2237bc1882c99431ec76905f013f17cc7209790601 in /
 -	Virtual Size: 125.2 MB (125176143 bytes)
 -	v2 Blob: `sha256:4d2e9ae40c411dd421f35dd20c133152bed21f8f9b903ba265a5d77c69a79edc`
 -	v2 Content-Length: 51.4 MB (51368892 bytes)
+-	v2 Last-Modified: Mon, 13 Jul 2015 19:33:00 GMT
 
 #### `9a61b6b1315e6b457c31a03346ab94486a2f5397f4a82219bee01eead1c34c2e`
 
@@ -403,6 +426,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ff9f26f09fb1bc7b5955c269b1042429e86d7891c653f52f3e48f1e0365d7df`
 
@@ -420,6 +444,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.4 MB (44359719 bytes)
 -	v2 Blob: `sha256:7c8152785df568006148a08519717d0de6a6bdfed18d0d599213d9124950746c`
 -	v2 Content-Length: 18.5 MB (18538564 bytes)
+-	v2 Last-Modified: Thu, 16 Jul 2015 20:31:09 GMT
 
 #### `607e965985c11e6a23270feec487908aeaa9af763d24a2986866a41537770c8c`
 
@@ -439,6 +464,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.3 MB (122330493 bytes)
 -	v2 Blob: `sha256:8b04aafd7cd87aa98ed28895e8e7b3bd5ad40510743c4e60387b40e8bfcf3cfb`
 -	v2 Content-Length: 42.3 MB (42342801 bytes)
+-	v2 Last-Modified: Mon, 13 Jul 2015 19:45:20 GMT
 
 #### `682b997ad926b777bec364b77941c608d45d45d4305252ac6880f167e25bc837`
 
@@ -466,6 +492,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:955b1afcc2be88feba1ee7a48b9f71fe2e5a90cce6b974e0a77cb81ebc9f2f0e`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:37 GMT
 
 #### `8859a87b61601c983df259f21a493b97424efb6030d88f07f8f3c260714d1e73`
 
@@ -479,6 +506,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9dd7ba0ee3fed1f346b6682285c61459ab83953b44348cd37faae04c407a4aa0`
 
@@ -492,6 +520,7 @@ ENV JAVA_VERSION=8u45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93934c1ae19e8d1518a9a1386bed88db8fd9d80548bf43ac4908a3d6bf6f072f`
 
@@ -505,6 +534,7 @@ ENV JAVA_DEBIAN_VERSION=8u45-b14-2~bpo8+2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2262501f7b5a50fdc1c99ee6a50343067539004bc34b0de77386da9afa005159`
 
@@ -518,6 +548,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bfb63b0f4db181bf1151cd55a86ef458500350de8301ee4c84d94cd1eba36379`
 
@@ -536,6 +567,7 @@ RUN set -x \
 -	Virtual Size: 523.4 MB (523361353 bytes)
 -	v2 Blob: `sha256:e0be7174c34603b1ce2bd072254039ad44567ff636a926ebbf7d619e6f8d94ec`
 -	v2 Content-Length: 199.1 MB (199149431 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:24 GMT
 
 #### `49ebfec495e1ad8595cc28c60b70cdaaef8d2dae4f28251e4e82064687d10b9a`
 
@@ -549,6 +581,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 413.1 KB (413134 bytes)
 -	v2 Blob: `sha256:5e16677fc2b771bd712865ff981e3d7c610e6c7e2ccac027c2500cafd506e36b`
 -	v2 Content-Length: 278.3 KB (278346 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:30:01 GMT
 
 #### `cce91f304f15763568d31e840ea606ff1caad8b1498568c89a9943ddf4647971`
 
@@ -562,6 +595,7 @@ MAINTAINER David Gageot <david.gageot@sonarsource.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f8ee3b9e2b6bb5492468159dd20a95d121fcf3b6b2f0e53310316d8bca63a696`
 
@@ -575,6 +609,7 @@ ENV SONARQUBE_HOME=/opt/sonarqube
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f98f8ac60858c17862e0db01238e7f526fd63983281c0ff0fe79576f1b868a58`
 
@@ -588,6 +623,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8f983d50e7149d19955febf201ad00087e1f3612701da1b90841fff3148668f7`
 
@@ -601,6 +637,7 @@ ENV SONARQUBE_JDBC_USERNAME=sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3bb45b0a6cef5932e90291149d193f6c253ac315efb0b7f068733b70a4a53edc`
 
@@ -614,6 +651,7 @@ ENV SONARQUBE_JDBC_PASSWORD=sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `69195694dd6fd6600c2f37992ab4c35032b000ff5cb6e515b32189d617981c22`
 
@@ -627,6 +665,7 @@ ENV SONARQUBE_JDBC_URL=jdbc:h2:tcp://localhost:9092/sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b0bdc146493ca06ac99aaf01f047032438ee08493906062529e0b24a950c0e64`
 
@@ -640,6 +679,7 @@ ENV SONAR_VERSION=5.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `69686c9c7bec1ab4d1288fd46ec184d4b4182e2bb286eb78c44bcfc8b074bdef`
 
@@ -689,6 +729,7 @@ VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9da5656a7237e8d42a70ecb00d3cfe14e071ea8e9262b21b6c2d74d30a6a3e48`
 
@@ -702,6 +743,7 @@ WORKDIR /opt/sonarqube
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ca386a63ff42fc931d669bbf3426a90e7f7b3223995bf5f37bac4ae76a977ed`
 
@@ -715,6 +757,7 @@ COPY file:75a1e489e832cdb87849d864b21177f35accc66edd48824452bc6f5e8e7d67ac in /o
 -	Virtual Size: 385.0 B
 -	v2 Blob: `sha256:c4a4c8f6e4b3ab65c417e7725bd2b874513563cb3412fbc9f79d54a5638ec93f`
 -	v2 Content-Length: 424.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 23:16:18 GMT
 
 #### `0e80f82d1ad67393362953fac814c4c38c726c4d8e5bd99b3f3822afc8fd41e0`
 
@@ -728,6 +771,7 @@ ENTRYPOINT &{["./bin/run.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `sonarqube:lts`
 
@@ -751,6 +795,7 @@ ADD file:e1dd18493a216ecd0c624b2237bc1882c99431ec76905f013f17cc7209790601 in /
 -	Virtual Size: 125.2 MB (125176143 bytes)
 -	v2 Blob: `sha256:4d2e9ae40c411dd421f35dd20c133152bed21f8f9b903ba265a5d77c69a79edc`
 -	v2 Content-Length: 51.4 MB (51368892 bytes)
+-	v2 Last-Modified: Mon, 13 Jul 2015 19:33:00 GMT
 
 #### `9a61b6b1315e6b457c31a03346ab94486a2f5397f4a82219bee01eead1c34c2e`
 
@@ -764,6 +809,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ff9f26f09fb1bc7b5955c269b1042429e86d7891c653f52f3e48f1e0365d7df`
 
@@ -781,6 +827,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.4 MB (44359719 bytes)
 -	v2 Blob: `sha256:7c8152785df568006148a08519717d0de6a6bdfed18d0d599213d9124950746c`
 -	v2 Content-Length: 18.5 MB (18538564 bytes)
+-	v2 Last-Modified: Thu, 16 Jul 2015 20:31:09 GMT
 
 #### `607e965985c11e6a23270feec487908aeaa9af763d24a2986866a41537770c8c`
 
@@ -800,6 +847,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.3 MB (122330493 bytes)
 -	v2 Blob: `sha256:8b04aafd7cd87aa98ed28895e8e7b3bd5ad40510743c4e60387b40e8bfcf3cfb`
 -	v2 Content-Length: 42.3 MB (42342801 bytes)
+-	v2 Last-Modified: Mon, 13 Jul 2015 19:45:20 GMT
 
 #### `682b997ad926b777bec364b77941c608d45d45d4305252ac6880f167e25bc837`
 
@@ -827,6 +875,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:955b1afcc2be88feba1ee7a48b9f71fe2e5a90cce6b974e0a77cb81ebc9f2f0e`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:37 GMT
 
 #### `8859a87b61601c983df259f21a493b97424efb6030d88f07f8f3c260714d1e73`
 
@@ -840,6 +889,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9dd7ba0ee3fed1f346b6682285c61459ab83953b44348cd37faae04c407a4aa0`
 
@@ -853,6 +903,7 @@ ENV JAVA_VERSION=8u45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93934c1ae19e8d1518a9a1386bed88db8fd9d80548bf43ac4908a3d6bf6f072f`
 
@@ -866,6 +917,7 @@ ENV JAVA_DEBIAN_VERSION=8u45-b14-2~bpo8+2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2262501f7b5a50fdc1c99ee6a50343067539004bc34b0de77386da9afa005159`
 
@@ -879,6 +931,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bfb63b0f4db181bf1151cd55a86ef458500350de8301ee4c84d94cd1eba36379`
 
@@ -897,6 +950,7 @@ RUN set -x \
 -	Virtual Size: 523.4 MB (523361353 bytes)
 -	v2 Blob: `sha256:e0be7174c34603b1ce2bd072254039ad44567ff636a926ebbf7d619e6f8d94ec`
 -	v2 Content-Length: 199.1 MB (199149431 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:24 GMT
 
 #### `49ebfec495e1ad8595cc28c60b70cdaaef8d2dae4f28251e4e82064687d10b9a`
 
@@ -910,6 +964,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 413.1 KB (413134 bytes)
 -	v2 Blob: `sha256:5e16677fc2b771bd712865ff981e3d7c610e6c7e2ccac027c2500cafd506e36b`
 -	v2 Content-Length: 278.3 KB (278346 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:30:01 GMT
 
 #### `cce91f304f15763568d31e840ea606ff1caad8b1498568c89a9943ddf4647971`
 
@@ -923,6 +978,7 @@ MAINTAINER David Gageot <david.gageot@sonarsource.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f8ee3b9e2b6bb5492468159dd20a95d121fcf3b6b2f0e53310316d8bca63a696`
 
@@ -936,6 +992,7 @@ ENV SONARQUBE_HOME=/opt/sonarqube
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f98f8ac60858c17862e0db01238e7f526fd63983281c0ff0fe79576f1b868a58`
 
@@ -949,6 +1006,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f9f1b7ea20933d6803c5805c3a8ff654f42669b40bc5c5e3e1cb9bbb7907750`
 
@@ -962,6 +1020,7 @@ EXPOSE 9092/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9b27b81816e1fcdca58ffeee7ed43da37b0f3dd4b2bff955fe997409a54668b`
 
@@ -975,6 +1034,7 @@ ENV SONARQUBE_JDBC_USERNAME=sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f5055731b8d63cc2da9cdf48b371ef363f4784a50260bf31d039b3925bbeb2fd`
 
@@ -988,6 +1048,7 @@ ENV SONARQUBE_JDBC_PASSWORD=sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `086294eb3c9f9428d1f782269b39ab4cd76b8fdfb252b85ce4d9cd722b4cc8f1`
 
@@ -1001,6 +1062,7 @@ ENV SONARQUBE_JDBC_URL=jdbc:h2:tcp://localhost:9092/sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79a85cabfb0987785110c99129abc267647cb965d10205447325a004113b7105`
 
@@ -1014,6 +1076,7 @@ ENV SONAR_VERSION=4.5.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caba4a2adfb24adfd3bfa2e8bd38ce26e12e16fde7a6df7c8d4ea1a6c8193b75`
 
@@ -1027,6 +1090,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBC
 -	Virtual Size: 11.6 KB (11614 bytes)
 -	v2 Blob: `sha256:0acd3d244198f5d1e4e044bc44100328b9bb3dd98676bff4931ca2764f396de2`
 -	v2 Content-Length: 5.6 KB (5621 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 23:39:48 GMT
 
 #### `bae6e9d894c454df078db84cc4cd8d5c368e4b77f17bdb11c40ea3bc90e556c7`
 
@@ -1048,6 +1112,7 @@ RUN set -x \
 -	Virtual Size: 107.9 MB (107899074 bytes)
 -	v2 Blob: `sha256:5fac8ebbcff8e3b80f9fcef8fa5d7361fc1d64d9544c2dab4d1e793d949a1a6e`
 -	v2 Content-Length: 88.7 MB (88730917 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 23:17:22 GMT
 
 #### `347f71378abf5265d268cc9b5b848ecbceaf5a0bb49792ffaa68538f1d5ee965`
 
@@ -1061,6 +1126,7 @@ VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b179802e511380c0134ec850f710001ef6e51d1788e04c4d508acdaf962b6408`
 
@@ -1074,6 +1140,7 @@ WORKDIR /opt/sonarqube
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee1e64884bc3cdae7ac3a9fc7848cfde153b96054d26a3bf77e461eef4f731fc`
 
@@ -1087,6 +1154,7 @@ COPY file:75a1e489e832cdb87849d864b21177f35accc66edd48824452bc6f5e8e7d67ac in /o
 -	Virtual Size: 385.0 B
 -	v2 Blob: `sha256:b05d2260d9c706f46df013a027e3376e4ddfd4e48a6ae4bd87b5d5841373c1ce`
 -	v2 Content-Length: 424.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 23:17:05 GMT
 
 #### `627dd3c940bf9a0f5813e84df15e975cb8a6e82708c92473154e3fb8bdd055ef`
 
@@ -1100,6 +1168,7 @@ ENTRYPOINT &{["./bin/run.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `sonarqube:4.5.6`
 
@@ -1123,6 +1192,7 @@ ADD file:e1dd18493a216ecd0c624b2237bc1882c99431ec76905f013f17cc7209790601 in /
 -	Virtual Size: 125.2 MB (125176143 bytes)
 -	v2 Blob: `sha256:4d2e9ae40c411dd421f35dd20c133152bed21f8f9b903ba265a5d77c69a79edc`
 -	v2 Content-Length: 51.4 MB (51368892 bytes)
+-	v2 Last-Modified: Mon, 13 Jul 2015 19:33:00 GMT
 
 #### `9a61b6b1315e6b457c31a03346ab94486a2f5397f4a82219bee01eead1c34c2e`
 
@@ -1136,6 +1206,7 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ff9f26f09fb1bc7b5955c269b1042429e86d7891c653f52f3e48f1e0365d7df`
 
@@ -1153,6 +1224,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.4 MB (44359719 bytes)
 -	v2 Blob: `sha256:7c8152785df568006148a08519717d0de6a6bdfed18d0d599213d9124950746c`
 -	v2 Content-Length: 18.5 MB (18538564 bytes)
+-	v2 Last-Modified: Thu, 16 Jul 2015 20:31:09 GMT
 
 #### `607e965985c11e6a23270feec487908aeaa9af763d24a2986866a41537770c8c`
 
@@ -1172,6 +1244,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.3 MB (122330493 bytes)
 -	v2 Blob: `sha256:8b04aafd7cd87aa98ed28895e8e7b3bd5ad40510743c4e60387b40e8bfcf3cfb`
 -	v2 Content-Length: 42.3 MB (42342801 bytes)
+-	v2 Last-Modified: Mon, 13 Jul 2015 19:45:20 GMT
 
 #### `682b997ad926b777bec364b77941c608d45d45d4305252ac6880f167e25bc837`
 
@@ -1199,6 +1272,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:955b1afcc2be88feba1ee7a48b9f71fe2e5a90cce6b974e0a77cb81ebc9f2f0e`
 -	v2 Content-Length: 220.0 B
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:37 GMT
 
 #### `8859a87b61601c983df259f21a493b97424efb6030d88f07f8f3c260714d1e73`
 
@@ -1212,6 +1286,7 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9dd7ba0ee3fed1f346b6682285c61459ab83953b44348cd37faae04c407a4aa0`
 
@@ -1225,6 +1300,7 @@ ENV JAVA_VERSION=8u45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93934c1ae19e8d1518a9a1386bed88db8fd9d80548bf43ac4908a3d6bf6f072f`
 
@@ -1238,6 +1314,7 @@ ENV JAVA_DEBIAN_VERSION=8u45-b14-2~bpo8+2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2262501f7b5a50fdc1c99ee6a50343067539004bc34b0de77386da9afa005159`
 
@@ -1251,6 +1328,7 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bfb63b0f4db181bf1151cd55a86ef458500350de8301ee4c84d94cd1eba36379`
 
@@ -1269,6 +1347,7 @@ RUN set -x \
 -	Virtual Size: 523.4 MB (523361353 bytes)
 -	v2 Blob: `sha256:e0be7174c34603b1ce2bd072254039ad44567ff636a926ebbf7d619e6f8d94ec`
 -	v2 Content-Length: 199.1 MB (199149431 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:31:24 GMT
 
 #### `49ebfec495e1ad8595cc28c60b70cdaaef8d2dae4f28251e4e82064687d10b9a`
 
@@ -1282,6 +1361,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 413.1 KB (413134 bytes)
 -	v2 Blob: `sha256:5e16677fc2b771bd712865ff981e3d7c610e6c7e2ccac027c2500cafd506e36b`
 -	v2 Content-Length: 278.3 KB (278346 bytes)
+-	v2 Last-Modified: Tue, 14 Jul 2015 11:30:01 GMT
 
 #### `cce91f304f15763568d31e840ea606ff1caad8b1498568c89a9943ddf4647971`
 
@@ -1295,6 +1375,7 @@ MAINTAINER David Gageot <david.gageot@sonarsource.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f8ee3b9e2b6bb5492468159dd20a95d121fcf3b6b2f0e53310316d8bca63a696`
 
@@ -1308,6 +1389,7 @@ ENV SONARQUBE_HOME=/opt/sonarqube
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f98f8ac60858c17862e0db01238e7f526fd63983281c0ff0fe79576f1b868a58`
 
@@ -1321,6 +1403,7 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f9f1b7ea20933d6803c5805c3a8ff654f42669b40bc5c5e3e1cb9bbb7907750`
 
@@ -1334,6 +1417,7 @@ EXPOSE 9092/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9b27b81816e1fcdca58ffeee7ed43da37b0f3dd4b2bff955fe997409a54668b`
 
@@ -1347,6 +1431,7 @@ ENV SONARQUBE_JDBC_USERNAME=sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f5055731b8d63cc2da9cdf48b371ef363f4784a50260bf31d039b3925bbeb2fd`
 
@@ -1360,6 +1445,7 @@ ENV SONARQUBE_JDBC_PASSWORD=sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `086294eb3c9f9428d1f782269b39ab4cd76b8fdfb252b85ce4d9cd722b4cc8f1`
 
@@ -1373,6 +1459,7 @@ ENV SONARQUBE_JDBC_URL=jdbc:h2:tcp://localhost:9092/sonar
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79a85cabfb0987785110c99129abc267647cb965d10205447325a004113b7105`
 
@@ -1386,6 +1473,7 @@ ENV SONAR_VERSION=4.5.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caba4a2adfb24adfd3bfa2e8bd38ce26e12e16fde7a6df7c8d4ea1a6c8193b75`
 
@@ -1399,6 +1487,7 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBC
 -	Virtual Size: 11.6 KB (11614 bytes)
 -	v2 Blob: `sha256:0acd3d244198f5d1e4e044bc44100328b9bb3dd98676bff4931ca2764f396de2`
 -	v2 Content-Length: 5.6 KB (5621 bytes)
+-	v2 Last-Modified: Mon, 11 Jan 2016 23:39:48 GMT
 
 #### `bae6e9d894c454df078db84cc4cd8d5c368e4b77f17bdb11c40ea3bc90e556c7`
 
@@ -1420,6 +1509,7 @@ RUN set -x \
 -	Virtual Size: 107.9 MB (107899074 bytes)
 -	v2 Blob: `sha256:5fac8ebbcff8e3b80f9fcef8fa5d7361fc1d64d9544c2dab4d1e793d949a1a6e`
 -	v2 Content-Length: 88.7 MB (88730917 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 23:17:22 GMT
 
 #### `347f71378abf5265d268cc9b5b848ecbceaf5a0bb49792ffaa68538f1d5ee965`
 
@@ -1433,6 +1523,7 @@ VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b179802e511380c0134ec850f710001ef6e51d1788e04c4d508acdaf962b6408`
 
@@ -1446,6 +1537,7 @@ WORKDIR /opt/sonarqube
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee1e64884bc3cdae7ac3a9fc7848cfde153b96054d26a3bf77e461eef4f731fc`
 
@@ -1459,6 +1551,7 @@ COPY file:75a1e489e832cdb87849d864b21177f35accc66edd48824452bc6f5e8e7d67ac in /o
 -	Virtual Size: 385.0 B
 -	v2 Blob: `sha256:b05d2260d9c706f46df013a027e3376e4ddfd4e48a6ae4bd87b5d5841373c1ce`
 -	v2 Content-Length: 424.0 B
+-	v2 Last-Modified: Wed, 09 Mar 2016 23:17:05 GMT
 
 #### `627dd3c940bf9a0f5813e84df15e975cb8a6e82708c92473154e3fb8bdd055ef`
 
@@ -1472,3 +1565,4 @@ ENTRYPOINT &{["./bin/run.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
+-	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

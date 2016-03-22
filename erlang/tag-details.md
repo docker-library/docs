@@ -92,6 +92,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -140,6 +141,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `86b2db02b7eb8d26264b8752a42451642000e841195fde3d0c86839b89fd0890`
 
@@ -184,6 +186,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726299 bytes)
 -	v2 Blob: `sha256:e8df6ab7d854d24b18813bc496294b12f388c1fcda8da040874f863bc7904485`
 -	v2 Content-Length: 58.2 MB (58173484 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:12 GMT
 
 #### `7bf3996b3d55ef8f9803d5e94e0857b483c5e41d1d5911345527d0507e4e1ecc`
 
@@ -236,6 +239,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202797 bytes)
 -	v2 Blob: `sha256:bdc780d88e5a88b34dbcc5632b45c48b48b4fe76989280a2ca25603729b571d6`
 -	v2 Content-Length: 196.1 KB (196088 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:50 GMT
 
 #### `b6478bd79b1f3f606dcd797970e50fccfa74e80241221c557443e7598c4c2a66`
 
@@ -274,6 +278,7 @@ RUN set -xe \
 -	Virtual Size: 1.3 MB (1284954 bytes)
 -	v2 Blob: `sha256:b280aa2f523ab68a4a90c08765d9d945e776cbe14fab5b4a309821d2993ca081`
 -	v2 Content-Length: 1.3 MB (1271299 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:44 GMT
 
 ## `erlang:18`
 
@@ -350,6 +355,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -398,6 +404,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `86b2db02b7eb8d26264b8752a42451642000e841195fde3d0c86839b89fd0890`
 
@@ -442,6 +449,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726299 bytes)
 -	v2 Blob: `sha256:e8df6ab7d854d24b18813bc496294b12f388c1fcda8da040874f863bc7904485`
 -	v2 Content-Length: 58.2 MB (58173484 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:12 GMT
 
 #### `7bf3996b3d55ef8f9803d5e94e0857b483c5e41d1d5911345527d0507e4e1ecc`
 
@@ -494,6 +502,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202797 bytes)
 -	v2 Blob: `sha256:bdc780d88e5a88b34dbcc5632b45c48b48b4fe76989280a2ca25603729b571d6`
 -	v2 Content-Length: 196.1 KB (196088 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:50 GMT
 
 #### `b6478bd79b1f3f606dcd797970e50fccfa74e80241221c557443e7598c4c2a66`
 
@@ -532,6 +541,7 @@ RUN set -xe \
 -	Virtual Size: 1.3 MB (1284954 bytes)
 -	v2 Blob: `sha256:b280aa2f523ab68a4a90c08765d9d945e776cbe14fab5b4a309821d2993ca081`
 -	v2 Content-Length: 1.3 MB (1271299 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:44 GMT
 
 ## `erlang:latest`
 
@@ -608,6 +618,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -656,6 +667,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `86b2db02b7eb8d26264b8752a42451642000e841195fde3d0c86839b89fd0890`
 
@@ -700,6 +712,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726299 bytes)
 -	v2 Blob: `sha256:e8df6ab7d854d24b18813bc496294b12f388c1fcda8da040874f863bc7904485`
 -	v2 Content-Length: 58.2 MB (58173484 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:12 GMT
 
 #### `7bf3996b3d55ef8f9803d5e94e0857b483c5e41d1d5911345527d0507e4e1ecc`
 
@@ -752,6 +765,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202797 bytes)
 -	v2 Blob: `sha256:bdc780d88e5a88b34dbcc5632b45c48b48b4fe76989280a2ca25603729b571d6`
 -	v2 Content-Length: 196.1 KB (196088 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:50 GMT
 
 #### `b6478bd79b1f3f606dcd797970e50fccfa74e80241221c557443e7598c4c2a66`
 
@@ -790,6 +804,7 @@ RUN set -xe \
 -	Virtual Size: 1.3 MB (1284954 bytes)
 -	v2 Blob: `sha256:b280aa2f523ab68a4a90c08765d9d945e776cbe14fab5b4a309821d2993ca081`
 -	v2 Content-Length: 1.3 MB (1271299 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:44 GMT
 
 ## `erlang:18.3-slim`
 
@@ -1205,6 +1220,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -1253,6 +1269,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `86b2db02b7eb8d26264b8752a42451642000e841195fde3d0c86839b89fd0890`
 
@@ -1297,6 +1314,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726299 bytes)
 -	v2 Blob: `sha256:e8df6ab7d854d24b18813bc496294b12f388c1fcda8da040874f863bc7904485`
 -	v2 Content-Length: 58.2 MB (58173484 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:12 GMT
 
 #### `7bf3996b3d55ef8f9803d5e94e0857b483c5e41d1d5911345527d0507e4e1ecc`
 
@@ -1349,6 +1367,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202797 bytes)
 -	v2 Blob: `sha256:bdc780d88e5a88b34dbcc5632b45c48b48b4fe76989280a2ca25603729b571d6`
 -	v2 Content-Length: 196.1 KB (196088 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:50 GMT
 
 #### `b6478bd79b1f3f606dcd797970e50fccfa74e80241221c557443e7598c4c2a66`
 
@@ -1387,6 +1406,7 @@ RUN set -xe \
 -	Virtual Size: 1.3 MB (1284954 bytes)
 -	v2 Blob: `sha256:b280aa2f523ab68a4a90c08765d9d945e776cbe14fab5b4a309821d2993ca081`
 -	v2 Content-Length: 1.3 MB (1271299 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:44 GMT
 
 #### `531779d753108a3d9e7d67f97b7429cfa84c64743d42bf1d9b44bfd909aaec3b`
 
@@ -1561,6 +1581,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -1609,6 +1630,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `86b2db02b7eb8d26264b8752a42451642000e841195fde3d0c86839b89fd0890`
 
@@ -1653,6 +1675,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726299 bytes)
 -	v2 Blob: `sha256:e8df6ab7d854d24b18813bc496294b12f388c1fcda8da040874f863bc7904485`
 -	v2 Content-Length: 58.2 MB (58173484 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:12 GMT
 
 #### `7bf3996b3d55ef8f9803d5e94e0857b483c5e41d1d5911345527d0507e4e1ecc`
 
@@ -1705,6 +1728,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202797 bytes)
 -	v2 Blob: `sha256:bdc780d88e5a88b34dbcc5632b45c48b48b4fe76989280a2ca25603729b571d6`
 -	v2 Content-Length: 196.1 KB (196088 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:50 GMT
 
 #### `b6478bd79b1f3f606dcd797970e50fccfa74e80241221c557443e7598c4c2a66`
 
@@ -1743,6 +1767,7 @@ RUN set -xe \
 -	Virtual Size: 1.3 MB (1284954 bytes)
 -	v2 Blob: `sha256:b280aa2f523ab68a4a90c08765d9d945e776cbe14fab5b4a309821d2993ca081`
 -	v2 Content-Length: 1.3 MB (1271299 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:44 GMT
 
 #### `531779d753108a3d9e7d67f97b7429cfa84c64743d42bf1d9b44bfd909aaec3b`
 
@@ -1917,6 +1942,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -1965,6 +1991,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `86b2db02b7eb8d26264b8752a42451642000e841195fde3d0c86839b89fd0890`
 
@@ -2009,6 +2036,7 @@ RUN set -xe \
 -	Virtual Size: 139.7 MB (139726299 bytes)
 -	v2 Blob: `sha256:e8df6ab7d854d24b18813bc496294b12f388c1fcda8da040874f863bc7904485`
 -	v2 Content-Length: 58.2 MB (58173484 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:33:12 GMT
 
 #### `7bf3996b3d55ef8f9803d5e94e0857b483c5e41d1d5911345527d0507e4e1ecc`
 
@@ -2061,6 +2089,7 @@ RUN set -xe \
 -	Virtual Size: 202.8 KB (202797 bytes)
 -	v2 Blob: `sha256:bdc780d88e5a88b34dbcc5632b45c48b48b4fe76989280a2ca25603729b571d6`
 -	v2 Content-Length: 196.1 KB (196088 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:50 GMT
 
 #### `b6478bd79b1f3f606dcd797970e50fccfa74e80241221c557443e7598c4c2a66`
 
@@ -2099,6 +2128,7 @@ RUN set -xe \
 -	Virtual Size: 1.3 MB (1284954 bytes)
 -	v2 Blob: `sha256:b280aa2f523ab68a4a90c08765d9d945e776cbe14fab5b4a309821d2993ca081`
 -	v2 Content-Length: 1.3 MB (1271299 bytes)
+-	v2 Last-Modified: Wed, 16 Mar 2016 18:32:44 GMT
 
 #### `531779d753108a3d9e7d67f97b7429cfa84c64743d42bf1d9b44bfd909aaec3b`
 
@@ -2273,6 +2303,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -2321,6 +2352,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `a919d4da39bf29044c47b9b5d1e517901a7db01f5a1611688b8dc53fa97a3238`
 
@@ -2364,6 +2396,7 @@ RUN set -xe \
 -	Virtual Size: 136.3 MB (136273530 bytes)
 -	v2 Blob: `sha256:ed27be7795d94234e0f79f54f41f735d756889c0fd9035137f81e56370e413e1`
 -	v2 Content-Length: 56.9 MB (56874513 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:59:32 GMT
 
 #### `f6a682ac6f32bac53e310ff0653158b8c939102e286988196087055f1557e264`
 
@@ -2454,6 +2487,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -2502,6 +2536,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `a919d4da39bf29044c47b9b5d1e517901a7db01f5a1611688b8dc53fa97a3238`
 
@@ -2545,6 +2580,7 @@ RUN set -xe \
 -	Virtual Size: 136.3 MB (136273530 bytes)
 -	v2 Blob: `sha256:ed27be7795d94234e0f79f54f41f735d756889c0fd9035137f81e56370e413e1`
 -	v2 Content-Length: 56.9 MB (56874513 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:59:32 GMT
 
 #### `f6a682ac6f32bac53e310ff0653158b8c939102e286988196087055f1557e264`
 
@@ -2635,6 +2671,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -2683,6 +2720,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
+-	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `a919d4da39bf29044c47b9b5d1e517901a7db01f5a1611688b8dc53fa97a3238`
 
@@ -2726,6 +2764,7 @@ RUN set -xe \
 -	Virtual Size: 136.3 MB (136273530 bytes)
 -	v2 Blob: `sha256:ed27be7795d94234e0f79f54f41f735d756889c0fd9035137f81e56370e413e1`
 -	v2 Content-Length: 56.9 MB (56874513 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 15:59:32 GMT
 
 #### `f6a682ac6f32bac53e310ff0653158b8c939102e286988196087055f1557e264`
 
@@ -2839,6 +2878,7 @@ RUN set -xe \
 -	Virtual Size: 159.4 MB (159439836 bytes)
 -	v2 Blob: `sha256:52fab0f3a190e5fccf72ef344f7ad806f424b12b16655a5aaed52adbb8a7cf9b`
 -	v2 Content-Length: 65.0 MB (64970064 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:01:35 GMT
 
 #### `58fdde8d3f5ed3c3b6fee76a266c2a81d26a2904c1c21d4994757c69f97affbb`
 
@@ -2952,6 +2992,7 @@ RUN set -xe \
 -	Virtual Size: 159.4 MB (159439836 bytes)
 -	v2 Blob: `sha256:52fab0f3a190e5fccf72ef344f7ad806f424b12b16655a5aaed52adbb8a7cf9b`
 -	v2 Content-Length: 65.0 MB (64970064 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:01:35 GMT
 
 #### `58fdde8d3f5ed3c3b6fee76a266c2a81d26a2904c1c21d4994757c69f97affbb`
 
