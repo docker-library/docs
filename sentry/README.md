@@ -114,6 +114,22 @@ Connection information for an outbound smtp server. These values aren't needed i
 
 If you're using Mailgun for inbound mail, set your API key and configure a route to forward to `/api/hooks/mailgun/inbound/`.
 
+# Image Variants
+
+The `sentry` images come in many flavors, each designed for a specific use case.
+
+## `sentry:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `sentry:onbuild`
+
+This image makes it easy to custom build your own Sentry instance by copying in a custom `config.yml` and/or `sentry.conf.py` file and installing plugins from `requirements.txt`.
+
+It's also possible to develop custom extensions within your `onbuild` package. If the build directory contains a `setup.py` file, this will also get installed.
+
+See the [official Sentry documentation](https://docs.getsentry.com/on-premise/server/installation/) for more information.
+
 # License
 
 View [license information](https://github.com/getsentry/sentry/blob/master/LICENSE) for the software contained in this image.
