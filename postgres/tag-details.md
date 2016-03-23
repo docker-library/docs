@@ -65,7 +65,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -103,7 +102,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -146,7 +144,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -308,7 +305,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `92914649cbd4145c09ff8076952c3cd34848b37eab17a22dc0b22421e73af3da`
 
@@ -402,7 +398,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -440,7 +435,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -483,7 +477,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -645,7 +638,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `92914649cbd4145c09ff8076952c3cd34848b37eab17a22dc0b22421e73af3da`
 
@@ -739,7 +731,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -777,7 +768,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -820,7 +810,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -982,7 +971,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `237e5b954387504a9be9ba7fae7d66e7e9875e0d914d692a163ccc46653ffd81`
 
@@ -1076,7 +1064,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -1114,7 +1101,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -1157,7 +1143,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -1319,7 +1304,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `237e5b954387504a9be9ba7fae7d66e7e9875e0d914d692a163ccc46653ffd81`
 
@@ -1413,7 +1397,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -1451,7 +1434,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -1494,7 +1476,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -1600,7 +1581,6 @@ RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a28ce40e1319e8995099ad6c93ab6b4fc81714fd392a47e966045d4aa56da302`
 -	v2 Content-Length: 135.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:10:11 GMT
 
 #### `411584afe3bff7774fd1eff11bdb8273827a8af98a43b10bb5a60166414c3764`
 
@@ -1656,7 +1636,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `0d2276919cca01c2e5cc9ce45c1fad734945edb67aa6df75a17ae4b9c98801c2`
 
@@ -1750,7 +1729,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -1788,7 +1766,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -1831,7 +1808,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -1937,7 +1913,6 @@ RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a28ce40e1319e8995099ad6c93ab6b4fc81714fd392a47e966045d4aa56da302`
 -	v2 Content-Length: 135.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:10:11 GMT
 
 #### `411584afe3bff7774fd1eff11bdb8273827a8af98a43b10bb5a60166414c3764`
 
@@ -1993,7 +1968,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `0d2276919cca01c2e5cc9ce45c1fad734945edb67aa6df75a17ae4b9c98801c2`
 
@@ -2087,7 +2061,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -2125,7 +2098,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -2168,7 +2140,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -2224,7 +2195,6 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:de5fec809feb84b70b1ed6f59ba6959c37db4bc5e25a201c476ab50f5851666a`
 -	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:53:31 GMT
 
 #### `28250a68e8629b7ba53d755820861c401d64e1a6f5cc50488e7e2ebf86f10bc5`
 
@@ -2244,7 +2214,6 @@ RUN apt-get update \
 -	Virtual Size: 114.4 MB (114390377 bytes)
 -	v2 Blob: `sha256:0a442079a5a0343499878b3140a4d667fec87a4a1d20454bc30ed20a7bd7ae9a`
 -	v2 Content-Length: 40.9 MB (40872696 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:53:24 GMT
 
 #### `f53f604cb786ac70b17d17b5f585782aee7fe99d84dc7e8fed646b7a4cd391f2`
 
@@ -2260,7 +2229,6 @@ RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/post
 -	Virtual Size: 21.2 KB (21234 bytes)
 -	v2 Blob: `sha256:25d527ac5d9fa8741c80c6163c5dd1eebc3662c69f76688ecbc25a9bda8ca1e9`
 -	v2 Content-Length: 6.8 KB (6843 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:10:48 GMT
 
 #### `84c16765aadc0266170b67d200b6efc9e23f68d12ed3f06acfe7be571598144c`
 
@@ -2330,7 +2298,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `c6866f582a971bee7ee7c078ea80286faef985b02efcfca4ea524c89e725abb5`
 
@@ -2424,7 +2391,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -2462,7 +2428,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -2505,7 +2470,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -2561,7 +2525,6 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:de5fec809feb84b70b1ed6f59ba6959c37db4bc5e25a201c476ab50f5851666a`
 -	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:53:31 GMT
 
 #### `28250a68e8629b7ba53d755820861c401d64e1a6f5cc50488e7e2ebf86f10bc5`
 
@@ -2581,7 +2544,6 @@ RUN apt-get update \
 -	Virtual Size: 114.4 MB (114390377 bytes)
 -	v2 Blob: `sha256:0a442079a5a0343499878b3140a4d667fec87a4a1d20454bc30ed20a7bd7ae9a`
 -	v2 Content-Length: 40.9 MB (40872696 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:53:24 GMT
 
 #### `f53f604cb786ac70b17d17b5f585782aee7fe99d84dc7e8fed646b7a4cd391f2`
 
@@ -2597,7 +2559,6 @@ RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/post
 -	Virtual Size: 21.2 KB (21234 bytes)
 -	v2 Blob: `sha256:25d527ac5d9fa8741c80c6163c5dd1eebc3662c69f76688ecbc25a9bda8ca1e9`
 -	v2 Content-Length: 6.8 KB (6843 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:10:48 GMT
 
 #### `84c16765aadc0266170b67d200b6efc9e23f68d12ed3f06acfe7be571598144c`
 
@@ -2667,7 +2628,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `c6866f582a971bee7ee7c078ea80286faef985b02efcfca4ea524c89e725abb5`
 
@@ -2761,7 +2721,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -2799,7 +2758,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -2842,7 +2800,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -2898,7 +2855,6 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:4d4c6707d860f7d789ae5eb768d90677f34950f45b306d3abec4f085087d479f`
 -	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:41:43 GMT
 
 #### `adf658a6b808c3b71bb09ef32389fe9cd0b7165cbd3089ce2fab98624a7fcbab`
 
@@ -3004,7 +2960,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `1d54391f4545cc0ed9bd39a90276d9d8cec4dfe3d28c00e4383d683edeae6a07`
 
@@ -3098,7 +3053,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -3136,7 +3090,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -3179,7 +3132,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -3235,7 +3187,6 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:4d4c6707d860f7d789ae5eb768d90677f34950f45b306d3abec4f085087d479f`
 -	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:41:43 GMT
 
 #### `adf658a6b808c3b71bb09ef32389fe9cd0b7165cbd3089ce2fab98624a7fcbab`
 
@@ -3341,7 +3292,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `1d54391f4545cc0ed9bd39a90276d9d8cec4dfe3d28c00e4383d683edeae6a07`
 
@@ -3435,7 +3385,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -3473,7 +3422,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -3516,7 +3464,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -3572,7 +3519,6 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:4d4c6707d860f7d789ae5eb768d90677f34950f45b306d3abec4f085087d479f`
 -	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:41:43 GMT
 
 #### `adf658a6b808c3b71bb09ef32389fe9cd0b7165cbd3089ce2fab98624a7fcbab`
 
@@ -3678,7 +3624,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `1d54391f4545cc0ed9bd39a90276d9d8cec4dfe3d28c00e4383d683edeae6a07`
 
@@ -3772,7 +3717,6 @@ RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
 -	Virtual Size: 330.4 KB (330389 bytes)
 -	v2 Blob: `sha256:beb59dc2ad34ce98c06f8d4426294480687dd71b4abf84ca3a46f39048ef00e1`
 -	v2 Content-Length: 2.0 KB (2039 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:48 GMT
 
 #### `1ad190f65f044a35ac52ed27c15ceedd1193ff64b7dab50780398d2a7f145553`
 
@@ -3810,7 +3754,6 @@ RUN set -x \
 -	Virtual Size: 4.3 MB (4254626 bytes)
 -	v2 Blob: `sha256:f42a5322ef1307d9dedda88a5c08e04b35952b636f6ac4693fc5782ab78f93b7`
 -	v2 Content-Length: 1.2 MB (1218731 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:31 GMT
 
 #### `2d0c73368a74ab694c7fd9889e5d4b703cc5b80a0b67dd71ef0c481ee2c55f7f`
 
@@ -3853,7 +3796,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:0dc08677d778c3f90cdfa41bd0a28777997d24e200edbb0d6be4b790a1532a7c`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:42:06 GMT
 
 #### `c05a4dbabb61fa46d94a60220fcbad21f9c55159627c2d99095e45431bd7dfcb`
 
@@ -3909,7 +3851,6 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJ
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:4d4c6707d860f7d789ae5eb768d90677f34950f45b306d3abec4f085087d479f`
 -	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:41:43 GMT
 
 #### `adf658a6b808c3b71bb09ef32389fe9cd0b7165cbd3089ce2fab98624a7fcbab`
 
@@ -4015,7 +3956,6 @@ COPY file:73685c71106f54f1ed34d97b7844c25e823679d9f612d58c0e4489aa9aaf5c36 in /
 -	Virtual Size: 2.6 KB (2569 bytes)
 -	v2 Blob: `sha256:a2d55eea3342c5e6ba82ccfe17f0ae365c6aeee38179ba7a0dcb169bc674c563`
 -	v2 Content-Length: 1.2 KB (1240 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:35:30 GMT
 
 #### `1d54391f4545cc0ed9bd39a90276d9d8cec4dfe3d28c00e4383d683edeae6a07`
 

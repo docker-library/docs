@@ -32,7 +32,6 @@ ADD file:037585e370463e3c37649a8b2b99b051b198e52f5ed9827c724d18b5b5e848ac in /
 -	Virtual Size: 137.4 MB (137388294 bytes)
 -	v2 Blob: `sha256:19aa4e93df7dc639d876b8a451931b709f23e325c7caea25d34eead65d8beeaf`
 -	v2 Content-Length: 44.2 MB (44196642 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:55:52 GMT
 
 #### `273721eafe54bb74e879ddb91bdf0ebac518523e94f681dfb17e994c81090fb2`
 
@@ -71,7 +70,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:099ccf35ad4bc203c1a64d5e3771ac4ef5f9cdce771d54adb13ca9153b83c676`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 00:55:18 GMT
 
 #### `32190de3770a9278a4660f6710bf0de03cf3ae42dff380dca38e931eabe89344`
 
@@ -113,7 +111,6 @@ ADD file:dad64c5f9efd5d6a67fafe457a2fbb73650537ebd04aab966c6b98a675eea5d7 in /et
 -	Virtual Size: 351.0 B
 -	v2 Blob: `sha256:c21c82e71cba2bc65ae9ef48df8e00387084b93e517995afcdacd043ebde2b78`
 -	v2 Content-Length: 364.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:30 GMT
 
 #### `cef8e326f3fcfc2bf5e344494f759679b9253b7542f3f320fc88d336a1783212`
 
@@ -201,7 +198,6 @@ RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 -	Virtual Size: 2.5 KB (2489 bytes)
 -	v2 Blob: `sha256:2e509e2e7cb8824175bf6bc879bc3a4497c1573a4925a2ddad3714565b5fed91`
 -	v2 Content-Length: 1.3 KB (1299 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:13 GMT
 
 #### `060f274415330b65031ede9e1c2b538956c5fa610f7ac6051515d0afaee7fc17`
 
@@ -281,7 +277,6 @@ ADD file:037585e370463e3c37649a8b2b99b051b198e52f5ed9827c724d18b5b5e848ac in /
 -	Virtual Size: 137.4 MB (137388294 bytes)
 -	v2 Blob: `sha256:19aa4e93df7dc639d876b8a451931b709f23e325c7caea25d34eead65d8beeaf`
 -	v2 Content-Length: 44.2 MB (44196642 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:55:52 GMT
 
 #### `273721eafe54bb74e879ddb91bdf0ebac518523e94f681dfb17e994c81090fb2`
 
@@ -320,7 +315,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:099ccf35ad4bc203c1a64d5e3771ac4ef5f9cdce771d54adb13ca9153b83c676`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 00:55:18 GMT
 
 #### `32190de3770a9278a4660f6710bf0de03cf3ae42dff380dca38e931eabe89344`
 
@@ -362,7 +356,6 @@ ADD file:dad64c5f9efd5d6a67fafe457a2fbb73650537ebd04aab966c6b98a675eea5d7 in /et
 -	Virtual Size: 351.0 B
 -	v2 Blob: `sha256:c21c82e71cba2bc65ae9ef48df8e00387084b93e517995afcdacd043ebde2b78`
 -	v2 Content-Length: 364.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:30 GMT
 
 #### `cef8e326f3fcfc2bf5e344494f759679b9253b7542f3f320fc88d336a1783212`
 
@@ -450,7 +443,6 @@ RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 -	Virtual Size: 2.5 KB (2489 bytes)
 -	v2 Blob: `sha256:2e509e2e7cb8824175bf6bc879bc3a4497c1573a4925a2ddad3714565b5fed91`
 -	v2 Content-Length: 1.3 KB (1299 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:13 GMT
 
 #### `060f274415330b65031ede9e1c2b538956c5fa610f7ac6051515d0afaee7fc17`
 
@@ -685,7 +677,6 @@ RUN sed -ri 's/^session\s+required\s+pam_loginuid.so$/session optional pam_login
 -	Virtual Size: 2.1 KB (2132 bytes)
 -	v2 Blob: `sha256:1e1c3e99deb16670b1fab55fc951da6e5a4c0f74f1e5cb288e7c7ff87f7417e9`
 -	v2 Content-Length: 1.0 KB (1035 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:45 GMT
 
 #### `b912da5ccd384dc9e3f3987e84ae3ab01017a88909c17576de85844ac1bd8a65`
 
@@ -934,7 +925,6 @@ RUN sed -ri 's/^session\s+required\s+pam_loginuid.so$/session optional pam_login
 -	Virtual Size: 2.1 KB (2132 bytes)
 -	v2 Blob: `sha256:1e1c3e99deb16670b1fab55fc951da6e5a4c0f74f1e5cb288e7c7ff87f7417e9`
 -	v2 Content-Length: 1.0 KB (1035 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:45 GMT
 
 #### `b912da5ccd384dc9e3f3987e84ae3ab01017a88909c17576de85844ac1bd8a65`
 
@@ -1183,7 +1173,6 @@ RUN sed -ri 's/^session\s+required\s+pam_loginuid.so$/session optional pam_login
 -	Virtual Size: 2.1 KB (2132 bytes)
 -	v2 Blob: `sha256:1e1c3e99deb16670b1fab55fc951da6e5a4c0f74f1e5cb288e7c7ff87f7417e9`
 -	v2 Content-Length: 1.0 KB (1035 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:45 GMT
 
 #### `b912da5ccd384dc9e3f3987e84ae3ab01017a88909c17576de85844ac1bd8a65`
 
@@ -1302,7 +1291,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 215.0 KB (214981 bytes)
 -	v2 Blob: `sha256:0a1f1b169319c9679b6db42ee30661ca94438e23cf74f54a4032a1f60d6c7c96`
 -	v2 Content-Length: 77.8 KB (77797 bytes)
--	v2 Last-Modified: Thu, 09 Jul 2015 19:53:27 GMT
 
 #### `74364530838d470c24003ee1bcc185c66a7fe68ea9d9951a477cc4aa5503f5d3`
 
@@ -1373,7 +1361,6 @@ RUN rm /usr/sbin/policy-rc.d; \
 -	Virtual Size: 214.5 KB (214514 bytes)
 -	v2 Blob: `sha256:3afe0bbadf958206088268711862802ab51181f24cfcd2bcdc9f59adeaee2443`
 -	v2 Content-Length: 77.3 KB (77282 bytes)
--	v2 Last-Modified: Thu, 15 Oct 2015 08:47:05 GMT
 
 #### `99446ba2e2070540255b76839f18c48286ed1f44da860e34d836d2e07a4ab9e6`
 
@@ -1432,7 +1419,6 @@ RUN sed -ri 's/^session\s+required\s+pam_loginuid.so$/session optional pam_login
 -	Virtual Size: 2.1 KB (2126 bytes)
 -	v2 Blob: `sha256:27500b53557c53a22a1eb18c851353cb37eb9c4d6a45d5a8df5d8bc4331e3b71`
 -	v2 Content-Length: 1.0 KB (1034 bytes)
--	v2 Last-Modified: Thu, 15 Oct 2015 08:46:52 GMT
 
 #### `9ea4b7efb20c96bc88f9382a4b508ce3d674ef7f3799b0d226b332707523e259`
 
@@ -1474,7 +1460,6 @@ RUN echo 'root:docker.io' | chpasswd
 -	Virtual Size: 626.0 B
 -	v2 Blob: `sha256:037e1bafeb68b5ba2d8f470947cefc17338411f0e2d280fdb4033adbafa9610d`
 -	v2 Content-Length: 353.0 B
--	v2 Last-Modified: Thu, 15 Oct 2015 08:46:40 GMT
 
 #### `fb80beadb29fc738a53bfa01ee4712e1bf39c88dfc3875c4ad8a5d216ab844cd`
 
@@ -1551,7 +1536,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 215.0 KB (214981 bytes)
 -	v2 Blob: `sha256:0a1f1b169319c9679b6db42ee30661ca94438e23cf74f54a4032a1f60d6c7c96`
 -	v2 Content-Length: 77.8 KB (77797 bytes)
--	v2 Last-Modified: Thu, 09 Jul 2015 19:53:27 GMT
 
 #### `74364530838d470c24003ee1bcc185c66a7fe68ea9d9951a477cc4aa5503f5d3`
 
@@ -1622,7 +1606,6 @@ RUN rm /usr/sbin/policy-rc.d; \
 -	Virtual Size: 214.5 KB (214514 bytes)
 -	v2 Blob: `sha256:3afe0bbadf958206088268711862802ab51181f24cfcd2bcdc9f59adeaee2443`
 -	v2 Content-Length: 77.3 KB (77282 bytes)
--	v2 Last-Modified: Thu, 15 Oct 2015 08:47:05 GMT
 
 #### `99446ba2e2070540255b76839f18c48286ed1f44da860e34d836d2e07a4ab9e6`
 
@@ -1681,7 +1664,6 @@ RUN sed -ri 's/^session\s+required\s+pam_loginuid.so$/session optional pam_login
 -	Virtual Size: 2.1 KB (2126 bytes)
 -	v2 Blob: `sha256:27500b53557c53a22a1eb18c851353cb37eb9c4d6a45d5a8df5d8bc4331e3b71`
 -	v2 Content-Length: 1.0 KB (1034 bytes)
--	v2 Last-Modified: Thu, 15 Oct 2015 08:46:52 GMT
 
 #### `9ea4b7efb20c96bc88f9382a4b508ce3d674ef7f3799b0d226b332707523e259`
 
@@ -1723,7 +1705,6 @@ RUN echo 'root:docker.io' | chpasswd
 -	Virtual Size: 626.0 B
 -	v2 Blob: `sha256:037e1bafeb68b5ba2d8f470947cefc17338411f0e2d280fdb4033adbafa9610d`
 -	v2 Content-Length: 353.0 B
--	v2 Last-Modified: Thu, 15 Oct 2015 08:46:40 GMT
 
 #### `fb80beadb29fc738a53bfa01ee4712e1bf39c88dfc3875c4ad8a5d216ab844cd`
 

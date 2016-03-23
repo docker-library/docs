@@ -141,7 +141,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10
 -	Virtual Size: 234.7 MB (234717379 bytes)
 -	v2 Blob: `sha256:2f1535cafa87b7f6f4182e643d54fffd17f2207990d6b3a8971d9d0a23f8bc2a`
 -	v2 Content-Length: 79.5 MB (79469142 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:23 GMT
 
 #### `736b5602e45b229e7c9ec5188d14a4ca5f9c0e760bd1c8e191449838781f60c3`
 
@@ -155,7 +154,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:bd194c5c1d4af40940319e5ef8ef0b76b15b44c6d03b8f61e519c8f0ca5fcc5e`
 -	v2 Content-Length: 101.1 KB (101059 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:51 GMT
 
 ## `mono:3.10`
 
@@ -255,7 +253,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10
 -	Virtual Size: 234.7 MB (234717379 bytes)
 -	v2 Blob: `sha256:2f1535cafa87b7f6f4182e643d54fffd17f2207990d6b3a8971d9d0a23f8bc2a`
 -	v2 Content-Length: 79.5 MB (79469142 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:23 GMT
 
 #### `736b5602e45b229e7c9ec5188d14a4ca5f9c0e760bd1c8e191449838781f60c3`
 
@@ -269,7 +266,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:bd194c5c1d4af40940319e5ef8ef0b76b15b44c6d03b8f61e519c8f0ca5fcc5e`
 -	v2 Content-Length: 101.1 KB (101059 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:51 GMT
 
 ## `mono:3.10.0-onbuild`
 
@@ -369,7 +365,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10
 -	Virtual Size: 234.7 MB (234717379 bytes)
 -	v2 Blob: `sha256:2f1535cafa87b7f6f4182e643d54fffd17f2207990d6b3a8971d9d0a23f8bc2a`
 -	v2 Content-Length: 79.5 MB (79469142 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:23 GMT
 
 #### `736b5602e45b229e7c9ec5188d14a4ca5f9c0e760bd1c8e191449838781f60c3`
 
@@ -383,7 +378,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:bd194c5c1d4af40940319e5ef8ef0b76b15b44c6d03b8f61e519c8f0ca5fcc5e`
 -	v2 Content-Length: 101.1 KB (101059 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:51 GMT
 
 #### `dbf78c9aa7f5f20f09fed35b3a039a90774fc9c580c2efcfd7d1da3d031fb457`
 
@@ -581,7 +575,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10
 -	Virtual Size: 234.7 MB (234717379 bytes)
 -	v2 Blob: `sha256:2f1535cafa87b7f6f4182e643d54fffd17f2207990d6b3a8971d9d0a23f8bc2a`
 -	v2 Content-Length: 79.5 MB (79469142 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:23 GMT
 
 #### `736b5602e45b229e7c9ec5188d14a4ca5f9c0e760bd1c8e191449838781f60c3`
 
@@ -595,7 +588,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:bd194c5c1d4af40940319e5ef8ef0b76b15b44c6d03b8f61e519c8f0ca5fcc5e`
 -	v2 Content-Length: 101.1 KB (101059 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:51 GMT
 
 #### `dbf78c9aa7f5f20f09fed35b3a039a90774fc9c580c2efcfd7d1da3d031fb457`
 
@@ -793,7 +785,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Virtual Size: 249.4 MB (249441775 bytes)
 -	v2 Blob: `sha256:6a8bc2f4855b641b20e8c8b2a6a98f7ec8b7e0c0af61d9f16c36b6b74ba1696a`
 -	v2 Content-Length: 80.8 MB (80798830 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:22 GMT
 
 ## `mono:3.12.0`
 
@@ -893,7 +884,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Virtual Size: 249.4 MB (249441775 bytes)
 -	v2 Blob: `sha256:6a8bc2f4855b641b20e8c8b2a6a98f7ec8b7e0c0af61d9f16c36b6b74ba1696a`
 -	v2 Content-Length: 80.8 MB (80798830 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:22 GMT
 
 ## `mono:3.12`
 
@@ -993,7 +983,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Virtual Size: 249.4 MB (249441775 bytes)
 -	v2 Blob: `sha256:6a8bc2f4855b641b20e8c8b2a6a98f7ec8b7e0c0af61d9f16c36b6b74ba1696a`
 -	v2 Content-Length: 80.8 MB (80798830 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:22 GMT
 
 ## `mono:3`
 
@@ -1093,7 +1082,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Virtual Size: 249.4 MB (249441775 bytes)
 -	v2 Blob: `sha256:6a8bc2f4855b641b20e8c8b2a6a98f7ec8b7e0c0af61d9f16c36b6b74ba1696a`
 -	v2 Content-Length: 80.8 MB (80798830 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:22 GMT
 
 ## `mono:3.12.1-onbuild`
 
@@ -1193,7 +1181,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Virtual Size: 249.4 MB (249441775 bytes)
 -	v2 Blob: `sha256:6a8bc2f4855b641b20e8c8b2a6a98f7ec8b7e0c0af61d9f16c36b6b74ba1696a`
 -	v2 Content-Length: 80.8 MB (80798830 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:22 GMT
 
 #### `e675c8317fd7b74b6cd43cfbc26530ece509e29a8f280e6fd795298b37b46647`
 
@@ -1391,7 +1378,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Virtual Size: 249.4 MB (249441775 bytes)
 -	v2 Blob: `sha256:6a8bc2f4855b641b20e8c8b2a6a98f7ec8b7e0c0af61d9f16c36b6b74ba1696a`
 -	v2 Content-Length: 80.8 MB (80798830 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:22 GMT
 
 #### `e675c8317fd7b74b6cd43cfbc26530ece509e29a8f280e6fd795298b37b46647`
 
@@ -1589,7 +1575,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Virtual Size: 249.4 MB (249441775 bytes)
 -	v2 Blob: `sha256:6a8bc2f4855b641b20e8c8b2a6a98f7ec8b7e0c0af61d9f16c36b6b74ba1696a`
 -	v2 Content-Length: 80.8 MB (80798830 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:22 GMT
 
 #### `e675c8317fd7b74b6cd43cfbc26530ece509e29a8f280e6fd795298b37b46647`
 
@@ -1787,7 +1772,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Virtual Size: 249.4 MB (249441775 bytes)
 -	v2 Blob: `sha256:6a8bc2f4855b641b20e8c8b2a6a98f7ec8b7e0c0af61d9f16c36b6b74ba1696a`
 -	v2 Content-Length: 80.8 MB (80798830 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:22 GMT
 
 #### `e675c8317fd7b74b6cd43cfbc26530ece509e29a8f280e6fd795298b37b46647`
 
@@ -1999,7 +1983,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:f534510ae79d3243de3f7d3bfa9b8ca1956faceeb1e4c609eca1b4a19163a77e`
 -	v2 Content-Length: 101.1 KB (101052 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:46 GMT
 
 ## `mono:3.8`
 
@@ -2113,7 +2096,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:f534510ae79d3243de3f7d3bfa9b8ca1956faceeb1e4c609eca1b4a19163a77e`
 -	v2 Content-Length: 101.1 KB (101052 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:46 GMT
 
 ## `mono:3.8.0-onbuild`
 
@@ -2227,7 +2209,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:f534510ae79d3243de3f7d3bfa9b8ca1956faceeb1e4c609eca1b4a19163a77e`
 -	v2 Content-Length: 101.1 KB (101052 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:46 GMT
 
 #### `b200b84f0aa75a7a97ec88d1436ea1f0471bc3fc2d52da8bfd5cd594574032ad`
 
@@ -2439,7 +2420,6 @@ RUN mozroots --machine --import --sync --quiet
 -	Virtual Size: 153.2 KB (153179 bytes)
 -	v2 Blob: `sha256:f534510ae79d3243de3f7d3bfa9b8ca1956faceeb1e4c609eca1b4a19163a77e`
 -	v2 Content-Length: 101.1 KB (101052 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:02:46 GMT
 
 #### `b200b84f0aa75a7a97ec88d1436ea1f0471bc3fc2d52da8bfd5cd594574032ad`
 
@@ -2965,7 +2945,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8ce8089c6827bbdbebf72342ce4cff1f9bbb36120c1117e4e7a42ba06f62aca7`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:25:20 GMT
 
 #### `8415819b135678f1efe7fd464484b7a126ee591179da757328e53b73fd2eb105`
 
@@ -3163,7 +3142,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8ce8089c6827bbdbebf72342ce4cff1f9bbb36120c1117e4e7a42ba06f62aca7`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:25:20 GMT
 
 #### `8415819b135678f1efe7fd464484b7a126ee591179da757328e53b73fd2eb105`
 
@@ -3361,7 +3339,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8ce8089c6827bbdbebf72342ce4cff1f9bbb36120c1117e4e7a42ba06f62aca7`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:25:20 GMT
 
 #### `8415819b135678f1efe7fd464484b7a126ee591179da757328e53b73fd2eb105`
 
@@ -4348,7 +4325,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7da0e0ba1c7b07084235764c477141ded34689d947484d85d4aa720e63c6f779`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:26:11 GMT
 
 #### `72a7b93dcee92a4272462786b839ff0dba7f65976da8e251f7b2b889f1f6fbf6`
 
@@ -4545,7 +4521,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:7da0e0ba1c7b07084235764c477141ded34689d947484d85d4aa720e63c6f779`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:26:11 GMT
 
 #### `72a7b93dcee92a4272462786b839ff0dba7f65976da8e251f7b2b889f1f6fbf6`
 

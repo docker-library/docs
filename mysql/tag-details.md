@@ -47,7 +47,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -89,7 +88,6 @@ RUN apt-get update && apt-get install -y perl --no-install-recommends && rm -rf 
 -	Virtual Size: 32.8 MB (32837959 bytes)
 -	v2 Blob: `sha256:92ad80c85f098772dd769c6cefa9df6d18a18b4065b9d99786af522314d1b992`
 -	v2 Content-Length: 8.2 MB (8210444 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:10:13 GMT
 
 #### `d4d452f3302c38b93c78cfbc5637cfe0488b683864608e75e473beb9ac599ce9`
 
@@ -117,7 +115,6 @@ ENV MYSQL_MAJOR=5.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `872dd7398ca28449585813fbc719f5db1819f38b58bf2f49707a0932523c8b1c`
 
@@ -131,7 +128,6 @@ ENV MYSQL_VERSION=5.5.48
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6289ae0ba14259d3ac97a2e588ed602473434e62ff47702c97b55e302c37fad7`
 
@@ -175,7 +171,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56e83cd525a80f73da91d0e603c8f882becb7088da1768697232284cb3f395f0`
 
@@ -211,7 +206,6 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9da428891ed1cee6059e2f48728f8544663e08ff8cf89e1112a47289fb2eca50`
 
@@ -239,7 +233,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418326a4edb119c94a02488fa565d90a22ffd53012855162556b7fab67c574b5`
 
@@ -253,7 +246,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e68312420d0a9d1cb7088a2e8fcf340910afc693bb9fac36d7c8766f4e010986`
 
@@ -267,7 +259,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mysql:5.5`
 
@@ -305,7 +296,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -347,7 +337,6 @@ RUN apt-get update && apt-get install -y perl --no-install-recommends && rm -rf 
 -	Virtual Size: 32.8 MB (32837959 bytes)
 -	v2 Blob: `sha256:92ad80c85f098772dd769c6cefa9df6d18a18b4065b9d99786af522314d1b992`
 -	v2 Content-Length: 8.2 MB (8210444 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:10:13 GMT
 
 #### `d4d452f3302c38b93c78cfbc5637cfe0488b683864608e75e473beb9ac599ce9`
 
@@ -375,7 +364,6 @@ ENV MYSQL_MAJOR=5.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `872dd7398ca28449585813fbc719f5db1819f38b58bf2f49707a0932523c8b1c`
 
@@ -389,7 +377,6 @@ ENV MYSQL_VERSION=5.5.48
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6289ae0ba14259d3ac97a2e588ed602473434e62ff47702c97b55e302c37fad7`
 
@@ -433,7 +420,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56e83cd525a80f73da91d0e603c8f882becb7088da1768697232284cb3f395f0`
 
@@ -469,7 +455,6 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9da428891ed1cee6059e2f48728f8544663e08ff8cf89e1112a47289fb2eca50`
 
@@ -497,7 +482,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418326a4edb119c94a02488fa565d90a22ffd53012855162556b7fab67c574b5`
 
@@ -511,7 +495,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e68312420d0a9d1cb7088a2e8fcf340910afc693bb9fac36d7c8766f4e010986`
 
@@ -525,7 +508,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mysql:5.6.29`
 
@@ -563,7 +545,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -633,7 +614,6 @@ ENV MYSQL_MAJOR=5.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7ea54bd74dc0295f39e06eba55f0df8f2d1a98d89936932cf66820913ceab8b`
 
@@ -647,7 +627,6 @@ ENV MYSQL_VERSION=5.6.29-1debian8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a4dd08338ec688e82319a964ca25810dc3aa5501f78831e3d76289612cff8d8`
 
@@ -712,7 +691,6 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `457f31feeb7a395c29cb8e514e575ad187ee1c57397d5b30b3e65c03ae1d66a7`
 
@@ -740,7 +718,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9b1de921d4bc409859f69c81fbd48da59a90c6e7f65e6a73e0d60714f8817936`
 
@@ -754,7 +731,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b666e9e882a2a96b6a63d40958fa4021a28bd53e628a20b71c3cea0447e2b24f`
 
@@ -768,7 +744,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mysql:5.6`
 
@@ -806,7 +781,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -876,7 +850,6 @@ ENV MYSQL_MAJOR=5.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7ea54bd74dc0295f39e06eba55f0df8f2d1a98d89936932cf66820913ceab8b`
 
@@ -890,7 +863,6 @@ ENV MYSQL_VERSION=5.6.29-1debian8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a4dd08338ec688e82319a964ca25810dc3aa5501f78831e3d76289612cff8d8`
 
@@ -955,7 +927,6 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `457f31feeb7a395c29cb8e514e575ad187ee1c57397d5b30b3e65c03ae1d66a7`
 
@@ -983,7 +954,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9b1de921d4bc409859f69c81fbd48da59a90c6e7f65e6a73e0d60714f8817936`
 
@@ -997,7 +967,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b666e9e882a2a96b6a63d40958fa4021a28bd53e628a20b71c3cea0447e2b24f`
 
@@ -1011,7 +980,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mysql:5.7.11`
 
@@ -1049,7 +1017,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -1119,7 +1086,6 @@ ENV MYSQL_MAJOR=5.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d118ad716ef1dc9f663b3a5737317e30bb95af162752a4de820a314b48f8ba5d`
 
@@ -1133,7 +1099,6 @@ ENV MYSQL_VERSION=5.7.11-1debian8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0985a1ea76759f190b121e1345bc7ace97eb5d3064fb70907f4a1259a5ddd8ff`
 
@@ -1198,7 +1163,6 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b9f7e4b521ac03c715a13f122c89a74b17fafd06e1aa928409d464c76650613`
 
@@ -1226,7 +1190,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f6bd37838020bf4febebbd461e3ec6a438a96e0c7ea5b832eb58ffba4ae444b`
 
@@ -1240,7 +1203,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6863cdbe438eba08061309ffa076b3cffb00b3fc4122affd5fff678a99094908`
 
@@ -1254,7 +1216,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mysql:5.7`
 
@@ -1292,7 +1253,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -1362,7 +1322,6 @@ ENV MYSQL_MAJOR=5.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d118ad716ef1dc9f663b3a5737317e30bb95af162752a4de820a314b48f8ba5d`
 
@@ -1376,7 +1335,6 @@ ENV MYSQL_VERSION=5.7.11-1debian8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0985a1ea76759f190b121e1345bc7ace97eb5d3064fb70907f4a1259a5ddd8ff`
 
@@ -1441,7 +1399,6 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b9f7e4b521ac03c715a13f122c89a74b17fafd06e1aa928409d464c76650613`
 
@@ -1469,7 +1426,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f6bd37838020bf4febebbd461e3ec6a438a96e0c7ea5b832eb58ffba4ae444b`
 
@@ -1483,7 +1439,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6863cdbe438eba08061309ffa076b3cffb00b3fc4122affd5fff678a99094908`
 
@@ -1497,7 +1452,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mysql:5`
 
@@ -1535,7 +1489,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -1605,7 +1558,6 @@ ENV MYSQL_MAJOR=5.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d118ad716ef1dc9f663b3a5737317e30bb95af162752a4de820a314b48f8ba5d`
 
@@ -1619,7 +1571,6 @@ ENV MYSQL_VERSION=5.7.11-1debian8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0985a1ea76759f190b121e1345bc7ace97eb5d3064fb70907f4a1259a5ddd8ff`
 
@@ -1684,7 +1635,6 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b9f7e4b521ac03c715a13f122c89a74b17fafd06e1aa928409d464c76650613`
 
@@ -1712,7 +1662,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f6bd37838020bf4febebbd461e3ec6a438a96e0c7ea5b832eb58ffba4ae444b`
 
@@ -1726,7 +1675,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6863cdbe438eba08061309ffa076b3cffb00b3fc4122affd5fff678a99094908`
 
@@ -1740,7 +1688,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mysql:latest`
 
@@ -1778,7 +1725,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -1848,7 +1794,6 @@ ENV MYSQL_MAJOR=5.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d118ad716ef1dc9f663b3a5737317e30bb95af162752a4de820a314b48f8ba5d`
 
@@ -1862,7 +1807,6 @@ ENV MYSQL_VERSION=5.7.11-1debian8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0985a1ea76759f190b121e1345bc7ace97eb5d3064fb70907f4a1259a5ddd8ff`
 
@@ -1927,7 +1871,6 @@ VOLUME [/var/lib/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b9f7e4b521ac03c715a13f122c89a74b17fafd06e1aa928409d464c76650613`
 
@@ -1955,7 +1898,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f6bd37838020bf4febebbd461e3ec6a438a96e0c7ea5b832eb58ffba4ae444b`
 
@@ -1969,7 +1911,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6863cdbe438eba08061309ffa076b3cffb00b3fc4122affd5fff678a99094908`
 
@@ -1983,4 +1924,3 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

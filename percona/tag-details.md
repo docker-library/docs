@@ -61,7 +61,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -75,7 +74,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -103,7 +101,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -117,7 +114,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `9d1e91a783500d8f6b98b1504eac45bf5baed88b7aa988d3baab63a7ce76cda3`
 
@@ -168,7 +164,6 @@ RUN { \
 -	Virtual Size: 158.6 MB (158566155 bytes)
 -	v2 Blob: `sha256:1714699d091e7de0e165e01860a2efb0e5f69a4d031e0499cf8e3c9d4cbf4928`
 -	v2 Content-Length: 46.1 MB (46084799 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:56:34 GMT
 
 #### `b8dbf1b4dfa3c49861d80bb079e87326c0ba7aa382da2c82405849f3f5ef1b26`
 
@@ -306,7 +301,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -320,7 +314,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -348,7 +341,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -362,7 +354,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `9d1e91a783500d8f6b98b1504eac45bf5baed88b7aa988d3baab63a7ce76cda3`
 
@@ -413,7 +404,6 @@ RUN { \
 -	Virtual Size: 158.6 MB (158566155 bytes)
 -	v2 Blob: `sha256:1714699d091e7de0e165e01860a2efb0e5f69a4d031e0499cf8e3c9d4cbf4928`
 -	v2 Content-Length: 46.1 MB (46084799 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:56:34 GMT
 
 #### `b8dbf1b4dfa3c49861d80bb079e87326c0ba7aa382da2c82405849f3f5ef1b26`
 
@@ -551,7 +541,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -565,7 +554,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -593,7 +581,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -607,7 +594,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `a40ab86d9307746dc063dc3b0fc8432bcc7908289e70c7371b91d5187041d912`
 
@@ -796,7 +782,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -810,7 +795,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -838,7 +822,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -852,7 +835,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `a40ab86d9307746dc063dc3b0fc8432bcc7908289e70c7371b91d5187041d912`
 
@@ -1041,7 +1023,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1055,7 +1036,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -1083,7 +1063,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -1097,7 +1076,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `dfdf8084566ecc90cfde9c7fff1edbd83586e3626cf45d776d88a35b754030b2`
 
@@ -1164,7 +1142,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:016cf4ebb2682c93fec4ec56716bfd2a1ddbc25d1d845f6174d858d2fab9db7c`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:33 GMT
 
 #### `6dcc028fefa9e34a299ae88f94a13613d2d5024d849f3d7b449ad1529e60c4bb`
 
@@ -1286,7 +1263,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1300,7 +1276,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -1328,7 +1303,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -1342,7 +1316,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `dfdf8084566ecc90cfde9c7fff1edbd83586e3626cf45d776d88a35b754030b2`
 
@@ -1409,7 +1382,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:016cf4ebb2682c93fec4ec56716bfd2a1ddbc25d1d845f6174d858d2fab9db7c`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:33 GMT
 
 #### `6dcc028fefa9e34a299ae88f94a13613d2d5024d849f3d7b449ad1529e60c4bb`
 
@@ -1531,7 +1503,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1545,7 +1516,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -1573,7 +1543,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -1587,7 +1556,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `dfdf8084566ecc90cfde9c7fff1edbd83586e3626cf45d776d88a35b754030b2`
 
@@ -1654,7 +1622,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:016cf4ebb2682c93fec4ec56716bfd2a1ddbc25d1d845f6174d858d2fab9db7c`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:33 GMT
 
 #### `6dcc028fefa9e34a299ae88f94a13613d2d5024d849f3d7b449ad1529e60c4bb`
 
@@ -1776,7 +1743,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1790,7 +1756,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -1818,7 +1783,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -1832,7 +1796,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `dfdf8084566ecc90cfde9c7fff1edbd83586e3626cf45d776d88a35b754030b2`
 
@@ -1899,7 +1862,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:016cf4ebb2682c93fec4ec56716bfd2a1ddbc25d1d845f6174d858d2fab9db7c`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:33 GMT
 
 #### `6dcc028fefa9e34a299ae88f94a13613d2d5024d849f3d7b449ad1529e60c4bb`
 

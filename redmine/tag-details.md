@@ -47,7 +47,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -86,7 +85,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -104,7 +102,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -233,7 +230,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -290,7 +286,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -318,7 +313,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -390,7 +384,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -414,7 +407,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -489,7 +481,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.1 MB (9133453 bytes)
 -	v2 Blob: `sha256:97565cc72ef4866d2555dd11b932867c22bacffe92315b24d3a3f331500b94d8`
 -	v2 Content-Length: 2.1 MB (2109682 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:37:53 GMT
 
 #### `6160845b24732d31457aa9b58087f27e28c0ff4de4e92030e2fd509658c629fe`
 
@@ -617,7 +608,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -656,7 +646,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -674,7 +663,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -803,7 +791,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -860,7 +847,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -888,7 +874,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -960,7 +945,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -984,7 +968,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -1059,7 +1042,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.1 MB (9133453 bytes)
 -	v2 Blob: `sha256:97565cc72ef4866d2555dd11b932867c22bacffe92315b24d3a3f331500b94d8`
 -	v2 Content-Length: 2.1 MB (2109682 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:37:53 GMT
 
 #### `6160845b24732d31457aa9b58087f27e28c0ff4de4e92030e2fd509658c629fe`
 
@@ -1187,7 +1169,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1226,7 +1207,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -1244,7 +1224,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -1373,7 +1352,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -1430,7 +1408,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -1458,7 +1435,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -1530,7 +1506,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -1554,7 +1529,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -1629,7 +1603,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.1 MB (9133453 bytes)
 -	v2 Blob: `sha256:97565cc72ef4866d2555dd11b932867c22bacffe92315b24d3a3f331500b94d8`
 -	v2 Content-Length: 2.1 MB (2109682 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:37:53 GMT
 
 #### `6160845b24732d31457aa9b58087f27e28c0ff4de4e92030e2fd509658c629fe`
 
@@ -1757,7 +1730,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1796,7 +1768,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -1814,7 +1785,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -1943,7 +1913,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -2000,7 +1969,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -2028,7 +1996,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -2100,7 +2067,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -2124,7 +2090,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -2199,7 +2164,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.1 MB (9133453 bytes)
 -	v2 Blob: `sha256:97565cc72ef4866d2555dd11b932867c22bacffe92315b24d3a3f331500b94d8`
 -	v2 Content-Length: 2.1 MB (2109682 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:37:53 GMT
 
 #### `6160845b24732d31457aa9b58087f27e28c0ff4de4e92030e2fd509658c629fe`
 
@@ -2337,7 +2301,6 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:ba92fd3aefe9052ec47869f2122f76189b52605c3790fc4da9b3e12e94b7acbe`
 -	v2 Content-Length: 20.9 MB (20931342 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:39:52 GMT
 
 #### `643c4f0ec6807df1e6dc91e84558d8b11f1bc97ea7836081d2d4cb6075682e66`
 
@@ -2391,7 +2354,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2430,7 +2392,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -2448,7 +2409,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -2577,7 +2537,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -2634,7 +2593,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -2662,7 +2620,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -2734,7 +2691,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -2758,7 +2714,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -2833,7 +2788,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.1 MB (9133453 bytes)
 -	v2 Blob: `sha256:97565cc72ef4866d2555dd11b932867c22bacffe92315b24d3a3f331500b94d8`
 -	v2 Content-Length: 2.1 MB (2109682 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:37:53 GMT
 
 #### `6160845b24732d31457aa9b58087f27e28c0ff4de4e92030e2fd509658c629fe`
 
@@ -2971,7 +2925,6 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:ba92fd3aefe9052ec47869f2122f76189b52605c3790fc4da9b3e12e94b7acbe`
 -	v2 Content-Length: 20.9 MB (20931342 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:39:52 GMT
 
 #### `643c4f0ec6807df1e6dc91e84558d8b11f1bc97ea7836081d2d4cb6075682e66`
 
@@ -3025,7 +2978,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3064,7 +3016,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -3082,7 +3033,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -3211,7 +3161,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -3268,7 +3217,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -3296,7 +3244,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -3368,7 +3315,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -3392,7 +3338,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -3467,7 +3412,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.1 MB (9133453 bytes)
 -	v2 Blob: `sha256:97565cc72ef4866d2555dd11b932867c22bacffe92315b24d3a3f331500b94d8`
 -	v2 Content-Length: 2.1 MB (2109682 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:37:53 GMT
 
 #### `6160845b24732d31457aa9b58087f27e28c0ff4de4e92030e2fd509658c629fe`
 
@@ -3605,7 +3549,6 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:ba92fd3aefe9052ec47869f2122f76189b52605c3790fc4da9b3e12e94b7acbe`
 -	v2 Content-Length: 20.9 MB (20931342 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:39:52 GMT
 
 #### `643c4f0ec6807df1e6dc91e84558d8b11f1bc97ea7836081d2d4cb6075682e66`
 
@@ -3659,7 +3602,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3698,7 +3640,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -3716,7 +3657,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -3845,7 +3785,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -3902,7 +3841,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -3930,7 +3868,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -4002,7 +3939,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -4026,7 +3962,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -4101,7 +4036,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.3 MB (9299596 bytes)
 -	v2 Blob: `sha256:a1711571e538f119692cbe649e57f5fb88d122cadf404cc46172bcdda86fc6fe`
 -	v2 Content-Length: 2.1 MB (2144256 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:40:53 GMT
 
 #### `9e6a7b2a40f35f54e89f6342682f90ce07b12fa35d4a620907be57180ded27eb`
 
@@ -4229,7 +4163,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4268,7 +4201,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -4286,7 +4218,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -4415,7 +4346,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -4472,7 +4402,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -4500,7 +4429,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -4572,7 +4500,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -4596,7 +4523,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -4671,7 +4597,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.3 MB (9299596 bytes)
 -	v2 Blob: `sha256:a1711571e538f119692cbe649e57f5fb88d122cadf404cc46172bcdda86fc6fe`
 -	v2 Content-Length: 2.1 MB (2144256 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:40:53 GMT
 
 #### `9e6a7b2a40f35f54e89f6342682f90ce07b12fa35d4a620907be57180ded27eb`
 
@@ -4799,7 +4724,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4838,7 +4762,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -4856,7 +4779,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -4985,7 +4907,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -5042,7 +4963,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -5070,7 +4990,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -5142,7 +5061,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -5166,7 +5084,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -5241,7 +5158,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.3 MB (9299596 bytes)
 -	v2 Blob: `sha256:a1711571e538f119692cbe649e57f5fb88d122cadf404cc46172bcdda86fc6fe`
 -	v2 Content-Length: 2.1 MB (2144256 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:40:53 GMT
 
 #### `9e6a7b2a40f35f54e89f6342682f90ce07b12fa35d4a620907be57180ded27eb`
 
@@ -5379,7 +5295,6 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:5f5af87871f752baec41b60e39ede3694009bae06f0bc4a9cdd3b8929490015b`
 -	v2 Content-Length: 20.9 MB (20931309 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:41:28 GMT
 
 #### `0871259817a822e33aa3b1564495a4e811cb894a62d8f82204c8a47207c3437a`
 
@@ -5395,7 +5310,6 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:7cee72876416a2cad87078d5fd6601f5962c1e4e40844d2054a9d68704de0498`
 -	v2 Content-Length: 10.2 MB (10159385 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:41:21 GMT
 
 #### `8d96f2ae3ab63cb92654c5849fdc9769e85937b084aa8a872693a8bbc88e18c2`
 
@@ -5433,7 +5347,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5472,7 +5385,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -5490,7 +5402,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -5619,7 +5530,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -5676,7 +5586,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -5704,7 +5613,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -5776,7 +5684,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -5800,7 +5707,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -5875,7 +5781,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 9.3 MB (9299596 bytes)
 -	v2 Blob: `sha256:a1711571e538f119692cbe649e57f5fb88d122cadf404cc46172bcdda86fc6fe`
 -	v2 Content-Length: 2.1 MB (2144256 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:40:53 GMT
 
 #### `9e6a7b2a40f35f54e89f6342682f90ce07b12fa35d4a620907be57180ded27eb`
 
@@ -6013,7 +5918,6 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:5f5af87871f752baec41b60e39ede3694009bae06f0bc4a9cdd3b8929490015b`
 -	v2 Content-Length: 20.9 MB (20931309 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:41:28 GMT
 
 #### `0871259817a822e33aa3b1564495a4e811cb894a62d8f82204c8a47207c3437a`
 
@@ -6029,7 +5933,6 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:7cee72876416a2cad87078d5fd6601f5962c1e4e40844d2054a9d68704de0498`
 -	v2 Content-Length: 10.2 MB (10159385 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:41:21 GMT
 
 #### `8d96f2ae3ab63cb92654c5849fdc9769e85937b084aa8a872693a8bbc88e18c2`
 
@@ -6067,7 +5970,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6106,7 +6008,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -6124,7 +6025,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -6253,7 +6153,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -6310,7 +6209,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -6338,7 +6236,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -6410,7 +6307,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -6434,7 +6330,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -6509,7 +6404,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.4 MB (10416032 bytes)
 -	v2 Blob: `sha256:089ba91c03ab7884e824d68efa62f2ec0fa9f7ead4773634b9c0cebcbd28bec5`
 -	v2 Content-Length: 2.3 MB (2273698 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:42:30 GMT
 
 #### `850c87dd9468019ad4cc3160e057681e9588b8834428caf22853f3d1d6f9555b`
 
@@ -6571,7 +6465,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `174c0a8b3a4da774dd13d27403acab5a68ab6b49ee427012f1a8b5a2af5f81d1`
 
@@ -6637,7 +6530,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6676,7 +6568,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -6694,7 +6585,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -6823,7 +6713,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -6880,7 +6769,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -6908,7 +6796,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -6980,7 +6867,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -7004,7 +6890,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -7079,7 +6964,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.4 MB (10416032 bytes)
 -	v2 Blob: `sha256:089ba91c03ab7884e824d68efa62f2ec0fa9f7ead4773634b9c0cebcbd28bec5`
 -	v2 Content-Length: 2.3 MB (2273698 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:42:30 GMT
 
 #### `850c87dd9468019ad4cc3160e057681e9588b8834428caf22853f3d1d6f9555b`
 
@@ -7141,7 +7025,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `174c0a8b3a4da774dd13d27403acab5a68ab6b49ee427012f1a8b5a2af5f81d1`
 
@@ -7207,7 +7090,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7246,7 +7128,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -7264,7 +7145,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -7393,7 +7273,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -7450,7 +7329,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -7478,7 +7356,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -7550,7 +7427,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -7574,7 +7450,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -7649,7 +7524,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.4 MB (10416032 bytes)
 -	v2 Blob: `sha256:089ba91c03ab7884e824d68efa62f2ec0fa9f7ead4773634b9c0cebcbd28bec5`
 -	v2 Content-Length: 2.3 MB (2273698 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:42:30 GMT
 
 #### `850c87dd9468019ad4cc3160e057681e9588b8834428caf22853f3d1d6f9555b`
 
@@ -7711,7 +7585,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `174c0a8b3a4da774dd13d27403acab5a68ab6b49ee427012f1a8b5a2af5f81d1`
 
@@ -7841,7 +7714,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7880,7 +7752,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -7898,7 +7769,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -8027,7 +7897,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -8084,7 +7953,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -8112,7 +7980,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -8184,7 +8051,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -8208,7 +8074,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -8283,7 +8148,6 @@ RUN curl -fSL "http://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz
 -	Virtual Size: 10.4 MB (10416032 bytes)
 -	v2 Blob: `sha256:089ba91c03ab7884e824d68efa62f2ec0fa9f7ead4773634b9c0cebcbd28bec5`
 -	v2 Content-Length: 2.3 MB (2273698 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:42:30 GMT
 
 #### `850c87dd9468019ad4cc3160e057681e9588b8834428caf22853f3d1d6f9555b`
 
@@ -8345,7 +8209,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `174c0a8b3a4da774dd13d27403acab5a68ab6b49ee427012f1a8b5a2af5f81d1`
 
@@ -8475,7 +8338,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8514,7 +8376,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -8532,7 +8393,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -8661,7 +8521,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -8718,7 +8577,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -8746,7 +8604,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -8818,7 +8675,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -8842,7 +8698,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -8979,7 +8834,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `82249bf7606ea08d91c6b8b563972ab89b448c2036043ccfea214e4451721ee1`
 
@@ -9045,7 +8899,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9084,7 +8937,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -9102,7 +8954,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -9231,7 +9082,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -9288,7 +9138,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -9316,7 +9165,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -9388,7 +9236,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -9412,7 +9259,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -9549,7 +9395,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `82249bf7606ea08d91c6b8b563972ab89b448c2036043ccfea214e4451721ee1`
 
@@ -9615,7 +9460,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9654,7 +9498,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -9672,7 +9515,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -9801,7 +9643,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -9858,7 +9699,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -9886,7 +9726,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -9958,7 +9797,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -9982,7 +9820,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -10119,7 +9956,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `82249bf7606ea08d91c6b8b563972ab89b448c2036043ccfea214e4451721ee1`
 
@@ -10185,7 +10021,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -10224,7 +10059,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -10242,7 +10076,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -10371,7 +10204,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -10428,7 +10260,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -10456,7 +10287,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -10528,7 +10358,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -10552,7 +10381,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -10689,7 +10517,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `82249bf7606ea08d91c6b8b563972ab89b448c2036043ccfea214e4451721ee1`
 
@@ -10755,7 +10582,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -10794,7 +10620,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -10812,7 +10637,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -10941,7 +10765,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -10998,7 +10821,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -11026,7 +10848,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -11098,7 +10919,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -11122,7 +10942,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -11259,7 +11078,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `82249bf7606ea08d91c6b8b563972ab89b448c2036043ccfea214e4451721ee1`
 
@@ -11335,7 +11153,6 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:a5bdb82ab12c33c54d14c047ef186bcf68890db90dc07f4404bacf439275f748`
 -	v2 Content-Length: 20.9 MB (20931277 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:44:57 GMT
 
 #### `a9375a32d3e73360090cdda2b51e9041f52fd9ce38079d0b13fd582b0296ddbd`
 
@@ -11351,7 +11168,6 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:a1395de891dded5af5f509c3975f447ffdab3ff744cf6a6b1b7d4fd882449bc5`
 -	v2 Content-Length: 10.2 MB (10159380 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:44:49 GMT
 
 #### `2eb8dd333a53563545ebf2dd6eeffc510944b69ca5fd6e6e77ee12d716e68738`
 
@@ -11389,7 +11205,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -11428,7 +11243,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -11446,7 +11260,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -11575,7 +11388,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -11632,7 +11444,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -11660,7 +11471,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -11732,7 +11542,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -11756,7 +11565,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -11893,7 +11701,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `82249bf7606ea08d91c6b8b563972ab89b448c2036043ccfea214e4451721ee1`
 
@@ -11969,7 +11776,6 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:a5bdb82ab12c33c54d14c047ef186bcf68890db90dc07f4404bacf439275f748`
 -	v2 Content-Length: 20.9 MB (20931277 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:44:57 GMT
 
 #### `a9375a32d3e73360090cdda2b51e9041f52fd9ce38079d0b13fd582b0296ddbd`
 
@@ -11985,7 +11791,6 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:a1395de891dded5af5f509c3975f447ffdab3ff744cf6a6b1b7d4fd882449bc5`
 -	v2 Content-Length: 10.2 MB (10159380 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:44:49 GMT
 
 #### `2eb8dd333a53563545ebf2dd6eeffc510944b69ca5fd6e6e77ee12d716e68738`
 
@@ -12023,7 +11828,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -12062,7 +11866,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -12080,7 +11883,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -12209,7 +12011,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -12266,7 +12067,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -12294,7 +12094,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -12366,7 +12165,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -12390,7 +12188,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -12527,7 +12324,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `82249bf7606ea08d91c6b8b563972ab89b448c2036043ccfea214e4451721ee1`
 
@@ -12603,7 +12399,6 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:a5bdb82ab12c33c54d14c047ef186bcf68890db90dc07f4404bacf439275f748`
 -	v2 Content-Length: 20.9 MB (20931277 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:44:57 GMT
 
 #### `a9375a32d3e73360090cdda2b51e9041f52fd9ce38079d0b13fd582b0296ddbd`
 
@@ -12619,7 +12414,6 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:a1395de891dded5af5f509c3975f447ffdab3ff744cf6a6b1b7d4fd882449bc5`
 -	v2 Content-Length: 10.2 MB (10159380 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:44:49 GMT
 
 #### `2eb8dd333a53563545ebf2dd6eeffc510944b69ca5fd6e6e77ee12d716e68738`
 
@@ -12657,7 +12451,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -12696,7 +12489,6 @@ RUN apt-get update \
 -	Virtual Size: 37.7 MB (37740839 bytes)
 -	v2 Blob: `sha256:df1d33effda02eac4bef8d643fbcba844caed0f13032bd66d9ebfd203ba26632`
 -	v2 Content-Length: 13.6 MB (13626250 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:48:03 GMT
 
 #### `9e853bd088c35f08ae9358e047e7b79533174d2b06a0361abc06a47818e0007c`
 
@@ -12714,7 +12506,6 @@ RUN mkdir -p /usr/local/etc \
 -	Virtual Size: 45.0 B
 -	v2 Blob: `sha256:890bab076cf51dc378c4a86bcf6ac1c0ebc1503b7710d0eb6e919a6ffa11da87`
 -	v2 Content-Length: 202.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:47:55 GMT
 
 #### `198206d3b7ee818cf1db49fe7d5dc2a251db5532ce2cbfe684aef0a7323cda8e`
 
@@ -12843,7 +12634,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -12900,7 +12690,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2a3e97352400620cac5d5de42a8ab1a263eeb50429e105855f1d2f3d57050171`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:46 GMT
 
 #### `f4af525eeca7c8deff10e47cfdccf9544c2782e690073bc4f387157a5b87e41b`
 
@@ -12928,7 +12717,6 @@ RUN groupadd -r redmine && useradd -r -g redmine redmine
 -	Virtual Size: 330.4 KB (330382 bytes)
 -	v2 Blob: `sha256:21a767246ccc89d622884684801d0d8126d61df6ac1a19ed36b2ffccb30948e1`
 -	v2 Content-Length: 2.0 KB (2041 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:41 GMT
 
 #### `c5a134ceec4342aa5b50c59d4569d8771f666fdad70a43bb20ef4a7ecd3ad868`
 
@@ -13000,7 +12788,6 @@ RUN set -x \
 -	Virtual Size: 18.7 KB (18728 bytes)
 -	v2 Blob: `sha256:814a5e0392df833c2172d90de524b7a5d5b8c745987091d294c2a4d36a2a5af3`
 -	v2 Content-Length: 7.1 KB (7111 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:32 GMT
 
 #### `d10e708d07e63418bcfa1aeba8c6108435f617e0315a47938fa633bb1fa3596a`
 
@@ -13024,7 +12811,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 154.5 MB (154478312 bytes)
 -	v2 Blob: `sha256:f34c3ee1454da5e9b34bb7348786f17924e841151fa354ddbe8208893c0027e6`
 -	v2 Content-Length: 56.8 MB (56750160 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:26 GMT
 
 #### `273fac5b4285da22511a4581d44c88ca312f30a30d831388d703dad0c9668e5a`
 
@@ -13161,7 +12947,6 @@ COPY file:08966122fe8f74f325048627983c825e807a2b79024919243979fda1b6bfc649 in /
 -	Virtual Size: 2.3 KB (2314 bytes)
 -	v2 Blob: `sha256:4e38072e49c1fb439e3cb0dc1f84cd7eeb683f5f57625b996484becdf6e9de77`
 -	v2 Content-Length: 1.1 KB (1068 bytes)
--	v2 Last-Modified: Thu, 28 Jan 2016 00:52:49 GMT
 
 #### `82249bf7606ea08d91c6b8b563972ab89b448c2036043ccfea214e4451721ee1`
 
@@ -13237,7 +13022,6 @@ RUN buildDeps=' \
 -	Virtual Size: 49.6 MB (49613658 bytes)
 -	v2 Blob: `sha256:a5bdb82ab12c33c54d14c047ef186bcf68890db90dc07f4404bacf439275f748`
 -	v2 Content-Length: 20.9 MB (20931277 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:44:57 GMT
 
 #### `a9375a32d3e73360090cdda2b51e9041f52fd9ce38079d0b13fd582b0296ddbd`
 
@@ -13253,7 +13037,6 @@ RUN set -x \
 -	Virtual Size: 29.8 MB (29752463 bytes)
 -	v2 Blob: `sha256:a1395de891dded5af5f509c3975f447ffdab3ff744cf6a6b1b7d4fd882449bc5`
 -	v2 Content-Length: 10.2 MB (10159380 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:44:49 GMT
 
 #### `2eb8dd333a53563545ebf2dd6eeffc510944b69ca5fd6e6e77ee12d716e68738`
 

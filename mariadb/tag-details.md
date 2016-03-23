@@ -1151,7 +1151,6 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessi
 -	Virtual Size: 119.0 B
 -	v2 Blob: `sha256:d4f6ca74bb5800dbfb7b2193139406341ae32caf98d3a779cf9eb93136ec5350`
 -	v2 Content-Length: 318.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:51:10 GMT
 
 #### `b7f3759a3a97445af135366bf49446fd3285fe8343a043f580f53a122ec04562`
 
@@ -1401,7 +1400,6 @@ RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessi
 -	Virtual Size: 119.0 B
 -	v2 Blob: `sha256:d4f6ca74bb5800dbfb7b2193139406341ae32caf98d3a779cf9eb93136ec5350`
 -	v2 Content-Length: 318.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:51:10 GMT
 
 #### `b7f3759a3a97445af135366bf49446fd3285fe8343a043f580f53a122ec04562`
 

@@ -42,7 +42,6 @@ ADD file:6c713f1ee432812d5c5574824db8874bc153eafcf885446123ccc56e5f91f47b in /
 -	Virtual Size: 119.1 MB (119126903 bytes)
 -	v2 Blob: `sha256:6e39dbd9bad46f3d8143b5991b48c355c55da1eadeabdbe8912039f8a6a0d4bd`
 -	v2 Content-Length: 43.1 MB (43092630 bytes)
--	v2 Last-Modified: Fri, 15 Jan 2016 17:07:15 GMT
 
 #### `b12b5ead0dad7bd8bf02889ccf7eacc82ce89c7ed4bad48e9d5c9f7ac110fdc2`
 
@@ -94,7 +93,6 @@ ADD file:6c713f1ee432812d5c5574824db8874bc153eafcf885446123ccc56e5f91f47b in /
 -	Virtual Size: 119.1 MB (119126903 bytes)
 -	v2 Blob: `sha256:6e39dbd9bad46f3d8143b5991b48c355c55da1eadeabdbe8912039f8a6a0d4bd`
 -	v2 Content-Length: 43.1 MB (43092630 bytes)
--	v2 Last-Modified: Fri, 15 Jan 2016 17:07:15 GMT
 
 #### `b12b5ead0dad7bd8bf02889ccf7eacc82ce89c7ed4bad48e9d5c9f7ac110fdc2`
 
@@ -146,7 +144,6 @@ ADD file:539115675b3a1fb0452ddc0a7d4e711421797ba0ae343285835b58888a7a3163 in /
 -	Virtual Size: 106.8 MB (106752115 bytes)
 -	v2 Blob: `sha256:fad227bc1ed4464660f8c2e5e897c5ab44192cce71722aaba5e53a128446cbdc`
 -	v2 Content-Length: 39.1 MB (39116340 bytes)
--	v2 Last-Modified: Fri, 15 Jan 2016 17:08:24 GMT
 
 #### `6ed98056624c9404e6c71c6d7d1fcaed9b5222a9f062e9510d3dfb99c7b128ae`
 

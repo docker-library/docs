@@ -248,7 +248,6 @@ ADD file:57ae4fa55a6992ec0bf4a90a6f400f81e6fae5bf998d063820d872000b7ee2a0 in /
 -	Virtual Size: 84.9 MB (84906269 bytes)
 -	v2 Blob: `sha256:4291b363c778948bbea3ae870b1c808b6ce3623d995e59290044e65cff91856c`
 -	v2 Content-Length: 37.2 MB (37190537 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:53:11 GMT
 
 #### `e834edb83fdff7033a477807a161596d56829863454f245df94671bbe17f18b3`
 
@@ -286,7 +285,6 @@ ADD file:57ae4fa55a6992ec0bf4a90a6f400f81e6fae5bf998d063820d872000b7ee2a0 in /
 -	Virtual Size: 84.9 MB (84906269 bytes)
 -	v2 Blob: `sha256:4291b363c778948bbea3ae870b1c808b6ce3623d995e59290044e65cff91856c`
 -	v2 Content-Length: 37.2 MB (37190537 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:53:11 GMT
 
 #### `e834edb83fdff7033a477807a161596d56829863454f245df94671bbe17f18b3`
 
@@ -442,7 +440,6 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:8df537a1dd5bf8577ca2320e5a47df135809228f0e0662053d830a0083df61b6`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 01 Mar 2016 18:53:59 GMT
 
 ## `debian:stretch`
 
@@ -504,7 +501,6 @@ ADD file:2f7807269f3de81bca8f1d3768f898cefb2fdcfab8dd6edf3c4ce1c715ce03f3 in /
 -	Virtual Size: 118.8 MB (118843679 bytes)
 -	v2 Blob: `sha256:9ddccb5c972e5aee052f54415436ac7318d8773ada72a7b6b44b6e19734ee48d`
 -	v2 Content-Length: 52.4 MB (52440532 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:50:36 GMT
 
 #### `9a6555a7622068c3e838cfedba129fe93ef5c2545cd4b47b534929a38e115473`
 
@@ -826,4 +822,3 @@ RUN awk '$1 ~ "^deb" { $3 = "experimental"; print; exit }' /etc/apt/sources.list
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:c1a66e09aad70f5b429a37f37d290dc3b1047a9111abd98eb7c06cb94fe4e71b`
 -	v2 Content-Length: 217.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:51:34 GMT

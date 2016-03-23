@@ -111,7 +111,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -134,7 +133,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -154,7 +152,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -168,7 +165,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -182,7 +178,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `39248994153c66fbb7aaf2c8445ceeb09099540feb79c08f627e5a256b953c0d`
 
@@ -196,7 +191,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `16983043e9c39dcccbd2b176f088f6da70d889b56c280a5e8d225a2803c8bd72`
 
@@ -210,7 +204,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21718d96c136feb1ebb26b5af3e182a322a5027f789240752e613202bda206e4`
 
@@ -224,7 +217,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `709ac73e6f866b82e8beca894a1950a9348e5657d9fffd60711fcf1a1234e779`
 
@@ -238,7 +230,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `901ad86b602eba3177b77b950e41c5b63c3f5adb687d845fde24f4c1dd5df358`
 
@@ -304,7 +295,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:a73030d87a58bc3c0916e3d5d6edfc14449e2ceb9ea34bae1be6ffc4cc1e387f`
 -	v2 Content-Length: 1.5 KB (1544 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:10 GMT
 
 #### `1741e07461ad3a03fd0b680575c28891a0706c689fcdd4ad016217f70cc03451`
 
@@ -318,7 +308,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5-cli`
 
@@ -356,7 +345,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -379,7 +367,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -399,7 +386,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -413,7 +399,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -427,7 +412,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `39248994153c66fbb7aaf2c8445ceeb09099540feb79c08f627e5a256b953c0d`
 
@@ -441,7 +425,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `16983043e9c39dcccbd2b176f088f6da70d889b56c280a5e8d225a2803c8bd72`
 
@@ -455,7 +438,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21718d96c136feb1ebb26b5af3e182a322a5027f789240752e613202bda206e4`
 
@@ -469,7 +451,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `709ac73e6f866b82e8beca894a1950a9348e5657d9fffd60711fcf1a1234e779`
 
@@ -483,7 +464,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `901ad86b602eba3177b77b950e41c5b63c3f5adb687d845fde24f4c1dd5df358`
 
@@ -549,7 +529,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:a73030d87a58bc3c0916e3d5d6edfc14449e2ceb9ea34bae1be6ffc4cc1e387f`
 -	v2 Content-Length: 1.5 KB (1544 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:10 GMT
 
 #### `1741e07461ad3a03fd0b680575c28891a0706c689fcdd4ad016217f70cc03451`
 
@@ -563,7 +542,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5.33`
 
@@ -601,7 +579,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -624,7 +601,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -644,7 +620,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -658,7 +633,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -672,7 +646,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `39248994153c66fbb7aaf2c8445ceeb09099540feb79c08f627e5a256b953c0d`
 
@@ -686,7 +659,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `16983043e9c39dcccbd2b176f088f6da70d889b56c280a5e8d225a2803c8bd72`
 
@@ -700,7 +672,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21718d96c136feb1ebb26b5af3e182a322a5027f789240752e613202bda206e4`
 
@@ -714,7 +685,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `709ac73e6f866b82e8beca894a1950a9348e5657d9fffd60711fcf1a1234e779`
 
@@ -728,7 +698,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `901ad86b602eba3177b77b950e41c5b63c3f5adb687d845fde24f4c1dd5df358`
 
@@ -794,7 +763,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:a73030d87a58bc3c0916e3d5d6edfc14449e2ceb9ea34bae1be6ffc4cc1e387f`
 -	v2 Content-Length: 1.5 KB (1544 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:10 GMT
 
 #### `1741e07461ad3a03fd0b680575c28891a0706c689fcdd4ad016217f70cc03451`
 
@@ -808,7 +776,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5`
 
@@ -846,7 +813,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -869,7 +835,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -889,7 +854,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -903,7 +867,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -917,7 +880,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `39248994153c66fbb7aaf2c8445ceeb09099540feb79c08f627e5a256b953c0d`
 
@@ -931,7 +893,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `16983043e9c39dcccbd2b176f088f6da70d889b56c280a5e8d225a2803c8bd72`
 
@@ -945,7 +906,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21718d96c136feb1ebb26b5af3e182a322a5027f789240752e613202bda206e4`
 
@@ -959,7 +919,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `709ac73e6f866b82e8beca894a1950a9348e5657d9fffd60711fcf1a1234e779`
 
@@ -973,7 +932,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `901ad86b602eba3177b77b950e41c5b63c3f5adb687d845fde24f4c1dd5df358`
 
@@ -1039,7 +997,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:a73030d87a58bc3c0916e3d5d6edfc14449e2ceb9ea34bae1be6ffc4cc1e387f`
 -	v2 Content-Length: 1.5 KB (1544 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:10 GMT
 
 #### `1741e07461ad3a03fd0b680575c28891a0706c689fcdd4ad016217f70cc03451`
 
@@ -1053,7 +1010,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5.33-alpine`
 
@@ -1115,7 +1071,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -1131,7 +1086,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -1145,7 +1099,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -1173,7 +1126,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35acd1885351f1efb6b6c820df3dff98573c4026702242d1fdd412fc90f9e3bf`
 
@@ -1187,7 +1139,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f6ddb3ada8b97daf97708df6d7e5c499d45ba958b2b71935732793d3b2350818`
 
@@ -1201,7 +1152,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26a7a839245cc3a84e9b96bd5b8f577499a598d255990ca21934c60d3e53870b`
 
@@ -1215,7 +1165,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f064739b63a74d86f99bf943fb9ace4d65b18370dbe6f9ab7310a22bdbe5541d`
 
@@ -1301,7 +1250,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5-alpine`
 
@@ -1363,7 +1311,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -1379,7 +1326,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -1393,7 +1339,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -1421,7 +1366,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35acd1885351f1efb6b6c820df3dff98573c4026702242d1fdd412fc90f9e3bf`
 
@@ -1435,7 +1379,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f6ddb3ada8b97daf97708df6d7e5c499d45ba958b2b71935732793d3b2350818`
 
@@ -1449,7 +1392,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `26a7a839245cc3a84e9b96bd5b8f577499a598d255990ca21934c60d3e53870b`
 
@@ -1463,7 +1405,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f064739b63a74d86f99bf943fb9ace4d65b18370dbe6f9ab7310a22bdbe5541d`
 
@@ -1549,7 +1490,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5.33-apache`
 
@@ -1587,7 +1527,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -1610,7 +1549,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -1630,7 +1568,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -1644,7 +1581,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -1658,7 +1594,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `aab1ba30d7e9d2d1027bc51a8c44fe1f7220df6a1fa5deb04ea15d058163e5c9`
 
@@ -1672,7 +1607,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -1728,7 +1662,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:45ee1091ed81d8a6b92e1d67f20c602d5d585df829b514dd5e74eca3feafa18b`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:57 GMT
 
 #### `48d1abd377f4db7310a853f6e6a338b5436c2b10856ad747c455ee15c7f9f895`
 
@@ -1742,7 +1675,6 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79e54625a692512f9f6b7363e3a0bf46aad5b02a38d102b9db355390929e1b75`
 
@@ -1756,7 +1688,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ab8e08653859e34ad3a921b4782dff6e5920b5a5e119a743d3b7c1f9baf9b74`
 
@@ -1770,7 +1701,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab6b71ee132793ef0e519113d1968726667e07e64a483630150be6f24e59d929`
 
@@ -1784,7 +1714,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c1fdcca3abad8f2f2fd008c9a944df45d257b31ec33e6a8c1bba24922e0c2273`
 
@@ -1798,7 +1727,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `95222172914e0614219b1f2ce4efddbc6f48bf9b21e8320e4e6421c0cb58122e`
 
@@ -1812,7 +1740,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bf31d2cdbed5d20048968a7c43b1f97cf04bd7cb2b12ee71fe85be1acc80fa2f`
 
@@ -1906,7 +1833,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `529f82c09dfa17d7bf53e28abaa4bcab8b66e0f5eae8a83ca195240f3c117c3e`
 
@@ -1920,7 +1846,6 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `660165961f57703f28f663b0bb3c714bf02056fd29caa7583631e55bca3cdb5e`
 
@@ -1934,7 +1859,6 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5-apache`
 
@@ -1972,7 +1896,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -1995,7 +1918,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -2015,7 +1937,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -2029,7 +1950,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -2043,7 +1963,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `aab1ba30d7e9d2d1027bc51a8c44fe1f7220df6a1fa5deb04ea15d058163e5c9`
 
@@ -2057,7 +1976,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -2113,7 +2031,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:45ee1091ed81d8a6b92e1d67f20c602d5d585df829b514dd5e74eca3feafa18b`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:57 GMT
 
 #### `48d1abd377f4db7310a853f6e6a338b5436c2b10856ad747c455ee15c7f9f895`
 
@@ -2127,7 +2044,6 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79e54625a692512f9f6b7363e3a0bf46aad5b02a38d102b9db355390929e1b75`
 
@@ -2141,7 +2057,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ab8e08653859e34ad3a921b4782dff6e5920b5a5e119a743d3b7c1f9baf9b74`
 
@@ -2155,7 +2070,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab6b71ee132793ef0e519113d1968726667e07e64a483630150be6f24e59d929`
 
@@ -2169,7 +2083,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c1fdcca3abad8f2f2fd008c9a944df45d257b31ec33e6a8c1bba24922e0c2273`
 
@@ -2183,7 +2096,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `95222172914e0614219b1f2ce4efddbc6f48bf9b21e8320e4e6421c0cb58122e`
 
@@ -2197,7 +2109,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bf31d2cdbed5d20048968a7c43b1f97cf04bd7cb2b12ee71fe85be1acc80fa2f`
 
@@ -2291,7 +2202,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `529f82c09dfa17d7bf53e28abaa4bcab8b66e0f5eae8a83ca195240f3c117c3e`
 
@@ -2305,7 +2215,6 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `660165961f57703f28f663b0bb3c714bf02056fd29caa7583631e55bca3cdb5e`
 
@@ -2319,7 +2228,6 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5.33-fpm`
 
@@ -2357,7 +2265,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -2380,7 +2287,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -2400,7 +2306,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -2414,7 +2319,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -2428,7 +2332,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `6961d5522cde22ac9bf0838d15ede7f7ab8c8cfedc81f8db4c8e10c91dec7ffd`
 
@@ -2442,7 +2345,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ad0604a7b4e154055d4c682db8a32675e227210f8bd10aed0474a8a12b93bfa5`
 
@@ -2456,7 +2358,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `027f4c4f077b8904425f1c1348c1f0f5501699b430df2ad9fca7b9ead9863270`
 
@@ -2470,7 +2371,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ce17b9174282de2563f5ee53470c12c73850c466347a6d692c94213c15f7ab8b`
 
@@ -2484,7 +2384,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `146eb49c88063e64a42ec5d5c731a5402b39e1c020618ddab088a97cdec53cef`
 
@@ -2498,7 +2397,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ebe4b404655da0cc3e453d19e9120a8ac154a4aaa8acf457620b69dc2f763dd`
 
@@ -2578,7 +2476,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1e54d0f2b93958f48c6ed162d50d4105398e97da6e2215c8994a29ff154f32ac`
 
@@ -2638,7 +2535,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee42abe790256382b595c5eb61974c0c64192442bc2fec0c181b0817aee48304`
 
@@ -2652,7 +2548,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5-fpm`
 
@@ -2690,7 +2585,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -2713,7 +2607,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -2733,7 +2626,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -2747,7 +2639,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -2761,7 +2652,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `6961d5522cde22ac9bf0838d15ede7f7ab8c8cfedc81f8db4c8e10c91dec7ffd`
 
@@ -2775,7 +2665,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ad0604a7b4e154055d4c682db8a32675e227210f8bd10aed0474a8a12b93bfa5`
 
@@ -2789,7 +2678,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `027f4c4f077b8904425f1c1348c1f0f5501699b430df2ad9fca7b9ead9863270`
 
@@ -2803,7 +2691,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ce17b9174282de2563f5ee53470c12c73850c466347a6d692c94213c15f7ab8b`
 
@@ -2817,7 +2704,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `146eb49c88063e64a42ec5d5c731a5402b39e1c020618ddab088a97cdec53cef`
 
@@ -2831,7 +2717,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ebe4b404655da0cc3e453d19e9120a8ac154a4aaa8acf457620b69dc2f763dd`
 
@@ -2911,7 +2796,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1e54d0f2b93958f48c6ed162d50d4105398e97da6e2215c8994a29ff154f32ac`
 
@@ -2971,7 +2855,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee42abe790256382b595c5eb61974c0c64192442bc2fec0c181b0817aee48304`
 
@@ -2985,7 +2868,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5.33-fpm-alpine`
 
@@ -3047,7 +2929,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -3063,7 +2944,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -3077,7 +2957,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -3105,7 +2984,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a576dfb96df5821f81ded96c3030caf16b7b6a51f7f40d7c6f120736d6384ff`
 
@@ -3119,7 +2997,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `455a47e391a2c9715a2b865459e2c811901d55c64448e5bfc3670b0f396accaf`
 
@@ -3133,7 +3010,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4944fdbe9438a4962bb0a55798fbdf46f72b7a690340fc7b796427035e6c6929`
 
@@ -3147,7 +3023,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b3085050f9aadb712c0ee9073eb397690203baa59874200b64d504204d10e73`
 
@@ -3161,7 +3036,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4dbb4c1c583926bc8020c71f6770e5439cecd910edcda870beb8b4bb36a7af97`
 
@@ -3247,7 +3121,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c6ad03ca3ca119c95f6146ea590efd43d8b84941d88d514d0fd33311e4881e8`
 
@@ -3307,7 +3180,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40c1285ac34aa4faac1d7fb5246b73cd39383ad3bd4c639d7e6cb34ed551f1ed`
 
@@ -3321,7 +3193,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5-fpm-alpine`
 
@@ -3383,7 +3254,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -3399,7 +3269,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -3413,7 +3282,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -3441,7 +3309,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a576dfb96df5821f81ded96c3030caf16b7b6a51f7f40d7c6f120736d6384ff`
 
@@ -3455,7 +3322,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `455a47e391a2c9715a2b865459e2c811901d55c64448e5bfc3670b0f396accaf`
 
@@ -3469,7 +3335,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4944fdbe9438a4962bb0a55798fbdf46f72b7a690340fc7b796427035e6c6929`
 
@@ -3483,7 +3348,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b3085050f9aadb712c0ee9073eb397690203baa59874200b64d504204d10e73`
 
@@ -3497,7 +3361,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4dbb4c1c583926bc8020c71f6770e5439cecd910edcda870beb8b4bb36a7af97`
 
@@ -3583,7 +3446,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c6ad03ca3ca119c95f6146ea590efd43d8b84941d88d514d0fd33311e4881e8`
 
@@ -3643,7 +3505,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40c1285ac34aa4faac1d7fb5246b73cd39383ad3bd4c639d7e6cb34ed551f1ed`
 
@@ -3657,7 +3518,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5.33-zts`
 
@@ -3695,7 +3555,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -3718,7 +3577,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -3738,7 +3596,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -3752,7 +3609,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -3766,7 +3622,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `05928ecb0b60b045f98368cc2da3c6c5b100581db3e995c80d86fa228e9e8bce`
 
@@ -3780,7 +3635,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1059e551e720e97a2265dab3b3985872df21fa4cd683a9fac4509523c614789c`
 
@@ -3794,7 +3648,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b18ae8288e57e75990b9442c15fc3ad3a583763f82db218e13076f3b9a77cb52`
 
@@ -3808,7 +3661,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `009f9655e1f25e13aeb4c0c6bf89742b84b50d29984e84b5d8178c37f076409e`
 
@@ -3822,7 +3674,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c7a9a74172831af6ecf6d2b99537fd6fd132b39ac423f7b7e751472c4f22d169`
 
@@ -3836,7 +3687,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0475be3130de95f9c5f9985cfb83e8f99c3b75e1a4fabf8408b591509b5ea2a4`
 
@@ -3916,7 +3766,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5-zts`
 
@@ -3954,7 +3803,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -3977,7 +3825,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -3997,7 +3844,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -4011,7 +3857,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -4025,7 +3870,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `05928ecb0b60b045f98368cc2da3c6c5b100581db3e995c80d86fa228e9e8bce`
 
@@ -4039,7 +3883,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1059e551e720e97a2265dab3b3985872df21fa4cd683a9fac4509523c614789c`
 
@@ -4053,7 +3896,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b18ae8288e57e75990b9442c15fc3ad3a583763f82db218e13076f3b9a77cb52`
 
@@ -4067,7 +3909,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `009f9655e1f25e13aeb4c0c6bf89742b84b50d29984e84b5d8178c37f076409e`
 
@@ -4081,7 +3922,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c7a9a74172831af6ecf6d2b99537fd6fd132b39ac423f7b7e751472c4f22d169`
 
@@ -4095,7 +3935,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0475be3130de95f9c5f9985cfb83e8f99c3b75e1a4fabf8408b591509b5ea2a4`
 
@@ -4175,7 +4014,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5.33-zts-alpine`
 
@@ -4237,7 +4075,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -4253,7 +4090,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -4267,7 +4103,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -4295,7 +4130,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e408af576821f717d3fa53b7641043a96d534f7a0818c065fea034d6ea4e3a5`
 
@@ -4309,7 +4143,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `03479681908de3d45ea4d8bb4372aea85c6a5368223d6e751c2690f032f8ea37`
 
@@ -4323,7 +4156,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c19d25dcdf5462914bea128270867833f063170e376c9067a178069b8b1e2d9`
 
@@ -4337,7 +4169,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88b730ea09e0deab2f241cc1f6fe419194b5c3806eab37d0645c8471cb666109`
 
@@ -4351,7 +4182,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c06e36a711c1458613a021e65ea3d1dfb623918ff0da9de3e0b70f37cc5f8d11`
 
@@ -4437,7 +4267,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.5-zts-alpine`
 
@@ -4499,7 +4328,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -4515,7 +4343,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -4529,7 +4356,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -4557,7 +4383,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e408af576821f717d3fa53b7641043a96d534f7a0818c065fea034d6ea4e3a5`
 
@@ -4571,7 +4396,6 @@ ENV GPG_KEYS=0B96609E270F565C13292B24C13C70B87267B52D 0BD78B5F97500D450838F95DFE
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `03479681908de3d45ea4d8bb4372aea85c6a5368223d6e751c2690f032f8ea37`
 
@@ -4585,7 +4409,6 @@ ENV PHP_VERSION=5.5.33
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c19d25dcdf5462914bea128270867833f063170e376c9067a178069b8b1e2d9`
 
@@ -4599,7 +4422,6 @@ ENV PHP_FILENAME=php-5.5.33.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88b730ea09e0deab2f241cc1f6fe419194b5c3806eab37d0645c8471cb666109`
 
@@ -4613,7 +4435,6 @@ ENV PHP_SHA256=b91dbd3c53f9895e8f7b29e5fed25a64dd3a76b454f6ef7265e73c96b4303f30
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c06e36a711c1458613a021e65ea3d1dfb623918ff0da9de3e0b70f37cc5f8d11`
 
@@ -4699,7 +4520,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6.19-cli`
 
@@ -4737,7 +4557,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -4760,7 +4579,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -4780,7 +4598,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -4794,7 +4611,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -4808,7 +4624,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `fd73ed8bc9aa0d1ab6d1977f23f3efb23c0908e8c32e08dfd1ad9b87a8779f5e`
 
@@ -4822,7 +4637,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `800a94b00f3e1bbf889c6fbc4427127a3ff89e601b0da5c94bd905e673275e7b`
 
@@ -4836,7 +4650,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d422e8e472a961eb0d0bdc93a3bff37345e74981e70842caf09d34ba5c8d9c82`
 
@@ -4850,7 +4663,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8138a6ed69402b847e6f13dc7097ed8f06b4751f3bc74aca15646676e59d43c4`
 
@@ -4864,7 +4676,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `822d4e1fdcf3f9cb43197fff8e00a4316b0aeb7728b67b32f0c1874efbcd5e21`
 
@@ -4944,7 +4755,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6-cli`
 
@@ -4982,7 +4792,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -5005,7 +4814,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -5025,7 +4833,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -5039,7 +4846,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -5053,7 +4859,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `fd73ed8bc9aa0d1ab6d1977f23f3efb23c0908e8c32e08dfd1ad9b87a8779f5e`
 
@@ -5067,7 +4872,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `800a94b00f3e1bbf889c6fbc4427127a3ff89e601b0da5c94bd905e673275e7b`
 
@@ -5081,7 +4885,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d422e8e472a961eb0d0bdc93a3bff37345e74981e70842caf09d34ba5c8d9c82`
 
@@ -5095,7 +4898,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8138a6ed69402b847e6f13dc7097ed8f06b4751f3bc74aca15646676e59d43c4`
 
@@ -5109,7 +4911,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `822d4e1fdcf3f9cb43197fff8e00a4316b0aeb7728b67b32f0c1874efbcd5e21`
 
@@ -5189,7 +4990,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5-cli`
 
@@ -5227,7 +5027,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -5250,7 +5049,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -5270,7 +5068,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -5284,7 +5081,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -5298,7 +5094,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `fd73ed8bc9aa0d1ab6d1977f23f3efb23c0908e8c32e08dfd1ad9b87a8779f5e`
 
@@ -5312,7 +5107,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `800a94b00f3e1bbf889c6fbc4427127a3ff89e601b0da5c94bd905e673275e7b`
 
@@ -5326,7 +5120,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d422e8e472a961eb0d0bdc93a3bff37345e74981e70842caf09d34ba5c8d9c82`
 
@@ -5340,7 +5133,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8138a6ed69402b847e6f13dc7097ed8f06b4751f3bc74aca15646676e59d43c4`
 
@@ -5354,7 +5146,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `822d4e1fdcf3f9cb43197fff8e00a4316b0aeb7728b67b32f0c1874efbcd5e21`
 
@@ -5434,7 +5225,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6.19`
 
@@ -5472,7 +5262,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -5495,7 +5284,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -5515,7 +5303,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -5529,7 +5316,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -5543,7 +5329,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `fd73ed8bc9aa0d1ab6d1977f23f3efb23c0908e8c32e08dfd1ad9b87a8779f5e`
 
@@ -5557,7 +5342,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `800a94b00f3e1bbf889c6fbc4427127a3ff89e601b0da5c94bd905e673275e7b`
 
@@ -5571,7 +5355,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d422e8e472a961eb0d0bdc93a3bff37345e74981e70842caf09d34ba5c8d9c82`
 
@@ -5585,7 +5368,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8138a6ed69402b847e6f13dc7097ed8f06b4751f3bc74aca15646676e59d43c4`
 
@@ -5599,7 +5381,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `822d4e1fdcf3f9cb43197fff8e00a4316b0aeb7728b67b32f0c1874efbcd5e21`
 
@@ -5679,7 +5460,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6`
 
@@ -5717,7 +5497,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -5740,7 +5519,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -5760,7 +5538,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -5774,7 +5551,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -5788,7 +5564,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `fd73ed8bc9aa0d1ab6d1977f23f3efb23c0908e8c32e08dfd1ad9b87a8779f5e`
 
@@ -5802,7 +5577,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `800a94b00f3e1bbf889c6fbc4427127a3ff89e601b0da5c94bd905e673275e7b`
 
@@ -5816,7 +5590,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d422e8e472a961eb0d0bdc93a3bff37345e74981e70842caf09d34ba5c8d9c82`
 
@@ -5830,7 +5603,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8138a6ed69402b847e6f13dc7097ed8f06b4751f3bc74aca15646676e59d43c4`
 
@@ -5844,7 +5616,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `822d4e1fdcf3f9cb43197fff8e00a4316b0aeb7728b67b32f0c1874efbcd5e21`
 
@@ -5924,7 +5695,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5`
 
@@ -5962,7 +5732,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -5985,7 +5754,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -6005,7 +5773,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -6019,7 +5786,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -6033,7 +5799,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `fd73ed8bc9aa0d1ab6d1977f23f3efb23c0908e8c32e08dfd1ad9b87a8779f5e`
 
@@ -6047,7 +5812,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `800a94b00f3e1bbf889c6fbc4427127a3ff89e601b0da5c94bd905e673275e7b`
 
@@ -6061,7 +5825,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d422e8e472a961eb0d0bdc93a3bff37345e74981e70842caf09d34ba5c8d9c82`
 
@@ -6075,7 +5838,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8138a6ed69402b847e6f13dc7097ed8f06b4751f3bc74aca15646676e59d43c4`
 
@@ -6089,7 +5851,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `822d4e1fdcf3f9cb43197fff8e00a4316b0aeb7728b67b32f0c1874efbcd5e21`
 
@@ -6169,7 +5930,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6.19-alpine`
 
@@ -6231,7 +5991,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -6247,7 +6006,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -6261,7 +6019,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -6289,7 +6046,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d74033902f0e9499a44aff76dea458c89a5dc0becb9ce64a6ccbade4e95dac63`
 
@@ -6303,7 +6059,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c3fc2df995cbf2cfb7c4f1be766263c129542bb2b0da865ed340377687a058c0`
 
@@ -6317,7 +6072,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a3bced5e6956926eb4615cea93787013486075eb7f48bb65dfa9704e6d95a9da`
 
@@ -6331,7 +6085,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f648543344d20e42eb8cb304ac5e95c68992c6f37a0b90e8fd2def0fce40578a`
 
@@ -6417,7 +6170,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6-alpine`
 
@@ -6479,7 +6231,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -6495,7 +6246,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -6509,7 +6259,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -6537,7 +6286,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d74033902f0e9499a44aff76dea458c89a5dc0becb9ce64a6ccbade4e95dac63`
 
@@ -6551,7 +6299,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c3fc2df995cbf2cfb7c4f1be766263c129542bb2b0da865ed340377687a058c0`
 
@@ -6565,7 +6312,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a3bced5e6956926eb4615cea93787013486075eb7f48bb65dfa9704e6d95a9da`
 
@@ -6579,7 +6325,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f648543344d20e42eb8cb304ac5e95c68992c6f37a0b90e8fd2def0fce40578a`
 
@@ -6665,7 +6410,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5-alpine`
 
@@ -6727,7 +6471,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -6743,7 +6486,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -6757,7 +6499,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -6785,7 +6526,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d74033902f0e9499a44aff76dea458c89a5dc0becb9ce64a6ccbade4e95dac63`
 
@@ -6799,7 +6539,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c3fc2df995cbf2cfb7c4f1be766263c129542bb2b0da865ed340377687a058c0`
 
@@ -6813,7 +6552,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a3bced5e6956926eb4615cea93787013486075eb7f48bb65dfa9704e6d95a9da`
 
@@ -6827,7 +6565,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f648543344d20e42eb8cb304ac5e95c68992c6f37a0b90e8fd2def0fce40578a`
 
@@ -6913,7 +6650,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6.19-apache`
 
@@ -6951,7 +6687,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -6974,7 +6709,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -6994,7 +6728,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -7008,7 +6741,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -7022,7 +6754,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `aab1ba30d7e9d2d1027bc51a8c44fe1f7220df6a1fa5deb04ea15d058163e5c9`
 
@@ -7036,7 +6767,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -7092,7 +6822,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:45ee1091ed81d8a6b92e1d67f20c602d5d585df829b514dd5e74eca3feafa18b`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:57 GMT
 
 #### `48d1abd377f4db7310a853f6e6a338b5436c2b10856ad747c455ee15c7f9f895`
 
@@ -7106,7 +6835,6 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79e54625a692512f9f6b7363e3a0bf46aad5b02a38d102b9db355390929e1b75`
 
@@ -7120,7 +6848,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8022d12327c2bf3e193060c515aca507d9949394e329aecf150eed542a56afa0`
 
@@ -7134,7 +6861,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `97ca7be0a2d21cd2ae845575af7c9c757816b6f044072582aa2ab66bdf6bce4c`
 
@@ -7148,7 +6874,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f805745b05695967b7a29cb02f8b68227321bf09e66dfda81689a26a603d9053`
 
@@ -7162,7 +6887,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fd92eb2bf897bc9ad7715b74aaef6a0ddde1e656e8d21cb90a7a4aba0dd04a9`
 
@@ -7176,7 +6900,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2003c85ae50a642431aa16add6508e4e0f92d6ad6b21b525672908c0778c15ac`
 
@@ -7228,7 +6951,6 @@ RUN set -xe \
 -	Virtual Size: 152.7 MB (152722102 bytes)
 -	v2 Blob: `sha256:9a8cf28bbeb2843a89acc78e6771d01d36dd81d559a3fb5429adc1a4cd488f30`
 -	v2 Content-Length: 31.6 MB (31600414 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:09:22 GMT
 
 #### `b60dd0763b1384241519c136623f0cbcd5705614c898c97c7ccbe928b3f86ab3`
 
@@ -7242,7 +6964,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:146ad57e056b2e4cd3b61f92443cfbb1adf99339b2515c31891958e61cfff14e`
 -	v2 Content-Length: 1.5 KB (1545 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:08:57 GMT
 
 #### `db130634a7cc54b70f2d75ddd1d2dc4ae1339af3a5bf414d9048569fee3c148f`
 
@@ -7256,7 +6977,6 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:32d4d7a73f2848c8653d148a59f64f1f5e709629d9138fd09a02bab678740b20`
 -	v2 Content-Length: 291.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:08:55 GMT
 
 #### `ddbe117d8e4fb0235fd1e73cb2b57cf7b3352706a0991823424efed2cee6921a`
 
@@ -7270,7 +6990,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `12952bcb5c159e6d3e7384f55bb822b373f521eb252a813943354bd60e5321a4`
 
@@ -7284,7 +7003,6 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41ff154f74cd930b8cb4d4c36d3e35afe4561836df172a3d4feb505ba9f5231f`
 
@@ -7298,7 +7016,6 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6-apache`
 
@@ -7336,7 +7053,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -7359,7 +7075,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -7379,7 +7094,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -7393,7 +7107,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -7407,7 +7120,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `aab1ba30d7e9d2d1027bc51a8c44fe1f7220df6a1fa5deb04ea15d058163e5c9`
 
@@ -7421,7 +7133,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -7477,7 +7188,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:45ee1091ed81d8a6b92e1d67f20c602d5d585df829b514dd5e74eca3feafa18b`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:57 GMT
 
 #### `48d1abd377f4db7310a853f6e6a338b5436c2b10856ad747c455ee15c7f9f895`
 
@@ -7491,7 +7201,6 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79e54625a692512f9f6b7363e3a0bf46aad5b02a38d102b9db355390929e1b75`
 
@@ -7505,7 +7214,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8022d12327c2bf3e193060c515aca507d9949394e329aecf150eed542a56afa0`
 
@@ -7519,7 +7227,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `97ca7be0a2d21cd2ae845575af7c9c757816b6f044072582aa2ab66bdf6bce4c`
 
@@ -7533,7 +7240,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f805745b05695967b7a29cb02f8b68227321bf09e66dfda81689a26a603d9053`
 
@@ -7547,7 +7253,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fd92eb2bf897bc9ad7715b74aaef6a0ddde1e656e8d21cb90a7a4aba0dd04a9`
 
@@ -7561,7 +7266,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2003c85ae50a642431aa16add6508e4e0f92d6ad6b21b525672908c0778c15ac`
 
@@ -7613,7 +7317,6 @@ RUN set -xe \
 -	Virtual Size: 152.7 MB (152722102 bytes)
 -	v2 Blob: `sha256:9a8cf28bbeb2843a89acc78e6771d01d36dd81d559a3fb5429adc1a4cd488f30`
 -	v2 Content-Length: 31.6 MB (31600414 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:09:22 GMT
 
 #### `b60dd0763b1384241519c136623f0cbcd5705614c898c97c7ccbe928b3f86ab3`
 
@@ -7627,7 +7330,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:146ad57e056b2e4cd3b61f92443cfbb1adf99339b2515c31891958e61cfff14e`
 -	v2 Content-Length: 1.5 KB (1545 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:08:57 GMT
 
 #### `db130634a7cc54b70f2d75ddd1d2dc4ae1339af3a5bf414d9048569fee3c148f`
 
@@ -7641,7 +7343,6 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:32d4d7a73f2848c8653d148a59f64f1f5e709629d9138fd09a02bab678740b20`
 -	v2 Content-Length: 291.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:08:55 GMT
 
 #### `ddbe117d8e4fb0235fd1e73cb2b57cf7b3352706a0991823424efed2cee6921a`
 
@@ -7655,7 +7356,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `12952bcb5c159e6d3e7384f55bb822b373f521eb252a813943354bd60e5321a4`
 
@@ -7669,7 +7369,6 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41ff154f74cd930b8cb4d4c36d3e35afe4561836df172a3d4feb505ba9f5231f`
 
@@ -7683,7 +7382,6 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5-apache`
 
@@ -7721,7 +7419,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -7744,7 +7441,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -7764,7 +7460,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -7778,7 +7473,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -7792,7 +7486,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `aab1ba30d7e9d2d1027bc51a8c44fe1f7220df6a1fa5deb04ea15d058163e5c9`
 
@@ -7806,7 +7499,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -7862,7 +7554,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:45ee1091ed81d8a6b92e1d67f20c602d5d585df829b514dd5e74eca3feafa18b`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:57 GMT
 
 #### `48d1abd377f4db7310a853f6e6a338b5436c2b10856ad747c455ee15c7f9f895`
 
@@ -7876,7 +7567,6 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79e54625a692512f9f6b7363e3a0bf46aad5b02a38d102b9db355390929e1b75`
 
@@ -7890,7 +7580,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8022d12327c2bf3e193060c515aca507d9949394e329aecf150eed542a56afa0`
 
@@ -7904,7 +7593,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `97ca7be0a2d21cd2ae845575af7c9c757816b6f044072582aa2ab66bdf6bce4c`
 
@@ -7918,7 +7606,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f805745b05695967b7a29cb02f8b68227321bf09e66dfda81689a26a603d9053`
 
@@ -7932,7 +7619,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fd92eb2bf897bc9ad7715b74aaef6a0ddde1e656e8d21cb90a7a4aba0dd04a9`
 
@@ -7946,7 +7632,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2003c85ae50a642431aa16add6508e4e0f92d6ad6b21b525672908c0778c15ac`
 
@@ -7998,7 +7683,6 @@ RUN set -xe \
 -	Virtual Size: 152.7 MB (152722102 bytes)
 -	v2 Blob: `sha256:9a8cf28bbeb2843a89acc78e6771d01d36dd81d559a3fb5429adc1a4cd488f30`
 -	v2 Content-Length: 31.6 MB (31600414 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:09:22 GMT
 
 #### `b60dd0763b1384241519c136623f0cbcd5705614c898c97c7ccbe928b3f86ab3`
 
@@ -8012,7 +7696,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:146ad57e056b2e4cd3b61f92443cfbb1adf99339b2515c31891958e61cfff14e`
 -	v2 Content-Length: 1.5 KB (1545 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:08:57 GMT
 
 #### `db130634a7cc54b70f2d75ddd1d2dc4ae1339af3a5bf414d9048569fee3c148f`
 
@@ -8026,7 +7709,6 @@ COPY file:7f47595ed3e349ddf206e03fa4cceb50bbc7e82f815fcd7b924339356c688281 in /u
 -	Virtual Size: 132.0 B
 -	v2 Blob: `sha256:32d4d7a73f2848c8653d148a59f64f1f5e709629d9138fd09a02bab678740b20`
 -	v2 Content-Length: 291.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:08:55 GMT
 
 #### `ddbe117d8e4fb0235fd1e73cb2b57cf7b3352706a0991823424efed2cee6921a`
 
@@ -8040,7 +7722,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `12952bcb5c159e6d3e7384f55bb822b373f521eb252a813943354bd60e5321a4`
 
@@ -8054,7 +7735,6 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41ff154f74cd930b8cb4d4c36d3e35afe4561836df172a3d4feb505ba9f5231f`
 
@@ -8068,7 +7748,6 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6.19-fpm`
 
@@ -8106,7 +7785,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -8129,7 +7807,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -8149,7 +7826,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -8163,7 +7839,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -8177,7 +7852,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `6961d5522cde22ac9bf0838d15ede7f7ab8c8cfedc81f8db4c8e10c91dec7ffd`
 
@@ -8191,7 +7865,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5d7a79daf76f2d1a35477ee9930563bd9470313ed4d6a72bce71e7941fe3da9`
 
@@ -8205,7 +7878,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea8e5abc36bc3f01c3d7e29af9289bd26122fb6aff8d9646baec0f71a16eb515`
 
@@ -8219,7 +7891,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d3dacb37d4915e9a6c1b756563376aca1591309fbe50d01c5590a4d58e6ed25a`
 
@@ -8233,7 +7904,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93ab3d6235a49fa4987271fd09583d08086f9aa43623765a6dbe8c74b246636b`
 
@@ -8247,7 +7917,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `66c845f4641e644ccc174cdfe0e98f9388a3cacb0075fc00664fdae21c5a9af5`
 
@@ -8327,7 +7996,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c281a685668698548a35e1801c1d40a25904d2f0827f74d4cd33a945f9f3d01`
 
@@ -8373,7 +8041,6 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:d05df7a4609c36b0cafebc7b128585d1b54dd69427e1f4b0ed0f37fd076964f7`
 -	v2 Content-Length: 7.7 KB (7685 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:09:56 GMT
 
 #### `a13790dd8555af64b5a163ee47b4db6eb25b4d9552200d2ec5cb9058f20011e8`
 
@@ -8387,7 +8054,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c6cc8696a7cb04adc2de03180d98380162351e3fc4c385a540cfb00295302e31`
 
@@ -8401,7 +8067,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6-fpm`
 
@@ -8439,7 +8104,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -8462,7 +8126,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -8482,7 +8145,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -8496,7 +8158,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -8510,7 +8171,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `6961d5522cde22ac9bf0838d15ede7f7ab8c8cfedc81f8db4c8e10c91dec7ffd`
 
@@ -8524,7 +8184,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5d7a79daf76f2d1a35477ee9930563bd9470313ed4d6a72bce71e7941fe3da9`
 
@@ -8538,7 +8197,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea8e5abc36bc3f01c3d7e29af9289bd26122fb6aff8d9646baec0f71a16eb515`
 
@@ -8552,7 +8210,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d3dacb37d4915e9a6c1b756563376aca1591309fbe50d01c5590a4d58e6ed25a`
 
@@ -8566,7 +8223,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93ab3d6235a49fa4987271fd09583d08086f9aa43623765a6dbe8c74b246636b`
 
@@ -8580,7 +8236,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `66c845f4641e644ccc174cdfe0e98f9388a3cacb0075fc00664fdae21c5a9af5`
 
@@ -8660,7 +8315,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c281a685668698548a35e1801c1d40a25904d2f0827f74d4cd33a945f9f3d01`
 
@@ -8706,7 +8360,6 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:d05df7a4609c36b0cafebc7b128585d1b54dd69427e1f4b0ed0f37fd076964f7`
 -	v2 Content-Length: 7.7 KB (7685 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:09:56 GMT
 
 #### `a13790dd8555af64b5a163ee47b4db6eb25b4d9552200d2ec5cb9058f20011e8`
 
@@ -8720,7 +8373,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c6cc8696a7cb04adc2de03180d98380162351e3fc4c385a540cfb00295302e31`
 
@@ -8734,7 +8386,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5-fpm`
 
@@ -8772,7 +8423,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -8795,7 +8445,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -8815,7 +8464,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -8829,7 +8477,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -8843,7 +8490,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `6961d5522cde22ac9bf0838d15ede7f7ab8c8cfedc81f8db4c8e10c91dec7ffd`
 
@@ -8857,7 +8503,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d5d7a79daf76f2d1a35477ee9930563bd9470313ed4d6a72bce71e7941fe3da9`
 
@@ -8871,7 +8516,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea8e5abc36bc3f01c3d7e29af9289bd26122fb6aff8d9646baec0f71a16eb515`
 
@@ -8885,7 +8529,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d3dacb37d4915e9a6c1b756563376aca1591309fbe50d01c5590a4d58e6ed25a`
 
@@ -8899,7 +8542,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `93ab3d6235a49fa4987271fd09583d08086f9aa43623765a6dbe8c74b246636b`
 
@@ -8913,7 +8555,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `66c845f4641e644ccc174cdfe0e98f9388a3cacb0075fc00664fdae21c5a9af5`
 
@@ -8993,7 +8634,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c281a685668698548a35e1801c1d40a25904d2f0827f74d4cd33a945f9f3d01`
 
@@ -9039,7 +8679,6 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:d05df7a4609c36b0cafebc7b128585d1b54dd69427e1f4b0ed0f37fd076964f7`
 -	v2 Content-Length: 7.7 KB (7685 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:09:56 GMT
 
 #### `a13790dd8555af64b5a163ee47b4db6eb25b4d9552200d2ec5cb9058f20011e8`
 
@@ -9053,7 +8692,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c6cc8696a7cb04adc2de03180d98380162351e3fc4c385a540cfb00295302e31`
 
@@ -9067,7 +8705,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6.19-fpm-alpine`
 
@@ -9129,7 +8766,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -9145,7 +8781,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -9159,7 +8794,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -9187,7 +8821,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c2df7114fe6dd9471ad42bdab06e5c70c1f973d7c56b4534b076bfcc2cecbce`
 
@@ -9201,7 +8834,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `70326dcb05ad89371c3482b4a6ad55d5731ee39dc9828fcb94fd9dea276fc3dc`
 
@@ -9215,7 +8847,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15fc9f731f1032d8aa55804437e0b41cc2f79785d30ce17b48ffd56d74287183`
 
@@ -9229,7 +8860,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `31101b36e08cfa1f7d6f73a52abacbf76207100720cb18f9817f211b01c173b4`
 
@@ -9243,7 +8873,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a83c234260f423da05f59dabdda6704bdb4f95913a12562e75753ff9c99dcf8`
 
@@ -9329,7 +8958,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8da1000e30428b915baefc6e492276a51efd6d3e43c70e93b63612b3a11d17a4`
 
@@ -9389,7 +9017,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c3050607def01b0abcfe8d2cedc0fd27d02c1b17b5dc427160f0d470e05e6415`
 
@@ -9403,7 +9030,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6-fpm-alpine`
 
@@ -9465,7 +9091,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -9481,7 +9106,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -9495,7 +9119,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -9523,7 +9146,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c2df7114fe6dd9471ad42bdab06e5c70c1f973d7c56b4534b076bfcc2cecbce`
 
@@ -9537,7 +9159,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `70326dcb05ad89371c3482b4a6ad55d5731ee39dc9828fcb94fd9dea276fc3dc`
 
@@ -9551,7 +9172,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15fc9f731f1032d8aa55804437e0b41cc2f79785d30ce17b48ffd56d74287183`
 
@@ -9565,7 +9185,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `31101b36e08cfa1f7d6f73a52abacbf76207100720cb18f9817f211b01c173b4`
 
@@ -9579,7 +9198,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a83c234260f423da05f59dabdda6704bdb4f95913a12562e75753ff9c99dcf8`
 
@@ -9665,7 +9283,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8da1000e30428b915baefc6e492276a51efd6d3e43c70e93b63612b3a11d17a4`
 
@@ -9725,7 +9342,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c3050607def01b0abcfe8d2cedc0fd27d02c1b17b5dc427160f0d470e05e6415`
 
@@ -9739,7 +9355,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5-fpm-alpine`
 
@@ -9801,7 +9416,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -9817,7 +9431,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -9831,7 +9444,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -9859,7 +9471,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c2df7114fe6dd9471ad42bdab06e5c70c1f973d7c56b4534b076bfcc2cecbce`
 
@@ -9873,7 +9484,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `70326dcb05ad89371c3482b4a6ad55d5731ee39dc9828fcb94fd9dea276fc3dc`
 
@@ -9887,7 +9497,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15fc9f731f1032d8aa55804437e0b41cc2f79785d30ce17b48ffd56d74287183`
 
@@ -9901,7 +9510,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `31101b36e08cfa1f7d6f73a52abacbf76207100720cb18f9817f211b01c173b4`
 
@@ -9915,7 +9523,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5a83c234260f423da05f59dabdda6704bdb4f95913a12562e75753ff9c99dcf8`
 
@@ -10001,7 +9608,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8da1000e30428b915baefc6e492276a51efd6d3e43c70e93b63612b3a11d17a4`
 
@@ -10061,7 +9667,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c3050607def01b0abcfe8d2cedc0fd27d02c1b17b5dc427160f0d470e05e6415`
 
@@ -10075,7 +9680,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6.19-zts`
 
@@ -10113,7 +9717,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -10136,7 +9739,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -10156,7 +9758,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -10170,7 +9771,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -10184,7 +9784,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `05928ecb0b60b045f98368cc2da3c6c5b100581db3e995c80d86fa228e9e8bce`
 
@@ -10198,7 +9797,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f29005c7a9c3568ef81979ca6f06faac8ce3a36653953d3a60b27cbecc69dd25`
 
@@ -10212,7 +9810,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `318c28997f3dbab2222fa3cf18a90d41ed80bdd87f6b8f000b7093591a0dd3f0`
 
@@ -10226,7 +9823,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2207b11e8eae7be08f9d79c05fbd221fd895b18fee581a8d71df3034596c03cb`
 
@@ -10240,7 +9836,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b32d8d8de35bc49d9bb944f05118f278ab652bc84a2a302da2c5ffa650a9f10`
 
@@ -10254,7 +9849,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35a0d34033e1e8e0e681f7db2cb78d39242fe682db3fc9f3d50c2a47c8511f96`
 
@@ -10320,7 +9914,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:776a209439b574ca54dc5503cb3c4a79474c4946215439d0c1d716fdaf35becd`
 -	v2 Content-Length: 1.5 KB (1546 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:11:53 GMT
 
 #### `7014d4a7f6e45dbc9158b36df7f827a2b45b74a17cbc10a94b11fe84d24cd325`
 
@@ -10334,7 +9927,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6-zts`
 
@@ -10372,7 +9964,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -10395,7 +9986,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -10415,7 +10005,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -10429,7 +10018,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -10443,7 +10031,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `05928ecb0b60b045f98368cc2da3c6c5b100581db3e995c80d86fa228e9e8bce`
 
@@ -10457,7 +10044,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f29005c7a9c3568ef81979ca6f06faac8ce3a36653953d3a60b27cbecc69dd25`
 
@@ -10471,7 +10057,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `318c28997f3dbab2222fa3cf18a90d41ed80bdd87f6b8f000b7093591a0dd3f0`
 
@@ -10485,7 +10070,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2207b11e8eae7be08f9d79c05fbd221fd895b18fee581a8d71df3034596c03cb`
 
@@ -10499,7 +10083,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b32d8d8de35bc49d9bb944f05118f278ab652bc84a2a302da2c5ffa650a9f10`
 
@@ -10513,7 +10096,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35a0d34033e1e8e0e681f7db2cb78d39242fe682db3fc9f3d50c2a47c8511f96`
 
@@ -10579,7 +10161,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:776a209439b574ca54dc5503cb3c4a79474c4946215439d0c1d716fdaf35becd`
 -	v2 Content-Length: 1.5 KB (1546 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:11:53 GMT
 
 #### `7014d4a7f6e45dbc9158b36df7f827a2b45b74a17cbc10a94b11fe84d24cd325`
 
@@ -10593,7 +10174,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5-zts`
 
@@ -10631,7 +10211,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -10654,7 +10233,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -10674,7 +10252,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -10688,7 +10265,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -10702,7 +10278,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `05928ecb0b60b045f98368cc2da3c6c5b100581db3e995c80d86fa228e9e8bce`
 
@@ -10716,7 +10291,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f29005c7a9c3568ef81979ca6f06faac8ce3a36653953d3a60b27cbecc69dd25`
 
@@ -10730,7 +10304,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `318c28997f3dbab2222fa3cf18a90d41ed80bdd87f6b8f000b7093591a0dd3f0`
 
@@ -10744,7 +10317,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2207b11e8eae7be08f9d79c05fbd221fd895b18fee581a8d71df3034596c03cb`
 
@@ -10758,7 +10330,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7b32d8d8de35bc49d9bb944f05118f278ab652bc84a2a302da2c5ffa650a9f10`
 
@@ -10772,7 +10343,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35a0d34033e1e8e0e681f7db2cb78d39242fe682db3fc9f3d50c2a47c8511f96`
 
@@ -10838,7 +10408,6 @@ COPY multi:82b89724359b10e4fa6ed1d5d2d5ab38544995f1ed9288734f40288633831460 in /
 -	Virtual Size: 3.6 KB (3582 bytes)
 -	v2 Blob: `sha256:776a209439b574ca54dc5503cb3c4a79474c4946215439d0c1d716fdaf35becd`
 -	v2 Content-Length: 1.5 KB (1546 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:11:53 GMT
 
 #### `7014d4a7f6e45dbc9158b36df7f827a2b45b74a17cbc10a94b11fe84d24cd325`
 
@@ -10852,7 +10421,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6.19-zts-alpine`
 
@@ -10914,7 +10482,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -10930,7 +10497,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -10944,7 +10510,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -10972,7 +10537,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a4108dd9bfbb9e901193f2b9d1e3ef125d8049548d8edcbf69d773ce37ae963`
 
@@ -10986,7 +10550,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e0472adf637b09947c3bb666f300fe48d1628eee9b707eca8796497fc5b48b43`
 
@@ -11000,7 +10563,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0c63fffde9eb6bdf1156c80eed5edf0b552e213bfae4cb658237cc6f0539bcc`
 
@@ -11014,7 +10576,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c7e4620423e465f878b6946043f5598e3ad592996a13d4e14e727bbca60a6b86`
 
@@ -11028,7 +10589,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `db4d24c5be53ddf9769d43cc5856f8ad198a8f461a169c7b88426bbc9f28efbf`
 
@@ -11114,7 +10674,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5.6-zts-alpine`
 
@@ -11176,7 +10735,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -11192,7 +10750,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -11206,7 +10763,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -11234,7 +10790,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a4108dd9bfbb9e901193f2b9d1e3ef125d8049548d8edcbf69d773ce37ae963`
 
@@ -11248,7 +10803,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e0472adf637b09947c3bb666f300fe48d1628eee9b707eca8796497fc5b48b43`
 
@@ -11262,7 +10816,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0c63fffde9eb6bdf1156c80eed5edf0b552e213bfae4cb658237cc6f0539bcc`
 
@@ -11276,7 +10829,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c7e4620423e465f878b6946043f5598e3ad592996a13d4e14e727bbca60a6b86`
 
@@ -11290,7 +10842,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `db4d24c5be53ddf9769d43cc5856f8ad198a8f461a169c7b88426bbc9f28efbf`
 
@@ -11376,7 +10927,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:5-zts-alpine`
 
@@ -11438,7 +10988,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -11454,7 +11003,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -11468,7 +11016,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -11496,7 +11043,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a4108dd9bfbb9e901193f2b9d1e3ef125d8049548d8edcbf69d773ce37ae963`
 
@@ -11510,7 +11056,6 @@ ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e0472adf637b09947c3bb666f300fe48d1628eee9b707eca8796497fc5b48b43`
 
@@ -11524,7 +11069,6 @@ ENV PHP_VERSION=5.6.19
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0c63fffde9eb6bdf1156c80eed5edf0b552e213bfae4cb658237cc6f0539bcc`
 
@@ -11538,7 +11082,6 @@ ENV PHP_FILENAME=php-5.6.19.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c7e4620423e465f878b6946043f5598e3ad592996a13d4e14e727bbca60a6b86`
 
@@ -11552,7 +11095,6 @@ ENV PHP_SHA256=bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `db4d24c5be53ddf9769d43cc5856f8ad198a8f461a169c7b88426bbc9f28efbf`
 
@@ -11638,7 +11180,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0.4-cli`
 
@@ -11676,7 +11217,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -11699,7 +11239,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -11719,7 +11258,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -11733,7 +11271,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -11747,7 +11284,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `414e9236fd4a3eac8d4401ff269a8af0efb4fa9ae8dad9b79adc331717bb8c36`
 
@@ -11761,7 +11297,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377f29f1fe11e039278b17050512d04b7c396918cf14f50bac51620f97f61f55`
 
@@ -11775,7 +11310,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ececbfadf533f56b36c6ffbf4de270b49fc2c7de8ff021f21ccc20198a73a9a`
 
@@ -11789,7 +11323,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `472492e2e200ae16d8368aa1ec080d8b95da6f387b93f841a4f6ac8d5fb46f43`
 
@@ -11803,7 +11336,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7bd756f7df415e3c2e14c1b2910e9f258742fcbf82686eed2fd85a6396537007`
 
@@ -11883,7 +11415,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0-cli`
 
@@ -11921,7 +11452,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -11944,7 +11474,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -11964,7 +11493,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -11978,7 +11506,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -11992,7 +11519,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `414e9236fd4a3eac8d4401ff269a8af0efb4fa9ae8dad9b79adc331717bb8c36`
 
@@ -12006,7 +11532,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377f29f1fe11e039278b17050512d04b7c396918cf14f50bac51620f97f61f55`
 
@@ -12020,7 +11545,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ececbfadf533f56b36c6ffbf4de270b49fc2c7de8ff021f21ccc20198a73a9a`
 
@@ -12034,7 +11558,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `472492e2e200ae16d8368aa1ec080d8b95da6f387b93f841a4f6ac8d5fb46f43`
 
@@ -12048,7 +11571,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7bd756f7df415e3c2e14c1b2910e9f258742fcbf82686eed2fd85a6396537007`
 
@@ -12128,7 +11650,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7-cli`
 
@@ -12166,7 +11687,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -12189,7 +11709,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -12209,7 +11728,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -12223,7 +11741,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -12237,7 +11754,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `414e9236fd4a3eac8d4401ff269a8af0efb4fa9ae8dad9b79adc331717bb8c36`
 
@@ -12251,7 +11767,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377f29f1fe11e039278b17050512d04b7c396918cf14f50bac51620f97f61f55`
 
@@ -12265,7 +11780,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ececbfadf533f56b36c6ffbf4de270b49fc2c7de8ff021f21ccc20198a73a9a`
 
@@ -12279,7 +11793,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `472492e2e200ae16d8368aa1ec080d8b95da6f387b93f841a4f6ac8d5fb46f43`
 
@@ -12293,7 +11806,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7bd756f7df415e3c2e14c1b2910e9f258742fcbf82686eed2fd85a6396537007`
 
@@ -12373,7 +11885,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:cli`
 
@@ -12411,7 +11922,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -12434,7 +11944,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -12454,7 +11963,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -12468,7 +11976,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -12482,7 +11989,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `414e9236fd4a3eac8d4401ff269a8af0efb4fa9ae8dad9b79adc331717bb8c36`
 
@@ -12496,7 +12002,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377f29f1fe11e039278b17050512d04b7c396918cf14f50bac51620f97f61f55`
 
@@ -12510,7 +12015,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ececbfadf533f56b36c6ffbf4de270b49fc2c7de8ff021f21ccc20198a73a9a`
 
@@ -12524,7 +12028,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `472492e2e200ae16d8368aa1ec080d8b95da6f387b93f841a4f6ac8d5fb46f43`
 
@@ -12538,7 +12041,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7bd756f7df415e3c2e14c1b2910e9f258742fcbf82686eed2fd85a6396537007`
 
@@ -12618,7 +12120,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0.4`
 
@@ -12656,7 +12157,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -12679,7 +12179,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -12699,7 +12198,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -12713,7 +12211,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -12727,7 +12224,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `414e9236fd4a3eac8d4401ff269a8af0efb4fa9ae8dad9b79adc331717bb8c36`
 
@@ -12741,7 +12237,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377f29f1fe11e039278b17050512d04b7c396918cf14f50bac51620f97f61f55`
 
@@ -12755,7 +12250,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ececbfadf533f56b36c6ffbf4de270b49fc2c7de8ff021f21ccc20198a73a9a`
 
@@ -12769,7 +12263,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `472492e2e200ae16d8368aa1ec080d8b95da6f387b93f841a4f6ac8d5fb46f43`
 
@@ -12783,7 +12276,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7bd756f7df415e3c2e14c1b2910e9f258742fcbf82686eed2fd85a6396537007`
 
@@ -12863,7 +12355,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0`
 
@@ -12901,7 +12392,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -12924,7 +12414,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -12944,7 +12433,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -12958,7 +12446,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -12972,7 +12459,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `414e9236fd4a3eac8d4401ff269a8af0efb4fa9ae8dad9b79adc331717bb8c36`
 
@@ -12986,7 +12472,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377f29f1fe11e039278b17050512d04b7c396918cf14f50bac51620f97f61f55`
 
@@ -13000,7 +12485,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ececbfadf533f56b36c6ffbf4de270b49fc2c7de8ff021f21ccc20198a73a9a`
 
@@ -13014,7 +12498,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `472492e2e200ae16d8368aa1ec080d8b95da6f387b93f841a4f6ac8d5fb46f43`
 
@@ -13028,7 +12511,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7bd756f7df415e3c2e14c1b2910e9f258742fcbf82686eed2fd85a6396537007`
 
@@ -13108,7 +12590,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7`
 
@@ -13146,7 +12627,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -13169,7 +12649,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -13189,7 +12668,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -13203,7 +12681,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -13217,7 +12694,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `414e9236fd4a3eac8d4401ff269a8af0efb4fa9ae8dad9b79adc331717bb8c36`
 
@@ -13231,7 +12707,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377f29f1fe11e039278b17050512d04b7c396918cf14f50bac51620f97f61f55`
 
@@ -13245,7 +12720,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ececbfadf533f56b36c6ffbf4de270b49fc2c7de8ff021f21ccc20198a73a9a`
 
@@ -13259,7 +12733,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `472492e2e200ae16d8368aa1ec080d8b95da6f387b93f841a4f6ac8d5fb46f43`
 
@@ -13273,7 +12746,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7bd756f7df415e3c2e14c1b2910e9f258742fcbf82686eed2fd85a6396537007`
 
@@ -13353,7 +12825,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:latest`
 
@@ -13391,7 +12862,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -13414,7 +12884,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -13434,7 +12903,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -13448,7 +12916,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -13462,7 +12929,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `414e9236fd4a3eac8d4401ff269a8af0efb4fa9ae8dad9b79adc331717bb8c36`
 
@@ -13476,7 +12942,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `377f29f1fe11e039278b17050512d04b7c396918cf14f50bac51620f97f61f55`
 
@@ -13490,7 +12955,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ececbfadf533f56b36c6ffbf4de270b49fc2c7de8ff021f21ccc20198a73a9a`
 
@@ -13504,7 +12968,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `472492e2e200ae16d8368aa1ec080d8b95da6f387b93f841a4f6ac8d5fb46f43`
 
@@ -13518,7 +12981,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7bd756f7df415e3c2e14c1b2910e9f258742fcbf82686eed2fd85a6396537007`
 
@@ -13598,7 +13060,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0.4-alpine`
 
@@ -13660,7 +13121,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -13676,7 +13136,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -13690,7 +13149,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -13718,7 +13176,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `186a6b17d0ff4b59859e5875aeff7956de79b6199ed893cb373f6f1ad88cddde`
 
@@ -13732,7 +13189,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `58beafecf97ce7bc81f043523e9a3b42c6f249f9ac9600e6e52345104ddee0e4`
 
@@ -13746,7 +13202,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09a1df941209d44671e4448026f9bf5bfeac9b14617c43cc7f97c460cb9e89f8`
 
@@ -13760,7 +13215,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6b6d3afbc40b5a56b55cfa7a8b9faf89f9a790daba30c6e03ce8fa22b425d0a1`
 
@@ -13846,7 +13300,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0-alpine`
 
@@ -13908,7 +13361,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -13924,7 +13376,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -13938,7 +13389,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -13966,7 +13416,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `186a6b17d0ff4b59859e5875aeff7956de79b6199ed893cb373f6f1ad88cddde`
 
@@ -13980,7 +13429,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `58beafecf97ce7bc81f043523e9a3b42c6f249f9ac9600e6e52345104ddee0e4`
 
@@ -13994,7 +13442,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09a1df941209d44671e4448026f9bf5bfeac9b14617c43cc7f97c460cb9e89f8`
 
@@ -14008,7 +13455,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6b6d3afbc40b5a56b55cfa7a8b9faf89f9a790daba30c6e03ce8fa22b425d0a1`
 
@@ -14094,7 +13540,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7-alpine`
 
@@ -14156,7 +13601,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -14172,7 +13616,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -14186,7 +13629,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -14214,7 +13656,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `186a6b17d0ff4b59859e5875aeff7956de79b6199ed893cb373f6f1ad88cddde`
 
@@ -14228,7 +13669,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `58beafecf97ce7bc81f043523e9a3b42c6f249f9ac9600e6e52345104ddee0e4`
 
@@ -14242,7 +13682,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09a1df941209d44671e4448026f9bf5bfeac9b14617c43cc7f97c460cb9e89f8`
 
@@ -14256,7 +13695,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6b6d3afbc40b5a56b55cfa7a8b9faf89f9a790daba30c6e03ce8fa22b425d0a1`
 
@@ -14342,7 +13780,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:alpine`
 
@@ -14404,7 +13841,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -14420,7 +13856,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -14434,7 +13869,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -14462,7 +13896,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `186a6b17d0ff4b59859e5875aeff7956de79b6199ed893cb373f6f1ad88cddde`
 
@@ -14476,7 +13909,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `58beafecf97ce7bc81f043523e9a3b42c6f249f9ac9600e6e52345104ddee0e4`
 
@@ -14490,7 +13922,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09a1df941209d44671e4448026f9bf5bfeac9b14617c43cc7f97c460cb9e89f8`
 
@@ -14504,7 +13935,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6b6d3afbc40b5a56b55cfa7a8b9faf89f9a790daba30c6e03ce8fa22b425d0a1`
 
@@ -14590,7 +14020,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0.4-apache`
 
@@ -14628,7 +14057,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -14651,7 +14079,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -14671,7 +14098,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -14685,7 +14111,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -14699,7 +14124,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `aab1ba30d7e9d2d1027bc51a8c44fe1f7220df6a1fa5deb04ea15d058163e5c9`
 
@@ -14713,7 +14137,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -14769,7 +14192,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:45ee1091ed81d8a6b92e1d67f20c602d5d585df829b514dd5e74eca3feafa18b`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:57 GMT
 
 #### `48d1abd377f4db7310a853f6e6a338b5436c2b10856ad747c455ee15c7f9f895`
 
@@ -14783,7 +14205,6 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79e54625a692512f9f6b7363e3a0bf46aad5b02a38d102b9db355390929e1b75`
 
@@ -14797,7 +14218,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c6e215237e24e64b2a87c7b8f1420fea68876532cee71f0fac3fc0d71ad562a`
 
@@ -14811,7 +14231,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `98dc7cc6cb6aad43bc54fd9ebbbf8065791eee49d739ed0e62f32ca7674e1121`
 
@@ -14825,7 +14244,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3915d509b6047dacdd9d8a2dc3c6d742e64255a546c84873a8f34595df393be4`
 
@@ -14839,7 +14257,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de6fb51fdbbb5c31e07d9900efdf8d1d979070de888299f338ae9ec40ff09f3b`
 
@@ -14853,7 +14270,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4504b26873b8a536d05b1abfb72a51c4d78ad4acc551d87afca4f92bf5a7211c`
 
@@ -14947,7 +14363,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d1ae8440d6643faeeda860b22612d2e9b7d5c96b19ee9baf83c4db94016a9454`
 
@@ -14961,7 +14376,6 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4f87b5ab2a8169d47ae75d547ec8d475f9473369197bc874fce1e2196650074`
 
@@ -14975,7 +14389,6 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0-apache`
 
@@ -15013,7 +14426,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -15036,7 +14448,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -15056,7 +14467,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -15070,7 +14480,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -15084,7 +14493,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `aab1ba30d7e9d2d1027bc51a8c44fe1f7220df6a1fa5deb04ea15d058163e5c9`
 
@@ -15098,7 +14506,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -15154,7 +14561,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:45ee1091ed81d8a6b92e1d67f20c602d5d585df829b514dd5e74eca3feafa18b`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:57 GMT
 
 #### `48d1abd377f4db7310a853f6e6a338b5436c2b10856ad747c455ee15c7f9f895`
 
@@ -15168,7 +14574,6 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79e54625a692512f9f6b7363e3a0bf46aad5b02a38d102b9db355390929e1b75`
 
@@ -15182,7 +14587,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c6e215237e24e64b2a87c7b8f1420fea68876532cee71f0fac3fc0d71ad562a`
 
@@ -15196,7 +14600,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `98dc7cc6cb6aad43bc54fd9ebbbf8065791eee49d739ed0e62f32ca7674e1121`
 
@@ -15210,7 +14613,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3915d509b6047dacdd9d8a2dc3c6d742e64255a546c84873a8f34595df393be4`
 
@@ -15224,7 +14626,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de6fb51fdbbb5c31e07d9900efdf8d1d979070de888299f338ae9ec40ff09f3b`
 
@@ -15238,7 +14639,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4504b26873b8a536d05b1abfb72a51c4d78ad4acc551d87afca4f92bf5a7211c`
 
@@ -15332,7 +14732,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d1ae8440d6643faeeda860b22612d2e9b7d5c96b19ee9baf83c4db94016a9454`
 
@@ -15346,7 +14745,6 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4f87b5ab2a8169d47ae75d547ec8d475f9473369197bc874fce1e2196650074`
 
@@ -15360,7 +14758,6 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7-apache`
 
@@ -15398,7 +14795,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -15421,7 +14817,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -15441,7 +14836,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -15455,7 +14849,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -15469,7 +14862,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `aab1ba30d7e9d2d1027bc51a8c44fe1f7220df6a1fa5deb04ea15d058163e5c9`
 
@@ -15483,7 +14875,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -15539,7 +14930,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:45ee1091ed81d8a6b92e1d67f20c602d5d585df829b514dd5e74eca3feafa18b`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:57 GMT
 
 #### `48d1abd377f4db7310a853f6e6a338b5436c2b10856ad747c455ee15c7f9f895`
 
@@ -15553,7 +14943,6 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79e54625a692512f9f6b7363e3a0bf46aad5b02a38d102b9db355390929e1b75`
 
@@ -15567,7 +14956,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c6e215237e24e64b2a87c7b8f1420fea68876532cee71f0fac3fc0d71ad562a`
 
@@ -15581,7 +14969,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `98dc7cc6cb6aad43bc54fd9ebbbf8065791eee49d739ed0e62f32ca7674e1121`
 
@@ -15595,7 +14982,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3915d509b6047dacdd9d8a2dc3c6d742e64255a546c84873a8f34595df393be4`
 
@@ -15609,7 +14995,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de6fb51fdbbb5c31e07d9900efdf8d1d979070de888299f338ae9ec40ff09f3b`
 
@@ -15623,7 +15008,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4504b26873b8a536d05b1abfb72a51c4d78ad4acc551d87afca4f92bf5a7211c`
 
@@ -15717,7 +15101,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d1ae8440d6643faeeda860b22612d2e9b7d5c96b19ee9baf83c4db94016a9454`
 
@@ -15731,7 +15114,6 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4f87b5ab2a8169d47ae75d547ec8d475f9473369197bc874fce1e2196650074`
 
@@ -15745,7 +15127,6 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:apache`
 
@@ -15783,7 +15164,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -15806,7 +15186,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -15826,7 +15205,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -15840,7 +15218,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -15854,7 +15231,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `aab1ba30d7e9d2d1027bc51a8c44fe1f7220df6a1fa5deb04ea15d058163e5c9`
 
@@ -15868,7 +15244,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7148385 bytes)
 -	v2 Blob: `sha256:d372683351517c93df87ab3c3eb46c51ba3819b0888c5b1f88601d8db606c5e6`
 -	v2 Content-Length: 2.8 MB (2844238 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:03:08 GMT
 
 #### `edd6554e39a1001f6f0640380277016ba6176a09ba788720d60d72cac0795d3e`
 
@@ -15924,7 +15299,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:45ee1091ed81d8a6b92e1d67f20c602d5d585df829b514dd5e74eca3feafa18b`
 -	v2 Content-Length: 865.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:02:57 GMT
 
 #### `48d1abd377f4db7310a853f6e6a338b5436c2b10856ad747c455ee15c7f9f895`
 
@@ -15938,7 +15312,6 @@ ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79e54625a692512f9f6b7363e3a0bf46aad5b02a38d102b9db355390929e1b75`
 
@@ -15952,7 +15325,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c6e215237e24e64b2a87c7b8f1420fea68876532cee71f0fac3fc0d71ad562a`
 
@@ -15966,7 +15338,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `98dc7cc6cb6aad43bc54fd9ebbbf8065791eee49d739ed0e62f32ca7674e1121`
 
@@ -15980,7 +15351,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3915d509b6047dacdd9d8a2dc3c6d742e64255a546c84873a8f34595df393be4`
 
@@ -15994,7 +15364,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de6fb51fdbbb5c31e07d9900efdf8d1d979070de888299f338ae9ec40ff09f3b`
 
@@ -16008,7 +15377,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4504b26873b8a536d05b1abfb72a51c4d78ad4acc551d87afca4f92bf5a7211c`
 
@@ -16102,7 +15470,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d1ae8440d6643faeeda860b22612d2e9b7d5c96b19ee9baf83c4db94016a9454`
 
@@ -16116,7 +15483,6 @@ EXPOSE 80/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e4f87b5ab2a8169d47ae75d547ec8d475f9473369197bc874fce1e2196650074`
 
@@ -16130,7 +15496,6 @@ CMD ["apache2-foreground"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0.4-fpm`
 
@@ -16168,7 +15533,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -16191,7 +15555,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -16211,7 +15574,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -16225,7 +15587,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -16239,7 +15600,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `6961d5522cde22ac9bf0838d15ede7f7ab8c8cfedc81f8db4c8e10c91dec7ffd`
 
@@ -16253,7 +15613,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0114699c0a320d907486f7972efa4c0897f4799e19b7b7fb4c683744ade3a4bd`
 
@@ -16267,7 +15626,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ac4a204b612731f6dd89a784ff280218cd50d99681fcc462ff822e87fe89cc3`
 
@@ -16281,7 +15639,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ddf6c6539d378425e941f16b5ac86baac0bcfe2d4648f207ee5b2b41d0ecb27`
 
@@ -16295,7 +15652,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `90bb33be0168daf8711db849dda8769eede85574ce060b58a4a83572032981e9`
 
@@ -16309,7 +15665,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c51a0f7e3b43234df3c689b52fab5f39ddde5a9b1ec134df1052680c793879d4`
 
@@ -16361,7 +15716,6 @@ RUN set -xe \
 -	Virtual Size: 174.0 MB (173994669 bytes)
 -	v2 Blob: `sha256:618971fc22f033088fbe56540fa90b40789dd94db325408fca0c0f1594a4c461`
 -	v2 Content-Length: 37.7 MB (37653213 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:17:39 GMT
 
 #### `3e562efcbe4cf5ff6ea83adfb81ea4db08cbdc50027df91aac5a9ee250b85f86`
 
@@ -16389,7 +15743,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4c9a100a35c54b9f1ff7c28eed68204ba74bd00c229aa93a7ad972e1e06b89f0`
 
@@ -16435,7 +15788,6 @@ RUN set -ex \
 -	Virtual Size: 23.2 KB (23225 bytes)
 -	v2 Blob: `sha256:3e260eaec35f9a9a85bb57e586cd76dd423e4881ce1ca9598e9048d0bddce40d`
 -	v2 Content-Length: 7.7 KB (7740 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:17:06 GMT
 
 #### `2ff745976f52760d69dd48da3e795d3659f8aaac8b3cbf6a252a441c85718fe7`
 
@@ -16449,7 +15801,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b203624db77df0dfed61af0faa4213216587e4db32e5480988671f5dc88dd592`
 
@@ -16463,7 +15814,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0-fpm`
 
@@ -16501,7 +15851,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -16524,7 +15873,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -16544,7 +15892,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -16558,7 +15905,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -16572,7 +15918,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `6961d5522cde22ac9bf0838d15ede7f7ab8c8cfedc81f8db4c8e10c91dec7ffd`
 
@@ -16586,7 +15931,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0114699c0a320d907486f7972efa4c0897f4799e19b7b7fb4c683744ade3a4bd`
 
@@ -16600,7 +15944,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ac4a204b612731f6dd89a784ff280218cd50d99681fcc462ff822e87fe89cc3`
 
@@ -16614,7 +15957,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ddf6c6539d378425e941f16b5ac86baac0bcfe2d4648f207ee5b2b41d0ecb27`
 
@@ -16628,7 +15970,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `90bb33be0168daf8711db849dda8769eede85574ce060b58a4a83572032981e9`
 
@@ -16642,7 +15983,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c51a0f7e3b43234df3c689b52fab5f39ddde5a9b1ec134df1052680c793879d4`
 
@@ -16694,7 +16034,6 @@ RUN set -xe \
 -	Virtual Size: 174.0 MB (173994669 bytes)
 -	v2 Blob: `sha256:618971fc22f033088fbe56540fa90b40789dd94db325408fca0c0f1594a4c461`
 -	v2 Content-Length: 37.7 MB (37653213 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:17:39 GMT
 
 #### `3e562efcbe4cf5ff6ea83adfb81ea4db08cbdc50027df91aac5a9ee250b85f86`
 
@@ -16722,7 +16061,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4c9a100a35c54b9f1ff7c28eed68204ba74bd00c229aa93a7ad972e1e06b89f0`
 
@@ -16768,7 +16106,6 @@ RUN set -ex \
 -	Virtual Size: 23.2 KB (23225 bytes)
 -	v2 Blob: `sha256:3e260eaec35f9a9a85bb57e586cd76dd423e4881ce1ca9598e9048d0bddce40d`
 -	v2 Content-Length: 7.7 KB (7740 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:17:06 GMT
 
 #### `2ff745976f52760d69dd48da3e795d3659f8aaac8b3cbf6a252a441c85718fe7`
 
@@ -16782,7 +16119,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b203624db77df0dfed61af0faa4213216587e4db32e5480988671f5dc88dd592`
 
@@ -16796,7 +16132,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7-fpm`
 
@@ -16834,7 +16169,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -16857,7 +16191,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -16877,7 +16210,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -16891,7 +16223,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -16905,7 +16236,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `6961d5522cde22ac9bf0838d15ede7f7ab8c8cfedc81f8db4c8e10c91dec7ffd`
 
@@ -16919,7 +16249,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0114699c0a320d907486f7972efa4c0897f4799e19b7b7fb4c683744ade3a4bd`
 
@@ -16933,7 +16262,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ac4a204b612731f6dd89a784ff280218cd50d99681fcc462ff822e87fe89cc3`
 
@@ -16947,7 +16275,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ddf6c6539d378425e941f16b5ac86baac0bcfe2d4648f207ee5b2b41d0ecb27`
 
@@ -16961,7 +16288,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `90bb33be0168daf8711db849dda8769eede85574ce060b58a4a83572032981e9`
 
@@ -16975,7 +16301,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c51a0f7e3b43234df3c689b52fab5f39ddde5a9b1ec134df1052680c793879d4`
 
@@ -17027,7 +16352,6 @@ RUN set -xe \
 -	Virtual Size: 174.0 MB (173994669 bytes)
 -	v2 Blob: `sha256:618971fc22f033088fbe56540fa90b40789dd94db325408fca0c0f1594a4c461`
 -	v2 Content-Length: 37.7 MB (37653213 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:17:39 GMT
 
 #### `3e562efcbe4cf5ff6ea83adfb81ea4db08cbdc50027df91aac5a9ee250b85f86`
 
@@ -17055,7 +16379,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4c9a100a35c54b9f1ff7c28eed68204ba74bd00c229aa93a7ad972e1e06b89f0`
 
@@ -17101,7 +16424,6 @@ RUN set -ex \
 -	Virtual Size: 23.2 KB (23225 bytes)
 -	v2 Blob: `sha256:3e260eaec35f9a9a85bb57e586cd76dd423e4881ce1ca9598e9048d0bddce40d`
 -	v2 Content-Length: 7.7 KB (7740 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:17:06 GMT
 
 #### `2ff745976f52760d69dd48da3e795d3659f8aaac8b3cbf6a252a441c85718fe7`
 
@@ -17115,7 +16437,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b203624db77df0dfed61af0faa4213216587e4db32e5480988671f5dc88dd592`
 
@@ -17129,7 +16450,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:fpm`
 
@@ -17167,7 +16487,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -17190,7 +16509,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -17210,7 +16528,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -17224,7 +16541,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -17238,7 +16554,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `6961d5522cde22ac9bf0838d15ede7f7ab8c8cfedc81f8db4c8e10c91dec7ffd`
 
@@ -17252,7 +16567,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0114699c0a320d907486f7972efa4c0897f4799e19b7b7fb4c683744ade3a4bd`
 
@@ -17266,7 +16580,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1ac4a204b612731f6dd89a784ff280218cd50d99681fcc462ff822e87fe89cc3`
 
@@ -17280,7 +16593,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ddf6c6539d378425e941f16b5ac86baac0bcfe2d4648f207ee5b2b41d0ecb27`
 
@@ -17294,7 +16606,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `90bb33be0168daf8711db849dda8769eede85574ce060b58a4a83572032981e9`
 
@@ -17308,7 +16619,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c51a0f7e3b43234df3c689b52fab5f39ddde5a9b1ec134df1052680c793879d4`
 
@@ -17360,7 +16670,6 @@ RUN set -xe \
 -	Virtual Size: 174.0 MB (173994669 bytes)
 -	v2 Blob: `sha256:618971fc22f033088fbe56540fa90b40789dd94db325408fca0c0f1594a4c461`
 -	v2 Content-Length: 37.7 MB (37653213 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:17:39 GMT
 
 #### `3e562efcbe4cf5ff6ea83adfb81ea4db08cbdc50027df91aac5a9ee250b85f86`
 
@@ -17388,7 +16697,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4c9a100a35c54b9f1ff7c28eed68204ba74bd00c229aa93a7ad972e1e06b89f0`
 
@@ -17434,7 +16742,6 @@ RUN set -ex \
 -	Virtual Size: 23.2 KB (23225 bytes)
 -	v2 Blob: `sha256:3e260eaec35f9a9a85bb57e586cd76dd423e4881ce1ca9598e9048d0bddce40d`
 -	v2 Content-Length: 7.7 KB (7740 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:17:06 GMT
 
 #### `2ff745976f52760d69dd48da3e795d3659f8aaac8b3cbf6a252a441c85718fe7`
 
@@ -17448,7 +16755,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b203624db77df0dfed61af0faa4213216587e4db32e5480988671f5dc88dd592`
 
@@ -17462,7 +16768,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0.4-fpm-alpine`
 
@@ -17524,7 +16829,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -17540,7 +16844,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -17554,7 +16857,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -17582,7 +16884,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e1a03ebb634039072756bb669385b05751a39627d46f7c7b745758d08850a8b`
 
@@ -17596,7 +16897,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b5732e09536f5fb0128c41474907c53a61a4c25a5aa58685f88a8e924d01509`
 
@@ -17610,7 +16910,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e9565e5aafaac5c8ba8103e8d83efc94787cd9cbf4d0fc276e61e904c02880e8`
 
@@ -17624,7 +16923,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `564a452617d74c609422459181caebcf026aed68335a9a0b739cabb593ebffd0`
 
@@ -17638,7 +16936,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9eb85b0898308f8fcd58df6199678e1165334cf511f2d9ff2504ed2b0888c8ba`
 
@@ -17724,7 +17021,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cf7cf2f1803ae0c621950d6c6bbfdf848b6accd24f72ab88eadbd4cbcdd5896`
 
@@ -17784,7 +17080,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d1b0d5a69e3276d760faad967815e4f29f9162785fb39c2f76d790f14c4607a2`
 
@@ -17798,7 +17093,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0-fpm-alpine`
 
@@ -17860,7 +17154,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -17876,7 +17169,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -17890,7 +17182,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -17918,7 +17209,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e1a03ebb634039072756bb669385b05751a39627d46f7c7b745758d08850a8b`
 
@@ -17932,7 +17222,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b5732e09536f5fb0128c41474907c53a61a4c25a5aa58685f88a8e924d01509`
 
@@ -17946,7 +17235,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e9565e5aafaac5c8ba8103e8d83efc94787cd9cbf4d0fc276e61e904c02880e8`
 
@@ -17960,7 +17248,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `564a452617d74c609422459181caebcf026aed68335a9a0b739cabb593ebffd0`
 
@@ -17974,7 +17261,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9eb85b0898308f8fcd58df6199678e1165334cf511f2d9ff2504ed2b0888c8ba`
 
@@ -18060,7 +17346,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cf7cf2f1803ae0c621950d6c6bbfdf848b6accd24f72ab88eadbd4cbcdd5896`
 
@@ -18120,7 +17405,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d1b0d5a69e3276d760faad967815e4f29f9162785fb39c2f76d790f14c4607a2`
 
@@ -18134,7 +17418,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7-fpm-alpine`
 
@@ -18196,7 +17479,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -18212,7 +17494,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -18226,7 +17507,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -18254,7 +17534,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e1a03ebb634039072756bb669385b05751a39627d46f7c7b745758d08850a8b`
 
@@ -18268,7 +17547,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b5732e09536f5fb0128c41474907c53a61a4c25a5aa58685f88a8e924d01509`
 
@@ -18282,7 +17560,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e9565e5aafaac5c8ba8103e8d83efc94787cd9cbf4d0fc276e61e904c02880e8`
 
@@ -18296,7 +17573,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `564a452617d74c609422459181caebcf026aed68335a9a0b739cabb593ebffd0`
 
@@ -18310,7 +17586,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9eb85b0898308f8fcd58df6199678e1165334cf511f2d9ff2504ed2b0888c8ba`
 
@@ -18396,7 +17671,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cf7cf2f1803ae0c621950d6c6bbfdf848b6accd24f72ab88eadbd4cbcdd5896`
 
@@ -18456,7 +17730,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d1b0d5a69e3276d760faad967815e4f29f9162785fb39c2f76d790f14c4607a2`
 
@@ -18470,7 +17743,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:fpm-alpine`
 
@@ -18532,7 +17804,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -18548,7 +17819,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -18562,7 +17832,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -18590,7 +17859,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-gr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9e1a03ebb634039072756bb669385b05751a39627d46f7c7b745758d08850a8b`
 
@@ -18604,7 +17872,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1b5732e09536f5fb0128c41474907c53a61a4c25a5aa58685f88a8e924d01509`
 
@@ -18618,7 +17885,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e9565e5aafaac5c8ba8103e8d83efc94787cd9cbf4d0fc276e61e904c02880e8`
 
@@ -18632,7 +17898,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `564a452617d74c609422459181caebcf026aed68335a9a0b739cabb593ebffd0`
 
@@ -18646,7 +17911,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9eb85b0898308f8fcd58df6199678e1165334cf511f2d9ff2504ed2b0888c8ba`
 
@@ -18732,7 +17996,6 @@ WORKDIR /var/www/html
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cf7cf2f1803ae0c621950d6c6bbfdf848b6accd24f72ab88eadbd4cbcdd5896`
 
@@ -18792,7 +18055,6 @@ EXPOSE 9000/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d1b0d5a69e3276d760faad967815e4f29f9162785fb39c2f76d790f14c4607a2`
 
@@ -18806,7 +18068,6 @@ CMD ["php-fpm"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0.4-zts`
 
@@ -18844,7 +18105,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -18867,7 +18127,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -18887,7 +18146,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -18901,7 +18159,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -18915,7 +18172,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `05928ecb0b60b045f98368cc2da3c6c5b100581db3e995c80d86fa228e9e8bce`
 
@@ -18929,7 +18185,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5e0bd195a54e720ed24b8981996d5d6d5d1840a4e7c7c634f0abbad5324605ce`
 
@@ -18943,7 +18198,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `48bbb3e30041474ef33f7ef3a99d9c4ec488f36313d1e8d695ca9b966cbaca98`
 
@@ -18957,7 +18211,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `656d25889420863d5d142b26a30ba8abf902fe23ec5ee6ee03de9cbc3ebd1790`
 
@@ -18971,7 +18224,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d22d97bd069f64726378bc6152105cec2cb34a9836b3ec3b380e2a922209f251`
 
@@ -18985,7 +18237,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7292d0bffb78e5e2ab5bdc127c743e2ce9e10ad05a9056767e483584152b09a2`
 
@@ -19065,7 +18316,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0-zts`
 
@@ -19103,7 +18353,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -19126,7 +18375,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -19146,7 +18394,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -19160,7 +18407,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -19174,7 +18420,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `05928ecb0b60b045f98368cc2da3c6c5b100581db3e995c80d86fa228e9e8bce`
 
@@ -19188,7 +18433,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5e0bd195a54e720ed24b8981996d5d6d5d1840a4e7c7c634f0abbad5324605ce`
 
@@ -19202,7 +18446,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `48bbb3e30041474ef33f7ef3a99d9c4ec488f36313d1e8d695ca9b966cbaca98`
 
@@ -19216,7 +18459,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `656d25889420863d5d142b26a30ba8abf902fe23ec5ee6ee03de9cbc3ebd1790`
 
@@ -19230,7 +18472,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d22d97bd069f64726378bc6152105cec2cb34a9836b3ec3b380e2a922209f251`
 
@@ -19244,7 +18485,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7292d0bffb78e5e2ab5bdc127c743e2ce9e10ad05a9056767e483584152b09a2`
 
@@ -19324,7 +18564,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7-zts`
 
@@ -19362,7 +18601,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -19385,7 +18623,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -19405,7 +18642,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -19419,7 +18655,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -19433,7 +18668,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `05928ecb0b60b045f98368cc2da3c6c5b100581db3e995c80d86fa228e9e8bce`
 
@@ -19447,7 +18681,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5e0bd195a54e720ed24b8981996d5d6d5d1840a4e7c7c634f0abbad5324605ce`
 
@@ -19461,7 +18694,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `48bbb3e30041474ef33f7ef3a99d9c4ec488f36313d1e8d695ca9b966cbaca98`
 
@@ -19475,7 +18707,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `656d25889420863d5d142b26a30ba8abf902fe23ec5ee6ee03de9cbc3ebd1790`
 
@@ -19489,7 +18720,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d22d97bd069f64726378bc6152105cec2cb34a9836b3ec3b380e2a922209f251`
 
@@ -19503,7 +18733,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7292d0bffb78e5e2ab5bdc127c743e2ce9e10ad05a9056767e483584152b09a2`
 
@@ -19583,7 +18812,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:zts`
 
@@ -19621,7 +18849,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `213f510fc2410c43f2c7d4418aabb66f0a949f4472024aef28a0403a4d1f503f`
 
@@ -19644,7 +18871,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 177.8 MB (177772606 bytes)
 -	v2 Blob: `sha256:2f584a474c46b3fedab36e04f08597a213a07c1e0509716960a7320bc7f3c791`
 -	v2 Content-Length: 69.6 MB (69554533 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:00:14 GMT
 
 #### `61b1b9dfb3249c2dd5ad4ac5eceae0254f7db4b73ef2fbdf3634283e22556f65`
 
@@ -19664,7 +18890,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 16.6 MB (16638807 bytes)
 -	v2 Blob: `sha256:b185147d01c625e57808d398b55cecb05334a333b727c59da7848efeccc9abad`
 -	v2 Content-Length: 7.8 MB (7822721 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:52 GMT
 
 #### `2c051cefc0170c30286fd95061952805ce661fc26e9772e022ebe2dc29b728b3`
 
@@ -19678,7 +18903,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b5dd28a34360c696db950330431b9ce2e92c83943c8cf11967b2734fe072e266`
 
@@ -19692,7 +18916,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6663e6f16e954c68c60f47ef798ac7ab2d376aa313f57a70680c46bfad83cd60`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 01:59:43 GMT
 
 #### `05928ecb0b60b045f98368cc2da3c6c5b100581db3e995c80d86fa228e9e8bce`
 
@@ -19706,7 +18929,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5e0bd195a54e720ed24b8981996d5d6d5d1840a4e7c7c634f0abbad5324605ce`
 
@@ -19720,7 +18942,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `48bbb3e30041474ef33f7ef3a99d9c4ec488f36313d1e8d695ca9b966cbaca98`
 
@@ -19734,7 +18955,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `656d25889420863d5d142b26a30ba8abf902fe23ec5ee6ee03de9cbc3ebd1790`
 
@@ -19748,7 +18968,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d22d97bd069f64726378bc6152105cec2cb34a9836b3ec3b380e2a922209f251`
 
@@ -19762,7 +18981,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7292d0bffb78e5e2ab5bdc127c743e2ce9e10ad05a9056767e483584152b09a2`
 
@@ -19842,7 +19060,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0.4-zts-alpine`
 
@@ -19904,7 +19121,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -19920,7 +19136,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -19934,7 +19149,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -19962,7 +19176,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b9195031d288f46d73e724c11b787f8ec686f668787b487febba7ef56ed2126a`
 
@@ -19976,7 +19189,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2ffeb69170b9103212990f6f2b69f09dcfe6449fbd2f1dfd45ccade451a3a1d`
 
@@ -19990,7 +19202,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56291b7a5833e3fdc0f759a2dfbd3935dc2b3b428cb4b1042146f8932be3ee8b`
 
@@ -20004,7 +19215,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a38c392c63c5ab2d08391ad0fef85810c43d769bde5946708082e81879d70c0`
 
@@ -20018,7 +19228,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9ca75e4dc40ff05147948e40e1ef83e51578354f2bfcbe39d8d07bbd6db487e`
 
@@ -20104,7 +19313,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7.0-zts-alpine`
 
@@ -20166,7 +19374,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -20182,7 +19389,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -20196,7 +19402,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -20224,7 +19429,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b9195031d288f46d73e724c11b787f8ec686f668787b487febba7ef56ed2126a`
 
@@ -20238,7 +19442,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2ffeb69170b9103212990f6f2b69f09dcfe6449fbd2f1dfd45ccade451a3a1d`
 
@@ -20252,7 +19455,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56291b7a5833e3fdc0f759a2dfbd3935dc2b3b428cb4b1042146f8932be3ee8b`
 
@@ -20266,7 +19468,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a38c392c63c5ab2d08391ad0fef85810c43d769bde5946708082e81879d70c0`
 
@@ -20280,7 +19481,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9ca75e4dc40ff05147948e40e1ef83e51578354f2bfcbe39d8d07bbd6db487e`
 
@@ -20366,7 +19566,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:7-zts-alpine`
 
@@ -20428,7 +19627,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -20444,7 +19642,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -20458,7 +19655,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -20486,7 +19682,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b9195031d288f46d73e724c11b787f8ec686f668787b487febba7ef56ed2126a`
 
@@ -20500,7 +19695,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2ffeb69170b9103212990f6f2b69f09dcfe6449fbd2f1dfd45ccade451a3a1d`
 
@@ -20514,7 +19708,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56291b7a5833e3fdc0f759a2dfbd3935dc2b3b428cb4b1042146f8932be3ee8b`
 
@@ -20528,7 +19721,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a38c392c63c5ab2d08391ad0fef85810c43d769bde5946708082e81879d70c0`
 
@@ -20542,7 +19734,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9ca75e4dc40ff05147948e40e1ef83e51578354f2bfcbe39d8d07bbd6db487e`
 
@@ -20628,7 +19819,6 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `php:zts-alpine`
 
@@ -20690,7 +19880,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -20706,7 +19895,6 @@ RUN set -x \
 -	Virtual Size: 4.9 KB (4937 bytes)
 -	v2 Blob: `sha256:26a6e2e865c212187e632751d39f2299bde08d5e0b207ee222ef7a8e3177115c`
 -	v2 Content-Length: 1.3 KB (1263 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:18 GMT
 
 #### `1a04aaa6e4e61bf72afa7c2c696d03776df323c6d192053b9d406a661560d05a`
 
@@ -20720,7 +19908,6 @@ ENV PHP_INI_DIR=/usr/local/etc/php
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55afba589e22faad5a5098aedfaa21ca2222a1890227c747c7f7cc1b5ff00705`
 
@@ -20748,7 +19935,6 @@ ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b9195031d288f46d73e724c11b787f8ec686f668787b487febba7ef56ed2126a`
 
@@ -20762,7 +19948,6 @@ ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2ffeb69170b9103212990f6f2b69f09dcfe6449fbd2f1dfd45ccade451a3a1d`
 
@@ -20776,7 +19961,6 @@ ENV PHP_VERSION=7.0.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `56291b7a5833e3fdc0f759a2dfbd3935dc2b3b428cb4b1042146f8932be3ee8b`
 
@@ -20790,7 +19974,6 @@ ENV PHP_FILENAME=php-7.0.4.tar.xz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3a38c392c63c5ab2d08391ad0fef85810c43d769bde5946708082e81879d70c0`
 
@@ -20804,7 +19987,6 @@ ENV PHP_SHA256=584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c9ca75e4dc40ff05147948e40e1ef83e51578354f2bfcbe39d8d07bbd6db487e`
 
@@ -20890,4 +20072,3 @@ CMD ["php" "-a"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

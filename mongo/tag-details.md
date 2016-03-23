@@ -1726,7 +1726,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 492EAFE8CD016
 -	Virtual Size: 57.9 KB (57938 bytes)
 -	v2 Blob: `sha256:792326f255489bac0218d53a6564574424a29bf988220ff012115eda178f282e`
 -	v2 Content-Length: 29.8 KB (29812 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:59:29 GMT
 
 #### `31e28984f9517b81be2b2fe424218039d02729d46d8a2d93518b2dd56f32079e`
 
@@ -1792,7 +1791,6 @@ RUN set -x \
 -	Virtual Size: 177.1 MB (177107374 bytes)
 -	v2 Blob: `sha256:0f7a7f5356dfd98e0b0cb9f4a9097d2d7507eddb60525d37b5999d4a48acefff`
 -	v2 Content-Length: 56.8 MB (56798120 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:40:28 GMT
 
 #### `af59ef014e98e4273b82978fef3c708ecb5715b678fb77e0cad56e3d027a7eb9`
 
@@ -1807,7 +1805,6 @@ RUN mkdir -p /data/db /data/configdb \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:981d9f006a778905cecbd5e6371f4d2627f83c3390e9bb1d090f96c75ba2ea87`
 -	v2 Content-Length: 138.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:40:05 GMT
 
 #### `b273ef0eb9dbcdecf96bed5ba4bea8fff3878abfa121cfbf9825dfc264d838f3`
 
@@ -1998,7 +1995,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 492EAFE8CD016
 -	Virtual Size: 57.9 KB (57938 bytes)
 -	v2 Blob: `sha256:792326f255489bac0218d53a6564574424a29bf988220ff012115eda178f282e`
 -	v2 Content-Length: 29.8 KB (29812 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:59:29 GMT
 
 #### `31e28984f9517b81be2b2fe424218039d02729d46d8a2d93518b2dd56f32079e`
 
@@ -2064,7 +2060,6 @@ RUN set -x \
 -	Virtual Size: 177.1 MB (177107374 bytes)
 -	v2 Blob: `sha256:0f7a7f5356dfd98e0b0cb9f4a9097d2d7507eddb60525d37b5999d4a48acefff`
 -	v2 Content-Length: 56.8 MB (56798120 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:40:28 GMT
 
 #### `af59ef014e98e4273b82978fef3c708ecb5715b678fb77e0cad56e3d027a7eb9`
 
@@ -2079,7 +2074,6 @@ RUN mkdir -p /data/db /data/configdb \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:981d9f006a778905cecbd5e6371f4d2627f83c3390e9bb1d090f96c75ba2ea87`
 -	v2 Content-Length: 138.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:40:05 GMT
 
 #### `b273ef0eb9dbcdecf96bed5ba4bea8fff3878abfa121cfbf9825dfc264d838f3`
 
@@ -2312,7 +2306,6 @@ RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR
 -	Virtual Size: 67.0 B
 -	v2 Blob: `sha256:e0a873b928fb5f856afa976e42abe14016e7fb68937e82f4c3b1237952189331`
 -	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:00:19 GMT
 
 #### `f53f0ff9b669e294bc984f0dea57f6c499c769409528cfd958b5037d9168867f`
 
@@ -2584,7 +2577,6 @@ RUN echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/$MONGO_MAJOR
 -	Virtual Size: 67.0 B
 -	v2 Blob: `sha256:e0a873b928fb5f856afa976e42abe14016e7fb68937e82f4c3b1237952189331`
 -	v2 Content-Length: 223.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:00:19 GMT
 
 #### `f53f0ff9b669e294bc984f0dea57f6c499c769409528cfd958b5037d9168867f`
 
@@ -2912,7 +2904,6 @@ RUN mkdir -p /data/db /data/configdb \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a94caf46ba9fe7881c5e35c11e55d4ffac31ee25476ab347aaa88d2dd40ee7c4`
 -	v2 Content-Length: 140.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:41:07 GMT
 
 #### `05cb1ec13374f73c7fe7b3d094985d2450d2d86aaa2f7e04bda5c89d89f26ce4`
 
@@ -3201,7 +3192,6 @@ RUN mkdir -p /data/db /data/configdb \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a94caf46ba9fe7881c5e35c11e55d4ffac31ee25476ab347aaa88d2dd40ee7c4`
 -	v2 Content-Length: 140.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:41:07 GMT
 
 #### `05cb1ec13374f73c7fe7b3d094985d2450d2d86aaa2f7e04bda5c89d89f26ce4`
 
@@ -3490,7 +3480,6 @@ RUN mkdir -p /data/db /data/configdb \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a94caf46ba9fe7881c5e35c11e55d4ffac31ee25476ab347aaa88d2dd40ee7c4`
 -	v2 Content-Length: 140.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:41:07 GMT
 
 #### `05cb1ec13374f73c7fe7b3d094985d2450d2d86aaa2f7e04bda5c89d89f26ce4`
 
@@ -3779,7 +3768,6 @@ RUN mkdir -p /data/db /data/configdb \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a94caf46ba9fe7881c5e35c11e55d4ffac31ee25476ab347aaa88d2dd40ee7c4`
 -	v2 Content-Length: 140.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:41:07 GMT
 
 #### `05cb1ec13374f73c7fe7b3d094985d2450d2d86aaa2f7e04bda5c89d89f26ce4`
 

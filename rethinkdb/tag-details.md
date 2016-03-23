@@ -2136,7 +2136,6 @@ RUN apt-get update \
 -	Virtual Size: 70.7 MB (70731137 bytes)
 -	v2 Blob: `sha256:e7345444c7d3e9d2c5e69a7fceebaf0f403fcb95419f395dc6bfbe1f6087241b`
 -	v2 Content-Length: 29.3 MB (29302355 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:20:15 GMT
 
 #### `486fec57df41a6b051a605309a754f9d431403df224067b12fc1e7bd611c0eb7`
 
@@ -2468,7 +2467,6 @@ RUN apt-get update \
 -	Virtual Size: 70.7 MB (70736708 bytes)
 -	v2 Blob: `sha256:945dc32534f33a4ebda8465a356ac51f72f784dc7770396856e45a8202f74605`
 -	v2 Content-Length: 29.3 MB (29303678 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:18:56 GMT
 
 #### `88790a119e366592992e47ec6427eb6b566b9b304cd8f0250c4662c362ea1204`
 
@@ -2634,7 +2632,6 @@ RUN apt-get update \
 -	Virtual Size: 70.7 MB (70736708 bytes)
 -	v2 Blob: `sha256:945dc32534f33a4ebda8465a356ac51f72f784dc7770396856e45a8202f74605`
 -	v2 Content-Length: 29.3 MB (29303678 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:18:56 GMT
 
 #### `88790a119e366592992e47ec6427eb6b566b9b304cd8f0250c4662c362ea1204`
 
@@ -2800,7 +2797,6 @@ RUN apt-get update \
 -	Virtual Size: 71.0 MB (71048080 bytes)
 -	v2 Blob: `sha256:da038d6eddda70844752ac70b0d86c4e64d4192b08e7475096ae34e97b4e196b`
 -	v2 Content-Length: 29.7 MB (29658934 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:21:34 GMT
 
 #### `1d9afdf28df281539b6094522f1e72c53ee05cc2848e95af7fc4fbec2835f4ab`
 
@@ -2966,7 +2962,6 @@ RUN apt-get update \
 -	Virtual Size: 71.0 MB (71047843 bytes)
 -	v2 Blob: `sha256:382b93c745ae41cb38d8d9aee43332bd6dc908ca7008051615947717c2bf6ac0`
 -	v2 Content-Length: 29.7 MB (29659691 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:22:00 GMT
 
 #### `2262762699a00b5ec4d073ad63cfbc3643ac0422a9084383f9fd0572fb796d14`
 
@@ -3298,7 +3293,6 @@ RUN apt-get update \
 -	Virtual Size: 71.1 MB (71071333 bytes)
 -	v2 Blob: `sha256:4f995df62b0984535a00fceb8c9efa2cae696d29f3a060c110fd49ffa48d2df4`
 -	v2 Content-Length: 29.7 MB (29660988 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:22:50 GMT
 
 #### `2a48bc0238f3fd7a3aaa59d5f4ac7c785ecab8641813d0012a4807a922cdb922`
 

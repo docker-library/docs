@@ -73,7 +73,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -285,7 +284,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -594,7 +592,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -806,7 +803,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -1115,7 +1111,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1327,7 +1322,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -1636,7 +1630,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1848,7 +1841,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -2157,7 +2149,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2369,7 +2360,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -2678,7 +2668,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2890,7 +2879,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -3199,7 +3187,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3411,7 +3398,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -3720,7 +3706,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3932,7 +3917,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -4241,7 +4225,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4453,7 +4436,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -4762,7 +4744,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4974,7 +4955,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -5283,7 +5263,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -5495,7 +5474,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -5804,7 +5782,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -6016,7 +5993,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9f3c54ee0769d24372f57c7d6a56638f854faa88598785cbb6b84df85746b65c`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:56:09 GMT
 
 #### `1842ae76a279cf7f679e60e6849793289d15e41d507cc4abcce609c4e2bacac3`
 
@@ -6325,7 +6301,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -6494,7 +6469,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:f862ea6c9f3280d48595747fff4f5c95bf17ed0ff71ddc666749bc04818b8ad9`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:59:30 GMT
 
 #### `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 
@@ -6803,7 +6777,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -6972,7 +6945,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:f862ea6c9f3280d48595747fff4f5c95bf17ed0ff71ddc666749bc04818b8ad9`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:59:30 GMT
 
 #### `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 
@@ -7281,7 +7253,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -7450,7 +7421,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:f862ea6c9f3280d48595747fff4f5c95bf17ed0ff71ddc666749bc04818b8ad9`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:59:30 GMT
 
 #### `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 
@@ -7759,7 +7729,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -7928,7 +7897,6 @@ RUN mkdir -p "$JETTY_HOME"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:f862ea6c9f3280d48595747fff4f5c95bf17ed0ff71ddc666749bc04818b8ad9`
 -	v2 Content-Length: 147.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:59:30 GMT
 
 #### `91e400fb7508b6ebf33d6a9d04547240ab7f5172ce87ac22bbf35533c179c698`
 

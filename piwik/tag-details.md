@@ -71,7 +71,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -385,7 +384,6 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --w
 -	Virtual Size: 18.4 MB (18386005 bytes)
 -	v2 Blob: `sha256:1dfb13e917cc83ee6969e5cde778536299be60909d6d6c0ffdba009c9b6c3101`
 -	v2 Content-Length: 5.0 MB (4979099 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:30:11 GMT
 
 #### `8415dc48f438e5c60e2f0b32b0f3cf100aa7537321aebff475767f27bcb6b465`
 
@@ -429,7 +427,6 @@ RUN curl -fsSL -o piwik.tar.gz\
 -	Virtual Size: 40.2 MB (40197571 bytes)
 -	v2 Blob: `sha256:9161b9d5bd4402e9084cb42d94bfcc8ca92841693dccfc5c39c7a27ddaaa8ae8`
 -	v2 Content-Length: 12.8 MB (12806821 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:30:01 GMT
 
 #### `45dbaafd37bd4e648c299cb50a19213855c39aa5ee72aad6d05707216ad7c210`
 
@@ -443,7 +440,6 @@ COPY file:d8f0ccf69c93a9b28c5d37eeac9eb5bfa1c2ea251f8c462ad4606ad8e933fffe in /u
 -	Virtual Size: 129.0 B
 -	v2 Blob: `sha256:7e4f9fdd2a048490d894fbfa10e96dadbb8f7480879f637edd244360acfa3811`
 -	v2 Content-Length: 301.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:29:50 GMT
 
 #### `4d296ccf8742cf9df20a73bcc161554dd4f5fd262298657eb76f2f05f3fa9629`
 
@@ -457,7 +453,6 @@ RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.co
 -	Virtual Size: 19.9 MB (19926112 bytes)
 -	v2 Blob: `sha256:a1fa626c3f7c5f006fa6bdceb461283ebfdee8b06ea2ca837d8549b393e76425`
 -	v2 Content-Length: 12.7 MB (12705548 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:29:46 GMT
 
 #### `60fcbb4b55208acfbb01eb307bba1c764f3b96dadcf43591e5ab65c753b2f5d1`
 
@@ -579,7 +574,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -893,7 +887,6 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --w
 -	Virtual Size: 18.4 MB (18386005 bytes)
 -	v2 Blob: `sha256:1dfb13e917cc83ee6969e5cde778536299be60909d6d6c0ffdba009c9b6c3101`
 -	v2 Content-Length: 5.0 MB (4979099 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:30:11 GMT
 
 #### `8415dc48f438e5c60e2f0b32b0f3cf100aa7537321aebff475767f27bcb6b465`
 
@@ -937,7 +930,6 @@ RUN curl -fsSL -o piwik.tar.gz\
 -	Virtual Size: 40.2 MB (40197571 bytes)
 -	v2 Blob: `sha256:9161b9d5bd4402e9084cb42d94bfcc8ca92841693dccfc5c39c7a27ddaaa8ae8`
 -	v2 Content-Length: 12.8 MB (12806821 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:30:01 GMT
 
 #### `45dbaafd37bd4e648c299cb50a19213855c39aa5ee72aad6d05707216ad7c210`
 
@@ -951,7 +943,6 @@ COPY file:d8f0ccf69c93a9b28c5d37eeac9eb5bfa1c2ea251f8c462ad4606ad8e933fffe in /u
 -	Virtual Size: 129.0 B
 -	v2 Blob: `sha256:7e4f9fdd2a048490d894fbfa10e96dadbb8f7480879f637edd244360acfa3811`
 -	v2 Content-Length: 301.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:29:50 GMT
 
 #### `4d296ccf8742cf9df20a73bcc161554dd4f5fd262298657eb76f2f05f3fa9629`
 
@@ -965,7 +956,6 @@ RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.co
 -	Virtual Size: 19.9 MB (19926112 bytes)
 -	v2 Blob: `sha256:a1fa626c3f7c5f006fa6bdceb461283ebfdee8b06ea2ca837d8549b393e76425`
 -	v2 Content-Length: 12.7 MB (12705548 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:29:46 GMT
 
 #### `60fcbb4b55208acfbb01eb307bba1c764f3b96dadcf43591e5ab65c753b2f5d1`
 
@@ -1087,7 +1077,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -1401,7 +1390,6 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --w
 -	Virtual Size: 18.4 MB (18386005 bytes)
 -	v2 Blob: `sha256:1dfb13e917cc83ee6969e5cde778536299be60909d6d6c0ffdba009c9b6c3101`
 -	v2 Content-Length: 5.0 MB (4979099 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:30:11 GMT
 
 #### `8415dc48f438e5c60e2f0b32b0f3cf100aa7537321aebff475767f27bcb6b465`
 
@@ -1445,7 +1433,6 @@ RUN curl -fsSL -o piwik.tar.gz\
 -	Virtual Size: 40.2 MB (40197571 bytes)
 -	v2 Blob: `sha256:9161b9d5bd4402e9084cb42d94bfcc8ca92841693dccfc5c39c7a27ddaaa8ae8`
 -	v2 Content-Length: 12.8 MB (12806821 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:30:01 GMT
 
 #### `45dbaafd37bd4e648c299cb50a19213855c39aa5ee72aad6d05707216ad7c210`
 
@@ -1459,7 +1446,6 @@ COPY file:d8f0ccf69c93a9b28c5d37eeac9eb5bfa1c2ea251f8c462ad4606ad8e933fffe in /u
 -	Virtual Size: 129.0 B
 -	v2 Blob: `sha256:7e4f9fdd2a048490d894fbfa10e96dadbb8f7480879f637edd244360acfa3811`
 -	v2 Content-Length: 301.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:29:50 GMT
 
 #### `4d296ccf8742cf9df20a73bcc161554dd4f5fd262298657eb76f2f05f3fa9629`
 
@@ -1473,7 +1459,6 @@ RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.co
 -	Virtual Size: 19.9 MB (19926112 bytes)
 -	v2 Blob: `sha256:a1fa626c3f7c5f006fa6bdceb461283ebfdee8b06ea2ca837d8549b393e76425`
 -	v2 Content-Length: 12.7 MB (12705548 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:29:46 GMT
 
 #### `60fcbb4b55208acfbb01eb307bba1c764f3b96dadcf43591e5ab65c753b2f5d1`
 
@@ -1595,7 +1580,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -1909,7 +1893,6 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --w
 -	Virtual Size: 18.4 MB (18386005 bytes)
 -	v2 Blob: `sha256:1dfb13e917cc83ee6969e5cde778536299be60909d6d6c0ffdba009c9b6c3101`
 -	v2 Content-Length: 5.0 MB (4979099 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:30:11 GMT
 
 #### `8415dc48f438e5c60e2f0b32b0f3cf100aa7537321aebff475767f27bcb6b465`
 
@@ -1953,7 +1936,6 @@ RUN curl -fsSL -o piwik.tar.gz\
 -	Virtual Size: 40.2 MB (40197571 bytes)
 -	v2 Blob: `sha256:9161b9d5bd4402e9084cb42d94bfcc8ca92841693dccfc5c39c7a27ddaaa8ae8`
 -	v2 Content-Length: 12.8 MB (12806821 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:30:01 GMT
 
 #### `45dbaafd37bd4e648c299cb50a19213855c39aa5ee72aad6d05707216ad7c210`
 
@@ -1967,7 +1949,6 @@ COPY file:d8f0ccf69c93a9b28c5d37eeac9eb5bfa1c2ea251f8c462ad4606ad8e933fffe in /u
 -	Virtual Size: 129.0 B
 -	v2 Blob: `sha256:7e4f9fdd2a048490d894fbfa10e96dadbb8f7480879f637edd244360acfa3811`
 -	v2 Content-Length: 301.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:29:50 GMT
 
 #### `4d296ccf8742cf9df20a73bcc161554dd4f5fd262298657eb76f2f05f3fa9629`
 
@@ -1981,7 +1962,6 @@ RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.co
 -	Virtual Size: 19.9 MB (19926112 bytes)
 -	v2 Blob: `sha256:a1fa626c3f7c5f006fa6bdceb461283ebfdee8b06ea2ca837d8549b393e76425`
 -	v2 Content-Length: 12.7 MB (12705548 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:29:46 GMT
 
 #### `60fcbb4b55208acfbb01eb307bba1c764f3b96dadcf43591e5ab65c753b2f5d1`
 

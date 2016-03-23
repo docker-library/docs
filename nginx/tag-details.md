@@ -116,7 +116,6 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:7b10f03a030928818d8b6639c189f9c270dfe8226af57868477633883c8b883f`
 -	v2 Content-Length: 196.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 21:38:10 GMT
 
 #### `fb6fc13654c9550f90ed54ce01a24a077dbbd2f96a406ca5f4a3b0685f502697`
 
@@ -249,7 +248,6 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:7b10f03a030928818d8b6639c189f9c270dfe8226af57868477633883c8b883f`
 -	v2 Content-Length: 196.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 21:38:10 GMT
 
 #### `fb6fc13654c9550f90ed54ce01a24a077dbbd2f96a406ca5f4a3b0685f502697`
 
@@ -382,7 +380,6 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:7b10f03a030928818d8b6639c189f9c270dfe8226af57868477633883c8b883f`
 -	v2 Content-Length: 196.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 21:38:10 GMT
 
 #### `fb6fc13654c9550f90ed54ce01a24a077dbbd2f96a406ca5f4a3b0685f502697`
 
@@ -515,7 +512,6 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 -	Virtual Size: 22.0 B
 -	v2 Blob: `sha256:7b10f03a030928818d8b6639c189f9c270dfe8226af57868477633883c8b883f`
 -	v2 Content-Length: 196.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 21:38:10 GMT
 
 #### `fb6fc13654c9550f90ed54ce01a24a077dbbd2f96a406ca5f4a3b0685f502697`
 
@@ -1058,7 +1054,6 @@ RUN addgroup -S nginx \
 -	Virtual Size: 2.7 MB (2667872 bytes)
 -	v2 Blob: `sha256:8a2061630efcda291926dc13ec467ed1ddd84faa54cef04f6d45a19d64604f15`
 -	v2 Content-Length: 1.1 MB (1108666 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 21:39:03 GMT
 
 #### `85cad9484b9ce4774e2fb0de2841fc5973e413c1483c804af47bebee466ab1fa`
 

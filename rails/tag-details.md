@@ -270,7 +270,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -661,7 +660,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -1052,7 +1050,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -1443,7 +1440,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -1834,7 +1830,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:fe420841ae608648b982f613c2f8528370175b88ff7b4df95226acc573e1ea01`
 -	v2 Content-Length: 522.8 KB (522797 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:12 GMT
 
 #### `53d64801913ed31c143eda978304b885f8a84b7ed627856c04ebd67c6dee4d31`
 
@@ -2017,7 +2012,6 @@ RUN apt-get update && apt-get install -y nodejs --no-install-recommends && rm -r
 -	Virtual Size: 8.4 MB (8449881 bytes)
 -	v2 Blob: `sha256:7a530f1f0a694b96b193229466623588a7a28ad53571d14a6909662ef67d511c`
 -	v2 Content-Length: 2.9 MB (2877753 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:32:56 GMT
 
 #### `6a14efde15f17f2530ff83dcab74cf176a4c9c52d99fa6622305aec217c4de01`
 

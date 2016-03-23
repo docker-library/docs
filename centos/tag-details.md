@@ -388,7 +388,6 @@ ADD file:5d64c112f85d4de58201bbe6595e229d38a8eddf43522ef9209ab7da89056733 in /
 -	Virtual Size: 284.1 MB (284081882 bytes)
 -	v2 Blob: `sha256:f61f09b16af986f8124fbb699cf95e58855261211424e2d5336b9803fec473fc`
 -	v2 Content-Length: 87.0 MB (87035221 bytes)
--	v2 Last-Modified: Wed, 14 Oct 2015 21:26:03 GMT
 
 ## `centos:5`
 
@@ -426,7 +425,6 @@ ADD file:5d64c112f85d4de58201bbe6595e229d38a8eddf43522ef9209ab7da89056733 in /
 -	Virtual Size: 284.1 MB (284081882 bytes)
 -	v2 Blob: `sha256:f61f09b16af986f8124fbb699cf95e58855261211424e2d5336b9803fec473fc`
 -	v2 Content-Length: 87.0 MB (87035221 bytes)
--	v2 Last-Modified: Wed, 14 Oct 2015 21:26:03 GMT
 
 ## `centos:centos7.2.1511`
 

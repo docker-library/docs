@@ -57,7 +57,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -89,7 +88,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -159,7 +157,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -297,7 +294,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:eada5eb51f5dd09d5c55c72b091e205aa4486e9b181d2f958bfcaa1280c8b04e`
 -	v2 Content-Length: 522.8 KB (522808 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:45:52 GMT
 
 #### `b6f31a52f807e7b3d142d84476ba89805bd9a8f1394e0fd62eba46b415752e69`
 
@@ -354,7 +350,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:19aeb2fc6eae705c75a73176c19b774ace459373975562fe2029a2b4d75d2200`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:45:42 GMT
 
 #### `e9aa937f572757268ab49b995e6934b469f0821a7614b6138ee7a73f8cc54fd8`
 
@@ -392,7 +387,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -424,7 +418,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -494,7 +487,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -632,7 +624,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:eada5eb51f5dd09d5c55c72b091e205aa4486e9b181d2f958bfcaa1280c8b04e`
 -	v2 Content-Length: 522.8 KB (522808 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:45:52 GMT
 
 #### `b6f31a52f807e7b3d142d84476ba89805bd9a8f1394e0fd62eba46b415752e69`
 
@@ -689,7 +680,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:19aeb2fc6eae705c75a73176c19b774ace459373975562fe2029a2b4d75d2200`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:45:42 GMT
 
 #### `e9aa937f572757268ab49b995e6934b469f0821a7614b6138ee7a73f8cc54fd8`
 
@@ -727,7 +717,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -759,7 +748,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -829,7 +817,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -967,7 +954,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:eada5eb51f5dd09d5c55c72b091e205aa4486e9b181d2f958bfcaa1280c8b04e`
 -	v2 Content-Length: 522.8 KB (522808 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:45:52 GMT
 
 #### `b6f31a52f807e7b3d142d84476ba89805bd9a8f1394e0fd62eba46b415752e69`
 
@@ -1024,7 +1010,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:19aeb2fc6eae705c75a73176c19b774ace459373975562fe2029a2b4d75d2200`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:45:42 GMT
 
 #### `e9aa937f572757268ab49b995e6934b469f0821a7614b6138ee7a73f8cc54fd8`
 
@@ -1160,7 +1145,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1192,7 +1176,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1262,7 +1245,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -1400,7 +1382,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:eada5eb51f5dd09d5c55c72b091e205aa4486e9b181d2f958bfcaa1280c8b04e`
 -	v2 Content-Length: 522.8 KB (522808 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:45:52 GMT
 
 #### `b6f31a52f807e7b3d142d84476ba89805bd9a8f1394e0fd62eba46b415752e69`
 
@@ -1457,7 +1438,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:19aeb2fc6eae705c75a73176c19b774ace459373975562fe2029a2b4d75d2200`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:45:42 GMT
 
 #### `e9aa937f572757268ab49b995e6934b469f0821a7614b6138ee7a73f8cc54fd8`
 
@@ -1593,7 +1573,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1779,7 +1758,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:538a488683dfbd49153ac63372f0abd7801c4ad74a65f2b144b925ea12995927`
 -	v2 Content-Length: 522.8 KB (522804 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:47:03 GMT
 
 #### `34b65ce27da167e541cc085b16388ac4b69532fe836373b04a9743013815c471`
 
@@ -1836,7 +1814,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:15179a6bf221ccb0c75b2031c859ac6401f62329be2490c654fa0ac54ee314a9`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:46:53 GMT
 
 #### `cb1605059866da83e6eb321357ca2d56967e9c918f30018e59eb01c3644b28cf`
 
@@ -1874,7 +1851,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2060,7 +2036,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:538a488683dfbd49153ac63372f0abd7801c4ad74a65f2b144b925ea12995927`
 -	v2 Content-Length: 522.8 KB (522804 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:47:03 GMT
 
 #### `34b65ce27da167e541cc085b16388ac4b69532fe836373b04a9743013815c471`
 
@@ -2117,7 +2092,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:15179a6bf221ccb0c75b2031c859ac6401f62329be2490c654fa0ac54ee314a9`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:46:53 GMT
 
 #### `cb1605059866da83e6eb321357ca2d56967e9c918f30018e59eb01c3644b28cf`
 
@@ -2299,7 +2273,6 @@ RUN set -ex \
 -	Virtual Size: 111.5 MB (111502085 bytes)
 -	v2 Blob: `sha256:6aa7ea7d316dc0312a4a19d3451688114ece4c72bca10e87b45d0df6948c27e7`
 -	v2 Content-Length: 32.7 MB (32691440 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:48:06 GMT
 
 #### `6c90af9252b38c58fd75401f3e38cb413dfbf6987314f511172fc647ebcd440d`
 
@@ -2384,7 +2357,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:31c56f5a34a8428598a7b9ed085ebd692c8a15614d387eac65969764248a0d6e`
 -	v2 Content-Length: 154.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:47:38 GMT
 
 #### `2ce455a3cb9aae4c42c41cfaf208f68b5f6f024c5f8b2bfdb9bbe9ee00453588`
 
@@ -2566,7 +2538,6 @@ RUN set -ex \
 -	Virtual Size: 111.5 MB (111502085 bytes)
 -	v2 Blob: `sha256:6aa7ea7d316dc0312a4a19d3451688114ece4c72bca10e87b45d0df6948c27e7`
 -	v2 Content-Length: 32.7 MB (32691440 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:48:06 GMT
 
 #### `6c90af9252b38c58fd75401f3e38cb413dfbf6987314f511172fc647ebcd440d`
 
@@ -2651,7 +2622,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:31c56f5a34a8428598a7b9ed085ebd692c8a15614d387eac65969764248a0d6e`
 -	v2 Content-Length: 154.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:47:38 GMT
 
 #### `2ce455a3cb9aae4c42c41cfaf208f68b5f6f024c5f8b2bfdb9bbe9ee00453588`
 
@@ -2689,7 +2659,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2721,7 +2690,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -2791,7 +2759,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -2901,7 +2868,6 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111355621 bytes)
 -	v2 Blob: `sha256:0e328fbd8fe044e181ff41ad69e793f9d6718bfd521e98c5c9424862ed891d9e`
 -	v2 Content-Length: 32.6 MB (32634329 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:48:51 GMT
 
 #### `808d63e1114ccada014418d573beaa1d189a9852ca1ba9f55b238ceac61b9f5b`
 
@@ -3024,7 +2990,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3056,7 +3021,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3126,7 +3090,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -3236,7 +3199,6 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111355621 bytes)
 -	v2 Blob: `sha256:0e328fbd8fe044e181ff41ad69e793f9d6718bfd521e98c5c9424862ed891d9e`
 -	v2 Content-Length: 32.6 MB (32634329 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:48:51 GMT
 
 #### `808d63e1114ccada014418d573beaa1d189a9852ca1ba9f55b238ceac61b9f5b`
 
@@ -3359,7 +3321,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3391,7 +3352,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3461,7 +3421,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -3571,7 +3530,6 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111355621 bytes)
 -	v2 Blob: `sha256:0e328fbd8fe044e181ff41ad69e793f9d6718bfd521e98c5c9424862ed891d9e`
 -	v2 Content-Length: 32.6 MB (32634329 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:48:51 GMT
 
 #### `808d63e1114ccada014418d573beaa1d189a9852ca1ba9f55b238ceac61b9f5b`
 
@@ -3792,7 +3750,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3824,7 +3781,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3894,7 +3850,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -4004,7 +3959,6 @@ RUN set -ex \
 -	Virtual Size: 111.4 MB (111355621 bytes)
 -	v2 Blob: `sha256:0e328fbd8fe044e181ff41ad69e793f9d6718bfd521e98c5c9424862ed891d9e`
 -	v2 Content-Length: 32.6 MB (32634329 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:48:51 GMT
 
 #### `808d63e1114ccada014418d573beaa1d189a9852ca1ba9f55b238ceac61b9f5b`
 
@@ -4225,7 +4179,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4411,7 +4364,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -4506,7 +4458,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4692,7 +4643,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:a9f1fd9f70c98e3240ad145174280547a418306bcec47bc41897144bfabad5cb`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:38:55 GMT
 
 #### `73c2083e2eddc33f62834763d9eab49a87b30c763b377dee929f3a7ea489eae2`
 
@@ -4931,7 +4881,6 @@ RUN set -ex \
 -	Virtual Size: 111.2 MB (111153226 bytes)
 -	v2 Blob: `sha256:1d084786a9e21f0d3f13e073eb755a1dec80e420b6a7ec47ddf300729b5393d9`
 -	v2 Content-Length: 33.1 MB (33061535 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:50:42 GMT
 
 #### `c402a16057fa6cf4c9a57fd8c99fc89810f6419ef037af13c51623b553ee2605`
 
@@ -4959,7 +4908,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3dc3362b01c925a37088a6b0b0e7c9d29b8438c09427e6209b0c8c0ce3785c9b`
 -	v2 Content-Length: 522.8 KB (522777 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:50:22 GMT
 
 #### `e022cfaddf6c194392a1983ad890db45decee782f2dcd32c1fb3fe587f822819`
 
@@ -5016,7 +4964,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:71a7d8d2448fb89631de8291b6e1a3f86d28fdbc4280b6d965fcc813c8474325`
 -	v2 Content-Length: 154.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:50:12 GMT
 
 #### `9928201f58abfd681db9b423665f67898fe65be98a4662d2dbcd2050b772e71d`
 
@@ -5198,7 +5145,6 @@ RUN set -ex \
 -	Virtual Size: 111.2 MB (111153226 bytes)
 -	v2 Blob: `sha256:1d084786a9e21f0d3f13e073eb755a1dec80e420b6a7ec47ddf300729b5393d9`
 -	v2 Content-Length: 33.1 MB (33061535 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:50:42 GMT
 
 #### `c402a16057fa6cf4c9a57fd8c99fc89810f6419ef037af13c51623b553ee2605`
 
@@ -5226,7 +5172,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3dc3362b01c925a37088a6b0b0e7c9d29b8438c09427e6209b0c8c0ce3785c9b`
 -	v2 Content-Length: 522.8 KB (522777 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:50:22 GMT
 
 #### `e022cfaddf6c194392a1983ad890db45decee782f2dcd32c1fb3fe587f822819`
 
@@ -5283,7 +5228,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:71a7d8d2448fb89631de8291b6e1a3f86d28fdbc4280b6d965fcc813c8474325`
 -	v2 Content-Length: 154.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:50:12 GMT
 
 #### `9928201f58abfd681db9b423665f67898fe65be98a4662d2dbcd2050b772e71d`
 
@@ -5321,7 +5265,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5353,7 +5296,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -5423,7 +5365,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -5533,7 +5474,6 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -5656,7 +5596,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5688,7 +5627,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -5758,7 +5696,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -5868,7 +5805,6 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -5991,7 +5927,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6023,7 +5958,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -6093,7 +6027,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -6203,7 +6136,6 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -6326,7 +6258,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6358,7 +6289,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -6428,7 +6358,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -6538,7 +6467,6 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -6661,7 +6589,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6693,7 +6620,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -6763,7 +6689,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -6873,7 +6798,6 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -6986,7 +6910,6 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:b5576442a1f36eb6744159a0c9bb37dac8e7eb3e4e14de1d38231b677a277b8d`
 -	v2 Content-Length: 184.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:12 GMT
 
 #### `8ce56c1df46eeeb3522ec7033396e2a00cf600dce79311b4f4ae6cf76fad4916`
 
@@ -7000,7 +6923,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1d63ce32b0eb4ba35b4f1a8c8058a821233ebc476240e96f893203c9ab73a2b6`
 -	v2 Content-Length: 128.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:09 GMT
 
 #### `5def21cbeceea1bc4607aa7a6058921a96ff5b5385355c8bd5bef92c576aaea7`
 
@@ -7094,7 +7016,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7126,7 +7047,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -7196,7 +7116,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -7306,7 +7225,6 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -7419,7 +7337,6 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:b5576442a1f36eb6744159a0c9bb37dac8e7eb3e4e14de1d38231b677a277b8d`
 -	v2 Content-Length: 184.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:12 GMT
 
 #### `8ce56c1df46eeeb3522ec7033396e2a00cf600dce79311b4f4ae6cf76fad4916`
 
@@ -7433,7 +7350,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1d63ce32b0eb4ba35b4f1a8c8058a821233ebc476240e96f893203c9ab73a2b6`
 -	v2 Content-Length: 128.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:09 GMT
 
 #### `5def21cbeceea1bc4607aa7a6058921a96ff5b5385355c8bd5bef92c576aaea7`
 
@@ -7527,7 +7443,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7559,7 +7474,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -7629,7 +7543,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -7739,7 +7652,6 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -7852,7 +7764,6 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:b5576442a1f36eb6744159a0c9bb37dac8e7eb3e4e14de1d38231b677a277b8d`
 -	v2 Content-Length: 184.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:12 GMT
 
 #### `8ce56c1df46eeeb3522ec7033396e2a00cf600dce79311b4f4ae6cf76fad4916`
 
@@ -7866,7 +7777,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1d63ce32b0eb4ba35b4f1a8c8058a821233ebc476240e96f893203c9ab73a2b6`
 -	v2 Content-Length: 128.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:09 GMT
 
 #### `5def21cbeceea1bc4607aa7a6058921a96ff5b5385355c8bd5bef92c576aaea7`
 
@@ -7960,7 +7870,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7992,7 +7901,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -8062,7 +7970,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `f430cfadb78ca30bc5b9bc462afa6797832310222e9dcfae53771de0e5bb21fa`
 
@@ -8172,7 +8079,6 @@ RUN set -ex \
 -	Virtual Size: 117.6 MB (117591096 bytes)
 -	v2 Blob: `sha256:04521bbf10c01b4ae4bbb09658d4f2ac538c56709a1b1a9189a02bac5a72ce4f`
 -	v2 Content-Length: 34.5 MB (34541326 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:51:30 GMT
 
 #### `d65b4c2f8cce82ce6f87dfa602068700205012595d3e18611a96e61d51bea447`
 
@@ -8285,7 +8191,6 @@ RUN bundle config --global frozen 1
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:b5576442a1f36eb6744159a0c9bb37dac8e7eb3e4e14de1d38231b677a277b8d`
 -	v2 Content-Length: 184.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:12 GMT
 
 #### `8ce56c1df46eeeb3522ec7033396e2a00cf600dce79311b4f4ae6cf76fad4916`
 
@@ -8299,7 +8204,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1d63ce32b0eb4ba35b4f1a8c8058a821233ebc476240e96f893203c9ab73a2b6`
 -	v2 Content-Length: 128.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:09 GMT
 
 #### `5def21cbeceea1bc4607aa7a6058921a96ff5b5385355c8bd5bef92c576aaea7`
 
@@ -8393,7 +8297,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8579,7 +8482,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3adeed97f9985440d4bed6473865dd999a1922d3ac7ca785324ade08d5144914`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:54 GMT
 
 #### `0137e070fc883fae732ec0c729815d7238ce9ae2fcbb158c6c3ca7659f58a421`
 
@@ -8674,7 +8576,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8860,7 +8761,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3adeed97f9985440d4bed6473865dd999a1922d3ac7ca785324ade08d5144914`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:54 GMT
 
 #### `0137e070fc883fae732ec0c729815d7238ce9ae2fcbb158c6c3ca7659f58a421`
 
@@ -8955,7 +8855,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9141,7 +9040,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3adeed97f9985440d4bed6473865dd999a1922d3ac7ca785324ade08d5144914`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:54 GMT
 
 #### `0137e070fc883fae732ec0c729815d7238ce9ae2fcbb158c6c3ca7659f58a421`
 
@@ -9236,7 +9134,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9422,7 +9319,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3adeed97f9985440d4bed6473865dd999a1922d3ac7ca785324ade08d5144914`
 -	v2 Content-Length: 522.8 KB (522791 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:52:54 GMT
 
 #### `0137e070fc883fae732ec0c729815d7238ce9ae2fcbb158c6c3ca7659f58a421`
 
@@ -9661,7 +9557,6 @@ RUN set -ex \
 -	Virtual Size: 118.9 MB (118864644 bytes)
 -	v2 Blob: `sha256:6ca086846bb1e6fda0c117deb8a9cec59324e4aca620239bb04cc6fe110cc339`
 -	v2 Content-Length: 35.1 MB (35114164 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:54:06 GMT
 
 #### `a2b123bde6be2e83f265899ca46bcab3da40c519fa7b663337eb3d876fbf8efe`
 
@@ -9689,7 +9584,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3939721ffbace1d124acb28fc953dde2a3dfbcf6bc496b63a6774de026514571`
 -	v2 Content-Length: 522.8 KB (522787 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:53:48 GMT
 
 #### `f902e8646690ae3199ccd977f51a4e8feef007aac9655fcb17ac72aba73fad39`
 
@@ -9746,7 +9640,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6cca509ae0c4087ddcd0974e7229d21ffc19dc481c1ba5c42775e832f29fd044`
 -	v2 Content-Length: 153.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:53:37 GMT
 
 #### `6c98dff42acac474172f22d340c02688f9bd78ab6fce28df76f63c38d022bb4d`
 
@@ -9928,7 +9821,6 @@ RUN set -ex \
 -	Virtual Size: 118.9 MB (118864644 bytes)
 -	v2 Blob: `sha256:6ca086846bb1e6fda0c117deb8a9cec59324e4aca620239bb04cc6fe110cc339`
 -	v2 Content-Length: 35.1 MB (35114164 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:54:06 GMT
 
 #### `a2b123bde6be2e83f265899ca46bcab3da40c519fa7b663337eb3d876fbf8efe`
 
@@ -9956,7 +9848,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3939721ffbace1d124acb28fc953dde2a3dfbcf6bc496b63a6774de026514571`
 -	v2 Content-Length: 522.8 KB (522787 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:53:48 GMT
 
 #### `f902e8646690ae3199ccd977f51a4e8feef007aac9655fcb17ac72aba73fad39`
 
@@ -10013,7 +9904,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6cca509ae0c4087ddcd0974e7229d21ffc19dc481c1ba5c42775e832f29fd044`
 -	v2 Content-Length: 153.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:53:37 GMT
 
 #### `6c98dff42acac474172f22d340c02688f9bd78ab6fce28df76f63c38d022bb4d`
 
@@ -10195,7 +10085,6 @@ RUN set -ex \
 -	Virtual Size: 118.9 MB (118864644 bytes)
 -	v2 Blob: `sha256:6ca086846bb1e6fda0c117deb8a9cec59324e4aca620239bb04cc6fe110cc339`
 -	v2 Content-Length: 35.1 MB (35114164 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:54:06 GMT
 
 #### `a2b123bde6be2e83f265899ca46bcab3da40c519fa7b663337eb3d876fbf8efe`
 
@@ -10223,7 +10112,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3939721ffbace1d124acb28fc953dde2a3dfbcf6bc496b63a6774de026514571`
 -	v2 Content-Length: 522.8 KB (522787 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:53:48 GMT
 
 #### `f902e8646690ae3199ccd977f51a4e8feef007aac9655fcb17ac72aba73fad39`
 
@@ -10280,7 +10168,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6cca509ae0c4087ddcd0974e7229d21ffc19dc481c1ba5c42775e832f29fd044`
 -	v2 Content-Length: 153.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:53:37 GMT
 
 #### `6c98dff42acac474172f22d340c02688f9bd78ab6fce28df76f63c38d022bb4d`
 
@@ -10462,7 +10349,6 @@ RUN set -ex \
 -	Virtual Size: 118.9 MB (118864644 bytes)
 -	v2 Blob: `sha256:6ca086846bb1e6fda0c117deb8a9cec59324e4aca620239bb04cc6fe110cc339`
 -	v2 Content-Length: 35.1 MB (35114164 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:54:06 GMT
 
 #### `a2b123bde6be2e83f265899ca46bcab3da40c519fa7b663337eb3d876fbf8efe`
 
@@ -10490,7 +10376,6 @@ RUN gem install bundler --version "$BUNDLER_VERSION"
 -	Virtual Size: 1.2 MB (1181608 bytes)
 -	v2 Blob: `sha256:3939721ffbace1d124acb28fc953dde2a3dfbcf6bc496b63a6774de026514571`
 -	v2 Content-Length: 522.8 KB (522787 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:53:48 GMT
 
 #### `f902e8646690ae3199ccd977f51a4e8feef007aac9655fcb17ac72aba73fad39`
 
@@ -10547,7 +10432,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:6cca509ae0c4087ddcd0974e7229d21ffc19dc481c1ba5c42775e832f29fd044`
 -	v2 Content-Length: 153.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:53:37 GMT
 
 #### `6c98dff42acac474172f22d340c02688f9bd78ab6fce28df76f63c38d022bb4d`
 

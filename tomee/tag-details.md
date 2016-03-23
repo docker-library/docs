@@ -217,7 +217,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9363f17c43cecadc8eedae8a92ece063085e4ef5ba6721cb7c7946ac9e9470e1`
 -	v2 Content-Length: 144.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:44:31 GMT
 
 #### `d149c258b0f084e97e81389b8a3442e3380954296ef90d1725b3b16ac22f1424`
 
@@ -284,7 +283,6 @@ RUN set -x \
 -	Virtual Size: 41.4 MB (41362178 bytes)
 -	v2 Blob: `sha256:24a8e91feb1291a842d757def1a7848140a72eab5d5adaf562aecbbaa6ed3b20`
 -	v2 Content-Length: 34.6 MB (34585589 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:44:15 GMT
 
 #### `91f31d0a845bd0f28dcd4ec9d9e64f0a43793eadefd95ecc9220407309aa324b`
 
@@ -509,7 +507,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9363f17c43cecadc8eedae8a92ece063085e4ef5ba6721cb7c7946ac9e9470e1`
 -	v2 Content-Length: 144.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:44:31 GMT
 
 #### `d149c258b0f084e97e81389b8a3442e3380954296ef90d1725b3b16ac22f1424`
 
@@ -801,7 +798,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9363f17c43cecadc8eedae8a92ece063085e4ef5ba6721cb7c7946ac9e9470e1`
 -	v2 Content-Length: 144.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:44:31 GMT
 
 #### `d149c258b0f084e97e81389b8a3442e3380954296ef90d1725b3b16ac22f1424`
 
@@ -868,7 +864,6 @@ RUN set -x \
 -	Virtual Size: 51.9 MB (51857029 bytes)
 -	v2 Blob: `sha256:3813b21d5682bd585a655ac1b773ecfbdef27f693ad809bdbfc52c4151d717d6`
 -	v2 Content-Length: 43.9 MB (43870911 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:45:29 GMT
 
 #### `0f7858ae98e40d63988cf926c3fe357e23ce7f7465363c4b5295a726b0016182`
 
@@ -1093,7 +1088,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:9363f17c43cecadc8eedae8a92ece063085e4ef5ba6721cb7c7946ac9e9470e1`
 -	v2 Content-Length: 144.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:44:31 GMT
 
 #### `d149c258b0f084e97e81389b8a3442e3380954296ef90d1725b3b16ac22f1424`
 
@@ -1212,7 +1206,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1262,7 +1255,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -1357,7 +1349,6 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `da78939e98581ad9d73455205fd72fc5b4e872ccabeaac06a887f5e33cb40f0b`
 
@@ -1504,7 +1495,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1554,7 +1544,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -1649,7 +1638,6 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `da78939e98581ad9d73455205fd72fc5b4e872ccabeaac06a887f5e33cb40f0b`
 
@@ -1796,7 +1784,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1846,7 +1833,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -1941,7 +1927,6 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `da78939e98581ad9d73455205fd72fc5b4e872ccabeaac06a887f5e33cb40f0b`
 
@@ -2088,7 +2073,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2138,7 +2122,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -2233,7 +2216,6 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `da78939e98581ad9d73455205fd72fc5b4e872ccabeaac06a887f5e33cb40f0b`
 
@@ -2380,7 +2362,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2430,7 +2411,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2596,7 +2576,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -2715,7 +2694,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2765,7 +2743,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2931,7 +2908,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -3050,7 +3026,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3100,7 +3075,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -3266,7 +3240,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -3333,7 +3306,6 @@ RUN set -x \
 -	Virtual Size: 51.9 MB (51857029 bytes)
 -	v2 Blob: `sha256:6a9382709aa9f9b8f7f5c9f2822794cea5d4b7db59dac2f949264568755a29e0`
 -	v2 Content-Length: 43.9 MB (43870939 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:49:44 GMT
 
 #### `85596ba1fd94f745d0726d7c46d6fd706fd548812c0e43594d776614fad9bda4`
 
@@ -3385,7 +3357,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3435,7 +3406,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -3601,7 +3571,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -3720,7 +3689,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3770,7 +3738,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -3865,7 +3832,6 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `da78939e98581ad9d73455205fd72fc5b4e872ccabeaac06a887f5e33cb40f0b`
 
@@ -4012,7 +3978,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4062,7 +4027,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -4157,7 +4121,6 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `da78939e98581ad9d73455205fd72fc5b4e872ccabeaac06a887f5e33cb40f0b`
 
@@ -4304,7 +4267,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4354,7 +4316,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `5938b32cc0b4c38901543a84229848372403bfddc5e5680a739c13f42674c32c`
 
@@ -4449,7 +4410,6 @@ RUN set -x \
 -	Virtual Size: 173.6 MB (173649929 bytes)
 -	v2 Blob: `sha256:088eb72968f46ec8dc9d3866833e4a36d34e5a3e044eaa931051c5f20cdbd45d`
 -	v2 Content-Length: 84.0 MB (84010983 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:43:53 GMT
 
 #### `da78939e98581ad9d73455205fd72fc5b4e872ccabeaac06a887f5e33cb40f0b`
 
@@ -4596,7 +4556,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4646,7 +4605,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -4812,7 +4770,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -4879,7 +4836,6 @@ RUN set -x \
 -	Virtual Size: 65.1 MB (65055523 bytes)
 -	v2 Blob: `sha256:c7cfee16e5f08eb11019087c5d15f6d06ce30aebe51d7c9d15120e683c919fe3`
 -	v2 Content-Length: 56.5 MB (56486585 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:51:45 GMT
 
 #### `ae149e12ee6ba1e1b7d8f830aec1ac4b0dcc5fba0a54135c8be24c710ef2e85a`
 
@@ -4931,7 +4887,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4981,7 +4936,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -5147,7 +5101,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -5214,7 +5167,6 @@ RUN set -x \
 -	Virtual Size: 58.0 MB (57952518 bytes)
 -	v2 Blob: `sha256:e7b55ec3df6897cc4d64add9db1d5391353ac95d233b4a645d9747c07198c03b`
 -	v2 Content-Length: 49.9 MB (49893852 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:52:09 GMT
 
 #### `dfa8c7274d56ed73f05924afee79854902add4fbdbb4c4fb828031c81597b48c`
 
@@ -5266,7 +5218,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5316,7 +5267,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -5482,7 +5432,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 
@@ -5601,7 +5550,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5651,7 +5599,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -5817,7 +5764,6 @@ RUN mkdir -p /usr/local/tomee
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:18634a4b9f37a2b3a072f21e3be985bca81883477c4c414cd821acc1e07121dd`
 -	v2 Content-Length: 145.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:48:29 GMT
 
 #### `b52319fbb4fb82af0fb8fc76cfad2e42788b45de178a17d1a333b49233868836`
 

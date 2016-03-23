@@ -198,7 +198,6 @@ RUN buildDeps=' \
 -	Virtual Size: 18.8 MB (18806879 bytes)
 -	v2 Blob: `sha256:a52e3058a6231b699b227e6bcc4db3781866dd9cc5a4a4fb69a33cb589e4d990`
 -	v2 Content-Length: 4.4 MB (4367850 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:29:08 GMT
 
 #### `93cbea29a369651618f34beaf3e034fd11f68e88c5932bb2db98c775827284c8`
 
@@ -431,7 +430,6 @@ RUN buildDeps=' \
 -	Virtual Size: 18.8 MB (18806879 bytes)
 -	v2 Blob: `sha256:a52e3058a6231b699b227e6bcc4db3781866dd9cc5a4a4fb69a33cb589e4d990`
 -	v2 Content-Length: 4.4 MB (4367850 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:29:08 GMT
 
 #### `93cbea29a369651618f34beaf3e034fd11f68e88c5932bb2db98c775827284c8`
 
@@ -678,7 +676,6 @@ COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /u
 -	Virtual Size: 135.0 B
 -	v2 Blob: `sha256:94a268baee665ae07f8c158def93eddc00ac2e3af1ec1fb2e38f92c4942ba4e7`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:28:06 GMT
 
 #### `c7c39c3750a61d8027ea618ba191b58b9016e8b11b7d8175eb6f7323ecd61a69`
 
@@ -911,7 +908,6 @@ COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /u
 -	Virtual Size: 135.0 B
 -	v2 Blob: `sha256:94a268baee665ae07f8c158def93eddc00ac2e3af1ec1fb2e38f92c4942ba4e7`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:28:06 GMT
 
 #### `c7c39c3750a61d8027ea618ba191b58b9016e8b11b7d8175eb6f7323ecd61a69`
 
@@ -1144,7 +1140,6 @@ COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /u
 -	Virtual Size: 135.0 B
 -	v2 Blob: `sha256:94a268baee665ae07f8c158def93eddc00ac2e3af1ec1fb2e38f92c4942ba4e7`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:28:06 GMT
 
 #### `c7c39c3750a61d8027ea618ba191b58b9016e8b11b7d8175eb6f7323ecd61a69`
 
@@ -1377,7 +1372,6 @@ COPY file:f465a45ed4146a281cb3b91bafd839450e5b062dae5621734fa3f6d045553b9f in /u
 -	Virtual Size: 135.0 B
 -	v2 Blob: `sha256:94a268baee665ae07f8c158def93eddc00ac2e3af1ec1fb2e38f92c4942ba4e7`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:28:06 GMT
 
 #### `c7c39c3750a61d8027ea618ba191b58b9016e8b11b7d8175eb6f7323ecd61a69`
 

@@ -65,7 +65,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -118,7 +117,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -324,7 +322,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -377,7 +374,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -583,7 +579,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -636,7 +631,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -842,7 +836,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -895,7 +888,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -1101,7 +1093,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -1154,7 +1145,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -1360,7 +1350,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -1413,7 +1402,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -1619,7 +1607,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -1672,7 +1659,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -1878,7 +1864,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -1931,7 +1916,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -2137,7 +2121,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -2190,7 +2173,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -2240,7 +2222,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:ea1977736a5cd3f4c58f6ff3fa3ae03095c4a8a8ca5d5c516c1ae02457218a1a`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:19 GMT
 
 #### `8465056ae7fe76acfe01e1c6488d33cc38f7e58be38c7ca30ea2538724516aaf`
 
@@ -2300,7 +2281,6 @@ RUN set -x \
 -	Virtual Size: 126.8 MB (126821096 bytes)
 -	v2 Blob: `sha256:655f3b5ac4d5febb11eef71a099b3a131e70d1f40a9703e58508e62f423a31ad`
 -	v2 Content-Length: 33.0 MB (33046675 bytes)
--	v2 Last-Modified: Fri, 11 Mar 2016 23:10:17 GMT
 
 #### `9eb89d55dddc98d7081fa11ff00c9b341ddcb0706f9294150bc4c330e9834e6b`
 
@@ -2422,7 +2402,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -2475,7 +2454,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -2525,7 +2503,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:ea1977736a5cd3f4c58f6ff3fa3ae03095c4a8a8ca5d5c516c1ae02457218a1a`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:19 GMT
 
 #### `8465056ae7fe76acfe01e1c6488d33cc38f7e58be38c7ca30ea2538724516aaf`
 
@@ -2585,7 +2562,6 @@ RUN set -x \
 -	Virtual Size: 126.8 MB (126821096 bytes)
 -	v2 Blob: `sha256:655f3b5ac4d5febb11eef71a099b3a131e70d1f40a9703e58508e62f423a31ad`
 -	v2 Content-Length: 33.0 MB (33046675 bytes)
--	v2 Last-Modified: Fri, 11 Mar 2016 23:10:17 GMT
 
 #### `9eb89d55dddc98d7081fa11ff00c9b341ddcb0706f9294150bc4c330e9834e6b`
 
@@ -2707,7 +2683,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -2760,7 +2735,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -2810,7 +2784,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:ea1977736a5cd3f4c58f6ff3fa3ae03095c4a8a8ca5d5c516c1ae02457218a1a`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:19 GMT
 
 #### `8465056ae7fe76acfe01e1c6488d33cc38f7e58be38c7ca30ea2538724516aaf`
 
@@ -2870,7 +2843,6 @@ RUN set -x \
 -	Virtual Size: 126.8 MB (126821096 bytes)
 -	v2 Blob: `sha256:655f3b5ac4d5febb11eef71a099b3a131e70d1f40a9703e58508e62f423a31ad`
 -	v2 Content-Length: 33.0 MB (33046675 bytes)
--	v2 Last-Modified: Fri, 11 Mar 2016 23:10:17 GMT
 
 #### `9eb89d55dddc98d7081fa11ff00c9b341ddcb0706f9294150bc4c330e9834e6b`
 
@@ -2992,7 +2964,6 @@ RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 -	Virtual Size: 334.8 KB (334785 bytes)
 -	v2 Blob: `sha256:ad03d0e0fa615a06f48a3f6f4f2ae7f721ea6310f3409b127bcc7e945b622f13`
 -	v2 Content-Length: 4.3 KB (4343 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:40 GMT
 
 #### `83ffdc422badf262ce8d5c2cabe02da9fd8f21ee38c06481bc60e5868b50f678`
 
@@ -3045,7 +3016,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2698808 bytes)
 -	v2 Blob: `sha256:310f6a0587f3ef140a4bd5f90fb47fac1f0a57cf56ecb82e9007d88d3cc5573f`
 -	v2 Content-Length: 807.9 KB (807930 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:26 GMT
 
 #### `161fcf397983458a844988fc997a77cf02b189e615a348677015bceede2bc670`
 
@@ -3095,7 +3065,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:ea1977736a5cd3f4c58f6ff3fa3ae03095c4a8a8ca5d5c516c1ae02457218a1a`
 -	v2 Content-Length: 1.4 KB (1446 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:45:19 GMT
 
 #### `8465056ae7fe76acfe01e1c6488d33cc38f7e58be38c7ca30ea2538724516aaf`
 
@@ -3155,7 +3124,6 @@ RUN set -x \
 -	Virtual Size: 126.8 MB (126821096 bytes)
 -	v2 Blob: `sha256:655f3b5ac4d5febb11eef71a099b3a131e70d1f40a9703e58508e62f423a31ad`
 -	v2 Content-Length: 33.0 MB (33046675 bytes)
--	v2 Last-Modified: Fri, 11 Mar 2016 23:10:17 GMT
 
 #### `9eb89d55dddc98d7081fa11ff00c9b341ddcb0706f9294150bc4c330e9834e6b`
 

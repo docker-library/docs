@@ -109,7 +109,6 @@ RUN apt-get -y install supervisor nodejs npm redis-server
 -	Virtual Size: 159.3 MB (159327039 bytes)
 -	v2 Blob: `sha256:e809e296b87fad7428f64c46b36578a08e0a0a62286bd40499d859ba973f0a85`
 -	v2 Content-Length: 65.6 MB (65566510 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:55:14 GMT
 
 #### `091dc52f6802a82074939c4c2dd099b107e809dc63a3eabb2f39a39ba25f478c`
 
@@ -327,7 +326,6 @@ RUN apt-get -y install supervisor nodejs npm redis-server
 -	Virtual Size: 159.3 MB (159327039 bytes)
 -	v2 Blob: `sha256:e809e296b87fad7428f64c46b36578a08e0a0a62286bd40499d859ba973f0a85`
 -	v2 Content-Length: 65.6 MB (65566510 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:55:14 GMT
 
 #### `091dc52f6802a82074939c4c2dd099b107e809dc63a3eabb2f39a39ba25f478c`
 

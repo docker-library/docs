@@ -164,7 +164,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -639,7 +638,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -1114,7 +1112,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -1589,7 +1586,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -2882,7 +2878,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -3378,7 +3373,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -3874,7 +3868,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -4370,7 +4363,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -4866,7 +4858,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -5362,7 +5353,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -5858,7 +5848,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -6354,7 +6343,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -7084,7 +7072,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1c0ab33a307a56fe0f59e87f102e0ac6753b3f459618630997a51b12d2604faf`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:37 GMT
 
 #### `c420a4d2aff503eb25ffd6a96d4680d18f19aa4b667ffcf6fa3942f0fdf01b0b`
 
@@ -7144,7 +7131,6 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 51.2 MB (51191207 bytes)
 -	v2 Blob: `sha256:3c0f3140da747727cf9d3308f4efee8b74cfa036de366f9474b88230c802f94d`
 -	v2 Content-Length: 11.8 MB (11750728 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:23 GMT
 
 ## `drupal:8.0-fpm`
 
@@ -7514,7 +7500,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1c0ab33a307a56fe0f59e87f102e0ac6753b3f459618630997a51b12d2604faf`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:37 GMT
 
 #### `c420a4d2aff503eb25ffd6a96d4680d18f19aa4b667ffcf6fa3942f0fdf01b0b`
 
@@ -7574,7 +7559,6 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 51.2 MB (51191207 bytes)
 -	v2 Blob: `sha256:3c0f3140da747727cf9d3308f4efee8b74cfa036de366f9474b88230c802f94d`
 -	v2 Content-Length: 11.8 MB (11750728 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:23 GMT
 
 ## `drupal:8-fpm`
 
@@ -7944,7 +7928,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1c0ab33a307a56fe0f59e87f102e0ac6753b3f459618630997a51b12d2604faf`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:37 GMT
 
 #### `c420a4d2aff503eb25ffd6a96d4680d18f19aa4b667ffcf6fa3942f0fdf01b0b`
 
@@ -8004,7 +7987,6 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 51.2 MB (51191207 bytes)
 -	v2 Blob: `sha256:3c0f3140da747727cf9d3308f4efee8b74cfa036de366f9474b88230c802f94d`
 -	v2 Content-Length: 11.8 MB (11750728 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:23 GMT
 
 ## `drupal:fpm`
 
@@ -8374,7 +8356,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1c0ab33a307a56fe0f59e87f102e0ac6753b3f459618630997a51b12d2604faf`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:37 GMT
 
 #### `c420a4d2aff503eb25ffd6a96d4680d18f19aa4b667ffcf6fa3942f0fdf01b0b`
 
@@ -8434,7 +8415,6 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 51.2 MB (51191207 bytes)
 -	v2 Blob: `sha256:3c0f3140da747727cf9d3308f4efee8b74cfa036de366f9474b88230c802f94d`
 -	v2 Content-Length: 11.8 MB (11750728 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:23 GMT
 
 ## `drupal:8.1.0-beta1-apache`
 
@@ -8570,7 +8550,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -9066,7 +9045,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -9562,7 +9540,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -10058,7 +10035,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -10554,7 +10530,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -11050,7 +11025,6 @@ RUN a2dismod mpm_event && a2enmod mpm_prefork
 -	Virtual Size: 68.0 B
 -	v2 Blob: `sha256:b1d739e1b940542d2c3d195b6441654fe8c6688a52e878a5c94acf31be8a8386`
 -	v2 Content-Length: 435.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:55 GMT
 
 #### `8ce5820e05177426799f56451aff3f871f97fba6e2085ad9625f6a711358f07b`
 
@@ -11780,7 +11754,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1c0ab33a307a56fe0f59e87f102e0ac6753b3f459618630997a51b12d2604faf`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:37 GMT
 
 #### `c420a4d2aff503eb25ffd6a96d4680d18f19aa4b667ffcf6fa3942f0fdf01b0b`
 
@@ -12210,7 +12183,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1c0ab33a307a56fe0f59e87f102e0ac6753b3f459618630997a51b12d2604faf`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:37 GMT
 
 #### `c420a4d2aff503eb25ffd6a96d4680d18f19aa4b667ffcf6fa3942f0fdf01b0b`
 
@@ -12640,7 +12612,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1c0ab33a307a56fe0f59e87f102e0ac6753b3f459618630997a51b12d2604faf`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:35:37 GMT
 
 #### `c420a4d2aff503eb25ffd6a96d4680d18f19aa4b667ffcf6fa3942f0fdf01b0b`
 

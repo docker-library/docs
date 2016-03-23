@@ -313,7 +313,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `c74f181985393c2af01ac86b392510e1f7520ed32ffb3f6569f27e98175904dc`
 
@@ -400,7 +399,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `eb82186d842893cbefdc03ada8c560ea50c35ef946bb908d0bb6a1753dfca889`
 
@@ -721,7 +719,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `c74f181985393c2af01ac86b392510e1f7520ed32ffb3f6569f27e98175904dc`
 
@@ -808,7 +805,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `eb82186d842893cbefdc03ada8c560ea50c35ef946bb908d0bb6a1753dfca889`
 
@@ -1129,7 +1125,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `c74f181985393c2af01ac86b392510e1f7520ed32ffb3f6569f27e98175904dc`
 
@@ -1216,7 +1211,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `eb82186d842893cbefdc03ada8c560ea50c35ef946bb908d0bb6a1753dfca889`
 
@@ -1537,7 +1531,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `c74f181985393c2af01ac86b392510e1f7520ed32ffb3f6569f27e98175904dc`
 
@@ -1624,7 +1617,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `eb82186d842893cbefdc03ada8c560ea50c35ef946bb908d0bb6a1753dfca889`
 
@@ -1945,7 +1937,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `d1697e2ea830531ae43c5ef7b8070e8d544cafab38836709c2039e1c3133a582`
 
@@ -2032,7 +2023,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `3616d0493a62da707b3da4e27d2468069824053a3e73e6ea6e9325f2f9f2c10b`
 
@@ -2353,7 +2343,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `d1697e2ea830531ae43c5ef7b8070e8d544cafab38836709c2039e1c3133a582`
 
@@ -2440,7 +2429,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `3616d0493a62da707b3da4e27d2468069824053a3e73e6ea6e9325f2f9f2c10b`
 
@@ -2761,7 +2749,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `d1697e2ea830531ae43c5ef7b8070e8d544cafab38836709c2039e1c3133a582`
 
@@ -2848,7 +2835,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `3616d0493a62da707b3da4e27d2468069824053a3e73e6ea6e9325f2f9f2c10b`
 
@@ -3169,7 +3155,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `d1697e2ea830531ae43c5ef7b8070e8d544cafab38836709c2039e1c3133a582`
 
@@ -3256,7 +3241,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:4d4c80b51f6c480b4c3063014b65bd074ee4cb27f24930608441b3894074d580`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Mon, 17 Aug 2015 19:27:29 GMT
 
 #### `3616d0493a62da707b3da4e27d2468069824053a3e73e6ea6e9325f2f9f2c10b`
 
@@ -3577,7 +3561,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `5e2e41aa52314ca9d287aaf39cd1abec16ce03f474454f1cf1760b96994fbb20`
 
@@ -3985,7 +3968,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `5e2e41aa52314ca9d287aaf39cd1abec16ce03f474454f1cf1760b96994fbb20`
 
@@ -4393,7 +4375,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `5e2e41aa52314ca9d287aaf39cd1abec16ce03f474454f1cf1760b96994fbb20`
 
@@ -4801,7 +4782,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `4443fec4d6d177f6de59fbf8004231cd303dcf8d519e9cc34889453138d115e7`
 
@@ -4860,7 +4840,6 @@ RUN set -x \
 -	Virtual Size: 135.7 MB (135685475 bytes)
 -	v2 Blob: `sha256:ada7b412cbdd6a31eab1fb50944a827ea7f68a28ec08d4eeb27ee5bd04d70729`
 -	v2 Content-Length: 75.3 MB (75337389 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:15:19 GMT
 
 #### `67eb62fefc07531caa09cc6fa52d8c235e377c12c700d60d76f8d5bc41313c22`
 
@@ -4888,7 +4867,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:03b8b7dc7d814a38e3c05a08bdb812a928dd71f8ed0cf689714c42364e9e94fa`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Tue, 24 Nov 2015 18:53:06 GMT
 
 #### `5365a2288b7e22043ab23f2c2e8bc1a8068289e983f7f28fd9eddb80b7da999c`
 
@@ -5209,7 +5187,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `4443fec4d6d177f6de59fbf8004231cd303dcf8d519e9cc34889453138d115e7`
 
@@ -5268,7 +5245,6 @@ RUN set -x \
 -	Virtual Size: 135.7 MB (135685475 bytes)
 -	v2 Blob: `sha256:ada7b412cbdd6a31eab1fb50944a827ea7f68a28ec08d4eeb27ee5bd04d70729`
 -	v2 Content-Length: 75.3 MB (75337389 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:15:19 GMT
 
 #### `67eb62fefc07531caa09cc6fa52d8c235e377c12c700d60d76f8d5bc41313c22`
 
@@ -5296,7 +5272,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:03b8b7dc7d814a38e3c05a08bdb812a928dd71f8ed0cf689714c42364e9e94fa`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Tue, 24 Nov 2015 18:53:06 GMT
 
 #### `5365a2288b7e22043ab23f2c2e8bc1a8068289e983f7f28fd9eddb80b7da999c`
 
@@ -5617,7 +5592,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `4443fec4d6d177f6de59fbf8004231cd303dcf8d519e9cc34889453138d115e7`
 
@@ -5676,7 +5650,6 @@ RUN set -x \
 -	Virtual Size: 135.7 MB (135685475 bytes)
 -	v2 Blob: `sha256:ada7b412cbdd6a31eab1fb50944a827ea7f68a28ec08d4eeb27ee5bd04d70729`
 -	v2 Content-Length: 75.3 MB (75337389 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:15:19 GMT
 
 #### `67eb62fefc07531caa09cc6fa52d8c235e377c12c700d60d76f8d5bc41313c22`
 
@@ -5704,7 +5677,6 @@ COPY file:f6eb58a1fea42e02390b54838e36b61ff1bef82f0481764fcacd5b9602910497 in /
 -	Virtual Size: 239.0 B
 -	v2 Blob: `sha256:03b8b7dc7d814a38e3c05a08bdb812a928dd71f8ed0cf689714c42364e9e94fa`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Tue, 24 Nov 2015 18:53:06 GMT
 
 #### `5365a2288b7e22043ab23f2c2e8bc1a8068289e983f7f28fd9eddb80b7da999c`
 
@@ -6025,7 +5997,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `0f5683edbeb25c8cde9adee1dca28fab5cd245251efc19c225cc5ac77bbe945d`
 
@@ -6433,7 +6404,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `0f5683edbeb25c8cde9adee1dca28fab5cd245251efc19c225cc5ac77bbe945d`
 
@@ -6841,7 +6811,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `0f5683edbeb25c8cde9adee1dca28fab5cd245251efc19c225cc5ac77bbe945d`
 
@@ -7249,7 +7218,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `0f5683edbeb25c8cde9adee1dca28fab5cd245251efc19c225cc5ac77bbe945d`
 
@@ -7657,7 +7625,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC85485
 -	Virtual Size: 1.2 KB (1228 bytes)
 -	v2 Blob: `sha256:078b98e7aba2b419d286f9ff3b43371424a488f4480991bfe228faab5ac11116`
 -	v2 Content-Length: 1.4 KB (1447 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:10:45 GMT
 
 #### `0f5683edbeb25c8cde9adee1dca28fab5cd245251efc19c225cc5ac77bbe945d`
 

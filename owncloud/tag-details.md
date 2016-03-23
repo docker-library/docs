@@ -266,7 +266,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -357,7 +356,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -371,7 +369,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -451,7 +448,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.8 MB (90817279 bytes)
 -	v2 Blob: `sha256:4fabeb6a95c0d4344b6eacc331d9f237f91e65c8706dcd4d90d216ad46c75b5d`
 -	v2 Content-Length: 33.0 MB (32959177 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:59 GMT
 
 #### `d861457316fa213bad082bcb0d574402c458918886c35b4cb8c5626ddef18288`
 
@@ -466,7 +462,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:ca174b5ced7449932372b6b9015dae2c5552059c439448a9ac41113bc563881d`
 -	v2 Content-Length: 9.0 MB (9026511 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:45 GMT
 
 #### `56aaa2e989131b1d4be370159f822f0e0695a709b06af661d751c6694c778163`
 
@@ -501,7 +496,6 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -552,7 +546,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 100.4 MB (100431899 bytes)
 -	v2 Blob: `sha256:976d68890ec55339bea61acc8ee04c10313d6e4a456255fe95f9d0ef8ca65b9f`
 -	v2 Content-Length: 33.4 MB (33351002 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:29 GMT
 
 #### `498f2a1c38688dde86c1cce69db317d8bf338faa227dabebac3ef977ed11cca8`
 
@@ -817,7 +810,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -908,7 +900,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -922,7 +913,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -1002,7 +992,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.8 MB (90817279 bytes)
 -	v2 Blob: `sha256:4fabeb6a95c0d4344b6eacc331d9f237f91e65c8706dcd4d90d216ad46c75b5d`
 -	v2 Content-Length: 33.0 MB (32959177 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:59 GMT
 
 #### `d861457316fa213bad082bcb0d574402c458918886c35b4cb8c5626ddef18288`
 
@@ -1017,7 +1006,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:ca174b5ced7449932372b6b9015dae2c5552059c439448a9ac41113bc563881d`
 -	v2 Content-Length: 9.0 MB (9026511 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:45 GMT
 
 #### `56aaa2e989131b1d4be370159f822f0e0695a709b06af661d751c6694c778163`
 
@@ -1052,7 +1040,6 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -1103,7 +1090,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 100.4 MB (100431899 bytes)
 -	v2 Blob: `sha256:976d68890ec55339bea61acc8ee04c10313d6e4a456255fe95f9d0ef8ca65b9f`
 -	v2 Content-Length: 33.4 MB (33351002 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:29 GMT
 
 #### `498f2a1c38688dde86c1cce69db317d8bf338faa227dabebac3ef977ed11cca8`
 
@@ -1368,7 +1354,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -1459,7 +1444,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -1473,7 +1457,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -1553,7 +1536,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.8 MB (90817279 bytes)
 -	v2 Blob: `sha256:4fabeb6a95c0d4344b6eacc331d9f237f91e65c8706dcd4d90d216ad46c75b5d`
 -	v2 Content-Length: 33.0 MB (32959177 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:59 GMT
 
 #### `d861457316fa213bad082bcb0d574402c458918886c35b4cb8c5626ddef18288`
 
@@ -1568,7 +1550,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:ca174b5ced7449932372b6b9015dae2c5552059c439448a9ac41113bc563881d`
 -	v2 Content-Length: 9.0 MB (9026511 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:45 GMT
 
 #### `56aaa2e989131b1d4be370159f822f0e0695a709b06af661d751c6694c778163`
 
@@ -1603,7 +1584,6 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -1654,7 +1634,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 100.4 MB (100431899 bytes)
 -	v2 Blob: `sha256:976d68890ec55339bea61acc8ee04c10313d6e4a456255fe95f9d0ef8ca65b9f`
 -	v2 Content-Length: 33.4 MB (33351002 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:29 GMT
 
 #### `498f2a1c38688dde86c1cce69db317d8bf338faa227dabebac3ef977ed11cca8`
 
@@ -1919,7 +1898,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -2010,7 +1988,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -2024,7 +2001,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -2104,7 +2080,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.8 MB (90817279 bytes)
 -	v2 Blob: `sha256:4fabeb6a95c0d4344b6eacc331d9f237f91e65c8706dcd4d90d216ad46c75b5d`
 -	v2 Content-Length: 33.0 MB (32959177 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:59 GMT
 
 #### `d861457316fa213bad082bcb0d574402c458918886c35b4cb8c5626ddef18288`
 
@@ -2119,7 +2094,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:ca174b5ced7449932372b6b9015dae2c5552059c439448a9ac41113bc563881d`
 -	v2 Content-Length: 9.0 MB (9026511 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:45 GMT
 
 #### `56aaa2e989131b1d4be370159f822f0e0695a709b06af661d751c6694c778163`
 
@@ -2154,7 +2128,6 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -2205,7 +2178,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 100.4 MB (100431899 bytes)
 -	v2 Blob: `sha256:976d68890ec55339bea61acc8ee04c10313d6e4a456255fe95f9d0ef8ca65b9f`
 -	v2 Content-Length: 33.4 MB (33351002 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:29 GMT
 
 #### `498f2a1c38688dde86c1cce69db317d8bf338faa227dabebac3ef977ed11cca8`
 
@@ -2470,7 +2442,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -2561,7 +2532,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -2575,7 +2545,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -2655,7 +2624,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.8 MB (90817279 bytes)
 -	v2 Blob: `sha256:4fabeb6a95c0d4344b6eacc331d9f237f91e65c8706dcd4d90d216ad46c75b5d`
 -	v2 Content-Length: 33.0 MB (32959177 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:59 GMT
 
 #### `d861457316fa213bad082bcb0d574402c458918886c35b4cb8c5626ddef18288`
 
@@ -2670,7 +2638,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:ca174b5ced7449932372b6b9015dae2c5552059c439448a9ac41113bc563881d`
 -	v2 Content-Length: 9.0 MB (9026511 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:45 GMT
 
 #### `56aaa2e989131b1d4be370159f822f0e0695a709b06af661d751c6694c778163`
 
@@ -2705,7 +2672,6 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -2756,7 +2722,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 100.4 MB (100431899 bytes)
 -	v2 Blob: `sha256:976d68890ec55339bea61acc8ee04c10313d6e4a456255fe95f9d0ef8ca65b9f`
 -	v2 Content-Length: 33.4 MB (33351002 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:29 GMT
 
 #### `498f2a1c38688dde86c1cce69db317d8bf338faa227dabebac3ef977ed11cca8`
 
@@ -3021,7 +2986,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -3112,7 +3076,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -3126,7 +3089,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -3206,7 +3168,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.8 MB (90817279 bytes)
 -	v2 Blob: `sha256:4fabeb6a95c0d4344b6eacc331d9f237f91e65c8706dcd4d90d216ad46c75b5d`
 -	v2 Content-Length: 33.0 MB (32959177 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:59 GMT
 
 #### `d861457316fa213bad082bcb0d574402c458918886c35b4cb8c5626ddef18288`
 
@@ -3221,7 +3182,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:ca174b5ced7449932372b6b9015dae2c5552059c439448a9ac41113bc563881d`
 -	v2 Content-Length: 9.0 MB (9026511 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:45 GMT
 
 #### `56aaa2e989131b1d4be370159f822f0e0695a709b06af661d751c6694c778163`
 
@@ -3256,7 +3216,6 @@ RUN a2enmod rewrite
 -	Virtual Size: 30.0 B
 -	v2 Blob: `sha256:4e0ed4637d690ab5e54fb2e8b94accd8e2ae555192076d4476b4fb5e8e1c3a47`
 -	v2 Content-Length: 294.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:37 GMT
 
 #### `1202cbb66e0081e59b859b5f9ac925a476dd95538ae5ff287655e1600c16520d`
 
@@ -3307,7 +3266,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 100.4 MB (100431899 bytes)
 -	v2 Blob: `sha256:976d68890ec55339bea61acc8ee04c10313d6e4a456255fe95f9d0ef8ca65b9f`
 -	v2 Content-Length: 33.4 MB (33351002 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:29 GMT
 
 #### `498f2a1c38688dde86c1cce69db317d8bf338faa227dabebac3ef977ed11cca8`
 
@@ -3488,7 +3446,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -3579,7 +3536,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -3593,7 +3549,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -3705,7 +3660,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.7 MB (90703781 bytes)
 -	v2 Blob: `sha256:72b092bceaa74eb493ca5934cd01717e9e047825718f539692cd3d929659daf2`
 -	v2 Content-Length: 32.9 MB (32936204 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:45:20 GMT
 
 #### `e16957ab0e063f96b4df91758b28ce549bad54df66d63fc01cdc5d866ed99acf`
 
@@ -3720,7 +3674,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33531582 bytes)
 -	v2 Blob: `sha256:983dc4990105efa59a7c1786c6c340fd91153628b870f811c361e2a327f104ae`
 -	v2 Content-Length: 9.0 MB (9026411 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:45:06 GMT
 
 #### `c909b4904fc6ba86737592ab2a6616c488a596df79231042912a0a84f9d3dd6f`
 
@@ -3973,7 +3926,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -4064,7 +4016,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -4078,7 +4029,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -4190,7 +4140,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.7 MB (90703781 bytes)
 -	v2 Blob: `sha256:72b092bceaa74eb493ca5934cd01717e9e047825718f539692cd3d929659daf2`
 -	v2 Content-Length: 32.9 MB (32936204 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:45:20 GMT
 
 #### `e16957ab0e063f96b4df91758b28ce549bad54df66d63fc01cdc5d866ed99acf`
 
@@ -4205,7 +4154,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33531582 bytes)
 -	v2 Blob: `sha256:983dc4990105efa59a7c1786c6c340fd91153628b870f811c361e2a327f104ae`
 -	v2 Content-Length: 9.0 MB (9026411 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:45:06 GMT
 
 #### `c909b4904fc6ba86737592ab2a6616c488a596df79231042912a0a84f9d3dd6f`
 
@@ -4458,7 +4406,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -4549,7 +4496,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -4563,7 +4509,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -4675,7 +4620,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.7 MB (90703781 bytes)
 -	v2 Blob: `sha256:72b092bceaa74eb493ca5934cd01717e9e047825718f539692cd3d929659daf2`
 -	v2 Content-Length: 32.9 MB (32936204 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:45:20 GMT
 
 #### `e16957ab0e063f96b4df91758b28ce549bad54df66d63fc01cdc5d866ed99acf`
 
@@ -4690,7 +4634,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33531582 bytes)
 -	v2 Blob: `sha256:983dc4990105efa59a7c1786c6c340fd91153628b870f811c361e2a327f104ae`
 -	v2 Content-Length: 9.0 MB (9026411 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:45:06 GMT
 
 #### `c909b4904fc6ba86737592ab2a6616c488a596df79231042912a0a84f9d3dd6f`
 
@@ -5027,7 +4970,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -5118,7 +5060,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -5132,7 +5073,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -5212,7 +5152,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.8 MB (90817279 bytes)
 -	v2 Blob: `sha256:4fabeb6a95c0d4344b6eacc331d9f237f91e65c8706dcd4d90d216ad46c75b5d`
 -	v2 Content-Length: 33.0 MB (32959177 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:59 GMT
 
 #### `d861457316fa213bad082bcb0d574402c458918886c35b4cb8c5626ddef18288`
 
@@ -5227,7 +5166,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:ca174b5ced7449932372b6b9015dae2c5552059c439448a9ac41113bc563881d`
 -	v2 Content-Length: 9.0 MB (9026511 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:45 GMT
 
 #### `56aaa2e989131b1d4be370159f822f0e0695a709b06af661d751c6694c778163`
 
@@ -5593,7 +5531,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -5684,7 +5621,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -5698,7 +5634,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -5778,7 +5713,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.8 MB (90817279 bytes)
 -	v2 Blob: `sha256:4fabeb6a95c0d4344b6eacc331d9f237f91e65c8706dcd4d90d216ad46c75b5d`
 -	v2 Content-Length: 33.0 MB (32959177 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:59 GMT
 
 #### `d861457316fa213bad082bcb0d574402c458918886c35b4cb8c5626ddef18288`
 
@@ -5793,7 +5727,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:ca174b5ced7449932372b6b9015dae2c5552059c439448a9ac41113bc563881d`
 -	v2 Content-Length: 9.0 MB (9026511 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:45 GMT
 
 #### `56aaa2e989131b1d4be370159f822f0e0695a709b06af661d751c6694c778163`
 
@@ -6159,7 +6092,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -6250,7 +6182,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -6264,7 +6195,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -6344,7 +6274,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.8 MB (90817279 bytes)
 -	v2 Blob: `sha256:4fabeb6a95c0d4344b6eacc331d9f237f91e65c8706dcd4d90d216ad46c75b5d`
 -	v2 Content-Length: 33.0 MB (32959177 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:59 GMT
 
 #### `d861457316fa213bad082bcb0d574402c458918886c35b4cb8c5626ddef18288`
 
@@ -6359,7 +6288,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:ca174b5ced7449932372b6b9015dae2c5552059c439448a9ac41113bc563881d`
 -	v2 Content-Length: 9.0 MB (9026511 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:45 GMT
 
 #### `56aaa2e989131b1d4be370159f822f0e0695a709b06af661d751c6694c778163`
 
@@ -6725,7 +6653,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -6816,7 +6743,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -6830,7 +6756,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -6910,7 +6835,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.8 MB (90817279 bytes)
 -	v2 Blob: `sha256:4fabeb6a95c0d4344b6eacc331d9f237f91e65c8706dcd4d90d216ad46c75b5d`
 -	v2 Content-Length: 33.0 MB (32959177 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:59 GMT
 
 #### `d861457316fa213bad082bcb0d574402c458918886c35b4cb8c5626ddef18288`
 
@@ -6925,7 +6849,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:ca174b5ced7449932372b6b9015dae2c5552059c439448a9ac41113bc563881d`
 -	v2 Content-Length: 9.0 MB (9026511 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:42:45 GMT
 
 #### `56aaa2e989131b1d4be370159f822f0e0695a709b06af661d751c6694c778163`
 
@@ -7207,7 +7130,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -7298,7 +7220,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -7312,7 +7233,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -7424,7 +7344,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.7 MB (90703781 bytes)
 -	v2 Blob: `sha256:72b092bceaa74eb493ca5934cd01717e9e047825718f539692cd3d929659daf2`
 -	v2 Content-Length: 32.9 MB (32936204 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:45:20 GMT
 
 #### `e16957ab0e063f96b4df91758b28ce549bad54df66d63fc01cdc5d866ed99acf`
 
@@ -7439,7 +7358,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33531582 bytes)
 -	v2 Blob: `sha256:983dc4990105efa59a7c1786c6c340fd91153628b870f811c361e2a327f104ae`
 -	v2 Content-Length: 9.0 MB (9026411 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:45:06 GMT
 
 #### `c909b4904fc6ba86737592ab2a6616c488a596df79231042912a0a84f9d3dd6f`
 
@@ -7475,7 +7393,6 @@ RUN pecl install APCu-4.0.10 \
 -	Virtual Size: 985.6 KB (985603 bytes)
 -	v2 Blob: `sha256:cf736053254b1a80816752d954f0b2db6b4e1bdb6c1157ff39d997beebbb9fba`
 -	v2 Content-Length: 363.5 KB (363539 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:47:54 GMT
 
 #### `c687f4ac7d3355b480fb6eef7ba411051c3f8c1da5528bf71c217072ae80fd15`
 
@@ -7526,7 +7443,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 72.1 MB (72083562 bytes)
 -	v2 Blob: `sha256:46c12ffefef6bfbafc52c8e443115e9e3f8e04bc44ac6fb9c49df6cf79e26e33`
 -	v2 Content-Length: 27.0 MB (27025048 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:47:43 GMT
 
 #### `ea68ba0ecb6c2804fd6b010ecf0e43894981d15150446bc0d48cca18a9bc04d9`
 
@@ -7707,7 +7623,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -7798,7 +7713,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -7812,7 +7726,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -7924,7 +7837,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 90.7 MB (90703781 bytes)
 -	v2 Blob: `sha256:72b092bceaa74eb493ca5934cd01717e9e047825718f539692cd3d929659daf2`
 -	v2 Content-Length: 32.9 MB (32936204 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:45:20 GMT
 
 #### `e16957ab0e063f96b4df91758b28ce549bad54df66d63fc01cdc5d866ed99acf`
 
@@ -7939,7 +7851,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33531582 bytes)
 -	v2 Blob: `sha256:983dc4990105efa59a7c1786c6c340fd91153628b870f811c361e2a327f104ae`
 -	v2 Content-Length: 9.0 MB (9026411 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:45:06 GMT
 
 #### `c909b4904fc6ba86737592ab2a6616c488a596df79231042912a0a84f9d3dd6f`
 
@@ -7975,7 +7886,6 @@ RUN pecl install APCu-4.0.10 \
 -	Virtual Size: 985.6 KB (985603 bytes)
 -	v2 Blob: `sha256:cf736053254b1a80816752d954f0b2db6b4e1bdb6c1157ff39d997beebbb9fba`
 -	v2 Content-Length: 363.5 KB (363539 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:47:54 GMT
 
 #### `c687f4ac7d3355b480fb6eef7ba411051c3f8c1da5528bf71c217072ae80fd15`
 
@@ -8026,7 +7936,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 72.1 MB (72083562 bytes)
 -	v2 Blob: `sha256:46c12ffefef6bfbafc52c8e443115e9e3f8e04bc44ac6fb9c49df6cf79e26e33`
 -	v2 Content-Length: 27.0 MB (27025048 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:47:43 GMT
 
 #### `ea68ba0ecb6c2804fd6b010ecf0e43894981d15150446bc0d48cca18a9bc04d9`
 
@@ -8291,7 +8200,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -8382,7 +8290,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -8396,7 +8303,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -8492,7 +8398,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -8528,7 +8433,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -8858,7 +8762,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -8949,7 +8852,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -8963,7 +8865,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -9059,7 +8960,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -9095,7 +8995,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -9425,7 +9324,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -9516,7 +9414,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -9530,7 +9427,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -9626,7 +9522,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -9662,7 +9557,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -9992,7 +9886,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -10083,7 +9976,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -10097,7 +9989,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -10193,7 +10084,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -10229,7 +10119,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -10475,7 +10364,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -10566,7 +10454,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -10580,7 +10467,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -10693,7 +10579,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -10729,7 +10614,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:950dc08454943a619601c965d57498c2cd6d65a01e1ec0d814b0e811d1048707`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:34 GMT
 
 #### `d71d3b45ff2388340a15f9a952d1bd3add89dc3a5850e8479eaaa6daf54005c4`
 
@@ -10976,7 +10860,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -11067,7 +10950,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -11081,7 +10963,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -11194,7 +11075,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -11230,7 +11110,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:950dc08454943a619601c965d57498c2cd6d65a01e1ec0d814b0e811d1048707`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:34 GMT
 
 #### `d71d3b45ff2388340a15f9a952d1bd3add89dc3a5850e8479eaaa6daf54005c4`
 
@@ -11561,7 +11440,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -11652,7 +11530,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -11666,7 +11543,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -11762,7 +11638,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -11798,7 +11673,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -12128,7 +12002,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -12219,7 +12092,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -12233,7 +12105,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -12329,7 +12200,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -12365,7 +12235,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -12695,7 +12564,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -12786,7 +12654,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -12800,7 +12667,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -12896,7 +12762,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -12932,7 +12797,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -13262,7 +13126,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -13353,7 +13216,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -13367,7 +13229,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -13463,7 +13324,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -13499,7 +13359,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -13829,7 +13688,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -13920,7 +13778,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -13934,7 +13791,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -14030,7 +13886,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -14066,7 +13921,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -14396,7 +14250,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -14487,7 +14340,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -14501,7 +14353,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -14597,7 +14448,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -14633,7 +14483,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -14879,7 +14728,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -14970,7 +14818,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -14984,7 +14831,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -15097,7 +14943,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -15133,7 +14978,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:950dc08454943a619601c965d57498c2cd6d65a01e1ec0d814b0e811d1048707`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:34 GMT
 
 #### `d71d3b45ff2388340a15f9a952d1bd3add89dc3a5850e8479eaaa6daf54005c4`
 
@@ -15380,7 +15224,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -15471,7 +15314,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -15485,7 +15327,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -15598,7 +15439,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -15634,7 +15474,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:950dc08454943a619601c965d57498c2cd6d65a01e1ec0d814b0e811d1048707`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:34 GMT
 
 #### `d71d3b45ff2388340a15f9a952d1bd3add89dc3a5850e8479eaaa6daf54005c4`
 
@@ -15881,7 +15720,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -15972,7 +15810,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -15986,7 +15823,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -16099,7 +15935,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -16135,7 +15970,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:950dc08454943a619601c965d57498c2cd6d65a01e1ec0d814b0e811d1048707`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:34 GMT
 
 #### `d71d3b45ff2388340a15f9a952d1bd3add89dc3a5850e8479eaaa6daf54005c4`
 
@@ -16466,7 +16300,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -16557,7 +16390,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -16571,7 +16403,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -16667,7 +16498,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -16703,7 +16533,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -16782,7 +16611,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `4d7c9ff4fe88226df0e311cad3ef9e8640f26e31ff9e91674fba33b7955c6805`
 
@@ -17033,7 +16861,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -17124,7 +16951,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -17138,7 +16964,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -17234,7 +17059,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -17270,7 +17094,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -17349,7 +17172,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `4d7c9ff4fe88226df0e311cad3ef9e8640f26e31ff9e91674fba33b7955c6805`
 
@@ -17600,7 +17422,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -17691,7 +17512,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -17705,7 +17525,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -17801,7 +17620,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -17837,7 +17655,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -17916,7 +17733,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `4d7c9ff4fe88226df0e311cad3ef9e8640f26e31ff9e91674fba33b7955c6805`
 
@@ -18167,7 +17983,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -18258,7 +18073,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -18272,7 +18086,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -18368,7 +18181,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -18404,7 +18216,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -18483,7 +18294,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `4d7c9ff4fe88226df0e311cad3ef9e8640f26e31ff9e91674fba33b7955c6805`
 
@@ -18734,7 +18544,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -18825,7 +18634,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -18839,7 +18647,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -18935,7 +18742,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -18971,7 +18777,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -19050,7 +18855,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `4d7c9ff4fe88226df0e311cad3ef9e8640f26e31ff9e91674fba33b7955c6805`
 
@@ -19301,7 +19105,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -19392,7 +19195,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -19406,7 +19208,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -19502,7 +19303,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -19538,7 +19338,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -19617,7 +19416,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `4d7c9ff4fe88226df0e311cad3ef9e8640f26e31ff9e91674fba33b7955c6805`
 
@@ -19868,7 +19666,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -19959,7 +19756,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -19973,7 +19769,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -20069,7 +19864,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -20105,7 +19899,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -20184,7 +19977,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `4d7c9ff4fe88226df0e311cad3ef9e8640f26e31ff9e91674fba33b7955c6805`
 
@@ -20435,7 +20227,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -20526,7 +20317,6 @@ RUN buildDeps=" \
 -	Virtual Size: 152.8 MB (152765169 bytes)
 -	v2 Blob: `sha256:91e6991f7a343e98e3d4a2c06d3dbafa0d6aed905fb83ea5872b185f580a80ce`
 -	v2 Content-Length: 31.6 MB (31612064 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:55 GMT
 
 #### `6cf49b20533c2f67f444ffd53119657452d88fa7bbcb0bf89a2e58d043dae967`
 
@@ -20540,7 +20330,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -20636,7 +20425,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
 -	Virtual Size: 33.5 MB (33530966 bytes)
 -	v2 Blob: `sha256:cf1d760232b05f86c1dcf78f70b0f599714269d64eb9f33e327ae2118367fcad`
 -	v2 Content-Length: 9.0 MB (9026528 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:52 GMT
 
 #### `784bb845d5d68f8c4bb5ccb2076b525121354e720b678a438419a49254e99a06`
 
@@ -20672,7 +20460,6 @@ RUN pecl install APCu-4.0.10 redis memcached \
 -	Virtual Size: 2.8 MB (2824002 bytes)
 -	v2 Blob: `sha256:d2baa68757a51aec2d2468b19f188e129d124ba146b041bca82433633c93bcde`
 -	v2 Content-Length: 1.1 MB (1075399 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:48:42 GMT
 
 #### `b1231a4d9e2abfb8caf80d739487f158b8dac512e24e3559fac851a1617740e7`
 
@@ -20751,7 +20538,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `4d7c9ff4fe88226df0e311cad3ef9e8640f26e31ff9e91674fba33b7955c6805`
 
@@ -20918,7 +20704,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -21009,7 +20794,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -21023,7 +20807,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -21136,7 +20919,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -21172,7 +20954,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:950dc08454943a619601c965d57498c2cd6d65a01e1ec0d814b0e811d1048707`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:34 GMT
 
 #### `d71d3b45ff2388340a15f9a952d1bd3add89dc3a5850e8479eaaa6daf54005c4`
 
@@ -21238,7 +21019,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 77.5 MB (77452532 bytes)
 -	v2 Blob: `sha256:8e8539538e4512b6aa7125ade06e2acb6df885868710374eba697118a83274b7`
 -	v2 Content-Length: 25.0 MB (24965780 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:55:32 GMT
 
 #### `94b9595235056408e324fc8e2dee6a0526d924ba9aeba61a7bea4c7b38b5e6ec`
 
@@ -21252,7 +21032,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `1c79d4b7815b0373d33b677e7e7d791eef83b892c539df1c621f21b3c911bdc0`
 
@@ -21419,7 +21198,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -21510,7 +21288,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -21524,7 +21301,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -21637,7 +21413,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -21673,7 +21448,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:950dc08454943a619601c965d57498c2cd6d65a01e1ec0d814b0e811d1048707`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:34 GMT
 
 #### `d71d3b45ff2388340a15f9a952d1bd3add89dc3a5850e8479eaaa6daf54005c4`
 
@@ -21739,7 +21513,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 77.5 MB (77452532 bytes)
 -	v2 Blob: `sha256:8e8539538e4512b6aa7125ade06e2acb6df885868710374eba697118a83274b7`
 -	v2 Content-Length: 25.0 MB (24965780 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:55:32 GMT
 
 #### `94b9595235056408e324fc8e2dee6a0526d924ba9aeba61a7bea4c7b38b5e6ec`
 
@@ -21753,7 +21526,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `1c79d4b7815b0373d33b677e7e7d791eef83b892c539df1c621f21b3c911bdc0`
 
@@ -21920,7 +21692,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -22011,7 +21782,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -22025,7 +21795,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -22138,7 +21907,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -22174,7 +21942,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:950dc08454943a619601c965d57498c2cd6d65a01e1ec0d814b0e811d1048707`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:34 GMT
 
 #### `d71d3b45ff2388340a15f9a952d1bd3add89dc3a5850e8479eaaa6daf54005c4`
 
@@ -22240,7 +22007,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 77.5 MB (77452532 bytes)
 -	v2 Blob: `sha256:8e8539538e4512b6aa7125ade06e2acb6df885868710374eba697118a83274b7`
 -	v2 Content-Length: 25.0 MB (24965780 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:55:32 GMT
 
 #### `94b9595235056408e324fc8e2dee6a0526d924ba9aeba61a7bea4c7b38b5e6ec`
 
@@ -22254,7 +22020,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `1c79d4b7815b0373d33b677e7e7d791eef83b892c539df1c621f21b3c911bdc0`
 
@@ -22421,7 +22186,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:f167abe72281d9f4338559d2d735cf4f4b643a8a74cb7ffb08c3c711ebd22fcf`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:32:27 GMT
 
 #### `a5ff15e6e10ee04a2c2c14491886f1144fc5279d521b25244c8c600a3a9d8e5b`
 
@@ -22512,7 +22276,6 @@ RUN buildDeps=" \
 -	Virtual Size: 133.3 MB (133326435 bytes)
 -	v2 Blob: `sha256:11ad12d1f1db35c1fcd67c9e501254dfda165042da418bfdc97f51890f4ea382`
 -	v2 Content-Length: 25.1 MB (25132417 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:28 GMT
 
 #### `6acfd0a713ee601ec60ca04fa4012f8ac2e39a501b01fce7999bfaaa131ebc33`
 
@@ -22526,7 +22289,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -22639,7 +22401,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 92.9 MB (92907447 bytes)
 -	v2 Blob: `sha256:0a451470f0ff219575606bf6a83cbd8c8076fdb954c0236aa412d7c42106e5e1`
 -	v2 Content-Length: 33.8 MB (33792396 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:56 GMT
 
 #### `85c8be9dbbf6e1b90b8174c2cea7e2cfc84f811c6209e60cd5d3275bcda0f5fe`
 
@@ -22675,7 +22436,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:950dc08454943a619601c965d57498c2cd6d65a01e1ec0d814b0e811d1048707`
 -	v2 Content-Length: 332.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:50:34 GMT
 
 #### `d71d3b45ff2388340a15f9a952d1bd3add89dc3a5850e8479eaaa6daf54005c4`
 
@@ -22741,7 +22501,6 @@ RUN curl -fsSL -o owncloud.tar.bz2 \
 -	Virtual Size: 77.5 MB (77452532 bytes)
 -	v2 Blob: `sha256:8e8539538e4512b6aa7125ade06e2acb6df885868710374eba697118a83274b7`
 -	v2 Content-Length: 25.0 MB (24965780 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:55:32 GMT
 
 #### `94b9595235056408e324fc8e2dee6a0526d924ba9aeba61a7bea4c7b38b5e6ec`
 
@@ -22755,7 +22514,6 @@ COPY file:624ede6357f1a6dd043ac6d748bca8acb0657fa9cde58bec83c5be0285f32278 in /e
 -	Virtual Size: 175.0 B
 -	v2 Blob: `sha256:2bc27baafb34b0ccdf5c8533be974d9fecf2c3b201a0a343ed01f8afe2334f93`
 -	v2 Content-Length: 246.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:53:31 GMT
 
 #### `1c79d4b7815b0373d33b677e7e7d791eef83b892c539df1c621f21b3c911bdc0`
 

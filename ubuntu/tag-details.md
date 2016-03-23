@@ -80,7 +80,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -158,7 +157,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -236,7 +234,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -314,7 +311,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -768,7 +764,6 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:287750ad6625760ef25bd47da291cac277a7baa3345062658889a887e3b8e8f2`
 -	v2 Content-Length: 758.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:29:42 GMT
 
 #### `b22092cbe71356c61077501f31df49511bc53c9dbe00aceb5af3e869bc7d4abc`
 
@@ -782,7 +777,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1863 bytes)
 -	v2 Blob: `sha256:ca98bdf222fa2bddfe033130a5ce3ce7f23b5b61635b122c09662dd6942d7c0f`
 -	v2 Content-Length: 680.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:29:38 GMT
 
 #### `6ed4652370be8b2b3099ce40a9102e20c043f69a7953251511c85b776e31c61c`
 
@@ -846,7 +840,6 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:287750ad6625760ef25bd47da291cac277a7baa3345062658889a887e3b8e8f2`
 -	v2 Content-Length: 758.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:29:42 GMT
 
 #### `b22092cbe71356c61077501f31df49511bc53c9dbe00aceb5af3e869bc7d4abc`
 
@@ -860,7 +853,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1863 bytes)
 -	v2 Blob: `sha256:ca98bdf222fa2bddfe033130a5ce3ce7f23b5b61635b122c09662dd6942d7c0f`
 -	v2 Content-Length: 680.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:29:38 GMT
 
 #### `6ed4652370be8b2b3099ce40a9102e20c043f69a7953251511c85b776e31c61c`
 
@@ -924,7 +916,6 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:287750ad6625760ef25bd47da291cac277a7baa3345062658889a887e3b8e8f2`
 -	v2 Content-Length: 758.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:29:42 GMT
 
 #### `b22092cbe71356c61077501f31df49511bc53c9dbe00aceb5af3e869bc7d4abc`
 
@@ -938,7 +929,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1863 bytes)
 -	v2 Blob: `sha256:ca98bdf222fa2bddfe033130a5ce3ce7f23b5b61635b122c09662dd6942d7c0f`
 -	v2 Content-Length: 680.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:29:38 GMT
 
 #### `6ed4652370be8b2b3099ce40a9102e20c043f69a7953251511c85b776e31c61c`
 
@@ -1002,7 +992,6 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:606b08bdd0f39abcb0006fc193320cb50d6293c21ca08069696b9fdb75be2d75`
 -	v2 Content-Length: 760.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:30:38 GMT
 
 #### `794837a7e2e404491783eddf98d423f5bcfc6d8aa76def5d6d5a3de05ab107ff`
 
@@ -1080,7 +1069,6 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:606b08bdd0f39abcb0006fc193320cb50d6293c21ca08069696b9fdb75be2d75`
 -	v2 Content-Length: 760.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:30:38 GMT
 
 #### `794837a7e2e404491783eddf98d423f5bcfc6d8aa76def5d6d5a3de05ab107ff`
 
@@ -1158,7 +1146,6 @@ RUN set -xe \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:606b08bdd0f39abcb0006fc193320cb50d6293c21ca08069696b9fdb75be2d75`
 -	v2 Content-Length: 760.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:30:38 GMT
 
 #### `794837a7e2e404491783eddf98d423f5bcfc6d8aa76def5d6d5a3de05ab107ff`
 

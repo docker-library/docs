@@ -236,7 +236,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -621,7 +620,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -1006,7 +1004,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -1391,7 +1388,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -1776,7 +1772,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -2161,7 +2156,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -2546,7 +2540,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -2931,7 +2924,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -3181,7 +3173,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -3199,7 +3190,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -3323,7 +3313,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -3337,7 +3326,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `a0bef985f5d7807612e5d36571397677ff48ee7d310f5af8d56a1b9e568bb6f9`
 
@@ -3496,7 +3484,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ee88732cff42ac08a3c0024bc75967928bd92f13cb56bd3d7fec4ae845fe905d`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:02:34 GMT
 
 #### `0c90d1c4e691ef0f4565d4b334092fb667922f853111b98a4b3ad7aea77a8890`
 
@@ -3587,7 +3574,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -3605,7 +3591,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -3729,7 +3714,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -3743,7 +3727,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `a0bef985f5d7807612e5d36571397677ff48ee7d310f5af8d56a1b9e568bb6f9`
 
@@ -3902,7 +3885,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ee88732cff42ac08a3c0024bc75967928bd92f13cb56bd3d7fec4ae845fe905d`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:02:34 GMT
 
 #### `0c90d1c4e691ef0f4565d4b334092fb667922f853111b98a4b3ad7aea77a8890`
 
@@ -3993,7 +3975,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -4011,7 +3992,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -4135,7 +4115,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -4149,7 +4128,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `a0bef985f5d7807612e5d36571397677ff48ee7d310f5af8d56a1b9e568bb6f9`
 
@@ -4308,7 +4286,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ee88732cff42ac08a3c0024bc75967928bd92f13cb56bd3d7fec4ae845fe905d`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:02:34 GMT
 
 #### `0c90d1c4e691ef0f4565d4b334092fb667922f853111b98a4b3ad7aea77a8890`
 
@@ -4378,7 +4355,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44300304 bytes)
 -	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
 -	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
 
 #### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
 
@@ -4399,7 +4375,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122576525 bytes)
 -	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
 -	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
 
 #### `e5faec61f132a8dfdee0a48008df83f3181f6b40fbacd94051e4c32d92f2344c`
 
@@ -4427,7 +4402,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:e7e5c0273866c3344349361a79250029bd15f1afc853ff6fe0c3a9548b18f183`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 26 Jan 2016 19:07:20 GMT
 
 #### `bcf19863309cba2f70cc1c645a406179236b0f4f476f0ce6cc28aa00b0edb070`
 
@@ -4607,7 +4581,6 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 52.3 MB (52347789 bytes)
 -	v2 Blob: `sha256:bbc63f87975e00cdd462288a37c4ba746a0fa121ad19e7de3cc0a9b9dc722321`
 -	v2 Content-Length: 38.2 MB (38243177 bytes)
--	v2 Last-Modified: Tue, 26 Jan 2016 21:53:24 GMT
 
 #### `15988cb9bb1c1d0ff290e0309af9c493a850a8ae354c724a00f34be780ccab47`
 
@@ -4635,7 +4608,6 @@ RUN echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:e78c9773d871e3f214b53f27392f497e20e755cc734642ac56b16f6f2f0592bd`
 -	v2 Content-Length: 151.0 B
--	v2 Last-Modified: Tue, 26 Jan 2016 21:52:52 GMT
 
 #### `c2e54f0fd3ac34bd8f06627befc4d28d227a4dc737a4dc3d2b5a1df1523312f7`
 
@@ -4847,7 +4819,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44300304 bytes)
 -	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
 -	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
 
 #### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
 
@@ -4868,7 +4839,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122576525 bytes)
 -	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
 -	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
 
 #### `e5faec61f132a8dfdee0a48008df83f3181f6b40fbacd94051e4c32d92f2344c`
 
@@ -4896,7 +4866,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:e7e5c0273866c3344349361a79250029bd15f1afc853ff6fe0c3a9548b18f183`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 26 Jan 2016 19:07:20 GMT
 
 #### `bcf19863309cba2f70cc1c645a406179236b0f4f476f0ce6cc28aa00b0edb070`
 
@@ -5076,7 +5045,6 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 52.3 MB (52347789 bytes)
 -	v2 Blob: `sha256:bbc63f87975e00cdd462288a37c4ba746a0fa121ad19e7de3cc0a9b9dc722321`
 -	v2 Content-Length: 38.2 MB (38243177 bytes)
--	v2 Last-Modified: Tue, 26 Jan 2016 21:53:24 GMT
 
 #### `15988cb9bb1c1d0ff290e0309af9c493a850a8ae354c724a00f34be780ccab47`
 
@@ -5104,7 +5072,6 @@ RUN echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:e78c9773d871e3f214b53f27392f497e20e755cc734642ac56b16f6f2f0592bd`
 -	v2 Content-Length: 151.0 B
--	v2 Last-Modified: Tue, 26 Jan 2016 21:52:52 GMT
 
 #### `c2e54f0fd3ac34bd8f06627befc4d28d227a4dc737a4dc3d2b5a1df1523312f7`
 
@@ -5316,7 +5283,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44300304 bytes)
 -	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
 -	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
 
 #### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
 
@@ -5337,7 +5303,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122576525 bytes)
 -	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
 -	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
 
 #### `e5faec61f132a8dfdee0a48008df83f3181f6b40fbacd94051e4c32d92f2344c`
 
@@ -5365,7 +5330,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:e7e5c0273866c3344349361a79250029bd15f1afc853ff6fe0c3a9548b18f183`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 26 Jan 2016 19:07:20 GMT
 
 #### `bcf19863309cba2f70cc1c645a406179236b0f4f476f0ce6cc28aa00b0edb070`
 
@@ -5545,7 +5509,6 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 52.3 MB (52347789 bytes)
 -	v2 Blob: `sha256:bbc63f87975e00cdd462288a37c4ba746a0fa121ad19e7de3cc0a9b9dc722321`
 -	v2 Content-Length: 38.2 MB (38243177 bytes)
--	v2 Last-Modified: Tue, 26 Jan 2016 21:53:24 GMT
 
 #### `15988cb9bb1c1d0ff290e0309af9c493a850a8ae354c724a00f34be780ccab47`
 
@@ -5573,7 +5536,6 @@ RUN echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:e78c9773d871e3f214b53f27392f497e20e755cc734642ac56b16f6f2f0592bd`
 -	v2 Content-Length: 151.0 B
--	v2 Last-Modified: Tue, 26 Jan 2016 21:52:52 GMT
 
 #### `c2e54f0fd3ac34bd8f06627befc4d28d227a4dc737a4dc3d2b5a1df1523312f7`
 
@@ -5785,7 +5747,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44300304 bytes)
 -	v2 Blob: `sha256:9269ba3950bb316abe52dc7010b0758b760e887a0d41af177162a55b2722bab7`
 -	v2 Content-Length: 18.5 MB (18528188 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:11:07 GMT
 
 #### `0288ae931294ce04f5d69c60146faca7d9be8de4004421d650f4227fa60bd92b`
 
@@ -5806,7 +5767,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122576525 bytes)
 -	v2 Blob: `sha256:6ecee6444751349ab3731ee4e10f40b93e98af06a70349ca66962b2c80c5cce2`
 -	v2 Content-Length: 42.5 MB (42492371 bytes)
--	v2 Last-Modified: Mon, 25 Jan 2016 23:12:53 GMT
 
 #### `e5faec61f132a8dfdee0a48008df83f3181f6b40fbacd94051e4c32d92f2344c`
 
@@ -5834,7 +5794,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:e7e5c0273866c3344349361a79250029bd15f1afc853ff6fe0c3a9548b18f183`
 -	v2 Content-Length: 218.0 B
--	v2 Last-Modified: Tue, 26 Jan 2016 19:07:20 GMT
 
 #### `bcf19863309cba2f70cc1c645a406179236b0f4f476f0ce6cc28aa00b0edb070`
 
@@ -6014,7 +5973,6 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 52.3 MB (52347789 bytes)
 -	v2 Blob: `sha256:bbc63f87975e00cdd462288a37c4ba746a0fa121ad19e7de3cc0a9b9dc722321`
 -	v2 Content-Length: 38.2 MB (38243177 bytes)
--	v2 Last-Modified: Tue, 26 Jan 2016 21:53:24 GMT
 
 #### `15988cb9bb1c1d0ff290e0309af9c493a850a8ae354c724a00f34be780ccab47`
 
@@ -6042,7 +6000,6 @@ RUN echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
 -	Virtual Size: 23.0 B
 -	v2 Blob: `sha256:e78c9773d871e3f214b53f27392f497e20e755cc734642ac56b16f6f2f0592bd`
 -	v2 Content-Length: 151.0 B
--	v2 Last-Modified: Tue, 26 Jan 2016 21:52:52 GMT
 
 #### `c2e54f0fd3ac34bd8f06627befc4d28d227a4dc737a4dc3d2b5a1df1523312f7`
 
@@ -6410,7 +6367,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -6512,7 +6468,6 @@ RUN gem install bundler
 -	Virtual Size: 1.2 MB (1181375 bytes)
 -	v2 Blob: `sha256:513c35db846202a647315ad467229933067b08e8386654a1dad808fcc3e9afcf`
 -	v2 Content-Length: 522.7 KB (522663 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:05:54 GMT
 
 #### `7b3618c246c0403d36f21a0a5cafdf7b8c8619047f488cd6e08c2dea8bf7dc54`
 
@@ -6795,7 +6750,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -6897,7 +6851,6 @@ RUN gem install bundler
 -	Virtual Size: 1.2 MB (1181375 bytes)
 -	v2 Blob: `sha256:513c35db846202a647315ad467229933067b08e8386654a1dad808fcc3e9afcf`
 -	v2 Content-Length: 522.7 KB (522663 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:05:54 GMT
 
 #### `7b3618c246c0403d36f21a0a5cafdf7b8c8619047f488cd6e08c2dea8bf7dc54`
 
@@ -7180,7 +7133,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -7282,7 +7234,6 @@ RUN gem install bundler
 -	Virtual Size: 1.2 MB (1181375 bytes)
 -	v2 Blob: `sha256:513c35db846202a647315ad467229933067b08e8386654a1dad808fcc3e9afcf`
 -	v2 Content-Length: 522.7 KB (522663 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:05:54 GMT
 
 #### `7b3618c246c0403d36f21a0a5cafdf7b8c8619047f488cd6e08c2dea8bf7dc54`
 
@@ -7565,7 +7516,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `75e636acaa49cbb44da31a77c1535e933399da44b5694c8014a42f0da797354c`
 
@@ -7667,7 +7617,6 @@ RUN gem install bundler
 -	Virtual Size: 1.2 MB (1181375 bytes)
 -	v2 Blob: `sha256:513c35db846202a647315ad467229933067b08e8386654a1dad808fcc3e9afcf`
 -	v2 Content-Length: 522.7 KB (522663 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:05:54 GMT
 
 #### `7b3618c246c0403d36f21a0a5cafdf7b8c8619047f488cd6e08c2dea8bf7dc54`
 
@@ -7815,7 +7764,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -7833,7 +7781,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -7957,7 +7904,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -7971,7 +7917,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `a0bef985f5d7807612e5d36571397677ff48ee7d310f5af8d56a1b9e568bb6f9`
 
@@ -8027,7 +7972,6 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 37.5 MB (37465891 bytes)
 -	v2 Blob: `sha256:5ef3def467b32812f53fa077c028cb880988638a64d30ef6d920e760a331d130`
 -	v2 Content-Length: 21.6 MB (21608733 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:07:26 GMT
 
 #### `9e242a87e1ddecadef97164ea0ba6d0e330ef9cec27ad7683c59991903be2406`
 
@@ -8130,7 +8074,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ab83d22c928c605dedcfb598139b4eea3584d7b4cab44c76bf4160f563212271`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:06:56 GMT
 
 #### `7a1550616e68bf213145e36773f1266a9923998462f58d4a8419051b04c67a90`
 
@@ -8221,7 +8164,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -8239,7 +8181,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -8363,7 +8304,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -8377,7 +8317,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `a0bef985f5d7807612e5d36571397677ff48ee7d310f5af8d56a1b9e568bb6f9`
 
@@ -8433,7 +8372,6 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 37.5 MB (37465891 bytes)
 -	v2 Blob: `sha256:5ef3def467b32812f53fa077c028cb880988638a64d30ef6d920e760a331d130`
 -	v2 Content-Length: 21.6 MB (21608733 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:07:26 GMT
 
 #### `9e242a87e1ddecadef97164ea0ba6d0e330ef9cec27ad7683c59991903be2406`
 
@@ -8536,7 +8474,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ab83d22c928c605dedcfb598139b4eea3584d7b4cab44c76bf4160f563212271`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:06:56 GMT
 
 #### `7a1550616e68bf213145e36773f1266a9923998462f58d4a8419051b04c67a90`
 
@@ -8627,7 +8564,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -8645,7 +8581,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -8769,7 +8704,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -8783,7 +8717,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `a0bef985f5d7807612e5d36571397677ff48ee7d310f5af8d56a1b9e568bb6f9`
 
@@ -8839,7 +8772,6 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 37.5 MB (37465891 bytes)
 -	v2 Blob: `sha256:5ef3def467b32812f53fa077c028cb880988638a64d30ef6d920e760a331d130`
 -	v2 Content-Length: 21.6 MB (21608733 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:07:26 GMT
 
 #### `9e242a87e1ddecadef97164ea0ba6d0e330ef9cec27ad7683c59991903be2406`
 
@@ -8942,7 +8874,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ab83d22c928c605dedcfb598139b4eea3584d7b4cab44c76bf4160f563212271`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:06:56 GMT
 
 #### `7a1550616e68bf213145e36773f1266a9923998462f58d4a8419051b04c67a90`
 
@@ -9117,7 +9048,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -9135,7 +9065,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -9259,7 +9188,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -9273,7 +9201,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `a0bef985f5d7807612e5d36571397677ff48ee7d310f5af8d56a1b9e568bb6f9`
 
@@ -9329,7 +9256,6 @@ RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads
 -	Virtual Size: 37.5 MB (37465891 bytes)
 -	v2 Blob: `sha256:5ef3def467b32812f53fa077c028cb880988638a64d30ef6d920e760a331d130`
 -	v2 Content-Length: 21.6 MB (21608733 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:07:26 GMT
 
 #### `9e242a87e1ddecadef97164ea0ba6d0e330ef9cec27ad7683c59991903be2406`
 
@@ -9432,7 +9358,6 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ab83d22c928c605dedcfb598139b4eea3584d7b4cab44c76bf4160f563212271`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:06:56 GMT
 
 #### `7a1550616e68bf213145e36773f1266a9923998462f58d4a8419051b04c67a90`
 

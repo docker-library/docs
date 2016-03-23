@@ -192,7 +192,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -223,7 +222,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:a85a11ececa823ad962606f2a76675f47e978843247c712924ef9c8f0edbd06a`
 -	v2 Content-Length: 151.7 MB (151653701 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:23 GMT
 
 #### `4d4473ca115e746d43921ad3eba18544450f6c40b370f3cdcce980a2c2b991f2`
 
@@ -445,7 +443,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -476,7 +473,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:a85a11ececa823ad962606f2a76675f47e978843247c712924ef9c8f0edbd06a`
 -	v2 Content-Length: 151.7 MB (151653701 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:23 GMT
 
 #### `4d4473ca115e746d43921ad3eba18544450f6c40b370f3cdcce980a2c2b991f2`
 
@@ -548,7 +544,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:693dab8df30ac2e716ad5316968b4cfb0de68e4a5c3a854636c2db33124a8f6e`
 -	v2 Content-Length: 3.4 MB (3406800 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:41 GMT
 
 ## `ros:indigo-robot`
 
@@ -728,7 +723,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -759,7 +753,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:a85a11ececa823ad962606f2a76675f47e978843247c712924ef9c8f0edbd06a`
 -	v2 Content-Length: 151.7 MB (151653701 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:23 GMT
 
 #### `4d4473ca115e746d43921ad3eba18544450f6c40b370f3cdcce980a2c2b991f2`
 
@@ -831,7 +824,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:693dab8df30ac2e716ad5316968b4cfb0de68e4a5c3a854636c2db33124a8f6e`
 -	v2 Content-Length: 3.4 MB (3406800 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:41 GMT
 
 #### `11203ae4cc3dc0fd07105505cfd274135e1a147ac76403556dd7ee2eba80d0cd`
 
@@ -1041,7 +1033,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -1072,7 +1063,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:a85a11ececa823ad962606f2a76675f47e978843247c712924ef9c8f0edbd06a`
 -	v2 Content-Length: 151.7 MB (151653701 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:23 GMT
 
 #### `4d4473ca115e746d43921ad3eba18544450f6c40b370f3cdcce980a2c2b991f2`
 
@@ -1144,7 +1134,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:693dab8df30ac2e716ad5316968b4cfb0de68e4a5c3a854636c2db33124a8f6e`
 -	v2 Content-Length: 3.4 MB (3406800 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:41 GMT
 
 #### `11203ae4cc3dc0fd07105505cfd274135e1a147ac76403556dd7ee2eba80d0cd`
 
@@ -1174,7 +1163,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 920.4 MB (920444121 bytes)
 -	v2 Blob: `sha256:c8d1eef9d61694feb0d62818d1317fc16547b7ffdf7a7e1c6f751fe80200522e`
 -	v2 Content-Length: 267.8 MB (267792358 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:15:08 GMT
 
 ## `ros:indigo`
 
@@ -1354,7 +1342,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -1385,7 +1372,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:a85a11ececa823ad962606f2a76675f47e978843247c712924ef9c8f0edbd06a`
 -	v2 Content-Length: 151.7 MB (151653701 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:23 GMT
 
 #### `4d4473ca115e746d43921ad3eba18544450f6c40b370f3cdcce980a2c2b991f2`
 
@@ -1457,7 +1443,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:693dab8df30ac2e716ad5316968b4cfb0de68e4a5c3a854636c2db33124a8f6e`
 -	v2 Content-Length: 3.4 MB (3406800 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:41 GMT
 
 ## `ros:latest`
 
@@ -1637,7 +1622,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y\
 -	Virtual Size: 89.9 MB (89899057 bytes)
 -	v2 Blob: `sha256:1cfaf3e2ddc686c1e76553c3ce4f1076ea6e88ac0358772644f508e03524b7fc`
 -	v2 Content-Length: 31.9 MB (31922276 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:48 GMT
 
 #### `9b794a733c5b9ade1e1d66fa63f7cb9241e1fdcdf69125615cb410d296bad5d7`
 
@@ -1668,7 +1652,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 531.2 MB (531192319 bytes)
 -	v2 Blob: `sha256:a85a11ececa823ad962606f2a76675f47e978843247c712924ef9c8f0edbd06a`
 -	v2 Content-Length: 151.7 MB (151653701 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:11:23 GMT
 
 #### `4d4473ca115e746d43921ad3eba18544450f6c40b370f3cdcce980a2c2b991f2`
 
@@ -1740,7 +1723,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.5 MB (14460833 bytes)
 -	v2 Blob: `sha256:693dab8df30ac2e716ad5316968b4cfb0de68e4a5c3a854636c2db33124a8f6e`
 -	v2 Content-Length: 3.4 MB (3406800 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:12:41 GMT
 
 ## `ros:jade-ros-core`
 
@@ -2276,7 +2258,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.6 MB (14616075 bytes)
 -	v2 Blob: `sha256:8ea1e17243fa4e65833400ac54ade6f21fe36530404fd0847771b77f0d965fdc`
 -	v2 Content-Length: 3.4 MB (3420737 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:17:28 GMT
 
 ## `ros:jade-robot`
 
@@ -2559,7 +2540,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.6 MB (14616075 bytes)
 -	v2 Blob: `sha256:8ea1e17243fa4e65833400ac54ade6f21fe36530404fd0847771b77f0d965fdc`
 -	v2 Content-Length: 3.4 MB (3420737 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:17:28 GMT
 
 #### `3bd127686ae710ee4bbd15947c9d93c15e905eb0c8621947ac97a6ee863e8063`
 
@@ -2872,7 +2852,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.6 MB (14616075 bytes)
 -	v2 Blob: `sha256:8ea1e17243fa4e65833400ac54ade6f21fe36530404fd0847771b77f0d965fdc`
 -	v2 Content-Length: 3.4 MB (3420737 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:17:28 GMT
 
 #### `3bd127686ae710ee4bbd15947c9d93c15e905eb0c8621947ac97a6ee863e8063`
 
@@ -2902,7 +2881,6 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 919.6 MB (919631486 bytes)
 -	v2 Blob: `sha256:106bbdcbbf0d5adfbfa4c27b79a741a23aab38b40b906cc373fd93ed320dd71a`
 -	v2 Content-Length: 267.6 MB (267566689 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:19:53 GMT
 
 ## `ros:jade`
 
@@ -3185,4 +3163,3 @@ RUN apt-get update && apt-get install -y\
 -	Virtual Size: 14.6 MB (14616075 bytes)
 -	v2 Blob: `sha256:8ea1e17243fa4e65833400ac54ade6f21fe36530404fd0847771b77f0d965fdc`
 -	v2 Content-Length: 3.4 MB (3420737 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 21:17:28 GMT

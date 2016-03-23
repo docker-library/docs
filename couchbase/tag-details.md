@@ -156,7 +156,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:0fceb742402392030ea6bd155ed32a12f60062ad7ec61598b8bdc6250c8ca068`
 -	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:32 GMT
 
 #### `c45f6aa0b4ce89826a116cfbcac92ac6ecef5135651f330fb998be715168b996`
 
@@ -393,7 +392,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:0fceb742402392030ea6bd155ed32a12f60062ad7ec61598b8bdc6250c8ca068`
 -	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:32 GMT
 
 #### `c45f6aa0b4ce89826a116cfbcac92ac6ecef5135651f330fb998be715168b996`
 
@@ -630,7 +628,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:0fceb742402392030ea6bd155ed32a12f60062ad7ec61598b8bdc6250c8ca068`
 -	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:32 GMT
 
 #### `c45f6aa0b4ce89826a116cfbcac92ac6ecef5135651f330fb998be715168b996`
 
@@ -867,7 +864,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:0fceb742402392030ea6bd155ed32a12f60062ad7ec61598b8bdc6250c8ca068`
 -	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:32 GMT
 
 #### `c45f6aa0b4ce89826a116cfbcac92ac6ecef5135651f330fb998be715168b996`
 
@@ -2082,7 +2078,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:8b78846ef35bb08f663538ad2059b919ad9929fdcfceb66865d905bc60d4236b`
 -	v2 Content-Length: 338.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:31:00 GMT
 
 #### `811bf0f38afbc2b1a93d4ecf3c4f5c23a05e3973d51a0bb73e09e22827fafc29`
 
@@ -2319,7 +2314,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:8b78846ef35bb08f663538ad2059b919ad9929fdcfceb66865d905bc60d4236b`
 -	v2 Content-Length: 338.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:31:00 GMT
 
 #### `811bf0f38afbc2b1a93d4ecf3c4f5c23a05e3973d51a0bb73e09e22827fafc29`
 
@@ -4215,7 +4209,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:688d5b3604f13ab8dbf68d5c60624100a7ca610c38a4dcc40bdc662c00baec27`
 -	v2 Content-Length: 337.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:40:42 GMT
 
 #### `0c7891350daa19b6540017e2ddaa3920ceb3ee97fe29eba14272d3af579a4be3`
 
