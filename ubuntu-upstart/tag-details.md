@@ -56,7 +56,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:dbb8c3cdfaf7c45ff3dfd82e898ad915abd66217f18f39859c68d87d72f21e2b`
 -	v2 Content-Length: 57.9 KB (57864 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:55:21 GMT
 
 #### `7dd38dbb5eda7302342f3cabf8ffd19a38369111ca740ed6b5cbe11a12fb9407`
 
@@ -83,7 +82,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6cf956aa7e03dd9b0b9adce0be2d22a9df39d598ee25d520bee49ec293aa885a`
 
@@ -97,7 +95,6 @@ RUN apt-get update && apt-get install -y ssh
 -	Virtual Size: 41.5 MB (41532806 bytes)
 -	v2 Blob: `sha256:37814316779cea718bb92d6de859ad48d9ed5b076af8cf4790d0fd50ff48454c`
 -	v2 Content-Length: 34.3 MB (34268383 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:38 GMT
 
 #### `b2bd0739e3f79a28e675b50961217ca58f0f3077a93c107cd9c615ee94b2a60b`
 
@@ -125,7 +122,6 @@ RUN rm /usr/sbin/policy-rc.d; \
 -	Virtual Size: 155.7 KB (155746 bytes)
 -	v2 Blob: `sha256:3f645c87db7152aa4d184f4082f51cff07729cfb45cd1ad3f17ddda2e912487e`
 -	v2 Content-Length: 57.3 KB (57346 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:26 GMT
 
 #### `42d80edcd0bfd8016a36753993331e46bb21eaf65032e6e2e4f5206aafc03350`
 
@@ -139,7 +135,6 @@ RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621416 bytes)
 -	v2 Blob: `sha256:f5c95bfcc90e46fc5f181e70560cef7fd636f6ea3cd325666f06681be8d04043`
 -	v2 Content-Length: 329.2 KB (329162 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:23 GMT
 
 #### `da2267086f42eb1de51225bb0f5347ec06248a55712f1dc22b3624ee091da603`
 
@@ -170,7 +165,6 @@ RUN /usr/sbin/update-rc.d -f ondemand remove; \
 -	Virtual Size: 19.7 KB (19714 bytes)
 -	v2 Blob: `sha256:b1a6005958bb25bbfef0a3fb47bd9ee65766ca51ab8f91fdacccd39bef2bc80a`
 -	v2 Content-Length: 7.4 KB (7374 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:19 GMT
 
 #### `5815e060de08045a0e13623f0d0374f3d457ef15cf186bbbc2d9ab16148cd982`
 
@@ -184,7 +178,6 @@ RUN sed -ri 's/^session\s+required\s+pam_loginuid.so$/session optional pam_login
 -	Virtual Size: 1.3 KB (1287 bytes)
 -	v2 Blob: `sha256:dec7d14304cdbf6ab3ddaf11fd26369b626b0cb018422e930310a33e10ba9d1b`
 -	v2 Content-Length: 697.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:16 GMT
 
 #### `f12d4722844a50c7fa589c5e952dd24cfe82845a6c03770799ded519a866b706`
 
@@ -211,7 +204,6 @@ ENV container=docker
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ab6c9fb4b1a07ca1cc4a2b3f2eed8dbba3a0de2126d832c4e96505d2a52441b`
 
@@ -225,7 +217,6 @@ RUN echo 'root:docker.io' | chpasswd
 -	Virtual Size: 627.0 B
 -	v2 Blob: `sha256:50a13441ac0935b26fc127cc65929a536fb31aeae3d64b23ae376ad3713d844e`
 -	v2 Content-Length: 359.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:01 GMT
 
 #### `f32aaba978a4f07d2d753cbcd447360071edf12c6b5c1cb92b01d98f2d98af4e`
 
@@ -239,7 +230,6 @@ EXPOSE 22/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd53ab568c910f6e7ce8aab5d049fd0e7d38c331cd785f4a6e220ba8ce5240d1`
 
@@ -253,7 +243,6 @@ CMD ["/sbin/init"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-upstart:precise`
 
@@ -301,7 +290,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:dbb8c3cdfaf7c45ff3dfd82e898ad915abd66217f18f39859c68d87d72f21e2b`
 -	v2 Content-Length: 57.9 KB (57864 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:55:21 GMT
 
 #### `7dd38dbb5eda7302342f3cabf8ffd19a38369111ca740ed6b5cbe11a12fb9407`
 
@@ -328,7 +316,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6cf956aa7e03dd9b0b9adce0be2d22a9df39d598ee25d520bee49ec293aa885a`
 
@@ -342,7 +329,6 @@ RUN apt-get update && apt-get install -y ssh
 -	Virtual Size: 41.5 MB (41532806 bytes)
 -	v2 Blob: `sha256:37814316779cea718bb92d6de859ad48d9ed5b076af8cf4790d0fd50ff48454c`
 -	v2 Content-Length: 34.3 MB (34268383 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:38 GMT
 
 #### `b2bd0739e3f79a28e675b50961217ca58f0f3077a93c107cd9c615ee94b2a60b`
 
@@ -370,7 +356,6 @@ RUN rm /usr/sbin/policy-rc.d; \
 -	Virtual Size: 155.7 KB (155746 bytes)
 -	v2 Blob: `sha256:3f645c87db7152aa4d184f4082f51cff07729cfb45cd1ad3f17ddda2e912487e`
 -	v2 Content-Length: 57.3 KB (57346 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:26 GMT
 
 #### `42d80edcd0bfd8016a36753993331e46bb21eaf65032e6e2e4f5206aafc03350`
 
@@ -384,7 +369,6 @@ RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621416 bytes)
 -	v2 Blob: `sha256:f5c95bfcc90e46fc5f181e70560cef7fd636f6ea3cd325666f06681be8d04043`
 -	v2 Content-Length: 329.2 KB (329162 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:23 GMT
 
 #### `da2267086f42eb1de51225bb0f5347ec06248a55712f1dc22b3624ee091da603`
 
@@ -415,7 +399,6 @@ RUN /usr/sbin/update-rc.d -f ondemand remove; \
 -	Virtual Size: 19.7 KB (19714 bytes)
 -	v2 Blob: `sha256:b1a6005958bb25bbfef0a3fb47bd9ee65766ca51ab8f91fdacccd39bef2bc80a`
 -	v2 Content-Length: 7.4 KB (7374 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:19 GMT
 
 #### `5815e060de08045a0e13623f0d0374f3d457ef15cf186bbbc2d9ab16148cd982`
 
@@ -429,7 +412,6 @@ RUN sed -ri 's/^session\s+required\s+pam_loginuid.so$/session optional pam_login
 -	Virtual Size: 1.3 KB (1287 bytes)
 -	v2 Blob: `sha256:dec7d14304cdbf6ab3ddaf11fd26369b626b0cb018422e930310a33e10ba9d1b`
 -	v2 Content-Length: 697.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:16 GMT
 
 #### `f12d4722844a50c7fa589c5e952dd24cfe82845a6c03770799ded519a866b706`
 
@@ -456,7 +438,6 @@ ENV container=docker
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ab6c9fb4b1a07ca1cc4a2b3f2eed8dbba3a0de2126d832c4e96505d2a52441b`
 
@@ -470,7 +451,6 @@ RUN echo 'root:docker.io' | chpasswd
 -	Virtual Size: 627.0 B
 -	v2 Blob: `sha256:50a13441ac0935b26fc127cc65929a536fb31aeae3d64b23ae376ad3713d844e`
 -	v2 Content-Length: 359.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:00:01 GMT
 
 #### `f32aaba978a4f07d2d753cbcd447360071edf12c6b5c1cb92b01d98f2d98af4e`
 
@@ -484,7 +464,6 @@ EXPOSE 22/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bd53ab568c910f6e7ce8aab5d049fd0e7d38c331cd785f4a6e220ba8ce5240d1`
 
@@ -498,7 +477,6 @@ CMD ["/sbin/init"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-upstart:14.04`
 
@@ -522,7 +500,6 @@ ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
 -	Virtual Size: 187.7 MB (187728797 bytes)
 -	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
 -	v2 Content-Length: 65.7 MB (65675795 bytes)
--	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
 
 #### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
 
@@ -547,7 +524,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:3b52deaaf0edb8a0282a08dd9c9e25da2050a75739b832ecc6e29941394933a6`
 -	v2 Content-Length: 71.5 KB (71484 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:56 GMT
 
 #### `a4c5be5b6e596241b4530ade26294afa8d8a4a2b9163c30e36c87f879b0f5073`
 
@@ -561,7 +537,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -575,7 +550,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6ee3f37b8c9f9c345e17bef879b9424b44e4ae7b64999f14bf8fbdfde6aa014`
 
@@ -589,7 +563,6 @@ RUN apt-get update && apt-get install -y ssh
 -	Virtual Size: 63.5 MB (63512035 bytes)
 -	v2 Blob: `sha256:a6dc1658c730c7a8278f1f69eecaa43cb356d161f0702603a5eddde6a7843140`
 -	v2 Content-Length: 35.5 MB (35534859 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:03:11 GMT
 
 #### `df767937e91fe997d4fc30ef60b9ff824a9426b9f70a5fa89dec845262964605`
 
@@ -603,7 +576,6 @@ ADD file:dad64c5f9efd5d6a67fafe457a2fbb73650537ebd04aab966c6b98a675eea5d7 in /et
 -	Virtual Size: 351.0 B
 -	v2 Blob: `sha256:9ed623dca71be068f7892d1902808b61680c819736e05a6c23b9b2eab5cf8852`
 -	v2 Content-Length: 361.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:58 GMT
 
 #### `170f897258dfcfcd92ce4a647de1a1a2ea74c1be5d91e23fa8478737f9deb194`
 
@@ -618,7 +590,6 @@ RUN rm /usr/sbin/policy-rc.d; \
 -	Virtual Size: 194.1 KB (194066 bytes)
 -	v2 Blob: `sha256:998ee72febf981613cedbf2e9e4be02b68c66dce7c069b586006ea9066e8815d`
 -	v2 Content-Length: 71.0 KB (70962 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:55 GMT
 
 #### `597ac0ce0020a93aa5b2a4a79659d4d6d212bcdcbfd2fb8143966a46820d3df0`
 
@@ -632,7 +603,6 @@ RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621310 bytes)
 -	v2 Blob: `sha256:437038dc2fba4b6e42e5435236bbc45d0ef1465aae09069c2a83000ee7d28561`
 -	v2 Content-Length: 329.1 KB (329139 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:51 GMT
 
 #### `8ffc964e617838c48d0c35e2cdb8a472e8ea5542e378e6e1c7e7cb74b3f08192`
 
@@ -663,7 +633,6 @@ RUN /usr/sbin/update-rc.d -f ondemand remove; \
 -	Virtual Size: 24.7 KB (24713 bytes)
 -	v2 Blob: `sha256:da0ee05a1a1d903a646049aacfee5e1088cb7ad8c2cce3948c269383bf979747`
 -	v2 Content-Length: 8.5 KB (8544 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:48 GMT
 
 #### `3c42a74804f79e44845044dad95183b4e4f73207b97f7cfb0fe9305b3c33d27a`
 
@@ -690,7 +659,6 @@ RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 -	Virtual Size: 2.5 KB (2528 bytes)
 -	v2 Blob: `sha256:4fcc22d7b2a11189fcb70a5032798d7a3afd74c64ab638916b20a19995c79554`
 -	v2 Content-Length: 1.3 KB (1306 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:42 GMT
 
 #### `d25879e50b284cae5958fb43bd795b491110f5baa1aa435c966da2865909a69d`
 
@@ -704,7 +672,6 @@ ENV container=docker
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2252605f698b2f8760a46cfe978018b9f5eae890ea12e493fbd9bb8263aae640`
 
@@ -718,7 +685,6 @@ RUN echo 'root:docker.io' | chpasswd
 -	Virtual Size: 655.0 B
 -	v2 Blob: `sha256:6c7dda5571e4238483471a9191f0b7949164b58d175c07d6570efeea045279ae`
 -	v2 Content-Length: 361.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:36 GMT
 
 #### `e159a9a1c0c41b618fb50b7c5ab57e9b3d351c4385eaa60ba4adf6dd234fe183`
 
@@ -732,7 +698,6 @@ EXPOSE 22/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2182e291d511af156e48e53b012e3e5bd83702cc443801d5dea5f23ddee8650b`
 
@@ -746,7 +711,6 @@ CMD ["/sbin/init"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-upstart:trusty`
 
@@ -770,7 +734,6 @@ ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
 -	Virtual Size: 187.7 MB (187728797 bytes)
 -	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
 -	v2 Content-Length: 65.7 MB (65675795 bytes)
--	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
 
 #### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
 
@@ -795,7 +758,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:3b52deaaf0edb8a0282a08dd9c9e25da2050a75739b832ecc6e29941394933a6`
 -	v2 Content-Length: 71.5 KB (71484 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:56 GMT
 
 #### `a4c5be5b6e596241b4530ade26294afa8d8a4a2b9163c30e36c87f879b0f5073`
 
@@ -809,7 +771,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -823,7 +784,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6ee3f37b8c9f9c345e17bef879b9424b44e4ae7b64999f14bf8fbdfde6aa014`
 
@@ -837,7 +797,6 @@ RUN apt-get update && apt-get install -y ssh
 -	Virtual Size: 63.5 MB (63512035 bytes)
 -	v2 Blob: `sha256:a6dc1658c730c7a8278f1f69eecaa43cb356d161f0702603a5eddde6a7843140`
 -	v2 Content-Length: 35.5 MB (35534859 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:03:11 GMT
 
 #### `df767937e91fe997d4fc30ef60b9ff824a9426b9f70a5fa89dec845262964605`
 
@@ -851,7 +810,6 @@ ADD file:dad64c5f9efd5d6a67fafe457a2fbb73650537ebd04aab966c6b98a675eea5d7 in /et
 -	Virtual Size: 351.0 B
 -	v2 Blob: `sha256:9ed623dca71be068f7892d1902808b61680c819736e05a6c23b9b2eab5cf8852`
 -	v2 Content-Length: 361.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:58 GMT
 
 #### `170f897258dfcfcd92ce4a647de1a1a2ea74c1be5d91e23fa8478737f9deb194`
 
@@ -866,7 +824,6 @@ RUN rm /usr/sbin/policy-rc.d; \
 -	Virtual Size: 194.1 KB (194066 bytes)
 -	v2 Blob: `sha256:998ee72febf981613cedbf2e9e4be02b68c66dce7c069b586006ea9066e8815d`
 -	v2 Content-Length: 71.0 KB (70962 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:55 GMT
 
 #### `597ac0ce0020a93aa5b2a4a79659d4d6d212bcdcbfd2fb8143966a46820d3df0`
 
@@ -880,7 +837,6 @@ RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621310 bytes)
 -	v2 Blob: `sha256:437038dc2fba4b6e42e5435236bbc45d0ef1465aae09069c2a83000ee7d28561`
 -	v2 Content-Length: 329.1 KB (329139 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:51 GMT
 
 #### `8ffc964e617838c48d0c35e2cdb8a472e8ea5542e378e6e1c7e7cb74b3f08192`
 
@@ -911,7 +867,6 @@ RUN /usr/sbin/update-rc.d -f ondemand remove; \
 -	Virtual Size: 24.7 KB (24713 bytes)
 -	v2 Blob: `sha256:da0ee05a1a1d903a646049aacfee5e1088cb7ad8c2cce3948c269383bf979747`
 -	v2 Content-Length: 8.5 KB (8544 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:48 GMT
 
 #### `3c42a74804f79e44845044dad95183b4e4f73207b97f7cfb0fe9305b3c33d27a`
 
@@ -938,7 +893,6 @@ RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 -	Virtual Size: 2.5 KB (2528 bytes)
 -	v2 Blob: `sha256:4fcc22d7b2a11189fcb70a5032798d7a3afd74c64ab638916b20a19995c79554`
 -	v2 Content-Length: 1.3 KB (1306 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:42 GMT
 
 #### `d25879e50b284cae5958fb43bd795b491110f5baa1aa435c966da2865909a69d`
 
@@ -952,7 +906,6 @@ ENV container=docker
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2252605f698b2f8760a46cfe978018b9f5eae890ea12e493fbd9bb8263aae640`
 
@@ -966,7 +919,6 @@ RUN echo 'root:docker.io' | chpasswd
 -	Virtual Size: 655.0 B
 -	v2 Blob: `sha256:6c7dda5571e4238483471a9191f0b7949164b58d175c07d6570efeea045279ae`
 -	v2 Content-Length: 361.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:36 GMT
 
 #### `e159a9a1c0c41b618fb50b7c5ab57e9b3d351c4385eaa60ba4adf6dd234fe183`
 
@@ -980,7 +932,6 @@ EXPOSE 22/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2182e291d511af156e48e53b012e3e5bd83702cc443801d5dea5f23ddee8650b`
 
@@ -994,7 +945,6 @@ CMD ["/sbin/init"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-upstart:latest`
 
@@ -1018,7 +968,6 @@ ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
 -	Virtual Size: 187.7 MB (187728797 bytes)
 -	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
 -	v2 Content-Length: 65.7 MB (65675795 bytes)
--	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
 
 #### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
 
@@ -1043,7 +992,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:3b52deaaf0edb8a0282a08dd9c9e25da2050a75739b832ecc6e29941394933a6`
 -	v2 Content-Length: 71.5 KB (71484 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:56 GMT
 
 #### `a4c5be5b6e596241b4530ade26294afa8d8a4a2b9163c30e36c87f879b0f5073`
 
@@ -1057,7 +1005,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -1071,7 +1018,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6ee3f37b8c9f9c345e17bef879b9424b44e4ae7b64999f14bf8fbdfde6aa014`
 
@@ -1085,7 +1031,6 @@ RUN apt-get update && apt-get install -y ssh
 -	Virtual Size: 63.5 MB (63512035 bytes)
 -	v2 Blob: `sha256:a6dc1658c730c7a8278f1f69eecaa43cb356d161f0702603a5eddde6a7843140`
 -	v2 Content-Length: 35.5 MB (35534859 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:03:11 GMT
 
 #### `df767937e91fe997d4fc30ef60b9ff824a9426b9f70a5fa89dec845262964605`
 
@@ -1099,7 +1044,6 @@ ADD file:dad64c5f9efd5d6a67fafe457a2fbb73650537ebd04aab966c6b98a675eea5d7 in /et
 -	Virtual Size: 351.0 B
 -	v2 Blob: `sha256:9ed623dca71be068f7892d1902808b61680c819736e05a6c23b9b2eab5cf8852`
 -	v2 Content-Length: 361.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:58 GMT
 
 #### `170f897258dfcfcd92ce4a647de1a1a2ea74c1be5d91e23fa8478737f9deb194`
 
@@ -1114,7 +1058,6 @@ RUN rm /usr/sbin/policy-rc.d; \
 -	Virtual Size: 194.1 KB (194066 bytes)
 -	v2 Blob: `sha256:998ee72febf981613cedbf2e9e4be02b68c66dce7c069b586006ea9066e8815d`
 -	v2 Content-Length: 71.0 KB (70962 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:55 GMT
 
 #### `597ac0ce0020a93aa5b2a4a79659d4d6d212bcdcbfd2fb8143966a46820d3df0`
 
@@ -1128,7 +1071,6 @@ RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621310 bytes)
 -	v2 Blob: `sha256:437038dc2fba4b6e42e5435236bbc45d0ef1465aae09069c2a83000ee7d28561`
 -	v2 Content-Length: 329.1 KB (329139 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:51 GMT
 
 #### `8ffc964e617838c48d0c35e2cdb8a472e8ea5542e378e6e1c7e7cb74b3f08192`
 
@@ -1159,7 +1101,6 @@ RUN /usr/sbin/update-rc.d -f ondemand remove; \
 -	Virtual Size: 24.7 KB (24713 bytes)
 -	v2 Blob: `sha256:da0ee05a1a1d903a646049aacfee5e1088cb7ad8c2cce3948c269383bf979747`
 -	v2 Content-Length: 8.5 KB (8544 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:48 GMT
 
 #### `3c42a74804f79e44845044dad95183b4e4f73207b97f7cfb0fe9305b3c33d27a`
 
@@ -1186,7 +1127,6 @@ RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 -	Virtual Size: 2.5 KB (2528 bytes)
 -	v2 Blob: `sha256:4fcc22d7b2a11189fcb70a5032798d7a3afd74c64ab638916b20a19995c79554`
 -	v2 Content-Length: 1.3 KB (1306 bytes)
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:42 GMT
 
 #### `d25879e50b284cae5958fb43bd795b491110f5baa1aa435c966da2865909a69d`
 
@@ -1200,7 +1140,6 @@ ENV container=docker
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2252605f698b2f8760a46cfe978018b9f5eae890ea12e493fbd9bb8263aae640`
 
@@ -1214,7 +1153,6 @@ RUN echo 'root:docker.io' | chpasswd
 -	Virtual Size: 655.0 B
 -	v2 Blob: `sha256:6c7dda5571e4238483471a9191f0b7949164b58d175c07d6570efeea045279ae`
 -	v2 Content-Length: 361.0 B
--	v2 Last-Modified: Tue, 02 Feb 2016 19:02:36 GMT
 
 #### `e159a9a1c0c41b618fb50b7c5ab57e9b3d351c4385eaa60ba4adf6dd234fe183`
 
@@ -1228,7 +1166,6 @@ EXPOSE 22/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2182e291d511af156e48e53b012e3e5bd83702cc443801d5dea5f23ddee8650b`
 
@@ -1242,7 +1179,6 @@ CMD ["/sbin/init"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-upstart:14.10`
 
@@ -1266,7 +1202,6 @@ ADD file:d6583e3b1f1fd6681900b19c0a8cd097b5b22a42c624670115aa308da06aabd8 in /
 -	Virtual Size: 194.3 MB (194255051 bytes)
 -	v2 Blob: `sha256:b0efe5c05b4c6d01afe888858d78f3c45d1296e032a99146e7d1eaa1ff6469e5`
 -	v2 Content-Length: 68.3 MB (68321236 bytes)
--	v2 Last-Modified: Thu, 09 Jul 2015 19:54:03 GMT
 
 #### `9a63f1e91c4cafeec5643ed2504c2db4972f165194be72a23739a63b927b83a9`
 
@@ -1304,7 +1239,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1ceb0a3c7c4866b3a7ed32f28a15df241eb588ecc1f7e752079fa4f485bb7a58`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Thu, 09 Jul 2015 19:53:25 GMT
 
 #### `dce38fb5798668eb49dd4b7054078016746589e1501b46e061f0229b642ab903`
 
@@ -1318,7 +1252,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `054496596cdfe5fe4a7e092a10f44dc57d16c19886fc9170b2f6856e0fcaf708`
 
@@ -1332,7 +1265,6 @@ RUN apt-get update && apt-get install -y ssh
 -	Virtual Size: 63.9 MB (63935987 bytes)
 -	v2 Blob: `sha256:fcfd558b0e2242e06e521cb18fec06ac0abfbb77da77d52fb08a351dcd4b7cc6`
 -	v2 Content-Length: 35.4 MB (35422352 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 06:54:20 GMT
 
 #### `f23a310ed1d32e562838937cb0a3747ee224eaa215b74bf989f0e09745d7601e`
 
@@ -1346,7 +1278,6 @@ ADD file:dad64c5f9efd5d6a67fafe457a2fbb73650537ebd04aab966c6b98a675eea5d7 in /et
 -	Virtual Size: 351.0 B
 -	v2 Blob: `sha256:162cea779cc09cb17f88f9f790d4d05b026e2556d5596b3c19c070370f8c697c`
 -	v2 Content-Length: 362.0 B
--	v2 Last-Modified: Thu, 15 Oct 2015 08:47:09 GMT
 
 #### `7e2b4272e99226b11b7c9ba8ef46082f2cc2ba3b331a15bbba0f470a9d8ad51e`
 
@@ -1374,7 +1305,6 @@ RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621367 bytes)
 -	v2 Blob: `sha256:7a7e7c2baa501205761e302f1a340221c52634fe0c9d89fd16f8f364620e12a5`
 -	v2 Content-Length: 329.2 KB (329160 bytes)
--	v2 Last-Modified: Thu, 15 Oct 2015 08:47:00 GMT
 
 #### `186dee5de42c34456803a11187ef92a0e2257a6bf4e2cb19f3527e962ae269e7`
 
@@ -1405,7 +1335,6 @@ RUN /usr/sbin/update-rc.d -f ondemand remove; \
 -	Virtual Size: 26.0 KB (25957 bytes)
 -	v2 Blob: `sha256:b5144fec15bb9d811140d3285e02e082fa4731c0047caa24dd0e3a8f8a06c05a`
 -	v2 Content-Length: 9.0 KB (9008 bytes)
--	v2 Last-Modified: Thu, 15 Oct 2015 08:46:56 GMT
 
 #### `d206ce11a05b44dcfab9b2796177c25d3d05f54b2f252e070acc1d09448de655`
 
@@ -1432,7 +1361,6 @@ RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 -	Virtual Size: 2.5 KB (2528 bytes)
 -	v2 Blob: `sha256:8c6c03cee9f41f5803ce6d8c71dd4eeaca07004a228e9f1d977e76096e1bc75f`
 -	v2 Content-Length: 1.3 KB (1308 bytes)
--	v2 Last-Modified: Thu, 15 Oct 2015 08:46:48 GMT
 
 #### `e1074eaace0385d3c274170668edd8d3056577d534e04f56eea6dad501daed54`
 
@@ -1446,7 +1374,6 @@ ENV container=docker
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `70f2f72b80419eacde8c5930bd7742119678de7d9ad4b1289249855022bbc000`
 
@@ -1473,7 +1400,6 @@ EXPOSE 22/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `768c21ebe67704b65baf3fc5707ea64925df083c9b037f8ba279dfe945ea1692`
 
@@ -1487,7 +1413,6 @@ CMD ["/sbin/init"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `ubuntu-upstart:utopic`
 
@@ -1511,7 +1436,6 @@ ADD file:d6583e3b1f1fd6681900b19c0a8cd097b5b22a42c624670115aa308da06aabd8 in /
 -	Virtual Size: 194.3 MB (194255051 bytes)
 -	v2 Blob: `sha256:b0efe5c05b4c6d01afe888858d78f3c45d1296e032a99146e7d1eaa1ff6469e5`
 -	v2 Content-Length: 68.3 MB (68321236 bytes)
--	v2 Last-Modified: Thu, 09 Jul 2015 19:54:03 GMT
 
 #### `9a63f1e91c4cafeec5643ed2504c2db4972f165194be72a23739a63b927b83a9`
 
@@ -1549,7 +1473,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:1ceb0a3c7c4866b3a7ed32f28a15df241eb588ecc1f7e752079fa4f485bb7a58`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Thu, 09 Jul 2015 19:53:25 GMT
 
 #### `dce38fb5798668eb49dd4b7054078016746589e1501b46e061f0229b642ab903`
 
@@ -1563,7 +1486,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `054496596cdfe5fe4a7e092a10f44dc57d16c19886fc9170b2f6856e0fcaf708`
 
@@ -1577,7 +1499,6 @@ RUN apt-get update && apt-get install -y ssh
 -	Virtual Size: 63.9 MB (63935987 bytes)
 -	v2 Blob: `sha256:fcfd558b0e2242e06e521cb18fec06ac0abfbb77da77d52fb08a351dcd4b7cc6`
 -	v2 Content-Length: 35.4 MB (35422352 bytes)
--	v2 Last-Modified: Thu, 27 Aug 2015 06:54:20 GMT
 
 #### `f23a310ed1d32e562838937cb0a3747ee224eaa215b74bf989f0e09745d7601e`
 
@@ -1591,7 +1512,6 @@ ADD file:dad64c5f9efd5d6a67fafe457a2fbb73650537ebd04aab966c6b98a675eea5d7 in /et
 -	Virtual Size: 351.0 B
 -	v2 Blob: `sha256:162cea779cc09cb17f88f9f790d4d05b026e2556d5596b3c19c070370f8c697c`
 -	v2 Content-Length: 362.0 B
--	v2 Last-Modified: Thu, 15 Oct 2015 08:47:09 GMT
 
 #### `7e2b4272e99226b11b7c9ba8ef46082f2cc2ba3b331a15bbba0f470a9d8ad51e`
 
@@ -1619,7 +1539,6 @@ RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 -	Virtual Size: 1.6 MB (1621367 bytes)
 -	v2 Blob: `sha256:7a7e7c2baa501205761e302f1a340221c52634fe0c9d89fd16f8f364620e12a5`
 -	v2 Content-Length: 329.2 KB (329160 bytes)
--	v2 Last-Modified: Thu, 15 Oct 2015 08:47:00 GMT
 
 #### `186dee5de42c34456803a11187ef92a0e2257a6bf4e2cb19f3527e962ae269e7`
 
@@ -1650,7 +1569,6 @@ RUN /usr/sbin/update-rc.d -f ondemand remove; \
 -	Virtual Size: 26.0 KB (25957 bytes)
 -	v2 Blob: `sha256:b5144fec15bb9d811140d3285e02e082fa4731c0047caa24dd0e3a8f8a06c05a`
 -	v2 Content-Length: 9.0 KB (9008 bytes)
--	v2 Last-Modified: Thu, 15 Oct 2015 08:46:56 GMT
 
 #### `d206ce11a05b44dcfab9b2796177c25d3d05f54b2f252e070acc1d09448de655`
 
@@ -1677,7 +1595,6 @@ RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 -	Virtual Size: 2.5 KB (2528 bytes)
 -	v2 Blob: `sha256:8c6c03cee9f41f5803ce6d8c71dd4eeaca07004a228e9f1d977e76096e1bc75f`
 -	v2 Content-Length: 1.3 KB (1308 bytes)
--	v2 Last-Modified: Thu, 15 Oct 2015 08:46:48 GMT
 
 #### `e1074eaace0385d3c274170668edd8d3056577d534e04f56eea6dad501daed54`
 
@@ -1691,7 +1608,6 @@ ENV container=docker
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `70f2f72b80419eacde8c5930bd7742119678de7d9ad4b1289249855022bbc000`
 
@@ -1718,7 +1634,6 @@ EXPOSE 22/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `768c21ebe67704b65baf3fc5707ea64925df083c9b037f8ba279dfe945ea1692`
 
@@ -1732,4 +1647,3 @@ CMD ["/sbin/init"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

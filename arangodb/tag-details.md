@@ -34,7 +34,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -74,7 +73,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -244,7 +242,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -284,7 +281,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -454,7 +450,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -494,7 +489,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -603,7 +597,6 @@ RUN apt-get update &&\
 -	Virtual Size: 209.2 MB (209170746 bytes)
 -	v2 Blob: `sha256:58940c63b1fde7810ed67548c1e9a6faaec2d861d3caaab2ff0dae687ba431dc`
 -	v2 Content-Length: 73.5 MB (73541003 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:46:26 GMT
 
 #### `0f0157adb7c32833730e4548e7b3d218a2ada04ecec1d6c005ba778e504b0d38`
 
@@ -666,7 +659,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -706,7 +698,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -815,7 +806,6 @@ RUN apt-get update &&\
 -	Virtual Size: 209.2 MB (209170746 bytes)
 -	v2 Blob: `sha256:58940c63b1fde7810ed67548c1e9a6faaec2d861d3caaab2ff0dae687ba431dc`
 -	v2 Content-Length: 73.5 MB (73541003 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:46:26 GMT
 
 #### `0f0157adb7c32833730e4548e7b3d218a2ada04ecec1d6c005ba778e504b0d38`
 
@@ -878,7 +868,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -918,7 +907,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1027,7 +1015,6 @@ RUN apt-get update &&\
 -	Virtual Size: 209.6 MB (209556048 bytes)
 -	v2 Blob: `sha256:29bc091aea33dcd2860751fa1efb179585be712c591cecc28ddeb12440bfbe56`
 -	v2 Content-Length: 75.7 MB (75692813 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:47:36 GMT
 
 #### `8dbf0a84a8a9c4e5e85715b15f77c4135729c38d0d07de91b49d7be48444faaa`
 
@@ -1090,7 +1077,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1130,7 +1116,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1239,7 +1224,6 @@ RUN apt-get update &&\
 -	Virtual Size: 209.6 MB (209556048 bytes)
 -	v2 Blob: `sha256:29bc091aea33dcd2860751fa1efb179585be712c591cecc28ddeb12440bfbe56`
 -	v2 Content-Length: 75.7 MB (75692813 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:47:36 GMT
 
 #### `8dbf0a84a8a9c4e5e85715b15f77c4135729c38d0d07de91b49d7be48444faaa`
 
@@ -1302,7 +1286,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1342,7 +1325,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1454,7 +1436,6 @@ RUN apt-get update &&\
 -	Virtual Size: 159.6 MB (159624082 bytes)
 -	v2 Blob: `sha256:d8c9a6a5e2de7b7d63f37c0f825b3fc93fccc8c4f79245e9bd13c4b2dce14cd8`
 -	v2 Content-Length: 58.8 MB (58807866 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 19:44:39 GMT
 
 #### `60048be1cbb44b743a61b3bbaee0dcfceae5fe3e88f887b2dad6c8795541d7f4`
 
@@ -1468,7 +1449,6 @@ RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2abe811a68970e87f3ea12c32f9c14fb67c0173884475734e420575a6b897e0b`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Mon, 14 Mar 2016 19:44:20 GMT
 
 #### `9383b5b1bee4fb15099f94147c1dff3d8da028428f69cda701185b843a49f19c`
 
@@ -1570,7 +1550,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1610,7 +1589,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1722,7 +1700,6 @@ RUN apt-get update &&\
 -	Virtual Size: 159.6 MB (159624082 bytes)
 -	v2 Blob: `sha256:d8c9a6a5e2de7b7d63f37c0f825b3fc93fccc8c4f79245e9bd13c4b2dce14cd8`
 -	v2 Content-Length: 58.8 MB (58807866 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 19:44:39 GMT
 
 #### `60048be1cbb44b743a61b3bbaee0dcfceae5fe3e88f887b2dad6c8795541d7f4`
 
@@ -1736,7 +1713,6 @@ RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2abe811a68970e87f3ea12c32f9c14fb67c0173884475734e420575a6b897e0b`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Mon, 14 Mar 2016 19:44:20 GMT
 
 #### `9383b5b1bee4fb15099f94147c1dff3d8da028428f69cda701185b843a49f19c`
 
@@ -1838,7 +1814,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1878,7 +1853,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F4
 -	Virtual Size: 12.6 KB (12644 bytes)
 -	v2 Blob: `sha256:1b598e12b8dff2c3063717d755941a3fd37a5414c1296f8e2fdebe7821e015cb`
 -	v2 Content-Length: 6.8 KB (6769 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 22:45:08 GMT
 
 #### `674b0f2c04313c6ee1957a964a43b0396620beb4d7c4b704953d578e6bb4d7e0`
 
@@ -1990,7 +1964,6 @@ RUN apt-get update &&\
 -	Virtual Size: 159.6 MB (159624082 bytes)
 -	v2 Blob: `sha256:d8c9a6a5e2de7b7d63f37c0f825b3fc93fccc8c4f79245e9bd13c4b2dce14cd8`
 -	v2 Content-Length: 58.8 MB (58807866 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 19:44:39 GMT
 
 #### `60048be1cbb44b743a61b3bbaee0dcfceae5fe3e88f887b2dad6c8795541d7f4`
 
@@ -2004,7 +1977,6 @@ RUN chown arangodb:arangodb /var/lib/arangodb &&   chown arangodb:arangodb /var/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2abe811a68970e87f3ea12c32f9c14fb67c0173884475734e420575a6b897e0b`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Mon, 14 Mar 2016 19:44:20 GMT
 
 #### `9383b5b1bee4fb15099f94147c1dff3d8da028428f69cda701185b843a49f19c`
 

@@ -40,7 +40,6 @@ ADD file:73ee62b144bac8d9d72c5dc76bf703a276337f870e3642587989993e1a174e52 in /
 -	Virtual Size: 193.1 MB (193078371 bytes)
 -	v2 Blob: `sha256:4ebd5f6e5b3a697ae43287a11a7a93c4b2b10745f6b3cce61e5d9b624ff0f303`
 -	v2 Content-Length: 72.4 MB (72358211 bytes)
--	v2 Last-Modified: Fri, 04 Mar 2016 17:44:26 GMT
 
 ## `mageia:5`
 
@@ -77,4 +76,3 @@ ADD file:73ee62b144bac8d9d72c5dc76bf703a276337f870e3642587989993e1a174e52 in /
 -	Virtual Size: 193.1 MB (193078371 bytes)
 -	v2 Blob: `sha256:4ebd5f6e5b3a697ae43287a11a7a93c4b2b10745f6b3cce61e5d9b624ff0f303`
 -	v2 Content-Length: 72.4 MB (72358211 bytes)
--	v2 Last-Modified: Fri, 04 Mar 2016 17:44:26 GMT

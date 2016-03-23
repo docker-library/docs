@@ -29,7 +29,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -43,7 +42,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1585eafa5e2bfd7305911c614e22a41f89032985a04b2124af3bdbdb2546ad9`
 
@@ -57,7 +55,6 @@ MAINTAINER Chris Biscardi <chris@christopherbiscardi.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d36b98f5aff87402f3588692c297ff9c825153e40417086b2584266583833351`
 
@@ -71,7 +68,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7021c54fc21e5c1d170e48ab69e45f5358e7ad2698ed66517f7a71bade8b6014`
 
@@ -92,7 +88,6 @@ RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/so
 -	Virtual Size: 673.0 MB (673005845 bytes)
 -	v2 Blob: `sha256:2be594c072dc639150e080e9db660b44a15e7c6a1de3a0d1a9a8689c04ca7ee1`
 -	v2 Content-Length: 157.3 MB (157326936 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:27:10 GMT
 
 #### `bcb767036c30b85291c4df0471b3183f29fabb7fd662fe1e5a42c47fe7d498d9`
 
@@ -106,7 +101,6 @@ ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/b
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec51ca66f289e9f2c7d6cbbabd03359afb4df45fba17d392952f6d3b536326b0`
 
@@ -120,7 +114,6 @@ CMD ["ghci"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haskell:7.10`
 
@@ -144,7 +137,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -158,7 +150,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1585eafa5e2bfd7305911c614e22a41f89032985a04b2124af3bdbdb2546ad9`
 
@@ -172,7 +163,6 @@ MAINTAINER Chris Biscardi <chris@christopherbiscardi.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d36b98f5aff87402f3588692c297ff9c825153e40417086b2584266583833351`
 
@@ -186,7 +176,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7021c54fc21e5c1d170e48ab69e45f5358e7ad2698ed66517f7a71bade8b6014`
 
@@ -207,7 +196,6 @@ RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/so
 -	Virtual Size: 673.0 MB (673005845 bytes)
 -	v2 Blob: `sha256:2be594c072dc639150e080e9db660b44a15e7c6a1de3a0d1a9a8689c04ca7ee1`
 -	v2 Content-Length: 157.3 MB (157326936 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:27:10 GMT
 
 #### `bcb767036c30b85291c4df0471b3183f29fabb7fd662fe1e5a42c47fe7d498d9`
 
@@ -221,7 +209,6 @@ ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/b
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec51ca66f289e9f2c7d6cbbabd03359afb4df45fba17d392952f6d3b536326b0`
 
@@ -235,7 +222,6 @@ CMD ["ghci"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haskell:7`
 
@@ -259,7 +245,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -273,7 +258,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1585eafa5e2bfd7305911c614e22a41f89032985a04b2124af3bdbdb2546ad9`
 
@@ -287,7 +271,6 @@ MAINTAINER Chris Biscardi <chris@christopherbiscardi.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d36b98f5aff87402f3588692c297ff9c825153e40417086b2584266583833351`
 
@@ -301,7 +284,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7021c54fc21e5c1d170e48ab69e45f5358e7ad2698ed66517f7a71bade8b6014`
 
@@ -322,7 +304,6 @@ RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/so
 -	Virtual Size: 673.0 MB (673005845 bytes)
 -	v2 Blob: `sha256:2be594c072dc639150e080e9db660b44a15e7c6a1de3a0d1a9a8689c04ca7ee1`
 -	v2 Content-Length: 157.3 MB (157326936 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:27:10 GMT
 
 #### `bcb767036c30b85291c4df0471b3183f29fabb7fd662fe1e5a42c47fe7d498d9`
 
@@ -336,7 +317,6 @@ ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/b
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec51ca66f289e9f2c7d6cbbabd03359afb4df45fba17d392952f6d3b536326b0`
 
@@ -350,7 +330,6 @@ CMD ["ghci"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haskell:latest`
 
@@ -374,7 +353,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -388,7 +366,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1585eafa5e2bfd7305911c614e22a41f89032985a04b2124af3bdbdb2546ad9`
 
@@ -402,7 +379,6 @@ MAINTAINER Chris Biscardi <chris@christopherbiscardi.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d36b98f5aff87402f3588692c297ff9c825153e40417086b2584266583833351`
 
@@ -416,7 +392,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7021c54fc21e5c1d170e48ab69e45f5358e7ad2698ed66517f7a71bade8b6014`
 
@@ -437,7 +412,6 @@ RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/so
 -	Virtual Size: 673.0 MB (673005845 bytes)
 -	v2 Blob: `sha256:2be594c072dc639150e080e9db660b44a15e7c6a1de3a0d1a9a8689c04ca7ee1`
 -	v2 Content-Length: 157.3 MB (157326936 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:27:10 GMT
 
 #### `bcb767036c30b85291c4df0471b3183f29fabb7fd662fe1e5a42c47fe7d498d9`
 
@@ -451,7 +425,6 @@ ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/b
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ec51ca66f289e9f2c7d6cbbabd03359afb4df45fba17d392952f6d3b536326b0`
 
@@ -465,4 +438,3 @@ CMD ["ghci"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

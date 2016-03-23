@@ -58,7 +58,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -72,7 +71,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -86,7 +84,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -100,7 +97,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -114,7 +110,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `7697b33142529ae4262e3090116b5572aa7b8f5352179a23c7e92f8afd7c1767`
 
@@ -128,7 +123,6 @@ ENV RETHINKDB_PACKAGE_VERSION=1.15.1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de20ea765e89236f44210135ef42255e4d632d5539a1656ad78a30f55f35b032`
 
@@ -144,7 +138,6 @@ RUN apt-get update \
 -	Virtual Size: 54.3 MB (54288669 bytes)
 -	v2 Blob: `sha256:c98bfca14c966f95ca1cf83d452e4e46c6fc42d145f63fe846d5ec46d1aaaf5a`
 -	v2 Content-Length: 23.2 MB (23215760 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:16:17 GMT
 
 #### `93a68cfa7e5cf97175cb263bdb53bf3ff5c846e35cd497bd232043f4d1fa0d90`
 
@@ -158,7 +151,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `98421ef0fb49206a68b6feca9660cb6411c443fdd3c7343441dcad8225c77529`
 
@@ -172,7 +164,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dd65e4c48988b8e385ffe8dbd81ec35a8b18205626163073c35fb63949b1a6ab`
 
@@ -186,7 +177,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6abd16c18bada378611ce345971b7d1af400da8a055f224ea345cb6b0869a3e9`
 
@@ -200,7 +190,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:1.15.2`
 
@@ -224,7 +213,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -238,7 +226,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -252,7 +239,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -266,7 +252,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -280,7 +265,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `9a515b4ebac08ab59976b702cf905afcbf5a1847a7f5272311a6953e999fecdb`
 
@@ -294,7 +278,6 @@ ENV RETHINKDB_PACKAGE_VERSION=1.15.2~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45cf67b75f3a27ea2846972ac23c4cb571da69ba4608dd7dc9874f3eb31a5816`
 
@@ -310,7 +293,6 @@ RUN apt-get update \
 -	Virtual Size: 54.3 MB (54310109 bytes)
 -	v2 Blob: `sha256:1ab7266eb0f01191584d3df7f2435f2de6445585e5c32aa5110d61c18b4b9f9d`
 -	v2 Content-Length: 23.2 MB (23230367 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:16:41 GMT
 
 #### `20ad223a04831d94d9803495e595b145332f4c1d4c0f3b661a3ea252aee5b5ef`
 
@@ -324,7 +306,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `18d09b8075088da4557cab031bbb097755cc68f4e9d098472f0dee4963859545`
 
@@ -338,7 +319,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bf16fc0f7e9ada5bbd74bee5d1ad6b907ae071655170d5531b00521518910d16`
 
@@ -352,7 +332,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `207154de5dac6c9fc9f831da9a6bcedb00667d5f2b2efcec7675ae29ac2d0197`
 
@@ -366,7 +345,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:1.15.3`
 
@@ -390,7 +368,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -404,7 +381,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -418,7 +394,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -432,7 +407,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -446,7 +420,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `c1628e48b18ede001565ce2928ac7e75671e98baf40ee73c6c139b8779b09a13`
 
@@ -460,7 +433,6 @@ ENV RETHINKDB_PACKAGE_VERSION=1.15.3~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `27ec06022e7a9d2f5390f98c986275ac89943dc6b33a0b195f6556ef5e6f6da2`
 
@@ -476,7 +448,6 @@ RUN apt-get update \
 -	Virtual Size: 54.3 MB (54313627 bytes)
 -	v2 Blob: `sha256:32bd981b511f2ab9da3e57d8996483c6228b9a4830ebd781e3a8b6f6cde4efb4`
 -	v2 Content-Length: 23.2 MB (23232400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:51 GMT
 
 #### `c803603d5c82398f28b56c6d43cf0ce7f8030caa9e5342218c6cbfb709c72750`
 
@@ -490,7 +461,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `acd4ae45b779e719564143ab250a2f1e0c4d23820dc554d2d5c0f74f255fb176`
 
@@ -504,7 +474,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0556e5d07e853050817cbc499e0f49d6d36f20b3780bcc687b5b166238193992`
 
@@ -518,7 +487,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b4af277721e069e9d5f7f493a85f471ccbb159db1370e5eab0ce467897795bb`
 
@@ -532,7 +500,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:1.15`
 
@@ -556,7 +523,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -570,7 +536,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -584,7 +549,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -598,7 +562,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -612,7 +575,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `c1628e48b18ede001565ce2928ac7e75671e98baf40ee73c6c139b8779b09a13`
 
@@ -626,7 +588,6 @@ ENV RETHINKDB_PACKAGE_VERSION=1.15.3~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `27ec06022e7a9d2f5390f98c986275ac89943dc6b33a0b195f6556ef5e6f6da2`
 
@@ -642,7 +603,6 @@ RUN apt-get update \
 -	Virtual Size: 54.3 MB (54313627 bytes)
 -	v2 Blob: `sha256:32bd981b511f2ab9da3e57d8996483c6228b9a4830ebd781e3a8b6f6cde4efb4`
 -	v2 Content-Length: 23.2 MB (23232400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:51 GMT
 
 #### `c803603d5c82398f28b56c6d43cf0ce7f8030caa9e5342218c6cbfb709c72750`
 
@@ -656,7 +616,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `acd4ae45b779e719564143ab250a2f1e0c4d23820dc554d2d5c0f74f255fb176`
 
@@ -670,7 +629,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0556e5d07e853050817cbc499e0f49d6d36f20b3780bcc687b5b166238193992`
 
@@ -684,7 +642,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0b4af277721e069e9d5f7f493a85f471ccbb159db1370e5eab0ce467897795bb`
 
@@ -698,7 +655,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:1.16.0`
 
@@ -722,7 +678,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -736,7 +691,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -750,7 +704,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -764,7 +717,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -778,7 +730,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `4958cd2f41a3d0ceaf4edf3df8c51073a9f84454b02e634ff7f54432ea399e22`
 
@@ -792,7 +743,6 @@ ENV RETHINKDB_PACKAGE_VERSION=1.16.0+1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df435ea7b7bb4a7ae30b8d445821748ed7816eeac3852f96d6e15c3cf833c6c`
 
@@ -808,7 +758,6 @@ RUN apt-get update \
 -	Virtual Size: 54.2 MB (54169073 bytes)
 -	v2 Blob: `sha256:2ae2d61e2b744e6c23988f23d4c97a498322fafe511bf2bad2ec8c2dee2fa2a1`
 -	v2 Content-Length: 23.3 MB (23317728 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:17:11 GMT
 
 #### `8c7497811c3b39f860310dc0dd4a1b7edffc1caca4ae2ef007e17b9beb5100a7`
 
@@ -822,7 +771,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8274c9f662a711d30291435bb605b9e844c37008bed768de3b3f6f8685cc0065`
 
@@ -836,7 +784,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `42adce76df1365a3487b91e8e89150923decd33801364b73de3a0833da19d1f4`
 
@@ -850,7 +797,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e145115a8409e5e324d679770de41ee750d5ad1583afc1a8fabd9aa9eda8f1fd`
 
@@ -864,7 +810,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:1.16.1`
 
@@ -888,7 +833,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -902,7 +846,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -916,7 +859,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -930,7 +872,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -944,7 +885,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `7446995ef860fdfc0820a089fc83516287850d05910e3e3547bf360f8a4a1c45`
 
@@ -958,7 +898,6 @@ ENV RETHINKDB_PACKAGE_VERSION=1.16.1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65e0c37f576d1c4d9c3bc58a0fc50535c9a25efd66492b746c005e144e47edf1`
 
@@ -974,7 +913,6 @@ RUN apt-get update \
 -	Virtual Size: 54.2 MB (54178050 bytes)
 -	v2 Blob: `sha256:e151a8679b5606d3da18e86fd06c6d21ad7d6cec0541d30966d94d69811244f5`
 -	v2 Content-Length: 23.3 MB (23322061 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:17:38 GMT
 
 #### `dca2a56eced96cda68c35813b9f93193807225db740cea9e5c37142fdedf10ab`
 
@@ -988,7 +926,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `43d83f3f73a92383a93d05dbeb24143a5ee187200252d4c574647179ad50af2c`
 
@@ -1002,7 +939,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cc3838f8f0ed3c3aa3422ac6fc3eac5e351c7958e9fd94511dc33726b93ac453`
 
@@ -1016,7 +952,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9c49430f4cd81c6a34e5d55bab51e19630ddd97210d9efe499f7311191ad8857`
 
@@ -1030,7 +965,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:1.16.2`
 
@@ -1054,7 +988,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1068,7 +1001,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -1082,7 +1014,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -1096,7 +1027,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -1110,7 +1040,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `28bf383b629f7c0a5c34c27c49d5ac07177b74a546b03c8a7a225ed340091b96`
 
@@ -1124,7 +1053,6 @@ ENV RETHINKDB_PACKAGE_VERSION=1.16.2+1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bb6c66862b15796ce761d6a0d6ba3c1406b570d3d4b6be0106f20ee28f3d340`
 
@@ -1140,7 +1068,6 @@ RUN apt-get update \
 -	Virtual Size: 54.9 MB (54918735 bytes)
 -	v2 Blob: `sha256:ca3c20940784a6c6d9e1c1ab0d8b02b4c575d941fd188a1b26f00884698c542a`
 -	v2 Content-Length: 23.5 MB (23524622 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:18:02 GMT
 
 #### `69e303e7bdbcc5eb047bf77656bf56c1c3012aa0de8c08bea5c0c18d4d933886`
 
@@ -1154,7 +1081,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c049b8a30a8d94d94264eb9ecce48f5447666777763584f19ab172ebc5d67f21`
 
@@ -1168,7 +1094,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2de5846029afe721dadc8988dcc2fd524cd7e645090f04a614bd0abd29e8890e`
 
@@ -1182,7 +1107,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ffc076d376ad7e4d05f5eee27ca343f1b52b84e3a2fe2ad9e8c758c92accb755`
 
@@ -1196,7 +1120,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:1.16.3`
 
@@ -1220,7 +1143,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1234,7 +1156,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -1248,7 +1169,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -1262,7 +1182,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -1276,7 +1195,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `0afecaac10a9e7ce1750890ebff3f364c97d13d9e1dedfc4217c571a60a38342`
 
@@ -1290,7 +1208,6 @@ ENV RETHINKDB_PACKAGE_VERSION=1.16.3~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cbf662c8c347018a1f88f2beba4abb4aca1fd3e1d688733645e8997a0d3604c8`
 
@@ -1306,7 +1223,6 @@ RUN apt-get update \
 -	Virtual Size: 54.9 MB (54922786 bytes)
 -	v2 Blob: `sha256:49279a2864af0d31b690d561bdf16b28aec8c7ce976c518099b0a3a9a681a108`
 -	v2 Content-Length: 23.5 MB (23521484 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:04 GMT
 
 #### `2065451333e8f386f635525a80716d8fceb43273638ec16bdec0940f1761f2b0`
 
@@ -1320,7 +1236,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `200bc8793840086fabc0d98811baf4ce267466a8151b105b5236625ddf1b6853`
 
@@ -1334,7 +1249,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b7135394a96e48d7d9bb2fbceeda495ff6c3f11c974e8df23c2cfe538b667177`
 
@@ -1348,7 +1262,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1376f20d638541ab45e858d00509f28457af44234f2adaf4b8a191a389d64bd5`
 
@@ -1362,7 +1275,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:1.16`
 
@@ -1386,7 +1298,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1400,7 +1311,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -1414,7 +1324,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -1428,7 +1337,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -1442,7 +1350,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `0afecaac10a9e7ce1750890ebff3f364c97d13d9e1dedfc4217c571a60a38342`
 
@@ -1456,7 +1363,6 @@ ENV RETHINKDB_PACKAGE_VERSION=1.16.3~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cbf662c8c347018a1f88f2beba4abb4aca1fd3e1d688733645e8997a0d3604c8`
 
@@ -1472,7 +1378,6 @@ RUN apt-get update \
 -	Virtual Size: 54.9 MB (54922786 bytes)
 -	v2 Blob: `sha256:49279a2864af0d31b690d561bdf16b28aec8c7ce976c518099b0a3a9a681a108`
 -	v2 Content-Length: 23.5 MB (23521484 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:04 GMT
 
 #### `2065451333e8f386f635525a80716d8fceb43273638ec16bdec0940f1761f2b0`
 
@@ -1486,7 +1391,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `200bc8793840086fabc0d98811baf4ce267466a8151b105b5236625ddf1b6853`
 
@@ -1500,7 +1404,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b7135394a96e48d7d9bb2fbceeda495ff6c3f11c974e8df23c2cfe538b667177`
 
@@ -1514,7 +1417,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1376f20d638541ab45e858d00509f28457af44234f2adaf4b8a191a389d64bd5`
 
@@ -1528,7 +1430,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:1`
 
@@ -1552,7 +1453,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1566,7 +1466,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -1580,7 +1479,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -1594,7 +1492,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -1608,7 +1505,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `0afecaac10a9e7ce1750890ebff3f364c97d13d9e1dedfc4217c571a60a38342`
 
@@ -1622,7 +1518,6 @@ ENV RETHINKDB_PACKAGE_VERSION=1.16.3~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cbf662c8c347018a1f88f2beba4abb4aca1fd3e1d688733645e8997a0d3604c8`
 
@@ -1638,7 +1533,6 @@ RUN apt-get update \
 -	Virtual Size: 54.9 MB (54922786 bytes)
 -	v2 Blob: `sha256:49279a2864af0d31b690d561bdf16b28aec8c7ce976c518099b0a3a9a681a108`
 -	v2 Content-Length: 23.5 MB (23521484 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:04 GMT
 
 #### `2065451333e8f386f635525a80716d8fceb43273638ec16bdec0940f1761f2b0`
 
@@ -1652,7 +1546,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `200bc8793840086fabc0d98811baf4ce267466a8151b105b5236625ddf1b6853`
 
@@ -1666,7 +1559,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b7135394a96e48d7d9bb2fbceeda495ff6c3f11c974e8df23c2cfe538b667177`
 
@@ -1680,7 +1572,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1376f20d638541ab45e858d00509f28457af44234f2adaf4b8a191a389d64bd5`
 
@@ -1694,7 +1585,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.0.0`
 
@@ -1718,7 +1608,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1732,7 +1621,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -1746,7 +1634,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -1760,7 +1647,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -1774,7 +1660,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `d70ec70535d04e97490e465d50d5a621e550aeb087f1ed30cb644c19b0988b4e`
 
@@ -1788,7 +1673,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.0.0+1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8bdc30ec2f7ab1c0b123e9050efb5a5368cf8af79838c2206f7c2ea0a4df4119`
 
@@ -1804,7 +1688,6 @@ RUN apt-get update \
 -	Virtual Size: 70.7 MB (70723055 bytes)
 -	v2 Blob: `sha256:6f87001f48fc50de8dc67656c1fdcd4230c1f2c2e4a9267ed036872134820671`
 -	v2 Content-Length: 29.3 MB (29301682 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:19:23 GMT
 
 #### `87d81caf538681b04834edfcdd40a9039db1ec96c85e48722d8e1b8f3a6c8c26`
 
@@ -1818,7 +1701,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a90c70fd5e99a2cd91c0967a63df6f716d2dee12f985ef307a5acc9429fd248`
 
@@ -1832,7 +1714,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4954ca197024b3f1df5afac3fa5c6f31e7bc42e31a5a182b3db5ff59f4fdbf17`
 
@@ -1846,7 +1727,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d64105471279c8ea890cb8926e050c2833e38037279bb1e656396cfc5581525`
 
@@ -1860,7 +1740,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.0.1`
 
@@ -1884,7 +1763,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1898,7 +1776,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -1912,7 +1789,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -1926,7 +1802,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -1940,7 +1815,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `23ca5bded338fc84d5c6590208af91ab1369b8c96520677f95c47699f8f91b9b`
 
@@ -1954,7 +1828,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.0.1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dccd10bbdb5d9a1e9e2f62dbab9f6bdb416756a251a9109aa67a6e4f30c992b7`
 
@@ -1970,7 +1843,6 @@ RUN apt-get update \
 -	Virtual Size: 70.7 MB (70723011 bytes)
 -	v2 Blob: `sha256:51090478d600196879b58a89e16ca46e8d9e9cfa6a1e9b4e8d70b2d7f223164b`
 -	v2 Content-Length: 29.3 MB (29301639 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:19:49 GMT
 
 #### `7d2541678e36cdc48c934109f5dab825b6f504bd6438576efca42d954a690d41`
 
@@ -1984,7 +1856,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `995971efd3d06abaec815819fd4186fa557c45866781463fbb72344e571fd28c`
 
@@ -1998,7 +1869,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3df14176dc14125064551f6e92c4f97678aa8bc821cbc35547964026b56f8fa8`
 
@@ -2012,7 +1882,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d279b3ca07fe7713fbc1e109fde7c3f42f04777cb42c73d34b7945390d9e3515`
 
@@ -2026,7 +1895,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.0.2`
 
@@ -2050,7 +1918,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2064,7 +1931,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -2078,7 +1944,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -2092,7 +1957,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -2106,7 +1970,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `6a62612f5a23e70554d0afefe1552a4d314724237d8067c446bd265a50f5bd0a`
 
@@ -2120,7 +1983,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.0.2~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0d117fb5acd6e0757fd3293a3eb862f06d191ff73a598d458beb905c19996be3`
 
@@ -2149,7 +2011,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `31fcdc5c47f6a228c39204d1982b31a164fda68d4b5c3a0f242fdc60e39852fb`
 
@@ -2163,7 +2024,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `78fec8cccb5c9a489786d6b2ff043c06953273020fe7719ed22dab4997244631`
 
@@ -2177,7 +2037,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8edd31c8b95ed3cba9bae93d13f18991446d792d725c57b154b8ab817a24c73d`
 
@@ -2191,7 +2050,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.0.3`
 
@@ -2215,7 +2073,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2229,7 +2086,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -2243,7 +2099,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -2257,7 +2112,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -2271,7 +2125,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `c477f8606e8d932c939b4b2e3f33955263196e065eb11bf8b87460c356559443`
 
@@ -2285,7 +2138,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.0.3~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e7b8f1f41f22d8f0b845177878586fd250ebd37cbd1c5f6ddedf20cdb1f00543`
 
@@ -2301,7 +2153,6 @@ RUN apt-get update \
 -	Virtual Size: 70.7 MB (70736641 bytes)
 -	v2 Blob: `sha256:0a634ca03c8922aa89026c00db6a774b3e66212a1ff0ddb0856f27ce0c30fcd2`
 -	v2 Content-Length: 29.3 MB (29302622 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:20:41 GMT
 
 #### `8241a9fc75e16d25a014b9667b9d044a21c10f2eb63b0e9112243c6a69b59eb2`
 
@@ -2315,7 +2166,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `37c4a0f653152bb79ecad3d0f16f1391479ca960dee0ce2ea3de42130188594e`
 
@@ -2329,7 +2179,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `035fb6decce27bc61fa69028932ea0499bf62d7738ef7e69df6cceebc870524c`
 
@@ -2343,7 +2192,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b8aaae9f232deb4d369b8c4509a0308510062db6c134b9b7ea48e238ce80fb14`
 
@@ -2357,7 +2205,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.0.4`
 
@@ -2381,7 +2228,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2395,7 +2241,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -2409,7 +2254,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -2423,7 +2267,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -2437,7 +2280,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `d81f382f724ef3ecc9f676218e16cb206a07bdd3f3e2ba8e30386b5610aa6edc`
 
@@ -2451,7 +2293,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.0.4~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e0d2d8adf755e1f6ee3dca782b702c1211e8b70f31fb603f65383b1ead7a6f5a`
 
@@ -2480,7 +2321,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79a57888c345325c02e9eafae3b32fe5d099d880de06844c657ee6bc9d76dab9`
 
@@ -2494,7 +2334,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `04016874f9e56ba02e54e7e3e4982523107b463000aabc4c0725858e7fe4a2a8`
 
@@ -2508,7 +2347,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `63e67e88d84fb2fa8c980f76b23efcc82abaf2f877dc688a5cc5216a9b4336d1`
 
@@ -2522,7 +2360,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.0`
 
@@ -2546,7 +2383,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2560,7 +2396,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -2574,7 +2409,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -2588,7 +2422,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -2602,7 +2435,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `d81f382f724ef3ecc9f676218e16cb206a07bdd3f3e2ba8e30386b5610aa6edc`
 
@@ -2616,7 +2448,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.0.4~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e0d2d8adf755e1f6ee3dca782b702c1211e8b70f31fb603f65383b1ead7a6f5a`
 
@@ -2645,7 +2476,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79a57888c345325c02e9eafae3b32fe5d099d880de06844c657ee6bc9d76dab9`
 
@@ -2659,7 +2489,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `04016874f9e56ba02e54e7e3e4982523107b463000aabc4c0725858e7fe4a2a8`
 
@@ -2673,7 +2502,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `63e67e88d84fb2fa8c980f76b23efcc82abaf2f877dc688a5cc5216a9b4336d1`
 
@@ -2687,7 +2515,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.1.0`
 
@@ -2711,7 +2538,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2725,7 +2551,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -2739,7 +2564,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -2753,7 +2577,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -2767,7 +2590,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `7377f16efc79465130bc6f4e339aa18078a0f5dc13db0c60b6ccbf94b4708c6b`
 
@@ -2781,7 +2603,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.1.0+1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6a8ff1485dd5984a84d5362eef8d22269441eac2bbb14d1445b1dad76a319406`
 
@@ -2810,7 +2631,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bf92fcb9db110bfc2d69e031c5b3a2657d9b5f860bba9afd56f9fc2c5d2a9192`
 
@@ -2824,7 +2644,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `df645b834fc999c2a3b4723025ad8ce30a16d55666815c13b7e1e96ed32d03ca`
 
@@ -2838,7 +2657,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2914a6bf7c6d4aca5c69678ada8eaf66adaa10d6d45bd2fa6645b4638754ff7f`
 
@@ -2852,7 +2670,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.1.1`
 
@@ -2876,7 +2693,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2890,7 +2706,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -2904,7 +2719,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -2918,7 +2732,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -2932,7 +2745,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `9ed873d99bb1509b76c81b7b5f354c9484f79f08f5d02ed9a5e2746bdf68a85f`
 
@@ -2946,7 +2758,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.1.1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c78c6b3de40d8c7dddf2a3eb5cb182ef2fcb2d57986c076972904573bfd136f5`
 
@@ -2975,7 +2786,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a714aeec88c1eec70324cd66b5401c4c3902b7ed1354024d40ef2e5c54c4bde`
 
@@ -2989,7 +2799,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af95e06b28903481331c6879fcf25935fea974c2e91c4bbcbbcb4dd792c14a0d`
 
@@ -3003,7 +2812,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b93b1a90975d1b3024a1adb1ac6ca96bcfc8c0bdf5e52a050bb9576095c88a03`
 
@@ -3017,7 +2825,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.1.2`
 
@@ -3041,7 +2848,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3055,7 +2861,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -3069,7 +2874,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -3083,7 +2887,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -3097,7 +2900,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `4eb322f36c7f850184eb7dcf794675bbf872d8d6d8ceb22838d555d014517e44`
 
@@ -3111,7 +2913,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.1.2~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8543d1b49bec2deb417bcfe59d49068cb9c1d1a19342ef481b03f315605a6476`
 
@@ -3127,7 +2928,6 @@ RUN apt-get update \
 -	Virtual Size: 71.1 MB (71063139 bytes)
 -	v2 Blob: `sha256:e6df271875a8c9452ca9763c4493f216dc03fe1387bf389dac43517fcc10dbb3`
 -	v2 Content-Length: 29.7 MB (29657049 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:22:25 GMT
 
 #### `af652d7891b941d1116aae599273de74e3a61a49d06503cefd229c5007ab7c0f`
 
@@ -3141,7 +2941,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa56bf86e85c9aaa56e68294c2a1fd8369aa20df50b2a0902bf6acec9b85a8c4`
 
@@ -3155,7 +2954,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d7ef36d3cea0e99710253d4a6ce72eacdd8ab0f6b1198a5dce10181a342e4b8`
 
@@ -3169,7 +2967,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `db7d28e6edf8a8155c393c74092eb13959453fe360da2fe9c6c2dbb16af9dd2a`
 
@@ -3183,7 +2980,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.1.3`
 
@@ -3207,7 +3003,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3221,7 +3016,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -3235,7 +3029,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -3249,7 +3042,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -3263,7 +3055,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `080e0971c972c6b6fe1d970b0d81287469905603ab894055e30c35b1931a5492`
 
@@ -3277,7 +3068,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.1.3~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6001c0dc5af8605115fc16a886383dcad16ff1773961c8514022b9bcb89430f4`
 
@@ -3306,7 +3096,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c4b97f91c44b1e5cd326c89ab68ebf83974f075ebefc7a9fd294a97946d0157`
 
@@ -3320,7 +3109,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ad9fd203a3a52285657376425f7d29267c81b858965e2fffaa9a6b10390053ca`
 
@@ -3334,7 +3122,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8f4a01a328b3bb70b4f2e17daea6e0f14c1b6f3e52d5d0af60de052105ecd1c4`
 
@@ -3348,7 +3135,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.1.4`
 
@@ -3372,7 +3158,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3386,7 +3171,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -3400,7 +3184,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -3414,7 +3197,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -3428,7 +3210,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `b8c6fc73bd81e0d0fececf0169a7c99caf29ee90843b2a0f3992368ac5992bb2`
 
@@ -3442,7 +3223,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.1.4~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9247051632ecae795f0994860e5b50e4d01fff3d44edd65e5cee84bae1a55199`
 
@@ -3458,7 +3238,6 @@ RUN apt-get update \
 -	Virtual Size: 71.1 MB (71075426 bytes)
 -	v2 Blob: `sha256:ba38a8e40d7abd6e51d47630c1212edb147412ebf2c93c9e9e6b80bfed205cd2`
 -	v2 Content-Length: 29.7 MB (29661294 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:23:15 GMT
 
 #### `d9779afdfd0aadcba176c93b37849bf41f9a51348b8ee2955ec25e0a3a044ff4`
 
@@ -3472,7 +3251,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c42e2b85c1e005054ea851f611e00d03aa7132d41659f904f371768ea6f38916`
 
@@ -3486,7 +3264,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa803bbddd6786431e4530eea40b768e4524d4dcef320a60dc9f8aba18081657`
 
@@ -3500,7 +3277,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `12297e830c023785c7c066461bab83c3e7c76a4d844be843d0f9d54499d87ffe`
 
@@ -3514,7 +3290,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.1.5`
 
@@ -3538,7 +3313,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3552,7 +3326,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -3566,7 +3339,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -3580,7 +3352,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -3594,7 +3365,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `3599160757ffaed55256e9453d6487504d1c6fd2848d277c85e92db833abc680`
 
@@ -3608,7 +3378,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.1.5+2~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `40b3e1e9ccbf175324f9c0a0433cc3778893539a60c06d552cba6c04020d9ca1`
 
@@ -3624,7 +3393,6 @@ RUN apt-get update \
 -	Virtual Size: 56.1 MB (56080592 bytes)
 -	v2 Blob: `sha256:7f4c164fd4cfcf7d8e9906092128e312c47400e118f3956d6852c104d8579505`
 -	v2 Content-Length: 23.9 MB (23938370 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:23:41 GMT
 
 #### `acd8d6ed8d8e1ca86006d0865ace8a135aaaa2697647d286dec8ecae57eb51dd`
 
@@ -3638,7 +3406,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `586569788d4081fb9ed2d307466717f410d02c41972845998a584ee1b273d8b4`
 
@@ -3652,7 +3419,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15205cd3187e4b825e0de47763d713919b51add898c2f8d6cf8cf9bc97afc507`
 
@@ -3666,7 +3432,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b8dfdec397cf36e0d63deb06546566b3468ac7c78541d3535230baecf58651ec`
 
@@ -3680,7 +3445,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.1.6`
 
@@ -3704,7 +3468,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3718,7 +3481,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -3732,7 +3494,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -3746,7 +3507,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -3760,7 +3520,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `8cffdf1d143f5ab1c2ee3abb4de7400e65583598612d7d8c0a6faed9b8f5ac57`
 
@@ -3774,7 +3533,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.1.6+1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fe0b9efd16d8e3a71eb24fedddbbe9bf6bca485dd019298c7e2485ae28f59a2`
 
@@ -3790,7 +3548,6 @@ RUN apt-get update \
 -	Virtual Size: 56.1 MB (56064208 bytes)
 -	v2 Blob: `sha256:2103c40e7fd5d1aa966c95f0af551f3c2dfe5f5005e56940e688c37cac803c79`
 -	v2 Content-Length: 23.9 MB (23922551 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:21:09 GMT
 
 #### `e4c13625d086ae4b2d2a821b5c2e4b6800446319b99c215d5de3468ab07713fa`
 
@@ -3804,7 +3561,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbd6e7c310abcb985c559368d584fd420b352bdc8053cbe85935c2476c0eb633`
 
@@ -3818,7 +3574,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dd8e322c19b44fe4adcf8dd18213ed59e958f626cdc41718e4f46a9283a7a741`
 
@@ -3832,7 +3587,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9f78e9249b1f52912a30130b59e0fd490bfb840be9f621cb0679da57778c7ea2`
 
@@ -3846,7 +3600,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.1`
 
@@ -3870,7 +3623,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3884,7 +3636,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -3898,7 +3649,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -3912,7 +3662,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -3926,7 +3675,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `8cffdf1d143f5ab1c2ee3abb4de7400e65583598612d7d8c0a6faed9b8f5ac57`
 
@@ -3940,7 +3688,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.1.6+1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9fe0b9efd16d8e3a71eb24fedddbbe9bf6bca485dd019298c7e2485ae28f59a2`
 
@@ -3956,7 +3703,6 @@ RUN apt-get update \
 -	Virtual Size: 56.1 MB (56064208 bytes)
 -	v2 Blob: `sha256:2103c40e7fd5d1aa966c95f0af551f3c2dfe5f5005e56940e688c37cac803c79`
 -	v2 Content-Length: 23.9 MB (23922551 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:21:09 GMT
 
 #### `e4c13625d086ae4b2d2a821b5c2e4b6800446319b99c215d5de3468ab07713fa`
 
@@ -3970,7 +3716,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dbd6e7c310abcb985c559368d584fd420b352bdc8053cbe85935c2476c0eb633`
 
@@ -3984,7 +3729,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dd8e322c19b44fe4adcf8dd18213ed59e958f626cdc41718e4f46a9283a7a741`
 
@@ -3998,7 +3742,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9f78e9249b1f52912a30130b59e0fd490bfb840be9f621cb0679da57778c7ea2`
 
@@ -4012,7 +3755,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.2.0`
 
@@ -4036,7 +3778,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4050,7 +3791,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -4064,7 +3804,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -4078,7 +3817,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -4092,7 +3830,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `475d07ceb60aae545ef7b79c61a3df340e73e0f5b05ae3f5c430718056a776f9`
 
@@ -4106,7 +3843,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.2.0~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0fb5736aa3bbb2f8b4a2b618add7f5ba89a34996f98b881f164ce5058e8c676`
 
@@ -4122,7 +3858,6 @@ RUN apt-get update \
 -	Virtual Size: 56.7 MB (56745294 bytes)
 -	v2 Blob: `sha256:ab4111184fff5e505d2ca54b5f7f50b80d05ef0fe27be391bed39f7139d19044`
 -	v2 Content-Length: 24.1 MB (24069710 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:24:13 GMT
 
 #### `00d6e04810ae26d37576e5e03076765cbae1acb630c7c510bf21509afb8b2300`
 
@@ -4136,7 +3871,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0ca48f413f9c2c332dc8945dc5e47f6de03a7a74dc69f000827ec32521049ee7`
 
@@ -4150,7 +3884,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7e0ce1d255ae6f9dfc8c4eb3bd26cccf3be53146c289099abd07295e2af7948`
 
@@ -4164,7 +3897,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `677896b1bdc50b5732ed69c3ad87420798f88937b020b32e6b378257e2d6e3b5`
 
@@ -4178,7 +3910,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.2.1`
 
@@ -4202,7 +3933,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4216,7 +3946,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -4230,7 +3959,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -4244,7 +3972,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -4258,7 +3985,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `255ebe831349b9e1fb90bd1d49ac989b8306f63f3791fb22bd7fd39027148b06`
 
@@ -4272,7 +3998,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.2.1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `24358b70e8eb70c7067c40a2927b4f44c2bde3d60dd73cff6f209d08e97dc904`
 
@@ -4288,7 +4013,6 @@ RUN apt-get update \
 -	Virtual Size: 56.7 MB (56745231 bytes)
 -	v2 Blob: `sha256:fffb30f0c72aaf53a38ee250f08bfd026289c4630954bf6af62f4763583db0f7`
 -	v2 Content-Length: 24.1 MB (24069288 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:24:37 GMT
 
 #### `a8e9f16c1addb3e0df90c9121f8a127634179151f65324b65dcae4c20b4f0c3e`
 
@@ -4302,7 +4026,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1bb20243e47239c0ccd01b118a59b0760d4ad3bb849fcee3211eee44d2715f90`
 
@@ -4316,7 +4039,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `30f6021d559ac046868eb889d9c15d6a2d53e554009da0280800fbbdb031b96b`
 
@@ -4330,7 +4052,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6bbfa7806184bd3d8928da425bbc5481a58523a2588401baaf422d979e7c78fe`
 
@@ -4344,7 +4065,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.2.2`
 
@@ -4368,7 +4088,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4382,7 +4101,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -4396,7 +4114,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -4410,7 +4127,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -4424,7 +4140,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `4d0282df253a4c945d40dfe1e0eb71c1d989f3775812ce7b023dfcbdac89b936`
 
@@ -4438,7 +4153,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.2.2~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0e9fe5c11805df5f1430ae492c71a726ba8d205e92d39f2da806643bb474f6e`
 
@@ -4454,7 +4168,6 @@ RUN apt-get update \
 -	Virtual Size: 56.8 MB (56765583 bytes)
 -	v2 Blob: `sha256:4cae08f963103a2f5915ea621a3120651b2e5499a513557d4c8a8cdb41072179`
 -	v2 Content-Length: 24.1 MB (24072842 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:25:01 GMT
 
 #### `e9dbabd18728fc9e9af1a405b110dfdb430d4b56bc75930033ee2877f9f18e48`
 
@@ -4468,7 +4181,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ccf4d82ec8a0e755658afd2122075daf0f1f83bdb33b974df7ee548063c4bc8`
 
@@ -4482,7 +4194,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `51945d9c82ff5839b9eeee0567ffe70ad1531d075a97c39e947dd8176728805f`
 
@@ -4496,7 +4207,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8822454f959ee17d873206b6e5c0442667768643b40fa142929ebf8cbd5a08ec`
 
@@ -4510,7 +4220,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.2.3`
 
@@ -4534,7 +4243,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4548,7 +4256,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -4562,7 +4269,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -4576,7 +4282,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -4590,7 +4295,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `f2eaeeba8f0d36aaa8caa3c4ecbc1ab24d75b1b48232d0ac71bccd1aff5cd73d`
 
@@ -4604,7 +4308,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.2.3+1~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6a6c3c31496724d14345ea276eaaedc9f1fe0fc461c25f270e85d2ab661ab2a0`
 
@@ -4620,7 +4323,6 @@ RUN apt-get update \
 -	Virtual Size: 56.8 MB (56765245 bytes)
 -	v2 Blob: `sha256:6dca95f22462e10dde1baa2e05140c8fa94b908d0ac91b9fe142ac7001cd64e8`
 -	v2 Content-Length: 24.1 MB (24072759 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:25:26 GMT
 
 #### `3307ad371182b67fafe31b118215175495dc2d4a1579f9aea34a62d025c9e79c`
 
@@ -4634,7 +4336,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0d2bba454dc0f23e58c858ae217522458844f793fdbe4285c452f3fc930235f1`
 
@@ -4648,7 +4349,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8329c209e8750c62a90ecaf178342e5ad21697ddcde68b43d560d428d1fd88b8`
 
@@ -4662,7 +4362,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3220f903988f22205f6d3da2ea3e8c097c50a613b24ad94267620b68dbe8a81a`
 
@@ -4676,7 +4375,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.2.4`
 
@@ -4700,7 +4398,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4714,7 +4411,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -4728,7 +4424,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -4742,7 +4437,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -4756,7 +4450,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `e614b82adcfe18014561101a7a08aa24ab5f5f22b91b249cf2b46be2ee226496`
 
@@ -4770,7 +4463,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.2.4~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9ce7c75ff49f02d556b031d5bf3277154c25e9f40eae824e70bc1e62a782bf26`
 
@@ -4786,7 +4478,6 @@ RUN apt-get update \
 -	Virtual Size: 56.8 MB (56768464 bytes)
 -	v2 Blob: `sha256:23a4a4a2714ddc29328a4b6286ef0dacbe8e13f64500098cde9a47e750671fb8`
 -	v2 Content-Length: 24.1 MB (24074617 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:25:51 GMT
 
 #### `f83da4c225797c3a2887297b7279131af12c42800e222b2e6b99a5ed6bd4d7d6`
 
@@ -4800,7 +4491,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `61682ae543bafc4b8fc1da51ed9e38fd4b33b3a0c1ed04d21a5ca1d7f2bdcbac`
 
@@ -4814,7 +4504,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a2340ec6925d7c4967e4eb34aa55ced66906178f478fca2698ced9209916e5e`
 
@@ -4828,7 +4517,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a23b5c460161710ded9623284901d16e3c5484ca89bd52cc871cac65a1e19d3`
 
@@ -4842,7 +4530,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.2.5`
 
@@ -4866,7 +4553,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4880,7 +4566,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -4894,7 +4579,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -4908,7 +4592,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -4922,7 +4605,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `7f59fc0bb613700a43ad6d419e024d7fa3dd5d49ef698726db1604c91d6181eb`
 
@@ -4936,7 +4618,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.2.5~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c899092717107a21c56cb2e5faa24df0823bc56c08211df838937ebc803797d`
 
@@ -4952,7 +4633,6 @@ RUN apt-get update \
 -	Virtual Size: 56.8 MB (56769809 bytes)
 -	v2 Blob: `sha256:a58ddfcbdf59666c4b19fce3aa575cc90a8a1fa052c32dc970b898497e7fd91e`
 -	v2 Content-Length: 24.1 MB (24079165 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:18:31 GMT
 
 #### `55a3d4b55cf45a03be9fbb20ca43acb9487ee4a79057e5ccb36931ad49fb2499`
 
@@ -4966,7 +4646,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0054e152af2cdbe5dfcfbae6cbf08693225d77a1e24f30dfdce1fc31f1fe5235`
 
@@ -4980,7 +4659,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1c61332f68c5fa88856c5add2fdb25165eabfdde3036fe819c099a92c81ee9e`
 
@@ -4994,7 +4672,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa65be256431fd2f301a6b01fd243466e39db8c5138874fd6a54f8529044e45b`
 
@@ -5008,7 +4685,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2.2`
 
@@ -5032,7 +4708,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5046,7 +4721,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -5060,7 +4734,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -5074,7 +4747,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -5088,7 +4760,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `7f59fc0bb613700a43ad6d419e024d7fa3dd5d49ef698726db1604c91d6181eb`
 
@@ -5102,7 +4773,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.2.5~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c899092717107a21c56cb2e5faa24df0823bc56c08211df838937ebc803797d`
 
@@ -5118,7 +4788,6 @@ RUN apt-get update \
 -	Virtual Size: 56.8 MB (56769809 bytes)
 -	v2 Blob: `sha256:a58ddfcbdf59666c4b19fce3aa575cc90a8a1fa052c32dc970b898497e7fd91e`
 -	v2 Content-Length: 24.1 MB (24079165 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:18:31 GMT
 
 #### `55a3d4b55cf45a03be9fbb20ca43acb9487ee4a79057e5ccb36931ad49fb2499`
 
@@ -5132,7 +4801,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0054e152af2cdbe5dfcfbae6cbf08693225d77a1e24f30dfdce1fc31f1fe5235`
 
@@ -5146,7 +4814,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1c61332f68c5fa88856c5add2fdb25165eabfdde3036fe819c099a92c81ee9e`
 
@@ -5160,7 +4827,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa65be256431fd2f301a6b01fd243466e39db8c5138874fd6a54f8529044e45b`
 
@@ -5174,7 +4840,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:2`
 
@@ -5198,7 +4863,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5212,7 +4876,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -5226,7 +4889,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -5240,7 +4902,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -5254,7 +4915,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `7f59fc0bb613700a43ad6d419e024d7fa3dd5d49ef698726db1604c91d6181eb`
 
@@ -5268,7 +4928,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.2.5~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c899092717107a21c56cb2e5faa24df0823bc56c08211df838937ebc803797d`
 
@@ -5284,7 +4943,6 @@ RUN apt-get update \
 -	Virtual Size: 56.8 MB (56769809 bytes)
 -	v2 Blob: `sha256:a58ddfcbdf59666c4b19fce3aa575cc90a8a1fa052c32dc970b898497e7fd91e`
 -	v2 Content-Length: 24.1 MB (24079165 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:18:31 GMT
 
 #### `55a3d4b55cf45a03be9fbb20ca43acb9487ee4a79057e5ccb36931ad49fb2499`
 
@@ -5298,7 +4956,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0054e152af2cdbe5dfcfbae6cbf08693225d77a1e24f30dfdce1fc31f1fe5235`
 
@@ -5312,7 +4969,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1c61332f68c5fa88856c5add2fdb25165eabfdde3036fe819c099a92c81ee9e`
 
@@ -5326,7 +4982,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa65be256431fd2f301a6b01fd243466e39db8c5138874fd6a54f8529044e45b`
 
@@ -5340,7 +4995,6 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rethinkdb:latest`
 
@@ -5364,7 +5018,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5378,7 +5031,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6eb1b8e18f2ba550b4375d528732cc7fb6188c99c6651edc650a8f085e1caf5`
 
@@ -5392,7 +5044,6 @@ MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2671a68ac77a71fa8d5bdad0d3fd69943aad23896dca713542a493afdba85bec`
 
@@ -5406,7 +5057,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E0
 -	Virtual Size: 1.2 KB (1204 bytes)
 -	v2 Blob: `sha256:1ea99176905ddab09b1da01b0c829a9affa35fdf8bf2a70aabe6cd49bb250975`
 -	v2 Content-Length: 1.4 KB (1443 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:12 GMT
 
 #### `ca60c0d07644188912c1d90f1820b02ec92ee184fae60c20c535b5893ec8cb1b`
 
@@ -5420,7 +5070,6 @@ RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.
 -	Virtual Size: 50.0 B
 -	v2 Blob: `sha256:be2a27fe9a203a113393a58c900b0bf7b46105368a8bd3373c0ee1f95cc00e90`
 -	v2 Content-Length: 215.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 18:15:10 GMT
 
 #### `7f59fc0bb613700a43ad6d419e024d7fa3dd5d49ef698726db1604c91d6181eb`
 
@@ -5434,7 +5083,6 @@ ENV RETHINKDB_PACKAGE_VERSION=2.2.5~0jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c899092717107a21c56cb2e5faa24df0823bc56c08211df838937ebc803797d`
 
@@ -5450,7 +5098,6 @@ RUN apt-get update \
 -	Virtual Size: 56.8 MB (56769809 bytes)
 -	v2 Blob: `sha256:a58ddfcbdf59666c4b19fce3aa575cc90a8a1fa052c32dc970b898497e7fd91e`
 -	v2 Content-Length: 24.1 MB (24079165 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:18:31 GMT
 
 #### `55a3d4b55cf45a03be9fbb20ca43acb9487ee4a79057e5ccb36931ad49fb2499`
 
@@ -5464,7 +5111,6 @@ VOLUME [/data]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0054e152af2cdbe5dfcfbae6cbf08693225d77a1e24f30dfdce1fc31f1fe5235`
 
@@ -5478,7 +5124,6 @@ WORKDIR /data
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b1c61332f68c5fa88856c5add2fdb25165eabfdde3036fe819c099a92c81ee9e`
 
@@ -5492,7 +5137,6 @@ CMD ["rethinkdb" "--bind" "all"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fa65be256431fd2f301a6b01fd243466e39db8c5138874fd6a54f8529044e45b`
 
@@ -5506,4 +5150,3 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

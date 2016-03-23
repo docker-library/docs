@@ -97,7 +97,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -201,7 +200,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -215,7 +213,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -268,7 +265,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -288,7 +284,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -373,7 +368,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 305.5 MB (305457631 bytes)
 -	v2 Blob: `sha256:f03960aa16ff311e7355591109eaea106ccd52eabfc52b540f1411f5e2082917`
 -	v2 Content-Length: 282.4 MB (282388995 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:22:28 GMT
 
 #### `3046579cb44f48cf14943dac109f1c25a4822490c4095572482ef770746315a1`
 
@@ -535,7 +529,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -639,7 +632,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -653,7 +645,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -706,7 +697,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -726,7 +716,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -811,7 +800,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 305.5 MB (305457631 bytes)
 -	v2 Blob: `sha256:f03960aa16ff311e7355591109eaea106ccd52eabfc52b540f1411f5e2082917`
 -	v2 Content-Length: 282.4 MB (282388995 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:22:28 GMT
 
 #### `3046579cb44f48cf14943dac109f1c25a4822490c4095572482ef770746315a1`
 
@@ -973,7 +961,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -1077,7 +1064,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -1091,7 +1077,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -1144,7 +1129,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -1164,7 +1148,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -1249,7 +1232,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 305.5 MB (305457631 bytes)
 -	v2 Blob: `sha256:f03960aa16ff311e7355591109eaea106ccd52eabfc52b540f1411f5e2082917`
 -	v2 Content-Length: 282.4 MB (282388995 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:22:28 GMT
 
 #### `3046579cb44f48cf14943dac109f1c25a4822490c4095572482ef770746315a1`
 
@@ -1411,7 +1393,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -1515,7 +1496,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -1529,7 +1509,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -1582,7 +1561,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -1602,7 +1580,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -1687,7 +1664,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 305.5 MB (305457631 bytes)
 -	v2 Blob: `sha256:f03960aa16ff311e7355591109eaea106ccd52eabfc52b540f1411f5e2082917`
 -	v2 Content-Length: 282.4 MB (282388995 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:22:28 GMT
 
 #### `3046579cb44f48cf14943dac109f1c25a4822490c4095572482ef770746315a1`
 
@@ -1849,7 +1825,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -1953,7 +1928,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -1967,7 +1941,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -2020,7 +1993,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -2040,7 +2012,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -2163,7 +2134,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `10f88f7f6094fa6e47e3a62d3296f518c97e6703466fd4d2630dbd66c4dd45db`
 
@@ -2286,7 +2256,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2390,7 +2359,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2404,7 +2372,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -2457,7 +2424,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -2477,7 +2443,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -2600,7 +2565,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `10f88f7f6094fa6e47e3a62d3296f518c97e6703466fd4d2630dbd66c4dd45db`
 
@@ -2723,7 +2687,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2827,7 +2790,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2841,7 +2803,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -2894,7 +2855,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -2914,7 +2874,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -3037,7 +2996,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `10f88f7f6094fa6e47e3a62d3296f518c97e6703466fd4d2630dbd66c4dd45db`
 
@@ -3160,7 +3118,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -3264,7 +3221,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3278,7 +3234,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -3331,7 +3286,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -3351,7 +3305,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -3474,7 +3427,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `10f88f7f6094fa6e47e3a62d3296f518c97e6703466fd4d2630dbd66c4dd45db`
 
@@ -3597,7 +3549,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -3701,7 +3652,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3715,7 +3665,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -3768,7 +3717,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -3788,7 +3736,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -3872,7 +3819,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 255.9 MB (255873737 bytes)
 -	v2 Blob: `sha256:b3171b688767832124bf5cca552302b5e51a6f02ed5347925ee7030e2a16e163`
 -	v2 Content-Length: 233.2 MB (233220004 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:29:22 GMT
 
 #### `4901e28210d10b461fc4a1d346ca0709c016846b04b04f8baa34dfa27a953671`
 
@@ -3912,7 +3858,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `bc6896899f2e91dd766608428577ef89faed64ce790358a58cfb84c219d0326e`
 
@@ -4035,7 +3980,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -4139,7 +4083,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -4153,7 +4096,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -4206,7 +4148,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -4226,7 +4167,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -4310,7 +4250,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 206.2 MB (206180840 bytes)
 -	v2 Blob: `sha256:9e182c2f015db4564a65fde5f2846910bf9658fad3b85081c1ccaeef60b81dff`
 -	v2 Content-Length: 187.1 MB (187101562 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:30:32 GMT
 
 #### `bfe63df247c002dd1c1c5849a92c3d0a0e626809b711d7242c7c664e68ae82c5`
 
@@ -4350,7 +4289,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `d3c1d597904698843de2a8091fff0afa4d940fc22cdcdb18e477ac1f0717787e`
 
@@ -4473,7 +4411,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -4577,7 +4514,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -4591,7 +4527,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -4644,7 +4579,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -4664,7 +4598,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -4748,7 +4681,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 206.2 MB (206180840 bytes)
 -	v2 Blob: `sha256:9e182c2f015db4564a65fde5f2846910bf9658fad3b85081c1ccaeef60b81dff`
 -	v2 Content-Length: 187.1 MB (187101562 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:30:32 GMT
 
 #### `bfe63df247c002dd1c1c5849a92c3d0a0e626809b711d7242c7c664e68ae82c5`
 
@@ -4788,7 +4720,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `d3c1d597904698843de2a8091fff0afa4d940fc22cdcdb18e477ac1f0717787e`
 
@@ -4911,7 +4842,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5015,7 +4945,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5029,7 +4958,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -5082,7 +5010,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -5102,7 +5029,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -5186,7 +5112,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 206.2 MB (206180840 bytes)
 -	v2 Blob: `sha256:9e182c2f015db4564a65fde5f2846910bf9658fad3b85081c1ccaeef60b81dff`
 -	v2 Content-Length: 187.1 MB (187101562 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:30:32 GMT
 
 #### `bfe63df247c002dd1c1c5849a92c3d0a0e626809b711d7242c7c664e68ae82c5`
 
@@ -5226,7 +5151,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `d3c1d597904698843de2a8091fff0afa4d940fc22cdcdb18e477ac1f0717787e`
 

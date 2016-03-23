@@ -40,7 +40,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -97,7 +96,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `e95fa3657c4ed564ab3afeb9d6188dffcbdeb3f907ba801a3d0405ab9cc8d6d5`
 
@@ -186,7 +184,6 @@ RUN set -ex \
 -	Virtual Size: 67.6 MB (67596614 bytes)
 -	v2 Blob: `sha256:477c9167251029ccafc286c23da3e85829c5aa88dd1759c681c6d42f71660804`
 -	v2 Content-Length: 22.1 MB (22089563 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:26:22 GMT
 
 #### `9a02702350d61122bcf7264555ed3ce9cc926d162b578ed9db2c9c27a5720433`
 
@@ -219,7 +216,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237576 bytes)
 -	v2 Blob: `sha256:dccbd4a717b8c490f347246fcd59e2f971c6a918b0e015ab58eaa3f392389e81`
 -	v2 Content-Length: 66.2 MB (66179197 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:26:07 GMT
 
 #### `f49a64c0db50091ed35571d098ba93f8309a76bf2f43d55b70daa2ae365bee09`
 
@@ -246,7 +242,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 36.3 MB (36338097 bytes)
 -	v2 Blob: `sha256:2173bc7d8c02e33f45b39521d2ca0611c76c2c2b37333b786b6270db9552c673`
 -	v2 Content-Length: 14.8 MB (14769711 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:42 GMT
 
 ## `django:1.9-python2`
 
@@ -270,7 +265,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -327,7 +321,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `e95fa3657c4ed564ab3afeb9d6188dffcbdeb3f907ba801a3d0405ab9cc8d6d5`
 
@@ -416,7 +409,6 @@ RUN set -ex \
 -	Virtual Size: 67.6 MB (67596614 bytes)
 -	v2 Blob: `sha256:477c9167251029ccafc286c23da3e85829c5aa88dd1759c681c6d42f71660804`
 -	v2 Content-Length: 22.1 MB (22089563 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:26:22 GMT
 
 #### `9a02702350d61122bcf7264555ed3ce9cc926d162b578ed9db2c9c27a5720433`
 
@@ -449,7 +441,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237576 bytes)
 -	v2 Blob: `sha256:dccbd4a717b8c490f347246fcd59e2f971c6a918b0e015ab58eaa3f392389e81`
 -	v2 Content-Length: 66.2 MB (66179197 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:26:07 GMT
 
 #### `f49a64c0db50091ed35571d098ba93f8309a76bf2f43d55b70daa2ae365bee09`
 
@@ -476,7 +467,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 36.3 MB (36338097 bytes)
 -	v2 Blob: `sha256:2173bc7d8c02e33f45b39521d2ca0611c76c2c2b37333b786b6270db9552c673`
 -	v2 Content-Length: 14.8 MB (14769711 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:42 GMT
 
 ## `django:1-python2`
 
@@ -500,7 +490,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -557,7 +546,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `e95fa3657c4ed564ab3afeb9d6188dffcbdeb3f907ba801a3d0405ab9cc8d6d5`
 
@@ -646,7 +634,6 @@ RUN set -ex \
 -	Virtual Size: 67.6 MB (67596614 bytes)
 -	v2 Blob: `sha256:477c9167251029ccafc286c23da3e85829c5aa88dd1759c681c6d42f71660804`
 -	v2 Content-Length: 22.1 MB (22089563 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:26:22 GMT
 
 #### `9a02702350d61122bcf7264555ed3ce9cc926d162b578ed9db2c9c27a5720433`
 
@@ -679,7 +666,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237576 bytes)
 -	v2 Blob: `sha256:dccbd4a717b8c490f347246fcd59e2f971c6a918b0e015ab58eaa3f392389e81`
 -	v2 Content-Length: 66.2 MB (66179197 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:26:07 GMT
 
 #### `f49a64c0db50091ed35571d098ba93f8309a76bf2f43d55b70daa2ae365bee09`
 
@@ -706,7 +692,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 36.3 MB (36338097 bytes)
 -	v2 Blob: `sha256:2173bc7d8c02e33f45b39521d2ca0611c76c2c2b37333b786b6270db9552c673`
 -	v2 Content-Length: 14.8 MB (14769711 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:42 GMT
 
 ## `django:python2`
 
@@ -730,7 +715,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -787,7 +771,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `e95fa3657c4ed564ab3afeb9d6188dffcbdeb3f907ba801a3d0405ab9cc8d6d5`
 
@@ -876,7 +859,6 @@ RUN set -ex \
 -	Virtual Size: 67.6 MB (67596614 bytes)
 -	v2 Blob: `sha256:477c9167251029ccafc286c23da3e85829c5aa88dd1759c681c6d42f71660804`
 -	v2 Content-Length: 22.1 MB (22089563 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:26:22 GMT
 
 #### `9a02702350d61122bcf7264555ed3ce9cc926d162b578ed9db2c9c27a5720433`
 
@@ -909,7 +891,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237576 bytes)
 -	v2 Blob: `sha256:dccbd4a717b8c490f347246fcd59e2f971c6a918b0e015ab58eaa3f392389e81`
 -	v2 Content-Length: 66.2 MB (66179197 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:26:07 GMT
 
 #### `f49a64c0db50091ed35571d098ba93f8309a76bf2f43d55b70daa2ae365bee09`
 
@@ -936,7 +917,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 36.3 MB (36338097 bytes)
 -	v2 Blob: `sha256:2173bc7d8c02e33f45b39521d2ca0611c76c2c2b37333b786b6270db9552c673`
 -	v2 Content-Length: 14.8 MB (14769711 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:42 GMT
 
 ## `django:python2-onbuild`
 
@@ -960,7 +940,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -991,7 +970,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1012,7 +990,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -1061,7 +1038,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -1161,7 +1137,6 @@ RUN set -ex \
 -	Virtual Size: 63.1 MB (63135315 bytes)
 -	v2 Blob: `sha256:3fde18b50fa25317701b94748abcefbd94a3b86e8d088d2d2d90ea847cbfa759`
 -	v2 Content-Length: 20.0 MB (19960645 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:22 GMT
 
 #### `c5a6e57c5256f3e41d307bc15d8b06ba7c9587b058c35b760d174d709a032fc8`
 
@@ -1175,7 +1150,6 @@ RUN pip install --no-cache-dir virtualenv
 -	Virtual Size: 6.0 MB (6007972 bytes)
 -	v2 Blob: `sha256:1cefa17fad5413bc326726eb5c6ca07e98d23dbc655b4cde2c088075db28fe6e`
 -	v2 Content-Length: 3.2 MB (3208299 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:11 GMT
 
 #### `62ed4f7cdbf541daf8cab74c825294a879bdb7e8aeb37203c3d7cd26dd763bb1`
 
@@ -1202,7 +1176,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:b0f78cdd7a32ff8936f46bbc9f7a7a77d6a39097f85fbac5cfa8c46ade286b23`
 -	v2 Content-Length: 125.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:05 GMT
 
 #### `2fc4c76d0d59aaecf4e1436902940205abe30fd5fe6b36e534b6e4f465c9e982`
 
@@ -1274,7 +1247,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 53.3 MB (53329720 bytes)
 -	v2 Blob: `sha256:034a53c870e47167bf41a619707e6e4fa4162d7e45a33322c249f3cf0037448f`
 -	v2 Content-Length: 16.4 MB (16388995 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:26:51 GMT
 
 #### `ec729df3a3938c9dcdf5632f1a7682ecc89f7c4aad7ba8eab6011564f9e69474`
 
@@ -1324,7 +1296,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1381,7 +1352,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -1469,7 +1439,6 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -1488,7 +1457,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -1521,7 +1489,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237734 bytes)
 -	v2 Blob: `sha256:a33a7912dbf67bf8a227a380f1e4b0090b668cd551008ad5884fde6078211f01`
 -	v2 Content-Length: 66.2 MB (66179773 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:28:01 GMT
 
 #### `65e10abe7329a3127435bbd55fc38ef68d51c7475a7a6711873b2aba394b4ad9`
 
@@ -1548,7 +1515,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 35.3 MB (35310430 bytes)
 -	v2 Blob: `sha256:c069c7051b227b29a9b207556902fbe5aae298335f9abcf416ca796929803903`
 -	v2 Content-Length: 14.8 MB (14750683 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:35 GMT
 
 ## `django:1.9.4`
 
@@ -1572,7 +1538,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1629,7 +1594,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -1717,7 +1681,6 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -1736,7 +1699,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -1769,7 +1731,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237734 bytes)
 -	v2 Blob: `sha256:a33a7912dbf67bf8a227a380f1e4b0090b668cd551008ad5884fde6078211f01`
 -	v2 Content-Length: 66.2 MB (66179773 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:28:01 GMT
 
 #### `65e10abe7329a3127435bbd55fc38ef68d51c7475a7a6711873b2aba394b4ad9`
 
@@ -1796,7 +1757,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 35.3 MB (35310430 bytes)
 -	v2 Blob: `sha256:c069c7051b227b29a9b207556902fbe5aae298335f9abcf416ca796929803903`
 -	v2 Content-Length: 14.8 MB (14750683 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:35 GMT
 
 ## `django:1.9-python3`
 
@@ -1820,7 +1780,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1877,7 +1836,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -1965,7 +1923,6 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -1984,7 +1941,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -2017,7 +1973,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237734 bytes)
 -	v2 Blob: `sha256:a33a7912dbf67bf8a227a380f1e4b0090b668cd551008ad5884fde6078211f01`
 -	v2 Content-Length: 66.2 MB (66179773 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:28:01 GMT
 
 #### `65e10abe7329a3127435bbd55fc38ef68d51c7475a7a6711873b2aba394b4ad9`
 
@@ -2044,7 +1999,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 35.3 MB (35310430 bytes)
 -	v2 Blob: `sha256:c069c7051b227b29a9b207556902fbe5aae298335f9abcf416ca796929803903`
 -	v2 Content-Length: 14.8 MB (14750683 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:35 GMT
 
 ## `django:1.9`
 
@@ -2068,7 +2022,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2125,7 +2078,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -2213,7 +2165,6 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -2232,7 +2183,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -2265,7 +2215,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237734 bytes)
 -	v2 Blob: `sha256:a33a7912dbf67bf8a227a380f1e4b0090b668cd551008ad5884fde6078211f01`
 -	v2 Content-Length: 66.2 MB (66179773 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:28:01 GMT
 
 #### `65e10abe7329a3127435bbd55fc38ef68d51c7475a7a6711873b2aba394b4ad9`
 
@@ -2292,7 +2241,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 35.3 MB (35310430 bytes)
 -	v2 Blob: `sha256:c069c7051b227b29a9b207556902fbe5aae298335f9abcf416ca796929803903`
 -	v2 Content-Length: 14.8 MB (14750683 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:35 GMT
 
 ## `django:1-python3`
 
@@ -2316,7 +2264,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2373,7 +2320,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -2461,7 +2407,6 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -2480,7 +2425,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -2513,7 +2457,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237734 bytes)
 -	v2 Blob: `sha256:a33a7912dbf67bf8a227a380f1e4b0090b668cd551008ad5884fde6078211f01`
 -	v2 Content-Length: 66.2 MB (66179773 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:28:01 GMT
 
 #### `65e10abe7329a3127435bbd55fc38ef68d51c7475a7a6711873b2aba394b4ad9`
 
@@ -2540,7 +2483,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 35.3 MB (35310430 bytes)
 -	v2 Blob: `sha256:c069c7051b227b29a9b207556902fbe5aae298335f9abcf416ca796929803903`
 -	v2 Content-Length: 14.8 MB (14750683 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:35 GMT
 
 ## `django:1`
 
@@ -2564,7 +2506,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2621,7 +2562,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -2709,7 +2649,6 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -2728,7 +2667,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -2761,7 +2699,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237734 bytes)
 -	v2 Blob: `sha256:a33a7912dbf67bf8a227a380f1e4b0090b668cd551008ad5884fde6078211f01`
 -	v2 Content-Length: 66.2 MB (66179773 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:28:01 GMT
 
 #### `65e10abe7329a3127435bbd55fc38ef68d51c7475a7a6711873b2aba394b4ad9`
 
@@ -2788,7 +2725,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 35.3 MB (35310430 bytes)
 -	v2 Blob: `sha256:c069c7051b227b29a9b207556902fbe5aae298335f9abcf416ca796929803903`
 -	v2 Content-Length: 14.8 MB (14750683 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:35 GMT
 
 ## `django:python3`
 
@@ -2812,7 +2748,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2869,7 +2804,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -2957,7 +2891,6 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -2976,7 +2909,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -3009,7 +2941,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237734 bytes)
 -	v2 Blob: `sha256:a33a7912dbf67bf8a227a380f1e4b0090b668cd551008ad5884fde6078211f01`
 -	v2 Content-Length: 66.2 MB (66179773 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:28:01 GMT
 
 #### `65e10abe7329a3127435bbd55fc38ef68d51c7475a7a6711873b2aba394b4ad9`
 
@@ -3036,7 +2967,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 35.3 MB (35310430 bytes)
 -	v2 Blob: `sha256:c069c7051b227b29a9b207556902fbe5aae298335f9abcf416ca796929803903`
 -	v2 Content-Length: 14.8 MB (14750683 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:35 GMT
 
 ## `django:latest`
 
@@ -3060,7 +2990,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3117,7 +3046,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.4 MB (7392613 bytes)
 -	v2 Blob: `sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331`
 -	v2 Content-Length: 3.3 MB (3315065 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:38:31 GMT
 
 #### `a595671d21c0160a61993c19682bd49dc99dbb75ab9d16440ef28ad06bf83cf1`
 
@@ -3205,7 +3133,6 @@ RUN set -ex \
 -	Virtual Size: 83.1 MB (83071753 bytes)
 -	v2 Blob: `sha256:2a5023bf6a3080103bad2c979257346a5f688cb7eced5dd6493e26015dcc2f3b`
 -	v2 Content-Length: 24.1 MB (24115991 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:25:01 GMT
 
 #### `c0aa9403f7ced746423a347c6d9b706ba0e35a028a669a7b9f978ad177c87903`
 
@@ -3224,7 +3151,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:0f8cf125eabf75a9bf6b186b4f8a596ce06f99d4cde2c8a4e32bfe6f62f20176`
 -	v2 Content-Length: 273.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:24:49 GMT
 
 #### `769773b90a0d0c2f7fc15590269163d06f139bd7a48eaf125b6eb8df4c565b58`
 
@@ -3257,7 +3183,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 200.2 MB (200237734 bytes)
 -	v2 Blob: `sha256:a33a7912dbf67bf8a227a380f1e4b0090b668cd551008ad5884fde6078211f01`
 -	v2 Content-Length: 66.2 MB (66179773 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:28:01 GMT
 
 #### `65e10abe7329a3127435bbd55fc38ef68d51c7475a7a6711873b2aba394b4ad9`
 
@@ -3284,7 +3209,6 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Virtual Size: 35.3 MB (35310430 bytes)
 -	v2 Blob: `sha256:c069c7051b227b29a9b207556902fbe5aae298335f9abcf416ca796929803903`
 -	v2 Content-Length: 14.8 MB (14750683 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:27:35 GMT
 
 ## `django:python3-onbuild`
 
@@ -3308,7 +3232,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3339,7 +3262,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3360,7 +3282,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -3409,7 +3330,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -3508,7 +3428,6 @@ RUN set -ex \
 -	Virtual Size: 78.7 MB (78709824 bytes)
 -	v2 Blob: `sha256:bbaa314a59256efa421e0206169cef3612c97d31d3022d4428c8fcc2e0f59884`
 -	v2 Content-Length: 22.0 MB (22021549 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:29:37 GMT
 
 #### `6270f861c46343b9627afb56fd71d88ec86a7ce73c1bdfbede508555684137c1`
 
@@ -3527,7 +3446,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:629f63939484e94b60907d9b045bca4068d34206246b5d4fc027d0307c5355ec`
 -	v2 Content-Length: 268.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:29:25 GMT
 
 #### `3483ae69fd8c2f984ce4a16aa74145947b397194635788872af676ad4126fcbb`
 
@@ -3554,7 +3472,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ef787123d127c647232cc377b0b8951e4461d5ec51e7ed864a8d8a5263ba5839`
 -	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:29:20 GMT
 
 #### `d6d5fd319aa1f8cda0332720216dd31998978ed0dddd615194754ab5ef268f47`
 
@@ -3675,7 +3592,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3706,7 +3622,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3727,7 +3642,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `c8bb6b7c8be6a598f8fca43966e84ece9e368b15b36b75f8a73e028ee4b9face`
 
@@ -3776,7 +3690,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -3875,7 +3788,6 @@ RUN set -ex \
 -	Virtual Size: 78.7 MB (78709824 bytes)
 -	v2 Blob: `sha256:bbaa314a59256efa421e0206169cef3612c97d31d3022d4428c8fcc2e0f59884`
 -	v2 Content-Length: 22.0 MB (22021549 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:29:37 GMT
 
 #### `6270f861c46343b9627afb56fd71d88ec86a7ce73c1bdfbede508555684137c1`
 
@@ -3894,7 +3806,6 @@ RUN cd /usr/local/bin \
 -	Virtual Size: 48.0 B
 -	v2 Blob: `sha256:629f63939484e94b60907d9b045bca4068d34206246b5d4fc027d0307c5355ec`
 -	v2 Content-Length: 268.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:29:25 GMT
 
 #### `3483ae69fd8c2f984ce4a16aa74145947b397194635788872af676ad4126fcbb`
 
@@ -3921,7 +3832,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ef787123d127c647232cc377b0b8951e4461d5ec51e7ed864a8d8a5263ba5839`
 -	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 05:29:20 GMT
 
 #### `d6d5fd319aa1f8cda0332720216dd31998978ed0dddd615194754ab5ef268f47`
 

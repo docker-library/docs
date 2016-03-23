@@ -27,7 +27,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -41,7 +40,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -59,7 +57,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -80,7 +77,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `96dfa596086b3ba906621f3cb3f29f9e3bd3feef940c82ccb37b8e447a6c22ac`
 
@@ -94,7 +90,6 @@ MAINTAINER Rob Hoelz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `332da07f1d9dcfee67a3ffb01683d0ec6bf4cee1b685f44a440dacf154fc33be`
 
@@ -108,7 +103,6 @@ RUN groupadd -r perl6 && useradd -r -g perl6 perl6
 -	Virtual Size: 330.4 KB (330406 bytes)
 -	v2 Blob: `sha256:b544e3fe3b5c9685da5e9123ebe143c93b33e89472bac188d4c52dfd9a019b70`
 -	v2 Content-Length: 2.1 KB (2052 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:09:41 GMT
 
 #### `39532ba73eb84c885e6fa2fa5bb252966ef85ecd6641a2b8cc9632b7105e7104`
 
@@ -122,7 +116,6 @@ ENV rakudo_version=2016.01
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19a39917282c9948bc9acd3bdbf3b00ba8b9ce90ed82feb050083d6a9401a999`
 
@@ -168,7 +161,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a328d09aaa6dd516836279375951fb72806976ae18f08a9f95a8442e305cac0`
 
@@ -182,7 +174,6 @@ CMD ["rlwrap" "perl6"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `rakudo-star:latest`
 
@@ -206,7 +197,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -220,7 +210,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -238,7 +227,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -259,7 +247,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `96dfa596086b3ba906621f3cb3f29f9e3bd3feef940c82ccb37b8e447a6c22ac`
 
@@ -273,7 +260,6 @@ MAINTAINER Rob Hoelz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `332da07f1d9dcfee67a3ffb01683d0ec6bf4cee1b685f44a440dacf154fc33be`
 
@@ -287,7 +273,6 @@ RUN groupadd -r perl6 && useradd -r -g perl6 perl6
 -	Virtual Size: 330.4 KB (330406 bytes)
 -	v2 Blob: `sha256:b544e3fe3b5c9685da5e9123ebe143c93b33e89472bac188d4c52dfd9a019b70`
 -	v2 Content-Length: 2.1 KB (2052 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 18:09:41 GMT
 
 #### `39532ba73eb84c885e6fa2fa5bb252966ef85ecd6641a2b8cc9632b7105e7104`
 
@@ -301,7 +286,6 @@ ENV rakudo_version=2016.01
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `19a39917282c9948bc9acd3bdbf3b00ba8b9ce90ed82feb050083d6a9401a999`
 
@@ -347,7 +331,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a328d09aaa6dd516836279375951fb72806976ae18f08a9f95a8442e305cac0`
 
@@ -361,4 +344,3 @@ CMD ["rlwrap" "perl6"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

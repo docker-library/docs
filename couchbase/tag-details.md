@@ -43,7 +43,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -69,7 +68,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -83,7 +81,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -97,7 +94,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -111,7 +107,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -128,7 +123,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `2a0c2e3eb1f8bfdf1630951d866168525caf83e202482cc40e3d41d39ebe6a93`
 
@@ -142,7 +136,6 @@ ENV CB_VERSION=4.1.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0ac9124b73133b4d6935545481ba219f4c53b4a512fdb1f99735da907cf709cd`
 
@@ -171,7 +164,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 214.0 MB (214004613 bytes)
 -	v2 Blob: `sha256:11df71dd65145374f45786793b73c24ff1c39e55aace0e5cb360103518f67bea`
 -	v2 Content-Length: 87.8 MB (87753352 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:22 GMT
 
 #### `53d260803b9bf1203ba0ba6d0975665d4ea7afd2828744d7873bc1a60db53a5d`
 
@@ -185,7 +177,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:c01cdb91f45077529bc69da9ca2906b76599e1d03b9563174f316d538274c108`
 -	v2 Content-Length: 336.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:26:51 GMT
 
 #### `8f1ef9509d4bd13174ec5cec0f0be72de4c477e19ada2671fb40d6168febaa53`
 
@@ -199,7 +190,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:a0b9aa29408d824e135537eec0585e4108f2347bf095d3662a09edfd5f5ac5f6`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Mon, 14 Dec 2015 18:38:08 GMT
 
 #### `c95c3f6a6682e0fdefb2de55d856dcb1dd5efc551b232fab6132771ae41edd62`
 
@@ -213,7 +203,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d05033938aa6b293d49ca4806c4fd9130bc8d808c285b677f426f9f67d506818`
 
@@ -227,7 +216,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `10dec3794e31b19177a0c868a9ac9f4e27712f899e9dee7221a81a47b298af7d`
 
@@ -241,7 +229,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `559b4bbba2bb607e709a9e61ab7e39c031415995bc578ef233bbb443a5e90a15`
 
@@ -255,7 +242,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:enterprise`
 
@@ -279,7 +265,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -305,7 +290,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -319,7 +303,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -333,7 +316,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -347,7 +329,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -364,7 +345,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `2a0c2e3eb1f8bfdf1630951d866168525caf83e202482cc40e3d41d39ebe6a93`
 
@@ -378,7 +358,6 @@ ENV CB_VERSION=4.1.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0ac9124b73133b4d6935545481ba219f4c53b4a512fdb1f99735da907cf709cd`
 
@@ -407,7 +386,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 214.0 MB (214004613 bytes)
 -	v2 Blob: `sha256:11df71dd65145374f45786793b73c24ff1c39e55aace0e5cb360103518f67bea`
 -	v2 Content-Length: 87.8 MB (87753352 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:22 GMT
 
 #### `53d260803b9bf1203ba0ba6d0975665d4ea7afd2828744d7873bc1a60db53a5d`
 
@@ -421,7 +399,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:c01cdb91f45077529bc69da9ca2906b76599e1d03b9563174f316d538274c108`
 -	v2 Content-Length: 336.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:26:51 GMT
 
 #### `8f1ef9509d4bd13174ec5cec0f0be72de4c477e19ada2671fb40d6168febaa53`
 
@@ -435,7 +412,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:a0b9aa29408d824e135537eec0585e4108f2347bf095d3662a09edfd5f5ac5f6`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Mon, 14 Dec 2015 18:38:08 GMT
 
 #### `c95c3f6a6682e0fdefb2de55d856dcb1dd5efc551b232fab6132771ae41edd62`
 
@@ -449,7 +425,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d05033938aa6b293d49ca4806c4fd9130bc8d808c285b677f426f9f67d506818`
 
@@ -463,7 +438,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `10dec3794e31b19177a0c868a9ac9f4e27712f899e9dee7221a81a47b298af7d`
 
@@ -477,7 +451,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `559b4bbba2bb607e709a9e61ab7e39c031415995bc578ef233bbb443a5e90a15`
 
@@ -491,7 +464,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:4.1.0`
 
@@ -515,7 +487,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -541,7 +512,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -555,7 +525,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -569,7 +538,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -583,7 +551,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -600,7 +567,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `2a0c2e3eb1f8bfdf1630951d866168525caf83e202482cc40e3d41d39ebe6a93`
 
@@ -614,7 +580,6 @@ ENV CB_VERSION=4.1.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0ac9124b73133b4d6935545481ba219f4c53b4a512fdb1f99735da907cf709cd`
 
@@ -643,7 +608,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 214.0 MB (214004613 bytes)
 -	v2 Blob: `sha256:11df71dd65145374f45786793b73c24ff1c39e55aace0e5cb360103518f67bea`
 -	v2 Content-Length: 87.8 MB (87753352 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:22 GMT
 
 #### `53d260803b9bf1203ba0ba6d0975665d4ea7afd2828744d7873bc1a60db53a5d`
 
@@ -657,7 +621,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:c01cdb91f45077529bc69da9ca2906b76599e1d03b9563174f316d538274c108`
 -	v2 Content-Length: 336.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:26:51 GMT
 
 #### `8f1ef9509d4bd13174ec5cec0f0be72de4c477e19ada2671fb40d6168febaa53`
 
@@ -671,7 +634,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:a0b9aa29408d824e135537eec0585e4108f2347bf095d3662a09edfd5f5ac5f6`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Mon, 14 Dec 2015 18:38:08 GMT
 
 #### `c95c3f6a6682e0fdefb2de55d856dcb1dd5efc551b232fab6132771ae41edd62`
 
@@ -685,7 +647,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d05033938aa6b293d49ca4806c4fd9130bc8d808c285b677f426f9f67d506818`
 
@@ -699,7 +660,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `10dec3794e31b19177a0c868a9ac9f4e27712f899e9dee7221a81a47b298af7d`
 
@@ -713,7 +673,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `559b4bbba2bb607e709a9e61ab7e39c031415995bc578ef233bbb443a5e90a15`
 
@@ -727,7 +686,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:enterprise-4.1.0`
 
@@ -751,7 +709,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -777,7 +734,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -791,7 +747,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -805,7 +760,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -819,7 +773,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -836,7 +789,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `2a0c2e3eb1f8bfdf1630951d866168525caf83e202482cc40e3d41d39ebe6a93`
 
@@ -850,7 +802,6 @@ ENV CB_VERSION=4.1.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0ac9124b73133b4d6935545481ba219f4c53b4a512fdb1f99735da907cf709cd`
 
@@ -879,7 +830,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 214.0 MB (214004613 bytes)
 -	v2 Blob: `sha256:11df71dd65145374f45786793b73c24ff1c39e55aace0e5cb360103518f67bea`
 -	v2 Content-Length: 87.8 MB (87753352 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:22 GMT
 
 #### `53d260803b9bf1203ba0ba6d0975665d4ea7afd2828744d7873bc1a60db53a5d`
 
@@ -893,7 +843,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:c01cdb91f45077529bc69da9ca2906b76599e1d03b9563174f316d538274c108`
 -	v2 Content-Length: 336.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:26:51 GMT
 
 #### `8f1ef9509d4bd13174ec5cec0f0be72de4c477e19ada2671fb40d6168febaa53`
 
@@ -907,7 +856,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:a0b9aa29408d824e135537eec0585e4108f2347bf095d3662a09edfd5f5ac5f6`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Mon, 14 Dec 2015 18:38:08 GMT
 
 #### `c95c3f6a6682e0fdefb2de55d856dcb1dd5efc551b232fab6132771ae41edd62`
 
@@ -921,7 +869,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d05033938aa6b293d49ca4806c4fd9130bc8d808c285b677f426f9f67d506818`
 
@@ -935,7 +882,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `10dec3794e31b19177a0c868a9ac9f4e27712f899e9dee7221a81a47b298af7d`
 
@@ -949,7 +895,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `559b4bbba2bb607e709a9e61ab7e39c031415995bc578ef233bbb443a5e90a15`
 
@@ -963,7 +908,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:4.0.0`
 
@@ -987,7 +931,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -1013,7 +956,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -1027,7 +969,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -1041,7 +982,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -1055,7 +995,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -1072,7 +1011,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `dbdf1edc120de57bfe41ede3538b5d38ca3b36a207d4ad61be65b379d1f2d257`
 
@@ -1086,7 +1024,6 @@ ENV CB_VERSION=4.0.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `408b0dde50159c12436711fa486a621c1b7ad24cc1e6e47ca31633bb8963eb9a`
 
@@ -1100,7 +1037,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:b7d7efbb3b61bc5fe5403ef824980be86461c605c89397aefed39bdc828a21ef`
 -	v2 Content-Length: 1.7 KB (1695 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:29:31 GMT
 
 #### `9152050e9e3488e600ddb70391d1eceb80793b889936b3b7987869b878ca387b`
 
@@ -1116,7 +1052,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 212.1 MB (212092024 bytes)
 -	v2 Blob: `sha256:346e4e91666e9c3e3119194c9acad9ca7033e79b86ea18e4151ed29beb78c1f3`
 -	v2 Content-Length: 87.4 MB (87383056 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:29:25 GMT
 
 #### `2f3b1a7b955e870618989ee7e51601260f1f7581bf577ff877e811dad6841730`
 
@@ -1130,7 +1065,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:9aa44fcf0aa2e0ea1779181e898a3e52551702b44a8e3427ffbccbfd620cc173`
 -	v2 Content-Length: 340.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:28:50 GMT
 
 #### `e3ce2ae72319a3fad2837615e85baa2524ceff884f8e1d4b35f2b7c0803b2848`
 
@@ -1144,7 +1078,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:2b0577d10daafd953271cf331ee983fd0383ecaaedd75f5360bb65b307b08fa1`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Fri, 02 Oct 2015 21:51:53 GMT
 
 #### `2ef709090051503270874aec73200d106b339cdfc7bceada4c764fb525cb1089`
 
@@ -1158,7 +1091,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `22ba3436062c7f9e4c9e6ff825e3da3c1ea3f145c9dca1790bd97d1b11442bfa`
 
@@ -1172,7 +1104,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39c03ae2ab0460a90116b715548c8740d51863b91fa17e2ae546d98cebda607b`
 
@@ -1186,7 +1117,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e64f1644c13f252a1f96699464bc8f6b1615e2bef619d835a0261b73864d93d6`
 
@@ -1200,7 +1130,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:enterprise-4.0.0`
 
@@ -1224,7 +1153,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -1250,7 +1178,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -1264,7 +1191,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -1278,7 +1204,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -1292,7 +1217,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -1309,7 +1233,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `dbdf1edc120de57bfe41ede3538b5d38ca3b36a207d4ad61be65b379d1f2d257`
 
@@ -1323,7 +1246,6 @@ ENV CB_VERSION=4.0.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `408b0dde50159c12436711fa486a621c1b7ad24cc1e6e47ca31633bb8963eb9a`
 
@@ -1337,7 +1259,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:b7d7efbb3b61bc5fe5403ef824980be86461c605c89397aefed39bdc828a21ef`
 -	v2 Content-Length: 1.7 KB (1695 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:29:31 GMT
 
 #### `9152050e9e3488e600ddb70391d1eceb80793b889936b3b7987869b878ca387b`
 
@@ -1353,7 +1274,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 212.1 MB (212092024 bytes)
 -	v2 Blob: `sha256:346e4e91666e9c3e3119194c9acad9ca7033e79b86ea18e4151ed29beb78c1f3`
 -	v2 Content-Length: 87.4 MB (87383056 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:29:25 GMT
 
 #### `2f3b1a7b955e870618989ee7e51601260f1f7581bf577ff877e811dad6841730`
 
@@ -1367,7 +1287,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:9aa44fcf0aa2e0ea1779181e898a3e52551702b44a8e3427ffbccbfd620cc173`
 -	v2 Content-Length: 340.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:28:50 GMT
 
 #### `e3ce2ae72319a3fad2837615e85baa2524ceff884f8e1d4b35f2b7c0803b2848`
 
@@ -1381,7 +1300,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:2b0577d10daafd953271cf331ee983fd0383ecaaedd75f5360bb65b307b08fa1`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Fri, 02 Oct 2015 21:51:53 GMT
 
 #### `2ef709090051503270874aec73200d106b339cdfc7bceada4c764fb525cb1089`
 
@@ -1395,7 +1313,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `22ba3436062c7f9e4c9e6ff825e3da3c1ea3f145c9dca1790bd97d1b11442bfa`
 
@@ -1409,7 +1326,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39c03ae2ab0460a90116b715548c8740d51863b91fa17e2ae546d98cebda607b`
 
@@ -1423,7 +1339,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e64f1644c13f252a1f96699464bc8f6b1615e2bef619d835a0261b73864d93d6`
 
@@ -1437,7 +1352,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:community-4.0.0`
 
@@ -1461,7 +1375,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -1487,7 +1400,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -1501,7 +1413,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -1515,7 +1426,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -1529,7 +1439,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -1546,7 +1455,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `5952d3adf87a290a455f70a5626e51d8fd65392d3ce0f605e46feda723d3dced`
 
@@ -1560,7 +1468,6 @@ ENV CB_VERSION=4.0.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41dc783ae71613f167e7d50c68494c781dbabcec3ef4c801b988586621b2730f`
 
@@ -1574,7 +1481,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:9bac7eb72f1ccbbe577932a184b51a5869a357de2ce978cc8741d9f36590f898`
 -	v2 Content-Length: 1.7 KB (1692 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:30:32 GMT
 
 #### `d30f9ba6ee201bad21e2454a9a8cc494fb8f791b4ef8cea2d7dbc9524d8df8bf`
 
@@ -1590,7 +1496,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 212.0 MB (212023969 bytes)
 -	v2 Blob: `sha256:b275ce0de8254d6c47c74cde5aa60071f80fc863c2ea2bd97542593b94f61f31`
 -	v2 Content-Length: 87.4 MB (87373575 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:30:27 GMT
 
 #### `5842d3c4818ddd19940ef4aa9f2dc9d25c3616f8e7ef1eefd8c797561efa42da`
 
@@ -1604,7 +1509,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:48e414a1c12f2620c0a471cd0c8cd24030ecfd80b4a2c57a3c557172e29582ac`
 -	v2 Content-Length: 336.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:29:56 GMT
 
 #### `74f544f5915fd8429e137b3f78b4cbd29e07f533082f102884f3c4a666faa32b`
 
@@ -1618,7 +1522,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:2b0577d10daafd953271cf331ee983fd0383ecaaedd75f5360bb65b307b08fa1`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Fri, 02 Oct 2015 21:51:53 GMT
 
 #### `cb4ee059b4aae66e7fdfe7e664b193bdea19ce770035a67ffb447facce029134`
 
@@ -1632,7 +1535,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4fdcb69a749d51bdcacb122bb10b92d53511f933a7737dc353f129aac61c7498`
 
@@ -1646,7 +1548,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aae44f74c712fd79f910512f0c0a0b5ab534cba5afd7aac1c8c950ef0fbe64f6`
 
@@ -1660,7 +1561,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cfc763cf278a79b66edc145180ff93101d64ab320a392f62ac67a07d5f66e86`
 
@@ -1674,7 +1574,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:community`
 
@@ -1698,7 +1597,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -1724,7 +1622,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -1738,7 +1635,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -1752,7 +1648,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -1766,7 +1661,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -1783,7 +1677,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `5952d3adf87a290a455f70a5626e51d8fd65392d3ce0f605e46feda723d3dced`
 
@@ -1797,7 +1690,6 @@ ENV CB_VERSION=4.0.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41dc783ae71613f167e7d50c68494c781dbabcec3ef4c801b988586621b2730f`
 
@@ -1811,7 +1703,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:9bac7eb72f1ccbbe577932a184b51a5869a357de2ce978cc8741d9f36590f898`
 -	v2 Content-Length: 1.7 KB (1692 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:30:32 GMT
 
 #### `d30f9ba6ee201bad21e2454a9a8cc494fb8f791b4ef8cea2d7dbc9524d8df8bf`
 
@@ -1827,7 +1718,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 212.0 MB (212023969 bytes)
 -	v2 Blob: `sha256:b275ce0de8254d6c47c74cde5aa60071f80fc863c2ea2bd97542593b94f61f31`
 -	v2 Content-Length: 87.4 MB (87373575 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:30:27 GMT
 
 #### `5842d3c4818ddd19940ef4aa9f2dc9d25c3616f8e7ef1eefd8c797561efa42da`
 
@@ -1841,7 +1731,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:48e414a1c12f2620c0a471cd0c8cd24030ecfd80b4a2c57a3c557172e29582ac`
 -	v2 Content-Length: 336.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:29:56 GMT
 
 #### `74f544f5915fd8429e137b3f78b4cbd29e07f533082f102884f3c4a666faa32b`
 
@@ -1855,7 +1744,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:2b0577d10daafd953271cf331ee983fd0383ecaaedd75f5360bb65b307b08fa1`
 -	v2 Content-Length: 251.0 B
--	v2 Last-Modified: Fri, 02 Oct 2015 21:51:53 GMT
 
 #### `cb4ee059b4aae66e7fdfe7e664b193bdea19ce770035a67ffb447facce029134`
 
@@ -1869,7 +1757,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4fdcb69a749d51bdcacb122bb10b92d53511f933a7737dc353f129aac61c7498`
 
@@ -1883,7 +1770,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aae44f74c712fd79f910512f0c0a0b5ab534cba5afd7aac1c8c950ef0fbe64f6`
 
@@ -1897,7 +1783,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9cfc763cf278a79b66edc145180ff93101d64ab320a392f62ac67a07d5f66e86`
 
@@ -1911,7 +1796,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:3.1.0`
 
@@ -1935,7 +1819,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -1961,7 +1844,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -1975,7 +1857,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -1989,7 +1870,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -2003,7 +1883,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -2020,7 +1899,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `3dcb06a6027ffae3b22fb331bb07c233f716b52708d32ea88575fefc4fa4279f`
 
@@ -2034,7 +1912,6 @@ ENV CB_VERSION=3.1.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65da8f97d21366d8b6d53eb74219eaf4b80fe937ebd11398fdc7fab20b808d51`
 
@@ -2048,7 +1925,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:8c88617deed40b62326547729c4894ecd58197dc6eb6f8e3ba5d7561fc47db15`
 -	v2 Content-Length: 1.7 KB (1690 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:32:37 GMT
 
 #### `97827ae1ca952ffdb031ca1c957a0cfda353aa53f453ecca5528aa54f868e65f`
 
@@ -2064,7 +1940,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 645.1 MB (645098525 bytes)
 -	v2 Blob: `sha256:dcf6c3fb2b962a184ddf4c59362a2dfef57794aa39bda2832694c345dda40b37`
 -	v2 Content-Length: 213.1 MB (213115870 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:32:27 GMT
 
 #### `8fc42d31789c3c32de36889eb225de35bf82be012afac748b3eae59d67331a1e`
 
@@ -2091,7 +1966,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:3e075545d7c19a0cffcc0817160ca7fd4edb2fb3714daa26a00242c796276b09`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Thu, 03 Sep 2015 23:35:11 GMT
 
 #### `5005e962c8633d38ca8862d4627ad273cee23370755e1d9d1d7442bb5bf0a84f`
 
@@ -2105,7 +1979,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8b512cfdfd32d9b9b1316fc035c3d45d42a2e737117859a467dfa217a148d252`
 
@@ -2119,7 +1992,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7efe5f7c5a00e22a5e24f9a0eb92095db3fef12cd980b7ec62d2ca730f6b62df`
 
@@ -2133,7 +2005,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b93cbd4fa3bb3a9b919936a548bbd1a02bdc3d97d2c3141b2cc70a4e28217fe`
 
@@ -2147,7 +2018,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:enterprise-3.1.0`
 
@@ -2171,7 +2041,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -2197,7 +2066,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -2211,7 +2079,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -2225,7 +2092,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -2239,7 +2105,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -2256,7 +2121,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `3dcb06a6027ffae3b22fb331bb07c233f716b52708d32ea88575fefc4fa4279f`
 
@@ -2270,7 +2134,6 @@ ENV CB_VERSION=3.1.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `65da8f97d21366d8b6d53eb74219eaf4b80fe937ebd11398fdc7fab20b808d51`
 
@@ -2284,7 +2147,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:8c88617deed40b62326547729c4894ecd58197dc6eb6f8e3ba5d7561fc47db15`
 -	v2 Content-Length: 1.7 KB (1690 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:32:37 GMT
 
 #### `97827ae1ca952ffdb031ca1c957a0cfda353aa53f453ecca5528aa54f868e65f`
 
@@ -2300,7 +2162,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 645.1 MB (645098525 bytes)
 -	v2 Blob: `sha256:dcf6c3fb2b962a184ddf4c59362a2dfef57794aa39bda2832694c345dda40b37`
 -	v2 Content-Length: 213.1 MB (213115870 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:32:27 GMT
 
 #### `8fc42d31789c3c32de36889eb225de35bf82be012afac748b3eae59d67331a1e`
 
@@ -2327,7 +2188,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:3e075545d7c19a0cffcc0817160ca7fd4edb2fb3714daa26a00242c796276b09`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Thu, 03 Sep 2015 23:35:11 GMT
 
 #### `5005e962c8633d38ca8862d4627ad273cee23370755e1d9d1d7442bb5bf0a84f`
 
@@ -2341,7 +2201,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8b512cfdfd32d9b9b1316fc035c3d45d42a2e737117859a467dfa217a148d252`
 
@@ -2355,7 +2214,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7efe5f7c5a00e22a5e24f9a0eb92095db3fef12cd980b7ec62d2ca730f6b62df`
 
@@ -2369,7 +2227,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b93cbd4fa3bb3a9b919936a548bbd1a02bdc3d97d2c3141b2cc70a4e28217fe`
 
@@ -2383,7 +2240,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:3.0.3`
 
@@ -2407,7 +2263,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -2433,7 +2288,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -2447,7 +2301,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -2461,7 +2314,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -2475,7 +2327,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -2492,7 +2343,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `b2518724afdea2728dddffba7573bf9dcfc2fab881def0fc9aabbebe7fe3bd3b`
 
@@ -2506,7 +2356,6 @@ ENV CB_VERSION=3.0.3 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8a9b06b1dded0d1596a237b1a09490abe18f16f101a263b1e26ed2388d378cb1`
 
@@ -2520,7 +2369,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:9084885cb15f51bc83b43375be299b2e8b155c9ddd1027fce4318efba7511850`
 -	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:34:22 GMT
 
 #### `5c3bc6414e5d86dba0d41ab65d6bc842b27b81d1d84990b7aeba75e5b9246122`
 
@@ -2536,7 +2384,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 644.3 MB (644285773 bytes)
 -	v2 Blob: `sha256:7c963fef82766ac1d8b2defdd8aae2c886e4b4ba0216385b925153cc6e819918`
 -	v2 Content-Length: 212.8 MB (212842660 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:34:12 GMT
 
 #### `ef05efa1c87132fb7d15b286a364fe3c705d867790e4ded608a3a1273c106a0c`
 
@@ -2550,7 +2397,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:a8b02756ef2cbc40edc5335014c7bf1b97d1b81eed3460c8f845d989bc8b5ef6`
 -	v2 Content-Length: 336.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:33:05 GMT
 
 #### `14c741050d29d5a5a46b0db863561eb481280c37aa00c8863b9fe4743f645e0a`
 
@@ -2564,7 +2410,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:3e075545d7c19a0cffcc0817160ca7fd4edb2fb3714daa26a00242c796276b09`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Thu, 03 Sep 2015 23:35:11 GMT
 
 #### `c9e9f11d33995e546ae672db7e98661e92f715ec944c40cdb65f32ca0920d00b`
 
@@ -2578,7 +2423,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bdb152d4e26722a172537db5e4456f31a156898b49fffb0fc7ad6d76d57c378f`
 
@@ -2592,7 +2436,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fc120bccee72bc1b2eebff06c797bdbf9b61a1368d24c0ffcd322cf59b22ef3c`
 
@@ -2606,7 +2449,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6a9cebe7511c03fc3b2be4e9f8419ec5345e02ae77939de4c7003b2bda4dea4b`
 
@@ -2620,7 +2462,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:enterprise-3.0.3`
 
@@ -2644,7 +2485,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -2670,7 +2510,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -2684,7 +2523,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -2698,7 +2536,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -2712,7 +2549,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -2729,7 +2565,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `b2518724afdea2728dddffba7573bf9dcfc2fab881def0fc9aabbebe7fe3bd3b`
 
@@ -2743,7 +2578,6 @@ ENV CB_VERSION=3.0.3 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8a9b06b1dded0d1596a237b1a09490abe18f16f101a263b1e26ed2388d378cb1`
 
@@ -2757,7 +2591,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:9084885cb15f51bc83b43375be299b2e8b155c9ddd1027fce4318efba7511850`
 -	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:34:22 GMT
 
 #### `5c3bc6414e5d86dba0d41ab65d6bc842b27b81d1d84990b7aeba75e5b9246122`
 
@@ -2773,7 +2606,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 644.3 MB (644285773 bytes)
 -	v2 Blob: `sha256:7c963fef82766ac1d8b2defdd8aae2c886e4b4ba0216385b925153cc6e819918`
 -	v2 Content-Length: 212.8 MB (212842660 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:34:12 GMT
 
 #### `ef05efa1c87132fb7d15b286a364fe3c705d867790e4ded608a3a1273c106a0c`
 
@@ -2787,7 +2619,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:a8b02756ef2cbc40edc5335014c7bf1b97d1b81eed3460c8f845d989bc8b5ef6`
 -	v2 Content-Length: 336.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:33:05 GMT
 
 #### `14c741050d29d5a5a46b0db863561eb481280c37aa00c8863b9fe4743f645e0a`
 
@@ -2801,7 +2632,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:3e075545d7c19a0cffcc0817160ca7fd4edb2fb3714daa26a00242c796276b09`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Thu, 03 Sep 2015 23:35:11 GMT
 
 #### `c9e9f11d33995e546ae672db7e98661e92f715ec944c40cdb65f32ca0920d00b`
 
@@ -2815,7 +2645,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bdb152d4e26722a172537db5e4456f31a156898b49fffb0fc7ad6d76d57c378f`
 
@@ -2829,7 +2658,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fc120bccee72bc1b2eebff06c797bdbf9b61a1368d24c0ffcd322cf59b22ef3c`
 
@@ -2843,7 +2671,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6a9cebe7511c03fc3b2be4e9f8419ec5345e02ae77939de4c7003b2bda4dea4b`
 
@@ -2857,7 +2684,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:3.0.2`
 
@@ -2881,7 +2707,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -2907,7 +2732,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -2921,7 +2745,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -2935,7 +2758,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -2949,7 +2771,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -2966,7 +2787,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `cc7c16f83805669ae9b0f21dea72a97c3df26d53456d0cefa3e9ef0731659335`
 
@@ -2980,7 +2800,6 @@ ENV CB_VERSION=3.0.2 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6319150128576d9a1aa8a1f07e1d1a5a15caf079b062ee9af5a9ea408c4db09`
 
@@ -2994,7 +2813,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:237fff7c6b33f4c34f54e42d2867aa53c73d27a4ea29ba8f0c0757fbbf3b5082`
 -	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:36:56 GMT
 
 #### `99b3daa6e67915ab22e3ff0cbb38e14152601cdbe66dcd1a497a73813e76b257`
 
@@ -3010,7 +2828,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 644.3 MB (644294095 bytes)
 -	v2 Blob: `sha256:50000b37689d40313bdcd6c9319fd9e9ab92559131e7336fceca45f382a73a3a`
 -	v2 Content-Length: 212.9 MB (212850479 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:36:47 GMT
 
 #### `828ce0f156d367773cfe007380153c2776f39b878e316e881113495c9b975434`
 
@@ -3024,7 +2841,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:0e97b87ed69cd9458a3a2a550cb7669b386cd36eff06549c9c3272f50c910431`
 -	v2 Content-Length: 337.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:34:46 GMT
 
 #### `b100121456f71deab0a7615848f1ff478de019a7f13776ef8890ea35c50c7715`
 
@@ -3038,7 +2854,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:3e075545d7c19a0cffcc0817160ca7fd4edb2fb3714daa26a00242c796276b09`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Thu, 03 Sep 2015 23:35:11 GMT
 
 #### `688632937f2d66828909d389154c8f24b0167b11cfdf7b8cf4c85bcfa4573896`
 
@@ -3052,7 +2867,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `81326c32ceff4e280cca728ff8bd61ef269c248ce319d2bfc56fc8a8bc82e74f`
 
@@ -3066,7 +2880,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9d7bd1ff5b63d8fa358d7b0649913f3442aeb9f8b58c1c1b24ad2eb1e7085f59`
 
@@ -3080,7 +2893,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28499e8dc60a25f1e97a901f8210491608c1ffb8c3606cb2e2d4680516c71797`
 
@@ -3094,7 +2906,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:enterprise-3.0.2`
 
@@ -3118,7 +2929,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -3144,7 +2954,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -3158,7 +2967,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -3172,7 +2980,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -3186,7 +2993,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -3203,7 +3009,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `cc7c16f83805669ae9b0f21dea72a97c3df26d53456d0cefa3e9ef0731659335`
 
@@ -3217,7 +3022,6 @@ ENV CB_VERSION=3.0.2 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6319150128576d9a1aa8a1f07e1d1a5a15caf079b062ee9af5a9ea408c4db09`
 
@@ -3231,7 +3035,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:237fff7c6b33f4c34f54e42d2867aa53c73d27a4ea29ba8f0c0757fbbf3b5082`
 -	v2 Content-Length: 1.7 KB (1694 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:36:56 GMT
 
 #### `99b3daa6e67915ab22e3ff0cbb38e14152601cdbe66dcd1a497a73813e76b257`
 
@@ -3247,7 +3050,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 644.3 MB (644294095 bytes)
 -	v2 Blob: `sha256:50000b37689d40313bdcd6c9319fd9e9ab92559131e7336fceca45f382a73a3a`
 -	v2 Content-Length: 212.9 MB (212850479 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:36:47 GMT
 
 #### `828ce0f156d367773cfe007380153c2776f39b878e316e881113495c9b975434`
 
@@ -3261,7 +3063,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:0e97b87ed69cd9458a3a2a550cb7669b386cd36eff06549c9c3272f50c910431`
 -	v2 Content-Length: 337.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:34:46 GMT
 
 #### `b100121456f71deab0a7615848f1ff478de019a7f13776ef8890ea35c50c7715`
 
@@ -3275,7 +3076,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:3e075545d7c19a0cffcc0817160ca7fd4edb2fb3714daa26a00242c796276b09`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Thu, 03 Sep 2015 23:35:11 GMT
 
 #### `688632937f2d66828909d389154c8f24b0167b11cfdf7b8cf4c85bcfa4573896`
 
@@ -3289,7 +3089,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `81326c32ceff4e280cca728ff8bd61ef269c248ce319d2bfc56fc8a8bc82e74f`
 
@@ -3303,7 +3102,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9d7bd1ff5b63d8fa358d7b0649913f3442aeb9f8b58c1c1b24ad2eb1e7085f59`
 
@@ -3317,7 +3115,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `28499e8dc60a25f1e97a901f8210491608c1ffb8c3606cb2e2d4680516c71797`
 
@@ -3331,7 +3128,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:community-3.0.1`
 
@@ -3355,7 +3151,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -3381,7 +3176,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -3395,7 +3189,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -3409,7 +3202,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -3423,7 +3215,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2854b7e10d32a9cb87d165176f06e7e34239f60c7cde397580c23f0dfdf57739`
 
@@ -3440,7 +3231,6 @@ RUN apt-get update &&\
 -	Virtual Size: 23.6 MB (23587847 bytes)
 -	v2 Blob: `sha256:88bc921269b9d65d487f5473ce64f922bddc46f31efcde9f381cc9beed698c4c`
 -	v2 Content-Length: 7.5 MB (7503097 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:27:40 GMT
 
 #### `a55efeaf0a87a0a3eae1225934aa2ef8a7b3181afc51af5fd915f0fcdc251ba4`
 
@@ -3454,7 +3244,6 @@ ENV CB_VERSION=3.0.1 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fd16adb8a85c5cfedc7a1fd1753c289fbaea5ef693f8e36011cbb66353092a55`
 
@@ -3468,7 +3257,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:18c88ba8b1e66c0da2dea984cc50e11563ceeb1389ce4d91d361410b4230dfa4`
 -	v2 Content-Length: 1.7 KB (1691 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:38:38 GMT
 
 #### `7b82acd804c7383928aa99f1bcdcfe3efa10f061dc2a5e73e0cd468bd3a41bfc`
 
@@ -3484,7 +3272,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 645.2 MB (645160725 bytes)
 -	v2 Blob: `sha256:f9a696704d30e1266864090703d8497e21b65f0addaedf2f1a266144f6d449af`
 -	v2 Content-Length: 213.2 MB (213185982 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:38:29 GMT
 
 #### `b08b88161b88bb141716bdb84b14a9c57662f7087929fc5bbd6c932143449abd`
 
@@ -3498,7 +3285,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:69d50929f60e965abd9f65f1d51b2b4420e874216e2502448003914069d32c6c`
 -	v2 Content-Length: 337.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:37:19 GMT
 
 #### `56846f095fa5dfb9f39e9719503409efbcaf97270a29f5a3349c58ddf826f419`
 
@@ -3512,7 +3298,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:3e075545d7c19a0cffcc0817160ca7fd4edb2fb3714daa26a00242c796276b09`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Thu, 03 Sep 2015 23:35:11 GMT
 
 #### `9c3efeefe04dec2f0742031dccfff2dec8813a40e1d8332045cfee463f515031`
 
@@ -3526,7 +3311,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b74a0dbfc3bae99c63f96b94c7c11795f2bce230067804ae0586d21842eca680`
 
@@ -3540,7 +3324,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5f35441f2fc62445c6bb2b87b92fee0e6d89c7ca977f76a26842d2d6f572be0f`
 
@@ -3554,7 +3337,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d2d6d561c0d1876af263fe71ec937b0771f29d15fa78df3b7c09062f6dd3b006`
 
@@ -3568,7 +3350,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:2.5.2`
 
@@ -3592,7 +3373,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -3618,7 +3398,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -3632,7 +3411,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -3646,7 +3424,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -3660,7 +3437,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `238dfc1fd428c9e0ddbd2c500fa91cf6d34a703878e90f120ba8c18ecf5bbe4b`
 
@@ -3677,7 +3453,6 @@ RUN apt-get update &&\
 -	Virtual Size: 25.4 MB (25382778 bytes)
 -	v2 Blob: `sha256:a52b6060bd41a74900d25ed06c97776e382af74fb0c1a416002170971e04938e`
 -	v2 Content-Length: 8.4 MB (8392750 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:40:17 GMT
 
 #### `00a9cc6dc423bcc63feac4234d66af54e4e7e88b58bda12c42c10ff3588cd12a`
 
@@ -3691,7 +3466,6 @@ ENV CB_VERSION=2.5.2 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c5cfbad5fc437818caa62c523dc045831030e24bf812ac5ceb07667549ac6341`
 
@@ -3705,7 +3479,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:75b58a3bc89a2260e5f4af9337b5d2a64e43237e0e5c928fa005d8a42526cde4`
 -	v2 Content-Length: 1.7 KB (1691 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:40:07 GMT
 
 #### `a0746ceb68f0e73bc20715571e85bc0e46b5f78c457b1444d098335255671cac`
 
@@ -3721,7 +3494,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 422.9 MB (422873010 bytes)
 -	v2 Blob: `sha256:30a75e7307dc7329b57d2608a8f26adf138ce3cb99d49c5151495526eef0b81a`
 -	v2 Content-Length: 141.5 MB (141463438 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:39:53 GMT
 
 #### `28f926981ed02b2fbc01a8efff815be7ab07167169358cf4c84ec794fa2b3406`
 
@@ -3735,7 +3507,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:a09e23ff26e5c20bfb7b0b30d554ea3c3c2616aece47a5b9fae044e9ce39810d`
 -	v2 Content-Length: 334.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:39:05 GMT
 
 #### `3da5db2fe528bc68b980017fd50acb89e7d044f0e73556d1ec0ae1093a21d7a8`
 
@@ -3749,7 +3520,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:3e075545d7c19a0cffcc0817160ca7fd4edb2fb3714daa26a00242c796276b09`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Thu, 03 Sep 2015 23:35:11 GMT
 
 #### `44e270d36460cc0759dad720e319ebfd1eb1bea022dd0720095c0e7e2def3341`
 
@@ -3763,7 +3533,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f6a748c02d2bdef39aa26be1a6026dd66aa7622eeb276a8a6a8ad11d0ff938c5`
 
@@ -3777,7 +3546,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dfff1d994cdf2be7dee692af1b7079c5196f82256c0451296e3cafb8749a955d`
 
@@ -3791,7 +3559,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b745c9422462c897bf2c226399d1d19d84dce9d4e5cddeb5cdaf55492356c3c`
 
@@ -3805,7 +3572,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:enterprise-2.5.2`
 
@@ -3829,7 +3595,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -3855,7 +3620,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -3869,7 +3633,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -3883,7 +3646,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -3897,7 +3659,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `238dfc1fd428c9e0ddbd2c500fa91cf6d34a703878e90f120ba8c18ecf5bbe4b`
 
@@ -3914,7 +3675,6 @@ RUN apt-get update &&\
 -	Virtual Size: 25.4 MB (25382778 bytes)
 -	v2 Blob: `sha256:a52b6060bd41a74900d25ed06c97776e382af74fb0c1a416002170971e04938e`
 -	v2 Content-Length: 8.4 MB (8392750 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:40:17 GMT
 
 #### `00a9cc6dc423bcc63feac4234d66af54e4e7e88b58bda12c42c10ff3588cd12a`
 
@@ -3928,7 +3688,6 @@ ENV CB_VERSION=2.5.2 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c5cfbad5fc437818caa62c523dc045831030e24bf812ac5ceb07667549ac6341`
 
@@ -3942,7 +3701,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:75b58a3bc89a2260e5f4af9337b5d2a64e43237e0e5c928fa005d8a42526cde4`
 -	v2 Content-Length: 1.7 KB (1691 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:40:07 GMT
 
 #### `a0746ceb68f0e73bc20715571e85bc0e46b5f78c457b1444d098335255671cac`
 
@@ -3958,7 +3716,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 422.9 MB (422873010 bytes)
 -	v2 Blob: `sha256:30a75e7307dc7329b57d2608a8f26adf138ce3cb99d49c5151495526eef0b81a`
 -	v2 Content-Length: 141.5 MB (141463438 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:39:53 GMT
 
 #### `28f926981ed02b2fbc01a8efff815be7ab07167169358cf4c84ec794fa2b3406`
 
@@ -3972,7 +3729,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:a09e23ff26e5c20bfb7b0b30d554ea3c3c2616aece47a5b9fae044e9ce39810d`
 -	v2 Content-Length: 334.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:39:05 GMT
 
 #### `3da5db2fe528bc68b980017fd50acb89e7d044f0e73556d1ec0ae1093a21d7a8`
 
@@ -3986,7 +3742,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:3e075545d7c19a0cffcc0817160ca7fd4edb2fb3714daa26a00242c796276b09`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Thu, 03 Sep 2015 23:35:11 GMT
 
 #### `44e270d36460cc0759dad720e319ebfd1eb1bea022dd0720095c0e7e2def3341`
 
@@ -4000,7 +3755,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f6a748c02d2bdef39aa26be1a6026dd66aa7622eeb276a8a6a8ad11d0ff938c5`
 
@@ -4014,7 +3768,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dfff1d994cdf2be7dee692af1b7079c5196f82256c0451296e3cafb8749a955d`
 
@@ -4028,7 +3781,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3b745c9422462c897bf2c226399d1d19d84dce9d4e5cddeb5cdaf55492356c3c`
 
@@ -4042,7 +3794,6 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `couchbase:community-2.2.0`
 
@@ -4066,7 +3817,6 @@ ADD file:823107b74929c33422e94dd288ab78e1a593361ba49eb7d30e3a7bfcd322e2f9 in /
 -	Virtual Size: 138.2 MB (138209540 bytes)
 -	v2 Blob: `sha256:6f8c221e49781d21d050fc70839ef01a3e7925d7ea072a79a8444e68b0f0fad6`
 -	v2 Content-Length: 44.2 MB (44248886 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:28:03 GMT
 
 #### `f016e16724fb58e2a985265b7ccc8de71dbe4f88f665d910d6bce21c9283267b`
 
@@ -4092,7 +3842,6 @@ RUN set -xe \
 -	Virtual Size: 156.2 KB (156213 bytes)
 -	v2 Blob: `sha256:2c2b3f3c7d416584484628f4a30c42f2c21e7661d1f160e93926717385e6bcd9`
 -	v2 Content-Length: 57.9 KB (57863 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:46 GMT
 
 #### `a1acc5ade8988699273deda811f70a2cc7c44e7e58313fa3af9203f84072c42e`
 
@@ -4106,7 +3855,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1911 bytes)
 -	v2 Blob: `sha256:2bc6bba51fb80c83a5c864383135c4577bb93bd9a1eef6f80f8a547cf965dadc`
 -	v2 Content-Length: 682.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 18:27:43 GMT
 
 #### `33eb06bbb379d88c42c3dd1be029ab044e84d4ec3a72ab636cd023a43124b04d`
 
@@ -4120,7 +3868,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41b7aa6bd87b9a0b2f7c7ecfba9769a9ee4fb530ff64013eb1ef0503f5aac210`
 
@@ -4134,7 +3881,6 @@ MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `238dfc1fd428c9e0ddbd2c500fa91cf6d34a703878e90f120ba8c18ecf5bbe4b`
 
@@ -4151,7 +3897,6 @@ RUN apt-get update &&\
 -	Virtual Size: 25.4 MB (25382778 bytes)
 -	v2 Blob: `sha256:a52b6060bd41a74900d25ed06c97776e382af74fb0c1a416002170971e04938e`
 -	v2 Content-Length: 8.4 MB (8392750 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:40:17 GMT
 
 #### `7ea1dbcc1abce3b3c3b721b7e3dcc1863e4fb50387a6ec03c3017f3bb55d362d`
 
@@ -4165,7 +3910,6 @@ ENV CB_VERSION=2.2.0 CB_RELEASE_URL=http://packages.couchbase.com/releases CB_PA
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4aeca901625d72a4cc2c178fb1073c7e0c5e08cad28b288f58c8b330151289b3`
 
@@ -4179,7 +3923,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:f96bd630e53f151fcd8a965b0894ed3d2c021eed96895331a379574c1281b6a5`
 -	v2 Content-Length: 1.7 KB (1693 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:41:37 GMT
 
 #### `18a3a5000f9f8a26e05ed3de3e5d556fbbd3fc9dd0f4cfc987179832e7586d10`
 
@@ -4195,7 +3938,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 413.3 MB (413297116 bytes)
 -	v2 Blob: `sha256:3cdf7d367a596769ece681b2ad09a1ae2e804e3198e7df5ec76c783bf83aaf5f`
 -	v2 Content-Length: 138.0 MB (138016617 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:41:29 GMT
 
 #### `156c95728d909d45095fa1c817a08613283a9665afed29663f9aefbbfb249133`
 
@@ -4222,7 +3964,6 @@ COPY file:cbb44c9c65b64a9dc11725b8c88c04651718b0cc93d3a0a473856754d1d9fbd9 in /
 -	Virtual Size: 182.0 B
 -	v2 Blob: `sha256:3e075545d7c19a0cffcc0817160ca7fd4edb2fb3714daa26a00242c796276b09`
 -	v2 Content-Length: 252.0 B
--	v2 Last-Modified: Thu, 03 Sep 2015 23:35:11 GMT
 
 #### `5a11c1e97d19100bcc50fc3de960de517932459bfe1b2973b2b7851cf1ed23d8`
 
@@ -4236,7 +3977,6 @@ ENTRYPOINT &{["/entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e9ebe2d984e9072be6cb5f413050cd9c06ac00850f3cb5336bac3bafda30bde`
 
@@ -4250,7 +3990,6 @@ CMD ["couchbase-server"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7e069302c6c1a96551b26e8aff71a9b94eed365afe10c599c369ffffc742791f`
 
@@ -4264,7 +4003,6 @@ EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 8091/tcp 8092/tcp 8093/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `face9651fedc7a0ae03195fb09af7e15b0cbd852096860721b8e90c308a0f3c5`
 
@@ -4278,4 +4016,3 @@ VOLUME [/opt/couchbase/var]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

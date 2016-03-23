@@ -27,7 +27,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -58,7 +57,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -109,7 +107,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -142,7 +139,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -214,7 +210,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -228,7 +223,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `2f112ba9b8d1515ec0b8c0a4ccb4957947e64355739bc320060ccd84dd835487`
 
@@ -242,7 +236,6 @@ RUN apt-get update && apt-get install -y wget git curl zip && rm -rf /var/lib/ap
 -	Virtual Size: 1.4 MB (1435583 bytes)
 -	v2 Blob: `sha256:44a8cbf1431132154fc6ffc0de361bf7837a89ba6b69e304020c90b6d7bb0cc2`
 -	v2 Content-Length: 523.0 KB (523006 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 22:54:26 GMT
 
 #### `3429e57739bcf53fe002ca4fca7b8684d330e296958a4ecb27b0510274f0972d`
 
@@ -282,7 +275,6 @@ RUN useradd -d "$JENKINS_HOME" -u 1000 -m -s /bin/bash jenkins
 -	Virtual Size: 335.5 KB (335490 bytes)
 -	v2 Blob: `sha256:0eebb125d5f02218c2375e071d9e5f7094a51d422f5e48fabe889d374fa905a8`
 -	v2 Content-Length: 4.4 KB (4396 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 22:54:18 GMT
 
 #### `2722fd59006e7a62081fff300d4c56c3978150d3af8541da056f283c07e3899f`
 
@@ -309,7 +301,6 @@ RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3fa9ff45fa3edc018eefd2c23aece59992df720451b5e3f8a691f82df1bca2a7`
 -	v2 Content-Length: 177.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:54:14 GMT
 
 #### `da0553711d5970d5ef594b4b48f0e7c65dfa257492f97739c339d4bac7aa4a7a`
 
@@ -336,7 +327,6 @@ RUN curl -fL https://github.com/krallin/tini/releases/download/v0.5.0/tini-stati
 -	Virtual Size: 819.3 KB (819272 bytes)
 -	v2 Blob: `sha256:d017816ebe939971345e481258aab20a5c2997763f966892074a56ee6d83653e`
 -	v2 Content-Length: 335.2 KB (335224 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 22:54:09 GMT
 
 #### `a42e1e52092bb64e7e2d8103f375e840accf7a0ff9df65bcd4b9c58941d73d64`
 
@@ -389,7 +379,6 @@ RUN curl -fL http://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/$
 -	Virtual Size: 63.7 MB (63668826 bytes)
 -	v2 Blob: `sha256:ee1f17804a3b87efcbae75ed3543975f415aeb50bbc76b89c929aea4514f31d2`
 -	v2 Content-Length: 63.5 MB (63472691 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 22:53:57 GMT
 
 #### `f3117986ba56cf30277aefa927bc6f28eebca720866c732290a35a2383771673`
 
@@ -416,7 +405,6 @@ RUN chown -R jenkins "$JENKINS_HOME" /usr/share/jenkins/ref
 -	Virtual Size: 328.0 B
 -	v2 Blob: `sha256:dac72e46496942e2dba92ec46fedc7b61099bf6582c98192d82989d749bbdcc6`
 -	v2 Content-Length: 433.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:53:45 GMT
 
 #### `ea3c40916985c9eafe3b04e181ad7928b5633cceacfec3d6b18de522d3243fcf`
 
@@ -482,7 +470,6 @@ COPY file:b250e70b64f98c04aa7934d935e815ad2082e8b68fd20c23ac1c37c3eb7530ad in /u
 -	Virtual Size: 1.4 KB (1444 bytes)
 -	v2 Blob: `sha256:88bfeed4a89b26ab1fe4b63e5ee062bf497446f2caf2e9463caee30e3b01a98b`
 -	v2 Content-Length: 938.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:53:35 GMT
 
 #### `633fb9700670d6c05c91a0813f19f93189bcd0f91768b2d1ae1eba936f638e77`
 
@@ -509,7 +496,6 @@ COPY file:d2bb5d9af57b0440ae2def135067cdff23596d25b8e324b3f66687c2fbbc317f in /u
 -	Virtual Size: 861.0 B
 -	v2 Blob: `sha256:fb933be03ef18c18b0988d8e5f29e08db12cf079d93a16e3b5997413d5227b42`
 -	v2 Content-Length: 629.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:53:30 GMT
 
 ## `jenkins:1.642.2`
 
@@ -533,7 +519,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -564,7 +549,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -615,7 +599,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -648,7 +631,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -720,7 +702,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -734,7 +715,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `2f112ba9b8d1515ec0b8c0a4ccb4957947e64355739bc320060ccd84dd835487`
 
@@ -748,7 +728,6 @@ RUN apt-get update && apt-get install -y wget git curl zip && rm -rf /var/lib/ap
 -	Virtual Size: 1.4 MB (1435583 bytes)
 -	v2 Blob: `sha256:44a8cbf1431132154fc6ffc0de361bf7837a89ba6b69e304020c90b6d7bb0cc2`
 -	v2 Content-Length: 523.0 KB (523006 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 22:54:26 GMT
 
 #### `3429e57739bcf53fe002ca4fca7b8684d330e296958a4ecb27b0510274f0972d`
 
@@ -788,7 +767,6 @@ RUN useradd -d "$JENKINS_HOME" -u 1000 -m -s /bin/bash jenkins
 -	Virtual Size: 335.5 KB (335490 bytes)
 -	v2 Blob: `sha256:0eebb125d5f02218c2375e071d9e5f7094a51d422f5e48fabe889d374fa905a8`
 -	v2 Content-Length: 4.4 KB (4396 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 22:54:18 GMT
 
 #### `2722fd59006e7a62081fff300d4c56c3978150d3af8541da056f283c07e3899f`
 
@@ -815,7 +793,6 @@ RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3fa9ff45fa3edc018eefd2c23aece59992df720451b5e3f8a691f82df1bca2a7`
 -	v2 Content-Length: 177.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:54:14 GMT
 
 #### `da0553711d5970d5ef594b4b48f0e7c65dfa257492f97739c339d4bac7aa4a7a`
 
@@ -842,7 +819,6 @@ RUN curl -fL https://github.com/krallin/tini/releases/download/v0.5.0/tini-stati
 -	Virtual Size: 819.3 KB (819272 bytes)
 -	v2 Blob: `sha256:d017816ebe939971345e481258aab20a5c2997763f966892074a56ee6d83653e`
 -	v2 Content-Length: 335.2 KB (335224 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 22:54:09 GMT
 
 #### `a42e1e52092bb64e7e2d8103f375e840accf7a0ff9df65bcd4b9c58941d73d64`
 
@@ -895,7 +871,6 @@ RUN curl -fL http://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/$
 -	Virtual Size: 63.7 MB (63668826 bytes)
 -	v2 Blob: `sha256:ee1f17804a3b87efcbae75ed3543975f415aeb50bbc76b89c929aea4514f31d2`
 -	v2 Content-Length: 63.5 MB (63472691 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 22:53:57 GMT
 
 #### `f3117986ba56cf30277aefa927bc6f28eebca720866c732290a35a2383771673`
 
@@ -922,7 +897,6 @@ RUN chown -R jenkins "$JENKINS_HOME" /usr/share/jenkins/ref
 -	Virtual Size: 328.0 B
 -	v2 Blob: `sha256:dac72e46496942e2dba92ec46fedc7b61099bf6582c98192d82989d749bbdcc6`
 -	v2 Content-Length: 433.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:53:45 GMT
 
 #### `ea3c40916985c9eafe3b04e181ad7928b5633cceacfec3d6b18de522d3243fcf`
 
@@ -988,7 +962,6 @@ COPY file:b250e70b64f98c04aa7934d935e815ad2082e8b68fd20c23ac1c37c3eb7530ad in /u
 -	Virtual Size: 1.4 KB (1444 bytes)
 -	v2 Blob: `sha256:88bfeed4a89b26ab1fe4b63e5ee062bf497446f2caf2e9463caee30e3b01a98b`
 -	v2 Content-Length: 938.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:53:35 GMT
 
 #### `633fb9700670d6c05c91a0813f19f93189bcd0f91768b2d1ae1eba936f638e77`
 
@@ -1015,4 +988,3 @@ COPY file:d2bb5d9af57b0440ae2def135067cdff23596d25b8e324b3f66687c2fbbc317f in /u
 -	Virtual Size: 861.0 B
 -	v2 Blob: `sha256:fb933be03ef18c18b0988d8e5f29e08db12cf079d93a16e3b5997413d5227b42`
 -	v2 Content-Length: 629.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:53:30 GMT

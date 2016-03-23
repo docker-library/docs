@@ -30,7 +30,6 @@ ADD file:f98914439a9d95efe3c772813ce47c9461bae8033d1bac0851564a286c64f670 in /
 -	Virtual Size: 5.0 MB (5043973 bytes)
 -	v2 Blob: `sha256:0c1d2331339656a5dda2a0cb706017b20da6340d9daa4df59d48d18d179b9813`
 -	v2 Content-Length: 2.2 MB (2242092 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:13 GMT
 
 ## `alpine:3.2`
 
@@ -54,7 +53,6 @@ ADD file:cda4b589f22e7984e3527bc653be228f0cd48420145b04aecf4b003b17fe3043 in /
 -	Virtual Size: 5.3 MB (5257781 bytes)
 -	v2 Blob: `sha256:e49bb2b1d8f0811c1cd35a809c42016cb37f592044e00e66e3d29516385bc13f`
 -	v2 Content-Length: 2.5 MB (2492246 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:19 GMT
 
 ## `alpine:3.3`
 
@@ -124,4 +122,3 @@ ADD file:791fd00b507db0182b7bd63d0a56eedc14d94561b6bec3eeb8f57f45e93e36ba in /
 -	Virtual Size: 4.8 MB (4806298 bytes)
 -	v2 Blob: `sha256:d6db411aa8ac18fb24aacdc90c38d0f84bde69bd444f9b71603f8b7113b8abbd`
 -	v2 Content-Length: 2.3 MB (2322510 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:31 GMT

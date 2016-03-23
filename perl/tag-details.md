@@ -37,7 +37,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -177,7 +176,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `ddcf0b623e2d6a21ef4369f5914077428a658323ef3d29993eb6840255633a3b`
 
@@ -191,7 +189,6 @@ COPY file:97d2eaa410c31ade2076bfe61a947c5a625b8b8ad5895716694ede3b20fc56e7 in /u
 -	Virtual Size: 311.0 B
 -	v2 Blob: `sha256:c9b0663978d0d5c2f66d78bcfb50800c5cff0333eb06120f63775977387b8d05`
 -	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:33 GMT
 
 #### `83efe4f06eb4ec019dc6ba5cbeec818281a7041a2fc61b0dd1706e63f023672c`
 
@@ -280,7 +277,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -420,7 +416,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `ddcf0b623e2d6a21ef4369f5914077428a658323ef3d29993eb6840255633a3b`
 
@@ -434,7 +429,6 @@ COPY file:97d2eaa410c31ade2076bfe61a947c5a625b8b8ad5895716694ede3b20fc56e7 in /u
 -	Virtual Size: 311.0 B
 -	v2 Blob: `sha256:c9b0663978d0d5c2f66d78bcfb50800c5cff0333eb06120f63775977387b8d05`
 -	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:33 GMT
 
 #### `83efe4f06eb4ec019dc6ba5cbeec818281a7041a2fc61b0dd1706e63f023672c`
 
@@ -523,7 +517,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -663,7 +656,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `ddcf0b623e2d6a21ef4369f5914077428a658323ef3d29993eb6840255633a3b`
 
@@ -677,7 +669,6 @@ COPY file:97d2eaa410c31ade2076bfe61a947c5a625b8b8ad5895716694ede3b20fc56e7 in /u
 -	Virtual Size: 311.0 B
 -	v2 Blob: `sha256:c9b0663978d0d5c2f66d78bcfb50800c5cff0333eb06120f63775977387b8d05`
 -	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:33 GMT
 
 #### `83efe4f06eb4ec019dc6ba5cbeec818281a7041a2fc61b0dd1706e63f023672c`
 
@@ -766,7 +757,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -906,7 +896,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `ddcf0b623e2d6a21ef4369f5914077428a658323ef3d29993eb6840255633a3b`
 
@@ -920,7 +909,6 @@ COPY file:97d2eaa410c31ade2076bfe61a947c5a625b8b8ad5895716694ede3b20fc56e7 in /u
 -	Virtual Size: 311.0 B
 -	v2 Blob: `sha256:c9b0663978d0d5c2f66d78bcfb50800c5cff0333eb06120f63775977387b8d05`
 -	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:33 GMT
 
 #### `83efe4f06eb4ec019dc6ba5cbeec818281a7041a2fc61b0dd1706e63f023672c`
 
@@ -1009,7 +997,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1149,7 +1136,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `2a1525749e9d44b3c8d74dff87624109a237da68fa4f768223e903a74c7a311e`
 
@@ -1202,7 +1188,6 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.3.tar.bz2 
 -	Virtual Size: 48.2 MB (48228343 bytes)
 -	v2 Blob: `sha256:91d7d5583d34a86671d9ea83c463fa052e3f4cc7a18ce2f0291ff99cdfdcb6eb`
 -	v2 Content-Length: 13.1 MB (13128843 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:24:12 GMT
 
 #### `63fc332153e022a45ec201f723146e1cc4ce28e74b4da9f77201e838e5529cd5`
 
@@ -1252,7 +1237,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1392,7 +1376,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `2a1525749e9d44b3c8d74dff87624109a237da68fa4f768223e903a74c7a311e`
 
@@ -1445,7 +1428,6 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.3.tar.bz2 
 -	Virtual Size: 48.2 MB (48228343 bytes)
 -	v2 Blob: `sha256:91d7d5583d34a86671d9ea83c463fa052e3f4cc7a18ce2f0291ff99cdfdcb6eb`
 -	v2 Content-Length: 13.1 MB (13128843 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:24:12 GMT
 
 #### `63fc332153e022a45ec201f723146e1cc4ce28e74b4da9f77201e838e5529cd5`
 
@@ -1495,7 +1477,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1635,7 +1616,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `ddcf0b623e2d6a21ef4369f5914077428a658323ef3d29993eb6840255633a3b`
 
@@ -1649,7 +1629,6 @@ COPY file:97d2eaa410c31ade2076bfe61a947c5a625b8b8ad5895716694ede3b20fc56e7 in /u
 -	Virtual Size: 311.0 B
 -	v2 Blob: `sha256:c9b0663978d0d5c2f66d78bcfb50800c5cff0333eb06120f63775977387b8d05`
 -	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:33 GMT
 
 #### `83efe4f06eb4ec019dc6ba5cbeec818281a7041a2fc61b0dd1706e63f023672c`
 
@@ -1689,7 +1668,6 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.1.tar.bz2 
 -	Virtual Size: 49.8 MB (49786016 bytes)
 -	v2 Blob: `sha256:9f2884b6b47af65d69372b668b3a80c6815f74658ba8479a08ab620883bfd30e`
 -	v2 Content-Length: 13.4 MB (13423457 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:25:12 GMT
 
 #### `0c2e78a0fa315c23dcc6dde2b0d7ba57e9c6267fa3bf92152dc4a754c7b4cd16`
 
@@ -1739,7 +1717,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1879,7 +1856,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `ddcf0b623e2d6a21ef4369f5914077428a658323ef3d29993eb6840255633a3b`
 
@@ -1893,7 +1869,6 @@ COPY file:97d2eaa410c31ade2076bfe61a947c5a625b8b8ad5895716694ede3b20fc56e7 in /u
 -	Virtual Size: 311.0 B
 -	v2 Blob: `sha256:c9b0663978d0d5c2f66d78bcfb50800c5cff0333eb06120f63775977387b8d05`
 -	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:33 GMT
 
 #### `83efe4f06eb4ec019dc6ba5cbeec818281a7041a2fc61b0dd1706e63f023672c`
 
@@ -1933,7 +1908,6 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.1.tar.bz2 
 -	Virtual Size: 49.8 MB (49786016 bytes)
 -	v2 Blob: `sha256:9f2884b6b47af65d69372b668b3a80c6815f74658ba8479a08ab620883bfd30e`
 -	v2 Content-Length: 13.4 MB (13423457 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:25:12 GMT
 
 #### `0c2e78a0fa315c23dcc6dde2b0d7ba57e9c6267fa3bf92152dc4a754c7b4cd16`
 
@@ -1983,7 +1957,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2123,7 +2096,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `ddcf0b623e2d6a21ef4369f5914077428a658323ef3d29993eb6840255633a3b`
 
@@ -2137,7 +2109,6 @@ COPY file:97d2eaa410c31ade2076bfe61a947c5a625b8b8ad5895716694ede3b20fc56e7 in /u
 -	Virtual Size: 311.0 B
 -	v2 Blob: `sha256:c9b0663978d0d5c2f66d78bcfb50800c5cff0333eb06120f63775977387b8d05`
 -	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:33 GMT
 
 #### `83efe4f06eb4ec019dc6ba5cbeec818281a7041a2fc61b0dd1706e63f023672c`
 
@@ -2177,7 +2148,6 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.1.tar.bz2 
 -	Virtual Size: 49.8 MB (49786016 bytes)
 -	v2 Blob: `sha256:9f2884b6b47af65d69372b668b3a80c6815f74658ba8479a08ab620883bfd30e`
 -	v2 Content-Length: 13.4 MB (13423457 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:25:12 GMT
 
 #### `0c2e78a0fa315c23dcc6dde2b0d7ba57e9c6267fa3bf92152dc4a754c7b4cd16`
 
@@ -2227,7 +2197,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2367,7 +2336,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `ddcf0b623e2d6a21ef4369f5914077428a658323ef3d29993eb6840255633a3b`
 
@@ -2381,7 +2349,6 @@ COPY file:97d2eaa410c31ade2076bfe61a947c5a625b8b8ad5895716694ede3b20fc56e7 in /u
 -	Virtual Size: 311.0 B
 -	v2 Blob: `sha256:c9b0663978d0d5c2f66d78bcfb50800c5cff0333eb06120f63775977387b8d05`
 -	v2 Content-Length: 398.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:33 GMT
 
 #### `83efe4f06eb4ec019dc6ba5cbeec818281a7041a2fc61b0dd1706e63f023672c`
 
@@ -2421,7 +2388,6 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.22.1.tar.bz2 
 -	Virtual Size: 49.8 MB (49786016 bytes)
 -	v2 Blob: `sha256:9f2884b6b47af65d69372b668b3a80c6815f74658ba8479a08ab620883bfd30e`
 -	v2 Content-Length: 13.4 MB (13423457 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:25:12 GMT
 
 #### `0c2e78a0fa315c23dcc6dde2b0d7ba57e9c6267fa3bf92152dc4a754c7b4cd16`
 
@@ -2471,7 +2437,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2611,7 +2576,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `2a1525749e9d44b3c8d74dff87624109a237da68fa4f768223e903a74c7a311e`
 
@@ -2664,7 +2628,6 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.3.tar.bz2 
 -	Virtual Size: 48.3 MB (48255559 bytes)
 -	v2 Blob: `sha256:45685c1fad13d90ba06e9dd22dbb08646941bd1a277259e7b57b22157fb364ba`
 -	v2 Content-Length: 13.2 MB (13174000 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:24:39 GMT
 
 #### `226ab1a6ae0337ffb0b7af0fb7a5c8611398f563f3040abde7bc66e4693c1796`
 
@@ -2714,7 +2677,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2854,7 +2816,6 @@ RUN mkdir /usr/src/perl
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1ad8c41665be63b0ed1f3490caf50a69ce898aedd1b53936ecac6751b363d20a`
 -	v2 Content-Length: 129.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:22:35 GMT
 
 #### `2a1525749e9d44b3c8d74dff87624109a237da68fa4f768223e903a74c7a311e`
 
@@ -2907,7 +2868,6 @@ RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.20.3.tar.bz2 
 -	Virtual Size: 48.3 MB (48255559 bytes)
 -	v2 Blob: `sha256:45685c1fad13d90ba06e9dd22dbb08646941bd1a277259e7b57b22157fb364ba`
 -	v2 Content-Length: 13.2 MB (13174000 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:24:39 GMT
 
 #### `226ab1a6ae0337ffb0b7af0fb7a5c8611398f563f3040abde7bc66e4693c1796`
 

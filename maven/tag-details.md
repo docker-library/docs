@@ -59,7 +59,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -73,7 +72,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -91,7 +89,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -112,7 +109,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -130,7 +126,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `2ec18ad09e7db36879ebe6c314f02e4391d940e19f72b045bbc3e17b6b549a66`
 
@@ -144,7 +139,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `60a929595f30c713fbcb9e367d71b1c5b5daa8ca8c391c17476d84680c46bc13`
 
@@ -164,7 +158,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:f5ae3a8c0650f746b35474250b03c0955998988d27a5e14fbedd379d3483ea19`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:59 GMT
 
 #### `0c429ca59e91be7561fc11ab6c00cd6720cb1da5e9bd0284567846b4c27a5b40`
 
@@ -178,7 +171,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e30ec88f3603a8d6b6ea08f4ed518d9b6cd715f0dce22b5e6af6b0b495e0970`
 
@@ -192,7 +184,6 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `885fdcf71426071aaa24156e1d1be254309281db650bcbb31c04e9513f485a97`
 
@@ -206,7 +197,6 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83d2ddfef79c039126daa3f3dc97e957f1012205c235cdbd3aaa8743a03af2af`
 
@@ -225,7 +215,6 @@ RUN set -x \
 -	Virtual Size: 295.0 MB (295020119 bytes)
 -	v2 Blob: `sha256:9b75e7688b0463f8fbbf018d0c5b342a8d266a5fc19359c8680dee6713d1d05c`
 -	v2 Content-Length: 139.4 MB (139417505 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:46 GMT
 
 #### `7866893a646fc61b4ade35f6cf98fdad54162efce308db0270272c46b7a39e59`
 
@@ -239,7 +228,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4234dc39a702d84d75e1cf368a1d124ad9b51f9481223c53a8be02dc81d49b92`
 
@@ -254,7 +242,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:3a156d2c5bca7745433e31fb08a489e21e23f451dd08fae03fd5536afbae7815`
 -	v2 Content-Length: 8.6 MB (8598795 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:31:22 GMT
 
 #### `0e536bb6d827b2e3c95fcca98495032d8b7c5477c6d1f08edc9991c818483fc4`
 
@@ -268,7 +255,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `503fe9b7b86095fa35a7432b6b05f8e1b3ead7062ac6b60356be09bc85fd3c45`
 
@@ -282,7 +268,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `674a36eb85af0ab6d0c5aac54ab3002eeda899a22fb4c6d6579a57dc04d6af6d`
 
@@ -296,7 +281,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3-jdk-7`
 
@@ -320,7 +304,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -334,7 +317,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -352,7 +334,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -373,7 +354,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -391,7 +371,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `2ec18ad09e7db36879ebe6c314f02e4391d940e19f72b045bbc3e17b6b549a66`
 
@@ -405,7 +384,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `60a929595f30c713fbcb9e367d71b1c5b5daa8ca8c391c17476d84680c46bc13`
 
@@ -425,7 +403,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:f5ae3a8c0650f746b35474250b03c0955998988d27a5e14fbedd379d3483ea19`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:59 GMT
 
 #### `0c429ca59e91be7561fc11ab6c00cd6720cb1da5e9bd0284567846b4c27a5b40`
 
@@ -439,7 +416,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e30ec88f3603a8d6b6ea08f4ed518d9b6cd715f0dce22b5e6af6b0b495e0970`
 
@@ -453,7 +429,6 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `885fdcf71426071aaa24156e1d1be254309281db650bcbb31c04e9513f485a97`
 
@@ -467,7 +442,6 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83d2ddfef79c039126daa3f3dc97e957f1012205c235cdbd3aaa8743a03af2af`
 
@@ -486,7 +460,6 @@ RUN set -x \
 -	Virtual Size: 295.0 MB (295020119 bytes)
 -	v2 Blob: `sha256:9b75e7688b0463f8fbbf018d0c5b342a8d266a5fc19359c8680dee6713d1d05c`
 -	v2 Content-Length: 139.4 MB (139417505 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:46 GMT
 
 #### `7866893a646fc61b4ade35f6cf98fdad54162efce308db0270272c46b7a39e59`
 
@@ -500,7 +473,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4234dc39a702d84d75e1cf368a1d124ad9b51f9481223c53a8be02dc81d49b92`
 
@@ -515,7 +487,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:3a156d2c5bca7745433e31fb08a489e21e23f451dd08fae03fd5536afbae7815`
 -	v2 Content-Length: 8.6 MB (8598795 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:31:22 GMT
 
 #### `0e536bb6d827b2e3c95fcca98495032d8b7c5477c6d1f08edc9991c818483fc4`
 
@@ -529,7 +500,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `503fe9b7b86095fa35a7432b6b05f8e1b3ead7062ac6b60356be09bc85fd3c45`
 
@@ -543,7 +513,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `674a36eb85af0ab6d0c5aac54ab3002eeda899a22fb4c6d6579a57dc04d6af6d`
 
@@ -557,7 +526,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3-jdk-7`
 
@@ -581,7 +549,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -595,7 +562,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -613,7 +579,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -634,7 +599,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -652,7 +616,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `2ec18ad09e7db36879ebe6c314f02e4391d940e19f72b045bbc3e17b6b549a66`
 
@@ -666,7 +629,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `60a929595f30c713fbcb9e367d71b1c5b5daa8ca8c391c17476d84680c46bc13`
 
@@ -686,7 +648,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:f5ae3a8c0650f746b35474250b03c0955998988d27a5e14fbedd379d3483ea19`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:59 GMT
 
 #### `0c429ca59e91be7561fc11ab6c00cd6720cb1da5e9bd0284567846b4c27a5b40`
 
@@ -700,7 +661,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e30ec88f3603a8d6b6ea08f4ed518d9b6cd715f0dce22b5e6af6b0b495e0970`
 
@@ -714,7 +674,6 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `885fdcf71426071aaa24156e1d1be254309281db650bcbb31c04e9513f485a97`
 
@@ -728,7 +687,6 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83d2ddfef79c039126daa3f3dc97e957f1012205c235cdbd3aaa8743a03af2af`
 
@@ -747,7 +705,6 @@ RUN set -x \
 -	Virtual Size: 295.0 MB (295020119 bytes)
 -	v2 Blob: `sha256:9b75e7688b0463f8fbbf018d0c5b342a8d266a5fc19359c8680dee6713d1d05c`
 -	v2 Content-Length: 139.4 MB (139417505 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:46 GMT
 
 #### `7866893a646fc61b4ade35f6cf98fdad54162efce308db0270272c46b7a39e59`
 
@@ -761,7 +718,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4234dc39a702d84d75e1cf368a1d124ad9b51f9481223c53a8be02dc81d49b92`
 
@@ -776,7 +732,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:3a156d2c5bca7745433e31fb08a489e21e23f451dd08fae03fd5536afbae7815`
 -	v2 Content-Length: 8.6 MB (8598795 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:31:22 GMT
 
 #### `0e536bb6d827b2e3c95fcca98495032d8b7c5477c6d1f08edc9991c818483fc4`
 
@@ -790,7 +745,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `503fe9b7b86095fa35a7432b6b05f8e1b3ead7062ac6b60356be09bc85fd3c45`
 
@@ -804,7 +758,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `674a36eb85af0ab6d0c5aac54ab3002eeda899a22fb4c6d6579a57dc04d6af6d`
 
@@ -818,7 +771,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.9-jdk-7-onbuild`
 
@@ -842,7 +794,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -856,7 +807,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -874,7 +824,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -895,7 +844,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -913,7 +861,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `2ec18ad09e7db36879ebe6c314f02e4391d940e19f72b045bbc3e17b6b549a66`
 
@@ -927,7 +874,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `60a929595f30c713fbcb9e367d71b1c5b5daa8ca8c391c17476d84680c46bc13`
 
@@ -947,7 +893,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:f5ae3a8c0650f746b35474250b03c0955998988d27a5e14fbedd379d3483ea19`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:59 GMT
 
 #### `0c429ca59e91be7561fc11ab6c00cd6720cb1da5e9bd0284567846b4c27a5b40`
 
@@ -961,7 +906,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e30ec88f3603a8d6b6ea08f4ed518d9b6cd715f0dce22b5e6af6b0b495e0970`
 
@@ -975,7 +919,6 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `885fdcf71426071aaa24156e1d1be254309281db650bcbb31c04e9513f485a97`
 
@@ -989,7 +932,6 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83d2ddfef79c039126daa3f3dc97e957f1012205c235cdbd3aaa8743a03af2af`
 
@@ -1008,7 +950,6 @@ RUN set -x \
 -	Virtual Size: 295.0 MB (295020119 bytes)
 -	v2 Blob: `sha256:9b75e7688b0463f8fbbf018d0c5b342a8d266a5fc19359c8680dee6713d1d05c`
 -	v2 Content-Length: 139.4 MB (139417505 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:46 GMT
 
 #### `7866893a646fc61b4ade35f6cf98fdad54162efce308db0270272c46b7a39e59`
 
@@ -1022,7 +963,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4234dc39a702d84d75e1cf368a1d124ad9b51f9481223c53a8be02dc81d49b92`
 
@@ -1037,7 +977,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:3a156d2c5bca7745433e31fb08a489e21e23f451dd08fae03fd5536afbae7815`
 -	v2 Content-Length: 8.6 MB (8598795 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:31:22 GMT
 
 #### `0e536bb6d827b2e3c95fcca98495032d8b7c5477c6d1f08edc9991c818483fc4`
 
@@ -1051,7 +990,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `503fe9b7b86095fa35a7432b6b05f8e1b3ead7062ac6b60356be09bc85fd3c45`
 
@@ -1065,7 +1003,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `674a36eb85af0ab6d0c5aac54ab3002eeda899a22fb4c6d6579a57dc04d6af6d`
 
@@ -1079,7 +1016,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `376c22e60502f42c12c286151704c78b601d2252f6e0d7d0d0801053b6df8db5`
 
@@ -1093,7 +1029,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d34167729c48678882a4fbca103e4f12bd89cf500e91a060e00d68b077c3c551`
 -	v2 Content-Length: 158.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:02 GMT
 
 #### `fe59ccfbbd7ee91c62a4f3b17e49052b28c0b40c83ffb7b6b6a95b7b1171c922`
 
@@ -1107,7 +1042,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7778aef80622f080ef194a5c3da9200b35c464f9b7ab53298ee8c56cd80b0f42`
 
@@ -1121,7 +1055,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1481f97150764f64baa31129521981ac46a3320011b8468ae9cb2fc2c4bbb3d8`
 
@@ -1135,7 +1068,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3-jdk-7-onbuild`
 
@@ -1159,7 +1091,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1173,7 +1104,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1191,7 +1121,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1212,7 +1141,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -1230,7 +1158,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `2ec18ad09e7db36879ebe6c314f02e4391d940e19f72b045bbc3e17b6b549a66`
 
@@ -1244,7 +1171,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `60a929595f30c713fbcb9e367d71b1c5b5daa8ca8c391c17476d84680c46bc13`
 
@@ -1264,7 +1190,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:f5ae3a8c0650f746b35474250b03c0955998988d27a5e14fbedd379d3483ea19`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:59 GMT
 
 #### `0c429ca59e91be7561fc11ab6c00cd6720cb1da5e9bd0284567846b4c27a5b40`
 
@@ -1278,7 +1203,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e30ec88f3603a8d6b6ea08f4ed518d9b6cd715f0dce22b5e6af6b0b495e0970`
 
@@ -1292,7 +1216,6 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `885fdcf71426071aaa24156e1d1be254309281db650bcbb31c04e9513f485a97`
 
@@ -1306,7 +1229,6 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83d2ddfef79c039126daa3f3dc97e957f1012205c235cdbd3aaa8743a03af2af`
 
@@ -1325,7 +1247,6 @@ RUN set -x \
 -	Virtual Size: 295.0 MB (295020119 bytes)
 -	v2 Blob: `sha256:9b75e7688b0463f8fbbf018d0c5b342a8d266a5fc19359c8680dee6713d1d05c`
 -	v2 Content-Length: 139.4 MB (139417505 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:46 GMT
 
 #### `7866893a646fc61b4ade35f6cf98fdad54162efce308db0270272c46b7a39e59`
 
@@ -1339,7 +1260,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4234dc39a702d84d75e1cf368a1d124ad9b51f9481223c53a8be02dc81d49b92`
 
@@ -1354,7 +1274,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:3a156d2c5bca7745433e31fb08a489e21e23f451dd08fae03fd5536afbae7815`
 -	v2 Content-Length: 8.6 MB (8598795 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:31:22 GMT
 
 #### `0e536bb6d827b2e3c95fcca98495032d8b7c5477c6d1f08edc9991c818483fc4`
 
@@ -1368,7 +1287,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `503fe9b7b86095fa35a7432b6b05f8e1b3ead7062ac6b60356be09bc85fd3c45`
 
@@ -1382,7 +1300,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `674a36eb85af0ab6d0c5aac54ab3002eeda899a22fb4c6d6579a57dc04d6af6d`
 
@@ -1396,7 +1313,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `376c22e60502f42c12c286151704c78b601d2252f6e0d7d0d0801053b6df8db5`
 
@@ -1410,7 +1326,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d34167729c48678882a4fbca103e4f12bd89cf500e91a060e00d68b077c3c551`
 -	v2 Content-Length: 158.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:02 GMT
 
 #### `fe59ccfbbd7ee91c62a4f3b17e49052b28c0b40c83ffb7b6b6a95b7b1171c922`
 
@@ -1424,7 +1339,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7778aef80622f080ef194a5c3da9200b35c464f9b7ab53298ee8c56cd80b0f42`
 
@@ -1438,7 +1352,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1481f97150764f64baa31129521981ac46a3320011b8468ae9cb2fc2c4bbb3d8`
 
@@ -1452,7 +1365,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3-jdk-7-onbuild`
 
@@ -1476,7 +1388,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1490,7 +1401,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1508,7 +1418,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1529,7 +1438,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -1547,7 +1455,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `2ec18ad09e7db36879ebe6c314f02e4391d940e19f72b045bbc3e17b6b549a66`
 
@@ -1561,7 +1468,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `60a929595f30c713fbcb9e367d71b1c5b5daa8ca8c391c17476d84680c46bc13`
 
@@ -1581,7 +1487,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:f5ae3a8c0650f746b35474250b03c0955998988d27a5e14fbedd379d3483ea19`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:59 GMT
 
 #### `0c429ca59e91be7561fc11ab6c00cd6720cb1da5e9bd0284567846b4c27a5b40`
 
@@ -1595,7 +1500,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e30ec88f3603a8d6b6ea08f4ed518d9b6cd715f0dce22b5e6af6b0b495e0970`
 
@@ -1609,7 +1513,6 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `885fdcf71426071aaa24156e1d1be254309281db650bcbb31c04e9513f485a97`
 
@@ -1623,7 +1526,6 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83d2ddfef79c039126daa3f3dc97e957f1012205c235cdbd3aaa8743a03af2af`
 
@@ -1642,7 +1544,6 @@ RUN set -x \
 -	Virtual Size: 295.0 MB (295020119 bytes)
 -	v2 Blob: `sha256:9b75e7688b0463f8fbbf018d0c5b342a8d266a5fc19359c8680dee6713d1d05c`
 -	v2 Content-Length: 139.4 MB (139417505 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:46 GMT
 
 #### `7866893a646fc61b4ade35f6cf98fdad54162efce308db0270272c46b7a39e59`
 
@@ -1656,7 +1557,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4234dc39a702d84d75e1cf368a1d124ad9b51f9481223c53a8be02dc81d49b92`
 
@@ -1671,7 +1571,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:3a156d2c5bca7745433e31fb08a489e21e23f451dd08fae03fd5536afbae7815`
 -	v2 Content-Length: 8.6 MB (8598795 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:31:22 GMT
 
 #### `0e536bb6d827b2e3c95fcca98495032d8b7c5477c6d1f08edc9991c818483fc4`
 
@@ -1685,7 +1584,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `503fe9b7b86095fa35a7432b6b05f8e1b3ead7062ac6b60356be09bc85fd3c45`
 
@@ -1699,7 +1597,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `674a36eb85af0ab6d0c5aac54ab3002eeda899a22fb4c6d6579a57dc04d6af6d`
 
@@ -1713,7 +1610,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `376c22e60502f42c12c286151704c78b601d2252f6e0d7d0d0801053b6df8db5`
 
@@ -1727,7 +1623,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d34167729c48678882a4fbca103e4f12bd89cf500e91a060e00d68b077c3c551`
 -	v2 Content-Length: 158.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:02 GMT
 
 #### `fe59ccfbbd7ee91c62a4f3b17e49052b28c0b40c83ffb7b6b6a95b7b1171c922`
 
@@ -1741,7 +1636,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7778aef80622f080ef194a5c3da9200b35c464f9b7ab53298ee8c56cd80b0f42`
 
@@ -1755,7 +1649,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1481f97150764f64baa31129521981ac46a3320011b8468ae9cb2fc2c4bbb3d8`
 
@@ -1769,7 +1662,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.9-jdk-8`
 
@@ -1793,7 +1685,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1807,7 +1698,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1825,7 +1715,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1846,7 +1735,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -1864,7 +1752,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -1878,7 +1765,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -1892,7 +1778,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -1912,7 +1797,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -1926,7 +1810,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -1940,7 +1823,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -1954,7 +1836,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -1968,7 +1849,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -1988,7 +1868,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -2002,7 +1881,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -2016,7 +1894,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -2031,7 +1908,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -2045,7 +1921,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -2059,7 +1934,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -2073,7 +1947,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.9`
 
@@ -2097,7 +1970,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2111,7 +1983,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2129,7 +2000,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -2150,7 +2020,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -2168,7 +2037,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -2182,7 +2050,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -2196,7 +2063,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -2216,7 +2082,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -2230,7 +2095,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -2244,7 +2108,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -2258,7 +2121,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -2272,7 +2134,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -2292,7 +2153,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -2306,7 +2166,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -2320,7 +2179,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -2335,7 +2193,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -2349,7 +2206,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -2363,7 +2219,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -2377,7 +2232,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3-jdk-8`
 
@@ -2401,7 +2255,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2415,7 +2268,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2433,7 +2285,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -2454,7 +2305,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -2472,7 +2322,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -2486,7 +2335,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -2500,7 +2348,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -2520,7 +2367,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -2534,7 +2380,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -2548,7 +2393,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -2562,7 +2406,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -2576,7 +2419,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -2596,7 +2438,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -2610,7 +2451,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -2624,7 +2464,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -2639,7 +2478,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -2653,7 +2491,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -2667,7 +2504,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -2681,7 +2517,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3`
 
@@ -2705,7 +2540,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2719,7 +2553,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2737,7 +2570,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -2758,7 +2590,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -2776,7 +2607,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -2790,7 +2620,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -2804,7 +2633,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -2824,7 +2652,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -2838,7 +2665,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -2852,7 +2678,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -2866,7 +2691,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -2880,7 +2704,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -2900,7 +2723,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -2914,7 +2736,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -2928,7 +2749,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -2943,7 +2763,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -2957,7 +2776,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -2971,7 +2789,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -2985,7 +2802,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3-jdk-8`
 
@@ -3009,7 +2825,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3023,7 +2838,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3041,7 +2855,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3062,7 +2875,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -3080,7 +2892,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -3094,7 +2905,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -3108,7 +2918,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -3128,7 +2937,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -3142,7 +2950,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -3156,7 +2963,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -3170,7 +2976,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -3184,7 +2989,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -3204,7 +3008,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -3218,7 +3021,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -3232,7 +3034,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -3247,7 +3048,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -3261,7 +3061,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -3275,7 +3074,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -3289,7 +3087,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3`
 
@@ -3313,7 +3110,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3327,7 +3123,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3345,7 +3140,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3366,7 +3160,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -3384,7 +3177,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -3398,7 +3190,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -3412,7 +3203,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -3432,7 +3222,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -3446,7 +3235,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -3460,7 +3248,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -3474,7 +3261,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -3488,7 +3274,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -3508,7 +3293,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -3522,7 +3306,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -3536,7 +3319,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -3551,7 +3333,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -3565,7 +3346,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -3579,7 +3359,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -3593,7 +3372,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:latest`
 
@@ -3617,7 +3395,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3631,7 +3408,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3649,7 +3425,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3670,7 +3445,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -3688,7 +3462,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -3702,7 +3475,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -3716,7 +3488,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -3736,7 +3507,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -3750,7 +3520,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -3764,7 +3533,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -3778,7 +3546,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -3792,7 +3559,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -3812,7 +3578,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -3826,7 +3591,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -3840,7 +3604,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -3855,7 +3618,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -3869,7 +3631,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -3883,7 +3644,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -3897,7 +3657,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.9-jdk-8-onbuild`
 
@@ -3921,7 +3680,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3935,7 +3693,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3953,7 +3710,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3974,7 +3730,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -3992,7 +3747,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -4006,7 +3760,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -4020,7 +3773,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -4040,7 +3792,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -4054,7 +3805,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -4068,7 +3818,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -4082,7 +3831,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -4096,7 +3844,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -4116,7 +3863,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -4130,7 +3876,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -4144,7 +3889,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -4159,7 +3903,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -4173,7 +3916,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -4187,7 +3929,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -4201,7 +3942,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e544b33a5e21c81e17b9ba5c788e47a4bdeca2a50be0e0462a6a266c00739db3`
 
@@ -4215,7 +3955,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8033584f918bc6a1866492991c435d5fd75d3c6aedfbbe8e0a25d4641590e8d4`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:36:17 GMT
 
 #### `d7ea6f2811ff38fa939217be97b71cc39fbe78029be563222cdaf1dd154c868d`
 
@@ -4229,7 +3968,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f860067e1cf0dd3f8b9c85cfc382daadb556cda2620a24bddeb51df8b251cb4`
 
@@ -4243,7 +3981,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1b780493d32b0866b0584f1e20530f9732ee745498b2d0f84a11fae8c0d1d5f`
 
@@ -4257,7 +3994,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.9-onbuild`
 
@@ -4281,7 +4017,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4295,7 +4030,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4313,7 +4047,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -4334,7 +4067,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -4352,7 +4084,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -4366,7 +4097,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -4380,7 +4110,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -4400,7 +4129,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -4414,7 +4142,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -4428,7 +4155,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -4442,7 +4168,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -4456,7 +4181,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -4476,7 +4200,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -4490,7 +4213,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -4504,7 +4226,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -4519,7 +4240,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -4533,7 +4253,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -4547,7 +4266,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -4561,7 +4279,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e544b33a5e21c81e17b9ba5c788e47a4bdeca2a50be0e0462a6a266c00739db3`
 
@@ -4575,7 +4292,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8033584f918bc6a1866492991c435d5fd75d3c6aedfbbe8e0a25d4641590e8d4`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:36:17 GMT
 
 #### `d7ea6f2811ff38fa939217be97b71cc39fbe78029be563222cdaf1dd154c868d`
 
@@ -4589,7 +4305,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f860067e1cf0dd3f8b9c85cfc382daadb556cda2620a24bddeb51df8b251cb4`
 
@@ -4603,7 +4318,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1b780493d32b0866b0584f1e20530f9732ee745498b2d0f84a11fae8c0d1d5f`
 
@@ -4617,7 +4331,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3-jdk-8-onbuild`
 
@@ -4641,7 +4354,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4655,7 +4367,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4673,7 +4384,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -4694,7 +4404,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -4712,7 +4421,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -4726,7 +4434,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -4740,7 +4447,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -4760,7 +4466,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -4774,7 +4479,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -4788,7 +4492,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -4802,7 +4505,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -4816,7 +4518,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -4836,7 +4537,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -4850,7 +4550,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -4864,7 +4563,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -4879,7 +4577,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -4893,7 +4590,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -4907,7 +4603,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -4921,7 +4616,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e544b33a5e21c81e17b9ba5c788e47a4bdeca2a50be0e0462a6a266c00739db3`
 
@@ -4935,7 +4629,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8033584f918bc6a1866492991c435d5fd75d3c6aedfbbe8e0a25d4641590e8d4`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:36:17 GMT
 
 #### `d7ea6f2811ff38fa939217be97b71cc39fbe78029be563222cdaf1dd154c868d`
 
@@ -4949,7 +4642,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f860067e1cf0dd3f8b9c85cfc382daadb556cda2620a24bddeb51df8b251cb4`
 
@@ -4963,7 +4655,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1b780493d32b0866b0584f1e20530f9732ee745498b2d0f84a11fae8c0d1d5f`
 
@@ -4977,7 +4668,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3-onbuild`
 
@@ -5001,7 +4691,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5015,7 +4704,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5033,7 +4721,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -5054,7 +4741,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -5072,7 +4758,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -5086,7 +4771,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -5100,7 +4784,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -5120,7 +4803,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -5134,7 +4816,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -5148,7 +4829,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -5162,7 +4842,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -5176,7 +4855,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -5196,7 +4874,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -5210,7 +4887,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -5224,7 +4900,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -5239,7 +4914,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -5253,7 +4927,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -5267,7 +4940,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -5281,7 +4953,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e544b33a5e21c81e17b9ba5c788e47a4bdeca2a50be0e0462a6a266c00739db3`
 
@@ -5295,7 +4966,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8033584f918bc6a1866492991c435d5fd75d3c6aedfbbe8e0a25d4641590e8d4`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:36:17 GMT
 
 #### `d7ea6f2811ff38fa939217be97b71cc39fbe78029be563222cdaf1dd154c868d`
 
@@ -5309,7 +4979,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f860067e1cf0dd3f8b9c85cfc382daadb556cda2620a24bddeb51df8b251cb4`
 
@@ -5323,7 +4992,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1b780493d32b0866b0584f1e20530f9732ee745498b2d0f84a11fae8c0d1d5f`
 
@@ -5337,7 +5005,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3-jdk-8-onbuild`
 
@@ -5361,7 +5028,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5375,7 +5041,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5393,7 +5058,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -5414,7 +5078,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -5432,7 +5095,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -5446,7 +5108,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -5460,7 +5121,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -5480,7 +5140,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -5494,7 +5153,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -5508,7 +5166,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -5522,7 +5179,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -5536,7 +5192,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -5556,7 +5211,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -5570,7 +5224,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -5584,7 +5237,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -5599,7 +5251,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -5613,7 +5264,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -5627,7 +5277,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -5641,7 +5290,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e544b33a5e21c81e17b9ba5c788e47a4bdeca2a50be0e0462a6a266c00739db3`
 
@@ -5655,7 +5303,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8033584f918bc6a1866492991c435d5fd75d3c6aedfbbe8e0a25d4641590e8d4`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:36:17 GMT
 
 #### `d7ea6f2811ff38fa939217be97b71cc39fbe78029be563222cdaf1dd154c868d`
 
@@ -5669,7 +5316,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f860067e1cf0dd3f8b9c85cfc382daadb556cda2620a24bddeb51df8b251cb4`
 
@@ -5683,7 +5329,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1b780493d32b0866b0584f1e20530f9732ee745498b2d0f84a11fae8c0d1d5f`
 
@@ -5697,7 +5342,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3-onbuild`
 
@@ -5721,7 +5365,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5735,7 +5378,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5753,7 +5395,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -5774,7 +5415,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -5792,7 +5432,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -5806,7 +5445,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -5820,7 +5458,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -5840,7 +5477,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -5854,7 +5490,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -5868,7 +5503,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -5882,7 +5516,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -5896,7 +5529,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -5916,7 +5548,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -5930,7 +5561,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -5944,7 +5574,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -5959,7 +5588,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -5973,7 +5601,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -5987,7 +5614,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -6001,7 +5627,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e544b33a5e21c81e17b9ba5c788e47a4bdeca2a50be0e0462a6a266c00739db3`
 
@@ -6015,7 +5640,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8033584f918bc6a1866492991c435d5fd75d3c6aedfbbe8e0a25d4641590e8d4`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:36:17 GMT
 
 #### `d7ea6f2811ff38fa939217be97b71cc39fbe78029be563222cdaf1dd154c868d`
 
@@ -6029,7 +5653,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f860067e1cf0dd3f8b9c85cfc382daadb556cda2620a24bddeb51df8b251cb4`
 
@@ -6043,7 +5666,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1b780493d32b0866b0584f1e20530f9732ee745498b2d0f84a11fae8c0d1d5f`
 
@@ -6057,7 +5679,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:onbuild`
 
@@ -6081,7 +5702,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -6095,7 +5715,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -6113,7 +5732,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -6134,7 +5752,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -6152,7 +5769,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -6166,7 +5782,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -6180,7 +5795,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -6200,7 +5814,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -6214,7 +5827,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -6228,7 +5840,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -6242,7 +5853,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -6256,7 +5866,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -6276,7 +5885,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -6290,7 +5898,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -6304,7 +5911,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -6319,7 +5925,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -6333,7 +5938,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -6347,7 +5951,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -6361,7 +5964,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e544b33a5e21c81e17b9ba5c788e47a4bdeca2a50be0e0462a6a266c00739db3`
 
@@ -6375,7 +5977,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8033584f918bc6a1866492991c435d5fd75d3c6aedfbbe8e0a25d4641590e8d4`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:36:17 GMT
 
 #### `d7ea6f2811ff38fa939217be97b71cc39fbe78029be563222cdaf1dd154c868d`
 
@@ -6389,7 +5990,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f860067e1cf0dd3f8b9c85cfc382daadb556cda2620a24bddeb51df8b251cb4`
 
@@ -6403,7 +6003,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1b780493d32b0866b0584f1e20530f9732ee745498b2d0f84a11fae8c0d1d5f`
 
@@ -6417,7 +6016,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.9-jdk-9`
 
@@ -6441,7 +6039,6 @@ ADD file:40abe7b4f03f6f20a03be0a7bb4d087284a78bb1ad38b1bd2fe0a5667b035578 in /
 -	Virtual Size: 118.9 MB (118856892 bytes)
 -	v2 Blob: `sha256:dab5cddabf2c6b3306236231d50697d84827770ad029144d254edec4ee1f2878`
 -	v2 Content-Length: 52.4 MB (52439799 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:25:53 GMT
 
 #### `8456ed0918aa0d8291b003f5913023e4b0de2afd5c186ced31b60e99376fd91f`
 
@@ -6455,7 +6052,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0ef1fad306c7308e372307194f930841502c021ce386cd380135a8f8dbc29cc`
 
@@ -6473,7 +6069,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 48.9 MB (48896558 bytes)
 -	v2 Blob: `sha256:8b50b0d03c6fc003e13986b91f64295b0f02b1a28bd5e658876a054021ceaa62`
 -	v2 Content-Length: 20.4 MB (20431362 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:52:50 GMT
 
 #### `0fc6db373f0e511bf53aeede13f9296f6fb4460dcdd16545ba66ed6a38b7e744`
 
@@ -6494,7 +6089,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.5 MB (134549682 bytes)
 -	v2 Blob: `sha256:4cc3510f64956cf5b7d4de215343ed1cc5a96845152431e4d1d1a578fb1450dc`
 -	v2 Content-Length: 46.6 MB (46633351 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:57:54 GMT
 
 #### `977a48a94f2cfb094d769735a32527fa32fe5a2f24800eaa25a2462a69832532`
 
@@ -6508,7 +6102,6 @@ RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 786.3 KB (786257 bytes)
 -	v2 Blob: `sha256:2a8863e860aabbfa2fa972dd37ed37a2814dfdf60d94dbbe314a4b6796222c90`
 -	v2 Content-Length: 304.4 KB (304361 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:24 GMT
 
 #### `342e8ce6111db92dc862bc4b93d1ca4c7e57c43211dd974efdbca632ed90c092`
 
@@ -6522,7 +6115,6 @@ RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/s
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e491967432786d588f4d95cfac245a67146d3d10f4d346107b96b49cef4bb145`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:21 GMT
 
 #### `af66044e888a351b043ba155dcc6ec45938118b37897b069804a2903f11a691a`
 
@@ -6536,7 +6128,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e74e2830337d25d672a6675dd9a6bb13477ed7c61964852bb48a06fa1e4105d`
 
@@ -6556,7 +6147,6 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:87b94beb494650dc6111d063708297ca7d8b0f662ad598251d6eb479b2fd9cf7`
 -	v2 Content-Length: 243.0 B
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:16 GMT
 
 #### `e6c1ef2c200bf4a75b24a38ffaf4b70545792d4b0f152afc9e09ece28b4f155f`
 
@@ -6570,7 +6160,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7f0493927c2c20d5cdbdc001b0357427d8e5c8819a966da3e3010a08278ceb4`
 
@@ -6584,7 +6173,6 @@ ENV JAVA_VERSION=9~b102
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `869af3c2601cafc0115b419553ed2fd0e3b5562177bb745efb41fe9cc19c696b`
 
@@ -6598,7 +6186,6 @@ ENV JAVA_DEBIAN_VERSION=9~b102-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `da1d0fe6a151e30c428cf0768a08529b3c346d2c05755f8046afb6601f3fb487`
 
@@ -6612,7 +6199,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a01a2b7d00dcf6111d8294d0b155a1e08514ce689b927060be1da53dc43eec49`
 
@@ -6645,7 +6231,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 414.0 KB (413978 bytes)
 -	v2 Blob: `sha256:b0cc50e4caa6487e17dd5399948a90e51a4ad041ba112bed14b8d9460b035cff`
 -	v2 Content-Length: 281.6 KB (281584 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 18:02:59 GMT
 
 #### `794d7d5e9182db077f85acb996583c9bbb7dc3a28fe254680f6abaff9d11bd6e`
 
@@ -6659,7 +6244,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6022300e57d742ee9e2b276ad86eee27cb6e3eb60f52c4bca7adb7425c2ba4ed`
 
@@ -6674,7 +6258,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:367177e6b179c13a9afd03754ccc8c2723f9641f7d55218e98a81275db5c75c1`
 -	v2 Content-Length: 8.6 MB (8598794 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:37:07 GMT
 
 #### `8ecc55bd496b89ced293ff45e194b983b21b21f8683e61306d56538506598d98`
 
@@ -6688,7 +6271,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a7162d4c6f859d53d34aa3963d60c23de9e1afd859c651e2876a5327b685ea9`
 
@@ -6702,7 +6284,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `edb4078f1a522dcaccccbbe788782fd7345f08294fe4feae59d7311c220be4b4`
 
@@ -6716,7 +6297,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3-jdk-9`
 
@@ -6740,7 +6320,6 @@ ADD file:40abe7b4f03f6f20a03be0a7bb4d087284a78bb1ad38b1bd2fe0a5667b035578 in /
 -	Virtual Size: 118.9 MB (118856892 bytes)
 -	v2 Blob: `sha256:dab5cddabf2c6b3306236231d50697d84827770ad029144d254edec4ee1f2878`
 -	v2 Content-Length: 52.4 MB (52439799 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:25:53 GMT
 
 #### `8456ed0918aa0d8291b003f5913023e4b0de2afd5c186ced31b60e99376fd91f`
 
@@ -6754,7 +6333,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0ef1fad306c7308e372307194f930841502c021ce386cd380135a8f8dbc29cc`
 
@@ -6772,7 +6350,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 48.9 MB (48896558 bytes)
 -	v2 Blob: `sha256:8b50b0d03c6fc003e13986b91f64295b0f02b1a28bd5e658876a054021ceaa62`
 -	v2 Content-Length: 20.4 MB (20431362 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:52:50 GMT
 
 #### `0fc6db373f0e511bf53aeede13f9296f6fb4460dcdd16545ba66ed6a38b7e744`
 
@@ -6793,7 +6370,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.5 MB (134549682 bytes)
 -	v2 Blob: `sha256:4cc3510f64956cf5b7d4de215343ed1cc5a96845152431e4d1d1a578fb1450dc`
 -	v2 Content-Length: 46.6 MB (46633351 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:57:54 GMT
 
 #### `977a48a94f2cfb094d769735a32527fa32fe5a2f24800eaa25a2462a69832532`
 
@@ -6807,7 +6383,6 @@ RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 786.3 KB (786257 bytes)
 -	v2 Blob: `sha256:2a8863e860aabbfa2fa972dd37ed37a2814dfdf60d94dbbe314a4b6796222c90`
 -	v2 Content-Length: 304.4 KB (304361 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:24 GMT
 
 #### `342e8ce6111db92dc862bc4b93d1ca4c7e57c43211dd974efdbca632ed90c092`
 
@@ -6821,7 +6396,6 @@ RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/s
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e491967432786d588f4d95cfac245a67146d3d10f4d346107b96b49cef4bb145`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:21 GMT
 
 #### `af66044e888a351b043ba155dcc6ec45938118b37897b069804a2903f11a691a`
 
@@ -6835,7 +6409,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e74e2830337d25d672a6675dd9a6bb13477ed7c61964852bb48a06fa1e4105d`
 
@@ -6855,7 +6428,6 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:87b94beb494650dc6111d063708297ca7d8b0f662ad598251d6eb479b2fd9cf7`
 -	v2 Content-Length: 243.0 B
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:16 GMT
 
 #### `e6c1ef2c200bf4a75b24a38ffaf4b70545792d4b0f152afc9e09ece28b4f155f`
 
@@ -6869,7 +6441,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7f0493927c2c20d5cdbdc001b0357427d8e5c8819a966da3e3010a08278ceb4`
 
@@ -6883,7 +6454,6 @@ ENV JAVA_VERSION=9~b102
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `869af3c2601cafc0115b419553ed2fd0e3b5562177bb745efb41fe9cc19c696b`
 
@@ -6897,7 +6467,6 @@ ENV JAVA_DEBIAN_VERSION=9~b102-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `da1d0fe6a151e30c428cf0768a08529b3c346d2c05755f8046afb6601f3fb487`
 
@@ -6911,7 +6480,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a01a2b7d00dcf6111d8294d0b155a1e08514ce689b927060be1da53dc43eec49`
 
@@ -6944,7 +6512,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 414.0 KB (413978 bytes)
 -	v2 Blob: `sha256:b0cc50e4caa6487e17dd5399948a90e51a4ad041ba112bed14b8d9460b035cff`
 -	v2 Content-Length: 281.6 KB (281584 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 18:02:59 GMT
 
 #### `794d7d5e9182db077f85acb996583c9bbb7dc3a28fe254680f6abaff9d11bd6e`
 
@@ -6958,7 +6525,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6022300e57d742ee9e2b276ad86eee27cb6e3eb60f52c4bca7adb7425c2ba4ed`
 
@@ -6973,7 +6539,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:367177e6b179c13a9afd03754ccc8c2723f9641f7d55218e98a81275db5c75c1`
 -	v2 Content-Length: 8.6 MB (8598794 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:37:07 GMT
 
 #### `8ecc55bd496b89ced293ff45e194b983b21b21f8683e61306d56538506598d98`
 
@@ -6987,7 +6552,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a7162d4c6f859d53d34aa3963d60c23de9e1afd859c651e2876a5327b685ea9`
 
@@ -7001,7 +6565,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `edb4078f1a522dcaccccbbe788782fd7345f08294fe4feae59d7311c220be4b4`
 
@@ -7015,7 +6578,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3-jdk-9`
 
@@ -7039,7 +6601,6 @@ ADD file:40abe7b4f03f6f20a03be0a7bb4d087284a78bb1ad38b1bd2fe0a5667b035578 in /
 -	Virtual Size: 118.9 MB (118856892 bytes)
 -	v2 Blob: `sha256:dab5cddabf2c6b3306236231d50697d84827770ad029144d254edec4ee1f2878`
 -	v2 Content-Length: 52.4 MB (52439799 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:25:53 GMT
 
 #### `8456ed0918aa0d8291b003f5913023e4b0de2afd5c186ced31b60e99376fd91f`
 
@@ -7053,7 +6614,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0ef1fad306c7308e372307194f930841502c021ce386cd380135a8f8dbc29cc`
 
@@ -7071,7 +6631,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 48.9 MB (48896558 bytes)
 -	v2 Blob: `sha256:8b50b0d03c6fc003e13986b91f64295b0f02b1a28bd5e658876a054021ceaa62`
 -	v2 Content-Length: 20.4 MB (20431362 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:52:50 GMT
 
 #### `0fc6db373f0e511bf53aeede13f9296f6fb4460dcdd16545ba66ed6a38b7e744`
 
@@ -7092,7 +6651,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.5 MB (134549682 bytes)
 -	v2 Blob: `sha256:4cc3510f64956cf5b7d4de215343ed1cc5a96845152431e4d1d1a578fb1450dc`
 -	v2 Content-Length: 46.6 MB (46633351 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:57:54 GMT
 
 #### `977a48a94f2cfb094d769735a32527fa32fe5a2f24800eaa25a2462a69832532`
 
@@ -7106,7 +6664,6 @@ RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 786.3 KB (786257 bytes)
 -	v2 Blob: `sha256:2a8863e860aabbfa2fa972dd37ed37a2814dfdf60d94dbbe314a4b6796222c90`
 -	v2 Content-Length: 304.4 KB (304361 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:24 GMT
 
 #### `342e8ce6111db92dc862bc4b93d1ca4c7e57c43211dd974efdbca632ed90c092`
 
@@ -7120,7 +6677,6 @@ RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/s
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e491967432786d588f4d95cfac245a67146d3d10f4d346107b96b49cef4bb145`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:21 GMT
 
 #### `af66044e888a351b043ba155dcc6ec45938118b37897b069804a2903f11a691a`
 
@@ -7134,7 +6690,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e74e2830337d25d672a6675dd9a6bb13477ed7c61964852bb48a06fa1e4105d`
 
@@ -7154,7 +6709,6 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:87b94beb494650dc6111d063708297ca7d8b0f662ad598251d6eb479b2fd9cf7`
 -	v2 Content-Length: 243.0 B
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:16 GMT
 
 #### `e6c1ef2c200bf4a75b24a38ffaf4b70545792d4b0f152afc9e09ece28b4f155f`
 
@@ -7168,7 +6722,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7f0493927c2c20d5cdbdc001b0357427d8e5c8819a966da3e3010a08278ceb4`
 
@@ -7182,7 +6735,6 @@ ENV JAVA_VERSION=9~b102
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `869af3c2601cafc0115b419553ed2fd0e3b5562177bb745efb41fe9cc19c696b`
 
@@ -7196,7 +6748,6 @@ ENV JAVA_DEBIAN_VERSION=9~b102-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `da1d0fe6a151e30c428cf0768a08529b3c346d2c05755f8046afb6601f3fb487`
 
@@ -7210,7 +6761,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a01a2b7d00dcf6111d8294d0b155a1e08514ce689b927060be1da53dc43eec49`
 
@@ -7243,7 +6793,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 414.0 KB (413978 bytes)
 -	v2 Blob: `sha256:b0cc50e4caa6487e17dd5399948a90e51a4ad041ba112bed14b8d9460b035cff`
 -	v2 Content-Length: 281.6 KB (281584 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 18:02:59 GMT
 
 #### `794d7d5e9182db077f85acb996583c9bbb7dc3a28fe254680f6abaff9d11bd6e`
 
@@ -7257,7 +6806,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6022300e57d742ee9e2b276ad86eee27cb6e3eb60f52c4bca7adb7425c2ba4ed`
 
@@ -7272,7 +6820,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:367177e6b179c13a9afd03754ccc8c2723f9641f7d55218e98a81275db5c75c1`
 -	v2 Content-Length: 8.6 MB (8598794 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:37:07 GMT
 
 #### `8ecc55bd496b89ced293ff45e194b983b21b21f8683e61306d56538506598d98`
 
@@ -7286,7 +6833,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9a7162d4c6f859d53d34aa3963d60c23de9e1afd859c651e2876a5327b685ea9`
 
@@ -7300,7 +6846,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `edb4078f1a522dcaccccbbe788782fd7345f08294fe4feae59d7311c220be4b4`
 
@@ -7314,7 +6859,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.9-jdk-9-onbuild`
 
@@ -7338,7 +6882,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7352,7 +6895,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7370,7 +6912,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -7391,7 +6932,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -7409,7 +6949,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -7423,7 +6962,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -7437,7 +6975,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -7457,7 +6994,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -7471,7 +7007,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -7485,7 +7020,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -7499,7 +7033,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -7513,7 +7046,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -7533,7 +7065,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -7547,7 +7078,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -7561,7 +7091,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -7576,7 +7105,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -7590,7 +7118,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -7604,7 +7131,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -7618,7 +7144,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e544b33a5e21c81e17b9ba5c788e47a4bdeca2a50be0e0462a6a266c00739db3`
 
@@ -7632,7 +7157,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8033584f918bc6a1866492991c435d5fd75d3c6aedfbbe8e0a25d4641590e8d4`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:36:17 GMT
 
 #### `d7ea6f2811ff38fa939217be97b71cc39fbe78029be563222cdaf1dd154c868d`
 
@@ -7646,7 +7170,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f860067e1cf0dd3f8b9c85cfc382daadb556cda2620a24bddeb51df8b251cb4`
 
@@ -7660,7 +7183,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1b780493d32b0866b0584f1e20530f9732ee745498b2d0f84a11fae8c0d1d5f`
 
@@ -7674,7 +7196,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3-jdk-9-onbuild`
 
@@ -7698,7 +7219,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -7712,7 +7232,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -7730,7 +7249,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -7751,7 +7269,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -7769,7 +7286,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -7783,7 +7299,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -7797,7 +7312,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -7817,7 +7331,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -7831,7 +7344,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -7845,7 +7357,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -7859,7 +7370,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -7873,7 +7383,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -7893,7 +7402,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -7907,7 +7415,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -7921,7 +7428,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -7936,7 +7442,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -7950,7 +7455,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -7964,7 +7468,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -7978,7 +7481,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e544b33a5e21c81e17b9ba5c788e47a4bdeca2a50be0e0462a6a266c00739db3`
 
@@ -7992,7 +7494,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8033584f918bc6a1866492991c435d5fd75d3c6aedfbbe8e0a25d4641590e8d4`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:36:17 GMT
 
 #### `d7ea6f2811ff38fa939217be97b71cc39fbe78029be563222cdaf1dd154c868d`
 
@@ -8006,7 +7507,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f860067e1cf0dd3f8b9c85cfc382daadb556cda2620a24bddeb51df8b251cb4`
 
@@ -8020,7 +7520,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1b780493d32b0866b0584f1e20530f9732ee745498b2d0f84a11fae8c0d1d5f`
 
@@ -8034,7 +7533,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3-jdk-9-onbuild`
 
@@ -8058,7 +7556,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8072,7 +7569,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -8090,7 +7586,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -8111,7 +7606,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -8129,7 +7623,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -8143,7 +7636,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -8157,7 +7649,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -8177,7 +7668,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -8191,7 +7681,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -8205,7 +7694,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -8219,7 +7707,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -8233,7 +7720,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -8253,7 +7739,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -8267,7 +7752,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `95f1021258c4eed95c248988bd1ad9e0173a334cca074cd70f6ff78c970c7091`
 
@@ -8281,7 +7765,6 @@ ENV MAVEN_VERSION=3.3.9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `72d8ce1dcaba62157463f826811f754f2457a7f3ca929d63f5825a5ab56da61e`
 
@@ -8296,7 +7779,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 10.0 MB (10026460 bytes)
 -	v2 Blob: `sha256:96dfbad05e088945e73424b123d2ace091103d8f702a6a8291feda55c1d52b8c`
 -	v2 Content-Length: 8.6 MB (8598801 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:34:33 GMT
 
 #### `2f2d7c89aa333f577638c73ee80767c4248c0b252bd0ebd59f670e43f727d899`
 
@@ -8310,7 +7792,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ed568652b5df56282c09495b0ec4c6c84f17b17b94f6fad8c9b0dfdb4b2bc21b`
 
@@ -8324,7 +7805,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `88072f857fe53c8f84d2e2f6968751176fe80627fe07334204bf15d2bd770eaa`
 
@@ -8338,7 +7818,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e544b33a5e21c81e17b9ba5c788e47a4bdeca2a50be0e0462a6a266c00739db3`
 
@@ -8352,7 +7831,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:8033584f918bc6a1866492991c435d5fd75d3c6aedfbbe8e0a25d4641590e8d4`
 -	v2 Content-Length: 161.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:36:17 GMT
 
 #### `d7ea6f2811ff38fa939217be97b71cc39fbe78029be563222cdaf1dd154c868d`
 
@@ -8366,7 +7844,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4f860067e1cf0dd3f8b9c85cfc382daadb556cda2620a24bddeb51df8b251cb4`
 
@@ -8380,7 +7857,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a1b780493d32b0866b0584f1e20530f9732ee745498b2d0f84a11fae8c0d1d5f`
 
@@ -8394,7 +7870,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.3-jdk-7`
 
@@ -8418,7 +7893,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8432,7 +7906,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -8450,7 +7923,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -8471,7 +7943,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -8489,7 +7960,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `2ec18ad09e7db36879ebe6c314f02e4391d940e19f72b045bbc3e17b6b549a66`
 
@@ -8503,7 +7973,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `60a929595f30c713fbcb9e367d71b1c5b5daa8ca8c391c17476d84680c46bc13`
 
@@ -8523,7 +7992,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:f5ae3a8c0650f746b35474250b03c0955998988d27a5e14fbedd379d3483ea19`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:59 GMT
 
 #### `0c429ca59e91be7561fc11ab6c00cd6720cb1da5e9bd0284567846b4c27a5b40`
 
@@ -8537,7 +8005,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e30ec88f3603a8d6b6ea08f4ed518d9b6cd715f0dce22b5e6af6b0b495e0970`
 
@@ -8551,7 +8018,6 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `885fdcf71426071aaa24156e1d1be254309281db650bcbb31c04e9513f485a97`
 
@@ -8565,7 +8031,6 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83d2ddfef79c039126daa3f3dc97e957f1012205c235cdbd3aaa8743a03af2af`
 
@@ -8584,7 +8049,6 @@ RUN set -x \
 -	Virtual Size: 295.0 MB (295020119 bytes)
 -	v2 Blob: `sha256:9b75e7688b0463f8fbbf018d0c5b342a8d266a5fc19359c8680dee6713d1d05c`
 -	v2 Content-Length: 139.4 MB (139417505 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:46 GMT
 
 #### `8f594626b3c06d061a5e646f45d32e5738c43f8106e6ab8692242b97ad6175b4`
 
@@ -8598,7 +8062,6 @@ ENV MAVEN_VERSION=3.3.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c9a0d375feade618417f32084d76afb2e86db147bde8bb649a32d6a074b9101`
 
@@ -8613,7 +8076,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 9.5 MB (9504446 bytes)
 -	v2 Blob: `sha256:556f7fbb2c8ca56b8e9e9b5341048dab08444ce78a53579965fdd997fb67a86c`
 -	v2 Content-Length: 8.1 MB (8141244 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:40:50 GMT
 
 #### `075d2527270509f03c62553479511517771d61c91d7ea0977b4309d171cbee91`
 
@@ -8627,7 +8089,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8089aa298eb8f5798dfd72de49eb96fdcedcdea91ea90291c6ee1e1fa1d7830e`
 
@@ -8641,7 +8102,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab33554ee51a5e55c17165371f1ec8237bf182951ec1887c2f57fb7a3e7f126e`
 
@@ -8655,7 +8115,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.3-jdk-7-onbuild`
 
@@ -8679,7 +8138,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -8693,7 +8151,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -8711,7 +8168,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -8732,7 +8188,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -8750,7 +8205,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `2ec18ad09e7db36879ebe6c314f02e4391d940e19f72b045bbc3e17b6b549a66`
 
@@ -8764,7 +8218,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `60a929595f30c713fbcb9e367d71b1c5b5daa8ca8c391c17476d84680c46bc13`
 
@@ -8784,7 +8237,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:f5ae3a8c0650f746b35474250b03c0955998988d27a5e14fbedd379d3483ea19`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:59 GMT
 
 #### `0c429ca59e91be7561fc11ab6c00cd6720cb1da5e9bd0284567846b4c27a5b40`
 
@@ -8798,7 +8250,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4e30ec88f3603a8d6b6ea08f4ed518d9b6cd715f0dce22b5e6af6b0b495e0970`
 
@@ -8812,7 +8263,6 @@ ENV JAVA_VERSION=7u95
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `885fdcf71426071aaa24156e1d1be254309281db650bcbb31c04e9513f485a97`
 
@@ -8826,7 +8276,6 @@ ENV JAVA_DEBIAN_VERSION=7u95-2.6.4-1~deb8u1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `83d2ddfef79c039126daa3f3dc97e957f1012205c235cdbd3aaa8743a03af2af`
 
@@ -8845,7 +8294,6 @@ RUN set -x \
 -	Virtual Size: 295.0 MB (295020119 bytes)
 -	v2 Blob: `sha256:9b75e7688b0463f8fbbf018d0c5b342a8d266a5fc19359c8680dee6713d1d05c`
 -	v2 Content-Length: 139.4 MB (139417505 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:41:46 GMT
 
 #### `8f594626b3c06d061a5e646f45d32e5738c43f8106e6ab8692242b97ad6175b4`
 
@@ -8859,7 +8307,6 @@ ENV MAVEN_VERSION=3.3.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c9a0d375feade618417f32084d76afb2e86db147bde8bb649a32d6a074b9101`
 
@@ -8874,7 +8321,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 9.5 MB (9504446 bytes)
 -	v2 Blob: `sha256:556f7fbb2c8ca56b8e9e9b5341048dab08444ce78a53579965fdd997fb67a86c`
 -	v2 Content-Length: 8.1 MB (8141244 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:40:50 GMT
 
 #### `075d2527270509f03c62553479511517771d61c91d7ea0977b4309d171cbee91`
 
@@ -8888,7 +8334,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8089aa298eb8f5798dfd72de49eb96fdcedcdea91ea90291c6ee1e1fa1d7830e`
 
@@ -8902,7 +8347,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ab33554ee51a5e55c17165371f1ec8237bf182951ec1887c2f57fb7a3e7f126e`
 
@@ -8916,7 +8360,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7134e16749b72998c18a6ab1fed05f8f73f6199a5059e2f28a349eb1457735f5`
 
@@ -8930,7 +8373,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:31a39fbbd028b4690d7f28cb63dcb2453a5ac6ba1460c3eae9dd4306696c120d`
 -	v2 Content-Length: 157.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:41:12 GMT
 
 #### `91c3a9ca3e5557fd8f7173d530aab004b95c2fd2a1bf22dd95bc1999bc540636`
 
@@ -8944,7 +8386,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4b10f22c7c3863b37dc773560de3661f2f155ab36c54c9fead9df429a354489e`
 
@@ -8958,7 +8399,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `809bda972fab30fe4231be6296421b49ad8b42d177a2532730f2d31df166bb05`
 
@@ -8972,7 +8412,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.3-jdk-8`
 
@@ -8996,7 +8435,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9010,7 +8448,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9028,7 +8465,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -9049,7 +8485,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -9067,7 +8502,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -9081,7 +8515,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -9095,7 +8528,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -9115,7 +8547,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -9129,7 +8560,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -9143,7 +8573,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -9157,7 +8586,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -9171,7 +8599,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -9191,7 +8618,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -9205,7 +8631,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `fd5da7e8df8c5bff37401a7a459a89c00d32ea30459626d9c22827317d353e0c`
 
@@ -9219,7 +8644,6 @@ ENV MAVEN_VERSION=3.3.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af6d0fb487ef074de51f9881f6950467f74bfd8d5a1601a5167002daccb052cd`
 
@@ -9234,7 +8658,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 9.5 MB (9504446 bytes)
 -	v2 Blob: `sha256:449bfcb5dd7caa129238d375411a807315e5c5fc90d495834adf28f19d7f55b4`
 -	v2 Content-Length: 8.1 MB (8141249 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:41:34 GMT
 
 #### `86bf21ec1779c8c31395a22603005053f2e004bbfb64ff7ee726ef3b07a52483`
 
@@ -9248,7 +8671,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `57e7850684848b4bbd1e6038aa54a6186e1dfd7a19e7c81c9f6304f1dbe5920d`
 
@@ -9262,7 +8684,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7941d844f05d143da45d191eedc548b50f0ee2f31de7357b22b8cd5f355ee2f6`
 
@@ -9276,7 +8697,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.3`
 
@@ -9300,7 +8720,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9314,7 +8733,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9332,7 +8750,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -9353,7 +8770,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -9371,7 +8787,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -9385,7 +8800,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -9399,7 +8813,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -9419,7 +8832,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -9433,7 +8845,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -9447,7 +8858,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -9461,7 +8871,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -9475,7 +8884,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -9495,7 +8903,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -9509,7 +8916,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `fd5da7e8df8c5bff37401a7a459a89c00d32ea30459626d9c22827317d353e0c`
 
@@ -9523,7 +8929,6 @@ ENV MAVEN_VERSION=3.3.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af6d0fb487ef074de51f9881f6950467f74bfd8d5a1601a5167002daccb052cd`
 
@@ -9538,7 +8943,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 9.5 MB (9504446 bytes)
 -	v2 Blob: `sha256:449bfcb5dd7caa129238d375411a807315e5c5fc90d495834adf28f19d7f55b4`
 -	v2 Content-Length: 8.1 MB (8141249 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:41:34 GMT
 
 #### `86bf21ec1779c8c31395a22603005053f2e004bbfb64ff7ee726ef3b07a52483`
 
@@ -9552,7 +8956,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `57e7850684848b4bbd1e6038aa54a6186e1dfd7a19e7c81c9f6304f1dbe5920d`
 
@@ -9566,7 +8969,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7941d844f05d143da45d191eedc548b50f0ee2f31de7357b22b8cd5f355ee2f6`
 
@@ -9580,7 +8982,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.3-jdk-8-onbuild`
 
@@ -9604,7 +9005,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9618,7 +9018,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9636,7 +9035,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -9657,7 +9055,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -9675,7 +9072,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -9689,7 +9085,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -9703,7 +9098,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -9723,7 +9117,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -9737,7 +9130,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -9751,7 +9143,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -9765,7 +9156,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -9779,7 +9169,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -9799,7 +9188,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -9813,7 +9201,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `fd5da7e8df8c5bff37401a7a459a89c00d32ea30459626d9c22827317d353e0c`
 
@@ -9827,7 +9214,6 @@ ENV MAVEN_VERSION=3.3.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af6d0fb487ef074de51f9881f6950467f74bfd8d5a1601a5167002daccb052cd`
 
@@ -9842,7 +9228,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 9.5 MB (9504446 bytes)
 -	v2 Blob: `sha256:449bfcb5dd7caa129238d375411a807315e5c5fc90d495834adf28f19d7f55b4`
 -	v2 Content-Length: 8.1 MB (8141249 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:41:34 GMT
 
 #### `86bf21ec1779c8c31395a22603005053f2e004bbfb64ff7ee726ef3b07a52483`
 
@@ -9856,7 +9241,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `57e7850684848b4bbd1e6038aa54a6186e1dfd7a19e7c81c9f6304f1dbe5920d`
 
@@ -9870,7 +9254,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7941d844f05d143da45d191eedc548b50f0ee2f31de7357b22b8cd5f355ee2f6`
 
@@ -9884,7 +9267,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a8b08f1568de8e09101862c7ea33e65d42cebb29ea5f0f0a0cfe3838225ee832`
 
@@ -9898,7 +9280,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3515bb92e31dd37de4ca80e24c5fefd211fbec8a6f47d295a343d561468aeebc`
 -	v2 Content-Length: 158.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:41:59 GMT
 
 #### `60aa540cd72d2dd93402a3ab55f30408ba369fcd9717085fcc82bfe25b267325`
 
@@ -9912,7 +9293,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `99c8d594af96e0e954f39b68498da2983438b7a7f32fe2e8eddafdeb1da55559`
 
@@ -9926,7 +9306,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5543a8bfceaf34ee6c2fe9270bbfbb26232bd0e028c2d7a15921c7bd2a75643e`
 
@@ -9940,7 +9319,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.3-onbuild`
 
@@ -9964,7 +9342,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -9978,7 +9355,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -9996,7 +9372,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -10017,7 +9392,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -10035,7 +9409,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -10049,7 +9422,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -10063,7 +9435,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -10083,7 +9454,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -10097,7 +9467,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -10111,7 +9480,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -10125,7 +9493,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -10139,7 +9506,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -10159,7 +9525,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -10173,7 +9538,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `fd5da7e8df8c5bff37401a7a459a89c00d32ea30459626d9c22827317d353e0c`
 
@@ -10187,7 +9551,6 @@ ENV MAVEN_VERSION=3.3.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af6d0fb487ef074de51f9881f6950467f74bfd8d5a1601a5167002daccb052cd`
 
@@ -10202,7 +9565,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 9.5 MB (9504446 bytes)
 -	v2 Blob: `sha256:449bfcb5dd7caa129238d375411a807315e5c5fc90d495834adf28f19d7f55b4`
 -	v2 Content-Length: 8.1 MB (8141249 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:41:34 GMT
 
 #### `86bf21ec1779c8c31395a22603005053f2e004bbfb64ff7ee726ef3b07a52483`
 
@@ -10216,7 +9578,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `57e7850684848b4bbd1e6038aa54a6186e1dfd7a19e7c81c9f6304f1dbe5920d`
 
@@ -10230,7 +9591,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7941d844f05d143da45d191eedc548b50f0ee2f31de7357b22b8cd5f355ee2f6`
 
@@ -10244,7 +9604,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a8b08f1568de8e09101862c7ea33e65d42cebb29ea5f0f0a0cfe3838225ee832`
 
@@ -10258,7 +9617,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3515bb92e31dd37de4ca80e24c5fefd211fbec8a6f47d295a343d561468aeebc`
 -	v2 Content-Length: 158.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:41:59 GMT
 
 #### `60aa540cd72d2dd93402a3ab55f30408ba369fcd9717085fcc82bfe25b267325`
 
@@ -10272,7 +9630,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `99c8d594af96e0e954f39b68498da2983438b7a7f32fe2e8eddafdeb1da55559`
 
@@ -10286,7 +9643,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5543a8bfceaf34ee6c2fe9270bbfbb26232bd0e028c2d7a15921c7bd2a75643e`
 
@@ -10300,7 +9656,6 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.3-jdk-9`
 
@@ -10324,7 +9679,6 @@ ADD file:40abe7b4f03f6f20a03be0a7bb4d087284a78bb1ad38b1bd2fe0a5667b035578 in /
 -	Virtual Size: 118.9 MB (118856892 bytes)
 -	v2 Blob: `sha256:dab5cddabf2c6b3306236231d50697d84827770ad029144d254edec4ee1f2878`
 -	v2 Content-Length: 52.4 MB (52439799 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:25:53 GMT
 
 #### `8456ed0918aa0d8291b003f5913023e4b0de2afd5c186ced31b60e99376fd91f`
 
@@ -10338,7 +9692,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a0ef1fad306c7308e372307194f930841502c021ce386cd380135a8f8dbc29cc`
 
@@ -10356,7 +9709,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 48.9 MB (48896558 bytes)
 -	v2 Blob: `sha256:8b50b0d03c6fc003e13986b91f64295b0f02b1a28bd5e658876a054021ceaa62`
 -	v2 Content-Length: 20.4 MB (20431362 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:52:50 GMT
 
 #### `0fc6db373f0e511bf53aeede13f9296f6fb4460dcdd16545ba66ed6a38b7e744`
 
@@ -10377,7 +9729,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.5 MB (134549682 bytes)
 -	v2 Blob: `sha256:4cc3510f64956cf5b7d4de215343ed1cc5a96845152431e4d1d1a578fb1450dc`
 -	v2 Content-Length: 46.6 MB (46633351 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 17:57:54 GMT
 
 #### `977a48a94f2cfb094d769735a32527fa32fe5a2f24800eaa25a2462a69832532`
 
@@ -10391,7 +9742,6 @@ RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 786.3 KB (786257 bytes)
 -	v2 Blob: `sha256:2a8863e860aabbfa2fa972dd37ed37a2814dfdf60d94dbbe314a4b6796222c90`
 -	v2 Content-Length: 304.4 KB (304361 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:24 GMT
 
 #### `342e8ce6111db92dc862bc4b93d1ca4c7e57c43211dd974efdbca632ed90c092`
 
@@ -10405,7 +9755,6 @@ RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/s
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:e491967432786d588f4d95cfac245a67146d3d10f4d346107b96b49cef4bb145`
 -	v2 Content-Length: 216.0 B
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:21 GMT
 
 #### `af66044e888a351b043ba155dcc6ec45938118b37897b069804a2903f11a691a`
 
@@ -10419,7 +9768,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e74e2830337d25d672a6675dd9a6bb13477ed7c61964852bb48a06fa1e4105d`
 
@@ -10439,7 +9787,6 @@ RUN { \
 -	Virtual Size: 89.0 B
 -	v2 Blob: `sha256:87b94beb494650dc6111d063708297ca7d8b0f662ad598251d6eb479b2fd9cf7`
 -	v2 Content-Length: 243.0 B
--	v2 Last-Modified: Wed, 24 Feb 2016 18:04:16 GMT
 
 #### `e6c1ef2c200bf4a75b24a38ffaf4b70545792d4b0f152afc9e09ece28b4f155f`
 
@@ -10453,7 +9800,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7f0493927c2c20d5cdbdc001b0357427d8e5c8819a966da3e3010a08278ceb4`
 
@@ -10467,7 +9813,6 @@ ENV JAVA_VERSION=9~b102
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `869af3c2601cafc0115b419553ed2fd0e3b5562177bb745efb41fe9cc19c696b`
 
@@ -10481,7 +9826,6 @@ ENV JAVA_DEBIAN_VERSION=9~b102-1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `da1d0fe6a151e30c428cf0768a08529b3c346d2c05755f8046afb6601f3fb487`
 
@@ -10495,7 +9839,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a01a2b7d00dcf6111d8294d0b155a1e08514ce689b927060be1da53dc43eec49`
 
@@ -10528,7 +9871,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 414.0 KB (413978 bytes)
 -	v2 Blob: `sha256:b0cc50e4caa6487e17dd5399948a90e51a4ad041ba112bed14b8d9460b035cff`
 -	v2 Content-Length: 281.6 KB (281584 bytes)
--	v2 Last-Modified: Wed, 24 Feb 2016 18:02:59 GMT
 
 #### `e37f311a1fd5f5a1abf5547595446a6252a4080827a8ac4dd139f056653777cf`
 
@@ -10542,7 +9884,6 @@ ENV MAVEN_VERSION=3.3.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `97b0bdd1540708cca9c0cb49f2621b64548a101e532f30791db0b996549068a6`
 
@@ -10557,7 +9898,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 9.5 MB (9504446 bytes)
 -	v2 Blob: `sha256:8b60a8558bed2fa0c1170df0e7e4db523a38fb1436a514668acbf00554e4b3ba`
 -	v2 Content-Length: 8.1 MB (8141247 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:42:20 GMT
 
 #### `05aa7b168395e31c593196c30055f537f71a325fc3a83c5385ca9e2e230ca9a3`
 
@@ -10571,7 +9911,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e23ee9b8b5011b749b65da1d63111441e55a9876ea785b64df089771a93f939a`
 
@@ -10585,7 +9924,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1546fbf2b568f47acbb7b84d15d1300f6c6f15b759819bc5be853ada616a863c`
 
@@ -10599,7 +9937,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `maven:3.3.3-jdk-9-onbuild`
 
@@ -10623,7 +9960,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -10637,7 +9973,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -10655,7 +9990,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -10676,7 +10010,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122586932 bytes)
 -	v2 Blob: `sha256:627b6479c8f7601589d5fc889d9aa0fc9121f26dfd1c5af64ba964f82d561d8b`
 -	v2 Content-Length: 42.5 MB (42494879 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:42 GMT
 
 #### `6d048f1c223bc1dabe44819136f06bf958665e5f58dff119e104e508fd29b11b`
 
@@ -10694,7 +10027,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.3 MB (1289041 bytes)
 -	v2 Blob: `sha256:14d29245dd7172ee9010e614549ce26529932261b20c4f7118b9f522e7a54947`
 -	v2 Content-Length: 593.3 KB (593257 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:42:04 GMT
 
 #### `fd0e93cdc2d104df7baed53ba395c46e94ba7622ea350156174b6d32e71ce286`
 
@@ -10708,7 +10040,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:11cf859bb16cd991f88c2ad48e9d276851cf717c960f13f41f564266b62a791c`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:46:02 GMT
 
 #### `2f6ac4bc61e57a7d98fa82fb0259e21c949bb36419f5490684f6d62a5eb67793`
 
@@ -10722,7 +10053,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2fac80947c780f51e645e02c3930e7627acc9db29d1cf1e0798efdcf13abd82e`
 
@@ -10742,7 +10072,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:8edb70946005bb204fd5fd7137e6faccc69ecb9a3b1f83226c5e3b4eebb41711`
 -	v2 Content-Length: 242.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:57 GMT
 
 #### `7f79e88ab05703d59477c10f422e0ad1739c69bf766daf00d5a2c594fcd3d6c7`
 
@@ -10756,7 +10085,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f0f5d655b2ce89e0792ab04265aef84fc2fabdb481143a2cfda2a14046ada31`
 
@@ -10770,7 +10098,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67a555750704866b21189e4f592a3b1d9399ff816532ab9f3f3913a4ec0bdbe3`
 
@@ -10784,7 +10111,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6df210c797663f8c37bcafe4943a07f746c8bb6d8d760ae8b2f1787c5396a7fe`
 
@@ -10798,7 +10124,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `85bc92fcb5e8a1b1fa2662e019803f57f07d545040bd8218b29c6a304242f78d`
 
@@ -10818,7 +10143,6 @@ RUN set -x \
 -	Virtual Size: 349.2 MB (349176621 bytes)
 -	v2 Blob: `sha256:a3da659e0c5a59eb50ec124c737f80c4afbcde5399a3adaa35a4cbbf48bf5bc5`
 -	v2 Content-Length: 130.0 MB (129952373 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:42 GMT
 
 #### `83dfa7ac0eb9621faa60c939ec6e6ffd56237b6512eb7408a339ac3449d1e00b`
 
@@ -10832,7 +10156,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:3d9bebe7e5d63f9d9db65dab7d54430a763f5c6d0181b29130be16d5e58dde0f`
 -	v2 Content-Length: 284.3 KB (284341 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:45:03 GMT
 
 #### `fd5da7e8df8c5bff37401a7a459a89c00d32ea30459626d9c22827317d353e0c`
 
@@ -10846,7 +10169,6 @@ ENV MAVEN_VERSION=3.3.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `af6d0fb487ef074de51f9881f6950467f74bfd8d5a1601a5167002daccb052cd`
 
@@ -10861,7 +10183,6 @@ RUN mkdir -p /usr/share/maven   && curl -fsSL http://apache.osuosl.org/maven/mav
 -	Virtual Size: 9.5 MB (9504446 bytes)
 -	v2 Blob: `sha256:449bfcb5dd7caa129238d375411a807315e5c5fc90d495834adf28f19d7f55b4`
 -	v2 Content-Length: 8.1 MB (8141249 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:41:34 GMT
 
 #### `86bf21ec1779c8c31395a22603005053f2e004bbfb64ff7ee726ef3b07a52483`
 
@@ -10875,7 +10196,6 @@ ENV MAVEN_HOME=/usr/share/maven
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `57e7850684848b4bbd1e6038aa54a6186e1dfd7a19e7c81c9f6304f1dbe5920d`
 
@@ -10889,7 +10209,6 @@ VOLUME [/root/.m2]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7941d844f05d143da45d191eedc548b50f0ee2f31de7357b22b8cd5f355ee2f6`
 
@@ -10903,7 +10222,6 @@ CMD ["mvn"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a8b08f1568de8e09101862c7ea33e65d42cebb29ea5f0f0a0cfe3838225ee832`
 
@@ -10917,7 +10235,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3515bb92e31dd37de4ca80e24c5fefd211fbec8a6f47d295a343d561468aeebc`
 -	v2 Content-Length: 158.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 23:41:59 GMT
 
 #### `60aa540cd72d2dd93402a3ab55f30408ba369fcd9717085fcc82bfe25b267325`
 
@@ -10931,7 +10248,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `99c8d594af96e0e954f39b68498da2983438b7a7f32fe2e8eddafdeb1da55559`
 
@@ -10945,7 +10261,6 @@ ONBUILD ADD . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5543a8bfceaf34ee6c2fe9270bbfbb26232bd0e028c2d7a15921c7bd2a75643e`
 
@@ -10959,4 +10274,3 @@ ONBUILD RUN mvn install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

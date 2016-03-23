@@ -37,7 +37,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -64,7 +63,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -78,7 +76,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -105,7 +102,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -119,7 +115,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -133,7 +128,6 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -160,7 +154,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -174,7 +167,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -230,7 +222,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -331,7 +322,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -412,7 +402,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -433,7 +422,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -503,7 +491,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -553,7 +540,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -580,7 +566,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -594,7 +579,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -621,7 +605,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -635,7 +618,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -649,7 +631,6 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -676,7 +657,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -690,7 +670,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -746,7 +725,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -847,7 +825,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -928,7 +905,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -949,7 +925,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -1019,7 +994,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -1069,7 +1043,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1096,7 +1069,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -1110,7 +1082,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -1137,7 +1108,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -1151,7 +1121,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -1165,7 +1134,6 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -1192,7 +1160,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -1206,7 +1173,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -1262,7 +1228,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -1363,7 +1328,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -1444,7 +1408,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -1465,7 +1428,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -1535,7 +1497,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -1585,7 +1546,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1612,7 +1572,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -1626,7 +1585,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -1653,7 +1611,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -1667,7 +1624,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -1681,7 +1637,6 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -1708,7 +1663,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -1722,7 +1676,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -1778,7 +1731,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -1879,7 +1831,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -1960,7 +1911,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -1981,7 +1931,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -2051,7 +2000,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -2101,7 +2049,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2128,7 +2075,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -2142,7 +2088,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -2169,7 +2114,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -2183,7 +2127,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -2197,7 +2140,6 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -2224,7 +2166,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -2238,7 +2179,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -2294,7 +2234,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -2395,7 +2334,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -2476,7 +2414,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -2497,7 +2434,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -2567,7 +2503,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -2617,7 +2552,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2644,7 +2578,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -2658,7 +2591,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -2685,7 +2617,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -2699,7 +2630,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -2713,7 +2643,6 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -2740,7 +2669,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -2754,7 +2682,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -2810,7 +2737,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -2911,7 +2837,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -2992,7 +2917,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -3013,7 +2937,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -3083,7 +3006,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -3133,7 +3055,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3160,7 +3081,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -3174,7 +3094,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -3201,7 +3120,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -3215,7 +3133,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -3229,7 +3146,6 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -3256,7 +3172,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -3270,7 +3185,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -3326,7 +3240,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -3427,7 +3340,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -3508,7 +3420,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -3529,7 +3440,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -3599,7 +3509,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -3649,7 +3558,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3676,7 +3584,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -3690,7 +3597,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -3717,7 +3623,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `462edee6fd2ae632ecf8483517e2b1e0d03d531d94b448f8585b7969b925ce64`
 
@@ -3731,7 +3636,6 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 -	Virtual Size: 7.1 MB (7147312 bytes)
 -	v2 Blob: `sha256:b2799c7ad5c9dd9679c85b692f73dc3c5fead5ee1b87d561b44839a6fe33f6ac`
 -	v2 Content-Length: 2.8 MB (2843868 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:01 GMT
 
 #### `54a86a8dfaf7fee24f8a68318bfd82d031d65ac6c373a6678197f558f2ad505b`
 
@@ -3745,7 +3649,6 @@ RUN rm -rf /var/www/html && mkdir -p /var/lock/apache2 /var/run/apache2 /var/log
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:4893554c0107c117ba5bdcda21856862b20d9822bdcbc89cbcfdc8db48097742`
 -	v2 Content-Length: 324.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:57 GMT
 
 #### `b7ee93d44332e28e60cdc65600aa7181101a34f4c5a9b7bd45ab2a3e389d7a7c`
 
@@ -3772,7 +3675,6 @@ RUN mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.dist && rm /etc/apach
 -	Virtual Size: 7.1 KB (7115 bytes)
 -	v2 Blob: `sha256:bd103e3f61953ea1d77d2820cce14fa1138c1b56cf6b4484c0f186158e7ae26b`
 -	v2 Content-Length: 3.4 KB (3360 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:52 GMT
 
 #### `8f24f05131c1b821e55947546eeca4740059ad2a65033777b1d1b4bea6d20f07`
 
@@ -3786,7 +3688,6 @@ COPY file:cd759b8d41f4b210d6ab9589edc3741a6aa46739a169e73608046d3df8cbadc7 in /e
 -	Virtual Size: 1.5 KB (1520 bytes)
 -	v2 Blob: `sha256:aa560ff33ce623aea1e95ac1b42d3bd1dfcddc2ba613a265f576e5e5985381ad`
 -	v2 Content-Length: 866.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:49 GMT
 
 #### `4016089f3db511210d86381d2b1bd528aa6d105de27413e06e294c9d0c1b7bab`
 
@@ -3842,7 +3743,6 @@ RUN set -xe \
 -	Virtual Size: 16.6 KB (16552 bytes)
 -	v2 Blob: `sha256:1deabfa1075977579071c584269f30bc59a6c8c37b9acb1c4996d7914d70e188`
 -	v2 Content-Length: 7.6 KB (7587 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:29:41 GMT
 
 #### `3f26928ce25c9834360431a586502276556eee96e461339f3aca2014ba3f8500`
 
@@ -3943,7 +3843,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:7234c82b998ecf940a7f318cd537328ac48079378e936458e27aea4d0448e112`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:30:28 GMT
 
 #### `f84be661daf698812d54a2fba18b8c8cec9f79130219104d61c0b9c8a4ff5179`
 
@@ -4024,7 +3923,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.8 MB (14800864 bytes)
 -	v2 Blob: `sha256:fe011342f195deb35b176425e5843f4c01e08e4c39336bea60b0d5f3d7ab14eb`
 -	v2 Content-Length: 4.4 MB (4442824 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:23 GMT
 
 #### `92b5b33d3eab871a34a9141c53ac1b66b30482dfc1d52784aad642e38bb4ac80`
 
@@ -4045,7 +3943,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:c6dd706ba27eb1443012ff708d6b78a0f15a9e9d3cb038772d678dcdce406ad2`
 -	v2 Content-Length: 331.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:34:19 GMT
 
 #### `e2f419cc324cc85c56e3d3ac1ebbd50037ffca6bd0fd72390197156bc0c41d22`
 
@@ -4115,7 +4012,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `04b616f9cdefdde678ce0e255ab229f4dd894e98640789d59e86b2ab510166a7`
 
@@ -4165,7 +4061,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4192,7 +4087,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -4206,7 +4100,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -4233,7 +4126,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `a4ad35049e4920760c9fb81d1a7907b7c0d48fd122d42ae2736ed9eddda11ccb`
 
@@ -4376,7 +4268,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -4435,7 +4326,6 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:a6773adbce5c4b6533260ebc24f7eed9c5adf94d362dff09d209c671b26b217f`
 -	v2 Content-Length: 7.7 KB (7687 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:31:59 GMT
 
 #### `25e4f88670c02e9b5e5eb26c618659a6dd8512be186459c7535ca1dd7341166c`
 
@@ -4477,7 +4367,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.7 MB (14687982 bytes)
 -	v2 Blob: `sha256:2a193135c4ecfd8050b486c00d6493fe344d08c2f420becdbadf5c27ddf8cf05`
 -	v2 Content-Length: 4.4 MB (4420908 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:47 GMT
 
 #### `dc8f271eeb5cc07eef415fcfd27f5dceff874221bda1eec17e817c1bd403a901`
 
@@ -4498,7 +4387,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1e4e07ca0eb0602f0979ff4626734eab591554f3d0b142e6fd79f21b394585cf`
 -	v2 Content-Length: 333.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:43 GMT
 
 #### `56b5e4eded48886811961ae431e50f5dd1bc909e189f70a8d3d8be8afb9c9bf2`
 
@@ -4555,7 +4443,6 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:f923f7bd83597d51a50cf451fbd23e03ad81cabd7951c5586a8749a3891dd058`
 -	v2 Content-Length: 6.9 MB (6939502 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:34 GMT
 
 #### `c2c02b810b9edf550fb4988aa7ec6cc4c2372a6049b89c272af426873de78810`
 
@@ -4569,7 +4456,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `fe008b7ee00744734b2fb17adeff3cc6d6abd457221bf325431112ce66dd998e`
 
@@ -4619,7 +4505,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4646,7 +4531,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -4660,7 +4544,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -4687,7 +4570,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `a4ad35049e4920760c9fb81d1a7907b7c0d48fd122d42ae2736ed9eddda11ccb`
 
@@ -4830,7 +4712,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -4889,7 +4770,6 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:a6773adbce5c4b6533260ebc24f7eed9c5adf94d362dff09d209c671b26b217f`
 -	v2 Content-Length: 7.7 KB (7687 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:31:59 GMT
 
 #### `25e4f88670c02e9b5e5eb26c618659a6dd8512be186459c7535ca1dd7341166c`
 
@@ -4931,7 +4811,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.7 MB (14687982 bytes)
 -	v2 Blob: `sha256:2a193135c4ecfd8050b486c00d6493fe344d08c2f420becdbadf5c27ddf8cf05`
 -	v2 Content-Length: 4.4 MB (4420908 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:47 GMT
 
 #### `dc8f271eeb5cc07eef415fcfd27f5dceff874221bda1eec17e817c1bd403a901`
 
@@ -4952,7 +4831,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1e4e07ca0eb0602f0979ff4626734eab591554f3d0b142e6fd79f21b394585cf`
 -	v2 Content-Length: 333.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:43 GMT
 
 #### `56b5e4eded48886811961ae431e50f5dd1bc909e189f70a8d3d8be8afb9c9bf2`
 
@@ -5009,7 +4887,6 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:f923f7bd83597d51a50cf451fbd23e03ad81cabd7951c5586a8749a3891dd058`
 -	v2 Content-Length: 6.9 MB (6939502 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:34 GMT
 
 #### `c2c02b810b9edf550fb4988aa7ec6cc4c2372a6049b89c272af426873de78810`
 
@@ -5023,7 +4900,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `fe008b7ee00744734b2fb17adeff3cc6d6abd457221bf325431112ce66dd998e`
 
@@ -5073,7 +4949,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5100,7 +4975,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -5114,7 +4988,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -5141,7 +5014,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `a4ad35049e4920760c9fb81d1a7907b7c0d48fd122d42ae2736ed9eddda11ccb`
 
@@ -5284,7 +5156,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -5343,7 +5214,6 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:a6773adbce5c4b6533260ebc24f7eed9c5adf94d362dff09d209c671b26b217f`
 -	v2 Content-Length: 7.7 KB (7687 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:31:59 GMT
 
 #### `25e4f88670c02e9b5e5eb26c618659a6dd8512be186459c7535ca1dd7341166c`
 
@@ -5385,7 +5255,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.7 MB (14687982 bytes)
 -	v2 Blob: `sha256:2a193135c4ecfd8050b486c00d6493fe344d08c2f420becdbadf5c27ddf8cf05`
 -	v2 Content-Length: 4.4 MB (4420908 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:47 GMT
 
 #### `dc8f271eeb5cc07eef415fcfd27f5dceff874221bda1eec17e817c1bd403a901`
 
@@ -5406,7 +5275,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1e4e07ca0eb0602f0979ff4626734eab591554f3d0b142e6fd79f21b394585cf`
 -	v2 Content-Length: 333.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:43 GMT
 
 #### `56b5e4eded48886811961ae431e50f5dd1bc909e189f70a8d3d8be8afb9c9bf2`
 
@@ -5463,7 +5331,6 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:f923f7bd83597d51a50cf451fbd23e03ad81cabd7951c5586a8749a3891dd058`
 -	v2 Content-Length: 6.9 MB (6939502 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:34 GMT
 
 #### `c2c02b810b9edf550fb4988aa7ec6cc4c2372a6049b89c272af426873de78810`
 
@@ -5477,7 +5344,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `fe008b7ee00744734b2fb17adeff3cc6d6abd457221bf325431112ce66dd998e`
 
@@ -5527,7 +5393,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5554,7 +5419,6 @@ RUN apt-get update && apt-get install -y ca-certificates curl librecode0 libsqli
 -	Virtual Size: 18.6 MB (18641495 bytes)
 -	v2 Blob: `sha256:8c80f2e38113d30b8140af0d529704cc8c122c1d71421972923df30d619e3b26`
 -	v2 Content-Length: 8.7 MB (8719350 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:40 GMT
 
 #### `27e957187676b07fcfad01e5e078d84e8981c4df879709ce9345a708ba22dfd9`
 
@@ -5568,7 +5432,6 @@ RUN apt-get update && apt-get install -y autoconf file g++ gcc libc-dev make pkg
 -	Virtual Size: 177.2 MB (177236339 bytes)
 -	v2 Blob: `sha256:2da85bfb1ac01d2117f5535730cfe6373bd0b2582cfd38a74e84c336c5eeaed5`
 -	v2 Content-Length: 69.3 MB (69259440 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:29 GMT
 
 #### `b04b701916c8b68cc8368874b7317d6a977ddfea4caf29c1ecea0d5de3f52c58`
 
@@ -5595,7 +5458,6 @@ RUN mkdir -p $PHP_INI_DIR/conf.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:1da50ec818afdf81229318c5406acb66871499c5c2ce804e140082aa3ba1699d`
 -	v2 Content-Length: 179.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 19:30:04 GMT
 
 #### `a4ad35049e4920760c9fb81d1a7907b7c0d48fd122d42ae2736ed9eddda11ccb`
 
@@ -5738,7 +5600,6 @@ COPY multi:c650816d97628c054a106f42ecbea8540c8e7a5bf7e003fa4eee87e15d96e10d in /
 -	Virtual Size: 3.7 KB (3665 bytes)
 -	v2 Blob: `sha256:17a9cc61442aafdf89ea2766d01b2b77b110964089ed80ce65c81d5b0cab78cb`
 -	v2 Content-Length: 1.6 KB (1599 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:32:05 GMT
 
 #### `f5ab728385c6bb324690f3f6685d019c1250024046b85310e08f0ad3ec7d263a`
 
@@ -5797,7 +5658,6 @@ RUN set -ex \
 -	Virtual Size: 23.1 KB (23094 bytes)
 -	v2 Blob: `sha256:a6773adbce5c4b6533260ebc24f7eed9c5adf94d362dff09d209c671b26b217f`
 -	v2 Content-Length: 7.7 KB (7687 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:31:59 GMT
 
 #### `25e4f88670c02e9b5e5eb26c618659a6dd8512be186459c7535ca1dd7341166c`
 
@@ -5839,7 +5699,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 -	Virtual Size: 14.7 MB (14687982 bytes)
 -	v2 Blob: `sha256:2a193135c4ecfd8050b486c00d6493fe344d08c2f420becdbadf5c27ddf8cf05`
 -	v2 Content-Length: 4.4 MB (4420908 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:47 GMT
 
 #### `dc8f271eeb5cc07eef415fcfd27f5dceff874221bda1eec17e817c1bd403a901`
 
@@ -5860,7 +5719,6 @@ RUN { \
 -	Virtual Size: 172.0 B
 -	v2 Blob: `sha256:1e4e07ca0eb0602f0979ff4626734eab591554f3d0b142e6fd79f21b394585cf`
 -	v2 Content-Length: 333.0 B
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:43 GMT
 
 #### `56b5e4eded48886811961ae431e50f5dd1bc909e189f70a8d3d8be8afb9c9bf2`
 
@@ -5917,7 +5775,6 @@ RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VER
 -	Virtual Size: 20.9 MB (20870310 bytes)
 -	v2 Blob: `sha256:f923f7bd83597d51a50cf451fbd23e03ad81cabd7951c5586a8749a3891dd058`
 -	v2 Content-Length: 6.9 MB (6939502 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 06:35:34 GMT
 
 #### `c2c02b810b9edf550fb4988aa7ec6cc4c2372a6049b89c272af426873de78810`
 
@@ -5931,7 +5788,6 @@ COPY file:45702401214f638c2b16b30886ae652bc9aab761efb66ee1525170a9c37afd96 in /e
 -	Virtual Size: 5.7 KB (5735 bytes)
 -	v2 Blob: `sha256:730edfa5d07f12eb62690fe4cace356ecce27bc470bce87c6f2e9321a261d999`
 -	v2 Content-Length: 2.6 KB (2643 bytes)
--	v2 Last-Modified: Mon, 11 Jan 2016 17:28:16 GMT
 
 #### `fe008b7ee00744734b2fb17adeff3cc6d6abd457221bf325431112ce66dd998e`
 

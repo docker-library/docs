@@ -65,7 +65,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -79,7 +78,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -93,7 +91,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -109,7 +106,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -123,7 +119,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `d875dbfcf4980441173623027e583faadff1e83ab011047db04f82e7b94991fd`
 
@@ -177,7 +172,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -191,7 +185,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -205,7 +198,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -221,7 +213,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -235,7 +226,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `d875dbfcf4980441173623027e583faadff1e83ab011047db04f82e7b94991fd`
 
@@ -289,7 +279,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -303,7 +292,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -317,7 +305,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -333,7 +320,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -347,7 +333,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `d875dbfcf4980441173623027e583faadff1e83ab011047db04f82e7b94991fd`
 
@@ -391,7 +376,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b14c53569f5c1f7e0ff80526e5a13cbbadf8e2aecba828b3aa81f3f534299176`
 
@@ -405,7 +389,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2f36943c6263c51adda82e273b287b16bfaae54532b0299ef7ab1a893213dd13`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:23:59 GMT
 
 #### `a7c6b0904dc3fde0887859383340a7f8cf01aa98126ae7a7d75f87fad5256b9e`
 
@@ -419,7 +402,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1440ec5cd81da1280b9f0662af9c88740584814eabf239fc7b271ef042d1285a`
 
@@ -433,7 +415,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b0debed98badba71814c66fa9dd448106cd7ee79404204a15eed32a6b5eb7692`
 
@@ -447,7 +428,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `afa6185c56bf74c0582e896b596e456a05829afbba47e4fb476992a6087db018`
 
@@ -461,7 +441,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `36d4a78879878174886ebe1b7b5dd4aea3ff032721e08eb033a8a483fd0d2694`
 
@@ -475,7 +454,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:3.10-onbuild`
 
@@ -499,7 +477,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -513,7 +490,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -527,7 +503,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -543,7 +518,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -557,7 +531,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `d875dbfcf4980441173623027e583faadff1e83ab011047db04f82e7b94991fd`
 
@@ -601,7 +574,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b14c53569f5c1f7e0ff80526e5a13cbbadf8e2aecba828b3aa81f3f534299176`
 
@@ -615,7 +587,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:2f36943c6263c51adda82e273b287b16bfaae54532b0299ef7ab1a893213dd13`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:23:59 GMT
 
 #### `a7c6b0904dc3fde0887859383340a7f8cf01aa98126ae7a7d75f87fad5256b9e`
 
@@ -629,7 +600,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1440ec5cd81da1280b9f0662af9c88740584814eabf239fc7b271ef042d1285a`
 
@@ -643,7 +613,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b0debed98badba71814c66fa9dd448106cd7ee79404204a15eed32a6b5eb7692`
 
@@ -657,7 +626,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `afa6185c56bf74c0582e896b596e456a05829afbba47e4fb476992a6087db018`
 
@@ -671,7 +639,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `36d4a78879878174886ebe1b7b5dd4aea3ff032721e08eb033a8a483fd0d2694`
 
@@ -685,7 +652,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:3.12.1`
 
@@ -709,7 +675,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -723,7 +688,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -737,7 +701,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -753,7 +716,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -767,7 +729,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `cdd8e17b3c1361d5115529105352f89067f5e7da19fe551652076f3867a79f87`
 
@@ -808,7 +769,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -822,7 +782,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -836,7 +795,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -852,7 +810,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -866,7 +823,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `cdd8e17b3c1361d5115529105352f89067f5e7da19fe551652076f3867a79f87`
 
@@ -907,7 +863,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -921,7 +876,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -935,7 +889,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -951,7 +904,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -965,7 +917,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `cdd8e17b3c1361d5115529105352f89067f5e7da19fe551652076f3867a79f87`
 
@@ -1006,7 +957,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1020,7 +970,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -1034,7 +983,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -1050,7 +998,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -1064,7 +1011,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `cdd8e17b3c1361d5115529105352f89067f5e7da19fe551652076f3867a79f87`
 
@@ -1105,7 +1051,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1119,7 +1064,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -1133,7 +1077,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -1149,7 +1092,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -1163,7 +1105,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `cdd8e17b3c1361d5115529105352f89067f5e7da19fe551652076f3867a79f87`
 
@@ -1194,7 +1135,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe17e5a52395945ab0d3107184480f1bee91f0e46ba66955a45b2f10c8aef6ea`
 
@@ -1208,7 +1148,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3583ea6ed90c38c90ec14e93c4df5cd03e61cea7ef197c91232c43616836f4c3`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:24:23 GMT
 
 #### `7bd461985a43940496c44a010dac69ca7339ac17ba04329c743ba3e62a424543`
 
@@ -1222,7 +1161,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00b654435fe7d52098f3a8d496312bc90b4b6a95d08048791f3f4562991a59b9`
 
@@ -1236,7 +1174,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `343ce5ee5054a158e04ed0562d4d0f10c44c7e26f53fe1efd13da879290cc653`
 
@@ -1250,7 +1187,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2dcbd603962be5af5732e6bcc046f864e072debddf6e741b6fe0c198aca2a56`
 
@@ -1264,7 +1200,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8985ea599e16db75490c3288746043fed10f6a31701a5f03e39182ba25c1c6ff`
 
@@ -1278,7 +1213,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:3.12.0-onbuild`
 
@@ -1302,7 +1236,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1316,7 +1249,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -1330,7 +1262,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -1346,7 +1277,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -1360,7 +1290,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `cdd8e17b3c1361d5115529105352f89067f5e7da19fe551652076f3867a79f87`
 
@@ -1391,7 +1320,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe17e5a52395945ab0d3107184480f1bee91f0e46ba66955a45b2f10c8aef6ea`
 
@@ -1405,7 +1333,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3583ea6ed90c38c90ec14e93c4df5cd03e61cea7ef197c91232c43616836f4c3`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:24:23 GMT
 
 #### `7bd461985a43940496c44a010dac69ca7339ac17ba04329c743ba3e62a424543`
 
@@ -1419,7 +1346,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00b654435fe7d52098f3a8d496312bc90b4b6a95d08048791f3f4562991a59b9`
 
@@ -1433,7 +1359,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `343ce5ee5054a158e04ed0562d4d0f10c44c7e26f53fe1efd13da879290cc653`
 
@@ -1447,7 +1372,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2dcbd603962be5af5732e6bcc046f864e072debddf6e741b6fe0c198aca2a56`
 
@@ -1461,7 +1385,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8985ea599e16db75490c3288746043fed10f6a31701a5f03e39182ba25c1c6ff`
 
@@ -1475,7 +1398,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:3.12-onbuild`
 
@@ -1499,7 +1421,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1513,7 +1434,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -1527,7 +1447,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -1543,7 +1462,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -1557,7 +1475,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `cdd8e17b3c1361d5115529105352f89067f5e7da19fe551652076f3867a79f87`
 
@@ -1588,7 +1505,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe17e5a52395945ab0d3107184480f1bee91f0e46ba66955a45b2f10c8aef6ea`
 
@@ -1602,7 +1518,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3583ea6ed90c38c90ec14e93c4df5cd03e61cea7ef197c91232c43616836f4c3`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:24:23 GMT
 
 #### `7bd461985a43940496c44a010dac69ca7339ac17ba04329c743ba3e62a424543`
 
@@ -1616,7 +1531,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00b654435fe7d52098f3a8d496312bc90b4b6a95d08048791f3f4562991a59b9`
 
@@ -1630,7 +1544,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `343ce5ee5054a158e04ed0562d4d0f10c44c7e26f53fe1efd13da879290cc653`
 
@@ -1644,7 +1557,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2dcbd603962be5af5732e6bcc046f864e072debddf6e741b6fe0c198aca2a56`
 
@@ -1658,7 +1570,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8985ea599e16db75490c3288746043fed10f6a31701a5f03e39182ba25c1c6ff`
 
@@ -1672,7 +1583,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:3-onbuild`
 
@@ -1696,7 +1606,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1710,7 +1619,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -1724,7 +1632,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -1740,7 +1647,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -1754,7 +1660,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `cdd8e17b3c1361d5115529105352f89067f5e7da19fe551652076f3867a79f87`
 
@@ -1785,7 +1690,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe17e5a52395945ab0d3107184480f1bee91f0e46ba66955a45b2f10c8aef6ea`
 
@@ -1799,7 +1703,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:3583ea6ed90c38c90ec14e93c4df5cd03e61cea7ef197c91232c43616836f4c3`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:24:23 GMT
 
 #### `7bd461985a43940496c44a010dac69ca7339ac17ba04329c743ba3e62a424543`
 
@@ -1813,7 +1716,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `00b654435fe7d52098f3a8d496312bc90b4b6a95d08048791f3f4562991a59b9`
 
@@ -1827,7 +1729,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `343ce5ee5054a158e04ed0562d4d0f10c44c7e26f53fe1efd13da879290cc653`
 
@@ -1841,7 +1742,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a2dcbd603962be5af5732e6bcc046f864e072debddf6e741b6fe0c198aca2a56`
 
@@ -1855,7 +1755,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8985ea599e16db75490c3288746043fed10f6a31701a5f03e39182ba25c1c6ff`
 
@@ -1869,7 +1768,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:3.8.0`
 
@@ -1893,7 +1791,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1907,7 +1804,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -1921,7 +1817,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -1937,7 +1832,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -1951,7 +1845,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `5b3d3f3d12f5dbba05fa1492440b6c3bb87af4cf01515dce874a997ca64e38f8`
 
@@ -1969,7 +1862,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.
 -	Virtual Size: 228.7 MB (228722972 bytes)
 -	v2 Blob: `sha256:ae9f1be3c35d0fa8a33d096fb487a577b35af0d5c0502745ba0694aff1adec4c`
 -	v2 Content-Length: 77.7 MB (77683085 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:03:17 GMT
 
 #### `93cd0f14123b7305be16d9a02fa3000ee88329fb55919e665b06e5d02731afa8`
 
@@ -2006,7 +1898,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -2020,7 +1911,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -2034,7 +1924,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -2050,7 +1939,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -2064,7 +1952,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `5b3d3f3d12f5dbba05fa1492440b6c3bb87af4cf01515dce874a997ca64e38f8`
 
@@ -2082,7 +1969,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.
 -	Virtual Size: 228.7 MB (228722972 bytes)
 -	v2 Blob: `sha256:ae9f1be3c35d0fa8a33d096fb487a577b35af0d5c0502745ba0694aff1adec4c`
 -	v2 Content-Length: 77.7 MB (77683085 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:03:17 GMT
 
 #### `93cd0f14123b7305be16d9a02fa3000ee88329fb55919e665b06e5d02731afa8`
 
@@ -2119,7 +2005,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -2133,7 +2018,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -2147,7 +2031,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -2163,7 +2046,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -2177,7 +2059,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `5b3d3f3d12f5dbba05fa1492440b6c3bb87af4cf01515dce874a997ca64e38f8`
 
@@ -2195,7 +2076,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.
 -	Virtual Size: 228.7 MB (228722972 bytes)
 -	v2 Blob: `sha256:ae9f1be3c35d0fa8a33d096fb487a577b35af0d5c0502745ba0694aff1adec4c`
 -	v2 Content-Length: 77.7 MB (77683085 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:03:17 GMT
 
 #### `93cd0f14123b7305be16d9a02fa3000ee88329fb55919e665b06e5d02731afa8`
 
@@ -2222,7 +2102,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `612064e56746800380af9ed67161451b3e7caaf8cbbbe5b8c82dbb63b8aec4e4`
 
@@ -2236,7 +2115,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:92ea2a6753696f9f4c8346579715a349287030af44b87bae22766ce9c7553ab3`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:24:51 GMT
 
 #### `7006ecf5a3c8c3e5a967748a9819f82e67c1ae611f13682349676308d00b464a`
 
@@ -2250,7 +2128,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af23a67b92e836415be1133e00d8960e955224def960b8314c87ef3b33d1a5e`
 
@@ -2264,7 +2141,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e76f34f3fc8e3f0a7b5d594aa6fc61674ab00628943544d9d167f6f7626b6c0c`
 
@@ -2278,7 +2154,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cd34142941cfce24a63a0092c4f9c7e670b8fc9e5919715f8ea3b3d52b470999`
 
@@ -2292,7 +2167,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1219b8fe7d5c3761905e2a0b2e89d2b81a1c0098be3edf718c06a64c509b00f9`
 
@@ -2306,7 +2180,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:3.8-onbuild`
 
@@ -2330,7 +2203,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -2344,7 +2216,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -2358,7 +2229,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -2374,7 +2244,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -2388,7 +2257,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `5b3d3f3d12f5dbba05fa1492440b6c3bb87af4cf01515dce874a997ca64e38f8`
 
@@ -2406,7 +2274,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.8.
 -	Virtual Size: 228.7 MB (228722972 bytes)
 -	v2 Blob: `sha256:ae9f1be3c35d0fa8a33d096fb487a577b35af0d5c0502745ba0694aff1adec4c`
 -	v2 Content-Length: 77.7 MB (77683085 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:03:17 GMT
 
 #### `93cd0f14123b7305be16d9a02fa3000ee88329fb55919e665b06e5d02731afa8`
 
@@ -2433,7 +2300,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `612064e56746800380af9ed67161451b3e7caaf8cbbbe5b8c82dbb63b8aec4e4`
 
@@ -2447,7 +2313,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:92ea2a6753696f9f4c8346579715a349287030af44b87bae22766ce9c7553ab3`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:24:51 GMT
 
 #### `7006ecf5a3c8c3e5a967748a9819f82e67c1ae611f13682349676308d00b464a`
 
@@ -2461,7 +2326,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2af23a67b92e836415be1133e00d8960e955224def960b8314c87ef3b33d1a5e`
 
@@ -2475,7 +2339,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e76f34f3fc8e3f0a7b5d594aa6fc61674ab00628943544d9d167f6f7626b6c0c`
 
@@ -2489,7 +2352,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cd34142941cfce24a63a0092c4f9c7e670b8fc9e5919715f8ea3b3d52b470999`
 
@@ -2503,7 +2365,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1219b8fe7d5c3761905e2a0b2e89d2b81a1c0098be3edf718c06a64c509b00f9`
 
@@ -2517,7 +2378,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4.0.5.1`
 
@@ -2541,7 +2401,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -2555,7 +2414,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -2569,7 +2427,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -2585,7 +2442,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -2599,7 +2455,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `3088ed9f9f27294a371522862dfaaab16bd4c181542d9a512d69e033ba500551`
 
@@ -2617,7 +2472,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 ## `mono:4.0.5`
 
@@ -2641,7 +2495,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -2655,7 +2508,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -2669,7 +2521,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -2685,7 +2536,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -2699,7 +2549,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `3088ed9f9f27294a371522862dfaaab16bd4c181542d9a512d69e033ba500551`
 
@@ -2717,7 +2566,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 ## `mono:4.0`
 
@@ -2741,7 +2589,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -2755,7 +2602,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -2769,7 +2615,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -2785,7 +2630,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -2799,7 +2643,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `3088ed9f9f27294a371522862dfaaab16bd4c181542d9a512d69e033ba500551`
 
@@ -2817,7 +2660,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 ## `mono:4.0.5.1-onbuild`
 
@@ -2841,7 +2683,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -2855,7 +2696,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -2869,7 +2709,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -2885,7 +2724,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -2899,7 +2737,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `3088ed9f9f27294a371522862dfaaab16bd4c181542d9a512d69e033ba500551`
 
@@ -2917,7 +2754,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 #### `10985774f899a2a048afec001587e63f02c18c3dc827e373dfc9c851146b8fb1`
 
@@ -2931,7 +2767,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `373b6e21487b2c7207c0953607d9bf6625549429c45a4fdd6daea953ece10ab8`
 
@@ -2958,7 +2793,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `91100c29c37324438d532e160b922a3fcbd17b2904b0c7bf634c82551b41aed1`
 
@@ -2972,7 +2806,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `78a4c7854400a3d665cf1693808595fef0f36f1f89c75414500fe57b5c497331`
 
@@ -2986,7 +2819,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ce5ab751b175fe88cd95c4d5d27c4782bd4ca9605a39f747d956ed7916a54f6c`
 
@@ -3000,7 +2832,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cb1ccde1e75c67c6041b7ac8b8275929ca39cfdf64c3374bdb0d5b8357c79318`
 
@@ -3014,7 +2845,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4.0.5-onbuild`
 
@@ -3038,7 +2868,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -3052,7 +2881,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -3066,7 +2894,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -3082,7 +2909,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -3096,7 +2922,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `3088ed9f9f27294a371522862dfaaab16bd4c181542d9a512d69e033ba500551`
 
@@ -3114,7 +2939,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 #### `10985774f899a2a048afec001587e63f02c18c3dc827e373dfc9c851146b8fb1`
 
@@ -3128,7 +2952,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `373b6e21487b2c7207c0953607d9bf6625549429c45a4fdd6daea953ece10ab8`
 
@@ -3155,7 +2978,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `91100c29c37324438d532e160b922a3fcbd17b2904b0c7bf634c82551b41aed1`
 
@@ -3169,7 +2991,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `78a4c7854400a3d665cf1693808595fef0f36f1f89c75414500fe57b5c497331`
 
@@ -3183,7 +3004,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ce5ab751b175fe88cd95c4d5d27c4782bd4ca9605a39f747d956ed7916a54f6c`
 
@@ -3197,7 +3017,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cb1ccde1e75c67c6041b7ac8b8275929ca39cfdf64c3374bdb0d5b8357c79318`
 
@@ -3211,7 +3030,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4.0-onbuild`
 
@@ -3235,7 +3053,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -3249,7 +3066,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -3263,7 +3079,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -3279,7 +3094,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -3293,7 +3107,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `3088ed9f9f27294a371522862dfaaab16bd4c181542d9a512d69e033ba500551`
 
@@ -3311,7 +3124,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Virtual Size: 523.3 MB (523313498 bytes)
 -	v2 Blob: `sha256:9a88487a7e7d947e380ba00e168c045a0871c67ffc217abff041715e89105936`
 -	v2 Content-Length: 182.7 MB (182713572 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:05:59 GMT
 
 #### `10985774f899a2a048afec001587e63f02c18c3dc827e373dfc9c851146b8fb1`
 
@@ -3325,7 +3137,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `373b6e21487b2c7207c0953607d9bf6625549429c45a4fdd6daea953ece10ab8`
 
@@ -3352,7 +3163,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `91100c29c37324438d532e160b922a3fcbd17b2904b0c7bf634c82551b41aed1`
 
@@ -3366,7 +3176,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `78a4c7854400a3d665cf1693808595fef0f36f1f89c75414500fe57b5c497331`
 
@@ -3380,7 +3189,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ce5ab751b175fe88cd95c4d5d27c4782bd4ca9605a39f747d956ed7916a54f6c`
 
@@ -3394,7 +3202,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cb1ccde1e75c67c6041b7ac8b8275929ca39cfdf64c3374bdb0d5b8357c79318`
 
@@ -3408,7 +3215,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4.2.1.102`
 
@@ -3432,7 +3238,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -3446,7 +3251,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -3460,7 +3264,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -3476,7 +3279,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -3490,7 +3292,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `aef5232e01b8b30949a62d5ba0a00fa64c977d45218a878e46cb662633d4a873`
 
@@ -3507,7 +3308,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529607136 bytes)
 -	v2 Blob: `sha256:f6d5a08c9a7b8c1feab7a10ee7043730a2535f6fd68568832f546d2da1064afe`
 -	v2 Content-Length: 184.6 MB (184606291 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:07:48 GMT
 
 ## `mono:4.2.1`
 
@@ -3531,7 +3331,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -3545,7 +3344,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -3559,7 +3357,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -3575,7 +3372,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -3589,7 +3385,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `aef5232e01b8b30949a62d5ba0a00fa64c977d45218a878e46cb662633d4a873`
 
@@ -3606,7 +3401,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529607136 bytes)
 -	v2 Blob: `sha256:f6d5a08c9a7b8c1feab7a10ee7043730a2535f6fd68568832f546d2da1064afe`
 -	v2 Content-Length: 184.6 MB (184606291 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:07:48 GMT
 
 ## `mono:4.2.1.102-onbuild`
 
@@ -3630,7 +3424,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -3644,7 +3437,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -3658,7 +3450,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -3674,7 +3465,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -3688,7 +3478,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `aef5232e01b8b30949a62d5ba0a00fa64c977d45218a878e46cb662633d4a873`
 
@@ -3705,7 +3494,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529607136 bytes)
 -	v2 Blob: `sha256:f6d5a08c9a7b8c1feab7a10ee7043730a2535f6fd68568832f546d2da1064afe`
 -	v2 Content-Length: 184.6 MB (184606291 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:07:48 GMT
 
 #### `300fd708e33a515dd97929daddecbc984fbefdb4becb68f51f4ed92cf57789dd`
 
@@ -3719,7 +3507,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a95a0f6ca8ed18dbb7c0a171c5ab1102c541bd54b0369e5bf7e3354c4d68661a`
 
@@ -3733,7 +3520,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ba4ee8bca7a3c01ddd96d0ec91a44973096da33bbcd072c1aefdce65441962f4`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:25:48 GMT
 
 #### `26d0506ab9140d9427d1e5df15fb0fa81f544ff3ee2bbe8ea4ce825797641f8c`
 
@@ -3747,7 +3533,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e75a83c1c9f1d6fef2bac6763b2b0ef8b6ff0736051a1304b76e3c689a3f20d`
 
@@ -3761,7 +3546,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `123284d67f4489e9570664050baf646fd184f1c9e59dfac367705c6f56b29dce`
 
@@ -3775,7 +3559,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `607088a06215e88b0986e3d66ddfc2dcacfe4f0c330ef714ffa674c3f5675864`
 
@@ -3789,7 +3572,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14c81ec7c16ae0c5e318595ee629c775dff6d0476557f9c3d56d60dd0c315063`
 
@@ -3803,7 +3585,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4.2.1-onbuild`
 
@@ -3827,7 +3608,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -3841,7 +3621,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -3855,7 +3634,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -3871,7 +3649,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `85641046e9df7700f5cc9957244eb1dd03005642da4589ec831512a75f7650f0`
 
@@ -3885,7 +3662,6 @@ RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 3FA7E0328081BFF6A14DA29AA6A1
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:61eddaedff97508b3b8c477b3213d10268385316f36ed0275417146a53a5fd53`
 -	v2 Content-Length: 29.3 KB (29322 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:26 GMT
 
 #### `aef5232e01b8b30949a62d5ba0a00fa64c977d45218a878e46cb662633d4a873`
 
@@ -3902,7 +3678,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529607136 bytes)
 -	v2 Blob: `sha256:f6d5a08c9a7b8c1feab7a10ee7043730a2535f6fd68568832f546d2da1064afe`
 -	v2 Content-Length: 184.6 MB (184606291 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:07:48 GMT
 
 #### `300fd708e33a515dd97929daddecbc984fbefdb4becb68f51f4ed92cf57789dd`
 
@@ -3916,7 +3691,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a95a0f6ca8ed18dbb7c0a171c5ab1102c541bd54b0369e5bf7e3354c4d68661a`
 
@@ -3930,7 +3704,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:ba4ee8bca7a3c01ddd96d0ec91a44973096da33bbcd072c1aefdce65441962f4`
 -	v2 Content-Length: 164.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 19:25:48 GMT
 
 #### `26d0506ab9140d9427d1e5df15fb0fa81f544ff3ee2bbe8ea4ce825797641f8c`
 
@@ -3944,7 +3717,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2e75a83c1c9f1d6fef2bac6763b2b0ef8b6ff0736051a1304b76e3c689a3f20d`
 
@@ -3958,7 +3730,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `123284d67f4489e9570664050baf646fd184f1c9e59dfac367705c6f56b29dce`
 
@@ -3972,7 +3743,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `607088a06215e88b0986e3d66ddfc2dcacfe4f0c330ef714ffa674c3f5675864`
 
@@ -3986,7 +3756,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `14c81ec7c16ae0c5e318595ee629c775dff6d0476557f9c3d56d60dd0c315063`
 
@@ -4000,7 +3769,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4.2.2.30`
 
@@ -4024,7 +3792,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4038,7 +3805,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -4052,7 +3818,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -4068,7 +3833,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -4082,7 +3846,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `d72e01ddfcb85494a03842d7bde736fd474571a9e9bf7401de8c97bf75e276f8`
 
@@ -4099,7 +3862,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529629001 bytes)
 -	v2 Blob: `sha256:2928ed982921d91276ceda585fb986d87495218dec19812c9448c582998e8faf`
 -	v2 Content-Length: 184.6 MB (184627282 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:38 GMT
 
 ## `mono:4.2.2`
 
@@ -4123,7 +3885,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4137,7 +3898,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -4151,7 +3911,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -4167,7 +3926,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -4181,7 +3939,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `d72e01ddfcb85494a03842d7bde736fd474571a9e9bf7401de8c97bf75e276f8`
 
@@ -4198,7 +3955,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529629001 bytes)
 -	v2 Blob: `sha256:2928ed982921d91276ceda585fb986d87495218dec19812c9448c582998e8faf`
 -	v2 Content-Length: 184.6 MB (184627282 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:38 GMT
 
 ## `mono:4.2.2.30-onbuild`
 
@@ -4222,7 +3978,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4236,7 +3991,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -4250,7 +4004,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -4266,7 +4019,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -4280,7 +4032,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `d72e01ddfcb85494a03842d7bde736fd474571a9e9bf7401de8c97bf75e276f8`
 
@@ -4297,7 +4048,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529629001 bytes)
 -	v2 Blob: `sha256:2928ed982921d91276ceda585fb986d87495218dec19812c9448c582998e8faf`
 -	v2 Content-Length: 184.6 MB (184627282 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:38 GMT
 
 #### `e8cd64c42cb9fff36b119f6ce485a876d5cc06db77afdfa04fc6e14bae48492d`
 
@@ -4311,7 +4061,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b6b398765544a4bb55f81d21206860d88f33cef8a008c8561be84fd39ec8959d`
 
@@ -4338,7 +4087,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f152c993a56f9c396a6f7130a524ddd837447643511e3e018176fdc1585b11ef`
 
@@ -4352,7 +4100,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7593e6c204887738655be73f5f599ff0ba7c0edda752a3f4c878967d5b67839e`
 
@@ -4366,7 +4113,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b205c994d4d252abb479bf88a8ef4a9ea9219b7445a2e35092bc904c1b13b0d0`
 
@@ -4380,7 +4126,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c89c41edf33f477bf405efb73fce03c16a9c6faea355a6001521873e25cf50e`
 
@@ -4394,7 +4139,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4.2.2-onbuild`
 
@@ -4418,7 +4162,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4432,7 +4175,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -4446,7 +4188,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -4462,7 +4203,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -4476,7 +4216,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `d72e01ddfcb85494a03842d7bde736fd474571a9e9bf7401de8c97bf75e276f8`
 
@@ -4493,7 +4232,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529629001 bytes)
 -	v2 Blob: `sha256:2928ed982921d91276ceda585fb986d87495218dec19812c9448c582998e8faf`
 -	v2 Content-Length: 184.6 MB (184627282 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:38 GMT
 
 #### `e8cd64c42cb9fff36b119f6ce485a876d5cc06db77afdfa04fc6e14bae48492d`
 
@@ -4507,7 +4245,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b6b398765544a4bb55f81d21206860d88f33cef8a008c8561be84fd39ec8959d`
 
@@ -4534,7 +4271,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f152c993a56f9c396a6f7130a524ddd837447643511e3e018176fdc1585b11ef`
 
@@ -4548,7 +4284,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7593e6c204887738655be73f5f599ff0ba7c0edda752a3f4c878967d5b67839e`
 
@@ -4562,7 +4297,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b205c994d4d252abb479bf88a8ef4a9ea9219b7445a2e35092bc904c1b13b0d0`
 
@@ -4576,7 +4310,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7c89c41edf33f477bf405efb73fce03c16a9c6faea355a6001521873e25cf50e`
 
@@ -4590,7 +4323,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4.2.3.4`
 
@@ -4614,7 +4346,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4628,7 +4359,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -4642,7 +4372,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -4658,7 +4387,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -4672,7 +4400,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `fb10be25cc2439c15aaf28d10cdd9a0854614bb8475920d53f0be2f4caa04691`
 
@@ -4689,7 +4416,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 ## `mono:4.2.3`
 
@@ -4713,7 +4439,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4727,7 +4452,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -4741,7 +4465,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -4757,7 +4480,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -4771,7 +4493,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `fb10be25cc2439c15aaf28d10cdd9a0854614bb8475920d53f0be2f4caa04691`
 
@@ -4788,7 +4509,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 ## `mono:4.2`
 
@@ -4812,7 +4532,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4826,7 +4545,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -4840,7 +4558,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -4856,7 +4573,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -4870,7 +4586,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `fb10be25cc2439c15aaf28d10cdd9a0854614bb8475920d53f0be2f4caa04691`
 
@@ -4887,7 +4602,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 ## `mono:4`
 
@@ -4911,7 +4625,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4925,7 +4638,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -4939,7 +4651,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -4955,7 +4666,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -4969,7 +4679,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `fb10be25cc2439c15aaf28d10cdd9a0854614bb8475920d53f0be2f4caa04691`
 
@@ -4986,7 +4695,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 ## `mono:latest`
 
@@ -5010,7 +4718,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -5024,7 +4731,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -5038,7 +4744,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -5054,7 +4759,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -5068,7 +4772,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `fb10be25cc2439c15aaf28d10cdd9a0854614bb8475920d53f0be2f4caa04691`
 
@@ -5085,7 +4788,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 ## `mono:4.2.3.4-onbuild`
 
@@ -5109,7 +4811,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -5123,7 +4824,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -5137,7 +4837,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -5153,7 +4852,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -5167,7 +4865,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `fb10be25cc2439c15aaf28d10cdd9a0854614bb8475920d53f0be2f4caa04691`
 
@@ -5184,7 +4881,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 #### `c9c5668f68d5fdad599fc75d331d5609bf773404fe48b1f656e059d184b01d95`
 
@@ -5198,7 +4894,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c4dc24bb626ba638430a09022637da879ec6cd110dfaf0ab4d1a7e91a1164bbf`
 
@@ -5212,7 +4907,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:35bc9d6ee1580c33ba884c76fbceae3793ae4b942a83c7070f1fab17f1db8bf0`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:47 GMT
 
 #### `0500187d68d3cbda7817b0b375ccb6124dd79b57167080eea6141fb5bca6d16d`
 
@@ -5226,7 +4920,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de955f94d415b7b32f1fd3b34cd39193fc91f32589bd15b57adab80166aa572c`
 
@@ -5240,7 +4933,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bec554cde63e1ad0c42cab5d7688e44fe306c1071620234187d6c9c9417b8f92`
 
@@ -5254,7 +4946,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67c12e347d60328be2c07c3f5d55b3d9b2f8da2dcc343c0287fb895e6d8c5a41`
 
@@ -5268,7 +4959,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d455edb1b41694dc3890414128d1472380bfb33f70531a85c4b5f27fd8a52948`
 
@@ -5282,7 +4972,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4.2.3-onbuild`
 
@@ -5306,7 +4995,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -5320,7 +5008,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -5334,7 +5021,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -5350,7 +5036,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -5364,7 +5049,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `fb10be25cc2439c15aaf28d10cdd9a0854614bb8475920d53f0be2f4caa04691`
 
@@ -5381,7 +5065,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 #### `c9c5668f68d5fdad599fc75d331d5609bf773404fe48b1f656e059d184b01d95`
 
@@ -5395,7 +5078,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c4dc24bb626ba638430a09022637da879ec6cd110dfaf0ab4d1a7e91a1164bbf`
 
@@ -5409,7 +5091,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:35bc9d6ee1580c33ba884c76fbceae3793ae4b942a83c7070f1fab17f1db8bf0`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:47 GMT
 
 #### `0500187d68d3cbda7817b0b375ccb6124dd79b57167080eea6141fb5bca6d16d`
 
@@ -5423,7 +5104,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de955f94d415b7b32f1fd3b34cd39193fc91f32589bd15b57adab80166aa572c`
 
@@ -5437,7 +5117,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bec554cde63e1ad0c42cab5d7688e44fe306c1071620234187d6c9c9417b8f92`
 
@@ -5451,7 +5130,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67c12e347d60328be2c07c3f5d55b3d9b2f8da2dcc343c0287fb895e6d8c5a41`
 
@@ -5465,7 +5143,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d455edb1b41694dc3890414128d1472380bfb33f70531a85c4b5f27fd8a52948`
 
@@ -5479,7 +5156,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4.2-onbuild`
 
@@ -5503,7 +5179,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -5517,7 +5192,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -5531,7 +5205,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -5547,7 +5220,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -5561,7 +5233,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `fb10be25cc2439c15aaf28d10cdd9a0854614bb8475920d53f0be2f4caa04691`
 
@@ -5578,7 +5249,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 #### `c9c5668f68d5fdad599fc75d331d5609bf773404fe48b1f656e059d184b01d95`
 
@@ -5592,7 +5262,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c4dc24bb626ba638430a09022637da879ec6cd110dfaf0ab4d1a7e91a1164bbf`
 
@@ -5606,7 +5275,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:35bc9d6ee1580c33ba884c76fbceae3793ae4b942a83c7070f1fab17f1db8bf0`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:47 GMT
 
 #### `0500187d68d3cbda7817b0b375ccb6124dd79b57167080eea6141fb5bca6d16d`
 
@@ -5620,7 +5288,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de955f94d415b7b32f1fd3b34cd39193fc91f32589bd15b57adab80166aa572c`
 
@@ -5634,7 +5301,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bec554cde63e1ad0c42cab5d7688e44fe306c1071620234187d6c9c9417b8f92`
 
@@ -5648,7 +5314,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67c12e347d60328be2c07c3f5d55b3d9b2f8da2dcc343c0287fb895e6d8c5a41`
 
@@ -5662,7 +5327,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d455edb1b41694dc3890414128d1472380bfb33f70531a85c4b5f27fd8a52948`
 
@@ -5676,7 +5340,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:4-onbuild`
 
@@ -5700,7 +5363,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -5714,7 +5376,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -5728,7 +5389,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -5744,7 +5404,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -5758,7 +5417,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `fb10be25cc2439c15aaf28d10cdd9a0854614bb8475920d53f0be2f4caa04691`
 
@@ -5775,7 +5433,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 #### `c9c5668f68d5fdad599fc75d331d5609bf773404fe48b1f656e059d184b01d95`
 
@@ -5789,7 +5446,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c4dc24bb626ba638430a09022637da879ec6cd110dfaf0ab4d1a7e91a1164bbf`
 
@@ -5803,7 +5459,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:35bc9d6ee1580c33ba884c76fbceae3793ae4b942a83c7070f1fab17f1db8bf0`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:47 GMT
 
 #### `0500187d68d3cbda7817b0b375ccb6124dd79b57167080eea6141fb5bca6d16d`
 
@@ -5817,7 +5472,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de955f94d415b7b32f1fd3b34cd39193fc91f32589bd15b57adab80166aa572c`
 
@@ -5831,7 +5485,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bec554cde63e1ad0c42cab5d7688e44fe306c1071620234187d6c9c9417b8f92`
 
@@ -5845,7 +5498,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67c12e347d60328be2c07c3f5d55b3d9b2f8da2dcc343c0287fb895e6d8c5a41`
 
@@ -5859,7 +5511,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d455edb1b41694dc3890414128d1472380bfb33f70531a85c4b5f27fd8a52948`
 
@@ -5873,7 +5524,6 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `mono:onbuild`
 
@@ -5897,7 +5547,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -5911,7 +5560,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418e876cb2f9eec56a32b72163f271766960501b2e6d4faf220d58e63911bb1c`
 
@@ -5925,7 +5573,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `467a05af407766fed541b8a14ca50fd6164906885ba82e3ffec2101ec7e685dd`
 
@@ -5941,7 +5588,6 @@ RUN apt-get update \
 -	Virtual Size: 14.1 MB (14072010 bytes)
 -	v2 Blob: `sha256:7135ac883f36802d17cea37ddd8cefc411975d4b71c8cfd13784337057fa09e8`
 -	v2 Content-Length: 7.6 MB (7553037 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:01:31 GMT
 
 #### `adb204f19671566332965b1811061e0b0f586505b1091490dd9cdfda8dc847bf`
 
@@ -5955,7 +5601,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 -	Virtual Size: 57.5 KB (57472 bytes)
 -	v2 Blob: `sha256:25091fb5f589e314573871fc4fb8c62c0095f5a6ba8f0001fce1d1ec42ddc8d9`
 -	v2 Content-Length: 29.3 KB (29329 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:04:48 GMT
 
 #### `fb10be25cc2439c15aaf28d10cdd9a0854614bb8475920d53f0be2f4caa04691`
 
@@ -5972,7 +5617,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Virtual Size: 529.6 MB (529632412 bytes)
 -	v2 Blob: `sha256:6eb65666ed329e9d62ed664d8bcabd722237c50401558197b8be1a44c763ca1a`
 -	v2 Content-Length: 184.6 MB (184637574 bytes)
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:04 GMT
 
 #### `c9c5668f68d5fdad599fc75d331d5609bf773404fe48b1f656e059d184b01d95`
 
@@ -5986,7 +5630,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c4dc24bb626ba638430a09022637da879ec6cd110dfaf0ab4d1a7e91a1164bbf`
 
@@ -6000,7 +5643,6 @@ RUN mkdir -p /usr/src/app/source /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:35bc9d6ee1580c33ba884c76fbceae3793ae4b942a83c7070f1fab17f1db8bf0`
 -	v2 Content-Length: 163.0 B
--	v2 Last-Modified: Thu, 17 Mar 2016 16:30:47 GMT
 
 #### `0500187d68d3cbda7817b0b375ccb6124dd79b57167080eea6141fb5bca6d16d`
 
@@ -6014,7 +5656,6 @@ WORKDIR /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `de955f94d415b7b32f1fd3b34cd39193fc91f32589bd15b57adab80166aa572c`
 
@@ -6028,7 +5669,6 @@ ONBUILD COPY . /usr/src/app/source
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bec554cde63e1ad0c42cab5d7688e44fe306c1071620234187d6c9c9417b8f92`
 
@@ -6042,7 +5682,6 @@ ONBUILD RUN nuget restore -NonInteractive
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67c12e347d60328be2c07c3f5d55b3d9b2f8da2dcc343c0287fb895e6d8c5a41`
 
@@ -6056,7 +5695,6 @@ ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d455edb1b41694dc3890414128d1472380bfb33f70531a85c4b5f27fd8a52948`
 
@@ -6070,4 +5708,3 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

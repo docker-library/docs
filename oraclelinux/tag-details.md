@@ -35,7 +35,6 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `71e1802fc3b4e97607ddf00251bd83a64f575d629d87df46838375b856f6e41b`
 
@@ -49,7 +48,6 @@ ADD file:4ecf2d36b14b9320c8a834818f3de7204c58dad7c5b257d6a21e20e017e74b12 in /
 -	Virtual Size: 205.9 MB (205903813 bytes)
 -	v2 Blob: `sha256:ffe36b360c6de4fced8164b0462b32dad8c38b33b4682340d03e65026a53608c`
 -	v2 Content-Length: 74.4 MB (74366595 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:54:19 GMT
 
 #### `02b2024a37c2679c293c10c124a6544b86e7a9297e2e04f7da3bda2166a7716a`
 
@@ -63,7 +61,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `oraclelinux:7`
 
@@ -87,7 +84,6 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `71e1802fc3b4e97607ddf00251bd83a64f575d629d87df46838375b856f6e41b`
 
@@ -101,7 +97,6 @@ ADD file:4ecf2d36b14b9320c8a834818f3de7204c58dad7c5b257d6a21e20e017e74b12 in /
 -	Virtual Size: 205.9 MB (205903813 bytes)
 -	v2 Blob: `sha256:ffe36b360c6de4fced8164b0462b32dad8c38b33b4682340d03e65026a53608c`
 -	v2 Content-Length: 74.4 MB (74366595 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:54:19 GMT
 
 #### `02b2024a37c2679c293c10c124a6544b86e7a9297e2e04f7da3bda2166a7716a`
 
@@ -115,7 +110,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `oraclelinux:7.2`
 
@@ -139,7 +133,6 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `71e1802fc3b4e97607ddf00251bd83a64f575d629d87df46838375b856f6e41b`
 
@@ -153,7 +146,6 @@ ADD file:4ecf2d36b14b9320c8a834818f3de7204c58dad7c5b257d6a21e20e017e74b12 in /
 -	Virtual Size: 205.9 MB (205903813 bytes)
 -	v2 Blob: `sha256:ffe36b360c6de4fced8164b0462b32dad8c38b33b4682340d03e65026a53608c`
 -	v2 Content-Length: 74.4 MB (74366595 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:54:19 GMT
 
 #### `02b2024a37c2679c293c10c124a6544b86e7a9297e2e04f7da3bda2166a7716a`
 
@@ -167,7 +159,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `oraclelinux:7.1`
 
@@ -191,7 +182,6 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8a322a55d96fd409fef3693b62811c032371292de877f4ed989320078a35538a`
 
@@ -218,7 +208,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `oraclelinux:7.0`
 
@@ -242,7 +231,6 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `13d09730b73e0cf537b7d23e3af739edc6ddf91440dc246835b8e3ebd5bc71d2`
 
@@ -269,7 +257,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `oraclelinux:6`
 
@@ -293,7 +280,6 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a27210d0aa99cd8d950331e7c732779381cd39b5c089f20d364d04e8c2597bf`
 
@@ -320,7 +306,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `oraclelinux:6.7`
 
@@ -344,7 +329,6 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a27210d0aa99cd8d950331e7c732779381cd39b5c089f20d364d04e8c2597bf`
 
@@ -371,7 +355,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `oraclelinux:6.6`
 
@@ -395,7 +378,6 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `147646a8fe529691362035368f7d982b92c7dedc7f7071191988b56d71b4ac66`
 
@@ -409,7 +391,6 @@ ADD file:53bbd204d9f19d8ede52c71bb1e44409bf318dd9ad85ec2c12280f0e32f125de in /
 -	Virtual Size: 157.8 MB (157752322 bytes)
 -	v2 Blob: `sha256:35a39b54ba274e33522e063f66512bcdb7a500e65e36ef8bbe0944d4e3699f4d`
 -	v2 Content-Length: 64.4 MB (64372436 bytes)
--	v2 Last-Modified: Thu, 17 Sep 2015 17:05:23 GMT
 
 #### `fa40e9643b19e3c51ab953616dc19260554191f587c89b72951ce88da2fda923`
 
@@ -423,7 +404,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `oraclelinux:5`
 
@@ -447,7 +427,6 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f1ab6482eb5aad06afc5b00196355dadafa20ad0028c2dc5463f34c7902244e3`
 
@@ -461,7 +440,6 @@ ADD file:ae2de3899590822a68287d58762fad83ee7389bad90d2a35a8f8cc046355a440 in /
 -	Virtual Size: 133.9 MB (133869907 bytes)
 -	v2 Blob: `sha256:e8fd8f8e6f3764979e50ba520de8123737a1b37dbd90bb94e2316c8927b37ecf`
 -	v2 Content-Length: 48.2 MB (48187800 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 06:28:59 GMT
 
 #### `d1255a14e4c71a7da3c7dea2bc0a659d204bf8afa01542e171a0e714f320b0ac`
 
@@ -475,7 +453,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `oraclelinux:5.11`
 
@@ -499,7 +476,6 @@ MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f1ab6482eb5aad06afc5b00196355dadafa20ad0028c2dc5463f34c7902244e3`
 
@@ -513,7 +489,6 @@ ADD file:ae2de3899590822a68287d58762fad83ee7389bad90d2a35a8f8cc046355a440 in /
 -	Virtual Size: 133.9 MB (133869907 bytes)
 -	v2 Blob: `sha256:e8fd8f8e6f3764979e50ba520de8123737a1b37dbd90bb94e2316c8927b37ecf`
 -	v2 Content-Length: 48.2 MB (48187800 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 06:28:59 GMT
 
 #### `d1255a14e4c71a7da3c7dea2bc0a659d204bf8afa01542e171a0e714f320b0ac`
 
@@ -527,4 +502,3 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

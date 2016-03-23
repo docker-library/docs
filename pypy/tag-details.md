@@ -52,7 +52,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -66,7 +65,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -84,7 +82,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -153,7 +150,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -167,7 +163,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -181,7 +176,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a39328649baab1c20ad48aefaac3a1e61a116828457edd7ec900abf4b8ac95b`
 
@@ -195,7 +189,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15f0a00a4c5b1bf9ad61168aa63ce5b2ce6e01a8a50fc7e05467544038b68534`
 
@@ -224,7 +217,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21dd76eacf1cb9e0995e89c48e4d0c3b80cbc889febbd2720be865b2d8e2759b`
 
@@ -239,7 +231,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 -	Virtual Size: 12.2 MB (12237649 bytes)
 -	v2 Blob: `sha256:7f790686c2f0e3c0c39a8813092de0ccb7261bac534217753768a021b99af530`
 -	v2 Content-Length: 5.4 MB (5381879 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:24 GMT
 
 #### `4a6658f02184b922f12c084da76c6a3865b0f813b03b3b699564898e258c656f`
 
@@ -253,7 +244,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-5.0`
 
@@ -277,7 +267,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -291,7 +280,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -309,7 +297,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -378,7 +365,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -392,7 +378,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -406,7 +391,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a39328649baab1c20ad48aefaac3a1e61a116828457edd7ec900abf4b8ac95b`
 
@@ -420,7 +404,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15f0a00a4c5b1bf9ad61168aa63ce5b2ce6e01a8a50fc7e05467544038b68534`
 
@@ -449,7 +432,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21dd76eacf1cb9e0995e89c48e4d0c3b80cbc889febbd2720be865b2d8e2759b`
 
@@ -464,7 +446,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 -	Virtual Size: 12.2 MB (12237649 bytes)
 -	v2 Blob: `sha256:7f790686c2f0e3c0c39a8813092de0ccb7261bac534217753768a021b99af530`
 -	v2 Content-Length: 5.4 MB (5381879 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:24 GMT
 
 #### `4a6658f02184b922f12c084da76c6a3865b0f813b03b3b699564898e258c656f`
 
@@ -478,7 +459,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-5`
 
@@ -502,7 +482,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -516,7 +495,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -534,7 +512,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -603,7 +580,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -617,7 +593,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -631,7 +606,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a39328649baab1c20ad48aefaac3a1e61a116828457edd7ec900abf4b8ac95b`
 
@@ -645,7 +619,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15f0a00a4c5b1bf9ad61168aa63ce5b2ce6e01a8a50fc7e05467544038b68534`
 
@@ -674,7 +647,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21dd76eacf1cb9e0995e89c48e4d0c3b80cbc889febbd2720be865b2d8e2759b`
 
@@ -689,7 +661,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 -	Virtual Size: 12.2 MB (12237649 bytes)
 -	v2 Blob: `sha256:7f790686c2f0e3c0c39a8813092de0ccb7261bac534217753768a021b99af530`
 -	v2 Content-Length: 5.4 MB (5381879 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:24 GMT
 
 #### `4a6658f02184b922f12c084da76c6a3865b0f813b03b3b699564898e258c656f`
 
@@ -703,7 +674,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2`
 
@@ -727,7 +697,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -741,7 +710,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -759,7 +727,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -828,7 +795,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -842,7 +808,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -856,7 +821,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a39328649baab1c20ad48aefaac3a1e61a116828457edd7ec900abf4b8ac95b`
 
@@ -870,7 +834,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15f0a00a4c5b1bf9ad61168aa63ce5b2ce6e01a8a50fc7e05467544038b68534`
 
@@ -899,7 +862,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21dd76eacf1cb9e0995e89c48e4d0c3b80cbc889febbd2720be865b2d8e2759b`
 
@@ -914,7 +876,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 -	Virtual Size: 12.2 MB (12237649 bytes)
 -	v2 Blob: `sha256:7f790686c2f0e3c0c39a8813092de0ccb7261bac534217753768a021b99af530`
 -	v2 Content-Length: 5.4 MB (5381879 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:24 GMT
 
 #### `4a6658f02184b922f12c084da76c6a3865b0f813b03b3b699564898e258c656f`
 
@@ -928,7 +889,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-5.0.0-onbuild`
 
@@ -952,7 +912,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -966,7 +925,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -984,7 +942,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1053,7 +1010,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -1067,7 +1023,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -1081,7 +1036,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a39328649baab1c20ad48aefaac3a1e61a116828457edd7ec900abf4b8ac95b`
 
@@ -1095,7 +1049,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15f0a00a4c5b1bf9ad61168aa63ce5b2ce6e01a8a50fc7e05467544038b68534`
 
@@ -1124,7 +1077,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21dd76eacf1cb9e0995e89c48e4d0c3b80cbc889febbd2720be865b2d8e2759b`
 
@@ -1139,7 +1091,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 -	Virtual Size: 12.2 MB (12237649 bytes)
 -	v2 Blob: `sha256:7f790686c2f0e3c0c39a8813092de0ccb7261bac534217753768a021b99af530`
 -	v2 Content-Length: 5.4 MB (5381879 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:24 GMT
 
 #### `4a6658f02184b922f12c084da76c6a3865b0f813b03b3b699564898e258c656f`
 
@@ -1153,7 +1104,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `04ec22618db6a487619954dbaadb7c96572659b3f6c0c8579b49da6d23af5cbf`
 
@@ -1167,7 +1117,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:96d48891ab12aab701da18a514cb8401d13a1bd310a7a0609ed05157e26897f8`
 -	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:54 GMT
 
 #### `7f285ad7c64049a67b4daf5a206c23682051587a55ecf62bcd3f3a5f22b3558b`
 
@@ -1181,7 +1130,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee25e613db6dca08e046611131be57bc2321553ccdce54333002c199b1c29d9b`
 
@@ -1195,7 +1143,6 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dd2f49c9f9a69bf94608a0f43697f46ddb0fd1240f2344b775b2aaf3ab764d69`
 
@@ -1209,7 +1156,6 @@ ONBUILD RUN pip install -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ac175132c922fb43fb0d0ac2639ce5fbe606d5ad1a4f1c5905f6b80b2b69ddd4`
 
@@ -1223,7 +1169,6 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-5.0-onbuild`
 
@@ -1247,7 +1192,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1261,7 +1205,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1279,7 +1222,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1348,7 +1290,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -1362,7 +1303,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -1376,7 +1316,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a39328649baab1c20ad48aefaac3a1e61a116828457edd7ec900abf4b8ac95b`
 
@@ -1390,7 +1329,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15f0a00a4c5b1bf9ad61168aa63ce5b2ce6e01a8a50fc7e05467544038b68534`
 
@@ -1419,7 +1357,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21dd76eacf1cb9e0995e89c48e4d0c3b80cbc889febbd2720be865b2d8e2759b`
 
@@ -1434,7 +1371,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 -	Virtual Size: 12.2 MB (12237649 bytes)
 -	v2 Blob: `sha256:7f790686c2f0e3c0c39a8813092de0ccb7261bac534217753768a021b99af530`
 -	v2 Content-Length: 5.4 MB (5381879 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:24 GMT
 
 #### `4a6658f02184b922f12c084da76c6a3865b0f813b03b3b699564898e258c656f`
 
@@ -1448,7 +1384,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `04ec22618db6a487619954dbaadb7c96572659b3f6c0c8579b49da6d23af5cbf`
 
@@ -1462,7 +1397,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:96d48891ab12aab701da18a514cb8401d13a1bd310a7a0609ed05157e26897f8`
 -	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:54 GMT
 
 #### `7f285ad7c64049a67b4daf5a206c23682051587a55ecf62bcd3f3a5f22b3558b`
 
@@ -1476,7 +1410,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee25e613db6dca08e046611131be57bc2321553ccdce54333002c199b1c29d9b`
 
@@ -1490,7 +1423,6 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dd2f49c9f9a69bf94608a0f43697f46ddb0fd1240f2344b775b2aaf3ab764d69`
 
@@ -1504,7 +1436,6 @@ ONBUILD RUN pip install -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ac175132c922fb43fb0d0ac2639ce5fbe606d5ad1a4f1c5905f6b80b2b69ddd4`
 
@@ -1518,7 +1449,6 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-5-onbuild`
 
@@ -1542,7 +1472,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1556,7 +1485,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1574,7 +1502,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1643,7 +1570,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -1657,7 +1583,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -1671,7 +1596,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a39328649baab1c20ad48aefaac3a1e61a116828457edd7ec900abf4b8ac95b`
 
@@ -1685,7 +1609,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15f0a00a4c5b1bf9ad61168aa63ce5b2ce6e01a8a50fc7e05467544038b68534`
 
@@ -1714,7 +1637,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21dd76eacf1cb9e0995e89c48e4d0c3b80cbc889febbd2720be865b2d8e2759b`
 
@@ -1729,7 +1651,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 -	Virtual Size: 12.2 MB (12237649 bytes)
 -	v2 Blob: `sha256:7f790686c2f0e3c0c39a8813092de0ccb7261bac534217753768a021b99af530`
 -	v2 Content-Length: 5.4 MB (5381879 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:24 GMT
 
 #### `4a6658f02184b922f12c084da76c6a3865b0f813b03b3b699564898e258c656f`
 
@@ -1743,7 +1664,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `04ec22618db6a487619954dbaadb7c96572659b3f6c0c8579b49da6d23af5cbf`
 
@@ -1757,7 +1677,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:96d48891ab12aab701da18a514cb8401d13a1bd310a7a0609ed05157e26897f8`
 -	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:54 GMT
 
 #### `7f285ad7c64049a67b4daf5a206c23682051587a55ecf62bcd3f3a5f22b3558b`
 
@@ -1771,7 +1690,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee25e613db6dca08e046611131be57bc2321553ccdce54333002c199b1c29d9b`
 
@@ -1785,7 +1703,6 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dd2f49c9f9a69bf94608a0f43697f46ddb0fd1240f2344b775b2aaf3ab764d69`
 
@@ -1799,7 +1716,6 @@ ONBUILD RUN pip install -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ac175132c922fb43fb0d0ac2639ce5fbe606d5ad1a4f1c5905f6b80b2b69ddd4`
 
@@ -1813,7 +1729,6 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-onbuild`
 
@@ -1837,7 +1752,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1851,7 +1765,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1869,7 +1782,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -1938,7 +1850,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -1952,7 +1863,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -1966,7 +1876,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2a39328649baab1c20ad48aefaac3a1e61a116828457edd7ec900abf4b8ac95b`
 
@@ -1980,7 +1889,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `15f0a00a4c5b1bf9ad61168aa63ce5b2ce6e01a8a50fc7e05467544038b68534`
 
@@ -2009,7 +1917,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `21dd76eacf1cb9e0995e89c48e4d0c3b80cbc889febbd2720be865b2d8e2759b`
 
@@ -2024,7 +1931,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy \
 -	Virtual Size: 12.2 MB (12237649 bytes)
 -	v2 Blob: `sha256:7f790686c2f0e3c0c39a8813092de0ccb7261bac534217753768a021b99af530`
 -	v2 Content-Length: 5.4 MB (5381879 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:24 GMT
 
 #### `4a6658f02184b922f12c084da76c6a3865b0f813b03b3b699564898e258c656f`
 
@@ -2038,7 +1944,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `04ec22618db6a487619954dbaadb7c96572659b3f6c0c8579b49da6d23af5cbf`
 
@@ -2052,7 +1957,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:96d48891ab12aab701da18a514cb8401d13a1bd310a7a0609ed05157e26897f8`
 -	v2 Content-Length: 126.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:21:54 GMT
 
 #### `7f285ad7c64049a67b4daf5a206c23682051587a55ecf62bcd3f3a5f22b3558b`
 
@@ -2066,7 +1970,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee25e613db6dca08e046611131be57bc2321553ccdce54333002c199b1c29d9b`
 
@@ -2080,7 +1983,6 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `dd2f49c9f9a69bf94608a0f43697f46ddb0fd1240f2344b775b2aaf3ab764d69`
 
@@ -2094,7 +1996,6 @@ ONBUILD RUN pip install -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ac175132c922fb43fb0d0ac2639ce5fbe606d5ad1a4f1c5905f6b80b2b69ddd4`
 
@@ -2108,7 +2009,6 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-5.0.0-slim`
 
@@ -2132,7 +2032,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2146,7 +2045,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -2160,7 +2058,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -2174,7 +2071,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f63b561697ece76c796d5e3a169f5e7fbed4ece92f223f5129496a05036a018`
 
@@ -2192,7 +2088,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.7 MB (7749808 bytes)
 -	v2 Blob: `sha256:1b9e99fe298f852975e125ecb6647f8d41bea43c694ba751ad72a5cdce997e68`
 -	v2 Content-Length: 3.5 MB (3450021 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:58:42 GMT
 
 #### `3ab4c62003104b1301ef486dc787972413bf2d38c8f2131d304610d61e4333de`
 
@@ -2206,7 +2101,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b6c6b1cf0362783b398623e46a5bd3df710310d519c8c2ce68e23275bcb180a5`
 
@@ -2220,7 +2114,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e3ede5844a0f6d9319f2574d6960fafa9e980de9602e22357ce7baf01e2acbf`
 
@@ -2240,7 +2133,6 @@ RUN set -x \
 -	Virtual Size: 121.7 MB (121736792 bytes)
 -	v2 Blob: `sha256:613780a36bb021d6ff6ab46b4acdd93e7db8d2dd8d285da3f1c1e84f49c1684c`
 -	v2 Content-Length: 32.2 MB (32175530 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:31 GMT
 
 #### `55cde16619d8e53266275b69d8301ce068022de664932d858943af896697fdd3`
 
@@ -2254,7 +2146,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-5.0-slim`
 
@@ -2278,7 +2169,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2292,7 +2182,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -2306,7 +2195,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -2320,7 +2208,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f63b561697ece76c796d5e3a169f5e7fbed4ece92f223f5129496a05036a018`
 
@@ -2338,7 +2225,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.7 MB (7749808 bytes)
 -	v2 Blob: `sha256:1b9e99fe298f852975e125ecb6647f8d41bea43c694ba751ad72a5cdce997e68`
 -	v2 Content-Length: 3.5 MB (3450021 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:58:42 GMT
 
 #### `3ab4c62003104b1301ef486dc787972413bf2d38c8f2131d304610d61e4333de`
 
@@ -2352,7 +2238,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b6c6b1cf0362783b398623e46a5bd3df710310d519c8c2ce68e23275bcb180a5`
 
@@ -2366,7 +2251,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e3ede5844a0f6d9319f2574d6960fafa9e980de9602e22357ce7baf01e2acbf`
 
@@ -2386,7 +2270,6 @@ RUN set -x \
 -	Virtual Size: 121.7 MB (121736792 bytes)
 -	v2 Blob: `sha256:613780a36bb021d6ff6ab46b4acdd93e7db8d2dd8d285da3f1c1e84f49c1684c`
 -	v2 Content-Length: 32.2 MB (32175530 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:31 GMT
 
 #### `55cde16619d8e53266275b69d8301ce068022de664932d858943af896697fdd3`
 
@@ -2400,7 +2283,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-5-slim`
 
@@ -2424,7 +2306,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2438,7 +2319,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -2452,7 +2332,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -2466,7 +2345,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f63b561697ece76c796d5e3a169f5e7fbed4ece92f223f5129496a05036a018`
 
@@ -2484,7 +2362,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.7 MB (7749808 bytes)
 -	v2 Blob: `sha256:1b9e99fe298f852975e125ecb6647f8d41bea43c694ba751ad72a5cdce997e68`
 -	v2 Content-Length: 3.5 MB (3450021 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:58:42 GMT
 
 #### `3ab4c62003104b1301ef486dc787972413bf2d38c8f2131d304610d61e4333de`
 
@@ -2498,7 +2375,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b6c6b1cf0362783b398623e46a5bd3df710310d519c8c2ce68e23275bcb180a5`
 
@@ -2512,7 +2388,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e3ede5844a0f6d9319f2574d6960fafa9e980de9602e22357ce7baf01e2acbf`
 
@@ -2532,7 +2407,6 @@ RUN set -x \
 -	Virtual Size: 121.7 MB (121736792 bytes)
 -	v2 Blob: `sha256:613780a36bb021d6ff6ab46b4acdd93e7db8d2dd8d285da3f1c1e84f49c1684c`
 -	v2 Content-Length: 32.2 MB (32175530 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:31 GMT
 
 #### `55cde16619d8e53266275b69d8301ce068022de664932d858943af896697fdd3`
 
@@ -2546,7 +2420,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:2-slim`
 
@@ -2570,7 +2443,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2584,7 +2456,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -2598,7 +2469,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -2612,7 +2482,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f63b561697ece76c796d5e3a169f5e7fbed4ece92f223f5129496a05036a018`
 
@@ -2630,7 +2499,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.7 MB (7749808 bytes)
 -	v2 Blob: `sha256:1b9e99fe298f852975e125ecb6647f8d41bea43c694ba751ad72a5cdce997e68`
 -	v2 Content-Length: 3.5 MB (3450021 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:58:42 GMT
 
 #### `3ab4c62003104b1301ef486dc787972413bf2d38c8f2131d304610d61e4333de`
 
@@ -2644,7 +2512,6 @@ ENV PYPY_VERSION=5.0.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b6c6b1cf0362783b398623e46a5bd3df710310d519c8c2ce68e23275bcb180a5`
 
@@ -2658,7 +2525,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e3ede5844a0f6d9319f2574d6960fafa9e980de9602e22357ce7baf01e2acbf`
 
@@ -2678,7 +2544,6 @@ RUN set -x \
 -	Virtual Size: 121.7 MB (121736792 bytes)
 -	v2 Blob: `sha256:613780a36bb021d6ff6ab46b4acdd93e7db8d2dd8d285da3f1c1e84f49c1684c`
 -	v2 Content-Length: 32.2 MB (32175530 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:31 GMT
 
 #### `55cde16619d8e53266275b69d8301ce068022de664932d858943af896697fdd3`
 
@@ -2692,7 +2557,6 @@ CMD ["pypy"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4.0`
 
@@ -2716,7 +2580,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2730,7 +2593,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2748,7 +2610,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -2817,7 +2678,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -2831,7 +2691,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -2845,7 +2704,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3043c068889557f8cb9fddf5613194a62ee26b3217db0162f3bc3e9ccba92009`
 
@@ -2859,7 +2717,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67643a7fd3aecc832dc4e67ca36fc1d7bd6ab33b4f5a6f46d2a172b8764e3457`
 
@@ -2875,7 +2732,6 @@ RUN set -x \
 -	Virtual Size: 63.8 MB (63784665 bytes)
 -	v2 Blob: `sha256:cfd5d2474b91f97d95f070bd7ed8a89ef6e60ba7b0e8c95f81436ea4912f9c30`
 -	v2 Content-Length: 14.4 MB (14397313 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:19 GMT
 
 #### `97073d4717bd289f5ae0e05bae7e29d1fc3a868eea8f2952c54cab6d1e743e84`
 
@@ -2889,7 +2745,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5f35007210ee598cbc3cc70eb8f32f1e6eaa75000dfaf1b06a59c5e2d3cb3fd`
 
@@ -2904,7 +2759,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13616523 bytes)
 -	v2 Blob: `sha256:9715b48b4b4a6403676fc8b7779fe55421335e31ed8d8e371ce2ebff9a0a535f`
 -	v2 Content-Length: 5.5 MB (5475350 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:54 GMT
 
 #### `f368088682b7e502a64e9d6689f7a3a78f81c3420bbc4af9d7feece562d15ac1`
 
@@ -2918,7 +2772,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4`
 
@@ -2942,7 +2795,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2956,7 +2808,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2974,7 +2825,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3043,7 +2893,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -3057,7 +2906,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -3071,7 +2919,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3043c068889557f8cb9fddf5613194a62ee26b3217db0162f3bc3e9ccba92009`
 
@@ -3085,7 +2932,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67643a7fd3aecc832dc4e67ca36fc1d7bd6ab33b4f5a6f46d2a172b8764e3457`
 
@@ -3101,7 +2947,6 @@ RUN set -x \
 -	Virtual Size: 63.8 MB (63784665 bytes)
 -	v2 Blob: `sha256:cfd5d2474b91f97d95f070bd7ed8a89ef6e60ba7b0e8c95f81436ea4912f9c30`
 -	v2 Content-Length: 14.4 MB (14397313 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:19 GMT
 
 #### `97073d4717bd289f5ae0e05bae7e29d1fc3a868eea8f2952c54cab6d1e743e84`
 
@@ -3115,7 +2960,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5f35007210ee598cbc3cc70eb8f32f1e6eaa75000dfaf1b06a59c5e2d3cb3fd`
 
@@ -3130,7 +2974,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13616523 bytes)
 -	v2 Blob: `sha256:9715b48b4b4a6403676fc8b7779fe55421335e31ed8d8e371ce2ebff9a0a535f`
 -	v2 Content-Length: 5.5 MB (5475350 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:54 GMT
 
 #### `f368088682b7e502a64e9d6689f7a3a78f81c3420bbc4af9d7feece562d15ac1`
 
@@ -3144,7 +2987,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2`
 
@@ -3168,7 +3010,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3182,7 +3023,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3200,7 +3040,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3269,7 +3108,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -3283,7 +3121,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -3297,7 +3134,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3043c068889557f8cb9fddf5613194a62ee26b3217db0162f3bc3e9ccba92009`
 
@@ -3311,7 +3147,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67643a7fd3aecc832dc4e67ca36fc1d7bd6ab33b4f5a6f46d2a172b8764e3457`
 
@@ -3327,7 +3162,6 @@ RUN set -x \
 -	Virtual Size: 63.8 MB (63784665 bytes)
 -	v2 Blob: `sha256:cfd5d2474b91f97d95f070bd7ed8a89ef6e60ba7b0e8c95f81436ea4912f9c30`
 -	v2 Content-Length: 14.4 MB (14397313 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:19 GMT
 
 #### `97073d4717bd289f5ae0e05bae7e29d1fc3a868eea8f2952c54cab6d1e743e84`
 
@@ -3341,7 +3175,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5f35007210ee598cbc3cc70eb8f32f1e6eaa75000dfaf1b06a59c5e2d3cb3fd`
 
@@ -3356,7 +3189,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13616523 bytes)
 -	v2 Blob: `sha256:9715b48b4b4a6403676fc8b7779fe55421335e31ed8d8e371ce2ebff9a0a535f`
 -	v2 Content-Length: 5.5 MB (5475350 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:54 GMT
 
 #### `f368088682b7e502a64e9d6689f7a3a78f81c3420bbc4af9d7feece562d15ac1`
 
@@ -3370,7 +3202,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3`
 
@@ -3394,7 +3225,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3408,7 +3238,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3426,7 +3255,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3495,7 +3323,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -3509,7 +3336,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -3523,7 +3349,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3043c068889557f8cb9fddf5613194a62ee26b3217db0162f3bc3e9ccba92009`
 
@@ -3537,7 +3362,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67643a7fd3aecc832dc4e67ca36fc1d7bd6ab33b4f5a6f46d2a172b8764e3457`
 
@@ -3553,7 +3377,6 @@ RUN set -x \
 -	Virtual Size: 63.8 MB (63784665 bytes)
 -	v2 Blob: `sha256:cfd5d2474b91f97d95f070bd7ed8a89ef6e60ba7b0e8c95f81436ea4912f9c30`
 -	v2 Content-Length: 14.4 MB (14397313 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:19 GMT
 
 #### `97073d4717bd289f5ae0e05bae7e29d1fc3a868eea8f2952c54cab6d1e743e84`
 
@@ -3567,7 +3390,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5f35007210ee598cbc3cc70eb8f32f1e6eaa75000dfaf1b06a59c5e2d3cb3fd`
 
@@ -3582,7 +3404,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13616523 bytes)
 -	v2 Blob: `sha256:9715b48b4b4a6403676fc8b7779fe55421335e31ed8d8e371ce2ebff9a0a535f`
 -	v2 Content-Length: 5.5 MB (5475350 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:54 GMT
 
 #### `f368088682b7e502a64e9d6689f7a3a78f81c3420bbc4af9d7feece562d15ac1`
 
@@ -3596,7 +3417,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:latest`
 
@@ -3620,7 +3440,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3634,7 +3453,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3652,7 +3470,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3721,7 +3538,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -3735,7 +3551,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -3749,7 +3564,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3043c068889557f8cb9fddf5613194a62ee26b3217db0162f3bc3e9ccba92009`
 
@@ -3763,7 +3577,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67643a7fd3aecc832dc4e67ca36fc1d7bd6ab33b4f5a6f46d2a172b8764e3457`
 
@@ -3779,7 +3592,6 @@ RUN set -x \
 -	Virtual Size: 63.8 MB (63784665 bytes)
 -	v2 Blob: `sha256:cfd5d2474b91f97d95f070bd7ed8a89ef6e60ba7b0e8c95f81436ea4912f9c30`
 -	v2 Content-Length: 14.4 MB (14397313 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:19 GMT
 
 #### `97073d4717bd289f5ae0e05bae7e29d1fc3a868eea8f2952c54cab6d1e743e84`
 
@@ -3793,7 +3605,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5f35007210ee598cbc3cc70eb8f32f1e6eaa75000dfaf1b06a59c5e2d3cb3fd`
 
@@ -3808,7 +3619,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13616523 bytes)
 -	v2 Blob: `sha256:9715b48b4b4a6403676fc8b7779fe55421335e31ed8d8e371ce2ebff9a0a535f`
 -	v2 Content-Length: 5.5 MB (5475350 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:54 GMT
 
 #### `f368088682b7e502a64e9d6689f7a3a78f81c3420bbc4af9d7feece562d15ac1`
 
@@ -3822,7 +3632,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4.0-onbuild`
 
@@ -3846,7 +3655,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3860,7 +3668,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3878,7 +3685,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -3947,7 +3753,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -3961,7 +3766,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -3975,7 +3779,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3043c068889557f8cb9fddf5613194a62ee26b3217db0162f3bc3e9ccba92009`
 
@@ -3989,7 +3792,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67643a7fd3aecc832dc4e67ca36fc1d7bd6ab33b4f5a6f46d2a172b8764e3457`
 
@@ -4005,7 +3807,6 @@ RUN set -x \
 -	Virtual Size: 63.8 MB (63784665 bytes)
 -	v2 Blob: `sha256:cfd5d2474b91f97d95f070bd7ed8a89ef6e60ba7b0e8c95f81436ea4912f9c30`
 -	v2 Content-Length: 14.4 MB (14397313 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:19 GMT
 
 #### `97073d4717bd289f5ae0e05bae7e29d1fc3a868eea8f2952c54cab6d1e743e84`
 
@@ -4019,7 +3820,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5f35007210ee598cbc3cc70eb8f32f1e6eaa75000dfaf1b06a59c5e2d3cb3fd`
 
@@ -4034,7 +3834,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13616523 bytes)
 -	v2 Blob: `sha256:9715b48b4b4a6403676fc8b7779fe55421335e31ed8d8e371ce2ebff9a0a535f`
 -	v2 Content-Length: 5.5 MB (5475350 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:54 GMT
 
 #### `f368088682b7e502a64e9d6689f7a3a78f81c3420bbc4af9d7feece562d15ac1`
 
@@ -4048,7 +3847,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `232d502f51f6fca8807021b23f4637e5a786ce96259bd9ccdb056991fe84c89f`
 
@@ -4062,7 +3860,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37530585da68457c8827e503e89001d61b47efb4934db9f586169887fd86e73e`
 -	v2 Content-Length: 127.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:23:28 GMT
 
 #### `fac25eae64394cb9546bbbe4d9eb99ee7a014062349f9884faa37596cbc1d6ee`
 
@@ -4076,7 +3873,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `133b8c7d4b81485d7e83ca3670df03acc0d559b05ce09657a6ddea330b89e0c5`
 
@@ -4090,7 +3886,6 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aea4ddbbd6d04d78601c97cb1b20d99b491bb8dff2912fbdf0f1e63a683e4f36`
 
@@ -4104,7 +3899,6 @@ ONBUILD RUN pip install -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1785f02836800835ac6df40532ffc1fe1b225f84aff33c9ca7820d0aedec54d9`
 
@@ -4118,7 +3912,6 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4-onbuild`
 
@@ -4142,7 +3935,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4156,7 +3948,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4174,7 +3965,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -4243,7 +4033,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -4257,7 +4046,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -4271,7 +4059,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3043c068889557f8cb9fddf5613194a62ee26b3217db0162f3bc3e9ccba92009`
 
@@ -4285,7 +4072,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67643a7fd3aecc832dc4e67ca36fc1d7bd6ab33b4f5a6f46d2a172b8764e3457`
 
@@ -4301,7 +4087,6 @@ RUN set -x \
 -	Virtual Size: 63.8 MB (63784665 bytes)
 -	v2 Blob: `sha256:cfd5d2474b91f97d95f070bd7ed8a89ef6e60ba7b0e8c95f81436ea4912f9c30`
 -	v2 Content-Length: 14.4 MB (14397313 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:19 GMT
 
 #### `97073d4717bd289f5ae0e05bae7e29d1fc3a868eea8f2952c54cab6d1e743e84`
 
@@ -4315,7 +4100,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5f35007210ee598cbc3cc70eb8f32f1e6eaa75000dfaf1b06a59c5e2d3cb3fd`
 
@@ -4330,7 +4114,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13616523 bytes)
 -	v2 Blob: `sha256:9715b48b4b4a6403676fc8b7779fe55421335e31ed8d8e371ce2ebff9a0a535f`
 -	v2 Content-Length: 5.5 MB (5475350 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:54 GMT
 
 #### `f368088682b7e502a64e9d6689f7a3a78f81c3420bbc4af9d7feece562d15ac1`
 
@@ -4344,7 +4127,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `232d502f51f6fca8807021b23f4637e5a786ce96259bd9ccdb056991fe84c89f`
 
@@ -4358,7 +4140,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37530585da68457c8827e503e89001d61b47efb4934db9f586169887fd86e73e`
 -	v2 Content-Length: 127.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:23:28 GMT
 
 #### `fac25eae64394cb9546bbbe4d9eb99ee7a014062349f9884faa37596cbc1d6ee`
 
@@ -4372,7 +4153,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `133b8c7d4b81485d7e83ca3670df03acc0d559b05ce09657a6ddea330b89e0c5`
 
@@ -4386,7 +4166,6 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aea4ddbbd6d04d78601c97cb1b20d99b491bb8dff2912fbdf0f1e63a683e4f36`
 
@@ -4400,7 +4179,6 @@ ONBUILD RUN pip install -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1785f02836800835ac6df40532ffc1fe1b225f84aff33c9ca7820d0aedec54d9`
 
@@ -4414,7 +4192,6 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2-onbuild`
 
@@ -4438,7 +4215,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4452,7 +4228,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4470,7 +4245,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -4539,7 +4313,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -4553,7 +4326,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -4567,7 +4339,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3043c068889557f8cb9fddf5613194a62ee26b3217db0162f3bc3e9ccba92009`
 
@@ -4581,7 +4352,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67643a7fd3aecc832dc4e67ca36fc1d7bd6ab33b4f5a6f46d2a172b8764e3457`
 
@@ -4597,7 +4367,6 @@ RUN set -x \
 -	Virtual Size: 63.8 MB (63784665 bytes)
 -	v2 Blob: `sha256:cfd5d2474b91f97d95f070bd7ed8a89ef6e60ba7b0e8c95f81436ea4912f9c30`
 -	v2 Content-Length: 14.4 MB (14397313 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:19 GMT
 
 #### `97073d4717bd289f5ae0e05bae7e29d1fc3a868eea8f2952c54cab6d1e743e84`
 
@@ -4611,7 +4380,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5f35007210ee598cbc3cc70eb8f32f1e6eaa75000dfaf1b06a59c5e2d3cb3fd`
 
@@ -4626,7 +4394,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13616523 bytes)
 -	v2 Blob: `sha256:9715b48b4b4a6403676fc8b7779fe55421335e31ed8d8e371ce2ebff9a0a535f`
 -	v2 Content-Length: 5.5 MB (5475350 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:54 GMT
 
 #### `f368088682b7e502a64e9d6689f7a3a78f81c3420bbc4af9d7feece562d15ac1`
 
@@ -4640,7 +4407,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `232d502f51f6fca8807021b23f4637e5a786ce96259bd9ccdb056991fe84c89f`
 
@@ -4654,7 +4420,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37530585da68457c8827e503e89001d61b47efb4934db9f586169887fd86e73e`
 -	v2 Content-Length: 127.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:23:28 GMT
 
 #### `fac25eae64394cb9546bbbe4d9eb99ee7a014062349f9884faa37596cbc1d6ee`
 
@@ -4668,7 +4433,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `133b8c7d4b81485d7e83ca3670df03acc0d559b05ce09657a6ddea330b89e0c5`
 
@@ -4682,7 +4446,6 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aea4ddbbd6d04d78601c97cb1b20d99b491bb8dff2912fbdf0f1e63a683e4f36`
 
@@ -4696,7 +4459,6 @@ ONBUILD RUN pip install -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1785f02836800835ac6df40532ffc1fe1b225f84aff33c9ca7820d0aedec54d9`
 
@@ -4710,7 +4472,6 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-onbuild`
 
@@ -4734,7 +4495,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4748,7 +4508,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4766,7 +4525,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -4835,7 +4593,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -4849,7 +4606,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -4863,7 +4619,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3043c068889557f8cb9fddf5613194a62ee26b3217db0162f3bc3e9ccba92009`
 
@@ -4877,7 +4632,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67643a7fd3aecc832dc4e67ca36fc1d7bd6ab33b4f5a6f46d2a172b8764e3457`
 
@@ -4893,7 +4647,6 @@ RUN set -x \
 -	Virtual Size: 63.8 MB (63784665 bytes)
 -	v2 Blob: `sha256:cfd5d2474b91f97d95f070bd7ed8a89ef6e60ba7b0e8c95f81436ea4912f9c30`
 -	v2 Content-Length: 14.4 MB (14397313 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:19 GMT
 
 #### `97073d4717bd289f5ae0e05bae7e29d1fc3a868eea8f2952c54cab6d1e743e84`
 
@@ -4907,7 +4660,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5f35007210ee598cbc3cc70eb8f32f1e6eaa75000dfaf1b06a59c5e2d3cb3fd`
 
@@ -4922,7 +4674,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13616523 bytes)
 -	v2 Blob: `sha256:9715b48b4b4a6403676fc8b7779fe55421335e31ed8d8e371ce2ebff9a0a535f`
 -	v2 Content-Length: 5.5 MB (5475350 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:54 GMT
 
 #### `f368088682b7e502a64e9d6689f7a3a78f81c3420bbc4af9d7feece562d15ac1`
 
@@ -4936,7 +4687,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `232d502f51f6fca8807021b23f4637e5a786ce96259bd9ccdb056991fe84c89f`
 
@@ -4950,7 +4700,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37530585da68457c8827e503e89001d61b47efb4934db9f586169887fd86e73e`
 -	v2 Content-Length: 127.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:23:28 GMT
 
 #### `fac25eae64394cb9546bbbe4d9eb99ee7a014062349f9884faa37596cbc1d6ee`
 
@@ -4964,7 +4713,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `133b8c7d4b81485d7e83ca3670df03acc0d559b05ce09657a6ddea330b89e0c5`
 
@@ -4978,7 +4726,6 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aea4ddbbd6d04d78601c97cb1b20d99b491bb8dff2912fbdf0f1e63a683e4f36`
 
@@ -4992,7 +4739,6 @@ ONBUILD RUN pip install -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1785f02836800835ac6df40532ffc1fe1b225f84aff33c9ca7820d0aedec54d9`
 
@@ -5006,7 +4752,6 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:onbuild`
 
@@ -5030,7 +4775,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5044,7 +4788,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5062,7 +4805,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `5901462573ab9e62761caa412b98a6ea4c847f2d652e9a9be18befbc36986331`
 
@@ -5131,7 +4873,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 314.7 MB (314698285 bytes)
 -	v2 Blob: `sha256:67c44324f4e30ead35c8a464eac3c0a3533d5f58ce2d64f1d89d07432f0073cd`
 -	v2 Content-Length: 128.6 MB (128602210 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:04:42 GMT
 
 #### `3eeb5182fe51de3e56959139480082ecd7a64263bf89a1231d8996d7c44503e2`
 
@@ -5145,7 +4886,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 985.0 KB (985021 bytes)
 -	v2 Blob: `sha256:9ee7e6ec2a050a41a754a8f1731e6e30e371b1bf1c5ab39852338668047652b6`
 -	v2 Content-Length: 220.8 KB (220771 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 19:55:20 GMT
 
 #### `663a06e2d36161678339b527140c746ac0a66f01ba9f0252780663a390f4e6fb`
 
@@ -5159,7 +4899,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3043c068889557f8cb9fddf5613194a62ee26b3217db0162f3bc3e9ccba92009`
 
@@ -5173,7 +4912,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `67643a7fd3aecc832dc4e67ca36fc1d7bd6ab33b4f5a6f46d2a172b8764e3457`
 
@@ -5189,7 +4927,6 @@ RUN set -x \
 -	Virtual Size: 63.8 MB (63784665 bytes)
 -	v2 Blob: `sha256:cfd5d2474b91f97d95f070bd7ed8a89ef6e60ba7b0e8c95f81436ea4912f9c30`
 -	v2 Content-Length: 14.4 MB (14397313 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:59:19 GMT
 
 #### `97073d4717bd289f5ae0e05bae7e29d1fc3a868eea8f2952c54cab6d1e743e84`
 
@@ -5203,7 +4940,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e5f35007210ee598cbc3cc70eb8f32f1e6eaa75000dfaf1b06a59c5e2d3cb3fd`
 
@@ -5218,7 +4954,6 @@ RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 \
 -	Virtual Size: 13.6 MB (13616523 bytes)
 -	v2 Blob: `sha256:9715b48b4b4a6403676fc8b7779fe55421335e31ed8d8e371ce2ebff9a0a535f`
 -	v2 Content-Length: 5.5 MB (5475350 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:22:54 GMT
 
 #### `f368088682b7e502a64e9d6689f7a3a78f81c3420bbc4af9d7feece562d15ac1`
 
@@ -5232,7 +4967,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `232d502f51f6fca8807021b23f4637e5a786ce96259bd9ccdb056991fe84c89f`
 
@@ -5246,7 +4980,6 @@ RUN mkdir -p /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:37530585da68457c8827e503e89001d61b47efb4934db9f586169887fd86e73e`
 -	v2 Content-Length: 127.0 B
--	v2 Last-Modified: Sat, 19 Mar 2016 02:23:28 GMT
 
 #### `fac25eae64394cb9546bbbe4d9eb99ee7a014062349f9884faa37596cbc1d6ee`
 
@@ -5260,7 +4993,6 @@ WORKDIR /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `133b8c7d4b81485d7e83ca3670df03acc0d559b05ce09657a6ddea330b89e0c5`
 
@@ -5274,7 +5006,6 @@ ONBUILD COPY requirements.txt /usr/src/app/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aea4ddbbd6d04d78601c97cb1b20d99b491bb8dff2912fbdf0f1e63a683e4f36`
 
@@ -5288,7 +5019,6 @@ ONBUILD RUN pip install -r requirements.txt
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1785f02836800835ac6df40532ffc1fe1b225f84aff33c9ca7820d0aedec54d9`
 
@@ -5302,7 +5032,6 @@ ONBUILD COPY . /usr/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4.0-slim`
 
@@ -5326,7 +5055,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5340,7 +5068,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -5354,7 +5081,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -5368,7 +5094,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f63b561697ece76c796d5e3a169f5e7fbed4ece92f223f5129496a05036a018`
 
@@ -5386,7 +5111,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.7 MB (7749808 bytes)
 -	v2 Blob: `sha256:1b9e99fe298f852975e125ecb6647f8d41bea43c694ba751ad72a5cdce997e68`
 -	v2 Content-Length: 3.5 MB (3450021 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:58:42 GMT
 
 #### `080e8c88af3d798d38b7e367d3b59d4fceaf9ca9e0e5906a06bc934f950c8aa0`
 
@@ -5400,7 +5124,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ccb80d4fe9a2cbdf9fecc125511afad43341f5e55b07421f119bae26a8260b8`
 
@@ -5414,7 +5137,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `608e29a48dbf3d68f915f20eb3ff6a3f11dd3bc45db1113c85c7e1d4878fbffd`
 
@@ -5447,7 +5169,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2.4-slim`
 
@@ -5471,7 +5192,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5485,7 +5205,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -5499,7 +5218,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -5513,7 +5231,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f63b561697ece76c796d5e3a169f5e7fbed4ece92f223f5129496a05036a018`
 
@@ -5531,7 +5248,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.7 MB (7749808 bytes)
 -	v2 Blob: `sha256:1b9e99fe298f852975e125ecb6647f8d41bea43c694ba751ad72a5cdce997e68`
 -	v2 Content-Length: 3.5 MB (3450021 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:58:42 GMT
 
 #### `080e8c88af3d798d38b7e367d3b59d4fceaf9ca9e0e5906a06bc934f950c8aa0`
 
@@ -5545,7 +5261,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ccb80d4fe9a2cbdf9fecc125511afad43341f5e55b07421f119bae26a8260b8`
 
@@ -5559,7 +5274,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `608e29a48dbf3d68f915f20eb3ff6a3f11dd3bc45db1113c85c7e1d4878fbffd`
 
@@ -5592,7 +5306,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-2-slim`
 
@@ -5616,7 +5329,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5630,7 +5342,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -5644,7 +5355,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -5658,7 +5368,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f63b561697ece76c796d5e3a169f5e7fbed4ece92f223f5129496a05036a018`
 
@@ -5676,7 +5385,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.7 MB (7749808 bytes)
 -	v2 Blob: `sha256:1b9e99fe298f852975e125ecb6647f8d41bea43c694ba751ad72a5cdce997e68`
 -	v2 Content-Length: 3.5 MB (3450021 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:58:42 GMT
 
 #### `080e8c88af3d798d38b7e367d3b59d4fceaf9ca9e0e5906a06bc934f950c8aa0`
 
@@ -5690,7 +5398,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ccb80d4fe9a2cbdf9fecc125511afad43341f5e55b07421f119bae26a8260b8`
 
@@ -5704,7 +5411,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `608e29a48dbf3d68f915f20eb3ff6a3f11dd3bc45db1113c85c7e1d4878fbffd`
 
@@ -5737,7 +5443,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:3-slim`
 
@@ -5761,7 +5466,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5775,7 +5479,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -5789,7 +5492,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -5803,7 +5505,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f63b561697ece76c796d5e3a169f5e7fbed4ece92f223f5129496a05036a018`
 
@@ -5821,7 +5522,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.7 MB (7749808 bytes)
 -	v2 Blob: `sha256:1b9e99fe298f852975e125ecb6647f8d41bea43c694ba751ad72a5cdce997e68`
 -	v2 Content-Length: 3.5 MB (3450021 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:58:42 GMT
 
 #### `080e8c88af3d798d38b7e367d3b59d4fceaf9ca9e0e5906a06bc934f950c8aa0`
 
@@ -5835,7 +5535,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ccb80d4fe9a2cbdf9fecc125511afad43341f5e55b07421f119bae26a8260b8`
 
@@ -5849,7 +5548,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `608e29a48dbf3d68f915f20eb3ff6a3f11dd3bc45db1113c85c7e1d4878fbffd`
 
@@ -5882,7 +5580,6 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `pypy:slim`
 
@@ -5906,7 +5603,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5920,7 +5616,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b3aed35dbb1b45cedded88cb2c35a1c49c158e9774fb67fae877424171ecb19d`
 
@@ -5934,7 +5629,6 @@ RUN apt-get purge -y python.*
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d8f41b6f41e070c53dd165e7cfaa8b317e18a6b7d003fac7b31c15a0d62adb9e`
 
@@ -5948,7 +5642,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7f63b561697ece76c796d5e3a169f5e7fbed4ece92f223f5129496a05036a018`
 
@@ -5966,7 +5659,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 7.7 MB (7749808 bytes)
 -	v2 Blob: `sha256:1b9e99fe298f852975e125ecb6647f8d41bea43c694ba751ad72a5cdce997e68`
 -	v2 Content-Length: 3.5 MB (3450021 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:58:42 GMT
 
 #### `080e8c88af3d798d38b7e367d3b59d4fceaf9ca9e0e5906a06bc934f950c8aa0`
 
@@ -5980,7 +5672,6 @@ ENV PYPY_VERSION=2.4.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ccb80d4fe9a2cbdf9fecc125511afad43341f5e55b07421f119bae26a8260b8`
 
@@ -5994,7 +5685,6 @@ ENV PYTHON_PIP_VERSION=8.1.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `608e29a48dbf3d68f915f20eb3ff6a3f11dd3bc45db1113c85c7e1d4878fbffd`
 
@@ -6027,4 +5717,3 @@ CMD ["pypy3"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
