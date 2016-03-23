@@ -4295,6 +4295,7 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 -	Virtual Size: 2.9 KB (2886 bytes)
 -	v2 Blob: `sha256:81270fcf0c456b480927c2971b23734a94dd74e0c5b78be8d3f2ac66e47c496b`
 -	v2 Content-Length: 1.6 KB (1574 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:57:57 GMT
 
 #### `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 
@@ -4782,6 +4783,7 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 -	Virtual Size: 2.9 KB (2886 bytes)
 -	v2 Blob: `sha256:81270fcf0c456b480927c2971b23734a94dd74e0c5b78be8d3f2ac66e47c496b`
 -	v2 Content-Length: 1.6 KB (1574 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:57:57 GMT
 
 #### `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 
@@ -5269,6 +5271,7 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 -	Virtual Size: 2.9 KB (2886 bytes)
 -	v2 Blob: `sha256:81270fcf0c456b480927c2971b23734a94dd74e0c5b78be8d3f2ac66e47c496b`
 -	v2 Content-Length: 1.6 KB (1574 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:57:57 GMT
 
 #### `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 
@@ -5756,6 +5759,7 @@ RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste 
 -	Virtual Size: 2.9 KB (2886 bytes)
 -	v2 Blob: `sha256:81270fcf0c456b480927c2971b23734a94dd74e0c5b78be8d3f2ac66e47c496b`
 -	v2 Content-Length: 1.6 KB (1574 bytes)
+-	v2 Last-Modified: Tue, 15 Mar 2016 22:57:57 GMT
 
 #### `008f65891bcc7f54a6f88671ec397e70a66637b252919ec56d6a1e6c34855d96`
 
