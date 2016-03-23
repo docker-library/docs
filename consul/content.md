@@ -164,23 +164,25 @@ By default the dev, client, and server modes started by the endpoint will expose
 $ docker run --net=host -p 53:8600/tcp -p 53:8600/udp hashicorp/consul
 ```
 
-If you are binding Consul's client interfaces to the host's loopback address, then you should be able to configure your host's `resolv.conf` to route DNS requests to Consul by including "127.0.0.1" as the primary DNS server. Due to Docker's built-in DNS server, you can't point to this directly from inside your containers; Docker will issue an error message if you attempt to do this.
+If you are binding Consul's client interfaces to the host's loopback address, then you should be able to configure your host's `resolv.conf` to route DNS requests to Consul by including "127.0.0.1" as the primary DNS server. This would expose Consul's DNS to all applications running on the host, but due to Docker's built-in DNS server, you can't point to this directly from inside your containers; Docker will issue an error message if you attempt to do this. You must configure Consul to listen on a non-localhost address that is reachable from within other containers.
 
-If you are binding Consul's client interfaces to the bridge or other network, you can use the `--dns` option in your *other containers* in order for them to use Consul's DNS server, mapped to port 53. Here's an example:
+Once you bind Consul's client interfaces to the bridge or other network, you can use the `--dns` option in your *other containers* in order for them to use Consul's DNS server, mapped to port 53. Here's an example:
 
 ```console
-$ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul client -bind=<ip>
+$ docker run -d --net=host -p 53:8600/tcp -p 53:8600/udp consul client -bind=<bridge ip>
 ```
 
 Now start another container and point it at Consul's DNS, using the bridge address of the host:
 
 ```console
-$ docker run -i --dns=<ip> -t ubuntu sh -c "apt-get install -y dnsutils && dig consul.service.consul"
+$ docker run -i --dns=<bridge ip> -t ubuntu sh -c "apt-get install -y dnsutils && dig consul.service.consul"
 ...
 ;; ANSWER SECTION:
 consul.service.consul.  0       IN      A       66.175.220.234
 ...
 ```
+
+In the example above, adding the bridge address to the host's `/etc/resolv.conf` file should expose it to all containers without running with the `--dns` option.
 
 ## Service Discovery with Containers
 
