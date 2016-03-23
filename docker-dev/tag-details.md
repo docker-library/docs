@@ -344,6 +344,7 @@ RUN cd /usr/local/go/src \
 -	Virtual Size: 797.8 MB (797798326 bytes)
 -	v2 Blob: `sha256:ef8e6c5532f6a7309d865338cbc3f4e65de35853c9035e2cbeb027fae81594c8`
 -	v2 Content-Length: 205.1 MB (205121223 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:26:21 GMT
 
 #### `016d4ed8d29ad2b9293ff99f60d7b80ec3086f1f05d647c91173289a7620da46`
 
@@ -1102,6 +1103,7 @@ RUN cd /usr/local/go/src \
 -	Virtual Size: 797.8 MB (797798326 bytes)
 -	v2 Blob: `sha256:ef8e6c5532f6a7309d865338cbc3f4e65de35853c9035e2cbeb027fae81594c8`
 -	v2 Content-Length: 205.1 MB (205121223 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:26:21 GMT
 
 #### `016d4ed8d29ad2b9293ff99f60d7b80ec3086f1f05d647c91173289a7620da46`
 
@@ -1860,6 +1862,7 @@ RUN cd /usr/local/go/src \
 -	Virtual Size: 797.8 MB (797798326 bytes)
 -	v2 Blob: `sha256:ef8e6c5532f6a7309d865338cbc3f4e65de35853c9035e2cbeb027fae81594c8`
 -	v2 Content-Length: 205.1 MB (205121223 bytes)
+-	v2 Last-Modified: Wed, 20 Jan 2016 16:26:21 GMT
 
 #### `016d4ed8d29ad2b9293ff99f60d7b80ec3086f1f05d647c91173289a7620da46`
 
