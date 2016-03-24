@@ -67,12 +67,6 @@ db:
     MYSQL_ROOT_PASSWORD: example
 ```
 
-## ... or via [`Version 2 of Compose file`](https://docs.docker.com/compose/compose-file/#versioning)
-
-Environment variables will only be populated if you’re using the legacy version 1 Compose file format. https://docs.docker.com/compose/link-env-deprecated/
-
-You must set additional environment variables to launch the Wordpress docker container in version 2.
-
 ```yaml
 version: '2'
 
