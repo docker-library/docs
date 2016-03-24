@@ -67,6 +67,8 @@ db:
     MYSQL_ROOT_PASSWORD: example
 ```
 
+## .. via Version 2
+
 Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
 
 ## Adding additional libraries / extensions
