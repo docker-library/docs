@@ -339,7 +339,6 @@ RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://arch
 -	Virtual Size: 212.7 MB (212699944 bytes)
 -	v2 Blob: `sha256:78bc425cdb4d9b03502bb50ee7ffb9671e38d3ce57c8139117412ba9c42acf9c`
 -	v2 Content-Length: 134.9 MB (134929482 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:32:31 GMT
 
 #### `1e5b029b30c9d937d8106313536755a4cea4f8ee2bf75b6cf26153d7a1284954`
 
@@ -721,7 +720,6 @@ RUN mkdir -p /opt/solr &&   wget -nv --output-document=/opt/solr.tgz http://arch
 -	Virtual Size: 212.7 MB (212699944 bytes)
 -	v2 Blob: `sha256:78bc425cdb4d9b03502bb50ee7ffb9671e38d3ce57c8139117412ba9c42acf9c`
 -	v2 Content-Length: 134.9 MB (134929482 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:32:31 GMT
 
 #### `1e5b029b30c9d937d8106313536755a4cea4f8ee2bf75b6cf26153d7a1284954`
 
