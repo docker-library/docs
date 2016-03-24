@@ -572,6 +572,7 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:4332ffb06e4b2a63e6feb5db60fd03c073624e1df32a5dc128bede49f71b3a5e`
 -	v2 Content-Length: 758.0 B
+-	v2 Last-Modified: Tue, 26 Jan 2016 18:03:34 GMT
 
 #### `4913eece27c087d06635d32b98c50464b2f1d17bba86be7d4616738f1cfef0af`
 
@@ -697,6 +698,7 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 701.0 B
 -	v2 Blob: `sha256:4332ffb06e4b2a63e6feb5db60fd03c073624e1df32a5dc128bede49f71b3a5e`
 -	v2 Content-Length: 758.0 B
+-	v2 Last-Modified: Tue, 26 Jan 2016 18:03:34 GMT
 
 #### `4913eece27c087d06635d32b98c50464b2f1d17bba86be7d4616738f1cfef0af`
 
