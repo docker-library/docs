@@ -537,7 +537,6 @@ RUN git config --global user.email 'docker-dummy@example.com'
 -	Virtual Size: 41.0 B
 -	v2 Blob: `sha256:a2c7f52d65e9c8c781f8088f721293bd7d7a200bcb4bb4fe49bb73e4c241e052`
 -	v2 Content-Length: 178.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:27 GMT
 
 #### `39608714dc103314933aece3d7347f28223eb19c01bb5bfd61c031b1ab36d961`
 
@@ -1296,7 +1295,6 @@ RUN git config --global user.email 'docker-dummy@example.com'
 -	Virtual Size: 41.0 B
 -	v2 Blob: `sha256:a2c7f52d65e9c8c781f8088f721293bd7d7a200bcb4bb4fe49bb73e4c241e052`
 -	v2 Content-Length: 178.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:27 GMT
 
 #### `39608714dc103314933aece3d7347f28223eb19c01bb5bfd61c031b1ab36d961`
 
@@ -2055,7 +2053,6 @@ RUN git config --global user.email 'docker-dummy@example.com'
 -	Virtual Size: 41.0 B
 -	v2 Blob: `sha256:a2c7f52d65e9c8c781f8088f721293bd7d7a200bcb4bb4fe49bb73e4c241e052`
 -	v2 Content-Length: 178.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:27 GMT
 
 #### `39608714dc103314933aece3d7347f28223eb19c01bb5bfd61c031b1ab36d961`
 
