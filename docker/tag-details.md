@@ -1492,11 +1492,11 @@ CMD []
 ## `docker:1.10.3-git`
 
 ```console
-$ docker pull library/docker@sha256:fb51d857b370ac8e9311d6a91b4cbfb25cc8abf73f259848a42060d230fcf73d
+$ docker pull library/docker@sha256:8900da7b7aa219ba1c49c247ae2733e324959a0a402295179ed510ae24651fe0
 ```
 
--	Total Virtual Size: 60.2 MB (60182950 bytes)
--	Total v2 Content-Length: 22.2 MB (22156411 bytes)
+-	Total Virtual Size: 60.2 MB (60196060 bytes)
+-	Total v2 Content-Length: 22.2 MB (22157584 bytes)
 
 ### Layers (10)
 
@@ -1618,7 +1618,7 @@ CMD ["sh"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `212f1ad44070af647a58f506640c7a95e6b90c9adc4bdecd5c81dc34eaf5c67b`
+#### `f2c699e00dc07db04966c08f403de4e53bd53dd7c5d1755e9cbb01df6a3274cf`
 
 ```dockerfile
 RUN apk add --no-cache \
@@ -1626,21 +1626,21 @@ RUN apk add --no-cache \
 		openssh-client
 ```
 
--	Created: Mon, 14 Mar 2016 22:48:38 GMT
+-	Created: Wed, 23 Mar 2016 02:38:42 GMT
 -	Parent Layer: `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 -	Docker Version: 1.9.1
--	Virtual Size: 18.6 MB (18608671 bytes)
--	v2 Blob: `sha256:bb54c8a605391abb76fa3a98c6c3812909e8a84ab8c7e09d1d6ce297391ef2ac`
--	v2 Content-Length: 9.0 MB (9047973 bytes)
+-	Virtual Size: 18.6 MB (18621781 bytes)
+-	v2 Blob: `sha256:7d106d516c601807c34cfcb8d5641d34234a3a951b41780915411701ad4e8c0a`
+-	v2 Content-Length: 9.0 MB (9049146 bytes)
 
 ## `docker:1.10-git`
 
 ```console
-$ docker pull library/docker@sha256:cb29bfd393d848a60f269523d16df327ca241a52f36d272b3d4b49bdb2c32693
+$ docker pull library/docker@sha256:e1ee80f4916febad3cb3a329a55a00ac8dcc3bd099c05246698ca7f68bbdb3a2
 ```
 
--	Total Virtual Size: 60.2 MB (60182950 bytes)
--	Total v2 Content-Length: 22.2 MB (22156411 bytes)
+-	Total Virtual Size: 60.2 MB (60196060 bytes)
+-	Total v2 Content-Length: 22.2 MB (22157584 bytes)
 
 ### Layers (10)
 
@@ -1762,7 +1762,7 @@ CMD ["sh"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `212f1ad44070af647a58f506640c7a95e6b90c9adc4bdecd5c81dc34eaf5c67b`
+#### `f2c699e00dc07db04966c08f403de4e53bd53dd7c5d1755e9cbb01df6a3274cf`
 
 ```dockerfile
 RUN apk add --no-cache \
@@ -1770,21 +1770,21 @@ RUN apk add --no-cache \
 		openssh-client
 ```
 
--	Created: Mon, 14 Mar 2016 22:48:38 GMT
+-	Created: Wed, 23 Mar 2016 02:38:42 GMT
 -	Parent Layer: `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 -	Docker Version: 1.9.1
--	Virtual Size: 18.6 MB (18608671 bytes)
--	v2 Blob: `sha256:bb54c8a605391abb76fa3a98c6c3812909e8a84ab8c7e09d1d6ce297391ef2ac`
--	v2 Content-Length: 9.0 MB (9047973 bytes)
+-	Virtual Size: 18.6 MB (18621781 bytes)
+-	v2 Blob: `sha256:7d106d516c601807c34cfcb8d5641d34234a3a951b41780915411701ad4e8c0a`
+-	v2 Content-Length: 9.0 MB (9049146 bytes)
 
 ## `docker:1-git`
 
 ```console
-$ docker pull library/docker@sha256:6a275985c09f33c9d371b1e887cf18253c6103cb3f50a604298a5a7fda2a9ed4
+$ docker pull library/docker@sha256:42573e181cbd07b9963c98fd94be49f729f57b83960deb66558a6a8fc502aca6
 ```
 
--	Total Virtual Size: 60.2 MB (60182950 bytes)
--	Total v2 Content-Length: 22.2 MB (22156411 bytes)
+-	Total Virtual Size: 60.2 MB (60196060 bytes)
+-	Total v2 Content-Length: 22.2 MB (22157584 bytes)
 
 ### Layers (10)
 
@@ -1906,7 +1906,7 @@ CMD ["sh"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `212f1ad44070af647a58f506640c7a95e6b90c9adc4bdecd5c81dc34eaf5c67b`
+#### `f2c699e00dc07db04966c08f403de4e53bd53dd7c5d1755e9cbb01df6a3274cf`
 
 ```dockerfile
 RUN apk add --no-cache \
@@ -1914,21 +1914,21 @@ RUN apk add --no-cache \
 		openssh-client
 ```
 
--	Created: Mon, 14 Mar 2016 22:48:38 GMT
+-	Created: Wed, 23 Mar 2016 02:38:42 GMT
 -	Parent Layer: `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 -	Docker Version: 1.9.1
--	Virtual Size: 18.6 MB (18608671 bytes)
--	v2 Blob: `sha256:bb54c8a605391abb76fa3a98c6c3812909e8a84ab8c7e09d1d6ce297391ef2ac`
--	v2 Content-Length: 9.0 MB (9047973 bytes)
+-	Virtual Size: 18.6 MB (18621781 bytes)
+-	v2 Blob: `sha256:7d106d516c601807c34cfcb8d5641d34234a3a951b41780915411701ad4e8c0a`
+-	v2 Content-Length: 9.0 MB (9049146 bytes)
 
 ## `docker:git`
 
 ```console
-$ docker pull library/docker@sha256:8a560fb23771ea99c5ac57f775972a4fd2d426809f45e14fa5f6461cec749d12
+$ docker pull library/docker@sha256:599743a349987ab1d3e45b0ce190b24b11f11d750685cc6b0a03c17a70f68ad2
 ```
 
--	Total Virtual Size: 60.2 MB (60182950 bytes)
--	Total v2 Content-Length: 22.2 MB (22156411 bytes)
+-	Total Virtual Size: 60.2 MB (60196060 bytes)
+-	Total v2 Content-Length: 22.2 MB (22157584 bytes)
 
 ### Layers (10)
 
@@ -2050,7 +2050,7 @@ CMD ["sh"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `212f1ad44070af647a58f506640c7a95e6b90c9adc4bdecd5c81dc34eaf5c67b`
+#### `f2c699e00dc07db04966c08f403de4e53bd53dd7c5d1755e9cbb01df6a3274cf`
 
 ```dockerfile
 RUN apk add --no-cache \
@@ -2058,12 +2058,12 @@ RUN apk add --no-cache \
 		openssh-client
 ```
 
--	Created: Mon, 14 Mar 2016 22:48:38 GMT
+-	Created: Wed, 23 Mar 2016 02:38:42 GMT
 -	Parent Layer: `28593ea79567977e882b803972a4afc7dcab4c54a0298d839008d15bf8f76daf`
 -	Docker Version: 1.9.1
--	Virtual Size: 18.6 MB (18608671 bytes)
--	v2 Blob: `sha256:bb54c8a605391abb76fa3a98c6c3812909e8a84ab8c7e09d1d6ce297391ef2ac`
--	v2 Content-Length: 9.0 MB (9047973 bytes)
+-	Virtual Size: 18.6 MB (18621781 bytes)
+-	v2 Blob: `sha256:7d106d516c601807c34cfcb8d5641d34234a3a951b41780915411701ad4e8c0a`
+-	v2 Content-Length: 9.0 MB (9049146 bytes)
 
 ## `docker:1.9.1`
 
@@ -2802,11 +2802,11 @@ CMD []
 ## `docker:1.9.1-git`
 
 ```console
-$ docker pull library/docker@sha256:14b880f87207a19fe294926a1350f852979554cd5fc4b22d7498e7483f6eb3d8
+$ docker pull library/docker@sha256:41b9a7d8790a477f31904bb86e43e0edd31bf1134ee0fa81390b5961fbe9dbe1
 ```
 
--	Total Virtual Size: 55.5 MB (55507429 bytes)
--	Total v2 Content-Length: 20.6 MB (20649906 bytes)
+-	Total Virtual Size: 55.5 MB (55520539 bytes)
+-	Total v2 Content-Length: 20.7 MB (20651064 bytes)
 
 ### Layers (10)
 
@@ -2928,7 +2928,7 @@ CMD ["sh"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ad5a202f2e3129e5caf7b90eb96e4c7da97df783f31a462080662e1b93322465`
+#### `00cf32f2d0f1d6746f59a98442c7a0a0732e6398820fe0fbd54cfaa3b1f08787`
 
 ```dockerfile
 RUN apk add --no-cache \
@@ -2936,21 +2936,21 @@ RUN apk add --no-cache \
 		openssh-client
 ```
 
--	Created: Wed, 02 Mar 2016 18:11:58 GMT
+-	Created: Wed, 23 Mar 2016 02:40:14 GMT
 -	Parent Layer: `475604a2e12b485814d8cc088723af35fef927d2bf7b23671dbc7ff8d90da4f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 18.6 MB (18608671 bytes)
--	v2 Blob: `sha256:084fd6836a3dcea1c720ba0c2b4c6f6762118124d83e24404b52d0c968d561ba`
--	v2 Content-Length: 9.0 MB (9047993 bytes)
+-	Virtual Size: 18.6 MB (18621781 bytes)
+-	v2 Blob: `sha256:65418911dcad5de32463c77bd1332f22b37a0b44dfcad00483bd2f7bdf12f4bf`
+-	v2 Content-Length: 9.0 MB (9049151 bytes)
 
 ## `docker:1.9-git`
 
 ```console
-$ docker pull library/docker@sha256:fb2483d28ba9178c0cbd1bd7fcafa812d607852c64a9dbd11d578c87c0a2d9e3
+$ docker pull library/docker@sha256:45b64fe9d3749143554d4976ecff686318e1b8ac8be0da45512ce1ef5a29e40b
 ```
 
--	Total Virtual Size: 55.5 MB (55507429 bytes)
--	Total v2 Content-Length: 20.6 MB (20649906 bytes)
+-	Total Virtual Size: 55.5 MB (55520539 bytes)
+-	Total v2 Content-Length: 20.7 MB (20651064 bytes)
 
 ### Layers (10)
 
@@ -3072,7 +3072,7 @@ CMD ["sh"]
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
 
-#### `ad5a202f2e3129e5caf7b90eb96e4c7da97df783f31a462080662e1b93322465`
+#### `00cf32f2d0f1d6746f59a98442c7a0a0732e6398820fe0fbd54cfaa3b1f08787`
 
 ```dockerfile
 RUN apk add --no-cache \
@@ -3080,9 +3080,9 @@ RUN apk add --no-cache \
 		openssh-client
 ```
 
--	Created: Wed, 02 Mar 2016 18:11:58 GMT
+-	Created: Wed, 23 Mar 2016 02:40:14 GMT
 -	Parent Layer: `475604a2e12b485814d8cc088723af35fef927d2bf7b23671dbc7ff8d90da4f6`
 -	Docker Version: 1.9.1
--	Virtual Size: 18.6 MB (18608671 bytes)
--	v2 Blob: `sha256:084fd6836a3dcea1c720ba0c2b4c6f6762118124d83e24404b52d0c968d561ba`
--	v2 Content-Length: 9.0 MB (9047993 bytes)
+-	Virtual Size: 18.6 MB (18621781 bytes)
+-	v2 Blob: `sha256:65418911dcad5de32463c77bd1332f22b37a0b44dfcad00483bd2f7bdf12f4bf`
+-	v2 Content-Length: 9.0 MB (9049151 bytes)
