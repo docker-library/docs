@@ -312,7 +312,6 @@ RUN set -x \
 -	Virtual Size: 135.7 MB (135742646 bytes)
 -	v2 Blob: `sha256:066f9452c65eff4b87d6609fdca2574aa185c7e65aadf37a93f4045b615ddd87`
 -	v2 Content-Length: 118.0 MB (117994379 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 23:16:38 GMT
 
 #### `f6d34a6c57c34faccf5545e13234259abec2e09d1de507a82129a990f59be133`
 
@@ -671,7 +670,6 @@ RUN set -x \
 -	Virtual Size: 135.7 MB (135742646 bytes)
 -	v2 Blob: `sha256:066f9452c65eff4b87d6609fdca2574aa185c7e65aadf37a93f4045b615ddd87`
 -	v2 Content-Length: 118.0 MB (117994379 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 23:16:38 GMT
 
 #### `f6d34a6c57c34faccf5545e13234259abec2e09d1de507a82129a990f59be133`
 
