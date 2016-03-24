@@ -67,24 +67,6 @@ db:
     MYSQL_ROOT_PASSWORD: example
 ```
 
-```yaml
-version: '2'
-
-services:
-   wordpress:
-      image: wordpress
-      ports:
-         - "8080:80"
-      environment:
-         WORDPRESS_DB_PASSWORD: example
-         MYSQL_PORT_3306_TCP_PROTO: tcp
-         WORDPRESS_DB_HOST: db
-
-   db:
-      image: mariadb
-      environment:
-         MYSQL_ROOT_PASSWORD: example
-```
 
 Run `docker-compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080`.
 
