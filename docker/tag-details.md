@@ -2495,7 +2495,6 @@ RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/di
 -	Virtual Size: 3.7 KB (3702 bytes)
 -	v2 Blob: `sha256:2bf575fb430689d77494a45f77b84f452f91b2082d2b95c75c9cbc2c54638fef`
 -	v2 Content-Length: 1.8 KB (1820 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:26:55 GMT
 
 #### `091b3288b67cbaa19b452bd791d3f8206d93aec042a9dc696ca5999c0af5efac`
 
@@ -2734,7 +2733,6 @@ RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/di
 -	Virtual Size: 3.7 KB (3702 bytes)
 -	v2 Blob: `sha256:2bf575fb430689d77494a45f77b84f452f91b2082d2b95c75c9cbc2c54638fef`
 -	v2 Content-Length: 1.8 KB (1820 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:26:55 GMT
 
 #### `091b3288b67cbaa19b452bd791d3f8206d93aec042a9dc696ca5999c0af5efac`
 
