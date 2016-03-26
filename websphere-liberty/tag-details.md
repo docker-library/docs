@@ -243,6 +243,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -510,6 +511,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -777,6 +779,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1057,6 +1060,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1337,6 +1341,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1645,6 +1650,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -1953,6 +1959,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -2260,6 +2267,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -2567,6 +2575,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -2901,6 +2910,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -3235,6 +3245,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -3569,6 +3580,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
@@ -3903,6 +3915,7 @@ RUN ln -s $WLP_OUTPUT_DIR/defaultServer /output\
 -	Virtual Size: 71.0 B
 -	v2 Blob: `sha256:98c8768992b93612639b6a06973258ebd0616299d2d56901cb8934e887d0a292`
 -	v2 Content-Length: 152.0 B
+-	v2 Last-Modified: Fri, 18 Mar 2016 23:53:17 GMT
 
 #### `9e77190db300bb6acef8b8dacd250239b30c3eb96b2f637644bf05b55c63a463`
 
