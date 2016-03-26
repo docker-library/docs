@@ -116,7 +116,6 @@ ADD file:fd90c90410e0683f0261676429f6ebf83b1c27afb21d1b523f9f7c1326c345b1 in /
 -	Virtual Size: 97.7 MB (97698128 bytes)
 -	v2 Blob: `sha256:be8b775b9629acb710a85f8e9026ea902185d0a8b84f844feea6df6ae07298fd`
 -	v2 Content-Length: 37.9 MB (37884556 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:04:42 GMT
 
 ## `opensuse:leap`
 
@@ -153,7 +152,6 @@ ADD file:fd90c90410e0683f0261676429f6ebf83b1c27afb21d1b523f9f7c1326c345b1 in /
 -	Virtual Size: 97.7 MB (97698128 bytes)
 -	v2 Blob: `sha256:be8b775b9629acb710a85f8e9026ea902185d0a8b84f844feea6df6ae07298fd`
 -	v2 Content-Length: 37.9 MB (37884556 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:04:42 GMT
 
 ## `opensuse:latest`
 
@@ -190,7 +188,6 @@ ADD file:fd90c90410e0683f0261676429f6ebf83b1c27afb21d1b523f9f7c1326c345b1 in /
 -	Virtual Size: 97.7 MB (97698128 bytes)
 -	v2 Blob: `sha256:be8b775b9629acb710a85f8e9026ea902185d0a8b84f844feea6df6ae07298fd`
 -	v2 Content-Length: 37.9 MB (37884556 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:04:42 GMT
 
 ## `opensuse:tumbleweed`
 
@@ -227,7 +224,6 @@ ADD file:136b73c54179d80bb4e4df7cc15d18b67e769289b73d2c3ecdfd36123a87a167 in /
 -	Virtual Size: 97.7 MB (97698128 bytes)
 -	v2 Blob: `sha256:be8b775b9629acb710a85f8e9026ea902185d0a8b84f844feea6df6ae07298fd`
 -	v2 Content-Length: 37.9 MB (37884556 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:04:42 GMT
 
 #### `d196096feb162f9d9bd912cf0c95c279e2032dfc12c8cde31fb907ec731762e3`
 
