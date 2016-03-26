@@ -225,6 +225,7 @@ ADD file:768d95e3ff49ba14458f448dd9c246eb4408e2b488c9174c729320d0a793b723 in /
 -	Virtual Size: 290.6 MB (290633327 bytes)
 -	v2 Blob: `sha256:54d02f21d98a12b408680de2b70be3e51c286d3fecb89dbc354c3640bdfafbc9`
 -	v2 Content-Length: 94.0 MB (93950063 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 23:30:42 GMT
 
 ## `fedora:heisenbug`
 
@@ -261,3 +262,4 @@ ADD file:768d95e3ff49ba14458f448dd9c246eb4408e2b488c9174c729320d0a793b723 in /
 -	Virtual Size: 290.6 MB (290633327 bytes)
 -	v2 Blob: `sha256:54d02f21d98a12b408680de2b70be3e51c286d3fecb89dbc354c3640bdfafbc9`
 -	v2 Content-Length: 94.0 MB (93950063 bytes)
+-	v2 Last-Modified: Wed, 14 Oct 2015 23:30:42 GMT
