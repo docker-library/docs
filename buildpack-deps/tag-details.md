@@ -2077,7 +2077,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 16.8 MB (16847852 bytes)
 -	v2 Blob: `sha256:f44b711b7d8cd5a53fdc271ea4de04ee545e67887079522d776f010c52d4f1f8`
 -	v2 Content-Length: 7.2 MB (7195659 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:21:50 GMT
 
 ## `buildpack-deps:wily-scm`
 
@@ -2169,7 +2168,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 16.8 MB (16847852 bytes)
 -	v2 Blob: `sha256:f44b711b7d8cd5a53fdc271ea4de04ee545e67887079522d776f010c52d4f1f8`
 -	v2 Content-Length: 7.2 MB (7195659 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:21:50 GMT
 
 #### `7a1db02d11c4a90be267f221320ba78edf9031fd66c6e0f1d926df28bd254c80`
 
@@ -2281,7 +2279,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 16.8 MB (16847852 bytes)
 -	v2 Blob: `sha256:f44b711b7d8cd5a53fdc271ea4de04ee545e67887079522d776f010c52d4f1f8`
 -	v2 Content-Length: 7.2 MB (7195659 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:21:50 GMT
 
 #### `7a1db02d11c4a90be267f221320ba78edf9031fd66c6e0f1d926df28bd254c80`
 
