@@ -1075,7 +1075,6 @@ RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /
 -	Virtual Size: 55.0 B
 -	v2 Blob: `sha256:16eea8ab42c7494df532daa64e959aaeae20b3bfa344c1fb3a878652d28a0ab2`
 -	v2 Content-Length: 217.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:08:53 GMT
 
 #### `15959bd10e3dec67969c2a52643edd60837205b5ad45ecc35e7a440731b4f9f8`
 
@@ -1303,7 +1302,6 @@ RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /
 -	Virtual Size: 55.0 B
 -	v2 Blob: `sha256:16eea8ab42c7494df532daa64e959aaeae20b3bfa344c1fb3a878652d28a0ab2`
 -	v2 Content-Length: 217.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:08:53 GMT
 
 #### `15959bd10e3dec67969c2a52643edd60837205b5ad45ecc35e7a440731b4f9f8`
 
@@ -1531,7 +1529,6 @@ RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /
 -	Virtual Size: 55.0 B
 -	v2 Blob: `sha256:16eea8ab42c7494df532daa64e959aaeae20b3bfa344c1fb3a878652d28a0ab2`
 -	v2 Content-Length: 217.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:08:53 GMT
 
 #### `15959bd10e3dec67969c2a52643edd60837205b5ad45ecc35e7a440731b4f9f8`
 
@@ -1759,7 +1756,6 @@ RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /
 -	Virtual Size: 55.0 B
 -	v2 Blob: `sha256:16eea8ab42c7494df532daa64e959aaeae20b3bfa344c1fb3a878652d28a0ab2`
 -	v2 Content-Length: 217.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:08:53 GMT
 
 #### `15959bd10e3dec67969c2a52643edd60837205b5ad45ecc35e7a440731b4f9f8`
 

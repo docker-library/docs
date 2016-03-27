@@ -1469,6 +1469,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 11.7 MB (11693022 bytes)
 -	v2 Blob: `sha256:4d8c6ab7f267d41768a75df02cc8b66cafcd2cb00fb6fcebb9063a88f4511198`
 -	v2 Content-Length: 4.6 MB (4602489 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:20:06 GMT
 
 ## `buildpack-deps:trusty-scm`
 
@@ -1560,6 +1561,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 11.7 MB (11693022 bytes)
 -	v2 Blob: `sha256:4d8c6ab7f267d41768a75df02cc8b66cafcd2cb00fb6fcebb9063a88f4511198`
 -	v2 Content-Length: 4.6 MB (4602489 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:20:06 GMT
 
 #### `80b22ccc991263e139ca0764228303616fcf60a8f7bf344b6835bb90de70c072`
 
@@ -1671,6 +1673,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 11.7 MB (11693022 bytes)
 -	v2 Blob: `sha256:4d8c6ab7f267d41768a75df02cc8b66cafcd2cb00fb6fcebb9063a88f4511198`
 -	v2 Content-Length: 4.6 MB (4602489 bytes)
+-	v2 Last-Modified: Fri, 18 Mar 2016 20:20:06 GMT
 
 #### `80b22ccc991263e139ca0764228303616fcf60a8f7bf344b6835bb90de70c072`
 
