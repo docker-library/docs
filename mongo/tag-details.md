@@ -1622,6 +1622,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 492EAFE8CD016
 -	Virtual Size: 57.9 KB (57938 bytes)
 -	v2 Blob: `sha256:792326f255489bac0218d53a6564574424a29bf988220ff012115eda178f282e`
 -	v2 Content-Length: 29.8 KB (29812 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:59:29 GMT
 
 #### `31e28984f9517b81be2b2fe424218039d02729d46d8a2d93518b2dd56f32079e`
 
@@ -1877,6 +1878,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 492EAFE8CD016
 -	Virtual Size: 57.9 KB (57938 bytes)
 -	v2 Blob: `sha256:792326f255489bac0218d53a6564574424a29bf988220ff012115eda178f282e`
 -	v2 Content-Length: 29.8 KB (29812 bytes)
+-	v2 Last-Modified: Thu, 03 Mar 2016 16:59:29 GMT
 
 #### `31e28984f9517b81be2b2fe424218039d02729d46d8a2d93518b2dd56f32079e`
 
