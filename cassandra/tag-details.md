@@ -2345,7 +2345,6 @@ RUN echo 'deb http://www.apache.org/dist/cassandra/debian 32x main' >> /etc/apt/
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:948e10d8c23b8d8c0ab2bf0c341a712249927646d789e829ecdb4e6950332e6a`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 15:57:30 GMT
 
 #### `b0f3e8703ea47cccd296f94a8647d9026c0f971184386af6056a9387d58973b2`
 
@@ -2591,7 +2590,6 @@ RUN echo 'deb http://www.apache.org/dist/cassandra/debian 32x main' >> /etc/apt/
 -	Virtual Size: 57.0 B
 -	v2 Blob: `sha256:948e10d8c23b8d8c0ab2bf0c341a712249927646d789e829ecdb4e6950332e6a`
 -	v2 Content-Length: 220.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 15:57:30 GMT
 
 #### `b0f3e8703ea47cccd296f94a8647d9026c0f971184386af6056a9387d58973b2`
 
