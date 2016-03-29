@@ -8390,6 +8390,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 51.3 MB (51268767 bytes)
 -	v2 Blob: `sha256:c3cb2ec56346d69853dd0e999f1e074941f7e7a06478b3c9f8abc844f61aa59f`
 -	v2 Content-Length: 11.9 MB (11864591 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:37:10 GMT
 
 ## `drupal:8.1.0-beta1`
 
@@ -8855,6 +8856,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 51.3 MB (51268767 bytes)
 -	v2 Blob: `sha256:c3cb2ec56346d69853dd0e999f1e074941f7e7a06478b3c9f8abc844f61aa59f`
 -	v2 Content-Length: 11.9 MB (11864591 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:37:10 GMT
 
 ## `drupal:8.1.0-apache`
 
@@ -9320,6 +9322,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 51.3 MB (51268767 bytes)
 -	v2 Blob: `sha256:c3cb2ec56346d69853dd0e999f1e074941f7e7a06478b3c9f8abc844f61aa59f`
 -	v2 Content-Length: 11.9 MB (11864591 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:37:10 GMT
 
 ## `drupal:8.1.0`
 
@@ -9785,6 +9788,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 51.3 MB (51268767 bytes)
 -	v2 Blob: `sha256:c3cb2ec56346d69853dd0e999f1e074941f7e7a06478b3c9f8abc844f61aa59f`
 -	v2 Content-Length: 11.9 MB (11864591 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:37:10 GMT
 
 ## `drupal:8.1-apache`
 
@@ -10250,6 +10254,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 51.3 MB (51268767 bytes)
 -	v2 Blob: `sha256:c3cb2ec56346d69853dd0e999f1e074941f7e7a06478b3c9f8abc844f61aa59f`
 -	v2 Content-Length: 11.9 MB (11864591 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:37:10 GMT
 
 ## `drupal:8.1`
 
@@ -10715,6 +10720,7 @@ RUN curl -fSL "http://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar
 -	Virtual Size: 51.3 MB (51268767 bytes)
 -	v2 Blob: `sha256:c3cb2ec56346d69853dd0e999f1e074941f7e7a06478b3c9f8abc844f61aa59f`
 -	v2 Content-Length: 11.9 MB (11864591 bytes)
+-	v2 Last-Modified: Wed, 09 Mar 2016 05:37:10 GMT
 
 ## `drupal:8.1.0-beta1-fpm`
 
