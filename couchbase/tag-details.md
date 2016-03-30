@@ -1953,7 +1953,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:8b78846ef35bb08f663538ad2059b919ad9929fdcfceb66865d905bc60d4236b`
 -	v2 Content-Length: 338.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:31:00 GMT
 
 #### `811bf0f38afbc2b1a93d4ecf3c4f5c23a05e3973d51a0bb73e09e22827fafc29`
 
@@ -2176,7 +2175,6 @@ COPY file:34e32c52f0895191f5207176abf9876bf2bee271ec6128f045d81f53761b200e in /e
 -	Virtual Size: 389.0 B
 -	v2 Blob: `sha256:8b78846ef35bb08f663538ad2059b919ad9929fdcfceb66865d905bc60d4236b`
 -	v2 Content-Length: 338.0 B
--	v2 Last-Modified: Fri, 18 Mar 2016 20:31:00 GMT
 
 #### `811bf0f38afbc2b1a93d4ecf3c4f5c23a05e3973d51a0bb73e09e22827fafc29`
 
@@ -3259,7 +3257,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:18c88ba8b1e66c0da2dea984cc50e11563ceeb1389ce4d91d361410b4230dfa4`
 -	v2 Content-Length: 1.7 KB (1691 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:38:38 GMT
 
 #### `7b82acd804c7383928aa99f1bcdcfe3efa10f061dc2a5e73e0cd468bd3a41bfc`
 
@@ -3497,7 +3494,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 422.9 MB (422873010 bytes)
 -	v2 Blob: `sha256:30a75e7307dc7329b57d2608a8f26adf138ce3cb99d49c5151495526eef0b81a`
 -	v2 Content-Length: 141.5 MB (141463438 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:39:53 GMT
 
 #### `28f926981ed02b2fbc01a8efff815be7ab07167169358cf4c84ec794fa2b3406`
 
@@ -3720,7 +3716,6 @@ RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&\
 -	Virtual Size: 422.9 MB (422873010 bytes)
 -	v2 Blob: `sha256:30a75e7307dc7329b57d2608a8f26adf138ce3cb99d49c5151495526eef0b81a`
 -	v2 Content-Length: 141.5 MB (141463438 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:39:53 GMT
 
 #### `28f926981ed02b2fbc01a8efff815be7ab07167169358cf4c84ec794fa2b3406`
 
@@ -3928,7 +3923,6 @@ RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
 -	Virtual Size: 328.7 KB (328658 bytes)
 -	v2 Blob: `sha256:f96bd630e53f151fcd8a965b0894ed3d2c021eed96895331a379574c1281b6a5`
 -	v2 Content-Length: 1.7 KB (1693 bytes)
--	v2 Last-Modified: Fri, 18 Mar 2016 20:41:37 GMT
 
 #### `18a3a5000f9f8a26e05ed3de3e5d556fbbd3fc9dd0f4cfc987179832e7586d10`
 

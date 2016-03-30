@@ -37,7 +37,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -51,7 +50,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -69,7 +67,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -87,7 +84,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -101,7 +97,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -115,7 +110,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -135,7 +129,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -149,7 +142,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -163,7 +155,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -177,7 +168,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -191,7 +181,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -211,7 +200,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -225,7 +213,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -239,7 +226,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -253,7 +239,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -267,7 +252,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -281,7 +265,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -301,7 +284,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -326,7 +308,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `920dd224534b61c5c47eda45bc0bab29d528db9cacd31cc1cfbebb04b6b27116`
 
@@ -340,7 +321,6 @@ ENV NUXEO_VERSION=8.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39bbf0916f276e7a213d7292eb74fc38907f045ea06425a61e4dca3c5cb46549`
 
@@ -354,7 +334,6 @@ ENV NUXEO_MD5=db578faf5050a56cb6513986b151b2d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a602811a1792a7fdedf8eaa64bbbd5e101d594848d7a62bc396c6f5f2e2fe8b`
 
@@ -368,7 +347,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `748c6ff0c317570082f7974242dc15f4ecab212f6d55a15858702e03e7ce7ae6`
 
@@ -390,7 +368,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 305.5 MB (305457631 bytes)
 -	v2 Blob: `sha256:f03960aa16ff311e7355591109eaea106ccd52eabfc52b540f1411f5e2082917`
 -	v2 Content-Length: 282.4 MB (282388995 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:22:28 GMT
 
 #### `3046579cb44f48cf14943dac109f1c25a4822490c4095572482ef770746315a1`
 
@@ -404,7 +381,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `224e77df64ee806759fd05ec446ffe484a7684ac7d45ffb1bb4bd7ff0ad244f6`
 
@@ -418,7 +394,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45faa89808b04435bb63004d6a6a2cbc6d75d67b1d8e3f64baacfbd69c777756`
 
@@ -432,7 +407,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:6386cad9bcb0a9859f30fee845af525e87bad024d0b13466549973c92bcb49e3`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Wed, 03 Feb 2016 00:35:54 GMT
 
 #### `5012ab527f1514af598e34bc8ea2ba75463128a4636893d992c8cc8491f50433`
 
@@ -446,7 +420,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cfcb8f2ed0cb99dc4841d35f20a9c709879d50969df709c873b9b9f4fcc66dbb`
 
@@ -460,7 +433,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e797f945617c5c4e3b5e418959ce9493bec75c5f29b6df6d48a6b5c6cf99c4a7`
 
@@ -474,7 +446,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:FT`
 
@@ -498,7 +469,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -512,7 +482,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -530,7 +499,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -548,7 +516,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -562,7 +529,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -576,7 +542,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -596,7 +561,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -610,7 +574,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -624,7 +587,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -638,7 +600,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -652,7 +613,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -672,7 +632,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -686,7 +645,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -700,7 +658,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -714,7 +671,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -728,7 +684,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -742,7 +697,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -762,7 +716,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -787,7 +740,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `920dd224534b61c5c47eda45bc0bab29d528db9cacd31cc1cfbebb04b6b27116`
 
@@ -801,7 +753,6 @@ ENV NUXEO_VERSION=8.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39bbf0916f276e7a213d7292eb74fc38907f045ea06425a61e4dca3c5cb46549`
 
@@ -815,7 +766,6 @@ ENV NUXEO_MD5=db578faf5050a56cb6513986b151b2d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a602811a1792a7fdedf8eaa64bbbd5e101d594848d7a62bc396c6f5f2e2fe8b`
 
@@ -829,7 +779,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `748c6ff0c317570082f7974242dc15f4ecab212f6d55a15858702e03e7ce7ae6`
 
@@ -851,7 +800,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 305.5 MB (305457631 bytes)
 -	v2 Blob: `sha256:f03960aa16ff311e7355591109eaea106ccd52eabfc52b540f1411f5e2082917`
 -	v2 Content-Length: 282.4 MB (282388995 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:22:28 GMT
 
 #### `3046579cb44f48cf14943dac109f1c25a4822490c4095572482ef770746315a1`
 
@@ -865,7 +813,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `224e77df64ee806759fd05ec446ffe484a7684ac7d45ffb1bb4bd7ff0ad244f6`
 
@@ -879,7 +826,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45faa89808b04435bb63004d6a6a2cbc6d75d67b1d8e3f64baacfbd69c777756`
 
@@ -893,7 +839,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:6386cad9bcb0a9859f30fee845af525e87bad024d0b13466549973c92bcb49e3`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Wed, 03 Feb 2016 00:35:54 GMT
 
 #### `5012ab527f1514af598e34bc8ea2ba75463128a4636893d992c8cc8491f50433`
 
@@ -907,7 +852,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cfcb8f2ed0cb99dc4841d35f20a9c709879d50969df709c873b9b9f4fcc66dbb`
 
@@ -921,7 +865,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e797f945617c5c4e3b5e418959ce9493bec75c5f29b6df6d48a6b5c6cf99c4a7`
 
@@ -935,7 +878,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:8`
 
@@ -959,7 +901,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -973,7 +914,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -991,7 +931,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1009,7 +948,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -1023,7 +961,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -1037,7 +974,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -1057,7 +993,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1071,7 +1006,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -1085,7 +1019,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -1099,7 +1032,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -1113,7 +1045,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -1133,7 +1064,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -1147,7 +1077,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -1161,7 +1090,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -1175,7 +1103,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -1189,7 +1116,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -1203,7 +1129,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -1223,7 +1148,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -1248,7 +1172,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `920dd224534b61c5c47eda45bc0bab29d528db9cacd31cc1cfbebb04b6b27116`
 
@@ -1262,7 +1185,6 @@ ENV NUXEO_VERSION=8.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39bbf0916f276e7a213d7292eb74fc38907f045ea06425a61e4dca3c5cb46549`
 
@@ -1276,7 +1198,6 @@ ENV NUXEO_MD5=db578faf5050a56cb6513986b151b2d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a602811a1792a7fdedf8eaa64bbbd5e101d594848d7a62bc396c6f5f2e2fe8b`
 
@@ -1290,7 +1211,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `748c6ff0c317570082f7974242dc15f4ecab212f6d55a15858702e03e7ce7ae6`
 
@@ -1312,7 +1232,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 305.5 MB (305457631 bytes)
 -	v2 Blob: `sha256:f03960aa16ff311e7355591109eaea106ccd52eabfc52b540f1411f5e2082917`
 -	v2 Content-Length: 282.4 MB (282388995 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:22:28 GMT
 
 #### `3046579cb44f48cf14943dac109f1c25a4822490c4095572482ef770746315a1`
 
@@ -1326,7 +1245,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `224e77df64ee806759fd05ec446ffe484a7684ac7d45ffb1bb4bd7ff0ad244f6`
 
@@ -1340,7 +1258,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45faa89808b04435bb63004d6a6a2cbc6d75d67b1d8e3f64baacfbd69c777756`
 
@@ -1354,7 +1271,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:6386cad9bcb0a9859f30fee845af525e87bad024d0b13466549973c92bcb49e3`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Wed, 03 Feb 2016 00:35:54 GMT
 
 #### `5012ab527f1514af598e34bc8ea2ba75463128a4636893d992c8cc8491f50433`
 
@@ -1368,7 +1284,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cfcb8f2ed0cb99dc4841d35f20a9c709879d50969df709c873b9b9f4fcc66dbb`
 
@@ -1382,7 +1297,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e797f945617c5c4e3b5e418959ce9493bec75c5f29b6df6d48a6b5c6cf99c4a7`
 
@@ -1396,7 +1310,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:8.1`
 
@@ -1420,7 +1333,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1434,7 +1346,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1452,7 +1363,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1470,7 +1380,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -1484,7 +1393,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -1498,7 +1406,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -1518,7 +1425,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1532,7 +1438,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -1546,7 +1451,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -1560,7 +1464,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -1574,7 +1477,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -1594,7 +1496,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -1608,7 +1509,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -1622,7 +1522,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -1636,7 +1535,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -1650,7 +1548,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -1664,7 +1561,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -1684,7 +1580,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -1709,7 +1604,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `920dd224534b61c5c47eda45bc0bab29d528db9cacd31cc1cfbebb04b6b27116`
 
@@ -1723,7 +1617,6 @@ ENV NUXEO_VERSION=8.1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `39bbf0916f276e7a213d7292eb74fc38907f045ea06425a61e4dca3c5cb46549`
 
@@ -1737,7 +1630,6 @@ ENV NUXEO_MD5=db578faf5050a56cb6513986b151b2d8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4a602811a1792a7fdedf8eaa64bbbd5e101d594848d7a62bc396c6f5f2e2fe8b`
 
@@ -1751,7 +1643,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `748c6ff0c317570082f7974242dc15f4ecab212f6d55a15858702e03e7ce7ae6`
 
@@ -1773,7 +1664,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 305.5 MB (305457631 bytes)
 -	v2 Blob: `sha256:f03960aa16ff311e7355591109eaea106ccd52eabfc52b540f1411f5e2082917`
 -	v2 Content-Length: 282.4 MB (282388995 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:22:28 GMT
 
 #### `3046579cb44f48cf14943dac109f1c25a4822490c4095572482ef770746315a1`
 
@@ -1787,7 +1677,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `224e77df64ee806759fd05ec446ffe484a7684ac7d45ffb1bb4bd7ff0ad244f6`
 
@@ -1801,7 +1690,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `45faa89808b04435bb63004d6a6a2cbc6d75d67b1d8e3f64baacfbd69c777756`
 
@@ -1815,7 +1703,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:6386cad9bcb0a9859f30fee845af525e87bad024d0b13466549973c92bcb49e3`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Wed, 03 Feb 2016 00:35:54 GMT
 
 #### `5012ab527f1514af598e34bc8ea2ba75463128a4636893d992c8cc8491f50433`
 
@@ -1829,7 +1716,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cfcb8f2ed0cb99dc4841d35f20a9c709879d50969df709c873b9b9f4fcc66dbb`
 
@@ -1843,7 +1729,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e797f945617c5c4e3b5e418959ce9493bec75c5f29b6df6d48a6b5c6cf99c4a7`
 
@@ -1857,7 +1742,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:LTS-2015`
 
@@ -1881,7 +1765,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1895,7 +1778,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1913,7 +1795,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -1931,7 +1812,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -1945,7 +1825,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -1959,7 +1838,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -1979,7 +1857,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -1993,7 +1870,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2007,7 +1883,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2021,7 +1896,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2035,7 +1909,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2055,7 +1928,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2069,7 +1941,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -2083,7 +1954,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -2097,7 +1967,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -2111,7 +1980,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -2125,7 +1993,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -2145,7 +2012,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -2170,7 +2036,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `1000cfabd060e1fd41388b2fec79ebc49bb17c030ca602599ac566b6722ea735`
 
@@ -2184,7 +2049,6 @@ ENV NUXEO_VERSION=7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aeed634dd81d695d9032ade3652c13b3606916e6d9d067dd96d6bf8e845bde98`
 
@@ -2198,7 +2062,6 @@ ENV NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3388eb2168683edd7e08dfbfee29a95541d953dd6e1f29be107fe4b30b2ce21a`
 
@@ -2212,7 +2075,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f11b056713386e40c9b31ccfd20c7b03d8a3ce157d88e31a75f2058b4dadb222`
 
@@ -2233,7 +2095,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 303.4 MB (303396997 bytes)
 -	v2 Blob: `sha256:b8bdd0c73ac392ffbab539c0d510eb8347f9df4801e5df781df83c085103e689`
 -	v2 Content-Length: 280.3 MB (280344558 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:27:35 GMT
 
 #### `4bf27825c91a86390902dfbdbe1e64ce67c89c0566dd9f96ff03f64d9be671db`
 
@@ -2247,7 +2108,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9eae1b63a64a951da0b79191d13d6315c169af652a979e2cc7ff5c0425a741b1`
 
@@ -2261,7 +2121,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e07d5bb05ee24d7b8fd034cc381128f34282e7694ca1092cb8d76a5740c38e81`
 
@@ -2275,7 +2134,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `10f88f7f6094fa6e47e3a62d3296f518c97e6703466fd4d2630dbd66c4dd45db`
 
@@ -2289,7 +2147,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `db7853d8d2243233da409a5bc0802facf2e9fb6435f1abc8f9e4632f9f5bc08d`
 
@@ -2303,7 +2160,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8725e0b491859f0a53911ed9134197b5a751a1f8b72a2562b80d880fa584cb50`
 
@@ -2317,7 +2173,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:LTS`
 
@@ -2341,7 +2196,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2355,7 +2209,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2373,7 +2226,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2391,7 +2243,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2405,7 +2256,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2419,7 +2269,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2439,7 +2288,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2453,7 +2301,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2467,7 +2314,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2481,7 +2327,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2495,7 +2340,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2515,7 +2359,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2529,7 +2372,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -2543,7 +2385,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -2557,7 +2398,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -2571,7 +2411,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -2585,7 +2424,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -2605,7 +2443,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -2630,7 +2467,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `1000cfabd060e1fd41388b2fec79ebc49bb17c030ca602599ac566b6722ea735`
 
@@ -2644,7 +2480,6 @@ ENV NUXEO_VERSION=7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aeed634dd81d695d9032ade3652c13b3606916e6d9d067dd96d6bf8e845bde98`
 
@@ -2658,7 +2493,6 @@ ENV NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3388eb2168683edd7e08dfbfee29a95541d953dd6e1f29be107fe4b30b2ce21a`
 
@@ -2672,7 +2506,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f11b056713386e40c9b31ccfd20c7b03d8a3ce157d88e31a75f2058b4dadb222`
 
@@ -2693,7 +2526,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 303.4 MB (303396997 bytes)
 -	v2 Blob: `sha256:b8bdd0c73ac392ffbab539c0d510eb8347f9df4801e5df781df83c085103e689`
 -	v2 Content-Length: 280.3 MB (280344558 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:27:35 GMT
 
 #### `4bf27825c91a86390902dfbdbe1e64ce67c89c0566dd9f96ff03f64d9be671db`
 
@@ -2707,7 +2539,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9eae1b63a64a951da0b79191d13d6315c169af652a979e2cc7ff5c0425a741b1`
 
@@ -2721,7 +2552,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e07d5bb05ee24d7b8fd034cc381128f34282e7694ca1092cb8d76a5740c38e81`
 
@@ -2735,7 +2565,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `10f88f7f6094fa6e47e3a62d3296f518c97e6703466fd4d2630dbd66c4dd45db`
 
@@ -2749,7 +2578,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `db7853d8d2243233da409a5bc0802facf2e9fb6435f1abc8f9e4632f9f5bc08d`
 
@@ -2763,7 +2591,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8725e0b491859f0a53911ed9134197b5a751a1f8b72a2562b80d880fa584cb50`
 
@@ -2777,7 +2604,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:7.10`
 
@@ -2801,7 +2627,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2815,7 +2640,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2833,7 +2657,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -2851,7 +2674,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -2865,7 +2687,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -2879,7 +2700,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -2899,7 +2719,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -2913,7 +2732,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -2927,7 +2745,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -2941,7 +2758,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -2955,7 +2771,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -2975,7 +2790,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -2989,7 +2803,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -3003,7 +2816,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -3017,7 +2829,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -3031,7 +2842,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -3045,7 +2855,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -3065,7 +2874,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -3090,7 +2898,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `1000cfabd060e1fd41388b2fec79ebc49bb17c030ca602599ac566b6722ea735`
 
@@ -3104,7 +2911,6 @@ ENV NUXEO_VERSION=7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aeed634dd81d695d9032ade3652c13b3606916e6d9d067dd96d6bf8e845bde98`
 
@@ -3118,7 +2924,6 @@ ENV NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3388eb2168683edd7e08dfbfee29a95541d953dd6e1f29be107fe4b30b2ce21a`
 
@@ -3132,7 +2937,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f11b056713386e40c9b31ccfd20c7b03d8a3ce157d88e31a75f2058b4dadb222`
 
@@ -3153,7 +2957,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 303.4 MB (303396997 bytes)
 -	v2 Blob: `sha256:b8bdd0c73ac392ffbab539c0d510eb8347f9df4801e5df781df83c085103e689`
 -	v2 Content-Length: 280.3 MB (280344558 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:27:35 GMT
 
 #### `4bf27825c91a86390902dfbdbe1e64ce67c89c0566dd9f96ff03f64d9be671db`
 
@@ -3167,7 +2970,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9eae1b63a64a951da0b79191d13d6315c169af652a979e2cc7ff5c0425a741b1`
 
@@ -3181,7 +2983,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e07d5bb05ee24d7b8fd034cc381128f34282e7694ca1092cb8d76a5740c38e81`
 
@@ -3195,7 +2996,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `10f88f7f6094fa6e47e3a62d3296f518c97e6703466fd4d2630dbd66c4dd45db`
 
@@ -3209,7 +3009,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `db7853d8d2243233da409a5bc0802facf2e9fb6435f1abc8f9e4632f9f5bc08d`
 
@@ -3223,7 +3022,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8725e0b491859f0a53911ed9134197b5a751a1f8b72a2562b80d880fa584cb50`
 
@@ -3237,7 +3035,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:7`
 
@@ -3261,7 +3058,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3275,7 +3071,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3293,7 +3088,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3311,7 +3105,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -3325,7 +3118,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -3339,7 +3131,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -3359,7 +3150,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -3373,7 +3163,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -3387,7 +3176,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -3401,7 +3189,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -3415,7 +3202,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -3435,7 +3221,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3449,7 +3234,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -3463,7 +3247,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -3477,7 +3260,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -3491,7 +3273,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -3505,7 +3286,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -3525,7 +3305,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -3550,7 +3329,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `1000cfabd060e1fd41388b2fec79ebc49bb17c030ca602599ac566b6722ea735`
 
@@ -3564,7 +3342,6 @@ ENV NUXEO_VERSION=7.10
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aeed634dd81d695d9032ade3652c13b3606916e6d9d067dd96d6bf8e845bde98`
 
@@ -3578,7 +3355,6 @@ ENV NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3388eb2168683edd7e08dfbfee29a95541d953dd6e1f29be107fe4b30b2ce21a`
 
@@ -3592,7 +3368,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f11b056713386e40c9b31ccfd20c7b03d8a3ce157d88e31a75f2058b4dadb222`
 
@@ -3613,7 +3388,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 303.4 MB (303396997 bytes)
 -	v2 Blob: `sha256:b8bdd0c73ac392ffbab539c0d510eb8347f9df4801e5df781df83c085103e689`
 -	v2 Content-Length: 280.3 MB (280344558 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:27:35 GMT
 
 #### `4bf27825c91a86390902dfbdbe1e64ce67c89c0566dd9f96ff03f64d9be671db`
 
@@ -3627,7 +3401,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9eae1b63a64a951da0b79191d13d6315c169af652a979e2cc7ff5c0425a741b1`
 
@@ -3641,7 +3414,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e07d5bb05ee24d7b8fd034cc381128f34282e7694ca1092cb8d76a5740c38e81`
 
@@ -3655,7 +3427,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `10f88f7f6094fa6e47e3a62d3296f518c97e6703466fd4d2630dbd66c4dd45db`
 
@@ -3669,7 +3440,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `db7853d8d2243233da409a5bc0802facf2e9fb6435f1abc8f9e4632f9f5bc08d`
 
@@ -3683,7 +3453,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8725e0b491859f0a53911ed9134197b5a751a1f8b72a2562b80d880fa584cb50`
 
@@ -3697,7 +3466,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:7.4`
 
@@ -3721,7 +3489,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3735,7 +3502,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3753,7 +3519,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -3771,7 +3536,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -3785,7 +3549,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -3799,7 +3562,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -3819,7 +3581,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -3833,7 +3594,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -3847,7 +3607,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -3861,7 +3620,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -3875,7 +3633,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -3895,7 +3652,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -3909,7 +3665,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -3923,7 +3678,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -3937,7 +3691,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -3951,7 +3704,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -3965,7 +3717,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -3985,7 +3736,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -4010,7 +3760,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `b00055072c702685a29bf6ef0bfd73ef628d22652a1f0f886a26f8bf8420c3a3`
 
@@ -4024,7 +3773,6 @@ ENV NUXEO_VERSION=7.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `338fc0b67bb2debbca378aa61ce51373c5c3dd9ba220e277dab4c00a9ce91584`
 
@@ -4038,7 +3786,6 @@ ENV NUXEO_MD5=2141da25bb5022250c8c99f0d19632e3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `38f15ebdcce6e10946dd4857ef64975f2df60dc4da6f62c78176d130e1996919`
 
@@ -4052,7 +3799,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ddca271be039c1ed61af7e90c04e0346acccfb9f24e340447180d22f2d73965d`
 
@@ -4073,7 +3819,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 255.9 MB (255873737 bytes)
 -	v2 Blob: `sha256:b3171b688767832124bf5cca552302b5e51a6f02ed5347925ee7030e2a16e163`
 -	v2 Content-Length: 233.2 MB (233220004 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:29:22 GMT
 
 #### `4901e28210d10b461fc4a1d346ca0709c016846b04b04f8baa34dfa27a953671`
 
@@ -4087,7 +3832,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6e72f81c2593ecb031764e5c00603fcc545205f27a3ecb994520345aed67f67f`
 
@@ -4101,7 +3845,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c96ecde732ce0b6f72d6e01af0bfaa2b907b1423ab41079ea2f6f4f728599a0`
 
@@ -4115,7 +3858,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `bc6896899f2e91dd766608428577ef89faed64ce790358a58cfb84c219d0326e`
 
@@ -4129,7 +3871,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9f134d5337ee249f32bdf16ed98ebb412c8456b9d960c421a582f987605e5c59`
 
@@ -4143,7 +3884,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6f147070e918acdebd97fd5bc47a0a865777cb6e6139b7eb52988abbc6034c2c`
 
@@ -4157,7 +3897,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:LTS-2014`
 
@@ -4181,7 +3920,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4195,7 +3933,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4213,7 +3950,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4231,7 +3967,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -4245,7 +3980,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -4259,7 +3993,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -4279,7 +4012,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -4293,7 +4025,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -4307,7 +4038,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -4321,7 +4051,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -4335,7 +4064,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -4355,7 +4083,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -4369,7 +4096,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -4383,7 +4109,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -4397,7 +4122,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -4411,7 +4135,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -4425,7 +4148,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -4445,7 +4167,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -4470,7 +4191,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `17f35ca5fa6d4ebb56861371210e669f2504a44c3267e4123f2c5075be693675`
 
@@ -4484,7 +4204,6 @@ ENV NUXEO_VERSION=6.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f4b2cff60cf20306470e0f2ecd10286567cf6e96d24de4d49f841e2519e01b7a`
 
@@ -4498,7 +4217,6 @@ ENV NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a58d920d46bd385241365a2e0beabb35a0a42595ded35ddc0cc304360e6fc84`
 
@@ -4512,7 +4230,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `277eb7d66e3ed42a8e6765e0a3d43b6fc97388f3f70fad6d081633a41cd4f1fe`
 
@@ -4533,7 +4250,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 206.2 MB (206180840 bytes)
 -	v2 Blob: `sha256:9e182c2f015db4564a65fde5f2846910bf9658fad3b85081c1ccaeef60b81dff`
 -	v2 Content-Length: 187.1 MB (187101562 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:30:32 GMT
 
 #### `bfe63df247c002dd1c1c5849a92c3d0a0e626809b711d7242c7c664e68ae82c5`
 
@@ -4547,7 +4263,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d9eee855c8a661d5edd2e0ff3947643c74987c028352986e91667f800599a4d`
 
@@ -4561,7 +4276,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `16089ebed2b9ac2815799258b5f60b3d5c5d282c3063940442129594d8ee5dac`
 
@@ -4575,7 +4289,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `d3c1d597904698843de2a8091fff0afa4d940fc22cdcdb18e477ac1f0717787e`
 
@@ -4589,7 +4302,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75617b8c0be61d2e20d408cb7782287b5a7f8aabc4be8f6653ce66c573fdec56`
 
@@ -4603,7 +4315,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c359f58a04027f4ff7a8690e50a3de9f3c850476129efd3a56a305d9206045f`
 
@@ -4617,7 +4328,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:6`
 
@@ -4641,7 +4351,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -4655,7 +4364,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -4673,7 +4381,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -4691,7 +4398,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -4705,7 +4411,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -4719,7 +4424,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -4739,7 +4443,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -4753,7 +4456,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -4767,7 +4469,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -4781,7 +4482,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -4795,7 +4495,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -4815,7 +4514,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -4829,7 +4527,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -4843,7 +4540,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -4857,7 +4553,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -4871,7 +4566,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -4885,7 +4579,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -4905,7 +4598,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -4930,7 +4622,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `17f35ca5fa6d4ebb56861371210e669f2504a44c3267e4123f2c5075be693675`
 
@@ -4944,7 +4635,6 @@ ENV NUXEO_VERSION=6.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f4b2cff60cf20306470e0f2ecd10286567cf6e96d24de4d49f841e2519e01b7a`
 
@@ -4958,7 +4648,6 @@ ENV NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a58d920d46bd385241365a2e0beabb35a0a42595ded35ddc0cc304360e6fc84`
 
@@ -4972,7 +4661,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `277eb7d66e3ed42a8e6765e0a3d43b6fc97388f3f70fad6d081633a41cd4f1fe`
 
@@ -4993,7 +4681,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 206.2 MB (206180840 bytes)
 -	v2 Blob: `sha256:9e182c2f015db4564a65fde5f2846910bf9658fad3b85081c1ccaeef60b81dff`
 -	v2 Content-Length: 187.1 MB (187101562 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:30:32 GMT
 
 #### `bfe63df247c002dd1c1c5849a92c3d0a0e626809b711d7242c7c664e68ae82c5`
 
@@ -5007,7 +4694,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d9eee855c8a661d5edd2e0ff3947643c74987c028352986e91667f800599a4d`
 
@@ -5021,7 +4707,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `16089ebed2b9ac2815799258b5f60b3d5c5d282c3063940442129594d8ee5dac`
 
@@ -5035,7 +4720,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `d3c1d597904698843de2a8091fff0afa4d940fc22cdcdb18e477ac1f0717787e`
 
@@ -5049,7 +4733,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75617b8c0be61d2e20d408cb7782287b5a7f8aabc4be8f6653ce66c573fdec56`
 
@@ -5063,7 +4746,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c359f58a04027f4ff7a8690e50a3de9f3c850476129efd3a56a305d9206045f`
 
@@ -5077,7 +4759,6 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `nuxeo:6.0`
 
@@ -5101,7 +4782,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -5115,7 +4795,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -5133,7 +4812,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `76cece9afa1bfa1407dc00433c1e38c4697133bd2fd4647e2eaace716d79b754`
 
@@ -5151,7 +4829,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 1.2 MB (1176730 bytes)
 -	v2 Blob: `sha256:e35d3d8894c31648ef2ace44661ec550590e356278a32f546307d8458399fa13`
 -	v2 Content-Length: 566.8 KB (566816 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:44:10 GMT
 
 #### `f950ceac4c03a4e82b9919f2fe9bfb34a4f825ecd4bb47c763ca371b7112a6c1`
 
@@ -5165,7 +4842,6 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
 -	Virtual Size: 61.0 B
 -	v2 Blob: `sha256:bf70d99a850df7dce27628cae41598c8642ac964ed065f5d5d62d8fb6adb0820`
 -	v2 Content-Length: 219.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:22 GMT
 
 #### `b21d5f606c9c83572cf951234b054c10d676d6e233da0b9da08cc39f5ea65b8e`
 
@@ -5179,7 +4855,6 @@ ENV LANG=C.UTF-8
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `492bd563237a275ee79e3bca36168d41b571cf5f87f48124110b531b839de5c8`
 
@@ -5199,7 +4874,6 @@ RUN { \
 -	Virtual Size: 87.0 B
 -	v2 Blob: `sha256:ca03e61f6c0f897b6c63e27c14415effb10edebaceff18b0c7e7f2e1ea08ac9c`
 -	v2 Content-Length: 241.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:17 GMT
 
 #### `489bf36940aacbe79b36a0d4cd8bb67891276e15f869e01f45b0c668e9acc0d2`
 
@@ -5213,7 +4887,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9313b0c00d3e985e3f46ed77438ed66a9cf57bfc9b276d309bbe82adaa1e8926`
 
@@ -5227,7 +4900,6 @@ ENV JAVA_VERSION=8u72
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb7b0898379d3cadf1257a357faf6128c8ce9cd1b01f07902ff0aa5b61ad4ea`
 
@@ -5241,7 +4913,6 @@ ENV JAVA_DEBIAN_VERSION=8u72-b15-1~bpo8+1
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2886da23ffc74932021568c9d3b2e9fd68e48ee66e7cfa66bc2c11e941a1845c`
 
@@ -5255,7 +4926,6 @@ ENV CA_CERTIFICATES_JAVA_VERSION=20140324
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `35b02001218b98462824f45087a50354f8a1fb4777b643424151ac9efa6087d1`
 
@@ -5275,7 +4945,6 @@ RUN set -x \
 -	Virtual Size: 140.0 MB (140011005 bytes)
 -	v2 Blob: `sha256:44d10fb76b76aee0f4f17a9a4e979131496f9c109defb358452a0c77cfa8a2ad`
 -	v2 Content-Length: 53.3 MB (53340644 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:48:02 GMT
 
 #### `e16121a2089f0b55beeb5e651014d45b2bad9c08d00eb1cb3c5e395effca7f0b`
 
@@ -5289,7 +4958,6 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Virtual Size: 418.2 KB (418216 bytes)
 -	v2 Blob: `sha256:5db0a739f918ae923488cca7f96487a64d31a57a5c40eb2e9ab49ecd042d5acb`
 -	v2 Content-Length: 284.3 KB (284334 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 17:47:46 GMT
 
 #### `731d9e2fe881d4a7ad9c5d7161e3f226aa8ea5dfa54c2e1b41a473c7ba388215`
 
@@ -5303,7 +4971,6 @@ MAINTAINER Nuxeo <packagers@nuxeo.com>
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7d618f8fa22041922a6b912da46c316d47b03567ca2cd3ec064bf91be402d2e7`
 
@@ -5317,7 +4984,6 @@ ENV NUXEO_USER=nuxeo
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `62cd7b77ef3d261b1be4e025870bd4fc2a2197541455865481ca2df027868f3a`
 
@@ -5331,7 +4997,6 @@ RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
 -	Virtual Size: 335.4 KB (335434 bytes)
 -	v2 Blob: `sha256:d2ff0720680ad6a94fceebf519ddba597c391c3e0c00016013b0ab4169269412`
 -	v2 Content-Length: 4.4 KB (4400 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:21 GMT
 
 #### `2023f0df4db1d8f2814ad4c646fbb4c83c60630ab191471f0e3570db90c0357b`
 
@@ -5345,7 +5010,6 @@ RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364
 -	Virtual Size: 125.8 KB (125776 bytes)
 -	v2 Blob: `sha256:3c01edbb89933be5c58053a5bbeba507dc0dbc0ac851dd6108c37d50ba611a48`
 -	v2 Content-Length: 114.7 KB (114678 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:17 GMT
 
 #### `67c381af9d4d4cbfe09e9d78f0b9f8225162e7bd36c325abed504b00091eb391`
 
@@ -5365,7 +5029,6 @@ RUN arch="$(dpkg --print-architecture)" \
 -	Virtual Size: 2.3 MB (2267488 bytes)
 -	v2 Blob: `sha256:3976153253e402f66cb1220e86cc2a448a39a3fbb0598601e3650b865796abba`
 -	v2 Content-Length: 654.4 KB (654433 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:25:14 GMT
 
 #### `f5cb5fb2bab9875eac679de97d355065aac628844554712adff1181e7602ecf8`
 
@@ -5390,7 +5053,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
 -	Virtual Size: 617.8 MB (617829679 bytes)
 -	v2 Blob: `sha256:01ac2c041f1e6d1a88aeb6244b87509e5ad793264accf0b19bf2e8be324aa258`
 -	v2 Content-Length: 229.9 MB (229859775 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:24:45 GMT
 
 #### `17f35ca5fa6d4ebb56861371210e669f2504a44c3267e4123f2c5075be693675`
 
@@ -5404,7 +5066,6 @@ ENV NUXEO_VERSION=6.0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f4b2cff60cf20306470e0f2ecd10286567cf6e96d24de4d49f841e2519e01b7a`
 
@@ -5418,7 +5079,6 @@ ENV NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7a58d920d46bd385241365a2e0beabb35a0a42595ded35ddc0cc304360e6fc84`
 
@@ -5432,7 +5092,6 @@ ENV NUXEO_HOME=/opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `277eb7d66e3ed42a8e6765e0a3d43b6fc97388f3f70fad6d081633a41cd4f1fe`
 
@@ -5453,7 +5112,6 @@ RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VE
 -	Virtual Size: 206.2 MB (206180840 bytes)
 -	v2 Blob: `sha256:9e182c2f015db4564a65fde5f2846910bf9658fad3b85081c1ccaeef60b81dff`
 -	v2 Content-Length: 187.1 MB (187101562 bytes)
--	v2 Last-Modified: Tue, 15 Mar 2016 23:30:32 GMT
 
 #### `bfe63df247c002dd1c1c5849a92c3d0a0e626809b711d7242c7c664e68ae82c5`
 
@@ -5467,7 +5125,6 @@ ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2d9eee855c8a661d5edd2e0ff3947643c74987c028352986e91667f800599a4d`
 
@@ -5481,7 +5138,6 @@ WORKDIR /opt/nuxeo/server
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `16089ebed2b9ac2815799258b5f60b3d5c5d282c3063940442129594d8ee5dac`
 
@@ -5495,7 +5151,6 @@ COPY file:e21b54bc3e5f573bd7112168c214654e583c4bd9231b508b72f53098405b8360 in /
 -	Virtual Size: 3.3 KB (3315 bytes)
 -	v2 Blob: `sha256:e6bde7029844a35741ce7d52fadeadc2d4b389fefb0d4ed52587879da4b405b8`
 -	v2 Content-Length: 1.1 KB (1118 bytes)
--	v2 Last-Modified: Thu, 24 Dec 2015 15:42:15 GMT
 
 #### `d3c1d597904698843de2a8091fff0afa4d940fc22cdcdb18e477ac1f0717787e`
 
@@ -5509,7 +5164,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75617b8c0be61d2e20d408cb7782287b5a7f8aabc4be8f6653ce66c573fdec56`
 
@@ -5523,7 +5177,6 @@ EXPOSE 8080/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5c359f58a04027f4ff7a8690e50a3de9f3c850476129efd3a56a305d9206045f`
 
@@ -5537,4 +5190,3 @@ CMD ["nuxeoctl" "console"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

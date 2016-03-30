@@ -49,7 +49,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -63,7 +62,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -81,7 +79,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -102,7 +99,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -121,7 +117,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `20f66cb424920240e7019d0f3624722fb27cec0e3ea9bcdda625bc828f3aff0e`
 
@@ -135,7 +130,6 @@ ENV GOLANG_VERSION=1.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf2a94067a1226b0b55ef7e06690e62d3008e649e29846456dec8cf7852dfb40`
 
@@ -149,7 +143,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6b2c3933dba67f73bb3b7fc92b505d26779619b0bef5ad791a3e4e4a6381ddf`
 
@@ -163,7 +156,6 @@ ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bf0ad0f3107f9cda81ca351eebd0a0a3d4e15a94e43ab3c5d9c079d46ce755a4`
 
@@ -180,7 +172,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 299.1 MB (299141372 bytes)
 -	v2 Blob: `sha256:c1d6901e915e12e947b4c90d9121b1ce4eda351a763b0c8f0193e54c7b945e50`
 -	v2 Content-Length: 80.1 MB (80148866 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:21 GMT
 
 #### `0009342c689e675b91da911aeabbddcbac0bca16bd9da0f3b49ee247a61ceda3`
 
@@ -194,7 +185,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32f2b038998c72e607cbc46c40c8bd4985257a4d40d90ac40a10ecfdf281537`
 
@@ -208,7 +198,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `47fd1012b9725e5ac3f7b7da0a4a323a2abf94806e68d1fd7df99b20fa8c0223`
 
@@ -222,7 +211,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:13987d52980997517bb9bdddb4b67ad0f5124ea1a38fbeeb4b70f302d0b94137`
 -	v2 Content-Length: 120.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:46:42 GMT
 
 #### `72f92fb217f74a38fa6011bee2c8785d37dfb8e7559e71ab8c11f10d80fc50a4`
 
@@ -236,7 +224,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33d0c2a12e7ffc0a937289913a206155d9e8d2cc0ff84176fede4765105a761c`
 
@@ -250,7 +237,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:77630e7807250e7d60e2f45c1f6a29548e111a65f0b4ff956f7de99ad0b45767`
 -	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:46:36 GMT
 
 ## `golang:1.5`
 
@@ -274,7 +260,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -288,7 +273,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -306,7 +290,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -327,7 +310,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -346,7 +328,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `20f66cb424920240e7019d0f3624722fb27cec0e3ea9bcdda625bc828f3aff0e`
 
@@ -360,7 +341,6 @@ ENV GOLANG_VERSION=1.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf2a94067a1226b0b55ef7e06690e62d3008e649e29846456dec8cf7852dfb40`
 
@@ -374,7 +354,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6b2c3933dba67f73bb3b7fc92b505d26779619b0bef5ad791a3e4e4a6381ddf`
 
@@ -388,7 +367,6 @@ ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bf0ad0f3107f9cda81ca351eebd0a0a3d4e15a94e43ab3c5d9c079d46ce755a4`
 
@@ -405,7 +383,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 299.1 MB (299141372 bytes)
 -	v2 Blob: `sha256:c1d6901e915e12e947b4c90d9121b1ce4eda351a763b0c8f0193e54c7b945e50`
 -	v2 Content-Length: 80.1 MB (80148866 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:21 GMT
 
 #### `0009342c689e675b91da911aeabbddcbac0bca16bd9da0f3b49ee247a61ceda3`
 
@@ -419,7 +396,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32f2b038998c72e607cbc46c40c8bd4985257a4d40d90ac40a10ecfdf281537`
 
@@ -433,7 +409,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `47fd1012b9725e5ac3f7b7da0a4a323a2abf94806e68d1fd7df99b20fa8c0223`
 
@@ -447,7 +422,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:13987d52980997517bb9bdddb4b67ad0f5124ea1a38fbeeb4b70f302d0b94137`
 -	v2 Content-Length: 120.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:46:42 GMT
 
 #### `72f92fb217f74a38fa6011bee2c8785d37dfb8e7559e71ab8c11f10d80fc50a4`
 
@@ -461,7 +435,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33d0c2a12e7ffc0a937289913a206155d9e8d2cc0ff84176fede4765105a761c`
 
@@ -475,7 +448,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:77630e7807250e7d60e2f45c1f6a29548e111a65f0b4ff956f7de99ad0b45767`
 -	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:46:36 GMT
 
 ## `golang:1.5.3-onbuild`
 
@@ -499,7 +471,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -513,7 +484,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -531,7 +501,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -552,7 +521,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -571,7 +539,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `20f66cb424920240e7019d0f3624722fb27cec0e3ea9bcdda625bc828f3aff0e`
 
@@ -585,7 +552,6 @@ ENV GOLANG_VERSION=1.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf2a94067a1226b0b55ef7e06690e62d3008e649e29846456dec8cf7852dfb40`
 
@@ -599,7 +565,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6b2c3933dba67f73bb3b7fc92b505d26779619b0bef5ad791a3e4e4a6381ddf`
 
@@ -613,7 +578,6 @@ ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bf0ad0f3107f9cda81ca351eebd0a0a3d4e15a94e43ab3c5d9c079d46ce755a4`
 
@@ -630,7 +594,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 299.1 MB (299141372 bytes)
 -	v2 Blob: `sha256:c1d6901e915e12e947b4c90d9121b1ce4eda351a763b0c8f0193e54c7b945e50`
 -	v2 Content-Length: 80.1 MB (80148866 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:21 GMT
 
 #### `0009342c689e675b91da911aeabbddcbac0bca16bd9da0f3b49ee247a61ceda3`
 
@@ -644,7 +607,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32f2b038998c72e607cbc46c40c8bd4985257a4d40d90ac40a10ecfdf281537`
 
@@ -658,7 +620,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `47fd1012b9725e5ac3f7b7da0a4a323a2abf94806e68d1fd7df99b20fa8c0223`
 
@@ -672,7 +633,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:13987d52980997517bb9bdddb4b67ad0f5124ea1a38fbeeb4b70f302d0b94137`
 -	v2 Content-Length: 120.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:46:42 GMT
 
 #### `72f92fb217f74a38fa6011bee2c8785d37dfb8e7559e71ab8c11f10d80fc50a4`
 
@@ -686,7 +646,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33d0c2a12e7ffc0a937289913a206155d9e8d2cc0ff84176fede4765105a761c`
 
@@ -700,7 +659,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:77630e7807250e7d60e2f45c1f6a29548e111a65f0b4ff956f7de99ad0b45767`
 -	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:46:36 GMT
 
 #### `02b9bf91b816f0754fe3a74c8d6aff579227d29c495ebadef4a8803bb425213a`
 
@@ -714,7 +672,6 @@ RUN mkdir -p /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:fcbc57278b4f68b1f694081dbd06701fdadef30e38adc21fd2a7c56274c31e3f`
 -	v2 Content-Length: 133.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:48:28 GMT
 
 #### `ee19928527f4f6f106e4b30a3552c850cbea2150f3aa4e965554039a2787d687`
 
@@ -728,7 +685,6 @@ WORKDIR /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1e2b004fec0a7cbcaa493521f7e2ce58de4f66486b135f953010a7bc34199c4d`
 
@@ -742,7 +698,6 @@ CMD ["go-wrapper" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a3e1750bda0f57c5620712bb3b727fa3df62906a2ca9a01a580e8f59427bb2b4`
 
@@ -756,7 +711,6 @@ ONBUILD COPY . /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `455a57c2a45f337174ac052a19d9827589d543760dbabe95cfade0cc66b7914f`
 
@@ -770,7 +724,6 @@ ONBUILD RUN go-wrapper download
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0ae56e7966f192831f499eee7860d07c99ebba783cddd6d7d7ca520df88f6483`
 
@@ -784,7 +737,6 @@ ONBUILD RUN go-wrapper install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.5-onbuild`
 
@@ -808,7 +760,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -822,7 +773,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -840,7 +790,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -861,7 +810,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -880,7 +828,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `20f66cb424920240e7019d0f3624722fb27cec0e3ea9bcdda625bc828f3aff0e`
 
@@ -894,7 +841,6 @@ ENV GOLANG_VERSION=1.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `cf2a94067a1226b0b55ef7e06690e62d3008e649e29846456dec8cf7852dfb40`
 
@@ -908,7 +854,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e6b2c3933dba67f73bb3b7fc92b505d26779619b0bef5ad791a3e4e4a6381ddf`
 
@@ -922,7 +867,6 @@ ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bf0ad0f3107f9cda81ca351eebd0a0a3d4e15a94e43ab3c5d9c079d46ce755a4`
 
@@ -939,7 +883,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 299.1 MB (299141372 bytes)
 -	v2 Blob: `sha256:c1d6901e915e12e947b4c90d9121b1ce4eda351a763b0c8f0193e54c7b945e50`
 -	v2 Content-Length: 80.1 MB (80148866 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:21 GMT
 
 #### `0009342c689e675b91da911aeabbddcbac0bca16bd9da0f3b49ee247a61ceda3`
 
@@ -953,7 +896,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32f2b038998c72e607cbc46c40c8bd4985257a4d40d90ac40a10ecfdf281537`
 
@@ -967,7 +909,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `47fd1012b9725e5ac3f7b7da0a4a323a2abf94806e68d1fd7df99b20fa8c0223`
 
@@ -981,7 +922,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:13987d52980997517bb9bdddb4b67ad0f5124ea1a38fbeeb4b70f302d0b94137`
 -	v2 Content-Length: 120.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:46:42 GMT
 
 #### `72f92fb217f74a38fa6011bee2c8785d37dfb8e7559e71ab8c11f10d80fc50a4`
 
@@ -995,7 +935,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `33d0c2a12e7ffc0a937289913a206155d9e8d2cc0ff84176fede4765105a761c`
 
@@ -1009,7 +948,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:77630e7807250e7d60e2f45c1f6a29548e111a65f0b4ff956f7de99ad0b45767`
 -	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:46:36 GMT
 
 #### `02b9bf91b816f0754fe3a74c8d6aff579227d29c495ebadef4a8803bb425213a`
 
@@ -1023,7 +961,6 @@ RUN mkdir -p /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:fcbc57278b4f68b1f694081dbd06701fdadef30e38adc21fd2a7c56274c31e3f`
 -	v2 Content-Length: 133.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:48:28 GMT
 
 #### `ee19928527f4f6f106e4b30a3552c850cbea2150f3aa4e965554039a2787d687`
 
@@ -1037,7 +974,6 @@ WORKDIR /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1e2b004fec0a7cbcaa493521f7e2ce58de4f66486b135f953010a7bc34199c4d`
 
@@ -1051,7 +987,6 @@ CMD ["go-wrapper" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a3e1750bda0f57c5620712bb3b727fa3df62906a2ca9a01a580e8f59427bb2b4`
 
@@ -1065,7 +1000,6 @@ ONBUILD COPY . /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `455a57c2a45f337174ac052a19d9827589d543760dbabe95cfade0cc66b7914f`
 
@@ -1079,7 +1013,6 @@ ONBUILD RUN go-wrapper download
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0ae56e7966f192831f499eee7860d07c99ebba783cddd6d7d7ca520df88f6483`
 
@@ -1093,7 +1026,6 @@ ONBUILD RUN go-wrapper install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.5.3-wheezy`
 
@@ -1117,7 +1049,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1131,7 +1062,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -1149,7 +1079,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -1170,7 +1099,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `f839fdc18eb6f179df52cc247867df1ff41d4afaa8fae54528a8294a623e3691`
 
@@ -1189,7 +1117,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 90.8 MB (90822079 bytes)
 -	v2 Blob: `sha256:3fd5aabbcb2ecf467154a647694f88e27a65173124b6a0521314575aed9e5748`
 -	v2 Content-Length: 33.9 MB (33937557 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:49:49 GMT
 
 #### `728ffbbed5908aacd4197d388f384ae2d32511118c825347281a52c153933ceb`
 
@@ -1203,7 +1130,6 @@ ENV GOLANG_VERSION=1.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fc8f570f4fc13ffeae758a010ef697f0b6f02a02799a9f55647b1fc5a352a02b`
 
@@ -1217,7 +1143,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea10ad8c17ca18d6bed0955be602b3bb88f47868037ef274b755c0783a2d636f`
 
@@ -1231,7 +1156,6 @@ ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `765af28360f796f378ef001319bb022e36069ef829e957af7a099a5d19807664`
 
@@ -1248,7 +1172,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 299.1 MB (299141372 bytes)
 -	v2 Blob: `sha256:21e373aa35503c7c8af4f5422727357ad14b2a24c1c932440de40d9059b45885`
 -	v2 Content-Length: 80.1 MB (80148846 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:49:23 GMT
 
 #### `ca522cefe0556facca029433710c57199dcf38635f6e80c22dcfee75d49907ef`
 
@@ -1262,7 +1185,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ddb0d72f4eda48b2fc9d48299dd4e8931612855db4899f94751577036f72f07`
 
@@ -1276,7 +1198,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d03a69502c1134842c9fb2cee861b243efde184bc7bfa294029544242fa5ab3e`
 
@@ -1290,7 +1211,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e0c360e9db09752473ed5997f5127b05f0b547345111492d93d38a334d4ec9e7`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:48:46 GMT
 
 #### `7f028f5e2ee57b7d373d36a958bf5e2649b0496c8af85f3beecb7049729c0206`
 
@@ -1304,7 +1224,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7431671e7857399b019bd7c3c643cf607ae80523449c61866d732d99987b718`
 
@@ -1318,7 +1237,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:c66147b878442df689018162fbead7fe228e844ac0f4987a689c2e7079a9febe`
 -	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:48:41 GMT
 
 ## `golang:1.5-wheezy`
 
@@ -1342,7 +1260,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -1356,7 +1273,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -1374,7 +1290,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -1395,7 +1310,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `f839fdc18eb6f179df52cc247867df1ff41d4afaa8fae54528a8294a623e3691`
 
@@ -1414,7 +1328,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 90.8 MB (90822079 bytes)
 -	v2 Blob: `sha256:3fd5aabbcb2ecf467154a647694f88e27a65173124b6a0521314575aed9e5748`
 -	v2 Content-Length: 33.9 MB (33937557 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:49:49 GMT
 
 #### `728ffbbed5908aacd4197d388f384ae2d32511118c825347281a52c153933ceb`
 
@@ -1428,7 +1341,6 @@ ENV GOLANG_VERSION=1.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fc8f570f4fc13ffeae758a010ef697f0b6f02a02799a9f55647b1fc5a352a02b`
 
@@ -1442,7 +1354,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.5.3.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ea10ad8c17ca18d6bed0955be602b3bb88f47868037ef274b755c0783a2d636f`
 
@@ -1456,7 +1367,6 @@ ENV GOLANG_DOWNLOAD_SHA256=43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db45
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `765af28360f796f378ef001319bb022e36069ef829e957af7a099a5d19807664`
 
@@ -1473,7 +1383,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 299.1 MB (299141372 bytes)
 -	v2 Blob: `sha256:21e373aa35503c7c8af4f5422727357ad14b2a24c1c932440de40d9059b45885`
 -	v2 Content-Length: 80.1 MB (80148846 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:49:23 GMT
 
 #### `ca522cefe0556facca029433710c57199dcf38635f6e80c22dcfee75d49907ef`
 
@@ -1487,7 +1396,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4ddb0d72f4eda48b2fc9d48299dd4e8931612855db4899f94751577036f72f07`
 
@@ -1501,7 +1409,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d03a69502c1134842c9fb2cee861b243efde184bc7bfa294029544242fa5ab3e`
 
@@ -1515,7 +1422,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:e0c360e9db09752473ed5997f5127b05f0b547345111492d93d38a334d4ec9e7`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:48:46 GMT
 
 #### `7f028f5e2ee57b7d373d36a958bf5e2649b0496c8af85f3beecb7049729c0206`
 
@@ -1529,7 +1435,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a7431671e7857399b019bd7c3c643cf607ae80523449c61866d732d99987b718`
 
@@ -1543,7 +1448,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:c66147b878442df689018162fbead7fe228e844ac0f4987a689c2e7079a9febe`
 -	v2 Content-Length: 1.4 KB (1353 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:48:41 GMT
 
 ## `golang:1.5.3-alpine`
 
@@ -1567,7 +1471,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `e0b4b214556327458ab03c6ca519ac37ded346d10dcf6bc5e62a9da88272ed0e`
 
@@ -1581,7 +1484,6 @@ ENV GOLANG_VERSION=1.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbe5efb19ff8e5d392863e64311c8a766dadee1d0ade6b4fcfb3a7a084747378`
 
@@ -1595,7 +1497,6 @@ ENV GOLANG_SRC_URL=https://golang.org/dl/go1.5.3.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c5a8391e5bc386814438c2f6e32ed3d225b20758bbc1cd2f0bb40d08cdb0b6d`
 
@@ -1609,7 +1510,6 @@ ENV GOLANG_SRC_SHA256=754e06dab1c31ab168fc9db9e32596734015ea9e24bc44cae7f237f417
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a21bbab1e74e09a11039c988ade73f3dd34bd4fc33346f8ba1f02316ebf76061`
 
@@ -1623,7 +1523,6 @@ ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e40fdc8e68f253ac5ef482d6bd1847c2d17467a0c4e6e54c9e992f8874d9339`
 
@@ -1637,7 +1536,6 @@ ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a08ad6fcfce8a73911984d0b0e96e1dc590aaa2176c0b11de000f2fa50981bb6`
 
@@ -1651,7 +1549,6 @@ ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fae2f5d416d2c2988ecec3051e20dc902385ec028f569677ea7015ea32d06505`
 
@@ -1687,7 +1584,6 @@ RUN set -ex \
 -	Virtual Size: 219.8 MB (219763011 bytes)
 -	v2 Blob: `sha256:26cf587566c1de8277303eca6c2f17d10d36462c81442f17154d2ad20e1368c2`
 -	v2 Content-Length: 56.3 MB (56343396 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:15:18 GMT
 
 #### `dc3a7d9779e8e3d764f3569ecf34b216d7ff1df30bd19d461f9f970c90625712`
 
@@ -1701,7 +1597,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f3a3c3cba93d6a5316dd34ea3b8d2bd6fe32cabc27e714d3ebfd1fcc8c5c9a97`
 
@@ -1715,7 +1610,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5d4196190ce0aee7b94397d56ac388c2e063e7f836b732bfb294e0a491b3242e`
 
@@ -1729,7 +1623,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:78d9f6633efd59cf1327df2d39f4c323e27852174dce95675eabbc3c93944dc1`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 18:14:45 GMT
 
 #### `ebba10e09c5001a488e16956b9d9e702021ed9265aae95955eba51f07ba4a99a`
 
@@ -1743,7 +1636,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.5-alpine`
 
@@ -1767,7 +1659,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `e0b4b214556327458ab03c6ca519ac37ded346d10dcf6bc5e62a9da88272ed0e`
 
@@ -1781,7 +1672,6 @@ ENV GOLANG_VERSION=1.5.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `bbe5efb19ff8e5d392863e64311c8a766dadee1d0ade6b4fcfb3a7a084747378`
 
@@ -1795,7 +1685,6 @@ ENV GOLANG_SRC_URL=https://golang.org/dl/go1.5.3.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0c5a8391e5bc386814438c2f6e32ed3d225b20758bbc1cd2f0bb40d08cdb0b6d`
 
@@ -1809,7 +1698,6 @@ ENV GOLANG_SRC_SHA256=754e06dab1c31ab168fc9db9e32596734015ea9e24bc44cae7f237f417
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a21bbab1e74e09a11039c988ade73f3dd34bd4fc33346f8ba1f02316ebf76061`
 
@@ -1823,7 +1711,6 @@ ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8e40fdc8e68f253ac5ef482d6bd1847c2d17467a0c4e6e54c9e992f8874d9339`
 
@@ -1837,7 +1724,6 @@ ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a08ad6fcfce8a73911984d0b0e96e1dc590aaa2176c0b11de000f2fa50981bb6`
 
@@ -1851,7 +1737,6 @@ ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fae2f5d416d2c2988ecec3051e20dc902385ec028f569677ea7015ea32d06505`
 
@@ -1887,7 +1772,6 @@ RUN set -ex \
 -	Virtual Size: 219.8 MB (219763011 bytes)
 -	v2 Blob: `sha256:26cf587566c1de8277303eca6c2f17d10d36462c81442f17154d2ad20e1368c2`
 -	v2 Content-Length: 56.3 MB (56343396 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:15:18 GMT
 
 #### `dc3a7d9779e8e3d764f3569ecf34b216d7ff1df30bd19d461f9f970c90625712`
 
@@ -1901,7 +1785,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f3a3c3cba93d6a5316dd34ea3b8d2bd6fe32cabc27e714d3ebfd1fcc8c5c9a97`
 
@@ -1915,7 +1798,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5d4196190ce0aee7b94397d56ac388c2e063e7f836b732bfb294e0a491b3242e`
 
@@ -1929,7 +1811,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:78d9f6633efd59cf1327df2d39f4c323e27852174dce95675eabbc3c93944dc1`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 18:14:45 GMT
 
 #### `ebba10e09c5001a488e16956b9d9e702021ed9265aae95955eba51f07ba4a99a`
 
@@ -1943,7 +1824,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.6.0`
 
@@ -1967,7 +1847,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1981,7 +1860,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -1999,7 +1877,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2020,7 +1897,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -2039,7 +1915,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `41ae0d40b5b46c360cb11dad01789c630ac4d07bee4c341e5e0dd61d7eeffd5a`
 
@@ -2053,7 +1928,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e83d826eec1dbe848c55280504f5c3ff791ab5743e3c5871881ebb18d1c415e9`
 
@@ -2067,7 +1941,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `971aa45a20c59caeeb29176f993ccd495cad2df47d575bd236024f3a65949b1e`
 
@@ -2081,7 +1954,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caf58fd0c6aa80345a6587c869b4201a57a33131c701803fbdc1386f7b9df985`
 
@@ -2098,7 +1970,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:fa005ca2f4d3293e2c7e2e492601c8105663edaa68d16963b56a04fb082e1768`
 -	v2 Content-Length: 84.8 MB (84814327 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:51:16 GMT
 
 #### `96008dd8a39c90e9c13807431a8fbdbed1785449337c767e33ca059f78de251e`
 
@@ -2112,7 +1983,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86fe14fd6c00822b6d44c20e1b5eba438a67858833ef1110ff45b579c4bedb3b`
 
@@ -2126,7 +1996,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a10de1517e4428d434c203cf62d3e679f2cdb43252c033035215330867a91137`
 
@@ -2140,7 +2009,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:985550cdcff574d0ce44161d559a3555b90814eab46a716d38d70866071fac43`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:35 GMT
 
 #### `fb380a407d34f00bbca0e6c98e459f0e794333aa48db3d129f3623640abc7ee4`
 
@@ -2154,7 +2022,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a443d5a72a2ed0af201ea5b30b3fc4e28146b86b9c3cdd8d177b2c77e00d39fd`
 
@@ -2168,7 +2035,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:35ec3ef7e77d231c97cc8355ca898f3dd951269e4702c5b8d558cde9499d1006`
 -	v2 Content-Length: 1.4 KB (1352 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:30 GMT
 
 ## `golang:1.6`
 
@@ -2192,7 +2058,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2206,7 +2071,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2224,7 +2088,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2245,7 +2108,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -2264,7 +2126,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `41ae0d40b5b46c360cb11dad01789c630ac4d07bee4c341e5e0dd61d7eeffd5a`
 
@@ -2278,7 +2139,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e83d826eec1dbe848c55280504f5c3ff791ab5743e3c5871881ebb18d1c415e9`
 
@@ -2292,7 +2152,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `971aa45a20c59caeeb29176f993ccd495cad2df47d575bd236024f3a65949b1e`
 
@@ -2306,7 +2165,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caf58fd0c6aa80345a6587c869b4201a57a33131c701803fbdc1386f7b9df985`
 
@@ -2323,7 +2181,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:fa005ca2f4d3293e2c7e2e492601c8105663edaa68d16963b56a04fb082e1768`
 -	v2 Content-Length: 84.8 MB (84814327 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:51:16 GMT
 
 #### `96008dd8a39c90e9c13807431a8fbdbed1785449337c767e33ca059f78de251e`
 
@@ -2337,7 +2194,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86fe14fd6c00822b6d44c20e1b5eba438a67858833ef1110ff45b579c4bedb3b`
 
@@ -2351,7 +2207,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a10de1517e4428d434c203cf62d3e679f2cdb43252c033035215330867a91137`
 
@@ -2365,7 +2220,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:985550cdcff574d0ce44161d559a3555b90814eab46a716d38d70866071fac43`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:35 GMT
 
 #### `fb380a407d34f00bbca0e6c98e459f0e794333aa48db3d129f3623640abc7ee4`
 
@@ -2379,7 +2233,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a443d5a72a2ed0af201ea5b30b3fc4e28146b86b9c3cdd8d177b2c77e00d39fd`
 
@@ -2393,7 +2246,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:35ec3ef7e77d231c97cc8355ca898f3dd951269e4702c5b8d558cde9499d1006`
 -	v2 Content-Length: 1.4 KB (1352 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:30 GMT
 
 ## `golang:1`
 
@@ -2417,7 +2269,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2431,7 +2282,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2449,7 +2299,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2470,7 +2319,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -2489,7 +2337,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `41ae0d40b5b46c360cb11dad01789c630ac4d07bee4c341e5e0dd61d7eeffd5a`
 
@@ -2503,7 +2350,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e83d826eec1dbe848c55280504f5c3ff791ab5743e3c5871881ebb18d1c415e9`
 
@@ -2517,7 +2363,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `971aa45a20c59caeeb29176f993ccd495cad2df47d575bd236024f3a65949b1e`
 
@@ -2531,7 +2376,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caf58fd0c6aa80345a6587c869b4201a57a33131c701803fbdc1386f7b9df985`
 
@@ -2548,7 +2392,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:fa005ca2f4d3293e2c7e2e492601c8105663edaa68d16963b56a04fb082e1768`
 -	v2 Content-Length: 84.8 MB (84814327 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:51:16 GMT
 
 #### `96008dd8a39c90e9c13807431a8fbdbed1785449337c767e33ca059f78de251e`
 
@@ -2562,7 +2405,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86fe14fd6c00822b6d44c20e1b5eba438a67858833ef1110ff45b579c4bedb3b`
 
@@ -2576,7 +2418,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a10de1517e4428d434c203cf62d3e679f2cdb43252c033035215330867a91137`
 
@@ -2590,7 +2431,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:985550cdcff574d0ce44161d559a3555b90814eab46a716d38d70866071fac43`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:35 GMT
 
 #### `fb380a407d34f00bbca0e6c98e459f0e794333aa48db3d129f3623640abc7ee4`
 
@@ -2604,7 +2444,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a443d5a72a2ed0af201ea5b30b3fc4e28146b86b9c3cdd8d177b2c77e00d39fd`
 
@@ -2618,7 +2457,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:35ec3ef7e77d231c97cc8355ca898f3dd951269e4702c5b8d558cde9499d1006`
 -	v2 Content-Length: 1.4 KB (1352 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:30 GMT
 
 ## `golang:latest`
 
@@ -2642,7 +2480,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2656,7 +2493,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2674,7 +2510,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2695,7 +2530,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -2714,7 +2548,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `41ae0d40b5b46c360cb11dad01789c630ac4d07bee4c341e5e0dd61d7eeffd5a`
 
@@ -2728,7 +2561,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e83d826eec1dbe848c55280504f5c3ff791ab5743e3c5871881ebb18d1c415e9`
 
@@ -2742,7 +2574,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `971aa45a20c59caeeb29176f993ccd495cad2df47d575bd236024f3a65949b1e`
 
@@ -2756,7 +2587,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caf58fd0c6aa80345a6587c869b4201a57a33131c701803fbdc1386f7b9df985`
 
@@ -2773,7 +2603,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:fa005ca2f4d3293e2c7e2e492601c8105663edaa68d16963b56a04fb082e1768`
 -	v2 Content-Length: 84.8 MB (84814327 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:51:16 GMT
 
 #### `96008dd8a39c90e9c13807431a8fbdbed1785449337c767e33ca059f78de251e`
 
@@ -2787,7 +2616,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86fe14fd6c00822b6d44c20e1b5eba438a67858833ef1110ff45b579c4bedb3b`
 
@@ -2801,7 +2629,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a10de1517e4428d434c203cf62d3e679f2cdb43252c033035215330867a91137`
 
@@ -2815,7 +2642,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:985550cdcff574d0ce44161d559a3555b90814eab46a716d38d70866071fac43`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:35 GMT
 
 #### `fb380a407d34f00bbca0e6c98e459f0e794333aa48db3d129f3623640abc7ee4`
 
@@ -2829,7 +2655,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a443d5a72a2ed0af201ea5b30b3fc4e28146b86b9c3cdd8d177b2c77e00d39fd`
 
@@ -2843,7 +2668,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:35ec3ef7e77d231c97cc8355ca898f3dd951269e4702c5b8d558cde9499d1006`
 -	v2 Content-Length: 1.4 KB (1352 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:30 GMT
 
 ## `golang:1.6.0-onbuild`
 
@@ -2867,7 +2691,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -2881,7 +2704,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -2899,7 +2721,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -2920,7 +2741,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -2939,7 +2759,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `41ae0d40b5b46c360cb11dad01789c630ac4d07bee4c341e5e0dd61d7eeffd5a`
 
@@ -2953,7 +2772,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e83d826eec1dbe848c55280504f5c3ff791ab5743e3c5871881ebb18d1c415e9`
 
@@ -2967,7 +2785,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `971aa45a20c59caeeb29176f993ccd495cad2df47d575bd236024f3a65949b1e`
 
@@ -2981,7 +2798,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caf58fd0c6aa80345a6587c869b4201a57a33131c701803fbdc1386f7b9df985`
 
@@ -2998,7 +2814,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:fa005ca2f4d3293e2c7e2e492601c8105663edaa68d16963b56a04fb082e1768`
 -	v2 Content-Length: 84.8 MB (84814327 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:51:16 GMT
 
 #### `96008dd8a39c90e9c13807431a8fbdbed1785449337c767e33ca059f78de251e`
 
@@ -3012,7 +2827,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86fe14fd6c00822b6d44c20e1b5eba438a67858833ef1110ff45b579c4bedb3b`
 
@@ -3026,7 +2840,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a10de1517e4428d434c203cf62d3e679f2cdb43252c033035215330867a91137`
 
@@ -3040,7 +2853,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:985550cdcff574d0ce44161d559a3555b90814eab46a716d38d70866071fac43`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:35 GMT
 
 #### `fb380a407d34f00bbca0e6c98e459f0e794333aa48db3d129f3623640abc7ee4`
 
@@ -3054,7 +2866,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a443d5a72a2ed0af201ea5b30b3fc4e28146b86b9c3cdd8d177b2c77e00d39fd`
 
@@ -3068,7 +2879,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:35ec3ef7e77d231c97cc8355ca898f3dd951269e4702c5b8d558cde9499d1006`
 -	v2 Content-Length: 1.4 KB (1352 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:30 GMT
 
 #### `05f04191092d8c917c82b2a280b58a4ab84abfd60069058b68994cdea6db53bd`
 
@@ -3082,7 +2892,6 @@ RUN mkdir -p /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:74c9c760d178dfdc742eb7924033dfd0047ed53bd65c8a855ce32c1c5302e437`
 -	v2 Content-Length: 132.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:00 GMT
 
 #### `b0b6ced6ce54031da3be30d59ab8674c0234d8f155c324b84fb16011fef86db9`
 
@@ -3096,7 +2905,6 @@ WORKDIR /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e46ed8151e318f0e15be7c395571fea84f70b4dc046206ae591a0f20518ac05c`
 
@@ -3110,7 +2918,6 @@ CMD ["go-wrapper" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3dab73c75d2d8a93577f4e3a37e978320f0ecba42fe8c5d1b69b06819c76b199`
 
@@ -3124,7 +2931,6 @@ ONBUILD COPY . /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee12ccaa6928814412caadabd9403ab4f14418beb0d5edcaf3670a86a24c37e0`
 
@@ -3138,7 +2944,6 @@ ONBUILD RUN go-wrapper download
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0a92d561a88f62788cf3b966a71f38fb1a033ba244c8eef1c6d69efd62cbaa4f`
 
@@ -3152,7 +2957,6 @@ ONBUILD RUN go-wrapper install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.6-onbuild`
 
@@ -3176,7 +2980,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3190,7 +2993,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3208,7 +3010,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -3229,7 +3030,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -3248,7 +3048,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `41ae0d40b5b46c360cb11dad01789c630ac4d07bee4c341e5e0dd61d7eeffd5a`
 
@@ -3262,7 +3061,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e83d826eec1dbe848c55280504f5c3ff791ab5743e3c5871881ebb18d1c415e9`
 
@@ -3276,7 +3074,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `971aa45a20c59caeeb29176f993ccd495cad2df47d575bd236024f3a65949b1e`
 
@@ -3290,7 +3087,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caf58fd0c6aa80345a6587c869b4201a57a33131c701803fbdc1386f7b9df985`
 
@@ -3307,7 +3103,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:fa005ca2f4d3293e2c7e2e492601c8105663edaa68d16963b56a04fb082e1768`
 -	v2 Content-Length: 84.8 MB (84814327 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:51:16 GMT
 
 #### `96008dd8a39c90e9c13807431a8fbdbed1785449337c767e33ca059f78de251e`
 
@@ -3321,7 +3116,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86fe14fd6c00822b6d44c20e1b5eba438a67858833ef1110ff45b579c4bedb3b`
 
@@ -3335,7 +3129,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a10de1517e4428d434c203cf62d3e679f2cdb43252c033035215330867a91137`
 
@@ -3349,7 +3142,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:985550cdcff574d0ce44161d559a3555b90814eab46a716d38d70866071fac43`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:35 GMT
 
 #### `fb380a407d34f00bbca0e6c98e459f0e794333aa48db3d129f3623640abc7ee4`
 
@@ -3363,7 +3155,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a443d5a72a2ed0af201ea5b30b3fc4e28146b86b9c3cdd8d177b2c77e00d39fd`
 
@@ -3377,7 +3168,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:35ec3ef7e77d231c97cc8355ca898f3dd951269e4702c5b8d558cde9499d1006`
 -	v2 Content-Length: 1.4 KB (1352 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:30 GMT
 
 #### `05f04191092d8c917c82b2a280b58a4ab84abfd60069058b68994cdea6db53bd`
 
@@ -3391,7 +3181,6 @@ RUN mkdir -p /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:74c9c760d178dfdc742eb7924033dfd0047ed53bd65c8a855ce32c1c5302e437`
 -	v2 Content-Length: 132.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:00 GMT
 
 #### `b0b6ced6ce54031da3be30d59ab8674c0234d8f155c324b84fb16011fef86db9`
 
@@ -3405,7 +3194,6 @@ WORKDIR /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e46ed8151e318f0e15be7c395571fea84f70b4dc046206ae591a0f20518ac05c`
 
@@ -3419,7 +3207,6 @@ CMD ["go-wrapper" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3dab73c75d2d8a93577f4e3a37e978320f0ecba42fe8c5d1b69b06819c76b199`
 
@@ -3433,7 +3220,6 @@ ONBUILD COPY . /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee12ccaa6928814412caadabd9403ab4f14418beb0d5edcaf3670a86a24c37e0`
 
@@ -3447,7 +3233,6 @@ ONBUILD RUN go-wrapper download
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0a92d561a88f62788cf3b966a71f38fb1a033ba244c8eef1c6d69efd62cbaa4f`
 
@@ -3461,7 +3246,6 @@ ONBUILD RUN go-wrapper install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1-onbuild`
 
@@ -3485,7 +3269,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3499,7 +3282,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3517,7 +3299,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -3538,7 +3319,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -3557,7 +3337,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `41ae0d40b5b46c360cb11dad01789c630ac4d07bee4c341e5e0dd61d7eeffd5a`
 
@@ -3571,7 +3350,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e83d826eec1dbe848c55280504f5c3ff791ab5743e3c5871881ebb18d1c415e9`
 
@@ -3585,7 +3363,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `971aa45a20c59caeeb29176f993ccd495cad2df47d575bd236024f3a65949b1e`
 
@@ -3599,7 +3376,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caf58fd0c6aa80345a6587c869b4201a57a33131c701803fbdc1386f7b9df985`
 
@@ -3616,7 +3392,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:fa005ca2f4d3293e2c7e2e492601c8105663edaa68d16963b56a04fb082e1768`
 -	v2 Content-Length: 84.8 MB (84814327 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:51:16 GMT
 
 #### `96008dd8a39c90e9c13807431a8fbdbed1785449337c767e33ca059f78de251e`
 
@@ -3630,7 +3405,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86fe14fd6c00822b6d44c20e1b5eba438a67858833ef1110ff45b579c4bedb3b`
 
@@ -3644,7 +3418,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a10de1517e4428d434c203cf62d3e679f2cdb43252c033035215330867a91137`
 
@@ -3658,7 +3431,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:985550cdcff574d0ce44161d559a3555b90814eab46a716d38d70866071fac43`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:35 GMT
 
 #### `fb380a407d34f00bbca0e6c98e459f0e794333aa48db3d129f3623640abc7ee4`
 
@@ -3672,7 +3444,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a443d5a72a2ed0af201ea5b30b3fc4e28146b86b9c3cdd8d177b2c77e00d39fd`
 
@@ -3686,7 +3457,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:35ec3ef7e77d231c97cc8355ca898f3dd951269e4702c5b8d558cde9499d1006`
 -	v2 Content-Length: 1.4 KB (1352 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:30 GMT
 
 #### `05f04191092d8c917c82b2a280b58a4ab84abfd60069058b68994cdea6db53bd`
 
@@ -3700,7 +3470,6 @@ RUN mkdir -p /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:74c9c760d178dfdc742eb7924033dfd0047ed53bd65c8a855ce32c1c5302e437`
 -	v2 Content-Length: 132.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:00 GMT
 
 #### `b0b6ced6ce54031da3be30d59ab8674c0234d8f155c324b84fb16011fef86db9`
 
@@ -3714,7 +3483,6 @@ WORKDIR /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e46ed8151e318f0e15be7c395571fea84f70b4dc046206ae591a0f20518ac05c`
 
@@ -3728,7 +3496,6 @@ CMD ["go-wrapper" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3dab73c75d2d8a93577f4e3a37e978320f0ecba42fe8c5d1b69b06819c76b199`
 
@@ -3742,7 +3509,6 @@ ONBUILD COPY . /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee12ccaa6928814412caadabd9403ab4f14418beb0d5edcaf3670a86a24c37e0`
 
@@ -3756,7 +3522,6 @@ ONBUILD RUN go-wrapper download
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0a92d561a88f62788cf3b966a71f38fb1a033ba244c8eef1c6d69efd62cbaa4f`
 
@@ -3770,7 +3535,6 @@ ONBUILD RUN go-wrapper install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:onbuild`
 
@@ -3794,7 +3558,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -3808,7 +3571,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3c3e582d88fad41cd2fc62d98ab54d4199030bff57b76a55c66b6946173909fa`
 
@@ -3826,7 +3588,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 44.3 MB (44315342 bytes)
 -	v2 Blob: `sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07`
 -	v2 Content-Length: 18.5 MB (18534098 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:02:42 GMT
 
 #### `625e77fff1a80cc5cbb8b8f949f40b6845ec25fd440d69cb9a7c720df03ef860`
 
@@ -3847,7 +3608,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 122.6 MB (122587140 bytes)
 -	v2 Blob: `sha256:7b40647e93b7de2fbeb95076bb5a56f6024c3c4217b8e810d36b8f10c535e239`
 -	v2 Content-Length: 42.5 MB (42495709 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:07:07 GMT
 
 #### `ef7e1399f0dd764164cdc6e630dd0d406630863bd4593e5c6d45c009a366d169`
 
@@ -3866,7 +3626,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 134.0 MB (134023074 bytes)
 -	v2 Blob: `sha256:28935209ff25c449a333b0b657b805f191db77a52b6e33aa30a4b1bbaedddf26`
 -	v2 Content-Length: 56.9 MB (56888270 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:47:48 GMT
 
 #### `41ae0d40b5b46c360cb11dad01789c630ac4d07bee4c341e5e0dd61d7eeffd5a`
 
@@ -3880,7 +3639,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e83d826eec1dbe848c55280504f5c3ff791ab5743e3c5871881ebb18d1c415e9`
 
@@ -3894,7 +3652,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `971aa45a20c59caeeb29176f993ccd495cad2df47d575bd236024f3a65949b1e`
 
@@ -3908,7 +3665,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `caf58fd0c6aa80345a6587c869b4201a57a33131c701803fbdc1386f7b9df985`
 
@@ -3925,7 +3681,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:fa005ca2f4d3293e2c7e2e492601c8105663edaa68d16963b56a04fb082e1768`
 -	v2 Content-Length: 84.8 MB (84814327 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:51:16 GMT
 
 #### `96008dd8a39c90e9c13807431a8fbdbed1785449337c767e33ca059f78de251e`
 
@@ -3939,7 +3694,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `86fe14fd6c00822b6d44c20e1b5eba438a67858833ef1110ff45b579c4bedb3b`
 
@@ -3953,7 +3707,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a10de1517e4428d434c203cf62d3e679f2cdb43252c033035215330867a91137`
 
@@ -3967,7 +3720,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:985550cdcff574d0ce44161d559a3555b90814eab46a716d38d70866071fac43`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:35 GMT
 
 #### `fb380a407d34f00bbca0e6c98e459f0e794333aa48db3d129f3623640abc7ee4`
 
@@ -3981,7 +3733,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a443d5a72a2ed0af201ea5b30b3fc4e28146b86b9c3cdd8d177b2c77e00d39fd`
 
@@ -3995,7 +3746,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:35ec3ef7e77d231c97cc8355ca898f3dd951269e4702c5b8d558cde9499d1006`
 -	v2 Content-Length: 1.4 KB (1352 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:50:30 GMT
 
 #### `05f04191092d8c917c82b2a280b58a4ab84abfd60069058b68994cdea6db53bd`
 
@@ -4009,7 +3759,6 @@ RUN mkdir -p /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:74c9c760d178dfdc742eb7924033dfd0047ed53bd65c8a855ce32c1c5302e437`
 -	v2 Content-Length: 132.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:00 GMT
 
 #### `b0b6ced6ce54031da3be30d59ab8674c0234d8f155c324b84fb16011fef86db9`
 
@@ -4023,7 +3772,6 @@ WORKDIR /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e46ed8151e318f0e15be7c395571fea84f70b4dc046206ae591a0f20518ac05c`
 
@@ -4037,7 +3785,6 @@ CMD ["go-wrapper" "run"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3dab73c75d2d8a93577f4e3a37e978320f0ecba42fe8c5d1b69b06819c76b199`
 
@@ -4051,7 +3798,6 @@ ONBUILD COPY . /go/src/app
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ee12ccaa6928814412caadabd9403ab4f14418beb0d5edcaf3670a86a24c37e0`
 
@@ -4065,7 +3811,6 @@ ONBUILD RUN go-wrapper download
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0a92d561a88f62788cf3b966a71f38fb1a033ba244c8eef1c6d69efd62cbaa4f`
 
@@ -4079,7 +3824,6 @@ ONBUILD RUN go-wrapper install
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.6.0-wheezy`
 
@@ -4103,7 +3847,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4117,7 +3860,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -4135,7 +3877,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -4156,7 +3897,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `f839fdc18eb6f179df52cc247867df1ff41d4afaa8fae54528a8294a623e3691`
 
@@ -4175,7 +3915,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 90.8 MB (90822079 bytes)
 -	v2 Blob: `sha256:3fd5aabbcb2ecf467154a647694f88e27a65173124b6a0521314575aed9e5748`
 -	v2 Content-Length: 33.9 MB (33937557 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:49:49 GMT
 
 #### `c5da1975f635ea6421878532247ae1d5e17b9853fb48aba641c43901dda68537`
 
@@ -4189,7 +3928,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `25f0a3316a975b8652792aa4ecfbde476d7df7883b6b4b8da19f05e662f37f58`
 
@@ -4203,7 +3941,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0d31c38c7d229999e10fe23059b416a13cee3ac0c53a589e0db9f1bc64e6dca`
 
@@ -4217,7 +3954,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `226b1a041da44b2b63ae65cdfb2b0496554d39cfa2cd436ab6bbe47912114b4b`
 
@@ -4234,7 +3970,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:993624232dc2f8b48c03e6e64f63c82cc75615e769dc19cb58af178fcf3267e3`
 -	v2 Content-Length: 84.8 MB (84814342 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:53:06 GMT
 
 #### `79c68075b171b0ad37bbcbe7ef9ec493c3553b7bcb7eb29b2b6bc7d0333e8d01`
 
@@ -4248,7 +3983,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a6c3519997d34e6095a912ed0cb8307a066b2d1ad60ab9f56da5273319079db1`
 
@@ -4262,7 +3996,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `89ad3a49f0d54dde0e4eb2d21435295217f9ecf1a7d4c80454fcba69ddfcaaa1`
 
@@ -4276,7 +4009,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:140bea85114e35de4b7dde2c36a809506c4cecdaa98fb6c10d9b8c858591d214`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:25 GMT
 
 #### `a0487284813f9ac8b1c35d19fa1994c5899f144c091a5d40274be8612cd286b9`
 
@@ -4290,7 +4022,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `999822b2af0050289524960d643e945bdb4924bc2f6b8b929e767674463e8f8e`
 
@@ -4304,7 +4035,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:4848e3496587ab290a058c6e40dec3383111127a3c1caadab99831d7700cc05a`
 -	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:21 GMT
 
 ## `golang:1.6-wheezy`
 
@@ -4328,7 +4058,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4342,7 +4071,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -4360,7 +4088,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -4381,7 +4108,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `f839fdc18eb6f179df52cc247867df1ff41d4afaa8fae54528a8294a623e3691`
 
@@ -4400,7 +4126,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 90.8 MB (90822079 bytes)
 -	v2 Blob: `sha256:3fd5aabbcb2ecf467154a647694f88e27a65173124b6a0521314575aed9e5748`
 -	v2 Content-Length: 33.9 MB (33937557 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:49:49 GMT
 
 #### `c5da1975f635ea6421878532247ae1d5e17b9853fb48aba641c43901dda68537`
 
@@ -4414,7 +4139,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `25f0a3316a975b8652792aa4ecfbde476d7df7883b6b4b8da19f05e662f37f58`
 
@@ -4428,7 +4152,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0d31c38c7d229999e10fe23059b416a13cee3ac0c53a589e0db9f1bc64e6dca`
 
@@ -4442,7 +4165,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `226b1a041da44b2b63ae65cdfb2b0496554d39cfa2cd436ab6bbe47912114b4b`
 
@@ -4459,7 +4181,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:993624232dc2f8b48c03e6e64f63c82cc75615e769dc19cb58af178fcf3267e3`
 -	v2 Content-Length: 84.8 MB (84814342 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:53:06 GMT
 
 #### `79c68075b171b0ad37bbcbe7ef9ec493c3553b7bcb7eb29b2b6bc7d0333e8d01`
 
@@ -4473,7 +4194,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a6c3519997d34e6095a912ed0cb8307a066b2d1ad60ab9f56da5273319079db1`
 
@@ -4487,7 +4207,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `89ad3a49f0d54dde0e4eb2d21435295217f9ecf1a7d4c80454fcba69ddfcaaa1`
 
@@ -4501,7 +4220,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:140bea85114e35de4b7dde2c36a809506c4cecdaa98fb6c10d9b8c858591d214`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:25 GMT
 
 #### `a0487284813f9ac8b1c35d19fa1994c5899f144c091a5d40274be8612cd286b9`
 
@@ -4515,7 +4233,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `999822b2af0050289524960d643e945bdb4924bc2f6b8b929e767674463e8f8e`
 
@@ -4529,7 +4246,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:4848e3496587ab290a058c6e40dec3383111127a3c1caadab99831d7700cc05a`
 -	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:21 GMT
 
 ## `golang:1-wheezy`
 
@@ -4553,7 +4269,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4567,7 +4282,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -4585,7 +4299,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -4606,7 +4319,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `f839fdc18eb6f179df52cc247867df1ff41d4afaa8fae54528a8294a623e3691`
 
@@ -4625,7 +4337,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 90.8 MB (90822079 bytes)
 -	v2 Blob: `sha256:3fd5aabbcb2ecf467154a647694f88e27a65173124b6a0521314575aed9e5748`
 -	v2 Content-Length: 33.9 MB (33937557 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:49:49 GMT
 
 #### `c5da1975f635ea6421878532247ae1d5e17b9853fb48aba641c43901dda68537`
 
@@ -4639,7 +4350,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `25f0a3316a975b8652792aa4ecfbde476d7df7883b6b4b8da19f05e662f37f58`
 
@@ -4653,7 +4363,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0d31c38c7d229999e10fe23059b416a13cee3ac0c53a589e0db9f1bc64e6dca`
 
@@ -4667,7 +4376,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `226b1a041da44b2b63ae65cdfb2b0496554d39cfa2cd436ab6bbe47912114b4b`
 
@@ -4684,7 +4392,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:993624232dc2f8b48c03e6e64f63c82cc75615e769dc19cb58af178fcf3267e3`
 -	v2 Content-Length: 84.8 MB (84814342 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:53:06 GMT
 
 #### `79c68075b171b0ad37bbcbe7ef9ec493c3553b7bcb7eb29b2b6bc7d0333e8d01`
 
@@ -4698,7 +4405,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a6c3519997d34e6095a912ed0cb8307a066b2d1ad60ab9f56da5273319079db1`
 
@@ -4712,7 +4418,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `89ad3a49f0d54dde0e4eb2d21435295217f9ecf1a7d4c80454fcba69ddfcaaa1`
 
@@ -4726,7 +4431,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:140bea85114e35de4b7dde2c36a809506c4cecdaa98fb6c10d9b8c858591d214`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:25 GMT
 
 #### `a0487284813f9ac8b1c35d19fa1994c5899f144c091a5d40274be8612cd286b9`
 
@@ -4740,7 +4444,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `999822b2af0050289524960d643e945bdb4924bc2f6b8b929e767674463e8f8e`
 
@@ -4754,7 +4457,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:4848e3496587ab290a058c6e40dec3383111127a3c1caadab99831d7700cc05a`
 -	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:21 GMT
 
 ## `golang:wheezy`
 
@@ -4778,7 +4480,6 @@ ADD file:73c2f06a3259420bc07e1b956b33721e4358cbd68533e021b6d888545859c5d5 in /
 -	Virtual Size: 84.9 MB (84906260 bytes)
 -	v2 Blob: `sha256:4d690fa986553fb89f8ea3131e923ed9470d7a863add7991ea547805d5cab0d4`
 -	v2 Content-Length: 37.2 MB (37190628 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:54:18 GMT
 
 #### `43d31a5a4c8c063e9711cde1b0a9f7b1721ff133e72f61b50ed3b8128feb0ed5`
 
@@ -4792,7 +4493,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f32fbd7fff2e40cd21c82b726152f352021f16016aada2db6a77dda400045ada`
 
@@ -4810,7 +4510,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 14.2 MB (14187318 bytes)
 -	v2 Blob: `sha256:5372f1e24e33826263d9fe6e8b732232aadd8d6e8051fbba0246af344dad40be`
 -	v2 Content-Length: 6.7 MB (6729273 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 19:03:10 GMT
 
 #### `082ce7204e7f9966f314b4c23870aa09f4e43edd4edc384c6947a03363a0d549`
 
@@ -4831,7 +4530,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 110.0 MB (110026801 bytes)
 -	v2 Blob: `sha256:843907d785cdc65d7b3c4f04cd02f31a1f599bc8eeb96f041fdd8ae06f8779b1`
 -	v2 Content-Length: 37.4 MB (37365911 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 02:16:20 GMT
 
 #### `f839fdc18eb6f179df52cc247867df1ff41d4afaa8fae54528a8294a623e3691`
 
@@ -4850,7 +4548,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 -	Virtual Size: 90.8 MB (90822079 bytes)
 -	v2 Blob: `sha256:3fd5aabbcb2ecf467154a647694f88e27a65173124b6a0521314575aed9e5748`
 -	v2 Content-Length: 33.9 MB (33937557 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:49:49 GMT
 
 #### `c5da1975f635ea6421878532247ae1d5e17b9853fb48aba641c43901dda68537`
 
@@ -4864,7 +4561,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `25f0a3316a975b8652792aa4ecfbde476d7df7883b6b4b8da19f05e662f37f58`
 
@@ -4878,7 +4574,6 @@ ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.6.linux-amd64.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d0d31c38c7d229999e10fe23059b416a13cee3ac0c53a589e0db9f1bc64e6dca`
 
@@ -4892,7 +4587,6 @@ ENV GOLANG_DOWNLOAD_SHA256=5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `226b1a041da44b2b63ae65cdfb2b0496554d39cfa2cd436ab6bbe47912114b4b`
 
@@ -4909,7 +4603,6 @@ RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
 -	Virtual Size: 318.0 MB (317961678 bytes)
 -	v2 Blob: `sha256:993624232dc2f8b48c03e6e64f63c82cc75615e769dc19cb58af178fcf3267e3`
 -	v2 Content-Length: 84.8 MB (84814342 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:53:06 GMT
 
 #### `79c68075b171b0ad37bbcbe7ef9ec493c3553b7bcb7eb29b2b6bc7d0333e8d01`
 
@@ -4923,7 +4616,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a6c3519997d34e6095a912ed0cb8307a066b2d1ad60ab9f56da5273319079db1`
 
@@ -4937,7 +4629,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `89ad3a49f0d54dde0e4eb2d21435295217f9ecf1a7d4c80454fcba69ddfcaaa1`
 
@@ -4951,7 +4642,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:140bea85114e35de4b7dde2c36a809506c4cecdaa98fb6c10d9b8c858591d214`
 -	v2 Content-Length: 122.0 B
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:25 GMT
 
 #### `a0487284813f9ac8b1c35d19fa1994c5899f144c091a5d40274be8612cd286b9`
 
@@ -4965,7 +4655,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `999822b2af0050289524960d643e945bdb4924bc2f6b8b929e767674463e8f8e`
 
@@ -4979,7 +4668,6 @@ COPY file:7e87b0ea22c04c4ebf8c516b8a68afbd30938d3a2cba2e4e91715a4b3cf5a73d in /u
 -	Virtual Size: 2.5 KB (2481 bytes)
 -	v2 Blob: `sha256:4848e3496587ab290a058c6e40dec3383111127a3c1caadab99831d7700cc05a`
 -	v2 Content-Length: 1.4 KB (1355 bytes)
--	v2 Last-Modified: Thu, 24 Mar 2016 17:52:21 GMT
 
 ## `golang:1.6.0-alpine`
 
@@ -5003,7 +4691,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `d53b28bff7f2a87abd37fef014d276be7154149a4b12c53eadf934b3faeca7af`
 
@@ -5017,7 +4704,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1beaf09f6a833c544e6370a900d2c276db6404609e58a6835e3762bece0c35ad`
 
@@ -5031,7 +4717,6 @@ ENV GOLANG_SRC_URL=https://golang.org/dl/go1.6.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `547963d724efbb628f5d8922310de54dd55c2394c2bb000939086c9c773dd2e5`
 
@@ -5045,7 +4730,6 @@ ENV GOLANG_SRC_SHA256=a96cce8ce43a9bf9b2a4c7d470bc7ee0cb00410da815980681c8353218
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75a2f7c4cb781ff9472aca10e3b6209042340dbb9a33dbffb30d166cc8de4705`
 
@@ -5059,7 +4743,6 @@ ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `379e2c12ef9a100b1a56dc4f336a3747b3adc2b4c45307c6d2d56ba379541bb3`
 
@@ -5073,7 +4756,6 @@ ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9dfbdcdb7406b06650950599b6a9bfd66ae8f1c107c55c86aa9d8fb0419baa4`
 
@@ -5087,7 +4769,6 @@ ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a62a6b583daedeec6eeba26c998a831e3b21586e91eafba912b5932e1b05ac87`
 
@@ -5123,7 +4804,6 @@ RUN set -ex \
 -	Virtual Size: 233.2 MB (233199977 bytes)
 -	v2 Blob: `sha256:ffb8eddd4166cf810bc93139c2a5ce33208d28b4e8246b456e23158a7417ed17`
 -	v2 Content-Length: 59.6 MB (59619948 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:16:28 GMT
 
 #### `5cd92dc7d38ba50c6173784b2caf23f0600142f28a4fd3fd52f915684ce6ff27`
 
@@ -5137,7 +4817,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `611b9360b5542e91d6cea1ff76bec31c13dcd6d3d377d0bf86cd37876aaf5c7e`
 
@@ -5151,7 +4830,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `defd9331c7c7b717899e8d2518c2d99b056f2d2303944af844733e16482982ab`
 
@@ -5165,7 +4843,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:c8ae99072503f3bfd1f12b1b7843db3e15a64de80d05f8915f1ee1ae34a5afbd`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 18:15:45 GMT
 
 #### `0c7216da6b72e229af0468c23aea31f366b878e23cb82385b6018e7eb2c93fb5`
 
@@ -5179,7 +4856,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1.6-alpine`
 
@@ -5203,7 +4879,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `d53b28bff7f2a87abd37fef014d276be7154149a4b12c53eadf934b3faeca7af`
 
@@ -5217,7 +4892,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1beaf09f6a833c544e6370a900d2c276db6404609e58a6835e3762bece0c35ad`
 
@@ -5231,7 +4905,6 @@ ENV GOLANG_SRC_URL=https://golang.org/dl/go1.6.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `547963d724efbb628f5d8922310de54dd55c2394c2bb000939086c9c773dd2e5`
 
@@ -5245,7 +4918,6 @@ ENV GOLANG_SRC_SHA256=a96cce8ce43a9bf9b2a4c7d470bc7ee0cb00410da815980681c8353218
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75a2f7c4cb781ff9472aca10e3b6209042340dbb9a33dbffb30d166cc8de4705`
 
@@ -5259,7 +4931,6 @@ ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `379e2c12ef9a100b1a56dc4f336a3747b3adc2b4c45307c6d2d56ba379541bb3`
 
@@ -5273,7 +4944,6 @@ ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9dfbdcdb7406b06650950599b6a9bfd66ae8f1c107c55c86aa9d8fb0419baa4`
 
@@ -5287,7 +4957,6 @@ ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a62a6b583daedeec6eeba26c998a831e3b21586e91eafba912b5932e1b05ac87`
 
@@ -5323,7 +4992,6 @@ RUN set -ex \
 -	Virtual Size: 233.2 MB (233199977 bytes)
 -	v2 Blob: `sha256:ffb8eddd4166cf810bc93139c2a5ce33208d28b4e8246b456e23158a7417ed17`
 -	v2 Content-Length: 59.6 MB (59619948 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:16:28 GMT
 
 #### `5cd92dc7d38ba50c6173784b2caf23f0600142f28a4fd3fd52f915684ce6ff27`
 
@@ -5337,7 +5005,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `611b9360b5542e91d6cea1ff76bec31c13dcd6d3d377d0bf86cd37876aaf5c7e`
 
@@ -5351,7 +5018,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `defd9331c7c7b717899e8d2518c2d99b056f2d2303944af844733e16482982ab`
 
@@ -5365,7 +5031,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:c8ae99072503f3bfd1f12b1b7843db3e15a64de80d05f8915f1ee1ae34a5afbd`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 18:15:45 GMT
 
 #### `0c7216da6b72e229af0468c23aea31f366b878e23cb82385b6018e7eb2c93fb5`
 
@@ -5379,7 +5044,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:1-alpine`
 
@@ -5403,7 +5067,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `d53b28bff7f2a87abd37fef014d276be7154149a4b12c53eadf934b3faeca7af`
 
@@ -5417,7 +5080,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1beaf09f6a833c544e6370a900d2c276db6404609e58a6835e3762bece0c35ad`
 
@@ -5431,7 +5093,6 @@ ENV GOLANG_SRC_URL=https://golang.org/dl/go1.6.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `547963d724efbb628f5d8922310de54dd55c2394c2bb000939086c9c773dd2e5`
 
@@ -5445,7 +5106,6 @@ ENV GOLANG_SRC_SHA256=a96cce8ce43a9bf9b2a4c7d470bc7ee0cb00410da815980681c8353218
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75a2f7c4cb781ff9472aca10e3b6209042340dbb9a33dbffb30d166cc8de4705`
 
@@ -5459,7 +5119,6 @@ ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `379e2c12ef9a100b1a56dc4f336a3747b3adc2b4c45307c6d2d56ba379541bb3`
 
@@ -5473,7 +5132,6 @@ ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9dfbdcdb7406b06650950599b6a9bfd66ae8f1c107c55c86aa9d8fb0419baa4`
 
@@ -5487,7 +5145,6 @@ ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a62a6b583daedeec6eeba26c998a831e3b21586e91eafba912b5932e1b05ac87`
 
@@ -5523,7 +5180,6 @@ RUN set -ex \
 -	Virtual Size: 233.2 MB (233199977 bytes)
 -	v2 Blob: `sha256:ffb8eddd4166cf810bc93139c2a5ce33208d28b4e8246b456e23158a7417ed17`
 -	v2 Content-Length: 59.6 MB (59619948 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:16:28 GMT
 
 #### `5cd92dc7d38ba50c6173784b2caf23f0600142f28a4fd3fd52f915684ce6ff27`
 
@@ -5537,7 +5193,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `611b9360b5542e91d6cea1ff76bec31c13dcd6d3d377d0bf86cd37876aaf5c7e`
 
@@ -5551,7 +5206,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `defd9331c7c7b717899e8d2518c2d99b056f2d2303944af844733e16482982ab`
 
@@ -5565,7 +5219,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:c8ae99072503f3bfd1f12b1b7843db3e15a64de80d05f8915f1ee1ae34a5afbd`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 18:15:45 GMT
 
 #### `0c7216da6b72e229af0468c23aea31f366b878e23cb82385b6018e7eb2c93fb5`
 
@@ -5579,7 +5232,6 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `golang:alpine`
 
@@ -5603,7 +5255,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `d53b28bff7f2a87abd37fef014d276be7154149a4b12c53eadf934b3faeca7af`
 
@@ -5617,7 +5268,6 @@ ENV GOLANG_VERSION=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1beaf09f6a833c544e6370a900d2c276db6404609e58a6835e3762bece0c35ad`
 
@@ -5631,7 +5281,6 @@ ENV GOLANG_SRC_URL=https://golang.org/dl/go1.6.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `547963d724efbb628f5d8922310de54dd55c2394c2bb000939086c9c773dd2e5`
 
@@ -5645,7 +5294,6 @@ ENV GOLANG_SRC_SHA256=a96cce8ce43a9bf9b2a4c7d470bc7ee0cb00410da815980681c8353218
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75a2f7c4cb781ff9472aca10e3b6209042340dbb9a33dbffb30d166cc8de4705`
 
@@ -5659,7 +5307,6 @@ ENV GOLANG_BOOTSTRAP_VERSION=1.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `379e2c12ef9a100b1a56dc4f336a3747b3adc2b4c45307c6d2d56ba379541bb3`
 
@@ -5673,7 +5320,6 @@ ENV GOLANG_BOOTSTRAP_URL=https://golang.org/dl/go1.4.3.src.tar.gz
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a9dfbdcdb7406b06650950599b6a9bfd66ae8f1c107c55c86aa9d8fb0419baa4`
 
@@ -5687,7 +5333,6 @@ ENV GOLANG_BOOTSTRAP_SHA1=486db10dc571a55c8d795365070f66d343458c48
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a62a6b583daedeec6eeba26c998a831e3b21586e91eafba912b5932e1b05ac87`
 
@@ -5723,7 +5368,6 @@ RUN set -ex \
 -	Virtual Size: 233.2 MB (233199977 bytes)
 -	v2 Blob: `sha256:ffb8eddd4166cf810bc93139c2a5ce33208d28b4e8246b456e23158a7417ed17`
 -	v2 Content-Length: 59.6 MB (59619948 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 18:16:28 GMT
 
 #### `5cd92dc7d38ba50c6173784b2caf23f0600142f28a4fd3fd52f915684ce6ff27`
 
@@ -5737,7 +5381,6 @@ ENV GOPATH=/go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `611b9360b5542e91d6cea1ff76bec31c13dcd6d3d377d0bf86cd37876aaf5c7e`
 
@@ -5751,7 +5394,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `defd9331c7c7b717899e8d2518c2d99b056f2d2303944af844733e16482982ab`
 
@@ -5765,7 +5407,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:c8ae99072503f3bfd1f12b1b7843db3e15a64de80d05f8915f1ee1ae34a5afbd`
 -	v2 Content-Length: 123.0 B
--	v2 Last-Modified: Wed, 02 Mar 2016 18:15:45 GMT
 
 #### `0c7216da6b72e229af0468c23aea31f366b878e23cb82385b6018e7eb2c93fb5`
 
@@ -5779,4 +5420,3 @@ WORKDIR /go
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

@@ -33,7 +33,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -47,7 +46,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -61,7 +59,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -75,7 +72,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -89,7 +85,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `c08fb8ee74046de23f38a3d3d1ba6dc2b9389530b1a860e2d97a787c2563e1eb`
 
@@ -103,7 +98,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -117,7 +111,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `9d1e91a783500d8f6b98b1504eac45bf5baed88b7aa988d3baab63a7ce76cda3`
 
@@ -131,7 +124,6 @@ ENV PERCONA_MAJOR=5.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ca3cde2fb120dc629cea7310517e1b840a011121e4d9d5c82aab01870c86983`
 
@@ -145,7 +137,6 @@ ENV PERCONA_VERSION=5.5.48-rel37.8-1.jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0d2254bf54ce4d7237a1fded3bbae5f65a07f1d7b3b80d6306ebc33318090907`
 
@@ -168,7 +159,6 @@ RUN { \
 -	Virtual Size: 158.6 MB (158566155 bytes)
 -	v2 Blob: `sha256:1714699d091e7de0e165e01860a2efb0e5f69a4d031e0499cf8e3c9d4cbf4928`
 -	v2 Content-Length: 46.1 MB (46084799 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:56:34 GMT
 
 #### `b8dbf1b4dfa3c49861d80bb079e87326c0ba7aa382da2c82405849f3f5ef1b26`
 
@@ -184,7 +174,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3569 bytes)
 -	v2 Blob: `sha256:638aeebb2c1d15415937b35b3089fa2b7296267bb0cd600f83177eaf5c3a1e5b`
 -	v2 Content-Length: 1.9 KB (1889 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:56:17 GMT
 
 #### `b65eca6a47d12da7fd3179ec586b7b615e7e5b5123fa60b49a211ed224075b92`
 
@@ -198,7 +187,6 @@ VOLUME [/var/lib/mysql /var/log/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6b9960fef2d91f29069164364b597f216bc39a40e69d5d959704a4426f44c2f`
 
@@ -212,7 +200,6 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:25674476437ba5055c3a7aed08d6bb9be12bb29c0d68c566f5659edfd99689ae`
 -	v2 Content-Length: 1.5 KB (1518 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:17:50 GMT
 
 #### `6feb5ed57110010b142bf54fafad44f3a62ef15001e831bea0c14ac8fbfc5487`
 
@@ -226,7 +213,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f0119b82585778bfdebc99582a98f1f39590e4b97f1b662f2953e6d4784f65bb`
 
@@ -240,7 +226,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f0383dea97d668a745c3248c86b5ea3a4908e07eeb4d2f322bb1195eeb90d14b`
 
@@ -254,7 +239,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `percona:5.5`
 
@@ -278,7 +262,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -292,7 +275,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -306,7 +288,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -320,7 +301,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -334,7 +314,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `c08fb8ee74046de23f38a3d3d1ba6dc2b9389530b1a860e2d97a787c2563e1eb`
 
@@ -348,7 +327,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -362,7 +340,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `9d1e91a783500d8f6b98b1504eac45bf5baed88b7aa988d3baab63a7ce76cda3`
 
@@ -376,7 +353,6 @@ ENV PERCONA_MAJOR=5.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2ca3cde2fb120dc629cea7310517e1b840a011121e4d9d5c82aab01870c86983`
 
@@ -390,7 +366,6 @@ ENV PERCONA_VERSION=5.5.48-rel37.8-1.jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0d2254bf54ce4d7237a1fded3bbae5f65a07f1d7b3b80d6306ebc33318090907`
 
@@ -413,7 +388,6 @@ RUN { \
 -	Virtual Size: 158.6 MB (158566155 bytes)
 -	v2 Blob: `sha256:1714699d091e7de0e165e01860a2efb0e5f69a4d031e0499cf8e3c9d4cbf4928`
 -	v2 Content-Length: 46.1 MB (46084799 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:56:34 GMT
 
 #### `b8dbf1b4dfa3c49861d80bb079e87326c0ba7aa382da2c82405849f3f5ef1b26`
 
@@ -429,7 +403,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3569 bytes)
 -	v2 Blob: `sha256:638aeebb2c1d15415937b35b3089fa2b7296267bb0cd600f83177eaf5c3a1e5b`
 -	v2 Content-Length: 1.9 KB (1889 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:56:17 GMT
 
 #### `b65eca6a47d12da7fd3179ec586b7b615e7e5b5123fa60b49a211ed224075b92`
 
@@ -443,7 +416,6 @@ VOLUME [/var/lib/mysql /var/log/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `d6b9960fef2d91f29069164364b597f216bc39a40e69d5d959704a4426f44c2f`
 
@@ -457,7 +429,6 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:25674476437ba5055c3a7aed08d6bb9be12bb29c0d68c566f5659edfd99689ae`
 -	v2 Content-Length: 1.5 KB (1518 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:17:50 GMT
 
 #### `6feb5ed57110010b142bf54fafad44f3a62ef15001e831bea0c14ac8fbfc5487`
 
@@ -471,7 +442,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f0119b82585778bfdebc99582a98f1f39590e4b97f1b662f2953e6d4784f65bb`
 
@@ -485,7 +455,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f0383dea97d668a745c3248c86b5ea3a4908e07eeb4d2f322bb1195eeb90d14b`
 
@@ -499,7 +468,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `percona:5.6.29`
 
@@ -523,7 +491,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -537,7 +504,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -551,7 +517,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -565,7 +530,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -579,7 +543,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `c08fb8ee74046de23f38a3d3d1ba6dc2b9389530b1a860e2d97a787c2563e1eb`
 
@@ -593,7 +556,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -607,7 +569,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `a40ab86d9307746dc063dc3b0fc8432bcc7908289e70c7371b91d5187041d912`
 
@@ -621,7 +582,6 @@ ENV PERCONA_MAJOR=5.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `31c1208b5706be3fc704fc5f5a15bc61f8b7a6df710854b7d4272a94ce0976d9`
 
@@ -635,7 +595,6 @@ ENV PERCONA_VERSION=5.6.29-76.2-1.jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d5ed6ca0419e65d0a549962dd744ded599f86ff55fc9adefabbd845ca90968e`
 
@@ -658,7 +617,6 @@ RUN { \
 -	Virtual Size: 183.2 MB (183239976 bytes)
 -	v2 Blob: `sha256:38ce52ca4637e1f1ba15d0b4e744b6c529bee6e94976816b0613e52f0dcd4b2d`
 -	v2 Content-Length: 52.6 MB (52644439 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:57:21 GMT
 
 #### `826391f2aff9a6e05af22a46c817587bfb66cd182cd506e929cf1f3be1339c41`
 
@@ -674,7 +632,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3569 bytes)
 -	v2 Blob: `sha256:ddecfc4740340fba3d5963afb65bd64f5faa09c31f69acd0d0e5282c6e0d0030`
 -	v2 Content-Length: 1.9 KB (1887 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:57:01 GMT
 
 #### `2a15398b8263711e5678edc243b65e241e3a281e15a188d99950c91d5ef626c8`
 
@@ -688,7 +645,6 @@ VOLUME [/var/lib/mysql /var/log/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4665addb1f54d835e7081590c36ff5b04c56bca1009e16d779d4f191a4ed9031`
 
@@ -702,7 +658,6 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:25674476437ba5055c3a7aed08d6bb9be12bb29c0d68c566f5659edfd99689ae`
 -	v2 Content-Length: 1.5 KB (1518 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:17:50 GMT
 
 #### `8f108e8bbdd8b9d1b53c1853ac6bf7ad20dcf33bb8557cf5a5204ac7c7224175`
 
@@ -716,7 +671,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `667d43dd9a83e9292c7a40d915f342c83147641b783d20de523ba16e01eec4c2`
 
@@ -730,7 +684,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c8170711eb9b2363296a54189984843c4811a643d5d531ae0cb4398aac398500`
 
@@ -744,7 +697,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `percona:5.6`
 
@@ -768,7 +720,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -782,7 +733,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -796,7 +746,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -810,7 +759,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -824,7 +772,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `c08fb8ee74046de23f38a3d3d1ba6dc2b9389530b1a860e2d97a787c2563e1eb`
 
@@ -838,7 +785,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -852,7 +798,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `a40ab86d9307746dc063dc3b0fc8432bcc7908289e70c7371b91d5187041d912`
 
@@ -866,7 +811,6 @@ ENV PERCONA_MAJOR=5.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `31c1208b5706be3fc704fc5f5a15bc61f8b7a6df710854b7d4272a94ce0976d9`
 
@@ -880,7 +824,6 @@ ENV PERCONA_VERSION=5.6.29-76.2-1.jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8d5ed6ca0419e65d0a549962dd744ded599f86ff55fc9adefabbd845ca90968e`
 
@@ -903,7 +846,6 @@ RUN { \
 -	Virtual Size: 183.2 MB (183239976 bytes)
 -	v2 Blob: `sha256:38ce52ca4637e1f1ba15d0b4e744b6c529bee6e94976816b0613e52f0dcd4b2d`
 -	v2 Content-Length: 52.6 MB (52644439 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:57:21 GMT
 
 #### `826391f2aff9a6e05af22a46c817587bfb66cd182cd506e929cf1f3be1339c41`
 
@@ -919,7 +861,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3569 bytes)
 -	v2 Blob: `sha256:ddecfc4740340fba3d5963afb65bd64f5faa09c31f69acd0d0e5282c6e0d0030`
 -	v2 Content-Length: 1.9 KB (1887 bytes)
--	v2 Last-Modified: Wed, 09 Mar 2016 05:57:01 GMT
 
 #### `2a15398b8263711e5678edc243b65e241e3a281e15a188d99950c91d5ef626c8`
 
@@ -933,7 +874,6 @@ VOLUME [/var/lib/mysql /var/log/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4665addb1f54d835e7081590c36ff5b04c56bca1009e16d779d4f191a4ed9031`
 
@@ -947,7 +887,6 @@ COPY file:aa28d41ad1fc6d5d91138713875a13e0072a27a618f53d8db966e85384f3d1ea in /
 -	Virtual Size: 3.2 KB (3237 bytes)
 -	v2 Blob: `sha256:25674476437ba5055c3a7aed08d6bb9be12bb29c0d68c566f5659edfd99689ae`
 -	v2 Content-Length: 1.5 KB (1518 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:17:50 GMT
 
 #### `8f108e8bbdd8b9d1b53c1853ac6bf7ad20dcf33bb8557cf5a5204ac7c7224175`
 
@@ -961,7 +900,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `667d43dd9a83e9292c7a40d915f342c83147641b783d20de523ba16e01eec4c2`
 
@@ -975,7 +913,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c8170711eb9b2363296a54189984843c4811a643d5d531ae0cb4398aac398500`
 
@@ -989,7 +926,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `percona:5.7.11`
 
@@ -1013,7 +949,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1027,7 +962,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -1041,7 +975,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1055,7 +988,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -1069,7 +1001,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `c08fb8ee74046de23f38a3d3d1ba6dc2b9389530b1a860e2d97a787c2563e1eb`
 
@@ -1083,7 +1014,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -1097,7 +1027,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `dfdf8084566ecc90cfde9c7fff1edbd83586e3626cf45d776d88a35b754030b2`
 
@@ -1111,7 +1040,6 @@ ENV PERCONA_MAJOR=5.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `978d957c7e9a77c118534eca085b94de65172b9c18eaf985b6e9e791a421bbdf`
 
@@ -1125,7 +1053,6 @@ ENV PERCONA_VERSION=5.7.11-4-1.jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e1da59de9500daefff220dbcf69736da819a8d1b7ab34789690850efe56b7fd7`
 
@@ -1148,7 +1075,6 @@ RUN { \
 -	Virtual Size: 183.7 MB (183722083 bytes)
 -	v2 Blob: `sha256:4d3971b67f39197e5c557e6f2b5de1374f8f3bf32ea6d1ad0df06bad8b3a10d2`
 -	v2 Content-Length: 57.0 MB (56976779 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:53 GMT
 
 #### `552f67e1c3311961dfd7442e14dd14d169a8a198cea49681d986ba534fef1959`
 
@@ -1164,7 +1090,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:016cf4ebb2682c93fec4ec56716bfd2a1ddbc25d1d845f6174d858d2fab9db7c`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:33 GMT
 
 #### `6dcc028fefa9e34a299ae88f94a13613d2d5024d849f3d7b449ad1529e60c4bb`
 
@@ -1178,7 +1103,6 @@ VOLUME [/var/lib/mysql /var/log/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c0c518d59d0bc62a885887133a9b8095b5b29ea3346a50d02672a19d9970fefd`
 
@@ -1192,7 +1116,6 @@ COPY file:3c9ca97ea611fabfb41989e386939c847f7289257817dbc65e813a399a39224d in /
 -	Virtual Size: 3.3 KB (3308 bytes)
 -	v2 Blob: `sha256:25fbe621a2ed9adcc0d42042d63fffa69ce3b28594b90f0c84150664b70f1664`
 -	v2 Content-Length: 1.5 KB (1515 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:18:47 GMT
 
 #### `1542df7e883c1c219ff30ca34d9ea8841e60a54afa73d268ba5858c433435b69`
 
@@ -1206,7 +1129,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e760546010d27067c1e77e20b8e6488ff68dfc9f5a3f11cefe4639b8948993e7`
 
@@ -1220,7 +1142,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe10fb05f8ffca4f5e8f583928161aaac770dca43f53fbb31f53ee0b45aac172`
 
@@ -1234,7 +1155,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `percona:5.7`
 
@@ -1258,7 +1178,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1272,7 +1191,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -1286,7 +1204,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1300,7 +1217,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -1314,7 +1230,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `c08fb8ee74046de23f38a3d3d1ba6dc2b9389530b1a860e2d97a787c2563e1eb`
 
@@ -1328,7 +1243,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -1342,7 +1256,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `dfdf8084566ecc90cfde9c7fff1edbd83586e3626cf45d776d88a35b754030b2`
 
@@ -1356,7 +1269,6 @@ ENV PERCONA_MAJOR=5.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `978d957c7e9a77c118534eca085b94de65172b9c18eaf985b6e9e791a421bbdf`
 
@@ -1370,7 +1282,6 @@ ENV PERCONA_VERSION=5.7.11-4-1.jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e1da59de9500daefff220dbcf69736da819a8d1b7ab34789690850efe56b7fd7`
 
@@ -1393,7 +1304,6 @@ RUN { \
 -	Virtual Size: 183.7 MB (183722083 bytes)
 -	v2 Blob: `sha256:4d3971b67f39197e5c557e6f2b5de1374f8f3bf32ea6d1ad0df06bad8b3a10d2`
 -	v2 Content-Length: 57.0 MB (56976779 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:53 GMT
 
 #### `552f67e1c3311961dfd7442e14dd14d169a8a198cea49681d986ba534fef1959`
 
@@ -1409,7 +1319,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:016cf4ebb2682c93fec4ec56716bfd2a1ddbc25d1d845f6174d858d2fab9db7c`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:33 GMT
 
 #### `6dcc028fefa9e34a299ae88f94a13613d2d5024d849f3d7b449ad1529e60c4bb`
 
@@ -1423,7 +1332,6 @@ VOLUME [/var/lib/mysql /var/log/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c0c518d59d0bc62a885887133a9b8095b5b29ea3346a50d02672a19d9970fefd`
 
@@ -1437,7 +1345,6 @@ COPY file:3c9ca97ea611fabfb41989e386939c847f7289257817dbc65e813a399a39224d in /
 -	Virtual Size: 3.3 KB (3308 bytes)
 -	v2 Blob: `sha256:25fbe621a2ed9adcc0d42042d63fffa69ce3b28594b90f0c84150664b70f1664`
 -	v2 Content-Length: 1.5 KB (1515 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:18:47 GMT
 
 #### `1542df7e883c1c219ff30ca34d9ea8841e60a54afa73d268ba5858c433435b69`
 
@@ -1451,7 +1358,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e760546010d27067c1e77e20b8e6488ff68dfc9f5a3f11cefe4639b8948993e7`
 
@@ -1465,7 +1371,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe10fb05f8ffca4f5e8f583928161aaac770dca43f53fbb31f53ee0b45aac172`
 
@@ -1479,7 +1384,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `percona:5`
 
@@ -1503,7 +1407,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1517,7 +1420,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -1531,7 +1433,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1545,7 +1446,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -1559,7 +1459,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `c08fb8ee74046de23f38a3d3d1ba6dc2b9389530b1a860e2d97a787c2563e1eb`
 
@@ -1573,7 +1472,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -1587,7 +1485,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `dfdf8084566ecc90cfde9c7fff1edbd83586e3626cf45d776d88a35b754030b2`
 
@@ -1601,7 +1498,6 @@ ENV PERCONA_MAJOR=5.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `978d957c7e9a77c118534eca085b94de65172b9c18eaf985b6e9e791a421bbdf`
 
@@ -1615,7 +1511,6 @@ ENV PERCONA_VERSION=5.7.11-4-1.jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e1da59de9500daefff220dbcf69736da819a8d1b7ab34789690850efe56b7fd7`
 
@@ -1638,7 +1533,6 @@ RUN { \
 -	Virtual Size: 183.7 MB (183722083 bytes)
 -	v2 Blob: `sha256:4d3971b67f39197e5c557e6f2b5de1374f8f3bf32ea6d1ad0df06bad8b3a10d2`
 -	v2 Content-Length: 57.0 MB (56976779 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:53 GMT
 
 #### `552f67e1c3311961dfd7442e14dd14d169a8a198cea49681d986ba534fef1959`
 
@@ -1654,7 +1548,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:016cf4ebb2682c93fec4ec56716bfd2a1ddbc25d1d845f6174d858d2fab9db7c`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:33 GMT
 
 #### `6dcc028fefa9e34a299ae88f94a13613d2d5024d849f3d7b449ad1529e60c4bb`
 
@@ -1668,7 +1561,6 @@ VOLUME [/var/lib/mysql /var/log/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c0c518d59d0bc62a885887133a9b8095b5b29ea3346a50d02672a19d9970fefd`
 
@@ -1682,7 +1574,6 @@ COPY file:3c9ca97ea611fabfb41989e386939c847f7289257817dbc65e813a399a39224d in /
 -	Virtual Size: 3.3 KB (3308 bytes)
 -	v2 Blob: `sha256:25fbe621a2ed9adcc0d42042d63fffa69ce3b28594b90f0c84150664b70f1664`
 -	v2 Content-Length: 1.5 KB (1515 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:18:47 GMT
 
 #### `1542df7e883c1c219ff30ca34d9ea8841e60a54afa73d268ba5858c433435b69`
 
@@ -1696,7 +1587,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e760546010d27067c1e77e20b8e6488ff68dfc9f5a3f11cefe4639b8948993e7`
 
@@ -1710,7 +1600,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe10fb05f8ffca4f5e8f583928161aaac770dca43f53fbb31f53ee0b45aac172`
 
@@ -1724,7 +1613,6 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `percona:latest`
 
@@ -1748,7 +1636,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1762,7 +1649,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `09338e0f50334a005601b71c789365ebb86b37592202a054c65b53fc0b097698`
 
@@ -1776,7 +1662,6 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 -	Virtual Size: 330.4 KB (330368 bytes)
 -	v2 Blob: `sha256:2d9b55a3764729ba185a3796ede98bf9261d01d959dd719ba1b02e9e73305696`
 -	v2 Content-Length: 2.0 KB (2040 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:14 GMT
 
 #### `fe33975b5ebc3e12981af6591f5aff2b8e0a1e35083cbac3c92249e54cdb190e`
 
@@ -1790,7 +1675,6 @@ RUN apt-get update && apt-get install -y pwgen && rm -rf /var/lib/apt/lists/*
 -	Virtual Size: 299.5 KB (299516 bytes)
 -	v2 Blob: `sha256:88a4bacbf934fc1f25ef91865ec2188a58fac982cf3866c4dc4487749b1207ce`
 -	v2 Content-Length: 80.4 KB (80400 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:11 GMT
 
 #### `acc17fd03d707ef62f8813b19b4d9e012d837850e3f2576066c7eb004b28cb86`
 
@@ -1804,7 +1688,6 @@ RUN mkdir /docker-entrypoint-initdb.d
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:d2f0eb2850d31bd6c5f05b666c94d527a818a824a79b416a1f3ca6fb510ca67b`
 -	v2 Content-Length: 113.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:50:07 GMT
 
 #### `c08fb8ee74046de23f38a3d3d1ba6dc2b9389530b1a860e2d97a787c2563e1eb`
 
@@ -1818,7 +1701,6 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C
 -	Virtual Size: 1.2 KB (1186 bytes)
 -	v2 Blob: `sha256:b62e4169c09f477b3160282ad574a8588563e82d364ca8ee608cad8ba76ee7bc`
 -	v2 Content-Length: 1.4 KB (1427 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:58 GMT
 
 #### `55b36dbc1977781f2198cd049d79641e21cd8de4213e6cdce940305c13cb609e`
 
@@ -1832,7 +1714,6 @@ RUN echo 'deb http://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d
 -	Virtual Size: 44.0 B
 -	v2 Blob: `sha256:cc90f737067f491eeb80944cdddaee6d2ee9245cce1c329740da78b2de09725f`
 -	v2 Content-Length: 207.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 17:19:56 GMT
 
 #### `dfdf8084566ecc90cfde9c7fff1edbd83586e3626cf45d776d88a35b754030b2`
 
@@ -1846,7 +1727,6 @@ ENV PERCONA_MAJOR=5.7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `978d957c7e9a77c118534eca085b94de65172b9c18eaf985b6e9e791a421bbdf`
 
@@ -1860,7 +1740,6 @@ ENV PERCONA_VERSION=5.7.11-4-1.jessie
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e1da59de9500daefff220dbcf69736da819a8d1b7ab34789690850efe56b7fd7`
 
@@ -1883,7 +1762,6 @@ RUN { \
 -	Virtual Size: 183.7 MB (183722083 bytes)
 -	v2 Blob: `sha256:4d3971b67f39197e5c557e6f2b5de1374f8f3bf32ea6d1ad0df06bad8b3a10d2`
 -	v2 Content-Length: 57.0 MB (56976779 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:53 GMT
 
 #### `552f67e1c3311961dfd7442e14dd14d169a8a198cea49681d986ba534fef1959`
 
@@ -1899,7 +1777,6 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 -	Virtual Size: 3.6 KB (3572 bytes)
 -	v2 Blob: `sha256:016cf4ebb2682c93fec4ec56716bfd2a1ddbc25d1d845f6174d858d2fab9db7c`
 -	v2 Content-Length: 1.9 KB (1890 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 18:34:33 GMT
 
 #### `6dcc028fefa9e34a299ae88f94a13613d2d5024d849f3d7b449ad1529e60c4bb`
 
@@ -1913,7 +1790,6 @@ VOLUME [/var/lib/mysql /var/log/mysql]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `c0c518d59d0bc62a885887133a9b8095b5b29ea3346a50d02672a19d9970fefd`
 
@@ -1927,7 +1803,6 @@ COPY file:3c9ca97ea611fabfb41989e386939c847f7289257817dbc65e813a399a39224d in /
 -	Virtual Size: 3.3 KB (3308 bytes)
 -	v2 Blob: `sha256:25fbe621a2ed9adcc0d42042d63fffa69ce3b28594b90f0c84150664b70f1664`
 -	v2 Content-Length: 1.5 KB (1515 bytes)
--	v2 Last-Modified: Mon, 14 Mar 2016 23:18:47 GMT
 
 #### `1542df7e883c1c219ff30ca34d9ea8841e60a54afa73d268ba5858c433435b69`
 
@@ -1941,7 +1816,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e760546010d27067c1e77e20b8e6488ff68dfc9f5a3f11cefe4639b8948993e7`
 
@@ -1955,7 +1829,6 @@ EXPOSE 3306/tcp
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `fe10fb05f8ffca4f5e8f583928161aaac770dca43f53fbb31f53ee0b45aac172`
 
@@ -1969,4 +1842,3 @@ CMD ["mysqld"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

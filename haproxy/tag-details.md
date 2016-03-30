@@ -41,7 +41,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -55,7 +54,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41d768f1d2e7c0c7d961d56d95e53ef0a047ed8dfda2366bbf8aed5967ba61f2`
 
@@ -69,7 +67,6 @@ RUN apt-get update && apt-get install -y libpcre3 --no-install-recommends && rm 
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:73741c5e3419b8e4f90212635a8361abe17d6b597a734f10b3f1477a2f52fbaa`
 -	v2 Content-Length: 203.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:25:29 GMT
 
 #### `9038b2ca872d3aa0227ff271904ff4e0844d4bc72025d3b851f5303e848e746c`
 
@@ -83,7 +80,6 @@ ENV HAPROXY_MAJOR=1.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32fd9e7b784bcd9e7248bf38e44cfc29732e67a99aa861da0276d7aa6d2cad32`
 
@@ -97,7 +93,6 @@ ENV HAPROXY_VERSION=1.4.27
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b17694e7bd6131a2e58cc6d34789dafc8cc979838cf6145f3f0a9ee6774e47e7`
 
@@ -111,7 +106,6 @@ ENV HAPROXY_MD5=459b82968791472427326ea009834c66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e187b3945ab0fde1505aa01fac47a9683674ea5008bd83eced72c7ca4234e285`
 
@@ -143,7 +137,6 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 7.5 MB (7535362 bytes)
 -	v2 Blob: `sha256:2f0459f79b6380e5e94a6238e8de6d1c9efd2f4f075ea97a760b5f2835175853`
 -	v2 Content-Length: 3.2 MB (3203996 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:22:26 GMT
 
 #### `ab269e625ec9d7cf3b1677d107168169bf496a1eb0ea0d50c4ac0706edd61d94`
 
@@ -157,7 +150,6 @@ COPY file:f2c2ca6cbd89063624d751f662d8f4f070d3e4f41ea221d2aefe457721355878 in /
 -	Virtual Size: 122.0 B
 -	v2 Blob: `sha256:3bc7ae170f6efbc6793f519261f7f1698bf650e65a757a64d7cf1fc84080df1c`
 -	v2 Content-Length: 214.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:30:56 GMT
 
 #### `af7ee6f5351c2cbf733eaf870adf4700fc9b24758f43ae40819e78e6bc3d9277`
 
@@ -171,7 +163,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e30cba5fbe09b4639db30cafaaae10baa5c5be6e1418733a51164487fde499b1`
 
@@ -185,7 +176,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.4`
 
@@ -209,7 +199,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -223,7 +212,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `41d768f1d2e7c0c7d961d56d95e53ef0a047ed8dfda2366bbf8aed5967ba61f2`
 
@@ -237,7 +225,6 @@ RUN apt-get update && apt-get install -y libpcre3 --no-install-recommends && rm 
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:73741c5e3419b8e4f90212635a8361abe17d6b597a734f10b3f1477a2f52fbaa`
 -	v2 Content-Length: 203.0 B
--	v2 Last-Modified: Thu, 03 Mar 2016 16:25:29 GMT
 
 #### `9038b2ca872d3aa0227ff271904ff4e0844d4bc72025d3b851f5303e848e746c`
 
@@ -251,7 +238,6 @@ ENV HAPROXY_MAJOR=1.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32fd9e7b784bcd9e7248bf38e44cfc29732e67a99aa861da0276d7aa6d2cad32`
 
@@ -265,7 +251,6 @@ ENV HAPROXY_VERSION=1.4.27
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `b17694e7bd6131a2e58cc6d34789dafc8cc979838cf6145f3f0a9ee6774e47e7`
 
@@ -279,7 +264,6 @@ ENV HAPROXY_MD5=459b82968791472427326ea009834c66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e187b3945ab0fde1505aa01fac47a9683674ea5008bd83eced72c7ca4234e285`
 
@@ -311,7 +295,6 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 7.5 MB (7535362 bytes)
 -	v2 Blob: `sha256:2f0459f79b6380e5e94a6238e8de6d1c9efd2f4f075ea97a760b5f2835175853`
 -	v2 Content-Length: 3.2 MB (3203996 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:22:26 GMT
 
 #### `ab269e625ec9d7cf3b1677d107168169bf496a1eb0ea0d50c4ac0706edd61d94`
 
@@ -325,7 +308,6 @@ COPY file:f2c2ca6cbd89063624d751f662d8f4f070d3e4f41ea221d2aefe457721355878 in /
 -	Virtual Size: 122.0 B
 -	v2 Blob: `sha256:3bc7ae170f6efbc6793f519261f7f1698bf650e65a757a64d7cf1fc84080df1c`
 -	v2 Content-Length: 214.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:30:56 GMT
 
 #### `af7ee6f5351c2cbf733eaf870adf4700fc9b24758f43ae40819e78e6bc3d9277`
 
@@ -339,7 +321,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e30cba5fbe09b4639db30cafaaae10baa5c5be6e1418733a51164487fde499b1`
 
@@ -353,7 +334,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.4.27-alpine`
 
@@ -377,7 +357,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `487859ca88406f70186466111fc448c463fa6bc760d2b554248ba19eec7fbe7b`
 
@@ -391,7 +370,6 @@ ENV HAPROXY_MAJOR=1.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94ba7aac17865cf4da226ebb05612768577499d0cbc8d65255ebd355ddadc47f`
 
@@ -405,7 +383,6 @@ ENV HAPROXY_VERSION=1.4.27
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `81b230110ebe07ea118214c90900a3bf251cc6b0d67a5a1472cc3ca5968d94f5`
 
@@ -419,7 +396,6 @@ ENV HAPROXY_MD5=459b82968791472427326ea009834c66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7e1a6e86ea032380b6f2704242d7a0bdf9a8410fec00998a566dd7e60628f69b`
 
@@ -467,7 +443,6 @@ RUN set -x \
 -	Virtual Size: 2.5 MB (2512826 bytes)
 -	v2 Blob: `sha256:bc83a55ea36434f839c50e066ec572941235be816fb3d77884a02c6195d41977`
 -	v2 Content-Length: 1.0 MB (1035779 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:22:42 GMT
 
 #### `31c6f6e0d57dcafe46c153fdada9cf3bf8bd4077262999dc8fdbd7e91a2b86a6`
 
@@ -481,7 +456,6 @@ COPY file:f2c2ca6cbd89063624d751f662d8f4f070d3e4f41ea221d2aefe457721355878 in /
 -	Virtual Size: 122.0 B
 -	v2 Blob: `sha256:3bc7ae170f6efbc6793f519261f7f1698bf650e65a757a64d7cf1fc84080df1c`
 -	v2 Content-Length: 214.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:30:56 GMT
 
 #### `725b413d9af325337173c1799817f12459ea497463b3731abaacf835ef5e4936`
 
@@ -495,7 +469,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8edc523500fbf5c0e615b3ad74bdf1bba24a719823ee041b9b2b1d39c0bfed`
 
@@ -509,7 +482,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.4-alpine`
 
@@ -533,7 +505,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `487859ca88406f70186466111fc448c463fa6bc760d2b554248ba19eec7fbe7b`
 
@@ -547,7 +518,6 @@ ENV HAPROXY_MAJOR=1.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `94ba7aac17865cf4da226ebb05612768577499d0cbc8d65255ebd355ddadc47f`
 
@@ -561,7 +531,6 @@ ENV HAPROXY_VERSION=1.4.27
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `81b230110ebe07ea118214c90900a3bf251cc6b0d67a5a1472cc3ca5968d94f5`
 
@@ -575,7 +544,6 @@ ENV HAPROXY_MD5=459b82968791472427326ea009834c66
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `7e1a6e86ea032380b6f2704242d7a0bdf9a8410fec00998a566dd7e60628f69b`
 
@@ -623,7 +591,6 @@ RUN set -x \
 -	Virtual Size: 2.5 MB (2512826 bytes)
 -	v2 Blob: `sha256:bc83a55ea36434f839c50e066ec572941235be816fb3d77884a02c6195d41977`
 -	v2 Content-Length: 1.0 MB (1035779 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:22:42 GMT
 
 #### `31c6f6e0d57dcafe46c153fdada9cf3bf8bd4077262999dc8fdbd7e91a2b86a6`
 
@@ -637,7 +604,6 @@ COPY file:f2c2ca6cbd89063624d751f662d8f4f070d3e4f41ea221d2aefe457721355878 in /
 -	Virtual Size: 122.0 B
 -	v2 Blob: `sha256:3bc7ae170f6efbc6793f519261f7f1698bf650e65a757a64d7cf1fc84080df1c`
 -	v2 Content-Length: 214.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:30:56 GMT
 
 #### `725b413d9af325337173c1799817f12459ea497463b3731abaacf835ef5e4936`
 
@@ -651,7 +617,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `aa8edc523500fbf5c0e615b3ad74bdf1bba24a719823ee041b9b2b1d39c0bfed`
 
@@ -665,7 +630,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.5.16`
 
@@ -689,7 +653,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -703,7 +666,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb14a30dc0e90550f23cca49ecf46f0ff5ec0b46c8c6ff04e33919775a9631d`
 
@@ -717,7 +679,6 @@ RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recom
 -	Virtual Size: 4.6 MB (4640266 bytes)
 -	v2 Blob: `sha256:75e457aad69ad5655142ee143ceee08ad90c9e01230d5b6d2b040140c92d14f3`
 -	v2 Content-Length: 1.7 MB (1686674 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:24:54 GMT
 
 #### `c186098848f88a8c75999461ffb5720fafc2bf8526687361424140c9a4d0f1c6`
 
@@ -731,7 +692,6 @@ ENV HAPROXY_MAJOR=1.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418d026006f35e58353046b7ad1bbf4e9221b7f3b2d0a47dc16e1a679cad8f37`
 
@@ -745,7 +705,6 @@ ENV HAPROXY_VERSION=1.5.16
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9de86f61f8be5bacf4dc7b7b8ef19d5580188527ac468960d8b831a225d608c6`
 
@@ -759,7 +718,6 @@ ENV HAPROXY_MD5=294fdb5aaaccba00c2070e5f4baf9f0e
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `338bbf93425da65be3ef6cec80d6706d0f7d266afa1de6cd45d8eeca3213325b`
 
@@ -791,7 +749,6 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 8.6 MB (8569876 bytes)
 -	v2 Blob: `sha256:93ac2e587e39ce6f1d071d58fa22443c8ec750d2840f6705c237c3a116c2cf39`
 -	v2 Content-Length: 4.0 MB (3998247 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:01 GMT
 
 #### `c1c9aa5a815a2c0874f6ad013969d70343d195d25cdfdd915460482f79c2c81d`
 
@@ -805,7 +762,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `222c3bc70580755ee5cdba6117e6882170ec49f48940519cfca3cee1def0104e`
 
@@ -819,7 +775,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8574333d6cacdebff603baf9981843a875d9fa8ef639c7cafba3d99ad54c6d30`
 
@@ -833,7 +788,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.5`
 
@@ -857,7 +811,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -871,7 +824,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb14a30dc0e90550f23cca49ecf46f0ff5ec0b46c8c6ff04e33919775a9631d`
 
@@ -885,7 +837,6 @@ RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recom
 -	Virtual Size: 4.6 MB (4640266 bytes)
 -	v2 Blob: `sha256:75e457aad69ad5655142ee143ceee08ad90c9e01230d5b6d2b040140c92d14f3`
 -	v2 Content-Length: 1.7 MB (1686674 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:24:54 GMT
 
 #### `c186098848f88a8c75999461ffb5720fafc2bf8526687361424140c9a4d0f1c6`
 
@@ -899,7 +850,6 @@ ENV HAPROXY_MAJOR=1.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `418d026006f35e58353046b7ad1bbf4e9221b7f3b2d0a47dc16e1a679cad8f37`
 
@@ -913,7 +863,6 @@ ENV HAPROXY_VERSION=1.5.16
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9de86f61f8be5bacf4dc7b7b8ef19d5580188527ac468960d8b831a225d608c6`
 
@@ -927,7 +876,6 @@ ENV HAPROXY_MD5=294fdb5aaaccba00c2070e5f4baf9f0e
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `338bbf93425da65be3ef6cec80d6706d0f7d266afa1de6cd45d8eeca3213325b`
 
@@ -959,7 +907,6 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 8.6 MB (8569876 bytes)
 -	v2 Blob: `sha256:93ac2e587e39ce6f1d071d58fa22443c8ec750d2840f6705c237c3a116c2cf39`
 -	v2 Content-Length: 4.0 MB (3998247 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:01 GMT
 
 #### `c1c9aa5a815a2c0874f6ad013969d70343d195d25cdfdd915460482f79c2c81d`
 
@@ -973,7 +920,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `222c3bc70580755ee5cdba6117e6882170ec49f48940519cfca3cee1def0104e`
 
@@ -987,7 +933,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `8574333d6cacdebff603baf9981843a875d9fa8ef639c7cafba3d99ad54c6d30`
 
@@ -1001,7 +946,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.5.16-alpine`
 
@@ -1025,7 +969,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `a316f3495575e6b24e30a27a767ea748cc8f83b00ed10b623ff2dd486df03be4`
 
@@ -1039,7 +982,6 @@ ENV HAPROXY_MAJOR=1.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `758cfd1260533780b0ad72107cd6b5659e15d1411ffdeef5b4b187cde744bbd6`
 
@@ -1053,7 +995,6 @@ ENV HAPROXY_VERSION=1.5.16
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79297d3408fd75acb0bf3ebc98fa47f8140eb68b0005263923ed3962d7b92780`
 
@@ -1067,7 +1008,6 @@ ENV HAPROXY_MD5=294fdb5aaaccba00c2070e5f4baf9f0e
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2b05c6b970efbfbd38ce0942016fd04f75c42fa53f70455f04c855fae6ef05ee`
 
@@ -1115,7 +1055,6 @@ RUN set -x \
 -	Virtual Size: 5.0 MB (4985862 bytes)
 -	v2 Blob: `sha256:aa1732df866b3386d808298d5f5b784aa0740d5a509073f8a8d2aa868da102aa`
 -	v2 Content-Length: 2.2 MB (2228612 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:17 GMT
 
 #### `5f1fd00c320917da408290703fee706350c4713f33f57852c176d9e88d8d9619`
 
@@ -1129,7 +1068,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `a688cd1ef010fa5d0b09146a7c8ae16f02ce2f72c6f512614254e87be3c04b10`
 
@@ -1143,7 +1081,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f641de85f636b67a3cf415c7f1daf6137a46a52960bae32ee249881ff309c9cd`
 
@@ -1157,7 +1094,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.5-alpine`
 
@@ -1181,7 +1117,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `a316f3495575e6b24e30a27a767ea748cc8f83b00ed10b623ff2dd486df03be4`
 
@@ -1195,7 +1130,6 @@ ENV HAPROXY_MAJOR=1.5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `758cfd1260533780b0ad72107cd6b5659e15d1411ffdeef5b4b187cde744bbd6`
 
@@ -1209,7 +1143,6 @@ ENV HAPROXY_VERSION=1.5.16
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `79297d3408fd75acb0bf3ebc98fa47f8140eb68b0005263923ed3962d7b92780`
 
@@ -1223,7 +1156,6 @@ ENV HAPROXY_MD5=294fdb5aaaccba00c2070e5f4baf9f0e
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2b05c6b970efbfbd38ce0942016fd04f75c42fa53f70455f04c855fae6ef05ee`
 
@@ -1271,7 +1203,6 @@ RUN set -x \
 -	Virtual Size: 5.0 MB (4985862 bytes)
 -	v2 Blob: `sha256:aa1732df866b3386d808298d5f5b784aa0740d5a509073f8a8d2aa868da102aa`
 -	v2 Content-Length: 2.2 MB (2228612 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:17 GMT
 
 #### `5f1fd00c320917da408290703fee706350c4713f33f57852c176d9e88d8d9619`
 
@@ -1285,7 +1216,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `a688cd1ef010fa5d0b09146a7c8ae16f02ce2f72c6f512614254e87be3c04b10`
 
@@ -1299,7 +1229,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f641de85f636b67a3cf415c7f1daf6137a46a52960bae32ee249881ff309c9cd`
 
@@ -1313,7 +1242,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.6.4`
 
@@ -1337,7 +1265,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1351,7 +1278,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb14a30dc0e90550f23cca49ecf46f0ff5ec0b46c8c6ff04e33919775a9631d`
 
@@ -1365,7 +1291,6 @@ RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recom
 -	Virtual Size: 4.6 MB (4640266 bytes)
 -	v2 Blob: `sha256:75e457aad69ad5655142ee143ceee08ad90c9e01230d5b6d2b040140c92d14f3`
 -	v2 Content-Length: 1.7 MB (1686674 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:24:54 GMT
 
 #### `a500161b744999bfbba144780da86baa70483d46eeed928991a782da98114553`
 
@@ -1379,7 +1304,6 @@ ENV HAPROXY_MAJOR=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597206d5489c016b9a762f5947e9bcf38870a076ebf93676328c96c6f6426cd8`
 
@@ -1393,7 +1317,6 @@ ENV HAPROXY_VERSION=1.6.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9b5cf743d762179472fabd1956785a291ce895bc3925cd3c582fc3660b67d847`
 
@@ -1407,7 +1330,6 @@ ENV HAPROXY_MD5=ee107312ef58432859ee12bf048025ab
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c53e782a38be47facf4b4f2cb3ec266f518c7658d7e646eb0d485658e22bddf`
 
@@ -1439,7 +1361,6 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 9.4 MB (9361868 bytes)
 -	v2 Blob: `sha256:55239e302309636e541e90faaec1f55b8f3860e534c8e8b9dd045fa157867eab`
 -	v2 Content-Length: 4.3 MB (4340254 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:35 GMT
 
 #### `317efb4c3e0d1b418dbc8bb58a4e28672bb6d62c92523c644c2470faa00a7555`
 
@@ -1453,7 +1374,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `a24cedefd339dc6d4cd12ad056bfeafee2ada171d88d43b9f0efbdd408317f39`
 
@@ -1467,7 +1387,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3cd0f85a26982c538ec7e48ffb7a36e80fe3075c17c62cf377dd50136abc241f`
 
@@ -1481,7 +1400,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.6`
 
@@ -1505,7 +1423,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1519,7 +1436,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb14a30dc0e90550f23cca49ecf46f0ff5ec0b46c8c6ff04e33919775a9631d`
 
@@ -1533,7 +1449,6 @@ RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recom
 -	Virtual Size: 4.6 MB (4640266 bytes)
 -	v2 Blob: `sha256:75e457aad69ad5655142ee143ceee08ad90c9e01230d5b6d2b040140c92d14f3`
 -	v2 Content-Length: 1.7 MB (1686674 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:24:54 GMT
 
 #### `a500161b744999bfbba144780da86baa70483d46eeed928991a782da98114553`
 
@@ -1547,7 +1462,6 @@ ENV HAPROXY_MAJOR=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597206d5489c016b9a762f5947e9bcf38870a076ebf93676328c96c6f6426cd8`
 
@@ -1561,7 +1475,6 @@ ENV HAPROXY_VERSION=1.6.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9b5cf743d762179472fabd1956785a291ce895bc3925cd3c582fc3660b67d847`
 
@@ -1575,7 +1488,6 @@ ENV HAPROXY_MD5=ee107312ef58432859ee12bf048025ab
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c53e782a38be47facf4b4f2cb3ec266f518c7658d7e646eb0d485658e22bddf`
 
@@ -1607,7 +1519,6 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 9.4 MB (9361868 bytes)
 -	v2 Blob: `sha256:55239e302309636e541e90faaec1f55b8f3860e534c8e8b9dd045fa157867eab`
 -	v2 Content-Length: 4.3 MB (4340254 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:35 GMT
 
 #### `317efb4c3e0d1b418dbc8bb58a4e28672bb6d62c92523c644c2470faa00a7555`
 
@@ -1621,7 +1532,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `a24cedefd339dc6d4cd12ad056bfeafee2ada171d88d43b9f0efbdd408317f39`
 
@@ -1635,7 +1545,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3cd0f85a26982c538ec7e48ffb7a36e80fe3075c17c62cf377dd50136abc241f`
 
@@ -1649,7 +1558,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1`
 
@@ -1673,7 +1581,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1687,7 +1594,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb14a30dc0e90550f23cca49ecf46f0ff5ec0b46c8c6ff04e33919775a9631d`
 
@@ -1701,7 +1607,6 @@ RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recom
 -	Virtual Size: 4.6 MB (4640266 bytes)
 -	v2 Blob: `sha256:75e457aad69ad5655142ee143ceee08ad90c9e01230d5b6d2b040140c92d14f3`
 -	v2 Content-Length: 1.7 MB (1686674 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:24:54 GMT
 
 #### `a500161b744999bfbba144780da86baa70483d46eeed928991a782da98114553`
 
@@ -1715,7 +1620,6 @@ ENV HAPROXY_MAJOR=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597206d5489c016b9a762f5947e9bcf38870a076ebf93676328c96c6f6426cd8`
 
@@ -1729,7 +1633,6 @@ ENV HAPROXY_VERSION=1.6.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9b5cf743d762179472fabd1956785a291ce895bc3925cd3c582fc3660b67d847`
 
@@ -1743,7 +1646,6 @@ ENV HAPROXY_MD5=ee107312ef58432859ee12bf048025ab
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c53e782a38be47facf4b4f2cb3ec266f518c7658d7e646eb0d485658e22bddf`
 
@@ -1775,7 +1677,6 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 9.4 MB (9361868 bytes)
 -	v2 Blob: `sha256:55239e302309636e541e90faaec1f55b8f3860e534c8e8b9dd045fa157867eab`
 -	v2 Content-Length: 4.3 MB (4340254 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:35 GMT
 
 #### `317efb4c3e0d1b418dbc8bb58a4e28672bb6d62c92523c644c2470faa00a7555`
 
@@ -1789,7 +1690,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `a24cedefd339dc6d4cd12ad056bfeafee2ada171d88d43b9f0efbdd408317f39`
 
@@ -1803,7 +1703,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3cd0f85a26982c538ec7e48ffb7a36e80fe3075c17c62cf377dd50136abc241f`
 
@@ -1817,7 +1716,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:latest`
 
@@ -1841,7 +1739,6 @@ ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /
 -	Virtual Size: 125.1 MB (125110803 bytes)
 -	v2 Blob: `sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42`
 -	v2 Content-Length: 51.4 MB (51367715 bytes)
--	v2 Last-Modified: Tue, 01 Mar 2016 18:52:40 GMT
 
 #### `a582cd499e0ff0b0a2af94dbaef5f56fce1935b7c01429074c2d5abd1ea23d5a`
 
@@ -1855,7 +1752,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `5cb14a30dc0e90550f23cca49ecf46f0ff5ec0b46c8c6ff04e33919775a9631d`
 
@@ -1869,7 +1765,6 @@ RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recom
 -	Virtual Size: 4.6 MB (4640266 bytes)
 -	v2 Blob: `sha256:75e457aad69ad5655142ee143ceee08ad90c9e01230d5b6d2b040140c92d14f3`
 -	v2 Content-Length: 1.7 MB (1686674 bytes)
--	v2 Last-Modified: Thu, 03 Mar 2016 16:24:54 GMT
 
 #### `a500161b744999bfbba144780da86baa70483d46eeed928991a782da98114553`
 
@@ -1883,7 +1778,6 @@ ENV HAPROXY_MAJOR=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `597206d5489c016b9a762f5947e9bcf38870a076ebf93676328c96c6f6426cd8`
 
@@ -1897,7 +1791,6 @@ ENV HAPROXY_VERSION=1.6.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `9b5cf743d762179472fabd1956785a291ce895bc3925cd3c582fc3660b67d847`
 
@@ -1911,7 +1804,6 @@ ENV HAPROXY_MD5=ee107312ef58432859ee12bf048025ab
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6c53e782a38be47facf4b4f2cb3ec266f518c7658d7e646eb0d485658e22bddf`
 
@@ -1943,7 +1835,6 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 -	Virtual Size: 9.4 MB (9361868 bytes)
 -	v2 Blob: `sha256:55239e302309636e541e90faaec1f55b8f3860e534c8e8b9dd045fa157867eab`
 -	v2 Content-Length: 4.3 MB (4340254 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:35 GMT
 
 #### `317efb4c3e0d1b418dbc8bb58a4e28672bb6d62c92523c644c2470faa00a7555`
 
@@ -1957,7 +1848,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `a24cedefd339dc6d4cd12ad056bfeafee2ada171d88d43b9f0efbdd408317f39`
 
@@ -1971,7 +1861,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `3cd0f85a26982c538ec7e48ffb7a36e80fe3075c17c62cf377dd50136abc241f`
 
@@ -1985,7 +1874,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.6.4-alpine`
 
@@ -2009,7 +1897,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `739768eb1ae0a92efff56c2a2666a8b0e5adce8666251ffe9fba7e49f17b2d9f`
 
@@ -2023,7 +1910,6 @@ ENV HAPROXY_MAJOR=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `032f17e4769e64e2f489f9db5266afd355e3df7984f1b11f2527b4d7d17abc3d`
 
@@ -2037,7 +1923,6 @@ ENV HAPROXY_VERSION=1.6.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `59cf5acfc63e0431b5e06282367f24ce240e5405ee902dbf68230f989cd48ce0`
 
@@ -2051,7 +1936,6 @@ ENV HAPROXY_MD5=ee107312ef58432859ee12bf048025ab
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e76a8cbcd3e873d2f2d3bf20698e76f9706f2cfb94729806c5d7098e50767085`
 
@@ -2099,7 +1983,6 @@ RUN set -x \
 -	Virtual Size: 5.9 MB (5851430 bytes)
 -	v2 Blob: `sha256:ab5c5acc5d47e15347ba5c94c8188f5eddad6fa4b3fdb3e29c700d1598a6a973`
 -	v2 Content-Length: 2.6 MB (2592377 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:58 GMT
 
 #### `b68095c1a296229a92cc2323870aa76e9fa4cd7c2b384a4ff3dcf63d4d3c0c15`
 
@@ -2113,7 +1996,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `17a5aabb84c6b020d8ef163833ebd5e32f7cd04719b22af7f03728497f60e1b6`
 
@@ -2127,7 +2009,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a49566cd6d57e44ac98af4a3e51411544c140588d25a597213de6eecb9ba5c5e`
 
@@ -2141,7 +2022,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1.6-alpine`
 
@@ -2165,7 +2045,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `739768eb1ae0a92efff56c2a2666a8b0e5adce8666251ffe9fba7e49f17b2d9f`
 
@@ -2179,7 +2058,6 @@ ENV HAPROXY_MAJOR=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `032f17e4769e64e2f489f9db5266afd355e3df7984f1b11f2527b4d7d17abc3d`
 
@@ -2193,7 +2071,6 @@ ENV HAPROXY_VERSION=1.6.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `59cf5acfc63e0431b5e06282367f24ce240e5405ee902dbf68230f989cd48ce0`
 
@@ -2207,7 +2084,6 @@ ENV HAPROXY_MD5=ee107312ef58432859ee12bf048025ab
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e76a8cbcd3e873d2f2d3bf20698e76f9706f2cfb94729806c5d7098e50767085`
 
@@ -2255,7 +2131,6 @@ RUN set -x \
 -	Virtual Size: 5.9 MB (5851430 bytes)
 -	v2 Blob: `sha256:ab5c5acc5d47e15347ba5c94c8188f5eddad6fa4b3fdb3e29c700d1598a6a973`
 -	v2 Content-Length: 2.6 MB (2592377 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:58 GMT
 
 #### `b68095c1a296229a92cc2323870aa76e9fa4cd7c2b384a4ff3dcf63d4d3c0c15`
 
@@ -2269,7 +2144,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `17a5aabb84c6b020d8ef163833ebd5e32f7cd04719b22af7f03728497f60e1b6`
 
@@ -2283,7 +2157,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a49566cd6d57e44ac98af4a3e51411544c140588d25a597213de6eecb9ba5c5e`
 
@@ -2297,7 +2170,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:1-alpine`
 
@@ -2321,7 +2193,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `739768eb1ae0a92efff56c2a2666a8b0e5adce8666251ffe9fba7e49f17b2d9f`
 
@@ -2335,7 +2206,6 @@ ENV HAPROXY_MAJOR=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `032f17e4769e64e2f489f9db5266afd355e3df7984f1b11f2527b4d7d17abc3d`
 
@@ -2349,7 +2219,6 @@ ENV HAPROXY_VERSION=1.6.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `59cf5acfc63e0431b5e06282367f24ce240e5405ee902dbf68230f989cd48ce0`
 
@@ -2363,7 +2232,6 @@ ENV HAPROXY_MD5=ee107312ef58432859ee12bf048025ab
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e76a8cbcd3e873d2f2d3bf20698e76f9706f2cfb94729806c5d7098e50767085`
 
@@ -2411,7 +2279,6 @@ RUN set -x \
 -	Virtual Size: 5.9 MB (5851430 bytes)
 -	v2 Blob: `sha256:ab5c5acc5d47e15347ba5c94c8188f5eddad6fa4b3fdb3e29c700d1598a6a973`
 -	v2 Content-Length: 2.6 MB (2592377 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:58 GMT
 
 #### `b68095c1a296229a92cc2323870aa76e9fa4cd7c2b384a4ff3dcf63d4d3c0c15`
 
@@ -2425,7 +2292,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `17a5aabb84c6b020d8ef163833ebd5e32f7cd04719b22af7f03728497f60e1b6`
 
@@ -2439,7 +2305,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a49566cd6d57e44ac98af4a3e51411544c140588d25a597213de6eecb9ba5c5e`
 
@@ -2453,7 +2318,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 ## `haproxy:alpine`
 
@@ -2477,7 +2341,6 @@ ADD file:81ba6f20bdb99e6c13c434a577069860b6656908031162083b1ac9c02c71dd9f in /
 -	Virtual Size: 4.8 MB (4797951 bytes)
 -	v2 Blob: `sha256:4d06f2521e4f3ae47d0339ba887d234e11edfb8b3d9703ed856de95f4cc2d96d`
 -	v2 Content-Length: 2.3 MB (2319773 bytes)
--	v2 Last-Modified: Wed, 02 Mar 2016 17:16:24 GMT
 
 #### `739768eb1ae0a92efff56c2a2666a8b0e5adce8666251ffe9fba7e49f17b2d9f`
 
@@ -2491,7 +2354,6 @@ ENV HAPROXY_MAJOR=1.6
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `032f17e4769e64e2f489f9db5266afd355e3df7984f1b11f2527b4d7d17abc3d`
 
@@ -2505,7 +2367,6 @@ ENV HAPROXY_VERSION=1.6.4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `59cf5acfc63e0431b5e06282367f24ce240e5405ee902dbf68230f989cd48ce0`
 
@@ -2519,7 +2380,6 @@ ENV HAPROXY_MD5=ee107312ef58432859ee12bf048025ab
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e76a8cbcd3e873d2f2d3bf20698e76f9706f2cfb94729806c5d7098e50767085`
 
@@ -2567,7 +2427,6 @@ RUN set -x \
 -	Virtual Size: 5.9 MB (5851430 bytes)
 -	v2 Blob: `sha256:ab5c5acc5d47e15347ba5c94c8188f5eddad6fa4b3fdb3e29c700d1598a6a973`
 -	v2 Content-Length: 2.6 MB (2592377 bytes)
--	v2 Last-Modified: Wed, 16 Mar 2016 17:23:58 GMT
 
 #### `b68095c1a296229a92cc2323870aa76e9fa4cd7c2b384a4ff3dcf63d4d3c0c15`
 
@@ -2581,7 +2440,6 @@ COPY file:fc4ea897d381d8baafa8747e43587fa0b5b6c0e268ef409e0897f410d9f4e42f in /
 -	Virtual Size: 379.0 B
 -	v2 Blob: `sha256:c7652a33f7e1636c2de44dbd088d5eed5ea1f40e08adae1812d74e55f43a06b0`
 -	v2 Content-Length: 345.0 B
--	v2 Last-Modified: Wed, 16 Mar 2016 18:31:33 GMT
 
 #### `17a5aabb84c6b020d8ef163833ebd5e32f7cd04719b22af7f03728497f60e1b6`
 
@@ -2595,7 +2453,6 @@ ENTRYPOINT &{["/docker-entrypoint.sh"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `a49566cd6d57e44ac98af4a3e51411544c140588d25a597213de6eecb9ba5c5e`
 
@@ -2609,4 +2466,3 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT

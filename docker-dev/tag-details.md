@@ -28,7 +28,6 @@ ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
 -	Virtual Size: 187.7 MB (187728797 bytes)
 -	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
 -	v2 Content-Length: 65.7 MB (65675795 bytes)
--	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
 
 #### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
 
@@ -53,7 +52,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:3b52deaaf0edb8a0282a08dd9c9e25da2050a75739b832ecc6e29941394933a6`
 -	v2 Content-Length: 71.5 KB (71484 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:56 GMT
 
 #### `a4c5be5b6e596241b4530ade26294afa8d8a4a2b9163c30e36c87f879b0f5073`
 
@@ -67,7 +65,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -81,7 +78,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `440c2a509f57059a4c1ec6910ee36646ba297471ccfe151abb766671e1dbad78`
 
@@ -95,7 +91,6 @@ MAINTAINER Tianon Gravi <admwiggin@gmail.com> (@tianon)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1d603c17f777d2bab0b84a829b3e2163a4a906c3a68e883a597f570a48ab3b3c`
 
@@ -109,7 +104,6 @@ RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys E87
 -	Virtual Size: 25.0 KB (25043 bytes)
 -	v2 Blob: `sha256:b5527133791bf5e6e668074993e4fb4d6b8264a34483b9dda31002f7d62bf671`
 -	v2 Content-Length: 12.3 KB (12279 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:31:02 GMT
 
 #### `8e67e3fcbdbc138ed67694f8cc202bf6e1cae903a13825dfce88c4d40c09c467`
 
@@ -123,7 +117,6 @@ RUN echo deb http://ppa.launchpad.net/zfs-native/stable/ubuntu trusty main > /et
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:d7e93a9e180521e59bd863e47b71629f7bd457385276adefa823eaeda87e11c9`
 -	v2 Content-Length: 229.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:30:59 GMT
 
 #### `6e690218c2f8015e9630eba4a63ab074ffab7afd5719c4f2d32c34dfaeda6a0b`
 
@@ -167,7 +160,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 543.1 MB (543062146 bytes)
 -	v2 Blob: `sha256:0fcbf8fa06508bd824cff1b99e1b2d963a45f36d17406798bbe37a820fa1c081`
 -	v2 Content-Length: 182.3 MB (182313531 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:30:45 GMT
 
 #### `d49b0f263f274c67d6f2455b92b35d8f83291f7efa6e79d0e620cb769b021023`
 
@@ -181,7 +173,6 @@ RUN git clone -b v2_02_103 https://git.fedorahosted.org/git/lvm2.git /usr/local/
 -	Virtual Size: 24.5 MB (24491215 bytes)
 -	v2 Blob: `sha256:c1346c179e08ea7dc54703b809822bf0b5f346851fddfa70b78c979bdc2b5aef`
 -	v2 Content-Length: 19.3 MB (19282332 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:29:16 GMT
 
 #### `34e7005ea03910e285e160b459f4e1850faf485056d5875b27806da875f5b7a5`
 
@@ -198,7 +189,6 @@ RUN cd /usr/local/lvm2 \
 -	Virtual Size: 5.0 MB (5002140 bytes)
 -	v2 Blob: `sha256:38c0f3f02b7fd2cf08d481d7402205f01f0e246fb316731ebd1ade3deefb8e1a`
 -	v2 Content-Length: 1.8 MB (1761377 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:29:06 GMT
 
 #### `2a6cf8b25d84185ddb3b2322170c2d0dc777aa8a46e407eccc2a4e1a0b44790b`
 
@@ -212,7 +202,6 @@ ENV LXC_VERSION=1.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1564c16e6112fa3cf139945d331b06692e75fe7f240097d656a9bbdaedeefea7`
 
@@ -227,7 +216,6 @@ RUN mkdir -p /usr/src/lxc \
 -	Virtual Size: 3.9 MB (3851799 bytes)
 -	v2 Blob: `sha256:928f88545f7a581cb70a7be3c036b90bbd2af435706ee445509d491777bbce1d`
 -	v2 Content-Length: 839.9 KB (839903 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:28:57 GMT
 
 #### `1ae91a28e1cee23434fc3da890e1e403b966305d1911d92afbf60dd9724f8227`
 
@@ -245,7 +233,6 @@ RUN cd /usr/src/lxc \
 -	Virtual Size: 16.8 MB (16848711 bytes)
 -	v2 Blob: `sha256:44342ca32ef3920be079b11ce7a9d141af1f3714fcacfc2ae21ba0ad30cf2795`
 -	v2 Content-Length: 5.1 MB (5144522 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:28:51 GMT
 
 #### `55caca5d608af98576b0cccdcb498b21a7e2770bd484f3c3ec38d4d66e5a3a1d`
 
@@ -259,7 +246,6 @@ ENV GO_VERSION=1.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2bfb5244495ef75bfd6dd6621032281e8e8672b9bf3257c7446304f75a61112c`
 
@@ -274,7 +260,6 @@ RUN curl -sSL https://golang.org/dl/go${GO_VERSION}.src.tar.gz | tar -v -C /usr/
 -	Virtual Size: 39.7 MB (39656098 bytes)
 -	v2 Blob: `sha256:1725853ad83c44b0d7064346f1502123d3fb5bc50207c55dbe10f8d3de8bfca8`
 -	v2 Content-Length: 10.9 MB (10877091 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:28:41 GMT
 
 #### `eb6c17aba3533b2cf583c07fc829eee318825ae73cf4ab5f6a3af5da0754747a`
 
@@ -288,7 +273,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `87ac721991ebc065a612df313335f909e5cfac60f63922bbaa0107d8ad6a6e16`
 
@@ -302,7 +286,6 @@ ENV GOPATH=/go:/go/src/github.com/docker/docker/vendor
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ba265df6ced54928c72438b3cb970f8ac680bf15cabd91e21662bef449fb2e79`
 
@@ -316,7 +299,6 @@ RUN cd /usr/local/go/src && ./make.bash --no-clean 2>&1
 -	Virtual Size: 98.0 MB (98011777 bytes)
 -	v2 Blob: `sha256:48395fa61d6c3a30963ea3e01b39c5eece3fa6a3b8417a9be3ccca8c2ede5b0b`
 -	v2 Content-Length: 24.7 MB (24713735 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:27:31 GMT
 
 #### `5e145db5eb9709054f73eafdf074b7cbec1f7df986142975838d0e04ea8abf08`
 
@@ -330,7 +312,6 @@ ENV DOCKER_CROSSPLATFORMS=linux/386 linux/arm 	darwin/amd64 darwin/386 	freebsd/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7db82e14a0c08ab4631b146a7c6d018f843b36d7eed3e3d037e90884275d4e3`
 
@@ -344,7 +325,6 @@ ENV GOARM=5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75f1d71ad0bc0ef99cbc76b57441df7946d48e3ba9fdcf86591a11cf18e881be`
 
@@ -364,7 +344,6 @@ RUN cd /usr/local/go/src \
 -	Virtual Size: 797.8 MB (797798326 bytes)
 -	v2 Blob: `sha256:ef8e6c5532f6a7309d865338cbc3f4e65de35853c9035e2cbeb027fae81594c8`
 -	v2 Content-Length: 205.1 MB (205121223 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:26:21 GMT
 
 #### `016d4ed8d29ad2b9293ff99f60d7b80ec3086f1f05d647c91173289a7620da46`
 
@@ -378,7 +357,6 @@ ENV GO_TOOLS_COMMIT=069d2f3bcb68257b627205f0486d6cc69a231ff9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e35c78e502a1b89ada36a7329292b35e02758585d9b262a18b585711d68e66c7`
 
@@ -395,7 +373,6 @@ RUN git clone https://github.com/golang/tools.git /go/src/golang.org/x/tools \
 -	Virtual Size: 25.4 MB (25420215 bytes)
 -	v2 Blob: `sha256:4df9f8db4dd21d888094532b8ab85f11f193cc27deb1e90d16d898ce66bdb94f`
 -	v2 Content-Length: 11.4 MB (11357179 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:24:25 GMT
 
 #### `d7bb750a09f92e7db02c7e9517b65f9826b62cc66b3c841ed58480842ccf97e2`
 
@@ -409,7 +386,6 @@ ENV GO_LINT_COMMIT=f42f5c1c440621302702cb0741e9d2ca547ae80f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0da834cc2eb2f380757c8909c6053aad68702e3e08ad7bf4fcb45f72f4b7fc85`
 
@@ -425,7 +401,6 @@ RUN git clone https://github.com/golang/lint.git /go/src/github.com/golang/lint 
 -	Virtual Size: 6.6 MB (6586951 bytes)
 -	v2 Blob: `sha256:249c1dbe14050ea81e1f1369b63aa8fa170075304412005fe4a89c117849505a`
 -	v2 Content-Length: 2.0 MB (1984712 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:24:12 GMT
 
 #### `ed6689d79d85051c2c34fa723011713dc92caf1c2e2830196c9a31104fc5ef6b`
 
@@ -439,7 +414,6 @@ RUN gem install --no-rdoc --no-ri fpm --version 1.3.2
 -	Virtual Size: 24.1 MB (24133193 bytes)
 -	v2 Blob: `sha256:3cf80a07cd796444fcbf065a8a6435a8e2607922205f25245eebb69cf84a8797`
 -	v2 Content-Length: 7.5 MB (7524442 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:24:06 GMT
 
 #### `16faf3d0c4673c0cc6a335f66d594148f8af3d707bbb0ad63f24ad1090a89dc9`
 
@@ -453,7 +427,6 @@ ENV REGISTRY_COMMIT=ec87e9b6971d831f0eff752ddb54fb64693e51cd
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `896343449cfd38f7693821cc237a7c0d7763dae2bf785422dd9c1f013662a42f`
 
@@ -473,7 +446,6 @@ RUN set -x \
 -	Virtual Size: 15.5 MB (15531232 bytes)
 -	v2 Blob: `sha256:5378491dc9d64ad7d8aabc58938b293adf5e700d3c144150c4763cd7b4718575`
 -	v2 Content-Length: 4.0 MB (4034385 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:55 GMT
 
 #### `75b536f0f2adeec40c7c54950a91fa97b62eb51d0a2bab4b60558de44ed9127d`
 
@@ -487,7 +459,6 @@ ENV NOTARY_COMMIT=8e8122eb5528f621afcd4e2854c47302f17392f7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `23d103bd64352bf1e9a1d3377f482c0b21d6a4717e4422001456e9739549e51a`
 
@@ -507,7 +478,6 @@ RUN set -x \
 -	Virtual Size: 14.1 MB (14115181 bytes)
 -	v2 Blob: `sha256:5df0d94b1a8be4288b2be1b0810d90241ff4f65458a7e891fc638c1326bed250`
 -	v2 Content-Length: 3.8 MB (3830621 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:46 GMT
 
 #### `0e9773a2cfc9f298f72c258a374f277c1ffa899251a37a9930f7b589bf1a442b`
 
@@ -521,7 +491,6 @@ ENV DOCKER_PY_COMMIT=47ab89ec2bd3bddf1221b856ffbaff333edeabb4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ca2e198a9e59f16249b9ccf1311c0a20be8dc4fa4af908954c16053ff1188822`
 
@@ -538,7 +507,6 @@ RUN git clone https://github.com/docker/docker-py.git /docker-py \
 -	Virtual Size: 5.5 MB (5514913 bytes)
 -	v2 Blob: `sha256:426bdb997dc09a4828c578ccf7847e0de44eb23d5bcbe24eb13a5d84a2cff05f`
 -	v2 Content-Length: 3.2 MB (3184831 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:37 GMT
 
 #### `1db225c3c43fa4a7190ce93523b8d8294bf498b81c165acc21d718cebd440dea`
 
@@ -556,7 +524,6 @@ RUN { \
 -	Virtual Size: 64.0 B
 -	v2 Blob: `sha256:50c110645f7989e3fd9ab57bcfcf978f55faab65a4ca259d2b1daf9e14efbe2c`
 -	v2 Content-Length: 185.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:32 GMT
 
 #### `b7f48ace7d86a153e3987b017435396fc825c37e16062c6215e7686a67b2a403`
 
@@ -570,7 +537,6 @@ RUN git config --global user.email 'docker-dummy@example.com'
 -	Virtual Size: 41.0 B
 -	v2 Blob: `sha256:a2c7f52d65e9c8c781f8088f721293bd7d7a200bcb4bb4fe49bb73e4c241e052`
 -	v2 Content-Length: 178.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:27 GMT
 
 #### `39608714dc103314933aece3d7347f28223eb19c01bb5bfd61c031b1ab36d961`
 
@@ -584,7 +550,6 @@ RUN groupadd -r docker
 -	Virtual Size: 1.9 KB (1897 bytes)
 -	v2 Blob: `sha256:cab6f4e2be21c685e63d4d9a4d9e7ff6ff5edb6e48be1ea9e8978f7d500924a7`
 -	v2 Content-Length: 677.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:24 GMT
 
 #### `1e71b141cca49cc238a61c84fb5f247a1fcc572c686dcc4a3f9ec8c89a0f7eb7`
 
@@ -598,7 +563,6 @@ RUN useradd --create-home --gid docker unprivilegeduser
 -	Virtual Size: 332.0 KB (331983 bytes)
 -	v2 Blob: `sha256:b2b5a7f5f58f39bbc48d31cf3704603d24b7155b04b824bc83d6ffdb5be14881`
 -	v2 Content-Length: 3.7 KB (3735 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:21 GMT
 
 #### `0abe9c57c0c24038ad5c360f810a2b9463c5e16f95475ca20cc13872ebcd2590`
 
@@ -612,7 +576,6 @@ VOLUME [/var/lib/docker]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `22b84f90dd306bf85aac100eecb0d26ec630cd898c7a26792abc273745893b77`
 
@@ -626,7 +589,6 @@ WORKDIR /go/src/github.com/docker/docker
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `77c23effa64655323eb257f6b212691a3ef32ddd9d49a21778a7b1c5b1f5576f`
 
@@ -640,7 +602,6 @@ ENV DOCKER_BUILDTAGS=apparmor selinux
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4412de858ee1b6380adf2db256ceceff2c688dfcb76eb116116ea4c82510d053`
 
@@ -654,7 +615,6 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 -	Virtual Size: 40.0 B
 -	v2 Blob: `sha256:9ba5cf79eef13753a295a88709edb3c2d827974a9e628c86b60e4fc6f039fabf`
 -	v2 Content-Length: 263.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:06 GMT
 
 #### `36c4ce0cead884be66f09311b60f6dd4c38b617796075326658f0be43ae23822`
 
@@ -668,7 +628,6 @@ RUN ln -sv $PWD/contrib/completion/bash/docker /etc/bash_completion.d/docker
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:befefe51f707dc0a374d5c387e0a88c010833c177977755dbf7bcd92db4a3eaf`
 -	v2 Content-Length: 183.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:02 GMT
 
 #### `07c57adc00471d61e4cc07ec5a4295f3c3e08e035a92426c341b967e1b979d2e`
 
@@ -682,7 +641,6 @@ COPY file:d2241750b272d955bafffdbd3029cd3022f56d0ef655111394d10339d5145ebd in /g
 -	Virtual Size: 3.9 KB (3866 bytes)
 -	v2 Blob: `sha256:e659cb3282f3c06cabc9213f6023d826c5845e43b932c948575ca80c7dffe472`
 -	v2 Content-Length: 1.8 KB (1773 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:58 GMT
 
 #### `4637c56e92c2616dbc27c671bba37bd608ff1951c8fe201e569cdc15a8534822`
 
@@ -699,7 +657,6 @@ RUN ./contrib/download-frozen-image.sh /docker-frozen-images \
 -	Virtual Size: 3.6 MB (3588644 bytes)
 -	v2 Blob: `sha256:145352fd46af62d3db8136818da51273a2298571f83cb2c7cc4dfb1abffb3797`
 -	v2 Content-Length: 3.6 MB (3566673 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:54 GMT
 
 #### `7d20b9c7f772010a29d254b03685dbe5409477ce7778d8ac60daeee23d8da51b`
 
@@ -719,7 +676,6 @@ RUN set -x \
 -	Virtual Size: 3.3 MB (3287832 bytes)
 -	v2 Blob: `sha256:9a16e6aa20cb1da1c26ef15b76a3ffb6f076dcd94fd8c9489586ce073b2d89ab`
 -	v2 Content-Length: 937.9 KB (937878 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:49 GMT
 
 #### `9ba4fd07b5d6c1cd64d1b4948fcdb3b03765ec5cbf003bffafcc9de9e0d64780`
 
@@ -733,7 +689,6 @@ ENV TOMLV_COMMIT=9baf8a8a9f2ed20a8e54160840c492f937eeaf9a
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32507bd111c6acb31d5012c8a039104a1a810b3c863197179611eb4771e4ebab`
 
@@ -752,7 +707,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2688864 bytes)
 -	v2 Blob: `sha256:cf6157e45b3fee4769a371c6a78ca65853e08f8bdabf0926ac2f6a402e932662`
 -	v2 Content-Length: 770.8 KB (770841 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:42 GMT
 
 #### `918c63dace5367000bbc873f516b98505d68c18c7bf2b72765918b3583f1d0b7`
 
@@ -766,7 +720,6 @@ ENV RSRC_COMMIT=e48dbf1b7fc464a9e85fcec450dddf80816b76e0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55ea14539ff4b6a9ed5165ddf382277c447e7d42beb4decc1e1f7116aaaecc10`
 
@@ -784,7 +737,6 @@ RUN set -x\
 -	Virtual Size: 4.5 MB (4463504 bytes)
 -	v2 Blob: `sha256:6a884cee083f9172159176f9e1ce5502d83556cb7c7e99a8484cc13ee44e805a`
 -	v2 Content-Length: 2.1 MB (2052199 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:35 GMT
 
 #### `8bee69c16341b5abfd1bc18107b0248b865808e33075617fe4d8b6d72a866425`
 
@@ -798,7 +750,6 @@ ENTRYPOINT &{["hack/dind"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `406272f8e622c971d4ec7a2e011d3fabb45570b9b3540494581ae143b82f77a1`
 
@@ -812,7 +763,6 @@ COPY dir:21a69391d2e1b2dc249cb9c7188f1475f5b8811c44bcc59b25af9976d9efbfe8 in /go
 -	Virtual Size: 114.9 MB (114939724 bytes)
 -	v2 Blob: `sha256:310f26981a6789d567ad2d64e6b41bea00f6c07128bbb8da686e6342cf6f4c65`
 -	v2 Content-Length: 97.0 MB (96956108 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 19:18:25 GMT
 
 ## `docker-dev:1.9`
 
@@ -836,7 +786,6 @@ ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
 -	Virtual Size: 187.7 MB (187728797 bytes)
 -	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
 -	v2 Content-Length: 65.7 MB (65675795 bytes)
--	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
 
 #### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
 
@@ -861,7 +810,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:3b52deaaf0edb8a0282a08dd9c9e25da2050a75739b832ecc6e29941394933a6`
 -	v2 Content-Length: 71.5 KB (71484 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:56 GMT
 
 #### `a4c5be5b6e596241b4530ade26294afa8d8a4a2b9163c30e36c87f879b0f5073`
 
@@ -875,7 +823,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -889,7 +836,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `440c2a509f57059a4c1ec6910ee36646ba297471ccfe151abb766671e1dbad78`
 
@@ -903,7 +849,6 @@ MAINTAINER Tianon Gravi <admwiggin@gmail.com> (@tianon)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1d603c17f777d2bab0b84a829b3e2163a4a906c3a68e883a597f570a48ab3b3c`
 
@@ -917,7 +862,6 @@ RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys E87
 -	Virtual Size: 25.0 KB (25043 bytes)
 -	v2 Blob: `sha256:b5527133791bf5e6e668074993e4fb4d6b8264a34483b9dda31002f7d62bf671`
 -	v2 Content-Length: 12.3 KB (12279 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:31:02 GMT
 
 #### `8e67e3fcbdbc138ed67694f8cc202bf6e1cae903a13825dfce88c4d40c09c467`
 
@@ -931,7 +875,6 @@ RUN echo deb http://ppa.launchpad.net/zfs-native/stable/ubuntu trusty main > /et
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:d7e93a9e180521e59bd863e47b71629f7bd457385276adefa823eaeda87e11c9`
 -	v2 Content-Length: 229.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:30:59 GMT
 
 #### `6e690218c2f8015e9630eba4a63ab074ffab7afd5719c4f2d32c34dfaeda6a0b`
 
@@ -975,7 +918,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 543.1 MB (543062146 bytes)
 -	v2 Blob: `sha256:0fcbf8fa06508bd824cff1b99e1b2d963a45f36d17406798bbe37a820fa1c081`
 -	v2 Content-Length: 182.3 MB (182313531 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:30:45 GMT
 
 #### `d49b0f263f274c67d6f2455b92b35d8f83291f7efa6e79d0e620cb769b021023`
 
@@ -989,7 +931,6 @@ RUN git clone -b v2_02_103 https://git.fedorahosted.org/git/lvm2.git /usr/local/
 -	Virtual Size: 24.5 MB (24491215 bytes)
 -	v2 Blob: `sha256:c1346c179e08ea7dc54703b809822bf0b5f346851fddfa70b78c979bdc2b5aef`
 -	v2 Content-Length: 19.3 MB (19282332 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:29:16 GMT
 
 #### `34e7005ea03910e285e160b459f4e1850faf485056d5875b27806da875f5b7a5`
 
@@ -1006,7 +947,6 @@ RUN cd /usr/local/lvm2 \
 -	Virtual Size: 5.0 MB (5002140 bytes)
 -	v2 Blob: `sha256:38c0f3f02b7fd2cf08d481d7402205f01f0e246fb316731ebd1ade3deefb8e1a`
 -	v2 Content-Length: 1.8 MB (1761377 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:29:06 GMT
 
 #### `2a6cf8b25d84185ddb3b2322170c2d0dc777aa8a46e407eccc2a4e1a0b44790b`
 
@@ -1020,7 +960,6 @@ ENV LXC_VERSION=1.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1564c16e6112fa3cf139945d331b06692e75fe7f240097d656a9bbdaedeefea7`
 
@@ -1035,7 +974,6 @@ RUN mkdir -p /usr/src/lxc \
 -	Virtual Size: 3.9 MB (3851799 bytes)
 -	v2 Blob: `sha256:928f88545f7a581cb70a7be3c036b90bbd2af435706ee445509d491777bbce1d`
 -	v2 Content-Length: 839.9 KB (839903 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:28:57 GMT
 
 #### `1ae91a28e1cee23434fc3da890e1e403b966305d1911d92afbf60dd9724f8227`
 
@@ -1053,7 +991,6 @@ RUN cd /usr/src/lxc \
 -	Virtual Size: 16.8 MB (16848711 bytes)
 -	v2 Blob: `sha256:44342ca32ef3920be079b11ce7a9d141af1f3714fcacfc2ae21ba0ad30cf2795`
 -	v2 Content-Length: 5.1 MB (5144522 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:28:51 GMT
 
 #### `55caca5d608af98576b0cccdcb498b21a7e2770bd484f3c3ec38d4d66e5a3a1d`
 
@@ -1067,7 +1004,6 @@ ENV GO_VERSION=1.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2bfb5244495ef75bfd6dd6621032281e8e8672b9bf3257c7446304f75a61112c`
 
@@ -1082,7 +1018,6 @@ RUN curl -sSL https://golang.org/dl/go${GO_VERSION}.src.tar.gz | tar -v -C /usr/
 -	Virtual Size: 39.7 MB (39656098 bytes)
 -	v2 Blob: `sha256:1725853ad83c44b0d7064346f1502123d3fb5bc50207c55dbe10f8d3de8bfca8`
 -	v2 Content-Length: 10.9 MB (10877091 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:28:41 GMT
 
 #### `eb6c17aba3533b2cf583c07fc829eee318825ae73cf4ab5f6a3af5da0754747a`
 
@@ -1096,7 +1031,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `87ac721991ebc065a612df313335f909e5cfac60f63922bbaa0107d8ad6a6e16`
 
@@ -1110,7 +1044,6 @@ ENV GOPATH=/go:/go/src/github.com/docker/docker/vendor
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ba265df6ced54928c72438b3cb970f8ac680bf15cabd91e21662bef449fb2e79`
 
@@ -1124,7 +1057,6 @@ RUN cd /usr/local/go/src && ./make.bash --no-clean 2>&1
 -	Virtual Size: 98.0 MB (98011777 bytes)
 -	v2 Blob: `sha256:48395fa61d6c3a30963ea3e01b39c5eece3fa6a3b8417a9be3ccca8c2ede5b0b`
 -	v2 Content-Length: 24.7 MB (24713735 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:27:31 GMT
 
 #### `5e145db5eb9709054f73eafdf074b7cbec1f7df986142975838d0e04ea8abf08`
 
@@ -1138,7 +1070,6 @@ ENV DOCKER_CROSSPLATFORMS=linux/386 linux/arm 	darwin/amd64 darwin/386 	freebsd/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7db82e14a0c08ab4631b146a7c6d018f843b36d7eed3e3d037e90884275d4e3`
 
@@ -1152,7 +1083,6 @@ ENV GOARM=5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75f1d71ad0bc0ef99cbc76b57441df7946d48e3ba9fdcf86591a11cf18e881be`
 
@@ -1172,7 +1102,6 @@ RUN cd /usr/local/go/src \
 -	Virtual Size: 797.8 MB (797798326 bytes)
 -	v2 Blob: `sha256:ef8e6c5532f6a7309d865338cbc3f4e65de35853c9035e2cbeb027fae81594c8`
 -	v2 Content-Length: 205.1 MB (205121223 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:26:21 GMT
 
 #### `016d4ed8d29ad2b9293ff99f60d7b80ec3086f1f05d647c91173289a7620da46`
 
@@ -1186,7 +1115,6 @@ ENV GO_TOOLS_COMMIT=069d2f3bcb68257b627205f0486d6cc69a231ff9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e35c78e502a1b89ada36a7329292b35e02758585d9b262a18b585711d68e66c7`
 
@@ -1203,7 +1131,6 @@ RUN git clone https://github.com/golang/tools.git /go/src/golang.org/x/tools \
 -	Virtual Size: 25.4 MB (25420215 bytes)
 -	v2 Blob: `sha256:4df9f8db4dd21d888094532b8ab85f11f193cc27deb1e90d16d898ce66bdb94f`
 -	v2 Content-Length: 11.4 MB (11357179 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:24:25 GMT
 
 #### `d7bb750a09f92e7db02c7e9517b65f9826b62cc66b3c841ed58480842ccf97e2`
 
@@ -1217,7 +1144,6 @@ ENV GO_LINT_COMMIT=f42f5c1c440621302702cb0741e9d2ca547ae80f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0da834cc2eb2f380757c8909c6053aad68702e3e08ad7bf4fcb45f72f4b7fc85`
 
@@ -1233,7 +1159,6 @@ RUN git clone https://github.com/golang/lint.git /go/src/github.com/golang/lint 
 -	Virtual Size: 6.6 MB (6586951 bytes)
 -	v2 Blob: `sha256:249c1dbe14050ea81e1f1369b63aa8fa170075304412005fe4a89c117849505a`
 -	v2 Content-Length: 2.0 MB (1984712 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:24:12 GMT
 
 #### `ed6689d79d85051c2c34fa723011713dc92caf1c2e2830196c9a31104fc5ef6b`
 
@@ -1247,7 +1172,6 @@ RUN gem install --no-rdoc --no-ri fpm --version 1.3.2
 -	Virtual Size: 24.1 MB (24133193 bytes)
 -	v2 Blob: `sha256:3cf80a07cd796444fcbf065a8a6435a8e2607922205f25245eebb69cf84a8797`
 -	v2 Content-Length: 7.5 MB (7524442 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:24:06 GMT
 
 #### `16faf3d0c4673c0cc6a335f66d594148f8af3d707bbb0ad63f24ad1090a89dc9`
 
@@ -1261,7 +1185,6 @@ ENV REGISTRY_COMMIT=ec87e9b6971d831f0eff752ddb54fb64693e51cd
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `896343449cfd38f7693821cc237a7c0d7763dae2bf785422dd9c1f013662a42f`
 
@@ -1281,7 +1204,6 @@ RUN set -x \
 -	Virtual Size: 15.5 MB (15531232 bytes)
 -	v2 Blob: `sha256:5378491dc9d64ad7d8aabc58938b293adf5e700d3c144150c4763cd7b4718575`
 -	v2 Content-Length: 4.0 MB (4034385 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:55 GMT
 
 #### `75b536f0f2adeec40c7c54950a91fa97b62eb51d0a2bab4b60558de44ed9127d`
 
@@ -1295,7 +1217,6 @@ ENV NOTARY_COMMIT=8e8122eb5528f621afcd4e2854c47302f17392f7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `23d103bd64352bf1e9a1d3377f482c0b21d6a4717e4422001456e9739549e51a`
 
@@ -1315,7 +1236,6 @@ RUN set -x \
 -	Virtual Size: 14.1 MB (14115181 bytes)
 -	v2 Blob: `sha256:5df0d94b1a8be4288b2be1b0810d90241ff4f65458a7e891fc638c1326bed250`
 -	v2 Content-Length: 3.8 MB (3830621 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:46 GMT
 
 #### `0e9773a2cfc9f298f72c258a374f277c1ffa899251a37a9930f7b589bf1a442b`
 
@@ -1329,7 +1249,6 @@ ENV DOCKER_PY_COMMIT=47ab89ec2bd3bddf1221b856ffbaff333edeabb4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ca2e198a9e59f16249b9ccf1311c0a20be8dc4fa4af908954c16053ff1188822`
 
@@ -1346,7 +1265,6 @@ RUN git clone https://github.com/docker/docker-py.git /docker-py \
 -	Virtual Size: 5.5 MB (5514913 bytes)
 -	v2 Blob: `sha256:426bdb997dc09a4828c578ccf7847e0de44eb23d5bcbe24eb13a5d84a2cff05f`
 -	v2 Content-Length: 3.2 MB (3184831 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:37 GMT
 
 #### `1db225c3c43fa4a7190ce93523b8d8294bf498b81c165acc21d718cebd440dea`
 
@@ -1364,7 +1282,6 @@ RUN { \
 -	Virtual Size: 64.0 B
 -	v2 Blob: `sha256:50c110645f7989e3fd9ab57bcfcf978f55faab65a4ca259d2b1daf9e14efbe2c`
 -	v2 Content-Length: 185.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:32 GMT
 
 #### `b7f48ace7d86a153e3987b017435396fc825c37e16062c6215e7686a67b2a403`
 
@@ -1378,7 +1295,6 @@ RUN git config --global user.email 'docker-dummy@example.com'
 -	Virtual Size: 41.0 B
 -	v2 Blob: `sha256:a2c7f52d65e9c8c781f8088f721293bd7d7a200bcb4bb4fe49bb73e4c241e052`
 -	v2 Content-Length: 178.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:27 GMT
 
 #### `39608714dc103314933aece3d7347f28223eb19c01bb5bfd61c031b1ab36d961`
 
@@ -1392,7 +1308,6 @@ RUN groupadd -r docker
 -	Virtual Size: 1.9 KB (1897 bytes)
 -	v2 Blob: `sha256:cab6f4e2be21c685e63d4d9a4d9e7ff6ff5edb6e48be1ea9e8978f7d500924a7`
 -	v2 Content-Length: 677.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:24 GMT
 
 #### `1e71b141cca49cc238a61c84fb5f247a1fcc572c686dcc4a3f9ec8c89a0f7eb7`
 
@@ -1406,7 +1321,6 @@ RUN useradd --create-home --gid docker unprivilegeduser
 -	Virtual Size: 332.0 KB (331983 bytes)
 -	v2 Blob: `sha256:b2b5a7f5f58f39bbc48d31cf3704603d24b7155b04b824bc83d6ffdb5be14881`
 -	v2 Content-Length: 3.7 KB (3735 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:21 GMT
 
 #### `0abe9c57c0c24038ad5c360f810a2b9463c5e16f95475ca20cc13872ebcd2590`
 
@@ -1420,7 +1334,6 @@ VOLUME [/var/lib/docker]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `22b84f90dd306bf85aac100eecb0d26ec630cd898c7a26792abc273745893b77`
 
@@ -1434,7 +1347,6 @@ WORKDIR /go/src/github.com/docker/docker
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `77c23effa64655323eb257f6b212691a3ef32ddd9d49a21778a7b1c5b1f5576f`
 
@@ -1448,7 +1360,6 @@ ENV DOCKER_BUILDTAGS=apparmor selinux
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4412de858ee1b6380adf2db256ceceff2c688dfcb76eb116116ea4c82510d053`
 
@@ -1462,7 +1373,6 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 -	Virtual Size: 40.0 B
 -	v2 Blob: `sha256:9ba5cf79eef13753a295a88709edb3c2d827974a9e628c86b60e4fc6f039fabf`
 -	v2 Content-Length: 263.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:06 GMT
 
 #### `36c4ce0cead884be66f09311b60f6dd4c38b617796075326658f0be43ae23822`
 
@@ -1476,7 +1386,6 @@ RUN ln -sv $PWD/contrib/completion/bash/docker /etc/bash_completion.d/docker
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:befefe51f707dc0a374d5c387e0a88c010833c177977755dbf7bcd92db4a3eaf`
 -	v2 Content-Length: 183.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:02 GMT
 
 #### `07c57adc00471d61e4cc07ec5a4295f3c3e08e035a92426c341b967e1b979d2e`
 
@@ -1490,7 +1399,6 @@ COPY file:d2241750b272d955bafffdbd3029cd3022f56d0ef655111394d10339d5145ebd in /g
 -	Virtual Size: 3.9 KB (3866 bytes)
 -	v2 Blob: `sha256:e659cb3282f3c06cabc9213f6023d826c5845e43b932c948575ca80c7dffe472`
 -	v2 Content-Length: 1.8 KB (1773 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:58 GMT
 
 #### `4637c56e92c2616dbc27c671bba37bd608ff1951c8fe201e569cdc15a8534822`
 
@@ -1507,7 +1415,6 @@ RUN ./contrib/download-frozen-image.sh /docker-frozen-images \
 -	Virtual Size: 3.6 MB (3588644 bytes)
 -	v2 Blob: `sha256:145352fd46af62d3db8136818da51273a2298571f83cb2c7cc4dfb1abffb3797`
 -	v2 Content-Length: 3.6 MB (3566673 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:54 GMT
 
 #### `7d20b9c7f772010a29d254b03685dbe5409477ce7778d8ac60daeee23d8da51b`
 
@@ -1527,7 +1434,6 @@ RUN set -x \
 -	Virtual Size: 3.3 MB (3287832 bytes)
 -	v2 Blob: `sha256:9a16e6aa20cb1da1c26ef15b76a3ffb6f076dcd94fd8c9489586ce073b2d89ab`
 -	v2 Content-Length: 937.9 KB (937878 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:49 GMT
 
 #### `9ba4fd07b5d6c1cd64d1b4948fcdb3b03765ec5cbf003bffafcc9de9e0d64780`
 
@@ -1541,7 +1447,6 @@ ENV TOMLV_COMMIT=9baf8a8a9f2ed20a8e54160840c492f937eeaf9a
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32507bd111c6acb31d5012c8a039104a1a810b3c863197179611eb4771e4ebab`
 
@@ -1560,7 +1465,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2688864 bytes)
 -	v2 Blob: `sha256:cf6157e45b3fee4769a371c6a78ca65853e08f8bdabf0926ac2f6a402e932662`
 -	v2 Content-Length: 770.8 KB (770841 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:42 GMT
 
 #### `918c63dace5367000bbc873f516b98505d68c18c7bf2b72765918b3583f1d0b7`
 
@@ -1574,7 +1478,6 @@ ENV RSRC_COMMIT=e48dbf1b7fc464a9e85fcec450dddf80816b76e0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55ea14539ff4b6a9ed5165ddf382277c447e7d42beb4decc1e1f7116aaaecc10`
 
@@ -1592,7 +1495,6 @@ RUN set -x\
 -	Virtual Size: 4.5 MB (4463504 bytes)
 -	v2 Blob: `sha256:6a884cee083f9172159176f9e1ce5502d83556cb7c7e99a8484cc13ee44e805a`
 -	v2 Content-Length: 2.1 MB (2052199 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:35 GMT
 
 #### `8bee69c16341b5abfd1bc18107b0248b865808e33075617fe4d8b6d72a866425`
 
@@ -1606,7 +1508,6 @@ ENTRYPOINT &{["hack/dind"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `6ab06866c9f4a1bbb1958a4396a3d22e5b5da9ff22803146de6a3aabf79ba9fc`
 
@@ -1620,7 +1521,6 @@ COPY dir:d2830af5cf9df94e2a81972e18c36c677355c5189c6d32004d717ca79a6bd1dc in /go
 -	Virtual Size: 114.9 MB (114939724 bytes)
 -	v2 Blob: `sha256:436e8c14a1d32f1e60d33689a490a50c2ec5d98ea192daadecb1aa14a9e39d44`
 -	v2 Content-Length: 97.0 MB (96955801 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 19:19:03 GMT
 
 ## `docker-dev:1`
 
@@ -1644,7 +1544,6 @@ ADD file:7ce20ce3daa6af21dbe2449904b08854d15bee060ab8621d0a955fc720237e84 in /
 -	Virtual Size: 187.7 MB (187728797 bytes)
 -	v2 Blob: `sha256:8387d9ff0016d004777e511a55e21672e4b6de49e32db2544b8ac0e2ee01d5ed`
 -	v2 Content-Length: 65.7 MB (65675795 bytes)
--	v2 Last-Modified: Tue, 19 Jan 2016 22:55:42 GMT
 
 #### `c4fae638e7ce5e7eb92b92e6d82e3180e28b85948d362dc52a1c44a720f9b52a`
 
@@ -1669,7 +1568,6 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
 -	Virtual Size: 194.5 KB (194533 bytes)
 -	v2 Blob: `sha256:3b52deaaf0edb8a0282a08dd9c9e25da2050a75739b832ecc6e29941394933a6`
 -	v2 Content-Length: 71.5 KB (71484 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:56 GMT
 
 #### `a4c5be5b6e596241b4530ade26294afa8d8a4a2b9163c30e36c87f879b0f5073`
 
@@ -1683,7 +1581,6 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 -	Virtual Size: 1.9 KB (1895 bytes)
 -	v2 Blob: `sha256:4bd501fad6defc3af5638b82f7d760f0dc2f2c5f1bcd2cbfd59607b1631bc679`
 -	v2 Content-Length: 681.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 00:56:53 GMT
 
 #### `8693db7e8a0084b8aacba184cfc4ff9891924ed2270c6dec6a9d99bdcff0d1aa`
 
@@ -1697,7 +1594,6 @@ CMD ["/bin/bash"]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `440c2a509f57059a4c1ec6910ee36646ba297471ccfe151abb766671e1dbad78`
 
@@ -1711,7 +1607,6 @@ MAINTAINER Tianon Gravi <admwiggin@gmail.com> (@tianon)
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1d603c17f777d2bab0b84a829b3e2163a4a906c3a68e883a597f570a48ab3b3c`
 
@@ -1725,7 +1620,6 @@ RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys E87
 -	Virtual Size: 25.0 KB (25043 bytes)
 -	v2 Blob: `sha256:b5527133791bf5e6e668074993e4fb4d6b8264a34483b9dda31002f7d62bf671`
 -	v2 Content-Length: 12.3 KB (12279 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:31:02 GMT
 
 #### `8e67e3fcbdbc138ed67694f8cc202bf6e1cae903a13825dfce88c4d40c09c467`
 
@@ -1739,7 +1633,6 @@ RUN echo deb http://ppa.launchpad.net/zfs-native/stable/ubuntu trusty main > /et
 -	Virtual Size: 66.0 B
 -	v2 Blob: `sha256:d7e93a9e180521e59bd863e47b71629f7bd457385276adefa823eaeda87e11c9`
 -	v2 Content-Length: 229.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:30:59 GMT
 
 #### `6e690218c2f8015e9630eba4a63ab074ffab7afd5719c4f2d32c34dfaeda6a0b`
 
@@ -1783,7 +1676,6 @@ RUN apt-get update && apt-get install -y \
 -	Virtual Size: 543.1 MB (543062146 bytes)
 -	v2 Blob: `sha256:0fcbf8fa06508bd824cff1b99e1b2d963a45f36d17406798bbe37a820fa1c081`
 -	v2 Content-Length: 182.3 MB (182313531 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:30:45 GMT
 
 #### `d49b0f263f274c67d6f2455b92b35d8f83291f7efa6e79d0e620cb769b021023`
 
@@ -1797,7 +1689,6 @@ RUN git clone -b v2_02_103 https://git.fedorahosted.org/git/lvm2.git /usr/local/
 -	Virtual Size: 24.5 MB (24491215 bytes)
 -	v2 Blob: `sha256:c1346c179e08ea7dc54703b809822bf0b5f346851fddfa70b78c979bdc2b5aef`
 -	v2 Content-Length: 19.3 MB (19282332 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:29:16 GMT
 
 #### `34e7005ea03910e285e160b459f4e1850faf485056d5875b27806da875f5b7a5`
 
@@ -1814,7 +1705,6 @@ RUN cd /usr/local/lvm2 \
 -	Virtual Size: 5.0 MB (5002140 bytes)
 -	v2 Blob: `sha256:38c0f3f02b7fd2cf08d481d7402205f01f0e246fb316731ebd1ade3deefb8e1a`
 -	v2 Content-Length: 1.8 MB (1761377 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:29:06 GMT
 
 #### `2a6cf8b25d84185ddb3b2322170c2d0dc777aa8a46e407eccc2a4e1a0b44790b`
 
@@ -1828,7 +1718,6 @@ ENV LXC_VERSION=1.1.2
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `1564c16e6112fa3cf139945d331b06692e75fe7f240097d656a9bbdaedeefea7`
 
@@ -1843,7 +1732,6 @@ RUN mkdir -p /usr/src/lxc \
 -	Virtual Size: 3.9 MB (3851799 bytes)
 -	v2 Blob: `sha256:928f88545f7a581cb70a7be3c036b90bbd2af435706ee445509d491777bbce1d`
 -	v2 Content-Length: 839.9 KB (839903 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:28:57 GMT
 
 #### `1ae91a28e1cee23434fc3da890e1e403b966305d1911d92afbf60dd9724f8227`
 
@@ -1861,7 +1749,6 @@ RUN cd /usr/src/lxc \
 -	Virtual Size: 16.8 MB (16848711 bytes)
 -	v2 Blob: `sha256:44342ca32ef3920be079b11ce7a9d141af1f3714fcacfc2ae21ba0ad30cf2795`
 -	v2 Content-Length: 5.1 MB (5144522 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:28:51 GMT
 
 #### `55caca5d608af98576b0cccdcb498b21a7e2770bd484f3c3ec38d4d66e5a3a1d`
 
@@ -1875,7 +1762,6 @@ ENV GO_VERSION=1.4.3
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `2bfb5244495ef75bfd6dd6621032281e8e8672b9bf3257c7446304f75a61112c`
 
@@ -1890,7 +1776,6 @@ RUN curl -sSL https://golang.org/dl/go${GO_VERSION}.src.tar.gz | tar -v -C /usr/
 -	Virtual Size: 39.7 MB (39656098 bytes)
 -	v2 Blob: `sha256:1725853ad83c44b0d7064346f1502123d3fb5bc50207c55dbe10f8d3de8bfca8`
 -	v2 Content-Length: 10.9 MB (10877091 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:28:41 GMT
 
 #### `eb6c17aba3533b2cf583c07fc829eee318825ae73cf4ab5f6a3af5da0754747a`
 
@@ -1904,7 +1789,6 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `87ac721991ebc065a612df313335f909e5cfac60f63922bbaa0107d8ad6a6e16`
 
@@ -1918,7 +1802,6 @@ ENV GOPATH=/go:/go/src/github.com/docker/docker/vendor
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ba265df6ced54928c72438b3cb970f8ac680bf15cabd91e21662bef449fb2e79`
 
@@ -1932,7 +1815,6 @@ RUN cd /usr/local/go/src && ./make.bash --no-clean 2>&1
 -	Virtual Size: 98.0 MB (98011777 bytes)
 -	v2 Blob: `sha256:48395fa61d6c3a30963ea3e01b39c5eece3fa6a3b8417a9be3ccca8c2ede5b0b`
 -	v2 Content-Length: 24.7 MB (24713735 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:27:31 GMT
 
 #### `5e145db5eb9709054f73eafdf074b7cbec1f7df986142975838d0e04ea8abf08`
 
@@ -1946,7 +1828,6 @@ ENV DOCKER_CROSSPLATFORMS=linux/386 linux/arm 	darwin/amd64 darwin/386 	freebsd/
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `f7db82e14a0c08ab4631b146a7c6d018f843b36d7eed3e3d037e90884275d4e3`
 
@@ -1960,7 +1841,6 @@ ENV GOARM=5
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `75f1d71ad0bc0ef99cbc76b57441df7946d48e3ba9fdcf86591a11cf18e881be`
 
@@ -1980,7 +1860,6 @@ RUN cd /usr/local/go/src \
 -	Virtual Size: 797.8 MB (797798326 bytes)
 -	v2 Blob: `sha256:ef8e6c5532f6a7309d865338cbc3f4e65de35853c9035e2cbeb027fae81594c8`
 -	v2 Content-Length: 205.1 MB (205121223 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:26:21 GMT
 
 #### `016d4ed8d29ad2b9293ff99f60d7b80ec3086f1f05d647c91173289a7620da46`
 
@@ -1994,7 +1873,6 @@ ENV GO_TOOLS_COMMIT=069d2f3bcb68257b627205f0486d6cc69a231ff9
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `e35c78e502a1b89ada36a7329292b35e02758585d9b262a18b585711d68e66c7`
 
@@ -2011,7 +1889,6 @@ RUN git clone https://github.com/golang/tools.git /go/src/golang.org/x/tools \
 -	Virtual Size: 25.4 MB (25420215 bytes)
 -	v2 Blob: `sha256:4df9f8db4dd21d888094532b8ab85f11f193cc27deb1e90d16d898ce66bdb94f`
 -	v2 Content-Length: 11.4 MB (11357179 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:24:25 GMT
 
 #### `d7bb750a09f92e7db02c7e9517b65f9826b62cc66b3c841ed58480842ccf97e2`
 
@@ -2025,7 +1902,6 @@ ENV GO_LINT_COMMIT=f42f5c1c440621302702cb0741e9d2ca547ae80f
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0da834cc2eb2f380757c8909c6053aad68702e3e08ad7bf4fcb45f72f4b7fc85`
 
@@ -2041,7 +1917,6 @@ RUN git clone https://github.com/golang/lint.git /go/src/github.com/golang/lint 
 -	Virtual Size: 6.6 MB (6586951 bytes)
 -	v2 Blob: `sha256:249c1dbe14050ea81e1f1369b63aa8fa170075304412005fe4a89c117849505a`
 -	v2 Content-Length: 2.0 MB (1984712 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:24:12 GMT
 
 #### `ed6689d79d85051c2c34fa723011713dc92caf1c2e2830196c9a31104fc5ef6b`
 
@@ -2055,7 +1930,6 @@ RUN gem install --no-rdoc --no-ri fpm --version 1.3.2
 -	Virtual Size: 24.1 MB (24133193 bytes)
 -	v2 Blob: `sha256:3cf80a07cd796444fcbf065a8a6435a8e2607922205f25245eebb69cf84a8797`
 -	v2 Content-Length: 7.5 MB (7524442 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:24:06 GMT
 
 #### `16faf3d0c4673c0cc6a335f66d594148f8af3d707bbb0ad63f24ad1090a89dc9`
 
@@ -2069,7 +1943,6 @@ ENV REGISTRY_COMMIT=ec87e9b6971d831f0eff752ddb54fb64693e51cd
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `896343449cfd38f7693821cc237a7c0d7763dae2bf785422dd9c1f013662a42f`
 
@@ -2089,7 +1962,6 @@ RUN set -x \
 -	Virtual Size: 15.5 MB (15531232 bytes)
 -	v2 Blob: `sha256:5378491dc9d64ad7d8aabc58938b293adf5e700d3c144150c4763cd7b4718575`
 -	v2 Content-Length: 4.0 MB (4034385 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:55 GMT
 
 #### `75b536f0f2adeec40c7c54950a91fa97b62eb51d0a2bab4b60558de44ed9127d`
 
@@ -2103,7 +1975,6 @@ ENV NOTARY_COMMIT=8e8122eb5528f621afcd4e2854c47302f17392f7
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `23d103bd64352bf1e9a1d3377f482c0b21d6a4717e4422001456e9739549e51a`
 
@@ -2123,7 +1994,6 @@ RUN set -x \
 -	Virtual Size: 14.1 MB (14115181 bytes)
 -	v2 Blob: `sha256:5df0d94b1a8be4288b2be1b0810d90241ff4f65458a7e891fc638c1326bed250`
 -	v2 Content-Length: 3.8 MB (3830621 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:46 GMT
 
 #### `0e9773a2cfc9f298f72c258a374f277c1ffa899251a37a9930f7b589bf1a442b`
 
@@ -2137,7 +2007,6 @@ ENV DOCKER_PY_COMMIT=47ab89ec2bd3bddf1221b856ffbaff333edeabb4
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `ca2e198a9e59f16249b9ccf1311c0a20be8dc4fa4af908954c16053ff1188822`
 
@@ -2154,7 +2023,6 @@ RUN git clone https://github.com/docker/docker-py.git /docker-py \
 -	Virtual Size: 5.5 MB (5514913 bytes)
 -	v2 Blob: `sha256:426bdb997dc09a4828c578ccf7847e0de44eb23d5bcbe24eb13a5d84a2cff05f`
 -	v2 Content-Length: 3.2 MB (3184831 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:37 GMT
 
 #### `1db225c3c43fa4a7190ce93523b8d8294bf498b81c165acc21d718cebd440dea`
 
@@ -2172,7 +2040,6 @@ RUN { \
 -	Virtual Size: 64.0 B
 -	v2 Blob: `sha256:50c110645f7989e3fd9ab57bcfcf978f55faab65a4ca259d2b1daf9e14efbe2c`
 -	v2 Content-Length: 185.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:32 GMT
 
 #### `b7f48ace7d86a153e3987b017435396fc825c37e16062c6215e7686a67b2a403`
 
@@ -2186,7 +2053,6 @@ RUN git config --global user.email 'docker-dummy@example.com'
 -	Virtual Size: 41.0 B
 -	v2 Blob: `sha256:a2c7f52d65e9c8c781f8088f721293bd7d7a200bcb4bb4fe49bb73e4c241e052`
 -	v2 Content-Length: 178.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:27 GMT
 
 #### `39608714dc103314933aece3d7347f28223eb19c01bb5bfd61c031b1ab36d961`
 
@@ -2200,7 +2066,6 @@ RUN groupadd -r docker
 -	Virtual Size: 1.9 KB (1897 bytes)
 -	v2 Blob: `sha256:cab6f4e2be21c685e63d4d9a4d9e7ff6ff5edb6e48be1ea9e8978f7d500924a7`
 -	v2 Content-Length: 677.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:24 GMT
 
 #### `1e71b141cca49cc238a61c84fb5f247a1fcc572c686dcc4a3f9ec8c89a0f7eb7`
 
@@ -2214,7 +2079,6 @@ RUN useradd --create-home --gid docker unprivilegeduser
 -	Virtual Size: 332.0 KB (331983 bytes)
 -	v2 Blob: `sha256:b2b5a7f5f58f39bbc48d31cf3704603d24b7155b04b824bc83d6ffdb5be14881`
 -	v2 Content-Length: 3.7 KB (3735 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:21 GMT
 
 #### `0abe9c57c0c24038ad5c360f810a2b9463c5e16f95475ca20cc13872ebcd2590`
 
@@ -2228,7 +2092,6 @@ VOLUME [/var/lib/docker]
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `22b84f90dd306bf85aac100eecb0d26ec630cd898c7a26792abc273745893b77`
 
@@ -2242,7 +2105,6 @@ WORKDIR /go/src/github.com/docker/docker
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `77c23effa64655323eb257f6b212691a3ef32ddd9d49a21778a7b1c5b1f5576f`
 
@@ -2256,7 +2118,6 @@ ENV DOCKER_BUILDTAGS=apparmor selinux
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `4412de858ee1b6380adf2db256ceceff2c688dfcb76eb116116ea4c82510d053`
 
@@ -2270,7 +2131,6 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 -	Virtual Size: 40.0 B
 -	v2 Blob: `sha256:9ba5cf79eef13753a295a88709edb3c2d827974a9e628c86b60e4fc6f039fabf`
 -	v2 Content-Length: 263.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:06 GMT
 
 #### `36c4ce0cead884be66f09311b60f6dd4c38b617796075326658f0be43ae23822`
 
@@ -2284,7 +2144,6 @@ RUN ln -sv $PWD/contrib/completion/bash/docker /etc/bash_completion.d/docker
 -	Virtual Size: 63.0 B
 -	v2 Blob: `sha256:befefe51f707dc0a374d5c387e0a88c010833c177977755dbf7bcd92db4a3eaf`
 -	v2 Content-Length: 183.0 B
--	v2 Last-Modified: Wed, 20 Jan 2016 16:23:02 GMT
 
 #### `07c57adc00471d61e4cc07ec5a4295f3c3e08e035a92426c341b967e1b979d2e`
 
@@ -2298,7 +2157,6 @@ COPY file:d2241750b272d955bafffdbd3029cd3022f56d0ef655111394d10339d5145ebd in /g
 -	Virtual Size: 3.9 KB (3866 bytes)
 -	v2 Blob: `sha256:e659cb3282f3c06cabc9213f6023d826c5845e43b932c948575ca80c7dffe472`
 -	v2 Content-Length: 1.8 KB (1773 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:58 GMT
 
 #### `4637c56e92c2616dbc27c671bba37bd608ff1951c8fe201e569cdc15a8534822`
 
@@ -2315,7 +2173,6 @@ RUN ./contrib/download-frozen-image.sh /docker-frozen-images \
 -	Virtual Size: 3.6 MB (3588644 bytes)
 -	v2 Blob: `sha256:145352fd46af62d3db8136818da51273a2298571f83cb2c7cc4dfb1abffb3797`
 -	v2 Content-Length: 3.6 MB (3566673 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:54 GMT
 
 #### `7d20b9c7f772010a29d254b03685dbe5409477ce7778d8ac60daeee23d8da51b`
 
@@ -2335,7 +2192,6 @@ RUN set -x \
 -	Virtual Size: 3.3 MB (3287832 bytes)
 -	v2 Blob: `sha256:9a16e6aa20cb1da1c26ef15b76a3ffb6f076dcd94fd8c9489586ce073b2d89ab`
 -	v2 Content-Length: 937.9 KB (937878 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:49 GMT
 
 #### `9ba4fd07b5d6c1cd64d1b4948fcdb3b03765ec5cbf003bffafcc9de9e0d64780`
 
@@ -2349,7 +2205,6 @@ ENV TOMLV_COMMIT=9baf8a8a9f2ed20a8e54160840c492f937eeaf9a
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `32507bd111c6acb31d5012c8a039104a1a810b3c863197179611eb4771e4ebab`
 
@@ -2368,7 +2223,6 @@ RUN set -x \
 -	Virtual Size: 2.7 MB (2688864 bytes)
 -	v2 Blob: `sha256:cf6157e45b3fee4769a371c6a78ca65853e08f8bdabf0926ac2f6a402e932662`
 -	v2 Content-Length: 770.8 KB (770841 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:42 GMT
 
 #### `918c63dace5367000bbc873f516b98505d68c18c7bf2b72765918b3583f1d0b7`
 
@@ -2382,7 +2236,6 @@ ENV RSRC_COMMIT=e48dbf1b7fc464a9e85fcec450dddf80816b76e0
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `55ea14539ff4b6a9ed5165ddf382277c447e7d42beb4decc1e1f7116aaaecc10`
 
@@ -2400,7 +2253,6 @@ RUN set -x\
 -	Virtual Size: 4.5 MB (4463504 bytes)
 -	v2 Blob: `sha256:6a884cee083f9172159176f9e1ce5502d83556cb7c7e99a8484cc13ee44e805a`
 -	v2 Content-Length: 2.1 MB (2052199 bytes)
--	v2 Last-Modified: Wed, 20 Jan 2016 16:22:35 GMT
 
 #### `8bee69c16341b5abfd1bc18107b0248b865808e33075617fe4d8b6d72a866425`
 
@@ -2414,7 +2266,6 @@ ENTRYPOINT &{["hack/dind"]}
 -	Virtual Size: 0.0 B
 -	v2 Blob: `sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`
 -	v2 Content-Length: 32.0 B
--	v2 Last-Modified: Sat, 14 Nov 2015 09:09:44 GMT
 
 #### `0fa89bf7a37919b0668ee869260b12a8003c6ecebbfaa2c2e76a596cc9430e98`
 
@@ -2428,4 +2279,3 @@ COPY dir:8731a10dcf687cbf7520a3f6780003ca36aadbf15b2039725020b86a193d69a2 in /go
 -	Virtual Size: 114.9 MB (114939724 bytes)
 -	v2 Blob: `sha256:20ce215905447124c1af6fb8172d6c7fd4c38adca149e664bde77bfccebc5191`
 -	v2 Content-Length: 97.0 MB (96955795 bytes)
--	v2 Last-Modified: Wed, 17 Feb 2016 19:19:43 GMT
