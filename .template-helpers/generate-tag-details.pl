@@ -124,16 +124,30 @@ sub get_layer_data {
 
 sub cmd_to_dockerfile {
 	my ($cmd) = @_;
+	my @buildArgs;
+	if (substr($cmd->[0], 0, 1) eq '|') {
+		# must have some build args for this RUN line
+		# https://github.com/docker/docker/blob/a7742e437943bb0c59cc9e01fd9f5e68259ad3ec/builder/dockerfile/dispatchers.go#L353-L365
+		my $n = int(substr(shift(@$cmd), 1)); # number of build args
+		while ($n > 0) {
+			my $arg = shift @$cmd;
+			$arg =~ s/(["\\])/\\$1/g;
+			my ($var, $val) = split /=/, $arg, 2;
+			push @buildArgs, '"' . $var . '" => "' . $val .'"';
+			--$n;
+		}
+	}
+	my $args = join('', map { "# ARG: $_\n" } @buildArgs);
 	if (scalar(@$cmd) == 3 && $cmd->[0] eq '/bin/sh' && $cmd->[1] eq '-c') {
 		$cmd = $cmd->[2];
 		if ($cmd =~ s{^(#[(]nop[)] )}{}) {
-			return $cmd;
+			return $args . $cmd;
 		}
 		# prefix tabs and 4-space-indents with \ and a newline (for readability), but only if we don't already have any newlines
 		$cmd =~ s/ ( (?:\t|[ ]{4})+ ) /\\\n$1/xg unless $cmd =~ m!\n!;
-		return 'RUN ' . $cmd;
+		return $args . 'RUN ' . $cmd;
 	}
-	return 'RUN ' . Mojo::JSON::encode_json($cmd);
+	return $args . 'RUN ' . Mojo::JSON::encode_json($cmd);
 }
 
 my @humanSizeUnits = qw( B KB MB GB TB );
