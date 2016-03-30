@@ -2959,7 +2959,6 @@ RUN echo "deb $ELASTICSEARCH_REPO_BASE stable main" > /etc/apt/sources.list.d/el
 -	Virtual Size: 75.0 B
 -	v2 Blob: `sha256:ee0838c3fd1f2c653dba86629bc40f93fe4cd35c6d3ec644673e86e5a2790e7f`
 -	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:07:37 GMT
 
 #### `b941d41157efa8d2e609c904933adccaaabeefcb4e566444317ed644270cec95`
 
@@ -3400,7 +3399,6 @@ RUN echo "deb $ELASTICSEARCH_REPO_BASE stable main" > /etc/apt/sources.list.d/el
 -	Virtual Size: 75.0 B
 -	v2 Blob: `sha256:ee0838c3fd1f2c653dba86629bc40f93fe4cd35c6d3ec644673e86e5a2790e7f`
 -	v2 Content-Length: 226.0 B
--	v2 Last-Modified: Tue, 15 Mar 2016 22:07:37 GMT
 
 #### `b941d41157efa8d2e609c904933adccaaabeefcb4e566444317ed644270cec95`
 
