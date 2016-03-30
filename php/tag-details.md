@@ -1061,7 +1061,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -1297,7 +1296,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -2889,7 +2887,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -3209,7 +3206,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -4019,7 +4015,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -4268,7 +4263,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -5909,7 +5903,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -6145,7 +6138,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -6381,7 +6373,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -8651,7 +8642,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -8971,7 +8961,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -9291,7 +9280,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -10346,7 +10334,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -10595,7 +10582,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -10844,7 +10830,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -12949,7 +12934,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -13185,7 +13169,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -13421,7 +13404,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -13657,7 +13639,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -16605,7 +16586,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -16925,7 +16905,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -17245,7 +17224,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -17565,7 +17543,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -18865,7 +18842,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -19114,7 +19090,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -19363,7 +19338,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
@@ -19612,7 +19586,6 @@ RUN apk add --no-cache --virtual .persistent-deps \
 -	Virtual Size: 2.3 MB (2269634 bytes)
 -	v2 Blob: `sha256:09ee94b64c31858397684c28831d2a61e394e2363853a96f68f612b9f97eaf47`
 -	v2 Content-Length: 1.1 MB (1123289 bytes)
--	v2 Last-Modified: Sat, 19 Mar 2016 02:01:21 GMT
 
 #### `aa93cfe72c402c1877aba11a748de3e499e39cf44cbef922d9e71ccc28b15cd9`
 
